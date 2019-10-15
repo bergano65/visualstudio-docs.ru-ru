@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e784627f0c9c6aa865d53db49d6ea43c4e49d0eb
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018419"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305791"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -98,21 +98,21 @@ CA1509 | Недопустимая запись в файле специфика�
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | Имена свойств не должны совпадать с именами методов get
 [CA1724](ca1724-type-names-should-not-match-namespaces.md) | Имена типов не должны совпадать с именами пространств имен
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | Имена параметров должны соответствовать базовому объявлению
-[CA1801](ca1801-review-unused-parameters.md) | Проверьте неиспользуемые параметры
-[CA1802](ca1802-use-literals-where-appropriate.md) | Используйте литералы там, где это уместно
-[CA1806](ca1806-do-not-ignore-method-results.md) | Не игнорируйте результаты метода
-[CA1810](ca1810-initialize-reference-type-static-fields-inline.md) | Инициализируйте статические поля ссылочных типов при объявлении
-[CA1812](ca1812-avoid-uninstantiated-internal-classes.md) | Избегайте неиспользуемых внутренних классов
-[CA1813](ca1813-avoid-unsealed-attributes.md) | Избегайте незапечатанных атрибутов
-[CA1814](ca1814-prefer-jagged-arrays-over-multidimensional.md) | Используйте массивы массивов вместо многомерных массивов
-[CA1815](ca1815-override-equals-and-operator-equals-on-value-types.md) | Переопределяйте операторы Equals и равенства для типов значений
-[CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Методы Dispose должны вызывать SuppressFinalize
-[CA1819](ca1819-properties-should-not-return-arrays.md) | Свойства не должны возвращать массивы
-[CA1820](ca1820-test-for-empty-strings-using-string-length.md) | Проверяйте наличие пустых строк, используя длину строки
-[CA1821](ca1821-remove-empty-finalizers.md) | Удалить пустые методы завершения
-[CA1822](ca1822-mark-members-as-static.md) | Пометьте члены как статические
-[CA1823](ca1823-avoid-unused-private-fields.md) | Избегайте неиспользуемых частных полей
-[CA1824](ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | Помечайте сборки с помощью NeutralResourcesLanguageAttribute
+[CA1801](ca1801.md) | Проверьте неиспользуемые параметры
+[CA1802](ca1802.md) | Используйте литералы там, где это уместно
+[CA1806](ca1806.md) | Не игнорируйте результаты метода
+[CA1810](ca1810.md) | Инициализируйте статические поля ссылочных типов при объявлении
+[CA1812](ca1812.md) | Избегайте неиспользуемых внутренних классов
+[CA1813](ca1813.md) | Избегайте незапечатанных атрибутов
+[CA1814](ca1814.md) | Используйте массивы массивов вместо многомерных массивов
+[CA1815](ca1815.md) | Переопределяйте операторы Equals и равенства для типов значений
+[CA1816](ca1816.md) | Методы Dispose должны вызывать SuppressFinalize
+[CA1819](ca1819.md) | Свойства не должны возвращать массивы
+[CA1820](ca1820.md) | Проверяйте наличие пустых строк, используя длину строки
+[CA1821](ca1821.md) | Удалить пустые методы завершения
+[CA1822](ca1822.md) | Пометьте члены как статические
+[CA1823](ca1823.md) | Избегайте неиспользуемых частных полей
+[CA1824](ca1824.md) | Помечайте сборки с помощью NeutralResourcesLanguageAttribute
 CA1825 | Избегайте выделения массивов нулевой длины.
 CA1826 | Не используйте перечислимые методы в индексируемых коллекциях. Вместо этого используйте коллекцию напрямую
 [CA2000](ca2000-dispose-objects-before-losing-scope.md) | Ликвидируйте объекты перед потерей области
@@ -252,8 +252,8 @@ CA9999 | Несоответствие версии анализатора
 [CA1719](ca1719-parameter-names-should-not-match-member-names.md) | [https://github.com/dotnet/roslyn-analyzers/issues/453](https://github.com/dotnet/roslyn-analyzers/issues/453)
 [CA1722](ca1722-identifiers-should-not-have-incorrect-prefix.md) | [https://github.com/dotnet/roslyn-analyzers/issues/455](https://github.com/dotnet/roslyn-analyzers/issues/455)
 [CA1726](ca1726-use-preferred-terms.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
-[CA1804](ca1804-remove-unused-locals.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
-[CA1811](ca1811-avoid-uncalled-private-code.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
+[CA1804](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
+[CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
 [CA1900](ca1900-value-type-fields-should-be-portable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
 [CA2001](ca2001-avoid-calling-problematic-methods.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
 [CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
@@ -288,8 +288,8 @@ CA9999 | Несоответствие версии анализатора
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
 - [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1800](ca1800-do-not-cast-unnecessarily.md)
-- [CA1809](ca1809-avoid-excessive-locals.md)
+- [CA1800](ca1800.md)
+- [CA1809](ca1809.md)
 - [CA1901](ca1901-p-invoke-declarations-should-be-portable.md)
 - [CA1903](ca1903-use-only-api-from-targeted-framework.md)
 - [CA2003](ca2003-do-not-treat-fibers-as-threads.md)

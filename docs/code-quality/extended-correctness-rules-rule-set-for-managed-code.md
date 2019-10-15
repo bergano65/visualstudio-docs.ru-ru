@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 4d2f123301eb2dd4df662891f2a9248b0cac7173
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585112"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305863"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные правила определения правильности" для управляемого кода
 
 Набор правил "Расширенные правила корректности Microsoft" позволяет развернуть логику и ошибки использования платформы, о которых сообщает анализ кода. Особое внимание уделяется конкретным сценариям, например COM-взаимодействию и мобильным приложениям. Следует рассмотреть возможность включения этого набора правил, если один из этих сценариев применяется к проекту или для поиска дополнительных проблем в проекте.
 
-Набор правил "Расширенные правила корректности Microsoft" включает правила, которые находятся в наборе правил " [основные правила](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) для правил правильности", который содержит правила, указанные в наборе правил " [управляемые Рекомендуемые правила](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) ".
+Набор правил "Расширенные правила корректности Microsoft" включает правила, которые находятся в наборе правил " [основные правила для правил правильности](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) ", который содержит правила, указанные в наборе правил " [управляемые Рекомендуемые правила](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) ".
 
 В следующей таблице описаны все правила в наборе правил "Расширенные правила исправления Microsoft".
 
@@ -42,7 +42,7 @@ ms.locfileid: "69585112"
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Методы регистрации COM должны быть согласованными|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Правильно объявляйте методы P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Удалите пустые методы завершения|
+|[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Поля типов значений должны быть переносимыми|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Объявления P/Invoke должны быть переносимыми|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Не блокируйте объекты с ненадежными удостоверениями|
@@ -91,10 +91,10 @@ ms.locfileid: "69585112"
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Перегружайте оператор равенства при перегрузке операторов сложения и вычитания|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Не передавайте литералы в качестве локализованных параметров|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Нормализуйте строки в верхний регистр|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|Не игнорируйте результаты метода|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Вызов GC.SuppressFinalize должен осуществляться правильно|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Свойства не должны возвращать массивы|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Проверяйте наличие пустых строк, используя длину строки|
+|[CA1806](../code-quality/ca1806.md)|Не игнорируйте результаты метода|
+|[CA1816](../code-quality/ca1816.md)|Вызов GC.SuppressFinalize должен осуществляться правильно|
+|[CA1819](../code-quality/ca1819.md)|Свойства не должны возвращать массивы|
+|[CA1820](../code-quality/ca1820.md)|Проверяйте наличие пустых строк, используя длину строки|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Используйте API только из целевой рабочей среды|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Удалите вызовы GC.KeepAlive|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Используйте SafeHandle для инкапсуляции собственных ресурсов|
@@ -132,7 +132,7 @@ ms.locfileid: "69585112"
 |[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Пометьте логические аргументы P/Invoke с помощью MarshalAs|
 |[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Не используйте приоритет процесса простоя|
 |[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Не используйте таймеры, препятствующие изменению состояния электропитания|
-|[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|Помечайте сборки с помощью NeutralResourcesLanguageAttribute|
+|[CA1824](../code-quality/ca1824.md)|Помечайте сборки с помощью NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Избегайте вызова проблемных методов|
 |[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Не рассматривайте волокна в качестве потоков|
 |[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|Сборки уровня 2 не должны содержать LinkDemands|
