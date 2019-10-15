@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 90464052d0ba4f02b6b971adbacda8a29f3b0b2c
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585084"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305446"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Набор правил "Базовые нормы и правила разработки" для управляемого кода
 
@@ -42,7 +42,7 @@ ms.locfileid: "69585084"
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Методы регистрации COM должны быть согласованными|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Правильно объявляйте методы P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Удалите пустые методы завершения|
+|[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Поля типов значений должны быть переносимыми|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Объявления P/Invoke должны быть переносимыми|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Не блокируйте объекты с ненадежными удостоверениями|
@@ -138,19 +138,19 @@ ms.locfileid: "69585084"
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|Избегайте чрезмерной сложности|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Идентификаторы должны отличаться не только прописными и строчными буквами|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Идентификаторы не должны совпадать с ключевыми словами|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|Проверьте неиспользуемые параметры|
-|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|Удалите неиспользуемые локальные переменные|
-|[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|Избегайте лишних локальных переменных|
-|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|Инициализируйте статические поля ссылочных типов при объявлении|
-|[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|Избегайте невызываемого частного кода|
-|[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|Избегайте неиспользуемых внутренних классов|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|Избегайте незапечатанных атрибутов|
-|[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Используйте массивы массивов вместо многомерных массивов|
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Переопределяйте операторы Equals и равенства для типов значений|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Свойства не должны возвращать массивы|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Проверяйте наличие пустых строк, используя длину строки|
-|[CA1822](../code-quality/ca1822-mark-members-as-static.md)|Пометьте члены как статические|
-|[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|Избегайте неиспользуемых частных полей|
+|[CA1801](../code-quality/ca1801.md)|Проверьте неиспользуемые параметры|
+|[CA1804](../code-quality/ca1804.md)|Удалите неиспользуемые локальные переменные|
+|[CA1809](../code-quality/ca1809.md)|Избегайте лишних локальных переменных|
+|[CA1810](../code-quality/ca1810.md)|Инициализируйте статические поля ссылочных типов при объявлении|
+|[CA1811](../code-quality/ca1811.md)|Избегайте невызываемого частного кода|
+|[CA1812](../code-quality/ca1812.md)|Избегайте неиспользуемых внутренних классов|
+|[CA1813](../code-quality/ca1813.md)|Избегайте незапечатанных атрибутов|
+|[CA1814](../code-quality/ca1814.md)|Используйте массивы массивов вместо многомерных массивов|
+|[CA1815](../code-quality/ca1815.md)|Переопределяйте операторы Equals и равенства для типов значений|
+|[CA1819](../code-quality/ca1819.md)|Свойства не должны возвращать массивы|
+|[CA1820](../code-quality/ca1820.md)|Проверяйте наличие пустых строк, используя длину строки|
+|[CA1822](../code-quality/ca1822.md)|Пометьте члены как статические|
+|[CA1823](../code-quality/ca1823.md)|Избегайте неиспользуемых частных полей|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Не порождайте исключения зарезервированных типов|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Используйте управляемые эквиваленты Win32 API|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Правильно создавайте экземпляры исключений аргументов|

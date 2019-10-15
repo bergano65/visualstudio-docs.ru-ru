@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: be864812cc7355f80700bd3e270178c9626d4180
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231304"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305899"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227. Свойства, возвращающие коллекции, должны быть доступными только для чтения
 
@@ -40,9 +40,9 @@ ms.locfileid: "71231304"
 
 ## <a name="rule-description"></a>Описание правила
 
-Свойство коллекции, доступное для записи, позволяет пользователю заменить коллекцию совершенно другой коллекцией. Свойство только для чтения останавливает замену коллекции, но по-прежнему позволяет устанавливать отдельные элементы. Если замена коллекции является целью, предпочтительным шаблоном разработки является включение метода для удаления всех элементов из коллекции и метода для повторного заполнения коллекции. Пример этого <xref:System.Collections.ArrayList.Clear%2A> шаблона <xref:System.Collections.ArrayList.AddRange%2A> см. в <xref:System.Collections.ArrayList?displayProperty=fullName> методах и класса.
+Свойство коллекции, доступное для записи, позволяет пользователю заменить коллекцию совершенно другой коллекцией. Свойство только для чтения останавливает замену коллекции, но по-прежнему позволяет устанавливать отдельные элементы. Если замена коллекции является целью, предпочтительным шаблоном разработки является включение метода для удаления всех элементов из коллекции и метода для повторного заполнения коллекции. Пример этого шаблона см. в описании методов <xref:System.Collections.ArrayList.Clear%2A> и <xref:System.Collections.ArrayList.AddRange%2A> класса <xref:System.Collections.ArrayList?displayProperty=fullName>.
 
-Как двоичная, так и XML-сериализация поддерживают свойства только для чтения, являющиеся коллекциями. Класс имеет особые требования для типов, которые реализуют <xref:System.Collections.IEnumerable?displayProperty=fullName> <xref:System.Collections.ICollection> и для сериализации. <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>
+Как двоичная, так и XML-сериализация поддерживают свойства только для чтения, являющиеся коллекциями. Класс <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> имеет особые требования для типов, реализующих <xref:System.Collections.ICollection> и <xref:System.Collections.IEnumerable?displayProperty=fullName> для сериализации.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
@@ -56,7 +56,7 @@ ms.locfileid: "71231304"
 
 ## <a name="example"></a>Пример
 
-В следующем примере показан тип с доступным для записи свойством коллекции и показано, как можно заменить коллекцию напрямую. Кроме того, он показывает предпочтительный способ замены свойства коллекции, доступного только для `Clear` чтения `AddRange` , с помощью методов и.
+В следующем примере показан тип с доступным для записи свойством коллекции и показано, как можно заменить коллекцию напрямую. Кроме того, он показывает предпочтительный способ замены свойства коллекции, доступного только для чтения, с помощью методов `Clear` и `AddRange`.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ ms.locfileid: "71231304"
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1819: Свойства не должны возвращать массивы](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- @NO__T 0CA1819: Свойства не должны возвращать массивы @ no__t-0

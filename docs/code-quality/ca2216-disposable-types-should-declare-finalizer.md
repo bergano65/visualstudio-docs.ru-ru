@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3ac52bdb17aeb7d04e434d2b02ff9a905eab49a2
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231256"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305929"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216. Высвобождаемые типы должны объявлять методы завершения
 
@@ -32,7 +32,7 @@ ms.locfileid: "71231256"
 
 ## <a name="cause"></a>Причина:
 
-Тип, реализующий <xref:System.IDisposable?displayProperty=fullName>и имеющий поля, предлагающие использование неуправляемых ресурсов, не реализует метод завершения, как описано в. <xref:System.Object.Finalize%2A?displayProperty=fullName>
+Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> и имеющий поля, предлагающие использование неуправляемых ресурсов, не реализует метод завершения, как описано в <xref:System.Object.Finalize%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -46,11 +46,11 @@ ms.locfileid: "71231256"
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, реализуйте финализатор, который вызывает <xref:System.IDisposable.Dispose%2A> метод.
+Чтобы устранить нарушение этого правила, реализуйте финализатор, который вызывает метод <xref:System.IDisposable.Dispose%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Можно отключить вывод предупреждения из этого правила, если тип не реализуется <xref:System.IDisposable> в целях освобождения неуправляемых ресурсов.
+Предупреждение из этого правила можно отключить, если тип не реализует <xref:System.IDisposable> для освобождения неуправляемых ресурсов.
 
 ## <a name="example"></a>Пример
 
@@ -60,11 +60,11 @@ ms.locfileid: "71231256"
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA2115 Вызовите GC. KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+@NO__T 0CA2115: Вызовите GC. KeepAlive при использовании собственных ресурсов @ no__t-0
 
-[CA1816: Вызовите GC. SuppressFinalize правильно](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+@NO__T 0CA1816: Вызовите GC. SuppressFinalize правильно @ no__t-0
 
-[CA1049 Типы, владеющие собственными ресурсами, должны быть уничтожены](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+@NO__T 0CA1049: Типы, владеющие собственными ресурсами, должны быть уничтожены @ no__t-0
 
 ## <a name="see-also"></a>См. также
 
