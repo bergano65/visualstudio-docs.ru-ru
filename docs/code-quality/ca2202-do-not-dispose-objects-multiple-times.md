@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 7c7fa7756383426f990e18225995a768de9fefbd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300603"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231736"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202. Не ликвидируйте объекты несколько раз
 
@@ -30,7 +30,7 @@ ms.locfileid: "68300603"
 |Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Реализация метода содержит пути кода, которые могут вызвать несколько вызовов <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> или эквивалента Dispose, например метод Close () для некоторых типов, для одного и того же объекта.
 
@@ -88,7 +88,7 @@ finally
 ```
 
 > [!TIP]
-> Приведенный выше [](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-) синтаксиспредставляетсобойусловныйоператорсозначением`?.` null.
+> Приведенный выше синтаксис `?.` представляет собой [условный оператор со значением null](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-).
 
 ## <a name="see-also"></a>См. также
 
