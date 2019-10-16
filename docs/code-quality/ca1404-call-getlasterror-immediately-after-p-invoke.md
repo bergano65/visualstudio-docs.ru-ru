@@ -1,5 +1,5 @@
 ---
-title: CA1404. Вызывайте GetLastError сразу после P/Invoke
+title: 'CA1404: вызывайте GetLastError сразу после P-Invoke'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ab789e578dd8603f604cdb00aa5d236250d13670
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6529adafa7384bf8b51444dd2cc81b9952b6b57c
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235055"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349011"
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404. Вызывайте GetLastError сразу после P/Invoke
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: вызывайте GetLastError сразу после P/Invoke
 
 |||
 |-|-|
@@ -33,12 +33,12 @@ ms.locfileid: "71235055"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
-Выполняется вызов <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> метода или эквивалентной функции Win32 `GetLastError` , и вызов, который происходит непосредственно перед, не является методом вызова неуправляемого кода.
+Выполняется вызов метода <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> или эквивалентной функции Win32 `GetLastError`, и вызов, который происходит непосредственно перед, не является методом вызова неуправляемого кода.
 
 ## <a name="rule-description"></a>Описание правила
-Метод вызова платформы обращается к неуправляемому коду и определяется с помощью `Declare` ключевого слова в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> атрибута. Как правило, при сбое неуправляемые функции вызывают функцию Win32 `SetLastError` , чтобы задать код ошибки, связанный с ошибкой. Вызывающая функция, вызвавшая ошибку, вызывает `GetLastError` функцию Win32 для получения кода ошибки и определения причины сбоя. Код ошибки поддерживается для каждого потока и перезаписывается при следующем вызове метода `SetLastError`. После вызова метода, вызвавшего сбой неуправляемого кода, управляемый код может получить код ошибки, <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> вызвав метод. Поскольку код ошибки может быть перезаписан внутренними вызовами из других методов библиотеки управляемых классов, `GetLastError` метод или <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> следует вызывать сразу после вызова метода неуправляемого вызова.
+Метод вызова платформы обращается к неуправляемому коду и определяется с помощью ключевого слова `Declare` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или в атрибуте <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Как правило, при сбое неуправляемые функции вызывают функцию Win32 `SetLastError`, чтобы задать код ошибки, связанный с ошибкой. Вызывающая функция, вызвавшая ошибку, вызывает функцию Win32 `GetLastError` для получения кода ошибки и определения причины сбоя. Код ошибки поддерживается для каждого потока и перезаписывается при следующем вызове метода `SetLastError`. После вызова метода, вызвавшего сбой неуправляемого кода, управляемый код может получить код ошибки, вызвав метод <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Так как код ошибки может быть перезаписан внутренними вызовами из других методов библиотеки управляемых классов, метод `GetLastError` или <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> следует вызывать сразу после вызова метода неуправляемого вызова.
 
 Правило игнорирует вызовы следующих управляемых членов, когда они происходят между вызовом метода неуправляемого кода и вызовом <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Эти члены не изменяют код ошибки и полезны для определения успешности некоторых вызовов метода вызова неуправляемого кода.
 
@@ -51,10 +51,10 @@ ms.locfileid: "71235055"
 - <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
-Чтобы устранить нарушение этого правила, переместите вызов в <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> , чтобы он сразу после вызова метода вызова неуправляемого кода.
+Чтобы устранить нарушение этого правила, переместите вызов в <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>, чтобы он сразу после вызова метода вызова неуправляемого кода.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
-Можно отключить вывод предупреждения из этого правила, если код между вызовом метода вызова неуправляемого кода и <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> вызовом метода не может явно или неявно привести к изменению кода ошибки.
+Предупреждение из этого правила можно отключить, если код между вызовом метода неуправляемого кода и вызовом метода <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> не может явно или неявно вызвать изменение кода ошибки.
 
 ## <a name="example"></a>Пример
 В следующем примере показан метод, нарушающий правило, и метод, который удовлетворяет правилу.
@@ -63,12 +63,12 @@ ms.locfileid: "71235055"
 [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
-[CA1060: Перемещение P/Invoke в класс NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+[CA1060: переместите P/Invokes в класс NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
-[CA1400 Должны существовать точки входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+[CA1400: необходимо наличие точек входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
-[CA1401 Методы P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+[CA1401: методы P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
-[CA2101 Задание маршалирования для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+[CA2101: укажите тип маршалинга для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-[CA2205 Использование управляемых эквивалентов API Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+[CA2205: используйте управляемые эквиваленты API Win32](../code-quality/ca2205.md)

@@ -1,5 +1,5 @@
 ---
-title: CA1031. Не перехватывайте типы общих исключений
+title: 'CA1031: не перехватывайте типы общих исключений'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c1dc1e5ed18ddcd42d42c96f3f853808c58ade48
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e157feb9b054cd6082f77c4f86277c35ddb02c34
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236069"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349137"
 ---
-# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031. Не перехватывайте типы общих исключений
+# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: не перехватывайте типы общих исключений
 
 |||
 |-|-|
@@ -34,27 +34,27 @@ ms.locfileid: "71236069"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина:
-В `catch` операторе перехватывается <xref:System.SystemException?displayProperty=fullName> общее исключение, такое как <xref:System.Exception?displayProperty=fullName> или, или используется общее предложение catch, `catch()` такое как.
+## <a name="cause"></a>Причина
+Общее исключение, например <xref:System.Exception?displayProperty=fullName> или <xref:System.SystemException?displayProperty=fullName>, перехватывается в операторе @no__t 2, или используется предложение catch, такое как `catch()`.
 
 ## <a name="rule-description"></a>Описание правила
 Общие исключения не должны перехватываться.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
-Чтобы устранить нарушение этого правила, перехватите более конкретное исключение или создайте общее исключение в качестве последней инструкции в `catch` блоке.
+Чтобы устранить нарушение этого правила, перехватите более конкретное исключение или повторно создайте общее исключение в качестве последней инструкции в блоке `catch`.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 Для этого правила отключать вывод предупреждений не следует. Перехват общих типов исключений может скрывать проблемы времени выполнения от пользователя библиотеки и может усложнить отладку.
 
 > [!NOTE]
-> Начиная с .NET Framework 4, общеязыковая среда выполнения (CLR) больше не доставляет исключения поврежденного состояния, которые происходят в операционной системе и управляемом коде, например нарушения [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]прав доступа в, для обработки управляемым кодом. Если требуется скомпилировать приложение в .NET Framework 4 или более поздней версии и поддерживать обработку исключений поврежденного состояния, можно применить <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут к методу, обрабатывающему исключение поврежденного состояния.
+> Начиная с .NET Framework 4, общеязыковая среда выполнения (CLR) больше не доставляет исключения поврежденного состояния, происходящие в операционной системе, и управляемый код, например нарушения прав доступа в [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], для обработки управляемым кодом. Если вы хотите скомпилировать приложение в .NET Framework 4 или более поздней версии и поддерживать обработку исключений поврежденного состояния, можно применить атрибут <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> к методу, обрабатывающему исключение поврежденного состояния.
 
 ## <a name="example"></a>Пример
-В следующем примере показан тип, нарушающий это правило, и тип, который правильно реализует `catch` блок.
+В следующем примере показан тип, нарушающий это правило, и тип, который правильно реализует блок `catch`.
 
 [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
 [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
 [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
-[CA2200: Повторный вызов для сохранения сведений о стеке](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
+[CA2200: следует повторно вызывать исключение для сохранения сведений о стеке](../code-quality/ca2200.md)

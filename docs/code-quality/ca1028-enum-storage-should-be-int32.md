@@ -1,5 +1,5 @@
 ---
-title: CA1028. Хранилище перечисляемых типов должно относиться к типу Int32
+title: 'CA1028: хранилище перечислений должно иметь тип Int32'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2b963f831637e357126137cf40b0d6c9e9a4f8b8
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236085"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349120"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028. Хранилище перечисляемых типов должно относиться к типу Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: хранилище перечислений должно иметь тип Int32
 
 |||
 |-|-|
@@ -33,19 +33,19 @@ ms.locfileid: "71236085"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
-Базовый тип перечисления — нет <xref:System.Int32?displayProperty=fullName>.
+Базовый тип перечисления не <xref:System.Int32?displayProperty=fullName>.
 
 По умолчанию это правило рассматривает только общедоступные перечисления, но это можно [настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
-Перечисление является типом значения, которое определяет набор связанных именованных констант. По умолчанию <xref:System.Int32?displayProperty=fullName> тип данных используется для хранения постоянного значения. Несмотря на то, что этот базовый тип можно изменить, он не является обязательным и не рекомендуется для большинства сценариев. Не достигается значительного выигрыша в производительности за счет использования типа данных меньше <xref:System.Int32>. Если нельзя использовать тип данных по умолчанию, следует использовать один из целочисленных типов, совместимых с <xref:System.Byte>CLS, <xref:System.Int32>, <xref:System.Int16>, или <xref:System.Int64> , чтобы убедиться, что все значения перечисления могут быть представлены в CLS-совместимые языки программирования.
+Перечисление является типом значения, которое определяет набор связанных именованных констант. По умолчанию для хранения постоянного значения используется тип данных <xref:System.Int32?displayProperty=fullName>. Несмотря на то, что этот базовый тип можно изменить, он не является обязательным и не рекомендуется для большинства сценариев. Не достигается значительного увеличения производительности с использованием типа данных, размер которого меньше <xref:System.Int32>. Если нельзя использовать тип данных по умолчанию, следует использовать один из целочисленных типов, совместимых с CLS, <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32> или <xref:System.Int64>, чтобы убедиться в том, что все значения перечисления можно представить в соответствии с CLS-совместимым программированием. Языки.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, если не существует проблем с размером или совместимостью, <xref:System.Int32>используйте. В ситуациях, <xref:System.Int32> где недостаточно велик для хранения значений, используйте. <xref:System.Int64> Если для обратной совместимости требуется тип данных меньшего <xref:System.Byte> размера <xref:System.Int16>, используйте или.
+Чтобы устранить нарушение этого правила, если не существует проблем с размером или совместимостью, используйте <xref:System.Int32>. В ситуациях, где значение <xref:System.Int32> недостаточно велико для хранения значений, используйте <xref:System.Int64>. Если для обратной совместимости требуется тип данных меньшего размера, используйте <xref:System.Byte> или <xref:System.Int16>.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
@@ -77,11 +77,11 @@ dotnet_code_quality.ca1028.api_surface = private, internal
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1008 Перечисляемые типы должны иметь нулевое значение](../code-quality/ca1008-enums-should-have-zero-value.md)
-- [CA1027 Пометьте перечисления атрибутом FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217: Не помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Не наименование значений enum "reserved"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712 Не добавляйте значения перечисления в качестве префикса имени типа](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1008: перечисляемые типы должны иметь нулевое значение](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1027: следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: не следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217.md)
+- [CA1700: не следует называть значения перечислений именем "Reserved"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: не добавляйте имя типа перед перечисляемыми значениями](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>См. также
 

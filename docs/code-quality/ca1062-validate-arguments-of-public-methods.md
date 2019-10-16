@@ -1,5 +1,5 @@
 ---
-title: CA1062. Проверьте аргументы или открытые методы
+title: 'CA1062: проверьте аргументы открытых методов'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 43aa94f67e17a3de51635840419e36ef38db41df
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235341"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381014"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062. Проверьте аргументы или открытые методы
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: проверьте аргументы открытых методов
 
 |||
 |-|-|
@@ -33,19 +33,19 @@ ms.locfileid: "71235341"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
-Внешний видимый метод разыменование одного из ссылочных аргументов без проверки того, является `null` ли этот аргумент (`Nothing` в Visual Basic).
+Метод, видимый извне, отменяет ссылку на один из ссылочных аргументов, не проверяя, является ли этот аргумент `null` (`Nothing` в Visual Basic).
 
 ## <a name="rule-description"></a>Описание правила
 
-Все ссылочные аргументы, которые передаются в методы, видимые извне `null`, должны проверяться по отношению к. При необходимости вызовите исключение <xref:System.ArgumentNullException> , если аргумент имеет `null`значение.
+Все ссылочные аргументы, которые передаются в методы, видимые извне, должны проверяться по `null`. При необходимости вызовите <xref:System.ArgumentNullException>, если аргумент имеет значение `null`.
 
-Если метод может быть вызван из неизвестной сборки, так как он объявлен как открытый или защищенный, следует проверить все параметры метода. Если метод предназначен для вызова только известными сборками, необходимо сделать метод внутренним и применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> атрибут к сборке, содержащей метод.
+Если метод может быть вызван из неизвестной сборки, так как он объявлен как открытый или защищенный, следует проверить все параметры метода. Если метод предназначен для вызова только известными сборками, необходимо сделать метод внутренним и применить атрибут <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> к сборке, содержащей метод.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, проверьте каждый аргумент `null`ссылки на.
+Чтобы устранить нарушение этого правила, проверьте каждый ссылочный аргумент на `null`.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
@@ -76,7 +76,7 @@ namespace DesignLibrary
         {
             if (input == null)
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
             if (input.Length != 0)
             {
@@ -107,7 +107,7 @@ Namespace DesignLibrary
         Sub Validate(ByVal input As String)
 
             If input Is Nothing Then
-                Throw New ArgumentNullException("input")
+                Throw New ArgumentNullException(NameOf(input))
             End If
 
             If input.Length <> 0 Then
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>Пример
 
-Конструкторы копий, заполняющие поля или свойства, являющиеся ссылочными объектами, также могут нарушать правило CA1062. Нарушение возникает из-за того, что копируемый объект, передаваемый в конструктор `null` копирования`Nothing` , может быть (в Visual Basic). Чтобы устранить нарушение, используйте статический метод (Shared в Visual Basic), чтобы убедиться, что скопированный объект не имеет значение null.
+Конструкторы копий, заполняющие поля или свойства, являющиеся ссылочными объектами, также могут нарушать правило CA1062. Нарушение возникает из-за того, что копируемый объект, передаваемый в конструктор копирования, может быть @no__t – 0 (`Nothing` в Visual Basic). Чтобы устранить нарушение, используйте статический метод (Shared в Visual Basic), чтобы убедиться, что скопированный объект не имеет значение null.
 
-В следующем `Person` примере класса `other` объект `Person` , который передается в конструктор копии, может иметь `null`значение.
+В следующем примере класса `Person` объект `other`, который передается в конструктор копии `Person`, может быть `null`.
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>Пример
 
-В следующем исправленном `Person` примере `other` объект, который передается в конструктор копии, сначала `PassThroughNonNull` проверяется на значение NULL в методе.
+В следующем исправленном `Person` объект `other`, который передается в конструктор копии, сначала проверяется на значение NULL в методе `PassThroughNonNull`.
 
 ```csharp
 public class Person
@@ -175,7 +175,7 @@ public class Person
     private static Person PassThroughNonNull(Person person)
     {
         if (person == null)
-            throw new ArgumentNullException("person");
+            throw new ArgumentNullException(nameof(person));
         return person;
     }
 }

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018780"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349711"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Поиск задачи отладки в Visual Studio
 
@@ -65,6 +65,12 @@ ms.locfileid: "72018780"
 
 Это можно сделать, [установив точку останова в окне дизассемблирования](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
+## <a name="execute-code"></a>Выполнить код
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Сведения о командах для пошагового выполнения кода во время отладки
+
+Дополнительные сведения см. [в разделе Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md).
+
 ## <a name="inspect-data"></a>Проверка данных
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Проверка значений переменных во время выполнения приложения
@@ -79,19 +85,7 @@ ms.locfileid: "72018780"
 
 Откройте встроенный [Визуализатор строк](view-strings-visualizer.md) во время отладки.
 
-## <a name="additional-tasks"></a>Дополнительные задачи
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Сведения о командах для пошагового выполнения кода во время отладки
-
-Дополнительные сведения см. [в разделе Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md).
-
-### <a name="edit-code-during-a-debugging-session"></a>Изменение кода во время сеанса отладки
-
-Используйте ["изменить и продолжить"](edit-and-continue.md). Для XAML используйте [горячую перезагрузку XAML](xaml-hot-reload.md).
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Отправка сообщений в окно вывода без изменения кода
-
-Задайте точку трассировки. Дополнительные сведения см. [в разделе Использование точек отслеживания](using-tracepoints.md).
+## <a name="configure-debugging"></a>Настройка отладки
 
 ### <a name="customize-information-shown-in-the-debugger"></a>Настройка сведений, отображаемых в отладчике
 
@@ -102,6 +96,16 @@ ms.locfileid: "72018780"
 ### <a name="configure-debugger-settings"></a>Настройка параметров отладчика
 
 Сведения о настройке параметров отладчика и параметров проекта отладчика см. в разделе [параметры отладчика и подготовка](debugger-settings-and-preparation.md).
+
+## <a name="additional-tasks"></a>Дополнительные задачи
+
+### <a name="edit-code-during-a-debugging-session"></a>Изменение кода во время сеанса отладки
+
+Используйте ["изменить и продолжить"](edit-and-continue.md). Для XAML используйте [горячую перезагрузку XAML](xaml-hot-reload.md).
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Отправка сообщений в окно вывода без изменения кода
+
+Задайте точку трассировки. Дополнительные сведения см. [в разделе Использование точек отслеживания](using-tracepoints.md).
 
 ### <a name="debug-on-remote-machines"></a>Отладка на удаленных компьютерах
 

@@ -1,5 +1,5 @@
 ---
-title: CA1065. Не вызывайте исключения в непредвиденных местах
+title: 'CA1065: не вызывайте исключения в непредвиденных местах'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b45e98fde35e8be3296ce1c6916f61ef7b76a306
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235250"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349030"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065. Не вызывайте исключения в непредвиденных местах
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: не вызывайте исключения в непредвиденных местах
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "71235250"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
 Метод вызывает исключение, хотя не должен этого делать.
 
@@ -66,13 +66,13 @@ ms.locfileid: "71235250"
 
 Следующие исключения могут быть вызваны методом get свойства:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>и все производные
+- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
 
-- <xref:System.ArgumentException?displayProperty=fullName>(только из индексированного получения)
+- <xref:System.ArgumentException?displayProperty=fullName> (только из индексированного получения)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(только из индексированного получения)
+- <xref:System.Collections.Generic.KeyNotFoundException> (только из индексированного получения)
 
 ### <a name="event-accessor-methods"></a>Методы доступа к событиям
 
@@ -80,11 +80,11 @@ ms.locfileid: "71235250"
 
 Из метода доступа к событию могут быть вызваны следующие исключения.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>и все производные
+- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
 
-- <xref:System.ArgumentException>и производные
+- <xref:System.ArgumentException> и производные
 
 ### <a name="equals-methods"></a>Методы Equals
 
@@ -94,7 +94,7 @@ ms.locfileid: "71235250"
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Метод **Equals** должен `true` возвращать `false` или вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен `false` просто возвращать, <xref:System.ArgumentException>а не создавать исключение.
+Метод **Equals** должен возвращать `true` или `false` вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен просто вернуть `false` вместо создания <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Методы GetHashCode
 
@@ -106,11 +106,11 @@ ms.locfileid: "71235250"
 
 **GetHashCode** всегда должен возвращать значение. В противном случае можно потерять элементы в хэш-таблице.
 
-Версии **GetHashCode** , которые принимают аргумент, могут вызывать <xref:System.ArgumentException>исключение. Однако **Object. GetHashCode** никогда не должен вызывать исключение.
+Версии **GetHashCode** , принимающие аргумент, могут вызывать исключение <xref:System.ArgumentException>. Однако **Object. GetHashCode** никогда не должен вызывать исключение.
 
 ### <a name="tostring-methods"></a>Методы ToString
 
-Отладчик использует <xref:System.Object.ToString%2A?displayProperty=fullName> для вывода сведений об объектах в строковом формате. Таким образом, **метод ToString** не должен изменять состояние объекта, и это не должно вызывать исключения.
+Отладчик использует <xref:System.Object.ToString%2A?displayProperty=fullName> для просмотра сведений об объектах в строковом формате. Таким образом, **метод ToString** не должен изменять состояние объекта, и это не должно вызывать исключения.
 
 ### <a name="static-constructors"></a>Статические конструкторы
 
@@ -122,13 +122,13 @@ ms.locfileid: "71235250"
 
 ### <a name="dispose-methods"></a>Методы Dispose
 
-<xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Метод не должен вызывать исключение. Метод Dispose часто вызывается как часть логики очистки в `finally` предложении. Таким образом, явное создание исключения из Dispose приводит к тому, что пользователь добавляет обработку исключений `finally` внутри предложения.
+Метод <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> не должен вызывать исключение. Метод Dispose часто вызывается как часть логики очистки в предложении `finally`. Таким образом, явное создание исключения из Dispose приводит к тому, что пользователь добавляет обработку исключений в предложение `finally`.
 
 Путь кода **Dispose (false)** никогда не должен вызывать исключения, так как метод Dispose почти всегда вызывается методом завершения.
 
 ### <a name="equality-operators--"></a>Операторы равенства (= =,! =)
 
-Как и методы Equals, операторы равенства должны `true` возвращать значение или `false`, а также не должны вызывать исключения.
+Как и методы Equals, операторы равенства должны возвращать либо `true`, либо `false`, и не должны вызывать исключения.
 
 ### <a name="implicit-cast-operators"></a>Операторы неявного приведения
 
@@ -146,7 +146,7 @@ ms.locfileid: "71235250"
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA2219: Не вызывайте исключения в предложениях исключений](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: не создавайте исключения в предложениях исключений](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>См. также
 
