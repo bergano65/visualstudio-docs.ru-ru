@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810512"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289715"
 ---
 # <a name="step-6-work-with-git"></a>Шаг 6. Работа с Git
 
@@ -56,7 +56,7 @@ Visual Studio обеспечивает прямую интеграцию с ло
 
 Общие инструкции по созданию проекта из удаленного репозитория Git см. в статье [Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Подробное руководство и инструкции по обработке конфликтов слияния, проверке кода с запросами на вытягивание, перемещении изменений из одной ветви в другую и отборе изменений см. в руководстве по [началу работы с Git и Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
+Подробное руководство и инструкции по обработке конфликтов слияния, проверке кода с запросами на вытягивание, перемещении изменений из одной ветви в другую и отборе изменений см. в руководстве по [началу работы с Git и Azure Repos](/azure/devops/repos/git/gitquickstart).
 
 ## <a name="tutorial-review"></a>Обзор руководства
 

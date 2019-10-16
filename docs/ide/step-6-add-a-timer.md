@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5958c089998d35dea4324c59f85c368adf900c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118984"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289634"
 ---
 # <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
 Затем добавьте в игру "Подбери пару" элемент управления <xref:System.Windows.Forms.Timer>. Таймер ожидает заданное число миллисекунд, а затем вызывает событие, называемое *тактом*. Это бывает удобно для запуска действия или повтора действия с определенной периодичностью. В этом случае таймер нужен для того, чтобы игроки могли выбрать два значка, а если они не совпадают, скрыть их через небольшой отрезок времени.
@@ -27,7 +27,7 @@ ms.locfileid: "71118984"
 
 1. На панели элементов в **конструкторе Windows Forms** выберите **Таймер** (в категории **Компоненты**), а затем нажмите клавишу **ВВОД** или дважды щелкните таймер, чтобы добавить его в форму. Значок с именем таймера **Timer1** должен появиться в пространстве под формой, как показано на следующем рисунке.
 
-     ![Timer](../ide/media/express_timer.png)
+     ![Таймер](../ide/media/express_timer.png)<br/>
 **Таймер**
 
     > [!NOTE]
@@ -39,6 +39,9 @@ ms.locfileid: "71118984"
 
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+
+      > [!IMPORTANT]
+      > Используйте элемент управления языка программирования в правом верхнем углу этой страницы, чтобы просмотреть фрагмент кода на C# или Visual Basic.<br><br>![Элемент управления языка программирования для Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Обработчик события Tick выполняет три действия. Сначала он останавливает таймер, вызывая метод <xref:System.Windows.Forms.Timer.Stop>. Затем он использует две ссылочные переменные, `firstClicked` и `secondClicked`, чтобы снова сделать невидимыми значки двух меток, которые выбрал игрок. Наконец, он сбрасывает значения ссылочных переменных `firstClicked` и `secondClicked` на `null` в Visual C# и `Nothing` в Visual Basic. Это важный шаг, поскольку таким образом программа сбрасывает себя. Теперь она не отслеживает какие-либо элементы управления <xref:System.Windows.Forms.Label> и снова готова к выбору метки игроком.
 
