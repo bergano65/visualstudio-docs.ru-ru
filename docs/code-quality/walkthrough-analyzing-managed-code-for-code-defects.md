@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 74a772bbe915227bca001f9370980cbc7d3212a5
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974894"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349468"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Пошаговое руководство. Использование статического анализа кода для поиска дефектов кода
 
@@ -93,27 +93,27 @@ ms.locfileid: "71974894"
 
 1. Чтобы исправить предупреждения, используйте следующие советы.
 
-   @NO__T 0CA1014: Пометьте сборки с помощью CLSCompliantAttribute @ no__t-0: Добавьте код `[assembly: CLSCompliant(true)]` в конец файла AssemblyInfo.cs.
+   [CA1014: Пометьте сборки с помощью CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): добавьте код `[assembly: CLSCompliant(true)]` в конец файла AssemblyInfo.cs.
 
-   @NO__T 0CA1032: Реализуйте стандартные конструкторы исключений @ no__t-0: Добавьте конструктор `public demo (String s) : base(s) { }` в класс `demo`.
+   [CA1032: реализуйте стандартные конструкторы исключений](../code-quality/ca1032-implement-standard-exception-constructors.md): добавьте конструктор `public demo (String s) : base(s) { }` к классу `demo`.
 
-   @NO__T 0CA1032: Реализуйте стандартные конструкторы исключений @ no__t-0: Добавьте конструктор `public demo (String s, Exception e) : base(s, e) { }` в класс `demo`.
+   [CA1032: реализуйте стандартные конструкторы исключений](../code-quality/ca1032-implement-standard-exception-constructors.md): добавьте конструктор `public demo (String s, Exception e) : base(s, e) { }` к классу `demo`.
 
-   @NO__T 0CA1032: Реализуйте стандартные конструкторы исключений @ no__t-0: Добавьте конструктор `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` в демонстрационную версию класса. Также необходимо добавить оператор `using` для <xref:System.Runtime.Serialization?displayProperty=fullName>.
+   [CA1032: реализуйте стандартные конструкторы исключений](../code-quality/ca1032-implement-standard-exception-constructors.md): добавьте конструктор `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` в демонстрацию класса. Также необходимо добавить оператор `using` для <xref:System.Runtime.Serialization?displayProperty=fullName>.
 
-   @NO__T 0CA1032: Реализуйте стандартные конструкторы исключений @ no__t-0: Добавьте конструктор `public demo () : base() { }` в класс `demo`.
+   [CA1032: реализуйте стандартные конструкторы исключений](../code-quality/ca1032-implement-standard-exception-constructors.md): добавьте конструктор `public demo () : base() { }` к классу `demo`.
 
-   @NO__T 0CA1709: Идентификаторы должны иметь правильный регистр @ no__t-0: Измените регистр пространства имен `testCode` на `TestCode`.
+   [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): измените регистр пространства имен `testCode` на `TestCode`.
 
-   @NO__T 0CA1709: Идентификаторы должны иметь правильный регистр @ no__t-0: Измените имя члена на `Demo`.
+   [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): измените имя члена на `Demo`.
 
-   @NO__T 0CA1709: Идентификаторы должны иметь правильный регистр @ no__t-0: Измените имя члена на `Item`.
+   [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): измените имя члена на `Item`.
 
-   @NO__T 0CA1710: Идентификаторы должны иметь правильные суффиксы @ no__t-0: Измените имя класса и его конструкторов на `DemoException`.
+   [CA1710: идентификаторы должны иметь правильные суффиксы](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): измените имя класса и его конструкторов на `DemoException`.
 
-   [CA2237. Пометьте типы ISerializable с SerializableAttribute @ no__t-0: Добавьте атрибут `[Serializable ()]` в класс `demo`.
+   [CA2237: Mark Types ISerializable with SerializableAttribute](../code-quality/ca2237.md): добавьте атрибут `[Serializable ()]` в класс `demo`.
 
-   @NO__T 0CA2210: Сборки должны иметь допустимые строгие имена @ no__t-0: Подписать "Кодеаналисисманажеддемо" ключом строгого имени:
+   [CA2210: сборки должны иметь допустимые строгие имена](../code-quality/ca2210.md): знак "кодеаналисисманажеддемо" с ключом строгого имени:
 
    1. В меню **проект** выберите **Свойства кодеаналисисманажеддемо**.
 

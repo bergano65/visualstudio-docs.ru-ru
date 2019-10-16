@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7c88e565de4f4b3e3b25b6523ff04f1831a70d
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: b4a6c94f5784d57a90dd31f21f8829b3141140d0
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314146"
+ms.locfileid: "72349592"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
 
@@ -95,19 +95,19 @@ ms.locfileid: "72314146"
 
 Термины в словаре, словах и распознаваемых узлах применяются к следующим правилам анализа кода:
 
-- @NO__T 0CA1701: В составных словах строк ресурсов следует указывать правильный регистр @ no__t-0
+- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1702: Составные слова должны иметь правильный регистр @ no__t-0
+- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1703: Строки ресурсов должны быть написаны правильно. @ no__t-0
+- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- @NO__T 0CA1704: Идентификаторы должны быть правильно написаны @ no__t-0
+- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- @NO__T 0CA1709: Идентификаторы должны иметь правильный регистр @ no__t-0
+- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- @NO__T 0CA1726: Использовать предпочтительные термины @ no__t-0
+- [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
 
-- @NO__T 0CA2204: Литералы должны быть правильно написаны @ no__t-0
+- [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Словари, слова, нераспознанные или слова
 
@@ -130,19 +130,19 @@ ms.locfileid: "72314146"
 
 Термины в словаре/словах/нераспознанные узлы применяются к следующим правилам анализа кода:
 
-- @NO__T 0CA1701: В составных словах строк ресурсов следует указывать правильный регистр @ no__t-0
+- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1702: Составные слова должны иметь правильный регистр @ no__t-0
+- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1703: Строки ресурсов должны быть написаны правильно. @ no__t-0
+- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- @NO__T 0CA1704: Идентификаторы должны быть правильно написаны @ no__t-0
+- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- @NO__T 0CA1709: Идентификаторы должны иметь правильный регистр @ no__t-0
+- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- @NO__T 0CA1726: Использовать предпочтительные термины @ no__t-0
+- [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
 
-- @NO__T 0CA2204: Литералы должны быть правильно написаны @ no__t-0
+- [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionary/Words/устарело/Term [@PreferredAlternate]
 
@@ -171,15 +171,15 @@ ms.locfileid: "72314146"
 
 Термины в словаре/словах и устаревших узлах применяются к следующим правилам анализа кода:
 
-- @NO__T 0CA1701: В составных словах строк ресурсов следует указывать правильный регистр @ no__t-0
+- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1702: Составные слова должны иметь правильный регистр @ no__t-0
+- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1703: Строки ресурсов должны быть написаны правильно. @ no__t-0
+- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- @NO__T 0CA1704: Идентификаторы должны быть правильно написаны @ no__t-0
+- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- @NO__T 0CA1726: Использовать предпочтительные термины @ no__t-0
+- [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
 
 ### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionary/слова/составной/термин [@CompoundAlternate]
 
@@ -206,13 +206,13 @@ ms.locfileid: "72314146"
 
 Термины в узле Dictionary/Words/составные узлы применяются к следующим правилам анализа кода:
 
-- @NO__T 0CA1701: В составных словах строк ресурсов следует указывать правильный регистр @ no__t-0
+- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1702: Составные слова должны иметь правильный регистр @ no__t-0
+- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1703: Строки ресурсов должны быть написаны правильно. @ no__t-0
+- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- @NO__T 0CA1704: Идентификаторы должны быть правильно написаны @ no__t-0
+- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
 ### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/Дискретиксцептионс/Term
 
@@ -235,9 +235,9 @@ ms.locfileid: "72314146"
 
 Термины в узле Dictionary/Words/Дискретиксцептионс применяются к следующим правилам анализа кода:
 
-- @NO__T 0CA1701: В составных словах строк ресурсов следует указывать правильный регистр @ no__t-0
+- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- @NO__T 0CA1702: Составные слова должны иметь правильный регистр @ no__t-0
+- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Словарь, акронимы, Касинжексцептионси и акронимы
 
@@ -260,7 +260,7 @@ ms.locfileid: "72314146"
 
 Термины в узле Dictionary/акронимы/Касинжексцептионс применяются к следующим правилам анализа кода:
 
-- @NO__T 0CA1709: Идентификаторы должны иметь правильный регистр @ no__t-0
+- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
 ## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Применение пользовательского словаря к проекту
 

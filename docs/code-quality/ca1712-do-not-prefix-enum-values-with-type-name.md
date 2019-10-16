@@ -1,5 +1,5 @@
 ---
-title: CA1712. Не добавляйте имя типа перед перечисляемыми значениями
+title: 'CA1712: не добавляйте имя типа перед перечисляемыми значениями'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5966c9685bc4bbc5ba997f8acf47abbbfca1a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f151296fce00ca92209c588c4be0361f9adfc7fd
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234112"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348934"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712. Не добавляйте имя типа перед перечисляемыми значениями
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: не добавляйте имя типа перед перечисляемыми значениями
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "71234112"
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 Перечисление содержит элемент, имя которого начинается с имени типа перечисления.
 
 ## <a name="rule-description"></a>Описание правила
@@ -56,11 +56,11 @@ ms.locfileid: "71234112"
 [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
-[CA1711: Идентификаторы не должны иметь неправильные суффиксы](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: идентификаторы не должны иметь неверных суффиксов](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-[CA1027 Пометьте перечисления атрибутом FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-[CA2217: Не помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: не следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>См. также
 

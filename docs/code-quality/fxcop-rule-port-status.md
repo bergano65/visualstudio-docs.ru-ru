@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e784627f0c9c6aa865d53db49d6ea43c4e49d0eb
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: b83a766a1829c55bd5a5847a938cd9d3c1206765
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305791"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349601"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -125,29 +125,29 @@ CA2010 | Всегда потреблять значение, возвращае�
 [CA2101](ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | Укажите тип маршалинга для строковых аргументов P/Invoke
 [CA2119](ca2119-seal-methods-that-satisfy-private-interfaces.md) | Запечатайте методы, соответствующие частным интерфейсам
 [CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | Не перехватывайте исключения поврежденного состояния
-[CA2200](ca2200-rethrow-to-preserve-stack-details.md) | Вызывайте, чтобы сохранить сведения о стеке.
-[CA2201](ca2201-do-not-raise-reserved-exception-types.md) | Не порождайте исключения зарезервированных типов
-[CA2207](ca2207-initialize-value-type-static-fields-inline.md) | Используйте встроенную инициализацию статических полей типов значений
-[CA2208](ca2208-instantiate-argument-exceptions-correctly.md) | Правильно создавайте экземпляры исключений аргументов
-[CA2211](ca2211-non-constant-fields-should-not-be-visible.md) | Поля, не являющиеся константами, не должны быть видимыми
-[CA2213](ca2213-disposable-fields-should-be-disposed.md) | Следует высвобождать высвобождаемые поля
-[CA2214](ca2214-do-not-call-overridable-methods-in-constructors.md) | Не вызывайте переопределяемые методы в конструкторах
-[CA2216](ca2216-disposable-types-should-declare-finalizer.md) | Высвобождаемые типы должны объявлять методы завершения
-[CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md) | Не помечайте перечисляемые типы с помощью FlagsAttribute
-[CA2218](ca2218-override-gethashcode-on-overriding-equals.md) | Переопределяйте GetHashCode при переопределении Equals
-[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | Не вызывайте исключения в предложениях finally
-[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Переопределять Equals при перегрузке оператора равенства
-[CA2225](ca2225-operator-overloads-have-named-alternates.md) | Для перегрузок операторов существуют варианты с именами
-[CA2226](ca2226-operators-should-have-symmetrical-overloads.md) | Перегрузки операторов должны быть симметричными
-[CA2227](ca2227-collection-properties-should-be-read-only.md) | Свойства, возвращающие коллекции, должны быть доступными только для чтения
-[CA2229](ca2229-implement-serialization-constructors.md) | Реализуйте конструкторы сериализации
-[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Перегруженный оператор равенства при переопределении значения типа Equals
-[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Передавать системные объекты URI вместо строк
-[CA2235](ca2235-mark-all-non-serializable-fields.md) | Пометьте все несериализуемые поля
-[CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | Пометьте типы ISerializable атрибутом serializable
-[CA2241](ca2241-provide-correct-arguments-to-formatting-methods.md) | Задайте правильные аргументы для методов форматирования
-[CA2242](ca2242-test-for-nan-correctly.md) | Правильно выполняйте проверку NaN
-[CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | Синтаксический разбор строковых литералов должен осуществляться правильно
+[CA2200](ca2200.md) | Вызывайте, чтобы сохранить сведения о стеке.
+[CA2201](ca2201.md) | Не порождайте исключения зарезервированных типов
+[CA2207](ca2207.md) | Используйте встроенную инициализацию статических полей типов значений
+[CA2208](ca2208.md) | Правильно создавайте экземпляры исключений аргументов
+[CA2211](ca2211.md) | Поля, не являющиеся константами, не должны быть видимыми
+[CA2213](ca2213.md) | Следует высвобождать высвобождаемые поля
+[CA2214](ca2214.md) | Не вызывайте переопределяемые методы в конструкторах
+[CA2216](ca2216.md) | Высвобождаемые типы должны объявлять методы завершения
+[CA2217](ca2217.md) | Не помечайте перечисляемые типы с помощью FlagsAttribute
+[CA2218](ca2218.md) | Переопределяйте GetHashCode при переопределении Equals
+[CA2219](ca2219.md) | Не вызывайте исключения в предложениях finally
+[CA2224](ca2224.md) | Переопределять Equals при перегрузке оператора равенства
+[CA2225](ca2225.md) | Для перегрузок операторов существуют варианты с именами
+[CA2226](ca2226.md) | Перегрузки операторов должны быть симметричными
+[CA2227](ca2227.md) | Свойства, возвращающие коллекции, должны быть доступными только для чтения
+[CA2229](ca2229.md) | Реализуйте конструкторы сериализации
+[CA2231](ca2231.md) | Перегруженный оператор равенства при переопределении значения типа Equals
+[CA2234](ca2234.md) | Передавать системные объекты URI вместо строк
+[CA2235](ca2235.md) | Пометьте все несериализуемые поля
+[CA2237](ca2237.md) | Пометьте типы ISerializable атрибутом serializable
+[CA2241](ca2241.md) | Задайте правильные аргументы для методов форматирования
+[CA2242](ca2242.md) | Правильно выполняйте проверку NaN
+[CA2243](ca2243.md) | Синтаксический разбор строковых литералов должен осуществляться правильно
 CA2244 | Не дублировать инициализации индексированных элементов
 [CA2300](ca2300.md) | Не используйте небезопасный десериализатор BinaryFormatter
 [CA2301](ca2301.md) | Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder
@@ -259,15 +259,15 @@ CA9999 | Несоответствие версии анализатора
 [CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
 [CA2006](ca2006-use-safehandle-to-encapsulate-native-resources.md) | [https://github.com/dotnet/roslyn-analyzers/issues/480](https://github.com/dotnet/roslyn-analyzers/issues/480)
 [CA2109](ca2109-review-visible-event-handlers.md) | [https://github.com/dotnet/roslyn-analyzers/issues/488](https://github.com/dotnet/roslyn-analyzers/issues/488)
-[CA2204](ca2204-literals-should-be-spelled-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
-[CA2205](ca2205-use-managed-equivalents-of-win32-api.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
-[CA2212](ca2212-do-not-mark-serviced-components-with-webmethod.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
-[CA2215](ca2215-dispose-methods-should-call-base-class-dispose.md) | [https://github.com/dotnet/roslyn-analyzers/issues/535](https://github.com/dotnet/roslyn-analyzers/issues/535)
-[CA2232](ca2232-mark-windows-forms-entry-points-with-stathread.md) | [https://github.com/dotnet/roslyn-analyzers/issues/545](https://github.com/dotnet/roslyn-analyzers/issues/545)
-[CA2236](ca2236-call-base-class-methods-on-iserializable-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/548](https://github.com/dotnet/roslyn-analyzers/issues/548)
-[CA2238](ca2238-implement-serialization-methods-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/549](https://github.com/dotnet/roslyn-analyzers/issues/549)
-[CA2239](ca2239-provide-deserialization-methods-for-optional-fields.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
-[CA2240](ca2240-implement-iserializable-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
+[CA2204](ca2204.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
+[CA2205](ca2205.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
+[CA2212](ca2212.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
+[CA2215](ca2215.md) | [https://github.com/dotnet/roslyn-analyzers/issues/535](https://github.com/dotnet/roslyn-analyzers/issues/535)
+[CA2232](ca2232.md) | [https://github.com/dotnet/roslyn-analyzers/issues/545](https://github.com/dotnet/roslyn-analyzers/issues/545)
+[CA2236](ca2236.md) | [https://github.com/dotnet/roslyn-analyzers/issues/548](https://github.com/dotnet/roslyn-analyzers/issues/548)
+[CA2238](ca2238.md) | [https://github.com/dotnet/roslyn-analyzers/issues/549](https://github.com/dotnet/roslyn-analyzers/issues/549)
+[CA2239](ca2239.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
+[CA2240](ca2240.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
 
 ### <a name="deprecated-rules"></a>Устаревшие правила
 
@@ -333,15 +333,15 @@ CA9999 | Несоответствие версии анализатора
 - [CA2147](ca2147-transparent-methods-may-not-use-security-asserts.md)
 - [CA2149](ca2149-transparent-methods-must-not-call-into-native-code.md)
 - [CA2151](ca2151-fields-with-critical-types-should-be-security-critical.md)
-- [CA2202](ca2202-do-not-dispose-objects-multiple-times.md)
-- [CA2210](ca2210-assemblies-should-have-valid-strong-names.md)
-- [CA2220](ca2220-finalizers-should-call-base-class-finalizer.md)
-- [CA2221](ca2221-finalizers-should-be-protected.md)
-- [CA2222](ca2222-do-not-decrease-inherited-member-visibility.md) ([обоснование](https://github.com/dotnet/roslyn-analyzers/issues/1378))
-- [CA2223](ca2223-members-should-differ-by-more-than-return-type.md)
-- [CA2228](ca2228-do-not-ship-unreleased-resource-formats.md)
-- [CA2230](ca2230-use-params-for-variable-arguments.md)
-- [CA2233](ca2233-operations-should-not-overflow.md)
+- [CA2202](ca2202.md)
+- [CA2210](ca2210.md)
+- [CA2220](ca2220.md)
+- [CA2221](ca2221.md)
+- [CA2222](ca2222.md) ([обоснование](https://github.com/dotnet/roslyn-analyzers/issues/1378))
+- [CA2223](ca2223.md)
+- [CA2228](ca2228.md)
+- [CA2230](ca2230.md)
+- [CA2233](ca2233.md)
 - [CA5122](ca5122-p-invoke-declarations-should-not-be-safe-critical.md)
 
 ## <a name="see-also"></a>См. также

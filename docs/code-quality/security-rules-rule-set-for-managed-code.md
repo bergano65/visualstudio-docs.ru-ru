@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 3449cf131aad8413cf192bb758e27746cc80d051
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018378"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349499"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Набор правил "Правила безопасности" для управляемого кода
 
@@ -63,7 +63,7 @@ ms.locfileid: "72018378"
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
-|[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Сборки должны иметь допустимые строгие имена|
+|[CA2210](../code-quality/ca2210.md)|Сборки должны иметь допустимые строгие имена|
 |[CA2300](ca2300.md)|Не используйте небезопасный десериализатор BinaryFormatter|
 |[CA2301](ca2301.md)|Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder|
 |[CA2302](ca2302.md)|Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize|

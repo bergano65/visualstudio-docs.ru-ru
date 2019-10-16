@@ -1,5 +1,5 @@
 ---
-title: CA1057. Перегрузки строковых параметров URI вызывают перегрузки System.Uri
+title: 'CA1057: перегрузки строковых параметров URI вызывают перегрузки System.Uri'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bd77a49690979ea7ab3c4619fdd578a80bb77c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: dd79751c67ca5540cb22eb692b2d11c0941005a6
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235523"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349036"
 ---
-# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057. Перегрузки строковых параметров URI вызывают перегрузки System.Uri
+# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: перегрузки строковых параметров URI вызывают перегрузки System.Uri
 
 |||
 |-|-|
@@ -34,15 +34,15 @@ ms.locfileid: "71235523"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
-Тип объявляет перегрузки метода, которые отличаются только заменой строкового параметра <xref:System.Uri?displayProperty=fullName> параметром, а перегрузка, принимающая строковый параметр, не вызывает перегрузку, которая <xref:System.Uri> принимает параметр.
+Тип объявляет перегрузки метода, которые отличаются только заменой строкового параметра параметром <xref:System.Uri?displayProperty=fullName>, а перегрузка, принимающая строковый параметр, не вызывает перегрузку, которая принимает параметр <xref:System.Uri>.
 
 ## <a name="rule-description"></a>Описание правила
-Поскольку перегрузки отличаются только строкой или <xref:System.Uri> параметром, предполагается, что строка представляет универсальный код ресурса (URI). В строковых представлениях кода URI часто встречаются ошибки синтаксического анализа и кодирования, которые могут привести к уязвимостям системы безопасности. <xref:System.Uri> Класс предоставляет эти службы безопасным и безопасным способом. Чтобы воспользоваться преимуществами <xref:System.Uri> класса, перегрузка строки должна <xref:System.Uri> вызывать перегрузку с помощью строкового аргумента.
+Поскольку перегрузки отличаются только строкой или параметром <xref:System.Uri>, предполагается, что строка представляет универсальный код ресурса (URI). В строковых представлениях кода URI часто встречаются ошибки синтаксического анализа и кодирования, которые могут привести к уязвимостям системы безопасности. Класс <xref:System.Uri> предоставляет эти службы безопасным и безопасным способом. Чтобы воспользоваться преимуществами класса <xref:System.Uri>, строка перегрузки должна вызывать перегрузку <xref:System.Uri> с помощью строкового аргумента.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
-Повторно реализуйте метод, который использует строковое представление универсального кода ресурса (URI), чтобы создать <xref:System.Uri> экземпляр класса с помощью строкового аргумента, а <xref:System.Uri> затем передает объект в перегрузку <xref:System.Uri> , имеющую параметр.
+Повторно реализуйте метод, который использует строковое представление универсального кода ресурса (URI), чтобы создать экземпляр класса <xref:System.Uri> с помощью строкового аргумента, а затем передает объект <xref:System.Uri> в перегрузку, имеющую параметр <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 Можно отключить вывод предупреждения из этого правила, если строковый параметр не представляет URI.
@@ -55,10 +55,10 @@ ms.locfileid: "71235523"
 [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
-[CA2234 Передавать объекты System. URI вместо строк](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+[CA2234: передавайте объекты System.Uri вместо строк](../code-quality/ca2234.md)
 
-[CA1056: Свойства URI не должны быть строками](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+[CA1056: свойства URI не должны быть строками](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
-[CA1054: Параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+[CA1054: параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
-[CA1055: Возвращаемые значения URI не должны быть строками](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+[CA1055: возвращаемые значения URI не должны быть строками](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

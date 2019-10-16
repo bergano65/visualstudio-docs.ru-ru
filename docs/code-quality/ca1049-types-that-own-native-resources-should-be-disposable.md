@@ -1,5 +1,5 @@
 ---
-title: CA1049. Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми
+title: 'CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306118"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349090"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049. Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: типы, которым принадлежат собственные ресурсы, должны быть высвобождаемыми
 
 |||
 |-|-|
@@ -33,7 +33,7 @@ ms.locfileid: "72306118"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
 Тип ссылается на поле <xref:System.IntPtr?displayProperty=fullName>, поле <xref:System.UIntPtr?displayProperty=fullName> или поле <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>, но не реализует <xref:System.IDisposable?displayProperty=fullName>.
 
@@ -56,11 +56,11 @@ ms.locfileid: "72306118"
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
-@NO__T 0CA2115: Вызовите GC. KeepAlive при использовании собственных ресурсов @ no__t-0
+[CA2115: вызывайте GC.KeepAlive при использовании машинных ресурсов](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-@NO__T 0CA1816: Вызовите GC. SuppressFinalize правильно @ no__t-0
+[CA1816: вызов GC.SuppressFinalize должен осуществляться правильно](../code-quality/ca1816.md)
 
-@NO__T 0CA2216: Удаляемые типы должны объявлять финализатор @ no__t-0
+[CA2216: высвобождаемые типы должны объявлять метод завершения](../code-quality/ca2216.md)
 
 [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

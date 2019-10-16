@@ -1,5 +1,5 @@
 ---
-title: CA1704. Идентификаторы должны иметь правильное правописание
+title: 'CA1704: идентификаторы должны иметь правильное написание'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f2e42e68f008c625c8d6b5150d0348d14e29d3dc
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234296"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348952"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704. Идентификаторы должны иметь правильное правописание
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: идентификаторы должны иметь правильное написание
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "71234296"
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
 Имя идентификатора содержит одно или несколько слов, не распознаваемых библиотекой проверки орфографии Майкрософт. Это правило не проверяет конструкторы или элементы с особыми именами, такие как методы доступа get и Set.
 
@@ -52,7 +52,7 @@ ms.locfileid: "71234296"
 
 В настоящее время средство проверки орфографии проверяет только словари региональных параметров на основе английского языка. Вы можете изменить язык и региональные параметры проекта в файле проекта, добавив элемент **кодеаналисискултуре** .
 
-Например:
+Пример:
 
 ```xml
 <Project ...>
@@ -69,13 +69,13 @@ ms.locfileid: "71234296"
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>Добавление слов в пользовательский словарь
 
-Назовите пользовательский словарь XML-файл *кустомдиктионари. XML*. Поместите словарь в каталог установки средства, каталог проекта или в каталог, связанный с инструментом в профиле пользователя ( *%UserProfile%\Application Data\\...* ). Сведения о том, как добавить пользовательский словарь в проект в Visual Studio, см. [в разделе как Настройка словаря](../code-quality/how-to-customize-the-code-analysis-dictionary.md)анализа кода.
+Назовите пользовательский словарь XML-файл *кустомдиктионари. XML*. Поместите словарь в каталог установки средства, каталог проекта или в каталог, связанный с инструментом в профиле пользователя ( *%UserProfile%\Application Data @ no__t-1...* ). Сведения о том, как добавить пользовательский словарь в проект в Visual Studio, см. в разделе [инструкции. Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 - Добавьте слова, которые не должны вызывать нарушение по словарю/словам/распознанному пути.
 
 - Добавьте слова, которые должны привести к нарушению по словарю или словам/нераспознанному пути.
 
-- Добавьте слова, которые должны быть помечены как устаревшие, в разделе Словари/слова/устаревший путь. См. раздел [связанных правил CA1726: Используйте предпочтительные](../code-quality/ca1726-use-preferred-terms.md) термины для получения дополнительных сведений.
+- Добавьте слова, которые должны быть помечены как устаревшие, в разделе Словари/слова/устаревший путь. Дополнительные сведения см. в разделе о связанном правиле [CA1726: использование предпочтительных условий](../code-quality/ca1726-use-preferred-terms.md) .
 
 - Добавьте исключения в правила регистра акронимов в словарь, акронимы или путь Касинжексцептионс.
 
@@ -110,13 +110,13 @@ ms.locfileid: "71234296"
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA2204: Литералы должны быть написаны правильно](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703 Строки ресурсов должны быть написаны правильно](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709 Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Идентификаторы должны отличаться более чем регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707 Идентификаторы не должны содержать знаки подчеркивания](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1726 Использовать предпочтительные термины](../code-quality/ca1726-use-preferred-terms.md)
+- [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204.md)
+- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: идентификаторы не должны содержать знак подчеркивания](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1726: используйте предпочитаемые термины](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. настройке словаря для анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [Практическое руководство. Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

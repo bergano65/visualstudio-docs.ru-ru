@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a4257327e8f1346ce99ce44aad9bcf4f6a466cd
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 2c0b5fb735309e87dab31631d088f14ac9fa9d41
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305650"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349519"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Набор правил "Рекомендуемые правила для управляемого кода"
 
@@ -67,21 +67,21 @@ ms.locfileid: "72305650"
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Повторно порождайте исключения для сохранения сведений стека|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Не ликвидируйте объекты несколько раз|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Используйте встроенную инициализацию статических полей типов значений|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Не помечайте обслуживаемые компоненты с помощью WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Следует высвобождать высвобождаемые поля|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Не вызывайте переопределяемые методы в конструкторах|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Высвобождаемые типы должны объявлять методы завершения|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Методы завершения должны вызывать метод завершения базового класса|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Реализуйте конструкторы сериализации|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Перегрузите оператор равенства на переопределяющем типе ValueType.Equals|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Отметьте точки входа Windows Forms меткой STAThread|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Пометьте все несериализуемые поля|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Вызывайте методы базового класса для типов ISerializable|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Пометьте типы ISerializable атрибутом SerializableAttribute|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Правильно реализуйте методы сериализации|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Правильно реализуйте ISerializable|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Задайте правильные аргументы для методов форматирования|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Правильно выполняйте проверку NaN|
+|[CA2200](../code-quality/ca2200.md)|Повторно порождайте исключения для сохранения сведений стека|
+|[CA2202](../code-quality/ca2202.md)|Не ликвидируйте объекты несколько раз|
+|[CA2207](../code-quality/ca2207.md)|Используйте встроенную инициализацию статических полей типов значений|
+|[CA2212](../code-quality/ca2212.md)|Не помечайте обслуживаемые компоненты с помощью WebMethod|
+|[CA2213](../code-quality/ca2213.md)|Следует высвобождать высвобождаемые поля|
+|[CA2214](../code-quality/ca2214.md)|Не вызывайте переопределяемые методы в конструкторах|
+|[CA2216](../code-quality/ca2216.md)|Высвобождаемые типы должны объявлять методы завершения|
+|[CA2220](../code-quality/ca2220.md)|Методы завершения должны вызывать метод завершения базового класса|
+|[CA2229](../code-quality/ca2229.md)|Реализуйте конструкторы сериализации|
+|[CA2231](../code-quality/ca2231.md)|Перегрузите оператор равенства на переопределяющем типе ValueType.Equals|
+|[CA2232](../code-quality/ca2232.md)|Отметьте точки входа Windows Forms меткой STAThread|
+|[CA2235](../code-quality/ca2235.md)|Пометьте все несериализуемые поля|
+|[CA2236](../code-quality/ca2236.md)|Вызывайте методы базового класса для типов ISerializable|
+|[CA2237](../code-quality/ca2237.md)|Пометьте типы ISerializable атрибутом SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|Правильно реализуйте методы сериализации|
+|[CA2240](../code-quality/ca2240.md)|Правильно реализуйте ISerializable|
+|[CA2241](../code-quality/ca2241.md)|Задайте правильные аргументы для методов форматирования|
+|[CA2242](../code-quality/ca2242.md)|Правильно выполняйте проверку NaN|

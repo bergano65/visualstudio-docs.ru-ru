@@ -1,5 +1,5 @@
 ---
-title: CA1055. Возвращаемые значения URI не должны быть строками
+title: 'CA1055: возвращаемые значения URI не должны быть строками'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0a03f68ed15e790ea8a43a9ae2b476dd2f6f5d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d7b4a993af3a473ada7b4884001e372d9f444403
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235549"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349066"
 ---
-# <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055. Возвращаемые значения URI не должны быть строками
+# <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: возвращаемые значения URI не должны быть строками
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "71235549"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
 
 Имя метода содержит "URI", "URI", "urn", "urn", "URL" или "URL", а метод возвращает строку.
 
@@ -42,11 +42,11 @@ ms.locfileid: "71235549"
 
 ## <a name="rule-description"></a>Описание правила
 
-Это правило разбивает имя метода на токены на основе соглашения об использовании регистра Pascal и проверяет, равны ли каждый маркер URI, URI, URN, URN, "URL" или "URL". При наличии совпадения правило предполагает, что метод возвращает универсальный код ресурса (URI). В строковых представлениях кода URI часто встречаются ошибки синтаксического анализа и кодирования, которые могут привести к уязвимостям системы безопасности. <xref:System.Uri?displayProperty=fullName> Класс предоставляет эти службы безопасным и безопасным способом.
+Это правило разбивает имя метода на токены на основе соглашения об использовании регистра Pascal и проверяет, равны ли каждый маркер URI, URI, URN, URN, "URL" или "URL". При наличии совпадения правило предполагает, что метод возвращает универсальный код ресурса (URI). В строковых представлениях кода URI часто встречаются ошибки синтаксического анализа и кодирования, которые могут привести к уязвимостям системы безопасности. Класс <xref:System.Uri?displayProperty=fullName> предоставляет эти службы безопасным и безопасным способом.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, измените тип <xref:System.Uri>возвращаемого значения на.
+Чтобы устранить нарушение этого правила, измените тип возвращаемого значения на <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1055.api_surface = private, internal
 
 ## <a name="example"></a>Пример
 
-В следующем примере показан тип, `ErrorProne`, который нарушает данное правило, и тип, `SaferWay`который удовлетворяет правилу.
+В следующем примере показан тип, `ErrorProne`, который нарушает данное правило, и тип `SaferWay`, удовлетворяющий правилу.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1055-uri-return-values-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1055-uri-return-values-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ dotnet_code_quality.ca1055.api_surface = private, internal
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1056: Свойства URI не должны быть строками](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1054: Параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA2234 Передавать объекты System. URI вместо строк](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057 Перегрузки строковых URI вызывают перегрузки System. URI](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056: свойства URI не должны быть строками](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1054: параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA2234: передавайте объекты System.Uri вместо строк](../code-quality/ca2234.md)
+- [CA1057: перегрузки строковых параметров URI вызывают перегрузки System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
