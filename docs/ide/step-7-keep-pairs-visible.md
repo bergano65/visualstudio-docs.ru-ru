@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0216d778278f02f7fc63630f4ff6ce90c755e3c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 025e388185651e6b2effb0f53345f2e145e101b3
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118656"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289595"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Шаг 7. Отмена исчезновения пар значков
 Игра работает правильно, пока игрок выбирает только пары значков, которые не совпадают. Но давайте посмотрим, что произойдет, когда игрок выберет совпадающую пару. Вместо того чтобы значки исчезали благодаря включению таймера (с помощью метода <xref:System.Windows.Forms.Timer.Start>), игра должна сбрасываться и больше не отслеживать метки с помощью ссылочных переменных `firstClicked` и `secondClicked`. Но цвета двух меток, которые были выбраны, не должны сбрасываться.
@@ -29,6 +29,9 @@ ms.locfileid: "71118656"
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
+
+       > [!IMPORTANT]
+       > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Первая строка только что добавленного оператора `if` проверяет, совпадает ли значок в первой метке, которую выбрал игрок, со значком во второй метке. Если значки совпадают, программа выполняет три оператора, которые расположены между фигурными скобками в C# или внутри оператора `if` в Visual Basic. Первые два оператора сбрасывают ссылочные переменные `firstClicked` и `secondClicked`, чтобы они больше не отслеживали какие-либо метки. (Возможно, вы узнали эти два оператора из обработчика событий <xref:System.Windows.Forms.Timer.Tick> таймера.) Третий оператор — оператор `return`, который сообщает программе, что требуется пропустить оставшиеся в методе операторы и не выполнять их.
 
@@ -58,7 +61,7 @@ ms.locfileid: "71118656"
 
 2. Сохраните и запустите программу, а затем начните выбирать значки в форме. Если вы выбрали пару, которая не совпадает, произойдет событие таймера Tick и оба значка исчезнут. Если вы выбрали пару, которая совпадает, выполнится новый оператор `if`, а оператор return укажет методу пропустить код, запускающий таймер, чтобы значки остались видимыми, как показано на следующем рисунке.
 
-     ![Game that you create in this tutorial](../ide/media/express_finishedgame.png)
+     ![Игра, которую вы создадите в этом учебном руководстве](../ide/media/express_finishedgame.png)<br/>
 **Игра "Подбери пару!"** с видимыми парами значков
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118749"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314116"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 
@@ -62,8 +62,7 @@ ms.locfileid: "71118749"
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     > [!IMPORTANT]
-     > Используйте элемент управления языка программирования в правом верхнем углу этой страницы, чтобы просмотреть фрагмент кода на C# или Visual Basic.<br><br>![Элемент управления языка программирования для Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Этот код может показаться сложным, однако в нем легко разобраться, если просмотреть его шаг за шагом. Сначала посмотрите на верхнюю часть метода — `object sender` в C# или `sender As System.Object` в Visual Basic. Этот параметр ссылается на объект, событие которого срабатывает. Он называется отправителем. В данном случае объектом-отправителем является элемент управления NumericUpDown. Поэтому в первой строке метода указывается, что отправителем является не просто какой-либо объект, а именно элемент управления NumericUpDown. (каждый элемент управления NumericUpDown это объект, но не каждый объект, это элемент управления NumericUpDown). Элемент управления NumericUpDown в этом методе называется **answerBox**, поскольку он будет использоваться для всех элементов управления NumericUpDown в форме, а не только для элемента управления NumericUpDown с именем "sum". Поскольку переменная answerBox объявлена в этом методе, ее область действия ограничена этим методом. Иными словами, эту переменную можно использовать только внутри этого метода.
 
