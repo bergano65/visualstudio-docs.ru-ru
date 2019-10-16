@@ -170,8 +170,8 @@
   items:
     - name: Разработка
       items:
-        - name: 'Индекс: Использование интегрированной среды разработки для написания кода'
-          href: ide/index-writing-code.md
+        - name: Начало работы
+          href: ide/index-writing-code.yml
         - name: Перемещение по интегрированной среде разработки
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: Проекты и решения
