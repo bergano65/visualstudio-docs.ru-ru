@@ -44,8 +44,6 @@
       items:
         - name: Использование точек останова
           href: using-breakpoints.md
-        - name: Использование точек трассировки
-          href: using-tracepoints.md
         - name: Устранение неполадок точек останова
           href: troubleshooting-breakpoints.md
     - name: Проверка данных
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'Функция "Изменить и продолжить" не поддерживается для языка F#'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: Записать в окно вывода
+      href: using-tracepoints.md
     - name: Просмотр данных отладчика
       items:
         - name: Модули
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Пользовательские представления (управляемые)
               items:
-                - name: Создание пользовательских представлений для объектов
+                - name: Создание настраиваемых представлений управляемых объектов
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Указание отображаемых сведений для отладчика
                   href: using-the-debuggerdisplay-attribute.md
