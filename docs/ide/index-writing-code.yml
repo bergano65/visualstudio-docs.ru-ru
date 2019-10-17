@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Редактирование кода в Visual Studio
+summary: Сведения об изменении задач, таких как открытие проекта, использование функций редактора кода и поддержка согласованного стиля кода.
+metadata:
+  title: Возможности редактора кода
+  description: Сведения о функциях редактирования кода в Visual Studio 2019.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 275ac40ff1c2edf70a8388b09e50fc3d496e8050
+  ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72391529"
+landingContent:
+- title: Открытие или создание проекта
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создание нового проекта
+      url: create-new-project.md
+    - text: Открытие проекта из репозитория
+      url: ../get-started/tutorial-open-project-from-repo.md
+  - linkListType: how-to-guide
+    links:
+    - text: Использование Visual Studio без проектов и решений
+      url: develop-code-in-visual-studio-without-projects-or-solutions.md
+- title: Использование функций редактирования
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Использование редактора кода
+      url: writing-code-in-the-code-and-text-editor.md
+    - text: Навигация по коду
+      url: navigating-code.md
+    - text: Создание и исправление кода
+      url: code-generation-in-visual-studio.md
+    - text: Использование IntelliSense для завершения кода
+      url: using-intellisense.md
+    - text: Управление параметрами стиля кода
+      url: code-styles-and-code-cleanup.md
+    - text: Анализ кода
+      url: ../code-quality/roslyn-analyzers-overview.md
+- title: Начало работы с языками программирования
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Начало работы с C# и ASP.NET Core в Visual Studio
+      url: tutorial-csharp-aspnet-core.md
+    - text: Создание консольного приложения C++ в Visual Studio
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Начало работы с Python в Visual Studio
+      url: quickstart-python.md
+    - text: Создание консольного приложения на Visual Basic
+      url: quickstart-visual-basic-console.md
+    - text: Создание веб-приложения на Node.js
+      url: quickstart-nodejs.md

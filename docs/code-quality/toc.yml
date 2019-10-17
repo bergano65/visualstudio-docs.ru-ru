@@ -1,5 +1,5 @@
 - name: Документация по анализу кода
-  href: index.md
+  href: index.yml
 - name: Анализ управляемого кода
   items:
     - name: Обзор
@@ -12,13 +12,13 @@
           href: roslyn-analyzers-overview.md
         - name: Установка
           href: install-roslyn-analyzers.md
-        - name: Параметр Configuration
+        - name: Конфигурация
           href: use-roslyn-analyzers.md
         - name: Отключить анализ кода
           href: disable-code-analysis.md
         - name: Включить полный анализ решения
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
-        - name: часто задаваемые вопросы
+        - name: Часто задаваемые вопросы
           href: analyzers-faq.md
         - name: Анализаторы FXCop
           items:
@@ -27,7 +27,7 @@
               href: fxcop-analyzers.yml
             - name: Установка
               href: install-fxcop-analyzers.md
-            - name: Параметр Configuration
+            - name: Конфигурация
               items:
                 - name: Обзор
                   href: configure-fxcop-analyzers.md
@@ -35,7 +35,7 @@
                   href: fxcop-analyzer-options.md
                 - name: Включение категории правил
                   href: analyzer-rule-sets.md
-            - name: часто задаваемые вопросы
+            - name: Часто задаваемые вопросы
               href: fxcop-analyzers-faq.md
         - name: Миграция с анализа прежних версий на анализаторы FxCop
           items:
@@ -54,7 +54,7 @@
           href: fxcop-analyzers.yml
         - name: Запуск анализа прежних версий вручную
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Параметр Configuration
+        - name: Конфигурация
           items:
             - name: Настройка анализа прежних версий
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -203,9 +203,9 @@
                   displayName: cryptography warnings
                   href: cryptography-warnings.md
                 - name: CA5350. Не используйте ненадежные алгоритмы шифрования
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                  href: ca5350.md
                 - name: 'CA5351: не используйте ослабленные алгоритмы шифрования'
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                  href: ca5351.md
             - name: Предупреждения по принципам разработки
               items:
                 - name: Обзор
@@ -370,7 +370,7 @@
                 - name: CA1309. Используйте порядковый параметр StringComparison
                   href: ca1309-use-ordinal-stringcomparison.md
                 - name: CA2101. Укажите тип маршалинга для строковых аргументов P/Invoke
-                  href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
+                  href: ca2101.md
             - name: 'Предупреждения, связанные с взаимодействием'
               items:
                 - name: Обзор
@@ -487,7 +487,7 @@
                   href: ca1724-type-names-should-not-match-namespaces.md
                 - name: CA1726. Используйте предпочтительные термины
                   href: ca1726-use-preferred-terms.md
-            - name: 'Предупреждения, связанные с производительностью'
+            - name: Предупреждения о производительности
               items:
                 - name: Обзор
                   displayName: performance warnings
