@@ -9,18 +9,18 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163098"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445607"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Использование наборов правил для указания C++ правил для выполнения
 
 В Visual Studio можно создать и изменить набор настраиваемых *правил* для удовлетворения конкретных потребностей проекта, связанных с анализом кода. Наборы правил по умолчанию хранятся в `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 версии 15.7 и выше** Пользовательские наборы правил можно создавать с помощью любого текстового редактора и применять их в сборках из командной строки независимо от используемой системы сборки. Дополнительные сведения см. в разделе [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 версии 15,7 и более поздних версий:** Пользовательские наборы правил можно создавать с помощью любого текстового редактора и применять их в сборках из командной строки независимо от используемой системы сборки. Дополнительные сведения см. в разделе [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
 Чтобы создать настраиваемый C++ набор правил в Visual Studio, в интегрированнойC++ среде разработки Visual Studio должен быть открыт проект C/. Затем вы открываете стандартный набор правил в редакторе набора правил, а затем добавляете или удаляете определенные правила и при необходимости изменяете действие, которое происходит, когда анализ кода определит, что правило нарушено.
 

@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015963"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446293"
 ---
 # <a name="annotating-structs-and-classes"></a>Аннотация структур и классов
 
@@ -45,7 +45,7 @@ ms.locfileid: "72015963"
 
      Поле с записываемым размером в элементах (или байтах), как определено в `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Поле с записываемым размером в элементах (или байтах), как определено в `size` и `count` этих элементов (байт), которые доступны для чтения.
 
@@ -71,7 +71,7 @@ ms.locfileid: "72015963"
 
     ```
 
-     Размер буфера в байтах параметра `pM` типа `MyStruct *` принимается следующим образом:
+     Размер буфера в байтах параметра, `pM` типа `MyStruct *`, принимается следующим образом:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -106,11 +106,11 @@ struct MyBuffer
 
 Примечания для этого примера:
 
-- `_Field_z_` равно `_Null_terminated_`.  `_Field_z_` для поля имя указывает, что поле имени является строкой, завершающейся нулем.
-- `_Field_range_` для `bufferSize` указывает, что значение `bufferSize` должно быть в диапазоне от 1 до `MaxBufferSize` (оба включительно).
-- Конечные результаты заметок `_Struct_size_bytes_` и `_Field_size_` эквивалентны. Для структур или классов с похожим макетом `_Field_size_` проще в чтении и обслуживании, так как он содержит меньше ссылок и вычислений, чем эквивалентная Аннотация `_Struct_size_bytes_`. для `_Field_size_` не требуется преобразование в байтовый размер. Если размер Byte является единственным параметром, например для поля указателя void, можно использовать `_Field_size_bytes_`. Если существуют как `_Struct_size_bytes_`, так и `_Field_size_`, они будут доступны для средств. Если две аннотации не согласны, это будет сделано с помощью инструмента.
+- `_Field_z_` равно `_Null_terminated_`.  `_Field_z_` для поля имени указывает, что поле имени является строкой, завершающейся нулем.
+- `_Field_range_` для `bufferSize` указывает, что значение `bufferSize` должно находиться в диапазоне от 1 до `MaxBufferSize` (оба включительно).
+- Конечные результаты `_Struct_size_bytes_` и `_Field_size_` заметок эквивалентны. Для структур или классов с похожим макетом `_Field_size_` проще в чтении и обслуживании, так как он содержит меньше ссылок и вычислений, чем эквивалентная `_Struct_size_bytes_` Аннотация. `_Field_size_` не требует преобразования к размеру в байтах. Если размер Byte является единственным параметром, например для поля указателя void, можно использовать `_Field_size_bytes_`. Если оба `_Struct_size_bytes_` и `_Field_size_` существуют, они будут доступны для средств. Если две аннотации не согласны, это будет сделано с помощью инструмента.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Основные сведения о языке SAL](../code-quality/understanding-sal.md)

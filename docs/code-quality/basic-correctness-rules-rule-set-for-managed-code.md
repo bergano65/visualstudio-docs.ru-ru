@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e7608225caaf050bae995206ba5af38165f9695
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: bf26a04f5db5ed3e3f2710a5421dece6cf6cc0c7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349319"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450347"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Базовые правила определения правильности" для управляемого кода
 
@@ -41,32 +41,32 @@ ms.locfileid: "72349319"
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Методы регистрации COM должны быть согласованными|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Правильно объявляйте методы P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Поля типов значений должны быть переносимыми|
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Объявления P/Invoke должны быть переносимыми|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Не блокируйте объекты с ненадежными удостоверениями|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Укажите тип маршалинга для строковых аргументов P/Invoke|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Проверьте объявляемые параметры безопасности типов значений|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Указатели не должны быть видимыми|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Защищенные типы не должны предоставлять поля|
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|Безопасность метода должна быть надмножеством типа|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA-методы должны вызывать только APTCA-методы|
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA-типы должны расширять только базовые APTCA-типы|
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Не используйте косвенное представление методов с требованиями ссылки|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Переопределяющие требования ссылки должны быть идентичны базовым|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Ограничьте уязвимые предложения finally во внешних блоках try|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Для требований ссылок на тип необходимы требования наследования|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Критические для безопасности типы не могут участвовать в эквивалентности типов|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Конструкторы по умолчанию должны быть по меньшей мере такими же критическими, как конструкторы по умолчанию базового типа|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Делегаты должны быть привязаны к методам с соответствующей прозрачностью|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Методы должны сохранять одинаковую прозрачность при переопределении базовых методов|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
+|[CA1900](../code-quality/ca1900.md)|Поля типов значений должны быть переносимыми|
+|[CA1901](../code-quality/ca1901.md)|Объявления P/Invoke должны быть переносимыми|
+|[CA2002](../code-quality/ca2002.md)|Не блокируйте объекты с ненадежными удостоверениями|
+|[CA2100](../code-quality/ca2100.md)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
+|[CA2101](../code-quality/ca2101.md)|Укажите тип маршалинга для строковых аргументов P/Invoke|
+|[CA2108](../code-quality/ca2108.md)|Проверьте объявляемые параметры безопасности типов значений|
+|[CA2111](../code-quality/ca2111.md)|Указатели не должны быть видимыми|
+|[CA2112](../code-quality/ca2112.md)|Защищенные типы не должны предоставлять поля|
+|[CA2114](../code-quality/ca2114.md)|Безопасность метода должна быть надмножеством типа|
+|[CA2116](../code-quality/ca2116.md)|APTCA-методы должны вызывать только APTCA-методы|
+|[CA2117](../code-quality/ca2117.md)|APTCA-типы должны расширять только базовые APTCA-типы|
+|[CA2122](../code-quality/ca2122.md)|Не используйте косвенное представление методов с требованиями ссылки|
+|[CA2123](../code-quality/ca2123.md)|Переопределяющие требования ссылки должны быть идентичны базовым|
+|[CA2124](../code-quality/ca2124.md)|Ограничьте уязвимые предложения finally во внешних блоках try|
+|[CA2126](../code-quality/ca2126.md)|Для требований ссылок на тип необходимы требования наследования|
+|[CA2131](../code-quality/ca2131.md)|Критические для безопасности типы не могут участвовать в эквивалентности типов|
+|[CA2132](../code-quality/ca2132.md)|Конструкторы по умолчанию должны быть по меньшей мере такими же критическими, как конструкторы по умолчанию базового типа|
+|[CA2133](../code-quality/ca2133.md)|Делегаты должны быть привязаны к методам с соответствующей прозрачностью|
+|[CA2134](../code-quality/ca2134.md)|Методы должны сохранять одинаковую прозрачность при переопределении базовых методов|
+|[CA2137](../code-quality/ca2137.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
+|[CA2138](../code-quality/ca2138.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
+|[CA2140](../code-quality/ca2140.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
+|[CA2141](../code-quality/ca2141.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
+|[CA2146](../code-quality/ca2146.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
+|[CA2147](../code-quality/ca2147.md)|Прозрачные методы могут не использовать утверждения безопасности|
+|[CA2149](../code-quality/ca2149.md)|Прозрачные методы не должны вызывать машинный код|
 |[CA2200](../code-quality/ca2200.md)|Повторно порождайте исключения для сохранения сведений стека|
 |[CA2202](../code-quality/ca2202.md)|Не ликвидируйте объекты несколько раз|
 |[CA2207](../code-quality/ca2207.md)|Используйте встроенную инициализацию статических полей типов значений|
@@ -93,18 +93,18 @@ ms.locfileid: "72349319"
 |[CA1816](../code-quality/ca1816.md)|Вызов GC.SuppressFinalize должен осуществляться правильно|
 |[CA1819](../code-quality/ca1819.md)|Свойства не должны возвращать массивы|
 |[CA1820](../code-quality/ca1820.md)|Проверяйте наличие пустых строк, используя длину строки|
-|[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Используйте API только из целевой рабочей среды|
-|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Удалите вызовы GC.KeepAlive|
-|[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Используйте SafeHandle для инкапсуляции собственных ресурсов|
-|[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков|
-|[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Не объявляйте изменяющиеся ссылочные типы только для чтения|
-|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Поля массивов не должны быть доступны только для чтения|
-|[CA2106](../code-quality/ca2106-secure-asserts.md)|Обеспечьте безопасность утверждений|
-|[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|Вызывайте GC.KeepAlive при использовании собственных ресурсов|
-|[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Запечатайте методы, соответствующие частным интерфейсам|
-|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|Обеспечьте безопасность конструкторов сериализации|
-|[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|Статические конструкторы должны быть частными|
-|[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|Важные константы безопасности должны быть прозрачными|
+|[CA1903](../code-quality/ca1903.md)|Используйте API только из целевой рабочей среды|
+|[CA2004](../code-quality/ca2004.md)|Удалите вызовы GC.KeepAlive|
+|[CA2006](../code-quality/ca2006.md)|Используйте SafeHandle для инкапсуляции собственных ресурсов|
+|[CA2102](../code-quality/ca2102.md)|Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков|
+|[CA2104](../code-quality/ca2104.md)|Не объявляйте изменяющиеся ссылочные типы только для чтения|
+|[CA2105](../code-quality/ca2105.md)|Поля массивов не должны быть доступны только для чтения|
+|[CA2106](../code-quality/ca2106.md)|Обеспечьте безопасность утверждений|
+|[CA2115](../code-quality/ca2115.md)|Вызывайте GC.KeepAlive при использовании собственных ресурсов|
+|[CA2119](../code-quality/ca2119.md)|Запечатайте методы, соответствующие частным интерфейсам|
+|[CA2120](../code-quality/ca2120.md)|Обеспечьте безопасность конструкторов сериализации|
+|[CA2121](../code-quality/ca2121.md)|Статические конструкторы должны быть частными|
+|[CA2130](../code-quality/ca2130.md)|Важные константы безопасности должны быть прозрачными|
 |[CA2205](../code-quality/ca2205.md)|Используйте управляемые эквиваленты Win32 API|
 |[CA2215](../code-quality/ca2215.md)|Метод Dispose должен вызывать базовый класс Dispose|
 |[CA2221](../code-quality/ca2221.md)|Методы завершения должны быть защищенными|

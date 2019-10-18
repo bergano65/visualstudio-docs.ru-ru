@@ -18,17 +18,17 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8a1c77a7db2a16b05c1b6b0eeb5e02abef4c9c3
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 8ecae431f75e14443895b816a24000b6fe3fba52
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018460"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445865"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Анализ кода для предупреждений C/C++
-В этом разделе перечислены предупрежденияC++ анализа C/Code, за исключением тех, которые вызываются [ C++ основными проверочными](code-analysis-for-cpp-corecheck.md)анализаторами. Дополнительные сведения об анализе кода см. в разделе [/Analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и @no__t 1Quick Start: Анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+В этом разделе перечислены предупрежденияC++ анализа C/Code, за исключением тех, которые вызываются [ C++ основными проверочными](code-analysis-for-cpp-corecheck.md)анализаторами. Дополнительные сведения об анализе кода см. в разделе [/Analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрое начало: анализ кода дляC++C/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ качества кода C/C++ с помощью метода анализа кода](../code-quality/code-analysis-for-c-cpp-overview.md)
 - [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

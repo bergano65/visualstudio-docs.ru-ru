@@ -1,0 +1,114 @@
+- name: "Средства XAML в Visual\_Studio"
+  href: index.yml
+- name: Общие сведения об XAML
+  href: xaml-overview.md
+- name: Конструктор XAML
+  items:
+    - name: Проектирование XAML в Visual Studio и Blend
+      href: designing-xaml-in-visual-studio.md
+    - name: Обзор Конструктора XAML
+      href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+    - name: Работа с элементами
+      href: working-with-elements-in-xaml-designer.md
+    - name: Упорядочение объектов в контейнеры макета
+      href: organize-objects-into-layout-containers-in-xaml-designer.md
+    - name: Создание и применение ресурса
+      href: how-to-create-and-apply-a-resource.md
+    - name: Пошаговое руководство Привязка к данным
+      href: walkthrough-binding-to-data-in-xaml-designer.md
+    - name: Отладка или отключение кода проекта
+      href: debugging-or-disabling-project-code-in-xaml-designer.md
+    - name: Blend для Visual Studio
+      items:
+        - name: Обзор
+          href: creating-a-ui-by-using-blend-for-visual-studio.md
+        - name: Рисование фигур и контуров
+          href: draw-shapes-and-paths.md
+        - name: Изменение стиля объектов
+          href: modify-the-style-of-objects-in-blend.md
+        - name: Анимирование объектов
+          href: animate-objects-in-xaml-designer.md
+        - name: Отображение данных
+          href: display-data-in-blend.md
+    - name: Справочник
+      items:
+        - name: "Ошибки и предупреждения\_XAML"
+          href: xaml-errors-warnings.md
+        - name: Сочетания клавиш для конструктора XAML
+          href: keyboard-shortcuts-for-xaml-designer.md
+        - name: Сочетания клавиш для Blend
+          href: keyboard-shortcuts-in-blend.md
+        - name: Клавиши-модификаторы области рисования (Blend)
+          href: artboard-modifier-keys-in-blend.md
+        - name: Клавиши-модификаторы инструмента "перо" (Blend)
+          href: pen-tool-modifier-keys-in-blend.md
+        - name: Клавиши-модификаторы инструмента "Прямой выбор" (Blend)
+          href: direct-selection-tool-modifier-keys-in-blend.md
+- name: Отладка XAML
+  items:
+    - name: Просмотр свойств XAML во время отладки
+      href: inspect-xaml-properties-while-debugging.md
+    - name: Горячая перезагрузка XAML
+      items:
+        - name: Создание и отладка выполняющегося кода XAML
+          href: xaml-hot-reload.md
+        - name: Устранение неполадок
+          href: xaml-hot-reload-troubleshooting.md
+    - name: Отладка XAML в Blend
+      href: debug-xaml-in-blend.md
+    - name: "Отладка приложений UWP\_>>"
+      href: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+- name: Windows Presentation Foundation (WPF)
+  items:
+    - name: Начало работы
+      displayName: Windows Presentation Foundation (WPF)
+      href: ../designers/getting-started-with-wpf.md
+    - name: Общие сведения о WPF
+      href: ../designers/introduction-to-wpf.md
+    - name: 'привязка данных,'
+      items:
+        - name: "Привязка данных WPF с помощью LINQ to\_XML"
+          href: ../designers/wpf-data-binding-with-linq-to-xml-overview.md
+        - name: "Динамические свойства LINQ to\_XML"
+          items:
+            - name: Обзор
+              displayName: LINQ to XML dynamic properties
+              href: ../designers/linq-to-xml-dynamic-properties.md
+            - name: Динамические свойства класса XAttribute
+              items:
+                - name: Value (динамическое свойство XAttribute)
+                  href: ../designers/value-xattribute-dynamic-property.md
+            - name: "Динамические свойства класса\_XElement"
+              items:
+                - name: Attribute (динамическое свойство XElement)
+                  href: ../designers/attribute-xelement-dynamic-property.md
+                - name: Element (динамическое свойство XElement)
+                  href: ../designers/element-xelement-dynamic-property.md
+                - name: Elements (динамическое свойство XElement)
+                  href: ../designers/elements-xelement-dynamic-property.md
+                - name: Descendants (динамическое свойство XElement)
+                  href: ../designers/descendants-xelement-dynamic-property.md
+                - name: Value (динамическое свойство XElement)
+                  href: ../designers/value-xelement-dynamic-property.md
+                - name: Xml (динамическое свойство XElement)
+                  href: ../designers/xml-xelement-dynamic-property.md
+            - name: Примеры
+              items:
+                - name: Привязка данных WPF к XML с помощью LINQ
+                  href: ../designers/wpf-data-binding-using-linq-to-xml-example.md
+                - name: Сборка и запуск примера LinqToXmlDataBinding
+                  href: ../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md
+                - name: Пошаговое руководство Привязка данных LINQ to XML
+                  href: ../designers/walkthrough-linqtoxmldatabinding-example.md
+                - name: Исходный код L2DBForm.xaml
+                  href: ../designers/l2dbform-xaml-source-code.md
+                - name: Исходный код L2DBForm.xaml.cs
+                  href: ../designers/l2dbform-xaml-cs-source-code.md
+    - name: Отладка приложений WPF
+      items:
+        - name: Отладка WPF
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+        - name: Использование визуализатора дерева WPF
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+        - name: Отображение данных трассировки WPF
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json

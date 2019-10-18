@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Анализ кода в Visual Studio
+summary: Visual Studio содержит ряд инструментов для анализа и улучшения качества кода.
+metadata:
+  title: Анализаторы кода
+  description: Научитесь анализировать качество кода в Visual Studio.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450591"
+landingContent:
+- title: Анализ кода C и C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Анализ кода C и C++
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: Предупреждения анализа кода C++
+      url: code-analysis-for-c-cpp-warnings.md
+- title: Анализ качества управляемого кода
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Анализ источника
+      url: roslyn-analyzers-overview.md
+    - text: Анализ прежних версий
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: Часто задаваемые вопросы
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Установка анализаторов FxCop
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Предупреждения при анализе управляемого кода
+      url: code-analysis-for-managed-code-warnings.md
+- title: Анализ стиля управляемого кода
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Анализ стиля кода
+      url: ../ide/create-portable-custom-editor-options.md
+- title: Оценка сложности кода
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Метрики кода
+      url: code-metrics-values.md
