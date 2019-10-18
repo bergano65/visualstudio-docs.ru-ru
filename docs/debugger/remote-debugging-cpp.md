@@ -1,5 +1,5 @@
 ---
-title: Удаленная отладка C++ визуального проекта | Документация Майкрософт
+title: Удаленная отладка C++ проекта | Документация Майкрософт
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211113"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450425"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Удаленная отладка C++ визуального проекта в Visual Studio
+# <a name="remote-debugging-a-c-project-in-visual-studio"></a>Удаленная отладка C++ проекта в Visual Studio
 Чтобы выполнить отладку приложения Visual Studio на другом компьютере, установите и запустите средства удаленной отладки на компьютере, где будет развернуто приложение, настройте проект для подключения к удаленному компьютеру из Visual Studio, а затем разверните и запустите приложение.
 
-![Компоненты удаленного отладчика] (../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![Компоненты удаленного отладчика](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
 Сведения об удаленной отладке универсальных приложений Windows (UWP) см. [в разделе Отладка установленного пакета приложения](debug-installed-app-package.md).
 
@@ -52,7 +52,7 @@ ms.locfileid: "71211113"
 > [!NOTE]
 > Если необходимо добавить разрешения для дополнительных пользователей, изменить режим проверки подлинности или номер порта для удаленного отладчика, см. раздел [Настройка удаленного отладчика](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a> Удаленная отладка проекта Visual C++
+## <a name="remote_cplusplus"></a>Удаленная отладка C++ проекта
  В следующей процедуре имя и путь проекта — К:\ремотетемп\мимфк, а имя удаленного компьютера — **МЖО-DL**.
 
 1. Создайте приложение MFC с именем **mymfc**.
@@ -63,11 +63,11 @@ ms.locfileid: "71211113"
 
 4. Для параметра **Загружаемый отладчик** задайте значение **Удаленный отладчик Windows**.
 
-    ![Ремотедебуггингкплус] (../debugger/media/remotedebuggingcplus.png "Ремотедебуггингкплус")
+    ![ремотедебуггингкплус](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
 
 5. Внесите в свойства следующие изменения:
 
-   |Параметр|Значение|
+   |Параметр|значения|
    |-|-|
    |Удаленная команда|C:\remotetemp\mymfc.exe|
    |Рабочий каталог|C:\remotetemp|
@@ -83,7 +83,7 @@ ms.locfileid: "71211113"
 
 7. Для конфигурации **Отладка** установите флажок **Развертывание**.
 
-    ![Ремотедебугкплусдеплой] (../debugger/media/remotedebugcplusdeploy.png "Ремотедебугкплусдеплой")
+    ![ремотедебугкплусдеплой](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
 
 8. Начните отладку (выберите **Отладка > Начать отладку** или нажмите клавишу **F5**).
 
@@ -91,7 +91,7 @@ ms.locfileid: "71211113"
 
 10. При появлении запроса введите сетевые учетные данные для подключения к удаленному компьютеру.
 
-     Необходимые учетные данные зависят от конфигурации безопасности вашей сети. Например, на компьютере домена можно выбрать сертификат безопасности или ввести имя домена и пароль. На компьютере, не являющемся доменом, можно ввести имя компьютера и допустимое имя учетной записи пользователя, <strong>MJO-DL\name@something.com</strong>например, а также правильный пароль.
+     Необходимые учетные данные зависят от конфигурации безопасности вашей сети. Например, на компьютере домена можно выбрать сертификат безопасности или ввести имя домена и пароль. На компьютере, не являющемся доменом, можно ввести имя компьютера и допустимое имя учетной записи пользователя, например <strong>MJO-DL\name@something.com</strong>, а также правильный пароль.
 
 11. На компьютере с Visual Studio вы должны увидеть, что выполнение остановилось в точке останова.
 
@@ -106,7 +106,7 @@ ms.locfileid: "71211113"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
