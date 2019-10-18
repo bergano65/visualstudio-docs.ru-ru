@@ -36,7 +36,7 @@
       href: view-historical-application-state.md
     - name: Отладка для начинающих
       href: debugging-absolute-beginners.md
-- name: Руководства
+- name: Практические руководства
   items:
     - name: Навигация по коду с помощью отладчика
       href: navigating-through-code-with-the-debugger.md
@@ -239,7 +239,7 @@
             - name: Пользовательские представления (управляемые)
               items:
                 - name: Создание настраиваемых представлений управляемых объектов
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: Указание отображаемых сведений для отладчика
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Указание отображаемого типа для отладчика
@@ -250,9 +250,9 @@
                   href: create-custom-visualizers-of-data.md
                 - name: Архитектура визуализатора
                   href: visualizer-architecture.md
-                - name: 'Пошаговое руководство Создание визуализатора на C#'
+                - name: 'Пошаговое руководство. Создание визуализатора на C#'
                   href: walkthrough-writing-a-visualizer-in-csharp.md
-                - name: Пошаговое руководство Создание визуализатора на Visual Basic
+                - name: Пошаговое руководство. Создание визуализатора на Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
                 - name: Установка визуализатора
                   href: how-to-install-a-visualizer.md
@@ -290,7 +290,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
+            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -472,7 +472,7 @@
               href: assertions-in-managed-code.md
             - name: Оператор Stop в Visual Basic
               href: stop-statements-in-visual-basic.md
-            - name: Пошаговое руководство Отладка формы Windows Form
+            - name: Пошаговое руководство. Отладка формы Windows Form
               href: walkthrough-debugging-a-windows-form.md
             - name: Отладка метода OnStart
               href: how-to-debug-the-onstart-method.md
@@ -600,7 +600,7 @@
               href: how-to-find-the-name-of-the-aspnet-process.md
             - name: Отладка развернутых веб-приложений
               href: debugging-deployed-web-applications.md
-            - name: Пошаговое руководство Отладка веб-формы
+            - name: Пошаговое руководство. Отладка веб-формы
               href: walkthrough-debugging-a-web-form.md
             - name: Отладка исключений ASP.NET
               href: how-to-debug-aspnet-exceptions.md
@@ -656,7 +656,7 @@
                   items:
                     - name: Присоединение к скрипту
                       href: how-to-attach-to-script.md
-                    - name: Предупреждение. Отладка скриптов отключена
+                    - name: 'Предупреждение: Отладка скриптов отключена'
                       href: warning-script-debugging-disabled.md
         - name: Службы WCF
           items:
