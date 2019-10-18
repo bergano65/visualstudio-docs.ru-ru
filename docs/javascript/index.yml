@@ -1,90 +1,58 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: "Visual Studio\_| JavaScript и TypeScript"
+### YamlMime:Landing
+title: Учебники по Visual Studio | JavaScript и TypeScript
+summary: Создание приложений JavaScript и TypeScript с помощью Visual Studio
 metadata:
-  title: "Разработка на JavaScript и TypeScript в Visual\_Studio\_| Документация Майкрософт"
-  meta.description: Tutorials and conceptual articles about developing JavaScript and TypeScript apps with Visual Studio.
-  author: mikejo5000
-  manager: jillfra
-  ms.prod: visual-studio-windows
-  ms.technology: vs-javascript
+  title: JavaScript и TypeScript в Visual Studio
+  description: Узнайте, как использовать Visual Studio, чтобы создавать приложения JavaScript и TypeScript.
   ms.topic: landing-page
-  ms.date: 01/15/2019
+  author: mikejo5000
   ms.author: mikejo
-  dev_langs:
-    - JavaScript
-    - TypeScript
-sections:
-  - title: Начало работы с Visual Studio
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Установка Visual Studio
-          - href: ../javascript/quickstart-ide-orientation-js.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Обзор интегрированной среды разработки Visual Studio
-  - title: Учебники
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-nodejs.md
-            html: <p>Создание веб-приложения на Node.js и Express</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_nodejs.svg'
-          - href: tutorial-nodejs-with-react-and-jsx.md
-            html: <p>Создание веб-приложения на Node.js и React</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_React.svg'
-          - href: quickstart-vuejs-with-nodejs.md
-            html: <p>Создание веб-приложения на Node.js и Vue.js</p>
-            image:
-              src: ../javascript/media/logo-vuejs.png
-          - href: publish-nodejs-app-azure.md
-            html: <p>Публикация приложения Node.js в службе приложений Linux</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_linux-color.svg'
-  - title: Разработка приложений
-    items:
-      - type: paragraph
-        text: 'Узнайте, как использовать Visual Studio для задач разработки.'
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: write-and-edit-code.md
-            html: <p>Создание и редактирование кода</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: nodejs-interactive-repl.md
-            html: <p>Интерактивный цикл REPL в Node.js</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-          - href: npm-package-management.md
-            html: <p>Управление npm-пакетами</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_npm.svg'
-          - href: debug-nodejs.md
-            html: <p>Отладка кода</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-          - href: develop-javascript-code-without-solutions-projects.md
-            html: <p>Разработка кода без использования проектов и решений</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: unit-testing-javascript-with-visual-studio.md
-            html: <p>Создание и выполнение модульных тестов</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'
+  manager: jillfra
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72517112"
+landingContent:
+- title: Начало работы
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: JavaScript и TypeScript в Visual Studio
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Установка Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Начать интерактивный обзор
+      url: quickstart-ide-orientation-js.md
+- title: Создание приложений JavaScript и TypeScript
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создание веб-приложения на Node.js и Express
+      url: tutorial-nodejs.md
+    - text: Создание веб-приложения на Node.js и React
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Создание веб-приложения на Node.js и Vue.js
+      url: quickstart-vuejs-with-nodejs.md
+- title: Знакомство с Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Создание и редактирование кода
+      url: write-and-edit-code.md
+    - text: Управление npm-пакетами
+      url: npm-package-management.md
+    - text: Интерактивный цикл REPL в Node.js
+      url: nodejs-interactive-repl.md
+    - text: Отладка кода
+      url: debug-nodejs.md
+    - text: Разработка кода без использования проектов и решений
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: Создание и выполнение модульных тестов
+      url: unit-testing-javascript-with-visual-studio.md

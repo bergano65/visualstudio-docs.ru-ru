@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d9ca8c8bd46b4f8455c7aa750170d38f03321f6
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349678"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449062"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Параметры области действия правила для средств FxCop Analyzer
 
@@ -21,9 +21,9 @@ ms.locfileid: "72349678"
 Эти параметры конфигурации доступны начиная с версии 2.6.3 пакета NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
 
 > [!TIP]
-> Чтобы просмотреть полный список параметров, доступных для данной версии пакета Фкскопанализерс, просмотрите файл *анализатора Configuration.md* в папке *документации* для пакета. Файл находится в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.md*. Этот файл документации по конфигурации включен в каждую версию пакета, начиная с версии 2.6.5. Ниже приведен пример того, как можно задокументировать параметр в файле *анализатора Configuration.md* :
+> Чтобы просмотреть полный список параметров, доступных для данной версии пакета Фкскопанализерс, просмотрите файл *анализатора Configuration.md* в папке *документации* для пакета. Файл находится в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс \\ \<version \> \документатион\анализер Configuration.md*. Этот файл документации по конфигурации включен в каждую версию пакета, начиная с версии 2.6.5. Ниже приведен пример того, как можно задокументировать параметр в файле *анализатора Configuration.md* :
 >
-> Имя параметра: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> Имя параметра: `sufficient_IterationCount_for_weak_KDF_algorithm` \
 > Значения параметров: целочисленные значения \
 > Значение по умолчанию: для каждого настраиваемого правила (по умолчанию — "100000" для большинства правил) \
 > Пример: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
@@ -41,7 +41,7 @@ ms.locfileid: "72349678"
 | Следует ли игнорировать асинхронные методы, которые не возвращают значение | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
 
 > [!NOTE]
-> В версии 2.6.3 и более ранних версиях анализатора этот параметр назывался `skip_async_void_methods`.
+> В версии 2.6.3 и более ранних версий пакета анализатора этот параметр был назван `skip_async_void_methods`.
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
@@ -50,7 +50,7 @@ ms.locfileid: "72349678"
 | Следует ли исключить из правила [Параметры типа](/dotnet/csharp/programming-guide/generics/generic-type-parameters) из одного символа, например `S` в `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> В версии 2.6.3 и более ранних версиях анализатора этот параметр назывался `allow_single_letter_type_parameters`.
+> В версии 2.6.3 и более ранних версий пакета анализатора этот параметр был назван `allow_single_letter_type_parameters`.
 
 ## <a name="output_kind"></a>output_kind
 

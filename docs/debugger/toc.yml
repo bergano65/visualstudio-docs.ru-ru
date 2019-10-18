@@ -36,7 +36,7 @@
       href: view-historical-application-state.md
     - name: Отладка для начинающих
       href: debugging-absolute-beginners.md
-- name: Практические руководства
+- name: Руководства
   items:
     - name: Навигация по коду с помощью отладчика
       href: navigating-through-code-with-the-debugger.md
@@ -91,7 +91,7 @@
         - name: Просмотр памяти для переменных
           href: memory-windows.md
         - name: Просмотр свойств XAML во время отладки
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: Стек вызовов
       items:
         - name: Просмотр стека вызовов
@@ -108,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Остановка внесения изменений в код
           href: how-to-stop-code-changes.md
-        - name: Edit and Continue (Visual C++)
+        - name: Изменить и продолжить (C++)
           items:
-            - name: Изменить и продолжить (Visual C++)
+            - name: "\"Изменить и продолжить\" для\_C++"
               href: edit-and-continue-visual-cpp.md
             - name: Поддерживаемые изменения кода (C++)
               href: supported-code-changes-cpp.md
@@ -131,9 +131,9 @@
         - name: Горячая перезагрузка XAML
           items:
             - name: Создание и отладка выполняющегося кода XAML
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Устранение неполадок горячей перезагрузки XAML
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'Функция "Изменить и продолжить" не поддерживается для языка F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Записать в окно вывода
@@ -202,7 +202,7 @@
                   items:
                     - name: Параметры проекта для конфигурации отладки C++
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: Включение параметров отладки в Visual C++ (-D_DEBUG)
+                    - name: "Включение параметров отладки в\_C++ (-D_DEBUG)"
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Параметры страниц свойств для веб-проектов
                   href: property-pages-settings-for-web-projects.md
@@ -234,7 +234,7 @@
               items:
                 - name: Создание пользовательских представлений для объектов C++
                   href: create-custom-views-of-native-objects.md
-                - name: Совместимость пользовательского визуализатора Visual C++
+                - name: "Совместимость пользовательского визуализатора\_C++"
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Пользовательские представления (управляемые)
               items:
@@ -250,9 +250,9 @@
                   href: create-custom-visualizers-of-data.md
                 - name: Архитектура визуализатора
                   href: visualizer-architecture.md
-                - name: 'Пошаговое руководство. Создание визуализатора на C#'
+                - name: 'Пошаговое руководство Создание визуализатора на C#'
                   href: walkthrough-writing-a-visualizer-in-csharp.md
-                - name: Пошаговое руководство. Создание визуализатора на Visual Basic
+                - name: Пошаговое руководство Создание визуализатора на Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
                 - name: Установка визуализатора
                   href: how-to-install-a-visualizer.md
@@ -290,7 +290,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
+            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -435,7 +435,7 @@
             - name: Отладка установленного пакета приложения
               href: debug-installed-app-package.md
             - name: Отладка XAML в Blend
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML и CSS
               items:
                 - name: Отладка HTML и CSS
@@ -472,7 +472,7 @@
               href: assertions-in-managed-code.md
             - name: Оператор Stop в Visual Basic
               href: stop-statements-in-visual-basic.md
-            - name: Пошаговое руководство. Отладка формы Windows Form
+            - name: Пошаговое руководство Отладка формы Windows Form
               href: walkthrough-debugging-a-windows-form.md
             - name: Отладка метода OnStart
               href: how-to-debug-the-onstart-method.md
@@ -500,7 +500,7 @@
           items:
             - name: Отладка машинного кода
               href: debugging-native-code.md
-            - name: Подготовка к отладке. Типы проектов Visual C++
+            - name: "Подготовка к отладке. Типы проектов\_C++"
               href: debugging-preparation-visual-cpp-project-types.md
             - name: Отладка оптимизированного кода
               href: how-to-debug-optimized-code.md
@@ -600,7 +600,7 @@
               href: how-to-find-the-name-of-the-aspnet-process.md
             - name: Отладка развернутых веб-приложений
               href: debugging-deployed-web-applications.md
-            - name: Пошаговое руководство. Отладка веб-формы
+            - name: Пошаговое руководство Отладка веб-формы
               href: walkthrough-debugging-a-web-form.md
             - name: Отладка исключений ASP.NET
               href: how-to-debug-aspnet-exceptions.md
@@ -656,7 +656,7 @@
                   items:
                     - name: Присоединение к скрипту
                       href: how-to-attach-to-script.md
-                    - name: 'Предупреждение: Отладка скриптов отключена'
+                    - name: Предупреждение. Отладка скриптов отключена
                       href: warning-script-debugging-disabled.md
         - name: Службы WCF
           items:

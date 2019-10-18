@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925478"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450399"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация событий приостановки, возобновления и фонового выполнения при отладке приложений UWP в Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "68925478"
 
 Кроме того, в этом разделе описывается, как отладить **Фоновые задачи**. Фоновые задачи позволяют выполнять определенные операции в фоновом процессе, даже если приложение не выполняется. Можно использовать отладчик, чтобы перевести приложение в режим отладки, а затем, не запуская пользовательский интерфейс, запустить фоновую задачу и начать ее отладку.
 
-Дополнительные сведения об управлении жизненным циклом процессов и фоновых задачах см. в разделе [Запуск, возобновление и](/windows/uwp/launch-resume/index)многозадачность.
+Дополнительные сведения об управлении жизненным циклом процессов и фоновых задачах см. в разделе [Запуск, возобновление и многозадачность](/windows/uwp/launch-resume/index).
 
 ## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> События управления жизненным циклом процессов активации
  Windows может приостановить работу приложения, когда пользователь отключается от него, или когда Windows переходит в состояние низкого энергопотребления. Можно ответить на событие `Suspending` , чтобы сохранить соответствующие данные приложения и пользовательские данные в постоянном хранилище и чтобы освободить ресурсы. При переходе из состояния **Приостановлено** приложение возвращается в состояние **Выполняется** и продолжает работу с того момента, в котором оно было приостановлено. Можно ответить на событие `Resuming` , чтобы восстановить или обновить состояние приложения и получить назад ресурсы.
@@ -81,7 +81,7 @@ ms.locfileid: "68925478"
 
          ![Свойство&#35;&#47;приложения запуска C отладкой в Visual Basic](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Для визуальных C++ проектов выберите **нет** в списке **запустить приложение** .
+    - Для C++ проектов выберите **нет** в списке **запустить приложение** .
 
          ![Свойство&#43;&#43;&#47;отладки приложения при запуске C VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
@@ -109,7 +109,7 @@ ms.locfileid: "68925478"
 
 4. Выберите журнал **Диагностические** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Тестирование приложений UWP в Visual Studio](../test/testing-store-apps-with-visual-studio.md)
 - [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Жизненный цикл приложения](/windows/uwp/launch-resume/app-lifecycle)

@@ -1,5 +1,5 @@
 ---
-title: Отладка ошибок и предупреждений диалоговым окнам | Документация Майкрософт
+title: Диалоговые окна ошибок и предупреждений отладки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852228"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431675"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
 Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание
  [Диалоговое окно "Ошибка в утверждении"](../debugger/assertion-failed-dialog-box.md)
 
  [Диалоговое окно "Не удается изменить значение"](../debugger/cannot-change-value-dialog-box.md)
 
  [Отладчику не удается отобразить исходный код или дизассемблированный код](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Службы, нехватке памяти выполнение отладчика](../debugger/error-debugger-services-no-memory.md)
+ [Нехваткой памяти в службах отладчика](../debugger/error-debugger-services-no-memory.md)
 
  [Диалоговое окно "Исполняемый файл для сеанса отладки"](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -59,7 +59,7 @@ ms.locfileid: "67852228"
  [Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Связанные разделы
- [Отладка скрипта и веб: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Отладка скриптов и веб-отладка: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ ms.locfileid: "67852228"
 
  [Устранение неполадок настройки отладки SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Часто задаваемые вопросы по отладке в Visual C++](../debugger/debugging-native-code-faqs.md)
+ [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
 
  [Безопасность отладчика](../debugger/debugger-security.md)

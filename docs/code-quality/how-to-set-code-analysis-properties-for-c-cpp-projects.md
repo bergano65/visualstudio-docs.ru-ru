@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка свойств анализа кода для проектов C/C++
+title: Практическое руководство. Задание свойств анализа кода для проектов C/C++
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163049"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448919"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Практическое руководство. Установка свойств анализа кода для проектов C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Практическое руководство. Задание свойств анализа кода для проектов C/C++
 
 Можно указать, какие правила средство анализа кода использует для анализа кода в каждой конфигурации проекта. Кроме того, можно направлять анализ кода для подавления предупреждений из кода, созданного и добавленного в проект сторонним средством.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72163049"
 
 ## <a name="cmake-configuration"></a>Конфигурация CMak
 
-В проектах CMak измените значения ключей `enableMicrosoftCodeAnalysis` и `enableClangTidyCodeAnalysis` в `CMakeSettings.json`, чтобы включить или отключить анализ кода. Дополнительные сведения см. [в разделе Использование Clang в Visual Studio](../code-quality/clang-tidy.md) .
+В проектах CMak измените значение `enableMicrosoftCodeAnalysis` и `enableClangTidyCodeAnalysis` ключи в `CMakeSettings.json`, чтобы включить или отключить анализ кода. Дополнительные сведения см. [в разделе Использование Clang в Visual Studio](../code-quality/clang-tidy.md) .
 
 ## <a name="see-also"></a>См. также
 
