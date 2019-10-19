@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStatEx | Документация Майкрософт
+title: 'Иактивескриптстатс:: Жетстатекс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2ca7cdb81fd7e228b26bfaa12d45e81335674a74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442775"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576125"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Возвращает статистику пользовательского скрипта.  
@@ -39,28 +39,28 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>Параметры  
  `guid`  
- [in] Указывает, какой статистики для возврата. Семантика конкретных соответствует конкретному GUID является полностью определенные ядра.  
+ окне Указывает, какую статистику следует вернуть. Семантика, которая соответствует определенному идентификатору GUID, полностью определена подсистемой.  
   
  `pluHi`  
- [out] Старшие 32 разряда 64-разрядного целого числа без знака, представляющее статистику.  
+ заполняет Старшие 32 бит 64-разрядного целого числа без знака, представляющего статистику.  
   
  `pluLo`  
- [out] Младшие 32 разряда 64-разрядного целого числа без знака, представляющее статистику.  
+ заполняет Младший 32 бит 64-разрядного целого числа без знака, представляющего статистику.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_NOTIMPL`|Метод не реализован.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод позволяет модулю пользовательских скриптов для возврата статистики значимые пользовательского ведущего приложения.  
+## <a name="remarks"></a>Заметки  
+ Этот метод позволяет пользовательскому обработчику скриптов возвращать статистически значимые данные для пользовательского хоста.  
   
 > [!NOTE]
-> В настоящее время этот метод не реализован.  
+> Этот метод в настоящее время не реализован.  
   
 ## <a name="see-also"></a>См. также  
- [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
+ [Иактивескриптстатс:: stat](../../winscript/reference/iactivescriptstats-getstat.md)    
  [Интерфейс IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)

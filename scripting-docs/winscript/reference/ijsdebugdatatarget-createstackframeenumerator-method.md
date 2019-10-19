@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::CreateStackFrameEnumerator | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: CreateStackFrameEnumerator | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8103ac689ac812aee2037f0f2e89f1d3a7448c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59d58f0256a326d3922e280818176a43ef4aa5ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583084"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577633"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>Метод IJsDebugDataTarget::CreateStackFrameEnumerator
 Создает перечислитель для кадров стека.  
@@ -36,15 +36,15 @@ HRESULT CreateStackFrameEnumerator(
   
 #### <a name="parameters"></a>Параметры  
  `threadId`  
- [in] Поток, выполняемый в целевом процессе.  
+ окне Поток, выполняющийся в целевом процессе.  
   
  `ppEnumerator`  
- [out] Перечислитель для кадров стека.  
+ заполняет Перечислитель для кадров стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

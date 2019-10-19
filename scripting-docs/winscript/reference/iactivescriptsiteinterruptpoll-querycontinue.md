@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteInterruptPoll::QueryContinue | Документация Майкрософт
+title: 'Иактивескриптситеинтерруптполл:: Куериконтинуе | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63ce45c0973d65d240136d7b42aef0c078b00c9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ce2ad61b54dce510035dd8e97d0dfb2accbf7a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992296"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572234"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
-Позволяет ведущему приложению указать, что следует прервать сценарий.  
+Позволяет узлу указать, что скрипт должен завершаться.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,16 +39,16 @@ HRESULT QueryContinue();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
-|`S_OK`|Вызов завершился успешно, и основное приложение разрешает сценарий продолжать работу.|  
-|`S_FALSE`|Вызов успешно и узла запросов, приводящих к прекращению скрипт.|  
+|`S_OK`|Вызов выполнен, и узел разрешает продолжение выполнения сценария.|  
+|`S_FALSE`|Вызов выполнен, и узел запрашивает завершение скрипта.|  
   
-## <a name="remarks"></a>Примечания  
- Размещенным сценарием должно быть прекращено, если возвращаемое значение `QueryContinue` метод `S_OK`. Возвращаемое значение `S_FALSE` указывает, что узел явно запрашивает, что завершить скрипт.  
+## <a name="remarks"></a>Заметки  
+ Размещенный скрипт должен завершаться, если только возвращаемое значение метода `QueryContinue` не `S_OK`. Возвращаемое значение `S_FALSE` указывает, что узел явным образом запрашивает завершение скрипта.  
   
- Многопоточные узел может использовать `IActiveScript::InterruptScriptThread` метод для завершения скрипта.  
+ Многопоточный узел может использовать метод `IActiveScript::InterruptScriptThread` для завершения скрипта.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IActiveScriptSiteInterruptPoll](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
+ @No__t_1 [интерфейса иактивескриптситеинтерруптполл](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

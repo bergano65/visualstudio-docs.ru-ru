@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetLanguage | Документация Майкрософт
+title: 'Искриптноде:: отличный язык | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36b7076bf7f261e462802174c6f9014403606ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26fd5db22346292585be3cea751eaa8be1c284a9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786962"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575696"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
-Возвращает язык сценариев, используемый узлом текущего скрипта.  
+Возвращает язык скрипта, используемый текущим узлом скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,16 +37,16 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>Параметры  
  `pbstr`  
- [out] Возвращает «JScript», если узел скрипта использует JScript или «VBScript», если узел скрипта использует Visual Basic Scripting Edition (VBScript).  
+ заполняет Возвращает «JScript», если узел скрипта использует JScript или «VBScript», если узел скрипта использует Visual Basic Scripting Edition (VBScript).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptNode](../../winscript/reference/iscriptnode-interface.md)

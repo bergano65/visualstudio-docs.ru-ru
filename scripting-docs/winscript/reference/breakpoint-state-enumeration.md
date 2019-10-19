@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955364"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572631"
 ---
-# <a name="breakpointstate-enumeration"></a>Перечисление BREAKPOINT_STATE
+# <a name="breakpoint_state-enumeration"></a>Перечисление BREAKPOINT_STATE
 Показывает состояние точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,12 +37,12 @@ typedef enum tagBREAKPOINT_STATE {
 } BREAKPOINT_STATE;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|Точка останова не существует, но по-прежнему существуют ссылки на него.|  
-|BREAKPOINT_DISABLED|Точка останова существует, но отключен.|  
+|BREAKPOINT_DELETED|Точка останова больше не существует, но по-прежнему есть ссылки на нее.|  
+|BREAKPOINT_DISABLED|Точка останова существует, но отключена.|  
 |BREAKPOINT_ENABLED|Точка останова существует и включена.|  
   
 ## <a name="see-also"></a>См. также  

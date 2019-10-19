@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType | Документация Майкрософт
+title: 'IDebugFormatter:: Жетстрингфорвартипе | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d83df97ac9cb6c38d989470b71da93aceb5d50b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9b498f5b37a9fc34b0926d9c0a5601d89dde7c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979218"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576360"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
-Возвращает строку, представляющую данное значение VARTYPE.  
+Возвращает строку, представляющую заданное значение VARTYPE.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,23 +39,23 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>Параметры  
  `vt`  
- [in] VARTYPE для представления в виде строки.  
+ окне VARTYPE для представления в виде строки.  
   
  `ptdescArrayType`  
- [in] Массив структур, описывающих типы.  
+ окне Массив структур, описывающих типы.  
   
  `pbstr`  
- [out] Строка, представляющая `vt`.  
+ заполняет Строка, представляющая `vt`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Метод возвращает строку, представляющую данное значение VARTYPE.  
+## <a name="remarks"></a>Заметки  
+ Метод возвращает строку, представляющую заданное значение VARTYPE.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)

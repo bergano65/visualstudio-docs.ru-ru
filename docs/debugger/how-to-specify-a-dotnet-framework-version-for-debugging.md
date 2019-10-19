@@ -1,5 +1,5 @@
 ---
-title: Укажите версию платформы .NET Framework для отладки | Документация Майкрософт
+title: Укажите версию .NET Framework для отладки | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747475"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535972"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Практическое руководство. Указание версии платформы .NET Framework для отладки (C#, Visual Basic, F#)
+# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Укажите более раннюю версию .NET Framework для отладки (C#, Visual Basic, F#)
 
-Отладчик Visual Studio поддерживает отладку более старых версиях Microsoft .NET Framework, а также в текущей версии. При запуске приложения из Visual Studio, отладчик всегда может определить правильную версию платформы .NET Framework для отлаживаемого приложения. Тем не менее, если приложение уже работает и его запуске отладки нажатием клавиши **присоединить к**, отладчик не всегда можно определить старую версию платформы .NET Framework. В этом случае появится сообщение об ошибке следующего содержания:
+Отладчик Visual Studio поддерживает отладку старых версий платформы Microsoft .NET Framework, а также текущей версии. При запуске приложения из Visual Studio отладчик всегда может найти правильную версию .NET Framework для отлаживаемого приложения. Однако если приложение уже запущено и вы начинаете отладку с помощью команды **attach to**, отладчик не всегда может определить старую версию .NET Framework. В этом случае появится сообщение об ошибке следующего содержания:
 
 ``` cmd
 The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
-В редких случаях, где отображается эта ошибка можно задать раздел реестра для указания отладчику, какую версию использовать.
+В редких случаях, когда возникает эта ошибка, можно задать раздел реестра, указывающий отладчику, какую версию следует использовать.
 
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>Указание версии платформы .NET Framework для отладки
 
@@ -46,23 +46,23 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
 3. В **редакторе реестра** откройте папку HKEY_LOCAL_MACHINE.
 
-4. Перейдите к: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. Перейдите в HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
-    Если раздел не существует, щелкните правой кнопкой мыши HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine и выберите команду **Создать раздел**. Назовите новый раздел `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
+    Если раздел не существует, щелкните правой кнопкой мыши HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine и выберите команду **Создать раздел**. Назовите новый ключ `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
 
 5. После перехода к {449EC4CC-30D2-4032-9256-EE18EB41B62B}, найдите в столбце **Имя** ключ "CLRVersionForDebugging".
 
-   1. Если раздел не существует, щелкните правой кнопкой мыши {449EC4CC-30D2-4032-9256-EE18EB41B62B} и выберите команду **Создать строковый параметр**. Щелкните правой кнопкой мыши новый строковый параметр, нажмите кнопку **Переименовать**и тип `CLRVersionForDebugging`.
+   1. Если раздел не существует, щелкните правой кнопкой мыши {449EC4CC-30D2-4032-9256-EE18EB41B62B} и выберите команду **Создать строковый параметр**. Затем щелкните правой кнопкой мыши новое строковое значение, выберите команду **Переименовать**и введите `CLRVersionForDebugging`.
 
 6. Дважды щелкните **CLRVersionForDebugging**.
 
-7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Пример: V1.1.4322
+7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Например, "V1.1.4322".
 
 8. Нажмите кнопку **ОК**.
 
 9. Закройте **Редактор реестра**.
 
-     Если при запуске отладки по-прежнему возникает сообщение об ошибке, проверьте, что в реестре введен правильный номер версии. Кроме того, убедитесь, что вы используете версию .NET Framework, поддерживаемая Visual Studio. Отладчик совместим с текущей версией платформы .NET Framework и предыдущими версиями, но может не обладать прямой совместимостью с будущими версиями.
+     Если при запуске отладки по-прежнему возникает сообщение об ошибке, проверьте, что в реестре введен правильный номер версии. Также убедитесь, что используется версия .NET Framework, поддерживаемая Visual Studio. Отладчик совместим с текущей версией платформы .NET Framework и предыдущими версиями, но может не обладать прямой совместимостью с будущими версиями.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

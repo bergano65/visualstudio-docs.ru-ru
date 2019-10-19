@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007318"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573812"
 ---
 # <a name="invalid-replacer-argument"></a>Недопустимый аргумент замены
-Предпринята попытка вызвать `JSON.stringify` с аргументом, который является недопустимым. `replacer` Аргумент должен быть функцией или массивом.  
+Предпринята попытка вызвать `JSON.stringify` с недопустимым аргументом. Аргумент `replacer` должен быть функцией или массивом.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Изменение `replacer` аргумент к функции или массив.  
+- Измените аргумент `replacer` на функцию или массив.  
   
 ## <a name="example"></a>Пример  
- В данном примере кода приводит к ошибке времени выполнения, поскольку `memberfilter` — это объект, а не функция или массив.  
+ Код в этом примере вызывает ошибку времени выполнения, так как `memberfilter` является объектом, а не функцией или массивом.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Объект JSON](../../javascript/reference/json-object-javascript.md)   
- [Функция JSON.parse](../../javascript/reference/json-parse-function-javascript.md)   
+ @No__t_1 [объекта JSON](../../javascript/reference/json-object-javascript.md)  
+ @No__t_1 [функции JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)  
  [Ошибки времени выполнения JavaScript](../../javascript/reference/javascript-run-time-errors.md)

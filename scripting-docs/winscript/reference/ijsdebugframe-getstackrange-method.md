@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugFrame::GetStackRange | Документация Майкрософт
+title: 'Метод метод ijsdebugframe:: GetStackRange | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52dd6114d3ec462f91f8bce5e76f73c5487746ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ac3cbee9d16296632477f4128ec36370ab0d4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558220"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574038"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>Метод IJsDebugFrame::GetStackRange
-Возвращает диапазон абсолютных адресов логического фрейма стеков JavaScript.  
+Возвращает диапазон абсолютных адресов логического кадра стека JavaScript.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,18 +36,18 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>Параметры  
  `pStart`  
- [out] Bottom большинство указателя стека кадра.  
+ заполняет Самый нижний указатель стека фрейма.  
   
  `pEnd`  
- [out] Первые самый верхний указатель на кадр.  
+ заполняет Самый верхний указатель укладчика рамки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Этот метод полезен для соединения вместе перемежаемых трассировок стека с множественными средами выполнения. Начало, конечные указатели стека может охватывать несколько кадров стека физического компьютера (для интерпретированных кадров среды выполнения JavaScript). Пуск > завершить, так как стек растет от большего к минимальным адресам.  
+## <a name="remarks"></a>Заметки  
+ Этот метод полезен для пиеЦинг вместе чередующихся трассировок стека, собранных из нескольких сред выполнения. Начальные и конечные указатели стека могут охватывать несколько кадров стека физического компьютера (для интерпретируемых фреймов среды выполнения JavaScript). Начало >, так как стек растет с самого высокого до младшего адреса.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

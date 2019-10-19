@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionExit | Документация Майкрософт
+title: 'IActiveScriptProfilerCallback:: Онфунктионексит | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c84b64a12b1a6b61399f70b7209c86dd8d2a9a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87801b7873e43498031264ff4719fb47eca99f40
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993336"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571678"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-Уведомляет профилировщик, что объект, чтобы вызывать по завершении выполнения функции обработчика скриптов, не является вызов в объектной модели документа (DOM).  
+Уведомляет объект профилировщика, что обработчик скриптов завершил выполнение вызова функции, который не является вызовом модель DOM (DOM).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionExit(
   
 #### <a name="parameters"></a>Параметры  
  `scriptId`  
- [in] Уникальный идентификатор сценария, который входит функция. Этот идентификатор назначается обработчик скриптов.  
+ окне Уникальный идентификатор скрипта, частью которого является функция. Этот идентификатор назначается обработчиком скриптов.  
   
  `functionId`  
- [in] Уникальный идентификатор функции. Этот идентификатор назначается обработчик скриптов.  
+ окне Уникальный идентификатор функции. Этот идентификатор назначается обработчиком скриптов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращаемое значение этого метода обрабатывается обработчиком сценариев.  
+ Возвращаемое значение этого метода игнорируется обработчиком скриптов.  
   
-## <a name="remarks"></a>Примечания  
- Для вызовов DOM, обработчик скриптов вызывает [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) вместо `IActiveScriptProfilerCallback::OnFunctionExit`. Это происходит из-за большого количества уникальных методы и свойства в модели DOM.  
+## <a name="remarks"></a>Заметки  
+ Для вызовов DOM обработчик скриптов вызывает [IActiveScriptProfilerCallback2:: онфунктионекситбинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) вместо `IActiveScriptProfilerCallback::OnFunctionExit`. Это связано с большим количеством уникальных методов и свойств в модели DOM.  
   
 ## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
+ [IActiveScriptProfilerCallback:: онфунктионентер](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)    
  [Интерфейс IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptTextAttributes | Документация Майкрософт
+title: 'Иактивескриптаусор:: Жетскрипттекстаттрибутес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75e0d5edf7cf2f83e814036cec56a1b19a89813e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f89c7b654cc2ac7248598ee6498a3a290d17e2ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955124"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72563146"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
 Возвращает атрибуты текста для блока скрипта.  
@@ -41,35 +41,35 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Параметры  
  `pszCode`  
- [in, size_is (`cch`)] текст блока скрипта. Эта строка не быть нулевым байтом.  
+ [in, size_is (`cch`)] Текст блока скрипта. Эта строка не должна завершаться нулем.  
   
  `cch`  
- [in] Размер, используемый для `pszCode` и `pattr` параметров.  
+ окне Размер, используемый для параметров `pszCode` и `pattr`.  
   
  `pszDelimiter`  
- [in] Адрес разделитель end из скрипта. Когда `pszCode` анализируется из потока текста, узел обычно использует разделитель (например, две одинарные кавычки), чтобы определить конец скриптлета. Установите этот параметр значение NULL, если разделитель не для обозначения конца блока скрипта.  
+ окне Адрес разделителя конца скрипта. При синтаксическом анализе `pszCode` из потока текста хост обычно использует разделитель (например, две одинарные кавычки) для обнаружения конца скриптлет. Присвойте этому параметру значение NULL, если нет разделителя для обнаружения конца блока скрипта.  
   
  `dwFlags`  
- [in] Флаги, связанные с атрибутами текстового блока скрипта. Может быть сочетанием следующих значений:  
+ окне Флаги, связанные с атрибутами Text блока script. Может быть сочетанием следующих значений:  
   
-|Константа|Значение|Описание|  
+|Константа|значения|Описание|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Определите идентификаторы, которые имеют атрибут SOURCETEXT_ATTR_IDENTIFIER и определить операторы точки, имеющие атрибут SOURCETEXT_ATTR_MEMBERLOOKUP.|  
-|GETATTRFLAG_THIS|0x0100|Определите текущего объекта, который имеет атрибут SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Определите строку содержимого и текст примечания, имеющего атрибут SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Выявление идентификаторов, имеющих атрибут SOURCETEXT_ATTR_IDENTIFIER, и идентификации операторов Dot, имеющих атрибут SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRFLAG_THIS|0x0100|Определяет текущий объект, имеющий атрибут SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Выявление строкового содержимого и текста комментария с атрибутом SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out, size_is (`cch`)] сведения о цвете для код блока скрипта.  
+ [in, out, size_is (`cch`)] Сведения о цвете для кода блока сценария.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+ @No__t_1 [интерфейса иактивескриптаусор](../../winscript/reference/iactivescriptauthor-interface.md)  
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

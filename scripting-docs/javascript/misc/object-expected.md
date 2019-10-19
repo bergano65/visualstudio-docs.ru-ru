@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006370"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573725"
 ---
 # <a name="object-expected"></a>Ожидался объект
 Предпринята попытка вызвать метод или свойство для объекта, тип которого отличается от типа `Object`, или передать аргумент, тип которого отличается от типа `Object`. Объект вызова этого типа должен иметь тип `Object`.  
@@ -47,5 +47,5 @@ ms.locfileid: "63006370"
     ```  
   
 ## <a name="see-also"></a>См. также  
- [Объект Object](../../javascript/reference/object-object-javascript.md)   
+ [Объект  ](../../javascript/reference/object-object-javascript.md)  
  [Объекты и массивы](../../javascript/objects-and-arrays-javascript.md)

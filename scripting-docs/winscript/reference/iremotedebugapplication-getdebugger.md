@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetDebugger | Документация Майкрософт
+title: 'IRemoteDebugApplication:: "Debugger" | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba28af068bae6baa3031dde346fa0157e8e1ce6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 031e4390941d9b8b025c704ebfcec20224aa1c79
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944262"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573818"
 ---
 # <a name="iremotedebugapplicationgetdebugger"></a>IRemoteDebugApplication::GetDebugger
-Возвращает текущий отладчик подключен к приложению.  
+Возвращает текущий отладчик, подключенный к приложению.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT GetDebugger(
   
 #### <a name="parameters"></a>Параметры  
  `pad`  
- [out] Текущий отладчик подключен к приложению.  
+ заполняет Текущий отладчик, подключенный к приложению.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает текущий отладчик подключен к приложению.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает текущий отладчик, подключенный к приложению.  
   
 ## <a name="see-also"></a>См. также  
- [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
+ [IRemoteDebugApplication:: коннектдебугжер](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

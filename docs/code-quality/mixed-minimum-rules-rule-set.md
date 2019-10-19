@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c0b45fe73624a7506fbfdb52204201d286a73e
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445663"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535767"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для смешанного кода"
 
@@ -153,7 +153,7 @@ ms.locfileid: "72445663"
 |[C28305](../code-quality/c28305.md)|При синтаксическом анализе токена обнаружена ошибка.|
 |[C28350](../code-quality/c28350.md)|Заметка описывает ситуацию, к которой неприменимы условия.|
 |[C28351](../code-quality/c28351.md)|Аннотация описывает ситуацию, когда динамическое значение (переменная) не может использоваться в условии.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
+|[CA1001](../code-quality/ca1001.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
 |[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
 |[CA2213](../code-quality/ca2213.md)|Следует высвобождать высвобождаемые поля|
 |[CA2231](../code-quality/ca2231.md)|Перегрузите оператор равенства на переопределяющем типе ValueType.Equals|

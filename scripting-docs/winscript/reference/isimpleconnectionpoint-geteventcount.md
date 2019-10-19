@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::GetEventCount | Документация Майкрософт
+title: 'Исимплеконнектионпоинт:: Жетевенткаунт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34796765ba15589c031e780df5f2507e6938a858
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cfa392a052d415cef4c19f07c6c8e73704dfa45
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786253"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571801"
 ---
 # <a name="isimpleconnectionpointgeteventcount"></a>ISimpleConnectionPoint::GetEventCount
-Возвращает количество событий, предоставленных на этом интерфейсе.  
+Возвращает число событий, предоставленных для этого интерфейса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT GetEventCount(
   
 #### <a name="parameters"></a>Параметры  
  `pulCount`  
- [out] Число событий, предоставляемые в это число интерфейс.  
+ заполняет Число событий, предоставляемых для этого числа интерфейсов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает количество событий, предоставленных на этом интерфейсе.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает число событий, предоставленных для этого интерфейса.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

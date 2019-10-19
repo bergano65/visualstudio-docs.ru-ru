@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onRemoveText | Документация Майкрософт
+title: 'Идебугдокументтекстевентс:: Онремоветекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 506d7c5349cf074ce4a4cbe60e33459a09a91b67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c302a3b1850db42824f35a306e7e94eaa8a6aa41
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946717"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576263"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
 Указывает, что текст был удален из документа.  
@@ -38,21 +38,21 @@ HRESULT onRemoveText(
   
 #### <a name="parameters"></a>Параметры  
  `cCharacterPosition`  
- [in] Удалить позицию символа первого символа.  
+ окне Порядковый номер первого символа, который был удален.  
   
  `cNumToRemove`  
- [in] Число символов, удаленных.  
+ окне Число удаленных символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод указывает, что текст был удален из документа.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+ @No__t_1 [интерфейса идебугдокументтекстевентс](../../winscript/reference/idebugdocumenttextevents-interface.md)  
  [IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)

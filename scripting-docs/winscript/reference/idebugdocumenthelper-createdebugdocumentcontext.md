@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::CreateDebugDocumentContext | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Креатедебугдокументконтекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2dddfc76f2bbc3e629b2d48febb6b582a3a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a039b5c4de410e67dc2dfb2859e1f4cc8b1739
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783175"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576991"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Создает новый контекст документа отладки.  
@@ -39,23 +39,23 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Параметры  
  `iCharPos`  
- [in] Расположение начала содержимого документа отладки.  
+ окне Расположение начала содержимого отладочного документа.  
   
  `cChars`  
- [in] Число символов в контексте.  
+ окне Число символов в контексте.  
   
  `ppddc`  
- [out] Новый контекст документа отладки.  
+ заполняет Новый контекст документа отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод позволяет сайту создавать новый контекст документа отладки.  
+## <a name="remarks"></a>Заметки  
+ Этот метод позволяет ведущему приложению создать новый контекст документа отладки.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

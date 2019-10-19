@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugFrame::GetDocumentPositionWithId | Документация Майкрософт
+title: 'Метод метод ijsdebugframe:: GetDocumentPositionWithId | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741fe323e787c57f5f05a25461eae87c98dba70f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f35f6fb84db95950fe83d571c9f5e5e7db9de1e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558142"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573862"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>Метод IJsDebugFrame::GetDocumentPositionWithId
-Возвращает текущее положение этого кадра стека в пределах пользовательского документа.  
+Возвращает текущую координату этого кадра стека в документе уровня пользователя.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>Параметры  
  `pDocumentId`  
- [out] Уникальный идентификатор для исходного документа (указатель на IDebugDocumentText).  
+ заполняет Уникальный идентификатор исходного документа (указатель на Идебугдокументтекст).  
   
  `pCharacterOffset`  
- [out] Отсчитываемый от нуля смещение от начала скрипта.  
+ заполняет Отсчитываемое от нуля смещение символов от начала скрипта.  
   
  `pStatementCharCount`  
- [out] Длина текущей инструкции, которая начинается с * pCharacterOffset, в символах.  
+ заполняет Длина текущего оператора, начинающегося в * Пчарактероффсет, в символах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

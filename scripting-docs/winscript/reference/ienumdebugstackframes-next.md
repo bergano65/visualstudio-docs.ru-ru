@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Next | Документация Майкрософт
+title: 'Иенумдебугстаккфрамес:: Next | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e4025af8cf0de76ff224bf5236ba7130d638deb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17261f8ba9b2957d33ed7019c16f2e1423b6b42e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963355"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575548"
 ---
 # <a name="ienumdebugstackframesnext"></a>IEnumDebugStackFrames::Next
-Возвращает указанное количество сегментов в последовательности перечисления.  
+Извлекает указанное количество сегментов в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,24 +39,24 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество сегментов для получения.  
+ окне Число извлекаемых сегментов.  
   
  `prgdsfd`  
- [out] Возвращает массив `DebugStackFrameDescriptor` интерфейсы, которые представляет сегменты, которые требуется получить.  
+ заполняет Возвращает массив интерфейсов `DebugStackFrameDescriptor`, представляющих получаемые сегменты.  
   
  `pceltFetched`  
- [out] Фактическое число сегментов, получены с помощью перечислителя.  
+ заполняет Фактическое число сегментов, выбранных перечислителем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод извлекает указанное число сегментов в последовательности перечисления.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)   
+ @No__t_1 [интерфейса иенумдебугстаккфрамес](../../winscript/reference/ienumdebugstackframes-interface.md)  
  [Структура DebugStackFrameDescriptor](../../winscript/reference/debugstackframedescriptor-structure.md)

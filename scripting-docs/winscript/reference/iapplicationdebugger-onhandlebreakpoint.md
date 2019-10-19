@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onHandleBreakPoint | Документация Майкрософт
+title: 'Иаппликатиондебугжер:: Онхандлебреакпоинт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edf8816cd646596ce1f897dfd9d949790d52b7b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3796ea1f50f0c4bcf945dbc10592c048db22757b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991353"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577832"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 Обрабатывает событие точки останова.  
@@ -39,28 +39,28 @@ HRESULT onHandleBreakPoint(
   
 #### <a name="parameters"></a>Параметры  
  `prpt`  
- [in] Поток, где произошло точки останова.  
+ окне Поток, в котором произошла точка останова.  
   
  `br`  
- [in] Причина для точки останова.  
+ окне Причина точки останова.  
   
  `pError`  
- [in] Сведения об ошибке среды выполнения, предоставляемых при значение `br` является BREAKREASON_ERROR.  
+ окне Сведения об ошибке времени выполнения, предоставляемые, если значение `br` BREAKREASON_ERROR.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывается при достижении точки останова и `IDebugApplication::HandleBreakPoint` вызывается.  
+## <a name="remarks"></a>Заметки  
+ Этот метод вызывается при попадании в точку останова и вызове `IDebugApplication::HandleBreakPoint`.  
   
- Приложение будет отложен до интегрированной среды разработки, он вызывает `IRemoteDebugApplication::ResumeFromBreakPoint`.  
+ Приложение будет оставаться приостановленным до тех пор, пока IDE отладчика не вызовет `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
- [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
- [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
+ @No__t_1 [интерфейса иаппликатиондебугжер](../../winscript/reference/iapplicationdebugger-interface.md)  
+ [IDebugApplication:: хандлебреакпоинт](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
+ [IRemoteDebugApplication:: ресумефромбреакпоинт](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
  [Перечисление BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugProcess::CreateStackWalker | Документация Майкрософт
+title: 'Метод метод ijsdebugprocess:: Креатестакквалкер | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb084b665467ae023bb885ee0de221f0409a0160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70f5d4885abba3d891526723d3ca1f174549c348
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557737"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573828"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>Метод IJsDebugProcess::CreateStackWalker
-Фабричный метод для средства обхода стека.  
+Фабричный метод для обхода стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,18 +36,18 @@ HRESULT CreateStackWalker(
   
 #### <a name="parameters"></a>Параметры  
  `threadId`  
- [in] Идентификатор потока.  
+ окне Идентификатор потока.  
   
  `ppStackWalker`  
- [out] Новый объект просмотра стека.  
+ заполняет Новый объект обходчика стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Возвращает E_JsDEBUG_UNKNOWN_THREAD, если поток не имеет JavaScript на нем. Этот метод может вызываться только в тех случаях, когда целевой процесс остановлен.  
+## <a name="remarks"></a>Заметки  
+ Возвращает E_JsDEBUG_UNKNOWN_THREAD, если в потоке отсутствует JavaScript. Этот метод может быть вызван только в том случае, если целевой процесс остановлен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

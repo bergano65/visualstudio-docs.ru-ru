@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow | Документация Майкрософт
+title: Иактивескриптситевиндов::/Window | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b6efa066765339375a8315695aa9c1de2f9c46b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8263db447c7692ec7b0982127d63b4bea588a4b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992071"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574358"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Получает дескриптор окна, которое может выступать в качестве владельца всплывающее окно, которое необходимо отобразить обработчика скриптов.  
+Получает дескриптор окна, которое может действовать как владелец всплывающего окна, которое должен отображать обработчик скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>Параметры  
  `phwnd`  
- [out] Адрес переменной, которая получает дескриптор окна.  
+ заполняет Адрес переменной, которая получает маркер окна.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_FAIL` Если произошла ошибка.  
+ Возвращает `S_OK` в случае успеха или `E_FAIL`, если произошла ошибка.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод аналогичен методу `IOleWindow::GetWindow` метод.  
+## <a name="remarks"></a>Заметки  
+ Этот метод аналогичен методу `IOleWindow::GetWindow`.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

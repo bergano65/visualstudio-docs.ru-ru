@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptSite | Документация Майкрософт
+title: 'IActiveScript:: Жетскриптсите | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b57c4282b7ec77eb4af2ffa983479ae77388e1c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 567c7b5c1ead5388e6ec9c67d6ab6f9f580adf20
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935775"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575748"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
-Извлекает объект узла, связанный с обработчик скриптов Windows.  
+Извлекает объект сайта, связанный с обработчиком сценариев Windows.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT GetScriptSite(
   
 #### <a name="parameters"></a>Параметры  
  `iid`  
- [in] Идентификатор запрашиваемого интерфейса.  
+ окне Идентификатор запрашиваемого интерфейса.  
   
  `ppvSiteObject`  
- [out] Адрес расположения, получающей указатель интерфейса на объект главного приложения сайта.  
+ заполняет Адрес расположения, получающего указатель интерфейса на объект сайта узла.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Возвращаемое значение|Значение|  
+|Возвращаемое значение|Смысл|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
-|`E_INVALIDARG`|Аргумент был недопустимым.|  
+|`E_INVALIDARG`|Недопустимый аргумент.|  
 |`E_NOINTERFACE`|Указанный интерфейс не поддерживается.|  
 |`E_POINTER`|Указан недопустимый указатель.|  
-|`S_FALSE`|Сайт не был задан; `ppvSiteObject` параметр имеет значение `NULL`.|  
+|`S_FALSE`|Сайт не задан; параметр `ppvSiteObject` имеет значение `NULL`.|  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

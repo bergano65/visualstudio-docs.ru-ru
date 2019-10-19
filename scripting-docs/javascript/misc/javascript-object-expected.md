@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b9b6b17ac0e0aeeeeae99c39954bfd6b283fe2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007514"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573793"
 ---
 # <a name="javascript-object-expected"></a>Ожидался объект JavaScript
-Была предпринята попытка передать отличный от[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объект встроенную функцию, ожидающую [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекта. Различные встроенные функции требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных внешний компонент как элемент управления или узла).  
+Предпринята попытка передать объект, не являющийся [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], во встроенную функцию, ожидающую объект [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Для различных встроенных функций требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных узлом, или внешнего компонента, такого как элемент управления).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Убедитесь, что объект, который вы передаете в как параметра имеет неправильный тип.  
+- Убедитесь, что передаваемый в качестве параметра объект имеет правильный тип.  
   
 ## <a name="see-also"></a>См. также  
  [Объекты и массивы](../../javascript/objects-and-arrays-javascript.md)   

@@ -1,5 +1,5 @@
 ---
-title: Ожидалось ключевое слово «catch» | Документация Майкрософт
+title: Требуется "Catch" | Документация Майкрософт
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,22 +14,22 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 941d49a530b14e2af64ddcb599dd775feb347de0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8cad981e4ba469f67645aca601e6b58c18e1fab6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935403"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573424"
 ---
 # <a name="expected-catch"></a>Ожидалось ключевое слово "catch"
-Вы использовали обработки исключений **попробуйте** block, но не писали связанного **catch** инструкции. Требуется механизм обработки исключений, что код, который может завершиться ошибкой, а также код, который не должен выполняться при возникновении исключения, заключаться в **попробуйте** блока. Исключения изнутри **попробуйте** запретить, используя **throw** инструкции и перехватываются за пределами **попробуйте** блок с одним или несколькими **catch**инструкций.  
+Вы использовали блок **try** обработки исключений, но не написали соответствующий оператор **catch** . Механизм обработки исключений требует, чтобы код, который может завершиться ошибкой, вместе с кодом, который не должен выполняться при возникновении исключения, был заключен внутрь блока **try** . Исключения создаются в блоке **try** с помощью инструкции **throw** и перехватываются вне блока **try** с помощью одного или нескольких инструкций **catch** .  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Добавление связанного **catch** блока.  
+- Добавьте связанный блок **catch** .  
   
-- Попробуйте использовать **наконец** блокировать вместо **catch** блока.  
+- Попробуйте использовать блок **finally** вместо блока **catch** .  
   
 ## <a name="see-also"></a>См. также  
- [Try... catch... finally инструкции](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
+ [попробуйте... перехватить... Оператор finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)    
  [Объект Error](../../javascript/reference/error-object-javascript.md)

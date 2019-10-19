@@ -1,5 +1,5 @@
 ---
-title: Перечисление JsDebugReadMemoryFlags | Документация Майкрософт
+title: Перечисление Жсдебугреадмеморифлагс | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1757678f20a01221ae46e1535d3190cd463d724
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830466"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571698"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Перечисление JsDebugReadMemoryFlags
 Флаги для задания поведения при чтении памяти.  
@@ -31,17 +31,17 @@ ms.locfileid: "62830466"
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="values"></a>Значения  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Указывает, что вызывающий объект хочет, чтобы операции чтения для успешного выполнения, если только на часть памяти чтение успешно выполнена. Если задано значение, ошибка E_JsDEBUG_INVALID_MEMORY_ADDRESS будет возникать только если «Address» является недопустимым. Если этот флаг снят, ошибка E_JsDEBUG_INVALID_MEMORY_ADDRESS возникнет, если любая часть запрашиваемой памяти не удается прочитать.|  
-|`None`|Указывает, что вызывающий объект хочет, чтобы поведение по умолчанию для ReadMemory.|  
+|`JsDebugAllowPartialRead`|Указывает, что вызывающему объекту требуется успешная операция чтения, если только часть памяти была прочитана. Если задано значение, то ошибка E_JsDEBUG_INVALID_MEMORY_ADDRESS будет возникать только в том случае, если адрес недопустим. Если этот флаг снят, возникнет ошибка E_JsDEBUG_INVALID_MEMORY_ADDRESS, если какая-либо часть запрошенной памяти была нечитаемой.|  
+|`None`|Указывает, что вызывающему объекту требуется поведение по умолчанию для ReadMemory.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

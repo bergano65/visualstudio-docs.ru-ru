@@ -1,5 +1,5 @@
 ---
-title: Отображение пользовательского типа, с помощью DebuggerTypeProxy | Документация Майкрософт
+title: Отображение пользовательского типа с помощью DebuggerTypeProxy | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 091619353adacaeb9c6996653ac64a0bcd84bb5c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929641"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568952"
 ---
-# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Указать отладчику какие типов, чтобы отобразить использование атрибута DebuggerTypeProxy (C#, Visual Basic, C++выполняет)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Сообщить отладчику, какой тип отображать с помощью атрибута DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
-Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и изменяет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.
+Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и меняет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.
 
 Данный атрибут может применяться к:
 
@@ -35,7 +35,7 @@ ms.locfileid: "62929641"
 - Сборки
 
 > [!NOTE]
-> Для машинного кода, этот атрибут поддерживается только в C++выполняет код.
+> Для машинного кода этот атрибут поддерживается только в C++коде/CLI.
 
 Класс прокси-типа должен иметь конструктор, принимающий аргумент типа, который будет заменен прокси. Отладчик создает новый экземпляр класса прокси-типа всякий раз, когда требуется отобразить переменную конечного типа. Это может сказываться на производительности. Поэтому не следует выполнять в конструкторе больше действий, чем это действительно необходимо.
 
@@ -43,11 +43,11 @@ ms.locfileid: "62929641"
 
 Прокси-тип рекомендуется делать закрытым вложенным классом внутри класса, к которому применяется атрибут. В этом случае он может легко получить доступ к внутренним членам.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> может быть унаследован, поэтому если тип прокси-сервер указан в базовом классе его будут применяться ко всем производным классам, если эти производные классы не заданы собственные прокси-сервера типа.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> могут быть унаследованы, поэтому если в базовом классе указан прокси-тип, он будет применяться к любым производным классам, если только эти производные классы не задают свой собственный тип прокси.
 
 Если атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> используется на уровне сборки, параметр `Target` указывает тип, который заменяется прокси.
 
-Пример использования этого атрибута вместе с <xref:System.Diagnostics.DebuggerDisplayAttribute> и <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, см. в разделе[использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
+Пример использования этого атрибута вместе с <xref:System.Diagnostics.DebuggerDisplayAttribute> и <xref:System.Diagnostics.DebuggerTypeProxyAttribute> см. в разделе[Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
 
 ## <a name="using-generics-with-debuggertypeproxy"></a>Использование универсальных типов с атрибутом DebuggerTypeProxy
 
@@ -59,14 +59,14 @@ ms.locfileid: "62929641"
 
 Этот синтаксис необходимо использовать при использовании универсального типа в качестве целевого типа в атрибуте `DebuggerTypeProxy`. Атрибут `DebuggerTypeProxy` предположит параметры типа самостоятельно.
 
-Дополнительные сведения об открытых и закрытых типах в C# см. в разделе [спецификации языка C#](/dotnet/csharp/language-reference/language-specification), откройте раздел 20.5.2 и закрытые типы.
+Дополнительные сведения об открытых и закрытых типах см C# [ C# . в разделе](/dotnet/csharp/language-reference/language-specification)20.5.2 Open and Closed Types.
 
 В Visual Basic синтаксис для открытых типов не поддерживается, поэтому данный способ для Visual Basic не подходит. Вместо этого необходимо использовать строковое представление имени открытого типа.
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Создание настраиваемых представлений собственных объектов](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Создание настраиваемых представлений управляемых объектов](../debugger/create-custom-views-of-managed-objects.md)
 - [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

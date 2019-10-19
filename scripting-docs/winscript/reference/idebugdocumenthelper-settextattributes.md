@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetTextAttributes | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Сеттекстаттрибутес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d6ef4130cd9383cf4f59c2e3f5407bdb7780a0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7cc5e5955652fd8b59d4c502e68d97a729ded141
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569470"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-Задает атрибуты на диапазон текста, переопределение другие атрибуты, что соответствующий текст.  
+Задает атрибуты для диапазона текста, переопределяя другие атрибуты этого текста.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,27 +39,27 @@ HRESULT SetTextAttributes(
   
 #### <a name="parameters"></a>Параметры  
  `ulCharOffset`  
- [in] Расположение начала текстового диапазона.  
+ окне Расположение начала текстового диапазона.  
   
  `cChars`  
- [in] Число символов в диапазоне.  
+ окне Число символов в диапазоне.  
   
  `pstaTextAttr`  
- [in] Атрибуты текста источника для диапазона текста.  
+ окне Исходные атрибуты текста для диапазона текста.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Это ошибка для вызова `SetTextAttributes` на текстовый диапазон, прежде чем этот текст добавляется к документу. Вызовите `AddDBCSText`, `AddUnicodeText`, или `AddDeferredText` методы для добавления текста в документ.  
+## <a name="remarks"></a>Заметки  
+ Вызов `SetTextAttributes` в текстовом диапазоне до добавления текста в документ является ошибкой. Вызовите методы `AddDBCSText`, `AddUnicodeText` или `AddDeferredText`, чтобы добавить текст в документ.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: аддуникодетекст](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
+ [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper:: адддеферредтекст](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

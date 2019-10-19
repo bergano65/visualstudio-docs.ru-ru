@@ -1,5 +1,5 @@
 ---
-title: Перечисление ERRORRESUMEACTION | Документация Майкрософт
+title: Перечисление ЕРРОРРЕСУМЕАКТИОН | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d92b4b2e00b25a509d29511008876d781c8a577a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad9b8598cb027c96f6fb6fad6f3d343e6058cfdb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955183"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575865"
 ---
 # <a name="errorresumeaction-enumeration"></a>Перечисление ERRORRESUMEACTION
 Описывает, как будет происходить продолжение выполнения после ошибки времени выполнения.  
@@ -37,13 +37,13 @@ typedef enum tagERRORRESUMEACTION {
 } ERRORRESUMEACTION;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
-|ERRORRESUMEACTION_ReexecuteErrorStatement|Повторно выполняет инструкцию, породившее ошибку.|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Позволяет обработать ошибку модуль языка.|  
-|ERRORRESUMEACTION_SkipErrorStatement|Возобновляет выполнение в коде после оператора, породившее ошибку.|  
+|ERRORRESUMEACTION_ReexecuteErrorStatement|Повторно выполняет инструкцию, вызвавшую ошибку.|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Позволяет обработчику языка выполнить обработку ошибки.|  
+|ERRORRESUMEACTION_SkipErrorStatement|Возобновляет выполнение в коде после оператора, вызвавшего ошибку.|  
   
 ## <a name="see-also"></a>См. также  
  [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

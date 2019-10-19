@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetApplication | Документация Майкрософт
+title: 'IActiveScriptSiteDebug:: My Application | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75560ead40809c77e4768f8318d754a512e5d7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2ad81e3b6b1707f5a23271cf0abe3832266c07f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992637"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570127"
 ---
 # <a name="iactivescriptsitedebuggetapplication"></a>IActiveScriptSiteDebug::GetApplication
-Возвращает объект отладки приложения, связанные с этим сайтом скрипта.  
+Возвращает объект приложения отладки, связанный с этим сайтом скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,19 +37,19 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Параметры  
  `ppda`  
- [out] Указатель на объект отладки приложения, связанный с сайт скрипта.  
+ заполняет Указатель на объект приложения отладки, связанный с сайтом скрипта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Узел непосредственно не поддерживает отладку.|  
+|`E_NOTIMPL`|Узел не поддерживает отладку напрямую.|  
   
-## <a name="remarks"></a>Примечания  
- `GetApplication` Метод предоставляет способ для промежуточных узлов определить объект приложения, к которой принадлежит каждый скрипт. Обработчики скриптов следует попытаться вызвать этот метод, чтобы получить их содержащему их приложению и прибегнуть к `IProcessDebugManager::GetDefaultApplication` Если это не удается.  
+## <a name="remarks"></a>Заметки  
+ Метод `GetApplication` предоставляет смарт-узлу способ определения объекта приложения, к которому относится каждый скрипт. Обработчики сценариев должны попытаться вызвать этот метод, чтобы получить содержащее его приложение, и прибегнуть к `IProcessDebugManager::GetDefaultApplication` в случае сбоя.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)   
+ @No__t_1 [интерфейса IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)  
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString | Документация Майкрософт
+title: 'Идебугстаккфраме:: Жетлангуажестринг | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab0c0ab317754305ca2440748dd680e31750d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83abb038cd8bc018d84cd0c5ddd2a413f8a02248
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934666"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576756"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Возвращает короткое или долго текстовое описание языка.  
+Возвращает короткое или длинное текстовое описание языка.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>Параметры  
  `fLong`  
- [in] Флаг, где `TRUE` возвращает подробное описание и `FALSE` возвращает краткое описание.  
+ окне Флаг, где `TRUE` возвращает длинное описание, а `FALSE` возвращает краткое описание.  
   
  `pbstrLanguage`  
- [out] Описание языка.  
+ заполняет Описание языка.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Как правило если `fLong` является `FALSE`, этот метод предоставляет только имя языка, связанного с этим кадром стека. Когда `fLong` является `TRUE`, этот метод может предоставить описание полной версии продукта.  
+## <a name="remarks"></a>Заметки  
+ Как правило, если `fLong` `FALSE`, этот метод предоставляет только имя языка, связанного с кадром стека. Если `fLong` `TRUE`, этот метод может предоставить полное описание продукта.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

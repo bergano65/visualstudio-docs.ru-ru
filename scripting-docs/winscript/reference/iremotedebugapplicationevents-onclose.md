@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnClose | Документация Майкрософт
+title: 'IRemoteDebugApplicationEvents:: OnClose | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33f394309c50488a08ff6f345e4720d866d5a0ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: add58ebf0caabc8125bad3e30b0f1717c9776e8a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943816"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561527"
 ---
 # <a name="iremotedebugapplicationeventsonclose"></a>IRemoteDebugApplicationEvents::OnClose
 Обрабатывает событие закрытия приложения.  
@@ -39,11 +39,11 @@ HRESULT OnClose();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод обрабатывает событие закрытия приложения.  
   
 ## <a name="see-also"></a>См. также  

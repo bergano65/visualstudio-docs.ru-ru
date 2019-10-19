@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::ReplaceText | Документация Майкрософт
+title: 'Идебугдокументтекстаусор:: Реплацетекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 920b6851f5fea42597be7ec5dcc55350024abea9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: beca5d0ce19a38346ef9b03e39169769c90ea008
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946769"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572036"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
 Заменяет текст в документе.  
@@ -39,22 +39,22 @@ HRESULT ReplaceText(
   
 #### <a name="parameters"></a>Параметры  
  `cCharacterPosition`  
- [in] Запустите расположение диапазона символов для замены.  
+ окне Начальное расположение диапазона символов для замены.  
   
  `cNumToReplace`  
- [in] Число символов для замены.  
+ окне Число символов для замены.  
   
  `pcharText[]`  
- [in] Буфер, содержащий новые символы для замены старого символов.  
+ окне Буфер, содержащий новые символы для замены старых символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод заменяет текст в документе.  
   
 ## <a name="see-also"></a>См. также  

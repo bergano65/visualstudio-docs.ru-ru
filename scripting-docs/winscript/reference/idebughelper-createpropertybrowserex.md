@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowserEx | Документация Майкрософт
+title: 'Идебугхелпер:: Креатепропертибровсерекс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01e63d1588fd1e25f3415f22450ed5145752d711
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d64d9dad54e029dc4c76e8b7e6c7a3f0299b0cb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979205"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576499"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-Возвращает браузер свойств, который служит оболочкой VARIANT и позволяет выполнять пользовательские преобразование значениями VARIANT или типами VARTYPE в строки.  
+Возвращает обозреватель свойств, который упаковывает вариант и позволяет выполнить пользовательское преобразование значений типа VARIANT или типа VARTYPE в строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,31 +41,31 @@ HRESULT CreatePropertyBrowserEx(
   
 #### <a name="parameters"></a>Параметры  
  `pvar`  
- [in] Корневой тип variant для просмотра.  
+ окне Корневой вариант для просмотра.  
   
  `bstrName`  
- [in] Имя корневой.  
+ окне Имя, присваиваемое корневому каталогу.  
   
  `pdat`  
- [in] Поток, выступающей в качестве свойства запроса. Если этот параметр имеет значение NULL, выполняется без упаковки.  
+ окне Поток, в котором должны запрашиваться свойства. Если этот параметр имеет значение NULL, маршалинг не выполняется.  
   
  `pdf`  
- [in] Объект, который предоставляет пользовательский формат для вариантов.  
+ окне Объект, предоставляющий пользовательское форматирование для вариантов.  
   
  `ppdob`  
- [out] Браузер свойств.  
+ заполняет Обозреватель свойств.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает браузер свойств, который служит оболочкой VARIANT и позволяет выполнять пользовательские преобразование значениями VARIANT или типами VARTYPE в строки.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает браузер свойств, который создает оболочку для VARIANT и позволяет выполнить пользовательское преобразование значений типа VARIANT или типа VARTYPE в строки.  
   
 ## <a name="see-also"></a>См. также  
- [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
- [Интерфейс IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
+ [Идебугхелпер:: креатепропертибровсер](../../winscript/reference/idebughelper-createpropertybrowser.md)    
+ @No__t_1 [интерфейса идебугхелпер](../../winscript/reference/idebughelper-interface.md)  
  [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

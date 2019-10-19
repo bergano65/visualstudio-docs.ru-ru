@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetName | Документация Майкрософт
+title: 'IScriptEntry:: Name | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c99cda48a20efb41b2535645ccdb50be8bb6d6bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787774"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575440"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-Для записи, представляющие один объект (например, функцию) возвращает имя объекта.  
+Для записей, представляющих один объект (например, функцию), возвращает имя объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,19 +37,19 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Параметры  
  `pbstr`  
- [out] Имя объекта, представленного `IScriptEntry` блок скрипта. Если запись не представляет один объект, возвращается значение NULL.  
+ заполняет Имя объекта, представленного блоком сценария `IScriptEntry`. Если запись не представляет один объект, возвращается значение NULL.  
   
- Дочерние записи представлять объект одной функции.  
+ Дочерние записи представляют один объект функции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+ @No__t_1 [интерфейса IScriptEntry](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

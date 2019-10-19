@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetLongName | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Сетлонгнаме | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10542b5e792f01c50d57bc3a7481d6b8c01090d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 312e60b7024cc2b93e0087c86fe78738c74df8c1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949010"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570038"
 ---
 # <a name="idebugdocumenthelpersetlongname"></a>IDebugDocumentHelper::SetLongName
-Задает длинное имя для документа.  
+Задает длинное имя документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT SetLongName(
   
 #### <a name="parameters"></a>Параметры  
  `pszLongName`  
- [in] Завершающаяся нулем строка, содержащая длинное имя документа.  
+ окне Строка, заканчивающаяся нулем и содержащая длинное имя документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод задает новый длинное имя для документа.  
+## <a name="remarks"></a>Заметки  
+ Этот метод задает новое длинное имя для документа.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

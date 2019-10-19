@@ -14,24 +14,24 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4acfb93808a588ed7efb4e256627f816e26a0137
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007377"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573783"
 ---
 # <a name="label-not-found"></a>Метка не найдена
-Внесенные ссылку на метку, которая не существует. Метки можно использовать для пометки блоки кода, но в пределах указанной области, должно быть уникальным.  
+Была сделана ссылка на несуществующую метку. Метки можно использовать для пометки блоков кода, но в пределах заданной области должны быть уникальными.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Проверьте, чтобы убедиться в правильности написания имя метки.  
+- Убедитесь, что имя метки не написано неправильно.  
   
-- Убедитесь, все ссылки указывают на метки, которые были определены в текущей области (включая прямого определения).  
+- Убедитесь, что все ссылки на метки сделаны в метки, определенные в текущей области (включая перекрестные определения).  
   
 ## <a name="see-also"></a>См. также  
- [Оператор с меткой](../../javascript/reference/labeled-statement-javascript.md)   
- [Оператор switch](../../javascript/reference/switch-statement-javascript.md)   
+ @No__t_1 [оператора с метками](../../javascript/reference/labeled-statement-javascript.md)  
+ [оператор switch](../../javascript/reference/switch-statement-javascript.md)    
  [Оператор break](../../javascript/reference/break-statement-javascript.md)   
  [Оператор continue](../../javascript/reference/continue-statement-javascript.md)

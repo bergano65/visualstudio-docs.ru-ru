@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::AllocateVirtualMemory | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: Аллокатевиртуалмемори | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04bf21882ec39054c74f060eaa2c6f65ac0b4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ad8a3eb277823271fbfb4c2e10364b8602775c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583071"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577642"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>Метод IJsDebugDataTarget::AllocateVirtualMemory
-Резервирует и(или) фиксирует область памяти в пространстве виртуальных адресов целевого процесса.  
+Резервирует или фиксирует область памяти в виртуальном адресном пространстве целевого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,27 +39,27 @@ HRESULT AllocateVirtualMemory(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Адрес в целевом процессе, где память следует зафиксировать или зарезервировано. Это значение обычно равно нулю, в котором этом система выбирает адрес.  
+ окне Адрес в целевом процессе, в котором память должна быть зафиксирована или зарезервирована. Это значение обычно равно нулю. в этом случае система выбирает адрес.  
   
  `size`  
- [in] Размер области памяти, в байтах. Система автоматически округлит до следующей границы страницы.  
+ окне Размер выделяемой области памяти в байтах. Система автоматически округляет до границы следующей страницы.  
   
  `allocationType`  
- [in] Указывает тип выделения для выполнения. Обычно это mem_commit &#124; MEM_RESERVE (0x3000) резервирует и фиксирует выделение в один шаг.  
+ окне Указывает тип выполняемого выделения. Обычно это MEM_COMMIT &#124; MEM_RESERVE (0x3000), который резервирует и фиксирует выделение за один шаг.  
   
  `pageProtection`  
- [in] Защита памяти для области страниц, которые должны быть выделены. Если страницы фиксируются, можно указать один из констант защиты памяти (например, PAGE_READWRITE, PAGE_EXECUTE).  
+ окне Защита памяти для области выделяемых страниц. Если страницы зафиксированы, можно указать любую константу для защиты памяти (например, PAGE_READWRITE, PAGE_EXECUTE).  
   
  `pAllocatedAddress`  
- [out] Базовый адрес выбранной области страниц.  
+ заполняет Базовый адрес выделенного региона страниц.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Функция инициализирует память в ноль, если MEM_RESET не используется. Дополнительные сведения см. в API VirtualAlloc Win32.  
+## <a name="remarks"></a>Заметки  
+ Функция инициализирует выделенную память до нуля, если не используется MEM_RESET. Дополнительные сведения см. в разделе API-интерфейс VirtualAlloc Win32.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

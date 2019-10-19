@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetFileName | Документация Майкрософт
+title: 'Идебугдокументтекстекстерналаусор:: имя_файла | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb988751b8a0c0e6450e1fa216a474df2e8c59d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c07752d357a261fbc4800c3217a63d3de9489d55
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978918"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575976"
 ---
 # <a name="idebugdocumenttextexternalauthorgetfilename"></a>IDebugDocumentTextExternalAuthor::GetFileName
 Возвращает имя документа без сведений о пути.  
@@ -37,17 +37,17 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Параметры  
  `pbstrShortName`  
- [out] Строка, содержащая короткое имя документа.  
+ заполняет Строка, содержащая краткое имя документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает имя документа без сведений о пути. Обычно короткое имя используется в диалоговых окнах.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает имя документа без сведений о пути. Короткое имя обычно используется в диалоговых окнах.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Сетдебугдокуменсост | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b32d14f3a7d65bee7bdb587a35dfe05bb06f5e1e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948997"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574648"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-Наборы `IDebugDocumentHost` для этого документа.  
+Задает `IDebugDocumentHost` для этого документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>Параметры  
  `pddh`  
- [in] Узел документа отладки.  
+ окне Узел документа отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- `IDebugDocumentHost` Интерфейс используется для промежуточных узлов синтаксических конструкций, получение отложенного текст и возврат управления объекты для только что созданного документов контекстов.  
+## <a name="remarks"></a>Заметки  
+ Интерфейс `IDebugDocumentHost` используется для выделения цветом синтаксиса интеллектуального узла, получения отложенного текста и возврата управляющих объектов для вновь созданных контекстов документов.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Интерфейс IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

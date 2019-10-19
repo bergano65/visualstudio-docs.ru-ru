@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetShortName | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Сетшортнаме | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84cab7872272b08e12c532e6c07b4afb741a53c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40716b65c863106b6964a65efcf47dcdcdd6bfc5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963550"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569949"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
-Задает короткое имя для документа.  
+Задает короткое имя документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT SetShortName(
   
 #### <a name="parameters"></a>Параметры  
  `pszShortName`  
- [in] Завершающаяся нулем строка, содержащая короткое имя документа.  
+ окне Строка, заканчивающаяся нулем и содержащая краткое имя документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод задает короткое имя для документа.  
+## <a name="remarks"></a>Заметки  
+ Этот метод задает новое короткое имя документа.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

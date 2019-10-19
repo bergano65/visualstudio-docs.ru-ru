@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition | Документация Майкрософт
+title: 'IActiveScriptSiteDebug32:: Жетдокументконтекстфромпоситион | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992511"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574850"
 ---
-# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-Используемый модуль языка делегировать `IDebugCodeContext::GetSourceContext`.  
+# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32:: Жетдокументконтекстфромпоситион
+Используется обработчиком языка для делегирования `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,26 +33,26 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Параметры  
  `dwSourceContext`  
- [in] Исходное содержимое, предоставляемое `ParseScriptText` или `AddScriptlet`.  
+ окне Исходное содержимое, предоставленное для `ParseScriptText` или `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Символ, смещение относительно начала блока скрипта или скриптлета.  
+ окне Смещение символа относительно начала блока скрипта или скриптлет.  
   
  `uNumChars`  
- [in] Число символов в данном контексте.  
+ окне Число символов в этом контексте.  
   
  `ppsc`  
- [out] Контекст документа, соответствующий диапазону этого позицию символа.  
+ заполняет Контекст документа, соответствующий этому диапазону символьной позиции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Модулям языка этот метод позволяет делегировать `IDebugCodeContext::GetSourceContext`.  
+## <a name="remarks"></a>Заметки  
+ Обработчики языка используют этот метод для делегирования `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)

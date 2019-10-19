@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf26a04f5db5ed3e3f2710a5421dece6cf6cc0c7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8f48b2d60feb9743529de8ed80b80365ffb815d1
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450347"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72534597"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Базовые правила определения правильности" для управляемого кода
 
@@ -23,23 +23,23 @@ ms.locfileid: "72450347"
 
 |Правило|Описание|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявляйте обработчики событий|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Пометьте сборки с помощью AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Методы интерфейса должны быть доступны для вызова дочерними типами|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Переместите методы P/Invoke в класс NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Не скрывайте методы базовых классов|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Правильно реализуйте IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Не вызывайте исключения в непредвиденных местах|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Избегайте повторяющихся акселераторов|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Для методов P/Invoke должны существовать точки входа|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Методы P/Invoke не должны быть видимыми|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Типы с автомакетом не должны быть видимыми для COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Вызывайте GetLastError сразу после P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Методы регистрации COM должны быть согласованными|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Правильно объявляйте методы P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
+|[CA1009](../code-quality/ca1009.md)|Правильно объявляйте обработчики событий|
+|[CA1016](../code-quality/ca1016.md)|Пометьте сборки с помощью AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|Методы интерфейса должны быть доступны для вызова дочерними типами|
+|[CA1049](../code-quality/ca1049.md)|Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми|
+|[CA1060](../code-quality/ca1060.md)|Переместите методы P/Invoke в класс NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Не скрывайте методы базовых классов|
+|[CA1063](../code-quality/ca1063.md)|Правильно реализуйте IDisposable|
+|[CA1065](../code-quality/ca1065.md)|Не вызывайте исключения в непредвиденных местах|
+|[CA1301](../code-quality/ca1301.md)|Избегайте повторяющихся акселераторов|
+|[CA1400](../code-quality/ca1400.md)|Для методов P/Invoke должны существовать точки входа|
+|[CA1401](../code-quality/ca1401.md)|Методы P/Invoke не должны быть видимыми|
+|[CA1403](../code-quality/ca1403.md)|Типы с автомакетом не должны быть видимыми для COM|
+|[CA1404](../code-quality/ca1404.md)|Вызывайте GetLastError сразу после P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
+|[CA1410](../code-quality/ca1410.md)|Методы регистрации COM должны быть согласованными|
+|[CA1415](../code-quality/ca1415.md)|Правильно объявляйте методы P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
 |[CA1900](../code-quality/ca1900.md)|Поля типов значений должны быть переносимыми|
 |[CA1901](../code-quality/ca1901.md)|Объявления P/Invoke должны быть переносимыми|
@@ -85,10 +85,10 @@ ms.locfileid: "72450347"
 |[CA2240](../code-quality/ca2240.md)|Правильно реализуйте ISerializable|
 |[CA2241](../code-quality/ca2241.md)|Задайте правильные аргументы для методов форматирования|
 |[CA2242](../code-quality/ca2242.md)|Правильно выполняйте проверку NaN|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Перечисляемые типы должны иметь нулевое значение|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Перегружайте оператор равенства при перегрузке операторов сложения и вычитания|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Не передавайте литералы в качестве локализованных параметров|
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Нормализуйте строки в верхний регистр|
+|[CA1008](../code-quality/ca1008.md)|Перечисляемые типы должны иметь нулевое значение|
+|[CA1013](../code-quality/ca1013.md)|Перегружайте оператор равенства при перегрузке операторов сложения и вычитания|
+|[CA1303](../code-quality/ca1303.md)|Не передавайте литералы в качестве локализованных параметров|
+|[CA1308](../code-quality/ca1308.md)|Нормализуйте строки в верхний регистр|
 |[CA1806](../code-quality/ca1806.md)|Не игнорируйте результаты метода|
 |[CA1816](../code-quality/ca1816.md)|Вызов GC.SuppressFinalize должен осуществляться правильно|
 |[CA1819](../code-quality/ca1819.md)|Свойства не должны возвращать массивы|

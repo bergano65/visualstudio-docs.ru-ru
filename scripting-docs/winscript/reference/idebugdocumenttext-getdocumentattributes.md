@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetDocumentAttributes | Документация Майкрософт
+title: 'Идебугдокументтекст:: Жетдокументаттрибутес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8f545d9a8208440299d0dccb16145c6ef0c8731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3a97c42037e5f7439692e3c3185b4194e63dc2a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008665"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572152"
 ---
 # <a name="idebugdocumenttextgetdocumentattributes"></a>IDebugDocumentText::GetDocumentAttributes
 Возвращает атрибуты документа.  
@@ -37,18 +37,18 @@ HRESULT GetDocumentAttributes(
   
 #### <a name="parameters"></a>Параметры  
  `ptextdocattr`  
- [out] Атрибуты текста документа.  
+ заполняет Текстовые атрибуты документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод возвращает атрибуты документа.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   
+ @No__t_1 [интерфейса идебугдокументтекст](../../winscript/reference/idebugdocumenttext-interface.md)  
  [Константы TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

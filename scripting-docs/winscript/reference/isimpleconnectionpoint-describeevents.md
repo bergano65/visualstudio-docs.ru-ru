@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents | Документация Майкрософт
+title: Исимплеконнектионпоинт::D Ескрибивентс | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b5824f945ad25f177fc169b58157377bf53bcce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5000689d588fe3f63ec5408893187bba8d13d63
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786423"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571824"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
 Возвращает идентификатор DISPID и имя для каждого события в указанном диапазоне событий.  
@@ -41,30 +41,30 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>Параметры  
  `iEvent`  
- [in] Индекс первого события для извлечения.  
+ окне Индекс первого извлекаемого события.  
   
  `cEvents`  
- [in] Количество событий для получения.  
+ окне Число извлекаемых событий.  
   
  `prgid`  
- [out] Массив значений DISPID событий.  
+ заполняет Массив значений DISPID события.  
   
  `prgbstr`  
- [out] Массив имен событий.  
+ заполняет Массив имен событий.  
   
  `pcEventsFetched`  
- [out] Фактическое число извлечь события.  
+ заполняет Фактическое число выбранных событий.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`S_FALSE`|Были запрошены дополнительные события, не были доступны. Недоступны события представляются с DISPID_NULL и null BSTR.|  
-|`E_INVALIDARG`|Элементы не удалось получить.|  
+|`S_FALSE`|Запрошено больше событий, чем было доступно. Недоступные события представлены с помощью DISPID_NULL и NULL BSTR.|  
+|`E_INVALIDARG`|Не удалось извлечь элементы.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод возвращает идентификатор DISPID и имя для каждого события в указанном диапазоне событий.  
   
 ## <a name="see-also"></a>См. также  

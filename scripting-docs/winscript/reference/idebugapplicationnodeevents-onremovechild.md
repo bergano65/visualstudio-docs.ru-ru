@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Документация Майкрософт
+title: 'Идебугаппликатионнодивентс:: Онремовечилд | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e59624e5ec6659e0fea3d55fdaddf7949eac18f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ff7b28f14c26029d64197ba919cc97c90a856c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822167"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574667"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-Обрабатывает событие, когда дочерний узел удаляется из объект узла отладки приложения.  
+Обрабатывает событие при удалении дочернего узла из объекта узла приложения отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,21 +37,21 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Параметры  
  `prddpChild`  
- [in] Дочерний узел приложения, который был удален.  
+ окне Узел дочернего приложения, который был удален.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод обрабатывает событие, когда дочерний узел удаляется из объект узла отладки приложения.  
+## <a name="remarks"></a>Заметки  
+ Этот метод обрабатывает событие при удалении дочернего узла из объекта узла приложения отладки.  
   
- Объекты, реализующие `IDebugApplicationNode` интерфейс вызова этого события.  
+ Разработчики `IDebugApplicationNode`ного интерфейса вызывают это событие.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
+ @No__t_1 [интерфейса идебугаппликатионнодивентс](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [Идебугаппликатионнодивентс:: онаддчилд](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)    
  [Интерфейс IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

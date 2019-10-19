@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition | Документация Майкрософт
+title: 'Иактивескриптеррор:: Жетсаурцепоситион | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4446235a9584bc45fad84b6f92ecc02592e554f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76ed307f988a3e5bf77ff978c466eda6e5dfee18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009628"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576883"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-Извлекает расположение в исходном коде, где произошла ошибка во время выполнения сценария обработчик сценариев.  
+Извлекает расположение в исходном коде, в котором произошла ошибка во время выполнения скриптом обработчика скриптов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,16 +39,16 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>Параметры  
  `pdwSourceContext`  
- [out] Адрес переменной, которая получает файл cookie, который идентифицирует контекст. Интерпретация этого параметра зависит от ведущего приложения.  
+ заполняет Адрес переменной, которая получает файл cookie, определяющий контекст. Интерпретация этого параметра зависит от ведущего приложения.  
   
  `pulLineNumber`  
- [out] Адрес переменной, которая получает номер строки в исходном файле, где произошла ошибка.  
+ заполняет Адрес переменной, которая получает номер строки в исходном файле, где произошла ошибка.  
   
  `pichCharPosition`  
- [out] Адрес переменной, которая получает положение символа в строке, в котором произошла ошибка.  
+ заполняет Адрес переменной, которая получает позицию символа в строке, в которой произошла ошибка.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_FAIL` Если расположение не был получен.  
+ Возвращает `S_OK` в случае успеха или `E_FAIL`, если расположение не было получено.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

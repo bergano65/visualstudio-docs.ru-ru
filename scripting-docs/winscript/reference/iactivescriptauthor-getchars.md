@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Документация Майкрософт
+title: 'Иактивескриптаусор:: GetChars | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ce2b46d65c2ce92111bc4b6f44f66ce9dc4ce5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935377"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576254"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-Возвращает набор символов завершения для запрошенного завершения контекста.  
+Возвращает набор символов завершения для запрошенного контекста завершения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,19 +38,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Параметры  
  `fRequestedList`  
- [in] Контекст, запрошенный завершения.  
+ окне Запрошенный контекст завершения.  
   
-|Константа|Значение|Описание|  
+|Константа|значения|Описание|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Запрашивает перечисления левой стороны.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Запрашивает контекст элемента завершения.|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Запрашивает перечисление слева.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Запрашивает контекст завершения элемента.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Запрашивает список параметров.|  
-|SCRIPT_CMPL_COMMIT|0x0004|Запросы на завершение списка параметров.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Запрашивает завершение списка параметров.|  
   
  `pbstrChars`  
- [out] Символы, которые соответствуют запрошенного завершения контекста.  
+ заполняет Символы, соответствующие запрошенному контексту завершения.  
   
-|`fRequestedList` Параметр|Возвращаются символы|  
+|`fRequestedList`, параметр|Возвращенные символы|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
@@ -60,11 +60,11 @@ HRESULT GetChars(
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

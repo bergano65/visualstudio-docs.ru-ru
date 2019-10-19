@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IJsDebugStackWalker | Документация Майкрософт
+title: Интерфейс Ижсдебугстакквалкер | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06af2c509339d9499f66e1f267c54c69951e225
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b06b8c1f9282c42599c798030440c30450ef6dd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977816"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574017"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>Интерфейс IJsDebugStackWalker
-Представляет средство просмотра стека для указанного потока.  
+Представляет обход стека для указанного потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -27,19 +27,19 @@ ms.locfileid: "62977816"
 IJsDebugStackWalker : public IUnknown;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
-|[Метод IJsDebugStackWalker::GetNext](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Получает следующий кадр.|  
+|[Метод IJsDebugStackWalker::GetNext](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Возвращает следующий кадр.|  
   
-## <a name="remarks"></a>Примечания  
- Средства обхода стека может создаваться только в тех случаях, пока целевой объект остановлен, а также являются недопустимыми после продолжается в целевом процессе.  
+## <a name="remarks"></a>Заметки  
+ Пошаговые руководства стека могут быть созданы только в том случае, если целевой объект остановлен, и являются недопустимыми после того, как целевой процесс будет снова продолжен.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

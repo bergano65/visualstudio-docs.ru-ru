@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Attach | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Attach | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f4fbd1686d27e594b748ca97c82c645de1b93de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3400a5bf6cd3e4a9726fdf4b2f20bbf43b9fc989
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783139"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577035"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-Добавляет в этом документе в дереве документа.  
+Добавляет этот документ в дерево документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Параметры  
  `pddhParent`  
- [in] Дерево документов, куда будет добавлен в этом документе. Может иметь значение NULL.  
+ окне Дерево документов, в которое будет добавлен этот документ. Может иметь значение NULL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод добавляет в этом документе к документу дерева, с помощью `pddhParent` как родительский. Если `pddhParent` является `NULL`, этот документ будет документ верхнего уровня.  
+## <a name="remarks"></a>Заметки  
+ Этот метод добавляет этот документ в дерево документа, используя `pddhParent` в качестве родителя. Если `pddhParent` `NULL`, этот документ будет документом верхнего уровня.  
   
 ## <a name="see-also"></a>См. также  
- [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
+ [IDebugDocumentHelper::D етач](../../winscript/reference/idebugdocumenthelper-detach.md)    
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

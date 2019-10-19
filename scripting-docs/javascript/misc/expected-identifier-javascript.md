@@ -1,5 +1,5 @@
 ---
-title: Ожидается идентификатор (JavaScript) | Документация Майкрософт
+title: Ожидаемый идентификатор (JavaScript) | Документация Майкрософт
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,27 +14,27 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8555ddde52602f5761be40cfcc752abd12697deb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934982"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577292"
 ---
 # <a name="expected-identifier-javascript"></a>Ожидался идентификатор (JavaScript)
-Вы использовали отличный от идентификатора в контексте, где он требуется. Идентификатор может быть:  
+Вы использовали нечто, отличное от идентификатора, в контексте, где это требовалось. Идентификатор может быть следующим:  
   
-- переменной,  
+- переменная,  
   
 - свойство,  
   
-- Массив,  
+- массив,  
   
-- или имени функции.  
+- или имя функции.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Измените выражение, чтобы идентификатор отображается слева от знака равенства.  
+- Измените выражение, чтобы идентификатор появился слева от знака равенства.  
   
 ## <a name="see-also"></a>См. также  
  [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)

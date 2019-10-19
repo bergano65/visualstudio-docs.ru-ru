@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint | Документация Майкрософт
+title: 'IRemoteDebugApplicationEvents:: Онлеавебреакпоинт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f10ffdd19abd2aada2a98d6d0ae523686abb2e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f4be875f5b420ff96e22ee06cdbeb2929466381
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935028"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571952"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
-Обрабатывает событие для выхода из точки останова.  
+Обрабатывает событие, чтобы выйти из точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT OnLeaveBreakPoint(
   
 #### <a name="parameters"></a>Параметры  
  `prdat`  
- [in] Поток приложения, который слева точки останова.  
+ окне Поток приложения, который оставил точку останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод обрабатывает событие для выхода из точки останова.  
+## <a name="remarks"></a>Заметки  
+ Этот метод обрабатывает событие для того, чтобы выйти из точки останова.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

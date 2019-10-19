@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Документация Майкрософт
+title: 'Идебугстаккфрамеснифферекс:: Енумстаккфрамесекс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8969c279e4eb2c2966e297317a25a60f12be68a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a4062e7c0a9b3a82578daffa2ab7ef7e9ba614d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005723"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576708"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-Возвращает перечислитель для кадров стека текущего потока.  
+Возвращает перечислитель кадров стека для текущего потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Параметры  
  `dwSpMin`  
- [in] Нижняя граница адрес для перечисления кадров стека.  
+ окне Нижнее ограничение адреса для перечисления кадров стека.  
   
  `ppedsf`  
- [out] Перечислитель для кадров стека текущего потока.  
+ заполняет Перечислитель кадров стека для текущего потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Возвращает перечислитель кадра стека кадры, начиная с верхней части стека, с наиболее недавно отправленных кадром. Перечислитель содержит только кадры стека с адресами больше или равно `dwSpMin`.  
+## <a name="remarks"></a>Заметки  
+ Перечислитель кадров стека возвращает кадры, начиная с верхней части стека, с последним отправленным кадром. Перечислитель содержит только кадры стека с адресами, которые больше или равны `dwSpMin`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrameSnifferEx](../../winscript/reference/idebugstackframesnifferex-interface.md)

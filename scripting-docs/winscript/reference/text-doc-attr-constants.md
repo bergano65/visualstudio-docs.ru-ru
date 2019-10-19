@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d22b178d85d304f19e52727ef2c67d77f16da1b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3604c06b6cb36cc4ff7ef6c76348b5ece53bed61
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840087"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572985"
 ---
-# <a name="textdocattr-constants"></a>Константы TEXT_DOC_ATTR
+# <a name="text_doc_attr-constants"></a>Константы TEXT_DOC_ATTR
 Описывают атрибуты документа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,12 +35,12 @@ typedef DWORD TEXT_DOC_ATTR;
   
 ## <a name="constants"></a>Константы  
   
-|Константа|Значение|Описание|  
+|Константа|значения|Описание|  
 |--------------|-----------|-----------------|  
 |TEXT_DOC_ATTR_READONLY|0x00000001|Документ доступен только для чтения.|  
-|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Документ является первичным файлом этого дерева документа.|  
-|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Документ является работника.|  
-|TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Документ представляет собой файл сценария.|  
+|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Документ является первичным файлом этого дерева документов.|  
+|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Документ является рабочим.|  
+|TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Документ является файлом скрипта.|  
   
 ## <a name="see-also"></a>См. также  
  [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::EnableModeless | Документация Майкрософт
+title: 'Иактивескриптситевиндов:: Енаблемоделесс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f15135273b98a65903a5d03de87c541fc032cce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 756bda6209b6209ff14f6d67fef18faaed0b5618
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992930"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574128"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
-В результате узел для включения или отключения основного окна, а также любой немодальных диалоговых окон.  
+Заставляет узел включать или отключать его главное окно, а также любые немодальные диалоговые окна.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT EnableModeless(
   
 #### <a name="parameters"></a>Параметры  
  `fEnable`  
- [in] Флаг, который, если `TRUE`, включает главное окно и немодальные диалоговые окна или если `FALSE`, отключает их.  
+ окне Флаг, если `TRUE`, включает главное окно и немодальные диалоговые окна или, если `FALSE`, отключает их.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_FAIL` Если произошла ошибка.  
+ Возвращает `S_OK` в случае успеха или `E_FAIL`, если произошла ошибка.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод идентичен методу `IOleInPlaceFrame::EnableModeless` метод.  
+## <a name="remarks"></a>Заметки  
+ Этот метод идентичен методу `IOleInPlaceFrame::EnableModeless`.  
   
  Вызовы этого метода могут быть вложенными.  
   

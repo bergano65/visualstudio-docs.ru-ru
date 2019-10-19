@@ -13,33 +13,33 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0dc50a6aa5cf032827feac6b483b141b79f60e77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 868322358908a32c8f14b56846cf3237f8531b4c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787728"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575395"
 ---
 # <a name="iscriptentry-interface"></a>Интерфейс IScriptEntry
-Объект, реализующий `IScriptEntry` интерфейс представляет блок сценария или объекта функции.  
+Объект, реализующий интерфейс `IScriptEntry`, представляет либо блок скрипта, либо объект функции.  
   
- Помимо методов, наследуемых от `IScriptNode`, `IScriptEntry` интерфейс предоставляет следующие методы.  
+ В дополнение к методам, унаследованным от `IScriptNode`, интерфейс `IScriptEntry` предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)|Возвращает текст, соответствующий текст `IScriptEntry` блок скрипта, блока функции или сценария.|  
-|[IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)|Возвращает имя элемента, который идентифицирует `IScriptEntry` объекта.|  
-|[IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)|Для записи, представляющие один объект (например, функцию) возвращает имя объекта.|  
-|[IScriptEntry::GetRange](../../winscript/reference/iscriptentry-getrange.md)|Возвращает начальное положение и длину запись.|  
-|[IScriptEntry::GetSignature](../../winscript/reference/iscriptentry-getsignature.md)|Возвращает сведения о типе для `IScriptEntry` объект функции.|  
-|[IScriptEntry::GetText](../../winscript/reference/iscriptentry-gettext.md)|Возвращает текст, который соответствует `IScriptEntry` блок сценария, или исходный код, содержащийся в `IScriptScriptlet` обработчик событий.|  
-|[IScriptEntry::SetBody](../../winscript/reference/iscriptentry-setbody.md)|Задает текст, который находится в теле `IScriptEntry` блок скрипта или `IScriptScriptlet` скриптлета.|  
-|[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)|Задает имя элемента, который идентифицирует `IScriptEntry` объекта.|  
-|[IScriptEntry::SetName](../../winscript/reference/iscriptentry-setname.md)|Для записи, представляющие один объект (например, функцию) задает имя объекта.|  
-|[IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md)|Задает сведения о типе для `IScriptEntry` объект функции.|  
-|[IScriptEntry::SetText](../../winscript/reference/iscriptentry-settext.md)|Задает текст, который соответствует `IScriptEntry` блок сценария, или исходный код, содержащийся в `IScriptScriptlet` обработчик событий.|  
+|[IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)|Возвращает текст, соответствующий телу блока `IScriptEntry` скрипта, блока Function или скриптлет.|  
+|[IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)|Возвращает имя элемента, идентифицирующего объект `IScriptEntry`.|  
+|[IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)|Для записей, представляющих один объект (например, функцию), возвращает имя объекта.|  
+|[IScriptEntry::GetRange](../../winscript/reference/iscriptentry-getrange.md)|Возвращает начальную и длину записи.|  
+|[IScriptEntry::GetSignature](../../winscript/reference/iscriptentry-getsignature.md)|Возвращает сведения о типе для объекта `IScriptEntry` функции.|  
+|[IScriptEntry::GetText](../../winscript/reference/iscriptentry-gettext.md)|Возвращает текст, соответствующий блоку сценария `IScriptEntry` или исходному коду, содержащемуся в обработчике событий `IScriptScriptlet`.|  
+|[IScriptEntry::SetBody](../../winscript/reference/iscriptentry-setbody.md)|Задает текст, который находится в теле блока `IScriptEntry` скрипта или `IScriptScriptlet` скриптлет.|  
+|[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)|Задает имя элемента, идентифицирующего объект `IScriptEntry`.|  
+|[IScriptEntry::SetName](../../winscript/reference/iscriptentry-setname.md)|Для записей, представляющих один объект (например, функцию), задает имя объекта.|  
+|[IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md)|Задает сведения о типе для объекта `IScriptEntry` функции.|  
+|[IScriptEntry::SetText](../../winscript/reference/iscriptentry-settext.md)|Задает текст, соответствующий блоку `IScriptEntry` сценария, или исходный код, содержащийся в обработчике событий `IScriptScriptlet`.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы для создания активных скриптов](../../winscript/reference/active-script-authoring-interfaces.md)

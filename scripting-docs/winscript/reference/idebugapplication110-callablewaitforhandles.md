@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Документация Майкрософт
+title: 'IDebugApplication110:: Каллаблеваитфорхандлес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22af0e9dcf548bbd2f0f8c179b4889d5294eb284
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446392"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575076"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Ожиданий для любого из указанных маркеров, который должен получить сигнал при этом межпоточные вызовы публикуемый этим потоком. Этот метод должен вызываться из потока отладчика.  
+Ожидает сигнала любого из указанных дескрипторов, чтобы обеспечить передачу межпотоковых вызовов в этот поток. Этот метод должен вызываться из потока отладчика.  
   
 > [!IMPORTANT]
-> [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,13 +34,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Параметры  
  `handleCount`  
- Число дескрипторов ожидания.  
+ Количество дескрипторов, которые нужно ожидать.  
   
  `pHandles`  
- Набор дескрипторов ожидания.  
+ Набор дескрипторов для ожидания.  
   
  `pIndex`  
- Если значение HRESULT равно S_OK, индекс в `pHandles` для дескриптора, который получил сигнал.  
+ Если значение HRESULT равно S_OK, индекс в `pHandles` для дескриптора, который был сигнальным.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)

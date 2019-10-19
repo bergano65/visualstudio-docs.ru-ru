@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Reset | Документация Майкрософт
+title: 'Иенумдебугпропертинфо:: Reset | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bdbe31866c7ec36b28f157e3c9d104f6512cbbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6f7f87df47aa4aad737c052496e8d26472227a2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963407"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574166"
 ---
 # <a name="ienumdebugpropertyinforeset"></a>IEnumDebugPropertyInfo::Reset
-Сбрасывает последовательность перечислений в начало.  
+Сбрасывает последовательность перечисления до начала.  
   
 ## <a name="syntax"></a>Синтаксис  
   

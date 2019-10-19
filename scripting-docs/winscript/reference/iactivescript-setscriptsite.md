@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Документация Майкрософт
+title: 'IActiveScript:: Сетскриптсите | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 063dcc7b580334bff9780e9c209b621ef7e25656
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935558"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575332"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Информирует обработчик сценариев из [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) сайта интерфейс, предоставленный средой размещения. Вызовите этот метод перед любыми другими [IActiveScript](../../winscript/reference/iactivescript.md) используется методы интерфейса.  
+Информирует обработчик скриптов о сайте интерфейса [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) , предоставленном узлом. Вызовите этот метод перед использованием любых других методов интерфейса [IActiveScript](../../winscript/reference/iactivescript.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Параметры  
  `pScriptSite`  
- [in] Адрес сайта узла предоставленный скрипт, связываемое с этим экземпляром обработчика скриптов. Сайт должны назначаться уникально для данного сценария экземпляра ядра; его нельзя использовать совместно с другими обработчиков сценариев.  
+ окне Адрес сайта скрипта, предоставляемого узлом, который должен быть связан с этим экземпляром обработчика скриптов. Сайт должен быть однозначно назначен этому экземпляру обработчика сценариев; Он не может использоваться совместно с другими обработчиками сценариев.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Возвращаемое значение|Значение|  
+|Возвращаемое значение|Смысл|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
-|`E_FAIL`|Произошла неизвестная ошибка; Обработчик скриптов не удалось завершить инициализацию на сайте.|  
-|`E_INVALIDARG`|Аргумент был недопустимым.|  
+|`E_FAIL`|Произошла неопределенная ошибка; обработчику скриптов не удалось завершить инициализацию сайта.|  
+|`E_INVALIDARG`|Недопустимый аргумент.|  
 |`E_POINTER`|Указан недопустимый указатель.|  
-|`E_UNEXPECTED`|Вызов не ожидался (например, сайт уже установлен).|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, сайт уже задан).|  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

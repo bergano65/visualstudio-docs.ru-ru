@@ -1,5 +1,5 @@
 ---
-title: Ожидалось "@end" | Документация Майкрософт
+title: Требуется "@end" | Документация Майкрософт
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: c2608995-944e-4d35-8b7e-1cfe264d2458
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6179d628c8da58cffa76020f04e3fd1df3396b5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46748d7f516b21fc529e99a3e047040e82036650
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935306"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573442"
 ---
-# <a name="expected-end"></a>Ожидалось "\@окончания"
-Предпринята попытка создать блока условно скомпилированного кода, но не содержал <strong>@end</strong> инструкции в конце. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] инструкции можно условно компилировать путем заключения в <strong>@if/ @end</strong> блока.  
+# <a name="expected-end"></a>Требуется "\@end"
+Предпринята попытка создать условный скомпилированный блок кода, но в конце не включалась инструкция <strong>@end</strong> . [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] операторы можно компилировать условно, заключив их в блок <strong>@if/ @end</strong> .  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Добавить соответствующие <strong>@end</strong> инструкции.  
+- Добавьте соответствующую инструкцию <strong>@end</strong> .  
   
 ## <a name="see-also"></a>См. также  
- [Условная компиляция](../../javascript/advanced/conditional-compilation-javascript.md)   
+ @No__t_1 [условной компиляции](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)

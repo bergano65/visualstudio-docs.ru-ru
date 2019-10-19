@@ -1,5 +1,5 @@
 ---
-title: Iactivescripterror — | Документация Майкрософт
+title: Иактивескриптеррор | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4d3fe5ff90fc0d116814771308fa599052dba9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954997"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576900"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Объект, реализующий этот интерфейс передается [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) метод всякий раз, когда обработчик скриптов сталкивается с необработанной ошибкой. Затем узел вызывает методы этого объекта для получения сведений о возникшей ошибке.  
+Объект, реализующий этот интерфейс, передается методу [IActiveScriptSite:: онскриптеррор](../../winscript/reference/iactivescriptsite-onscripterror.md) всякий раз, когда обработчик скриптов встречает необработанную ошибку. Затем узел вызывает методы для этого объекта, чтобы получить сведения о произошедшей ошибке.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
@@ -29,7 +29,7 @@ ms.locfileid: "62954997"
 |------------|-----------------|  
 |[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Извлекает сведения об ошибке.|  
 |[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Извлекает расположение в исходном коде, где произошла ошибка.|  
-|[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Извлекает строки в исходном файле, где произошла ошибка.|  
+|[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Извлекает строку в исходном файле, в которой произошла ошибка.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы активных скриптов](../../winscript/reference/active-script-interfaces.md)

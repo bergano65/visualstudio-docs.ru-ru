@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Документация Майкрософт
+title: 'IActiveScriptProfilerControl:: Стартпрофилинг | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 780886e4ca21abbe11580992244cee0d6a28b134
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993141"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571567"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Запускает профилирование на обработчик скриптов. Обработчик скриптов создает экземпляр объекта профилировщика с помощью вызова [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
+Запускает профилирование в обработчике скриптов. Обработчик скриптов создает экземпляр объекта профилировщика, вызвав метод [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,18 +36,18 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Параметры  
  `clsidProfilerObject`  
- [in] Идентификатор (CLSID) объекта профилировщика создаваемого класса.  
+ окне Идентификатор класса (CLSID) создаваемого объекта профилировщика.  
   
  `dwEventMask`  
- [in] 4-байтовое Битовая маска, указывающее типы событий. Определенные биты в [перечисление PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ окне Битовая маска размером 4 байта, указывающая типы событий. Биты определяются в [перечислении PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
- [in] 4-байтовое значение, передаваемое объект профилировщика.  
+ окне 4-байтовое значение, передаваемое в объект профилировщика.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает значение HRESULT. Ниже приведены возможные значения.  
   
-|Возвращаемое значение|Значение|  
+|Возвращаемое значение|Смысл|  
 |------------------|-------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`ACTIVPROF_E_PROFILER_PRESENT`|Профилирование уже включено.|  

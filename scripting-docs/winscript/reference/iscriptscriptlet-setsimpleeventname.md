@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSimpleEventName | Документация Майкрософт
+title: 'Искриптскриптлет:: Сетсимпливентнаме | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e6d05066d59e14a7036fb8f371c9c20b886df7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47039be628e803b5b5c164b765b0cdf6778621bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571867"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-Задает имя простого события, который связан с пользователи. Это имя одного слова, которое не содержит пробелов.  
+Задает простое имя события, связанное с скриптлет. Это имя состоит из одного слова, которое не содержит пробелов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,16 +37,16 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>Параметры  
  `psz`  
- [in] Буфер, содержащий имя простых событий, связанный с `IScriptScriptlet` объекта.  
+ окне Буфер, содержащий простое имя события, связанное с объектом `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)

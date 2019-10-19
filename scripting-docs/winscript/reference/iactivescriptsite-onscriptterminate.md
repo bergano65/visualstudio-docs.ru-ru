@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate | Документация Майкрософт
+title: 'IActiveScriptSite:: Онскрипттерминате | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 664f974b26a2cae0d1e16d37dc3bc66e95993d6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a715b39b07df4183d4ec542a1dd82b4229d1f41e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992657"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570202"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
-Информирует узла о том, что сценарий завершения выполнения.  
+Информирует узел о завершении выполнения скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,16 +38,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>Параметры  
  `pvarResult`  
- [in] Адрес переменной, который содержит результат выполнения скрипта, или `NULL` Если скрипт создает результат отсутствует.  
+ окне Адрес переменной, содержащей результат скрипта, или `NULL`, если скрипт не выдал результатов.  
   
  `pexcepinfo`  
- [in] Адрес `EXCEPINFO` структуру, содержащую сведения об исключении, созданные после завершения сценария или `NULL` Если исключение не было создано.  
+ окне Адрес структуры `EXCEPINFO`, которая содержит сведения об исключении, созданные при завершении скрипта, или `NULL`, если исключение не было создано.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает значение `S_OK` в случае успешного выполнения.  
   
-## <a name="remarks"></a>Примечания  
- Обработчик скриптов вызывает этот метод перед вызовом [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) метод, с установленным флагом SCRIPTSTATE_INITIALIZED, завершения. Этот метод может использоваться для возврата состояния завершения и результаты на узел. Обратите внимание, что много языков скриптов, которые основаны на получение событий от узла, жизнь диапазонов, которые определяются приложением. В этом случае этот метод может никогда не вызывается.  
+## <a name="remarks"></a>Заметки  
+ Обработчик скриптов вызывает этот метод перед вызовом метода [IActiveScriptSite:: онстатечанже](../../winscript/reference/iactivescriptsite-onstatechange.md) с установленным флагом SCRIPTSTATE_INITIALIZED. Этот метод можно использовать для возврата состояния завершения и результатов на узел. Обратите внимание, что многие языки сценариев, основанные на стоке событий с узла, имеют периоды жизни, определенные узлом. В этом случае этот метод не может быть вызван.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

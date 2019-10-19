@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState | Документация Майкрософт
+title: 'IActiveScript:: Жетскриптсреадстате | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f6ef4b0acdf6e3b746316bef8abe9a3f0f8225
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935614"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72578007"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-Возвращает текущее состояние потока скрипта.  
+Извлекает текущее состояние потока скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,27 +38,27 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>Параметры  
  `stidThread`  
- [in] Идентификатор потока, для которого требуется состояние или один из следующих идентификаторов специальный поток:  
+ окне Идентификатор потока, для которого требуется состояние, или один из следующих специальных идентификаторов потока:  
   
-|Значение|Значение|  
+|значения|Смысл|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|Базовый поток; то есть был создан поток, в котором обработчик скриптов.|  
-|SCRIPTTHREADID_CURRENT|Текущим выполняемым потоком.|  
+|SCRIPTTHREADID_BASE|Базовый поток; то есть поток, в котором был создан экземпляр обработчика сценариев.|  
+|SCRIPTTHREADID_CURRENT|Выполняющийся в данный момент поток.|  
   
  `pstsState`  
- [out] Адрес переменной, которая получает состояние указанного потока. Состояние обозначается один из именованных значения констант, определенных по [перечисление SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md) перечисления. Если этот параметр не идентифицирует текущий поток, состояние может измениться в любое время.  
+ заполняет Адрес переменной, которая получает состояние указанного потока. Состояние обозначается одним из именованных постоянных значений, определяемых перечислением [перечисления скриптсреадстате](../../winscript/reference/scriptthreadstate-enumeration.md) . Если этот параметр не определяет текущий поток, состояние может измениться в любое время.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Возвращаемое значение|Значение|  
+|Возвращаемое значение|Смысл|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
 |`E_POINTER`|Указан недопустимый указатель.|  
-|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не была загрузки или инициализации).|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не загружен или не инициализирован).|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод может вызываться из потоков не основной не входили в выноске отличные от базовых объектов узла или [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) интерфейс.  
+## <a name="remarks"></a>Заметки  
+ Этот метод может быть вызван из не базовых потоков, что приводит к небазовому вызову для размещения объектов или интерфейсу [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

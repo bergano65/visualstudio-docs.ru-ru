@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Reset | Документация Майкрософт
+title: 'Иенумремотедебугаппликатионсреадс:: Reset | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a7c6fca01af5a3413ace6d95ca5c5879f4318ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab1f2b4afdcaa9cdb6f506c64b1c7563cd218624
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807190"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577785"
 ---
 # <a name="ienumremotedebugapplicationthreadsreset"></a>IEnumRemoteDebugApplicationThreads::Reset
-Сбрасывает последовательность перечислений в начало.  
+Сбрасывает последовательность перечисления до начала.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,12 +39,12 @@ HRESULT Reset();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод сбрасывает последовательность перечислений в начало.  
+## <a name="remarks"></a>Заметки  
+ Этот метод сбрасывает последовательность перечисления до начала.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IEnumRemoteDebugApplicationThreads](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

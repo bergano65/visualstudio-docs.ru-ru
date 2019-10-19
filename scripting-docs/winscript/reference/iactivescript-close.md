@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Документация Майкрософт
+title: 'IActiveScript:: Close | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f858de42ef2948d218aac6c3194cc6af544da5e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935683"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575783"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Вызывает обработчик скриптов отказаться от любого текущего загруженного скрипта, теряют свое состояние и освободить все указатели на интерфейс, он имеет к другим объектам, таким образом ввод закрытом состоянии. Приемники событий, текст сразу же выполненного сценария и вызовов макросов, которые уже находятся в процессе выполнения завершены до изменения состояния (использовать [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) отменить выполняющийся поток скрипта). Этот метод должен вызываться путем создания узлов, до выпуска интерфейса для предотвращения проблем циклическая ссылка.  
+Заставляет обработчик скриптов отменять любой загруженный скрипт, терять его состояние и освобождать все указатели интерфейса, которые он имеет, на другие объекты, тем самым выполняя вход в закрытое состояние. Приемники событий, немедленно исполняемый текст сценария и вызовы макросов, которые уже выполняются, выполняются до изменения состояния (используйте [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) для отмены выполняющегося потока сценария). Этот метод должен вызываться созданием узла перед освобождением интерфейса для предотвращения проблем с циклическими ссылками.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,12 +36,12 @@ HRESULT Close(void);
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Значение|Значение|  
+|значения|Смысл|  
 |-----------|-------------|  
 |`S_OK`|Выполнено.|  
-|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик сценариев уже был в состоянии closed).|  
-|`OLESCRIPT_S_PENDING`|Метод был поставлен в очередь успешно, но состояние еще не изменился. При изменении состояния, сайт в тип обратного вызова на [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) метод.|  
-|`S_FALSE`|Метод выполнен успешно, но он уже закрыт.|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов уже находится в закрытом состоянии).|  
+|`OLESCRIPT_S_PENDING`|Метод был успешно поставлен в очередь, но состояние еще не изменилось. При изменении состояния сайт необходимо вызвать обратно в метод [IActiveScriptSite:: онстатечанже](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
+|`S_FALSE`|Метод выполнен успешно, но скрипт уже закрыт.|  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -14,12 +14,12 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad324af24b7a5555803e8b897343030d8bf210bf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007447"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573744"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>Объект не поддерживает это свойство или метод
 Вы указали свойство или метод, не существующие для данного объекта. Не все объекты поддерживают все свойства и методы.  
@@ -33,5 +33,5 @@ ms.locfileid: "63007447"
 - Дополнительные сведения см. в документации объекта.  
   
 ## <a name="see-also"></a>См. также  
- [Объект Object](../../javascript/reference/object-object-javascript.md)   
+ [Объект  ](../../javascript/reference/object-object-javascript.md)  
  [Объекты JavaScript](../../javascript/reference/javascript-objects.md)

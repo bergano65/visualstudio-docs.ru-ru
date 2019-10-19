@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleBreakPoint | Документация Майкрософт
+title: 'IDebugApplication:: Хандлебреакпоинт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30937817424e88f80cfa6afa8c874adfd2b2687b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412380"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574964"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-Приводит к блокировке текущего потока и отправляет уведомление точки останова в отладчике интегрированной среды разработки.  
+Заставляет текущий поток блокировать и отправлять уведомление точки останова в интегрированную среду разработки отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,28 +38,28 @@ HRESULT HandleBreakPoint(
   
 #### <a name="parameters"></a>Параметры  
  `br`  
- [in] Причина приостановки выполнения.  
+ окне Причина разрыва.  
   
  `pbra`  
- [out] Действие, выполняемое, когда отладчик возобновляет работу приложения.  
+ заполняет Действие, выполняемое при возобновлении работы отладчика приложением.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Модуль языка вызывает этот метод в контексте потока, который попадает на точку останова. Этот метод блокирует текущий поток и отправляет уведомление точки останова в отладчике интегрированной среды разработки. Когда отладчик возобновляет работу приложения, `pbra` параметр указывает, какое действие следует предпринять.  
+## <a name="remarks"></a>Заметки  
+ Языковой механизм вызывает этот метод в контексте потока, который достигает точки останова. Этот метод блокирует текущий поток и отправляет уведомление точки останова в интегрированную среду разработки отладчика. Когда отладчик возобновляет работу приложения, параметр `pbra` указывает, какое действие следует выполнить.  
   
 > [!NOTE]
-> Модуль языка могут быть вызваны потока для выполнения задач, таких как перечисления стека кадры или вычисления выражений во время точки останова.  
+> Обработчик языка может вызываться потоком для выполнения таких задач, как перечисление кадров стека или вычисление выражений во время точки останова.  
   
- Этот метод вызывает `IApplicationDebugger::onHandleBreakPoint` для вызова.  
+ Этот метод вызывает `IApplicationDebugger::onHandleBreakPoint`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
- [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
- [Перечисление BREAKREASON](../../winscript/reference/breakreason-enumeration.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [Иаппликатиондебугжер:: онхандлебреакпоинт](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)    
+ @No__t_1 [перечисления бреакреасон](../../winscript/reference/breakreason-enumeration.md)  
  [Перечисление BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)
