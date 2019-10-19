@@ -1,49 +1,49 @@
 ---
-title: Конструктор рабочих процессов - конструктор действия TryCatch
+title: Конструктор действий конструктор рабочих процессов TryCatch
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 079c25b2bbaa37432009f0eeade9673f8d0afd28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76a7600cdab94499e13592924efabba2fb4c2faf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433959"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649809"
 ---
 # <a name="trycatch-activity-designer"></a>Конструктор действия «TryCatch»
 
-**TryCatch** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.TryCatch> действия.
+Конструктор действий **TryCatch** используется для создания и настройки действия <xref:System.Activities.Statements.TryCatch>.
 
 ## <a name="the-trycatch-activity"></a>Действие TryCatch
- <xref:System.Activities.Statements.TryCatch> Действие содержит <xref:System.Activities.Statements.TryCatch.Try%2A> действия, набор **Catch\<TException >** и <xref:System.Activities.Statements.TryCatch.Finally%2A> действия. Объект <xref:System.Activities.Statements.Catch%601> типа **TException** содержит <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> и <xref:System.Activities.Statements.Catch%601.Action%2A>. Оба они используются для реализации обработки типичных ошибок, основанной на исключении. Действие <xref:System.Activities.Statements.TryCatch> пытается выполнить свое действие <xref:System.Activities.Statements.TryCatch.Try%2A>. Если <xref:System.Activities.Statements.TryCatch.Try%2A> действие создает исключение, <xref:System.Activities.Statements.TryCatch> действие использует его **Catch < TException\>**  коллекции для сопоставления исключения. Если есть совпадение имени, а затем <xref:System.Activities.Statements.Catch%601.Action%2A> соответствующего **Catch\<TException >** выполняется, выступая в качестве логической исключения для обработки. Если действия в разделе <xref:System.Activities.Statements.TryCatch.Try%2A> или <xref:System.Activities.Statements.TryCatch.Catches%2A> успешно выполняются, действие <xref:System.Activities.Statements.TryCatch> выполняет свое действие <xref:System.Activities.Statements.TryCatch.Finally%2A>. Дополнительные сведения см. в разделе [исключения рабочего процесса Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
+ Действие <xref:System.Activities.Statements.TryCatch> содержит <xref:System.Activities.Statements.TryCatch.Try%2A> действие, коллекцию **\<TException >** и действие <xref:System.Activities.Statements.TryCatch.Finally%2A>. @No__t_0 типа **тексцептион** содержит <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> и <xref:System.Activities.Statements.Catch%601.Action%2A>. Оба они используются для реализации обработки типичных ошибок, основанной на исключении. Действие <xref:System.Activities.Statements.TryCatch> пытается выполнить свое действие <xref:System.Activities.Statements.TryCatch.Try%2A>. Если <xref:System.Activities.Statements.TryCatch.Try%2A> действие создает исключение, действие <xref:System.Activities.Statements.TryCatch> использует для сопоставления этого исключения коллекцию **Catch < тексцептион \>** . При совпадении выполняется <xref:System.Activities.Statements.Catch%601.Action%2A> соответствующего **> Catch \<TException** , который служит логикой обработки ошибок для исключения. Если действия в разделе <xref:System.Activities.Statements.TryCatch.Try%2A> или <xref:System.Activities.Statements.TryCatch.Catches%2A> успешно выполняются, действие <xref:System.Activities.Statements.TryCatch> выполняет свое действие <xref:System.Activities.Statements.TryCatch.Finally%2A>. Дополнительные сведения см. в статье [исключения рабочих процессов Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Использование конструктора действий TryCatch
 
-Доступ **TryCatch** конструктора действий в **обработка ошибок** категории **элементов**.
+Доступ к конструктору действий **TryCatch** в категории " **Обработка ошибок** " **панели элементов**.
 
-**TryCatch** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.TryCatch> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для TryCatch. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **TryCatch** конструктора действий или в **DisplayName** поле таблицы свойств. Другие свойства следует изменять в области **TryCatch** конструктора действий.
+Конструктор действий **TryCatch** можно перетащить из **панели элементов** в область Конструктор рабочих процессов, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.TryCatch> со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для TryCatch. Значение <xref:System.Activities.Activity.DisplayName%2A> можно изменить в заголовке конструктора действий **TryCatch** или в поле **DisplayName** сетки свойств. Другие свойства должны быть изменены на поверхности конструктора действий **TryCatch** .
 
-Нажмите кнопку "Развернуть" в правом верхнем углу **TryCatch** конструктору см. в разделе **попробуйте**, **перехватывает**, и **наконец** окнам в средах Расширенное представление. Чтобы добавить критерий обнаружения, нажмите кнопку **добавить новый перехват** кнопку **TryCatch** конструктора. Кнопка преобразуется в поле со списком, в котором можно вводить текст. Выберите тип исключения и нажмите ВВОД, чтобы добавить критерий перехвата. После добавления **Catch**, расширяет область критерия перехвата и действия можно перетаскивать в catch, чтобы определить логику выполнения для catch. Обратите внимание на текстовое поле с правой стороны of развернутой области критериев. При помощи этого текстового поля можно назвать переменную исключения. Переменная исключения может использоваться только для действий внутри одного **Catch**.
+Нажмите кнопку развернуть в правом верхнем углу конструктора **TryCatch** , чтобы увидеть поля **try**, **catch**и **finally** в развернутом представлении. Чтобы добавить catch, нажмите кнопку **Добавить новую кнопку catch** в конструкторе **TryCatch** . Кнопка преобразуется в поле со списком, в котором можно вводить текст. Выберите тип исключения и нажмите ВВОД, чтобы добавить критерий перехвата. После добавления **блока**catch область catch разворачивается, а действие можно перетащить в блок catch, чтобы определить логику выполнения для catch. Обратите внимание на текстовое поле с правой стороны of развернутой области критериев. При помощи этого текстового поля можно назвать переменную исключения. Переменная исключения может использоваться только для действий в одном и том же **перехвате**.
 
-**TryCatch** конструктор не поддерживает изменение **Catch**. Если вы хотите изменить тип исключения, необходимо удалить **Catch** и добавить новую. Объект **Catch** можно удалить, выбрав его и удалив его или выбрав **удалить** в контекстном меню, щелкнув правой кнопкой мыши.
+Конструктор **TryCatch** не поддерживает редактирование **catch**. Если необходимо изменить тип исключения, необходимо удалить **перехват** и добавить новый. Чтобы удалить **catch** , выберите его и удалите или выбрав пункт **Удалить** в контекстном меню, доступном щелчке правой кнопкой мыши.
 
 ### <a name="the-trycatch-properties"></a>Свойства TryCatch
 
-В следующей таблице показаны <xref:System.Activities.Statements.TryCatch>свойства и показывается, как они используются в конструкторе.
+В следующей таблице показаны <xref:System.Activities.Statements.TryCatch>properties и описано, как они используются в конструкторе.
 
-|Имя свойства|Обязательно|Использование|
+|Имя свойства|Обязательное значение|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.TryCatch>. Значение по умолчанию: TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|Действие, выполняемое первым при выполнении действия <xref:System.Activities.Statements.TryCatch>.|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|Коллекция **Catch** элементов, которые проверяются, когда <xref:System.Activities.Statements.TryCatch.Try%2A> действие выдает исключение.<br /><br /> Требуется добавить по крайней мере одно действие в блок <xref:System.Activities.Statements.TryCatch.Catches%2A> или в блок <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|Коллекция элементов **catch** , проверяемых, когда действие <xref:System.Activities.Statements.TryCatch.Try%2A> создает исключение.<br /><br /> Требуется добавить по крайней мере одно действие в блок <xref:System.Activities.Statements.TryCatch.Catches%2A> или в блок <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
 |<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|Действие, которое необходимо выполнить, когда завершится выполнение <xref:System.Activities.Statements.TryCatch.Try%2A> и любых необходимых действий в коллекции <xref:System.Activities.Statements.TryCatch.Catches%2A>.<br /><br /> Требуется добавить по крайней мере одно действие в блок <xref:System.Activities.Statements.TryCatch.Catches%2A> или в блок <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
 
 ## <a name="see-also"></a>См. также
