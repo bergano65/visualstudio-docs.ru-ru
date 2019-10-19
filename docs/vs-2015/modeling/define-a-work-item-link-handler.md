@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871901"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669933"
 ---
 # <a name="define-a-work-item-link-handler"></a>Определение обработчика связей рабочего элемента
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,12 +82,12 @@ ms.locfileid: "68871901"
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`— используется образцом кода
+ `System.Drawing` — используется в образце кода
 
- Если не удается найти одну из этих ссылок на вкладке **.NET** диалогового окна **Добавление ссылки** , воспользуйтесь вкладкой обзор, чтобы найти его в папке \Program Files\Microsoft Visual Studio [версия] \Common7\IDE\PrivateAssemblies\\.
+ Если не удается найти одну из этих ссылок на вкладке **.NET** диалогового окна **Добавление ссылки** , воспользуйтесь вкладкой обзор, чтобы найти его в папке \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\.
 
 ### <a name="import-the-work-item-namespace"></a>Импорт пространства имен рабочего элемента
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] В **ссылки**проекта добавьте ссылки на следующие сборки:
+ В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ссылки**на проект добавьте ссылки на следующие сборки:
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      Запустится экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-     **Устранение неполадок**: Если новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] объект не запускается, убедитесь, что проект VSIX установлен в качестве запускаемого проекта решения.
+     **Устранение неполадок**. если новый [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не запускается, убедитесь, что проект VSIX задан в качестве запускаемого проекта решения.
 
 2. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]откройте или создайте проект моделирования и откройте или создайте схему моделирования.
 
@@ -180,7 +180,7 @@ namespace WorkItems
 
 7. Убедитесь, что рабочий элемент изменил цвет на красный. Это показывает работу метода `OnWorkItemLinked()` в примере кода.
 
-     **Устранение неполадок**: Если методы обработчика не запущены, убедитесь, что:
+     **Устранение неполадок**. Если методы обработчика не запущены, убедитесь, что:
 
     - Проект библиотеки классов указан как компонент MEF в списке **содержимого** в файле **source. Extensions. manifest** в проекте VSIX.
 
@@ -191,7 +191,7 @@ namespace WorkItems
 ## <a name="about-the-work-item-handler-code"></a>Код обработчика рабочего элемента
 
 ### <a name="listening-for-new-work-items"></a>Ожидание вызова при создании рабочих элементов
- `OnWorkItemCreated` вызывается, если пользователь решает создать новый элемент, который необходимо связать с элементами модели. Код может инициализировать поля рабочего элемента. Затем рабочий элемент представляется пользователю, который может изменить значения полей и сохранить рабочий элемент. Ссылка на элемент модели не создается, пока рабочий элемент не будет успешно сохранен.
+ `OnWorkItemCreated` вызывается, если пользователь решает создать новый рабочий элемент, который необходимо связать с элементами модели. Код может инициализировать поля рабочего элемента. Затем рабочий элемент представляется пользователю, который может изменить значения полей и сохранить рабочий элемент. Ссылка на элемент модели не создается, пока рабочий элемент не будет успешно сохранен.
 
 ```
 public void OnWorkItemCreated(
