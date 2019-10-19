@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f054bd91f16bb7621d4beebe7631a49cb406132e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 171eb8810d74df5c1058ba055e598d04f9164633
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870475"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658291"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Обработка текстовых шаблонов с помощью пользовательского основного приложения
 
@@ -44,16 +44,16 @@ string output = engine.ProcessTemplate(templateString, host);
 
  Приложение должно найти и предоставить этот шаблон, а также принять вывод.
 
- В параметре `host` необходимо предоставить класс, реализующий [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Он вызывается процессором шаблонов.
+ В параметре `host` необходимо предоставить класс, реализующий [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Он вызывается процессором шаблонов.
 
  Основное приложение должно быть способно протоколировать ошибки, разрешать ссылки на сборки и включаемые файлы. предоставлять домен приложения, в котором может выполняться шаблон, и вызывать подходящий процессор для каждой директивы.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>определен в **Microsoft. VisualStudio.TextTemplating.\*. 0. dll**и [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) определены в **Microsoft. VisualStudio. TextTemplating. interfaces.\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> определяется в **Microsoft. VisualStudio. TextTemplating. \* 0. dll**, а [Итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) определяется в **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0. dll**.
 
-## <a name="in-this-section"></a>В этом разделе
- [Пошаговое руководство: Создание узла](../modeling/walkthrough-creating-a-custom-text-template-host.md) пользовательского текстового шаблона показывает, как создать пользовательский узел текстовых шаблонов, который делает функциональность текстового шаблона доступной за пределами Visual Studio.
+## <a name="in-this-section"></a>Содержание
+ [Пошаговое руководство. Создание узла пользовательского текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md) Показывает, как создать узел пользовательского текстового шаблона, который делает функциональность текстового шаблона доступной за пределами Visual Studio.
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
  [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Связанные разделы

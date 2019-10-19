@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание шаблонов из шаблонов с помощью escape-последовательности | Документация Майкрософт
+title: Инструкции. Создание шаблонов из шаблонов с помощью escape-последовательностей | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,71 +8,71 @@ helpviewer_keywords:
 - text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4a3ddd7896732c5b87c5b6bd2032c27fffd96a41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 501b7f040cb841d19c06ccc8fe7615a5b4a5e70d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546626"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657347"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Практическое руководство. Создание шаблонов из шаблонов с помощью escape-последовательностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно создать текстовый шаблон, создающий другой текстовый шаблон, сгенерированный текстовый вывод. Чтобы сделать это, необходимо использовать escape-последовательности для разграничения тегов текстового шаблона. Если вы не используете escape-последовательности, сгенерированный текстовый шаблон будет иметь предопределенное значение. Дополнительные сведения об использовании escape-последовательностей в текстовых шаблонах см. в разделе [с помощью escape-последовательностей в текстовых шаблонах](../modeling/using-escape-sequences-in-text-templates.md).  
-  
-### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Для создания текстового шаблона из текстового шаблона  
-  
-- Используйте обратную косую черту (\\) как escape-символа для создания необходимых тегов разметки в текстовый шаблон для директивы, инструкции, выражения и функции в отдельный текстовый файл шаблона класса.  
-  
-    ```  
-    \<#@ directive \#>  
-    \<# statement \#>  
-    \<#= expression \#>  
-    \<#+ classfeature \#>  
-    ```  
-  
-## <a name="example"></a>Пример  
- В следующем примере escape-символы для создания текстового шаблона из текстового шаблона. `output` Директива задает целевой тип файла для текстового файла шаблона (TT-).  
-  
-```csharp  
-\<#@ output extension=".tt" \#>  
-\<#@ assembly name="System.Xml.dll" \#>  
-\<#@ import namespace="System.Xml" \#>  
-\<#  
-XmlDocument xDoc = new XmlDocument();  
-//System.Diagnostics.Debugger.Break();  
-    xDoc.Load(@"E:\CSharp\Overview.xml");  
-    XmlAttributeCollection attributes = xDoc.Attributes;  
-    if (attributes != null)  
-    {  
-       foreach (XmlAttribute attr in attributes)  
-       {\#>  
-           \<#= attr.Name \#>  
-       \<#}  
-     }  
-\#>  
-```  
-  
- Сгенерированный текстовый вывод является текстовым шаблоном.  
-  
-```  
-<#@ output extension=".tt" #>  
-<#@ assembly name="System.Xml.dll" #>  
-<#@ import namespace="System.Xml" #>  
-<#  
-XmlDocument xDoc = new XmlDocument();  
-//System.Diagnostics.Debugger.Break();  
-    xDoc.Load(@"E:\CSharp\Overview.xml");  
-    XmlAttributeCollection attributes = xDoc.Attributes;  
-    if (attributes != null)  
-    {  
-       foreach (XmlAttribute attr in attributes)  
-       {#>  
-           <#= attr.Name #>  
-       <#}  
-     }  
-#>  
+Можно создать текстовый шаблон, который создает другой текстовый шаблон в качестве выходного текста. Для этого необходимо использовать escape-последовательности для отделения тегов текстовых шаблонов. Если вы не используете escape-последовательности, созданный текстовый шаблон будет иметь предварительно определенное значение. Дополнительные сведения об использовании escape-последовательностей в текстовых шаблонах см. [в разделе использование escape-последовательностей в текстовых шаблонах](../modeling/using-escape-sequences-in-text-templates.md).
+
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Создание текстового шаблона из текстового шаблона
+
+- Используйте обратную косую черту (\\) в качестве escape-символа для создания необходимых тегов разметки в текстовом шаблоне для директив, инструкций, выражений и функций класса в отдельном файле текстового шаблона.
+
+    ```
+    \<#@ directive \#>
+    \<# statement \#>
+    \<#= expression \#>
+    \<#+ classfeature \#>
+    ```
+
+## <a name="example"></a>Пример
+ В следующем примере escape-символы используются для создания текстового шаблона из текстового шаблона. Директива `output` устанавливает тип файла назначения в тип файла текстового шаблона (. TT).
+
+```csharp
+\<#@ output extension=".tt" \#>
+\<#@ assembly name="System.Xml.dll" \#>
+\<#@ import namespace="System.Xml" \#>
+\<#
+XmlDocument xDoc = new XmlDocument();
+//System.Diagnostics.Debugger.Break();
+    xDoc.Load(@"E:\CSharp\Overview.xml");
+    XmlAttributeCollection attributes = xDoc.Attributes;
+    if (attributes != null)
+    {
+       foreach (XmlAttribute attr in attributes)
+       {\#>
+           \<#= attr.Name \#>
+       \<#}
+     }
+\#>
+```
+
+ Созданный текстовый вывод является текстовым шаблоном.
+
+```
+<#@ output extension=".tt" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ import namespace="System.Xml" #>
+<#
+XmlDocument xDoc = new XmlDocument();
+//System.Diagnostics.Debugger.Break();
+    xDoc.Load(@"E:\CSharp\Overview.xml");
+    XmlAttributeCollection attributes = xDoc.Attributes;
+    if (attributes != null)
+    {
+       foreach (XmlAttribute attr in attributes)
+       {#>
+           <#= attr.Name #>
+       <#}
+     }
+#>
 ```

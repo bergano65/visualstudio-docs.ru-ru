@@ -1,5 +1,5 @@
 ---
-title: Команда псевдонимов | Документация Майкрософт
+title: Псевдонимы команд | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160882"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657855"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "68160882"
 |Очистить все|cls|Edit.ClearAll|
 |Режим команд|cmd|View.CommandWindow|
 |Перейти к коду|код|View.ViewCode|
-|[Команда "Вывести память"](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
+|[Команда "Вывести память"](../../ide/reference/list-memory-command.md)|дн.|Debug.ListMemory|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI|da|Debug.ListMemory /Ansi|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) в однобайтовом формате|db|Debug.ListMemory /Format:OneByte|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI с 4-байтовым форматом|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -71,7 +71,7 @@ ms.locfileid: "68160882"
 |[Команда Start](../../ide/reference/start-command.md)|н|Debug.Start|
 |[Команда "Перейти"](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Перейти к скобке|GotoBrace|Edit.GotoBrace|
-|F1Help|Help|Help.F1Help|
+|F1Help|Справка|Help.F1Help|
 |Режим интерпретации|immed|Tools.ImmediateMode|
 |Вставить файл как текст|InsertFile|Edit.InsertFileAsText|
 |[Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -99,7 +99,7 @@ ms.locfileid: "68160882"
 |Шаг с выходом|pr|Debug.StepOut|
 |Предыдущая закладка|PrevBook|Edit.PreviousBookmark|
 |Печать файла|print|File.Print|
-|Окно "Свойства"|props|View.PropertiesWindow|
+|Окно \"Свойства\"|props|View.PropertiesWindow|
 |Остановить|q|Debug.StopDebugging|
 |Повторить|redo|Edit.Redo|
 |Регистры - окно|регистры|Debug.Registers|
@@ -110,7 +110,7 @@ ms.locfileid: "68160882"
 |[Команда "Оболочка"](../../ide/reference/shell-command.md)|оболочка|Tools.Shell|
 |Остановить поиск в файлах|StopFind|Edit.FindInFiles /stop|
 |Переставить закрепление|SwapAnchor|Edit.SwapAnchor|
-|Шаг с заходом|t|Debug.StepInto|
+|Шаг с заходом|т|Debug.StepInto|
 |Заполнить выделенный фрагмент знаками табуляции|преобразование в знаки табуляции|Edit.TabifySelection|
 |Окно "Список задач"|TaskList|View.TaskList|
 |Потоки - окно|Потоки|Debug.Threads|
@@ -127,5 +127,5 @@ ms.locfileid: "68160882"
 |Вывести процессы|&#124;|Debug.ListProcesses|
 |[Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>См. также
- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md) [командное окно](../../ide/reference/command-window.md) [найти/команда-окно](../../ide/find-command-box.md)
+## <a name="see-also"></a>См. также раздел
+ Команда [Visual Studio командное](../../ide/reference/visual-studio-commands.md) [окно](../../ide/reference/command-window.md) ["Поиск/команда"](../../ide/find-command-box.md)

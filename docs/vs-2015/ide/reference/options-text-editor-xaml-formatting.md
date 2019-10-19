@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696009"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662222"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>"Параметры", "Текстовый редактор", XAML, "Форматирование"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,16 +117,16 @@ ms.locfileid: "65696009"
 
 |||
 |-|-|
-|**Всегда открывать документы в полном представлении XAML**|Указывает ли документы XAML отображаться только в представлении XAML без представления конструктора. Это удобно при загрузке больших документов.|
+|**Всегда открывать документы в полном представлении XAML**|Указывает, отображаются ли документы XAML только в представлении XAML без представление конструирования. Полезно для загрузки больших документов.|
 
 ## <a name="toolbox"></a>Панель элементов
-Используйте этот параметр, чтобы указать, отображаются ли пользовательские элементы управления и пользовательские элементы управления в панели элементов.
+Используйте этот параметр, чтобы указать, отображаются ли пользовательские элементы управления и пользовательские элементы управления на панели элементов.
 
 |||
 |-|-|
 |**Автоматически заполнять элементы панели инструментов**|Указывает, должны ли пользовательские элементы управления, относящиеся к текущему решению, отображаться на панели элементов автоматически.|
 
-## <a name="see-also"></a>См. также
-[XAML в WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Практическое руководство. Изменение параметров представления XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
+## <a name="see-also"></a>См. также раздел
+[XAML в WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[Практическое руководство. изменение параметров представления XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
 [Пошаговые руководства по XAML и коду](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

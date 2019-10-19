@@ -1,5 +1,5 @@
 ---
-title: CA2243. Синтаксический анализ строковых литералов атрибута должен правильно | Документация Майкрософт
+title: 'CA2243: литералы строк атрибутов должны анализироваться правильно | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,54 +12,54 @@ helpviewer_keywords:
 - CA2243
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201498"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671966"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243. Синтаксический разбор строковых литералов должен осуществляться правильно
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: синтаксический анализ строковых литералов атрибута должен осуществляться правильно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Строкового литерала атрибута не правильно проанализировать URL-адрес, идентификатор GUID или версии.
+ Параметр строкового литерала атрибута не анализируется правильно для URL-адреса, идентификатора GUID или версии.
 
 ## <a name="rule-description"></a>Описание правила
- Поскольку атрибуты являются производными от <xref:System.Attribute?displayProperty=fullName>и атрибуты используются во время компиляции, их конструкторы могут передаваться только константные значения. Параметры атрибутов, которые должны представлять URL-адреса, идентификаторы GUID и версии не могут быть типизированы как <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, и <xref:System.Version?displayProperty=fullName>, так как эти типы нельзя представить в виде константы. Вместо этого они должны быть представлены строками.
+ Поскольку атрибуты являются производными от <xref:System.Attribute?displayProperty=fullName>, а атрибуты используются во время компиляции, в конструкторы могут передаваться только постоянные значения. Параметры атрибутов, которые должны представлять URL-адреса, GUID и версии, не могут быть типизированы как <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> и <xref:System.Version?displayProperty=fullName>, так как эти типы не могут быть представлены как константы. Вместо этого они должны быть представлены строками.
 
- Так как параметр вводится как строка, вполне возможно, что во время компиляции может быть передан параметр неправильного формата.
+ Поскольку параметр типизирован как строка, возможно, что параметр с неправильным форматом может быть передан во время компиляции.
 
- Это правило использует именования эвристический алгоритм для поиска параметров, которые представляют универсальный код ресурса (URI), глобальный уникальный идентификатор (GUID) или версии и проверяет правильность переданному значению.
+ Это правило использует эвристику именования для поиска параметров, представляющих универсальный код ресурса (URI), глобальный уникальный идентификатор (GUID) или версию, и проверяет правильность переданного значения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Замените строку параметра правильно сформированный URL-адрес, идентификатор GUID или версии.
+ Измените строку параметра на URL-адрес с правильным форматом, GUID или версию.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если параметр не представляет URL-адрес, идентификатор GUID или версии.
+ Если параметр не представляет URL-адрес, GUID или версию, можно отключить вывод предупреждения из этого правила.
 
 ## <a name="example"></a>Пример
- В следующем примере показан код для AssemblyFileVersionAttribute, которое нарушает это правило.
+ В следующем примере показан код для AssemblyFileVersionAttribute, нарушающего это правило.
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly/cs/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly.cs#1)]
 
- Запускается следующее правило:
+ Правило активируется следующим образом:
 
-- Параметры, которые содержат «version» и не может быть приведено к System.Version.
+- Параметры, содержащие "Version", и не могут быть проанализированы в System. Version.
 
-- Параметры, которые содержат «guid» и не может быть приведено к System.Guid.
+- Параметры, содержащие "GUID", не могут быть проанализированы в System. GUID.
 
-- Параметры, которые содержат «uri», «urn» или «url» и не поддается на System.Uri.
+- Параметры, содержащие "URI", "urn" или "URL", и не могут быть проанализированы в System. URI.
 
-## <a name="see-also"></a>См. также
- [CA1054: Параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+## <a name="see-also"></a>См. также раздел
+ [CA1054: параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

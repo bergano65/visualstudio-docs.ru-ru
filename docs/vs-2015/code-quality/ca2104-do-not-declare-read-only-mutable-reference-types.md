@@ -1,5 +1,5 @@
 ---
-title: CA2104. Не объявляйте чтения только изменяемые ссылочные типы | Документация Майкрософт
+title: 'CA2104: не объявляйте изменяемые ссылочные типы только для чтения | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
 ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a4c6619bc5803c1b44e1c6b0516987c3110bbd30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fd81f9ea250cd1592f755a2aa6cb3ca09280a533
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687419"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666043"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104. Не объявляйте изменяющиеся ссылочные типы только для чтения
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: не объявляйте изменяемые ссылочные типы, доступные только для чтения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,20 +36,20 @@ ms.locfileid: "65687419"
  Видимый извне тип содержит видимое извне и доступное только для чтение поле, являющееся изменяемым ссылочным типом.
 
 ## <a name="rule-description"></a>Описание правила
- Изменяемый тип — это тип, экземпляр которого может быть изменен. <xref:System.Text.StringBuilder?displayProperty=fullName> Класс является примером изменяемый ссылочный тип. Он содержит члены, которые можно изменить значение экземпляра класса. Примером неизменяемого ссылочного типа является <xref:System.String?displayProperty=fullName> класса. После его создания экземпляра, его значение изменить нельзя.
+ Изменяемый тип — это тип, экземпляр которого может быть изменен. Класс <xref:System.Text.StringBuilder?displayProperty=fullName> является примером изменяемого ссылочного типа. Он содержит члены, которые могут изменять значение экземпляра класса. Примером неизменяемого ссылочного типа является класс <xref:System.String?displayProperty=fullName>. После создания экземпляра его значение не может изменяться.
 
- Модификатор доступа только для чтения ([readonly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) в C# [ReadOnly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], и [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) в C++) на ссылочный тип поля (указатель в C++) позволяет предотвратить поле заменены другой экземпляр ссылочного типа. Однако модификатор не препятствует данных экземпляра поля изменению посредством ссылочного типа.
+ Модификатор только[для](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) чтения (ReadOnly C# [в, только](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] и [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) в C++) для поля ссылочного типа (указатель в C++) предотвращает замену поля другим экземпляром ссылочного типа. Однако модификатор не предотвращает изменение данных экземпляра поля с помощью ссылочного типа.
 
- Поля только для чтения массивов будут исключены из этого правила, но вместо этого приведет к нарушению [CA2105: Поля массивов не должны считываться только](../code-quality/ca2105-array-fields-should-not-be-read-only.md) правило.
+ Поля массива, доступные только для чтения, исключаются из этого правила, но это приводит к нарушению работы [полей CA2105: Array не должно быть](../code-quality/ca2105-array-fields-should-not-be-read-only.md) правилом только для чтения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите модификатор только для чтения, или, если допустима критическое изменение, замените поле неизменяемый тип.
+ Чтобы устранить нарушение этого правила, удалите модификатор "только для чтения" или, если критическое изменение допустимо, замените поле неизменяемым типом.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если тип поля является неизменяемым.
+ Можно отключить вывод предупреждений из этого правила, если тип поля является неизменяемым.
 
 ## <a name="example"></a>Пример
- В следующем примере объявление поля, которое вызывает нарушение этого правила.
+ В следующем примере показано объявление поля, которое вызывает нарушение этого правила.
 
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cpp/FxCop.Security.MutableReferenceTypes.cpp#1)]
  [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cs/FxCop.Security.MutableReferenceTypes.cs#1)]
