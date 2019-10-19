@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1af269201649f9372d9c0b2d5b273ddd358fe1e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871708"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660696"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
  Пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> включается для пользовательского интерфейса Windows. Для пользовательского интерфейса веб-страниц будет использоваться пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>; для пользовательского интерфейса Windows Presentation Foundation будет использоваться пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.
 
 #### <a name="UIMapClass"></a> Класс UIMap
- Следующий раздел файла — класс [UIMap](/previous-versions/dd580454(v=vs.140)) .
+ Следующий раздел файла — это класс [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ```
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]
@@ -79,7 +79,7 @@ public void VerifyTotal()
 public void CleanUp()
 ```
 
- Эта часть класса [UIMap](/previous-versions/dd580454(v=vs.140)) также включает созданный код для каждого свойства, которое требуется для методов.
+ Эта часть класса [UIMap](/previous-versions/dd580454(v=vs.140)) также включает созданный код для каждого свойства, необходимого методам.
 
 ```
 public virtual LaunchCalculatorParams LaunchCalculatorParams
@@ -190,9 +190,9 @@ public class AddItemsParams
  По умолчанию этот файл содержит разделяемый класс `UIMap`, в котором отсутствуют методы и свойства.
 
 #### <a name="uimap-class"></a>Класс UIMap
- Здесь можно создать пользовательский код для расширения функциональных возможностей класса [UIMap](/previous-versions/dd580454(v=vs.140)) . Код, созданный в этом файле, не будет генерироваться заново **построителем закодированных тестов пользовательского интерфейса** при каждом изменении теста.
+ В этом классе вы можете создать пользовательский код для расширения функциональных возможностей класса [UIMap](/previous-versions/dd580454(v=vs.140)). Код, созданный в этом файле, не будет генерироваться заново **построителем закодированных тестов пользовательского интерфейса** при каждом изменении теста.
 
- Все части [UIMap](/previous-versions/dd580454(v=vs.140)) могут использовать методы и свойства из любой другой части класса [UIMap](/previous-versions/dd580454(v=vs.140)) .
+ Все части [UIMap](/previous-versions/dd580454(v=vs.140)) могут использовать методы и свойства из других частей класса [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ### <a name="CodedUITestCS"></a> CodedUITest1.cs
  Этот файл создается **построителем закодированных тестов пользовательского интерфейса**, но не пересоздается при каждом изменении теста, поэтому вы можете изменять код в этом файле. Имя файла формируется из имени, указанного для теста при его создании.
@@ -205,7 +205,7 @@ public class AddItemsParams
 public class CodedUITest1
 ```
 
- [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) автоматически применяется к классу, что позволяет платформе тестирования распознать ее как расширение тестирования. Также обратите внимание, что это не разделяемый класс. В этом файле содержится весь код класса.
+ К этому классу автоматически применяется атрибут [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)), который позволяет платформе тестирования распознать его как расширение тестирования. Также обратите внимание, что это не разделяемый класс. В этом файле содержится весь код класса.
 
 ##### <a name="CodedUITestProperties"></a> Свойства CodedUITest1
  Данный класс содержит два свойства по умолчанию, которые находятся в нижней части файла. Они не должны изменяться.

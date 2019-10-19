@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 ms.assetid: 6ce1d178-88c0-4295-8915-59fdeedabb11
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3f17ac56038c5f6c1d4de026546410ece438e375
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869934"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660917"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Выбор элементов панели элементов, компоненты WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "68869934"
 
 - Не обновляется надлежащим образом при изменении конфигурации решения с отладки на выпуск или с выпуска на отладку. Это вызвано тем, что ссылка не является ссылкой проекта, а указывает на сборку на диске. Если элемент управления является частью текущего решения, при переключении с отладки на выпуск ваш проект продолжает ссылаться на отладочную версию элемента управления.
 
-  Кроме того, если к пользовательскому элементу управления применяются метаданные времени разработки, и эти метаданные указывают, что [тулбоксбровсаблеаттрибуте](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) имеет значение `false`, элемент управления не отображается на панели элементов.
+  Кроме того, если к пользовательскому элементу управления применяются метаданные времени разработки и эти метаданные указывают, что [тулбоксбровсаблеаттрибуте](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) имеет значение `false`, элемент управления не отображается на панели элементов.
 
   Вы можете ссылаться на элементы управления прямо в представлении XAML, сопоставляя пространство имен и сборку для элемента управления. Дополнительные сведения см. в разделе [Практическое руководство. Импорт пространств имен в XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).
 

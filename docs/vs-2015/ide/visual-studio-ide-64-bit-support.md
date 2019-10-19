@@ -10,15 +10,15 @@ helpviewer_keywords:
 - 64-bit programming [C++]
 ms.assetid: b08ff3ad-c6fd-468f-94d5-01a61aab6833
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c83c4623854fd8f7605096d218de69460fc8a919
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698168"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667120"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Поддержка 64-разрядных сред IDE Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ ms.locfileid: "65698168"
 
 - [Использование файлов дампа](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md)
