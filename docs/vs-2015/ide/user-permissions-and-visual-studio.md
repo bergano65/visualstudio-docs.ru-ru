@@ -11,15 +11,15 @@ helpviewer_keywords:
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b7ffc3a6b3fe5ad5952ecfde6091cbe7e656f305
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703994"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672675"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ ms.locfileid: "65703994"
 ## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора
  Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] и [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] и [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
 1. На **начальном экране** введите **Visual Studio**. Вы увидите установленные версии Visual Studio.
 
 2. Выберите версию Visual Studio, которую нужно запустить, а затем откройте контекстное меню (оно появится внизу экрана). Выберите **Запуск от имени администратора**.
 
-     После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
+     После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)** .
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../includes/win7-md.md)] и [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../includes/win7-md.md)] и [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
 1. Нажмите кнопку **Пуск** и выберите **Все программы**.
 
 2. В папке **Microsoft Visual Studio** *версия* выберите **Visual Studio** *версия*, откройте контекстное меню, а затем выберите пункт **Запуск от имени администратора**.
 
-     После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
+     После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Установка Visual Studio 2015](../install/install-visual-studio-2015.md)

@@ -10,42 +10,41 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac542ded884e922028c6cbc16447fb2a3241613b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193811"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660808"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Открывает указанный исполняемый файл для отладки.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Devenv /debugexe ExecutableFile  
-```  
-  
-## <a name="arguments"></a>Аргументы  
- `ExecutableFile`  
- Обязательный. Путь и имя EXE-файла.  
-  
- Если EXE-файл не найден или не существует, никакие предупреждения или ошибки не выводятся, а [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запускается обычным образом.  
-  
-## <a name="remarks"></a>Примечания  
- Строки, следующие за параметром `ExecutableFile`, передаются в этот файл в качестве аргументов.  
-  
-## <a name="example"></a>Пример  
- Следующий пример открывает файл `MyApplication.exe` для отладки.  
-  
-```  
-Devenv.exe /debugexe MyApplication.exe  
-```  
-  
-## <a name="see-also"></a>См. также  
+Открывает указанный исполняемый файл для отладки.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Devenv /debugexe ExecutableFile
+```
+
+## <a name="arguments"></a>Аргументы
+ `ExecutableFile` Обязательный. Путь и имя EXE-файла.
+
+ Если EXE-файл не найден или не существует, никакие предупреждения или ошибки не выводятся, а [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запускается обычным образом.
+
+## <a name="remarks"></a>Примечания
+ Строки, следующие за параметром `ExecutableFile`, передаются в этот файл в качестве аргументов.
+
+## <a name="example"></a>Пример
+ Следующий пример открывает файл `MyApplication.exe` для отладки.
+
+```
+Devenv.exe /debugexe MyApplication.exe
+```
+
+## <a name="see-also"></a>См. также
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)

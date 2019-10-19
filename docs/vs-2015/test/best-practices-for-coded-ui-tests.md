@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1a631823ce39e5655bba611f90c2869e8dff1d8f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871675"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660690"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Рекомендации по выполнению закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "68871675"
 
 - В тестируемом приложении используйте понятные имена при создании элементов управления пользовательского интерфейса. Это придаст больше смысла и повысит удобство использования автоматически создаваемых имен элементов управления.
 
-- При создании утверждений с помощью программирования с помощью API создайте метод для каждого утверждения в части класса [UIMap](/previous-versions/dd580454(v=vs.140)) , который находится в `UIMap.cs` файле. Вызывайте этот метод из своего метода теста для выполнения утверждения.
+- При создании утверждений с помощью программирования с помощью API создайте метод для каждого утверждения в части класса [UIMap](/previous-versions/dd580454(v=vs.140)) , который находится в файле `UIMap.cs`. Вызывайте этот метод из своего метода теста для выполнения утверждения.
 
 - Если вы программируете напрямую с помощью API, как можно больше используйте в своем коде свойства и методы в классах, создаваемых в файле `UIMap.Designer.cs`. Эти классы сделают работу более простой и надежной и помогут вам повысить производительность.
 
