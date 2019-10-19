@@ -1,276 +1,273 @@
 ---
-title: Настройка текста полей и изображениями | Документация Майкрософт
+title: Настройка полей Text и Image | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: a7259fc0-5afa-4356-b27e-5641e01628a9
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5069f6d45d72606bce7de2866c6328864fcde21f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d6baaa9ceba8f40aa5ad7888384027131e0ffe94
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433243"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654972"
 ---
 # <a name="customizing-text-and-image-fields"></a>Настройка полей с текстом и изображениями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-При определении текстовый декоратор фигуры, он представлен TextField. Примеры инициализацию TextFields и других которым ShapeFields проверьте Dsl\GeneratedCode\Shapes.cs в решение DSL.  
-  
- TextField — это объект, который управляет область внутри фигуры, такие как пространство, назначенное метку. Один экземпляр TextField совместно используется много фигур того же класса. Текст подписи отдельно для каждого экземпляра экземпляра TextField не хранит: вместо этого `GetDisplayText(ShapeElement)` метод принимает форму в качестве параметра, а также выполнять поиск текста, зависит от текущего состояния фигуры и его элемента модели.  
-  
-## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Как определяется внешний вид текстового поля  
- `DoPaint()` Метод называется отображаются на экране. Можно либо переопределить значение по умолчанию `DoPaint(),` или можно переопределить некоторые методы, которые он вызывает. Следующие упрощенную версию по умолчанию методы помогут вам понять, как переопределить поведение по умолчанию:  
-  
-```  
-// Simplified version:  
-public override void DoPaint(DiagramPaintEventArgs e, ShapeElement parentShape)  
-{   
-  string text = GetDisplayText(shape);   
-  StringFormat format = GetStringFormat(parentShape);  
-  Brush brush = GetTextBrush(e.View, shape);  
-  using (Font font = GetFont(shape))  
-  {  
-    e.Graphics.DrawString(text, font, brush, format);  
-  }  
-}  
-// StringFormat determines whether the string is centered etc.  
-// To customize statically for all instances of this shape field,   
-// assign to DefaultStringFormat.  
-// To customize dynamically or per shape, override this:    
-public virtual StringFormat GetStringFormat(ShapeElement shape)  
-{ return DefaultStringFormat; }  
-  
-// Override to customize the displayed string:  
-public virtual string GetDisplayText(ShapeElement shape)  
-{ return this.GetValue(shape).ToString(); }  
-  
-// Brush determines the text color.  
-// To change the brush for every field, change the shape’s styleset.   
-// To customize to a brush in the style set, override GetTextBrushId.  
-// To change the brush to non-standard color, override this.  
-// Should take account of whether selected.   
-public virtual Brush GetTextBrush(DiagramClientView view, ShapeElement shape)  
-{ return shape.StyleSet.GetBrush(this.GetTextBrushId(view, shape)); }  
-  
-// Brush ID selects a brush from a StyleSet.  
-// Either return a member of DiagramBrushes   
-// or add your own brush to the shape or application’s styleset.  
-// Override this to change dynamically or per instance.  
-// To change statically, just assign to default values.   
-public virtual StyleSetResourceId GetTextBrushId(DiagramClientView view, ShapeElement shape)  
-{ return IsSelected(view, shape) ? (view.Focused ? DefaultSelectedTextBrushId  
-: DefaultInactiveSelectedTextBrushId ) : DefaultTextBrushId ;  
-}  
-  
-// Font determines the shape and size of the text.  
-// To change the font for every field, change the shape’s styleset.   
-// To customize to a font in the style set, override GetFontId.  
-// To change the font to a non-standard font, override this.   
-public virtual Font GetFont(ShapeElement shape)  
-{ return shape.StyleSet.GetFont(GetFontId(shape)); }  
-  
-// Selects a font from a styleset.  
-// Either return a member of DiagramFonts or   
-// add your own font to the shape or application’s styleset.  
-// To change statically for all instances of this field,   
-// assign to DefaultFontId.  
-// To change per shape or dynamically, override this.   
-public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)  
-{ return DefaultFontId; }  
-  
-```  
-  
- Существует несколько пар типа `Get` методы и `Default` свойства, такие как `DefaultMultipleLine/GetMultipleLine()`. Значение можно назначить свойство по умолчанию, чтобы изменить значение для всех экземпляров поля фигуры. Чтобы задать более высокое значение отличаться от экземпляра одной формы в другую или зависит от состояния фигуры или его элемента модели, переопределите `Get` метод.  
-  
-## <a name="static-customizations"></a>Статические настроек  
- Если вы хотите изменить каждое вхождение данное поле фигуры, сначала Узнайте указывает, можно задать свойства в определении DSL. Например можно задать размер шрифта и стиля в окне «Свойства».  
-  
- Если это не так, затем переопределить `InitializeShapeFields` метод фигуру класса и присвоить ей значение соответствующего `Default...` свойства текстового поля.  
-  
+При определении декоратора текста в фигуре он представляется объектом TextField. Примеры инициализации TextField и других ShapeFields см. в подсистеме Дсл\женератедкоде\шапес.КС в решении DSL.
+
+ TextField — это объект, управляющий областью внутри фигуры, например пространство, назначенное метке. Один экземпляр TextField совместно используется многими фигурами одного класса. Экземпляр TextField не сохраняет текст метки отдельно для каждого экземпляра: вместо этого метод `GetDisplayText(ShapeElement)` принимает форму в качестве параметра и может выполнять поиск текста, зависящего от текущего состояния фигуры и ее элемента модели.
+
+## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Как определяется внешний вид текстового поля
+ Метод `DoPaint()` вызывается для отображения поля на экране. Можно либо переопределить `DoPaint(),` по умолчанию, либо переопределить некоторые методы, которые он вызывает. Следующая упрощенная версия методов по умолчанию может помочь вам понять, как переопределить поведение по умолчанию.
+
+```
+// Simplified version:
+public override void DoPaint(DiagramPaintEventArgs e, ShapeElement parentShape)
+{
+  string text = GetDisplayText(shape);
+  StringFormat format = GetStringFormat(parentShape);
+  Brush brush = GetTextBrush(e.View, shape);
+  using (Font font = GetFont(shape))
+  {
+    e.Graphics.DrawString(text, font, brush, format);
+  }
+}
+// StringFormat determines whether the string is centered etc.
+// To customize statically for all instances of this shape field,
+// assign to DefaultStringFormat.
+// To customize dynamically or per shape, override this:
+public virtual StringFormat GetStringFormat(ShapeElement shape)
+{ return DefaultStringFormat; }
+
+// Override to customize the displayed string:
+public virtual string GetDisplayText(ShapeElement shape)
+{ return this.GetValue(shape).ToString(); }
+
+// Brush determines the text color.
+// To change the brush for every field, change the shape’s styleset.
+// To customize to a brush in the style set, override GetTextBrushId.
+// To change the brush to non-standard color, override this.
+// Should take account of whether selected.
+public virtual Brush GetTextBrush(DiagramClientView view, ShapeElement shape)
+{ return shape.StyleSet.GetBrush(this.GetTextBrushId(view, shape)); }
+
+// Brush ID selects a brush from a StyleSet.
+// Either return a member of DiagramBrushes
+// or add your own brush to the shape or application’s styleset.
+// Override this to change dynamically or per instance.
+// To change statically, just assign to default values.
+public virtual StyleSetResourceId GetTextBrushId(DiagramClientView view, ShapeElement shape)
+{ return IsSelected(view, shape) ? (view.Focused ? DefaultSelectedTextBrushId
+: DefaultInactiveSelectedTextBrushId ) : DefaultTextBrushId ;
+}
+
+// Font determines the shape and size of the text.
+// To change the font for every field, change the shape’s styleset.
+// To customize to a font in the style set, override GetFontId.
+// To change the font to a non-standard font, override this.
+public virtual Font GetFont(ShapeElement shape)
+{ return shape.StyleSet.GetFont(GetFontId(shape)); }
+
+// Selects a font from a styleset.
+// Either return a member of DiagramFonts or
+// add your own font to the shape or application’s styleset.
+// To change statically for all instances of this field,
+// assign to DefaultFontId.
+// To change per shape or dynamically, override this.
+public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
+{ return DefaultFontId; }
+
+```
+
+ Существует несколько других пар методов `Get` и `Default` свойств, таких как `DefaultMultipleLine/GetMultipleLine()`. Можно присвоить значение свойству по умолчанию, чтобы изменить значение для всех экземпляров поля Shape. Чтобы значение отличалось от одного экземпляра формы к другому или зависит от состояния фигуры или ее элемента модели, переопределите метод `Get`.
+
+## <a name="static-customizations"></a>Статические настройки
+ Если вы хотите изменить каждый экземпляр поля Shape, сначала определите, можно ли задать свойство в определении DSL. Например, можно задать размер и стиль шрифта в окно свойств.
+
+ В противном случае Переопределите метод `InitializeShapeFields` класса Shape и присвойте значение соответствующему свойству `Default...` текстового поля.
+
 > [!WARNING]
-> Чтобы переопределить `InitializeShapeFields()`, необходимо задать **создает двойную производную** свойство класса фигуры, чтобы `true` в определении DSL.  
-  
- В этом примере фигуры содержит текстовое поле, который будет использоваться для комментариев пользователя. Мы хотим использовать шрифт стандартным. Так как стандартные шрифт из набор стилей, можно задать идентификатор шрифта по умолчанию:  
-  
-```  
-  
- partial class ExampleShape  
-{   protected override void InitializeShapeFields(IList<ShapeField> shapeFields)  
-    {  
-      // Fields set up according to DSL Definition:  
-      base.InitializeShapeFields(shapeFields);  
-      // Find and update comment field:  
-      TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;  
-      // Use the standard font for comments:  
-      commentField.DefaultFontId = DiagramFonts.CommentText;  
-  
-```  
-  
-## <a name="dynamic-customizations"></a>Динамические настройки  
- Чтобы сделать внешний различаются, зависит от состояния фигуры и его элемента модели, являются производными собственный подкласс `TextField` и переопределите один или несколько `Get...` методы. Необходимо также переопределить метод InitializeShapeFields вашей фигуры и заменить экземпляр TextField экземпляр своего класса.  
-  
- В следующем примере создается шрифт текстового поля, зависит от состояния свойства логического домена элемента модели фигуры.  
-  
- Чтобы запустить этот пример кода, создайте новое решение DSL с помощью шаблона минимальный язык. Добавить логическое свойство `AlternateState` ExampleElement классом домена. Добавьте в класс ExampleShape декоратор значок и задать его изображение в файл растрового изображения. Нажмите кнопку **преобразовать все шаблоны**. Добавьте новый файл кода в проекте DSL и вставьте следующий код.  
-  
- Чтобы протестировать код, нажмите клавишу F5 и, в решение для отладки, откройте пример схемы. Состояние по умолчанию значок должна появиться. Выберите фигуру и в окне «Свойства» измените значение **AlternateState** свойство. Следует изменить шрифт имя элемента.  
-  
-```  
-using Microsoft.VisualStudio.Modeling;  
-using Microsoft.VisualStudio.Modeling.Diagrams;  
-...  
-  
-  partial class ExampleShape  
-  {  
-    /// <summary>  
-    /// Compose a list of the fields in this shape.  
-    /// Called once for each shape class.  
-    /// </summary>  
-    protected override void InitializeShapeFields(IList<ShapeField> shapeFields)  
-    {  
-      // Fields set up according to DSL Definition:  
-      base.InitializeShapeFields(shapeFields);  
-      // Replace the text field for NameDecorator:  
-      TextField oldField = ShapeElement.FindShapeField(shapeFields, "NameDecorator") as TextField;  
-      shapeFields.Remove(oldField);  
-      // Replace with my text field based on DSL Definition values:  
-      MyTextField newField = new MyTextField(oldField);  
-      shapeFields.Add(newField);  
-    }  
-  }  
-  /// <summary>  
-  /// Dynamic font depends on state of model element.  
-  /// </summary>  
-  public class MyTextField : TextField  
-  {  
-    public MyTextField(TextField prototype)  
-      : base(prototype.Name)  
-    {  
-      DefaultText = prototype.DefaultText;  
-      DefaultFocusable = prototype.DefaultFocusable;  
-      DefaultAutoSize = prototype.DefaultAutoSize;  
-      AnchoringBehavior.MinimumHeightInLines = prototype.AnchoringBehavior.MinimumHeightInLines;  
-      AnchoringBehavior.MinimumWidthInCharacters = prototype.AnchoringBehavior.MinimumWidthInCharacters;  
-      DefaultAccessibleState = prototype.DefaultAccessibleState;  
-    }  
-  
-    public override System.Drawing.Font GetFont(ShapeElement parentShape)  
-    {  
-      // Access the Boolean domain property of the model element:  
-      if ((parentShape.ModelElement as ExampleElement).AlternateState)  
-        return new System.Drawing.Font("Callisto", 14.0f,  
-               System.Drawing.FontStyle.Italic |   
-               System.Drawing.FontStyle.Bold);  
-      else  
-        return base.GetFont(parentShape);  
-    }  
-  
-  }  
-  
-```  
-  
-## <a name="style-sets"></a>Задает стиль  
- В предыдущем примере показано, как текстовое поле можно изменить на любой шрифт, который доступен. Тем не менее более предпочтительно, как изменить его на один из набор стилей, связанный с фигурой или с приложением. Чтобы сделать это, переопределите <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> или GetTextBrushId().  
-  
- Также можно изменить набор стилей фигуры путем переопределения <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Это влияет изменение шрифтов и кисти для всех полей фигуры.  
-  
-## <a name="customizing-image-fields"></a>Настройка полей изображения  
- При определении декоратор изображения фигуры, а также при определении фигуру изображения, области, в котором отображается фигуры управляется ImageField. Примеры инициализацию ImageFields и других которым ShapeFields проверьте Dsl\GeneratedCode\Shapes.cs в решение DSL.  
-  
- ImageField — это объект, который управляет область внутри фигуры, такие как пространство, назначенное декоратор. Один экземпляр ImageField совместно используется много фигур того же класса фигуры. Экземпляр ImageField не хранит отдельный образ для каждой фигуры: вместо этого `GetDisplayImage(ShapeElement)` метод принимает форму как параметр и выполнять поиск изображений, зависит от текущего состояния фигуры и его элемента модели.  
-  
- Если требуется специальное поведение, например переменной изображение, можно создать свой собственный класс, производный от ImageField.  
-  
-#### <a name="to-create-a-subclass-of-imagefield"></a>Чтобы создать подкласс ImageField  
-  
-1. Задайте **создает двойную производную** свойства родительского класса фигуры в определении DSL.  
-  
-2. Переопределить `InitializeShapeFields` метод класса фигуры.  
-  
-    - Создайте новый файл кода в проекте DSL и написать определение разделяемого класса для класса shape. Переопределите метод существует.  
-  
-3. Проверьте код элемента `InitializeShapeFields` в DSL\GeneratedCode\Shapes.cs.  
-  
-     В методе переопределения вызвать базовый метод и затем создать экземпляр собственного класса поля изображения. Используется для поменяйте местами поля стандартным в `shapeFields` списка.  
-  
-## <a name="dynamic-icons"></a>Динамические значки  
- В этом примере позволяет изменить значок зависит от состояния элемента модели фигуры.  
-  
+> Чтобы переопределить `InitializeShapeFields()`, необходимо установить свойство **Generated Double производного** класса shape для `true` в определении DSL.
+
+ В этом примере фигура содержит текстовое поле, которое будет использоваться для комментариев пользователя. Мы хотим использовать стандартный шрифт комментария. Так как это стандартный шрифт из набора стилей, можно задать идентификатор шрифта по умолчанию:
+
+```
+
+ partial class ExampleShape
+{   protected override void InitializeShapeFields(IList<ShapeField> shapeFields)
+    {
+      // Fields set up according to DSL Definition:
+      base.InitializeShapeFields(shapeFields);
+      // Find and update comment field:
+      TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
+      // Use the standard font for comments:
+      commentField.DefaultFontId = DiagramFonts.CommentText;
+
+```
+
+## <a name="dynamic-customizations"></a>Динамические настройки
+ Чтобы внешний вид изменяться в зависимости от состояния фигуры или ее элемента модели, следует создать собственный подкласс `TextField` и переопределить один или несколько методов `Get...`. Необходимо также переопределить метод Инитиализешапефиелдс фигуры и заменить экземпляр TextField экземпляром собственного класса.
+
+ В следующем примере шрифт текстового поля становится зависимым от состояния логического свойства домена элемента модели фигуры.
+
+ Чтобы выполнить этот пример кода, создайте новое решение DSL с использованием шаблона минимального языка. Добавьте логическое свойство домена `AlternateState` в доменный класс Ексамплилемент. Добавьте декоратор значка в класс Ексамплешапе и присвойте его образу растровый файл. Щелкните **преобразовать все шаблоны**. Добавьте новый файл кода в проект DSL и вставьте следующий код.
+
+ Чтобы протестировать код, нажмите клавишу F5, а затем в решении отладки Откройте образец схемы. Должно отобразиться состояние значка по умолчанию. Выберите фигуру и в окно свойств измените значение свойства **алтернатестате** . Шрифт имени элемента должен измениться.
+
+```
+using Microsoft.VisualStudio.Modeling;
+using Microsoft.VisualStudio.Modeling.Diagrams;
+...
+
+  partial class ExampleShape
+  {
+    /// <summary>
+    /// Compose a list of the fields in this shape.
+    /// Called once for each shape class.
+    /// </summary>
+    protected override void InitializeShapeFields(IList<ShapeField> shapeFields)
+    {
+      // Fields set up according to DSL Definition:
+      base.InitializeShapeFields(shapeFields);
+      // Replace the text field for NameDecorator:
+      TextField oldField = ShapeElement.FindShapeField(shapeFields, "NameDecorator") as TextField;
+      shapeFields.Remove(oldField);
+      // Replace with my text field based on DSL Definition values:
+      MyTextField newField = new MyTextField(oldField);
+      shapeFields.Add(newField);
+    }
+  }
+  /// <summary>
+  /// Dynamic font depends on state of model element.
+  /// </summary>
+  public class MyTextField : TextField
+  {
+    public MyTextField(TextField prototype)
+      : base(prototype.Name)
+    {
+      DefaultText = prototype.DefaultText;
+      DefaultFocusable = prototype.DefaultFocusable;
+      DefaultAutoSize = prototype.DefaultAutoSize;
+      AnchoringBehavior.MinimumHeightInLines = prototype.AnchoringBehavior.MinimumHeightInLines;
+      AnchoringBehavior.MinimumWidthInCharacters = prototype.AnchoringBehavior.MinimumWidthInCharacters;
+      DefaultAccessibleState = prototype.DefaultAccessibleState;
+    }
+
+    public override System.Drawing.Font GetFont(ShapeElement parentShape)
+    {
+      // Access the Boolean domain property of the model element:
+      if ((parentShape.ModelElement as ExampleElement).AlternateState)
+        return new System.Drawing.Font("Callisto", 14.0f,
+               System.Drawing.FontStyle.Italic |
+               System.Drawing.FontStyle.Bold);
+      else
+        return base.GetFont(parentShape);
+    }
+
+  }
+
+```
+
+## <a name="style-sets"></a>Наборы стилей
+ В предыдущем примере показано, как можно изменить текстовое поле на любой доступный шрифт. Однако предпочтительным методом является изменение его на один из набора стилей, связанных с фигурой или с приложением. Для этого переопределите <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> или Жеттекстбрушид ().
+
+ Кроме того, попробуйте изменить набор стилей фигуры, переопределив <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Это влияет на изменение шрифтов и кистей для всех полей фигур.
+
+## <a name="customizing-image-fields"></a>Настройка полей изображений
+ При определении декоратора изображения в фигуре и при определении фигуры изображения область, в которой отображается фигура, управляется с помощью Имажефиелд. Примеры инициализации Имажефиелдс и других ShapeFields см. в Дсл\женератедкоде\шапес.КС в решении DSL.
+
+ Имажефиелд — это объект, управляющий областью внутри фигуры, например пространство, назначенное декоратору. Один экземпляр Имажефиелд является общим для многих фигур одного класса Shape. Экземпляр Имажефиелд не сохраняет отдельный образ для каждой фигуры: вместо этого метод `GetDisplayImage(ShapeElement)` принимает форму в качестве параметра и может выполнять поиск изображения, зависящего от текущего состояния фигуры и ее элемента модели.
+
+ Если требуется специальное поведение, например изображение переменной, можно создать собственный класс, производный от Имажефиелд.
+
+#### <a name="to-create-a-subclass-of-imagefield"></a>Создание подкласса Имажефиелд
+
+1. Задайте свойство **Generated Double производного** класса родительской фигуры в определении DSL.
+
+2. Переопределите метод `InitializeShapeFields` класса Shape.
+
+    - Создайте новый файл кода в проекте DSL и запишите определение разделяемого класса для класса Shape. Переопределите здесь определение метода.
+
+3. Проверка кода `InitializeShapeFields` в Дсл\женератедкоде\шапес.КС.
+
+     В методе переопределения вызовите базовый метод, а затем создайте экземпляр собственного класса поля Image. Используйте этот параметр, чтобы заменить стандартное поле изображения в списке `shapeFields`.
+
+## <a name="dynamic-icons"></a>Динамические значки
+ В этом примере изменяется значок, зависящий от состояния элемента модели фигуры.
+
 > [!WARNING]
-> В этом примере показано, как осуществлять декоратор динамического изображения. Но если требуется только для переключения между один или два образа в зависимости от состояния переменной модели, проще создать несколько декораторов образ, найдите их в той же позиции на фигуре и установите фильтр видимости, чтобы он зависел от определенных значений модели переменная. Чтобы задать этот фильтр, выберите сопоставление фигуры в определении DSL, откройте окно сведений DSL и перейдите на вкладку декораторов.  
-  
- Чтобы запустить этот пример кода, создайте новое решение DSL с помощью шаблона минимальный язык. Добавить логическое свойство `AlternateState` ExampleElement классом домена. Добавьте в класс ExampleShape декоратор значок и задать его изображение в файл растрового изображения. Нажмите кнопку **преобразовать все шаблоны**. Добавьте новый файл кода в проекте DSL и вставьте следующий код.  
-  
- Чтобы протестировать код, нажмите клавишу F5 и, в решение для отладки, откройте пример схемы. Состояние по умолчанию значок должна появиться. Выберите фигуру и в окне «Свойства» измените значение **AlternateState** свойство. Значок должно отобразиться повернутый через 90 градусов, на этой фигуре.  
-  
-```csharp  
-using Microsoft.VisualStudio.Modeling;  
-using Microsoft.VisualStudio.Modeling.Diagrams;  
-...  
-partial class ExampleShape  
-{  
-    /// <summary>  
-    /// Compose a list of the fields in this shape.  
-    /// Called once for each shape class.  
-    /// </summary>  
-    /// <param name="shapeFields"></param>  
-    protected override void InitializeShapeFields(IList<ShapeField> shapeFields)  
-    {  
-      // Fields set up according to DSL Definition:  
-      base.InitializeShapeFields(shapeFields);  
-  
-      // Replace the image field:  
-      ShapeField oldField = ShapeElement.FindShapeField(shapeFields, "IconDecorator");  
-      shapeFields.Remove(oldField);  
-      // Must keep the same name:  
-      MyImageField newField = new MyImageField(oldField.Name);  
-      shapeFields.Add(newField);  
-      newField.DefaultImage = (oldField as ImageField).DefaultImage.Clone() as System.Drawing.Image;  
-    }  
-  }  
-  
-  public class MyImageField : ImageField  
-  {  
-    public MyImageField(string tag) : base(tag) { }  
-  
-    /// <summary>  
-    /// Get the image for this field in the given shape.  
-    /// </summary>  
-    public override System.Drawing.Image GetDisplayImage(ShapeElement parentShape)  
-    {  
-      ExampleElement element = parentShape.ModelElement as ExampleElement;  
-      if (element.AlternateState == true)  
-        return AlternateImage;  
-      else  
-        return base.GetDisplayImage(parentShape);  
-    }  
-  
-    private System.Drawing.Image alternateImage;  
-    public System.Drawing.Image AlternateImage  
-    {  
-      get  
-      {  
-        if (alternateImage == null)  
-        {  
-          // Alternate image is a copy of the default, rotated by 90 degrees:  
-          alternateImage = this.DefaultImage.Clone() as System.Drawing.Image;  
-          alternateImage.RotateFlip(System.Drawing.RotateFlipType.Rotate90FlipNone);  
-        }  
-        return alternateImage;  
-      }  
-    }  
-  }  
-}  
-  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md)   
- [Задание фонового изображения схемы](../modeling/setting-a-background-image-on-a-diagram.md)   
- [Переход и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+> В этом примере показано, как создать декоратор динамического изображения. Но если вы хотите переключаться между одним или двумя изображениями в зависимости от состояния переменной модели, проще всего создать несколько декораторов изображений, поместить их в одну и ту же точку на фигуре, а затем установить фильтр видимости в зависимости от определенных значений модели. перемен. Чтобы установить этот фильтр, выберите карту фигур в определении DSL, откройте окно "сведения о DSL" и перейдите на вкладку декораторы.
+
+ Чтобы выполнить этот пример кода, создайте новое решение DSL с использованием шаблона минимального языка. Добавьте логическое свойство домена `AlternateState` в доменный класс Ексамплилемент. Добавьте декоратор значка в класс Ексамплешапе и присвойте его образу растровый файл. Щелкните **преобразовать все шаблоны**. Добавьте новый файл кода в проект DSL и вставьте следующий код.
+
+ Чтобы протестировать код, нажмите клавишу F5, а затем в решении отладки Откройте образец схемы. Должно отобразиться состояние значка по умолчанию. Выберите фигуру и в окно свойств измените значение свойства **алтернатестате** . Значок должен отображаться на этой фигуре с поворотом на 90 градусов.
+
+```csharp
+using Microsoft.VisualStudio.Modeling;
+using Microsoft.VisualStudio.Modeling.Diagrams;
+...
+partial class ExampleShape
+{
+    /// <summary>
+    /// Compose a list of the fields in this shape.
+    /// Called once for each shape class.
+    /// </summary>
+    /// <param name="shapeFields"></param>
+    protected override void InitializeShapeFields(IList<ShapeField> shapeFields)
+    {
+      // Fields set up according to DSL Definition:
+      base.InitializeShapeFields(shapeFields);
+
+      // Replace the image field:
+      ShapeField oldField = ShapeElement.FindShapeField(shapeFields, "IconDecorator");
+      shapeFields.Remove(oldField);
+      // Must keep the same name:
+      MyImageField newField = new MyImageField(oldField.Name);
+      shapeFields.Add(newField);
+      newField.DefaultImage = (oldField as ImageField).DefaultImage.Clone() as System.Drawing.Image;
+    }
+  }
+
+  public class MyImageField : ImageField
+  {
+    public MyImageField(string tag) : base(tag) { }
+
+    /// <summary>
+    /// Get the image for this field in the given shape.
+    /// </summary>
+    public override System.Drawing.Image GetDisplayImage(ShapeElement parentShape)
+    {
+      ExampleElement element = parentShape.ModelElement as ExampleElement;
+      if (element.AlternateState == true)
+        return AlternateImage;
+      else
+        return base.GetDisplayImage(parentShape);
+    }
+
+    private System.Drawing.Image alternateImage;
+    public System.Drawing.Image AlternateImage
+    {
+      get
+      {
+        if (alternateImage == null)
+        {
+          // Alternate image is a copy of the default, rotated by 90 degrees:
+          alternateImage = this.DefaultImage.Clone() as System.Drawing.Image;
+          alternateImage.RotateFlip(System.Drawing.RotateFlipType.Rotate90FlipNone);
+        }
+        return alternateImage;
+      }
+    }
+  }
+}
+
+```
+
+## <a name="see-also"></a>См. также раздел
+ [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md) [Установка фонового изображения на схеме](../modeling/setting-a-background-image-on-a-diagram.md) [Навигация и обновление модели в коде программного кода](../modeling/navigating-and-updating-a-model-in-program-code.md) [Создание кода для настройки предметно-ориентированного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)
