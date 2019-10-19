@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::InsertText | Документация Майкрософт
+title: 'Идебугдокументтекстаусор:: Инсерттекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 678e2429e98f268d65f9c29704e2e9d5a1a8538c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad927f417c44b471a3fcee96695a1109d33ed17e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970904"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572060"
 ---
 # <a name="idebugdocumenttextauthorinserttext"></a>IDebugDocumentTextAuthor::InsertText
-Вставляет новый текст в документ.  
+Вставляет в документ новый текст.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,24 +39,24 @@ HRESULT InsertText(
   
 #### <a name="parameters"></a>Параметры  
  `cCharacterPosition`  
- [in] Расположение для вставки текста.  
+ окне Расположение для вставки текста.  
   
  `cNumToInsert`  
- [in] Число символов для вставки.  
+ окне Число вставляемых символов.  
   
  `pcharText[]`  
- [in] Буфер, содержащий символы, которые требуется вставить.  
+ окне Буфер, содержащий вставляемые символы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вставляет новый текст в документ.  
+## <a name="remarks"></a>Заметки  
+ Этот метод вставляет в документ новый текст.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+ @No__t_1 [интерфейса идебугдокументтекстаусор](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)
