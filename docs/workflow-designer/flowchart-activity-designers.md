@@ -1,25 +1,25 @@
 ---
-title: Конструктор рабочих процессов - конструкторы действий блок-схема
+title: Конструктор рабочих процессов конструкторы действий блок-схемы
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f3b816c0e486eeaad49bac0b0054d7d3c2bff9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949647"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650442"
 ---
 # <a name="flowchart-activity-designers"></a>Конструктор действия блок-схемы
 
-Конструктор рабочих процессов включает в себя ряд предоставляемых системой действий, которые можно использовать для построения рабочих процессов. Данный раздел содержит действия, предоставленные системой и используемые для управления блок-схемами в пределах рабочего процесса. В следующих подразделах приводится описание этих действий, а также описание их использования.
+Конструктор рабочих процессов включает ряд предоставляемых системой действий, которые можно использовать при создании рабочих процессов. Данный раздел содержит действия, предоставленные системой и используемые для управления блок-схемами в пределах рабочего процесса. В следующих подразделах приводится описание этих действий, а также описание их использования.
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>

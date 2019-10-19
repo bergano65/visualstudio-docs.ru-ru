@@ -3,17 +3,17 @@ title: Набор правил "Расширенные нормы и прави�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d37e540df9a480f559e81e650f57ad5bb87d0ddd
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: f1063b65c0b82900edf2b13010b9aa55139970dd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535887"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649633"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные нормы и правила разработки" для управляемого кода
 

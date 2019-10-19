@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172785"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606548"
 ---
 # <a name="enable-a-category-of-rules"></a>Включение категории правил
 
@@ -28,7 +28,7 @@ ms.locfileid: "72172785"
 
 - Все правила
 - Поток данных
-- в разработке
+- Конструктор
 - Документация
 - Глобализация
 - Взаимодействие
@@ -53,13 +53,13 @@ ms.locfileid: "72172785"
 
 ## <a name="predefined-editorconfig-files"></a>Предопределенные файлы EditorConfig
 
-Предопределенные файлы EditorConfig для пакета анализатора Microsoft. CodeAnalysis. Фкскопанализерс расположены в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс @ no__t-2 @ no__t-3version @ no__t-4\editorconfig* каталог. Например, файл EditorConfig для включения всех правил безопасности находится в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс @ no__t-2 @ no__t-3version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__ t-5. editorconfig*.
+Предопределенные файлы EditorConfig для пакета анализатора Microsoft. CodeAnalysis. Фкскопанализерс расположены в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс \\ \<version \> \едиторконфиг* каталог. Например, файл EditorConfig для включения всех правил безопасности находится в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс \\ \<version \> \едиторконфиг\секуритирулесенаблед \\. editorconfig*.
 
 Скопируйте выбранный файл. editorconfig в корневой каталог проекта.
 
 ## <a name="predefined-rule-sets"></a>Предопределенные наборы правил
 
-Стандартные файлы набора правил для пакета анализатора Microsoft. CodeAnalysis. Фкскопанализерс расположены в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс @ no__t-2 @ no__t-3version @ no__t-4\rulesets* каталоги. Например, файл набора правил для включения всех правил безопасности находится в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс @ no__t-2 @ no__t-3version @ no__t-4\rulesets\SecurityRulesEnabled.RuleSet*.
+Стандартные файлы набора правил для пакета анализатора Microsoft. CodeAnalysis. Фкскопанализерс расположены в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс \\ \<version \> \рулесетс* каталоги. Например, файл набора правил для включения всех правил безопасности находится в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс \\ \<version \> \рулесетс\секуритирулесенаблед.рулесет*.
 
 Скопируйте один или несколько наборов правил и вставьте их в каталог, содержащий проект Visual Studio, или непосредственно в **Обозреватель решений**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "72172785"
 
 #### <a name="net-core"></a>.NET Core
 
-Чтобы сделать правило набором активных правил для анализа в проектах .NET Core или .NET Standard, добавьте свойство **кодеаналисисрулесет** в файл проекта вручную. Например, следующий фрагмент кода задает `HelloWorld.ruleset` в качестве активного набора правил.
+Чтобы сделать правило набором активных правил для анализа в проектах .NET Core или .NET Standard, добавьте свойство **кодеаналисисрулесет** в файл проекта вручную. Например, следующий фрагмент кода задает `HelloWorld.ruleset` как активный набор правил.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

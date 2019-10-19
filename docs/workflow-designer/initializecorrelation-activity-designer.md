@@ -1,25 +1,25 @@
 ---
-title: Конструктор рабочих процессов - конструктор действия InitializeCorrelation
+title: Конструктор действий конструктор рабочих процессов InitializeCorrelation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.InitializeCorrelation.UI
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496aefb2679edd87c892c54f44b14876b4ebce5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98a9a6bccb6eab2c4565a717daa897f93dbe8f53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536443"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650227"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Конструктор действия InitializeCorrelation
 
-**InitializeCorrelation** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.InitializeCorrelation> действия. <xref:System.ServiceModel.Activities.InitializeCorrelation> Действие устанавливает корреляцию между сообщения перед их отправкой или получением.
+Конструктор действий **InitializeCorrelation** используется для создания и настройки действия <xref:System.ServiceModel.Activities.InitializeCorrelation>. Действие <xref:System.ServiceModel.Activities.InitializeCorrelation> устанавливает корреляцию между сообщениями перед их отправкой или получением.
 
 ## <a name="the-initializecorrelation-activity"></a>Действие InitializeCorrelation
 
@@ -27,23 +27,23 @@ ms.locfileid: "62536443"
 
 ### <a name="using-the-initializecorrelation-activity-designer"></a>Использование конструктора действий InitializeCorrelation
 
-Доступ **InitializeCorrelation** конструктора действий в **Messaging** категории **элементов**.
+Доступ к конструктору действий **InitializeCorrelation** в категории **обмена сообщениями** **панели элементов**.
 
-**InitializeCorrelation** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов. Удаление конструктора действий создает <xref:System.ServiceModel.Activities.InitializeCorrelation> действие по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для InitializeCorrelation. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **InitializeCorrelation** конструктора действий или в **DisplayName** поле **свойства** окна.
+Конструктор действий **InitializeCorrelation** можно перетащить из **области элементов** в область Конструктор рабочих процессов. При удалении конструктора действий создается <xref:System.ServiceModel.Activities.InitializeCorrelation> действие с <xref:System.Activities.Activity.DisplayName%2A>ом по умолчанию InitializeCorrelation. @No__t_0 можно изменить в заголовке конструктора действий **InitializeCorrelation** или в поле **DisplayName** окна **Свойства** .
 
-<xref:System.ServiceModel.Activities.CorrelationHandle> Может быть указывает в **корреляции** в **свойства** окно на **InitializeCorrelation** рабочей области конструктора действий.
+@No__t_0 можно указать в поле " **корреляция** " в окне " **свойства** " в области конструктора действий **InitializeCorrelation** .
 
-Для отображения **инициализация корреляции** диалоговое окно, где можно указать дескриптор взаимосвязи и пары ключ значение, используемое для инициализации, выберите кнопку с многоточием рядом с полем **CorrelationData** в поле **свойства** окна. Или выбрать текстом подсказки «Вид …» на **InitializeCorrelation** рабочей области конструктора действий. Дополнительные сведения об использовании это диалоговое окно, см. в разделе [диалоговое окно редактора коллекции типа](../workflow-designer/type-collection-editor-dialog-box.md) статьи.
+Чтобы открыть диалоговое окно " **Инициализация корреляции** ", в котором можно указать маркер корреляции и пары "ключ-значение", используемые для его инициализации, нажмите кнопку с многоточием рядом с полем **CorrelationData** в окне " **Свойства** ". Или выберите "View..." (Просмотр...) текст подсказки на поверхности конструктора действий **InitializeCorrelation** . Дополнительные сведения об использовании этого диалогового окна см. в статье [диалоговое окно Редактор коллекции типов](../workflow-designer/type-collection-editor-dialog-box.md) .
 
 ### <a name="the-initializecorrelation-properties"></a>Свойства InitializeCorrelation
 
-В следующей таблице показаны <xref:System.ServiceModel.Activities.InitializeCorrelation> свойства и показывается, как они используются в конструкторе. Эти свойства можно изменить в **свойства** окне или на поверхности конструктора рабочих процессов.
+В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.InitializeCorrelation> и описано, как они используются в конструкторе. Эти свойства можно изменять в окне " **Свойства** " или на конструктор рабочих процессов поверхности.
 
-|Имя свойства|Обязательно|Использование|
+|Имя свойства|Обязательное значение|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.ServiceModel.Activities.InitializeCorrelation>. По умолчанию используется InitializeCorrelation.<br /><br /> Несмотря на то что использование нестандартное значение для понятного имени <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, рекомендуется.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.ServiceModel.Activities.InitializeCorrelation>. По умолчанию используется InitializeCorrelation.<br /><br /> Хотя использование значения, отличного от используемого по умолчанию, для понятного <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, рекомендуется.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> используется для привязки действий рабочих процессов в корреляции.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Словарь данных корреляции привязывает сообщения к данному экземпляру рабочего потока.<br /><br /> Используйте **инициализация корреляции** диалоговое окно для настройки <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Дополнительные сведения об использовании это диалоговое окно, см. в разделе [диалоговое окно редактора коллекции типа](../workflow-designer/type-collection-editor-dialog-box.md) статьи.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Словарь данных корреляции привязывает сообщения к данному экземпляру рабочего потока.<br /><br /> Используйте диалоговое окно " **Инициализация корреляции** " для настройки <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Дополнительные сведения об использовании этого диалогового окна см. в статье [диалоговое окно Редактор коллекции типов](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
 ## <a name="see-also"></a>См. также
 
