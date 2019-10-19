@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd491ea0a17bcc0a4fccc0ade205736daae552d5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871860"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646151"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-При написании [расширения Visual Studio](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) , такого как команда меню или доменный [язык](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), можно использовать службу текстовых шаблонов для преобразования текстовых шаблонов. Получите службу [стексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) и приведите ее к [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+При написании [расширения Visual Studio](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) , такого как команда меню или [доменный язык](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), можно использовать службу текстовых шаблонов для преобразования текстовых шаблонов. Получите службу [стексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) и приведите ее к [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
 
 ## <a name="getting-the-text-templating-service"></a>Получение службы текстовых шаблонов
 
@@ -140,8 +140,8 @@ Sample text.
  Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>См. также
- Создание текста из предварительно обработанного текстового шаблона Вызовите метод `TransformText()` сгенерированного класса. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Чтобы создать текст из предварительно обработанного текстового шаблона, вызовите метод `TransformText()` созданного класса. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Создание текста за пределами расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Определите пользовательское ведущее приложение. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Для создания текста вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ного расширения: определите пользовательский узел. Дополнительные сведения см. [в разделе Обработка текстовых шаблонов с помощью пользовательского узла](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Создание исходного кода с возможностью последующей компиляции и выполнения Вызовите метод [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) объекта [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+ Для создания исходного кода, который впоследствии может быть скомпилирован и выполнен: вызовите метод [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) объекта [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

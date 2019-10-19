@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871555"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657186"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "68871555"
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Элементы, используемые для управляемого данными тестирования
- Для настройки управляемых данными модульных тестов используются перечисленные ниже элементы. Дополнительные сведения см. в [разделе как Создание модульного теста](../test/how-to-create-a-data-driven-unit-test.md) , управляемого данными [, и пошаговое руководство. Использование файла конфигурации для определения источника](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)данных.
+ Для настройки управляемых данными модульных тестов используются перечисленные ниже элементы. Дополнительные сведения см. в разделах [Практическое руководство. Создание модульного теста, управляемого данными](../test/how-to-create-a-data-driven-unit-test.md) и [Пошаговое руководство. Использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 

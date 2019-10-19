@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975062"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649388"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Практическое руководство. Синхронизация наборов правил проекта кода с политикой возврата проекта Azure DevOps
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Как синхронизировать наборы правил проекта кода с политикой возврата проекта Azure DevOps
 
 Вы синхронизируете параметры анализа кода для проектов кода с политикой возврата для проекта Azure DevOps, указывая набор правил, содержащий по крайней мере правила, указанные в наборе правил для политики возврата. Руководитель разработчика может сообщить имя и расположение набора правил для политики возврата. Чтобы убедиться в том, что для анализа кода проекта используется правильный набор правил, можно использовать один из следующих параметров:
 
@@ -31,7 +31,7 @@ ms.locfileid: "71975062"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Указание набора стандартных правил Майкрософт
 
-1. В **обозревателе решений**, щелкните правой кнопкой мыши проект кода и нажмите кнопку **свойства**.
+1. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
 
 2. Щелкните **анализ кода**.
 
@@ -51,7 +51,7 @@ ms.locfileid: "71975062"
 
 1. При необходимости выполните операцию Get с файлом набора правил, который указывает политику возврата.
 
-2. В **обозревателе решений**, щелкните правой кнопкой мыши проект кода и нажмите кнопку **свойства**.
+2. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
 
 3. Щелкните **анализ кода**.
 

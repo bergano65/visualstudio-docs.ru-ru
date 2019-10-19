@@ -1,5 +1,5 @@
 ---
-title: CA1308. Строки следует нормализовать в верхний регистр | Документация Майкрософт
+title: 'CA1308: нормализация строк до верхнего регистра | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - CA1308
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8385839ce7029ef0676225fd443582ba750b618b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfe8495184bf4daadb3bf8899ee2857a9743c842
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200393"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661389"
 ---
-# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308. Нормализуйте строки в верхний регистр
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: строки следует нормализовать в верхнем регистре
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
-|Категория|Microsoft.Globalization|
+|Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
  Операция нормализует строку в нижний регистр.
 
 ## <a name="rule-description"></a>Описание правила
- Строки следует нормализовать в верхний регистр. Небольшая группа символов, когда они преобразуются в нижний регистр, не может участвовать в круговом. Чтобы участвовать в круговом перемещении означает, что для преобразования символов в разных национальных настройках другой языковой стандарт, который представляет символьные данные по-разному, а затем точно получить исходные символы из преобразованных символов.
+ Строки следует нормализовать в верхний регистр. Небольшая группа символов, при преобразовании в нижний регистр, не может выполнить цикл обработки. Для преобразования символов из одного языкового стандарта в другой языковой стандарт, представляющий символьные данные по-разному, а затем для точного извлечения исходных символов из преобразованных символов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Изменить операции, которые преобразуют строки в нижний регистр, чтобы строки преобразуются в верхний регистр. Например, измените `String.ToLower(CultureInfo.InvariantCulture)` на `String.ToUpper(CultureInfo.InvariantCulture)`.
+ Операции изменения преобразуют строки в нижний регистр, чтобы строки были преобразованы в верхний регистр. Например, измените `String.ToLower(CultureInfo.InvariantCulture)` на `String.ToUpper(CultureInfo.InvariantCulture)`.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение, если вы не выполняете решение безопасности на основе результата (например, если он отображается в пользовательском Интерфейсе).
+ Если вы не принимаете решение о безопасности на основе результата (например, при отображении в пользовательском интерфейсе), можно спокойно отключить вывод предупреждающего сообщения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Предупреждения глобализации](../code-quality/globalization-warnings.md)

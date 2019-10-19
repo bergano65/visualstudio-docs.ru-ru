@@ -1,25 +1,25 @@
 ---
-title: Конструктор рабочих процессов - конструктор действия CancellationScope
+title: Конструктор действий конструктор рабочих процессов CancellationScope
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a818be208c7e07ef74a8f35923f3042bb8fad5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a2fd36d81f774ca48cca170b8a4a256d73cf1f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009794"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650706"
 ---
 # <a name="cancellationscope-activity-designer"></a>Конструктор действия CancellationScope
 
-**CancellationScope** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.CancellationScope> действия.
+Конструктор действий **CancellationScope** используется для создания и настройки действия <xref:System.Activities.Statements.CancellationScope>.
 
 ## <a name="the-cancellationscope-activity"></a>Действие CancellationScope
 
@@ -27,19 +27,19 @@ ms.locfileid: "63009794"
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>Использование конструктора операций CancellationScope
 
-**CancellationScope** конструктора действий можно найти в **транзакции** категории **элементов**. Чтобы открыть **элементов**выберите **элементов** вкладке конструктора рабочих процессов. Можно также выбрать **элементов** из **представление** меню или нажмите клавишу **Ctrl**+**Alt** + **X**.
+Конструктор действия **CancellationScope** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов**, выберите вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** +**ALT** +**X**.
 
-**CancellationScope** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Удаление **CancellationScope** конструктора действий создает <xref:System.Activities.Statements.CancellationScope> действие по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для CancellationScope. Изменить <xref:System.Activities.Activity.DisplayName%2A> значение в заголовке **CancellationScope** конструктора действий. Вы также можете изменить его в **DisplayName** поле таблицы свойств.
+Конструктор действий **CancellationScope** можно перетаскивать из **панели элементов** в область Конструктор рабочих процессов, где бы они ни находились, как в <xref:System.Activities.Statements.Sequence>. При удалении конструктора действий **CancellationScope** создается действие <xref:System.Activities.Statements.CancellationScope> с <xref:System.Activities.Activity.DisplayName%2A>ом по умолчанию CancellationScope. Измените значение <xref:System.Activities.Activity.DisplayName%2A> в заголовке конструктора действий **CancellationScope** . Его также можно изменить в поле **DisplayName** сетки свойств.
 
 ### <a name="the-cancellationscope-properties"></a>Свойства CancellationScope
 
-В следующей таблице показаны свойства <xref:System.Activities.Statements.CancellationScope> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> Свойства можно изменить в таблице свойств, но другие свойства следует изменять в поверхности конструктора рабочих процессов.
+В следующей таблице показаны свойства <xref:System.Activities.Statements.CancellationScope> и описано их использование в конструкторе. Свойство <xref:System.Activities.Activity.DisplayName%2A> можно изменить в сетке свойств, но другие свойства необходимо изменить на поверхности конструктор рабочих процессов.
 
-|Имя свойства|Обязательно|Использование|
+|Имя свойства|Обязательное значение|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.Activities.Statements.CancellationScope>. По умолчанию - CancellationScope. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Указывает действие, для которого предусмотрена отменяющая логика. Чтобы добавить <xref:System.Activities.Statements.CancellationScope.Body%2A> действие, перетащите его из **элементов** в **текст** поле на **CancellationScope** конструктора действий. Добавьте текстом подсказки «Перетащить действие сюда».|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Указывает действие, выполняемое, если имеется отмены. Чтобы добавить <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> действие, перетащите его из **элементов** в **CancellationHandler** поле **CancellationScope** конструктора действий. Добавьте текстом подсказки «Перетащить действие сюда».|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Указывает действие, для которого предусмотрена отменяющая логика. Чтобы добавить действие <xref:System.Activities.Statements.CancellationScope.Body%2A>, перетащите действие из **области элементов** в поле **текст** в конструкторе действий **CancellationScope** . Добавьте текст подсказки "перетащите действие сюда".|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Указывает действие, выполняемое при отмене. Чтобы добавить действие <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>, перетащите действие из **области элементов** в поле **CancellationHandler** конструктора действий **CancellationScope** . Добавьте текст подсказки "перетащите действие сюда".|
 
 ## <a name="see-also"></a>См. также
 

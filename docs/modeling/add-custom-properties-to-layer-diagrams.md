@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ef03b3833f30c1376bd3b2787f4ca773c992ef
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870674"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652299"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Добавление пользовательских свойств в схемы зависимостей
 
@@ -22,7 +22,7 @@ ms.locfileid: "68870674"
 
 ## <a name="non-visible-properties"></a>Свойства, не являющиеся видимыми
 
-Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В [ILayerElement](/previous-versions/ff644511(v=vs.140)) есть словарь с именем `Properties`. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
+Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В [илайерелемент](/previous-versions/ff644511(v=vs.140))имеется словарь с именем `Properties`. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
 
 ## <a name="editable-properties"></a>Редактируемые свойства
 
