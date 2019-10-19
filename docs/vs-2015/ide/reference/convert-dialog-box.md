@@ -12,33 +12,32 @@ helpviewer_keywords:
 - Convert dialog box
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8dfceb7ca6221a342a5adbc3b3fcd3c193e0109e
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 62f81e6a697089d7a352f652ad9f77d279faac0c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660810"
 ---
 # <a name="convert-dialog-box"></a>Диалоговое окно "Преобразование"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Диалоговое окно **Преобразование** позволяет выбирать средство преобразования для создания нового проекта из старого, например проекта [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] из проекта Visual Basic 6. Можно также использовать [преобразователь проектов Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), доступный на веб-сайте CodePlex, чтобы обновить проекты, созданные в предыдущих версиях Visual Studio.  
-  
+Диалоговое окно **Преобразование** позволяет выбирать средство преобразования для создания нового проекта из старого, например проекта [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] из проекта Visual Basic 6. Можно также использовать [преобразователь проектов Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), доступный на веб-сайте CodePlex, чтобы обновить проекты, созданные в предыдущих версиях Visual Studio.
+
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
-## <a name="opening-the-convert-dialog-box"></a>Открытие диалогового окна "Преобразование"  
-  
-#### <a name="to-access-the-convert-dialog-box"></a>Доступ к диалоговому окну "Преобразование"  
-  
-1. В строке меню выберите **Файл**, **Открыть**, **Преобразовать**.  
-  
-     Вы увидите список доступных средств для преобразования кода.  
-  
-2. Выберите средство, которое подходит для вашего приложения.  
-  
-## <a name="see-also"></a>См. также  
- [(NOTINBUILD) Практическое руководство. Обновление проекта Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
- [Перенос, миграция и обновление проектов Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+## <a name="opening-the-convert-dialog-box"></a>Открытие диалогового окна "Преобразование"
+
+#### <a name="to-access-the-convert-dialog-box"></a>Доступ к диалоговому окну "Преобразование"
+
+1. В строке меню выберите **Файл**, **Открыть**, **Преобразовать**.
+
+     Вы увидите список доступных средств для преобразования кода.
+
+2. Выберите средство, которое подходит для вашего приложения.
+
+## <a name="see-also"></a>См. также
+ [Сборке. Обновление проекта с Visual Basic 6,0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9) [Перенос, миграция и обновление проектов Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

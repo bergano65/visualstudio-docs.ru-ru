@@ -9,41 +9,38 @@ helpviewer_keywords:
 - Set Current Process command
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed19c5b95351f8e9c34255a915fc6a446800f761
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c362d3f5dda5015e91ac88dd8f0abd60a185ba72
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163343"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665468"
 ---
 # <a name="set-current-process"></a>Команда Set Current Process
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Задает указанный процесс в качестве активного процесса в отладчике.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Debug.SetCurrentProcess index  
-```  
-  
-## <a name="arguments"></a>Аргументы  
- `index`  
- Обязательный. Индекс процесса.  
-  
-## <a name="remarks"></a>Примечания  
- Во время отладки можно подключиться к нескольким процессам, но в любой момент времени только один из них будет активным в отладчике. Чтобы задать активный процесс, можно использовать команду `SetCurrentProcess`.  
-  
-## <a name="example"></a>Пример  
-  
-```  
->Debug.SetCurrentProcess 1  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Командное окно](../../ide/reference/command-window.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Задает указанный процесс в качестве активного процесса в отладчике.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Debug.SetCurrentProcess index
+```
+
+## <a name="arguments"></a>Аргументы
+ `index` Обязательный. Индекс процесса.
+
+## <a name="remarks"></a>Примечания
+ Во время отладки можно подключиться к нескольким процессам, но в любой момент времени только один из них будет активным в отладчике. Чтобы задать активный процесс, можно использовать команду `SetCurrentProcess`.
+
+## <a name="example"></a>Пример
+
+```
+>Debug.SetCurrentProcess 1
+```
+
+## <a name="see-also"></a>См. также
+ Команды [Visual Studio](../../ide/reference/visual-studio-commands.md) командное [окно](../../ide/reference/command-window.md) команд [Visual Studio псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)

@@ -14,73 +14,59 @@ helpviewer_keywords:
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f9c54691ed343493ef1e43798faf4d2ab6f60fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200889"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662110"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Указывает отдельный проект в заданной конфигурации решения для сборки, очистки, перестроения или развертывания.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName   
-[/project ProjName] [/projectconfig ProjConfigName]   
-```  
-  
-## <a name="arguments"></a>Аргументы  
- /build  
- Выполняет сборку проекта, заданного в `/project` `ProjName`.  
-  
- /clean  
- Удаляет все промежуточные файлы и выходные каталоги, созданные во время сборки.  
-  
- /rebuild  
- Очищает проект, заданный в `/project` `ProjName`, а затем выполняет его сборку.  
-  
- /deploy  
- Указывает, что проект должен быть развернут после сборки или перестроения.  
-  
- `SolnConfigName`  
- Обязательный. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.  
-  
- `SolutionName`  
- Обязательный. Полный путь и имя для файла решения.  
-  
- /project `ProjName`  
- Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.  
-  
- /projectconfig `ProjConfigName`  
- Необязательный параметр. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.  
-  
-## <a name="remarks"></a>Примечания  
-  
-- Следует использовать в составе команды `devenv /build`, /`clean`, `/rebuild` или `/deploy`.  
-  
-- Строки с пробелами заключаются в двойные кавычки.  
-  
-- Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.  
-  
-## <a name="example"></a>Пример  
- В этом примере выполняется сборка проекта `CSharpConsoleApp` с использованием конфигурации проекта `Debug` в пределах конфигурация решения `Debug` для `MySolution`.  
-  
-```  
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
-```  
-  
-## <a name="see-also"></a>См. также  
- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)   
- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
- [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)   
- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+Указывает отдельный проект в заданной конфигурации решения для сборки, очистки, перестроения или развертывания.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
+[/project ProjName] [/projectconfig ProjConfigName]
+```
+
+## <a name="arguments"></a>Аргументы
+ /Build выполняет сборку проекта, указанного `/project` `ProjName`.
+
+ /Clean очищает все промежуточные файлы и выходные каталоги, созданные во время сборки.
+
+ /Rebuild очищает проект, указанный в `/project` `ProjName`.
+
+ /Deploy указывает, что проект должен быть развернут после сборки или перестроения.
+
+ `SolnConfigName` Обязательный. Имя конфигурации решения, которая будет применяться для решения с именем `SolutionName`.
+
+ `SolutionName` Обязательный. Полный путь и имя для файла решения.
+
+ /project `ProjName` Необязательный. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
+
+ /projectconfig `ProjConfigName` Необязательный. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.
+
+## <a name="remarks"></a>Примечания
+
+- Следует использовать в составе команды `devenv /build`, /`clean`, `/rebuild` или `/deploy`.
+
+- Строки с пробелами заключаются в двойные кавычки.
+
+- Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.
+
+## <a name="example"></a>Пример
+ В этом примере выполняется сборка проекта `CSharpConsoleApp` с использованием конфигурации проекта `Debug` в пределах конфигурация решения `Debug` для `MySolution`.
+
+```
+devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```
+
+## <a name="see-also"></a>См. также
+ [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/ProjectConfig (devenv. exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (](../../ide/reference/build-devenv-exe.md) devenv. exe) [/Clean (devenv](../../ide/reference/clean-devenv-exe.md) . exe) [/REBUILD (](../../ide/reference/rebuild-devenv-exe.md) devenv. exe) [/deploy (devenv.](../../ide/reference/deploy-devenv-exe.md) exe) [/out (devenv. exe](../../ide/reference/out-devenv-exe.md) )
