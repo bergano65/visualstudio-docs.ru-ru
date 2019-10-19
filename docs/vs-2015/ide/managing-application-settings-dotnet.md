@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 ms.assetid: 35254321-ad14-47d9-b8c6-39ab3203c5d9
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b37ed78f9b67d10c0bf845a5bd7340f1f38557bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674998"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651426"
 ---
 # <a name="managing-application-settings-net"></a>Управление параметрами приложения (.NET)
 
@@ -100,6 +100,6 @@ Properties.Settings.Default.Save();
 
 Общие сведения о доступе к параметрам приложений с помощью класса `Settings` см. в разделе [Общие сведения о параметрах приложений](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Информацию об итерации параметров см. в этой [записи форума](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Доступ к параметрам приложения](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

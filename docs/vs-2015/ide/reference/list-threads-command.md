@@ -12,44 +12,38 @@ helpviewer_keywords:
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199104"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671141"
 ---
 # <a name="list-threads-command"></a>Команда List Threads
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Отображает список потоков в текущей программе.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Debug.ListThreads [index]  
-```  
-  
-## <a name="arguments"></a>Аргументы  
- `index`  
- Необязательный параметр. Выбирает по индексу поток для использования в качестве текущего.  
-  
-## <a name="remarks"></a>Примечания  
- Если параметр указан, аргумент `index` помечает указанный поток в качестве текущего. Рядом с текущим потоком в списке отображается звездочка (*).  
-  
-## <a name="example"></a>Пример  
-  
-```  
->Debug.ListThreads   
-```  
-  
-## <a name="see-also"></a>См. также  
- [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)   
- [Команда List Disassembly](../../ide/reference/list-disassembly-command.md)   
- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Командное окно](../../ide/reference/command-window.md)   
- [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Отображает список потоков в текущей программе.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Debug.ListThreads [index]
+```
+
+## <a name="arguments"></a>Аргументы
+ `index` Необязательный. Выбирает по индексу поток для использования в качестве текущего.
+
+## <a name="remarks"></a>Примечания
+ Если параметр указан, аргумент `index` помечает указанный поток в качестве текущего. Рядом с текущим потоком в списке отображается звездочка (*).
+
+## <a name="example"></a>Пример
+
+```
+>Debug.ListThreads
+```
+
+## <a name="see-also"></a>См. также
+ Список [команд стека вызовов](../../ide/reference/list-call-stack-command.md) [Командная поддизассемблированный код команда](../../ide/reference/list-disassembly-command.md) [Visual Studio команды](../../ide/reference/visual-studio-commands.md) [команда](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) Командная команда [Visual Studio псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)
