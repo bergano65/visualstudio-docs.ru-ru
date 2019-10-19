@@ -1,5 +1,5 @@
 ---
-title: Создавать решения на чистую проектов
+title: Создание решений для очистки проектов
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685719"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620558"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Построение и очистка проектов и решений в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md).
+Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в статье [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -75,9 +75,9 @@ ms.locfileid: "65685719"
 
     Если этот флажок установлен, при выполнении любого из указанных далее действий выполняется сборка только текущего запускаемого проекта и его зависимостей.
 
-   - В строке меню выберите **Отладка** > **начать отладку** (F5).
+   - В строке меню выберите **отладка**  > **начать отладку** (F5).
 
-   - В строке меню выберите **построения** > **построить решение** (CTRL + SHIFT + B).
+   - В строке меню выберите **сборка**  > **сборка решения** (Ctrl + Shift + B).
 
      Если этот флажок снят, все проекты, их зависимости и файлы решения создаются при выполнении любой предыдущей команды. По умолчанию этот флажок снят.
 
@@ -110,4 +110,4 @@ ms.locfileid: "65685719"
     - Нажмите сочетание клавиш CTRK+Break.
 
 ## <a name="see-also"></a>См. также
- [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md) [получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md) [компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md) [Отладочные и выпускные конфигурации проекта](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ построение ссылки](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [командной строки devenv](../ide/reference/devenv-command-line-switches.md) [решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)
+ [Как просмотреть, сохранить и настроить файлы журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md) [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md) [Компиляция и построение](../ide/compiling-and-building-in-visual-studio.md) [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md) [Отладка и выпуск проект конфигурация](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ построение ](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md) [переключателей командной строки devenv](../ide/reference/devenv-command-line-switches.md)

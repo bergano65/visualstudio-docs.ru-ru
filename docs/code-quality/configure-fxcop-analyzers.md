@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172791"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649700"
 ---
 # <a name="configure-fxcop-analyzers"></a>Настройка анализаторов FxCop
 
 [Пакет анализаторов FxCop](install-fxcop-analyzers.md) состоит из наиболее важных правил FXCop из устаревшего анализа, преобразованных в анализаторы кода на основе .NET Compiler Platform. Для некоторых правил FxCop можно уточнить, к каким частям базы кода следует применить эти параметры с помощью [настраиваемых параметров](fxcop-analyzer-options.md). Каждый параметр указывается путем добавления пары "ключ-значение" в файл [EditorConfig](https://editorconfig.org) . Файл конфигурации может быть [специфичным для проекта](#per-project-configuration) или может [совместно](#shared-configuration) использоваться двумя или более проектами.
 
 > [!TIP]
-> Добавьте в проект файл. editorconfig, щелкнув правой кнопкой мыши проект в **Обозреватель решений** и выбрав **Добавить** > **новый элемент**. В окне **Добавление нового элемента** введите **editorconfig** в поле поиска. Выберите шаблон **Editorconfig File (по умолчанию)** и нажмите кнопку **Добавить**.
+> Добавьте в проект файл. editorconfig, щелкнув правой кнопкой мыши проект в **Обозреватель решений** и выбрав **Добавить**  > **новый элемент**. В окне **Добавление нового элемента** введите **editorconfig** в поле поиска. Выберите шаблон **Editorconfig File (по умолчанию)** и нажмите кнопку **Добавить**.
 >
 > ![Добавление файла editorconfig в проект в Visual Studio](media/add-editorconfig-file.png)
 
