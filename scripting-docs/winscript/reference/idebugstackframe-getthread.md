@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetThread | Документация Майкрософт
+title: 'Идебугстаккфраме:: Thread | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6926347c67895b3860964a559898691dd3e61e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51cb000ef20877f4f3f6536cc9a01ae44c2810c8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935064"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576727"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
-Возвращает поток, связанный с данным кадром стека.  
+Возвращает поток, связанный с этим кадром стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Параметры  
  `ppat`  
- [out] Поток, связанный с данным кадром стека.  
+ заполняет Поток, связанный с этим кадром стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает поток, связанный с данным кадром стека.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает поток, связанный с этим кадром стека.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

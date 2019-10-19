@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDocumentAttr | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Сетдокументаттр | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c19e5b2091bf9dd30359f30e27019fa778b675
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2210557a1ca2b23d19d151d6fe6f3b5d25e7082
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948971"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574609"
 ---
 # <a name="idebugdocumenthelpersetdocumentattr"></a>IDebugDocumentHelper::SetDocumentAttr
 Задает атрибуты для этого документа.  
@@ -37,18 +37,18 @@ HRESULT SetDocumentAttr(
   
 #### <a name="parameters"></a>Параметры  
  `pszAttributes`  
- [in] Атрибуты, применяемые к документу.  
+ окне Атрибуты, применяемые к документу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод задает атрибуты для этого документа.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Константы TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

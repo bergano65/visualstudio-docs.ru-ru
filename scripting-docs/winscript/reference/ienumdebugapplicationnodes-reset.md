@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Reset | Документация Майкрософт
+title: 'Иенумдебугаппликатионнодес:: Reset | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 960f980bda330eaf14cc498e8bf804649023ba39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0314a3c54d08b41a7a222b1b87a2c3a48b53d3f5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951727"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573043"
 ---
 # <a name="ienumdebugapplicationnodesreset"></a>IEnumDebugApplicationNodes::Reset
-Сбрасывает последовательность перечислений в начало.  
+Сбрасывает последовательность перечисления до начала.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,12 +39,12 @@ HRESULT Reset();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод сбрасывает последовательность перечислений в начало.  
+## <a name="remarks"></a>Заметки  
+ Этот метод сбрасывает последовательность перечисления до начала.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

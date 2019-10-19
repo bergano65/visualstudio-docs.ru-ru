@@ -15,15 +15,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7230e65e5559d53e56cf6424a34dd44aa4edda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1e1e7f3b604832014cb23245b105756d1126c5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831646"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572282"
 ---
-# <a name="profilereventmask-enumeration"></a>Перечисление PROFILER_EVENT_MASK
-Указывает типы событий, которые должны быть профилированы.  
+# <a name="profiler_event_mask-enumeration"></a>Перечисление PROFILER_EVENT_MASK
+Указывает типы событий, для которых необходимо выполнить профилирование.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,17 +40,17 @@ typedef enum {
 } PROFILER_EVENT_MASK;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
-|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Профили функции, которые определены в скрипт, написанный пользователем и динамического кода.|  
-|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Профили собственных функций, определенных обработчиком сценариев.|  
-|PROFILER_EVENT_MASK_TRACE_ALL|Профили всех функций подсистемы определяемых пользователем и сценариев, за исключением вызовов в объектной модели документа (DOM).|  
-|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Профили функций, которые вызывают в модель DOM.|  
-|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Профилирует все функции, включая вызовы в модель DOM.|  
+|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Функции профилей, определенные в скриптах, написанных пользователем, и в динамическом коде.|  
+|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Профили собственных функций, определяемых обработчиком скриптов.|  
+|PROFILER_EVENT_MASK_TRACE_ALL|Профили всех определяемых пользователем функций механизма создания скриптов, за исключением вызовов в модель DOM (DOM).|  
+|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Функции профилей, вызывающие модель DOM.|  
+|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Профили всех функций, включая вызовы модели DOM.|  
   
 ## <a name="see-also"></a>См. также  
- [Активных скриптов Profiler константы, перечисления и структуры](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
+ [Константы, перечисления и структуры в профилировщике Active Script](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
+ [IActiveScriptProfilerControl:: сетпрофилеревентмаск](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

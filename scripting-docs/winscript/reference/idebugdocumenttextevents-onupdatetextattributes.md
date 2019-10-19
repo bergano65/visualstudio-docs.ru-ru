@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes | Документация Майкрософт
+title: 'Идебугдокументтекстевентс:: Онупдатетекстаттрибутес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 044eec93516bc4e16044c4bf982b48d91269ebaa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989802"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575987"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-Указывает, что текст атрибуты, связанные с базовой позиция диапазона знаков были изменены.  
+Указывает, что текстовые атрибуты, связанные с диапазоном позиций базового символа, изменились.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Параметры  
  `cCharacterPosition`  
- [in] Позиция символа первого символа, что изменились атрибуты.  
+ окне Порядковый номер первого символа, измененного атрибутами.  
   
  `cNumToUpdate`  
- [in] Число символов в диапазоне.  
+ окне Число символов в диапазоне.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод указывает, что текст атрибуты, связанные с базовой позиция диапазона знаков были изменены.  
+## <a name="remarks"></a>Заметки  
+ Этот метод указывает, что текстовые атрибуты, связанные с диапазоном позиций базового символа, изменились.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Clone | Документация Майкрософт
+title: 'Иенумдебужекстендедпропертинфо:: Clone | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce36c1f419a2cc89a733538444e3468d4c2a5193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d11aa307342fbb6029f3bc2aed6b652417f4f52d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989891"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568903"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
+Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,7 +37,7 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Параметры  
  `ppEnum`  
- [out] Возвращает клонированный `IEnumDebugExtendedPropertyInfo` интерфейс.  
+ заполняет Возвращает клонированный интерфейс `IEnumDebugExtendedPropertyInfo`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  

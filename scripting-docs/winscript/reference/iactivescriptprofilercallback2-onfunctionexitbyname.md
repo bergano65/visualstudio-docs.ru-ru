@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Документация Майкрософт
+title: 'IActiveScriptProfilerCallback2:: Онфунктионекситбинаме | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87f0b7e7a3cea4e3e59fb43ef9ddc2d4934552e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a70bc72dd1070759ad8b78e43926f06a2c56ec15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993349"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571618"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
-Уведомляет профилировщик, что объект, который обработчик скриптов завершила выполнение вызова функции объектной модели документа (DOM).  
+Уведомляет объект профилировщика, что обработчик скриптов завершил выполнение вызова функции модель DOM (DOM).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,17 +34,17 @@ HRESULT OnFunctionExitByName(
   
 #### <a name="parameters"></a>Параметры  
  `pwszFunctionName`  
- [in] Имя функции, что обработчик сценариев завершения работы.  
+ окне Имя функции, которую обработчик скриптов завершил выполнение.  
   
  `scriptType`  
- [in] Тип функции. Описание допустимых значений, см. в разделе [перечисление PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
+ окне Тип функции. Описание допустимых значений см. в разделе [PROFILER_SCRIPT_TYPE enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращаемое значение этого метода обрабатывается обработчиком сценариев.  
+ Возвращаемое значение этого метода игнорируется обработчиком скриптов.  
   
-## <a name="remarks"></a>Примечания  
- Для вызовов DOM, обработчик скриптов вызывает этот метод вместо вызова метода [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Это происходит из-за большого количества уникальных методы и свойства в модели DOM.  
+## <a name="remarks"></a>Заметки  
+ Для вызовов DOM обработчик скриптов вызывает этот метод вместо вызова [IActiveScriptProfilerCallback:: онфунктионексит](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Это связано с большим количеством уникальных методов и свойств в модели DOM.  
   
 ## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+ [IActiveScriptProfilerCallback2:: онфунктионентербинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [Интерфейс IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

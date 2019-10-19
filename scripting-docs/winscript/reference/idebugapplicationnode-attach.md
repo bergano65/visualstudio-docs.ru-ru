@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Attach | Документация Майкрософт
+title: 'Идебугаппликатионноде:: Attach | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c41d06c116c7c15ad308ce2ace837ea01d90ab1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30d4e189ec878def1cfd88517654955cd2d1aa12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990484"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574784"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-Добавляет этот узел приложения в дерево указанный проект.  
+Добавляет этот узел приложения в указанное дерево проекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Параметры  
  `pdanParent`  
- [in] Дерево проекта, где будет добавляться этот узел приложения.  
+ окне Дерево проекта, в котором будет добавлен узел приложения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод добавляет этот узел приложения в проект дерева, с помощью `pdanParent` как родительский. Если `pdanParent` является `NULL`, этот узел приложение будет размещаться узел верхнего уровня.  
+## <a name="remarks"></a>Заметки  
+ Этот метод добавляет этот узел приложения в дерево проекта, используя `pdanParent` в качестве родителя. Если `pdanParent` `NULL`, этот узел приложения будет узлом верхнего уровня.  
   
 ## <a name="see-also"></a>См. также  
- [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
+ [Идебугаппликатионноде::D етач](../../winscript/reference/idebugapplicationnode-detach.md)    
  [Интерфейс IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

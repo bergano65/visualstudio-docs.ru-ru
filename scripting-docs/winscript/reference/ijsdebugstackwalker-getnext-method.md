@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugStackWalker::GetNext | Документация Майкрософт
+title: 'Метод Ижсдебугстакквалкер:: GetNext | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8931a01f3afe05f791f4d89da60a9354868215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa667402b46a3404c31dfe26307a5893c68ffcc0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977878"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574028"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>Метод IJsDebugStackWalker::GetNext
-Получает следующий кадр.  
+Возвращает следующий кадр.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,15 +35,15 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Параметры  
  `ppFrame`  
- [out] Объект, представляющий кадр стека.  
+ заполняет Объект, представляющий кадр стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Возвращает E_JsDEBUG_OUTSIDE_OF_VM, если больше нет кадров стека перечисляемые  
+## <a name="remarks"></a>Заметки  
+ Возвращает E_JsDEBUG_OUTSIDE_OF_VM, если нет кадров стека для перечисления  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugStackWalker](../../winscript/reference/ijsdebugstackwalker-interface.md)

@@ -10,22 +10,22 @@ ms.assetid: 387a856b-f5dc-4371-8620-bd574e046c2c
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 10cdff328216d06a3326dd3595ef8fc78bc9cfc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1993cbef966a4d73a2a3ed55c3317db444702232
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993154"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574877"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
-Если обработчик скриптов Windows позволяет текстом исходного кода для процедуры для добавления в скрипт, он реализует `IActiveScriptParseProcedure32` интерфейс. Интерпретируемые языки сценариев, которые имеют не независимых среду разработки, таких как VBScript, это предоставляет альтернативный механизм (отличное от `IActiveScriptParse32` или `IPersist`*) для добавления к пространству имен процедуры с помощью сценариев.  
+Если обработчик сценариев Windows допускает добавление текста исходного кода для процедур, добавляемых в скрипт, он реализует интерфейс `IActiveScriptParseProcedure32`. Для интерпретируемых языков сценариев, не имеющих независимых сред разработки, таких как VBScript, это предоставляет альтернативный механизм (отличный от `IActiveScriptParse32` или `IPersist` *) для добавления процедур скрипта в пространство имен.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |||  
 |-|-|  
 |Метод|Описание|  
-|[IActiveScriptParseProcedure32::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure32-parseproceduretext.md)|Выполняет синтаксический анализ данного кода процедуры и добавляет процедуру в пространство имен.|  
+|[IActiveScriptParseProcedure32::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure32-parseproceduretext.md)|Анализирует данную процедуру кода и добавляет процедуру в пространство имен.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы активных скриптов](../../winscript/reference/active-script-interfaces.md)

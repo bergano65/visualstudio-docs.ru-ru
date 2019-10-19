@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Документация Майкрософт
+title: 'Иаппликатиондебугжеруи:: Брингдокументтотоп | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a88b44f609113670259492eb82491b16004d29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b51e7b588750fc72e61840c4748c006eea732c22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991127"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577797"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Открывает окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.  
+Переводит окно, содержащее указанный документ отладки, в начало в пользовательском интерфейсе отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Параметры  
  `pddt`  
- [in] Отладка документа, чтобы переместить наверх в пользовательском интерфейсе отладчика.  
+ окне Отладка документа для поверх в пользовательском интерфейсе отладчика.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_INVALIDARG`|Документ не известен.|  
+|`E_INVALIDARG`|Документ неизвестен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод открывает окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.  
+## <a name="remarks"></a>Заметки  
+ Этот метод переводит окно, содержащее указанный документ отладки, в начало в пользовательском интерфейсе отладчика.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)

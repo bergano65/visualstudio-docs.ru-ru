@@ -13,23 +13,23 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 777d20ecb51b09b282f88dc08464727b9ff2a945
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432978"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572728"
 ---
 # <a name="active-script-profiling-overview"></a>Обзор профилирования активных скриптов
 [Интерфейсы профилировщика активных скриптов](../winscript/reference/active-script-profiler-interfaces.md) обеспечивают профилирование обработчика скриптов. Профилирование активных скриптов состоит из следующих частей:  
   
-- модуль языка;  
+- Модуль языка  
   
 - Узел  
   
 - профилировщик  
   
-## <a name="language-engine"></a>модуль языка;  
+## <a name="language-engine"></a>Модуль языка  
  Модуль языка выполняет скрипт. Он предоставляет методы, обеспечивающие профилирование кода скрипта по мере его выполнения. Когда включено профилирование, модуль языка принимает в качестве аргумента идентификатор класса (CLSID) COM-объекта профилировщика. Он создает экземпляр COM-объекта профилировщика и затем вызывает профилировщик при возникновении различных событий.  
   
  Модуль языка реализует [интерфейс IActiveScriptProfilerControl](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
@@ -43,5 +43,5 @@ ms.locfileid: "63432978"
 ## <a name="profiler"></a>профилировщик  
  Профилировщик получает вызовы из модуля языка при возникновении различных событий. Профилировщик должен быть зарегистрирован как COM-объект и реализовать [интерфейс IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Интерфейсы профилировщика активных скриптов](../winscript/reference/active-script-profiler-interfaces.md)

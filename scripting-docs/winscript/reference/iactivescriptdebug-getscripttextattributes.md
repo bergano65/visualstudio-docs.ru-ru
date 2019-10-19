@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptTextAttributes | Документация Майкрософт
+title: 'Иактивескриптдебуг:: Жетскрипттекстаттрибутес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faec7cf65bed39a038c5ab7cc09d9908063a2c63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57bd466965f6431a1418df1aa56cf6a7bbbc78cc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009549"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576921"
 ---
 # <a name="iactivescriptdebuggetscripttextattributes"></a>IActiveScriptDebug::GetScriptTextAttributes
-Возвращает атрибуты текста для произвольный блок текста сценария.  
+Возвращает атрибуты текста для произвольного блока текста скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,41 +41,41 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Параметры  
  `pstrCode`  
- [in] Текст блока скрипта. Эта строка не обязательно нулевым байтом.  
+ окне Текст блока скрипта. Эта строка не должна завершаться нулем.  
   
  `uNumCodeChars`  
- [in] Число символов в тексте блока скрипта.  
+ окне Количество символов в тексте блока скрипта.  
   
  `pstrDelimiter`  
- [in] Адрес-объекта блок сценариев end разделитель. Когда `pstrCode` анализируется из потока текста узел обычно использует разделитель, например две одинарные кавычки («), чтобы обнаружить завершение блока скрипта. Этот параметр задает разделитель, используемый узлом, позволяя обработчик скриптов для предоставления некоторых условного примитивных предварительной обработки (например, замените одинарной кавычки ['] две одинарные кавычки для использования в качестве разделителя). Точный способ (и нужно ли) сценариев подсистемой, эта информация зависит от обработчика скриптов. Установите этот параметр в значение NULL, если узел не используется разделитель для обозначения конца блока скрипта.  
+ окне Адрес разделителя-блока конца скрипта. Когда `pstrCode` анализируется из потока текста, узел обычно использует разделитель, например две одинарные кавычки (' '), для обнаружения конца блока скрипта. Этот параметр задает разделитель, используемый узлом, позволяя обработчику скриптов предоставить некоторую условную предварительную обработку примитивов (например, заменить одинарную кавычку ['] двумя одинарными кавычками для использования в качестве разделителя). Точно то, как (и если) обработчик скриптов использует эти сведения, зависит от обработчика скриптов. Присвойте этому параметру значение NULL, если узел не использовал разделитель для обозначения конца блока скрипта.  
   
  `dwFlags`  
- [in] Флаги, связанные с блоком скрипта. Может представлять собой сочетание этих значений:  
+ окне Флаги, связанные с блоком скрипта. Может быть сочетанием следующих значений:  
   
-|Константа|Значение|Описание|  
+|Константа|значения|Описание|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Указывает, что идентификаторы и точка операторы должны идентифицироваться с флагами SOURCETEXT_ATTR_IDENTIFIER и SOURCETEXT_ATTR_MEMBERLOOKUP, соответственно.|  
-|GETATTRFLAG_THIS|0x0100|Указывает, что идентификатор для текущего объекта должна определяться с флагом SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Указывает, что строка содержимого и текст примечания должны определяться с флагом SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Указывает, что идентификаторы и операторы точек должны быть идентифицированы с помощью флагов SOURCETEXT_ATTR_IDENTIFIER и SOURCETEXT_ATTR_MEMBERLOOKUP соответственно.|  
+|GETATTRFLAG_THIS|0x0100|Указывает, что идентификатор для текущего объекта должен быть идентифицирован с помощью флага SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Указывает, что содержимое строки и текст комментария должны быть идентифицированы с помощью флага SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out] Буфер должен содержать возвращаемые атрибуты.  
+ [вход, выход] Буфер для хранения возвращаемых атрибутов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Промежуточный узел, который реализует `IDebugDocumentText` интерфейс этот метод можно использовать для делегирования вызовов `IDebugDocumentText::GetText` метод.  
+## <a name="remarks"></a>Заметки  
+ Направляющий узел, реализующий интерфейс `IDebugDocumentText`, может использовать этот метод для делегирования вызовов методу `IDebugDocumentText::GetText`.  
   
- Этот метод для блоков скриптов; `GetScriptletTextAttributes` метод предназначен для сценарии.  
+ Этот метод для блоков сценариев; метод `GetScriptletTextAttributes` предназначен для сценарии.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
- [Интерфейс IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
+ @No__t_1 [интерфейса иактивескриптдебуг](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [Иактивескриптдебуг:: жетскриптлеттекстаттрибутес](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
+ @No__t_1 [интерфейса идебугдокументтекст](../../winscript/reference/idebugdocumenttext-interface.md)  
+ @No__t_1 [идебугдокументтекст:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)  
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

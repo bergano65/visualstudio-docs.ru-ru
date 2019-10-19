@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IEnumDebugPropertyInfo | Документация Майкрософт
+title: Интерфейс Иенумдебугпропертинфо | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,29 +13,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 736bea847908e3c70d6caf2f8e41af38608f4f23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ce4f5a114629a473df99b583c77ae7747bcd339
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963433"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574189"
 ---
 # <a name="ienumdebugpropertyinfo-interface"></a>Интерфейс IEnumDebugPropertyInfo
-Перечисляет `DebugPropertyInfo` структуры.  
+Перечисляет структуры `DebugPropertyInfo`.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumDebugPropertyInfo`.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|Извлекает указанное число `DebugPropertyInfo` структур в последовательности перечисления.|  
-|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|Пропускает заданное число `DebugPropertyInfo` структур в последовательности перечисления.|  
+|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|Извлекает указанное число структур `DebugPropertyInfo` в последовательности перечисления.|  
+|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|Пропускает указанное число структур `DebugPropertyInfo` в последовательности перечисления.|  
 |[IEnumDebugPropertyInfo::Reset](../../winscript/reference/ienumdebugpropertyinfo-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|Получает число `DebugPropertyInfo` структур в перечислителе.|  
+|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|  
+|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|Возвращает число структур `DebugPropertyInfo` в перечислителе.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dbgprop.h  
+ Заголовок: дбгпроп. h  
   
 ## <a name="see-also"></a>См. также  
  [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

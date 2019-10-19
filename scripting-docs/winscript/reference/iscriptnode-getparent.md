@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetParent | Документация Майкрософт
+title: 'Искриптноде:: Parent | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c990b5ba5c3d03d319e0eeced282c92cfbb5281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58ef5f88f4404d57a7edad3590fba1d2614faec6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786860"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572559"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
-Возвращает `IScriptNode` объект, являющийся родительским для объекта.  
+Возвращает объект `IScriptNode`, являющийся родительским для объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,20 +37,20 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Параметры  
  `ppsnParent`  
- [out] Адрес переменной, которая получает указатель на `IScriptNode` интерфейс родительского экземпляра.  
+ заполняет Адрес переменной, которая получает указатель на интерфейс `IScriptNode` родительского экземпляра.  
   
- Если класс реализует `IScriptEntry` или `IScriptScriptlet`, `IScriptNode` , то возвращается объект.  
+ Если класс реализует `IScriptEntry` или `IScriptScriptlet`, возвращается объект `IScriptNode`.  
   
- Если класс реализует `IScriptNode` (представляющие веб-страницы), возвращается значение NULL.  
+ Если класс реализует `IScriptNode` (представляющий веб-страницу), возвращается значение NULL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptNode](../../winscript/reference/iscriptnode-interface.md)

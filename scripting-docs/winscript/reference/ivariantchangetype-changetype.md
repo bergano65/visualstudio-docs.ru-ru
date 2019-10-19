@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType::ChangeType | Microsoft Docs
+title: 'Ивариантчанжетипе:: ChangeType | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81ed0a8502e9b0cfc53725621d477d34ee5010ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 406d5d8486b3016f0105b7bd8bf231db0e1e9613
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945638"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571780"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-Принимает значение типа variant и создает новый вариант с указанным типом.  
+Принимает значение типа Variant и создает новый вариант с указанным типом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,26 +40,26 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Параметры  
  `pvarDst`  
- [in, out] Variant должен содержать значение, представленное `pvarSrc`, но с типа, заданного параметром `vtNew`.  
+ [вход, выход] Вариант, содержащий значение, представленное `pvarSrc`, но с типом, заданным `vtNew`.  
   
  `pvarSrc`  
- [in] Значение типа variant для изменения в новый тип.  
+ окне Значение типа Variant, которое необходимо изменить на новый тип.  
   
  `lcid`  
- [in] Контекст языкового стандарта для использования при преобразовании аргументов в или из строки.  
+ окне Контекст языкового стандарта, используемый при преобразовании аргументов в строки или из строк.  
   
  `vtNew`  
- [in] Указывает тип для `pvarDst` станет.  
+ окне Указывает тип, который будет `pvarDst`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- `pvarDst` И `pvarSrc` аргументы могут быть равны, в этом случае исходное значение перезаписывается. Этот метод передает `pvarDst` для `VariantClear` функция и, следовательно `pvarDst` должен быть инициализирован допустимым.  
+## <a name="remarks"></a>Заметки  
+ Аргументы `pvarDst` и `pvarSrc` могут быть равны, в этом случае исходное значение перезаписывается. Этот метод передает `pvarDst` функции `VariantClear`, поэтому `pvarDst` должны быть инициализированы допустимым значением.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)
