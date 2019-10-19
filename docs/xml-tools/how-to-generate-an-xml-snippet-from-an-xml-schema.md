@@ -1,21 +1,21 @@
 ---
-title: Практическое руководство. сформировать XML-фрагмент из схемы XML
+title: Как создать XML-фрагмент из XML-схемы
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645384"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Практическое руководство. Создание XML-фрагмента из схемы XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Как создать XML-фрагмент из схемы XML
 
 Редактор XML может создавать XML-фрагменты из схемы языка определения схемы XML (XSD). Например, при создании XML-файла, находящийся рядом с именем элемента, можно нажать клавишу **Tab** , чтобы заполнить элемент данными XML, созданными на основе сведений о схеме для этого элемента.
 
@@ -88,7 +88,7 @@ ms.locfileid: "68926820"
 
      Редактор добавляет открывающий тег, `<Contact`, и помещает курсор после имени элемента.
 
-4. Нажмите клавишу **Tab** , чтобы создать XML `Contact` -данные для элемента на основе сведений о схеме.
+4. Нажмите клавишу **Tab** , чтобы создать XML-данные для элемента `Contact` на основе сведений о схеме.
 
 ## <a name="input"></a>Ввод
 
@@ -141,7 +141,7 @@ ms.locfileid: "68926820"
 
 ### <a name="output"></a>Вывод
 
-Далее приведены XML-данные, созданные на основе информации схемы, которая связана с элементом `Contact`. Элементы, помеченные как `bold` обозначающие изменяемые поля в XML-фрагменте.
+Далее приведены XML-данные, созданные на основе информации схемы, которая связана с элементом `Contact`. Элементы, помеченные как `bold`, обозначают изменяемые поля в XML-фрагменте.
 
 ```xml
 <Contact>
@@ -157,4 +157,4 @@ ms.locfileid: "68926820"
 ## <a name="see-also"></a>См. также
 
 - [Фрагменты XML](../xml-tools/xml-snippets.md)
-- [Практическое руководство. Использование XML-фрагментов](../xml-tools/how-to-use-xml-snippets.md)
+- [Как использовать XML-фрагменты](../xml-tools/how-to-use-xml-snippets.md)

@@ -4,27 +4,29 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fec188ba61a7e4d3f27caad03f0a5d32b6758a32
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974981"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649341"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
 
 Корпорация Майкрософт создала набор анализаторов, именуемый [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), который содержит наиболее важные правила FxCop из предыдущих версий. Эти анализаторы проверяют код на наличие проблем безопасности, производительности, проектирования и т. д.
 
-Вы можете установить эти анализаторы FxCop либо как пакет NuGet, либо как расширение VSIX для Visual Studio. Дополнительные сведения о преимуществах и недостатках каждого из них см. в разделе пакет [NuGet по сравнению с. Расширение VSIX @ no__t-0.
+Вы можете установить эти анализаторы FxCop либо как пакет NuGet, либо как расширение VSIX для Visual Studio. Дополнительные сведения о преимуществах и недостатках каждого из них см. в разделе [расширение пакетов NuGet и VSIX](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension).
 
 ## <a name="nuget-package"></a>Пакет NuGet
 
-Пакет NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) можно установить непосредственно на странице свойств анализа кода проекта:
+::: moniker range=">=vs-2019"
+
+В Visual Studio 16,3 2019 и более поздних версиях пакет NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) можно установить непосредственно на странице свойств анализа кода проекта:
 
 1. Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений**, выберите пункт **свойства**, а затем перейдите на вкладку **анализ кода** .
 
@@ -32,9 +34,28 @@ ms.locfileid: "71974981"
 
 2. Нажмите кнопку **Установить**.
 
-   Visual Studio устанавливает последнюю версию пакета Microsoft. Кодеанализерс. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **ссылки** > **Analyzers**.
+   Visual Studio устанавливает последнюю версию пакета Microsoft. Кодеанализерс. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **ссылки**  > **Analyzer**.
 
    ![Узел «Анализаторы» в обозреватель решений](media/solution-explorer-analyzers-node.png)
+
+Если вы используете более раннюю версию Visual Studio 2019, установите пакет с помощью [консоли диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) или [пользовательского интерфейса диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. [Определите версию пакета анализатора](#fxcopanalyzers-package-versions) для установки на основе вашей версии Visual Studio.
+
+2. Установите пакет в Visual Studio с помощью [консоли диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) или [пользовательского интерфейса диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+
+   > [!NOTE]
+   > На странице nuget.org для каждого пакета анализатора отображается команда для вставки в **консоль диспетчера пакетов**. Существует даже удобная кнопка для копирования текста в буфер обмена.
+   >
+   > ![Страница NuGet.org с командой консоли диспетчера пакетов](media/nuget-package-manager-command.png)
+
+   Сборки анализатора устанавливаются и отображаются в **Обозреватель решений** в разделе **ссылки** > **Analyzers**.
+
+::: moniker-end
 
 ### <a name="custom-installation"></a>Выборочная установка
 
@@ -121,13 +142,13 @@ ms.locfileid: "71974981"
 
 ::: moniker range="vs-2017"
 
-Если вы хотите проверить, установлено ли расширение, выберите **инструменты** > **расширения и обновления**. В диалоговом окне **расширения и обновления** выберите категорию **установленные** слева и найдите расширение по имени.
+Если вы хотите проверить, установлено ли расширение, выберите **инструменты**  > **расширения и обновления**. В диалоговом окне **расширения и обновления** выберите категорию **установленные** слева и найдите расширение по имени.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Если требуется проверить, установлено ли расширение, выберите **расширения** > **Управление расширениями**. В диалоговом окне **Управление расширениями** выберите категорию **установленные** слева и найдите расширение по имени.
+Если требуется проверить, установлено ли расширение, выберите **расширения**  > **Управление расширениями**. В диалоговом окне **Управление расширениями** выберите категорию **установленные** слева и найдите расширение по имени.
 
 ::: moniker-end
 

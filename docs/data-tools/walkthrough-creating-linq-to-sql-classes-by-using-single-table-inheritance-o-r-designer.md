@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925399"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648058"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание LINQ to SQL классов с помощью наследования одной таблицы (реляционный конструктор R)
-[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживают наследование одной таблицы, так как обычно реализуются в реляционных системах. В этом пошаговом руководстве рассматриваются общие шаги, [приведенные в разделе Практическое руководство. Настройка наследования с помощью конструктора](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) O/R и предоставление некоторых реальных данных для демонстрации использования наследования [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]в.
+[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживают наследование одной таблицы, так как обычно реализуются в реляционных системах. Это пошаговое руководство раскрывает общие шаги, приведенные в разделе [Практическое руководство. Настройка наследования с помощью конструктора O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) , и предоставляет некоторые реальные данные для демонстрации использования наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
 В ходе этого пошагового руководства вы выполните следующие задачи:
 
@@ -38,7 +38,7 @@ ms.locfileid: "68925399"
 - Отобразите данные на Windows Forms
 
 ## <a name="create-a-table-to-inherit-from"></a>Создание таблицы для наследования
-Чтобы увидеть, как работает наследование, создайте маленькую `Person` таблицу, используйте ее в качестве базового класса, а затем `Employee` создайте объект, наследующий от него.
+Чтобы увидеть, как работает наследование, создайте маленькую `Person` таблицу, используйте ее в качестве базового класса, а затем создайте объект `Employee`, наследующий от него.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Для создания базовой таблицы, чтобы продемонстрировать наследование
 
@@ -91,7 +91,7 @@ ms.locfileid: "68925399"
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Создание нового приложения Windows Forms
 
-1. В Visual Studio в меню **файл** выберите пункт **создать** > **проект**.
+1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -126,7 +126,7 @@ ms.locfileid: "68925399"
 
 5. Удалите свойства **Type**, **ID**, **FirstName** и **LastName** из объекта **Employee**. (Другими словами, удалите все свойства, кроме свойства **Manager**.)
 
-6. Из вкладки **Реляционный конструктор объектов** **Панели элементов** создайте **Наследование** между объектами **Person** и **Employee**. Чтобы выполнить это, щелкните по пункту **Наследование** в **Панели элементов** и отпустите кнопку мыши. Затем щелкните объект **Employee** , а затем объект **Person** в конструкторе объектов **O/R**. Затем стрелка на линии наследования указывает на объект **Person** .
+6. Из вкладки **Реляционный конструктор объектов** **Панели элементов** создайте **Наследование** между объектами **Person** и **Employee**. Чтобы выполнить это, щелкните по пункту **Наследование** в **Панели элементов** и отпустите кнопку мыши. Затем щелкните объект **Employee** , а затем объект **Person** в **конструкторе объектов O/R**. Затем стрелка на линии наследования указывает на объект **Person** .
 
 7. Щелкните по линии **Наследование** на области конструктора.
 
@@ -188,7 +188,7 @@ ms.locfileid: "68925399"
 ## <a name="see-also"></a>См. также
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Пошаговое руководство: создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Практическое руководство. Назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Практическое руководство. Создание модели объектов на языке Visual Basic или C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Практическое руководство. Создание модели объектов в Visual Basic или C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

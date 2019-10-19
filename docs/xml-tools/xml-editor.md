@@ -2,23 +2,23 @@
 title: Редактор XML
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7898ff0a592ff8aaf6c6a44672024e13e2f0221
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002484"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608359"
 ---
 # <a name="xml-editor"></a>Редактор XML
 
-Редактор XML в Visual Studio основана на текстовом редакторе и включает дополнительную поддержку языков XML. При открытии файла XML в Visual Studio, он открывается в редакторе XML.
+Редактор XML в Visual Studio основан на текстовом редакторе и включает дополнительную поддержку для языков XML. При открытии XML-файла в Visual Studio он открывается в редакторе XML.
 
-Редактор XML включает в себя следующие компоненты:
+Редактор XML включает следующие функции:
 
 - Проверка синтаксиса XML 1.0.
 
@@ -38,26 +38,26 @@ ms.locfileid: "63002484"
 
 - Структурирование документов, позволяющее разворачивать и сворачивать элементы.
 
-- Интеграция с [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md). Это обеспечивает иерархическое представление XML-схем.
+- Интеграция с [обозревателем XML-схем](../xml-tools/xml-schema-explorer.md). Это обеспечивает иерархическое представление XML-схем.
 
-Редактор XML вызывается для распространенных расширений файлов, таких как *.xml*, *.xsd*, *.xsl*, и *.config*. Также это приложение вызывается для неизвестных расширений имен файлов, если есть основания полагать, что файл содержит код XML.
+Редактор XML вызывается для хорошо известных расширений файлов, таких как *. XML*, *. xsd*, *. xsl*и *. config*. Он также вызывается для любого неизвестного расширения файла, если файл содержит XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) позволяет автоматически заполнять имена наборов атрибутов, режимы шаблонов и имена или имена параметров для указанного режима или именованного шаблона.
+[Технология XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) позволяет автозаполнению имен наборов атрибутов, режимов шаблонов и имен параметров для указанного режима или указанного именованного шаблона.
 
 ## <a name="xslt-profiler"></a>Профилировщик XSLT
 
-[Профилировщик XSLT](../xml-tools/xslt-profiler.md) создает подробные сведения о производительности XSLT, отчеты, которые помогают измерять, оценивать и исправлять проблемы, связанные с производительностью, в код XSLT. Профилировщик XSLT также содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT.
+[Профилировщик XSLT](../xml-tools/xslt-profiler.md) создает подробные отчеты о производительности XSLT, которые помогают измерять, оценивать и нацелить проблемы, связанные с производительностью, в коде XSLT. Профилировщик XSLT также содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT.
 
 ## <a name="xslt-hierarchy"></a>Иерархия XSLT
 
-[Средство XSLT иерархии](../xml-tools/walkthrough-using-xslt-hierarchy.md) позволяет добавлять точки останова в включаемая таблицы стилей и/или встроенные правила шаблона.
+С помощью [инструмента "XSLT-иерархия](../xml-tools/walkthrough-using-xslt-hierarchy.md) " можно добавлять точки останова в встроенные таблицы стилей или правила шаблонов.
 
 ## <a name="see-also"></a>См. также
 
-- [Параметры редактора XML - форматирование](../ide/reference/options-text-editor-xml-formatting.md)
-- [Параметры редактора XML - Разное](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Параметры редактора XML — форматирование](../ide/reference/options-text-editor-xml-formatting.md)
+- [Параметры редактора XML — Разное](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

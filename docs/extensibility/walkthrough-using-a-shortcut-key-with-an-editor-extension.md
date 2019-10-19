@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование сочетаний клавиш в расширении редактора | Документация Майкрософт
+title: Пошаговое руководство. Использование сочетания клавиш с расширением редактора | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,42 +10,42 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d95d41024bd839c8c556ac94501b20d1a81b7a97
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318504"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647900"
 ---
-# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство. Сочетания клавиш в расширении редактора
-Можно ответить на сочетания клавиш в расширении редактора. Следующее пошаговое руководство демонстрирует добавление оформления представления для текстового представления с помощью сочетания клавиш. В этом пошаговом руководстве основан на шаблоне редактор оформление окна просмотра, а также вы можете добавить оформления с помощью + символ.
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство. Использование сочетания клавиш с расширением редактора
+Вы можете реагировать на сочетания клавиш в расширении редактора. В следующем пошаговом руководстве показано, как добавить Оформление представления в текстовое представление с помощью сочетания клавиш. Это пошаговое руководство основано на шаблоне "редактор оформлений" окна просмотра и позволяет добавлять Оформление с помощью символа +.
 
-## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, не устанавливайте Visual Studio SDK в центре загрузки. Этот пакет включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Необходимые компоненты
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Создание проекта Managed Extensibility Framework (MEF)
 
-1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `KeyBindingTest`.
+1. Создайте проект C# VSIX. (В диалоговом окне **Новый проект** выберите **элемент C# визуальный/расширяемый**, а затем **проект VSIX**.) Присвойте решению имя `KeyBindingTest`.
 
-2. Добавьте в проект шаблон элемента оформления текстового редактора и назовите его `KeyBindingTest`. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Добавьте шаблон элемента оформления текста редактора в проект и назовите его `KeyBindingTest`. Дополнительные сведения см. в разделе [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3. Добавьте следующие ссылки и задать **CopyLocal** для `false`:
+3. Добавьте следующие ссылки и задайте для свойства **CopyLocal** значение `false`:
 
-    Microsoft.VisualStudio.Editor
+    Microsoft. VisualStudio. Editor
 
-    Microsoft.VisualStudio.OLE.Interop
+    Microsoft. VisualStudio. OLE. Interop
 
-    Microsoft.VisualStudio.Shell.14.0
+    Microsoft. VisualStudio. Shell.,
 
-    Microsoft.VisualStudio.TextManager.Interop
+    Microsoft. VisualStudio. TextManager. Interop
 
-   В файле класса KeyBindingTest измените имя класса на PurpleCornerBox. Используйте лампочки, который отображается в левом поле на внесение соответствующих изменений. Внутри конструктора, измените имя элемента оформления уровня от **KeyBindingTest** для **PurpleCornerBox**:
+   В файле класса Кэйбиндингтест измените имя класса на Пурплекорнербокс. Используйте лампочку, которая отображается в левом поле, чтобы внести другие необходимые изменения. В конструкторе измените имя слоя оформления с **кэйбиндингтест** на **пурплекорнербокс**:
 
 ```csharp
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-В файле класса KeyBindingTestTextViewCreationListener.cs измените имя AdornmentLayer из **KeyBindingTest** для **PurpleCornerBox**:
+В файле класса KeyBindingTestTextViewCreationListener.cs измените имя Адорнментлайер с **кэйбиндингтест** на **пурплекорнербокс**:
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -54,16 +54,16 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 public AdornmentLayerDefinition editorAdornmentLayer;
 ```
 
-## <a name="handle-typechar-command"></a>Команда typechar дескриптор
-До Visual Studio 2017 версии 15.6, единственным способом для обработки команд в расширении редактора было внедрение <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> основе фильтр команд. Visual Studio 2017 версии 15.6 появился современный упрощенный подход зависимости от обработчиков команд редактора. Следующих двух разделах показано, как обрабатывать команду, используя как старые и современные подход.
+## <a name="handle-typechar-command"></a>Команда Handle ТИПЕЧАР
+До Visual Studio 2017 версии 15,6 единственным способом обработки команд в расширении редактора было реализация фильтра команд на основе <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>. В Visual Studio 2017 версии 15,6 появился современный упрощенный подход на основе обработчиков команд редактора. В следующих двух разделах показано, как выполнять команду, используя как устаревший, так и современный подход.
 
-## <a name="define-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Определить фильтр команды (до версии Visual Studio 2017 версии 15.6)
+## <a name="define-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Определение фильтра команд (до Visual Studio 2017 версии 15,6)
 
- Фильтр команд представляет собой реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, который обрабатывает команду путем создания экземпляра оформления.
+ Фильтр команд является реализацией <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, которая обрабатывает команду путем создания элемента оформления.
 
 1. Добавьте файл класса с именем `KeyBindingCommandFilter`.
 
-2. Добавьте следующие инструкции using.
+2. Добавьте следующие директивы using.
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-3. Следует наследовать класс с именем KeyBindingCommandFilter <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+3. Класс с именем Кэйбиндингкоммандфилтер должен наследовать от <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4. Добавьте закрытые поля для представления текста, следующая команда в цепочке команды, а флаг, представляют ли фильтр команды уже был добавлен.
+4. Добавьте закрытые поля для текстового представления, следующую команду в цепочке команд и флаг для представления того, был ли уже добавлен фильтр команд.
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     internal bool m_adorned;
     ```
 
-5. Добавьте конструктор, который задает представления текста.
+5. Добавьте конструктор, который задает текстовое представление.
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-6. Реализуйте `QueryStatus()` метод следующим образом.
+6. Реализуйте метод `QueryStatus()` следующим образом.
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-7. Реализуйте `Exec()` метод, поэтому он добавляет сиреневый поле в представление, если знак плюс ( **+** ) символа.
+7. Реализуйте метод `Exec()`, чтобы он добавлял Фиолетовое поле к представлению при вводе символа плюса ( **+** ).
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -132,10 +132,10 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Добавить фильтр команды (до версии Visual Studio 2017 версии 15.6)
- Поставщик элемента оформления необходимо добавить фильтр команд к текстовому представлению. В этом примере реализован поставщик <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> для прослушивания события создания представления текста. Этот поставщик элемента оформления также экспортирует слое оформлений, который определяет Z-порядок элемента оформления.
+## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Добавьте фильтр команд (до Visual Studio 2017 версии 15,6).
+ Поставщик декоративных элементов должен добавить фильтр команд в текстовое представление. В этом примере поставщик реализует <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> для прослушивания событий создания текстового представления. Этот поставщик декоративных элементов также экспортирует слой оформления, который определяет Z-порядок оформления.
 
-1. В файле KeyBindingTestTextViewCreationListener, добавьте следующие операторы using:
+1. В файл Кэйбиндингтесттекствиевкреатионлистенер добавьте следующие директивы using:
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-2. Чтобы получить соответствующий адаптер представления текста, необходимо импортировать <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
+2. Чтобы получить адаптер представления текста, необходимо импортировать <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-3. Изменение <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метода, так что он добавляет `KeyBindingCommandFilter`.
+3. Измените метод <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>, чтобы он добавлял `KeyBindingCommandFilter`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-4. `AddCommandFilter` Обработчик получает соответствующий адаптер представления текста и добавляет фильтр команд.
+4. Обработчик `AddCommandFilter` получает адаптер текстового представления и добавляет фильтр команд.
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -191,19 +191,19 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Реализуйте обработчик команды (начиная с Visual Studio 2017 версии 15.6)
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Реализация обработчика команд (начиная с Visual Studio 2017 версии 15,6)
 
-Во-первых обновление ссылок проекта Nuget для ссылки на последнюю редактор API:
+Сначала обновите ссылки NuGet проекта, чтобы они ссылались на последнюю версию API редактора:
 
-1. Щелкните правой кнопкой мыши проект и выберите **управление пакетами Nuget**.
+1. Щелкните проект правой кнопкой мыши и выберите пункт **Управление пакетами NuGet**.
 
-2. В **диспетчер пакетов Nuget**выберите **обновления** выберите **выбрать все пакеты** флажок, а затем выберите **обновления**.
+2. В **диспетчере пакетов NuGet**перейдите на вкладку **обновления** , установите флажок **выбрать все пакеты** и нажмите кнопку **Обновить**.
 
-Обработчик команд — это реализация <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, который обрабатывает команду путем создания экземпляра оформления.
+Обработчик команд является реализацией <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, которая обрабатывает команду путем создания элемента оформления.
 
 1. Добавьте файл класса с именем `KeyBindingCommandHandler`.
 
-2. Добавьте следующие инструкции using.
+2. Добавьте следующие директивы using.
 
    ```csharp
    using Microsoft.VisualStudio.Commanding;
@@ -213,7 +213,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    using System.ComponentModel.Composition;
    ```
 
-3. Следует наследовать класс с именем KeyBindingCommandHandler `ICommandHandler<TypeCharCommandArgs>`и экспортировать его как <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. Класс с именем Кэйбиндингкоммандхандлер должен наследовать от `ICommandHandler<TypeCharCommandArgs>` и экспортировать его как <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
 
    ```csharp
    [Export(typeof(ICommandHandler))]
@@ -222,13 +222,13 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>
    ```
 
-4. Добавьте отображаемое имя обработчика:
+4. Добавьте отображаемое имя обработчика команды:
 
    ```csharp
    public string DisplayName => "KeyBindingTest";
    ```
 
-5. Реализуйте `GetCommandState()` метод следующим образом. Поскольку обработчику этой команды обрабатывает core редактор команда typechar, его можно делегировать, включение команду, чтобы базовым редактором.
+5. Реализуйте метод `GetCommandState()` следующим образом. Так как этот обработчик команд обрабатывает команду ТИПЕЧАР в основном редакторе, он может делегировать Включение команды в основной редактор.
 
    ```csharp
    public CommandState GetCommandState(TypeCharCommandArgs args)
@@ -237,7 +237,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    }
    ```
 
-6. Реализуйте `ExecuteCommand()` метод, поэтому он добавляет сиреневый поле в представление, если знак плюс ( **+** ) символа.
+6. Реализуйте метод `ExecuteCommand()`, чтобы он добавлял Фиолетовое поле к представлению при вводе символа плюса ( **+** ).
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
@@ -257,7 +257,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    }
    ```
 
-   7. Скопируйте определение элемента оформления уровня из *KeyBindingTestTextViewCreationListener.cs* файл *KeyBindingCommandHandler.cs* , а затем удалите  *KeyBindingTestTextViewCreationListener.cs* файла:
+   7. Скопируйте определение слоя декоративных элементов из файла *KeyBindingTestTextViewCreationListener.CS* в *KeyBindingCommandHandler.CS* , а затем удалите файл *KeyBindingTestTextViewCreationListener.CS* :
 
    ```csharp
    /// <summary>
@@ -270,11 +270,11 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    private AdornmentLayerDefinition editorAdornmentLayer;
    ```
 
-## <a name="make-the-adornment-appear-on-every-line"></a>Сделать оформление появляются в каждой строке
+## <a name="make-the-adornment-appear-on-every-line"></a>Отображение оформления в каждой строке
 
-Исходное оформление появлялись на каждый символ «» в текстовом файле. Теперь, когда мы изменили код для добавления оформления в ответ на **+** символ, он добавляет оформления только в строке где **+** символа. Мы можем изменить код оформления для отображения оформления еще раз на каждые «».
+Исходный элемент оформления появлялся на каждом символе "a" в текстовом файле. Теперь, когда мы изменили код для добавления оформления в ответ на **+** символ, он добавляется только в строку, где введен **+ный** символ. Мы можем изменить код оформления, чтобы в каждом элементе "a" появился крайний элемент.
 
-В *KeyBindingTest.cs* измените `CreateVisuals()` метод для перебора всех строк в представлении, чтобы снабдить символ «».
+В файле *KeyBindingTest.CS* измените метод `CreateVisuals()`, чтобы выполнить итерацию по всем строкам в представлении, чтобы снабдить символ "a".
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)
@@ -318,10 +318,10 @@ private void CreateVisuals(ITextViewLine line)
 }
 ```
 
-## <a name="build-and-test-the-code"></a>Построение и тестирование кода
+## <a name="build-and-test-the-code"></a>Сборка и тестирование кода
 
-1. Выполните сборку решения KeyBindingTest и запустите его в экспериментальном экземпляре.
+1. Создайте решение Кэйбиндингтест и запустите его в экспериментальном экземпляре.
 
-2. Создайте или откройте текстовый файл. Введите некоторые слова, содержащие символ «», а затем введите **+** в любом месте в представлении текста.
+2. Создайте или откройте текстовый файл. Введите некоторые слова, содержащие символ "a", а затем введите **+** в любом месте текстового представления.
 
-     На каждый символ «» в файле появится фиолетовой квадрата.
+     Сиреневый квадрат должен отображаться на каждом символе "a" в файле.
