@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Документация Майкрософт
+title: 'Идебугдокументтекст:: Жетлинеофпоситион | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8ce32e46c42ee864a88e169a79539efb8b05633
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970878"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572113"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Возвращает номер строки и, возможно, смещение знака в строке, соответствующей в данную позицию символа.  
+Возвращает номер строки и, при необходимости, смещение символа в строке, которая соответствует заданной позиции символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,23 +39,23 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>Параметры  
  `cCharacterPosition`  
- [in] Местоположение символа диапазона позиции начала.  
+ окне Начальное расположение диапазона символов.  
   
  `pcLineNumber`  
- [out] Номер строки в диапазоне.  
+ заполняет Номер строки в диапазоне.  
   
  `pcCharacterOffsetInLine`  
- [in, out] Смещение знаков объекта диапазона, в строке `pcLineNumber`. Если этот параметр равен `NULL`, метод возвращает значение.  
+ [вход, выход] Смещение символа диапазона в строке `pcLineNumber`. Если этот параметр имеет `NULL`, метод не возвращает значение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает номер строки и, возможно, смещение знака в строке, соответствующей в данную позицию символа.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает номер строки и, при необходимости, смещение символа в строке, которая соответствует заданной позиции символа.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

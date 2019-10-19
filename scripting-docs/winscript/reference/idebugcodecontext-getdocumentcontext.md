@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext::GetDocumentContext | Документация Майкрософт
+title: 'Идебугкодеконтекст:: Жетдокументконтекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48c707432ddb94fae111c971b89c8ff74f34ac21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9dc1cda6164375f3434ee562b540e85268fe4c68
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974544"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573225"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
-Возвращает контекст документа, связанный с данным контекстом кода.  
+Возвращает контекст документа, связанный с этим контекстом кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>Параметры  
  `ppsc`  
- [out] Контекст документа, связанный с данным контекстом кода.  
+ заполняет Контекст документа, связанный с этим контекстом кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Для текстовых документов позиция символа диапазона должен быть текст для всей инструкции. Это позволяет отладчику интегрированной среды разработки, чтобы выделить текущий оператор источника.  
+## <a name="remarks"></a>Заметки  
+ Для текстовых документов диапазон символьной позиции должен включать текст для всей инструкции. Это позволяет интегрированной среде разработки отладчика выделить текущую исходную инструкцию.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)

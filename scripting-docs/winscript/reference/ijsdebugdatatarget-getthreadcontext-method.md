@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::GetThreadContext | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: GetThreadContext | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7904ef81eb900c6466069267101f30d89e362a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da5722553b448605129adcf32cfaa52e2dc76352
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582837"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577656"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>Метод IJsDebugDataTarget::GetThreadContext
-Возвращает контекст для данного потока.  
+Извлекает контекст для данного потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT GetThreadContext(
   
 #### <a name="parameters"></a>Параметры  
  `threadId`  
- [in] Поток, выполняемый в целевом процессе.  
+ окне Поток, выполняющийся в целевом процессе.  
   
  `contextFlags`  
- [in] Задает флаги контекста. Это же поле ContextFlags контекста (Подробнее см. в разделе winnt.h, ищите CONTEXT_ALL).  
+ окне Задает флаги контекста. Это то же самое, что и поле Контекстфлагс CONTEXT (Дополнительные сведения см. в разделе Winnt. h, найдите CONTEXT_ALL).  
   
  `contextSize`  
- [in] Размер буфера, заданного pContext.  
+ окне Размер буфера, заданного параметром Пконтекст.  
   
  `pContext`  
- [out] Принимает от платформы структура КОНТЕКСТА в буфер, заданного pContext.  
+ заполняет Получает структуру контекста, зависящую от платформы, в буфер, указанный параметром Пконтекст.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

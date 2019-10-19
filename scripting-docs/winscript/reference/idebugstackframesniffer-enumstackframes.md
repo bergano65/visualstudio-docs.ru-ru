@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer::EnumStackFrames | Документация Майкрософт
+title: 'Идебугстаккфрамесниффер:: Енумстаккфрамес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0d6d46a3bbc508308c689b4e10bea15501fad3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a2eab1698cd98130b496e58a74cdfdd091efd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005736"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576721"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-Возвращает перечислитель для кадров стека текущего потока.  
+Возвращает перечислитель кадров стека для текущего потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Параметры  
  `ppedsf`  
- [out] Перечислитель для кадров стека текущего потока.  
+ заполняет Перечислитель кадров стека для текущего потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Перечислитель кадра стека возвращает кадров, начиная с верхней части стека, начиная с наиболее недавно занесенный в стек.  
+## <a name="remarks"></a>Заметки  
+ Перечислитель кадров стека возвращает кадры, начиная с верхней части стека, начиная с самого последнего отправленного кадра.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

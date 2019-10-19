@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Документация Майкрософт
+title: 'IRemoteDebugApplication:: Енумглобалекспрессионконтекстс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92ab12dc9944c328e744c7f39252facb8e91a3f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 594dc2c09a76cd6027a9abcb38b5951768cceef9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944273"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576828"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
-Перечисляет контексты глобальное выражение для всех языков, работающих в этом приложении.  
+Перечисляет глобальные контексты выражений для всех языков, выполняющихся в этом приложении.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Параметры  
  `ppedec`  
- [out] Перечислитель, который перечисляет контексты глобальное выражение для всех языков, работающих в этом приложении.  
+ заполняет Перечислитель, в котором перечислены глобальные контексты выражений для всех языков, выполняющихся в этом приложении.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод перечисляет контексты глобальное выражение для всех языков, работающих в этом приложении.  
+## <a name="remarks"></a>Заметки  
+ Этот метод перечисляет контексты глобальных выражений для всех языков, выполняющихся в этом приложении.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

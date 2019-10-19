@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::FreeVirtualMemory | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: Фривиртуалмемори | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf450c03d996a47f9dcd00899ddee46b75d6df32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 835302249e95c89625c07c6d1ef3d7cbaf2905e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583045"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577622"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>Метод IJsDebugDataTarget::FreeVirtualMemory
-Выпускает и(или) отменяет фиксацию области памяти в пространстве виртуальных адресов целевого процесса.  
+Выпуски или отменяют выделение области памяти в виртуальном адресном пространстве целевого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,21 +37,21 @@ HRESULT FreeVirtualMemory(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Адрес в целевом процессе, где память должна освобождаться.  
+ окне Адрес в целевом процессе, в котором должна быть освобождена память.  
   
  `size`  
- [in] Число байтов для отмены фиксации. Чтобы освободить область памяти, это значение должно равняться нулю.  
+ окне Число байтов для отнесения. Чтобы освободить область памяти, это значение должно быть равно нулю.  
   
  `freeType`  
- [in] Указывает тип свободной операции для выполнения. Обычно это MEM_RELEASE (0x8000), который выпускает заданную область страниц. После выполнения операции страницы будут находиться в свободном состоянии. MEM_DECOMMIT (0x4000) можно использовать для отмены фиксации страниц без последующего их отпускания.  
+ окне Указывает тип выполняемой операции Free. Обычно это MEM_RELEASE (0x8000), который освобождает указанную область страниц. После операции страницы находятся в свободном состоянии. Вместо этого можно использовать MEM_DECOMMIT (0x4000), чтобы отменять фиксацию страниц без их освобождения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Дополнительные сведения см. в API VirtualFree Win32.  
+## <a name="remarks"></a>Заметки  
+ Дополнительные сведения см. в разделе API-интерфейс функции VirtualFree для Win32.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

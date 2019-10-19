@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetEventName | Документация Майкрософт
+title: 'Искриптскриптлет:: Сетевентнаме | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6bfa0bd69673ec8bbfc65f7f171dfbb933c7a68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5283646838f02cdc1c5ab27f63fd237d698fc6ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786728"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571896"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
-Задает имя события, связанные со скриптлетом.  
+Задает имя события, связанного с скриптлет.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,16 +37,16 @@ HRESULT SetEventName(
   
 #### <a name="parameters"></a>Параметры  
  `psz`  
- [in] Буфер, содержащий имя события, связанные с `IScriptScriptlet` объекта.  
+ окне Буфер, содержащий имя события, связанного с объектом `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)

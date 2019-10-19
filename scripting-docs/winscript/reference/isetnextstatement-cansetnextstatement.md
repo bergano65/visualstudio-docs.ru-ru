@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::CanSetNextStatement | Документация Майкрософт
+title: 'Исетнекстстатемент:: Кансетнекстстатемент | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56cf0b2e4afd7a86a087b37be4b23758a5b59720
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786619"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571839"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Этот метод определяет, можно ли задать точку выполнения, который определяет следующий оператор кода, который будет выполнен, в указанное расположение.  
+Этот метод определяет, может ли точка выполнения, определяющая следующий оператор кода для выполнения, быть задана в указанном расположении.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,20 +36,20 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Параметры  
  `pStackFrame`  
- [in] Указатель на кадр стека.  
+ окне Указатель на объект кадра стека.  
   
  `pCodeContext`  
- [in] Указатель на объект контекста кода.  
+ окне Указатель на объект контекста кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
-|`S_OK`|Следующий оператор могут обновляться в контекст указанного кода.|  
-|`S_FALSE`|Следующий оператор нельзя обновить до контекст указанного кода.|  
+|`S_OK`|Следующий оператор можно обновить до указанного контекста кода.|  
+|`S_FALSE`|Следующий оператор не может быть обновлен до указанного контекста кода.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс ISetNextStatement](../../winscript/reference/isetnextstatement-interface.md)

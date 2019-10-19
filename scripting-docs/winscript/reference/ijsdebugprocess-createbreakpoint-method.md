@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugProcess::CreateBreakPoint | Документация Майкрософт
+title: 'Метод метод ijsdebugprocess:: CreateBreakPoint | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b398b93c2e7b5ad43abd35d385407b39c0c980f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0a4d595a11dc54829c467a0aace9601042fa08
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557976"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575092"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>Метод IJsDebugProcess::CreateBreakPoint
-Задает точку останова в позицию указанного документа.  
+Задает точку останова в указанной позиции документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,24 +39,24 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>Параметры  
  `documentId`  
- [in] Указатель на IDebugDocumentText.  
+ окне Указатель на Идебугдокументтекст.  
   
  `characterOffset`  
- [in] Символ смещение от начала файла.  
+ окне Смещение символа от начала файла.  
   
  `characterCount`  
- [in] Длина текста документа, в течение которого следует вставить точку останова.  
+ окне Длина текста документа, в который должна быть вставлена Точка останова.  
   
  `isEnabled`  
- [in] Указывает, включена ли точка останова.  
+ окне Указывает, включена ли точка останова.  
   
  `ppDebugBreakPoint`  
- [out] Объект, представляющий точку останова, которая была создана.  
+ заполняет Объект, представляющий созданную точку останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

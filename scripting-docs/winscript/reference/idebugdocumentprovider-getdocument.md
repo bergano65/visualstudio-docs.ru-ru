@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentProvider::GetDocument | Документация Майкрософт
+title: 'Идебугдокументпровидер:: \ Document | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f6b816f455d213cb81065f1909930bf50eeb415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9240f059023fee4f55f34c80087063638ec8ad6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970891"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572175"
 ---
 # <a name="idebugdocumentprovidergetdocument"></a>IDebugDocumentProvider::GetDocument
-В результате документ создаваться, если он еще не существует.  
+Приводит к созданию экземпляра документа, если он еще не существует.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT GetDocument(
   
 #### <a name="parameters"></a>Параметры  
  `ppssd`  
- [out] Документ отладки, относящейся к документу.  
+ заполняет Документ отладки, соответствующий документу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывает его для создания экземпляра, если он еще не существует.  
+## <a name="remarks"></a>Заметки  
+ Этот метод приводит к созданию экземпляра документа, если он еще не существует.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentProvider](../../winscript/reference/idebugdocumentprovider-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::GetDocument | Документация Майкрософт
+title: 'Идебугдокументконтекст:: \ Document | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfcc5b3e2d2e197619f9bc4ec19b55c9eaf1d2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf4c52d1a866df12a129f1d4f2e864068c876fa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974440"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577085"
 ---
 # <a name="idebugdocumentcontextgetdocument"></a>IDebugDocumentContext::GetDocument
 Возвращает документ, содержащий этот контекст.  
@@ -37,17 +37,17 @@ HRESULT GetDocument(
   
 #### <a name="parameters"></a>Параметры  
  `ppsd`  
- [out] Документ, содержащий этот контекст.  
+ заполняет Документ, содержащий этот контекст.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- `GetDocument` Метод возвращает документ, который содержит этот контекст.  
+## <a name="remarks"></a>Заметки  
+ Метод `GetDocument` Возвращает документ, содержащий этот контекст.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md)

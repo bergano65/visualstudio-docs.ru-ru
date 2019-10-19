@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::DebugOutput | Документация Майкрософт
+title: IDebugApplication::D Ебугаутпут | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a67a16e3fd4868726087df6f2596571d14630f80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d52acf0e4b32f0ced63b53a6b37ffe62f1d948e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990970"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575020"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-Вызывает заданную строку для отображения отладчика интегрированной средой разработки (IDE).  
+Приводит к отображению заданной строки в интегрированной среде разработки (IDE) отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,20 +37,20 @@ HRESULT DebugOutput(
   
 #### <a name="parameters"></a>Параметры  
  `pstr`  
- [in] Строка, отображаемая в отладчике.  
+ окне Строка, отображаемая в отладчике.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод позволяет модуль языка для реализации поддержки отладки выходные данные для конкретного языка. Строка, как правило, отображается в окне вывода отладчика.  
+## <a name="remarks"></a>Заметки  
+ Этот метод позволяет языковой подсистеме реализовать поддержку вывода отладки для конкретного языка. Строка обычно отображается в окне вывод отладчика.  
   
- Этот метод вызывает `IApplicationDebugger::onDebugOutput` для вызова.  
+ Этот метод вызывает `IApplicationDebugger::onDebugOutput`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)

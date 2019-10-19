@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetSize | Документация Майкрософт
+title: 'Идебугдокументтекст:: DataSize | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95f8df44a503fa72f57a9cee17eb5e832e4eb670
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef6f75b396dddec80fb2ae89c71f8579ce3c29b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008596"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572094"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
 Возвращает число строк и число символов в документе.  
@@ -38,19 +38,19 @@ HRESULT GetSize(
   
 #### <a name="parameters"></a>Параметры  
  `pcNumLines`  
- [out] Число строк в документе. Если этот параметр имеет значение NULL, метод не возвращает значение.  
+ заполняет Число строк в документе. Если этот параметр имеет значение NULL, метод не возвращает значение.  
   
  `pcNumChars`  
- [out] Число символов в документе. Если этот параметр имеет значение NULL, метод не возвращает значение.  
+ заполняет Число символов в документе. Если этот параметр имеет значение NULL, метод не возвращает значение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод возвращает число строк и число символов в документе.  
   
 ## <a name="see-also"></a>См. также  

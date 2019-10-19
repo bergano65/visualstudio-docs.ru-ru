@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onInsertText | Документация Майкрософт
+title: 'Идебугдокументтекстевентс:: Онинсерттекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7f40178d64aaf654850ea54fafee65bc0a1c51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c926caf8ff99cf183e41b2caf825aa828fb60de4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946730"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572911"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
-Указывает, что новый текст был добавлен в документ.  
+Указывает, что в документ добавлен новый текст.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>Параметры  
  `cCharacterPosition`  
- [in] Позиция символа, где был вставлен новый текст.  
+ окне Место в символах, где был вставлен новый текст.  
   
  `cNumToInsert`  
- [in] Число символов, которые были вставлены.  
+ окне Число вставленных символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод обычно вызывается в узле, который постепенно загружает содержимое, например веб-браузер.  
+## <a name="remarks"></a>Заметки  
+ Этот метод обычно вызывается узлом, который постепенно загружает содержимое, например веб-браузер.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+ @No__t_1 [интерфейса идебугдокументтекстевентс](../../winscript/reference/idebugdocumenttextevents-interface.md)  
  [IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)

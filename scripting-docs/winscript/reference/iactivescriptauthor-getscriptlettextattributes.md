@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptletTextAttributes | Документация Майкрософт
+title: 'Иактивескриптаусор:: Жетскриптлеттекстаттрибутес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb8f1b5aac6df8d8659fa323f3f1efcb7721d97f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4cd0090b9ade47ad37acf6d285ec7f072f1ea5af
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955064"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576171"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
-Возвращает атрибуты текста скриптлета.  
+Возвращает атрибуты текста объекта скриптлет.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,36 +41,36 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Параметры  
  `pszCode`  
- [in, size_is (`cch`)] текста скриптлета. Эта строка не быть нулевым байтом.  
+ [in, size_is (`cch`)] Текст скриптлет. Эта строка не должна завершаться нулем.  
   
  `cch`  
- [in] Размер, используемый для `pszCode` и `pattr` параметров.  
+ окне Размер, используемый для параметров `pszCode` и `pattr`.  
   
  `pszDelimiter`  
- [in] Адрес end-разделителя конца скриптлета. Когда `pszCode` анализируется из потока текста, узел обычно использует разделитель (например, две одинарные кавычки), чтобы определить конец скриптлета. Установите этот параметр в значение NULL, если разделитель не используется для идентификации конца сценария.  
+ окне Адрес разделителя конца скриптлета. При синтаксическом анализе `pszCode` из потока текста хост обычно использует разделитель (например, две одинарные кавычки) для обнаружения конца скриптлет. Присвойте этому параметру значение NULL, если для обнаружения конца скриптлет не используется разделитель.  
   
  `dwFlags`  
- [in] Флаги, связанные с атрибутами текст сценария. Может быть сочетанием следующих значений.  
+ окне Флаги, связанные с атрибутами Text объекта скриптлет. Может быть сочетанием следующих значений.  
   
-|Константа|Значение|Описание|  
+|Константа|значения|Описание|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Определите идентификаторы, которые имеют атрибут SOURCETEXT_ATTR_IDENTIFIER и определить операторы точки, имеющие атрибут SOURCETEXT_ATTR_MEMBERLOOKUP.|  
-|GETATTRFLAG_THIS|0x0100|Определите текущего объекта, который имеет атрибут SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Определите строку содержимого и текст примечания, имеющего атрибут SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Выявление идентификаторов, имеющих атрибут SOURCETEXT_ATTR_IDENTIFIER, и идентификации операторов Dot, имеющих атрибут SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRFLAG_THIS|0x0100|Определяет текущий объект, имеющий атрибут SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Выявление строкового содержимого и текста комментария с атрибутом SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out, size_is (`cch`)] сведения о цвете для кода скриптлета.  
+ [in, out, size_is (`cch`)] Сведения о цвете для кода скриптлет.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
+ @No__t_1 [интерфейса иактивескриптаусор](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [Иактивескриптаусор:: жетскрипттекстаттрибутес](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

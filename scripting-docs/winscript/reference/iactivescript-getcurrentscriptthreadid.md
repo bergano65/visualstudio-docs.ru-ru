@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID | Документация Майкрософт
+title: 'IActiveScript:: Жеткуррентскриптсреадид | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e1b6e7bae7d78c18e11cd1aac8d0844fb9e90a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dedb16e0c007ed05370fb54835f84f00784c1ae4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935660"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575767"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-Извлекает определенный сценариев ядра-идентификатор для текущего потока. Идентификатор может использоваться в последующих вызовах методов управление выполнением скриптов поток например [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) метод.  
+Извлекает идентификатор, определяемый обработчиком сценариев, для выполняющегося в данный момент потока. Идентификатор можно использовать при последующих вызовах методов управления выполнением потока скриптов, таких как метод [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>Параметры  
  `pstidThread`  
- [out] Адрес переменной, которая получает идентификатор потока сценарий, связанный с текущим потоком. Интерпретация этого идентификатора остается на обработчик скриптов, но это может быть просто копию идентификатор потока Windows. Если поток Win32 завершился, этот идентификатор становится неназначенные и впоследствии могут быть назначены другим потоком.  
+ заполняет Адрес переменной, которая получает идентификатор потока скрипта, связанный с текущим потоком. Интерпретация этого идентификатора оставлена обработчику скриптов, но может быть просто копией идентификатора потока Windows. Если поток Win32 завершается, этот идентификатор преобразуется в неназначенный и затем может быть назначен другому потоку.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_POINTER` Если был указан недопустимый указатель.  
+ Возвращает `S_OK` в случае успеха или `E_POINTER`, если был указан недопустимый указатель.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод может вызываться из потоков не основной не входили в выноске отличные от базовых объектов узла или [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) интерфейс.  
+## <a name="remarks"></a>Заметки  
+ Этот метод может быть вызван из не базовых потоков, что приводит к небазовому вызову для размещения объектов или интерфейсу [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

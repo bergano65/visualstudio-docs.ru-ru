@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Alive | Документация Майкрософт
+title: 'Искриптноде:: Alive | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0a55d26b5ab643670ba7ed51e576eeb89d8b98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7e0216824506ee942b42a42d5c3c4475f63f9e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787177"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573630"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
-Указывает, является ли объект все еще активна.  
+Указывает, активен ли объект.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,12 +39,12 @@ HRESULT Alive();
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
-|`S_OK`|Узел сценария, по-прежнему активна.|  
+|`S_OK`|Узел скрипта все еще активен.|  
   
-## <a name="remarks"></a>Примечания  
- Если объект не активен, компонент модели объектов (COM) возвращает ошибку из маршалинга прокси для вызова этого метода.  
+## <a name="remarks"></a>Заметки  
+ Если объект неактивен, модель COM возвращает ошибку от прокси-сервера для вызова этого метода.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptNode](../../winscript/reference/iscriptnode-interface.md)

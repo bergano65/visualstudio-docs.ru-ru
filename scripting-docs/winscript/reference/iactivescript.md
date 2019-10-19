@@ -13,33 +13,33 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b7e3a0172a798eab9a743f446dff3d339a785b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7a33db2bcbcb356a508fec2e6bc5449a899a1299
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436087"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577234"
 ---
 # <a name="iactivescript"></a>IActiveScript
-Предоставляет методы, необходимые для инициализации обработчика скриптов. Обработчик скриптов должен реализовать `IActiveScript` интерфейс.  
+Предоставляет методы, необходимые для инициализации обработчика скриптов. Обработчик скриптов должен реализовывать интерфейс `IActiveScript`.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Информирует обработчик сценариев из [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) сайта, предоставленный средой размещения.|  
-|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Извлекает объект узла, связанный с обработчик скриптов Windows.|  
-|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Помещает обработчик скриптов в указанном состоянии.|  
-|[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Возвращает текущее состояние обработчика сценариев.|  
-|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Вызывает обработчик скриптов отказаться от любого текущего загруженного скрипта, теряют свое состояние и освободить все указатели на интерфейс, он имеет к другим объектам, таким образом ввод закрытом состоянии.|  
-|[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Добавляет имя элемента корневого уровня пространства имен обработчика сценариев.|  
+|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Информирует обработчик скриптов сайта [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) , предоставленного узлом.|  
+|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Извлекает объект сайта, связанный с обработчиком сценариев Windows.|  
+|[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Помещает обработчик скриптов в указанное состояние.|  
+|[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Извлекает текущее состояние обработчика скриптов.|  
+|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Заставляет обработчик скриптов отменять любой загруженный скрипт, терять его состояние и освобождать все указатели интерфейса, которые он имеет, на другие объекты, тем самым выполняя вход в закрытое состояние.|  
+|[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Добавляет имя элемента корневого уровня в пространство имен обработчика скриптов.|  
 |[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Добавляет библиотеку типов в пространство имен для скрипта.|  
-|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Извлекает `IDispatch` интерфейс для выполняемого скрипта.|  
-|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Извлекает определенный сценариев ядра-идентификатор для текущего потока.|  
-|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Извлекает определенный сценариев ядра-идентификатор для потока, связанного с данного потока Microsoft Win32.|  
-|[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)|Возвращает текущее состояние потока скрипта.|  
-|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Прерывает выполнение выполняющийся поток скрипта.|  
-|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Клонирует текущий обработчик скриптов (минус любое текущее состояние выполнения), возвращая загружен обработчик скриптов, который у нет сайта в текущем потоке.|  
+|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Извлекает интерфейс `IDispatch` для выполняющегося скрипта.|  
+|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Извлекает идентификатор, определяемый обработчиком сценариев, для выполняющегося в данный момент потока.|  
+|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Извлекает идентификатор, определяемый обработчиком сценариев, для потока, связанного с заданным потоком Microsoft Win32.|  
+|[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)|Извлекает текущее состояние потока скрипта.|  
+|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Прерывает выполнение выполняющегося потока скрипта.|  
+|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Копирует текущий обработчик скриптов (за исключением любого текущего состояния выполнения), возвращая загруженный обработчик скриптов, не имеющий сайта в текущем потоке.|  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

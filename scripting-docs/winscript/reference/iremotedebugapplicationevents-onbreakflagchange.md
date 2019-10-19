@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Документация Майкрософт
+title: 'IRemoteDebugApplicationEvents:: Онбреакфлагчанже | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb19b6cfc423a1305276441305ef854c70f2d896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e9a29b6dcc5cd6864ce4edffe9e5f96b64ba9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943791"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561703"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
-Обрабатывает событие при изменении флаги break.  
+Обрабатывает событие при изменении флагов останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>Параметры  
  `abf`  
- [in] Текущий флаги break для приложения.  
+ окне Текущие флаги разрыва для приложения.  
   
  `prdatSteppingThread`  
- [in] Текущим выполняемым потоком.  
+ окне Текущий выполняющийся поток.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод обрабатывает событие при изменении флаг приостановки выполнения.  
+## <a name="remarks"></a>Заметки  
+ Этот метод обрабатывает событие при изменении флага прерывания.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
+ @No__t_1 [интерфейса IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
  [Перечисление APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)

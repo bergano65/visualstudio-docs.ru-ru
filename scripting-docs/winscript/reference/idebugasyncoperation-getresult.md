@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetResult | Документация Майкрософт
+title: Идебугасинкоператион::/результат | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49cf761c85fce3f8fc2f6705d114ab042e0c2ecd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55c51649a5bc3094dd306166e013a892ce67e236
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822049"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573288"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
 Предоставляет возвращаемое значение и параметр возвращаемого объекта из синхронной операции отладки.  
@@ -38,22 +38,22 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>Параметры  
  `phrResult`  
- [out] Если операция будет завершена, `phrResult` является возвращаемым значением из `IDebugSyncOperation::Execute`.  
+ заполняет Если операция завершена, `phrResult` является возвращаемым значением `IDebugSyncOperation::Execute`.  
   
  `ppunkResult`  
- [out] Если операция будет завершена, `ppunkResult` является параметром объект, возвращаемый операцией.  
+ заполняет Если операция завершена, `ppunkResult` является параметром объекта, возвращаемым операцией.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_PENDING`|Операция не завершена.|  
   
-## <a name="remarks"></a>Примечания  
- Если операция завершена, этот метод возвращает `HRESULT` и параметра из объекта `IDebugSyncOperation::Execute`.  
+## <a name="remarks"></a>Заметки  
+ Если операция завершена, этот метод возвращает `HRESULT` и параметр объекта из `IDebugSyncOperation::Execute`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
+ @No__t_1 [интерфейса идебугасинкоператион](../../winscript/reference/idebugasyncoperation-interface.md)  
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

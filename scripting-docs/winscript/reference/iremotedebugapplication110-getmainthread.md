@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::GetMainThread | Документация Майкрософт
+title: 'IRemoteDebugApplication110:: Жетмаинсреад | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a4b51d87f89d77bebf065ce5f52a297ada333d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ff99c43f633da8454eb5fa32463886877e06ed72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383505"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574121"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Возвращает основной поток для узлов, которые вызывают [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), в противном случае возвращает значение E_FAIL.  
+Возвращает основной поток для узлов, вызывающих [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), в противном случае ВОЗВРАЩАЕТ значение E_FAIL.  
   
 > [!IMPORTANT]
-> [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,8 +34,8 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
   
 #### <a name="parameters"></a>Параметры  
  `ppThread`  
- [out] Основной [интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
+ заполняет Основной [интерфейс иремотедебугаппликатионсреад](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
+ @No__t_1 [интерфейса IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
  [Интерфейс IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)

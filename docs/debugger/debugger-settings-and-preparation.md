@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8794fd94a50f51b7293fee025f2eb1abdf6db5
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349729"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536062"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.
@@ -44,7 +44,7 @@ ms.locfileid: "72349729"
 
  [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md) Описывает отладку 64-разрядных приложений.
 
- [Руководство. Указание версии .NET Framework для отладки](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Описывает, как задать раздел реестра, указывающий отладчику, какую версию следует использовать.
+ [Как указать более раннюю версию .NET Framework для отладки](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Описывает, как задать раздел реестра, указывающий отладчику, какую версию следует использовать.
 
 ## <a name="see-also"></a>См. также раздел
 - [Безопасность отладчика](../debugger/debugger-security.md)

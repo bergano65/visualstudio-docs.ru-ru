@@ -14,20 +14,20 @@ ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb3cffa4bffd616560aa95ace4ad82a4368ebbd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007507"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574603"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Функция не имеет допустимого объекта прототипа
-Вы попытались использовать **instanceof** для определения, если объект, производный от класса определенной функции, но переопределен объекта `prototype` свойство как `null`, или тип внешнего объекта (оба не является допустимым [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объектов). Внешний объект может быть объект из объектной модели узла (например, документ Internet Explorer или объект окна) или внешним COM-объектом.  
+Предпринята попытка использовать **instanceof** для определения того, был ли объект производным от определенного класса функции, но свойство `prototype` объекта было переопределено как `null` или тип внешнего объекта (как недопустимые [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекты). Внешним объектом может быть объект из объектной модели узла (например, документ или объект окна Internet Explorer) или внешний COM-объект.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Убедитесь, функции `prototype` свойство ссылается на допустимый [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекта.  
+- Убедитесь, что свойство `prototype` функции ссылается на допустимый объект [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>См. также  
- [Объект функции](../../javascript/reference/function-object-javascript.md)   
+ [Объект функции](../../javascript/reference/function-object-javascript.md)    
  [Свойство prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)

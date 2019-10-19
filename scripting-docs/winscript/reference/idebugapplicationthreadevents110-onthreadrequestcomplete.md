@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnThreadRequestComplete | Документация Майкрософт
+title: 'IDebugApplicationThreadEvents110:: Онсреадрекуесткомплете | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5542d524506410e0a69dcb5addb6a7fe59209073
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 697a1d60e2af43337d26ebdf92bd6759f2251644
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440464"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573325"
 ---
 # <a name="idebugapplicationthreadevents110onthreadrequestcomplete"></a>IDebugApplicationThreadEvents110::OnThreadRequestComplete
-Вызов в потоке, с использованием потока PDM переключение завершения.  
+Завершен вызов потока, использующего переключение потоков PDM.  
   
 > [!IMPORTANT]
-> [Интерфейс IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

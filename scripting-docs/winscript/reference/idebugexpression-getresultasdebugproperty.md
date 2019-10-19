@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty | Документация Майкрософт
+title: 'Идебужекспрессион:: Жетресултасдебугпроперти | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06d9b513d40450e20bb87f07c460bef7ce2678c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104c42f02d02be386711e687f02d333425834948
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978501"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575930"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-Возвращает результат вычисления выражения, как свойство отладки и возвращаемое значение операции.  
+Возвращает результат вычисления выражения как свойство Debug и возвращаемое значение операции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,24 +38,24 @@ HRESULT GetResultAsDebugProperty(
   
 #### <a name="parameters"></a>Параметры  
  `phrResult`  
- [out] Возвращаемое значение операции.  
+ заполняет Возвращаемое значение операции.  
   
  `ppdp`  
- [out] Свойства отладки для выражения.  
+ заполняет Свойство Debug для выражения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_PENDING`|Операция по-прежнему не ожидается.|  
+|`E_PENDING`|Операция все еще находится в состоянии ожидания.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает результат вычисления выражения как `IDebugProperty` и операции `HRESULT`.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает результат вычисления выражения в виде `IDebugProperty` и `HRESULT` операции.  
   
- Этот метод возвращает `S_OK` и `phrResult` возвращает `E_ABORT` Если `Abort` прерывает выполнение операции.  
+ Этот метод возвращает `S_OK` и `phrResult` возвращает `E_ABORT`, если `Abort` прерывает операцию.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   
+ @No__t_1 [интерфейса идебужекспрессион](../../winscript/reference/idebugexpression-interface.md)  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

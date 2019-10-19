@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Документация Майкрософт
+title: 'IRemoteDebugApplication:: Ресумефромбреакпоинт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5844381188cb03c99ab0a44ed9b9e0fdbab67e6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fead9c14efbe73bd006a5ff3e1cfb10ad40404b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944175"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577462"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-По-прежнему приложение, которое в настоящее время находится в точке останова.  
+Возобновляет приложение, которое в данный момент находится в точке останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,25 +39,25 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Параметры  
  `prptFocus`  
- [in] Для пошагового выполнения режимы, потока, т. е нарушается в пошаговом режиме.  
+ окне Для режимов пошагового режима — поток, на который влияет режим пошагового выполнения.  
   
  `bra`  
- [in] Действие, выполняемое при возобновлении приложения.  
+ окне Действие, выполняемое при возобновлении работы приложения.  
   
  `era`  
- [in] Действие, выполняемое в случае, приложение остановлено из-за ошибки.  
+ окне Действие, выполняемое в случае, если приложение было остановлено из-за ошибки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод по-прежнему приложение, которое в настоящее время находится в точке останова.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возобновляет приложение, которое в данный момент находится в точке останова.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
- [Перечисление BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+ @No__t_1 [интерфейса IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
+ @No__t_1 [перечисления BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [Перечисление ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

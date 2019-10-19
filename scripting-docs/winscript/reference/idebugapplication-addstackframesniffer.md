@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddStackFrameSniffer | Документация Майкрософт
+title: 'IDebugApplication:: Аддстаккфрамесниффер | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16fb941a91482c548284dc3d4317a472fd9be641
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a461c24b6f62f1e0ece88915e097faf0c59f15e7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991050"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575035"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-Добавляет поставщик перечислитель кадра стека к этому приложению.  
+Добавляет поставщик перечислителя кадра стека в это приложение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,22 +38,22 @@ HRESULT AddStackFrameSniffer(
   
 #### <a name="parameters"></a>Параметры  
  `pdsfs`  
- [in] Поставщик перечислитель кадр стека для добавления к этому приложению.  
+ окне Поставщик перечислителя кадров стека для добавления в это приложение.  
   
  `pdwCookie`  
- [out] Файл cookie, который используется для удаления этого поставщика перечислитель кадра стека из приложения.  
+ заполняет Файл cookie, используемый для удаления этого поставщика перечислителя кадров стека из приложения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Несмотря на то, что модулям языка обычно вызывают этот метод для предоставления их кадры стека в отладчик, существует возможность для других сущностей, для предоставления кадров стека.  
+## <a name="remarks"></a>Заметки  
+ Хотя обработчики языка обычно вызывают этот метод для предоставления кадров стека отладчику, другие сущности могут предоставлять фреймы стека.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
- [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication:: ремовестаккфрамесниффер](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
  [Интерфейс IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

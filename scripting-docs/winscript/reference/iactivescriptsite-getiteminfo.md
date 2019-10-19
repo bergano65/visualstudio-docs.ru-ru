@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetItemInfo | Документация Майкрософт
+title: 'IActiveScriptSite:: GetItemInfo | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0458f42466a264c30a440b1b14a028a2457f12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992726"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570924"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
-Позволяет обработчику сценариев для получения сведений об элементе добавлены с классом [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) метод.  
+Позволяет обработчику скриптов получать сведения об элементе, добавленном с помощью метода [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,34 +40,34 @@ HRESULT GetItemInfo(
   
 #### <a name="parameters"></a>Параметры  
  `pstrName`  
- [in] Имя, связанное с элементом, как указано в [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) метод.  
+ окне Имя, связанное с элементом, как указано в методе [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .  
   
  `dwReturnMask`  
- [in] Битовая маска, указывающая, какие сведения об элементе должны быть возвращены. Обработчик скриптов должен запросить минимальный объем информации, которые невозможно, так как некоторые возвращаемые параметры (например, `ITypeInfo`) может занимать много времени, чтобы загрузить или создать. Может быть сочетанием следующих значений:  
+ окне Битовая маска, указывающая, какие сведения об элементе следует вернуть. Обработчик скриптов должен запрашивать минимальный объем информации, так как некоторые из возвращаемых параметров (например `ITypeInfo`) могут занимать значительное время для загрузки или создания. Может быть сочетанием следующих значений:  
   
-|Значение|Значение|  
+|значения|Смысл|  
 |-----------|-------------|  
-|SCRIPTINFO_IUNKNOWN|Возвращает `IUnknown` интерфейс для этого элемента.|  
-|SCRIPTINFO_ITYPEINFO|Возвращает `ITypeInfo` интерфейс для этого элемента.|  
+|SCRIPTINFO_IUNKNOWN|Возвращает интерфейс `IUnknown` для этого элемента.|  
+|SCRIPTINFO_ITYPEINFO|Возвращает интерфейс `ITypeInfo` для этого элемента.|  
   
  `ppunkItem`  
- [out] Адрес переменной, которая получает указатель на `IUnknown` интерфейса, связанного с данного элемента. Можно использовать обработчик скриптов `IUnknown::QueryInterface` метод, чтобы получить `IDispatch` интерфейса для элемента. Этот параметр принимает значение NULL, если `dwReturnMask` не включает значение SCRIPTINFO_IUNKNOWN. Кроме того он получает значение NULL, если отсутствует объект, связанный с именем элемента. Этот механизм используется для создания простой класс, если именованный элемент был добавлен с флагом SCRIPTITEM_CODEONLY, установленным [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) метод.  
+ заполняет Адрес переменной, которая получает указатель на интерфейс `IUnknown`, связанный с данным элементом. Обработчик скриптов может использовать метод `IUnknown::QueryInterface` для получения интерфейса `IDispatch` для элемента. Этот параметр получает значение NULL, если `dwReturnMask` не включает значение SCRIPTINFO_IUNKNOWN. Кроме того, он получает значение NULL, если отсутствует объект, связанный с именем элемента. Этот механизм используется для создания простого класса при добавлении именованного элемента с флагом SCRIPTITEM_CODEONLY, установленным в методе [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .  
   
  `ppTypeInfo`  
- [out] Адрес переменной, которая получает указатель на `ITypeInfo` интерфейса, связанного с элементом. Этот параметр принимает значение NULL, если `dwReturnMask` не включает значение SCRIPTINFO_ITYPEINFO, или если сведения о типе недоступна для этого элемента. Если сведения о типе недоступна, объект не может быть источником событий и привязки имени должна быть реализована с помощью `IDispatch::GetIDsOfNames` метод. Обратите внимание, что `ITypeInfo` извлечь интерфейс описывает компонентного класса элемента (TKIND_COCLASS), так как объект может поддерживать несколько интерфейсов и интерфейсах событий. Если элемент поддерживает `IProvideMultipleTypeInfo` интерфейс, `ITypeInfo` извлечь интерфейс совпадает с нулевым индексом `ITypeInfo` , был бы получен с помощью `IProvideMultipleTypeInfo::GetInfoOfIndex` метод.  
+ заполняет Адрес переменной, которая получает указатель на интерфейс `ITypeInfo`, связанный с элементом. Этот параметр получает значение NULL, если `dwReturnMask` не содержит значение SCRIPTINFO_ITYPEINFO, или если сведения о типе недоступны для этого элемента. Если сведения о типе недоступны, объект не может быть источником событий, а привязка имени должна быть реализована с помощью метода `IDispatch::GetIDsOfNames`. Обратите внимание, что извлеченный интерфейс `ITypeInfo` описывает компонентный класс элемента (TKIND_COCLASS), поскольку объект может поддерживать несколько интерфейсов и интерфейсов событий. Если элемент поддерживает интерфейс `IProvideMultipleTypeInfo`, полученный `ITypeInfo` интерфейс совпадает с нулевым индексом `ITypeInfo`, который будет получен с помощью метода `IProvideMultipleTypeInfo::GetInfoOfIndex`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Возвращаемое значение|Значение|  
+|Возвращаемое значение|Смысл|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
-|`E_INVALIDARG`|Аргумент был недопустимым.|  
+|`E_INVALIDARG`|Недопустимый аргумент.|  
 |`E_POINTER`|Указан недопустимый указатель.|  
 |`TYPE_E_ELEMENTNOTFOUND`|Элемент с указанным именем не найден.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает только данные, обозначается `dwReturnMask` параметр; это повышает производительность. Например если `ITypeInfo` интерфейс не требуется для элемента, он просто не указывается в `dwReturnMask`.  
+## <a name="remarks"></a>Заметки  
+ Этот метод извлекает только сведения, указанные параметром `dwReturnMask`. Это повышает производительность. Например, если для элемента не требуется интерфейс `ITypeInfo`, он просто не указывается в `dwReturnMask`.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

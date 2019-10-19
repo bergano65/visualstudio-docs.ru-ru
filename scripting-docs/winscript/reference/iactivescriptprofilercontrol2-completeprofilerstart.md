@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::CompleteProfilerStart | Документация Майкрософт
+title: 'IActiveScriptProfilerControl2:: Комплетепрофилерстарт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36a1f5d6a1401e2860b65a29c8e383627e83c6be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0230ecb480792b5b24b7375f5b95926735d0a61
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993028"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571557"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
-Уведомляет профилировщик о том, что вы запустили профилирования на всех применимых обработчиков сценариев. С помощью этого метода, можно получить полный стек вызовов, если [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] выполняется при запуске профилирования.  
+Уведомляет профилировщик о запуске профилирования для всех применимых обработчиков скриптов. С помощью этого метода можно получить полный стек вызовов, если [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] выполняется при запуске профилирования.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,17 +35,17 @@ HRESULT CompleteProfilerStart();
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает значение HRESULT. Ниже приведены возможные значения.  
   
-|Возвращаемое значение|Значение|  
+|Возвращаемое значение|Смысл|  
 |------------------|-------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_FAIL`|Не удалось запустить профилирование.|  
-|`S_FALSE`|Профилирование был запущен, когда не был запущен сценарий.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включено. Обратный вызов не задано.|  
-|`E_OUTOFMEMORY`|Не удается получить стек вызовов из-за условием памяти.|  
+|`E_FAIL`|Не удается запустить профилирование.|  
+|`S_FALSE`|Профилирование было запущено, когда сценарий не выполнялся.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включено. Обратный вызов не задан.|  
+|`E_OUTOFMEMORY`|Не удается получить стек вызовов из-за нехватки памяти.|  
   
-## <a name="remarks"></a>Примечания  
- Вызов `IActiveScriptProfilerControl2::CompleteProfilerStart` гарантирует отправку событий для функции уже в стеке вызовов. Этот метод должен вызываться после профилирования запускается на любой обработчик скриптов, который находится на текущей вкладке. Метод может вызываться для любого обработчика скриптов.  
+## <a name="remarks"></a>Заметки  
+ Вызов `IActiveScriptProfilerControl2::CompleteProfilerStart` гарантирует отправку событий для функций, уже находящиеся в стеке вызовов. Этот метод должен вызываться после запуска профилирования на любом обработчике скриптов, который находится на текущей вкладке. Метод может быть вызван для любого обработчика скриптов.  
   
 ## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
+ [IActiveScriptProfilerControl2::P репарепрофилерстоп](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
  [Интерфейс IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

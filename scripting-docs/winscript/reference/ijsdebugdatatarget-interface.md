@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IJsDebugDataTarget | Документация Майкрософт
+title: Интерфейс метод ijsdebugdatatarget | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cbb4b0b54fb9a3821d3033ef0e65fd0bafbc246
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85c77209230abfe261c9ec0b884ad0a677cfbf07
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582502"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572452"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>Интерфейс IJsDebugDataTarget
-Реализуется отладчиком для предоставления функциональности для получения и изменения состояния целевого процесса отладчика.  
+Реализуется отладчиком для предоставления функциональных возможностей доступа и изменения состояния целевого процесса отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -27,24 +27,24 @@ ms.locfileid: "62582502"
 IJsDebugDataTarget : public IUnknown;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
-|[Метод IJsDebugDataTarget::AllocateVirtualMemory](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Резервирует и(или) фиксирует область памяти в пространстве виртуальных адресов целевого процесса.|  
+|[Метод IJsDebugDataTarget::AllocateVirtualMemory](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Резервирует или фиксирует область памяти в виртуальном адресном пространстве целевого процесса.|  
 |[Метод IJsDebugDataTarget::CreateStackFrameEnumerator](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Создает перечислитель для кадров стека.|  
-|[Метод IJsDebugDataTarget::FreeVirtualMemory](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Выпускает и(или) отменяет фиксацию области памяти в пространстве виртуальных адресов целевого процесса.|  
-|[Метод IJsDebugDataTarget::GetThreadContext](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Возвращает контекст для данного потока.|  
-|[Метод IJsDebugDataTarget::GetTlsValue](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Для отлаживаемого потока извлекает значение в области потока локальное хранилище (TLS) для указанного индекса TLS.|  
-|[Метод IJsDebugDataTarget::ReadBSTR](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Читает BSTR из целевого объекта отладки.|  
-|[Метод IJsDebugDataTarget::ReadMemory](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Читает содержимое памяти целевого процесса.|  
+|[Метод IJsDebugDataTarget::FreeVirtualMemory](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Выпуски или отменяют выделение области памяти в виртуальном адресном пространстве целевого процесса.|  
+|[Метод IJsDebugDataTarget::GetThreadContext](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Извлекает контекст для данного потока.|  
+|[Метод IJsDebugDataTarget::GetTlsValue](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Для отлаживаемого потока получает значение в слоте локального хранилища потока (TLS) для указанного индекса TLS.|  
+|[Метод IJsDebugDataTarget::ReadBSTR](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Считывает строку BSTR из целевого объекта отладки.|  
+|[Метод IJsDebugDataTarget::ReadMemory](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Считывает память целевого процесса.|  
 |[Метод IJsDebugDataTarget::ReadNullTerminatedString](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Считывает указанное количество символов из целевого объекта.|  
-|[Метод IJsDebugDataTarget::WriteMemory](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Читает содержимое памяти целевого процесса.|  
+|[Метод IJsDebugDataTarget::WriteMemory](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Считывает память целевого процесса.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

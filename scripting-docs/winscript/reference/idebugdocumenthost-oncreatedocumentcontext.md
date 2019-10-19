@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::OnCreateDocumentContext | Microsoft Docs
+title: 'IDebugDocumentHost:: Онкреатедокументконтекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdfa64f66288cba47dec7c498db15238e55f954
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971099"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569110"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Уведомляет ведущее приложение, что контекст документа, создается и позволяет узлу, чтобы при необходимости вернуть управление Неизвестный новым контекстом.  
+Уведомляет узел о том, что создается новый контекст документа, и позволяет узлу при необходимости вернуть неизвестный элемент управления для нового контекста.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT OnCreateDocumentContext(
   
 #### <a name="parameters"></a>Параметры  
  `ppunkOuter`  
- [out] Объект, управляющий новый контекст.  
+ заполняет Объект, управляющий новым контекстом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Узел не поддерживает управляющего объекта.|  
+|`E_NOTIMPL`|Узел не предоставляет управляющий объект.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод позволяет добавлять новые функциональные возможности для контекстов документа, предоставляемых системой вспомогательный узлу. Этот метод может возвращать **E_NOTIMPL** или значение null внешний объект, в котором случае вызывающий объект отвечает за создание контекста.  
+## <a name="remarks"></a>Заметки  
+ Этот метод позволяет узлу добавлять новые функции в контексты документов, предоставленные вспомогательным функциям. Этот метод может возвращать значение **E_NOTIMPL** или внешний объект со значением NULL. в этом случае вызывающий объект отвечает за создание контекста.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

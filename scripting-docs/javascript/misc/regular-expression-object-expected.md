@@ -14,20 +14,20 @@ ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a42cf4b76f4de6d4170f7ef85dafc00841964cfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf9e2e99c6a539f450afcfe9eef1f5588d5b84f6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006426"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573701"
 ---
 # <a name="regular-expression-object-expected"></a>Предполагается наличие объекта регулярного выражения
-Предпринята попытка вызова **RegExp.prototype.toString** или **RegExp.prototype.valueOf** метод на объект типа, отличных от `RegExp`. Объект этого типа вызова должен иметь тип `RegExp`.  
+Предпринята попытка вызвать метод **RegExp. prototype. ToString** или **RegExp. prototype. valueOf** для объекта типа, отличного от `RegExp`. Объект этого типа вызова должен иметь тип `RegExp`.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Вызывается только **RegExp.prototype.toString** или **RegExp.prototype.valueOf** методов в объектах типа `RegExp`.  
+- Вызываются только методы **RegExp. prototype. ToString** или **RegExp. prototype. valueOf** для объектов типа `RegExp`.  
   
 ## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

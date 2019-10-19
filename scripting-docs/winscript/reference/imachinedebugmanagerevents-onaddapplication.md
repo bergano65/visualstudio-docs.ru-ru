@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication | Документация Майкрософт
+title: 'Имачинедебугманажеревентс:: Онаддаппликатион | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f063e36296d6a5a77208bac2fe533274a6f9c07f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe710ce9a126e344fc88024b7bf5fd2b993e31b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965798"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576109"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-Обрабатывает событие при добавлении приложения с запуском список приложений.  
+Обрабатывает событие при добавлении приложения в список выполняемых приложений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>Параметры  
  `pda`  
- [in] Приложения, который был добавлен с запуском список приложений.  
+ окне Приложение, добавленное в список выполняющихся приложений.  
   
  `dwAppCookie`  
- [in] Файл cookie, когда приложение было добавлено в список приложений.  
+ окне Файл cookie, предоставленный при добавлении приложения в список приложений.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод указывает, что приложение было добавлено с запуском список приложений.  
+## <a name="remarks"></a>Заметки  
+ Этот метод указывает, что приложение Добавлено в список выполняемых приложений.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IMachineDebugManagerEvents](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
+ @No__t_1 [интерфейса имачинедебугманажеревентс](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise | Документация Майкрософт
+title: 'Исимплеконнектионпоинт:: Advise | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98db9c92f682808ce8ecc9f6aa382a2eb2bd8495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7d08d4774dffbfd840c674b15abe82bedb37e5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786266"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571836"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
-Устанавливает соединение между объектом точки простого подключения и приемника клиента.  
+Устанавливает соединение между простым объектом точки подключения и приемником клиента.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>Параметры  
  `pdisp`  
- [in] Указатель на `IDispatch` приемнике уведомлений интерфейса на стороне клиента. Приемник клиента принимающий исходящие вызовы от точки простого подключения.  
+ окне Указатель на интерфейс `IDispatch` в приемнике уведомлений клиента. Приемник клиента получает исходящие вызовы от простой точки подключения.  
   
  `pdwCookie`  
- [out] Указатель на возвращенный токен, который уникальным образом определяющий это соединение. Вызывающий объект использует этот токен позже для удаления соединения, передав его в `ISimpleConnectionPoint::Unadvise` метод. Если соединение не было успешно установлено, это значение равно нулю.  
+ заполняет Указатель на возвращаемый токен, однозначно определяющий это соединение. Вызывающий объект использует этот токен позже, чтобы удалить соединение, передав его методу `ISimpleConnectionPoint::Unadvise`. Если подключение не было установлено успешно, это значение равно нулю.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод устанавливает соединение между объектом точки простого подключения и приемника клиента.  
+## <a name="remarks"></a>Заметки  
+ Этот метод устанавливает соединение между простым объектом точки подключения и приемником клиента.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)   
+ @No__t_1 [интерфейса исимплеконнектионпоинт](../../winscript/reference/isimpleconnectionpoint-interface.md)  
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

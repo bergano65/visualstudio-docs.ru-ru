@@ -14,21 +14,21 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 477374d93e4d8d5139197dcd49fef0e930e5ff32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422460"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572700"
 ---
 # <a name="active-script-debugger-interfaces"></a>Интерфейсы отладчика активных скриптов
-Файлы заголовков activdbg.h и activdbg100.h предоставляют интерфейсы, перечисления и структуры, перечисленные в этом разделе. Они предназначены для отладки скрипта.  
+Файлы заголовков активдбг. h и activdbg100. h предоставляют интерфейсы, перечисления и структуры, перечисленные в этом разделе. Они предназначены для отладки скрипта.  
   
 > [!NOTE]
-> `IJSDebug*` Интерфейсы и `IEnumJsStackFrames` интерфейс сначала были выпущены в Internet Explorer 11 для отладки машинного кода с помощью скрипта. Файл заголовка для этих интерфейсов является jscript9diag.h.  
+> Интерфейсы `IJSDebug*` и интерфейс `IEnumJsStackFrames` были впервые выпущены в Internet Explorer 11 для отладки машинного кода с помощью скрипта. Файл заголовка для этих интерфейсов — jscript9diag. h.  
   
-## <a name="in-this-section"></a>В этом разделе  
- Следующие интерфейсы отладки не зависящий от языка, зависящий от узла:  
+## <a name="in-this-section"></a>Содержание  
+ Следующие интерфейсы разрешают независящие от языка отладку, не зависящую от узла.  
   
 - [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
@@ -178,7 +178,7 @@ ms.locfileid: "63422460"
   
 - [Интерфейс IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
   
-  В следующем разделе перечислены константы, перечисления и структуры, используемые для отладки:  
+  В следующем разделе перечислены константы, перечисления и структуры, используемые для отладки.  
   
 - [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   

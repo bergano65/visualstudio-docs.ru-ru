@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::WriteMemory | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: WriteMemory | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 622de16cc5f755c5d69059a0e0f28d881121861c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33cd23ad784e222f770dfd5c0e7c2d775aa55e42
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558181"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572416"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>Метод IJsDebugDataTarget::WriteMemory
-Читает содержимое памяти целевого процесса.  
+Считывает память целевого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,21 +37,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Базовый адрес, по которым следует записывать память целевого процесса.  
+ окне Базовый адрес, из которого записывается память целевого процесса.  
   
  `pMemory`  
- [in] Данные для записи в адресном пространстве указанного процесса.  
+ окне Данные, записываемые в адресное пространство указанного процесса.  
   
  `size`  
- [in] Число байтов для записи в текущий процесс.  
+ окне Число байтов, записываемых в процесс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Прежде чем происходит передача данных, система проверяет, что все данные в базовый адрес и память указанного размера доступны для записи, и если он недоступен, функция вызывает ошибку E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+## <a name="remarks"></a>Заметки  
+ Перед передачей данных система проверяет, чтобы все данные в базовом адресе и памяти указанного размера были доступны для доступа на запись, и если она недоступна, функция вызывает ошибку E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

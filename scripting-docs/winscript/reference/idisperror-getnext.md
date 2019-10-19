@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetNext | Документация Майкрософт
+title: 'Идисперрор:: GetNext | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81186e6eba7983a1210e5de5bca5d83dd77089da
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437274"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573107"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
-Извлекает следующий `IDispError` объекта.  
+Извлекает следующий объект `IDispError`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Параметры  
  `ppde`  
- [out] Указывает рядом `IDispError` объекта.  
+ заполняет Указывает объект Next `IDispError`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод извлекает следующий `IDispError` объекта. Если это последняя `IDispError` объекта, этот метод возвращает значение NULL.  
+## <a name="remarks"></a>Заметки  
+ Этот метод извлекает следующий объект `IDispError`. Если это последний объект `IDispError`, этот метод возвращает значение NULL.  
   
 > [!NOTE]
 > Этот метод не реализован.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::GetLanguageInfo | Microsoft Docs
+title: 'IDebugExpressionContext:: Жетлангуажеинфо | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed5546f07a81d9c2825f3dbdc4f2bb28887948f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e6dd3d3bb254cd91f411da3b6b587bc37c3a777
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946294"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576410"
 ---
 # <a name="idebugexpressioncontextgetlanguageinfo"></a>IDebugExpressionContext::GetLanguageInfo
 Возвращает имя и идентификатор GUID для языка, которому принадлежит этот контекст.  
@@ -38,19 +38,19 @@ HRESULT GetLanguageInfo(
   
 #### <a name="parameters"></a>Параметры  
  `pbstrLanguageName`  
- [out] Имя языка.  
+ заполняет Имя языка.  
   
  `pLanguageID`  
- [out] Уникальный идентификатор для языка.  
+ заполняет Уникальный идентификатор языка.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод возвращает имя и идентификатор GUID для языка, которому принадлежит этот контекст.  
   
 ## <a name="see-also"></a>См. также  

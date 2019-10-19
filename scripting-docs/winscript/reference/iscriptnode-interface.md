@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IScriptNode | Документация Майкрософт
+title: Интерфейс Искриптноде | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,32 +13,32 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13bf20f9e1e642b948ddaa72ae9dca7bb457fba2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38ab73ddb1bd924035cb6ba61d26e65f16f53eed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786778"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577515"
 ---
 # <a name="iscriptnode-interface"></a>Интерфейс IScriptNode
-Объект, реализующий `IScriptNode` интерфейс представляет веб-страницы.  
+Объект, реализующий интерфейс `IScriptNode`, представляет веб-страницу.  
   
- Помимо методов, наследуемых от `IUnknown`, `IScriptNode` интерфейс предоставляет следующие методы.  
+ В дополнение к методам, унаследованным от `IUnknown`, интерфейс `IScriptNode` предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Указывает, является ли объект все еще активна.|  
+|[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Указывает, активен ли объект.|  
 |[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Добавляет дочерний экземпляр `IScriptEntry`.|  
-|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Добавляет в качестве дочернего экземпляра пользователи `IScriptNode`.|  
-|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Удаляет дерева объектов.|  
-|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Возвращает дочерний элемент, находящийся по указанному индексу в узле.|  
-|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Возвращает значение, определяемые приложением, которое используется для связывания с объектом главного пользователи.|  
-|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Возвращает индекс объекта в списке дочерних элементов родительского элемента.|  
-|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Возвращает язык сценариев, используемый узлом текущего скрипта.|  
-|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Возвращает количество дочерних узлов `IScriptNode` объекта.|  
-|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Возвращает `IScriptNode` объект, являющийся родительским для объекта.|  
+|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Добавляет скриптлет в качестве дочернего экземпляра `IScriptNode`.|  
+|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Удаляет дерево объектов.|  
+|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Возвращает дочерний элемент, расположенный по указанному индексу в узле.|  
+|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Возвращает определяемое приложением значение, которое используется для связывания скриптлет с объектом узла.|  
+|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Возвращает индекс объекта в дочернем списке родительского элемента.|  
+|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Возвращает язык скрипта, используемый текущим узлом скрипта.|  
+|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Возвращает количество дочерних узлов объекта `IScriptNode`.|  
+|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Возвращает объект `IScriptNode`, являющийся родительским для объекта.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы для создания активных скриптов](../../winscript/reference/active-script-authoring-interfaces.md)

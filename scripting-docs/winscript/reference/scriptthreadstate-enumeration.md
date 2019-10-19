@@ -1,5 +1,5 @@
 ---
-title: Перечисление SCRIPTTHREADSTATE | Документация Майкрософт
+title: Перечисление СКРИПТСРЕАДСТАТЕ | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc4ef840310c27ccbadce2ed4f632514b555ef98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840191"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575653"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Перечисление SCRIPTTHREADSTATE
-Указывает состояние потока в обработчик сценариев. Это перечисление используется с [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) метод.  
+Указывает состояние потока в обработчике скриптов. Это перечисление используется методом [IActiveScript:: жетскриптсреадстате](../../winscript/reference/iactivescript-getscriptthreadstate.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,8 +40,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Указанный поток в настоящее время не обслуживания событием сценария, немедленно выполняется обработка текста скрипта, или макрос скрипта.|  
-|SCRIPTTHREADSTATE_RUNNING|Указанный поток активно обслуживания событием сценария, немедленно выполняется обработка текста скрипта, или макрос скрипта.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Указанный поток в настоящее время не обслуживает событие в скрипте, обрабатывает немедленно выполняемый текст сценария или запускает макрос скрипта.|  
+|SCRIPTTHREADSTATE_RUNNING|Указанный поток активно обслуживает событие в скрипте, обрабатывает немедленно выполняемый текст сценария или запускает макрос скрипта.|  
   
 ## <a name="see-also"></a>См. также  
  [Константы, перечисления и коды ошибок активных скриптов](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

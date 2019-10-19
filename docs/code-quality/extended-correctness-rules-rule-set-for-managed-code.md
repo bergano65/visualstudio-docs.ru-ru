@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc279f0ae9e0420810e12c21f5f7cf29de0d15e7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 636443a65922e72bfcede09d5692e441c6c2cb36
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449153"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535910"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные правила определения правильности" для управляемого кода
 
@@ -25,23 +25,23 @@ ms.locfileid: "72449153"
 
 |Правило|Описание|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявляйте обработчики событий|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Пометьте сборки с помощью AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Методы интерфейса должны быть доступны для вызова дочерними типами|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Переместите методы P/Invoke в класс NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Не скрывайте методы базовых классов|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Правильно реализуйте IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Не вызывайте исключения в непредвиденных местах|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Избегайте повторяющихся акселераторов|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Для методов P/Invoke должны существовать точки входа|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Методы P/Invoke не должны быть видимыми|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Типы с автомакетом не должны быть видимыми для COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Вызывайте GetLastError сразу после P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Методы регистрации COM должны быть согласованными|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Правильно объявляйте методы P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
+|[CA1009](../code-quality/ca1009.md)|Правильно объявляйте обработчики событий|
+|[CA1016](../code-quality/ca1016.md)|Пометьте сборки с помощью AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|Методы интерфейса должны быть доступны для вызова дочерними типами|
+|[CA1049](../code-quality/ca1049.md)|Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми|
+|[CA1060](../code-quality/ca1060.md)|Переместите методы P/Invoke в класс NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Не скрывайте методы базовых классов|
+|[CA1063](../code-quality/ca1063.md)|Правильно реализуйте IDisposable|
+|[CA1065](../code-quality/ca1065.md)|Не вызывайте исключения в непредвиденных местах|
+|[CA1301](../code-quality/ca1301.md)|Избегайте повторяющихся акселераторов|
+|[CA1400](../code-quality/ca1400.md)|Для методов P/Invoke должны существовать точки входа|
+|[CA1401](../code-quality/ca1401.md)|Методы P/Invoke не должны быть видимыми|
+|[CA1403](../code-quality/ca1403.md)|Типы с автомакетом не должны быть видимыми для COM|
+|[CA1404](../code-quality/ca1404.md)|Вызывайте GetLastError сразу после P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
+|[CA1410](../code-quality/ca1410.md)|Методы регистрации COM должны быть согласованными|
+|[CA1415](../code-quality/ca1415.md)|Правильно объявляйте методы P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
 |[CA1900](../code-quality/ca1900.md)|Поля типов значений должны быть переносимыми|
 |[CA1901](../code-quality/ca1901.md)|Объявления P/Invoke должны быть переносимыми|
@@ -87,10 +87,10 @@ ms.locfileid: "72449153"
 |[CA2240](../code-quality/ca2240.md)|Правильно реализуйте ISerializable|
 |[CA2241](../code-quality/ca2241.md)|Задайте правильные аргументы для методов форматирования|
 |[CA2242](../code-quality/ca2242.md)|Правильно выполняйте проверку NaN|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Перечисляемые типы должны иметь нулевое значение|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Перегружайте оператор равенства при перегрузке операторов сложения и вычитания|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Не передавайте литералы в качестве локализованных параметров|
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Нормализуйте строки в верхний регистр|
+|[CA1008](../code-quality/ca1008.md)|Перечисляемые типы должны иметь нулевое значение|
+|[CA1013](../code-quality/ca1013.md)|Перегружайте оператор равенства при перегрузке операторов сложения и вычитания|
+|[CA1303](../code-quality/ca1303.md)|Не передавайте литералы в качестве локализованных параметров|
+|[CA1308](../code-quality/ca1308.md)|Нормализуйте строки в верхний регистр|
 |[CA1806](../code-quality/ca1806.md)|Не игнорируйте результаты метода|
 |[CA1816](../code-quality/ca1816.md)|Вызов GC.SuppressFinalize должен осуществляться правильно|
 |[CA1819](../code-quality/ca1819.md)|Свойства не должны возвращать массивы|
@@ -116,22 +116,22 @@ ms.locfileid: "72449153"
 |[CA2226](../code-quality/ca2226.md)|Перегрузки операторов должны быть симметричными|
 |[CA2227](../code-quality/ca2227.md)|Свойства, возвращающие коллекции, должны быть доступными только для чтения|
 |[CA2239](../code-quality/ca2239.md)|Обеспечьте наличие методов десериализации в необязательных полях|
-|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|Реализуйте стандартные конструкторы исключений|
-|[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|Параметры URI не должны быть строками|
-|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Возвращаемые значения URI не должны быть строками|
-|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Свойства URI не должны быть строками|
-|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Перегрузки строковых параметров URI вызывают перегрузки System.Uri|
-|[CA1402](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md)|Избегайте перегрузок в видимых COM-интерфейсах|
-|[CA1406](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)|Не используйте аргументы Int64 для клиентов Visual Basic 6|
-|[CA1407](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)|Не используйте статические члены в типах, видимых для COM|
-|[CA1408](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)|Не используйте тип AutoDual ClassInterfaceType|
-|[CA1409](../code-quality/ca1409-com-visible-types-should-be-creatable.md)|Видимые для COM типы должны быть создаваемыми|
-|[CA1411](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|Методы регистрации COM не должны быть видимыми|
-|[CA1412](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|Пометьте интерфейсы ComSource как IDispatch|
-|[CA1413](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|Не используйте неоткрытые поля в типах значений, видимых для COM|
-|[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Пометьте логические аргументы P/Invoke с помощью MarshalAs|
-|[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Не используйте приоритет процесса простоя|
-|[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Не используйте таймеры, препятствующие изменению состояния электропитания|
+|[CA1032](../code-quality/ca1032.md)|Реализуйте стандартные конструкторы исключений|
+|[CA1054](../code-quality/ca1054.md)|Параметры URI не должны быть строками|
+|[CA1055](../code-quality/ca1055.md)|Возвращаемые значения URI не должны быть строками|
+|[CA1056](../code-quality/ca1056.md)|Свойства URI не должны быть строками|
+|[CA1057](../code-quality/ca1057.md)|Перегрузки строковых параметров URI вызывают перегрузки System.Uri|
+|[CA1402](../code-quality/ca1402.md)|Избегайте перегрузок в видимых COM-интерфейсах|
+|[CA1406](../code-quality/ca1406.md)|Не используйте аргументы Int64 для клиентов Visual Basic 6|
+|[CA1407](../code-quality/ca1407.md)|Не используйте статические члены в типах, видимых для COM|
+|[CA1408](../code-quality/ca1408.md)|Не используйте тип AutoDual ClassInterfaceType|
+|[CA1409](../code-quality/ca1409.md)|Видимые для COM типы должны быть создаваемыми|
+|[CA1411](../code-quality/ca1411.md)|Методы регистрации COM не должны быть видимыми|
+|[CA1412](../code-quality/ca1412.md)|Пометьте интерфейсы ComSource как IDispatch|
+|[CA1413](../code-quality/ca1413.md)|Не используйте неоткрытые поля в типах значений, видимых для COM|
+|[CA1414](../code-quality/ca1414.md)|Пометьте логические аргументы P/Invoke с помощью MarshalAs|
+|[CA1600](../code-quality/ca1600.md)|Не используйте приоритет процесса простоя|
+|[CA1601](../code-quality/ca1601.md)|Не используйте таймеры, препятствующие изменению состояния электропитания|
 |[CA1824](../code-quality/ca1824.md)|Помечайте сборки с помощью NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001.md)|Избегайте вызова проблемных методов|
 |[CA2003](../code-quality/ca2003.md)|Не рассматривайте волокна в качестве потоков|

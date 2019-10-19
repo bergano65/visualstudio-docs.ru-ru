@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::MapPropertyToPage | Документация Майкрософт
+title: 'IPerPropertyBrowsing2:: Маппропертитопаже | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77270bbe963f281a43a085cb7d15724b7b2ec14e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9e3f821d9e02be567f970d8db1c238ee5cebd29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944832"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577116"
 ---
 # <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
-Возвращает идентификатор CLSID страницы свойств, который может использоваться для изменения этого свойства.  
+Возвращает идентификатор CLSID страницы свойств, который может быть использован для изменения этого свойства.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ HRESULT MapPropertyToPage(
   
 #### <a name="parameters"></a>Параметры  
  `dispid`  
- [in] Идентификатор затребованного свойства отправки.  
+ окне Идентификатор диспетчеризации интересующего свойства.  
   
  `pClsidPropPage`  
- [out] Указатель на идентификатор CLSID, идентифицирующий страницу свойство, связанное со свойством. Если этот метод завершается ошибкой, *`pClsidPropPage` присваивается значение CLSID_NULL.  
+ заполняет Указатель на CLSID, идентифицирующий страницу свойств, связанную со свойством. В случае сбоя этого метода * `pClsidPropPage` устанавливается в значение CLSID_NULL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  

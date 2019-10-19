@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::SetDebuggerOptions | Документация Майкрософт
+title: 'IRemoteDebugApplication110:: Сетдебугжероптионс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a61eabb307bda39fd871e8f5f4f7198256f0929e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7168a4ef8ec70368c0ff691ba1f721275f9d65d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383352"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577424"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-Вызывается для обновления параметров отладчика. Этот метод следует вызывать после [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) метод автоматически восстанавливает параметры по умолчанию. Параметры по умолчанию 0 (SDO_NONE).  
+Вызывается для обновления параметров отладчика. Этот метод должен вызываться после [IRemoteDebugApplication:: коннектдебугжер](../../winscript/reference/iremotedebugapplication-connectdebugger.md). Метод [IRemoteDebugApplication::D исконнектдебугжер](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) автоматически сбрасывается в параметры по умолчанию. По умолчанию параметр имеет значение 0 (SDO_NONE).  
   
 > [!IMPORTANT]
-> [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,11 +34,11 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>Параметры  
  `mask`  
- [Перечисление SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) маски.  
+ Маска [перечисления SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
  `value`  
- [Перечисление SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) значение.  
+ Значение [перечисления SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
+ @No__t_1 [интерфейса IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
  [Интерфейс IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Ожидалось "-" | Документация Майкрософт
+title: Ожидался символ "-" | Документация Майкрософт
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42283773fc68c08ec3734937d2895c9613a6893f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934903"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577567"
 ---
-# <a name="expected--"></a>Ожидалось "-"
-Предпринята попытка создать регулярное выражение литерала, но не содержит одно из символы косой черты (/). Так же, как строковые литералы записываются в виде символов, заключенный в кавычки, литералы регулярных выражений представляют собой символы, заключенный в символы косой черты (/).  
+# <a name="expected--"></a>Ожидался символ "-"
+Предпринята попытка создать литерал регулярного выражения, но он не содержит одну из косых черт (/). Так же, как строковые литералы записываются в виде символов в паре кавычек, литералы регулярных выражений выражаются в виде символов в паре символов косой черты (/).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Вставьте завершающий косой черты для обозначения конца регулярного выражения.  
+- Вставьте завершающую косую черту, чтобы пометить конец регулярного выражения.  
   
 ## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

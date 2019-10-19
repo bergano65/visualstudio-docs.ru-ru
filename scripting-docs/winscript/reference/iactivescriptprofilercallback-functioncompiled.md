@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::FunctionCompiled | Документация Майкрософт
+title: 'IActiveScriptProfilerCallback:: Функтионкомпилед | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a039f7a682babebdccad276adce55e69bb8e0bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a17ce7548a6524df6911cdf952393020472b88ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993323"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576476"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-Уведомляет профилировщик, что объект, который обработчик скриптов обнаружил функцию, при компиляции сценария.  
+Уведомляет объект профилировщика о том, что обработчик скриптов обнаружил функцию при компиляции скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,25 +38,25 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>Параметры  
  `functionId`  
- [in] Уникальный идентификатор функции. Этот идентификатор назначается обработчик скриптов.  
+ окне Уникальный идентификатор функции. Этот идентификатор назначается обработчиком скриптов.  
   
  `scriptId`  
- [in] Уникальный идентификатор сценария, который входит функция.  
+ окне Уникальный идентификатор скрипта, частью которого является функция.  
   
  `pwszFunctionName`  
- [in] Имя функции или значение null для анонимной функции.  
+ окне Имя функции или значение NULL для анонимной функции.  
   
  `pwszFunctionNameHint`  
- [in] Выводимые имя функции или значение null, если обработчик скриптов не подразумевает любое имя.  
+ окне Выводимое имя функции или значение null, если обработчик скриптов не выводит никаких имен.  
   
  `pIDebugDocumentContext`  
- [in] Если он доступен, указатель на `IUnknown` интерфейс, профилировщик должен запросить для [интерфейс IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) указатель. В противном случае — значение NULL.  
+ окне При наличии указателя на интерфейс `IUnknown`, который профилировщик должен запрашивать для указателя [интерфейса идебугдокументконтекст](../../winscript/reference/idebugdocumentcontext-interface.md) . В противном случае — значение NULL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращаемое значение этого метода обрабатывается обработчиком сценариев.  
+ Возвращаемое значение этого метода игнорируется обработчиком скриптов.  
   
-## <a name="remarks"></a>Примечания  
- Обработчик скриптов может предоставить контекст документа только в том случае, если это поддерживается приложением.  
+## <a name="remarks"></a>Заметки  
+ Обработчик скриптов может предоставить контекст документа, только если он поддерживается узлом.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

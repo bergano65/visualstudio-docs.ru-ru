@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Skip | Microsoft Docs
+title: 'Иенумдебужекстендедпропертинфо:: Skip | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87913f15f8799be0ad3f6616eeea53a8a627e3d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e5c187f3484154a2758b67300c98d4cb9fc9023
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963459"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574232"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
-Пропускает заданное число `ExtendedDebugPropertyInfo` структур в последовательности перечисления.  
+Пропускает указанное число структур `ExtendedDebugPropertyInfo` в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,11 +37,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество `ExtendedDebugPropertyInfo` структур в последовательности перечисления для пропуска.  
+ окне Число пропускаемых структур `ExtendedDebugPropertyInfo` в последовательности перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает допустимый `HRESULT`, обычно `S_OK`. Возвращает `S_FALSE` и устанавливает указатель текущего элемента и заканчивая перечисления, если `celt` больше, чем число элементов слева в перечислителе.  
+ Возвращает допустимый `HRESULT`, обычно `S_OK`. Возвращает `S_FALSE` и задает указатель текущего элемента на конец перечисления, если `celt` больше числа элементов, оставшихся в перечислителе.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+ @No__t_1 [интерфейса иенумдебужекстендедпропертинфо](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
  [Структура ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

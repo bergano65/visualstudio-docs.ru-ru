@@ -19,15 +19,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c63cf941bca1965fc4a2e3997f0c0b50ebc44035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b8131531292e0f88108942648073883050dd609
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955306"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572590"
 ---
-# <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
-Используется для указания `DebugPropertyInfo` поля  
+# <a name="dbgprop_info_flags"></a>DBGPROP_INFO_FLAGS
+Используется для указания `DebugPropertyInfo` полей  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,28 +43,28 @@ enum {
 };  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
  DBGPROP_INFO_NAME  
- Инициализирует `bstrName` поля.  
+ Инициализирует поле `bstrName`.  
   
  DBGPROP_INFO_TYPE  
- Инициализирует `bstrType` поля.  
+ Инициализирует поле `bstrType`.  
   
  DBGPROP_INFO_VALUE  
- Инициализирует `bstrValue` поля.  
+ Инициализирует поле `bstrValue`.  
   
  DBGPROP_INFO_FULLNAME  
- Инициализирует `bstrFullName` поля.  
+ Инициализирует поле `bstrFullName`.  
   
  DBGPROP_INFO_ATTRIBUTES  
- Инициализирует `dwAttrib` поля.  
+ Инициализирует поле `dwAttrib`.  
   
  DBGPROP_INFO_DEBUGPROP  
- Инициализирует `pDebugProp` поле, содержащее `IDebugProperty` интерфейс.  
+ Инициализирует `pDebugProp` поле, содержащее интерфейс `IDebugProperty`.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Указывает, что поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.  
+ Указывает, что поле значения должно содержать автоматическое развернутое значение (если доступно) для этого типа объекта.  
   
 ## <a name="see-also"></a>См. также  
- [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   
+ @No__t_1 [структуры дебугпропертинфо](../../winscript/reference/debugpropertyinfo-structure.md)  
  [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

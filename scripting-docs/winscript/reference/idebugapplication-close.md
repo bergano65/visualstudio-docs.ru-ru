@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::Close | Документация Майкрософт
+title: 'IDebugApplication:: Close | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d93262e5875d5b51f7cf306409609671e8157cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0445e9aed990da684efac6675e05183fd939973f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991039"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575581"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-Вызывает это приложение освободить все ссылки и введите в неактивном состоянии.  
+Заставляет приложение освобождать все ссылки и переходить в неактивное состояние.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,15 +39,15 @@ HRESULT Close();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Как правило, владелец приложения этот метод вызывается при выходе приложения.  
+## <a name="remarks"></a>Заметки  
+ Как правило, владелец приложения вызывает этот метод при выходе из приложения.  
   
- Этот метод вызывает `IApplicationDebugger::onClose` для вызова.  
+ Этот метод вызывает `IApplicationDebugger::onClose`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers | Документация Майкрософт
+title: 'IDebugProperty:: EnumMembers | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 527bf9d3c51dad8ffe1645dc42081dc54189ad7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8c5f2cbb107d55e9ffe602cb7d3492701de10c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979166"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562418"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
-Перечисляет члены коллекции свойства.  
+Перечисляет элементы свойства.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,22 +40,22 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Параметры  
  `dwFieldSpec`  
- [in] Указывает `DBGPROP_INFO_FLAGS` константы, определяющие, какие поля в структурах свойство перечисления отладки должны заполняться.  
+ окне Указывает `DBGPROP_INFO_FLAGS` константы, которые определяют, какие поля в перечисленных структурах свойств отладки должны быть заполнены.  
   
  `nRadix`  
- [in] Основание системы счисления для использования в интерпретации все числовые данные.  
+ окне Основание системы счисления, используемое для интерпретации любой числовой информации.  
   
  `refiid`  
- [in] Этот идентификатор IID передается для фильтрации перечислитель. Идентификатор IID является одним из `IDebugPropertyEnumType` интерфейсы, которые наследуют от `IDebugPropertyEnumType_All`.  
+ окне Этот IID передается для фильтрации перечислителя. IID является одним из `IDebugPropertyEnumType` интерфейсов, которые наследуют от `IDebugPropertyEnumType_All`.  
   
  `ppEnum`  
- [out] Возвращает `IEnumDebugPropertyInfo` интерфейс, который перечисляет свойства элементов.  
+ заполняет Возвращает интерфейс `IEnumDebugPropertyInfo`, перечисляющий свойства элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
- [Интерфейс IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
+ @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+ @No__t_1 [интерфейса IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
  [Интерфейс IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

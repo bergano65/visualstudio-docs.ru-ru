@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfLine | Microsoft Docs
+title: 'Идебугдокументтекст:: Жетпоситионофлине | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cfcfc771c49abbf837f4db898936e478cda2194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adf4add99ac41440e6f4daa491b72166e97b5ba5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970852"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572098"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
-Возвращает позицию символа, соответствующего до первого символа строки.  
+Возвращает символьную позиции, соответствующую первому символу строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT GetPositionOfLine(
   
 #### <a name="parameters"></a>Параметры  
  `cLineNumber`  
- [in] Номер строки.  
+ окне Номер строки.  
   
  `pcCharacterPosition`  
- [out] Положение знака в документе в начало строки `cLineNumber`.  
+ заполняет Расположение символа в документе начала строки `cLineNumber`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает позицию символа, соответствующего до первого символа строки.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает символьную точку, соответствующую первому символу строки.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

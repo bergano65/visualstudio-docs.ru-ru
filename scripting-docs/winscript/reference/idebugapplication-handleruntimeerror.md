@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Документация Майкрософт
+title: 'IDebugApplication:: Хандлерунтимиррор | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2fd4ba2b811cd6c4e38c10a0c68c5808f2c0870a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412441"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574322"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Приводит к блокировке текущего потока и отправляет уведомление об ошибке отладчика интегрированной среды разработки.  
+Заставляет текущий поток блокировать и отправлять уведомление об ошибке в интегрированную среду разработки отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,36 +41,36 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>Параметры  
  `pErrorDebug`  
- [in] Произошла ошибка.  
+ окне Возникшая ошибка.  
   
  `pScriptSite`  
- [in] Сайт скрипта потока.  
+ окне Сайт скрипта потока.  
   
  `pbra`  
- [out] Действие, выполняемое, когда отладчик возобновляет работу приложения.  
+ заполняет Действие, выполняемое при возобновлении работы отладчика приложением.  
   
  `perra`  
- [out] Действие, выполняемое, когда отладчик возобновляет работу приложения, если возникает ошибка.  
+ заполняет Действие, выполняемое, когда отладчик возобновляет работу приложения при возникновении ошибки.  
   
  `pfCallOnScriptError`  
- [out] Флаг, который является `TRUE` если следует вызывать обработчик `IActiveScriptSite::OnScriptError` метод.  
+ заполняет Флаг, который `TRUE`, если обработчик должен вызвать метод `IActiveScriptSite::OnScriptError`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Модуль языка вызывает этот метод в контексте потока, который приводит к ошибке времени выполнения. Этот метод приводит к блокировке текущего потока и отправляет уведомление об ошибке, который должны отправляться отладчик интегрированной среды разработки. Когда отладчик интегрированной среды разработки возобновляет работу приложения, этот метод возвращает с действие, которое должно быть выполнено.  
+## <a name="remarks"></a>Заметки  
+ Языковой механизм вызывает этот метод в контексте потока, который вызывает ошибку во время выполнения. Этот метод заставляет текущий поток блокировать и отправлять уведомление об ошибке в интегрированную среду разработки отладчика. При возобновлении работы приложения интегрированной средой разработки отладчика этот метод возвращает и выполняемое действие.  
   
 > [!NOTE]
-> Во время и в случае сбоя во время выполнения, модуль языка могут быть вызваны поток может выполнять такие задачи, как перечислить кадры стека или вычислять выражения.  
+> Во время сбоя времени выполнения обработчик языка может вызываться потоком для выполнения таких задач, как перечисление кадров стека или вычисление выражений.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
- [Интерфейс IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
- [Перечисление BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ @No__t_1 [интерфейса иактивескриптеррордебуг](../../winscript/reference/iactivescripterrordebug-interface.md)  
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
+ @No__t_1 [перечисления BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [Перечисление ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

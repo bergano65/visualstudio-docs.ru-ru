@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Next | Документация Майкрософт
+title: 'Иенумремотедебугаппликатионсреадс:: Next | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bde09e2c8372e0bb7e73fabfbd1ad4d9aa6467e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36d24ffaca05b64c05815124358024d3b88b0d74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807203"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575176"
 ---
 # <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
-`Next` Метод извлекает указанное число сегментов в последовательности перечисления.  
+Метод `Next` извлекает указанное количество сегментов в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,22 +39,22 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество сегментов для получения.  
+ окне Число извлекаемых сегментов.  
   
  `pprdat`  
- [out] Возвращает массив `IRemoteDebugApplicationThread` интерфейсы, которые представляет сегменты, которые требуется получить.  
+ заполняет Возвращает массив интерфейсов `IRemoteDebugApplicationThread`, представляющих получаемые сегменты.  
   
  `pceltFetched`  
- [out] Фактическое число сегментов, получены с помощью перечислителя.  
+ заполняет Фактическое число сегментов, выбранных перечислителем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод извлекает указанное число сегментов в последовательности перечисления.  
   
 ## <a name="see-also"></a>См. также  

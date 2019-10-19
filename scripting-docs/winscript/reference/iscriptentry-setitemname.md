@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName | Документация Майкрософт
+title: 'IScriptEntry:: Сетитемнаме | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ba226704f5b064c86b52c1b349650d509b2b549
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787662"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575370"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-Задает имя элемента, который идентифицирует `IScriptEntry` объекта.  
+Задает имя элемента, идентифицирующего объект `IScriptEntry`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,21 +37,21 @@ HRESULT SetItemName(
   
 #### <a name="parameters"></a>Параметры  
  `psz`  
- [in] Адрес буфера, который содержит имя элемента. Имя элемента используется приложением для идентификации записи.  
+ окне Адрес буфера, который содержит имя элемента. Имя элемента используется узлом для обнаружения записи.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_FAIL`|Метод завершилась неудачно.|  
+|`E_FAIL`|Метод не был успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Для `IScriptEntry` объектов, этот метод возвращает `S_OK`.  
+## <a name="remarks"></a>Заметки  
+ Для `IScriptEntry` объектов этот метод возвращает `S_OK`.  
   
- Для `IScriptScriptlet` объектов (который являются производными от `IScriptEntry`), этот метод возвращает `E_FAIL`. Для `IScriptScriptlet` объектов задается имя элемента [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) и не может быть изменено.  
+ Для `IScriptScriptlet` объектов (которые являются производными от `IScriptEntry`) Этот метод возвращает `E_FAIL`. Для `IScriptScriptlet` объектов имя элемента задается [иактивескриптаусор:: аддскриптлет](../../winscript/reference/iactivescriptauthor-addscriptlet.md) и не может быть изменено.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+ @No__t_1 [интерфейса IScriptEntry](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

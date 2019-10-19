@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Skip | Документация Майкрософт
+title: 'Иенумдебугпропертинфо:: Skip | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e7544b8ea54fabc53e6c8476648e339c53da94d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba634409fb051c37534c824efb20e33eda245e8a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963394"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574155"
 ---
 # <a name="ienumdebugpropertyinfoskip"></a>IEnumDebugPropertyInfo::Skip
-Пропускает заданное число `DebugPropertyInfo` структур в последовательности перечисления.  
+Пропускает указанное число структур `DebugPropertyInfo` в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,11 +37,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество `DebugPropertyInfo` структур в последовательности перечисления для пропуска.  
+ окне Число пропускаемых структур `DebugPropertyInfo` в последовательности перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает допустимый `HRESULT`, обычно `S_OK`. Возвращает `S_FALSE` и устанавливает указатель текущего элемента и заканчивая перечисления, если `celt` больше, чем число элементов слева в перечислителе.  
+ Возвращает допустимый `HRESULT`, обычно `S_OK`. Возвращает `S_FALSE` и задает указатель текущего элемента на конец перечисления, если `celt` больше числа элементов, оставшихся в перечислителе.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
+ @No__t_1 [интерфейса иенумдебугпропертинфо](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
  [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetBreakFlags | Документация Майкрософт
+title: 'IDebugApplication:: Жетбреакфлагс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 389f50cf6883cd59cd540ef278aa1b4f69a6a629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a614429ebb8cc9271a0444536d14c45b69a9588f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990897"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574976"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-Возвращает текущий флаги break для приложения.  
+Возвращает текущие флаги разрыва для приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>Параметры  
  `pabf`  
- [out] Текущий флаги break для приложения.  
+ заполняет Текущие флаги разрыва для приложения.  
   
  `pprdatSteppingThread`  
- [out] Текущим выполняемым потоком.  
+ заполняет Текущий выполняющийся поток.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает текущий флаги break для приложения.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает текущие флаги разрыва для приложения.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [Перечисление APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)

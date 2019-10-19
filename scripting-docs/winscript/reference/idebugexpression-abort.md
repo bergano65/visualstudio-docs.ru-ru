@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Abort | Документация Майкрософт
+title: 'Идебужекспрессион:: Abort | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfaee56fffc7b28d04979f39b840d0b07cde2e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 508939b23be53acbff269744ae4035853f977ada
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978462"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575939"
 ---
 # <a name="idebugexpressionabort"></a>IDebugExpression::Abort
 Останавливает выражение.  
@@ -39,13 +39,13 @@ HRESULT Abort();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод останавливает вычисление выражения при первой возможности.  
+## <a name="remarks"></a>Заметки  
+ Этот метод останавливает вычисление выражения в самой ранней возможности.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   
+ @No__t_1 [интерфейса идебужекспрессион](../../winscript/reference/idebugexpression-interface.md)  
  [IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)

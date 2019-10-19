@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Документация Майкрософт
+title: 'IDispatchEx:: Жетмемберпропертиес | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000815"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574088"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
-Извлекает свойства члена.  
+Извлекает свойства элемента.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,37 +39,37 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Параметры  
  `id`  
- Идентифицирует член. Использует `GetDispID` или `GetNextDispID` получить идентификатор диспетчеризации.  
+ Идентифицирует член. Для получения идентификатора диспетчеризации использует `GetDispID` или `GetNextDispID`.  
   
  `grfdexFetch`  
- Определяет, какие свойства следует извлечь. Это может представлять собой сочетание значений, перечисленных в разделе `pgrfdex` и/или сочетания из следующих значений:  
+ Определяет, какие свойства следует извлечь. Это может быть сочетание значений, перечисленных в разделе `pgrfdex` и/или сочетания следующих значений:  
   
-|Значение|Значение|  
+|значения|Смысл|  
 |-----------|-------------|  
-|grfdexPropCanAll|Объединяет fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct и fdexPropCanSourceEvents.|  
-|grfdexPropCannotAll|Объединяет fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct и fdexPropCannotSourceEvents.|  
-|grfdexPropExtraAll|Объединяет fdexPropNoSideEffects и fdexPropDynamicType.|  
-|grfdexPropAll|Объединяет grfdexPropCanAll, grfdexPropCannotAll и grfdexPropExtraAll.|  
+|грфдекспропканалл|Объединяет Фдекспропканжет, Фдекспропканпут, Фдекспропканпутреф, Фдекспропканкалл, Фдекспропканконструкт и fdexPropCanSourceEvents.|  
+|грфдекспропканноталл|Объединяет Фдекспропканнотжет, Фдекспропканнотпут, Фдекспропканнотпутреф, Фдекспропканноткалл, Фдекспропканнотконструкт и fdexPropCannotSourceEvents.|  
+|грфдекспропекстраалл|Объединяет Фдекспропносидиффектс и Фдекспропдинамиктипе.|  
+|грфдекспропалл|Объединяет Грфдекспропканалл, Грфдекспропканноталл и Грфдекспропекстраалл.|  
   
  `pgrfdex`  
- Адрес `DWORD` , получающий запрашиваемые свойства. Это может быть сочетанием следующих значений:  
+ Адрес `DWORD`, который получает запрошенные свойства. Это может быть сочетание следующих значений:  
   
-|Значение|Значение|  
+|значения|Смысл|  
 |-----------|-------------|  
-|fdexPropCanGet|Элемент можно получить с помощью DISPATCH_PROPERTYGET.|  
-|fdexPropCannotGet|Элемент не удается получить с помощью DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|Элемент может быть задан с помощью DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|Если элемент не задан с помощью DISPATCH_PROPERTYPUT.|  
-|fdexPropCanPutRef|Элемент может быть задан с помощью DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|Если элемент не задан с помощью DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|Элемент не имеет никаких побочных эффектов. Например, отладчик может безопасно get/set/вызова этот член, не изменяя состояние сценария, для которого выполняется отладка.|  
-|fdexPropDynamicType|Член является динамическим и можно изменить во время существования объекта.|  
-|fdexPropCanCall|Элемент можно вызывать как метод с помощью DISPATCH_METHOD.|  
-|fdexPropCannotCall|Элемент нельзя вызывать как метод с помощью DISPATCH_METHOD.|  
-|fdexPropCanConstruct|Член может вызываться как конструктор, с помощью DISPATCH_CONSTRUCT.|  
-|fdexPropCannotConstruct|Элемент не может вызываться как конструктор, с помощью DISPATCH_CONSTRUCT.|  
-|fdexPropCanSourceEvents|Элемент может инициировать события.|  
-|fdexPropCannotSourceEvents|Элемент не может порождать события.|  
+|фдекспропканжет|Элемент можно получить с помощью DISPATCH_PROPERTYGET.|  
+|фдекспропканнотжет|Не удается получить элемент с помощью DISPATCH_PROPERTYGET.|  
+|фдекспропканпут|Элемент можно задать с помощью DISPATCH_PROPERTYPUT.|  
+|фдекспропканнотпут|Невозможно задать элемент с помощью DISPATCH_PROPERTYPUT.|  
+|фдекспропканпутреф|Элемент можно задать с помощью DISPATCH_PROPERTYPUTREF.|  
+|фдекспропканнотпутреф|Невозможно задать элемент с помощью DISPATCH_PROPERTYPUTREF.|  
+|фдекспропносидиффектс|У элемента нет побочных эффектов. Например, отладчик может безопасно получить/установить/вызвать этот элемент, не изменяя состояние отлаживаемого скрипта.|  
+|фдекспропдинамиктипе|Элемент является динамическим и может изменяться в течение времени существования объекта.|  
+|фдекспропканкалл|Член можно вызвать как метод с помощью DISPATCH_METHOD.|  
+|фдекспропканноткалл|Член нельзя вызвать как метод с помощью DISPATCH_METHOD.|  
+|фдекспропканконструкт|Член можно вызвать как конструктор с помощью DISPATCH_CONSTRUCT.|  
+|фдекспропканнотконструкт|Член нельзя вызвать как конструктор с помощью DISPATCH_CONSTRUCT.|  
+|фдекспропкансаурцеевентс|Элемент может запускать события.|  
+|фдекспропканнотсаурцеевентс|Член не может порождать события.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
@@ -77,7 +77,7 @@ HRESULT GetMemberProperties(
 |||  
 |-|-|  
 |`S_OK`|Выполнено.|  
-|`DISP_E_UNKNOWNNAME`|Имя не был известен.|  
+|`DISP_E_UNKNOWNNAME`|Неизвестное имя.|  
   
 ## <a name="example"></a>Пример  
   
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ @No__t_1 [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

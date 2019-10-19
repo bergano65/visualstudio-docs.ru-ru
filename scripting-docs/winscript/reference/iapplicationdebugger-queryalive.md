@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::QueryAlive | Документация Майкрософт
+title: 'Иаппликатиондебугжер:: Куеряливе | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b4c455305116863a4a8ad16ff21cd7554a36239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 867d00a4ef42aa8759496540edc1937fc6f2a0a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991181"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577829"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
-Указывает, является ли гибкий отладчика.  
+Указывает, отвечает ли отладчик.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,14 +39,14 @@ HRESULT QueryAlive();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод указывает, является ли гибкий отладчика. Реализации этого метода всегда должны возвращать `S_OK`.  
+## <a name="remarks"></a>Заметки  
+ Этот метод указывает, отвечает ли отладчик. Реализации этого метода всегда должны возвращать `S_OK`.  
   
- Если непредвиденное завершение процесса отладчика, COM возвращает ошибку из маршалирования прокси для вызова этого метода.  
+ В случае непредвиденного завершения процесса отладчика COM возвращает ошибку от прокси-сервера маршалинга для вызовов этого метода.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)

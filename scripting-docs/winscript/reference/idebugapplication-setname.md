@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SetName | Документация Майкрософт
+title: 'IDebugApplication:: SetName | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ac0b253d5193fc507e2d74a2d9dbcdd893e9fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a3e5115d4adc3fc3dfa93f10c90cb0d2b36f0e4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990766"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571103"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 Задает имя приложения.  
@@ -37,20 +37,20 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>Параметры  
  `pstrName`  
- [in] Имя приложения.  
+ окне Имя приложения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Имя, указанное для этого метода возвращается в последующих вызовах `IRemoteDebugApplication::GetName` метод.  
+## <a name="remarks"></a>Заметки  
+ Имя, предоставленное этому методу, возвращается при последующих вызовах метода `IRemoteDebugApplication::GetName`.  
   
- Этот метод должен вызываться перед вызовом `IProcessDebugManager::AddApplication` метод.  
+ Этот метод следует вызывать перед вызовом метода `IProcessDebugManager::AddApplication`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::NotifyChanged | Документация Майкрософт
+title: 'Идебугдокументтекстекстерналаусор:: Нотифичанжед | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1290de76f8bec5018ad83eb4499c3d92cbf9eba9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad02db80bd24a8a5ba96abaa61e85be9d69e553e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978540"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575954"
 ---
 # <a name="idebugdocumenttextexternalauthornotifychanged"></a>IDebugDocumentTextExternalAuthor::NotifyChanged
-Уведомляет ведущее приложение об изменении исходного документа.  
+Уведомляет узел о том, что источник документа изменился.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,12 +39,12 @@ HRESULT NotifyChanged();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывается внешним редактором, после изменения и сохранения для уведомления узла об изменении источник документа документ отладчика на основе файлов. Узел обновит документа из исходного файла.  
+## <a name="remarks"></a>Заметки  
+ Этот метод вызывается внешним редактором после изменения и сохранения документа отладчика на основе файлов для уведомления узла об изменении источника документа. Затем узел обновляет документ из исходного файла.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

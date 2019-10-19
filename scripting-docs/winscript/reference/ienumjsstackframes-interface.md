@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8302737fb4abf96c55d3ae70424cc03579b270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4a635a802ae84b8e839159f5e2f1c4c461e05ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963329"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572028"
 ---
 # <a name="ienumjsstackframes-interface"></a>Интерфейс IEnumJsStackFrames
-Реализуется отладчиком для предоставления стека раскрутки для jscript9diag.dll для JavaScript.  
+Реализуется отладчиком для обеспечения очистки стека для jscript9diag. dll для JavaScript.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -27,17 +27,17 @@ ms.locfileid: "62963329"
 IEnumJsStackFrames : public IUnknown;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
-|[Метод IEnumJsStackFrames::Next](../../winscript/reference/ienumjsstackframes-next-method.md)|Получает заданное число фрагментов.|  
-|[Метод IEnumJsStackFrames::Reset](../../winscript/reference/ienumjsstackframes-reset-method.md)|Сбрасывает кадр стека в положение перед первым элементом.|  
+|[Метод IEnumJsStackFrames::Next](../../winscript/reference/ienumjsstackframes-next-method.md)|Возвращает указанное число кадров.|  
+|[Метод IEnumJsStackFrames::Reset](../../winscript/reference/ienumjsstackframes-reset-method.md)|Сбрасывает кадр стека до элемента, расположенного перед первым элементом.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

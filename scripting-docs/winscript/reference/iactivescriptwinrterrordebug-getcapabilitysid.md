@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetCapabilitySid | Документация Майкрософт
+title: 'Иактивескриптвинртеррордебуг:: Жеткапабилитисид | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6847dba8f2bd3051df4ab6f0940e7b405698e45b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93bf824dd4d290ca536cb609e24b5d14400a3e3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432959"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577922"
 ---
 # <a name="iactivescriptwinrterrordebuggetcapabilitysid"></a>IActiveScriptWinRTErrorDebug::GetCapabilitySid
-Возвращает возможности SID для ошибки среды выполнения Windows, если он доступен.  
+Возвращает идентификатор безопасности возможности для среда выполнения Windows ошибки, если она доступна.  
   
 > [!IMPORTANT]
-> [Интерфейс IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс иактивескриптвинртеррордебуг](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ HRESULT GetCapabilitySid([out] BSTR * capabilitySid);
   
 #### <a name="parameters"></a>Параметры  
  `capabilitySid`  
- Возможность SID ошибки.  
+ Идентификатор безопасности возможности ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CreateInstanceAtApplication | Документация Майкрософт
+title: 'IRemoteDebugApplication:: Креатеинстанцеатаппликатион | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e17c5abcb21bfaad6de948c3676d29232da66cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 285e5df6960e3188ffe1ce17b1fc4f43626a3d74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944316"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572308"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
-Позволяет создавать объекты в процессе приложения кодом то есть вне процесса для приложения.  
+Позволяет создавать объекты в процессе приложения по коду, который находится вне процесса приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,28 +41,28 @@ HRESULT CreateInstanceAtApplication(
   
 #### <a name="parameters"></a>Параметры  
  `rclsid`  
- [in] Идентификатор (класса CLSID) создаваемого объекта класса.  
+ окне Идентификатор класса (CLSID) создаваемого объекта.  
   
  `pUnkOuter`  
- [in] Если `NULL`, объект не была создана как часть агрегата. В противном случае `pUnkOuter` — это указатель на Агрегатный объект `IUnknown` интерфейс (управляющий `IUnknown`).  
+ окне Если `NULL`, объект не создается как часть статистического выражения. В противном случае `pUnkOuter` является указателем на интерфейс `IUnknown` статистического объекта (управляющий `IUnknown`).  
   
  `dwClsContext`  
- [in] Контекст для выполняющегося исполняемого кода. Значения берутся из перечисления `CLSCTX`.  
+ окне Контекст для запуска исполняемого кода. Значения берутся из `CLSCTX` перечисления.  
   
  `riid`  
- [in] Идентификатор интерфейса, используемый для взаимодействия с объектом.  
+ окне Идентификатор интерфейса, используемый для связи с объектом.  
   
  `ppvObject`  
- [out] Адрес переменной указателя, получающей указатель интерфейса, запрашиваемый в `riid`. При успешном возвращении *`ppvObject` содержит запрошенный указатель интерфейса. В случае сбоя \* `ppvObject` содержит `NULL`.  
+ заполняет Адрес переменной указателя, получающей указатель интерфейса, запрошенный в `riid`. После успешного возврата * `ppvObject` содержит указатель на запрошенный интерфейс. При сбое \* `ppvObject` содержит `NULL`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод делегирует `CoCreateInstance`.  
   
 ## <a name="see-also"></a>См. также  

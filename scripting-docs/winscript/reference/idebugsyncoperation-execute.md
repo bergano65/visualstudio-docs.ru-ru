@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::Execute | Документация Майкрософт
+title: 'Идебугсинкоператион:: Execute | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2bc204169ff94a240e363eb8caa35ec8c7de9be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25da02e6736cc2f8ac27c82f922bd515e791bef1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004874"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576696"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
 Синхронно выполняет операцию и возвращает.  
@@ -37,18 +37,18 @@ HRESULT Execute(
   
 #### <a name="parameters"></a>Параметры  
  `ppunkResult`  
- [out] Параметр объекта, возвращенное операцией.  
+ заполняет Параметр объекта, возвращаемый операцией.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_ABORT`|Операция была прервана, вызвав `IDebugSyncOperation::InProgressAbort` метод.|  
+|`E_ABORT`|Операция была прервана путем вызова метода `IDebugSyncOperation::InProgressAbort`.|  
   
-## <a name="remarks"></a>Примечания  
- Диспетчер отладки процессов в целевой поток вызывает `Execute` метод синхронно.  
+## <a name="remarks"></a>Заметки  
+ Диспетчер отладки процесса в целевом потоке вызывает метод `Execute` синхронно.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

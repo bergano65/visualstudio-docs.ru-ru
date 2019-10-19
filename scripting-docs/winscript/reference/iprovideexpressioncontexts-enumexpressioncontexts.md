@@ -1,5 +1,5 @@
 ---
-title: IProvideExpressionContexts::EnumExpressionContexts | Документация Майкрософт
+title: 'Ипровидикспрессионконтекстс:: Енумекспрессионконтекстс | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f161c1591267af1398d5c04d00623381cfae2ad4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410150"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572384"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
-Возвращает перечислитель контекстов выражений, известных этим компонентом.  
+Возвращает перечислитель контекстов выражений, известных данным компонентом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,20 +37,20 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>Параметры  
  `ppedec`  
- [out] Перечислитель контекстов выражений, известных этим компонентом.  
+ заполняет Перечислитель контекстов выражений, известных данным компонентом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Диспетчер отладки процессов использует этот метод для поиска всех глобальное выражение контекстов, связанных с данного потока.  
+## <a name="remarks"></a>Заметки  
+ Диспетчер отладки процессов использует этот метод для поиска всех контекстов глобальных выражений, связанных с данным потоком.  
   
 > [!NOTE]
-> Этот метод вызывается из потока интерес. Это зависит от разработчика для идентификации текущего потока и возврата соответствующего перечислителя.  
+> Этот метод вызывается из потока, представляющего интерес. Разработчик может найти текущий поток и вернуть соответствующий перечислитель.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IProvideExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-interface.md)

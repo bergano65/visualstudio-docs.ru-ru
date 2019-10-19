@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IJsDebugBreakPoint | Документация Майкрософт
+title: Интерфейс метод ijsdebugbreakpoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14823baeb999ad24aabef9b2b55b59a7b5d08c71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6bb4e12f0e08baf1842d251347f35265425b999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583110"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577681"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>Интерфейс IJsDebugBreakPoint
 Представляет точку останова.  
@@ -27,20 +27,20 @@ ms.locfileid: "62583110"
 IJsDebugBreakPoint : public IUnknown;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
 |[Метод IJsDebugBreakPoint::Delete](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Удаляет точку останова.|  
 |[Метод IJsDebugBreakPoint::Disable](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Отключает точку останова.|  
 |[Метод IJsDebugBreakPoint::Enable](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Включает точку останова.|  
-|[Метод IJsDebugBreakPoint::GetDocumentPosition](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Возвращает позицию инструкции, где была привязана точка останова.|  
+|[Метод IJsDebugBreakPoint::GetDocumentPosition](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Возвращает позицию инструкции, в которой была привязана точка останова.|  
 |[Метод IJsDebugBreakPoint::IsEnabled](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Определяет, включена ли точка останова.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

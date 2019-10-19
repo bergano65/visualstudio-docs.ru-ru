@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::ReadBSTR | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: Реадбстр | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e821893318cfe1d8f0b4239a077fc91c26be47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b125f58b4be279eac167b803ed6a683c1fb04ddf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582346"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572441"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>Метод IJsDebugDataTarget::ReadBSTR
-Читает BSTR из целевого объекта отладки.  
+Считывает строку BSTR из целевого объекта отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,18 +36,18 @@ HRESULT ReadBSTR(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Адрес для чтения из.  
+ окне Адрес, из которого производится чтение.  
   
  `pString`  
- [out] BSTR чтения из целевого объекта отладки.  
+ заполняет Значение BSTR, считанное из целевого объекта отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Возвращает E_JsDEBUG_INVALID_MEMORY_ADDRESS, если адрес является недопустимым.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

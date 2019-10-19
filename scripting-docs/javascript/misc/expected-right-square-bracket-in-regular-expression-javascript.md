@@ -1,5 +1,5 @@
 ---
-title: Ожидается "]" в регулярном выражении (JavaScript) | Документация Майкрософт
+title: Ожидался символ "]" в регулярном выражении (JavaScript) | Документация Майкрософт
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66fa8ba2396185bd402e4bc31a3da6b1f8bf95ab
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9af38a5fa754a811416f1a998b90946345f3e4a2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446498"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576481"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>В регулярном выражении ожидался символ "]" (JavaScript)
-Предпринята попытка создать класс символов для сопоставления регулярного выражения, но отсутствует закрывающая квадратная скобка. Сочетания отдельных литеральный символ можно собрать в классы символов, поместив их в скобки. Класс символов соответствует любому знаку, содержащиеся в ней. Например / [abc] / соответствует любому из буквы «», «b» или «c».  
+Вы попытались создать класс символов для сопоставления регулярного выражения, но не включили правую квадратную скобку. Отдельные комбинации литеральных символов можно собрать в классы символов, поместив их в квадратные скобки. Класс символов соответствует любому символу, который он содержит. Например,/[abc]/соответствует любому из букв "a", "b" или "c".  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Добавьте закрывающую квадратную скобку регулярному выражению.  
+- Добавьте правую квадратную скобку в регулярное выражение.  
   
     > [!NOTE]
-    > В соответствии с одна квадратная скобка следует экранировать его обратную косую черту - \\[-, он интерпретируется как специальный символ, не [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Если нужно сопоставить одну квадратную скобку, построчно заменив ее символом обратной косой черты, \\ [-таким образом, она не интерпретируется как Специальный знак путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)
