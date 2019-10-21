@@ -13,17 +13,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33282f65c004643ec29b4c4d3074261ff437662c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925643"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642150"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Создание параметризованных запросов адаптера таблицы TableAdapter
 
@@ -40,7 +40,7 @@ ms.locfileid: "68925643"
 
 - Создайте новый адаптер таблицы, добавив предложение WHERE с требуемыми параметрами в инструкцию SQL. Дополнительные сведения см. в разделе [Создание и настройка адаптеров таблиц](../data-tools/create-and-configure-tableadapters.md).
 
-     -или-
+     \- или -
 
 - Добавьте запрос в существующий адаптер таблицы, добавив предложение WHERE с требуемыми параметрами в инструкцию SQL.
 
@@ -65,7 +65,7 @@ ms.locfileid: "68925643"
 
 4. Введите имя в поле **Имя нового запроса**, если вы создаете запрос.
 
-     -или-
+     \- или -
 
      Выберите запрос в поле **Имя существующего запроса**.
 
@@ -77,7 +77,7 @@ ms.locfileid: "68925643"
 
 ### <a name="query-for-null-values"></a>Запрос значений NULL
 
-Параметрам TableAdapter могут быть присвоены значения NULL, если требуется запросить записи, не имеющие текущего значения. Например, рассмотрим следующий запрос, имеющий `ShippedDate` параметр в своем `WHERE` предложении:
+Параметрам TableAdapter могут быть присвоены значения NULL, если требуется запросить записи, не имеющие текущего значения. Например, рассмотрим следующий запрос с параметром `ShippedDate` в своем `WHERE` предложении:
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -96,7 +96,7 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 2. В окне **Свойства** выберите **Параметры**, а затем нажмите кнопку с многоточием ( **...** ), чтобы открыть **Редактор коллекции параметров**.
 
-3. Выберите параметр, допускающий значения NULL, и задайте для `true`свойства AllowDBNull значение.
+3. Выберите параметр, допускающий значения NULL, и задайте для свойства **AllowDbNull** значение `true`.
 
 ## <a name="see-also"></a>См. также
 
