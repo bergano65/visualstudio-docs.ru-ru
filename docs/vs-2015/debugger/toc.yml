@@ -155,7 +155,7 @@
         - name: Создание настраиваемых представлений управляемых объектов
           items:
             - name: Создание настраиваемых представлений управляемых объектов
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: Использование атрибута DebuggerTypeProxy
               href: using-debuggertypeproxy-attribute.md
             - name: Использование атрибута DebuggerDisplay
@@ -592,7 +592,7 @@
               href: bc-texture-compression-variant.md
         - name: Список событий
           href: graphics-event-list.md
-        - name: Регион
+        - name: Область
           href: graphics-state.md
         - name: Этапы конвейера
           href: graphics-pipeline-stages.md
@@ -628,9 +628,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: Использование диагностики графики с устройством ARM
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: Ссылка
+        - name: Справочник
           items:
-            - name: Ссылка
+            - name: Справочник
               href: reference-programmatic-capture.md
             - name: Класс VsgDbg
               items:
@@ -682,9 +682,9 @@
                       href: how-to-enable-debugging-for-aspnet-applications.md
                     - name: Выполнение рабочего процесса с учетной записью пользователя
                       href: how-to-run-the-worker-process-under-a-user-account.md
-                - name: Условия для удаленной отладки веб-приложений
+                - name: Предварительные требования для удаленной отладки веб-приложений
                   items:
-                    - name: Условия для удаленной отладки веб-приложений
+                    - name: Предварительные требования для удаленной отладки веб-приложений
                       href: prerequistes-for-remote-debugging-web-applications.md
                     - name: Поиск имени процесса ASP.NET
                       href: how-to-find-the-name-of-the-aspnet-process.md
