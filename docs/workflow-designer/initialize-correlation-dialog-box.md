@@ -1,36 +1,36 @@
 ---
-title: Конструктор рабочих процессов - диалоговое окно инициализации корреляции
+title: Конструктор рабочих процессов-диалоговое окно "Инициализация корреляции"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab86b39cd927d516bc627630a29feee1698daa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0b23f10184516ea4ffc3b00ac98e32ca8b387c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650195"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Диалоговое окно «Инициализация корреляции»
 
-**Инициализация корреляции** диалоговое окно используется в конструкторе рабочих процессов для изменения <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> свойство <xref:System.ServiceModel.Activities.InitializeCorrelation> действия. Дополнительные сведения см. в разделе [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
+Диалоговое окно « **Инициализация корреляции** » используется в конструктор рабочих процессов для изменения свойства <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> действия <xref:System.ServiceModel.Activities.InitializeCorrelation>. Дополнительные сведения см. в разделе [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
 
-В следующей таблице описаны элементы пользовательского интерфейса (UI) **инициализация корреляции** диалоговое окно:
+В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна « **Инициализация корреляции** ».
 
 |Элемент пользовательского интерфейса|Описание|
 |-|-----------------|
 |**Корреляция**|Дескриптор корреляции <xref:System.ServiceModel.Activities.CorrelationHandle> для инициализации.|
-|**Инициализировать на**|По ключу/паре значений, содержащих данные инициализации. Это значение соответствует <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> свойство. Например пары "допустимый ключ значение", раздел с именем «OrderID» связан с переменной с именем OrderID.|
+|**Инициализировать в**|По ключу/паре значений, содержащих данные инициализации. Это значение соответствует свойству <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Примером допустимой пары "ключ-значение" является ключ с именем OrderID, состоящий из переменной с именем OrderID.|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Вызов диалогового окна «Инициализация корреляции»
 
-Нажмите кнопку **представление** на **InitializeCorrelation** действие конструктора или выберите <xref:System.ServiceModel.Activities.InitializeCorrelation> действия в конструкторе рабочих процессов. Щелкните кнопку с многоточием рядом с полем <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> свойства в сетке свойств.
+Нажмите кнопку **Просмотр** в конструкторе действий **InitializeCorrelation** или выберите <xref:System.ServiceModel.Activities.InitializeCorrelation> действие в конструктор рабочих процессов. Затем нажмите кнопку с многоточием рядом со свойством <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> в сетке свойств.
 
 ## <a name="see-also"></a>См. также
 

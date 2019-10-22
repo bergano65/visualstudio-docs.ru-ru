@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696296"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670302"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Советы по повышению продуктивности при работе в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ ms.locfileid: "65696296"
 
      Рисунок 1. Смарт-теги ошибок
 
-     ![Предложения по смарт-тегам ошибок](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![Предложения по смарт-тегам ошибок](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      Красные прямоугольники предлагают варианты рефакторинга кода.
 
      Рисунок 2. Смарт-теги рефакторинга
 
-     ![Предложения по смарт-тегам рефакторинга](../ide/media/productivity-redsmarttags.png "Productivity_BlueSmartTags")
+     ![Предложения по смарт-тегам рефакторинга](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **Отображение и изменение определений элементов кода**. Вы можете быстро отобразить и изменить модуль, в котором определен элемент кода, например член, переменная или локальный объект.
 
@@ -117,7 +117,7 @@ ms.locfileid: "65696296"
 
      Рисунок 3. Список результатов быстрого запуска для запроса `new project`
 
-     ![Результаты быстрого запуска для элемента "new project"](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     ![Результаты быстрого запуска для нового проекта](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      На панели **Быстрый запуск**, помимо прочего, отображаются ссылки на диалоговое окно **Создание проекта** диалоговое окно **Добавление нового элемента** и страницу "Проекты и решения" в диалоговом окне **Параметры**. Результаты на панели быстрого запуска также могут содержать файлы проектов и окна инструментов.
 
@@ -126,7 +126,7 @@ ms.locfileid: "65696296"
 
 - **Тестирование одних и тех же страниц, приложений и сайтов в различных браузерах**. В процессе отладки кода можно легко переключаться между установленными веб-браузерами, включая [инспектор страниц (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), без необходимости открытия диалогового окна **Просмотр с помощью**. С помощью списка **Целевой объект отладки**, расположенного на панели инструментов **Стандартная** рядом с кнопкой **Начать отладку**, можно быстро узнать, какой именно браузер используется для отладки и просмотра страниц.
 
-     ![Выбор параметров отладки веб-обозревателя](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![Выбор параметров отладки веб-браузера](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **Установка временных точек останова**. Вы можете создать временную точку останова в текущей строке кода и одновременно запустить отладчик. При достижении этой строки кода отладчик входит в режим приостановки выполнения. Дополнительные сведения см. в статье [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -157,5 +157,5 @@ ms.locfileid: "65696296"
 
 - **Настройка шрифтов, отображаемых в Visual Studio**. Вы можете изменять начертания, размеры и цвета шрифтов, используемых для текста в интегрированной среде разработки. Например, можно задать цвета определенных элементов кода в редакторе и начертание шрифта в отдельных окнах инструментов или во всей интегрированной среде разработки. Дополнительные сведения см. в статьях [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) и [Практическое руководство: изменение шрифтов и цветов](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Сочетания клавиш по умолчанию для часто используемых команд](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Советы и рекомендации по специальным возможностям](../ide/reference/accessibility-tips-and-tricks.md)

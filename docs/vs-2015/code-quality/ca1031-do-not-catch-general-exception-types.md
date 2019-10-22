@@ -1,5 +1,5 @@
 ---
-title: CA1031. Не перехватывайте типы общих исключений | Документация Майкрософт
+title: 'CA1031: не перехватывайте типы общих исключений | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - DoNotCatchGeneralExceptionTypes
 ms.assetid: cbc283ae-2a46-4ec0-940e-85aa189b118f
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4588a949b4b6439c3f76270b0bcdab9cd52c23d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2696446ee2b257b78559909c0cba672cded39943
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661897"
 ---
-# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031. Не перехватывайте типы общих исключений
+# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: не перехватывайте типы общих исключений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|
 |CheckId|CA1031|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Общие исключения, такие как <xref:System.Exception?displayProperty=fullName> или <xref:System.SystemException?displayProperty=fullName> перехватывается в `catch` инструкции или универсальной конструкции catch например `catch()` используется.
+ В инструкции `catch` перехватывается общее исключение, например <xref:System.Exception?displayProperty=fullName> или <xref:System.SystemException?displayProperty=fullName>, или используется общее предложение catch, такое как `catch()`.
 
 ## <a name="rule-description"></a>Описание правила
  Общие исключения не должны перехватываться.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, перехватить исключение более конкретного характера или повторно выдать общее исключение в последнем операторе в `catch` блока.
+ Чтобы устранить нарушение этого правила, перехватите более конкретное исключение или повторно создайте общее исключение в качестве последней инструкции в блоке `catch`.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Перехват типы общих исключений может скрыть проблемы времени выполнения от пользователя библиотеки и может сделать отладку намного сложнее.
+ Для этого правила отключать вывод предупреждений не следует. Перехват общих типов исключений может скрывать проблемы времени выполнения от пользователя библиотеки и может усложнить отладку.
 
 > [!NOTE]
-> Начиная с [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], общеязыковой среды выполнения (CLR) больше не передает исключения поврежденного состояния, возникающие в операционную систему и управляемого кода, например нарушения прав доступа в [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)], для обработки в управляемом коде. Если вы хотите компиляции приложения в [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] или более поздней версии и поддерживать обработка исключений поврежденного состояния, можно применить <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут к методу, который обрабатывает исключения поврежденного состояния.
+> Начиная с [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] среда CLR больше не доставляет исключения поврежденного состояния, которые происходят в операционной системе и управляемом коде, например нарушения прав доступа в [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)], для обработки управляемым кодом. Если требуется скомпилировать приложение в [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] или более поздних версиях и поддерживать обработку исключений поврежденного состояния, можно применить атрибут <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> к методу, обрабатывающему исключение поврежденного состояния.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, тип, который нарушает это правило и тип, реализующий правильно `catch` блока.
+ В следующем примере показан тип, нарушающий это правило, и тип, который правильно реализует блок `catch`.
 
  [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionAndSystemException/cpp/FxCop.Design.ExceptionAndSystemException.cpp#1)]
  [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionAndSystemException/cs/FxCop.Design.ExceptionAndSystemException.cs#1)]
  [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionAndSystemException/vb/FxCop.Design.ExceptionAndSystemException.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2200: Исключение для сохранения сведений о стеке](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
+ [CA2200: следует повторно вызывать исключение для сохранения сведений о стеке](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)

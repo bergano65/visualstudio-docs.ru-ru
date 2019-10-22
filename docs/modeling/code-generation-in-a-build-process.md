@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163124"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654201"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Вызов преобразования текста в процессе сборки
 
@@ -49,9 +49,9 @@ ms.locfileid: "72163124"
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - Microsoft. VisualStudio. TextTemplating. моделирование. 15,0. dll
-  
+
 > [!TIP]
-> Если вы получаете `MissingMethodException` для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например,  *MSBuild. exe*).
+> Если вы получаете `MissingMethodException` для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге с именем *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например,  *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Изменение файла проекта
 
@@ -116,11 +116,11 @@ ms.locfileid: "72163124"
     ```
 
      По умолчанию задача T4 MSBuild повторно создает выходной файл, если он старше:
-     
+
      - файл шаблона
      - Все включаемые файлы
      - все файлы, которые ранее были считаны шаблоном или используемым процессором директив
-     
+
      Это более мощный тест зависимостей, чем используемый командой **преобразовать все шаблоны** в Visual Studio, который сравнивает только даты шаблона и выходного файла.
 
 Чтобы выполнить только преобразования текста в проекте, вызовите задачу TransformAll:
@@ -285,7 +285,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-**Why мне нужно преобразовать шаблоны на сервере сборки? Я уже преписал шаблоны в Visual Studio перед возвратом кода.**
+**Зачем нужно преобразовывать шаблоны на сервере сборки? Я уже преписал шаблоны в Visual Studio, прежде чем я вернул код.**
 
 При обновлении включаемого файла или другого файла, прочитанного шаблоном, Visual Studio не преобразует файл автоматически. Преобразование шаблонов в рамках сборки гарантирует актуальность всех компонентов.
 

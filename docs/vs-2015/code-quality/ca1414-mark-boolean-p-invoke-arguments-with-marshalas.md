@@ -1,5 +1,5 @@
 ---
-title: CA1414. Пометьте логические аргументы P / Invoke с помощью атрибута MarshalAs | Документация Майкрософт
+title: 'CA1414: Пометьте логические аргументы P-Invoke с помощью MarshalAs | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,51 +12,51 @@ helpviewer_keywords:
 - MarkBooleanPInvokeArgumentsWithMarshalAs
 ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8df0404657b6740c27544292dc101a6030a6563f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 588e16a6b21b320ad7012bd20d79a62d027679e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691919"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652689"
 ---
-# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414. Пометьте логические аргументы P/Invoke с помощью MarshalAs
+# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: пометьте логические аргументы P/Invoke с помощью атрибута MarshalAs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
-|Категория|Microsoft.Interoperability|
+|Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Метод вызова неуправляемого объявление включает в себя <xref:System.Boolean?displayProperty=fullName> параметра или возвращаемого значения, но <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> параметра или возвращаемого значения не применяется атрибут.
+ Объявление метода вызова неуправляемого кода включает параметр <xref:System.Boolean?displayProperty=fullName> или возвращаемое значение, но атрибут <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> не применяется к параметру или возвращаемому значению.
 
 ## <a name="rule-description"></a>Описание правила
- Вызов метода доступа неуправляемого кода платформы и определяется с помощью `Declare` ключевое слово в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Указывает поведение маршалинга, который используется для преобразования типов данных между управляемым и неуправляемым кодом. Типы много простых данных, такие как <xref:System.Byte?displayProperty=fullName> и <xref:System.Int32?displayProperty=fullName>, иметь единое представление в неуправляемом коде и не требуется указывать их поведение маршалинга; среда CLR автоматически предоставляет правильное поведение.
+ Метод вызова платформы обращается к неуправляемому коду и определяется с помощью ключевого слова `Declare` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> указывает поведение маршалинга, используемое для преобразования типов данных между управляемым и неуправляемым кодом. Многие простые типы данных, такие как <xref:System.Byte?displayProperty=fullName> и <xref:System.Int32?displayProperty=fullName>, имеют одно представление в неуправляемом коде и не нуждаются в спецификации их поведения при маршалинге. среда CLR автоматически предоставляет правильное поведение.
 
- <xref:System.Boolean> Тип данных имеет несколько представлений в неуправляемом коде. Когда <xref:System.Runtime.InteropServices.MarshalAsAttribute> не указан, по умолчанию, поведение для маршалинга <xref:System.Boolean> имеет тип данных <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Это 32-разрядное целое число, которое не во всех случаях. Логическое представление, которое требуется неуправляемый метод следует определить и сопоставить соответствующие <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool является тип bool Платформы Win32, которая всегда равна 4 байтам. Для C++ следует использовать значение UnmanagedType.U1 `bool` или другие типы 1 байт. Дополнительные сведения см. в разделе [маршалинг по умолчанию для логических типов](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
+ Тип данных <xref:System.Boolean> имеет несколько представлений в неуправляемом коде. Если <xref:System.Runtime.InteropServices.MarshalAsAttribute> не указан, то поведением маршалинга по умолчанию для <xref:System.Boolean> типа данных является <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Это 32-разрядное целое число, которое не подходит во всех обстоятельствах. Логическое представление, необходимое для неуправляемого метода, должно быть определено и сопоставлено с соответствующим <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType. bool — это тип BOOL Win32, который всегда равен 4 байтам. UnmanagedType. U1 следует использовать для C++ `bool` или других 1-байтовых типов. Дополнительные сведения см. в разделе [маршалирование по умолчанию для логических типов](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, примените <xref:System.Runtime.InteropServices.MarshalAsAttribute> для <xref:System.Boolean> параметра или возвращаемого значения. Задайте значение атрибута в соответствующую <xref:System.Runtime.InteropServices.UnmanagedType>.
+ Чтобы устранить нарушение этого правила, примените <xref:System.Runtime.InteropServices.MarshalAsAttribute> к параметру <xref:System.Boolean> или возвращаемому значению. Присвойте атрибуту значение соответствующего <xref:System.Runtime.InteropServices.UnmanagedType>.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Даже если поведение маршалинга по умолчанию не подходит, когда явно задано поведение код повышает удобство поддержки.
+ Для этого правила отключать вывод предупреждений не следует. Даже если подходит поведение маршалинга по умолчанию, код проще поддерживать, если явно указано поведение.
 
 ## <a name="example"></a>Пример
- В следующем примере показано два неуправляемого кода методы, помеченные с соответствующим <xref:System.Runtime.InteropServices.MarshalAsAttribute> атрибуты.
+ В следующем примере показаны два метода вызова неуправляемого кода, помеченные соответствующими атрибутами <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
 
  [!code-cpp[FxCop.Interoperability.BoolMarshalAs#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/cpp/FxCop.Interoperability.BoolMarshalAs.cpp#1)]
  [!code-csharp[FxCop.Interoperability.BoolMarshalAs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/cs/FxCop.Interoperability.BoolMarshalAs.cs#1)]
  [!code-vb[FxCop.Interoperability.BoolMarshalAs#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/vb/FxCop.Interoperability.BoolMarshalAs.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1901: Объявления P/Invoke должны быть переносимыми](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
+ [CA1901: объявления P/Invoke должны быть переносимыми](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
 
- [CA2101: Укажите тип маршалинга для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: укажите тип маршалинга для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-## <a name="see-also"></a>См. также
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Маршалинг по умолчанию для логических типов](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [взаимодействие с неуправляемым кодом](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+## <a name="see-also"></a>См. также раздел
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [маршалирование по умолчанию для логических типов](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [, взаимодействии с неуправляемым кодом](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

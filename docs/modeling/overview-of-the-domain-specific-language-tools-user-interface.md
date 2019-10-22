@@ -6,20 +6,20 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcc16b5287e4980d94a7cbcc4dff4d1f5f63d00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a99eef692eb776908c6b8c4a32eb361092855a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808341"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658304"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Обзор пользовательского интерфейса средств доменных языков
-При первом открытии средства доменного языка (DSL Tools) решение в Visual Studio, пользовательский интерфейс будет напоминать следующий рисунок.
+При первом открытии решения Средства предметно-ориентированных языков (DSL Tools) в Visual Studio пользовательский интерфейс будет выглядеть примерно так, как показано на следующем рисунке.
 
  ![конструктор dsl](../modeling/media/dsl_designer.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "62808341"
 |Фигуры и соединители|Фигуры указывают, как элементы модели должны отображаться на схеме DSL. Соединители указывают линии на схеме DSL, которые можно использовать для отображения отношений.<br /><br /> Чтобы создать фигуру или соединитель, перетащите средство на сторону **элементов схемы**.|
 |Карты фигур|Сопоставитель фигур отображается в виде линии на схеме модели предметной области и связывает фигуру с доменным классом, который она изображает, или соединитель с доменной связью, которую он изображает.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор средств доменных языков](../modeling/overview-of-domain-specific-language-tools.md)
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

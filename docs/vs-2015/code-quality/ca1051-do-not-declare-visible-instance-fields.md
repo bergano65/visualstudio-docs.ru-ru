@@ -1,5 +1,5 @@
 ---
-title: CA1051. Не объявляйте видимые поля экземпляров | Документация Майкрософт
+title: 'CA1051: не объявляйте видимые поля экземпляров | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - DoNotDeclareVisibleInstanceFields
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 96e518977e12f2ae061d5ab73803d51dad733149
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 41332ab7d729f7b2187ccace6b05fe2d17763a0d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686823"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672521"
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051. Не объявляйте видимые поля экземпляров
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: не объявляйте видимые поля экземпляров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Видимый извне тип содержит видимое извне экземпляра поле.
+ Внешний видимый тип имеет внешнее видимое поле экземпляра.
 
 ## <a name="rule-description"></a>Описание правила
- Поля главным образом следует использовать для данных реализации. Поля должны быть `private` или `internal` и должны быть представлены с помощью свойств. Это так же просто, для доступа к свойству, как получить доступ к полю, а код в методах доступа свойства можно изменить, как расширить возможности типа без нарушения критических изменений. Свойства, которые просто возвращают значение поля закрытого или внутреннего оптимизированы для выполнения наряду с доступом к полю; очень мало выигрыш в производительности, связанный с использование видимого полей по свойствам.
+ Поля главным образом следует использовать для данных реализации. Поля должны быть `private` или `internal` и предоставляться с помощью свойств. Очень просто получить доступ к свойству, так как оно обращается к полю, и код в функциях доступа свойства может измениться, так как функции типа расширяются без внесения критических изменений. Свойства, которые просто возвращают значение закрытого или внутреннего поля, оптимизированы для выполнения по номиналу с доступом к полю; незначительное увеличение производительности связано с использованием внешних видимых полей, передаваемых по свойствам.
 
- Видимый извне ссылается на `public`, `protected`, и `protected internal` (`Public`, `Protected`, и `Protected Friend` в Visual Basic) уровни доступности.
+ Внешний видимый объект относится к уровням доступности `public`, `protected` и `protected internal` (`Public`, `Protected` и `Protected Friend`).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, сделать поле `private` или `internal` и предоставите к нему доступ с помощью свойства внешней видимости.
+ Чтобы устранить нарушение этого правила, сделайте поле `private` или `internal` и предоставьте его с помощью свойства, видимого извне.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Внешне видимые поля не предоставляют никаких преимуществ, которые недоступны в свойства. Кроме того, открытые поля не могут быть защищены [требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). См. в разделе [CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Для этого правила отключать вывод предупреждений не следует. Внешние видимые поля не предоставляют никаких преимуществ, недоступных для свойств. Кроме того, открытые поля не могут быть защищены [запросами компоновки](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). См. раздел [CA2112: Secure Types не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Пример
- В следующем примере показано типом (`BadPublicInstanceFields`), нарушает это правило. `GoodPublicInstanceFields` приводится правильный код.
+ В следующем примере показан тип (`BadPublicInstanceFields`), нарушающий это правило. в `GoodPublicInstanceFields` показан исправленный код.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

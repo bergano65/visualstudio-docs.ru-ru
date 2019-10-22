@@ -16,37 +16,37 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996f0336742441e565d16b0fe491e846d0d24329
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811691"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654119"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 
 Схемы моделирования помогают понять, уточнить и передать другим сведения о коде и пользовательских требованиях, которым должна удовлетворять ваша программная система.
 
-Чтобы узнать, какие версии Visual Studio поддерживают разные типы схем, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Чтобы узнать, какие версии Visual Studio поддерживают каждый тип схемы, см. раздел [Поддержка версий для инструментов архитектуры и моделирования](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 Для визуализации архитектуры системы или имеющегося кода создайте следующие схемы:
 
 |**Схема**|**Что показывает**|
 |-|-|
-|[Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы зависимостей: справочник](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|
+|[Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|
 |Карты кода<br /><br /> [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)|Зависимости и другие отношения в имеющемся коде|
 |Схемы классов, созданные кодом<br /><br /> [Работа со схемами классов (конструктор классов)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Типы и их отношения в коде .NET|
 
 ## <a name="related-tasks"></a>Связанные задачи
 
-|**Раздел**|**Задача**|
+|**Главе**|**Задача**|
 |-|-|
-|[Визуализация кода](../modeling/visualize-code.md)|Создавайте карты кода и схемы зависимостей, чтобы лучше разобраться в незнакомом коде.|
+|[Визуализация кода](../modeling/visualize-code.md)|Создайте карты кода и схемы зависимостей, чтобы лучше понять незнакомый код.|
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|
 |[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|Используйте модели, чтобы описать общую структуру и поведение системы, а также обеспечить ее соответствие потребностям пользователей.|
 |[Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)|Убедитесь, что программное обеспечение соответствует потребностям пользователей и общей архитектуре системы.|
@@ -55,5 +55,5 @@ ms.locfileid: "62811691"
 
 ## <a name="resources"></a>Ресурсы
 
-- [Форум по средствам моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Форум по расширяемости Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)
+- [Форум средств моделирования Visual Studio визуализации &](http://go.microsoft.com/fwlink/?LinkId=184720)
+- [Форум по расширению Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

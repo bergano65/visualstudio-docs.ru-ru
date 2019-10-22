@@ -1,5 +1,5 @@
 ---
-title: Пакет SDK - моделирования предметно ориентированных языков | Документация Майкрософт
+title: Пакет SDK для моделирования — доменные языки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668640"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK моделирования для Visual Studio — доменные языки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-С помощью пакета SDK моделирования для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), можно создать мощные модели с использованием средства разработки, которые можно интегрировать в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Например, с помощью MSDK создаются средства UML. Таким же образом можно создать одно или несколько определений моделей и интегрировать их в набор средств.
+С помощью пакета SDK моделирования для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (МСДК) можно создавать мощные средства разработки на основе моделей, которые можно интегрировать в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Например, с помощью MSDK создаются средства UML. Таким же образом можно создать одно или несколько определений моделей и интегрировать их в набор средств.
 
  Ключевой элемент MSDK — определение модели, которая создается для представления концепций в бизнес-сфере. Для модели можно предусмотреть различные дополнительные средства и возможности, например схематическое представление, возможность создания кода и других артефактов, команды преобразования модели и возможность взаимодействия с кодом и другими объектами в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При разработке модели ее можно объединить с другими моделями и средствами для создания эффективного набора инструментов, предназначенных для разработки.
 
@@ -41,13 +41,13 @@ ms.locfileid: "68159019"
   Все эти средства можно настраивать и расширять. Расширения интегрируются таким образом, что сохраняются возможности обновления определения доменного языка и повторного создания функций без потери расширений.
 
 ## <a name="samples-and-the-latest-information"></a>Примеры и последние сведения
- [Скачайте пакет SDK для Visual Studio 2015 моделирования](http://www.microsoft.com/download/details.aspx?id=48148)
+ [Скачайте пакет SDK моделирования для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
 
- [Примеры](http://go.microsoft.com/fwlink/?LinkId=186128) для пакета SDK моделирования для Visual Studio.
+ [Примеры](http://go.microsoft.com/fwlink/?LinkId=186128) для пакета SDK для моделирования для Visual Studio.
 
- Руководство по передовым технологиям и устранению неполадок, см. в статье [форум по Visual Studio DSL и расширяемость средств моделирования](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Рекомендации по расширенным методикам и устранению неполадок см. на [форуме по Visual Studio DSL & средства моделирования](http://go.microsoft.com/fwlink/?LinkID=186074).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание
  [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)
 
  [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)
@@ -72,10 +72,10 @@ ms.locfileid: "68159019"
 
  [Создание доменного языка на основе WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Практическое руководство. Расширение конструктора предметно-ориентированных языков](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Практическое руководство. Расширение конструктора доменного языка](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Выпуски Visual Studio, поддерживаемые пакетом SDK визуализации и моделирования](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Практическое руководство. Перенос предметно-ориентированного языка в новую версию](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Практическое руководство. Перенос доменного языка в новую версию](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Справка по API SDK моделирования для Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

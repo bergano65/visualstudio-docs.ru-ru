@@ -10,15 +10,15 @@ helpviewer_keywords:
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160870"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667453"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,5 +77,5 @@ ms.locfileid: "68160870"
 |[Точка останова](../../ide/reference/toggle-breakpoint-command.md)|Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.|
 |[Команда Watch](../../ide/reference/watch-command.md)|Создает и открывает указанный экземпляр окна **Контрольное значение** .|
 
-## <a name="see-also"></a>См. также
- [Командное окно](../../ide/reference/command-window.md) [поле Найти/Команда](../../ide/find-command-box.md) [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>См. также раздел
+ Командные [окна](../../ide/reference/command-window.md) [поиска/команды](../../ide/find-command-box.md) в командной строке [Visual Studio псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)

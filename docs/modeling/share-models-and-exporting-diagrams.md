@@ -5,41 +5,41 @@ ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb1699db54691e81c49b686c245d96f9b5a5442
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e1b958b9226a0a8ded0f886af81efc3b1b5aaf9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670734"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Общий доступ к моделям и экспорт схем
 В Visual Studio есть несколько способов организовать совместное использование моделей и схем с коллегами.
 
- Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. раздел [Поддержка архитектуры и средств моделирования в выпуске](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="working-on-a-model-as-a-team"></a>Работа с моделью в команде
- Пользователи Visual Studio можно создавать и изменять модели, схемы зависимостей и направленные графы.
+ Пользователи Visual Studio могут создавать и изменять модели, схемы зависимостей и направленные графы.
 
- Разные пользователи могут работать одновременно на модели, но должен работать в разных пакетах.
+ В модели могут работать разные пользователи одновременно, но они должны работать в разных пакетах.
 
- Рекомендации по организации моделей в среднем или большом проекте см. в разделе [структуры решения моделирования](../modeling/structure-your-modeling-solution.md).
+ Рекомендации по организации моделей в среднем или крупном проекте см. в разделе [структурирование решения моделирования](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Чтение и рецензирование моделей
- Члены команды, использующие некоторые версии Visual Studio (что нельзя создавать модели), могут читать модели, схемы моделирования и направленные графы, но не позволяет их редактировать.  Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Члены группы, использующие некоторые версии Visual Studio (которые не могут создавать модели), могут считывать модели, схемы моделирования и направленные графы, но не могут изменять их.  Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. раздел [Поддержка архитектуры и средств моделирования в выпуске](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Диаграмма зависимостей можно открыть только в модели, в котором он был создан. Чтобы предоставить доступ к схеме, нужно предоставить доступ ко всем файлам проекта моделирования или к их копиям.
+ Схему зависимостей можно открыть только в модели, в которой она была создана. Чтобы предоставить доступ к схеме, нужно предоставить доступ ко всем файлам проекта моделирования или к их копиям.
 
- Дополнительные сведения см. в разделе [чтение моделей и схем в других выпусках Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
+ Дополнительные сведения см. [в разделе чтение моделей и схем в других выпусках Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
 
 ## <a name="using-diagrams-in-documents-and-presentations"></a>Использование схем в документах и презентациях
  Вы можете копировать части схем в документы или презентации. Также можно печатать схемы, например, в XPS-файлы.
 
- Дополнительные сведения см. в разделе [Экспорт схем как образы](../modeling/export-diagrams-as-images.md).
+ Дополнительные сведения см. в статье [Экспорт схем как изображений](../modeling/export-diagrams-as-images.md).
 
 ## <a name="related-topics"></a>См. также
 
@@ -49,6 +49,6 @@ ms.locfileid: "63003378"
 |[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|Вы можете копировать части схем в приложения, например PowerPoint или Word, и печатать схемы в XPS-файлы.|
 |[Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)|Обзор моделей и схем.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создать набор правил PolicyActivity (для прежних версий) | Документация Майкрософт
+title: Как создать набор правил PolicyActivity (для прежних версий) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -12,59 +12,55 @@ helpviewer_keywords:
 - rule sets, creating for PolicyActivity
 ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c200c7db90f3cad12c1188af88f4651d2f2d44c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433574"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663392"
 ---
-# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Практическое руководство. Создание набора правил PolicyActivity (для прежних версий)
-В этом разделе описывается создание набора правил действия политики с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- После перетаскивания **политики** элемент действия из **элементов** в область конструктора рабочих процессов необходимо выбрать существующее правило или создать новый набор правил для [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) действия. Выберите существующий набор с помощью правил [правила задайте диалоговое окно Выбор (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md) и наборы правил создаются с помощью [правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
-  
+# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Как создать набор правил PolicyActivity (для прежних версий)
+В этом разделе описывается создание набора правил действия политики с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ После перетаскивания элемента действия **политики** из **области элементов** в рабочую область конструктора рабочих процессов необходимо выбрать существующее правило или создать новый набор правил для действия [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) . Для выбора существующего набора правил используется [диалоговое окно Выбор набора правил (устаревшая)](../workflow-designer/select-rule-set-dialog-box-legacy.md) , а наборы правил создаются с помощью [диалогового окна Редактор набора правил (прежние версии)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
+
 > [!NOTE]
-> Вы можете открыть [правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) диалоговое окно по двойному щелчку на [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) действие, которое находится в области конструктора рабочих процессов.  
-  
-### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Выбор или создание набора правил для действия PolicyActivity  
-  
-1. Щелкните правой кнопкой мыши [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), а затем нажмите кнопку **свойства** открыть **свойства** окна.  
-  
-2. Нажмите кнопку **RuleSetReference** свойство.  
-  
-3. Выполните одно из следующих действий.  
-  
-    - Нажмите кнопку **RuleSetReference** многоточие **[...]** , а затем выберите существующий набор правил в [правила задайте диалоговое окно Выбор (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Далее перейдите к шагу 10.  
-  
-         -или-  
-  
-    - Введите имя набора правил. Нажмите кнопку **RuleSetReference** многоточие **[...]** , а затем выберите **изменить** в [правила задайте диалоговое окно Выбор (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
-  
-         -или-  
-  
-    - Введите имя набора правил. Разверните **RuleSetReference** свойство и выберите кнопку с многоточием **[...]**  в **RuleSet Definition** свойство.  
-  
-         [Правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) открывает.  
-  
-4. В [правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), нажмите кнопку **добавить правило** Чтобы добавить новое правило в набор правил.  
-  
-5. Введите **имя**, **приоритет**, и **повторной оценки** свойства, или оставить значения по умолчанию.  
-  
-6. Введите текст для **условие**.  
-  
-7. Введите текст для **действия Then** и **действия Else**.  
-  
-8. Нажмите кнопку **добавить правило** еще раз, чтобы добавить еще одно правило.  
-  
-9. Завершив настройку, нажмите кнопку **ОК**.  
-  
-## <a name="see-also"></a>См. также  
- [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
- [Выберите правило набора диалоговое окно (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md)   
- [Набор правил диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)   
- [Использование действия Policy](http://go.microsoft.com/fwlink?LinkID=65004)   
- [Действия с рабочими процессами для прежних версий](../workflow-designer/legacy-workflow-activities.md)
+> Диалоговое окно [Редактор набора правил (устаревшее)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) можно открыть непосредственно, дважды щелкнув действие [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) в рабочей области конструктора рабочих процессов.
+
+### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Выбор или создание набора правил для действия PolicyActivity
+
+1. Щелкните правой кнопкой мыши [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)и выберите пункт **свойства** , чтобы открыть окно **Свойства** .
+
+2. Щелкните свойство **рулесетреференце** .
+
+3. Выполните одно из следующих действий.
+
+    - Щелкните **рулесетреференце** многоточие **[...]** , а затем выберите существующий набор правил в [диалоговом окне Выбор набора правил (прежние версии)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Далее перейдите к шагу 10.
+
+         \- или -
+
+    - Введите имя набора правил. Щелкните **рулесетреференце** многоточие **[...]** , а затем выберите **изменить** в [диалоговом окне Выбор набора правил (прежние версии)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
+
+         \- или -
+
+    - Введите имя набора правил. Разверните свойство **рулесетреференце** и выберите многоточие **[...]** в свойстве **Определение набора правил** .
+
+         Откроется [диалоговое окно Редактор набора правил (устаревшая)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) .
+
+4. В [диалоговом окне Редактор набора правил (устаревшая)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)нажмите кнопку **Добавить правило** , чтобы добавить новое правило в набор правил.
+
+5. Введите свойства **имя**, **приоритет**и повторная **Оценка** , либо примите значения по умолчанию.
+
+6. Введите текст **условия**.
+
+7. Введите текст для **действий then** и **else**.
+
+8. Нажмите кнопку **Добавить правило** еще раз, чтобы добавить другое правило.
+
+9. По завершении нажмите кнопку **ОК**.
+
+## <a name="see-also"></a>См. также раздел
+ [Диалоговое окно "](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) [" диалогового окна "Выбор набора правил"](../workflow-designer/select-rule-set-dialog-box-legacy.md) (устаревшее) с использованием [устаревших действий рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [для действия политики](http://go.microsoft.com/fwlink?LinkID=65004)

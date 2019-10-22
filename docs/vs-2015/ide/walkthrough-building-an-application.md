@@ -1,20 +1,20 @@
 ---
-title: Пошаговое руководство. Построение приложения | Документация Майкрософт
+title: Пошаговое руководство. Сборка приложения | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698353"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670124"
 ---
 # <a name="walkthrough-building-an-application"></a>Пошаговое руководство. Построение приложения
 
@@ -48,9 +48,9 @@ ms.locfileid: "65698353"
 
 3. Укажите `Introduction` в поле поиска, чтобы найти пример.
 
-    ![Диалоговое окно "Расширения и обновления"](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
+    ![Диалоговое окно «расширения и обновления»](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
-4. В списке результатов выберите **Общие сведения о сборке приложений WPF (Visual C#)** или **Общие сведения о сборке приложений WPF (Visual Basic)**.
+4. В списке результатов выберите **Общие сведения о сборке приложений WPF (Visual C#)** или **Общие сведения о сборке приложений WPF (Visual Basic)** .
 
 5. Нажмите кнопку **Скачать**, а затем — кнопку **Закрыть**.
 
@@ -60,19 +60,19 @@ ms.locfileid: "65698353"
 
 1. Открывается диалоговое окно **Новый проект**.
 
-     ![Выбор пунктов "Файл", "Создать", "Проект"](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
+     ![В строке меню выберите "Файл", "Создать", "Проект"](../ide/media/exploreide-filenewproject.png "ExploreIDE — Филеневпрожект")
 
 2. В категории **Установленные** выберите категорию **Примеры**, чтобы отобразить пример "Общие сведения о сборке приложений WPF".
 
 3. Назовите решение `IntroWPFcsharp` для Visual C#.
 
-     ![Диалоговое окно "Новый проект", установленные примеры](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
+     ![Диалоговое окно "Создание проекта", установленные образцы](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
      OR
 
      Назовите решение `IntroWPFvb` для Visual Basic.
 
-     ![Диалоговое окно "Новый проект", пример для Visual Basic](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
+     ![Диалоговое окно "Создание проекта", Visual Basic пример](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
 4. Нажмите кнопку **ОК** .
 
@@ -86,29 +86,29 @@ ms.locfileid: "65698353"
 
 1. Откройте диалоговое окно **Диспетчер конфигураций**.
 
-    ![Меню "Сборка", команда "Диспетчер конфигураций"](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+    ![Меню "сборка", команда "Configuration Manager"](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
 2. В списке **Активная конфигурация решения** выберите **Создать**.
 
 3. В диалоговом окне **Создание конфигурации решения** введите для новой конфигурации имя `Test`, скопируйте параметры из существующей конфигурации отладки и нажмите кнопку **ОК**.
 
-    ![Диалоговое окно конфигурации нового решения](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+    ![Диалоговое окно «Создание конфигурации решения»](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
 4. В списке **Активная платформа решения** выберите **Создать**.
 
 5. В диалоговом окне **Создание платформы решения** выберите **x64** и не копируйте параметры из платформы x86.
 
-    ![Диалоговое окно платформы нового решения](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+    ![Диалоговое окно «Создание платформы решения»](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
 6. Нажмите кнопку **ОК** .
 
    Активная конфигурация решения была изменена на "Тест", а для активной платформы решения задано значение x64.
 
-   ![Диспетчер конфигураций с конфигурацией тестов](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Configuration Manager с конфигурацией теста](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
    Активную конфигурацию решения можно быстро проверить или изменить с помощью списка **Конфигурации решения** на панели инструментов **Стандартная**.
 
-   ![Стандартная панель инструментов параметра конфигурации решения](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+   ![Стандартная панель инструментов для параметров конфигурации решения](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
 ## <a name="BKMK_building"></a> Сборка приложения
 
@@ -120,13 +120,13 @@ ms.locfileid: "65698353"
 
   Окно **Вывод** отображает результат сборки. Построение выполнено успешно, но было создано несколько предупреждений.
 
-  Рис. 1. Предупреждения Visual Basic
+  Рис. 1. Предупреждения Visual Basic
 
-  ![Окно выходных данных Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+  ![окно вывода Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
-  Рис. 2. Visual C# предупреждения
+  Рис 2. Предупреждения Visual C#
 
-  ![Окно выходных данных Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+  ![окно вывода Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 ## <a name="BKMK_hidewarning"></a> Скрытие предупреждений компилятора
 
@@ -142,7 +142,7 @@ ms.locfileid: "65698353"
 
 3. Выберите страницу **Сборка** и затем в поле **Отключить предупреждения** укажите номер предупреждения `1762`.
 
-     ![Страница построения, конструктор проектов](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
+     ![Страница "сборка" в конструкторе проектов](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
 
      Дополнительные сведения см. в разделе [Страница "Сборка" в конструкторе проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -150,7 +150,7 @@ ms.locfileid: "65698353"
 
      Окно **Вывод** отображает только сводные данные о сборке.
 
-     ![Окно выходных данных, предупреждения сборки Visual C&#35;](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Окно вывода, предупреждения сборки&#35; Visual C](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>Отключение всех предупреждений сборки в Visual Basic
 
@@ -162,7 +162,7 @@ ms.locfileid: "65698353"
 
 3. На странице **Компиляция** установите флажок **Выключить все предупреждения**.
 
-    ![Страница компиляции, конструктор проектов](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
+    ![Страница "компиляция" в конструкторе проектов](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
 
     Дополнительные сведения см. в статье [Настройка предупреждений в Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -170,7 +170,7 @@ ms.locfileid: "65698353"
 
    Окно **Вывод** отображает только сводные данные о сборке.
 
-   ![Окно выходных данных, предупреждения сборки Visual Basic](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+   ![Окно вывода, Visual Basic предупреждения сборки](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
 
    Дополнительные сведения см. в разделе [Практическое руководство. Отключение предупреждений компилятора](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -185,7 +185,7 @@ ms.locfileid: "65698353"
 
 1. Откройте диалоговое окно **Параметры**.
 
-    ![Команда "Параметры" в меню "Сервис"](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+    ![Команда "Параметры" в меню "Сервис"](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE — Тулсоптионсмену")
 
 2. Выберите категорию **Проекты и решения** и затем страницу **Сборка и запуск**.
 
@@ -204,19 +204,19 @@ ms.locfileid: "65698353"
    > [!TIP]
    > В окне **Вывод** можно искать содержимое, отобразив диалоговое окно **Найти** нажатием клавиш CTRL+F.
 
-   Дополнительные сведения см. в разделе [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
+   Дополнительные сведения см. в статье [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="BKMK_releasebuild"></a> Создание сборки выпуска
 
 Вы можете создать версию примера приложения, оптимизированную для поставки. Для сборки выпуска вы указываете, что исполняемый файл копируется в общую сетевую папку перед запуском сборки.
 
-Дополнительные сведения см. в разделе [Практическое руководство. Изменение выходного каталога построения](../ide/how-to-change-the-build-output-directory.md) и [построение и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Дополнительные сведения см. в разделах [Практическое руководство. Изменение выходного каталога сборки](../ide/how-to-change-the-build-output-directory.md) и [Сборка и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Указание сборки выпуска для Visual Basic
 
 1. Открывается **Конструктор проектов**.
 
-     ![Меню "Просмотр", команда "Страница свойств"](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Меню "вид", команда "страницы свойств"](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Откройте вкладку **Компиляция**.
 
@@ -233,13 +233,13 @@ ms.locfileid: "65698353"
 
 6. Постройте приложение.
 
-     ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Команда "построить решение" в меню "сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE — BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Указание сборки выпуска для Visual C\#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Указание сборки выпуска для Visual C \#
 
 1. Открывается **Конструктор проектов**.
 
-    ![Меню "Просмотр", команда "Страница свойств"](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+    ![Меню "вид", команда "страницы свойств"](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Перейдите на страницу **Сборка**.
 
@@ -256,14 +256,14 @@ ms.locfileid: "65698353"
 
 6. Постройте приложение.
 
-    ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Команда "построить решение" в меню "сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE — BuildSolution")
 
    Исполняемый файл копируется в указанный сетевой путь. Для него используется путь \\\myserver\builds\\*имя_файла*.exe.
 
    Поздравляем! Вы успешно выполнили это пошаговое руководство.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Пошаговое руководство: Сборка проекта (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Пошаговое руководство. Сборка проекта (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
-- [Пошаговое руководство: Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)

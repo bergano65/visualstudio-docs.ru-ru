@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89c4447eb6bbc4b2ae9f7667672626d5119c61d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685598"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651797"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Практическое руководство. Перемещение по интегрированной среде разработки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "65685598"
 
   **Навигатор по интегрированной среде разработки** работает практически аналогично переключателю между окнами приложений. Он недоступен из меню и открывается только с помощью сочетаний клавиш. Для доступа к **навигатору по интегрированной среде разработки** можно использовать любую из двух команд (приведены ниже), чтобы переключаться между файлами в нужном порядке.
 
-  ![Навигатор интегрированной среды разработки Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
+  ![Навигатор Visual Studio IDE](../ide/media/vs2015-ide-navigator.png "|::ref1::|")
 
   `Window.PreviousDocumentWindowNav` позволяет переходить к последнему файлу, к которому осуществлялся доступ, а `Window.NextDocumentWindowNav` позволяет перемещаться в обратном порядке. Согласно общим параметрам разработки для `Window.PreviousDocumentWindowNav` назначено сочетание клавиш CTRL + SHIFT + TAB, а для `Window.NextDocumentWindowNav` — CTRL + TAB.
 
@@ -91,5 +91,5 @@ ms.locfileid: "65685598"
     > [!TIP]
     > Чтобы изменить порядок перехода по списку **Активные окна инструментов**, удерживайте нажатыми клавиши SHIFT+ALT и нажмите клавишу F7.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md) [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md)

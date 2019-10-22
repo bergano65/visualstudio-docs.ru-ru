@@ -1,21 +1,21 @@
 ---
-title: Практическое руководство. Создание XML-документа на основе схемы XSD
+title: Как создать XML-документ на основе XSD-схемы
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918565"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645978"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Практическое руководство. Создание XML-документа на основе схемы XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как создать XML-документ на основе схемы XSD
 
 Функция **создания примера XML** создает пример XML-файла на основе файла схемы XML (XSD).
 
@@ -41,7 +41,7 @@ ms.locfileid: "68918565"
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Создание экземпляра XML-документа на основе XSD-файла.
 
-1. Выполните действия, описанные в разделе [как: Создание и изменение файла](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)XSD-схемы.
+1. Выполните действия, описанные в разделе [Создание и изменение файла XSD-схемы](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2. В [обозревателе XML-схем](../xml-tools/xml-schema-explorer.md)щелкните правой кнопкой мыши `PurchaseOrder` глобальный элемент. Выберите **создать образец XML**.
 

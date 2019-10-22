@@ -8,21 +8,21 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8431c1ed983a2b1d4054d067e53d072c996acb94
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871745"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660635"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Для тестирования различных условий можно запускать тесты несколько раз с различными значениями параметров. Управляемые данными закодированные тесты пользовательского интерфейса — удобный способ сделать это. Вы задаете значения параметров в источнике данных, и каждая строка в источнике данных — это итерация закодированного теста пользовательского интерфейса. Общий результат теста будет основываться на результате всех итераций. Например если одна итерация завершается неудачей, общим результатом теста будет ошибка.
 
- **Требования**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -37,11 +37,11 @@ ms.locfileid: "68871745"
 
 2. Выберите запись действий.
 
-     ![Выбор записи действий](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![Выберите запись действий](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. Откройте приложение "Калькулятор" и начните запись теста.
 
-     ![Запись действий](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Действия записи](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. Сложите 1 и 2, приостановите средство записи и создайте метод теста. Позже эти значения ввода пользователя будут заменены значениями из файла данных.
 
@@ -67,7 +67,7 @@ ms.locfileid: "68871745"
 
      Сопоставьте элемент управления "Текст" с калькулятором, который отображает сумму.
 
-     ![Сопоставление элемента управления текста пользовательского интерфейса](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
+     ![Сопоставьте элемент управления "текст" пользовательского интерфейса](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
 7. Добавьте утверждение, которое проверяет правильность значения суммы. Выберите свойство **DisplayText**, которое имеет значение **3**, а затем выберите **Добавить утверждение**. С помощью средства сравнения **AreEqual** проверьте, имеет ли сравнение значение **3**.
 
@@ -75,7 +75,7 @@ ms.locfileid: "68871745"
 
 8. После настройки утверждения снова создайте код из построителя. При этом создается новый метод для проверки.
 
-     ![Создание метода проверочного утверждения](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
+     ![Создание метода утверждения](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
 
      Так как метод `ValidateSum` проверяет результаты метода `AddNumbers`, переместите его в нижнюю часть блока кода.
 
@@ -98,7 +98,7 @@ ms.locfileid: "68871745"
 
 1. Добавьте в проект dataDrivenSample текстовый файл с именем `data.csv`.
 
-     ![Добавление в проект файла с разделителями-запятыми](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Добавление в проект файла разделенных запятыми значений](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. Заполните CSV-файл следующими данными.
 
@@ -110,13 +110,13 @@ ms.locfileid: "68871745"
 
      После добавления данных этот файл должен выглядеть следующим образом.
 
-     ![Заполнение CSV-файла данными](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![Заполните. CSV-файл с данными](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
 3. Важно сохранить этот CSV-файл в правильной кодировке. В меню **ФАЙЛ** выберите **Дополнительные параметры сохранения** и выберите в качестве кодировки **Юникод (UTF-8 без сигнатуры) — кодовая страница 65001**.
 
 4. Этот CSV-файл необходимо скопировать в выходной каталог, иначе не удается запустить тест. Скопируйте его с помощью окна «Свойства».
 
-     ![Развертывание CSV-файла](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![Разверните. CSV-файл](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
 
      Теперь, когда у нас есть созданный набор данных, следует привязать данные к тесту.
 
@@ -189,11 +189,11 @@ ms.locfileid: "68871745"
 
     - Выберите действие пользовательского интерфейса и просмотрите соответствующее сопоставление элементов управления пользовательского интерфейса. Обратите внимание, как сопоставление соответствует коду, например, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Использование редактора закодированных тестов пользовательского интерфейса для поддержки при кодировании](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Использование редактора закодированных тестов пользовательского интерфейса для помощи с кодом](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - В окне свойств откройте **свойства поиска**. Значение **Имя** свойств поиска — это то, что обрабатывается в коде с помощью источника данных. Например, `SearchProperties` назначаются значения в первом столбце каждой строки данных: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. В рамках трех итераций этот тест изменит значение **Имя** для свойства поиска на 3, затем на 5 и, наконец, на 6.
 
-         ![Использование свойств поиска для поддержки при кодировании](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Использование свойств поиска для помощи в написании кода](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. Сохраните решение.
 
@@ -205,7 +205,7 @@ ms.locfileid: "68871745"
 
    **Руководство**
 
-   Дополнительные сведения см. в [разделе Тестирование непрерывной доставки с помощью Visual Studio 2012 – Глава 2. Модульное тестирование: Тестирование внутренней](http://go.microsoft.com/fwlink/?LinkID=255188) поставки и [тестирование для непрерывной доставки с помощью Visual Studio 2012 – Глава 5: Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196)
+   Дополнительные сведения см. в разделах [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188) и [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196).
 
 ## <a name="q--a"></a>Вопросы и ответы
 
@@ -234,8 +234,8 @@ ms.locfileid: "68871745"
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Вопрос: Можно ли использовать управляемые данными тесты в моем Windows Phoneном приложении?
- **Ответ.** Да. Закодированные тесты ИП на основе данных для Windows Phone определяются с помощью атрибута DataRow тестового метода. В следующем примере для x и y заданы значения 1 и 2 в первой итерации и значения -1 и -2 во второй итерации теста.
+### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Вопрос. Можно ли использовать управляемые данными тесты в моем приложении Windows Phone?
+ **О.** Да. Закодированные тесты ИП на основе данных для Windows Phone определяются с помощью атрибута DataRow тестового метода. В следующем примере для x и y заданы значения 1 и 2 в первой итерации и значения -1 и -2 во второй итерации теста.
 
 ```
 [DataRow(1, 2, DisplayName = "Add positive numbers")]
@@ -245,8 +245,8 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 ```
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Вопрос: Почему я не могу изменить код в файле UIMap. Designer?
- **Ответ.** Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. В этом примере и в большинстве случаев изменения кода, необходимые, чтобы тест использовал источник данных, можно делать в файле исходного кода теста (т. е. CodedUITest1.cs).
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>В. Почему не следует изменять файл UIMap.Designer?
+ **О**. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. В этом примере и в большинстве случаев изменения кода, необходимые, чтобы тест использовал источник данных, можно делать в файле исходного кода теста (т. е. CodedUITest1.cs).
 
  Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.
 

@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435099"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670596"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Разблокирование Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63435099"
 ### <a name="updating-stale-licenses"></a>Обновление утративших силу лицензий
  Вы могли увидеть следующее сообщение о том, что ваша лицензия просрочена в Visual Studio.
 
- ![Диалоговое окно сведений о пользователе Visual Studio](../ide/media/vs2013-userinfo.png "Сведения_о_пользователе_VS2013")
+ ![Диалоговое окно сведений о пользователе Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  Это сообщение указывает, что, хотя подписка по-прежнему действительна, маркер лицензии, используемый Visual Studio для обновления подписки, не был обновлен и устарел по одной из следующих причин:
 
@@ -72,5 +72,5 @@ ms.locfileid: "63435099"
 
 2. При наличии другой подписки, связанной с другой учетной записью, добавьте эту учетную запись в список "Все учетные записи" в левой части диалогового окна "Параметры учетной записи", щелкнув ссылку "Добавить учетную запись..." .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Вход в Visual Studio](../ide/signing-in-to-visual-studio.md)

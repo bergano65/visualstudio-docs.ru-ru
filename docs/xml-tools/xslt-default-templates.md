@@ -3,19 +3,19 @@ title: XSLT-шаблоны по умолчанию
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2910a9f81a8bf4bf1e5f25245ad9a3b02adffe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a764aa45eb74ba110d8b3b5965ede1e62bdadd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807703"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607785"
 ---
-# <a name="xslt-default-templates"></a>XSLT-шаблоны по умолчанию
+# <a name="xslt-default-templates"></a>Шаблоны XSLT по умолчанию
 
 Если в таблице стилей отсутствует совпадающее явное правило шаблона, то во время обработки XSLT используется шаблон по умолчанию. Шаблон по умолчанию, называемый также встроенным правилом шаблона, определен в разделе  5.8 спецификации W3C XSLT 1.0. Шаблон по умолчанию разрешает обработчику XSLT обрабатывать узел, даже если ему не соответствует ни одно явное правило шаблона. Однако, поскольку встроенное правило шаблона явно не определено в таблице стилей, это может привести к непредвиденным или сбивающим с толку результатам XSLT-преобразования.
 

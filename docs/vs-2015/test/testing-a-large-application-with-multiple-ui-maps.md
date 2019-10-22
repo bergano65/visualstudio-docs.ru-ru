@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871583"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672126"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Тестирование крупного приложения с несколькими картами пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этой статье описывается, как использовать закодированные тесты ИП при тестировании сложного приложения с помощью нескольких карт ИП.
 
- **Требования**
+ **Requirements**
 
 - Visual Studio Enterprise
 
-  При создании нового закодированного теста [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] пользовательского интерфейса платформа тестирования по умолчанию создает код для теста в классе [UIMap](/previous-versions/dd580454(v=vs.140)) . Дополнительные сведения о записи закодированных тестов пользовательского интерфейса см. в разделах [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) и [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md).
+  При создании нового закодированного теста пользовательского интерфейса платформа тестирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создает код для теста по умолчанию в классе [UIMap](/previous-versions/dd580454(v=vs.140)) . Дополнительные сведения о записи закодированных тестов пользовательского интерфейса см. в разделах [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) и [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md).
 
   Созданный для карты ИП код содержит класс для каждого объекта, с которым он взаимодействует. Для каждого созданного метода создается вспомогательный класс с параметрами метода. Если в приложении много объектов, страниц, форм и элементов управления, карта ИП может стать очень большой. Кроме того, если несколько пользователей работают над тестами, приложение становится громоздким из-за слишком большого файла карты ИП.
 

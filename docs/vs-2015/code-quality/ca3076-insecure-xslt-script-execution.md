@@ -1,21 +1,21 @@
 ---
-title: CA3076. Выполнение небезопасного скрипта XSLT | Документация Майкрософт
+title: 'CA3076: небезопасное выполнение скрипта XSLT | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a6b1efa5b5ee84092531a67421d03583afc3578
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 558e205fa37569bfa12d7b93f989d0f8ebabab43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680722"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669062"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076. Выполнение небезопасного скрипта XSLT
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: выполнение небезопасного скрипта XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -31,11 +31,11 @@ ms.locfileid: "65680722"
 ## <a name="rule-description"></a>Описание правила
  [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) — это стандарт консорциума W3C для преобразования данных XML. XSLT обычно используется для записи таблиц стилей в целях преобразования данных XML в другие форматы, такие как HTML, текст фиксированной длины, текст с разделителями-запятыми или другой формат XML. Хотя эта возможность по умолчанию запрещена, вы можете включить ее для проекта.
 
- Чтобы вам не нужно предоставлять уязвимая зона, это правило активируется каждый раз, когда XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Получает небезопасную комбинацию экземпляров <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, которая допускает обработку вредоносных скриптов.
+ Чтобы предотвратить доступ к уязвимой области, это правило срабатывает при каждом XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Получает небезопасные экземпляры сочетаний <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, что позволяет обрабатывать вредоносные скрипты.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-- Замените небезопасный аргумент XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> или с экземпляром, отключил документа функции и выполнением скриптов.
+- Замените небезопасный аргумент XsltSettings на XsltSettings. <xref:System.Xml.Xsl.XsltSettings.Default%2A> или с экземпляром, который отключил функцию документа и выполнение скрипта.
 
 - Замените аргумент <xref:System.Xml.XmlResolver> на NULL или экземпляр <xref:System.Xml.XmlSecureResolver> .
 

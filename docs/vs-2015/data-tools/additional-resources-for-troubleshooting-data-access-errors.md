@@ -1,5 +1,5 @@
 ---
-title: Дополнительные ресурсы для устранения неполадок данных с ошибками доступа к | Документация Майкрософт
+title: Дополнительные материалы по устранению ошибок доступа к данным | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -227,44 +227,37 @@ helpviewer_keywords:
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b304b31447c0a43e37a333516a3a79c71070bd4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143096"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673021"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. В следующей таблице перечислены данные ссылки на форумы в сети MSDN.  
-  
- [Элементы управления данными и привязка данных Windows Forms](http://go.microsoft.com/fwlink/?LinkId=160179)  
- Форум для вопросов и общих обсуждений доступ к данным в Windows Forms.  
-  
- [Форум по наборам данных ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180)  
- Форум для вопросов и общих обсуждений наборов данных.  
-  
- [ADO.NET — платформа Entity Framework и LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)  
- Форум для вопросов и общих обсуждений приложений Entity Framework и LINQ to Entities языка.  
-  
- [Форум по WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=160181)  
- Форум для вопросов и общих обсуждений служб данных.  
-  
- [Форум доступа к данным SQL Server](http://go.microsoft.com/fwlink/?LinkID=160184)  
- Форум для вопросов и общих обсуждений доступ к данным в Microsoft SQL Server.  
-  
- [Форум LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=160183)  
- Форум для вопросов и общих обсуждений Linq to SQL.  
-  
- [Форум по поставщиков данных ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182)  
- Форум для вопросов и общих обсуждений различных поставщиков данных .NET Framework.  
-  
- Сведения о том, как устранить неполадки подключения к SQL Server, см. в разделе [как устранение неполадок подключения к SQL Server Database Engine](http://go.microsoft.com/fwlink/?LinkID=246151).  
-  
-## <a name="see-also"></a>См. также  
+На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. В следующей таблице перечислены форумы, связанные с данными, доступные на сайте MSDN.
+
+ [Windows Forms элементы управления данными и привязка данных](http://go.microsoft.com/fwlink/?LinkId=160179) Содержит форум для вопросов и общих дискуссий по доступу к данным в Windows Forms.
+
+ [Форум по набору данных ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180) Содержит форум для вопросов и общих дискуссий по наборам данных.
+
+ [ADO.NET Entity Framework и LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) Форум для вопросов и общих дискуссий по Entity Frameworkным приложениям и языку LINQ to Entities.
+
+ [Форум WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=160181) Форум для вопросов и общих дискуссий по службам данных.
+
+ [SQL Server форуме по доступу к данным](http://go.microsoft.com/fwlink/?LinkID=160184) Содержит форум для вопросов и общих дискуссий по доступу к данным в Microsoft SQL Server.
+
+ [Форум LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=160183) Содержит форум для вопросов и общих обсуждений LINQ to SQL.
+
+ [Форум поставщиков данных ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182) Форум для вопросов и общих дискуссий по различным поставщикам данных .NET Framework.
+
+ Сведения об устранении неполадок подключения к SQL Server см. в разделе [Устранение неполадок подключения к ядро СУБД SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).
+
+## <a name="see-also"></a>См. также раздел
  [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

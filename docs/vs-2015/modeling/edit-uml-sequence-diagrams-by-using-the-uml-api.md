@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871884"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669712"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Редактирование схем последовательностей UML с помощью API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  Дополнительные сведения см. [в разделе Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ### <a name="getting-the-context"></a>Получение контекста
- При редактировании взаимодействия как части команды или обработчика жестов на схеме последовательностей вы можете получить ссылку на контекст. Например:
+ При редактировании взаимодействия как части команды или обработчика жестов на схеме последовательностей вы можете получить ссылку на контекст. Пример:
 
 ```
 [SequenceDesignerExtension]
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Обновление взаимодействия и его структуры
  При обновлении взаимодействия всегда нужно завершать операцию обновлением структуры с помощью одного из следующих методов:
 
-- `ISequenceDiagram.UpdateShapePositions()`корректирует позиции фигур, которые были недавно вставлены или перемещены, и соседние фигуры.
+- `ISequenceDiagram.UpdateShapePositions()` корректирует позиции фигур, которые были недавно вставлены или перемещены, и соседние фигуры.
 
 - `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` перерисовывает всю схему. Параметр можно использовать для задания изменения положения жизненных циклов и/или сообщений.
 
   Это особенно важно при вставке новых элементов или перемещении существующих элементов. Они не будут находиться в правильном положении на схеме, пока вы не выполните одну из этих операций. Одну из этих операций необходимо вызывать лишь однократно в конце последовательности изменений.
 
-  Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Например:
+  Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Пример:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>Создание сообщений
- Чтобы создать сообщение, необходимо определить точки вставки в исходном и целевом жизненных циклах. Например:
+ Чтобы создать сообщение, необходимо определить точки вставки в исходном и целевом жизненных циклах. Пример:
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,

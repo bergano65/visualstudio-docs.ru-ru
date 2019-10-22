@@ -1,5 +1,5 @@
 ---
-title: CA1506. Избегайте чрезмерного соединения классов | Документация Майкрософт
+title: 'CA1506: Избегайте чрезмерного связывания классов | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1506
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1c5a5e070892f7efc096b0f8e24952bb9d139969
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e85ac61e404ac9bc1afb9459716c2395233c5080
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189289"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607408"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506. Избегайте чрезмерной взаимозависимости классов
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: избегайте чрезмерного соединения классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|Категория|Microsoft.Maintainability|
+|Категория|Поддержка Microsoft.|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип или метод связана с другими типами.
+ Тип или метод связан с множеством других типов.
 
 ## <a name="rule-description"></a>Описание правила
  Данное правило измеряет взаимозависимость классов путем подсчета количества уникальных ссылок на типы, содержащихся в типе или методе.
 
- Типы и методы, которые с высокой степенью взаимозависимости классов может быть трудно поддерживать. Рекомендуется использовать типы и методы, которые характерны для низкой увязки и высокой связности.
+ Типы и методы, имеющие высокую степень взаимосвязей классов, могут быть трудно поддерживать. Рекомендуется использовать типы и методы, которые демонстрируют низкую связь и высокую степень связности.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить это нарушение, попробуйте изменить тип или метод, чтобы уменьшить количество типов, к которым она связана.
+ Чтобы устранить это нарушение, попытайтесь изменить тип или метод, чтобы уменьшить число типов, с которыми он связан.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Исключите это предупреждение, когда тип или метод считается обслуживаемым несмотря на большое количество зависимостей от других типов.
+ Исключите это предупреждение, если тип или метод по-прежнему считается обслуживаемым, несмотря на большое количество зависимостей от других типов.
 
-## <a name="see-also"></a>См. также
- [Предупреждения удобства обслуживания](../code-quality/maintainability-warnings.md) [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+## <a name="see-also"></a>См. также раздел
+ [Предупреждения о поддержке](../code-quality/maintainability-warnings.md) [, измеряющие сложность и удобство сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

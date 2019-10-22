@@ -14,20 +14,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ba9b0eb17a492bf1912281038ffc35732ece96d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589071"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Отладка элемента управления WebView в приложении UWP
 
- Для проверки и отладки элементов управления `WebView` в приложении среды выполнения Windows вы можете настроить Visual Studio на вложение отладчика скрипта при запуске приложения. Существует два способа для взаимодействия с `WebView` контролирует использование отладчика:
+ Для проверки и отладки элементов управления `WebView` в приложении среды выполнения Windows вы можете настроить Visual Studio на вложение отладчика скрипта при запуске приложения. Существует два способа взаимодействия с элементами управления `WebView` с помощью отладчика:
 
 - Откройте [Проводник DOM](../debugger/quickstart-debug-html-and-css.md) для экземпляра `WebView`, а затем проверьте элементы DOM, изучите проблемы со стилями CSS и протестируйте динамические отрисовываемые изменения в стилях.
 
-- Выберите веб-страницу или `iFrame`, отображаемые в экземпляре `WebView`, в качестве цели в окне [Консоль JavaScript](../debugger/javascript-console-commands.md), а затем осуществите взаимодействие с веб-страницей с помощью команд консоли. Консоль предоставляет доступ к текущему контексту выполнения скрипта.
+- Выберите веб-страницу или `iFrame`, отображаемые в экземпляре `WebView`, в качестве цели в окне [Консоль JavaScript](../debugger/javascript-console-commands.md?view=vs-2017), а затем осуществите взаимодействие с веб-страницей с помощью команд консоли. Консоль предоставляет доступ к текущему контексту выполнения скрипта.
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Добавление делений в код C#, Visual Basic, C++
 
@@ -37,7 +37,7 @@ ms.locfileid: "63402632"
 
 3. Выберите **Отладка**. В списке **Процесс приложения** выберите **Скрипт**.
 
-     ![Подключение отладчика сценариев](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
+     ![Подключение отладчика скриптов](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
 
 4. Для версий Visual Studio, не являющихся выпуском Express, отключите JIT-отладку, выбрав **Сервис > Параметры > Отладка > JIT** и отключив JIT-отладку для скрипта (необязательно).
 
@@ -60,7 +60,7 @@ ms.locfileid: "63402632"
 
      Проводник DOM, сопоставленный с `WebView`, отображается в Visual Studio в виде новой вкладки.
 
-5. Просматривать и изменять элементы live DOM и стили CSS, как описано в разделе [стилей CSS, отладка с использованием проводника DOM](/visualstudio/debugger/quickstart-debug-html-and-css).
+5. Просмотр и изменение динамических элементов DOM и стилей CSS, как описано в разделе [Отладка стилей CSS с помощью ПРОВОДНИКА DOM](/visualstudio/debugger/quickstart-debug-html-and-css).
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Использование окна консоли JavaScript для проверки и отладки элемента управления WebView
 
@@ -76,13 +76,13 @@ ms.locfileid: "63402632"
 
 5. В окне консоли выберите веб-страницу или `iFrame`, отображаемый элементом управления `WebView` в списке **Цель**.
 
-     ![Предназначенных для выбора в окне консоли JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
+     ![Выбор целевого объекта в окне консоли JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
     > С помощью консоли вы можете одновременно взаимодействовать с отдельным `WebView`, `iFrame`, контрактом отправки данных или рабочим веб-процессом. Каждый элемент требует отдельного экземпляра узла веб-платформы (WWAHost.exe). Одновременно можно взаимодействовать с одним узлом.
 
-6. Просмотреть и изменить переменные в приложении или используйте команды консоли, как описано в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [команды консоли JavaScript](../debugger/javascript-console-commands.md).
+6. Просмотр и изменение переменных в приложении или использование команд консоли, как описано в разделе [Краткое руководство. Отладка](../debugger/quickstart-debug-javascript-using-the-console.md) [команд консоли](../debugger/javascript-console-commands.md?view=vs-2017)JavaScript и JavaScript.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

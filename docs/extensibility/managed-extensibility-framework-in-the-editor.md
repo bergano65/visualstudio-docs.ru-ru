@@ -10,46 +10,46 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65731a905c157737ca4c01416f9d76fdecba30d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f376a43b6d59ba494db2ad4e5ef26b260d91f6ad
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351035"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632612"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework в редакторе
-Редактор создается с помощью компонентов Managed Extensibility Framework (MEF). Можно создавать собственные компоненты MEF для расширения редактора, а ваш код может использовать редактор компонентов, а также.
+Редактор строится с помощью компонентов Managed Extensibility Framework (MEF). Вы можете создавать собственные компоненты MEF для расширения редактора, а код может также использовать компоненты редактора.
 
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Общие сведения о Managed Extensibility Framework
- MEF — это библиотека .NET, которая позволяет добавлять и изменять компоненты приложения или компонента, который соответствует модели программирования MEF. В редакторе Visual Studio могут предоставить и использовать компоненты MEF.
+ MEF — это библиотека .NET, которая позволяет добавлять и изменять компоненты приложения или компонента, которые следуют за моделью программирования MEF. Редактор Visual Studio может предоставлять и использовать компоненты MEF.
 
- MEF, содержащийся в .NET Framework версии 4 *System.ComponentModel.Composition.dll* сборки.
+ MEF содержится в сборке .NET Framework версии 4 *System. ComponentModel. композиция. dll* .
 
  Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-### <a name="component-parts-and-composition-containers"></a>Компоненты и контейнеры композиций
- В компоненте — это класс или член класса, который можно выполнить один (или оба) из следующих:
+### <a name="component-parts-and-composition-containers"></a>Части компонентов и контейнеры композиции
+ Часть компонента — это класс или член класса, который может выполнять одно (или оба) из следующих действий:
 
-- Использовать другой компонент
+- Использование другого компонента
 
-- Быть использованы другим компонентом
+- Использовать другим компонентом
 
-  Например рассмотрим приложение о покупках, имеющий запись заказа, зависит от доступности данных продукта, предоставленное компонентом инвентаризации хранилища. В терминах MEF, часть инвентаризации можно *Экспорт* данные о доступности продукта и может часть запись заказа *импорта* данные. Ввода в порядке, а часть инвентаризации не нужно знать друг о друге; *контейнер композиции* (предоставляемое ведущего приложения) отвечает за обслуживание набор экспортов и разрешении экспорты и импортирует.
+  Например, рассмотрим приложение для покупок, которое имеет компонент записи заказа, зависящий от данных о доступности продукта, предоставляемых компонентом складских запасов. В терминах MEF компонент инвентаризации может *экспортировать* данные о доступности продуктов, а часть заказа может *импортировать* данные. Часть записи заказа и часть инвентаризации не должны быть осведомлены о них. *контейнер композиции* (предоставляемый ведущим приложением) отвечает за поддержание набора экспортов и разрешение экспорта и импорта.
 
-  Контейнер композиции, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, обычно принадлежит узел. Хранит контейнер композиции *каталога* экспортированного составных частей.
+  Контейнер композиции, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, обычно принадлежит узлу. Контейнер композиции хранит *Каталог* экспортированных частей компонентов.
 
-### <a name="export-and-import-component-parts"></a>Экспорт и импорт компонентов
- Вы можете экспортировать любые функции, до тех пор, пока она реализуется как открытый класс или открытый член класса (свойство или метод). У вас для получения вашего компонента из <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Вместо этого необходимо добавить <xref:System.ComponentModel.Composition.ExportAttribute> атрибут к классу или член класса, который вы хотите экспортировать. Этот атрибут указывает *контракта* какие другим компонентом часть можно импортировать функциональные возможности по работе.
+### <a name="export-and-import-component-parts"></a>Экспорт и импорт частей компонентов
+ Можно экспортировать любую функциональность, если она реализована как открытый класс или открытый член класса (свойство или метод). Не требуется создавать часть компонента из <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Вместо этого необходимо добавить атрибут <xref:System.ComponentModel.Composition.ExportAttribute> в класс или член класса, который требуется экспортировать. Этот атрибут указывает *контракт* , по которому другая часть компонента может импортировать ваши функции.
 
-### <a name="the-export-contract"></a>Экспорт контракта
- <xref:System.ComponentModel.Composition.ExportAttribute> Определяет сущность (класс, интерфейс или структура), который выполняется экспорт. Как правило атрибут export принимает параметр, указывающий тип экспорта.
+### <a name="the-export-contract"></a>Экспортный контракт
+ @No__t_0 определяет экспортируемый объект (класс, интерфейс или структура). Как правило, атрибут Export принимает параметр, указывающий тип экспорта.
 
 ```
 [Export(typeof(ContentTypeDefinition))]
 class TestContentTypeDefinition : ContentTypeDefinition {   }
 ```
 
- По умолчанию <xref:System.ComponentModel.Composition.ExportAttribute> атрибута определяет контракт, который является типом класса экспорт.
+ По умолчанию атрибут <xref:System.ComponentModel.Composition.ExportAttribute> определяет контракт, который является типом экспортируемого класса.
 
 ```
 [Export]
@@ -58,9 +58,9 @@ class TestContentTypeDefinition : ContentTypeDefinition {   }
 class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
 ```
 
- В примере, значение по умолчанию `[Export]` атрибут эквивалентен `[Export(typeof(TestAdornmentLayerDefinition))]`.
+ В этом примере атрибут `[Export]` по умолчанию эквивалентен `[Export(typeof(TestAdornmentLayerDefinition))]`.
 
- Можно также экспортировать свойства или метода, как показано в следующем примере.
+ Можно также экспортировать свойство или метод, как показано в следующем примере.
 
 ```
 [Export]
@@ -69,38 +69,38 @@ class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
 public AdornmentLayerDefinition scarletLayerDefinition;
 ```
 
-### <a name="import-a-mef-export"></a>Импорт и экспорт MEF
- Если вы хотите использовать экспорт MEF, необходимо знать контракта (обычно тип), по которому он был экспортирован и добавьте <xref:System.ComponentModel.Composition.ImportAttribute> атрибут, имеющий это значение. По умолчанию атрибут import принимает один параметр, который является типом класса, который изменяет его. В следующих строках кода импорта <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> типа.
+### <a name="import-a-mef-export"></a>Импорт экспорта MEF
+ Если требуется использовать экспорт MEF, необходимо получить сведения о контракте (обычно это тип), по которому он был экспортирован, и добавить атрибут <xref:System.ComponentModel.Composition.ImportAttribute>, имеющий это значение. По умолчанию атрибут import принимает один параметр, который является типом класса, который он изменяет. Следующие строки кода импортируют тип <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>.
 
 ```
 [Import]
 internal IClassificationTypeRegistryService ClassificationRegistry;
 ```
 
-## <a name="get-editor-functionality-from-a-mef-component-part"></a>Получение функциональных из части компонентов MEF
- Если существующий код входит в состав компонентов MEF, можно использовать MEF-метаданных для использования редактора компонентов.
+## <a name="get-editor-functionality-from-a-mef-component-part"></a>Получение функциональных возможностей редактора из части компонента MEF
+ Если существующий код является частью компонента MEF, можно использовать метаданные MEF для использования частей компонента редактора.
 
-#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Для использования функциональных от части компонентов MEF
+#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Использование функциональных возможностей редактора из части компонента MEF
 
-1. Добавьте ссылки на *System.Composition.ComponentModel.dll*, в глобальный кэш сборок (GAC), и к сборкам редактора.
+1. Добавьте ссылки на *System. композиция. ComponentModel. dll*, который находится в глобальном кэше сборок (GAC), и в сборки редактора.
 
-2. Добавьте соответствующую операторы using.
+2. Добавьте соответствующие директивы using.
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3. Добавление `[Import]` атрибут интерфейсу службы, следующим образом.
+3. Добавьте атрибут `[Import]` в интерфейс службы, как показано ниже.
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4. Когда вы получили службу, вы можете использовать один из его компонентов.
+4. После получения службы можно использовать любой из ее компонентов.
 
-5. При компиляции сборки, поместите его *... \Common7\IDE\Components\* папке установки Visual Studio.
+5. После компиляции сборки вставьте ее в *.. \Common7\IDE\Components \* папка установки Visual Studio.
 
 ## <a name="see-also"></a>См. также
-- [Точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md)
+- [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

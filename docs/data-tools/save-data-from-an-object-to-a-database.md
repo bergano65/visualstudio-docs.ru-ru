@@ -10,71 +10,71 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b15776b67ded2fc813f1b8bcf82d8aa91f212346
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715029"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648213"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 
-Можно сохранить данные в объекты в базе данных путем передачи значения из объекта в один из методов DBDirect адаптера таблицы (например, `TableAdapter.Insert`). Дополнительные сведения см. в разделе [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+Можно сохранить данные в объектах в базе данных, передав значения из объекта в один из методов DBDirect адаптера таблицы (например, `TableAdapter.Insert`). Дополнительные сведения см. в разделе [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Для сохранения данных из коллекции объектов, циклический перебор коллекции объектов (например, для следующего цикла) и отправки значений для каждого объекта в базу данных с помощью одного из TableAdapter `DBDirect` методы.
+Чтобы сохранить данные из коллекции объектов, пройдите через коллекцию объектов (например, цикл For-Next) и отправьте значения для каждого объекта в базу данных с помощью одного из методов `DBDirect` TableAdapter.
 
-По умолчанию `DBDirect` методы создаются на TableAdapter, который может быть запущен непосредственно в базе данных. Эти методы можно вызывать напрямую и не требуют <xref:System.Data.DataSet> или <xref:System.Data.DataTable> объектов для согласования изменений для отправки обновлений в базу данных.
+По умолчанию в TableAdapter создаются `DBDirect` методы, которые могут выполняться непосредственно в базе данных. Эти методы можно вызывать напрямую и не требовать <xref:System.Data.DataSet> или <xref:System.Data.DataTable> объектов для согласования изменений для отправки обновлений в базу данных.
 
 > [!NOTE]
-> При настройке адаптера таблицы, основного запроса должно содержать достаточно информации для `DBDirect` создания методов. Например, если он настроен для запроса данных из таблицы, не является первичным ключевым столбцом, не вызывает `DBDirect` методы.
+> При настройке TableAdapter основной запрос должен предоставить достаточно информации для создания `DBDirect` методов. Например, если адаптер таблицы настроен для запроса данных из таблицы, для которой не определен первичный ключевой столбец, то методы `DBDirect` не создаются.
 
 |Метод TableAdapter DBDirect|Описание|
 | - |-----------------|
-|`TableAdapter.Insert`|Добавляет новые записи в базу данных и позволяет передавать значения отдельных столбцов в качестве параметров метода.|
-|`TableAdapter.Update`|Обновляет существующие записи в базе данных. `Update` Метод принимает исходные и новые значения столбцов как параметры метода. Исходные значения используются для обнаружения исходной записи, а новые значения используются для обновления этой записи.<br /><br /> `TableAdapter.Update` Метод также используется для согласования изменений в наборе данных в базе данных, используя <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, или массив <xref:System.Data.DataRow>s как параметры метода.|
-|`TableAdapter.Delete`|Удаляет существующие записи из базы данных, основанный на исходных значениях столбца, переданный в качестве параметров метода.|
+|`TableAdapter.Insert`|Добавляет новые записи в базу данных и позволяет передавать отдельные значения столбцов в качестве параметров метода.|
+|`TableAdapter.Update`|Обновляет существующие записи в базе данных. Метод `Update` принимает исходные и новые значения столбцов в качестве параметров метода. Исходные значения используются для нахождение исходной записи, а для обновления этой записи используются новые значения.<br /><br /> Метод `TableAdapter.Update` также используется для согласования изменений в наборе данных с базой данных путем создания <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> или массива <xref:System.Data.DataRow>s в качестве параметров метода.|
+|`TableAdapter.Delete`|Удаляет существующие записи из базы данных на основе значений исходных столбцов, переданных в качестве параметров метода.|
 
-## <a name="to-save-new-records-from-an-object-to-a-database"></a>Для сохранения новых записей из объекта в базе данных
+## <a name="to-save-new-records-from-an-object-to-a-database"></a>Сохранение новых записей из объекта в базу данных
 
-- Создайте записи путем передачи значения `TableAdapter.Insert` метод.
+- Создайте записи, передав значения в метод `TableAdapter.Insert`.
 
-     В следующем примере создается новая запись клиента в `Customers` таблицы, передав значения в `currentCustomer` объект `TableAdapter.Insert` метод.
+     В следующем примере создается новая запись клиента в `Customers` таблице путем передачи значений в объект `currentCustomer` в метод `TableAdapter.Insert`.
 
      [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
      [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_1.vb)]
 
-## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Чтобы обновить существующие записи из объекта в базе данных
+## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Обновление существующих записей из объекта в базу данных
 
-- Изменить записи путем вызова `TableAdapter.Update` метод, передав новые значения для обновления записи и передачи в исходные значения для поиска записи.
+- Измените записи, вызвав метод `TableAdapter.Update`, передав новые значения для обновления записи и передав исходные значения для нахождения записи.
 
     > [!NOTE]
-    > Необходимо, чтобы сохранить исходные значения для передачи их в объект `Update` метод. В этом примере используются свойства с `orig` префикс для хранения оригинальных значений.
+    > Объекту необходимо сохранить исходные значения, чтобы передать их в метод `Update`. В этом примере используются свойства с префиксом `orig` для хранения исходных значений.
 
-     Следующий пример обновляет существующую запись в `Customers` таблицы путем передачи новых и исходные значения в `Customer` объект `TableAdapter.Update` метод.
+     В следующем примере существующая запись обновляется в `Customers` таблице путем передачи новых и исходных значений в объект `Customer` в метод `TableAdapter.Update`.
 
      [!code-csharp[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
      [!code-vb[VbRaddataSaving#24](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_2.vb)]
 
-## <a name="to-delete-existing-records-from-a-database"></a>Для удаления существующих записей из базы данных
+## <a name="to-delete-existing-records-from-a-database"></a>Удаление существующих записей из базы данных
 
-- Удалить записи путем вызова `TableAdapter.Delete` и передав исходные значения для поиска записи.
+- Удалите записи, вызвав метод `TableAdapter.Delete` и передав исходные значения для нахождения записи.
 
     > [!NOTE]
-    > Необходимо, чтобы сохранить исходные значения для передачи их в объект `Delete` метод. В этом примере используются свойства с `orig` префикс для хранения оригинальных значений.
+    > Объекту необходимо сохранить исходные значения, чтобы передать их в метод `Delete`. В этом примере используются свойства с префиксом `orig` для хранения исходных значений.
 
-     Следующий пример удаляет запись из `Customers` таблицы, передав исходные значения в `Customer` объект `TableAdapter.Delete` метод.
+     В следующем примере удаляется запись из таблицы `Customers` путем передачи исходных значений из объекта `Customer` в метод `TableAdapter.Delete`.
 
      [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
-## <a name="net-security"></a>Безопасность .NET
+## <a name="net-security"></a>Безопасность в .NET
 
-Необходимо иметь разрешение на выполнение выбранного `INSERT`, `UPDATE`, или `DELETE` для таблицы в базе данных.
+Необходимо иметь разрешение на выполнение выбранных `INSERT`, `UPDATE` или `DELETE` для таблицы в базе данных.
 
 ## <a name="see-also"></a>См. также
 

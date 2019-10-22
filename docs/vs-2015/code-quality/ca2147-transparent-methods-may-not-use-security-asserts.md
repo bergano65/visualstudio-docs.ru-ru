@@ -1,5 +1,5 @@
 ---
-title: CA2147. Прозрачные методы не могут использовать безопасности утверждает | Документация Майкрософт
+title: 'CA2147: прозрачные методы не могут использовать утверждения безопасности | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - SecurityTransparentCodeShouldNotAssert
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e8ac2e907e3c13a019e5f534faf86ae425ae30a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2bd0042b6f9a8e46939ab34c86294218fb79f4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142642"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610160"
 ---
-# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147. Прозрачные методы могут не использовать утверждения безопасности
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: прозрачные методы могут не использовать утверждения безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -34,34 +34,34 @@ ms.locfileid: "68142642"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Код, помеченный как <xref:System.Security.SecurityTransparentAttribute> не предоставляется разрешение на утверждение.
+ Коду, помеченному как <xref:System.Security.SecurityTransparentAttribute>, не предоставлены достаточные разрешения для утверждения.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило анализирует все методы и типы в сборке, которая является либо 100% прозрачной, либо смешанной прозрачной и критической и пометить декларативное и императивное использование <xref:System.Security.CodeAccessPermission.Assert%2A>.
+ Это правило анализирует все методы и типы в сборке, которая имеет значение 100% прозрачное или смешанное прозрачное или критическое, а также помечает любое декларативное или императивное использование <xref:System.Security.CodeAccessPermission.Assert%2A>.
 
- Во время выполнения, все вызовы <xref:System.Security.CodeAccessPermission.Assert%2A> из прозрачного кода приведет к <xref:System.InvalidOperationException> исключение. Это может произойти в обе сборки, прозрачные на 100%, а также в смешанных прозрачной и критической сборок, где метод или тип объявляется прозрачным, но включает декларативное и императивное Assert.
+ Во время выполнения любые вызовы <xref:System.Security.CodeAccessPermission.Assert%2A> из прозрачного кода приведут к возникновению <xref:System.InvalidOperationException>. Это может происходить как в 100% прозрачных сборках, так и в смешанных прозрачных и критических сборках, где метод или тип объявлен как прозрачный, но включает декларативное или императивное утверждение.
 
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 появилась функция с именем *прозрачности*. Отдельные методы, поля, интерфейсы, классы и типы могут быть либо прозрачный или.
+ В [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2,0 появилась функция с именем *прозрачность*. Отдельные методы, поля, интерфейсы, классы и типы могут быть либо прозрачными, либо критически важными.
 
- Прозрачный код не разрешено повышать уровень привилегий безопасности. Таким образом все разрешения, предоставленные или запрашиваемые автоматически передаются через код вызывающего объекта или узла домена приложения. Повышение примеры операторы Assert, требования LinkDemand, SuppressUnmanagedCode, и `unsafe` кода.
+ Прозрачный код не может повышать привилегии безопасности. Таким образом, любые разрешения, предоставленные или запрошенные им, автоматически передаются через код вызывающему или ведущему домену приложения. Примеры повышения прав включают утверждения, LinkDemands, Суппрессунманажедкоде и код `unsafe`.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить эту проблему, либо пометить код, который вызывает Assert с <xref:System.Security.SecurityCriticalAttribute>, или удалить Assert.
+ Чтобы устранить эту проблему, отметьте код, который вызывает Assert, на <xref:System.Security.SecurityCriticalAttribute> или удалите утверждение.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте сообщение из этого правила.
+ Не отключайте сообщение от этого правила.
 
 ## <a name="example"></a>Пример
- Этот код завершится ошибкой, если `SecurityTestClass` прозрачен, когда `Assert` вызывает метод <xref:System.InvalidOperationException>.
+ Этот код завершится ошибкой, если `SecurityTestClass` является прозрачным, когда метод `Assert` создает исключение <xref:System.InvalidOperationException>.
 
  [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2147.transparentmethodsmustnotusesecurityasserts/cs/ca2147 - transparentmethodsmustnotusesecurityasserts.cs#1)]
 
 ## <a name="example"></a>Пример
- Один из вариантов — Просмотр кода SecurityTransparentMethod в следующем примере и, если метод считается безопасным для повышения прав, пометьте SecurityTransparentMethod с secure критически важным для этого необходимо, подробные, исчерпывающие и без ошибок безопасности аудита должна быть выполнена на метод вместе с вызовами, возникающих в рамках, чтобы метод Assert:
+ Один из вариантов — код, приведенный в примере ниже, и если метод считается безопасным для повышения прав, пометьте Секурититранспарентмесод с защитой от критической важности, которая требует подробной, полной и безошибочной безопасности. Аудит должен выполняться для метода вместе с любыми вызовами, происходящими в методе в утверждении.
 
  [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SecurityTransparentCode2/cs/FxCop.Security.SecurityTransparentCode2.cs#1)]
 
- Другой вариант — удалить Assert из кода и разрешить все последующие файлы потока требования разрешение ввода-вывода за пределы метода SecurityTransparentMethod вызывающему. В результате проверок безопасности. В этом случае аудит безопасности не нужен, так как запросы разрешений будут переданы вызывающему объекту или домена приложения. Запросы разрешений осуществляется посредством политики безопасности, среды размещения и код разрешений.
+ Кроме того, можно удалить утверждение из кода и позволить всем последующим запросам на разрешение ввода-вывода выполнять потоки, расположенные за пределами Секурититранспарентмесод, на вызывающий объект. Это обеспечивает проверку безопасности. В этом случае аудит безопасности не требуется, так как требования к разрешениям будут передаваться вызывающему и (или) домену приложения. Требования к разрешениям тесно контролируются с помощью политик безопасности, среды размещения и разрешений исходного кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Предупреждения безопасности](../code-quality/security-warnings.md)

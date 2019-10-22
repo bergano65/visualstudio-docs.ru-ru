@@ -2,26 +2,26 @@
 title: Директива Assembly T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c08518d3bcff8d91cc8fabebe7b858c5880ce5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422956"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671036"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 
-В Visual Studio во время разработки текстового шаблона `assembly` директива загружает сборку, чтобы код шаблона можно использовать ее типы. Действует аналогично добавлению ссылки на сборку в проект Visual Studio.
+В текстовом шаблоне времени разработки Visual Studio директива `assembly` загружает сборку, чтобы код шаблона мог использовать его типы. Этот результат аналогичен добавлению ссылки на сборку в проекте Visual Studio.
 
- Общие сведения о создании текстовых шаблонов, см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
+ Общие сведения о создании текстовых шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавить нужные сборки **ссылки** проекта Visual Studio.
+> В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавьте необходимые сборки в **ссылки** проекта Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Использование директивы Assembly
  Синтаксис директивы таков:
@@ -32,17 +32,17 @@ ms.locfileid: "63422956"
 
  Имя сборки должно быть одним из следующих:
 
-- Строгое имя сборки в глобальном кэше сборок, такое как `System.Xml.dll`. Кроме того, можно использовать полную форму, такую как `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Дополнительные сведения см. в разделе <xref:System.Reflection.AssemblyName>.
+- Строгое имя сборки в глобальном кэше сборок, такое как `System.Xml.dll`. Кроме того, можно использовать полную форму, такую как `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Для получения дополнительной информации см. <xref:System.Reflection.AssemblyName>.
 
 - абсолютный путь к сборке;
 
-  Можно использовать `$(variableName)` синтаксис, чтобы ссылаться на переменные Visual Studio, такие как `$(SolutionDir)`, и `%VariableName%` для ссылки на переменные среды. Пример:
+  Синтаксис `$(variableName)` можно использовать для ссылки на переменные среды Visual Studio, такие как `$(SolutionDir)`, а также для `%VariableName%` ссылок на них. Пример:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого, включите необходимые ссылки в **ссылки** раздел проекта Visual Studio. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого включите необходимые ссылки в раздел **References** проекта Visual Studio. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Стандартные сборки
  Следующие сборки загружаются автоматически, поэтому для них не нужно создавать директивы сборки:
@@ -63,8 +63,8 @@ ms.locfileid: "63422956"
 
 - Сборка, содержащая DSL.
 
-## <a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio
- Макросы Visual Studio, например $ (solutiondir) не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.
+## <a name="msbuild"></a>Использование свойств проекта в MSBuild и Visual Studio
+ Макросы Visual Studio, такие как $ (SolutionDir), не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.
 
  Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myLibFolder`.
 
@@ -88,6 +88,6 @@ ms.locfileid: "63422956"
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Директива Include T4](../modeling/t4-include-directive.md)

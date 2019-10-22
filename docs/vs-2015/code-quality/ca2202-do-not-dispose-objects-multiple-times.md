@@ -1,5 +1,5 @@
 ---
-title: CA2202. Не удаляйте объекты несколько раз | Документация Майкрософт
+title: 'CA2202: не удалять объекты несколько раз | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,45 +12,45 @@ helpviewer_keywords:
 - CA2202
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3dfe606e3083c937db3ba3d1e6cd49d34bace853
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e0be715d8aea84fac53ea2a796e71850b961730c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697972"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667404"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202. Не ликвидируйте объекты несколько раз
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: не удаляйте объекты несколько раз
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|DoNotDisposeObjectsMultipleTimes|
+|TypeName|донотдиспосеобжектсмултиплетимес|
 |CheckId|CA2202|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Реализация метода содержит пути кода, которые могут стать причиной многократного вызова <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> или эквивалентного метода Dispose, например, метода Close() для некоторых типов, на тот же объект.
+ Реализация метода содержит пути кода, которые могут вызвать <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> или эквивалент Dispose, например метод Close () для некоторых типов, для одного и того же объекта.
 
 ## <a name="rule-description"></a>Описание правила
- Объект правильно реализована <xref:System.IDisposable.Dispose%2A> метод может вызываться несколько раз без вызова исключения. Тем не менее, это не гарантируется и для предотвращения создания <xref:System.ObjectDisposedException?displayProperty=fullName> не следует вызывать <xref:System.IDisposable.Dispose%2A> более чем один раз для объекта.
+ Правильно реализованный метод <xref:System.IDisposable.Dispose%2A> можно вызывать несколько раз без возникновения исключения. Однако это не гарантируется, и во избежание создания <xref:System.ObjectDisposedException?displayProperty=fullName> не следует вызывать <xref:System.IDisposable.Dispose%2A> более одного раза для объекта.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2000: Ликвидировать объекты перед потерей области](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000: удалите объекты до того, как будет потеряна область действия](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, измените реализацию таким образом, независимо от того, путь кода, <xref:System.IDisposable.Dispose%2A> вызывается только один раз для объекта.
+ Чтобы устранить нарушение этого правила, измените реализацию так, чтобы независимо от пути кода <xref:System.IDisposable.Dispose%2A> вызывается только один раз для объекта.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Даже если <xref:System.IDisposable.Dispose%2A> для объекта известно, можно безопасно вызывать несколько раз, его реализация может измениться в будущем.
+ Для этого правила отключать вывод предупреждений не следует. Даже если <xref:System.IDisposable.Dispose%2A> для объекта известно, что они безопасно вызываемы несколько раз, реализация может измениться в будущем.
 
 ## <a name="example"></a>Пример
- Вложенные `using` инструкций (`Using` в Visual Basic) может вызвать нарушения CA2202 предупреждения. Если ресурс IDisposable вложенного внутреннего `using` инструкция содержит ресурс внешнего `using` инструкции `Dispose` метод вложенного ресурса освобождает содержимом ресурсе. При возникновении такой ситуации, `Dispose` метод, внешнего `using` оператор пытается ликвидировать свой ресурс еще раз.
+ Вложенные инструкции `using` (`Using` в Visual Basic) могут привести к нарушениям предупреждения CA2202. Если ресурс IDisposable вложенной внутренней `using` содержит ресурс внешней инструкции `using`, метод `Dispose` вложенного ресурса освобождает автономный ресурс. При возникновении такой ситуации метод `Dispose` внешней инструкции `using` пытается освободить свой ресурс во второй раз.
 
- В следующем примере <xref:System.IO.Stream> объект, создаваемый во внешнем инструкцией освобождается в конце внутреннего использования оператора в методе Dispose <xref:System.IO.StreamWriter> , содержащий `stream` объекта. В конце внешний `using` инструкции `stream` объект освобождается во второй раз. Второй выпуск является нарушением CA2202.
+ В следующем примере объект <xref:System.IO.Stream>, созданный во внешнем операторе using, освобождается в конце внутреннего оператора using в методе Dispose объекта <xref:System.IO.StreamWriter>, который содержит объект `stream`. В конце внешней инструкции `using` объект `stream` освобождается второй раз. Второй выпуск является нарушением CA2202.
 
 ```
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -63,7 +63,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 ```
 
 ## <a name="example"></a>Пример
- Чтобы устранить эту проблему, используйте `try` / `finally` блока вместо внешнего `using` инструкции. В `finally` block, убедитесь, что `stream` ресурс не имеет значение null.
+ Чтобы устранить эту проблему, используйте блок `try` / `finally`, а не внешний оператор `using`. В блоке `finally` убедитесь, что ресурс `stream` не имеет значение null.
 
 ```
 Stream stream = null;
@@ -83,5 +83,5 @@ finally
 }
 ```
 
-## <a name="see-also"></a>См. также
- <xref:System.IDisposable?displayProperty=fullName> [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+## <a name="see-also"></a>См. также раздел
+ [шаблон удаления](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb) <xref:System.IDisposable?displayProperty=fullName>

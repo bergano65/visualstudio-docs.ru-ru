@@ -11,37 +11,37 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949788"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650535"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Разработка приложений с конструктором рабочих процессов
 
-В конструкторе рабочих процессов — это визуальный конструктор и отладчик для графического создания и отладки [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) приложений (WF) в Visual Studio. Он позволяет составлять сложные приложения рабочего процесса, библиотеки действий или службы Windows Communication Foundation (WCF) с помощью шаблонов и конструкторов действий.
+Конструктор рабочих процессов является визуальным конструктором и отладчиком для графической разработки и отладки приложений [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) в Visual Studio. Она позволяет создать составное приложение рабочего процесса, библиотеку действий или службу Windows Communication Foundation (WCF) с помощью шаблонов и конструкторов действий.
 
 ## <a name="install-windows-workflow-foundation"></a>Установка Windows Workflow Foundation
 
-Чтобы использовать шаблоны проектов рабочих процессов в Visual Studio, сначала нужно установить **Windows Workflow Foundation** компонента.
+Чтобы использовать шаблоны проектов рабочих процессов в Visual Studio, сначала установите компонент **Windows Workflow Foundation** .
 
-1. Откройте установщик Visual Studio. Быстро открыть его, выбрав **средства** > **получить средства и компоненты** в Visual Studio.
+1. Откройте Visual Studio Installer. Чтобы быстро открыть его, выберите **инструменты**  > **получить средства и функции** в Visual Studio.
 
-1. В Visual Studio Installer, выберите **отдельные компоненты** вкладки.
+1. В Visual Studio Installer выберите вкладку **отдельные компоненты** .
 
-1. Прокрутите вниз до раздела **действия разработки** категории, а затем выберите **Windows Workflow Foundation** компонента.
+1. Прокрутите вниз до категории **действия разработки** и выберите компонент **Windows Workflow Foundation** .
 
    ![Компонент Windows Workflow Foundation для Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Нажмите кнопку **Изменить**.
 
-   Visual Studio устанавливает **Windows Workflow Foundation** компонента.
+   Visual Studio устанавливает компонент **Windows Workflow Foundation** .
 
 ## <a name="see-also"></a>См. также
 

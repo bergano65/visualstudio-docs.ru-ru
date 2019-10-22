@@ -1,5 +1,5 @@
 ---
-title: CA1016. Помечать сборки атрибутом AssemblyVersionAttribute | Документация Майкрософт
+title: 'CA1016: Пометка сборок с помощью AssemblyVersionAttribute | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - MarkAssembliesWithAssemblyVersion
 ms.assetid: 4340aed8-d92b-4cde-a398-cb6963c6da5a
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 196ebcf2cea8cedfee14d1bb808bc7b68532786b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1498624d4f79a60854a624ee5c4053a3343f515
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704240"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663172"
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016. Пометьте сборки с помощью AssemblyVersionAttribute
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: помечать сборки атрибутом AssemblyVersionAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Сборка имеет номер версии.
+ Сборка не имеет номера версии.
 
 ## <a name="rule-description"></a>Описание правила
- Удостоверение сборки представляет собой следующую информацию:
+ Удостоверение сборки состоит из следующих сведений.
 
 - Имя сборки
 
@@ -49,17 +49,17 @@ ms.locfileid: "65704240"
   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] использует номер версии для уникального обозначения сборки и для привязки к типам в сборках со строгими именами. Номер версии используется наряду с политикой версий и издателя. По умолчанию приложения выполняются только с версией сборки, которая использовалась для их построения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, добавьте номер версии сборки с помощью <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> атрибута. См. следующий пример.
+ Чтобы устранить нарушение этого правила, добавьте номер версии в сборку с помощью атрибута <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>. См. следующий пример.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила для сборок, используемых сторонними производителями или в рабочей среде.
+ Не отключайте предупреждение из этого правила для сборок, используемых сторонними компаниями или в рабочей среде.
 
 ## <a name="example"></a>Пример
- В следующем примере показано сборку, которая имеет <xref:System.Reflection.AssemblyVersionAttribute> применен атрибут.
+ В следующем примере показана сборка с примененным атрибутом <xref:System.Reflection.AssemblyVersionAttribute>.
 
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cpp/FxCop.Design.AssembliesVersion.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesVersion#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cs/FxCop.Design.AssembliesVersion.cs#1)]
  [!code-vb[FxCop.Design.AssembliesVersion#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/vb/FxCop.Design.AssembliesVersion.vb#1)]
 
-## <a name="see-also"></a>См. также
- [Управление версиями сборок](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [как: Создание политики издателя](https://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)
+## <a name="see-also"></a>См. также раздел
+ [Управление версиями сборки](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [руководство. Создание политики издателя](https://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)

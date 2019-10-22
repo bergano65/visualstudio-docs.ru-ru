@@ -8,15 +8,15 @@ helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d00c520f75869e6cf886074c482575f1170e923a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679531"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667130"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий построения в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "65679531"
 
 - Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- Visual C# и F#--[как: Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
+- Visual C# и F# — [Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++ — [Указание событий сборки ](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -55,5 +55,5 @@ ms.locfileid: "65679531"
     > [!NOTE]
     > Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
-## <a name="see-also"></a>См. также
- [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) ["диалогового окна командной строки события и после сборки события перед сборкой"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [специальные знаки MSBuild](../msbuild/msbuild-special-characters.md) [Пошаговое руководство: Сборка приложения](../ide/walkthrough-building-an-application.md)
+## <a name="see-also"></a>См. также раздел
+ [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) ["диалогового окна командной строки события и после сборки события перед сборкой"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [специальные знаки MSBuild](../msbuild/msbuild-special-characters.md) [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)

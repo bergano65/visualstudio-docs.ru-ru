@@ -11,15 +11,15 @@ helpviewer_keywords:
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 46250ad394a2fde1e7cde6f30fab9dc6d7fb579c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 366567a13ad23ab19ffd88f19997b92025abe952
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615647"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671081"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Пошаговое руководство. Создание простой службы WCF в Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ ms.locfileid: "65615647"
 
 2. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#** и щелкните **WCF** и **Библиотека службы WCF**. Нажмите кнопку **ОК**, чтобы открыть проект.
 
-     ![Проект библиотеки служб WCF](../data-tools/media/wcf1.PNG "wcf1")
+     ![Проект библиотеки службы WCF](../data-tools/media/wcf1.PNG "wcf1")
 
     > [!NOTE]
     > Будет создана работающая служба, которую можно протестировать и использовать. Следующие два действия демонстрируют, как можно изменить метод по умолчанию для использования другого типа данных. В реальном приложении необходимо также добавить к службе ее специальные функции.
 
-3. ![В файле IService1](../data-tools/media/wcf2.png "wcf2")
+3. ![Файл IService1](../data-tools/media/wcf2.png "wcf2")
 
-     В **обозревателе решений**, дважды щелкните файл IService1.vb или IService1.cs и найдите следующую строку:
+     В **Обозреватель решений**дважды щелкните IService1. vb или IService1.cs и найдите следующую строку:
 
      [!code-csharp[WCFWalkthrough#4](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1_2.cs#4)]
      [!code-vb[WCFWalkthrough#4](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1_2.vb#4)]
@@ -57,7 +57,7 @@ ms.locfileid: "65615647"
 
 4. ![Файл Service1](../data-tools/media/wcf3.png "wcf3")
 
-     В **обозревателе решений**, дважды щелкните файл Service1.vb или Service1.cs и найдите следующую строку:
+     В **Обозреватель решений**дважды щелкните Service1. vb или Service1.cs и найдите следующую строку:
 
      [!code-csharp[WCFWalkthrough#5](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1_2.cs#5)]
      [!code-vb[WCFWalkthrough#5](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1_2.vb#5)]
@@ -71,17 +71,17 @@ ms.locfileid: "65615647"
 
 #### <a name="to-test-a-wcf-service"></a>Создание простой службы WCF
 
-1. Нажмите клавишу **F5**, чтобы запустить службу. Объект **тестовый клиент WCF** открывается форма, которая загрузит службу.
+1. Нажмите клавишу **F5**, чтобы запустить службу. Откроется форма **тестового клиента WCF** , которая будет загружать службу.
 
-2. В форме **Тестовый клиент WCF** дважды щелкните метод **GetData()** в разделе **IService1**. **GetData** будет открыта вкладка.
+2. В форме **Тестовый клиент WCF** дважды щелкните метод **GetData()** в разделе **IService1**. Отобразится вкладка **GetData** .
 
-     ![GetData&#40; &#41; метод](../data-tools/media/wcf4.png "wcf4")
+     ![Метод GetData&#40; &#41;](../data-tools/media/wcf4.png "wcf4")
 
 3. В диалоговом окне **Запрос** выберите поле **Значение** и введите `Hello`.
 
      ![Поле значения](../data-tools/media/wcf5.png "wcf5")
 
-4. Нажмите кнопку **Вызвать**. Если **предупреждение системы безопасности** диалоговое окно отображается, щелкните **ОК**. Результат будет отображаться в **ответа** поле.
+4. Нажмите кнопку **Вызвать**. Если появится диалоговое окно " **предупреждение системы безопасности** ", нажмите кнопку **ОК**. Результат отобразится в поле **ответ** .
 
      ![Результат в поле ответа](../data-tools/media/wcf6.png "wcf6")
 
@@ -93,17 +93,17 @@ ms.locfileid: "65615647"
 
 1. В меню **Файл** выберите команду **Добавить**, а затем **Создать проект**.
 
-2. В **новый проект** диалогового окна последовательно раскройте элементы **Visual Basic** или **Visual C#** узел и выберите **Windows**, а затем выберите **Windows Forms Application**. Нажмите кнопку **ОК**, чтобы открыть проект.
+2. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#**  и выберите **Windows**, а затем выберите **Windows Forms приложение**. Нажмите кнопку **ОК**, чтобы открыть проект.
 
      ![Проект приложения Windows Forms](../data-tools/media/wcf7.png "wcf7")
 
-3. Щелкните правой кнопкой мыши **WindowsApplication1** и выберите команду **Добавить ссылку на службу**. **Add Service Reference** появится диалоговое окно.
+3. Щелкните правой кнопкой мыши **WindowsApplication1** и выберите команду **Добавить ссылку на службу**. Появится диалоговое окно **Добавление ссылки на службу** .
 
 4. В диалоговом окне **Добавление ссылки на службу** щелкните элемент **Найти**.
 
-     ![В диалоговом окне Add Service Reference](../data-tools/media/wcf8.png "wcf8")
+     ![Диалоговое окно «Добавление ссылки на службу»](../data-tools/media/wcf8.png "wcf8")
 
-     **Service1** будет отображаться в **служб** области.
+     **Service1** будет отображаться в области " **службы** ".
 
 5. Нажмите кнопку **ОК**, чтобы добавить ссылку на службу.
 
@@ -124,7 +124,7 @@ ms.locfileid: "65615647"
 
 5. Нажмите клавишу **F5**, чтобы запустить проект. Введите любой текст и нажмите кнопку. Будет отображена надпись «Введено:» с введенным ранее текстом.
 
-     ![Форма с результатом](../data-tools/media/wcf10.png "wcf10")
+     ![Форма, показывающая результат](../data-tools/media/wcf10.png "wcf10")
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

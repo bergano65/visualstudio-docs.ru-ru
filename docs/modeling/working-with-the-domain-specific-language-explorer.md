@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 744407f129c85f4e083007186dd167e39401d850
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 352315b518102c5b9576c19611522e87d0e67ffe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961941"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666907"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Работа с обозревателем доменного языка
-**Обозреватель DSL** отображает несколько типов данных в виде дерева. Дополнительные сведения о большинстве элементов в обозревателе DSL, см. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
+**Обозреватель DSL** отображает несколько видов информации в представлении в виде дерева. Дополнительные сведения о большинстве элементов в обозревателе DSL см. в разделе [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
 
  Он имеет следующие узлы.
 
@@ -29,11 +29,11 @@ ms.locfileid: "62961941"
 
 - **Доменные классы**. Список классов доменов в модели.
 
-- **Доменные связи**. Список доменных связей в модели.
+- **Доменные отношения**. Список доменных связей в модели.
 
 - **Типы доменов**. Список встроенных и внешних типов, используемых в модели.
 
-- **Редактор**. Список **элементов** вкладки и элементы, они содержат и параметры проверки для модели. Дополнительные сведения о проверке см. в разделе [проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md).
+- **Редактор**. Список вкладок **панели элементов** и содержащихся в них элементов, а также параметры проверки для модели. Дополнительные сведения о проверке см. [в разделе Проверка на предметно-](../modeling/validation-in-a-domain-specific-language.md)ориентированном языке.
 
 - **Поведение обозревателя**. Настройки, определяющие поведение обозревателя в созданном конструкторе. Дополнительные сведения о настройке обозревателя см. в разделе [Настройка обозревателя моделей](../modeling/customizing-the-model-explorer.md).
 
@@ -41,6 +41,6 @@ ms.locfileid: "62961941"
 
 - **Поведение сериализации XML**. Настройки сериализации для модели. Дополнительные сведения о сериализации см. в разделе [Настройка хранилища файлов и XML-сериализации](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

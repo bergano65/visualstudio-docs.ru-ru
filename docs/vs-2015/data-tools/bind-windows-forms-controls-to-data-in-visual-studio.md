@@ -20,26 +20,26 @@ helpviewer_keywords:
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07c5853b673657c3ce8e90467a13bbac3f430b6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698988"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672988"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно отобразить данные пользователям приложения путем привязки данных в формы Windows Forms. Чтобы создать эти элементы управления с привязкой к данным, можно перетаскивать элементы из **источников данных** на окно конструктора Windows Forms в Visual Studio. В этом разделе описываются некоторые из наиболее распространенных задач, инструменты и классы, связанные с созданием приложений Windows Forms с привязкой к данным.
+Вы можете отображать данные для пользователей приложения, привязывая данные к Windows Forms. Чтобы создать эти элементы управления с привязкой к данным, можно перетащить элементы из окна **Источники данных** на конструктор Windows Forms в Visual Studio. В этом разделе описываются некоторые из наиболее распространенных задач, средств и классов, участвующих в создании Windows Forms приложений с привязкой к данным.
 
- ![Операции перетаскивания источника данных](../data-tools/media/raddata-data-source-drag-operation.png "операции перетаскивания raddata источника данных")
+ ![Операция перетаскивания источника данных](../data-tools/media/raddata-data-source-drag-operation.png "операция перетаскивания источника данных раддата")
 
- Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о привязке данных в Windows Forms, см. в разделе [привязки данных Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
+ Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о привязке данных в Windows Forms см. в разделе [Windows Forms привязка данных](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В данном разделе
 
 - [Привязка элементов управления Windows Forms к данным](../data-tools/bind-windows-forms-controls-to-data.md)
 
@@ -58,11 +58,11 @@ ms.locfileid: "65698988"
 - [Передача данных между формами](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource - компонент
- Компонент <xref:System.Windows.Forms.BindingSource> служит двум целям. Во-первых он обеспечивает уровень абстракции, при привязке к данным элементы управления в форме. Элементы управления в форме привязаны к <xref:System.Windows.Forms.BindingSource> компонент (вместо привязки к источнику данных).
+ Компонент <xref:System.Windows.Forms.BindingSource> служит двум целям. Во-первых, он предоставляет уровень абстракции при привязке элементов управления в форме к данным. Элементы управления формы привязаны к <xref:System.Windows.Forms.BindingSource> компоненту (вместо привязки непосредственно к источнику данных).
 
- Во-вторых он может управлять коллекцией объектов. Добавление типа для <xref:System.Windows.Forms.BindingSource> создает список этого типа.
+ Во-вторых, он может управлять коллекцией объектов. Добавление типа в <xref:System.Windows.Forms.BindingSource> создает список этого типа.
 
- Дополнительные сведения о <xref:System.Windows.Forms.BindingSource> компонента, см. в разделе:
+ Дополнительные сведения о компоненте <xref:System.Windows.Forms.BindingSource> см. в следующих статьях:
 
 - [Компонент BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
@@ -71,10 +71,10 @@ ms.locfileid: "65698988"
 - [Архитектура компонента BindingSource](https://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator - элемент управления
- Этот компонент предоставляет пользовательский интерфейс для перехода по данным, отображаемым в приложении Windows. Дополнительные сведения см. в разделе [Элемент управления BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
+ Этот компонент предоставляет пользовательский интерфейс для навигации по данным, отображаемым приложением Windows. Дополнительные сведения см. в разделе [Элемент управления BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView - элемент управления
- Для отображения и редактирования табличных данных с использованием разного рода источников данных, используйте <xref:System.Windows.Forms.DataGridView> элемента управления. Вы можете привязывать данные к <xref:System.Windows.Forms.DataGridView> с помощью <xref:System.Windows.Forms.DataGridView.DataSource%2A> свойство. Дополнительные сведения см. в разделе [Обзор элемента управления DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Чтобы отобразить и изменить табличные данные из различных типов источников данных, используйте элемент управления <xref:System.Windows.Forms.DataGridView>. Можно привязать данные к <xref:System.Windows.Forms.DataGridView> с помощью свойства <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Дополнительные сведения см. в разделе [Общие сведения об элементе управления DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

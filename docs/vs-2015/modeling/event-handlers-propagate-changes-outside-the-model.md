@@ -9,186 +9,185 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68181757"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669686"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Обработчики событий распространяют изменения за пределы модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Возможности визуализации и моделирования SDK, можно определить обработчики событий хранилища для распространения изменений к ресурсам за пределами хранилища, такие как переменные вне хранилища, файлы, моделей в другие хранилища или других [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширения. Обработчики событий Store, выполняются в конце транзакции, в которой произошло событие триггера. Кроме того, они выполняются в операции отмены или повтора. Таким образом в отличие от хранилища, события хранилища удобнее всего использовать для обновления значения, которые находятся за пределами хранилища. В отличие от событий .NET, обработчики событий хранилища зарегистрированного для прослушивания класса: у вас нет регистрируемый отдельный обработчик для каждого экземпляра. Дополнительные сведения о выборе между различных способов обработки изменений см. в разделе [реагирование на события и распространение изменений](../modeling/responding-to-and-propagating-changes.md).  
-  
- Графическая поверхность и другие элементы управления пользовательского интерфейса являются примерами внешних ресурсов, которые можно обрабатывать события хранилища.  
-  
-### <a name="to-define-a-store-event"></a>Чтобы определить событие хранения  
-  
-1. Выберите тип события, которое вы хотите отслеживать. Полный список, просмотрите свойства <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Каждое свойство соответствует типу события. Наиболее часто используемые типы событий:  
-  
-   - `ElementAdded` — активируется, когда элемент модели, ссылка отношения, фигуры или соединителя создается.  
-  
-   - ElementPropertyChanged — активируется, когда значение `Normal` свойства домена изменяется. Событие срабатывает, только в том случае, если старое и новое значения не равны. Это событие не может использоваться для хранения вычисляемые и пользовательские свойства.  
-  
-        Он не может применяться к свойствам роли, которые соответствуют связи отношений. Вместо этого используйте `ElementAdded` для наблюдения за доменной связи.  
-  
-   - `ElementDeleted` — активировано после элемента модели, отношения, фигуры или соединителя был удален. Значения свойств элемента по-прежнему доступны, но будет иметь ни одной связи с другими элементами.  
-  
-2. Добавьте определение разделяемого класса для _YourDsl_**DocData** в отдельном файле кода в **DslPackage** проекта.  
-  
-3. Напишите код события, как метод, как показано в следующем примере. Это может быть `static`, только если вы хотите получить доступ к `DocData`.  
-  
-4. Переопределить `OnDocumentLoaded()` для регистрации обработчика. Если у вас есть несколько обработчиков, их можно зарегистрировать в одном месте.  
-  
-   Расположение кода регистрации не является обязательным. `DocView.LoadView()` — это альтернативное расположение.  
-  
-```  
-using System;  
-using System.Collections.Generic;  
-using System.Linq;  
-using System.Text;  
-using Microsoft.VisualStudio.Modeling;  
-  
-namespace Company.MusicLib  
-{  
-  partial class MusicLibDocData  
-  {  
-    // Register store events here or in DocView.LoadView().  
-    protected override void OnDocumentLoaded()  
-    {  
-      base.OnDocumentLoaded(); // Don’t forget this.  
-  
-      #region Store event handler registration.       
-      Store store = this.Store;  
-      EventManagerDirectory emd = store.EventManagerDirectory;  
-      DomainRelationshipInfo linkInfo = store.DomainDataDirectory  
-          .FindDomainRelationship(typeof(ArtistAppearsInAlbum));  
-      emd.ElementAdded.Add(linkInfo,   
-          new EventHandler<ElementAddedEventArgs>(AddLink));  
-      emd.ElementDeleted.Add(linkInfo,   
-          new EventHandler<ElementDeletedEventArgs>(RemoveLink));  
-  
-      #endregion Store event handlers.  
-    }  
-  
-    private void AddLink(object sender, ElementAddedEventArgs e)  
-    {  
-      ArtistAppearsInAlbum link = e.ModelElement as ArtistAppearsInAlbum;  
-      if (link != null)   
-            ExternalDatabase.Add(link.Artist.Name, link.Album.Title);  
-    }  
-    private void RemoveLink(object sender, ElementDeletedEventArgs e)  
-    {  
-      ArtistAppearsInAlbum link = e.ModelElement as ArtistAppearsInAlbum;  
-      if (link != null)   
-            ExternalDatabase.Delete(link.Artist.Name, link.Album.Title);  
-    }  
-  }  
-  
-}  
-  
-```  
-  
-## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>С помощью событий отменяемой корректировки в Store  
- Store события не используются обычно для распространения изменений в хранилище, так как обработчик событий выполняет после фиксации транзакции. Вместо этого используется правило хранилища. Дополнительные сведения см. в разделе [распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).  
-  
- Тем не менее можно использовать обработчик событий для дополнительные обновления в хранилище, если пользователю необходимо иметь возможность отменить дополнительные обновления отдельно от исходного события. Например предположим, что символы в нижнем регистре обычных соглашений по альбомов. Можно написать обработчик событий хранилища, который исправляет заголовок в нижний регистр после введенное пользователем его в верхний регистр. Но пользователь может использовать команду отмены для отмены что изменения внесены, восстановление символы в верхнем регистре. Изменение пользователя удалить второй отмены.  
-  
- Напротив Если вы создали правило хранилища, чтобы сделать то же самое, изменение пользователя и что изменения внесены будет в той же транзакции, таким образом, чтобы пользователю не удалось отменить корректировки без потери исходного изменения.  
-  
-```  
-  
-partial class MusicLibDocView  
-{  
-    // Register store events here or in DocData.OnDocumentLoaded().  
-    protected override void LoadView()  
-    {  
-      /* Register store event handler for Album Title property. */  
-      // Get reflection data for property:  
-      DomainPropertyInfo propertyInfo =   
-        this.DocData.Store.DomainDataDirectory  
-        .FindDomainProperty(Album.TitleDomainPropertyId);  
-      // Add to property handler list:  
-      this.DocData.Store.EventManagerDirectory  
-        .ElementPropertyChanged.Add(propertyInfo,  
-        new EventHandler<ElementPropertyChangedEventArgs>  
-             (AlbumTitleAdjuster));  
-  
-      /*  
-      // Alternatively, you can set one handler for   
-      // all properties of a class.  
-      // Your handler has to determine which property changed.  
-      DomainClassInfo classInfo = this.Store.DomainDataDirectory  
-           .FindDomainClass(typeof(Album));  
-      this.Store.EventManagerDirectory  
-          .ElementPropertyChanged.Add(classInfo,  
-        new EventHandler<ElementPropertyChangedEventArgs>  
-             (AlbumTitleAdjuster));  
-       */  
-      return base.LoadView();  
-    }  
-  
-// Undoable adjustment after a property is changed.   
-// Method can be static since no local access.  
-private static void AlbumTitleAdjuster(object sender,  
-         ElementPropertyChangedEventArgs e)  
-{  
-  Album album = e.ModelElement as Album;  
-  Store store = album.Store;  
-  
-  // We mustn't update the store in an Undo:  
-  if (store.InUndoRedoOrRollback   
-      || store.InSerializationTransaction)  
-      return;  
-  
-  if (e.DomainProperty.Id == Album.TitleDomainPropertyId)  
-  {  
-    string newValue = (string)e.NewValue;  
-    string lowerCase = newValue.ToLowerInvariant();  
-    if (!newValue.Equals(lowerCase))  
-    {  
-      using (Transaction t = store.TransactionManager  
-            .BeginTransaction("adjust album title"))  
-      {  
-        album.Title = lowerCase;  
-        t.Commit();  
-      } // Beware! This could trigger the event again.  
-    }  
-  }  
-  // else other properties of this class.  
-}  
-  
-```  
-  
- Если вы создаете событие, которое обновляет хранилище:  
-  
-- Используйте `store.InUndoRedoOrRollback` избежание внесения изменений с элементами модели в отмены. Диспетчер транзакций установит все, что в хранилище обратно в исходное состояние.  
-  
-- Используйте `store.InSerializationTransaction` избежание внесения изменений в модели во время загрузки из файла.  
-  
-- Изменения будут приведут к получению события будут активироваться. Убедитесь, что вам избежать бесконечного цикла.  
-  
-## <a name="store-event-types"></a>Типы событий Store  
- В коллекцию в Store.EventManagerDirectory соответствует каждого типа события. Можно добавить или удалить обработчики событий в любое время, но обычно добавляются при загрузке документа.  
-  
-|`EventManagerDirectory` Имя свойства|Выполняется при|  
-|-------------------------------------------|-------------------|  
-|ElementAdded|Создать экземпляр класса домена, доменного отношения, фигуры, соединителя или схемы.|  
-|ElementDeleted|Элемент модели был удален из каталога элемент магазина и больше не является источником или целевой по связи. Элемент фактически не удаляется из памяти, но сохраняется в случае будущих отмены.|  
-|ElementEventsBegun|Вызывается в конце внешней транзакции.|  
-|ElementEventsEnded|Вызывается, когда все остальные события будут обработаны.|  
-|ElementMoved|Элемент модели был перемещен из одного хранилища секции в другую.<br /><br /> Это не связано с расположение фигур на схеме.|  
-|ElementPropertyChanged|Значение свойства домена изменилось. Это выполняется только в том случае, если старое и новое значения не равны.|  
-|RolePlayerChanged|Один из двух ролей (концов) отношения ссылается на новый элемент.|  
-|RolePlayerOrderChanged|В роли с кратностью больше 1 порядковый номер ссылки был изменен.|  
-|TransactionBeginning||  
-|TransactionCommitted||  
-|TransactionRolledBack||  
-  
-## <a name="see-also"></a>См. также  
- [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)   
- [Пример кода: Пример принципиальной схемы](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+В пакете SDK для визуализации и моделирования можно определить обработчики событий хранилища, чтобы распространить изменения на ресурсы за пределами хранилища, такие как переменные, не связанные с хранением, файлы, модели в других магазинах или другие расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Обработчики событий хранилища выполняются после окончания транзакции, в которой произошло событие, вызывающее срабатывание. Они также выполняются при выполнении операции отмены или повтора. Таким образом, в отличие от правил хранения, события хранилища наиболее полезны для обновления значений, находящихся за пределами хранилища. В отличие от событий .NET, обработчики событий хранилища регистрируются для прослушивания класса: вам не нужно регистрировать отдельный обработчик для каждого экземпляра. Дополнительные сведения о выборе между различными способами для управления изменениями см. [в разделе реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md).
+
+ Графические поверхности и другие элементы управления пользовательского интерфейса — это примеры внешних ресурсов, которые могут обрабатываться событиями магазина.
+
+### <a name="to-define-a-store-event"></a>Определение события магазина
+
+1. Выберите тип события, которое требуется отслеживать. Полный список см. в свойствах <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Каждое свойство соответствует типу события. Чаще всего используются следующие типы событий:
+
+   - `ElementAdded` — активируется при создании элемента модели, связи, фигуры или соединителя.
+
+   - Елементпропертичанжед — активируется при изменении значения свойства домена `Normal`. Событие активируется только в том случае, если новые и старые значения не равны. Событие не может применяться к вычисляемым и пользовательским свойствам хранилища.
+
+        Его нельзя применить к свойствам роли, которые соответствуют связям связей. Вместо этого используйте `ElementAdded` для отслеживания доменной связи.
+
+   - `ElementDeleted` — активируется после удаления элемента модели, связи, фигуры или соединителя. Вы по-прежнему можете получить доступ к значениям свойств элемента, но он не будет иметь связей с другими элементами.
+
+2. Добавьте определение разделяемого класса для _йоурдсл_**DocData** в отдельный файл кода в проекте **DslPackage** .
+
+3. Напишите код события как метод, как показано в следующем примере. Это может быть `static`, если не требуется доступ к `DocData`.
+
+4. Переопределите `OnDocumentLoaded()`, чтобы зарегистрировать обработчик. При наличии нескольких обработчиков их можно зарегистрировать в одном месте.
+
+   Расположение регистрационного кода не является критическим. `DocView.LoadView()` является альтернативным расположением.
+
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.VisualStudio.Modeling;
+
+namespace Company.MusicLib
+{
+  partial class MusicLibDocData
+  {
+    // Register store events here or in DocView.LoadView().
+    protected override void OnDocumentLoaded()
+    {
+      base.OnDocumentLoaded(); // Don’t forget this.
+
+      #region Store event handler registration.
+      Store store = this.Store;
+      EventManagerDirectory emd = store.EventManagerDirectory;
+      DomainRelationshipInfo linkInfo = store.DomainDataDirectory
+          .FindDomainRelationship(typeof(ArtistAppearsInAlbum));
+      emd.ElementAdded.Add(linkInfo,
+          new EventHandler<ElementAddedEventArgs>(AddLink));
+      emd.ElementDeleted.Add(linkInfo,
+          new EventHandler<ElementDeletedEventArgs>(RemoveLink));
+
+      #endregion Store event handlers.
+    }
+
+    private void AddLink(object sender, ElementAddedEventArgs e)
+    {
+      ArtistAppearsInAlbum link = e.ModelElement as ArtistAppearsInAlbum;
+      if (link != null)
+            ExternalDatabase.Add(link.Artist.Name, link.Album.Title);
+    }
+    private void RemoveLink(object sender, ElementDeletedEventArgs e)
+    {
+      ArtistAppearsInAlbum link = e.ModelElement as ArtistAppearsInAlbum;
+      if (link != null)
+            ExternalDatabase.Delete(link.Artist.Name, link.Album.Title);
+    }
+  }
+
+}
+
+```
+
+## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Использование событий для внесения отменяемых корректировок в хранилище
+ События хранилища обычно не используются для распространения изменений в хранилище, так как обработчик событий выполняется после фиксации транзакции. Вместо этого следует использовать правило магазина. Дополнительные сведения см. [в разделе правила распространяют изменения в модели](../modeling/rules-propagate-changes-within-the-model.md).
+
+ Однако можно использовать обработчик событий для внесения дополнительных обновлений в хранилище, если вы хотите, чтобы пользователь мог отменить дополнительные обновления отдельно от исходного события. Например, предположим, что буквы в нижнем регистре являются обычным соглашением для названий альбомов. Можно написать обработчик событий хранилища, исправляет заголовок в нижний регистр после ввода пользователем в верхнем регистре. Но пользователь может использовать команду Отменить, чтобы отменить исправление, восстановив символы верхнего регистра. Вторая операция отмены приведет к удалению изменений пользователя.
+
+ Напротив, если вы написали правило хранения, чтобы сделать то же самое, изменение и исправление пользователя будут находиться в той же транзакции, чтобы пользователь не мог отменить корректировку без потери первоначального изменения.
+
+```
+
+partial class MusicLibDocView
+{
+    // Register store events here or in DocData.OnDocumentLoaded().
+    protected override void LoadView()
+    {
+      /* Register store event handler for Album Title property. */
+      // Get reflection data for property:
+      DomainPropertyInfo propertyInfo =
+        this.DocData.Store.DomainDataDirectory
+        .FindDomainProperty(Album.TitleDomainPropertyId);
+      // Add to property handler list:
+      this.DocData.Store.EventManagerDirectory
+        .ElementPropertyChanged.Add(propertyInfo,
+        new EventHandler<ElementPropertyChangedEventArgs>
+             (AlbumTitleAdjuster));
+
+      /*
+      // Alternatively, you can set one handler for
+      // all properties of a class.
+      // Your handler has to determine which property changed.
+      DomainClassInfo classInfo = this.Store.DomainDataDirectory
+           .FindDomainClass(typeof(Album));
+      this.Store.EventManagerDirectory
+          .ElementPropertyChanged.Add(classInfo,
+        new EventHandler<ElementPropertyChangedEventArgs>
+             (AlbumTitleAdjuster));
+       */
+      return base.LoadView();
+    }
+
+// Undoable adjustment after a property is changed.
+// Method can be static since no local access.
+private static void AlbumTitleAdjuster(object sender,
+         ElementPropertyChangedEventArgs e)
+{
+  Album album = e.ModelElement as Album;
+  Store store = album.Store;
+
+  // We mustn't update the store in an Undo:
+  if (store.InUndoRedoOrRollback
+      || store.InSerializationTransaction)
+      return;
+
+  if (e.DomainProperty.Id == Album.TitleDomainPropertyId)
+  {
+    string newValue = (string)e.NewValue;
+    string lowerCase = newValue.ToLowerInvariant();
+    if (!newValue.Equals(lowerCase))
+    {
+      using (Transaction t = store.TransactionManager
+            .BeginTransaction("adjust album title"))
+      {
+        album.Title = lowerCase;
+        t.Commit();
+      } // Beware! This could trigger the event again.
+    }
+  }
+  // else other properties of this class.
+}
+
+```
+
+ При написании события, которое обновляет хранилище:
+
+- Используйте `store.InUndoRedoOrRollback`, чтобы избежать внесения изменений в элементы модели в случае отмены. Диспетчер транзакций задаст все данные в хранилище обратно в исходное состояние.
+
+- Используйте `store.InSerializationTransaction`, чтобы избежать внесения изменений во время загрузки модели из файла.
+
+- Изменения приведут к срабатыванию дальнейших событий. Убедитесь, что не существует бесконечного цикла.
+
+## <a name="store-event-types"></a>Хранение типов событий
+ Каждый тип события соответствует коллекции в Store. Евентманажердиректори. Обработчики событий можно добавлять и удалять в любое время, но обычно они добавляются при загрузке документа.
+
+|имя свойства `EventManagerDirectory`|Выполняется, когда|
+|-------------------------------------------|-------------------|
+|елементаддед|Создается экземпляр класса домена, отношения домена, фигуры, соединитель или схема.|
+|елементделетед|Элемент модели был удален из каталога элементов хранилища и больше не является источником или целевым объектом какой-либо связи. Элемент фактически не удаляется из памяти, но сохраняется в случае последующей отмены.|
+|елементевентсбегун|Вызывается в конце внешней транзакции.|
+|елементевентсендед|Вызывается, когда обрабатывались все другие события.|
+|елементмовед|Элемент модели был перемещен из одного раздела хранилища в другой.<br /><br /> Это не связано с расположением фигуры на схеме.|
+|елементпропертичанжед|Значение свойства домена изменилось. Это выполняется только в том случае, если старое и новое значения не равны.|
+|ролеплайерчанжед|Одна из двух ролей (окончаний) связи ссылается на новый элемент.|
+|ролеплайерордерчанжед|В роли с кратностью больше 1 последовательность ссылок изменилась.|
+|трансактионбегиннинг||
+|трансактионкоммиттед||
+|трансактионролледбакк||
+
+## <a name="see-also"></a>См. также раздел
+ [Ответ на пример кода и распространение изменений](../modeling/responding-to-and-propagating-changes.md) [: схемы цепи](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

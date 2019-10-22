@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b81bd3237f3eb2aa9a4c096ddfeae2c7bcd08c09
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980557"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648919"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Добавление пользовательских элементов управления в окно "Источники данных"
 
@@ -39,7 +39,7 @@ ms.locfileid: "68980557"
 2. В окне **Источники данных** щелкните элемент, который является частью источника данных, добавленного в окно, а затем щелкните раскрывающееся меню для этого элемента.
 
    > [!TIP]
-   > Если окно Источники данных не открыто, откройте его, выбрав **Просмотреть** > **другие** > **Источники данных**Windows.
+   > Если окно Источники данных не открыто, откройте его, выбрав **вид**  >  другие  > **Источники данных** **Windows** .
 
 3. В раскрывающемся меню выберите команду **настроить**. Откроется одно из следующих диалоговых окон:
 

@@ -1,5 +1,5 @@
 ---
-title: Данные доступа к форумам
+title: Форумы по доступу к данным
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -219,25 +219,25 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92699d9d7c77c771ea1cc4aa28b918f318eca8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818082"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648868"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Устранение ошибок доступа к данным на форумах
 
-На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. Ниже приведены некоторые форумы, связанные с данными на сайте MSDN.
+На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. Ниже приведены некоторые форумы по работе с данными, доступные на сайте MSDN.
 
 - [Элементы управления данными и привязка данных Windows Forms](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
-- [Форум по наборам данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
+- [Форум по набору данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
 - [ADO.NET — платформа Entity Framework и LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
@@ -247,9 +247,9 @@ ms.locfileid: "62818082"
 
 - [Форум LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
-- [Форум по поставщиков данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
+- [Форум поставщиков данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-Сведения о том, как устранить неполадки подключения к SQL Server, см. в разделе [Устранение неполадок при подключении к ядру СУБД SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+Сведения об устранении неполадок подключения к SQL Server см. в разделе [Устранение неполадок при подключении к ядру субд SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>См. также
 

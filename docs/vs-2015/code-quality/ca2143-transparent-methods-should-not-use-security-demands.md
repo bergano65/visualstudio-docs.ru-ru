@@ -1,5 +1,5 @@
 ---
-title: CA2143. Прозрачные методы не должны использовать требования безопасности | Документация Майкрософт
+title: 'CA2143: прозрачные методы не должны использовать требования безопасности | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,42 +8,42 @@ f1_keywords:
 - CA2143
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5f9983f832c8793140f79e9b835e26e44fae1927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcfce9a80d02e525212d3f59173df4a7e8fbe968
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142678"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662706"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143. Прозрачные методы не должны использовать требования безопасности
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: прозрачные методы не должны использовать требования безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|TransparentMethodsShouldNotDemand|
+|TypeName|транспарентмесодсшаулднотдеманд|
 |CheckId|CA2143|
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Tranparent тип или метод декларативно помечается <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` запросу или вызовы методов <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> метод.
+ Тип транпарент или метод декларативно помечается <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` спроса или метод вызывает метод <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Описание правила
- Прозрачный для системы безопасности код не должен отвечать за проверку безопасности операции и поэтому не должен требовать разрешений. Прозрачный для системы безопасности код должен использовать полные требования для принятия решений по безопасности, и критичный в плане безопасности код не должен полагаться на прозрачный код, чтобы создать полное требование. Вместо этого следует надежными с точки зрения любой код, который выполняет проверки безопасности, такие как требования безопасности.
+ Прозрачный для системы безопасности код не должен отвечать за проверку безопасности операции и поэтому не должен требовать разрешений. Прозрачный для системы безопасности код должен использовать полные требования для принятия решений по безопасности, и критичный в плане безопасности код не должен полагаться на прозрачный код, чтобы создать полное требование. Любой код, выполняющий проверки безопасности, такие как требования безопасности, должен быть критически важным для защиты.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Как правило, чтобы устранить нарушение этого правила, пометьте метод <xref:System.Security.SecuritySafeCriticalAttribute> атрибута. Можно также удалить требование.
+ Как правило, чтобы устранить нарушение этого правила, пометьте метод атрибутом <xref:System.Security.SecuritySafeCriticalAttribute>. Это требование также можно удалить.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- Правило файлы на следующий код, поскольку прозрачный метод создает требование декларативной безопасности.
+ Файлы правил в следующем коде, поскольку прозрачный метод делает декларативное требование к безопасности.
 
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2143.transparentmethodsshouldnotdemand/cs/ca2143 - transparentmethodsshouldnotdemand.cs#1)]
 
-## <a name="see-also"></a>См. также
- [CA2142: Прозрачный код не должен быть защищен с помощью требований LinkDemand](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+## <a name="see-also"></a>См. также раздел
+ [CA2142: прозрачный код не должен быть защищен с помощью требований LinkDemand](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

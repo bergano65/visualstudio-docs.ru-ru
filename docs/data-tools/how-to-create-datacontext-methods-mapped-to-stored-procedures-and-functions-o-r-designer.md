@@ -3,31 +3,31 @@ title: Сопоставьте методы DataContext с sprocs и функци
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c3769634bfbeb98fcc31e5c074177d950248292
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4fa392467024a38dc447e6a5077f855d3464103b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252911"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648371"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Практическое руководство. Создание методов DataContext, сопоставленных с хранимыми процедурами и функциями (реляционный конструктор объектов)
 
-В **конструктор O/R** можно добавлять хранимые процедуры и функции в качестве <xref:System.Data.Linq.DataContext> методов. Вызов метода и передача в обязательные параметры запускает сохраненную процедуру или функцию на базе данных и возвращает данные в тип возвращаемого значения метода <xref:System.Data.Linq.DataContext>. Подробные сведения о <xref:System.Data.Linq.DataContext> методах см. в разделе [методы DataContext (реляционный конструктор R)](../data-tools/datacontext-methods-o-r-designer.md).
+В **конструктор O/R** можно добавлять хранимые процедуры и функции в качестве <xref:System.Data.Linq.DataContext> методов. Вызов метода и передача в обязательные параметры запускает сохраненную процедуру или функцию на базе данных и возвращает данные в тип возвращаемого значения метода <xref:System.Data.Linq.DataContext>. Подробные сведения о методах <xref:System.Data.Linq.DataContext> см. в разделе [методы DataContext (реляционный конструктор R)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
-> Можно также использовать хранимые процедуры, чтобы переопределить поведение [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] во время выполнения по умолчанию, которое выполняет операции вставки, обновления и удаления при сохранении изменений из классов сущностей в базу данных. Дополнительные сведения см. в разделе [Практическое руководство. назначить хранимые процедуры для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> Можно также использовать хранимые процедуры для переопределения поведения по умолчанию [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] времени выполнения, которое выполняет операции вставки, обновления и удаления при сохранении изменений из классов сущностей в базу данных. Дополнительные сведения см. [в разделе инструкции. назначение хранимых процедур для выполнения операций обновления, вставки и удаления (реляционный конструктор R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="create-datacontext-methods"></a>Создание методов DataContext
 
-Методы можно создавать <xref:System.Data.Linq.DataContext> путем перетаскивания хранимых процедур или функций из <strong>Обозреватель сервера или * * Обозреватель базы данных</strong> в **конструктор O/R**.
+Можно создать <xref:System.Data.Linq.DataContext> методы, перетащив хранимые процедуры или функции из <strong>Обозреватель сервера или * * Обозреватель базы данных</strong> в **конструктор O/R**.
 
 > [!NOTE]
-> Тип возвращаемого значения созданного <xref:System.Data.Linq.DataContext> метода зависит от места удаления хранимой процедуры или функции в **конструкторе O/R**. Если сбрасываете элемент прямо на существующий класс сущностей, то создается метод <xref:System.Data.Linq.DataContext>, который имеет тип возвращаемого значения класса сущностей. При удалении элементов в пустую область **конструктора объектов (O/R** ) <xref:System.Data.Linq.DataContext> создается метод, который возвращает автоматически созданный тип. Можно изменить тип возвращаемого значения метода <xref:System.Data.Linq.DataContext> после его добавления в область **методов**. Чтобы просмотреть или изменить тип возвращаемого значения метода <xref:System.Data.Linq.DataContext>, выберите его и проверьте свойство **тип возвращаемого значения** в окне **Свойства**. Дополнительные сведения см. в разделе [Практическое руководство. изменить тип возвращаемого значения метода DataContext (реляционный конструктор объектов)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Тип возвращаемого значения созданного метода <xref:System.Data.Linq.DataContext> зависит от места удаления хранимой процедуры или функции в **конструкторе O/R**. Если сбрасываете элемент прямо на существующий класс сущностей, то создается метод <xref:System.Data.Linq.DataContext>, который имеет тип возвращаемого значения класса сущностей. При удалении элементов в пустую область **конструктора объектов (O/R** ) создается метод <xref:System.Data.Linq.DataContext>, возвращающий автоматически созданный тип. Можно изменить тип возвращаемого значения метода <xref:System.Data.Linq.DataContext> после его добавления в область **методов**. Чтобы просмотреть или изменить тип возвращаемого значения метода <xref:System.Data.Linq.DataContext>, выберите его и проверьте свойство **тип возвращаемого значения** в окне **Свойства**. Дополнительные сведения см. в разделе [инструкции. изменение типа возвращаемого значения метода DataContext (реляционный конструктор данных)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,13 +48,13 @@ ms.locfileid: "71252911"
      Метод <xref:System.Data.Linq.DataContext> создается с типом возвращаемого значения выбранного класса сущностей и появляется в области **Методы**.
 
 > [!NOTE]
-> Дополнительные сведения об изменении типа возвращаемого значения для <xref:System.Data.Linq.DataContext> существующих методов см [. в разделе как изменить тип возвращаемого значения метода DataContext (реляционный конструктор объектов)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Дополнительные сведения об изменении типа возвращаемого значения существующих <xref:System.Data.Linq.DataContext> методы, см. в разделе [как: Изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Пошаговое руководство: Создание классов LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Пошаговое руководство. Создание классов LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq) (Знакомство с LINQ в Visual Basic)
 - [LINQ в C#](/dotnet/csharp/linq/linq-in-csharp)

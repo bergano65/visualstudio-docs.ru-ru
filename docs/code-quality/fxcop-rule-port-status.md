@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449058"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649567"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -67,8 +67,8 @@ ms.locfileid: "72449058"
 [CA1063](ca1063-implement-idisposable-correctly.md) | Правильно реализуйте IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | Исключения должны быть общими
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Не вызывайте исключения в непредвиденных местах
-CA1066 | Тип {0} должен реализовывать IEquatable @ no__t-1T >, так как он переопределяет Equals
-CA1067 | Переопределить Object. Equals (Object) при реализации IEquatable @ no__t-0T >
+CA1066 | Тип {0} должен реализовывать IEquatable \<T >, так как он переопределяет Equals
+CA1067 | Переопределить Object. Equals (Object) при реализации IEquatable \<T >
 [CA1068](ca1068.md) | Параметры CancellationToken должны быть последними
 CA1200 | Избегайте использования тегов cref с префиксом
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Не передавайте литералы в качестве локализованных параметров

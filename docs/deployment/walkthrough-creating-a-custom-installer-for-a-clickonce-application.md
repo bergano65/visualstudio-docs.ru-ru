@@ -18,25 +18,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6969490789b4f5747c28f33e91c7d61e97de52e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: b648134b7ad27a8f622ce270dc0f05e0a7e6516c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263461"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637424"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce
-Любое приложение на основе *.exe* автоматически устанавливается и обновляется с помощью настраиваемого установщика файл. Пользовательский установщик можно реализовать настраиваемый пользовательский интерфейс во время установки, включая пользовательские диалоговые окна для обслуживания и обеспечения безопасности. Для выполнения операции установки, использует пользовательский установщик <xref:System.Deployment.Application.InPlaceHostingManager> класса. В этом пошаговом руководстве показано, как создать пользовательский установщик, который автоматически устанавливает приложения ClickOnce.
+Любое приложение ClickOnce, основанное на *exe* -файле, может устанавливаться автоматически и обновляться с помощью пользовательского установщика. Пользовательский установщик может реализовать пользовательский интерфейс во время установки, включая пользовательские диалоговые окна для операций безопасности и обслуживания. Для выполнения операций установки Настраиваемый установщик использует класс <xref:System.Deployment.Application.InPlaceHostingManager>. В этом пошаговом руководстве показано, как создать пользовательский установщик, который автоматически устанавливает приложение ClickOnce.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
-### <a name="to-create-a-custom-clickonce-application-installer"></a>Чтобы создать пользовательский установщик приложений ClickOnce
+### <a name="to-create-a-custom-clickonce-application-installer"></a>Создание пользовательского установщика приложения ClickOnce
 
-1. В приложении ClickOnce добавьте ссылки на System.Deployment и System.Windows.Forms.
+1. В приложении ClickOnce добавьте ссылки на System. Deployment и System. Windows. Forms.
 
-2. Добавьте новый класс в приложение и укажите любое имя. В этом пошаговом руководстве используется имя `MyInstaller`.
+2. Добавьте в приложение новый класс и укажите любое имя. В этом пошаговом руководстве используется имя `MyInstaller`.
 
-3. Добавьте следующий `Imports` или `using` инструкции в начало нового класса.
+3. Добавьте следующие директивы `Imports` или `using` в начало нового класса.
 
     ```vb
     Imports System.Deployment.Application
@@ -48,17 +48,17 @@ ms.locfileid: "66263461"
     using System.Windows.Forms;
     ```
 
-4. Добавьте следующие методы в класс.
+4. Добавьте в класс следующие методы.
 
-     Эти методы вызывают <xref:System.Deployment.Application.InPlaceHostingManager> способы загрузки манифеста развертывания, обеспечения соответствующих разрешений, попросите пользователя для разрешения установить, а затем загрузите и установите приложения в кэш ClickOnce. Пользовательский установщик можно указать, что ClickOnce-приложения является предварительно доверенным или отложить решение о доверии <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> вызова метода. Этот код предварительно доверяет приложение.
+     Эти методы вызывают <xref:System.Deployment.Application.InPlaceHostingManager> методы для загрузки манифеста развертывания, утверждения соответствующих разрешений, попросите пользователя установить разрешение на установку, а затем скачайте и установите приложение в кэш ClickOnce. Пользовательский установщик может указать, что приложение ClickOnce является предварительно доверенным, или может отложить принятие решения о доверии вызовом метода <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>. Этот код предварительно доверяет приложению.
 
     > [!NOTE]
-    > Разрешения, назначенные, предварительно доверять не может превышать разрешения кода пользовательского установщика.
+    > Разрешения, назначенные с помощью предварительного доверия, не могут превышать разрешения пользовательского кода установщика.
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
 
-5. Попытка установки из кода, вызовите `InstallApplication` метод. Например, если класс назван `MyInstaller`, можно назвать `InstallApplication` следующим образом.
+5. Чтобы попытаться выполнить установку из кода, вызовите метод `InstallApplication`. Например, если вы назовете класс `MyInstaller`, вы можете вызвать `InstallApplication` следующим образом.
 
     ```vb
     Dim installer As New MyInstaller()
@@ -73,7 +73,7 @@ ms.locfileid: "66263461"
     ```
 
 ## <a name="next-steps"></a>Следующие шаги
- Приложения ClickOnce можно также добавить настраиваемую логику обновления, включая пользовательский интерфейс для отображения во время обновления. Дополнительные сведения см. в разделе <xref:System.Deployment.Application.UpdateCheckInfo>. ClickOnce-приложения также можно отключить стандартные записи меню "Пуск", ярлыка и добавление или удаление программ с помощью `<customUX>` элемент. Дополнительные сведения см. в разделе [ \<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md) и <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.
+ Приложение ClickOnce может также добавлять пользовательскую логику обновления, включая пользовательский интерфейс, отображаемый во время процесса обновления. Для получения дополнительной информации см. <xref:System.Deployment.Application.UpdateCheckInfo>. Приложение ClickOnce также может подавлять стандартную запись меню "Пуск", ярлык, а также запись "Установка и удаление программ" с помощью элемента `<customUX>`. Дополнительные сведения см. в разделе [\<entryPoint > Element](../deployment/entrypoint-element-clickonce-application.md) и <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.
 
 ## <a name="see-also"></a>См. также
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

@@ -1,5 +1,5 @@
 ---
-title: Создание кода в процессе построения | Документация Майкрософт
+title: Создание кода в процессе сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,29 +9,29 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f5ecf6f09efb64e521740b74151fc160112fe7a3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 81c4160ca6d03d55d631cd4dad8c3bce01fa9722
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826043"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667864"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Преобразование текста может вызываться как часть процесса построения решения Visual Studio. Имеются задачи сборки, которые специализируются на преобразовании текста. Задачи сборки T4 запускают выполнение текстовых шаблонов времени разработки, а также компилируют текстовые шаблоны времени выполнения (предварительно обработанные).
+Преобразование текста можно вызвать как часть процесса сборки решения Visual Studio. Имеются задачи сборки, которые специализируются на преобразовании текста. Задачи сборки T4 запускают выполнение текстовых шаблонов времени разработки, а также компилируют текстовые шаблоны времени выполнения (предварительно обработанные).
 
-Возможности задач построения несколько отличаются в зависимости от используемого обработчика сборки. При построении решения в Visual Studio текстового шаблона можно получить доступ к API Visual Studio (EnvDTE) Если [hostspecific = «true»](../modeling/t4-template-directive.md) атрибут имеет значение. Однако это не так при сборке решения из командной строки или при запуске с помощью Visual Studio сборки на сервере. В таких случаях сборка выполняется в MSBuild и используется другой узел T4.
+Возможности задач построения несколько отличаются в зависимости от используемого обработчика сборки. При сборке решения в Visual Studio текстовый шаблон может получить доступ к API Visual Studio (EnvDTE), если задан атрибут [hostspecific = "true"](../modeling/t4-template-directive.md) . Однако это не так при сборке решения из командной строки или при запуске с помощью Visual Studio сборки на сервере. В таких случаях сборка выполняется в MSBuild и используется другой узел T4.
 
-Это означает, что доступ к таким параметрам, как имена файлов проекта, не может производиться таким же образом, как при сборке текстового шаблона в MSBuild. Тем не менее, вы можете [передать данные среды в текстовые шаблоны и процессоры директив с помощью параметров сборки](#parameters).
+Это означает, что доступ к таким параметрам, как имена файлов проекта, не может производиться таким же образом, как при сборке текстового шаблона в MSBuild. Тем не менее [сведения о среде можно передать в текстовые шаблоны и обработчики директив с помощью параметров сборки](#parameters).
 
-## <a name="buildserver"></a> Настройка компьютеров
+## <a name="buildserver"></a>Настройка компьютеров
 
-Задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
+Чтобы включить задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
-Если [сервер сборки](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) работает на компьютере, на котором не установлена Visual Studio, скопируйте следующие файлы на компьютер построения с компьютера разработки. Замените символ "*" номером последней версии.
+Если [сервер сборки](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) запущен на компьютере, на котором не установлен Visual Studio, скопируйте следующие файлы на компьютер сборки с компьютера разработки. Замените символ "*" номером последней версии.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -57,9 +57,9 @@ ms.locfileid: "67826043"
 
 Необходимо изменить файл проекта для настройки некоторых функций в MSBuild.
 
-В обозревателе решений выберите **Unload** в контекстном меню проекта. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML.
+В обозревателе решений выберите **выгрузка** из контекстного меню проекта. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML.
 
-После завершения редактирования, выберите **перезагрузить**.
+Завершив редактирование, нажмите кнопку **перезагрузить**.
 
 ## <a name="import-the-text-transformation-targets"></a>Импорт целевых объектов преобразования текста
 
@@ -213,9 +213,9 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a> Передача данных контекста сборки в шаблоны
+## <a name="parameters"></a>Передача данных контекста сборки в шаблоны
 
-Можно задать значения параметров в файле проекта. Например, можно передать свойства построения и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
+Можно задать значения параметров в файле проекта. Например, можно передать свойства сборки и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
 ```xml
 <ItemGroup>
@@ -226,7 +226,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>
 ```
 
-В текстовом шаблоне задайте атрибут `hostspecific` в директиве template. Используйте [параметр](../modeling/t4-parameter-directive.md) директиву, чтобы получить значения:
+В текстовом шаблоне задайте атрибут `hostspecific` в директиве template. Используйте директиву [Parameter](../modeling/t4-parameter-directive.md) для получения значений:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a> Использование свойств проекта в сборке и директив #include
+## <a name="msbuild"></a>Использование свойств проекта в директивах Assembly и include
 
 Макросы Visual Studio, такие как $(SolutionDir), не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 
@@ -265,24 +265,24 @@ The project folder is: <#= ProjectFolder #>
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-**Зачем преобразование шаблонов на сервере сборки? Я уже преобразовал шаблоны в Visual Studio до возврата в моем коде.**
+**Зачем нужно преобразовывать шаблоны на сервере сборки? Я уже преписал шаблоны в Visual Studio, прежде чем я вернул код.**
 
 При обновлении включенного файла или другого файл, считываемого шаблоном, Visual Studio не преобразует файл автоматически. Преобразование шаблонов в процессе сборки гарантирует обновление всех компонентов.
 
-**Какие другие варианты есть для преобразования текстовых шаблонов?**
+**Какие существуют другие варианты преобразования текстовых шаблонов?**
 
-- [Служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в командных сценариев. В большинстве случаев удобнее использовать MSBuild.
+- [Служебную программу TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в скриптах команд. В большинстве случаев удобнее использовать MSBuild.
 
 - [Вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
-- [Во время разработки текстовые шаблоны](../modeling/design-time-code-generation-by-using-t4-text-templates.md) преобразуются в Visual Studio.
+- [Текстовые шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md) преобразуются в Visual Studio.
 
-- [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуется во время выполнения в приложении.
+- [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуются во время выполнения в приложении.
 
 ## <a name="read-more"></a>Дополнительные сведения
 
 Хорошее руководство содержится в шаблоне MSbuild T4, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)
-- [Визуализации и моделирования пакета SDK для Visual Studio](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Олег Сыч: Основные сведения об интеграции T4:MSBuild](https://github.com/olegsych/T4Toolbox)
+- [Пакет SDK визуализации и моделирования Visual Studio](http://go.microsoft.com/fwlink/?LinkID=185579)
+- [Олег сыч: основные сведения о средстве T4: интеграция MSBuild](https://github.com/olegsych/T4Toolbox)

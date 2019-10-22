@@ -1,22 +1,22 @@
 ---
-title: Конструктор рабочих процессов - конструктор действий StateMachine
+title: Конструктор рабочих процессов-конструктор действий StateMachine
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - StateMachine Designer
 - System.Activities.Statements.StateMachine.UI
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 59b1a194f4f301bd3080820b56c89044315c66e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 2e79e1db2cc6c46361afa7412cdeb493418c0365
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809397"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649914"
 ---
 # <a name="statemachine-activity-designer"></a>Конструктор действий StateMachine
 
@@ -24,13 +24,13 @@ ms.locfileid: "62809397"
 
 ## <a name="using-the-statemachine-activity-designer"></a>Использование конструктора операций StateMachine
 
-Чтобы добавить <xref:System.Activities.Statements.StateMachine> действие, перетащите **StateMachine** конструктор из **конечный автомат** раздел **элементов** и поместите его в конструкторе рабочих процессов Рабочая область. Чтобы добавить состояние дочернего элемента к <xref:System.Activities.Statements.StateMachine> действие, перетащите <xref:System.Activities.Statements.State> или <xref:System.Activities.Core.Presentation.FinalState> из **элементов** и сбросьте его в **StateMachine**.
+Чтобы добавить действие <xref:System.Activities.Statements.StateMachine>, перетащите конструктор действий **StateMachine** из раздела **конечный автомат** на **панели элементов** и поместите его на поверхность конструктор рабочих процессов. Чтобы добавить дочернее состояние к этому <xref:System.Activities.Statements.StateMachine>у действию, перетащите <xref:System.Activities.Statements.State> или <xref:System.Activities.Core.Presentation.FinalState> из **панели элементов** и поместите его на **StateMachine**.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Свойства действия StateMachine в конструкторе рабочих процессов
 
 В следующей таблице приведены свойства <xref:System.Activities.Statements.StateMachine>, которые можно задать с помощью конструктора рабочих процессов, и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, а некоторые из них ― в области конструктора.
 
-|Имя свойства|Обязательно|Использование|
+|Имя свойства|Обязательное значение|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.StateMachine> в заголовке. Значение по умолчанию — **StateMachine**. Значение можно дополнительно изменить в таблице свойств или напрямую в заголовке конструктора операций. <xref:System.Activities.Activity.DisplayName%2A> используется в строке навигатора, которая отображается в верхней части конструктора рабочих процессов.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
 

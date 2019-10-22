@@ -1,5 +1,5 @@
 ---
-title: CA2229. Реализация конструкторов сериализации | Документация Майкрософт
+title: 'CA2229: реализация конструкторов сериализации | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,52 +12,52 @@ helpviewer_keywords:
 - ImplementSerializationConstructors
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56d53717afc8cd966903e75f77e1745de0031745
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201579"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662848"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229. Реализуйте конструкторы сериализации
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: применяйте конструкторы сериализации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс, не делегате или интерфейсе, и одно из следующих условий верно:
+ Тип реализует интерфейс <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, не является делегатом или интерфейсом, и справедливо одно из следующих условий.
 
-- Тип не имеет конструктор, принимающий <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> объекта и <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> объекта (сигнатура конструктора сериализации).
+- Тип не имеет конструктора, который принимает объект <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> и объект <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (сигнатура конструктора сериализации).
 
-- Тип не запечатан и модификатор доступа для конструктора сериализации не является защищенным (семейство).
+- Тип является незапечатанным, а модификатор доступа для его конструктора сериализации не защищен (Family).
 
-- Тип является запечатанным и модификатор доступа для конструктора сериализации не является закрытым.
+- Тип запечатан, а модификатор доступа для его конструктора сериализации не является закрытым.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило относится к типы, поддерживающие пользовательской сериализации. Тип поддерживает пользовательской сериализации, если он реализует <xref:System.Runtime.Serialization.ISerializable> интерфейс. Конструктор сериализации необходим для десериализации или повторного создания объектов, которые были сериализованы с помощью <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> метод.
+ Это правило относится к типам, поддерживающим пользовательскую сериализацию. Тип поддерживает пользовательскую сериализацию, если он реализует интерфейс <xref:System.Runtime.Serialization.ISerializable>. Конструктор сериализации необходим для десериализации или повторного создания объектов, которые были сериализованы с помощью метода <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, реализуйте конструктор сериализации. Для запечатанного класса конструктор должен быть закрытым, а в иных случаях — защищенным.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте нарушение правила. Тип не будет десериализуемым и не будет работать во многих сценариях.
+ Не следует подавлять нарушение правила. Тип не будет десериализуемым и не будет работать во многих сценариях.
 
 ## <a name="example"></a>Пример
- В примере показан тип, соответствующий этому правилу.
+ В следующем примере показан тип, удовлетворяющий правилу.
 
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ISerializableCtor/cs/FxCop.Usage.ISerializableCtor.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

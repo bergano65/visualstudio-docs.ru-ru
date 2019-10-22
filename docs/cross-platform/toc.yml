@@ -31,29 +31,29 @@
       href: change-log-visual-studio-tools-for-unity-mac.md
     - name: DevOps с приложениями Unity
       href: application-lifecycle-management-alm-with-unity-apps.md
-- name: Visual C++ для разработки кроссплатформенных мобильных приложений
+- name: Разработка кроссплатформенных мобильных приложений на языке C++
   items:
-    - name: Visual C++ для разработки кроссплатформенных мобильных приложений
+    - name: Разработка кроссплатформенных мобильных приложений на языке C++
       href: visual-cpp-for-cross-platform-mobile-development.md
-    - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+    - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++
       items:
-        - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+        - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++
           href: install-visual-cpp-for-cross-platform-mobile-development.md
-        - name: Install and Configure Tools to Build using iOS
+        - name: Установка и настройка средств для разработки с помощью iOS
           href: install-and-configure-tools-to-build-using-ios.md
     - name: Создание приложения Android Native Activity
       href: create-an-android-native-activity-app.md
     - name: Создание приложения OpenGL ES в Android и iOS
       href: build-an-opengl-es-application-on-android-and-ios.md
-    - name: Импорт проекта XCode
+    - name: Импорт проекта Xcode
       href: import-an-xcode-project.md
-    - name: Изменения в синхронизации между XCode и Visual Studio
+    - name: Изменения в синхронизации между Xcode и Visual Studio
       href: sync-changes-between-xcode-and-visual-studio.md
     - name: Примеры разработки кроссплатформенных мобильных приложений
       href: cross-platform-mobile-development-examples.md
-    - name: Свойства кроссплатформенного проекта C++
+    - name: Ссылка на страницу кроссплатформенных свойств C++
       items:
-        - name: Свойства кроссплатформенного проекта C++
+        - name: Ссылка на страницу кроссплатформенных свойств C++
           href: cross-platform-prop-pages.md
         - name: Общие свойства проекта (Android C++)
           href: general-android-prop-page.md
