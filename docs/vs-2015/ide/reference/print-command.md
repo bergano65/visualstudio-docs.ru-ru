@@ -12,55 +12,50 @@ helpviewer_keywords:
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 65d78387c6d60d0b432db9aab175fbfe8dc2869b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203568"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662160"
 ---
 # <a name="print-command"></a>Команда Print
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Вычисляет выражение или отображает указанный текст.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Debug.Print text  
-```  
-  
-## <a name="arguments"></a>Аргументы  
- `text`  
- Обязательный. Вычисляемое выражение или отображаемый текст.  
-  
-## <a name="remarks"></a>Примечания  
- Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда  
-  
-```  
->Debug.Print expA  
-```  
-  
- может быть записана в виде  
-  
-```  
->? expA  
-```  
-  
- Обе версии этой команды возвращают текущее значение выражения `expA`.  
-  
-## <a name="example"></a>Пример  
-  
-```  
->Debug.Print varA  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Команда "Вычислить оператор"](../../ide/reference/evaluate-statement-command.md)   
- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Командное окно](../../ide/reference/command-window.md)   
- [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Вычисляет выражение или отображает указанный текст.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Debug.Print text
+```
+
+## <a name="arguments"></a>Аргументы
+ `text` Обязательный. Вычисляемое выражение или отображаемый текст.
+
+## <a name="remarks"></a>Примечания
+ Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда
+
+```
+>Debug.Print expA
+```
+
+ может быть записана в виде
+
+```
+>? expA
+```
+
+ Обе версии этой команды возвращают текущее значение выражения `expA`.
+
+## <a name="example"></a>Пример
+
+```
+>Debug.Print varA
+```
+
+## <a name="see-also"></a>См. также
+ [Команда "вычислить инструкцию](../../ide/reference/evaluate-statement-command.md) " команды [Visual Studio команды команд](../../ide/reference/visual-studio-commands.md) [](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) [Visual Studio псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)
