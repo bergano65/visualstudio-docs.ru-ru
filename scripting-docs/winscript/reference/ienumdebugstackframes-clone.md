@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Clone | Документация Майкрософт
+title: 'Иенумдебугстаккфрамес:: Clone | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 117ed9923936a7211c1cc871fa084c269bd2a270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f812176406b234160883956c3311d8c05a75b743
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963381"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570881"
 ---
 # <a name="ienumdebugstackframesclone"></a>IEnumDebugStackFrames::Clone
-Создает перечислитель с тем же состоянием, что и текущий перечислитель.  
+Создает перечислитель, который содержит то же состояние, что и текущий перечислитель.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Параметры  
  `ppedsf`  
- [out] Возвращает `IEnumDebugStackFrames` интерфейс клона перечислителя.  
+ заполняет Возвращает интерфейс `IEnumDebugStackFrames` клона перечислителя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод создает перечислитель, который с тем же состоянием, что и текущий перечислитель.  
+## <a name="remarks"></a>Заметки  
+ Этот метод создает перечислитель, который содержит то же состояние, что и текущий перечислитель.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)

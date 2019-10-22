@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ac544f033e8b021b7ef0a6253fbd0cb65b4450f5
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180480"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252460"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Учебник. Начало работы с C# и ASP.NET Core в Visual Studio
 
@@ -129,9 +129,9 @@ ms.locfileid: "70180480"
 
    ![В окне "Настроить новый проект" назовите проект "MyCoreApp"](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** отображается **ASP.NET Core 2.1**. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
+1. Убедитесь в том, что в верхнем раскрывающемся меню окна **Создать веб-приложение ASP.NET Core** отображается **ASP.NET Core 3.0**. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
 
-   ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Новый проект открывается в Visual Studio.
 
@@ -141,6 +141,7 @@ ms.locfileid: "70180480"
 
 Это решение основано на конструктивном шаблоне **Страница Razor**. Он отличается от конструктивного шаблона [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) тем, что содержит код модели и управляющий код в самой странице Razor.
 
+::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>Обзор решения
 
  1. С помощью шаблона проекта создается решение с одним проектом ASP.NET Core, который имеет имя _MyCoreApp_. Перейдите на вкладку **Обозреватель решений**, чтобы просмотреть его содержимое.
@@ -169,7 +170,7 @@ ms.locfileid: "70180480"
 
     Вы можете поместить статическое содержимое сайта &mdash; например CSS, изображения и библиотеки JavaScript &mdash; непосредственно в нужные пути.
 
- 1. Проект также содержит файлы конфигурации для управления веб-приложением в среде выполнения. Стандартная [конфигурация](/aspnet/core/fundamentals/configuration) приложения хранится в файле *appsettings.json*. Тем не менее эти параметры можно переопределить с помощью *appsettings.Development.json*. Разверните файл **appsettings.json**, чтобы просмотреть файл **appsettings.Development.json**.
+ 1. Проект также содержит файлы конфигурации для управления веб-приложением во время выполнения. Стандартная [конфигурация](/aspnet/core/fundamentals/configuration) приложения хранится в файле *appsettings.json*. Тем не менее эти параметры можно переопределить с помощью *appsettings.Development.json*. Разверните файл **appsettings.json**, чтобы просмотреть файл **appsettings.Development.json**.
 
      ![Файлы конфигурации в обозревателе решений Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -216,7 +217,7 @@ ms.locfileid: "70180480"
      public void OnGet()
      {
          string directory = Environment.CurrentDirectory;
-     Message = String.Format("Your directory is {0}.", directory);
+         Message = String.Format("Your directory is {0}.", directory);
      }
     ```
 
@@ -239,6 +240,110 @@ ms.locfileid: "70180480"
    ![Обновленная страница About (О программе) с внесенными изменениями](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
 1. Закройте веб-браузер, нажмите клавиши **SHIFT**+**F5**, чтобы выйти из режима отладки, и закройте Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="tour-your-solution"></a>Обзор решения
+
+ 1. С помощью шаблона проекта создается решение с одним проектом ASP.NET Core, который имеет имя _MyCoreApp_. Перейдите на вкладку **Обозреватель решений**, чтобы просмотреть его содержимое.
+
+    ![Обозреватель решений ASP.NET в Visual Studio для решения "Страница Razor" с именем MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+
+ 1. Разверните папку **Pages**.
+
+     ![Папка Pages в обозревателе решений](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+
+ 1. Просмотрите файл **Index.cshtml** в редакторе кода.
+
+     ![Просмотр файла Index.cshtml в редакторе кода Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml.png)
+
+ 1. С каждым файлом CSHTML связан файл кода. Чтобы открыть файл кода в редакторе, разверните узел **Index.cshtml** в обозревателе решений и выберите файл **Index.cshtml.cs**.
+
+     ![Выбор файла Index.cshtml.cs в редакторе кода Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+
+ 1. Просмотрите файл **Index.cshtml.cs** в редакторе кода.
+
+     ![Файл About.cshtml в редакторе кода Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+
+ 1. Проект содержит папку **wwwroot**, которая является корневой для веб-сайта. Разверните папку, чтобы просмотреть его содержимое.
+
+     ![Папка wwwroot в обозревателе решений Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+
+    Вы можете поместить статическое содержимое сайта &mdash; например CSS, изображения и библиотеки JavaScript &mdash; непосредственно в нужные пути.
+
+ 1. Проект также содержит файлы конфигурации для управления веб-приложением во время выполнения. Стандартная [конфигурация](/aspnet/core/fundamentals/configuration) приложения хранится в файле *appsettings.json*. Тем не менее эти параметры можно переопределить с помощью *appsettings.Development.json*. Разверните файл **appsettings.json**, чтобы просмотреть файл **appsettings.Development.json**.
+
+     ![Файлы конфигурации в обозревателе решений Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+
+## <a name="run-debug-and-make-changes"></a>Запуск, отладка и внесение изменений
+
+1. Чтобы выполнить сборку приложения и запустить его в режиме отладки, нажмите в интегрированной среде разработки кнопку **IIS Express**. (Кроме того, можно нажать клавишу **F5** или выбрать пункт меню **Отладка** > **Начать отладку** в строке меню.)
+
+     ![Нажмите кнопку "IIS Express" в Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
+
+     > [!NOTE]
+     > Если появляется сообщение об ошибке **Не удается подключиться к веб-серверу "IIS Express"** , закройте среду Visual Studio и откройте ее с помощью пункта **Запуск от имени администратора** в контекстном меню. Затем снова запустите приложение.
+     >
+     > Может также появиться запрос о том, хотите ли вы принять сертификат IIS SSL Express. Чтобы просмотреть код в веб-браузере, выберите **Да**, а затем снова **Да**, если появится предупреждение системы безопасности о дальнейшей обработке.
+
+1. Visual Studio откроет окно браузера. В строке меню вы должны увидеть названия страниц **Home** (Главная) и **Privacy** (Конфиденциальность).
+
+1. Выберите в строке меню страницу **Privacy**.
+
+   На открытой в браузере странице **Privacy** отображается текст, заданный в файле *Privacy.cshtml*.
+
+   ![Просмотр текста на странице Privacy](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+
+1. Вернитесь в Visual Studio и нажмите клавиши **SHIFT+F5**, чтобы выйти из режима отладки. Также после этого закроется проект в окне браузера.
+
+1. В Visual Studio откройте файл **Privacy.cshtml** для редактирования. Удалите строку _Use this page to detail your site's privacy policy_ (Эта страница предназначена для политики конфиденциальности сайта) и добавьте вместо нее строку _This page is under construction as of @ViewData["TimeStamp"]_ (Эта страница находится в разработке с ["метка_времени"]).
+
+    ![Изменение текста в файле Privacy.cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+
+1. Теперь изменим код. Выберите файл **Privacy.cshtml.cs**. Очистите директивы `using` в начале файла, как описано ниже.
+
+   Выберите любую из выделенных серым цветом директив `using`. Под курсором или в поле слева отобразится меню [Быстрые действия](../../ide/quick-actions.md) (значок лампочки). Выберите лампочку, а затем наведите указатель на команду **Удалить ненужные директивы using**.
+
+   ![Удаление ненужных директив Using из файла Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+
+   Теперь выберите команду **Просмотреть изменения**, чтобы увидеть, что изменится.
+
+   ![Предварительный просмотр изменений](media/vs-2019/csharp-aspnet-preview-changes.png)
+
+   Нажмите кнопку **Применить**. Visual Studio удалит из файла ненужные директивы `using`.
+
+1. Затем в методе `OnGet()` замените основную часть таким кодом:
+
+     ```csharp
+     public void OnGet()
+     {
+        string dateTime = DateTime.Now.ToShortDateString();
+        ViewData["TimeStamp"] = dateTime;
+     }
+    ```
+
+1. Обратите внимание, что элемент **DateTime** подчеркнут двумя волнистыми линиями. Подчеркивание волнистой линией появилось, потому что этот тип находится за пределами области.
+
+   ![Ошибки, подчеркнутые волнистой линией, в методе OnGet](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
+
+    Откройте панель инструментов **Список ошибок**, чтобы просмотреть там те же самые ошибки. (Если вы не видите панель инструментов **Список ошибок**, выберите **Представление** > **Список ошибок** в верхней строке меню.)
+
+   ![Список ошибок в Visual Studio](media/vs-2019/csharp-aspnet-error-list.png)
+
+1. Давайте исправим это. В редакторе кода установите курсор в любую строку с ошибкой, а затем в поле слева выберите меню "Быстрые действия" (значок лампочки). В раскрывающемся меню выберите **using System;** , чтобы добавить эту директиву в начало файла и устранить ошибки.
+
+   ![Добавление директивы using System;](media/vs-2019/csharp-aspnet-add-usings.png)
+
+1. Нажмите клавишу **F5**, чтобы открыть проект в веб-браузере.
+
+1. В верхней части веб-сайта выберите пункт **Privacy** (Конфиденциальность), чтобы просмотреть изменения.
+
+   ![Обновленная страница Privacy (Конфиденциальность) с внесенными изменениями](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+
+1. Закройте веб-браузер, нажмите клавиши **SHIFT**+**F5**, чтобы выйти из режима отладки, и закройте Visual Studio.
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>Быстрые ответы на часто задаваемые вопросы
 

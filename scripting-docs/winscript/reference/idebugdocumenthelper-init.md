@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Init | Документация Майкрософт
+title: 'IDebugDocumentHelper:: init | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e6379052707aa44c0fa52f4cb30db2c4c4fa99
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000991"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576866"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-`Init` Метод инициализирует вспомогательный объект документа отладки с именем и начальными атрибутами.  
+Метод `Init` инициализирует вспомогательный объект документа отладки с именем и исходными атрибутами.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,30 +40,30 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Параметры  
  `pda`  
- [in] Приложение отладки, связанных с этим документом.  
+ окне Приложение отладки, связанное с этим документом.  
   
  `pszShortName`  
- [in] Завершающаяся нулем строка, содержащая короткое имя документа.  
+ окне Строка, заканчивающаяся нулем и содержащая краткое имя документа.  
   
  `pszLongName`  
- [in] Завершающаяся нулем строка, содержащая длинное имя документа.  
+ окне Строка, заканчивающаяся нулем и содержащая длинное имя документа.  
   
  `docAttr`  
- [in] Указывает атрибуты текста документа.  
+ окне Задает атрибуты текстового документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод инициализирует вспомогательный объект документа отладки с именем и начальными атрибутами.  
+## <a name="remarks"></a>Заметки  
+ Этот метод инициализирует вспомогательный объект документа отладки с именем и исходными атрибутами.  
   
- В этом документе не отображается в дереве до `IDebugDocumentHelper::Attach` вызывается.  
+ Этот документ не отображается в дереве до тех пор, пока не будет вызван `IDebugDocumentHelper::Attach`.  
   
 ## <a name="see-also"></a>См. также  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
- [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Константы TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

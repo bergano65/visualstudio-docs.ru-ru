@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 672c0ea4a4ec3c2d396da7b232ca085181d90b25
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869867"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662184"
 ---
 # <a name="prerequisites-dialog-box"></a>Диалоговое окно «Необходимые компоненты»
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ ms.locfileid: "68869867"
 |**Установщик Windows версии 4.5**|Этот пакет устанавливает распространяемый установщик Microsoft Windows 4.5, позволяющий устанавливать проекты установки установщика Windows.|
 
 ## <a name="see-also"></a>См. также
- [Страница "публикация" в конструкторе проектов](../../ide/reference/publish-page-project-designer.md) [Необходимые условия для развертывания приложения](../../deployment/application-deployment-prerequisites.md) [Распространение .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [Развертывание необходимых компонентов для 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+ Страница публикации. [необходимые условия для развертывания приложений](../../deployment/application-deployment-prerequisites.md) [в](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [конструкторе проектов](../../ide/reference/publish-page-project-designer.md) развертывание .NET Framework [развертывание предварительных требований для 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)

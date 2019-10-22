@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FireDebuggerEvent | Документация Майкрософт
+title: 'IDebugApplication:: Фиредебугжеревент | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad865f05cc70f462d65d6fbead4143b82a9fa489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00d895ed484e37f0ba38636a409876156ed97287
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990918"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575000"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-Срабатывает универсального события отладчика `IApplicationDebugger` интерфейс.  
+Вызывает универсальное событие в интерфейсе `IApplicationDebugger` отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,26 +38,26 @@ HRESULT FireDebuggerEvent(
   
 #### <a name="parameters"></a>Параметры  
  `riid`  
- [in] Идентификатор GUID для объекта.  
+ окне Идентификатор GUID для объекта.  
   
  `punk`  
- [in] Объект события, передаваемые в отладчик.  
+ окне Объект события, передаваемый отладчику.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Метод еще не реализован.|  
+|`E_NOTIMPL`|Метод в настоящее время не реализован.|  
   
-## <a name="remarks"></a>Примечания  
- Семантика GUID и `IUnknown` являются полностью определенные приложения и отладчика.  
+## <a name="remarks"></a>Заметки  
+ Семантика GUID и `IUnknown` полностью определена как Application/Debugger.  
   
- Этот метод позволяет для пользовательских расширений модели отладчика; он еще не реализован.  
+ Этот метод позволяет применять пользовательские расширения модели отладчика. в настоящее время он не реализован.  
   
- Этот метод вызывает `IApplicationDebugger::onDebuggerEvent` для вызова.  
+ Этот метод вызывает `IApplicationDebugger::onDebuggerEvent`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

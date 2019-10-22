@@ -14,22 +14,22 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8a22768367963f283f32a5d898cb3db3d1c7f9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006997"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573771"
 ---
 # <a name="label-redefined"></a>Метка переопределена
-Вы создали новую метку, но ему было присвоено имя существующей метки. Метки могут использоваться для обозначения блоки кода, но в пределах указанной области, они должны быть уникальными.  
+Вы создали новую метку, но присвоили ей имя существующей метки. Метки можно использовать для пометки блоков кода, но в пределах заданной области они должны быть уникальными.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Убедитесь, что все метки, которые можно использовать в программах уникальны в соответствующих областях.  
+- Убедитесь, что все метки, используемые в программах, уникальны в соответствующих областях.  
   
 ## <a name="see-also"></a>См. также  
- [Оператор с меткой](../../javascript/reference/labeled-statement-javascript.md)   
- [Оператор switch](../../javascript/reference/switch-statement-javascript.md)   
+ @No__t_1 [оператора с метками](../../javascript/reference/labeled-statement-javascript.md)  
+ [оператор switch](../../javascript/reference/switch-statement-javascript.md)    
  [Оператор break](../../javascript/reference/break-statement-javascript.md)   
  [Оператор continue](../../javascript/reference/continue-statement-javascript.md)

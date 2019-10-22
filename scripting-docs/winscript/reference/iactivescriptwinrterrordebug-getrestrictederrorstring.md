@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorString | Документация Майкрософт
+title: 'Иактивескриптвинртеррордебуг:: Жетрестриктедеррорстринг | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 154909183e044267053a04ebc489de6dddd55788
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 498d929fb06eea1d6717bfdecb09107bbdaafd98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425863"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577906"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorstring"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
-Возвращает среды выполнения Windows только строка ошибки, если он доступен.  
+Возвращает среда выполнения Windows строку с ограниченным доступом, если она доступна.  
   
 > [!IMPORTANT]
-> [Интерфейс IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс иактивескриптвинртеррордебуг](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ HRESULT GetRestrictedErrorString([out] BSTR * errorString);
   
 #### <a name="parameters"></a>Параметры  
  `errorString`  
- [out] Строка ошибки с ограниченным доступом.  
+ заполняет Ограниченная строка ошибки.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

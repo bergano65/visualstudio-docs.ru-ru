@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812017"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186812"
 ---
 # <a name="quick-actions"></a>Быстрые действия
 
@@ -25,7 +25,17 @@ ms.locfileid: "62812017"
 
 - исправление кода при нарушениях правил [анализатора кода](../code-quality/roslyn-analyzers-overview.md);
 
+::: moniker range=">=vs-2019"
+
+- [игнорирование](../code-quality/use-roslyn-analyzers.md#suppress-violations) нарушений правил анализа кода или [настройка](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) их уровня серьезности;
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - [игнорирование](../code-quality/use-roslyn-analyzers.md#suppress-violations) нарушений правил анализа кода;
+
+::: moniker-end
 
 - применение рефакторинга (например, [встраивание временной переменной](../ide/reference/inline-temporary-variable.md));
 
@@ -34,7 +44,7 @@ ms.locfileid: "62812017"
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Рефакторинг кода (Visual Studio для Mac)](/visualstudio/mac/refactoring).
 
-Быстрые действия можно применять, используя значок лампочки ![значок лампочки](media/light-bulb-icon.png), значок отвертки ![значок отвертки](media/screwdriver-icon.png) или сочетание клавиш **CTRL**+**.** когда курсор находится на строке кода, для которой доступно действие. Лампочка, сигнализирующая об ошибке, ![значок лампочки ошибки](media/error-light-bulb-icon.png) отображается, если есть красная волнистая линия, указывающая на ошибку, и у Visual Studio есть решение этой ошибки.
+Быстрые действия можно применять, используя значок лампочки ![значок лампочки](media/light-bulb-icon.png), значок отвертки ![значок отвертки](media/screwdriver-icon.png) или сочетание клавиш **CTRL**+ **.** когда курсор находится на строке кода, для которой доступно действие. Лампочка, сигнализирующая об ошибке, ![значок лампочки ошибки](media/error-light-bulb-icon.png) отображается, если есть красная волнистая линия, указывающая на ошибку, и у Visual Studio есть решение этой ошибки.
 
 Сторонние разработчики могут предоставить для любого языка пользовательскую диагностику и предложения, например в рамках пакета SDK, и лампочки Visual Studio будут отображаться на основе этих правил.
 
@@ -52,7 +62,7 @@ ms.locfileid: "62812017"
 
 - В левом поле редактора при перемещении курсора в соответствующую строку кода.
 
-Вы также можете нажать клавиши **Ctrl**+**.** в любом месте строки, чтобы увидеть список доступных быстрых действий и рефакторингов.
+Вы также можете нажать клавиши **Ctrl**+ **.** в любом месте строки, чтобы увидеть список доступных быстрых действий и рефакторингов.
 
 Чтобы просмотреть возможные исправления, щелкните стрелку вниз рядом с лампочкой или ссылку **Показать возможные исправления**. Отобразится список доступных быстрых действий.
 
@@ -62,6 +72,6 @@ ms.locfileid: "62812017"
 
 - [Создание кода в Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Распространенные быстрые действия](../ide/common-quick-actions.md)
-- [Стили кода и быстрые действия](../ide/code-styles-and-quick-actions.md)
+- [Стили кода и быстрые действия](../ide/code-styles-and-code-cleanup.md)
 - [Написание и рефакторинг кода (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Рефакторинг (Visual Studio для Mac)](/visualstudio/mac/refactoring)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie::SetDebugCookie | Документация Майкрософт
+title: 'IDebugCookie:: Сетдебугкукие | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c83c1331a95e48afa02b0b37557ca5bd042261d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 664939d0b91b8dbbf87dbff2978064811ffee486
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974479"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573182"
 ---
 # <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
-Задает файл cookie отладки приложения.  
+Задает файл cookie приложения отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT SetDebugCookie(
   
 #### <a name="parameters"></a>Параметры  
  `dwDebugAppCookie`  
- [in] Файл cookie, идентифицирующий приложение отладки.  
+ окне Файл cookie, определяющий приложение отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод задает файл cookie приложения отладки, что позволяет более одного отладчик мог присоединиться к процессу.  
+## <a name="remarks"></a>Заметки  
+ Этот метод задает файл cookie приложения отладки, который позволяет присоединять к процессу более чем один отладчик.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugCookie](../../winscript/reference/idebugcookie-interface.md)

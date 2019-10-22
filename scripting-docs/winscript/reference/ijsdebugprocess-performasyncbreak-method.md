@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugProcess::PerformAsyncBreak | Документация Майкрософт
+title: Метод ijsdebugprocess::P метод Ерформасинкбреак | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a4fdb70341744c764779d406372bbd55418fd29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3320c59097dec5229030a3f15252d907562c67e6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557989"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577336"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>Метод IJsDebugProcess::PerformAsyncBreak
-Помещает обработчик скриптов в режиме приостановки выполнения вызывает его на прерывание в следующей инструкции скрипта.  
+Помещает обработчик сценария в режим приостановки, в результате чего он останавливается на следующей инструкции сценария.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,12 +35,12 @@ HRESULT PerformAsyncBreak(
   
 #### <a name="parameters"></a>Параметры  
  `threadId`  
- [in] Идентификатор потока.  
+ окне Идентификатор потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

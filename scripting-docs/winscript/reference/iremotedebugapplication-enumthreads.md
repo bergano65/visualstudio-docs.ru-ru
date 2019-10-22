@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumThreads | Документация Майкрософт
+title: 'IRemoteDebugApplication:: EnumThreads | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f6f3102e12a20aa9f7be7a66938b5a34b2cc348
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 759ecc2da982e840e059e0d96d2b630190527d43
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944323"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573851"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
-Перечисляет все потоки, известно, связанного с приложением.  
+Перечисляет все потоки, связанные с приложением.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT EnumThreads(
   
 #### <a name="parameters"></a>Параметры  
  `pperdat`  
- [out] Перечислитель, который перечисляет все потоки, известно, связанного с приложением.  
+ заполняет Перечислитель, в котором перечислены все потоки, связанные с приложением.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод перечисляет все потоки, известно, связанного с приложением. Новые потоки могут быть добавлены в любое время.  
+## <a name="remarks"></a>Заметки  
+ Этот метод перечисляет все потоки, связанные с приложением. Новые потоки могут быть добавлены в любое время.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

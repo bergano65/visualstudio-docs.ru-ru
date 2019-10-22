@@ -1,5 +1,5 @@
 ---
-title: Нельзя назначить результату функции | Документация Майкрософт
+title: Невозможно присвоить результат функции | Документация Майкрософт
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca09fe3b516fbb8f27def982bf34a22d33d4ada
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946606"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572359"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Присвоение результату функции невозможно
-Предпринята попытка присвоить значение результату функции. Результат функции может быть присвоен переменной, но он не может использоваться в качестве переменной. Если вы хотите присвоить новое значение к самой функции, опустите скобки (оператор вызова функции). Ниже приведен пример ситуации, в котором возникает эта ошибка.  
+Предпринята попытка присвоить значение результату функции. Результат функции можно присвоить переменной, но нельзя использовать в качестве переменной. Если необходимо назначить новое значение самой функции, не указывайте круглые скобки (оператор вызова функции). В следующем примере показана ситуация, в которой возникает эта ошибка.  
   
 ```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
@@ -30,19 +30,19 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Не используйте значение результат вызова функции как что-нибудь, вы можете *назначить*. Можно назначить результат вызова функции *переменной* на то, что.  
+- Не используйте значение результата вызова функции, как и то, которое можно *присвоить*. Вы можете присвоить результат вызова функции *переменной* .  
   
     ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
-- Кроме того можно назначить функция сам (а не его возвращаемое значение) переменной.  
+- Кроме того, в переменную можно назначить саму функцию (а не ее возвращаемое значение).  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  
     ```  
   
 ## <a name="see-also"></a>См. также  
- [Объект функции](../../javascript/reference/function-object-javascript.md)   
- [Написание кода JavaScript](../../javascript/writing-javascript-code.md)   
+ [Объект функции](../../javascript/reference/function-object-javascript.md)    
+ [Написание кода JavaScript](../../javascript/writing-javascript-code.md)    
  [Функции](../../javascript/functions-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Next | Microsoft Docs
+title: 'Иенумремотедебугаппликатионс:: Next | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b14874891e739fc95b877e41e76559a1ab0060a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a9ebcbbd786ba8545e19b9833d26e5e385738c4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963241"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575211"
 ---
 # <a name="ienumremotedebugapplicationsnext"></a>IEnumRemoteDebugApplications::Next
-`Next` Метод извлекает указанное число сегментов в последовательности перечисления.  
+Метод `Next` извлекает указанное количество сегментов в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,22 +39,22 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество сегментов для получения.  
+ окне Число извлекаемых сегментов.  
   
  `ppda`  
- [out] Возвращает массив `IRemoteDebugApplication` интерфейсы, которые представляет сегменты, которые требуется получить.  
+ заполняет Возвращает массив интерфейсов `IRemoteDebugApplication`, представляющих получаемые сегменты.  
   
  `pceltFetched`  
- [out] Фактическое число сегментов, получены с помощью перечислителя.  
+ заполняет Фактическое число сегментов, выбранных перечислителем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод извлекает указанное число сегментов в последовательности перечисления.  
   
 ## <a name="see-also"></a>См. также  

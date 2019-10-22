@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Документация Майкрософт
+title: 'IScriptEntry:: Range | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a6e1b1600c93aa05bbe9669fb57a23a8c9344a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787741"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575435"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Возвращает начальное положение и длину запись.  
+Возвращает начальную и длину записи.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,27 +38,27 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Параметры  
  `pichMin`  
- [out] Для `IScriptEntry` объектов, указывающих блок скрипта возвращает 0.  
+ заполняет Для `IScriptEntry` объектов, указывающих блок скрипта, возвращает значение 0.  
   
- Для `IScriptEntry` объектов, указывающих объект функции возвращает начальное положение функции в текущем блоке скрипта.  
+ Для `IScriptEntry` объектов, указывающих объект функции, возвращает начальную точку функции в текущем блоке скрипта.  
   
- Для `IScriptScriptlet` , возвращает 0.  
+ Для `IScriptScriptlet` объектов возвращает 0.  
   
  `pcch`  
- [out] Для `IScriptEntry` объектов, указывающих блок скрипта возвращает длину текста.  
+ заполняет Для `IScriptEntry` объектов, указывающих блок скрипта, возвращает длину текста.  
   
- Для `IScriptEntry` объектов, указывающих объект функции возвращает длину определения функции.  
+ Для `IScriptEntry` объектов, указывающих объект функции, возвращает длину определения функции.  
   
- Для `IScriptScriptlet` , возвращает длину вводимой.  
+ Для `IScriptScriptlet` объектов возвращает длину записи.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

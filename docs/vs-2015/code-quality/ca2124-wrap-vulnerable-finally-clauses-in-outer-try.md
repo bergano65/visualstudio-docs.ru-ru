@@ -1,5 +1,5 @@
 ---
-title: CA2124. Помещайте уязвимые предложения finally во внешний блок try | Документация Майкрософт
+title: 'CA2124: Заключите уязвимые предложения finally во внешнее предложение try | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - WrapVulnerableFinallyClausesInOuterTry
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: de2bd0bfbf60ef717e00daaa668475cb43a9d35c
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 7a2a296f5dd3680209c14849b5bd863c01e6351d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890937"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660249"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124. Ограничьте уязвимые предложения finally во внешних блоках try
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: помещайте уязвимые предложения finally во внешний блок try
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,16 +33,16 @@ ms.locfileid: "67890937"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- В версиях 1.0 и 1.1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], содержит открытый или защищенный метод `try` / `catch` / `finally` блока. `finally` Блок сбрасывает состояние безопасности и не заключен в `finally` блока.
+ В версиях 1,0 и 1,1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] открытый или защищенный метод содержит `try` / `catch` / `finally`. Блок `finally` сбрасывает состояние безопасности и не заключается в блок `finally`.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило находит `try` / `finally` блоков в код, предназначенный для версий 1.0 и 1.1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , могут быть раскрыты фильтры вредоносных исключений в стеке вызовов. Если конфиденциальные операции, такие как олицетворение возникает в блоке try, и возникает исключение, фильтр может быть выполнен до `finally` блока. В случае это означает, что фильтр будет выполнен от имени олицетворенного пользователя. Фильтры, в настоящее время может быть реализован только в Visual Basic.
+ Это правило находит `try` / `finally` блоки в коде, предназначенном для версий 1,0 и 1,1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], которые могут быть уязвимы для фильтров вредоносных исключений, имеющихся в стеке вызовов. Если конфиденциальные операции, такие как олицетворение, происходят в блоке try и создается исключение, то фильтр может выполняться перед блоком `finally`. Для примера олицетворения это означает, что фильтр будет выполняться от имени олицетворяемого пользователя. Фильтры в настоящее время реализуются только в Visual Basic.
 
 > [!WARNING]
-> В версиях 2.0 и более поздних версий [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], среда выполнения автоматически защищает `try` / `catch` /  `finally` заблокировать фильтры вредоносных исключений, если происходит сброс непосредственно в методе, содержит блок исключений.
+> В версиях 2,0 и более поздних [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] среда выполнения автоматически защищает `try` / `catch` /  `finally` блока от вредоносных фильтров исключений, если сброс происходит непосредственно в методе, содержащем блок исключения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Поместите без оболочки `try` / `finally` в внешнем блоке try. См. во втором примере ниже. Это заставляет `finally` до кода фильтра.
+ Поместите неупакованный `try` / `finally` во внешний блок try. См. Второй пример, приведенный ниже. Это приведет к тому, что `finally` будет выполняться до фильтрации кода.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
@@ -67,7 +67,7 @@ finally {
 ```
 
 ## <a name="example"></a>Пример
- Следующий псевдокод показан шаблон, можно использовать для защиты кода и выполнения этого правила.
+ В следующем псевдокоде показан шаблон, который можно использовать для защиты кода и удовлетворения этого правила.
 
 ```
 try {

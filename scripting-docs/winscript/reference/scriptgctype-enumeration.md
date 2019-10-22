@@ -1,5 +1,5 @@
 ---
-title: Перечисление SCRIPTGCTYPE | Документация Майкрософт
+title: Перечисление СКРИПТГКТИПЕ | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840243"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574392"
 ---
 # <a name="scriptgctype-enumeration"></a>Перечисление SCRIPTGCTYPE
-Тип, для выполнения сборки мусора. Используется в [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) метод.  
+Тип выполняемой сборки мусора. Используется в методе [иактивескриптгарбажеколлектор:: коллектгарбаже](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|У обычной сборки мусора. Целочисленное значение равно 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Выполните сбор мусора является исчерпывающим. Целочисленное значение-1.|  
+|SCRIPTGCTYPE_NORMAL|Выполнить нормальную сборку мусора. Целочисленное значение равно 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Выполнить полную сборку мусора. Целочисленное значение равно 1.|  
   
 ## <a name="see-also"></a>См. также  
  [Константы, перечисления и коды ошибок активных скриптов](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

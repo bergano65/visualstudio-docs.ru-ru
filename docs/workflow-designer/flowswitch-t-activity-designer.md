@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - FlowSwitch<T> конструктора действий
+title: Конструктор действий конструктор рабочих процессов-FlowSwitch <T>
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,39 +8,39 @@ f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLink`1.UI
 - System.Activities.Core.Presentation.FlowSwitchLinkIdentifier.UI
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f6d396acb62b9cac8f34ef106ac96257eec612
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f167f46a2ed118e8781f66e4a781d4a3ef95b0d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949634"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650409"
 ---
-# <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > конструктора действий
+# <a name="flowswitcht-activity-designer"></a>Конструктор действий > FlowSwitch \<T
 
 Действие <xref:System.Activities.Statements.FlowSwitch%601> - это условный узел, который обеспечивает ветвление потока управления на основе критерия соответствия, когда требуется более двух альтернативных ветвей. Если ветвление потока требует наличие только двух ветвей, вместо этого следует использовать действие <xref:System.Activities.Statements.FlowDecision>.
 
-## <a name="the-flowswitcht-activity"></a>FlowSwitch\<T > действия
+## <a name="the-flowswitcht-activity"></a>Действие FlowSwitch \<T >
 
-<xref:System.Activities.Statements.FlowSwitch%601> Действие содержит <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> , возвращающий значение типа *T* (как указано в универсальном параметре) при вычислении. Действие также содержит набор <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, который задает уникальное сопоставление на основе возможных результатов данного вычисления набору объектов <xref:System.Activities.Statements.FlowNode>. <xref:System.Activities.Statements.FlowNode> Выполняется та же которого объект типа *T* совпадает со значением вычисленного <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Вариант <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> может быть (дополнительно) предоставлен для варианта, в котором совпадений не было.
+@No__t_0 действие содержит <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, который возвращает значение типа *t* (заданное универсальным параметром) при вычислении. Действие также содержит набор <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, который задает уникальное сопоставление на основе возможных результатов данного вычисления набору объектов <xref:System.Activities.Statements.FlowNode>. @No__t_0 выполняется, объект типа *t* которого соответствует значению вычисляемого <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Вариант <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> может быть (дополнительно) предоставлен для варианта, в котором совпадений не было.
 
-### <a name="using-the-flowswitcht-activity-designer"></a>С помощью FlowSwitch\<T > конструктора действий
+### <a name="using-the-flowswitcht-activity-designer"></a>Использование конструктора действий > FlowSwitch \<T
 
-**FlowSwitch\<T >** конструктора действий можно найти в **блок-схема** категории **элементов**, который нажав **Элементов** вкладка в левой части конструктора рабочих процессов. Можно также выбрать **элементов** из **представление** меню или нажмите клавишу **Ctrl**+**Alt** + **X**.
+Конструктор действий **FlowSwitch \<T >** можно найти в категории блок- **схема** **области элементов**, щелкнув вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** +**ALT** +**X**.
 
-**FlowSwitch\<T >** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов в **блок-схема** Конструктор действий. Используйте **Выбор типов** окно, отображающее для указания типа (связанного в коде с <xref:System.Activities.Statements.FlowSwitch%601> его универсальном параметре) полученного от вычисления <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. В этой процедуре создается <xref:System.Activities.Statements.FlowSwitch%601> действие **коммутатора** в <xref:System.Activities.Statements.Flowchart> действия. <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> Можно ввести в **выражение** поле **свойства** окно, нажав кнопку, где написано «Введите выражение VB».
+Конструктор действий **FlowSwitch \<T >** можно перетащить из **области элементов** в область Конструктор рабочих процессов в конструкторе действия **блок-схемы** . Используйте окно **Выбор типов** , которое отображает, чтобы указать тип (связанный в коде с <xref:System.Activities.Statements.FlowSwitch%601> по его универсальному параметру), полученный при вычислении <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Эта процедура создает действие <xref:System.Activities.Statements.FlowSwitch%601> с меткой **switch** в действии <xref:System.Activities.Statements.Flowchart>. @No__t_0 можно ввести в поле **выражение** окна **свойства** , щелкнув там, где текст подсказки — "введите выражение VB".
 
-Наведите указатель мыши **FlowSwitch\<T >** конструктора действий, чтобы квадратных маркеров, которые используются для связи <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> для отображения вокруг его границ. После перетаскивания **FlowSwitch < T\>**  конструктора действий и других конструкторов в область конструктора **блок-схема**, <xref:System.Activities.Activity> объекты, они представляют можно связать друг с другом Чтобы указать порядок выполнения. Для создания одного из <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> связанные с <xref:System.Activities.Statements.FlowSwitch%601>, щелкните один из квадратных вариантов маркеров по периметру **FlowSwitch < T\>**  и перетащите его (удерживая кнопку мыши) на один из маркеров При наведении мыши на его конструктор, который отображается аналогичным образом вокруг целевого действия. Отпустите кнопку мыши и стрелку от **FlowSwitch < T\>**  к целевому конструктору появляется, представляющему данный вариант. Значение по умолчанию для данного варианта отображается на стрелке и могут редактироваться в **случай** поле **свойства** окна.
+Наведите указатель мыши на конструктор действий **FlowSwitch \<T >** , чтобы привязать к квадратным маркерам, которые используются для связывания <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, появятся вокруг его границ. После перетаскивания конструктора действий **FlowSwitch < T \>** и других конструкторов действий в **блок-схеме**<xref:System.Activities.Activity> объекты, которые они представляют, можно связать друг с другом, чтобы указать порядок выполнения. Чтобы создать один из <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, связанных с <xref:System.Activities.Statements.FlowSwitch%601>, щелкните один из квадратных маркеров в периметре **FlowSwitch < t \>** и перетащите его (удерживая нажатой кнопку мыши) на один из маркеров, которые отображаются аналогичным образом вокруг целевое действие при наведении указателя мыши на свой конструктор. Отпустите кнопку мыши и стрелку из **FlowSwitch < T \>** откроется конструктор назначения, представляющий этот случай. Значение по умолчанию для этого варианта отображается на стрелке, и его можно изменить в поле " **вариант** " окна " **свойства** ".
 
-### <a name="the-flowswitcht-properties"></a>FlowSwitch\<T > Свойства
+### <a name="the-flowswitcht-properties"></a>Свойства \<T FlowSwitch >
 
 В следующей таблице показаны свойства <xref:System.Activities.Statements.FlowSwitch%601> и описано их использование в конструкторе. Эти свойства можно изменить в сетке свойств или в области конструктора.
 
-|Имя свойства|Обязательно|Использование|
+|Имя свойства|Обязательное значение|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|Указывает выражение, вычисляемое для определения того, на какой из вариантов <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> следует переключиться в пути выполнения.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Задает уникальное сопоставление возможных результатов, полученных при вычислении <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, набору объектов <xref:System.Activities.Statements.FlowNode>.|

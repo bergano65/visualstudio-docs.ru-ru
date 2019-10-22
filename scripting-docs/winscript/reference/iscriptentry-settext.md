@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetText | Документация Майкрософт
+title: 'IScriptEntry:: SetText | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17e716a7ad52cc5aeca18d02122edb9c457b14e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b39dcbd2b61e7236403948eaa91a76e0afee45
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787636"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573632"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
-Задает текст, который соответствует `IScriptEntry` блок сценария, или исходный код, содержащийся в `IScriptScriptlet` обработчик событий.  
+Задает текст, соответствующий блоку `IScriptEntry` сценария, или исходный код, содержащийся в обработчике событий `IScriptScriptlet`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,16 +37,16 @@ HRESULT SetText(
   
 #### <a name="parameters"></a>Параметры  
  `psz`  
- [in] Текст `IScriptEntry` блок сценария, или исходный код `IScriptScriptlet` обработчик событий.  
+ окне Текст блока `IScriptEntry` скрипта или исходного кода обработчика событий `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

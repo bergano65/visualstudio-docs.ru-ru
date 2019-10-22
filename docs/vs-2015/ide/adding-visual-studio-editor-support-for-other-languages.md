@@ -12,15 +12,15 @@ helpviewer_keywords:
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68148248"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620776"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "68148248"
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Раскраска синтаксиса, завершение операторов и поддержка функции "Перейти к"
  Доступные в редакторе Visual Studio функции, такие как раскраска синтаксиса, завершение операторов и "Перейти к", упрощают чтение, создание и редактирование кода. На следующем снимке экрана показан пример редактирования скрипта Perl в Visual Studio. Синтаксис автоматически выделяется цветом. Например, примечания в коде выделяются зеленым цветом, код — черным, пути — красным, операторы — синим. Редактор Visual Studio автоматически применяет цветовое выделение синтаксиса к любому поддерживаемому им языку. Кроме того, по мере ввода известного ключевого слова или объекта функция завершения операторов выводит список возможных операторов и объектов. Функция завершения операторов помогает более быстро и легко создавать код.
 
- ![Раскраска синтаксиса в скрипте Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
+ ![Цветовая раскраска синтаксиса в скрипте Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
  Сейчас Visual Studio поддерживает раскраску синтаксиса и завершение базовых операторов для следующих языков с помощью [грамматик TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык отсутствует в таблице, его можно добавить.
 
@@ -80,7 +80,7 @@ ms.locfileid: "68148248"
 
  В Windows % userprofile % разрешается в путь: c:\Users\\ *\<имя_пользователя>* . Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.
 
- Дополнительные сведения о создании грамматик TextMate см. в разделе [TextMate – Общие сведения о грамматике языка: Добавление встроенных функций выделения синтаксиса исходного кода в HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [Примечания о создании грамматики языка и настраиваемой темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+ Дополнительные сведения о создании грамматик TextMate см. в статьях [TextMate. Общие сведения о грамматике языка: добавление выделения синтаксиса исходного кода, внедренного и HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [Заметки о создании грамматики языка и пользовательской темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
-## <a name="see-also"></a>См. также
- [Visual Studio 2013 перейдите к улучшения](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Пошаговое руководство: Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md) [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
+## <a name="see-also"></a>См. также раздел
+ [Visual Studio 2013 перейдите к](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) разделу "улучшения". Пошаговое руководство по [созданию фрагментов кода](../ide/walkthrough-creating-a-code-snippet.md) [: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)

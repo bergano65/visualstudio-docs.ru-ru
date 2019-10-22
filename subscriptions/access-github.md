@@ -1,21 +1,21 @@
 ---
-title: Пакет Visual Studio с GitHub | Документация Майкрософт
+title: Предложение Visual Studio с GitHub | Документация Майкрософт
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: Сведения о новом пакете Visual Studio с GitHub
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+description: Сведения о новом предложении Visual Studio с GitHub
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238149"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Общие сведения о подписках Visual Studio с GitHub Enterprise  
 
-Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новый пакет, в котором объединены стандартные подписки Visual Studio и подписки GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
+Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новое предложение, в котором объединены стандартные подписки Visual Studio и GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
 
 - Пользуйтесь всеми инновационными возможностями Visual Studio с GitHub, внедряя безопасные функции для работы с открытым исходным кодом, лучшие методики и наработки сообщества в свои рабочие процессы и интегрированную среду разработки.
 - Используйте лучшие в своем классе средства разработки и службы для разработчиков, предлагающие наиболее полный набор ресурсов для создания и развертывания приложений, а также управления ими. 
@@ -28,11 +28,11 @@ ms.locfileid: "68377651"
 - Visual Studio Enterprise с GitHub Enterprise
 - Visual Studio Professional с GitHub Enterprise
 
-Если у вашей организации есть действующее соглашение EA, которое пока не требуется продлевать, вы можете приобрести SKU для повышения уровня, чтобы добавить GitHub Enterprise в существующие подписки Visual Studio Enterprise или Visual Studio Professional.  В дальнейшем при продлении соглашения вы сможете приобрести сам пакет.
+Если у вашей организации есть действующее соглашение EA, которое пока не требуется продлевать, вы можете приобрести SKU для повышения уровня, чтобы добавить GitHub Enterprise в существующие подписки Visual Studio Enterprise или Visual Studio Professional. В дальнейшем при продлении соглашения вы сможете приобрести само предложение.
 
 Существующие SKU для Visual Studio Enterprise, Visual Studio Professional, и GitHub Enterprise по-прежнему можно будет приобрести отдельно. 
 
-Дополнительные сведения о преимуществах, вариантах и ценах см. на странице https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+Дополнительные сведения о преимуществах и вариантах см. на странице https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
 ## <a name="getting-your-subscriptions"></a>Получение подписок
 
@@ -40,7 +40,7 @@ ms.locfileid: "68377651"
 1. Подписка Visual Studio (Enterprise или Professional)
 2. Подписка GitHub Enterprise
 
-Подписки, которые приобретает ваша организация, назначаются администраторами.  Подписки Visual Studio и GitHub Enterprise назначаются отдельно.  
+Подписки, которые приобретает ваша организация, назначаются администраторами. Подписки Visual Studio и GitHub Enterprise назначаются отдельно.  
 
 Если ваш администратор подписки Visual Studio назначает подписку Visual Studio с GitHub, вы получите сообщение электронной почты с уведомлением об этом.  С этого момента подписку можно будет просмотреть на странице https://my.visualstudio.com/subscriptions.  
 

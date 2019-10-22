@@ -2,31 +2,31 @@
 title: Публикация в папку
 ms.date: 04/02/2019
 helpviewer_keywords:
-- deployment, website
+- deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: e22176d2188df92f0956f88c912d48cb9c954dd9
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 165cfc38b8289946e0966083785defd18ca87d77
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222762"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095410"
 ---
-# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Публикация веб-приложения в папку с помощью Visual Studio для Mac
+# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Публикация в папке с помощью Visual Studio для Mac
 
-Вы можете использовать средство публикации для публикации приложений ASP.NET Core в папку.
+Вы можете использовать средство публикации для публикации консольных приложений .NET Core или приложений ASP.NET Core в папке.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2019 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019), установленный с поддержкой ASP.NET Core.
-- Проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Среда [Visual Studio 2019 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019), установленная с поддержкой .NET Core.
+- Консоль .NET Core или проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Публикация в папку
 
-С помощью Visual Studio для Mac можно публиковать проекты ASP.NET Core в папку, используя средство публикации. После публикации в папку можно передать файлы на веб-сервер, чтобы получить его в другой среде. Для публикации в папку выполните следующие действия.
+С помощью Visual Studio для Mac можно публиковать проекты .NET Core в папке, используя средство публикации. После публикации в папке можно передать файлы в другую среду. Для публикации в папку выполните следующие действия.
 
  1. На панели решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
 

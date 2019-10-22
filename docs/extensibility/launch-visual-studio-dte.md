@@ -3,37 +3,37 @@ title: Запуск Visual Studio с помощью DTE
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399f98964dca29eccfd7d3c2bb691205f373a3b3
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747002"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647963"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Запуск Visual Studio с помощью DTE
 
-Начиная с Visual Studio 2017, механизм для запуска Visual Studio с помощью DTE отличается запуск предыдущих версий Visual Studio. Это изменение было необходимо, так как Visual Studio 2017 и более поздних версий поддерживает side-by-side установок основных выпусков (например, можно установить предварительной версии и версии, установленный параллельно).
+Начиная с Visual Studio 2017 механизм запуска Visual Studio с использованием DTE отличается для запуска предыдущих версий Visual Studio. Это изменение необходимо, так как Visual Studio 2017 и более поздние версии поддерживают параллельные установки основных выпусков (например, можно использовать предварительный просмотр и параллельно установленная версия выпуска).
 
-В оставшейся части этой статьи показывает код, который можно использовать для запуска Visual Studio с помощью DTE 2019 г.
+В оставшейся части этой статьи показан код, который можно использовать для запуска Visual Studio 2019 с помощью DTE.
 
 ## <a name="set-up-the-project"></a>Настройка проекта
 
-Для просмотра запуска кода в действии, создайте проект, выполнив следующие действия.
+Чтобы увидеть запуск кода в действии, создайте проект, выполнив следующие действия.
 
-1. Создайте новый **консольное приложение** проекта для .NET Framework.
+1. Создайте новый проект **консольного приложения** для .NET Framework.
 
-2. Установка [Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet пакета и добавьте ссылку на сборку.
+2. Установите пакет NuGet [Microsoft. VisualStudio. Setup. Configuration. Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) и добавьте ссылку на сборку.
 
 3. Добавьте ссылку на EnvDTE.
 
-4. Вставить [пример кода](#example-code) , который следует за в *Program.cs* файл.
+4. Вставьте приведенный ниже [пример кода](#example-code) в файл *Program.CS* .
 
-5. Нажмите клавишу **F5** для запуска программы. Вы должны увидеть Visual Studio откройте до выхода из программы 2019 г.
+5. Нажмите клавишу **F5** , чтобы запустить программу. Перед выходом из программы вы увидите Visual Studio 2019 Open.
 
 ## <a name="example-code"></a>пример кода
 
@@ -187,5 +187,5 @@ namespace ConsoleLauncherApp
 
 ## <a name="see-also"></a>См. также
 
-- [Найдите Visual Studio](locating-visual-studio.md)
-- [Пошаговое руководство: Доступ к объекту DTE из расширения редактора](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [Обнаружение Visual Studio](locating-visual-studio.md)
+- [Пошаговое руководство. доступ к объекту DTE из расширения редактора](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId | Документация Майкрософт
+title: 'Идебугдокументинфо:: Жетдокументклассид | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e86c42954fafd4135956845f9465629cde9990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996e6d751807bba1e1a74cbb7e579db25193c32b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971086"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569080"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
-Возвращает `CLSID` определения типа документа.  
+Возвращает `CLSID`, определяющую тип документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,19 +37,19 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>Параметры  
  `pclsidDocument`  
- [out] Объект `CLSID` определения типа документа.  
+ заполняет @No__t_0, определяющий тип документа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод позволяет отладчику интегрированной среды разработки узла пользовательских средств просмотра для этого документа.  
+## <a name="remarks"></a>Заметки  
+ Этот метод позволяет интегрированной среде разработки отладчика размещать пользовательские средства просмотра для этого документа.  
   
- Если документ не содержит просматриваемые данные, возвращаемое значение `pclsidDocument` является `CLSID_NULL`.  
+ Если в документе нет отображаемых данных, возвращаемое значение `pclsidDocument` будет `CLSID_NULL`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)

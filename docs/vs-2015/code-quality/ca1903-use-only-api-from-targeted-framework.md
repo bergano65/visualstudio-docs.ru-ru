@@ -1,5 +1,5 @@
 ---
-title: CA1903. Используйте API-Интерфейс только из целевой версии .NET framework | Документация Майкрософт
+title: 'CA1903: Используйте API только из целевой платформы | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,62 +12,61 @@ helpviewer_keywords:
 - CA1903
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dec130e4a4704bea347f94ff57d354a4465ddd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189083"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604968"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903. Используйте API только из целевой рабочей среды
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: использовать API-интерфейс только из целевой исполняющей среды
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [CA1903: Используйте API-Интерфейс только из целевой версии .NET framework](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).  
-  
-|||  
-|-|-|  
-|TypeName|UseOnlyApiFromTargetedFramework|  
-|CheckId|CA1903|  
-|Категория|Microsoft.Portability|  
-|Критическое изменение|Критическое — цифровой подписи видимого члена или типа.<br /><br /> Не критическое — при возникновении в теле метода.|  
-  
-## <a name="cause"></a>Причина  
- Член или тип использует член или тип, который появился в пакете обновления, не был включен в целевой версии .NET framework проекта.  
-  
-## <a name="rule-description"></a>Описание правила  
- Новые элементы и типы были включены в .NET Framework 2.0 с пакетом обновления 1 и 2, .NET Framework 3.0 с пакетом обновления 1 и 2 и .NET Framework 3.5 с пакетом обновления 1. Проекты, предназначенные для основных версий платформы .NET Framework, могут непреднамеренно иметь зависимости от этих новых интерфейсов API. Чтобы предотвратить эту зависимость, это правило срабатывает при обнаружении новых членов и типов, которые не были включены по умолчанию с целевой платформой проекта.  
-  
- **Целевая рабочая среда и зависимостей пакета службы**  
-  
-|||  
-|-|-|  
-|Целевая платформа|Активируется при обнаружении членов, появившихся в|  
-|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|  
-|.NET Framework 3.0|.NET framework 2.0 SP1, SP2 .NET Framework 2.0, .NET Framework 3.0 с пакетом обновления 1, .NET Framework 3.0 с пакетом обновления 2|  
-|.NET Framework 3,5|.NET Framework 3.5 SP1|  
-|.NET Framework 4|Н/Д|  
-  
- Для изменения целевой платформы проекта см. в разделе [предназначенных для определенной версии .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Чтобы удалить зависимость от пакета обновления, удалите все случаи использования нового члена или типа. Если это зависимость добавлена специально отключить предупреждение, или отключить это правило.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Не отключайте предупреждение из этого правила, если это не было намеренным зависимость от указанного пакета обновления. В этом случае приложение может не работать на системах, не установлен пакет обновления. Вывод предупреждений или отключить это правило, если это была зависимость добавлена специально.  
-  
-## <a name="example"></a>Пример  
- В следующем примере класс, который использует тип DateTimeOffset, доступна только в пакете обновления 1 для .NET 2.0. В этом примере требуется, что .NET Framework 2.0 был выбран в раскрывающемся списке требуемой версии .NET Framework в свойствах проекта.  
-  
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework.cs#1)]  
-  
-## <a name="example"></a>Пример  
- В следующем примере устраняется нарушение, описанное выше, заменив случаи использования типа DateTimeOffset с типом DateTime.  
-  
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]  
-  
-## <a name="see-also"></a>См. также  
- [Предупреждения переносимости](../code-quality/portability-warnings.md)   
- [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+Последнюю документацию по Visual Studio см. в разделе [CA1903: использование API только из целевой платформы](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
+
+|||
+|-|-|
+|TypeName|UseOnlyApiFromTargetedFramework|
+|CheckId|CA1903|
+|Категория|Microsoft. переносимость|
+|Критическое изменение|Критическое — при срабатывании сигнатуры видимого извне члена или типа.<br /><br /> Не критическое — при срабатывании в теле метода.|
+
+## <a name="cause"></a>Причина
+ Элемент или тип использует член или тип, который появился в пакете обновления, который не был включен в целевую платформу проекта.
+
+## <a name="rule-description"></a>Описание правила
+ Новые члены и типы были добавлены в .NET Framework 2,0 с пакетом обновления 1 (SP1) и 2, .NET Framework 3,0 с пакетом обновления 1 и 2 и .NET Framework 3,5 с пакетом обновления 1 (SP1). Проекты, предназначенные для основных версий .NET Framework, могут непреднамеренно принимать зависимости от этих новых API. Чтобы предотвратить эту зависимость, это правило срабатывает при использовании любых новых элементов и типов, которые не были включены по умолчанию в целевой платформе проекта.
+
+ **Зависимости целевой платформы и пакета обновления**
+
+|||
+|-|-|
+|Когда Целевая платформа|Срабатывает при использовании членов, появившихся в|
+|.NET Framework 2.0|.NET Framework 2,0 с пакетом обновления 1 (SP1), .NET Framework 2,0 SP2|
+|.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
+|.NET Framework 3,5|.NET Framework 3.5 SP1|
+|.NET Framework 4|Н/Д|
+
+ Чтобы изменить целевую платформу проекта, см. раздел [нацеленность на определенную версию .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Чтобы удалить зависимость от пакета обновления, удалите все случаи использования нового члена или типа. Если эта зависимость заменяется намеренно, отключите предупреждение или выключите это правило.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Не отключайте предупреждение из этого правила, если это не является преднамеренной зависимостью от указанного пакета обновления. В этом случае приложение может не запуститься в системах без установленного пакета обновления. Подавление предупреждения или отключение этого правила, если это была преднамеренная зависимость.
+
+## <a name="example"></a>Пример
+ В следующем примере показан класс, который использует тип DateTimeOffset, доступный только в пакете обновления 1 (SP1) для .NET 2,0. В этом примере требуется, чтобы .NET Framework 2,0 был выбран в раскрывающемся списке Целевая платформа в свойствах проекта.
+
+ [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework.cs#1)]
+
+## <a name="example"></a>Пример
+ В следующем примере исправляется ранее описанное нарушение путем замены использования типа DateTimeOffset типом DateTime.
+
+ [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]
+
+## <a name="see-also"></a>См. также раздел
+ [Предупреждения переносимости](../code-quality/portability-warnings.md) [, нацеленные на определенную версию .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

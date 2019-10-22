@@ -6,18 +6,18 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 13aa6e595deb83344d40dff396c7e106bdcbc67e
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 7ffe24d26af91d7d6733ec1540c2f2d810425e1e
+ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108034"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175408"
 ---
 # <a name="javascript-and-typescript-support"></a>Поддержка JavaScript и TypeScript
 
 Visual Studio для Mac обеспечивает поддержку JavaScript и TypeScript посредством подсветки синтаксиса, форматирования кода и технологии IntelliSense.
 
-![поддержка typescript в редакторе](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
+![поддержка typescript в редакторе](/media/tsjseditor-2019.gif)
 
 Дополнительные сведения о программировании на JavaScript см. в руководстве [Написание кода JavaScript](/scripting/javascript/writing-javascript-code).
 
@@ -35,13 +35,13 @@ Visual Studio для Mac обеспечивает поддержку JavaScript 
 
 Visual Studio для Mac использует [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) для предоставления возможностей IntelliSense при написании кода, а именно: интеллектуальное завершение кода, сведения о параметрах и списки членов.
 
-IntelliSense для JavaScript в Visual Studio для Mac может опираться на определение типов, JSDoc или объявлений TypeScript.
+IntelliSense для JavaScript в Visual Studio для Mac может опираться на определение типов, JSDoc или объявления TypeScript.
 
 - **Определение типа** — тип объекта определяется окружающему контексту кода. Дополнительные сведения см. в разделе [IntelliSense на основе определения типа](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference) документации по Visual Studio.
 - **JSDoc** — бывают случаи, когда определение типа не предоставляет правильные сведения о типе. В этих случаях сведения о типе предоставляются явно с помощью заметок [JSDoc](https://jsdoc.app/about-getting-started.html). Дополнительные сведения см. в разделе [IntelliSense на основе JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) документации по Visual Studio
 - **Файл объявлений TypeScript** — файлы `.d.ts`, используемые для предоставления значений для IntelliSense для JavaScript. Типы, объявленные в этом файле, могут использоваться как типы в комментариях JSDoc. Дополнительные сведения см. в разделе [IntelliSense на основе файлов объявления TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) документации по Visual Studio.
 
-    ![Добавление файла определения TypeScript](media/javascript-image3.png)
+    ![Добавление файла определения TypeScript](media/javascript-type-intellisense-2019.gif)
 
 ## <a name="see-also"></a>См. также
 

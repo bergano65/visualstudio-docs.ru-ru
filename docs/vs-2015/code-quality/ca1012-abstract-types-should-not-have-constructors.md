@@ -1,5 +1,5 @@
 ---
-title: CA1012. Абстрактные типы не должны иметь конструкторы | Документация Майкрософт
+title: 'CA1012: абстрактные типы не должны иметь конструкторы | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,24 +11,24 @@ helpviewer_keywords:
 - CA1012
 ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 02b92ac92e545ab30405d195d85a97a4ef2e3806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3f53e8b5eab78e79387c24643500888db27b764
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68151085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663232"
 ---
-# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012. Абстрактные типы не должны иметь конструкторы
+# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: абстрактные типы не должны иметь конструкторы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|AbstractTypesShouldNotHaveConstructors|
+|TypeName|абстракттипесшаулдносавеконструкторс|
 |CheckId|CA1012|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
@@ -38,19 +38,19 @@ ms.locfileid: "68151085"
  Конструкторы абстрактных типов могут быть вызваны только производными типами. Открытые конструкторы создают экземпляры типа. Невозможно создавать экземпляры абстрактного типа; абстрактный тип с открытым конструктором является недопустимым.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, защищать конструктор, или не объявите тип как абстрактный.
+ Чтобы устранить нарушение этого правила, либо сделайте конструктор защищенным, либо не объявляйте тип как абстрактный.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Абстрактный тип имеет открытый конструктор без параметров.
+ Для этого правила отключать вывод предупреждений не следует. Абстрактный тип имеет открытый конструктор.
 
 ## <a name="example"></a>Пример
- Следующий пример содержит абстрактный тип, который нарушает это правило.
+ В следующем примере содержится абстрактный тип, нарушающий это правило.
 
  [!code-csharp[FxCop.Design.AbstractTypeBad#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeBad/cs/FxCop.Design.AbstractTypeBad.cs#1)]
  [!code-vb[FxCop.Design.AbstractTypeBad#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeBad/vb/FxCop.Design.AbstractTypeBad.vb#1)]
 
 ## <a name="example"></a>Пример
- В следующем примере устраняется нарушение устраняется путем изменения специальных возможностей конструктора из `public` для `protected`.
+ Следующий пример устраняет предыдущее нарушение, изменяя доступность конструктора с `public` на `protected`.
 
  [!code-csharp[FxCop.Design.AbstractTypeGood#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeGood/cs/FxCop.Design.AbstractTypeGood.cs#1)]
  [!code-vb[FxCop.Design.AbstractTypeGood#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeGood/vb/FxCop.Design.AbstractTypeGood.vb#1)]

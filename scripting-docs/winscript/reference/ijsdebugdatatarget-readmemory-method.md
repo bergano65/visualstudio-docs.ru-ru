@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::ReadMemory | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: ReadMemory | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 705fff3bf2d4be78897c18c5a4c61bd74a8c2230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84da36433cf3546b34d3e044bb113916c9798117
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582364"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572434"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>Метод IJsDebugDataTarget::ReadMemory
-Читает содержимое памяти целевого процесса.  
+Считывает память целевого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,27 +39,27 @@ HRESULT ReadMemory(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Базовый адрес, из которого считывается в память целевого процесса.  
+ окне Базовый адрес, из которого считывается память целевого процесса.  
   
  `flags`  
- [in] Флаги, контролирующие поведение ReadMemory.  
+ окне Флаги, управляющие поведением ReadMemory.  
   
  `pBuffer`  
- [out] Буфер, получающий содержимое из адресного пространства целевого процесса. В случае сбоя содержимое данного буфера не определено.  
+ заполняет Буфер, который получает содержимое из адресного пространства целевого процесса. В случае сбоя содержимое этого буфера не указано.  
   
  `size`  
- [in] Число байтов, считываемых из процесса.  
+ окне Число байтов, считываемых из процесса.  
   
  `pBytesRead`  
- [out] Указывает число байтов, считанных из целевого процесса. Если JsDebugAllowPartialRead снят, при успешном завершении это значение всегда будет точно равно размеру ввода. Если JsDebugAllowPartialRead задан, в случае успеха, это значение будет больше нуля.  
+ заполняет Указывает число байтов, считанных из целевого процесса. Если Жсдебугалловпартиалреад является очевидным, при успешном выполнении это значение всегда будет точно равно размеру входных данных. Если указан параметр Жсдебугалловпартиалреад, значение в случае успешного выполнения будет больше нуля.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Возвращает значение s_ок в успехе и коды ошибок используются для любой ошибки. Возвращает E_JsDEBUG_INVALID_MEMORY_ADDRESS, если адрес является недопустимым. Дополнительные сведения см. в разделе JsDebugAllowPartialRead.  
+## <a name="remarks"></a>Заметки  
+ Возвращает значение S_OK при успешном выполнении, и коды ошибок используются для любой ошибки. Возвращает E_JsDEBUG_INVALID_MEMORY_ADDRESS, если адрес является недопустимым. Дополнительные сведения см. в разделе Жсдебугалловпартиалреад.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

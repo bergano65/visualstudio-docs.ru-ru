@@ -1,7 +1,7 @@
 ---
 title: Автоматическое применение ключей продуктов
 description: Сведения о применении ключей продуктов программными средствами при развертывании Visual Studio.
-ms.date: 04/10/2019
+ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891306"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831848"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Автоматическое применение ключей продуктов при развертывании Visual Studio
 
@@ -89,7 +89,7 @@ ms.locfileid: "69891306"
 
 Если `StorePID.exe` успешно применен к ключу продукта, для параметра `%ERRORLEVEL%` возвращается значение 0. При обнаружении ошибок возвращается один из следующих кодов в зависимости от состояния ошибки:
 
-| Error                     | Код |
+| Ошибка                     | Код |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -99,10 +99,10 @@ ms.locfileid: "69891306"
 | `PID_ACTION_FAILURE`      | 5    |
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
-
 > [!NOTE]
-> Для устранения неполадок с виртуальными экземплярами запустите *C:\Program Files (x86)\Microsoft Visual Studio \<version\>\Common7\IDE\DDConfigCA.exe*.
+> При запуске виртуального экземпляра Visual Studio должны быть также виртуализированы локальная папка AppData и реестр. Чтобы устранить неполадки виртуальных экземпляров, выполните `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`.  
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 

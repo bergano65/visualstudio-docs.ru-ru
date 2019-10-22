@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetDescription | Документация Майкрософт
+title: 'Иремотедебугаппликатионсреад:: ondescription | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c60e12eef269da46aea317611cb06223d0811ddc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e49b9fd65d87bebb32764202efffcaec467eb2d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788200"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575262"
 ---
 # <a name="iremotedebugapplicationthreadgetdescription"></a>IRemoteDebugApplicationThread::GetDescription
-Возвращает описание и состояние данного потока.  
+Возвращает описание и состояние этого потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT GetDescription(
   
 #### <a name="parameters"></a>Параметры  
  `pbstrDescription`  
- [out] Описание для данного потока.  
+ заполняет Описание этого потока.  
   
  `pbstrState`  
- [out] Описание состояния потока.  
+ заполняет Описание состояния потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает описание и состояние данного потока.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает описание и состояние этого потока.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

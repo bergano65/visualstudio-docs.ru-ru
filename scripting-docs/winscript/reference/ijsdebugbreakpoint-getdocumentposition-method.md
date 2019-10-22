@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugBreakPoint::GetDocumentPosition | Документация Майкрософт
+title: 'Метод метод ijsdebugbreakpoint:: Жетдокументпоситион | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146eb26c887cd24d1eb7af858535fcecac62b41d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f3bc5aff0b7079e20e2bcd49189153d2ec20d9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583149"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577692"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>Метод IJsDebugBreakPoint::GetDocumentPosition
-Возвращает позицию инструкции, где была привязана точка останова.  
+Возвращает позицию инструкции, в которой была привязана точка останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>Параметры  
  `pDocumentId`  
- [out] Уникальный идентификатор для исходного документа (указатель на IDebugDocumentText).  
+ заполняет Уникальный идентификатор исходного документа (указатель на Идебугдокументтекст).  
   
  `pCharacterOffset`  
- [out] Отсчитываемый от нуля смещение от начала скрипта.  
+ заполняет Отсчитываемое от нуля смещение символов от начала скрипта.  
   
  `pStatementCharCount`  
- [out] Длина текущей инструкции, которая начинается с * pCharacterOffset, в символах.  
+ заполняет Длина текущего оператора, начинающегося в * Пчарактероффсет, в символах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

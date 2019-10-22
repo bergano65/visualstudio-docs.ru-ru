@@ -1,5 +1,5 @@
 ---
-title: Выполнение модульных тестов для приложений Store
+title: Выполнение модульных тестов для приложений Магазина
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446224"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672245"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Модульное тестирование приложений Магазина в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "63446224"
 
  Большую часть работы по поиску, организации и выполнению тестов можно выполнять из панели инструментов обозревателя тестов.
 
- ![Запуск тестов на панели инструментов в обозревателе тестов](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Выполнение тестов на панели инструментов обозревателя тестов](../test/media/ute-toolbar.png "UTE_ToolBar")
 
 ### <a name="BKMK_Running_tests"></a> Запуск тестов
  Можно выполнить все тесты в решении, все тесты в группе или выбранный набор тестов. Выполните одно из следующих действий.
@@ -96,7 +96,7 @@ ms.locfileid: "63446224"
 - трассировка стека во время сбоя теста.
 
 ### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Просмотр исходного кода метода теста
- Чтобы отобразить исходный код для метода теста в редакторе Visual Studio, выберите тест и щелкните пункт **Открыть тест** в контекстном меню (клавиша: F12).
+ Чтобы отобразить исходный код для метода теста в редакторе Visual Studio, выберите тест и щелкните пункт **Открыть тест** в контекстном меню (клавиша F12).
 
 ## <a name="BKMK_Organizing_the_test_list"></a> Упорядочивание списка тестов
 
@@ -110,7 +110,7 @@ ms.locfileid: "63446224"
 ### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Поиск и фильтрация списка тестов
  Если тестов много, можно отфильтровать список по определенной строке. Для этого введите соответствующий текст в поле поиска обозревателя тестов. Список тестов можно ограничить определенными типами строк, выбрав их в списке фильтров перед вводом строки для поиска.
 
- ![Категории фильтров поиска](../test/media/ute-searchfilter.png "UTE_SearchFilter")
+ ![Категории фильтра поиска](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
 ## <a name="BKMK_Debugging_unit_tests"></a> Отладка модульных тестов
  Можно использовать Обозреватель тестов для запуска сессии исправления ошибок тестов. Пошагово выполняя код, отладчик Visual Studio плавно переключается назад и вперед между модульными тестами и проектом для тестирования. Начало отладки

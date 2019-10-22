@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState | Документация Майкрософт
+title: 'IActiveScript:: Жетскриптстате | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f9f3bedee9af9ae3cb145108d801f252267d5d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d266e713879aafe1c5ca271d46b3030f3275460f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935752"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575728"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-Возвращает текущее состояние обработчика сценариев. Этот метод может вызываться из потоков не основной не входили в выноске отличные от базовых объектов узла или [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) интерфейс.  
+Извлекает текущее состояние обработчика скриптов. Этот метод может быть вызван из не базовых потоков, что приводит к небазовому вызову для размещения объектов или интерфейсу [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>Параметры  
  `pss`  
- [out] Адрес переменной, получающей значение, определенное в [перечисление SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) перечисления. Значение указывает текущее состояние обработчика сценариев, связанных с вызывающего потока.  
+ заполняет Адрес переменной, получающей значение, определенное в перечислении [перечисления скриптстате](../../winscript/reference/scriptstate-enumeration.md) . Значение указывает текущее состояние обработчика скриптов, связанного с вызывающим потоком.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_POINTER` Если был указан недопустимый указатель.  
+ Возвращает `S_OK` в случае успеха или `E_POINTER`, если был указан недопустимый указатель.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

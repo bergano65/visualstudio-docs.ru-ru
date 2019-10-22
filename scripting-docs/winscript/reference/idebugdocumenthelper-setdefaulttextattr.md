@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Сетдефаулттекстаттр | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea63f028497f1eb90803f59423f608d0a42960cf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948958"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574638"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
-Задает атрибуты по умолчанию, используемый для текста, который не находится в блок сценария.  
+Задает атрибуты по умолчанию, используемые для текста, который не находится в блоке скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,13 +42,13 @@ HRESULT SetDefaultTextAttr(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Атрибуты по умолчанию изменяются с помощью данного метода, атрибуты по умолчанию для текста за пределами блока скрипта является SOURCETEXT_ATTR_NONSOURCE. Эти сведения можно использовать в пользовательском интерфейсе для выделения текста за пределами блоков скриптов только для чтения.  
+## <a name="remarks"></a>Заметки  
+ Если этот метод не изменяет атрибуты по умолчанию, то для текста за пределами блока скрипта используются атрибуты по умолчанию SOURCETEXT_ATTR_NONSOURCE. Пользовательский интерфейс может использовать эти сведения для пометки текста вне блоков скриптов как предназначенных только для чтения.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

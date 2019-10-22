@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3576e34b52e524b88300c089c2beda0be6ed0e28
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740019"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831873"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 
 **Предыдущий шаг. [Написание и запуск кода](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
@@ -54,7 +54,7 @@ ms.locfileid: "68740019"
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Выделите в файле *.py* только операторы `import` и `from`, щелкните их правой кнопкой мыши и выберите команду **Отправить в Interactive** (или нажмите клавиши **CTRL**+**ВВОД**). Фрагмент кода будет немедленно вставлен в **интерактивное** окно, после чего начнется его выполнение. Теперь выделите функцию `make_dot_string` и снова выполните ту же команду, чтобы начать выполнение этого фрагмента кода. Так как код определяет функцию, можно быстро проверить эту функцию, вызвав ее несколько раз:
+1. Выделите в файле *.py* операторы функций `import`, `from` и `make_dot_string`, щелкните их правой кнопкой мыши и выберите команду **Отправить в интерактивное окно** (или нажмите клавиши **CTRL**+**ВВОД**). Фрагмент кода будет немедленно вставлен в **интерактивное** окно, после чего начнется его выполнение. Теперь выделите функцию `make_dot_string` и снова выполните ту же команду, чтобы начать выполнение этого фрагмента кода. Так как код определяет функцию, можно быстро проверить эту функцию, вызвав ее несколько раз:
 
     ![Отправка кода в интерактивное окно и его тестирование](media/vs-getting-started-python-14-interactive4.png)
 

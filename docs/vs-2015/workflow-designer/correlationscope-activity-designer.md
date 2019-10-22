@@ -1,5 +1,5 @@
 ---
-title: Конструктор действия CorrelationScope | Документация Майкрософт
+title: Конструктор действий CorrelationScope | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,44 +8,39 @@ f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 95c8422d53903c3c7b81db9f6ef042c5ea9ff1c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ffcfd63d60ab6f085b5cb2a793e8bf17a50d8e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976767"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656910"
 ---
 # <a name="correlationscope-activity-designer"></a>Конструктор действия CorrelationScope
-**CorrelationScope** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.CorrelationScope> действие, которое обеспечивает неявное управление дочерними действиями обмена сообщениями с помощью <xref:System.ServiceModel.Activities.CorrelationHandle> объекта.  
-  
-## <a name="the-correlationscope-activity"></a>Действие CorrelationScope  
- Свойство <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> задает объект <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для управления дочерними действиями обмена сообщениями. Действия <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.Receive>, содержащиеся в свойстве <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>, настроены на использование свойства <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> содержащегося действия <xref:System.ServiceModel.Activities.CorrelationScope> для выполнения корреляции.  
-  
-### <a name="using-the-correlationscope-activity-designer"></a>Использование конструктора операций CorrelationScope  
- **CorrelationScope** конструктора действий можно найти в **Messaging** категории **элементов**, который нажав **панелиэлементов** вкладка в левой части [!INCLUDE[wfd2](../includes/wfd2-md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)  
-  
- **CorrelationScope** конструктор действия можно перетащить из **элементов** и сбросить в [!INCLUDE[wfd2](../includes/wfd2-md.md)] поверхности. При этом создается <xref:System.ServiceModel.Activities.CorrelationScope> действие по умолчанию **DisplayName** для CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **CorrelationScope** конструктора действий или в **DisplayName** поле **свойства** окна.  
-  
- Чтобы указать <xref:System.ServiceModel.Activities.CorrelationHandle> используемый дочерними действиями обмена сообщениями, нажмите кнопку с многоточием рядом с **CorrelatesWith** в **свойства** окно для отображения **редактор выражений**  диалоговое окно. Это свойство также можно задать в области конструктора операций.  
-  
- Действия, ограниченные пределами корреляции, указываются путем сброса их конструкторов в **текст** поле в пределах **CorrelationScope** конструктора.  
-  
-### <a name="the-correlationscope-properties"></a>Свойства CorrelationScope  
- В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.CorrelationScope> и описано их использование в конструкторе. Эти свойства можно изменить либо в **свойства** окне или на [!INCLUDE[wfd2](../includes/wfd2-md.md)] конструктора и часто в обеих.  
-  
-|Имя свойства|Обязательно|Использование|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.InitializeCorrelation>.|  
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Задает объект <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для управления дочерними действиями обмена сообщений. Если это свойство не задано, то действие <xref:System.ServiceModel.Activities.CorrelationScope> создает неявный объект <xref:System.ServiceModel.Activities.CorrelationHandle> автоматически.|  
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Указывает действия в области корреляции.|  
-  
-## <a name="see-also"></a>См. также  
- [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Получение](../workflow-designer/receive-activity-designer.md)   
- [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
- [Отправить](../workflow-designer/send-activity-designer.md)   
- [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)   
- [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)
+Конструктор действий **CorrelationScope** используется для создания и настройки действия <xref:System.ServiceModel.Activities.CorrelationScope>, которое обеспечивает неявное Управление дочерними операциями обмена сообщениями с помощью объекта <xref:System.ServiceModel.Activities.CorrelationHandle>.
+
+## <a name="the-correlationscope-activity"></a>Действие CorrelationScope
+ Свойство <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> задает объект <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для управления дочерними действиями обмена сообщениями. Действия <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.Receive>, содержащиеся в свойстве <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>, настроены на использование свойства <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> содержащегося действия <xref:System.ServiceModel.Activities.CorrelationScope> для выполнения корреляции.
+
+### <a name="using-the-correlationscope-activity-designer"></a>Использование конструктора операций CorrelationScope
+ Конструктор действий **CorrelationScope** можно найти в категории **Обмен сообщениями** **области элементов**, щелкнув вкладку **область элементов** в левой части [!INCLUDE[wfd2](../includes/wfd2-md.md)] (также можно выбрать **панель инструментов** в окне Меню " **вид** " или CTRL + ALT + X.)
+
+ Конструктор действий **CorrelationScope** можно перетащить из **области элементов** в область [!INCLUDE[wfd2](../includes/wfd2-md.md)]. При этом создается действие <xref:System.ServiceModel.Activities.CorrelationScope> со значением **DisplayName** по умолчанию CorrelationScope. @No__t_0 можно изменить в заголовке конструктора действий **CorrelationScope** или в поле **DisplayName** окна **Свойства** .
+
+ Чтобы указать <xref:System.ServiceModel.Activities.CorrelationHandle>, используемые дочерними операциями обмена сообщениями, нажмите кнопку с многоточием рядом с полем **CorrelatesWith** в окне " **свойства** ", чтобы открыть диалоговое окно **Редактор выражений** . Это свойство также можно задать в области конструктора операций.
+
+ Действия, заданные в рамках корреляции, задаются путем удаления их конструкторов в поле **Body** в конструкторе **CorrelationScope** .
+
+### <a name="the-correlationscope-properties"></a>Свойства CorrelationScope
+ В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.CorrelationScope> и описано их использование в конструкторе. Эти свойства можно изменять либо в окне « **Свойства** », либо в области конструктора [!INCLUDE[wfd2](../includes/wfd2-md.md)], и часто в обоих.
+
+|Имя свойства|Обязательное значение|Использование|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Задает объект <xref:System.ServiceModel.Activities.CorrelationHandle>, используемый для управления дочерними действиями обмена сообщений. Если это свойство не задано, то действие <xref:System.ServiceModel.Activities.CorrelationScope> создает неявный объект <xref:System.ServiceModel.Activities.CorrelationHandle> автоматически.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Указывает действия в области корреляции.|
+
+## <a name="see-also"></a>См. также раздел
+ [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) [Receive](../workflow-designer/receive-activity-designer.md) [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) [Send](../workflow-designer/send-activity-designer.md) [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

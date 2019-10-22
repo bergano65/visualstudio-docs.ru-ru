@@ -1,37 +1,32 @@
 ---
 title: Сочетания клавиш (HTML и JavaScript) | Документация Майкрософт
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7f800a74fb1cb9d0909bd1f95571eb7a3c27b06
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905595"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588966"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Сочетания клавиш (HTML и JavaScript)
 
-::: moniker range=">=vs-2019"
- Сочетания клавиш в Visual Studio для отладки приложений Node.js в Visual Studio с **разработки Node.js** установленной рабочей нагрузкой.
-::: moniker-end
-::: moniker range="vs-2017"
- Сочетания клавиш в Visual Studio для отладки приложений универсальной платформы Windows, с помощью HTML и JavaScript.
-::: moniker-end
+Сочетания клавиш в Visual Studio для отладки приложений UWP с помощью HTML и JavaScript.
 
 ## <a name="general-shortcuts"></a>Общие сочетания клавиш
 
- Следующие сочетания клавиш работают во всех инструментах приложений универсальной платформы Windows, с помощью HTML и JavaScript.
+ Эти сочетания клавиш работают во всех инструментах для приложений UWP, использующих HTML и JavaScript.
 
 |Действие|Сочетание клавиш|
 |------------|--------------|
@@ -63,7 +58,7 @@ ms.locfileid: "62905595"
 |Увеличение выбранного значения CSS на 1|Стрелка вверх|
 |Уменьшение выбранного значения CSS на 1|Стрелка вниз|
 
-## <a name="see-also"></a>См. также
-- [Команды консоли JavaScript](../debugger/javascript-console-commands.md)
-- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+## <a name="see-also"></a>См. также раздел
+- [Команды консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

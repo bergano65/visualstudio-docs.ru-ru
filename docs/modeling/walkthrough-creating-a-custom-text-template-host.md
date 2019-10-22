@@ -1,24 +1,24 @@
 ---
-title: Пошаговое руководство. Создание пользовательского основного приложения для текстовых шаблонов
+title: Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9d2447d07d9faabb5fc7eabddafc328756056ca
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870662"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666976"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Пошаговое руководство. Создание пользовательского основного приложения для текстовых шаблонов
 
@@ -35,7 +35,7 @@ ms.locfileid: "68870662"
 
 - Тестирование пользовательского ведущего приложения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Для выполнения данного пошагового руководства необходимо следующее:
 
@@ -51,7 +51,7 @@ ms.locfileid: "68870662"
 
 2. Добавьте ссылки на следующие сборки:
 
-   - **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft. VisualStudio. TextTemplating. \*.0**
 
    - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 и более поздние версии**
 
@@ -714,7 +714,7 @@ ms.locfileid: "68870662"
    End Namespace
    ```
 
-4. Только [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для этого откройте меню **проект** и выберите пункт **Свойства кустомхост**. В списке **начальный объект** выберите **кустомхост. Program**.
+4. Только для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] откройте меню **проект** и выберите пункт **Свойства кустомхост**. В списке **начальный объект** выберите **кустомхост. Program**.
 
 5. В меню **Файл** выберите команду **Сохранить все**.
 
@@ -819,7 +819,7 @@ ms.locfileid: "68870662"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом пошаговом руководстве вы создали ведущее приложение преобразования текстовых шаблонов, поддерживающее базовые функциональные возможности преобразования. Можно расширить это ведущее приложение для поддержки текстовых шаблонов, которые вызывают пользовательские или сгенерированные процессоры директив. Дополнительные сведения см. в разделе [Пошаговое руководство: Подключение узла к созданному обработчику](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)директив.
+В этом пошаговом руководстве вы создали ведущее приложение преобразования текстовых шаблонов, поддерживающее базовые функциональные возможности преобразования. Можно расширить это ведущее приложение для поддержки текстовых шаблонов, которые вызывают пользовательские или сгенерированные процессоры директив. Дополнительные сведения см. в разделе [Пошаговое руководство. подключение узла к созданному обработчику директив](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>См. также
 

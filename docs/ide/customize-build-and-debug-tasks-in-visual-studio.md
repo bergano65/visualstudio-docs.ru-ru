@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291043"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342396"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Настройка задач сборки и отладки для режима разработки "Открытая папка"
 
@@ -256,6 +256,9 @@ bin:
    ![Кнопка запуска с новым именем файла](media/customize-start-button.png)
 
    Нажатие клавиши **F5** запускает отладчик, который будет останавливаться на всех заданных точках останова. Все обычные окна отладчика будут доступны и активны.
+
+   > [!IMPORTANT]
+   > Дополнительные сведения о настраиваемых задачах сборки и отладки в проектах открытых папок C++ см. в статье [Open Folder support for C++ build systems in Visual Studio](/cpp/build/open-folder-projects-cpp) (Поддержка открытых папок для систем сборки C++ в Visual Studio).
 
 ### <a name="specify-arguments-for-debugging"></a>Указание аргументов для отладки
 

@@ -1,29 +1,29 @@
 ---
-title: Конструктор рабочих процессов - конструкторы действий миграции
+title: Конструкторы действий миграции конструктор рабочих процессов
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7b284b370f248ed2497ece835036679af2e5a8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: da8459db53a1ecb9a297e2a4a218791281806313
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747020"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650127"
 ---
 # <a name="migration-activity-designers"></a>Конструкторы действий миграции
 
-Конструкторы действий миграции используется для вызова рабочего процесса 3.0 или 3.5 действия рабочий процесс, который предназначен для .NET Framework 4 или более поздней версии.
+Конструкторы действий миграции используются для вызова действий Workflow 3.0/3.5 из рабочего процесса, предназначенного для .NET Framework 4 или более поздней версии.
 
-Содержащиеся в этом разделе представлены рекомендации по использованию конструкторов действий конструктора рабочих процессов.
+Разделы, содержащиеся в этом разделе, содержат рекомендации по использованию конструкторов действий конструктор рабочих процессов.
 
 ## <a name="related-sections"></a>Связанные разделы
 
-Других типах конструкторов действий см. в следующих разделах:
+Другие типы конструкторов действий см. в следующих разделах:
 
 - [Поток управления](../workflow-designer/control-flow-activity-designers.md)
 

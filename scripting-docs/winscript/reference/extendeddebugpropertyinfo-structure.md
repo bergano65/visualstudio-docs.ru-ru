@@ -1,5 +1,5 @@
 ---
-title: Структура ExtendedDebugPropertyInfo | Документация Майкрософт
+title: Структура Екстендеддебугпропертинфо | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09f3c5a219fca9ec9b881e2ae8363aae4d48e03f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955202"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575838"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>Структура ExtendedDebugPropertyInfo
-Расширяет `DebugPropertyInfo` структуры с помощью дополнительных членов, характеризующее расширенного свойства.  
+Расширяет структуру `DebugPropertyInfo` с помощью дополнительных элементов, характеризующих расширенное свойство.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,46 +46,46 @@ typedef struct ExtendedDebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
  `dwValidFields`  
- Тип перечислимых данных, можно указать, какие поля инициализируются.  
+ Перечислимый тип данных, используемый для указания, какие поля инициализируются.  
   
  `bstrName`  
  Имя свойства в контексте.  
   
  `bstrType`  
- Тип свойства как форматируемой строки.  
+ Тип свойства в виде форматированной строки.  
   
  `bstrValue`  
- Значение свойства как отформатированную строку.  
+ Значение свойства в виде форматированной строки.  
   
  `bstrFullName`  
  Полное имя свойства.  
   
  `dwAttrib`  
- Перечисление, содержащее флаги для атрибутов свойства отладки.  
+ Перечисление, указывающее флаги для атрибутов свойств отладки.  
   
  `pDebugProp`  
- `IDebugProperty` Объект, соответствующий данному `ExtendedDebugPropertyInfo`.  
+ `IDebugProperty` объект, соответствующий этому `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
- Идентификатор диспетчера.  
+ Идентификатор диспетчеризации.  
   
  `nType`  
  Тип расширенного свойства.  
   
  `varValue`  
- Значение расширенного свойства, если он помещается в тип VARIANT.  
+ Значение расширенного свойства, если оно может уместиться в ВАРИАНТе.  
   
  `plbValue`  
- Байты фактических данных значения свойства.  
+ Фактические байты данных значения свойства.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty` Объект, соответствующий данному `ExtendedDebugPropertyInfo`.  
+ `IDebugExtendedProperty` объект, соответствующий этому `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>См. также  
- [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   
- [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [Интерфейс IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ @No__t_1 [структуры дебугпропертинфо](../../winscript/reference/debugpropertyinfo-structure.md)  
+ @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ @No__t_1 [интерфейса идебужекстендедпроперти](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

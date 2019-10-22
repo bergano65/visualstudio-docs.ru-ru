@@ -2,7 +2,7 @@
 title: Использование параметров командной строки для установки Visual Studio
 titleSuffix: ''
 description: Узнайте, как использовать параметры командной строки для управления установкой Visual Studio или ее настройки.
-ms.date: 09/11/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 0b1388aa7ac993ba4b98837ec8ac46d516b567da
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913249"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381026"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Использование параметров командной строки для установки Visual Studio
 
@@ -32,23 +32,33 @@ ms.locfileid: "70913249"
 - автоматизировать процесс установки;
 - создать кэш (структуру) файлов установки для последующего использования.
 
-Параметры командной строки используются в сочетании с начальным загрузчиком программы установки. Это файл небольшого размера (1 МБ), который инициирует процесс скачивания. Эта программа запускается в первую очередь при скачивании с сайта Visual Studio. Последние версии программы начальной загрузки для устанавливаемого вами выпуска продукта доступны по следующим ссылкам:
+Параметры командной строки используются в сочетании с начальным загрузчиком программы установки. Это файл небольшого размера (1 МБ), который инициирует процесс скачивания. Эта программа запускается в первую очередь при скачивании с сайта Visual Studio.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Сведения о том, как получить начальный загрузчик для Visual Studio 2017, см. на странице скачиваемых материалов [**Предыдущие версии Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Последние версии программы начальной загрузки для устанавливаемого вами выпуска продукта доступны по следующим ссылкам:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+Файл начального загрузчика должен иметь одно из перечисленных ниже имен или похожее на него.
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
+
+>[!TIP]
+>Если вы ранее скачали файл начального загрузчика и хотите проверить его версию, вот как это сделать. В Windows откройте проводник, щелкните правой кнопкой мыши файл начального загрузчика, выберите **Свойства**, перейдите на вкладку **Подробно**, а затем найдите номер в строке **Версия продукта**. Чтобы сопоставить этот номер с выпуском Visual Studio, перейдите на страницу [Номера сборки и даты выпуска Visual Studio](visual-studio-build-numbers-and-release-dates.md).
 
 ## <a name="command-line-parameters"></a>Параметры командной строки
 
@@ -121,7 +131,7 @@ ms.locfileid: "70913249"
 | `--cache` | **Новая возможность версии 15.2, необязательно**: если указан этот параметр, пакеты будут храниться после установки для последующего восстановления. Это значение переопределяет глобальную политику, настроенную для последующих установок, восстановлений или изменений. По умолчанию кэш пакетов используется. Этот параметр игнорируется для команды удаления. Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |
 | `--nocache` | **Новая возможность версии 15.2, необязательно**: при наличии этого параметра после установки или восстановления пакеты удаляются. Они будут загружены только в том случае, если потребуются еще раз, и снова удалены после использования. Это значение переопределяет глобальную политику, настроенную для последующих установок, восстановлений или изменений. По умолчанию кэш пакетов используется. Этот параметр игнорируется для команды удаления. Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Новая возможность версии 15.2, необязательно**: при наличии не позволяет установщику обновлять самого себя при указании параметра quiet. Программа установки завершает команду со сбоем и возвращает ненулевой код выхода, если noUpdateInstaller с параметром quiet указан, когда требуется обновление установщика. |
-| `--noWeb` | **Новая возможность версии 15.3, необязательно**: если присутствует, установщик Visual Studio использует файлы в каталоге макета для установки Visual Studio. Если пользователь пытается установить компоненты, отсутствующие в макете, установка завершается ошибкой.  Подробнее см. в разделе [Развертывание из сетевой установки](create-a-network-installation-of-visual-studio.md). <br/><br/> **Важно**. Этот параметр не отключает проверку наличия обновлений при установке Visual Studio. Дополнительные сведения см. в статье [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md).|
+| `--noWeb` | **Новая возможность версии 15.3, необязательно**: если присутствует, установщик Visual Studio использует файлы в каталоге макета для установки Visual Studio. Если пользователь пытается установить компоненты, отсутствующие в макете, установка завершается ошибкой.  Подробнее см. в разделе [Развертывание из сетевой установки](create-a-network-installation-of-visual-studio.md). <br/><br/> **Важно**. Этот параметр не отключает проверку наличия обновлений при установке Visual Studio. Дополнительные сведения см. в статье [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md). **Новая возможность в версии 16.3.5**. Этот параметр предотвращает возникновение ошибок и повышает производительность благодаря автономным установкам и обновлениям.|
 | `--path <name>=<path>` | **Новая возможность в версии 15.7, необязательно**: используется для указания путей выборочной установки. Поддерживаемые имена пути используются совместно, кэшируются и устанавливаются. |
 | `--path cache=<path>` | **Новая возможность в версии 15.7, необязательно**: для загрузки установочных файлов используется заданное расположение. Расположение можно задать только при первой установке Visual Studio. Пример: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Новая возможность в версии 15.7, необязательно**: содержит общие файлы для параллельных установок Visual Studio. Некоторые средства и пакеты SDK устанавливаются на этот диск. Этот параметр можно переопределить, чтобы установить другие средства и пакеты SDK на другой диск. Пример: `--path shared="C:\VS\shared"` <br><br>Внимание! Этот параметр можно задать только один раз — при первой установке Visual Studio. |

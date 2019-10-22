@@ -13,21 +13,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e684a9e41165ceb266199c64a93e2e765506fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5cca448b43e239866fe13ed8ef81b5dbf4631c0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009759"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572833"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>Интерфейс IActiveScriptAuthorProcedure
-Помимо методов, наследуемых от `IUnknown`, `IScriptAuthorProcedure` интерфейс предоставляет следующий метод.  
+В дополнение к методам, унаследованным от `IUnknown`, интерфейс `IScriptAuthorProcedure` предоставляет следующий метод.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Выполняет синтаксический анализ кода процедуры, добавляется текст процедуры код сценария разработки ядра и создает `IScriptEntry` объект, соответствующий код процедуры.|  
+|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Анализирует процедуру кода, добавляет текст процедуры кода в механизм создания скриптов и создает объект `IScriptEntry`, соответствующий процедуре кода.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы для создания активных скриптов](../../winscript/reference/active-script-authoring-interfaces.md)

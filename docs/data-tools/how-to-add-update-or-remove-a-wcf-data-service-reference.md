@@ -9,20 +9,20 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925638"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648419"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF
-*Ссылка на службу* позволяет проекту получить доступ к одному или нескольким [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]службам. Используйте диалоговое окно **Добавление ссылки на службу** для поиска [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в текущем решении, локально, в локальной сети или в Интернете.
+*Ссылка на службу* позволяет проекту получить доступ к одному или нескольким [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Используйте диалоговое окно **Добавление ссылки на службу** для поиска [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в текущем решении, локально, в локальной сети или в Интернете.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -59,7 +59,7 @@ ms.locfileid: "68925638"
 
 2. Нажмите кнопку **обнаружить**.
 
-    Все службы ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] и службы WCF) в текущем решении добавляются в список **служб** .
+    Все службы ([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] и службы WCF) в текущем решении добавляются в список **служб** .
 
 3. В списке **служб** разверните узел службы, которую необходимо использовать, и выберите набор сущностей.
 
@@ -70,7 +70,7 @@ ms.locfileid: "68925638"
     Создается клиент службы (прокси), а метаданные, описывающие службу, добавляются в файл *app. config* .
 
 ## <a name="update-a-service-reference"></a>Обновление ссылки на службу
-EDM [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в некоторых случаях изменения. В этом случае необходимо обновить ссылку на службу.
+EDM [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] иногда изменяется. В этом случае необходимо обновить ссылку на службу.
 
 ### <a name="to-update-a-service-reference"></a>Обновление ссылки на службу
 

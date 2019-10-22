@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987790"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349761"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -201,6 +201,14 @@ ms.locfileid: "70987790"
 > Помощник по исправлению ошибок заменил помощник по исключениям, который запускается в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Разверните узел **Параметры исключений**, чтобы просмотреть дополнительные параметры для обработки исключения этого типа, однако в рамках этого тура ничего менять не требуется.
+
+## <a name="configure-debugging"></a>Настройка отладки
+
+Вы можете настроить проект для сборки, как описано в статье о [конфигурации отладки или выпуска](../debugger/how-to-set-debug-and-release-configurations.md), настроить свойства проекта для отладки или настроить [общие параметры](../debugger/how-to-specify-debugger-settings.md) для отладки. Кроме того, можно настроить отладчик для вывода пользовательских сведений с помощью таких компонентов, как атрибута [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) либо [платформы NatVis](create-custom-views-of-native-objects.md) для C/C++.
+
+Свойства отладки зависят от типа проекта. Например, можно задать аргумент, который будет передан в приложение при запуске. Чтобы получить доступ к свойствам проекта приложения, щелкните имя проекта правой кнопкой мыши в обозревателе решений и выберите **Свойства**. Свойства отладки обычно отображаются на вкладке **Сборка** или **Отладка** в зависимости от типа проекта.
+
+![Свойства проекта](../debugger/media/dbg-tour-project-properties.png "Project properties")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Отладка интерактивных приложений ASP.NET в Службе приложений Azure
 

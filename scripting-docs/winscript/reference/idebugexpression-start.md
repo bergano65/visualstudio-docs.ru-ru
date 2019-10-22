@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Start | Документация Майкрософт
+title: 'Идебужекспрессион:: Start | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e80f3fb8087d39c76f59cf5c6bc8719c1cbaf5e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8c3666adfc83f3ad60b942cd3f7fe9eedfccba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978527"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576429"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
-Начинается вычисление выражения.  
+Начинает вычисление выражения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Параметры  
  `pdecb`  
- [in] Обратный вызов, указывающий при завершении вычисления выражения. Если этот параметр имеет `NULL`, не возникает никаких событий, и клиент должен опросить состояние выражения с помощью `QueryIsComplete`.  
+ окне Обратный вызов для указания завершения вычисления выражения. Если этот параметр имеет значение `NULL`, события не срабатывают и клиент должен опросить состояние выражения с помощью `QueryIsComplete`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод начинает вычисления выражения.  
+## <a name="remarks"></a>Заметки  
+ Этот метод начинает вычисление выражения.  
   
 ## <a name="see-also"></a>См. также  
- [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
+ [Идебужекспрессион:: Abort](../../winscript/reference/idebugexpression-abort.md)    
  [Интерфейс IDebugExpression](../../winscript/reference/idebugexpression-interface.md)

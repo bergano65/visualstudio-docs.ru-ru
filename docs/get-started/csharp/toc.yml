@@ -21,6 +21,8 @@
       href: tutorial-uwp.md
     - name: Создание приложения WPF
       href: tutorial-wpf.md
+    - name: Создание приложения Windows Forms
+      href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: "Видеоучебник. Создание веб-приложения ASP.NET\_Core"
       items:
         - name: "1. Установка Visual\_Studio"

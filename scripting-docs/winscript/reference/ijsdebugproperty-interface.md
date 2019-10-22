@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IJsDebugProperty | Документация Майкрософт
+title: Интерфейс метод ijsdebugproperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e17bff10e2b876e4db2b9f3b55df29c2e87989ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990ae0b874042501b64f4e2e2b39874c25c9dc9c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977794"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574068"
 ---
 # <a name="ijsdebugproperty-interface"></a>Интерфейс IJsDebugProperty
 Представляет обозреватель свойств.  
@@ -27,17 +27,17 @@ ms.locfileid: "62977794"
 IJsDebugProperty : public IUnknown;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
-|[Метод IJsDebugProperty::GetMembers](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Получает члены этого объекта.|  
+|[Метод IJsDebugProperty::GetMembers](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Возвращает элементы этого объекта.|  
 |[Метод IJsDebugProperty::GetPropertyInfo](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Получает сведения для этого объекта.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb338caa145ad8186b7a27fe94a7822e94c09a02
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 4194a392eee1d5c9beaa0640f4006d1f01ebbace
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913295"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262316"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -38,11 +38,11 @@ ms.locfileid: "70913295"
 
 ::: moniker range=">=vs-2019"
 
-Чтобы указать файл параметров запуска в интегрированной среде разработки, в **обозревателе тестов** щелкните стрелку на кнопке **Параметры**, а затем выберите пункт **Выбрать файл параметров**. Найдите и выберите файл *.runsettings*.
+Чтобы указать файл параметров запуска в интегрированной среде разработки, выберите **Тестирование** > **Выбрать файл параметров**. Найдите и выберите файл *.runsettings*.
 
-![Выбор файла параметров тестирования в Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+![Выбор файла параметров тестирования в Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-В обозревателе тестов в меню "Параметры" появится файл, который можно выбрать или отменить выбор. Если файл параметров запуска выбран, он применяется при каждом выборе функции **Анализ объема протестированного кода**.
+В меню "Тестирование" появится файл, который можно выбрать или отменить выбор. Если файл параметров запуска выбран, он применяется при каждом выборе функции **Анализ объема протестированного кода**.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ ms.locfileid: "70913295"
 
 ::: moniker range=">=vs-2019"
 
-3. Чтобы выбрать файл параметров запуска, в **обозревателе тестов** щелкните стрелку на кнопке **Параметры**, а затем выберите пункт **Выбрать файл параметров**. Перейдите к созданному вами файлу *.runsettings*, а затем нажмите **ОК**.
+3. Чтобы выбрать файл параметров запуска, щелкните **Тестирование** > **Выбрать файл параметров**. Перейдите к созданному вами файлу *.runsettings*, а затем нажмите **ОК**.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ ms.locfileid: "70913295"
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -149,7 +149,7 @@ ms.locfileid: "70913295"
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-
+            
           </CodeCoverage>
         </Configuration>
       </DataCollector>
@@ -157,15 +157,16 @@ ms.locfileid: "70913295"
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
-          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true"  xmlns="">           
+            <ScreenCaptureVideo bitRate="512" frameRate="2" quality="20" />
+          </MediaRecorder>
         </Configuration>
       </DataCollector>
-
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime -->
+  <!-- Parameters used by tests at run time -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
@@ -212,7 +213,7 @@ ms.locfileid: "70913295"
 |**ResultsDirectory**||Каталог для сохранения результатов тестов.|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10` для источников .NET Core, `FrameworkUap10` для источников на основе UWP, `Framework45` для .NET Framework 4.5 и более поздней версии, `Framework40` для .NET Framework 4.0 и `Framework35` для .NET Framework 3.5.<br /><br />Этот параметр указывает, какая версия платформы модульных тестов используется для поиска и выполнения тестов. Эта версия может отличаться от версии платформы .NET, указанной в свойствах сборки проекта модульного теста.<br /><br />Если опустить элемент `TargetFrameworkVersion` в файле *.runsettings*, платформа автоматически определит версию .NET на основе двоичных файлов сборки.|
 |**TargetPlatform**|x86|x86, x64|
-|**TreatTestAdapterErrorsAsWarnings**|false|false, true|
+|**TreatTestAdapterErrorsAsWarnings**|Ложь|false, true|
 |**TestAdaptersPaths**||Один или несколько путей к каталогу, где находятся адаптеры TestAdapters|
 |**MaxCpuCount**|1|Этот параметр управляет степенью параллелизма при выполнении тестов при запуске модульных тестов, используя доступные ядра на компьютере. Модуль выполнения тестов запускается как отдельный процесс на каждом доступном ядре и дает каждому ядру контейнер с запускаемыми тестами. Контейнером может быть сборка, библиотека DLL или соответствующий артефакт. Тестовый контейнер — это модуль, работающий по расписанию. В каждом контейнере тесты запускаются в соответствии с платформой тестов. Если контейнеров много, то после того как процессы завершают выполнение тестов в контейнере, им предоставляются следующие доступные контейнеры.<br /><br />MaxCpuCount может быть:<br /><br />n, где 1 < n < числа ядер: будет запущено до n процессов;<br /><br />n, где n равно любому другому значению: число запускаемых процессов может достигать числа доступных ядер на компьютере.|
 |**TestSessionTimeout**||Дает пользователям возможность завершить сеанс тестирования, если его длительность превышает заданный промежуток времени. Задав время ожидания, вы обеспечите надлежащее использование ресурсов и ограничите выполнение сеансов тестирования определенным периодом. Этот параметр доступен в **Visual Studio 2017 версии 15.5** и более поздних версий.|
@@ -251,8 +252,7 @@ ms.locfileid: "70913295"
 ```xml
 <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
-    <Parameter name="webAppUserName" value="Admin" />
-    <Parameter name="webAppPassword" value="Password" />
+    <Parameter name="docsUrl" value="https://docs.microsoft.com" />
 </TestRunParameters>
 ```
 
@@ -286,16 +286,16 @@ public void HomePageTest()
 
 |Параметр Configuration|Значение по умолчанию|Значения|
 |-|-|-|
-|**ForcedLegacyMode**|false|В Visual Studio 2012 адаптер MSTest был оптимизирован для повышения скорости и масштабируемости. Некоторое поведение, в частности порядок, в котором выполняются тесты, может немного отличаться от поведения в предыдущих выпусках Visual Studio. Чтобы использовать старый адаптер теста, установите для этого параметра значение **true**.<br /><br />Например, этот параметр можно использовать при наличии файла *app.config*, указанного для модульного теста.<br /><br />Рекомендуется рассмотреть возможность рефакторинга тестов для включения возможности использования более нового адаптера.|
-|**IgnoreTestImpact**|false|Функция влияния на тесты определяет приоритет тестов, на которые повлияли последние изменения, при выполнении в MSTest или из Microsoft Test Manager. Этот параметр деактивирует функцию. Дополнительные сведения см. в разделе [Какие тесты следует выполнить с момента предыдущей сборки](https://msdn.microsoft.com/library/dd286589).|
+|**ForcedLegacyMode**|Ложь|В Visual Studio 2012 адаптер MSTest был оптимизирован для повышения скорости и масштабируемости. Некоторое поведение, в частности порядок, в котором выполняются тесты, может немного отличаться от поведения в предыдущих выпусках Visual Studio. Чтобы использовать старый адаптер теста, установите для этого параметра значение **true**.<br /><br />Например, этот параметр можно использовать при наличии файла *app.config*, указанного для модульного теста.<br /><br />Рекомендуется рассмотреть возможность рефакторинга тестов для включения возможности использования более нового адаптера.|
+|**IgnoreTestImpact**|Ложь|Функция влияния на тесты определяет приоритет тестов, на которые повлияли последние изменения, при выполнении в MSTest или из Microsoft Test Manager. Этот параметр деактивирует функцию. Дополнительные сведения см. в разделе [Какие тесты следует выполнить с момента предыдущей сборки](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Здесь можно задать файл параметров тестирования для использования с адаптером MSTest. Этот файл можно также указать [из меню параметров](#ide).<br /><br />Если задано это значение, необходимо также задать для параметра **ForcedlegacyMode** значение **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|false|После завершения тестового запуска MSTest завершает работу. Будет также завершен любой процесс, запущенный в рамках теста. Чтобы сохранить исполнитель тестов в активном состоянии, задайте для этого параметра значение **true**. Например, этот параметр можно использовать, чтобы браузер продолжал работать в перерывах между закодированными тестами пользовательского интерфейса.|
+|**KeepExecutorAliveAfterLegacyRun**|Ложь|После завершения тестового запуска MSTest завершает работу. Будет также завершен любой процесс, запущенный в рамках теста. Чтобы сохранить исполнитель тестов в активном состоянии, задайте для этого параметра значение **true**. Например, этот параметр можно использовать, чтобы браузер продолжал работать в перерывах между закодированными тестами пользовательского интерфейса.|
 |**DeploymentEnabled**|true|Если установить для этого параметра значение **false**, то элементы развертывания, заданные в методе теста, не будут копироваться в каталог развертывания.|
 |**CaptureTraceOutput**|true|Чтобы выполнять запись в трассировку отладки из метода теста, используйте <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Чтобы сохранить каталог развертывания после завершения тестового запуска, установите для этого параметра значение **false**.|
-|**MapInconclusiveToFailed**|false|Если тест завершается с неопределенным состоянием, оно обычно сопоставляется с состоянием "Пропущено" в **обозревателе тестов**. Если требуется, чтобы тесты с неопределенным результатом отображались как завершившиеся неудачно, установите для этого параметра значение **true**.|
-|**InProcMode**|false|Если требуется, чтобы тесты выполнялись в одном процессе с адаптером MSTest, установите этот параметр в значение **true**. Этот параметр обеспечивает небольшое повышение производительности. Но если тест прекращается с выдачей исключения, остальные тесты выполняться не будут.|
-|**AssemblyResolution**|false|При поиске и выполнении модульных тестов можно указать пути для дополнительных сборок. Например, эти пути можно использовать для сборок зависимостей, которые не находятся в том же каталоге, что и тестовая сборка. Чтобы указать путь, используйте элемент **путь к каталогу**. Пути могут содержать переменные среды.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**MapInconclusiveToFailed**|Ложь|Если тест завершается с неопределенным состоянием, оно обычно сопоставляется с состоянием "Пропущено" в **обозревателе тестов**. Если требуется, чтобы тесты с неопределенным результатом отображались как завершившиеся неудачно, установите для этого параметра значение **true**.|
+|**InProcMode**|Ложь|Если требуется, чтобы тесты выполнялись в одном процессе с адаптером MSTest, установите этот параметр в значение **true**. Этот параметр обеспечивает небольшое повышение производительности. Но если тест прекращается с выдачей исключения, остальные тесты выполняться не будут.|
+|**AssemblyResolution**|Ложь|При поиске и выполнении модульных тестов можно указать пути для дополнительных сборок. Например, эти пути можно использовать для сборок зависимостей, которые не находятся в том же каталоге, что и тестовая сборка. Чтобы указать путь, используйте элемент **путь к каталогу**. Пути могут содержать переменные среды.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>См. также
 

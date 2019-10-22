@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IJsDebugFrame | Документация Майкрософт
+title: Интерфейс метод ijsdebugframe | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f5a848967148705a2b8dcd3f6b75dcb3a5db26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91fe8cdf91b0c2121f4a1a7f111794b0fbe36669
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558007"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575107"
 ---
 # <a name="ijsdebugframe-interface"></a>Интерфейс IJsDebugFrame
 Представляет кадр стека.  
@@ -27,22 +27,22 @@ ms.locfileid: "62558007"
 IJsDebugFrame : public IUnknown;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
 |[Метод IJsDebugFrame::Evaluate](../../winscript/reference/ijsdebugframe-evaluate-method.md)|Вычисление выражения в контексте этого кадра стека.|  
-|[Метод IJsDebugFrame::GetDebugProperty](../../winscript/reference/ijsdebugframe-getdebugproperty-method.md)|Возвращает браузер свойств для этого кадра стека.|  
-|[Метод IJsDebugFrame::GetDocumentPositionWithId](../../winscript/reference/ijsdebugframe-getdocumentpositionwithid-method.md)|Возвращает текущее положение этого кадра стека в пределах пользовательского документа.|  
-|[Метод IJsDebugFrame::GetDocumentPositionWithName](../../winscript/reference/ijsdebugframe-getdocumentpositionwithname-method.md)|Возвращает текущее положение этого кадра стека в пределах пользовательского документа.|  
-|[Метод IJsDebugFrame::GetName](../../winscript/reference/ijsdebugframe-getname-method.md)|Получает понятное имя кадра стека.|  
-|[Метод IJsDebugFrame::GetReturnAddress](../../winscript/reference/ijsdebugframe-getreturnaddress-method.md)|Получает обратный адрес, отправленный в «start» (см. GetStackRange) кадра.|  
-|[Метод IJsDebugFrame::GetStackRange](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Возвращает диапазон абсолютных адресов логического фрейма стеков JavaScript.|  
+|[Метод IJsDebugFrame::GetDebugProperty](../../winscript/reference/ijsdebugframe-getdebugproperty-method.md)|Возвращает браузер свойств для данного кадра стека.|  
+|[Метод IJsDebugFrame::GetDocumentPositionWithId](../../winscript/reference/ijsdebugframe-getdocumentpositionwithid-method.md)|Возвращает текущую координату этого кадра стека в документе уровня пользователя.|  
+|[Метод IJsDebugFrame::GetDocumentPositionWithName](../../winscript/reference/ijsdebugframe-getdocumentpositionwithname-method.md)|Возвращает текущую координату этого кадра стека в документе уровня пользователя.|  
+|[Метод IJsDebugFrame::GetName](../../winscript/reference/ijsdebugframe-getname-method.md)|Возвращает понятное имя кадра стека.|  
+|[Метод IJsDebugFrame::GetReturnAddress](../../winscript/reference/ijsdebugframe-getreturnaddress-method.md)|Возвращает обратный адрес, отправленный в "Start" (см. GetStackRange) кадра.|  
+|[Метод IJsDebugFrame::GetStackRange](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Возвращает диапазон абсолютных адресов логического кадра стека JavaScript.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

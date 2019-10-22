@@ -2,21 +2,21 @@
 title: Директива Template T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870505"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606208"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 
-Текстовый шаблон Visual Studio T4 обычно начинается с `template` директивы, которая указывает, как шаблон должен обрабатываться. В каждом текстовом шаблоне и файлах, которые он содержит, может присутствовать только одна директива шаблона.
+Текстовый шаблон Visual Studio T4 обычно начинается с директивы `template`, которая определяет способ обработки шаблона. В каждом текстовом шаблоне и файлах, которые он содержит, может присутствовать только одна директива шаблона.
 
 Общие сведения о создании текстовых шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
@@ -52,7 +52,7 @@ ms.locfileid: "68870505"
 
 "", инвариантные язык и региональные параметры, используемые по умолчанию.
 
-Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Для получения дополнительной информации см. <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
 Этот атрибут задает язык и региональные параметры для использования при преобразовании блока выражений в текст.
 
@@ -96,7 +96,7 @@ hostspecific="true"
 
 Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблонам времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не к [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Если `hostspecific` `this.Host` используется `true` Visual Studio, для доступа к функциям Visual Studio можно привести к использованию функции IServiceProvider. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Например:
+Если `hostspecific` `true` и вы используете Visual Studio, вы можете привести `this.Host` к типу IServiceProvider для доступа к функциям Visual Studio. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,9 +132,9 @@ Content of myFile is:
 
 `VB`
 
-Атрибут задает язык ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]), используемый для исходного кода в блоках операторов и выражений. `language` Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
+Атрибут `language` задает язык ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]), используемый для исходного кода в блоках операторов и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
 
-Например:
+Пример:
 
 ```vb
 <#@ template language="VB" #>

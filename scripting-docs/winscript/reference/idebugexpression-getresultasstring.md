@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsString | Документация Майкрософт
+title: 'Идебужекспрессион:: Жетресултасстринг | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84255e364630245564a0cbab5d38c6dff38df0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b8f637744227763f55b7c024745d7ae4448b40
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978476"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573517"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-Возвращает результат вычисления выражения в виде строки, а возвращаемое значение операции.  
+Возвращает результат вычисления выражения в виде строки и возвращаемого значения операции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,23 +38,23 @@ HRESULT GetResultAsString(
   
 #### <a name="parameters"></a>Параметры  
  `phrResult`  
- [out] Возвращаемое значение операции.  
+ заполняет Возвращаемое значение операции.  
   
  `pbstrResult`  
- [out] Результат вычисления выражения.  
+ заполняет Результат вычисления выражения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_PENDING`|Операция по-прежнему не ожидается.|  
+|`E_PENDING`|Операция все еще находится в состоянии ожидания.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает результат вычисления выражения в виде строки, а также операции `HRESULT`.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает результат вычисления выражения в виде строки и `HRESULT` операции.  
   
- Этот метод возвращает `S_OK` и `phrResult` возвращает `E_ABORT` Если `Abort` прерывает выполнение операции.  
+ Этот метод возвращает `S_OK` и `phrResult` возвращает `E_ABORT`, если `Abort` прерывает операцию.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugExpression](../../winscript/reference/idebugexpression-interface.md)

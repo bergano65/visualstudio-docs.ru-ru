@@ -9,7 +9,7 @@
         - name: Качество кода
           tocHref: /visualstudio/code-quality/
           topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
-        - name: Кроссплатформенные
+        - name: Кроссплатформенная поддержка
           tocHref: /visualstudio/cross-platform/
           topicHref: /visualstudio/cross-platform/index
         - name: Data Tools
@@ -28,10 +28,7 @@
         - name: Развертывание
           tocHref: /visualstudio/deployment/
           topicHref: /visualstudio/deployment/deploying-applications-services-and-components
-        - name: Конструкторы
-          tocHref: /visualstudio/designers/
-          topicHref: /visualstudio/designers/designing-user-interfaces
-        - name: Расширение среды
+        - name: Расширяемость
           tocHref: /visualstudio/extensibility/
           topicHref: /visualstudio/extensibility/index
           items:
@@ -42,7 +39,7 @@
               tocHref: /visualstudio/extensibility/debugger/
               topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
               items:
-                - name: Ссылка
+                - name: Справочник
                   tocHref: /visualstudio/extensibility/debugger/reference/
                   topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
             - name: Руководство по работе пользователей
@@ -60,7 +57,7 @@
         - name: JavaScript и TypeScript
           tocHref: /visualstudio/javascript/
           topicHref: /visualstudio/javascript/index
-        - name: Профилирование
+        - name: Профилирование.
           tocHref: /visualstudio/profiling/
           topicHref: /visualstudio/profiling/index
         - name: Python
@@ -85,6 +82,9 @@
         - name: Конструктор рабочих процессов
           tocHref: /visualstudio/workflow-designer/
           topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
+        - name: Средства XAML
+          tocHref: /visualstudio/xaml-tools/
+          topicHref: /visualstudio/xaml-tools/
         - name: Средства XML
           tocHref: /visualstudio/xml-tools/
           topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio

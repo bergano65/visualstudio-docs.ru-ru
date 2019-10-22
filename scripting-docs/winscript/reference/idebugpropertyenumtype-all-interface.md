@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979114"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574315"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>Интерфейс IDebugPropertyEnumType_All
-`IDebugPropertyEnumType` Интерфейсы определяются таким образом, каждый из их идентификаторы IID можно передать в качестве фильтра для `IDebugProperty::EnumMembers` при запросе соответствующим перечислителем.  
+# <a name="idebugpropertyenumtype_all-interface"></a>Интерфейс IDebugPropertyEnumType_All
+Интерфейсы `IDebugPropertyEnumType` определяются таким образом, чтобы каждый из их идентификаторов IID можно было передавать в качестве фильтра для `IDebugProperty::EnumMembers` при запросе соответствующего перечислителя.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,9 +37,9 @@ IDebugPropertyEnumType_All : IUnknown
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Возвращает текстовую строку, описывающую имя|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Возвращает текстовую строку с описанием имени|  
   
- Следующие интерфейсы наследуются из `IDebugPropertyEnumType_All`, и нет дополнительных методов.  
+ Следующие интерфейсы наследуют от `IDebugPropertyEnumType_All` и не имеют дополнительных методов.  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   

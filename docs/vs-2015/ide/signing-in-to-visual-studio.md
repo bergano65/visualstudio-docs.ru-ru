@@ -1,5 +1,5 @@
 ---
-title: Войдите в Visual Studio 2015 | Документация Майкрософт
+title: Вход в Visual Studio 2015 | Документация Майкрософт
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679838"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661223"
 ---
 # <a name="signing-in-to-visual-studio"></a>Вход в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "65679838"
 
  После задания параметров будет запущена среда Visual Studio, чтобы можно было начать работу; при этом будет выполнен вход в систему. Чтобы проверить, выполнен ли вход, найдите свое имя в правом верхнем углу среды Visual Studio.
 
- ![Текущий вошедший в систему пользователь](../ide/media/vs2015-username.png "Имя_пользователя_VS2015")
+ ![Вошедший в систему пользователь куррентлли](../ide/media/vs2015-username.png "VS2015_UserName")
 
  Если не выходить из системы явным образом, вы будете автоматически входить в Visual Studio при запуске среды, а все изменения синхронизированных параметров будут автоматически применяться. Чтобы выйти из системы, нажмите кнопку со стрелкой вниз рядом с именем профиля в среде Visual Studio, выберите команду **Параметры учетной записи** , а затем выберите ссылку **Выход** . Чтобы снова войти в систему, выберите команду **Вход** в правом верхнем углу среды Visual Studio.
 

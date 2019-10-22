@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IJsEnumDebugProperty | Документация Майкрософт
+title: Интерфейс метод ijsenumdebugproperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec7bb508101f6de20bf979653a01b735b3cbf61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1cb284b9fb1519b53efb7585559ec10f2f8b9e8e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977582"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573971"
 ---
 # <a name="ijsenumdebugproperty-interface"></a>Интерфейс IJsEnumDebugProperty
-Предоставляет операции поиска свойств.  
+Предоставляет операции обзора свойств.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -27,17 +27,17 @@ ms.locfileid: "62977582"
 IJsEnumDebugProperty : public IUnknown;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
-|[Метод IJsEnumDebugProperty::GetCount](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|Возвращает число свойств объекта.|  
-|[Метод IJsEnumDebugProperty::Next](../../winscript/reference/ijsenumdebugproperty-next-method.md)|Считывает свойства для данного объекта.|  
+|[Метод IJsEnumDebugProperty::GetCount](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|Возвращает количество свойств объекта.|  
+|[Метод IJsEnumDebugProperty::Next](../../winscript/reference/ijsenumdebugproperty-next-method.md)|Считывает свойства для этого объекта.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

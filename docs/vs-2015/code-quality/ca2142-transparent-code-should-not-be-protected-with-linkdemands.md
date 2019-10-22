@@ -1,5 +1,5 @@
 ---
-title: CA2142. Прозрачный код не должен быть защищен с помощью требований LinkDemand | Документация Майкрософт
+title: 'CA2142: прозрачный код не должен быть защищен с помощью LinkDemand | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,40 +8,40 @@ f1_keywords:
 - CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 11bd1668e4ab599461d3619c63cd3c9732a05b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9d8986e9d1e6fc3f614e23fff3f6a24c1cc6e91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142694"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602780"
 ---
-# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142. Прозрачный код не должен быть защищен проверками LinkDemands
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: прозрачный код не должен быть защищен с помощью требований LinkDemand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|
+|TypeName|транспарентмесодсшаулднотбепротектедвислинкдемандс|
 |CheckId|CA2142|
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный метод требует <xref:System.Security.Permissions.SecurityAction> или другие требования безопасности.
+ Для прозрачного метода требуется <xref:System.Security.Permissions.SecurityAction> или другое требование безопасности.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило срабатывает для прозрачных методов, для доступа к которым требуется LinkDemand. Прозрачный для системы безопасности код не должен отвечать за проверку безопасности операции и поэтому не должен требовать разрешений. Так как прозрачные методы должны быть нейтрального безопасности, они не должны принимать какие-либо решения безопасности. Кроме того код safe critical, который принятия решений по безопасности, не должен полагаться на прозрачный код, ранее были внесены такие решения.
+ Это правило срабатывает для прозрачных методов, для доступа к которым требуется LinkDemand. Прозрачный для системы безопасности код не должен отвечать за проверку безопасности операции и поэтому не должен требовать разрешений. Поскольку прозрачные методы должны быть нейтральными к безопасности, они не должны принимать никаких решений в отношении безопасности. Кроме того, безопасный критически важный код, который принимает решения по безопасности, не должен полагаться на прозрачный код, чтобы ранее было сделано такое решение.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите требование связывания прозрачного метода или пометьте метод <xref:System.Security.SecuritySafeCriticalAttribute> проверяет атрибут, если он выполняет безопасности, такие как требования безопасности.
+ Чтобы устранить нарушение этого правила, удалите требование компоновки для прозрачного метода или пометьте метод атрибутом <xref:System.Security.SecuritySafeCriticalAttribute>, если он выполняет проверки безопасности, например требования безопасности.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере, это правило применяется для метода, так как метод является прозрачным, а также помечен с помощью LinkDemand <xref:System.Security.PermissionSet> , содержащий <xref:System.Security.Permissions.SecurityAction>.
+ В следующем примере правило срабатывает для метода, так как метод является прозрачным и помечается с помощью LinkDemand <xref:System.Security.PermissionSet>, содержащего <xref:System.Security.Permissions.SecurityAction>.
 
  [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2142.transparentmethodsshouldnotbeprotectedwithlinkdemands/cs/ca2142 -transparentmethodsshouldnotbeprotectedwithlinkdemands.cs#1)]
 

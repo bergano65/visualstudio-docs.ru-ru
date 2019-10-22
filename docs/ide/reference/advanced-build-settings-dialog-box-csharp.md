@@ -1,6 +1,6 @@
 ---
 title: Диалоговое окно "Дополнительные параметры компилятора" (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,36 +13,36 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461884"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186784"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры компилятора" (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры сборки" (C#)
 
-Диалоговое окно **Дополнительные параметры сборки** в **конструкторе проектов** позволяет задать дополнительные свойства конфигурации сборки. Это окно применяется только к проектам [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
+Диалоговое окно **Дополнительные параметры сборки** в **конструкторе проектов** позволяет задать дополнительные свойства конфигурации сборки. Это окно применяется только к проектам C#.
 
-## <a name="general"></a>Общие
+## <a name="general"></a>Общее
 
 Описанные ниже параметры позволяют производить общую расширенную настройку.
 
 **Версия языка**
 
-Задает используемую версию языка. Набор функций в каждой версии отличается, поэтому этот параметр позволяет заставить компилятор разрешать только часть реализованных функций либо только те функции, которые совместимы с существующим стандартом. Включает следующие значения:
+::: moniker range=">=vs-2019"
 
-- **default**
+Связан с параметром [/langversion (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), который указывает, как выбирается версия языка по умолчанию на основе целевой платформы проекта.
 
-   Ориентируется на текущую версию.
+::: moniker-end
 
-- **ISO-1** и **ISO-2**
+::: moniker range="vs-2017"
 
-   Ориентируется на стандартные функции ISO-1 и ISO-2, соответственно.
+Задает используемую версию языка. Набор функций в каждой версии отличается, поэтому этот параметр позволяет заставить компилятор разрешать только часть реализованных функций либо только те функции, которые совместимы с существующим стандартом.
 
-- **C# [номер версии]**
+Значение по умолчанию — C# 7.0.
 
-   Ориентируется на конкретную версию C#. Дополнительные сведения см. в разделе [/langversion (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Отчеты о внутренних ошибках компилятора**
 
@@ -96,5 +96,5 @@ ms.locfileid: "68461884"
 
 ## <a name="see-also"></a>См. также
 
-- [Параметры компилятора C# ](/dotnet/csharp/language-reference/compiler-options/index)
-- [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index)
+- Сведения о [странице сборки в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)

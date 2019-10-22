@@ -1,5 +1,5 @@
 ---
-title: CA1011. Попробуйте передать базовые типы в качестве параметров | Документация Майкрософт
+title: 'CA1011: рассмотрите возможность передачи базовых типов в качестве параметров | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,52 +12,52 @@ helpviewer_keywords:
 - ConsiderPassingBaseTypesAsParameters
 ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3104f7173721668538e6d73c1c5492c5c388ba5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68151097"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663242"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011. Попробуйте передать базовые типы в качестве параметров
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: попробуйте передать базовые типы в качестве параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Объявление метода содержит формальный параметр, который является производным типом, и метод вызывает только члены базового типа параметра.
+ Объявление метода включает формальный параметр, который является производным типом, а метод вызывает только члены базового типа параметра.
 
 ## <a name="rule-description"></a>Описание правила
- Если в объявлении метода в качестве параметра указан базовый тип, любой тип, производный от базового, можно передать методу в качестве соответствующего аргумента. Если аргумент используется в теле метода, конкретный метод, который выполняется зависит от типа аргумента. Если дополнительные функции, предоставляемые производный тип не является обязательной, использование базового типа позволяет более широко применять метод.
+ Если в объявлении метода в качестве параметра указан базовый тип, любой тип, производный от базового, можно передать методу в качестве соответствующего аргумента. Если аргумент используется внутри тела метода, конкретный метод, который выполняется, зависит от типа аргумента. Если дополнительные функциональные возможности, предоставляемые производным типом, не требуются, использование базового типа позволяет более широко использовать метод.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, измените тип параметра со своим базовым типом.
+ Чтобы устранить нарушение этого правила, измените тип параметра на его базовый тип.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила
+ Можно отключить вывод предупреждения из этого правила.
 
-- Если метод требует конкретные функции, предоставляемые производным типом
+- Если метод требует конкретной функциональности, предоставляемой производным типом
 
    \- или -
 
-- для принудительного применения, что только производный тип, или производного типа, передается в метод.
+- чтобы обеспечить передачу в метод только производного типа или более производного типа.
 
-  В этом случае код будет более устойчивым из-за строгая проверка типов, предоставляемые компилятором и средой выполнения.
+  В таких случаях код будет более надежным из-за проверки строгого типа, предоставляемой компилятором и средой выполнения.
 
 ## <a name="example"></a>Пример
- В следующем примере показан метод `ManipulateFileStream`, который может использоваться только с <xref:System.IO.FileStream> объект, который нарушает это правило. Второй метод `ManipulateAnyStream`, соответствующий этому правилу, заменив <xref:System.IO.FileStream> параметра с помощью <xref:System.IO.Stream>.
+ В следующем примере показан метод `ManipulateFileStream`, который можно использовать только с объектом <xref:System.IO.FileStream>, который нарушает это правило. Второй метод, `ManipulateAnyStream`, удовлетворяет правилу, заменяя параметр <xref:System.IO.FileStream> с помощью <xref:System.IO.Stream>.
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]
  [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/vb/FxCop.Design.ConsiderPassingBaseTypes.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1059: Члены не должны предоставлять определенные устойчивые типы](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+ [CA1059: члены не должны предоставлять определенные устойчивые типы](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

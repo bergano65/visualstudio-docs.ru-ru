@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentContextToTop | Документация Майкрософт
+title: 'Иаппликатиондебугжеруи:: Брингдокументконтексттотоп | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 596f9357a8553bf6c39140a6948d8ae3085c3210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8648a4377e901908df20cdb5f413ee73ede5c1a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991133"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577809"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-Предоставляет окно, содержащее контекст заданного документа в верхнюю часть пользовательского интерфейса отладчика и прокрутка окна к контексту.  
+Переводит окно, содержащее данный контекст документа, в начало в пользовательском интерфейсе отладчика и прокручивает окно до контекста.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Параметры  
  `pddc`  
- [in] Контекст документа, чтобы переместить наверх в пользовательском интерфейсе отладчика.  
+ окне Контекст документа, который будет переноситься в начало в пользовательском интерфейсе отладчика.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_INVALIDARG`|Контекст, указанный с `pddc` неизвестен.|  
+|`E_INVALIDARG`|Контекст, заданный `pddc`, неизвестен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод выводит окно, содержащее контекст заданного документа в верхнюю часть пользовательского интерфейса отладчика и прокрутка окна к контексту.  
+## <a name="remarks"></a>Заметки  
+ Этот метод переводит окно, содержащее данный контекст документа, в начало в пользовательском интерфейсе отладчика и прокручивает окно до контекста.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)

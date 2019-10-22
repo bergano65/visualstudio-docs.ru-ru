@@ -5,22 +5,22 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d61a5bcd530afb951f98f84f1f4e38e36f96d6
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654201"
 ---
-# <a name="code-generation-in-a-build-process"></a>Создание кода в процессе сборки
+# <a name="invoke-text-transformation-in-the-build-process"></a>Вызов преобразования текста в процессе сборки
 
 [Преобразование текста](../modeling/code-generation-and-t4-text-templates.md) можно вызвать как часть [процесса сборки](/azure/devops/pipelines/index) решения Visual Studio. Имеются задачи сборки, которые специализируются на преобразовании текста. Задачи сборки T4 запускают выполнение текстовых шаблонов времени разработки, а также компилируют текстовые шаблоны времени выполнения (предварительно обработанные).
 
@@ -32,36 +32,32 @@ ms.locfileid: "68533306"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Если [сервер сборки](/azure/devops/pipelines/agents/agents) запущен на компьютере, на котором не установлен Visual Studio, скопируйте следующие файлы на компьютер сборки с компьютера разработки. Замените последние номера версий для "*".
+Если [сервер сборки](/azure/devops/pipelines/agents/agents) запущен на компьютере, на котором не установлен Visual Studio, скопируйте следующие файлы на компьютер сборки с компьютера разработки:
 
-- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
-
+  - Microsoft. VisualStudio. TextTemplating. SDK. host. 15,0. dll
   - Microsoft.TextTemplating.Build.Tasks.dll
-
   - Microsoft.TextTemplating.targets
 
-- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. 15,0. dll
+  - Microsoft. VisualStudio. TextTemplating. interfaces. 15,0. dll
+  - Microsoft. VisualStudio. TextTemplating. VSHost. 15,0. dll
 
-  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+  - Microsoft. VisualStudio. TextTemplating. моделирование. 15,0. dll
 
-- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
-
-  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
-  
 > [!TIP]
-> Если вы получаете `MissingMethodException` метод для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге с именем *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например, *MSBuild. exe*).
+> Если вы получаете `MissingMethodException` для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге с именем *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например,  *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Изменение файла проекта
 
 Измените файл проекта, чтобы настроить некоторые функции в MSBuild, например Импорт целевых объектов преобразования текста.
 
-В **Обозреватель решений**в контекстном меню проекта выберите пункт выгрузить. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML. Завершив редактирование, нажмите кнопку **перезагрузить**.
+В **Обозреватель решений**в контекстном меню проекта выберите пункт **выгрузить** . Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML. Завершив редактирование, нажмите кнопку **перезагрузить**.
 
 ## <a name="import-the-text-transformation-targets"></a>Импорт целевых объектов преобразования текста
 
@@ -75,18 +71,21 @@ ms.locfileid: "68533306"
 
 После этой строки вставьте директиву импорта текстового шаблона:
 
-```xml
-<!-- Optionally make the import portable across VS versions -->
-  <PropertyGroup>
-    <!-- Get the Visual Studio version: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
-    <!-- Keep the next element all on one line: -->
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
+::: moniker range=">=vs-2019"
 
-<!-- This is the important line: -->
-  <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
+```
+
+::: moniker-end
 
 ## <a name="transform-templates-in-a-build"></a>Преобразование шаблонов в сборке
 
@@ -117,11 +116,11 @@ ms.locfileid: "68533306"
     ```
 
      По умолчанию задача T4 MSBuild повторно создает выходной файл, если он старше:
-     
+
      - файл шаблона
      - Все включаемые файлы
      - все файлы, которые ранее были считаны шаблоном или используемым процессором директив
-     
+
      Это более мощный тест зависимостей, чем используемый командой **преобразовать все шаблоны** в Visual Studio, который сравнивает только даты шаблона и выходного файла.
 
 Чтобы выполнить только преобразования текста в проекте, вызовите задачу TransformAll:
@@ -165,7 +164,7 @@ ms.locfileid: "68533306"
 
 В свойстве `AfterTransform` можно указывать списки файлов:
 
-- GeneratedFiles – список файлов, сгенерированных данным процессом. Для файлов, которые перезаписали существующие файлы только для чтения `%(GeneratedFiles.ReadOnlyFileOverwritten)` , будут иметь значение true. Эти файлы можно извлекать из системы управления версиями.
+- GeneratedFiles – список файлов, сгенерированных данным процессом. Для файлов, которые перезаписали существующие файлы только для чтения, `%(GeneratedFiles.ReadOnlyFileOverwritten)` будет иметь значение true. Эти файлы можно извлекать из системы управления версиями.
 
 - NonGeneratedFiles – список доступных только для чтения файлов, которые не были перезаписаны.
 
@@ -304,13 +303,13 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ::: moniker range="vs-2017"
 
-- В шаблоне T4 MSbuild имеется хорошее руководство по адресу *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
+- В шаблоне T4 MSbuild имеется хорошее руководство по `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- В шаблоне T4 MSbuild имеется хорошее руководство по адресу *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets*
+- В шаблоне T4 MSbuild имеется хорошее руководство по `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

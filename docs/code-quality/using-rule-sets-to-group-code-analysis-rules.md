@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
 - code analysis, rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c3bcce1b923b7c34ab5b163938999c0fdaeca649
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548028"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649042"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Использование наборов правил для группировки правил анализа кода
 
@@ -58,7 +58,7 @@ ms.locfileid: "69548028"
 
 ## <a name="specify-a-rule-set-for-a-project"></a>Укажите набор правил для проекта
 
-Набор правил для проекта указывается свойством **кодеаналисисрулесет** в файле проекта Visual Studio. Например:
+Набор правил для проекта указывается свойством **кодеаналисисрулесет** в файле проекта Visual Studio. Пример:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

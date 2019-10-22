@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8aeb2dcfc116c8c735cda95fc9d7ab9da97cab3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6c6470386414158a53794d1a5c580492edc0e15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968650"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572296"
 ---
 # <a name="jsdebugpropertyinfo-structure"></a>Структура JsDebugPropertyInfo
 Задает сведения о свойстве.  
@@ -31,7 +31,7 @@ ms.locfileid: "62968650"
 typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;   BSTR fullName;   JS_PROPERTY_ATTRIBUTES attr;} JsDebugPropertyInfo;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
  `name`  
  Имя свойства.  
   
@@ -48,7 +48,7 @@ typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;  
  Перечисление, представляющее атрибуты свойства.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

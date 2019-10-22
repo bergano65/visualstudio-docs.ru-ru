@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9d335ba9f85688264882a0cb5fd59946c8c2df7b
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118949"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289705"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Шаг 2. Добавление случайного объекта и списка значков
 На этом шаге будет создан набор парных символов для игры. Каждый символ добавляется в две случайные ячейки в TableLayoutPanel в форме. Для этого используются два оператора `new`, создающие два объекта. Первый является объектом <xref:System.Random>. Такой же объект использовался в игре "Математическая головоломка". Он используется в этом коде для случайного выбора ячейки в TableLayoutPanel. Второй объект, который может показаться вам новым, это объект <xref:System.Collections.Generic.List%601>, используемый для хранения случайно выбранных символов.
@@ -34,7 +34,10 @@ ms.locfileid: "71118949"
      [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
-     При написании кода на языке Visual C# убедитесь, что вы помещаете код после открывающей фигурной скобки и сразу после объявления класса (`public partial class Form1 : Form`). При написании кода на языке Visual Basic поместите код сразу после объявления класса (`Public Class Form1`).
+      > [!IMPORTANT]
+      > Используйте элемент управления языка программирования в правом верхнем углу этой страницы, чтобы просмотреть фрагмент кода на C# или Visual Basic.<br><br>![Элемент управления языка программирования для Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+
+      При написании кода на языке C# убедитесь, что вы помещаете код после открывающей фигурной скобки и сразу после объявления класса (`public partial class Form1 : Form`). При написании кода на языке Visual Basic поместите код сразу после объявления класса (`Public Class Form1`).
 
 3. При добавлении объекта List обратите внимание на открывшееся окно **IntelliSense**. Ниже приведен пример на языке Visual C#, но аналогичный текст отобразится и при добавлении списка в Visual Basic.
 

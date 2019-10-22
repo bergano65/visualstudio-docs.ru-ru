@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263738"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306248"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
@@ -65,7 +65,7 @@ ms.locfileid: "66263738"
 
 #### <a name="binding-redirects"></a>Переадресации привязок
 
-При ссылке на пакет Microsoft.Build.Locator необходимо убедиться, что приложение автоматически использует необходимые переадресации привязок со всех версий сборок MSBuild на версию `15.1.0.0`.
+При ссылке на пакет Microsoft.Build.Locator необходимо убедиться, что приложение автоматически использует необходимые перенаправления привязок на версию 15.1.0.0. Для перенаправления привязок на эту версию поддерживается как MSBuild 15, так и MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Очистка выходных данных
 

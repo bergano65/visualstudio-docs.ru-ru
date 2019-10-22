@@ -1,5 +1,5 @@
 ---
-title: '&lt;Loc&gt; (JavaScript) | Документация Майкрософт'
+title: '&gt; &lt;loc (JavaScript) | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,99 +9,97 @@ helpviewer_keywords:
 - loc JavaScript XML tag
 ms.assetid: 0d3349b6-4bdd-418f-bc11-73665305baae
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf6016b2c12fd5ebe7cfb76c14c776508d99d2db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186103"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651477"
 ---
-# <a name="ltlocgt-javascript"></a>&lt;Loc&gt; (JavaScript)
+# <a name="ltlocgt-javascript"></a>&gt; &lt;loc (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает расположение и тип расширения файла, который содержит локализованные сведения IntelliSense.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-<loc filename="filename"  
-    format="vsdoc|messagebundle" />  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `filename`  
- Необязательный параметр. Имя корневого файла расширения, который содержит сведения о локализации для нейтрального языка и региональных параметров. Когда Visual Studio выполняет поиск сведений о локализации, предпринимается попытка найти региональных версию этого файла. Например если `filename` является jquery.xml, Visual Studio выполняет поиск нужную папку конкретного языка и региональных параметров (например, JA) в том же расположении, что js-файл, который содержит `<loc>` элемент. Он переходит на папку конкретного языка и региональных параметров, проверяет, существует ли файл jquery.xml в нем. Если он не может найти нужный файл, она использует правила расположения управляемых ресурсов. Значение по умолчанию для `filename` — это имя текущего файла, но с расширением XML вместо .js.  
-  
- `format`  
- Необязательный параметр. Тип расширения файла, используемого для локализации. Использовать `messagebundle` для указания использования пакеты сообщений определяются метаданные откройте Ajax. `messagebundle` — Это рекомендуемый формат. Тем не менее этот формат не поддерживается в Microsoft Ajax, или в файлах winmd. Используйте `vsdoc` для указания стандартного формата локализации .NET Framework, который используется Microsoft Ajax и средой выполнения Windows. Этот атрибут является необязательным. `vsdoc` является форматом по умолчанию.  
-  
-## <a name="remarks"></a>Примечания  
- `<loc>` Элемент должен отображаться в верхней части файла в тот же раздел `<reference>` элемент. Использование правил для `<loc>` элемент такие же, как `<reference>` элемент. Дополнительные сведения см. в разделе «Директивы ссылки» в [IntelliSense для JavaScript](../ide/javascript-intellisense.md).  
-  
- Visual Studio обрабатывает один `<loc>` элемент для каждого JS-файла. При наличии нескольких `<loc>` элементы присутствуют, только один `<loc>` используется элемент. Поведение по выбору `<loc>` элемент не определен.  
-  
- При использовании формата пакета сообщений, используйте `locid` атрибут в комментарии XML-документации, чтобы указать `name` значение атрибута.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как использовать `<loc>` элемент messagebundle формате. Добавьте следующий код XML в файл с именем messageFilename.xml и поместить его в соответствующую папку конкретного языка и региональных параметров, как указано в описании `filename` параметра.  
-  
-```  
-<?xml version="1.0" encoding="utf-8" ?>  
-<messagebundle>  
-  <msg name="1">A class that represents a rectangle</msg>  
-  <msg name="2">The height of a rectangle</msg>  
-  <msg name="3">The width of a rectangle</msg>  
-</messagebundle>  
-  
-```  
-  
- Например messagebundle добавьте следующий код в файл JavaScript в проекте. `<loc>` Должен отображаться в качестве первой строки в файле JavaScript. Описания в этом коде будет заменен локализованного описания, если он доступен.  
-  
-```javascript  
-/// <loc filename="messageFilename.xml" format="messagebundle"/>  
-  
-function doSomething(a,b)   
-{  
-    /// <summary locid='1'>description</summary>  
-    /// <param name='a' locid='2'>parameter a description</param>  
-    /// <param name='b' locid='3'>parameter b description</param>  
-}  
-  
-```  
-  
- В следующем примере используется формат VSDoc. Добавьте следующий код XML в файл с именем scriptFilename.xml и поместить его в соответствующую папку конкретного языка и региональных параметров.  
-  
-```  
-<?xml version="1.0" encoding="utf-8" ?>  
-<doc>  
-  <assembly>  
-    <name>Lights</name>  
-  </assembly>  
-  <members>  
-    <member name="M:illuminate">  
-      <summary>Activates a light. </summary>  
-      <param name='a'>The light to activate. </param>  
-    </member>  
-  </members>  
-</doc>  
-  
-```  
-  
- Например VSDoc добавьте следующий код в файл JavaScript в проекте. Описания в этом коде будет заменен локализованного описания, если он доступен.  
-  
-```javascript  
-/// <loc filename="scriptFilename.xml" format="vsdoc" />  
-  
-function illuminate(a)   
-{  
-    /// <summary locid='M:illuminate'>description</summary>  
-    /// <param name='a' type='Number'>parameter a description</param>  
-}  
-  
-```  
-  
-## <a name="see-also"></a>См. также  
+Задает расположение и тип файла расширения, который предоставляет локализованные сведения об IntelliSense.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+<loc filename="filename"
+    format="vsdoc|messagebundle" />
+```
+
+#### <a name="parameters"></a>Параметры
+ `filename` Необязательный. Корневое имя файла расширения, содержащего сведения о локализации для нейтрального языка и региональных параметров. Когда Visual Studio выполняет поиск сведений о локализации, он пытается найти версию этого файла, относящуюся к языку и региональным параметрам. Например, если `filename` имеет значение jQuery. XML, Visual Studio ищет правильную папку для конкретного языка и региональных параметров (например, JA) в том же расположении, что и JS-файл, содержащий элемент `<loc>`. Если путь к папке зависит от языка и региональных параметров, он проверяет, существует ли в нем файл jQuery. XML. Если не удается выбрать правильный файл, вместо этого используются правила расположения управляемых ресурсов. Значение по умолчанию для `filename` — имя текущего файла, но с расширением XML вместо. js.
+
+ `format` Необязательный. Тип файла расширения, используемого для локализации. Используйте `messagebundle`, чтобы указать использование пакетов сообщений, определенных открытыми метаданными AJAX. Рекомендуемый формат — `messagebundle`. Однако этот формат не поддерживается в Microsoft AJAX или в WinMD-файлах. Используйте `vsdoc`, чтобы указать стандартный формат локализации .NET Framework, используемый в Microsoft AJAX и среда выполнения Windows. Этот атрибут является необязательным. `vsdoc` является форматом по умолчанию.
+
+## <a name="remarks"></a>Примечания
+ Элемент `<loc>` должен находиться в верхней части файла в том же разделе, что и элемент `<reference>`. Правила использования элемента `<loc>` совпадают с `<reference>`ным элементом. Дополнительные сведения см. в подразделе "директивы References" статьи [IntelliSense JavaScript](../ide/javascript-intellisense.md).
+
+ Visual Studio обрабатывает один элемент `<loc>` для каждого JS-файла. Если имеется несколько элементов `<loc>`, то используется только один элемент `<loc>`. Поведение при определении того, какой элемент `<loc>` следует использовать, не определен.
+
+ При использовании формата пакета сообщений используйте атрибут `locid` в комментариях XML-документации, чтобы указать значение атрибута `name`.
+
+## <a name="example"></a>Пример
+ В следующем примере показано, как использовать элемент `<loc>` с форматом мессажебундле. Добавьте следующий XML-код в файл с именем Мессажефиленаме. XML и поместите его в соответствующую папку, зависящую от языка и региональных параметров, как указано в описании параметра `filename`.
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<messagebundle>
+  <msg name="1">A class that represents a rectangle</msg>
+  <msg name="2">The height of a rectangle</msg>
+  <msg name="3">The width of a rectangle</msg>
+</messagebundle>
+
+```
+
+ В примере мессажебундле добавьте следующий код в файл JavaScript в проекте. Элемент `<loc>` должен отображаться в виде первой строки в файле JavaScript. Описания в этом коде будут заменены локализованными описаниями, если они доступны.
+
+```javascript
+/// <loc filename="messageFilename.xml" format="messagebundle"/>
+
+function doSomething(a,b)
+{
+    /// <summary locid='1'>description</summary>
+    /// <param name='a' locid='2'>parameter a description</param>
+    /// <param name='b' locid='3'>parameter b description</param>
+}
+
+```
+
+ В следующем примере используется формат Всдок. Добавьте следующий XML-код в файл с именем Скриптфиленаме. XML и поместите его в соответствующую папку, относящуюся к языку и региональным параметрам.
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<doc>
+  <assembly>
+    <name>Lights</name>
+  </assembly>
+  <members>
+    <member name="M:illuminate">
+      <summary>Activates a light. </summary>
+      <param name='a'>The light to activate. </param>
+    </member>
+  </members>
+</doc>
+
+```
+
+ В примере Всдок добавьте следующий код в файл JavaScript в проекте. Описания в этом коде будут заменены локализованными описаниями, если они доступны.
+
+```javascript
+/// <loc filename="scriptFilename.xml" format="vsdoc" />
+
+function illuminate(a)
+{
+    /// <summary locid='M:illuminate'>description</summary>
+    /// <param name='a' type='Number'>parameter a description</param>
+}
+
+```
+
+## <a name="see-also"></a>См. также
  [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md)

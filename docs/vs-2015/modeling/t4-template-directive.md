@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeae6a14c846de83aaffa6568c6c30b82d9d81b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871730"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658552"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "68871730"
 ## <a name="compileroptions-attribute"></a>атрибут compilerOptions
  Пример: `compilerOptions="optimize+"`
 
- Допустимые значения: Любые допустимые параметры компилятора. Дополнительные сведения см. в разделе [ C# параметры компилятора, упорядоченные по категориям](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) и [Visual Basic параметры компилятора, перечисленные по категориям](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Допустимые значения: любые допустимые параметры компилятора. Дополнительные сведения см. в разделе [ C# параметры компилятора, упорядоченные по категориям](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) и [Visual Basic параметры компилятора, перечисленные по категориям](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Игнорируется для шаблонов времени выполнения (предварительно обработанных).
 
@@ -45,7 +45,7 @@ ms.locfileid: "68871730"
 
  Допустимые значения: "", инвариантный язык и региональные параметры, используемые по умолчанию.
 
- Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Для получения дополнительной информации см. <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  Этот атрибут задает язык и региональные параметры для использования при преобразовании блока выражений в текст.
 
@@ -56,7 +56,7 @@ ms.locfileid: "68871730"
 debug="true"
 ```
 
- Допустимые значения `true, false`:. Значение по умолчанию — false.
+ Допустимые значения: `true, false`. Значение по умолчанию — false.
 
  Если атрибут `debug` имеет значение `true`, промежуточный файл кода содержит сведения, позволяющие отладчику точнее определить положение прерывания или исключения в шаблоне.
 
@@ -71,13 +71,13 @@ debug="true"
 hostspecific="true"
 ```
 
- Допустимые значения `true, false, trueFromBase`:. Значение по умолчанию — false.
+ Допустимые значения: `true, false, trueFromBase`. Значение по умолчанию — false.
 
  Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Свойство является ссылкой на узел подсистемы преобразования и объявляется как [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Если определено пользовательское основное приложение, можно выполнить его приведение к типу пользовательского основного приложения.
 
  Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблонам времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не к [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Например:
+ Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -104,13 +104,13 @@ Content of myFile is:
 ## <a name="language-attribute"></a>атрибут language
  Пример: `language="VB"`
 
- Допустимые значения `C#` : (по умолчанию)
+ Допустимые значения: `C#` (по умолчанию)
 
  `VB`
 
  Атрибут Language задает язык ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../includes/csprcs-md.md)]), используемый для исходного кода в блоках операторов и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
 
- Например:
+ Пример:
 
 ```vb
 <#@ template language="VB" #>
@@ -216,7 +216,7 @@ This is the common footer.
 ## <a name="linepragmas-attribute"></a>Атрибут LinePragmas
  Пример: `linePragmas="false"`
 
- Допустимые значения `true` : (по умолчанию)
+ Допустимые значения: `true` (по умолчанию)
 
  `false`
 
@@ -227,7 +227,7 @@ This is the common footer.
 ## <a name="visibility-attribute"></a>Атрибут Visibility
  Пример: `visibility="internal"`
 
- Допустимые значения `public` : (по умолчанию)
+ Допустимые значения: `public` (по умолчанию)
 
  `internal`
 

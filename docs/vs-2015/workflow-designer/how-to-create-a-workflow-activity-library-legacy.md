@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создать библиотеку действий рабочих процессов (для прежних версий) | Документация Майкрософт
+title: Как создать библиотеку действий рабочего процесса (устаревшая) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,47 +10,43 @@ helpviewer_keywords:
 - projects, workflow activity libraries
 ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9baa358c3728c6cbedc5f8768b29ba7efe64b399
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d5bc4566c1ea520ac1050227ac8e4c0aee22e617
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703294"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604964"
 ---
-# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Практическое руководство. Создание библиотеки действий рабочих процессов (для прежних версий)
-Выполните следующие шаги для создания проекта библиотеки действий рабочего процесса с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../includes/vs2010-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
-### <a name="to-create-a-workflow-activity-library-project"></a>Создание проекта библиотеки действий рабочих процессов  
-  
-1. Запустите Visual Studio.  
-  
-2. В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.  
-  
-     Откроется диалоговое окно **Новый проект** .  
-  
-3. Выберите либо **.NET Framework 3.0** параметр или **.NET Framework 3.5** параметр в раскрывающемся списке в верхней части **новый проект** окно, чтобы открыть конструктор прежних версий.  
-  
+# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Как создать библиотеку действий рабочих процессов (для прежних версий)
+Выполните следующие шаги для создания проекта библиотеки действий рабочего процесса с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../includes/vs2010-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+### <a name="to-create-a-workflow-activity-library-project"></a>Создание проекта библиотеки действий рабочих процессов
+
+1. Запустите Visual Studio.
+
+2. В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
+
+     Откроется диалоговое окно **Новый проект** .
+
+3. Выберите параметр **.NET Framework 3,0** или **.NET Framework 3,5** в раскрывающемся списке в верхней части окна **нового проекта** , чтобы получить доступ к конструктору прежних версий.
+
     > [!NOTE]
-    > Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] — **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.  
-  
-4. В **типы проектов** области, выберите Visual C# или Visual Basic (в разделе **другие языки**), а затем выберите **рабочего процесса**.  
-  
-5. В **шаблоны** области выберите **Workflow Activity Library**.  
-  
-6. В **имя** введите описательное имя для проекта, чтобы облегчить его определение.  
-  
-7. В **расположение** введите каталог, в котором вы хотите сохранить проект, или **Обзор** для перехода к нему.  
-  
-     Если необходимо создать для проекта каталог решения, выберите **создать каталог для решения** флажок и введите имя в **имя решения** поле.  
-  
-8. Нажмите кнопку **ОК**.  
-  
-## <a name="see-also"></a>См. также  
- [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Использование конструктора действия для прежних версий](../workflow-designer/using-the-legacy-activity-designer.md)   
- [Действия рабочего процесса прежних версий](../workflow-designer/legacy-workflow-activities.md)   
- [Разработка действий рабочих процессов](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Действия Windows Workflow Foundation](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+    > Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] имеет значение **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.
+
+4. На панели **типы проектов** выберите визуальный C# элемент или Visual Basic (в разделе **другие языки**), а затем выберите **Рабочий процесс**.
+
+5. В области **шаблоны** выберите **Библиотека действий рабочего процесса**.
+
+6. В поле **имя** введите описательное имя проекта, чтобы упростить его поиск.
+
+7. В поле **Расположение** введите каталог, в котором необходимо сохранить проект, или нажмите кнопку **Обзор** , чтобы перейти к нему.
+
+     Если требуется создать каталог решения для проекта, установите флажок **создать каталог для решения** и введите имя в поле **имя решения** .
+
+8. Нажмите кнопку **ОК**.
+
+## <a name="see-also"></a>См. также раздел
+ [Создание устаревших проектов рабочих процессов](../workflow-designer/creating-legacy-workflow-projects.md) с помощью устаревших [действий рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [в конструкторе](../workflow-designer/using-the-legacy-activity-designer.md) устаревшие действия [Разработка действий рабочего процесса](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52) [Windows Workflow Foundation действия](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

@@ -1,5 +1,5 @@
 ---
-title: Структура DebugPropertyInfo | Документация Майкрософт
+title: Структура Дебугпропертинфо | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 793c83b467460f0744abffe3f161f7510f56257a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955267"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575071"
 ---
 # <a name="debugpropertyinfo-structure"></a>Структура DebugPropertyInfo
-Описывает объект иерархическую сущность, которая имеет имя, тип и значение. Он используется для описания свойств отладки локальных переменных, параметров, Контрольные значения переменных и выражений и регистрирует.  
+Описывает объект иерархической природы с именем, типом и значением. Он используется для описания свойств отладки локальных переменных, параметров, контрольных переменных и выражений, а также регистров.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,29 +41,29 @@ typedef struct DebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Участники  
- dwValidFields  
- Тип перечислимых данных, можно указать, какие поля инициализируются.  
+## <a name="members"></a>Члены  
+ дввалидфиелдс  
+ Перечислимый тип данных, используемый для указания, какие поля инициализируются.  
   
  bstrName  
  Имя свойства в контексте.  
   
- bstrType  
- Тип свойства как форматируемой строки.  
+ бстртипе  
+ Тип свойства в виде форматированной строки.  
   
- bstrValue  
- Значение свойства, как форматируемой строки.  
+ бстрвалуе  
+ Значение свойства в виде форматированной строки.  
   
- bstrFullName  
+ бстрфуллнаме  
  Полное имя свойства.  
   
- dwAttrib  
- Перечисление, содержащее флаги для атрибутов свойства отладки.  
+ дваттриб  
+ Перечисление, указывающее флаги для атрибутов свойств отладки.  
   
- pDebugProp  
- `IDebugProperty` Описываемого сведения в этом `DebugPropertyInfo` структуры.  
+ пдебугпроп  
+ @No__t_0, описываемые данными в этой структуре `DebugPropertyInfo`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

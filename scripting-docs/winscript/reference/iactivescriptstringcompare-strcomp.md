@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Документация Майкрософт
+title: 'IActiveScriptStringCompare:: StrComp | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66cccb4281e19aebb25b3b4cde06705b500f53a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 233c427b634306527b0b0d496397e82f889560e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991435"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577937"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
 Определяет метод сравнения строк для обработчика скриптов.  
@@ -48,22 +48,22 @@ HRESULT StrComp(
  Вторая строка.  
   
  `iRet`  
- Результат сравнения. 0, если `bszStr1` и `bszStr2`идентичны; -1, если `bszStr1`  <  `bszStr2`; 1, если `bszStr1`  >  `bszStr2`.  
+ Результат сравнения. 0, если `bszStr1` и `bszStr2`are идентичны; -1, если `bszStr1`  <  `bszStr2`; 1, если `bszStr1`  >  `bszStr2`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Возвращаемое значение|Значение|  
+|Возвращаемое значение|Смысл|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
 |`E_INVALIDARG`|Аргумент является недопустимым.|  
-|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не была загрузки или инициализации).|  
+|`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не загружен или не инициализирован).|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывается каждый раз, выполняемого сравнения строк.  
+## <a name="remarks"></a>Заметки  
+ Этот метод вызывается каждый раз при выполнении сравнения строк.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как попытка перегрузки функции сравнения строк. При использовании перегрузки допускается [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) присвоить SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ В следующем примере показано, как перегрузить функцию сравнения строк. Перегрузка разрешена при использовании [иактивескриптпроперти:: SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) для установки SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

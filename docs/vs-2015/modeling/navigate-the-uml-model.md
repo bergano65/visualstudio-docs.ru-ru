@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871774"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668543"
 ---
 # <a name="navigate-the-uml-model"></a>Навигация по модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,20 +45,20 @@ ms.locfileid: "68871774"
 
  При удалении элемента из модели все связи, в которых он был задействован, автоматически удаляются с обновлением свойства на другом конце.
 
- Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Кратность с максимальным значением больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*Введите*`>`.
+ Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Кратность с максимальным значением больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*type* `>`.
 
  Дополнительные сведения о просмотре связей см. [в разделе Навигация по связям с помощью API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Дерево собственности
  Модель содержит дерево объектов [IElement](/previous-versions/dd516035(v=vs.140)) . У каждого элемента есть свойства `OwnedElements` и `Owner`.
 
- В большинстве случаев на свойства `Owner` и `OwnedElements` также ссылаются другие свойства с более конкретными именами. Например, каждая операция UML принадлежит классу UML. Поэтому [IOperation](/previous-versions/dd481186(v=vs.140)) имеет свойство с именем [IOperation.Class](/previous-versions/dd473473%28v%3dvs.140%29)и в каждом объекте [IOperation](/previous-versions/dd481186(v=vs.140)), `Class == Owner`.
+ В большинстве случаев на свойства `Owner` и `OwnedElements` также ссылаются другие свойства с более конкретными именами. Например, каждая операция UML принадлежит классу UML. Поэтому [IOperation](/previous-versions/dd481186(v=vs.140)) имеет свойство с именем [IOperation. class](/previous-versions/dd473473%28v%3dvs.140%29)и в каждом объекте [IOperation](/previous-versions/dd481186(v=vs.140)) `Class == Owner`.
 
- Самый верхний элемент дерева, не имеющий владельца, — это `AuxiliaryConstructs.IModel`. Имодел содержится `IModelStore`в, в котором он является [имоделсторе. root](/previous-versions/ee789368(v=vs.140)).
+ Самый верхний элемент дерева, который не имеет владельца, является `AuxiliaryConstructs.IModel`ом. Имодел содержится в `IModelStore`, где это [имоделсторе. root](/previous-versions/ee789368(v=vs.140)).
 
  Каждый элемент модели создается с владельцем. Дополнительные сведения см. [в разделе Создание элементов и связей в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
- ![Диаграмма классов: Модель, схема, фигура и элемент](../modeling/media/uml-mm1.png)
+ ![Схема классов: модель, схема, фигура и элемент](../modeling/media/uml-mm1.png)
 
 ## <a name="shapes-and-diagrams"></a>Фигуры и схемы
  В модели UML элементы можно отобразить на схемах. На разных типах схем могут отображаться различные подтипы IElement.
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```
 
 ## <a name="accessing-another-model-or-diagrams"></a>Доступ к другой модели или схемам
- Можно выполнить следующие действия:
+ Можно выполнить следующие действия.
 
 - Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. [в разделе Интеграция моделей UML с другими моделями и инструментами](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 

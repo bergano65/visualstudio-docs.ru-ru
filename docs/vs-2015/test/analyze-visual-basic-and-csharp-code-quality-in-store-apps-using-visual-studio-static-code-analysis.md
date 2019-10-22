@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416642"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660740"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода Visual Basic и C# в приложениях Магазина с помощью функций анализа статического кода Visual Studio
 
@@ -55,16 +55,16 @@ ms.locfileid: "68416642"
 
    Решение компилируется, и запускается анализ кода. Результаты выводятся в окне "Анализ кода".
 
-   ![Окно "Анализ кода"](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![Окно "анализ кода"](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Анализ и разрешение предупреждений анализа кода
  Чтобы проанализировать конкретное предупреждение, щелкните заголовок предупреждения в окне "Анализ кода". Предупреждение разворачивается, позволяя просмотреть подробные сведения о проблеме.
 
- ![Расширенное предупреждение анализа кода](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
+ ![Предупреждение анализа расширенного кода](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
  При разворачивании предупреждения строка кода, которая вызвала предупреждение, выделяется в редакторе кода Visual Studio.
 
- ![Выделение текста при анализе кода](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
+ ![Выделение текста для анализа кода](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
  Поняв, в чем заключается проблема, можно разрешить ее в коде. После этого повторно запустите анализ кода, чтобы убедиться, что предупреждение больше не отображается в окне анализа кода и исправление не привело к появлению новых предупреждений.
 
@@ -91,7 +91,7 @@ ms.locfileid: "68416642"
 ## <a name="BKMK_Search"></a> Поиск и фильтрация результатов анализа кода
  Можно выполнять поиск в длинных списках предупреждений, а также фильтровать предупреждения в решениях, состоящих из нескольких проектов.
 
- ![Поиск и фильтрация в окне анализа кода](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Поиск и фильтрация окна "анализ кода"](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  В [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] все предупреждения анализа кода имеют степень серьезности "Предупреждение".
 
@@ -100,10 +100,10 @@ ms.locfileid: "68416642"
 
  [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: удалите пустые завершающие методы](https://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: удаляйте пустые методы завершения](https://msdn.microsoft.com/library/bb264476.aspx)
 
  [CA2213: следует высвобождать высвобождаемые поля](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: реализуйте конструкторы сериализации](https://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: применяйте конструкторы сериализации](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

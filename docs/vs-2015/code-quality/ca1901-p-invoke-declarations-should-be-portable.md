@@ -1,5 +1,5 @@
 ---
-title: CA1901. Объявления P / Invoke должны быть переносимыми | Документация Майкрософт
+title: 'CA1901: объявления P-Invoke должны быть переносимыми | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,41 +12,41 @@ helpviewer_keywords:
 - PInvokeDeclarationsShouldBePortable
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203069"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661064"
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901. Объявления P/Invoke должны быть переносимыми
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: объявления P/Invoke должны быть переносимыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Категория|Microsoft.Portability|
-|Критическое изменение|Критическое, если метод P/Invoke видимо за пределами сборки. Не критическое, если метод P/Invoke не отображается за пределами сборки.|
+|Категория|Microsoft. переносимость|
+|Критическое изменение|Критическое — если P/Invoke видим за пределами сборки. Не критическое — если P/Invoke не виден за пределами сборки.|
 
 ## <a name="cause"></a>Причина
- Это правило вычисляет размер каждого параметра и возвращаемого значения вызова P/Invoke и проверяет правильность их размера, при маршалировании в неуправляемый код на 32-разрядных и 64-разрядных платформах. Наиболее распространенных нарушение этого правила является передача является целым числом, фиксированного размера, где требуется зависят от платформы, размера указателя переменной.
+ Это правило оценивает размер каждого параметра и возвращаемое значение P/Invoke и проверяет, что их размер при маршалировании в неуправляемый код на 32-разрядных и 64-разрядных платформах является правильным. Наиболее распространенным нарушением этого правила является передача целого числа фиксированного размера, где требуется зависящая от платформы переменная с размером указателя.
 
 ## <a name="rule-description"></a>Описание правила
- Одно из следующих сценариев это правило не происходит:
+ В одном из следующих сценариев происходит нарушение этого правила:
 
-- Возвращаемого значения или параметра типизируется как целое число фиксированного размера он должен быть типизированы как `IntPtr`.
+- Возвращаемое значение или параметр вводится как целое число фиксированного размера, если его необходимо ввести как `IntPtr`.
 
-- Имеет тип возвращаемого значения или параметра `IntPtr` при их следует вводить как целое число фиксированного размера.
+- Возвращаемое значение или параметр вводится как `IntPtr`, если необходимо ввести целое число с фиксированным размером.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Это нарушение можно подготовить с помощью `IntPtr` или `UIntPtr` для представления дескрипторов вместо `Int32` или `UInt32`.
+ Это нарушение можно устранить с помощью `IntPtr` или `UIntPtr` для представления дескрипторов вместо `Int32` или `UInt32`.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не следует подавлять это предупреждение.
+ Не следует отключать это предупреждение.
 
 ## <a name="example"></a>Пример
  В следующем примере показано нарушение этого правила.
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- В этом примере `nIconIndex` параметр, объявленный как `IntPtr`, который является 4 байта на 32-разрядной платформе и 8 байтов на 64-разрядной платформе. В неуправляемом объявлении, можно увидеть, что `nIconIndex` является 4-байтовое целое число без знака, на всех платформах.
+ В этом примере параметр `nIconIndex` объявляется как `IntPtr`, ширина которого составляет 4 байта на 32-разрядной платформе и 8 байт в ширину на 64-разрядной платформе. В объявлении неуправляемого кода, приведенном ниже, можно увидеть, что `nIconIndex` является 4-байтовым целым числом без знака на всех платформах.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -68,15 +68,15 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Пример
- Чтобы устранить нарушение, измените объявление следующим:
+ Чтобы устранить нарушение, измените объявление на следующее:
 
 ```csharp
 internal class NativeMethods{
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
     internal static extern IntPtr ExtractIcon(IntPtr hInst,
         string lpszExeFileName, uint nIconIndex);
 }
 ```
 
-## <a name="see-also"></a>См. также
- [Portability Warnings](../code-quality/portability-warnings.md)
+## <a name="see-also"></a>См. также раздел
+ [Предупреждения переносимости](../code-quality/portability-warnings.md)

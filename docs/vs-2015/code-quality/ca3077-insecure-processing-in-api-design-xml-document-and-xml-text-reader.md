@@ -1,21 +1,21 @@
 ---
-title: CA3077. Небезопасный, обработка в структуре API, XML-документ и средства чтения текста XML | Документация Майкрософт
+title: 'CA3077: небезопасная обработка в конструкторе API, XML-документе и модуле чтения текста XML | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d8f1e04483c486add9940bf3a78ec4c35eb2317d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83132da4b6687db74920015df0ad817eb75673db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693376"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669052"
 ---
-# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077. Небезопасная обработка в структуре API средств чтения документов и текста XML
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: небезопасная обработка в структуре API средств чтения документов и текста XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -37,9 +37,9 @@ ms.locfileid: "65693376"
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-- Перехватывайте и обрабатывайте все исключения XmlTextReader Exception соответствующим образом, чтобы не допустить раскрытия информации.
+- Чтобы избежать раскрытия информации о пути, перехватите и обработайте все исключения XmlTextReader.
 
-- Используйте <xref:System.Xml.XmlSecureResolver>вместо XmlResolver, чтобы ограничить ресурсы, может получить доступ XmlTextReader.
+- Используйте  <xref:System.Xml.XmlSecureResolver>instead XmlResolver для ограничения ресурсов, к которым может получить доступ XmlTextReader.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключайте правило этого предупреждения, только если уверены, что входные данные получены из доверенного источника.

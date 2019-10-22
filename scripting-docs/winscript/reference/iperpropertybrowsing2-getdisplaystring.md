@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetDisplayString | Документация Майкрософт
+title: 'IPerPropertyBrowsing2:: Жетдисплайстринг | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6f63db8d9c032b8e880f05d4d21e50fd56c74e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc702ad15d1aba04bf991c04b585728afde4fb41
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944874"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571450"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
-Возвращает строку для отображения типов, которые не отображаются по своей природе возвращаемый текст — это имя, описывающее свойство и могут отображаться в пользовательском интерфейсе вызывающей стороны.  
+Получает строку для отображения типов, которые невидимо для просмотра возвращаемый текст — это имя, описывающее свойство и которое может быть отображено в пользовательском интерфейсе вызывающей стороны.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,16 +38,16 @@ HRESULT GetDisplayString(
   
 #### <a name="parameters"></a>Параметры  
  `dispid`  
- [in] Идентификатор запрошенного, отображаемое имя свойства отправки.  
+ окне Идентификатор диспетчеризации свойства, отображаемое имя которого запрошено.  
   
  `pBstr`  
- [out] Указатель на `BSTR` содержащее отображаемое имя для свойства, идентифицируемого по `dispID`.  
+ заполняет Указатель на `BSTR`, содержащий отображаемое имя для свойства, идентифицируемого `dispID`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
-## <a name="remarks"></a>Примечания  
- Возвращаемая строка не является допустимым значением свойства. Это просто вывода строки свойства.  
+## <a name="remarks"></a>Заметки  
+ Возвращаемая строка не является допустимым значением свойства. Это просто строковое отображение свойства.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

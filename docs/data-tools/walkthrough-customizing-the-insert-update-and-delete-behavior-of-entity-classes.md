@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb6bbde145317d737afdbf819dba8ee53f805f72
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252969"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639171"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка операций вставки, обновления и удаления в классах сущностей
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка поведения вставки, обновления и удаления классов сущностей
 
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляют визуальную область конструктора для создания и редактирования классов LINQ to SQL (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)можно использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](/dotnet/csharp/linq/).
 
-По умолчанию логика для выполнения обновлений предоставляется средой выполнения LINQ to SQL. Среда выполнения создает по `Insert`умолчанию инструкции `Delete` , `Update`и, основанные на схеме таблицы (определения столбцов и сведения о первичном ключе). Если вы не хотите использовать поведение по умолчанию, то можно настроить поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд "Вставить", "Обновить" и "Удалить", необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций с помощью хранимых процедур](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+По умолчанию логика для выполнения обновлений предоставляется средой выполнения LINQ to SQL. Среда выполнения создает по умолчанию инструкции `Insert`, `Update` и `Delete` на основе схемы таблицы (определения столбцов и сведения о первичном ключе). Если вы не хотите использовать поведение по умолчанию, то можно настроить поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд "Вставить", "Обновить" и "Удалить", необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций с помощью хранимых процедур](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Данное пошаговое руководство требует наличия хранимых процедур **InsertCustomer**, **UpdateCustomer** и **DeleteCustomer** в базе данных Northwind.
@@ -35,17 +35,17 @@ ms.locfileid: "71252969"
 
 - Создайте класс сущности, сопоставленный с таблицей `Customers` Northwind.
 
-- Создайте источник данных объекта, который ссылается на класс `Customer` LINQ to SQL.
+- Создайте источник данных объекта, который ссылается на класс LINQ to SQL `Customer`.
 
-- Создайте форму Windows Forms, которая <xref:System.Windows.Forms.DataGridView> содержит объект, привязанный `Customer` к классу.
+- Создайте форму Windows Forms, содержащую <xref:System.Windows.Forms.DataGridView>, привязанный к классу `Customer`.
 
 - Реализуйте для формы функциональные возможности сохранения.
 
 - Создайте <xref:System.Data.Linq.DataContext> методы, добавив хранимые процедуры в **конструктор O/R**.
 
-- `Customer` Настройте класс для использования хранимых процедур для выполнения операций вставки, обновления и удаления.
+- Настройте класс `Customer`, чтобы использовать хранимые процедуры для выполнения операций вставки, обновления и удаления.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -71,7 +71,7 @@ ms.locfileid: "71252969"
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Создание нового проекта Windows Forms приложения, содержащего классы LINQ to SQL
 
-1. В Visual Studio в меню **файл** выберите пункт **создать** > **проект**.
+1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -102,7 +102,7 @@ ms.locfileid: "71252969"
      Создастся класс сущностей с именем **Customer**. Он имеет свойства, соответствующие столбцам в таблице Customers. Класс сущностей имеет имя **Customer** (не **Customers**), поскольку он представляет одного клиента из таблицы Customers.
 
     > [!NOTE]
-    > Такой метод переименования называется *преобразованием во множественную форму*. Его можно включить или отключить в [диалоговом окне Параметры](../ide/reference/options-dialog-box-visual-studio.md). Дополнительные сведения см. в разделе [Практическое руководство. включить и отключить преобразование во множественную форму (реляционный конструктор объектов)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Такой метод переименования называется *преобразованием во множественную форму*. Его можно включить или отключить в [диалоговом окне Параметры](../ide/reference/options-dialog-box-visual-studio.md). Дополнительные сведения см. в разделе [инструкции. Включение и отключение во множественном числе (реляционный конструктор)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
 3. В меню **Build** щелкните пункт **Build UpdatingwithSProcsWalkthrough** для создания проекта.
 
@@ -133,7 +133,7 @@ ms.locfileid: "71252969"
 
 3. Откройте форму **Form1** в редакторе кода.
 
-4. Добавьте следующий код в форму Global для формы за пределами какого бы то `Form1` ни было конкретного метода, но внутри класса:
+4. Добавьте следующий код в форму Global для формы вне какого бы то ни было конкретного метода, но внутри класса `Form1`:
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -232,7 +232,7 @@ ms.locfileid: "71252969"
 19. Нажмите кнопку **ОК**.
 
 > [!NOTE]
-> Хотя это и не является проблемой в этом конкретном пошаговом руководстве, стоит отметить, что LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для идентификации (автоприращения), ROWGUIDCOL (идентификатор GUID, сформированный базой данных) и столбцов меток времени во время вставки и обновляем. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Чтобы возвращать значения, создаваемые базой данных, следует вручную установить свойство <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> в значение `true`, а свойство <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> — в одно из следующих значений: [Автосинхронизация. всегда](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)или [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Хотя это и не является проблемой в этом конкретном пошаговом руководстве, стоит отметить, что LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для идентификации (автоприращения), ROWGUIDCOL (идентификатор GUID, сформированный базой данных) и столбцов меток времени во время вставки и обновляем. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Чтобы получить значения, сформированные базой данных, необходимо вручную задать для параметра <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> значение `true` и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> одно из следующих значений: [Автосинхронизация. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)или [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="test-the-application"></a>Тестирование приложения
 
@@ -273,6 +273,6 @@ ms.locfileid: "71252969"
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Методы DataContext](../data-tools/datacontext-methods-o-r-designer.md)
-- [Практическое руководство. Назначение хранимых процедур для выполнения обновлений, вставок и удалений](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Инструкции. назначение хранимых процедур для выполнения операций обновления, вставки и удаления](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Запросы LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

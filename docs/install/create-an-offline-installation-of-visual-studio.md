@@ -1,7 +1,7 @@
 ---
 title: Создание автономной установки
 description: Узнайте, как установить Visual Studio в автономном режиме в случае ненадежного подключения к Интернету или низкой пропускной способности.
-ms.date: 07/24/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 599eef257894c0619252a4c2db23b304e4439d70
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180037"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381096"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 поддерживает различные конфигурации сети и компьютера. Мы рекомендуем использовать [веб-установщик Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)&mdash; — небольшой файл, в который входят все последние исправления и функции&mdash;, но понимаем, что это не всегда возможно.
+Visual Studio 2017 поддерживает различные конфигурации сети и компьютера. Мы рекомендуем использовать [веб-установщик Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads)&mdash; — небольшой файл, в который входят все последние исправления и функции&mdash;, но понимаем, что это не всегда возможно.
 
 ::: moniker-end
 
@@ -75,27 +75,36 @@ Visual Studio 2019 поддерживает различные конфигур
 
 Для выполнения этого действия необходимо подключение к Интернету.
 
-Прежде всего следует скачать загрузчик Visual Studio для выбранного выпуска Visual Studio. Файл установки &mdash;или загрузчик&mdash; должны иметь одно из перечисленных ниже имен или похожее.
-
 ::: moniker range="vs-2017"
 
-| Выпуск                    | Файл                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
-| Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+Сведения о том, как получить начальный загрузчик для Visual Studio 2017, см. на странице скачиваемых материалов [Предыдущие версии Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).
+
+Исполняемый файл программы установки &mdash; а точнее файл начального загрузчика &mdash; должен иметь одно из перечисленных ниже имен или похожее на него.
+
+| Выпуск | имя_файла |
+|-------------|-----------------------|
+|Visual Studio Community | vs_community.exe |
+|Visual Studio Professional | vs_professional.exe |
+|Visual Studio Enterprise | vs_enterprise.exe |
+|Visual Studio Build Tools   | vs_buildtools.exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Прежде всего следует скачать загрузчик Visual Studio для выбранного выпуска Visual Studio. Файл установки &mdash;или загрузчик&mdash; должны иметь одно из перечисленных ниже имен или похожее.
 
 | Выпуск                    | Файл                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>Если вы ранее скачали файл начального загрузчика и хотите проверить его версию, вот как это сделать. В Windows откройте проводник, щелкните правой кнопкой мыши файл начального загрузчика, выберите **Свойства**, перейдите на вкладку **Подробно**, а затем найдите номер в строке **Версия продукта**. Чтобы сопоставить этот номер с выпуском Visual Studio, перейдите на страницу [Номера сборки и даты выпуска Visual Studio](visual-studio-build-numbers-and-release-dates.md).
 
 ### <a name="step-2---create-a-local-install-cache"></a>Шаг 2. Создание локального кэша установки
 
@@ -153,6 +162,12 @@ Visual Studio 2019 поддерживает различные конфигур
 
 > [!TIP]
 > При запуске установки из локального кэша используются локальные версии каждого из этих файлов. Но если во время установки вы выберете компоненты, которые отсутствуют в кэше, программа установки попытается загрузить их из Интернета.
+
+::: moniker range="vs-2019"
+
+> Если при установке версии 16.1 и выше или обновлении до них вы получаете сообщение об ошибке "Невозможно найти продукт, соответствующий следующим параметрам" в автономных системах, используйте параметр --noweb с версией 16.3.5 или более поздней версией.
+
+::: moniker-end
 
 Чтобы установить только те файлы, которые вы уже скачали, все параметры командной строки должны совпадать с теми, которые вы использовали для создания макета кэша. Предположим, что вы создали макет кэша с помощью следующей команды:
 

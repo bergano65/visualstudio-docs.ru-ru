@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugDataTarget::ReadNullTerminatedString | Документация Майкрософт
+title: 'Метод метод ijsdebugdatatarget:: Реаднуллтерминатедстринг | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 178a2d3705e4904de9253c02319f6ba94e567d76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d6ee6c8dad81865767b0b944ef311fc0de0063
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582372"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572398"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>Метод IJsDebugDataTarget::ReadNullTerminatedString
 Считывает указанное количество символов из целевого объекта.  
@@ -38,24 +38,24 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Параметры  
  `address`  
- [in] Адрес для чтения из.  
+ окне Адрес, из которого производится чтение.  
   
  `characterSize`  
  [in] размер каждого символа в строке  
   
  `maxCharacters`  
- [in] Максимальное количество символов для чтения. maxCharacters должно быть разумным. Любой запрос, для более чем 128 МБ памяти завершится ошибкой.  Если строки больше maxCharacters, результирующая строка усекается после maxCharacters.  
+ окне Максимальное число считываемых символов. Максчарактерс должен быть разумным. Любой запрос на более 128 МБ памяти завершится ошибкой.  Если строка больше Максчарактерс, то после Максчарактерс строка результата будет обрезана.  
   
  `pString`  
- [out] BSTR чтения из целевого объекта.  
+ заполняет Значение BSTR, считанное из целевого объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Возвращает значение S_FALSE, если усечено.  
+## <a name="remarks"></a>Заметки  
+ Возвращает значение S_FALSE при усечении.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

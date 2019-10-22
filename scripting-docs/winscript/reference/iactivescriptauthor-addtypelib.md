@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddTypeLib | Документация Майкрософт
+title: 'Иактивескриптаусор:: Аддтипелиб | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5967438c620a89df98c74c8824809b8fdaf739a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd96732a905d3fc0732ccfeaf2b65ada82957f4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935488"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577229"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
 Добавляет библиотеку типов в пространство имен для скрипта.  
@@ -40,28 +40,28 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Параметры  
  `rguidTypeLib`  
- [in] CLSID (идентификатор класса) библиотеки типов для добавления.  
+ окне CLSID (идентификатор класса) добавляемой библиотеки типов.  
   
  `dwMajor`  
- [in] Основной номер версии.  
+ окне Основной номер версии.  
   
  `dwMinor`  
- [in] Дополнительный номер версии.  
+ окне Дополнительный номер версии.  
   
  `dwFlags`  
- [in] Не используется.  
+ окне Не используется.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывает метод `LoadTypeLib` для загрузки библиотеки типов. В случае успеха этот метод вызывает `IActiveScriptAuthor::AddNamedItem` для добавления сведений о типе.  
+## <a name="remarks"></a>Заметки  
+ Этот метод вызывает `LoadTypeLib` для загрузки библиотеки типов. После успешного выполнения этот метод вызывает `IActiveScriptAuthor::AddNamedItem` для добавления сведений о типе.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
- [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)
+ @No__t_1 [интерфейса иактивескриптаусор](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [Иактивескриптаусор:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+ [лоадтипелиб](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

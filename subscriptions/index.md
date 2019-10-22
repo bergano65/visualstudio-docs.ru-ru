@@ -7,18 +7,18 @@ layout: LandingPage
 ms.date: 06/25/2018
 ms.topic: landing-page
 description: Добро пожаловать в подписки Visual Studio
-ms.openlocfilehash: 9c2981ddf109a253f55e4c72dd4e88ceb2c820ff
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.openlocfilehash: 5848ccca0468b6293f7e31785944f5cb8b14a17c
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383705"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516857"
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 
 Подписки Visual Studio — это исчерпывающий набор инструментов для разработки, развертывания великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux, и управления такими приложениями.  Преимущества подписок включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.
 
-## <a name="get-started"></a>Приступая к работе
+## <a name="get-started"></a>Начало работы
 
 Администраторам нужно войти в систему на сайте [https://manage.visualstudio.com](https://manage.visualstudio.com), чтобы назначить подписки команде.<br>
 Подписчикам нужно войти в систему на сайте [https://my.visualstudio.com](https://my.visualstudio.com), чтобы получить доступ к преимуществам подписок.
@@ -72,7 +72,7 @@ ms.locfileid: "70383705"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure DevOps Services</h3>
+                        <h3>Azure DevOps Services</h3>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@ ms.locfileid: "70383705"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Средства разработчика</h3>
+                        <h3>Средства для разработчиков</h3>
                         <p>Вы получите доступ к последним версиям Visual Studio — полнофункциональной интегрированной среде разработки для создания приложений для Android, iOS, Windows, macOS, веб-приложений и облачных приложений, а также к другим межплатформенным инструментам на ПК или компьютере Mac.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
@@ -170,9 +170,9 @@ ms.locfileid: "70383705"
                         <h3>Облачные службы</h3>
                         <p>С подпиской Visual Studio вы можете получить                         ежемесячный кредит Azure и для доступа к службам Azure,                         а также тарифы на разработку и тестирование со скидкой и эксклюзивный                            доступ к коллекции образов с предварительно                                  настроенными виртуальными машинами, доступной только подписчикам. В зависимости от                               подписки облачные службы могут включать следующее.</p>
                         <ul>
-                            <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-azure">Таблицы Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Центр приложений Visual Studio</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Подписка разработчика приложений для Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Учетная запись разработчика Windows</a></li>
                             <li>PowerBI Pro</li>
@@ -194,7 +194,6 @@ ms.locfileid: "70383705"
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (облако, разработка, мобильные технологии и данные)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (обработка и анализ данных, ИИ)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Обращения в службу профессиональной технической поддержки Майкрософт</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Чат с Помощником по Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Сообщество Azure</a></li>
                         </ul>
                     </div>

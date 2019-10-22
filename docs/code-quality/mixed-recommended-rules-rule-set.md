@@ -2,17 +2,17 @@
 title: Набор правил "Рекомендуемые правила для смешанных сред"
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 3f0daaf22f3e944dd76802060c53c64d40a4da04
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585320"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649219"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для смешанных сред"
 
@@ -127,7 +127,7 @@ ms.locfileid: "69585320"
 |[C6518](../code-quality/c6518.md)|Записываемый размер у буфера, недоступного для записи|
 |[C6522](../code-quality/c6522.md)|Недопустимый размер у строкового типа|
 |[C6525](../code-quality/c6525.md)|Недоступное расположение у строки недопустимого размера|
-|[C6527](../code-quality/c6527.md)|Недопустимая аннотация: Свойство "NeedsRelease" не может использоваться для значений типа void|
+|[C6527](../code-quality/c6527.md)|Недопустимая аннотация: свойство "NeedsRelease" не может использоваться для значений типа void|
 |[C6530](../code-quality/c6530.md)|Неизвестный стиль строки формата|
 |[C6540](../code-quality/c6540.md)|Если для данной функции использовать аннотации атрибута, все ее существующие аннотации __declspec станут недействительными|
 |[C6551](../code-quality/c6551.md)|Недопустимая спецификация размера: синтаксический анализ выражения невозможен|
@@ -151,7 +151,7 @@ ms.locfileid: "69585320"
 |[C28020](../code-quality/c28020.md)|Выражение не равно true в этом вызове|
 |[C28021](../code-quality/c28021.md)|Аннотируемый параметр должен быть указателем|
 |[C28022](../code-quality/c28022.md)|Классы функций для этой функции не соответствуют классам-функциям typedef, используемому для его определения.|
-|[C28023](../code-quality/c28023.md)|Назначенная или передаваемая функция должна иметь \_заметку класса\_ функции\_по крайней мере для одного из классов (ES).|
+|[C28023](../code-quality/c28023.md)|Назначенная или передаваемая функция должна иметь \_Function \_class \_ Аннотация по крайней мере для одного из классов.|
 |[C28024](../code-quality/c28024.md)|Указатель функции, которому присваивается значение, записывается в класс Function, который не содержится в списке классов функций.|
 |[C28039](../code-quality/c28039.md)|Тип фактического параметра должен точно соответствовать типу|
 |[C28112](../code-quality/c28112.md)|Доступ к переменной, доступ к которой осуществляется через блокируемую функцию, всегда должен осуществляться через блокируемую функцию.|
@@ -169,14 +169,14 @@ ms.locfileid: "69585320"
 |[C28196](../code-quality/c28196.md)|Требование не удовлетворено. (Выражение не возвращает значение true.)|
 |[C28202](../code-quality/c28202.md)|Недопустимая ссылка на нестатический член|
 |[C28203](../code-quality/c28203.md)|Неоднозначная ссылка на член класса.|
-|[C28205](../code-quality/c28205.md)|\_Успех\_ или\_отказ\_, использованный в недопустимом контексте\_|
+|[C28205](../code-quality/c28205.md)|\_Success \_ или \_On \_failure \_ используется в недопустимом контексте|
 |[C28206](../code-quality/c28206.md)|Левый операнд указывает на структуру, используйте "->"|
 |[C28207](../code-quality/c28207.md)|Левый операнд является структурой, используйте "."|
 |[C28209](../code-quality/c28209.md)|Объявление символа содержит конфликтующее объявление|
 |[C28210](../code-quality/c28210.md)|Аннотации для контекста _on_failure_ не должны находиться в явном предконтексте|
 |[C28211](../code-quality/c28211.md)|Для SAL_context ожидалось имя статического контекста|
 |[C28212](../code-quality/c28212.md)|Для аннотации ожидалось выражение указателя|
-|[C28213](../code-quality/c28213.md)|Аннотацию\_USEdecl\_следует использовать для ссылки, без изменения, перед объявлением. \_\_|
+|[C28213](../code-quality/c28213.md)|Заметка \_Use \_decl \_annotations \_ должна использоваться для ссылки, без изменения, в предыдущем объявлении.|
 |[C28214](../code-quality/c28214.md)|Допустимые имена параметров атрибута: p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix нельзя применять к параметру, который уже имеет typefix|
 |[C28216](../code-quality/c28216.md)|Аннотация checkReturn применяется только к постусловиям для конкретного параметра функции.|
@@ -219,7 +219,7 @@ ms.locfileid: "69585320"
 |[C28267](../code-quality/c28267.md)|В аннотациях для функции обнаружена синтаксическая ошибка для аннотации.|
 |[C28272](../code-quality/c28272.md)|Аннотация для функции: параметр не согласуется с объявлением функции при проверке|
 |[C28273](../code-quality/c28273.md)|Функция: причины не согласуются с объявлением функции|
-|[C28275](../code-quality/c28275.md)|Параметр для \_значения\_макросаимеетзначение\_ null|
+|[C28275](../code-quality/c28275.md)|Параметр для \_Macro \_value \_ имеет значение null|
 |[C28279](../code-quality/c28279.md)|Для символа обнаружен begin без соответствующего end|
 |[C28280](../code-quality/c28280.md)|Для символа обнаружен end без соответствующего begin|
 |[C28282](../code-quality/c28282.md)|Строки формата должны находиться в предусловиях|
@@ -227,7 +227,7 @@ ms.locfileid: "69585320"
 |[C28286](../code-quality/c28286.md)|Для функции синтаксическая ошибка рядом с окончанием|
 |[C28287](../code-quality/c28287.md)|Для функции: синтаксическая ошибка в аннотации \_At\_() (не распознано имя параметра)|
 |[C28288](../code-quality/c28288.md)|Для функции: синтаксическая ошибка в аннотации \_At\_() (недопустимое имя параметра)|
-|[C28289](../code-quality/c28289.md)|Для функции: В ReadableTo или WritableTo отсутствует спецификация ограничения в качестве параметра|
+|[C28289](../code-quality/c28289.md)|Для функции: ReadableTo или WritableTo не содержало спецификацию ограничения в качестве параметра|
 |[C28290](../code-quality/c28290.md)|Количество внешних элементов в аннотации для функции превышает фактическое число параметров|
 |[C28291](../code-quality/c28291.md)|После NULL/не NULL на уровне разыменовывания 0 параметра не имеет смысла для функции.|
 |[C28300](../code-quality/c28300.md)|Несовместимые типы операндов выражения для оператора|
@@ -240,65 +240,65 @@ ms.locfileid: "69585320"
 |[C28307](../code-quality/c28307.md)|Заметка для параметра — устарела|
 |[C28350](../code-quality/c28350.md)|Заметка описывает ситуацию, к которой неприменимы условия.|
 |[C28351](../code-quality/c28351.md)|Аннотация описывает ситуацию, когда динамическое значение (переменная) не может использоваться в условии.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Правильно объявляйте обработчики событий|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Пометьте сборки с помощью AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Методы интерфейса должны быть доступны для вызова дочерними типами|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Переместите методы P/Invoke в класс NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Не скрывайте методы базовых классов|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Правильно реализуйте IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Не вызывайте исключения в непредвиденных местах|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Избегайте повторяющихся акселераторов|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Для методов P/Invoke должны существовать точки входа|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Методы P/Invoke не должны быть видимыми|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Типы с автомакетом не должны быть видимыми для COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Вызывайте GetLastError сразу после P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Методы регистрации COM должны быть согласованными|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Правильно объявляйте методы P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Удалите пустые методы завершения|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Поля типов значений должны быть переносимыми|
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Объявления P/Invoke должны быть переносимыми|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Не блокируйте объекты с ненадежными удостоверениями|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Укажите тип маршалинга для строковых аргументов P/Invoke|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Проверьте объявляемые параметры безопасности типов значений|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Указатели не должны быть видимыми|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Защищенные типы не должны предоставлять поля|
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|Безопасность метода должна быть надмножеством типа|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA-методы должны вызывать только APTCA-методы|
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA-типы должны расширять только базовые APTCA-типы|
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Не используйте косвенное представление методов с требованиями ссылки|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Переопределяющие требования ссылки должны быть идентичны базовым|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Ограничьте уязвимые предложения finally во внешних блоках try|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Для требований ссылок на тип необходимы требования наследования|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Критические для безопасности типы не могут участвовать в эквивалентности типов|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Конструкторы по умолчанию должны быть по меньшей мере такими же критическими, как конструкторы по умолчанию базового типа|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Делегаты должны быть привязаны к методам с соответствующей прозрачностью|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Методы должны сохранять одинаковую прозрачность при переопределении базовых методов|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Повторно порождайте исключения для сохранения сведений стека|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Не ликвидируйте объекты несколько раз|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Используйте встроенную инициализацию статических полей типов значений|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Не помечайте обслуживаемые компоненты с помощью WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Следует высвобождать высвобождаемые поля|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Не вызывайте переопределяемые методы в конструкторах|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Высвобождаемые типы должны объявлять методы завершения|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Методы завершения должны вызывать метод завершения базового класса|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Реализуйте конструкторы сериализации|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Перегрузите оператор равенства на переопределяющем типе ValueType.Equals|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Отметьте точки входа Windows Forms меткой STAThread|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Пометьте все несериализуемые поля|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Вызывайте методы базового класса для типов ISerializable|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Пометьте типы ISerializable атрибутом SerializableAttribute|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Правильно реализуйте методы сериализации|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Правильно реализуйте ISerializable|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Задайте правильные аргументы для методов форматирования|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Правильно выполняйте проверку NaN|
+|[CA1001](../code-quality/ca1001.md)|Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми|
+|[CA1009](../code-quality/ca1009.md)|Правильно объявляйте обработчики событий|
+|[CA1016](../code-quality/ca1016.md)|Пометьте сборки с помощью AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|Методы интерфейса должны быть доступны для вызова дочерними типами|
+|[CA1049](../code-quality/ca1049.md)|Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми|
+|[CA1060](../code-quality/ca1060.md)|Переместите методы P/Invoke в класс NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Не скрывайте методы базовых классов|
+|[CA1063](../code-quality/ca1063.md)|Правильно реализуйте IDisposable|
+|[CA1065](../code-quality/ca1065.md)|Не вызывайте исключения в непредвиденных местах|
+|[CA1301](../code-quality/ca1301.md)|Избегайте повторяющихся акселераторов|
+|[CA1400](../code-quality/ca1400.md)|Для методов P/Invoke должны существовать точки входа|
+|[CA1401](../code-quality/ca1401.md)|Методы P/Invoke не должны быть видимыми|
+|[CA1403](../code-quality/ca1403.md)|Типы с автомакетом не должны быть видимыми для COM|
+|[CA1404](../code-quality/ca1404.md)|Вызывайте GetLastError сразу после P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM|
+|[CA1410](../code-quality/ca1410.md)|Методы регистрации COM должны быть согласованными|
+|[CA1415](../code-quality/ca1415.md)|Правильно объявляйте методы P/Invoke|
+|[CA1821](../code-quality/ca1821.md)|Удалите пустые методы завершения|
+|[CA1900](../code-quality/ca1900.md)|Поля типов значений должны быть переносимыми|
+|[CA1901](../code-quality/ca1901.md)|Объявления P/Invoke должны быть переносимыми|
+|[CA2002](../code-quality/ca2002.md)|Не блокируйте объекты с ненадежными удостоверениями|
+|[CA2100](../code-quality/ca2100.md)|Проверьте запросы SQL на наличие уязвимостей системы безопасности|
+|[CA2101](../code-quality/ca2101.md)|Укажите тип маршалинга для строковых аргументов P/Invoke|
+|[CA2108](../code-quality/ca2108.md)|Проверьте объявляемые параметры безопасности типов значений|
+|[CA2111](../code-quality/ca2111.md)|Указатели не должны быть видимыми|
+|[CA2112](../code-quality/ca2112.md)|Защищенные типы не должны предоставлять поля|
+|[CA2114](../code-quality/ca2114.md)|Безопасность метода должна быть надмножеством типа|
+|[CA2116](../code-quality/ca2116.md)|APTCA-методы должны вызывать только APTCA-методы|
+|[CA2117](../code-quality/ca2117.md)|APTCA-типы должны расширять только базовые APTCA-типы|
+|[CA2122](../code-quality/ca2122.md)|Не используйте косвенное представление методов с требованиями ссылки|
+|[CA2123](../code-quality/ca2123.md)|Переопределяющие требования ссылки должны быть идентичны базовым|
+|[CA2124](../code-quality/ca2124.md)|Ограничьте уязвимые предложения finally во внешних блоках try|
+|[CA2126](../code-quality/ca2126.md)|Для требований ссылок на тип необходимы требования наследования|
+|[CA2131](../code-quality/ca2131.md)|Критические для безопасности типы не могут участвовать в эквивалентности типов|
+|[CA2132](../code-quality/ca2132.md)|Конструкторы по умолчанию должны быть по меньшей мере такими же критическими, как конструкторы по умолчанию базового типа|
+|[CA2133](../code-quality/ca2133.md)|Делегаты должны быть привязаны к методам с соответствующей прозрачностью|
+|[CA2134](../code-quality/ca2134.md)|Методы должны сохранять одинаковую прозрачность при переопределении базовых методов|
+|[CA2137](../code-quality/ca2137.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
+|[CA2138](../code-quality/ca2138.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
+|[CA2140](../code-quality/ca2140.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
+|[CA2141](../code-quality/ca2141.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
+|[CA2146](../code-quality/ca2146.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
+|[CA2147](../code-quality/ca2147.md)|Прозрачные методы могут не использовать утверждения безопасности|
+|[CA2149](../code-quality/ca2149.md)|Прозрачные методы не должны вызывать машинный код|
+|[CA2200](../code-quality/ca2200.md)|Повторно порождайте исключения для сохранения сведений стека|
+|[CA2202](../code-quality/ca2202.md)|Не ликвидируйте объекты несколько раз|
+|[CA2207](../code-quality/ca2207.md)|Используйте встроенную инициализацию статических полей типов значений|
+|[CA2212](../code-quality/ca2212.md)|Не помечайте обслуживаемые компоненты с помощью WebMethod|
+|[CA2213](../code-quality/ca2213.md)|Следует высвобождать высвобождаемые поля|
+|[CA2214](../code-quality/ca2214.md)|Не вызывайте переопределяемые методы в конструкторах|
+|[CA2216](../code-quality/ca2216.md)|Высвобождаемые типы должны объявлять методы завершения|
+|[CA2220](../code-quality/ca2220.md)|Методы завершения должны вызывать метод завершения базового класса|
+|[CA2229](../code-quality/ca2229.md)|Реализуйте конструкторы сериализации|
+|[CA2231](../code-quality/ca2231.md)|Перегрузите оператор равенства на переопределяющем типе ValueType.Equals|
+|[CA2232](../code-quality/ca2232.md)|Отметьте точки входа Windows Forms меткой STAThread|
+|[CA2235](../code-quality/ca2235.md)|Пометьте все несериализуемые поля|
+|[CA2236](../code-quality/ca2236.md)|Вызывайте методы базового класса для типов ISerializable|
+|[CA2237](../code-quality/ca2237.md)|Пометьте типы ISerializable атрибутом SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|Правильно реализуйте методы сериализации|
+|[CA2240](../code-quality/ca2240.md)|Правильно реализуйте ISerializable|
+|[CA2241](../code-quality/ca2241.md)|Задайте правильные аргументы для методов форматирования|
+|[CA2242](../code-quality/ca2242.md)|Правильно выполняйте проверку NaN|

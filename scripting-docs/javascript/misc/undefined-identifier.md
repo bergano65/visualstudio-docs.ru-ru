@@ -14,26 +14,26 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b55b6d695cded9b7effac664dfca6ca9904e9d84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005918"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572544"
 ---
 # <a name="undefined-identifier"></a>Неопределенный идентификатор
-Была предпринята попытка использовать идентификатор, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятор не распознает. Неопределенное значение возвращается при каждом выполнении:  
+Предпринята попытка использовать идентификатор, который не распознается компилятором [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Неопределенное значение возвращается при каждом использовании:  
   
-- переменную, которая не существует,  
+- переменная, которая не существует,  
   
-- переменную, которая объявлен, но никогда не было присвоено значение,  
+- Объявленная переменная, но ей не было присвоено значение,  
   
-- свойство объекта, которое не существует.  
+- несуществующее свойство объекта.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Объявите переменную с **var** инструкции (как в `var` x;).  
+- Объявите переменную с помощью оператора **var** (как в `var` x;).  
   
 ## <a name="see-also"></a>См. также  
- [Переменные](../../javascript/variables-javascript.md)   
+ [Переменные](../../javascript/variables-javascript.md)    
  [Область действия переменных](../../javascript/advanced/variable-scope-javascript.md)

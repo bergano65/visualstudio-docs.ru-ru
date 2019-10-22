@@ -8,18 +8,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582020"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693016"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Программа улучшения качества программного обеспечения Visual Studio
 
 Программа улучшения качества программного обеспечения Visual Studio (VSCEIP) помогает Майкрософт совершенствовать Visual Studio. Эта программа [собирает сведения об ошибках](../ide/diagnostic-data-collection.md), компьютерном оборудовании и использовании Visual Studio, не прерывая работу пользователей на компьютере. Собранные сведения помогают корпорации Майкрософт понять, какие функции нуждаются в улучшении. В этом документе описано, как принять участие в программе VSCEIP или отказаться.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
+> [!NOTE]
+> Параметры согласия или запрета использования телеметрии VSCEIP не применяются к параметру "Сообщить о проблеме" в Visual Studio. При отправке отчетов о проблемах журналы собираются и отправляются в корпорацию Майкрософт только при предоставлении разрешения нажатием кнопки "Отправить". Если вы заинтересованы в управлении журналами перед отправкой путем нажатия кнопки "Сообщить о проблеме", дополнительные сведения см. в статье о [конфиденциальности данных отзывов](./developer-community-privacy.md).
 
 ## <a name="opt-in-or-out"></a>Управления участием в программе
 
@@ -70,7 +72,7 @@ ms.locfileid: "62582020"
 ## <a name="see-also"></a>См. также
 
 * [Диагностическая информация, собираемая Visual Studio](diagnostic-data-collection.md)
-* [Обратная связь](../ide/talk-to-us.md)
+* [Параметры обратной связи Visual Studio](../ide/feedback-options.md)
 * [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Сообщество разработчиков Visual Studio](https://developercommunity.visualstudio.com/)
 * [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement)

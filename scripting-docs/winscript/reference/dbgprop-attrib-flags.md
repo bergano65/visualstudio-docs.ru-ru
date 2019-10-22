@@ -19,14 +19,14 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0324353d716430148b4b3c7b8adf9262e0dc3b7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3170e310aa3177e2ca7a1dd81ead02bcc4050114
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955280"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572593"
 ---
-# <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
+# <a name="dbgprop_attrib_flags"></a>DBGPROP_ATTRIB_FLAGS
 Описывает различные атрибуты для `IDebugProperty`. Член структуры `DebugPropertyInfo`.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -54,7 +54,7 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
   
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
  DBGPROP_ATTRIB_NO_ATTRIB  
  Указывает, что атрибуты отсутствуют.  
   
@@ -106,9 +106,9 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  DBGPROP_ATTRIB_VALUE_IS_RETURN_VALUE  
  Указывает, что значение является значением, возвращаемым из функции.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Эти флаги также используются для фильтрации дочерних элементов объекта. Значения могут объединяться с помощью побитового оператора ИЛИ.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
+ @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
  [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

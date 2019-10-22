@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::SetPredefinedValue | Документация Майкрософт
+title: 'IPerPropertyBrowsing2:: Сетпредефинедвалуе | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d35e087cc057608666e104681d65fa8009f8167
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a823a04082b7e19b2c1bc475c1070cc501789e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944822"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576235"
 ---
 # <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
-Задает значение свойства, указанного параметром `dispID`. Определенное значение определяется токеном `dwCookie.`  
+Задает значение свойства, указанного параметром `dispID`. Предопределенное значение определяется токеном `dwCookie.`  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ HRESULT SetPredefinedValue(
   
 #### <a name="parameters"></a>Параметры  
  `dispid`  
- [in] Идентификатор диспетчера свойства, для которой задается определенное значение.  
+ окне Идентификатор диспетчеризации свойства, для которого задается предопределенное значение.  
   
  `dwCookie`  
- [in] Токен идентификации присваиваемое значение.  
+ окне Токен, идентифицирующий заданное значение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::RemoveText | Документация Майкрософт
+title: 'Идебугдокументтекстаусор:: Ремоветекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 989031a6d4b207c69d1a58b2ff99e5797a629440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 119a55d4ebd20e51890358ef8c5780a2ac8e4509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007773"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572050"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
 Удаляет текст из документа.  
@@ -38,21 +38,21 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>Параметры  
  `cCharacterPosition`  
- [in] Запустите расположение символа диапазона для удаления.  
+ окне Начальное расположение диапазона символов для удаления.  
   
  `cNumToRemove`  
- [in] Число знаков для удаления.  
+ окне Число удаляемых символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Заметки  
  Этот метод удаляет текст из документа.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+ @No__t_1 [интерфейса идебугдокументтекстаусор](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Жетскриптблоккинфо | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1984cdc19beb883dd7ee82f58497b11a8d781b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a92aa00d7997ceccc583c88a070f6fbc7d4359d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549719"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576099"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
-Извлекает диапазон символов и соответствующий блок сценария обработчик сценариев.  
+Извлекает диапазон символов и обработчик скриптов, соответствующий блоку скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,26 +40,26 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>Параметры  
  `dwSourceContext`  
- [in] Исходный контекст для блока скрипта.  
+ окне Контекст источника для блока скрипта.  
   
  `ppasd`  
- [out] Обработчик скриптов для этого блока сценария.  
+ заполняет Обработчик скриптов для этого блока сценария.  
   
  `piCharPos`  
- [out] Расположение начала блока скрипта.  
+ заполняет Расположение начала блока скрипта.  
   
  `cChars`  
- [out] Число символов в блоке сценария.  
+ заполняет Число символов в блоке скрипта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод извлекает диапазон символов и соответствующий блок сценария обработчик сценариев.  
+## <a name="remarks"></a>Заметки  
+ Этот метод извлекает диапазон символов и обработчик скриптов, соответствующий блоку скрипта.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

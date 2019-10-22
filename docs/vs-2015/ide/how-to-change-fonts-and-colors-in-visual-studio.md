@@ -9,15 +9,15 @@ helpviewer_keywords:
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439246"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645441"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ ms.locfileid: "63439246"
 3. В списке **Параметры для** выберите пункт **Шрифт среды разработки**.
 
     > [!TIP]
-    > Если требуется изменить шрифт только для окон инструментов, в списке **Параметры для** выберите **[Все окна текстовых инструментов]**.
+    > Если требуется изменить шрифт только для окон инструментов, в списке **Параметры для** выберите **[Все окна текстовых инструментов]** .
 
 4. В списке **Шрифт** выберите шрифт.
 
 5. В списке **Размер** выберите размер текста и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [как: Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

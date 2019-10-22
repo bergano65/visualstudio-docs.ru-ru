@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975790"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572269"
 ---
 # <a name="active-script-debugging-overview"></a>Обзор отладки активных скриптов
 Интерфейсы отладки активных скриптов обеспечивают не зависящую от языка и узла отладку, а также поддерживают широкий спектр сред разработки.  
   
- ![Хост-процесс скрипта](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Ведущий процесс скрипта](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Рис. 1  
   
  Не зависящая от языка среда отладки способна поддерживать любой язык программирования или сочетание языков, не обладая сведениями о них. Среда отладки также поддерживает пошаговое выполнение и точки останова на разных языках. (Этот обзор посвящен главным образом поддержке скриптовых языков, таких как VBScript и [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  
@@ -291,5 +291,5 @@ ms.locfileid: "62975790"
   [Интерфейс ISimpleConnectionPoint](../winscript/reference/isimpleconnectionpoint-interface.md)  
   Предоставляет простой способ для описания и перечисление событий, произошедших в конкретной точке подключения, для модулей скриптов.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Интерфейсы отладчика активных скриптов](../winscript/reference/active-script-debugger-interfaces.md)

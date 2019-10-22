@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Shutdown | Документация Майкрософт
+title: 'IActiveScriptProfilerCallback:: Shutdown | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: deecfe4134a4b0e18591823f194ceaf6d1eb0a14
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993427"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571644"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-Вызывается для информирования объекта профилировщика, каждый раз, когда профилирование останавливается на обработчик скриптов. Таким образом, объект профилировщика можно вызвать его процедуры очистки, при необходимости. Этот метод также вызывается обработчиком сценариев, завершении работы обработчика скриптов, или при вызове [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) завершается ошибкой.  
+Вызывается для оповещения объекта профилировщика при остановке профилирования в обработчике скриптов. Таким образом, объект профилировщика может вызывать свои подпрограммы очистки, если это необходимо. Этот метод также вызывается обработчиком скриптов при завершении работы обработчика скриптов или при сбое вызова [IActiveScriptProfilerCallback:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +34,10 @@ HRESULT Shutdown(
   
 #### <a name="parameters"></a>Параметры  
  `hrReason`  
- [in] Причина завершения работы. Если обработчик скриптов завершает работу, `S_OK` передается. Если вызов [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) возвращает ошибку HRESULT, передается значение HRESULT. В противном случае это значение извлекается из [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
+ окне Причина завершения работы. Если обработчик скриптов завершает работу, `S_OK` передается. Если вызов [IActiveScriptProfilerCallback:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) ВОЗВРАЩАЕТ ошибку HRESULT, передается значение HRESULT. В противном случае это значение извлекается из [IActiveScriptProfilerControl:: стоппрофилинг](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращаемое значение этого метода обрабатывается обработчиком сценариев.  
+ Возвращаемое значение этого метода игнорируется обработчиком скриптов.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

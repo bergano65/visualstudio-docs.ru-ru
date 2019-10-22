@@ -3,17 +3,17 @@ title: Пошаговое руководство. Использование XSL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808014"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604381"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Пошаговое руководство. Использование XSLT IntelliSense
 
@@ -45,7 +45,7 @@ ms.locfileid: "62808014"
     </xsl:stylesheet>
     ```
 
-2. Вставьте курсор после `<xsl:template name="msg23" match="msg23">` и нажмите клавишу **ввод**. Затем введите следующий элемент `xsl:call-template`:
+2. Вставьте курсор после `<xsl:template name="msg23" match="msg23">` и нажмите клавишу **Ввод**. Затем введите следующий элемент `xsl:call-template`:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ ms.locfileid: "62808014"
 
      При вводе в атрибуте `name=""` элемента `xsl:call-template` появится список имен шаблонов.
 
-3. Вставьте курсор после `<xsl:call-template name="localized-message">` и нажмите клавишу **ввод**. Затем введите следующий элемент `xsl:with-param`:
+3. Вставьте курсор после `<xsl:call-template name="localized-message">` и нажмите клавишу **Ввод**. Затем введите следующий элемент `xsl:with-param`:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ ms.locfileid: "62808014"
     </xsl:stylesheet>
     ```
 
-2. Вставьте курсор после `<xsl:apply-templates select="phone" />` и нажмите клавишу **ввод**. Затем введите следующий элемент `xsl: apply-templates`:
+2. Вставьте курсор после `<xsl:apply-templates select="phone" />` и нажмите клавишу **Ввод**. Затем введите следующий элемент `xsl: apply-templates`:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ ms.locfileid: "62808014"
     </xsl:stylesheet>
     ```
 
-2. Вставьте курсор после `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` и нажмите клавишу **ввод**. Затем введите следующий элемент `xsl:namespace-alias`:
+2. Вставьте курсор после `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` и нажмите клавишу **Ввод**. Затем введите следующий элемент `xsl:namespace-alias`:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
@@ -162,4 +162,4 @@ ms.locfileid: "62808014"
 
 ## <a name="see-also"></a>См. также
 
-- [Возможности IntelliSense редактора XML](../xml-tools/xml-editor-intellisense-features.md)
+- [Функции IntelliSense редактора XML](../xml-tools/xml-editor-intellisense-features.md)

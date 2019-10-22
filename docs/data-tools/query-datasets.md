@@ -6,90 +6,90 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402741"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648232"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
-Для поиска определенных записей в наборе данных, используйте `FindBy` метод в объект DataTable, написать собственный оператор foreach для перебора коллекции строк таблицы или использовать [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+Для поиска конкретных записей в наборе данных используйте метод `FindBy` в объекте DataTable, напишите собственную инструкцию foreach для циклической обработки коллекции строк таблицы или используйте [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 
-## <a name="dataset-case-sensitivity"></a>Чувствительность к регистру набора данных
-В наборе данных, имена таблиц и столбцов не учитывается регистр, по умолчанию — то есть таблицу в набор данных с именем «Customers» можно также обращаться как к «customers». Это соответствует соглашения об именовании в нескольких базах данных, включая SQL Server. В SQL Server поведение по умолчанию — что имена элементов данных должны отличаться только регистром.
+## <a name="dataset-case-sensitivity"></a>Чувствительность к регистру наборов данных
+В наборе данных имена таблиц и столбцов по умолчанию не учитывают регистр, то есть таблица в наборе данных с именем "Customers" также может называться "Customers". Это соответствует соглашениям об именовании во многих базах данных, включая SQL Server. В SQL Server поведение по умолчанию заключается в том, что имена элементов данных не могут отличаться только регистром.
 
 > [!NOTE]
-> В отличие от наборов данных XML-документов учитывается регистр, поэтому имена элементов данных, определенные в схемах чувствительны к регистру. Например протокол схемы позволяет определить таблицу с именем «Customers» и другой таблицей с именем «customers». Это может привести к конфликту имен, когда схемы, содержащей элементы, отличающиеся только регистром используется для создания класса набора данных.
+> В отличие от наборов данных, XML-документы чувствительны к регистру, поэтому имена элементов, определенных в схемах, учитывают регистр. Например, протокол схемы позволяет схеме определить таблицу с именем Customers и другую таблицу с именем Customers. Это может привести к конфликтам имен, если для создания класса набора данных используется схема, содержащая элементы, отличающиеся только регистром.
 
-Чувствительность к регистру, однако может быть фактор в способ интерпретации данных в наборе данных. Например при фильтрации данных в таблице набора данных, условия поиска может возвращать различные результаты в зависимости от того, является ли сравнение с учетом регистра. Учет регистра фильтрации, поиска и сортировки с помощью свойства набора данных можно управлять <xref:System.Data.DataSet.CaseSensitive%2A> свойство. Все таблицы в наборе данных наследуют значение этого свойства по умолчанию. (Это свойство для каждой отдельной таблицы можно переопределить, задав в таблице <xref:System.Data.DataTable.CaseSensitive%2A> свойство.)
+Однако чувствительность к регистру может быть фактором, определяющим способ интерпретации данных в наборе данных. Например, при фильтрации данных в таблице набора данных условия поиска могут возвращать различные результаты в зависимости от того, учитывается ли регистр при сравнении. Можно контролировать чувствительность к регистру при фильтрации, поиске и сортировке, устанавливая свойство <xref:System.Data.DataSet.CaseSensitive%2A> набора данных. Все таблицы в наборе данных по умолчанию наследуют значение этого свойства. (Это свойство можно переопределить для каждой отдельной таблицы, задав свойство <xref:System.Data.DataTable.CaseSensitive%2A> таблицы.)
 
-## <a name="locate-a-specific-row-in-a-data-table"></a>Поиск конкретной строки в таблице данных
+## <a name="locate-a-specific-row-in-a-data-table"></a>Нахождение определенной строки в таблице данных
 
-#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Чтобы найти строку в типизированный набор данных со значением первичного ключа
+#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Поиск строки в типизированном наборе данных со значением первичного ключа
 
-- Чтобы найти строку, вызовите строго типизированный `FindBy` метод, который использует первичный ключ таблицы.
+- Чтобы указать строку, вызовите строго типизированный метод `FindBy`, использующий первичный ключ таблицы.
 
-     В следующем примере `CustomerID` столбец является первичным ключом `Customers` таблицы. Это означает, что созданный `FindBy` метод `FindByCustomerID`. Примере показано, как присвоить определенный <xref:System.Data.DataRow> переменной с помощью созданного `FindBy` метод.
+     В следующем примере столбец `CustomerID` является первичным ключом `Customers` таблицы. Это означает, что созданный метод `FindBy` `FindByCustomerID`. В примере показано, как назначить определенную <xref:System.Data.DataRow> переменной с помощью созданного метода `FindBy`.
 
      [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
      [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
 
-#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Чтобы найти строку в нетипизированный набор данных со значением первичного ключа
+#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Поиск строки в нетипизированном наборе данных со значением первичного ключа
 
-- Вызовите <xref:System.Data.DataRowCollection.Find%2A> метод <xref:System.Data.DataRowCollection> коллекции, передавая первичный ключ в качестве параметра.
+- Вызовите метод <xref:System.Data.DataRowCollection.Find%2A> коллекции <xref:System.Data.DataRowCollection>, передав первичный ключ в качестве параметра.
 
-     В следующем примере показано, как объявить новую строку с именем `foundRow` и ей присваивается значение, возвращаемое <xref:System.Data.DataRowCollection.Find%2A> метод. Если первичный ключ найден, содержимое индекса столбца 1 отображаются в окне сообщения.
+     В следующем примере показано, как объявить новую строку с именем `foundRow` и присвоить ей возвращаемое значение метода <xref:System.Data.DataRowCollection.Find%2A>. Если первичный ключ найден, содержимое столбца с индексом 1 отображается в окне сообщения.
 
      [!code-csharp[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]
      [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]
 
-## <a name="find-rows-by-column-values"></a>Поиск строк по значениям столбца
+## <a name="find-rows-by-column-values"></a>Поиск строк по значениям столбцов
 
-#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Чтобы найти строки, на основе значений в любом столбце
+#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Поиск строк на основе значений в любом столбце
 
-- Данные таблицы создаются с помощью <xref:System.Data.DataTable.Select%2A> метод, возвращающий массив <xref:System.Data.DataRow>s, основанное на выражении, передаваемый <xref:System.Data.DataTable.Select%2A> метод. Дополнительные сведения о создании допустимых выражениях см. в разделе «Синтаксис выражений» страницы <xref:System.Data.DataColumn.Expression%2A> свойство.
+- Таблицы данных создаются с помощью метода <xref:System.Data.DataTable.Select%2A>, который возвращает массив <xref:System.Data.DataRow>s на основе выражения, переданного методу <xref:System.Data.DataTable.Select%2A>. Дополнительные сведения о создании допустимых выражений см. в разделе "синтаксис выражений" страницы о свойстве <xref:System.Data.DataColumn.Expression%2A>.
 
-     В следующем примере показано, как использовать <xref:System.Data.DataTable.Select%2A> метод <xref:System.Data.DataTable> для поиска конкретных строк.
+     В следующем примере показано, как использовать метод <xref:System.Data.DataTable.Select%2A> <xref:System.Data.DataTable> для нахождение конкретных строк.
 
      [!code-csharp[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]
      [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]
 
-## <a name="access-related-records"></a>Записей, связанных с доступом к
-Если таблицы в наборе данных связаны, <xref:System.Data.DataRelation> объект можно сделать связанные записи, доступные в другой таблице. Например, набор данных, содержащий `Customers` и `Orders` таблицы могут быть сделаны доступными.
+## <a name="access-related-records"></a>Доступ к связанным записям
+Если таблицы в наборе данных связаны, объект <xref:System.Data.DataRelation> может сделать связанные записи доступными в другой таблице. Например, можно сделать доступным набор данных, содержащий `Customers` и `Orders` таблицы.
 
-Можно использовать <xref:System.Data.DataRelation> объект для поиска связанных записей путем вызова <xref:System.Data.DataRow.GetChildRows%2A> метод <xref:System.Data.DataRow> в родительской таблице. Этот метод возвращает массив связанных дочерних записей. Или можно вызвать <xref:System.Data.DataRow.GetParentRow%2A> метод <xref:System.Data.DataRow> в дочерней таблице. Этот метод возвращает одиночный <xref:System.Data.DataRow> из родительской таблицы.
+Объект <xref:System.Data.DataRelation> можно использовать для нахождение связанных записей путем вызова метода <xref:System.Data.DataRow.GetChildRows%2A> <xref:System.Data.DataRow> в родительской таблице. Этот метод возвращает массив связанных дочерних записей. Или можно вызвать метод <xref:System.Data.DataRow.GetParentRow%2A> <xref:System.Data.DataRow> в дочерней таблице. Этот метод возвращает один <xref:System.Data.DataRow> из родительской таблицы.
 
-Эта страница содержит примеры использования типизированных наборов данных. Сведения о навигации по связям в нетипизированные наборы данных, см. в разделе [переходы отношений DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
+На этой странице приведены примеры использования типизированных наборов данных. Дополнительные сведения о переходе по связям в нетипизированных наборах данных см. в разделе [Навигация по связям DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
-> Если вы работаете в приложении Windows Forms и используя возможности привязки данных для отображения данных, автоматически созданный конструктором формы может обеспечить достаточную функциональность для вашего приложения. Дополнительные сведения см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). В частности, см. в разделе [отношения в наборах данных](relationships-in-datasets.md).
+> Если вы работаете в Windows Forms приложении и используете функции привязки данных для вывода данных, форма, созданная конструктором, может предоставить достаточно функциональных возможностей для вашего приложения. Дополнительные сведения см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). В частности, см. раздел [связи в наборах данных](relationships-in-datasets.md).
 
-В следующих примерах кода показано, как для перемещения вверх и вниз по связи в типизированных наборах данных. Использование примеров кода типизированные <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) и созданный FindBy*PrimaryKey* (`FindByCustomerID`) методы для поиска нужной строки и возврата связанных записей. Примеры компилируются и работают только в том случае, если у вас есть:
+В следующих примерах кода показано, как перемещаться по связям вверх и вниз в типизированных наборах данных. В примерах кода используются типизированные <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) и созданные методы Финдби*PrimaryKey* (`FindByCustomerID`) для определения местоположения нужной строки и возврата связанных записей. Примеры компилируются и выполняются правильно, только если у вас есть:
 
-- Экземпляр набора данных с именем `NorthwindDataSet` с `Customers` таблицы.
+- Экземпляр набора данных с именем `NorthwindDataSet` с таблицей `Customers`.
 
-- `Orders` Таблицы.
+- Таблица `Orders`.
 
-- Отношение с именем `FK_Orders_Customers`связанные двух таблиц.
+- Связь с именем `FK_Orders_Customers`relating двух таблиц.
 
-Кроме того обе таблицы должны заполняться данными для любой записи должны быть возвращены.
+Кроме того, обе таблицы должны быть заполнены данными для любых возвращаемых записей.
 
-#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Чтобы вернуть дочерние записи, выбранной родительской записи
+#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Получение дочерних записей выбранной родительской записи
 
-- Вызовите <xref:System.Data.DataRow.GetChildRows%2A> метод конкретного `Customers` данных строки, а возвращает только те строки из `Orders` таблицы:
+- Вызовите метод <xref:System.Data.DataRow.GetChildRows%2A> определенной строки данных `Customers` и возвратите массив строк из таблицы `Orders`:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
-#### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Для возврата родительской записи выбранной дочерней записи
+#### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Возврат родительской записи выбранной дочерней записи
 
-- Вызовите <xref:System.Data.DataRow.GetParentRow%2A> метод конкретного `Orders` строку данных и возврат одной строки из `Customers` таблицы:
+- Вызовите метод <xref:System.Data.DataRow.GetParentRow%2A> определенной строки данных `Orders` и возвратите одну строку из таблицы `Customers`:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

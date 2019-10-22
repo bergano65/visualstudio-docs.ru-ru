@@ -9,46 +9,46 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e61b9e35464c4200581f6859b2f394911d266d44
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 246ba595cf1da7e4713e0ddc03ea015eeb61eb64
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648936"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавление кода для объектов TableAdapter в n-уровневых приложениях
-Можно расширить функциональные возможности адаптера таблицы, создав файл разделяемого класса для TableAdapter и добавления к нему кода (вместо добавления кода к *DatasetName.DataSet.Designer* файла). Разделяемые классы позволяют коду для конкретного класса необходимо распределить между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (тип)](/dotnet/csharp/language-reference/keywords/partial-type).
+Вы можете расширить функциональные возможности TableAdapter, создав файл разделяемого класса для TableAdapter и добавив в него код (вместо добавления кода в файл *DataSetName. DataSet. Designer* ). Разделяемые классы позволяют разделить код для определенного класса между несколькими физическими файлами. Дополнительные сведения см. в разделе [partial](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
-Код, который определяет адаптера таблицы создается каждый раз при внесении изменений в адаптер таблицы в наборе данных. Этот код также создается при внесении изменений во время выполнения мастеров, изменяющих конфигурацию адаптера таблицы. Чтобы предотвратить удаление во время повторного формирования адаптера таблицы в коде, добавьте код в файл разделяемого класса адаптера таблицы.
+Код, определяющий TableAdapter, создается каждый раз при внесении изменений в TableAdapter в наборе данных. Этот код также создается при внесении изменений во время работы мастера, изменяющего конфигурацию адаптера таблицы. Чтобы предотвратить удаление кода во время повторного создания адаптера таблицы TableAdapter, добавьте код в файл разделяемого класса TableAdapter.
 
-По умолчанию после разделения набора данных и кода адаптера таблицы, получается отдельные файлы классов в каждом проекте. Исходный проект содержит файл с именем *DatasetName.Designer.vb* (или *DatasetName.Designer.cs*), содержащий код адаптера таблицы. Проект, который определен в **проект Dataset** свойство имеет файл с именем *DatasetName.DataSet.Designer.vb* (или *DatasetName.DataSet.Designer.cs*), содержит код набора данных.
-
-> [!NOTE]
-> При разделении наборов данных и адаптеров таблиц (посредством установки свойства **Проект DataSet**) существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.
+По умолчанию после разделения набора данных и кода TableAdapter результатом будет отдельный файл класса в каждом проекте. Исходный проект содержит файл с именем *DataSetName. Designer. vb* (или *DataSetName.Designer.CS*), который содержит код адаптера таблицы. Проект, указанный в свойстве **проекта набора данных** , имеет файл с именем *DataSetName. DataSet. Designer. vb* (или *DataSetName.DataSet.Designer.CS*), содержащий код набора данных.
 
 > [!NOTE]
-> Набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчики событий, когда требуется проверка. Дополнительные сведения см. в разделе [Добавление проверки в n уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> При разделении наборов данных и адаптеров таблиц (посредством установки свойства **Проект DataSet**) существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие классы частичного набора данных необходимо вручную переместить в проект набора данных.
+
+> [!NOTE]
+> Набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчиков событий при необходимости проверки. Дополнительные сведения см. [в разделе Добавление проверки в n-уровневый набор данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Добавление пользовательского кода адаптера таблицы в n уровневого приложения
+## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Добавление пользовательского кода в TableAdapter в n-уровневое приложение
 
-1. Найдите проект, содержащий *.xsd* файл.
+1. Нахождение проекта, содержащего *XSD* -файл.
 
-2. Дважды щелкните *.xsd* файл, чтобы открыть **конструктор наборов данных**.
+2. Дважды щелкните *XSD* -файл, чтобы открыть **Конструктор наборов данных**.
 
-3. Щелкните правой кнопкой мыши TableAdapter, который требуется добавить код, а затем выберите **Просмотр кода**.
+3. Щелкните правой кнопкой мыши TableAdapter, в который требуется добавить код, и выберите пункт **Просмотреть код**.
 
      Разделяемый класс создается и открывается в редакторе кода.
 
-4. Добавьте код в объявление разделяемого класса.
+4. Добавьте код внутри объявления разделяемого класса.
 
-5. В следующем примере показано место добавления кода к `CustomersTableAdapter` в `NorthwindDataSet`:
+5. В следующем примере показано, куда добавить код в `CustomersTableAdapter` в `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

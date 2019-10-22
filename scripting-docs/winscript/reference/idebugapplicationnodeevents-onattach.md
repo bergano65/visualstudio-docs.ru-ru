@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Документация Майкрософт
+title: 'Идебугаппликатионнодивентс:: onattach | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d606292eda60fbb367802dbd5df973b933f3fe14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e45af6b931dad28a41f8f4453db9fab96405df3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821969"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574692"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Обрабатывает событие, которое означает, что объект узла отладки приложения был присоединен к родительскому узлу.  
+Обрабатывает событие, которое означает, что объект узла приложения отладки был присоединен к родительскому узлу.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,21 +37,21 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Параметры  
  `prddpParent`  
- [in] Узел отладки приложения, являющийся родительским для данного узла.  
+ окне Узел приложения отладки, являющийся родительским для данного узла.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод обрабатывает событие, которое означает, что объект узла отладки приложения был присоединен к родительскому узлу.  
+## <a name="remarks"></a>Заметки  
+ Этот метод обрабатывает событие, которое означает, что объект узла приложения отладки был присоединен к родительскому узлу.  
   
- Объекты, реализующие `IDebugApplicationNode` интерфейс вызова этого события.  
+ Разработчики `IDebugApplicationNode`ного интерфейса вызывают это событие.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
+ @No__t_1 [интерфейса идебугаппликатионнодивентс](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ @No__t_1 [идебугаппликатионнодивентс:: Ondetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)  
  [Интерфейс IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

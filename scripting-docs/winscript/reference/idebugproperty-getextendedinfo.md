@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetExtendedInfo | Документация Майкрософт
+title: 'IDebugProperty:: Жетекстендединфо | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 707474f786a8f88c0e08d887f2c2b09c8aaedc8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 130d11c8ed6bb21210d129bb9aace779db3bd54b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979127"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562390"
 ---
 # <a name="idebugpropertygetextendedinfo"></a>IDebugProperty::GetExtendedInfo
-Возвращает расширенные сведения для свойства.  
+Получает расширенные сведения для свойства.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,19 +39,19 @@ HRESULT GetExtendedInfo (
   
 #### <a name="parameters"></a>Параметры  
  `cInfos`  
- [in] Счетчик расширенных сведений об объектах.  
+ окне Число объектов расширенной информации.  
   
  `rgguidExtendedInfo`  
- [in] Массив `GUID`s передается, чтобы можно было получить несколько элементов из расширенных сведений в то же время.  
+ окне Передается массив `GUID`s, чтобы можно было получить одновременно несколько элементов расширенной информации.  
   
  `pExtendedInfo`  
- [out] Возвращает массив `VARIANT`s, который может использоваться для получения этих данных расширенного свойства.  
+ заполняет Возвращает массив `VARIANT`s, который можно использовать для получения сведений о расширенных свойствах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
-## <a name="remarks"></a>Примечания  
- Этот интерфейс возвращает расширенные сведения для этого объекта. API существует только в целях получения информации, которая не совместима получить с помощью `IDebugProperty::GetPropertyInfo`).  
+## <a name="remarks"></a>Заметки  
+ Этот интерфейс получает расширенные сведения для этого объекта. API существует только в целях извлечения сведений, которые не могут быть извлечены при использовании `IDebugProperty::GetPropertyInfo`).  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

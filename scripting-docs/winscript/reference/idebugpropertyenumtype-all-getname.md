@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyEnumType_All::GetName | Microsoft Docs
+title: 'IDebugPropertyEnumType_All:: Name | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c4f416e7cf525d28ad544c361168f55b964f353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad5d8d1d1b9e2e7ee632ed3fec40b89df5b4bc07
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979101"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577385"
 ---
-# <a name="idebugpropertyenumtypeallgetname"></a>IDebugPropertyEnumType_All::GetName
-Возвращает строку BSTR, содержащая имя `EnumType`.  
+# <a name="idebugpropertyenumtype_allgetname"></a>IDebugPropertyEnumType_All::GetName
+Возвращает строку BSTR, содержащую имя `EnumType`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,7 +37,7 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Параметры  
  `pname`  
- [out] BSTR, содержащий имя `EnumType`.  
+ заполняет Значение типа BSTR, содержащее имя `EnumType`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  

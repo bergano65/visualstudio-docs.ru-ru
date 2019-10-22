@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::SetNextStatement | Документация Майкрософт
+title: 'Иремотедебугаппликатионсреад:: Сетнекстстатемент | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c4b19322a15e92adcf2609c479af6b21e2078bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e690d0e5b7567aabc88aabde907b67517f12aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788145"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575506"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
-Принудительное выполнение продолжалось максимально близко к контексту данного кода в контексте заданного интервала.  
+Заставляет выполнение выполняться как можно ближе к заданному контексту кода в контексте данного кадра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Параметры  
  `pStackFrame`  
- [in] Объект кадра стека. Этот аргумент может иметь значение NULL, что означает, что следует использовать текущий кадр стека.  
+ окне Объект кадра стека. Этот аргумент может иметь значение NULL, что означает, что следует использовать текущий кадр стека.  
   
  `pCodeContext`  
- [in] Контекст кода. Этот аргумент может иметь значение NULL, что означает, что следует использовать текущий контекст кода.  
+ окне Контекст кода. Этот аргумент может иметь значение NULL, что означает, что следует использовать текущий контекст кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывает принудительное выполнение продолжить максимально близко к контексту кода, определяемое `pCodeContext`, в контексте кадр, определяемый `pStackFrame`. Возможно, одно из этих аргументов `NULL`, представляющий текущий кадр или контекста.  
+## <a name="remarks"></a>Заметки  
+ Этот метод заставляет выполнение выполняться как можно ближе к контексту кода, заданному `pCodeContext`, в контексте кадра, заданном `pStackFrame`. Любой из этих аргументов может быть `NULL`, представляющей текущий кадр или контекст.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

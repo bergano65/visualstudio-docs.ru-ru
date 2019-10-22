@@ -10,7 +10,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - project templates, debugging
-- Visual C++ projects, debugging
+- C++ projects, debugging
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc3a8339fffab762c2b6d7a649d3bae8efa76c8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925492"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431410"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Подготовка к отладке: Типы проектов Visual C++
+# <a name="debugging-preparation-c-project-types"></a>Подготовка к отладке: C++ типы проектов
 В этом разделе описана отладка основных типов проектов, созданных с использованием шаблонов проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
 
  Обратите внимание, что типы проектов, которые создают библиотеки DLL в качестве выходных данных, были сгруппированы в [отладочные проекты](../debugger/debugging-dll-projects.md) , так как они являются общими функциями, к которым они относятся.
 
-## <a name="BKMK_In_this_topic"></a> В этом разделе
+## <a name="BKMK_In_this_topic"></a> Содержание раздела
  [Рекомендуемые значения свойств](#BKMK_Recommended_Property_Settings)
 
  [Проекты Win32](#BKMK_Win32_Projects)
@@ -97,7 +97,7 @@ ms.locfileid: "68925492"
    [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Приложения Windows Forms (.NET)
- Шаблон **Приложение Windows Forms (.NET)** создает приложение Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. создать проект приложения Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ Шаблон **Приложение Windows Forms (.NET)** создает приложение Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Для получения дополнительной информации см. [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] аналогична отладке управляемых приложений Windows Forms.
 
@@ -109,7 +109,7 @@ ms.locfileid: "68925492"
 
  [Содержание раздела](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Подключение к выполняющейся программе или к нескольким программам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

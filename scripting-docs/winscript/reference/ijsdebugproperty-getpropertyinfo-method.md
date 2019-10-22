@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugProperty::GetPropertyInfo | Документация Майкрософт
+title: 'Метод метод ijsdebugproperty:: GetPropertyInfo | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0769bf137845655c3fe0bf87bf0a57c6c6cbc09e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf56189c42ef5c696441426191a6850d03ade416
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977775"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577315"
 ---
 # <a name="ijsdebugpropertygetpropertyinfo-method"></a>Метод IJsDebugProperty::GetPropertyInfo
 Получает сведения для этого объекта.  
@@ -36,15 +36,15 @@ HRESULT GetPropertyInfo(
   
 #### <a name="parameters"></a>Параметры  
  `nRadix`  
- [in] Основание системы счисления для использования.  
+ окне Используемое основание системы счисления.  
   
  `pPropertyInfo`  
- [out] Сведения об объекте.  
+ заполняет Сведения об объекте.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugProperty](../../winscript/reference/ijsdebugproperty-interface.md)

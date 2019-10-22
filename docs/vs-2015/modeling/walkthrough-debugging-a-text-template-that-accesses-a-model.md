@@ -1,215 +1,215 @@
 ---
-title: Пошаговое руководство. Отладка текстового шаблона, который обращается к модели | Документация Майкрософт
+title: Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 26ff566c9d9ff833a92668d06c818245ed55d066
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65700573"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659265"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-При изменении или добавлении текстовых шаблонов в решении доменного языка, могут возникнуть ошибки, когда обработчик преобразует шаблон к исходному коду, или при компиляции созданного кода. Следующий пример демонстрирует некоторые из вещей, которые можно сделать, чтобы отладка текстового шаблона.  
-  
+При изменении или добавлении текстовых шаблонов в решении доменного языка могут возникнуть ошибки, когда обработчик преобразует шаблон в исходный код или компилирует созданный код. В следующем пошаговом руководстве демонстрируются некоторые действия, которые можно выполнить для отладки текстового шаблона.
+
 > [!NOTE]
-> Дополнительные сведения о тексте шаблоны в целом, см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. в разделе [Пошаговое руководство: Отладка текстового шаблона](https://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
-  
-## <a name="creating-a-domain-specific-language-solution"></a>Создание решений предметно ориентированного языка  
- В этой процедуре вы создадите решение предметно ориентированного языка, которое имеет следующие характеристики:  
-  
-- Имя. DebuggingTestLanguage  
-  
-- Шаблон решения: Минимальный язык  
-  
-- Расширение файла: .ddd  
-  
-- Название организации: Fabrikam  
-  
-  Дополнительные сведения о создании решений предметно ориентированного языка см. в разделе [как: создать решение на предметно-ориентированном языке](../modeling/how-to-create-a-domain-specific-language-solution.md).  
-  
-## <a name="creating-a-text-template"></a>Создание текстового шаблона  
- Добавьте текстовый шаблон в решение.  
-  
-#### <a name="to-create-a-text-template"></a>Создание текстового шаблона  
-  
-1. Выполните сборку решения и начать его выполнение в отладчике. (На **построения** меню, щелкните **Перестроить решение**, а затем на **Отладка** меню, нажмите кнопку **начать отладку**.) Новый экземпляр Visual Studio откроется проект "Отладка".  
-  
-2. Добавьте в текстовый файл с именем `DebugTest.tt` на проект "Отладка".  
-  
-3. Убедитесь, что **пользовательское средство** присваивается свойству файл DebugTest.tt `TextTemplatingFileGenerator`.  
-  
-## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Отладка директивы, которые обращаются к модели из текстового шаблона  
- Для доступа к модели из эти инструкции и выражения в текстовом шаблоне, необходимо сначала вызвать генерируемым обработчиком директив. Вызов генерируемым обработчиком директив поставляет классы в модели в код текстового шаблона как свойства. Дополнительные сведения см. в разделе [доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md).  
-  
- В следующих процедурах необходимо отладить неверное имя директивы и неверным именем свойства.  
-  
-#### <a name="to-debug-an-incorrect-directive-name"></a>Для отладки неверное имя директивы  
-  
-1. Замените код в файл DebugTest.tt следующим кодом:  
-  
+> Дополнительные сведения о текстовых шаблонах см. в разделе [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. [в разделе Пошаговое руководство. Отладка текстового шаблона](https://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
+
+## <a name="creating-a-domain-specific-language-solution"></a>Создание решения на предметно-ориентированном языке
+ В этой процедуре вы создадите решение доменного языка со следующими характеристиками:
+
+- Имя: Дебуггингтестлангуаже
+
+- Шаблон решения: Минимальный язык
+
+- Расширение файла:. ddd
+
+- Название организации: Fabrikam
+
+  Дополнительные сведения о создании решения для доменного языка см. в разделе [как создать решение доменного языка](../modeling/how-to-create-a-domain-specific-language-solution.md).
+
+## <a name="creating-a-text-template"></a>Создание текстового шаблона
+ Добавьте в решение текстовый шаблон.
+
+#### <a name="to-create-a-text-template"></a>Создание текстового шаблона
+
+1. Создайте решение и приступите к его запуску в отладчике. (В меню **Сборка** щелкните **Перестроить решение**, а затем в меню **Отладка** выберите команду **начать отладку**.) В новом экземпляре Visual Studio откроется проект отладки.
+
+2. Добавьте текстовый файл с именем `DebugTest.tt` в проект отладки.
+
+3. Убедитесь, что для свойства **Custom Tool** объекта DebugTest.TT задано значение `TextTemplatingFileGenerator`.
+
+## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Директивы отладки, обращающиеся к модели из текстового шаблона
+ Прежде чем можно будет получить доступ к модели из инструкций и выражений в текстовом шаблоне, необходимо сначала вызвать созданный обработчик директив. Вызов созданного обработчика директив делает классы модели доступными для кода текстового шаблона как свойства. Дополнительные сведения см. в разделе [доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md).
+
+ В следующих процедурах будет выполнено Отладка неправильного имени директивы и неправильного имени свойства.
+
+#### <a name="to-debug-an-incorrect-directive-name"></a>Отладка неправильного имени директивы
+
+1. Замените код в DebugTest.tt следующим кодом:
+
     > [!NOTE]
-    > Код содержит ошибку. Чтобы выполнить его отладку Представляем ошибку.  
-  
-    ```csharp  
-    <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
-    <#@ output extension=".txt" #>  
-    <#@ modelRoot processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
-  
-    Model: <#= this.ExampleModel #>  
-    <#  
-    foreach (ExampleElement element in this.ExampleModel.Elements)   
-    {   
-    #>   
-        Element: <#= element.Name #>  
-    <#   
-    }  
-    #>  
-    ```  
-  
-    ```vb  
-    <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
-    <#@ output extension=".txt" #>  
-    <#@ modelRoot processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
-  
-    Model: <#= Me.ExampleModel #>  
-    <#  
-    For Each element as ExampleElement in Me.ExampleModel.Elements  
-    #>   
-        Element: <#= element.Name #>  
-    <#   
-    Next  
-    #>  
-    ```  
-  
-2. В **обозревателе решений**, щелкните правой кнопкой мыши файл DebugTest.tt и нажмите кнопку **пользовательское средство**.  
-  
-     **Список ошибок** окно отображает эту ошибку:  
-  
-     **Процессор с именем «DebuggingTestLanguageDirectiveProcessor» не поддерживает директиву с именем «modelRoot». Преобразование не будет выполнено.**  
-  
-     В этом случае вызова директивы содержит неверное имя директивы. Вы указали `modelRoot` как имя директивы, но правильное имя директивы по `DebuggingTestLanguage`.  
-  
-3. Дважды щелкните ошибку в **список ошибок** окно, чтобы перейти к коду.  
-  
-4. Чтобы исправить код, измените имя директивы для `DebuggingTestLanguage`.  
-  
-     Изменение будет выделен.  
-  
-    ```csharp  
-    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
-    ```  
-  
-    ```vb  
-    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
-    ```  
-  
-5. В **обозревателе решений**, щелкните правой кнопкой мыши файл DebugTest.tt и нажмите кнопку **пользовательское средство**.  
-  
-     Теперь система преобразует текстовый шаблон и создает соответствующий файл выходных данных. Вы не увидите все ошибки в **список ошибок** окна.  
-  
-#### <a name="to-debug-an-incorrect-property-name"></a>Для отладки неверным именем свойства  
-  
-1. Замените код в файл DebugTest.tt следующим кодом:  
-  
+    > Код содержит ошибку. Вы представляете ошибку, чтобы отладить ее.
+
+    ```csharp
+    <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+    <#@ output extension=".txt" #>
+    <#@ modelRoot processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
+
+    Model: <#= this.ExampleModel #>
+    <#
+    foreach (ExampleElement element in this.ExampleModel.Elements)
+    {
+    #>
+        Element: <#= element.Name #>
+    <#
+    }
+    #>
+    ```
+
+    ```vb
+    <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+    <#@ output extension=".txt" #>
+    <#@ modelRoot processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
+
+    Model: <#= Me.ExampleModel #>
+    <#
+    For Each element as ExampleElement in Me.ExampleModel.Elements
+    #>
+        Element: <#= element.Name #>
+    <#
+    Next
+    #>
+    ```
+
+2. В **Обозреватель решений**щелкните правой кнопкой мыши DebugTest.tt и выберите пункт **Запустить пользовательский инструмент**.
+
+     В окне **Список ошибок** отображается эта ошибка:
+
+     **Процессор с именем "Дебуггингтестлангуажедирективепроцессор" не поддерживает директиву с именем "Моделрут". Преобразование не будет выполняться.**
+
+     В этом случае вызов директивы содержит неправильное имя директивы. В качестве имени директивы указан `modelRoot`, но правильное имя директивы — `DebuggingTestLanguage`.
+
+3. Дважды щелкните ошибку в окне **Список ошибок** , чтобы перейти к коду.
+
+4. Чтобы исправить код, измените имя директивы на `DebuggingTestLanguage`.
+
+     Изменение выделено.
+
+    ```csharp
+    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
+    ```
+
+    ```vb
+    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
+    ```
+
+5. В **Обозреватель решений**щелкните правой кнопкой мыши DebugTest.tt и выберите пункт **Запустить пользовательский инструмент**.
+
+     Теперь система преобразует текстовый шаблон и создает соответствующий выходной файл. В окне **Список ошибок** ошибки не отображаются.
+
+#### <a name="to-debug-an-incorrect-property-name"></a>Отладка неправильного имени свойства
+
+1. Замените код в DebugTest.tt следующим кодом:
+
     > [!NOTE]
-    > Код содержит ошибку. Чтобы выполнить его отладку Представляем ошибку.  
-  
-    ```csharp  
-    <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
-    <#@ output extension=".txt" #>  
-    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
-  
-    Model: <#= this.ExampleModel #>  
-    <#  
-    foreach (ExampleElement element in this.ExampleModel.Elements)   
-    {   
-    #>   
-        Element: <#= element.Name #>  
-    <#   
-    }  
-    #>  
-    ```  
-  
-    ```vb  
-    <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
-    <#@ output extension=".txt" #>  
-    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
-  
-    Model: <#= Me.ExampleModel #>  
-    <#  
-    For Each element as ExampleElement in Me.ExampleModel.Elements  
-    #>   
-        Element: <#= element.Name #>  
-    <#   
-    Next  
-    #>  
-    ```  
-  
-2. В **обозревателе решений**, щелкните правой кнопкой мыши файл DebugTest.tt и нажмите кнопку **пользовательское средство**.  
-  
-     **Список ошибок** окна появляется и отображает одно из следующих ошибок:  
-  
-     (C#)  
-  
-     **Компиляция преобразования: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation "содержит определение для «ExampleModel»**  
-  
-     (Visual Basic)  
-  
-     **Компиляция преобразования: «ExampleModel» не является членом "Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation ".**  
-  
-     В этом случае код текстового шаблона содержит неверным именем свойства. Вы указали `ExampleModel` как имя свойства, но правильного свойства является имя `LibraryModel`. Можно найти правильное название свойства в поле параметра, как показано в следующем коде:  
-  
-    ```  
-    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
-    ```  
-  
-3. Дважды щелкните ошибку в окне списка ошибок, чтобы перейти к коду.  
-  
-4. Чтобы исправить код, измените имя свойства в `LibraryModel` в код текстового шаблона.  
-  
-     Изменения выделены.  
-  
-    ```csharp  
-    <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
-    <#@ output extension=".txt" #>  
-    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
-  
-    Model: <#= this.LibraryModel #>  
-    <#  
-    foreach (ExampleElement element in this.LibraryModel.Elements)   
-    {   
-    #>   
-        Element: <#= element.Name #>  
-    <#   
-    }  
-    #>  
-    ```  
-  
-    ```vb  
-    <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
-    <#@ output extension=".txt" #>  
-    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
-  
-    Model: <#= Me.LibraryModel #>  
-    <#  
-    For Each element as ExampleElement in Me.LibraryModel.Elements  
-    #>   
-        Element: <#= element.Name #>  
-    <#   
-    Next  
-    #>  
-    ```  
-  
-5. В **обозревателе решений**, щелкните правой кнопкой мыши файл DebugTest.tt и нажмите кнопку **пользовательское средство**.  
-  
-     Теперь система преобразует текстовый шаблон и создает соответствующий файл выходных данных. Вы не увидите все ошибки в **список ошибок** окна.
+    > Код содержит ошибку. Вы представляете ошибку, чтобы отладить ее.
+
+    ```csharp
+    <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+    <#@ output extension=".txt" #>
+    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
+
+    Model: <#= this.ExampleModel #>
+    <#
+    foreach (ExampleElement element in this.ExampleModel.Elements)
+    {
+    #>
+        Element: <#= element.Name #>
+    <#
+    }
+    #>
+    ```
+
+    ```vb
+    <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+    <#@ output extension=".txt" #>
+    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
+
+    Model: <#= Me.ExampleModel #>
+    <#
+    For Each element as ExampleElement in Me.ExampleModel.Elements
+    #>
+        Element: <#= element.Name #>
+    <#
+    Next
+    #>
+    ```
+
+2. В **Обозреватель решений**щелкните правой кнопкой мыши DebugTest.tt и выберите пункт **Запустить пользовательский инструмент**.
+
+     Появится окно **Список ошибок** , в котором отображается одна из следующих ошибок:
+
+     (C#)
+
+     **Компиляция преобразования: Microsoft. VisualStudio. TextTemplating \<GUID >. Женератедтексттрансформатион "не содержит определения для" пространстве ExampleModel "**
+
+     (Visual Basic)
+
+     **Компиляция преобразования: "пространстве ExampleModel" не является членом "Microsoft. VisualStudio. TextTemplating \<GUID >. Женератедтексттрансформатион ".**
+
+     В этом случае код текстового шаблона содержит неправильное имя свойства. В качестве имени свойства указан `ExampleModel`, но правильное имя свойства — `LibraryModel`. Правильное имя свойства можно найти в параметре, как показано в следующем коде:
+
+    ```
+    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
+    ```
+
+3. Дважды щелкните ошибку в окне Список ошибок, чтобы перейти к коду.
+
+4. Чтобы исправить код, измените имя свойства на `LibraryModel` в коде текстового шаблона.
+
+     Изменения выделены.
+
+    ```csharp
+    <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+    <#@ output extension=".txt" #>
+    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
+
+    Model: <#= this.LibraryModel #>
+    <#
+    foreach (ExampleElement element in this.LibraryModel.Elements)
+    {
+    #>
+        Element: <#= element.Name #>
+    <#
+    }
+    #>
+    ```
+
+    ```vb
+    <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+    <#@ output extension=".txt" #>
+    <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
+
+    Model: <#= Me.LibraryModel #>
+    <#
+    For Each element as ExampleElement in Me.LibraryModel.Elements
+    #>
+        Element: <#= element.Name #>
+    <#
+    Next
+    #>
+    ```
+
+5. В **Обозреватель решений**щелкните правой кнопкой мыши DebugTest.tt и выберите пункт **Запустить пользовательский инструмент**.
+
+     Теперь система преобразует текстовый шаблон и создает соответствующий выходной файл. В окне **Список ошибок** ошибки не отображаются.

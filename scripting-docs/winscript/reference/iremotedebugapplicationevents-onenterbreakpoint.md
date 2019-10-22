@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnEnterBreakPoint | Документация Майкрософт
+title: 'IRemoteDebugApplicationEvents:: Онентербреакпоинт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 123476100076811534343763f0e9675a90fdea16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad7b0dc3e4b6cd7e8779208121d7464e83e7bb3f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934646"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571984"
 ---
 # <a name="iremotedebugapplicationeventsonenterbreakpoint"></a>IRemoteDebugApplicationEvents::OnEnterBreakPoint
-Обрабатывает событие ввода точку останова.  
+Обрабатывает событие для ввода точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT OnEnterBreakPoint(
   
 #### <a name="parameters"></a>Параметры  
  `prdat`  
- [in] Поток приложения, в который введено точки останова.  
+ окне Поток приложения, который вошел в точку останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод обрабатывает событие ввода точку останова.  
+## <a name="remarks"></a>Заметки  
+ Этот метод обрабатывает событие для ввода точки останова.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

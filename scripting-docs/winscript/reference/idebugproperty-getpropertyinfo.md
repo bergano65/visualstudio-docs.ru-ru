@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetPropertyInfo | Документация Майкрософт
+title: 'IDebugProperty:: GetPropertyInfo | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51cf7fae597d95b0d9098d6b2dc6950c2d06bfa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0698e09cd9643322a237a81d971248577fd97e0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979153"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562324"
 ---
 # <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
-Получает значение `IDebugProperty` , описывающий метод или индексированное свойство.  
+Возвращает значение `IDebugProperty`, описывающее метод или индексированное свойство.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,18 +39,18 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>Параметры  
  `dwFields`  
- [in] Указывает `DBGPROP_INFO_FLAGS` константы, которые определяют поля для заполнения `DebugPropertyInfo` структуры.  
+ окне Задает `DBGPROP_INFO_FLAGS` константы, определяющие поля, которые должны быть заполнены в структуре `DebugPropertyInfo`.  
   
  `nRadix`  
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.  
+ окне Основание системы счисления, используемое для форматирования любых числовых данных.  
   
  `pPropertyInfo`  
- [out] Возвращает `DebugPropertyInfo` структура, описывающая свойства.  
+ заполняет Возвращает структуру `DebugPropertyInfo`, описывающую свойство.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
  [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

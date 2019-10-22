@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Документация Майкрософт
+title: 'IActiveScriptSite:: Жетдокверсионстринг | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ecc592b6b7fcae5f516a3c1dd111c027e67b6dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992747"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571133"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Извлекает строку, однозначно определяющее текущую версию документа определяемого узла. Если связанный документ был изменен вне области сценариев Windows (как в случае HTML-страницы, редактируемого в блокноте), обработчик сценариев можно сохранить вместе с его сохраненное состояние, принудительной повторной компиляции в следующий раз загрузки скрипта.  
+Извлекает определяемую узлом строку, уникально идентифицирующую текущую версию документа. Если связанный документ изменился вне области сценария Windows (как в случае HTML-страницы, редактируемой с помощью Блокнота), обработчик сценариев может сохранить его вместе с сохраненным состоянием, принудительно перекомпилировать при следующем запуске скрипта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Параметры  
  `pstrVersionString`  
- [out] Адрес строки версии документа, определенного узла.  
+ заполняет Адрес строки версии документа, определяемой узлом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` в случае успешного выполнения или `E_NOTIMPL` Если этот метод не поддерживается.  
+ Возвращает `S_OK` в случае успеха или `E_NOTIMPL`, если этот метод не поддерживается.  
   
-## <a name="remarks"></a>Примечания  
- Если `E_NOTIMPL` возвращается, обработчик скриптов следует полагать, что сценарий является синхронизовано с документом.  
+## <a name="remarks"></a>Заметки  
+ Если возвращается `E_NOTIMPL`, обработчик сценариев должен предположить, что сценарий синхронизирован с документом.  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

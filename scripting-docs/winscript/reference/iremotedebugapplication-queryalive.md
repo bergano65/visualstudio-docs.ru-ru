@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::QueryAlive | Документация Майкрософт
+title: 'IRemoteDebugApplication:: Куеряливе | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db17bd017b2fc1e1ca52ba8801eb1d197c4b3de7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3edc4fc007a2372c429b0bbece394cb1c30a2770
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944197"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577478"
 ---
 # <a name="iremotedebugapplicationqueryalive"></a>IRemoteDebugApplication::QueryAlive
-Указывает, является ли отвечает приложение.  
+Указывает, отвечает ли приложение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,14 +39,14 @@ HRESULT QueryAlive();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод указывает, является ли отвечает приложение. Реализации этого метода всегда должны возвращать `S_OK`.  
+## <a name="remarks"></a>Заметки  
+ Этот метод указывает, отвечает ли приложение на запросы. Реализации этого метода всегда должны возвращать `S_OK`.  
   
- Если процесс приложения завершается неожиданно, COM возвращает ошибку из маршалирования прокси для вызова этого метода.  
+ В случае непредвиденного завершения процесса приложения COM возвращает ошибку от прокси-сервера маршалинга для вызовов этого метода.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetState | Документация Майкрософт
+title: Иремотедебугаппликатионсреад::/State | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6534f57c92776dcd3cde9083335becbd66002a32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42f7f2a292c908b5fe49f1097b0fe56b8b0b11e0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788121"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575249"
 ---
 # <a name="iremotedebugapplicationthreadgetstate"></a>IRemoteDebugApplicationThread::GetState
-Получает состояние данного потока.  
+Возвращает состояние этого потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,24 +37,24 @@ HRESULT GetState(
   
 #### <a name="parameters"></a>Параметры  
  `pState`  
- [out] Сочетание следующих флагов состояния потока:  
+ заполняет Сочетание следующих флагов состояния потока:  
   
-|Константа|Значение|Описание|  
+|Константа|значения|Описание|  
 |--------------|-----------|-----------------|  
-|THREAD_STATE_RUNNING|0x00000001|Поток выполняется.|  
+|THREAD_STATE_RUNNING|0x00000001|Поток работает.|  
 |THREAD_STATE_SUSPENDED|0x00000002|Поток приостановлен.|  
-|THREAD_BLOCKED|0x00000004|Поток блокируется.|  
-|THREAD_OUT_OF_CONTEXT|0x00000008|Поток выходит за пределы содержимого.|  
+|THREAD_BLOCKED|0x00000004|Поток заблокирован.|  
+|THREAD_OUT_OF_CONTEXT|0x00000008|Поток находится за пределами содержимого.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает состояние данного потока.  
+## <a name="remarks"></a>Заметки  
+ Этот метод получает состояние этого потока.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

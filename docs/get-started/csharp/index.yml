@@ -6,7 +6,7 @@ metadata:
   description: Создавайте приложения на C# с использованием Visual Studio.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 09/27/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: 0e61a2b9d54fc4e40a84e7107ab653a2e90f52de
+  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71252155"
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71962853"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -39,20 +39,24 @@ landingContent:
       url: tutorial-console.md
     - text: Создание веб-приложения
       url: tutorial-aspnet-core.md
-    - text: Создание первого приложения ASP.NET Core
-      url: tutorial-aspnet-core-ef-step-01.md
     - text: Создание приложения универсальной платформы Windows
       url: tutorial-uwp.md
     - text: Создание классического приложения Windows
       url: tutorial-wpf.md
+    - text: Создание приложения Windows Forms
+      url: ../../ide/create-csharp-winform-visual-studio.md
     - text: Сведения о языке C#
       url: /dotnet/csharp/tutorials/intro-to-csharp/
+  - linkListType: video
+    links:
+    - text: Создание приложения ASP.NET Core
+      url: tutorial-aspnet-core-ef-step-01.md
 - title: Знакомство с Visual Studio
   linkLists:
   - linkListType: tutorial
     links:
     - text: Открытие кода из репозитория
-      url: ../tutorial-open-project-from-repo.md?
+      url: ../tutorial-open-project-from-repo.md
     - text: Создание и редактирование кода
       url: tutorial-editor.md
     - text: Компиляция и сборка

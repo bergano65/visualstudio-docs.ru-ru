@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetSuspendCount | Документация Майкрософт
+title: 'Иремотедебугаппликатионсреад:: Жетсуспендкаунт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9df531e1abc5474bd21f58c29a3a2907086e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53370d3489f5bb3c8dc8dfe9349ccc32ca923f05
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788108"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575240"
 ---
 # <a name="iremotedebugapplicationthreadgetsuspendcount"></a>IRemoteDebugApplicationThread::GetSuspendCount
-Возвращает счетчик приостановки для потока.  
+Возвращает счетчик приостановок для потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT GetSuspendCount(
   
 #### <a name="parameters"></a>Параметры  
  `pdwCount`  
- [out] Счетчик приостановки для потока.  
+ заполняет Счетчик приостановок для потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает счетчик приостановки для потока.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает счетчик приостановок для потока.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -11,30 +11,30 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c0466d5b8644ddeae60df24b8b980ee9da0f820
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd2933ee3e0e162740f0c7eb3f3c2307e17ec46d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331685"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647920"
 ---
 # <a name="subscribing-to-an-event"></a>Подписка на событие
-В этом пошаговом руководстве объясняется, как создать окно инструментов, который реагирует на события в таблице выполняющихся документов (RDT). Окно инструментов содержит пользовательский элемент управления, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Метод подключает интерфейс к событиям.
+В этом пошаговом руководстве объясняется, как создать окно инструментов, которое реагирует на события в выполняющейся таблице документов (РДТ). В окне инструментов размещается пользовательский элемент управления, реализующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. Метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> подключает интерфейс к событиям.
 
-## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Необходимые компоненты
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="subscribing-to-rdt-events"></a>Подписка на события RDT
+## <a name="subscribing-to-rdt-events"></a>Подписка на события РДТ
 
-#### <a name="to-create-an-extension-with-a-tool-window"></a>Создание расширения с окном инструментов
+#### <a name="to-create-an-extension-with-a-tool-window"></a>Создание расширения с помощью окна инструментов
 
-1. Создайте проект с именем **RDTExplorer** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **RDTExplorerWindow**.
+1. Создайте проект с именем **рдтексплорер** с помощью шаблона VSIX и добавьте пользовательский шаблон элемента окна инструментов с именем **рдтексплорервиндов**.
 
-     Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
+     Дополнительные сведения о создании расширения с помощью окна инструментов см. в разделе [Создание расширения с помощью окна инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-#### <a name="to-subscribe-to-rdt-events"></a>Подписаться на события RDT
+#### <a name="to-subscribe-to-rdt-events"></a>Подписка на события РДТ
 
-1. Откройте файл RDTExplorerWindowControl.xaml и удаление кнопки с именем `button1`. Добавление <xref:System.Windows.Forms.ListBox> управления и примите имя по умолчанию. Элемент Grid должен выглядеть следующим образом:
+1. Откройте файл Рдтексплорервиндовконтрол. XAML и удалите кнопку с именем `button1`. Добавьте элемент управления <xref:System.Windows.Forms.ListBox> и примите имя по умолчанию. Элемент Grid должен выглядеть следующим образом:
 
     ```xml
     <Grid>
@@ -45,7 +45,7 @@ ms.locfileid: "66331685"
     </Grid>
     ```
 
-2. Откройте файл RDTExplorerWindow.cs в представлении кода. Добавьте следующие операторы using в начало файла.
+2. Откройте файл RDTExplorerWindow.cs в представлении кода. Добавьте следующие директивы using в начало файла.
 
     ```csharp
     using Microsoft.VisualStudio;
@@ -53,7 +53,7 @@ ms.locfileid: "66331685"
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3. Изменить `RDTExplorerWindow` класса, который, помимо наследования от <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> класс, он реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> интерфейс.
+3. Измените класс `RDTExplorerWindow`, чтобы, помимо наследования от класса <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, он реализовал интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
 
     ```csharp
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents
@@ -62,23 +62,23 @@ ms.locfileid: "66331685"
 
 4. Реализуйте расширение <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
 
-    - Реализуйте интерфейс. Поместите курсор на имя IVsRunningDocTableEvents. Вы должны увидеть лампочки в левом поле. Щелкните стрелку вниз справа от лампочки и выберите **реализовать интерфейс**.
+    - Реализуйте интерфейс. Поместите курсор на имя Ивсруннингдоктабливентс. В левом поле появится лампочка лампочки. Щелкните стрелку вниз справа от лампочки и выберите команду **реализовать интерфейс**.
 
-5. В каждом методе в интерфейсе, замените строку `throw new NotImplementedException();` с этим:
+5. В каждом методе в интерфейсе замените строку `throw new NotImplementedException();` следующим:
 
     ```csharp
     return VSConstants.S_OK;
     ```
 
-6. Добавьте в класс RDTExplorerWindow поле файла cookie.
+6. Добавьте поле cookie в класс Рдтексплорервиндов.
 
     ```csharp
     private uint rdtCookie;
     ```
 
-     Содержит файл cookie, который возвращается методом <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> метод.
+     Он содержит файл cookie, возвращаемый методом <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>.
 
-7. Переопределите метод Initialize() RDTExplorerWindow для регистрации событий RDT. Службы всегда должна появиться в метод Initialize() ToolWindowPane, а не в конструкторе.
+7. Переопределите метод Initialize () Рдтексплорервиндов для регистрации событий РДТ. Всегда следует получать службы в методе Initialize () ToolWindowPane, а не в конструкторе.
 
     ```csharp
     protected override void Initialize()
@@ -89,9 +89,9 @@ ms.locfileid: "66331685"
     }
     ```
 
-     <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> Служба вызывается для получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> интерфейс. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Метод подключается событий RDT для объекта, реализующего <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, в этом случае объект RDTExplorer.
+     Для получения интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> вызывается служба <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> соединяет события РДТ с объектом, реализующим <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> (в данном случае) объектом Рдтексплорер.
 
-8. Обновите метод Dispose() RDTExplorerWindow.
+8. Обновите метод Dispose () Рдтексплорервиндов.
 
     ```csharp
     protected override void Dispose(bool disposing)
@@ -105,9 +105,9 @@ ms.locfileid: "66331685"
     }
     ```
 
-     <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A> Метод удаляет соединение между `RDTExplorer` и уведомления о событиях RDT.
+     Метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A> удаляет соединение между `RDTExplorer` и РДТ уведомления о событии.
 
-9. Добавьте следующую строку в текст <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A> обработчик, непосредственно перед `return` инструкции.
+9. Добавьте следующую строку в тело обработчика <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A>, непосредственно перед инструкцией `return`.
 
     ```csharp
     public int OnBeforeLastDocumentUnlock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)
@@ -117,7 +117,7 @@ ms.locfileid: "66331685"
     }
     ```
 
-10. Добавить как строку в текст <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A> обработчика и с другими событиями, которые вы хотите увидеть в списке.
+10. Добавьте подобную строку в тело обработчика <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A> и другие события, которые необходимо просмотреть в списке.
 
     ```csharp
     public int OnAfterFirstDocumentLock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)
@@ -129,10 +129,10 @@ ms.locfileid: "66331685"
 
 11. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.
 
-12. Откройте **RDTExplorerWindow** (**представления и других Windows / RDTExplorerWindow**).
+12. Откройте **рдтексплорервиндов** (**представление/другие окна или рдтексплорервиндов**).
 
-     **RDTExplorerWindow** откроется окно со списком пустое событие.
+     Откроется окно **рдтексплорервиндов** с пустым списком событий.
 
 13. Откройте или создайте решение.
 
-     Как `OnBeforeLastDocument` и `OnAfterFirstDocument` события запускаются, появится уведомление каждого события в списке.
+     По мере срабатывания событий `OnBeforeLastDocument` и `OnAfterFirstDocument` в списке событий появляются уведомления о каждом событии.

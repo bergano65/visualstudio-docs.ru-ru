@@ -1,5 +1,5 @@
 ---
-title: CA1715. Идентификаторы должны иметь правильные префиксы | Документация Майкрософт
+title: 'CA1715: идентификаторы должны иметь правильный префикс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,77 +12,77 @@ helpviewer_keywords:
 - CA1715
 ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5988d472317540ca1b1a7f91acd75a48fa9743b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189125"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669107"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715. Идентификаторы должны иметь правильные префиксы
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: идентификаторы должны иметь правильные префиксы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio, см. в разделе [CA1715: Идентификаторы должны иметь правильные префиксы](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).  
-  
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldHaveCorrectPrefix|  
-|CheckId|CA1715|  
-|Категория|Microsoft.Naming|  
-|Критическое изменение|Критическое, если возникает в интерфейсах.<br /><br /> Не критическое — при возникновении на параметры универсального типа.|  
-  
-## <a name="cause"></a>Причина  
- Имя видимого интерфейса не начинается с прописные «I».  
-  
- -или-  
-  
- Имя параметра универсального типа в видимый извне тип или методе не начинается с заглавной 'T'.  
-  
-## <a name="rule-description"></a>Описание правила  
- По соглашению имена некоторых элементов программирования начинаются с особого префикса.  
-  
- Интерфейс имена должны начинаться с заглавной, «I» следуют другая прописная буква. Это правило выдает сообщение нарушения для имени интерфейса, такие как «MyInterface» и «IsolatedInterface».  
-  
- Имена параметров универсального типа должны начинаться с заглавной 'T' и при необходимости может следовать другая прописная буква. Это правило выдает сообщение нарушения для определения имен параметров универсального типа, таких как «V» и «Тип».  
-  
- Соглашения об именовании обеспечивают единообразие библиотек, предназначенных среда CLR. Это уменьшает обучения, необходимый для новых библиотек программного обеспечения и повышает уверенность клиента в том, что библиотека была разработана тому, кто имеет опыт в разработке управляемого кода.  
-  
-## <a name="how-to-fix-violations"></a>Устранение нарушений  
- Переименуйте идентификатор, чтобы он правильно добавлен префикс.  
-  
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
-  
-## <a name="example"></a>Пример  
- **В следующем примере интерфейс с неправильным именем.**  
-  
+Последнюю документацию по Visual Studio см. в разделе [CA1715: идентификаторы должны иметь правильный префикс](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
+
+|||
+|-|-|
+|TypeName|IdentifiersShouldHaveCorrectPrefix|
+|CheckId|CA1715|
+|Категория|Microsoft. Naming|
+|Критическое изменение|Критическое — при срабатывании интерфейсов.<br /><br /> Не критическое — при возникновении параметров универсального типа.|
+
+## <a name="cause"></a>Причина
+ Имя интерфейса, видимого извне, не начинается с прописной буквы I.
+
+ \- или -
+
+ Имя параметра универсального типа для видимого извне типа или метода не начинается с прописной буквы 'T '.
+
+## <a name="rule-description"></a>Описание правила
+ По соглашению имена некоторых программных элементов начинаются с определенного префикса.
+
+ Имена интерфейсов должны начинаться с прописной буквы "I", за которой следует другая прописная буква. Это правило сообщает о нарушениях имен интерфейсов, таких как "Минтерфаце" и "Исолатединтерфаце".
+
+ Имена параметров универсального типа должны начинаться с прописной буквы «'T», а при необходимости может следовать еще одна прописная буква. Это правило сообщает о нарушениях имен параметров универсального типа, таких как "V" и "Type".
+
+ Соглашения об именовании обеспечивают общий вид библиотек, предназначенных для среды CLR. Это сокращает кривую обучения, необходимую для новых библиотек программного обеспечения, и повышает уверенность пользователей в том, что библиотека была разработана кем-то, кто имеет опыт разработки управляемого кода.
+
+## <a name="how-to-fix-violations"></a>Устранение нарушений
+ Переименуйте идентификатор таким образом, чтобы он был правильно исправлен.
+
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+ Для этого правила отключать вывод предупреждений не следует.
+
+## <a name="example"></a>Пример
+ **В следующем примере показан неверно именованный интерфейс.**
+
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix/cpp/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix.cpp#1)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix/cs/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix.cs#1)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix.vb#1)]  
-  
-## <a name="example"></a>Пример  
- **В следующем примере устраняется нарушение устраняется с помощью префикса интерфейса с помощью «I».**  
-  
+ [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix.vb#1)]
+
+## <a name="example"></a>Пример
+ **Следующий пример устраняет предыдущее нарушение, добавляя к интерфейсу префикс "I".**
+
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2/cpp/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2.cpp#1)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2/cs/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2.cs#1)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2.vb#1)]  
-  
-## <a name="example"></a>Пример  
- **В следующем примере является параметром универсального типа с неправильным именем.**  
-  
+ [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2.vb#1)]
+
+## <a name="example"></a>Пример
+ **В следующем примере показан неправильно именованный параметр универсального типа.**
+
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3/cpp/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3.cpp#1)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3/cs/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3.cs#1)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3.vb#1)]  
-  
-## <a name="example"></a>Пример  
- **В следующем примере устраняется нарушение устраняется с помощью префикса параметра универсального типа т ".**  
-  
+ [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3.vb#1)]
+
+## <a name="example"></a>Пример
+ **Следующий пример устраняет предыдущее нарушение путем префикса параметра универсального типа с помощью 'T '.**
+
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/cpp/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.cpp#1)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/cs/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.cs#1)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.vb#1)]  
-  
-## <a name="related-rules"></a>Связанные правила  
- [CA1722: Идентификаторы не должны иметь неверные префиксы](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+ [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.vb#1)]
+
+## <a name="related-rules"></a>Связанные правила
+ [CA1722: идентификаторы не должны иметь неверные префиксы](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

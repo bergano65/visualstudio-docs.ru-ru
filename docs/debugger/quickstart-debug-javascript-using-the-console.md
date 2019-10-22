@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 521092c26ba585381aa094f6b1b348365300bc10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907169"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589058"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Отладка JavaScript с помощью консоли в Visual Studio
 
-Окно консоли JavaScript можно использовать для взаимодействия и отладки приложений универсальной платформы Windows, построенных с помощью JavaScript. Эти функции поддерживаются для приложений универсальной платформы Windows и приложений, созданных с помощью Visual Studio Tools для Apache Cordova. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md).
+Окно консоли JavaScript можно использовать для взаимодействия и отладки приложений UWP, созданных с помощью JavaScript. Эти функции поддерживаются для приложений и приложений UWP, созданных с помощью Инструменты Visual Studio для Apache Cordova. Справочник по консольным командам см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
 Окно консоли JavaScript предоставляет вам следующие возможности:
 
@@ -39,28 +39,28 @@ ms.locfileid: "62907169"
 
 - Просмотр ошибок и исключений JavaScript в дополнение к исключениям модели DOM и среды выполнения Windows.
 
-- Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md) .
+- Выполнение других задач, таких как очистка экрана. Полный список команд см. в разделе [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) .
 
 > [!TIP]
 > Если окно консоли JavaScript закрыто, выберите **Отладка**> **Windows** > **Консоль JavaScript** , чтобы снова открыть его. Окно отображается только во время сеанса отладки скрипта.
 
-С помощью окна консоли JavaScript можно взаимодействовать с приложением, не останавливая и не перезапуская отладчик. Дополнительные сведения см. в разделе [обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md). Сведения о других возможностях отладки JavaScript, например с использованием проводника DOM и задание точек останова, см. в разделе [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+С помощью окна консоли JavaScript можно взаимодействовать с приложением, не останавливая и не перезапуская отладчик. Дополнительные сведения см. в разделе [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md). Сведения о других функциях отладки JavaScript, таких как использование проводника DOM и установка точек останова, см. в разделе [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InteractiveConsole"></a> Отладка с использованием окна консоли JavaScript
 Далее приведена процедура создания приложения `FlipView` и инструкции по интерактивной отладке ошибки кодирования JavaScript.
 
 > [!NOTE]
-> В примере приложения — это приложение универсальной платформы Windows. Однако описываемые здесь функции консоли также применимы к приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova.
+> Пример приложения — это приложение UWP. Однако описываемые здесь функции консоли также применимы к приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova.
 
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Отладка кода JavaScript в приложении FlipView
 
 1. Создайте новое решение в Visual Studio, выбрав **Файл** > **Новый проект**.
 
-2. Выберите **JavaScript** > **универсальной Windows**, а затем выберите **приложение WinJS**.
+2. Выберите **JavaScript**  > **Windows Universal**, а затем выберите **приложение WinJS**.
 
 3. Введите имя проекта, например `FlipViewApp`, и нажмите кнопку **ОК** , чтобы создать приложение.
 
-4. В элементе BODY файла index.html замените существующий код HTML следующим кодом:
+4. В элементе BODY элемента index. html замените существующий код HTML следующим кодом:
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -136,15 +136,15 @@ ms.locfileid: "62907169"
     })();
     ```
 
-7. Если цель отладки еще не выбрана, выберите **локального компьютера** из раскрывающегося списка рядом с полем **устройства** , нажмите кнопку **Отладка** инструментов:
+7. Если цель отладки еще не выбрана, выберите пункт **локальный компьютер** в раскрывающемся списке рядом с кнопкой **устройство** на панели инструментов **Отладка** :
 
-    ![Список целевых объектов отладки выберите](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Выбор целевого списка отладки](../debugger/media/js_select_target.png "JS_Select_Target")
 
 8. Нажмите клавишу F5, чтобы запустить отладчик.
 
     Приложение выполняется, но изображения отсутствуют. Ошибки APPHOST в окне консоли JavaScript указывают на отсутствие изображений.
 
-9. С помощью `FlipView` приложение, работающее, тип `Data.items` в строке ввода окна консоли (рядом с полем «>>» символ) и нажмите клавишу ВВОД.
+9. После запуска приложения `FlipView` введите `Data.items` в командной строке окна консоли (рядом с символом "> >") и нажмите клавишу ВВОД.
 
     В окне консоли отображается визуализатор для объекта `items` . Это означает, что объект `items` создан и доступен в текущем контексте скрипта. В окне консоли можно щелкнуть узлы объекта, чтобы просмотреть значения свойств (или использовать клавиши со стрелками). Если щелкнуть объект `items._data` , как показано на рисунке, можно увидеть, что ссылки на источник изображений являются неправильными, как и ожидалось. Изображения по умолчанию (logo.png) все еще присутствуют в объекте, а отсутствующие изображения перемешаны с нужными.
 
@@ -184,7 +184,7 @@ ms.locfileid: "62907169"
 
 15. Введите в командной строке `Data.items.length = 3` и нажмите клавишу ВВОД. Это позволяет удалить лишние элементы данных.
 
-16. Проверьте приложение еще раз, и вы увидите, что необходимые изображения теперь отображаются на соответствующих `FlipView` страниц.
+16. Снова проверьте приложение, и вы увидите, что правильные изображения находятся на правильных `FlipView` страницах.
 
 17. В обозревателе DOM отображается обновленный элемент DIV, и можно перейти в поддерево, чтобы найти нужные элементы IMG.
 
@@ -201,13 +201,13 @@ ms.locfileid: "62907169"
 
 1. В файле default.html приложения `FlipView` , созданного ранее, откройте контекстное меню функции `updateImages()` , а затем выберите **Точка останова** > **Вставить точку останова**.
 
-2. Выберите **локального компьютера** в раскрывающемся списке рядом с полем **начать отладку** кнопку **Отладка** панели инструментов.
+2. Выберите **локальный компьютер** в раскрывающемся списке рядом с кнопкой **начать отладку** на панели инструментов **Отладка** .
 
 3. Выберите **Отладка** > **Начать отладку**или нажмите клавишу F5.
 
     Приложение входит в режим приостановки выполнения, когда выполнение достигает функции `updateImages()` и текущая строка выполнения программы выделяется желтым.
 
-    ![Использование режима приостановки выполнения консоли JavaScript](../debugger/media/js_breakmode.png "JS_BreakMode")
+    ![Использование режима приостановки с консолью JavaScript](../debugger/media/js_breakmode.png "JS_BreakMode")
 
     Можно изменить значения переменных, чтобы немедленно изменить состояние программы, не завершая текущего сеанса отладки.
 
@@ -217,7 +217,7 @@ ms.locfileid: "62907169"
 
     На следующем рисунке показано окно консоли на этом этапе.
 
-    ![Окно консоли JavaScript с визуализатор](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
+    ![Окно консоли JavaScript с визуализатором](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
 
 6. Скопируйте одну строку функции из окна вывода в строку ввода и измените значение индекса на 3:
 
@@ -245,16 +245,16 @@ ms.locfileid: "62907169"
 
 На следующем рисунке показан список "Цель" в окне консоли JavaScript.
 
-![Предназначенных для выбора в окне консоли JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
+![Выбор целевого объекта в окне консоли JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
 Вы также можете переключить контекст выполнения с помощью команды `cd` , однако вы должны знать имя другого контекста выполнения, а используемая вами ссылка должна находиться в области. Список **Целевой объект** предоставляет более удобный доступ к другим контекстам выполнения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
-- [Команды консоли JavaScript](../debugger/javascript-console-commands.md)
+- [Команды консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Сочетания клавиш](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [Отладка примера кода HTML, CSS и JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)
 - [Поддержка и специальные возможности продукта](https://visualstudio.microsoft.com/vs/support/)

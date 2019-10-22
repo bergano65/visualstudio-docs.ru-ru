@@ -12,40 +12,36 @@ helpviewer_keywords:
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a57f02a7c1b9845f4248daf2282b6f285f95489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25c9a22db7ae136068ec374f874453dbd4a7c4b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193374"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658620"
 ---
 # <a name="toggle-breakpoint-command"></a>Команда Toggle Breakpoint
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-Debug.ToggleBreakpoint [text]  
-```  
-  
-## <a name="arguments"></a>Аргументы  
- `text`  
- Необязательный параметр. Если текст указан, строка помечается как именованная точка останова. В противном случае строка помечается как неименованная точка останова, что аналогично нажатию клавиши F9.  
-  
-## <a name="example"></a>Пример  
- В этом примере переключается текущая точка останова.  
-  
-```  
->Debug.ToggleBreakpoint  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Командное окно](../../ide/reference/command-window.md)   
- [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+Debug.ToggleBreakpoint [text]
+```
+
+## <a name="arguments"></a>Аргументы
+ `text` Необязательный. Если текст указан, строка помечается как именованная точка останова. В противном случае строка помечается как неименованная точка останова, что аналогично нажатию клавиши F9.
+
+## <a name="example"></a>Пример
+ В этом примере переключается текущая точка останова.
+
+```
+>Debug.ToggleBreakpoint
+```
+
+## <a name="see-also"></a>См. также
+ Команды [Visual Studio командное](../../ide/reference/visual-studio-commands.md) [окно](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) командные [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

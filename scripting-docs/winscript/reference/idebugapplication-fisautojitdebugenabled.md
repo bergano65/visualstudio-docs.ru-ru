@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Документация Майкрософт
+title: 'IDebugApplication:: Фисаутожитдебуженаблед | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf97a4d3985dd3dd32e582c689fde0ecd6f52e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990866"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574992"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Определяет, зарегистрирован ли just-in-time (JIT) отладчик к узлам ввода-вывода auto-debug.  
+Определяет, зарегистрирован ли JIT-отладчик для автоматической отладки узлов глупы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,10 +37,10 @@ BOOL FIsAutoJitDebugEnabled();
  Этот метод не принимает параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если метод выполнен успешно и JIT-отладчик зарегистрирован в узлы ввода-вывода auto-debug, метод возвращает `TRUE`. В противном случае она возвращает `FALSE`.  
+ Если метод завершается, и JIT-отладчик зарегистрирован для автоматической отладки узлов глупы, метод возвращает `TRUE`. В противном случае возвращает значение `FALSE`.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод определяет, если JIT-отладчик был зарегистрирован для ввода-вывода узлы auto-debug.  
+## <a name="remarks"></a>Заметки  
+ Этот метод определяет, зарегистрирован ли JIT-отладчик для автоматической отладки узлов глупы.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

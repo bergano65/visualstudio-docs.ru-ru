@@ -1,47 +1,47 @@
 ---
-title: Конструктор рабочих процессов - конструктор действия Interop
+title: Конструктор рабочих процессов — конструктор действий взаимодействия
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747137"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650213"
 ---
 # <a name="interop-activity-designer"></a>Конструктор действия Interop
 
-**Взаимодействия** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Interop> действия.
+Конструктор действий **взаимодействия** используется для создания и настройки действия <xref:System.Activities.Statements.Interop>.
 
 ## <a name="the-interop-activity"></a>Действие Interop
 
 Действие <xref:System.Activities.Statements.Interop> управляет выполнением типов, являющихся производными от <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> в рабочем процессе.
 
-### <a name="use-the-interop-activity-designer"></a>Использование конструктора операций Interop
+### <a name="use-the-interop-activity-designer"></a>Использование конструктора действий взаимодействия
 
-**Взаимодействия** конструктора действий можно найти в **миграции** категории **элементов**, который нажав **элементов**вкладки. Можно также выбрать **элементов** из **представление** меню или нажмите клавишу **Ctrl**+**Alt** + **X**.
+Конструктор действий **взаимодействия** можно найти в категории " **Миграция** " **области элементов**, щелкнув вкладку **панель элементов** . также можно выбрать **область элементов** в меню **вид** или нажать клавишу **CTRL.** +**ALT** +**X**.
 
-[Миграции](../workflow-designer/migration-activity-designers.md) категории, содержащей <xref:System.Activities.Statements.Interop> действие отображается только в **элементов** Если проект нацелен на .NET Framework 4 (full) или более поздней версии. При необходимости вы можете изменить версию платформы, используемой для проекта.
+Категория [миграции](../workflow-designer/migration-activity-designers.md) , содержащая действие <xref:System.Activities.Statements.Interop>, отображается в **области элементов** только в том случае, если проект предназначен для .NET Framework 4 (полная) или более поздней версии. При необходимости можно изменить версию платформы, для которой предназначен проект.
 
-**Взаимодействия** конструктор действия можно перетащить из **элементов** и перетащенной в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Удаление **взаимодействия** конструктора действий создает <xref:System.Activities.Statements.Interop> действие по умолчанию **DisplayName** взаимодействия. Можно изменить <xref:System.Activities.Activity.DisplayName%2A> в заголовке **взаимодействия** конструктора действий, или в **DisplayName** поле таблицы свойств.
+Конструктор действий **взаимодействия** можно перетащить из **области элементов** в конструктор рабочих процессов область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При удалении конструктора действий **взаимодействия** создается действие <xref:System.Activities.Statements.Interop> со значением **DisplayName** по умолчанию для взаимодействия. Можно изменить <xref:System.Activities.Activity.DisplayName%2A> в заголовке конструктора действий **взаимодействия** или в поле **DisplayName** сетки свойств.
 
-Нажмите кнопку **нажмите, чтобы просмотреть** текста в **ActivityType** поле, либо на **взаимодействия** действие конструктора или в сетке свойств, чтобы открыть **Обзор и Выберите .net тип** диалоговое окно. Отображаются только типы рабочего процесса 3.0 или 3.5 действий. То есть только типы, производные от <xref:System.Workflow.ComponentModel.Activity> отображаются. Дополнительные сведения об использовании это поле для указания типа, см. в разделе [Обзор и Выбор типа .NET диалоговое окно](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
+Нажмите **кнопку, чтобы просмотреть** текст в поле **ActivityType** в конструкторе действий **взаимодействия** или в сетке свойств, чтобы открыть диалоговое окно **Обзор и выбор типа .NET** . Отображаются только типы для действий рабочего процесса 3,0 или Workflow 3,5. То есть отображаются только типы, производные от <xref:System.Workflow.ComponentModel.Activity>. Дополнительные сведения об использовании этого поля для указания типа см. в разделе [диалоговое окно "Обзор и выбор типа .NET"](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
 
 ### <a name="the-interop-properties"></a>Свойства Interop
 
-В следующей таблице показаны <xref:System.Activities.Statements.Interop> свойства и описывает, как они используются в конструкторе. Эти свойства можно изменить в таблице свойств или в рабочей области конструктора рабочих процессов.
+В следующей таблице показаны свойства <xref:System.Activities.Statements.Interop> и описано, как они используются в конструкторе. Эти свойства можно изменить в сетке свойств или на поверхности конструктор рабочих процессов.
 
-|Имя свойства|Обязательно|Использование|
+|Имя свойства|Обязательное значение|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Interop>. Значение по умолчанию — **взаимодействия**. Несмотря на то, что отображаемое имя не является обязательной, рекомендуется предоставить один.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Interop>. Значение по умолчанию — **Interop**. Хотя отображаемое имя не является обязательным, рекомендуется указать его.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Задает тип действия, содержащегося в действии <xref:System.Activities.Statements.Interop>. Заданный тип должен быть производным от класса <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>См. также

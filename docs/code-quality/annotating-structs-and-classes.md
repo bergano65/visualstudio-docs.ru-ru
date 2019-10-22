@@ -21,31 +21,31 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493634"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446293"
 ---
 # <a name="annotating-structs-and-classes"></a>Аннотация структур и классов
 
 Вы можете добавить примечание к структурам и членам классов, используя примечания, которые действуют как инварианты — предполагается, что они будут выполнены в любом вызове функции или функции входа и выхода, которая содержит включающую структуру в качестве значения параметров или результатов.
 
-## <a name="struct-and-class-annotations"></a>Структура и класс заметки
+## <a name="struct-and-class-annotations"></a>Заметки структуры и класса
 
 - `_Field_range_(low, high)`
 
-     Поле находится в диапазоне (включительно) из `low` для `high`.  Эквивалент для `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` применяется к аннотированному объекту с помощью соответствующих предусловий или постусловий.
+     Поле находится в диапазоне (включающем) от `low` до `high`.  Эквивалент для `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` применяется к аннотированному объекту с помощью соответствующих предусловий или постусловий.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
      Поле с записываемым размером в элементах (или байтах), как определено в `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Поле с записываемым размером в элементах (или байтах), как определено в `size` и `count` этих элементов (байт), которые доступны для чтения.
 
@@ -55,7 +55,7 @@ ms.locfileid: "67493634"
 
 - `_Field_z_`
 
-     Поле, содержащее строку, завершающуюся символом null.
+     Поле, имеющее строку, завершающуюся нулем.
 
 - `_Struct_size_bytes_(size)`
 
@@ -71,7 +71,7 @@ ms.locfileid: "67493634"
 
     ```
 
-     Размер буфера в байтах параметра `pM` типа `MyStruct *` затем принимается:
+     Размер буфера в байтах параметра, `pM` типа `MyStruct *`, принимается следующим образом:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -104,13 +104,13 @@ struct MyBuffer
 };
 ```
 
-Примечания в этом примере:
+Примечания для этого примера:
 
-- `_Field_z_` равно `_Null_terminated_`.  `_Field_z_` для имени поля указывает, что в поле имени строку, завершающуюся символом null.
-- `_Field_range_` для `bufferSize` указывает, что значение `bufferSize` не может превышать 1 и `MaxBufferSize` (оба числа включительно).
-- Конечные результаты из `_Struct_size_bytes_` и `_Field_size_` заметки являются эквивалентными. Для структур или классов, которые имеют аналогичный макет `_Field_size_` проще читать и обслуживать, так как она содержит меньшее число ссылок и вычислений, чем эквивалент `_Struct_size_bytes_` заметки. `_Field_size_` не требует преобразования в размер в байтах. Если размер в байтах является единственным параметром, например, для поля указателя типа void, `_Field_size_bytes_` может использоваться. Если оба `_Struct_size_bytes_` и `_Field_size_` существует, оба будут доступны для средства. Возлагается средство что делать, если две заметки не согласен.
+- `_Field_z_` равно `_Null_terminated_`.  `_Field_z_` для поля имени указывает, что поле имени является строкой, завершающейся нулем.
+- `_Field_range_` для `bufferSize` указывает, что значение `bufferSize` должно находиться в диапазоне от 1 до `MaxBufferSize` (оба включительно).
+- Конечные результаты `_Struct_size_bytes_` и `_Field_size_` заметок эквивалентны. Для структур или классов с похожим макетом `_Field_size_` проще в чтении и обслуживании, так как он содержит меньше ссылок и вычислений, чем эквивалентная `_Struct_size_bytes_` Аннотация. `_Field_size_` не требует преобразования к размеру в байтах. Если размер Byte является единственным параметром, например для поля указателя void, можно использовать `_Field_size_bytes_`. Если оба `_Struct_size_bytes_` и `_Field_size_` существуют, они будут доступны для средств. Если две аннотации не согласны, это будет сделано с помощью инструмента.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Основные сведения о языке SAL](../code-quality/understanding-sal.md)

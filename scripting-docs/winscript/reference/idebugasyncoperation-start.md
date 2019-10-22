@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start | Документация Майкрософт
+title: 'Идебугасинкоператион:: Start | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3e02869abab65878412f96b77d5782b9717a1b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 485eb34ebe200e7f7898d9338effed37cbf2aa10
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821932"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573244"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
-Вызывает асинхронную операцию, чтобы начать.  
+Вызывает запуск асинхронной операции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,21 +37,21 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Параметры  
  `padocb`  
- Интерфейс обратного вызова, который получает состояние события из этой операции.  
+ Интерфейс обратного вызова, который получает события состояния от этой операции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_UNEXPECTED`|Уже ожидается операция.|  
+|`E_UNEXPECTED`|Операция уже находится в состоянии ожидания.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывает `IDebugSyncOperation::Execute` вызываемого асинхронно в потоке, полученный из `IDebugSyncOperation::GetTargetThread`. Этот метод должен вызываться только из потока отладчика; в противном случае он не вернет до завершения операции.  
+## <a name="remarks"></a>Заметки  
+ Этот метод вызывает асинхронный вызов `IDebugSyncOperation::Execute` в потоке, полученном из `IDebugSyncOperation::GetTargetThread`. Этот метод должен вызываться только в потоке отладчика; в противном случае она не будет возвращаться до завершения операции.  
   
 ## <a name="see-also"></a>См. также  
- [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
- [Интерфейс IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
+ [Идебугасинкоператион:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
+ @No__t_1 [интерфейса идебугасинкоператион](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [Идебугсинкоператион:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

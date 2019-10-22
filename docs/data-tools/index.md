@@ -3,17 +3,17 @@ title: Разработка решений данных
 description: Узнайте о разнообразных средствах разработки решений для работы с данными в Visual Studio, в том числе средствах .NET, SQL Server Data Tools, Azure Data Lake, Azure HDInsight и Azure Streaming Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 38b0d25539b4fe02d81463e9bc4e481c3b45010e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715041"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648327"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Использование средств для работы с данными в Visual Studio для разработки решений по обработке данных
 
@@ -116,7 +116,7 @@ ms.locfileid: "66715041"
 
 ---
 
-<h2>Ссылка</h2>
+<h2>Справочник</h2>
 
 <ul class="panelContent cardsW">
     <li>

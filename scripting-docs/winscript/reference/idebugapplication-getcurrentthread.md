@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetCurrentThread | Документация Майкрософт
+title: 'IDebugApplication:: Жеткуррентсреад | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fc64250732ee36cf12c0fb0203ab22a20991975
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0f95ee5b45e974c1f0fb38ea25edb1175dbbd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990888"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574953"
 ---
 # <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
-Возвращает поток, связанный с текущим выполняемым потоком.  
+Возвращает поток, связанный с текущим выполняющимся потоком.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT GetCurrentThread(
   
 #### <a name="parameters"></a>Параметры  
  `pat`  
- [out] Поток, связанный с текущим выполняемым потоком.  
+ заполняет Поток, связанный с текущим выполняющимся потоком.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод возвращает поток, связанный с текущим выполняемым потоком.  
+## <a name="remarks"></a>Заметки  
+ Этот метод возвращает поток, связанный с текущим выполняющимся потоком.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

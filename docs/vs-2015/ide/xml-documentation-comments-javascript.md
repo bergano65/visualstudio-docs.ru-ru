@@ -11,42 +11,42 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], XML documentation comments
 ms.assetid: db0aa50d-f0a4-47ef-ac02-7b1cc015fc7e
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f15066dd8d7a5d83bfb196b6d1df163f17315db4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b5a94ddd9e170a709dca9107e6f1fcfff7cd0f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154905"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662593"
 ---
 # <a name="xml-documentation-comments-javascript"></a>Комментарии XML-документации (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В JavaScript можно создать документацию для кода, включив XML-теги в специальные поля комментариев в исходном коде. Эти XML-теги используются системой IntelliSense для предоставления сведений об объектах JavaScript.  
-  
- Расположение комментариев кода зависит от конкретного тега.  
-  
- Поддерживаются следующие теги:  
-  
-- [\<deprecated>](../ide/deprecated-javascript.md)  
-  
-- [\<field>](../ide/field-javascript.md)  
-  
-- [\<loc>](../ide/loc-javascript.md)  
-  
-- [\<param>](../ide/param-javascript.md)  
-  
-- [\<returns>](../ide/returns-javascript.md)  
-  
-- [\<signature>](../ide/signature-javascript.md)  
-  
-- [\<summary>](../ide/summary-javascript.md)  
-  
-- [\<value>](../ide/value-javascript.md)  
-  
-- [\<var>](../ide/var-javascript.md)  
-  
-## <a name="see-also"></a>См. также  
+В JavaScript можно создать документацию для кода, включив XML-теги в специальные поля комментариев в исходном коде. Эти XML-теги используются системой IntelliSense для предоставления сведений об объектах JavaScript.
+
+ Расположение комментариев кода зависит от конкретного тега.
+
+ Поддерживаются следующие теги:
+
+- [\<deprecated>](../ide/deprecated-javascript.md)
+
+- [\<field>](../ide/field-javascript.md)
+
+- [\<loc>](../ide/loc-javascript.md)
+
+- [\<param>](../ide/param-javascript.md)
+
+- [\<returns>](../ide/returns-javascript.md)
+
+- [\<signature>](../ide/signature-javascript.md)
+
+- [\<summary>](../ide/summary-javascript.md)
+
+- [\<value>](../ide/value-javascript.md)
+
+- [\<var>](../ide/var-javascript.md)
+
+## <a name="see-also"></a>См. также раздел
  [IntelliSense для JavaScript](../ide/javascript-intellisense.md)

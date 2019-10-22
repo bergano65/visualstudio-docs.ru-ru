@@ -1,20 +1,20 @@
 ---
-title: Конструктор рабочих процессов - конструкторы действий обработки ошибок
+title: Конструктор рабочих процессов — конструкторы действий по обработке ошибок
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 9679ca32-ad7f-4089-824e-fdb931e47a30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cccfe9af6fd5fbafeea12a53a12fedae6bc2789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13fe4546ec9e16af07b522af3a94ac72923766ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949710"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650503"
 ---
 # <a name="error-handling-activity-designers"></a>Конструкторы действий обработки ошибок
 
-Конструкторы операций обработки ошибок используются для управления обработкой ошибок в конструкторе рабочих процессов. Содержащиеся в этом разделе представлены рекомендации о том, как использовать действие в конструкторе рабочих процессов и конструкторы шаблона.
+Конструкторы действий обработки ошибок используются для управления обработкой ошибок в конструктор рабочих процессов. Разделы, содержащиеся в этом разделе, содержат рекомендации по использованию конструктор рабочих процессов действий и конструкторов шаблонов.

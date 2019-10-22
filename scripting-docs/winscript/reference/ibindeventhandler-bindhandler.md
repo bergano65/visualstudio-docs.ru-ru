@@ -1,5 +1,5 @@
 ---
-title: IBindEventHandler::BindHandler | Документация Майкрософт
+title: 'Ибиндевенсандлер:: Биндхандлер | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01372766eb434efe73f47b265c7984bab48ea164
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 160020832509c9fb2aa95c095148127228a92e17
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991375"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572568"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
-Связывает событие объекта.  
+Привязывает событие к объекту.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT BindHandler(
   
 #### <a name="parameters"></a>Параметры  
  `pstrEvent`  
- [in] Указывает события для обработки.  
+ окне Указывает обрабатываемое событие.  
   
  `pdisp`  
- [in] Указывает объект для обработки события.  
+ окне Указывает объект для обработчика события.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод привязывает событие для объекта.  
+## <a name="remarks"></a>Заметки  
+ Этот метод привязывает событие к объекту.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IBindEventHandler](../../winscript/reference/ibindeventhandler-interface.md)

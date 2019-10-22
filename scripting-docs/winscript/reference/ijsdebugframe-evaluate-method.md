@@ -1,5 +1,5 @@
 ---
-title: Метод IJsDebugFrame::Evaluate | Документация Майкрософт
+title: 'Метод метод ijsdebugframe:: Evaluate | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b328d6071ae9dc96b8e7f62bad6d4417aa1730f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6227b97c1fd5fae32db3e13ef72751726c36b043
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558194"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573496"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>Метод IJsDebugFrame::Evaluate
 Вычисление выражения в контексте этого кадра стека.  
@@ -37,21 +37,21 @@ HRESULT Evaluate(
   
 #### <a name="parameters"></a>Параметры  
  `pExpressionText`  
- [in] Выражение для вычисления.  
+ окне Вычисляемое выражение.  
   
  `ppDebugProperty`  
- [out] Объект, представляющий обозреватель свойств.  
+ заполняет Объект, представляющий обозреватель свойств.  
   
  `pError`  
- [out] Сообщение об ошибке, если произошла ошибка.  
+ заполняет Сообщение об ошибке при возникновении ошибки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-## <a name="remarks"></a>Примечания  
- Возвращает следующее: ЗНАЧЕНИЕ S_OK: Вычисление завершается успешно, * ppDebugProperty содержит результат вычисления. S_FALSE: Вычисление создает ошибку (или вычислительная операция не поддерживается), \*pError содержит сообщение об ошибке.  
+## <a name="remarks"></a>Заметки  
+ Возвращает следующее: S_OK: Оценка выполнена, * Ппдебугпроперти содержит результат оценки. S_FALSE: при вычислении возникает ошибка (или операция вычисления не поддерживается), \*pError содержит сообщение об ошибке.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** jscript9diag.h  
+ **Заголовок:** jscript9diag. h  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

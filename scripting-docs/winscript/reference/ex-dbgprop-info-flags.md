@@ -1,5 +1,5 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS | Microsoft Docs
+title: EX_DBGPROP_INFO_FLAGS | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086a2b7544a95a302219ddc62c15c5b31dd1d9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0094d49a7e528d312dc8206b02599651f192c6fb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955241"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575842"
 ---
-# <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
-Используется для указания `ExtendedDebugPropertyInfo` поля.  
+# <a name="ex_dbgprop_info_flags"></a>EX_DBGPROP_INFO_FLAGS
+Используется для указания `ExtendedDebugPropertyInfo` полей.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,9 +39,9 @@ enum {
 };  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
  EX_DBGPROP_INFO_ID  
- Инициализирует идентификатор свойства.  
+ Инициализирует идентификатор для свойства.  
   
  EX_DBGPROP_INFO_NTYPE  
  Инициализирует тип свойства.  
@@ -50,11 +50,11 @@ enum {
  Инициализирует значение свойства.  
   
  EX_DBGPROP_INFO_LOCKBYTES  
- Инициализирует `plb` поля.  
+ Инициализирует поле `plb`.  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- Инициализирует `pDebugExtProp` поле, содержащее `IDebugExtendedProperty` интерфейс.  
+ Инициализирует `pDebugExtProp` поле, содержащее интерфейс `IDebugExtendedProperty`.  
   
 ## <a name="see-also"></a>См. также  
- [Структура ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
+ @No__t_1 [структуры екстендеддебугпропертинфо](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
  [Интерфейс IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)

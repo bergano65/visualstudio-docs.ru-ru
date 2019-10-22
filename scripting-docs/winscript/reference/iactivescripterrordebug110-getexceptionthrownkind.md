@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Документация Майкрософт
+title: 'IActiveScriptErrorDebug110:: Жетексцептионсровнкинд | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a58add60560f22681f18225d844814e3547b671f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d50ef1dfa3492fdc43a5010b624dae296c692722
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436073"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575055"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Возвращает значение, показывающее вид созданного исключения.  
   
 > [!IMPORTANT]
-> [Интерфейс IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) реализуется в PDM версии 11.0 или более поздней. Обнаружено в activdbg100.h.  
+> [Интерфейс IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) РЕАЛИЗОВАН в PDM версии 11,0 и выше. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,12 +36,12 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Параметры  
  `pExceptionKind`  
- [out] Тип исключения (например, первичное или необработанное), представленный [перечисление SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) значение перечисления.  
+ заполняет Тип создаваемого исключения (например, «First-вероятность» или «необработанное»), представленного значением перечисления [перечисления SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

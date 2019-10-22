@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreateSimpleConnectionPoint | Документация Майкрософт
+title: 'Идебугхелпер:: Креатесимплеконнектионпоинт | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f909a63f0f7ba70fca3c5e30e32a2d64c0147e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06324b0d10eb6d0d69b6426276d5df7f382d2abe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979179"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562454"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
-Возвращает интерфейс событий, который создает оболочку для заданного `IDispatch` объекта.  
+Возвращает интерфейс события, который заключает в оболочку заданный объект `IDispatch`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,21 +38,21 @@ HRESULT CreateSimpleConnectionPoint(
   
 #### <a name="parameters"></a>Параметры  
  `pdisp`  
- [in] `IDispatch` Для переноса.  
+ окне Объект `IDispatch` для переноса.  
   
  `ppscp`  
- [out] Интерфейс событий, который заключает в оболочку `pdisp`.  
+ заполняет Интерфейс событий, который служит оболочкой для `pdisp`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- Возвращает интерфейс событий, который создает оболочку для заданного `IDispatch` (см. в разделе [интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+## <a name="remarks"></a>Заметки  
+ Возвращает интерфейс события, который упаковывает заданный `IDispatch` (см. [интерфейс исимплеконнектионпоинт](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
+ @No__t_1 [интерфейса идебугхелпер](../../winscript/reference/idebughelper-interface.md)  
  [Интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

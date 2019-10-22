@@ -1,21 +1,21 @@
 ---
-title: Практическое руководство. изменять XML-файлы
+title: Как изменять XML-файлы
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483412"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645923"
 ---
-# <a name="how-to-edit-xml-files"></a>Практическое руководство. Изменение XML-файлов
+# <a name="how-to-edit-xml-files"></a>Как изменить XML-файлы
 
 Редактор XML — это новый редактор для XML-файлов. Его можно использовать для отдельных XML-файлов или файлов, связанных с проектами Visual Studio. Редактор XML связан со следующими расширениями файлов: *config*, *DTD*, *XML*, *XSD*, *XDR*, *XSL*, *XSLT*и *. vssettings*. Редактор XML также связан с любым другим типом файлов, для которого не зарегистрирован специальный редактор и который содержит XML-содержимое или DTD.
 
@@ -56,7 +56,7 @@ ms.locfileid: "68483412"
 
 ::: moniker range="vs-2017"
 
-1. В меню **файл** выберите пункт **создать** > **проект**.
+1. В меню **Файл** выберите **Создать** > **Проект**.
 
    Откроется диалоговое окно **Новый проект** .
 
@@ -68,7 +68,7 @@ ms.locfileid: "68483412"
 
 ::: moniker range=">=vs-2019"
 
-1. В меню **файл** выберите пункт **создать** > **проект**.
+1. В меню **Файл** выберите **Создать** > **Проект**.
 
 2. В поле поиска шаблона введите **пустой проект** , выберите шаблон **пустой проект (.NET Framework)** , а затем нажмите кнопку **Далее**.
 
@@ -84,4 +84,4 @@ ms.locfileid: "68483412"
 
 - [Редактор XML](../xml-tools/xml-editor.md)
 - [Свойства XML-документа, окно "Свойства"](../xml-tools/xml-document-properties-properties-window.md)
-- [Практическое руководство. Создание XML-схемы из XML-документа](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Как создать XML-схему из XML-документа](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

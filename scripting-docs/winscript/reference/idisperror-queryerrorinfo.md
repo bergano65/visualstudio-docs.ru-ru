@@ -1,5 +1,5 @@
 ---
-title: IDispError::QueryErrorInfo | Документация Майкрософт
+title: 'Идисперрор:: Куерерроринфо | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 828497eac8bb2751baeca8b1fe19b5aeb5aae6a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ccfcb020faf25fbe1723a384ff08aefcf55b56d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446806"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573076"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
-Извлекает определенный тип сведений об ошибке.  
+Извлекает сведения об ошибке определенного типа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT QueryErrorInfo(
   
 #### <a name="parameters"></a>Параметры  
  `guidErrorType`  
- [in] Идентификатор GUID, указав тип ошибки.  
+ окне Идентификатор GUID, указывающий тип ошибки.  
   
  `ppde`  
- [out] Указывает объект IDispError.  
+ заполняет Указывает объект Идисперрор.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Примечания  
- `QueryErrorInfo` Метод извлекает определенный тип сведений об ошибке.  
+## <a name="remarks"></a>Заметки  
+ Метод `QueryErrorInfo` извлекает сведения об ошибке определенного типа.  
   
 > [!NOTE]
 > Этот метод не реализован.  

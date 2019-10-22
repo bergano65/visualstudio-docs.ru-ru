@@ -1,25 +1,25 @@
 ---
-title: Конструктор рабочих процессов - конструктор действия Compensate
+title: Конструктор действий компенсации конструктор рабочих процессов
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55ecd8e3402d927b11cc00d18d6d134a5b25681
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65203663214e6bc82a4a7b20af9caa25bfd98ee4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949842"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650657"
 ---
 # <a name="compensate-activity-designer"></a>Конструктор действия Compensate
 
-**Compensate** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Compensate> действия.
+Конструктор действий **компенсации** используется для создания и настройки <xref:System.Activities.Statements.Compensate> действия.
 
 ## <a name="the-compensate-activity"></a>Действие Compensate
 
@@ -29,15 +29,15 @@ ms.locfileid: "62949842"
 
 ### <a name="using-the-compensate-activity-designer"></a>Использование конструктора операций Compensate
 
-**Compensate** конструктора действий можно найти в **транзакции** категории **элементов**. Чтобы открыть **элементов**выберите **элементов** вкладка в левой части конструктора рабочих процессов. Можно также выбрать **элементов** из **представление** меню или нажмите клавишу **Ctrl**+**Alt** + **X**.
+Конструктор действия **компенсации** можно найти в категории " **транзакция** " **панели элементов**. Чтобы открыть **панель элементов**, выберите вкладку **область элементов** в левой части конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** +**ALT** +**X**.
 
-**Compensate** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Удаление конструктора действий создает <xref:System.Activities.Statements.Compensate> действие по умолчанию <xref:System.Activities.Activity.DisplayName%2A> для Compensate. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Compensate** конструктора действий или в **DisplayName** поле таблицы свойств.
+Конструктор действий **компенсации** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где бы находились действия, например внутри <xref:System.Activities.Statements.Sequence>. При удалении конструктора действий создается <xref:System.Activities.Statements.Compensate> действие с <xref:System.Activities.Activity.DisplayName%2A>ой компенсации по умолчанию. Значение <xref:System.Activities.Activity.DisplayName%2A> можно изменить в заголовке конструктора действий **компенсации** или в поле **DisplayName** сетки свойств.
 
 ### <a name="the-compensate-properties"></a>Свойства Compensate
 
-В следующей таблице показаны свойства <xref:System.Activities.Statements.CancellationScope> и описано их использование в конструкторе. <xref:System.Activities.Activity.DisplayName%2A> Свойство можно изменить в таблице свойств, а также на поверхности конструктора рабочих процессов. Изменить <xref:System.Activities.Statements.Compensate.Target%2A> свойства в сетке свойств.
+В следующей таблице показаны свойства <xref:System.Activities.Statements.CancellationScope> и описано их использование в конструкторе. Свойство <xref:System.Activities.Activity.DisplayName%2A> можно изменить в сетке свойств или на поверхности конструктор рабочих процессов. Измените свойство <xref:System.Activities.Statements.Compensate.Target%2A> в сетке свойств.
 
-|Имя свойства|Обязательно|Использование|
+|Имя свойства|Обязательное значение|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.Compensate>. Значение по умолчанию - Compensate.|
 |<xref:System.Activities.Statements.Compensate.Target%2A>|True|Указывает <xref:System.Activities.InArgument%601>, в котором содержится <xref:System.Activities.Statements.CompensationToken> для данного действия <xref:System.Activities.Statements.Compensate>.|

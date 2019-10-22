@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDeferredText | Документация Майкрософт
+title: 'IDebugDocumentHelper:: Адддеферредтекст | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aae73e44059b1f07fa4cb54f40cdcd12e564a8f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433941"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577042"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
-Уведомляет вспомогательный метод, что заданный текст доступен, но он не поддерживает символы.  
+Уведомляет вспомогательный объект о доступности заданного текста, но не предоставляет символы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,29 +38,29 @@ HRESULT AddDeferredText(
   
 #### <a name="parameters"></a>Параметры  
  `cChars`  
- [in] Число символов (Юникод) для добавления.  
+ окне Число символов (в Юникоде) для добавления.  
   
  `dwTextStartCookie`  
- [in] Определяемые узла файл cookie, представляющий начальное положение текста.  
+ окне Определяемый узлом файл cookie, представляющий начальную точку текста.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание|  
+|значения|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_FAIL`|Этот метод не выполнен.|  
+|`E_FAIL`|Сбой метода.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод позволяет узлу отложить Указание символов для добавления, пока они потребуются, предоставляя вспомогательное приложение для создания точных уведомления и сведения о размере. `dwTextStartCookie` Параметр является файл cookie, определенные средой размещения, представляющий начальное положение текста. Последующие вызовы `IDebugDocumentText::GetText` необходимо предоставить этот файл cookie. Например в узел, который представляет текст в DBCS, куки-файл может быть смещение в байтах.  
+## <a name="remarks"></a>Заметки  
+ Этот метод позволяет узлу отложить предоставление символов для добавления до тех пор, пока они не понадобятся, в то же время позволяя вспомогательному приложению формировать точные уведомления и сведения о размере. Параметр `dwTextStartCookie` — это файл cookie, определяемый узлом, который представляет начальную точку текста. Последующие вызовы `IDebugDocumentText::GetText` должны предоставить этот файл cookie. Например, в узле, представляющем текст в двухбайтовой кодировке (DBCS), файл cookie может быть смещением в байтах.  
   
- Предполагается, что один вызов `IDebugDocumentText::GetText` можно получить символы из нескольких вызовов `AddDeferredText`. Вспомогательные классы может также потребоваться тот же самый набор отложенные символов более одного раза.  
+ Предполагается, что один вызов `IDebugDocumentText::GetText` может получать символы из нескольких вызовов `AddDeferredText`. Вспомогательные классы также могут запрашивать один и тот же диапазон отложенных символов более одного раза.  
   
 > [!NOTE]
-> Вызовы `AddDeferredText` не должны смешиваться с вызовами `AddUnicodeText` или `AddDBCSText`. В этом случае `E_FAIL` возвращается.  
+> Вызовы `AddDeferredText` не должны смешиваться с вызовами `AddUnicodeText` или `AddDBCSText`. Если это происходит, возвращается `E_FAIL`.  
   
 ## <a name="see-also"></a>См. также  
- [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: аддуникодетекст](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
+ [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)
