@@ -16,15 +16,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 ms.assetid: d2774be2-60a4-4d6f-95f1-79d0d9e55b56
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432313"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670488"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Определение и настройка сочетаний клавиш в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "63432313"
 
 2. Разверните пункт **Среда** и выберите элемент **Клавиатура**.
 
-     ![Отображение сочетаний клавиш в диалоговом окне "Параметры"](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Отобразить сочетания клавиш на клавиатуре в диалоговом окне "Параметры"](../ide/media/optionskeyboard.png "|::ref1::|")
 
 3. В поле **Показать команды, содержащие** введите полное имя команды без пробелов или его часть.
 
@@ -70,7 +70,7 @@ ms.locfileid: "63432313"
 
 5. Если команда имеет сочетание клавиш, оно отображается в списке **Сочетание клавиш для выбранной команды**.
 
-     ![Просмотр сочетания клавиш для определенной команды](../ide/media/viewshortcut.png "ViewShortcut")
+     ![Просмотр сочетания клавиш для определенной команды](../ide/media/viewshortcut.png "|::ref2::|")
 
 ## <a name="bkmk_assign"></a> Настройка сочетания клавиш
 
@@ -78,7 +78,7 @@ ms.locfileid: "63432313"
 
 2. Разверните папку **Среда** и выберите элемент **Клавиатура**.
 
-     ![Отображение сочетаний клавиш в диалоговом окне "Параметры"](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Отобразить сочетания клавиш на клавиатуре в диалоговом окне "Параметры"](../ide/media/optionskeyboard.png "|::ref3::|")
 
 3. В поле **Показать команды, содержащие** введите полное имя команды без пробелов или его часть.
 
@@ -100,7 +100,7 @@ ms.locfileid: "63432313"
 
      Если сочетание клавиш уже назначено другой команде, оно отображается в поле **Сочетание клавиш в настоящий момент используется для**. В этом случае нажмите клавишу BACKSPACE, чтобы удалить сочетание клавиш, прежде чем пробовать другое сочетание.
 
-     ![Укажите другое сочетание клавиш для команды](../ide/media/reassignshortcut.png "ReassignShortcut")
+     ![Укажите другое сочетание клавиш для команды](../ide/media/reassignshortcut.png "|::ref4::|")
 
 7. Нажмите кнопку **Назначить**.
 
@@ -120,7 +120,7 @@ ms.locfileid: "63432313"
 
 4. Установите флажок **Клавиатура** и нажмите кнопку **Далее**.
 
-     ![Экспорт только настроенных сочетаний клавиш](../ide/media/exportshortcuts.png "ExportShortcuts")
+     ![Экспортировать только настроенные сочетания клавиш](../ide/media/exportshortcuts.png "|::ref5::|")
 
 5. В полях **Выберите имя для файла параметров** и **Сохранить файл параметров в этом каталоге** оставьте значения по умолчанию или укажите другие значения, а затем нажмите кнопку **Готово**.
 
@@ -142,7 +142,7 @@ ms.locfileid: "63432313"
 
 7. Установите флажок **Клавиатура** и нажмите кнопку **Готово**.
 
-     ![Импорт только настроенных сочетаний клавиш](../ide/media/importshortcuts.png "ImportShortcuts")
+     ![Импортировать только настроенные сочетания клавиш](../ide/media/importshortcuts.png "|::ref6::|")
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

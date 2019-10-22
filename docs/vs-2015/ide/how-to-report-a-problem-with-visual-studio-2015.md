@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186342"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651783"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Как сообщить о проблеме с Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "68186342"
 
 Щелкните значок "Отзыв пользователя" рядом с элементом **Быстрый запуск** в заголовке окна или щелкните **Справка > Отправить отзыв > Сообщить о проблеме**.
 
-![Пункт меню "Сообщить о проблеме"](../ide/media/report-a-problem-menu-item.png "Пункт меню \"Сообщить о проблеме\"")
+![Сообщение о проблеме с элементом меню](../ide/media/report-a-problem-menu-item.png "Сообщение о проблеме с элементом меню")
 
 ## <a name="describe-the-problem"></a>Опишите проблему
 
@@ -41,7 +41,7 @@ ms.locfileid: "68186342"
 
 3. В раскрывающемся списке выберите область проблемы. Если вы не уверены, выберите наиболее подходящий, по вашему мнению, вариант.
 
-   ![Диалоговое окно "Сообщить о проблеме"](../ide/media/report-a-problem-dialog.png "Диалоговое окно \"Сообщить о проблеме\"")
+   ![Сообщение о проблеме с диалоговым окном](../ide/media/report-a-problem-dialog.png "Сообщение о проблеме с диалоговым окном")
 
 ## <a name="provide-a-screenshot-optional"></a>Предоставьте снимок экрана (необязательно)
 

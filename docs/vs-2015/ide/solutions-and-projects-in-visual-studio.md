@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679880"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661194"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,17 +70,17 @@ ms.locfileid: "65679880"
 
  На следующей схеме показана связь между проектами и решениями, а также элементы, которые они логически содержат.
 
- ![Проекты и решения Visual Studio](../ide/media/vs2015-project-diagram.png "схема_проекта_vs2015")
+ ![Проекты и решения Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  Вы можете также создать пользовательские шаблоны проектов и элементов. Дополнительные сведения см. в статье [Creating Project and Item Templates](../ide/creating-project-and-item-templates.md) (Создание шаблонов проектов и элементов).
 
 ## <a name="creating-new-projects"></a>Создание новых проектов
- Самый простой способ создать новый проект — начать с существующего шаблона проекта, который состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров для создания приложения или веб-сайта определенного типа на конкретном языке программирования. Эти шаблоны отображаются в **диалоговом окне "Новый проект"**, если последовательно выбрать пункты **Файл | Создать | Проект** или **Файл | Создать | Веб-сайт** в главном меню. Дополнительные сведения см. в статьях [Создание решений и проектов](../ide/creating-solutions-and-projects.md) и [NIB Создание проектов из шаблонов](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Самый простой способ создать новый проект — начать с существующего шаблона проекта, который состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров для создания приложения или веб-сайта определенного типа на конкретном языке программирования. Эти шаблоны отображаются в **диалоговом окне "Новый проект"** , если последовательно выбрать пункты **Файл | Создать | Проект** или **Файл | Создать | Веб-сайт** в главном меню. Дополнительные сведения см. в статьях [Создание решений и проектов](../ide/creating-solutions-and-projects.md) и [NIB Создание проектов из шаблонов](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Управление проектами в обозревателе решений
  После создания нового проекта вы используете **обозреватель решений** для просмотра проектов и решений, их связанных элементов, а также для управления ими. На следующем рисунке показан обозреватель серверов с решением C#, включающим два проекта.
 
- ![Обозреватель решений](../ide/media/vs2015-solution-explorer.png "обозреватель_решений_vs2015")
+ ![Обозреватель решений](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>В этом разделе
 
@@ -102,5 +102,5 @@ ms.locfileid: "65679880"
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
