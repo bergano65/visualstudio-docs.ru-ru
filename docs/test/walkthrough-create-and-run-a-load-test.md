@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit tests, load test walkthrough
 - load tests, walkthrough
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a319181348f86ab8f16b2cc2b7e9a6e6f3a16c13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78bce7f8a05032fa8654021d89598ede67fa08c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976269"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659679"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Пошаговое руководство. Создание и запуск нагрузочного теста, содержащего модульные тесты
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Analyzer, graphs view legend
 - load tests, graphs view legend
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c29620cad3333144d65386e509339e2f5eccddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f91ba90a6a9de1c4084d4186adae6ab8388f23
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562680"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659831"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Использование легенды представления графов для анализа нагрузочного тестирования
 
@@ -42,7 +42,7 @@ ms.locfileid: "62562680"
     > [!NOTE]
     > Столбец "Последнее" отображается в легенде анализатора тестовой нагрузки только во время выполнения нагрузочного теста.
 
-     Дополнительные сведения см. в разделе [Как увеличить масштаб области графа](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. увеличить масштаб области графа](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 Выбор элемента легенды позволяет выполнять следующее:
 

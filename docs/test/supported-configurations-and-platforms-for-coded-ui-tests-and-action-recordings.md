@@ -4,17 +4,17 @@ ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: jillre
+ms.openlocfilehash: d619efa8e602b84f120821ce9ee718a9077809c3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926458"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659999"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
 
@@ -43,7 +43,7 @@ ms.locfileid: "68926458"
 
 ## <a name="platform-support"></a>Поддержка платформ
 
-| Platform | Уровень поддержки |
+| Платформа | Уровень поддержки |
 |-| - |
 | Приложения Windows Phone | Поддерживаются только приложения Магазина на базе WinRT-XAML. |
 | Приложения универсальной платформы Windows | Поддерживаются только приложения универсальной платформы Windows на XAML. |

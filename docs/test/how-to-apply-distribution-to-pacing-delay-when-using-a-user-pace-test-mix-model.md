@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979345"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664831"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Как выполнить Применение распределения для задержки шага при использовании модели тестовых наборов скорости пользователей
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Практическое руководство. Применение распределения для задержки шага при использовании модели тестовых наборов скорости пользователей
 
 После создания нагрузочного теста в области **Мастер тестовой нагрузки** можно изменять свойства сценариев в соответствии с целями и потребностями тестирования с помощью области "Редактор тестовой нагрузки".
 

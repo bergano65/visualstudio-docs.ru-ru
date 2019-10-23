@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970231"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661652"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для Devenv
 
@@ -62,7 +62,7 @@ Devenv позволяет устанавливать различные пара
 
 Перечисленные ниже параметры командной строки отображают интегрированную среду разработки и выполняют описанные задачи.
 
-|Параметр командной строки|Описание|
+|Параметр командной строки|ОПИСАНИЕ|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Запускает среду IDE и выполняет указанную команду.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Загружает исполняемый файл C++ под управлением отладчика. Этот параметр недоступен для исполняемых файлов Visual Basic или C#. Дополнительные сведения см. в разделе [Автоматический запуск процесса в отладчике](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
@@ -75,11 +75,11 @@ Devenv позволяет устанавливать различные пара
 |[/Run или /R](run-devenv-exe.md)|Компилирует и запускает указанное решение.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Компилирует и выполняет указанное решение, свертывая окно IDE при выполнении решения и закрывая IDE после завершения выполнения.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Запускает Visual Studio в безопасном режиме. Этот параметр загружает только среду и службы по умолчанию, а также прилагаемые версии сторонних пакетов.<br /><br /> У этого параметра нет аргументов.|
-|[/UseEnv](useenv-devenv-exe.md)|Инициирует использование в интегрированной среде разработки переменных среды PATH, INCLUDE, LIBPATH и LIB для компиляции на C++. Параметр устанавливается с рабочей нагрузкой **Разработка классических приложений на C++**. Дополнительные сведения см. в статье [Установка переменных пути и среды при построении из командной строки](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Инициирует использование в интегрированной среде разработки переменных среды PATH, INCLUDE, LIBPATH и LIB для компиляции на C++. Параметр устанавливается с рабочей нагрузкой **Разработка классических приложений на C++** . Дополнительные сведения см. в статье [Установка переменных пути и среды при построении из командной строки](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Следующие параметры командной строки не отображают интегрированную среду разработки.
 
-|Параметр командной строки|Описание|
+|Параметр командной строки|ОПИСАНИЕ|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|Отображает справку по параметрам `devenv` в **окне командной строки**.<br /><br /> У этого параметра нет аргументов.|
 |[/Build](build-devenv-exe.md)|Выполняет сборку указанного решения или проекта согласно конфигурации заданного решения.<br /><br /> `devenv mysln.sln /build`|

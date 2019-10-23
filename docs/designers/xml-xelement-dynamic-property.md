@@ -5,17 +5,17 @@ ms.topic: reference
 apiname:
 - XElement.Xml
 ms.assetid: 69ab2a33-4fe7-4cfa-97f8-eaf063decb18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d58dea02a45ccc84e7829da2acdb479eb17dda3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c93aaf3b43a930fe88020738460ec131972a205a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843957"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633522"
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (динамическое свойство XElement)
 
@@ -37,5 +37,5 @@ elem.Xml
 
 ## <a name="see-also"></a>См. также
 
-- [Динамические свойства класса XElement](../designers/xelement-class-dynamic-properties.md)
+- [Динамические свойства класса XElement](../designers/attribute-xelement-dynamic-property.md)
 - [Значение](../designers/value-xelement-dynamic-property.md)

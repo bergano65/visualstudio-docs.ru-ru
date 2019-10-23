@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550065"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654640"
 ---
 # <a name="find-code-using-go-to-commands"></a>Поиск в коде с использованием команд перехода
 
@@ -52,7 +52,7 @@ ms.locfileid: "62550065"
 
 Чтобы сузить область поиска до определенного типа элемента кода, можно указать префикс в поле поиска или выбрать один из пяти значков фильтра:
 
-Префикс | Значок | Сочетание клавиш | Описание
+Префикс | Значок | Сочетание клавиш | ОПИСАНИЕ
 :-: | - | - | -
 :| ![Значок строки](media/gotoall-line-icon.png) | **CTRL**+**G** | Переход к строке с указанным номером
 f| ![Значок файлов](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Переход к указанному файлу
@@ -65,7 +65,7 @@ m| ![Значок членов](media/gotoall-members-icon.png) | **CTRL**+**1**
 
 Чтобы сузить область поиска до определенного расположения, выберите один из двух значков документов:
 
-Значок | Описание
+Значок | ОПИСАНИЕ
 ---- | ---
 ![Текущий документ](media/gotoall_currentdocument.png) | Поиск только в текущем документе
 ![Внешние документы](media/gotoall_external.png) | Поиск во внешних документах наряду с документами, находящимися в проекте или решении
@@ -80,7 +80,7 @@ m| ![Значок членов](media/gotoall-members-icon.png) | **CTRL**+**1**
 
 Выберите значок шестеренки ![Значок шестеренки](media/gotoall_gear.png) , чтобы изменить режим работы этой функции:
 
-Параметр | Описание
+Параметр | ОПИСАНИЕ
 ------- | ---
 Использовать вкладку предварительного просмотра | Немедленное отображение выбранного элемента на вкладке предварительного просмотра в интегрированной среде разработки
 Показать сведения | Отображение в окне сведений о проекте, файле, строке и сводных данных из комментариев к документации

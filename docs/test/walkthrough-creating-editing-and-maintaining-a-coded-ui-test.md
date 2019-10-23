@@ -2,17 +2,17 @@
 title: Создание закодированного теста пользовательского интерфейса
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659649"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса
 
@@ -166,7 +166,7 @@ ms.locfileid: "62976336"
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Редактирование и повторный запуск закодированного теста пользовательского интерфейса
 
-1. В окне **обозревателя тестов** выберите завершившийся неудачей тест и в разделе **StackTrace** выберите первую ссылку на **UIMap.SimpleAppTest()**.
+1. В окне **обозревателя тестов** выберите завершившийся неудачей тест и в разделе **StackTrace** выберите первую ссылку на **UIMap.SimpleAppTest()** .
 
 2. Откроется файл *UIMap.Designer.cs*, где в коде будет выделено место ошибки.
 
@@ -249,7 +249,7 @@ ms.locfileid: "62976336"
 
      Тест не был пройден, поскольку закодированный тест пользовательского интерфейса не смог обнаружить кнопку, которая раньше была сопоставлена в UIMap как button1. Таким образом рефакторинг может влиять на закодированные тесты пользовательского интерфейса.
 
-5. В окне **обозревателя тестов** в разделе **StackTrace** щелкните первую ссылку рядом с **UIMpa.ModifiedSimpleAppTest()**.
+5. В окне **обозревателя тестов** в разделе **StackTrace** щелкните первую ссылку рядом с **UIMpa.ModifiedSimpleAppTest()** .
 
      Откроется файл *UIMap.cs*. В коде выделено место, где произошла ошибка.
 
