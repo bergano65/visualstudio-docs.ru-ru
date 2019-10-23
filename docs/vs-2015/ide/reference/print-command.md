@@ -58,4 +58,4 @@ Debug.Print text
 ```
 
 ## <a name="see-also"></a>См. также
- [Команда "вычислить инструкцию](../../ide/reference/evaluate-statement-command.md) " команды [Visual Studio команды команд](../../ide/reference/visual-studio-commands.md) [](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) [Visual Studio псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)
+ [Команда Evaluate инструкции ](../../ide/reference/evaluate-statement-command.md) [Visual команды Studio ](../../ide/reference/visual-studio-commands.md) [Command Window ](../../ide/reference/command-window.md) [Find/Command ](../../ide/find-command-box.md) [Visual псевдонимы команд Studio](../../ide/reference/visual-studio-command-aliases.md)

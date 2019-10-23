@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdae6abf3af71967357319addd755a31721053ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786108"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653422"
 ---
-# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Как выполнить включение и отключение записи сбоев тестов в журнал тестирования с помощью редактора тестовой нагрузки
+# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Практическое руководство. включение и отключение записи сбоев тестов в журнал тестирования с помощью редактора тестовой нагрузки
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства нагрузочного теста в соответствии с требованиями и целями тестирования. См. [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md). Вы можете указать, требуется ли сохранять журнал тестирования в случае сбоя теста в нагрузочном тесте, изменив значение свойства **Сохранить журнал об ошибках тестирования**.
 

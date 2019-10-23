@@ -3,17 +3,17 @@ title: Практическое руководство. Создание про�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662409f3655e23589a2416bb15572eb3df41bcb6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c2034c09098aeded57671186731729a5928be8e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924439"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636194"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Практическое руководство. Создание простейшего шейдера с моделью освещения Ламберта
 

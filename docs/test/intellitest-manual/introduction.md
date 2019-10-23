@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+author: jillre
+ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461491"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653175"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Обзор Microsoft IntelliTest
 
@@ -132,7 +132,7 @@ IntelliTest не обрабатывает многопоточные прогр�
 
 Предлагаемый обходной путь заключается в использовании тестового режима, при котором такие методы находятся в типах в динамической сборке. Однако даже если некоторые методы являются неинструментированными, IntelliTest попытается охватить как можно больше инструментированного кода.
 
-### <a name="platform"></a>Platform
+### <a name="platform"></a>Платформа
 
 IntelliTest поддерживается только на 32-разрядной платформе .NET Framework (x86).
 
