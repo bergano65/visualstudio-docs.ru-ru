@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969219"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666590"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>"Параметры", "Текстовый редактор", XML, "Прочее"
 
@@ -27,7 +27,7 @@ ms.locfileid: "62969219"
 
 **Кавычки атрибутов**
 
-При вводе XML-атрибутов редактор вставляет символы `="` и `"` и устанавливает знак вставки (**^**) в кавычках. Это флажок установлен по умолчанию.
+При вводе XML-атрибутов редактор вставляет символы `="` и `"` и устанавливает знак вставки ( **^** ) в кавычках. Это флажок установлен по умолчанию.
 
 **Объявления пространств имен**
 

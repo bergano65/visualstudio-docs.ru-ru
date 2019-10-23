@@ -15,19 +15,19 @@ helpviewer_keywords:
 - virtual functions, Properties window
 - Properties window
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e26bd9d874ba5526a858e32907bff6676b68c81e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4701f5ea882ab2fbb75f11bc3cc6d85fc92b4b8e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969037"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655698"
 ---
-# <a name="properties-window"></a>Окно \"Свойства\"
+# <a name="properties-window"></a>Окно "Свойства"
 
 В этом окне можно просматривать и изменять свойства времени разработки и события выбранных объектов, которые находятся в редакторах и конструкторах. Кроме того, в окне **Свойства** можно редактировать и просматривать свойства файлов, проектов и решений. Окно **Свойства** можно открыть из меню **Вид**. Кроме того, его можно открыть, нажав клавишу **F4** или введя слово **Свойства** в поле поиска.
 

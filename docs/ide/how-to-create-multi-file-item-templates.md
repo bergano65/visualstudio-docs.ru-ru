@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428994"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655942"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Как выполнить Создание многофайловых шаблонов элементов
+# <a name="how-to-create-multi-file-item-templates"></a>Практическое руководство. Создание многофайловых шаблонов элементов
 
 Шаблоны элемента могут указывать только один элемент, но иногда этот элемент состоит из нескольких файлов. Например, для шаблона элемента Windows Forms в Visual Basic требуется три следующих файла:
 
@@ -57,7 +57,7 @@ ms.locfileid: "62428994"
 
    Выбранные файлы будут сжаты в *ZIP*-файл.
 
-1. Скопируйте *ZIP*-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Как размещать и упорядочивать шаблоны](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Скопируйте *ZIP*-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Практическое руководство. размещать и упорядочивать шаблоны](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Закройте Visual Studio, а затем откройте среду повторно.
 

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 - Environment Options dialog box
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180282"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660051"
 ---
 # <a name="options-dialog-box-environment--general"></a>Диалоговое окно "Параметры": Страница "Общие" \> папка "Среда"
 
@@ -74,7 +74,7 @@ ms.locfileid: "70180282"
 
 Позволяет использовать аппаратное ускорение графики вместо программного, если оно доступно.
 
-## <a name="other"></a>Другое
+## <a name="other"></a>Другой
 
 **Элементы для отображения в меню "Окно"**
 

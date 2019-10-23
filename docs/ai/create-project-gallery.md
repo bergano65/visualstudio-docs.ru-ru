@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5694bfe49e88d0ea5911e72abba842e98f54e373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3967b637d547ed99ed840761b3b843068afee1af
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538072"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777491"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Создание проекта ИИ с помощью коллекции машинного обучения Azure в Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "62538072"
 
     ![Вход](media/create-project-gallery/azureml-login.png)
 
-3. Последовательно выберите **"Инструменты ИИ" > "Коллекция примеров машинного обучения Azure"**.
+3. Последовательно выберите **"Инструменты ИИ" > "Коллекция примеров машинного обучения Azure"** .
 
     ![Коллекция примеров](media/create-project-gallery/gallery.png)
 

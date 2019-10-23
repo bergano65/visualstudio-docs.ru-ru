@@ -2,20 +2,20 @@
 title: Замена временной переменной ее значением
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7c691efcc507212aa0649b6c4b4179fb8288f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b758407dc5500630157050c10f881a6515e1216
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423201"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661011"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Рефакторинг для замены временной переменной
 
@@ -46,7 +46,7 @@ ms.locfileid: "62423201"
 2. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
-      - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+      - Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните код правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
 

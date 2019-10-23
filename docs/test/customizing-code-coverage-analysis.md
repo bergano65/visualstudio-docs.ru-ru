@@ -2,17 +2,17 @@
 title: Настройка анализа покрытия кода
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342357"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665061"
 ---
 # <a name="customize-code-coverage-analysis"></a>Настройка анализа объема протестированного кода
 
@@ -110,7 +110,7 @@ ms.locfileid: "71342357"
 | ModulePath | Сопоставление со сборками, указанными по имени или пути к файлу. |
 | CompanyName | Сопоставление сборок по атрибуту **Company**. |
 | PublicKeyToken | Сопоставление подписанных сборок по токену открытого ключа. |
-| Исходный код | Сопоставление элементов по имени пути к файлу исходного кода, в котором они определены. |
+| Source | Сопоставление элементов по имени пути к файлу исходного кода, в котором они определены. |
 | Атрибут | Сопоставление элементов, у которых имеется указанный атрибут. Укажите полное имя атрибута, например `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Если исключить атрибут <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, код, использующий языковые функции, такие как `async`, `await`, `yield return`, и автоматические реализуемые свойства, исключается из анализа объема протестированного кода. Чтобы исключить созданный код, исключите только атрибут <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
 | Функция | Сопоставление процедур, функций или методов по полному имени, включая список параметров. Возможно также сопоставление с частью имени с помощью [регулярного выражения](#regular-expressions).<br/><br/>Примеры<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 

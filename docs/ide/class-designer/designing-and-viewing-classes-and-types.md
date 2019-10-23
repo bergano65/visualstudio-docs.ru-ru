@@ -11,17 +11,17 @@ helpviewer_keywords:
 - classes [Visual Studio], viewing
 - class designer
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4910471693a2941ec9548773a2f50e443a639b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31b28da2206d23c6112d7e7e154d7e907f63b163
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975566"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631900"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Разработка и просмотр классов и типов в конструкторе классов
 
@@ -50,7 +50,7 @@ ms.locfileid: "62975566"
 
 Кроме определения того, что именно показывает каждая диаграмма классов, также можно изменить способ представления данных. Дополнительные сведения см. в статье [Практическое руководство. Настройка диаграмм классов](how-to-customize-class-diagrams.md).
 
-После точной настройки одной или нескольких схем классов можно скопировать их в документы Microsoft Office и распечатать или экспортировать в виде графических файлов. Дополнительные сведения см. в разделе [Как Копирование элементов диаграммы классов в документ Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md) и [Практическое руководство. Экспорт диаграмм классов в виде изображений](how-to-export-class-diagrams-as-images.md).
+После точной настройки одной или нескольких схем классов можно скопировать их в документы Microsoft Office и распечатать или экспортировать в виде графических файлов. Дополнительные сведения см. в разделе [Практическое руководство. Копирование элементов диаграммы классов в документ Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md) и [Практическое руководство. Экспорт диаграмм классов в виде изображений](how-to-export-class-diagrams-as-images.md).
 
 > [!NOTE]
 > Конструктор классов не отслеживает расположение исходных файлов, поэтому, изменение структуры проекта или перемещение исходных файлов в проекте может привести к тому, что конструктор классов не будет отслеживать тип, особенно исходный тип для typedef, базовые классы или типы ассоциаций. Может возникнуть ошибка вида **Конструктору классов не удалось отобразить этот тип**. В этом случае перетащите измененный или перемещенный исходный код в схему классов и повторно отобразите ее.

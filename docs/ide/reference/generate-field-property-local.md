@@ -2,17 +2,17 @@
 title: Создание поля, свойства или локальной переменной
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8373339f921c032e52c00b5c8a54e910e5a1c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 626138341e398e67ff41ea116729dd349a1bb044
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790399"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660026"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Создание поля, свойства или локальной переменной в Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "62790399"
 2. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
-      - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+      - Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
       - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![лампочка с ошибкой](media/error-bulb.png) , который отображается.

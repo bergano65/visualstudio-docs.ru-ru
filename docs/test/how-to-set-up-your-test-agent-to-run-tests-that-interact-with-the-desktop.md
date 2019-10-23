@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55cf32d138d2644e2d2a7a08406eb575a2895400
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786004"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653431"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Как выполнить Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом
 
 Если требуется выполнить автоматические тесты, которые взаимодействуют с рабочим столом, настройте свой агент для запуска в виде процесса, а не службы. Например, если необходимо выполнить закодированный тест пользовательского интерфейса удаленно с помощью контроллера и агента тестирования или выполнить тест с перенаправлением видеозаписи в процессе его выполнения, следует настроить агент как процесс. Если агенты назначаются ролям в параметрах тестирования с помощью Visual Studio или в среде с помощью Microsoft Test Manager, нужно изменить настройку агентов, назначенных ролям, которые должны взаимодействовать с рабочим столом.
 

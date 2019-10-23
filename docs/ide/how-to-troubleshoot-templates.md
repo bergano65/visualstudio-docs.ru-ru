@@ -4,17 +4,17 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dbdb2854833f7c28866aa3d6ec0a685803adb3d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547597"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656554"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Как выполнить Устранение неполадок, связанных с шаблонами
+# <a name="how-to-troubleshoot-templates"></a>Практическое руководство. Устранение неполадок, связанных с шаблонами
 
 Если шаблон не загружается в среде разработки, локализовать проблему можно несколькими способами.
 

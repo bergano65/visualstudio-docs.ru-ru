@@ -11,21 +11,21 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7e7e76e025c2c426a83f00c1cf2af830eb1c26a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778688"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666230"
 ---
 # <a name="options-text-editor-c-intellisense"></a>"Параметры", "Текстовый редактор", C#, IntelliSense
 
-Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для C#. Для доступа к этой странице параметров выберите **Сервис** > **Параметры** и затем **Текстовый редактор** > **C#** > **IntelliSense**.
+Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для C#. Для доступа к этой странице параметров выберите **Сервис** > **Параметры** и затем **Текстовый редактор** > **C#**  > **IntelliSense**.
 
 Страница **IntelliSense** содержит следующие параметры:
 
@@ -53,7 +53,7 @@ ms.locfileid: "62778688"
 
 - Включать фрагменты кода, когда после идентификатора указывается "?-Tab"
 
-   Если этот параметр выбран, IntelliSense добавляет псевдонимы для фрагментов кода C# в список завершения при нажатии клавиш **?**+**TAB** после идентификатора.
+   Если этот параметр выбран, IntelliSense добавляет псевдонимы для фрагментов кода C# в список завершения при нажатии клавиш **?** +**TAB** после идентификатора.
 
 ## <a name="enter-key-behavior"></a>Поведение при нажатии клавиши ВВОД
 

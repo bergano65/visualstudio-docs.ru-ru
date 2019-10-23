@@ -1,5 +1,5 @@
 ---
-title: выбор фрагмента кода
+title: Выбор фрагмента кода
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84a93ed9cac1c3f352b3e658f28da4b492612338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953209"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654617"
 ---
-# <a name="code-snippet-picker"></a>выбор фрагмента кода
+# <a name="code-snippet-picker"></a>Выбор фрагмента кода
 
 В редакторе кода Visual Studio имеется **средство выбора фрагментов кода**, которое позволяет несколькими щелчками мыши вставлять готовые блоки кода в активный документ.
 

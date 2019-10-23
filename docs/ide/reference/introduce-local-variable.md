@@ -3,17 +3,17 @@ title: Введение локальной переменной
 description: Позволяет создать локальную переменную для замены существующего выражения. Выберите выражение, щелкните правой кнопкой мыши и выберите меню "Быстрые действия и рефакторинг". Выберите "Введите локальное значение для (всех вхождений) выражения".
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483686"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668752"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Введение локальной переменной в Visual Studio
 

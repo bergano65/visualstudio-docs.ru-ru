@@ -2,19 +2,19 @@
 title: Режим полосы и режим карты для полосы прокрутки
 ms.date: 09/25/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 997f44fede7b31fe44b1e2ea28186ad52d39f443
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548361"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656580"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Как выполнить Настройка полосы прокрутки
+# <a name="how-to-customize-the-scroll-bar"></a>Практическое руководство. Настройка полосы прокрутки
 
 Когда вы работаете с длинными файлами кода, может быть трудно запомнить расположение элементов в файле. Вы можете настроить полосу прокрутки в редакторе кода, чтобы лучше понимать, что происходит в коде.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381363"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747369"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в *TARGETS*-файлы, предоставляемые MSBuild.
@@ -89,7 +89,7 @@ ms.locfileid: "72381363"
 | PathMap | Определяет способ сопоставления физических путей и выходных имен исходных путей компилятором. Это свойство эквивалентно переключателю `/pathmap` компилятора *csc.exe*. |
 | PdbFile | Имя выдаваемого *PDB*-файла. Это свойство эквивалентно переключателю `/pdb` компилятора *csc.exe*. |
 | Платформа | Операционная система, для которой выполняется сборка. Допустимые значения: "Любой ЦП", "x86" и "x64". |
-| ProduceReferenceAssembly | Логическое значение, которое при задании `true` включает создание [ссылочных сборок](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) для текущей сборки. При использовании этой функции `Deterministic` должно иметь значение `true`. Это свойство соответствует переключателю `/refout` компиляторов *vbc.exe* и *csc.exe*. |
+| ProduceReferenceAssembly | Логическое значение, которое при задании `true` включает создание [ссылочных сборок](/dotnet/standard/assembly/reference-assemblies) для текущей сборки. При использовании этой функции `Deterministic` должно иметь значение `true`. Это свойство соответствует переключателю `/refout` компиляторов *vbc.exe* и *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Логическое значение, которое указывает компилятору производить только базовую сборку, а не скомпилированный код. Этот механизм не может использоваться вместе с `ProduceReferenceAssembly`.  Это свойство соответствует переключателю `/refonly` компиляторов *vbc.exe* и *csc.exe*. |
 | RemoveIntegerChecks | Логическое значение, указывающее, включены ли проверки ошибок переполнения для целых чисел. Значение по умолчанию — `false`. Это свойство эквивалентно переключателю `/removeintchecks` компилятора *vbc.exe*. |
 | SGenUseProxyTypes | Логическое значение, указывающее, следует ли создавать прокси-типы с помощью *SGen.exe*. Это применяется, только если *GenerateSerializationAssemblies* включено, и только для платформы .NET Framework.<br /><br /> Цель SGen использует это свойство для установки флага UseProxyTypes. По умолчанию это свойство имеет значение true, и пользовательского интерфейса для изменения этого значения не существует. Чтобы создать сборку сериализации для типов, не относящихся к веб-службам, добавьте это свойство в файл проекта и присвойте ему значение false, прежде чем импортировать *Microsoft.Common.Targets* или *C#/VB.targets*. |

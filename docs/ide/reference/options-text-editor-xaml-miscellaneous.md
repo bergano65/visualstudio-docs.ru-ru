@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969245"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666623"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>"Параметры", "Текстовый редактор", XAML, "Прочее"
 
@@ -47,7 +47,7 @@ ms.locfileid: "62969245"
 |-|-|
 |**Закрывающие теги**|Определяет автоматическое создание закрывающего тега элемента при закрытии открывающего тега символом "больше, чем" (>).|
 |**Кавычки атрибутов**|Указывает, создаются ли закрывающие кавычек при выборе значения атрибута из раскрывающегося списка завершения операторов.|
-|**Закрывающие фигурные скобки для расширений MarkupExtension**|Указывает, создается ли закрывающая фигурная скобка (**}**) расширения разметки автоматически при вводе открывающей фигурной скобки (**{**).|
+|**Закрывающие фигурные скобки для расширений MarkupExtension**|Указывает, создается ли закрывающая фигурная скобка ( **}** ) расширения разметки автоматически при вводе открывающей фигурной скобки ( **{** ).|
 |**Запятые для разделения параметров MarkupExtension**|Указывает, создаются ли запятые при вводе нескольких параметров в расширении разметки.|
 
 ## <a name="errors-and-warnings"></a>Ошибки и предупреждения

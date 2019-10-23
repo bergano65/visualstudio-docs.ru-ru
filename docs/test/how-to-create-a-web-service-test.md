@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950141"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653598"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Как выполнить Практическое руководство. Создание теста веб-службы
+# <a name="how-to-create-a-web-service-test"></a>Практическое руководство. Практическое руководство. Создание теста веб-службы
 
 Для проверки веб-служб можно использовать веб-тесты производительности. С помощью параметров **Вставить запрос** и **Вставить запрос веб-службы** можно настроить отдельные запросы в **редакторе веб-тестов производительности**, чтобы найти страницы веб-службы. Обычно эти страницы не отображаются в веб-приложениях. Поэтому для получения доступа к этим страницам нужно настроить запрос.
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 2. В **редакторе веб-тестов производительности** щелкните правой кнопкой мыши веб-тест производительности и выберите **Добавить запрос веб-службы**.
 
-3. В свойстве **URL-адрес** нового запроса введите имя веб-службы, например **http://localhost/storecsvs/InstantOrder.asmx**.
+3. В свойстве **URL-адрес** нового запроса введите имя веб-службы, например **http://localhost/storecsvs/InstantOrder.asmx** .
 
 4. Откройте отдельный сеанс браузера и введите URL-адрес страницы *.asmx* в панели инструментов **Адрес**. Выберите метод, который нужно протестировать, и прочтите сообщение SOAP. Оно содержит `SOAPAction`.
 

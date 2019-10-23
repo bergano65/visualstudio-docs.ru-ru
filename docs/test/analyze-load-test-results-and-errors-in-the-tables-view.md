@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5ab2fe1f01aceb7b86d52f26d904a99f762f4329
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926484"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665388"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Анализ результатов и ошибок нагрузочного теста в представлении таблиц анализатора тестовой нагрузки
 
@@ -148,7 +148,7 @@ ms.locfileid: "68926484"
 |-|-|-|
 |Тип|Тип ошибки. Например, HttpError.|Yes|
 |Подтип|Подтип ошибки. Например, LoadTestException.|Yes|
-|Количество|Число ошибок данного типа, возникших во время нагрузочного теста. Записи в этом столбце представлены в виде гиперссылок. Для просмотра списка отдельных ошибок нужно выбрать гиперссылку.|Yes|
+|Count|Число ошибок данного типа, возникших во время нагрузочного теста. Записи в этом столбце представлены в виде гиперссылок. Для просмотра списка отдельных ошибок нужно выбрать гиперссылку.|Yes|
 |Последнее сообщение|Сообщение, описывающее ошибку. Например, 404 - NotFound.|Yes|
 
 Дополнительные сведения см. в разделе [Работа с таблицами нагрузочных тестов](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).

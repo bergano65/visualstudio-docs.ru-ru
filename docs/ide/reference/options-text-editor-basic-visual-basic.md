@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a07645597846bd85f3152da866a253b079bc3963
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817792"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666342"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>"Параметры", "Текстовый редактор", Basic (Visual Basic), "Дополнительно"
 Страница свойств **Только для VB** в папке **Basic** внутри папки **Текстовый редактор** диалогового окна **Параметры** (меню **Сервис**) содержит следующие свойства:
