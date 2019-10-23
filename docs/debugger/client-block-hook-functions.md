@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900e8db238ee26e0a7015c2acc1741a1917c8cb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b7b0ef177922f09239c8925ced1ca013e966c0e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564077"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745719"
 ---
 # <a name="client-block-hook-functions"></a>Функции-ловушки клиентского блока
 Если нужно проверить или вывести данные, хранящиеся в блоках типа `_CLIENT_BLOCK`, можно написать для этого специальную функцию. Эта функция должна иметь прототип наподобие следующего, определенного в CRTDBG.H:
@@ -49,5 +49,5 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
 ## <a name="see-also"></a>См. также
 
 - [Написание функций отладочных ловушек](../debugger/debug-hook-function-writing.md)
-- [Образец crt_dbg2](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
+- [Пример crt_dbg2](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

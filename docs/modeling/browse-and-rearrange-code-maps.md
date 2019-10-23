@@ -22,12 +22,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 443d272216eaf88bcbd4dcb75c034779403f1ef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4a52250806d4ff3ee51f61117831f51cc4a9d7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666616"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747679"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Просмотр и реорганизация карт кода
 
@@ -326,7 +326,7 @@ ms.locfileid: "72666616"
 
 Кроме того, можно перетащить сборки или двоичные файлы из этой папки на одну и ту же карту.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)

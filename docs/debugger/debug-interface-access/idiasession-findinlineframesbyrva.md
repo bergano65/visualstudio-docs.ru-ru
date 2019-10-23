@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByRVA | Документация Майкрософт
+title: 'IDiaSession:: Финдинлинефрамесбирва | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98b441e52d3d24a5ccd738fe1ac65b268a30a2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 329bf9f4fa94171347eeea8fc9f2744b7ce4269f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839320"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742157"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров на указанный относительный виртуальный адрес (RVA).
+Извлекает перечисление, позволяющее клиенту выполнять итерацию всех встроенных кадров на указанном относительном виртуальном адресе (RVA).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,18 +32,18 @@ HRESULT findInlineFramesByRVA ( 
 #### <a name="parameters"></a>Параметры
  `parent`
 
-[in] `IDiaSymbol` Объект, представляющий родительский объект.
+окне Объект `IDiaSymbol`, представляющий родительский элемент.
 
  `rva`
 
-[in] Указывает адрес как RVA.
+окне Указывает адрес в виде RVA.
 
  `ppResult`
 
-[out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.
+заполняет Содержит объект `IDiaEnumSymbols`, содержащий список извлекаемых кадров.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

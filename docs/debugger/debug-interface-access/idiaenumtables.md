@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20bd652437f0c1765686afc1d93a81bc9110236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d505219468f802a3eff9df0ad766fd1a353d5166
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829130"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743705"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
-Перечисляет различных таблицах, содержащихся в источнике данных.
+Перечисляет различные таблицы, содержащиеся в источнике данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,21 +33,21 @@ IDiaEnumTables : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) версии этот перечислитель.|
-|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Возвращает число таблиц.|
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Возвращает таблицу с помощью индекса или имени.|
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Извлекает версию [интерфейса IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) этого перечислителя.|
+|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Извлекает количество таблиц.|
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Извлекает таблицу с помощью индекса или имени.|
 |[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Извлекает указанное число таблиц в последовательности перечисления.|
 |[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Пропускает указанное число таблиц в последовательности перечисления.|
-|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Сбрасывает последовательность перечислений в начало.|
-|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Сбрасывает последовательность перечисления до начала.|
+|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
-Получить этот интерфейс, вызвав [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Получите этот интерфейс, вызвав метод [IDiaSession:: жетенумтаблес](../../debugger/debug-interface-access/idiasession-getenumtables.md) .
 
 ## <a name="example"></a>Пример
-В этом примере показано, как получить `IDiaEnumTables` интерфейс из сеанса. Более полный пример использования таблиц, см. в разделе [IDiaTable](../../debugger/debug-interface-access/idiatable.md) интерфейс.
+В этом примере показано, как получить интерфейс `IDiaEnumTables` из сеанса. Более полный пример использования таблиц см. в разделе интерфейс [идиатабле](../../debugger/debug-interface-access/idiatable.md) .
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -62,9 +62,9 @@ void ShowTableNames(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: dia2.h
+Заголовок: Dia2. h
 
-Библиотека: diaguids.lib
+Библиотека: диагуидс. lib
 
 DLL: msdia80.dll
 

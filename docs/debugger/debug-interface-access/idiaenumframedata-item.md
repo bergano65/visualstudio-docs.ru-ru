@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Item | Документация Майкрософт
+title: 'Идиаенумфрамедата:: Item | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d083cea518032c121a5cb9e9213abbbd7eaaf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c15f395e7f4aa576c5f69b0f1c61f37ca808fb6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829863"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744615"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
-Извлекает элемент кадра данных с помощью индекса.
+Извлекает элемент данных кадра с помощью индекса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Параметры
  индекс
 
-[in] Индекс [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) метод.
+окне Индекс объекта [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) для извлечения. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается методом [идиаенумфрамедата:: get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) .
 
  section
 
-[out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) объект, представляющий элемент данных нужной рамки.
+заполняет Возвращает объект [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий нужный элемент данных кадра.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

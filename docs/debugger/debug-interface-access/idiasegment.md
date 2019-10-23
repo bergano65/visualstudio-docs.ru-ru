@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 855b40f3d35d884a366e8fdc36ed1ec4f2bef85a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839437"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742336"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-Сопоставляет данные из номер раздела в сегменты адресного пространства.
+Сопоставляет данные из номера раздела с сегментами адресного пространства.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,24 +33,24 @@ IDiaSegment : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Получает номер сегмента.|
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Получает смещение в сегменты, где начинается разделе.|
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Извлекает номер сегмента.|
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Возвращает смещение в сегментах, где начинается раздел.|
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Возвращает число байтов в сегменте.|
-|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Получает флаг, указывающий, может ли быть прочитан сегмента.|
-|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Получает флаг, указывающий, могут ли быть изменены сегмента.|
-|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Получает флаг, указывающий, является ли сегмент исполняемого файла.|
-|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Извлекает номер раздела, которая сопоставляется с этим сегментом.|
-|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Возвращает относительный виртуальный адрес (RVA) в начале раздела.|
-|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Получает виртуальный адрес (VA) начало раздела.|
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Получает флаг, указывающий, можно ли считать сегмент.|
+|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Получает флаг, указывающий, можно ли изменить сегмент.|
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Получает флаг, указывающий, является ли сегмент исполняемым.|
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Извлекает номер раздела, который сопоставляется с этим сегментом.|
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Извлекает относительный виртуальный адрес (RVA) начала раздела.|
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Получает виртуальный адрес (ва) начала раздела.|
 
-## <a name="remarks"></a>Примечания
-Так как пакет SDK для доступа к интерфейсу отладки уже выполняет переводы с смещение раздела относительными виртуальными адресами, большинство приложений не будет использовать сведения в сопоставлении сегментов.
+## <a name="remarks"></a>Заметки
+Так как пакет SDK для DIA уже выполняет переводы из смещения раздела в относительные виртуальные адреса, большинство приложений не будет использовать информацию на карте сегментов.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
-Получить этот интерфейс, вызвав [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) или [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) методы. Дополнительные сведения см.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Получите этот интерфейс, вызвав методы [идиаенумсегментс:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) или [Идиаенумсегментс:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) . Дополнительные сведения см. в примере.
 
 ## <a name="example"></a>Пример
-Эта функция отображает адрес всех сегментов в таблице и ближайшего символа.
+Эта функция отображает адрес всех сегментов в таблице и ближайший символ.
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -94,9 +94,9 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: dia2.h
+Заголовок: Dia2. h
 
-Библиотека: diaguids.lib
+Библиотека: диагуидс. lib
 
 DLL: msdia80.dll
 

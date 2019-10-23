@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findFile | Документация Майкрософт
+title: 'IDiaSession:: Финдфиле | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 729b3c323ce2128b18af516ecbffb7b5157f0274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9751127007b4e7823cf6d2ae35ed2fe80cb83b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839372"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742284"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Извлекает исходные файлы, компилируемого объекта и имя.
+Извлекает исходные файлы по компилируемого объекта и имени.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,22 +36,22 @@ HRESULT findFile ( 
 #### <a name="parameters"></a>Параметры
  `pCompiland`
 
-[in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий единице компиляции для использования в качестве контекста для поиска. Присвойте этому параметру значение `NULL` поиска исходных файлов во всех компилируемых объектах.
+окне Объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий компилируемого объекта, который будет использоваться в качестве контекста для поиска. Присвойте этому параметру значение `NULL`, чтобы найти исходные файлы во всех компиляндов.
 
  `name`
 
-[in] Задает имя исходного файла, который требуется получить. Присвойте этому параметру значение `NULL` для всех исходных файлов требуется получить.
+окне Указывает имя исходного файла, который необходимо получить. Задайте для этого параметра значение `NULL` для всех извлекаемых исходных файлов.
 
  `option`
 
-[in] Задает параметры сравнения, который применяется для поиска имени. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.
+окне Задает параметры сравнения, применяемые к поиску имен. Значения из перечисления [перечисления намесеарчоптионс](../../debugger/debug-interface-access/namesearchoptions.md) можно использовать отдельно или в сочетании.
 
  `ppResult`
 
-[out] Возвращает [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) извлечь объект, содержащий список исходных файлов.
+заполняет Возвращает объект [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) , содержащий список извлекаемых исходных файлов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
 

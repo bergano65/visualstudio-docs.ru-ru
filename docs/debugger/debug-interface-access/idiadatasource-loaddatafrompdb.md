@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::loadDataFromPdb | Документация Майкрософт
+title: 'Идиадатасаурце:: Лоаддатафромпдб | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7526ba6e62c9df22a2338adc80f5d56578502cdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554148"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744937"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
-Открывает и подготавливает PDB-файл программы, как источник данных отладки.
+Открывает и готовит файл базы данных программы (PDB) в качестве источника данных отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,26 +33,26 @@ HRESULT loadDataFromPdb (
 #### <a name="parameters"></a>Параметры
 pdbPath
 
-[in] Путь к PDB-файл.
+окне Путь к PDB-файлу.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.
+В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.
 
-|Значение|Описание|
+|значения|Описание|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|Не удалось открыть файл, или определить, что файл имеет недопустимый формат.|
-|E_PDB_FORMAT|Предпринята попытка получить доступ к файлу с устаревший формат.|
+|E_PDB_NOT_FOUND|Не удалось открыть файл или определить, что файл имеет недопустимый формат.|
+|E_PDB_FORMAT|Попытка доступа к файлу с устаревшим форматом.|
 |E_INVALIDARG|Недопустимый параметр.|
 |E_UNEXPECTED|Источник данных уже подготовлен.|
 
-## <a name="remarks"></a>Примечания
-Этот метод загружает данные отладки непосредственно из PDB-файл.
+## <a name="remarks"></a>Заметки
+Этот метод загружает отладочные данные непосредственно из PDB-файла.
 
-Чтобы проверить PDB-файла с определенным критериям, используйте [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) метод.
+Чтобы проверить PDB-файл на соответствие конкретным критериям, используйте метод [идиадатасаурце:: лоадандвалидатедатафромпдб](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .
 
-Чтобы получить доступ к процесс загрузки данных (через механизм обратного вызова), используйте [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод.
+Чтобы получить доступ к процессу загрузки данных (посредством механизма обратного вызова), используйте метод [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-Чтобы загрузить PDB-файл непосредственно из памяти, используйте [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) метод.
+Чтобы загрузить PDB-файл непосредственно из памяти, используйте метод [идиадатасаурце:: лоаддатафромистреам](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .
 
 ## <a name="example"></a>Пример
 

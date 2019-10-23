@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_systemExceptionHandling | Документация Майкрософт
+title: 'IDiaStackFrame:: get_systemExceptionHandling | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 519602b09ea1adcf00ed534ecb22b4a082018464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2d0be30e7aa07326bd2a1b955cac3d6be78f6aa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838045"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741580"
 ---
-# <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
-Получает флаг, который указывает, является ли система обработки исключений в силе.
+# <a name="idiastackframeget_systemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
+Получает флаг, указывающий, действует ли обработка системных исключений.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,15 +33,15 @@ HRESULT get_systemExceptionHandling ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если обработка исключений системы действует для этого фрейма; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если для этого фрейма действует обработка системных исключений. в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Система обработки исключений, также называется структурированной обработки исключений. Это не то же самое обработки исключений C++.
+## <a name="remarks"></a>Заметки
+ Обработка системных исключений также называется структурной обработкой исключений. Это не то же самое, что C++ и обработка исключений.
 
- Чтобы определить, если C++ обработка исключений является по сути, вызов [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) метод.
+ Чтобы определить, C++ действует ли обработка исключений, вызовите метод [IDiaStackFrame:: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) .
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

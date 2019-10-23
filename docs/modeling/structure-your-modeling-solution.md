@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bc88e4d5d292d38874f23c9d37b3e553433de01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660058"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748217"
 ---
 # <a name="structure-your-modeling-solution"></a>Разработка структуры решения моделирования
 
@@ -106,7 +106,7 @@ ms.locfileid: "72660058"
 
 [Организация моделей и управление ими](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)
 - [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)

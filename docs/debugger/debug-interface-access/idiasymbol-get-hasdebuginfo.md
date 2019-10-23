@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasDebugInfo | Документация Майкрософт
+title: 'IDiaSymbol:: get_hasDebugInfo | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7369437c684b63b1caf3f55d3cc4d852d6eac0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 42ec4efef230a2a12827b92d76eaec5e8e346acd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64801382"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740555"
 ---
-# <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
-Получает флаг, указывающий Если [единице компиляции](../../debugger/debug-interface-access/compiland.md) содержит отладочную информацию.
+# <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
+Получает флаг, указывающий, содержит ли [компилируемого объекта](../../debugger/debug-interface-access/compiland.md) отладочную информацию.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_hasDebugInfo(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если единице компиляции содержит сведения об отладке; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если компилируемого объекта содержит отладочную информацию; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_hasDebugInfo(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

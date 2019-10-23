@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::symbolByRVA | Документация Майкрософт
+title: 'Идиаенумсимболсбяддр:: Симболбирва | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d7b0cb8564743ab35cac20cdcb352cdbca48d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4c34ce4105da6d50dc2bc9a0554f9539c1b2177
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830276"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743831"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-Помещает перечислитель, выполняя поиск по относительный виртуальный адрес (RVA).
+Размещает перечислитель, выполняя поиск по относительному виртуальному адресу (RVA).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,16 +32,16 @@ HRESULT symbolByRVA ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- relativeVirtualAddress
+ релативевиртуаладдресс
 
-[in] Адрес относительно начала изображения.
+окне Адрес относительно начала образа.
 
- ppsymbol
+ ппсимбол
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий найден символ.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий найденный символ.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символ не найден. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если символ не найден. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

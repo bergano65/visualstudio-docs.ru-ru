@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_indirectVirtualBaseClass | Документация Майкрософт
+title: 'IDiaSymbol:: get_indirectVirtualBaseClass | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a442585f9b93c08250039a088ed36a9a2bda41c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 32aa963aecc2e44ea2eb808ab5932df8a72fb33f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786550"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740401"
 ---
-# <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
-Получает флаг, указывающий, является ли тип пользовательских данных косвенного виртуального базового класса.
+# <a name="idiasymbolget_indirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
+Получает флаг, указывающий, является ли определяемый пользователем тип данных косвенным виртуальным базовым классом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_indirectVirtualBaseClass ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если определяемый пользователем тип — косвенного виртуального базового класса; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если определяемый пользователем тип данных является косвенным виртуальным базовым классом; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_indirectVirtualBaseClass ( 
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

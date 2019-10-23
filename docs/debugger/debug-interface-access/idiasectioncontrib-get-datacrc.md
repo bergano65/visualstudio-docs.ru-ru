@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c652460e401396a8f7316b5ef300b3c2915f2e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8287202efaf1f60743969007b432829940441a22
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828245"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742688"
 ---
-# <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
+# <a name="idiasectioncontribget_datacrc"></a>IDiaSectionContrib::get_dataCrc
 Извлекает циклическую проверку избыточности (CRC) данных в разделе.
 
 ## <a name="syntax"></a>Синтаксис
@@ -33,10 +33,10 @@ HRESULT get_dataCrc ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает контрольную СУММУ данных в разделе.
+заполняет Возвращает контрольную сумму для данных в разделе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

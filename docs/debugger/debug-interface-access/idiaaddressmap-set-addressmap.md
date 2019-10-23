@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::set_addressMap | Документация Майкрософт
+title: 'IDiaAddressMap:: set_addressMap | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 963ee64b639780bae60a4c2655db8b666d87c702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8414788af44d78943088b78b2d3e42a5a8d8c50b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554252"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745028"
 ---
-# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
-Предоставляет адрес сопоставляются поддерживают переводы макет изображения.
+# <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
+Предоставляет карту адресов для поддержки перевода макета изображения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,21 +35,21 @@ HRESULT set_addressMap ( 
 #### <a name="parameters"></a>Параметры
  `cbData`
 
-[in] Число элементов в `data` параметра.
+окне Число элементов в параметре `data`.
 
  `data[]`
 
-[in] Массив [структура DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md) структуры, которые определяют схему преобразования.
+окне Массив структур [структуры диааддрессмапентри](../../debugger/debug-interface-access/diaaddressmapentry.md) , определяющий карту трансляции.
 
  `imagetoSymbols`
 
-[in] `TRUE` Если `data` параметр определяет сопоставление из новый макет изображения исходного макета (как определено отладочные символы). `FALSE` Если `data` — это сопоставление новый макет изображения, берутся из исходного макета.
+[in] `TRUE`, если параметр `data` определяет карту из нового макета изображения в исходный макет (как описано в отладочных символах). `FALSE`, если `data` является картой для нового макета изображения, полученного из исходного макета.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Как правило доступа к интерфейсу отладки извлекает перевода карты из PDB-файла программы. Если эти значения отсутствуют, [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) метод вызывается дважды, один раз с `imagetoSymbols` параметру присвоить `TRUE` и один раз с `imagetoSymbols` параметру присвоить `FALSE`. Преобразования адресов карты нельзя включить, используя [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) метод, если не предоставляются обоих сопоставлениях перевода.
+## <a name="remarks"></a>Заметки
+ Обычно DIA извлекает карты преобразования адресов из файла базы данных программы (. pdb). Если эти значения отсутствуют, метод [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) вызывается дважды, один раз, если для параметра `imagetoSymbols` установлено значение `TRUE` и один раз с параметром `imagetoSymbols`, для которого задано значение `FALSE`. Переводы сопоставления адресов нельзя включить с помощью метода [IDiaAddressMap::P ut_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , если не указаны оба сопоставления перевода.
 
 ## <a name="see-also"></a>См. также
 - [Структура DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)

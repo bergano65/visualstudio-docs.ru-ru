@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1316f56b9a780e101c6ab76ee55b79e0b5a181d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658378"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747537"
 ---
 # <a name="model-your-app39s-architecture"></a>Моделирование архитектуры приложения&#39;
 Чтобы обеспечить соответствие программной системы или приложения потребностям пользователей, можно создать модели в Visual Studio в составе описания общей структуры и поведения программной системы или приложения. С помощью моделей также можно описывать шаблоны, используемые при разработке. Такие модели помогают понять существующую архитектуру, обсуждать изменения и четко формулировать свои намерения.
@@ -102,7 +102,7 @@ ms.locfileid: "72658378"
 
 - Описание вариантов, которые разработчики могут быть в состоянии внедрить.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Визуализация кода](../modeling/visualize-code.md)
 - [Моделирование требований пользователей](../modeling/model-user-requirements.md)

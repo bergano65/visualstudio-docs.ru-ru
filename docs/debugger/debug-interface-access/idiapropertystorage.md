@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage | Документация Майкрософт
+title: Идиапропертистораже | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2de57f0d3bd44e4d46f19ee74484380bf0e6f2ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832749"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742846"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
-Позволяет считывать свойства постоянный набор свойств для доступа к интерфейсу отладки.
+Позволяет считывать постоянные свойства набора свойств DIA.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ IDiaPropertyStorage : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Получает указатель на перечислитель для свойств в этом наборе.|
-|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Считывает `BOOL` значения в наборе свойств.|
-|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|Считывает `BSTR` значения в наборе свойств.|
-|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Считывает `DWORD` значения в наборе свойств.|
-|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Считывает `LONG` значения в наборе свойств.|
-|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Считывает значения свойств в набор свойств.|
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Получает соответствующий строковые имена прав идентификаторов свойств.|
-|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Считывает `ULONGLONG` значения в наборе свойств.|
+|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Возвращает указатель на перечислитель для свойств в этом наборе.|
+|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Считывает `BOOL` значений в наборе свойств.|
+|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|Считывает `BSTR` значений в наборе свойств.|
+|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Считывает `DWORD` значений в наборе свойств.|
+|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Считывает `LONG` значений в наборе свойств.|
+|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Считывает значения свойств в наборе свойств.|
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Возвращает соответствующие имена строк для заданных идентификаторов свойств.|
+|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Считывает `ULONGLONG` значений в наборе свойств.|
 
-## <a name="remarks"></a>Примечания
-Каждое свойство в набор свойств определяется идентификатором свойства (ID), 4 байт `ULONG` значение, уникальным для этого набора. Свойства, предоставляемые через `IDiaPropertyStorage` интерфейс соответствующие свойства родительского интерфейса. Например, свойства [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) интерфейса может осуществляться по имени через `IDiaPropertyStorage` интерфейс (Обратите внимание, что несмотря на то, что свойство может быть доступен, это не значит, свойство является допустимым для определенный `IDiaSymbol` объекта).
+## <a name="remarks"></a>Заметки
+Каждое свойство в наборе свойств определяется идентификатором свойства (ID), четырехзначным `ULONG` значением, уникальным для этого набора. Свойства, предоставляемые через интерфейс `IDiaPropertyStorage`, соответствуют свойствам, доступным в родительском интерфейсе. Например, доступ к свойствам интерфейса [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) можно получить по имени через интерфейс `IDiaPropertyStorage` (Обратите внимание, что несмотря на то, что свойство может быть доступно, оно не означает, что свойство является допустимым для конкретного `IDiaSymbol` объекта).
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
-Получить этот интерфейс, вызвав `QueryInterface` метод на другой интерфейс. Можно запрашивать следующие интерфейсы `IDiaPropertyStorage` интерфейса:
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Получите этот интерфейс, вызвав метод `QueryInterface` в другом интерфейсе. Для интерфейса `IDiaPropertyStorage` можно запросить следующие интерфейсы:
 
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
@@ -63,7 +63,7 @@ IDiaPropertyStorage : IUnknown
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
 ## <a name="example"></a>Пример
-В этом примере показана функция, отображаются все свойства, предоставляемые `IDiaPropertyStorage` объекта. См. в разделе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс пример того, как `IDiaPropertyStorage` интерфейс получается из [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) интерфейс.
+В этом примере показана функция, которая отображает все свойства, предоставляемые объектом `IDiaPropertyStorage`. Пример получения интерфейса `IDiaPropertyStorage` из интерфейса [идиаинжектедсаурце](../../debugger/debug-interface-access/idiainjectedsource.md) см. в интерфейсе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
 
 ```C++
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
@@ -120,9 +120,9 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: dia2.h
+Заголовок: Dia2. h
 
-Библиотека: diaguids.lib
+Библиотека: диагуидс. lib
 
 DLL: msdia80.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::put_imageAlign | Документация Майкрософт
+title: IDiaAddressMap::p ut_imageAlign | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07bdd71300ed485862a4a95f1f9cbc06b32772
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2b1a6bf037dc87d84fab21622571158fb0682f60
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402648"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745053"
 ---
-# <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
+# <a name="idiaaddressmapput_imagealign"></a>IDiaAddressMap::put_imageAlign
 Задает выравнивание изображения.
 
 ## <a name="syntax"></a>Синтаксис
@@ -31,20 +31,20 @@ HRESULT put_imageAlign ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- NewVal
+ неввал
 
-[in] Новое значение выравнивания изображения для исполняемого файла.
+окне Новое значение выравнивания изображения для исполняемого файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Изображения (загруженных исполняемых файлов) выравниваются по границы указанной области памяти. Такое выравнивание может влиять текущую архитектуру системы и параметрами времени компиляции и связывания. Выравнивание изображения всегда включен байтовым границам. Допустимы следующие значения выравнивания изображения: границы 1, 2, 4, 8, 16, 32 и 64 байта.
+## <a name="remarks"></a>Заметки
+ Образы (загруженные исполняемые файлы) согласовываются с указанными границами памяти. Это выравнивание может зависеть от текущей системной архитектуры и параметров компиляции и времени компоновки. Выравнивание изображения всегда находится в пределах диапазона байтов. Допустимы следующие значения выравнивания изображения: 1, 2, 4, 8, 16, 32 и 64 байты.
 
- Текущий тип выравнивания изображения можно получить с помощью вызова [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) метод.
+ Текущее выравнивание изображения можно получить с помощью вызова метода [IDiaAddressMap:: get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) .
 
 > [!NOTE]
-> Когда этот метод может вызываться уже загрузки изображения. `put_imageAlign` Метод обычно используется, если изображение были перемещены и изменены, и новый выравнивание является обязательным.
+> Изображение уже загружено в момент, когда этот метод может быть вызван. Метод `put_imageAlign` обычно используется, когда изображение было перемещено или изменено, и требуется новое выравнивание.
 
 ## <a name="see-also"></a>См. также
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

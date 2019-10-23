@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Документация Майкрософт
+title: 'IDiaSymbol:: Финдсимболсбирвафоракцелераторпоинтертаг | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62839001"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741155"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Учитывая соответствующее значение тега, этот метод возвращает перечисление символов, содержащихся в этой функции заглушки в указанный относительный виртуальный адрес.
+При наличии соответствующего значения тега этот метод возвращает перечисление символов, содержащихся в этой функции-заглушке, по указанному относительному виртуальному адресу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,21 +32,21 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 #### <a name="parameters"></a>Параметры
  `tagValue`
 
-[in] Значение тега указатель, для которого находятся pointee символьные записи.
+окне Значение тега указателя, для которого обнаружены записи символов с точками.
 
  `rva`
 
-[in] RVA-адрес, используемый для фильтрации символы, которые соответствуют pointee переменную с указанным значением тега.
+окне RVA, используемый для фильтрации символов, соответствующих переменной-Point с указанным значением тега.
 
  `ppResult`
 
-[out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.
+заполняет Указатель на указатель интерфейса `IDiaEnumSymbols`, который инициализируется с результатом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод следует вызывать только в `IDiaSymbol` интерфейс, который соответствует функции заглушки сочетаний клавиш.
+## <a name="remarks"></a>Заметки
+ Этот метод следует вызывать только в интерфейсе `IDiaSymbol`, соответствующем функции-заглушке ускорителя.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
