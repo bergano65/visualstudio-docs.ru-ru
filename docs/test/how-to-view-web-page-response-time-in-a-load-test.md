@@ -7,17 +7,17 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821252"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653285"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Как выполнить просмотр времени ответа веб-страницы в нагрузочном тесте с помощью анализатора тестовой нагрузки
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Практическое руководство. просмотр времени ответа веб-страницы в нагрузочном тесте с помощью анализатора тестовой нагрузки
 
 Время, которое требуется для загрузки каждой веб-страницы, называется *временем отклика*. При создании веб-теста производительности можно установить целевое значение времени отклика для каждого запроса веб-страницы в веб-тесте производительности.
 
@@ -43,7 +43,7 @@ ms.locfileid: "62821252"
 
 3. Данные для каждой страницы отображаются в таблице. В этой таблице, как правило, содержатся следующие столбцы.
 
-   |Заголовок столбца|Описание|
+   |Заголовок столбца|ОПИСАНИЕ|
    |-|-|
    |**Страница**|Имя веб-страницы.|
    |**Сценарий**|Имя сценария. Этот столбец важен, если в веб-тесте производительности есть несколько сценариев.|

@@ -78,4 +78,4 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
 ## <a name="see-also"></a>См. также
- Командная Командная команда [Visual studio](../../ide/reference/visual-studio-commands.md) [](../../ide/reference/command-window.md) [окно вывода](../../ide/reference/output-window.md) команд ["найти/команда"](../../ide/find-command-box.md) в командной строке [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Команды Visual Studio ](../../ide/reference/visual-studio-commands.md) [Command окно ](../../ide/reference/command-window.md) [Output окно ](../../ide/reference/output-window.md) [Find/Command ](../../ide/find-command-box.md) [командные псевдонимы команды Studio](../../ide/reference/visual-studio-command-aliases.md)

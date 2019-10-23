@@ -57,4 +57,4 @@ ms.locfileid: "72661568"
 > Существует также системный <xref:System.Timers.Timer>, который можно добавить на **панель элементов**. Этот компонент <xref:System.Timers.Timer> оптимизирован для серверных приложений и Windows Forms. <xref:System.Windows.Forms.Timer> лучше всего подходит для использования в формах Windows Forms.
 
 ## <a name="see-also"></a>См. также
- [Программирование с помощью](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3) [компонента "пошаговые руководства по программированию](https://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913) [](../../ide/reference/toolbox.md) компонентов [" Выбор элементов панели элементов (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
+ [Программирование с помощью компонентов ](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3) [Component пошаговые руководства по программированию ](https://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913) [Toolbox ](../../ide/reference/toolbox.md) [диалоговое окно "элементы панели элементов" (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
