@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_container | Документация Майкрософт
+title: 'IDiaSymbol:: get_container | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b8d43931b880ff61ec9871f9f5984b98833c28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0533eb2cdea1dd3e1bea3d64e2b94ce29a09353d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64787890"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740780"
 ---
-# <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
-Эта функция извлекает указатель на символ, представляющий родительский/контейнер от этого символа.
+# <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
+Эта функция получает указатель на символ, представляющий родительский объект или контейнер этого символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_container(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает указатель на `IDiaSymbol` содержащий сведения о контейнере от этого символа.
+заполняет Возвращает указатель на `IDiaSymbol`, содержащий сведения о контейнере этого символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение S_FALSE или код ошибки.
+ В случае успеха возвращает значение S_OK; в противном случае возвращает S_FALSE или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение S_FALSE означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_container(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

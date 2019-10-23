@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles::Next | Документация Майкрософт
+title: 'IDiaEnumSourceFiles:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 526c857acbe1283e16312355c181c56c67e19883
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829632"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744083"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Извлекает указанное число исходных файлов в последовательности перечисления.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Количество исходных файлов в перечислителе требуется получить.
+окне Число извлекаемых исходных файлов в перечислителе.
 
  rgelt
 
-[out] Массив, который должен быть заполнен с помощью [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объекты, представляющие нужные исходные файлы.
+заполняет Массив, который должен быть заполнен объектами [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , представляющими нужные исходные файлы.
 
  pceltFetched
 
-[out] Возвращает количество исходных файлов в выбранной перечислитель.
+заполняет Возвращает количество исходных файлов в выбранном перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет другие исходные файлы. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если нет других исходных файлов. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

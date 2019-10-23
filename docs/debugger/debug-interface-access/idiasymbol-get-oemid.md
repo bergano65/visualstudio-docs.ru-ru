@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_oemId | Документация Майкрософт
+title: 'IDiaSymbol:: get_oemId | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d6097fd558ee3fd4e61485eb53cd25a0b7c6a2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d417b0c75db1b2153e9a43eb2e45f3d9550971d1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796037"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739604"
 ---
-# <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
-Извлекает значение идентификатора символа изготовителя оборудования (OEM).
+# <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
+Возвращает значение идентификатора изготовителя оборудования (OEM).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_oemId ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает уникальное значение, определяющее изготовителей Оборудования.
+заполняет Возвращает уникальное значение, идентифицирующее OEM.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Это свойство применяется только к символам с [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) тип `SymTagCustomType`.
+## <a name="remarks"></a>Заметки
+ Это свойство применяется только к символам с типом [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) `SymTagCustomType`.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

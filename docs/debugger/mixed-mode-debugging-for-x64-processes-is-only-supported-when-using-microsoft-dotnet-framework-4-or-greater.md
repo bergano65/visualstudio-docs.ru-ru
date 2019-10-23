@@ -1,5 +1,5 @@
 ---
-title: Смешанный режим отладки для x64 поддерживается только при использовании Microsoft.NET Framework 4 или более поздней версии | Документация Майкрософт
+title: Отладка в смешанном режиме для процессов x64 поддерживается только при использовании Microsoft.NET Framework 4 или более поздней версии | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845709"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731030"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>На 64-разрядных платформах Windows отладка в смешанном режиме поддерживается только при использовании платформы Microsoft.NET Framework версии 4.0 или выше
 Версии платформы .NET Framework, предшествующие версии 4, не поддерживают отладку в смешанном режиме для процессов x64. Это значит, что при выполнении отладки переход из управляемого кода в неуправляемый (как и обратный переход) невозможен.
@@ -29,11 +29,11 @@ ms.locfileid: "62845709"
 
 - Обновить проект так, чтобы в нем использовалась платформа Microsoft .NET Framework версии 4 или позднее.
 
-     -или-
+     \- или -
 
      Вести отладку управляемого и машинного кода в отдельных сеансах отладки.
 
-     -или-
+     \- или -
 
      Вести отладку смешанного кода в 32-разрядном процессе в соответствии со следующими процедурами:
 
@@ -55,7 +55,7 @@ ms.locfileid: "62845709"
 
 ### <a name="to-correct-this-error"></a>Исправление ошибки
 
-- См. в разделе [настройки отладки SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- См. раздел [Настройка отладки SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>См. также
 - [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_length | Документация Майкрософт
+title: 'IDiaLineNumber:: get_length | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 896e26075780c0cbd7bf0b1762da141d5ba7d2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f803fac1439d384133f0819859f2917072a8790
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828477"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743196"
 ---
-# <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
+# <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
 Возвращает число байтов в блоке.
 
 ## <a name="syntax"></a>Синтаксис
@@ -33,13 +33,13 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает число байтов в блоке.
+заполняет Возвращает число байтов в блоке.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Блок является длина исходного кода в строке, представленные как [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объекта.
+## <a name="remarks"></a>Заметки
+ Блок — это длина исходного кода в строке, представленная объектом [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
 ## <a name="see-also"></a>См. также
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

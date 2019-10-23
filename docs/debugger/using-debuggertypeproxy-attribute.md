@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 091619353adacaeb9c6996653ac64a0bcd84bb5c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: d56d173d715258153f284c55d9bac80c06a50002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568952"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728722"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Сообщить отладчику, какой тип отображать с помощью атрибута DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
@@ -65,7 +65,7 @@ ms.locfileid: "72568952"
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Создание настраиваемых представлений управляемых объектов](../debugger/create-custom-views-of-managed-objects.md)

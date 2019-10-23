@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_columnNumber | Документация Майкрософт
+title: 'IDiaLineNumber:: get_columnNumber | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d24770c90ebd225fa37dd7f60d794781e79e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ac6eea93daf9b0ef7d8169a4f765c249f3b9ee4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828448"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743260"
 ---
-# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
-Получает номер столбца, где начинается выражения или оператора.
+# <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
+Возвращает номер столбца, в котором начинается выражение или оператор.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_columnNumber ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает номер столбца, где начинается выражения или оператора. Если значение равно нулю, сведения о столбце отсутствует.
+заполняет Возвращает номер столбца, в котором начинается выражение или оператор. Если значение равно нулю, сведения о столбце отсутствуют.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Значение столбца, возвращаемого этим методом, — это смещение в байтах в строке до первого символа в строке инструкции.
+## <a name="remarks"></a>Заметки
+ Значение столбца, возвращаемое этим методом, представляет собой байтовое смещение строки до первого символа инструкции в строке.
 
 ## <a name="see-also"></a>См. также
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

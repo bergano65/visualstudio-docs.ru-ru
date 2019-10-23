@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8343f3a417c0c435711fb1df337d47c3a747905
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 37255345c1d394130872dc65a8568309a3091347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653807"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747578"
 ---
 # <a name="domain-path-syntax"></a>Синтаксис пути домена
 В определениях доменного языка для поиска определенных элементов в модели используется синтаксис типа XPath.
@@ -35,6 +35,6 @@ ms.locfileid: "72653807"
 
  Имя, используемое для перехода от элемента к связи, является значением роли `Property Name`. Имя, используемое для перехода от связи к элементу, является именем целевой роли.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)

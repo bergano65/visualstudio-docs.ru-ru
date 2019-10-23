@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_noInline | Документация Майкрософт
+title: 'IDiaSymbol:: get_noInline | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e5cc592f6be2e3fdd4f791c637e588e10a187ae2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786264"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739752"
 ---
-# <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
-Получает флаг, указывающий ли функция была помечена как не встроенные (с помощью [noinline](/cpp/cpp/noinline) атрибут).
+# <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
+Получает флаг, указывающий, была ли функция помечена как Невстроенная (с помощью атрибута [noinline](/cpp/cpp/noinline) ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_noInline(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если функция имеет `noinline` атрибут; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция имеет атрибут `noinline`; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_noInline(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Next | Документация Майкрософт
+title: 'Идиаенумдебугстреамс:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b7819c90804933795c220c4d47f288d29abfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b66729192c9c976ecd226ab21aad73b94bf9f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838302"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744728"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Извлекает указанное число потоков отладки в последовательности перечисления.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Количество потоков отладки в перечислителе требуется получить.
+окне Число возвращаемых потоков отладки в перечислителе.
 
  rgelt
 
-[out] Возвращает массив [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объектов, представляющих отладочные выполняет потоковую передачу, извлекаемых.
+заполняет Возвращает массив объектов [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) , представляющих извлекаемые потоки отладки.
 
  pceltFetched
 
-[out] Возвращает количество возвращаемых потоков отладки.
+заполняет Возвращает число возвращенных потоков отладки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные потоки. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если больше нет потоков. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

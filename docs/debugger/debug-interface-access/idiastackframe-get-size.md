@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_size | Документация Майкрософт
+title: 'IDiaStackFrame:: get_size | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6728418e848941bb537f5bec4cb4f772c73485c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 04fec0f24cd8d905b41e8eb142ab3f1f37023860
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832057"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741589"
 ---
-# <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
-Извлекает размер кадра стека в байтах.
+# <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
+Возвращает размер кадра стека в байтах.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_size ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает размер кадра стека в байтах.
+заполняет Возвращает размер кадра стека в байтах.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

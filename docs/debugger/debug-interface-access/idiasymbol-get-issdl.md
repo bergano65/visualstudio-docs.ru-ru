@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSdl | Документация Майкрософт
+title: 'IDiaSymbol:: get_isSdl | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6904fc673462a79578549bcf22c2973a5c10c95c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 01503bca82046ace7f27cf4f80c163944009e89b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836439"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740072"
 ---
-# <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
-Указывает, является ли модуль компилируется с параметром/SDL.
+# <a name="idiasymbolget_issdl"></a>IDiaSymbol::get_isSdl
+Указывает, компилируется ли модуль с параметром/SDL.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT get_isSdl(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на `BOOL` , указывающее, компилируется ли модуль с параметром/SDL.
+заполняет Указатель на `BOOL`, указывающий, компилируется ли модуль с параметром/SDL.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

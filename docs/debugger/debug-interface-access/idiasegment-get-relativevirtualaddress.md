@@ -1,5 +1,5 @@
 ---
-title: IDiaSegment::get_relativeVirtualAddress | Документация Майкрософт
+title: 'IDiaSegment:: get_relativeVirtualAddress | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6387b4e7cbf3ab100b641fe8694505c5e326fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ce40ed99aea4d4009fd385518bd873270e66831
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827666"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742378"
 ---
-# <a name="idiasegmentgetrelativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
-Возвращает относительный виртуальный адрес (RVA) в начале раздела.
+# <a name="idiasegmentget_relativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
+Извлекает относительный виртуальный адрес (RVA) начала раздела.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_relativeVirtualAddress ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает относительный виртуальный адрес начала раздела.
+заполняет Возвращает RVA начала раздела.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

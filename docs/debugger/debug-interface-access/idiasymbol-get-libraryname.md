@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_libraryName | Документация Майкрософт
+title: 'IDiaSymbol:: get_libraryName | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638458c1365c015b54ca955e44041b856232f8b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b49c9ad6926b963345bc4c1341ab3c7db03c916
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800452"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739948"
 ---
-# <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-Возвращает имя файла библиотеки или объекта, из которого был загружен объект.
+# <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
+Возвращает имя файла библиотеки или объектного файла, из которого был загружен объект.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_libraryName ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает имя файла библиотеки или объекта, из которого был загружен объект.
+заполняет Возвращает имя файла библиотеки или объектного файла, из которого был загружен объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

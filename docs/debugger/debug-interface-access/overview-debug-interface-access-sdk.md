@@ -1,5 +1,5 @@
 ---
-title: Обзор (доступа к интерфейсу отладки пакета SDK) | Документация Майкрософт
+title: Общие сведения (SDK для доступа к интерфейсу отладки) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e459d4429d712a9ca4c245d581c6be3578711cd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e4269c620247f256d2cfae2e84b76ff60fcf9ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855108"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738603"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Общие сведения (SDK для доступа к интерфейсу отладки)
-Используйте пакет SDK для доступа к данным отладки Microsoft. Пакет SDK для доступа к интерфейсу отладки предоставляет COM набор API, который избавляет от необходимости изменять код каждый раз, когда Майкрософт изменяет формат отладочной информации. Пакет SDK для доступа к интерфейсу отладки также позволяет считывать из набор select отладочной информации в PDB-файл и .dbg файлы, созданные на предыдущих версиях [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 5.0 и более поздних версиях.
+Используйте пакет SDK DIA для доступа к информации об отладке Майкрософт. Пакет SDK для DIA предоставляет набор API на основе COM, который устраняет необходимость в перезаписи кода всякий раз, когда Майкрософт изменяет формат отладочной информации. DIA SDK также позволяет считывать данные из выбранного набора предыдущих версий отладочной информации, расположенной в файлах PDB и DBG, созданных [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] версиями 5,0 и более поздних версий.
 
- Каждый интерфейс в пакете SDK для доступа к интерфейсу отладки представляет объект COM, за исключением там, где указано обратное. Дополнительные интерфейсы и тем самым дополнительные объекты, созданные с помощью явных запросов, такие как [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) или [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md), а не путем вызова `QueryInterface` на существующие указатели интерфейса.
+ Каждый интерфейс в пакете SDK для DIA представляет отдельный COM-объект, за исключением случаев, где указано иное. Дополнительные интерфейсы и, таким образом, дополнительные объекты создаются с помощью явных запросов, таких как [идиадатасаурце:: опенсессион](../../debugger/debug-interface-access/idiadatasource-opensession.md) или [IDiaSession:: финдчилдрен](../../debugger/debug-interface-access/idiasession-findchildren.md), а не путем вызова `QueryInterface` для существующих указателей интерфейса.
 
 ## <a name="see-also"></a>См. также
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)

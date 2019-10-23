@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_intro | Документация Майкрософт
+title: 'IDiaSymbol:: get_intro | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4680af2d41ef3fa06a89784003c98982a09c2b63
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836804"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740350"
 ---
-# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-Получает флаг, указывающий, является ли функция Знакомство с виртуальной функцией.
+# <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
+Получает флаг, указывающий, представляет ли функция виртуальную функцию.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_intro ( 
 #### <a name="parameters"></a>Параметры
 `pRetVal`
 
-[out] Возвращает `TRUE` Если функция является введение виртуальным; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция является вводным виртуальным; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -52,14 +52,14 @@ class B : public A {
 }
 ```
 
-Оба `A::f1` и `B::f1` — это виртуальные функции, но `A::f1` является введение виртуальным.
+И `A::f1`, и `B::f1` являются виртуальными функциями, но `A::f1` — это введение виртуальной.
 
 ## <a name="requirements"></a>Требования
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

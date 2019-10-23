@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_remove | Документация Майкрософт
+title: 'IDiaSectionContrib:: get_remove | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b3eef646f9105d651a17b58100aad8b4869c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b21423dc017a09b983ae157774aa4f0485df1a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827653"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742525"
 ---
-# <a name="idiasectioncontribgetremove"></a>IDiaSectionContrib::get_remove
-Получает флаг, указывающий, удален ли раздел, прежде чем оно станет изображением в памяти.
+# <a name="idiasectioncontribget_remove"></a>IDiaSectionContrib::get_remove
+Получает флаг, указывающий, удаляется ли раздел до того, как он станет частью изображения в памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_remove ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если раздел не для добавления изображения в памяти; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если раздел не должен добавляться в образ в памяти; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

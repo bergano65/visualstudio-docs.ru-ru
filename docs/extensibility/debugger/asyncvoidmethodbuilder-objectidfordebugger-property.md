@@ -1,5 +1,5 @@
 ---
-title: Свойство AsyncVoidMethodBuilder.ObjectIdForDebugger | Документация Майкрософт
+title: AsyncVoidMethodBuilder. ObjectIdForDebugger, свойство | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f4e7fe2a61d2277884920045e3bfce80dd26be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc396a40dd90b33d43d5c0857213551bfe8fd242
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350966"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727775"
 ---
-# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Свойство AsyncVoidMethodBuilder.ObjectIdForDebugger
-Возвращает объект, который может использоваться для уникальной идентификации этого построителя к отладчику.
+# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder. ObjectIdForDebugger, свойство
+Возвращает объект, который можно использовать для уникальной идентификации этого построителя в отладчике.
 
  **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Сборка:** mscorlib (в mscorlib.dll)
+ **Сборка:** mscorlib (в mscorlib. dll)
 
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+ Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,4 +34,4 @@ private object ObjectIdForDebugger
 
 ## <a name="see-also"></a>См. также
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

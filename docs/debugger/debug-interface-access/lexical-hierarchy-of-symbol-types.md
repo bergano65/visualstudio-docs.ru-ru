@@ -1,5 +1,5 @@
 ---
-title: Лексическая иерархия символьных типов | Документация Майкрософт
+title: Лексическая иерархия типов символов | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,38 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b2e6fc0b24cc96f617e7b78c6bdcc59ddc5c0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad782ddb9a88b492d03e2338f17d95fb7bfa4f79
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399412"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738671"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Лексическая иерархия символьных типов
-Следующая таблица показывает символьных типов в иерархии лексические.
+В следующей таблице показаны типы символов в лексической иерархии.
 
 ## <a name="symbol-types"></a>Типы символов
 
 |Тип символа|Описание|
 |-----------------|-----------------|
-|[Комментарий](../../debugger/debug-interface-access/annotation.md)|Задает расположение с заметками в программном коде.|
-|[Block](../../debugger/debug-interface-access/block.md)|Задает вложенные области в функции.|
-|`Compiland`|Указывает `compiland` ссылкой на файл .exe.|
-|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Указывает данные единице компиляции, может требовать загрузка сведений о дополнительной единице компиляции и таким образом взимается во время выполнения издержки для получения.|
-|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Указывает все дополнительные переменные среды значимым для компиляции единице компиляции.|
-|[Custom (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Указывает определяемого пользователем символа.|
-|[Data (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Задает таких переменных в качестве параметров, локальных переменных, глобальных переменных и членов класса.|
-|[Exe](../../debugger/debug-interface-access/exe.md)|Указывает глобальной области данных. соответствует весь файл .exe или .dll.|
-|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Указывает функцию, которая содержит это определенная точка в какие Отладка – это.|
-|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Указывает функцию, которая содержит это определенная точка в какие отладки — чтобы начать.|
-|[Function (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Задает функцию.|
-|[Label (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Задает расположение в коде программы.|
-|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Указывает внешний символ, появившемся при построении исполняемой программы.|
+|[Комментарий](../../debugger/debug-interface-access/annotation.md)|Задает расположение с заметками в коде программы.|
+|[Block](../../debugger/debug-interface-access/block.md)|Задает вложенные области в функциях.|
+|`Compiland`|Указывает `compiland`, связанную с exe-файлом.|
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Указывает данные компилируемого объекта, которые могут потребовать загрузки дополнительных сведений о компилируемого объекта и, таким же, требуют издержек во время выполнения для получения.|
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Указывает все дополнительные переменные среды, которые важны для компиляции компилируемого объекта.|
+|[Custom (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Задает определяемый пользователем символ.|
+|[Data (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Задает такие переменные как параметры, локальные переменные, глобальные переменные и члены класса.|
+|[Exe](../../debugger/debug-interface-access/exe.md)|Задает глобальную область данных; соответствует целому exe-или DLL-файлу.|
+|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Задает функцию с определенной точкой, в которой должна быть завершена отладка.|
+|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Указывает функцию с определенной точкой, с которой начинается отладка.|
+|[Function (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Указывает функцию.|
+|[Label (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Указывает расположение в программном коде.|
+|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Задает внешний символ, который появляется при создании исполняемой программы.|
 |[Thunk](../../debugger/debug-interface-access/thunk.md)|Указывает `thunk`.|
-|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Указывает `namespace`идентификатор.|
+|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Указывает `namespace`identifier.|
 
 > [!NOTE]
-> Дополнительные свойства могут быть доступны в зависимости от типа символа. Эти свойства перечислены в разделах отдельных символов.
+> Дополнительные свойства символов могут быть доступны в зависимости от типа символа. Эти свойства перечислены в разделах, посвященных отдельным символам.
 
 ## <a name="see-also"></a>См. также
 - [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

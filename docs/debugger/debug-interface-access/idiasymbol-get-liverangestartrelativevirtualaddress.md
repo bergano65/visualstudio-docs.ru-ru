@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Документация Майкрософт
+title: 'IDiaSymbol:: get_liveRangeStartRelativeVirtualAddress | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 338775a2c36415d471d0d59176ce38f6df1827bb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea82e9d1dee4b82e78ea3f6409acfdcfc30b2a27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806862"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739897"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Возвращает начало диапазона адресов, в котором локальный символ является допустимой.
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+Возвращает начало диапазона адресов, в котором является допустимым локальный символ.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 #### <a name="parameters"></a>Параметры
  `address`
 
-[out] Возвращает дату начала диапазона адресов.
+заполняет Возвращает начало диапазона адресов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращается относительный виртуальный адрес — это начало диапазона, в котором символ является допустимой.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращаемый относительный виртуальный адрес — это начало диапазона, в котором символ является допустимым.
 
 > [!NOTE]
-> Возвращен код ошибки означает, что символ не имеет сведения о динамической диапазона.
+> Возвращенный код ошибки означает, что символ не содержит сведений о диапазоне в реальном времени.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

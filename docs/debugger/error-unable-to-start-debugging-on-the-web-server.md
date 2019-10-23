@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706a20a00792e7c67b39535322fbd2530f2a2ad3
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588996"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736708"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка. Не удается запустить отладку на веб-сервере
 
@@ -161,5 +161,5 @@ ms.locfileid: "72588996"
 
     Если вы не можете заставить приложение работать с отладчиком, попробуйте создать базовое приложение ASP.NET локально на сервере и попытайтесь выполнить отладку базового приложения. (Может потребоваться использовать шаблон MVC ASP.NET по умолчанию.) Если вы можете выполнить отладку базового приложения, это может помочь в определении различий между двумя конфигурациями. Найдите различия в параметрах в файле Web. config, например правила переопределения URL-адресов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

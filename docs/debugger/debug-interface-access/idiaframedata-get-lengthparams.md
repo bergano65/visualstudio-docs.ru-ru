@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_lengthParams | Документация Майкрософт
+title: 'IDiaFrameData:: get_lengthParams | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 712f7ee9eaf497fc5dd176f3f254d5af73ebcf3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca86590dd214214df671e084925e02e611d521d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829042"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743571"
 ---
-# <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
-Возвращает число байтов параметров в стек.
+# <a name="idiaframedataget_lengthparams"></a>IDiaFrameData::get_lengthParams
+Возвращает число байтов параметров, отправленных в стек.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_lengthParams ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает число байтов параметров.
+заполняет Возвращает число байтов параметров.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Значение, возвращаемое этим методом обычно используется в интерпретации строки программы (см. в разделе [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод для определения строки программы).
+## <a name="remarks"></a>Заметки
+ Значение, возвращаемое этим методом, обычно используется при интерпретации строки программы (см. метод [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) для определения программной строки).
 
 ## <a name="see-also"></a>См. также
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

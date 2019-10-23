@@ -1,5 +1,5 @@
 ---
-title: Предупреждение системы безопасности. Отладчик должен выполнить ненадежную команду | Документация Майкрософт
+title: 'Предупреждение безопасности: отладчик должен выполнить команду, не являющейся доверенной | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4ab45feeae409a1951e1a57e964eaaa5963896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902588"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729748"
 ---
-# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Предупреждение системы безопасности. Отладчик должен выполнить команду без доверия
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Security Warning: Debugger Must Execute Untrusted Command
 Это диалоговое окно с предупреждением появляется при использовании сервера системы управления версиями. Оно указывает, что команды, которую должен выполнить отладчик для получения исходного кода, нет в списке доверенных команд для сервера системы управления версиями, содержащемся в файле srcsvr.ini. Если это допустимая команда, ее можно добавить в файл srcsvr.ini. В противном случае ее не следует выполнять. Дополнительные сведения см. в разделе [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="message-text"></a>Текст сообщения
@@ -33,11 +33,11 @@ ms.locfileid: "62902588"
  **Вы хотите выполнить эту команду?**
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
- Текстовое поле команда из PDB-файл для запуска.
+ Команда текстового поля из PDB-файла для выполнения.
 
- Выполнения позволяют выполнить команду.
+ Запустите команду, чтобы разрешить выполнение команды.
 
- Не нужно запустить, остановить выполнение команды и загрузку файла с исходного сервера.
+ Не запускайте выполнение команды и скачивание файла с исходного сервера.
 
 ## <a name="see-also"></a>См. также
 - [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

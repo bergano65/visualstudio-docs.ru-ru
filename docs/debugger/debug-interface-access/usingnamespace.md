@@ -1,5 +1,5 @@
 ---
-title: UsingNameSpace | Документация Майкрософт
+title: Усингнамеспаце | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,29 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1524348bf94af681b5761ca42cb4fac911f359f7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9d078e8af5f579556fb865a4d92084220afecc83
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803389"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738438"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
-Некоторые символы могут идентифицироваться пространства имен, а впоследствии будет идентифицироваться по `SymTagUsingNameSpace` тега.
+Некоторые символы могут называться пространством имен, а затем идентифицироваться по тегу `SymTagUsingNameSpace`.
 
 > [!NOTE]
-> Usingnamespace-тег символа отображается только в управляемом коде.
+> Тег символов Усингнамеспаце отображается только в управляемом коде.
 
 ## <a name="properties"></a>Свойства
- Ниже приведены свойства, которые являются допустимыми для данного типа символов.
+ В следующей таблице показаны свойства, которые являются допустимыми для этого типа символов.
 
-|Свойство.|Тип данных|Описание|
+|свойство;|Тип данных|Описание|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ для включающего единице компиляции, блок или функции.|
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Идентификатор лексической родительского символа.|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ для включающего компилируемого объекта, блока или функции.|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Идентификатор лексического родителя символа.|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Имя пространства имен.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Идентификатор индекса символа.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagNameSpace` (один из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значения).|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagNameSpace` (одно из значений [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) ).|
 
 ## <a name="see-also"></a>См. также
 - [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

@@ -1,5 +1,5 @@
 ---
-title: Вариант сжатия текстур BC | Документация Майкрософт
+title: Вариант свертки текстур BC | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848693"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736164"
 ---
 # <a name="bc-texture-compression-variant"></a>Вариант сжатия текстур BC
 Включает блочное сжатие текстур, которые имеют формат пикселей, являющийся вариантом формата B8G8R8X8, B8G8R8A8 или R8G8B8A8.
@@ -23,7 +23,7 @@ ms.locfileid: "62848693"
 
  Если ваши текстуры подходят для блочного сжатия и не требуют идеальной точности цветовоспроизведения, рекомендуется использовать формат с блочным сжатием, чтобы сократить использование памяти и пропускной способности.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  Текстуры сжимаются с использованием формата с блочным сжатием при каждом вызове `ID3DDevice::CreateTexture2D`, который создает исходную текстуру. В частности, текстуры сжимаются в указанных ниже случаях.
 
 - Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает неизменяемый ресурс шейдера, то есть:

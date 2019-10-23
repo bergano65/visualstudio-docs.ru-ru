@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData::Clone | Документация Майкрософт
+title: 'IDiaEnumDebugStreamData:: Clone | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8362fecf12613595b3e96218c704eae26f4e8bbc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 468cc34453373df91898dce99fca01b8cb04b9fb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838432"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744899"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
-Создает перечислитель, содержащий же перечисленной последовательности, что и текущий перечислитель.
+Создает перечислитель, содержащий ту же последовательность перечисления, что и текущий перечислитель.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,12 +31,12 @@ HRESULT Clone ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- ppenum
+ ппенум
 
-[out] Возвращает [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объект, который содержит повторяющиеся последовательность записей потока данных отладки.
+заполняет Возвращает объект [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) , содержащий повторяющуюся последовательность записей отладочного потока данных.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

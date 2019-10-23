@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Skip | Документация Майкрософт
+title: 'IDiaEnumInjectedSources:: Skip | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 807ed82a68089cb656f68c8cc1881dce683bb8a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2c7ca67581916ad0c68d7eb1b49fd1c15cf9eaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829723"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744460"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-Пропускает заданное число источников, внедренного в последовательности перечисления.
+Пропускает указанное число внедренных источников в последовательности перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Число источников, внедренного в последовательности перечисления, чтобы пропустить.
+окне Число пропущенных внедренных источников в последовательности перечисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если существует больше нет внедренного источника для пропуска.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE`, если нет дополнительных внедренных источников для пропуска.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

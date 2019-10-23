@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe338ba9d3aa6cbc795606c3fa285526afdfd36
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745358"
 ---
-# <a name="cvaccesse"></a>CV_access_e
-Задает область видимости (уровень доступа) для функций-членов и переменных.
+# <a name="cv_access_e"></a>CV_access_e
+Задает область видимости (уровень доступа) функций и переменных-членов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,17 +33,17 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>Элементы
-Элемент CV_private имеет закрытый доступ.
+У члена CV_private есть закрытый доступ.
 
 Член CV_protected имеет защищенный доступ.
 
-Элемент CV_public имеет общий доступ.
+Член CV_public имеет открытый доступ.
 
-## <a name="remarks"></a>Примечания
-`friend` Спецификатор доступа, здесь не так, как они обычно используются не являющиеся членами функции, которые имеют доступ к закрытым и защищенным элементам класса. Используйте [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) поиск символов с помощью метода `SymTagFriend` доступа.
+## <a name="remarks"></a>Заметки
+Спецификатор доступа `friend` не указан здесь, так как обычно используется функциями, не являющимися членами, которые имеют доступ как к частным, так и к защищенным элементам класса. Используйте метод [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) для поиска символов с доступом к `SymTagFriend`.
 
 ## <a name="requirements"></a>Требования
-Заголовок: cvconst.h
+Заголовок: квконст. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)

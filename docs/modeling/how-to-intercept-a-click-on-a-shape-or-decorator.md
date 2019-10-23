@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605280"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748385"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Практическое руководство. Перехват щелчка фигуры или декоратора
 В следующих процедурах показано, как перехватить щелчок фигуры или декоратора значка. Можно перехватывать щелчки, двойные щелчки, перетаскивания и другие жесты, а также отреагировать на элемент.
@@ -393,7 +393,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)
 - [Свойства декораторов](../modeling/properties-of-decorators.md)

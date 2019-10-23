@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBaseOffset | Документация Майкрософт
+title: 'IDiaSymbol:: get_virtualBaseOffset | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cb4a34f9947d2f5ee50488876d44042b4cb228
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c72c605b47a5f34542b46cae9943b03c7072b1f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830831"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738866"
 ---
-# <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
+# <a name="idiasymbolget_virtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
 Получает смещение в таблице виртуальных функций виртуальной функции.
 
 ## <a name="syntax"></a>Синтаксис
@@ -33,10 +33,10 @@ HRESULT get_virtualBaseOffset ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает смещение в таблице виртуальных функций виртуальной функции.
+заполняет Возвращает смещение в таблице виртуальных функций виртуальной функции.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

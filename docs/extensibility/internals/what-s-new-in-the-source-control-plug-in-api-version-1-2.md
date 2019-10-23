@@ -1,5 +1,5 @@
 ---
-title: Что&#39;API версии 1.2 подключаемого модуля управления возможности в источнике | Документация Майкрософт
+title: Новые&#39;возможности в API подключаемого модуля системы управления версиями 1,2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f4696d8f41ce907505443d661065c1cf234bb06
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 55c4175390ec3e6f5a29bc372032ea83253044ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323119"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721566"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Что&#39;возможности в источнике управления API версии 1.2 подключаемого модуля
-В этом разделе описываются средства управления версиями расширенный код в API подключаемых модулей управления исходной версии 1.2. Далее перечислены новые возможности в версии 1.2.
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Новые&#39;возможности в API подключаемого модуля системы управления версиями 1,2
+В этом разделе описываются расширенные функции управления исходным кодом в API подключаемого модуля системы управления версиями 1,2. Ниже перечислены новые возможности версии 1,2.
 
 ## <a name="changes"></a>Изменения
-- [Устранение ~ SAK-файлов](../../extensibility/internals/elimination-of-tilde-sak-files.md) объясняет, как подключаемый модуль API источника управления 1.2 взаимодействует с временные файлы.
+- [Исключение файлов ~ SAK](../../extensibility/internals/elimination-of-tilde-sak-files.md) Объясняет, как интерфейс API 1,2 подключаемого модуля системы управления версиями взаимодействует с временными файлами.
 
-- [Применение параметров в нескольких подключениях проекта](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md) показывает, как подключаемый модуль системы управления версиями можно использовать пакетную операцию выполнения же операция системы управления версиями для нескольких проектов или несколько контекстов соединений.
+- [Применение параметров в нескольких подключениях к проектам](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md) Показывает, как подключаемый модуль системы управления версиями может использовать пакетную операцию для выполнения одной и той же операции системы управления версиями в нескольких проектах или нескольких контекстах соединения.
 
-- [Создание папок родительского контейнера для решений](../../extensibility/internals/creating-parent-container-folders-for-solutions.md) объясняет, как источник управления Plug-in API версии 1.2 позволяет пользователю указать целевой элемент управления источника один корневой для всех веб-проектов в решении.
+- [Создание папок родительского контейнера для решений](../../extensibility/internals/creating-parent-container-folders-for-solutions.md) Объясняет, как API-интерфейс версии 1,2 для подключаемого модуля системы управления версиями позволяет пользователю указать одно назначение корневого каталога для всех веб-проектов в решении.
 
-- [Необязательно сравнения из локальной папки проекта к Store управления источника](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md) объясняет Сравнение версий файлов Plug-in API источника управления 1.2.
+- [Необязательное Сравнение локальной папки проекта с хранилищем системы управления версиями](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md) Объясняется, как в API подключаемого модуля системы управления версиями 1,2 сравниваются версии файлов.
 
-- [Удаление сведений системы управления версиями из. Proj и. SLN-файлов](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) объясняет, как исходный элемент управления Plug-in API версии 1.2 хранит сведения о проектах и решениях.
+- [Удаление данных системы управления версиями из. Proj и. В файлах SLN](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) объясняется, как в API версии 1,2 для подключаемого модуля системы управления версиями хранятся сведения о проектах и решениях.
 
 ## <a name="see-also"></a>См. также
 - [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

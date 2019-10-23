@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68ebfcc4b95b50988673e5ce229d27c5c12d0783
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450368"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733313"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Практическое руководство. Сворачивание и разворачивание деревьев Spy++
 Вы можете разворачивать и сворачивать представления окон, процессов и потоков с помощью двух методов: щелкнув значки в окне или выбрав меню **дерево** . Значки + и-в дереве работают так же, как и в окне C++ проекта.
@@ -38,7 +38,7 @@ ms.locfileid: "72450368"
 
 2. В меню **дерево** выберите одну из команд развернуть или свернуть.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Использование Spy++](../debugger/using-spy-increment.md)
 - [Представления Spy++](../debugger/spy-increment-views.md)
 - [Справочник по Spy++](../debugger/spy-increment-reference.md)

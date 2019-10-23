@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 808eecab2b4f468b730b6c58cce32d08ca523d0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 74d64b4fe0c0aa5293e11daad13f632c4a487736
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660326"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747418"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 Вы можете создать правило хранения, чтобы распространить изменения с одного элемента на другой в пакете SDK визуализации и моделирования (VMSDK). Когда происходит изменение в любом элементе хранилища, запланировано выполнение правил, обычно при фиксации самой внешней транзакции. Существуют различные типы правил для различных типов событий, например добавление элемента или его удаление. Правила можно присоединять к конкретным типам элементов, фигур или диаграмм. Многие встроенные функции определяются правилами. Например, правила обеспечивают обновление схемы при изменении модели. Вы можете настроить доменный язык, добавив собственные правила.
@@ -207,6 +207,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обработчики событий распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_age | Документация Майкрософт
+title: 'IDiaSymbol:: get_age | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e35db1186f2547b8d3c859d20e0e4ce2b1f68e9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 28a78094d9779a0da35052808dfb8d5f42972894
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803345"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741032"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-Получает значение возраста PDB-файл.
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
+Получает значение Age PDB-файла.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,23 +33,23 @@ HRESULT get_age ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение возраста PDB-файл.
+заполняет Возвращает значение Age PDB-файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Возраст необязательно соответствует любое значение известное время; обычно используется для определения, если PDB-файл не синхронизирован с соответствующим файлом .exe.
+## <a name="remarks"></a>Заметки
+ Возраст не обязательно соответствует ни одному известному значению времени; Обычно он используется, чтобы определить, не синхронизирован ли PDB-файл с соответствующим exe-файлом.
 
 ## <a name="requirements"></a>Требования
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

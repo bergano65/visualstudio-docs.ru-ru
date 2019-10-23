@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasManagedCode | Документация Майкрософт
+title: 'IDiaSymbol:: get_hasManagedCode | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c0d5fe63cfcaf52dbbdf9ad34ce8d40e6134c2a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 79696a0f4476d8e8b571cb8b8c0cc5e181b11f92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830148"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740493"
 ---
-# <a name="idiasymbolgethasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
-Получает флаг, указывающий, содержит ли модуль управляемого кода.
+# <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
+Получает флаг, указывающий, содержит ли модуль управляемый код.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,23 +33,23 @@ HRESULT get_hasManagedCode(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если модуль содержит управляемый код; в противном случае возвращает `FALSE`, код является неуправляемым кодом.
+заполняет Возвращает `TRUE`, если модуль содержит управляемый код; в противном случае возвращает `FALSE` код представляет собой неуправляемый код.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Это свойство доступно из `SymTagCompilandDetails` символ типа (см. в разделе [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
+## <a name="remarks"></a>Заметки
+ Это свойство доступно из `SymTagCompilandDetails` типа символов (см. [компиланддетаилс](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Требования
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

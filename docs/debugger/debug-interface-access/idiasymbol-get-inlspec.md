@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_InlSpec | Документация Майкрософт
+title: 'IDiaSymbol:: get_InlSpec | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8860668452a22413db8c6fc3d0fdc664c7ba36dd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5675239e35ab3bef809e3d54544d87d7a9e8bb75
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64835387"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740382"
 ---
-# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-Эта функция получает флаг, указывающий, была ли функция помечена как встроенное (с помощью одного из [встроенные, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) атрибутов).
+# <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
+Эта функция получает флаг, указывающий, была ли функция помечена как встроенная (с помощью [встроенных атрибутов, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_inlSpec(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если функция отмечена как подставляемая; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция была помечена как встроенная; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_inlSpec(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

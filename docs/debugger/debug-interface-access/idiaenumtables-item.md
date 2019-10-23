@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumTables::Item | Документация Майкрософт
+title: 'IDiaEnumTables:: Item | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03931580f774c29a67771d2251b51825242535c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf2d6b14f17d42a128e59446e27bfc251de40d17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829383"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743754"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
-Возвращает таблицу с помощью индекса или имени.
+Извлекает таблицу с помощью индекса или имени.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,17 +34,17 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Параметры
  `index`
 
-[in] Индекс или имя [IDiaTable](../../debugger/debug-interface-access/idiatable.md) требуется получить. Если используется вариант целое число, он должен быть в диапазоне от 0 до `count`-1, где `count` как возвращаемый [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) метод.
+окне Индекс или имя извлекаемого объекта [идиатабле](../../debugger/debug-interface-access/idiatable.md) . Если используется целочисленный вариант, он должен находиться в диапазоне от 0 до `count`-1, где `count` возвращается методом [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) .
 
  `table`
 
-[out] Возвращает [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объект, представляющий нужную таблицу.
+заполняет Возвращает объект [идиатабле](../../debugger/debug-interface-access/idiatable.md) , представляющий нужную таблицу.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Если указан вариант строка, строка имен конкретной таблицы. Имя должно быть одно из имен таблицы как определено в [константы (SDK отладки интерфейса доступа)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
+## <a name="remarks"></a>Заметки
+ Если указан строковый вариант, то строка будет указывать на конкретную таблицу. Имя должно быть одним из имен таблиц, как определено в [константах (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
 
 ## <a name="example"></a>Пример
 

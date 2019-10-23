@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_value | Документация Майкрософт
+title: 'IDiaSymbol:: get_value | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea0a0a2df1687d965437a8977eea649f77ea1ce4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62834549"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738934"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
-Получает значение константы.
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
+Возвращает значение константы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_value (
 #### <a name="parameters"></a>Параметры
 `pRetVal`
 
-[in, out] Объект `VARIANT` объект, который заполняется значение константы.
+[вход, выход] Объект `VARIANT`, который заполняется значением константы.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
-Указанный тип VARIANT необходимо инициализировать перед передачей в этот метод. Дополнительные сведения см. пример.
+## <a name="remarks"></a>Заметки
+Указанный вариант должен быть инициализирован до передачи в этот метод. Дополнительные сведения см. в примере.
 
 ## <a name="example"></a>Пример
 

@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 36b17adfd3968031983965ca47574804a9f1738e
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589095"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730553"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Отладка HTML и CSS в приложениях UWP в Visual Studio
 
@@ -254,7 +254,7 @@ ms.locfileid: "72589095"
 > [!NOTE]
 > В эмуляторе Windows Phone выделение элементов с помощью наведения поддерживается лишь частично.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)

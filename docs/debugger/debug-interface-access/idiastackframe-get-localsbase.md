@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_localsBase | Документация Майкрософт
+title: 'IDiaStackFrame:: get_localsBase | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe6dd1d5b72faea57ecb015b0da294798527c0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ae3f83469e14e826802ca82d3d58686a340d9e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838211"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741663"
 ---
-# <a name="idiastackframegetlocalsbase"></a>IDiaStackFrame::get_localsBase
-Получает базовый адрес локальные переменные для кадра.
+# <a name="idiastackframeget_localsbase"></a>IDiaStackFrame::get_localsBase
+Получает базовый адрес локальных переменных для рамки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_localsBase ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает базовый адрес локальных переменных.
+заполняет Возвращает базовый адрес локальных переменных.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

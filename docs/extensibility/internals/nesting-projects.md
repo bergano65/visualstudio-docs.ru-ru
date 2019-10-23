@@ -13,21 +13,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f291a9c105c8207fb6721d32d4d0481e49dd4295
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "69976694"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726425"
 ---
 # <a name="nesting-projects"></a>Проекты вложения
-Разработчики корпоративных приложений, использующие пакет VS, могут группировать схожие типы проектов вместе [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью *вложений проектов*. Например, проект корпоративного шаблона использует вложенные проекты для группировки проектов по категориям. Проекты Business фасадной, проекты пользовательского веб-интерфейса и т. д. группируются в одной категории.
+Разработчики корпоративных приложений, использующие пакет VS, могут группировать схожие типы проектов вместе в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью *вложений проектов*. Например, проект корпоративного шаблона использует вложенные проекты для группировки проектов по категориям. Проекты Business фасадной, проекты пользовательского веб-интерфейса и т. д. группируются в одной категории.
 
  В этом сценарии нет ограничений на количество проектов, которые разработчик может вкладывать в каждый родительский проект, хотя разработчик может программно предоставлять ограничения. Этот тип группирования можно также сделать рекурсивным. в этом случае проекты того же типа, что и дочерний проект, могут быть вложены в дочерний проект дочернего проекта, который является подпроектом родительского.
 
  Вложенность проектов не является встроенной частью [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Необходимо написать код для включения вложенности и вложенных проектов в дочерних проектах. Родительский проект — это особый пакет VSPackage или тип проекта, созданный и зарегистрированный с собственным идентификатором GUID, включающий код, необходимый для реализации вложенности проекта.
 
- Пример вложения проектов [см. в следующих руководствах: Реализуйте вложенные проекты](../../extensibility/internals/how-to-implement-nested-projects.md).
+ Пример вложения проектов см. в этом посвящении [: Реализация вложенных проектов](../../extensibility/internals/how-to-implement-nested-projects.md).
 
 ## <a name="nested-projects-example"></a>Пример вложенных проектов
  ![Решение вложенных проектов](../../extensibility/internals/media/vsnestedprojects.gif "вснестедпрожектс") Пример вложенных проектов
@@ -38,6 +38,6 @@ ms.locfileid: "69976694"
 - [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Реализация обработки команд для вложенных проектов](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Фильтрация диалогового окна AddItem для вложенных проектов](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Контекстные параметры](../../extensibility/internals/context-parameters.md)
 - [Файл мастера (VSZ-файл)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435643"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731280"
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
 Эти методы могут пригодиться при отладке программы MFC.
@@ -480,5 +480,5 @@ pMyPerson->Dump( afxDump );
 
    [Содержание раздела](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [Отладка машинного кода](../debugger/debugging-native-code.md)

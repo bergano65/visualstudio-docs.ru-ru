@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97b03f1a3ceb8424cc3e533512f6d0d3e034f791
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e6c5e956ddc3c03caf2fa27d31d7aafa4bea158
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554809"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745244"
 ---
 # <a name="dimension"></a>Измерение
-Каждый массив FORTRAN имеет измерения, который определяется параметром `SymTagDimension` символов.
+Каждый массив FORTRAN имеет измерение, которое определяется символом `SymTagDimension`.
 
 ## <a name="properties"></a>Свойства
- Ниже приведены дополнительные допустимые свойства для данного типа символов.
+ В следующей таблице показаны дополнительные допустимые свойства для этого типа символов.
 
-|Свойство|Тип данных|Описание|
+|свойство;|Тип данных|Описание|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_lowerBound](../../debugger/debug-interface-access/idiasymbol-get-lowerbound.md)|`IDiaSymbol*`|Нижняя граница массива измерения FORTRAN.|
-|[IDiaSymbol::get_lowerBoundId](../../debugger/debug-interface-access/idiasymbol-get-lowerboundid.md)|`DWORD`|Идентификатор символа, нижняя граница.|
+|[IDiaSymbol::get_lowerBound](../../debugger/debug-interface-access/idiasymbol-get-lowerbound.md)|`IDiaSymbol*`|Нижняя граница измерения массива FORTRAN.|
+|[IDiaSymbol::get_lowerBoundId](../../debugger/debug-interface-access/idiasymbol-get-lowerboundid.md)|`DWORD`|ИДЕНТИФИКАТОР символа с нижней границей.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Идентификатор индекса символа.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagDimension` (один из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значения).|
-|[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|`IDiaSymbol*`|Верхняя граница FORTRAN измерения массива.|
-|[IDiaSymbol::get_upperBoundId](../../debugger/debug-interface-access/idiasymbol-get-upperboundid.md)|`DWORD`|Идентификатор верхней границы символа.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagDimension` (одно из значений [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) ).|
+|[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|`IDiaSymbol*`|Верхняя граница измерения массива FORTRAN.|
+|[IDiaSymbol::get_upperBoundId](../../debugger/debug-interface-access/idiasymbol-get-upperboundid.md)|`DWORD`|ИДЕНТИФИКАТОР символа верхней границы.|
 
 ## <a name="see-also"></a>См. также
 - [ArrayType](../../debugger/debug-interface-access/arraytype.md)

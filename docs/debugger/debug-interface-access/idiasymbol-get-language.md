@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_language | Документация Майкрософт
+title: 'IDiaSymbol:: get_language | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97af3e1bcee89462b7060aaefa8f1fb452d2ab03
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eb7a7fa688825ce341417f695766a37ddb00028b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825423"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739989"
 ---
-# <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
-Получает язык источника.
+# <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
+Возвращает язык источника.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_language ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение из [перечисление CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) перечисления, указывающее язык источника.
+заполняет Возвращает значение из перечисления [перечисления CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) , которое указывает язык источника.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

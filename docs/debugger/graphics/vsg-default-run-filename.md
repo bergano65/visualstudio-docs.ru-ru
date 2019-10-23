@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895398"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734832"
 ---
-# <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
+# <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 Определяет имя файла журнала графики по умолчанию.
 
 ## <a name="syntax"></a>Синтаксис
@@ -27,17 +27,17 @@ ms.locfileid: "62895398"
 #### <a name="parameters"></a>Параметры
  `filename` Имя файла журнала графики, присваиваемое по умолчанию файлу журнала графики при захвате данных графики программными средствами.
 
-## <a name="value"></a>Значение
+## <a name="value"></a>значения
  Строковый литерал, который представляет имя файла журнала графики. По умолчанию это "default.vsglog".
 
 ```C++
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  Если определен символ препроцессора `DONT_SAVE_VSGLOG_TO_TEMP`, имя файла является относительным для текущего каталога захватываемого приложения или представляет собой абсолютный путь; в противном случае это имя относительно каталога временных файлов пользователя, которое не может быть абсолютным путем.
 
- Чтобы изменить определенное имя файла, необходимо переопределить его до включения `vsgcapture.h` в программе.
+ Чтобы изменить имя файла, необходимо переопределить его перед включением `vsgcapture.h` в программу.
 
 ## <a name="example"></a>Пример
  В следующем примере показано, как изменить имя файла захвата по умолчанию:

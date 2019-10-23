@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseDataSlot | Документация Майкрософт
+title: 'IDiaSymbol:: get_baseDataSlot | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 12aa68a549f47b27fd2b750d41631f4fabd546ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837703"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740961"
 ---
-# <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
-Извлекает ячейку базовых данных.
+# <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
+Извлекает базовый слот данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT get_baseDataSlot(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на `DWORD` , содержащий слот базовых данных.
+заполняет Указатель на `DWORD`, содержащий базовый слот данных.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
