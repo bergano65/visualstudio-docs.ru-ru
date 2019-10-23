@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Web performance tests, plug-ins
 - load tests, plug-ins
 ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8382d5014b88d9f1711a082e46530e1e3dfb96e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7cd3dbd5e7aeb00c2de1a656c26db3a377b8ffe8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965511"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665111"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Создание пользовательского кода и подключаемых модулей для нагрузочных тестов
 
@@ -33,7 +33,7 @@ ms.locfileid: "62965511"
 |**Добавление функций пользовательского интерфейса в средство просмотра результатов веб-тестов производительности** С помощью надстроек Visual Studio можно добавить в средство просмотра результатов веб-тестов производительности дополнительные элементы пользовательского интерфейса.|-   [Практическое руководство. Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
 |**Создание пользовательского редактора текста HTTP** Можно создать пользовательский редактор для работы с двоичными и строковыми XML-ответами HTTP, отправляемыми веб-службой.|-   [Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>
 

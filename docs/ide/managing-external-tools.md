@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535688"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652391"
 ---
 # <a name="manage-external-tools"></a>Управление внешними инструментами
 
@@ -61,7 +61,7 @@ ms.locfileid: "62535688"
 
 Ниже приведен полный список аргументов, которые можно использовать при определении внешнего инструмента:
 
-|name|Аргумент|Описание|
+|name|Аргумент|ОПИСАНИЕ|
 |----------|--------------|-----------------|
 |Путь к элементу|$(ItemPath)|Полное имя файла текущего файла (диск + путь + имя файла).|
 |Каталог элемента|$(ItemDir)|Каталог текущего файла (диск + путь).|

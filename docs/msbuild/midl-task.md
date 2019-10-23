@@ -18,20 +18,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), MIDL task
-- MIDL task (MSBuild (Visual C++))
+- MSBuild (C++), MIDL task
+- MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817575"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747249"
 ---
 # <a name="midl-task"></a>MIDL - задача
 Является оболочкой для компилятора с языка MIDL (*midl.exe*). Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -41,7 +41,7 @@ ms.locfileid: "62817575"
 
 - **AdditionalIncludeDirectories**
 
-     Необязательный параметр типа **String[]**.
+     Необязательный параметр типа **String[]** .
 
      Добавляет каталог к списку каталогов, в которых производится поиск импортированных файлов IDL, в том числе файлов заголовков и файлов конфигурации приложений (ACF).
 
@@ -141,7 +141,7 @@ ms.locfileid: "62817575"
 
      Если это значение `true`, проверить допустимость значения перечисления.
 
-     Дополнительные сведения см. в описании параметра **/error enum** в справке по командной строке (**/?**) для *midl.exe*.
+     Дополнительные сведения см. в описании параметра **/error enum** в справке по командной строке ( **/?** ) для *midl.exe*.
 
 - **ErrorCheckRefPointers**
 
@@ -255,9 +255,9 @@ ms.locfileid: "62817575"
 
 - **PreprocessorDefinitions**
 
-     Необязательный параметр типа **String[]**.
+     Необязательный параметр типа **String[]** .
 
-     Задает одно или несколько *определений*. Это имя и необязательное значение для передачи в препроцессор C (аналогично директиве `#define`). Форма каждой директивы определения — *имя [= значение]*.
+     Задает одно или несколько *определений*. Это имя и необязательное значение для передачи в препроцессор C (аналогично директиве `#define`). Форма каждой директивы определения — *имя [= значение]* .
 
      Дополнительные сведения см. в описании параметра **/D** в [Справочнике по командной строке языка MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **UndefinePreprocessorDefinitions** в этой таблице.
 
@@ -373,7 +373,7 @@ ms.locfileid: "62817575"
 
 - **UndefinePreprocessorDefinitions**
 
-     Необязательный параметр типа **String[]**.
+     Необязательный параметр типа **String[]** .
 
      Отменяет любые предыдущие определения имени, сделанные при передаче имени в препроцессор C (аналогично директиве `#undefine`). Укажите одно или несколько ранее определенных имен.
 

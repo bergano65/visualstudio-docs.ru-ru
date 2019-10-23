@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401b1b3d2b37f74ae28b0b27bad5b1715497a4e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978150"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652557"
 ---
 # <a name="customize-project-and-item-templates"></a>Настройка шаблонов проектов и элементов
 
@@ -25,15 +25,15 @@ ms.locfileid: "62978150"
 
 - Вы можете изменить и экспортировать существующий шаблон в виде шаблона пользователя.
 
-   Дополнительные сведения см. в разделе [Как обновить существующие шаблоны](../ide/how-to-update-existing-templates.md).
+   Дополнительные сведения см. в разделе [Практическое руководство. обновить существующие шаблоны](../ide/how-to-update-existing-templates.md).
 
 - Вы можете передать пользовательские параметры в шаблон для замены существующих значений.
 
-   Дополнительные сведения см. в разделе [Как заменить параметры в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
+   Дополнительные сведения см. в разделе [Практическое руководство. заменить параметры в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
 
 - Вы можете настроить мастеры, создающие проекты из шаблонов.
 
-   Дополнительные сведения см. в разделе [Как использовать мастера с шаблонами проектов (расширяемость)](../extensibility/how-to-use-wizards-with-project-templates.md).
+   Дополнительные сведения см. в разделе [Практическое руководство. использовать мастера с шаблонами проектов (расширяемость)](../extensibility/how-to-use-wizards-with-project-templates.md).
 
 ## <a name="see-also"></a>См. также
 

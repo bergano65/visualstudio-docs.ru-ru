@@ -3,20 +3,20 @@ title: Рефакторинг для перемещения типа в соот
 description: Переместите тип в отдельный файл с таким же именем. Щелкните тип правой кнопкой мыши, выберите "Быстрые действия и рефакторинг" и щелкните "Переместить тип в <TypeName>.cs".
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483656"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666477"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Рефакторинг для перемещения типа в соответствующий файл
 

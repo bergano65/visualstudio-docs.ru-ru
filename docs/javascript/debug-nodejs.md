@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263029"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589136"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
@@ -90,7 +90,9 @@ Visual Studio поддерживает отладку только для бра
 
     ![Присоединение к процессу](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Определить, что отладчик присоединился правильно, можно по открытию проводника DOM и консоли JavaScript в Visual Studio. Эти средства отладки аналогичны инструментам Chrome для разработчиков и средствам F12 для Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Если отладчик не присоединяется и появляется сообщение "Не удалось присоединиться к процессу. Операция недопустима в текущем состоянии" — попробуйте закрыть все экземпляры Chrome в диспетчере задач перед попыткой запуска Chrome в режиме отладки. Возможно, выполняются расширения Chrome и препятствуют переходу в режим полной отладки.

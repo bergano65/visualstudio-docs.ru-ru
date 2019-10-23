@@ -11,34 +11,34 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9814b03d0a8cd8733c9fd48b4e49c2cf306a8a44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975915"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647626"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Значки представления классов и обозревателя объектов
 
 **Представление классов** и **обозреватель объектов** отображают значки, представляющие сущности кода, например пространства имен, классы, функции и переменные. Эти значки описаны в приведенной ниже таблице.
 
-|Значок|Описание|Значок|Описание|
+|Значок|ОПИСАНИЕ|Значок|ОПИСАНИЕ|
 |----------|-----------------|----------|-----------------|
 |![Символ пространства имен](../ide/media/vxnamespace_icon.gif)|Пространство имен|![Символ объявления](../ide/media/vxmethod_icon.gif)|Метод или функция|
 |![Значок класса](../ide/media/vxclass_icon.gif)|Класс|![Символ оператора](../ide/media/vxoperator_icon.gif)|Оператор|
 |![Символ интерфейса без описания операций](../ide/media/vxinterface_icon.gif)|Интерфейс|![Символ свойства](../ide/media/vxproperty_icon.gif)|Свойство|
-|![Символ структуры](../ide/media/vxstruct_icon.gif)|Структура|![Значок поля](../ide/media/vxfield_icon.gif)|Поле или переменная|
+|![Символ структуры](../ide/media/vxstruct_icon.gif)|structure|![Значок поля](../ide/media/vxfield_icon.gif)|Поле или переменная|
 |![Символ объединения](../ide/media/vxunion_icon.gif)|Объединение|![Символ события](../ide/media/vxevent_icon.gif)|событие|
 |![Символ перечисления](../ide/media/vxenum_icon.gif)|Enum|![Значок константы](../ide/media/vxconstant_icon.gif)|Константа|
 |![Символ определения типа](../ide/media/vxtypedef_icon.gif)|TypeDef|![Символ элемента перечисления](../ide/media/vxenumitem_icon.gif)|Элемент перечисления|
 |![Символ модуля Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Символ элемента сопоставления](../ide/media/vxmapitem_icon.gif)|Элемент сопоставления|
 |![Символ метода расширения](../ide/media/extensionmethod.gif)|Метод расширения|![Символ объявления](../ide/media/vxmethod_icon.gif)|Внешнее объявление|
-|![Символ делегата](../ide/media/vxdelegate_icon.gif)|делегат|![Значок ошибки представления классов и обозревателя объектов](../ide/media/erroricon.gif)|Error|
+|![Символ делегата](../ide/media/vxdelegate_icon.gif)|делегат|![Значок ошибки представления классов и обозревателя объектов](../ide/media/erroricon.gif)|Ошибка|
 |![Символ исключения](../ide/media/vxexception_icon.gif)|Исключение|![Символ шаблона](../ide/media/vxtemplate_icon.gif)|Шаблон|
 |![Символ сопоставления](../ide/media/vxmap_icon.gif)|Карта|![Символ восклицательного знака при ошибке](../ide/media/vxerror_icon.gif)|Неизвестно|
 |![Символ пересылки типов](../ide/media/ob_type_forward.gif)|Перенаправление типов|||
@@ -47,7 +47,7 @@ ms.locfileid: "62975915"
 
 Приведенные ниже сигнальные значки применяются ко всем перечисленным выше значкам и указывают их доступность.
 
-|Значок|Описание|
+|Значок|ОПИСАНИЕ|
 |----------|-----------------|
 |\<Без сигнального значка>|Общедоступный. Доступен из любой части этого компонента, а также из любого компонента, который на него ссылается.|
 |![Символ Protected](../ide/media/vxsignal_icon_key.gif)|Защищенный. Доступен из содержащего класса или типа, а также из производных от них классов и типов.|

@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), GetOutOfDateItems task
-- GetOutOfDateItems task (MSBuild (Visual C++))
+- MSBuild (C++), GetOutOfDateItems task
+- GetOutOfDateItems task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: e3393dd7e81fa98c49dd09a32457171286f88f18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977494"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747309"
 ---
 # <a name="getoutofdateitems-task"></a>Задача GetOutOfDateItems
 
@@ -32,15 +32,15 @@ ms.locfileid: "62977494"
 
 В представленной ниже таблице приводятся параметры задачи **GetOutOfDateItems**.
 
-|Параметр|Описание|
+|Параметр|ОПИСАНИЕ|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Необязательный параметр типа **bool**.|
 |**CommandMetadataName**|Необязательный параметр типа **string**.|
 |**DependenciesMetadataName**|Необязательный параметр типа **string**.|
 |**HasInterdependencies**|Необязательный параметр вывода типа **bool**.|
-|**OutOfDateSources**|Необязательный параметр вывода **ITaskItem[]**.|
+|**OutOfDateSources**|Необязательный параметр вывода **ITaskItem[]** .|
 |**OutputsMetadataName**|Обязательный параметр **string**.|
-|**Sources**|Необязательный параметр **ITaskItem[]**.|
+|**Sources**|Необязательный параметр **ITaskItem[]** .|
 |**TLogDirectory**|Обязательный параметр **string**.|
 |**TLogNamePrefix**|Обязательный параметр **string**.|
 

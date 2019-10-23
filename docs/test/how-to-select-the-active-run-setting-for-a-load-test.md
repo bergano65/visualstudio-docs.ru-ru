@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949948"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653439"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Как выполнить Выбор активного параметра запуска для нагрузочного теста
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Практическое руководство. Выбор активного параметра запуска для нагрузочного теста
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства сценариев в соответствии с требованиями и целями тестирования.
 

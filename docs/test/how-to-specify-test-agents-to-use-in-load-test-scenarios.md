@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786436"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653403"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Как выполнить Задание агентов тестирования для использования в сценариях тестовой нагрузки
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Практическое руководство. Задание агентов тестирования для использования в сценариях тестовой нагрузки
 
 После создания нагрузочного теста в области **Мастер тестовой нагрузки** можно изменять свойства сценариев в соответствии с целями и потребностями тестирования с помощью области **Редактор тестовой нагрузки**.
 
