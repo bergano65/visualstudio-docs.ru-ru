@@ -1,5 +1,5 @@
 ---
-title: Отладка в смешанном режиме поддерживается только при использовании Microsoft.NET Framework 2.0 или 3.0 | Документация Майкрософт
+title: Отладка в смешанном режиме поддерживается только при использовании Microsoft .NET Framework 2,0 или 3,0 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 827d3c5fcc625601019d6cbf61cdbf7c771b63b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929861"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730920"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Отладка в смешанном режиме поддерживается только при использовании платформы Microsoft .NET Framework 2.0 или 3.0
 Версии платформы Microsoft .NET Framework, предшествующие версии 2.0, не поддерживают отладку в смешанном режиме для 64-разрядных процессов. Это значит, что при выполнении отладки переход из управляемого кода в неуправляемый (как и обратный переход) невозможен.
@@ -51,7 +51,7 @@ ms.locfileid: "62929861"
 
 ### <a name="to-correct-this-error"></a>Исправление ошибки
 
-- См. в разделе [настройки отладки SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- См. раздел [Настройка отладки SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>См. также
 - [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)

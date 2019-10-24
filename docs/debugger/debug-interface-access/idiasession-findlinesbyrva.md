@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByRVA | Документация Майкрософт
+title: 'IDiaSession:: Финдлинесбирва | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4316bfa423392a98946fc0bb86af2f2e9836aba2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6dfe92a5c804c0c81bfff6fa457e1ca797a62f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827686"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742090"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-Извлекает строки, содержащие указанный относительный виртуальный адрес (RVA) в указанной единице компиляции.
+Получает строки в указанном компилируемого объекта, которые содержат заданный относительный виртуальный адрес (RVA).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,21 +35,21 @@ HRESULT findLinesByRVA ( 
 #### <a name="parameters"></a>Параметры
 `rva`
 
-[in] Указывает адрес как RVA.
+окне Указывает адрес в виде RVA.
 
 `length`
 
-[in] Указывает число байтов из диапазона адресов, чтобы охватить с этим запросом.
+окне Указывает число байтов диапазона адресов, которое будет охватывать этот запрос.
 
 `ppResult`
 
-[out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список всех строке номера, охватывают указанный диапазон адресов.
+заполняет Возвращает объект [идиаенумлиненумберс](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список всех номеров строк, охватывающих указанный диапазон адресов.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В этом примере показана функция, который получает все номера строк, содержащихся в указанной функции, используя функции относительный виртуальный адрес и длину.
+В этом примере показана функция, которая получает все номера строк, содержащиеся в указанной функции, с использованием относительного виртуального адреса и длины функции.
 
 ```C++
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)

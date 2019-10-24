@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899fc041df3f7118de6be97309e8ce971235d178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 82bccbd9558a5dad87e9fe13f9ed7136a5d77d8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747526"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 Средства предметно-ориентированных языков (средства DSL), размещенные в Visual Studio, позволяют спроектировать доменный язык, а затем создать все, что необходимо для пользователей, чтобы создавать модели на основе языка.
@@ -74,7 +74,7 @@ ms.locfileid: "72658323"
 
  При сборке и запуске решения "средства DSL" в Visual Studio второй экземпляр Visual Studio показывает, как будет выглядеть язык, относящийся к домену, пользователю языка. Убедившись, что все работает правильно, можно распространять файл `.vsix`, который можно найти в папке сборки проекта DslPackage. Этот файл можно использовать для установки DSL в качестве расширения Visual Studio на других компьютерах.  Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Экспериментальный экземпляр](../extensibility/the-experimental-instance.md)
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

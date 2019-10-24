@@ -1,5 +1,5 @@
 ---
-title: CaptureCurrentFrame | Документация Майкрософт
+title: Каптурекуррентфраме | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec67013b41a5ec8876866044355534c42bfe2ee0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9967d776845088e707035c7b1c56855ac80af82
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736137"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 Захватывает оставшуюся часть текущего кадра в файл журнала графики.
@@ -24,10 +24,10 @@ ms.locfileid: "62848710"
 void CaptureCurrentFrame();
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  Если в данный момент выполняется другой захват — например, запущенный функцией `BeginCapture` — тот захват завершается и записывается в журнал графики как отдельный кадр. Сразу же после этого диагностика графики начинает захват остатка текущего кадра, который также записывается как отдельный кадр. Окончание текущего кадра отмечено вызовом метода Present.
 
- Для захвата кадра необходимо подготовить приложение к захвату и записи данных графики — то есть вам необходимо вызвать метод [Init](init.md) через экземпляр `VsgDbg` класса перед вызовом метода `CaptureCurrentFrame`.
+ Чтобы записать кадр, необходимо подготовить приложение для записи и записи графических данных, то есть необходимо вызвать метод [init](init.md) через экземпляр класса `VsgDbg` перед вызовом `CaptureCurrentFrame`.
 
 ## <a name="see-also"></a>См. также
 - [Init](init.md)

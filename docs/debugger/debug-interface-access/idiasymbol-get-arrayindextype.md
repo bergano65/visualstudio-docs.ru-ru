@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexType | Документация Майкрософт
+title: 'IDiaSymbol:: get_arrayIndexType | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a89afb7eb7d16f95ab5212d8cc081ac1cd84521
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 94a1ff47ce7ad6436f74f648edd27e02f98e54a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813950"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741044"
 ---
-# <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
-Извлекает интерфейс символ типа индекса массива символа.
+# <a name="idiasymbolget_arrayindextype"></a>IDiaSymbol::get_arrayIndexType
+Извлекает интерфейс символов для типа индекса массива символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,23 +33,23 @@ HRESULT get_arrayIndexType ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий тип индекса массива символа.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий тип индекса массива символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- В некоторых языках можно указать тип, используемый как индекс для массива. Этот тип символа, возвращаемого этим методом.
+## <a name="remarks"></a>Заметки
+ Некоторые языки могут указывать тип, используемый в качестве индекса для массива. Символ, возвращаемый этим методом, указывает этот тип.
 
 ## <a name="requirements"></a>Требования
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

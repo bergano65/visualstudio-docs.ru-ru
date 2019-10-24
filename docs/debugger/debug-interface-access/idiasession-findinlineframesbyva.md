@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByVA | Документация Майкрософт
+title: 'IDiaSession:: Финдинлинефрамесбива | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeb9d7b9925e8708ab100e68f88b28310da68fce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dca26021909220f9bb68a6794c299ec6c5a3d75a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742145"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
-Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров на указанный виртуальный адрес (VA).
+Извлекает перечисление, позволяющее клиенту выполнять итерацию всех встроенных кадров на указанном виртуальном адресе (ва).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,18 +32,18 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>Параметры
  `parent`
 
-[in] `IDiaSymbol` Объект, представляющий родительский объект.
+окне Объект `IDiaSymbol`, представляющий родительский элемент.
 
  `va`
 
-[in] Указывает адрес как ва.
+окне Указывает адрес в виде ва.
 
  `ppResult`
 
-[out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.
+заполняет Содержит объект `IDiaEnumSymbols`, содержащий список извлекаемых кадров.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

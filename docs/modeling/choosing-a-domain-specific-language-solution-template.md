@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d5eac08833c534e9da3a998687992cca6bc47c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110d357bd113913ab73990b8e3cfa12e4dd1cdae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653680"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748523"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Выбор шаблона решения на доменном языке
 Чтобы создать решение доменного языка, выберите один из шаблонов решений, доступных в мастере Конструктор предметно-ориентированных языков. Выбрав шаблон, который наиболее похож на тот, который требуется создать, можно максимально ограничить изменения, которые необходимо внести в начальное решение.
@@ -31,6 +31,6 @@ ms.locfileid: "72653680"
 |Минимальный конструктор WPF|— Небольшая модель<br />— Windows Presentation Foundation пользовательский интерфейс, отображающий модель.|Этот шаблон используется, если требуется создать приложение, в котором домен DSL привязан к пользовательскому интерфейсу WPF, а не к графическому конструктору.<br /><br /> Конструктор для пользовательского интерфейса находится в папке Дсл\уи.<br /><br /> Перед открытием конструктора пользовательского интерфейса необходимо построить проект.<br /><br /> Дополнительные сведения см. [в разделе Создание доменного языка на основе WPF](../modeling/creating-a-wpf-based-domain-specific-language.md).|
 |Библиотека DSL|— Минимальная библиотека|Используйте этот шаблон, если требуется создать частичное определение DSL, которое можно импортировать в другие определения DSL.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор средств доменных языков](../modeling/overview-of-domain-specific-language-tools.md)

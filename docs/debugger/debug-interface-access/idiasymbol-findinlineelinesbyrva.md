@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByRVA | Документация Майкрософт
+title: 'IDiaSymbol:: Финдинлинилинесбирва | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdcb85db51a3fcfca434af9d39bc88587a0e5cdc
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 737bc647cf3f5b64bdd8c48f7c827e8ef86a1386
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831761"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741208"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, в этот символ в пределах указанного относительного виртуального адреса (RVA).
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, встроенных, прямо или косвенно, в этом символе в пределах указанного относительного виртуального адреса (RVA).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,18 +31,18 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
 #### <a name="parameters"></a>Параметры
  `rva`
 
-[in] Указывает адрес как RVA.
+окне Указывает адрес в виде RVA.
 
  `length`
 
-[in] Указывает диапазон адресов, в байтах, чтобы охватить с этим запросом.
+окне Указывает диапазон адресов (в байтах), который охватывает этот запрос.
 
  `ppResult`
 
-[out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.
+заполняет Содержит объект `IDiaEnumLineNumbers`, содержащий список извлекаемых номеров строк.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_addressSection | Документация Майкрософт
+title: 'IDiaLineNumber:: get_addressSection | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a79ea8ba7c4e5622ee468cec8fe6cb53dd197c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2458ee3eb26bed46c8699c9fe41dadbde091bfad
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839866"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743271"
 ---
-# <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
-Извлекает раздел часть адреса памяти, где начинается блок.
+# <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
+Извлекает часть адреса памяти, с которой начинается блок.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,12 +31,12 @@ HRESULT get_addressSection ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- pRetVal
+ претвал
 
-[out] Возвращает раздел часть адреса памяти, где начинается блок.
+заполняет Возвращает часть адреса памяти, с которой начинается блок.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="example"></a>Пример
 

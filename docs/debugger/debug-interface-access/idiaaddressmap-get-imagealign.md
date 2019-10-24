@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::get_imageAlign | Документация Майкрософт
+title: 'IDiaAddressMap:: get_imageAlign | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb51f810d5c97ecf1cb0a6ea0b41dc7481252ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa5394580a9b0db4600a7f1e67aa8bd7f7703542
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554395"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745086"
 ---
-# <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
+# <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
 Извлекает текущее выравнивание изображения.
 
 ## <a name="syntax"></a>Синтаксис
@@ -33,13 +33,13 @@ HRESULT get_imageAlign ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение выравнивания изображения из исполняемого объекта.
+заполняет Возвращает значение выравнивания изображения из исполняемого файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Образы выравниваются по границам памяти, в зависимости от того, как был загружен и создается образ. Выравнивание обычно выполняется в пределах границ 1, 2, 4, 8, 16, 32 или 64 байта. Выравнивание изображения можно задать с помощью вызова [IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) метод.
+## <a name="remarks"></a>Заметки
+ Изображения согласовываются с конкретными границами памяти в зависимости от того, как изображение было загружено и создано. Обычно выравнивание составляет 1, 2, 4, 8, 16, 32 или 64 байт. Выравнивание изображения можно задать с помощью вызова метода [IDiaAddressMap::P ut_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) .
 
 ## <a name="see-also"></a>См. также
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Next | Документация Майкрософт
+title: 'Идиаенумфрамедата:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55875d4ad964b958bf2fb38d259e7d4d68909cb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6fe478e503ed6e16ee570f309f91434c658ebd27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830109"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744602"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Извлекает указанное число кадров данных элементов в последовательности перечисления.
+Извлекает указанное число элементов данных кадра в последовательности перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Число элементов данных кадра в перечислителе требуется получить.
+окне Количество элементов данных кадра в перечислителе для извлечения.
 
  rgelt
 
-[out] Массив [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) объектов необходимо заполнить элементы данных требуемой рамке.
+заполняет Массив объектов [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , которые должны быть заполнены элементами данных запрошенного кадра.
 
  pceltFetched
 
-[out] Возвращает число элементов данных кадра в выбранных перечислитель.
+заполняет Возвращает количество элементов данных кадра в выбранном перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные записи. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если больше нет записей. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

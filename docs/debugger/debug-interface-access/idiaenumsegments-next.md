@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments::Next | Документация Майкрософт
+title: 'Идиаенумсегментс:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b0f0d06ae5303277c296fd56e36e60b9a6f022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34062b654cbaccec053c5ac50bfb041d37a0f4e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829645"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744190"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
-Возвращает указанное количество сегментов в последовательности перечисления.
+Извлекает указанное количество сегментов в последовательности перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Количество сегментов в перечислителе требуется получить.
+окне Число извлекаемых сегментов в перечислителе.
 
  rgelt
 
-[out] Массив, который должен быть заполнен с требуемым [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) объекты, представляющие сегменты.
+заполняет Массив, который должен быть заполнен требуемыми объектами [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , представляющими сегменты.
 
  pceltFetched
 
-[out] Возвращает число сегментов в выбранных перечислитель.
+заполняет Возвращает количество сегментов в полученном перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии не больше сегментов. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если больше нет сегментов. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

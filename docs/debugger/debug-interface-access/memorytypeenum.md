@@ -1,5 +1,5 @@
 ---
-title: MemoryTypeEnum | Документация Майкрософт
+title: Меморитипинум | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0710ec5cdfcfcb59407d18b43b885603f017fdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855132"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738634"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-Указывает тип доступа к памяти.
+Указывает тип памяти для доступа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,19 +34,19 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Параметры
-`MemTypeCode` Доступ только кода памяти.
+`MemTypeCode` обращается только к памяти кода.
 
-`MemTypeData` Доступ к данных или стек памяти.
+`MemTypeData` обращается к данным или стековой памяти.
 
-`MemTypeStack` Доступ только стека памяти.
+`MemTypeStack` обращается только к памяти стека.
 
-`MemTypeAny` Обращается к памяти любого типа.
+`MemTypeAny` обращается к любому типу памяти.
 
-## <a name="remarks"></a>Примечания
-Значения в этом перечислении передаются [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) способ ограничить доступ к различным типам памяти.
+## <a name="remarks"></a>Заметки
+Значения в этом перечислении передаются методу [идиастакквалкхелпер:: readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) , чтобы ограничить доступ к различным типам памяти.
 
 ## <a name="requirements"></a>Требования
-Заголовок: cvconst.h
+Заголовок: квконст. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)

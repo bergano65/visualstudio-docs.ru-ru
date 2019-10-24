@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_subTypeId | Документация Майкрософт
+title: 'IDiaSymbol:: get_subTypeId | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e54f800b5843a17e0617b57de21bfcdd4616cef4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 66c7a05ef6b8e90eda2b29bdbb7d33fcf25a2af2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841644"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739270"
 ---
-# <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
-Извлекает идентификатор типа sub.
+# <a name="idiasymbolget_subtypeid"></a>IDiaSymbol::get_subTypeId
+Возвращает идентификатор подтипа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT get_subTypeId(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на `DWORD` , содержащий идентификатор типа sub.
+заполняет Указатель на `DWORD`, содержащий идентификатор подтипа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

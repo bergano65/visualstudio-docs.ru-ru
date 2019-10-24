@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::loadDataFromIStream | Документация Майкрософт
+title: 'Идиадатасаурце:: Лоаддатафромистреам | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9b218935085b04ae1a9931733aeca34766aa5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2bcf657b4404ed72059351175d124a9c07abb46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744943"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
-Подготавливает отладочные данные, хранящиеся в PDB-файл программы, через поток данных в памяти.
+Подготавливает данные отладки, хранящиеся в файле базы данных программы (. pdb), к которому осуществляется доступ через поток данных в памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,27 +31,27 @@ HRESULT loadDataFromIStream ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- pIStream
+ пистреам
 
-[in] <xref:IStream> Объект, представляющий поток данных для использования.
+окне Объект <xref:IStream>, представляющий используемый поток данных.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.
 
-|Значение|Описание|
+|значения|Описание|
 |-----------|-----------------|
-|E_PDB_FORMAT|Предпринята попытка получить доступ к файлу с устаревший формат.|
+|E_PDB_FORMAT|Попытка доступа к файлу с устаревшим форматом.|
 |E_INVALIDARG|Недопустимый параметр.|
 |E_UNEXPECTED|Источник данных уже подготовлен.|
 
-## <a name="remarks"></a>Примечания
- Этот метод позволяет данные отладки для исполняемого файла может быть получена из памяти посредством <xref:IStream> объекта.
+## <a name="remarks"></a>Заметки
+ Этот метод позволяет получать данные отладки для исполняемого файла из памяти через объект <xref:IStream>.
 
- Чтобы загрузить PDB-файл без проверки, используйте [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) метод.
+ Чтобы загрузить PDB-файл без проверки, используйте метод [идиадатасаурце:: лоаддатафромпдб](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
 
- Чтобы проверить PDB-файла с определенным критериям, используйте [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) метод.
+ Чтобы проверить PDB-файл на соответствие конкретным критериям, используйте метод [идиадатасаурце:: лоадандвалидатедатафромпдб](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .
 
- Чтобы получить доступ к процесс загрузки данных (через механизм обратного вызова), используйте [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод.
+ Чтобы получить доступ к процессу загрузки данных (посредством механизма обратного вызова), используйте метод [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
 ## <a name="see-also"></a>См. также
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

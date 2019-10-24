@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_notReached | Документация Майкрософт
+title: 'IDiaSymbol:: get_notReached | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9882033dd668ef9c907f9b6d466451541225ea
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e6232c9e6284126e4b2f01c5c09cb3088d4c07af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784183"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739709"
 ---
-# <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
-Получает флаг, указывающий ли функции или метки никогда не достигнут.
+# <a name="idiasymbolget_notreached"></a>IDiaSymbol::get_notReached
+Получает флаг, указывающий, никогда ли не достигается функция или метка.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,12 +31,12 @@ HRESULT get_notReached(
 ```
 
 #### <a name="parameters"></a>Параметры
- pFlag
+ пфлаг
 
-[out] Возвращает `TRUE` Если функция или метки никогда не будет достигнут; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция или метка никогда не достигают; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_notReached(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
