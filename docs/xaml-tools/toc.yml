@@ -14,7 +14,7 @@
       href: organize-objects-into-layout-containers-in-xaml-designer.md
     - name: Создание и применение ресурса
       href: how-to-create-and-apply-a-resource.md
-    - name: Пошаговое руководство Привязка к данным
+    - name: Пошаговое руководство. Привязка к данным
       href: walkthrough-binding-to-data-in-xaml-designer.md
     - name: Отладка или отключение кода проекта
       href: debugging-or-disabling-project-code-in-xaml-designer.md
@@ -98,7 +98,7 @@
                   href: ../designers/wpf-data-binding-using-linq-to-xml-example.md
                 - name: Сборка и запуск примера LinqToXmlDataBinding
                   href: ../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                - name: Пошаговое руководство Привязка данных LINQ to XML
+                - name: Пошаговое руководство. Привязка данных LINQ to XML
                   href: ../designers/walkthrough-linqtoxmldatabinding-example.md
                 - name: Исходный код L2DBForm.xaml
                   href: ../designers/l2dbform-xaml-source-code.md
@@ -107,8 +107,8 @@
     - name: Отладка приложений WPF
       items:
         - name: Отладка WPF
-          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Использование визуализатора дерева WPF
-          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Отображение данных трассировки WPF
-          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json

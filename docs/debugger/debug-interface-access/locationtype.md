@@ -1,5 +1,5 @@
 ---
-title: LocationType | Документация Майкрософт
+title: Локатионтипе | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738638"
 ---
 # <a name="locationtype"></a>LocationType
-Указывает тип данных о географическом положении, содержащихся в символе.
+Указывает тип сведений о расположении, содержащихся в символе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,37 +42,37 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Элементы
-`LocIsNull` Сведения о расположении недоступны.
+сведения о расположении `LocIsNull` недоступны.
 
-`LocIsStatic` Расположение является статическим.
+Расположение `LocIsStatic` является статическим.
 
-`LocIsTLS` Расположение находится в локальном хранилище потока.
+Расположение `LocIsTLS` находится в локальном хранилище потока.
 
-`LocIsRegRel` Расположение относительно регистра.
+Расположение `LocIsRegRel` является относительным для регистра.
 
-`LocIsThisRel` Расположение — `this`— относительный.
+`LocIsThisRel` расположение относительно `this`.
 
-`LocIsEnregistered` Расположение — в регистре.
+Расположение `LocIsEnregistered` находится в регистре.
 
-`LocIsBitField` Расположением является битовым полем.
+Расположение `LocIsBitField` находится в битовом поле.
 
-`LocIsSlot` Располагается в слот промежуточного языка MSIL (Microsoft).
+`LocIsSlot` расположение — это слот MSIL.
 
-`LocIsIlRel` Расположение — относительно MSIL.
+`LocIsIlRel` расположение относительно MSIL.
 
-`LocInMetaData` Расположение находится в метаданных.
+Расположение `LocInMetaData` находится в метаданных.
 
-`LocIsConstant` Расположение имеет постоянное значение.
+Расположение `LocIsConstant` находится в постоянном значении.
 
-`LocTypeMax` Количество типов расположение в этом перечислении.
+`LocTypeMax` число типов расположения в этом перечислении.
 
-## <a name="remarks"></a>Примечания
-Свойства, доступные для [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) интерфейс зависят от расположения символа в файле образа. Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md).
+## <a name="remarks"></a>Заметки
+Свойства, доступные для интерфейса [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , зависят от расположения символа в файле изображения. Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md).
 
-Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) метод.
+Значения в этом перечислении возвращаются путем вызова метода [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: cvconst.h
+Заголовок: квконст. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)

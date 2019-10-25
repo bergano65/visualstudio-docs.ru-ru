@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLines | Документация Майкрософт
+title: 'IDiaSession:: Финдинлинилинес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeed8047cd04e3cfedb5a3beed8dc42c87b551e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5103a881b1b046479a1a3156f06038e230f5063e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827779"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742243"
 ---
 # <a name="idiasessionfindinlineelines"></a>IDiaSession::findInlineeLines
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского объекта.
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, встроенных, прямо или косвенно, по указанному родительскому символу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,14 +32,14 @@ HRESULT findInlineeLines ( 
 #### <a name="parameters"></a>Параметры
  `parent`
 
-[in] `IDiaSymbol` Объект, представляющий родительский объект.
+окне Объект `IDiaSymbol`, представляющий родительский элемент.
 
  `ppResult`
 
-[out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.
+заполняет Содержит объект `IDiaEnumLineNumbers`, содержащий список извлекаемых номеров строк.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

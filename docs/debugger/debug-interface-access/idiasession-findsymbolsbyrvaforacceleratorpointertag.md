@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Документация Майкрософт
+title: 'IDiaSession:: Финдсимболсбирвафоракцелераторпоинтертаг | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bcf399dcf80cb574b6018dde5ffa44e72a4c988
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb1b24d24de35de30b24937a6cfbf59d12f69482
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839216"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741993"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-Учитывая соответствующее значение тега, этот метод возвращает перечисление символы, которые содержатся в функции заглушки Accelerator указанного родительского объекта в указанный относительный виртуальный адрес.
+При наличии соответствующего значения тега этот метод возвращает перечисление символов, содержащихся в указанной родительской функции-заглушке ускорителя, по указанному относительному виртуальному адресу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,25 +34,25 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Параметры
  `parent`
 
-[in] `IDiaSymbol` , Соответствующий функции заглушки сочетаний клавиш для поиска.
+окне @No__t_0, соответствующий функции-заглушке ускорителя для поиска.
 
  `tagValue`
 
-[in] Указатель на значение тега.
+окне Значение тега указателя.
 
  `rva`
 
-[in] Относительный виртуальный адрес.
+окне Относительный виртуальный адрес.
 
  `ppResult`
 
-[out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.
+заполняет Указатель на указатель интерфейса `IDiaEnumSymbols`, который инициализируется с помощью результата.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод следует вызывать только в `IDiaSymbol` интерфейс, который соответствует функции заглушки сочетаний клавиш.
+## <a name="remarks"></a>Заметки
+ Этот метод следует вызывать только в интерфейсе `IDiaSymbol`, соответствующем функции-заглушке ускорителя.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

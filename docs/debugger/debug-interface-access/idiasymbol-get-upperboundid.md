@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_upperBoundId | Документация Майкрософт
+title: 'IDiaSymbol:: get_upperBoundId | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711073319a5381a205672ae8023699a725b8936
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 640bce657df53bec66ab75575f35fcd68131a82a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803490"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738941"
 ---
-# <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
-Извлекает идентификатор символа верхнюю границу измерения массива FORTRAN.
+# <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
+Возвращает идентификатор символа верхней границы измерения массива FORTRAN.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,16 +32,16 @@ HRESULT get_upperBoundId ( 
 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
-- [out] Возвращает идентификатор символ, представляющий верхнюю границу измерения массива FORTRAN.
+- [out,] Возвращает идентификатор символа, представляющего верхнюю границу измерения массива FORTRAN.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.
+## <a name="remarks"></a>Заметки
+ Идентификатор — это уникальное значение, созданное пакетом SDK для DIA, чтобы пометить все символы как уникальные.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

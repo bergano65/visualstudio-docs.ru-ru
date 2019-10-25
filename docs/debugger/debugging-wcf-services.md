@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851751"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738074"
 ---
 # <a name="debugging-wcf-services"></a>Отладка служб WCF
-## <a name="in-this-section"></a>В этом разделе
- [Ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md) описаны ограничения на отладку WCF.
+## <a name="in-this-section"></a>Содержание
+ [Ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md) Описывает ограничения на отладку WCF.
 
- [Практическое руководство. Пошаговая отладка служб WCF](../debugger/how-to-step-into-wcf-services.md) объясняется поддержка отладчика для пошаговой отладки службы WCF.
+ [Инструкции: выполнение шагов в службах WCF](../debugger/how-to-step-into-wcf-services.md) Объясняет, как отладчик поддерживает пошаговую отладку службы WCF.
 
- [Практическое руководство. Отладка резидентной службы](../debugger/how-to-debug-a-self-hosted-wcf-service.md) описывается, как выполнить отладку службы WCF, которая выполняется вне IIS или [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development server.
+ [Как выполнить отладку автономной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Описывает отладку службы WCF, которая выполняется вне служб IIS или сервера [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server.
 
 ## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)

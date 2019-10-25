@@ -1,5 +1,5 @@
 ---
-title: IDiaImageData::get_imageBase | Документация Майкрософт
+title: 'Идиаимажедата:: get_imageBase | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829060"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743440"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Получает область памяти, в котором должно основываться изображение.
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
+Извлекает место в памяти, на котором должно быть основано изображение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает базовое значение предлагаемые образа.
+заполняет Возвращает рекомендуемое базовое значение изображения.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Из-за конфликтов базовый образ образ может изменения перемещены из автоматически опции неиспользуемой памяти при загрузке. Этот метод возвращает базовый указание (Рекомендуемый объем памяти расположение), которое было сохранено в модуле во время компиляции.
+## <a name="remarks"></a>Заметки
+ Из-за конфликтов базовых образов можно автоматически изменить базовый образ до неиспользуемой памяти при загрузке. Этот метод возвращает базовое указание (рекомендуемое расположение в памяти), которое было сохранено в модуле во время компиляции.
 
 ## <a name="see-also"></a>См. также
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

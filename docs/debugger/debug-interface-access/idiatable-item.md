@@ -1,5 +1,5 @@
 ---
-title: IDiaTable::Item | Документация Майкрософт
+title: 'Идиатабле:: Item | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d8070acfa254ae26e017a0070a21884309bc4d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d402f5ad54d5c0f487cebb3a8c53f68d17828ed4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840643"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738715"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Извлекает ссылку на указанную запись в таблице.
@@ -34,19 +34,19 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Параметры
  `index`
 
-[in] Индекс записи в таблице в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)метод.
+окне Индекс записи таблицы в диапазоне от 0 до `count`-1, где `count` возвращается методом [идиатабле:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md).
 
  `element`
 
-[out] Возвращает `IUnknown` , представляющий элемент указанной таблицы.
+заполняет Возвращает объект `IUnknown`, представляющий указанную запись таблицы.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Таблицы представляет коллекцию объектов. В зависимости от объектов элемент можно привести на соответствующий интерфейс. Например, если таблица содержит [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) объектов, а затем элемент параметра может быть приведен к `IDiaSegment` интерфейс.
+## <a name="remarks"></a>Заметки
+ Таблица представляет коллекцию объектов. В зависимости от этих объектов параметр element может быть приведен к соответствующему интерфейсу. Например, если таблица содержит объекты [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , то параметр element может быть приведен к интерфейсу `IDiaSegment`.
 
- Это наиболее распространенный подход для вызова `QueryInterface` метод в [IDiaTable](../../debugger/debug-interface-access/idiatable.md) интерфейса для интерфейса соответствующим перечислителем и использовать конкретные методы перечислителя для доступа к содержимому таблицы. См. в разделе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс пример.
+ Это более распространенный подход к вызову метода `QueryInterface` в интерфейсе [идиатабле](../../debugger/debug-interface-access/idiatable.md) для соответствующего интерфейса перечислителя и использования для доступа к содержимому таблицы конкретных методов перечислителя. Пример см. в интерфейсе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
 
 ## <a name="see-also"></a>См. также
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

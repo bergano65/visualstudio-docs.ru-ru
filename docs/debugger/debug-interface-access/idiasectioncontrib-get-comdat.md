@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_comdat | Документация Майкрософт
+title: 'IDiaSectionContrib:: get_comdat | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef38d5c4afcb065f7a095501e2bf5d95ee493789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832530"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742726"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Получает флаг, указывающий, является ли раздел записи COMDAT.
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
+Получает флаг, указывающий, является ли раздел записью типа COMDAT.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_comdat ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если раздел записи COMDAT; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если раздел является записью COMDAT; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Запись COMDAT — распространенные объекта файла формат COFF запись, которая делает видимой компоновщику упакованные функции.
+## <a name="remarks"></a>Заметки
+ Запись COMDAT — это запись формата COFF, которая делает упакованные функции видимыми для компоновщика.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_fileName | Документация Майкрософт
+title: 'IDiaSourceFile:: get_fileName | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f57454be3690f36cbf1addddb3d51bb01a39f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6e871570ad49a4efe2df320f98fe56b5372c6bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838354"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741797"
 ---
-# <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
-Получает имя исходного файла.
+# <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
+Извлекает имя исходного файла.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_fileName ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает имя исходного файла.
+заполняет Возвращает имя исходного файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

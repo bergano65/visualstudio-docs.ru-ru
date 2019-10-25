@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_optimizedCodeDebugInfo | Документация Майкрософт
+title: 'IDiaSymbol:: get_optimizedCodeDebugInfo | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e2edec7964e2105cd411321a6e7644e7835097
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 590603e0fd44d8ee6da84790a98cfd8ef8be0b98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796441"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739555"
 ---
-# <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
-Получает флаг, указывающий, содержит ли функция отладочной информации, характерное для оптимизированного кода.
+# <a name="idiasymbolget_optimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
+Получает флаг, указывающий, содержит ли функция отладочную информацию, относящуюся к оптимизированному коду.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_optimizedCodeDebugInfo(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если Оптимизированная функция или метка содержит сведения об отладке; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если Оптимизированная функция или метка содержит отладочную информацию; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,7 +45,7 @@ HRESULT get_optimizedCodeDebugInfo(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
+|Заголовок:|dia2. h|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

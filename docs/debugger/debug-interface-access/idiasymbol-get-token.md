@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_token | Документация Майкрософт
+title: 'IDiaSymbol:: get_token | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0d9fc8a95c3efb0dcafcf20038d47e13deda5e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ffbe9e2d078a27a345fb35083646defb3fe271e4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813297"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739130"
 ---
-# <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
-Извлекает маркер метаданных управляемой функции или переменной.
+# <a name="idiasymbolget_token"></a>IDiaSymbol::get_token
+Получает маркер метаданных управляемой функции или переменной.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_token ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает маркер метаданных для управляемой функции или переменной.
+заполняет Возвращает маркер метаданных управляемой функции или переменной.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

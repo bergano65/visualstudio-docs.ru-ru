@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_lengthProlog | Документация Майкрософт
+title: 'IDiaFrameData:: get_lengthProlog | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad162a8a29bd9432424ce64d00e820a0bfde1dd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00b85d1db996487d76d396d6e4df9ea557e6aae5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839957"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743561"
 ---
-# <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
-Возвращает число байтов кода пролога в блоке.
+# <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
+Извлекает число байтов кода пролога в блоке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_lengthProlog ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает число байтов кода пролога.
+заполняет Возвращает число байтов кода пролога.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Кода пролога — это последовательность инструкций, который сохраняет регистры, задает состояние ЦП и устанавливает стека для функции.
+## <a name="remarks"></a>Заметки
+ Код пролога — это последовательность инструкций, которая сохраняет регистры, устанавливает состояние ЦП и устанавливает стек для функции.
 
 ## <a name="see-also"></a>См. также
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

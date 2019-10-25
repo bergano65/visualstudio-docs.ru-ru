@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Item | Документация Майкрософт
+title: 'Идиаенумдебугстреамс:: Item | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f07ecb151b6bf2cd4a9d48fbe6596bc7a533f97a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a07669e36d397550c28d1cc4a5de2ad300763e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838263"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744744"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Извлекает поток отладки с помощью индекса или имени.
@@ -34,14 +34,14 @@ HRESULT Item (
 #### <a name="parameters"></a>Параметры
 индекс
 
-[in] Индекс или имя потока отладки требуется получить. Если используется вариант целое число, он должен быть в диапазоне от 0 до `count`-1, где `count` как возвращаемый [IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) метод.
+окне Индекс или имя извлекаемого потока отладки. Если используется целочисленный вариант, он должен находиться в диапазоне от 0 до `count`-1, где `count` возвращается методом [идиаенумдебугстреамс:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .
 
 поток
 
-[out] Возвращает [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объект, представляющий поток, указанный отладки.
+заполняет Возвращает объект [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) , представляющий указанный поток отладки.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
 

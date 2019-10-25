@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd81117c11eb42dbccf22e55ee5e294ad9c3c96a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9f28dc5e60343cc6aacdf456d5475afbfc7db5e9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62834368"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738782"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Извлекает исходный файл и номер строки, указывающие, где определен указанного определяемого пользователем типа.
+Извлекает исходный файл и номер строки, указывающие, где определен определяемый пользователем тип.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT getSrcLineOnTypeDefn(
 #### <a name="parameters"></a>Параметры
  `ppResult`
 
-[out] Объект `IDiaLineNumber` , содержащий исходный файл и номер строки, где определяются пользователем.
+заполняет Объект `IDiaLineNumber`, содержащий исходный файл и номер строки, в которой определяется пользователем.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

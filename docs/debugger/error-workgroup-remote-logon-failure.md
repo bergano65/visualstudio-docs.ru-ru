@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Сбой входа в систему рабочей группы удаленного | Документация Майкрософт'
+title: 'Ошибка: сбой удаленного входа в рабочую группу | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9142e92367dd10653bb8fdaaf86c34f3f17b84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399228"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736263"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Ошибка: сбой удаленного входа в систему рабочей группы
 Текст сообщения об ошибке:
@@ -55,7 +55,7 @@ ms.locfileid: "63399228"
 
 4. В столбце **Политика** дважды щелкните **Отладка программ** для просмотра назначений текущей локальной групповой политики в диалоговом окне **Параметр локальной политики безопасности**.
 
-     ![Права локальной политики безопасности пользователя](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
+     ![Права пользователя локальной политики безопасности](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
 5. Чтобы добавить новых пользователей, нажмите кнопку **Добавить пользователя или группу**.
 
@@ -67,11 +67,11 @@ ms.locfileid: "63399228"
 
 3. Нажмите **Параметры безопасности**.
 
-4. В **политики** столбец, дважды щелкните **сетевой доступ: Модель совместного доступа и безопасности для локальных учетных записей**.
+4. В столбце **Политика** дважды щелкните **Сетевой доступ: модель совместного доступа и безопасности для локальных учетных записей**.
 
-5. В **сетевой доступ: Модель совместного доступа и безопасности для локальных учетных записей** диалоговом окне измените значение на **Обычная — локальные пользователи удостоверяются как они сами** и нажмите кнопку **применить** кнопки.
+5. В диалоговом окне **Сетевой доступ: модель совместного доступа и безопасности для локальных учетных записей** измените значение на **Обычная — локальные пользователи удостоверяются как они сами** и нажмите кнопку **Применить**.
 
-     ![Параметры безопасности для политики локальной безопасности](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![Параметры безопасности локальной политики безопасности](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
 ## <a name="see-also"></a>См. также
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

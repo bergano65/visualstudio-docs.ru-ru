@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Документация Майкрософт
+title: 'Идиастакквалкхелпер:: readMemory | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831810"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741364"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-Считывает блок данных из исполняемого файла изображения в памяти.
+Считывает блок данных из образа исполняемого файла в памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,26 +37,26 @@ HRESULT readMemory( 
 #### <a name="parameters"></a>Параметры
  `type`
 
-[in] Значение из [перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) перечисление, определяющее тип памяти для чтения.
+окне Значение из перечисления [перечисления меморитипинум](../../debugger/debug-interface-access/memorytypeenum.md) , указывающее тип памяти для чтения.
 
  va
 
-[in] Виртуальный адрес в образе, с которого начинается чтение.
+окне Виртуальный адрес в образе, с которого начинается чтение.
 
  `cbData`
 
-[in] Размер буфера данных в байтах.
+окне Размер буфера данных в байтах.
 
  `pcbData`
 
-[out] Возвращает число фактически считанных байтов. Если `pbData` — `NULL`, то это общее число байтов доступных данных.
+заполняет Возвращает число фактически считанных байтов. Если `pbData` `NULL`, то это общее число доступных данных в байтах.
 
  `pbData`
 
-[in, out] Буфер, который заполняется память чтения.
+[вход, выход] Буфер, который заполняется считанной памятью.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

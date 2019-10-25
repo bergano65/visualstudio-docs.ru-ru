@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::getEnumTables | Документация Майкрософт
+title: 'IDiaSession:: Жетенумтаблес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759972fa02c7645ae457e0b715d835b2d717e26f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41679304986f5de948119a2958524b8f269ceb42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839177"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741922"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
-Возвращает перечислитель для всех таблиц, содержащихся в хранилище символов.
+Извлекает перечислитель для всех таблиц, содержащихся в хранилище символов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT getEnumTables (
 #### <a name="parameters"></a>Параметры
 `ppEnumTables`
 
-[out] Возвращает [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) объекта. Этот интерфейс можно используйте для перечисления таблиц в хранилище символов.
+заполняет Возвращает объект [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Используйте этот интерфейс для перечисления таблиц в хранилище символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В этом примере представлены общие функции, которая использует `getEnumTables` метод для получения объекта определенного перечислителя. При обнаружении перечислитель, функция возвращает указатель, который может быть приведен к требуемого интерфейса; в противном случае функция возвращает `NULL`.
+В этом примере представлена общая функция, использующая метод `getEnumTables` для получения конкретного объекта перечислителя. Если перечислитель найден, функция возвращает указатель, который может быть приведен к требуемому интерфейсу. в противном случае функция возвращает `NULL`.
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)

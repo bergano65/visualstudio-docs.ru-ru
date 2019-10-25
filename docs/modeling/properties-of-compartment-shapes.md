@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a24d288e7c5572ca96dcc43466c2163d9ecca67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ad53866c1930edb01ccd163131ce5e23644929c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658269"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747510"
 ---
 # <a name="properties-of-compartment-shapes"></a>Свойства фигур, состоящих из секций
 Фигуры секций — это одна из фигур, которую можно использовать для вывода класса предметной области на предметно-ориентированном языке. Секции можно разворачивать и сворачивать.
@@ -55,6 +55,6 @@ ms.locfileid: "72658269"
 |Исправлен текст подсказки|Текст, используемый для фиксированной подсказки.|\<none>|
 |Ключевое слово Help|Ключевое слово, используемое для индексации справки F1 для этой фигуры.|\<none>|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

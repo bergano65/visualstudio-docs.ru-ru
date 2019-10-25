@@ -1,5 +1,5 @@
 ---
-title: IDiaImageData | Документация Майкрософт
+title: Идиаимажедата | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75a81ae23db90b06915e7090a9f2918be3ff18ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828514"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743397"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Предоставляет сведения о базового смещения расположения и памяти модуля или изображения.
+Предоставляет подробные сведения о базовом расположении и смещениях памяти для модуля или изображения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +33,18 @@ IDiaImageData : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Извлекает расположение виртуальной памяти модуля относительно приложения.|
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Извлекает расположение изображения в виртуальной памяти.|
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Получает область памяти, в котором должно основываться изображение.|
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Извлекает расположение в виртуальной памяти модуля относительно приложения.|
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Извлекает расположение в виртуальной памяти образа.|
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Извлекает место в памяти, на котором должно быть основано изображение.|
 
-## <a name="remarks"></a>Примечания
-Некоторые потоки отладки (XDATA, PDATA) содержат копии данных, также сохраняются в образе. Эти потоковую передачу данных, можно запрашивать объекты `IDiaImageData` интерфейс. В этом разделе сведения в разделе «Примечания для вызывающих объектов».
+## <a name="remarks"></a>Заметки
+Некоторые отладочные потоки (XDATA, PDATA) содержат копии данных, которые также хранятся в образе. Эти объекты потоковых данных можно запрашивать для интерфейса `IDiaImageData`. Дополнительные сведения см. в подразделе "Примечания для вызывающих объектов" этого раздела.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
-Получить этот интерфейс, вызвав `QueryInterface` на [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объекта. Обратите внимание, что не все отладочные потоки поддержки `IDiaImageData` интерфейс. Например, в настоящее время поддерживает только потоки XDATA и PDATA `IDiaImageData` интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Получите этот интерфейс, вызвав `QueryInterface` для объекта [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Обратите внимание, что не все отладочные потоки поддерживают интерфейс `IDiaImageData`. Например, в настоящее время интерфейс `IDiaImageData` поддерживает только потоки XDATA и PDATA.
 
 ## <a name="example"></a>Пример
-В этом примере выполняется поиск всего потоки отладки для любого потока, который поддерживает `IDiaImageData` интерфейс. При обнаружении такой поток отображается некоторые сведения об этом потоке.
+В этом примере выполняется поиск всех потоков отладки для любого потока, поддерживающего интерфейс `IDiaImageData`. Если такой поток найден, отображаются некоторые сведения об этом потоке.
 
 ```C++
 void ShowImageData(IDiaSession *pSession)
@@ -111,9 +111,9 @@ void ShowImageData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: dia2.h
+Заголовок: Dia2. h
 
-Библиотека: diaguids.lib
+Библиотека: диагуидс. lib
 
 DLL: msdia80.dll
 

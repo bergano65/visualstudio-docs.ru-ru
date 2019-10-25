@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::put_addressMapEnabled | Документация Майкрософт
+title: IDiaAddressMap::p ut_addressMapEnabled | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36cf93beb6b6c8b66ec25dc8008be7024e398b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fe5589b667054ee75e3b01743553a2d60bef92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554343"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745064"
 ---
-# <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
-Указывает, следует ли использовать карту для преобразования символа адреса.
+# <a name="idiaaddressmapput_addressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
+Указывает, следует ли использовать карту адресов для преобразования адресов символов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,19 +31,19 @@ HRESULT put_addressMapEnabled ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- NewVal
+ неввал
 
-[in] Значение `TRUE` включить перевод символов, или `FALSE` для отключения.
+окне Задайте значение `TRUE`, чтобы включить перевод символов, или `FALSE` для отключения.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Исполняемый файл после процессоров иногда обновить исполняемый файл. Доступа к интерфейсу отладки содержит механизм для поддержки преобразования символов для нового макета.
+## <a name="remarks"></a>Заметки
+ Исполняемые процедуры, выполняемые после выполнения обработчиков, иногда обновляют исполняемый файл. DIA содержит механизм для поддержки перевода символов в новый макет.
 
- При загрузке PDB-файл включен карта распределения, сохраненной в файле. Иногда, тем не менее, когда клиентское приложение может понадобиться предоставить свой собственный адрес карты, вызвав [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод. Если `set_addressMap` метод выполнен успешно, клиентское приложение должно вызывать `put_addressMapEnabled` метод с `NewVal` параметр `TRUE` для включения использования map этот адрес.
+ При загрузке PDB-файла таблица адресов, хранимая в файле, становится доступной. Однако бывают случаи, когда клиентскому приложению может потребоваться предоставить собственную карту адресов, вызвав метод [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) . Если метод `set_addressMap` успешно выполнен, клиентское приложение должно вызвать метод `put_addressMapEnabled` с параметром `NewVal` `TRUE`, чтобы разрешить использование этой гиперкарты адресов.
 
- Текущее состояние включения карты адрес можно получить с помощью вызова [IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) метод.
+ Текущее состояние включенной таблицы адресов можно получить с помощью вызова метода [IDiaAddressMap:: get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) .
 
 ## <a name="see-also"></a>См. также
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

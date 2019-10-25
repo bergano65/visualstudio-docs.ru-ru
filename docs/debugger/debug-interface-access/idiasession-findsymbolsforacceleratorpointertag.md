@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag | Документация Майкрософт
+title: 'IDiaSession:: Финдсимболсфоракцелераторпоинтертаг | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72510e9e82c1ec6983075880d4335dee8c0ad23c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da795770ad0f6f57697bc17a4ee8cf936cfc1183
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839242"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741972"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Возвращает перечисление символов для переменной, которая соответствует указанным значением тега в родительском объекте функция заглушки сочетаний клавиш.
+Возвращает перечисление символов для переменной, которой соответствует указанное значение тега в родительской функции-заглушке ускорителя.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +33,18 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Параметры
  `parent`
 
-[in] IDiaSymbol, соответствующую функцию заглушки сочетаний клавиш для поиска.
+окне Объект IDiaSymbol, соответствующий функции-заглушке ускорителя для поиска.
 
  `tagValue`
 
-[in] Указатель на значение тега.
+окне Значение тега указателя.
 
  `ppResult`
 
-[out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.
+заполняет Указатель на указатель интерфейса `IDiaEnumSymbols`, который инициализируется с помощью результата.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

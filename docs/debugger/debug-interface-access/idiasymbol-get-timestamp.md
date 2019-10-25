@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_timeStamp | Документация Майкрософт
+title: 'IDiaSymbol:: get_timeStamp | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f75ab56c8c34e2c58e0f0560422021299c9540
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de05b30147e91ed9d82dce03f7a72d34250598de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739117"
 ---
-# <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-Получает базовый исполняемый файл с меткой времени.
+# <a name="idiasymbolget_timestamp"></a>IDiaSymbol::get_timeStamp
+Извлекает метку времени базового исполняемого файла.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_timeStamp ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает метку времени базовый исполняемый файл.
+заполняет Возвращает метку времени базового исполняемого файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

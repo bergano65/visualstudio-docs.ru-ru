@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_scoped | Документация Майкрософт
+title: 'IDiaSymbol:: get_scoped | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9c4864f09c4e66bada76f9d9b058c7d3660c96
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 862fa147b5f157760a93631d0e2c8addbd3bd1f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790283"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739377"
 ---
-# <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
-Получает флаг, указывающий, отображается ли определяемый пользователем тип в неглобальной лексической области.
+# <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
+Получает флаг, указывающий, отображается ли определяемый пользователем тип данных в неглобальной лексической области.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_scoped ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если определяемый пользователем тип в неглобальной лексической области действия; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если определяемый пользователем тип данных отображается в неглобальной лексической области. в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

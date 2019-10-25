@@ -1,5 +1,5 @@
 ---
-title: UdtKind | Документация Майкрософт
+title: Удткинд | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45ed43bf65c38890ca7ebda1a6b1719532697eae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853514"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738446"
 ---
 # <a name="udtkind"></a>UdtKind
-Описывает различные определяемого пользователем типа (UDT).
+Описывает разнообразные определяемые пользователем типы (UDT).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,19 +34,19 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Элементы
-UdtStruct определяемого пользователем ТИПА — это структура.
+Удтструкт UDT — это структура.
 
-UdtClass определяемого пользователем ТИПА — это класс.
+Удткласс UDT — это класс.
 
-UdtUnion определяемого пользователем ТИПА — это объединение.
+Удтунион UDT является объединением.
 
-UdtInterface определяемый пользователем тип является интерфейсом.
+Удтинтерфаце UDT — это интерфейс.
 
-## <a name="remarks"></a>Примечания
-Возвращаемые значения в этом перечислении [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) метод.
+## <a name="remarks"></a>Заметки
+Значения в этом перечислении возвращаются методом [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: cvconst.h
+Заголовок: квконст. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)

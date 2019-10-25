@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отладка в высокопроизводительном кластере | Документация Майкрософт
+title: Как выполнять отладку в кластере с высоким уровнем производительности | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894330"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733663"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Практическое руководство. Отладка в высокопроизводительном кластере (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Как выполнять отладку в высокопроизводительном кластере (C#Visual Basic, C++)
 
-Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Требования к удаленной установке в общем, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).
+Отладка многопроцессной программы на высокопроизводительном кластере аналогична отладке обычного приложения на удаленном компьютере. Однако, существуют некоторые дополнительные соображения. Общие требования к удаленной установке см. в разделе [Удаленная отладка](../debugger/remote-debugging.md).
 
  При отладке на кластере высокой производительности можно использовать все окна отладки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и методы, которые доступны для удаленной отладки. Однако, так как отладка происходит удаленно, то внешнее окно консоли не доступно.
 
@@ -99,7 +99,7 @@ ms.locfileid: "62894330"
 ## <a name="see-also"></a>См. также
 - [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
-- [Практическое руководство. Использование окна процессов](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [Как использовать окно "процессы"](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Потоков и процессов](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
+- [Потоки и процессы](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [Использование точек останова](../debugger/using-breakpoints.md)

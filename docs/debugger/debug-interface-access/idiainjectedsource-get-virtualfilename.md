@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_virtualFilename | Документация Майкрософт
+title: 'Идиаинжектедсаурце:: get_virtualFilename | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d60a8c46c4a9e6f17e0123554ac25cb14bbf430b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828399"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743302"
 ---
-# <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, который был вызван.
+# <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
+Возвращает имя, присвоенное исходному коду, не являющемуся файлом; Это значит, что добавлен код.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_virtualFilename ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает имя, присвоенное внедренного не являющимся файлами исходного кода.
+заполняет Возвращает имя, присвоенное внедренному исходному коду, не являющемуся файлом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_columnNumberEnd | Документация Майкрософт
+title: 'IDiaLineNumber:: get_columnNumberEnd | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567df436093b53432e44e21fb96f0d092b71c81d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4433bc243a7a4f5352f0476370853572be8ddd38
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839853"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743250"
 ---
-# <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-Получает номер столбца источника от единицы, которой заканчивается выражения или оператора.
+# <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
+Получает номер исходного столбца, основанный на единице, где заканчивается выражение или оператор.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_columnNumberEnd ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает номер столбца, в которой заканчивается выражения или оператора. Если значение равно нулю, сведения о столбце окончания отсутствует.
+заполняет Возвращает номер столбца, в котором заканчивается выражение или оператор. Если значение равно нулю, то сведения об окончании столбца отсутствуют.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Значение столбца, возвращаемого этим методом является байтовое смещение в строку в позицию после последнего символа в строке инструкции.
+## <a name="remarks"></a>Заметки
+ Значение столбца, возвращаемое этим методом, представляет собой байтовое смещение строки после последнего символа оператора в строке.
 
 ## <a name="see-also"></a>См. также
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

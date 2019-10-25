@@ -23,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00ea299ae7cebea5d6ad1a09837dc75e10568aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852797"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738371"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Версии отладки функций выделения кучи
 Библиотека CRT содержит специальные отладочные версии функций выделения кучи. Эти функции называются так же, как и их версии для выпуска с присоединенным к ним _dbg. В этом разделе описываются различия между версией функции CRT для окончательного выпуска и версией _dbg; для примера взяты `malloc`и `_malloc_dbg`.
 
- Когда [_DEBUG](/cpp/c-runtime-library/debug) будет определен, CRT преобразует все [malloc](/cpp/c-runtime-library/reference/malloc) вызовы [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Таким образом, чтобы получить преимущества режима отладки, не придется переписывать код и заменять `_malloc_dbg` на `malloc`.
+ Если определен [_DEBUG](/cpp/c-runtime-library/debug) , CRT сопоставляет все вызовы [malloc](/cpp/c-runtime-library/reference/malloc) с [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Таким образом, чтобы получить преимущества режима отладки, не придется переписывать код и заменять `_malloc_dbg` на `malloc`.
 
  Конечно, при желании можно и явно вызывать `_malloc_dbg`. Явный вызов `_malloc_dbg` имеет свои преимущества:
 
@@ -41,11 +41,11 @@ ms.locfileid: "62852797"
 
 - Запись имени исходного файла и номера строки, где был сделан запрос на выделение памяти.
 
-  Если вы не хотите преобразовать вашей `malloc` вызовы `_malloc_dbg`, данные исходного файла можно получить путем определения [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), который заставляет препроцессор непосредственно преобразовывать все вызовы `malloc` для `_malloc_dbg` вместо того чтобы оболочку вокруг `malloc`.
+  Если вы не хотите преобразовывать `malloc` вызовы в `_malloc_dbg`, можно получить сведения об исходном файле, определив [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), что заставляет препроцессор напрямую сопоставлять все вызовы `malloc` с `_malloc_dbg`, вместо того чтобы полагаться на оболочку  `malloc`.
 
   Чтобы отследить отдельные типы выделений памяти в клиентских блоках, нужно непосредственно вызвать функцию `_malloc_dbg` и задать параметру `blockType` значение `_CLIENT_BLOCK`.
 
-  Если _DEBUG не определен, вызовы `malloc` не задействуются, вызовы функций `_malloc_dbg` можно использовать для `malloc`, определение [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) игнорируется и исходные сведения о файле, относящиеся к запрос на выделение не предоставляется. Поскольку `malloc`не имеет параметра типа блока, запросы на тип `_CLIENT_BLOCK` обрабатываются как стандартные выделения.
+  Если _DEBUG не определен, вызовы `malloc` не переносятся, вызовы `_malloc_dbg` разрешаются в `malloc`, определение [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) игнорируется, а сведения о файлах исходного кода, относящиеся к запросу на выделение, не предоставляются. Поскольку `malloc`не имеет параметра типа блока, запросы на тип `_CLIENT_BLOCK` обрабатываются как стандартные выделения.
 
 ## <a name="see-also"></a>См. также
 

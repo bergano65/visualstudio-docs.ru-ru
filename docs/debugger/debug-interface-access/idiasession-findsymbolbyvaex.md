@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolByVAEx | Документация Майкрософт
+title: 'IDiaSession:: Финдсимболбиваекс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b62c5efb520e90606d6311b60a839404359720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56dd91e76380bb4f43fae4f26d4124b2f9bc3ebf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832367"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741989"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-Возвращает тип указанного символа, который содержит, или ближайший к указанному виртуальному адресу (VA) и смещение.
+Извлекает указанный тип символа, который содержит, или ближайший к, указанный виртуальный адрес (ва) и смещение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByVAEx ( 
 #### <a name="parameters"></a>Параметры
  `va`
 
-[in] Указывает ва.
+окне Указывает значение ва.
 
  `symtag`
 
-[in] Найти тип символа. Значения берутся из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления.
+окне Тип символа для поиска. Значения берутся из перечисления [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) извлечь объект, представляющий символ.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий полученный символ.
 
  `displacement`
 
-[out] Возвращает значение, указывающее смещение относительно виртуального адреса, заданного выражением `va`.
+заполняет Возвращает значение, указывающее смещение от виртуального адреса, заданного `va`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
 

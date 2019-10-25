@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a5af94d6a5d6100f8ffb6047f57ee59f780da5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 57cb155d5cfcb4f2b59c101388dcc4907e1b6d80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831728"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741172"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров по указанному адресу.
+Извлекает перечисление, позволяющее клиенту выполнять итерацию всех встроенных кадров по заданному адресу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +33,18 @@ HRESULT findInlineFramesByAddr ( 
 #### <a name="parameters"></a>Параметры
  `isect`
 
-[in] Задает компонент прокрутки на разделе адреса.
+окне Указывает компонент раздела адреса.
 
  `offset`
 
-[in] Задает компонент прокрутки на смещения адреса.
+окне Указывает компонент смещения адреса.
 
  `ppResult`
 
-[out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.
+заполняет Содержит объект `IDiaEnumSymbols`, содержащий список извлекаемых кадров.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

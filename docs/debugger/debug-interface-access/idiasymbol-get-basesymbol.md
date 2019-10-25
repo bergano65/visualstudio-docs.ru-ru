@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseSymbol | Документация Майкрософт
+title: 'IDiaSymbol:: get_baseSymbol | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd03eaead008c4014b10f9390610c7e103a4a6c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 307358522609659a8a95b94a0adf037026f5b948
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837853"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740943"
 ---
-# <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
-Возвращает символ, из которого основан указатель.
+# <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
+Извлекает символ, на основе которого основан указатель.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT get_baseSymbol(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на символ, из которого указатель.
+заполняет Указатель на символ, на котором основан указатель.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

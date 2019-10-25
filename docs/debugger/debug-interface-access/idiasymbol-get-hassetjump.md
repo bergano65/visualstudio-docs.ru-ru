@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasSetJump | Документация Майкрософт
+title: 'IDiaSymbol:: get_hasSetJump | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d560cbff64a5134fa58ade4d562cb9fb073af48f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ac344c97c7e79ea0cd92cce743848f0ac6e7f99f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785872"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740454"
 ---
-# <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
-Получает флаг, указывающий, содержит ли функция использование [setjmp](/cpp/c-runtime-library/reference/setjmp) команды (связан с [longjmp](/cpp/c-runtime-library/reference/longjmp) команды, они образуют метод C-стиля обработки исключений).
+# <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
+Получает флаг, указывающий, содержит ли функция команду [setjmp](/cpp/c-runtime-library/reference/setjmp) (сопоставленную с командой [longjmp](/cpp/c-runtime-library/reference/longjmp) ), которая служит методом обработки исключений в стиле C.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_hasSetJump(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если функция содержит `setjmp` команды; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция содержит команду `setjmp`; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_hasSetJump(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b93c9cfa6767aea83d941cbc8684b27517c8f911
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430571"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729551"
 ---
 # <a name="supported-code-changes-c"></a>Поддерживаемые изменения кода (C++)
 "Изменить и продолжить C++ " для проектов обрабатывает большинство типов изменений кода. Некоторые изменения, однако, не могут быть применены во время выполнения программы. Чтобы применить эти изменения, необходимо остановить выполнение и собрать обновленную версию кода.
@@ -136,5 +136,5 @@ ms.locfileid: "72430571"
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> Ограничения атрибутов IDL
  В режиме "Изменить и продолжить" не создаются повторно файлы определения интерфейса (IDL). Как следствие, изменения в атрибутах IDL не отображаются в ходе отладки. Для того чтобы увидеть изменения в атрибутах IDL, необходимо остановить процесс отладки и заново осуществить построение приложения. При режиме "Изменить и продолжить" не выводится сообщение об ошибке или предупреждение при изменении атрибутов IDL. Дополнительные сведения см. в разделе [Атрибуты IDL](/cpp/windows/idl-attributes).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Изменить и продолжить (C++)](../debugger/edit-and-continue-visual-cpp.md)

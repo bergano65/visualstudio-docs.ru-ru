@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::frameForVA | Документация Майкрософт
+title: 'Идиастакквалкхелпер:: Фрамефорва | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28d9a7762cac1a63b40fa34118d4076403120763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838032"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741429"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-Извлекает кадру стека, который содержит указанный виртуальный адрес.
+Извлекает кадр стека, который содержит указанный виртуальный адрес.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,14 +34,14 @@ HRESULT frameForVA( 
 #### <a name="parameters"></a>Параметры
  `va`
 
-[in] Виртуальный адрес кадра данных.
+окне Виртуальный адрес для данных кадра.
 
  `ppFrame`
 
-[out] [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий кадр стека по указанному адресу.
+заполняет Объект [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий кадр стека по указанному адресу.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

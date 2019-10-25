@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Поиск библиотеки DLL которой произошел сбой в программы | Документация Майкрософт
+title: Как найти библиотеку DLL, в которой произошел сбой программы | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894051"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733273"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Практическое руководство. Поиск библиотеки DLL которой произошел сбой в программы (C#, C++, Visual Basic, F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Как найти библиотеку DLL, в которой произошел сбой программы (C#, C++, Visual Basic, F#)
 
  Если приложение аварийно завершает работу при вызове системных DLL или какого-то другого кода, необходимо найти, какие библиотеки DLL были активны в момент возникновения сбоя. Если сбой библиотеки DLL произошел вне данной программы, то его источник можно определить с помощью окна **Модули**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "62894051"
 
 1. Запишите адрес, по которому происходит сбой.
 
-    Если адрес не указывается в сообщении об ошибке, может потребоваться использовать альтернативные методы для идентификации библиотеки DLL. Если вы подозреваете системной библиотеки DLL, вы можете [загрузить символы](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) с серверов символов Майкрософт при отладке. В противном случае может потребоваться [Создание файла дампа](../debugger/using-dump-files.md) с кучи сведения вместо этого. Различные [средства](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) доступны для создания файлов дампа.
+    Если адрес не отображается в сообщении об ошибке, может потребоваться использовать альтернативные методы для поиска библиотеки DLL. Если есть подозрительная системная библиотека DLL, можно [загрузить символы](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) с серверов символов Майкрософт при отладке. В противном случае вместо этого может потребоваться [создать файл дампа](../debugger/using-dump-files.md) с информацией о куче. Для создания файлов дампа доступны различные [средства](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) .
 
 2. В меню **Отладка** выберите пункт **Окна**, а затем **Модули**.
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d902403b111e92f302ff907a29eaaa99ee181058
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430759"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737990"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Развертывание приложений UWP из Visual Studio
 
@@ -114,7 +114,7 @@ ms.locfileid: "72430759"
 
 - На странице C++ свойств Отладка задайте для параметра **Запуск приложения** значение **Да**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Дополнительные параметры удаленного развертывания](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)

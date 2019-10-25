@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d417bcee4bb6e058ea90028a29a87a3527aa5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efcba8397ce766409715f24e184b3c77aad53eea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929458"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728651"
 ---
 # <a name="visualizer-api-reference"></a>Справочные сведения о прикладном программном интерфейсе визуализаторов
 
 Прикладные программные интерфейсы визуализаторов предназначены для пользователей, желающих создать визуализатор для отладчика Visual Studio. Визуализатор представляет собой небольшое приложение, расширяющее функциональность пользовательского интерфейса отладчика Visual Studio. С помощью визуализаторов можно отображать (а также редактировать) объекты определенного типа, на который рассчитан конкретный визуализатор.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание
 
 - <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>
 
@@ -42,6 +42,6 @@ ms.locfileid: "62929458"
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::get_registerValue | Документация Майкрософт
+title: 'Идиастакквалкхелпер:: get_registerValue | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfb3e219012effe47a2352f7c22c6cf51b4617f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831836"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741408"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
-Получает значение регистра.
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
+Возвращает значение регистра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,17 +34,17 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>Параметры
  `index`
 
-[in] Значение из [перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) указания, что Зарегистрируйтесь, чтобы получить значение из перечисления.
+окне Значение из перечисления [перечисления CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) , указывающее, из какого регистра получить значение.
 
  `pRetVal`
 
-[out] Возвращает текущее значение регистра.
+заполняет Возвращает текущее значение регистра.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Несмотря на размер `pRetVal` параметра, следует хранить реализацию, что регистр обычно содержит только. Например 8-битным регистром содержит только младшие 8-битов заданного значения. Это 8-разрядное значение расширяется до 64-бит, при возврате из этого метода.
+## <a name="remarks"></a>Заметки
+ Несмотря на размер параметра `pRetVal`, реализация должна хранить только то, что обычно имеет регистр. Например, 8-разрядный регистр содержит только самые низкие 8-разрядные биты заданного значения. Это 8-разрядное значение увеличивается до 64 бит при возврате из этого метода.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

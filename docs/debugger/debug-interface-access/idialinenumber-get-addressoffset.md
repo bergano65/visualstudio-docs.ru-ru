@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_addressOffset | Документация Майкрософт
+title: 'IDiaLineNumber:: get_addressOffset | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c29f2f8b84c68e9f4f0f7425ed5566b9180b1ac3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99addc04a7b9dc2f2b77d1943605f8c24af6aa7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828698"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743286"
 ---
-# <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
-Извлекает часть смещения адрес памяти, где начинается блок.
+# <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
+Извлекает смещение адреса памяти, с которого начинается блок.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_addressOffset ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает часть смещения адрес памяти, где начинается блок.
+заполняет Возвращает часть адреса памяти, с которой начинается блок.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="example"></a>Пример
 

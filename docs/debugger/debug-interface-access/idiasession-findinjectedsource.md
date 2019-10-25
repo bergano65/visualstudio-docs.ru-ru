@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInjectedSource | Документация Майкрософт
+title: 'IDiaSession:: Финдинжектедсаурце | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bef903304e3892284fc38d9e2b2367ebfe650f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e2145c90c25c448880e51b9b394c7085e0d49b7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839346"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742259"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-Извлекает список источников, размещенных в хранилище символов поставщиками атрибут или другие компоненты в процессе компиляции.
+Извлекает список источников, которые были помещены в хранилище символов поставщиками атрибутов или другими компонентами процесса компиляции.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,14 +34,14 @@ HRESULT findInjectedSource ( 
 #### <a name="parameters"></a>Параметры
  srcFile
 
-[in] Имя исходного файла, который требуется найти.
+окне Имя исходного файла, который требуется найти.
 
- ppResult
+ ппресулт
 
-[out] Возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий список всех внедренного источников.
+заполняет Возвращает объект [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий список всех внедренных источников.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

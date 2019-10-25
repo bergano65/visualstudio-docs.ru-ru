@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: debf263fa18d2a6af8e95ee959002686540e2c06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44fcc45191d6c1e42256a503e98f753b54535e5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658206"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748320"
 ---
 # <a name="properties-of-domain-properties"></a>Свойства доменных свойств
 *Свойство предметной области* — это функция элемента модели, которая может содержать значение. Например, класс домена `Person` может иметь свойства `Name` и `BirthDate`. В определении доменного языка свойства домена перечислены в поле класса домена на схеме и в разделе класса домена в Обозревателе доменного языка. Дополнительные сведения см. [в разделе Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
@@ -48,6 +48,6 @@ ms.locfileid: "72658206"
 |**Модификатор доступа метода задания**|Модификатор доступа для задания. Управляет областью, в которой код программы может задавать свойство.|`public`|
 |**Type**|Тип свойства. Чтобы добавить в список доступных типов, щелкните правой кнопкой мыши корень DSL в обозревателе DSL и выберите команду **добавить внешний тип**.|`String`|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,5 +1,5 @@
 ---
-title: IDiaReadExeAtOffsetCallback | Документация Майкрософт
+title: Идиареадексеатоффсеткаллбакк | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832559"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742815"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
-Позволяет клиентскому приложению для предоставления байт исполняемого файла, как указано по позиции файла.
+Позволяет клиентскому приложению предоставлять байты исполняемого файла, как указано положением файла.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +33,18 @@ IDiaReadExeAtOffsetCallback : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Считывает указанное число байтов, начиная с заданного смещения из исполняемого файла.|
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Считывает указанное число байтов, начиная с указанного смещения, из исполняемого файла.|
 
-## <a name="remarks"></a>Примечания
- Клиентское приложение реализует этот интерфейс, чтобы обеспечить байты исполняемый файл, использующий абсолютное смещение в исполняемый файл. Чтобы использовать относительный виртуальный адрес, реализовать [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) интерфейс.
+## <a name="remarks"></a>Заметки
+ Клиентское приложение реализует этот интерфейс, чтобы предоставить байты исполняемого объекта, используя абсолютное смещение в файле исполняемого файла. Чтобы использовать относительный виртуальный адрес, реализуйте интерфейс [идиареадексеатрвакаллбакк](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Этот метод реализуется клиентским приложением и передается [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод как альтернативный метод для чтения файла.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот метод реализуется клиентским приложением и передается методу [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) в качестве альтернативного метода чтения файла.
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia80.dll
 

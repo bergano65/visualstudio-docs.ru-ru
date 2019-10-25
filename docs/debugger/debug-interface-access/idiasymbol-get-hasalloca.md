@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasAlloca | Документация Майкрософт
+title: 'IDiaSymbol:: get_hasAlloca | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 457f446af4a91141962fbbd3055d9ce4980c719a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b4d476d5b2ecf9edf29aea1bbbc68e7890b59b13
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808787"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740588"
 ---
-# <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
+# <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 Получает флаг, указывающий, содержит ли функция вызов `alloca` (который используется для выделения памяти в стеке).
 
 ## <a name="syntax"></a>Синтаксис
@@ -31,10 +31,10 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если функция содержит вызов `alloca`; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция содержит вызов `alloca`; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -43,8 +43,8 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -11,18 +11,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924188"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722001"
 ---
 # <a name="vspackage-registration"></a>Регистрация VSPackage
-Пакеты VSPackage должны [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] быть извещены о том, что они установлены и должны быть загружены. Этот процесс выполняется путем записи сведений в реестр. Это типичное задание установщика.
+Пакеты VSPackage должны рекомендовать [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], что они установлены и должны быть загружены. Этот процесс выполняется путем записи сведений в реестр. Это типичное задание установщика.
 
 > [!NOTE]
-> Это рекомендуемый подход во время разработки VSPackage для использования самостоятельной регистрации. Однако партнеры [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] не могут поставлять свои продукты, используя самостоятельную регистрацию в процессе установки.
+> Это рекомендуемый подход во время разработки VSPackage для использования самостоятельной регистрации. Однако [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)]ные партнеры не могут поставлять свои продукты, используя самостоятельную регистрацию в процессе установки.
 
  Записи реестра в пакете установщик Windows обычно создаются в таблице реестра. Кроме того, можно зарегистрировать расширения файлов в таблице реестра. Однако установщик Windows предоставляет встроенную поддержку через программный идентификатор (ProgId), класс, расширение и таблицы команд. Дополнительные сведения см. в разделе [таблицы базы данных](/windows/desktop/Msi/database-tables).
 

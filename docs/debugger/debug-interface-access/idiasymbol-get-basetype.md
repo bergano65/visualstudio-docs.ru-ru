@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseType | Документация Майкрософт
+title: 'IDiaSymbol:: get_baseType | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a3d1bb8b2f3095fd35488c47f823e7b3603995b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837611"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740919"
 ---
-# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-Возвращает базовый тип для этого символа<em>.</em>
+# <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
+Извлекает базовый тип для этого символа<em>.</em>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_baseType (
 #### <a name="parameters"></a>Параметры
 `pRetVal`
 
-[out] Возвращает значение из [перечисление BasicType](../../debugger/debug-interface-access/basictype.md) перечисление, определяющее, базовый тип символа.
+заполняет Возвращает значение из перечисления [перечисления басиктипе](../../debugger/debug-interface-access/basictype.md) , указывающее базовый тип символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
-Базовый тип для символа может определяться, сначала Получив тип символа и затем опроса, возвращаемый тип для базового типа. Обратите внимание, что некоторые символы не могут иметь базовый тип, например, имя структуры.
+## <a name="remarks"></a>Заметки
+Базовый тип символа можно определить с помощью первого получения типа символа и последующего опроса возвращаемого типа для базового типа. Обратите внимание, что некоторые символы не могут иметь базовый тип, например имя структуры.
 
 ## <a name="example"></a>Пример
 
@@ -63,8 +63,8 @@ if (pType->get_type( &pBaseType ) == S_OK)
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

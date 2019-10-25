@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Перемещение вверх или вниз по содержимому памяти | Документация Майкрософт
+title: Как перейти на страницу вверх или вниз в памяти | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894025"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733023"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Практическое руководство. перемещение вверх или вниз по содержимому памяти
+# <a name="how-to-page-up-or-down-in-memory"></a>Практическое руководство. Перемещение вверх или вниз по содержимому памяти
 
 При просмотре содержимого памяти в окне **Память** или **Дизассемблированный код** для перемещения вверх и вниз по области памяти можно использовать вертикальную полосу прокрутки.
 

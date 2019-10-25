@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_nopad | Документация Майкрософт
+title: 'IDiaSectionContrib:: get_nopad | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51fb2c4ff2f27cee8fcc989139f5ae14c2641394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a81113242379070e56d6d0bd0f916355985eaa42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828098"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742624"
 ---
-# <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
-Получает флаг, указывающее, является ли раздел не будут заполнены до следующей границы памяти.
+# <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
+Получает флаг, указывающий, должен ли раздел быть заполнен до следующей границы памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_nopad(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если разделе должно быть заполнено до следующей границы памяти; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если раздел не должен быть заполнен до следующей границы памяти; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Это свойство обычно появляется только на старых файлов.
+## <a name="remarks"></a>Заметки
+ Это свойство обычно отображается только для старых файлов.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

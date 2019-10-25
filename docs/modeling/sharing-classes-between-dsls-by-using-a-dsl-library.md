@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5293473e35424ccc6ee357d63a9355cacf0d6725
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670750"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747405"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Совместное использование классов в различных доменных языках с помощью библиотеки доменных языков
 В пакете SDK визуализации и моделирования Visual Studio можно создать неполное определение DSL, которое можно импортировать в другой DSL. Это позволяет разделить общие части похожих моделей.
@@ -61,7 +61,7 @@ ms.locfileid: "72670750"
 
    Библиотека DSL может импортировать другие библиотеки. При импорте библиотеки ее импорты также автоматически отображаются в обозревателе DSL.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
 

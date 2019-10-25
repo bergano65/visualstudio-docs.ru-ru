@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_crc | Документация Майкрософт
+title: 'Идиаинжектедсаурце:: get_crc | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fb027c5e23d0d18443a22848b181e64347669a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e20cdf82af3b36c589879c81c492a3f58b67f90
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839906"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743393"
 ---
-# <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
-Извлекает циклическую проверку избыточности (CRC) вычисляется на основе байты исходного кода.
+# <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
+Извлекает циклическую проверку избыточности (CRC), вычисленную на основе байтов исходного кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_crc ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает контрольную СУММУ, вычисленные из байты исходного кода.
+заполняет Возвращает CRC, вычисленную по байтам исходного кода.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

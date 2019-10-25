@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_offsetInUdt | Документация Майкрософт
+title: 'IDiaSymbol:: get_offsetInUdt | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14832698e186e23b33862ccb1c9f22f3792a6300
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0eeffba743d7fae1d473c45eb350fbfc8bcd0b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793785"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739561"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-Получает смещение в начале определяемого пользователем типа (UDT) члена в определяемый пользователем тип.
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
+Возвращает смещение к началу определяемого пользователем типа (UDT) элемента в ОПРЕДЕЛЯЕМом пользователем типе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,21 +33,21 @@ HRESULT get_offsetInUdt( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает смещение в байтах расположения символов.
+заполняет Возвращает смещение в байтах расположения символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Эта функция используется только в локальном записей при оптимизированном построении.
+## <a name="remarks"></a>Заметки
+ Эта функция используется только в локальных записях в оптимизированной сборке.
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

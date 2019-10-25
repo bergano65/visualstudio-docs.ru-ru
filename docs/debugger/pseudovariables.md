@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6856517a680809ccc802c02dc880b6349eadc5
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: e328e85f58e69ef1d579fd979f629c59b90caf3e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535961"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730521"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Псеудовариаблес в отладчике Visual Studio
 Псевдопеременные — термины, используемые для отображения определенных сведений в окне переменных или в диалоговом окне **Быстрая проверка**. Псевдопеременная вводится таким же способом, что и обычная переменная. Однако псевдопеременные не являются переменными и не соответствуют именам переменных в программе.
@@ -67,6 +67,6 @@ ms.locfileid: "72535961"
 |`$` *N* `#`|Отображает объект с идентификатором, равным *N*.|
 |`$dynamic`|Отображает специальный узел **динамического представления** для объекта, который реализует `IDynamicMetaObjectProvider`. Интерфейс. Синтаксис: `$dynamic,` *объект*. Эта функция применима только к коду, который использует .NET Framework версии 4 или более поздней.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)
 - [Окна переменных](../debugger/debugger-windows.md)

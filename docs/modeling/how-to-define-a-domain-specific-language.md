@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1542f51b561e46bc6b75016fc6669bda602ceab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748434"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 Чтобы определить доменный язык (DSL), создайте решение Visual Studio на основе шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.
@@ -620,7 +620,7 @@ ms.locfileid: "72605835"
 | Панель элементов в DSL не отображается после изменения имен сборки. | Просмотрите и обновите **дслпаккаже\женератедкоде\паккаже.ТТ** . Дополнительные сведения см. в разделе [как изменить пространство имен для доменного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | Панель элементов в DSL не отображается, хотя имя сборки не изменялось.<br /><br /> Либо появляется сообщение о невозможности загрузить расширение. | Сбросьте экспериментальный экземпляр и выполните сборку решения заново.<br /><br /> 1. в меню "Пуск" в разделе " **все программы**" разверните [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], затем **инструменты**, а затем щелкните **сбросить Microsoft Visual Studio экспериментальный экземпляр**.<br />2. в меню **Сборка** выберите пункт **Перестроить решение**. |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)
 - [Создание доменного языка на основе Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_maxStack | Документация Майкрософт
+title: 'IDiaFrameData:: get_maxStack | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b609ba9357e96d8e7ece4459e33991a599b47ee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc5eaa20c5167897ccb19d5e142656ed314a91e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839970"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743528"
 ---
-# <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
-Извлекает максимальное число байтов, в стек в кадре.
+# <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
+Возвращает максимальное число байтов, помещаемых в стек в кадре.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает максимальное число байтов, в стек.
+заполняет Возвращает максимальное число байтов, отправленных в стек.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Значение, возвращаемое этим методом обычно используется в интерпретации строки программы (см. в разделе [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод для определения строки программы).
+## <a name="remarks"></a>Заметки
+ Значение, возвращаемое этим методом, обычно используется при интерпретации строки программы (см. метод [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) для определения программной строки).
 
 ## <a name="see-also"></a>См. также
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

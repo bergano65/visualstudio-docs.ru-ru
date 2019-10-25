@@ -1,5 +1,5 @@
 ---
-title: BeginCapture | Документация Майкрософт
+title: Бегинкаптуре | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e714245ff2585f9de0b998160ce08f04c88b097
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9521288b27b1f9b11a2fdb8cbbd613f1a77f857d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896440"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736145"
 ---
 # <a name="begincapture"></a>BeginCapture
-Начинается интервал захвата, будут заканчиваться `EndCapture`.
+Начинает интервал записи, который заканчивается `EndCapture`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -24,10 +24,10 @@ ms.locfileid: "62896440"
 void BeginCapture();
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  Обычно интервал захвата охватывает подмножество из одного кадра, — как, например, когда требуется захватить данные графики только для определенного типа вызова рисования. Если интервал захвата распространяется до вызова метода Present, то захватываются два кадра графических данных. Первый кадр охватывает интервал между вызовом `BeginCapture` и вызовом метода Present; второй кадр охватывает интервал между первым событием Direct3D после вызова метода Present и вызовом `EndCapture`.
 
- Для захвата интервала необходимо подготовить приложение к захвату и записи данных графики — то есть вам необходимо вызвать метод [Init](init.md) через экземпляр `VsgDbg` класса перед вызовом метода `BeginCapture` или `EndCapture`.
+ Для захвата интервала необходимо подготовить приложение для записи и записи графических данных, то есть необходимо вызвать метод [init](init.md) через экземпляр класса `VsgDbg` перед вызовом `BeginCapture` или `EndCapture`.
 
 ## <a name="see-also"></a>См. также
 - [EndCapture](endcapture.md)

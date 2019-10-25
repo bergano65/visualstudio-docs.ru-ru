@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33ae88358d77ac7c70a74cecb879eef3c4ca8b8c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29c190115836972f86590233e331f172422efbd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747425"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 
@@ -55,7 +55,7 @@ ms.locfileid: "72658112"
 
 Эти изменения можно сохранить. Если вы хотите сделать изменения видимыми для других пользователей, необходимо по крайней мере отправить обновленные файлы **макета** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)
 - [Создание моделей для приложения](../modeling/create-models-for-your-app.md)

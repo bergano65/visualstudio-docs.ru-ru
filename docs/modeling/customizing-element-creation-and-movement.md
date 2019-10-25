@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea58bb790cf7c9aaac554728643f6e164e06418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654057"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747615"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Настройка создания и перемещения элементов
 
@@ -316,7 +316,7 @@ ms.locfileid: "72654057"
 
      Не отображается указатель недоступен, и вы можете удалить новый **входной порт** для существующего. Выберите новый **порт ввода** и перетащите его в другую точку **компонента**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Настройка элементов и панели элементов](../modeling/customizing-tools-and-the-toolbox.md)

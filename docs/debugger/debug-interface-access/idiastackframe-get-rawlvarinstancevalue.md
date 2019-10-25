@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_rawLVarInstanceValue | Документация Майкрософт
+title: 'IDiaStackFrame:: get_rawLVarInstanceValue | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b1118517988f6a790cd4f6732eba3bc8a9fc25a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838123"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741636"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Этот метод получает значение указанной локальной переменной в виде необработанных байт.
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+Этот метод получает значение указанной локальной переменной в виде необработанных байтов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,22 +36,22 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>Параметры
  `pInstance`
 
-[in] `IDiaLVarInstance` Объект, представляющий экземпляр локальной переменной, чтобы получить значение.
+окне Объект `IDiaLVarInstance`, представляющий экземпляр локальной переменной, для которой нужно получить значение.
 
  `cbDataMax`
 
-[in] Максимальное число байтов в буфере, на которые указывают `pbData`. Это может быть более 8 байт (`sizeof(ULONGLONG)`).
+окне Максимальное число байтов в буфере, на которое указывает `pbData`. Это может быть не более 8 байт (`sizeof(ULONGLONG)`).
 
  `pcbData`
 
-[out] Возвращает фактическое число байтов, сохраненных в буфере.
+заполняет Возвращает фактическое число байтов, хранящихся в буфере.
 
  `pbData`
 
-[out] Буфер для заполниться данными. Не может иметь значение `NULL`.
+заполняет Буфер для заполнения данными. Не может иметь значение `NULL`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

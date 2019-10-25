@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Next | Документация Майкрософт
+title: 'Идиаенумсимболс:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef151b369c18863b8a87944cdbf69fed9aeb0840
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2d754c144ad876890b89ea217bf0ac55ad60b24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833393"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743938"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Извлекает указанное число символов в последовательности перечисления.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Количество символов в перечислителе требуется получить.
+окне Число извлекаемых символов в перечислителе.
 
  rgelt
 
-[out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие нужные символы.
+заполняет Массив, который должен быть заполнен объектами [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющими нужные символы.
 
  pceltFetched
 
-[out] Возвращает количество символов в выбираемых перечислитель.
+заполняет Возвращает количество символов в полученном перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии отсутствуют дополнительные символы. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если больше нет символов. В противном случае возвращается код ошибки.
 
 ## <a name="example"></a>Пример
 

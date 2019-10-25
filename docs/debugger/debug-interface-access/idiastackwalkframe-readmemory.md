@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkFrame::readMemory | Документация Майкрософт
+title: 'Идиастакквалкфраме:: readMemory | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837918"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741479"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
-Читает содержимое памяти на основе образа.
+Считывает память из образа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,26 +37,26 @@ HRESULT readMemory ( 
 #### <a name="parameters"></a>Параметры
  `type`
 
-[in] Один из [перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) значений перечисления, указывающее тип доступа к памяти.
+окне Одно из значений перечисления [перечисления меморитипинум](../../debugger/debug-interface-access/memorytypeenum.md) , указывающее тип памяти для доступа.
 
  `va`
 
-[in] Виртуальный адрес расположения в образе должно начаться чтение.
+окне Расположение виртуального адреса в образе для начала чтения.
 
  `cbData`
 
-[in] Размер буфера данных, в байтах.
+окне Размер буфера данных в байтах.
 
  `pcbData`
 
-[out] Возвращает количество байтов, возвращаемых. Если `data` — `NULL`, затем `pcbData` содержит общее число байтов доступных данных.
+заполняет Возвращает число возвращенных байтов. Если `data` `NULL`, `pcbData` содержит общее количество доступных данных в байтах.
 
  `data`
 
-[out] Буфер, который должен заполниться данными из указанного расположения.
+заполняет Буфер, который должен быть заполнен данными из указанного расположения.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

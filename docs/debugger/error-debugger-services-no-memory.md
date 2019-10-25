@@ -1,5 +1,5 @@
 ---
-title: Службы, нехватке памяти выполнение отладчика | Документация Майкрософт
+title: В службах отладчика недостаточно памяти | Документация Майкрософт
 ms.date: 07/10/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,21 +16,21 @@ ms.author: isgarcia
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 05664ffd056f69215e6fb00d6d49a59382a3692f
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 12215f9c740e68c4f2749a51b06c09a1385dae1a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67854021"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737844"
 ---
-# <a name="debugger-services-running-out-of-memory"></a>Службы, нехватке памяти выполнение отладчика
-Отладка служб не хватает памяти и вызвало завершение сеанса отладки.
+# <a name="debugger-services-running-out-of-memory"></a>Службам отладки недостаточно памяти
+В службах отладки недостаточно памяти, что привело к завершению сеанса отладки.
 
-## <a name="to-investigate-this-error-on-windows"></a>Чтобы изучить эту ошибку в Windows
-- Можно вернуть на графе памяти процесса **средства диагностики** окно, чтобы просмотреть, если целевое приложение испытывает огромное увеличение памяти. Если Да, использовать **использование памяти** средство для диагностики, что является основную причину проблемы, см. в разделе [анализ использования памяти](../profiling/memory-usage.md).
+## <a name="to-investigate-this-error-on-windows"></a>Анализ этой ошибки в Windows
+- Можно проверить граф памяти процесса в окне **средства диагностики** , чтобы определить, испытывает ли целевое приложение огромное увеличение памяти. Если это так, используйте средство **использования памяти** для диагностики базовой проблемы, см. раздел [Анализ использования памяти](../profiling/memory-usage.md).
 
-- Если целевое приложение не потребляют большой объем памяти, используйте **диспетчер задач** окно, чтобы извлечь использование памяти Visual Studio (devenv.exe), рабочего процесса (msvsmon.exe), или VS Code (vsdbg.exe/vsdbg-ui.exe) для Определите, если это проблема отладчика. Если хватает памяти процесса devenv.exe, уменьшите количество поддерживаемые обозревателем расширения Visual Studio.
+- Если целевое приложение не потребляет много памяти, используйте окно **диспетчера задач** для извлечения сведений об использовании памяти в Visual Studio (devenv. exe), рабочем процессе (msvsmon. exe) или VS Code (vsdbg. exe/всдбг-УИ. exe), чтобы определить, является ли это проблема с отладчиком. Если для процесса, в котором не хватает памяти, используется файл devenv. exe, рассмотрите возможность сокращения числа выполняющихся расширений Visual Studio.
 
 ## <a name="see-also"></a>См. также
-- [Запись блога. Анализ ресурсов ЦП и памяти во время отладки](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
-- [Об управлении памятью](/windows/win32/memory/about-memory-management)
+- [Запись блога: анализ ЦП и памяти во время отладки](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
+- [Сведения об управлении памятью](/windows/win32/memory/about-memory-management)

@@ -1,5 +1,5 @@
 ---
-title: IDiaReadExeAtRVACallback | Документация Майкрософт
+title: Идиареадексеатрвакаллбакк | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86a0e995e3336bc217bcc9ad0e7ce28a6434478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2aee44ff3acc1d7423e19de8fd64be0e46d8e372
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832517"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742805"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
-Позволяет клиентскому приложению для предоставления байт исполняемого файла, как указано по относительному виртуальному адресу.
+Позволяет клиентскому приложению предоставлять байты исполняемого файла, как указано в относительном виртуальном адресе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,16 +35,16 @@ IDiaReadExeAtRVACallback : IUnknown
 |------------|-----------------|
 |[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Считывает указанное число байтов, начиная с указанного относительного виртуального адреса (RVA) из исполняемого файла.|
 
-## <a name="remarks"></a>Примечания
- Клиентское приложение реализует этот интерфейс, чтобы обеспечить байты исполняемого файла с помощью относительного виртуального адреса в исполняемый файл. Чтобы использовать смещение абсолютный, реализовать [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) интерфейс.
+## <a name="remarks"></a>Заметки
+ Клиентское приложение реализует этот интерфейс, чтобы предоставить байты исполняемого файла по относительному виртуальному адресу в исполняемый файл. Чтобы использовать абсолютное смещение файла, реализуйте интерфейс [идиареадексеатоффсеткаллбакк](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) .
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Этот метод реализуется клиентским приложением и передается [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод как альтернативный метод для чтения файла.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот метод реализуется клиентским приложением и передается методу [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) в качестве альтернативного метода чтения файла.
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia80.dll
 

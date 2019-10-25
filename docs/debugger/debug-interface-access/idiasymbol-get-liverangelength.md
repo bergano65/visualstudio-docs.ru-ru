@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeLength | Документация Майкрософт
+title: 'IDiaSymbol:: get_liveRangeLength | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c85288902d1a8c75b067bec0c77242e9a246561
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b663ef54959544764016fe59e4b0fb41607854b1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808243"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739932"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
-Возвращает длину диапазона адресов, в котором локальный символ является допустимой.
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
+Возвращает длину диапазона адресов, в котором является допустимым локальный символ.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ HRESULT get_liveRangeLength ( 
 #### <a name="parameters"></a>Параметры
  `length`
 
-[out] Возвращает длину диапазона адресов.
+заполняет Возвращает длину диапазона адресов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 > [!NOTE]
-> Возвращен код ошибки означает, что символ не имеет сведения о динамической диапазона.
+> Возвращенный код ошибки означает, что символ не содержит сведений о диапазоне в реальном времени.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

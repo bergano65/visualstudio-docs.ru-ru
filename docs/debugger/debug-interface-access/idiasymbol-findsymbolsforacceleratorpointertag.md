@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Документация Майкрософт
+title: 'IDiaSymbol:: Финдсимболсфоракцелераторпоинтертаг | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf55f372b9beb0a4cb0feda0dc5869ee9eb7c5f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1544471bd4ff9166d4c8f4c10f48840db6f576f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827741"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741130"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Возвращает число тегов указатель сочетаний клавиш в функции заглушки C++ AMP.
+Возвращает число тегов указателя ускорителя в функции- C++ заглушке amp.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,14 +31,14 @@ HRESULT findSymbolsForAccleratorPointerTag (
 #### <a name="parameters"></a>Параметры
  `tagValue`
 
-[in] Значение тега указатель, для которого находятся pointee символьные записи.
+окне Значение тега указателя, для которого обнаружены записи символов с точками.
 
  `ppResult`
 
-[out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.
+заполняет Указатель на указатель интерфейса `IDiaEnumSymbols`, который инициализируется с результатом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

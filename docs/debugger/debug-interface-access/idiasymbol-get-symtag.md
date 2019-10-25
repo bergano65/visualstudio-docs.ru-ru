@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_symTag | Документация Майкрософт
+title: 'IDiaSymbol:: get_symTag | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bdd4ed102718a1c81be55c848a2d3c891c0ba99
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 99f24e47ff04c6a7d37633c4f04bbd058b861cd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830614"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739233"
 ---
-# <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
-Получает классификатор тип символа.
+# <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
+Извлекает классификатор типа символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_symTag ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисление, указывающее тип классификатора символ.
+заполняет Возвращает значение из перечисления [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) , которое указывает классификатор типа символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

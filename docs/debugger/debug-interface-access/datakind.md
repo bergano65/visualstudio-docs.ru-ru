@@ -1,5 +1,5 @@
 ---
-title: DataKind | Документация Майкрософт
+title: Kind | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31be0615fd7d1da279ecf414260af21cb8239dc8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554926"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745286"
 ---
 # <a name="datakind"></a>DataKind
-Указывает область конкретного значения данных.
+Указывает конкретную область значения данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,31 +40,31 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>Элементы
-Не удается определить символ DataIsUnknown данных.
+Не удается определить символ данных Датаисункновн.
 
-Элемент данных DataIsLocal является локальной переменной.
+Элемент данных Датаислокал является локальной переменной.
 
-Элемент данных DataIsStaticLocal является статической локальной переменной.
+Элемент данных Датаисстатиклокал является статической локальной переменной.
 
-Элемент данных DataIsParam является формальным параметром.
+Элемент данных Датаиспарам является формальным параметром.
 
-Элемент данных DataIsObjectPtr является указателем объекта (`this`).
+Элемент данных Датаисобжектптр является указателем объекта (`this`).
 
-Элемент данных DataIsFileStatic — это переменная уровня файла.
+Элемент данных Датаисфилестатик является переменной с областью действия файла.
 
-Элемент данных DataIsGlobal является глобальной переменной.
+Элемент данных Датаисглобал является глобальной переменной.
 
-Элемент данных DataIsMember является переменной члена объекта.
+Элемент данных Датаисмембер является переменной-членом объекта.
 
-Элемент данных DataIsStaticMember является статической переменной класса.
+Элемент данных Датаисстатикмембер является статической переменной класса.
 
-Элемент данных DataIsConstant является константа.
+Элемент данных Датаисконстант является постоянным значением.
 
-## <a name="remarks"></a>Примечания
-Возвращаемые значения в этом перечислении [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) метод.
+## <a name="remarks"></a>Заметки
+Значения в этом перечислении возвращаются методом [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: cvconst.h
+Заголовок: квконст. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)

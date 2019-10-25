@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04cd8d1eb94ba488b621fb30f9ac598ce9c71722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d3a3e1995dbc36b02d90da6343e8cc9a6d48eba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653995"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748440"
 ---
 # <a name="customizing-text-and-image-fields"></a>Настройка полей с текстом и изображениями
 При определении декоратора текста в фигуре он представляется объектом TextField. Примеры инициализации TextField и других ShapeFields см. в подсистеме Дсл\женератедкоде\шапес.КС в решении DSL.
@@ -261,7 +261,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md)
 - [Задание фонового изображения схемы](../modeling/setting-a-background-image-on-a-diagram.md)

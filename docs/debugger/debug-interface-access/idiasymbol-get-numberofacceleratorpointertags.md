@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Документация Майкрософт
+title: 'IDiaSymbol:: get_numberOfAcceleratorPointerTags | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47c5827348c7b7cb450017a0e6176d71f555c841
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835778"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739700"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Возвращает число тегов указатель сочетаний клавиш в функции заглушки C++ AMP.
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+Возвращает число тегов указателя ускорителя в функции- C++ заглушке amp.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,13 +30,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Параметры
  `count`
 
-[out] Указатель на `DWORD` , содержащий количество сочетаний клавиш тегов указатель в C++ функции AMP заглушки.
+заполняет Указатель на `DWORD`, содержащий число тегов-указателей ускорителя в функции- C++ заглушке amp.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод вызывается на `IDiaSymbol` интерфейс, который соответствует функции заглушки accelerator C++ AMP.
+## <a name="remarks"></a>Заметки
+ Этот метод вызывается для интерфейса `IDiaSymbol`, соответствующего функции- C++ заглушке ускорителя amp.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

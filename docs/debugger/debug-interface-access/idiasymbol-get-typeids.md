@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_typeIds | Документация Майкрософт
+title: 'IDiaSymbol:: get_typeIds | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b32ab5b1965ea7a641cfac470addd2aae0ede0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4db7c1d7e3ed19268d94b28a7f0500788f7d21f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791761"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739071"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Извлекает массив значений типа специфичные для компилятора идентификатор для этого символа.
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
+Извлекает массив значений идентификаторов типов, относящихся к компилятору, для этого символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +35,18 @@ HRESULT get_typeIds ( 
 #### <a name="parameters"></a>Параметры
  `cTypeIds`
 
-[in] Размер буфера для хранения данных.
+окне Размер буфера для хранения данных.
 
  `pcTypeIds`
 
-[out] Возвращает количество `typeIds` записаны, или, если `typeIds` является `NULL`, затем общее число доступных идентификаторов типов.
+заполняет Возвращает число записанных `typeIds` или, если `typeIds` `NULL`, то общее число доступных идентификаторов типов.
 
  `typeIds[]`
 
-[out] Массив, заполненный идентификаторы типа.
+заполняет Массив, который должен быть заполнен идентификаторами типов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

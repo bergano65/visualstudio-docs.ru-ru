@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_udtKind | Документация Майкрософт
+title: 'IDiaSymbol:: get_udtKind | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34faf217f77bd30ba707f5ae17886b05dac8ab4f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1bd7e4963796858e7055667c1ae6a9557c77205
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796635"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739029"
 ---
-# <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
-Извлекает все разнообразие определяемого пользователем типа (UDT).
+# <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
+Извлекает разнообразные определяемые пользователем типы (UDT).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_udtKind ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение из [перечисление UdtKind](../../debugger/debug-interface-access/udtkind.md) перечисление, указывающее тип определяемого пользователем типа: структуры, класса или объединения.
+заполняет Возвращает значение из перечисления [перечисления удткинд](../../debugger/debug-interface-access/udtkind.md) , которое указывает тип определяемого пользователем типа: Structure, Class или Union.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

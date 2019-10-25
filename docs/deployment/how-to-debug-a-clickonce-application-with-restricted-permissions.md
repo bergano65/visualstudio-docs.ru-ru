@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78577f197f952b46d474fb3fd61c72008857c4be
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0d942c41aac873b775566efa4e128651a8830e92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263314"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727950"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Практическое руководство. Отладка приложения ClickOnce с ограниченными разрешениями
 Как разработчик вы, скорее всего, работаете на компьютере разработчика с разрешениями полного доверия и поэтому не увидите те исключения безопасности, возникающие при отладке приложения ClickOnce, с которыми может столкнуться конечный пользователь, работающий с ограниченными разрешениями.
 
  Чтобы перехватывать такие исключения, необходимо выполнять отладку приложения с теми же разрешениями, которые имеет конечный пользователь. Отладку с ограниченными разрешениями можно включить на странице **Безопасность** **конструктора проектов**.
@@ -59,7 +59,7 @@ ms.locfileid: "66263314"
 6. В текстовом поле **Отладить это приложение как загруженное со следующего URL** введите URL-адрес или сетевой путь.
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Практическое руководство. Установка пользовательских разрешений для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

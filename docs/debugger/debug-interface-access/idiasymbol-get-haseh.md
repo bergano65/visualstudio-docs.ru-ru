@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasEH | Документация Майкрософт
+title: 'IDiaSymbol:: get_hasEH | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f861d5cf8be8fedec6d32158aa735b8dfd826587
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1f08cd539d3042ff0715a5c84445e4cc40214a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786336"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740541"
 ---
-# <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Получает флаг, указывающий, содержит ли функция любого стиля C++ обработка неуправляемых исключений (например, блок try/catch).
+# <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
+Получает флаг, указывающий, содержит ли функция неуправляемую C++обработку исключений в стиле (например, блок try/catch).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если функция имеет один C++-стиля исключение обработки; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция имеет обработку C++исключений любого стиля; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_hasEH(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

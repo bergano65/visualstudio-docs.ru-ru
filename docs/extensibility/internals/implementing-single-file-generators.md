@@ -1,5 +1,5 @@
 ---
-title: Реализация генераторов одного файла | Документация Майкрософт
+title: Реализация генераторов с одним файлом | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a7207bf7d846381ea0cbf678ca7afe3d3d177b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69bde665e62d063b6bab8784634777eeea02e941
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335106"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727180"
 ---
 # <a name="implementing-single-file-generators"></a>Реализация генераторов одного файла
-Пользовательский инструмент — иногда называют генератором одного файла, можно использовать для расширения [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] систем в проекта [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Пользовательский инструмент — это компонент COM, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> интерфейс. Через этот интерфейс, пользовательский инструмент преобразует одного входного файла в один выходной файл. Результат преобразования может быть исходный код, или любой другой выходной полезны. Два примера файлов пользовательский код, сформированный svcutil.exe, код, созданный в ответ на изменения в визуальный конструктор и файлы, созданные с помощью языка описания служб (WSDL).
+Пользовательский инструмент (иногда называемый генератором одиночных файлов) можно использовать для расширения [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] систем проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Пользовательский инструмент — это COM-компонент, реализующий интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>. С помощью этого интерфейса пользовательское средство преобразует один входной файл в отдельный выходной файл. Результатом преобразования может быть исходный код или любые другие полезные выходные данные. Два примера пользовательских файлов кода — это код, создаваемый в ответ на изменения в визуальном конструкторе и файлах, созданных с помощью языка описания веб-служб (WSDL).
 
- Когда загружается пользовательское средство или сохраняется входной файл, система проекта вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> метод и передает ссылку на <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> интерфейс обратного вызова, при котором средство может сообщить о ходе своего выполнения пользователю.
+ При загрузке пользовательского инструмента или сохранении входного файла система проекта вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> и передает ссылку на <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> интерфейс обратного вызова, при котором средство может сообщить пользователю о ходе выполнения.
 
- Выходной файл, который создает пользовательский инструмент добавляется в проект с зависимостью от входного файла. Система проекта автоматически определяет имя выходного файла, на основе строки, возвращаемые реализацию пользовательского инструмента <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>.
+ Выходной файл, формируемый настраиваемым инструментом, добавляется в проект с зависимостью от входного файла. Система проекта автоматически определяет имя выходного файла на основе строки, возвращаемой реализацией <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> в пользовательском средстве.
 
- Необходимо реализовать пользовательский инструмент <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> интерфейс. При необходимости поддержки пользовательских инструментов <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> интерфейс для получения сведений из источника, отличного от входного файла. В любом случае, прежде чем использовать пользовательский инструмент, его необходимо зарегистрировать в системе или в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] локального реестра. Дополнительные сведения о регистрации пользовательских инструментов см. в разделе [регистрация генераторов одного файла](../../extensibility/internals/registering-single-file-generators.md).
+ Пользовательский инструмент должен реализовывать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>. При необходимости пользовательские инструменты поддерживают интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> для получения сведений из источников, отличных от входного файла. В любом случае, прежде чем можно будет использовать пользовательский инструмент, необходимо зарегистрировать его в системе или в локальном реестре [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения о регистрации пользовательских средств см. в разделе [Регистрация генераторов одного файла](../../extensibility/internals/registering-single-file-generators.md).
 
 ## <a name="see-also"></a>См. также
 - [Предоставление типов конструкторам визуальных элементов](../../extensibility/internals/exposing-types-to-visual-designers.md)

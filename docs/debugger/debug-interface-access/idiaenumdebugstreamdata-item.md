@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData::Item | Документация Майкрософт
+title: 'IDiaEnumDebugStreamData:: Item | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838510"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744822"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Извлекает указанную запись.
@@ -36,22 +36,22 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Параметры
  индекс
 
-[in] Индекс записи, должны быть получены. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
+окне Индекс извлекаемой записи. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается функцией [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
 
  cbData
 
-[in] Размер буфера данных, в байтах.
+окне Размер буфера данных в байтах.
 
- pcbData
+ пкбдата
 
-[out] Возвращает количество байтов, возвращаемых. Если `data` — `NULL`, затем `pcbData` содержит общее число байтов данных, доступных в указанной записи.
+заполняет Возвращает число возвращенных байтов. Если `data` `NULL`, то `pcbData` содержит общее число байтов данных, доступных в указанной записи.
 
  data[]
 
-[out] Буфер, который заполняется отладки потока данных.
+заполняет Буфер, который заполняется данными записи отладочного потока.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` для недопустимые параметры и, если `index` параметр находится вне допустимых границ.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` для недопустимых параметров и значение, если параметр `index` выходит за пределы допустимого диапазона.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

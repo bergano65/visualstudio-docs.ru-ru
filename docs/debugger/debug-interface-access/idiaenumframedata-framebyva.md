@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::frameByVA | Документация Майкрософт
+title: 'Идиаенумфрамедата:: Фрамебива | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62999d8b8dc0313e9ca5086dc4737d7a41db1c87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9889a4f4add318209728bb09ac5c469c1fa836fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838224"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744650"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
-Возвращает кадр, виртуальный адрес (VA).
+Возвращает кадр по виртуальному адресу (ва).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,16 +32,16 @@ HRESULT frameByVA( 
 ```
 
 #### <a name="parameters"></a>Параметры
- virtualAddress
+ виртуаладдресс
 
-[in] VA кадра интерес.
+окне ВА, представляющая интерес к интересующему кадру.
 
  фрейм
 
-[out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий рамку, содержащую указанный адрес.
+заполняет Возвращает объект [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий кадр, содержащий указанный адрес.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет кадров данных, соответствующей указанному адресу. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если данные кадра не соответствуют указанному адресу. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

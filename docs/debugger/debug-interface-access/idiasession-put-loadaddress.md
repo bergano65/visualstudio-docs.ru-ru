@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::put_loadAddress | Документация Майкрософт
+title: IDiaSession::p ut_loadAddress | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d004491feedff26c350cd7d40c544bc6b6de0f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 39db3bc0e0107e734f5de3f6902a2ca0fcc55bb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "64783748"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741892"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
-Задает адрес загрузки исполняемого файла, соответствующее к символам в данном хранилище символов.
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
+Задает адрес загрузки для исполняемого файла, который соответствует символам в этом хранилище символов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +33,13 @@ HRESULT put_loadAddress ( 
 #### <a name="parameters"></a>Параметры
  `NewVal`
 
-[in] Загрузить адрес для исполняемого файла.
+окне Загружается адрес исполняемого файла.
 
-## <a name="remarks"></a>Примечания
- Свойства символа виртуальный адрес (VA) вычисляются с помощью значения этого метода. Если это свойство не задано значение ненулевое, виртуальных адресов не вычисляются.
+## <a name="remarks"></a>Заметки
+ Свойства виртуального адреса символа (ва) вычисляются с помощью значения этого метода. Виртуальные адреса не вычисляются, если это свойство не имеет значение, отличное от нуля.
 
 > [!NOTE]
-> Этот метод необходимо вызвать при получении [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объекта и перед началом работы с помощью объекта, если необходимо использовать все виртуальные свойства на символы.
+> Этот метод следует вызывать при получении объекта [IDiaSession](../../debugger/debug-interface-access/idiasession.md) и перед началом использования объекта, если необходимо использовать виртуальные свойства в символах.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905972"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731508"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ограничения на отладку WCF
 Существуют три способа, позволяющих начать отладку службы WCF:
@@ -74,10 +74,10 @@ ms.locfileid: "62905972"
   ```
 
 ## <a name="self-hosting"></a>Резидентное размещение
- *Резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или сервера разработки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Сведения об отладке резидентной службы см. в разделе [как: Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+ *Резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или сервера разработки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Дополнительные сведения об отладке автономной службы см. [в разделе как выполнять отладку автономной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
 ## <a name="self-hosting"></a>Резидентное размещение
- Чтобы включить отладку приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5, следует установить [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5 до установки [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]. Если [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установлен до установки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5, при попытке отладки приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 или 3.5 возникает ошибка. Сообщение об ошибке: "Не удалось автоматически выполнить шаг на сервере". Чтобы устранить эту проблему, используйте Windows **панели управления** > **программы и компоненты** для восстановления вашей [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установки.
+ Чтобы включить отладку приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5, следует установить [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5 до установки [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]. Если [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установлен до установки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] версии 3.0 или 3.5, при попытке отладки приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 или 3.5 возникает ошибка. Сообщение об ошибке: "Не удалось автоматически выполнить шаг на сервере". Чтобы устранить эту проблему, используйте **Панель управления** Windows  > **программы и компоненты** для восстановления установки [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].
 
 ## <a name="see-also"></a>См. также
 - [Отладка служб WCF](../debugger/debugging-wcf-services.md)

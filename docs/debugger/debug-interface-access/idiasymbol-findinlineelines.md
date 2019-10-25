@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLines | Документация Майкрософт
+title: 'IDiaSymbol:: Финдинлинилинес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f5f38205770b7b7574a37b700b3c9b23b4fe90
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4876c3fe5d44ae35a26da2b68765eacc01ccfba9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62832441"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741234"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, в этот символ.
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, встроенных, прямо или косвенно, в этом символе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,10 +31,10 @@ HRESULT findInlineeLines ( 
 #### <a name="parameters"></a>Параметры
  `ppResult`
 
-[out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.
+заполняет Содержит объект `IDiaEnumLineNumbers`, содержащий список извлекаемых номеров строк.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
