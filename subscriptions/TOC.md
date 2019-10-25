@@ -25,7 +25,7 @@
 ### [Обратитесь к администратору подписок](contact-my-admin.md)
 ### Преимущества
 #### Инструменты
-##### [Деньги на счете в Azure](vs-azure.md)
+##### [Индивидуальный кредит Azure DevTest](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Оплата за Azure по мере использования](vs-azure-payg.md)
 ##### [CAST Highlight](vs-cast.md)
