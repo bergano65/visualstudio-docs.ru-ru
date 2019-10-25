@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648987"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807047"
 ---
 # <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -94,7 +94,7 @@ ms.locfileid: "72648987"
 
 ### <a name="data-providers"></a>Поставщики данных
 
-Чтобы базу данных можно было использовать в ADO.NET, она должна иметь настраиваемый *поставщик данных ADO.NET* или интерфейс ODBC или OLE DB. Корпорация Майкрософт предоставляет [список поставщиков данных ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) для продуктов SQL Server, а также поставщиков ODBC и OLE DB.
+Чтобы базу данных можно было использовать в ADO.NET, она должна иметь настраиваемый *поставщик данных ADO.NET* или интерфейс ODBC или OLE DB. Корпорация Майкрософт предоставляет [список поставщиков данных ADO.NET](/dotnet/framework/data/adonet/ado-net-overview) для продуктов SQL Server, а также поставщиков ODBC и OLE DB.
 
 ### <a name="data-modeling"></a>Моделирование данных
 
@@ -144,9 +144,9 @@ C++программы, работающие с служба хранилища M
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes архитектуру ADO.NET и использование классов ADO.NET для управления данными приложения и взаимодействия с источниками данных и XML.
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/) &mdash;Describes, как создавать приложения для работы с данными, позволяющие разработчикам программировать в концептуальной модели, а не непосредственно в реляционной базе данных.
+[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes, как создавать приложения для работы с данными, позволяющие разработчикам программировать в концептуальной модели, а не непосредственно в реляционной базе данных.
 
-[WCF Data Services 4,5](/dotnet/framework/data/wcf/index) &mdash;Describes как использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, реализующей [Open Data Protocol (OData)](https://www.odata.org/).
+[WCF Data Services 4,5](/dotnet/framework/data/wcf/index)&mdash;описывается использование [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] для развертывания служб данных в Интернете или интрасети, реализующей [Open Data Protocol (OData)](https://www.odata.org/).
 
 [Данные в решениях office](../vsto/data-in-office-solutions.md) &mdash;Contains ссылки на разделы, объясняющие, как работают данные в решениях Office. Сюда входят сведения о программировании на основе схемы, кэшировании данных и доступе к данным на стороне сервера.
 

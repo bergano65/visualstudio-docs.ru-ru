@@ -21,16 +21,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163053"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806306"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Общие сведения об анализе кода в C/C++
 
-Средство анализа кодаC++ c/Code предоставляет сведения о возможных дефектах в коде CC++ /Source. К наиболее распространенным ошибкам кодирования, которые обнаруживает данное средство, относятся переполнение буфера, неинициализированная память, разыменования пустых указателей, а также утечки памяти и ресурсов. Средство также может выполнять проверки по [ C++ основным рекомендациям](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+Средство анализа кодаC++ c/Code предоставляет сведения о возможных дефектах в коде CC++ /Source. К наиболее распространенным ошибкам кодирования, которые обнаруживает данное средство, относятся переполнение буфера, неинициализированная память, разыменования пустых указателей, а также утечки памяти и ресурсов. Средство также может выполнять проверки по [ C++ основным рекомендациям](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="ide-integrated-development-environment-integration"></a>Интеграция интегрированной среды разработки (IDE)
 
@@ -46,11 +46,11 @@ ms.locfileid: "72163053"
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 версии 15.7 и выше** Это средство можно запустить из командной строки с любой системой сборки, включая CMak.
+**Visual Studio 2017 версии 15,7 и более поздних версий:** Это средство можно запустить из командной строки с любой системой сборки, включая CMak.
 
 ## <a name="pragma-support"></a>Поддержка #pragma
 
-Можно использовать директиву `#pragma`, чтобы обрабатывать предупреждения как ошибки; Включение и отключение предупреждений, а также отключение предупреждений для отдельных строк кода. Дополнительные сведения см. в разделе [Директивы Pragma и ключевое слово __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Можно использовать директиву `#pragma`, чтобы обрабатывать предупреждения как ошибки; Включение и отключение предупреждений, а также отключение предупреждений для отдельных строк кода. Дополнительные сведения см. в разделе [Директивы Pragma и ключевое слово __Pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Поддержка заметок
 
@@ -66,8 +66,8 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство. Анализ кода для C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Пошаговое руководство: Анализ C/C++ Code за дефекты @ no__t-1
+- [Краткое руководство. анализ кода для C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Пошаговое руководство.C++ анализ C/кода на наличие дефектов](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Анализ кода для предупреждений C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Использование средств проверки на соответствие C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [C++Справочник по проверке основных правил](code-analysis-for-cpp-corecheck.md)
