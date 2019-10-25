@@ -1,5 +1,5 @@
 ---
-title: Элемент SupportsMasterPage (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Суппортсмастерпаже (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba409c831dd508dae796bca1ea2837674459690d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02c3915be318e7c4b3d82965f6d4640069f7a0c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316684"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719382"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Элемент SupportsMasterPage (шаблоны Visual Studio)
-Указывает ли **выбрать главную страницу** устанавливается флажок на **Добавление нового элемента** диалоговое окно.
+Указывает, включен ли флажок « **Выбор главной страницы** » в диалоговом окне « **Добавление нового элемента** ».
 
- \<VSTemplate> \<TemplateData> \<SupportsMasterPage>
+ \<VSTemplate > \<TemplateData > \<SupportsMasterPage >
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,20 +45,20 @@ ms.locfileid: "66316684"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Указывает данные, категорию шаблона и определяет, отображается ли он в **новый проект** или **новый элемент** диалоговое окно.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Указывает данные, которые классифицируют шаблон, и определяет, как он отображается в диалоговом окне **Новый проект** или **новый элемент** .|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Этот текст должен быть либо `true` или `false`, указывающее, ли **выбрать главную страницу** устанавливается флажок на **Добавление нового элемента** диалоговое окно.
+ Текст должен быть либо `true`, либо `false`, указывая, включен ли флажок **Выбрать главную страницу** в диалоговом окне **Добавление нового элемента** .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  `SupportsMasterPage` — это необязательный элемент. Значение по умолчанию — `false`.
 
- `SupportsMasterPage` Элемент доступен только для веб-шаблонов элементов.
+ Элемент `SupportsMasterPage` доступен только для шаблонов веб-элементов.
 
 ## <a name="example"></a>Пример
- В следующем примере метаданные для веб-проекта, которая включает поддержку для главной страницы.
+ В следующем примере показаны метаданные для веб-проекта, который включает поддержку главной страницы.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

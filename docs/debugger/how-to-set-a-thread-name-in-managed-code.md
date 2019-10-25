@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка имени потока в управляемом коде | Документация Майкрософт
+title: Как задать имя потока в управляемом коде | Документация Майкрософт
 ms.date: 04/27/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0954ffadd1bb1b09d7294be673f961ca2f18058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf05c0eea2ec05f04c1c792145218f570c4bce96
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906460"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732783"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Практическое руководство. установку имени потока в управляемом коде
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Практическое руководство. Установка имени потока в управляемом коде
 Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков позволяет отслеживать их в окне **Потоки**.
 
  Чтобы задать имя потока в управляемом коде, используйте свойство <xref:System.Threading.Thread.Name%2A>.

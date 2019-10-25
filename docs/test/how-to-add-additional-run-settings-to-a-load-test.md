@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, run settings, adding
 - load tests, run settings
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d4b22b0a1127af423e97e2dc88ebbea5bf1748e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002240"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664867"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Как выполнить Добавление дополнительных параметров запуска в нагрузочный тест
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест
 
 Параметры запуска нагрузочного теста определяют множество других параметров. К ним относятся длительность теста, степень детализации при сборе результатов и наборы счетчиков. Для каждого нагрузочного теста можно создать и сохранить несколько наборов параметров, а при запуске выбрать один из них для использования. Начальные параметры запуска добавляются в нагрузочный тест при создании теста с помощью **мастера тестовой нагрузки**.
 
@@ -45,7 +45,7 @@ ms.locfileid: "63002240"
     > [!NOTE]
     > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
-     Теперь можно указать, что добавленный параметр должен использоваться при запуске (сделайте его активным). Дополнительные сведения см. в разделе [Как выбрать активный параметр запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Теперь можно указать, что добавленный параметр должен использоваться при запуске (сделайте его активным). Дополнительные сведения см. в разделе [Практическое руководство. выбрать активный параметр запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>См. также
 

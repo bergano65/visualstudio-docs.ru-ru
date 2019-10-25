@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de7e890c60374730e297296116cb56828fa256b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643758"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Как выполнить Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio
 
 Можно также использовать адаптер диагностических данных профилировщика ASP.NET для сбора данных профилировщика ASP.NET. Этот адаптер диагностических данных собирает данные о производительности приложений ASP.NET.
 
@@ -29,7 +29,7 @@ ms.locfileid: "62979306"
 > [!NOTE]
 > Адаптер диагностических данных профилировщика ASP.NET профилирует процесс служб IIS. Поэтому он не будет работать для веб-сервера разработки. Для профилирования веб-сайта в нагрузочном тесте необходимо установить агент тестирования на компьютере, на котором выполняется сервер IIS. Этот агент тестирования будет использоваться не для создания нагрузки, а только для сбора данных. Дополнительные сведения см. в статье [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md).
 
-Дополнительные сведения см. в разделе [Как Создание параметра тестирования для распределенного нагрузочного теста](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Дополнительные сведения см. в разделе [Практическое руководство. Создание параметра тестирования для распределенного нагрузочного теста](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Настройка профилировщика ASP.NET для параметров тестирования
 

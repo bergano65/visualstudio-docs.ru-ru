@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_slot | Документация Майкрософт
+title: 'IDiaSymbol:: get_slot | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6d0ccbdfe2b89fbeb1f504bf683fab2b5a83b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a47ba9144ab2a322148f167d50b54f1d6b7db80d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64823397"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739323"
 ---
-# <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
-Получает номер слота расположения. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) является `LocIsSlot`.
+# <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
+Возвращает номер гнезда расположения. Используется, если [перечисление локатионтипе](../../debugger/debug-interface-access/locationtype.md) имеет `LocIsSlot`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_slot ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает номер слота расположения.
+заполняет Возвращает номер ячейки в расположении.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByRVA | Документация Майкрософт
+title: 'IDiaSession:: Финдинлинилинесбирва | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900680fe58ab5061d3f8cca07fa1906cf34f7e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6cf587d9e369ac32c72df5e1fd7a9005ef417177
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839333"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742210"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского элемента и содержатся в пределах указанного относительного виртуального адреса (RVA).
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, которые прямо или косвенно связаны с указанным родительским символом и содержатся в указанном относительном виртуальном адресе (RVA).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,22 +34,22 @@ HRESULT findInlineeLinesByRVA ( 
 #### <a name="parameters"></a>Параметры
  `parent`
 
-[in] `IDiaSymbol` Объект, представляющий родительский объект.
+окне Объект `IDiaSymbol`, представляющий родительский элемент.
 
  `rva`
 
-[in] Указывает адрес как RVA.
+окне Указывает адрес в виде RVA.
 
  `length`
 
-[in] Указывает диапазон адресов, в байтах, чтобы охватить с этим запросом.
+окне Указывает диапазон адресов (в байтах), который охватывает этот запрос.
 
  `ppResult`
 
-[out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.
+заполняет Содержит объект `IDiaEnumLineNumbers`, содержащий список извлекаемых номеров строк.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

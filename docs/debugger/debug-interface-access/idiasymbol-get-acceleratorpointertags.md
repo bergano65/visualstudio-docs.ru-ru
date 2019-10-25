@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Документация Майкрософт
+title: 'IDiaSymbol:: get_acceleratorPointerTags | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827298"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741117"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Возвращает все значения тега указатель сочетаний клавиш, которые соответствуют на функцию C++ AMP accelerator заглушки.
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Возвращает все значения тегов указателя ускорителя, соответствующие функции- C++ заглушке ускорителя amp.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Параметры
  `cnt`
 
-[in] Размер выходного массива `pPointerTags`.
+окне Размер `pPointerTags` массива вывода.
 
  `pcnt`
 
-[out] Число тегов указатель сочетаний клавиш в C++ функции заглушки AMP сочетаний клавиш.
+заполняет Число тегов указателей ускорителя в функции- C++ заглушке ускорителя amp.
 
  `pPointerTags`
 
-[out] Объект `DWORD` указатель на массив, заполненный со значениями тегов accelerator указатель в C++ функции заглушки AMP сочетаний клавиш.
+заполняет Указатель массива `DWORD`, который заполняется значениями тега указателя-ускорителя в функции заглушки ускорителя C++ amp.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод вызывается на `IDiaSymbol` интерфейс, который соответствует функции заглушки accelerator C++ AMP.
+## <a name="remarks"></a>Заметки
+ Этот метод вызывается для интерфейса `IDiaSymbol`, соответствующего функции- C++ заглушке ускорителя amp.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

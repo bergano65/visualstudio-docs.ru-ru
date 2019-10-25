@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_locationType | Документация Майкрософт
+title: 'IDiaSymbol:: get_locationType | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: add36da660b9ab8130884db0a4088b693af18a6d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b10668a4767d411f48df213c79ae6508e7c0bf28
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785674"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739855"
 ---
-# <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
-Возвращает тип местоположения данных символа.
+# <a name="idiasymbolget_locationtype"></a>IDiaSymbol::get_locationType
+Возвращает тип расположения символа данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_locationType ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение из [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) перечисление, указывающее тип местоположения данных символа, таких как `static` или `local`.
+заполняет Возвращает значение из перечисления [перечисления локатионтипе](../../debugger/debug-interface-access/locationtype.md) , которое указывает тип расположения символа данных, например `static` или `local`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

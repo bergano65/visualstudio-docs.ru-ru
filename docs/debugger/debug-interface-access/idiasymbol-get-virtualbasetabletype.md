@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBaseTableType | Документация Майкрософт
+title: 'IDiaSymbol:: get_virtualBaseTableType | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edbd1d8ae66e58611ab538cf0bfe695cb22b3412
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: aaddb8b71ba96511af3682b442c1e5c8e84a409c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793028"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738841"
 ---
-# <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
-Извлекает тип указателя базовой виртуальной таблицы.
+# <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
+Возвращает тип указателя виртуальной базовой таблицы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,25 +34,25 @@ HRESULT get_virtualBaseTableType(
 
 |Параметр|Описание|
 |---------------|-----------------|
-|`pRetVal`|[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , указывающий тип базовой таблицы.|
+|`pRetVal`|заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , указывающий тип базовой таблицы.|
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Указатель базовой виртуальной таблицы (`vbtptr`) — это скрытый указатель в [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable, который обрабатывает наследование от виртуальных базовых классов. Объект `vbtptr` может иметь разные размеры в зависимости от наследуемые классы.
+## <a name="remarks"></a>Заметки
+ Указатель виртуальной базовой таблицы (`vbtptr`) является скрытым указателем в [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable, который обрабатывает наследование от виртуальных базовых классов. @No__t_0 может иметь разные размеры в зависимости от наследуемых классов.
 
- Этот метод возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, который может использоваться для определения размера vbtptr.
+ Этот метод возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , который можно использовать для определения размера вбтптр.
 
 ## <a name="requirements"></a>Требования
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85124837e378ea4377de0ca08c5a8680034240c2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974973"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647546"
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 
@@ -27,7 +27,7 @@ ms.locfileid: "62974973"
 
 Следующая таблица описывает функции, доступные для использования с элементом `Function` во фрагментах кода.
 
-|Функция|Описание|Язык|
+|Функция|ОПИСАНИЕ|Язык|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
 |`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|C#|

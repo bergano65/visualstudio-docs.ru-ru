@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Clone | Документация Майкрософт
+title: 'Идиаенумфрамедата:: Clone | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c86d9f4f8eb02b0389e7ea28b5858f8576f6c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47f6119eac1d48a7819f67bc57660c53e6b93b54
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838406"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744667"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.
+Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,12 +31,12 @@ HRESULT Clone( 
 ```
 
 #### <a name="parameters"></a>Параметры
- ppenum
+ ппенум
 
-[out] Возвращает [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) , содержащий копию перечислителя. Кадра, в котором данные не дублируются, только перечислитель.
+заполняет Возвращает объект [идиаенумфрамедата](../../debugger/debug-interface-access/idiaenumframedata.md) , содержащий дубликат перечислителя. Данные кадра не дублируются, только перечислитель.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

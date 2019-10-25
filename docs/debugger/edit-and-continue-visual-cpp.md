@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435854"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737898"
 ---
 # <a name="edit-and-continue-c"></a>Изменить и продолжить (C++)
 В C++ проектах можно использовать "изменить и продолжить". Сведения об ограничениях "изменить и продолжить" см. в разделе [Поддерживаемые изменения кодаC++()](../debugger/supported-code-changes-cpp.md) .
@@ -79,5 +79,5 @@ ms.locfileid: "72435854"
 
  В таких случаях отладчик продолжает выполнение исходного кода до тех пор, пока эти изменения не вступят в силу. Устаревший код отображается в качестве временного исходного файла в отдельном окне исходного кода. Заголовок этого окна имеет вид наподобие `enc25.tmp`. При этом отредактированный исходный код остается в своем окне. При попытке редактирования устаревшего кода появляется предупреждение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md)

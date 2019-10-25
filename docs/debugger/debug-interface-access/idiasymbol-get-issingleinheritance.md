@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSingleInheritance | Документация Майкрософт
+title: 'IDiaSymbol:: get_isSingleInheritance | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -8,15 +8,15 @@ ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f8b245879a6b574c3f82b12d14b4fab637c2ecd7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96a8ce072fc57dc236dd2025b8ea3c9c5a4b9b79
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836301"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740056"
 ---
-# <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
-Указывает, является ли `this` указатель указывает на элемент данных с помощью одиночного наследования.
+# <a name="idiasymbolget_issingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
+Указывает, указывает ли указатель `this` на элемент данных с единственным наследованием.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,10 +28,10 @@ HRESULT get_isSingleInheritance(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на `BOOL` , указывает ли `this` указатель указывает на элемент данных с помощью одиночного наследования.
+заполняет Указатель на `BOOL`, указывающий, указывает ли указатель `this` на элемент данных с единственным наследованием.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

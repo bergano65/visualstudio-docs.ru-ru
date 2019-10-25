@@ -1,5 +1,5 @@
 ---
-title: Вариант создания MIP карты | Документация Майкрософт
+title: MIP-вариант создания карт | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895603"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734901"
 ---
 # <a name="mip-map-generation-variant"></a>Вариант создания MIP-карты
 Включает MIP-карты для текстур, не являющихся целевыми объектами отрисовки.
@@ -25,8 +25,8 @@ MIP-карты используются в первую очередь для у
 
 Если этот вариант дает значительный прирост производительности, это указывает на то, что текстуры используются без включенных MIP-карт, и поэтому кэш текстур используется не самым эффективным образом.
 
-## <a name="remarks"></a>Примечания
-MIP-карты создаются принудительно при каждом вызове метода `ID3D11Device::CreateTexture2D`, который создает исходную текстуру. В частности, принудительное создание mip-карт, когда объект D3D11_TEXTURE2D_DESC, передаваемый в `pDesc` описывает неизменяемый ресурс шейдера, который является:
+## <a name="remarks"></a>Заметки
+MIP-карты создаются принудительно при каждом вызове метода `ID3D11Device::CreateTexture2D`, который создает исходную текстуру. В частности, создание MIP-карт принудительно происходит, когда объект D3D11_TEXTURE2D_DESC, переданный в `pDesc`, описывает неизменяемый ресурс шейдера. То есть:
 
 - Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.
 
@@ -62,7 +62,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 ```
 
-Чтобы создать текстуру с полной MIP-цепочкой, задайте для свойства `D3D11_TEXTURE2D_DESC::MipLevels` значение 0. Количество уровней mip в полной mip цепочки является floor(log2(n) + 1), где n — это наибольший размер текстуры.
+Чтобы создать текстуру с полной MIP-цепочкой, задайте для свойства `D3D11_TEXTURE2D_DESC::MipLevels` значение 0. Число уровней MIP в полной цепочке MIP — это этаж (log2 (n) + 1), где n — это самый крупный размер текстуры.
 
 Помните, что при предоставлении исходных данных методу `CreateTexture2D` необходимо предоставить объект D3D11_SUBRESOURCE_DATA для каждого уровня MIP.
 

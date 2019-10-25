@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f11a170878e3efefc123ad7d61d0889f5bd95c12
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435725"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737884"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Изменение кода и продолжение отладки в Visual Studio (C#, VB, C++)
 "Изменить и продолжить" это режим, позволяющий экономить время за счет внесения изменений в исходный код, в то время как программа находится в режиме приостановки выполнения. При возобновлении выполнения программы путем выбора команды выполнения, например Continue или Step, **Операция** **"** изменить и продолжить" автоматически применяет изменения кода с некоторыми ограничениями. Это позволяет вносить изменения в код во время сеанса отладки, без необходимости остановки, перекомпиляции всего приложения и перезапуска сеанса отладки.
@@ -45,7 +45,7 @@ ms.locfileid: "72435725"
 
  [Функция "Изменить и продолжить" не поддерживается для языка F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: Анализ системного кода после исключения | Документация Майкрософт
+title: Проверка системного кода после исключения | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9467ce7001f0061c20a5097220bd93b24937db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98f3eb98024e20350151904f297f7e7b4d6f1fea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894038"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733374"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Практическое руководство. анализ системного кода после исключения
+# <a name="how-to-examine-system-code-after-an-exception"></a>Практическое руководство. Анализ системного кода после исключения
 При возникновении исключения может возникнуть необходимость проанализировать код внутри системного вызова, чтобы определить причину исключения. В следующей процедуре поясняется, как это сделать при отсутствии загруженных символов для системного кода или в режиме "Только мой код".
 
 ### <a name="to-examine-system-code-following-an-exception"></a>Анализ системного кода после возникновения исключения

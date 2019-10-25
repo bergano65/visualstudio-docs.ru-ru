@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.'
+title: 'Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dcd45cb64656b926b9c59efd7b6af14d2ec4c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850648"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737559"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Ошибка: Вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.
-Это сообщение об ошибке означает, что Visual Studio не удалось найти подходящий экземпляр монитора удаленной отладки Visual Studio на удаленном компьютере. Без монитора удаленной отладки Visual Studio удаленная отладка невозможна. Сведения о загрузке и настройке удаленного отладчика, см. в разделе [удаленной отладки](../debugger/remote-debugging.md).
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере
+Это сообщение об ошибке означает, что Visual Studio не удалось найти подходящий экземпляр монитора удаленной отладки Visual Studio на удаленном компьютере. Без монитора удаленной отладки Visual Studio удаленная отладка невозможна. Сведения о скачивании и настройке удаленного отладчика см. в разделе [Удаленная отладка](../debugger/remote-debugging.md).
 
 > [!IMPORTANT]
-> Если вы считаете, что получили это сообщение из-за ошибки продукта, [о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Если вам нужна дополнительная помощь, обратитесь к разделу [Talk to Us](../ide/talk-to-us.md) , чтобы узнать, как связаться с корпорацией Майкрософт.
+> Если вы считаете, что получили это сообщение из-за ошибки в продукте, [сообщите об этой неполадке в Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Если вам нужна дополнительная помощь, обратитесь к разделу [Talk to Us](../ide/talk-to-us.md) , чтобы узнать, как связаться с корпорацией Майкрософт.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Это сообщение было получено во время отладки в Visual Studio 2010 или более ранней версии
- Если вы используете версию Visual Studio 2010 или более раннюю, эта ошибка может также возникать, если не включен общий доступ к файлам и принтерам. Чтобы узнать больше об этой проблеме, обратитесь к версии Visual Studio 2010 этой документации: [Ошибка: Microsoft Visual Studio монитора удаленной отладки (MSVSMON. EXE-файла) не запущен на удаленном компьютере. -Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
+ Если вы используете версию Visual Studio 2010 или более раннюю, эта ошибка может также возникать, если не включен общий доступ к файлам и принтерам. Чтобы узнать больше об этой проблеме, обратитесь к документации для версии Visual Studio 2010: [Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере — Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Это сообщение было получено при локальной отладке
  Если это сообщение появляется при локальной отладке, причиной может быть антивирусная программа или брандмауэр сторонних разработчиков. Visual Studio является 32-разрядным приложением, поэтому для отладки 64-разрядных приложений используется 64-разрядная версия удаленного отладчика. Два процесса взаимодействуют друг с другом по локальной сети на локальном компьютере. Трафик не отправляется с компьютера, но приложение для обеспечения безопасности от сторонних разработчиков может блокировать обмен данными.
@@ -64,15 +64,15 @@ ms.locfileid: "62850648"
  Антивирусная программа Windows разрешает подключения к удаленному отладчику, но некоторые антивирусные программы сторонних разработчиков могут блокировать их. Чтобы узнать, как разрешить эти подключения, см. документацию по используемой антивирусной программе.
 
 ## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>Политика сетевой безопасности блокирует обмен данными между удаленным компьютером и Visual Studio.
- Проверьте, не блокирует ли политика сетевой безопасности обмен данными. Дополнительные сведения о политике сетевой безопасности Windows, см. в разделе [параметры политики безопасности](/windows/device-security/security-policy-settings/security-policy-settings).
+ Проверьте, не блокирует ли политика сетевой безопасности обмен данными. Дополнительные сведения о политике сетевой безопасности Windows см. в разделе [Параметры политики безопасности](/windows/device-security/security-policy-settings/security-policy-settings).
 
 ## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>Удаленная отладка невозможна из-за слишком высокой загрузки сети.
  Попробуйте выполнить удаленную отладку в другое время или перепланировать работу в сети на другое время.
 
 ## <a name="more-help"></a>Дополнительная справка
- Чтобы получить более удаленной поддержки отладчика, включая параметры командной строки, щелкните **Справка > использование** в окне удаленного отладчика. Если у вас нет, она открыта, можно увидеть веб-страницы путем копирования следующую строку **проводнике** окна. (Вам нужно заменить \<каталог установки Visual Studio > с расположением установки Visual Studio.)
+ Чтобы получить дополнительную справку по удаленному отладчику, включая параметры командной строки, щелкните **справка > использование** в окне удаленного отладчика. Если вы не открыли его, можно увидеть веб-страницу, скопировав следующую строку в окно **проводника** . (Необходимо заменить каталог установки \<Visual Studio > расположением установки Visual Studio.)
 
- res: / /*\<каталог установки Visual Studio >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ *каталог установки res://\<Visual Studio >* \ COMMON7 \ IDE \ Remote %2 0 Debugger \ x64 \ msvsmon. exe/Help. htm
 
 ## <a name="see-also"></a>См. также
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

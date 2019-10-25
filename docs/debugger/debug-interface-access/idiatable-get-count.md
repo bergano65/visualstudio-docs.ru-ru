@@ -1,5 +1,5 @@
 ---
-title: IDiaTable::get_Count | Документация Майкрософт
+title: 'Идиатабле:: get_Count | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64fcf47e6d1b315499bc2e43ab32459bf11c091
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ce325c51a9dfcee32093a0a1fafe82ea6a7fdd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834524"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738751"
 ---
-# <a name="idiatablegetcount"></a>IDiaTable::get_Count
-Получает число элементов в таблице.
+# <a name="idiatableget_count"></a>IDiaTable::get_Count
+Возвращает количество элементов в таблице.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает количество элементов в таблице.
+заполняет Возвращает число элементов в таблице.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_length | Документация Майкрософт
+title: 'IDiaSymbol:: get_length | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 114d9f7b00bbe5d322e7b6893e96fbbabec9d002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858106"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739985"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-Извлекает количество битов или числа байтов памяти, используемый объект, представленный этим символом.
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
+Возвращает число битов или байтов памяти, используемых объектом, представленным этим символом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает число байтов или бит памяти, используемый объект, представленный этим символом.
+заполняет Возвращает число байтов или бит памяти, используемых объектом, представленным этим символом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Если [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) символа является `LocIsBitField`, длина, возвращаемого этим методом (в битах); в противном случае — длина в байтах для всех других типов расположение.
+## <a name="remarks"></a>Заметки
+ Если [перечисление локатионтипе](../../debugger/debug-interface-access/locationtype.md) символа `LocIsBitField`, то длина, возвращаемая этим методом, находится в битах; в противном случае длина задается в байтах для всех остальных типов расположения.
 
 ## <a name="example"></a>Пример
 
@@ -56,8 +56,8 @@ pSymbol->get_length( &length );
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

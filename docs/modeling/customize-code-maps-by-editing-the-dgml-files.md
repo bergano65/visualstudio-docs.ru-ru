@@ -20,12 +20,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d871a6aa8cff6e06f02e61407d2c9e59e03cd65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654040"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748468"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -638,7 +638,7 @@ ms.locfileid: "72654040"
 
 5. Чтобы просмотреть кодовую точку, на которую указывает ссылка, или кодовые точки на карте, откройте контекстное меню кодовой точки или связи. Выберите **Переход к ссылке** , а затем элемент Code.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)

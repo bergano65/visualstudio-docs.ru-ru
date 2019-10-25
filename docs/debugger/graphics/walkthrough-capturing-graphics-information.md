@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Запись графических сведений | Документация Майкрософт
+title: Пошаговое руководство. запись сведений о графике | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897668"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734729"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Пошаговое руководство. Захват графической информации
+# <a name="walkthrough-capturing-graphics-information"></a>Пошаговое руководство. Запись графических сведений
 В этом пошаговом руководстве показано, как с помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] вручную захватывать графические данные из приложения Direct3D.
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
@@ -45,18 +45,18 @@ ms.locfileid: "62897668"
 
 #### <a name="to-capture-graphics-information"></a>Захват графических данных
 
-- На панели инструментов "Диагностика графики" нажмите кнопку **Захват** . ![Значок кнопки захвата графики](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
+- На панели инструментов "Диагностика графики" нажмите кнопку **Захват** . ![Значок кнопки захвата графики](media/debuggingdirectxgraphics.png "DЕбуггингдиректксграфикс ")
 
-   -или-
+   \- или -
 
    Поместив фокус на приложение, нажмите клавишу **PRINT SCREEN**.
 
-  Каждый раз при захвате данных о кадре диагностика графики записывает события Direct3D и связанное состояние и добавляет эти данные в журнал графики. Новый журнал графики создается для каждого сеанса диагностики графики. Сведения о журналах графики см. в разделе [Обзор](overview-of-visual-studio-graphics-diagnostics.md).
+  Каждый раз при захвате данных о кадре диагностика графики записывает события Direct3D и связанное состояние и добавляет эти данные в журнал графики. Новый журнал графики создается для каждого сеанса диагностики графики. Дополнительные сведения о журналах графики см. в разделе [Обзор](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="next-steps"></a>Следующие шаги
  В этом пошаговом руководстве было продемонстрировано, как захватывать графические данные вручную. Далее можно перейти к рассмотрению следующего этапа.
 
-- Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](overview-of-visual-studio-graphics-diagnostics.md).
+- Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. [Обзор](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>См. также
 - [Capturing Graphics Information](capturing-graphics-information.md)

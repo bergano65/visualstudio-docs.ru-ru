@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661808"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738617"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Задает параметры поиска для символов и имен файлов.
@@ -45,17 +45,17 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Элементы
 `nsNone` Параметры не указаны.
 
-`nsfCaseSensitive`Применяет совпадение имен с учетом регистра.
+`nsfCaseSensitive` применяет совпадение имен с учетом регистра.
 
-`nsfCaseInsensitive`Применяет совпадение имен без учета регистра.
+`nsfCaseInsensitive` применяет совпадение имен без учета регистра.
 
-`nsfFNameExt`Обрабатывает имена как пути и применяет совпадение имен filename. ext.
+`nsfFNameExt` обрабатывает имена как пути и применяет имя filename. ext.
 
-`nsfRegularExpression`Применяет совпадение имен с учетом регистра, используя звездочки (*) и вопросительные знаки (?) в качестве подстановочных знаков. (Другие распространенные символы регулярных выражений не поддерживаются.)
+`nsfRegularExpression` применяет совпадение имен с учетом регистра, используя звездочки (*) и вопросительные знаки (?) в качестве подстановочных знаков. (Другие распространенные символы регулярных выражений не поддерживаются.)
 
-`nsfUndecoratedName`Применяется только к символам, имеющим недекорированные и декорированные имена.
+`nsfUndecoratedName` применяется только к символам, имеющим недекорированные и декорированные имена.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 Значения из этого перечисления передаются следующим методам:
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)

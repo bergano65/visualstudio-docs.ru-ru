@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9737c9f02f9231aae5d20bd22321024fcfd7fd69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663732"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748171"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Проверка в доменных языках
 Автор доменного языка может определить ограничения проверки, позволяющие контролировать полноценность созданной пользователем модели. Например, если доменный язык позволяет рисовать генеалогическое дерево людей и их предков, можно написать ограничения, согласно которым даты рождения детей должны быть позже дат рождения родителей.
@@ -334,7 +334,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > Обеспечьте уведомление пользователя о том, что изменения были отрегулированы и произведен откат. Например, используйте `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Обработчики событий распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md)

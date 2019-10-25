@@ -19,24 +19,24 @@ helpviewer_keywords:
 - views, changing mode
 - views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: fd3e238813c6cfd8674e5392d9ad20889e79c900
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531897"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645850"
 ---
 # <a name="how-to-manage-editor-modes"></a>Практическое руководство. Управление режимами редактора
 
 Предусмотрено несколько режимов отображения редактора кода Visual Studio.
 
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в этой статье в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, например на **Общие** или **Visual C++**, выберите **Сервис** > **Импорт и экспорт параметров**, а затем щелкните **Сбросить все параметры**.
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в этой статье в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, например на **Общие** или **Visual C++** , выберите **Сервис** > **Импорт и экспорт параметров**, а затем щелкните **Сбросить все параметры**.
 
 ## <a name="enable-full-screen-mode"></a>Включение полноэкранного режима
 

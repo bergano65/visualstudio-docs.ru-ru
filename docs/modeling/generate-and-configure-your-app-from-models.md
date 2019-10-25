@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 801423ee8ad5bb9a63ebb4f970d9c53e5fe8c1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605698"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748391"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Создание и настройка приложения на основе моделей
 Вы можете создавать или настраивать части приложения на основе модели.
@@ -70,7 +70,7 @@ ms.locfileid: "72605698"
 
      Например, схема классов UML представляет собой набор прямоугольников и стрелок. Теоретически с помощью этой нотации можно определить все что угодно. Однако схему классов рекомендуется использовать только в том случае, если вы действительно описываете набор типов. Например, можно адаптировать схемы классов для описания различных типов веб-страниц.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Практическое руководство. Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Next | Документация Майкрософт
+title: 'Идиаенумсектионконтрибс:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8fd088ff6be619de56f27f91b198aed18e428c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61d99b0c881abdb8974e94352911ae3234c440c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829788"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744273"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-Извлекает указанное число разделе вклад в последовательности перечисления.
+Извлекает указанное число вкладов разделов в последовательности перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +35,18 @@ HRESULT Next( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Номер раздела вклад в перечислителе требуется получить.
+окне Количество вкладов разделов в перечислителе, которые необходимо получить.
 
  rgelt
 
-[out] Массив, который должен быть заполнен с [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) объекты, представляющие вклад нужный раздел.
+заполняет Массив, который должен быть заполнен объектами [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) , представляющими нужные вклады разделов.
 
  pceltFetched
 
-[out] Возвращает количество разделе вклад в выборке перечислитель.
+заполняет Возвращает количество вкладов разделов в выбранном перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при публикации не дополнительные раздела. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если больше нет публикаций разделов. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

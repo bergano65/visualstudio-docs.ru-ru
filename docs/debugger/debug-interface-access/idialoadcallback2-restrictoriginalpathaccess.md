@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback2::RestrictOriginalPathAccess | Документация Майкрософт
+title: 'IDiaLoadCallback2:: Рестрикторигиналпасакцесс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26539d4217682b4d5357f13e9f9368c81297da78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bcdaa7c1896a0ef29706e3650ad8ac56537f778
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839749"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743003"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
-Определяет, разрешается ли для поиска PDB-файл в исходном каталоге отладки.
+Определяет, можно ли искать PDB-файл в исходном каталоге отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,10 +29,10 @@ HRESULT RestrictOriginalPathAccess ();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Любой код возврата не `S_OK` не позволяет найти PDB-файл в исходном каталоге отладки. Исходный каталог отладки — путь к файлу символов, компилируется в исполняемый файл, если отладка включена. Этот путь не обязательно так же, как путь, где существует исполняемый файл.
+## <a name="remarks"></a>Заметки
+ Любой код возврата, отличный от `S_OK`, не делает поиск PDB-файла в исходном каталоге отладки. Исходный каталог отладки — это путь к файлу символов, скомпилированному в исполняемый файл при включенной отладке. Этот путь не обязательно должен совпадать с путем, в котором существует исполняемый файл.
 
 ## <a name="see-also"></a>См. также
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

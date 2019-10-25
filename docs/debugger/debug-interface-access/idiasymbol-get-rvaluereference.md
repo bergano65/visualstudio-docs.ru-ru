@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_RValueReference | Документация Майкрософт
+title: 'IDiaSymbol:: get_RValueReference | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e9c14bc0fcce8a66c64b33b2ec8cbd943c80c8c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 43ef604b55cd29d7acf86f38d307dff3958d0162
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784238"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739406"
 ---
-# <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
-Получает флаг, указывающий, является ли тип указателя, ссылки rvalue. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается тип указателя.
+# <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
+Получает флаг, указывающий, является ли тип указателя ссылкой rvalue. Используется, если для [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) задан тип указателя.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ HRESULT get_RValueReference (
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` если указатель является ссылкой rvalue; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если указатель является ссылкой rvalue; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

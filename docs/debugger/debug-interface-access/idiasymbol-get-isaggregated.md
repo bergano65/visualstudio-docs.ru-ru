@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAggregated | Документация Майкрософт
+title: 'IDiaSymbol:: get_isAggregated | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ee36d1901f7acb5bc7e41ac72b8dc03b15bc45c8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830552"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740293"
 ---
-# <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
-Получает флаг, указывающий, является ли символ данных часть статистическое выражение или коллекция символов; компилятор будет рассматривать агрегированные символы как отдельные сущности, но они действительно являются частью одного символа большего размера.
+# <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
+Получает флаг, указывающий, является ли символ данных частью агрегата или коллекции символов. компилятор будет рассматривать агрегированные символы как отдельные сущности, но они действительно являются частью одного большего символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,23 +33,23 @@ HRESULT get_isAggregated(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если данные являются частью статистической обработки символов, разбитых по родительской символ; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если данные являются частью статистической обработки символов, разделенных от родительского символа; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) метод `TRUE` для символа, который является родительским для объекта агрегированные символы.
+## <a name="remarks"></a>Заметки
+ Метод [IDiaSymbol:: get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) `TRUE` для символа, который является родительским по отношению к агрегированным символам.
 
 ## <a name="requirements"></a>Требования
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

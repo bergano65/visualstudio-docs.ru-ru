@@ -15,12 +15,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4824cba4de67ad199974f5844c7f220a6fd6accc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445705"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745913"
 ---
 # <a name="intrinsic-functions"></a>Встроенные функции
 Выражение в SAL может быть выражением C/C++ при условии, что выражение не имеет побочных эффектов, например, ++, -- и все вызовы функций имеют побочные эффекты в этом контексте.  Однако SAL предоставляет некоторые функции, подобные функциям, и некоторые зарезервированные символы, которые можно использовать в выражениях SAL. Они называются *встроенными функциями*.
@@ -46,7 +46,7 @@ ms.locfileid: "72445705"
 |`strlen(param)`|`param` — это число элементов в строке вплоть до нулевого символа, не включая признак конца строки. Эта заметка зарезервирована для использования в массивах символов и напоминает функцию среды выполнения C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 |`wcslen(param)`|`param` — число элементов в строке до (но не включая) нулевого терминатора. Эта заметка зарезервирована для использования в массивах расширенных символов и напоминает функцию среды выполнения C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Основные сведения о языке SAL](../code-quality/understanding-sal.md)

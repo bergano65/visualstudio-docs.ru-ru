@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildren | Документация Майкрософт
+title: 'IDiaSymbol:: Финдчилдрен | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f3c62271f6324e50a68de393cfa668c69ba4a935
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837827"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741290"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
-Получает дочерние узлы, символа.
+Возвращает дочерние элементы символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,25 +36,25 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>Параметры
  `symtag`
 
-[in] Задает теги символов требуется получить дочерние элементы, как определено в [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Значение `SymTagNull` для всех дочерних элементов, требуется получить.
+окне Задает Теги символов для извлекаемых дочерних элементов, как определено в [перечислении симтаженум](../../debugger/debug-interface-access/symtagenum.md). Задайте значение `SymTagNull`, чтобы получить все дочерние элементы.
 
  `name`
 
-[in] Задает имя используемого дочерние элементы должны быть получены. Значение `NULL` для всех дочерних элементов, требуется получить.
+окне Указывает имя извлекаемых дочерних элементов. Задайте значение `NULL`, чтобы получить все дочерние элементы.
 
  `compareFlags`
 
-[in] Задает параметры сравнения, который применяется к соответствующим именем. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.
+окне Задает параметры сравнения, применяемые к соответствию имен. Значения из перечисления [перечисления намесеарчоптионс](../../debugger/debug-interface-access/namesearchoptions.md) можно использовать отдельно или в сочетании.
 
  `ppResult`
 
-[out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) извлечь объект, содержащий список дочерних символов.
+заполняет Возвращает объект [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md) , содержащий список извлеченных дочерних символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает `S_OK` Если по крайней мере одного дочернего элемента этот символ найден, или возвращает `S_FALSE` дочерние элементы не найдены; в противном случае возвращает код ошибки.
+ Возвращает `S_OK`, если хотя бы один дочерний элемент символа был найден, или `S_FALSE` значение, если не найдено потомков. в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод идентичен вызову [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md) метод этот символ в качестве первого параметра.
+## <a name="remarks"></a>Заметки
+ Этот метод идентичен вызову метода [IDiaSession:: финдчилдрен](../../debugger/debug-interface-access/idiasession-findchildren.md) с этим символом в качестве первого параметра.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

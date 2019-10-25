@@ -3,17 +3,17 @@ title: Пошаговое руководство. Создание реалис�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844708"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634543"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_objectPointerType | Документация Майкрософт
+title: 'IDiaSymbol:: get_objectPointerType | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69dac79a040a8eff68c36c82b9a85935d969b5ec
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e4254a121ce29578438f4ee7264345aa30bafd7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808905"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739624"
 ---
-# <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
-Получает тип указателя на объект для метода класса.
+# <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
+Возвращает тип указателя на объект для метода класса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_objectPointerType ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий указатель на объект для метода класса.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий указатель на объект для метода класса.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Это свойство применяется только к символам с [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) тип `SymTagFunctionType`.
+## <a name="remarks"></a>Заметки
+ Это свойство применяется только к символам с типом [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) `SymTagFunctionType`.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

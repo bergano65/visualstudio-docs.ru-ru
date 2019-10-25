@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfRows | Документация Майкрософт
+title: 'IDiaSymbol:: get_numberOfRows | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d87445592db3cc566744151ea207bbb64c4906
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 257a667d8c2347394abaaa3282b37201d443ed97
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836075"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739645"
 ---
-# <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
-Возвращает число строк в матрице.
+# <a name="idiasymbolget_numberofrows"></a>IDiaSymbol::get_numberOfRows
+Извлекает количество строк в матрице.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT get_numberOfRows(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на `DWORD` , содержащий число строк в матрице.
+заполняет Указатель на `DWORD`, содержащий количество строк в матрице.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments::get__NewEnum | Документация Майкрософт
+title: 'Идиаенумсегментс:: get__NewEnum | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5c021e74c758b6409d42deae6a7e6831368367e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cca94c078bb2b2598ffbe8e8098ac635cb698288
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829814"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744212"
 ---
-# <a name="idiaenumsegmentsgetnewenum"></a>IDiaEnumSegments::get__NewEnum
-Извлекает <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> версии этот перечислитель.
+# <a name="idiaenumsegmentsget__newenum"></a>IDiaEnumSegments::get__NewEnum
+Возвращает <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> версию этого перечислителя.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,12 +31,12 @@ HRESULT get__NewEnum ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- pRetVal
+ претвал
 
-[out] Возвращает `IUnknown` интерфейс, который представляет <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> версии этот перечислитель.
+заполняет Возвращает интерфейс `IUnknown`, представляющий <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> версию этого перечислителя.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179865"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777763"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 
@@ -40,7 +40,7 @@ ms.locfileid: "70179865"
 
 ::: moniker range="vs-2017"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 поддерживает разработку UWP только в Windows 10. Дополнительные сведения см. в разделах [Целевые платформы](/visualstudio/productinfo/vs2017-compatibility-vs) и [Системные требования](/visualstudio/productinfo/vs2017-system-requirements-vs) для Visual Studio.
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). Visual Studio 2017 поддерживает разработку UWP только в Windows 10. Дополнительные сведения см. в разделах [Целевые платформы](/visualstudio/productinfo/vs2017-compatibility-vs) и [Системные требования](/visualstudio/productinfo/vs2017-system-requirements-vs) для Visual Studio.
 
 - [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Вам также потребуется необязательная рабочая нагрузка "Разработка приложений для универсальной платформы Windows".
 
@@ -50,7 +50,7 @@ ms.locfileid: "70179865"
 
 ::: moniker range="vs-2019"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 поддерживает разработку UWP только в Windows 10. Дополнительные сведения см. в разделах [Целевые платформы](/visualstudio/releases/2019/compatibility/) и [Системные требования](/visualstudio/releases/2019/system-requirements/) для Visual Studio.
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). Visual Studio 2019 поддерживает разработку UWP только в Windows 10. Дополнительные сведения см. в разделах [Целевые платформы](/visualstudio/releases/2019/compatibility/) и [Системные требования](/visualstudio/releases/2019/system-requirements/) для Visual Studio.
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads). Вам также потребуется необязательная рабочая нагрузка "Разработка приложений для универсальной платформы Windows".
 

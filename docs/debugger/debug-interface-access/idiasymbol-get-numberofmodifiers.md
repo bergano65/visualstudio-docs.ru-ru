@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfModifiers | Документация Майкрософт
+title: 'IDiaSymbol:: get_numberOfModifiers | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a83a83a805aa86d10b3c051ac1c6fc39f36f14
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e034f081f8a279a65134c40e5ee485cd1d08d9b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835998"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739668"
 ---
-# <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
-Возвращает число модификаторы, которые применяются к исходному типу.
+# <a name="idiasymbolget_numberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
+Возвращает количество модификаторов, применяемых к исходному типу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT get_numberOfModifiers(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на `DWORD` , указывающее количество модификаторы, которые применяются к исходному типу.
+заполняет Указатель на `DWORD`, указывающий количество модификаторов, применяемых к исходному типу.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hfaFloat | Документация Майкрософт
+title: 'IDiaSymbol:: get_hfaFloat | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3305efc101603d66511e1e2c5ef356ead22b59f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a13d35e494bad6bc844ea585b89f75dbe6665224
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64801317"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740413"
 ---
-# <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
-Получает флаг, указывающий, содержит ли определяемого пользователем типа (UDT) однородных данных с плавающей запятой aggregate (HFA) типа float.
+# <a name="idiasymbolget_hfafloat"></a>IDiaSymbol::get_hfaFloat
+Получает флаг, указывающий, содержит ли определяемый пользователем тип (UDT) однородные статистические данные с плавающей запятой (ХФА) типа float.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ HRESULT get_hfaFloat( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если определяемого пользователем ТИПА содержит HFA данных типа float; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если определяемый пользователем тип содержит данные ХФА типа float; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

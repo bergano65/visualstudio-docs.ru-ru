@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource | Документация Майкрософт
+title: Идиаинжектедсаурце | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8956fb7da61519ed9d0939da087ce8a4181ac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 994f454372883f2516d1eab03bf1152693969b16
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839879"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743310"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
-Обращений к вставлен исходного кода, хранящиеся в источнике данных для доступа к интерфейсу отладки.
+Обращается к внедренному исходному коду, хранящемуся в источнике данных DIA.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,22 +33,22 @@ IDiaInjectedSource : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Извлекает циклическую проверку избыточности (CRC) вычисляется на основе байты исходного кода.|
-|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Возвращает число байтов кода.|
-|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Получает имя файла для источника.|
-|[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Извлекает имя объектного файла, к которому был скомпилирован источника.|
-|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, который был вызван.|
-|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Получает индикатор того, источник сжатия, используемый.|
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Извлекает циклическую проверку избыточности (CRC), вычисленную на основе байтов исходного кода.|
+|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Извлекает число байтов кода.|
+|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Возвращает имя файла для источника.|
+|[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Возвращает имя объектного файла, в который был скомпилирован источник.|
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Возвращает имя, присвоенное исходному коду, не являющемуся файлом; Это значит, что добавлен код.|
+|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Возвращает индикатор используемого сжатия источника.|
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Извлекает байты исходного кода.|
 
-## <a name="remarks"></a>Примечания
-Введенный код — текст, вставляемый во время компиляции. Это не значит, препроцессор `#include` используется в C++.
+## <a name="remarks"></a>Заметки
+Внедренный источник — это текст, который вставляется во время компиляции. Это не означает `#include` препроцессора, используемое в C++.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
-Получить этот интерфейс, вызвав [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) или [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) методы. См. в разделе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс пример получения `IDiaInjectedSource` интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Получите этот интерфейс, вызвав методы [IDiaEnumInjectedSources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) или [IDiaEnumInjectedSources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) . Пример получения интерфейса `IDiaInjectedSource` см. в интерфейсе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
 
 ## <a name="example"></a>Пример
-В этом примере отображаются данные, доступные из `IDiaInjectedSource` интерфейс. В качестве альтернативы использования [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) интерфейсом, см. пример в [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс.
+В этом примере отображаются данные, доступные в интерфейсе `IDiaInjectedSource`. Альтернативный подход, использующий интерфейс [идиапропертистораже](../../debugger/debug-interface-access/idiapropertystorage.md) , см. в примере в интерфейсе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
 
 ```C++
 void PrintInjectedSource(IDiaInjectedSource* pSource)
@@ -113,9 +113,9 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: dia2.h
+Заголовок: Dia2. h
 
-Библиотека: diaguids.lib
+Библиотека: диагуидс. lib
 
 DLL: msdia80.dll
 

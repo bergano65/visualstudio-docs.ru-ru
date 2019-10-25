@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e6ff6000f0eab60e17642bf2bd8257154e54a9d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622607"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745946"
 ---
 # <a name="code-analysis-policy-errors"></a>Ошибки политики анализа кода
 
@@ -73,6 +73,6 @@ ms.locfileid: "72622607"
 
 Эта ошибка относится к неуправляемым проектам. Политика анализа кода требует анализа кода для C/C++, но она не включена в текущем проекте на клиенте.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ошибки, возникающие при анализе кода](../code-quality/code-analysis-application-errors.md)

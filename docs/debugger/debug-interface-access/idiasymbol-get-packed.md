@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_packed | Документация Майкрософт
+title: 'IDiaSymbol:: get_packed | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91e99da7832bb2a0e067de6eb3c09f90255eaf32
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 420ba5b56342b4b1d5b8e4c2756aa828e5fe53b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785831"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739527"
 ---
-# <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-Получает флаг, указывающий, содержит ли определяемый пользователем тип (UDT).
+# <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
+Получает флаг, указывающий, упакован ли определяемый пользователем тип данных (UDT).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_packed ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` если упаковывается определяемого пользователем ТИПА; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если определяемый пользователем тип упакован; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Упакованный означает, что все члены определяемого пользователем типа как близко друг к другу, располагаются без промежуточных заполнения для выравнивания по границам памяти.
+## <a name="remarks"></a>Заметки
+ Упакованное значение означает, что все члены определяемого пользователем типа располагаются как можно ближе друг к другу, без промежуточного заполнения для согласования с границами памяти.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

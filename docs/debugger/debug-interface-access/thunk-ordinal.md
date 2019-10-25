@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854432"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738500"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
-Определяет преобразователь типов.
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
+Обозначает типы преобразователей.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,25 +39,25 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Элементы
-Стандартный THUNK_ORDINAL_NOTYPE преобразователь.
+Стандартный преобразователь THUNK_ORDINAL_NOTYPE.
 
-Объект THUNK_ORDINAL_ADJUSTOR `this` корректором преобразователь.
+THUNK_ORDINAL_ADJUSTOR преобразователь `this`.
 
-Преобразователь THUNK_ORDINAL_VCALL виртуального вызова.
+Преобразователь виртуальных вызовов THUNK_ORDINAL_VCALL.
 
-Преобразователь THUNK_ORDINAL_PCODE P-code.
+THUNK_ORDINAL_PCODE преобразователь P-code.
 
-Преобразователь THUNK_ORDINAL_LOAD задержки загрузки.
+Преобразователь отложенной загрузки THUNK_ORDINAL_LOAD.
 
-Добавочные THUNK_ORDINAL_TRAMP_INCREMENTAL trampoline преобразователь (trampoline преобразователь используется для переброса вызовы из пространства памяти в другой).
+THUNK_ORDINAL_TRAMP_INCREMENTAL добавочный трамполине (преобразователь трамполине используется для возврата вызовов из одного пространства памяти в другое).
 
-Преобразователь trampoline точки THUNK_ORDINAL_TRAMP_BRANCHISLAND ветви.
+Преобразователь трамполине точки ветвления THUNK_ORDINAL_TRAMP_BRANCHISLAND.
 
-## <a name="remarks"></a>Примечания
-Значения в этом перечислении возвращаются из вызова [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) метод.
+## <a name="remarks"></a>Заметки
+Значения в этом перечислении возвращаются из вызова метода [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: cvconst.h
+Заголовок: квконст. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)

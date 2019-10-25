@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_lexicalParentId | Документация Майкрософт
+title: 'IDiaSymbol:: get_lexicalParentId | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d09e4cba02e1b27ca84a1c678a439f451012ee
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f59f72ea204fb8417953ffa5156ac8130ea59c52
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832866"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739956"
 ---
-# <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
-Получает идентификатор лексической родительского символа.
+# <a name="idiasymbolget_lexicalparentid"></a>IDiaSymbol::get_lexicalParentId
+Получает лексическую родительский идентификатор символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_lexicalParentId ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает идентификатор лексической родительского символа.
+заполняет Возвращает лексему родительского родителя символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.
+## <a name="remarks"></a>Заметки
+ Идентификатор — это уникальное значение, созданное пакетом SDK для DIA, чтобы пометить все символы как уникальные.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

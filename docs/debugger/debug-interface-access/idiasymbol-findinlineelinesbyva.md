@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae02877b7e81e0d2240ab2c6eea68f22f0e2d2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de092109282506747606799b45b89059bf41fd8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837866"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741188"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, в этот символ в указанный виртуальный адрес (VA).
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, встроенных, прямо или косвенно, в этом символе в пределах указанного виртуального адреса (ва).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +33,18 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>Параметры
  `va`
 
-[in] Указывает адрес как ва.
+окне Указывает адрес в виде ва.
 
  `length`
 
-[in] Указывает диапазон адресов, в байтах, чтобы охватить с этим запросом.
+окне Указывает диапазон адресов (в байтах), который охватывает этот запрос.
 
  `ppResult`
 
-[out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.
+заполняет Содержит объект `IDiaEnumLineNumbers`, содержащий список извлекаемых номеров строк.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

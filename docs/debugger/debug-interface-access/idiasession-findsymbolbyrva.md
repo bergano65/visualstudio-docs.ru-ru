@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolByRVA | Документация Майкрософт
+title: 'IDiaSession:: Финдсимболбирва | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6a32284588163aae57d03ec67c69a9f64663b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3af9915498182338a1b0ffa463f19d9867e76402
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839229"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742043"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
-Возвращает тип указанного символа, который содержит, или ближайший к указанным относительный виртуальный адрес (RVA).
+Извлекает указанный тип символа, который содержит или ближайший к определенному относительному виртуальному адресу (RVA).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +35,18 @@ HRESULT findSymbolByRVA ( 
 #### <a name="parameters"></a>Параметры
  `rva`
 
-[in] Указывает RVA.
+окне Задает RVA.
 
  `symtag`
 
-[in] Найти тип символа. Значения берутся из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления.
+окне Тип символа для поиска. Значения берутся из перечисления [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) извлечь объект, представляющий символ.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий полученный символ.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
 

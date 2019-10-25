@@ -7,17 +7,17 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7e547e3dfc863e3459cc0e5c575d394f83582f6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979458"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644347"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Как выполнить Добавление счетчиков в наборы счетчиков с помощью редактора тестовой нагрузки
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Практическое руководство. Добавление счетчиков в наборы счетчиков с помощью редактора тестовой нагрузки
 
 Начальный набор счетчиков добавляется при создании нагрузочного теста с помощью **мастера тестовой нагрузки**. Таким образом создаются предварительно определенные наборы счетчиков для нагрузочного теста. Дополнительные сведения см. в статье [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 

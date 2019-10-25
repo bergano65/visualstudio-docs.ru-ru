@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_count | Документация Майкрософт
+title: 'IDiaSymbol:: get_count | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657a2d2f21378dffb6f2ef0c557d02f7858e5328
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5d8574b610bb913e2cf2dda8a4778dead8a1b2fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808403"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740763"
 ---
-# <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
-Получает число элементов в массиве или списке.
+# <a name="idiasymbolget_count"></a>IDiaSymbol::get_count
+Извлекает количество элементов в списке или массиве.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_count ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает количество элементов в список или массив.
+заполняет Возвращает количество элементов в списке или массиве.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_count ( 
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualTableShapeId | Документация Майкрософт
+title: 'IDiaSymbol:: get_virtualTableShapeId | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd390cbd2982033d31ccf8e577196e2c360be655
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3134d504625435706c36e1afc7c9df64611a7516
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784305"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738806"
 ---
-# <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
-Извлекает идентификатор символа фигуры виртуальную таблицу символа.
+# <a name="idiasymbolget_virtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
+Извлекает идентификатор символа фигуры виртуальной таблицы для символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,16 +33,16 @@ HRESULT get_virtualTableShapeId ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает идентификатор виртуальную таблицу фигуры символа, символа.
+заполняет Возвращает идентификатор символа фигуры виртуальной таблицы для символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.
+## <a name="remarks"></a>Заметки
+ Идентификатор — это уникальное значение, созданное пакетом SDK для DIA, чтобы пометить все символы как уникальные.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

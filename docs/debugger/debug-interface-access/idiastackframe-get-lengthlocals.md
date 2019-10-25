@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_lengthLocals | Документация Майкрософт
+title: 'IDiaStackFrame:: get_lengthLocals | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742d4fe295ae21d6ba6df1feaabab5ab483e8d55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e408f7a6341685394731ea65ceaa926351587a9e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838084"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741714"
 ---
-# <a name="idiastackframegetlengthlocals"></a>IDiaStackFrame::get_lengthLocals
-Возвращает число байтов в стек локальных переменных.
+# <a name="idiastackframeget_lengthlocals"></a>IDiaStackFrame::get_lengthLocals
+Возвращает число байтов локальных переменных, отправленных в стек.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_lengthLocals ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает число байтов, локальных переменных.
+заполняет Возвращает число байтов локальных переменных.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

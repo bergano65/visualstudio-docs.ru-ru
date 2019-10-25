@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtual | Документация Майкрософт
+title: 'IDiaSymbol:: get_virtual | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c4a4322b13f49abc31f772316ffb751d5d0d77
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8747fb97249e5bba62d0b79a1a6ac0a24728826e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791739"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738913"
 ---
-# <a name="idiasymbolgetvirtual"></a>IDiaSymbol::get_virtual
-Получает флаг, указывающий, является ли функция виртуальным.
+# <a name="idiasymbolget_virtual"></a>IDiaSymbol::get_virtual
+Получает флаг, указывающий, является ли функция виртуальной.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_virtual ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` при виртуального; в противном случае функция возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если функция является виртуальной. в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

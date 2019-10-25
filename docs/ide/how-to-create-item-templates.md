@@ -4,17 +4,17 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823933"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655846"
 ---
-# <a name="how-to-create-item-templates"></a>Как выполнить Создание шаблонов элементов
+# <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 
 В этой статье показано, как создать шаблон элемента с помощью **мастера экспорта шаблонов**. Если шаблон будет состоять из нескольких файлов, см. статью [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md).
 
@@ -24,7 +24,7 @@ ms.locfileid: "62823933"
 
 1. Добавьте элемент в проект и измените его по своему усмотрению.
 
-1. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения см. в разделе [Как заменить параметры в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения см. в разделе [Практическое руководство. заменить параметры в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. В меню **Проект** выберите команду **Экспорт шаблона**.
 
@@ -123,13 +123,13 @@ ms.locfileid: "62823933"
 
 ::: moniker range="vs-2017"
 
-8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Как разместить и упорядочить шаблоны проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Практическое руководство. разместить и упорядочить шаблоны проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Как разместить и упорядочить шаблоны проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Практическое руководство. разместить и упорядочить шаблоны проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 

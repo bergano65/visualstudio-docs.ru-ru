@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressSection | Документация Майкрософт
+title: 'IDiaSymbol:: get_liveRangeStartAddressSection | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99b5a14a321a28bdbe7337dcc7cdfa5febdad5d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a23f0661d8af6417d754fd7a71c66c5dd3ef1135
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786526"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739903"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
-Возвращает часть раздела начальный адрес диапазона, в котором локальный символ является допустимой.
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+Возвращает часть начального адреса диапазона, в котором является допустимым локальный символ.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,23 +33,23 @@ HRESULT get_liveRangeStartAddressSection ( 
 #### <a name="parameters"></a>Параметры
  `section`
 
-[out] Возвращает компонент разделе начальный адрес диапазона.
+заполняет Возвращает часть диапазона начального адреса.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 > [!NOTE]
-> Возвращен код ошибки означает, что символ не имеет сведения о динамической диапазона.
+> Возвращенный код ошибки означает, что символ не содержит сведений о диапазоне в реальном времени.
 
-## <a name="remarks"></a>Примечания
- Адрес, образованное раздела и смещение — это начало диапазона, в котором символ является допустимой.
+## <a name="remarks"></a>Заметки
+ Адрес, сформированный разделом и смещением, является началом диапазона, в котором символ является допустимым.
 
- Чтобы получить смещения часть адреса, используйте [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
+ Чтобы получить смещение части адреса, используйте [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

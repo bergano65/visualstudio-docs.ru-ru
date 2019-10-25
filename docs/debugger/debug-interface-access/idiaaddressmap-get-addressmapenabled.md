@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::get_addressMapEnabled | Документация Майкрософт
+title: 'IDiaAddressMap:: get_addressMapEnabled | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7391010e409cc25a3151bb2abb806289c81288a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b518cf3728279ea8db267d01867fa66ceae35b21
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554418"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745183"
 ---
-# <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
-Указывает, установлен ли уже адрес карту для конкретного сеанса.
+# <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
+Указывает, была ли установлена схема адресов для конкретного сеанса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,17 +31,17 @@ HRESULT get_addressMapEnabled ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- pRetVal
+ претвал
 
-[out] Возвращает `TRUE` Если включено сопоставление адресов.
+заполняет Возвращает `TRUE`, если сопоставление адресов включено.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Исполняемый файл после процессоров иногда обновить исполняемый файл. Доступа к интерфейсу отладки содержит механизм для поддержки преобразования символов для нового макета.
+## <a name="remarks"></a>Заметки
+ Исполняемые процедуры, выполняемые после выполнения обработчиков, иногда обновляют исполняемый файл. DIA содержит механизм для поддержки перевода символов в новый макет.
 
- Клиентские приложения можно задать адрес карты для конкретного сеанса, получая [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) интерфейс из [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейс и вызвав [IDiaAddressMap::set_ addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод, а затем с помощью вызова [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) метод. `get_addressMapEnabled` Метод возвращает результат вызова метода `put_addressMapEnabled` метод.
+ Клиентские приложения могут задать карту адресов для конкретного сеанса, получив интерфейс [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) из интерфейса [IDiaSession](../../debugger/debug-interface-access/idiasession.md) и вызвав метод [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) , а затем выполнив вызов [метода IDiaAddressMap::p метод ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) . Метод `get_addressMapEnabled` возвращает результаты вызова метода `put_addressMapEnabled`.
 
 ## <a name="see-also"></a>См. также
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

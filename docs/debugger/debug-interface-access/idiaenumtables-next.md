@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumTables::Next | Документация Майкрософт
+title: 'IDiaEnumTables:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688652fe3915e1974d5d0e1d04fb1ac075863d8c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832746"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743743"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Извлекает указанное число таблиц в последовательности перечисления.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Параметры
  `celt`
 
-[in] Количество таблиц в перечислителе требуется получить.
+окне Число извлекаемых таблиц в перечислителе.
 
  `rgelt`
 
-[out] Массив, который должен быть заполнен с помощью [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объекты, представляющие нужные таблицы.
+заполняет Массив, который должен быть заполнен объектами [идиатабле](../../debugger/debug-interface-access/idiatable.md) , представляющими нужные таблицы.
 
  `pceltFetched`
 
-[out] Возвращает количество таблиц в выбранных перечислитель.
+заполняет Возвращает количество таблиц в выбранном перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные таблицы. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если больше нет таблиц. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

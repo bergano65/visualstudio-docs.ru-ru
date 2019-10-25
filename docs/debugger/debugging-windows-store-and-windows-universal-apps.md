@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 972f52583704b3116066114986948af643069a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe8348b342627cba861a9ceb67e74d0876752cdf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851680"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738023"
 ---
-# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Отладка приложений для универсальной Windows (UWP) в Visual Studio
+# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Отладка универсальных приложений Windows (UWP) в Visual Studio
 
-Отладчик Visual Studio обеспечивает полную поддержку для отладки приложений универсальной платформы Windows. Ознакомьтесь со следующими статьями для задач отладки универсальной платформы Windows.
+Отладчик Visual Studio обеспечивает полную поддержку для отладки приложений UWP. Сведения о задачах отладки UWP см. в следующих статьях.
 
-|Отладка задач|Статья|
+|Задача отладки|Статья|
 |-|-|
-|Запуск приложений UWP на локальном компьютере, удаленном или подключенного устройства или симуляторе приложений.|[Запуск сеанса отладки для приложения UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
-|Отладка развернутых приложений, локальные и удаленные.|[Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)|
-|Анализируйте влияние класса ContentPrefetcher на приложения универсальной платформы Windows.|[Предварительная загрузка контента для приложений универсальной платформы Windows](../debugger/prefetch-content-for-windows-store-apps.md)|
+|Запускайте приложения UWP на локальном компьютере, удаленном или подключенном устройстве или симуляторе приложения.|[Запуск сеанса отладки для приложения UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
+|Отлаживать развернутые приложения как локальные, так и удаленные.|[Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)|
+|Проанализируйте воздействие класса Контентпрефетчер на приложения UWP.|[Предзагрузка содержимого для приложений UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>См. также
 - [Анализ качества кода помощью метода анализа статического кода](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

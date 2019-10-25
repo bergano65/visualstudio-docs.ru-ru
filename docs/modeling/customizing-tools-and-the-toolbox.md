@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e3a791fc53f7a1e9ff093cc46e3d73003417cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653955"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747597"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Настройка элементов и панели элементов
 
@@ -232,7 +232,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Для применения жестких ограничений используется пользовательский код, но следует определить, должны ли пользователи временно создавать недопустимые подключения. Если такую возможность необходимо предоставить, ограничения можно изменить таким образом, чтобы эти подключения не проверялись до тех пор, пока пользователи не попытаются сохранить изменения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)
 - [Настройка функции копирования](../modeling/customizing-copy-behavior.md)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d590fb13f7b8b04005d2877d378c556c772af5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f8806571939cb057852ddd9cca971f9415339ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670815"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748252"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Задание фонового изображения схемы
 В пакете SDK визуализации и моделирования Visual Studio можно задать фоновое изображение для созданного конструктора с помощью пользовательского кода.
@@ -100,7 +100,7 @@ ms.locfileid: "72670815"
 
      Дополнительные сведения о настройке модели с помощью программного кода см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md)
 - [Настройка полей с текстом и изображениями](../modeling/customizing-text-and-image-fields.md)

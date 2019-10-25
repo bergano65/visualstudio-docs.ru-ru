@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b10ab87f056bc153ec41c125b0e01ddefa139b80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555082"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745402"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Константы (SDK для доступа к интерфейсу отладки)
-Эти строковые константы можно использовать для идентификации различные разделы файла базы данных (PDB) программы отладки через пакет SDK для доступа к интерфейсу отладки.
+Эти строковые константы можно использовать для обнаружения различных разделов файла базы данных отладки (PDB) с помощью пакета SDK DIA.
 
 ## <a name="constants"></a>Константы
-Следующие объявляются как макросы C/C++.
+Следующие объявления объявляются как C/C++ макросы.
 
-|Макрос|Значение|
+|Макрос|значения|
 |-----------|-----------|
-|`DiaTable_Symbols`|L «Символы»|
-|`DiaTable_Sections`|L «Разделы»|
-|`DiaTable_SrcFiles`|L «SourceFiles»|
-|`DiaTable_LineNums`|L «LineNumbers»|
-|`DiaTable_SegMap`|L «SegmentMap»|
-|`DiaTable_Dbg`|L «Dbg»|
-|`DiaTable_InjSrc`|L «InjectedSource»|
-|`DiaTable_FrameData`|L «FrameData»|
+|`DiaTable_Symbols`|L "символы"|
+|`DiaTable_Sections`|L "разделы"|
+|`DiaTable_SrcFiles`|L "SourceFiles"|
+|`DiaTable_LineNums`|L "Линенумберс"|
+|`DiaTable_SegMap`|L "Сегментмап"|
+|`DiaTable_Dbg`|L "DBG"|
+|`DiaTable_InjSrc`|L "Инжектедсаурце"|
+|`DiaTable_FrameData`|L "Фрамедата"|
 
 ## <a name="example"></a>Пример
-Ниже приведен пример, с помощью одного из следующих символов:
+Ниже приведен пример использования одного из следующих символов:
 
 ```C++
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
@@ -53,10 +53,10 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: dia2.h
+Заголовок: dia2. h
 
 ## <a name="see-also"></a>См. также
-- [Ссылки](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [Ссылка](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

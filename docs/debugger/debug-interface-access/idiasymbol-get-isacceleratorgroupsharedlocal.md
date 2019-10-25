@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Документация Майкрософт
+title: 'IDiaSymbol:: get_isAcceleratorGroupSharedLocal | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1d6cf755121f851e652cce251ace2105e6773822
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836840"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740336"
 ---
-# <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-Получает флаг, указывающий, соответствует ли символ к общей переменной локальной группы в коде, скомпилированном для ускорителя C++ AMP.
+# <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
+Получает флаг, указывающий, соответствует ли символ общей локальной переменной группы в коде, скомпилированном для ускорителя C++ amp.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Указатель на `BOOL` , указывающее, соответствует ли символ к общей переменной локальной группы в коде, скомпилированном для C++ ускоритель AMP. Если `TRUE`, `get_baseDataSlot` и `get_baseDataOffset` методы могут использоваться для получения сведения о расположении хранения для переменной.
+заполняет Указатель на `BOOL`, указывающий, соответствует ли символ общей локальной переменной группы в коде, скомпилированном для ускорителя C++ amp. Если `TRUE`, можно использовать методы `get_baseDataSlot` и `get_baseDataOffset`, чтобы получить сведения о местоположении хранилища для переменной.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

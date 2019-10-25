@@ -2,7 +2,7 @@
 title: Создание веб-приложения ASP.NET Core на C#
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
 ms.custom: mvc,seodec18
-ms.date: 06/06/2019
+ms.date: 10/15/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 28994e7f3a4f31a9e3ee8c292a08df1132cf20df
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180382"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516893"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -110,9 +110,9 @@ ms.locfileid: "70180382"
 
    ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** отображается **ASP.NET Core 2.1**. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
+1. Убедитесь в том, что в верхнем раскрывающемся меню окна **Создать веб-приложение ASP.NET Core** отображается **ASP.NET Core 3.0**. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
 
-   ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Новый проект открывается в Visual Studio.
 

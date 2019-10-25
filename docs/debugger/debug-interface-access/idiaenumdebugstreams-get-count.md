@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::get_Count | Документация Майкрософт
+title: 'Идиаенумдебугстреамс:: get_Count | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5840bbcc012fdcb209fbfb19c0119ad94f3073f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21697d53f0b221d3d5f94f85e3fb18a0a2c2692e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838445"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744769"
 ---
-# <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
-Получает количество потоков для отладки.
+# <a name="idiaenumdebugstreamsget_count"></a>IDiaEnumDebugStreams::get_Count
+Возвращает количество потоков отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_Count( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает количество отладки потоков, доступных в этом перечислителе.
+заполняет Возвращает количество потоков отладки, доступных в этом перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

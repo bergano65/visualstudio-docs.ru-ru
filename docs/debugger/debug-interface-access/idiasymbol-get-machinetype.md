@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_machineType | Документация Майкрософт
+title: 'IDiaSymbol:: get_machineType | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef0507ccb7036748f5c9d36c9de521a17860a39
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5ea9f5762e265b2892a906060a430db03f7b7d67
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67032725"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739837"
 ---
-# <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
-Возвращает тип ЦП целевой объект.
+# <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
+Возвращает тип целевого ЦП.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_machineType ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение из [IMAGE_FILE_MACHINE_ константы](/windows/desktop/SysInfo/image-file-machine-constants) , указывающий тип ЦП целевой объект.
+заполняет Возвращает значение из [констант IMAGE_FILE_MACHINE_](/windows/desktop/SysInfo/image-file-machine-constants) , которое указывает тип целевого ЦП.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

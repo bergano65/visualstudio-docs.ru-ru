@@ -1,5 +1,5 @@
 ---
-title: '&lt;Подпись&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
+title: Элемент&gt; подписи &lt;(развертывание ClickOnce) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c636a4178cf278c2bb0ad75f4e78b94758dda30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f69dcec6bbee5358184b74a71274cb26e4de60b3
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927493"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806842"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Подпись&gt; элемент (развертывание ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>элемент&gt; подписи &lt;(развертывание ClickOnce)
 Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи.
 
 ## <a name="syntax"></a>Синтаксис
@@ -33,13 +33,13 @@ ms.locfileid: "62927493"
 </Signature>
 ```
 
-## <a name="remarks"></a>Примечания
- Подписи манифеста развертывания с помощью подписи конверт является необязательным, но рекомендуется. Дополнительные сведения о подписи XML-файлов см. в разделе World Wide Web консорциума W3c «XML-Signature Syntax and Processing,» описано в статье [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).
+## <a name="remarks"></a>Заметки
+ Подпись манифеста развертывания с помощью подписи конверта является необязательной, но рекомендуется. Дополнительные сведения о подписывании XML-файлов см. в разделе консорциум W3C рекомендации «синтаксис XML-подписи и обработка», описанная в [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).
 
- Если требуется подписать манифест, необходимо создать хэши для всех файлов. Не удалось подписать манифест с файлами, которые не хэшируются, потому, что пользователи не могут проверить содержимое нехэшированных файлов.
+ Если вы хотите подписать манифест, необходимо предоставить хэши для всех файлов. Манифест с файлами, которые не хэшируются, не может быть подписан, так как пользователи не могут проверить содержимое нехэшированных файлов.
 
 ## <a name="example"></a>Пример
- В следующем примере кода показано `Signature` элемента в манифесте развертывания, используемые в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания.
+ В следующем примере кода показан элемент `Signature` в манифесте развертывания, который используется в развертывании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
 ```xml
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">

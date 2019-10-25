@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8207b72d7bb818a5d153abdd56914fd6b2a3f08
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0e404921d1ed74db2a1f23117242f49a07206c2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316542"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718742"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Элемент TemplateID (шаблоны Visual Studio)
-Задает идентификатор шаблона элемента, который относится к категории группы шаблонов элементов по [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) элемент.
+Задает идентификатор для шаблона элемента, разбитого по категориям в группе шаблонов элементов с помощью элемента [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
 
- \<VSTemplate> \<TemplateData> \<TemplateID>
+ \<VSTemplate > \<TemplateData > \<TemplateID >
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,14 +48,14 @@ ms.locfileid: "66316542"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 
 ## <a name="text-value"></a>Текстовое значение
- Объект `string` , представляющий идентификатор шаблона элемента, который относится к категории группы шаблонов элементов по `TemplateGroupID` элемент.
+ @No__t_0, представляющий идентификатор шаблона элемента, отнесенный к группе шаблонов элементов по элементу `TemplateGroupID`.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  `TemplateID` — это необязательный элемент.
 
- Если файл .vstemplate не содержит `TemplateID` элемент, а затем [имя](../extensibility/name-element-visual-studio-templates.md) элемент используется в качестве идентификатора для шаблона.
+ Если VSTEMPLATE-файл пропускает элемент `TemplateID`, то в качестве идентификатора шаблона используется элемент [Name](../extensibility/name-element-visual-studio-templates.md) .
 
- Значение `TemplateID` используется вместе с регистрацией системы проектов (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) для фильтрации шаблонов, которые отображаются в **Добавление нового элемента** диалоговое окно.
+ Значение элемента `TemplateID` используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects \\) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .
 
 ## <a name="see-also"></a>См. также
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByVA | Документация Майкрософт
+title: 'IDiaSession:: Финдлинесбива | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832410"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742076"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Извлекает информация о номере строки для строк, содержащихся в указанный диапазон виртуальных адресов (VA).
+Получает сведения о номере строки для строк, содержащихся в указанном диапазоне виртуальных адресов (ва).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Параметры
 `va`
 
-[in] Указывает адрес как ва.
+окне Указывает адрес в виде ва.
 
 `length`
 
-[in] Указывает число байтов из диапазона адресов, чтобы охватить с этим запросом.
+окне Указывает число байтов диапазона адресов, которое будет охватывать этот запрос.
 
 `ppResult`
 
-[out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список всех строке номера, охватывают указанный диапазон адресов.
+заполняет Возвращает объект [идиаенумлиненумберс](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список всех номеров строк, охватывающих указанный диапазон адресов.
 
 ## <a name="example"></a>Пример
-В этом примере показана функция, получающий все номера строк, содержащихся в функции, используя функции виртуальный адрес и длину.
+В этом примере показана функция, которая получает все номера строк, содержащиеся в функции, с использованием виртуального адреса и длины функции.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

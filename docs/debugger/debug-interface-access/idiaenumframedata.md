@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData | Документация Майкрософт
+title: Идиаенумфрамедата | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e20fa21d739c79dad94a8445f6d0fe811337fd40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833623"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744553"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
-Перечисляет различные элементы данных кадров, содержащихся в источнике данных.
+Перечисляет различные элементы данных кадра, содержащиеся в источнике данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,23 +33,23 @@ IDiaEnumFrameData : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версии этот перечислитель.|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Возвращает `IEnumVARIANT Interface` версию этого перечислителя.|
 |[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Возвращает число элементов данных кадра.|
-|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Извлекает элемент кадра данных с помощью индекса.|
-|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Извлекает указанное число кадров данных элементов в последовательности перечисления.|
-|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Пропускает указанное число кадров данных элементов в последовательности перечисления.|
-|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Сбрасывает последовательность перечислений в начало.|
-|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|
-|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Возвращает кадр, относительный виртуальный адрес (RVA).|
-|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Возвращает кадр, виртуальный адрес (VA).|
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Извлекает элемент данных кадра с помощью индекса.|
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Извлекает указанное число элементов данных кадра в последовательности перечисления.|
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Пропускает указанное число элементов данных кадра в последовательности перечисления.|
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Сбрасывает последовательность перечисления до начала.|
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Возвращает кадр по относительному виртуальному адресу (RVA).|
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Возвращает кадр по виртуальному адресу (ва).|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
-Получить этот интерфейс из [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод. Дополнительные сведения см.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Получите этот интерфейс из метода [IDiaSession:: жетенумтаблес](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Дополнительные сведения см. в примере.
 
 ## <a name="example"></a>Пример
-В этом примере показано, как получить ( `GetEnumFrameData` функции) и использовать ( `ShowFrameData` функции) `IDiaEnumFrameData` интерфейс. См. в разделе [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) интерфейс пример `PrintFrameData` функции.
+В этом примере показано, как получить (`GetEnumFrameData` функцию) и использовать интерфейс `IDiaEnumFrameData` (функция `ShowFrameData`). Пример функции `PrintFrameData` см. в интерфейсе [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) .
 
 ```C++
 
@@ -101,9 +101,9 @@ void ShowFrameData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Требования
-**Заголовок.** dia2.h
+**Заголовок:** Dia2. h
 
-**Библиотека:** diaguids.lib
+**Библиотека:** диагуидс. lib
 
 **DLL:** msdia80.dll
 

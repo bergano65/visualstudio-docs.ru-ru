@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536062"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738278"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если программа создается в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.
@@ -46,7 +46,7 @@ ms.locfileid: "72536062"
 
  [Как указать более раннюю версию .NET Framework для отладки](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Описывает, как задать раздел реестра, указывающий отладчику, какую версию следует использовать.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

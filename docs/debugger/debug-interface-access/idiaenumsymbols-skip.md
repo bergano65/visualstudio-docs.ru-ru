@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Skip | Документация Майкрософт
+title: 'Идиаенумсимболс:: Skip | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea2b1ea99eb2801259d58a12c359e9fffd887a64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9252826470decd3cddfabdcc2a00e22037d5de5c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830440"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743913"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-Пропускает заданное число символов в последовательности перечисления.
+Пропускает указанное число символов в последовательности перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Количество символов в последовательности перечисления для пропуска.
+окне Число пропускаемых символов в последовательности перечисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии дополнительные символы, не нужно пропустить.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE`, если больше нет символов для пропуска.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

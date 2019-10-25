@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::Prev | Документация Майкрософт
+title: Идиаенумсимболсбяддр::P версия | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1b69dbd7e502340e7d563523288a095b733c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70265976e5c6e7c2b3f536f2b8648aaba44df528
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830263"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743857"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
-Извлекает предыдущий символы в порядке по адресу.
+Извлекает предыдущие символы в упорядочении по адресу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,21 +35,21 @@ HRESULT Prev ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Количество символов в перечислителе требуется получить.
+окне Число извлекаемых символов в перечислителе.
 
  rgelt
 
-[out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие нужные символы.
+заполняет Массив, который должен быть заполнен объектами [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющими нужные символы.
 
  pceltFetched
 
-[out] Возвращает количество символов в выбираемых перечислитель.
+заполняет Возвращает количество символов в полученном перечислителе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символов нет предыдущего. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если нет предыдущих символов. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод обновляет позицию перечислителя, количество выбранных элементов.
+## <a name="remarks"></a>Заметки
+ Этот метод обновляет расположение перечислителя по количеству извлекаемых элементов.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

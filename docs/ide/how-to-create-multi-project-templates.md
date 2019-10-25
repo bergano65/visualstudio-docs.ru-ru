@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655838"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Как выполнить Создание многопроектных шаблонов
+# <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
 
 Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. При создании проекта на основе многопроектного шаблона каждый проект в шаблоне добавляется в решение.
 

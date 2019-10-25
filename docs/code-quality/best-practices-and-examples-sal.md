@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448643"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789785"
 ---
 # <a name="best-practices-and-examples-sal"></a>Рекомендации и примеры (SAL)
 Ниже приведены некоторые способы получения максимальной из языка аннотирования исходного кода (SAL) и устранения некоторых распространенных проблем.
@@ -188,15 +188,14 @@ int Func2(_In_ MyData *p, int flag);
 Если функция завершается успешно, если возвращаемое значение не равно нулю, используйте `return != 0` в качестве условия успеха вместо `return == TRUE`. Ненулевое значение не всегда означает эквивалентность фактического значения, предоставляемого компилятором для `TRUE`. Параметр в `_Success_` — выражение и следующие выражения вычисляются как равные. `return != 0`, `return != false`, `return != FALSE` и `return` без параметров или сравнений.
 
 ```cpp
-
 // Incorrect
-_Success_(return == TRUE, _Acquires_lock_(*lpCriticalSection))
+_Success_(return == TRUE) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
 
 // Correct
-_Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
+_Success_(return != 0) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );

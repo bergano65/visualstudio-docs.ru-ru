@@ -1,21 +1,21 @@
 ---
-title: Как выполнить Создание простейшего шейдера текстуры
+title: Практическое руководство. Создание простейшего шейдера текстуры
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f511b837609f8de644d042b367ef46648b7551e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6b4aa042e3ba51621e43ee2f531364135179c02
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897727"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635876"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Как выполнить Создание простейшего шейдера текстуры
+# <a name="how-to-create-a-basic-texture-shader"></a>Практическое руководство. Создание простейшего шейдера текстуры
 
 В этой статье показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера с одной текстурой. Этот шейдер задает окончательный цвет непосредственно в RGB-значениях и альфа-факторах, взятых из текстуры.
 

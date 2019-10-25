@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadDWORD | Документация Майкрософт
+title: 'Идиапропертистораже:: Реаддворд | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4709a218f6586320e96f79ea8a9f423f537c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1764ec83a69dcc5daff267767594473bf690b341
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839658"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742910"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
-Считывает `DWORD` значения в наборе свойств.
+Считывает `DWORD` значений в наборе свойств.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,17 +34,17 @@ HRESULT ReadDWORD ( 
 #### <a name="parameters"></a>Параметры
  `id`
 
-[in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).
+окне Идентификатор считываемого свойства (`PROPID` определен в Втипес. h как `ULONG`).
 
  `pValue`
 
-[out] Возвращает значение свойства.
+заполняет Возвращает значение свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `DWORD`.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG`, если свойство не имеет тип `DWORD`.
 
-## <a name="remarks"></a>Примечания
- Объект `DWORD` определяется Windows как 32-разрядное целое число без знака.
+## <a name="remarks"></a>Заметки
+ @No__t_0 определяется Windows как 32-разрядное целое число без знака.
 
 ## <a name="see-also"></a>См. также
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

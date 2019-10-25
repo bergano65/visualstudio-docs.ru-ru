@@ -2,17 +2,17 @@
 title: Создание метода
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d815b638033e16796c90a362207b820bfe7cc57d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794850"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668333"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Создание метода в Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "62794850"
 2. Затем выполните одно из следующих действий:
 
    - **Клавиатура**
-      - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+      - Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
       - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![лампочка с ошибкой](media/error-bulb.png) , который отображается.

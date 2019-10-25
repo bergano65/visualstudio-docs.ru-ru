@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3d1df772dc6fa4b1ad6e38a319532bea111e97
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431730"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745324"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 Указывает целевой процессор.
 
 > [!NOTE]
-> Процессор определяется в элементе перечисления после `CV_CFL_*` префикс.
+> Процессор определяется в элементе перечисления после префикса `CV_CFL_*`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -95,11 +95,11 @@ typedef enum CV_CPU_TYPE_e {
 } CV_CPU_TYPE_e;
 ```
 
-## <a name="remarks"></a>Примечания
-Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) метод.
+## <a name="remarks"></a>Заметки
+Значения в этом перечислении возвращаются путем вызова метода [IDiaSymbol:: get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: cvconst.h
+Заголовок: квконст. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)

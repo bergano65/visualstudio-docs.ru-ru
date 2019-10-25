@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_paramBasePointerRegisterId | Документация Майкрософт
+title: 'IDiaSymbol:: get_paramBasePointerRegisterId | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6901210e05ef3eb1f8e63b8e6c508d36b2770b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 09bdfb5d276e4dc7414c78529c2a6f1644597cd3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798800"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739518"
 ---
-# <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-Извлекает идентификатор регистр, который содержит базовый указатель на параметры. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.
+# <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
+Возвращает идентификатор регистра, содержащего базовый указатель на параметры. Используйте, если для [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) задано значение `SymTagFunction`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ HRESULT get_paramBasePointerRegisterId ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает идентификатор регистр, который содержит базовый указатель на параметры.
+заполняет Возвращает идентификатор регистра, содержащего базовый указатель на параметры.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData::Next | Документация Майкрософт
+title: 'IDiaEnumDebugStreamData:: Next | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acdab0a565613194c67aa85484316a235c91dbf6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838611"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744796"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-Извлекает указанное число записей в перечисленной последовательности.
+Извлекает указанное число записей в последовательности перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,26 +37,26 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Параметры
  celt
 
-[in] Число записей, которые требуется извлечь.
+окне Число извлекаемых записей.
 
  cbData
 
-[in] Размер буфера данных, в байтах.
+окне Размер буфера данных в байтах.
 
- pcbData
+ пкбдата
 
-[out] Возвращает количество байтов, возвращаемых. Если `data` имеет значение NULL, затем `pcbData` содержит общее число байтов данных, доступные для всех запрошенных записей.
+заполняет Возвращает число возвращенных байтов. Если `data` имеет значение NULL, `pcbData` содержит общее число байтов данных, доступных для всех запрошенных записей.
 
  data[]
 
-[out] Буфер, который должен быть заполнен данными отладки потока записи.
+заполняет Буфер, который должен быть заполнен данными записи отладочного потока.
 
  pceltFetched
 
-[in, out] Возвращает число записей в `data`.
+[вход, выход] Возвращает количество записей в `data`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные записи. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если больше нет записей. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

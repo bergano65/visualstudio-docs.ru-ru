@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_customCallingConvention | Документация Майкрософт
+title: 'IDiaSymbol:: get_customCallingConvention | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 733c18fd9fceaad6c976ab47a85420a27982cfbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 01fb33108c9952b8543d36b64b7743f4c0531be5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858486"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740740"
 ---
-# <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
-Получает флаг, указывающий, имеет ли функция пользовательское соглашение об именовании.
+# <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
+Получает флаг, указывающий, имеет ли функция настраиваемое соглашение о вызовах.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_customCallingConvention(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Возвращает `TRUE` Если функция имеет пользовательское соглашение об именовании; в противном случае возвращает `FALSE`, функция имеет известных соглашение о вызовах.
+заполняет Возвращает `TRUE`, если функция имеет настраиваемое соглашение о вызовах; в противном случае возвращает `FALSE`, функция имеет известное соглашение о вызовах.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,8 +45,8 @@ HRESULT get_customCallingConvention(
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 8.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA v 8.0|
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

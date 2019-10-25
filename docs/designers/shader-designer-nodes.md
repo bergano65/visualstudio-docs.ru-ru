@@ -3,17 +3,17 @@ title: Узлы конструктора шейдеров
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 775d447b3e513e15eeafb1bfd90c54e3ffa70770
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925756"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634926"
 ---
 # <a name="shader-designer-nodes"></a>Узлы конструктора шейдеров
 Статьи в этом разделе документации содержат информацию о различных узлах конструктора шейдеров, которые можно использовать для создания графических эффектов.

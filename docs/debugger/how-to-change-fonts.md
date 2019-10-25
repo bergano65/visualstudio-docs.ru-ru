@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Изменение шрифтов | Документация Майкрософт
+title: Руководство. изменение шрифтов | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cf933dc7277f0f4c1533ca071a391b78413b029
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848063"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733937"
 ---
-# <a name="how-to-change-fonts"></a>Практическое руководство. изменение шрифтов
-Можно изменить шрифт, начертание и размер шрифта для окнах Spy ++.
+# <a name="how-to-change-fonts"></a>Практическое руководство. Изменение шрифтов
+Можно изменить шрифт, стиль и размер шрифта для окон Spy + +.
 
-### <a name="to-change-font-options"></a>Чтобы изменить параметры шрифта
+### <a name="to-change-font-options"></a>Изменение параметров шрифта
 
-1. Из **представление** меню, выберите **шрифта**.
+1. В меню **вид** выберите **Шрифт**.
 
-2. Выберите шрифт, начертание и размер шрифта.
+2. Выберите шрифт, стиль и размер шрифта.
 
 3. Нажмите кнопку **ОК**.
 
-   Выбрав **установить шрифт по умолчанию** будет во всех новых окнах Spy ++ для использования данного шрифта.
+   Выбор параметра **сохранить шрифт по умолчанию** приведет к тому, что все будущие окна Spy + + будут использовать этот шрифт.
 
 ## <a name="see-also"></a>См. также
 - [Использование Spy++](../debugger/using-spy-increment.md)

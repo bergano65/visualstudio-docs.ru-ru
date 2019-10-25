@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_types | Документация Майкрософт
+title: 'IDiaSymbol:: get_types | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642e6875e81220cb20109ce45e8dca40777a63
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6d23ea3c4d885b3f7575c998999814d0808d03bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786559"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739058"
 ---
-# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Извлекает массив типов специфичные для компилятора для этого символа.
+# <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
+Извлекает массив типов, зависящих от компилятора, для этого символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +35,18 @@ HRESULT get_types ( 
 #### <a name="parameters"></a>Параметры
  `cTypes`
 
-[in] Размер буфера для хранения данных.
+окне Размер буфера для хранения данных.
 
  `pcTypes`
 
-[out] Возвращает количество типов, созданных, или, если `types` параметр `NULL`, то общее число доступных типов.
+заполняет Возвращает число записанных типов, или, если параметр `types` имеет значение `NULL`, то общее число доступных типов.
 
  `types[]`
 
-[out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие все типы для этого символа.
+заполняет Массив, который должен быть заполнен объектами [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , которые представляют все типы для этого символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

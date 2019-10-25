@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBOOL | Документация Майкрософт
+title: 'Идиапропертистораже:: Реадбул | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d776e37bab189e61d0264f4cbda24f89cb4501ce
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742928"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Считывает `BOOL` значения в наборе свойств.
+Считывает `BOOL` значений в наборе свойств.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,17 +34,17 @@ HRESULT ReadBOOL ( 
 #### <a name="parameters"></a>Параметры
  `id`
 
-[in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).
+окне Идентификатор считываемого свойства (`PROPID` определен в Втипес. h как `ULONG`).
 
  `pValue`
 
-[out] Возвращает значение свойства.
+заполняет Возвращает значение свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BOOL`.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG`, если свойство не имеет тип `BOOL`.
 
-## <a name="remarks"></a>Примечания
- Согласованные результаты интерпретировать `BOOL` значение таким образом, ненулевыми значениями `TRUE` а нулевое — `FALSE`.
+## <a name="remarks"></a>Заметки
+ Для обеспечения единообразия результатов следует интерпретировать `BOOL` значение, чтобы ненулевые значения `TRUE` и нулевые `FALSE`.
 
 ## <a name="see-also"></a>См. также
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

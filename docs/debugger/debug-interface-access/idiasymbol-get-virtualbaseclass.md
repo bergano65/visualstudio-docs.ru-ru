@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBaseClass | Документация Майкрософт
+title: 'IDiaSymbol:: get_virtualBaseClass | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c97290f878a8b3b0835c7e3ac33aa2ebecfb019
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c0dfee1fd4dfda2c70da1061fed89ed8864153e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64799265"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738893"
 ---
-# <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
-Получает флаг, указывающий, является ли тип пользовательских данных виртуального базового класса.
+# <a name="idiasymbolget_virtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
+Получает флаг, указывающий, является ли определяемый пользователем тип данных виртуальным базовым классом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_virtualBaseClass ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` Если тип пользовательских данных является виртуальным базовым классом; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если определяемый пользователем тип данных является виртуальным базовым классом; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_relativeVirtualAddress | Документация Майкрософт
+title: 'IDiaLineNumber:: get_relativeVirtualAddress | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 087bd1cb40be2129853807f3f43ea0e87615c36a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52afbcdf07c41cfa39476aa055d62f02267356a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839791"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743185"
 ---
-# <a name="idialinenumbergetrelativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
-Возвращает относительный виртуальный адрес (RVA) блока.
+# <a name="idialinenumberget_relativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
+Извлекает относительный виртуальный адрес (RVA) блока.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_relativeVirtualAddress ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает изображение относительный виртуальный адрес блока.
+заполняет Возвращает относительный для изображения виртуальный адрес блока.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

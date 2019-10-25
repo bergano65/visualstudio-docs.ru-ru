@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766114"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647390"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -60,7 +60,7 @@ ms.locfileid: "70766114"
 |safeitemname|Аналогично параметру `itemname`, но с удалением всех небезопасных символов и пробелов, которые заменяются символом подчеркивания.|
 |safeitemrootname|Эквивалентно `safeitemname`.|
 |safeprojectname|Имя, указанное пользователем при создании проекта, но с удаленными небезопасными символами и пробелами.|
-|время|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
+|time|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
 |specifiedSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `specifiedSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `specifiedSolutionName` пусто.|
 |userdomain|Домен текущего пользователя.|
 |Имя пользователя|Имя текущего пользователя.|

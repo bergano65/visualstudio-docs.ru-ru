@@ -1,5 +1,5 @@
 ---
-title: Элемент TargetPlatformName (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Таржетплатформнаме (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307a52b8f252f5059f2d4009e98fc4d497f616e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718934"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName - элемент (шаблоны Visual Studio)
 Задает платформу, для которой предназначен шаблон проекта. Этот элемент используется для указания на то, что шаблон проекта служит для создания приложений [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .
@@ -48,7 +48,7 @@ ms.locfileid: "66316697"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  Этот текст должен быть **Windows**.
 
 ## <a name="example"></a>Пример

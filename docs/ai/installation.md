@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918047"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777473"
 ---
 # <a name="installation"></a>Установка
 
@@ -44,7 +44,7 @@ ms.locfileid: "68918047"
 
 ### <a name="nvidia-gpu-driver"></a>Драйвер GPU NVIDIA
 
-Платформы глубинного обучения используют GPU NVIDIA, чтобы повысить скорость, точность и масштаб обучения искусственного интеллекта. Если на компьютере установлены видеоадаптеры NVIDIA, ознакомьтесь со страницей [скачивания драйверов NVIDIA](http://www.nvidia.com/Download/index.aspx) или попробуйте обновить операционную систему, чтобы установить последнюю версию драйвера.
+Платформы глубинного обучения используют GPU NVIDIA, чтобы повысить скорость, точность и масштаб обучения искусственного интеллекта. Если на компьютере установлены видеоадаптеры NVIDIA, ознакомьтесь со страницей [скачивания драйверов NVIDIA](https://www.nvidia.com/Download/index.aspx) или попробуйте обновить операционную систему, чтобы установить последнюю версию драйвера.
 
 ### <a name="cuda"></a>CUDA
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-[PyTorch](http://pytorch.org/) — это пакет Python, который представляет две высокоуровневые возможности:
+[PyTorch](https://pytorch.org/) — это пакет Python, который представляет две высокоуровневые возможности:
 
 - тензорные вычисления (как и в случае с NumPy) с эффективным ускорением на базе GPU;
 - построение глубинных нейронных сетей на основе ленточной системы autograd.

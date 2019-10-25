@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a992cc06a177d329701ca98278ad14632bda8df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97df4ceca2c511265a51f89c2f39a6595d200abf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658158"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748301"
 ---
 # <a name="properties-of-domain-roles"></a>Свойства доменных ролей
 Свойства в следующей таблице связаны с ролью домена. Сведения о ролях домена см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
@@ -41,6 +41,6 @@ ms.locfileid: "72658158"
 > [!NOTE]
 > Значение по умолчанию для отображаемого имени основано на значении связанного свойства путем вставки пробелов перед каждым символом верхнего регистра, которому предшествует символ в нижнем регистре и за которым не следует другой символ верхнего регистра.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Свойства доменных связей](../modeling/properties-of-domain-relationships.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3289fd82f8a3b99bf49ee796e49a285ffb93793c
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 9f8391d355b2f540db4e38486b8992d940336464
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536008"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733789"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Практическое руководство. Отладка исключений ASP.NET
 Отладка исключений является важной частью разработки надежного приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Общие сведения об отладке исключений см. в статье [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md).
@@ -47,5 +47,5 @@ ms.locfileid: "72536008"
 
 - Расположите блоки `try ... catch` вокруг кода, который может создавать исключения, которые можно предвидеть и известны способы их обработки. Например, если приложение совершает вызовы веб-службы XML или непосредственно SQL Server, этот код должен быть заключен в блоки **try … catch** по причине множества возможных исключений.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBSTR | Документация Майкрософт
+title: 'Идиапропертистораже:: Реадбстр | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0bff81499fe8ea66ce5d4f50616adfec44d3002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef0b5bac11a1bf3da7e8081f7ae24b6a7a6f1a71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839632"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742919"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
-Считывает `BSTR` значения в наборе свойств.
+Считывает `BSTR` значений в наборе свойств.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,17 +34,17 @@ HRESULT ReadBSTR ( 
 #### <a name="parameters"></a>Параметры
  `id`
 
-[in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).
+окне Идентификатор считываемого свойства (`PROPID` определен в Втипес. h как `ULONG`).
 
  `pValue`
 
-[out] Возвращает значение свойства.
+заполняет Возвращает значение свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BSTR`.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG`, если свойство не имеет тип `BSTR`.
 
-## <a name="remarks"></a>Примечания
- Объект `BSTR` определяется Windows как строку расширенных символов с завершающим нулевым символом.
+## <a name="remarks"></a>Заметки
+ @No__t_0 определяется Windows как строка расширенных символов, заканчивающаяся нулем.
 
 ## <a name="see-also"></a>См. также
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

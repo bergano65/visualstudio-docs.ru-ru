@@ -2,17 +2,17 @@
 title: Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824481"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665324"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 
@@ -27,11 +27,11 @@ ms.locfileid: "67824481"
 - Если файл *App.config* отсутствует в проекте теста, сделайте следующее:
 
    1. Определите, какой процесс *QTAgent\*.exe* запускается при выполнении теста. Для этого можно воспользоваться вкладкой **Подробности** в **диспетчере задач** Windows.
-   
+
    2. Откройте соответствующий файл *.config* из папки *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<версии >\\\<выпуск > \Common7\IDE*. Например, если запускается процесс *QTAgent_40.exe*, откройте файл *QTAgent_40.exe.config*.
 
    2. Задайте требуемый уровень журнала в значении **EqtTraceLevel**.
-   
+
       ```xml
       <!-- You must use integral values for "value".
            Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->

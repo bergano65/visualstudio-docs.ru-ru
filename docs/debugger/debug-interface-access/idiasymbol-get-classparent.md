@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_classParent | Документация Майкрософт
+title: 'IDiaSymbol:: get_classParent | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6419153777b5af071b59b6b7888c4f18f228b1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 36dfed97fb8abd30f97c4068da94148715cae5c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830572"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740858"
 ---
-# <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
+# <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
 Извлекает ссылку на родительский класс символа.
 
 ## <a name="syntax"></a>Синтаксис
@@ -33,10 +33,10 @@ HRESULT get_classParent ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий родительский класс символа.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий родительский класс символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
@@ -45,11 +45,11 @@ HRESULT get_classParent ( 
 
 |Требование|Описание|
 |-----------------|-----------------|
-|Заголовок:|dia2.h|
-|Версия:|ПАКЕТ SDK для версии 7.0|
+|Заголовок:|dia2. h|
+|Версия:|Пакет SDK для DIA версии 7.0|
 
-## <a name="remarks"></a>Примечания
- Типы символов, которые могут быть родителями класс описаны в [класс иерархия символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
+## <a name="remarks"></a>Заметки
+ Типы символов, которые могут быть родительскими классами, описаны в [иерархии классов типов символов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

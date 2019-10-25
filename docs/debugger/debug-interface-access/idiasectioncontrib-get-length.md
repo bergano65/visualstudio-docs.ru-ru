@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_length | Документация Майкрософт
+title: 'IDiaSectionContrib:: get_length | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd7b349cd3b048d68adf21aa11f89c33e7a05f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4d77854ca3c7b2d7edb8e1917927462af19dc31
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839567"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742603"
 ---
-# <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
+# <a name="idiasectioncontribget_length"></a>IDiaSectionContrib::get_length
 Возвращает число байтов в разделе.
 
 ## <a name="syntax"></a>Синтаксис
@@ -33,10 +33,10 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает число байтов в разделе.
+заполняет Возвращает число байтов в разделе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

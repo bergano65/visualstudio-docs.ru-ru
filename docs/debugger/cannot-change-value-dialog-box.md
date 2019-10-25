@@ -1,5 +1,5 @@
 ---
-title: Невозможно изменить значение-диалоговое окно | Документация Майкрософт
+title: Диалоговое окно "не удается изменить значение" | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564155"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745744"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Не удается изменить значение - диалоговое окно
 ## <a name="error"></a>Error
- `The value of this variable cannot be changed` &#124;`The name` *имя* `does not exist in the current context` &#124; *различные сообщения*
+ `The value of this variable cannot be changed` &#124; *имя* `The name` `does not exist in the current context` &#124; *различных других сообщений*
 
  Это окно сообщения появляется при попытке поменять содержимое переменной на недопустимое значение в окне отладчика (окно "Видимые переменные", "Контрольные значения" или "Локальные переменные") или в диалоговом окне "Быстрая проверка". Например, данное окно сообщения отображается при попытке задать целочисленной переменной значение символьной строки.
 

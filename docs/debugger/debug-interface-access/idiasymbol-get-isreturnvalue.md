@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isReturnValue | Документация Майкрософт
+title: 'IDiaSymbol:: get_isReturnValue | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ae065f16c2d047311308d63da7680a61fa22ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7bf9d94cd090fdf3993f84147f43a7b2f70dc7e2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836472"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740103"
 ---
-# <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
+# <a name="idiasymbolget_isreturnvalue"></a>IDiaSymbol::get_isReturnValue
 Указывает, содержит ли переменная возвращаемое значение.
 
 ## <a name="syntax"></a>Синтаксис
@@ -30,10 +30,10 @@ HRESULT get_isReturnValue(
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Указатель на `BOOL` , указывающее, содержит ли переменная возвращаемое значение.
+заполняет Указатель на `BOOL`, указывающий, содержит ли переменная возвращаемое значение.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

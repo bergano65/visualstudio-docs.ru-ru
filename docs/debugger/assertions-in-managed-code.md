@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2637e801ba0d317e4c0abec8bd12197656dc844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564142"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745779"
 ---
 # <a name="assertions-in-managed-code"></a>Утверждения в управляемом коде
 Оператор проверочного утверждения `Assert` проверяет выполнение условия, указанного в качестве аргумента для оператора `Assert`. Если условие выполняется, никаких действий не производится. Если же условие не выполняется, то утверждение выдает ошибку. При работе с отладочной сборкой выполнение программы приостанавливается.
@@ -48,7 +48,7 @@ ms.locfileid: "62564142"
  [Использование проверочных утверждений в файлах конфигурации](#BKMK_Setting_assertions_in_configuration_files)
 
 ## <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Проверочные утверждения в пространстве имен System.Diagnostics
- В Visual Basic и Visual C# можно использовать метод `Assert` из класса <xref:System.Diagnostics.Debug> или из класса <xref:System.Diagnostics.Trace>, которые принадлежат пространству имен <xref:System.Diagnostics>. Методы класса <xref:System.Diagnostics.Debug> не включаются в версию выпуска программы, поэтому они не увеличивают ее размер и не снижают скорость ее выполнения.
+ В Visual Basic и Visual C# можно использовать метод `Assert` из класса <xref:System.Diagnostics.Debug> или из класса <xref:System.Diagnostics.Trace>, которые принадлежат пространству имен <xref:System.Diagnostics>. Методы класса <xref:System.Diagnostics.Debug> не включаются в окончательную версию (версию выпуска) программы, поэтому они не увеличивают ее размер и не уменьшают скорость ее выполнения.
 
  C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. В случае C++ такого же результата можно добиться с помощью класса <xref:System.Diagnostics.Trace> в сочетании с условной компиляцией, например: `#ifdef DEBUG`... `#endif`.
 
@@ -144,13 +144,13 @@ Debug.Assert ( temp != 0 );
 
 - `#Const TRACE = True` — в Visual Basic
 
-- `#define TRACE` — в Visual C# и C++
+- `#define TRACE` — в Visual C# и C++
 
   Либо, как вариант, построение программы должно выполняться с параметром TRACE:
 
 - `/d:TRACE=True` — в Visual Basic
 
-- `/d:TRACE` — в Visual C# и C++
+- `/d:TRACE` — в Visual C# и C++
 
   Если методы Debug требуется использовать в выпускной сборке программы на языках C# или Visual Basic, необходимо определить символ DEBUG в конфигурации выпуска.
 
@@ -218,6 +218,6 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
 - <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Трассировка и инструментирование приложений](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
-- [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug).
+- [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)
 - [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Отладка управляемого кода](../debugger/debugging-managed-code.md)

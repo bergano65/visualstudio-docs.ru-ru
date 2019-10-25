@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_lowerBound | Документация Майкрософт
+title: 'IDiaSymbol:: get_lowerBound | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f55f47d8db9ec3723caf9ad5ff05d81d60404dba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ba113964ae316d7f887ccd558b804a4135865004
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791670"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739867"
 ---
-# <a name="idiasymbolgetlowerbound"></a>IDiaSymbol::get_lowerBound
-Получает нижнюю границу измерения массива FORTRAN.
+# <a name="idiasymbolget_lowerbound"></a>IDiaSymbol::get_lowerBound
+Извлекает нижнюю границу измерения массива FORTRAN.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ HRESULT get_lowerBound ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий нижнюю границу измерения массива FORTRAN.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий нижнюю границу измерения массива FORTRAN.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.

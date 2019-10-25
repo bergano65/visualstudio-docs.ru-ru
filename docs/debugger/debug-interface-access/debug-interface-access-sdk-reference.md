@@ -14,36 +14,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6760e77fc59292c8d4bdeee02690ab65d5edf7f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa8e898a4f045f739eed156e181346a9a6e2df3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555030"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745270"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Справочник по SDK для доступа к интерфейсу отладки
 
-Полный справочник для всех интерфейсов и вспомогательные перечисления и структуры в пакете SDK для доступа к интерфейсу отладки.
+Полный справочник по всем интерфейсам и вспомогательным перечислениям и структурам в пакете SDK для DIA.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание
 
 [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
-Полный справочник на все интерфейсы, предоставляемые пакетом SDK для доступа к интерфейсу отладки.
+Полный справочник по всем интерфейсам, предоставляемым пакетом SDK для DIA.
 
 [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
-Полный справочник ко всем перечисления и структуры, необходимые интерфейсы.
+Полный справочник по всем перечислениям и структурам, необходимым для интерфейсов.
 
 [Константы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-Описывает ряд строк и их метки, которые могут использоваться с интерфейсами.
+Описывает ряд строк и их меток, которые можно использовать с интерфейсами.
 
 ## <a name="related-sections"></a>Связанные разделы
 
 [Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
-Описание символов и как они идентифицируются по типу.
+Описывает символы и способ их идентификации по типу.
 
 ## <a name="see-also"></a>См. также
 

@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 571a92adf4ebbdce12ec8ea45866835e3f6a6772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0e65b47baba985012dccad0c838c65d2d8bf2ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666921"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748149"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Работа со схемой определений доменных языков
 Схема определения [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] является важным инструментом для определения доменного языка. Вы можете добавлять элементы в модель домена, определять отношения на схеме и изменять макет схемы, чтобы сделать ее более удобной для чтения.
@@ -70,6 +70,6 @@ ms.locfileid: "72666921"
 ### <a name="show-as-class"></a>Show As Class
  Если доменная связь имеет производные отношения или если она содержит связи внедрения или ссылки с другими доменными отношениями, можно отобразить связь в виде класса, щелкнув правой кнопкой мыши связь и выбрав пункт **Показать как класс**. Связь будет отображаться с ячейкой **свойств домена** и будет показывать деревья наследования и связей.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

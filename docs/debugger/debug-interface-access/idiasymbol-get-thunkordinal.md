@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_thunkOrdinal | Документация Майкрософт
+title: 'IDiaSymbol:: get_thunkOrdinal | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dadfff62502af59652e9113553e13b4942c540f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3bc8c523886d694ea413dedcf9a28e53e361882b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64822642"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739141"
 ---
-# <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
-Извлекает тип преобразователя значения функции.
+# <a name="idiasymbolget_thunkordinal"></a>IDiaSymbol::get_thunkOrdinal
+Возвращает тип преобразователя для функции.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +33,18 @@ HRESULT get_thunkOrdinal ( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает значение из [перечисление THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md) перечисление, указывающее тип преобразователя значения функции.
+заполняет Возвращает значение из перечисления [перечисления THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md) , которое указывает тип преобразователя для функции.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
- Данное свойство допустимо только если символ, представленный [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значение `SymTagThunk`.
+## <a name="remarks"></a>Заметки
+ Это свойство допустимо только в том случае, если символ является значением [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) `SymTagThunk`.
 
- «Преобразователь» — это часть кода, который выполняет преобразование между адресное пространство с 32-разрядной памяти (также известный как плоский пространства имен) и 16-разрядное адресное пространство, (известный как сегментированное адресное пространство).
+ "Преобразователь" — это фрагмент кода, который преобразует между 32-разрядным адресным пространством (также называемым плоским адресным пространством) и 16-битным адресным пространством (называемым сегментированным адресным пространством).
 
 ## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

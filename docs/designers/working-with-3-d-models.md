@@ -3,17 +3,17 @@ title: Работа с трехмерными моделями
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbca927a3c4bd26a37318fc9b3403d0eb8d7393c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b364682d8173d34d2b9977836929ca93ddf45a78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892562"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633982"
 ---
 # <a name="work-with-3d-models"></a>Работа с трехмерными моделями
 
@@ -29,7 +29,7 @@ ms.locfileid: "62892562"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание|
+|Заголовок|ОПИСАНИЕ|
 |-----------|-----------------|
 |[Редактор моделей](../designers/model-editor.md)|Описывает порядок использования редактора моделей для работы с трехмерными моделями.|
-|[Примеры редактора моделей](../designers/model-editor-examples.md)|Содержит ссылки на статьи, в которых демонстрируется использование редактора моделей для выполнения распространенных задач трехмерного моделирования.|
+|[Примеры редактора моделей](../designers/how-to-create-a-basic-3-d-model.md)|Содержит ссылки на статьи, в которых демонстрируется использование редактора моделей для выполнения распространенных задач трехмерного моделирования.|

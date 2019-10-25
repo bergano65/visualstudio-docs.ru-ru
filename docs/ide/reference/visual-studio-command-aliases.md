@@ -11,17 +11,17 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee8a41a6e72123a678cdf4be278a247cc3fa55e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f56161e1fd89ce29924368b6029ee12c17e75a65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789126"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747704"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -49,7 +49,7 @@ ms.locfileid: "62789126"
 |Очистить все|cls|Edit.ClearAll|
 |Режим команд|cmd|View.CommandWindow|
 |Перейти к коду|код|View.ViewCode|
-|[Команда "Вывести память"](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
+|[Команда "Вывести память"](../../ide/reference/list-memory-command.md)|дн.|Debug.ListMemory|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI|da|Debug.ListMemory /Ansi|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) в однобайтовом формате|db|Debug.ListMemory /Format:OneByte|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI с 4-байтовым форматом|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -125,7 +125,7 @@ ms.locfileid: "62789126"
 |Вывести процессы|&#124;|Debug.ListProcesses|
 |[Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

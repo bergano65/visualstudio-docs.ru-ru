@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f6dc69a18aa09536e5735431aa451bc2dd3933ee
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435914"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745684"
 ---
 # <a name="com-and-activex-debugging"></a>Отладка COM и ActiveX
 В этом подразделе представлены советы по отладке приложений COM и элементов управления ActiveX.
@@ -41,7 +41,7 @@ ms.locfileid: "72435914"
 ## <a name="related-sections"></a>Связанные разделы
  [Знакомство с отладчиком](../debugger/debugger-feature-tour.md) Ссылки на более крупные разделы документации по отладке. Сведения включают в себя: новые возможности отладчика, параметры и подготовки, точки останова, обработку исключений, изменение и продолжение, отладка управляемого кода C++ , отладка проектов, отладка COM и ActiveX, отладка библиотек DLL, ОТЛАДКа SQL и пользователь ссылки на интерфейс.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Введение в модель COM](/cpp/atl/introduction-to-com)

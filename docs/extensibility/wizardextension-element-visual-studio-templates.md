@@ -1,5 +1,5 @@
 ---
-title: Элемент WizardExtension (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Визардекстенсион (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cde4c98b1b8ba51205cb2d198eacaaf468a7e872
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cfd46573f70b31559f9d6c4749c142d763537764
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350779"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748936"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Элемент WizardExtension (шаблоны Visual Studio)
 Содержит элементы регистрации для настройки мастера шаблонов.
@@ -45,20 +45,20 @@ ms.locfileid: "66350779"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Указание имени или строгое имя сборки, которое отображается в глобальном кэше сборок. Должен существовать по крайней мере один `Assembly` элемент в `WizardExtension` элемент.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Полное имя класса, который реализует `IWizard` интерфейс. Должен существовать по крайней мере один `FullClassName` элемент в `WizardExtension` элемент.|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Указывает имя или строгое имя сборки, которая отображается в глобальном кэше сборок. Элемент `WizardExtension` должен содержать по крайней мере один элемент `Assembly`.|
+|[фуллкласснаме](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Полное имя класса, реализующего интерфейс `IWizard`. Элемент `WizardExtension` должен содержать по крайней мере один элемент `FullClassName`.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Содержит все метаданные для шаблона проекта, шаблон элемента или комплект для начала работы.|
+|[Файле](../extensibility/vstemplate-element-visual-studio-templates.md)|Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  `WizardExtension` — необязательный дочерний элемент элемента `VSTemplate`.
 
 ## <a name="example"></a>Пример
- В следующем примере показано метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.
+ В следующем примере показаны метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"

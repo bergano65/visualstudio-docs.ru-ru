@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSafeBuffers | Документация Майкрософт
+title: 'IDiaSymbol:: get_isSafeBuffers | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd923b9f7244bb42fdf8defb70b8ed5dc82ed0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0f4c3ab653c0a5540410d8e3e0b5426c4d0bcde5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825502"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740089"
 ---
-# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-Получает флаг, указывающий, следует ли использовать директиву препроцессора для безопасном буфере. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.
+# <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+Получает флаг, указывающий, используется ли директива препроцессора для безопасного буфера. Используйте, если для [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) задано значение `SymTagFunction`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ HRESULT get_isSafeBuffers( 
 #### <a name="parameters"></a>Параметры
  `pRetVal`
 
-[out] Возвращает `TRUE` если указатель использует директивы препроцессора для безопасном буфере; в противном случае возвращает `FALSE`.
+заполняет Возвращает `TRUE`, если указатель использует директиву препроцессора для безопасного буфера; в противном случае возвращает `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
 
 ## <a name="requirements"></a>Требования
- Заголовок: dia2.h
+ Заголовок: Dia2. h
 
- Библиотека: diaguids.lib
+ Библиотека: диагуидс. lib
 
  DLL: msdia100.dll
 

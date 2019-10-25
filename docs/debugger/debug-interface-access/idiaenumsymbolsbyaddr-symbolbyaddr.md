@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::symbolByAddr | Документация Майкрософт
+title: 'Идиаенумсимболсбяддр:: Симболбяддр | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8620dcf7367914e25411fad7ac54a34a5bac54c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0891cc5eb244b781b69e231d4282b92aa064b91
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833328"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743847"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-Помещает перечислитель, выполняя поиск образа номер раздела и смещение.
+Размещает перечислитель, выполняя поиск по номеру и смещению раздела изображения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,20 +33,20 @@ HRESULT symbolByAddr ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- isect
+ исект
 
-[in] Изображение номер раздела.
+окне Номер раздела изображения.
 
- offsect
+ оффсект
 
-[in] Смещение в разделе.
+окне Смещение в разделе.
 
- ppsymbol
+ ппсимбол
 
-[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий найден символ.
+заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий найденный символ.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символ не найден. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE`, если символ не найден. В противном случае возвращается код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

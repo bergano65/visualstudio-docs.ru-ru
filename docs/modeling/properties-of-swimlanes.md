@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5180581b0a0934c049d9c4ea199fa3396a1d1237
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a21473f983c56181e3a5d2fc7f9e97cd1c2d6e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658123"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748257"
 ---
 # <a name="properties-of-swimlanes"></a>Свойства дорожек
 На схему можно добавлять дорожки. Дорожки делят диаграмму на вертикальные или горизонтальные области. Можно определить другие фигуры для отображения в дорожках. Дополнительные сведения см. [в разделе Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
@@ -50,6 +50,6 @@ ms.locfileid: "72658123"
 |Исправлен текст подсказки|Текст, используемый для фиксированной подсказки.|\<none>|
 |Ключевое слово Help|Ключевое слово, используемое для индексации справки F1 для этой дорожки.|\<none>|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

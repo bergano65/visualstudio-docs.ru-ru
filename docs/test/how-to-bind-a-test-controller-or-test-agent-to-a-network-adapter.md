@@ -8,17 +8,17 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979334"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643783"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Как выполнить Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 
 Если компьютер, на котором установлено программное обеспечение контроллера или агента тестирования, оснащен несколькими сетевыми адаптерами, то чтобы определить этот контроллер или агент тестирования, необходимо указать не имя компьютера, а IP-адрес.
 
@@ -49,7 +49,7 @@ ms.locfileid: "62979334"
 
 2. В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Контроллер тестирования Visual Studio** и выберите команду **Остановить**.
 
-     - или -
+     -или-
 
      Откройте окно командной строки с повышенными привилегиями и выполните следующую команду:
 
@@ -95,7 +95,7 @@ ms.locfileid: "62979334"
 
 2. В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Агент тестирования Visual Studio** и выберите команду **Остановить**.
 
-     - или -
+     -или-
 
      Откройте окно командной строки с повышенными привилегиями и выполните следующую команду:
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe707d82354a8c947dfa89a7323b41a489d0fa8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 75792518eadc5449f070b90f3f1e8c2da38bf2b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919307"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748780"
 ---
 # <a name="command-window"></a>Командное окно
 **Командное** окно используется для выполнения команд или их псевдонимов непосредственно в интегрированной среде разработки (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Можно выполнять команды меню и команды, которые не отображаются в меню. Для вывода **командного** окна в меню **Вид** выберите **Другие окна**, а затем **Командное окно**.

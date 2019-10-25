@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d75193368188efc660391d1e80c562ed881324b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72578017"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745640"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Создание пользовательских представлений управляемых объектов (C#, Visual Basic, F#, C++/CLI)
 Можно настроить то, как Visual Studio отображает типы данных в окнах переменных отладчика.
@@ -46,7 +46,7 @@ ms.locfileid: "72578017"
 > [!NOTE]
 > Для C++ кода можно добавить расширения пользовательских типов данных с помощью платформы Natvis, как описано в разделе [Создание пользовательских представлений C++ объектов в отладчике](/visualstudio/debugger/create-custom-views-of-native-objects).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сообщить отладчику, что отображать с помощью атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Сообщить отладчику, какой тип отображать с помощью атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)

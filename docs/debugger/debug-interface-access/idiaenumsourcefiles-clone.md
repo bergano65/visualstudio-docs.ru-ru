@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles::Clone | Документация Майкрософт
+title: 'IDiaEnumSourceFiles:: Clone | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 328536b64bdea2591b4ab8c242348b8304984466
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b1e3d1dde9d58fb11bd5e06b7394eaab4cc41e9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744125"
 ---
 # <a name="idiaenumsourcefilesclone"></a>IDiaEnumSourceFiles::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.
+Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,12 +31,12 @@ HRESULT Clone ( 
 ```
 
 #### <a name="parameters"></a>Параметры
- ppenum
+ ппенум
 
-[out] Возвращает [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) , содержащий копию перечислителя. Источник, который файлы не дублируются, только перечислитель.
+заполняет Возвращает объект [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) , содержащий дубликат перечислителя. Исходные файлы не дублируются, только перечислитель.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
