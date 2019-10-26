@@ -1,7 +1,7 @@
 ---
 title: Отладка приложений UWP | Документация Майкрософт
-ms.custom: seodec18
-ms.date: 03/28/2019
+ms.custom: ''
+ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fe8348b342627cba861a9ceb67e74d0876752cdf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b008dd22b99e0024fcba479564c02cfad148f14a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738023"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888468"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Отладка универсальных приложений Windows (UWP) в Visual Studio
 
@@ -28,6 +28,8 @@ ms.locfileid: "72738023"
 |-|-|
 |Запускайте приложения UWP на локальном компьютере, удаленном или подключенном устройстве или симуляторе приложения.|[Запуск сеанса отладки для приложения UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |Отлаживать развернутые приложения как локальные, так и удаленные.|[Отладка установленного пакета приложения](../debugger/debug-installed-app-package.md)|
+| [Запись и отладка выполняющегося кода XAML](../xaml-tools/xaml-hot-reload.md) | Можно использовать горячую перезагрузку XAML для просмотра визуального дерева объекта XAML UWP и просмотра свойств зависимостей для объектов в этом дереве. В этом разделе описывается, как использовать горячую перезагрузку XAML. |
+| [Просмотр свойств XAML во время отладки](../xaml-tools/xaml-hot-reload.md) | Можно использовать динамическое визуальное дерево для просмотра визуального дерева объекта XAML UWP и просмотра свойств зависимостей для объектов в этом дереве. |
 |Проанализируйте воздействие класса Контентпрефетчер на приложения UWP.|[Предзагрузка содержимого для приложений UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>См. также
