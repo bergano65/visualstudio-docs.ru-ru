@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56c49f0d3cef6dbb054c8d7d97b4e875b83cb518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648820"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924547"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 
@@ -50,7 +50,7 @@ ms.locfileid: "72648820"
 
 - Наборы данных и адаптеры таблицы. Дополнительные сведения см. [в разделе Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) и [адаптеры таблиц TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](/dotnet/framework/wpf/data/data-binding-overview).
+- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-project"></a>Создание проекта
 
@@ -262,4 +262,4 @@ ms.locfileid: "72648820"
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Общие сведения о привязке данных](/dotnet/framework/wpf/data/data-binding-overview)
+- [Общие сведения о привязке данных](/dotnet/desktop-wpf/data/data-binding-overview)

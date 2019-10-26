@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648723"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924520"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Подключение к данным в базе данных Access
 
@@ -109,7 +109,7 @@ ms.locfileid: "72648723"
 
 Только что созданный набор данных доступен в окне **Источники данных** . Теперь можно выполнить любую из следующих задач:
 
-- Выберите элементы в окне **Источники данных** и перетащите их в форму или область конструктора (см. раздел [Привязка Windows Forms элементов управления к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) или [Общие сведения о привязке данных WPF](/dotnet/framework/wpf/data/data-binding-overview)).
+- Выберите элементы в окне **Источники данных** и перетащите их в форму или область конструктора (см. раздел [Привязка Windows Forms элементов управления к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) или [Общие сведения о привязке данных WPF](/dotnet/desktop-wpf/data/data-binding-overview)).
 
 - Откройте источник данных в **Конструкторе набора данных** для добавления или изменения объектов, составляющих набор данных.
 
