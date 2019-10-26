@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735548"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911493"
 ---
 # <a name="graphics-event-list"></a>Список событий графики
 Список событий графики в анализаторе графики Visual Studio служит для изучения событий Direct3D, возникших при отрисовке определенного кадра игры или приложения.
@@ -88,7 +88,7 @@ ms.locfileid: "72735548"
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Пользовательские события в Direct3D 11 и более ранних версий
  Чтобы создать группы и маркеры в Direct3D 11 или более ранних версий, используйте API, описанные в этом разделе. В таблице ниже приведены API, которые можно использовать для Direct3D 11 и более ранних версий.
 
-|Описание API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Семейство API D3DPerf_ (Direct3D 11.0 и более ранних версий)|
+|Описание API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11.1)|Семейство API D3DPerf_ (Direct3D 11.0 и более ранних версий)|
 |---------------------| - | - | - |
 |Начало группы событий|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |Завершение группы событий|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ ms.locfileid: "72735548"
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Журнал ресурсов
-Visual Studio 2017 и более поздние версии содержат окно **Журнал ресурсов** .  При выборе значка просмотра ![watch значок ](media/gfx_watch.png) рядом с записью в окне **список событий** откроется окно **Журнал ресурсов** , показанное ниже:
+Visual Studio 2017 и более поздние версии содержат окно **Журнал ресурсов** .  При выборе значка просмотра ![значок контрольного значения](media/gfx_watch.png) рядом с записью в окне **список событий** откроется окно **Журнал ресурсов** , показанное ниже:
 
 ![Журнал ресурсов](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ Visual Studio 2017 и более поздние версии содержат о
 |-----------| - |
 | **Type** | Показывает тип записи, как правило, *Создание*, *Чтение* и *запись*. |
 | **Вид** | Отображает эскиз ресурса в данный момент времени.  Дважды щелкните эскиз, чтобы открыть подробное представление ресурса в это время. |
-| **Event** | Показывает вызов метода, который вызвал событие.  Чтобы просмотреть дополнительные данные об отдельных элементах, выберите значок просмотра ![watch значок ](media/gfx_watch.png) на соответствующей строке.  Кроме того, для получения дополнительных сведений можно выбрать любой элемент, который отображается синим текстом, например `m_commandList` на снимке экрана выше. |
+| **Event** | Показывает вызов метода, который вызвал событие.  Чтобы просмотреть дополнительные данные об отдельных элементах, щелкните значок просмотра ![значок контрольного значения](media/gfx_watch.png) на соответствующей строке.  Кроме того, для получения дополнительных сведений можно выбрать любой элемент, который отображается синим текстом, например `m_commandList` на снимке экрана выше. |
 
 <!-- /VERSIONLESS -->
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745583"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911585"
 ---
 # <a name="debug-64-bit-applications"></a>Отладка 64-разрядных приложений
 Существует возможность отладки 64-разрядного приложения, которое выполняется на локальном или удаленном компьютере.
@@ -54,7 +54,7 @@ ms.locfileid: "72745583"
 
 ## <a name="see-also"></a>См. также
 
-- [64-разрядные приложения](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
+- [64-разрядные приложения](/dotnet/framework/64-bit-apps)
 - [Настройка программ для 64-разрядных систем](/cpp/build/configuring-programs-for-64-bit-visual-cpp)
 - [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
 - [Использование файлов дампа](../debugger/using-dump-files.md)

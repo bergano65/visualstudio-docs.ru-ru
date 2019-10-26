@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737559"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911534"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере
 Это сообщение об ошибке означает, что Visual Studio не удалось найти подходящий экземпляр монитора удаленной отладки Visual Studio на удаленном компьютере. Без монитора удаленной отладки Visual Studio удаленная отладка невозможна. Сведения о скачивании и настройке удаленного отладчика см. в разделе [Удаленная отладка](../debugger/remote-debugging.md).
@@ -41,7 +41,7 @@ ms.locfileid: "72737559"
  Попробуйте выполнить [проверку связи](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) с удаленным компьютером. Если он не отвечает на проверку связи, инструментам удаленной отладки также не удастся подключиться к нему. Попробуйте перезагрузить удаленный компьютер и проверить, правильно ли он настроен в сети.
 
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Версия удаленного отладчика не соответствует версии Visual Studio.
- Запущенная локально версия Visual Studio должна совпадать с версией монитора удаленной отладки, запущенного на удаленном компьютере. Чтобы устранить эту проблему, скачайте и установите соответствующую версию монитора удаленной отладки. Чтобы найти нужную версию удаленного отладчика, перейдите в [Центр загрузки](http://www.microsoft.com/en-us/download) .
+ Запущенная локально версия Visual Studio должна совпадать с версией монитора удаленной отладки, запущенного на удаленном компьютере. Чтобы устранить эту проблему, скачайте и установите соответствующую версию монитора удаленной отладки. Чтобы найти нужную версию удаленного отладчика, перейдите в [Центр загрузки](https://www.microsoft.com/download) .
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>На локальном и удаленном компьютерах используются разные режимы аутентификации
  На локальном и удаленном компьютерах должен использоваться один и тот же режим аутентификации. Чтобы устранить эту проблему, настройте на обоих компьютерах один и тот же режим аутентификации. Более подробную информацию о режимах аутентификации см. в статье [Обзор аутентификации Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).
@@ -72,7 +72,7 @@ ms.locfileid: "72737559"
 ## <a name="more-help"></a>Дополнительная справка
  Чтобы получить дополнительную справку по удаленному отладчику, включая параметры командной строки, щелкните **справка > использование** в окне удаленного отладчика. Если вы не открыли его, можно увидеть веб-страницу, скопировав следующую строку в окно **проводника** . (Необходимо заменить каталог установки \<Visual Studio > расположением установки Visual Studio.)
 
- *каталог установки res://\<Visual Studio >* \ COMMON7 \ IDE \ Remote %2 0 Debugger \ x64 \ msvsmon. exe/Help. htm
+ res:// *\<каталог установки Visual Studio >* \ COMMON7 \ IDE \ удаленный %2 0 отладчик \ x64 \ msvsmon. exe/Help. htm
 
 ## <a name="see-also"></a>См. также
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

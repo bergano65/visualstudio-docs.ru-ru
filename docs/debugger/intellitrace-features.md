@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925366"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911419"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Функции IntelliTrace (C#, Visual Basic, C++)
 
-IntelliTrace можно использовать для записи событий и вызовов методов, что позволяет проверять состояние приложения (стек вызовов и значения локальных переменных) на различных этапах выполнения. Просто запустите отладку обычным образом — средство IntelliTrace включено по умолчанию — и просматривайте данные, записываемые IntelliTrace в новом окне **Средства диагностики** на вкладке **События**. Выберите событие и щелкните **Активировать журнал отладки**, чтобы увидеть стек вызовов и локальные переменные, записанные для этого события.
+IntelliTrace можно использовать для записи событий и вызовов методов, что позволяет проверять состояние приложения (стек вызовов и значения локальных переменных) на различных этапах выполнения. Просто начните отладку обычным образом: IntelliTrace включен по умолчанию, и вы можете увидеть сведения, которые IntelliTrace записывает в новое окно **средства диагностики** на вкладке **события** . Выберите событие и щелкните **Активировать отладку с ведением журнала.** для просмотра стека вызовов и локальных переменных, записанных для этого события.
 
-Пошаговое описание см. в разделе [пошаговое руководство. Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+Пошаговое описание см. в разделе [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 Средство IntelliTrace доступно в выпуске Visual Studio Enterprise, но не в выпусках Visual Studio Professional или Community.
 
@@ -123,7 +123,7 @@ IntelliTrace можно настроить для автоматического
 
 ## <a name="forums"></a>Форумы
 
-[Отладчик Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Отладчик Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>Видеоролики
 
