@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211210"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911396"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Вопросы и ответы по отладке моментальных снимков в Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "71211210"
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Как выполняется загрузка символов в Snapshot Debugger?
 
-Для работы расширения Snapshot Debugger требуются соответствующие символы приложения, которые должны быть развернуты в Службе приложений Azure или находиться на локальном компьютере. (Внедренные PDB-файлы сейчас не поддерживаются.) Snapshot Debugger выполнит загрузку символов из Службы приложений Azure автоматически. Начиная с Visual Studio 2017 версии 15.2, при развертывании в Службе приложений Azure также будут развернуты символы вашего приложения.
+Для работы расширения Snapshot Debugger требуются соответствующие символы приложения, которые должны быть развернуты в Службе приложений Azure или находиться на локальном компьютере. (Внедренные PDB-файлы в настоящее время не поддерживаются.) Snapshot Debugger автоматически скачивает символы из службы приложений Azure. Начиная с Visual Studio 2017 версии 15.2, при развертывании в Службе приложений Azure также будут развернуты символы вашего приложения.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Работает ли Snapshot Debugger в сборках выпуска приложения?
 
@@ -125,7 +125,7 @@ ms.locfileid: "71211210"
 
    - Сертификат сервера
       - Соответствующий отпечаток сертификата сервера развертывается в качестве секрета в Azure KeyVault. VS попытается найти или создать KeyVault с префиксом МСВСАЗ * в регионе, соответствующем ресурсу виртуальной машины или масштабируемого набора виртуальных машин. Все ресурсы виртуальных машин или масштабируемых наборов виртуальных машин, развернутых в этом регионе, будут совместно использовать один и тот же KeyVault.
-      - Чтобы удалить секрет отпечатка сертификата сервера, перейдите на портал Azure и найдите МСВСАЗ * KeyVault в том же регионе, где размещен ресурс. Удалить секрет, который должен быть помечен`remotedebugcert<<ResourceName>>`
+      - Чтобы удалить секрет отпечатка сертификата сервера, перейдите на портал Azure и найдите МСВСАЗ * KeyVault в том же регионе, где размещен ресурс. Удалите секрет, который должен быть помечен `remotedebugcert<<ResourceName>>`
       - Кроме того, необходимо удалить секрет сервера из ресурса с помощью PowerShell.
 
       Для виртуальных машин:
@@ -181,7 +181,7 @@ ms.locfileid: "71211210"
 
 - Портал Azure > в колонке ресурсов масштабируемого набора виртуальных машин или виртуальных машин > расширения > удалить расширение Microsoft. Insights. VMDiagnosticsSettings
 
-- Командлеты PowerShell из [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Командлеты PowerShell из [AZ PowerShell](/powershell/azure/overview)
 
    Виртуальная машина:
 

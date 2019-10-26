@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e719563c831c50cc325d70d0de431f4be1bf514
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732747"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911430"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Практическое руководство. Установка имен потока в машинном коде
 Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков полезно для определения интересующих потоков в окне **потоков** при отладке выполняющегося процесса. Наличие распознаваемых именованных потоков также может оказаться полезным при выполнении отладки после аварийного завершения с помощью проверки дампа памяти и при анализе захвата производительности с помощью различных средств.
@@ -37,7 +37,7 @@ ms.locfileid: "72732747"
 Преимущества:
 * Имена потоков отображаются при отладке в Visual Studio независимо от того, был ли отладчик присоединен к процессу во время вызова SetThreadDescription.
 * Имена потоков отображаются при выполнении отладки после неустранимой нагрузки путем загрузки аварийного дампа в Visual Studio.
-* Имена потоков также отображаются при использовании других средств, таких как отладчик [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) и анализатор производительности [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) .
+* Имена потоков также отображаются при использовании других средств, таких как отладчик [WinDbg](/windows-hardware/drivers/debugger/debugger-download-tools) и анализатор производительности [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 Предупреждения:
 * Имена потоков отображаются только в Visual Studio 2017 версии 15,6 и более поздних версиях.
