@@ -22,23 +22,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), Link task
-- Link task (MSBuild (Visual C++))
+- MSBuild (C++), Link task
+- Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825411"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747292"
 ---
 # <a name="link-task"></a>Связывание задачи
-Создает оболочку для компоновщика Visual C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
+Создает оболочку для компоновщика Microsoft C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Параметры
  Ниже приводятся параметры задачи **Link**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.

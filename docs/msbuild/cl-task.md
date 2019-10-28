@@ -13,23 +13,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), CL task
-- CL task (MSBuild (Visual C++))
+- MSBuild (C++), CL task
+- CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ec3be0adf6f262cafbebe2da714f4e74777329c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747357"
 ---
 # <a name="cl-task"></a>CL - задача
-Использует оболочку компилятора Visual C++ — *cl.exe*. Компилятор создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).
+Создает программу-оболочку для компилятора Microsoft C++ *cl.exe*. Компилятор создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).
 
 ## <a name="parameters"></a>Параметры
  В следующем списке приводятся параметры задачи **CL**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
@@ -62,7 +62,7 @@ ms.locfileid: "62569697"
 
    Необязательный параметр String.
 
-   Строка, которая всегда выводится в командной строке. Значение по умолчанию — "**/c**".
+   Строка, которая всегда выводится в командной строке. Значение по умолчанию — " **/c**".
 
 - **AssemblerListingLocation**
 
@@ -78,15 +78,15 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **NoListing** - *\<отсутствует>*
+  - **NoListing** -  *\<отсутствует>*
 
-  - **AssemblyCode** - **/FA**
+  - **AssemblyCode** -  **/FA**
 
-  - **AssemblyAndMachineCode** - **/FAc**
+  - **AssemblyAndMachineCode** -  **/FAc**
 
-  - **AssemblyAndSourceCode** - **/FAs**
+  - **AssemblyAndSourceCode** -  **/FAs**
 
-  - **All** - **/FAcs**
+  - **All** -  **/FAcs**
 
     Дополнительные сведения см. в описании параметров **/FA**, **/FAc**, **/FAs** и **/FAcs** в разделе [/FA, /Fa (файл листинга)](/cpp/build/reference/fa-fa-listing-file).
 
@@ -98,13 +98,13 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Default** -                          *\<отсутствует>*
+  - **Default** -                           *\<отсутствует>*
 
-  - **StackFrameRuntimeCheck** - **/RTCs**
+  - **StackFrameRuntimeCheck** -  **/RTCs**
 
-  - **UninitializedLocalUsageCheck** - **/RTCu**
+  - **UninitializedLocalUsageCheck** -  **/RTCu**
 
-  - **EnableFastChecks** -                          **/RTC1**
+  - **EnableFastChecks** -                           **/RTC1**
 
     Дополнительные сведения см. в разделе [/RTC (проверки ошибок во время выполнения)](/cpp/build/reference/rtc-run-time-error-checks).
 
@@ -146,11 +146,11 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Cdecl** - **/Gd**
+  - **Cdecl** -  **/Gd**
 
-  - **FastCall** -                          **/Gr**
+  - **FastCall** -                           **/Gr**
 
-  - **StdCall** -                          **/Gz**
+  - **StdCall** -                           **/Gz**
 
     Дополнительные сведения см. в разделе [/Gd, /Gr, /Gv, /Gz (соглашение о вызовах)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
 
@@ -162,11 +162,11 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Default** - *\<отсутствует>*
+  - **Default** -  *\<отсутствует>*
 
-  - **CompileAsC** - **/TC**
+  - **CompileAsC** -  **/TC**
 
-  - **CompileAsCpp** - **/TP**
+  - **CompileAsCpp** -  **/TP**
 
     Дополнительные сведения см. в разделе [/Tc, /Tp, /TC, /TP (определение типа исходного файла)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
 
@@ -178,15 +178,15 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **false** - *\<отсутствует>*
+  - **false** -  *\<отсутствует>*
 
-  - **true** - **/clr**
+  - **true** -  **/clr**
 
-  - **Pure** - **/clr:pure**
+  - **Pure** -  **/clr:pure**
 
-  - **Safe** - **/clr:safe**
+  - **Safe** -  **/clr:safe**
 
-  - **OldSyntax** - **/clr:oldSyntax**
+  - **OldSyntax** -  **/clr:oldSyntax**
 
     Дополнительные сведения см. в разделе [/clr (компиляция CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
@@ -206,11 +206,11 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **OldStyle** - **/Z7**
+  - **OldStyle** -  **/Z7**
 
-  - **ProgramDatabase** - **/Zi**
+  - **ProgramDatabase** -  **/Zi**
 
-  - **EditAndContinue** - **/ZI**
+  - **EditAndContinue** -  **/ZI**
 
     Дополнительные сведения см. в разделе [/Z7, /Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format).
 
@@ -238,9 +238,9 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **StreamingSIMDExtensions** - **/arch:SSE**
+  - **StreamingSIMDExtensions** -  **/arch:SSE**
 
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**
+  - **StreamingSIMDExtensions2** -  **/arch:SSE2**
 
     Дополнительные сведения см. в разделе [/arch (x86)](/cpp/build/reference/arch-x86).
 
@@ -268,13 +268,13 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **None** - **/errorReport:none**
+  - **None** -  **/errorReport:none**
 
-  - **Prompt** - **/errorReport:prompt**
+  - **Prompt** -  **/errorReport:prompt**
 
-  - **Queue** - **/errorReport:queue**
+  - **Queue** -  **/errorReport:queue**
 
-  - **Send** - **/errorReport:send**
+  - **Send** -  **/errorReport:send**
 
     Дополнительные сведения см. в разделе [/errorReport (отчет о внутренних ошибках компилятора)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
 
@@ -286,13 +286,13 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **false** - *\<отсутствует>*
+  - **false** -  *\<отсутствует>*
 
-  - **Async** - **/EHa**
+  - **Async** -  **/EHa**
 
-  - **Sync** - **/EHsc**
+  - **Sync** -  **/EHsc**
 
-  - **SyncCThrow** - **/EHs**
+  - **SyncCThrow** -  **/EHs**
 
     Дополнительные сведения см. в статье [/EH (модель обработки исключений)](/cpp/build/reference/eh-exception-handling-model).
 
@@ -312,11 +312,11 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Neither** - *\<отсутствует>*
+  - **Neither** -  *\<отсутствует>*
 
-  - **Size** - **/Os**
+  - **Size** -  **/Os**
 
-  - **Speed** - **/Ot**
+  - **Speed** -  **/Ot**
 
     Дополнительные сведения см. в разделе [/Os, /Ot (приоритет размера кода или скорости кода)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
 
@@ -336,11 +336,11 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Precise** - **/fp:precise**
+  - **Precise** -  **/fp:precise**
 
-  - **Strict** - **/fp:strict**
+  - **Strict** -  **/fp:strict**
 
-  - **Fast** - **/fp:fast**
+  - **Fast** -  **/fp:fast**
 
     Дополнительные сведения см. в разделе [/fp (определение поведения с плавающей запятой)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
@@ -362,7 +362,7 @@ ms.locfileid: "62569697"
 
 - **ForcedUsingFiles**
 
-   Необязательный параметр типа **String[]**.
+   Необязательный параметр типа **String[]** .
 
    Вызывает обработку препроцессором одного или нескольких указанных файлов **#using**.
 
@@ -400,13 +400,13 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Default** - *\<отсутствует>*
+  - **Default** -  *\<отсутствует>*
 
-  - **Disabled** - **/Ob0**
+  - **Disabled** -  **/Ob0**
 
-  - **OnlyExplicitInline** - **/Ob1**
+  - **OnlyExplicitInline** -  **/Ob1**
 
-  - **AnySuitable** - **/Ob2**
+  - **AnySuitable** -  **/Ob2**
 
     Дополнительные сведения см. в разделе [/Ob (расширение встраиваемых функций)](/cpp/build/reference/ob-inline-function-expansion).
 
@@ -444,7 +444,7 @@ ms.locfileid: "62569697"
 
 - **ObjectFiles**
 
-   Необязательный параметр типа **String[]**.
+   Необязательный параметр типа **String[]** .
 
    Список объектных файлов.
 
@@ -480,13 +480,13 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Disabled** - **/Od**
+  - **Disabled** -  **/Od**
 
-  - **MinSpace** - **/O1**
+  - **MinSpace** -  **/O1**
 
-  - **MaxSpeed** - **/O2**
+  - **MaxSpeed** -  **/O2**
 
-  - **Full** - **/Ox**
+  - **Full** -  **/Ox**
 
     Дополнительные сведения см. в разделе [/O (оптимизация кода)](/cpp/build/reference/o-options-optimize-code).
 
@@ -498,11 +498,11 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **NotUsing** - *\<отсутствует>*
+  - **NotUsing** -  *\<отсутствует>*
 
-  - **Create** - **/Yc**
+  - **Create** -  **/Yc**
 
-  - **Use** - **/Yu**
+  - **Use** -  **/Yu**
 
     Дополнительные сведения см. в разделах [/Yc (создание файла предкомпилированного заголовка)](/cpp/build/reference/yc-create-precompiled-header-file) и [/Yu (использование файла предкомпилированного заголовка)](/cpp/build/reference/yu-use-precompiled-header-file). Кроме того, см. параметры **PrecompiledHeaderFile** и **PrecompiledHeaderOutputFile** в этой таблице.
 
@@ -590,13 +590,13 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **MultiThreaded** - **/MT**
+  - **MultiThreaded** -  **/MT**
 
-  - **MultiThreadedDebug** - **/MTd**
+  - **MultiThreadedDebug** -  **/MTd**
 
-  - **MultiThreadedDLL** - **/MD**
+  - **MultiThreadedDLL** -  **/MD**
 
-  - **MultiThreadedDebugDLL** - **/MDd**
+  - **MultiThreadedDebugDLL** -  **/MDd**
 
     Дополнительные сведения см. в разделе [/MD, /MT, /LD (использование библиотеки времени выполнения)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
@@ -646,17 +646,17 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Default** - **/Zp1**
+  - **Default** -  **/Zp1**
 
-  - **1Byte** - **/Zp1**
+  - **1Byte** -  **/Zp1**
 
-  - **2Bytes** - **/Zp2**
+  - **2Bytes** -  **/Zp2**
 
-  - **4Bytes** - **/Zp4**
+  - **4Bytes** -  **/Zp4**
 
-  - **8Bytes** - **/Zp8**
+  - **8Bytes** -  **/Zp8**
 
-  - **16Bytes** - **/Zp16**
+  - **16Bytes** -  **/Zp16**
 
     Дополнительные сведения см. в статье [/Zp (выравнивание членов структур)](/cpp/build/reference/zp-struct-member-alignment).
 
@@ -678,7 +678,7 @@ ms.locfileid: "62569697"
 
 - **TreatSpecificWarningsAsErrors**
 
-   Необязательный параметр типа **String[]**.
+   Необязательный параметр типа **String[]** .
 
    Обрабатывает указанный список предупреждений компилятора как ошибки.
 
@@ -740,17 +740,17 @@ ms.locfileid: "62569697"
 
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **TurnOffAllWarnings** - **/W0**
+  - **TurnOffAllWarnings** -  **/W0**
 
-  - **Level1** - **/W1**
+  - **Level1** -  **/W1**
 
-  - **Level2** - **/W2**
+  - **Level2** -  **/W2**
 
-  - **Level3** - **/W3**
+  - **Level3** -  **/W3**
 
-  - **Level4** - **/W4**
+  - **Level4** -  **/W4**
 
-  - **EnableAllWarnings** - **/Wall**
+  - **EnableAllWarnings** -  **/Wall**
 
     Дополнительные сведения см. в описании параметра **/W**_n_ в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (порог предупреждений)](/cpp/build/reference/compiler-option-warning-level).
 

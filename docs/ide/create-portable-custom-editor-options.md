@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150180"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652626"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -24,15 +24,15 @@ ms.locfileid: "71150180"
 
 При добавлении файла EditorConfig в проект в Visual Studio новые строки кода форматируются в соответствии с параметрами в файле EditorConfig. Форматирование существующего кода изменяется только при выполнении одной из следующих команд:
 
- - команда [Очистка кода](../ide/code-styles-and-code-cleanup.md) (**CTRL**+**K**, **CTRL**+**E**), которая применяет параметры пробелов, например стиль отступов, и выбранные параметры стиля кода, например способ сортировки операторов `using`;
+ - команда [Очистка кода](../ide/code-styles-and-code-cleanup.md) (**CTRL**+**K**, **CTRL**+**E**), которая применяет параметры пробелов, например стиль отступов, и выбранные параметры стиля кода, например способ сортировки директив `using`;
  - команда **Правка** > **Дополнительно** > **Форматировать документ** (или **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию), которая применяет только параметры пробелов, например стиль отступов.
- 
+
  ::: moniker-end
- 
+
 ::: moniker range="=vs-2017"
 
 При добавлении файла EditorConfig в проект в Visual Studio новые строки кода форматируются в соответствии с параметрами в файле EditorConfig. Форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию). Форматирование документа влияет только на параметры пробелов, например на стиль отступов, если только вы не настроили команду "Форматировать документ" для [дополнительной очистки кода](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
- 
+
  ::: moniker-end
 
 ::: moniker range="vs-2017"

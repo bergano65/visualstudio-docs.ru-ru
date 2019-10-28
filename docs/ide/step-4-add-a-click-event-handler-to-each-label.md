@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b60f9bb1fffb9fb36311ad3fda504c1ff2260ce
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289688"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621429"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Шаг 4. Добавление обработчика событий Click к каждому элементу управления Label
 
@@ -38,7 +38,7 @@ ms.locfileid: "72289688"
 
 2. Выберите первый элемент Label, чтобы выделить его. Затем, удерживая нажатой клавишу **CTRL**, выберите каждую из оставшихся меток. Убедитесь, что выбраны все метки.
 
-3. Нажмите кнопку **События** на панели инструментов в окне **Свойства**, чтобы открыть страницу **События** в окне **Свойства**. Прокрутите вниз до события **Click** и введите **label_Click** в поле, как показано на следующем рисунке.
+3. Нажмите кнопку **События** на панели инструментов в окне **Свойства**, чтобы открыть страницу **События** в окне **Свойства**. Прокрутите вниз до события **Click** и введите **label_Click** в поле, как показано на следующем снимке экрана.
 
      ![Окно свойств, отображающее событие Click](../ide/media/express_labelclick.png)
 
@@ -64,6 +64,6 @@ ms.locfileid: "72289688"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий раздел руководства: [Шаг 5. Добавление ссылок на элементы управления Label](../ide/step-5-add-label-references.md).
+- Следующий раздел руководства: **[Шаг 5. Добавление ссылок на элементы управления Label](../ide/step-5-add-label-references.md)** .
 
 - Предыдущий раздел руководства: [Шаг 3. Назначение каждому элементу управления Label случайного значка](../ide/step-3-assign-a-random-icon-to-each-label.md).

@@ -1,7 +1,7 @@
 ---
-title: Создание приложения OpenGL ES в Android и iOS | Документы Майкрософт
+title: Создание приложения OpenGL ES в Android и iOS | Документация Майкрософт
 ms.custom: ''
-ms.date: 09/17/2019
+ms.date: 10/09/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: a15902278e9a73488b315729a2db6e8fb5d53935
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079270"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588923"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Создание приложения OpenGL ES в Android и iOS
 
@@ -25,13 +25,13 @@ ms.locfileid: "71079270"
 
 ## <a name="requirements"></a>Требования
 
-Перед созданием приложения OpenGL ES для iOS и Android убедитесь в том, что выполняются все требования к системе. Установите рабочую нагрузку разработки мобильных приложений на языке C++ в Visual Studio Installer, если еще не сделали этого. Чтобы создать приложение для iOS, установите дополнительные средства разработки C++ для iOS. Чтобы создать приложение для Android, установите средства разработки C++ для Android и требуемые сторонние средства: Android NDK, Apache Ant и Google Android Emulator. Чтобы повысить производительность эмулятора на платформах Intel, рекомендуем также установить Intel Hardware Accelerated Execution Manager (HAXM). После этого настройте Intel HAXM и Android Emulator для запуска в своей системе. Более подробную информацию и инструкции см. в разделе [Установка Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
+Перед созданием приложения OpenGL ES для iOS и Android убедитесь в том, что выполняются все требования к системе. Установите рабочую нагрузку разработки мобильных приложений на языке C++ в Visual Studio Installer, если еще не сделали этого. Для получения шаблонов OpenGL ES, а также для создания приложения для iOS, включите дополнительные инструменты разработки C++ для iOS. Чтобы создать приложение для Android, установите средства разработки C++ для Android и требуемые сторонние средства: Android NDK, Apache Ant и Google Android Emulator. Чтобы повысить производительность эмулятора на платформах Intel, рекомендуем также установить Intel Hardware Accelerated Execution Manager (HAXM). После этого настройте Intel HAXM и Android Emulator для запуска в своей системе. Дополнительные сведения и подробные инструкции смотрите в статье [Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
 
 Для сборки и тестирования приложения iOS вам потребуется компьютер Mac, настроенный в соответствии с инструкциями по установке. Дополнительные сведения о настройке компьютера для разработки приложений iOS см. в разделе [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Создание проекта приложения OpenGLES
 
-В этом учебнике вы сначала создадите проект приложения OpenGL ES, а затем выполните сборку и запуск приложения по умолчанию в эмуляторе Visual Studio для Android. Затем выполните сборку приложения для iOS и запустите его на устройстве iOS.
+В этом учебнике вы сначала создадите проект приложения OpenGL ES, а затем соберете и запустите приложение по умолчанию в эмуляторе Android. Затем выполните сборку приложения для iOS и запустите его на устройстве iOS.
 
 ::: moniker range="vs-2017"
 
@@ -41,7 +41,7 @@ ms.locfileid: "71079270"
 
 1. Присвойте приложению имя, например *MyOpenGLESApp*, а затем нажмите кнопку **ОК**.
 
-   ![Проект нового приложения OpenGLES](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
+   ![Новый проект "Приложение OpenGLES"](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
    Visual Studio создаст новое решение и откроет обозреватель решений.
 
@@ -75,7 +75,7 @@ ms.locfileid: "71079270"
 
 - `MyOpenGLESApp.Android.Packaging` создает файл с расширением *.apk* для развертывания на устройстве или в эмуляторе Android. Этот файл содержит ресурсы и файл AndroidManifest.xml, в котором задаются свойства манифеста. В него также входит файл *build.xml*, управляющий процессом сборки Ant. По умолчанию он задан как начальный проект, который можно развернуть и запустить непосредственно из Visual Studio.
 
-- **MyOpenGLESApp.iOS.Application** содержит ресурсы и связующий код Objective-C для создания приложения iOS, связанного с кодом статической библиотеки C++ в `MyOpenGLESApp.iOS.StaticLibrary`. Этот проект создает пакет сборки, который передается на компьютер Mac средой Visual Studio и удаленным агентом. При сборке этого проекта среда Visual Studio отправляет файлы и команды для сборки и развертывания приложения на компьютере Mac.
+- `MyOpenGLESApp.iOS.Application` содержит ресурсы и код прилипания Objective-C для создания приложения iOS, которое ссылается на код статической библиотеки C++ в `MyOpenGLESApp.iOS.StaticLibrary`. Этот проект создает пакет сборки, который передается на компьютер Mac средой Visual Studio и удаленным агентом. При сборке этого проекта среда Visual Studio отправляет файлы и команды для сборки и развертывания приложения на компьютере Mac.
 
 ## <a name="build-and-run-the-android-app"></a>Сборка и запуск приложения Android
 
@@ -85,13 +85,13 @@ ms.locfileid: "71079270"
 
 1. Выберите пункт **x86** в раскрывающемся списке **Платформы решения**, если он еще не выбран.
 
-   ![Установка x86 в качестве платформы решения](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
+   ![Установка Платформы решения на x86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
 
    Используйте 32-разрядную платформу (x86) в качестве целевой для эмулятора. Чтобы выполнить сборку для устройства, выберите платформу решения, соответствующую процессору устройства. Если список **Платформы решения** не отображается, щелкните пункт **Платформы решения** в списке **Добавить или удалить кнопки** и выберите свою платформу.
 
 1. В **обозревателе решений** откройте контекстное меню для проекта `MyOpenGLESApp.Android.Packaging` и выберите пункт **Собрать**.
 
-   ![Проект сборки пакета Android](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
+   ![Проект сборки упаковки Android](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
 
    В окне "Выходные данные" отображаются выходные данные процесса сборки для общей библиотеки Android и приложения Android.
 
@@ -99,15 +99,15 @@ ms.locfileid: "71079270"
 
 1. Выберите один из профилей эмулируемого устройства Android в качестве цели развертывания.
 
-   ![Выбор цели развертывания](../cross-platform/media/cppmdd_opengles_pickemulator.png "CPPMDD_OpenGLES_PickEmulator")
+   ![Выбор целевого объекта развертывания](../cross-platform/media/cppmdd_opengles_pickemulator.png "CPPMDD_OpenGLES_PickEmulator")
 
    Если вы установили другие эмуляторы или подключили устройство Android, то можете выбрать их в раскрывающемся списке платформы развертывания. Для запуска приложения платформа решения сборки должна совпадать с платформой целевого устройства.
 
-1. Нажмите клавишу F5 для запуска процесса отладки или Shift + F5 для запуска без отладки.
+1. Нажмите **F5**, чтобы начать отладку, или **Shift**+**F5** для запуска без отладки.
 
    Visual Studio запускает эмулятор, который за несколько секунд загружает и развертывает код. Так выглядит экран приложения в эмуляторе Android:
 
-   ![Приложение, работающее в эмуляторе Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
+   ![Приложение, выполняющееся в эмуляторе Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
 
    После запуска приложения можно задать точки останова и использовать отладчик для проверки кода, языковых стандартов и контрольных значений.
 
@@ -127,7 +127,7 @@ ms.locfileid: "71079270"
 
 ### <a name="to-set-up-automatic-signing-on-xcode"></a>Настройка автоматического подписывания в Xcode
 
-1. Установите на компьютере Mac [Xcode](https://developer.apple.com/xcode/downloads/) 10.2.1 или более поздней версии, если еще не сделали этого.
+1. Установите [Xcode](https://developer.apple.com/xcode/) на компьютер Mac, если его у вас еще нет.
 
 1. Откройте приложение Xcode на компьютере Mac.
 
@@ -149,7 +149,7 @@ ms.locfileid: "71079270"
 
 ### <a name="to-build-and-run-the-ios-app-on-an-ios-device"></a>Сборка и запуск приложения для iOS на устройстве iOS
 
-1. Запустите удаленный агент на компьютере Mac и проверьте, сопряжена ли среда Visual Studio с удаленным агентом. Чтобы запустить удаленный агент, откройте окно приложения "Терминал" и введите `vcremote`. Дополнительные сведения см. в разделе [Настройка удаленного агента в Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).
+1. Запустите удаленный агент на компьютере Mac и проверьте, сопряжена ли среда Visual Studio с удаленным агентом. Чтобы запустить удаленный агент, откройте окно приложения "Терминал" и введите `vcremote`. Более подробную информацию см. в разделе [Настройка удаленного агента в Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).
 
    ![Окно терминала Mac, в котором выполняется команда vcremote](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
 
@@ -157,19 +157,19 @@ ms.locfileid: "71079270"
 
 1. В Visual Studio в раскрывающемся списке **Платформы решения** выберите платформу решения, соответствующую процессору вашего устройства, если такая платформа еще не выбрана. В этом примере используется процессор **ARM64**.
 
-   ![Установка платформы решения для ARM64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
+   ![Установка ARM64 в качестве платформы решения](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
 
 1. В обозревателе решений откройте контекстное меню проекта MyOpenGLESApp.iOS.Application и выберите **Выгрузить проект**, чтобы выгрузить проект.
 
 1. Снова откройте контекстное меню выгруженного проекта MyOpenGLESApp.iOS.Application и выберите **Edit project.pbxproj** (Изменить project.pbxproj), чтобы изменить файл проекта. В файле `project.pbxproj` найдите атрибут `buildSettings` и добавьте `DEVELOPMENT_TEAM`, используя свой идентификатор Apple Team ID. На следующем снимке экрана показан пример значения `123456ABC` для идентификатора Apple Team ID. Можно найти значение идентификатора Apple Team ID в Xcode. Перейдите к разделу **параметров сборки** и наведите указатель на имя группы разработки, чтобы отобразилась подсказка. В подсказке будет указан идентификатор команды.
 
-   ![Добавление команды разработки](../cross-platform/media/cppmdd-opengles-iosdevelopmentteam.png "CPPMDD_OpenGLES_iOSDevelopmentTeam")
+   ![Установка команды развертывания](../cross-platform/media/cppmdd-opengles-iosdevelopmentteam.png "CPPMDD_OpenGLES_iOSDevelopmentTeam")
 
 1. Закройте файл `project.pbxproj`, откройте контекстное меню выгруженного проекта MyOpenGLESApp.iOS.Application и выберите **Перезагрузить проект**, чтобы перезагрузить проект.
 
 1. Теперь выполните сборку проекта MyOpenGLESApp.iOS.Application. Для этого откройте его контекстное меню и выберите **Сборка**.
 
-   ![Проект сборки приложения iOS](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
+   ![Создание проекта приложения для iOS](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
 
    В окне "Выходные данные" отображаются выходные данные процесса сборки для статической библиотеки iOS и приложения iOS. На компьютере Mac в окне "Терминал", в котором выполняется удаленный агент, отображается команда и действие передачи файлов.
 
@@ -177,7 +177,7 @@ ms.locfileid: "71079270"
 
 1. Выберите свое устройство iOS на панели инструментов, чтобы запустить приложение на устройстве, подключенном к компьютеру Mac. Если приложение не запускается, проверьте, предоставляет ли устройство развернутому приложению разрешение на запуск. Чтобы предоставить это разрешение, последовательно выберите на устройстве **Параметры** > **Общие** > **Управления устройствами**. Выберите учетную запись для разработки приложений, сделайте ее доверенной и проверьте приложение. Попытайтесь еще раз запустить приложение из Visual Studio.
 
-   ![Приложение для iOS на устройстве iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
+   ![iOS-приложение на устройстве iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
 
    После запуска приложения можно задать точки останова и использовать отладчик Visual Studio для проверки локальных значений, стека вызовов и контрольных значений.
 

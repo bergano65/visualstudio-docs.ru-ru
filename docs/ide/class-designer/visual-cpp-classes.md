@@ -1,5 +1,5 @@
 ---
-title: Классы Visual C++ в конструкторе классов
+title: Классы проектирования C++ в конструкторе классов
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975051"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748930"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>Классы Visual C++ в конструкторе классов
+# <a name="c-classes-in-class-designer"></a>Классы проектирования C++ в конструкторе классов
 
 **Конструктор классов** поддерживает классы C++ и визуализирует собственные классы C++ так же, как фигуры классов Visual Basic и C#. Отличие состоит в том, что классы C++ могут обладать отношениями множественного наследования. Фигуру класса можно развернуть, чтобы отобразить дополнительные поля и методы класса, а также свернуть в целях экономии места.
 
@@ -174,7 +174,7 @@ typedef struct
 
 ## <a name="see-also"></a>См. также
 
-- [Работа с кодом на Visual C++](working-with-visual-cpp-code.md)
+- [Работа с кодом C++](working-with-visual-cpp-code.md)
 - [Классы и структуры](/cpp/cpp/classes-and-structs-cpp)
 - [Типы анонимных классов](/cpp/cpp/anonymous-class-types)
 - [Множественное наследование](https://msdn.microsoft.com/library/6td5yws2.aspx)

@@ -1,21 +1,21 @@
 ---
-title: Как выполнить Создание адаптера диагностических данных
+title: Практическое руководство. Создание адаптера диагностических данных
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1940cda15d1ac5515e25b1e1e997f13a32d6e53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950718"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653687"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Как выполнить Создание адаптера диагностических данных
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Практическое руководство. Создание адаптера диагностических данных
 
 Чтобы создать *адаптер диагностических данных*, нужно создать библиотеку классов с помощью Visual Studio и добавить в нее интерфейсы API адаптера диагностических данных, входящие в Visual Studio Enterprise. Любые необходимые данные можно отправить в <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> инфраструктуры в виде потока или файла при обработке событий, возникших во время тестового запуска. Потоки или файлы, отправляемые в объект <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>, при окончании теста сохраняются в виде вложений в результатах теста. При создании ошибки на основе этих результатов теста и при использовании [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] эти файлы также связываются с ошибкой.
 
@@ -32,7 +32,7 @@ ms.locfileid: "62950718"
 
 Далее перечислены некоторые ключевые события, которые можно использовать при создании адаптера диагностических данных. Полный список событий адаптера диагностических данных см. в абстрактном классе <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
-|событие|Описание|
+|событие|ОПИСАНИЕ|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Начало тестового запуска|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Завершение тестового запуска|
@@ -68,7 +68,7 @@ ms.locfileid: "62950718"
 
    3. Нажмите кнопку **ОК**.
 
-4. Добавьте в класс файла следующие выражения с оператором `using`:
+4. Добавьте в класс файла следующие выражения с директивой `using`:
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;

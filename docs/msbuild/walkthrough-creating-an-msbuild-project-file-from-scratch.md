@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445310"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748030"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
 Языки программирования, предназначенные для платформы .NET Framework, используют файлы проекта MSBuild для описания и контроля процесса построения приложения. Если для создания файла проекта MSBuild используется Visual Studio, соответствующий XML добавляется в файл автоматически. Тем не менее, понимание принципов организации XML и способов его изменения, позволяющих контролировать построение, может вам пригодиться.
 
- Сведения о создании файла проекта для проекта C++ см. в разделе [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
+ Сведения о создании файла проекта для проекта C++ см. в разделе [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
  Это пошаговое руководство содержит описание способов создания основного файла с использованием только текстового редактора. Руководство включает следующие шаги.
 
@@ -51,9 +51,9 @@ ms.locfileid: "63445310"
 
 #### <a name="to-create-the-minimal-application"></a>Создание минимального приложения
 
-1. В командной строке перейдите к папке, в которой необходимо создать приложение, например *\Мои документы\\* или *\Рабочий стол\\*.
+1. В командной строке перейдите к папке, в которой необходимо создать приложение, например *\Мои документы\\* или *\Рабочий стол\\* .
 
-2. Введите **md HelloWorld**, чтобы создать подпапку *\HelloWorld\\*.
+2. Введите **md HelloWorld**, чтобы создать подпапку *\HelloWorld\\* .
 
 3. Введите **cd HelloWorld**, чтобы изменить новую папку.
 
@@ -161,7 +161,7 @@ ms.locfileid: "63445310"
 
 #### <a name="to-add-msbuild-to-your-path"></a>Добавление MSBuild к пути
 
-- Начиная с Visual Studio 2013, *MSBuild.exe* можно найти в папке MSBuild (*%ProgramFiles%\MSBuild* в 32-разрядной операционной системе или *%ProgramFiles(x86)%\MSBuild* в 64-разрядной операционной системе).
+- Начиная с Visual Studio 2013, *MSBuild.exe* можно найти в папке MSBuild ( *%ProgramFiles%\MSBuild* в 32-разрядной операционной системе или *%ProgramFiles(x86)%\MSBuild* в 64-разрядной операционной системе).
 
      В командной строке введите **set PATH= %PATH %; %ProgramFiles %\MSBuild** или **set PATH= %PATH %; %ProgramFiles(x86) %\MSBuild**.
 
@@ -248,7 +248,7 @@ ms.locfileid: "63445310"
 >
 > `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
 >
-> лучше, чем 
+> лучше, чем
 >
 > `<OutputPath>Bin</OutputPath>`
 >
@@ -261,7 +261,7 @@ ms.locfileid: "63445310"
 
 1. В командной строке введите **msbuild helloworld.csproj -t:Build**.
 
-     После этого программа создаст папку *\Bin\\*, вызовет компилятор Visual C# для создания приложения *MSBuildSample* и разместит его в папку *\Bin\\*.
+     После этого программа создаст папку *\Bin\\* , вызовет компилятор Visual C# для создания приложения *MSBuildSample* и разместит его в папку *\Bin\\* .
 
 2. Чтобы убедиться, что папка *\Bin\\* создана и содержит приложение *MSBuildSample*, введите **dir Bin**.
 
@@ -360,7 +360,7 @@ ms.locfileid: "63445310"
 
      Чтобы убедиться, что в папке *\Bin\\* появилось приложение *MSBuildSample*, введите **dir Bin**.
 
-## <a name="build-incrementally"></a>Последовательная сборка
+## <a name="build-incrementally"></a>Инкрементная сборка
  MSBuild можно настроить таким образом, чтобы цель строилась только в случае изменения исходного файла или целевых файлов, от которых зависит цель. MSBuild определяет факт изменения файла по отметке времени.
 
 #### <a name="to-build-incrementally"></a>Последовательное построение
@@ -400,7 +400,7 @@ ms.locfileid: "63445310"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание
+### <a name="description"></a>ОПИСАНИЕ
  В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] и записывает сообщение, содержащее имя файла вывода.
 
 ### <a name="code"></a>Код
@@ -438,7 +438,7 @@ ms.locfileid: "63445310"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание
+### <a name="description"></a>ОПИСАНИЕ
  В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и записывает сообщение, содержащее имя файла вывода.
 
 ### <a name="code"></a>Код

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f51489b888a0b85b53856e413eb4704d24161b6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925723"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777725"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 
@@ -100,7 +100,7 @@ ms.locfileid: "68925723"
 ## <a name="Support"></a> Ресурсы поддержки
  Если главный компьютер отвечает требованиям к системе и возникают проблемы, не описанные в этом руководстве по устранению неполадок:
 
-- задайте вопрос на сайте StackOverflow, используя теги [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) и visual-studio;
+- задайте вопрос на сайте StackOverflow, используя теги [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) и visual-studio;
 
 - сообщите о проблеме с помощью средства отправки одобрения в Visual Studio или в диспетчере эмуляторов.
 

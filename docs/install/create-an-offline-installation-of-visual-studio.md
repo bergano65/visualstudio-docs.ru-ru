@@ -1,7 +1,7 @@
 ---
 title: Создание автономной установки
 description: Узнайте, как установить Visual Studio в автономном режиме в случае ненадежного подключения к Интернету или низкой пропускной способности.
-ms.date: 10/11/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381096"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789988"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
 
@@ -164,9 +164,9 @@ Visual Studio 2019 поддерживает различные конфигур
 > При запуске установки из локального кэша используются локальные версии каждого из этих файлов. Но если во время установки вы выберете компоненты, которые отсутствуют в кэше, программа установки попытается загрузить их из Интернета.
 
 ::: moniker range="vs-2019"
-
-> Если при установке версии 16.1 и выше или обновлении до них вы получаете сообщение об ошибке "Невозможно найти продукт, соответствующий следующим параметрам" в автономных системах, используйте параметр --noweb с версией 16.3.5 или более поздней версией.
-
+> [!IMPORTANT]
+> Если при установке в автономном режиме появляется сообщение об ошибке "Невозможно найти продукт, соответствующий следующим параметрам", убедитесь, что вы используете параметр — `--noweb` с версией 16.3.5 или более поздней.
+>
 ::: moniker-end
 
 Чтобы установить только те файлы, которые вы уже скачали, все параметры командной строки должны совпадать с теми, которые вы использовали для создания макета кэша. Предположим, что вы создали макет кэша с помощью следующей команды:
@@ -180,6 +180,8 @@ vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.Mana
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+Дополнительные примеры использования [параметров командной строки](use-command-line-parameters-to-install-visual-studio.md) см. в статье [Примеры параметров командной строки для установки Visual Studio](command-line-parameter-examples.md). 
 
 > [!NOTE]
 > Если возникает ошибка, указывающая на недопустимую подпись, вам нужно установить обновленные сертификаты. Откройте папку "Сертификаты" в автономном кэше. Дважды щелкните каждый файл сертификата и выполните инструкции в мастере диспетчера сертификатов. Если он предложит ввести пароль, оставьте это поле пустым.
