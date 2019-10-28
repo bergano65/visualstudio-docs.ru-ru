@@ -104,13 +104,13 @@ ms.locfileid: "71211330"
 
 ### <a name="test-explorer"></a>Обозреватель тестов
 
-**Новые возможности в 16.2**: Мы обновили обозреватель тестов и улучшили работу с крупными наборами тестов, упростили фильтрацию, упростили обнаружение команд, добавили представления списка воспроизведения со вкладками и настраиваемые столбцы, с помощью которых можно настраивать отображение информации о тестах.
+**Новые возможности в 16.2**. Мы обновили обозреватель тестов и улучшили работу с крупными наборами тестов, упростили фильтрацию, усовершенствовали обнаружение команд, добавили представления списка воспроизведения со вкладками, а также настраиваемые столбцы для отображения информации о тестах.
 
    ![Снимок экрана, показывающий улучшения пользовательского интерфейса в обозревателе тестов](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**Новые возможности в версии 16.3** Мы включили поддержку .NET Core 3.0. Это кроссплатформенное решение с открытым кодом полностью поддерживается корпорацией Майкрософт. 
+**Новые возможности в версии 16.3**. Мы включили поддержку .NET Core 3.0. Это кроссплатформенное решение с открытым кодом полностью поддерживается корпорацией Майкрософт.
 
 Дополнительные сведения см. в записи блога [Объявление о выпуске .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
@@ -122,7 +122,7 @@ ms.locfileid: "71211330"
 
 ### <a name="cloud-first-workflow"></a>Рабочий процесс на базе облака
 
-Первое, что вы заметите при открытии Visual Studio 2019 — новое окно запуска.
+Первое, что вы заметите при открытии Visual Studio 2019, — новое окно запуска.
 
    ![Снимок экрана: новое окно запуска в Visual Studio 2019](media/vs-2019/start-window-dark.png)
 
@@ -142,7 +142,7 @@ ms.locfileid: "71211330"
 
 ![Анимация: возможности совместной работы Live Share в Visual Studio 2019](media/vs-2019/live-share.gif)
 
-Дополнительные сведения см. в записях блога [Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) и [Live Share теперь включен в состав Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/).
+Дополнительные сведения см. в статьях [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения) и [Live Share now included with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) (Live Share теперь входит в состав Visual Studio 2019).
 
 ### <a name="integrated-code-reviews"></a>Интегрированная проверка кода
 
@@ -178,7 +178,7 @@ ms.locfileid: "71211330"
 
    ![Новое окно контрольных значений и функция форматирования значений в Visual Studio 2019](media/search-watch-window.png)
 
-Дополнительные сведения см. в записи блога [Улучшения в Visual Studio 2019: поиск объектов и свойств в окнах "Контрольные значения", "Видимые" и "Локальные"](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+Дополнительные сведения см. в статье [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Улучшения в Visual Studio 2019: поиск объектов и свойств в окнах "Контрольные значения", "Видимые" и "Локальные").
 
 ### <a name="snapshot-debugger"></a>Отладчик моментальных снимков
 
