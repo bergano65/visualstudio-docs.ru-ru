@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461501"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748877"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Управление подписыванием сборок и манифестов
 
@@ -29,7 +29,7 @@ ms.locfileid: "68461501"
 
 Сведения о подписи сборок в проектах Visual Basic и C# см. в разделе [Создание и использование сборок со строгими именами](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Сведения о подписи сборок в проектах Visual C++ см. в разделе [Сборки со строгими именами (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Сведения о подписи сборок в проектах C++ см. в разделе [Сборки со строгими именами (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > Подписывание с использованием строгих имен не защищает от реконструирования сборки. Сведения о защите от реконструирования см. в статье о программе [Dotfuscator Community](dotfuscator/index.md).

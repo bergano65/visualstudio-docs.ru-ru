@@ -1,6 +1,6 @@
 ---
 title: Шаг 1. Создание проекта и добавление в форму элементов управления Label
-ms.date: 05/31/2019
+ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b52851ce3e344293faede243413fc796e9882196
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119054"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516681"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Шаг 1. Создание проекта и добавление в форму элементов управления Label
 
@@ -49,11 +49,11 @@ ms.locfileid: "71119054"
 
    ![Просмотр окна "Создание проекта"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. В поле поиска окна **Создание проекта** введите *Windows Forms*.
+1. В поле поиска окна **Создание проекта** введите *Windows Forms*. Затем в списке **Тип проекта** выберите **Рабочий стол**.
 
-1. Выберите шаблон **Приложение Windows Forms (.NET Framework)** и нажмите кнопку **Далее**.
+   Применив фильтр **Тип проекта**, выберите шаблон **Приложение Windows Forms (.NET Framework)** для C# или Visual Basic и нажмите кнопку **Далее**.
 
-   ![Выбор шаблона Visual Basic для приложения Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Выбор шаблона Visual Basic или C#для приложения Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Если шаблон **Приложение Windows Forms (.NET Framework)** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.

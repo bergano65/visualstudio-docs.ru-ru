@@ -1,6 +1,6 @@
 ---
 title: Учебник 3. Создание игры "Подбери пару!"
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,20 +9,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fafd46561b6a3628989b675b14c493b60da6fe
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 5161f81aaf3edf654a5979f6226449bc52604167
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118701"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516577"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Учебник 3. Создание игры "Подбери пару!"
 
-В этом учебном руководстве вы создадите игру "Подбери пару!", в которой игрок должен подобрать пару скрытым значкам. Вы научитесь:
+В этом учебном руководстве вы создадите игру "Подбери пару!", в которой игрок должен подобрать пару скрытым значкам.
+
+> [!NOTE]
+> В этом учебнике приведены примеры как на C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
+
+В этом учебнике выполняются перечисленные ниже задачи.
 
 - сохранять объекты, например значки, в объекте <xref:System.Collections.Generic.List%601>;
 
-- использовать цикл `foreach` в Visual C# или цикл `For Each` в Visual Basic для перебора элементов в списке;
+- использовать цикл `foreach` в C# или цикл `For Each` в Visual Basic для перебора элементов в списке;
 
 - отслеживать состояние формы с помощью ссылочных переменных;
 
@@ -30,20 +35,11 @@ ms.locfileid: "71118701"
 
 - создавать таймер, который отсчитывает время и вызывает событие ровно один раз после запуска.
 
-После прохождения этого учебника ваша программа будет выглядеть так, как показано на следующем рисунке:
+По завершении приложение должно выглядеть следующим образом.
 
 ![Игра, которую вы создадите в этом учебном руководстве](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>Ссылки на руководства
-
-Скачать готовую версию примера можно на странице с [полным примером руководства по созданию игры](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
-
-> [!NOTE]
-> В этом учебном руководстве показаны примеры, как на Visual C#, так и на Visual Basic, поэтому обратите внимание на информацию, которая относится к используемому вами языку программирования.
-
-Если у вас возникли затруднения или вопросы по программированию, попробуйте задать вопрос на одном из форумов MSDN. См. [форум по Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) и [форум по Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Кроме того, вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на Visual Basic см. в руководстве [Основы Visual Basic. Разработка для начинающих](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на языке Visual C# см. в разделе [Основы C#. Разработка для начинающих](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
-
-## <a name="related-topics"></a>См. также
 
 |Заголовок|ОПИСАНИЕ|
 |-----------|-----------------|
@@ -56,3 +52,15 @@ ms.locfileid: "71118701"
 |[Шаг 7. Отмена исчезновения пар значков](../ide/step-7-keep-pairs-visible.md)|Отмена исчезновения пар значков, если выбрана одинаковая пара.|
 |[Шаг 8. Добавление метода для проверки того, выиграл ли игрок](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Добавление метода `CheckForWinner()` для проверки, выиграл ли игрок.|
 |[Шаг 9. Изучение других возможностей](../ide/step-9-try-other-features.md)|Изучение других функций, таких как изменение значков и цветов, добавление сетки и добавление звуков. Увеличение игрового поля и изменение настроек таймера.|
+
+Кроме того, вы можете найти отличные бесплатные учебные видеоматериалы. Дополнительные сведения о программировании на языке C# см. в разделе [Основы C#. Разработка для начинающих](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Дополнительные сведения о программировании на Visual Basic см. в руководстве [Основы Visual Basic. Разработка для начинающих](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
+
+## <a name="next-steps"></a>Следующие шаги
+
+Начните работу с руководством с **[шага 1: Создание проекта и добавление таблицы в форму](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
+
+## <a name="see-also"></a>См. также
+
+* [Другие руководства по C#](/visualstudio/get-started/csharp/)
+* [Руководства по Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Руководства по C++](/cpp/get-started/tutorial-console-cpp)

@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746867"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747966"
 ---
 # <a name="create-solutions-and-projects"></a>Создание решений и проектов
 
@@ -53,7 +53,7 @@ ms.locfileid: "66746867"
 1. В мастере перейдите к месту хранения файлов и введите имя нового проекта в поле **Имя**. По завершении нажмите кнопку **Готово**.
 
 > [!NOTE]
-> Этот вариант лучше всего подходит для относительно простой коллекции файлов. Сейчас поддерживаются только типы проектов Visual C++, Apache Cordova, Visual Basic и C#.
+> Этот вариант лучше всего подходит для относительно простой коллекции файлов. Сейчас поддерживаются только типы проектов C++, Apache Cordova, Visual Basic и C#.
 
 ## <a name="add-files-to-a-solution"></a>Добавление файлов в решение
 

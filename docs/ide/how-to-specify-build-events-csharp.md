@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483708"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656590"
 ---
 # <a name="how-to-specify-build-events-c"></a>Практическое руководство. Указание событий сборки (C#)
 
@@ -72,7 +72,7 @@ ms.locfileid: "68483708"
 
 1. Создайте проект **Консольное приложение** для команды. Назовите проект **ChangeOSVersionCS**.
 
-2. В *Program.cs* добавьте следующую строку для других операторов `using` в верхней части файла:
+2. В *Program.cs* добавьте следующую строку для других директив `using` в верхней части файла:
 
    ```csharp
    using System.Xml;

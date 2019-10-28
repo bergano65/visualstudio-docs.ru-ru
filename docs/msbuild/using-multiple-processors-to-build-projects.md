@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af67aa3961b92b55abfdcf7a811daef284ca523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 065b11b689189f5ad833ce642cfcfc94da06f83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970839"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747191"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Использование нескольких процессоров при построении проектов
 В MSBuild реализована поддержка систем с несколькими процессорами или многоядерными процессорами. Для каждого доступного процессора создается отдельный процесс сборки. Например, если в системе есть четыре процессора, создается четыре процесса сборки. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может обрабатывать эти сборки одновременно, что позволяет сократить продолжительность операции. При этом параллельная сборка несколько изменяет процедуру выполнения процессов сборки. Такие изменения и рассматриваются в этой статье.
@@ -30,8 +30,8 @@ ms.locfileid: "62970839"
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Ошибки и исключения при параллельной сборке
  В сравнении с непараллельной сборкой в ходе параллельной ошибки и исключения могут появляться в другие моменты времени. Если сборка одного проекта завершится неудачей, сборка других проектов продолжится. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] не останавливает сборку проектов, которые создаются параллельно с теми, сборка которых не удалась. Сборка других проектов будет продолжаться, пока не завершится успехом или ошибкой. Однако, если включено свойство <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>, сборки не останавливаются даже при появлении ошибок.
 
-## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Файлы решений (SLN-файлы) и проектов (VCPROJ-файлы) Visual C++
- [Задача MSBuild](../msbuild/msbuild-task.md) может принимать файлы решений (*SLN-файлы*) и проектов (*VCPROJ-файлы*) [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Для проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] вызывается VCWrapperProject, а затем создается внутренний проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Для решений [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] вызывается SolutionWrapperProject, а затем создается внутренний проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. В обоих случаях полученный проект обрабатывается так же, как любой другой проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+## <a name="c-project-vcxproj-and-solution-sln-files"></a>Файлы решений (SLN-файлы) и проектов (VCPROJ-файлы) C++
+ [Задача MSBuild](../msbuild/msbuild-task.md) может принимать файлы решений (*SLN-файлы*) и проектов (*VCХPROJ-файлы*) [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Для проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] вызывается VCWrapperProject, а затем создается внутренний проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Для решений [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] вызывается SolutionWrapperProject, а затем создается внутренний проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. В обоих случаях полученный проект обрабатывается так же, как любой другой проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 ## <a name="multi-process-execution"></a>Выполнение нескольких процессов
  Почти для всех действий, связанных со сборкой важно, чтобы текущий каталог оставался неизменным на протяжении всего процесса. Это позволяет избежать ошибок, связанных с правильностью путей. Как следствие, проекты нельзя выполнять в разных потоках [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], так как они будут создавать несколько каталогов.

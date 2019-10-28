@@ -13,19 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a670ec4b5b6689c68820b37b20a4e1a942dc3bd
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289612"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621542"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждому элементу управления Label случайного значка
+
 Если значки оказываются в одной и той же ячейке каждую игру, игра становится слишком простой. Чтобы избежать этого, назначайте значки элементам управления Label случайным образом, используя для этого метод `AssignIconsToSquares()`.
 
 ## <a name="to-assign-a-random-icon-to-each-label"></a>Назначение каждой метке случайного значка
 
-1. Перед добавлением следующего кода разберитесь в принципе его работы. В C# есть новое ключевое слово `foreach`, а в Visual Basic — `For Each`. (Одна из строк закомментирована по причине, описанной в конце этой процедуры.)
+1. Перед добавлением следующего кода разберитесь в принципе его работы. В C# есть новое ключевое слово `foreach`, а в Visual Basic — `For Each`. (Одна из строк закомментирована по причине, описанной в конце этой процедуры.)
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
@@ -35,7 +36,7 @@ ms.locfileid: "72289612"
 
 2. Добавьте метод `AssignIconsToSquares()`, как показано в предыдущем шаге. Вы можете поместить его сразу же после кода, добавленного в разделе [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-     Как было сказано выше, в методе `AssignIconsToSquares()` имеется определенное нововведение: цикл `foreach` в Visual C# и `For Each` в Visual Basic. Цикл `For Each` можно использовать в любое время для выполнения одного и того же действия несколько раз. В этом случае требуется выполнять одни и те же операторы для каждого элемента управления Label в <xref:System.Windows.Forms.TableLayoutPanel>, как показано в следующем коде. Первая строка создает переменную с именем `control`, которая хранит каждый элемент управления по одному, пока у этого элемента управления есть инструкции в цикле, выполняемом для него.
+     Как было сказано выше, в методе `AssignIconsToSquares()` имеется определенное нововведение: цикл `foreach` в C# и `For Each` в Visual Basic. Цикл `For Each` можно использовать в любое время для выполнения одного и того же действия несколько раз. В этом случае требуется выполнять одни и те же операторы для каждого элемента управления Label в <xref:System.Windows.Forms.TableLayoutPanel>, как показано в следующем коде. Первая строка создает переменную с именем `control`, которая хранит каждый элемент управления по одному, пока у этого элемента управления есть инструкции в цикле, выполняемом для него.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
@@ -54,7 +55,7 @@ ms.locfileid: "72289612"
 
      Помните, если вы не уверены, что делает какая-либо часть кода, можно навести указатель мыши на элемент кода и посмотреть отображаемую подсказку. Можно также выполнять каждую строку кода пошагово после запуска программы, воспользовавшись отладчиком Visual Studio. Дополнительные сведения см. в руководствах по [началу работы с отладчиком в Visual Studio](https://msdn.microsoft.com/vstudio/ee672313.aspx) и [навигации по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md).
 
-3. Чтобы быстро заполнить игровое поле значками, необходимо вызвать метод `AssignIconsToSquares()` сразу после запуска программы. При написании кода на языке Visual C# добавьте оператор после вызова метода `InitializeComponent()` в **Form1**_constructor_. В этом случае форма будет вызывать новый метод для ее настройки перед отображением. Конструкторы вызываются при создании нового объекта, такого как класс или структура. Дополнительные сведения см. в разделах [Конструкторы (руководство по программированию на C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) и [Использование конструкторов и деструкторов в Visual Basic](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)).
+3. Чтобы быстро заполнить игровое поле значками, необходимо вызвать метод `AssignIconsToSquares()` сразу после запуска программы. При написании кода на языке C# добавьте оператор после вызова метода `InitializeComponent()` в **Form1**_constructor_. В этом случае форма будет вызывать новый метод для ее настройки перед отображением. Конструкторы вызываются при создании нового объекта, такого как класс или структура. Дополнительные сведения см. в разделах [Конструкторы (руководство по программированию на C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) и [Использование конструкторов и деструкторов в Visual Basic](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)).
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -70,7 +71,8 @@ ms.locfileid: "72289612"
 
 5. Закройте программу, а затем снова запустите ее. Обратите внимание, что теперь каждой метке назначены другие значки, как показано на следующем рисунке.
 
-     ![Игра "Подбери пару!" со случайными значками](../ide/media/express_tut4step3.png) Игра "Подбери пару!" со случайными значками
+     ![Игра "Подбери пару!" со случайными значками](../ide/media/express_tut4step3.png)<br/>
+*Игра "Подбери пару!" со случайными значками*
 
      Значки видимы, поскольку они не были скрыты. Чтобы скрыть их от игрока, можно задать для свойства **ForeColor** каждого элемента управления Label тот же цвет, что и у свойства **BackColor**.
 
@@ -86,6 +88,6 @@ ms.locfileid: "72289612"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий раздел руководства: [Шаг 4. Добавление обработчика событий Click к каждому элементу управления Label](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Следующий раздел руководства: **[Шаг 4. Добавление обработчика событий Click к каждому элементу управления Label](../ide/step-4-add-a-click-event-handler-to-each-label.md)** .
 
 - Предыдущий раздел руководства: [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).

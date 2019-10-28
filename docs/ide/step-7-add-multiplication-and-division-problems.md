@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02827ebd5617485f180f4a16652b1cc841c41f4
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314220"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647470"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Шаг 7. Добавление задач на умножение и деление
 
@@ -48,7 +48,7 @@ ms.locfileid: "72314220"
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     Так как простого способа ввести знак умножения (×) и знак деления (÷) с клавиатуры нет, в языках Visual C# и Visual Basic используется знак звездочка (*) для умножения и знак косой черты (/) для деления.
+     Так как простого способа ввести знак умножения (×) и знак деления (÷) с клавиатуры нет, в языках C# и Visual Basic используется знак звездочка (*) для умножения и знак косой черты (/) для деления.
 
 4. Измените последнюю часть обработчика событий таймера <xref:System.Windows.Forms.Timer.Tick> так, чтобы по истечении времени этот обработчик событий выдавал правильный ответ.
 
@@ -64,6 +64,6 @@ ms.locfileid: "72314220"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий раздел руководства: **[Шаг 8. Настройка головоломки](../ide/step-8-customize-the-quiz.md)** .
+- Следующий раздел руководства: **[Шаг 8. Настройка теста](../ide/step-8-customize-the-quiz.md)** .
 
 - Предыдущий раздел руководства: [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).
