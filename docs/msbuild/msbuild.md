@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bf80e9df7910b0b581ae956978fb2020542ae96f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823503"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747266"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.
 
  Visual Studio использует MSBuild для загрузки и сборки управляемых проектов. Файлы проектов в Visual Studio (с расширением *CSPROJ*, *VBPROJ*, *VCXPROJ*) содержат код XML MSBuild, который выполняется при создании проекта с помощью интегрированной среды разработки. Проекты Visual Studio импортируют все необходимые параметры и процессы сборки для выполнения стандартной работы по разработке, но их можно расширять и изменять в Visual Studio или в редакторе XML.
 
- Сведения об MSBuild для C++ см. в разделе [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
+ Сведения об MSBuild для C++ см. в разделе [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
  В следующих примерах показаны случаи, когда сборки можно запускать с помощью командной строки MSBuild, а не интегрированной среды разработки Visual Studio.
 
