@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668230"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985036"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
 
@@ -59,7 +59,7 @@ ms.locfileid: "72668230"
 
   Пример
 
-- [Видео. Отладка с помощью отладчика карт кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Видео. Отладка с помощью отладчика карт кода (канал 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [Сопоставьте стек вызовов](#MapStack)
 
@@ -178,7 +178,7 @@ ms.locfileid: "72668230"
 
 - **Разделы справки отключить автоматическое добавление новых стеков вызовов?**
 
-   Выберите ![Button &#45; отображать стек вызовов на карте кода автоматически ](../debugger/media/debuggermap_automaticupdateicon.gif) на панели инструментов Map. Чтобы вручную добавить текущий стек вызовов в карту, нажмите клавиши **Ctrl**  + **SHIFT**  +  **`** .
+   Нажмите кнопку &#45; ![отображать стек вызовов на карте кода автоматически](../debugger/media/debuggermap_automaticupdateicon.gif)на панели инструментов Map. Чтобы вручную добавить текущий стек вызовов в карту, нажмите клавиши **Ctrl**  + **SHIFT**  +  **`** .
 
    Эта схема будет продолжать выделять существующие стеки вызовов на карте во время отладки.
 

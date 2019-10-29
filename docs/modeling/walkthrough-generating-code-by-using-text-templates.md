@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666935"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984410"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Пошаговое руководство. Формирование кода с помощью текстовых шаблонов
 
@@ -28,7 +28,7 @@ ms.locfileid: "72666935"
 В данном примере проекта шаблон считывает пример файла XML и создает классы, соответствующие каждому типу узла. В написанном вручную коде эти классы можно использовать для перехода по XML-файлу. Можно также запустить приложение для любых других файлов, использующих те же типы узлов. Пример XML-файла служит для предоставления примеров всех типов узлов, с которыми должно работать ваше приложение.
 
 > [!NOTE]
-> Приложение [XSD. exe](http://go.microsoft.com/fwlink/?LinkId=178765), которое входит в состав Visual Studio, может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
+> Приложение [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), которое входит в состав Visual Studio, может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
 
 Ниже приведен пример файла:
 

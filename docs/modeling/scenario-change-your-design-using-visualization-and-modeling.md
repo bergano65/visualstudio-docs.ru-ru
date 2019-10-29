@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927b1105d0ab1234f63bd08a6f4a5ac0c078bb5e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d332050538ca10d133a69f61a914338484fe799
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670823"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986378"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: изменение проекта с помощью визуализации и моделирования
 
@@ -240,7 +240,7 @@ ms.locfileid: "72670823"
 
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
 
-- [Использование управления версиями](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [Использование управления версиями](/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
 
@@ -478,7 +478,7 @@ ms.locfileid: "72670823"
 
 |**Категория**|**Links**|
 |-|-|
-|**Форумы**|- [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Форумы**|- [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>См. также
 

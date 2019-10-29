@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aca6c91724e26059011c1044c9a2d501c7995bc5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255830"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986171"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Привязка данных к элементам управления в решениях Office
   Вы можете привязать элементы управления Windows Forms и *элементы управления ведущего приложения* в документе Microsoft Office Word или листе Microsoft Office Excel к источнику данных, чтобы эти элементы управления автоматически отображали данные. Можно привязывать данные к элементам управления в проектах уровня документа и уровня приложения.
@@ -33,8 +33,6 @@ ms.locfileid: "71255830"
  Элементы управления ведущего приложения расширяют объекты, которые находятся в объектных моделях Word и Excel, такие как элементы управления контентом в Word и именованные диапазоны в Excel. Дополнительные сведения см. в разделе [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md).
 
  Элементы управления Windows Forms и элементы управления ведущего приложения используют модель привязки данных Windows Forms, которая поддерживает как *простую привязку данных* , так и *сложную привязку данных* к источникам данных, например к таблицам и наборам данных. Полные сведения о модели привязки данных в Windows Forms см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
-
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Использовать данные базы данных в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="simple-data-binding"></a>Простая привязка данных
  Простая привязка данных присутствует, когда свойство элемента управления привязывается к одному элементу данных, например к значению в таблице данных. Например, элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> имеет свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> , которое можно привязать к полю в наборе данных. При изменении поля в наборе данных также изменяется значение в именованном диапазоне. Все элементы управления ведущего приложения, за исключением элемента управления <xref:Microsoft.Office.Tools.Word.XMLNodes> , поддерживают простую привязку данных. Элемент управления <xref:Microsoft.Office.Tools.Word.XMLNodes> представляет собой коллекцию, и поэтому он не поддерживает привязку данных.
@@ -46,7 +44,7 @@ ms.locfileid: "71255830"
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
 
- Пошаговые руководства, демонстрирующие простое связывание [данных, см. в разделе Пошаговое руководство. Простая привязка данных в проекте](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) уровня документа для проекта уровня документа и [пошаговое руководство. Простая привязка данных в проекте](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) надстройки VSTO для проекта надстройки VSTO.
+ Пошаговые руководства, демонстрирующие простую привязку данных, см. в разделе [Пошаговое руководство. Простая привязка данных в проекте уровня](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) документа для проекта уровня документа и [Пошаговое руководство. Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) для проекта надстройки VSTO.
 
 ## <a name="complex-data-binding"></a>Сложная привязка данных
  Сложная привязка данных присутствует, когда свойство элемента управления привязывается к нескольким элементам данных, например к нескольким столбцам в таблице данных. Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> для Excel — единственный элемент управления ведущего приложения, который поддерживает сложную привязку данных. Существует также множество элементов управления Windows Forms, поддерживающих сложную привязку данных, например элемент управления <xref:System.Windows.Forms.DataGridView> .
@@ -58,7 +56,7 @@ ms.locfileid: "71255830"
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
 
- Пошаговые руководства по использованию сложной привязки данных см [. в разделе Пошаговое руководство. Сложная привязка данных в проекте](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) уровня документа для проекта уровня документа и [пошаговое руководство. Сложная привязка данных в проекте](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) надстройки VSTO для проекта надстройки VSTO.
+ Пошаговые руководства, демонстрирующие сложную привязку данных, см. в разделе [Пошаговое руководство. сложная привязка данных в проекте уровня](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) документа для проекта уровня документа и [Пошаговое руководство. сложная привязка данных в проекте надстройки VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) для проекта надстройки VSTO.
 
 ## <a name="display-data-in-documents-and-workbooks"></a>Отображение данных в документах и книгах
  В проектах уровня документа с помощью окна **Источники данных** можно легко добавлять элементы управления с привязкой к данным в документы или книги, так же, как это делается для форм Windows Forms. Дополнительные сведения об использовании окна " **Источники данных** " см. [в разделе Привязка Windows Forms элементов управления к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) и [Добавление новых источников данных](../data-tools/add-new-data-sources.md).
@@ -73,22 +71,22 @@ ms.locfileid: "71255830"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Привязка данных в проектах уровня документа во время разработки
  В следующих разделах содержатся примеры привязки данных во время разработки.
 
-- [Практическое руководство. Заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Как заполнить листы данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
-- [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Как заполнить документы данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
-- [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Как заполнить документы данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
-- [Практическое руководство. Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Как заполнить документы данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)
 
-- [Практическое руководство. Прокрутка записей базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Пошаговое руководство. Прокрутка записей базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Привязка данных в проектах надстроек VSTO
  В проектах надстроек VSTO вы можете добавлять элементы управления только во время выполнения. В следующих разделах содержатся примеры привязки данных во время выполнения.
 
-- [Пошаговое руководство: Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Пошаговое руководство. Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
-- [Пошаговое руководство: Сложная привязка данных в проекте надстройки VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Пошаговое руководство. сложная привязка данных в проекте надстройки VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Обновление данных, привязанных к элементам управления ведущего приложения
  Привязка данных между источником данных и элементом управления ведущего приложения подразумевает два способа обновления данных. В простой привязке данных изменения в источнике данных автоматически отражаются в элементе управления ведущего приложения, но при изменениях в элементе управления ведущего приложения необходимо явно вызывать обновление источника данных. Причина заключается в том, что в некоторых случаях изменения в одном поле с привязкой к данным не принимаются, пока не будут дополнены изменениями в другом поле с привязкой к данным. Например, у вас может быть два поля, одно для возраста, а другое для стажа. Стаж не может превышать возраст. Пользователь не может изменить возраст с 50 на 25, а затем изменить стаж с 30 на 10, если он делает эти изменения в одно и то же время. Для разрешения этой проблемы поля с простой привязкой данных не обновляются, пока обновления не будут явно отправлены в коде.
@@ -97,11 +95,11 @@ ms.locfileid: "71255830"
 
  Вам не нужно явно обновлять источник данных в памяти, если выполняется сложная привязка данных с помощью элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> . В этом случае изменения автоматически отправляются в источник данных в памяти без дополнительного кода.
 
- Дополнительные сведения см. в разделе [Практическое руководство. Обновление источника данных с помощью данных из элемента управления](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)ведущего приложения.
+ Дополнительные сведения см. в разделе [инструкции. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>См. также
 - [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
-- [Практическое руководство. Создание элемента управления с простой привязкой в форме Windows Forms](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
+- [Пошаговое руководство. Создание элемента управления с простой привязкой в форме Windows Forms](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 - [Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)

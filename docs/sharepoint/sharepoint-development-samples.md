@@ -1,5 +1,5 @@
 ---
-title: Примеры разработки решений SharePoint | Документация Майкрософт
+title: Примеры разработки для SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,19 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1719656c475dc6ee78de27f068baaf77c8b2a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a52dbb77145d1389995813d89384966fea35cec
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971418"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984159"
 ---
-# <a name="sharepoint-development-samples"></a>Примеры разработки решений SharePoint
-  Visual Studio можно использовать, чтобы скачать и установить образцы приложений SharePoint из [коллекции кода MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).
+# <a name="sharepoint-development-samples"></a>Примеры разработки для SharePoint
+  Для загрузки и установки образцов приложений SharePoint из [коллекции кода MSDN](https://code.msdn.microsoft.com/)можно использовать Visual Studio.
 
- Каждый пример можно загрузить по отдельности. Можно также загрузить пакет примеров, какие связанные примеры, которые используют общую технологию или статьи. Пользователь получит уведомление при публикации изменений исходного кода для любого ранее загруженного им примера.
+ Каждый пример можно скачать по отдельности. Вы также можете скачать пример пакета, который содержит связанные примеры, которые используют эту технологию или статью. Пользователь получит уведомление при публикации изменений исходного кода для любого ранее загруженного им примера.
 
 ## <a name="see-also"></a>См. также
 - [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)
-- [Примеры Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150928)
+- [Примеры Visual Studio](https://code.msdn.microsoft.com/vstudio)
 - [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление элементов управления Windows Forms в документы Office
+title: Руководство. Добавление элементов управления Windows Forms в документы Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a745794bb23902872f4b09c39eb8a3b3c1706137
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c4484d07c5cfb77a5fa17460859972bc58b219fc
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255871"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985994"
 ---
-# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Практическое руководство. Добавление элементов управления Windows Forms в документы Office
-  Вы можете добавить элементы управления Windows Forms в документы Microsoft Office Word и Microsoft Office Excel во время разработки в проектах уровня документа. Во время выполнения можно добавить элементы управления в настройки уровня документа и надстройки VSTO. Например, можно добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> на лист, чтобы пользователи могли выбрать из списка параметров.
+# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Добавление Windows Forms элементов управления в документы Office
+  Вы можете добавить элементы управления Windows Forms в документы Microsoft Office Word и Microsoft Office Excel во время разработки в проектах уровня документа. Во время выполнения можно добавлять элементы управления в настройки уровня документа и в надстройки VSTO. Например, можно добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> на лист, чтобы пользователи могли выбирать из списка параметров.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -35,8 +35,6 @@ ms.locfileid: "71255871"
 
 - [Добавление элементов управления во время выполнения в надстройках VSTO](#runtimeaddin)
 
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Добавить элементы управления в область документа во время выполнения? ](http://go.microsoft.com/fwlink/?LinkId=132782).
-
 ## <a name="designtime"></a>Добавление элементов управления во время разработки
  Вы можете добавить элементы управления Windows Forms в документ в проекте на уровне документа во время разработки несколькими способами.
 
@@ -44,7 +42,7 @@ ms.locfileid: "71255871"
 
 ### <a name="to-drag-a-windows-forms-control-to-the-document"></a>Перетаскивание элемента управления Windows Forms в документ
 
-1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в [разделе как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в разделе [Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. На вкладке **Общие элементы управления** **области элементов**щелкните элемент управления, который требуется добавить, и перетащите его в документ.
 
@@ -53,7 +51,7 @@ ms.locfileid: "71255871"
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Рисование элемента управления Windows Forms в документе
 
-1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в [разделе как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в разделе [Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. На вкладке **Общие элементы управления** **области элементов**щелкните элемент управления, который требуется добавить.
 
@@ -66,7 +64,7 @@ ms.locfileid: "71255871"
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Добавление элемента управления Windows Forms в документ двойным щелчком элемента управления
 
-1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в [разделе как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в разделе [Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. На вкладке **Общие элементы управления** **панели элементов**щелкните элемент управления, который требуется добавить.
 
@@ -79,7 +77,7 @@ ms.locfileid: "71255871"
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Добавление элемента управления Windows Forms в документ двойным щелчком элемента управления
 
-1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в [разделе как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в разделе [Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. На вкладке **Общие элементы управления** **панели элементов**дважды щелкните элемент управления, который требуется добавить.
 
@@ -90,7 +88,7 @@ ms.locfileid: "71255871"
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Добавление элемента управления Windows Forms в документ путем нажатия клавиши ВВОД
 
-1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в [разделе как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте или откройте проект книги Excel или документа Word в Visual Studio, чтобы документ был виден в конструкторе. Сведения о создании проектов см. в разделе [Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. На вкладке **Общие элементы управления** **панели элементов**щелкните элемент управления, который требуется добавить, и нажмите клавишу **Ввод** .
 
@@ -100,13 +98,13 @@ ms.locfileid: "71255871"
     > При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
 
 ## <a name="runtimedoclevel"></a>Добавление элементов управления во время выполнения в проектах уровня документа
- Вы можете программно добавить элементы управления Windows Forms в документ во время выполнения. В Word используйте методы свойства <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> класса `ThisDocument`. В Excel используйте методы <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> свойства `Sheet`класса *n* . У каждого метода есть несколько перегрузок, которые позволяют указать расположение элемента управления разными способами.
+ Вы можете программно добавить элементы управления Windows Forms в документ во время выполнения. В Word используйте методы свойства <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> класса `ThisDocument`. В Excel используйте методы свойства <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> класса `Sheet`*n* . У каждого метода есть несколько перегрузок, которые позволяют указать расположение элемента управления разными способами.
 
  При добавлении элемента управления Windows Forms в документ во время выполнения он не сохраняется в документе при закрытии документа. Элемент управления можно восстановить при следующем открытии документа. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ### <a name="to-add-a-windows-forms-control-at-run-time"></a>Добавление элемента управления Windows Forms во время выполнения
 
-1. Используйте метод с\<именем Add*Control class*> (где *Control class* — это имя класса элемента управления Windows Forms, который <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>требуется добавить, например).
+1. Используйте метод с именем Add\<*класс элемента управления*> (где *Control class* — это имя класса элемента управления Windows Forms, который требуется добавить, например <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
      В следующем примере кода показано, как добавить <xref:Microsoft.Office.Tools.Excel.Controls.Button> в ячейку **C5** `Sheet1` в проекте уровня документа для Excel.
 
@@ -122,10 +120,10 @@ ms.locfileid: "71255871"
 
 ### <a name="to-add-a-windows-forms-control-at-run-time"></a>Добавление элемента управления Windows Forms во время выполнения
 
-1. Используйте метод с\<именем Add*Control class*> (где *Control class* — это имя класса элемента управления Windows Forms, который <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>требуется добавить, например).
+1. Используйте метод с именем Add\<*класс элемента управления*> (где *Control class* — это имя класса элемента управления Windows Forms, который требуется добавить, например <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
     > [!NOTE]
-    > В проектах надстроек VSTO, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, необходимо добавить ссылку на сборку *Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll* или *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* , прежде чем получить доступ к Add *класс элементов управления*> методы. \<
+    > В проектах надстроек VSTO, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, необходимо добавить ссылку на сборку *Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll* или *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* , прежде чем можно будет получить доступ к @no__у Add. > методов *класса элемента управления*t_3_.
 
      В следующем примере кода показано, как добавить <xref:Microsoft.Office.Tools.Word.Controls.Button> в первый абзац активного документа с помощью надстройки VSTO для Word.
 
@@ -135,6 +133,6 @@ ms.locfileid: "71255871"
 ## <a name="see-also"></a>См. также
 - [Общие сведения об элементах управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Практическое руководство. Изменение размера элементов управления в ячейках листа](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Руководство. изменение размеров элементов управления в ячейках листа](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -20,12 +20,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661497"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984076"
 ---
 # <a name="dependency-diagrams-reference"></a>Схемы зависимостей: справочные материалы
 
@@ -48,7 +48,7 @@ ms.locfileid: "72661497"
 
 - дополнительно контролировать предполагаемую архитектуру в процессе разработки и обслуживания кода за счет добавления проверки операций возврата и построения.
 
-В этом разделе описываются элементы, которые можно использовать на схеме зависимостей. Более подробные сведения о создании и отрисовке схем зависимостей см. в разделе [схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md). Дополнительные сведения о шаблонах слоев см. на [веб-сайте patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+В этом разделе описываются элементы, которые можно использовать на схеме зависимостей. Более подробные сведения о создании и отрисовке схем зависимостей см. в разделе [схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md). Дополнительные сведения о шаблонах слоев см. на [веб-сайте patterns & Practices](https://archive.codeplex.com/?p=apparch).
 
 ## <a name="reading-dependency-diagrams"></a>Чтение схем зависимостей
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d227e3c87810156e6e4262a79cfcc9b126d68417
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7eda46c04cdbe5ba73e32e124486cfc391e5ac17
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551736"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985742"
 ---
 # <a name="infopath-solutions"></a>решения InfoPath
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office InfoPath 2013 и InfoPath 2010. В Office 2016 InfoPath отсутствует.
@@ -35,10 +35,10 @@ ms.locfileid: "69551736"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
- Надстройки VSTO для InfoPath похожи на надстройки VSTO для других приложений Microsoft Office. Решения такого типа содержат сборку, которую загружает приложение. Конечные пользователи могут получать доступ к функциям этой сборки, независимо от того, какая форма или шаблон формы открыт. Дополнительные сведения о надстройках VSTO см. в статье Приступая к программированию надстроек [VSTO](../vsto/getting-started-programming-vsto-add-ins.md) и [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md).
+ Надстройки VSTO для InfoPath похожи на надстройки VSTO для других приложений Microsoft Office. Решения такого типа содержат сборку, которую загружает приложение. Конечные пользователи могут получать доступ к функциям этой сборки, независимо от того, какая форма или шаблон формы открыт. Дополнительные сведения о надстройках VSTO см. в статье Приступая к [программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md) и [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
-> Visual Studio 2015 не содержит проекты шаблонов форм InfoPath, которые присутствовали в предыдущих версиях Visual Studio. Visual Studio 2015 также нельзя использовать для открытия или изменения проекта шаблонов форм InfoPath, который был создан в предыдущей версии Visual Studio. Однако проект шаблонов форм InfoPath можно открыть и изменить с помощью набора средств Visual Studio Tools для работы с приложениями. Дополнительные сведения см [. в статье работа с проектами VSTO 2008 в InfoPath 2010.](http://go.microsoft.com/fwlink/?LinkID=218903)
+> Visual Studio 2015 не содержит проекты шаблонов форм InfoPath, которые присутствовали в предыдущих версиях Visual Studio. Visual Studio 2015 также нельзя использовать для открытия или изменения проекта шаблонов форм InfoPath, который был создан в предыдущей версии Visual Studio. Однако проект шаблонов форм InfoPath можно открыть и изменить с помощью набора средств Visual Studio Tools для работы с приложениями. Дополнительные сведения см [. в статье работа с проектами VSTO 2008 в InfoPath 2010.](https://blogs.msdn.microsoft.com/infopath/2011/04/14/working-with-vsto-2008-projects-in-infopath-2010/)
 
 ## <a name="automate-infopath-by-using-an-add-in"></a>Автоматизация InfoPath с помощью надстройки
  Чтобы получить доступ к объектной модели InfoPath из надстройки VSTO Office, созданной с помощью средств разработки решений на базе Office в Visual Studio, используйте поле `Application` класса `ThisAddIn` в своем проекте. Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.InfoPath.Application> , представляющий текущий экземпляр InfoPath. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
@@ -60,9 +60,9 @@ ms.locfileid: "69551736"
 - [Приступая к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
 - [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
-- [InfoPath 2010 в разработке решений для Office](http://go.microsoft.com/fwlink/?LinkId=199012)
+- [InfoPath 2010 в разработке решений для Office](/previous-versions/office/developer/office-2010/ff604966(v=office.14))

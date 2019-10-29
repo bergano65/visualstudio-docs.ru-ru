@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609397"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985113"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
 Доменный язык (DSL) создается с помощью специализированного решения Visual Studio.
@@ -114,7 +114,7 @@ ms.locfileid: "72609397"
 
  **Использовать существующий ключ строгого имени** Используйте этот параметр, если требуется интегрировать DSL с другой сборкой.
 
- Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](/dotnet/standard/assembly/create-use-strong-named).
 
 ## <a name="see-also"></a>См. также
 

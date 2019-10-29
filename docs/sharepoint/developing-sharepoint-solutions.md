@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd8717d7e87453c047ce5d438a54c594f63cd5de
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967574"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986359"
 ---
 # <a name="develop-sharepoint-solutions"></a>Разработка решений SharePoint
-  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов, см. в разделе [SharePoint проект и проект шаблоны элементов](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.
+  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов см. в разделе [шаблоны проектов и элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.
 
  Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
@@ -32,7 +32,7 @@ ms.locfileid: "62967574"
 
  Вместо создания проекта с помощью шаблона с уже имеющимися файлами элементов проекта можно воспользоваться шаблоном **Пустой проект** , чтобы создать новый проект SharePoint и затем добавить элементы проекта вручную. Проекты SharePoint могут также дополнительно содержать один или несколько файлов функций (для активации в SharePoint) и файл пакета для распространения проекта.
 
-### <a name="special-nodes"></a>Особые узлы
+### <a name="special-nodes"></a>Специальные узлы
  Каждый проект SharePoint содержит два узла, которые нельзя переименовывать, удалять, вырезать, копировать и перетаскивать из проекта. Это узлы:
 
 - Компоненты
@@ -40,21 +40,21 @@ ms.locfileid: "62967574"
 
   Оба эти узла всегда присутствуют в проекте SharePoint, даже если никакие другие компоненты и пакеты не определены в проекте.
 
-#### <a name="features-node"></a>Узел функции
- Узел **Функции** содержит одну или несколько функций проекта SharePoint. Функция — это контейнер расширений для SharePoint. После развертывания функции на сервере SharePoint она может быть включена в список определений сайтов или активирована индивидуально администраторами SharePoint на сайтах SharePoint. Дополнительные сведения см. в разделе [Работа с компонентами](http://go.microsoft.com/fwlink/?LinkID=147704).
+#### <a name="features-node"></a>Узел "компоненты"
+ Узел **Функции** содержит одну или несколько функций проекта SharePoint. Функция — это контейнер расширений для SharePoint. После развертывания функции на сервере SharePoint она может быть включена в список определений сайтов или активирована индивидуально администраторами SharePoint на сайтах SharePoint. Дополнительные сведения см. в разделе [Работа с компонентами](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14)).
 
  При добавлении элемента, например типа содержимого или экземпляра списка, в проект SharePoint он добавляется в функцию в узле **Функции** . Область элемента определяет, куда добавляется элемент: в новую или существующую функцию. Если область нового элемента совпадает с областью существующей функции, он добавляется в эту функцию. В противном случае элемент добавляется в новую функцию.
 
- Чтобы добавить функцию вручную, выберите команду **Добавить функцию** из контекстного меню узла функции. Вы можете просмотреть или изменить содержимое функции с помощью конструктора функций. Дополнительные сведения см. в разделе [Как Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+ Чтобы добавить функцию вручную, выберите команду **Добавить функцию** из контекстного меню узла функции. Вы можете просмотреть или изменить содержимое функции с помощью конструктора функций. Дополнительные сведения см. [в разделе руководство. Настройка компонента SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
  Когда функция добавляется в проект SharePoint, она появляется в **обозревателе решений** в виде узла с заданным по умолчанию именем Feature*x*.feature, где *x* — уникальный номер. После развертывания функции на сервере SharePoint администратор SharePoint может активировать ее, тем самым сделав ее доступной для пользователей сайта SharePoint.
 
 #### <a name="package-node"></a>Узел пакета
- Узел **Пакет** содержит один файл, который реализует механизм распространения проекта SharePoint. Этот файл, называемый *пакета решения*, является. На основе CAB-файла с. Расширение WSP. Пакет решения является файлом развертывания и повторного использования, который содержит набор функций, определений сайтов и сборок, применимых к сайтам SharePoint, которые можно включать и отключать индивидуально. Узел **Пакет** также всегда содержит файл с именем Package.wspdef — файл определения [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] для пакета. После развертывания пакета на сервере, где выполняется SharePoint, администратор SharePoint может установить его и активировать его функции.
+ Узел **Пакет** содержит один файл, который реализует механизм распространения проекта SharePoint. Этот файл, называемый *пакетом решения*, имеет значение. На основе CAB-файла с. Расширение WSP. Пакет решения является файлом развертывания и повторного использования, который содержит набор функций, определений сайтов и сборок, применимых к сайтам SharePoint, которые можно включать и отключать индивидуально. Узел **Пакет** также всегда содержит файл с именем Package.wspdef — файл определения [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] для пакета. После развертывания пакета на сервере, где выполняется SharePoint, администратор SharePoint может установить его и активировать его функции.
 
- Можно просмотреть или изменить содержимое пакета в конструкторе пакетов, дважды щелкнув узел пакета или выбрав в контекстном меню и выбрав **откройте**. Дополнительные сведения см. в разделе [пакеты решения SharePoint на создание](../sharepoint/creating-sharepoint-solution-packages.md).
+ Содержимое пакета можно просмотреть или изменить в конструкторе пакетов, дважды щелкнув узел пакета или открыв его контекстное меню и выбрав **Открыть**. Дополнительные сведения см. в разделе [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).
 
-## <a name="sharepoint-project-and-project-item-properties"></a>И свойства элемента проекта SharePoint
+## <a name="sharepoint-project-and-project-item-properties"></a>Свойства проекта и элемента проекта SharePoint
  Свойства проектов SharePoint, так же как и свойства других проектов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , отображаются в окне «Свойства» и на странице свойств. Отображаемые свойства зависят от того, какой узел выбран.
 
  При выборе проекта SharePoint, элемента проекта или узла файла элемента проекта в **обозревателе решений**в окне «Свойства» или на странице свойств отображаются следующие свойства:
@@ -63,14 +63,14 @@ ms.locfileid: "62967574"
 
 |Имя свойства|Описание|
 |-------------------|-----------------|
-|Активная конфигурация развертывания|Указывает ряд шагов, выполненных в процессе развертывания. Дополнительные сведения см. в разделе [Как Изменение конфигурации развертывания SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|
+|Активная конфигурация развертывания|Указывает ряд шагов, выполненных в процессе развертывания. Дополнительные сведения см. [в разделе инструкции. изменение конфигурации развертывания SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|
 |Место развертывания сборки|Определяет, где находятся *сборки приложения SharePoint* . Допустимое расположение сборок: либо *GlobalAssemblyCache* (по умолчанию), либо *WebApplication*.<br /><br /> Если свойству *Sandboxed Solution* присвоено значение **true**, это свойство отключается.|
-|Автоматически отозвать после отладки|Указывает, должно ли развернутое решение автоматически отзываться из SharePoint после выполнения приложения в режиме отладки в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Если параметр выбран, решение отзывается, когда интегрированная среда разработки возвращается в режим конструктора после отладки. Если параметр не выбран, решение не отзывается. Дополнительные сведения см. в разделе [Отзыв решения](http://go.microsoft.com/fwlink/?LinkId=183819).|
-|Изменить конфигурации|Задает конфигурацию развертывания для проекта. Дополнительные сведения см. в разделе [Как Изменение конфигурации развертывания SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) и [развертывание, публикация и обновление пакетов решений SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|
-|Включить отладку Silverlight (вместо отладки скриптов)|Если выбран этот параметр, к процессу отладки присоединяется отладчик Silverlight. Если параметр не выбран, к процессу отладки присоединяется отладчик скриптов. Дополнительные сведения см. в разделе [Общие сведения об отладке Silverlight](http://go.microsoft.com/fwlink/?LinkId=179826).|
+|Автоматически отозвать после отладки|Указывает, должно ли развернутое решение автоматически отзываться из SharePoint после выполнения приложения в режиме отладки в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Если параметр выбран, решение отзывается, когда интегрированная среда разработки возвращается в режим конструктора после отладки. Если параметр не выбран, решение не отзывается. Дополнительные сведения см. в разделе [Отзыв решения](/previous-versions/office/developer/sharepoint-2010/aa543958(v=office.14)).|
+|Изменить конфигурации|Задает конфигурацию развертывания для проекта. Дополнительные сведения см. [в разделе как изменить конфигурацию развертывания SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) и [развернуть, опубликовать и обновить пакеты решений SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|
+|Включить отладку Silverlight (вместо отладки скриптов)|Если выбран этот параметр, к процессу отладки присоединяется отладчик Silverlight. Если параметр не выбран, к процессу отладки присоединяется отладчик скриптов. Дополнительные сведения см. в разделе [Общие сведения об отладке Silverlight](/previous-versions/windows/).|
 |Включить сборку в пакет|Указывает, должна ли сборка проекта включаться в пакет во время построения.|
-|Строка команды после развертывания|Задает команды, выполняемые после развертывания решения SharePoint. Эта строка поддерживает любые пакетные команды, а также разрешение переменных MSBuild. Дополнительные сведения см. в разделе [Как Настройка команд развертывания SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
-|Строка команды до развертывания|Задает команды, выполняемые до развертывания решения SharePoint. Эта строка поддерживает любые пакетные команды, а также разрешение переменных MSBuild. Дополнительные сведения см. в разделе [Как Настройка команд развертывания SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
+|Строка команды после развертывания|Задает команды, выполняемые после развертывания решения SharePoint. Эта строка поддерживает любые пакетные команды, а также разрешение переменных MSBuild. Для получения дополнительной информации см. [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
+|Строка команды до развертывания|Задает команды, выполняемые до развертывания решения SharePoint. Эта строка поддерживает любые пакетные команды, а также разрешение переменных MSBuild. Для получения дополнительной информации см. [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
 |Файл проекта|Имя файла, содержащего сведения о сборке и конфигурации, а также другую информацию о проекте.|
 |Папка проекта|Расположение файла проекта в системе. (только для чтения).|
 |Sandboxed Solution|Указывает, должен ли проект развертываться как *изолированное решение*, называемое также *пользовательским решением*. Изолированные решения не всегда являются доверенными. Значение **true** означает, что проект развертывается как изолированное решение, значение **false** означает, что проект развертывается как решение фермы. Дополнительные сведения см. в разделах [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) и [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|
@@ -84,24 +84,24 @@ ms.locfileid: "62967574"
 |Имя свойства|Описание|
 |-------------------|-----------------|
 |Устранение конфликта развертывания|Указывает действие к исполнению при развертывании элемента проекта, свойства которого идентичны свойствам элемента, уже существующего на сервере. Для получения дополнительной информации см. [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|
-|Свойства компонента|Задает набор значений (сохраняемых в виде пар «ключ — значение»), который включается в состав функции при ее развертывании в SharePoint. После развертывания функции значения свойств можно использовать в коде. Дополнительные сведения см. в разделе [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
-|Приемник компонента|Предоставляет код, который выполняется при возникновении определенных событий для элемента проекта, содержащего функцию. Дополнительные сведения см. в разделе [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
+|Свойства компонента|Задает набор значений (сохраняемых в виде пар «ключ — значение»), который включается в состав функции при ее развертывании в SharePoint. После развертывания функции значения свойств можно использовать в коде. Дополнительные сведения см. в разделе [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
+|Приемник компонента|Предоставляет код, который выполняется при возникновении определенных событий для элемента проекта, содержащего функцию. Дополнительные сведения см. в разделе [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |Имя папки|Имя папки элемента проекта SharePoint.|
-|Выходные ссылки проекта|Задает зависимость, например сборку, которую должен запустить элемент проекта. Дополнительные сведения см. в разделе [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
-|Записи безопасных элементов управления|Задает элементы управления, к которым можно безопасно открыть доступ для редактирования пользователям, не являющимся доверенными. Дополнительные сведения см. в разделе [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
+|Выходные ссылки проекта|Задает зависимость, например сборку, которую должен запустить элемент проекта. Дополнительные сведения см. в разделе [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
+|Записи безопасных элементов управления|Задает элементы управления, к которым можно безопасно открыть доступ для редактирования пользователям, не являющимся доверенными. Дополнительные сведения см. в разделе [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 
 ### <a name="project-item-file-properties"></a>Свойства файла элемента проекта
 
 |Имя свойства|Описание|
 |-------------------|-----------------|
 |Действие при сборке|Определяет, как файл связан с процессами сборки и развертывания. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
-|Копировать в выходной каталог|Указывает, будет ли файл (файлы) исходного кода скопирован в выходной каталог. Может принимать одно из следующих значений:<br /><br /> -   *Не копировать*<br />-   *Всегда копировать*<br />-   *Копировать более позднюю версию*<br /><br /> Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
+|Копировать в выходной каталог|Указывает, будет ли файл (файлы) исходного кода скопирован в выходной каталог. Может принимать одно из следующих значений:<br /><br /> -   *не копировать*<br />-   *всегда копировать*<br />-   *Копировать, если новее*<br /><br /> Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Пользовательский инструмент|Задает имя инструмента, если таковой имеется, преобразующего файл во время разработки и помещающего результат преобразования в другой файл. Например, файл набора данных (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) имеет пользовательский инструмент по умолчанию. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Пространство имен пользовательского инструмента|Пространство имен, в которое копируются выходные данные пользовательского инструмента. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Местоположение развертывания|Полный путь к файлу на сервере SharePoint. Этот путь состоит из корневого каталога развертывания и вложенных свойств пути развертывания.|
-|Путь развертывания|Относительный путь к файлу на сервере SharePoint файла, например Workflow1\\. Полный путь к файлу создается путем объединения значения *Deployment Path* со значением *Deployment Root* до конца.<br /><br /> Значение *RootFile* для *тип развертывания* изменения свойств *Deployment Root* свойства \<SharePointRoot >\\, полученный в полный путь к \<SharePointRoot > \Workflow1\\. Дополнительные сведения см. в разделе [упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
-|Deployment Root|Строка. Корневая папка, в которой файл развертывается на сервере SharePoint. Например \<SharePointRoot > \Template\Features\\\<имя_компонента >\\.<br /><br /> Значение свойства *Deployment Root* определяется параметром *Deployment Type* .|
-|Deployment Type|Тип развертывания файла, определяющий его значение *Deployment Root* . Может принимать одно из следующих значений:<br /><br /> NoDeployment:  *\<нет значения >*<br /><br /> ElementManifest: *\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile: *\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile: *\<SharePointRoot>\Template\\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot>\Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Путь развертывания|Относительный путь к файлу в файле сервера SharePoint, например Workflow1\\. Полный путь к файлу создается путем объединения значения *Deployment Path* со значением *Deployment Root* до конца.<br /><br /> Выбор значения *RootFile* для свойства *тип развертывания* изменяет свойство *root для развертывания* на \<SharePointRoot >\\, что приводит к полному пути \<SharePointRoot > \Workflow1 @no_ _t_6_ . Дополнительные сведения см. в разделе [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
+|Deployment Root|Строка. Корневая папка, в которой файл развертывается на сервере SharePoint. Например, \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Значение свойства *Deployment Root* определяется параметром *Deployment Type* .|
+|Deployment Type|Тип развертывания файла, определяющий его значение *Deployment Root* . Может принимать одно из следующих значений:<br /><br /> Развертывание: *\<без значения >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<FeatureName >* \\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> Глобалресаурце: *\<SharePointRoot > \ресаурцес\\*<br /><br /> ClassResource: *\<классресаурцепас >\\*<br /><br /> Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Имя файла|Имя файла или папки для файла элемента.|
 |Полный путь|Расположение файла для элемента. (только для чтения).|
 
@@ -111,9 +111,9 @@ ms.locfileid: "62967574"
 |-----------|-----------------|
 |[Шаблоны проектов и элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Описание шаблонов проектов и элементов проектов SharePoint, доступных в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Практическое руководство. Добавление элементов в проект SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Описание процедуры добавления новых или существующих элементов в проект SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
-|[Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Описание по шагам процедуры создания настраиваемого поля, типа содержимого, определения списка и экземпляра списка.|
-|[Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)|Описание процедуры добавления приемника событий для проекта, созданного в [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|
-|[Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Описание процедуры создания проектов рабочих процессов, включающее формы сопоставления и формы запуска рабочих процессов.|
+|[Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Описание по шагам процедуры создания настраиваемого поля, типа содержимого, определения списка и экземпляра списка.|
+|[Как создать приемник событий](../sharepoint/how-to-create-an-event-receiver.md)|Описывает добавление приемника событий для проекта, созданного в [разделе Пошаговое руководство: Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|
+|[Создание решений для рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Описание процедуры создания проектов рабочих процессов, включающее формы сопоставления и формы запуска рабочих процессов.|
 |[Создание страниц для SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Описание процедуры создания страниц, например страниц приложений, страниц сайтов, эталонных страниц и макетов страниц для SharePoint.|
 |[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Описание процедуры добавления элементов управления, позволяющих пользователям напрямую изменять содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера.|
 |[Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Описание процедуры создания пользовательских элементов управления, которые можно размещать на страницах приложений и в веб-частях, используемых в SharePoint.|
@@ -121,15 +121,15 @@ ms.locfileid: "62967574"
 |[Создание определений сайтов для SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Описание процедуры создания определений сайтов — шаблонов, которые используются для создания сайтов SharePoint.|
 |[Импорт элементов из существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Описание процедуры импорта элементов, например типов содержимого и модулей, из существующего сайта SharePoint в проект SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Использование модулей для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Описание способа использования модулей для развертывания файлов из проекта [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] на сайт SharePoint.|
-|[Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Описание способа просмотра локальных сайтов SharePoint с помощью обозревателя серверов.|
-|[Предоставляют сведения о упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Описание способа использования свойств элементов проекта для предоставления сведений об упаковке и развертывании для проектов, например записей безопасных элементов управления, выходных ссылок проекта и свойств функций.|
-|[Практическое руководство. Добавление и удаление сопоставленных папок](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Описание процедуры добавления в проект сопоставленных папок для более удобного доступа к ресурсам SharePoint.|
-|[Замечания об изолированных решениях](../sharepoint/sandboxed-solution-considerations.md)|Описание проблем, связанных с изолированными решениями.|
+|[Просмотр подключений SharePoint с помощью обозреватель сервера](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Описание способа просмотра локальных сайтов SharePoint с помощью обозревателя серверов.|
+|[Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Описание способа использования свойств элементов проекта для предоставления сведений об упаковке и развертывании для проектов, например записей безопасных элементов управления, выходных ссылок проекта и свойств функций.|
+|[Как добавлять и удалять сопоставленные папки](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Описание процедуры добавления в проект сопоставленных папок для более удобного доступа к ресурсам SharePoint.|
+|[Рекомендации по изолированным решениям](../sharepoint/sandboxed-solution-considerations.md)|Описание проблем, связанных с изолированными решениями.|
 |[Безопасность решений SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Рассмотрение вопросов безопасности при разработке решений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Диалоговое окно выбора URL-адрес &#40;разработка приложений SharePoint в Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Описание диалогового окна, которое можно использовать для добавления ссылок в виде путей к ресурсам в проекте или на локальном сервере SharePoint.|
+|[Диалоговое окно " &#40;выбор URL-адреса" Разработка SharePoint в Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Описание диалогового окна, которое можно использовать для добавления ссылок в виде путей к ресурсам в проекте или на локальном сервере SharePoint.|
 
 ## <a name="see-also"></a>См. также
-- [Начало работы &#40;разработка приложений SharePoint в Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
-- [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [Приступая &#40;к работе с разработкой SharePoint в Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+- [Просмотр подключений SharePoint с помощью обозреватель сервера](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

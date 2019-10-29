@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654097"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984309"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 В доменном языке (DSL), созданном с помощью пакета SDK визуализации и моделирования Visual Studio, можно изменить то, что происходит, когда пользователь копирует и вставит элементы.
@@ -86,7 +86,7 @@ partial class MyDslClipboardCommandSet
 Переопределите `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *мидсл* в проекте DslPackage.
 
  **Сохранение макета фигуры с помощью копирования и вставки.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](http://go.microsoft.com/fwlink/?LinkId=213879).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Чтобы достигнуть такого эффекта, добавьте фигуры и соединители в скопированный ElementGroupPrototype. Самый удобный метод переопределения — это ElementOperations.CreateElementGroupPrototype(). Для этого добавьте в проект Dsl следующий код:
 
@@ -142,7 +142,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Вставка фигур в выбранном месте, например текущей позиции курсора.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](http://go.microsoft.com/fwlink/?LinkId=213879).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Для достижения такого эффекта переопределите `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, чтобы использовать версию `ElementOperations.Merge()`, зависящую от местоположения. Для этого добавьте в проект DslPackage следующий код:
 
@@ -556,6 +556,6 @@ namespace Company.MyDsl
 
 - [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)
 - [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Пример: пример схем канала VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Пример: пример схем канала VMSDK](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

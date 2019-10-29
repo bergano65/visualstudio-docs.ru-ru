@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08a709b50dd61beb874ea4cb80ebfb92a8fcd49e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8e2e97845c7ef17476e18e0068663772341ad8eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720055"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983113"
 ---
 # <a name="signing-vsix-packages"></a>Подписывание пакетов VSIX
 Сборки расширений не обязательно должны быть подписаны, прежде чем они смогут работать в Visual Studio, но это рекомендуется сделать.
@@ -30,7 +30,7 @@ ms.locfileid: "72720055"
 > Начиная с Visual Studio 2015, пакеты VSIX, подписанные с помощью чего-либо, отличного от шифрования SHA256, будут идентифицированы как имеющие недопустимую подпись. Установка VSIX не заблокирована, но пользователь получит предупреждение.
 
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>Подписывание VSIX с помощью Всикссигнтул
- Существует инструмент для подписи шифрования SHA256, доступный в [висуалстудиоекстенсибилити](http://www.nuget.org/profiles/VisualStudioExtensibility) на NuGet.org по адресу [всикссигнтул](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
+ Существует инструмент для подписи шифрования SHA256, доступный в [висуалстудиоекстенсибилити](https://www.nuget.org/profiles/VisualStudioExtensibility) на NuGet.org по адресу [всикссигнтул](https://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
 
 #### <a name="to-use-the-vsixsigntool"></a>Использование Всикссигнтул
 
