@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748217"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985222"
 ---
 # <a name="structure-your-modeling-solution"></a>Разработка структуры решения моделирования
 
@@ -30,7 +30,7 @@ ms.locfileid: "72748217"
 
 ### <a name="to-divide-an-application-into-layers"></a>Разделение приложения на слои
 
-1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](http://go.microsoft.com/fwlink/?LinkId=196681)).
+1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](/previous-versions/msp-n-p/ee658107(v=pandp.10))).
 
 2. Создайте решение Visual Studio, которое будет вызывать архитектурное решение. Это решение будет использоваться для создания общей структуры системы. Оно будет содержать только модели без кода.
 
@@ -92,7 +92,7 @@ ms.locfileid: "72748217"
 
 ### <a name="to-create-a-solution-template"></a>Создание шаблона решения
 
-1. [Скачайте и установите мастер экспорта шаблонов](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Скачайте и установите мастер экспорта шаблонов](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard).
 
 2. Создайте структуру решения, которую требуется использовать в качестве отправной точки для будущих проектов.
 
