@@ -1,5 +1,5 @@
 ---
-title: Команды, которые должны выполняться после установки | Документация Майкрософт
+title: Команды, которые должны быть выполнены после установки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,69 +10,69 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a59e1a6613936c586c5529dcfc6a56a957112c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7e85a03c71064687fdfbacf24b7aa59cd2a47f1a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341992"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982023"
 ---
-# <a name="commands-that-must-be-run-after-installation"></a>Команды, которые должны выполняться после установки
-При развертывании расширения с помощью *.msi* файл, необходимо запустить **devenv/setup** как часть установки в порядке для Visual Studio для обнаружения расширений.
+# <a name="commands-that-must-be-run-after-installation"></a>Команды, которые должны быть выполнены после установки
+При развертывании расширения с помощью *MSI* -файла необходимо запустить команду **devenv/setup** в процессе установки, чтобы Visual Studio обнаружила свои расширения.
 
 > [!NOTE]
-> Сведения этого раздела применяются к поиску *devenv.exe* с Visual Studio 2008 и более ранних версий. Сведения об обнаружении *devenv.exe* в более поздних версиях Visual Studio, см. в разделе [определить требования к системе](../../extensibility/internals/detecting-system-requirements.md).
+> Сведения в этом разделе относятся к поиску *файла devenv. exe* в Visual Studio 2008 и более ранних версий. Сведения о том, как обнаружить *файл devenv. exe* с более поздними версиями Visual Studio, см. в разделе [Определение требований к системе](../../extensibility/internals/detecting-system-requirements.md).
 
-## <a name="find-devenvexe"></a>Найти devenv.exe
- Вы можете найти каждой версии *devenv.exe* из реестра значения, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] установщиков записывают, используя таблицу RegLocator и AppSearch таблицы для хранения значений реестра как свойства. Дополнительные сведения см. в разделе [определить требования к системе](../../extensibility/internals/detecting-system-requirements.md).
+## <a name="find-devenvexe"></a>Найти файл devenv. exe
+ Вы можете разместить *файл devenv. exe* для каждой версии из значений реестра, которые [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] записывать установщики, используя таблицу реглокатор и таблицы аппсеарч для хранения значений реестра в качестве свойств. Дополнительные сведения см. в разделе [Определение требований к системе](../../extensibility/internals/detecting-system-requirements.md).
 
-### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator строк таблицы, чтобы найти devenv.exe из разных версий Visual Studio
+### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Реглокатор строки таблицы, чтобы открыть файл devenv. exe из разных версий Visual Studio
 
-|Подпись|Корневой|Ключ|name|Тип|
+|Подпись|Корневой|Раздел|Название|Type|
 |-----------------|----------|---------|----------|----------|
-|RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
-|RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
-|RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|EnvironmentPath|2|
-|RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|EnvironmentPath|2|
+|RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|енвиронментпас|2|
+|RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|енвиронментпас|2|
+|RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|енвиронментпас|2|
+|RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|енвиронментпас|2|
 
-### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>Строки таблицы AppSearch соответствующих строк в таблицах RegLocator
+### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>Аппсеарч строки таблицы для соответствующих строк таблицы Реглокатор
 
-|Свойство|Подпись|
+|свойство;|Подпись|
 |--------------|-----------------|
 |DEVENV_EXE_2002|RL_DevenvExe_2002|
 |DEVENV_EXE_2003|RL_DevenvExe_2003|
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Например, установщик Visual Studio записывает значение реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** как *C:\VS2008\Common7\IDE\devenv.exe*, полный путь к исполняемому файлу, необходимо запустить программу установки.
+ Например, установщик Visual Studio записывает значение реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** как *C:\VS2008\Common7\IDE\devenv.exe*, полный путь к исполняемому файлу Установщик должен запуститься.
 
 > [!NOTE]
-> Так как тип столбца в таблице RegLocator равно 2, не требуется указывать дополнительные сведения о версии в таблице подписи.
+> Так как столбец типа таблицы Реглокатор имеет значение 2, необязательно указывать дополнительные сведения о версии в таблице сигнатур.
 
-## <a name="run-devenvexe"></a>Запустите devenv.exe
- После AppSearch, стандартное действие выполняется в установщике, каждое свойство в таблице AppSearch имеет значение, указывающие на *devenv.exe* файл для соответствующей версией Visual Studio. Если какие-либо значения указанного раздела отсутствуют, так как эта версия Visual Studio не установлена — указанное свойство имеет значение значение null.
+## <a name="run-devenvexe"></a>Запуск devenv. exe
+ После выполнения стандартного действия Аппсеарч в установщике каждое свойство в таблице Аппсеарч имеет значение, указывающее на файл *devenv. exe* для соответствующей версии Visual Studio. Если какие-либо из указанных значений реестра отсутствуют, так как эта версия Visual Studio не установлена, для указанного свойства устанавливается значение null.
 
- Установщик Windows поддерживает запуска исполняемого файла, на который указывает свойство с помощью настраиваемого действия ввести число 50. Настраиваемое действие должно включать параметры выполнения в скрипт, `msidbCustomActionTypeInScript` (1024) и `msidbCustomActionTypeCommit` (512), чтобы убедиться в успешной установке VSPackage перед интеграцией в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [CustomAction таблицы](https://docs.microsoft.com/windows/desktop/msi/customaction-table) и [настраиваемые параметры выполнения сценария в действие](https://docs.microsoft.com/windows/desktop/msi/custom-action-in-script-execution-options).
+ Установщик Windows поддерживает запуск исполняемого файла, на который указывает свойство через тип настраиваемого действия 50. Пользовательское действие должно включать в скрипт параметры выполнения, `msidbCustomActionTypeInScript` (1024) и `msidbCustomActionTypeCommit` (512), чтобы убедиться, что пакет VSPackage успешно установлен, прежде чем интегрировать его в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в статьях [Таблица CustomAction](/windows/desktop/msi/customaction-table) и [настраиваемое действие в параметрах выполнения в скрипте](/windows/desktop/msi/custom-action-in-script-execution-options).
 
- Настраиваемые действия типа 50 задано свойство, содержащий исполняемый файл в качестве значения исходного столбца и аргументы командной строки в целевой столбец.
+ Пользовательские действия типа 50 указывают свойство, содержащее исполняемый файл, в качестве значения исходного столбца и аргументов командной строки в целевом столбце.
 
-### <a name="customaction-table-rows-to-run-devenvexe"></a>Строки таблицы настраиваемое действие для запуска devenv.exe
+### <a name="customaction-table-rows-to-run-devenvexe"></a>Строки таблицы CustomAction для запуска devenv. exe
 
-|Действие|Тип|Source|целевого объекта|
+|Действие|Type|Source|Target|
 |------------|----------|------------|------------|
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/ Setup|
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/ Setup|
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/Setup|
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/Setup|
 
- Настраиваемые действия должны быть авторизованы в таблицу InstallExecuteSequence запланировать их для выполнения во время установки. Использовать соответствующее свойство в каждой строке столбца условие для предотвращения настраиваемого действия из выполняются, если это версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не установлен в системе.
+ Пользовательские действия должны быть созданы в таблице Инсталлексекутесекуенце, чтобы запланировать их выполнение во время установки. Используйте соответствующее свойство в каждой строке столбца Condition, чтобы предотвратить запуск настраиваемого действия, если эта версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не установлена в системе.
 
 > [!NOTE]
-> Свойства со значением NULL имеют значение `False` при использовании в условиях.
+> Свойства со значением NULL оцениваются как `False` при использовании в условиях.
 
- Значение столбца последовательности для каждого пользовательского действия зависит от других значений последовательности, в пакет установщика Windows. Значения последовательности должны быть таким образом, чтобы *devenv.exe* настраиваемые действия, запуск от имени максимально близко к непосредственно перед стандартное действие функции installfinalize запущенных установок.
+ Значение столбца последовательности для каждого настраиваемого действия зависит от других значений последовательности в пакете установщик Windows. Значения последовательности должны быть таким образом, чтобы настраиваемые действия *devenv. exe* выполнялись как можно ближе, прежде чем стандартное действие функции InstallFinalize.
 
-### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Таблица InstallExecuteSequence запланировать devenv.exe пользовательские действия
+### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Инсталлексекутесекуенце таблица для планирования настраиваемых действий devenv. exe
 
 |Действие|Условие|Sequence|
 |------------|---------------|--------------|
@@ -82,4 +82,4 @@ ms.locfileid: "66341992"
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
 ## <a name="see-also"></a>См. также
-- [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Установка пакетов VSPackage с помощью установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

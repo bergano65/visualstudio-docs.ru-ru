@@ -14,32 +14,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810762"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985358"
 ---
 # <a name="xmlmappedrange-control"></a>Элемент управления XmlMappedRange
-  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Управления представляет собой диапазон, который создается только в том случае, когда неповторяющийся элемент схемы сопоставляется с ячейки в Microsoft Office Excel. Например, если `maxOccurs` атрибут элемента схемы имеет значение 1. После того как Visual Studio создаст в сопоставленном диапазоне XML, можно запрограммировать напрямую, не обращаясь к объектной модели Excel. Можно удалить только <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элемента управления в Excel при удалении сопоставления элементов.
+  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элемент управления — это диапазон, который создается только в том случае, если неповторяющийся элемент схемы сопоставляется с ячейкой в Microsoft Office Excel. Например, если атрибут `maxOccurs` элемента схемы равен 1. После того как Visual Studio создаст сопоставленный диапазон XML, вы можете программировать его напрямую, не обращаясь к объектной модели Excel. Удалить элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> в Excel можно только при удалении сопоставления элементов.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Использовать сопоставление XML в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130288).
-
 ## <a name="bind-data-to-the-control"></a>Привязка данных к элементу управления
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Элемент управления поддерживает привязку одного поля данных (простая привязка данных). <xref:Microsoft.Office.Tools.Excel.ListObject> Управления сложной привязкой данных и создается автоматически при сопоставлении повторяющегося элемента схемы ячейке. Дополнительные сведения см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
+ Элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> поддерживает привязку к одному полю данных (простая привязка данных). Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> может поддерживать сложную привязку данных и автоматически создаваться при сопоставлении повторяющегося элемента схемы с ячейкой. Дополнительные сведения см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Управления привязан к источнику данных с помощью <xref:System.Windows.Forms.Control.DataBindings%2A> свойство. Когда <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> добавляется в ячейку листа, Visual Studio автоматически создает набор данных на основе данных в этих ячейках и привязывает элемент управления для этого набора данных. Свойство привязки данных по умолчанию <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> является <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>.
+ Элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> привязан к источнику данных с помощью свойства <xref:System.Windows.Forms.Control.DataBindings%2A>. При добавлении <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> в ячейку листа Visual Studio автоматически создает набор данных на основе данных в сопоставленных ячейках и привязывает элемент управления к этому набору данных. Свойство привязки данных <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> по умолчанию имеет значение <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>.
 
- Если данные в привязанном наборе обновляются посредством какого-либо механизма, <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управления отражает изменения.
+ Если данные в связанном наборе данных обновляются с помощью любого механизма, то элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> отражает изменения.
 
 ## <a name="formatting"></a>Форматирование
- Можно применить одинаковое форматирование к <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элемент управления, который можно применить к <xref:Microsoft.Office.Interop.Excel.Range>. Это включает границы, шрифты, формат чисел и стили.
+ Вы можете применить то же форматирование к элементу управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, который можно применить к <xref:Microsoft.Office.Interop.Excel.Range>. Это включает границы, шрифты, формат чисел и стили.
 
-## <a name="events"></a>События
- События, доступные для <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управления:
+## <a name="events"></a>события
+ Для элемента управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> доступны следующие события:
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 
@@ -59,7 +57,7 @@ ms.locfileid: "62810762"
 
 ## <a name="see-also"></a>См. также
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
-- [Практическое руководство. Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Как добавить элементы управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Практическое руководство. Сопоставление схем и листов внутри Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [Как сопоставлять схемы с листами в Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

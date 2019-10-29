@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41bffbc248d9004248a3552f335dccefaba72cca
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822158"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981704"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio помогает расширить возможности Visual Studio или интегрировать новые функции в Visual Studio. Вы можете распространять расширения для других пользователей, а также для Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:
@@ -57,7 +57,7 @@ ms.locfileid: "68822158"
  Расширения Visual Studio можно найти в диалоговом окне **расширения и обновления** в меню **Сервис** . Дополнительные сведения см. в статье [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Расширения можно также найти в [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
 ## <a name="visual-studio-sdk-reference"></a>Справочник по Visual Studio SDK
- Справочник по API пакета SDK для Visual Studio можно найти в справочнике по [Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
+ Справочник по API пакета SDK для Visual Studio можно найти в [справочнике по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Примеры пакета SDK для Visual Studio
  Примеры Open Source для расширений VS SDK можно найти на сайте GitHub в [примерах Visual Studio](https://aka.ms/vs2015sdksamples). Этот репозиторий GitHub содержит примеры, иллюстрирующие различные Расширяемые функции в Visual Studio.
@@ -67,16 +67,16 @@ ms.locfileid: "68822158"
 
  Дополнительные сведения см. в [блоге Аркана по VSX](https://blogs.msdn.microsoft.com/vsx/) и в нескольких блогах, написанных специалистами MVP корпорации Майкрософт:
 
-- [Избранные расширения Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Избранные расширения Visual Studio](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
 - [Расширяемость Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
-- [Расширение Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Расширение Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>См. также
 - [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
-- [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Часто задаваемые вопросы. Преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Руководство. Миграция проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+- [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [Управление несколькими потоками в управляемом коде](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
 - [Добавление команд в панели инструментов](../extensibility/adding-commands-to-toolbars.md)

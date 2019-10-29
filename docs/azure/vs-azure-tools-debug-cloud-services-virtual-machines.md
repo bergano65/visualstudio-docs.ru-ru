@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 18d2364794eef2177c4cfc607ecc6da38143ba54
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a353ac12f7477bf40393f83de5fe41ede4d9aa95
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911875"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024587"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Отладка облачной службы или виртуальной машины Azure в Visual Studio
 
@@ -49,7 +49,7 @@ Visual Studio предоставляет разнообразные вариан
 Если вы включили удаленную отладку для облачной службы, это не приводит к снижению производительности и не требует дополнительных затрат. Не используйте удаленную отладку для рабочей службы, так как это может негативно сказаться на работе клиентов, использующих эту службу.
 
 > [!NOTE]
-> При публикации облачной службы из Visual Studio для всех ролей в службе, которые используют .NET Framework 4 или .NET Framework 4.5, можно активировать **IntelliTrace**. С помощью **IntelliTrace** можно изучить события, произошедшие в экземпляре роли в прошлом, и воспроизвести контекст за тот период времени. Ознакомьтесь со статьями [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) и [Использование IntelliTrace](/debugger/intellitrace).
+> При публикации облачной службы из Visual Studio для всех ролей в службе, которые используют .NET Framework 4 или .NET Framework 4.5, можно активировать **IntelliTrace**. С помощью **IntelliTrace** можно изучить события, произошедшие в экземпляре роли в прошлом, и воспроизвести контекст за тот период времени. Ознакомьтесь со статьями [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) и [Использование IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Порядок включения удаленной отладки для облачной службы
 

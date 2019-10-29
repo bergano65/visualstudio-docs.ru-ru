@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Разработка области формы Outlook
+title: Пошаговое руководство. Проектирование области формы Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a346686ee89862abef046c066614eddce1cf3a3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255760"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985468"
 ---
-# <a name="walkthrough-design-an-outlook-form-region"></a>Пошаговое руководство. Разработка области формы Outlook
+# <a name="walkthrough-design-an-outlook-form-region"></a>Пошаговое руководство. Проектирование области формы Outlook
   Пользовательские области формы расширяют стандартные или настраиваемые формы Microsoft Office Outlook. В этом пошаговом руководстве показано, как проектировать пользовательскую область формы, которая отображается в виде новой страницы в окне инспектора элемента контактов. В этой области формы отображается карта каждого адреса, указанного для контакта, путем отправки информации об адресе на веб-сайт локального поиска Windows Live. Сведения о регионах форм см. в разделе [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -39,14 +39,14 @@ ms.locfileid: "71255760"
 > [!NOTE]
 > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]или более поздней версии.
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] или более поздней версии.
 
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Для получения видео-версии этого раздела см [. видео как Создание области](http://go.microsoft.com/fwlink/?LinkID=140824)формы Outlook.
+  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Для получения видео-версии этого раздела см. [видео руководство. Создание области формы Outlook](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90)).
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Создание нового проекта надстройки VSTO для Outlook
  Сначала создайте базовый проект надстройки VSTO.
@@ -59,7 +59,7 @@ ms.locfileid: "71255760"
 
 3. Сохраните проект в любом каталоге.
 
-     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Добавление области формы в проект надстройки VSTO для Outlook
  Решение надстройки Outlook VSTO может содержать один или несколько элементов области формы Outlook. Добавьте элемент области формы в проект с помощью мастера **создания области формы Outlook** .
@@ -122,7 +122,7 @@ ms.locfileid: "71255760"
 
     Предоставляется класс фабрики областей формы с именем `MapItFactory`.
 
-3. Добавьте следующий код в обработчик событий `MapItFactory_FormRegionInitializing`. Этот обработчик событий будет вызываться, когда пользователь открывает элемент контактов. Следующий код определяет, содержит ли элемент контактов адрес. Если элемент Contact не содержит адрес, этот код устанавливает <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> для свойства <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> класса **значение true** , а область формы не отображается. В противном случае надстройка VSTO выдает событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> и отображает область формы.
+3. Добавьте следующий код в обработчик событий `MapItFactory_FormRegionInitializing`. Этот обработчик событий будет вызываться, когда пользователь открывает элемент контактов. Следующий код определяет, содержит ли элемент контактов адрес. Если элемент Contact не содержит адрес, этот код задает для свойства <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> класса <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> **значение true** , а область формы не отображается. В противном случае надстройка VSTO выдает событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> и отображает область формы.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
@@ -176,8 +176,8 @@ ms.locfileid: "71255760"
 - [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
 - [Рекомендации по созданию областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Пошаговое руководство: Импорт области формы, разработанной в Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Практическое руководство. Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Пошаговое руководство. импорт области формы, разработанной в Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Как добавить область формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Пользовательские действия в областях формы Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Практическое руководство. Запретить Outlook отображать область формы](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Как запретить Outlook отображать область формы](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
