@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Вложение расширений управляемого кода в документы
+title: Как присоединить расширения управляемого кода к документам
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,44 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8fb212f9c5441d697cfa92feee7dc18fab9270d2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441802"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985980"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Практическое руководство. Вложение расширений управляемого кода в документы
-  Можно подключить сборку настройки для существующего документа Microsoft Office Word или книгу Microsoft Office Excel. Документ или книгу можно в любом формате, который поддерживается проекты Microsoft Office и средства разработки в Visual Studio. Дополнительные сведения см. в разделе [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Как присоединить расширения управляемого кода к документам
+  Сборку настройки можно прикрепить к существующему Microsoft Office документу Word или Microsoft Office книге Excel. Документ или книга могут иметь любой формат файла, поддерживаемый Microsoft Office проектами и инструментами разработки в Visual Studio. Дополнительные сведения см. в разделе [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Чтобы прикрепить настройку к документу Word или Excel, используйте <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса. Так как <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класс предназначен для запуска на компьютере, который не установлен Microsoft Office, этот метод можно использовать в решениях, которые не имеют отношения к разработке решений Microsoft Office (например, консоли или приложении Windows Forms).
+ Чтобы присоединить настройки к документу Word или Excel, используйте метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> класса <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>. Поскольку класс <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> предназначен для запуска на компьютере, на котором не установлен Microsoft Office, этот метод можно использовать в решениях, которые не связаны непосредственно с разработкой Microsoft Office (например, консоли или приложения Windows Forms).
 
 > [!NOTE]
-> Настройки не удастся загрузить, если код ожидает, что элементы управления, которых нет указанного документа.
+> Настройка не сможет загрузиться, если код будет задавать элементы управления, отсутствующие в указанном документе.
 
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Присоединять или отсоединять сборки VSTO в документ Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).
+### <a name="to-attach-managed-code-extensions-to-a-document"></a>Присоединение расширений управляемого кода к документу
 
-### <a name="to-attach-managed-code-extensions-to-a-document"></a>Для присоединения расширения управляемого кода в документ
+1. В проекте, который не требует Microsoft Office, например консольное приложение или проект Windows Forms, добавьте ссылку на *Microsoft. VisualStudio. Tools. Applications. ServerDocument. dll* и  *Сборки Microsoft. VisualStudio. Tools. Applications. Runtime. dll* .
 
-1. В проекте, который не требует Microsoft Office, таких как консольное приложение или проект Windows Forms, добавить ссылку на *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* и  *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* сборки.
-
-2. Добавьте следующий **Imports** или **с помощью** инструкции в начало файла кода.
+2. Добавьте следующие инструкции **Imports** или **using** в начало файла кода.
 
      [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
      [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
 
-3. Вызовите статический <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> метод.
+3. Вызовите статический метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>.
 
-     В следующем примере кода используется <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> перегрузки. Эта перегрузка принимает полный путь к документу и <xref:System.Uri> , указывающий расположение манифеста развертывания для настройки, необходимо подключить к документу. В этом примере предполагается, что документ Word с именем **WordDocument1.docx** на рабочем столе, и манифест развертывания, расположенного в папке с именем **публикации** , также находится на рабочем столе.
+     В следующем примере кода используется перегрузка <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>. Эта перегрузка принимает полный путь к документу и <xref:System.Uri>, указывающий расположение манифеста развертывания для настройки, которую необходимо присоединить к документу. В этом примере предполагается, что документ Word с именем **WordDocument1. docx** находится на рабочем столе, а манифест развертывания находится в папке с именем **Publish** , которая также находится на рабочем столе.
 
      [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
      [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
 
-4. Постройте проект и запустить приложение на компьютере, где вы хотите применить настройки. На компьютере должен быть в Visual Studio 2010 Tools для среды выполнения Office.
+4. Выполните сборку проекта и запустите приложение на компьютере, на котором нужно присоединить настройки. На компьютере должна быть установлена среда выполнения средств Visual Studio 2010 для Office.
 
 ## <a name="see-also"></a>См. также
 - [Управление документами на сервере с помощью класса ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [Практическое руководство. Удаление расширений управляемого кода из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
-- [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Руководство. Удаление расширений управляемого кода из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
+- [Манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)

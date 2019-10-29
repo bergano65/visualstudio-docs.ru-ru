@@ -1,5 +1,5 @@
 ---
-title: Примеры разработки решений Office
+title: Примеры разработки для Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447134"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985730"
 ---
-# <a name="office-development-samples"></a>Примеры разработки решений Office
+# <a name="office-development-samples"></a>Примеры разработки для Office
   Visual Studio содержит примеры приложений, которые демонстрируют, как использовать инструменты разработчика Microsoft Office для создания решений Office. Код в этих примерах показывает синтаксис, структуру и приемы, используемые для сборки решений Office.
 
- Наиболее актуальные примеры см. в разделе [примеры разработчиков MSDN: Обучайтесь через код](http://go.microsoft.com/fwlink/?LinkID=248199) на веб-сайте Майкрософт.
+ Самые последние примеры см. в разделе [примеры для разработчиков MSDN: изучение кода](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) на веб-сайте Майкрософт.
 
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]
 
-## <a name="office-development-samples"></a>Примеры разработки решений Office
+## <a name="office-development-samples"></a>Примеры разработки для Office
 
 |Пример|Описание|
 |------------|-----------------|
@@ -41,4 +41,4 @@ ms.locfileid: "63447134"
 |Пример взаимодействия VBA и VSTO|Демонстрирует способ вызова метода в настройке на уровне документа для Excel из кода Visual Basic для приложений (VBA) в книге.<br /><br /> Этот пример доступен только в Интернете.|
 
 ## <a name="see-also"></a>См. также
-- [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)
+- [Распространенные задачи в программировании Office](../vsto/common-tasks-in-office-programming.md)

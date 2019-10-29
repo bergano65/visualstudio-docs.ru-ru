@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255686"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986311"
 ---
 # <a name="actions-pane-overview"></a>Обзор панели действий
   Панель действий — это настраиваемая область задач « **действия с документом** », прикрепленная к конкретному Microsoft Office документу Word или Microsoft Office книге Excel. Панель действий размещается внутри области задач Office вместе с другими встроенными областями задач, такими как область задач **Источник XML** в Excel или область задач **стили и форматирование** в Word. Для разработки пользовательского интерфейса панели действий можно использовать элементы управления Windows Forms или элементы управления WPF.
@@ -32,8 +32,6 @@ ms.locfileid: "71255686"
 > [!NOTE]
 > Панель действий отличается от настраиваемых областей задач. Настраиваемые области задач связаны с приложением, а не с конкретным документом. Вы можете создавать настраиваемые области задач в надстройках VSTO для некоторых приложений Microsoft Office. Дополнительные сведения см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).
 
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Использовать элементы управления WPF в области действий Excel? ](http://go.microsoft.com/fwlink/?LinkId=132763).
-
 ## <a name="display-the-actions-pane"></a>Отображение панели «действия»
  Панель действий представлена классом <xref:Microsoft.Office.Tools.ActionsPane>. При создании проекта на уровне документа экземпляр данного класса доступен в коде с помощью поля `ActionsPane` класса `ThisWorkbook` (для Excel) или `ThisDocument` (для Word) в проекте. Чтобы отобразить панель действий, добавьте элемент управления Windows Forms в свойство <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> поля `ActionsPane`. Следующий пример кода добавляет элемент управления с именем `actions` на панель действий.
 
@@ -43,7 +41,7 @@ ms.locfileid: "71255686"
  Панель действий становится видимой во время выполнения, как только вы явно добавляете на нее элемент управления. После отображения панели действий вы можете динамически добавлять или удалять элементы управления в ответ на действия пользователя. Как правило, вы добавляете код, чтобы показать панель действий, в обработчик событий `Startup` для `ThisDocument` или `ThisWorkbook`, чтобы панель действий отображалась при первом открытии документа. Однако вам может потребоваться отобразить панель действий только в ответ на действия пользователя в документе. Например, можно добавить код в событие `Click` элемента управления в документе.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Добавление нескольких элементов управления на панель «действия»
- При добавлении нескольких элементов управления на панель действий следует сгруппировать элементы управления в пользовательский элемент управления, а затем добавить пользовательский элемент управления к <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойству. Этот процесс состоит из следующих шагов.
+ При добавлении нескольких элементов управления на панель действий следует сгруппировать элементы управления в пользовательский элемент управления, а затем добавить пользовательский элемент управления в свойство <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>. Этот процесс состоит из следующих шагов.
 
 1. Создайте пользовательский интерфейс панели действий, добавив элемент **управления панели действий** или элемент **пользовательского элемента управления** в проект. Оба эти элемента включают пользовательский класс <xref:System.Windows.Forms.UserControl> Windows Forms. **Элемент управления панели действий** и элементы **пользовательского элемента управления** эквивалентны; Единственное отличие заключается в их имени.
 
@@ -54,24 +52,24 @@ ms.locfileid: "71255686"
 
 3. Добавьте экземпляр настраиваемого пользовательского элемента управления к элементам управления, которые содержатся в поле `ActionsPane` класса `ThisWorkbook` (для Excel) или `ThisDocument` (для Word) в проекте.
 
-   Примеры, демонстрирующие этот процесс более подробно, см. [в разделе как Добавление панели действий в документы Word или книги](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)Excel.
+   Примеры, демонстрирующие этот процесс более подробно, см. в разделе [руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
 ## <a name="hide-the-actions-pane"></a>Скрыть панель действий
- Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит метод <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> и свойство <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, панель действий невозможно удалить из пользовательского интерфейса с помощью членов класса <xref:Microsoft.Office.Tools.ActionsPane>. Вызов метода или <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> присвоение свойству значения false скрывает только элементы управления на панели действий; она не скрывает область задач. <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>
+ Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит метод <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> и свойство <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, панель действий невозможно удалить из пользовательского интерфейса с помощью членов класса <xref:Microsoft.Office.Tools.ActionsPane>. Вызов метода <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> или присвоение свойству <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> значения **false** скрывает только элементы управления на панели действий. она не скрывает область задач.
 
  Существует несколько способов скрыть область задач в решении.
 
-- Для Word установите <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> свойство <xref:Microsoft.Office.Interop.Word.TaskPane> объекта, представляющего область задач «действия с документом», в **значение false**. Код в следующем примере должен выполняться из класса `ThisDocument` в проекте.
+- Для Word задайте для свойства <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> объекта <xref:Microsoft.Office.Interop.Word.TaskPane>, представляющего область задач «действия с документом» **значение false**. Код в следующем примере должен выполняться из класса `ThisDocument` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Для Excel присвойте <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> свойству <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> объекта значение **false**. Код в следующем примере должен выполняться из класса `ThisWorkbook` в проекте.
+- Для Excel установите для свойства <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> объекта <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> значение **false**. Код в следующем примере должен выполняться из класса `ThisWorkbook` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Для Word или Excel можно также задать <xref:Microsoft.Office.Core.CommandBar.Visible%2A> для свойства панели команд, представляющей область задач, **значение false**. Код в следующем примере должен выполняться из класса `ThisDocument` или `ThisWorkbook` в проекте.
+- Для Word или Excel можно также задать свойство <xref:Microsoft.Office.Core.CommandBar.Visible%2A> панели команд, представляющей область задач, равным **false**. Код в следующем примере должен выполняться из класса `ThisDocument` или `ThisWorkbook` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -80,7 +78,7 @@ ms.locfileid: "71255686"
  Когда пользователь сохраняет документ, когда отображается область действий, панель действий отображается каждый раз при открытии документа, независимо от того, содержит ли панель действий элементы управления. Если вы хотите управлять отображением панели действий, вызовите метод <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> поля `ActionsPane` в обработчике событий `Startup` для `ThisDocument` или `ThisWorkbook`, чтобы убедиться, что панель действий невидима при открытии документа.
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>Определение того, когда панель действий закрыта
- При закрытии панели действий события не инициируются. Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит событие <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, оно не возникает, когда пользователь закрывает панель действий. Вместо этого событие возникает при скрытии элементов управления на панели действий путем вызова <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> метода или <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> присвоения свойству значения **false**.
+ При закрытии панели действий события не инициируются. Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит событие <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, оно не возникает, когда пользователь закрывает панель действий. Вместо этого событие возникает, когда элементы управления на панели действий скрыты путем вызова метода <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> или присвоения свойству <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> значения **false**.
 
  Когда пользователь закрывает панель действий, пользователь может снова отобразить его, выполнив одну из следующих процедур в пользовательском интерфейсе приложения.
 
@@ -91,20 +89,20 @@ ms.locfileid: "71255686"
 2. В группе **Показать/скрыть** щелкните переключатель действия с **документом** .
 
 ## <a name="program-actions-pane-events"></a>События панели действий программы
- Вы можете добавить несколько элементов управления на панель действий и затем написать код для реагирования на события в документе, отображая и скрывая пользовательские элементы управления. Если сопоставить элементы схемы XML с вашим документом, вы сможете показывать определенные пользовательские элементы управления в панели действий всякий раз, когда курсор находится внутри одного из XML-элементов. Дополнительные сведения см. в разделе [Практическое руководство. Сопоставьте схемы с документами Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) , а затем [выполните следующие действия. Сопоставьте схемы с листами в Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
+ Вы можете добавить несколько элементов управления на панель действий и затем написать код для реагирования на события в документе, отображая и скрывая пользовательские элементы управления. Если сопоставить элементы схемы XML с вашим документом, вы сможете показывать определенные пользовательские элементы управления в панели действий всякий раз, когда курсор находится внутри одного из XML-элементов. Дополнительные сведения см. в разделе [как сопоставлять схемы с документами Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) и [как сопоставлять схемы с листами в Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
 
- Можно также написать код, чтобы реагировать на события любого объекта, включая ведущий элемент управления, приложение и документ. Дополнительные сведения см. в разделе [Пошаговое руководство: Программирование для событий элемента управления](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)NamedRange.
+ Можно также написать код, чтобы реагировать на события любого объекта, включая ведущий элемент управления, приложение и документ. Дополнительные сведения см. в разделе [Пошаговое руководство. Программирование для событий элемента управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 ## <a name="bind-data-to-controls-on-the-actions-pane"></a>Привязка данных к элементам управления на панели «действия»
  Возможности привязки данных элементов управления на панели действий аналогичны возможностям элементов управления в формах Windows Forms. Элементы управления можно привязать к источникам данных, таким как наборы данных, типизированные наборы данных и XML-код. Дополнительные сведения см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
- Вы можете привязать элементы управления на панели действий и элементы управления в документе к одному набору данных. Например, можно создать иерархическое отношение между элементами управления на панели действий и элементами управления на листе. Дополнительные сведения см. в разделе [Пошаговое руководство: Привязка данных к элементам управления на панели](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)действий Excel.
+ Вы можете привязать элементы управления на панели действий и элементы управления в документе к одному набору данных. Например, можно создать иерархическое отношение между элементами управления на панели действий и элементами управления на листе. Дополнительные сведения см. [в разделе Пошаговое руководство. Привязка данных к элементам управления на панели действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).
 
 ## <a name="validate-data-in-actions-pane-controls"></a>Проверка данных в элементах управления панели действий
  Если вы показываете окно сообщения в обработчике событий <xref:System.Windows.Forms.Control.Validating> элемента управления на панели действий, это событие может быть вызвано во второй раз при перемещении фокуса с элемента управления на окно сообщения. Чтобы предотвратить это, используйте элемент управления <xref:System.Windows.Forms.ErrorProvider> для отображения сообщений об ошибке проверки.
 
 ## <a name="user-control-stacking-order"></a>Порядок размещения элементов управления пользователя
- Если вы применяете несколько пользовательских элементов управления, можно написать код, чтобы правильно размещать их в панели действий в зависимости от того, закреплена ли она вертикально или горизонтально. Можно задать порядок расположения пользовательских элементов управления на панели действий с помощью перечисления <xref:Microsoft.Office.Tools.StackStyle> свойства <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>. Дополнительные сведения см. в разделе [Практическое руководство. Управление макетом элемента управления на панелях](../vsto/how-to-manage-control-layout-on-actions-panes.md)действий.
+ Если вы применяете несколько пользовательских элементов управления, можно написать код, чтобы правильно размещать их в панели действий в зависимости от того, закреплена ли она вертикально или горизонтально. Можно задать порядок расположения пользовательских элементов управления на панели действий с помощью перечисления <xref:Microsoft.Office.Tools.StackStyle> свойства <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>. Дополнительные сведения см. в разделе [руководство. Управление макетом элементов управления на панелях действий](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Свойство <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> может принимать следующие значения перечисления <xref:Microsoft.Office.Tools.StackStyle>.
 
@@ -122,7 +120,7 @@ ms.locfileid: "71255686"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>Элементы управления привязки
- Если пользователь изменяет размер панели действий во время выполнения, размеры элементов управления могут изменяться вместе с ней. Вы можете использовать свойство <xref:System.Windows.Forms.Control.Anchor%2A> элемента управления Windows Forms, чтобы закрепить элементы управления на панели действий. Таким же образом можно закрепить элементы управления Windows Forms на пользовательском элементе управления. Дополнительные сведения см. в разделе [Практическое руководство. Привязка элементов управления к](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)Windows Forms.
+ Если пользователь изменяет размер панели действий во время выполнения, размеры элементов управления могут изменяться вместе с ней. Вы можете использовать свойство <xref:System.Windows.Forms.Control.Anchor%2A> элемента управления Windows Forms, чтобы закрепить элементы управления на панели действий. Таким же образом можно закрепить элементы управления Windows Forms на пользовательском элементе управления. Дополнительные сведения см. в разделе [руководство. Привязка элементов управления к Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 ## <a name="resize-the-actions-pane"></a>Изменение размера панели действий
  Невозможно напрямую изменить размер <xref:Microsoft.Office.Tools.ActionsPane>, так как <xref:Microsoft.Office.Tools.ActionsPane> внедряется в область задач. Однако можно программно изменить ширину области задач, задав свойство <xref:Microsoft.Office.Core.CommandBar.Width%2A> объекта <xref:Microsoft.Office.Core.CommandBar>, представляющего область задач. Вы можете изменить высоту области задач, если она закреплена горизонтально или является перемещаемой.
@@ -141,9 +139,9 @@ ms.locfileid: "71255686"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
-> Пользователи могут в любое время переместить область задач вручную. Нельзя гарантировать, что область задач останется закрепленной в положении, заданном программными средствами. Однако можно проверить изменение ориентации и убедиться, что элементы управления на панели действий располагаются в правильном направлении. Дополнительные сведения см. в разделе [Практическое руководство. Управление макетом элемента управления на панелях](../vsto/how-to-manage-control-layout-on-actions-panes.md)действий.
+> Пользователи могут в любое время переместить область задач вручную. Нельзя гарантировать, что область задач останется закрепленной в положении, заданном программными средствами. Однако можно проверить изменение ориентации и убедиться, что элементы управления на панели действий располагаются в правильном направлении. Дополнительные сведения см. в разделе [руководство. Управление макетом элементов управления на панелях действий](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
- Установка свойств <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> и <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> для <xref:Microsoft.Office.Tools.ActionsPane> объекта не изменяет его расположение, так как <xref:Microsoft.Office.Tools.ActionsPane> объект внедряется в область задач.
+ Задание свойств <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> и <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> <xref:Microsoft.Office.Tools.ActionsPane> не изменяет его расположение, так как объект <xref:Microsoft.Office.Tools.ActionsPane> внедряется в область задач.
 
  Если область задач не закреплена, можно установить свойства <xref:Microsoft.Office.Core.CommandBar.Top%2A> и <xref:Microsoft.Office.Core.CommandBar.Left%2A> объекта <xref:Microsoft.Office.Core.CommandBar>, представляющего область задач. Следующий код перемещает панель задач в верхний левый угол документа.
 
@@ -154,9 +152,9 @@ ms.locfileid: "71255686"
 - [Использование элементов управления WPF в решениях Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Практическое руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
-- [Пошаговое руководство: Привязка данных к элементам управления в области действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
-- [Пошаговое руководство: Привязка данных к элементам управления в области действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)
-- [Практическое руководство. Управление макетом элемента управления на панелях действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)
-- [Пошаговое руководство: Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [Как добавить панель действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Пошаговое руководство. Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [Пошаговое руководство. Привязка данных к элементам управления в области действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
+- [Пошаговое руководство. Привязка данных к элементам управления в области действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)
+- [Руководство. Управление макетом элементов управления на панелях действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+- [Пошаговое руководство. Вставка текста в документ из панели действий](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сопоставьте столбцы ListObject с данными
+title: Как сопоставлять столбцы ListObject с данными
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0056687e8ca28af4dbc9032d7bbee0cf976378
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cffd9f009d193f5ed687560b4f13940273fd82ad
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253673"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985897"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Практическое руководство. Сопоставьте столбцы ListObject с данными
+# <a name="how-to-map-listobject-columns-to-data"></a>Как сопоставлять столбцы ListObject с данными
   При привязке элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> к <xref:System.Data.DataTable>вы можете не захотеть отображать все столбцы в списке или можете иметь некоторые столбцы, не привязанные к данным. Можно указать, какие столбцы должны отображаться в объекте <xref:Microsoft.Office.Tools.Excel.ListObject> , при вызове метода <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
-
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Создать список в Excel, подключенный к списку SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ## <a name="map-columns"></a>Столбцы карт
 
@@ -36,12 +34,12 @@ ms.locfileid: "71253673"
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2. Добавьте образцы столбцов и данных в `Startup` обработчик `Sheet1` событий класса (в проекте уровня документа) или `ThisAddIn` класса (в проекте надстройки VSTO).
+2. Добавьте образцы столбцов и данных в обработчик событий `Startup` класса `Sheet1` (в проекте уровня документа) или `ThisAddIn` класса (в проекте надстройки VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3. Вызовите метод <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> и передайте в него имена столбцов в порядке их отображения. Объект списка будет привязан к только что созданному <xref:System.Data.DataTable>, но порядок столбцов в объекте списка будет отличаться от порядка, в котором <xref:System.Data.DataTable>они отображаются в.
+3. Вызовите метод <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> и передайте в него имена столбцов в порядке их отображения. Объект списка будет привязан к только что созданному <xref:System.Data.DataTable>, но порядок столбцов в объекте списка будет отличаться от порядка, отображаемого в <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -63,6 +61,6 @@ ms.locfileid: "71253673"
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Практическое руководство. Заполнение элементов управления ListObject данными](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Как заполнить элементы управления ListObject данными](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Элемент управления ListObject](../vsto/listobject-control.md)

@@ -16,35 +16,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988289"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985083"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Дополнительные сведения об ошибках SharePoint
-  Вы можете получить помощь в устранении неполадок [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ошибки и предупреждения, в соответствующих разделах общедоступных форумов, средств SharePoint.
+  Справку по устранению неполадок [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint и предупреждения см. в разделах об устранении неполадок и на общедоступных форумах.
 
-## <a name="troubleshoot-errors-and-issues"></a>Устранение неполадок и ошибок
- Для получения помощи некоторые распространенные ошибки и другие проблемы в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint см. в следующих разделах:
+## <a name="troubleshoot-errors-and-issues"></a>Устранение ошибок и проблем
+ Дополнительные сведения о некоторых распространенных ошибках и других проблемах [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Tools см. в следующих разделах:
 
 - [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
 - [Отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
-- [Устранение неполадок SharePoint упаковки и развертывания](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Устранение неполадок при упаковке и развертывании SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Другие источники
- В следующей таблице перечислены [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средств SharePoint, форумы и другие ресурсы.
+ В следующей таблице перечислены доступные форумы [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Tools и другие ресурсы.
 
 |Термин|Определение|
 |----------|----------------|
-|[Разработка приложений SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Форум для вопросов о разработке приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Форумы Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Форум для вопросов о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Центр справки и поддержки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=108287)|Доступ к статьям базы знаний, страницам загрузки программ и обновлений, веб-трансляциям и другим службам.|
+|[Разработка для SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Форум для вопросов о разработке SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Форумы Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Содержит форум для вопросов, посвященных [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Центр справки и поддержки Майкрософт](https://support.microsoft.com/)|Доступ к статьям базы знаний, страницам загрузки программ и обновлений, веб-трансляциям и другим службам.|
 
- Если вы по-прежнему не удается найти ответы, которые необходимы, можно открыть параметры поддержки через Интернет, например обратившись в службу технической поддержки Майкрософт или выполните поиск по статьям базы знаний. Дополнительные сведения см. в разделе [справки и поддержки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=155371) страницы.
+ Если вы по-прежнему не можете найти нужные вам ответы, вы можете получить доступ к вариантам поддержки через Интернет, например обратиться в службу технической поддержки Майкрософт или найти статьи в базе знаний. Дополнительные сведения см. на странице [справки и поддержки Майкрософт](https://support.microsoft.com/) .
 
 ## <a name="see-also"></a>См. также
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

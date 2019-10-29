@@ -1,5 +1,5 @@
 ---
-title: Дополнительные сведения об ошибках в решениях Office
+title: Дополнительная поддержка ошибок в решениях Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,44 +56,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953196"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984628"
 ---
-# <a name="additional-support-for-errors-in-office-solutions"></a>Дополнительные сведения об ошибках в решениях Office
+# <a name="additional-support-for-errors-in-office-solutions"></a>Дополнительная поддержка ошибок в решениях Office
 
-Можно использовать следующие ресурсы помогут вам найти ответы на вопросы, которые возникают при создании решений Office в Visual Studio.
+Следующие ресурсы помогут найти ответы на проблемы, возникающие при создании решений Office в Visual Studio.
 
-## <a name="troubleshoot-specific-errors"></a>Устранение ошибок
+## <a name="troubleshoot-specific-errors"></a>Устранение конкретных ошибок
 
-Для получения помощи некоторые распространенные ошибки в решениях Office см. в разделах:
+Дополнительные сведения об общих ошибках в решениях Office см. в следующих разделах:
 
 - [Устранение ошибок в решениях Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
-- [Устранение неполадок с безопасностью решений Office](../vsto/troubleshooting-office-solution-security.md)
+- [Устранение неполадок в системе безопасности решений Office](../vsto/troubleshooting-office-solution-security.md)
 
-- [Устранение неполадок с развертыванием решения Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Устранение неполадок развертывания решений Office](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>Другие источники
 
-[Visual Studio tools для Office форум](http://go.microsoft.com/fwlink/?LinkId=149744)
+[Форум по средствам Visual Studio для Office](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
-Форум для вопросов о средствах разработчика Office в Visual Studio.
+Содержит форум для вопросов о средствах разработчика Office в Visual Studio.
 
-[Справка и поддержка Майкрософт](http://go.microsoft.com/fwlink/?LinkID=108287)
+[Справка и поддержка Майкрософт](https://support.microsoft.com)
 
 Доступ к статьям базы знаний, страницам загрузки программ и обновлений, веб-трансляциям и другим службам.
 
 [Дополнительные ресурсы для разработки решений Office](../vsto/additional-resources-for-developing-office-solutions.md)
 
-Ссылки на дополнительные ресурсы для изучения разработки решений Office и разработка решений Office в Visual Studio.
+Ссылки на дополнительные ресурсы для изучения разработки решений Office и разработки приложений для Office с помощью Visual Studio.
 
 ## <a name="see-also"></a>См. также
 
 - [Устранение ошибок в решениях Office](../vsto/troubleshooting-errors-in-office-solutions.md)
-- [Устранение неполадок с безопасностью решений Office](../vsto/troubleshooting-office-solution-security.md)
-- [Устранение неполадок с развертыванием решения Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Устранение неполадок в системе безопасности решений Office](../vsto/troubleshooting-office-solution-security.md)
+- [Устранение неполадок развертывания решений Office](../vsto/troubleshooting-office-solution-deployment.md)
 - [Дополнительные ресурсы для разработки решений Office](../vsto/additional-resources-for-developing-office-solutions.md)

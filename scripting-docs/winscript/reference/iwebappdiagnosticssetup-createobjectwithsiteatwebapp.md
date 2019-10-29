@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Документация Майкрософт
+title: 'Ивебаппдиагностикссетуп:: Креатеобжектвисситеатвебапп | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42f92cfe9245a5e3a6342c31fc996ae2db50ef70
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 253b995c200566868ac9ccc06b259e0a152e1676
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443696"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984609"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
-Этот метод создает совместно, идентификатор которого передается с помощью класса `rclsid` с помощью `dwClsContext`. Это аналогично тому, как [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) works, за исключением случаев, в случае использования `CreateObjectWithSiteAtWebApp` объект создается асинхронно в потоке пользовательского интерфейса веб-приложения. Объект, указанный с помощью идентификатора класса следует реализовать [iwebappdiagnosticsobjectinitialization — интерфейс](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). После создания объекта [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) вызывается со ссылкой на приложения отладки PDM и `hPassToObject` параметр `CreateObjectWithSiteAtWebApp`. Этот метод можно использовать для передачи в приложение дескриптора для анонимного канала, который вы скопировали с помощью [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
+Этот метод совместно создает класс, идентификатор которого передается `rclsid` с помощью `dwClsContext`. Это аналогично тому, как работает [IRemoteDebugApplication:: креатеинстанцеатаппликатион](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) , за исключением того, что в случае `CreateObjectWithSiteAtWebApp` объект создается асинхронно в ПОТОКЕ пользовательского интерфейса веб-приложения. Объект, заданный ИДЕНТИФИКАТОРом класса, должен реализовывать [интерфейс ивебаппдиагностиксобжектинитиализатион](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). После создания объекта метод [ивебаппдиагностиксобжектинитиализатион:: Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) вызывается со ссылкой на приложение отладки PDM и параметр `hPassToObject` `CreateObjectWithSiteAtWebApp`. Этот метод можно использовать для передачи в приложение обработчика в анонимный канал, скопированный с помощью [дупликатехандле](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle).  
   
 > [!IMPORTANT]
-> [Интерфейс IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс ивебаппдиагностикссетуп](../../winscript/reference/iwebappdiagnosticssetup-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ HRESULT CreateObjectWithSiteAtWebApp(        [in] REFCLSID rclsid,         [in] 
   
 #### <a name="parameters"></a>Параметры  
  `rclsid`  
- Идентификатор класса для создания класса.  
+ Идентификатор класса для создания.  
   
  `dwClsContext`  
  Контекст, в котором будет выполняться код. В большинстве случаев это CLSCTX_INPROC_SERVER.  
@@ -43,4 +43,4 @@ HRESULT CreateObjectWithSiteAtWebApp(        [in] REFCLSID rclsid,         [in] 
  Не используется.  
   
  `hPassToObject`  
- Значение, которое будет передан объект после его создания в потоке пользовательского интерфейса, если объект реализует [iwebappdiagnosticsobjectinitialization — интерфейс](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).
+ Значение, которое будет передано объекту после его создания в потоке пользовательского интерфейса, если объект реализует [интерфейс ивебаппдиагностиксобжектинитиализатион](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).

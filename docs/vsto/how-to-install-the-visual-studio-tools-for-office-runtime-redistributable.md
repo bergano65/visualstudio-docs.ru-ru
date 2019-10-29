@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio
+title: Руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 08/14/2019
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 801486e7c0abfa2cb91f7fb7237cf3a48e8bc916
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551837"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985908"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Практическое руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio
-  Среда выполнения средств Visual Studio 2010 для Office должна быть установлена на каждом компьютере, где работают решения, созданные с помощью средств разработчика Microsoft Office в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Она устанавливается автоматически при установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и Microsoft Office. Дополнительные сведения см. в статье [инструменты Visual Studio для сценариев установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio
+  Среда выполнения средств Visual Studio 2010 для Office должна быть установлена на каждом компьютере, на котором работают решения, созданные с помощью средств разработчика Microsoft Office в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Она устанавливается автоматически при установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и Microsoft Office. Дополнительные сведения см. в статье [инструменты Visual Studio для сценариев установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -40,22 +40,22 @@ ms.locfileid: "69551837"
 
 1. Установите [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.
 
-    - Сведения о загрузке [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]см. в разделе [Microsoft .NET Framework 4 (веб-установщик)](http://go.microsoft.com/fwlink/?LinkId=178957).
+    - Чтобы скачать [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], см. раздел [Microsoft .NET Framework 4 (веб-установщик)](https://www.microsoft.com/download/details.aspx?id=17851).
 
-    - Чтобы скачать [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], см. раздел [клиентский профиль Microsoft .NET Framework 4 (веб-установщик)](http://go.microsoft.com/fwlink/?LinkId=178958).
+    - Чтобы скачать [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], см. раздел [клиентский профиль Microsoft .NET Framework 4 (веб-установщик)](https://www.microsoft.com/download/details.aspx?id=17113).
 
-    - Чтобы скачать [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], см. статью [Microsoft .NET Framework 4,5](http://www.microsoft.com/download/details.aspx?id=30653).
+    - Чтобы скачать [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], см. [Microsoft .NET Framework 4,5](https://www.microsoft.com/download/details.aspx?id=30653).
 
 2. Запустите *vstor_redist. exe* , чтобы установить [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-     Эти файлы установки можно загрузить из [среды выполнения Visual Studio 2010 Tools for Office](http://go.microsoft.com/fwlink/?LinkId=140384). Предварительные требования [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] совпадают с предварительными требованиями платформы .NET Framework.
+     Эти файлы установки можно загрузить из [среды выполнения Visual Studio 2010 Tools for Office](https://www.microsoft.com/download/details.aspx?id=56961). Предварительные требования [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] совпадают с предварительными требованиями платформы .NET Framework.
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] включает языковые пакеты. Если при установке Windows был выбран не английский язык, сообщения среды выполнения будут отображаться на языке, выбранном для Windows. Точно так же, если конечные пользователи установят [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] и запустят ваши решения в системах Windows, настроенных не на английский язык, сообщения среды выполнения будут отображаться на языке Windows. В некоторых случаях могут потребоваться дополнительные языковые пакеты. Например, могут потребоваться дополнительные языковые пакеты, если в вашей копии Windows используется более одного языкового параметра, или если вы уже установили [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]на другой язык. Языковые пакеты можно найти в [Microsoft Visual Studio средств 2010 для языкового пакета Microsoft Office системы (среда выполнения версии 4,0)](http://go.microsoft.com/fwlink/?LinkId=140386).
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] включает языковые пакеты. Если при установке Windows был выбран не английский язык, сообщения среды выполнения будут отображаться на языке, выбранном для Windows. Точно так же, если конечные пользователи установят [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] и запустят ваши решения в системах Windows, настроенных не на английский язык, сообщения среды выполнения будут отображаться на языке Windows. В некоторых случаях могут потребоваться дополнительные языковые пакеты. Например, могут потребоваться дополнительные языковые пакеты, если в вашей копии Windows используется более одного языкового параметра или если вы уже установили [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]на другом языке. Языковые пакеты можно найти в [Microsoft Visual Studio средств 2010 для языкового пакета Microsoft Office системы (среда выполнения версии 4,0)](https://www.microsoft.com/download/details.aspx?id=54246).
 
 ## <a name="see-also"></a>См. также
 - [Начало работы &#40;с разработкой Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
-- [Практическое руководство. Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Практическое руководство. Установка основных сборок взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Как настроить компьютер для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [Руководство. Установка основных сборок взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
 - [Управление документами на сервере с помощью класса ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

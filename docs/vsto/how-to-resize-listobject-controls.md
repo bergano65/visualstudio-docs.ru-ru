@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Изменить размер элементов управления ListObject
+title: Как изменить размер элементов управления ListObject
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7dac99088dc57b538f7a26ffbd0bdc0e3e05b5a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: fdebceb7ed6357542877bf13522425f7c013da73
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252132"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985758"
 ---
-# <a name="how-to-resize-listobject-controls"></a>Практическое руководство. Изменить размер элементов управления ListObject
+# <a name="how-to-resize-listobject-controls"></a>Как изменить размер элементов управления ListObject
   Размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> задается при добавлении его в книгу Microsoft Office Excel; однако позднее может потребоваться изменить его размер. Например, в список из двух столбцов может потребоваться добавить третий столбец.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- В проектах уровня документа вы можете изменять размер элементов управления <xref:Microsoft.Office.Tools.Excel.ListObject> во время разработки или во время выполнения. Вы можете изменить размер <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления во время выполнения в проекте надстройки VSTO.
+ В проектах уровня документа вы можете изменять размер элементов управления <xref:Microsoft.Office.Tools.Excel.ListObject> во время разработки или во время выполнения. Вы можете изменить размер элементов управления <xref:Microsoft.Office.Tools.Excel.ListObject> во время выполнения в проекте надстройки VSTO.
 
  В этом разделе описываются следующие задачи.
 
@@ -35,16 +35,14 @@ ms.locfileid: "71252132"
 
 - [Изменение размера элементов управления ListObject во время выполнения в проекте надстройки VSTO](#runtimeaddin)
 
-  Дополнительные сведения об <xref:Microsoft.Office.Tools.Excel.ListObject> элементах управления см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
-
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Добавить столбцы в объект списка с привязкой к данным во время выполнения? ](http://go.microsoft.com/fwlink/?LinkID=130318).
+  Дополнительные сведения об элементах управления <xref:Microsoft.Office.Tools.Excel.ListObject> см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
 ## <a name="designtime"></a>Изменение размера элемента управления ListObject во время разработки
  Чтобы изменить размер списка, можно щелкнуть и перетащить один из маркеров размера или переопределить его размер в диалоговом окне **изменения размеров списка** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Изменение размеров списка в диалоговом окне изменения размера списка
 
-1. Щелкните в <xref:Microsoft.Office.Tools.Excel.ListObject> любом месте таблицы. Откроется вкладка**конструктор** **инструментов** > таблиц на ленте.
+1. Щелкните в любом месте таблицы <xref:Microsoft.Office.Tools.Excel.ListObject>. Откроется вкладка « **средства таблицы** » > « **конструктор** » на ленте.
 
 2. В разделе Свойства щелкните **изменить размер таблицы**.
 
@@ -70,7 +68,7 @@ ms.locfileid: "71252132"
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
 ## <a name="runtimeaddin"></a>Изменение размера элемента ListObject во время выполнения в проекте надстройки VSTO
- Размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно изменять во время выполнения на любом открытом листе. Дополнительные сведения о добавлении <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления на лист с помощью надстройки VSTO см. в разделе как [ Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md).
+ Размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно изменять во время выполнения на любом открытом листе. Дополнительные сведения о добавлении элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> на лист с помощью надстройки VSTO см. в разделе [как добавить элементы управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Изменение размеров объекта-списка программными средствами
 
@@ -91,6 +89,6 @@ ms.locfileid: "71252132"
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Элемент управления ListObject](../vsto/listobject-control.md)
-- [Практическое руководство. Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [Практическое руководство. Изменить размер элементов управления Bookmark](../vsto/how-to-resize-bookmark-controls.md)
-- [Практическое руководство. Изменить размер элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)
+- [Как добавить элементы управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [Как изменить размер элементов управления Bookmark](../vsto/how-to-resize-bookmark-controls.md)
+- [Как изменить размер элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)

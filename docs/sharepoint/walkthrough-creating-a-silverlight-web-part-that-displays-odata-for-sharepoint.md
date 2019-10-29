@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 859944c51be0abf2e6a326a06a5e4432a69ee4ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655926"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984827"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Пошаговое руководство. Создание веб-части Silverlight, которая отображает OData для SharePoint
-  SharePoint 2010 предоставляет свои данные списка с помощью OData. Служба OData реализована в SharePoint службой RESTful (ListData.svc). В данном пошаговом руководстве показано, как создать веб-часть SharePoint, в которой размещается приложение Silverlight. Приложение Silverlight отображает информацию списка извещений SharePoint с помощью ListData.svc. Дополнительные сведения см. в разделе интерфейс и [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000) [SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) .
+  SharePoint 2010 предоставляет свои данные списка с помощью OData. Служба OData реализована в SharePoint службой RESTful (ListData.svc). В данном пошаговом руководстве показано, как создать веб-часть SharePoint, в которой размещается приложение Silverlight. Приложение Silverlight отображает информацию списка извещений SharePoint с помощью ListData.svc. Дополнительные сведения см. в разделе интерфейс и [Open Data Protocol](https://www.odata.org/) [SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -228,7 +228,7 @@ ms.locfileid: "72655926"
      Веб-часть Silverlight теперь должна отображать данные извещений с сайта SharePoint. По умолчанию страница хранится в страницах сайта в SharePoint.
 
     > [!NOTE]
-    > При доступе к данным в Silverlight между доменами, Silverlight защищается от уязвимостей безопасности, которые могут быть использованы для эксплуатации веб-приложений в своих целях. Если при доступе к удаленным данным в Silverlight возникают проблемы, см. раздел [обеспечение доступности службы через границы домена](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > При доступе к данным в Silverlight между доменами, Silverlight защищается от уязвимостей безопасности, которые могут быть использованы для эксплуатации веб-приложений в своих целях. Если при доступе к удаленным данным в Silverlight возникают проблемы, см. раздел [обеспечение доступности службы через границы домена](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
 ## <a name="see-also"></a>См. также
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

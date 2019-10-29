@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69551713"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986141"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщик Windows
 
@@ -59,15 +59,15 @@ ms.locfileid: "69551713"
 
 Дополнительные сведения о развертывании решения Office с помощью ClickOnce см. в статье [развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-Сведения о создании установщик Windows файла с помощью [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] см. в статье [развертывание решения Visual Studio 2010 Tools for Office с помощью установщик Windows](http://go.microsoft.com/fwlink/?LinkId=201807).
+Сведения о создании установщик Windows файла с помощью [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]см. в статье [развертывание решения Visual Studio 2010 Tools for Office с помощью установщик Windows](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10)).
 
 ## <a name="Download"></a>Загружаемые примеры
 Этот раздел ссылается на следующие загружаемые примеры.
 
 |Пример<br /><br />|Описание<br /><br />|
 |----------|---------------|
-|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Надстройка VSTO Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|
-|[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Настройка уровня документа Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|
+|[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|Надстройка VSTO Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|
+|[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|Настройка уровня документа Excel, которую можно установить на компьютере, на котором запущена 32-разрядная или 64-разрядная версия Office.<br /><br />|
 
 ## <a name="ApplySecurity"></a>Выбор способа предоставления доверия решению
 Прежде чем решение можно будет запускать на компьютерах пользователей, необходимо предоставить доверие одним из следующих способов. В противном случае пользователи должны будут ответить на запрос о доверии при установке решения.
@@ -231,9 +231,9 @@ ms.locfileid: "69551713"
 
 10. В папке **Desktop** скопируйте файл *Visual Studio 2010 Tools для Office Runtime. prQ* в один из следующих каталогов на компьютере.
 
-   Для 32-разрядных операционных систем: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
+   Для 32-разрядных операционных систем: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
 
-   Для 64-разрядных операционных систем: *% ProgramFiles (x86)% \ 2013LE \ сетуппререкуиситес \\*
+   Для 64-разрядных операционных систем: *% ProgramFiles (x86)% \ 2013LE \ сетуппререкуиситес\\*
 
 11. На странице **Redistributables** проекта InstallShield, нажмите кнопку **Обновить** , чтобы обновить список распространяемых компонентов, как показано на следующем рисунке.
 
@@ -510,4 +510,4 @@ ms.locfileid: "69551713"
 - [Общие сведения о настраиваемых свойствах документа](../vsto/custom-document-properties-overview.md)
 - [Предоставление доверия решениям Office](../vsto/granting-trust-to-office-solutions.md)
 - [Предоставление доверия документам](../vsto/granting-trust-to-documents.md)
-- [Развертывание решения Visual Studio 2010 Tools for Office с помощью установщик Windows](http://go.microsoft.com/fwlink/?LinkId=201807)
+- [Развертывание решения Visual Studio 2010 Tools for Office с помощью установщик Windows](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))

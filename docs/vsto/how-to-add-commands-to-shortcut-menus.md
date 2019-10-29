@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление команд в контекстное меню
+title: Как добавить команды в контекстные меню
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826409"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986030"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Практическое руководство. Добавление команд в контекстное меню
-  В этом разделе показано, как добавить команды в контекстное меню в приложении Office с помощью надстройки VSTO.
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Как добавить команды в контекстные меню
+  В этом разделе показано, как добавлять команды в контекстное меню в приложении Office с помощью надстройки VSTO.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Добавление команд в контекстные меню в Office
 
-1. Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. в разделе [Как Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). Увеличение
+1. Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. [в разделе инструкции. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). Увеличение
 
 2. В**обозревателе решений**выберите файл **ThisAddIn.cs** или **ThisAddIn.vb**.
 
@@ -40,7 +40,7 @@ ms.locfileid: "62826409"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. В **обозревателе решений**выберите XML-файл ленты. По умолчанию является имя XML-файле ленты *Ribbon1.xml*.
+5. В **обозревателе решений**выберите XML-файл ленты. По умолчанию XML-файл ленты называется *Ribbon1. XML*.
 
 6. В строке меню выберите **Вид** > **Код**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "62826409"
 
 7. В редакторе кода добавьте XML, описывающий контекстное меню и элемент управления, который требуется добавить в контекстное меню.
 
-     В следующем примере элементы управления "кнопка", "меню" и "коллекция" добавляются в контекстное меню для документа Word. Идентификатор элемента управления этого контекстного меню — ContextMenuText. Полный список элемента управления Office 2010 ярлык идентификации, см. в разделе [файлы справки Office 2010: Идентификаторы элементов управления интерфейса Office fluent пользователя](http://go.microsoft.com/fwlink/?LinkID=181052).
+     В следующем примере элементы управления "кнопка", "меню" и "коллекция" добавляются в контекстное меню для документа Word. Идентификатор элемента управления этого контекстного меню — ContextMenuText. Полный список ИДЕНТИФИКАТОРов элементов управления ярлыков Office 2010 см. в разделе [файлы справки office 2010: идентификаторы элементов управления пользовательского интерфейса Fluent Office](https://www.microsoft.com/download/details.aspx?id=6627).
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "62826409"
 
 8. В **обозревателе решений**, выберите файл **MyRibbon.cs** или **MyRibbon.vb**.
 
-9. Добавьте метод обратного вызова, `Ribbon1` класс для каждого элемента управления, который необходимо обработать.
+9. Добавьте метод обратного вызова в класс `Ribbon1` для каждого элемента управления, который необходимо обменять.
 
      Следующий метод обратного вызова обрабатывает кнопку **My Button** . Этот код добавляет строку в активный документ в текущем положении курсора.
 
@@ -81,6 +81,6 @@ ms.locfileid: "62826409"
 
 ## <a name="see-also"></a>См. также
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
-- [Пошаговое руководство: Создать контекстное меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Пошаговое руководство. создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Настройка контекстных меню в Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)
+- [Настройка контекстных меню в Office 2010](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

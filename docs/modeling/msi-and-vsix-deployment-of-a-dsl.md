@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e42b5156ced1c01995882e3250c7243c18d24d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658367"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984454"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 Вы можете установить доменный язык на своем компьютере или на других компьютерах. Visual Studio уже должна быть установлена на целевом компьютере.
@@ -68,7 +68,7 @@ ms.locfileid: "72658367"
 
  Дополнительные сведения о файлах MSI и других вариантах развертывания см. в разделе [развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md).
 
- Чтобы создать MSI, добавьте в решение Visual Studio проект установки. Самый простой способ создать проект установки — использовать шаблон CreateMsiSetupProject.tt, который можно загрузить с [сайта VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Чтобы создать MSI, добавьте в решение Visual Studio проект установки. Самый простой способ создать проект установки — использовать шаблон CreateMsiSetupProject.tt, который можно загрузить с [сайта VMSDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).
 
 ### <a name="to-deploy-a-dsl-in-an-msi"></a>Развертывание DSL в MSI
 
@@ -96,7 +96,7 @@ ms.locfileid: "72658367"
 
    - В меню **Сборка** откройте **Configuration Manager**и выберите конфигурацию, которую требуется собрать, например **выпуск** или **отладку**.
 
-4. Перейдите на [домашнюю страницу SDK визуализации и моделирования](http://go.microsoft.com/fwlink/?LinkID=186128)и на вкладке **Downloads (загрузки** ) Скачайте **CreateMsiSetupProject.TT**.
+4. Перейдите на [домашнюю страницу SDK визуализации и моделирования](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)и на вкладке **Downloads (загрузки** ) Скачайте **CreateMsiSetupProject.TT**.
 
 5. Добавьте **CreateMsiSetupProject.TT** в проект DSL.
 
@@ -126,7 +126,7 @@ ms.locfileid: "72658367"
 
     - Если дважды щелкнуть файл, Visual Studio запустится и откроет файл DSL в редакторе DSL.
 
-    При желании можно создать проект установки вручную, а не использовать текстовый шаблон. Пошаговое руководство, включающее эту процедуру, см. в главе 5 [лаборатории SDK визуализации и моделирования](http://go.microsoft.com/fwlink/?LinkId=208878).
+    При желании можно создать проект установки вручную, а не использовать текстовый шаблон. Пошаговое руководство, включающее эту процедуру, см. в главе 5 [лаборатории SDK визуализации и моделирования](https://code.msdn.microsoft.com/DSLToolsLab/Release/ProjectReleases.aspx?ReleaseId=4207).
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Удаление DSL, установленного из MSI
 

@@ -14,26 +14,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5487bd64e835f876141afb6657dd885c38223cc5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c939d15375696aeef47754eec31f63d15b4371a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719465"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982434"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Поддержка пакета SDK для Visual Studio
 Для клиентов, у которых есть вопросы о том, как расширить интегрированную среду разработки (IDE) Visual Studio, доступны несколько вариантов поддержки.
 
 ## <a name="free-support"></a>Бесплатная поддержка
 
-### <a name="msdn-development-center"></a>Центр разработки MSDN
- [Центр разработчиков расширяемости Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) на MSDN содержит ресурсы, которые помогают ответить на вопросы о том, как расширить Visual Studio. Например, есть несколько ссылок на блоги разработчиков VSIP.
-
 ### <a name="microsoft-newsgroups"></a>Группы новостей Майкрософт
  Участники группы разработки Visual Studio и другие разработчики, которые расширяют Visual Studio, часто участвуют в группе новостей Microsoft. public. встудио. Extensibility. Эта группа новостей является управляемой группой новостей. Если вы являетесь универсальным подписчиком MSDN, убедитесь, что вы зарегистрировали псевдоним без спама, чтобы ответить корпорации Майкрософт.
 
 ### <a name="msdn-forums"></a>Форумы MSDN
- [Форумы MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) предоставляют другой способ общения с коллегами и экспертами. Графический пользовательский интерфейс на форумах предназначен для упрощения их использования, чем группы новостей. [Форум по расширению Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) — это хорошее место для начала поиска ответов на вопросы о расширяемости. Всегда ищите вопрос, так как другой пользователь может уже запросить тот же вопрос.
+ [Форумы MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) предоставляют другой способ общения с коллегами и экспертами. Графический пользовательский интерфейс на форумах предназначен для упрощения их использования, чем группы новостей. [Форум по расширению Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) — это хорошее место для начала поиска ответов на вопросы о расширяемости. Всегда ищите вопрос, так как другой пользователь может уже запросить тот же вопрос.
 
 ### <a name="visual-studio-gallery"></a>Галерея Visual Studio
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/) — это место для расширений и примеров кода. Вы можете найти средства, повышающие производительность и удобство работы пользователей с помощью Visual Studio, примеры приложений, демонстрирующие использование пакетов VSPackage и Managed Extensibility Framework (MEF) и других типов примеров.
@@ -63,7 +60,7 @@ ms.locfileid: "72719465"
 
 Вопросы о предложениях поддержка Premier в сочетании с программой VSIP можно отправлять в [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Вопросы о новых преимуществах для партнеров можно отправлять на [advantg@microsoft.com](mailto:advantg@microsoft.com).
 
-Сведения об индивидуальных запросах на поддержку можно найти по [отдельным запросам на поддержку](http://go.microsoft.com/fwlink/?LinkID=82385).
+Сведения об индивидуальных запросах на поддержку можно найти по [отдельным запросам на поддержку](https://support.microsoft.com/supportforbusiness/productselection).
 
 ## <a name="see-also"></a>См. также
 

@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551491"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986062"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Начало работы (разработка решений Office в Visual Studio)
   В этом разделе содержатся подразделы, позволяющие начать работу со средствами разработчика для Microsoft Office в Visual Studio.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В данном разделе
 - [Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Общие сведения о разработке решений Office в Visual Studio.
@@ -88,4 +88,4 @@ ms.locfileid: "69551491"
 
  Инструкции по предоставлению доступа к решению Office для пользователей и описание основных вопросов, связанных с выбором метода развертывания и настройкой параметров безопасности.
 
-- [Технические практические руководства по инструменты Visual Studio для Office и визуальных руководств](http://go.microsoft.com/fwlink/?LinkID=106640) Содержит ссылки на видео и технические статьи о решениях Office, созданных с помощью Visual Studio.
+- [Технические практические руководства по инструменты Visual Studio для Office и визуальных руководств](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Содержит ссылки на видео и технические статьи о решениях Office, созданных с помощью Visual Studio.
