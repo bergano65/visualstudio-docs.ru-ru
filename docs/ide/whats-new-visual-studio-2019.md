@@ -63,7 +63,7 @@ ms.locfileid: "71211330"
 
 ### <a name="intellicode"></a>IntelliCode
 
-[Visual Studio IntelliCode](/visualstudio/intellicode/) повышает эффективность разработки программного обеспечения с помощью искусственного интеллекта (ИИ). Для создания рекомендаций IntelliCode анализирует 2000 проектов с открытым кодом на GitHub (&mdash;каждый из которых имеет более 100 звезд&mdash;).
+[Visual Studio IntelliCode](/visualstudio/intellicode/) повышает эффективность разработки программного обеспечения с помощью искусственного интеллекта (ИИ). Для создания рекомендаций IntelliCode анализирует 2000 проектов с открытым кодом на GitHub (каждый из которых имеет более 100 звезд).
 
 ![Анимация IntelliCode в Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
