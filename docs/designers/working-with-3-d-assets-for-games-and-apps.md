@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634001"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888479"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Работа с трехмерными ресурсами для игр и приложений
 
@@ -46,11 +46,11 @@ ms.locfileid: "72634001"
 Вы можете использовать конструктор шейдеров Visual Studio, который представляет собой основанное на графах средство разработки шейдеров, чтобы создавать настраиваемые визуальные эффекты без навыков программирования на HLSL.
 
 > [!NOTE]
-> Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
+> Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](/windows/win32/directx). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Совместимость версий DirectX
 
-Visual Studio использует DirectX для отрисовки двумерных и трехмерных ресурсов. Вы можете выбрать отрисовщик DirectX 11 или программный отрисовщик WARP (Windows Advanced Rasterization Platform). Отрисовщик DirectX 11 обеспечивает высокопроизводительную отрисовку с аппаратным ускорением на базе GPU с поддержкой DirectX 11 и DirectX 10 Отрисовщик WARP позволяет убедиться, что ваш ресурс работает на широком спектре компьютеров, включая компьютеры с устаревшим или интегрированным графическим оборудованием. Дополнительные сведения о WARP см. в [руководстве по Windows Advanced Rasterization Platform (WARP)](http://go.microsoft.com/fwlink/p/?LinkId=224634).
+Visual Studio использует DirectX для отрисовки двумерных и трехмерных ресурсов. Вы можете выбрать отрисовщик DirectX 11 или программный отрисовщик WARP (Windows Advanced Rasterization Platform). Отрисовщик DirectX 11 обеспечивает высокопроизводительную отрисовку с аппаратным ускорением на базе GPU с поддержкой DirectX 11 и DirectX 10 Отрисовщик WARP позволяет убедиться, что ваш ресурс работает на широком спектре компьютеров, включая компьютеры с устаревшим или интегрированным графическим оборудованием. Дополнительные сведения о WARP см. в [руководстве по Windows Advanced Rasterization Platform (WARP)](/windows/win32/direct3darticles/directx-warp).
 
 ## <a name="related-topics"></a>См. также
 

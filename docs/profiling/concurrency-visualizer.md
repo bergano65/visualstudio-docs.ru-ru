@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128133"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912026"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 
@@ -29,7 +29,7 @@ ms.locfileid: "71128133"
 >
 > - Скачайте расширение [Визуализатор параллелизма для Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview).
 > - Скачайте расширение [Визуализатор параллелизма для Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015).
-> - Скачайте [средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).
+> - Скачайте [средства сбора данных визуализатора параллелизма для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
 >
 > С помощью [служебной программы командной строки "Визуализатор параллелизма" (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) можно собирать трассировки из командной строки, чтобы просматривать их в визуализаторе параллелизма для Visual Studio 2015. Это средство можно использовать на компьютерах без установленной среды Visual Studio.
 
@@ -38,7 +38,7 @@ ms.locfileid: "71128133"
 > [!NOTE]
 > Визуализатор параллелизма не поддерживает веб-проекты.
 
-Визуализатор параллелизма основывается на функции [Трассировка событий Windows](http://go.microsoft.com/fwlink/?LinkId=234579) .
+Визуализатор параллелизма основывается на функции [Трассировка событий Windows](/windows/win32/etw/event-tracing-portal) .
 
 ## <a name="related-topics"></a>См. также
 
@@ -48,7 +48,7 @@ ms.locfileid: "71128133"
 |[Представление потоков](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|
 |[Представление "Ядра"](../profiling/cores-view.md)|Содержит описание процедуры анализа миграции потоков между ядрами.|
 |[Общие шаблоны для неправильно работающих многопоточных приложений](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Описывает несколько общих шаблонов и показывает, как они отображаются в визуализаторе параллелизма.|
-|[Блог о параллельной разработке в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Содержит советы и рекомендации для визуализатора параллелизма.|
+|[Блог о параллельной разработке в Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Содержит советы и рекомендации для визуализатора параллелизма.|
 |[Представления отчетов о производительности](../profiling/performance-report-views.md)|Содержит справочные сведения по отчетам и представлениям средств профилирования Visual Studio.|
 |[Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)|Описывает, как инструментировать исходный код для отображения дополнительных сведений в визуализаторе параллелизма.|
 |[Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Описывает, как использовать программу командной строки визуализатора параллелизма (CVCollectionCmd.exe) для сбора и обработки трассировки на компьютерах, на которых не установлена Visual Studio.|

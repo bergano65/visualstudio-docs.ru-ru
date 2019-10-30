@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306248"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912035"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
@@ -38,7 +38,7 @@ ms.locfileid: "72306248"
 
 #### <a name="use-nuget-packages-preferred"></a>Использование пакетов NuGet (предпочтительный способ)
 
-В этих инструкциях предполагается, что вы используете [ссылки NuGet в стиле PackageReference](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files).
+В этих инструкциях предполагается, что вы используете [ссылки NuGet в стиле PackageReference](/nuget/consume-packages/package-references-in-project-files).
 
 Измените файлы проекта так, чтобы они ссылались на сборки MSBuild из пакетов NuGet. Задайте тег `ExcludeAssets=runtime`, чтобы сообщить диспетчеру NuGet, что сборки требуются только во время сборки и их не следует копировать в выходной каталог.
 

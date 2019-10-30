@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961767"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985192"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Flask с представлениями и шаблонами страниц
 
@@ -220,5 +220,5 @@ ms.locfileid: "62961767"
 
 ## <a name="go-deeper"></a>Дополнительные подробности
 
-- [Flask Quickstart - Rendering Templates](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (Краткое руководство по Flask — отрисовка шаблонов) (flask.pocoo.org)
+- [Flask Quickstart - Rendering Templates](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates) (Краткое руководство по Flask — отрисовка шаблонов) (flask.pocoo.org)
 - Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

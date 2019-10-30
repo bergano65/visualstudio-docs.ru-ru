@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262958"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911883"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
 
@@ -63,7 +63,7 @@ ms.locfileid: "66262958"
 
 Используйте две следующие программы командной строки для сбора данных профилирования на устройствах Windows 8 и Windows Server 2012, в том числе тех, на которых не установлен Visual Studio.
 
-|Имя программы|Описание|
+|Имя программы|ОПИСАНИЕ|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Сбор данных профилирования из приложений универсальной платформы Windows и сбор данных профилирования методом выборки из классических приложений Windows 8 и приложений Windows Server 2012.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Сбор данных профилирования инструментирования, параллелизма и уровневого взаимодействия из приложений, которые выполняются на рабочем столе Windows 8 или Windows Server 2012. Сбор всех типов данных профилирования из предыдущих версий Windows.|
@@ -72,7 +72,7 @@ ms.locfileid: "66262958"
 
 Для профилирования приложений на устройствах, на которых не установлен Visual Studio, выполните одно из следующих действий.
 
-- Загрузите программы командной строки как часть инструментов удаленной отладки для Visual Studio с [веб-сайта MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
+- Загрузите программы командной строки как часть инструментов удаленной отладки для Visual Studio с [веб-сайта MSDN](https://visualstudio.microsoft.com/#downloads+d-additional-software).
 
 - Скопируйте и запустите программу установки инструментов автономного профилировщика с компьютера Visual Studio. Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Выберите программу установки для операционной системы удаленного компьютера (x86 или x64).
 

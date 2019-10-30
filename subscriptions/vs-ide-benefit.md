@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/01/2019
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
-ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787857"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816525"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
@@ -82,5 +82,5 @@ ms.locfileid: "68787857"
 ## <a name="next-steps"></a>Следующие шаги
 Установив Visual Studio, не забудьте активировать следующие важные преимущества:
 - [Azure DevOps](vs-azure-devops.md)
-- [деньги на счете в Azure](vs-azure.md);
+- [Индивидуальный кредит Azure DevTest](vs-azure.md)
 - [учетная запись разработчика Windows](vs-windows-dev.md).
