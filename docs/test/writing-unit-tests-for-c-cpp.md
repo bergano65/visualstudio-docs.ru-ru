@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481919"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982916"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -79,7 +79,7 @@ ms.locfileid: "71481919"
 
 ### <a name="link-to-object-or-library-files"></a>Ссылка на объектный файл или файл библиотеки
 
-Если тестовый код не экспортирует функции, которые необходимо проверить, можно добавить выходной OBJ- или LIB-файл в зависимости тестового проекта. См. раздел [Связывание тестов с объектным файлом или файлом библиотеки](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef).
+Если тестовый код не экспортирует функции, которые необходимо проверить, можно добавить выходной OBJ- или LIB-файл в зависимости тестового проекта. См. раздел [Связывание тестов с объектным файлом или файлом библиотеки](unit-testing-existing-cpp-applications-with-test-explorer.md).
 
 ### <a name="add-include-directives-for-header-files"></a>Добавление директив #include для файлов заголовков
 
@@ -92,7 +92,7 @@ ms.locfileid: "71481919"
 ### <a name="write-test-methods"></a>Написание методов теста
 
 > [!NOTE]
-> В этом разделе представлен синтаксис при использовании платформы модульного тестирования Майкрософт для C/C++. Он описан здесь: [Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Документацию по Google Test см. на странице [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Начало работы с Google Test). Сведения о Boost.Test см. на странице [Библиотека Boost.Test: среда модульного тестирования](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> В этом разделе представлен синтаксис при использовании платформы модульного тестирования Майкрософт для C/C++. Он описан здесь: [Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Документацию по Google Test см. на странице [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Начало работы с Google Test). Сведения о Boost.Test см. на странице [Библиотека Boost.Test: среда модульного тестирования](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 В *CPP*-файле в тестовом проекте определены класс-заглушка и метод-заглушка в качестве примера того, как следует писать код теста. Обратите внимание, что в сигнатурах используются макросы TEST_CLASS и TEST_METHOD, что позволяет обнаруживать методы в окне **обозревателя тестов**.
 

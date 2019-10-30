@@ -8,12 +8,12 @@ author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659753"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982800"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения при модульном тестировании
 
@@ -525,4 +525,4 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 - [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Видео (1 ч. 16 мин): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Видео (1 ч. 16 мин): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

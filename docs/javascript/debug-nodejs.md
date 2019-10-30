@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589136"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888700"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
@@ -64,7 +64,7 @@ Visual Studio поддерживает отладку только для бра
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Можно также задать флаг `--remote-debugging-port` при запуске браузера, выбрав **Просмотреть с помощью...**  > из панели инструментов **Отладка**, затем **Добавить**, а затем установив соответствующий флаг в поле **Аргументы**. Используйте другое понятное для браузера имя, например **Chrome с отладкой**. Подробности см. в [заметках о выпуске](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+    > Можно также задать флаг `--remote-debugging-port` при запуске браузера, выбрав **Просмотреть с помощью...**  > из панели инструментов **Отладка**, затем **Добавить**, а затем установив соответствующий флаг в поле **Аргументы**. Используйте другое понятное для браузера имя, например **Chrome с отладкой**. Подробности см. в [заметках о выпуске](/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

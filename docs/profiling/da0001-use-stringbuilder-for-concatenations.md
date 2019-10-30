@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a0310a37d8d68a9c65298a69f5d0e19ed37bec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9e75d003031d591c8ae777c606e6f7a2b6ea8c0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936638"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912003"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001. Использование StringBuilder для объединений
 
@@ -30,7 +30,7 @@ ms.locfileid: "62936638"
 |Сообщение|Рекомендуется использовать класс StringBuilder для объединения строк.|
 |Тип сообщения|Предупреждение|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Вызовы метода System.String.Concat составляют значительную часть данных профилирования. Для построения строк из нескольких сегментов рекомендуется использовать класс <xref:System.Text.StringBuilder>.
 
 ## <a name="rule-description"></a>Описание правила
@@ -41,4 +41,4 @@ ms.locfileid: "62936638"
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения
  Дважды щелкните сообщение в окне **Список ошибок**, чтобы перейти к представлению [Сведения о функциях](../profiling/function-details-view.md) выборки данных профилирования. Найдите участок программы, в котором наиболее часто используются операции объединения строк. Для выполнения сложных операций со строками, а также частых операций объединения строк используйте класс StringBuilder.
 
- Дополнительные сведения о работе со строками см. в подразделе [Строковые операции](http://go.microsoft.com/fwlink/?LinkId=177816) в разделе [Глава 5. Улучшение производительности управляемого кода](http://go.microsoft.com/fwlink/?LinkId=177817) в библиотеке шаблонов и методик Microsoft.
+ Дополнительные сведения о работе со строками см. в подразделе [Строковые операции](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic26) в разделе [Глава 5. Улучшение производительности управляемого кода](/previous-versions/msp-n-p/ff647790(v=pandp.10)) в библиотеке шаблонов и методик Microsoft.

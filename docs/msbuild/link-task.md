@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747292"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911262"
 ---
 # <a name="link-task"></a>Связывание задачи
 Создает оболочку для компоновщика Microsoft C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
@@ -65,7 +65,7 @@ ms.locfileid: "72747292"
 
   Определяет атрибуты, которые будут помещены в раздел `dependency` файла манифеста.
 
-  Дополнительные сведения см. в разделе [Параметр /MANIFESTDEPENDENCY (определение зависимостей манифеста)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). См. также раздел [Файлы конфигурации издателя](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
+  Дополнительные сведения см. в разделе [Параметр /MANIFESTDEPENDENCY (определение зависимостей манифеста)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). См. также раздел [Файлы конфигурации издателя](/windows/desktop/SbsCs/publisher-configuration-files).
 
 - **AdditionalOptions**
 

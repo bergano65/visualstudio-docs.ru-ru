@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826169"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983687"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Введение в интегрированную среду разработки Visual Studio (Python)
 
@@ -94,7 +94,7 @@ Visual Studio предоставляется для Windows и Mac, но под�
     Начиная с Visual Studio 2019, можно открыть папку, содержащую код Python, и выполнить такие функции, как IntelliSense и отладка, не создавая проект Visual Studio для кода.
 ::: moniker-end
 
-- [Совместная работа с помощью Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+- [Совместная работа с помощью Visual Studio](/visualstudio/liveshare/use/vs)
   
     Visual Studio Live Share позволяет редактировать и отлаживать код совместно с другими пользователями в реальном времени независимо от используемых вами языков программирования и создаваемых типов приложений. 
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: b91d18fe5924abe12240f31295b4853c1e932333
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043480"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984624"
 ---
 # <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -46,7 +46,7 @@ Visual Studio отображает все известные окружения 
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Реализация .NET для Python (доступна 32- и 64-разрядная версия), обеспечивающая взаимодействие с C#, F# и Visual Basic, доступ к API-интерфейсам .NET, стандартную отладку Python (но не отладку в смешанном режиме C++) и отладку в смешанном режиме IronPython и C#. Однако IronPython не поддерживает виртуальные среды. |
 | [Anaconda](https://www.continuum.io) | Открытая платформа для анализа и обработки данных на базе Python, которая включает в себя последнюю версию CPython и большинство пакетов со сложной установкой. Рекомендуем использовать этот интерпретатор, если вы не можете определиться. |
 | [PyPy](https://www.pypy.org/) | Реализация JIT для Python с высокопроизводительной трассировкой, которая хорошо подходит для долго выполняющихся программ и ситуаций, когда вы обнаружили проблемы с производительностью, которые не удается устранить другими способами. Работает с Visual Studio, но имеет ограниченную поддержку расширенных возможностей отладки. |
-| [Jython](http://www.jython.org/) | Реализация Python на виртуальной машине Java (JVM). Аналогично IronPython, код, выполняемый в Jython, может взаимодействовать с классами и библиотеками Java, но не может использовать многие библиотеки, предназначенные для CPython. Работает с Visual Studio, но имеет ограниченную поддержку расширенных возможностей отладки. |
+| [Jython](https://www.jython.org/) | Реализация Python на виртуальной машине Java (JVM). Аналогично IronPython, код, выполняемый в Jython, может взаимодействовать с классами и библиотеками Java, но не может использовать многие библиотеки, предназначенные для CPython. Работает с Visual Studio, но имеет ограниченную поддержку расширенных возможностей отладки. |
 
 Сведения о новых способах обнаружения сред Python см. в статье [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (Обнаружение среды PTVS) на сайте github.com.
 

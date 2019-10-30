@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821712"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888715"
 ---
 # <a name="install-build-tools-into-a-container"></a>Установка Build Tools в контейнер
 
@@ -30,9 +30,9 @@ ms.locfileid: "67821712"
 
 ## <a name="before-you-begin"></a>Подготовка к работе
 
-Ниже предполагается, что вы знакомы с некоторыми функциями [Docker](https://www.docker.com/what-docker). Если вы еще знаете, как работать с Docker в Windows, прочитайте статью об [установке и настройке модуля Docker в Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
+Ниже предполагается, что вы знакомы с некоторыми функциями [Docker](https://www.docker.com/what-docker). Если вы еще знаете, как работать с Docker в Windows, прочитайте статью об [установке и настройке модуля Docker в Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-Используемый далее базовый образ является примером и может не подойти для вашей системы. Ознакомьтесь со статьей [Windows container version compatibility](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) (Совместимость версий контейнеров Windows), чтобы определить, какой базовый образ вам следует использовать для среды.
+Используемый далее базовый образ является примером и может не подойти для вашей системы. Ознакомьтесь со статьей [Windows container version compatibility](/virtualization/windowscontainers/deploy-containers/version-compatibility) (Совместимость версий контейнеров Windows), чтобы определить, какой базовый образ вам следует использовать для среды.
 
 ## <a name="create-and-build-the-dockerfile"></a>Создание и сборка Dockerfile
 
@@ -93,7 +93,7 @@ ms.locfileid: "67821712"
    >
    > Visual Studio 2017 версии 15.8 или более ранней (любого продукта) не будет правильно установлена на образ mcr.microsoft.com/windows/servercore:1809 или более поздней версии. При этом сообщение об ошибке не отображается.
    >
-   > Список версий ОС контейнеров, поддерживаемых определенными версиями ОС узлов, см. в статье [Windows container version compatibility](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility). Сведения об известных проблемах с контейнерами [см. в этой статье](build-tools-container-issues.md).
+   > Список версий ОС контейнеров, поддерживаемых определенными версиями ОС узлов, см. в статье [Windows container version compatibility](/virtualization/windowscontainers/deploy-containers/version-compatibility). Сведения об известных проблемах с контейнерами [см. в этой статье](build-tools-container-issues.md).
 
    ::: moniker-end
 
@@ -131,7 +131,7 @@ ms.locfileid: "67821712"
    > [!WARNING]
    > Если образ основан непосредственно на microsoft/windowsservercore, платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Также обратите внимание, что образы, для которых указана версия 4.8 или более поздняя, могут использовать PowerShell в качестве `SHELL` по умолчанию, что будет приводить к сбою инструкций `RUN` и `ENTRYPOINT`.
    >
-   > Список версий ОС контейнеров, поддерживаемых определенными версиями ОС узлов, см. в статье [Windows container version compatibility](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility). Сведения об известных проблемах с контейнерами [см. в этой статье](build-tools-container-issues.md).
+   > Список версий ОС контейнеров, поддерживаемых определенными версиями ОС узлов, см. в статье [Windows container version compatibility](/virtualization/windowscontainers/deploy-containers/version-compatibility). Сведения об известных проблемах с контейнерами [см. в этой статье](build-tools-container-issues.md).
 
    ::: moniker-end
 
