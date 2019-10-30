@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911625"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061084"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Создание пользовательских представлений C++ объектов в отладчике с помощью платформы Natvis
 
@@ -319,6 +319,10 @@ Visual Studio предоставляет некоторые файлы *natvis* 
   </Expand>
 </Type>
 ```
+
+`Min` и `Max`не требуются. Они являются необязательными атрибутами. Подстановочные знаки не поддерживаются.
+
+Атрибут `Name` имеет формат *filename. ext*, например *Hello. exe* или *Some. dll*. Имена путей не допускаются.
 
 ### <a name="BKMK_DisplayString"></a>Элемент DisplayString
 Элемент `DisplayString` указывает строку, которая будет отображаться как значение переменной. Принимает произвольные строки в сочетании с выражениями. Весь код внутри фигурных скобок интерпретируется как выражение. Например, следующая запись `DisplayString`:
