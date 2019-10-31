@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ede811cf2e9d900a0c78aca2214b43bd8438fe
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984692"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189169"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1
   Проекты SharePoint — это контейнеры для одного или нескольких элементов проектов SharePoint. Вы можете расширить систему проектов SharePoint в Visual Studio, создав собственные типы элементов проектов SharePoint и связав их с шаблоном проекта. В этом пошаговом руководстве будет определен тип элемента проекта для создания столбца сайта, а затем будет создан шаблон проекта, который можно использовать для создания нового проекта, содержащего элемент проекта столбца сайта.
@@ -433,7 +433,7 @@ ms.locfileid: "72984692"
 
    - Использует пространство имен "<http://schemas.microsoft.com/developer/vstemplate/2005>". Другие файлы проекта в этом решении используют пространство имен "<http://schemas.microsoft.com/developer/msbuild/2003>". Поэтому будут созданы предупреждающие сообщения схемы XML, но их можно игнорировать в этом пошаговом руководстве.
 
-     Дополнительные сведения о содержимом *VSTEMPLATE* файлов см. в разделе [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Дополнительные сведения о содержимом *VSTEMPLATE* файлов см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
 2. Сохраните и закройте файл.
 

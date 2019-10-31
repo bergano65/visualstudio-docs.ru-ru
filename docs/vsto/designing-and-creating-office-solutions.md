@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ee2d7470a14836d7369fb916c06f2a8172c4e6b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551631"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189710"
 ---
 # <a name="design-and-create-office-solutions"></a>Разработка и создание решений Office
 
@@ -31,7 +31,7 @@ Visual Studio предоставляет шаблоны проектов, кот
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="create-office-projects"></a>Создание проектов Office
- Прежде чем начать, необходимо установить требования и определить наиболее оптимальный тип решения. Например, если решение Office должно запускаться при каждом использовании приложения, вашим требованиям лучше всего будут подходить надстройки VSTO. Если код тесно интегрирован с одиночным документом, создайте настройку на уровне документа. Проекты таких типов доступны как шаблоны проектов Visual Studio. Дополнительные сведения о шаблонах проектов Office, которые входят в состав Visual Studio, см. в статье [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md). Дополнительные сведения о создании проектов Office см. в разделе [как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+ Прежде чем начать, необходимо установить требования и определить наиболее оптимальный тип решения. Например, если решение Office должно запускаться при каждом использовании приложения, вашим требованиям лучше всего будут подходить надстройки VSTO. Если код тесно интегрирован с одиночным документом, создайте настройку на уровне документа. Проекты таких типов доступны как шаблоны проектов Visual Studio. Дополнительные сведения о шаблонах проектов Office, которые входят в состав Visual Studio, см. в статье [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md). Дополнительные сведения о создании проектов Office см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
  Проекты Office имеют возможности и элементы, отличные от проектов другого типа в Visual Studio. Например, при создании проекта на уровне документа документ или книгу в проекте можно открыть и изменить в Visual Studio. Дополнительные сведения см. [в статье проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -44,13 +44,13 @@ Visual Studio предоставляет шаблоны проектов, кот
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  Для запуска решения на компьютерах конечных пользователей требуется выбранная версия .NET Framework. Например, если проект предназначен [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , на компьютерах конечных пользователей требуется. В этом примере решение не будет выполняться, если на компьютерах конечных пользователей установлено только .NET Framework 3,5.
+  Для запуска решения на компьютерах конечных пользователей требуется выбранная версия .NET Framework. Например, если проект предназначен для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] требуется на компьютерах конечных пользователей. В этом примере решение не будет выполняться, если на компьютерах конечных пользователей установлено только .NET Framework 3,5.
 
   При миграции проекта надстройки VSTO, который ориентирован на платформу .NET Framework 3.5, Visual Studio изменяет целевую платформу проекта на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, в зависимости от установленной версии Office.
 
-  Однако после того, как Visual Studio изменит целевую платформу, возможно, вам придется изменить некоторые части кода в проекте, если он использует определенные функции. Дополнительные сведения о том, как изменить целевую платформу, см [. в разделе как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Дополнительные сведения об изменениях, которые могут потребоваться в проекте, см. в статье [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
+  Однако после того, как Visual Studio изменит целевую платформу, возможно, вам придется изменить некоторые части кода в проекте, если он использует определенные функции. Дополнительные сведения о том, как изменить целевую платформу, см. [в разделе инструкции. Назначение версии .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Дополнительные сведения об изменениях, которые могут потребоваться в проекте, см. в статье [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
-  Если Visual Studio изменяет целевой .NET Framework для проекта и вы используете ClickOnce для развертывания решения, убедитесь, что вы также выбрали соответствующую версию .NET Framework в диалоговом окне **необходимые компоненты** . В случае изменения целевой платформы для своего проекта выбранное значение не будет изменяться автоматически. Дополнительные сведения см. в разделе [Практическое руководство. Установите необходимые компоненты на компьютерах конечных пользователей для запуска решений](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)Office.
+  Если Visual Studio изменяет целевой .NET Framework для проекта и вы используете ClickOnce для развертывания решения, убедитесь, что вы также выбрали соответствующую версию .NET Framework в диалоговом окне **необходимые компоненты** . В случае изменения целевой платформы для своего проекта выбранное значение не будет изменяться автоматически. Дополнительные сведения см. в разделе [инструкции. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
 > В проектах Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], платформу .NET Framework 3.5 или более ранних версий использовать нельзя. Для проектов Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], требуются возможности, которые впервые появились в [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].
@@ -63,7 +63,7 @@ Visual Studio предоставляет шаблоны проектов, кот
 ### <a name="understand-the-client-profile"></a>Общие сведения о клиентском профиле
  Клиентский профиль .NET Framework — это подмножество полной платформы .NET Framework. Если необходимо использовать только клиентские возможности платформы .NET Framework и требуется обеспечить наиболее быстрый режим развертывания для решения Office, то можно использовать клиентский профиль .NET Framework. Дополнительные сведения см. в статье [.NET Framework клиентский профиль](/dotnet/framework/deployment/client-profile).
 
- При создании проекта Office, ориентированного на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], по умолчанию используется [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]. Если необходимо выполнить разработку для полной платформы [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], необходимо установить этот параметр после создания проекта. Дополнительные сведения см. в разделе [Практическое руководство. определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ При создании проекта Office, ориентированного на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], по умолчанию используется [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]. Если вы хотите разработать полную [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], этот параметр необходимо установить после создания проекта. Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Создание решений для 64-разрядного выпуска Microsoft Office
  Microsoft Office доступен в 64- и 32-разрядном выпусках. Для создания решений Office, которые могут выполняться в любом из выпусков, параметр платформы для проекта должен иметь значение **любой ЦП**. Это значение по умолчанию для проектов Office. Дополнительные сведения см. в разделе [Построение решений Office](../vsto/building-office-solutions.md).
@@ -93,13 +93,13 @@ Visual Studio предоставляет шаблоны проектов, кот
 
 ## <a name="see-also"></a>См. также
 - [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)
-- [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)
 - [Свойства в проектах Office](../vsto/properties-in-office-projects.md)
 - [Запуск решений в разных версиях Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)
-- [Практическое руководство. Целевые приложения Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Пошаговое руководство. Назначение приложений Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Практическое руководство. Настройка сведений о конфигурации для решения Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)
+- [Как настроить сведения о конфигурации для решения Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)
 - [Использование функций Office в Visual Studio](../vsto/using-office-functionality-inside-of-visual-studio.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)
 - [Распространенные задачи в программировании Office](../vsto/common-tasks-in-office-programming.md)

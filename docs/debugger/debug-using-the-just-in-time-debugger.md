@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3ebd6e9047271a21425ac5b7eaaf715955b61
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911391"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188668"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Отладка с помощью JIT-отладчика в Visual Studio
 
@@ -104,7 +104,7 @@ JIT-отладка может оставаться включенной даже
 
 В этом примере вы сделаете C# консольное приложение в Visual Studio, которое создает исключение [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. В Visual Studio C# Создайте консольное приложение (**файл** > **Новый** > **проект** > **Visual C#**  > **консольное приложение**) с именем *сровснуллексцептион*. Дополнительные сведения о создании проектов в Visual Studio см. в разделе [Пошаговое руководство. Создание простого приложения](/visualstudio/get-started/csharp/tutorial-wpf).
+1. В Visual Studio C# Создайте консольное приложение (**файл** > **Новый** > **проект** > **Visual C#**  > **консольное приложение**) с именем *сровснуллексцептион*. Дополнительные сведения о создании проектов в Visual Studio см. в разделе [Пошаговое руководство. Создание простого приложения](../get-started/csharp/tutorial-wpf.md).
 
 1. Когда проект откроется в Visual Studio, откройте файл *Program.CS* . Замените метод Main () следующим кодом, который выводит строку на консоль, а затем создает исключение NullReferenceException:
 

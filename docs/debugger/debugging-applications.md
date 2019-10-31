@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018784"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188369"
 ---
 # <a name="debugging-applications"></a>Отладка приложений
 В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.
@@ -31,7 +31,7 @@ ms.locfileid: "72018784"
 |[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Описывает отладку управляемого кода (Visual C#, Visual Basic, F#и C++/CLI).|
 |[Отладка машинного кода](../debugger/debugging-native-code.md)|Способы отладки разных приложений с машинным кодом C++.|
 |[Отладка кода GPU](../debugger/debugging-gpu-code.md)|Способы отладки кода C++, выполняющегося в GPU.|
-|[Диагностика графики (отладка графики DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Способы отладки графики DirectX.|
+|[Диагностика графики (отладка графики DirectX)](graphics/visual-studio-graphics-diagnostics.md)|Способы отладки графики DirectX.|
 |[Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Описание отладки приложений ASP.NET.|
 |[Отладка кода Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Описание отладки кода Python|
 |[Отладка приложений JavaScript и TypeScript](../javascript/debug-nodejs.md)|Описание отладки приложений JavaScript, TypeScript и Node. js|

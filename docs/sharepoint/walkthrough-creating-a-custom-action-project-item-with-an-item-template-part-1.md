@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a9370fbbd5c806bd3978e3c642da8a6dbd79fd1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a114345363deb9c5ddd0f5a4141cd7d99f0ac1c
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984992"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189178"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
   Вы можете расширить систему проектов SharePoint в Visual Studio, создав собственные типы элементов проектов. В этом пошаговом руководстве будет создан элемент проекта, который можно добавить в проект SharePoint для создания настраиваемого действия на сайте SharePoint. Настраиваемое действие добавляет пункт меню в меню **действия сайта** сайта SharePoint.
@@ -218,7 +218,7 @@ ms.locfileid: "72984992"
     </VSTemplate>
     ```
 
-     Этот файл определяет содержимое и поведение шаблона элемента. Дополнительные сведения о содержимом этого файла см. в разделе [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Этот файл определяет содержимое и поведение шаблона элемента. Дополнительные сведения о содержимом этого файла см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
 4. В **Обозреватель решений**откройте контекстное меню проекта **ItemTemplate** , выберите **Добавить**, а затем выберите **новый элемент**.
 
@@ -455,6 +455,6 @@ ms.locfileid: "72984992"
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Использование службы проектов SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)
 - [Создание значка или другого редактора &#40;изображений изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

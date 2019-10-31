@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ce889f83c4d21a8b2464cab108fa165e1144791
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 15c9a2b489aeb091224536bfb87398197f6e4f62
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745575"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188653"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Отладка элемента управления WebView в приложении UWP
 
@@ -60,7 +60,7 @@ ms.locfileid: "72745575"
 
      Проводник DOM, сопоставленный с `WebView`, отображается в Visual Studio в виде новой вкладки.
 
-5. Просмотр и изменение динамических элементов DOM и стилей CSS, как описано в разделе [Отладка стилей CSS с помощью ПРОВОДНИКА DOM](/visualstudio/debugger/quickstart-debug-html-and-css).
+5. Просмотр и изменение динамических элементов DOM и стилей CSS, как описано в разделе [Отладка стилей CSS с помощью ПРОВОДНИКА DOM](quickstart-debug-html-and-css.md).
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Использование окна консоли JavaScript для проверки и отладки элемента управления WebView
 

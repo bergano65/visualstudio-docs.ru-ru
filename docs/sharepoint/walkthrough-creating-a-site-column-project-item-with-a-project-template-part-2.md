@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e53cc877a4e462a458f3bfd455ed222c3b2e17b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: c3b2fc34807be6ae03fe5aacab64439c918a0f5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984671"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189137"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
   После определения пользовательского типа элемента проекта SharePoint и связывания его с шаблоном проекта в Visual Studio может также потребоваться создать мастер для шаблона. Мастер можно использовать для получения сведений от пользователей, если они используют шаблон для создания нового проекта, содержащего элемент проекта. Собранные сведения можно использовать для инициализации элемента проекта.
@@ -116,7 +116,7 @@ ms.locfileid: "72984671"
 
 3. Убедитесь, что для целевой платформы задано значение .NET Framework 4,5, а не клиентский профиль .NET Framework 4,5.
 
-     Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 4. Откройте контекстное меню проекта **прожекттемплатевизард** , выберите **Добавить**, а затем выберите **новый элемент**.
 
@@ -233,7 +233,7 @@ ms.locfileid: "72984671"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    > Окно, созданное в этом XAML, является производным от базового класса <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. При добавлении пользовательского диалогового окна WPF в Visual Studio рекомендуется создать производное диалоговое окно от этого класса, чтобы обеспечить единообразное оформление с помощью других диалоговых окон Visual Studio и избежать проблем модального диалогового окна, которые могут возникнуть в противном случае. Дополнительные сведения см. в разделе [Создание модальных диалоговых окон и управление ими](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Окно, созданное в этом XAML, является производным от базового класса <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. При добавлении пользовательского диалогового окна WPF в Visual Studio рекомендуется создать производное диалоговое окно от этого класса, чтобы обеспечить единообразное оформление с помощью других диалоговых окон Visual Studio и избежать проблем модального диалогового окна, которые могут возникнуть в противном случае. Дополнительные сведения см. в разделе [Создание модальных диалоговых окон и управление ими](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 3. Если вы разрабатываете проект Visual Basic, удалите `ProjectTemplateWizard` пространство имен из `WizardWindow` имени класса в атрибуте `x:Class` элемента `Window`. Этот элемент находится в первой строке XAML. Когда все будет готово, первая строка должна выглядеть, как в следующем примере.
 
@@ -403,7 +403,7 @@ ms.locfileid: "72984671"
     </WizardExtension>
     ```
 
-     Дополнительные сведения об элементе `WizardExtension` см. в разделе [Визардекстенсион element &#40;Visual Studio Templates&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
+     Дополнительные сведения об элементе `WizardExtension` см. в разделе [Визардекстенсион element &#40;Visual Studio Templates&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Сохраните и закройте файл.
 
@@ -536,11 +536,11 @@ ms.locfileid: "72984671"
 
 4. Закройте как экспериментальный экземпляр Visual Studio, так и экземпляр, в котором открыто решение Кустомактионпрожектитем.
 
-     Дополнительные сведения о развертывании расширений [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] см. в разделе [Доставка расширений Visual Studio](/visualstudio/extensibility/shipping-visual-studio-extensions).
+     Дополнительные сведения о развертывании расширений [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] см. в разделе [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
 ## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)

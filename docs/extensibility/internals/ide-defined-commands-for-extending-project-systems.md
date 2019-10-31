@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e406fb5ba9f221fa22faadfecaa8f0baaefebf75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c8be1cff099a713413957cfa5f8b3f383ca4bae
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727348"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186336"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Команды, определенные в интегрированной среде разработки, для расширения систем проектов
 При необходимости расширить системы проектов можно использовать команды и группы команд, предоставляемые [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
@@ -70,6 +70,6 @@ ms.locfileid: "72727348"
 |IDG_VS_CTXT_PROJECT_PROPERTIES|Команды, которые предоставляют доступ к диалоговому окну **Свойства проекта** .|
 
 ## <a name="see-also"></a>См. также
+
 - [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Команды MenuCommand и Олеменукоммандс](../../extensibility/menucommands-vs-olemenucommands.md)
 - [Создание повторно используемых групп кнопок](../../extensibility/creating-reusable-groups-of-buttons.md)

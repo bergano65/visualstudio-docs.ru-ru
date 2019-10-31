@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745702"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188696"
 ---
 # <a name="client-side-script-debugging"></a>Отладка клиентского скрипта
 Отладчик Visual Studio предоставляет всеобъемлющую среду отладки для обнаружения и исправления ошибок в скриптах на стороне клиента на страницах ASP.NET.
@@ -61,7 +61,7 @@ ms.locfileid: "72745702"
 
 ## <a name="see-also"></a>См. также
 
-- [Отладка приложений ASP.NET и AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Отладка приложений ASP.NET и AJAX](how-to-enable-debugging-for-aspnet-applications.md)
 - [Ограничения на отладку скриптов](../debugger/limitations-on-script-debugging.md)
 - [Окна переменных](../debugger/debugger-windows.md)
 - [Окно интерпретации](../ide/reference/immediate-window.md)

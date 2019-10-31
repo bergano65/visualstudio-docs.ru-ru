@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ae0b559f4684fd4fd8b9eabff4b46b1defb5ef1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 263759cc463bf21afa20877db320b4c83f1dc761
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911343"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187524"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск приложений UWP в симуляторе
 
@@ -143,7 +143,9 @@ ms.locfileid: "72911343"
 
 [Пример информации по сети](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
+::: moniker range="vs-2017"
 [Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)
+::: moniker-end
 
 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 
@@ -159,4 +161,4 @@ ms.locfileid: "72911343"
 
 ## <a name="see-also"></a>См. также
 
-- [Запуск приложения из Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Запуск приложения из Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

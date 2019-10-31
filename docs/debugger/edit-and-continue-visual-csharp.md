@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737932"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188190"
 ---
 # <a name="edit-and-continue-visual-c"></a>Режим "Изменить и продолжить" (Visual C#)
  С помощью операции "Изменить и продолжить" для С# в процессе отладки можно вносить изменения в код в режиме приостановки выполнения. Изменения могут применяться без необходимости остановки и повторного запуска сеанса отладки. В режиме выполнения редактор исходного кода доступен только для чтения.
@@ -41,4 +41,4 @@ ms.locfileid: "72737932"
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Использование режима "Изменить и продолжить" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Поддерживаемые изменения кода (C# и Visual Basic)](../debugger/supported-code-changes-csharp.md)
-- [Запись и отладка выполняемого кода XAML с помощью горячей перезагрузки XAML в Visual Studio](../debugger/xaml-hot-reload.md)
+- [Запись и отладка выполняемого кода XAML с помощью горячей перезагрузки XAML в Visual Studio](../xaml-tools/xaml-hot-reload.md)

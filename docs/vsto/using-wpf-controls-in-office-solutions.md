@@ -12,16 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0540ac17ca64f24ead19b8b3655175d12fa42e41
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253980"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189751"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Использование элементов управления WPF в решениях Office
 
-Хотя решения, созданные с помощью средств разработки Office в Visual Studio, предназначены для работы непосредственно с элементами управления Windows Forms, в них также можно использовать элементы управления WPF. Windows Presentation Foundation (WPF) — это альтернатива Windows Forms для разработки пользовательских интерфейсов. WPF использует язык разметки XAML для реализации новых методов включения элементов пользовательского интерфейса, объектов мультимедиа и документов. Дополнительные сведения см. в разделе [Общие сведения о WPF](../designers/introduction-to-wpf.md).
+Хотя решения, созданные с помощью средств разработки Office в Visual Studio, предназначены для работы непосредственно с элементами управления Windows Forms, в них также можно использовать элементы управления WPF. Windows Presentation Foundation (WPF) — это альтернатива Windows Forms для разработки пользовательских интерфейсов. WPF использует язык разметки XAML для реализации новых методов включения элементов пользовательского интерфейса, объектов мультимедиа и документов. Дополнительные сведения см. в разделе [Общие сведения о WPF](/dotnet/framework/wpf/introduction-to-wpf).
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -53,11 +53,11 @@ ms.locfileid: "71253980"
 
 5. Добавьте в проект панель действий, область формы или настраиваемую область задач:
 
-    - Для областей формы добавьте в проект элемент **области формы Outlook** . Дополнительные сведения см. в разделе [Практическое руководство. Добавление области формы в проект](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)надстройки Outlook.
+    - Для областей формы добавьте в проект элемент **области формы Outlook** . Дополнительные сведения см. в разделе [инструкции. Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Для панелей действий добавьте **элемент управления панели действий** или элемент **пользовательского элемента управления** в проект. Дополнительные сведения см. в разделе [Практическое руководство. Добавление панели действий в документы Word или книги](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)Excel.
+    - Для панелей действий добавьте **элемент управления панели действий** или элемент **пользовательского элемента управления** в проект. Дополнительные сведения см. в разделе [руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    - Для настраиваемых областей задач добавьте в проект элемент **пользовательского элемента управления** . Дополнительные сведения см. в разделе [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    - Для настраиваемых областей задач добавьте в проект элемент **пользовательского элемента управления** . Дополнительные сведения см. в разделе [инструкции. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6. Перетащите пользовательский элемент управления WPF с вкладки **элементы пользовательского** элемента управления " *имя_проекта* WPF" **панели элементов**в конструктор для панели действий, области формы или настраиваемой области задач.
 
@@ -110,11 +110,11 @@ Visual Studio предоставляет средства, помогающие 
 
 Дополнительные сведения о добавлении элементов управления WPF к элементам управления и формам Windows Forms в Visual Studio во время разработки см. в следующих разделах:
 
-- [Пошаговое руководство: Создание нового содержимого WPF на Windows Forms во время разработки](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+- [Пошаговое руководство. Создание нового содержимого WPF на Windows Forms во время разработки](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
-- [Пошаговое руководство: Размещение содержимого WPF на Windows Forms во время разработки](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+- [Пошаговое руководство. размещение содержимого WPF на Windows Forms во время разработки](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
-- [Пошаговое руководство: Стиль содержимого WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+- [Пошаговое руководство. стиль содержимого WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>См. также
 
@@ -123,6 +123,6 @@ Visual Studio предоставляет средства, помогающие 
 - [Обзор панели действий](../vsto/actions-pane-overview.md)
 - [Настраиваемые области задач](../vsto/custom-task-panes.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
-- [Практическое руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Практическое руководство. Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Как добавить панель действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Как добавить настраиваемую область задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Как добавить область формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
