@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Сведения об учетной записи разработчика Windows, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: 506edeb75a2dba2831c57698a4259a09834633de
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787798"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816430"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Учетная запись разработчика Windows в подписках Visual Studio
 Учетная запись разработчика Windows, включенная в выбранные подписки Visual Studio, позволяет отправлять в Магазин Windows платные и бесплатные приложения Windows.
@@ -63,4 +63,4 @@ ms.locfileid: "68787798"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Следующие шаги
-Azure — это ваш личная среда для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure. Обязательно активируйте [преимущество Azure](vs-azure.md), чтобы использовать Azure с ежемесячной оплатой кредитами.
+Azure — это ваш личная среда для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure. Обязательно активируйте [преимущество Azure](vs-azure.md), чтобы использовать индивидуальный кредит Azure DevTest.

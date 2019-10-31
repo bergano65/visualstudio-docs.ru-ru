@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: d1703fb5386c7b29446b621d2e83f9486e93dd3d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679265"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806911"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Публикация веб-приложения в службе приложений Azure с помощью Visual Studio
 
 Приложения ASP.NET, ASP.NET Core, Node.js и .NET Core можно публиковать в службе приложений Azure или службе приложений Azure для Linux (с использованием контейнеров) одним из следующих методов.
 
-* Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
 * Для однократного развертывания (или развертывания вручную) используйте средство **публикации** в Visual Studio, чтобы развертывать приложения ASP.NET, ASP.NET Core, Node.js и .NET Core в службе приложений Azure или службе приложений для Linux (с помощью контейнеров). Для приложений Python выполните инструкции, приведенные в статье [Python: публикация в службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
@@ -33,7 +33,7 @@ ms.locfileid: "65679265"
 
 1. В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать** (или воспользуйтесь командой меню **Сборка** > **Опубликовать**).
 
-    ![Команда "Опубликовать" в контекстном меню проекта в обозревателе решений](../deployment/media/quickstart-publish.png "Выбор команды \"Опубликовать\"")
+    ![Команда "Опубликовать" в контекстном меню проекта в обозревателе решений](../deployment/media/quickstart-publish.png "Выбор команды "Опубликовать"")
 
 1. Если ранее вы настроили какие-либо профили публикации, появится панель **Опубликовать**. В этом случае выберите команду **Создать новый профиль**.
 
@@ -51,7 +51,7 @@ ms.locfileid: "65679265"
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-На предыдущих шагах вы создали ресурсы Azure в группе ресурсов. Если вы не планируете использовать эти ресурсы в будущем, вы можете удалить их, удалив саму группу ресурсов.
+На предыдущем шаге вы создали ресурсы Azure в группе ресурсов. Если вы не планируете использовать эти ресурсы в будущем, вы можете удалить их, удалив саму группу ресурсов.
 В меню слева на портале Azure выберите **Группы ресурсов**, после чего щелкните **myResourceGroup**.
 На странице группы ресурсов проверьте, действительно ли требуется удалить перечисленные ресурсы.
 Выберите **Удалить**, введите **myResourceGroup** в текстовое поле, после чего щелкните **Удалить**.

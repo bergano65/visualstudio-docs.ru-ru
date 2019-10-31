@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.openlocfilehash: 063c0348af226f0cbe06256426352edac7124b11
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929758"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816569"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 
@@ -57,7 +57,7 @@ ms.locfileid: "70929758"
 
 Подписчики Visual Studio Professional (MPN) также могут скачать и использовать программное обеспечение для разработки, включая SQL Server Developer Edition.
 
-Подписка Visual Studio Professional (MPN) не включает преимущества Azure DevOps Services, ежемесячные кредиты Azure, техническую поддержку, обучение и другие преимущества подписчиков, доступные при приобретении подписки Visual Studio.
+Подписка Visual Studio Professional (MPN) не включает преимущества Azure DevOps Services, отдельную сумму на счете в Azure DevTest, техническую поддержку, обучение и другие преимущества подписчиков, доступные при приобретении подписки Visual Studio.
 
 ## <a name="internal-use-only-restriction"></a>Доступно только для внутреннего использования
 
