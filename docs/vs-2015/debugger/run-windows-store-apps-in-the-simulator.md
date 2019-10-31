@@ -1,5 +1,5 @@
 ---
-title: Run Windows Store приложений в симуляторе | Документация Майкрософт
+title: Запуск приложений Магазина Windows в симуляторе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823847"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144775"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Запуск приложений для Магазина Windows в симуляторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ ms.locfileid: "67823847"
 ## <a name="BKMK_Choose_an_interaction_mode"></a> Выбор режима взаимодействия  
  Вы можете выбрать следующие режимы взаимодействия.  
   
-- ![Кнопка режима мыши](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") режим мыши: устанавливает режим взаимодействия с помощью жестов мыши. К жестам мыши относятся щелчки, двойные щелчки и перетаскивания.  
+- ![Кнопка режима мыши](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") Режим мыши: устанавливает режим взаимодействия для жестов мыши. К жестам мыши относятся щелчки, двойные щелчки и перетаскивания.  
   
-- ![Кнопка эмуляции сенсорного ввода запуска](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Эмуляция сенсорного экрана: Start: устанавливает режим взаимодействия с помощью жестов одним пальцем касания. К события касания одним пальцем относятся касания, перетаскивания и проведение пальцем по экрану.  
+- ![Кнопка запуска эмуляции сенсорного экрана](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Запустить эмуляцию сенсорного ввода: задает режим взаимодействия для сенсорных жестов одного пальца. К события касания одним пальцем относятся касания, перетаскивания и проведение пальцем по экрану.  
   
-     ![Цель одного пальца в симуляторе](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") один целевой значок указывает расположение событий в симуляторе. Используйте мышь для перемещения указателя.  
+     ![Цель одного пальца имитатора](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") Значок одного целевого объекта указывает расположение событий в симуляторе. Используйте мышь для перемещения указателя.  
   
-     ![Цель касания одним пальцем](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") нажмите кнопку мыши, чтобы активировать сенсорный режим. Например, нажмите кнопку, чтобы сымитировать касание, или нажмите и удерживайте кнопку по мере перетаскивания или проведения.  
+     ![Один целевой объект сенсорного пальца](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") Нажмите левую кнопку мыши, чтобы активировать сенсорный режим. Например, нажмите кнопку, чтобы сымитировать касание, или нажмите и удерживайте кнопку по мере перетаскивания или проведения.  
   
 ## <a name="pinch-and-zoom"></a>Жест сжатия и масштабирования  
  Устанавливает режим взаимодействия с помощью жестов сжатия и масштабирования, выполняемых двумя пальцами.  
   
-- ![Цель симулятора два пальца](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+- ![Цель двустороннего пальца имитатора](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
 
   - Двойной целевой значок указывает расположение двух пальцев на экране устройства.  
 
@@ -62,7 +62,7 @@ ms.locfileid: "67823847"
 
   - Поворачивайте колесико мыши назад или вперед, чтобы изменить сымитированное расстояние между двумя пальцами до сжатия или масштабирования.  
 
-- ![Сжатие, увеличение и поворот целевых объектов](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+- ![Цели сжатия, масштабирования и вращения](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
 
   - Нажмите левую кнопку и поворачивайте колесико мыши назад (к себе), чтобы увеличить масштаб (сжатие).  
 
@@ -86,7 +86,7 @@ ms.locfileid: "67823847"
  Можно переключиться между книжной и альбомной ориентацией устройства, повернув симулятор на 90 градусов в любом направлении.  
   
 > [!NOTE]
-> Имитатор не связан со свойством [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) проекта. Например, если для проекта задать ориентацию `Landscape`, а затем повернуть симулятор для отображения в книжной ориентации, изображение симулятора также будет повернуто, и его размер будет изменен. Проверьте эти параметры на настоящем устройстве.  
+> Имитатор не связан со свойством [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) проекта. Например, если для проекта задать ориентацию `Landscape`, а затем повернуть симулятор для отображения в книжной ориентации, изображение симулятора также будет повернуто, и его размер будет изменен. Проверьте эти параметры на настоящем устройстве.  
   
 > [!NOTE]
 > При повороте симулятора таким образом, что один его край больше экрана, на котором он отображается, размер симулятора изменяется автоматически для соответствия размеру экрана. Размер симулятора не изменяется до исходного при повторном повороте симулятора.  
@@ -112,7 +112,7 @@ ms.locfileid: "67823847"
      ![Контекстное меню параметров снимка экрана](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Имитация свойств сетевых подключений  
- Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) позволяют реагировать на события [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) и [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) , на которые имеется подписка. Подробнее см. в [кратком руководстве по Управление ограничениями расходов на лимитных сетевых](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) позволяют реагировать на события [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) и [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) , на которые имеется подписка. См. [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых подключений, имитатор может имитировать свойства сети, представляемые с помощью объекта [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) , который возвращается методом [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
@@ -136,12 +136,12 @@ ms.locfileid: "67823847"
   
    **Дополнительные сведения об управлении сетевыми подключениями**  
   
-   [Краткое руководство. Управление ограничениями лимитным расходов](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
-   [Пример информации по сети](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Пример информации по сети](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
    [Анализ энергопотребления](../profiling/analyze-energy-use-in-store-apps.md)  
-  
+    
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
    [Реакция на системные события с фоновыми задачами](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
@@ -153,5 +153,5 @@ ms.locfileid: "67823847"
   
  Чтобы завершить работу имитатора, нажмите сочетание клавиш **CTRL+ALT+F4**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

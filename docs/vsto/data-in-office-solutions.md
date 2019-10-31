@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955980"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189694"
 ---
 # <a name="data-in-office-solutions"></a>Данные в решениях Office
   Многие решения Office позволяют пользователям извлекать или изменять данные. При создании решений Office с помощью среды Visual Studio существует несколько различных способов работы с данными.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В данном разделе
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  Описывается привязка данных к элементам управления в решениях Office.
 
-- [Общие сведения о настраиваемых частях XML](../vsto/custom-xml-parts-overview.md)
+- [Общие сведения о пользовательских XML-частях](../vsto/custom-xml-parts-overview.md)
 
  Описывается использование пользовательских XML-частей для работы с данными в решениях Office.
 
@@ -41,7 +41,7 @@ ms.locfileid: "62955980"
 
  Описывается использование схем XML в настройках уровня документа для создания элементов управления, привязанных к данным XML.
 
-- [Использовать файлы локальной базы данных в общие сведения о решений Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [Общие сведения об использовании файлов локальной базы данных в решениях Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 
  Описывается импорт файлов базы данных в проекты и ситуации, в которых можно кэшировать данные для автономного использования.
 
@@ -50,7 +50,7 @@ ms.locfileid: "62955980"
 
  Перечисляет разделы, иллюстрирующие работу с данными в Visual Studio.
 
-- [Сохранение данных](../data-tools/saving-data.md)
+- [Сохранение данных](../data-tools/save-data-back-to-the-database.md)
 
  Содержит ссылки на разделы, посвященные работе с наборами данных, включая внесение изменений в данные набора и последующую запись этих изменений обратно в источник данных.
 

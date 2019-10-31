@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74cb79a68298bb1c544b0f0646787e82e04cb810
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c46b0e7ea6cad5cb96117dedaa28ba6c4505a90b
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255171"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189648"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Изменения в проектировании проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4,5
   Начиная с версии [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], в Visual Studio появился ряд изменений в структуре проектов Office, которые ориентируются на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию. Если вы знакомы с проектами Office в предыдущих версиях Visual Studio, вам следует ознакомиться с этими изменениями до разработки проектов Office, ориентированных на платформу .NET Framework версии 4.0 или более поздней. По умолчанию, все проекты, создаваемые с помощью Visual Studio 2013 или более поздней версии, ориентируются на платформу .NET Framework 4.0 или более поздней версии.
@@ -32,7 +32,7 @@ ms.locfileid: "71255171"
 
 - [Обновление проектов Excel и Word, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
-- [Обновление настроек ленты в проектах Office, переносимых на .NET Framework 4 или .NET Framework 4,5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
+- [Обновление настроек ленты в проектах Office, переносимых на .NET Framework 4 или .NET Framework 4,5](update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5.md)
 
 - [Обновление областей формы в проектах Outlook, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
@@ -48,13 +48,13 @@ ms.locfileid: "71255171"
 |---------------------|-----------------|
 |<xref:System.Security.SecurityTransparentAttribute> больше не используется и не поддерживается в проектах Office.|Этот атрибут необходимо удалить из файла кода AssemblyInfo в проектах Office, которые вы переносите из Visual Studio 2008. Дополнительные сведения см. в разделе [необходимые изменения для запуска проектов Office, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |**Удаление ExcelLocale1033Attribute** больше не используется или не поддерживается в проектах Excel.|Этот атрибут необходимо удалить из файла кода *AssemblyInfo* в проектах Excel. Дополнительные сведения см. в [статье обновление проектов Excel и Word, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
-|Изменилась модель программирования элементов проекта **Лента (визуальный конструктор)** .|Необходимо изменить файл кода программной части для всех элементов ленты в проекте. Также необходимо изменить любой код, который создает экземпляры элементов управления ленты во время выполнения, обрабатывает события ленты или программно задает положение компонента ленты. Дополнительные сведения см. в [статье обновление настроек ленты в проектах Office, переносимых на .NET Framework 4 или .NET Framework 4,5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|
+|Изменилась модель программирования элементов проекта **Лента (визуальный конструктор)** .|Необходимо изменить файл кода программной части для всех элементов ленты в проекте. Также необходимо изменить любой код, который создает экземпляры элементов управления ленты во время выполнения, обрабатывает события ленты или программно задает положение компонента ленты. Дополнительные сведения см. в [статье обновление настроек ленты в проектах Office, переносимых на .NET Framework 4 или .NET Framework 4,5](update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5.md).|
 |Изменилась модель программирования областей формы Outlook.|Необходимо изменить файл кода программной части для всех областей формы в проекте и любой код, который создает экземпляры определенных классов областей формы во время выполнения. Дополнительные сведения см. в разделе [Обновление областей формы в проектах Outlook, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |Изменилась модель программирования для смарт-тегов в проектах Excel и Word. Смарт-теги объявлены нерекомендуемыми в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Если в решении используются смарт-теги, то при сборке проекта будут возникать ошибки. Так как смарт-теги являются устаревшими в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)], их необходимо удалить до начала тестирования и отладки решения в [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] или более поздней версии.|
 |Изменился синтаксис методов `GetVstoObject` и `HasVstoObject`.|Необходимо передавать объект `Globals.Factory` в эти методы, когда вы получаете к ним доступ в нативных объектах из основных сборок взаимодействия (PIA), или доступ к этим методам можно получать в объекте, который возвращается свойством `Globals.Factory` в проекте. Дополнительные сведения см. в [статье обновление проектов Excel и Word, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |События элементов управления содержимым Word связаны с новыми делегатами.|Необходимо изменить любой код, который обрабатывает события элементов управления содержимым Word, и указать новые делегаты. Дополнительные сведения см. в [статье обновление проектов Excel и Word, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |Были переименованы классы `OLEObject` и `OLEControl`.|Необходимо изменить любой код, который использует экземпляры этих классов, чтобы использовать вместо них объекты <xref:Microsoft.Office.Tools.Excel.ControlSite> или <xref:Microsoft.Office.Tools.Word.ControlSite> . Дополнительные сведения см. в [статье обновление проектов Excel и Word, переносимых на .NET Framework 4 или .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
-|Классы ведущих элементов, такие как `ThisWorkbook`, `Sheet` *n*, `ThisDocument`и `ThisAddIn`, больше не предоставляют `Dispose` метод, который можно переопределить.|Необходимо переместить любой код в переопределении метода `Dispose` в обработчик событий `Shutdown` в классе ведущего элемента, например, `ThisAddIn_Shutdown` и удалить переопределение метода `Dispose` из класса ведущего элемента.|
+|Классы ведущих элементов, такие как `ThisWorkbook`, `Sheet`*n*, `ThisDocument`и `ThisAddIn`, больше не предоставляют метод `Dispose`, который можно переопределить.|Необходимо переместить любой код в переопределении метода `Dispose` в обработчик событий `Shutdown` в классе ведущего элемента, например, `ThisAddIn_Shutdown` и удалить переопределение метода `Dispose` из класса ведущего элемента.|
 
 ## <a name="see-also"></a>См. также
 - [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

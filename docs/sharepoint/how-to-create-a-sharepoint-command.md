@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание команды SharePoint | Документация Майкрософт
+title: Как создать команду SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,72 +12,72 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c07d541dc4f68f33d48e7cb41b6bc3923b2ea52
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435457"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189229"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Практическое руководство. Создание команды SharePoint
-  Если вы хотите использовать серверную объектную модель в расширения инструментов SharePoint, необходимо создать пользовательский *команды SharePoint* для вызова API. Команда SharePoint определяется в сборке, которая может напрямую вызывать серверную объектную модель.
+# <a name="how-to-create-a-sharepoint-command"></a>Как создать команду SharePoint
+  Если вы хотите использовать объектную модель сервера в расширении инструментов SharePoint, необходимо создать пользовательскую *команду SharePoint* для вызова API. Команда SharePoint определяется в сборке, которая может напрямую вызывать серверную объектную модель.
 
- Дополнительные сведения о назначении команд SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+ Дополнительные сведения о назначении команд SharePoint см. в разделе [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 ### <a name="to-create-a-sharepoint-command"></a>Создание команды SharePoint
 
-1. Создайте проект библиотеки классов, который имеет следующую конфигурацию:
+1. Создайте проект библиотеки классов со следующей конфигурацией:
 
-    - Предназначенный для .NET Framework 3.5. Дополнительные сведения о выборе целевой платформы, см. в разделе [как: определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    - Предназначен для .NET Framework 3,5. Дополнительные сведения о выборе требуемой версии .NET Framework см. в разделе [как выбрать целевую версию .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-    - Целевая платформа AnyCPU или x64 платформы. По умолчанию целевая платформа для проектов библиотек классов — AnyCPU. Дополнительные сведения о выборе целевой платформы см. в разделе [как: настроить целевые платформы в проектах](../ide/how-to-configure-projects-to-target-platforms.md).
+    - Нацелен на платформу AnyCPU или x64. По умолчанию целевой платформой для проектов библиотек классов является AnyCPU. Дополнительные сведения о выборе целевой платформы см. в разделе [руководство. Настройка проектов для целевых платформ](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    > Команды SharePoint не может реализовать в том же проекте, который определяет расширение инструментов SharePoint, так как команды SharePoint предназначены для целевой платформы .NET Framework 3.5 и SharePoint средства расширения [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Необходимо определить команды SharePoint, используемых модулем в отдельном проекте. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Нельзя реализовать команду SharePoint в том же проекте, который определяет расширение "инструменты SharePoint", так как команды SharePoint предназначены для расширений .NET Framework 3,5 и инструментов SharePoint, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Необходимо определить все команды SharePoint, используемые вашим расширением в отдельном проекте. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Добавьте ссылки на следующие сборки:
 
-    - Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft. VisualStudio. SharePoint. Commands
 
-    - Microsoft.SharePoint
+    - Microsoft. SharePoint
 
-3. В класс в проекте создайте метод, который определяет команду SharePoint. Этот метод должен соответствовать следующим правилам:
+3. В классе в проекте создайте метод, определяющий команду SharePoint. Метод должен соответствовать следующим рекомендациям:
 
     - Он может иметь один или два параметра.
 
-         Первый параметр должен быть <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> объекта. Этот объект предоставляет Microsoft.SharePoint.SPSite или Microsoft.SharePoint.SPWeb, в котором выполняется команда. Он также предоставляет <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> объект, который может использоваться для записи сообщений в **вывода** окна или **список ошибок** окно в Visual Studio.
+         Первый параметр должен быть <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>ным объектом. Этот объект предоставляет узел Microsoft. SharePoint. a или Microsoft. SharePoint. SPWeb, в котором выполняется команда. Он также предоставляет объект <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger>, который можно использовать для записи сообщений в окно **вывода** или **Список ошибок** окно в Visual Studio.
 
-         Второй параметр может быть типом по своему усмотрению, но этот параметр является необязательным. Этот параметр можно добавить команду SharePoint, если необходимо передать данные из расширения средств SharePoint в команду.
+         Вторым параметром может быть выбранный вами тип, но этот параметр является необязательным. Этот параметр можно добавить в команду SharePoint, если необходимо передать данные из расширения инструментов SharePoint в команду.
 
     - Он может иметь возвращаемое значение, но это необязательно.
 
-    - Второй параметр и возвращаемое значение должно быть типом, который может быть сериализован с Windows Communication Foundation (WCF). Дополнительные сведения см. в разделе [Types Supported by the Data Contract Serializer](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) и [с помощью класса XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
+    - Второй параметр и возвращаемое значение должны быть типом, который может быть сериализован Windows Communication Foundation (WCF). Дополнительные сведения см. в разделе [типы, поддерживаемые сериализатором контрактов данных](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) , и [использование класса XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - Метод может быть любой уровень (**открытый**, **внутренней**, или **частного**), и может быть статическим или статическим.
+    - Метод может иметь любую видимость (**открытый**, **внутренний**или **частный**) и может быть статическим или не статическим.
 
-4. Применить <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> методу. Этот атрибут задает уникальный идентификатор для команды; Этот идентификатор не совпадает с именем метода.
+4. Примените <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> к методу. Этот атрибут задает уникальный идентификатор для команды. Этот идентификатор не обязательно должен совпадать с именем метода.
 
-     При вызове команды из расширения средств SharePoint необходимо указать тот же уникальный идентификатор. Дополнительные сведения см. в разделе [Как Выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).
+     При вызове команды из расширения инструментов SharePoint необходимо указать тот же уникальный идентификатор. Дополнительные сведения см. [в разделе инструкции. выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).
 
 ## <a name="example"></a>Пример
- В следующем примере кода демонстрируется команда SharePoint с идентификатором `Contoso.Commands.UpgradeSolution`. Эта команда использует интерфейсы API в серверной объектной модели для обновления до развернутого решения.
+ В следующем примере кода демонстрируется команда SharePoint с идентификатором `Contoso.Commands.UpgradeSolution`. Эта команда использует интерфейсы API в серверной модели объектов для обновления до развернутого решения.
 
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
 
- Помимо явного первого <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> параметр, эта команда также имеет параметр пользовательскую строку, содержащую полный путь к WSP-файла, которое обновляется на сайте SharePoint. Этот код в контексте большего примера, см. в разделе [Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+ Помимо неявного параметра first <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>, эта команда также имеет пользовательский строковый параметр, содержащий полный путь к WSP-файлу, который обновляется на сайте SharePoint. Чтобы просмотреть этот код в контексте более крупного примера, см. раздел [Пошаговое руководство. Создание настраиваемого шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="compiling-the-code"></a>Компиляция кода
- В этом примере требуются ссылки на следующие сборки:
+ Для этого примера требуются ссылки на следующие сборки:
 
-- Microsoft.VisualStudio.SharePoint.Commands
+- Microsoft. VisualStudio. SharePoint. Commands
 
-- Microsoft.SharePoint
+- Microsoft. SharePoint
 
 ## <a name="deploying-the-command"></a>Развертывание команды
- Чтобы развернуть команды, включите ее сборку в том же [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] расширения (*vsix*) пакета с помощью сборки модуля, который использует команду. Необходимо также добавить запись для сборки команды в файл extension.vsixmanifest. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Чтобы развернуть команду, включите сборку команды в тот же пакет расширения [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] (*VSIX*) с сборкой расширения, которая использует команду. Кроме того, необходимо добавить запись для сборки команды в файл Extension. vsixmanifest. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>См. также
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Практическое руководство. Выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
-- [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Инструкции: выполнение команды SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
+- [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

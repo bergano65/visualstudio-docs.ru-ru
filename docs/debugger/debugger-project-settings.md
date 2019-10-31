@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738329"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188632"
 ---
 # <a name="debugger-project-settings"></a>Параметры проекта отладчика
 Определенные параметры проекта также влияют на отладку. Определяются такие элементы, как каталоги, которые просматривает отладчик; команда и параметры команды, используемые для запуска программы; тип отладочных данных, создаваемых для программы. Эти параметры можно изменить в диалоговом окне **Страницы свойств** .
@@ -44,7 +44,7 @@ ms.locfileid: "72738329"
 ## <a name="related-sections"></a>Связанные разделы
  [Указание символов (. pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Описывает, как отладчик использует файлы символов и исходные файлы для отображения информации для отладки.
 
- [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) Описание отладки приложений UWP. (Центр разработки для Windows).
+ [Отладка приложений в Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Описание отладки приложений UWP. (Центр разработки для Windows).
 
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md) Описание параметров свойств, связанных с отладчиком, и подготовки, необходимой для отладки программы с помощью отладчика [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 

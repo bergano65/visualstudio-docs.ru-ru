@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745640"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188651"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Создание пользовательских представлений управляемых объектов (C#, Visual Basic, F#, C++/CLI)
 Можно настроить то, как Visual Studio отображает типы данных в окнах переменных отладчика.
@@ -41,10 +41,10 @@ ms.locfileid: "72745640"
 
 ## <a name="visualizers"></a>Визуализаторы
 
-Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. [в разделе Практические руководства. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data).
+Можно написать визуализатор для отображения любого управляемого типа. Дополнительные сведения см. [в разделе Практические руководства. Написание визуализатора](create-custom-visualizers-of-data.md).
 
 > [!NOTE]
-> Для C++ кода можно добавить расширения пользовательских типов данных с помощью платформы Natvis, как описано в разделе [Создание пользовательских представлений C++ объектов в отладчике](/visualstudio/debugger/create-custom-views-of-native-objects).
+> Для C++ кода можно добавить расширения пользовательских типов данных с помощью платформы Natvis, как описано в разделе [Создание пользовательских представлений C++ объектов в отладчике](create-custom-views-of-native-objects.md).
 
 ## <a name="see-also"></a>См. также
 

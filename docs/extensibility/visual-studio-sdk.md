@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 662b64f69b278c4cc815a742c5cba26592e000bd
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981704"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189083"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio помогает расширить возможности Visual Studio или интегрировать новые функции в Visual Studio. Вы можете распространять расширения для других пользователей, а также для Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:
@@ -74,6 +74,7 @@ ms.locfileid: "72981704"
 - [Расширение Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>См. также
+
 - [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Руководство. Миграция проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 - [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
@@ -93,5 +94,4 @@ ms.locfileid: "72981704"
 - [Поставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Компоненты пакета SDK для Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Поддержка пакета SDK для Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Архив](../extensibility/archive.md)
 - [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

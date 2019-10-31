@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728385"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187143"
 ---
 # <a name="visualizer-security-considerations"></a>Вопросы безопасности визуализатора
 Создание визуализатора может быть потенциально небезопасным. В настоящее время нет известных примеров использования потенциальных угроз, но разработчикам следует учитывать возможность разработки вредоносного кода в будущем и принимать соответствующие меры безопасности, описанные в данном разделе.
@@ -39,6 +39,6 @@ ms.locfileid: "72728385"
 
 ## <a name="see-also"></a>См. также
 - [Архитектура визуализатора](../debugger/visualizer-architecture.md)
-- [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Практическое руководство. Написание визуализатора](create-custom-visualizers-of-data.md)
 - [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)
 - [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)

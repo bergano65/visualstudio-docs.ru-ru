@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349711"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188096"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Поиск задачи отладки в Visual Studio
 
@@ -43,11 +43,15 @@ ms.locfileid: "72349711"
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>Приостановить код внутри цикла в определенной итерации
 
-Установите точку останова, используя **количество попаданий** в качестве условия. Дополнительные сведения см. в разделе [число попаданий](using-breakpoints.md#hit-count).
+Установите точку останова, используя **количество попаданий** в качестве условия. Дополнительные сведения см. в разделе [число попаданий](using-breakpoints.md#set-a-hit-count-condition).
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>Приостановить код в начале функции, если известно имя функции, но не ее расположение
 
 Это можно сделать с помощью точки останова функции. Дополнительные сведения см. в разделе [Задание точек останова для функций](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>Приостановить код в начале нескольких функций с тем же именем
+
+При наличии нескольких функций с одинаковыми именами (перегруженные функции или функции в разных проектах) можно использовать [точку останова функции](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>Управляйте точками останова и следите за ними
 
@@ -101,11 +105,15 @@ ms.locfileid: "72349711"
 
 ### <a name="edit-code-during-a-debugging-session"></a>Изменение кода во время сеанса отладки
 
-Используйте ["изменить и продолжить"](edit-and-continue.md). Для XAML используйте [горячую перезагрузку XAML](xaml-hot-reload.md).
+Используйте ["изменить и продолжить"](edit-and-continue.md). Для XAML используйте [горячую перезагрузку XAML](../xaml-tools/xaml-hot-reload.md).
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Отправка сообщений в окно вывода без изменения кода
 
 Задайте точку трассировки. Дополнительные сведения см. [в разделе Использование точек отслеживания](using-tracepoints.md).
+
+## <a name="view-the-order-in-which-functions-are-called"></a>Просмотр порядка, в котором вызываются функции
+
+См. раздел [Просмотр стека вызовов](how-to-use-the-call-stack-window.md).
 
 ### <a name="debug-on-remote-machines"></a>Отладка на удаленных компьютерах
 

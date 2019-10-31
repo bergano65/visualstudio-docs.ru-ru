@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981720"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189220"
 ---
 # <a name="localize-sharepoint-solutions"></a>Локализация решений SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981720"
 |Не зависящий от языка|Файл ресурсов, который содержит строки, локализованные для языка, но не для конкретного языка и региональных параметров. Например, "fr" для французского языка.|
 |Для конкретного языка|Файл ресурсов, содержащий строки, локализованные для языка и языка и региональных параметров. Например, "fr-CA" для французского языка (Канада).|
 
- Дополнительные сведения см. в разделе [Иерархическая организация ресурсов для локализации](../ide/hierarchical-organization-of-resources-for-localization.md).
+ Дополнительные сведения см. в разделе [Иерархическая организация ресурсов для локализации](../ide/globalizing-and-localizing-applications.md).
 
  Чтобы указать файлы ресурсов по умолчанию в проектах SharePoint, разрабатываемых в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], выберите **инвариантный язык (инвариантная страна)** в списке язык и региональные параметры диалогового окна **Добавление ресурса** при добавлении файла ресурсов.
 

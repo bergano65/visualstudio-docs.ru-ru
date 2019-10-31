@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984975"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189152"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и связывания его с шаблоном элемента в Visual Studio может также потребоваться создать мастер для шаблона. С помощью мастера можно получать сведения от пользователей, когда они используют шаблон для добавления нового экземпляра элемента проекта в проект. Собранные сведения можно использовать для инициализации элемента проекта.
@@ -79,7 +79,7 @@ ms.locfileid: "72984975"
 
 2. В **конструкторе проектов**убедитесь, что для целевой платформы задано значение .NET Framework 4,5.
 
-     Для визуальных C# проектов это значение можно задать на вкладке **приложение** . Для проектов Visual Basic это значение можно задать на вкладке **Компиляция** . Дополнительные сведения см. в разделе [инструкции. Назначение версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     Для визуальных C# проектов это значение можно задать на вкладке **приложение** . Для проектов Visual Basic это значение можно задать на вкладке **Компиляция** . Дополнительные сведения см. в разделе [инструкции. Назначение версии .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 3. В проекте **итемтемплатевизард** добавьте в проект элемент **Window (WPF)** , а затем назовите элемент **визардвиндов**.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72984975"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > Окно, созданное в этом XAML, является производным от базового класса <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. При добавлении пользовательского диалогового окна WPF в Visual Studio рекомендуется создать производное диалоговое окно от этого класса, чтобы обеспечить единообразное оформление с помощью других диалоговых окон в Visual Studio и избежать проблем, которые могут возникнуть в противном случае с модальными диалоговыми окнами. Дополнительные сведения см. в разделе [Создание модальных диалоговых окон и управление ими](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Окно, созданное в этом XAML, является производным от базового класса <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. При добавлении пользовательского диалогового окна WPF в Visual Studio рекомендуется создать производное диалоговое окно от этого класса, чтобы обеспечить единообразное оформление с помощью других диалоговых окон в Visual Studio и избежать проблем, которые могут возникнуть в противном случае с модальными диалоговыми окнами. Дополнительные сведения см. в разделе [Создание модальных диалоговых окон и управление ими](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 3. Если вы разрабатываете проект Visual Basic, удалите `ItemTemplateWizard` пространство имен из `WizardWindow` имени класса в атрибуте `x:Class` элемента `Window`. Этот элемент находится в первой строке XAML. Когда все будет готово, первая строка должна выглядеть следующим образом:
 
@@ -206,7 +206,7 @@ ms.locfileid: "72984975"
     </WizardExtension>
     ```
 
-     Дополнительные сведения об элементе `WizardExtension` см. в разделе [Визардекстенсион element &#40;Visual Studio Templates&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
+     Дополнительные сведения об элементе `WizardExtension` см. в разделе [Визардекстенсион element &#40;Visual Studio Templates&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Сохраните и закройте файл.
 
@@ -345,6 +345,6 @@ ms.locfileid: "72984975"
 - [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Создание шаблонов элементов и проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Расположения и идентификаторы настраиваемых действий по умолчанию](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

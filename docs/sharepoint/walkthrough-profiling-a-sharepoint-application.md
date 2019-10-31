@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981157"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189124"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Пошаговое руководство. Профилирование приложения SharePoint
   В этом пошаговом руководстве рассказывается, как использовать средства профилирования в Visual Studio, чтобы оптимизировать производительность приложений SharePoint. Примером приложения служит приемник событий компонентов SharePoint, который содержит цикл простоя, что ведет к снижению производительности приемника событий компонентов. Профилировщик Visual Studio позволяет нахождение и устранение наиболее дорогостоящей (самой медленной) части проекта, также известной как *горячий путь*.
@@ -197,7 +197,7 @@ ms.locfileid: "72981157"
 
 2. На странице один из **мастеров производительности**оставьте метод профилирования как **выборка ЦП** и нажмите кнопку **Далее** .
 
-     В более сложных случаях профилирования можно использовать другие методы профилирования. Дополнительные сведения см. в статье [Общие сведения о методах сбора данных по производительности](/visualstudio/profiling/understanding-performance-collection-methods).
+     В более сложных случаях профилирования можно использовать другие методы профилирования. Дополнительные сведения см. в статье [Общие сведения о методах сбора данных по производительности](../profiling/understanding-performance-collection-methods.md).
 
 3. На второй странице **мастера производительности**оставьте целевой профиль **профилетест** и нажмите кнопку **Далее** .
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981157"
      Теперь, когда вызов цикла простоя устранен, компонент должен активироваться гораздо быстрее. Отчет о профилировании выборки должен отражать это.
 
 ## <a name="see-also"></a>См. также
-- [Обозреватель производительности](/visualstudio/profiling/performance-explorer)
-- [Общие сведения о сеансе анализа производительности](/visualstudio/profiling/performance-session-overview)
-- [Руководство по профилированию производительности для начинающих](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Обозреватель производительности](../profiling/performance-explorer.md)
+- [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
+- [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)
 - [Поиск узких мест приложений с помощью профилировщика Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)
