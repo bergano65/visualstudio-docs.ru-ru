@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Сведения об активации подписки Parasoft Virtualize/SOA Test Professional, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787710"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816478"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
@@ -92,4 +92,4 @@ ms.locfileid: "68787710"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Следующие шаги
-Воспользуйтесь собственной песочницей разработки, активировав [деньги на счете в Azure](vs-azure.md). 
+Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md). 

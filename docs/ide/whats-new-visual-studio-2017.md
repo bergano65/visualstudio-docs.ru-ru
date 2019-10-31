@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925906"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919150"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -196,7 +196,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Вы увидите некоторые улучшения в Visual Studio, а именно — распространение основных рекомендаций C++ в Visual Studio, обновление компилятора с помощью добавления расширенной поддержки функций C++11 и C++, а также добавление и обновление функциональных возможностей библиотек C++. Мы также повысили производительность интегрированной среды разработки C++, рабочих нагрузок установки и т. д.
 
-Мы устранили более 250 ошибок и заявленных проблем в компиляторе и других инструментах. Информация о многих из этих ошибок поступила к нам от клиентов через [сообщество разработчиков для C++](https://developercommunity.visualstudio.com/spaces/62/index.html "сообщество разработчиков для C++").
+Мы устранили более 250 ошибок и заявленных проблем в компиляторе и других инструментах. Информация о многих из этих ошибок поступила к нам от клиентов через [сообщество разработчиков для C++](https://developercommunity.visualstudio.com/spaces/62/index.html "Сообщество разработчиков для C++").
 
 Дополнительные сведения см. в статье [Новые возможности Visual C++ в Visual Studio 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).
 
@@ -222,7 +222,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Для просмотра моментальных снимков и перехода между ними используйте кнопки **На шаг назад** и **На шаг вперед** на панели инструментов **Отладка**. С помощью этих кнопок можно перейти к событиям, которые отображаются на вкладке **События** в окне **Средства диагностики**. При переходе на шаг назад или вперед к событию автоматически активируется отладка с ведением журнала для выбранного события.
 
-![Диалоговое окно нового помощника по исправлению ошибок в Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Кнопки \"На шаг назад\" и \"На шаг вперед\"")
+![Новое диалоговое окно помощника по исправлению ошибок в Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Кнопки "Назад" и "Вперед"")
 
 Дополнительные сведения см. на странице [Просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace](../debugger/view-historical-application-state.md).
 
@@ -243,7 +243,7 @@ Visual Studio перемещает свои расширения, а также 
 
 В рамках рабочей нагрузки "Разработка для Azure" мы включили средства, упрощающие разработку функций Azure с помощью предварительно скомпилированных библиотек классов C#. Теперь вы можете создавать, запускать проекты и выполнять их отладку на локальном компьютере разработчика, а затем публиковать их из Visual Studio непосредственно в Azure.
 
-Дополнительные сведения см. на странице [Средства функций Azure для Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).
+Дополнительные сведения см. на странице [Средства функций Azure для Visual Studio](/azure/azure-functions/functions-develop-vs).
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Отладка работающих приложений ASP.NET с использованием точек прикрепления и точек ведения журнала в работающих приложениях Azure
 
@@ -269,7 +269,7 @@ Visual Studio перемещает свои расширения, а также 
 **Новая возможность в версии 15.5**: Версия 15.5 среды Visual Studio 2017 обеспечивает наилучшую поддержку пакета SDK Windows 10 Fall Creators Update (10.0.16299.0). В Windows 10 Fall Creators Update также реализовано множество улучшений для разработчиков приложений для универсальной платформы Windows. Ниже приведены некоторые из основных изменений: 
 
 * **Поддержка .NET Standard 2.0**<br/>Помимо оптимизированного развертывания приложений, в обновлении Windows 10 Fall Creators Update впервые в Windows 10 реализована поддержка .NET Standard 2.0. Фактически [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) — это эталонная реализация библиотеки базовых классов, которые могут реализовываться на любой платформе .NET. Основная цель .NET Standard — максимально упростить разработчикам совместное использование кода на любой выбранной для работы платформе .NET.
-* **Сочетание лучших возможностей универсальной платформы Windows и Win32**<br/>Чтобы улучшить платформу Windows 10 и максимально упростить работу с ней для разработчиков любых приложений .NET, в том числе для универсальной платформы Windows, Windows Presentation Foundation, Windows Forms или Xamarin, мы представляем [мост для классических приложений](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root). Благодаря новому типу проекта, "Пакет приложений", в Visual Studio 2017 версии 15.5 вы можете создавать пакеты приложений Windows для проектов Windows Presentation Foundation или Windows Forms так же, как и для проектов для универсальной платформы Windows. После упаковки приложения вы получаете все преимущества его развертывания в Windows 10 и возможность распространять его через магазин Microsoft Store (пользовательские приложения) или через магазин Microsoft Store для бизнеса и для образовательных учреждений. Поскольку упакованные приложения получают доступ ко всей области API универсальной платформы Windows и к API Win32 для классических приложений, теперь вы можете постепенно модернизировать свои приложения Windows Presentation Foundation и Windows, используя возможности API универсальной платформы Windows и Windows 10. Более того, вы можете включить в приложения для универсальной платформы Windows компоненты Win32, благодаря чему получите доступ к возможностям Win32 в классическом приложении.
+* **Сочетание лучших возможностей универсальной платформы Windows и Win32**<br/>Чтобы улучшить платформу Windows 10 и максимально упростить работу с ней для разработчиков любых приложений .NET, в том числе для универсальной платформы Windows, Windows Presentation Foundation, Windows Forms или Xamarin, мы представляем [мост для классических приложений](/windows/uwp/porting/desktop-to-uwp-root). Благодаря новому типу проекта, "Пакет приложений", в Visual Studio 2017 версии 15.5 вы можете создавать пакеты приложений Windows для проектов Windows Presentation Foundation или Windows Forms так же, как и для проектов для универсальной платформы Windows. После упаковки приложения вы получаете все преимущества его развертывания в Windows 10 и возможность распространять его через магазин Microsoft Store (пользовательские приложения) или через магазин Microsoft Store для бизнеса и для образовательных учреждений. Поскольку упакованные приложения получают доступ ко всей области API универсальной платформы Windows и к API Win32 для классических приложений, теперь вы можете постепенно модернизировать свои приложения Windows Presentation Foundation и Windows, используя возможности API универсальной платформы Windows и Windows 10. Более того, вы можете включить в приложения для универсальной платформы Windows компоненты Win32, благодаря чему получите доступ к возможностям Win32 в классическом приложении.
 
 Дополнительные сведения об универсальной платформе Windows см. на странице [Разработка приложений для универсальной платформы Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
 
@@ -323,12 +323,12 @@ Visual Studio перемещает свои расширения, а также 
 
 В составе Visual Studio 2017 Enterprise:
 
-* [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) помогает разрабатывать скрипты переноса, управлять изменениями в базах данных с помощью системы управления версиями, а также автоматизировать безопасное развертывание изменений базы данных SQL Server вместе с изменениями приложений.
-* [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) помогает писать запросы SQL быстрее и точнее с помощью интеллектуального завершения кода. SQL Prompt автоматически завершает объекты и ключевые слова базы данных и системы и предлагает варианты при вводе текста. Код становится чище и содержит меньше ошибок, так как вам не нужно запоминать имя или псевдоним каждого столбца.
+* [Redgate ReadyRoll Core](https://www.red-gate.com/products/sql-development/sql-change-automation/?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) помогает разрабатывать скрипты переноса, управлять изменениями в базах данных с помощью системы управления версиями, а также автоматизировать безопасное развертывание изменений базы данных SQL Server вместе с изменениями приложений.
+* [Redgate SQL Prompt Core](https://www.red-gate.com/products/sql-development/sql-prompt/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) помогает писать запросы SQL быстрее и точнее с помощью интеллектуального завершения кода. SQL Prompt автоматически завершает объекты и ключевые слова базы данных и системы и предлагает варианты при вводе текста. Код становится чище и содержит меньше ошибок, так как вам не нужно запоминать имя или псевдоним каждого столбца.
 
 В составе всех выпусков Visual Studio 2017:
 
-* [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) повышает продуктивность работы, позволяя быстро находить фрагменты и объекты SQL в нескольких базах данных.
+* [Redgate SQL Search](https://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) повышает продуктивность работы, позволяя быстро находить фрагменты и объекты SQL в нескольких базах данных.
 
 Дополнительные сведения см. в статье блога [Средства работы с данными Redgate в Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/).
 

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128159"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806925"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
@@ -50,7 +50,7 @@ ms.locfileid: "71128159"
 
 - **ASP.NET**, **ASP.NET Core**, **Python** и **Node.js**. Публикуйте приложения в службе приложений Azure или службе приложений Azure в Linux (с помощью контейнеров), используя один из следующих методов.
 
-  - Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
   - Для однократного развертывания приложений (или развертывания вручную) используйте средство **публикации** в Visual Studio.
 
@@ -81,7 +81,7 @@ ms.locfileid: "71128159"
 
     Дополнительные сведения об импорте профиля публикации в Visual Studio см. в статье [Импорт параметров публикации и развертывание в IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Также вы можете развертывать приложения и службы ASP.NET некоторыми другими способами. Дополнительные сведения см. в статье [Развертывание веб-приложений и служб ASP.NET](http://www.asp.net/aspnet/overview/deployment).
+    Также вы можете развертывать приложения и службы ASP.NET некоторыми другими способами. Дополнительные сведения см. в статье [Развертывание веб-приложений и служб ASP.NET](/aspnet/mvc/overview/deployment/).
 
 - **Классические приложения Windows**. Вы можете публиковать классические приложения Windows на веб-сервере или в общей сетевой папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C++/CLI см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
@@ -118,7 +118,7 @@ ms.locfileid: "71128159"
    Для Visual Studio 2019 см. сведения о [расширении набора инструментов WiX для Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
    ::: moniker-end
 
-- Пакет установщика MSI или EXE можно создать, используя [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) из Flexera Software. Вместе с Visual Studio 2017 и последующими версиями можно использовать компонент InstallShield (выпуск Community Edition не поддерживается). Обратите внимание, что версия InstallShield Limited Edition больше не входит в состав среды Visual Studio и не поддерживается в Visual Studio 2017 и последующих версиях. Информацию о ее дальнейшей доступности см. в документации по [программному обеспечению Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
+- Пакет установщика MSI или EXE можно создать, используя [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) из Flexera Software. Вместе с Visual Studio 2017 и последующими версиями можно использовать компонент InstallShield (выпуск Community Edition не поддерживается). Обратите внимание, что версия InstallShield Limited Edition больше не входит в состав среды Visual Studio и не поддерживается в Visual Studio 2017 и последующих версиях. Информацию о ее дальнейшей доступности см. в документации по [программному обеспечению Flexera](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 
 - Пакет установщика MSI или EXE можно создать с помощью проекта установки (VDPROJ). Чтобы использовать этот вариант, установите [расширение проектов Visual Studio Installer](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 

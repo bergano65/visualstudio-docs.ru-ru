@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Сведения о преимуществе CloudPilot, доступном в некоторых подписках Visual Studio.
-ms.openlocfilehash: 6fec81e4f4345c77bdff7dd08bf2615d6fe45ad4
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5f8592b15f61dff454b6fe29d4d207dd609ab461
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681655"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816502"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Преимущество CloudPilot в подписках Visual Studio
 Перенесите приложения в Microsoft Azure, выполнив несколько простых действий. За считаные минуты определите все необходимые изменения кода вплоть до отдельных строк для успешной миграции в контейнеры, виртуальные машины, службы приложений, SQL Azure и (или) SQL MI. Затем выполните миграцию приложений в Azure с помощью мастеров, использующих ASR, DMA и DMS.
@@ -83,4 +83,4 @@ ms.locfileid: "68681655"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Если вы еще не активировали преимущество Azure, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и начать использовать деньги на счете в Azure.
+Если вы еще не активировали преимущество Azure, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

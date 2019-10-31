@@ -5,16 +5,16 @@ ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
-description: Сведения о том, как активировать преимущество Azure, входящее в вашу подписку Visual Studio.
-ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
+ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681677"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816447"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
-Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный кредит Azure](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
+Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
 
 ## <a name="activation-steps"></a>Процедура активации
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -78,9 +78,9 @@ ms.locfileid: "68681677"
 
 **Рекомендованное действие:**
 
-Чтобы продолжить использование кредита и скидок Azure для Visual Studio, выполните одно из следующих действий:
+Чтобы продолжить использование индивидуального кредита и скидок Azure DevTest для Visual Studio, выполните одно из следующих действий:
 
-Если кто-то в вашей команде или организации приобретал подписки от вашего имени, обратитесь к администратору Visual Studio вашей организации и запросите подписку Visual Studio, которая предоставит вам необходимый ежемесячный кредит Azure.   Попросите администратора назначить новую подписку на тот же идентификатор пользователя, на который была назначена предыдущая подписка, чтобы не беспокоиться о переносе вашей подписки Azure.
+Если кто-то в вашей команде или организации приобретал подписки от вашего имени, обратитесь к администратору Visual Studio вашей организации и запросите подписку Visual Studio, которая предоставит вам необходимый индивидуальный кредит Azure DevTest.   Попросите администратора назначить новую подписку на тот же идентификатор пользователя, на который была назначена предыдущая подписка, чтобы не беспокоиться о переносе вашей подписки Azure.
 
 Если вы можете приобрести подписку напрямую, то выполните одно из следующих действий:
 1. Приобретите годовую облачную подписку Visual Studio редакции [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) или [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) через Visual Studio Marketplace.
