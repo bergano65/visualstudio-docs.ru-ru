@@ -178,7 +178,7 @@ ms.locfileid: "71211330"
 
    ![Новое окно контрольных значений и функция форматирования значений в Visual Studio 2019](media/search-watch-window.png)
 
-Дополнительные сведения см. в записи блога [Улучшения в Visual Studio 2019: поиск объектов и свойств в окне контрольных значений, "Видимые" и "Локальные"](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+Дополнительные сведения см. в статье [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Улучшения в Visual Studio 2019: поиск объектов и свойств в окнах "Контрольные значения", "Видимые" и "Локальные").
 
 ### <a name="snapshot-debugger"></a>Отладчик моментальных снимков
 
