@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ea1c1bfa34399f4a2428aec2f51f97c9884216
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5fa926b21171c3e09b5a0f4d74e9415da090bf2f
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189059"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569079"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление компонентов в пользовательский редактор
 После создания пользовательского редактора к нему можно добавить дополнительные компоненты.
@@ -38,7 +38,7 @@ ms.locfileid: "73189059"
 
 4. Решите, должен ли редактор использовать активацию на месте или упрощенное внедрение для управления окном объекта представления документов.
 
-     В упрощенном окне редактора внедрено стандартное представление документа, в то время как в окне редактора активации на месте в качестве представления документа размещается элемент управления ActiveX или другой активный объект. Дополнительные сведения см. в разделе [упрощенное внедрение](../extensibility/simplified-embedding.md) и [Активация на месте](../extensibility/in-place-activation.md).
+     В упрощенном окне редактора внедрено стандартное представление документа, в то время как в окне редактора активации на месте в качестве представления документа размещается элемент управления ActiveX или другой активный объект. Дополнительные сведения см. в разделе [упрощенное внедрение](../extensibility/simplified-embedding.md) и [Активация на месте](/visualstudio/misc/in-place-activation?view=vs-2015).
 
 5. Реализуйте интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> для обработки команд.
 

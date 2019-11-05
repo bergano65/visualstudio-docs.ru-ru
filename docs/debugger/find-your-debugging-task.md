@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188096"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599291"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Поиск задачи отладки в Visual Studio
 
@@ -102,6 +102,10 @@ ms.locfileid: "73188096"
 Сведения о настройке параметров отладчика и параметров проекта отладчика см. в разделе [параметры отладчика и подготовка](debugger-settings-and-preparation.md).
 
 ## <a name="additional-tasks"></a>Дополнительные задачи
+
+### <a name="fix-an-exception"></a>Исправление исключения
+
+См. раздел [исправление исключения](write-better-code-with-visual-studio.md#fix-an-exception).
 
 ### <a name="edit-code-during-a-debugging-session"></a>Изменение кода во время сеанса отладки
 

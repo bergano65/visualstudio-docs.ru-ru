@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188804"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568844"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -35,7 +35,7 @@ ms.locfileid: "73188804"
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 Эти правила по умолчанию отключены, но их можно включить в [**Обозреватель решений**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) или в файле [набора правил](using-rule-sets-to-group-code-analysis-rules.md) . Например, чтобы включить правило CA1502 в виде предупреждения, в RuleSet-файле будет содержаться следующая запись:
 
