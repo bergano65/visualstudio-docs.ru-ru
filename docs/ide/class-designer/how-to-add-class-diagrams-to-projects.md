@@ -11,18 +11,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd898f2c4d7a84c9526ca9f56ce65a9b706f11d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647782"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188985"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Практическое руководство. Добавление диаграмм классов в проекты
 
 Для проектирования, изменения и рефакторинга классов и других типов добавьте в проект C# , Visual Basic или C++ диаграмму классов. Для визуализации различных частей кода в проекте добавьте в проект несколько диаграмм классов.
 
-Диаграммы классов не могут быть созданы для проектов с общим кодом для нескольких приложений. Сведения о создании схем классов UML см. в разделе [Создание проектов и схем моделирования UML](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+Диаграммы классов не могут быть созданы для проектов с общим кодом для нескольких приложений. Сведения о создании схем классов UML см. в разделе [Создание проектов и схем моделирования UML](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="install-the-class-designer-component"></a>Установка компонента "Конструктор классов"
 
