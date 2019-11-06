@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa62baf020751a175b24f47a93b3e7280fb76fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647649"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188970"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классах"
 
@@ -105,4 +105,4 @@ ms.locfileid: "72647649"
 - [Создание и настройка членов типа](creating-and-configuring-type-members.md)
 - [Практическое руководство. Работа только с клавиатуры](../reference/how-to-use-the-keyboard-exclusively.md)
 - [Сочетания клавиш по умолчанию в Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
-- [Сочетания клавиш в Blend](../../designers/keyboard-shortcuts-in-blend.md)
+- [Сочетания клавиш в Blend](../../xaml-tools/keyboard-shortcuts-in-blend.md)

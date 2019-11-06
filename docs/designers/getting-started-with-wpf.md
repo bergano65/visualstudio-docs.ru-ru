@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b7794b4dd300cf66ea894227f9346e80ee68085
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: b8cc1ea22c5cdbe85bf1d24d1641709c5fe5da7a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924509"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187133"
 ---
 # <a name="get-started-with-wpf"></a>Начало работы с WPF
 
@@ -26,7 +26,7 @@ Windows Presentation Foundation (WPF) — это платформа пользо
 |Субъект|Статьи|
 |-|-|
 |Необходимо перейти непосредственно к…|[Пошаговое руководство: My first WPF desktop application](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application) (Пошаговое руководство. Создание классического приложения WPF)|
-|Я хочу сравнить средства проектирования XAML...|[Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md)|
+|Я хочу сравнить средства проектирования XAML...|[Разработка XAML в Visual Studio и Blend для Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|
 |Не знакомы с .NET?|[Руководство по .NET](/dotnet/standard/)<br /><br />[Основные сведения о приложениях .NET Framework](/dotnet/standard/application-essentials)<br /><br />[Начало работы с Visual C#](../ide/quickstart-csharp-console.md)|
 |Дополнительные сведения о WPF...|[Общие сведения о WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Обзор XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Элементы управления](/dotnet/framework/wpf/controls/)<br /><br />[Общие сведения о привязке данных](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Привязка данных WPF с помощью LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Вы разработчик Windows Forms?|[Элементы управления Windows Forms и эквивалентные элементы управления WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Поддерживаемые сценарии при взаимодействии WPF и Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|

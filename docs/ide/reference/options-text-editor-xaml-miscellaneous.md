@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666623"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189551"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>"Параметры", "Текстовый редактор", XAML, "Прочее"
 
@@ -52,7 +52,7 @@ ms.locfileid: "72666623"
 
 ## <a name="errors-and-warnings"></a>Ошибки и предупреждения
 
-С помощью этого параметра можно управлять автоматическим созданием ошибок и предупреждений. Дополнительные сведения см. в разделе [Ошибки и предупреждения XAML](../../designers/xaml-errors-warnings.md).
+С помощью этого параметра можно управлять автоматическим созданием ошибок и предупреждений. Дополнительные сведения см. в разделе [Ошибки и предупреждения XAML](../../xaml-tools/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>См. также
 
