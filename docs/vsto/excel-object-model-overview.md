@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986093"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661850"
 ---
 # <a name="excel-object-model-overview"></a>Общие сведения об объектной модели Excel
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:
@@ -103,7 +103,7 @@ ms.locfileid: "72986093"
  Полные сведения об объектной модели Excel см. в справочнике по основной сборке взаимодействия (PIA) Excel и в справочнике по объектной модели VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Ссылка на основную сборку взаимодействия
- В справочной документации по основной сборке взаимодействия Excel описываются типы основной сборки взаимодействия для Excel. Эта документация доступна по следующему адресу: [Справочник по основной сборке взаимодействия Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
+ В справочной документации по основной сборке взаимодействия Excel описываются типы основной сборки взаимодействия для Excel. Эта документация доступна по следующему адресу: [Справочник по основной сборке взаимодействия Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies).
 
  Дополнительные сведения о структуре основных сборок взаимодействия Excel, например о различиях между классами и интерфейсами в PIA и о том, как реализуются события в PIA, см. [в разделе Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](/previous-versions/office/office-12/ms247299(v=office.12)).
 

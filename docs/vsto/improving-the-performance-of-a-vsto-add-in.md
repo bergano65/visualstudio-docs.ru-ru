@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985775"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661841"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Повышение производительности надстройки VSTO
   Для повышения удобства работы пользователей можно оптимизировать надстройки VSTO, создаваемые для приложений Office, что позволит быстрее выполнять запуск, завершать работу, открывать элементы и выполнять другие задачи. Если ваша надстройка VSTO предназначена для Outlook, можно уменьшить вероятность ее отключения из-за низкой производительности. Для повышения производительности надстройки VSTO можно реализовать следующие стратегии:
@@ -28,7 +28,7 @@ ms.locfileid: "72985775"
 
 - [Выполнение ресурсоемких операций в отдельном потоке](#Perform).
 
-  Дополнительные сведения о том, как оптимизировать надстройку VSTO для Outlook, см. [в разделе критерии производительности для сохранения включенных надстроек VSTO](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
+  Дополнительные сведения о том, как оптимизировать надстройку VSTO для Outlook, см. [в разделе критерии производительности для сохранения включенных надстроек VSTO](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
 
 ## <a name="Load"></a> Загрузка надстроек VSTO по требованию
  Вы можете настроить надстройку VSTO так, чтобы она загружалась только при следующих обстоятельствах:

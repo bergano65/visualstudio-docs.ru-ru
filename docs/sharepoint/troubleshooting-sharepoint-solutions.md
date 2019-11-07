@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 046f3bbca7b66d14e9b6a3eae96b613492292be0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189198"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661888"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Устранение неполадок решений SharePoint
   При отладке решений SharePoint с помощью отладчика [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] могут возникнуть следующие проблемы или предупреждения. Дополнительные сведения см. в разделе [Отладка решений рабочего процесса SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -172,9 +172,9 @@ ms.locfileid: "73189198"
 ### <a name="resolution"></a>Разрешение
  Чтобы устранить эту проблему, удалите модель вручную, а затем снова разверните решение.  Модель можно удалить с помощью любого из следующих средств:
 
-- Центр администрирования SharePoint 2010. Дополнительные сведения см. в разделе [BDC управление моделями](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#deleteamodel) на веб-сайте Microsoft TechNet.
+- Центр администрирования SharePoint 2010. Дополнительные сведения см. в разделе [BDC управление моделями](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#delete-a-bdc-model) на веб-сайте Microsoft TechNet.
 
-- Windows PowerShell Чтобы удалить модель, введите эту команду в командной строке: **Remove-спбусинессдатакаталогмодел**. Дополнительные сведения см. в разделе [Общие командлеты (SharePoint Server 2010)](/powershell/module/sharepoint-server/&view=sharepoint-ps) на веб-сайте Microsoft TechNet.
+- Windows PowerShell Чтобы удалить модель, введите эту команду в командной строке: **Remove-спбусинессдатакаталогмодел**. Дополнительные сведения см. в разделе [Общие командлеты (SharePoint Server 2010)](/powershell/module/sharepoint-server) на веб-сайте Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>При попытке просмотра визуальной веб-части в SharePoint появляется сообщение об ошибке
  Эта проблема возникает, когда свойство **path** пользовательского элемента управления не начинается со строки "controltemplates\\".
