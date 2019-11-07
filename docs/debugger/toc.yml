@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: Сочетания клавиш (HTML и JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Клиентские скрипты
-              items:
-                - name: Отладка клиентского скрипта
-                  href: client-side-script-debugging.md
-                - name: Ограничения на отладку скриптов
-                  href: limitations-on-script-debugging.md
-                - name: Присоединение (скрипт)
-                  items:
-                    - name: Присоединение к скрипту
-                      href: how-to-attach-to-script.md
-                    - name: 'Предупреждение: Отладка скриптов отключена'
-                      href: warning-script-debugging-disabled.md
+            - name: 'Предупреждение: Отладка скриптов отключена'
+              href: warning-script-debugging-disabled.md
         - name: Службы WCF
           items:
             - name: Отладка служб WCF
@@ -688,7 +678,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: Безопасность отладчика
       href: debugger-security.md
-- name: Справочник
+- name: Ссылка
   items:
     - name: Справочник по пользовательскому отладочному интерфейсу
       items:
