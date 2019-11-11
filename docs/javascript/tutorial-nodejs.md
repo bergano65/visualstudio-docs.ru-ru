@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180306"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428786"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 
@@ -183,6 +183,8 @@ IntelliSense — это средство Visual Studio, которое помо�
 1. Установите курсор в конце строки `data`, введите `: get`, и IntelliSense покажет функцию `getData`, определенную ранее в этом коде. Выберите `getData`.
 
     ![Использование IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
+
+1. Добавьте круглые скобки, чтобы сформировать вызов функции (`getData()`).
 
 1. Удалите запятую (`,`) перед элементом `"data"`, и выражение будет выделено зеленым цветом (подсветка синтаксиса). Наведите указатель на подсветку синтаксиса.
 

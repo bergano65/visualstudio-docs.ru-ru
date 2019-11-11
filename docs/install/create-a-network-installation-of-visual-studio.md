@@ -1,7 +1,7 @@
 ---
 title: Создание сетевой установки
 description: Узнайте, как создать сетевую точку установки для развертывания Visual Studio на предприятии.
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516322"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189491"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
@@ -88,8 +88,9 @@ ms.locfileid: "72516322"
 
 ## <a name="modify-the-responsejson-file"></a>Редактирование файла response.json
 
-В файле response.json вы можете задать новые значения по умолчанию, которые будут использоваться при запуске программы установки.  Например, можно настроить файл `response.json` для автоматического выбора конкретного набора рабочих нагрузок.
-Подробнее см. в статье об [автоматизации установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md).
+В файле response.json вы можете задать новые значения по умолчанию, которые будут использоваться при запуске программы установки.  Например, можно настроить файл `response.json` для автоматического выбора конкретного набора рабочих нагрузок. Подробнее см. в статье об [автоматизации установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md).
+
+Если возникнет проблема с начальным загрузчиком Visual Studio, вызывающим ошибку при связывании с файлом response.json, ознакомьтесь с разделом о сбое анализа идентификатора родительского процесса в статье [Исправление ошибок сети при установке или использовании Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process), чтобы получить необходимые инструкции.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Копирование макета в общую сетевую папку
 
@@ -99,7 +100,7 @@ ms.locfileid: "72516322"
 
 ::: moniker range="vs-2017"
 
-Пример
+Пример.
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -219,7 +220,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!IMPORTANT]
 > Чтобы предотвратить ошибку, убедитесь, что полный путь макета содержит менее 80 символов.
->
+
 > [!TIP]
 > Когда установка выполняется в рамках пакетного файла, параметр `--wait` позволяет гарантировать, что процесс `vs_enterprise.exe` дождется завершения установки, прежде чем возвращать код выхода.
 >
@@ -287,6 +288,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 - [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 - [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Исправление ошибок сети при установке или использовании Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 - [Жизненный цикл и обслуживание продуктов Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md)

@@ -1,11 +1,10 @@
 ---
 title: Краткое руководство. Создание первого приложения Vue.js
 description: В этом кратком руководстве вы создадите приложение Vue.js в Visual Studio с помощью инструментов Node.js для Visual Studio
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226502"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428762"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
 
@@ -38,7 +37,7 @@ ms.locfileid: "65226502"
     Установите Visual Studio 2017 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
     ::: moniker-end
 
-    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
+    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
 
     ![Рабочая нагрузка Node.js в установщике Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 
@@ -104,9 +103,13 @@ ms.locfileid: "65226502"
 
 1. В Visual Studio выберите **Сборка** > **Очистить решение** (только для проектов TypeScript).
 
+    ::: moniker range=">=vs-2019"
+    В шаблоне TypeScript, входящем в состав Visual Studio 2019, пропустите этот шаг.
+    ::: moniker-end
+
 1. Затем выберите **Сборка** > **Собрать решение** для сборки проекта. Просмотрите результаты сборки в окне **вывода** и выберите **Сборка** в списке **Показать выходные данные из**.
 
-    Шаблон проекта Vue.js использует скрипт npm `build` с помощью настройки события после сборки. Если вы хотите изменить этот параметр, откройте файл проекта (*\<имя_проекта\>.njsproj*) в проводнике Windows и найдите следующую строку кода:
+    В шаблоне проекта JavaScript Vue.js (и более ранних версиях шаблона TypeScript) используйте скрипт `build` npm, настроив событие после сборки. Если вы хотите изменить этот параметр, откройте файл проекта ( *\<имя_проекта\>.njsproj*) в проводнике Windows и найдите следующую строку кода:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ ms.locfileid: "65226502"
    В консоли появится сообщение *Запуск Development Server*.
 
    Затем приложение откроется в браузере.
+   
+   Если сведения о работающем приложении не отображаются, обновите страницу.
 
    ![Приложение Vue.js выполняется в браузере](../javascript/media/vuejs-running-app.png)
 
@@ -128,6 +133,6 @@ ms.locfileid: "65226502"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- Пройдите [учебник по Node.js и выпуску Express](../nodejs/tutorial-nodejs.md)
-- Пройдите [учебник по Node.js и React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
+- Пройдите [учебник по Node.js и выпуску Express](tutorial-nodejs.md)
+- Пройдите [учебник по Node.js и React](tutorial-nodejs-with-react-and-jsx.md)
 - [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)

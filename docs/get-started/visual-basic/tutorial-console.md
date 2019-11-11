@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0bbc0cdf7aff548053c813cdf1b29ed1fed080
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913311"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188996"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Учебник. Начало работы с Visual Basic в Visual Studio
 
@@ -148,7 +148,7 @@ ms.locfileid: "70913311"
      Console.WriteLine(vbCrLf + "What is your name? ")
      Dim name = Console.ReadLine()
      Dim currentDate = DateTime.Now
-     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}!")
      Console.Write(vbCrLf + "Press any key to exit... ")
      Console.ReadKey(True)
     ```
@@ -208,7 +208,7 @@ ms.locfileid: "70913311"
 
 1. Применив фильтры языка и платформы, выберите шаблон **Консольное приложение (.NET Core)** и нажмите кнопку **Далее**.
 
-   В поле **Имя проекта** окна **Настроить новый проект** введите *WhatIsYourName*. Затем выберите **Создать**.
+   Затем в поле **Имя проекта** окна **Настроить новый проект** введите *CalculateThis*. Затем выберите **Создать**.
 
 1. Введите следующий код между строками `Module Program` и `End Module`:
 

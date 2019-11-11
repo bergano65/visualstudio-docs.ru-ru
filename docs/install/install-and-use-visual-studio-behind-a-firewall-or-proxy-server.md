@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 12b8f29f80f80a4322dc6a4cf43061696db6f370
+ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293516"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413564"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -51,6 +51,7 @@ ms.locfileid: "70293516"
 | download.microsoft.com | Настройка расположения для скачивания пакетов |
 | download.visualstudio.com | Настройка расположения для скачивания пакетов |
 | dl.xamarin.com | Настройка расположения для скачивания пакетов |
+| xamarin-downloads.azureedge.net | Расположение списка скачивания пакетов SDK для Android |
 | marketplace.visualstudio.com | Расположение для скачивания расширений Visual Studio |
 | visualstudio.microsoft.com | Расположение документации |
 | docs.microsoft.com | Расположение документации |
@@ -92,7 +93,7 @@ ms.locfileid: "70293516"
 | Интеграция <br>Интеграция | az861674.vo.msecnd.net | | 443<br> | Используется для настройки новых проектов и отправки данных об использовании в зарегистрированную учетную запись Application Insights |
 | Code Lens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | | 443 | Используется для предоставления сведений в редакторе, например времени последнего обновления файла, временной шкалы изменений, связанных с изменениями рабочими элементами, данных о авторе и т. д. |
 | Экспериментальный <br>экспериментальной функции | visualstudio-devdiv-c2s.msedge.net | | 80 | Используется для активации новых экспериментальных функций или измененных функций |
-| Параметры индикатора событий для идентификации <br>(имя пользователя и аватар)<br>и <br>перемещения | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
+| Параметры индикатора событий для идентификации <br>(имя пользователя и аватар)<br>and <br>перемещения | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
 | Настройки удаленной системы | az700632.vo.msecnd.net | | 443 | Используется для отключения расширений, которые могут вызывать проблемы в работе Visual Studio |
 | Средства Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https | 443 | Применяется для сценариев использования магазина приложений Windows |
 | Поддержка <br>Обнаружение <br><br>Поддержка <br>Определение<br><br>Поддержка <br>схемы JSON для <br>ресурсов Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http<br>https<br><br>http<br><br>https | 80<br>443 <br><br> 443<br><br>443 | Используется для обнаружения и скачивания схем JSON, которые можно применять при изменении документов JSON <br><br>Используется для получения схемы проверки метаданных для JSON<br><br>Используется, чтобы получить текущую схему для шаблонов развертывания Azure Resource Manager |
@@ -102,7 +103,7 @@ ms.locfileid: "70293516"
 | Сведения о репозитории GitHub | api.github.com | https | 443 | Требуется для получения дополнительных сведений о пакетах Bower |
 | Веб-анализаторы кода | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Создание проекта<br>шаблонов обозревателя<br>обнаружение <br><br>Создание проекта <br>в обозревателе<br> Cookiecutter | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Используется для обнаружения шаблонов в Интернете из рекомендуемого нами веб-канала и репозиториев GitHub <br><br>Используется для создания проекта из шаблона Cookiecutter, для которого требуется один раз по требованию установить пакет Python для Cookiecutter из индекса пакета Python (PyPI) |
-| Управление <br>обнаружение<br><br>Управление <br>управление<br><br>Новый <br>Python <br> проект <br>шаблоны | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Позволяет выполнять поиск пакетов PIP<br><br>Используется для автоматической установки пакета PIP, если он отсутствует <br><br>Используется для разрешения следующих новых шаблонов проектов Python в URL-адреса шаблонов Cookiecutter:<br> — проект классификатора;<br>— проект кластеризации; <br> — проект регрессии; <br> — PyGame с использованием PyKinect; <br> — проект Pyvot. |
+| Управление <br>обнаружение<br><br>Управление <br>управление<br><br>Оператор new <br>Python <br> проект <br>шаблоны | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Позволяет выполнять поиск пакетов PIP<br><br>Используется для автоматической установки пакета PIP, если он отсутствует <br><br>Используется для разрешения следующих новых шаблонов проектов Python в URL-адреса шаблонов Cookiecutter:<br> — проект классификатора;<br>— проект кластеризации; <br> — проект регрессии; <br> — PyGame с использованием PyKinect; <br> — проект Pyvot. |
 | Служба <br>надстройка <br> манифеста <br>Проверка <br>Служба | verificationservice.osi.office.net | https | 443 | Используется для проверки манифестов веб-надстроек Office |
 | Веб-надстройки для SharePoint и <br>Office Add-ins | sharepoint.com | https | 443 | Используется для публикации и тестирования надстроек SharePoint и Office в SharePoint Online |
 | Узел службы <br>тестирования<br> Узел | | http | 12292 | Правило брандмауэра, которое создается автоматически для тестирования надстроек SharePoint с помощью рабочих процессов |
