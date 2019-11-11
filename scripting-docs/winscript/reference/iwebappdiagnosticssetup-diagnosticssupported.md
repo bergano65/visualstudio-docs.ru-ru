@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::DiagnosticsSupported | Документация Майкрософт
+title: Ивебаппдиагностикссетуп::D Иагностикссуппортед | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d4214dea16c1e8a96ece7428f9ea73640025a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd27e7c8759054fa2d7d67858d8d006fa9c9a152
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443671"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984573"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-Определяет, поддерживаются ли диагностики в это приложение. Если [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) был вызван для объекта, реализующего этот интерфейс со значением отличное от NULL, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) возвращает `true`. Если нет, он возвращает `false` и вызовы [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) ошибкой.  
+Определяет, поддерживаются ли в этом приложении средства диагностики. Если [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) был вызван для объекта, реализующего этот интерфейс со значением, ОТЛИЧНЫМ от NULL, [диагностикссуппортед](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) возвращает `true`. В противном случае возвращается `false` и вызовы [ивебаппдиагностикссетуп:: креатеобжектвисситеатвебапп](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) завершаются ошибкой.  
   
 > [!IMPORTANT]
-> [Интерфейс IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) является реализуется PDM v11.0 и более поздней версии. Найти в activdbg100.  
+> [Интерфейс ивебаппдиагностикссетуп](../../winscript/reference/iwebappdiagnosticssetup-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Найдено в activdbg100.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,4 +34,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- Если [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) был вызван для объекта, реализующего этот интерфейс со значением отличное от NULL, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) возвращает `true`. Если нет, он возвращает `false`, а также вызовы к [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) ошибкой.
+ Если [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) был вызван для объекта, реализующего этот интерфейс со значением, ОТЛИЧНЫМ от NULL, [диагностикссуппортед](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) возвращает `true`. В противном случае возвращается `false`, а вызовы [ивебаппдиагностикссетуп:: креатеобжектвисситеатвебапп](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) завершаются ошибкой.

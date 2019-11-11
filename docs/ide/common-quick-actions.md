@@ -3,20 +3,20 @@ title: Распространенные быстрые действия
 description: Наиболее популярные быстрые действия для C# и Visual Basic, включая исправление опечаток в ключевых словах или символах, разрешение конфликтов слияния, удаление необходимых импортов, создание типов, введение локальных переменных и т. д.
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000144"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652251"
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
 
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Удаление ненужных директив using/Import
 
-Быстрое действие **Удалить ненужные директивы using/импорты** удалит все неиспользуемые операторы `using` и `Import` в текущем файле. При выборе этого элемента удаляются неиспользованные импорты пространства имен.
+Быстрое действие **Удалить ненужные директивы using/импорты** удалит все неиспользуемые директивы `using` и `Import` в текущем файле. При выборе этого элемента удаляются неиспользованные импорты пространства имен.
 
 | Применимые языки | Поддерживаемая версия |
 | - | - |
@@ -184,7 +184,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 - Предлагать using/import для типов в эталонных сборках
 - Предлагать using/import для типов в пакетах NuGet
 
-Когда параметр включен, при использовании типа в пространстве имен, которое еще не импортировано, но существует в ссылочной сборке или пакете NuGet, создается оператор using/import.
+Если параметр включен, при использовании типа в пространстве имен, которое еще не импортировано, но существует в ссылочной сборке или пакете NuGet, создается директива using/import.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 805fa62b003559eb92c0531b0f4df7133cf0cdf5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306158"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911990"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006. Переопределение Equals() для типов значений
 
@@ -36,7 +36,7 @@ ms.locfileid: "72306158"
 ## <a name="rule-description"></a>Описание правила
  В унаследованной реализации Equals для типов значений используется библиотека <xref:System.Reflection> и сравнивается содержимое всех полей типа. Отражение является процессом, требующим с точки зрения вычислений больших затрат, и сравнение каждого поля на равенство может быть лишним. Если предполагается, что пользователи будут сравнивать, сортировать экземпляры или использовать их в качестве ключей хэш-таблиц, тип значения должен реализовывать Equals. Если язык программирования поддерживает перегрузку операторов, также необходимо предоставить реализацию операторов равенства и неравенства.
 
- Дополнительные сведения о переопределении Equals и операторов равенства см. в разделе [Правила реализации метода Equals и оператора равенства (==)](http://go.microsoft.com/fwlink/?LinkId=177818).
+ Дополнительные сведения о переопределении Equals и операторов равенства см. в разделе [Правила реализации метода Equals и оператора равенства (==)](/dotnet/standard/design-guidelines/equality-operators).
 
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения
  Пример реализации Equals и операторов равенства см. в описании правила анализа кода [CA1815: Переопределяйте операторы Equals и равенства для типов значений](../code-quality/ca1815.md)

@@ -16,17 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731922"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888399"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Практическое руководство. Использование визуализатора дерева WPF
 Визуализатор дерева WPF можно использовать для изучения визуального дерева объекта WPF, а также для просмотра свойств зависимостей WPF для объектов, содержащихся в дереве. Дополнительные сведения о визуальных деревьях см. [в разделе деревья в WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Дополнительные сведения о свойствах зависимостей см. в разделе [Общие сведения о свойствах зависимостей](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
  При открытии визуализатора дерева WPF вы увидите две панели: **визуальное дерево** слева и **свойства** области _имя_ **:** _тип_ справа. Выберите любой объект на панели **визуального дерева** , и **свойства** _область имя_ **:** _тип_ автоматически обновляются, чтобы отобразить свойства для этого объекта.
+
+ > [!NOTE]
+ > Для просмотра визуального дерева объектов WPF можно также использовать [динамическое визуальное дерево и динамический обозреватель свойств](../xaml-tools/inspect-xaml-properties-while-debugging.md) . Визуализатор дерева WPF является устаревшей функцией и не находится в активной разработке.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Открытие визуализатора дерева WPF
 

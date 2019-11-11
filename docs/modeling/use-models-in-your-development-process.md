@@ -9,16 +9,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c38cb246a1ec3e8a20793b37f0a231d2e118bd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663766"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986284"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 
-В Visual Studio можно использовать модель для изучения и изменения системы, приложения или компонента. Модель может помочь визуализировать среду, в которой работает система, уточнить требования пользователей, определить архитектуру системы, проанализировать код и убедиться, что код удовлетворяет этим требованиям. См. [видео Channel 9: улучшение архитектуры с помощью моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).
+В Visual Studio можно использовать модель для изучения и изменения системы, приложения или компонента. Модель может помочь визуализировать среду, в которой работает система, уточнить требования пользователей, определить архитектуру системы, проанализировать код и убедиться, что код удовлетворяет этим требованиям. См. [видео Channel 9: улучшение архитектуры с помощью моделирования](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
 Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -131,10 +131,10 @@ ms.locfileid: "72663766"
 
 |**Категория**|**Links**|
 |-|-|
-|**Видеоролики**|![link видео ](../data-tools/media/playvideo.gif) [видео о том, как создавать и использовать UML-модели и схемы (Visual Studio 2010 Ultimate).](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link видео ](../data-tools/media/playvideo.gif) [Channel 9: UML с Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link видео ](../data-tools/media/playvideo.gif) [серия "практические руководства" MSDN: средства и расширяемость UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Форумы**|- [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Видеоролики**|![ссылки на видео](../data-tools/media/playvideo.gif) [видео практические руководства MSDN. Создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![ссылки на видео](../data-tools/media/playvideo.gif) [Channel 9: UML с Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![ссылки на видео](../data-tools/media/playvideo.gif) [серия "практические руководства" MSDN: средства и расширяемость UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Форумы**|- [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Блоги**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Технические статьи и журналы**|[Центр архитекторов на MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>См. также
 

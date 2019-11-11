@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Сведения о преимуществе поддержки сообщества Azure, включенном в некоторые подписки Visual Studio.
-ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681253"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816543"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Доступ к форуму поддержки сообщества Azure в рамках подписки Visual Studio
 Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.
@@ -69,4 +69,4 @@ ms.locfileid: "68681253"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Следующие шаги
-Знаете ли вы, что вместе со многими подписками Visual Studio предоставляются деньги на счете в Azure?  Узнайте, [как активировать](vs-azure.md) свои деньги на счете в Azure.
+Знаете ли вы, что вместе со многими подписками Visual Studio предоставляется отдельная сумма на счете в Azure DevTest?  Узнайте, [как активировать](vs-azure.md) свои деньги на счете в Azure.

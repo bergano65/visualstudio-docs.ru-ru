@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536046"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188415"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Отладка управляемогоC#кода (, F#Visual Basic C++,,/CLI)
 
@@ -76,7 +76,7 @@ ms.locfileid: "72536046"
 [Отладка и профилирование](/dotnet/framework/debug-trace-profile/index)\
 Обсуждаются Отладка приложений .NET и требования к конфигурации.
 
-[Отладка приложений скриптов и веб-приложений](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+[Отладка приложений скриптов и веб-приложений](how-to-enable-debugging-for-aspnet-applications.md)\
 Описание общих задач и методов отладки скриптов и веб-приложений.
 
 ## <a name="see-also"></a>См. также

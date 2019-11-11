@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180060"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636586"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Знакомство с интегрированной средой разработки Visual Studio
 
@@ -90,7 +90,7 @@ ms.locfileid: "70180060"
 1. В открывшемся диалоговом окне **Новый проект** оставьте имя проекта по умолчанию и нажмите кнопку **ОК**.
 ::: moniker-end
 
-   Будет создан проект. В окне **редактора** откроется файл с именем *server.cs*. В **редакторе** отображается содержимое файлов. Кроме того, здесь вы можете выполнять основную часть работы с кодом в Visual Studio.
+   Будет создан проект. В окне **редактора** откроется файл с именем *server.js*. В **редакторе** отображается содержимое файлов. Кроме того, здесь вы можете выполнять основную часть работы с кодом в Visual Studio.
 
    ![Редактор в Visual Studio](media/editor.png)
 

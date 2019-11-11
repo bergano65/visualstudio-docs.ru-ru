@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962934"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911600"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы отладки моментальных снимков в Visual Studio
 
-Если действия, описанные в этой статье, не помогли устранить проблему, выполните поиск проблемы в [сообществе разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) или сообщите о новой проблеме, выбрав пункт **Справка** > **Отправить отзыв** > **сообщить о проблеме** в Visual Studio.
+Если действия, описанные в этой статье, не помогли устранить проблему, выполните поиск проблемы в [сообществе разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) или сообщите о новой проблеме, выбрав **Справка** > **Отправить отзыв** > **сообщить о проблеме** в Visual Studio.
 
-## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Проблема. "Attach Snapshot Debugger" обнаруживает ошибку кода состояния HTTP
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Ошибка: "Attach Snapshot Debugger" обнаруживает ошибку кода состояния HTTP
 
 Если во время попытки присоединения в окне **вывода** отображается следующая ошибка, это может быть известной проблемой, приведенной ниже. Попробуйте предлагаемые решения, и если проблема сохраняется, обратитесь к предыдущему псевдониму.
 
@@ -34,7 +34,7 @@ ms.locfileid: "71962934"
 
 Выполните следующие шаги.
 
-* Убедитесь, что учетная запись персонализации Visual Studio имеет разрешения на доступ к подписке Azure и ресурсу, к которому вы присоединяетесь. Чтобы быстро определить это, нужно проверить, доступен ли ресурс в диалоговом окне из раздела **отладка** > **присоединить snapshot Debugger...**  > **ресурс Azure** > **выберите существующий**или в Cloud Explorer.
+* Убедитесь, что учетная запись персонализации Visual Studio имеет разрешения на доступ к подписке Azure и ресурсу, к которому вы присоединяетесь. Чтобы быстро определить это, проверьте, доступен ли ресурс в диалоговом окне из раздела **отладка** > **присоединить snapshot Debugger...**  > **ресурс Azure** > **выберите существующий**или в Cloud Explorer.
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
 ### <a name="403-forbidden"></a>(403) запрещено
@@ -43,7 +43,7 @@ ms.locfileid: "71962934"
 
 Выполните следующие шаги.
 
-* Убедитесь, что ваша учетная запись Visual Studio имеет допустимую подписку Azure с необходимыми для ресурса разрешениями управления доступом на основе ролей (RBAC). Для AppService проверьте наличие разрешений на [запрос](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) к плану службы приложений, в котором размещается приложение.
+* Убедитесь, что ваша учетная запись Visual Studio имеет допустимую подписку Azure с необходимыми для ресурса разрешениями управления доступом на основе ролей (RBAC). Для AppService проверьте наличие разрешений на [запрос](/rest/api/appservice/appserviceplans/get) к плану службы приложений, в котором размещается приложение.
 * Проверьте правильность и актуальность метки времени на клиентском компьютере. Эта ошибка обычно возникает на серверах с отметками времени более чем за 15 минут с отметкой времени запроса.
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
@@ -54,8 +54,8 @@ ms.locfileid: "71962934"
 Выполните следующие шаги.
 
 * Убедитесь, что веб-сайт развернут и работает в ресурсе службы приложений, к которому вы подключаетесь.
-* Убедитесь, что сайт доступен по адресу https://@no__t -0resource\>.azurewebsites.net
-* Убедитесь, что правильное выполнение настраиваемого веб-приложения не возвращает код состояния 404 при доступе по адресу https://@no__t -0resource\>.azurewebsites.net
+* Убедитесь, что сайт доступен по адресу https://\<Resource\>. azurewebsites.net
+* Убедитесь, что правильное выполнение настраиваемого веб-приложения не возвращает код состояния 404 при доступе в https://\<Resource\>. azurewebsites.net
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
 ### <a name="406-not-acceptable"></a>(406) неприемлемо
@@ -64,7 +64,7 @@ ms.locfileid: "71962934"
 
 Выполните следующие шаги.
 
-* Убедитесь, что сайт доступен по адресу https://@no__t -0resource\>.azurewebsites.net
+* Убедитесь, что сайт доступен по адресу https://\<Resource\>. azurewebsites.net
 * Убедитесь, что сайт не перенесен на новые экземпляры. Snapshot Debugger использует понятие Арраффинити для маршрутизации запросов к конкретным экземплярам, которые могут периодически вызывать эту ошибку.
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
@@ -88,7 +88,7 @@ ms.locfileid: "71962934"
 
 ### <a name="500-internal-server-error"></a>(500) Внутренняя ошибка сервера
 
-Эта ошибка означает, что сайт полностью отключен или сервер не может выполнить запрос. Snapshot Debugger только функции в выполняющихся приложениях. [Application Insights snapshot Debugger](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) предоставляет значит на исключениях и может быть лучшим средством для ваших нужд.
+Эта ошибка означает, что сайт полностью отключен или сервер не может выполнить запрос. Snapshot Debugger только функции в выполняющихся приложениях. [Application Insights snapshot Debugger](/azure/azure-monitor/app/snapshot-debugger) предоставляет значит на исключениях и может быть лучшим средством для ваших нужд.
 
 ### <a name="502-bad-gateway"></a>(502) неверный шлюз
 
@@ -99,17 +99,17 @@ ms.locfileid: "71962934"
 * Попробуйте подождать несколько минут, прежде чем присоединить Snapshot Debugger снова.
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Проблема. Точка прикрепления не включается
+## <a name="issue-snappoint-does-not-turn-on"></a>Проблема: точка моментальных снимков не включается
 
-Если со своей точкой моментальных снимков вместо обычного значка точки моментальных снимков отображается значок предупреждения ![значок предупреждения точки моментальных снимков](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "значок предупреждения точки моментальных снимков"), в таком случае точка моментальных снимков не включается.
+Если вы видите значок предупреждения, ![точка прикрепления значок предупреждения](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Значок предупреждения точка прикрепления") с точка прикрепления вместо обычного значка точка прикрепления, то точка прикрепления не будет включен.
 
-![Точка моментальных снимков не включается](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Точка моментальных снимков не включается")
+![Точка прикрепления не включается](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Точка прикрепления не включается")
 
 Выполните следующие шаги.
 
 1. Убедитесь, что у вас есть та же версия исходного кода, которая использовалась для сборки и развертывания приложения. Убедитесь, что вы загружаете правильные символы для развертывания. Для выполнения этого действия во время отладки моментальных снимков откройте окно **Модули** и убедитесь, что в столбце "Файл символов" отображается PDB-файл, загруженный для модуля, который вы отлаживаете. Snapshot Debugger попытается загрузить и использовать символы для вашего развертывания автоматически.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Проблема. Символы не загружаются при открытии моментального снимка
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Проблема: при открытии моментального снимка не загружаются символы
 
 Если отображается следующее окно, это означает, что символы не загрузились.
 
@@ -125,7 +125,7 @@ ms.locfileid: "71962934"
 
 - В качестве альтернативы, если организация использует сервер символов или удаляет символы в другом пути, используйте параметры символов, чтобы загрузить правильные символы для своего развертывания.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Проблема. Я не вижу параметр "присоединить Snapshot Debugger" в Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Проблема: параметр "Подключить Snapshot Debugger" не отображается в Cloud Explorer
 
 Выполните следующие шаги.
 
@@ -144,24 +144,24 @@ ms.locfileid: "71962934"
   - Служба Azure Kubernetes. Приложения ASP.NET Core, выполняющиеся на платформе .NET Core 2.2 или более поздней версии под управлением Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Проблема. В Средства диагностики отображаются только регулируемые моментальные снимки
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Проблема: в Средствах диагностики отображаются только регулируемые моментальные снимки
 
-![Регулируемый моментальный снимок](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Регулируемый моментальный снимок")
+![Регулируемый точка прикрепления](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Регулируемый точка прикрепления")
 
 Выполните следующие шаги.
 
 - Моментальные снимки занимают мало памяти, но для них выделяется фиксированное количество памяти. Если Snapshot Debugger обнаружит, что ваш сервер находится под большой нагрузкой памяти, он не будет делать снимки. Вы можете удалить уже полученные снимки, остановив сеанс Snapshot Debugger и повторив попытку.
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Проблема. Отладка моментальных снимков с несколькими версиями Visual Studio дает мне ошибки
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Проблема: отладка моментальных снимков в нескольких версиях Visual Studio выдает ошибки
 
 Для Visual Studio 2019 требуется более новая версия расширения Snapshot Debugger сайта в службе приложений Azure.  Эта версия несовместима с более старой версией расширения Snapshot Debugger site, используемой в Visual Studio 2017.  При попытке присоединить Snapshot Debugger в Visual Studio 2019 к службе приложений Azure, которая ранее была отлажена Snapshot Debugger в Visual Studio 2017, появится следующее сообщение об ошибке:
 
-![Несовместимое расширение сайта snapshot Debugger Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "несовместимо с snapshot Debugger расширения сайта Visual Studio 2019")
+![Несовместимое расширение сайта Snapshot Debugger Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Несовместимое расширение сайта Snapshot Debugger Visual Studio 2019")
 
 И наоборот, если вы используете Visual Studio 2017 для подключения Snapshot Debugger к службе приложений Azure, которая ранее была отлажена Snapshot Debugger в Visual Studio 2019, вы получите следующее сообщение об ошибке:
 
-![Несовместимое расширение сайта snapshot Debugger Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "несовместимо с snapshot Debugger расширения сайта Visual Studio 2017")
+![Несовместимое расширение сайта Snapshot Debugger Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Несовместимое расширение сайта Snapshot Debugger Visual Studio 2017")
 
 Чтобы устранить эту проблему, удалите следующие параметры приложения на портале Azure и подключите Snapshot Debugger повторно.
 
@@ -169,7 +169,7 @@ ms.locfileid: "71962934"
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Проблема. У меня возникают проблемы при отладке моментальных снимков, и мне нужно включить дополнительное ведение журнала
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Проблема: у меня возникают проблемы с отладкой снимков, и мне нужно включить ведение журнала
 
 ### <a name="enable-agent-logs"></a>Включение журналов агента
 
@@ -179,9 +179,9 @@ ms.locfileid: "71962934"
 
 - Службы приложений.
   - Перейдите на сайт Kudu Службы приложений (то есть yourappservice.**scm**.azurewebsites.net), а затем на консоль отладки.
-  - Журналы агента хранятся в следующем каталоге:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - Журналы агентов хранятся в следующем каталоге: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - Виртуальная машина / Масштабируемые наборы виртуальных машин.
-  - Войдите в свою виртуальную машину, чтобы сохранить журналы агента следующим образом:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics @ no__t-0Version > \SnapshotDebuggerAgent_ *. txt
+  - Войдите на виртуальную машину. Журналы агентов хранятся в следующем каталоге: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - Перейдите к следующему каталогу: /tmp/diag/AgentLogs/*
 
@@ -193,7 +193,7 @@ ms.locfileid: "71962934"
   - Журнал ошибок автоматически отправляется в Д:\хоме\логфилес\евентлог.ксмл, события помечаются `<Provider Name="Instrumentation Engine" />` или "рабочими точками останова".
 - Виртуальная машина / Масштабируемые наборы виртуальных машин.
   - Войдите на виртуальную машину и откройте "Просмотр событий".
-  - Откройте следующее представление: *Журнал Windows > приложение*.
+  - Откройте следующее представление: *Журналы Windows > Приложение*.
   - *Отфильтруйте текущий журнал* по *источнику события*, используя *производственные точки останова* или *ядро инструментирования*.
 - AKS
   - Ведение журнала ядра инструментария происходит на /tmp/diag/log.txt (задается MicrosoftInstrumentationEngine_FileLogPath в DockerFile)

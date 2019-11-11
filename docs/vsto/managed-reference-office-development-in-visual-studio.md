@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: da10833f8340d5308321038bb0500ca8408b40bb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551767"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985770"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Управляемый справочник (разработка решений Office в Visual Studio)
-  В этом разделе содержится справочная документация по API для пространств имен и типов, используемых в проектах Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для .NET Framework 3,5, см. в следующем справочном разделе документации по [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)Visual Studio:.
+  В этом разделе содержится справочная документация по API для пространств имен и типов, используемых в проектах Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](includes/net-v45-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для .NET Framework 3,5, см. в следующем справочном разделе документации по Visual Studio: [управляемый справочник (разработка решений Office в Visual Studio). )](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В данном разделе
  <xref:Microsoft.Office.Tools>
 
  Содержит классы, общие для программирования решений Office. К ним относятся базовый класс для надстроек VSTO, классы для создания настраиваемых областей задач в настройках VSTO, классы для создания смарт-тегов в решениях Word и Excel и классы для создания панелей действий в настройках уровня документа.
@@ -64,14 +64,14 @@ ms.locfileid: "69551767"
 
  <xref:Microsoft.VisualStudio.Tools.Applications.Runtime>
 
- Содержит основные исключения, которые могут создаваться [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], несколько классов, которые могут использоваться для кэширования данных в настройках уровня документа, и другие API, являющиеся частью инфраструктуры Visual Studio.
+ Содержит основные исключения, которые могут создаваться [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)], несколько классов, которые могут использоваться для кэширования данных в настройках уровня документа, и другие API, являющиеся частью инфраструктуры Visual Studio.
 
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>
 
  Содержит классы задач MSBuild, которые используются для сборки проектов Office.
 
 ## <a name="see-also"></a>См. также
-- [Обзор средств Visual Studio для среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [Начало работы &#40;с разработкой Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Примеры и пошаговые руководства по разработке решений Office](../vsto/office-development-samples-and-walkthroughs.md)
-- [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
+- [Обзор средств Visual Studio для среды выполнения Office](visual-studio-tools-for-office-runtime-overview.md)
+- [Начало работы &#40;с разработкой Office в Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Примеры и пошаговые руководства по разработке решений Office](office-development-samples-and-walkthroughs.md)
+- [Разработка и создание решений Office](designing-and-creating-office-solutions.md)

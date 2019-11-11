@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8a1c2148f25a1e97cfd1369770e056d1cb907d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 58bfec6fa09f6450afb8170d60acad39edacd590
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568970"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982459"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Расширяемость отладчика Visual Studio
-Visual Studio включает в себя полностью интерактивный отладчик исходного кода, предоставляющий мощный и простой в использовании инструмент для отслеживания ошибок в программе. Отладчик полностью поддерживает Visual Basic, C#, C/C++и JavaScript. Однако с [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], который доступен в [центре загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkId=214453), другие языки программирования могут поддерживаться в отладчике с теми же широкими возможностями.
+Visual Studio включает в себя полностью интерактивный отладчик исходного кода, предоставляющий мощный и простой в использовании инструмент для отслеживания ошибок в программе. Отладчик полностью поддерживает Visual Basic, C#, C/C++и JavaScript. Однако с [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], который доступен в [центре загрузки Майкрософт](https://www.microsoft.com/download/details.aspx?id=21835), другие языки программирования могут поддерживаться в отладчике с теми же широкими возможностями.
 
  Отладчик [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] — это общий интерфейс (т. е. пользовательского интерфейса) для отладочных компонентов, которые, в свою очередь, специфичны для отлаживаемого языка. Для новых языков, необходимых для поддержки с помощью отладчика [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо создать необходимые серверные компоненты, такие как модуль отладки (DE). На этом этапе [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] поступает в.
 
- @No__t_0 содержит полную ссылку на все элементы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимые для создания нового DE. Кроме того, есть примеры и учебники, которые помогут вам приступить к работе.
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] содержит полную ссылку на все элементы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимые для создания нового DE. Кроме того, есть примеры и учебники, которые помогут вам приступить к работе.
 
  Полный пример системы проектного языка с поддержкой отладки см. в [образце IronPython](https://www.microsoft.com/download/details.aspx?id=55984).
 

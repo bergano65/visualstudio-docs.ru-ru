@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6dc69a18aa09536e5735431aa451bc2dd3933ee
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745684"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188681"
 ---
 # <a name="com-and-activex-debugging"></a>Отладка COM и ActiveX
 В этом подразделе представлены советы по отладке приложений COM и элементов управления ActiveX.
@@ -46,4 +46,4 @@ ms.locfileid: "72745684"
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Введение в модель COM](/cpp/atl/introduction-to-com)
 - [Элементы управления ActiveX](/cpp/mfc/activex-controls)
-- [Приложения сервера SDI](../debugger/sdi-server-applications.md)
+- [Приложения сервера SDI](com-server-and-container-debugging.md)

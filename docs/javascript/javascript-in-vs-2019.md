@@ -11,18 +11,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3000510c6bb6079629a3df05909417593569c932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3412e1d27a365a6c6302c56ada865f33a436b639
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553259"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888622"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript и TypeScript в Visual Studio 2019
 
 ## <a name="overview"></a>Обзор
 
-Visual Studio 2019 предоставляет обширную поддержку для разработки JavaScript, как с помощью прямого использования JavaScript, также и с помощью [языка программирования TypeScript](http://www.typescriptlang.org), который был разработан с целью повышения продуктивности и интереса во время разработки на JavaScript, особенно при разработке масштабных проектов. Код JavaScript или TypeScript в Visual Studio можно написать для многих типов приложений и служб.
+Visual Studio 2019 предоставляет обширную поддержку для разработки JavaScript, как с помощью прямого использования JavaScript, также и с помощью [языка программирования TypeScript](http://www.typescriptlang.org/), который был разработан с целью повышения продуктивности и интереса во время разработки на JavaScript, особенно при разработке масштабных проектов. Код JavaScript или TypeScript в Visual Studio можно написать для многих типов приложений и служб.
 
 ## <a name="javascript-language-service"></a>Служба языка JavaScript
 
@@ -42,4 +42,4 @@ Visual Studio 2019 предоставляет несколько вариант
 
 ## <a name="projects"></a>Проекты
 
-Приложения UWP на JavaScript больше не поддерживаются в Visual Studio 2019. Невозможно создать или открыть проекты UWP на JavaScript (файлы с расширением *JSPROJ*). Дополнительные сведения см. в [документации по созданию прогрессивных веб-приложений (PWA), эффективно работающих на Windows](https://docs.microsoft.com/microsoft-edge/progressive-web-apps/get-started).
+Приложения UWP на JavaScript больше не поддерживаются в Visual Studio 2019. Невозможно создать или открыть проекты UWP на JavaScript (файлы с расширением *JSPROJ*). Дополнительные сведения см. в [документации по созданию прогрессивных веб-приложений (PWA), эффективно работающих на Windows](/microsoft-edge/progressive-web-apps/get-started).

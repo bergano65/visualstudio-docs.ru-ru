@@ -13,15 +13,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5dd666d825c40155675714f5945209f22198993c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440506"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984396"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 — интерфейс
-Добавляет дополнительные события потоков. Только эти события являются локальными. То есть можно подписаться на их только в процесса отладки, с помощью [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) уведомлений и негативной рекомендации методы для объектов потока приложения PDM (объекты, реализующие [IDebugApplicationThread Интерфейс](../../winscript/reference/idebugapplicationthread-interface.md)). Они происходят в потоке, в которой они получены из.  
+Добавляет дополнительные события потока. Эти события являются локальными. То есть вы можете подписываться на них только в отлаживаемом процессе, используя методы [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) advise и unadvise для объектов потоков приложения PDM (объекты, реализующие [интерфейс идебугаппликатионсреад](../../winscript/reference/idebugapplicationthread-interface.md)). Они происходят в потоке, из которого они поступают.  
   
 > [!IMPORTANT]
 > Этот интерфейс реализуется в PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
@@ -31,7 +31,7 @@ ms.locfileid: "63440506"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Вызов в потоке, с использованием потока PDM началось переключения.|  
-|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Поток возобновляет работу из точки останова и будут активными еще раз.|  
-|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Поток приостанавливается для точки останова и может обрабатывать вызовы, требующие потока полностью будет приостановлено.|  
-|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Вызов в потоке, с использованием потока PDM переключение завершения.|
+|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Начат вызов потока с помощью переключения потоков PDM.|  
+|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Поток возобновляется из точки останова и снова становится активным.|  
+|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Поток приостанавливается для точки останова и может обрабатывать вызовы, требующие полной приостановки потока.|  
+|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Завершен вызов потока, использующего переключение потоков PDM.|

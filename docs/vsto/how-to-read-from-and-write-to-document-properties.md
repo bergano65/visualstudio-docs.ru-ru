@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Чтение и запись в свойства документа
+title: Руководство. чтение и запись в свойства документа
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,21 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71a4b1a84c4544f4dc2b359e391f3c9f768e8eee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961570"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985801"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Практическое руководство. Чтение и запись в свойства документа
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Руководство. чтение и запись в свойства документа
   Свойства документа можно сохранять вместе с документом. Приложения Office содержат различные встроенные свойства, например автора, название и тему. В этом разделе показано, как задать свойства документа в Microsoft Office Excel и Microsoft Office Word.
-
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Доступ и использовать настраиваемые свойства документа в Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
-## <a name="set-document-properties-in-excel"></a>Набор свойств документа в Excel
+## <a name="set-document-properties-in-excel"></a>Задание свойств документа в Excel
  Для работы со встроенными свойствами в Excel используйте следующие свойства.
 
 - В проекте на уровне документа используйте свойство <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> класса `ThisWorkbook` .
@@ -52,7 +50,7 @@ ms.locfileid: "62961570"
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
 
-## <a name="set-document-properties-in-word"></a>Набор свойств документа в Word
+## <a name="set-document-properties-in-word"></a>Задание свойств документа в Word
  Для работы со встроенными свойствами в Word используйте следующие свойства.
 
 - В проекте на уровне документа используйте свойство <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> класса `ThisDocument` .
@@ -82,5 +80,5 @@ ms.locfileid: "62961570"
 
 ## <a name="see-also"></a>См. также
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
-- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
-- [Практическое руководство. Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
+- [Как создавать и изменять пользовательские свойства документа](../vsto/how-to-create-and-modify-custom-document-properties.md)

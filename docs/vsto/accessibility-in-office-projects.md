@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255784"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189617"
 ---
 # <a name="accessibility-in-office-projects"></a>Специальные возможности в проектах Office
 
-Microsoft Visual Studio и Microsoft Office включают множество специальных возможностей, позволяющих создавать пользовательские решения, соответствующие стандартным требованиям специальных возможностей. Корпорация Майкрософт публикует рекомендации по специальным возможностям в Интернете. Дополнительные сведения см. на [веб-сайте Accessibility](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio и Microsoft Office включают множество специальных возможностей, позволяющих создавать пользовательские решения, соответствующие стандартным требованиям специальных возможностей. Корпорация Майкрософт публикует рекомендации по специальным возможностям в Интернете. Дополнительные сведения см. на [веб-сайте Accessibility](https://www.microsoft.com/accessibility/).
 
 В большинстве случаев проекты Office в Visual Studio соответствуют стандартам специальных возможностей или предоставляют свойства, которые можно настроить, чтобы сделать ваши решения доступными. Однако некоторые функции имеют ограниченный доступ.
 
@@ -88,5 +88,5 @@ Visual Studio имеет следующие ограничения, связан
 
 - [Разработка решений Office](../vsto/developing-office-solutions.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
-- [Специальные возможности для людей с ограниченными возможностями](../ide/reference/accessibility-for-people-with-disabilities.md)
+- [Специальные возможности для людей с ограниченными возможностями](../ide/reference/accessibility-features-of-visual-studio.md)
 - [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

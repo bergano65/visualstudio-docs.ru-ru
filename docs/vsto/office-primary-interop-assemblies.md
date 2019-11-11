@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342507"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985714"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
 
@@ -67,7 +67,7 @@ Visual Studio использует разные наборы основных с
 
 > [!NOTE]
 > Для более ранних версий Visual Studio эти основные сборки взаимодействия будут установлены в папку Инструменты Visual Studio для Оффице\пиа в папке `%ProgramFiles%` для этой версии Visual Studio.
-> Пример: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
+> Например: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Основные сборки взаимодействия в глобальном кэше сборок
 
@@ -81,7 +81,7 @@ Visual Studio использует разные наборы основных с
 
 Каждый шаблон проекта Office в Visual Studio предназначен для работы с одним приложением Microsoft Office. Чтобы использовать компоненты в нескольких приложениях Microsoft Office (или в приложении или компоненте, для которого нет проекта в Visual Studio) необходимо добавить ссылку на нужные основные сборки взаимодействия.
 
-В большинстве случаев следует добавить ссылки на основные сборки взаимодействия, которые устанавливаются в Visual Studio в `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` каталоге. Эти версии сборок отображаются на вкладке **платформа** диалогового окна **Диспетчер ссылок** . Дополнительные сведения см. в разделе [Практическое руководство. Нацеливание приложений Office через основные](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)сборки взаимодействия.
+В большинстве случаев следует добавить ссылки на основные сборки взаимодействия, которые устанавливаются Visual Studio в каталоге `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`. Эти версии сборок отображаются на вкладке **платформа** диалогового окна **Диспетчер ссылок** . Дополнительные сведения см. [в разделе руководство. Назначение приложений Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Если вы установили и зарегистрировали основные сборки взаимодействия в глобальном кэше сборок, эти версии сборок отображаются на вкладке **COM** диалогового окна **Диспетчер ссылок** . Следует избегать добавления ссылок на эти версии сборок, так как имеются несколько проблем разработки, которые могут возникать при их использовании. Например, если вы зарегистрировали разные версии основных сборок взаимодействия в глобальном кэше сборок, проект будет автоматически привязан к версии сборки, которая была зарегистрирована последней, даже если вы укажете другую версию сборки на вкладке **COM** диалогового окна **Диспетчер ссылок** .
 
@@ -100,23 +100,23 @@ Visual Studio использует разные наборы основных с
 |-------------------------------------|-----------------------------------|
 |Библиотека объектов Microsoft Access 14.0<br /><br /> Библиотека объектов Microsoft Access 15.0|Microsoft.Office.Interop.Access.dll|
 |Библиотека объектов ядра СУБД Access Microsoft Office 14.0<br /><br /> Библиотека объектов ядра СУБД Access Microsoft Office 15.0|Microsoft.Office.Interop.Access.Dao.dll|
-|Библиотека объектов Microsoft Excel 14.0<br /><br /> Библиотека объектов Microsoft Excel 15.0|[Microsoft. Office. Interop. Excel. dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Библиотека объектов Microsoft Excel 14.0<br /><br /> Библиотека объектов Microsoft Excel 15.0|[Microsoft. Office. Interop. Excel. dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
 |Библиотека объектов Microsoft Graph 14.0 (используемая PowerPoint, Access и Word для графиков)<br /><br /> Библиотека объектов Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|
-|Библиотека типов Microsoft InfoPath 2.0 (только для InfoPath 2007)|[Microsoft. Office. Interop. InfoPath. dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Библиотека типов Microsoft InfoPath 2.0 (только для InfoPath 2007)|[Microsoft. Office. Interop. InfoPath. dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
 |Сборка взаимодействия XML Microsoft InfoPath (только для InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Библиотека объектов Microsoft Office 14.0 (общие функции Office)<br /><br /> Библиотека объектов Microsoft Office 15.0 (общие функции Office)|office.dll|
 |Элемент управления представления Microsoft Office Outlook (может использоваться в веб-страницах и приложениях для получения доступа к папке входящих сообщений)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Библиотека объектов Microsoft Outlook 14.0<br /><br /> Библиотека объектов Microsoft Outlook 15.0|[Microsoft. Office. Interop. Outlook. dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Библиотека объектов Microsoft Outlook 14.0<br /><br /> Библиотека объектов Microsoft Outlook 15.0|[Microsoft. Office. Interop. Outlook. dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
 |Библиотека объектов Microsoft PowerPoint 14.0<br /><br /> Библиотека объектов Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|
-|Библиотека объектов Microsoft Project 14.0<br /><br /> Библиотека объектов Microsoft Project 15.0|[Microsoft. Office. Interop. Мспрожект. dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Библиотека объектов Microsoft Project 14.0<br /><br /> Библиотека объектов Microsoft Project 15.0|[Microsoft. Office. Interop. Мспрожект. dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
 |Библиотека объектов Microsoft Publisher 14.0<br /><br /> Библиотека объектов Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
 |Справочная библиотека веб-объектов Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Справочная библиотека объектов страницы Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Примечание к библиотеке типов Microsoft Smart Tags 2,0 **:**  Смарт-теги объявлены нерекомендуемыми в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
+|Библиотека типов Microsoft Smart Tags 2,0 **Примечание.** смарт-теги являются устаревшими в [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] и [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
 |Библиотека типов Microsoft Visio 14.0<br /><br /> Библиотека типов Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
 |Библиотека типов для сохранения веб-страниц Microsoft Visio 14.0<br /><br /> Библиотека типов для сохранения веб-страниц Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Библиотека типов элементов управления рисования Microsoft Visio 14.0<br /><br /> Библиотека типов элементов управления рисования Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
-|Библиотека объектов Microsoft Word 14.0<br /><br /> Библиотека объектов Microsoft Word 15.0|[Microsoft. Office. Interop. Word. dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Библиотека объектов Microsoft Word 14.0<br /><br /> Библиотека объектов Microsoft Word 15.0|[Microsoft. Office. Interop. Word. dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
 |Microsoft Visual Basic for Applications Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Привязка сборок перенаправления
@@ -125,11 +125,11 @@ Visual Studio использует разные наборы основных с
 
 Например, когда решение, которое ссылается на сборку [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] , выполняется на компьютере с версией [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] той же основной сборки взаимодействия, сборка переадресации привязки дает среде выполнения [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] указание загрузить версию [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] основной сборки взаимодействия.
 
-Дополнительные сведения см. в разделе [Практическое руководство. Включение и отключение автоматического перенаправления](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)привязок.
+Дополнительные сведения см. [в разделе инструкции. Включение и отключение автоматического перенаправления привязок](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Целевые приложения Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Пошаговое руководство. Назначение приложений Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)
 - [Решения InfoPath](../vsto/infopath-solutions.md)
 - [Общие сведения об объектной модели Outlook](../vsto/outlook-object-model-overview.md)

@@ -22,14 +22,14 @@ helpviewer_keywords:
 description: Узнайте, как обновить бесплатную копию компонента Dotfuscator Community, входящую в состав Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557246"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748890"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Обновление Dotfuscator Community
 
@@ -65,7 +65,7 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 Дополнительные сведения о расширенных функциях защиты приложений Dotfuscator Professional см. на [странице обзора Dotfuscator][product-about] PreEmptive Solutions и [сравните их с Dotfuscator Community][product-compare].
 [Полностью поддерживаемые пробные версии доступны на сайте preemptive.com][eval].
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Эта статья в полном руководстве пользователя Dotfuscator Community][full]
 

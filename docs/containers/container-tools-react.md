@@ -1,17 +1,17 @@
 ---
-title: Использование средств Visual Studio для контейнеров с ASP.NET Core
+title: Средства Visual Studio для контейнеров с ASP.NET Core и React.js
 author: ghogen
 description: Сведения об использовании средств Visual Studio для контейнеров и Docker для Windows
 ms.author: ghogen
-ms.date: 06/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: bcc30ec13096b37d7540c187d11c846d6c575093
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179905"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516441"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Краткое руководство. Использование Docker с одностраничным приложением React в Visual Studio
 
@@ -23,12 +23,16 @@ ms.locfileid: "70179905"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**
 * Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* [Node.js](https://nodejs.org/en/download/)
+* Для контейнеров Windows, Windows 10 версии 1903 или более поздней, используйте образы "Docker", о которых идет речь в этой статье.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**.
 * [Средства разработки .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) для разработки с использованием .NET Core 2.2.
 * Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* [Node.js](https://nodejs.org/en/download/)
+* Для контейнеров Windows, Windows 10 версии 1903 или более поздней, используйте образы "Docker", о которых идет речь в этой статье.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>Установка и настройка
@@ -47,7 +51,7 @@ ms.locfileid: "70179905"
 
    ![Добавление поддержки Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Выберите Linux для типа контейнера и нажмите кнопку **ОК**.
+1. Выберите тип контейнера и нажмите **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Создайте проект, используя шаблон **Веб-приложение ASP.NET Core**.
@@ -59,10 +63,12 @@ ms.locfileid: "70179905"
 
    ![Добавление поддержки Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Выберите Linux в качестве типа контейнера.
+1. Выберите тип контейнера.
 ::: moniker-end
 
-## <a name="dockerfile-overview"></a>Общие сведения о Dockerfile
+Следующий шаг зависит от того, используете ли вы контейнеры Linux или контейнеры Windows.
+
+## <a name="modify-the-dockerfile-linux-containers"></a>Изменение файла Dockerfile (контейнеры Linux)
 
 *Dockerfile* с инструкциями по созданию окончательного образа Docker создается в проекте. См. [справочник по Dockerfile](https://docs.docker.com/engine/reference/builder/) для получения сведений о других доступных в нем командах.
 
@@ -104,9 +110,74 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 
 Если в диалоговом окне создания проекта установлен флажок **Configure for HTTP** (Настроить для трафика HTTPS), *Dockerfile* предоставляет два порта. Один порт используется для трафика HTTP, другой — для HTTPS. Если флажок не установлен, для трафика HTTP предоставляется один порт (80).
 
+## <a name="modify-the-dockerfile-windows-containers"></a>Изменение файла "Dockerfile" (контейнеры Windows)
+
+Откройте файл проекта двойным щелчком на узле проекта и обновите файл проекта (*.csproj), добавив следующее свойство в качестве дочернего элемента `<PropertyGroup>`:
+
+   ```xml
+    <DockerfileFastModeStage>base</DockerfileFastModeStage>
+   ```
+
+Обновите файл "Dockerfile", добавив следующие строки. Это скопирует узел и npm в контейнер.
+
+   1. Добавьте ``# escape=` `` в первую строку файла "Dockerfile".
+   1. Добавьте следующие строки перед `FROM … base`.
+
+      ```
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      ```
+
+   1. Добавьте следующую строку до и после `FROM … build`.
+
+      ```
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      ```
+
+   1. Теперь весь файл "Dockerfile" должен выглядеть примерно так:
+
+      ```
+      # escape=`
+      #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+      #For more information, please see https://aka.ms/containercompat
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
+      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+
+      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      WORKDIR /app
+      EXPOSE 80
+      EXPOSE 443
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+
+      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      WORKDIR /src
+      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
+      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY . .
+      WORKDIR "/src/WebApplication37"
+      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+
+      FROM build AS publish
+      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+
+      FROM base AS final
+      WORKDIR /app
+      COPY --from=publish /app/publish .
+      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ```
+
+1. Обновите файл .dockerignore, удалив `**/bin`.
+
 ## <a name="debug"></a>Отладка
 
-Выберите пункт **Docker** в раскрывающемся списке отладки на панели инструментов, чтобы начать отладку приложения. Может появиться сообщение с запросом о доверии сертификату. Выберите доверие сертификату, чтобы продолжить.
+Выберите пункт **Docker** в раскрывающемся списке отладки на панели инструментов, чтобы начать отладку приложения. Может появиться сообщение с запросом о доверии сертификату. Выберите доверие сертификату, чтобы продолжить.  При первой сборке Docker загружает базовые образы, так что это может занять немного больше времени.
 
 В параметре **Инструменты контейнера** в окне **Вывод** показано, какие действия выполняются. Вы должны увидеть действия по установке, связанные с *npm.exe*.
 

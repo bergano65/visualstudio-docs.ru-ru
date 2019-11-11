@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление сущности в модель | Документация Майкрософт
+title: Как добавить сущность в модель | Документация Майкрософт
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b1a7ec1eab5cdcf2e415a4803c51c9da91be29c9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431247"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985245"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>Практическое руководство. Добавление сущности в модель
-  Чтобы создать сущность, добавьте элемент управления сущности из Visual Studio **элементов** в конструктор бизнес-данным (BDC).
+# <a name="how-to-add-an-entity-to-a-model"></a>Как добавить сущность в модель
+  Чтобы создать сущность, добавьте элемент управления сущности из **панели элементов** Visual Studio в конструктор подключения к бизнес-данным (BDC).
 
-### <a name="to-add-an-entity-to-the-model"></a>Чтобы добавить сущность в модель
+### <a name="to-add-an-entity-to-the-model"></a>Добавление сущности в модель
 
-1. Создание проекта BDC, или откройте существующий проект BDC. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
+1. Создайте проект BDC или откройте существующий проект BDC. Дополнительные сведения см. [в статье Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-2. В **элементов**, из **каталог бизнес-данных** группу, добавить **сущности** элемента управления в конструктор.
+2. В **области элементов**в группе **бусинессдатакаталог** добавьте элемент управления **сущности** в конструктор.
 
-     В конструкторе отобразится новая сущность. Visual Studio добавляет `<Entity>` элемент к XML-файла модели BDC в проекте. Дополнительные сведения об атрибутах элемента сущности, см. в разделе [сущности](http://go.microsoft.com/fwlink/?LinkId=169296).
+     Новая сущность появится в конструкторе. Visual Studio добавляет элемент `<Entity>` в XML-файл модели BDC в проекте. Дополнительные сведения об атрибутах элемента сущности см. в разделе [Entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
 
-3. В конструкторе, откройте контекстное меню для сущности, выберите **добавить**, а затем выберите **идентификатор**.
+3. В конструкторе откройте контекстное меню сущности, выберите **Добавить**, а затем выберите **идентификатор**.
 
-     Отобразится новый идентификатор для сущности.
+     В сущности появится новый идентификатор.
 
     > [!NOTE]
-    > Можно изменить имя сущности и идентификатора в **свойства** окна.
+    > Имя сущности и идентификатор можно изменить в окне **Свойства** .
 
-4. Определение полей сущности в классе. Можно добавить новый класс в проект или использовать существующий класс, созданный с помощью других средств, таких как реляционный конструктор объектов (O/R Designer). Следующий пример показывает класс сущностей с именем контакта.
+4. Определите поля сущности в классе. Можно либо добавить новый класс в проект, либо использовать существующий класс, созданный с помощью других средств, таких как реляционный конструктор объектов (реляционный конструктор R). В следующем примере показан класс сущностей с именем Contact.
 
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Как добавить метод Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Как добавить метод удаления](../sharepoint/how-to-add-a-deleter-method.md)
+- [Как добавить метод обновления](../sharepoint/how-to-add-an-updater-method.md)
+- [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Как добавить конкретный метод поиска](../sharepoint/how-to-add-a-specific-finder-method.md)

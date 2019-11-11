@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300548"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888582"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Обновление Visual Studio во время обслуживания
 
@@ -28,7 +28,7 @@ ms.locfileid: "68300548"
 
 Администраторы предприятий могут не выполнять промежуточные обновления своих клиентов. Служебные обновления продолжают выходить в течение года после выпуска очередной базовой версии.
 
-Служебные обновления позволяют разработчикам и администраторам лучше адаптироваться к новым функциям, исправлениям ошибок и компонентам, добавляемым при промежуточных обновлениях. 16.0.x — это первая базовая версия. Дополнительные сведения см. в разделе [Варианты поддержки для клиентов уровня Enterprise и Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+Служебные обновления позволяют разработчикам и администраторам лучше адаптироваться к новым функциям, исправлениям ошибок и компонентам, добавляемым при промежуточных обновлениях. 16.0.x — это первая базовая версия. Дополнительные сведения см. в разделе [Варианты поддержки для клиентов уровня Enterprise и Professional](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Как установить базовую версию
 

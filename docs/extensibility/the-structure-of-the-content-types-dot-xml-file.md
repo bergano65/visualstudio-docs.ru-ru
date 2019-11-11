@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718729"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983041"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Структура файла [типы_содержимого].xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types]. XML для установки пакета, но не устанавливает сам файл.
 
 > [!NOTE]
-> Хотя этот раздел применим только к файлам [Content_Type]. XML, которые используются в пакетах VSIX, тип файла [Content_Types]. XML является частью стандарта *Open Packaging Conventions (OPC)* . Дополнительные сведения см. в статье [OPC: новый стандарт для упаковки данных](http://go.microsoft.com/fwlink/?LinkID=148207) на веб-сайте MSDN.
+> Хотя этот раздел применим только к файлам [Content_Type]. XML, которые используются в пакетах VSIX, тип файла [Content_Types]. XML является частью стандарта *Open Packaging Conventions (OPC)* . Дополнительные сведения см. в статье [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx) на веб-сайте MSDN.
 
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы
  В следующих разделах описывается корневой элемент, его атрибуты и дочерние элементы.
@@ -102,4 +102,4 @@ ms.locfileid: "72718729"
 ## <a name="see-also"></a>См. также
 - [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: новый стандарт для упаковки данных](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx)

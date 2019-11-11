@@ -16,17 +16,17 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748434"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985159"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 Чтобы определить доменный язык (DSL), создайте решение Visual Studio на основе шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.
 
-Если вы не знакомы с доменным DSL, мы рекомендуем вам работать с **лабораториями средств DSL**, которые можно найти на этом сайте: [SDK визуализации и моделирования](http://go.microsoft.com/fwlink/?LinkID=186128) .
+Если вы не знакомы с доменным DSL, мы рекомендуем вам работать с **лабораториями средств DSL**, которые можно найти на этом сайте: [SDK визуализации и моделирования](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) .
 
 ## <a name="templates"></a>Выбор шаблона решения
 
@@ -607,7 +607,7 @@ ms.locfileid: "72748434"
  См. также [руководство. изменение пространства имен доменного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a>Выявлен
- В следующей таблице перечислено большинство стандартных проблем, возникающих при разработке DSL, а также предложения по их решению. Дополнительные советы доступны на форуме по [расширению средств визуализации](http://go.microsoft.com/fwlink/?LinkId=186074).
+ В следующей таблице перечислено большинство стандартных проблем, возникающих при разработке DSL, а также предложения по их решению. Дополнительные советы доступны на форуме по [расширению средств визуализации](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Проблема | Предложение |
 |-|-|

@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb62644b362a7630d454db2740b354c546b0155b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c553b7069243d5a701b94fd1f5f011e4075d4c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649988"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188922"
 ---
 # <a name="runtime-activity-designers"></a>Конструкторы действий среды выполнения
 Конструкторы действий времени выполнения служат для сохранения и завершения действий рабочего процесса. Разделы, содержащиеся в этом разделе, содержат рекомендации по использованию конструкторов действий конструктор рабочих процессов.
@@ -35,4 +35,4 @@ ms.locfileid: "72649988"
 
 ## <a name="see-also"></a>См. также
 
-- [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)
+- [Использование конструкторов действий](control-flow-activity-designers.md)

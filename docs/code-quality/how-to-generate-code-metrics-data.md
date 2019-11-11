@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649406"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568844"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -33,9 +33,9 @@ ms.locfileid: "72649406"
 [Пакет NuGet фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) включает несколько правил [анализатора](roslyn-analyzers-overview.md) метрик кода:
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
-- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 Эти правила по умолчанию отключены, но их можно включить в [**Обозреватель решений**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) или в файле [набора правил](using-rule-sets-to-group-code-analysis-rules.md) . Например, чтобы включить правило CA1502 в виде предупреждения, в RuleSet-файле будет содержаться следующая запись:
 
@@ -60,7 +60,7 @@ ms.locfileid: "72649406"
    CA1502: 10
    ```
 
-   В этом примере правило [CA1502](ca1502-avoid-excessive-complexity.md) настраивается на срабатывание, когда сложность сложностью организации циклов метода больше 10.
+   В этом примере правило [CA1502](ca1502.md) настраивается на срабатывание, когда сложность сложностью организации циклов метода больше 10.
 
 3. В окне **Свойства** Visual Studio или в файле проекта пометьте действие сборки файла конфигурации как [**аддитионалфилес**](../ide/build-actions.md#build-action-values). Пример:
 

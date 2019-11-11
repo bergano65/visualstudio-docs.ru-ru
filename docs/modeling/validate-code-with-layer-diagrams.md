@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662939"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981135"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Проверка кода по схемам зависимостей
 
@@ -52,7 +52,7 @@ ms.locfileid: "72662939"
 
 Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. раздел [Поддержка архитектуры и средств моделирования в выпуске](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Код можно проверить вручную с помощью открытой схемы зависимостей в Visual Studio или из командной строки. Вы также можете проверить код автоматически при выполнении локальных сборок или сборок Azure Pipelines. См. [видео Channel 9: проектирование и проверка архитектуры с помощью схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=252073).
+Код можно проверить вручную с помощью открытой схемы зависимостей в Visual Studio или из командной строки. Вы также можете проверить код автоматически при выполнении локальных сборок или сборок Azure Pipelines. См. [видео Channel 9: проектирование и проверка архитектуры с помощью схем зависимостей](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Если вы хотите выполнить проверку слоев с помощью Team Foundation Server (TFS), необходимо также установить на сервере сборки ту же версию Visual Studio.

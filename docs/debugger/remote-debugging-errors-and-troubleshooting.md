@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f41292c22de1d9c76007ca44cb7accbf82359b3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730019"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187516"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Ошибки удаленной отладки и их устранение
 
@@ -33,7 +33,7 @@ ms.locfileid: "72730019"
 
 - [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
-- [Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
+- [Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
 - [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 

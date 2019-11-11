@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 649f99911726e562f9602fe6697591ec6cfb96eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561029"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911898"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Добавление хранилища Azure с использованием подключенных служб Visual Studio
 
@@ -67,14 +67,14 @@ ms.locfileid: "62561029"
 
 Когда вы закроете диалоговое окно, Visual Studio добавит ссылки и внесет изменения в определенные файлы конфигурации. Конкретные изменения зависят от типа проекта.
 
-- Проекты ASP.NET: ознакомьтесь со статьей [Приступая к работе с хранилищем BLOB-объектов Azure и подключенными службами Visual Studio (ASP.NET)](http://go.microsoft.com/fwlink/p/?LinkId=513126).
-- Проекты ASP.NET Core: ознакомьтесь со статьей [Начало работы с хранилищем больших двоичных объектов Azure и подключенными службами Visual Studio (ASP.NET 5)](http://go.microsoft.com/fwlink/p/?LinkId=513124).
-- Проекты облачной службы (веб-роли и рабочие роли): ознакомьтесь со статьей [Начало работы с хранилищем больших двоичных объектов Azure и подключенными службами Visual Studio (проектами облачных служб)](http://go.microsoft.com/fwlink/p/?LinkId=516965).
+- Проекты ASP.NET: ознакомьтесь со статьей [Приступая к работе с хранилищем BLOB-объектов Azure и подключенными службами Visual Studio (ASP.NET)](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs).
+- Проекты ASP.NET Core: ознакомьтесь со статьей [Начало работы с хранилищем больших двоичных объектов Azure и подключенными службами Visual Studio (ASP.NET 5)](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs).
+- Проекты облачной службы (веб-роли и рабочие роли): ознакомьтесь со статьей [Начало работы с хранилищем больших двоичных объектов Azure и подключенными службами Visual Studio (проектами облачных служб)](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs).
 - Проекты веб-заданий: ознакомьтесь со статьей [Что произошло с моим проектом веб-заданий (подключенными к службе хранилища Azure службами Visual Studio)?](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="see-also"></a>См. также
 
 - [Форум MSDN: служба хранилища Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Блог команды разработчиков службы хранилища Microsoft Azure](http://blogs.msdn.com/b/windowsazurestorage/)
-- [Документация по службе хранилища Azure](https://docs.microsoft.com/azure/storage/)
+- [Блог команды разработчиков службы хранилища Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Документация по службе хранилища Azure](/azure/storage/)
 - [Подключенные службы ( Visual Studio для Mac)](/visualstudio/mac/connected-services)

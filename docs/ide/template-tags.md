@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891141"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189543"
 ---
 # <a name="add-tags-to-project-templates"></a>Добавление тегов к шаблонам проектов
 
@@ -40,9 +40,9 @@ ms.locfileid: "67891141"
 
 Вы можете добавлять теги в XML-файл шаблона проекта с расширением *.vstemplate* или изменять их при выполнении следующих действий:
 
-* [создавая шаблон проекта](/visualstudio/ide/how-to-create-project-templates) с помощью мастера экспорта шаблонов;
-* [обновляя шаблон проекта](/visualstudio/ide/how-to-update-existing-templates);
-* [создавая шаблон проекта VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
+* [создавая шаблон проекта](how-to-create-project-templates.md) с помощью мастера экспорта шаблонов;
+* [обновляя шаблон проекта](how-to-update-existing-templates.md);
+* [создавая шаблон проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -93,7 +93,7 @@ ms.locfileid: "67891141"
 
 Ниже перечислены встроенные теги, доступные в Visual Studio. Соответствующие значения приводятся в скобках.
 
-| Язык | Platform | Тип проекта |
+| Язык | Платформа | Тип проекта |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Облако (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Консоль (`console`) |
@@ -147,7 +147,7 @@ ms.locfileid: "67891141"
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Создание шаблонов проектов и элементов](/visualstudio/ide/creating-project-and-item-templates)
-- [Настройка шаблонов проектов и элементов](/visualstudio/ide/customizing-project-and-item-templates)
-- [Начало работы с шаблоном проекта VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Создание шаблонов проектов и элементов](creating-project-and-item-templates.md)
+- [Настройка шаблонов проектов и элементов](customizing-project-and-item-templates.md)
+- [Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

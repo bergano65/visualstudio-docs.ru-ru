@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 0be8f9ed17bf4474307a639bb75f409da2ff1638
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852238"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911296"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Практическое руководство. Информация об использовании пакетов SDK проекта MSBuild
 
@@ -107,7 +107,7 @@ ms.locfileid: "67852238"
    Этот распознаватель находит только пакеты SDK проекта, входящие в состав этого продукта, например `Microsoft.NET.Sdk` и `Microsoft.NET.Sdk.Web`.
 3. Распознаватель по умолчанию, который разрешает пакеты SDK, установленные совместно с MSBuild.
 
-Распознаватель пакетов SDK на основе NuGet позволяет указывать версию в файле [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json), благодаря чему вы можете управлять версией пакета SDK проекта в одном месте, а не в каждом проекте отдельно.
+Распознаватель пакетов SDK на основе NuGet позволяет указывать версию в файле [global.json](/dotnet/core/tools/global-json), благодаря чему вы можете управлять версией пакета SDK проекта в одном месте, а не в каждом проекте отдельно.
 
 ```json
 {

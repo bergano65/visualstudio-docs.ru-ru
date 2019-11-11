@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62d4e2431ab2dbc2ca74944ac1717fe6c3169287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4dad42d9bd4919e90f3ef3bd84ee156cd510e311
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440096"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910230"
 ---
 # <a name="events-vsperfcmd"></a>Параметр Events (VSPerfCmd)
 Параметр **Events** программы *VSPerfCmd.exe* позволяет управлять ведением журнала трассировки событий Windows. Данные трассировки событий Windows сохраняются в ETL-файле, который отличается от файла данных профилировщика. Эти данные можно просмотреть в отчете с помощью команды [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.
@@ -69,7 +69,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```
 
 > [!IMPORTANT]
-> Так как события запуска не перечислены в MOF-файле, то если их не исключить, они отображаются в отчете в виде идентификаторов GUID. Дополнительные сведения см. на странице [Образец MOF-файла](http://go.microsoft.com/fwlink/?linkid=37118) веб-сайта корпорации Майкрософт.
+> Так как события запуска не перечислены в MOF-файле, то если их не исключить, они отображаются в отчете в виде идентификаторов GUID. Дополнительные сведения см. на странице [Образец MOF-файла](https://msdn.microsoft.com/library/default.aspx) веб-сайта корпорации Майкрософт.
 
 ## <a name="see-also"></a>См. также
 - [VSPerfCmd](../profiling/vsperfcmd.md)

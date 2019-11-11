@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018442"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745928"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Пример проекта C++ для анализа кода
 
@@ -34,7 +34,7 @@ ms.locfileid: "72018442"
 
 1. В меню **Файл** выберите команду **Создать**, а затем **Создать проект**.
 
-2. Если Visual C++ не является вашим языком по умолчанию в Visual Studio, в списке дерева **Типы проектов** разверните узел **Другие языки**.
+2. Если C++ не является вашим языком по умолчанию в Visual Studio, в списке дерева **Типы проектов** разверните узел **Другие языки**.
 
 3. Разверните **Visual C++** и выберите **Общие**.
 

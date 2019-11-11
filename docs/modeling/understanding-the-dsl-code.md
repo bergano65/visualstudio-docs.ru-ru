@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747397"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189456"
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 
@@ -192,7 +192,7 @@ ms.locfileid: "72747397"
 
  `CommandSet.cs`
 
- Команды контекстного меню, которые видны на диаграмме. Этот набор можно адаптировать или добавить в него дополнительные элементы. В этом файле содержится код для команд. Расположение команд в меню определяется в файле Commands.vsct. Дополнительные сведения см. в разделе [Создание пользовательских команд и действий](../modeling/writing-user-commands-and-actions.md).
+ Команды контекстного меню, которые видны на диаграмме. Этот набор можно адаптировать или добавить в него дополнительные элементы. В этом файле содержится код для команд. Расположение команд в меню определяется в файле Commands.vsct. Дополнительные сведения см. в разделе [Создание пользовательских команд и действий](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Находит стандартные команды меню в меню, например контекстное меню диаграммы (контекст), меню **Правка** и т. д. Код для команд находится в файле CommandSet.cs. Стандартные команды можно переместить или изменить. Также можно добавить собственные команды. Дополнительные сведения см. в разделе [Создание пользовательских команд и действий](../modeling/writing-user-commands-and-actions.md).
+ Находит стандартные команды меню в меню, например контекстное меню диаграммы (контекст), меню **Правка** и т. д. Код для команд находится в файле CommandSet.cs. Стандартные команды можно переместить или изменить. Также можно добавить собственные команды. Дополнительные сведения см. в разделе [Создание пользовательских команд и действий](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `ModelExplorer.cs`
 

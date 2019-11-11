@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261058"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777811"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Устранение неполадок с эмулятором Android для Visual Studio
 В этом разделе содержатся сведения об устранении неполадок, которые могут возникать при использовании эмулятора Visual Studio для Android.
@@ -134,7 +134,7 @@ ms.locfileid: "66261058"
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
-     Если настройка неверна и используется Windows 10, можно попробовать [переустановить сетевые устройства с помощью команды netcfg-d](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (раздел 6).
+     Если настройка неверна и используется Windows 10, можно попробовать [переустановить сетевые устройства с помощью команды netcfg-d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (раздел 6).
 
 - Если эти шаги не решат проблему, см. раздел [Emulator fails to start (first use)](#NoStart) для получения сведений о программном обеспечении сторонних производителей, которое может мешать работе эмулятора.
 
@@ -209,7 +209,7 @@ ms.locfileid: "66261058"
 
   2. Для адаптера vEthernet (Внутренний порт Ethernet —  эмулятор Windows Phone, внутренний коммутатор) выберите **Свойства** в контекстном меню.
 
-      ![Виртуальный адаптер, используемый Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
+      ![Виртуальный адаптер, используемый клиентом Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
       Здесь показаны свойства адаптера.
 
@@ -311,6 +311,6 @@ ms.locfileid: "66261058"
 ## <a name="Support"></a> Ресурсы поддержки
  Если главный компьютер отвечает требованиям к системе и возникают проблемы, не описанные в этом руководстве по устранению неполадок:
 
-- Задать вопрос об использовании StackOverflow с помощью тегов [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) и visual-studio.
+- Задать вопрос об использовании StackOverflow с помощью тегов [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) и visual-studio.
 
 - сообщите о проблеме с помощью средства отправки одобрения в Visual Studio или в диспетчере эмуляторов.

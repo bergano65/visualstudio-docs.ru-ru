@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957204"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985186"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
 
 **Предыдущий шаг. [Создание приложения Flask с представлениями и шаблонами страниц](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -286,6 +286,6 @@ Flask предоставляет функцию с именем `serve_static_fi
 ## <a name="go-deeper"></a>Дополнительные подробности
 
 - [Развертывание веб-приложения в Службе приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Сведения о дополнительных возможностях шаблонов Jinja, таких как поток управления, см. в [документации по конструктору шаблонов Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org).
-- Дополнительные сведения об использовании `url_for` см. в разделе [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) в документации по объекту приложения Flask (flask.pocoo.org).
+- Сведения о дополнительных возможностях шаблонов Jinja, таких как поток управления, см. в [документации по конструктору шаблонов Jinja](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org).
+- Дополнительные сведения об использовании `url_for` см. в разделе [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) в документации по объекту приложения Flask (flask.pocoo.org).
 - Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745759"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911607"
 ---
 # <a name="cc-assertions"></a>Утверждения C/C++
 Оператор утверждения задает условие, которое должно выполняться на определенном этапе работы программы. Если это условие не выполняется, утверждение признается ложным, выполнение программы прерывается и появляется [диалоговое окно "Сбой утверждения"](../debugger/assertion-failed-dialog-box.md).
@@ -169,7 +169,7 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative
 ```
 
-ASSERT можно применять с функцией [IsKindOf](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#iskindof), чтобы задать проверку типов аргументов функции:
+ASSERT можно применять с функцией [IsKindOf](/cpp/mfc/reference/cobject-class#iskindof), чтобы задать проверку типов аргументов функции:
 
 ```cpp
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
@@ -178,7 +178,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 Макрос `ASSERT` не создает никакого кода в окончательной версии. Если именно в окончательной версии нужно оценить выражение, вместо ASSERT следует применять макрос [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify).
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID и CObject::AssertValid
-Функция-член [CObject::AssertValid](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#assertvalid) периодически проверяет внутреннее состояние объекта во время выполнения. Переопределение функции `AssertValid` при получении класса из `CObject` позволяет сделать данный класс более надежным, хотя такое переопределение необязательно. Функция `AssertValid` должна выполнить утверждения для всех переменных-членов объекта, чтобы подтвердить наличие только допустимых значений. Например, с ее помощью следует проверить, что переменные-члены указателя не равны NULL.
+Функция-член [CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) периодически проверяет внутреннее состояние объекта во время выполнения. Переопределение функции `AssertValid` при получении класса из `CObject` позволяет сделать данный класс более надежным, хотя такое переопределение необязательно. Функция `AssertValid` должна выполнить утверждения для всех переменных-членов объекта, чтобы подтвердить наличие только допустимых значений. Например, с ее помощью следует проверить, что переменные-члены указателя не равны NULL.
 
 В следующем примере показан способ объявления функции `AssertValid`:
 

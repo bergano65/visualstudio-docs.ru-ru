@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d7371880c739e242bcdd70fb2bb9ac0cd92677b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551582"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661850"
 ---
 # <a name="excel-object-model-overview"></a>Общие сведения об объектной модели Excel
   Для разработки решений, использующих Microsoft Office Excel, необходимо взаимодействие с объектами, предоставляемыми объектной моделью Excel. В этом разделе представлены наиболее важные объекты:
@@ -47,8 +47,6 @@ ms.locfileid: "69551582"
 
   В этом разделе приводится краткий обзор объектной модели Excel. Дополнительные сведения о всей объектной модели Excel см. в разделе [использование документации по объектной модели](#ExcelOMDocumentation)Excel.
 
-  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Использовать обработчики событий в надстройке Excel 2007? ](http://go.microsoft.com/fwlink/?LinkID=130291) и[разделы справки: Используете фигуры для создания пузырьковой диаграммы в Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).
-
 ## <a name="access-objects-in-an-excel-project"></a>Доступ к объектам в проекте Excel
  При создании нового проекта надстройки VSTO для Excel Visual Studio автоматически создает файл кода *ThisAddIn. vb* или *ThisAddIn.CS* . Доступ к объекту приложения можно получить с помощью свойства `Me.Application` или `this.Application`.
 
@@ -61,7 +59,7 @@ ms.locfileid: "69551582"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- Класс `Globals` в проекте можно использовать для получения доступа к объекту `ThisWorkbook`, `Sheet1`, `Sheet2` или `Sheet3` вне соответствующего класса. Дополнительные сведения см. [в разделе Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md). В следующем примере вызывается <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> `Sheet1` метод независимо от того, `Sheet`помещается ли код в один из классов *n* или `ThisWorkbook` класса.
+ Класс `Globals` в проекте можно использовать для получения доступа к объекту `ThisWorkbook`, `Sheet1`, `Sheet2` или `Sheet3` вне соответствующего класса. Дополнительные сведения см. [в разделе Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md). В следующем примере вызывается метод <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> `Sheet1` независимо от того, помещен ли код в один из классов `Sheet`*n* или класс `ThisWorkbook`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
@@ -105,14 +103,14 @@ ms.locfileid: "69551582"
  Полные сведения об объектной модели Excel см. в справочнике по основной сборке взаимодействия (PIA) Excel и в справочнике по объектной модели VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Ссылка на основную сборку взаимодействия
- В справочной документации по основной сборке взаимодействия Excel описываются типы основной сборки взаимодействия для Excel. Эта документация доступна по следующему адресу: [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+ В справочной документации по основной сборке взаимодействия Excel описываются типы основной сборки взаимодействия для Excel. Эта документация доступна по следующему адресу: [Справочник по основной сборке взаимодействия Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies).
 
- Дополнительные сведения о структуре основных сборок взаимодействия Excel, например о различиях между классами и интерфейсами в PIA и о том, как реализуются события в PIA, см. [в разделе Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](http://go.microsoft.com/fwlink/?LinkId=189592).
+ Дополнительные сведения о структуре основных сборок взаимодействия Excel, например о различиях между классами и интерфейсами в PIA и о том, как реализуются события в PIA, см. [в разделе Общие сведения о классах и интерфейсах в основных сборках взаимодействия Office](/previous-versions/office/office-12/ms247299(v=office.12)).
 
 ### <a name="vba-object-model-reference"></a>Справочник по объектной модели VBA
- В справочных документах по объектной модели VBA объектная модель Excel описана в том виде, в котором она предоставляется коду Visual Basic для приложений. Дополнительные сведения см. в [справочнике по объектной модели Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).
+ В справочных документах по объектной модели VBA объектная модель Excel описана в том виде, в котором она предоставляется коду Visual Basic для приложений. Дополнительные сведения см. в [справочнике по объектной модели Excel 2010](/office/vba/api/overview/Excel/object-model).
 
- Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и участникам основной сборки взаимодействия Excel. Например, объект листа в справочнике по объектной модели VBA соответствует <xref:Microsoft.Office.Interop.Excel.Worksheet> объекту в основной сборке взаимодействия Excel. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте Excel, создаваемом с помощью Visual Studio.
+ Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и участникам основной сборки взаимодействия Excel. Например, объект листа в справочнике по объектной модели VBA соответствует объекту <xref:Microsoft.Office.Interop.Excel.Worksheet> в основной сборке взаимодействия Excel. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте Excel, создаваемом с помощью Visual Studio.
 
 ### <a name="related-topics"></a>См. также
 

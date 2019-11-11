@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798399"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189346"
 ---
 # <a name="performance-session-overview"></a>Общие сведения о сеансе анализа производительности
 В данном обзоре приводится информация об основах профилирования. Разработчики, у которых нет опыта анализа производительности, узнают, как средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяют быстро повысить продуктивность их работы и производительность их кода. Разработчики, обладающие опытом профилирования, получат представление об особенностях функций и процессов средств профилирования.
@@ -75,4 +75,4 @@ ms.locfileid: "62798399"
 
 ## <a name="see-also"></a>См. также
 - [Разделы общих сведений](../profiling/overviews-performance-tools.md)
-- [Пошаговое руководство: Выявление проблем с производительностью](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [Пошаговое руководство: Выявление проблем с производительностью](beginners-guide-to-cpu-sampling.md)

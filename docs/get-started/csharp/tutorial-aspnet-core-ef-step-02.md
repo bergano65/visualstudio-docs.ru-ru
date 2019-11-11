@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402069"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061131"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Шаг 2. Создание первого веб-приложения ASP.NET Core
 
@@ -33,9 +33,12 @@ _Выполните инструкции из этого видео, чтобы 
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Запуск Visual Studio 2019 и создание проекта
 
-Запустите Visual Studio 2019 и щелкните **Создать проект**. Выберите **Веб-приложение ASP.NET Core**. Выберите шаблон **Веб-приложение** и оставьте имя и расположение проекта по умолчанию. Нажмите кнопку **Создать**. Более подробные инструкции см. [в предыдущем видео в этой серии учебников](tutorial-aspnet-core-ef-step-01.md).
+Запустите Visual Studio 2019 и щелкните **Создать проект**. Выберите **Веб-приложение ASP.NET Core**. Выберите шаблон **Веб-приложение** и оставьте имя и расположение проекта по умолчанию. В раскрывающемся списке с версией ASP.NET Core выберите **ASP.NET Core 2.1** или **ASP.NET Core 2.2**. Нажмите кнопку **Создать**. Более подробные инструкции см. [в предыдущем видео в этой серии учебников](tutorial-aspnet-core-ef-step-01.md).
 
 ![Выбор параметров проекта ASP.NET Core в Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+
+> [!WARNING]
+> Убедитесь, что выбрали ASP .NET Core 2.1 или ASP.NET Core 2.2. Этот учебник несовместим с ASP.NET Core 3.x.
 
 ## <a name="explore-the-new-project"></a>Изучение нового проекта
 

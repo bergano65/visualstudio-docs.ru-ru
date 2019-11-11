@@ -88,17 +88,17 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723a9e382256650ae70982d403c2c768fb1f1e8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945559"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919067"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 
@@ -119,7 +119,7 @@ ms.locfileid: "62945559"
 
 ## <a name="product-support"></a>Поддержка продуктов
 
-Если у вас остались вопросы после ознакомления с другими ресурсами, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](http://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../../ide/talk-to-us.md).
+Если у вас остались вопросы после ознакомления с другими ресурсами, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](https://support.microsoft.com/en-us). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Параметры обратной связи Visual Studio](../../ide/feedback-options.md).
 
 ## <a name="see-also"></a>См. также
 

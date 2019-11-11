@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252638"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186274"
 ---
 # <a name="localize-menu-commands"></a>Команды меню "локализовать"
 
@@ -138,7 +138,7 @@ ms.locfileid: "72252638"
 
 6. Нахождение элемента `ItemGroup`, содержащего элементы `EmbeddedResource`.
 
-7. В элементе `EmbeddedResource`, который вызывает пакет *VSPackage. en-US. resx*, замените элемент `ManifestResourceName` элементом `LogicalName`, для которого задано значение `VSPackage.en-US.Resources`, следующим образом:
+7. В элементе `EmbeddedResource`, который вызывает *VSPackage. en-US. resx*, замените элемент `ManifestResourceName` элементом `LogicalName`, для которого установлено значение `VSPackage.en-US.Resources`, следующим образом:
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -147,7 +147,7 @@ ms.locfileid: "72252638"
     </EmbeddedResource>
     ```
 
-8. Для каждого локализованного языка скопируйте элемент `EmbeddedResource` для `VsPackage.en-US` и задайте атрибут **include** и элемент **LogicalName** копии в целевом языковом стандарте.
+8. Для каждого локализованного языка скопируйте элемент `EmbeddedResource` для `VsPackage.en-US`и задайте атрибут **include** и элемент **LogicalName** копии в целевом языковом стандарте.
 
 9. Для каждого локализованного элемента `VSCTCompile` добавьте элемент `ResourceName`, указывающий на `Menus.ctmenu`, как показано в следующем примере:
 
@@ -166,6 +166,6 @@ ms.locfileid: "72252638"
      При этом создается Главная сборка и сборки ресурсов для каждого языка. Сведения о локализации процесса развертывания см. в разделе [Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md) .
 
 ## <a name="see-also"></a>См. также
+
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
-- @no__t 0MenuCommands и OleMenuCommand](../extensibility/menucommands-vs-olemenucommands.md)
 - [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

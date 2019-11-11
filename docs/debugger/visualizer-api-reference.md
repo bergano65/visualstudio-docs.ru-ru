@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcba8397ce766409715f24e184b3c77aad53eea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728651"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187212"
 ---
 # <a name="visualizer-api-reference"></a>Справочные сведения о прикладном программном интерфейсе визуализаторов
 
@@ -43,5 +43,5 @@ ms.locfileid: "72728651"
 ## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Практическое руководство. Написание визуализатора](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Практическое руководство. Написание визуализатора](create-custom-visualizers-of-data.md)
 - [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)

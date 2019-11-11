@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119010"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516693"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Шаг 1. Создание проекта приложения Windows Forms
 
@@ -50,7 +50,7 @@ ms.locfileid: "71119010"
 
    Применив фильтр **Тип проекта**, выберите шаблон **Приложение Windows Forms (.NET Framework)** для C# или Visual Basic и нажмите кнопку **Далее**.
 
-   ![Выбор шаблона C# для приложения Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Выбор шаблона Visual Basic или C#для приложения Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Если шаблон **Приложение Windows Forms (.NET Framework)** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.

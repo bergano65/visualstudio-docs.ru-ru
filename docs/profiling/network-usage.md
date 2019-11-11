@@ -9,12 +9,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128141"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144699"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети в приложениях UWP
 Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](/uwp/api/windows.web.http). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.
@@ -39,7 +40,7 @@ ms.locfileid: "71128141"
 
    Окно отчета должно выглядеть следующим образом:
 
-   ![Окно средства "Сеть"](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")
+   ![Окно сети](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")
 
 ## <a name="analyze-data"></a>Анализ данных
  Вы можете проанализировать записанный HTTP-трафик во время выполнения приложения и даже после того, как приложение будет закрыто, выбрав любую из сетевых операций, отображенных в представлении сводки.
@@ -50,7 +51,7 @@ ms.locfileid: "71128141"
 
  В представлениях сведений средства **Сеть** отображаются дополнительные сведения о выбранной в представлении сводки сетевой операции.
 
- ![Область сведений средства "Сеть"](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
+ ![Область сведений об инструментах сети](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
 |||
 |-|-|
@@ -74,7 +75,7 @@ ms.locfileid: "71128141"
 ## <a name="see-also"></a>См. также
 
 - [Запуск средств профилирования с отладчиком или без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Блог о Visual Studio. Введение в инспектор сети Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)
+- [Блог о Visual Studio. Введение в инспектор сети Visual Studio](https://devblogs.microsoft.com/visualstudio/)
 - [Видео на Channel 9. Средства диагностики VS — новый профилировщик сети](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

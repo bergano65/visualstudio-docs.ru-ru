@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b204d6824f06037341420d27083c120e6e4b2a95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649292"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636534"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Установка .NET Compiler Platform анализаторов кода
 
@@ -26,7 +26,7 @@ Visual Studio включает в себя базовый набор анали�
 
 1. Найдите пакет анализатора, который вы хотите установить на www.nuget.org.
 
-   Например, можно [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#nuget-package) для проверки кода на наличие проблем безопасности и производительности, а также для других пользователей. Или установите [стилекопанализерс](https://www.nuget.org/packages/stylecop.analyzers/) , чтобы найти проблемы с стилями в базе кода.
+   Например, можно [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#nuget-package) для проверки кода на наличие проблем безопасности и производительности, а также для других пользователей. Или установите [StyleCop. Analyzer](https://www.nuget.org/packages/stylecop.analyzers/) , чтобы найти проблемы с стилями в базе кода.
 
 2. Установите пакет в Visual Studio с помощью [консоли диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) или [пользовательского интерфейса диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 

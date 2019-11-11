@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8c2ab603d11a447e64f7524358fe97592467be
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c00d160d67fbcb5e64b6b5bd22cd886b1f4010e6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551359"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985536"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Обновление и перенос решений Office
   Если проект Microsoft Office был создан в более ранней версии Visual Studio, его необходимо обновить для использования в текущей версии Visual Studio. Чтобы обновить проект Microsoft Office, откройте его в версии Visual Studio, имеющей в своем составе инструменты разработчика Microsoft Office. Дополнительные сведения о версиях Visual Studio, в которые входят средства разработчика Microsoft Office, см. в разделе [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -65,9 +65,9 @@ ms.locfileid: "69551359"
  Проекты Office в Visual Studio 2013 могут ориентироваться на приложения [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] . Visual Studio изменяет проект с целью ориентации на последнюю установленную версию Office. Если ни одна из этих версий Office не установлена, Visual Studio не обновляет проект.
 
 > [!NOTE]
-> Если вы обновляете проект надстройки VSTO до целевой [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] или более поздней версии, убедитесь `ThisAddIn_Startup` , что обработчик событий надстройки VSTO не содержит код, обращающийся к документу в приложении. Дополнительные сведения см. в разделе [доступ к документу при запуске приложения Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+> Если вы обновляете проект надстройки VSTO для целевого [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] или более поздней версии, убедитесь, что обработчик событий `ThisAddIn_Startup` надстройки VSTO не содержит код, обращающийся к документу в приложении. Дополнительные сведения см. в разделе [доступ к документу при запуске приложения Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
- Для настроек [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] на уровне документа преобразует документы в проекте, который имеет двоичный формат, например документы с расширением *XLS* или *doc* , в формат Office Open XML. Дополнительные сведения об Open XML см. [в разделе Введение в новые расширения имен файлов и форматы Open XML](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).
+ Для настроек на уровне документа [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] преобразует документы в проекте, который имеет двоичный формат, например документы с расширением *XLS* или *doc* , в формат Office Open XML. Дополнительные сведения об Open XML см. [в разделе Введение в новые расширения имен файлов и форматы Open XML](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).
 
 > [!NOTE]
 > Не рекомендуется использовать смарт-теги в Excel 2010 и Word 2010. Таким образом, если в решении используются смарт-теги, их необходимо удалить перед началом тестирования и отладки в Visual Studio 2013 или Visual Studio 2015.
@@ -76,7 +76,7 @@ ms.locfileid: "69551359"
  При обновлении настроек на уровне документа и надстроек VSTO, предназначенных для Microsoft Office 2003, необходимо учитывать дополнительные факторы.
 
 ### <a name="document-level-projects"></a>Проекты уровня документа
- Если документ в проекте содержит элементы управления Windows Forms, то перед обновлением проекта необходимо убедиться, что установлена среда выполнения набора средств Visual Studio 2005 для Office (второй выпуск). Если эта версия среды выполнения не будет установлена на компьютере разработчика перед обновлением проекта, то обновленный проект может содержать ошибки компиляции или ошибки времени выполнения. После завершения обновления проекта можно удалить среду выполнения набора средств Visual Studio 2005 для Office (второй выпуск) с компьютера разработчика, если она не используется другими решениями Office. Эта версия среды выполнения доступна в виде распространяемого пакета в Центре загрузки Майкрософт на странице [Среда выполнения набора средств Microsoft Visual Studio 2005 для Office (второй выпуск) (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612).
+ Если документ в проекте содержит элементы управления Windows Forms, то перед обновлением проекта необходимо убедиться, что установлена среда выполнения набора средств Visual Studio 2005 для Office (второй выпуск). Если эта версия среды выполнения не будет установлена на компьютере разработчика перед обновлением проекта, то обновленный проект может содержать ошибки компиляции или ошибки времени выполнения. После завершения обновления проекта можно удалить среду выполнения набора средств Visual Studio 2005 для Office (второй выпуск) с компьютера разработчика, если она не используется другими решениями Office. Эта версия среды выполнения доступна в виде распространяемого пакета в Центре загрузки Майкрософт на странице [Среда выполнения набора средств Microsoft Visual Studio 2005 для Office (второй выпуск) (VSTO 2005 SE) (x86)](https://www.microsoft.com/download/details.aspx?id=2392).
 
 ### <a name="vsto-add-in-projects"></a>Проекты надстроек VSTO
  Если файл решения для исходного проекта содержал проект установки или проект InstallShield Limited Edition, настроенный на установку надстройки VSTO, среда Visual Studio обновляет проект, но не вносит в него никаких изменений. Если вы хотите продолжать использовать файл установщика Windows для развертывания надстройки VSTO, необходимо внести в проект установки или проект InstallShield Limited Edition изменения, касающиеся установки новых необходимых компонентов, таких как [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], среда выполнения набора средств Visual Studio 2010 для Office и, при необходимости, основных сборок взаимодействия, на которые есть ссылки в надстройке VSTO. Дополнительные сведения см. в статье [развертывание решения Office с помощью установщик Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
@@ -84,6 +84,6 @@ ms.locfileid: "69551359"
  Если вы хотите использовать ClickOnce для развертывания надстройки VSTO, можно полностью удалить проект установки или проект InstallShield Limited Edition. Дополнительные сведения о развертывании надстроек VSTO с помощью ClickOnce см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Обновление решений Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Руководство. Обновление решений Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
 - [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Обновление проекта, диалоговое окно "Параметры"](../vsto/project-upgrade-options-dialog-box.md)

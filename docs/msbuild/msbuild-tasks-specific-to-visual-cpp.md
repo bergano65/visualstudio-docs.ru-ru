@@ -1,5 +1,5 @@
 ---
-title: Задачи MSBuild, относящиеся к Visual C++ | Документация Майкрософт
+title: Задачи MSBuild, относящиеся к C++ | Документация Майкрософт
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -8,44 +8,44 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild, tasks specific to Visual C++
+- MSBuild, tasks specific to C++
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 243ed824ba278300a798a34b05854129e8197504
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6ea400d7473fae27ac4b17d9e3692748db549f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004590"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748073"
 ---
-# <a name="msbuild-tasks-specific-to-visual-c"></a>Задачи MSBuild, относящиеся к Visual C++
-Задачи содержат код, который выполняется в процессе сборки. После установки Visual C++ доступны следующие задачи, помимо тех, которые устанавливаются вместе с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Дополнительные сведения см. в [обзоре MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).
+# <a name="msbuild-tasks-specific-to-c"></a>Задачи MSBuild, относящиеся к C++
+Задачи содержат код, который выполняется в процессе сборки. После установки C++ доступны следующие задачи, помимо тех, которые устанавливаются вместе с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Дополнительные сведения см. в [обзоре MSBuild (C++)](/cpp/build/msbuild-visual-cpp-overview).
 
  Помимо общих для всех задач параметров, у каждой задачи есть следующие параметры.
 
-| Параметр | Описание |
+| Параметр | ОПИСАНИЕ |
 |-------------------| - |
 | `Condition` | Необязательный параметр `String` .<br /><br /> Выражение `Boolean`, на основании которого механизм [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] определяет, будет ли выполняться эта задача. Сведения о поддерживаемых в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] условиях см. в статье [об условиях MSBuild](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Необязательный параметр. Может содержать одно из следующих значений:<br /><br /> -   **WarnAndContinue** или **true**. При сбое одной задачи продолжается выполнение сборки и всех последующих задач в элементе [Target](../msbuild/target-element-msbuild.md), а все ошибки из задачи рассматриваются как предупреждения.<br />-   **ErrorAndContinue**. При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.<br />-   **ErrorAndStop** или **false** (значение по умолчанию). При сбое задачи отменяется выполнение сборки и последующих задач в элементе `Target`, и фиксируется сбой для выполнения элемента `Target` и всей сборки.<br /><br /> Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.<br /><br /> Дополнительные сведения см. в разделе [Как Игнорирование ошибок в задачах](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Необязательный параметр. Может содержать одно из следующих значений:<br /><br /> -   **WarnAndContinue** или **true**. При сбое одной задачи продолжается выполнение сборки и всех последующих задач в элементе [Target](../msbuild/target-element-msbuild.md), а все ошибки из задачи рассматриваются как предупреждения.<br />-   **ErrorAndContinue**. При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.<br />-   **ErrorAndStop** или **false** (значение по умолчанию). При сбое задачи отменяется выполнение сборки и последующих задач в элементе `Target`, и фиксируется сбой для выполнения элемента `Target` и всей сборки.<br /><br /> Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.<br /><br /> Дополнительные сведения см. в разделе [Практическое руководство. Игнорирование ошибок в задачах](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ### <a name="related-topics"></a>См. также
 
-|Заголовок|Описание|
+|Заголовок|ОПИСАНИЕ|
 |-----------|-----------------|
 |[Задача BscMake](../msbuild/bscmake-task.md)|Заключает в оболочку средство "Программа управления сведениями о просмотре Майкрософт" (*bscmake.exe*).|
-|[Задача CL](../msbuild/cl-task.md)|Использует оболочку компилятора Visual C++ (*cl.exe*).|
-|[Задача CPPClean](../msbuild/cppclean-task.md)|Удаляет временные файлы, которые MSBuild создает при сборке проекта Visual C++.|
-|[Задача ClangCompile](../msbuild/clangcompile-task.md)|Создает программу-оболочку для компилятора Visual C++ (*clang.exe*).|
-|[Задача CustomBuild](../msbuild/custombuild-task.md)|Создает программу-оболочку для компилятора Visual C++ (*cmd.exe*).|
+|[Задача CL](../msbuild/cl-task.md)|Использует оболочку компилятора C++ (*cl.exe*).|
+|[Задача CPPClean](../msbuild/cppclean-task.md)|Удаляет временные файлы, которые MSBuild создает при сборке проекта C++.|
+|[Задача ClangCompile](../msbuild/clangcompile-task.md)|Использует оболочку компилятора C++ (*clang.exe*).|
+|[Задача CustomBuild](../msbuild/custombuild-task.md)|Использует оболочку компилятора C++ (*cmd.exe*).|
 |[Задача FXC](../msbuild/fxc-task.md)|Позволяет применять компиляторы шейдеров HLSL в процессе сборки.|
 |[GetOutOfDateItems](../msbuild/getoutofdateitems-task.md)|Считывает старые журналы отслеживания, записывает новые журналы отслеживания и возвращает набор неактуальных элементов (задача вспомогательного приложения).|
 |[GetOutputFileName](../msbuild/getoutputfilename-task.md)|Извлекает имя выходного файла для cl и других средств, которые позволяют указывать только выходной каталог или полное имя файла (задача вспомогательного приложения).|
 |[Задача LIB](../msbuild/lib-task.md)|Заключает в оболочку 32-разрядный диспетчер библиотек Майкрософт (*lib.exe*).|
-|[Задача Link](../msbuild/link-task.md)|Создает оболочку для компоновщика Visual C++ (*link.exe*).|
+|[Задача Link](../msbuild/link-task.md)|Использует оболочку компоновщика C++ (*link.exe*).|
 |[Задача MIDL](../msbuild/midl-task.md)|Является оболочкой для компилятора с языка MIDL (*midl.exe*).|
 |[Задача MT](../msbuild/mt-task.md)|Является оболочкой для инструмента манифеста Майкрософт (*mt.exe*).|
 |[Задача MultiToolTask](../msbuild/multitooltask-task.md)|Нет описания.|

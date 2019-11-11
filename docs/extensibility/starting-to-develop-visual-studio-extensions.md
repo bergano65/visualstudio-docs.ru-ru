@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a22e867fe043437e76ebbf61220dd2adda89c12
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822325"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188864"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
 
@@ -51,7 +51,7 @@ ms.locfileid: "68822325"
 
 - [Расширение и настройка окон инструментов](../extensibility/extending-and-customizing-tool-windows.md): расширение существующих окон инструментов или создание собственных окон инструментов. Например, можно добавить в **Свойства**новые свойства или создать новое окно инструментов для добавления дополнительных компонентов.
 
-- [Расширения редактора и языковой службы](../extensibility/editor-and-language-service-extensions.md): добавьте собственные настройки, предоставляемые технологией IntelliSense для языков Visual Studio, или создайте поддержку для новых языков программирования. Можно создавать новые завершения операторов, предложения и новые подсказки краткие сведения. С помощью лампочкй можно добавлять предложения рефакторинга и исправления кода для поддержки новых языков программирования.
+- [Расширения редактора и языковой службы](../extensibility/editor-and-language-service-extensions.md): добавьте собственные настройки в IntelliSense, предоставляемую для языков Visual Studio, или создайте поддержку для новых языков программирования. Можно создавать новые завершения операторов, предложения и новые подсказки краткие сведения. С помощью лампочкй можно добавлять предложения рефакторинга и исправления кода для поддержки новых языков программирования.
 
 - [Расширение проектов](../extensibility/extending-projects.md)
 
@@ -80,7 +80,7 @@ ms.locfileid: "68822325"
 
 - Основные пакеты VSPackage: [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-- Шаблон проекта VSIX: [Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Шаблон проекта VSIX: [Начало работы с помощью шаблона проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Разделы справки получить расширение как Visual Studio?
  Получите советы по проектированию пользовательского интерфейса для расширения в [руководстве пользователя Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -91,7 +91,7 @@ ms.locfileid: "68822325"
 ## <a name="how-can-i-distribute-my-extension"></a>Как можно распространить расширение?
  Вы можете установить расширение на другом компьютере или отправить его своим друзьям в виде VSIX-файла, который устанавливается двойным щелчком. Дополнительные сведения о пакетах VSIX см. в статье [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Вы также можете опубликовать расширение на Visual Studio Marketplace, что делает его видимым для большого числа клиентов Visual Studio. Пример упаковки расширения в Marketplace см. в разделе [пошаговое руководство. Публикация расширения](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)Visual Studio. Дополнительные сведения о том, что необходимо сделать для публикации в Marketplace, см. в разделе [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Вы также можете опубликовать расширение на Visual Studio Marketplace, что делает его видимым для большого числа клиентов Visual Studio. Пример упаковки расширения в Marketplace см. в разделе [Пошаговое руководство. публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о том, что необходимо сделать для публикации в Marketplace, см. в разделе [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>См. также
 

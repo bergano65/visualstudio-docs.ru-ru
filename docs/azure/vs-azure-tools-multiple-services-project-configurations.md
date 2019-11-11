@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253434"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911809"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Настройка проекта Azure в Visual Studio для использования нескольких конфигураций служб
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Настройка проекта Azure в Visual Studio для использования нескольких конфигураций службы
 
 В Visual Studio проект облачной службы Azure включает в себя три файла конфигурации: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg`, `ServiceConfiguration.Cloud.cscfg`.
 
@@ -55,7 +55,7 @@ ms.locfileid: "71253434"
 
 ## <a name="settings-page"></a>Страница "Параметры"
 
-На странице **Параметры** можно добавлять параметры в конфигурацию в виде пары "имя — значение". Код, выполняемый в роли, может считывать значения параметров конфигурации во время выполнения с помощью классов, предоставляемых [управляемой библиотекой Azure](http://go.microsoft.com/fwlink?LinkID=171026), в частности, метода [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
+На странице **Параметры** можно добавлять параметры в конфигурацию в виде пары "имя — значение". Код, выполняемый в роли, может считывать значения параметров конфигурации во время выполнения с помощью классов, предоставляемых [управляемой библиотекой Azure](/previous-versions/azure/dn602775(v=azure.11)), в частности, метода [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Настройка строки подключения для учетной записи хранения
 
@@ -95,7 +95,7 @@ ms.locfileid: "71253434"
 
 ## <a name="certificates-page"></a>Страница «Сертификаты»
 
-Страница свойств **Сертификаты** позволяет добавить сведения о сертификатах в конфигурацию службы. Обратите внимание, что сертификаты не добавляются в пакет вместе со службой. Их необходимо отдельно передавать в Azure с помощью [портала Azure](http://portal.azure.com).
+Страница свойств **Сертификаты** позволяет добавить сведения о сертификатах в конфигурацию службы. Обратите внимание, что сертификаты не добавляются в пакет вместе со службой. Их необходимо отдельно передавать в Azure с помощью [портала Azure](https://portal.azure.com).
 
 При добавлении сертификата на этой странице в конфигурацию службы добавляются сведения о сертификатах. Сертификаты не добавляются в пакет вместе со службой. Их необходимо отдельно передавать с помощью портала Azure.
 

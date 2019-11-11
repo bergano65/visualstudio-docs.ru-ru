@@ -1,5 +1,5 @@
 ---
-title: Объект VSCodeWindowManager | Документация Майкрософт
+title: Объект Вскодевиндовманажер | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1da94495019d30a8ba3df8bdaa7df0ccf2ae4d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322936"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189036"
 ---
-# <a name="vscodewindowmanager-object"></a>Объект VSCodeWindowManager
-Языковая служба реализует диспетчер окон кода и отвечает за управление оформлений (например, панель раскрывающегося списка). Дополнительные сведения см. в разделе [Настройка кода Windows с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
+# <a name="vscodewindowmanager-object"></a>Объект Вскодевиндовманажер
 
- В следующей таблице показаны интерфейсы `VSCodeWindowManager` объекта.
+Языковая служба реализует диспетчер окон кода и отвечает за управление декоративными элементами (например, с помощью раскрывающейся панели). Дополнительные сведения см. [в разделе Настройка окон кода с помощью API прежних версий](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+
+В следующей таблице показаны интерфейсы в объекте `VSCodeWindowManager`.
 
 |Интерфейс|Описание|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Позволяет быть добавляемые или удаляемые из окна кода элементы оформления (например раскрывающиеся панели).|
-
-## <a name="see-also"></a>См. также
-- [Настройка кода windows с помощью предыдущих версий API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Позволяет добавлять в окно кода декоративные элементы (такие как раскрывающиеся полосы).|
