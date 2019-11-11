@@ -1,4 +1,4 @@
----
+﻿---
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
@@ -122,7 +122,7 @@ ms.locfileid: "71211330"
 
 ### <a name="cloud-first-workflow"></a>Рабочий процесс на базе облака
 
-Первое, что вы заметите при открытии Visual Studio 2019, — новое окно запуска.
+Первое, что вы заметите при открытии Visual Studio 2019, — новое окно запуска.
 
    ![Снимок экрана: новое окно запуска в Visual Studio 2019](media/vs-2019/start-window-dark.png)
 
@@ -142,7 +142,7 @@ ms.locfileid: "71211330"
 
 ![Анимация: возможности совместной работы Live Share в Visual Studio 2019](media/vs-2019/live-share.gif)
 
-Дополнительные сведения см. в разделе [Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) записи блога и [Live Share, теперь включены с помощью Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) записи блога.
+Дополнительные сведения см. в статьях [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения) и [Live Share now included with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) (Live Share теперь входит в состав Visual Studio 2019).
 
 ### <a name="integrated-code-reviews"></a>Интегрированная проверка кода
 
