@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535627"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188725"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Сведения о просмотре и диагностике контейнеров и изображений в Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "72535627"
 В левой части приводится список контейнеров на локальном компьютере. Контейнеры, связанные с решением, отображаются в разделе **Контейнеры решения**. Справа имеется область с вкладками **Среда**, **Порты**, **Журналы** и **Файлы**.
 
 > [!TIP]
-> Вы можете легко настроить место закрепления окна **Контейнеры** в Visual Studio. См. статью [Настройка макетов окон в Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Когда работает отладчик, окно **Контейнеры** по умолчанию закреплено рядом с окном **контрольных значений**.
+> Вы можете легко настроить место закрепления окна **Контейнеры** в Visual Studio. См. статью [Настройка макетов окон в Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Когда работает отладчик, окно **Контейнеры** по умолчанию закреплено рядом с окном **контрольных значений**.
 
 ## <a name="view-environment-variables"></a>Просмотр переменных среды
 

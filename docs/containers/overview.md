@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: badb06b8c3eea5158054ba4c32f72e51dae0d60d
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816356"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568904"
 ---
 # <a name="container-tools-in-visual-studio"></a>Средства для контейнеров в Visual Studio
 
@@ -148,6 +148,6 @@ Visual Studio легко интегрируется с Azure Pipelines для а
 
 Чтобы получить дополнительные сведения о реализации служб и использовании средств Visual Studio для работы с контейнерами, ознакомьтесь со следующими статьями:
 
-[Отладка приложений в локальном контейнере Docker](vs-azure-tools-docker-edit-and-refresh.md)
+[Отладка приложений в локальном контейнере Docker](edit-and-refresh.md)
 
-[Deploy an ASP.NET container to a container registry using Visual Studio](vs-azure-tools-docker-hosting-web-apps-in-docker.md) (Развертывание контейнера ASP.NET в реестр контейнеров с использованием Visual Studio)
+[Deploy an ASP.NET container to a container registry using Visual Studio](hosting-web-apps-in-docker.md) (Развертывание контейнера ASP.NET в реестр контейнеров с использованием Visual Studio)

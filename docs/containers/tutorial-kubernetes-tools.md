@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 45397ddf21f1ea1d735c2753864e5954850a4d98
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126115"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188758"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы со Средствами Visual Studio для Kubernetes
 
@@ -137,7 +137,7 @@ ms.locfileid: "71126115"
 
    ![Снимок экрана: пункт меню "Опубликовать"](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. На экране **Публикация** выберите целевой объект публикации **Реестр контейнеров** и следуйте указаниям, чтобы выбрать реестр контейнеров. Если у вас еще нет реестра контейнеров, выберите **Создать реестр контейнеров Azure**, чтобы создать его из Visual Studio. Дополнительные сведения см. в статье [Публикация контейнера в Реестре контейнеров Azure](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
+2. На экране **Публикация** выберите целевой объект публикации **Реестр контейнеров** и следуйте указаниям, чтобы выбрать реестр контейнеров. Если у вас еще нет реестра контейнеров, выберите **Создать реестр контейнеров Azure**, чтобы создать его из Visual Studio. Дополнительные сведения см. в статье [Публикация контейнера в Реестре контейнеров Azure](hosting-web-apps-in-docker.md).
 
    ![Снимок экрана: окно "Выберите целевой объект публикации"](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 

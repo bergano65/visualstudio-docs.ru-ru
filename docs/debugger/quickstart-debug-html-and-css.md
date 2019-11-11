@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187564"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568918"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Отладка HTML и CSS в приложениях UWP в Visual Studio
 
@@ -182,7 +182,7 @@ ms.locfileid: "73187564"
 14. В главном окне дважды щелкните `width: 100px;height: 100px;`, нажмите клавишу **Delete** , а затем нажмите клавишу **Ввод**. После нажатия клавиши Ввод новые значения немедленно отражаются в приложении, хотя сеанс отладки еще не остановлен.
 
     > [!IMPORTANT]
-    > Поскольку можно обновить атрибуты в окне проводника DOM, можно также обновить значения, отображаемые на вкладках **Стили**, **Вычисленные**и **Макет** . Дополнительные сведения см. в разделе [Отладка стилей CSS с помощью ПРОВОДНИКА DOM](../debugger/debug-css-styles-using-dom-explorer.md) и [макета отладки с помощью проводника DOM](quickstart-debug-html-and-css.md).
+    > Поскольку можно обновить атрибуты в окне проводника DOM, можно также обновить значения, отображаемые на вкладках **Стили**, **Вычисленные**и **Макет** .
 
 15. Переключитесь в приложение, выбрав его или нажав клавиши ALT + TAB.
 
@@ -255,6 +255,7 @@ ms.locfileid: "73187564"
 > В эмуляторе Windows Phone выделение элементов с помощью наведения поддерживается лишь частично.
 
 ## <a name="see-also"></a>См. также
+
 - [Отладка приложений в Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Отладка элемента управления WebView](../debugger/debug-a-webview-control.md)

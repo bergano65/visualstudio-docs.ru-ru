@@ -1,12 +1,7 @@
 ---
 title: Отладка веб-приложений | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 11/05/2019
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - debugging ASP.NET Web applications, about debugging ASP.NET Web applications
 - ASP.NET debugging, Web services
@@ -18,24 +13,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f9885cc02333e4d8e9d42df4f52819a2099114
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188339"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714453"
 ---
 # <a name="debugging-web-applications"></a>Отладка веб-приложений
-В этом подразделе описана отладка нескольких типов веб-приложений.
 
-## <a name="in-this-section"></a>Содержание
- [Отладка скриптов на стороне клиента](../debugger/client-side-script-debugging.md) Обсуждаются сценарии тестирования и сценарии на стороне клиента на [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] страницах.
+В этой статье содержатся ссылки на сведения об отладке различных типов веб-приложений.
 
-## <a name="related-sections"></a>Связанные разделы
- [Отладка ASP.NET приложений](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Описание действий, необходимых для включения отладки приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+- Отладка приложений ASP.NET
+
+  Действия, необходимые для включения отладки приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], см. в разделе [Debug ASP.NET Applications](how-to-enable-debugging-for-aspnet-applications.md).
+
+- Отладка клиентского скрипта в ASP.NET
+
+  Необходимые шаги см. в записи блога [Отладка JavaScript в Microsoft ребр](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) и эта [Публикация для Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+
+- Отладка JavaScript и TypeScript
+
+  См. раздел [Отладка JavaScript и TypeScript](../javascript/debug-nodejs.md).
+
+- Просмотр документов скриптов
+
+  Используйте окно **Обозреватель решений**, чтобы просмотреть списки серверных и клиентских документов скрипта. В окне **Обозреватель решений**можно открыть любой документ скрипта. Для получения дополнительной информации см. [How to: View Script Documents](../debugger/how-to-view-script-documents.md).
+
+- Отладка приложений Ajax-скриптов
+
+  Веб-приложения с включенной технологией Ajax делают сложным использование кода скрипта и ставят проблемы специальной отладки. Дополнительные сведения о методах отладки AJAX см. в разделе [Общие сведения об отладке и трассировке приложений AJAX](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
 
 ## <a name="see-also"></a>См. также
-- [Отладка веб-приложений и скриптов](how-to-enable-debugging-for-aspnet-applications.md)
+
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Отладка в Visual Studio](../debugger/index.yml)

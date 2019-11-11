@@ -44,5 +44,5 @@
   items:
     - name: Конфигурация package.json
       href: configure-packages-with-package-json.md
-    - name: Вики-документация по JavaScript и TypeScript
-      href: 'https://github.com/Microsoft/nodejstools/wiki'
+    - name: Репозиторий документации по JavaScript и TypeScript
+      href: 'https://github.com/Microsoft/JSTSdocs'
