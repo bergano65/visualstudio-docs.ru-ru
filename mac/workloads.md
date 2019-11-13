@@ -6,12 +6,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 676193bc84b680c3c78f3b5ddff546a64e4767af
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108182"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714408"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Рабочие нагрузки Visual Studio для Mac
 
@@ -31,7 +31,7 @@ ms.locfileid: "70108182"
 
 ## <a name="mac-desktop-applications"></a>Классические приложения Mac
 
-Вы можете создавать приложения Mac с помощью [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/), используя платформу пользовательского интерфейса Cocoa, и [Xamarin.Forms на Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac), чтобы создавать приложения, которые совместно с другими платформами используют код и пользовательский интерфейс.
+Вы можете создавать приложения Mac с помощью [Xamarin.Mac](/xamarin/mac/), используя платформу пользовательского интерфейса Cocoa, и [Xamarin.Forms на Mac](/xamarin/xamarin-forms/platform/other/mac), чтобы создавать приложения, которые совместно с другими платформами используют код и пользовательский интерфейс.
 
 ## <a name="net-core-applications"></a>Приложения .NET Core
 

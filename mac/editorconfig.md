@@ -6,22 +6,22 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 8115715950881168e282cd205ea2dd3e64d89f97
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108290"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716887"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Создание и редактирование пользовательского файла EditorConfig
 
-В Visual Studio для Mac в проект или решение можно добавить файл [EditorConfig](http://editorconfig.org/), чтобы обеспечить использование единообразного стиля написания кода всеми разработчиками, работающими с базой кода. Параметры, объявленные в файле EditorConfig, имеют приоритет над глобальными параметрами текстового редактора Visual Studio для Mac. Использование в проекте или в базе кода файла EditorConfig позволяет задать стиль написания кода, настройки и предупреждения для проекта. Поскольку этот файл является частью базы кода, он позволяет следить за тем, чтобы все пользователи придерживались принятых в проекте практик кодирования независимо от интегрированной среды разработки или редактора кода, в которых они работают.
+В Visual Studio для Mac в проект или решение можно добавить файл [EditorConfig](https://editorconfig.org/), чтобы обеспечить использование единообразного стиля написания кода всеми разработчиками, работающими с базой кода. Параметры, объявленные в файле EditorConfig, имеют приоритет над глобальными параметрами текстового редактора Visual Studio для Mac. Использование в проекте или в базе кода файла EditorConfig позволяет задать стиль написания кода, настройки и предупреждения для проекта. Поскольку этот файл является частью базы кода, он позволяет следить за тем, чтобы все пользователи придерживались принятых в проекте практик кодирования независимо от интегрированной среды разработки или редактора кода, в которых они работают.
 
-Файлы [EditorConfig](http://editorconfig.org/) поддерживаются многими интегрированными средами разработки и редакторами кода, включая Visual Studio.
+Файлы [EditorConfig](https://editorconfig.org/) поддерживаются многими интегрированными средами разработки и редакторами кода, включая Visual Studio.
 
 ## <a name="supported-settings"></a>Поддерживаемые параметры
 
-Редактор в Visual Studio для Mac поддерживает основной набор [свойств EditorConfig](http://editorconfig.org/#supported-properties):
+Редактор в Visual Studio для Mac поддерживает основной набор [свойств EditorConfig](https://editorconfig.org/#supported-properties):
 
 - `indent_style`
 - `indent_size`
@@ -83,7 +83,7 @@ ms.locfileid: "70108290"
 
 2. Перейдите в каталог, где находится необходимый файл.
 
-3. Файлы, названия которых начинаются с `.` (например, `.editorconfig`), в macOS являются скрытыми, поэтому нажмите клавиши **Command+Shift+.** , чтобы сделать файл `.editorconfig` видимым.
+3. Файлы, названия которых начинаются с `.` (например, `.editorconfig`), в macOS являются скрытыми, поэтому нажмите клавиши **Command+Shift+.**, чтобы сделать файл `.editorconfig` видимым.
 
 4. Выберите файл `.editorconfig` и нажмите **Открыть**:
 
@@ -122,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 Установка параметра `root` в значение `true` пометит этот файл как файл верхнего уровня всей базы кода, и все файлы `.editorconfig` в проекте выше по уровню не будут учитываться, как это описано в разделе [Переопределение параметров EditorConfig](#override-editorconfig-settings).
 
-Каждый раздел файла обозначается квадратными скобками ( **[]** ) и задает тип файлов, к которым будут применяться параметры данного раздела.
+Каждый раздел файла обозначается квадратными скобками (**[]**) и задает тип файлов, к которым будут применяться параметры данного раздела.
 
 В приведенном выше примере некоторые параметры применяются ко всем файлам в проекте, а другие задаются только для файлов C#. На рисунках ниже изображен код до и после применения параметров из файла `.editorconfig`:
 
@@ -134,7 +134,7 @@ csharp_new_line_before_open_brace = none
 
 ![после применения параметров editorconfig](media/editorconfig-image5.png)
 
-Дополнительные сведения о доступных параметрах EditorConfig см. в статье [Параметры соглашений о написании кода .NET в EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) и в разделе [Supported Properties](http://editorconfig.org/#supported-properties) (Поддерживаемые свойства) официальной документации.
+Дополнительные сведения о доступных параметрах EditorConfig см. в статье [Параметры соглашений о написании кода .NET в EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) и в разделе [Supported Properties](https://editorconfig.org/#supported-properties) (Поддерживаемые свойства) официальной документации.
 
 ## <a name="override-editorconfig-settings"></a>Переопределение параметров EditorConfig
 
