@@ -1,17 +1,17 @@
 ---
 title: Расширение Visual Studio для Mac
 description: Возможности и функции Visual Studio для Mac можно расширить с помощью модулей, называемых пакетами расширения. В первой части этого руководства создается простой пакет расширения Visual Studio для Mac для вставки даты и времени в документ. Во второй части руководства описаны базовые принципы работы системы пакетов расширения, а также некоторые основные API, составляющие основу Visual Studio для Mac.
-author: alanjclark
-ms.author: alcl
+author: conceptdev
+ms.author: crdun
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691661"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716831"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -135,7 +135,7 @@ public enum DateInserterCommands
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Сведения об областях, доступных для разработки, см. в разделах [Ссылки на дерево расширений](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) и [Обзор API](http://monodevelop.com/Developers/Articles/API_Overview). При сборке более сложных пакетов расширения также обратитесь к [статьям разработчиков](http://monodevelop.com/Developers/Articles). Ниже приведен неполный список областей для настройки:
+Сведения об областях, доступных для разработки, см. в разделах [Ссылки на дерево расширений](https://www.monodevelop.com/developers/articles/extension-tree-reference/) и [Обзор API](https://www.monodevelop.com/developers/articles/api-overview/). При сборке более сложных пакетов расширения также обратитесь к [статьям разработчиков](https://www.monodevelop.com/developers/articles/). Ниже приведен неполный список областей для настройки:
 
 * Панели
 * Схемы настраиваемых сочетаний клавиш
@@ -174,13 +174,13 @@ Visual Studio для Mac [предоставляет новый собствен
 
 Прежде чем рассматривать особенности расширения Visual Studio для Mac, будет полезно глубже изучить сам редактор. Ниже перечислены несколько ресурсов, которые помогут вам лучше понять его.
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [MEF в редакторе](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
-* [Компоненты редактора](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [Языковая служба и точки расширения редактора](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [MEF в редакторе](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Компоненты редактора](/visualstudio/extensibility/inside-the-editor)
+* [Языковая служба и точки расширения редактора](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Видеоинструкция по архитектуре редактора](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Для работы с этими ресурсами вам нужно знать основные концепции: [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) и [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview).
+Для работы с этими ресурсами вам нужно знать основные концепции: [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) и [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview).
 
 * В этом контексте `ITextBuffer` обозначает хранимое в памяти представление текста, которое может изменяться с течением времени. Свойство `CurrentSnapshot` объекта `ITextBuffer` возвращает *неизменяемое* представление текущего содержимого буфера в формате экземпляра `ITextSnapshot`. При внесении изменений в буфере свойство CurrentSnapshot мгновенно обновляется до последней версии. Анализаторы могут изучать снимок текста в любом потоке, и его содержимое гарантированно никогда не меняется.
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 87a4fae1bd5430037b34297f803a6d955a052f68
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890636"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716935"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -135,7 +135,7 @@ public enum DateInserterCommands
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Сведения об областях, доступных для разработки, см. в разделах [Ссылки на дерево расширений](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) и [Обзор API](http://monodevelop.com/Developers/Articles/API_Overview). При сборке более сложных пакетов расширения также обратитесь к [статьям разработчиков](http://monodevelop.com/Developers/Articles). Ниже приведен неполный список областей для настройки:
+Сведения об областях, доступных для разработки, см. в разделах [Ссылки на дерево расширений](https://www.monodevelop.com/developers/articles/extension-tree-reference/) и [Обзор API](https://www.monodevelop.com/developers/articles/api-overview/). При сборке более сложных пакетов расширения также обратитесь к [статьям разработчиков](https://www.monodevelop.com/developers/articles/). Ниже приведен неполный список областей для настройки:
 
 * Панели
 * Схемы настраиваемых сочетаний клавиш
