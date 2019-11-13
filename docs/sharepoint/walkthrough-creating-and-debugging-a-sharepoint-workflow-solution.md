@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e62226147fc160c6d967115fbd3aaa52dd69995
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985064"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983734"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Пошаговое руководство. Создание и отладка решения для рабочих процессов SharePoint
   В этом пошаговом руководстве показано, как создать базовый шаблон последовательного рабочего процесса. Рабочий процесс проверяет свойство библиотеки общих документов, чтобы определить, проверен ли документ. Если документ был проверен, Рабочий процесс завершается.
@@ -285,7 +285,7 @@ ms.locfileid: "72985064"
 
 - Дополнительные сведения о действиях рабочих процессов SharePoint см. в статье [действия рабочего процесса для SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
-- Дополнительные сведения о Windows Workflow Foundation действиях см. в разделе [пространство имен System. Workflow. activitys](/dotnet/api/system.workflow.activities&view=netframework-4.8).
+- Дополнительные сведения о Windows Workflow Foundation действиях см. в разделе [пространство имен System. Workflow. activitys](/dotnet/api/system.windows.media.color).
 
 ## <a name="see-also"></a>См. также
 - [Создание решений для рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
