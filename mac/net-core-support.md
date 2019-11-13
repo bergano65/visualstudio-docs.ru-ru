@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 08/20/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 98451c728b15344b116f275ca6a40fd902f33f0f
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: ad23044792d2c21c075e70107b74984d54de2bd3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186800"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714526"
 ---
 # <a name="net-core-support"></a>Поддержка .NET Core
 
@@ -33,5 +33,5 @@ ms.locfileid: "71186800"
 * Для версии 8.3 по умолчанию устанавливается .NET Core 3.0.
 * Установщик по умолчанию устанавливает .NET Core версии 2.1.701 (v2.1.700 для 8.1).
 * Чтобы скачать любую другую версию .NET Core, посетите [страницу dotnet](https://dotnet.microsoft.com/download/dotnet-core).
-* При использовании .NET Core 3.0 по умолчанию используется версия C# 8. C# 7.3 — это версия по умолчанию при использовании .NET Core 2.x. Дополнительные сведения см. в статье [Управление версиями языка C#](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version).
-* Сведения об установке предварительной версии Visual Studio для Mac см. в [этом руководстве](https://docs.microsoft.com/visualstudio/mac/install-preview).
+* При использовании .NET Core 3.0 по умолчанию используется версия C# 8. C# 7.3 — это версия по умолчанию при использовании .NET Core 2.x. Дополнительные сведения см. в статье [Управление версиями языка C#](/dotnet/csharp/language-reference/configure-language-version).
+* Сведения об установке предварительной версии Visual Studio для Mac см. в [этом руководстве](/visualstudio/mac/install-preview).
