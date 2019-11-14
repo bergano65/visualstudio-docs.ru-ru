@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789827"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714388"
 ---
 # <a name="build-events-page-project-designer-c"></a>Страница "Событий построения" в конструкторе проектов (C#)
 
@@ -77,11 +77,19 @@ ms.locfileid: "72789827"
 </PropertyGroup>
 ```
 
-Visual Studio 2019 (и Visual Studio 2017 в более последних обновлениях) добавляет целевой объект MSBuild с именем `PreBuild` или `PostBuild` для параметров **PreBuildEvent** и **PostBuildEvent**. Например, для предыдущего примера Visual Studio теперь создаст следующий код:
+Для проектов .NET Core система Visual Studio 2019 (и Visual Studio 2017 в более последних обновлениях) добавляет целевой объект MSBuild с именем `PreBuild` или `PostBuild` для параметров **PreBuildEvent** и **PostBuildEvent**. Эти целевые объекты используют атрибуты **BeforeTargets** и **AfterTargets**, распознаваемые MSBuild. Например, для предыдущего примера Visual Studio теперь создаст следующий код:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+Для события после сборки используйте имя `PostBuild` и присвойте атрибуту `AfterTargets` значение `PostBuildEvent`.
+
+```xml
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
 </Target>
 ```
 
