@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950636"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713929"
 ---
 # <a name="docker-compose-build-properties"></a>Свойства сборки Docker Compose
 
@@ -35,6 +35,8 @@ ms.locfileid: "71950636"
 
 | Имя свойства | Местоположение | ОПИСАНИЕ | Значение по умолчанию  |
 |---------------|----------|-------------|----------------|
+|AdditionalComposeFiles|DCPROJ|Указывает дополнительные файлы Compose в списке, разделенном точкой с запятой, которые будут отправлены в docker-compose.exe для всех команд. Относительные пути от файла проекта docker-compose (DCPROJ) разрешены.|-|
+|DockerComposeBaseFilePath|DCPROJ|Указывает первую часть имен файлов docker-compose без расширения *YML*. Например: <br>1.  DockerComposeBaseFilePath равен NULL или не определен: используется базовый путь к файлу *docker-compose*, и файлы будут называться *docker-compose.yml* и *docker-compose.override.yml*.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: файлы будут называться *mydockercompose.yml* и *mydockercompose.override.yml*.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: файлы будут располагаться на один уровень выше. |docker-compose|
 |DockerComposeBuildArguments|DCPROJ|Указывает дополнительные параметры, передаваемые в команду `docker-compose build`. Например: `--parallel --pull` |
 |DockerComposeDownArguments|DCPROJ|Указывает дополнительные параметры, передаваемые в команду `docker-compose down`. Например: `--timeout 500`|-|  
 |DockerComposeProjectPath|CSPROJ или VBPROJ|Относительный путь к файлу проекта docker-compose (DCPROJ). Задайте это свойство при публикации проекта службы, чтобы можно было найти связанные параметры сборки образа, хранящиеся в файле docker-compose.yml.|-|

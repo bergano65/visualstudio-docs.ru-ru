@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Сведения о преимуществе CAST Highlight, доступном в некоторых подписках Visual Studio.
-ms.openlocfilehash: c55891b9aacb81c5169a9082f7e1fd1d922eda92
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816435"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983742"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Преимущество CAST Highlight в подписках Visual Studio
 При миграции в облако разработчикам необходимы важные аналитические сведения о переносимом программном обеспечении. С помощью CAST Highlight подписчики Visual Studio Enterprise могут быстро проверить исходный код приложения, чтобы определить его готовность к облаку для миграции в Azure, и отслеживать ход выполнения во время и после миграции приложения.
@@ -76,7 +76,9 @@ ms.locfileid: "72816435"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | Оценка пяти приложений в течение 30 дней|  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Enterprise с GitHub Enterprise  | VL | Оценка пяти приложений в течение 30 дней|  Нет.  Доступно только для новых подписчиков          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                             |  Н/Д          |
+| Visual Studio Professional с GitHub Enterprise | VL                                       | Недоступно                                                             |  Н/Д          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д           |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
@@ -98,6 +100,6 @@ ms.locfileid: "72816435"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Следующие шаги
-Если вы еще не активировали преимущество Azure, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.
+Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.
 
 Не забудьте ознакомиться с демонстрацией, руководством пользователя и видеоруководствами, упомянутыми в письме Грега.

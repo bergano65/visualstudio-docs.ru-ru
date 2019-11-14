@@ -2,7 +2,7 @@
 title: Создание веб-приложения ASP.NET Core на C#
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
 ms.custom: mvc,seodec18
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
+ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516893"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753949"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -120,6 +120,8 @@ ms.locfileid: "72516893"
 
 ## <a name="create-and-run-the-app"></a>Создание и запуск приложения
 
+::: moniker range="vs-2017"
+
 1. В **обозревателе решений** разверните папку **Страницы** и выберите **About.cshtml**.
 
    ![Выбор файла About.cshtml из обозревателя решений](../ide/media/csharp-aspnet-about-page-html-file.png)
@@ -168,6 +170,41 @@ ms.locfileid: "72516893"
   ![Просмотрите анимированный GIF-файл, демонстрирующий создание и запуск простого веб-приложения ASP.NET Core в Visual Studio на C#](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 Поздравляем с завершением этого краткого руководства! Надеемся, что вы узнали что-то новое о C#, ASP.NET Core и интегрированной среде разработки Visual Studio IDE.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. В **обозревателе решений** разверните папку **Страницы** и выберите **Index.cshtml**.
+
+   ![Выбор файла Index.cshtml из обозревателя решений](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+
+   Этот файл соответствует странице с заголовком **Home** (Домашняя) веб-приложения, которое запускается в веб-браузере.
+
+   ![Страница "О программе" в веб-приложении](../ide/media/vs-2019/csharp-aspnet-index-page.png)
+
+   В редакторе отображается HTML-код для текста, содержащегося на странице **Home** (Домашняя).
+
+   ![HTML-код из файла Index.cshtml для домашней страницы в редакторе Visual Studio](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+
+1. Измените текст "Welcome" на "**Hello World!** ".
+
+   ![В редакторе Visual Studio измените сообщение "Welcome" в HTML-коде по умолчанию на сообщение "Hello World"](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+
+1. Выберите **IIS Express** или нажмите клавиши **CTRL**+**F5**, чтобы запустить приложение и открыть его в веб-браузере.
+
+   ![Нажмите кнопку "IIS Express" в Visual Studio](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
+
+   > [!NOTE]
+   > Если выводится сообщение об ошибке с текстом **Не удается подключиться к веб-серверу IIS Express** или сообщение об ошибке, где упоминается SSL-сертификат, закройте Visual Studio. После этого откройте Visual Studio с помощью пункта **Запуск от имени администратора** контекстного меню. Затем снова запустите приложение.
+
+1. В веб-браузере убедитесь, что страница **Home** (Домашняя) содержит введенный вами текст.
+
+   ![Обновленная страница "Home" (Домашняя) с внесенными изменениями](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
+
+1. Закройте веб-браузер.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Следующие шаги
 
