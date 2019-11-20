@@ -3,15 +3,15 @@ title: Преимущество технической поддержки
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Сведения о том, как активировать преимущество технической поддержки, входящее в вашу подписку Visual Studio.
-ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061145"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161966"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация и использование преимущества технической поддержки в подписках Visual Studio
 Преимущество технической поддержки в подписках Visual Studio предназначено для решения проблем, связанных с заменой и ремонтом, в **нерабочей среде** для продуктов, которые все еще находятся на этапе основной поддержки [жизненного цикла поддержки ](https://support.microsoft.com/lifecycle/search). Стандартная и годовая облачная подписки на Visual Studio Enterprise получают право на четыре обращения в службу поддержки, а стандартная и годовая облачная подписки на Visual Studio Professional — на два в течение 1 года с активации преимущества. Необходимо активировать преимущество в срок действия подписки.
@@ -112,7 +112,9 @@ ms.locfileid: "73061145"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 4 обращения       |  Yes|
+| Visual Studio Enterprise с GitHub Enterprise | VL | 4 обращения       |  Yes|
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>2</sup>                                        | 2 обращения                                                          |Yes         |
+| Visual Studio Professional с GitHub Enterprise | VL                                     | 2 обращения                                                          |Yes         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 2 обращения                                             |  Yes         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 2 обращения                                               | Yes         |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
@@ -123,3 +125,9 @@ ms.locfileid: "73061145"
 <sup>2</sup> *Включает следующие категории: Imagine Standard.*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
+
+## <a name="next-steps"></a>Следующие шаги
+Не забудьте активировать эти замечательные преимущества, чтобы максимально эффективно использовать подписку Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Индивидуальный кредит Azure DevTest](vs-azure.md)

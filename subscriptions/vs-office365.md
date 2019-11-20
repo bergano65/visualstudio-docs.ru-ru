@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения о преимуществе Office 365, входящем в состав некоторых подписок Visual Studio.
-ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144714"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099612"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
 
@@ -39,20 +39,22 @@ ms.locfileid: "73144714"
 0. Нажмите кнопку **Скачать**.
    > [!div class="mx-imgBorder"]
    > ![Начало скачивания Office 365](_img/vs-office365/vs-office365-download-button.png)
-0. Войдите с помощью учетной записи Майкрософт. (Если вы уже выполнили вход, нажмите кнопку **Далее**.)
+0. Выполните вход со своей учетной записью Майкрософт. (Если вы уже выполнили вход, нажмите кнопку **Далее**.)
 0. Введите ключ продукта, страну или регион и язык, а затем щелкните **Далее**.
    > [!div class="mx-imgBorder"]
    > ![Ввод ключа продукта Office 365](_img/vs-office365/vs-office365-enter-key.png)
-0. Нажмите **Далее** еще раз.
+0. Нажмите кнопку **Далее** еще раз.
 0. Нажмите кнопку **Установить**, чтобы установить приложения Office.
 
 ## <a name="eligibility"></a>Право на участие
 
-| уровень подписки;                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
+| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия| Доступна       |  Yes          |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия| Доступно       |  Yes          |
+| Visual Studio Enterprise с GitHub Enterprise  | VL | Доступно       |  Yes          |
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Не для перепродажи (NFR) <sup>1</sup> | Недоступно       |  Н/Д          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                            |  Н/Д          |
+| Visual Studio Professional с GitHub Enterprise | VL | Недоступно         |  Н/Д          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |

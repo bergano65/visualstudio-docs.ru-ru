@@ -1,7 +1,7 @@
 ---
 title: Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++ | Документация Майкрософт
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589042"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098974"
 ---
 # <a name="cross-platform-mobile-development-with-c"></a>Разработка кроссплатформенных мобильных приложений на языке C++
 
@@ -42,10 +42,6 @@ ms.locfileid: "72589042"
 Если у вас есть опыт разработки для Android или iOS, мы можем предложить вам отличные материалы, которые помогут вам приступить к работе. Visual Studio — это выразительная среда разработки с широкими возможностями. Чтобы научиться использовать ее, попробуйте обратиться к [руководству по началу работы для разработчиков решений Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) или [руководству по началу работы для разработчиков решений iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). В этих статьях вы получите общие сведения о Visual Studio и ознакомитесь с понятиями, которые нужно знать для разработки кроссплатформенных приложений для Windows и Windows Store. Чтобы приступить к созданию первого кроссплатформенного приложения для iOS и Android, обратитесь к разделу [Создание приложения OpenGL ES в Android и iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 Рабочая нагрузка Visual C++ для разработки кроссплатформенных мобильных приложений включает несколько шаблонов, которые помогут вам приступить к созданию приложений:
-
-- Приложение OpenGLES 2 (Android, iOS, универсальная платформа Windows)
-
-  Создает решение с набором проектов для сборки приложения Android Native Activity, приложения iOS и универсального приложения для Windows вместе с библиотекой общего кода C++. Эти приложения используют библиотеки для конкретных платформ, созданные с помощью общего кода C++ OpenGL ES, с целью отрисовки одинакового вращающегося куба. Чтобы использовать этот шаблон, при установке Visual Studio включите рабочую нагрузку **Разработка с помощью универсальной платформы Windows**.
 
 - Нативное приложение (Android)
 

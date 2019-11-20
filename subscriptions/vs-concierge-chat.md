@@ -3,15 +3,15 @@ title: Преимущество Concierge Chat в подписках Visual Stud
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Сведения о преимуществе Concierge Chat, входящем в состав подписок Visual Studio.
-ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681191"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099578"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat в подписках Visual Studio
 Службы Concierge Chat помогают найти сведения о продуктах и техническую документацию, а также предоставляют помощь по использованию преимуществ подписки Visual Studio.
@@ -38,7 +38,9 @@ ms.locfileid: "68681191"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Yes          |
+| Visual Studio Enterprise с GitHub Enterprise | VL| Доступно       |  Yes          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Yes          |
+| Visual Studio Professional с GitHub Enterprise | VL | Доступно                                                            |  Yes          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Yes          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Доступно                                              |  Yes          |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
@@ -63,3 +65,5 @@ ms.locfileid: "68681191"
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
 - [Интегрированная среда разработки Visual Studio](/visualstudio/)
+
+Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

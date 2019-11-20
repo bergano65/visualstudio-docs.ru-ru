@@ -3,15 +3,15 @@ title: Преимущество Parasoft Virtualize/SOAtest Professional Desktop
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Сведения об активации подписки Parasoft Virtualize/SOA Test Professional, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816478"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161927"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
@@ -73,7 +73,9 @@ ms.locfileid: "72816478"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Yes       |
+| Visual Studio Enterprise с GitHub Enterprise | VL | 6 месяцев       |  Yes       |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                           |Н/Д         |
+| Visual Studio Professional с GitHub Enterprise | VL                                      | Недоступно                                                           |Н/Д         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                                           |Н/Д         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                                           |Н/Д         |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
