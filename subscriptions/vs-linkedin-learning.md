@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения о преимуществе LinkedIn Learning, которое входит в состав подписки LinkedIn Premium, включенной в некоторые подписки Visual Studio.
-ms.openlocfilehash: 9715c2fb5dd8219e05a6728c7d242aef24e86081
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787761"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099647"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -71,7 +71,9 @@ ms.locfileid: "68787761"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Enterprise с GitHub Enterprise   | VL | 6 месяцев       |  Нет.  Доступно только для новых подписчиков          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |Нет.  Доступно только для новых подписчиков         |
+| Visual Studio Professional с GitHub Enterprise | VL | 3 месяца      | Нет.  Доступно только для новых подписчиков         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              | Нет.  Доступно только для новых подписчиков         |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
@@ -93,3 +95,8 @@ ms.locfileid: "68787761"
   - Справка по общим вопросам о [LinkedIn](https://www.linkedin.com/help/linkedin), включая создание учетных записей и профилей, а также поддержку сети.
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Ознакомьтесь с другими полезными преимуществами, которые предоставляет подписка. Перейдите на страницу [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+
+Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

@@ -3,15 +3,15 @@ title: Преимущество Центра приложений Visual Studio 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Сведения о преимуществе Центра приложений Visual Studio, включенном в подписки Visual Studio.
-ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787831"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161921"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 
@@ -42,7 +42,9 @@ ms.locfileid: "68787831"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, не для перепродажи (NFR) <sup>1</sup> | Включено       |  Yes          |
+| Visual Studio Enterprise с GitHub Enterprise  | VL | Включено       |  Yes          |
 | Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Yes |
+| Visual Studio Professional с GitHub Enterprise | VL                                      | Включено                                                            |Yes |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Включено                                                            |Yes |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Включено                                                            |Yes |
 ||
@@ -72,4 +74,7 @@ ms.locfileid: "68787831"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Следующие шаги
-Azure — это ваш личная среда для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure. Активируйте [преимущество Azure](vs-azure.md), если вы еще не сделали этого. 
+Не забудьте активировать эти замечательные преимущества, чтобы максимально эффективно использовать подписку Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Индивидуальный кредит Azure DevTest](vs-azure.md)
