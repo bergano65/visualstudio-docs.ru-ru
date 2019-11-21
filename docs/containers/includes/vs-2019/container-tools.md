@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126121"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74142215"
 ---
 В Visual Studio можно легко выполнять сборку, отлаживать и запускать контейнерные приложения ASP.NET Core и публиковать их в Реестре контейнеров Azure (ACR), Docker Hub, Службе приложений Azure или собственном реестре контейнеров. В этой статье мы опубликуем приложение в ACR.
 
@@ -92,6 +92,18 @@ microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
 CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
 cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
 ```
+
+## <a name="containers-window"></a>Окно "Контейнеры"
+
+В Visual Studio 2019 версии 16.4 или более поздних версиях окно **Контейнеры** можно использовать для просмотра запущенных на компьютере контейнеров, а также доступных образов.
+
+Откройте окно **Контейнеры**, используя поле поиска в интегрированной среде разработки (нажмите сочетание клавиш **CTRL**+**Q**), введите `container` и в списке выберите **Контейнеры**.
+
+Окно **Контейнеры** можно закрепить в удобном месте, например под редактором. Для этого перетащите его и следуйте инструкциям по размещению.
+
+В окне найдите контейнер и перейдите по вкладкам, чтобы просмотреть переменные среды, сопоставления портов, журналы и файловую систему.
+
+Дополнительные сведения см. в статье [Сведения о просмотре и диагностике контейнеров и образов в Visual Studio](../../view-and-diagnose-containers.md).
 
 ## <a name="publish-docker-images"></a>Публикация образов Docker
 

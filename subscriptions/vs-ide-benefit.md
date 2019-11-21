@@ -3,15 +3,15 @@ title: Преимущество Studio IDE в подписках Visual Studio |
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
-ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816525"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099629"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
@@ -62,7 +62,9 @@ ms.locfileid: "72816525"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Yes          |
+| Visual Studio Enterprise с GitHub Enterprise   | VL | Доступно       |  Yes          |
 | Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Yes          |
+| Visual Studio Professional с GitHub Enterprise | VL   | Доступно              |  Yes          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Yes         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 

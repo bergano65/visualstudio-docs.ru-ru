@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Редактирование кода в Visual Studio
-summary: Сведения об изменении задач, таких как открытие проекта, использование функций редактора кода и поддержка согласованного стиля кода.
+title: Упорядочение и редактирование кода в Visual Studio
+summary: Сведения о работе с проектами кода, использовании функций редактора кода и поддержке согласованного стиля кода.
 metadata:
   title: Возможности редактора кода
   description: Сведения о функциях редактирования кода в Visual Studio 2019.
@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
+  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516825"
+  ms.lasthandoff: 11/14/2019
+  ms.locfileid: "74087250"
 landingContent:
 - title: Открытие или создание проекта
   linkLists:
