@@ -1,5 +1,5 @@
 ---
-title: Вариант формата отображения глубиной цвета 16 бит | Документация Майкрософт
+title: 16bpp Render Target Format Variant | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -8,44 +8,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
+ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896427"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188592"
 ---
-# <a name="16-bpp-render-target-format-variant"></a>16 бит отрисовки вариант формата
+# <a name="16-bpp-render-target-format-variant"></a>16 bpp Render Target Format Variant
 Для всех целевых объектов отрисовки и буферов фона задается формат пикселей DXGI_FORMAT_B5G6R5_UNORM.
 
 ## <a name="interpretation"></a>Интерпретация
- Целевой объект отрисовки или буфера фона обычно используется в формат 32 bpp (32 бита на пиксель), например B8G8R8A8_UNORM. форматы 32 bpp может использовать большой объем памяти, пропускной способности. Так как формат B5G6R5_UNORM имеет размер 32 bpp форматы формат 16 бит, с его помощью можно уменьшить нагрузку на пропускную способность памяти, но за счет снижения точности цветовоспроизведения.
+ A render target or back buffer typically uses a 32 bpp (32 bits per pixel) format such as B8G8R8A8_UNORM. 32-bpp formats can consume a large amount of memory bandwidth. Because the B5G6R5_UNORM format is a 16-bpp format that's half the size of 32-bpp formats, using it can relieve pressure on memory bandwidth, but at the cost of reduced color fidelity.
 
- Если этот вариант дает значительный прирост производительности, это с большой вероятностью указывает на то, что приложение потребляет слишком много пропускной способности памяти. Позволяет получить значительного выигрыша в производительности, особенно в том случае, если кадре бы значительное количество перекрытий и альфа смешения.
+ Если этот вариант дает значительный прирост производительности, это с большой вероятностью указывает на то, что приложение потребляет слишком много пропускной способности памяти. You can gain significant performance improvement, especially when the profiled frame had a significant amount of overdraw or alpha-blending.
 
-Формат целевого объекта отрисовки 16 бит можно уменьшить памяти аппаратного контроллера управления с использованием ресурсов, когда у приложения есть следующие условия:
-- Не требует высокой точности цветовоспроизведения.
-- Не требует наличия альфа-канала.
-- Нет ofent плавных градиентов (которые подвержены чередования артефактов в снижения точности цветовоспроизведения).
+A 16-bpp render target format can reduce memory band with usage when your application has the following conditions:
+- Doesn't require high-fidelity color reproduction.
+- Doesn't require an alpha channel.
+- Doesn't often have smooth gradients (which are susceptible to banding artifacts under reduced color fidelity).
 
-Другие стратегии для снижения пропускной способности памяти, включают:
-- Уменьшите количество перекрытий и альфа смешения.
-- Уменьшите размеры буфера кадров.
-- Уменьшите размеры текстурными ресурсами.
-- Уменьшите число сжатия текстур ресурсов.
+Other strategies to reduce memory bandwidth include:
+- Reduce the amount of overdraw or alpha-blending.
+- Reduce the dimensions of the frame buffer.
+- Reduce dimensions of texture resources.
+- Reduce compressions of texture resources.
 
 Как обычно, необходимо учитывать потери в плане качества изображения, связанные с этими оптимизациями.
 
-Приложения, которые являются частью цепочки буферов имеют задний буфер формат (DXGI_FORMAT_B5G6R5_UNORM), который не поддерживает 16 бит. Эти цепочек буферов, созданных с помощью `D3D11CreateDeviceAndSwapChain` или `IDXGIFactory::CreateSwapChain`. Чтобы обойти это ограничение, выполните следующие действия:
-1. Создать целевой объект отрисовки формата B5G6R5_UNORM с помощью `CreateTexture2D` и подготовки к этому объекту.
-2. Скопируйте целевой объект отрисовки в буфера фона цепочки буферов, нарисовав полноэкранный квадрант с целевым объектом отрисовки качестве исходной текстуры.
-3. Вызовите Present для цепочки буферов.
+Applications that are a part of a swap chain have a back buffer format (DXGI_FORMAT_B5G6R5_UNORM) that doesn't support 16 bpp. These swap chains are created by using `D3D11CreateDeviceAndSwapChain` or `IDXGIFactory::CreateSwapChain`. To work around this limitation, do the following steps:
+1. Create a B5G6R5_UNORM format render target by using `CreateTexture2D` and render to that target.
+2. Copy the render target onto the swap-chain backbuffer by drawing a full-screen quad with the render target as your source texture.
+3. Call Present on your swap chain.
 
-   Если эта стратегия сохраняет большую пропускную способность, чем потребляется при копировании целевого объекта отрисовки для буфера фона цепочки буферов, повышается производительность отрисовки.
+   If this strategy saves more bandwidth than is consumed by copying the render target to the swap-chain backbuffer, then rendering performance is improved.
 
-   Архитектуры GPU, использующие методы отрисовки можно увидеть значительные преимущества в производительности с помощью формата буфера кадров 16 бит. Это улучшение — так как большая часть буфера кадров может поместиться в буферном кэше локального кадров каждой плитки. Архитектуры с плиточной отрисовкой иногда встречаются в GPU для мобильных телефонов и планшетов. За пределами этого сегмента они практически не применяются.
+   GPU architectures that use tiled rendering techniques can see significant performance benefits by using a 16 bpp frame buffer format. This improvement is because a larger portion of the frame buffer can fit in each tile's local frame buffer cache. Архитектуры с плиточной отрисовкой иногда встречаются в GPU для мобильных телефонов и планшетов. За пределами этого сегмента они практически не применяются.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Заметки
  Формат целевого объекта отрисовки DXGI_FORMAT_B5G6R5_UNORM устанавливается при каждом вызове метода `ID3D11Device::CreateTexture2D`, который создает целевой объект отрисовки. В частности, формат переопределяется, когда объект D3D11_TEXTURE2D_DESC, передаваемый в параметре pDesc, описывает целевой объект отрисовки, то есть:
 
 - Для члена BindFlags установлен флаг D3D11_BIND_REDNER_TARGET.
@@ -58,7 +58,7 @@ ms.locfileid: "62896427"
  Так как формат B5G6R5 не имеет альфа-канала, альфа-содержимое не сохраняется при использовании этого варианта. Если приложение требует наличия альфа-канала в целевом объекте отрисовки, можно переключиться на формат B5G6R5.
 
 ## <a name="example"></a>Пример
- **16 бит формат целевого объекта отрисовки** можно воспроизвести для целевых объектов отрисовки, созданных с помощью `CreateTexture2D` с помощью следующего кода:
+ The **16 bpp Render Target Format** variant can be reproduced for render targets created by using `CreateTexture2D` by using code like this:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;
