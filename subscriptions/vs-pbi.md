@@ -3,15 +3,15 @@ title: Преимущество Power BI Pro в подписках Visual Studio
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 12/19/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Сведения о подписке на Power BI Pro, входящей в некоторые подписки Visual Studio.
-ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787961"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161946"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro в подписках Visual Studio
 
@@ -63,7 +63,9 @@ ms.locfileid: "68787961"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Yes|
+| Visual Studio Enterprise с GitHub Enterprise  | VL | Доступно       |  Yes|
 | Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                            |Н/Д         |
+| Visual Studio Professional с GitHub Enterprise | VL                                      | Недоступно                                                            |Н/Д         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                                            |Н/Д         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Доступно       |  Yes|
 | Visual Studio Enterprise (ежемесячная облачная) | Azure                                       | Недоступно                                  |Н/Д|
@@ -111,4 +113,5 @@ ms.locfileid: "68787961"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Следующие шаги
-Чтобы активировать преимущество Power BI Pro, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+- Чтобы активировать преимущество Power BI Pro, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+- Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md). 

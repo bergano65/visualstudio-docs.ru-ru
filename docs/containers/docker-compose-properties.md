@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713929"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072727"
 ---
 # <a name="docker-compose-build-properties"></a>Свойства сборки Docker Compose
 
@@ -46,6 +46,46 @@ ms.locfileid: "73713929"
 |DockerServiceName| DCPROJ|Если указано свойство DockerLaunchAction или DockerLaunchBrowser, DockerServiceName — это имя службы, которую следует запустить.  Используйте это свойство, чтобы указать, какой из множества проектов, на которые может ссылаться файл docker-compose, будет запущен.|-|
 |DockerServiceUrl| DCPROJ | URL-адрес, используемый при запуске браузера.  Допустимые токены замены: "{ServiceIPAddress}", "{ServicePort}" и "{Scheme}".  Пример: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
 |DockerTargetOS| DCPROJ | Целевая ОС, используемая при сборке образа Docker.|-|
+
+## <a name="example"></a>Пример
+
+Если изменить расположение файлов Docker Compose, задав для `DockerComposeBaseFilePath` относительный путь, необходимо также убедиться, что контекст сборки изменен и ссылается на папку решения. Например, если файл Docker Compose находится в папке *DockerComposeFiles*, он должен задавать ".." или "../.." для контекста сборки в зависимости от его расположения относительно папки решения.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>154022c1-8014-4e9d-bd78-6ff46670ffa4</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}</DockerServiceUrl>
+    <DockerServiceName>webapplication1</DockerServiceName>
+    <DockerComposeBaseFilePath>DockerComposeFiles\mydockercompose</DockerComposeBaseFilePath>
+    <AdditionalComposeFilePaths>AdditionalComposeFiles\myadditionalcompose.yml</AdditionalComposeFilePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="DockerComposeFiles\mydockercompose.override.yml">
+      <DependentUpon>DockerComposeFiles\mydockercompose.yml</DependentUpon>
+    </None>
+    <None Include="DockerComposeFiles\mydockercompose.yml" />
+    <None Include=".dockerignore" />
+  </ItemGroup>
+</Project>
+```
+
+Файл *mydockercompose.yml* должен выглядеть так, как показано ниже. Для контекста сборки задан относительный путь к папке решения (в данном случае `..`).
+
+```yml
+version: '3.4'
+
+services:
+  webapplication1:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: ..
+      dockerfile: WebApplication1\Dockerfile
+```
 
 > [!NOTE]
 > Свойства DockerComposeBuildArguments, DockerComposeDownArguments и DockerComposeUpArguments появились в Visual Studio 2019 версии 16.3.
