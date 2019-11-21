@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3d3ce704d517224452731c52a891ac2263f738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730244"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239461"
 ---
 # <a name="remote-debugger-port-assignments"></a>Назначение портов удаленного отладчика
 Удаленный отладчик Visual Studio может работать как приложение или как фоновая служба. Если он работает как приложение, то использует порт, назначенный по умолчанию:
@@ -29,7 +29,7 @@ ms.locfileid: "72730244"
 
 - Visual Studio 2012: 4016
 
-  Иными словами, номер порта, назначаемый удаленному отладчику, увеличивается на 2 в каждой версии. При необходимости можно задать другой номер порта. В следующих подразделах будет описано, как задать номера портов.
+Иными словами, номер порта, назначаемый удаленному отладчику, увеличивается на 2 в каждой версии. При необходимости можно задать другой номер порта. В следующих подразделах будет описано, как задать номера портов.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Порт удаленного отладчика в 32-разрядных операционных системах
 
