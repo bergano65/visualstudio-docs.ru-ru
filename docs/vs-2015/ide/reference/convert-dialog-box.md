@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 62f81e6a697089d7a352f652ad9f77d279faac0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bc65e58aa5bdea786aba05236b6fa684780ccae2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660810"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296086"
 ---
 # <a name="convert-dialog-box"></a>Диалоговое окно "Преобразование"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Диалоговое окно **Преобразование** позволяет выбирать средство преобразования для создания нового проекта из старого, например проекта [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] из проекта Visual Basic 6. Можно также использовать [преобразователь проектов Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), доступный на веб-сайте CodePlex, чтобы обновить проекты, созданные в предыдущих версиях Visual Studio.
+Диалоговое окно **Преобразование** позволяет выбирать средство преобразования для создания нового проекта из старого, например проекта [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] из проекта Visual Basic 6. Можно также использовать [преобразователь проектов Visual Studio](https://go.microsoft.com/fwlink/?LinkID=246465), доступный на веб-сайте CodePlex, чтобы обновить проекты, созданные в предыдущих версиях Visual Studio.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 

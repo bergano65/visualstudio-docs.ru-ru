@@ -1,5 +1,5 @@
 ---
-title: Руководство по использованию средств архитектуры Visual Studio | Документация Майкрософт
+title: Visual Studio Architecture Tooling Guidance | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,18 +9,18 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7c34e9cae335af12f59e6c25d5fb3c24e5c1749
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fae0bb2cca6f6f8a4ffb4e5af58473d041a12eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659345"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301330"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Руководство по средствам проектирования архитектуры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Это руководство по архитектуре представляет собой загружаемый пакет практических рекомендаций по использованию средств моделирования в Visual Studio 2010. В нем представлено общее представление о том, как использовать все средства моделирования в интегрированном режиме и обсуждаются наиболее распространенные сценарии, в которых используются эти средства.
+This Architecture Tooling Guidance is a downloadable package of practical guidance about the use of the modeling tools in Visual Studio 2010. It presents a high-level view of how to use all the modeling tools in an integrated manner, and discusses the most common scenarios in which the tools are used.
 
- Содержимое было создано [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ными диапазонами управления жизненным циклом приложений, специальной группой, которая содержит членов группы разработчиков [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], служб Майкрософт, наиболее ценных специалистов Майкрософт (MVP) и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интересов сообщества.
+ The content was created by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers, a special group that has members from the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Product Team, Microsoft Services, Microsoft Most Valued Professionals (MVPs), and [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Community Leads.
 
- [Щелкните здесь, чтобы скачать руководство по инструментам архитектуры.](http://go.microsoft.com/fwlink/?LinkID=191984)
+ [Click here to download the Architecture Tooling Guidance.](https://go.microsoft.com/fwlink/?LinkID=191984).

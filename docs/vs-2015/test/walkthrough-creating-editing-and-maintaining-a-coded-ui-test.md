@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2891a01590f2970fc2e68ea7bc2d57506b12d26b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657110"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302060"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "72657110"
 
 12. Выберите элемент управления Checkbox. В окне "Свойства" измените значение свойства **Имя** с \<No Name> на checkBox1 и очистите свойство **IsEnabled**.
 
-     ![Простое приложение WPF](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
+     ![Simple WPF Application](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
 13. Дважды щелкните элемент управления "Кнопка", чтобы добавить обработчик события щелчка.
 
@@ -147,11 +147,11 @@ ms.locfileid: "72657110"
 
 8. Щелкните **Начать запись** в окне "UIMap — Построитель кодированных тестов ИП".
 
-     ![Начать запись](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
+     ![Start recording](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
 
      Вы можете приостановить запись, например если вы работаете с входящей почтой.
 
-     ![Приостановить запись](../test/media/cuit.png "ПОСТРОИТЕЛЬ КОДИРОВАННЫХ")
+     ![Pause the recording](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > Все действия, выполненные на рабочем столе, будут записаны. Приостановите запись, если вы выполняете действия, которые могут привести к записи конфиденциальных данных.
@@ -369,22 +369,22 @@ ms.locfileid: "72657110"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="videos"></a>Видеоролики
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-episode2-маинтаиненцеанддебуггинг](http://go.microsoft.com/fwlink/?LinkID=230574)
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode3-хандкодинг](http://go.microsoft.com/fwlink/?LinkID=230575)
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>Практическое лабораторное занятие
- [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)
+ [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
 
 ### <a name="faq"></a>Часто задаваемые вопросы
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Форум
- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>См. также раздел
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [Начало работы с](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [поддерживаемыми конфигурациями и платформами конструктора WPF для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Редактирование закодированных тестов пользовательского интерфейса с помощью редактора закодированных](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) тестов пользовательского интерфейса
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Getting Started with the WPF Designer](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

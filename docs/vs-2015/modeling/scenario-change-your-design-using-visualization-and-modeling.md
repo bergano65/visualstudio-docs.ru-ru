@@ -1,5 +1,5 @@
 ---
-title: 'Сценарий: изменение дизайна с помощью визуализации и моделирования | Документация Майкрософт'
+title: 'Scenario: Change your design using visualization and modeling | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e66f8438e0c28a64d2e8705fea0ffa5e362887b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671256"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296023"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: изменение проекта с помощью визуализации и моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +107,7 @@ ms.locfileid: "72671256"
 
 - [SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
-  Для просмотра альтернативных представлений архитектуры можно использовать определенные элементы одной модели сразу на нескольких различных схемах. Например, можно перетащить компонент в другую схему компонентов или последовательностей, чтобы он мог функционировать как субъект. См. раздел [изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md).
+  Для просмотра альтернативных представлений архитектуры можно использовать определенные элементы одной модели сразу на нескольких различных схемах. Например, можно перетащить компонент в другую схему компонентов или последовательностей, чтобы он мог функционировать как субъект. See [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
 
   Обе команды также используют проверку слоев, которая позволяет контролировать соответствие разрабатываемого кода дизайну.
 
@@ -115,7 +115,7 @@ ms.locfileid: "72671256"
 
 - [Поддержание соответствия кода и дизайна](#ValidatingCode)
 
-- [Опишите логическую архитектуру: схемы слоев](#DescribeLayers)
+- [Describe the Logical Architecture: Layer Diagrams](#DescribeLayers)
 
 - [Проверка кода по схемам слоев](../modeling/validate-code-with-layer-diagrams.md)
 
@@ -149,11 +149,11 @@ ms.locfileid: "72671256"
 
   Пример
 
-- [Основные сведения о роли системы в бизнес-процессе](#UnderstandingBPMandSystemDesign)
+- [Understanding the role of the system in the business process](#UnderstandingBPMandSystemDesign)
 
-- [Описание новых или обновленных требований пользователей](#DescribingURM)
+- [Describing new or updated user requirements](#DescribingURM)
 
-- [Создание тестов из моделей](#CreatingTests)
+- [Creating tests from models](#CreatingTests)
 
 - [Выявление изменений в существующей системе](#DeterminingChanges)
 
@@ -165,14 +165,14 @@ ms.locfileid: "72671256"
 
 - [Тестирование, проверка и возврат в обновленного кода](#TestValidateCheckInCode)
 
-### <a name="UnderstandingBPMandSystemDesign"></a>Основные сведения о роли системы в бизнес-процессе
+### <a name="UnderstandingBPMandSystemDesign"></a> Understanding the Role of the System in the Business Process
  Компании Lucerne необходимо получить больше сведений о бизнес-процессе компании Dinner Now. Чтобы улучшить взаимопонимание с компанией Dinner Now, она создает следующие схемы.
 
 |**Схема**|**Что описывает**|
 |-----------------|-------------------|
-|*Схема вариантов использования (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)|— Действия, поддерживаемые системой компании Dinner Now;<br />— Люди и внешние системы, выполняющие действия;<br />— Основные компоненты системы, которые поддерживают каждое действие;<br />— Части бизнес-процесса, которые выходят за пределы области текущей системы, например, поставки пищи|
-|*Схема активности (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы активности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|Последовательность действий, выполняемых при создании заказа клиентом|
-|*Схема классов (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|Бизнес-сущности и терминология, которая используется в переговорах и отношениях между этими сущностями. Например, в данном сценарии фигурируют термины «Заказ» и «Позиция меню».|
+|*Use case diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md)|-   The activities that the Dinner Now system supports<br />-   The people and external systems that perform the activities<br />-   The major components of the system that support each activity<br />-   The parts of the business process that are outside the scope of the current system, for example, food delivery|
+|*Activity diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md)|Последовательность действий, выполняемых при создании заказа клиентом|
+|*Class diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)<br />-   [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md)|Бизнес-сущности и терминология, которая используется в переговорах и отношениях между этими сущностями. Например, в данном сценарии фигурируют термины «Заказ» и «Позиция меню».|
 
  Например, чтобы понять, какие задачи выполняются на веб-сайте компании Dinner Now и кто их выполняет, компания Lucerne создает следующую схему вариантов использования.
 
@@ -192,34 +192,34 @@ ms.locfileid: "72671256"
 
  **Схема классов UML**
 
-### <a name="DescribingURM"></a>Описание новых или обновленных требований пользователей
+### <a name="DescribingURM"></a> Describing New or Updated User Requirements
  Компания Lucerne хочет добавить в систему компании Dinner Now функциональность, позволяющую клиентам читать и оставлять отзывы о ресторанах. Она обновляет указанные ниже схемы, чтобы описать новые требования и обсудить их с компанией Dinner Now.
 
 |**Схема**|**Что описывает**|
 |-----------------|-------------------|
-|*Схема вариантов использования (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)|Новый вариант использования для функции «Написать отзыв о ресторане»|
-|*Схема активности (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы активности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|Операции, выполняемые клиентом для размещения отзыва о ресторане|
-|*Схема классов (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|Данные, необходимые для сохранения отзыва|
+|*Use case diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md)|Новый вариант использования для функции «Написать отзыв о ресторане»|
+|*Activity diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md)|Операции, выполняемые клиентом для размещения отзыва о ресторане|
+|*Class diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)<br />-   [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md)|Данные, необходимые для сохранения отзыва|
 
  Например, следующая схема вариантов использования включает новый вариант использования «Написать отзыв», соответствующий новому требованию. Для удобства идентификации он выделен на схеме оранжевым цветом.
 
  ![Схема вариантов использования UML](../modeling/media/uml-writerev.png "UML_WriteRev")
 
- **Схема вариантов использования UML**
+ **UML use case diagram**
 
  Следующая схема деятельности включает в себя новые элементы, выделенные оранжевым цветом, которые описывают последовательность шагов в новом варианте использования:
 
  ![Схема активности UML](../modeling/media/uml-writereview.png "UML_WriteReview")
 
- **Схема активности UML**
+ **UML activity diagram**
 
  Следующая схема классов содержит новый класс Review и его отношения с другими классами, чтобы команды могли обсуждать детали этого класса. Обратите внимание, что и у клиента, и у ресторана может быть несколько отзывов.
 
  ![Схема классов UML](../modeling/media/uml-dinnerreviews.png "UML_DinnerReviews")
 
- **Схема классов UML**
+ **UML class diagram**
 
-### <a name="CreatingTests"></a>Создание тестов из моделей
+### <a name="CreatingTests"></a> Creating Tests from Models
  Обе команды согласились, что перед внесением каких-либо изменений необходимо подвергнуть систему и ее компоненты полному набору тестов. В компании Lucerne имеется специальная команда, которая проводит тестирование на уровне системы и на уровне компонентов. Она взяла тесты, созданные компанией Dinner Now, и структурировала их с помощью UML-схем.
 
 - Каждый вариант использования представлен одним или несколькими тестами. Элементы на схеме вариантов использования связываются с рабочими элементами тестовых случаев в Team Foundation Server.
@@ -241,55 +241,55 @@ ms.locfileid: "72671256"
 
 |**Карта кода или схема**|**Что показывает**|
 |------------------------|---------------|
-|*Карта кода*<br /><br /> Пример<br /><br /> -   [сопоставлять зависимости в решениях](../modeling/map-dependencies-across-your-solutions.md)<br />-   [просмотра и реорганизации карт кода](../modeling/browse-and-rearrange-code-maps.md)<br />-   [настройки карт кода путем редактирования DGML файлов](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Зависимости и другие отношения в коде.<br /><br /> Например, для начала компания Dinner Now может изучить карты кода сборок и собрать общие сведения о сборках и их зависимостях, а также проанализировать карты и рассмотреть пространства имен и классы в этих сборках.<br /><br /> Кроме того, компания Dinner Now может создать карты для изучения конкретных областей и других видов отношений в коде. Для поиска и отбора соответствующих областей и отношений используется обозреватель решений.|
+|*Карта кода*<br /><br /> Пример<br /><br /> -   [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Browse and rearrange code maps](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Зависимости и другие отношения в коде.<br /><br /> Например, для начала компания Dinner Now может изучить карты кода сборок и собрать общие сведения о сборках и их зависимостях, а также проанализировать карты и рассмотреть пространства имен и классы в этих сборках.<br /><br /> Кроме того, компания Dinner Now может создать карты для изучения конкретных областей и других видов отношений в коде. Для поиска и отбора соответствующих областей и отношений используется обозреватель решений.|
 |*Схема классов на основе кода*<br /><br /> См. раздел [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Существующие классы в коде|
 
  Предположим, разработчик создает карту кода и акцентирует внимание на тех областях, которые будут затронуты новым сценарием. Эти области выбираются и выделяются на карте.
 
- ![Граф зависимостей пространства имен](../modeling/media/namespace-reviewsystem.png "Namespace_ReviewSystem")
+ ![Namespace Dependency Graph](../modeling/media/namespace-reviewsystem.png "Namespace_ReviewSystem")
 
  **Карта кода пространства имен**
 
  Разработчик разворачивает выбранные пространства имен, чтобы отобразить их классы, методы и отношения.
 
- ![Диаграмма зависимостей развернутого пространства имен](../modeling/media/dep-reviewsystem.png "Dep_ReviewSystem")
+ ![Expanded namespace dependency graph](../modeling/media/dep-reviewsystem.png "Dep_ReviewSystem")
 
  **Развернутая карта кода пространства имен с показанными связями между группами**
 
- Разработчик изучает код и определяет, какие классы и методы будут затронуты. Чтобы увидеть последствия каждого изменения, сразу после него создайте карты кодов заново. См. раздел [Визуализация кода](../modeling/visualize-code.md).
+ Разработчик изучает код и определяет, какие классы и методы будут затронуты. Чтобы увидеть последствия каждого изменения, сразу после него создайте карты кодов заново. See [Visualize code](../modeling/visualize-code.md).
 
  Чтобы описать изменения в других частях системы, таких как компоненты или взаимодействия, команда может нарисовать эти элементы на доске. Указанные ниже схемы в Visual Studio также позволят обеим командам фиксировать и изучать детали и управлять полученной информацией.
 
 |**Схемы**|**Что описывает**|
 |------------------|-------------------|
-|*Схема активности (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы активности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|Последовательность шагов, выполняемых, когда система обнаруживает, что клиент повторно сделал заказ в ресторане, и предлагает клиенту написать отзыв.|
-|*Схема классов (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|Логические классы и их отношения. Например, новый класс добавляется для описания элемента **Отзыв** и его отношений с другими сущностями, такими как **Ресторан**, **Меню**и **Клиент**.<br /><br /> Для связи отзывов с клиентами система должна хранить сведения о клиентах. Уточнять эти сведения поможет UML-схема классов.|
+|*Activity diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md)|Последовательность шагов, выполняемых, когда система обнаруживает, что клиент повторно сделал заказ в ресторане, и предлагает клиенту написать отзыв.|
+|*Class diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)<br />-   [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md)|Логические классы и их отношения. Например, новый класс добавляется для описания элемента **Отзыв** и его отношений с другими сущностями, такими как **Ресторан**, **Меню**и **Клиент**.<br /><br /> Для связи отзывов с клиентами система должна хранить сведения о клиентах. Уточнять эти сведения поможет UML-схема классов.|
 |*Схема классов на основе кода*<br /><br /> См. раздел [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Существующие классы в коде.|
-|*Схема компонентов (UML)*<br /><br /> Пример<br /><br /> -   [UML-схемы компонентов: справочные материалы](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md)|Высокоуровневые части системы, такие как веб-сайт компании Dinner Now, и их интерфейсы. Эти интерфейсы определяют, как компоненты взаимодействуют между собой через предоставляемые и потребляемые методы или службы.|
-|*Схема последовательностей (UML)*<br /><br /> Пример<br /><br /> -   [UML-схем последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-схем последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)|Последовательность взаимодействий между экземплярами.|
+|*Component diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md)|Высокоуровневые части системы, такие как веб-сайт компании Dinner Now, и их интерфейсы. Эти интерфейсы определяют, как компоненты взаимодействуют между собой через предоставляемые и потребляемые методы или службы.|
+|*Sequence diagram (UML)*<br /><br /> Пример<br /><br /> -   [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)|Последовательность взаимодействий между экземплярами.|
 
  Например, на следующей схеме компонентов показан новый компонент, который является частью компонента веб-сайта компании Dinner Now. Компонент ReviewProcessing обеспечивает функциональную возможность создания отзывов и выделен оранжевым цветом.
 
  ![Схема компонентов UML](../modeling/media/uml-internal.png "UML_Internal")
 
- **Схема компонентов UML**
+ **UML component diagram**
 
  На следующей схеме компонентов показана последовательность взаимодействий, которые возникают, когда веб-сайт компании Dinner Now проверяет, делал ли ранее клиент заказы в этом ресторане. Если условие выполняется, сайт просит клиента создать отзыв, который отправляется в ресторан и публикуется на веб-сайте.
 
- ![Схема последовательностей UML](../modeling/media/uml-revsystem.png "UML_RevSystem")
+ ![UML Sequence Diagram](../modeling/media/uml-revsystem.png "UML_RevSystem")
 
- **Схема последовательностей UML**
+ **UML sequence diagram**
 
 ### <a name="ValidatingCode"></a> Поддержание соответствия кода и дизайна
  Компания Dinner Now должна удостовериться, что обновленный код соответствует дизайну. Она создает схемы слоев, описывающие слои функциональных возможностей в системе, указывает разрешенные зависимости между слоями и связывает артефакты решения с этими слоями.
 
 |**Схема**|**Что описывает**|
 |-----------------|-------------------|
-|*Схема слоев*<br /><br /> Пример<br /><br /> -   [создания схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)<br />-   [схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)<br />-   [проверки кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md)|Логическая архитектура кода.<br /><br /> Схема слоев упорядочивает и сопоставляет артефакты в решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и сопоставляет их с абстрактными группами, которые называются *слоями*. Эти слои описывают роли, задачи или функции, выполняемые этими артефактами в системе.<br /><br /> Схемы слоев позволяют описать целевой дизайн системы и проверить создаваемый код на соответствие этому дизайну.<br /><br /> Чтобы создать слои, перетащите элементы из обозревателя решений, карт кода, представления классов и обозревателя объектов. Чтобы нарисовать новые слои, используйте панель элементов или щелкните поверхность схемы правой кнопкой мыши.<br /><br /> Чтобы просмотреть существующие зависимости, щелкните правой кнопкой мыши поверхность схемы слоев и выберите пункт **Создать зависимости**. Чтобы указать целевые зависимости, нарисуйте новые зависимости.|
+|*Layer diagram*<br /><br /> Пример<br /><br /> -   [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md)<br />-   [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)<br />-   [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md)|Логическая архитектура кода.<br /><br /> Схема слоев упорядочивает и сопоставляет артефакты в решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и сопоставляет их с абстрактными группами, которые называются *слоями*. Эти слои описывают роли, задачи или функции, выполняемые этими артефактами в системе.<br /><br /> Схемы слоев позволяют описать целевой дизайн системы и проверить создаваемый код на соответствие этому дизайну.<br /><br /> Чтобы создать слои, перетащите элементы из обозревателя решений, карт кода, представления классов и обозревателя объектов. Чтобы нарисовать новые слои, используйте панель элементов или щелкните поверхность схемы правой кнопкой мыши.<br /><br /> Чтобы просмотреть существующие зависимости, щелкните правой кнопкой мыши поверхность схемы слоев и выберите пункт **Создать зависимости**. Чтобы указать целевые зависимости, нарисуйте новые зависимости.|
 
  Например, следующая схема слоев описывает зависимости между слоями и количеством артефактов, связанных с каждым слоем.
 
- ![Схема слоев интегрированной системы платежей](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Layer diagram of integrated payment system](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")
 
  **Схема слоев**
 
@@ -321,7 +321,7 @@ ms.locfileid: "72671256"
 
 - Visual Studio поддерживает UML 2.1.2. В этом обзоре описываются только основные функции UML-схем в данном выпуске, но существует много книг, в которых подробно рассматривается язык UML и его применение.
 
-  См. раздел [Создание моделей для приложения](../modeling/create-models-for-your-app.md).
+  See [Create models for your app](../modeling/create-models-for-your-app.md).
 
 ### <a name="PlanningTracking"></a> Planning and Tracking Work
  Схемы моделирования в Visual Studio интегрированы с Team Foundation Server, что упрощает планирование, управление и отслеживание работы. Обе команды используют модели для определения тестовых случаев и задач разработки, а также для оценки своей работы. Компания Lucerne создает и связывает рабочие элементы Team Foundation Server с элементами модели, такими как варианты использования или компоненты. Это позволяет контролировать процесс и выполнять трассировку работы вплоть до требований пользователей. Такой подход помогает следить за тем, чтобы изменения продолжали удовлетворять этим требованиям.
@@ -363,26 +363,26 @@ ms.locfileid: "72671256"
 
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)
 
-- [Использование управления версиями](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [Использование управления версиями](https://go.microsoft.com/fwlink/?LinkID=525605)
 
 - [Сборка приложения](/azure/devops/pipelines/index)
 
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling
  Компаниям Lucerne и Dinner Now необходимо объединить свои платежные системы. В следующих разделах показано, как схемы моделирования в Visual Studio помогают им выполнить эту задачу.
 
-- [Общие сведения о требованиях к пользователю: схемы вариантов использования](#UnderstandUseCases)
+- [Understand the User Requirements: Use Case Diagrams](#UnderstandUseCases)
 
-- [Общие сведения о бизнес-процессе: схемы активности](#UnderstandActivities)
+- [Understand the Business Process: Activity Diagrams](#UnderstandActivities)
 
-- [Опишите структуру системы: схемы компонентов](#DescribeComponents)
+- [Describe the System Structure: Component Diagrams](#DescribeComponents)
 
-- [Описание взаимодействий: схемы последовательностей](#DescribeSequence)
+- [Describe the Interactions: Sequence Diagrams](#DescribeSequence)
 
 - [Визуализация существующего кода: карты кода](#VisualizeCode)
 
 - [Определение глоссария типов: схемы классов](#DefineClasses)
 
-- [Опишите логическую архитектуру: схемы слоев](#DescribeLayers)
+- [Describe the Logical Architecture: Layer Diagrams](#DescribeLayers)
 
   Пример
 
@@ -396,7 +396,7 @@ ms.locfileid: "72671256"
 
 - [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)
 
-### <a name="UnderstandUseCases"></a>Общие сведения о требованиях к пользователю: схемы вариантов использования
+### <a name="UnderstandUseCases"></a> Understand the User Requirements: Use Case Diagrams
  Схемы вариантов использования обобщают сведения о поддерживаемых системой видах деятельности и о том, кто их осуществляет. Из схемы вариантов использования компания Lucerne узнала о работе системы компании Dinner Now следующее.
 
 - Клиенты размещают заказы.
@@ -407,15 +407,15 @@ ms.locfileid: "72671256"
 
   Схема также показывает, что некоторые крупные варианты использования разделяются на более мелкие. Компания Lucerne хочет использовать собственную платежную систему. Она выделяет вариант использования «Обработка платежа» другим цветом, показывая, что этот вариант необходимо изменить.
 
-  ![Выделение процесса платежа на схеме вариантов использования](../modeling/media/uml-processpay.png "UML_ProcessPay")
+  ![Highlighting Process Payment on a use case diagram](../modeling/media/uml-processpay.png "UML_ProcessPay")
 
-  **Выделение процесса платежа на схеме вариантов использования**
+  **Highlighting Process Payment on the use case diagram**
 
   Если бы время разработки было коротким, команды могли бы обсудить, не следует ли позволить клиентам платить ресторанам напрямую. Чтобы это показать, они заменили бы вариант использования «Обработка платежа» вариантом, не включенным в систему компании Dinner Now. Затем они связали бы Клиента непосредственно с Рестораном, показав, что компания Dinner Now будет заниматься только обработкой заказов.
 
-  ![Переопределение области действия оплаты в ресторане на схеме вариантов использования](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")
+  ![Rescoping Pay Restaurant on the use case diagram](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")
 
-  **Переопределение области действия оплаты в ресторане на схеме вариантов использования**
+  **Rescoping Pay Restaurant on the use case diagram**
 
   Пример
 
@@ -459,18 +459,18 @@ ms.locfileid: "72671256"
 
 |**Схема**|**Что описывает**|
 |-----------------|-------------------|
-|схема активности|Последовательность шагов в варианте использования, а также кто или что выполняет эти шаги в данном варианте использования.<br /><br /> Имена вариантов использования часто отражают шаги на схеме активности. Схемы активности поддерживают такие элементы, как решения, объединения, ввод и вывод данных, параллельные потоки и т. п.<br /><br /> Пример<br /><br /> -   [UML-схемы активности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|
-|Схема последовательностей|Последовательность взаимодействий между участниками в варианте использования.<br /><br /> Пример<br /><br /> -   [UML-схем последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-схем последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)|
-|Схема классов (UML)|Сущности или типы, участвующие в варианте использования.<br /><br /> Пример<br /><br /> -   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|
+|схема активности|Последовательность шагов в варианте использования, а также кто или что выполняет эти шаги в данном варианте использования.<br /><br /> Имена вариантов использования часто отражают шаги на схеме активности. Схемы активности поддерживают такие элементы, как решения, объединения, ввод и вывод данных, параллельные потоки и т. п.<br /><br /> Пример<br /><br /> -   [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md)|
+|Схема последовательностей|Последовательность взаимодействий между участниками в варианте использования.<br /><br /> Пример<br /><br /> -   [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)|
+|Схема классов (UML)|Сущности или типы, участвующие в варианте использования.<br /><br /> Пример<br /><br /> -   [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)<br />-   [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md)|
 
-### <a name="UnderstandActivities"></a>Общие сведения о бизнес-процессе: схемы активности
+### <a name="UnderstandActivities"></a> Understand the Business Process: Activity Diagrams
  Схемы деятельности описывают последовательность шагов в бизнес-процессе и предоставляют простой способ описания рабочего процесса. Проект разработки может содержать несколько схем активности. Обычно к активности относят все действия, которые выполняются в результате одного внешнего действия, например заказа еды, обновления меню или добавления нового ресторана. Кроме того, активность может также подробно описывать сложное действие.
 
  Компания Lucerne обновляет приведенную ниже схему активности, взяв на себя обработку платежей и перевод оплаты ресторанам. Платежная система компании Dinner Now заменяется платежной системой компании Lucerne, что и выделено на схеме.
 
- ![Платежная система компании Lucerne на схеме активности](../modeling/media/uml-lucerne.png "UML_Lucerne")
+ ![Lucerne payment system on activity diagram](../modeling/media/uml-lucerne.png "UML_Lucerne")
 
- **Замена платежной системы компании Dinner Now на схеме активности**
+ **Replacing the Dinner Now Payment System on the activity diagram**
 
  Обновленная схема помогает компаниям Lucerne и Dinner Now визуализировать место платежной системы компании Lucerne в бизнес-процессе. В этом выпуске для идентификации ролей, выполняющих шаги, используются комментарии. Линии служат для создания *дорожек*, которые упорядочивают шаги по ролям.
 
@@ -516,17 +516,17 @@ ms.locfileid: "72671256"
 
 |**Схема**|**Описание**|
 |-----------------|---------------------|
-|Схема вариантов использования|Сводка действий, выполняемых каждым субъектом.<br /><br /> Пример<br /><br /> -   [UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)|
-|схема компонентов|Визуализация системы в виде коллекции допускающих многократное использование частей, которые предоставляют или потребляют поведение через четко определенный набор интерфейсов.<br /><br /> Пример<br /><br /> -   [UML-схемы компонентов: справочные материалы](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md)|
+|Схема вариантов использования|Сводка действий, выполняемых каждым субъектом.<br /><br /> Пример<br /><br /> -   [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md)|
+|схема компонентов|Визуализация системы в виде коллекции допускающих многократное использование частей, которые предоставляют или потребляют поведение через четко определенный набор интерфейсов.<br /><br /> Пример<br /><br /> -   [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md)|
 
-### <a name="DescribeComponents"></a>Опишите структуру системы: схемы компонентов
+### <a name="DescribeComponents"></a> Describe the System Structure: Component Diagrams
  Схемы компонентов описывают систему в виде коллекции отделяемых частей, которые предоставляют или потребляют поведение через четко определенный набор интерфейсов. Эти части могут иметь любой масштаб и соединяться любым доступным способом.
 
  Чтобы помочь компаниям Lucerne и Dinner Now визуализировать и обсудить компоненты системы и их интерфейсы, были созданы следующие схемы компонентов.
 
- ![Внешние компоненты в платежной системе](../modeling/media/uml-extdnpayment.png "UML_ExtDNPayment")
+ ![External components in the payment system](../modeling/media/uml-extdnpayment.png "UML_ExtDNPayment")
 
- **Компоненты платежной системы компании Dinner Now**
+ **Components of the Dinner Now payment system**
 
  На этой диаграмме показаны компоненты различных типов и их *зависимости*. Например, для проверки платежей как веб-сайт компании Dinner Now, так и платежная система компании Lucerne требуют наличия шлюза внешней системы обработки платежей. Стрелки между компонентами обозначают зависимости, указывающие, каким компонентам требуются функции других компонентов.
 
@@ -544,9 +544,9 @@ ms.locfileid: "72671256"
 
   Эти части являются экземплярами компонентов указанных типов и связаны следующим образом.
 
-  ![Компоненты в веб-сайте компании Dinner Now](../modeling/media/uml-dinnernow.png "UML_DinnerNow")
+  ![Components inside Dinner Now Web site](../modeling/media/uml-dinnernow.png "UML_DinnerNow")
 
-  **Компоненты, расположенные на веб-сайте компании Dinner Now**
+  **Components inside the Dinner Now Web Site**
 
   Веб-сайт компании Dinner Now делегирует свое поведение частям, которые обрабатывают функции веб-сайта. Стрелки между родительским компонентом и его компонентами-членами обозначают *делегирования* и указывают, какие части обрабатывают сообщения, получаемые или передаваемые родительским компонентом через его интерфейсы.
 
@@ -590,11 +590,11 @@ ms.locfileid: "72671256"
 
 |**Схема**|**Описание**|
 |-----------------|---------------------|
-|Карта кода|Визуализация организации и отношений в имеющемся коде.<br /><br /> Чтобы идентифицировать кандидаты в компоненты, создайте карту кода и сгруппируйте элементы по их функции в системе.<br /><br /> Пример<br /><br /> -   [сопоставлять зависимости в решениях](../modeling/map-dependencies-across-your-solutions.md)|
-|Схема последовательностей|Визуализация последовательности взаимодействий между компонентами или частями внутри компонента.<br /><br /> Чтобы создать из компонента линию жизни на схеме последовательностей, щелкните компонент правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML-схем последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-схем последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)|
-|Схема классов (UML)|Определение интерфейсов на предусмотренных или необходимых портах и классов, реализующих функциональные возможности компонентов.<br /><br /> Пример<br /><br /> -   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|
-|Схема слоев|Описание логической архитектуры системы относительно компонентов. Для контроля за соответствием кода дизайну требуется проверка слоев.<br /><br /> Пример<br /><br /> -   [создания схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)<br />-   [схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)<br />-   [проверки кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md)|
-|схема активности|Визуализация внутренней обработки, выполняемой компонентами в ответ на входящие сообщения.<br /><br /> Пример<br /><br /> -   [UML-схемы активности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|
+|Карта кода|Визуализация организации и отношений в имеющемся коде.<br /><br /> Чтобы идентифицировать кандидаты в компоненты, создайте карту кода и сгруппируйте элементы по их функции в системе.<br /><br /> Пример<br /><br /> -   [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)|
+|Схема последовательностей|Визуализация последовательности взаимодействий между компонентами или частями внутри компонента.<br /><br /> Чтобы создать из компонента линию жизни на схеме последовательностей, щелкните компонент правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)|
+|Схема классов (UML)|Определение интерфейсов на предусмотренных или необходимых портах и классов, реализующих функциональные возможности компонентов.<br /><br /> Пример<br /><br /> -   [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)<br />-   [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md)|
+|Схема слоев|Описание логической архитектуры системы относительно компонентов. Для контроля за соответствием кода дизайну требуется проверка слоев.<br /><br /> Пример<br /><br /> -   [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md)<br />-   [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)<br />-   [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md)|
+|схема активности|Визуализация внутренней обработки, выполняемой компонентами в ответ на входящие сообщения.<br /><br /> Пример<br /><br /> -   [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md)|
 
 ### <a name="VisualizeCode"></a> Визуализация существующего кода: карты кода
  Карты кода показывают текущую организацию и отношения в коде. Элементы отображаются на карте в виде *узлов* , а отношения — в виде *связей*. Карты кода помогают выполнять следующие виды задач:
@@ -609,19 +609,19 @@ ms.locfileid: "72671256"
 
   На следующей карте кода показаны зависимости между классом PaymentProcessing и выделенными частями системы компании Dinner Now.
 
-  ![Граф зависимостей для платежной системы компании Dinner Now](../modeling/media/dep-dnpayment.png "Dep_DNPayment")
+  ![Dependency graph for Dinner Now payment system](../modeling/media/dep-dnpayment.png "Dep_DNPayment")
 
   **Карта кода для платежной системы компании Dinner Now**
 
   Разработчик изучает карту, развернув класс PaymentProcessing и выбрав его члены для просмотра потенциально затрагиваемых областей.
 
-  ![Методы внутри PaymentProcessing и зависимости](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")
+  ![Methods inside PaymentProcessing and dependencies](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")
 
   **Методы внутри класса PaymentProcessing и их зависимости**
 
   Для изучения классов, методов и зависимостей платежной системы компании Lucerne создается карта кода, представленная ниже. Команда выясняет, что для взаимодействия с другими частями компании Dinner Now система компании Lucerne может потребовать доработки.
 
-  ![Граф зависимостей для платежной системы компании Lucerne](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")
+  ![Dependency graph for Lucerne payment system](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")
 
   **Карта кода для платежной системы компании Lucerne**
 
@@ -629,7 +629,7 @@ ms.locfileid: "72671256"
 
   После реорганизации кода команды создают новую карту кода для просмотра обновленной структуры и отношений.
 
-  ![Граф зависимостей с реорганизованным кодом](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")
+  ![Dependency graph with reorganized code](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")
 
   **Карта кода после реорганизации**
 
@@ -647,7 +647,7 @@ ms.locfileid: "72671256"
 
 - Чтобы было удобнее работать с картой кода, измените ее макет в соответствии с видами задач, которые нужно выполнить.
 
-     Например, для визуализации слоев в коде выберите древовидную структуру. См. раздел [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
+     Например, для визуализации слоев в коде выберите древовидную структуру. See [Browse and rearrange code maps](../modeling/browse-and-rearrange-code-maps.md).
 
 #### <a name="summary-strengths-of-code-maps"></a>Сводка. Преимущества карт кода
  Карты кода помогают в выполнении следующих задач:
@@ -662,19 +662,19 @@ ms.locfileid: "72671256"
 
 |**Схема**|**Что описывает**|
 |-----------------|-------------------|
-|Схема слоев|Логическая архитектура системы. Для контроля за соответствием кода дизайну требуется проверка слоев.<br /><br /> Для идентификации существующих или предполагаемых слоев создайте карту кода и сгруппируйте связанные друг с другом элементы. Инструкции по созданию схемы слоев см. в следующих разделах:<br /><br /> -   [создания схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)|
-|схема компонентов|Компоненты, их интерфейсы и отношения.<br /><br /> Для идентификации кандидатов в компоненты создайте карту кода и сгруппируйте элементы по их функции в системе.<br /><br /> Пример<br /><br /> -   [UML-схемы компонентов: справочные материалы](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md)|
-|Схема классов (UML)|Классы, их атрибуты, операции и отношения.<br /><br /> Для идентификации этих элементов создайте UML-схему классов, содержащую эти элементы.<br /><br /> Пример<br /><br /> -   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|
+|Схема слоев|Логическая архитектура системы. Для контроля за соответствием кода дизайну требуется проверка слоев.<br /><br /> Для идентификации существующих или предполагаемых слоев создайте карту кода и сгруппируйте связанные друг с другом элементы. Инструкции по созданию схемы слоев см. в следующих разделах:<br /><br /> -   [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)|
+|схема компонентов|Компоненты, их интерфейсы и отношения.<br /><br /> Для идентификации кандидатов в компоненты создайте карту кода и сгруппируйте элементы по их функции в системе.<br /><br /> Пример<br /><br /> -   [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md)|
+|Схема классов (UML)|Классы, их атрибуты, операции и отношения.<br /><br /> Для идентификации этих элементов создайте UML-схему классов, содержащую эти элементы.<br /><br /> Пример<br /><br /> -   [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)<br />-   [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md)|
 |Схема классов на основе кода|Существующие в коде классы для конкретного проекта.<br /><br /> Для визуализации и изменения существующего в коде класса используйте конструктор классов.<br /><br /> См. раздел [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
-### <a name="DescribeSequence"></a>Описание взаимодействий: схемы последовательностей
+### <a name="DescribeSequence"></a> Describe the Interactions: Sequence Diagrams
  Схемы последовательностей описывают последовательность взаимодействий между частями системы. Части могут быть любого масштаба, от отдельных объектов в программе до больших подсистем или внешних субъектов. Взаимодействия могут быть любого масштаба и типа, от отдельных сообщений до крупных транзакций и от вызовов функций до сообщений веб-службы.
 
  Чтобы помочь компаниям Lucerne и Dinner Now описать и обсудить этапы в варианте использования «Обработка платежа», была создана представленная ниже схема последовательностей на основе схемы компонентов. Линии жизни отражают компоненты веб-сайта компании Dinner Now и их части. Сообщения между линиями жизни соответствуют соединениям на схемах компонентов.
 
- ![Схема последовательностей для варианта использования "Обработка платежа"](../modeling/media/umlsequence-processpayment.png "UMLSequence_ProcessPayment")
+ ![Sequence diagram for Process Payment use case](../modeling/media/umlsequence-processpayment.png "UMLSequence_ProcessPayment")
 
- **Схема последовательностей для варианта использования "Обработка платежа"**
+ **Sequence diagram for the Process Payment use case**
 
  Схема последовательностей показывает, что, когда клиент создает заказ, веб-сайт компании Dinner Now вызывает метод ProcessOrder в экземпляре класса OrderProcessing. Затем класс OrderProcessing вызывает метод ProcessPayment класса PaymentProcessing. Это продолжается до тех пор, пока шлюз внешней системы обработки платежей не подтвердит платеж. Только после этого управление возвращается веб-сайту компании Dinner Now.
 
@@ -697,9 +697,9 @@ ms.locfileid: "72671256"
 
 - Горизонтальные *сообщения* представляют вызовы методов, сообщения веб-служб или другие сведения. *Случаи выполнения* — это вертикальные затемненные прямоугольники, отображаемые на линиях жизни и представляющие периоды, в течение которых принимающий объект обрабатывает вызовы.
 
-- Во время *синхронного* сообщения объект sender ожидает < \<return > > как в обычном вызове функции. В случае *асинхронного* сообщения отправитель может сразу же продолжить работу.
+- During a *synchronous* message, the sender object waits for control to <\<return>> as in a regular function call. В случае *асинхронного* сообщения отправитель может сразу же продолжить работу.
 
-- Для указания построения объектов по другим объектам используйте < \<create > > сообщения. Это сообщение должно отправляться объекту в первую очередь.
+- Use <\<create>> messages to indicate the construction of objects by other objects. Это сообщение должно отправляться объекту в первую очередь.
 
   Пример
 
@@ -718,16 +718,16 @@ ms.locfileid: "72671256"
 
 |**Схема**|**Описание**|
 |-----------------|---------------------|
-|Схема классов (UML)|Определение классов, представляемых линиями жизни, а также параметров и возвращаемых значений, используемых в сообщениях, которыми обмениваются линии жизни.<br /><br /> Чтобы создать класс из линии жизни, щелкните линию жизни правой кнопкой мыши и выберите пункт **Создать класс** или **Создать интерфейс**. Чтобы создать линию жизни из типа на схеме классов, щелкните тип правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)|
-|схема компонентов|Описание компонентов, представляемых линиями жизни, а также интерфейсов, предоставляющих и потребляющих поведение, представляемое сообщениями.<br /><br /> Чтобы создать линию жизни из схемы компонентов, щелкните компонент правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML-схемы компонентов: справочные материалы](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md)|
-|Схема вариантов использования|Сводка взаимодействий между пользователями и компонентами на схеме последовательностей в виде варианта использования, представляющего цель пользователя.<br /><br /> Пример<br /><br /> -   [UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)|
+|Схема классов (UML)|Определение классов, представляемых линиями жизни, а также параметров и возвращаемых значений, используемых в сообщениях, которыми обмениваются линии жизни.<br /><br /> Чтобы создать класс из линии жизни, щелкните линию жизни правой кнопкой мыши и выберите пункт **Создать класс** или **Создать интерфейс**. Чтобы создать линию жизни из типа на схеме классов, щелкните тип правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)<br />-   [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md)|
+|схема компонентов|Описание компонентов, представляемых линиями жизни, а также интерфейсов, предоставляющих и потребляющих поведение, представляемое сообщениями.<br /><br /> Чтобы создать линию жизни из схемы компонентов, щелкните компонент правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md)|
+|Схема вариантов использования|Сводка взаимодействий между пользователями и компонентами на схеме последовательностей в виде варианта использования, представляющего цель пользователя.<br /><br /> Пример<br /><br /> -   [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md)|
 
 ### <a name="DefineClasses"></a> Определение глоссария типов: схемы классов
  Схемы классов определяют участвующие в системе сущности, условия или концепции, а также их отношения друг с другом. Например, в процессе разработки эти схемы позволяют описать атрибуты и операции для каждого класса, независимо от языка или стиля его реализации.
 
  Чтобы помочь компании Lucerne описать и обсудить сущности, участвующие в варианте использования «Обработка платежа», была создана следующая схема классов.
 
- ![Сущности обработки платежей на схеме классов](../modeling/media/uml-payentities.png "UML_PayEntities")
+ ![Process Payment entities on the class diagram](../modeling/media/uml-payentities.png "UML_PayEntities")
 
  **Сущности обработки платежа на схеме классов**
 
@@ -735,7 +735,7 @@ ms.locfileid: "72671256"
 
  В процессе разработки компания Lucerne использует следующую схему классов для описания и обсуждения деталей каждого класса.
 
- ![Сведения о сущности обработки платежа на схеме классов](../modeling/media/uml-payment.png "UML_Payment")
+ ![Process Payment entity details on a class diagram](../modeling/media/uml-payment.png "UML_Payment")
 
  **Подробности обработки платежа на схеме классов**
 
@@ -789,9 +789,9 @@ ms.locfileid: "72671256"
 #### <a name="summary-strengths-of-class-diagrams"></a>Сводка. Преимущества схем классов
  Схемы классов помогают определить следующее:
 
-- общий глоссарий терминов, используемых при обсуждении потребностей пользователей и сущностей, участвующих в системе; См. статью [требования пользователей к модели](../modeling/model-user-requirements.md).
+- общий глоссарий терминов, используемых при обсуждении потребностей пользователей и сущностей, участвующих в системе; See [Model user requirements](../modeling/model-user-requirements.md).
 
-- типы, используемые частями системы (например, компонентами), независимо от их реализации; См. статью [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md).
+- типы, используемые частями системы (например, компонентами), независимо от их реализации; See [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
 
 - отношения между типами (такие как зависимости). Например, можно показать, что один тип может быть связан с несколькими экземплярами другого типа.
 
@@ -799,21 +799,21 @@ ms.locfileid: "72671256"
 
 |**Схема**|**Описание**|
 |-----------------|---------------------|
-|Схема вариантов использования|Определение типов, используемых для описания целей и шагов в вариантах использования.<br /><br /> Пример<br /><br /> -   [UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)|
-|схема активности|Определение типов данных, передаваемых через узлы объекта, закрепления ввода, закрепления вывода и узлы параметров действий.<br /><br /> Пример<br /><br /> -   [UML-схемы активности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md)|
-|схема компонентов|Описание компонентов, их интерфейсов и отношений. Класс может также описывать компонент полностью.<br /><br /> Пример<br /><br /> -   [UML-схемы компонентов: справочные материалы](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md)|
-|Схема слоев|Определение логической архитектуры системы относительно классов.<br /><br /> Для контроля за соответствием кода дизайну требуется проверка слоев.<br /><br /> Пример<br /><br /> -   [создания схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)<br />-   [схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)<br />-   [проверки кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md)|
-|Схема последовательностей|Определение типов линий жизни, а также операций, параметров и возвращаемых значений для всех сообщений, которые может принимать линия жизни.<br /><br /> Чтобы создать линию жизни из типа на схеме классов, щелкните тип правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML-схем последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-схем последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)|
-|Карта кода|Визуализация организации и отношений в имеющемся коде.<br /><br /> Для идентификации классов, их отношений и методов создайте карту кода, показывающую эти элементы.<br /><br /> Пример<br /><br /> -   [сопоставлять зависимости в решениях](../modeling/map-dependencies-across-your-solutions.md)|
+|Схема вариантов использования|Определение типов, используемых для описания целей и шагов в вариантах использования.<br /><br /> Пример<br /><br /> -   [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md)|
+|схема активности|Определение типов данных, передаваемых через узлы объекта, закрепления ввода, закрепления вывода и узлы параметров действий.<br /><br /> Пример<br /><br /> -   [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md)|
+|схема компонентов|Описание компонентов, их интерфейсов и отношений. Класс может также описывать компонент полностью.<br /><br /> Пример<br /><br /> -   [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md)|
+|Схема слоев|Определение логической архитектуры системы относительно классов.<br /><br /> Для контроля за соответствием кода дизайну требуется проверка слоев.<br /><br /> Пример<br /><br /> -   [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md)<br />-   [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)<br />-   [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md)|
+|Схема последовательностей|Определение типов линий жизни, а также операций, параметров и возвращаемых значений для всех сообщений, которые может принимать линия жизни.<br /><br /> Чтобы создать линию жизни из типа на схеме классов, щелкните тип правой кнопкой мыши и выберите пункт **Создать линию жизни**.<br /><br /> Пример<br /><br /> -   [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)|
+|Карта кода|Визуализация организации и отношений в имеющемся коде.<br /><br /> Для идентификации классов, их отношений и методов создайте карту кода, показывающую эти элементы.<br /><br /> Пример<br /><br /> -   [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="DescribeLayers"></a>Опишите логическую архитектуру: схемы слоев
+### <a name="DescribeLayers"></a> Describe the Logical Architecture: Layer Diagrams
  Схемы слоев описывают логическую архитектуру системы, упорядочивая артефакты в решении в абстрактные группы или *слои*. Артефактами могут быть различные сущности, такие как пространства имен, проекты, методы и т. п. Слои представляют и описывают роли или задачи, выполняемые артефактами в системе. Включив проверку слоев в операции построения и возврата, можно обеспечить соответствие кода его дизайну.
 
  Чтобы обеспечить соответствие кода дизайну, компании Dinner Now и Lucerne используют следующую схему слоев для проверки кода по мере его разработки.
 
- ![Схема слоев интегрированной системы платежей](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Layer diagram of integrated payment system](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")
 
- **Схема слоев для компании Dinner Now, интегрированная с компанией Lucerne**
+ **Layer diagram for Dinner Now integrated with Lucerne**
 
  Слои на этой схеме связаны с соответствующими артефактами решений компаний Dinner Now и Lucerne. Например, слой «Бизнес» связан с пространством имен DinnerNow.Business и его членами, в число которых теперь входит класс PaymentApprover. Слой «Доступ к ресурсам» связан с пространством имен DinnerNow.Data. Стрелки, или *зависимости*, указывают, что функциональность слоя «Доступ к ресурсам» может использоваться только слоем «Бизнес». По мере того как команды обновляют свой код, регулярно выполняется проверка слоев для выявления возникающих конфликтов и их быстрого устранения командами.
 
@@ -821,13 +821,13 @@ ms.locfileid: "72671256"
 
  На следующей карте кода показаны новые вызовы между системой компании Dinner Now и классом PaymentApprover.
 
- ![Обновленный граф зависимостей с интегрированной системой](../modeling/media/depgraph-intsystem.png "DepGraph_IntSystem")
+ ![Updated dependency graph with integrated system](../modeling/media/depgraph-intsystem.png "DepGraph_IntSystem")
 
  **Карта кода с обновленными вызовами методов**
 
  Убедившись в правильности работы системы, команда Dinner Now исключает код PaymentProcessing, переводя его в комментарии. Отчеты о проверке слоев не содержат ошибок, полученная карта кода показывает, что зависимостей от PaymentProcessing больше нет.
 
- ![Граф зависимостей без PaymentProcessing](../modeling/media/depgraph-nomore.png "DepGraph_NoMore")
+ ![Dependency graph without PaymentProcessing](../modeling/media/depgraph-nomore.png "DepGraph_NoMore")
 
  **Карта кода без класса PaymentProcessing**
 
@@ -875,14 +875,14 @@ ms.locfileid: "72671256"
 
 |**Схема**|**Описание**|
 |-----------------|---------------------|
-|Карта кода|Визуализация организации и отношений в имеющемся коде.<br /><br /> Чтобы создать слои, сформируйте карту кода, а затем сгруппируйте элементы на карте как потенциальные слои. Перетащите группы с карты на схему слоев.<br /><br /> Пример<br /><br /> -   [сопоставлять зависимости в решениях](../modeling/map-dependencies-across-your-solutions.md)<br />-   [просмотра и реорганизации карт кода](../modeling/browse-and-rearrange-code-maps.md)|
-|схема компонентов|Описание компонентов, их интерфейсов и отношений.<br /><br /> Чтобы визуализировать слои, создайте схему компонентов, описывающую функциональные возможности различных компонентов в системе.<br /><br /> Пример<br /><br /> -   [UML-схемы компонентов: справочные материалы](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md)|
+|Карта кода|Визуализация организации и отношений в имеющемся коде.<br /><br /> Чтобы создать слои, сформируйте карту кода, а затем сгруппируйте элементы на карте как потенциальные слои. Перетащите группы с карты на схему слоев.<br /><br /> Пример<br /><br /> -   [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Browse and rearrange code maps](../modeling/browse-and-rearrange-code-maps.md)|
+|схема компонентов|Описание компонентов, их интерфейсов и отношений.<br /><br /> Чтобы визуализировать слои, создайте схему компонентов, описывающую функциональные возможности различных компонентов в системе.<br /><br /> Пример<br /><br /> -   [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md)|
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>См. также раздел
- [Визуализация кода](../modeling/visualize-code.md) [Создание моделей для приложения](../modeling/create-models-for-your-app.md) [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md) [Использование моделей в разработке Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) . [Проверка системы](../modeling/validate-your-system-during-development.md) на предмет [расширения моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)
+ [Visualize code](../modeling/visualize-code.md) [Create models for your app](../modeling/create-models-for-your-app.md) [Use models in your development process](../modeling/use-models-in-your-development-process.md) [Use models in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Validate your system during development](../modeling/validate-your-system-during-development.md) [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md)

@@ -1,5 +1,5 @@
 ---
-title: Создание моделей для приложения | Документация Майкрософт
+title: Create models for your app | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da86a6cf2e561fdc7e642a76b84b4e604bec12d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651245"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300244"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Схемы моделирования помогают понять, уточнить и передать другим сведения о коде и пользовательских требованиях, которым должна удовлетворять ваша программная система. Например, для описания и передачи пользовательских требований можно использовать схемы UML вариантов использования, деятельности, классов и последовательностей. Для описания функциональных возможностей системы и передачи сведений о них можно использовать схемы UML компонентов, классов, деятельности и последовательностей.
 
- См. [видео Channel 9: улучшение архитектуры с помощью моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).
+ See [Channel 9 Video: Improve architecture through modeling](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  В этом выпуске можно создавать следующие UML-схемы:
 
@@ -61,7 +61,7 @@ ms.locfileid: "72651245"
 |[UML-схемы последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)|Последовательности взаимодействий между объектами, компонентами, системами или субъектами|
 |[UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)|Цели и задачи пользователей, поддерживаемые системой|
 
- Чтобы узнать, какие версии Visual Studio поддерживают каждый тип схемы, см. раздел [Поддержка версий для инструментов архитектуры и моделирования](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ To see which versions of Visual Studio support each type of diagram, see [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Для визуализации архитектуры системы или имеющегося кода создайте следующие схемы:
 
@@ -73,29 +73,29 @@ ms.locfileid: "72651245"
 
 ## <a name="common-tasks"></a>Общие задачи
 
-|**Главе**|**Задача**|
+|**Topic**|**Задача**|
 |---------------|--------------|
-|[Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Создание моделей** и Добавление схем.|
-|[Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)|Для изменения модели **Нарисуйте диаграммы** .|
-|[Определение пакетов и пространств имен](../modeling/define-packages-and-namespaces.md)|**Создание пакетов** для разделения модели на единицы, над которыми могут работать различные члены группы.|
-|[Создание кода на основе схем классов UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Создайте C# код на основе схем классов** , чтобы начать реализацию.|
-|[Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Настройка элементов модели** с помощью стереотипов для расширения стандартных элементов модели UML для конкретных целей.|
-|[Связывание элементов модели и рабочих элементов](../modeling/link-model-elements-and-work-items.md)|**Создавайте связи между элементами модели и рабочими элементами** , чтобы контролировать задачи, тестовые случаи, ошибки, требования, проблемы или другие виды работы, связанные с определенными частями модели.|
-|[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|**Сохраните модель и схемы** , чтобы предоставить общий доступ другим пользователям, включая тех, кто не использует [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
+|[Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Create models** and add diagrams.|
+|[Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)|**Draw diagrams** to edit the model.|
+|[Определение пакетов и пространств имен](../modeling/define-packages-and-namespaces.md)|**Create packages** to divide a model into units that different team members can work on.|
+|[Создание кода на основе схем классов UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Generate C# code from class diagrams** to start your implementation.|
+|[Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Customize model elements** using stereotypes, to extend the standard UML model elements for specific purposes.|
+|[Связывание элементов модели и рабочих элементов](../modeling/link-model-elements-and-work-items.md)|**Create links between model elements and work items** to help you track tasks, test cases, bugs, requirements, issues, or other kinds of work that are associated with specific parts of your model.|
+|[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|**Save your model and diagrams** so that you can share them with other users, including those who do not use [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
 
 ## <a name="related-tasks"></a>Связанные задачи
 
-|**Главе**|**Задача**|
+|**Topic**|**Задача**|
 |---------------|--------------|
 |[Визуализация кода](../modeling/visualize-code.md)|Создавайте карты кода и схемы слоев, чтобы лучше разобраться в незнакомом коде.|
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|
 |[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|Используйте модели, чтобы описать общую структуру и поведение системы, а также обеспечить ее соответствие потребностям пользователей.|
 |[Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)|Убедитесь, что программное обеспечение соответствует потребностям пользователей и общей архитектуре системы.|
-|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|
+|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Use models in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Упорядочивайте модели в рамках проекта большого или среднего размера.|
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|

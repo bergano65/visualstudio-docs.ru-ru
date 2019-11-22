@@ -1,5 +1,5 @@
 ---
-title: Создание пакета установщика Windows | Документация Майкрософт
+title: Authoring a Windows Installer Package | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 58529dabbb52ceb751c67be24beb1d21285a1de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682536"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301130"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Создание пакета установщика Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Диски с данными модели установщика Windows. Вместо того чтобы писать процедурный сценарий для копирования файлов и записи реестра, например, создаваемых строк и столбцов в таблицах базы данных, которые содержат данные файлов и реестра.  
+Data drives the Windows Installer model. Rather than writing a procedural script to copy files and write registry entries, for example, you author rows and columns in database tables that contain file and registry data.  
   
 ## <a name="database-entries"></a>Записи базы данных  
- Чтобы установить пакет VSPackage, пакет установщика Windows должен содержать записи базы данных для выполнения следующих задач:  
+ To install a VSPackage, a Windows Installer package must contain database entries to perform the following tasks:  
   
-- Поиск в системе обнаружения версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage поддерживает (с помощью установщика Windows таблицы, в которых AppSearch, CompLocator, RegLocator, DrLocator и подпись).  
+- Search the system to locate the versions of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] your VSPackage supports (using Windows Installer tables that include AppSearch, CompLocator, RegLocator, DrLocator, and Signature).  
   
-- Отменить установку, если не поддерживаемая версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] установлен или если другой системы пакета VSPackage не требования (с помощью таблицы LaunchCondition).  
+- Cancel the installation if no supported version of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] is installed or if another system requirement of the VSPackage is not met (using the LaunchCondition table).  
   
-- Установите пакет VSPackage и зависимые файлы (с помощью каталога, компонентов и таблицы файлов).  
+- Install the VSPackage and dependent files (using the directory, component, and file tables).  
   
-- Добавьте соответствующую информацию для VSPackage в реестр (с использованием таблицы реестра).  
+- Add appropriate information for the VSPackage to the registry (using the Registry table).  
   
-- Интеграция VSPackage в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] путем вызова **/Setup для devenv.exe** (с помощью таблицы CustomAction).  
+- Integrate the VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by calling **devenv.exe /setup** (using the CustomAction table).  
   
-  Дополнительные сведения см. в разделе [установщика Windows](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  For more information, see [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
-## <a name="setup-tools"></a>Средства установки и настройки  
- Широкий набор средств установки стороннего предоставляют среду разработки для пакетов установщика Windows. Ниже перечислены два бесплатных средства.  
+## <a name="setup-tools"></a>Setup Tools  
+ A variety of third-party setup tools provide a development environment for Windows Installer packages. Two free tools are the following:  
   
 - InstallShield Limited Edition  
   
-   Ограниченной версии InstallShield можно получить с помощью Visual Studio **новый проект** диалоговое окно. Разверните **другие типы проектов** , а затем выберите **установки и развертывания**. Выберите шаблон, InstallShield.  
+   You can get a limited version of InstallShield through the Visual Studio **New Project** dialog. Expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template.  
   
 - Набор инструментов XML установщика Windows  
   
-   Набор инструментов построения пакетов установщика Windows из исходных файлов XML. Набор инструментов — это проект открытым кодом Майкрософт. Вы можете скачать исходный код и исполняемые файлы из [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
+   The Toolset builds Windows Installer packages from XML source files. The Toolset is a Microsoft open-source project. You can download the source code and executables from [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/).  
   
-  Для коммерческих продуктов, которые интегрируют в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], см. в разделе [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/).  
+  For commercial products that integrate into [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by using the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], see [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ba7566e4a6bdffc5e7075bc138832097415a7129
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a816981b41dd8ca2a2119bbd99c776c6a7e2436
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667100"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296878"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "72667100"
 > В выпусках Visual Studio Express нельзя задать целевую платформу в диалоговом окне **Новый проект**.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Разрешение системных ссылок и пользовательских ссылок на сборки
- Чтобы нацелиться на определенную версию .NET Framework, нужно сначала установить подходящие ссылки на сборки. Ссылки на сборки для .NET Framework версий 2.0, 3.0 и 3.5 включены в пакет обновления 1 (SP1) для .NET Framework 3.5, который можно скачать на веб-сайте [Центра загрузки Майкрософт, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). Ссылки на сборки для клиентского профиля .NET Framework 3.5, .NET Framework 4, клиентского профиля .NET Framework 4 и Silverlight также доступны на веб-сайте [скачиваемых материалов для Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).
+ Чтобы нацелиться на определенную версию .NET Framework, нужно сначала установить подходящие ссылки на сборки. Ссылки на сборки для .NET Framework версий 2.0, 3.0 и 3.5 включены в пакет обновления 1 (SP1) для .NET Framework 3.5, который можно скачать на веб-сайте [Центра загрузки Майкрософт, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). Ссылки на сборки для клиентского профиля .NET Framework 3.5, .NET Framework 4, клиентского профиля .NET Framework 4 и Silverlight также доступны на веб-сайте [скачиваемых материалов для Visual Studio](https://go.microsoft.com/fwlink/?LinkId=179687).
 
 > [!NOTE]
 > Клиентский профиль .NET Framework — это подмножество компонентов .NET Framework, предоставляющее ограниченный набор библиотек и функций. Дополнительные сведения о клиентских профилях см. в разделе [Клиентский профиль .NET Framework](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).

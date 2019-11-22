@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Перенос проектов расширяемости в Visual Studio 2015 | Документация Майкрософт
+title: 'How to: Migrate Extensibility Projects to Visual Studio 2015 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,48 +10,48 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 41bf80c8ae00aa22666750de7b4b23df981c8465
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435925"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295550"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Практическое руководство. Перенос проектов расширяемости в Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>How to: Migrate Extensibility Projects to Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вот как можно обновить расширение.  
+Here’s how to upgrade your extension.  
   
 > [!IMPORTANT]
-> Если вы планируете сохранить версию решения расширения для более ранней версии Visual Studio, не забудьте создать копию перед его обновлением. Сложно, чтобы вернуться в предыдущее состояние обновленной версии.  
+> If you intend to maintain a version of your extension solution for an earlier version of Visual Studio, be sure to make a copy before you upgrade it. It may be difficult to return the upgraded version to its previous state.  
   
-#### <a name="to-upgrade-an-extensibility-solution"></a>Обновление решений расширяемости  
+#### <a name="to-upgrade-an-extensibility-solution"></a>To upgrade an extensibility solution  
   
-1. С помощью копии, необходимо обновить, откройте его в новой версии. Пользователю будет рекомендовано обновления является необратимой.  
+1. Using the copy you want to upgrade, open it in the new version. You will be advised that the upgrade is not reversible.  
   
-2. После завершения обновления, измените путь к этой внешней программе до новой версии devenv.exe. Щелкните правой кнопкой мыши узел проекта в **обозревателе решений**, затем выберите **свойства**. В **Отладка** вкладке, найдите текстовое поле с **запуск внешней программы** и измените путь к devenv.exe в Visual Studio 2015 путь, который должен выглядеть следующим образом:  
+2. After the upgrade completes, change the path of the external program to the new version of devenv.exe. Right-click the project node in the **Solution Explorer**, then choose **Properties**. In the **Debug** tab, find the textbox by **Start external program** and change the path of devenv.exe to the Visual Studio 2015 path, which should look something like this:  
   
      **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
-3. Добавьте ссылку на Microsoft.VisualStudio.Shell.14.0.dll. (Щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите **добавьте / Reference**. Выберите **расширения** вкладку и проверьте **Microsoft.VisualStudio.Shell.14.0**.)  
+3. Add a reference to Microsoft.VisualStudio.Shell.14.0.dll. (Right-click the project node in the **Solution Explorer** and then choose **Add / Reference**. Select the **Extensions** tab and then check **Microsoft.VisualStudio.Shell.14.0**.)  
   
-4. Постройте решение. Файлы сборки развертываются для:  
+4. Постройте решение. The built files are deployed to:  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< создавать имя\>\\< имя проекта\>\\< версия проекта\>\\**.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\<Author Name\>\\<Project Name\>\\<Project Version\>\\** .  
   
-#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Чтобы обновить проект расширяемости NuGet VS SDK ссылаться на сборки  
+#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>To update an extensibility project to NuGet VS SDK reference assemblies  
   
-1. Определите VS SDK ссылочные сборки, необходимые для проекта.  В **обозревателе решений**, разверните узел проекта **ссылки** узел и ознакомьтесь со списком ссылок проекта.  Ссылки на сборки VS SDK будет иметь префикс **Microsoft.VisualStudio** в имени (например: Microsoft.VisualStudio.Shell.14.0).  
+1. Determine the VS SDK reference assemblies your project needs.  In **Solution Explorer**, expand the project’s **References** node and review the list of project references.  VS SDK references assemblies will have the prefix **Microsoft.VisualStudio** in the name (for example: Microsoft.VisualStudio.Shell.14.0).  
   
-2. Удалить ссылочные сборки VS SDK из проекта, выбрав их, щелкните правой кнопкой мыши и **удалить**.  
+2. Remove the VS SDK reference assemblies from the project by selecting them, right click and **Remove**.  
   
-3. Добавьте версии NuGet ссылочных сборок пакета SDK для VS.  Оставаясь в **ссылки на обозревателе решения** открытым узлом **управление пакетами NuGet...** диалоговое окно.  Если вы хотите узнать больше об этом диалоговом окне, см. в разделе [управление пакетами NuGet с помощью диалогового окна](http://docs.nuget.org/Consume/Package-Manager-Dialog). Ссылочные сборки VS SDK публикуются на [nuget.org](http://www.nuget.org) по [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. Add the NuGet versions of the VS SDK reference assemblies.  While still in the **Solution Explorer References** node, open the **Manage NuGet Packages…** dialog.  If you want to learn more about this dialog, see [Manage NuGet Packages Using the Dialog](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio). The VS SDK reference assemblies are published on [nuget.org](https://www.nuget.org/) by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
   
-4. С помощью **nuget.org** как вашей **источник пакета**, найдите имя пакета NuGet, которое совпадает с требуемой базовой сборки (например: Microsoft.VisualStudio.Shell.14.0) и установите его в проект.  NuGet может добавить несколько ссылочных сборок для удовлетворения требований начальной его зависимости.  
+4. Using **nuget.org** as your **Package Source**, search for the NuGet package name which matches the desired reference assembly (for example: Microsoft.VisualStudio.Shell.14.0) and install it in your project.  NuGet may add multiple reference assemblies in order to satisfy the initial assembly’s dependencies.  
   
-     При желании можно добавить все ссылочные сборки VS SDK за один раз, установив пакет SDK для VS [метапакет](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
+     If you prefer, you can add all the VS SDK reference assemblies at once by installing the VS SDK [Meta package](https://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
   
-5. Вы также можете использовать NuGet версии средств сборки пакета SDK для VS. Этот пакет NuGet — это [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) и после добавления проекта, содержащих необходимые средства и файлы, чтобы дать вам возможность создавать расширения проекта на компьютере не установлен пакет SDK для VS.  
+5. You can also switch to using the NuGet version of the VS SDK build tools. This NuGet package is [Microsoft.VSSDK.BuildTools](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) and once added to your project will include the necessary tools and target files to let you build your extensibility project on a computer without the VS SDK installed.  
   
 > [!NOTE]
-> Это не требуется обновить существующие проекты расширения среды для использования NuGet ссылочных сборок и средства.  Они могут продолжать построение с помощью ссылочных сборок и средств, устанавливаемых с VS SDK.
+> It is not required that you update your existing extensibility projects to use NuGet reference assemblies and tools.  They can continue to build using reference assemblies and tools installed with the VS SDK.

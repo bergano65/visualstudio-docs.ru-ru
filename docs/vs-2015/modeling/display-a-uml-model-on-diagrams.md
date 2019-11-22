@@ -1,5 +1,5 @@
 ---
-title: Отображение UML-модели на схемах | Документация Майкрософт
+title: Display a UML model on diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c8365f045618b92b4b34935bf5024c2ff781650
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669744"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296012"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Отображение модели UML на схемах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,37 +24,37 @@ ms.locfileid: "72669744"
 В программном коде для расширения Visual Studio можно управлять отображением элементов модели на схемах. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 В этом разделе.
-- [Отображение элемента на схеме](#Display)
+- [To display an element on a diagram](#Display)
 
-- [Доступ к фигурам, представляющим элемент](#GetShapes)
+- [Accessing the shapes that represent an element](#GetShapes)
 
-- [Перемещение и изменение размеров фигур](#Moving)
+- [Moving and resizing shapes](#Moving)
 
-- [Удаление фигуры из диаграммы](#Removing)
+- [To remove a shape from a diagram](#Removing)
 
-- [Открытие и создание диаграмм](#Opening)
+- [Opening and creating diagrams](#Opening)
 
-- [Пример: команда для выровняйте фигур](#AlignCommand)
+- [Example: Command for Aligning Shapes](#AlignCommand)
 
-## <a name="Display"></a>Отображение элемента на схеме
+## <a name="Display"></a> To display an element on a diagram
  При создании элемента, такого как вариант использования или действие, пользователь может видеть его в обозревателе моделей UML, однако он не всегда автоматически отображается на схеме. В некоторых случаях для его отображения необходимо написать код. В следующей таблице приведены сводные сведения о доступных альтернативах.
 
 |Тип элемента|Пример|Чтобы отобразить это, ваш код должен соответствовать следующим требованиям|
 |---------------------|-----------------|-------------------------------------|
-|Классификатор|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Создайте связанные фигуры на заданных схемах. Можно создать любое количество фигур для каждого классификатора.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Задайте для `parentShape` значение `null` для фигуры на верхнем уровне схемы.<br /><br /> Отображение одной фигуры внутри другой:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Примечание.** если вы выполняете отображение внутри транзакции **илинкедундо** , метод иногда не возвращает `IShape`. Однако фигура создается правильно и доступна посредством `IElement.Shapes().`|
+|Классификатор|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Создайте связанные фигуры на заданных схемах. Можно создать любое количество фигур для каждого классификатора.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Задайте для `parentShape` значение `null` для фигуры на верхнем уровне схемы.<br /><br /> Отображение одной фигуры внутри другой:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Note:**  If you perform Display inside an **ILinkedUndo** transaction, the method sometimes returns no `IShape`. Однако фигура создается правильно и доступна посредством `IElement.Shapes().`|
 |Дочерний элемент классификатора|Атрибут, операция,<br /><br /> Часть, порт|Выполняется автоматически — код не требуется.<br /><br /> Он отображается в качестве части родительского элемента.|
 |Поведение|Взаимодействие (последовательность),<br /><br /> Действие|Привяжите поведение к соответствующей схеме.<br /><br /> Каждое поведение одновременно можно привязать только к одной.<br /><br /> Пример:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Дочерний элемент поведения|Жизненные циклы, сообщения, действия, узлы объектов|Выполняется автоматически — код не требуется.<br /><br /> Отображается, если родительский объект привязан к схеме.|
 |Relationship|Ассоциация, обобщение, поток, зависимость|Выполняется автоматически — код не требуется.<br /><br /> Он отображается на каждой схеме, на которой показаны оба конца.|
 
-## <a name="GetShapes"></a>Доступ к фигурам, представляющим элемент
+## <a name="GetShapes"></a> Accessing the shapes that represent an element
  Фигура, представляющая элемент, принадлежит к следующим типам:
 
  `IShape`
 
  `IShape<` *ElementType* `>`
 
- где *ElementType* — это тип элемента модели, например `IClass` или `IUseCase`.
+ where *ElementType* is a type of the model element such as `IClass` or `IUseCase`.
 
 |||
 |-|-|
@@ -68,16 +68,16 @@ ms.locfileid: "72669744"
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Приведите универсальный `IShape` к строго типизированному `IShape<IElement>`.|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Приведите фигуру из одного параметризованного типа фигуры в другой.|
 
-## <a name="Moving"></a>Перемещение и изменение размеров фигур
+## <a name="Moving"></a> Moving and resizing shapes
 
 |||
 |-|-|
 |`anIShape.Move(x, y, [width], [height])`|Переместите фигуру или измените ее размер.|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|Активируйте окно и прокрутите схему, чтобы все заданные фигуры были видны. Все фигуры должны находиться на схеме. Если `zoomToFit` имеет значение true, схема будет при необходимости масштабироваться, чтобы обеспечить отображение всех фигур.|
 
- Пример см. в разделе [Определение команды выравнивания](#AlignCommand).
+ For an example, see [Defining an Alignment Command](#AlignCommand).
 
-## <a name="Removing"></a>Удаление фигуры из диаграммы
+## <a name="Removing"></a> To remove a shape from a diagram
  Фигуры некоторых типов элементов можно удалить без удаления самого элемента.
 
 |Элемент модели|Удаление фигуры|
@@ -86,7 +86,7 @@ ms.locfileid: "72669744"
 |Поведение: взаимодействие или действие|Можно удалить схему из проекта. Используйте `IDiagram.FileName` для получения пути.<br /><br /> Это не приводит к удалению поведения из модели.|
 |Любая другая фигура|вы не можете явно удалить другие фигуры со схемы. Фигура автоматически исчезнет, если элемент удаляется из модели или если родительская фигура удаляется со схемы.|
 
-## <a name="Opening"></a>Открытие и создание диаграмм
+## <a name="Opening"></a> Opening and creating diagrams
 
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Доступ к текущей схеме пользователя из расширения команды или жеста
  Объявите это импортированное свойство в своем классе:
@@ -104,7 +104,7 @@ ms.locfileid: "72669744"
 > [!NOTE]
 > Экземпляр `IDiagram` (и его подтипы, такие как `IClassDiagram`) является действительным только в рамках обрабатываемой команды. Не рекомендуется сохранять объект `IDiagram` в переменной, которая сохраняется при возвращении управления пользователю.
 
- Дополнительные сведения см. [в разделе Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ For more information, see [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ### <a name="to-obtain-a-list-of-open-diagrams"></a>Получение списка открытых схем
  Список схем, открытых в проекте в настоящий момент:
@@ -162,10 +162,10 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;
 ```
 
-## <a name="AlignCommand"></a>Пример: команда для выровняйте фигур
+## <a name="AlignCommand"></a> Example: Command for Aligning Shapes
  Следующий код реализует команду меню, аккуратно выравнивающую фигуры. Пользователю следует сначала расположить две или более фигур, приблизительно выровняв их по вертикали или по горизонтали. Затем можно использовать команду выравнивания для выравнивания их центров.
 
- Чтобы сделать команду доступной, добавьте этот код в проект команд меню, а затем разверните полученное расширение для пользователей. Дополнительные сведения см. [в разделе Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ Чтобы сделать команду доступной, добавьте этот код в проект команд меню, а затем разверните полученное расширение для пользователей. For more information, see [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ```csharp
 using System;
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>См. также раздел
- [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Навигация по модели UML](../modeling/navigate-the-uml-model.md) [Образец: Выровняйте фигуры в диаграмме команда меню](http://go.microsoft.com/fwlink/?LinkId=213809) [: создание элементов, фигур и стереотипов](http://go.microsoft.com/fwlink/?LinkId=213811)
+ [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Navigate the UML model](../modeling/navigate-the-uml-model.md) [Sample: Align Shapes on a Diagram menu command](https://go.microsoft.com/fwlink/?LinkId=213809) [Sample: Creating Elements, Shapes and Stereotypes](https://go.microsoft.com/fwlink/?LinkId=213811)

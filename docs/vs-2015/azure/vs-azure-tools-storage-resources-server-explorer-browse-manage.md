@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624155"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291231"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Просмотр и администрирование ресурсов хранилища с помощью обозревателя сервера
 
@@ -122,7 +122,7 @@ BLOB-объект откроется в редакторе по умолчани
 
 Чтобы отправить большие двоичные объекты, нажмите кнопку **Отправить BLOB-объект**, когда контейнер открыт при просмотре представления контейнера больших двоичных объектов.
 
-Можно выбрать один или несколько файлов для отправки и отправлять файлы любого типа. В **журнале действий Azure** отображается ход отправки. Дополнительные сведения о работе с данными больших двоичных объектов см. в статье [Приступая к работе с хранилищем BLOB-объектов Azure с помощью .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Можно выбрать один или несколько файлов для отправки и отправлять файлы любого типа. В **журнале действий Azure** отображается ход отправки. Дополнительные сведения о работе с данными больших двоичных объектов см. в статье [Приступая к работе с хранилищем BLOB-объектов Azure с помощью .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Просмотр журналов, перенесенных в BLOB-объекты
 
@@ -157,7 +157,7 @@ BLOB-объект откроется в редакторе по умолчани
 
 ![Просмотр очереди](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Дополнительные сведения об очередях служб хранилища см. в статье [Приступая к работе с хранилищем очередей Azure с помощью .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Сведения о веб-службе для очередей служб хранилища см. в статье [Queue Service Concepts](http://go.microsoft.com/fwlink/?LinkId=264788) (Основные понятия службы очередей). Сведения об отправке сообщения в очередь служб хранилища с помощью Visual Studio см. в статье об [отправке сообщений в очередь служб хранилища](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Дополнительные сведения об очередях служб хранилища см. в статье [Приступая к работе с хранилищем очередей Azure с помощью .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Сведения о веб-службе для очередей служб хранилища см. в статье [Queue Service Concepts](https://go.microsoft.com/fwlink/?LinkId=264788) (Основные понятия службы очередей). Сведения об отправке сообщения в очередь служб хранилища с помощью Visual Studio см. в статье об [отправке сообщений в очередь служб хранилища](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Очереди служб хранилища отличаются от очередей служебной шины Azure. Дополнительные сведения об очередях служебной шины см. в статье [Очереди, разделы и подписки служебной шины](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -185,7 +185,7 @@ BLOB-объект откроется в редакторе по умолчани
 
 В конструкторе таблиц откройте контекстное меню для сущности (одна строка) или свойства (одна ячейка) и выберите пункт **Изменить**.
 
-![Добавление или изменение сущности таблицы](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Сущности в одной таблице не обязательно должны иметь одинаковый набор свойств (столбцов). При просмотре и изменении данных таблицы не забывайте о следующих ограничениях:
 
@@ -227,7 +227,7 @@ BLOB-объект откроется в редакторе по умолчани
 
 ## <a name="refresh-storage-data"></a>Обновление данных хранилища
 
-При подключении обозревателя сервера к учетной записи хранения или получение данных из нее эта операция может длиться около минуты. Если обозревателю сервера не удается подключиться, время ожидания операции может истечь. Во время получения данных можно продолжать работу в других областях Visual Studio. Чтобы отменить операцию, которая выполняется слишком долго, нажмите кнопку **Остановить обновление** на панели инструментов обозревателя сервера.
+При подключении обозревателя сервера к учетной записи хранения или получение данных из нее эта операция может длиться около минуты. If Server Explorer can’t connect, the operation might time out. While data is retrieved, you can continue to work in other parts of Visual Studio. Чтобы отменить операцию, которая выполняется слишком долго, нажмите кнопку **Остановить обновление** на панели инструментов обозревателя сервера.
 
 ### <a name="to-refresh-blob-container-data"></a>Обновление данных контейнера BLOB-объектов
 
@@ -295,4 +295,4 @@ BLOB-объект откроется в редакторе по умолчани
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Дополнительные сведения об использовании служб хранилища Azure, см. в разделе [введение в хранилище Azure](/azure/storage/common/storage-introduction).
+To learn more about how to use Azure storage services, see [Introduction to Azure Storage](/azure/storage/common/storage-introduction).

@@ -1,5 +1,5 @@
 ---
-title: 'CA2001: Избегайте вызова проблемных методов | Документация Майкрософт'
+title: 'CA2001: Avoid calling problematic methods | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 17f3c283f0a837873c5e01716ec2c412b1e67f16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 287f83d23db75206183fb1ee1461e461a05a6182
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667733"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298485"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: избегайте вызовов проблемных методов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ ms.locfileid: "72667733"
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
-|Категория|Microsoft. надежность|
-|Критическое изменение|Не критическое|
+|Категория|Microsoft.Reliability|
+|Критическое изменение|Non-breaking|
 
 ## <a name="cause"></a>Причина
  Член вызывает потенциально опасный или проблемный метод.
 
 ## <a name="rule-description"></a>Описание правила
- Старайтесь не делать ненужные и потенциально опасные вызовы методов.
+ Avoid making unnecessary and potentially dangerous method calls.
 
- Нарушение этого правила возникает, когда член вызывает один из следующих методов.
+ A violation of this rule occurs when a member calls one of the following methods.
 
 |Метод|Описание|
 |------------|-----------------|
-|<xref:System.GC.Collect%2A?displayProperty=fullName>|Вызов GC. Получение может существенно повлиять на производительность приложения и редко бывает необходимым. Дополнительные сведения см. в записи блога "Mariani's" для [tidbits производительности](http://go.microsoft.com/fwlink/?LinkId=169256) на сайте MSDN.|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend и Thread. Resume устарели из-за непредсказуемого поведения.  Используйте другие классы в пространстве имен <xref:System.Threading>, такие как <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex> и <xref:System.Threading.Semaphore>, для синхронизации потоков или защиты ресурсов.|
-|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Метод DangerousGetHandle создает угрозу безопасности, поскольку он может возвращать недопустимый маркер. Дополнительные сведения об безопасном использовании метода DangerousGetHandle см. в описании методов <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> и <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A>.|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Эти методы могут загружать сборки из непредвиденных расположений. Например, дополнительные сведения о методах, которые загружают сборки, см. в блоге о Сузаннеах .NET CLR Notes в записях блога [LoadFile vs. LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450) и [выборе контекста привязки](http://go.microsoft.com/fwlink/?LinkId=164451) на веб-сайте MSDN.|
-|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (ole32)|К моменту, когда пользовательский код начинает выполняться в управляемом процессе, он слишком поздно для надежного вызова метода CoSetProxyBlanket. Среда CLR принимает действия инициализации, которые могут препятствовать выполнению P/Invoke пользователями.<br /><br /> Если необходимо вызвать метод CoSetProxyBlanket для управляемого приложения, рекомендуется запустить процесс с помощью исполняемого файла машинного кода (C++), вызвать CoSetProxyBlanket в машинном коде, а затем запустить приложение управляемого кода в процессе. (Не забудьте указать номер версии среды выполнения.)|
+|<xref:System.GC.Collect%2A?displayProperty=fullName>|Calling GC.Collect can significantly affect application performance and is rarely necessary. For more information, see the [Rico Mariani's Performance Tidbits](https://go.microsoft.com/fwlink/?LinkId=169256) blog entry on MSDN.|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend and Thread.Resume have been deprecated because of their unpredictable behavior.  Use other classes in the <xref:System.Threading> namespace, such as <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, and <xref:System.Threading.Semaphore> to synchronize threads or protect resources.|
+|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|The DangerousGetHandle method poses a security risk because it can return a handle that is not valid. See the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> and the <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> methods for more information about how to use the DangerousGetHandle method safely.|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|These methods can load assemblies from unexpected locations. For example, see Suzanne Cook's .NET CLR Notes blog posts [LoadFile vs. LoadFrom](https://go.microsoft.com/fwlink/?LinkId=164450) and [Choosing a Binding Context](https://go.microsoft.com/fwlink/?LinkId=164451) on the MSDN Web site for information about methods that load assemblies.|
+|[CoSetProxyBlanket](https://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](https://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|By the time the user code starts executing in a managed process, it is too late to reliably call CoSetProxyBlanket. The common language runtime (CLR) takes initialization actions that may prevent the users P/Invoke from succeeding.<br /><br /> If you do have to call CoSetProxyBlanket for a managed application, we recommend that you start the process by using a native code (C++) executable, call CoSetProxyBlanket in the native code, and then start your managed code application in process. (Be sure to specify a runtime version number.)|
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите или замените вызов опасного или проблемного метода.
+ To fix a violation of this rule, remove or replace the call to the dangerous or problematic method.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Сообщения из этого правила следует подавлять только в том случае, если не существует альтернативы проблемному методу.
+ You should suppress messages from this rule only when no alternatives to the problematic method are available.
 
 ## <a name="see-also"></a>См. также раздел
  [Предупреждения надежности](../code-quality/reliability-warnings.md)

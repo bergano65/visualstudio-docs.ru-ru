@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aaa522efe5cb69dd9334a2cc3db7fc2846b1af7a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2c1b09d88de938ee4bc93b69b50d53c0d39006f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646897"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300008"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "72646897"
 
   Среда IDE содержит мощное средство IntelliSense, которое помогает в написании кода. По мере написания кода, среда IDE открывает поле, в котором содержатся предлагаемые завершения для частей вводимых слов. Она пытается определить, что требуется сделать далее и автоматически переходит к последнему выбранному элементу из списка. Для перемещения по списку можно использовать клавиши со стрелками ВВЕРХ или ВНИЗ или можно продолжать вводить буквы, чтобы сузить выбор. Когда появится необходимый элемент, для его выбора нажмите клавишу TAB. Либо можно проигнорировать предложение, если оно не требуется.
 
-  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) или [учебном курсе 1. Создание средства просмотра C# изображений в видео 4](http://go.microsoft.com/fwlink/?LinkId=205203). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](https://go.microsoft.com/fwlink/?LinkId=205215) or [Tutorial 1: Create a Picture Viewer in C# - Video 4](https://go.microsoft.com/fwlink/?LinkId=205203). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Написание кода для обработчика событий кнопки "Показать рисунок"
 
 1. Перейдите к конструктору Windows Forms и дважды щелкните кнопку **Показать рисунок**. Среда интегрированной разработки немедленно переключается на конструктор кода и перемещает курсор внутрь метода `showButton_Click()`, который был добавлен ранее.
 
-2. Введите `i` в пустой строке между двумя фигурными скобками { } (В Visual Basic введите пустую строку между частными подразделами... и End подсистема.) Откроется окно **IntelliSense** , как показано на следующем рисунке.
+2. Введите `i` в пустой строке между двумя фигурными скобками { } (In Visual Basic, type on the empty line between Private Sub… and End Sub.) An **IntelliSense** window opens, as shown in the following picture.
 
-     ![IntelliSense с помощью Visual&#35; C Code](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense с C# визуальным кодом
+     ![IntelliSense with Visual C&#35; code](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense with Visual C# code
 
-3. Окно **IntelliSense** должно выделить слово **if** (Если нет, введите строчные `f`, и это будет.) Обратите внимание, что рядом с окном **IntelliSense** отображается небольшое поле *подсказки* с описанием, **фрагментом кода для оператора if**. (В Visual Basic подсказка также указывает, что это фрагмент кода, но с слегка отличающимися словами). Вы хотите использовать этот фрагмент, поэтому нажмите клавишу TAB, **чтобы вставить его** в код. Затем снова нажмите клавишу TAB, чтобы использовать фрагмент **if**. (Если вы выберете что-то другое и окно **IntelliSense** исчезнет, нажмите клавишу BACKSPACE, чтобы удалить **i**, и повторно введите эту букву, чтобы снова открыть окно **IntelliSense**).
+3. Окно **IntelliSense** должно выделить слово **if** (If not, enter a lowercase `f`, and it will.) Notice how a little *tooltip* box next to the **IntelliSense** window appears with the description, **Code snippet for if statement**. (In Visual Basic, the tooltip also states that this is a snippet, but with slightly different wording.) You want to use that snippet, so choose the TAB key to insert **if** into your code. Затем снова нажмите клавишу TAB, чтобы использовать фрагмент **if**. (Если вы выберете что-то другое и окно **IntelliSense** исчезнет, нажмите клавишу BACKSPACE, чтобы удалить **i**, и повторно введите эту букву, чтобы снова открыть окно **IntelliSense**).
 
      ![Код Visual C#](../ide/media/express-highlighttrue.png "Express_HighlightTrue") Код Visual C#
 
@@ -49,16 +49,16 @@ ms.locfileid: "72646897"
 
          Дополнительные сведения о `OpenFileDialog` см. в разделе [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
 
-    3. Введите точку (`.`) (многие программисты вызывают эту точку.) Так как вы ввели точку сразу после **openFileDialog1**, откроется окно **IntelliSense** , которое заполняется всеми свойствами и методами компонента **OpenFileDialog** . Это те же самые свойства, которые отображаются в окне **Свойства** при выборе этого окна в конструкторе Windows Forms. Также можно выбрать методы, которые дают указания компонентам на выполнение определенных действий (например, открыть диалоговое окно).
+    3. Type a period (`.`) (Many programmers call this a dot.) Because you typed a dot right after **openFileDialog1**, an **IntelliSense** window opens, filled in with all of the **OpenFileDialog** component's properties and methods. Это те же самые свойства, которые отображаются в окне **Свойства** при выборе этого окна в конструкторе Windows Forms. Также можно выбрать методы, которые дают указания компонентам на выполнение определенных действий (например, открыть диалоговое окно).
 
         > [!NOTE]
         > Окно **IntelliSense** может показывать свойства и методы. Чтобы определить, какие элементы отображаются, проверьте значок слева от каждого элемента в окне **IntelliSense**. Рядом с каждым методом представлен значок кубика, рядом с каждым свойством представлен значок гаечного ключа. Также рядом с каждым событием представлен значок с изображением молнии. Ниже представлены эти значки.
 
-         ![Значок метода](../ide/media/express-iconmethod.png "Express_IconMethod") Значок метода
+         ![Method icon](../ide/media/express-iconmethod.png "Express_IconMethod") Method icon
 
-         ![Значок Свойства](../ide/media/express-iconproperty.png "Express_IconProperty") Значок Свойства
+         ![Property icon](../ide/media/express-iconproperty.png "Express_IconProperty") Property icon
 
-         ![Значок события](../ide/media/express-iconevent.png "Express_IconEvent") Значок события
+         ![Event icon](../ide/media/express-iconevent.png "Express_IconEvent") Event icon
 
     4. Начните набирать `ShowDialog` (для IntelliSense регистр значения не имеет). Метод `ShowDialog()` будет открывать диалоговое окно **Открыть файл**. После выделения **ShowDialog** в окне нажмите клавишу TAB. Также можно выделить "ShowDialog" и нажать клавишу F1 для получения соответствующей справки.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf06151265c1647de29725917624c5984577bf6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658600"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296862"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Пошаговое руководство. Создание простого приложения с помощью Visual C# или Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ ms.locfileid: "72658600"
  [Отладка и тестирование приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
-> Это пошаговое руководство основано на выпуске Visual Studio Professional, который содержит шаблон приложений WPF, на базе которого вы сможете создать проект для данного руководства. Этот шаблон также входит в состав Visual Studio Express для Windows Desktop, но отсутствует в Visual Studio Express для Windows и Visual Studio Express для Web. Вводные сведения об использовании Visual Studio Express для Windows см. в [центре разработки приложений для Магазина Windows](https://msdn.microsoft.com/windows/apps/br229519). Вводные сведения об использовании Visual Studio Express для Web см. в разделе [Get Started with ASP.NET](http://www.asp.net/get-started)(Начало работы с ASP.NET). Кроме того, ваш выпуск Visual Studio и используемые параметры определяют имена и расположения некоторых элементов пользовательского интерфейса. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Это пошаговое руководство основано на выпуске Visual Studio Professional, который содержит шаблон приложений WPF, на базе которого вы сможете создать проект для данного руководства. Этот шаблон также входит в состав Visual Studio Express для Windows Desktop, но отсутствует в Visual Studio Express для Windows и Visual Studio Express для Web. Вводные сведения об использовании Visual Studio Express для Windows см. в [центре разработки приложений для Магазина Windows](https://msdn.microsoft.com/windows/apps/br229519). Вводные сведения об использовании Visual Studio Express для Web см. в разделе [Get Started with ASP.NET](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro)(Начало работы с ASP.NET). Кроме того, ваш выпуск Visual Studio и используемые параметры определяют имена и расположения некоторых элементов пользовательского интерфейса. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="BKMK_ConfigureIDE"></a> Настройка интегрированной среды разработки (IDE)
- При первом запуске Visual Studio будет предложено войти в это приложение с использованием учетной записи Майкрософт: [Sign into Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)(Вход в Visual Studio). Необязательно входить сразу, можно сделать это позже.
+ При первом запуске Visual Studio будет предложено войти в это приложение с использованием учетной записи Майкрософт: [Sign into Visual Studio](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/)(Вход в Visual Studio). Необязательно входить сразу, можно сделать это позже.
 
  После запуска Visual Studio далее необходимо выбрать сочетание предопределенных параметров интегрированной среды разработки. Каждое сочетание параметров было разработано так, чтобы сделать разработку приложений более простой.
 

@@ -1,5 +1,5 @@
 ---
-title: Директива шаблона T4 | Документация Майкрософт
+title: T4 Template Directive | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658552"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298139"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Как правило, текстовый шаблон T4 в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] начинается с директивы `template`, которая задает способ обработки шаблона. В каждом текстовом шаблоне и файлах, которые он содержит, может присутствовать только одна директива шаблона.
 
- Общие сведения о создании текстовых шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
+ For a general overview of writing text templates, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template-directive"></a>Применение директивы Template
 
@@ -34,7 +34,7 @@ ms.locfileid: "72658552"
 ## <a name="compileroptions-attribute"></a>атрибут compilerOptions
  Пример: `compilerOptions="optimize+"`
 
- Допустимые значения: любые допустимые параметры компилятора. Дополнительные сведения см. в разделе [ C# параметры компилятора, упорядоченные по категориям](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) и [Visual Basic параметры компилятора, перечисленные по категориям](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valid values: Any valid compiler options. For more information, see [C# Compiler Options Listed by Category](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) and [Visual Basic Compiler Options Listed by Category](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Игнорируется для шаблонов времени выполнения (предварительно обработанных).
 
@@ -43,7 +43,7 @@ ms.locfileid: "72658552"
 ## <a name="culture-attribute"></a>атрибут culture
  Пример: `culture="de-CH"`
 
- Допустимые значения: "", инвариантный язык и региональные параметры, используемые по умолчанию.
+ Valid values: "", the invariant culture, which is the default.
 
  Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Для получения дополнительной информации см. <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
@@ -56,13 +56,13 @@ ms.locfileid: "72658552"
 debug="true"
 ```
 
- Допустимые значения: `true, false`. Значение по умолчанию — false.
+ Valid values: `true, false`. Значение по умолчанию — false.
 
  Если атрибут `debug` имеет значение `true`, промежуточный файл кода содержит сведения, позволяющие отладчику точнее определить положение прерывания или исключения в шаблоне.
 
- Для шаблонов времени разработки промежуточный файл кода будет записан в каталог **% TEMP%** .
+ For design-time templates the intermediate code file will be written to your **%TEMP%** directory.
 
- Чтобы запустить шаблон времени разработки в отладчике, сохраните текстовый шаблон, откройте контекстное меню текстового шаблона в обозреватель решений и выберите **Отладка шаблона T4**.
+ To run a design-time template in the debugger, save the text template, then open the shortcut menu of the text template in Solution Explorer, and choose **Debug T4 Template**.
 
 ## <a name="hostspecific-attribute"></a>атрибут hostspecific
  Пример
@@ -71,11 +71,11 @@ debug="true"
 hostspecific="true"
 ```
 
- Допустимые значения: `true, false, trueFromBase`. Значение по умолчанию — false.
+ Valid values: `true, false, trueFromBase`. Значение по умолчанию — false.
 
- Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Свойство является ссылкой на узел подсистемы преобразования и объявляется как [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Если определено пользовательское основное приложение, можно выполнить его приведение к типу пользовательского основного приложения.
+ Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. The property is a reference to the host of the transformation engine, and is declared as [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Если определено пользовательское основное приложение, можно выполнить его приведение к типу пользовательского основного приложения.
 
- Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблонам времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не к [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. It’s applicable to [design-time templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md), but not [run-time templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:
 
@@ -104,11 +104,11 @@ Content of myFile is:
 ## <a name="language-attribute"></a>атрибут language
  Пример: `language="VB"`
 
- Допустимые значения: `C#` (по умолчанию)
+ Valid values: `C#` (default)
 
  `VB`
 
- Атрибут Language задает язык ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../includes/csprcs-md.md)]), используемый для исходного кода в блоках операторов и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
+ The language attribute specifies the language ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../includes/csprcs-md.md)]) to use for the source code in statement and expression blocks. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
 
  Пример:
 
@@ -131,7 +131,7 @@ Squares of numbers:
  Можно задать наследование программного кода шаблона от другого класса, который также может быть создан из текстового шаблона.
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Наследование в текстовом шаблоне времени выполнения (предварительно обработанном)
- Можно использовать наследование между текстовыми шаблонами времени выполнения для создания базового шаблона с несколькими производными вариантами. Шаблоны времени выполнения — это те, для которых свойство **Custom Tool** имеет значение **тексттемплатингфилепрепроцессор**. Шаблон времени выполнения создает код, который можно вызывать в приложении для создания текста, который определен в шаблоне. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Можно использовать наследование между текстовыми шаблонами времени выполнения для создания базового шаблона с несколькими производными вариантами. Run-time templates are those that have the **Custom Tool** property set to **TextTemplatingFilePreprocessor**. Шаблон времени выполнения создает код, который можно вызывать в приложении для создания текста, который определен в шаблоне. For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Если атрибут `inherits` не задан, базовый и производный классы создаются из текстового шаблона. При задании атрибута `inherits` создается только производный класс. Можно создать базовый класс вручную, однако он должен предоставлять методы, используемые производным классом.
 
@@ -207,16 +207,16 @@ This is the common footer.
 > Если атрибуты `inherits` и `hostspecific` используются совместно, укажите hostspecific="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Наследование в текстовом шаблоне времени разработки
- Текстовый шаблон времени разработки — это файл, для которого **пользовательское средство** имеет значение **тексттемплатингфилеженератор**. Этот шаблон позволяет создать выходной файл кода или текста, формирующего часть проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При создании выходного файла шаблон сначала преобразуется в промежуточный файл программного кода, который обычно не видно пользователю. Атрибут `inherits` задает базовый класс для данного промежуточного кода.
+ A design-time text template is a file for which **Custom Tool** is set to **TextTemplatingFileGenerator**. Этот шаблон позволяет создать выходной файл кода или текста, формирующего часть проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При создании выходного файла шаблон сначала преобразуется в промежуточный файл программного кода, который обычно не видно пользователю. Атрибут `inherits` задает базовый класс для данного промежуточного кода.
 
  Для текстового шаблона времени разработки можно задать любой базовый класс, наследуемый от <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Воспользуйтесь директивой `<#@assembly#>` для загрузки сборки или проекта, содержащего базовый класс.
 
- Дополнительные сведения см. [в разделе "наследование в текстовых шаблонах" в блоге Гарет Jones "](http://go.microsoft.com/fwlink/?LinkId=208373).
+ For more information, see ["Inheritance in Text Templates" in Gareth Jones’ Blog](https://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>Атрибут LinePragmas
  Пример: `linePragmas="false"`
 
- Допустимые значения: `true` (по умолчанию)
+ Valid values: `true` (default)
 
  `false`
 
@@ -227,7 +227,7 @@ This is the common footer.
 ## <a name="visibility-attribute"></a>Атрибут Visibility
  Пример: `visibility="internal"`
 
- Допустимые значения: `public` (по умолчанию)
+ Valid values: `public` (default)
 
  `internal`
 

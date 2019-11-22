@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665560"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297785"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Используйте следующие ссылки для поиска сведений о технологиях, поддерживающих разработку со специальными возможностями, а также советов и примеров по разработке приложений Windows и веб-сайтов со специальными возможностями. Общие сведения о специальных возможностях можно найти на веб-странице [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Используйте следующие ссылки для поиска сведений о технологиях, поддерживающих разработку со специальными возможностями, а также советов и примеров по разработке приложений Windows и веб-сайтов со специальными возможностями. Общие сведения о специальных возможностях можно найти на веб-странице [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Технологии
 
@@ -54,7 +54,7 @@ ms.locfileid: "72665560"
 
 ### <a name="third-party-resources"></a>Ресурсы сторонних поставщиков
 
-- **Инициатива Web Accessibility Initiative консорциума W3C**. На этом веб-сайте содержатся рекомендации и методики для разработки доступных веб-сайтов. Дополнительные сведения см. на веб-сайте [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).
+- **Инициатива Web Accessibility Initiative консорциума W3C**. На этом веб-сайте содержатся рекомендации и методики для разработки доступных веб-сайтов. Дополнительные сведения см. на веб-сайте [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>См. также раздел
  [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

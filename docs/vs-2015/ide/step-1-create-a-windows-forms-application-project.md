@@ -9,25 +9,25 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9cf0177efe373933f8c34e1600658160f489a64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667343"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295785"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Шаг 1. Создание проекта приложения Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Первый шаг в создании программы для просмотра изображений — это создание проекта приложения Windows Forms.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 1](http://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Создание проекта приложения Windows Forms
 
 1. В строке меню выберите **Файл**, **Создать**, **Проект**. Диалоговое окно должно выглядеть следующим образом.
 
-     ![Диалоговое окно создания проекта](../ide/media/newprojectdialogcallouts.png "невпрожектдиалогкаллаутс") Диалоговое окно «Создание проекта»
+     ![New project dialog](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") New project dialog box
 
 2. В списке **Установленные шаблоны** выберите **Visual C#** или **Visual Basic**.
 
@@ -40,7 +40,7 @@ ms.locfileid: "72667343"
     > [!NOTE]
     > В вашем случае макет окна может отличаться от показанного. Точный макет окна зависит от версии Visual Studio, используемого языка программирования и других факторов. Однако необходимо убедиться, что отображаются все три окна.
 
-     ![Окно интегрированной среды разработки](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") Окно интегрированной среды разработки
+     ![IDE window](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE window
 
      Интерфейс содержит три окна: главное окно, **Обозреватель решений** и окно **Свойства**.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72667343"
 
      Другой вариант — нажать кнопку **Сохранить все** на панели инструментов, показанной на следующем рисунке.
 
-     ![Кнопка "сохранить все" на панели инструментов](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Кнопка "сохранить все" на панели инструментов
+     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All toolbar button
 
      Visual Studio автоматически заполняет имя папки и имя проекта, а затем сохраняет проект в папке проектов.
 

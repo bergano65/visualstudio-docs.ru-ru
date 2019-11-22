@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d5f3f02e89e77b63420d4a04062d7b661c0c9f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 90fab2724c3d392db7824222da2450a8a4d585c3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671812"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295754"
 ---
 # <a name="step-3-set-your-form-properties"></a>Шаг 3. Настройка свойств формы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Далее окно **Свойства** используется для изменения внешнего вида формы.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 1](http://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-set-your-form-properties"></a>Настройка свойств формы
 
@@ -34,7 +34,7 @@ ms.locfileid: "72671812"
 
 3. Когда форма будет выбрана, найдите свойство **Text** в окне **Свойства**. В зависимости от того, как отсортирован список, может потребоваться прокрутить вниз. Выберите **Text**, введите **Программа просмотра изображений**, а затем нажмите клавишу ВВОД.  Теперь форма должна содержать текст **Программа просмотра изображений** в заголовке окна. Окно **Свойства** должно выглядеть так, как показано на рисунке ниже.
 
-    ![Окно свойств](../ide/media/express-edittextproperty.png "Express_EditTextProperty") окно свойств
+    ![Properties window](../ide/media/express-edittextproperty.png "Express_EditTextProperty") Properties window
 
    > [!NOTE]
    > Свойства можно упорядочить по категориям или в алфавитном порядке. Вы можете переключаться между двумя этими представлениями с помощью кнопок в окне **Свойства**. В этом руководстве свойства легче находить в представлении, в котором свойства представлены в алфавитном порядке.
@@ -55,7 +55,7 @@ ms.locfileid: "72671812"
 
    - На панели инструментов нажмите кнопку **Начать отладку**, которая показана на рисунке ниже.
 
-      ![Кнопка панели инструментов "начать отладку"](../ide/media/express-icondebug.png "Express_IconDebug") Кнопка панели инструментов "начать отладку"
+      ![Start Debugging toolbar button](../ide/media/express-icondebug.png "Express_IconDebug") Start Debugging toolbar button
 
      Как и ранее, интегрированная среда разработки выполняет построение программы и запускает ее, открывается окно.
 

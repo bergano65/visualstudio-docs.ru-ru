@@ -1,5 +1,5 @@
 ---
-title: Анализаторы Roslyn и кода-библиотека для immutablearrays с | Документация Майкрософт
+title: Roslyn Analyzers and Code-aware Library for ImmutableArrays | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,31 +8,31 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9fbba44ef5ac0e531198b3569008a260118aefcf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685247"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298379"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и библиотека для ImmutableArrays с поддержкой кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[.NET Compiler Platform](https://github.com/dotnet/roslyn) («Roslyn») позволяет создавать библиотеки с кодом. С кодом библиотеки не предоставляет функциональные возможности, которые можно использовать и набор инструментов (анализаторов Roslyn), чтобы помочь вам использовать библиотеку в лучшим способом избежать ошибок. В этом разделе показано, как создавать реальные анализатор Roslyn для перехвата распространенных ошибок при использовании [NIB: Неизменяемые коллекции](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) пакет NuGet. В примере также как обеспечить исправление кода для решения проблемы кода, обнаруженных анализатором. Пользователи увидят средства исправления кода в Visual Studio лампочки пользовательского интерфейса и автоматически применить исправление кода.
+The [.NET Compiler Platform](https://github.com/dotnet/roslyn) (“Roslyn”) helps you build code-aware libraries. A code-aware library provides functionality you can use and tooling (Roslyn analyzers) to help you use the library in the best way or to avoid errors. This topic shows you how to build a real world Roslyn analyzer to catch common errors when using the [NIB: Immutable Collections](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) NuGet package. The example also demonstrates how to provide a code fix for a code issue found by the analyzer. Users see code fixes in the Visual Studio light bulb UI and can apply a fix for the code automatically.
 
 ## <a name="getting-started"></a>Начало работы
-Вам понадобятся следующие сборки этого примера:
+You need the following to build this example:
 
-- Visual Studio 2015 (не экспресс-выпуск) или более поздней версии. Можно воспользоваться бесплатным [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
+- Visual Studio 2015 (not an Express Edition) or a later version. You can use the free [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Можно также, при установке Visual Studio, проверить средства расширения Visual Studio в общих средствах для установки пакета SDK, в то же время. Если вы уже установили Visual Studio, можно также установить этот пакет SDK, выбрав в главном меню **файл &#124; New &#124;проекта...** C# в области навигации слева, затем и указав и расширяемость. При выборе "**Установка средств расширения Visual Studio**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK.
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md). You can also, when installing Visual Studio, check Visual Studio Extensibility Tools under Common Tools to install the SDK at the same time. If you have already installed Visual Studio, you can also install this SDK by going to the main menu **File &#124; New &#124;Project …** , choosing C# in the left navigation pane, and then choosing Extensibility. When you choose the “**Install the Visual Studio Extensibility Tools**” breadcrumb project template, it prompts you to download and install the SDK.
 
-- [Платформа компилятора .NET («Roslyn») SDK](https://aka.ms/roslynsdktemplates). Вы также можете установить этот пакет SDK, выбрав в главном меню **файл &#124; New &#124; проекта...** , нажимая кнопку **C#** в левой области навигации, а затем выбирая **расширяемости**. При выборе "**скачивание пакета SDK для платформы компилятора .NET**" шаблон проекта навигации, вам будет предложено загрузить и установить пакет SDK. Этот пакет SDK включает в себя [визуализаторе синтаксиса Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Этот очень полезное средство поможет вам понять, какие типы модели кода следует искать в ваш анализатор. Вызовы инфраструктуры анализатора в код для конкретного кода типов моделей, поэтому ваш код выполняется при необходимости и сосредоточиться только на анализ соответствующий код.
+- [.NET Compiler Platform (“Roslyn”) SDK](https://aka.ms/roslynsdktemplates). You can also install this SDK by going to the main menu **File &#124; New &#124; Project …** , choosing **C#** in the left navigation pane, and then choosing **Extensibility**. When you choose “**Download the .NET Compiler Platform SDK**” breadcrumb project template, it prompts you to download and install the SDK. This SDK includes the [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). This extremely useful tool helps you figure out what code model types you should look for in your analyzer. The analyzer infrastructure calls into your code for specific code model types, so your code only executes when necessary and can focus only on analyzing relevant code.
 
-## <a name="whats-the-problem"></a>В чем проблема?
-Представьте себе предоставление библиотеки с ImmutableArray (например, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) поддержки. Разработчики на C# имеется значительный опыт с массивами .NET. Тем не менее из-за природы immutablearrays с и оптимизации методы, используемые в реализации, intuitions разработчика C# вызвать пользователей библиотеки для записи неработающий код, как описано ниже. Кроме того пользователи не видят ошибок до времени выполнения, которая имеет небольшой качество работы, в котором они используются в Visual Studio с помощью .NET.
+## <a name="whats-the-problem"></a>What’s the Problem?
+Imagine you provide a library with ImmutableArray (for example, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) support. C# developers have lots of experience with .NET arrays. However, due to the nature of ImmutableArrays and optimization techniques used in the implementation, C# developer intuitions cause users of your library to write broken code, as explained below. Furthermore, users do not see their errors until run time, which isn’t the quality experience they are used to in Visual Studio with .NET.
 
-Пользователи знакомы с написания кода следующим образом:
+Users are familiar with writing code like the following:
 
 ```csharp
 var a1 = new int[0];
@@ -42,7 +42,7 @@ Console.WriteLine("a2.Length = { 0}", a2.Length);
 
 ```
 
-Создание пустых массивов должен заполнить последующих строк кода и с использованием синтаксиса инициализатора коллекции очень знакомы разработчикам C#. Однако же написание кода для ImmutableArray аварийно завершает работу во время выполнения:
+Creating empty arrays to fill in with subsequent lines of code and using collection initializer syntax are very familiar to C# developers. However, writing the same code for an ImmutableArray crashes at runtime:
 
 ```csharp
 var b1 = new ImmutableArray<int>();
@@ -52,19 +52,19 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 ```
 
-Первая ошибка связана с ImmutableArray реализации с помощью структуры программы-оболочки для базового хранилища данных. Структуры должны иметь конструкторы без параметров, чтобы `default(T)` выражения могут возвращать структуры со всеми ноль или значение null, членов. Когда код обращается к `b1.Length`, есть время выполнения разыменования ошибка из-за не базовый массив хранилища в структуре ImmutableArray. Правильным способом для создания пустой ImmutableArray является `ImmutableArray<int>.Empty`.
+The first error is due to ImmutableArray implementation’s using a struct to wrap the underlying data storage. Structs must have parameterless constructors so that `default(T)` expressions can return structs with all zero or null members. When the code accesses `b1.Length`, there is a run time null dereference error because there is no underlying storage array in the ImmutableArray struct. The correct way to create an empty ImmutableArray is `ImmutableArray<int>.Empty`.
 
- Ошибка с инициализаторами коллекций происходит потому, что метод ImmutableArray.Add возвращает новые экземпляры при каждом ее вызове. Поскольку immutablearrays с никогда не меняются, при добавлении нового элемента, вы получаете обратно объект ImmutableArray (который может предоставлять хранилища из соображений производительности существующих ImmutableArray). Так как `b2` указывает на первый ImmutableArray перед вызовом `Add()` пять раз `b2` ImmutableArray настройки по умолчанию. Вызов длины на нем также аварийных завершений пустая разыменования ошибки. Правильный способ инициализировать ImmutableArray без вручную вызова Add заключается в использовании `ImmutableArray.CreateRange(new int[] {1, 2, 3, 4, 5})`.
+ The error with collection initializers happens because the ImmutableArray.Add method returns new instances each time you call it. Because ImmutableArrays never change, when you add a new element, you get back a new ImmutableArray object (which may share storage for performance reasons with a previously existing ImmutableArray). Because `b2` points to the first ImmutableArray before calling `Add()` five times, `b2` is a default ImmutableArray. Calling Length on it also crashes with a null dereference error. The correct way to initialize an ImmutableArray without manually calling Add is to use `ImmutableArray.CreateRange(new int[] {1, 2, 3, 4, 5})`.
 
-## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Поиск типов узлов соответствующий синтаксис для активации вашей анализатора
-Чтобы приступить к созданию анализатор, сначала понять, какого рода узел синтаксиса, вам нужно искать.   Запустить визуализатор синтаксиса в меню **представление &#124; Other Windows &#124; визуализаторе синтаксиса Roslyn**.
+## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Finding Relevant Syntax Node Types to Trigger Your Analyzer
+To begin to build the analyzer, first figure out what type of SyntaxNode you need to look for.   Launch the Syntax Visualizer from the menu **View &#124; Other Windows &#124; Roslyn Syntax Visualizer**.
 
-Поместите курсор редактора в строке, которая объявляет `b1`. Появится визуализатор синтаксиса показан в `LocalDeclarationStatement` узел дерева синтаксиса. Этот узел содержит `VariableDeclaration`, который в свою очередь имеет `VariableDeclarator`, который в свою очередь имеет `EqualsValueClause`и наконец, имеется `ObjectCreationExpression`. Щелкните в дереве визуализатор синтаксиса узлов, синтаксис в окне редактора светлые тона к показан код, представленный данным узлом. Имена типов sub узел синтаксиса совпадают с именами, используемый в грамматике C#.
+Place the editor’s caret on the line that declares `b1`. You’ll see the Syntax Visualizer shows you are in a `LocalDeclarationStatement` node of the syntax tree. This node has a `VariableDeclaration`, which in turn has a `VariableDeclarator`, which in turn has an `EqualsValueClause`, and finally there is an `ObjectCreationExpression`. As you click in the Syntax Visualizer tree of nodes, the syntax in the editor window highlights to show you the code represented by that node. The names of the SyntaxNode sub types match the names used in the C# grammar.
 
-## <a name="creating-the-analyzer-project"></a>Создание проекта Analyzer
-В главном меню выберите **файл &#124; New &#124; проекта...** . В **новый проект** диалогового окна в разделе **C#** проекты на панели навигации слева, выберите расширения и в области справа выберите **анализатора с исправлений кода,** проекта шаблон. Введите имя и диалоговое окно подтверждения.
+## <a name="creating-the-analyzer-project"></a>Creating the Analyzer Project
+From the main menu choose **File &#124; New &#124; Project …** . In the **New Project** dialog, under **C#** projects in the left navigation bar, choose Extensibility, and in the right pane choose the **Analyzer with Code Fix** project template. Enter a name and confirm the dialog.
 
-Шаблон откроется файл DiagnosticAnalyzer.cs. Выберите вкладку буфера для этого редактора. Этот файл содержит класс анализатора (сформировано из имени вы присвоили проекта), производный от `DiagnosticAnalyzer` (тип Roslyn API). Новый класс имеет `DiagnosticAnalyzerAttribute` объявление ваш анализатор подходит для языка C#, чтобы компилятор находит и загружает ваш анализатор.
+The template opens a DiagnosticAnalyzer.cs file. Choose that editor buffer tab. This file has an analyzer class (formed from the name you gave the project) that derives from `DiagnosticAnalyzer` (a Roslyn API type). Your new class has a `DiagnosticAnalyzerAttribute` declaring your analyzer is relevant to the C# language so that the compiler discovers and loads your analyzer.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
@@ -72,20 +72,20 @@ public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
 {}
 ```
 
-Можно реализовать с помощью Visual Basic, который предназначен для кода C#, анализатор и наоборот. Более важно в DiagnosticAnalyzerAttribute выбрать ли ваш анализатор предназначен для одного языка, или оба. Более сложные анализаторы, требующих подробные моделирования языка можно ориентироваться только один язык. Если ваш анализатор, например, только проверяет имена типов или имена открытый член, возможно, можно использовать общие модели языка, предлагаемых Roslyn в Visual Basic и C#. Например, FxCop предупреждает, что класс реализует <xref:System.Runtime.Serialization.ISerializable>, но класс не имеет <xref:System.SerializableAttribute> атрибут независимый от языка и работает для отладки кода Visual Basic и C#.
+You can implement an analyzer using Visual Basic that targets C# code, and vice versa. It is more important in the DiagnosticAnalyzerAttribute to choose whether your analyzer targets one language or both. More sophisticated analyzers that require detailed modeling of the language can only target a single language. If your analyzer, for example, only checks type names or public member names, it may be possible to use the common language model Roslyn offers across Visual Basic and C#. For example, FxCop warns that a class implements <xref:System.Runtime.Serialization.ISerializable>, but the class does not have the <xref:System.SerializableAttribute> attribute is language-independent and works for both Visual Basic and C# code.
 
-## <a name="initalizing-the-analyzer"></a>Анализатор инициализации
-Прокрутите вниз содержимое немного `DiagnosticAnalyzer` класс `Initialize` метод. Компилятор вызывает этот метод при активации анализатор. Этот метод принимает `AnalysisContext` объект, который позволяет ваш анализатор для получения сведений о контексте и регистрация обратных вызовов для событий для типов кода, которые необходимо проанализировать.
+## <a name="initalizing-the-analyzer"></a>Initalizing the Analyzer
+Scroll down a little in the `DiagnosticAnalyzer` class to see the `Initialize` method. The compiler calls this method when activating an analyzer. The method takes an `AnalysisContext` object that allows your analyzer to get at context information and to register callbacks for events for the kinds of code you want to analyze.
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
 ```
 
-Открыть новую строку в этот метод и тип «контекст». Чтобы просмотреть список завершения Intellisense. Вы увидите в списке завершения существует много `Register…` методы для обработки различных типов событий. Например, первый, `RegisterCodeBlockAction`, обратный вызов кода для блока, который обычно расположены между фигурными скобками. Регистрация для блока также обратный вызов в код для инициализатора поля, значение, заданное на атрибут или значение необязательного параметра.
+Open a new line in this method and type “context.” to see an Intellisense completion list. You can see in the completion list there are many `Register…` methods to handle various kinds of events. For example, the first one, `RegisterCodeBlockAction`, calls back to your code for a block, which is usually code between curly braces. Registering for a block also calls back to your code for the initializer of a field, the value given to an attribute, or the value of an optional parameter.
 
-Другой пример: `RegisterCompilationStartAction`, обратный вызов кода в начале компиляции, что полезно, если вам нужно собирать состояния через различных расположений. Можно создать структуру данных, скажем, для сбора всех символов, используемых, и каждый раз, когда ваш анализатор обратного вызова для некоторых синтаксис или символ, можно сохранить сведения о каждом расположении в структуре данных. Когда пригласят обратно из-за завершения компиляции, вы можете анализировать все расположения, можно сохранить, например, сообщить о какие символы в коде используется из каждого `using` инструкции.
+As another example, `RegisterCompilationStartAction`, calls back to your code at the start of a compilation, which is useful when you need to collect state over many locations. You can create a data structure, say, to collect all symbols used, and each time your analyzer is called back for some syntax or symbol, you can save information about each location in your data structure. When you’re called back due to the compilation ending, you can analyze all the locations you saved, for example, to report what symbols the code uses from each `using` statement.
 
-С помощью **визуализатор синтаксиса**, вы узнали, что вы хотите быть вызывается, когда компилятор обрабатывает ObjectCreationExpression. Чтобы настроить обратного вызова, используйте следующий код:
+Using the **Syntax Visualizer**, you learned that you want to be called when the compiler processes an ObjectCreationExpression. You use this code to set up the callback:
 
 ```csharp
 
@@ -93,32 +93,32 @@ context.RegisterSyntaxNodeAction(c => AnalyzeObjectCreation(c),
                                  SyntaxKind.ObjectCreationExpression);
 ```
 
-Можно зарегистрироваться для получения синтаксический узел и фильтр для только объект создания синтаксических узлов. По соглашению авторы анализатора использовать лямбда-выражения, при регистрации действий, которые помогает поддерживать анализаторы без отслеживания состояния. Можно использовать функции Visual Studio **создание в результате использования** для создания `AnalyzeObjectCreation` метод. Это приводит к возникновению ошибки правильный тип параметр контекста для вас слишком.
+You register for a syntax node and filter for only object creation syntax nodes. By convention, analyzer authors use a lambda when registering actions, which helps to keep analyzers stateless. You can use the Visual Studio feature **Generate From Usage** to create the `AnalyzeObjectCreation` method. This generates the correct type of context parameter for you too.
 
-## <a name="setting-properties-for-users-of-your-analyzer"></a>Задание свойств для пользователей вашей анализатора
-Таким образом, чтобы ваш анализатор отображается в пользовательском Интерфейсе Visual Studio соответствующим образом, найдите и измените следующую строку кода для обозначения ваш анализатор:
+## <a name="setting-properties-for-users-of-your-analyzer"></a>Setting Properties for Users of Your Analyzer
+So that your Analyzer shows up in Visual Studio UI appropriately, look for and modify the following line of code to identify your analyzer:
 
 ```csharp
 internal const string Category = "Naming";
 ```
 
-Изменение `"Naming"` для `"API Guidance"`.
+Change `"Naming"` to `"API Guidance"`.
 
-Затем найдите и откройте файл Resources.resx в проект с помощью **обозревателе решений**. Можно поместить в описание для ваш анализатор, title и т. д. Можно изменить значение для всех потоков для `“Don’t use ImmutableArray<T> constructor”` сейчас. Вы можете поместить аргументы в строке форматирования строк ({0}, {1}т. д.) и более поздние версии, при вызове `Diagnostic.Create()`, можно передать массив params аргументов для передачи.
+Next find and open the Resources.resx file in your project using the **Solution Explorer**. You can put in a description for your Analyzer, title, etc. You can change the value for all of these to `“Don’t use ImmutableArray<T> constructor”` for now. You can put string formatting arguments in your string ({0}, {1}, etc.), and later when you call `Diagnostic.Create()`, you can supply a params array of arguments to be passed.
 
-## <a name="analyzing-an-object-creation-expression"></a>Анализ выражения создания объекта
-`AnalyzeObjectCreation` Метод принимает другой тип контекста, предоставленного платформой анализатора кода. Метод Initialize `AnalysisContext` позволяет регистрировать ответным вызовом действий для настройки вашей анализатора. `SyntaxNodeAnalysisContext`, Например, имеет `CancellationToken` , можно обойти. Если пользователь начинает ввод в редакторе, Roslyn отменит работающей анализаторы, чтобы сохранить работу и производительность. Другой пример: этот контекст имеет свойство узла, которое возвращает узел синтаксис для создания объекта.
+## <a name="analyzing-an-object-creation-expression"></a>Analyzing an Object Creation Expression
+The `AnalyzeObjectCreation` method takes a different type of context supplied by the code analyzer framework. The Initialize method’s `AnalysisContext` allows you to register action callbacks to set up your analyzer. The `SyntaxNodeAnalysisContext`, for example, has a `CancellationToken` that you can pass around. If a user starts typing in the editor, Roslyn will cancel running analyzers to save work and improve performance. As another example, this context has a Node property that returns the object creation syntax node.
 
-Получение узла, который можно предположить, — это тип, для которого отфильтрованные действие узла синтаксиса:
+Get the node, which you can assume is the type for which you filtered the syntax node action:
 
 ```csharp
 var objectCreation = (ObjectCreationExpressionSyntax)context.Node;
 ```
 
-### <a name="launching-visual-studio-with-your-analyzer-the-first-time"></a>Запуск Visual Studio с вашей анализатора в первый раз
-Запустите Visual Studio, построения и выполнения ваш анализатор (нажмите клавишу **F5**). Так как начальный проект в **обозревателе решений** является проект VSIX, под управлением сборки кода, кода и VSIX и затем запускает Visual Studio с помощью VSIX, что установлен. При запуске Visual Studio таким образом, он запускается с куст реестра distinct, таким образом, не будут затронуты главного использование Visual Studio путем тестирования экземпляров при построении анализаторы. При первом запуске таким образом, Visual Studio выполняет несколько инициализаций, аналогичную при первом запуске Visual Studio после его установки.
+### <a name="launching-visual-studio-with-your-analyzer-the-first-time"></a>Launching Visual Studio with Your Analyzer the First Time
+Launch Visual Studio by building and executing your analyzer (press **F5**). Because the startup project in the **Solution Explorer** is the VSIX project, running your code builds your code and a VSIX, and then launches Visual Studio with that VSIX installed. When you launch Visual Studio in this way, it launches with a distinct registry hive so that your main use of Visual Studio will not be affected by your testing instances while building analyzers. The first time you launch this way, Visual Studio does several initializations similar to when you first launched Visual Studio after installing it.
 
- Создайте консольный проект, а затем введите код массива в методе Main приложения консоли:
+ Create a console project and then enter the array code into your console applications Main method:
 
 ```csharp
 var b1 = new ImmutableArray<int>();
@@ -128,22 +128,22 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 ```
 
-В строках кода с `ImmutableArray` имеют волнистые линии, так как вам нужно получить неизменяемый пакет NuGet, а затем добавить `using` в код оператор. Нажмите правую кнопку указателя на узел проекта в **обозревателе решений** и выберите **управление пакетами NuGet...** . В диспетчер NuGet, введите «Неизменяемые» в поле поиска и выберите элемент «System.Collections.Immutable» (не выбирайте «Microsoft.Bcl.Immutable») в левой панели и нажмите «установить» в правой области. Установка пакета добавляет ссылку в ссылки проекта.
+The lines of code with `ImmutableArray` have squiggles because you need to get the immutable NuGet package and add a `using` statement to your code. Press the right pointer button on the project node in the **Solution Explorer** and choose **Manage NuGet Packages …** . In the NuGet manager, type “Immutable” into the search box, and choose the item “System.Collections.Immutable” (do not choose “Microsoft.Bcl.Immutable”) in the left pane and press the Install button in the right pane. Installing the package adds a reference to your project references.
 
-Вы по-прежнему см. в разделе красные волнистые линии под `ImmutableArray`, поэтому поместите курсор внутрь этого идентификатора и нажмите клавишу **CTRL +.** (период), чтобы открыть меню предложенного исправления и добавить соответствующий `using` инструкции.
+You still see red squiggles under `ImmutableArray`, so place the caret in that identifier and press **CTRL+.** (period) to bring up the suggested fix menu and choose to add the appropriate `using` statement.
 
-**Сохранить все и закрыть** второй экземпляр Visual Studio сейчас позволит вам в исходное состояние, чтобы продолжить.
+**Save All and Close** the second instance of Visual Studio for now to put you in a clean state to continue.
 
-## <a name="finishing-the-analyzer-using-edit-and-continue"></a>Завершение анализатора с помощью изменить и продолжить
-В первом экземпляре Visual Studio, установите точку останова в начале вашей `AnalyzeObjectCreation` метод, нажав клавишу **F9** , когда курсор находится в первой строке.
+## <a name="finishing-the-analyzer-using-edit-and-continue"></a>Finishing the Analyzer Using Edit and Continue
+In the first instance of Visual Studio, set a breakpoint at the beginning of your `AnalyzeObjectCreation` method by pressing **F9** with the caret on the first line.
 
-Запустите ваш анализатор еще раз с **F5**и в второй экземпляр Visual Studio, повторно откройте консольного приложения, созданного согласно последнему.
+Launch your analyzer again with **F5**, and in the second instance of Visual Studio, re-open your console application you created last time.
 
-Вы вернетесь в первый экземпляр Visual Studio в точке останова, так как компилятор Roslyn видели выражения создания объекта и вызывается в ваш анализатор.
+You return to the first instance of Visual Studio at the breakpoint because the Roslyn compiler saw an Object creation expression and called into your analyzer.
 
-**Получает узел создания объекта.** Шаг с обходом строку, которая задает `objectCreation` переменных, нажав клавишу **F10**, а затем в **окно "Интерпретация"** выражение `“objectCreation.ToString()”`. Вы увидите, что переменная указывает на узел синтаксического код `"new ImmutableArray<int>()"`, только что вы ищете.
+**Get the object creation node.** Step over the line that sets the `objectCreation` variable by pressing **F10**, and in the **Immediate Window** evaluate the expression `“objectCreation.ToString()”`. You see that the syntax node the variable points to is the code `"new ImmutableArray<int>()"`, just what you are looking for.
 
-**Получить ImmutableArray\<T > объекта типа.** Необходимо проверить, является ли тип создаваемой ImmutableArray. Во-первых вы получаете объект, представляющий этот тип. Вы Проверьте типы, с помощью семантической модели, чтобы у вас есть точно подходящего типа, а не сравнивает строку из метода ToString(). Введите следующую строку кода в конце функции:
+**Get ImmutableArray\<T> Type object.** You need to check if the type being created is ImmutableArray. First, you get the object that represents this type. You check types using the semantic model to ensure you have exactly the right type, and you don’t compare the string from ToString(). Enter the following line of code at the end of the function:
 
 ```csharp
 
@@ -154,22 +154,22 @@ var immutableArrayOfTType =
 
 ```
 
-Необходимо назначить универсальных типов в метаданные с backquotes (') и число универсальных параметров. Именно поэтому вы не видите «... ImmutableArray\<T >» в имени метаданных.
+You designate generic types in metadata with backquotes (`) and the number of generic parameters. That is why you do not see “…ImmutableArray\<T>” in the metadata name.
 
-Семантическая модель содержит много полезных вещей, позволяющие получить ответы на вопросы символы, поток данных, время существования переменной и т. д. Roslyn разделяет синтаксических узлов семантическую модель по различным причинам engineering (производительность, моделирование ошибочный код и т. д.). Требуется, чтобы модель компиляции для поиска информации, содержащейся в ссылки для точное сравнение.
+The semantic model has many useful things on it that let you ask questions about symbols, data flow, variable lifetime, etc. Roslyn separates syntax nodes from the semantic model for various engineering reasons (performance, modeling erroneous code, etc.). You want the compilation model to look up information contained in references for accurate comparison.
 
-В левой части окна редактора можно перетаскивать указатель желтый выполнения. Перетащите его вверх на ту строку, которая задает `objectCreation` переменной и шаг с обходом новая строка кода с помощью **F10**. При наведении указателя мыши на переменную `immutableArrayOfType`, вы увидите, что мы обнаружили точный тип в семантической модели.
+You can drag the yellow execution pointer on the left side of the editor window. Drag it up to the line that sets the `objectCreation` variable and step over your new line of code using **F10**. If you hover the mouse pointer over the variable `immutableArrayOfType`, you see that we found the exact type in the semantic model.
 
-**Получите тип выражения для создания объектов.** «Type» используется несколькими способами, в этой статье, но это означает, что при наличии «новый Foo» выражения, необходимо получить модель Foo. Необходимо получить тип выражения создания объекта, находится ли он ImmutableArray\<T > тип. Снова используйте семантическую модель для получения сведений о символах для типа символа (ImmutableArray) в выражение создания объекта. Введите следующую строку кода в конце функции:
+**Get the object creation expression’s type.** “Type” is used in a few ways in this article, but this means if you have “new Foo” expression, you need to get a model of Foo. You need to get the type of the object creation expression to see if it is the ImmutableArray\<T> type. Use the semantic model again to get symbol information for the type symbol (ImmutableArray) in the object creation expression. Enter the following line of code at the end of the function:
 
 ```csharp
 var symbolInfo = context.SemanticModel.GetSymbolInfo(objectCreation.Type) as INamedTypeSymbol;
 
 ```
 
-Так как ваш анализатор должен обрабатывать неполных или неверных кода в буферы редактора (например, отсутствует `using` инструкции), необходимо проверить `symbolInfo` , `null`. Необходимо получить именованный тип (INamedTypeSymbol) из объекта сведения символ завершения анализа.
+Because your analyzer needs to handle incomplete or incorrect code in editor buffers (for example, there is a missing `using` statement), you should check for `symbolInfo` being `null`. You need to get a named type (INamedTypeSymbol) from the symbol information object to finish the analysis.
 
-**Сравнение типов.** Поскольку имеется открытый универсальный тип T, который мы ищем и тип в коде — конкретный универсальный тип, запрос сведений о символах для типа создается на основе (открытым универсальным типом) и сравнить результат с `immutableArrayOfTType`. Введите следующий текст в конец метода:
+**Compare the Types.** Because there is an open generic type of T that we are looking for, and the type in the code is a concrete generic type, you query the symbol information for what the type is constructed from (an open generic type) and compare that result with `immutableArrayOfTType`. Enter the following at the end of the method:
 
 ```csharp
 if (symbolInfo != null &&
@@ -177,13 +177,13 @@ if (symbolInfo != null &&
 {}
 ```
 
-**Отчет диагностики.** Reporting диагностики не представляет труда. Можно использовать правила, созданные в шаблон проекта, который определяется перед метод Initialize. Так как такой ситуации, в коде происходит ошибка, можно изменить строку, которая инициализируется правило для замены `DiagnosticSeverity.Warning` (зеленая волнистая линия) с `DiagnosticSeverity.Error` (красной волнистой линией). Остальная часть правила инициализирует из ресурсов, измененные в начале этого пошагового руководства. Вам также необходимо получить расположение для пометки, в которой находится спецификация типа выражение создания объекта. Введите следующий код в `if` блок:
+**Report the Diagnostic.** Reporting the diagnostic is pretty easy. You use the Rule created for you in the project template, which is defined before the Initialize method. Because this situation in the code is an error, you can change the line that initialized Rule to replace `DiagnosticSeverity.Warning` (green squiggle) with `DiagnosticSeverity.Error` (red squiggle). The rest of the Rule initializes from the resources you edited near the beginning of the walkthrough. You also need to report the location for the squiggle, which is the location of the object creation expresssion’s type specification. Enter this code in the `if` block:
 
 ```csharp
 context.ReportDiagnostic(Diagnostic.Create(Rule, objectCreation.Type.GetLocation()));
 ```
 
-Функция должна выглядеть следующим образом (Возможно форматирование по-разному):
+Your function should look like this (perhaps formatted differently):
 
 ```csharp
 private void AnalyzeObjectCreation(SyntaxNodeAnalysisContext context)
@@ -206,12 +206,12 @@ private void AnalyzeObjectCreation(SyntaxNodeAnalysisContext context)
 
 ```
 
-Удалите точку останова, чтобы вы можете просмотреть в рабочее analyzer (и остановить возврат к первому экземпляру Visual Studio). Перетащите указатель выполнения в начало метода и нажмите клавишу **F5** следует продолжить выполнение. При переключении обратно в второй экземпляр Visual Studio, компилятор будет запущен снова изучить код, и оно будет вызывать ваш анализатор. Отобразится волнистая линия под `ImmutableType<int>`.
+Remove the breakpoint so that you can see your analyzer working (and stop returning to the first instance of Visual Studio). Drag the execution pointer to the beginning of your method, and press **F5** to continue execution. When you switch back to the second instance of Visual Studio, the compiler will start to examine the code again, and it will call into your analyzer. You can see a squiggle under `ImmutableType<int>`.
 
-## <a name="adding-a-code-fix-for-the-code-issue"></a>Добавление «Исправление кода» для ее кода
-Прежде чем начать, закройте второй экземпляр Visual Studio и остановить отладку в первом экземпляре Visual Studio (где вы разрабатываете анализатор).
+## <a name="adding-a-code-fix-for-the-code-issue"></a>Adding a “Code Fix” for the Code Issue
+Before you begin, close the second instance of Visual Studio and stop debugging in the first instance of Visual Studio (where you are developing the analyzer).
 
-**Добавьте новый класс.** Используйте контекстное меню (правую кнопку указателя) на узел проекта в обозревателе решений и выберите команду Добавить новый элемент. Добавьте класс с именем `BuildCodeFixProvider`. Этот класс должно быть производным от `CodeFixProvider`, и необходимо будет использовать **CTRL +.** (период) для вызова исправления кода, который добавляет правильные `using` инструкции. Этот класс также должен сопровождаться атрибутом `ExportCodeFixProvider` атрибут и вам нужно будет добавить `using` инструкцию, чтобы разрешить `LanguageNames` перечисления. Файл класса следующим кодом, в нем должно быть:
+**Add a new class.** Use the shortcut menu (right pointer button) on your project node in the Solution Explorer and choose to add a new item. Add a class called `BuildCodeFixProvider`. This class needs to derive from `CodeFixProvider`, and you will need to use **CTRL+.** (period) to invoke the code fix that adds the correct `using` statement. This class also needs to be annotated with `ExportCodeFixProvider` attribute, and you will need to add a `using` statement to resolve the `LanguageNames` enum. You should have a class file with the following code in it:
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -225,28 +225,28 @@ namespace ImmutableArrayAnalyzer
 
 ```
 
-**Заглушки для унаследованных членов.** Теперь поместите курсор редактора в идентификаторе `CodeFixProvider` и нажмите клавишу **CTRL +.** (точка) для заглушки для реализации этого абстрактного базового класса. Это создает свойство и метод.
+**Stub out derived members.** Now, place the editor’s caret in the identifier `CodeFixProvider` and press **CTRL+.** (period) to stub out the implementation for this abstract base class. This generates a property and a method for you.
 
-**Реализует свойство.** Заполните `FixableDiagnosticIds` свойства `get` текст следующим кодом:
+**Implement the property.** Fill in the `FixableDiagnosticIds` property’s `get` body with the following code:
 
 ```csharp
 return ImmutableArray.Create(ImmutableArrayAnalyzerAnalyzer.DiagnosticId);
 ```
 
-Roslyn объединяет в себе диагностики и исправления, сопоставляя эти идентификаторы, которые являются просто строки. Шаблон проекта создается идентификатор диагностики, и вы можете изменить его. Код в свойстве просто возвращает идентификатор класса анализатора.
+Roslyn brings together diagnostics and fixes by matching these identifiers, which are just strings. The project template generated a diagnostic ID for you, and you are free to change it. The code in the property just returns the ID from the analyzer class.
 
-**Метод RegisterCodeFixAsync принимает контекст.** Контекст важно в тех случаях, поскольку исправления кода можно применить к нескольким диагностики или в строке кода может быть несколько проблем. Если ввести «контекст». в теле метода список завершения Intellisense покажу некоторые полезные элементы. Есть элемент CancellationToken, можно проверить, см. в разделе, если что-то хочет отменить исправления. Отсутствует элемент документа, который содержит множество полезных элементов, а также использовать для объектов модели проекта и решения. Есть элемент Span, являющийся началом и конец расположение кода указано, если вы отправляли диагностики.
+**The RegisterCodeFixAsync method takes a context.** The context is important because a code fix can apply to multiple diagnostics, or there could be more than one issue on a line of code. If you type “context.” in the body of the method, the Intellisense completion list will show you some useful members. There’s a CancellationToken member that you can check to see if something wants to cancel the fix. There’s a Document member that has lots of useful members and lets you get to the project and solution model objects. There’s a Span member that is the start and end of the code location specified when you reported the diagnostic.
 
-**Сделайте метод являются асинхронными.** Первое, что необходимо сделать — объявление созданного метода необходимо исправить `async` метод. Исправление кода для создание заглушек для реализации абстрактного класса не включает в себя `async` несмотря на то, что метод возвращает ключевое слово `Task`.
+**Make the method be async.** The first thing you need to do is fix the generated method declaration to be an `async` method. The code fix for stubbing out the implementation of an abstract class doesn’t include the `async` keyword even though the method returns a `Task`.
 
-**Получите корень дерева синтаксиса.** Для изменения кода, необходимые для создания нового дерева синтаксиса с учетом изменений, делает код исправления. Вам потребуется `Document` из контекста для вызова `GetSyntaxRootAsync`. Это асинхронный метод, так как неизвестный действий для получения дерева синтаксиса, возможно, включающий начало файла с диска, его анализ и создание модели кода Roslyn для него. В течение этого времени, в которых использование пользовательского интерфейса Visual Studio должны быть быстро реагирующих `async` позволяет. Замените строку кода в методе следующее:
+**Get the root of the syntax tree.** To modify code you need to produce a new syntax tree with the changes your code fix makes. You need the `Document` from the context to call `GetSyntaxRootAsync`. This is an async method because there is unknown work to get the syntax tree, possibly including getting the file from disk, parsing it, and building the Roslyn code model for it. The Visual Studio UI should be responsive during this time, which using `async` enables. Replace the line of code in the method with the following:
 
 ```csharp
 var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**Найти узел с проблемой.** Вы передаете диапазона контекста, но узел, которую вы найдете не может быть код, который необходимо изменить. Зарегистрированное диагностическое событие диапазон предоставляется только для идентификатора типа (где принадлежал волнистую линию), но вам нужно заменить выражение создания весь объект, включая `new` keywoard в начале и в конце круглые скобки. Добавьте следующий код в метод (и использовать **CTRL +.** Чтобы добавить `using` инструкции для `ObjectCreationExpressionSyntax`):
+**Find the node with the issue.** You pass in the context’s span, but the node you find may not be the code you have to change. The reported diagnostic only provided the span for the type identifier (where the squiggle belonged), but you need to replace the entire object creation expression, including the `new` keywoard at the beginning and the parentheses at the end. Add the following code to your method (and use **CTRL+.** to add a `using` statement for `ObjectCreationExpressionSyntax`):
 
 ```csharp
 
@@ -254,7 +254,7 @@ var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
- **Зарегистрируйте исправление кода для лампочки пользовательского интерфейса.** При регистрации исправления кода Roslyn автоматически подключается к лампочки в Visual Studio пользовательского интерфейса. Конечные пользователи будут видеть, они могут использовать **CTRL +.** (точка), если ваш анализатор волнистых линий недействительная `ImmutableArray<T>` используйте конструктор. Так как ваш поставщик исправлений кода выполняется только в том случае, если имеется проблема, можно предположить, что у вас есть выражение создания объекта, который вы искали. Из параметра контекста, вы можете зарегистрировать новое исправление кода, добавив следующий код в конец `RegisterCodeFixAsync` метод:
+ **Register your code fix for the light bulb UI.** When you register your code fix, Roslyn plugs into the Visual Studio light bulb UI automatically. End users will see they can use **CTRL+.** (period) when your analyzer squiggles a bad `ImmutableArray<T>` constructor use. Because your code fix provider only executes when there is an issue, you can assume you have the object creation expression you were looking for. From the context parameter, you can register the new code fix by adding the following code to the end of `RegisterCodeFixAsync` method:
 
 ```csharp
 
@@ -266,17 +266,17 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Необходимо поместить курсор редактора в идентификаторе, `CodeAction`, затем с помощью **CTRL +.** (период), чтобы добавить соответствующий `using` инструкции для этого типа.
+You need to place the editor’s caret in the identifier, `CodeAction`, then use **CTRL+.** (period) to add the appropriate `using` statement for this type.
 
-Поместите курсор в редакторе в `ChangeToImmutableArrayEmpty` идентификатора и использование **CTRL +.** еще раз, чтобы создать заглушку этого метода для вас.
+Then place the editor’s caret in the `ChangeToImmutableArrayEmpty` identifier and use **CTRL+.** again to generate this method stub for you.
 
-Этот последний фрагмент кода, который вы добавили регистрирует исправления кода путем передачи `CodeAction` и идентификатор диагностики для типа обнаруженной проблемы. В этом примере имеется только один идентификатор диагностики, который предоставляет этот код исправления, поэтому можно просто передать первый элемент массива идентификаторов диагностики. При создании `CodeAction`, передается в текст, который «лампочку» пользовательского интерфейса следует использовать как описание исправление кода. Можно также передать в функцию, которая принимает CancellationToken и возвращает новый документ. Новый документ будет содержать новое дерево синтаксиса, включающее Исправлен код, вызывающий `ImmutableArray.Empty`. Этот фрагмент кода использует лямбда-выражение, чтобы его можно закрыть узел objectCreation и контекста документа.
+This last code snippet you added registers the code fix by passing a `CodeAction` and the diagnostic ID for the kind of issue found. In this example, there is only one diagnostic ID that this code provides fixes for, so you can just pass the first element of the diagnostic IDs array. When you create the `CodeAction`, you pass in the text that the light bulb UI should use as a description of the code fix. You also pass in a function that takes a CancellationToken and returns a new Document. The new Document has a new syntax tree that includes your patched code that calls `ImmutableArray.Empty`. This code snippet uses a lambda so that it can close over the objectCreation node and the context’s Document.
 
-**Создает новое дерево синтаксиса.** В `ChangeToImmutableArrayEmpty` метод которого заглушки, созданный ранее, введите в строку кода: `ImmutableArray<int>.Empty;`. При просмотре окна инструментов визуализатора синтаксиса, видно, что этот синтаксис является узлом SimpleMemberAccessExpression. Это, что этот метод должен создавать и возвращать в новый документ.
+**Construct the new syntax tree.** In the `ChangeToImmutableArrayEmpty` method whose stub you generated earlier, enter the line of code: `ImmutableArray<int>.Empty;`. If you view the Syntax Visualizer tool window again, you can see this syntax is a SimpleMemberAccessExpression node. That’s what this method needs to construct and return in a new Document.
 
-Первое изменение, чтобы `ChangeToImmutableArrayEmpty` является добавление `async` перед `Task<Document>` так, как генераторы кода нельзя предполагать, метод должен быть async.
+The first change to `ChangeToImmutableArrayEmpty` is to add `async` before `Task<Document>` because the code generators cannot assume the method should be async.
 
-Укажите в тексте со следующим кодом, таким образом, ваш метод выглядел следующим образом:
+Fill in the body with the following code so that your method looks similar to the following:
 
 ```csharp
 
@@ -293,25 +293,25 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-Необходимо поместить курсор редактора в `SyntaxGenerator` идентификатора и использование **CTRL +.** (период), чтобы добавить соответствующий `using` инструкции для этого типа.
+You will need to put the editor’s caret in the `SyntaxGenerator` identifier and use **CTRL+.** (period) to add the appropriate `using` statement for this type.
 
-Этот код использует `SyntaxGenerator`, являющийся типом очень полезно для создания нового кода. После получение генератор для документа, который имеет проблемы кода, `ChangeToImmutableArrayEmpty` вызовы `MemberAccessExpression`, передав тип, который содержит член, необходимо получить доступ и имя члена как строка.
+This code uses `SyntaxGenerator`, which is a very useful type for constructing new code. After getting a generator for the document that has the code issue, `ChangeToImmutableArrayEmpty` calls `MemberAccessExpression`, passing the type that has the member we want to access and passing the name of the member as a string.
 
-Затем метод извлекает корень документа, и так как это может включать произвольное работы в общем случае, код ожидает этот вызов и передает токен отмены. Модели кода Roslyn являются неизменяемыми, как и при работе со строкой .NET; При обновлении строки, вы получите новый строковый объект в ответ. При вызове `ReplaceNode`, вы получаете новый корневой узел. Большая часть дерева синтаксиса используется совместно (так как он станет неизменяемым), но `objectCreation` узел заменяется `memberAccess` узла, а также все родительские узлы вплоть до корневого элемента дерева синтаксиса.
+Next, the method fetches the root of the document, and because this can involve arbitrary work in the general case, the code awaits this call and passes the cancellation token. Roslyn code models are immutable, like working with a .NET string; when you update the string, you get a new string object in return. When you call `ReplaceNode`, you get back a new root node. Most of the syntax tree is shared (because it is immutable), but the `objectCreation` node is replaced with the `memberAccess` node, as well as all the parent nodes up to the syntax tree root.
 
-## <a name="trying-your-code-fix"></a>Попытки исправления кода
-Теперь можно нажать клавиши **F5** для выполнения вашей анализатора во втором экземпляре Visual Studio. Откройте проект, который мы использовали раньше. Теперь вы должны увидеть лампочки отображаются, где в выражение создания нового объекта для `ImmutableArray<int>`. Если нажать клавишу **CTRL +.** (период) вы увидите исправить код, и вы увидите автоматически созданный код-различие предварительной версии, в «лампочку» пользовательского интерфейса. Roslyn создает это для вас.
+## <a name="trying-your-code-fix"></a>Trying Your Code Fix
+You can now press **F5** to execute your analyzer in a second instance of Visual Studio. Open the console project you used before. Now you should see the light bulb appear where your new object creation expression is for `ImmutableArray<int>`. If you press **CTRL+.** (period), then you will see your code fix, and you will see an automatically generated code difference preview in the light bulb UI. Roslyn creates this for you.
 
-Совет по PRO. Если запустить второй экземпляр Visual Studio, и вы не видите лампочку с исправления кода, может потребоваться очистить кэш компонента Visual Studio. Очистка кэша вынуждает Visual Studio, чтобы вы пересмотрели компоненты, поэтому Visual Studio должен затем получить последнюю компонента. Во-первых завершение работы второй экземпляр Visual Studio. В обозревателе Windows перейдите в каталог пользователя (c:\users\\< userid\>) и найти AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\. В этом каталоге удалите подкаталог ComponentModelCache. Изменения версий с помощью Visual Studio «14».
+Pro Tip: If you launch the second instance of Visual Studio, and you don’t see the light bulb with your code fix, then you may need to clear the Visual Studio component cache. Clearing the cache forces Visual Studio to re-examine the components, so Visual Studio should then pick up your latest component. First, shut down the second instance of Visual Studio. Then in Windows Explorer, go to your user directory (c:\users\\<userid\>) and find AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\. In this directory, delete the sub directory ComponentModelCache. The “14” changes version to version with Visual Studio.
 
-## <a name="talk-video-and-finish-code-project"></a>Обсуждение видео и проект кода Готово
-Этот пример разработан и рассматривается далее в [в этом докладе](http://channel9.msdn.com/events/Build/2015/3-725). Беседа демонстрирует работу анализатора, а также для его создания.
+## <a name="talk-video-and-finish-code-project"></a>Talk Video and Finish Code Project
+You can see this example developed and discussed further in [this talk](https://channel9.msdn.com/events/Build/2015/3-725). The talk demonstrates the working analyzer and walks you through building it.
 
-Вы увидите готовый код [здесь](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). Вложенные папки DoNotUseImmutableArrayCollectionInitializer и DoNotUseImmutableArrayCtor иметь файл C# для поиска проблем и файл C#, реализующий исправления кода, которые отображаются в «лампочку» Visual Studio пользовательского интерфейса. Обратите внимание, что готовый код имеет немного дополнительные абстракции, чтобы избежать выборка ImmutableArray\<T > снова и снова типа object. Она использует вложенные действия, зарегистрированного для сохранения типа объекта в контексте, который доступен всякий раз, когда действия sub (анализ создания объектов и анализировать инициализации коллекции) выполнения.
+You can see all the finished code [here](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). The sub folders DoNotUseImmutableArrayCollectionInitializer and DoNotUseImmutableArrayCtor each have a C# file for finding issues and a C# file that implements the code fixes that show up in the Visual Studio light bulb UI. Note, the finished code has a little more abstraction to avoid fetching the ImmutableArray\<T> type object over and over. It uses nested registered actions to save the type object in a context that is available whenever the sub actions (analyze object creation and analyze collection initializations) execute.
 
-## <a name="see-also"></a>См. также
-[\\\Build 2015 ток](http://channel9.msdn.com/events/Build/2015/3-725)
-[завершения кода на GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers) 
-[несколько примеров на GitHub, сгруппированы в три вида анализаторы](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)  
- [Другие документы на сайте GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers) 
-[правил FxCop, реализованных с анализаторами Roslyn на GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+## <a name="see-also"></a>См. также раздел
+[\\\Build 2015 talk](https://channel9.msdn.com/events/Build/2015/3-725)
+[Completed code on GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers) 
+[Several examples on GitHub, grouped into three kinds of analyzers](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md) 
+[Other docs on the GitHub OSS site](https://github.com/dotnet/roslyn/tree/master/docs/analyzers) 
+[FxCop rules implemented with Roslyn analyzers on GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

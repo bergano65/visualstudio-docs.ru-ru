@@ -1,5 +1,5 @@
 ---
-title: Использование моделей в процессе разработки | Документация Майкрософт
+title: Use models in your development process | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,30 +11,30 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3bc95e74c9e80596ea46efa42abce5c4ed48fa8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659441"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298257"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно использовать модель для изучения и изменения системы, приложения или компонента. Модель может помочь визуализировать среду, в которой работает система, уточнить требования пользователей, определить архитектуру системы, проанализировать код и убедиться, что код удовлетворяет этим требованиям. См. [видео Channel 9: улучшение архитектуры с помощью моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).
+В Visual Studio можно использовать модель для изучения и изменения системы, приложения или компонента. Модель может помочь визуализировать среду, в которой работает система, уточнить требования пользователей, определить архитектуру системы, проанализировать код и убедиться, что код удовлетворяет этим требованиям. See [Channel 9 Video: Improve architecture through modeling](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="how-to-use-models"></a>Использование моделей
  Модели можно использовать несколькими способами:
 
-- Рисование схем моделирования помогает уточнять концепции, связанные с требованиями, архитектурой и высокоуровневой структурой. Дополнительные сведения см. в разделе [Моделирование требований пользователей](../modeling/model-user-requirements.md).
+- Рисование схем моделирования помогает уточнять концепции, связанные с требованиями, архитектурой и высокоуровневой структурой. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
 
 - Работа с моделями помогает выявить несогласованность требований.
 
-- Взаимодействие с моделями помогает четко пояснять важные концепции на естественном языке. Дополнительные сведения см. в статье [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md).
+- Взаимодействие с моделями помогает четко пояснять важные концепции на естественном языке. For more information, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
 
-- Иногда можно использовать модели для создания кода или других артефактов, таких как документы или схемы баз данных. Например, компоненты моделирования [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] создаются из модели.  Дополнительные сведения см. в статье [Создание и настройка приложения из моделей](../modeling/generate-and-configure-your-app-from-models.md).
+- Иногда можно использовать модели для создания кода или других артефактов, таких как документы или схемы баз данных. Например, компоненты моделирования [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] создаются из модели.  For more information, see [Generate and configure your app from models](../modeling/generate-and-configure-your-app-from-models.md).
 
   Модели можно использовать в самых разнообразных процессах — от максимально гибких до предельно формальных.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72659441"
 
  Если проект большой и включает в себя команды в разных странах, можно использовать модели для более эффективного обмена сведениями о требованиях и архитектуре и по сравнению с обычным текстом.
 
- В обоих случаях создание модели почти всегда позволяет значительно уменьшить число несоответствий и неоднозначностей. Разные заинтересованные лица часто имеют разное представление о производственной среде, в которой работает система, а разные разработчики часто по-разному понимают принципы работы системы. Использование модели в качестве основы для обсуждения обычно позволяет выявить эти различия. Дополнительные сведения об использовании модели для уменьшения числа несоответствий см. в разделе [Моделирование требований пользователей](../modeling/model-user-requirements.md).
+ В обоих случаях создание модели почти всегда позволяет значительно уменьшить число несоответствий и неоднозначностей. Разные заинтересованные лица часто имеют разное представление о производственной среде, в которой работает система, а разные разработчики часто по-разному понимают принципы работы системы. Использование модели в качестве основы для обсуждения обычно позволяет выявить эти различия. For more information about how to use a model to reduce inconsistencies, see [Model user requirements](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>Использование моделей с другими артефактами
  Сама по себе модель не является спецификацией требований или архитектурой. Это средство для более четкого выражения некоторых аспектов этих понятий, однако выразить можно далеко не все понятия, необходимые во время разработки программного обеспечения. Поэтому модели следует использовать вместе с другими средствами взаимодействия, такими как абзацы или страницы OneNote, документы Microsoft Office, рабочие элементы в [!INCLUDE[esprfound](../includes/esprfound-md.md)] или стикеры на стене кабинета. Кроме последнего, все эти типы объектов могут быть связаны с частями элементов модели.
@@ -93,20 +93,20 @@ ms.locfileid: "72659441"
 - У заинтересованных лиц, не имеющих технических навыков, обычно не возникает проблем с восприятием схем UML, сопровождаемых вашими пояснениями.
 
 #### <a name="link-model-to-work-items"></a>Связывание модели с рабочими элементами
- После обсуждения требований уточните сведения о модели требований и свяжите ее с задачами разработки. Это можно сделать путем связывания рабочих элементов в [!INCLUDE[esprfound](../includes/esprfound-md.md)] с элементами в модели. Сведения о том, как это сделать, см. в разделе [связывание элементов модели и рабочих элементов](../modeling/link-model-elements-and-work-items.md).
+ После обсуждения требований уточните сведения о модели требований и свяжите ее с задачами разработки. Это можно сделать путем связывания рабочих элементов в [!INCLUDE[esprfound](../includes/esprfound-md.md)] с элементами в модели. To learn how to do this, see [Link model elements and work items](../modeling/link-model-elements-and-work-items.md).
 
  С рабочими элементами можно связать любой элемент, но наиболее полезными являются следующие элементы:
 
 - Варианты использования. Вариант использования можно связать с задачами разработки, которые будут его реализовывать.
 
-- Расширения вариантов использования. Если в ходе итерации будет реализован только один аспект варианта использования, можно разделить его на основной вариант использования и одно или несколько расширений. Расширения — это варианты использования, связанные с основным вариантом отношением "расширение". Дополнительные сведения о расширении вариантов использования см. в разделе [UML-схемы вариантов использования: Справочник](../modeling/uml-use-case-diagrams-reference.md).
+- Расширения вариантов использования. Если в ходе итерации будет реализован только один аспект варианта использования, можно разделить его на основной вариант использования и одно или несколько расширений. Расширения — это варианты использования, связанные с основным вариантом отношением "расширение". For more information about use case extension, see [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md).
 
-- Комментарии, описывающие бизнес-правила или требования к качеству обслуживания. Дополнительные сведения см. в разделе [Моделирование требований пользователей](../modeling/model-user-requirements.md).
+- Комментарии, описывающие бизнес-правила или требования к качеству обслуживания. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
 
 #### <a name="link-model-to-tests"></a>Связывание модели с тестами
  Используйте модель требований для управления разработкой тестов приемки. Создавайте эти тесты одновременно с разработкой.
 
- Дополнительные сведения об этом методе см. в разделе [Разработка тестов из модели](../modeling/develop-tests-from-a-model.md).
+ To learn more about this technique, see [Develop tests from a model](../modeling/develop-tests-from-a-model.md).
 
 #### <a name="estimate-remaining-work"></a>Оценка оставшихся трудозатрат
  Модель требований может помочь оценить общий размер проекта по сравнению с размером каждой итерации. Оценка числа и сложности вариантов использования и классов может помочь определить необходимый объем работ по разработке. После завершения нескольких первых итераций можно провести сравнение выполненных требований и требований, которые еще предстоит выполнить, чтобы приблизительно оценить стоимость и масштаб оставшейся части проекта.
@@ -116,26 +116,26 @@ ms.locfileid: "72659441"
 ## <a name="levels-of-abstraction"></a>Уровни абстракции
  Модели имеют диапазон абстракции в отношении программного обеспечения. Наиболее конкретные модели непосредственно представляют код программы, а наиболее абстрактные модели представляют бизнес-концепции, которые могут быть как представлены, так и не представлены в коде.
 
- Модель можно просмотреть с помощью нескольких типов схем. Сведения о моделях и схемах см. [в разделе Создание моделей для приложения](../modeling/create-models-for-your-app.md).
+ Модель можно просмотреть с помощью нескольких типов схем. For information about models and diagrams, see [Create models for your app](../modeling/create-models-for-your-app.md).
 
  Различные виды схем полезны для описания разработки на различных уровнях абстракции. Многие типы схем можно с пользой применять сразу на нескольких уровнях. В этой таблице показано, как можно использовать каждый тип схем.
 
 |Уровень разработки|Типы схем|
 |------------------|-------------------|
-|Бизнес-процесс<br /><br /> Общее представление о контексте, в котором будет использоваться система, помогает понять потребности пользователей.|— Схемы активности описывают поток работы между людьми и системами для достижения бизнес-целей.<br />-Концептуальные схемы классов описывают бизнес-концепции, используемые в бизнес-процессе.|
-|Требования пользователей<br /><br /> Определение того, что нужно пользователям от вашей системы.|— Схемы вариантов использования обобщают взаимодействия пользователей и других внешних систем с разрабатываемой системой. К каждому варианту использования можно присоединить другие документы, чтобы подробно его описать.<br />— Схемы классов UML описывают типы данных, о которых обмениваются пользователи и системы.<br />Бизнес-правила и требования к качеству обслуживания можно описать в отдельных документах.|
-|Высокоуровневая структура<br /><br /> Общая структура системы: основные компоненты и их взаимосвязи.|— Схемы слоев описывают структуру системы в зависимости от части. Можно проверить код программы по схеме слоев, чтобы убедиться в его соответствии архитектуре.<br />-Схемы компонентов отображают интерфейсы частей, указывая сообщения и службы, которые предоставляются и требуются для каждого компонента.<br />-Схемы последовательностей показывают, как взаимодействуют компоненты для реализации каждого варианта использования.<br />— Схемы классов UML описывают интерфейсы компонентов и типы данных, передаваемых между компонентами.|
-|Конструктивные шаблоны<br /><br /> Соглашения и методы решения проблем проектирования, которые используются во всех частях процесса разработки|— Схемы классов UML описывают структуры шаблона<br />— Схемы последовательностей или активности показывают взаимодействия и алгоритмы.|
-|Анализ кода<br /><br /> Из кода можно создать несколько типов схем.|-Схемы последовательностей показывают взаимодействие между объектами в коде.<br />— Схемы слоев показывают зависимости между классами. Обновленный код можно проверить на соответствие схеме слоев.<br />— Схемы классов показывают классы в коде.|
+|Бизнес-процесс<br /><br /> Общее представление о контексте, в котором будет использоваться система, помогает понять потребности пользователей.|-   Activity diagrams describe the flow of work between people and systems to achieve business goals.<br />-   Conceptual class diagrams describe the business concepts used within the business process.|
+|Требования пользователей<br /><br /> Определение того, что нужно пользователям от вашей системы.|-   Use case diagrams summarize the interactions that the users and other external systems have with the system that you are developing. К каждому варианту использования можно присоединить другие документы, чтобы подробно его описать.<br />-   UML class diagrams describe the types of information that the users and system communicate about.<br />-   Business rules and quality of service requirements can be described in separate documents.|
+|Высокоуровневая структура<br /><br /> Общая структура системы: основные компоненты и их взаимосвязи.|-   Layer Diagrams describe how the system is structured into interdependent parts. Можно проверить код программы по схеме слоев, чтобы убедиться в его соответствии архитектуре.<br />-   Component diagrams show the interfaces of the parts, specifying the messages and services that are provided and required by each component.<br />-   Sequence diagrams show how the components communicate to implement each use case.<br />-   UML class diagrams describe the interfaces of the components and the types of data passed between the components.|
+|Конструктивные шаблоны<br /><br /> Соглашения и методы решения проблем проектирования, которые используются во всех частях процесса разработки|-   UML class diagrams describe the structures of a pattern<br />-   Sequence or activity diagrams show the interactions and algorithms|
+|Анализ кода<br /><br /> Из кода можно создать несколько типов схем.|-   Sequence diagrams show the interaction between objects in the code.<br />-   Layer diagrams show the dependencies between classes. Обновленный код можно проверить на соответствие схеме слоев.<br />-   Class diagrams show the classes in the code.|
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") видео [практические руководства MSDN: создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") - [канал 9: UML с Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") [серия "практические руководства" MSDN: средства и расширяемость UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Видеоролики**|![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Videos: How to Create and Use UML Models and Diagrams (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML with Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>См. также раздел
- [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Создание моделей для модели приложения](../modeling/create-models-for-your-app.md) [требования к пользователям](../modeling/model-user-requirements.md) модель. [архитектура приложения](../modeling/model-your-app-s-architecture.md) [Разработка тестов на основе модели](../modeling/develop-tests-from-a-model.md) [Структура решения для моделирования](../modeling/structure-your-modeling-solution.md)
+ [Use models in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Create models for your app](../modeling/create-models-for-your-app.md) [Model user requirements](../modeling/model-user-requirements.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [Develop tests from a model](../modeling/develop-tests-from-a-model.md) [Structure your modeling solution](../modeling/structure-your-modeling-solution.md)

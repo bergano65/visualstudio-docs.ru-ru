@@ -1,5 +1,5 @@
 ---
-title: Навигация по связям с помощью API UML | Документация Майкрософт
+title: Navigate relationships with the UML API | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5c0067e213fdff2bde09c290d9fcaa9b4f52b9ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668531"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300239"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Переход по отношениям с помощью UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Перечисление отношений
- Все свойства модели UML, возвращающие несколько значений, соответствуют интерфейсу IEnumerable < >. Это означает, что можно использовать [выражения запросов LINQ](http://go.microsoft.com/fwlink/?LinkId=168834) и методы расширения, определенные в пространстве имен **System. LINQ** .
+ All properties of the UML model that return multiple values conform to the IEnumerable<> interface. This means that you can use [Linq Query Expressions](https://go.microsoft.com/fwlink/?LinkId=168834) and the extension methods defined in the **System.Linq** namespace.
 
  Пример:
 
@@ -164,4 +164,4 @@ select shape.Element
 ```
 
 ## <a name="see-also"></a>См. также раздел
- [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Навигация по модели UML](../modeling/navigate-the-uml-model.md)
+ [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Navigate the UML model](../modeling/navigate-the-uml-model.md)

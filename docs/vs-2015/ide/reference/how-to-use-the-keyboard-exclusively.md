@@ -16,17 +16,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37bbdfd00778575755379fc442dfa9be3f90eeb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651302"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297882"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Практическое руководство. Использование только клавиатуры
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предоставляет много стандартных сочетаний клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE). Полный список сочетаний клавиш, используемых в Visual Studio, см. в разделе [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Сведения о сочетаниях клавиш, доступных для других продуктов корпорации Майкрософт, см. на странице [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предоставляет много стандартных сочетаний клавиш, чтобы упростить навигацию и создание кода в интегрированной среде разработки (IDE). Полный список сочетаний клавиш, используемых в Visual Studio, см. в разделе [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Сведения о сочетаниях клавиш, доступных для других продуктов корпорации Майкрософт, см. на странице [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).

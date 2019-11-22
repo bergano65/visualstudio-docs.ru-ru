@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e86364641b477c7b4d8d919cb78afb925f7c27e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660504"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302552"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **Руководство**
 
- Дополнительные сведения см. в книге [Тестирование непрерывной доставки с использованием Visual Studio 2012, глава 5 "Автоматизация системных тестов"](http://go.microsoft.com/fwlink/?LinkID=255196).
+ Дополнительные сведения см. в книге [Тестирование непрерывной доставки с использованием Visual Studio 2012, глава 5 "Автоматизация системных тестов"](https://go.microsoft.com/fwlink/?LinkID=255196).
 
 ## <a name="see-also"></a>См. также раздел
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [Создание ЗАКОДИРОВАННЫХ тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Пошаговое руководство. Создание, редактирование и обслуживание закодированных](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) тестов пользовательского [интерфейса,](../test/anatomy-of-a-coded-ui-test.md) [ПОДДЕРЖИВАЕМЫХ конфигураций и платформ для закодированных тестов пользовательского интерфейса и действий Записи](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [инструкции: Вставка задержки перед ДЕЙСТВИЕМ пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Creating Coded UI Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Walkthrough: Creating, Editing and Maintaining a Coded UI Test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) [Anatomy of a Coded UI Test](../test/anatomy-of-a-coded-ui-test.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [How to: Insert a Delay Before a UI Action Using the Coded UI Test Editor](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

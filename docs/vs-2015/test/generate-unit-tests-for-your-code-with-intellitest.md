@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7b3d6a3cdb6eefd27f391dbe68a45ec3824b7de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f03490fc7ea3513a006254e3931cc1113f3bc159
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660559"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302593"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 2. Щелкните правой кнопкой мыши метод в коде и выберите пункт **Запустить IntelliTest** , чтобы создать модульные тесты для кода в используемом методе.
 
-     ![Щелкните&#45;правой кнопкой мыши в своем методе, чтобы создать модульные тесты](../test/media/runpex.png "рунпекс")
+     ![Right&#45;click in your method to generate unit tests](../test/media/runpex.png "RunPEX")
 
      IntelliTest выполняет код несколько раз с разными вводными данными. Каждое выполнение представлено в таблице с входными данными теста и выходными результатами или исключением.
 
-     ![Откроется окно "результаты исследования" с тестами](../test/media/pexexplorationresults.png "пексексплоратионресултс")
+     ![Exploration Results window is displayed with tests](../test/media/pexexplorationresults.png "PEXExplorationResults")
 
      Чтобы создать модульные тесты для всех общедоступных методов в классе, просто щелкните правой кнопкой мыши класс, а не конкретный метод. Затем выберите **Запустить IntelliTest**. Используйте раскрывающийся список в окне "Результаты просмотра", чтобы отобразить модульные тесты и входные данные для каждого метода в классе.
 
-     ![Выберите результаты теста для просмотра из списка](../test/media/selectpextest.png "селектпекстест")
+     ![Select the test results to view from the list](../test/media/selectpextest.png "SelectPEXTest")
 
      Убедитесь, что полученные результаты для выполненных тестов в столбце результатов соответствуют ожидаемому коду. Для тестов, которые завершились ошибкой, исправьте код соответствующим образом. Затем перезапустите IntelliTest для проверки исправлений.
 
@@ -52,11 +52,11 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 1. Выберите строки данных, которые следует сохранить с параметризованным модульным тестом в тестовый проект.
 
-     ![Выберите тесты; Щелкните&#45;правой кнопкой мыши и выберите Сохранить.](../test/media/savepextests.png "савепекстестс")
+     ![Select tests; right&#45;click and choose Save](../test/media/savepextests.png "SavePEXTests")
 
      Можно просмотреть тестовый проект и параметризованный модульный тест, который был создан, — отдельные модульные тесты, соответствующие каждой строке, сохраняются в файл .g.cs в тестовом проекте, а параметризованный модульный тест сохраняется в соответствующий CS-файл. Вы можете запускать модульные тесты и просматривать результаты в обозревателе тестов так же, как в случае с любыми созданными вручную модульными тестами.
 
-     ![Открыть файл класса в методе теста для просмотра модульного теста](../test/media/testmethodpex.png "тестмесодпекс")
+     ![Open class file in test method to view unit test](../test/media/testmethodpex.png "TestMethodPEX")
 
      Все необходимые ссылки также добавляются в тестовый проект.
 
@@ -68,11 +68,11 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
      Просмотрите предупреждения, чтобы решить, что следует сделать.
 
-     ![Просмотр предупреждений](../test/media/pexviewwarning.png "пексвиевварнинг")
+     ![View warnings](../test/media/pexviewwarning.png "PEXViewWarning")
 
 2. После изучения кода и выбора цели тестирования можно исправить предупреждение, чтобы выбрать классы для тестирования интерфейса.
 
-     ![Щелкните&#45;предупреждение правой кнопкой мыши и выберите команду исправить.](../test/media/pexfixwarning.png "пексфиксварнинг")
+     ![Right&#45;click the warning and choose Fix](../test/media/pexfixwarning.png "PEXFixWarning")
 
      Выбранные элементы добавляются в файл PexAssemblyInfo.cs.
 
@@ -80,7 +80,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 
 3. Теперь можно перезапустить IntelliTest, чтобы создать параметризованный модульный тест и данные теста c использованием одного только исправленного класса.
 
-     ![Повторный запуск IntelliTest для создания тестовых данных](../test/media/pexwarningsfixed.png "пексварнингсфиксед")
+     ![Rerun IntelliTest to generate the test data](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
 
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Указание. Использование IntelliTest для проверки правильности свойств, указанных в коде
  Укажите общую связь между входными и выходными данными, которые должны быть проверены созданными модульными тестами. Эта спецификация инкапсулируется в метод, который подобен методу тестирования, но связан квантором общности. Это метод параметризованного модульного теста, и все утверждения должны сохраняться для всех возможных входных значений, создаваемых IntelliTest.
@@ -120,18 +120,18 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 ### <a name="NoRun"></a> В. Можно ли создавать параметризованные модульные тесты, не запуская предварительно IntelliTest?
  **О** . Да, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**.
 
- ![Щелкните&#45;правой кнопкой мыши редактор, выберите создать IntelliTest.](../test/media/pexcreateintellitest.png "пекскреатеинтеллитест")
+ ![Right&#45;click editor, choose Create IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
 
  Примите формат по умолчанию для формирования тестов или измените способ именования вашего проекта и тестов. Вы можете создать новый тестовый проект или сохранить тесты в существующем проекте.
 
- ![Создание IntelliTest с помощью MSTest по умолчанию](../test/media/pexcreateintellitestmstest.png "пекскреатеинтеллитестмстест")
+ ![Create IntelliTest with MSTest default](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
 
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>В. Можно ли использовать другие платформы модульного тестирования с IntelliTest?
  **О** . Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md). Перезапустив Visual Studio и открыв решение повторно, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**. Выберите установленную платформу здесь:
 
- ![Выберите другую платформу модульного тестирования для IntelliTest](../test/media/pexcreateintellitestextensions.png "пекскреатеинтеллитестекстенсионс")
+ ![Select other unit test framework for IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
 
  Затем запустите IntelliTest, чтобы сформировать отдельные модульные тесты в соответствующих файлах G.CS.
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос. Можно получить более подробную информацию о создании тестов?
- **О** . Да, общий обзор приведен в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
+ **О** . Да, общий обзор приведен в этой [записи блога](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).
