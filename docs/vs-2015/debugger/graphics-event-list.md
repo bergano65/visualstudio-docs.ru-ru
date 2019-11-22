@@ -1,5 +1,5 @@
 ---
-title: Список событий графики | Документация Майкрософт
+title: Graphics Event List | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 137f3f91922a16b0e3f2a7e459a72c4381162f2e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5b1d8bdeb4497af57c385e73ff0dcd34041a2097
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704635"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297332"
 ---
 # <a name="graphics-event-list"></a>Список событий графики
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "65704635"
   
  Это список событий:  
   
- ![Список событий, которые имеют имя «Index». ](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![A list of events that have "Index" in their name.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Использование списка событий  
  Выбор события в списке событий отражается на информации, выводимой другими инструментами анализа графики. Используя список событий в сочетании с другими инструментами, можно подробно изучить проблему отрисовки, чтобы определить ее причину. Подробнее о том, как устранять проблемы отрисовки, используя список событий в сочетании с другими инструментами анализа графики, см. в статье [Примеры диагностики графики](../debugger/graphics-diagnostics-examples.md).  
@@ -71,9 +71,9 @@ ms.locfileid: "65704635"
 |Значок|Описание события|  
 |----------|-----------------------|  
 |(без значка)|Общее событие<br /> Любое событие, не являющееся пользовательским событием, пользовательской группой событий или событием Draw.|  
-|![Значок события рисования](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Событие Draw<br /> Указывает на событие Draw, произошедшее во время захваченного кадра.|  
-|![Пользователь&#45;определенные значок маркера событий](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Пользовательская группа событий<br /> Группа связанных событий, определенная приложением.|  
-|![Пользователь&#45;определенные значок маркера событий](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Пользовательский маркер события<br /> Помечает расположение, определенное приложением.|  
+|![The draw event icon](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Событие Draw<br /> Указывает на событие Draw, произошедшее во время захваченного кадра.|  
+|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Пользовательская группа событий<br /> Группа связанных событий, определенная приложением.|  
+|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Пользовательский маркер события<br /> Помечает расположение, определенное приложением.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Маркировка пользовательских событий в приложении  
  Пользовательские события относятся к определенному приложению. С их помощью можно сопоставлять важные события, происходящие в приложении, с событиями в списке событий графики. Так, можно создать пользовательские группы событий для упорядочения связанных событий, например служащих для отрисовки пользовательского интерфейса, по группам или иерархиям для более удобного просмотра списка событий или создать маркеры, связанные с отрисовкой объектов определенных типов, чтобы быстро находить соответствующие события в списке событий.  
@@ -93,7 +93,7 @@ ms.locfileid: "65704635"
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Пользовательские события в Direct3D 11 и более ранних версий  
  Чтобы создать группы и маркеры в Direct3D 11 или более ранних версий, используйте API, описанные в этом разделе. В таблице ниже приведены API, которые можно использовать для Direct3D 11 и более ранних версий.  
   
-|Описание API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Семейство API D3DPerf_ (Direct3D 11.0 и более ранних версий)|  
+|Описание API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](https://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Семейство API D3DPerf_ (Direct3D 11.0 и более ранних версий)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |Начало группы событий|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |Завершение группы событий|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -101,5 +101,5 @@ ms.locfileid: "65704635"
   
  Вы можете использовать любые API, которые поддерживает ваша версия Direct3D. Например, чтобы создать маркер события для API Direct3D 11.1, можно воспользоваться интерфейсом `SetMarker` или `D3DPerf_SetMarker`, но не интерфейсом `SetMarkerInt`, так как он доступен только в Direct3D 11.2. Кроме того, в одном приложении можно использовать сочетание API, поддерживающих различные версии Direct3D.  
   
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Отсутствие объектов вследствие состояния устройства](../debugger/walkthrough-missing-objects-due-to-device-state.md)
+## <a name="see-also"></a>См. также раздел  
+ [Пошаговое руководство. Отсутствие объектов вследствие состояния устройства](../debugger/walkthrough-missing-objects-due-to-device-state.md)

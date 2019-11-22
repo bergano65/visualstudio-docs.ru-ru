@@ -1,5 +1,5 @@
 ---
-title: Навигация по модели UML | Документация Майкрософт
+title: Navigate the UML model | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668543"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289859"
 ---
 # <a name="navigate-the-uml-model"></a>Навигация по модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,15 +24,15 @@ ms.locfileid: "72668543"
 В этом разделе представлены основные типы модели UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Элементы модели, модель и ее хранилище
- Типы, определенные в сборке **Microsoft. VisualStudio. UML. interfaces. dll** , соответствуют типам, определенным в [спецификации UML версии 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ The types defined in the assembly **Microsoft.VisualStudio.Uml.Interfaces.dll** correspond to the types defined in the [UML Specification, version 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
- Типы в спецификации UML реализуются в Visual Studio как интерфейсы. Перед именем каждого типа добавляется буква "I". Например: [IElement](/previous-versions/dd516035(v=vs.140)), [икласс](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+ Типы в спецификации UML реализуются в Visual Studio как интерфейсы. Перед именем каждого типа добавляется буква "I". For example: [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
  Все типы, кроме IElement, наследуют свойства от одного или нескольких супертипов.
 
-- Общие сведения о типах моделей см. в разделе [типы элементов модели UML](../modeling/uml-model-element-types.md).
+- For a summary of the model types, see [UML model element types](../modeling/uml-model-element-types.md).
 
-- Полные сведения об API см. в [справочнике по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
+- For full details of the API, see [API Reference for UML Modeling Extensibility](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
 ### <a name="relationships"></a>Отношения
  Свойства и связи, определенные в спецификации UML, реализуются в виде свойств .NET.
@@ -45,18 +45,18 @@ ms.locfileid: "72668543"
 
  При удалении элемента из модели все связи, в которых он был задействован, автоматически удаляются с обновлением свойства на другом конце.
 
- Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Кратность с максимальным значением больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*type* `>`.
+ Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. A multiplicity with maximum greater than 1 means that the .NET property has the type: `IEnumerable<`*Type*`>`.
 
- Дополнительные сведения о просмотре связей см. [в разделе Навигация по связям с помощью API UML](../modeling/navigate-relationships-with-the-uml-api.md).
+ For more information about traversing relationships, see [Navigate relationships with the UML API](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Дерево собственности
- Модель содержит дерево объектов [IElement](/previous-versions/dd516035(v=vs.140)) . У каждого элемента есть свойства `OwnedElements` и `Owner`.
+ A model contains a tree of [IElement](/previous-versions/dd516035(v=vs.140)) objects. У каждого элемента есть свойства `OwnedElements` и `Owner`.
 
- В большинстве случаев на свойства `Owner` и `OwnedElements` также ссылаются другие свойства с более конкретными именами. Например, каждая операция UML принадлежит классу UML. Поэтому [IOperation](/previous-versions/dd481186(v=vs.140)) имеет свойство с именем [IOperation. class](/previous-versions/dd473473%28v%3dvs.140%29)и в каждом объекте [IOperation](/previous-versions/dd481186(v=vs.140)) `Class == Owner`.
+ В большинстве случаев на свойства `Owner` и `OwnedElements` также ссылаются другие свойства с более конкретными именами. Например, каждая операция UML принадлежит классу UML. Therefore [IOperation](/previous-versions/dd481186(v=vs.140)) has a property named [IOperation.Class](/previous-versions/dd473473%28v%3dvs.140%29), and in every [IOperation](/previous-versions/dd481186(v=vs.140)) object, `Class == Owner`.
 
- Самый верхний элемент дерева, который не имеет владельца, является `AuxiliaryConstructs.IModel`ом. Имодел содержится в `IModelStore`, где это [имоделсторе. root](/previous-versions/ee789368(v=vs.140)).
+ The topmost element of the tree, which has no Owner, is an `AuxiliaryConstructs.IModel`. The IModel is contained within a `IModelStore`, in which it is the [IModelStore.Root](/previous-versions/ee789368(v=vs.140)).
 
- Каждый элемент модели создается с владельцем. Дополнительные сведения см. [в разделе Создание элементов и связей в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md).
+ Каждый элемент модели создается с владельцем. For more information, see [Create elements and relationships in UML models](../modeling/create-elements-and-relationships-in-uml-models.md).
 
  ![Схема классов: модель, схема, фигура и элемент](../modeling/media/uml-mm1.png)
 
@@ -67,7 +67,7 @@ ms.locfileid: "72668543"
 
  Фигуры упорядочиваются в виде дерева. Края дерева представлены свойствами ParentShape и ChildShapes. Схемы — это единственные фигуры, у которых нет родительских объектов. Фигуры на поверхности схемы состоят из более мелких частей. Например, у фигуры класса есть секции для атрибутов и операций.
 
- Дополнительные сведения о фигурах см. [в разделе Отображение UML-модели на схемах](../modeling/display-a-uml-model-on-diagrams.md).
+ For more information about shapes, see [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
 
 ## <a name="access-to-the-model-in-extensions"></a>Доступ к модели в расширениях
  В расширениях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], определенных в качестве компонентов MEF, можно объявить свойства, импортирующие данные из контекста, в котором выполняется расширение.
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Доступ к другой модели или схемам
  Можно выполнить следующие действия.
 
-- Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. [в разделе Интеграция моделей UML с другими моделями и инструментами](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+- Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. For more information, see [Integrate UML models with other models and tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- Загружайте проект и схемы моделирования в режиме только для чтения, не делая их видимыми в пользовательском интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. [в разделе Чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).
+- Загружайте проект и схемы моделирования в режиме только для чтения, не делая их видимыми в пользовательском интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. For more information, see [Read a UML model in program code](../modeling/read-a-uml-model-in-program-code.md).
 
-- Откройте проект моделирования и его схемы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и начните работу с содержимым. Дополнительные сведения см. [в статье открытие модели UML с помощью API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
+- Откройте проект моделирования и его схемы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и начните работу с содержимым. For more information, see [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
 ## <a name="see-also"></a>См. также
 

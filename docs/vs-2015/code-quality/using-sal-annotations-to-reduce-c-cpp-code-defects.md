@@ -1,5 +1,5 @@
 ---
-title: Использование аннотаций SAL для сокращения количества дефектов кода C / C++ | Документация Майкрософт
+title: Using SAL Annotations to Reduce C-C++ Code Defects | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,54 +13,54 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201213"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291887"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Использование аннотаций SAL для сокращения количества дефектов в коде C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-SAL является языка заметок для исходного кода Microsoft. С помощью заметок исходного кода, можно сделать целью за ваш код явной. Эти заметки также включить средства автоматического статического анализа, чтобы более точно, анализ кода с помощью значительно меньше ложных положительных и ложных отрицательных результатов.  
+SAL is the Microsoft source code annotation language. By using source code annotations, you can make the intent behind your code explicit. These annotations also enable automated static analysis tools to analyze your code more accurately, with significantly fewer false positives and false negatives.  
   
- Статьи в этом разделе документации обсуждаются аспекты SAL, предоставить ссылку на синтаксисе SAL и приводятся примеры его использования.  
+ The articles in this section of the documentation discuss aspects of SAL, provide reference for SAL syntax, and give examples of its use.  
   
 - [Основные сведения о языке SAL](../code-quality/understanding-sal.md)  
   
-     Содержит сведения и примеры, демонстрирующие основные примечания SAL.  
+     Provides information and examples that show the core SAL annotations.  
   
 - [Создание примечаний к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)  
   
-     Содержит список аннотаций SAL для функций и параметров функции.  
+     Lists the SAL annotations for functions and function parameters.  
   
 - [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)  
   
-     Содержит список аннотаций SAL для функций и поведение функции.  
+     Lists the SAL annotations for functions and function behavior.  
   
 - [Аннотация структур и классов](../code-quality/annotating-structs-and-classes.md)  
   
-     Содержит список аннотаций SAL для структуры и классы.  
+     Lists the SAL annotations for structures and classes.  
   
 - [Аннотация поведения блокировки](../code-quality/annotating-locking-behavior.md)  
   
-     В этой статье описывается использование аннотаций SAL с механизмами блокировки.  
+     Explains how to use SAL annotations with lock mechanisms.  
   
 - [Указание времени и места применения примечания](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
-     Список заметок SAL, задающие условия, либо рамки другие примечания SAL (размещения).  
+     Lists the SAL annotations that specify the condition or scope (placement) of other SAL annotations.  
   
 - [Встроенные функции](../code-quality/intrinsic-functions.md)  
   
-     Список встроенных заметки SAL.  
+     Lists the intrinsic SAL annotations.  
   
 - [Рекомендации и примеры](../code-quality/best-practices-and-examples-sal.md)  
   
-     Примеры, показывающие, как использовать заметки SAL. Также описываются типичные проблемы.  
+     Provides examples that show how to use SAL annotations. Also explains common pitfalls.  
   
 ## <a name="related-resources"></a>Связанные ресурсы  
- [Блог команды анализа кода](http://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>См. также  
- [SAL 2.0 заметок для драйверов Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
+## <a name="see-also"></a>См. также раздел  
+ [SAL 2.0 Annotations for Windows Drivers](https://go.microsoft.com/fwlink/?LinkId=250979)

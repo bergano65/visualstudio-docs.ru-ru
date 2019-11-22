@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dee5cff8700e5748832792c1056b51a878e3f3b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 63673dd42987154d69346505c8e1f80b3b4789e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696896"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297755"
 ---
 # <a name="application-timeline"></a>Временная шкала приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ ms.locfileid: "65696896"
 5. Windows 7  
   
 > [!NOTE]
-> Вы можете собирать и анализировать данные о загрузке ЦП и энергопотреблении вместе с данными средства **Временная шкала приложения** . См. в разделе [запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Вы можете собирать и анализировать данные о загрузке ЦП и энергопотреблении вместе с данными средства **Временная шкала приложения** . See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Сбор данных временной шкалы приложения  
- Скорость реагирования приложения можно профилировать на локальном компьютере, подключенном устройстве, симуляторе или эмуляторах Visual Studio либо на удаленном устройстве. См. в разделе [запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Скорость реагирования приложения можно профилировать на локальном компьютере, подключенном устройстве, симуляторе или эмуляторах Visual Studio либо на удаленном устройстве. See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
 > Если это возможно, запустите приложение непосредственно на устройстве. Производительность приложения, наблюдаемая на имитаторе или посредством подключения к удаленному рабочему столу, может отличаться от фактической производительности на устройстве. С другой стороны, сбор данных с помощью инструментов удаленной отладки Visual Studio не влияет на данные о производительности.  
@@ -50,12 +50,12 @@ ms.locfileid: "65696896"
   
 1. Откройте приложение XAML.  
   
-2. Выберите **Отладка/профилировщик производительности**. Должен появиться список средств профилирования в окне DIAGSESSION.  
+2. Click **Debug / Performance Profiler...** . You should see a list of profiling tools in the .diagsession window.  
   
 3. Выберите **Временная шкала приложения** и щелкните **Запустить** в нижней части окна.  
   
     > [!NOTE]
-    > Может появиться окно «Контроль учетных записей» с запросом на разрешение запуска файла VsEtwCollector.exe. Нажмите кнопку **Да**.  
+    > Может появиться окно «Контроль учетных записей» с запросом на разрешение запуска файла VsEtwCollector.exe. Щелкните **Да**.  
   
 4. Запустите интересующий вас сценарий профилирования в приложении, чтобы собрать данные о производительности.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "65696896"
   
      Visual Studio анализирует собранные данные и отображает результаты.  
   
-     ![Отчет профилировщика временной шкалы](../profiling/media/timeline-base.png "TIMELINE_Base")  
+     ![Timeline profiler report](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
 ## <a name="BKMK_Analyze_Timeline_profiling_data"></a> Анализ данных профилирования средства "Временная шкала"  
  После сбора данных профилирования выполните следующие действия для запуска анализа.  
@@ -76,19 +76,19 @@ ms.locfileid: "65696896"
  Средство **Временная шкала приложения** отображает данные о времени для сценариев, категорий и событий, которые относятся к производительности XAML.  
   
 ### <a name="BKMK_Diagnostic_session_timeline"></a> Временная шкала диагностического сеанса  
- ![Временная шкала производительности и диагностики](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
+ ![Performance and Diagnostics timeline](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  На линейке в верхней части страницы отображается временная шкала профилированной информации. Эта шкала применяется для диаграмм **Использование потока пользовательского интерфейса** и **Пропускная способность визуализации** . Область отчета можно сузить, перетащив панели навигации на временной шкале, чтобы выбрать ее сегмент.  
   
  На временной шкале также отображаются все вставленные пользовательские отметки и события жизненного цикла активации приложения.  
   
 ### <a name="BKMK_UI_thread_utilization_graph"></a> Диаграмма использования потока пользовательского интерфейса  
- ![Диаграмма использования ЦП](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
+ ![Граф использования ЦП](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
   
  Диаграмма **Использование потока пользовательского интерфейса (%)** представляет собой линейчатую диаграмму, которая отображает относительный объем потраченного времени в категории в ходе сбора данных.  
   
 ### <a name="BKMK_Visual_throughput_FPS_graph"></a> Диаграмма пропускной способности визуализации (кадров/с)  
- ![Диаграмма пропускной способности визуализации](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
+ ![График пропускной способности визуализации](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  На диаграмме **Пропускная способность визуализации (кадров/с)** отображается число кадров в секунду в пользовательском интерфейсе и потоке компоновки приложения.  
   
@@ -115,11 +115,11 @@ ms.locfileid: "65696896"
 |||  
 |-|-|  
 |**Сортировать по**|Сортировка по времени начала или длительности событий.|  
-|![Группировка событий по кадру](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Добавляет или удаляет категорию **Кадр** верхнего уровня, которая группирует события по кадрам.|  
-|![Фильтрация списка сведений о временной шкале](../profiling/media/timeline-filter.png "TIMELINE_Filter")|Фильтрует список по выбранным категориям и длительности событий.|  
-|![Настройка сведений о временной шкале](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Позволяет указать заметки для событий.|  
+|![Group events by frame](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Добавляет или удаляет категорию **Кадр** верхнего уровня, которая группирует события по кадрам.|  
+|![Filter Timeline details list](../profiling/media/timeline-filter.png "TIMELINE_Filter")|Фильтрует список по выбранным категориям и длительности событий.|  
+|![Customize Timeline details information](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Позволяет указать заметки для событий.|  
   
-## <a name="see-also"></a>См. также  
- [Блог группы разработчиков WPF: Новое средство анализа производительности пользовательского интерфейса для приложений WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+## <a name="see-also"></a>См. также раздел  
+ [Блог группы разработчиков WPF. Новое средство анализа производительности пользовательского интерфейса для приложений WPF.](https://devblogs.microsoft.com/wpf/new-ui-performance-analysis-tool-for-wpf-applications/)   
  [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Улучшение производительности приложений WPF](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

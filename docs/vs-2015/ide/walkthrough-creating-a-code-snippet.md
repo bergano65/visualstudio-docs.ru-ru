@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3cf8d0cfd3119113247dedf7723e02fca9634a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662650"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296826"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72662650"
 Фрагмент кода можно создать всего в несколько шагов. Все, что необходимо сделать, — это создать XML-файл, заполнить соответствующие элементы и добавить в него код. В код можно также добавить ссылки и параметры замены. Вы можете добавить фрагмент в папку установки Visual Studio с помощью кнопки "Импорт" в диспетчере фрагментов кода (**Сервис/Диспетчер фрагментов кода**).
 
 > [!TIP]
-> Сведения о том, как упростить написание фрагментов кода, можно найти на веб-сайте CodePlex для таких средств сообщества, как [Редактор фрагментов](http://go.microsoft.com/fwlink/?LinkId=251033).
+> For information about how to write code snippets more easily, search the CodePlex website for community tools such as [Snippet Editor](https://go.microsoft.com/fwlink/?LinkId=251033).
 
 ## <a name="snippet-template"></a>Шаблон фрагмента
  Ниже приведен простой шаблон фрагмента.
@@ -56,7 +56,7 @@ ms.locfileid: "72662650"
 
 1. Создайте XML-файл в Visual Studio и добавьте показанный выше шаблон.
 
-2. Заполните заголовок фрагмента кода, например "Hello World VB", в элементе Title.
+2. Fill in the title of the snippet, e.g. "Hello World VB", in the Title element.
 
 3. Укажите язык фрагмента в атрибуте Languages элемента Code. Для этого примера используйте значение "VB".
 
@@ -85,13 +85,13 @@ ms.locfileid: "72662650"
 
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`
 
-6. Протестируйте фрагмент, открыв проект Visual Basic и открыв файл кода. В файле щелкните **Вставить фрагмент** в контекстном меню, а затем — **Мои фрагменты кода**. Вы должны увидеть фрагмент с именем **Мой фрагмента кода Visual Basic**. Дважды щелкните его.
+6. Протестируйте фрагмент, открыв проект Visual Basic и открыв файл кода. In the file click **Insert Snippet** on the context menu, then **My Code Snippets**. Вы должны увидеть фрагмент с именем **Мой фрагмента кода Visual Basic**. Дважды щелкните его.
 
-7. Вы должны увидеть `Console.WriteLine("Hello, World!")`, вставленные в код.
+7. You should see `Console.WriteLine("Hello, World!")` inserted in the code.
 
 ### <a name="adding-description-and-shortcut-fields"></a>Добавление полей Description и Shortcut
 
-1. Поля Description предоставляют дополнительные сведения о вашем фрагменте кода при просмотре в диспетчере фрагментов кода. Ярлык — это тег, который пользователи могут вводить для вставки фрагмента. Измените добавленный фрагмент, открыв файл `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. Поля Description предоставляют дополнительные сведения о вашем фрагменте кода при просмотре в диспетчере фрагментов кода. Ярлык — это тег, который пользователи могут вводить для вставки фрагмента. Edit the snippet you have added by opening the file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
 
 2. Добавьте элементы Author и Description в элемент Header и заполните их.
 
@@ -122,11 +122,11 @@ ms.locfileid: "72662650"
 
 6. Сохраните файл фрагмента еще раз.
 
-7. Чтобы протестировать ярлык, откройте проект Visual Basic и откройте файл кода. Введите `hello` в файле и нажмите клавишу TAB. Необходимо вставить код фрагмента.
+7. Чтобы протестировать ярлык, откройте проект Visual Basic и откройте файл кода. Type `hello` in the file and press TAB. The snippet code should be inserted.
 
 ### <a name="to-add-references-and-imports"></a>Добавление ссылок и объявлений импорта
 
-1. С помощью Visual Basic фрагментов можно добавить ссылку на проект, используя элемент References, и добавить объявление Imports с помощью элемента Imports. (Фрагменты кода на других языках не имеют этой функции.) Например, при изменении `Console.WriteLine` в примере кода для `MessageBox.Show` может потребоваться добавить сборку System. Windows. Forms. dll в проект.
+1. With Visual Basic snippets you can add a reference to a project by using the References element, and add an Imports declaration by using the Imports element. (Snippets in other languages do not have this feature.) For example, if you change `Console.WriteLine` in the code example to `MessageBox.Show`, you may need to add the System.Windows.Forms.dll assembly to the project.
 
 2. Откройте фрагмент.
 
@@ -248,7 +248,7 @@ ms.locfileid: "72662650"
 
 8. Откройте проект Visual Basic и добавьте фрагмент.
 
-9. Код должен выглядеть так, как показано ниже. Замены `SQL connection string` и `dcConnection` выделены светло-оранжевым цветом. Нажмите клавишу TAB, чтобы переходить от одного к другому.
+9. Код должен выглядеть так, как показано ниже. Замены `SQL connection string` и `dcConnection` выделены светло-оранжевым цветом. Press TAB to navigate from one to the other.
 
     ```
     Dim daCustomers As SqlDataAdapter

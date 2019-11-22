@@ -1,5 +1,5 @@
 ---
-title: Настройка поведения копирования | Документация Майкрософт
+title: Customizing Copy Behavior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdd45a1de7e2882626d9b12db9be4b0c7a36eb38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655055"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301188"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "72655055"
 В доменном языке, созданном с помощью пакета SDK для визуализации и моделирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно контролировать, что происходит, когда пользователь копирует и вставляет элементы.
 
 ## <a name="standard-copy-and-paste-behavior"></a>Стандартное поведение копирования и вставки
- Чтобы включить копирование, задайте свойство **включить копирование вставки** в узле **Редактор** в обозревателе DSL.
+ To enable copying, set the **Enable Copy Paste** property of the **Editor** node in DSL Explorer.
 
  По умолчанию, когда пользователь копирует элементы в буфер обмена, также копируются следующие элементы.
 
@@ -32,7 +32,7 @@ ms.locfileid: "72655055"
 
   Это правило применяется к скопированным элементам и связям рекурсивно.
 
-  ![Скопированные и вставленные элементы](../modeling/media/dslcopypastedefault.png "дслкопипастедефаулт")
+  ![Copied and pasted elements](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
 
   Скопированные элементы и связи сериализуются и сохраняются в <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), который размещается в буфере обмена.
 
@@ -41,19 +41,19 @@ ms.locfileid: "72655055"
   Пользователь может вставить скопированные элементы в целевой объект, который может принять их в соответствии с определением DSL. Например, в DSL, созданном из шаблона решения компонентов, пользователь может вставить порты в компоненты, но не в схему, а также вставить компоненты в схему, но не в другие компоненты.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Настройка поведения копирования и вставки
- Дополнительные сведения о настройке модели с помощью программного кода см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
+ For more information about customizing the model by using program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- **Включение или отключение копирования, вырезания и вставки.**
-В обозревателе DSL установите свойство **включить копирование вставки** в узле **Редактор** .
+ **Enable or disable copy, cut, and paste.**
+In DSL Explorer, set the **Enable Copy Paste** property of the **Editor** node.
 
- **Скопируйте ссылки на один и тот же целевой объект.** например, чтобы скопировать поле для комментариев, связанное с тем же элементом темы.
-Задайте для свойства **распространение копии** роли значение **распространить копию только для ссылки**. Дополнительные сведения см. в разделе [Настройка поведения копирования ссылок](#customizeLinks).
+ **Copy links to the same target.** например, чтобы скопировать поле для комментариев, связанное с тем же элементом темы.
+Set the **Propagates Copy** property of the role to **Propagate copy to link only**. For more information, see [Customizing Link Copy Behavior](#customizeLinks).
 
  Скопируйте связанные элементы. Например, при копировании нового элемента также делаются копии всех связанных полей комментариев.
-Установите свойство **распространяет копию** роли, чтобы **распространить копию на ссылку и противоположный исполнитель роли**. Дополнительные сведения см. в разделе [Настройка поведения копирования ссылок](#customizeLinks).
+Set the **Propagates Copy** property of the role to **Propagate copy to link and opposite role player**. For more information, see [Customizing Link Copy Behavior](#customizeLinks).
 
- **Быстро дублировать элементы путем копирования и вставления.** Обычно элемент, который только что был скопирован, остается выбран, и в него нельзя вставить такой же тип элемента.
-Добавьте директиву слияния элементов в класс домена и настройте его на передачу слияний в родительский класс. Это будет также влиять на операции перетаскивания. Дополнительные сведения см. в разделе [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md).
+ **Rapidly duplicate elements by copying and pasting.** Обычно элемент, который только что был скопирован, остается выбран, и в него нельзя вставить такой же тип элемента.
+Добавьте директиву слияния элементов в класс домена и настройте его на передачу слияний в родительский класс. Это будет также влиять на операции перетаскивания. For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).
 
  \- или -
 
@@ -77,21 +77,21 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Создавать дополнительные ссылки, когда пользователь помещается на выбранный целевой объект.** Например, когда поле для комментариев вставляется в элемент, между ними создается связь.
-Добавьте директиву слияния элементов в целевой класс домена и настройте его на обработку слияния добавлением связей. Это будет также влиять на операции перетаскивания. Дополнительные сведения см. в разделе [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md).
+ **Create additional links when the user pastes onto a selected target.** Например, когда поле для комментариев вставляется в элемент, между ними создается связь.
+Добавьте директиву слияния элементов в целевой класс домена и настройте его на обработку слияния добавлением связей. Это будет также влиять на операции перетаскивания. For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).
 
  \- или -
 
  Переопределите `ClipboardCommandSet.ProcessOnPasteCommand()` для создания дополнительных связей после вызова базового метода.
 
- **Настройте форматы, в которых элементы могут быть скопированы** во внешние приложения, например, чтобы добавить границу в форму точечного рисунка.
-Переопределите `ClipboardCommandSet.ProcessOnMenuCopyCommand()` *мидсл* в проекте DslPackage.
+ **Customize the formats in which elements can be copied** to external applications – for example, to add a border to the bitmap form.
+Override *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` in the DslPackage project.
 
- **Настройка копирования элементов в буфер обмена с помощью команды Copy, но не в операции перетаскивания.**
-Переопределите `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *мидсл* в проекте DslPackage.
+ **Customize how elements are copied to the clipboard by the copy command, but not in a drag operation.**
+Override *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` in the DslPackage project.
 
- **Сохранение макета фигуры с помощью копирования и вставки.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](http://go.microsoft.com/fwlink/?LinkId=213879).
+ **Preserve shape layout through copy and paste.**
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. This technique is demonstrated by the example at [VMSDK: Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879).
 
  Чтобы достигнуть такого эффекта, добавьте фигуры и соединители в скопированный ElementGroupPrototype. Самый удобный метод переопределения — это ElementOperations.CreateElementGroupPrototype(). Для этого добавьте в проект Dsl следующий код:
 
@@ -147,8 +147,8 @@ partial class MyDslDiagram // EDIT NAME
 
 ```
 
- **Вставка фигур в выбранном месте, например текущей позиции курсора.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](http://go.microsoft.com/fwlink/?LinkId=213879).
+ **Paste shapes in a chosen location, such as the current cursor position.**
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. This technique is demonstrated by the example at [VMSDK: Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879).
 
  Для достижения такого эффекта переопределите `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, чтобы использовать версию `ElementOperations.Merge()`, зависящую от местоположения. Для этого добавьте в проект DslPackage следующий код:
 
@@ -214,13 +214,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   }
 ```
 
- **Позволяют пользователю перетаскивать элементы.**
-См. раздел [как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md).
+ **Let the user drag and drop elements.**
+See [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizeLinks"></a>Настройка поведения копирования ссылок
- Когда пользователь копирует элемент, стандартное поведение заключается в том, что также копируются все внедренные элементы. Стандартное поведение копирования можно изменить. В определении DSL выберите роль с одной стороны связи и в окно свойств установите значение свойства **распространяет копирование** .
+## <a name="customizeLinks"></a> Customizing Link Copy Behavior
+ Когда пользователь копирует элемент, стандартное поведение заключается в том, что также копируются все внедренные элементы. Стандартное поведение копирования можно изменить. In the DSL Definition, select a role at one side of a relationship and in the Properties window set the **Propagates Copy** value.
 
- ![Распространяет свойство Copy роли домена](../modeling/media/dslpropagatescopy.png "дслпропагатескопи")
+ ![Propagates Copy property of domain role](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
 
  Поддерживается три значения:
 
@@ -230,7 +230,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 - Распространить копирование на исполнителя противоположной роли: скопированная группа включает копию элемента на другом конце связи.
 
-  ![Результат копирования с помощью Пропагатекопитолинконли](../modeling/media/dslpropagatecopy.png "дслпропагатекопи")
+  ![Effect of copying with PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
 
   Сделанные изменения повлияют на элементы и скопированное изображение.
 
@@ -238,17 +238,17 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Многие аспекты поведения доменного языка в отношении копирования, вставки, создания и удаления объектов определяются экземпляром <xref:Microsoft.VisualStudio.Modeling.ElementOperations>, который соединен со схемой. Можно изменить поведение доменного языка, создав собственный производный класс из класса <xref:Microsoft.VisualStudio.Modeling.ElementOperations> и переопределив свойство <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> класса схемы.
 
 > [!TIP]
-> Дополнительные сведения о настройке модели с помощью программного кода см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> For more information about customizing the model by using program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Схема последовательностей для операции копирования](../modeling/media/dslcopyseqdiagram.png "дслкописекдиаграм")
+ ![Sequence diagram for the Copy operation](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
 
- ![Схема последовательностей операции вставки](../modeling/media/dslpasteseqdiagram.png "дслпастесекдиаграм")
+ ![Sequence diagram of Paste operation](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
 
 #### <a name="to-define-your-own-elementoperations"></a>Определение собственного ElementOperations
 
 1. В новом файле проекта доменного языка создайте класс, производный от класса <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Добавьте определение разделяемого класса для класса схемы. Имя этого класса можно найти в **дсл\женератедкоде\диаграмс.КС**.
+2. Добавьте определение разделяемого класса для класса схемы. The name of this class can be found in **Dsl\GeneratedCode\Diagrams.cs**.
 
     В классе диаграммы переопределите свойство <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>, чтобы получить экземпляр подкласса ElementOperations. Необходимо вернуть тот же самый экземпляр в каждом классе.
 
@@ -287,16 +287,16 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Получение элементов, перетаскиваемых из других моделей
- ElementOperations можно также использовать для определения поведения копирования, перемещения, удаления и перетаскивания. Для демонстрации использования ElementOperations в приведенном ниже примере определяется пользовательское поведение перетаскивания. Однако для этой цели можно рассмотреть альтернативный подход, описанный в разделе [как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md), который является более расширяемым.
+ ElementOperations можно также использовать для определения поведения копирования, перемещения, удаления и перетаскивания. Для демонстрации использования ElementOperations в приведенном ниже примере определяется пользовательское поведение перетаскивания. However, for that purpose you might consider the alternative approach described in [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md), which is more extensible.
 
  Определите два метода в классе ElementOperations:
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`, который определяет, можно ли перетащить элемент источника на целевую фигуру, соединитель или схему.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` which determines whether the source element can be dragged onto the target shape, connector or diagram.
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`, который объединяет исходный элемент в целевой объект.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` which combines the source element into the target.
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()` вызывается для определения отзывов, которые должны быть предоставлены пользователю при перемещении мыши по схеме. Для метода используются следующие параметры: элемент, на который наводится указатель мыши, и данные об источнике, из которого была выполнена операция перетаскивания. Пользователь может перетащить элемент из любого места экрана, поэтому исходный объект может быть разных типов и сериализован в разных форматах. Если источник является доменным языком или моделью UML, параметр данных является сериализацией <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Операции перетаскивания, копирования и панели инструментов используют ElementGroupPrototypes для представления фрагментов моделей.
+ `CanMerge()` is called to determine feedback that should be given to the user as the mouse moves across the diagram. Для метода используются следующие параметры: элемент, на который наводится указатель мыши, и данные об источнике, из которого была выполнена операция перетаскивания. Пользователь может перетащить элемент из любого места экрана, поэтому исходный объект может быть разных типов и сериализован в разных форматах. Если источник является доменным языком или моделью UML, параметр данных является сериализацией <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Операции перетаскивания, копирования и панели инструментов используют ElementGroupPrototypes для представления фрагментов моделей.
 
  Прототип группы элементов может содержать любое количество элементов и связей. Типы элементов можно идентифицировать по их GUID. GUID принадлежит перетащенной фигуре, а не базовому элементу модели. В следующем примере `CanMerge()` возвращает значение true, если фигура класса из диаграммы UML перетаскивается в эту схему.
 
@@ -375,9 +375,9 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Стандартное поведение копирования
  Код в этом разделе включает методы, которые можно переопределить для изменения поведения копирования. Чтобы показать вам, как можно настроить код в соответствии с индивидуальными требованиями, в этом разделе представлен код, которые переопределяет методы, задействованные в копировании, но не изменяет стандартное поведение.
 
- Когда пользователь нажимает сочетание клавиш CTRL + C или применяет команду меню "Копировать", вызывается метод <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. Вы можете увидеть, как это настроить в **Дслпаккаже\женератед коде\коммандсет.КС**. Дополнительные сведения о настройке команд см. в разделе [инструкции. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Когда пользователь нажимает сочетание клавиш CTRL + C или применяет команду меню "Копировать", вызывается метод <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. You can see how this is set up in **DslPackage\Generated Code\CommandSet.cs**. For more information about how commands are set up, see [How to: Add a Command to the Shortcut Menu](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Можно переопределить Процессонменукопикомманд, добавив определение разделяемого класса *мидсл* `ClipboardCommandSet` в проект DslPackage.
+ You can override ProcessOnMenuCopyCommand by adding a partial class definition of *MyDsl*`ClipboardCommandSet` in the DslPackage project.
 
 ```csharp
 using System.Collections.Generic;
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>См. также раздел
- [Настройка создания элементов и перемещение](../modeling/customizing-element-creation-and-movement.md) [инструкций. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) [Настройка поведения при удалении](../modeling/customizing-deletion-behavior.md) [. Пример: схемы канала VMSDK пример](http://go.microsoft.com/fwlink/?LinkId=213879)
+ [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md) [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md) [Customizing Deletion Behavior](../modeling/customizing-deletion-behavior.md) [Sample: VMSDK Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879)

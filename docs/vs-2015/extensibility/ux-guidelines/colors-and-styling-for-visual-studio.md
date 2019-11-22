@@ -8,102 +8,102 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68176962"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291603"
 ---
-# <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
+# <a name="colors-and-styling-for-visual-studio"></a>Colors and Styling for Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="using-color-in-visual-studio"></a>С помощью цвета в Visual Studio
- В Visual Studio он используется главным образом в качестве средства коммуникации, не так же, как и оформление. Как минимум используйте цвет и зарезервировать его для ситуаций, где вы хотите:
+## <a name="using-color-in-visual-studio"></a>Using color in Visual Studio
+ In Visual Studio, color is used primarily as a communication tool, not just as decoration. Use color minimally and reserve it for situations where you want to:
 
-- Связь значения или объединением (например, платформы или языка модификаторы)
+- Communicate meaning or affiliation (for example, platform or language modifiers)
 
-- Привлечение внимания (например, указывающей на изменение состояния)
+- Attract attention (for example, indicating a status change)
 
-- Улучшить читаемость и предоставить ориентиров для навигации в пользовательском Интерфейсе
+- Improve readability and provide landmarks for navigating the UI
 
-- Увеличить desirability
+- Increase desirability
 
-  Существует несколько вариантов для назначения цветов для элементов пользовательского интерфейса в Visual Studio. Иногда может быть трудно рис out какой вариант вы должны использовать или правильно его использовать. В этом разделе помогут вам:
+  Several options exist for assigning colors to UI elements in Visual Studio. Sometimes it can be difficult to figure out which option you’re supposed to use, or how to use it correctly. This topic will help you:
 
-1. Сведения о различных служб и систем, используемых для определения цветов в Visual Studio.
+1. Understand the different services and systems used to define colors in Visual Studio.
 
-2. Выберите правильный параметр для данного элемента.
+2. Select the correct option for a given element.
 
-3. Правильно используйте параметр, которую вы выбрали.
+3. Correctly use the option you have chosen.
 
-   **ВАЖНО:** Никогда не следует жестко кодировать hex, RGB или системных цветов для элементов пользовательского интерфейса. Использование служб обеспечивает гибкость в настройке hue. Кроме того, без службы, не можно пользоваться преимуществами возможностей Переключение тем [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+   **IMPORTANT:** Never hardcode hex, RGB, or system colors to your UI elements. Using the services allows for flexibility in tuning hue. Additionally, without the service, you will not be able to take advantage of the theme-switching capabilities of the [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
-### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Элементы интерфейса методы для назначения цвета для Visual Studio
- Выберите метод, который лучше всего подходит для элементов пользовательского интерфейса.
+### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Methods for assigning color to Visual Studio interface elements
+ Choose the method best suited to your UI elements.
 
-|Пользовательский Интерфейс|Метод|Что это такое?|
+|Your UI|Метод|What are they?|
 |-------------|------------|--------------------|
-|С внедренными или автономный диалоговым окнам.|**Системные цвета**|Системными именами, которые позволяют операционной системы определить цвет и внешний вид элементов пользовательского интерфейса, такие как для общих элементов управления диалогового окна.|
-|У вас есть пользовательский Интерфейс, необходимый для согласования с общей среды VS и у вас есть элементы пользовательского интерфейса, соответствующие категории и семантическое значение общих маркеров.|**Стандартные общие цвета**|Существующие имена токенов предопределенного цвета для конкретных элементов пользовательского интерфейса|
-|Вы располагаете соглашением отдельных компонентов или набор компонентов и общий цвет для аналогичных элементов отсутствует.|**Пользовательские цвета**|Цвет маркера имена, которые относятся к области и не предназначен для совместного использования с другой пользовательский Интерфейс|
-|Вы хотите разрешить конечным пользователям изменять пользовательский Интерфейс или содержимое (например, для текстовых редакторов или специализированные конструктора windows).|**Настройка конечного пользователя**<br /><br /> **(Сервис > Параметры диалогового окна)**|Параметры, определенные на странице «Шрифты и цвета» **Сервис > Параметры** диалогового окна или специализированные страницы, относящиеся к одной возможности пользовательского интерфейса.|
+|You have embedded or standalone dialog boxes.|**System colors**|System names that allow the operating system to define the color and appearance of the UI elements, such as for common dialog controls.|
+|You have custom UI that you want to be consistent with the overall VS environment and you have UI elements that match the category and semantic meaning of the shared tokens.|**Common shared colors**|Existing predefined color token names for specific UI elements|
+|You have an individual feature or group of features and there is no shared color for similar elements.|**Custom colors**|Color token names that are specific to an area and not meant to be shared with other UI|
+|You want to allow the end user to customize UI or content (for example, for text editors or specialized designer windows).|**End-user customization**<br /><br /> **(Tools > Options dialog)**|Settings defined in the “Fonts and Colors” page of the **Tools > Options** dialog or a specialized page specific to one UI feature.|
 
-### <a name="visual-studio-themes"></a>Тем Visual Studio
- Visual Studio содержит три разных цветовых тем: светлую, темную или синюю. Она также обнаруживает режим высокой контрастности, который используется во всей системе цветовую схему для специальных возможностей.
+### <a name="visual-studio-themes"></a>Visual Studio themes
+ Visual Studio features three different color themes: light, dark, and blue . It also detects High Contrast mode, which is a system-wide color theme designed for accessibility.
 
- Пользователям будет предложено выбрать тему при их первом использовании Visual Studio и могут переключать темы позже, выбрав **Сервис > Параметры > среда > Общие** и выбрав новую тему из раскрывающегося списка «Цветовая тема».
+ Users are prompted to select a theme during their first use of Visual Studio and are able to switch themes later by going to **Tools > Options > Environment > General** and choosing a new theme from the “color theme” dropdown menu.
 
- Пользователи также могут использовать панель управления для переключения их всей системы в один из нескольких тем высокой контрастности. Если пользователь выбирает тему с высокой контрастностью, затем средство выбора темы цвета Visual Studio больше не влияет на цветов в Visual Studio, несмотря на то, что любое изменение темы сохраняются для, когда пользователь выходит из режима высокой контрастности. Дополнительные сведения о режиме высокой контрастности, см. в разделе [Выбор высокой контрастности цветов](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
+ Users can also use Control Panel to switch their entire systems into one of several High Contrast themes. If a user selects a High Contrast theme, then the Visual Studio color theme selector no longer affects colors in Visual Studio, although any theme changes are saved for when the user exits High Contrast mode. For more information about High Contrast mode, see [Choosing High Contrast colors](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
 
-### <a name="the-vscolor-service"></a>VSColor service
- Visual Studio предоставляет службе цвета среды, известный как VSColor service, который позволяет выполнять привязку значения цвета элементов пользовательского интерфейса для именованную запись, содержащую значения цвета для каждой темы Visual Studio. Это гарантирует, что цвета автоматически изменится в соответствии с текущей выбранной пользователем темы или системных режима высокой контрастности. Использование службы означает, что реализацию всех изменений в связанные темы цвета обрабатывается в одном месте, и если вы используете стандартные общие цвета из службы, пользовательский Интерфейс будет автоматически отражать новые темы в будущих версиях Visual Studio.
+### <a name="the-vscolor-service"></a>The VSColor service
+ Visual Studio provides an environment color service, known as the VSColor service, which allows you to bind the color values of your UI elements to a named entry containing color values for each Visual Studio theme. This ensures that your colors will automatically change to reflect the current user-selected theme or system High Contrast mode. Use of the service means that the implementation of all theme-related color changes is handled in one place, and if you are using common shared colors from the service, your UI will automatically reflect new themes in future versions of Visual Studio.
 
 ### <a name="implementation"></a>Реализация
- Исходный код Visual Studio включает в себя несколько файлов определения пакета, содержащих списки имена токенов и значений соответствует цвету для каждой темы. Цвет служба считывает VSColors, определенные в этих файлах определений пакетов. Эти цвета ссылки в разметке XAML или в коде, а затем загружаются через **IVsUIShell5.GetThemedColor** метода или сопоставление DynamicResource.
+ The Visual Studio source code includes several package definition files that contain lists of token names and the respective color values for each theme. The color service reads the VSColors defined in these package definition files. These colors are referenced in XAML markup or in code and then loaded through either the **IVsUIShell5.GetThemedColor** method or a DynamicResource mapping.
 
-### <a name="system-colors"></a>Системные цвета
- Стандартные элементы управления, чтобы ссылаться на системные цвета по умолчанию. Если вы хотите использовать системные цвета, например при создании внедренного или на отдельном диалоговом окне пользовательского интерфейса не нужно ничего делать.
+### <a name="system-colors"></a>System colors
+ Common controls reference the system colors by default. If you want your UI to use system colors, such as when you are creating an embedded or standalone dialog, you don’t need to do anything.
 
-### <a name="common-shared-colors-in-the-vscolor-service"></a>Стандартные общие цвета в VSColor service
- Ваши элементы интерфейса должны отражать всей средой Visual Studio. Повторно используя стандартные общие цвета, которые подходят для компонентов пользовательского интерфейса, которые вы разрабатываете, убедитесь, что интерфейс согласуется с другими интерфейсами Visual Studio и что цвета будут обновляться автоматически при добавлении или обновлении тем.
+### <a name="common-shared-colors-in-the-vscolor-service"></a>Common shared colors in the VSColor service
+ Your interface elements should reflect the overall Visual Studio environment. By reusing the common shared colors that are appropriate for the UI component you’re designing, you ensure that your interface is consistent with other Visual Studio interfaces, and that your colors will update automatically when themes are added or updated.
 
- Прежде чем использовать стандартные общие цвета, убедитесь, что вы знаете, как правильно их использовать. Неправильное использование стандартные общие цвета может привести к несогласованные, неудобства или путаницу функционирования для пользователей.
+ Before using common shared colors, make sure that you understand how to use them correctly. Incorrect use of common shared colors might result in an inconsistent, frustrating, or confusing experience for your users.
 
-### <a name="user-customizable-colors"></a>Настраиваемые пользователем цвета
- Пример [Предоставление цвета для конечных пользователей](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+### <a name="user-customizable-colors"></a>User-customizable colors
+ See: [Exposing colors for end users](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
- В некоторых случаях требуется разрешить конечным пользователям изменять пользовательский Интерфейс, например при создании кода редактора или конструктора. Настраиваемые компоненты пользовательского интерфейса можно найти в **шрифты и цвета** раздел **Сервис > Параметры** диалоговое окно, где пользователи могут изменить цвет переднего плана и цвет фона.
+ Sometimes, you will want to allow the end user to customize your UI, such as when you are creating a code editor or design surface. Customizable UI components are found in the **Fonts and Colors** section of the **Tools > Options** dialog, where users can choose to change the foreground color, background color, or both.
 
- ![Средства &#62; диалоговое окно параметров в Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")
+ ![Tools &#62; Options dialog in Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")
 
- **Сервис > Параметры диалогового окна**
+ **Tools>Options dialog**
 
-## <a name="BKMK_TheVSColorService"></a> VSColor Service
- Visual Studio предоставляет службе цвета среды, также называется VSColor service или службы цветов оболочки. Эта служба позволяет привязать значения цвета элементов пользовательского интерфейса в набор, содержащий цвета для каждой темы имя значение цвета. VSColor service необходимо использовать для всех элементов пользовательского интерфейса, так что цветов автоматически изменяются в соответствии с текущей темой, выбранные пользователем и таким образом, чтобы пользовательский Интерфейс привязан к службе цвета среды будет интегрировано с новой темы в будущих версиях Visual Studio.
+## <a name="BKMK_TheVSColorService"></a> The VSColor Service
+ Visual Studio provides an environment color service, also called the VSColor service or the shell color service. This service allows you to bind the color values of your UI elements to a name-value color set containing colors for each theme. The VSColor service must be used for all UI elements, so that colors automatically change to reflect the current user-selected theme, and so that UI bound to the environment color service will integrate with new themes in future versions of Visual Studio.
 
-### <a name="how-the-service-works"></a>Принцип работы службы
- Службы цвета среды считывает VSColors, определенных в .pkgdef для компонента пользовательского интерфейса. Эти VSColors указываются в разметке XAML или код, загружаются через **IVsUIShell5.GetThemedColor** или сопоставление DynamicResource.
+### <a name="how-the-service-works"></a>How the service works
+ The environment color service reads VSColors defined in the .pkgdef for the UI component. These VSColors are then referenced in XAML markup or code and are loaded through either the **IVsUIShell5.GetThemedColor** or a DynamicResource mapping.
 
- ![Архитектура службы цвета среды](../../extensibility/ux-guidelines/media/0302-a-environmentcolorservicearchitecture.png "0302 a_EnvironmentColorServiceArchitecture")
+ ![Environment color service architecture](../../extensibility/ux-guidelines/media/0302-a-environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")
 
- **Архитектура службы цвета среды**
+ **Environment color service architecture**
 
-### <a name="accessing-the-service"></a>Доступ к службе
- Существует несколько способов доступа VSColor service, в зависимости от того, какого рода цвет маркеров вы используете и какого рода кода у вас есть.
+### <a name="accessing-the-service"></a>Accessing the service
+ There are several different ways to access the VSColor service, depending on what kind of color tokens you are using and what kind of code you have.
 
-#### <a name="predefined-environment-colors"></a>Цвета стандартные среды
+#### <a name="predefined-environment-colors"></a>Predefined environment colors
 
-##### <a name="from-native-code"></a>Из машинного кода
- Оболочка предоставляет службу, которая предоставляет доступ к COLORREF цвета. Интерфейс службы и является:
+##### <a name="from-native-code"></a>From native code
+ The shell provides a service that gives access to the COLORREF of the colors. The service/interface is:
 
 ```
 IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 ```
 
- В файле vsshell80.IDL, раздел перечисления файле **__VSSYSCOLOREX** имеет константы цвета оболочки. Чтобы использовать его, передайте значение индекса, либо одно из значений из перечисления __VSSYSCOLOREX, описаны в MSDN или обычный индекс номер, который система Windows API, **GetSysColor**, принимает. Это снова возвращает RGB-значение цвета, который должен использоваться в качестве второго параметра.
+ In the file VSShell80.idl, the enumeration **__VSSYSCOLOREX** has shell color constants. To use it, pass in as the index value either one of the values from the enum __VSSYSCOLOREX documented in MSDN or a regular index number that the Windows system API, **GetSysColor**, accepts. Doing this gets back the RGB value of the color that should be used in the second parameter.
 
- Если хранить пера или кисти с новый цвет, необходимо AdviseBroadcastMessages (за пределами оболочки Visual Studio) и прослушивание сообщений из WM_SYSCOLORCHANGE и WM_THEMECHANGED.
+ If storing a pen or brush with a new color, you must AdviseBroadcastMessages (off of the Visual Studio shell) and listen for WM_SYSCOLORCHANGE and WM_THEMECHANGED messages.
 
 ```
 // To access the color service in native code, you'll make a call that resembles this:
@@ -111,10 +111,10 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ```
 
- **Примечание.** COLORREF значения, возвращаемые методом **GetVSSysColorEx()** содержат только R, G, B компонентов цвета темы. Если запись Тема используется прозрачность, значение альфа канала удаляется перед возвратом. Таким образом Если нужный цвет среде должен быть используется в том месте, где важна канал прозрачности, следует использовать IVsUIShell5.GetThemedColor вместо IVsUIShell2::GetVSSysColorEx, как описано далее в этом разделе.
+ **NOTE:** The COLORREF values returned by **GetVSSysColorEx()** contain just R,G,B components of a theme color. If a theme entry uses transparency, the alpha-channel value is discarded before returning. Therefore, if the environment color of interest needs to be used in a place where transparency channel is important, you should use IVsUIShell5.GetThemedColor instead of IVsUIShell2::GetVSSysColorEx, as described later in this topic.
 
-##### <a name="from-managed-code"></a>Из управляемого кода
- Доступ к службе VSColor машинного кода, достаточно просто. При работе через управляемый код, тем не менее, определяет, как использовать службу может быть непростой задачей. С учетом этого Вот фрагмент кода C# демонстрацию этого процесса:
+##### <a name="from-managed-code"></a>From managed code
+ Accessing the VSColor service through native code is fairly straightforward. If you are working through managed code, however, determining how to use the service can be tricky. With that in mind, here is a C# code snippet demonstrating this process:
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -137,14 +137,14 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 }
 ```
 
- Если вы работаете в Visual Basic, используйте:
+ If you are working in Visual Basic, use:
 
 ```
 Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 ```
 
-##### <a name="from-wpf-ui"></a>С помощью пользовательского интерфейса WPF
- Можно привязать к цветам Visual Studio через значениями, экспортированными в ResourceDictionary приложения. Ниже приведен пример использования ресурсов из таблицы цветов, а также для привязки к данным шрифта среды в XAML.
+##### <a name="from-wpf-ui"></a>From WPF UI
+ You can bind to Visual Studio colors through values exported into the Application's ResourceDictionary. Below is an example of using resources from the color table as well as binding to the environment font data in XAML.
 
 ```
 <Style TargetType="{x:Type Button}">
@@ -157,10 +157,10 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 </Style>
 ```
 
-#### <a name="helper-classes-and-methods-for-managed-code"></a>Вспомогательные классы и методы для управляемого кода
- Для управляемого кода библиотека Managed Package Framework оболочки (Microsoft.VisualStudio.Shell.12.0.dll) содержит несколько вспомогательных классов использует цвета темы.
+#### <a name="helper-classes-and-methods-for-managed-code"></a>Helper classes and methods for managed code
+ For managed code, the shell’s Managed Package Framework library (Microsoft.VisualStudio.Shell.12.0.dll) contains a couple of helper classes facilitating the use of themed colors.
 
- Вспомогательные методы в **Microsoft.VisualStudio.Shell.VsColors** включить класс в MPF **GetThemedGDIColor()** и **GetThemedWPFColor()** . Эти вспомогательные методы возвращают значение цвета темы записи как System.Drawing.Color или System.Windows.Media.Color, для использования в Windows Forms или пользовательского интерфейса WPF.
+ The helper methods in the **Microsoft.VisualStudio.Shell.VsColors** class in MPF include **GetThemedGDIColor()** and **GetThemedWPFColor()** . Those helper methods return the color value of a theme entry as System.Drawing.Color or System.Windows.Media.Color, to be used in WinForms or WPF UI.
 
 ```
 IVsUIShell5 shell5;
@@ -210,14 +210,14 @@ public static System.Windows.Media.Color GetThemedWPFColor(this IVsUIShell5 vsUI
 
 ```
 
- Класс также может быть использован для получения VSCOLOR идентификаторы для заданного ключа ресурса цвета WPF, или наоборот.
+ The class can also be used to obtain VSCOLOR identifiers for a given WPF color resource key, or vice versa.
 
 ```
 public static string GetColorBaseKey(int vsSysColor);
 public static bool TryGetColorIDFromBaseKey(string baseKey, out int vsSysColor);
 ```
 
- Методы **VsColors** класс запроса VSColor service, чтобы вернуть значение цвета каждый раз, они вызываются. Чтобы получить значение цвета, как **System.Drawing.Color**, в качестве альтернативы с более высокой производительностью предлагается вместо этого используйте методы класса **Microsoft.VisualStudio.PlatformUI.VSThemeColor** класса, кэширующий значение цвета, полученный из VSColor service. Класс внутренне подписывается на события широковещательных сообщений оболочки и отбрасывает кэшированное значение, когда происходит событие изменения темы. Кроме того, этот класс предоставляет. Событие NET-friendly подписаться на изменения темы. Используйте **ThemeChanged** событие, чтобы добавить новый обработчик и использовать **GetThemedColor()** метод, чтобы получить цвет значений в параметре **ThemeResourceKeys** интерес. Пример кода может выглядеть следующим образом:
+ The methods of **VsColors** class query the VSColor service to return the color value each time they are invoked. To obtain a color value as **System.Drawing.Color**, an alternative with better performance is to instead use the methods of the **Microsoft.VisualStudio.PlatformUI.VSThemeColor** class, which caches the color values obtained from the VSColor service. The class subscribes internally to shell broadcast messages events, and discards the cached value when a theme changing event occurs. Also, the class provides a .NET-friendly event to subscribe to theme changes. Use the **ThemeChanged** event to add a new handler, and use the **GetThemedColor()** method to obtain color values for the **ThemeResourceKeys** of interest. A sample code could look like this:
 
 ```
 public MyWindowPanel()
@@ -256,164 +256,164 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-## <a name="BKMK_ChoosingHighContrastColors"></a> Выбор цвета высокой контрастности
+## <a name="BKMK_ChoosingHighContrastColors"></a> Choosing High Contrast colors
 
 ### <a name="overview"></a>Обзор
- Windows использует несколько тем высокой контрастности системного уровня, которые увеличить контрастность текста, фоновые рисунки и изображения, что делает более отчетливым на экране элементы. Для поддержки специальных возможностей очень важно, что элементы интерфейса Visual Studio правильно реагировать, когда пользователи переходят тему с высокой контрастностью.
+ Windows uses several high-contrast system-level themes that increase the color contrast of text, backgrounds, and images, making elements appear more distinct on the screen. For accessibility reasons, it is important that Visual Studio interface elements respond correctly when users switch to a High Contrast theme.
 
- Можно использовать лишь небольшое количество системных цветов для тем высокой контрастности. При выборе системы имена цветов, помните следующие советы:
+ Only a handful of system colors can be used for High Contrast themes. When choosing your system color names, remember the following tips:
 
-1. **Выберите системных цветов, которые имеют одинаковое значение семантической** как элемент, который выделение цветом. Например если вы выбираете цвета высокой контрастности для текста в окне, используйте WindowText и не ControlText.
+1. **Choose system colors that have the same semantic meaning** as the element that you are coloring. For instance, if you are choosing a high-contrast color for text within a window, use WindowText and not ControlText.
 
-2. **Выберите пары переднего плана и фона** вместе или не быть уверены в том, что выбранный цвет будет работать во всех темах высокой контрастности.
+2. **Choose foreground/background pairs** together or you will not be confident that your color choice will work in all High Contrast themes.
 
-3. **Определить, какие части пользовательского интерфейса наиболее важны и убедитесь, что области содержимого будет выделяться.** Вы потеряете много подробных сведений, который обычно будет отличить небольшие отличия в оттенок цвета, поэтому надежный цвета используется общие для определения области содержимого, так как существуют варианты не цвет для различных областей содержимого.
+3. **Determine which parts of your UI are the most important and ensure that content areas will stand out.** You will lose a lot of detail that subtle differences in color hue would normally distinguish, so the use of strong border colors is common to define content areas, because there are no color variants for different content areas.
 
-### <a name="system-color-set"></a>Набор цветов для системы
- Таблицы на [блог группы разработчиков WPF: Справочник по SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) указывает полный набор названий цветов системы и соответствующие тона, отображаемых в каждой темы.
+### <a name="system-color-set"></a>System color set
+ The table at [WPF Team Blog: SystemColors Reference](https://devblogs.microsoft.com/wpf/systemcolors-reference/) indicates the complete set of system color names, and the corresponding hues displayed in each theme.
 
- При применении это ограниченный набор цветов для пользовательского интерфейса, *предполагается, что вы потеряете тонких моментов, которые присутствовали в «normal» темы*. Ниже приведен пример пользовательского интерфейса с слабая серого цвета, которые используются для отделения области в окне инструментов. При совместном использовании с окно отображается в режиме высокой контрастности, вы увидите, что все фоновые рисунки тот же оттенок и границ в этих областях обозначаются только границы:
+ When applying this limited set of colors to your UI, *it is expected that you will lose subtle details that were present in the “normal” themes*. Here is an example of UI with subtle gray colors that are used to distinguish areas within a tool window. When paired with the same window displayed in High Contrast mode, you can see that all the backgrounds are the same hue and the borders of those areas are indicated by border alone:
 
- ![Окно "Свойства"](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303 a_PropertiesWindow")
+ ![Окно "Свойства"](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303-a_PropertiesWindow")
 
- **Пример того, как слабая сведения будут удалены при высокой контрастности**
+ **Example of how subtle details are lost when in High Contrast**
 
-#### <a name="choosing-text-colors-in-an-editor"></a>Выбор цвета текста в редакторе
- Цветом текст используется в редакторе или в области конструктора для указания значения, например, позволяет легко идентифицировать групп схожих элементов. В теме высокой контрастности тем не менее, у вас возможность различать более трех цветов текста. WindowText, GrayText и HotTrackText являются только цветов, доступных на поверхностях WindowBackground. Так как нет возможности использовать более трех цветов, тщательно выбирайте наиболее важные отличия, которые нужно отобразить в режиме высокой контрастности.
+#### <a name="choosing-text-colors-in-an-editor"></a>Choosing text colors in an editor
+ Colorized text is used in an editor or on a design surface to indicate meaning, such as allowing for easy identification of groups of similar items. In a High Contrast theme, however, you do not have the ability to differentiate between more than three text colors. WindowText, GrayText and HotTrackText are the only colors available on WindowBackground surfaces. Since you cannot use more than three colors, carefully choose the most important differences that you want to display when in High Contrast mode.
 
- Тона для каждого из имен токенов, допустимое в рабочей области редактора, как они указаны в каждой теме высокой контрастности:
+ Hues for each of the token names allowed on an editor surface, as they appear in each High Contrast theme:
 
- ![Сравнение редактора высокой контрастности](../../extensibility/ux-guidelines/media/030303-b-hceditorcomparison.png "030303 b_HCEditorComparison")
+ ![High Contrast editor comparison](../../extensibility/ux-guidelines/media/030303-b-hceditorcomparison.png "030303-b_HCEditorComparison")
 
- **Сравнение редактора высокой контрастности**
+ **High Contrast editor comparison**
 
- Примеры в области "редактор" в "голубой" теме:
+ Examples of the editor surface in the Blue theme:
 
- ![Редактор в "голубой" теме](../../extensibility/ux-guidelines/media/030303-c-editorblue.png "030303 c_EditorBlue")
+ ![Editor in Blue theme](../../extensibility/ux-guidelines/media/030303-c-editorblue.png "030303-c_EditorBlue")
 
- **Редактор в "голубой" теме**
+ **Editor in Blue theme**
 
- ![Редактор в "высококонтрастной" теме](../../extensibility/ux-guidelines/media/030303-d-editorhc1.png "030303 d_EditorHC1")
+ ![Editor in High Contrast theme](../../extensibility/ux-guidelines/media/030303-d-editorhc1.png "030303-d_EditorHC1")
 
- **Редактор в теме высокой контрастности № 1**
+ **Editor in High Contrast #1 theme**
 
-### <a name="usage-patterns"></a>Шаблоны использования
- Множество общих элементов пользовательского интерфейса уже определено высокой контрастности цветов. Эти шаблоны использования можно ссылаться при выборе собственной системы имена цветов, таким образом, элементы пользовательского интерфейса были согласованы с похожими компонентов.
+### <a name="usage-patterns"></a>Usage patterns
+ Many common UI elements already have high-contrast colors defined. You can reference these usage patterns when choosing your own system color names, so that your UI elements are consistent with similar components.
 
-|Системный цвет|Использование|
+|System Color|Использование|
 |------------------|-----------|
-|ActiveCaption|-Active интегрированной среды разработки и rafted окно глифы кнопка при наведении указателя мыши и нажмите клавишу<br />-Фона панели заголовка для интегрированной среды разработки и rafted windows<br />-Фона строки состояния по умолчанию|
-|ActiveCaptionText|-Active интегрированной среды разработки и rafted windows заголовок панели цвета переднего плана (текст и глифов)<br />-Фона и границы активного окна кнопок на при наведении указателя мыши и нажмите клавишу|
-|Элемент управления|-Поле со списком, раскрывающийся список и элемент управления по умолчанию и отключено фон поиска, включая кнопку раскрывающегося списка<br />-Фона кнопки целевого объекта закрепления<br />-Фона панели команд<br />-Фон окна средство|
-|ControlDark|-Фон IDE<br />-Разделители панели меню и команды<br />-Граница панели команд<br />-Shadows меню<br />-Средство границы по умолчанию и наведите ее на вкладке окна и разделителя<br />-Документа также цвет фона для кнопки переполнения<br />-Границы глифа целевого закрепления|
-|ControlDarkDark|-Окно вкладки без фокуса ввода, выбранный документ|
-|ControlLight|-Граница вкладки автоматического скрытия<br />-Границы поле со списком поле и выберите в раскрывающемся списке<br />-Закрепление фона целевого объекта и границы|
-|ControlLightLight|-Выбранного фокусом временное граница|
-|ControlText|-Глиф поле со списком поле и выберите в раскрывающемся списке<br />-Текст вкладки окна невыделенного инструментов|
-|GrayText|-Поле со списком и границы списка отключена раскрывающийся список, глифа раскрывающегося списка, текст и текст пункта меню<br />-Текст меню отключен<br />-Текст заголовка для элемента управления «параметры поиска» поиска<br />-Разделитель секций поиск элемента управления|
-|Выделение|-All при наведении указателя мыши и нажата фон и границы, за исключением раскрывающемся поле со списком фона кнопки и документ также overflow границы кнопки<br />-Фон выбранного элемента|
-|HighlightText|-Все при наведении указателя мыши и нажата foregrounds (текст и глифов)<br />-Фокусом средство документом и окном вкладку окна управления переднего плана<br />-Граница панели заголовка окна фокусом инструментов<br />-Фокусом, выбранный временной вкладке переднего плана<br />-Граница кнопки переполнения хорошо документа при наведении указателя мыши и нажмите клавишу<br />-Границы выбранный значок|
-|HotTrack|— Фона бегунка полосы прокрутки и границу на клавишу<br />-Глиф стрелки полосы прокрутки на материалах издательства press|
-|InactiveCaption|-Неактивные интегрированной среды разработки и rafted окно глифы кнопка при наведении курсора мыши<br />-Фона панели заголовка для интегрированной среды разработки и rafted windows<br />— Фон элемента управления отключенное поиска|
-|InactiveCaptionText|-Неактивные интегрированной среды разработки и rafted windows заголовок панели передний план (текст и глифов)<br />-Фон кнопки неактивного окна и граница при наведении курсора мыши<br />-Цвет фона кнопки окна инструмента без фокуса ввода и границы<br />-Переднего плана элемента управления поиска отключено|
-|Меню|-Фон раскрывающегося меню<br />-Checked и отключенный флажок фона|
-|MenuText|-Границы раскрывающегося меню<br />-Проверка меток<br />-Глифы меню<br />-Текст раскрывающегося меню<br />-Границы выбранный значок|
-|Полоса прокрутки|-Scrollbar и полосы прокрутки фона стрелки, все состояния|
-|Окно|Автоматическое скрытие фона вкладки<br />-Меню панели и фона полки команды<br />-Фона вкладки окна документа без фокуса ввода или невыделенного и границы документа для вкладки как открытые, так и временное<br />-Фон панели заголовка окна без фокуса ввода инструментов<br />-Фона окна инструментов вкладки, как выбран и не выбран|
-|WindowFrame|-Границы IDE|
-|WindowText|-Основной вкладке автоматического скрытия<br />-Передний план вкладку окна выбранное средство<br />-Вкладка окна документа без фокуса ввода и без фокуса ввода или невыделенного временной вкладке переднего плана<br />-Переднего плана по умолчанию представление и древовидного при наведении на глиф невыбранные<br />-Граница выделенной вкладки окна инструментов<br />— Фона бегунка полосы прокрутки границы и глифа|
+|ActiveCaption|-   Active IDE and rafted window button glyphs on hover and press<br />-   Title bar background for IDE and rafted windows<br />-   Default status bar background|
+|ActiveCaptionText|-   Active IDE and rafted windows for title bar foreground (text and glyphs)<br />-   Background and border of active window buttons on hover and press|
+|Элемент управления|-   Combo box, dropdown list, and search control default and disabled background, including dropdown button<br />-   Dock target button background<br />-   Command bar background<br />-   Tool window background|
+|ControlDark|-   IDE background<br />-   Menu and command bar separators<br />-   Command bar border<br />-   Menu shadows<br />-   Tool window tab default and hover border and separator<br />-   Document well overflow button background<br />-   Dock target glyph border|
+|ControlDarkDark|-   Unfocused, selected document tab window|
+|ControlLight|-   Auto-hide tab border<br />-   Combo box and drop-down list border<br />-   Dock target background and border|
+|ControlLightLight|-   Selected, focused provisional border|
+|ControlText|-   Combo box and drop-down list glyph<br />-   Tool window unselected tab text|
+|GrayText|-   Combo box and dropdown list disabled border, dropdown glyph, text, and menu item text<br />-   Disabled menu text<br />-   Search control 'search options' header text<br />-   Search control section separator|
+|Выделение|-   All hover and pressed backgrounds and borders, except combo box dropdown button background and document well overflow button border<br />-   Selected item backgrounds|
+|HighlightText|-   All hover and pressed foregrounds (text and glyphs)<br />-   Focused tool window and document tab window control foreground<br />-   Focused tool window title bar border<br />-   Focused, selected provisional tab foreground<br />-   Document well overflow button border on hover and press<br />-   Selected icon border|
+|HotTrack|-   Scrollbar thumb background and border on press<br />-   Scrollbar arrow glyph on press|
+|InactiveCaption|-   Inactive IDE and rafted window button glyphs on hover<br />-   Title bar background for IDE and rafted windows<br />-   Disabled search control background|
+|InactiveCaptionText|-   Inactive IDE and rafted windows title bar foreground (text and glyphs)<br />-   Inactive window buttons background and border on hover<br />-   Unfocused tool window button background and border<br />-   Disabled search control foreground|
+|Меню|-   Dropdown menu background<br />-   Checked and disabled checkmark background|
+|MenuText|-   Dropdown menu border<br />-   Checkmark check<br />-   Menu glyphs<br />-   Drop-down menu text<br />-   Selected icon border|
+|Полоса прокрутки|-   Scrollbar and scrollbar arrow background, all states|
+|Окно|-   Auto-hide tab background<br />-   Menu bar and command shelf background<br />-   Unfocused or unselected document window tab background and document border, for both open and provisional tabs<br />-   Unfocused tool window title bar background<br />-   Tool window tab background, both selected and unselected|
+|WindowFrame|-   IDE border|
+|WindowText|-   Auto-hide tab foreground<br />-   Selected tool window tab foreground<br />-   Unfocused document window tab and unfocused or unselected provisional tab foreground<br />-   Tree view default foreground and hover over unselected glyph<br />-   Tool window selected tab border<br />-   Scrollbar thumb background, border, and glyph|
 
-## <a name="BKMK_ExposingColorsForEndUsers"></a> Предоставление цвета для конечных пользователей
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Exposing colors for end users
 
 ### <a name="overview"></a>Обзор
- Иногда требуется разрешить конечным пользователям изменять пользовательский Интерфейс, например при создании кода редактора или конструктора. Наиболее распространенный способ сделать это — с помощью **Сервис > Параметры** диалоговое окно. — Если не имеют очень специализированную пользовательский Интерфейс, который требует специальных элементов управления, самый простой способ представления настройки **шрифты и цвета** странице в **среды** части диалогового окна. Для каждого элемента, которые предоставляют для настройки пользователь может изменить цвет переднего плана и цвет фона.
+ Sometimes you will want to allow the end user to customize your UI, such as when you are creating a code editor or design surface. The most common way to do this is by using the **Tools > Options** dialog. Unless you have highly specialized UI that requires special controls, the easiest way to present the customization is through the **Fonts and Colors** page within the **Environment** section of the dialog. For each element that you expose for customization, the user can choose to change the foreground color, background color, or both.
 
-### <a name="building-a-vspackage-for-your-customizable-colors"></a>Создание VSPackage для настраиваемые цвета
- Пакет VSPackage можно управлять шрифты и цвета, через пользовательские категории и отображения элементов на странице свойств шрифты и цвета. Если вы используете этот механизм, пакеты VSPackage должны реализовывать [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) интерфейса и его связанных интерфейсах.
+### <a name="building-a-vspackage-for-your-customizable-colors"></a>Building a VSPackage for your customizable colors
+ A VSPackage can control the fonts and colors through custom categories and display items on the Fonts and Colors property page. When using this mechanism, VSPackages must implement the [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) interface and its associated interfaces.
 
- В принципе этот механизм можно использовать для изменения, все существующие элементы отображения и категории, которые содержат их. Тем не менее его не следует изменять категории текстовый редактор или своих отображаемых элементов. Дополнительные сведения о категории текстовый редактор, см. в разделе [шрифт и цвет Обзор](https://msdn.microsoft.com/library/bb165065.aspx).
+ In principle, this mechanism can be used to modify all existing display items and the categories that contain them. However, it should not be used to modify the Text Editor category or its display items. For more information on the Text Editor category, see [Font and Color Overview](https://msdn.microsoft.com/library/bb165065.aspx).
 
- Чтобы реализовать пользовательские категории и отображать элементы, пакет VSPackage должен удовлетворять следующим требованиям:
+ To implement custom categories or display Items, a VSPackage must:
 
-- **Создание или определение категорий в реестре.** Реализация IDE **шрифты и цвета** страницу свойств использует эти сведения для правильно запроса служба, поддерживающая данной категории.
+- **Create or identify categories in the registry.** The IDE's implementation of the **Fonts and Colors** property page uses this information to correctly query for the service supporting a given category.
 
-- **Создайте или укажите группы в реестре (необязательно).** Возможно, рекомендуется определить группу, которая представляет объединение двух или более категорий. Если определен группу, интегрированной среды разработки автоматически выполняет слияние подкатегории и распространяет отображаемых элементов в пределах группы.
+- **Create or identify groups in the registry (optional).** It might be useful to define a group, which represents the union of two or more categories. If a group is defined, the IDE automatically merges subcategories and distributes display items within the group.
 
-- **Реализация поддержки интегрированной среды разработки.**
+- **Implement IDE support.**
 
-- **Обрабатывать изменения шрифта и цвета.**
+- **Handle font and color changes.**
 
-#### <a name="to-create-or-identify-categories"></a>Для создания и определения категорий
- Создать специальный тип категории записи реестра в разделе [HKLM\SOFTWARE\Microsoft \Visual Studio\\< версия Visual Studio\>\FontAndColors\\< категории\>]. \<Категория > нелокализованное имя категории.
+#### <a name="to-create-or-identify-categories"></a>To create or identify categories
+ Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]. \<Category> is the non-localized name of the Category.
 
- Добавить в реестр с двумя значениями:
+ Populate the registry with two values:
 
-|name|Тип|Данные|Описание|
+|Название|Type|Data|Описание|
 |----------|----------|----------|-----------------|
-|Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для идентификации категории|
-|Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage службы, которая поддерживает категории|
+|Категория|REG_SZ|Идентификатор GUID|A GUID created to identify the category|
+|Пакет|REG_SZ|Идентификатор GUID|The GUID of the VSPackage service that supports the category|
 
- Служба, указанная в реестр необходимо предоставить реализацию [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) для соответствующей категории.
+ The service specified in the registry must provide an implementation of [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) for the corresponding category.
 
-#### <a name="to-create-or-identify-groups"></a>Чтобы создать или определить группы
- Создать специальный тип категории записи реестра в разделе [HKLM\SOFTWARE\Microsoft \Visual Studio\\< версия Visual Studio\>\FontAndColors\\< группы\>]. \<группы > нелокализованное имя группы.
+#### <a name="to-create-or-identify-groups"></a>To create or identify groups
+ Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]. \<group> is the non-localized name of the group.
 
- Добавить в реестр с двумя значениями:
+ Populate the registry with two values:
 
-|name|Тип|Данные|Описание|
+|Название|Type|Data|Описание|
 |----------|----------|----------|-----------------|
-|Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для идентификации категории|
-|Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage службы, которая поддерживает категории|
+|Категория|REG_SZ|Идентификатор GUID|A GUID created to identify the category|
+|Пакет|REG_SZ|Идентификатор GUID|The GUID of the VSPackage service that supports the category|
 
- Служба, указанная в реестр необходимо предоставить реализацию **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** для соответствующей группы.
+ The service specified in the registry must provide an implementation of **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** for the corresponding group.
 
- ![IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a-fontandcolorgroup.png "0304 a_FontAndColorGroup")
+ ![IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a-fontandcolorgroup.png "0304-a_FontAndColorGroup")
 
-### <a name="to-implement-ide-support"></a>Для реализации поддержки интегрированной среды разработки
- Реализуйте [GetObject](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), который возвращает либо [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) интерфейс или **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** интерфейс в интегрированную среду разработки для каждой категории или группы указан GUID.
+### <a name="to-implement-ide-support"></a>To implement IDE support
+ Implement [GetObject](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), which returns either an [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) interface or an **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** interface to the IDE for each category or group GUID supplied.
 
- Для каждой категории, он поддерживает, VSPackage реализует отдельный экземпляр [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) интерфейс.
+ For every category it supports, a VSPackage implements a separate instance of the [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) interface.
 
- Методы реализуется через [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) необходимо указать с помощью интегрированной среды разработки:
+ The methods implemented through [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) must provide the IDE with:
 
-- Список отображаемых элементов в категории
+- Lists of display items in the category
 
-- Локализуемые имена для отображаемых элементов
+- Localizable names for display items
 
-- Отображаемые сведения для каждого элемента категории
+- Display information for each member of the category
 
-  **Примечание.** Каждая категория должен содержать хотя бы один элемент для отображения.
+  **NOTE:** Every category must contain at least one display item.
 
-  Интегрированная среда разработки использует **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** интерфейса позволяет определить объединение несколько категорий.
+  The IDE uses the **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** interface to define a union of several categories.
 
-  Его реализация предоставляет интегрированную среду разработки с помощью:
+  Its implementation provides the IDE with:
 
-- Список категорий, входящие в состав указанной группы
+- A list of the Categories that make up a given group
 
-- Доступ к экземплярам [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) поддержки каждой категории в группе
+- Access to instances of [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) supporting each Category within the group
 
-- Имена локализуемых групп
+- Localizable group names
 
-#### <a name="updating-the-ide"></a>Обновление интегрированной среды разработки
- Интегрированная среда разработки кэширует сведения о параметрах шрифта и цвета. Таким образом после внесения изменений конфигурации интегрированной среды разработки шрифта и цвета, обеспечивая актуальность кэша рекомендуется.
+#### <a name="updating-the-ide"></a>Updating the IDE
+ The IDE caches information about Font and Color settings. Therefore, after any modification of the IDE Font and Color configuration, ensuring that the cache is up to date is a best practice.
 
- Обновление кэша осуществляется с помощью [IvsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) интерфейс и может быть выполнено глобально или только на выбранных элементов.
+ Updating the cache is done through the [IvsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface and can be performed globally or just on selected items.
 
-### <a name="handling-font-and-color-changes"></a>Обработка изменения шрифта и цвета
- Для правильной поддержки цветовое выделение текста, который отображает VSPackage, выделение цветом служба, поддерживающая VSPackage должен отвечать на инициированного пользователем изменения, внесенные на странице свойств «шрифты и цвета».
+### <a name="handling-font-and-color-changes"></a>Handling font and color changes
+ To properly support the colorization of text that a VSPackage displays, the colorization service supporting the VSPackage must respond to the user-initiated changes made through the Fonts and Colors properties page.
 
- Чтобы сделать это, пакет VSPackage должен удовлетворять следующим требованиям:
+ To do this, a VSPackage must:
 
-- **обрабатывать события, вызываемые IDE** путем реализации [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) интерфейс. Интегрированная среда разработки вызывает соответствующий метод следующие пользовательские изменения страницы шрифты и цвета. Например, он вызывает [onfontchanged и задает](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) метод, если выбран новый шрифт.
+- **handle IDE-generated events** by implementing the [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) interface. The IDE calls the appropriate method following user modifications of the Fonts and Colors page. For example, it calls the [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) method if a new font is selected.
 
   **ИЛИ**
 
-- **опрос интегрированной среды разработки для изменения**. Это можно сделать через реализовать систему [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейс. Несмотря на то что в основном для поддержки сохраняемости, [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) метода можно получить данные шрифта и цвета для отображаемых элементов. Дополнительные сведения о параметры шрифта и цвета, см. в статье MSDN [параметры доступа к хранятся шрифта и цвета](https://msdn.microsoft.com/library/bb166382.aspx).
+- **poll the IDE for changes**. This can be done through the system-implemented [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Although primarily for support of persistence, the [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) method can obtain font and color information for Display Items. For more information on font and color settings, see the MSDN article [Accessing Stored Font and Color Settings](https://msdn.microsoft.com/library/bb166382.aspx).
 
-  **Примечание.** Чтобы гарантировать правильность результатов опроса, используйте [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов извлечения [IVsFontAndColorStorage ](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) интерфейс.
+  **NOTE:** To ensure that polling results are correct, use the [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface to determine if a cache flush and update are needed prior to calling the retrieval methods of the [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface.
 
-#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Регистрация пользовательского шрифта и цвета категории без реализации интерфейсов
- В следующем примере кода показано, как зарегистрировать пользовательский шрифт и цветовые категории без реализации интерфейсов:
+#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Registering custom font and color Category without implementing interfaces
+ The following code example demonstrates how to register the custom font and color Category without implementing interfaces:
 
 ```xml
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp Tool Window]
@@ -426,14 +426,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **Примечание.**
 
-- «NameID» = идентификатор ресурса в пакете имя локализованной категории
+- "NameID" = the resource ID of the localized category name in your package
 
-- «ToolWindowPackage» = идентификатор GUID пакета
+- "ToolWindowPackage" = Package GUID
 
-- «Категория» = «{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}» указан для примера и фактическое значение может быть новый идентификатор GUID, предоставленные средством реализации.
+- "Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" is just an example and the actual value can be a new GUID provided by the implementer.
 
-### <a name="set-the-font-and-color-property-category-guid"></a>Задайте свойства категории шрифтов и цветов GUID
- В примере кода показано задание GUID категории.
+### <a name="set-the-font-and-color-property-category-guid"></a>Set the Font and Color property category GUID
+ The code example below demonstrates setting Category GUIDs.
 
 ```cs
 // m_pView is your IVsTextView
