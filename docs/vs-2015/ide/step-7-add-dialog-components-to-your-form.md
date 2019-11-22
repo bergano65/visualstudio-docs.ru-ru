@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b58f76dc5137ac0e281f109ee78f3ed43f907400
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f734c818265d32f6895c09ab01fd2468e0f5a247
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646963"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295682"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Шаг 7. Добавление компонентов Dialog в форму
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "72646963"
 
  В некотором смысле компонент похож на элемент управления. Для добавления компонента в форму используется панель элементов, его свойства настраиваются в окне **Свойства**. Но в отличие от элемента управления, добавление в форму компонента не добавляет в форму элемент, который может видеть пользователь. Вместо этого, компонент предоставляет определенное поведение, которое можно включать в коде. Это компонент, который открывает диалоговое окно **Открыть файл**.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) или [учебном курсе 1. Создание средства просмотра C# изображений в видео 3](http://go.microsoft.com/fwlink/?LinkId=205202). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 3](https://go.microsoft.com/fwlink/?LinkId=205213) or [Tutorial 1: Create a Picture Viewer in C# - Video 3](https://go.microsoft.com/fwlink/?LinkId=205202). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-add-dialog-components-to-your-form"></a>Добавление компонентов диалогового окна в форму
 
@@ -32,9 +32,9 @@ ms.locfileid: "72646963"
     > [!NOTE]
     > Группа **Диалоговые окна** на панели элементов содержит компоненты, которые открывают множество полезных диалоговых окон. Эти диалоговые окна можно использовать для открытия и сохранения файлов, просмотра папок, выбора шрифтов и цветов. В этом проекте используется два компонента диалоговых окон — **OpenFileDialog** и **ColorDialog**.
 
-2. Чтобы добавить в форму компонент с именем **openFileDialog1**, дважды щелкните элемент **OpenFileDialog**. Чтобы добавить в форму компонент с именем **colorDialog1**, дважды щелкните на панели элементов элемент **ColorDialog**. (Вы используете его на следующем шаге руководства.) В нижней части конструктор Windows Forms (под формой средства просмотра изображений) должна отобразиться область с значком для каждого из двух добавленных компонентов диалогового окна, как показано на следующем рисунке.
+2. Чтобы добавить в форму компонент с именем **openFileDialog1**, дважды щелкните элемент **OpenFileDialog**. Чтобы добавить в форму компонент с именем **colorDialog1**, дважды щелкните на панели элементов элемент **ColorDialog**. (You use that one in the next tutorial step.) You should see an area at the bottom of Windows Forms Designer (beneath the Picture Viewer form) that has an icon for each of the two dialog components that you added, as shown in the following picture.
 
-     ![Компоненты диалогового окна](../ide/media/express-dialogsadded.png "Express_DialogsAdded") Компоненты диалогового окна
+     ![Dialog components](../ide/media/express-dialogsadded.png "Express_DialogsAdded") Dialog components
 
 3. Выберите значок **openFileDialog1** в области в нижней части конструктора Windows Forms. Установите значения двух свойств.
 

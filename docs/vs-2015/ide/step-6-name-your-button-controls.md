@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: be633da5e8af6b987178d7c7360096db57fff1a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ebe3813ad01566e2994b0a16b4a3fdc735de8c8c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647002"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295710"
 ---
 # <a name="step-6-name-your-button-controls"></a>Шаг 6. Присвоение имен элементам управления "Кнопка"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "72647002"
 
  В форме есть четыре кнопки. Интегрированная среда разработки назвала их как **button1**, **button2**, **button3**и **button4**. Только по их текущему имени нельзя узнать, какая кнопка является кнопкой **Закрыть** , а какая кнопкой **Показать рисунок** . Вот почему присвоение элементам управления в виде кнопок более осмысленных названий полезно.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) или [учебном курсе 1. Создание средства просмотра C# изображений в видео 3](http://go.microsoft.com/fwlink/?LinkId=205202). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 3](https://go.microsoft.com/fwlink/?LinkId=205213) or [Tutorial 1: Create a Picture Viewer in C# - Video 3](https://go.microsoft.com/fwlink/?LinkId=205202). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Присвоение имен элементам управления "Кнопка"
 
-1. В форме нажмите кнопку **Закрыть** . (Если все кнопки все еще выбраны, нажмите клавишу ESC, чтобы отменить выбор.) Прокрутите окно **свойств** до тех пор, пока не появится свойство **(Name)** . (Свойство **(Name)** находится ближе к началу, если свойства имеют алфавитный режим.) Измените имя на **closeButton**, как показано на следующем рисунке.
+1. В форме нажмите кнопку **Закрыть** . (If you still have all the buttons selected, choose the ESC key to cancel the selection.) Scroll in the **Properties** window until you see the **(Name)** property. (The **(Name)** property is near the top when the properties are alphabetical.) Change the name to **closeButton**, as shown in the following picture.
 
-     ![Окно свойств с именем closeButton](../ide/media/express-setnameproperty.png "Express_SetNameProperty") окно свойств с именем closeButton
+     ![Properties window with closeButton name](../ide/media/express-setnameproperty.png "Express_SetNameProperty") Properties window with closeButton name
 
     > [!NOTE]
     > If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Пробелы (а также несколько других символов) запрещено использовать в именах элементов управления.
@@ -41,7 +41,7 @@ ms.locfileid: "72647002"
 
 3. Двойным щелчком нажмите кнопку **Показать рисунок** в форме. В качестве альтернативы можно нажать кнопку **Показать рисунок** в форме, а затем нажать клавишу ВВОД. При этом интегрированная среда разработки открывает в главном окне дополнительную вкладку, которая называется **Form1.cs** (**Form1.vb** , если используется Visual Basic). На этой вкладке отображается файл кода для формы, как показано на следующем рисунке.
 
-     ![Вкладка Form1.cs с кодом Visual&#35; C](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Form1.CS Tab с визуальным кодом C#
+     ![Form1.cs tab with Visual C&#35; code](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Form1.cs tab with Visual C# code
 
 4. Обратите внимание на эту часть кода. (Откройте вкладку **VB** ниже, если используется Visual Basic для просмотра Visual Basic-версии кода.)
 
@@ -71,7 +71,7 @@ ms.locfileid: "72647002"
 
      После добавления обработчика событий для элемента управления к нему можно вернуться в любой момент из конструктора Windows Forms с помощью двойного щелчка по элементу управления или путем выбора пунктов **Вид**, **Код**в строке меню.
 
-     Имена являются важными при выполнении построения программы, и методы (включая обработчики событий) могут иметь любые имена, которые нужны. При добавлении обработчика событий с помощью интегрированной среды разработки она создает имя на основе имени элемента управления и обрабатываемого события. Например, событие Click для кнопки с именем **showButton** вызывает метод обработчика событий `showButton_Click()` . Также обычно после имени метода добавляются открывающая и закрывающая круглые скобки () для индикации того, какие методы рассматриваются. Если вы примете решение изменить имя переменной кода, щелкните правой кнопкой мыши по переменной в коде, а затем выберите команду **Рефакторинг**, **Переименовать**. Все экземпляры этой переменной в коде будут переименованы. Дополнительные сведения см. в разделе [переименование рефакторинга (C#)](../csharp-ide/rename-refactoring-csharp.md) или [Рефакторинг и переименование диалогового окна](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) .
+     Имена являются важными при выполнении построения программы, и методы (включая обработчики событий) могут иметь любые имена, которые нужны. При добавлении обработчика событий с помощью интегрированной среды разработки она создает имя на основе имени элемента управления и обрабатываемого события. Например, событие Click для кнопки с именем **showButton** вызывает метод обработчика событий `showButton_Click()` . Также обычно после имени метода добавляются открывающая и закрывающая круглые скобки () для индикации того, какие методы рассматриваются. Если вы примете решение изменить имя переменной кода, щелкните правой кнопкой мыши по переменной в коде, а затем выберите команду **Рефакторинг**, **Переименовать**. Все экземпляры этой переменной в коде будут переименованы. See [Rename Refactoring (C#)](../csharp-ide/rename-refactoring-csharp.md) or [Refactoring and Rename Dialog Box](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) for more information.
 
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 

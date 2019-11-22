@@ -1,5 +1,5 @@
 ---
-title: Отладка опубликованной облачной службы с помощью Visual Studio и IntelliTrace Azure | Документация Майкрософт
+title: Debugging a published an Azure cloud service with Visual Studio and IntelliTrace | Microsoft Docs
 description: Узнайте, как выполнять отладку облачной службы с помощью Visual Studio и IntelliTrace.
 author: mikejo5000
 manager: jillfra
@@ -11,26 +11,26 @@ ms.date: 03/21/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 8cec66f4746656e1bc1f5c2aba54a442883e4fa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00e13c6f217c54b99dfe103b86f1e775e36fd62a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62421699"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293541"
 ---
-# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Отладка опубликованной облачной службы Azure с помощью Visual Studio и IntelliTrace
+# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Отладка опубликованной облачной службы Azure с помощью IntelliTrace и Visual Studio
 С помощью IntelliTrace можно записывать в журнал расширенные отладочные сведения для экземпляра роли при его запуске в Azure. Если вам необходимо найти причину проблемы, можете использовать журналы IntelliTrace для пошагового выполнения кода из Visual Studio, как если бы он запускался в Azure. Фактически IntelliTrace записывает выполнение ключевого кода и данные среды при запуске приложения Azure в качестве облачной службы в Azure и позволяет воспроизводить записанные данные в Visual Studio. 
 
 IntelliTrace можно использовать, если ваше приложение Azure предназначено для .NET Framework 4 или более поздней версии и если у вас установлена среда разработки Visual Studio Enterprise. IntelliTrace собирает сведения для ваших ролей Azure. Виртуальные машины для этих ролей всегда запускают 64-разрядные операционные системы.
 
-В качестве альтернативы можно использовать [удаленную отладку](http://go.microsoft.com/fwlink/p/?LinkId=623041) для непосредственного подключения к облачной службе, запущенной в Azure.
+В качестве альтернативы можно использовать [удаленную отладку](https://go.microsoft.com/fwlink/p/?LinkId=623041) для непосредственного подключения к облачной службе, запущенной в Azure.
 
 > [!IMPORTANT]
 > IntelliTrace предназначена только для отладки и не должна использоваться в рабочей среде.
 > 
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Настройка приложения Azure для IntelliTrace
-Чтобы включить IntelliTrace для приложения Azure, необходимо создать и опубликовать приложение из проекта Visual Studio Azure. Перед публикацией в Azure необходимо настроить IntelliTrace для приложения Azure. Если вы опубликовали приложение без настройки IntelliTrace, то необходимо еще раз опубликовать проект. Дополнительные сведения см. в статье [Публикация облачной службы с помощью инструментов Azure](http://go.microsoft.com/fwlink/p/?LinkId=623012).
+Чтобы включить IntelliTrace для приложения Azure, необходимо создать и опубликовать приложение из проекта Visual Studio Azure. Перед публикацией в Azure необходимо настроить IntelliTrace для приложения Azure. Если вы опубликовали приложение без настройки IntelliTrace, то необходимо еще раз опубликовать проект. Дополнительные сведения см. в статье [Публикация облачной службы с помощью инструментов Azure](https://go.microsoft.com/fwlink/p/?LinkId=623012).
 
 1. Перед развертыванием приложения Azure убедитесь, что в качестве целей сборки проекта выбрана **Отладка**.
 
@@ -46,7 +46,7 @@ IntelliTrace можно использовать, если ваше прилож
 
     ![Ссылка на "Параметры IntelliTrace"](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/intellitrace-settings-link.png)
    
-1. В диалоговом окне **IntelliTrace Settings** можно указать, какие события будут записываться в журнал, требуется ли осуществлять сбор сведений о вызовах, для каких модулей и процессов необходимо записывать журналы и какой объем дискового пространства необходимо выделить для записи. Дополнительные сведения об IntelliTrace см. в разделе [Отладка с помощью IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=214468).
+1. В диалоговом окне **IntelliTrace Settings** можно указать, какие события будут записываться в журнал, требуется ли осуществлять сбор сведений о вызовах, для каких модулей и процессов необходимо записывать журналы и какой объем дискового пространства необходимо выделить для записи. Дополнительные сведения об IntelliTrace см. в разделе [Отладка с помощью IntelliTrace](https://go.microsoft.com/fwlink/?LinkId=214468).
    
     ![Параметры IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC519063.png)
 

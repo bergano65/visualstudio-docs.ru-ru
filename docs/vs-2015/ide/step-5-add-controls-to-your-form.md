@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8c261d903868df887d99c10182ed134c79c552b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671769"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295728"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 На данном шаге производится добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Затем на форму добавляются кнопки.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений на Visual Basic-Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) или в [руководстве 1. Создание средства просмотра изображений C# в видеоролике 2](http://go.microsoft.com/fwlink/?LinkId=205200). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) or [Tutorial 1: Create a Picture Viewer in C# - Video 2](https://go.microsoft.com/fwlink/?LinkId=205200). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Добавление элементов управления в форму
 
@@ -33,7 +33,7 @@ ms.locfileid: "72671769"
 
 4. Щелкните новый элемент управления PictureBox, чтобы выбрать его, а затем щелкните черный треугольник на новом элементе управления PictureBox, чтобы отобразить его список задач, как показано на следующем рисунке.
 
-     ![Задачи PictureBox](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") Задачи PictureBox
+     ![PictureBox tasks](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") PictureBox tasks
 
     > [!NOTE]
     > Если на TableLayoutPanel случайно был добавлен элемент управления неправильного типа, то его можно удалить. Щелкните элемент управления правой кнопкой мыши и в контекстном меню выберите **Удалить**. Удалять элементы управления из формы также можно с помощью строки меню. В строке меню выберите **Правка**, **Отменить** или **Правка**, **Удалить**.
@@ -47,7 +47,7 @@ ms.locfileid: "72671769"
 
 7. Выберите элемент управления TableLayoutPanel в форме и добавьте в нее элемент управления **CheckBox**. Двойным щелчком выберите элемент **CheckBox** на панели элементов, чтобы добавить новый элемент управления CheckBox в следующую свободную ячейку таблицы. Поскольку элемент управления PictureBox занимает первые две ячейки в TableLayoutPanel, элемент управления CheckBox добавляется в нижнюю левую ячейку. Выберите свойство **Text** и введите слово **Stretch**, как показано на следующем рисунке.
 
-     ![Элемент управления TextBox со свойством Stretch](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") Элемент управления TextBox со свойством Stretch
+     ![TextBox control with Stretch property](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") TextBox control with Stretch property
 
 8. Выберите в форме элемент управления TableLayoutPanel, а затем на панели элементов перейдите к группе **Контейнеры** (из которой был взят элемент управления TableLayoutPanel) и дважды щелкните элемент управления **FlowLayoutPanel**, чтобы добавить новый элемент управления в последнюю ячейку в элементе управления PictureBox (справа внизу). Затем закрепите FlowLayoutPanel в TableLayoutPanel (выбрав **Закрепить в родительском контейнере** в списке задач FlowLayoutPanel, раскрываемом с помощью черного треугольника, или установив свойству **Dock** FlowLayoutPanel значение **Fill**).
 
@@ -70,9 +70,9 @@ ms.locfileid: "72671769"
     > [!NOTE]
     > Если кнопки по-прежнему остаются в неправильном порядке, можно перетащить кнопки вокруг элемента управления FlowLayoutPanel для расположения их в произвольном порядке. Можно выбрать кнопку и перетащить ее влево или вправо.
 
-5. Щелкните кнопку **Закрыть**, чтобы выбрать ее. Удерживая клавишу CTRL, щелкните три другие кнопки, чтобы все они были выбраны. При выделенных кнопках перейдите к окну **Свойства** и прокрутите его вверх до свойства **AutoSize**. Это свойство указывает кнопке автоматически изменять свой размер так, чтобы весь текст мог разместиться на ней. Задайте значение **true**. Кнопки теперь должны иметь соответствующий размер и быть расположены в правильном порядке. (Если выбраны все четыре кнопки, можно одновременно изменить все четыре свойства **AutoSize** ). На следующем рисунке показаны четыре кнопки.
+5. Щелкните кнопку **Закрыть**, чтобы выбрать ее. Удерживая клавишу CTRL, щелкните три другие кнопки, чтобы все они были выбраны. При выделенных кнопках перейдите к окну **Свойства** и прокрутите его вверх до свойства **AutoSize**. Это свойство указывает кнопке автоматически изменять свой размер так, чтобы весь текст мог разместиться на ней. Задайте значение **true**. Кнопки теперь должны иметь соответствующий размер и быть расположены в правильном порядке. (As long as all four buttons are selected, you can change all four **AutoSize** properties at the same time.) The following picture shows the four buttons.
 
-     ![Средство просмотра изображений с четырьмя кнопками](../ide/media/express-autosize.png "Express_AutoSize") Средство просмотра изображений с четырьмя кнопками
+     ![Picture Viewer with four buttons](../ide/media/express-autosize.png "Express_AutoSize") Picture Viewer with four buttons
 
 6. Теперь снова запустите программу, чтобы увидеть обновленную компоновку формы. При нажатии кнопок и установке флажка пока ничего не происходит, однако вскоре все заработает.
 

@@ -1,5 +1,5 @@
 ---
-title: Удаленная отладка | Документация Майкрософт
+title: Remote Debugging | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,61 +19,61 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 68ebd9ab8c4f9d3cda1371d90a8da459edb1592b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687551"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300552"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете отладить приложение Visual Studio, развернутое на другом компьютере.  Для этого используется удаленный отладчик Visual Studio.  
   
- Информация в этом разделе относится к классическим приложениям Windows и приложениям ASP.NET.  Сведения о удаленная отладка приложений Windows Store и приложения Azure, см. в разделе [удаленной отладки в приложениях Windows Store и Azure](#bkmk_winstoreAzure).  
+ Информация в этом разделе относится к классическим приложениям Windows и приложениям ASP.NET.  For information about remote debugging Windows Store apps and Azure apps, see [Remote Debugging on Windows Store and Azure apps](#bkmk_winstoreAzure).  
   
-## <a name="get-the-remote-tools"></a>Получить инструменты удаленной отладки  
-Можно либо загрузить инструменты удаленной отладки непосредственно на устройстве или сервере, для отладки, или можно получить инструменты удаленной отладки от хост-компьютера с установленной среды Visual Studio.
+## <a name="get-the-remote-tools"></a>Get the remote tools  
+You can either download the remote tools directly on the device or server that you want to debug, or you can get the remote tools from your host machine with Visual Studio installed.
 
-### <a name="to-download-and-install-the-remote-tools"></a>Чтобы скачать и установить инструменты удаленной отладки
+### <a name="to-download-and-install-the-remote-tools"></a>To download and install the remote tools
   
-1. На устройство или сервер компьютера, необходимо выполнить отладку (а не компьютер под управлением Visual Studio) получите правильную версию инструментов удаленной отладки.
+1. On the device or server machine that you want to debug (rather than the machine running Visual Studio), get the correct version of the remote tools.
 
-    |Версия|Ссылка|Примечания|
+    |Version|Ссылка|Примечания|
     |-|-|-|
-    |Visual Studio 2015 с обновлением 3|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|При появлении присоединиться к группе Visual Studio Dev Essentials бесплатно, или можно просто войти в действующую подписку Visual Studio. Затем повторно откройте ссылку, при необходимости. Всегда Загрузите версию, которая соответствует операционной системе устройства (x 86, x64 или версию ARM)|
-    |Visual Studio 2015 (более старая)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|При появлении присоединиться к группе Visual Studio Dev Essentials бесплатно, или можно просто войти в действующую подписку Visual Studio. Затем повторно откройте ссылку, при необходимости.|
-    |Visual Studio 2013|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Загрузить страницу в документации по Visual Studio 2013|
-    |Visual Studio 2012|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Загрузить страницу в документации по Visual Studio 2012|
+    |Visual Studio 2015 с обновлением 3|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|If prompted, join the free Visual Studio Dev Essentials group or you can just sign in with a valid Visual Studio subscription. Then re-open the link if necessary. Always download the version matching your device operating system (x86, x64, or  ARM version)|
+    |Visual Studio 2015 (older)|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|If prompted, join the free Visual Studio Dev Essentials group or you can just sign in with a valid Visual Studio subscription. Then re-open the link if necessary.|
+    |Visual Studio 2013|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Download page in Visual Studio 2013 documentation|
+    |Visual Studio 2012|[Инструменты удаленной отладки](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Download page in Visual Studio 2012 documentation|
   
-2. На странице загрузки выберите версию инструментов, которая соответствует операционной системе (x 86, x64 или версию ARM) и загрузить инструменты удаленной отладки.
+2. On the download page, choose the version of the tools that matches your operating system (x86, x64, or  ARM version) and download the remote tools.
   
     > [!IMPORTANT]
-    > Мы рекомендуем установить последнюю версию инструментов удаленной отладки, соответствующую используемой версии Visual Studio. Несовпадение версий не рекомендуется.  
+    > We recommend you install the most recent version of the remote tools that matches your version of Visual Studio. Mismatched versions are not recommended.  
     >   
-    >  Кроме того необходимо установить инструменты удаленной отладки, которые имеют ту же архитектуру, что операционной системы, на котором вы хотите установить его. Другими словами Если вы хотите выполнить отладку 32-разрядное приложение на удаленном компьютере под управлением 64-разрядной ОС, необходимо установить 64-разрядной версии инструментов удаленной отладки на удаленном компьютере.  
+    >  In addition, you must install the remote tools that have the same architecture as the operating system on which you want to install it. In other words, if you want to debug a 32-bit application on a remote computer running a 64-bit operating system, you must install the 64-bit version of the remote tools on the remote computer.  
   
-3. Скачав исполняемый файл, следуйте инструкциям по установке приложения на удаленном компьютере. См. в разделе [инструкции по установке](#bkmk_setup)
+3. Скачав исполняемый файл, следуйте инструкциям по установке приложения на удаленном компьютере. See [setup instructions](#bkmk_setup)
 
-Если попытаться скопировать удаленный отладчик (msvsmon.exe) на удаленный компьютер и запустите его, имейте в виду, **мастер настройки удаленного отладчика** (**rdbgwiz.exe**) устанавливается только в том случае, при загрузке инструменты и вам может потребоваться использовать мастер для настройки позднее, особенно в том случае, если требуется, чтобы удаленный отладчик для запуска в качестве службы. Дополнительные сведения см. в разделе [(необязательно) Настройка удаленного отладчика как службы](#bkmk_configureService) ниже.
+If you try to copy the remote debugger (msvsmon.exe) to the remote computer and run it, be aware that the **Remote Debugger Configuration Wizard** (**rdbgwiz.exe**) is installed only when you download the tools, and you may need to use the wizard for configuration later, especially if you want the remote debugger to run as a service. For more information, see [(Optional) Configure the remote debugger as a service](#bkmk_configureService) below.
 
-### <a name="to-run-the-remote-debugger-from-a-file-share"></a>Для запуска удаленного отладчика из общей папки
+### <a name="to-run-the-remote-debugger-from-a-file-share"></a>To run the remote debugger from a file share
 
-Можно найти удаленный отладчик (**msvsmon.exe**) на компьютере с Visual Studio 2015 Community, Professional или Enterprise уже установлен. Во многих случаях самым простым способом настройки удаленной отладки является запуск удаленного отладчика (msvsmon.exe) из общей папки. Ограничения использования, см. в разделе страницы справки удаленный отладчик (**Справка / использования** в удаленный отладчик).
+You can find the remote debugger (**msvsmon.exe**) on a computer with Visual Studio 2015 Community, Professional, or Enterprise already installed. For many scenarios, the easiest way to set up remote debugging is to run the remote debugger (msvsmon.exe) from a file share. For usage limitations, see the remote debugger's Help page (**Help / Usage** in the remote debugger).
 
-1. Найти **msvsmon.exe** в каталоге, соответствующие вашей версии Visual Studio. Для Visual Studio 2015:
+1. Find **msvsmon.exe** in the directory matching your version of Visual Studio. For Visual Studio 2015:
 
       **Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
       **Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 
-2. Общий ресурс **удаленный отладчик** папку на компьютере с Visual Studio.
+2. Share the **Remote Debugger** folder on the Visual Studio computer.
 
-3. На удаленном компьютере, запустите **msvsmon.exe**. Выполните [инструкции по установке](#bkmk_setup).
+3. On the remote computer, run **msvsmon.exe**. Follow the [setup instructions](#bkmk_setup).
 
 > [!TIP] 
-> Установка из командной строки и справочник по командной строке, см. на странице справки для **msvsmon.exe** , введя ``msvsmon.exe /?`` в командной строке на компьютере с установленной среды Visual Studio (или перейдите к **Справка / использования**в удаленный отладчик).
+> For command line installation and command line reference, see the Help page for **msvsmon.exe** by typing ``msvsmon.exe /?`` in the command line on the computer with Visual Studio installed (or go to **Help / Usage** in the remote debugger).
 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  Удаленный компьютер должен работать под управлением одной из следующих операционных систем:  
@@ -94,65 +94,65 @@ ms.locfileid: "65687551"
   
 - 1 ГБ ОЗУ (1,5 ГБ при выполнении в виртуальной машине)  
   
-- 1 ГБ доступного пространства на жестком диске  
+- 1 ГБ свободного дискового пространства  
   
 - Жесткий диск 5400 об/мин  
   
 - Видеоадаптер с поддержкой DirectX 9 и разрешением экрана 1024x768 или выше  
   
-## <a name="network-configuration"></a>Конфигурация сети  
+## <a name="network-configuration"></a>Сетевая конфигурация  
  Удаленный компьютер и компьютер Visual Studio должны быть подключены по сети, объединены в рабочую или домашнюю группу либо соединены напрямую с помощью кабеля Ethernet. Отладка через Интернет не поддерживается.  
   
-## <a name="bkmk_setup"></a>Настройка удаленного отладчика  
+## <a name="bkmk_setup"></a>Set up the remote debugger  
  на удаленном компьютере требуются права администратора.  
   
-1. Найдите приложение "Удаленный отладчик". (Откройте меню "Пуск" и найдите **удаленный отладчик**.)
+1. Найдите приложение "Удаленный отладчик". (Open the Start menu and search for **Remote Debugger**.)
   
-    Если вы используете удаленный отладчик на удаленном сервере, можно правой кнопкой мыши приложение удаленного отладчика и выбрать **Запуск от имени администратора** (или запуска удаленного отладчика в качестве службы). Если вы не используете его на удаленном сервере, запустите его обычным образом.
+    If you are running the remote debugger on a  remote server, you can right-click the Remote Debugger app and choose **Run as administrator** (Or, you can run the remote debugger as a service).If you are not running it on a remote server, just start it normally.
   
-2. При запуске инструментов удаленной отладки в первый раз (или до его настройки), **конфигурация удаленной отладки** отображается как поле.  
+2. When you start the remote tools for the first time (or before you have configured it), the **Remote Debugging Configuration** dalog box appears.  
   
     ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
   
-3. Если API службы Windows не установлен (что возможно только в Windows Server 2008 R2), выберите **установить** кнопки.  
+3. If the Windows Service API is not installed (which happens only on Windows Server 2008 R2), choose the **Install** button.  
   
 4. Выберите типы сетей, в которых необходимо использовать инструменты удаленной отладки. Должен быть выбран по крайней мере один тип сети. Если компьютеры соединены через домен, необходимо выбрать первый пункт. Если компьютеры соединены посредством рабочей или домашней группы, необходимо выбрать второй или третий пункт.  
   
-5. Выберите **настроить удаленную отладку** настроить брандмауэр и запустить средство.  
+5. Choose **Configure remote debugging** to configure the firewall and start the tool.  
   
 6. По завершении настройки появится окно удаленного отладчика.
   
     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
   
-    Удаленный отладчик теперь Ожидание подключения. Запомните или запишите имя сервера и номер порта, который отображается, так как он потребуется позже для настройки в Visual Studio.  
+    The remote debugger is now waiting for a connection. Make a note of the server name and port number that is displayed, because you will need this later for configuration in Visual Studio.  
   
-   После завершения отладки и необходимо остановить работу удаленного отладчика щелкните **файл / Выход** в окне. Его можно перезапустить из **запустить** меню или из командной строки:  
+   When you are finished debugging and need to stop the remote debugger, click **File / Exit** on the window. You can restart it from the **Start** menu or from the command line:  
   
-   **\<Каталог установки Visual Studio > \Common7\IDE\Remote Debugger\\< x86, x64 или Appx\msvsmon.exe**.  
+   **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger\\<x86, x64, or Appx\msvsmon.exe**.  
   
 ## <a name="configure-the-remote-debugger"></a>Настройка удаленного отладчика  
  После первого запуска удаленного отладчика можно изменить некоторые аспекты его конфигурации.
   
-- Чтобы разрешить другим пользователям для подключения к удаленному отладчику, выберите **Сервис / разрешения**. Для предоставления разрешений или отказа в предоставлении необходимо обладать правами администратора.
+- To enable other users to connect to the remote debugger, choose **Tools / Permissions**. Для предоставления разрешений или отказа в предоставлении необходимо обладать правами администратора.
 
   > [!IMPORTANT]
-  > Можно запускать удаленный отладчик с учетной записью пользователя, которая отличается от учетной записи пользователя, используемой на компьютере с Visual Studio, но необходимо добавить учетную запись другого пользователя для разрешения удаленного отладчика. 
+  > You can run the remote debugger under a user account that differs from the user account you are using on the Visual Studio computer, but you must add the different user account to the remote debugger's permissions. 
 
-   Кроме того, удаленный отладчик можно запустить из командной строки с **/ allow \<имя пользователя >** параметр: **msvsmon / allow \< username@computer>**.
+   Alternatively, you can start the remote debugger from the command line with the **/allow \<username>** parameter: **msvsmon /allow \<username@computer** .
   
-- Чтобы изменить режим аутентификации или номер порта или указать значение времени ожидания для инструментов удаленной отладки: выберите **Сервис / Параметры**.  
+- To change the Authentication mode or the port number, or to specify a timeout value for the remote tools: choose **Tools / Options**.  
   
-   Список номеров портов, используемых по умолчанию, см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
+   For a listing of the port numbers used by default, see [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
   > Вы можете запускать инструменты удаленной отладки в режиме "без аутентификации", однако настоятельно рекомендуется не использовать этот режим. При работе в этом режиме сетевая безопасность не обеспечивается. Режим без аутентификации можно выбрать, только если вы уверены в отсутствии вредоносного или опасного трафика.
 
-## <a name="bkmk_configureService"></a> (Необязательно) Настройка удаленного отладчика в качестве службы
- Для отладки в ASP.NET и других серверных средах, необходимо запустить удаленный отладчик с правами администратора или, при необходимости его всегда работает, запускать удаленный отладчик как службу.
+## <a name="bkmk_configureService"></a> (Optional) Configure the remote debugger as a service
+ For debugging in ASP.NET and other server environments, you must either run the remote debugger as an Administrator or, if you want it always running,  run the remote debugger as a service.
   
- Если вы хотите настроить удаленный отладчик как службу, выполните следующие действия.  
+ If you want to configure the remote debugger as a service, follow these steps.  
   
-1. Найдите **мастер настройки удаленного отладчика** (rdbgwiz.exe). (Это отдельное приложение, не входящее в состав удаленного отладчика.) Он доступен только в том случае, если вы установили инструменты удаленной отладки. Вместе с Visual Studio он не устанавливается.  
+1. Найдите **мастер настройки удаленного отладчика** (rdbgwiz.exe). (This is a separate application from the Remote Debugger.) It is available only when you install the remote tools. Вместе с Visual Studio он не устанавливается.  
   
 2. Запустите мастер настройки. Когда появится первая страница, нажмите кнопку **Далее**.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "65687551"
   
 4. Добавьте имя учетной записи пользователя и пароль.  
   
-    Для этой учетной записи может потребоваться добавить разрешение **Вход в качестве службы** . (Найдите элемент **Локальная политика безопасности** (secpol.msc) на **начальной** странице или в начальном окне (либо введите **secpol** в командной строке). В открывшемся окне дважды щелкните элемент **Назначение прав пользователя**, а затем в области справа найдите элемент **Вход в качестве службы** . Дважды щелкните его. Добавить учетную запись пользователя, **свойства** и щелкните **ОК**.) Нажмите кнопку **Далее**.  
+    Для этой учетной записи может потребоваться добавить разрешение **Вход в качестве службы** . (Найдите элемент **Локальная политика безопасности** (secpol.msc) на **начальной** странице или в начальном окне (либо введите **secpol** в командной строке). В открывшемся окне дважды щелкните элемент **Назначение прав пользователя**, а затем в области справа найдите элемент **Вход в качестве службы** . Дважды щелкните его. Add the user account to the **Properties** window and click **OK**.) Click **Next**.  
   
 5. Выберите тип сети, с которой должны взаимодействовать инструменты удаленной отладки. Должен быть выбран по крайней мере один тип сети. Если компьютеры соединены через домен, необходимо выбрать первый пункт. Если компьютеры соединены посредством рабочей или домашней группы, необходимо выбрать второй или третий пункт. Нажмите кнопку **Далее**.  
   
@@ -173,18 +173,18 @@ ms.locfileid: "65687551"
    Останавливать и запускать службу удаленного отладчика можно с помощью компонента **Панель управления / Службы**.  
 
 ## <a name="remote-debug-an-aspnet-application"></a>Удаленная отладка приложения ASP.NET  
- Развертывание приложения ASP.NET на удаленном компьютере со службами IIS выполняется по-разному в зависимости от операционной системы и версии IIS. Для удаленных компьютеров под управлением Windows Server 2008 или Windows Server 2012, IIS 7.5 или более поздней версии, см. в разделе [Remote Debugging ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+ Развертывание приложения ASP.NET на удаленном компьютере со службами IIS выполняется по-разному в зависимости от операционной системы и версии IIS. For remote computers running Windows Server 2008 or Windows Server 2012 that have IIS 7.5 or later installed, please see [Remote Debugging ASP.NET on a Remote IIS Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
  
- При отладке приложения ASP.NET Core, см. в разделе [публикация в службах IIS](https://docs.asp.net/en/latest/publishing/iis.html). Различные шаги необходимые для публикации ASP.NET Core в службах IIS. После успешной публикации приложения ASP.NET Core, можно удаленно отлаживать его [так же, как другие приложения ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), за исключением того, что процесс, необходимо присоединить к является dnx.exe вместо w3wp.exe.
+ If you are debugging an ASP.NET Core app, please see [Publishing to IIS](https://docs.asp.net/en/latest/publishing/iis.html). Different steps are required to publish an ASP.NET Core on IIS. Once you publish an ASP.NET Core app successfully, you can remote debug it [just like other ASP.NET apps](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), except that the process you need to attach to is dnx.exe instead of w3wp.exe.
 
 ## <a name="remote-debug-a-visual-c-project"></a>Удаленная отладка проекта Visual C++  
- В следующей процедуре, имя и путь проекта — C:\remotetemp\MyMfc, а имя удаленного компьютера — **MJO DL**.  
+ In the following procedure, the name and path of the project is C:\remotetemp\MyMfc, and the name of the remote computer is **MJO-DL**.  
   
 1. Создайте приложение MFC с именем **mymfc**.  
   
 2. Создайте точку останова в легкодоступном месте приложения, например в файле **MainFrm.cpp**, в начале `CMainFrame::OnCreate`.  
   
-3. В обозревателе решений щелкните правой кнопкой мыши проект и выберите **свойства**. Откройте вкладку **Отладка**.  
+3. In Solution Explorer, right-click on the project and select **Properties**. Откройте вкладку **Отладка**.  
   
 4. Для параметра **Загружаемый отладчик** задайте значение **Удаленный отладчик Windows**.  
   
@@ -192,49 +192,49 @@ ms.locfileid: "65687551"
   
 5. Внесите в свойства следующие изменения:  
   
-   |Параметр|Значение|
+   |Параметр|значения|
    |-|-|  
    |Удаленная команда|C:\remotetemp\mymfc.exe|  
    |Рабочий каталог|C:\remotetemp|  
-   |Имя удаленного сервера|Список Рассылки MJO:*номер_порта*|  
+   |Имя удаленного сервера|MJO-DL:*portnumber*|  
    |Подключение|Удаленный доступ с аутентификацией Windows|  
    |Тип отладчика|Только машинный код|  
    |Каталог развертывания|C:\remotetemp.|  
    |Дополнительные файлы развертывания|C:\data\mymfcdata.txt.|  
   
-    При развертывании дополнительных файлов (необязательно), папка должна существовать на обоих компьютерах.  
+    If you deploy additional files (optional), the folder must exist on both machines.  
   
-6. В обозревателе решений щелкните решение правой кнопкой мыши и выберите **Configuration Manager**.  
+6. In Solution Explorer, right-click the solution and choose **Configuration Manager**.  
   
 7. Для конфигурации **Отладка** установите флажок **Развертывание**.  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8. Начать отладку (**отладка | начать отладку**, или **F5**).  
+8. Start debugging (**Debug / Start Debugging**, or **F5**).  
   
 9. Исполняемый файл автоматически развернется на удаленном компьютере.  
   
-10. При появлении запроса введите сетевые учетные данные для подключения к удаленному компьютеру.  
+10. If prompted, enter network credentials to connect to the remote machine.  
   
-     Необходимые учетные данные зависят от конфигурации безопасности вашей сети. Например на компьютере домена, могут выбрать сертификат безопасности или введите имя домена и пароль. На компьютере не входящих в домен, можно ввести имя компьютера и имя учетной записи пользователя, например <strong>MJO-DL\name@something.com</strong>, а также правильный пароль.  
+     The required credentials are specific to your network's security configuration. For example, on a domain computer, you might choose a security certificate or enter your domain name and password. On a non-domain machine, you might enter the machine name and a valid user account name, like <strong>MJO-DL\name@something.com</strong>, along with the correct password.  
   
 11. На компьютере с Visual Studio вы должны увидеть, что выполнение остановилось в точке останова.  
   
     > [!TIP]
     > Кроме того, файлы можно развернуть как отдельный шаг. В **обозревателе решений** щелкните правой кнопкой мыши узел **mymfc** и выберите пункт **Развернуть**.  
   
-    Если приложение должно использовать файлы, не являющиеся файлами кода, их нужно включить в проект Visual Studio. Создайте папку проекта для дополнительных файлов (в **обозревателе решений**, нажмите кнопку **Add / новую папку**.) Затем добавьте файлы в папку (в **обозревателе решений**, нажмите кнопку **добавить / существующий элемент**, выберите нужные файлы.). На странице **Свойства** для каждого файла задайте для свойства **Копировать в выходной каталог** значение **Всегда копировать**.  
+    Если приложение должно использовать файлы, не являющиеся файлами кода, их нужно включить в проект Visual Studio. Create a project folder for the additional files (in the **Solution Explorer**, click **Add / New Folder**.) Then add the files to the folder (in the **Solution Explorer**, click **Add / Existing Item**, then select the files.). На странице **Свойства** для каждого файла задайте для свойства **Копировать в выходной каталог** значение **Всегда копировать**.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Удаленная отладка проекта Visual C# или Visual Basic  
- Отладчик не может развертывать классические приложения Visual C# и Visual Basic на удаленном компьютере, но вы все же можете выполнять их удаленную отладку описанным ниже образом. В следующей процедуре предполагается, что вы хотите выполнить его отладку на компьютере с именем **MJO DL**, как показано на предыдущем рисунке.
+ Отладчик не может развертывать классические приложения Visual C# и Visual Basic на удаленном компьютере, но вы все же можете выполнять их удаленную отладку описанным ниже образом. The following procedure assumes that you want to debug it on a computer named **MJO-DL**, as shown in the earlier illustration.
   
 1. Создайте проект WPF с именем **MyWpf**.  
   
 2. Установите точку останова в легкодоступном месте кода.  
   
-    Например, ее можно установить в обработчике кнопки. Для этого откройте файл MainWindow.xaml и добавьте элемент управления Button с панели инструментов, а затем дважды щелкните кнопку, чтобы открыть ее обработчик.
+    Например, ее можно установить в обработчике кнопки. To do this, open MainWindow.xaml, and add a Button control from the Toolbox, then double-click the button to open it's handler.
   
-3. В обозревателе решений щелкните правой кнопкой мыши проект и выберите **свойства**.  
+3. В обозревателе решений щелкните правой кнопкой мыши проект и выберите пункт **Свойства**.  
   
 4. На странице **Свойства** откройте вкладку **Отладка**.  
   
@@ -242,7 +242,7 @@ ms.locfileid: "65687551"
   
 5. Убедитесь, что текстовое поле **Рабочий каталог** пустое.  
   
-6. Выберите **использовать удаленный компьютер**и тип **MJO-DL:4020** в текстовом поле. (4020 — номер порта, отображаются в окне удаленного отладчика).  
+6. Choose **Use remote machine**, and type **MJO-DL:4020** in the text box. (4020 is the port number shown in the remote debugger window).  
   
 7. Убедитесь в том, что параметр **Разрешить отладку машинного кода** не выбран.  
   
@@ -253,47 +253,47 @@ ms.locfileid: "65687551"
 10. Скопируйте исполняемый файл, сборку которого вы только что выполнили, с компьютера с Visual Studio в созданную на удаленном компьютере папку.
   
     > [!CAUTION]
-    > Не следует вносить изменения в код или перестроения (или необходимо повторить этот шаг). Исполняемый файл, скопированный на удаленный компьютер, должен в точности совпадать с локальным исходным кодом и символами.
+    > Do not make changes to the code or rebuild (or you must repeat this step). Исполняемый файл, скопированный на удаленный компьютер, должен в точности совпадать с локальным исходным кодом и символами.
 
-    Можно скопировать в проект вручную, использовать Xcopy, Robocopy, Powershell или другие параметры.
+    You can copy the project manually, use Xcopy, Robocopy, Powershell, or other options.
   
-11. Убедитесь, что удаленный отладчик запущен на целевом компьютере. (Если это не так, найдите **удаленный отладчик** в **запустить** меню. ) В окне удаленного отладчика выглядит следующим образом.  
+11. Make sure the remote debugger is running on the target machine. (If it's not, search for **Remote Debugger** in the **Start** menu. ) The remote debugger window looks like this.  
   
      ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
   
-12. В Visual Studio начните отладку (**отладка | начать отладку**, или **F5**).  
+12. In Visual Studio, start debugging (**Debug / Start Debugging**, or **F5**).  
   
-13. При появлении запроса введите сетевые учетные данные для подключения к удаленному компьютеру.  
+13. If prompted, enter network credentials to connect to the remote machine.  
   
-     Необходимые учетные данные зависят от конфигурации безопасности вашей сети. Например на компьютере домена, можно ввести имя домена и пароль. На компьютере не входящих в домен, можно ввести имя компьютера и имя учетной записи пользователя, например <strong>MJO-DL\name@something.com</strong>, а также правильный пароль.
+     The required credentials vary depending on your network's security configuration. For example, on a domain computer, you can  enter your domain name and password. On a non-domain machine, you might enter the machine name and a valid user account name, like <strong>MJO-DL\name@something.com</strong>, along with the correct password.
 
      Главное окно приложения WPF должно быть открыто на удаленном компьютере.
   
-14. При необходимости предпринимать действия для достигнута точка останова. Она должна быть активна. Если она не активна, символы для приложения не загрузились. Повторите попытку и, если это не поможет, получить сведения о загрузке символов и устранении связанных с ними в [основные сведения о файлах символов и Visual Studio параметры символов](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
+14. If necessary, take action to hit the breakpoint. Она должна быть активна. Если она не активна, символы для приложения не загрузились. Retry, and if that doesn't work, get information about loading symbols and how troubleshoot them at [Understanding symbol files and Visual Studio’s symbol settings](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. На компьютере с Visual Studio вы должны увидеть, что выполнение остановилось в точке останова.
   
-    Если приложение должно использовать файлы, не являющиеся файлами кода, их нужно включить в проект Visual Studio. Создайте папку проекта для дополнительных файлов (в **обозревателе решений**, нажмите кнопку **Add / новую папку**.) Затем добавьте файлы в папку (в **обозревателе решений**, нажмите кнопку **добавить / существующий элемент**, выберите нужные файлы.). На странице **Свойства** для каждого файла задайте для свойства **Копировать в выходной каталог** значение **Всегда копировать**.
+    Если приложение должно использовать файлы, не являющиеся файлами кода, их нужно включить в проект Visual Studio. Create a project folder for the additional files (in the **Solution Explorer**, click **Add / New Folder**.) Then add the files to the folder (in the **Solution Explorer**, click **Add / Existing Item**, then select the files.). На странице **Свойства** для каждого файла задайте для свойства **Копировать в выходной каталог** значение **Всегда копировать**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Настройка отладки с удаленными символами  
  Вы можете отлаживать код с использованием символов, созданных на компьютере Visual Studio. Производительность удаленного отладчика гораздо выше при использовании локальных символов.  Если необходимо использовать удаленные символы, укажите, что монитор удаленной отладки должен искать символы на удаленном компьютере.  
   
  Начиная с версии Visual Studio 2013 с обновлением 2 можно использовать следующий параметр командной строки msvsmon для использования удаленных символов для управляемого кода: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
- Дополнительные сведения см в справке по удаленной отладке (нажмите клавишу **F1** в окне удаленного отладчика, или щелкните **Справка / использования**). Также см. запись блога с описанием [изменений, связанных с удаленной загрузкой символов .NET в Visual Studio 2012 и 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
+ For more information, please see the remote debugging help (press **F1** in the remote debugger window, or click **Help / Usage**). Также см. запись блога с описанием [изменений, связанных с удаленной загрузкой символов .NET в Visual Studio 2012 и 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/).  
   
-## <a name="bkmk_winstoreAzure"></a> Удаленная отладка в приложениях Windows Store и Azure  
- Сведения об удаленной отладке приложений Windows Store, см. в разделе [отладка и тестирование приложений Windows Store на удаленном устройстве из Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
+## <a name="bkmk_winstoreAzure"></a> Remote Debugging on Windows Store and Azure apps  
+ For information about remote debugging with Windows Store apps, see [Debug and test Windows Store apps on a remote device from Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Сведения об отладке в Azure см. в одном из следующих разделов:  
   
-- [Отладка облачной службы или виртуальной машины в Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Debugging a Cloud Service or Virtual Machine in Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
-- [Отладка серверной части .NET в Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Debugging the .NET Backend in Visual Studio](https://blogs.msdn.microsoft.com/azuremobile/2014/03/14/debugging-net-backend-in-visual-studio/)  
   
-- Введение в удаленную отладку на веб-сайты Azure ([часть 1](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [часть 2](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [часть 3](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Introduction to Remote Debugging on Azure Web Sites ([Part 1](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [Part 2](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [Part 3](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   

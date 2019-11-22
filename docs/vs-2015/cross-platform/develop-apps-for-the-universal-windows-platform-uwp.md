@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ed601f6b3bfeba4d7aebed5955b340fb28908c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660206"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299835"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "72660206"
 
  Ниже приведен список необходимого программного обеспечения.
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)
+- [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Убедитесь в том, что универсальные средства разработки приложений Windows выбраны в списке дополнительных функций. Без этих средств создать универсальные приложения невозможно.
+- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Убедитесь в том, что универсальные средства разработки приложений Windows выбраны в списке дополнительных функций. Без этих средств создать универсальные приложения невозможно.
 
   После установки программного обеспечения необходимо [включить устройство Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) для разработки. (Вам больше не нужна лицензия разработчика для каждого устройства Windows 10.)
 
@@ -55,7 +55,7 @@ ms.locfileid: "72660206"
   Конструктор XAML можно использовать только на платформе разработки Windows 10.
 
 ## <a name="universal-windows-apps"></a>Универсальные приложения Windows
- Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы [создать универсальное приложение Windows для устройств Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Или просмотрите [этот видеоролик о начале работы](http://channel9.msdn.com/Series/ConnectOn-Demand/229).
+ Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы [создать универсальное приложение Windows для устройств Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Или просмотрите [этот видеоролик о начале работы](https://channel9.msdn.com/Series/ConnectOn-Demand/229).
 
  При наличии существующих приложений Магазина Windows 8.1, приложений для Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, [перенесите эти существующие приложения](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , чтобы использовать последнюю версию универсальной платформы Windows.
 

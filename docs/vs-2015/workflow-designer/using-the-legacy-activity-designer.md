@@ -1,5 +1,5 @@
 ---
-title: Использование конструктора устаревших действий | Документация Майкрософт
+title: Using the Legacy Activity Designer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 534af8da414cb3b9cc0dd786f7b79abe00e2ed66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a13aeeb3394ee6b8896376c0e7d520b90fb56fa6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606887"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302826"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Использование конструктора действия для прежних версий
 В данном разделе описано использование конструктора действий в средстве [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии. Используйте конструктор более ранней версии, если приложение должно ориентироваться на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -31,17 +31,17 @@ ms.locfileid: "72606887"
 ## <a name="creating-a-custom-activity"></a>Создание пользовательского действия
  Для создания пользовательского действия с помощью конструктора действий выполните следующие шаги:
 
-1. В меню **проект** выберите команду **Добавить действие**.
+1. On the **Project** menu, click **Add Activity**.
 
-2. Выберите шаблон **действие** или **действие (с разделением кода)** .
+2. Select the **Activity** or **Activity (with code separation)** template.
 
-   1. Используйте шаблон **действия** для создания действия с определением действия и пользовательским кодом в одном файле кода.
+   1. Use the **Activity** template to create an activity with the activity definition and the user code in same code file.
 
-   2. Используйте шаблон **действие (с разделением кода)** для создания действия с определением действия, выраженное в виде разметки рабочего процесса, и пользовательского кода в отдельном файле кода.
+   2. Use the **Activity (with code separation)** template to create an activity with the activity definition expressed as workflow markup and the user code in a separate code file.
 
-3. Введите имя действия или сохраните имя по умолчанию, а затем нажмите кнопку **Добавить**.
+3. Type an activity name or keep the default name, and then click **Add**.
 
-   Вы также можете создать набор настраиваемых действий, создав новый проект типа **Библиотека действий рабочих процессов**. Дополнительные сведения об этом типе проекта см. [в разделе инструкции. Создание библиотеки действий рабочего процесса (устаревшая)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+   You can also create a set of custom activities by creating a new project of type **Workflow Activity Library**. For more information about this project type, see [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Настройка действия
  Пока конструктор действия активен, для настройки свойств, перечисленных в следующей таблицы, можно использовать браузер свойств.
@@ -49,12 +49,12 @@ ms.locfileid: "72606887"
 |свойство;|Комментарии|
 |--------------|--------------|
 |**Name**|Имя действия.|
-|**Базовый класс**|Базовый класс от которого наследуется действие. Базовым классом по умолчанию является [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). В окне **Свойства** щелкните **базовый класс** многоточие **[...]** , чтобы выбрать другой базовый класс в [диалоговом окне Обзор и выбор типа .NET (прежние версии)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
+|**Base Class**|Базовый класс от которого наследуется действие. The default base class is [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020). In the **Properties** window, click the **Base Class** ellipses **[…]** to select another base class in the [Browse and Select a .NET Type Dialog Box (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
 |**Описание**|Пользовательское описание действия.|
-|**Enabled**|Установите значение **true** по умолчанию, чтобы включить выполнение и проверку действия. Задайте значение **false** , чтобы отключить выполнение и проверку действия. Сведения о выполнении и проверке действий см. в разделе [Разработка действий рабочего процесса](http://go.microsoft.com/fwlink?LinkID=65024).|
+|**Enabled**|Set to **True** by default to enable activity execution and validation. Set to **False** to disable activity execution and validation. For information about activity execution and validation, see [Developing Workflow Activities](https://go.microsoft.com/fwlink?LinkID=65024).|
 
 ## <a name="adding-child-activities"></a>Добавление дочерних действий
  Можно перетащить дочерние действия с панели элементов на разрабатываемое действие. Далее, используя браузер свойств, можно настроить каждое дочернее действие.
 
 ## <a name="see-also"></a>См. также раздел
- [Разработка действий рабочего процесса](http://go.microsoft.com/fwlink?LinkID=65024) [Создание настраиваемых](http://go.microsoft.com/fwlink?LinkID=65021) действий [устаревшие действия рабочих процессов](../workflow-designer/legacy-workflow-activities.md) [примеры](http://go.microsoft.com/fwlink?LinkID=65022) действий [: создание библиотеки действий рабочего процесса (устаревшая)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [с помощью устаревшей конструктор рабочих процессов ](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Developing Workflow Activities](https://go.microsoft.com/fwlink?LinkID=65024) [Creating Custom Activities](https://go.microsoft.com/fwlink?LinkID=65021) [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md) [Custom Activities Samples](https://go.microsoft.com/fwlink?LinkID=65022) [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [Using the Legacy Workflow Designer](../workflow-designer/using-the-legacy-workflow-designer.md)

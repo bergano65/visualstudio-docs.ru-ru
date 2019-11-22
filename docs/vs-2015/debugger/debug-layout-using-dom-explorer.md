@@ -1,5 +1,5 @@
 ---
-title: Отладка макета с использованием проводника DOM | Документация Майкрософт
+title: Debug layout using DOM Explorer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,24 +18,24 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434122"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298394"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Отладка макета с использованием проводника DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
+Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- На вкладке **Макет** проводника DOM отображается [рамочная модель CSS](http://go.microsoft.com/fwlink/?LinkID=238778) для выбранного элемента в приложении [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , приложении Магазина Windows Phone или приложении, созданном с помощью инструментов Visual Studio для Apache Cordova. С помощью визуального представления рамочной модели можно находить и изменять значения, связанные с макетом и влияющие на внешний вид элементов.  
+ На вкладке **Макет** проводника DOM отображается [рамочная модель CSS](https://go.microsoft.com/fwlink/?LinkID=238778) для выбранного элемента в приложении [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , приложении Магазина Windows Phone или приложении, созданном с помощью инструментов Visual Studio для Apache Cordova. С помощью визуального представления рамочной модели можно находить и изменять значения, связанные с макетом и влияющие на внешний вид элементов.  
   
 > [!TIP]
 > Изменения, вносимые на вкладке **Макет** , не являются постоянными. Вы можете внести постоянные изменения в исходный код, а затем обновить приложение, нажав кнопку **Обновить приложение Windows** (только для приложений Магазина Windows и Магазина Windows Phone) на панели инструментов «Отладка». Это позволит избежать перезапуска отладчика.  
   
- С помощью проводника DOM изменять аспекты макета, не отображаемые в рамочной модели, см. в разделе [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md) и [стилей CSS, отладка с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ To use DOM Explorer to modify aspects of layout that aren’t shown in the box model, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md) and [Debug CSS styles using DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Пример устранения проблемы с макетом  
  В этом примере показано, как выбрать элемент списка в шаблоне Hub/Pivot, интерпретировать значения рамочной модели на вкладке **Макет** , а затем изменить одно из значений свойств, чтобы устранить проблему с макетом.  
@@ -69,7 +69,7 @@ ms.locfileid: "63434122"
   
 5. В зависимости от запускаемого проекта выберите **Emulator 8.1 WVGA 512MB (RU)** или **Имитатор** в раскрывающемся списке на панели инструментов "Отладка" (значение по умолчанию —**Локальный компьютер** ).  
   
-     ![Выбор цели отладки](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
+     ![Selecting a debug target](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
 6. Нажмите клавишу F5, чтобы запустить приложение в режиме отладки.  
   
@@ -83,11 +83,11 @@ ms.locfileid: "63434122"
 8. Переключитесь на Visual Studio и щелкните **Выбор элемента** в проводнике DOM (или нажмите CTRL+B). При этом изменится режим выбора, то есть элемент можно будет выбирать щелчком, и приложение появится на переднем плане. Вернуть предыдущий режим можно одним щелчком.  
   
     > [!TIP]
-    > Кроме того, выбрать HTML-элементы можно непосредственно в проводнике DOM с помощью клавиш со стрелками или иных методов. Дополнительные сведения о выборе элементов см. в разделе [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Кроме того, выбрать HTML-элементы можно непосредственно в проводнике DOM с помощью клавиш со стрелками или иных методов. For more info on selecting elements, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. В эмуляторе телефона или имитаторе выберите серую правую половину одного из изображений, разрезанных напополам. Вокруг выбранного элемента появляется рамка, как показано здесь в эмуляторе Windows Phone:  
   
-     ![Выбор элемента DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
+     ![Selecting a DOM element](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
     > Имитатор поддерживает наведение на элементы для отображения рамки вокруг элементов DOM перед выбором одного из них. В эмуляторе Windows Phone данная функция не поддерживается.  
@@ -99,13 +99,13 @@ ms.locfileid: "63434122"
     </img>  
     ```  
   
-10. Перейдите на вкладку **Макет** . На этой вкладке отображается рамочная модель выбранного элемента, как показано здесь в эмуляторе Windows Phone.  
+10. Click the **Layout** tab. This tab shows the box model of the selected element, as shown here in the Windows Phone Emulator.  
   
-     ![Вкладка "Макет" проводника DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Layout tab of DOM Explorer](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      Это представление позволяет получить некоторые полезные сведения об элементе:  
   
-    - Цвета соответствуют выделению рамками в имитаторе при наведении указателя мыши на элементами. Синий цвет представляет \<img > размеры элемента. Бежевый цвет представляет значения полей.  
+    - Цвета соответствуют выделению рамками в имитаторе при наведении указателя мыши на элементами. The blue color represents the \<img> element dimensions. Бежевый цвет представляет значения полей.  
   
     - Для левого поля (margin-left) установлено значение, что говорит о возможной причине проблемы, поскольку черной является именно левая часть изображений.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "63434122"
 11. Чтобы увидеть, как применяется правило margin-left, откройте вкладку **Вычисленные** и найдите правило margin-left. Можно видеть, что для этого правила задано значение 5em, но вычисленное значение равно 66,66 пикселей или 146,66 пикселей — в зависимости от целевого устройства.  
   
     > [!TIP]
-    > **Вычисленные** вкладка показывает, что правило margin-left задается в `..hubpage .hub. section4 .sub-image-row img` селектора CSS, находится в файле hub.css. В этом демонстрационном приложении исправление требуется внести именно в этот файл.  
+    > The **Computed** tab shows that the margin-left rule is set in the `..hubpage .hub. section4 .sub-image-row img` CSS selector, found in hub.css. В этом демонстрационном приложении исправление требуется внести именно в этот файл.  
   
      Кроме того, можно использовать вкладку **Макет** для тестирования изменений значений макета.  
   
@@ -122,11 +122,11 @@ ms.locfileid: "63434122"
   
 13. Введите `0` и нажмите клавишу ВВОД. (Изменить значение также можно с помощью клавиш СТРЕЛКА ВВЕРХ и СТРЕЛКА ВНИЗ).  
   
-14. Выберите другие \<img > элементы в проводнике DOM и измените значения их margin-left на 0.  
+14. Select the other \<img> elements in DOM Explorer and change their margin-left values to 0.  
   
 15. Перейдите в эмулятор телефона или в имитатор. Обновленные значения margin-left применяются к изображениям раздела 4. Эти значения также обновляются на вкладке **Вычисленные** в правиле margin-left.  
   
-## <a name="see-also"></a>См. также  
- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Отладка стилей CSS с использованием проводника DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Debug CSS styles using DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Просмотр прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)

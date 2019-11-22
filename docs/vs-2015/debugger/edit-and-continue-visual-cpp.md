@@ -1,5 +1,5 @@
 ---
-title: Изменить и продолжить (Visual C++) | Документация Майкрософт
+title: Edit and Continue (Visual C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,25 +18,25 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fef02f08ac635687eaaf071188ba0455c6389d9e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697384"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301062"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете использовать функцию "Изменить и продолжить" в проектах Visual C++. См. в разделе [поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md) сведения об ограничениях, изменить и продолжить.  
+Вы можете использовать функцию "Изменить и продолжить" в проектах Visual C++. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.  
   
- Начиная с Visual Studio 2015 с обновлением 1, вы можете теперь изменить и продолжить использовать в приложениях Windows Store C++ и DirectX, поскольку теперь поддерживается **/ZI** переключатель компилятора с **/bigobj** переключения. Также можно изменить и продолжить с двоичными файлами, скомпилированными с **/fastlink** переключения.  
+ Starting in Visual Studio 2015 Update 1, you can now use Edit and Continue in Windows Store C++ apps and DirectX apps, because it now supports the **/ZI** compiler switch with **/bigobj** switch. You can also use Edit  and Continue with binaries compiled with the **/FASTLINK** switch.  
   
- Кроме того, в обновлении 1 присутствуют такие усовершенствования, как новый диалог ожидания с возможностью отмены и уведомление, если файл не поддерживает "Изменить и продолжить". Дополнительные сведения об улучшениях с обновлением 1 см. в разделе [усовершенствования для C++ изменить и продолжить в Visual Studio 2015 с обновлением 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
+ Other Update 1 improvements include a new, cancelable wait dialog, and notification when a file does not support Edit and Continue. For more information about Update 1 improvements, see [Improvements for C++ Edit and Continue in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  Параметр компилятора [/Zo (Enhance Optimized Debugging)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f), который появился в Visual Studio 2013 с обновлением 3, добавляет дополнительные сведения в PDB-файлы символов для двоичных файлов, скомпилированных без параметра [/Od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   
- **/Zo** отключает Изменить и продолжить. См. практическое руководство по [ отладке оптимизированного кода](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** disables Edit and Continue. См. раздел [Практическое руководство. Отладка оптимизированного кода](../debugger/how-to-debug-optimized-code.md)  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Включение и отключение возможности "Изменить и продолжить".  
  Можно отключить автоматический вызов возможности "Изменить и продолжить" при внесении изменений в код, которые не следует применять в текущем сеансе отладки. Можно также повторно включить автоматическую возможность "Изменить и продолжить".  
@@ -77,5 +77,5 @@ ms.locfileid: "65697384"
   
  В таких случаях отладчик продолжает выполнение исходного кода до тех пор, пока эти изменения не вступят в силу. Устаревший код отображается в качестве временного исходного файла в отдельном окне исходного кода. Заголовок этого окна имеет вид наподобие `enc25.tmp`. При этом отредактированный исходный код остается в своем окне. При попытке редактирования устаревшего кода появляется предупреждение.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md)

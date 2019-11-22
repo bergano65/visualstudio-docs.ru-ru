@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662603"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296221"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Работа с кодом Visual C++ (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "72662603"
 - Убедитесь, что тип находится в правильной области действия, чтобы конструктор классов мог его найти. Убедитесь, что в коде присутствует оператор `using`, `imports` или `#include`. Убедитесь также, что этот тип (или связанный тип) не был перемещен из пространства имен, в котором он находился изначально.
 
 ### <a name="troubleshooting-other-error-messages"></a>Диагностика других сообщений об ошибках
- На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. См. [Форум по конструкторам классов Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
+ На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. См. [Форум по конструкторам классов Visual Studio](https://go.microsoft.com/fwlink/?linkid=160754).
 
 ## <a name="limitations"></a> Ограничения для элементов кода C++
 
@@ -107,4 +107,4 @@ ms.locfileid: "72662603"
 - Конструктор классов не может отобразить типы, которые относятся к void или являются производными от типа void.
 
 ## <a name="see-also"></a>См. также
- [Проектирование и Просмотр классов и типов](../ide/designing-and-viewing-classes-and-types.md) [, работающих с классами и другими типами (конструктор классов)](../ide/working-with-classes-and-other-types-class-designer.md) [Работа с схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md) [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md) [Дополнительные сведения о Конструктор классов ошибок](../ide/additional-information-about-class-designer-errors.md) [ C++ визуальные классы в конструктор классовных](../ide/visual-cpp-classes-in-class-designer.md) [визуальных C++ структурах конструктор классов](../ide/visual-cpp-structures-in-class-designer.md) [ C++ перечисления](../ide/visual-cpp-enumerations-in-class-designer.md) визуальных элементов в конструктор классов [визуальных C++ typedef в конструктор классов](../ide/visual-cpp-typedefs-in-class-designer.md)
+ [Проектирование и Просмотр классов и типов,](../ide/designing-and-viewing-classes-and-types.md) [работающих с классами и другими типами (конструктор классов)](../ide/working-with-classes-and-other-types-class-designer.md) [Работа с схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md) [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md) [Дополнительные сведения о конструктор классов ошибках](../ide/additional-information-about-class-designer-errors.md) [визуальные C++ классы в конструктор классов](../ide/visual-cpp-classes-in-class-designer.md) [визуальные C++ ](../ide/visual-cpp-structures-in-class-designer.md) [ C++ перечисления](../ide/visual-cpp-enumerations-in-class-designer.md) в конструктор классов визуальных [ C++ определений](../ide/visual-cpp-typedefs-in-class-designer.md) в конструктор классов

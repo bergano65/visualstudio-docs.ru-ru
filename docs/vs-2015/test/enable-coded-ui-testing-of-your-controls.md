@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 920dea4e81ca2ce0c562bb6d77582fd5e3753663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 331dabfe8e219383fdc04187482b17b9048886a9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660586"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302578"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Включение закодированных тестов пользовательского интерфейса для элементов управления
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "72660586"
 
 4. [Поддержка действий, учитывающих намерение, путем реализации фильтра действий](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
 
-   ![ПОСТРОИТЕЛЬ КОДИРОВАННЫХ&#95;Full](../test/media/cuit-full.png "CUIT_Full")
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")
 
 ## <a name="recordandplayback"></a> Поддержка записи, воспроизведения и проверки свойства путем реализации специальных возможностей
  Построитель закодированных тестов пользовательского интерфейса собирает сведения об элементах управления, которые он обнаруживает во время записи, а затем создает код для повторения этого сеанса. Если элемент управления не поддерживает специальные возможности, построитель закодированных тестов пользовательского интерфейса захватывает действия (например, щелчки мышью) с помощью координат экрана. Созданный код выводит эти щелчки мышью в тех же экранных координатах при воспроизведении теста. Если во время воспроизведения теста элемент управления отображается в другом месте на экране, созданный код не сможет выполнить это действие на элементе управления. Это может привести к сбоям, если тест воспроизводится при различных конфигурациях экрана, в разных средах или после внесения изменений в макет пользовательского интерфейса.
 
- ![ПОСТРОИТЕЛЬ КОДИРОВАННЫХ&#95;рекордносуппорт](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
 
  Однако при реализации специальных возможностей построитель закодированных тестов пользовательского интерфейса будет использовать их для того, чтобы получить сведения об элементе управления во время записи теста и создания кода. Затем, при выполнении теста, созданный код повторит эти события для элемента управления, даже если он находится где-либо еще в интерфейсе пользователя. Авторы теста могут также создавать утверждения благодаря использованию основных свойств элемента управления.
 
- ![Запись&#95;построитель кодированных](../test/media/cuit-record.png "CUIT_Record")
+ ![CUIT&#95;Record](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Поддержка записи, воспроизведения, проверки свойств и навигации для элемента управления Windows Forms
  Реализуйте специальные возможности для элемента управления согласно описанной ниже процедуре. Подробные пояснения см. в разделе <xref:System.Windows.Forms.AccessibleObject>.
 
- ![ПОСТРОИТЕЛЬ КОДИРОВАННЫХ&#95;доступ](../test/media/cuit-accessible.png "CUIT_Accessible")
+ ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")
 
 1. Реализуйте производный от <xref:System.Windows.Forms.Control.ControlAccessibleObject> класс и переопределите свойство <xref:System.Windows.Forms.Control.AccessibilityObject%2A> для возврата объекта класса.
 
@@ -83,10 +83,10 @@ ms.locfileid: "72660586"
 ## <a name="customproprties"></a> Поддержка проверки пользовательского свойства путем реализации поставщика свойства
  После реализации базовой поддержки проверки записи, воспроизведения и свойств вы можете сделать пользовательские свойства элемента управления доступными закодированным тестам пользовательского интерфейса путем реализации подключаемого модуля <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Например, в следующей процедуре создается поставщик свойства, позволяющий закодированным тестам пользовательского интерфейса получать доступ к свойству состояния дочерних элементов управления CurveLegend элемента управления диаграммы.
 
- ![ПОСТРОИТЕЛЬ КОДИРОВАННЫХ&#95;кустомпропс](../test/media/cuit-customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>Поддержка проверки пользовательского свойства
- ![ПОСТРОИТЕЛЬ КОДИРОВАННЫХ&#95;Props](../test/media/cuit-props.png "CUIT_Props")
+ ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")
 
 1. Переопределите свойство <xref:System.Windows.Forms.AccessibleObject.Description%2A> объекта специальных возможностей легенды кривой, чтобы передать форматируемые значения свойств в строку описания, отделенную точкой с запятой (;) от основного описания (или друг от друга, если реализуются несколько свойств).
 
@@ -344,7 +344,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ```
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Добавление специализированного класса для доступа к элементу управления
- ![ПОСТРОИТЕЛЬ КОДИРОВАННЫХ&#95;CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")
+ ![CUIT&#95;CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")
 
 1. Реализуйте класс, производный от <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl>, и добавьте тип элемента управления к коллекции свойств поиска в конструкторе.
 
@@ -410,9 +410,9 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
  В то время, как Visual Studio записывает тест, записываются все события мыши и клавиатуры. Однако в некоторых случаях цель действия может быть потеряна в ряде событий мыши и клавиатуры. Например, если элемент управления поддерживает автозаполнение, то один и тот же набор событий мыши и клавиатуры может возникать в разных значениях во время воспроизведения теста в другой среде. Вы можете добавить подключаемый модуль фильтра действий, который заменяет ряд событий клавиатуры и мыши на одно действие. Таким образом, можно заменить ряд событий мыши и клавиатуры для выделения значения на одно действие, которое задает значение. Это защитит закодированные тесты пользовательского интерфейса от различий в автозаполнении в различных средах.
 
 ### <a name="to-support-intent-aware-actions"></a>Поддержка действий, учитывающих намерение
- ![Действия&#95;построитель кодированных](../test/media/cuit-actions.png "CUIT_Actions")
+ ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")
 
-1. Реализуйте класс фильтра действий, производный от [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), переопределив свойства [апплитимеаут](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) и [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
+1. Implement an action filter class that’s derived from [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), overriding the properties [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) and [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
     ```csharp
     internal class MyActionFilter : UITestActionFilter
@@ -536,7 +536,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>См. также
 

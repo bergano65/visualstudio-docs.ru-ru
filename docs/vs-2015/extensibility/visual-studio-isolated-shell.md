@@ -1,5 +1,5 @@
 ---
-title: Изолированная оболочка Visual Studio | Документация Майкрософт
+title: Visual Studio Isolated Shell | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,54 +14,54 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 36491d9d590a45256e297654f71652ab5de5cd98
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403587"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299724"
 ---
 # <a name="visual-studio-isolated-shell"></a>Изолированная оболочка Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Изолированная оболочка Visual Studio позволяет создавать автономные приложения, которые могут выполняться side-by-side с другими версиями Visual Studio. Это используется главным образом для размещения специализированные средства, которые можно использовать службы Visual Studio, но также имеют настроенными внешним видом и фирменной символики. Функции Visual Studio и группы команд меню можно легко включать и отключать. Названия приложения, приложения значки и экраны-заставки можно полностью настраивать. Список настраиваемых функций, см. в разделе [Настройка изолированной оболочки](../extensibility/customizing-the-isolated-shell.md).  
+The Visual Studio isolated shell allows you to create stand-alone applications that can run side-by-side with other versions of Visual Studio. It is used primarily to host specialized tools that can use Visual Studio services but also have a customized appearance and branding. Visual Studio features and menu command groups can be easily turned on and off. Application titles, application icons, and splash screens are fully customizable. For a list of customizable features, see [Customizing the Isolated Shell](../extensibility/customizing-the-isolated-shell.md).  
   
- Для работы с проектом изолированной оболочки, необходимо установить пакет SDK для Visual Studio. Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ To work with an isolated shell project, you must install the Visual Studio SDK. Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Чтобы создать приложение изолированной оболочки, начните с изолированной оболочки Visual Studio проекта. Этот проект содержит все сведения, необходимые для разработки и тестирования приложения изолированной оболочки. Когда вы будете готовы написать программу установки, которое развертывает приложение, необходимо получить изолированной оболочки распространяемого пакета из [распространяемый пакет Microsoft Visual Studio Shell (изолированная)](http://go.microsoft.com/fwlink/?LinkId=616022).  
-  
-> [!NOTE]
-> Чтобы можно было открыть распространяемого пакета изолированной оболочки, вам будет предложено заполнить краткую анкету клиента.  После заполнения анкеты вы будете перенаправлены на страницу со ссылками на распространяемые пакеты Visual Studio Connect.  Вы найдете ссылки для загрузки при последующих посещениях сайта Visual Studio Connect согласно **программы &#124; 2015 ИНТЕГРИРОВАННАЯ ОБОЛОЧКА VISUAL STUDIO и ИЗОЛИРОВАННОЙ** вкладки.  
+ To create an isolated shell application, start with a Visual Studio Shell Isolated project. This project contains everything that you need to develop and test your own isolated shell application. When you are ready to write the setup program that deploys your application, you must get the isolated shell redistributable package from [Microsoft Visual Studio Shell (Isolated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
-> Дополнительные сведения о том, как развернуть изолированное приложение командной строки см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Before you can access the isolated shell redistributable package, you will be asked to fill out a brief customer survey.  After filling out the survey, you’ll be directed to a Visual Studio Connect page with redistributable package download links.  You can find the download links on subsequent visits to the Visual Studio Connect site under the **PROGRAMS &#124; VISUAL STUDIO 2015 INTEGRATED AND ISOLATED SHELL** tab.  
   
-## <a name="working-with-the-isolated-shell"></a>Работа с изолированной оболочки  
- Приложение Visual Studio, в изолированной оболочки имеет полный доступ к службам Visual Studio и поддерживает специальные настройки и фирменной символики. Существует несколько способов, вы можете настроить приложения isolated shell:  
+> [!NOTE]
+> For more information about how to deploy an isolated shell-based application, see [Walkthrough: Creating a Basic Isolated Shell Application](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-- Составные части пакетов VSPackage и Managed Extensibility Framework (MEF) можно использовать для расширения приложений изолированной оболочки, так же, как вы будет использовать их в любое другое расширение Visual Studio. Дополнительные сведения см. в разделе [расширение изолированной оболочки](../extensibility/extending-the-isolated-shell.md).  
+## <a name="working-with-the-isolated-shell"></a>Working with the isolated shell  
+ A Visual Studio isolated shell application has full access to Visual Studio services and supports special customization and branding. There are several ways you can customize an isolated shell application:  
   
-- Чтобы сделать возможности Visual Studio и группы команд меню, доступна или недоступна, обновите vsct-файл в проект пользовательского интерфейса пользователя приложения.  
+- You can use VSPackages and Managed Extensibility Framework (MEF) component parts to extend an isolated shell application just as you would use them in any other Visual Studio extension. For more information, see [Extending the Isolated Shell](../extensibility/extending-the-isolated-shell.md).  
   
-- Чтобы удалить **параметры** страниц или других компонентов Visual Studio shell из приложения, обновление файла .pkgundef приложения.  
+- To make Visual Studio features and menu command groups available or unavailable, update the .vsct file in the user interface (UI) project of the application.  
   
-- Чтобы изменить другие аспекты внешний вид или поведение оболочки, обновите pkgdef-файл приложения.  
+- To remove **Options** pages or other Visual Studio shell components from the application, update the .pkgundef file of the application.  
   
-- Некоторые аспекты оболочки также можно указать при запуске приложения. Чтобы сделать это, обновите параметры в вызове начальную точку входа appenvstub.dll.  
+- To modify other aspects of the appearance or behavior of the shell, update the .pkgdef file of the application.  
   
-  Дополнительные сведения о различных элементов, которые можно настроить, см. в разделе [элементы изолированной оболочки](../extensibility/elements-of-the-isolated-shell.md).  
+- Some aspects of the shell can also be specified when the application is started. To do this, update the parameters in the call to the Start entry point of the appenvstub.dll.  
   
-## <a name="standard-features-of-the-isolated-shell"></a>Стандартные возможности изолированной оболочки  
- Следующие функции являются стандартными для всех выпусков Visual Studio.  
+  For more information about the different elements that you can customize, see [Elements of the Isolated Shell](../extensibility/elements-of-the-isolated-shell.md).  
   
-|Категория компонента|Функция|  
+## <a name="standard-features-of-the-isolated-shell"></a>Standard Features of the Isolated Shell  
+ The following features are standard to all editions of Visual Studio.  
+  
+|Категория компонента|Возможность|  
 |----------------------|-------------|  
-|Возможности интегрированной среды разработки|Параметры импорта и экспорта<br /><br /> Установщик элементов управления<br /><br /> Список задач и список ошибок<br /><br /> Окно выходных данных<br /><br /> Начальная страница<br /><br /> Окно свойств<br /><br /> Панель элементов<br /><br /> обозреватель решений<br /><br /> Окно "Закладки"<br /><br /> Представление классов<br /><br /> Обозреватель объектов<br /><br /> Командное окно<br /><br /> Структура документа<br /><br /> Представление ресурсов<br /><br /> Внешний инструмент<br /><br /> Windows Communication Foundation (WCF) добавьте ссылку на службу<br /><br /> Language Integrated поддержку запросов (LINQ)|  
-|Редактор или конструктор|Код, просмотр средства (единый поиск, определение источника, наследования)<br /><br /> IntelliSense<br /><br /> Смарт-тегов<br /><br /> Диспетчер фрагментов кода<br /><br /> Фрагменты кода<br /><br /> Рефакторинг<br /><br /> Красивое<br /><br /> Фильтрация IntelliSense<br /><br /> Окно определения кода<br /><br /> Конструктор приложений<br /><br /> Конструктор Windows Forms<br /><br /> Windows Presentation Foundation (WPF) конструктор|  
-|Отладка|Вычислитель выражений C#<br /><br /> Локальная отладка<br /><br /> Управляемая отладка<br /><br /> Изменить и продолжить<br /><br /> Отладка между потоками<br /><br /> Визуализации<br /><br /> Советы<br /><br /> Отладка машинного кода<br /><br /> Отладка сценариев<br /><br /> Отладки взаимодействия<br /><br /> Отладка just-in-time (JIT)<br /><br /> Отладка нескольких процессов<br /><br /> Отладка XSLT<br /><br /> Присоединение к процессу локального<br /><br /> Точки трассировки<br /><br /> Ограничения точек останова|  
-|Данные|Обозреватель серверов (упрощенная - только данные)<br /><br /> Привязка данных к локальным данным (. MDF-ФАЙЛОМ или. MDB)<br /><br /> Привязка данных к объекту<br /><br /> Привязка данных к веб-службы<br /><br /> Полный набор элементов данных<br /><br /> Редактор XML<br /><br /> Привязка данных к локальному серверу баз данных<br /><br /> Источники данных - окно|  
-|Интернет|Редактор HTML<br /><br /> Веб-браузер<br /><br /> конструктор веб-форм<br /><br /> Проект веб-сайта<br /><br /> Проект веб-приложения|  
-|Расширение среды|Использует компоненты, пакеты VSPackage и MEF|  
+|IDE Features|Import/Export Settings<br /><br /> Toolbox Control Installer<br /><br /> Task List & Error List<br /><br /> Окно выходных данных<br /><br /> Начальная страница<br /><br /> Окно \"Свойства\"<br /><br /> Панель элементов<br /><br /> обозреватель решений<br /><br /> Окно "Закладки"<br /><br /> Представление классов<br /><br /> Обозреватель объектов<br /><br /> Командное окно<br /><br /> Структура документа<br /><br /> Resource View<br /><br /> External Tool<br /><br /> Windows Communication Foundation (WCF) Add Service Reference<br /><br /> Language Integrated Query (LINQ) Support|  
+|Editor/Designer|Code browsing tools (unified find, source definition, inheritance)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Диспетчер фрагментов кода<br /><br /> Фрагменты кода<br /><br /> Рефакторинг<br /><br /> Pretty listing<br /><br /> IntelliSense Filtering<br /><br /> Окно определения кода<br /><br /> Конструктор приложений<br /><br /> Конструктор Windows Forms<br /><br /> Windows Presentation Foundation (WPF) Designer|  
+|Отладка|C# Expression Evaluator<br /><br /> Local debugging<br /><br /> Managed debugging<br /><br /> Изменить и продолжить<br /><br /> Cross-thread debugging<br /><br /> Visualizations<br /><br /> Советы<br /><br /> Native debugging<br /><br /> Script debugging<br /><br /> Interop debugging<br /><br /> Just-in-time (JIT) debugging<br /><br /> Multi-process debugging<br /><br /> Отладка XSLT<br /><br /> Attach to local process<br /><br /> Точки трассировки<br /><br /> Breakpoint Constraints|  
+|Data|Server Explorer (Simplified - Data Only)<br /><br /> Data bind to local data (.MDF or .MDB)<br /><br /> Data bind to object<br /><br /> Data bind to Web service<br /><br /> Full set of data controls<br /><br /> Редактор XML<br /><br /> Data bind to local database server<br /><br /> Источники данных - окно|  
+|Интернет|Редактор HTML<br /><br /> Веб-браузер<br /><br /> конструктор веб-форм<br /><br /> Web Site Project<br /><br /> Web Application Project|  
+|Расширение среды|Consumes VSPackages and MEF components|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Оболочка (изолированная или интегрированная)](../extensibility/shell-isolated-or-integrated.md)

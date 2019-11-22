@@ -1,5 +1,5 @@
 ---
-title: 'CA3075: обработка небезопасного DTD | Документация Майкрософт'
+title: 'CA3075: Insecure DTD Processing | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661625"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300971"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: обработка небезопасных DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,37 +29,37 @@ ms.locfileid: "72661625"
  Если вы используете небезопасные экземпляры <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> или ссылаетесь на источники внешних сущностей, средство синтаксического анализа может принять недоверенные входные данные и раскрыть конфиденциальную информацию злоумышленникам.
 
 ## <a name="rule-description"></a>Описание правила
- [DTD](https://msdn.microsoft.com/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Это правило активируется, если:
+ [DTD](https://msdn.microsoft.com/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](https://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Это правило активируется, если:
 
 - обработка DtdProcessing включена в экземпляре <xref:System.Xml.XmlReader> , который разрешает внешние сущности XML с использованием <xref:System.Xml.XmlUrlResolver>;
 
 - задано свойство <xref:System.Xml.XmlNode.InnerXml%2A> в XML;
 
-- для свойства <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> задано значение Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set  to Parse    .
 
 - недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver> ;
 
-- XmlReader. <xref:System.Xml.XmlReader.Create%2A> вызывается с небезопасным экземпляром <xref:System.Xml.XmlReaderSettings> или вообще без экземпляра.
+- The XmlReader.<xref:System.Xml.XmlReader.Create%2A> method is invoked with an insecure <xref:System.Xml.XmlReaderSettings> instance or no instance at all.
 
-- <xref:System.Xml.XmlReader> создается с небезопасными параметрами или значениями по умолчанию.
+- <xref:System.Xml.XmlReader> is created with insecure default settings or values    .
 
   В каждом из этих случаев результат одинаковый: содержимое из файловой системы или сетевых папок с компьютера, на котором обрабатывается XML, станет доступно злоумышленнику, что впоследствии можно использовать для атак типа "отказ в обслуживании".
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-- Чтобы избежать раскрытия информации о пути, перехватите и обработайте все исключения XmlTextReader.
+- Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .
 
-- Используйте  <xref:System.Xml.XmlSecureResolver>, чтобы ограничить ресурсы, к которым может обращаться XmlTextReader.
+- Use the <xref:System.Xml.XmlSecureResolver> to restrict the resources      that the XmlTextReader can access.
 
-- Не разрешайте  <xref:System.Xml.XmlReader> открывать внешние ресурсы, присвоив свойству <xref:System.Xml.XmlResolver> **значение NULL**.
+- Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlResolver> property to **null**.
 
 - Убедитесь, что свойство <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> <xref:System.Data.DataViewManager> назначено из доверенного источника.
 
   .NET 3.5 и более ранней версии
 
-- Отключите обработку DTD при работе с ненадежными источниками, задав для свойства  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> **значение true** .
+- Disable DTD processing if you are dealing with untrusted sources by setting the <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> property to **true** .
 
-- Класс XmlTextReader содержит полное требование наследования доверия. Дополнительные сведения см. в разделе [требования к наследованию](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
+- Класс XmlTextReader содержит полное требование наследования доверия. See [Inheritance Demands](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) for more information    .
 
   .NET 4 и более поздней версии
 

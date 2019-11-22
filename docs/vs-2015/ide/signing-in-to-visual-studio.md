@@ -1,5 +1,5 @@
 ---
-title: Вход в Visual Studio 2015 | Документация Майкрософт
+title: Sign in to Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661223"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301228"
 ---
 # <a name="signing-in-to-visual-studio"></a>Вход в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "72661223"
 - **Автоматическое подключение к таким службам, как Azure и Visual Studio Team Services** , в интегрированной среде разработки без повторного запроса учетных данных одной и той же учетной записи.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Вход в Visual Studio
- При первом запуске Visual Studio появляется запрос на вход и ввод основных регистрационных сведений. Необходимо выбрать учетную запись Майкрософт или рабочую либо школьную учетную запись, которую вам будет удобнее использовать. Если у вас нет таких учетных записей, можно создать учетную запись Майкрософт бесплатно. См. раздел [Регистрация учетной записи Майкрософт](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+ При первом запуске Visual Studio появляется запрос на вход и ввод основных регистрационных сведений. Необходимо выбрать учетную запись Майкрософт или рабочую либо школьную учетную запись, которую вам будет удобнее использовать. Если у вас нет таких учетных записей, можно создать учетную запись Майкрософт бесплатно. См. раздел [Регистрация учетной записи Майкрософт](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
  Затем выберите параметры пользовательского интерфейса и цветовую тему, которые должны использоваться в Visual Studio. Visual Studio запоминает эти параметры и синхронизирует их во всех средах Visual Studio, в которых вы выполняли вход. Список синхронизируемых параметров см. в разделе [Синхронизированные параметры в Visual Studio](../ide/synchronized-settings-in-visual-studio.md). Параметры можно всегда изменить позже, выбрав **Сервис | Параметры** в Visual Studio.
 
  После задания параметров будет запущена среда Visual Studio, чтобы можно было начать работу; при этом будет выполнен вход в систему. Чтобы проверить, выполнен ли вход, найдите свое имя в правом верхнем углу среды Visual Studio.
 
- ![Вошедший в систему пользователь куррентлли](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Currentlly logged in user](../ide/media/vs2015-username.png "VS2015_UserName")
 
  Если не выходить из системы явным образом, вы будете автоматически входить в Visual Studio при запуске среды, а все изменения синхронизированных параметров будут автоматически применяться. Чтобы выйти из системы, нажмите кнопку со стрелкой вниз рядом с именем профиля в среде Visual Studio, выберите команду **Параметры учетной записи** , а затем выберите ссылку **Выход** . Чтобы снова войти в систему, выберите команду **Вход** в правом верхнем углу среды Visual Studio.
 

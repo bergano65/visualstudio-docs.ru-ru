@@ -1,5 +1,5 @@
 ---
-title: Определение политики блокировки для создания сегментов только для чтения | Документация Майкрософт
+title: Defining a Locking Policy to Create Read-Only Segments | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,100 +9,100 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53542ec2a5270aec6836864fa3108d5f84da2df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669882"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295811"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-API неизменности [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK визуализации и моделирования позволяет программе заблокировать часть или всю модель доменного языка (DSL), чтобы ее можно было читать, но не изменять. Этот параметр доступен только для чтения, например, чтобы пользователь мог попросить коллег закомментировать и проверить модель DSL, но может запретить им изменять исходное значение.
+The Immutability API of the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK allows a program to lock part or all of a domain-specific language (DSL) model so that it can be read but not changed. This read-only option could be used, for example, so that a user can ask colleagues to annotate and review a DSL model but can disallow them from changing the original.
 
- Кроме того, в качестве автора DSL можно определить *политику блокировки.* Политика блокировки определяет, какие блокировки разрешены, не разрешены или являются обязательными. Например, при публикации DSL можно рекомендовать сторонним разработчикам расширять его с помощью новых команд. Но можно также использовать политику блокировки, чтобы предотвратить изменение состояния только для чтения указанных частей модели.
+ In addition, as author of a DSL, you can define a *locking policy.* A locking policy defines which locks are permitted, not permitted, or mandatory. For example, when you publish a DSL, you can encourage third-party developers to extend it with new commands. But you could also use a locking policy to prevent them from altering the read-only status of specified parts of the model.
 
 > [!NOTE]
-> Политику блокировки можно обойти с помощью отражения. Она предоставляет четкие границы для сторонних разработчиков, но не обеспечивает надежную защиту.
+> A locking policy can be circumvented by using reflection. It provides a clear boundary for third-party developers, but does not provide strong security.
 
- Дополнительные сведения и примеры доступны на веб-сайте [SDK для визуализации и моделирования](http://go.microsoft.com/fwlink/?LinkId=186128) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ More information and samples are available at the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkId=186128) Web site.
 
-## <a name="setting-and-getting-locks"></a>Установка и получение блокировок
- Можно установить блокировки для хранилища, для секции или для отдельного элемента. Например, эта инструкция предотвращает удаление элемента модели и также предотвратит изменение его свойств:
+## <a name="setting-and-getting-locks"></a>Setting and Getting Locks
+ You can set locks on the store, on a partition, or on an individual element. For example, this statement will prevent a model element from being deleted, and will also prevent its properties from being changed:
 
 ```
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
 
- Другие значения блокировки можно использовать для предотвращения изменений связей, создания элементов, перемещения между секциями и повторного упорядочения ссылок в роли.
+ Other lock values can be used to prevent changes in relationships, element creation, movement between partitions, and re-ordering links in a role.
 
- Блокировки применяются как к действиям пользователя, так и к программному коду. Если программный код пытается внести изменение, будет выдано исключение `InvalidOperationException`. Блокировки игнорируются при выполнении операции отмены или повтора.
+ The locks apply both to user actions and to program code. If program code attempts to make a change, an `InvalidOperationException` will be thrown. Locks are ignored in an Undo or Redo operation.
 
- Можно определить, имеет ли элемент блокировку в заданном наборе с помощью `IsLocked(Locks)`, а также получить текущий набор блокировок для элемента с помощью `GetLocks()`.
+ You can discover whether an element has a any lock in a given set by using `IsLocked(Locks)` and you can obtain the current set of locks on an element by using `GetLocks()`.
 
- Вы можете установить блокировку без использования транзакции. База данных блокировки не является частью хранилища. Если установить блокировку в ответ на изменение значения в магазине, например в Онвалуечанжед, следует разрешить изменения, которые являются частью операции отмены.
+ You can set a lock without using a transaction. The lock database is not part of the store. If you set a lock in response to a change of a value in the store, for example in OnValueChanged, you should allow changes that are part of an Undo operation.
 
- Эти методы являются методами расширения, определенными в пространстве имен <xref:Microsoft.VisualStudio.Modeling.Immutability>.
+ These methods are extension methods that are defined in the <xref:Microsoft.VisualStudio.Modeling.Immutability> namespace.
 
-### <a name="locks-on-partitions-and-stores"></a>Блокировки на секции и хранилища
- Блокировки также можно применять к секциям и магазину. Блокировка, заданная для секции, применяется ко всем элементам в секции. Поэтому, например, следующая инструкция предотвратит удаление всех элементов в секции независимо от состояний собственных блокировок. Тем не менее другие блокировки, такие как `Locks.Property`, могут быть установлены для отдельных элементов:
+### <a name="locks-on-partitions-and-stores"></a>Locks on partitions and stores
+ Locks can also be applied to partitions and the store. A lock that is set on a partition applies to all the elements in the partition. Therefore, for example, the following statement will prevent all the elements in a partition from being deleted, irrespective of the states of their own locks. Nevertheless, other locks such as `Locks.Property` could still be set on individual elements:
 
 ```
 partition.SetLocks(Locks.Delete);
 ```
 
- Блокировка, заданная для хранилища, применяется ко всем его элементам независимо от параметров этой блокировки в секциях и элементах.
+ A lock that is set on the Store applies to all its elements, irrespective of the settings of that lock on the partitions and the elements.
 
-### <a name="using-locks"></a>Использование блокировок
- Можно использовать блокировки для реализации схем, таких как следующие примеры:
+### <a name="using-locks"></a>Using Locks
+ You could use locks to implement schemes such as the following examples:
 
-- Запретить изменения для всех элементов и связей, кроме тех, которые представляют комментарии. Это позволяет пользователям закомментировать модель, не изменяя ее.
+- Disallow changes to all elements and relationships except those that represent comments. This allows users to annotate a model without changing it.
 
-- Запретить изменения в разделе по умолчанию, но разрешить изменения в секции диаграммы. Пользователь может перестроить диаграмму, но не может изменить базовую модель.
+- Disallow changes in the default partition, but allow changes in the diagram partition. The user can rearrange the diagram, but cannot alter the underlying model.
 
-- Запретить изменения в магазине, кроме группы пользователей, зарегистрированных в отдельной базе данных. Для других пользователей схема и модель доступны только для чтения.
+- Disallow changes to the Store except for a group of users who are registered in a separate database. For other users, the diagram and model are read-only.
 
-- Запретить изменения в модели, если логическое свойство схемы имеет значение true. Укажите команду меню, чтобы изменить это свойство. Это гарантирует, что пользователи не будут случайно вносить изменения.
+- Disallow changes to the model if a Boolean property of the diagram is set to true. Provide a menu command to change that property. This helps ensure users that they do not make changes accidentally.
 
-- Запретить добавление и удаление элементов и связей конкретных классов, но разрешить изменение свойств. Это дает пользователям фиксированную форму, в которой они могут заполнять свойства.
+- Disallow addition and deletion of elements and relationships of particular classes, but allow property changes. This provides users with a fixed form in which they can fill the properties.
 
-## <a name="lock-values"></a>Заблокировать значения
- Блокировки можно задать для хранилища, секции или отдельных ModelElement. Блокировки — это перечисление `Flags`. его значения можно комбинировать с&#124;помощью "".
+## <a name="lock-values"></a>Lock values
+ Locks can be set on a Store, Partition, or individual ModelElement. Locks is a `Flags` enumeration: you can combine its values using '&#124;'.
 
-- Блокировки ModelElement всегда включают блокировки своего раздела.
+- Locks of a ModelElement always include the Locks of its Partition.
 
-- Блокировки секции всегда содержат блокировки хранилища.
+- Locks of a Partition always include the Locks of the Store.
 
-  Нельзя установить блокировку для секции или хранилища и одновременно отключить блокировку для отдельного элемента.
+  You cannot set a lock on a partition or store and at the same time disable the lock on an individual element.
 
-|значения|Значение, если `IsLocked(Value)` имеет значение true|
+|значения|Meaning if `IsLocked(Value)` is true|
 |-----------|------------------------------------------|
-|Отсутствуют|Без ограничений.|
-|свойство;|Свойства домена элементов не могут быть изменены. Это не относится к свойствам, создаваемым ролью доменного класса в связи.|
-|Add|Новые элементы и ссылки не могут быть созданы в разделе или хранилище.<br /><br /> Неприменимо к `ModelElement`.|
-|Перемещение|Элемент нельзя перемещать между секциями, если `element.IsLocked(Move)` имеет значение true или если `targetPartition.IsLocked(Move)` имеет значение true.|
-|Удаление|Элемент не может быть удален, если эта блокировка задана для самого элемента или для любого элемента, к которому будет распространяться удаление, например внедренные элементы и фигуры.<br /><br /> Можно использовать `element.CanDelete()`, чтобы определить, можно ли удалить элемент.|
-|Переупорядочить|Невозможно изменить порядок ссылок в RolePlayer.|
-|RolePlayer|Набор ссылок, источником которых является этот элемент, изменить нельзя. Например, новые элементы не могут быть внедрены в этот элемент. Это не влияет на связи, для которых этот элемент является целевым.<br /><br /> Если этот элемент является ссылкой, то его источник и целевой объект не затрагиваются.|
-|Все|Побитовое или для других значений.|
+|Отсутствуют|No restriction.|
+|свойство;|Domain properties of elements cannot be changed. This does not apply to properties that are generated by the role of a domain class in a relationship.|
+|Add|New elements and links cannot be created in a partition or store.<br /><br /> Not applicable to `ModelElement`.|
+|Перемещение|Element cannot be moved between partitions if `element.IsLocked(Move)` is true, or if `targetPartition.IsLocked(Move)` is true.|
+|Удаление|An element cannot be deleted if this lock is set on the element itself, or on any of the elements to which deletion would propagate, such as embedded elements and shapes.<br /><br /> You can use `element.CanDelete()` to discover whether an element can be deleted.|
+|Reorder|The ordering of links at a roleplayer cannot be changed.|
+|RolePlayer|The set of links that are sourced at this element cannot be changed. For example, new elements cannot be embedded under this element. This does not affect links for which this element is the target.<br /><br /> If this element is a link, its source and target are not affected.|
+|Все|Bitwise OR of the other values.|
 
-## <a name="locking-policies"></a>Политики блокировки
- Как автор DSL вы можете определить *политику блокировки*. Политика блокировки является средним действием Сетлоккс (), что позволяет предотвращать установку конкретных блокировок или задавать необходимость установки конкретных блокировок. Как правило, политика блокировки используется для того, чтобы запретить пользователям или разработчикам случайно контравенинг предполагаемое использование DSL, точно так же, как можно объявить переменную `private`.
+## <a name="locking-policies"></a>Locking Policies
+ As the author of a DSL, you can define a *locking policy*. A locking policy moderates the operation of SetLocks(), so that you can prevent specific locks from being set or mandate that specific locks must be set. Typically, you would use a locking policy to discourage users or developers from accidentally contravening the intended use of a DSL, in the same manner that you can declare a variable `private`.
 
- Можно также использовать политику блокировки для установки блокировок всех элементов, зависящих от типа элемента. Это связано с тем, что `SetLocks(Locks.None)` всегда вызывается при первом создании или десериализации элемента из файла.
+ You can also use a locking policy to set locks on all elements dependent on the element's type. This is because `SetLocks(Locks.None)` is always called when an element is first created or deserialized from file.
 
- Однако нельзя использовать политику для изменения блокировок элемента в течение его жизненного цикла. Для достижения этого результата следует использовать вызовы `SetLocks()`.
+ However, you cannot use a policy to vary the locks on an element during its life. To achieve that effect, you should use calls to `SetLocks()`.
 
- Чтобы определить политику блокировки, необходимо выполнить следующие действия.
+ To define a locking policy, you have to:
 
 - Создайте класс, реализующий <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
 
-- Добавьте этот класс в службы, доступные через DocData вашего DSL.
+- Add this class to the services that are available through the DocData of your DSL.
 
-### <a name="to-define-a-locking-policy"></a>Определение политики блокировки
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> имеет следующее определение:
+### <a name="to-define-a-locking-policy"></a>To define a locking policy
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> has the following definition:
 
 ```
 public interface ILockingPolicy
@@ -113,7 +113,7 @@ public interface ILockingPolicy
 }
 ```
 
- Эти методы вызываются, когда выполняется вызов `SetLocks()` в хранилище, секции или ModelElement. В каждом методе предоставляется предложенный набор блокировок. Вы можете вернуть предложенный набор или добавить и вычесть блокировки.
+ These methods are called when a call is made to `SetLocks()` on a Store, Partition, or ModelElement. In each method, you are provided with a proposed set of locks. You can return the proposed set, or you can add and subtract locks.
 
  Пример:
 
@@ -145,16 +145,16 @@ namespace Company.YourDsl.DslPackage // Change
 
 ```
 
- Чтобы гарантировать, что пользователи всегда могут удалять элементы, даже если другие вызовы кода `SetLocks(Lock.Delete):`
+ To make sure that users can always delete elements, even if other code calls `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 
- Чтобы запретить изменение во всех свойствах каждого элемента MyClass:
+ To disallow change in all the properties of every element of MyClass:
 
  `return element is MyClass ? (proposedLocks | Locks.Property) : proposedLocks;`
 
-### <a name="to-make-your-policy-available-as-a-service"></a>Предоставление доступа к политике в качестве службы
- В проекте `DslPackage` добавьте новый файл, содержащий код, который напоминает следующий пример:
+### <a name="to-make-your-policy-available-as-a-service"></a>To make your policy available as a service
+ In your `DslPackage` project, add a new file that contains code that resembles the following example:
 
 ```
 using Microsoft.VisualStudio.Modeling;

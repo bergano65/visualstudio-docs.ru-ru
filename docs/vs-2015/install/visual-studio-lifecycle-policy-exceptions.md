@@ -1,5 +1,5 @@
 ---
-title: Исключения политики жизненного цикла Visual Studio | Документация Майкрософт
+title: Visual Studio Lifecycle Policy Exceptions | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6db11d583818f1ea63c490cd8f588cb005b50a8d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68180238"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295930"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Исключения политики жизненного цикла Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Visual Studio включает в себя ряд компиляторов, яз
   
 |СЕМЕЙСТВО ПРОДУКТОВ|ВНЕШНЕЕ ИМЯ|  
 |--------------------|-------------------|  
-|[.NET 3.5](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
-|[.NET 4.5](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
-|[.NET 4.5.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|Пакет MT .NET 4.5.1 (классический)<br /><br /> Пакет многоплатформенного нацеливания .NET 4.5.1 (Магазин)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> Распространяемый пакет .NET 4.5.1<br /><br /> Распространяемые языковые пакеты .NET 4.5.1<br /><br /> .NET 4.5.1 SDK|  
-|[Веб-решения ASP.NET](http://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> Веб-страницы ASP.NET 2<br /><br /> Веб-страницы ASP.NET 3|  
-|[Entity Framework 6](http://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
-|[Exchange 2013](http://go.microsoft.com/fwlink/?LinkId=328950)|Веб-службы Exchange|  
-|[Microsoft OWIN](http://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
-|[Инструменты разработчика Microsoft Web 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Веб-инструменты Майкрософт для разработчиков 2013|  
-|Обновления для этих компонентов распространяются с помощью NuGet и не следуют стандартным политикам жизненного цикла Майкрософт.  Дополнительные сведения см. в разделе [http://docs.nuget.org/](http://docs.nuget.org/).|Веб-обработчик токенов JSON для Microsoft .Net Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
-|[ODataLib](http://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
-|[Office 2013](http://support.microsoft.com/lifecycle/?p1=16674)|Open XML SDK|  
-|[Политика служб Online Services](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Ads SDK|  
-|[SharePoint 2013](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|Клиентский компонент SharePoint<br /><br /> SharePoint Foundation 2013<br /><br /> Расширения Windows Identity Foundation|  
-|[Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />> См. также: [http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Среда выполнения Silverlight 5<br /><br /> Пакет SDK для Silverlight 5|  
-|[SQL Server 2008 R2](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|Типы CLR системы SQL (SQL Server 2008 R2)|  
-|[SQL Server 2012](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Служебные программы командной строки SQL<br /><br /> Языковая служба SQL — IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> Собственный клиент SQL (Sqlncli)<br /><br /> SQL Server Express 2012 с пакетом обновления 1 (SP1)<br /><br /> Типы CLR системы SQL (SQL Server 2012)<br /><br /> SQLDOM|  
+|[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
+|[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
+|[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|Пакет MT .NET 4.5.1 (классический)<br /><br /> Пакет многоплатформенного нацеливания .NET 4.5.1 (Магазин)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> Распространяемый пакет .NET 4.5.1<br /><br /> Распространяемые языковые пакеты .NET 4.5.1<br /><br /> .NET 4.5.1 SDK|  
+|[Веб-решения ASP.NET](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> Веб-страницы ASP.NET 2<br /><br /> Веб-страницы ASP.NET 3|  
+|[Entity Framework 6](https://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
+|[Exchange 2013](https://go.microsoft.com/fwlink/?LinkId=328950)|Веб-службы Exchange|  
+|[Microsoft OWIN](https://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
+|[Инструменты разработчика Microsoft Web 2013](https://go.microsoft.com/fwlink/?LinkId=328952)|Веб-инструменты Майкрософт для разработчиков 2013|  
+|Обновления для этих компонентов распространяются с помощью NuGet и не следуют стандартным политикам жизненного цикла Майкрософт.  Дополнительные сведения см. в разделе [http://docs.nuget.org/](https://docs.microsoft.com/nuget/).|Веб-обработчик токенов JSON для Microsoft .Net Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
+|[ODataLib](https://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
+|[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
+|[Политика служб Online Services](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  
+|[SharePoint 2013](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|Клиентский компонент SharePoint<br /><br /> SharePoint Foundation 2013<br /><br /> Расширения Windows Identity Foundation|  
+|[Silverlight 5](https://support.microsoft.com/lifecycle/search/?p1=16278)<br /><br /> <br />> См. также: [http://support.microsoft.com/gp/lifean45](https://support.microsoft.com/gp/lifean45)|Среда выполнения Silverlight 5<br /><br /> Пакет SDK для Silverlight 5|  
+|[SQL Server 2008 R2](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|Типы CLR системы SQL (SQL Server 2008 R2)|  
+|[SQL Server 2012](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Служебные программы командной строки SQL<br /><br /> Языковая служба SQL — IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> Собственный клиент SQL (Sqlncli)<br /><br /> SQL Server Express 2012 с пакетом обновления 1 (SP1)<br /><br /> Типы CLR системы SQL (SQL Server 2012)<br /><br /> SQLDOM|  
 |[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Служебные программы командной строки SQL<br /><br /> Языковая служба SQL — IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> Собственный клиент SQL (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> Типы CLR системы SQL (SQL Server 2014)<br /><br /> SQLDOM|  
-|[SQL Server Compact Edition 4.0](http://support.microsoft.com/lifecycle/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[Службы WCF RIA 1.0 с пакетом обновления 2 (SP2)](http://go.microsoft.com/fwlink/?LinkId=328955)|Службы WCF RIA 1.0 с пакетом обновления 2 (SP2)|  
-|[Windows Server 2008](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Веб-службы Windows (WWS) для Windows Server 2008|  
-|[Windows 7](http://support.microsoft.com/lifecycle/?c2=14019)|Пакет SDK для Windows 7|  
-|[Windows 8](http://support.microsoft.com/lifecycle/?c2=16796)|Пакет SDK для Windows 8|  
-|[Windows 8.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Пакет SDK для Windows 8.1<br /><br /> Библиотека Windows для JavaScript (WinJS)|  
-|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> См. также: [Политика жизненного цикла Online](http://support.microsoft.com/gp/OSSLpolicy)|Пакет SDK для мобильных служб Microsoft Azure<br /><br /> Инструменты мобильных служб Microsoft Azure|
+|[SQL Server Compact Edition 4.0](https://support.microsoft.com/lifecycle/search/?p1=16106)|SQL Server Compact Edition 4.0|  
+|[Службы WCF RIA 1.0 с пакетом обновления 2 (SP2)](https://go.microsoft.com/fwlink/?LinkId=328955)|Службы WCF RIA 1.0 с пакетом обновления 2 (SP2)|  
+|[Windows Server 2008](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Веб-службы Windows (WWS) для Windows Server 2008|  
+|[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Пакет SDK для Windows 7|  
+|[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Пакет SDK для Windows 8|  
+|[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Пакет SDK для Windows 8.1<br /><br /> Библиотека Windows для JavaScript (WinJS)|  
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> See also: [Online Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Пакет SDK для мобильных служб Microsoft Azure<br /><br /> Инструменты мобильных служб Microsoft Azure|

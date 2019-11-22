@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6084daea11d981477bbee6f210e1faf718b58d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ded65e85a2ae11e96c21fdd852ea12daa4bbcdf4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646925"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299993"
 ---
 # <a name="step-8-customize-the-quiz"></a>Шаг 8. Настройка головоломки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,6 @@ ms.locfileid: "72646925"
 - Дайте игроку подсказку с помощью воспроизведения звука при вводе правильного ответа в элементе управления NumericUpDown. (Необходимо написать обработчик событий для каждого события `ValueChanged()` элемента управления , который срабатывает при каждом изменении игроком значения элемента управления).
 
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
-
-- Загрузить готовую версию головоломки можно на странице [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Полный пример руководства по созданию математической головоломки).
 
 - Следующее руководство см. на странице [(Учебное руководство 3. Создание игры "Подбери пару!")](../ide/tutorial-3-create-a-matching-game.md) (Учебное руководство 3. Создание игры "Подбери пару!").
 

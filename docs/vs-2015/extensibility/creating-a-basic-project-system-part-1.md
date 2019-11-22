@@ -1,5 +1,5 @@
 ---
-title: Создание системы базового проекта. часть 1 | Документация Майкрософт
+title: Creating a Basic Project System, Part 1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,77 +12,77 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20637fb47d85b7cb8341df22d056ffe44534835f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439398"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295483"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Создание системы базового проекта. Часть 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и других ресурсов. Проекты отображаются как дочерние элементы решений в **обозревателе решений**. Проекты позволяют упорядочивать, создание, отладку и развертывать исходный код и создавать ссылки на Web services, баз данных и другие ресурсы.  
+In Visual Studio, projects are the containers that developers use to organize source code files and other assets. Projects appear as children of solutions in the **Solution Explorer**. Projects let you organize, build, debug, and deploy source code and create references to Web services, databases, and other resources.  
   
- Проекты определены в файлах проекта, например CSPROJ-файл для проекта Visual C#. Можно создать собственный тип проекта, который имеет собственные расширение имени файла проекта. Дополнительные сведения о типах проектов см. в разделе [типы проектов](../extensibility/internals/project-types.md).  
-  
-> [!NOTE]
-> Если необходимо расширить Visual Studio с помощью пользовательского типа проекта, настоятельно рекомендуется использование [система проектов Visual Studio](https://github.com/Microsoft/VSProjectSystem) которого имеет ряд преимуществ по сравнению с создания проекта системы с нуля:  
-> 
-> - Проще адаптации.  Даже системы базового проекта требует десятки тысяч строк кода.  Используя CPS снижает стоимость адаптации в несколько щелчков мышью, прежде чем вы будете готовы настраивать его под свои нужды.  
->   - Упрощает обслуживание.  За счет использования CPS, необходимо только обслуживать собственные сценарии.  Мы занимаемся ведении всю инфраструктуру системы проекта.  
-> 
->   Требуется предназначенные для версий старше, чем Visual Studio 2013 Visual Studio, вы не сможете использовать CPS в расширении Visual Studio.  Если это так, в этом пошаговом руководстве хорошо подходит для начала.  
-  
- В этом пошаговом руководстве показано, как создать тип проекта, который имеет .myproj расширение имени файла проекта. В этом пошаговом руководстве использует существующие системы проекта Visual C#.  
+ Projects are defined in project files, for example a .csproj file for a Visual C# project. You can create your own project type that has your own project file name extension. For more information about project types, see [Project Types](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
-> End-to-end пример полного языка системы проекта, см. в разделе Пример IronPython, глубокое погружение в [примеры VSSDK](../misc/vssdk-samples.md).  
+> If you need to extend Visual Studio with a custom project type, we strongly recommend leveraging the [Visual Studio Project System](https://github.com/Microsoft/VSProjectSystem) which has a number of advantages over building a project system from scratch:  
+> 
+> - Easier onboarding.  Even a basic project system requires tens of thousands of lines of code.  Leveraging CPS reduces the onboarding cost to a few clicks before you are ready to customize it to your needs.  
+>   - Easier maintenance.  By leveraging CPS, you only need to maintain your own scenarios.  We handle the upkeep of all of the project system infrastructure.  
+> 
+>   If you need to target versions of Visual Studio older than Visual Studio 2013, you will not be able to leverage CPS in a Visual Studio extension.  If that is the case, this walkthrough is a good place to get started.  
   
- В этом пошаговом руководстве объясняется, как выполнять эти задачи:  
+ This walkthrough shows you how to create a project type that has the project file name extension .myproj. This walkthrough borrows from the existing Visual C# project system.  
   
-- Создание типа базового проекта.  
+> [!NOTE]
+> For an end-to-end sample of a complete language project system, see the IronPython Sample Deep Dive in [VSSDK Samples](../misc/vssdk-samples.md).  
   
-- Создайте шаблон базовый проект.  
+ This walkthrough teaches how to accomplish these tasks:  
   
-- Зарегистрируйте шаблон проекта в Visual Studio.  
+- Create a basic project type.  
   
-- Создайте экземпляр проекта, открыв **новый проект** диалоговое окно, а затем с помощью шаблона.  
+- Create a basic project template.  
   
-- Создайте фабрику проекта для вашей системы проекта.  
+- Register the project template with Visual Studio.  
   
-- Создайте узел проекта для вашей системы проекта.  
+- Create a project instance by opening the **New Project** dialog box and then using your template.  
   
-- Добавление пользовательских значков для системы проектов.  
+- Create a project factory for your project system.  
   
-- Реализуйте замена параметров базового шаблона.  
+- Create a project node for your project system.  
   
-## <a name="prerequisites"></a>Предварительные требования  
- Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+- Add custom icons for the project system.  
   
- Необходимо также загрузить исходный код для [Managed Package Framework для проектов](http://mpfproj12.codeplex.com/). Извлеките файл в расположении, доступном для решения, которое вы собираетесь создать.  
+- Implement basic template parameter substitution.  
   
-## <a name="creating-a-basic-project-type"></a>Создание базового проекта типа  
- Создайте проект VSIX C# с именем **SimpleProject**. (**Файл, создать, проект** и затем **пакет Visual Studio C#, расширяемость,** ). Добавление шаблона элемента проекта пакета Visual Studio (в обозревателе решений щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**, а затем перейдите к **расширяемость / пакет Visual Studio**). Назовите файл **SimpleProjectPackage**.  
+## <a name="prerequisites"></a>Необходимые компоненты  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-basic-project-template"></a>Создание базового проекта шаблона  
- Теперь вы можете изменить этот базовый VSPackage для реализации нового типа проекта .myproj. Чтобы создать проект, основанный на типе проекта .myproj, Visual Studio должен знать, какие файлы, ресурсы и ссылки для добавления нового проекта. Чтобы предоставить эти сведения, поместите файлы проекта в папку шаблона проекта. Когда пользователь использует .myproj проекта для создания проекта, файлы копируются в новый проект.  
+ You must also download the source code for the [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). Extract the file to a location that is accessible to the solution you are going to create.  
   
-#### <a name="to-create-a-basic-project-template"></a>Создание базового проекта шаблона  
+## <a name="creating-a-basic-project-type"></a>Creating a Basic Project Type  
+ Create a C# VSIX project named **SimpleProject**. (**File, New, Project** and then **C#, Extensibility, Visual Studio Package**). Add a Visual Studio Package project item template (on the Solution Explorer, right-click the project node and select **Add / New Item**, then go to **Extensibility / Visual Studio Package**). Name the file **SimpleProjectPackage**.  
   
-1. Добавьте три папки в проект, в другой: **Templates\Projects\SimpleProject**. (В **обозревателе решений**, щелкните правой кнопкой мыши **SimpleProject** узел проекта, выберите пункт **добавить**, а затем нажмите кнопку **новую папку**. Назовите папку `Templates`. В **шаблоны** папки, добавьте папку с именем `Projects`. В **проекты** папки, добавьте папку с именем `SimpleProject`.)  
+## <a name="creating-a-basic-project-template"></a>Creating a Basic Project Template  
+ Now, you can modify this basic VSPackage to implement the new .myproj project type. To create a project that is based on the .myproj project type, Visual Studio has to know which files, resources, and references to add to the new project. To provide this information, put project files in a project template folder. When a user uses the .myproj project to create a project, the files are copied to the new project.  
   
-2. В **Projects\SimpleProject** папке добавьте файл значка с именем `SimpleProject.ico`. При нажатии кнопки **добавить**, откроется редактор значков.  
+#### <a name="to-create-a-basic-project-template"></a>To create a basic project template  
   
-3. Сделайте различение значок. Этот значок будет отображаться в **новый проект** диалоговое окно «» далее в этом пошаговом руководстве.  
+1. Add three folders to the project, one under the other: **Templates\Projects\SimpleProject**. (In **Solution Explorer**, right-click the **SimpleProject** project node, point to **Add**, and then click **New Folder**. Назовите папку `Templates`. In the **Templates** folder, add a folder named `Projects`. In the **Projects** folder, add a folder named `SimpleProject`.)  
   
-    ![Значок простого проекта](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+2. In the **Projects\SimpleProject** folder add an icon file named `SimpleProject.ico`. When you click **Add**, the icon editor opens.  
   
-4. Значок сохраните и закройте редактор значков.  
+3. Make the icon distinctive. This icon will appear in the **New Project** dialog box later in the walkthrough.  
   
-5. В **Projects\SimpleProject** папки, добавьте **класс** элемента с именем `Program.cs`.  
+    ![Simple Project Icon](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
-6. Замените существующий код приведенным ниже.  
+4. Save the icon and close the icon editor.  
+  
+5. In the **Projects\SimpleProject** folder, add a **Class** item named `Program.cs`.  
+  
+6. Replace the existing code with the following lines.  
   
    ```csharp  
    using System;  
@@ -103,18 +103,18 @@ ms.locfileid: "63439398"
    ```  
   
    > [!IMPORTANT]
-   > Это не окончательная форма кода Program.cs; Параметры замены будут обработаны позже. Может появиться ошибки компиляции, но в течение его **BuildAction** — **содержимого**, можно построить и запустить проект как обычно.  
+   > This is not the final form of the Program.cs code; the replacement parameters will be dealt with in a later step. You may see compile errors, but as long as the file’s **BuildAction** is **Content**, you should be able to build and run the project as usual.  
   
 7. Сохраните файл.  
   
-8. Скопируйте файл AssemblyInfo.cs из **свойства** папку **Projects\SimpleProject** папки.  
+8. Copy the AssemblyInfo.cs file from the **Properties** folder to the **Projects\SimpleProject** folder.  
   
-9. В **Projects\SimpleProject** папку добавить XML-файл с именем `SimpleProject.myproj`.  
+9. In the **Projects\SimpleProject** folder add an XML file named `SimpleProject.myproj`.  
   
    > [!NOTE]
-   > Расширение имени файла для всех проектов этого типа является .myproj. Если вы хотите изменить его, необходимо изменить его везде, где оно встречается в этом пошаговом руководстве.  
+   > The file name extension for all projects of this type is .myproj. If you want to change it, you must change it everywhere it is mentioned in the walkthrough.  
   
-10. Замените существующее содержимое следующие строки.  
+10. Replace the existing content with the following lines.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -156,11 +156,11 @@ ms.locfileid: "63439398"
   
 11. Сохраните файл.  
   
-12. В **свойства** окне **действие при построении** AssemblyInfo.cs, Program.cs, SimpleProject.ico и SimpleProject.myproj для **содержимого**и задайте их  **Включить в VSIX** свойства **True**.  
+12. In the **Properties** window, set the **Build Action** of AssemblyInfo.cs, Program.cs, SimpleProject.ico, and SimpleProject.myproj to **Content**, and set their **Include in VSIX** properties to **True**.  
   
-    Этот шаблон проекта описывает базовый Visual C# проект с отладочной конфигурации и конфигурации выпуска. Проект включает два исходных файлов, AssemblyInfo.cs и Program.cs и несколько сборок ссылок. При создании проекта из шаблона ProjectGuid значение автоматически заменяется новый идентификатор GUID.  
+    This project template describes a basic Visual C# project that has both a Debug configuration and a Release configuration. The project includes two source files, AssemblyInfo.cs and Program.cs, and several assembly references. When a project is created from the template, the ProjectGuid value is automatically replaced by a new GUID.  
   
-    В **обозревателе решений**, развернутом **шаблоны** папки должен выглядеть следующим образом:  
+    In **Solution Explorer**, the expanded **Templates** folder should appear as follows:  
   
     Шаблоны  
   
@@ -176,14 +176,14 @@ ms.locfileid: "63439398"
   
     SimpleProject.myproj  
   
-## <a name="creating-a-basic-project-factory"></a>Создание базового проекта фабрики  
- Необходимо указать расположение папки шаблона проекта Visual Studio. Чтобы сделать это, добавьте атрибут к классу VSPackage, реализующий фабрику проектов, таким образом, чтобы расположение шаблона записывается в системный реестр, при построении пакета VSPackage. Начните с создания фабрики базовый проект, который определяется параметром фабрику проекта GUID. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> атрибут для подключения к классу SimpleProjectPackage фабрики проектов.  
+## <a name="creating-a-basic-project-factory"></a>Creating a Basic Project Factory  
+ You must tell Visual Studio the location of your project template folder. To do this, add an attribute to the VSPackage class that implements the project factory so that the template location is written to the system registry when the VSPackage is built. Start by creating a basic project factory that is identified by a project factory GUID. Use the <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribute to connect the project factory to the SimpleProjectPackage class.  
   
-#### <a name="to-create-a-basic-project-factory"></a>Чтобы создать фабрику базового проекта  
+#### <a name="to-create-a-basic-project-factory"></a>To create a basic project factory  
   
-1. Откройте SimpleProjectPackageGuids.cs в редакторе кода.  
+1. Open SimpleProjectPackageGuids.cs in the code editor.  
   
-2. Создание глобальных уникальных идентификаторов для фабрики проекта (на **средства** меню, щелкните **создать GUID**), или использовать в следующем примере. Добавьте в класс SimpleProjectPackageGuids идентификаторы GUID. Идентификаторы GUID должны находиться в виде идентификатора GUID и строковый формат. Итоговый код должен выглядеть следующим образом.  
+2. Create GUIDs for your project factory (on the **Tools** menu, click **Create GUID**), or use the one in the following example. Add the GUIDs to the SimpleProjectPackageGuids class. The GUIDs must be in both GUID form and string form. The resulting code should resemble the following example.  
   
    ```  
    static class SimpleProjectPackageGuids  
@@ -202,16 +202,16 @@ ms.locfileid: "63439398"
    }  
    ```  
   
-3. Добавьте в начало класса **SimpleProject** папку с именем `SimpleProjectFactory.cs`.  
+3. Add a class to the top **SimpleProject** folder named `SimpleProjectFactory.cs`.  
   
-4. Добавьте следующие операторы using:  
+4. Add the following using statements:  
   
    ```  
    using System.Runtime.InteropServices;  
    using Microsoft.VisualStudio.Shell;  
    ```  
   
-5. Добавьте в класс SimpleProjectFactory атрибут Guid. Значение атрибута — это новый идентификатор GUID фабрики проектов.  
+5. Add a Guid attribute to the SimpleProjectFactory class. The value of the attribute is the new project factory GUID.  
   
    ```  
    [Guid(SimpleProjectGuids.guidSimpleProjectFactoryString)]  
@@ -220,11 +220,11 @@ ms.locfileid: "63439398"
    }  
    ```  
   
-   Теперь вы можете зарегистрировать шаблон проекта.  
+   Now you can register your project template.  
   
-#### <a name="to-register-the-project-template"></a>Для регистрации шаблона проекта  
+#### <a name="to-register-the-project-template"></a>To register the project template  
   
-1. Добавьте в SimpleProjectPackage.cs, <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> атрибута к классу SimpleProjectPackage следующим образом.  
+1. In SimpleProjectPackage.cs, add a <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribute to the SimpleProjectPackage class, as follows.  
   
    ```  
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",   
@@ -234,31 +234,31 @@ ms.locfileid: "63439398"
    public sealed class SimpleProjectPackage : Package  
    ```  
   
-2. Перестройте решение и убедитесь, что сборка выполняется без ошибок.  
+2. Rebuild the solution and verify that it builds without errors.  
   
-    Перестроение регистрирует шаблон проекта.  
+    Rebuilding registers the project template.  
   
-   Параметры `defaultProjectExtension` и `possibleProjectExtensions` присваивается расширение имени файла проекта (.myproj). `projectTemplatesDirectory` Параметр имеет значение относительный путь к папке шаблонов. Во время сборки этот путь будет преобразуются в полной сборки и добавляется в реестр, чтобы зарегистрировать систему проекта.  
+   The parameters `defaultProjectExtension` and `possibleProjectExtensions` are set to the project file name extension (.myproj). The `projectTemplatesDirectory` parameter is set to the relative path of the Templates folder. During the build, this path will be converted to a full build and added to the registry to register the project system.  
   
-## <a name="testing-the-template-registration"></a>Тестирование регистрации шаблона  
- Шаблон регистрации указывает Visual Studio расположение папки шаблона проекта Visual Studio можно отображать имя шаблона и значок в **новый проект** диалоговое окно.  
+## <a name="testing-the-template-registration"></a>Testing the Template Registration  
+ Template registration tells Visual Studio the location of your project template folder so that Visual Studio can display the template name and icon in the **New Project** dialog box.  
   
-#### <a name="to-test-the-template-registration"></a>Чтобы проверить регистрацию шаблона  
+#### <a name="to-test-the-template-registration"></a>To test the template registration  
   
-1. Нажмите клавишу F5, чтобы начать отладку экспериментальный экземпляр Visual Studio.  
+1. Press F5 to start debugging an experimental instance of Visual Studio.  
   
-2. В экспериментальном экземпляре создайте новый проект типа только что созданный проект. В **новый проект** диалоговом окне вы увидите **SimpleProject** под **установленные шаблоны**.  
+2. In the experimental instance, create a new project of your newly-created project type. In the **New Project** dialog box, you should see **SimpleProject** under **Installed templates**.  
   
-   Теперь у вас есть фабрику проекта, который регистрируется. Тем не менее он еще не удается создать проект. Пакет проекта и фабрики проектов совместно для создания и инициализации проекта.  
+   Now you have a project factory that is registered. However, it cannot yet create a project. The project package and project factory work together to create and initialize a project.  
   
-## <a name="add-the-managed-package-framework-code"></a>Добавьте код, Managed Package Framework  
- Реализуйте соединение между пакет проекта и фабрики проектов.  
+## <a name="add-the-managed-package-framework-code"></a>Add the Managed Package Framework code  
+ Implement the connection between the project package and the project factory.  
   
-- Импортируйте файлы исходного кода для Managed Package Framework.  
+- Import the source-code files for the Managed Package Framework.  
   
-    1. Выгрузить проект SimpleProject (в **обозревателе решений**, выберите узел проекта и в контекстном меню щелкните **выгрузить проект**.) и откройте файл проекта в редакторе XML.  
+    1. Unload the SimpleProject project (in **Solution Explorer**, select the project node and on the context menu click **Unload Project**.) and open the project file in the XML editor.  
   
-    2. Добавьте следующие блоки в файл проекта (непосредственно над \<импорта > блоков). Значение ProjectBasePath расположение файла ProjectBase.files в только что загруженном коде Managed Package Framework. Может потребоваться добавить обратную косую черту в путь. Если этого не сделать, проект может не найти код Managed Package Framework.  
+    2. Add the following blocks to the project file (just above the \<Import> blocks). Set ProjectBasePath to the location of the ProjectBase.files file in the Managed Package Framework code you just downloaded. You might have to add a backslash to the pathname. If you do not, the project might fail to find the Managed Package Framework code.  
   
         ```  
         <PropertyGroup>  
@@ -269,40 +269,40 @@ ms.locfileid: "63439398"
         ```  
   
         > [!IMPORTANT]
-        > Не забывайте обратную косую черту в конце пути.  
+        > Don’t forget the backslash at the end of the path.  
   
-    3. Перезагрузите проект.  
+    3. Reload the project.  
   
     4. Добавьте ссылки на следующие сборки:  
   
-        - Microsoft.VisualStudio.Designer.Interfaces (в \<VSSDK install > \VisualStudioIntegration\Common\Assemblies\v2.0)  
+        - Microsoft.VisualStudio.Designer.Interfaces (in \<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0)  
   
         - WindowsBase  
   
         - Microsoft.Build.Tasks.v4.0  
   
-#### <a name="to-initialize-the-project-factory"></a>Для инициализации фабрики проектов  
+#### <a name="to-initialize-the-project-factory"></a>To initialize the project factory  
   
-1. В файле SimpleProjectPackage.cs, добавьте следующий `using` инструкции.  
+1. In the SimpleProjectPackage.cs file, add the following `using` statement.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-2. Производные `SimpleProjectPackage` класса из `Microsoft.VisualStudio.Package.ProjectPackage`.  
+2. Derive the `SimpleProjectPackage` class from `Microsoft.VisualStudio.Package.ProjectPackage`.  
   
     ```  
     public sealed class SimpleProjectPackage : ProjectPackage  
     ```  
   
-3. Регистрирует фабрику проекта. Добавьте следующую строку к `SimpleProjectPackage.Initialize` метод, сразу после `base.Initialize`.  
+3. Register the project factory. Add the following line to the `SimpleProjectPackage.Initialize` method, just after `base.Initialize`.  
   
     ```  
     base.Initialize();  
     this.RegisterProjectFactory(new SimpleProjectFactory(this));  
     ```  
   
-4. Реализация абстрактного свойства `ProductUserContext`:  
+4. Implement the abstract property `ProductUserContext`:  
   
     ```csharp  
     public override string ProductUserContext  
@@ -311,19 +311,19 @@ ms.locfileid: "63439398"
     }  
     ```  
   
-5. В SimpleProjectFactory.cs, добавьте следующий `using` инструкции после существующего `using` инструкций.  
+5. In SimpleProjectFactory.cs, add the following `using` statement after the existing `using` statements.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-6. Производные `SimpleProjectFactory` класса из `ProjectFactory`.  
+6. Derive the `SimpleProjectFactory` class from `ProjectFactory`.  
   
     ```  
     class SimpleProjectFactory : ProjectFactory  
     ```  
   
-7. Добавьте следующий метод фиктивный `SimpleProjectFactory` класса. Этот метод реализуется в одном из следующих разделов.  
+7. Add the following dummy method to the `SimpleProjectFactory` class. You will implement this method in a later section.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -332,7 +332,7 @@ ms.locfileid: "63439398"
     }  
     ```  
   
-8. Добавьте следующие поля и конструктор для `SimpleProjectFactory` класса. Это `SimpleProjectPackage` ссылку кэшируется в скрытом поле, чтобы его можно использовать при установке сайта поставщика услуг.  
+8. Add the following field and constructor to the `SimpleProjectFactory` class. This `SimpleProjectPackage` reference is cached in a private field so that it can be used in setting a service provider site.  
   
     ```  
     private SimpleProjectPackage package;  
@@ -344,43 +344,43 @@ ms.locfileid: "63439398"
     }  
     ```  
   
-9. Перестройте решение и убедитесь, что сборка выполняется без ошибок.  
+9. Rebuild the solution and verify that it builds without errors.  
   
-## <a name="testing-the-project-factory-implementation"></a>Тестирование реализации фабрики проектов  
- Проверка вызывается конструктор для реализации фабрики проектов.  
+## <a name="testing-the-project-factory-implementation"></a>Testing the Project Factory Implementation  
+ Test whether the constructor for your project factory implementation is called.  
   
-#### <a name="to-test-the-project-factory-implementation"></a>Для проверки реализации фабрики проектов  
+#### <a name="to-test-the-project-factory-implementation"></a>To test the project factory implementation  
   
-1. В файле SimpleProjectFactory.cs, установите точку останова на следующую строку в `SimpleProjectFactory` конструктор.  
+1. In the SimpleProjectFactory.cs file, set a breakpoint on the following line in the `SimpleProjectFactory` constructor.  
   
     ```  
     this.package = package;  
     ```  
   
-2. Нажмите клавишу F5, чтобы запустить экспериментальный экземпляр Visual Studio.  
+2. Press F5 to start an experimental instance of Visual Studio.  
   
-3. В экспериментальном экземпляре приступить к созданию нового проекта. В **новый проект** диалоговом окне выберите SimpleProject тип проекта, а затем нажмите кнопку **ОК**. Выполнение прекратится в точке останова.  
+3. In the experimental instance, start to create a new project.In the **New Project** dialog box, select the SimpleProject project type and then click **OK**. Выполнение прекратится в точке останова.  
   
-4. Удалите точку останова и остановить отладку. Так как мы еще не создали узел проекта, код создания проекта по-прежнему создает исключения.  
+4. Clear the breakpoint and stop debugging. Since we have not created a project node yet, the project creation code still throws exceptions.  
   
-## <a name="extending-the-project-node-class"></a>Расширение класса узла проекта  
- Теперь вы можете реализовать `SimpleProjectNode` класс, который является производным от `ProjectNode` класса. `ProjectNode` Базовый класс обрабатывает следующие задачи создания проекта:  
+## <a name="extending-the-project-node-class"></a>Extending the Project Node Class  
+ Now you can implement the `SimpleProjectNode` class, which derives from the `ProjectNode` class. The `ProjectNode` base class handles the following tasks of project creation:  
   
-- Копирует файл шаблона проекта, SimpleProject.myproj, в папку нового проекта. Копия переименовывается в соответствии с именем, введенным в **новый проект** диалоговое окно. `ProjectGuid` Значение свойства заменяется на новый идентификатор GUID.  
+- Copies the project template file, SimpleProject.myproj, to the new project folder. The copy is renamed according to the name that is entered in the **New Project** dialog box. The `ProjectGuid` property value is replaced by a new GUID.  
   
-- Обходит элементы MSBuild файла шаблона проекта, SimpleProject.myproj и ищет `Compile` элементов. Для каждого `Compile` целевого файла, файл копируется в папку нового проекта.  
+- Traverses the MSBuild elements of the project template file, SimpleProject.myproj, and looks for `Compile` elements. For each `Compile` target file, copies the file to the new project folder.  
   
-  Производные `SimpleProjectNode` класс выполняет эти задачи:  
+  The derived `SimpleProjectNode` class handles these tasks:  
   
-- Позволяет значков для узлов проекта и файла в **обозревателе решений** для создания или выбран.  
+- Enables icons for project and file nodes in **Solution Explorer** to be created or selected.  
   
-- Включает дополнительный проект замены параметров шаблона должны быть указаны.  
+- Enables additional project template parameter substitutions to be specified.  
   
-#### <a name="to-extend-the-project-node-class"></a>Чтобы расширить класс узла проекта  
+#### <a name="to-extend-the-project-node-class"></a>To extend the project node class  
   
 1. 
   
-2. Добавьте класс с именем `SimpleProjectNode.cs`.  
+2. Add a class named `SimpleProjectNode.cs`.  
   
 3. Замените существующий код следующим кодом:  
   
@@ -418,27 +418,27 @@ ms.locfileid: "63439398"
    }  
    ```  
   
-   Это `SimpleProjectNode` реализацию класса имеет эти переопределенные методы:  
+   This `SimpleProjectNode` class implementation has these overridden methods:  
   
-- `ProjectGuid`, который возвращает идентификатор GUID фабрики проектов.  
+- `ProjectGuid`, which returns the project factory GUID.  
   
-- `ProjectType`, который возвращает локализованное имя типа проекта.  
+- `ProjectType`, which returns the localized name of the project type.  
   
-- `AddFileFromTemplate`, который копирует выбранные файлы из папки шаблона к проекту назначения. Дополнительно этот метод реализуется в одном из следующих разделов.  
+- `AddFileFromTemplate`, which copies selected files from the template folder to the destination project. This method is further implemented in a later section.  
   
-  `SimpleProjectNode` Конструктор, например `SimpleProjectFactory` конструктор, кэширует `SimpleProjectPackage` ссылку в скрытом поле для последующего использования.  
+  The `SimpleProjectNode` constructor, like the `SimpleProjectFactory` constructor, caches a `SimpleProjectPackage` reference in a private field for later use.  
   
-  Для подключения `SimpleProjectFactory` класс `SimpleProjectNode` класса, необходимо создать экземпляр нового `SimpleProjectNode` в `SimpleProjectFactory.CreateProject` метод и кэшировать его в скрытом поле для последующего использования.  
+  To connect the `SimpleProjectFactory` class to the `SimpleProjectNode` class, you must instantiate a new `SimpleProjectNode` in the `SimpleProjectFactory.CreateProject` method and cache it in a private field for later use.  
   
-#### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Для подключения класс фабрики проекта и класс узла  
+#### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>To connect the project factory class and the node class  
   
-1. В файле SimpleProjectFactory.cs, добавьте следующий `using` инструкции:  
+1. In the SimpleProjectFactory.cs file, add the following `using` statement:  
   
     ```  
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
     ```  
   
-2. Замените `SimpleProjectFactory.CreateProject` метода, используя следующий код.  
+2. Replace the `SimpleProjectFactory.CreateProject` method by using the following code.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -450,40 +450,40 @@ ms.locfileid: "63439398"
     }  
     ```  
   
-3. Перестройте решение и убедитесь, что сборка выполняется без ошибок.  
+3. Rebuild the solution and verify that it builds without errors.  
   
-## <a name="testing-the-project-node-class"></a>Тестирование класса узла проекта  
- Протестируйте свою фабрику проекта, чтобы понять, каким он иерархии проекта.  
+## <a name="testing-the-project-node-class"></a>Testing the Project Node Class  
+ Test your project factory to see whether it creates a project hierarchy.  
   
-#### <a name="to-test-the-project-node-class"></a>Чтобы протестировать класс узла проекта  
+#### <a name="to-test-the-project-node-class"></a>To test the project node class  
   
-1. Нажмите клавишу F5, чтобы начать отладку. В экспериментальном экземпляре создайте новый SimpleProject.  
+1. Нажмите клавишу F5, чтобы начать отладку. In the experimental instance, create a new SimpleProject.  
   
-2. Visual Studio следует вызывать фабрикой проекта для создания проекта.  
+2. Visual Studio should call your project factory to create a project.  
   
 3. Закройте экспериментальный экземпляр Visual Studio.  
   
-## <a name="adding-a-custom-project-node-icon"></a>Добавление значка узла пользовательского проекта  
- Значок узла проекта в одном из предыдущих разделов — значок по умолчанию. Его можно изменить для пользовательского значка.  
+## <a name="adding-a-custom-project-node-icon"></a>Adding a Custom Project Node Icon  
+ The project node icon in the earlier section is a default icon. You can change it to a custom icon.  
   
-#### <a name="to-add-a-custom-project-node-icon"></a>Чтобы добавить значок узла пользовательского проекта  
+#### <a name="to-add-a-custom-project-node-icon"></a>To add a custom project node icon  
   
-1. В **ресурсы** папки, добавьте к файлу точечного рисунка с именем SimpleProjectNode.bmp.  
+1. In the **Resources** folder, add a bitmap file named SimpleProjectNode.bmp.  
   
-2. В **свойства** windows, уменьшить точечного рисунка 16 x 16 пикселей. Сделайте различение растрового изображения.  
+2. In the **Properties** windows, reduce the bitmap to 16 by 16 pixels. Make the bitmap distinctive.  
   
-    ![Команда простого проекта](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
-3. В **свойства** измените **действие при сборке** растрового изображения для **внедренный ресурс**.  
+3. In the **Properties** window, change the **Build action** of the bitmap to **Embedded Resource**.  
   
-4. В SimpleProjectNode.cs, добавьте следующий `using` инструкции:  
+4. In SimpleProjectNode.cs, add the following `using` statements:  
   
    ```  
    using System.Drawing;  
    using System.Windows.Forms;  
    ```  
   
-5. Добавьте следующие статические поля и конструктор для `SimpleProjectNode` класса.  
+5. Add the following static field and constructor to the `SimpleProjectNode` class.  
   
    ```  
    private static ImageList imageList;  
@@ -494,7 +494,7 @@ ms.locfileid: "63439398"
    }  
    ```  
   
-6. Добавьте следующее свойство в начале `SimpleProjectNode` класса.  
+6. Add the following property to the beginning of the `SimpleProjectNode` class.  
   
    ```  
    internal static int imageIndex;  
@@ -504,7 +504,7 @@ ms.locfileid: "63439398"
       }  
    ```  
   
-7. Конструктор экземпляра, замените следующий код.  
+7. Replace the instance constructor with the following code.  
   
    ```  
    public SimpleProjectNode(SimpleProjectPackage package)  
@@ -520,7 +520,7 @@ ms.locfileid: "63439398"
    }  
    ```  
   
-   Во время статической конструкции `SimpleProjectNode` извлекает узел проекта растрового изображения из ресурсов манифеста сборки и кэширует его в скрытом поле для последующего использования. Обратите внимание, что синтаксис <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> путь к изображению. Чтобы просмотреть имена ресурсов манифеста, внедренных в сборку, используйте <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> метод. Если этот метод применяется к `SimpleProject` сборки, результаты должны выглядеть следующим образом:  
+   During static construction, `SimpleProjectNode` retrieves the project node bitmap from the assembly manifest resources and caches it in a private field for later use. Notice the syntax of the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> image path. To see the names of the manifest resources embedded in an assembly, use the <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> method. When this method is applied to the `SimpleProject` assembly, the results should be as follows:  
   
 - SimpleProject.Resources.resources  
   
@@ -536,20 +536,20 @@ ms.locfileid: "63439398"
   
 - SimpleProject.Resources.SimpleProjectNode.bmp  
   
-  Во время построения экземпляра `ProjectNode` Resources.imagelis.bmp, в которой являются внедренными часто используемых растровыми изображениями 16 x 16 из Resources\imagelis.bmp загружает базовый класс. Этот список точечного рисунка, предоставляется `SimpleProjectNode` как ImageHandler.ImageList. `SimpleProjectNode` Битовая карта узла проекта добавляет к списку. Смещение растрового изображения узел проекта в списке изображений кэшируется для последующего использования в качестве значения открытого `ImageIndex` свойство. Visual Studio использует это свойство, чтобы определить, какие растрового изображения, отображаемого в качестве значка узла проекта.  
+  During instance construction, the `ProjectNode` base class loads Resources.imagelis.bmp, in which are embedded commonly used 16 x 16 bitmaps from Resources\imagelis.bmp. This bitmap list is made available to `SimpleProjectNode` as ImageHandler.ImageList. `SimpleProjectNode` appends the project node bitmap to the list. The offset of the project node bitmap in the image list is cached for later use as the value of the public `ImageIndex` property. Visual Studio uses this property to determine which bitmap to display as the project node icon.  
   
-## <a name="testing-the-custom-project-node-icon"></a>Значок узла пользовательского проекта тестирования  
- Протестируйте свою фабрику проекта, чтобы понять, каким он иерархии проекта, в которой значок узла данного пользовательского проекта.  
+## <a name="testing-the-custom-project-node-icon"></a>Testing the Custom Project Node Icon  
+ Test your project factory to see whether it creates a project hierarchy that has your custom project node icon.  
   
-#### <a name="to-test-the-custom-project-node-icon"></a>Для тестирования значок узла пользовательского проекта  
+#### <a name="to-test-the-custom-project-node-icon"></a>To test the custom project node icon  
   
-1. Начать отладку и в экспериментальном экземпляре создайте новый SimpleProject.  
+1. Start debugging, and in the experimental instance create a new SimpleProject.  
   
-2. В только что созданный проект Обратите внимание на то, что SimpleProjectNode.bmp используется как значок узла проекта.  
+2. In the newly-created project, notice that SimpleProjectNode.bmp is used as the project node icon.  
   
-     ![Простой проект новый узел проекта](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
+     ![Simple Project New Project Node](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
-3. Откройте файл Program.cs в редакторе кода. Вы увидите исходный код, похожий на приведенный ниже.  
+3. Open Program.cs in the code editor. You should see source code that resembles the following code.  
   
     ```  
     using System;  
@@ -569,22 +569,22 @@ ms.locfileid: "63439398"
     }  
     ```  
   
-     Обратите внимание на то, что параметры шаблона $nameSpace$ и $className$ нет новых значений. Вы узнаете, как реализовать замена параметров шаблона в следующем разделе.  
+     Notice that the template parameters $nameSpace$ and $className$ do not have new values. You will learn how to implement template parameter substitution in the next section.  
   
-## <a name="substituting-template-parameters"></a>Замена параметров шаблона  
- В предыдущем разделе, можно зарегистрировать шаблона проекта в Visual Studio с помощью `ProvideProjectFactory` атрибута. Регистрация путь к папке шаблона таким образом позволяет включить подстановку параметров базового шаблона, переопределение и расширение `ProjectNode.AddFileFromTemplate` класса. Дополнительные сведения см. в разделе [Создание нового проекта: За кулисами, часть вторая](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+## <a name="substituting-template-parameters"></a>Substituting Template Parameters  
+ In an earlier section, you registered the project template with Visual Studio by using the `ProvideProjectFactory` attribute. Registering the path of a template folder in this manner lets you enable basic template parameter substitution by overriding and expanding the `ProjectNode.AddFileFromTemplate` class. For more information, see [New Project Generation: Under the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
- Теперь добавьте код замены `AddFileFromTemplate` класса.  
+ Now add replacement code to the `AddFileFromTemplate` class.  
   
-#### <a name="to-substitute-template-parameters"></a>Для замены параметров шаблона  
+#### <a name="to-substitute-template-parameters"></a>To substitute template parameters  
   
-1. В файле SimpleProjectNode.cs, добавьте следующий `using` инструкции.  
+1. In the SimpleProjectNode.cs file, add the following `using` statement.  
   
    ```  
    using System.IO;  
    ```  
   
-2. Замените `AddFileFromTemplate` метода, используя следующий код.  
+2. Replace the `AddFileFromTemplate` method by using the following code.  
   
    ```  
    public override void AddFileFromTemplate(  
@@ -602,30 +602,30 @@ ms.locfileid: "63439398"
    }  
    ```  
   
-3. Установите точку останова в методе, сразу после `className` оператор присваивания.  
+3. Set a breakpoint in the method, just after the `className` assignment statement.  
   
-   Операторы присваивания определите приемлемые значения для пространства имен и имя нового класса. Два `ProjectNode.FileTemplateProcessor.AddReplace` вызовы методов замените соответствующие значения параметров шаблона с помощью этих новых значений.  
+   The assignment statements determine reasonable values for a namespace and a new class name. The two `ProjectNode.FileTemplateProcessor.AddReplace` method calls replace the corresponding template parameter values by using these new values.  
   
-## <a name="testing-the-template-parameter-substitution"></a>Тестирование замена параметров шаблона  
- Теперь можно протестировать замена параметров шаблона.  
+## <a name="testing-the-template-parameter-substitution"></a>Testing the Template Parameter Substitution  
+ Now you can test template parameter substitution.  
   
-#### <a name="to-test-the-template-parameter-substitution"></a>Для тестирования замена параметров шаблона  
+#### <a name="to-test-the-template-parameter-substitution"></a>To test the template parameter substitution  
   
-1. Начать отладку и в экспериментальном экземпляре создайте новый SimpleProject.  
+1. Start debugging, and in the experimental instance create a new SimpleProject.  
   
-2. Выполнение остановится в точке останова в `AddFileFromTemplate` метод.  
+2. Execution stops at the breakpoint in the `AddFileFromTemplate` method.  
   
-3. Проверить значения для `nameSpace` и `className` параметров.  
+3. Examine the values for the `nameSpace` and `className` parameters.  
   
-   - `nameSpace` Получает значение \<RootNamespace > в файле шаблона проекта \Templates\Projects\SimpleProject\SimpleProject.myproj. В этом случае значение равно «MyRootNamespace».  
+   - `nameSpace` is given the value of the \<RootNamespace> element in the \Templates\Projects\SimpleProject\SimpleProject.myproj project template file. In this case, the value is "MyRootNamespace".  
   
-   - `className` Получает значение имени класса источника файла без расширения имени файла. В этом случае первый файл копируются в папку назначения является AssemblyInfo.cs; Таким образом className значение «AssemblyInfo».  
+   - `className` is given the value of the class source file name, without the file name extension. In this case, the first file to be copied to the destination folder is AssemblyInfo.cs; therefore, the value of className is "AssemblyInfo".  
   
-4. Удалите точку останова и нажмите клавишу F5, чтобы продолжить выполнение.  
+4. Remove the breakpoint and press F5 to continue execution.  
   
-    Visual Studio следует завершить создание проекта.  
+    Visual Studio should finish creating a project.  
   
-5. Откройте файл Program.cs в редакторе кода. Вы увидите исходный код, похожий на приведенный ниже.  
+5. Open Program.cs in the code editor. You should see source code that resembles the following code.  
   
    ```  
    using System;  
@@ -646,10 +646,10 @@ ms.locfileid: "63439398"
    }  
    ```  
   
-    Обратите внимание на то, что пространство имен теперь «MyRootNamespace» и класс теперь называется «Программа».  
+    Notice that the namespace is now "MyRootNamespace" and the class name is now "Program".  
   
-6. Начните отладку проекта. Новый проект должен компиляции, запуска и отображение «Hello VSX!!!» в окне консоли.  
+6. Start debugging the project. The new project should compile, run, and display "Hello VSX!!!" в окне консоли.  
   
-    ![Команда Simple Project](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+    ![Simple Project Command](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
-   Поздравляем! Реализации системы базового управляемого проекта.
+   Поздравляем! You have implemented a basic managed project system.

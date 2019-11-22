@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5999edf14692e5ad51f56cb7989ea07eb0f11f5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60e7ddd7c535d99abcb64d4adde97157b117f3ed
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657126"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301385"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Пошаговое руководство. Создание и выполнение модульных тестов для приложений для Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72657126"
 Visual Studio включает поддержку модульного тестирования управляемых приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] и шаблоны библиотек модульных тестов для Visual C#, Visual Basic и Visual C++.
 
 > [!TIP]
-> Дополнительные сведения о разработке приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] см. в разделе [Начало работы с приложениями Магазина Windows](http://go.microsoft.com/fwlink/?LinkID=241410).
+> Дополнительные сведения о разработке приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] см. в разделе [Начало работы с приложениями Магазина Windows](https://go.microsoft.com/fwlink/?LinkID=241410).
 
  Visual Studio предоставляет следующие возможности модульного тестирования:
 
@@ -64,11 +64,11 @@ Visual Studio включает поддержку модульного тест�
 
 6. Оставьте флажок **Создать каталог для решения** установленным и нажмите кнопку **ОК** .
 
-     ![Библиотека специализированного модульного тестирования](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
+     ![Tailored Unit Test Library](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
 
      В обозревателе решений появляется ваш новый проект модульного теста [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], а в редакторе кода отображается модульный тест по умолчанию с именем UnitTest1.
 
-     ![Новый проект специализированного модульного теста](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![New tailored unit test project](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> Правка манифеста для проекта модульного теста
  Может потребоваться изменить манифест для проекта модульного теста, чтобы предоставить необходимые возможности запуска приложения.
@@ -88,7 +88,7 @@ Visual Studio включает поддержку модульного тест�
 
      См. дополнительные сведения о [настройке пакета приложения Windows 8.1 с помощью конструктора манифеста](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).
 
-     ![Манифест модульного теста](../test/media/unit-test-win8.png "Unit_Test_Win8_")
+     ![Unit Test Manifest](../test/media/unit-test-win8.png "Unit_Test_Win8_")
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Создание кода модульного теста
 
@@ -96,7 +96,7 @@ Visual Studio включает поддержку модульного тест�
 
 1. В редакторе кода добавьте модульный тест и включите необходимые утверждения и логику.
 
-     Дополнительные сведения см. в статье [Использование классов утверждений](http://go.microsoft.com/fwlink/?LinkID=224991) в библиотеке MSDN.
+     Дополнительные сведения см. в статье [Использование классов утверждений](https://go.microsoft.com/fwlink/?LinkID=224991) в библиотеке MSDN.
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Run"></a> Запуск модульных тестов
 
@@ -123,29 +123,29 @@ Visual Studio включает поддержку модульного тест�
 
 4. Выберите **Запустить все**.
 
-     ![Обозреватель &#45; модульных тестов Запуск модульного теста](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
+     ![Unit Test Explorer &#45; run unit test](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
 
     > [!TIP]
     > Можно выбрать один или несколько модульных тестов, перечисленных в обозревателе, а затем щелкнуть правой кнопкой мыши и выбрать **Запуск выбранных тестов**.
     >
     >  Кроме того, можно выбрать **Отладить выбранные тесты**, **Открыть тест**и использовать параметр **Свойства** .
     >
-    >  ![Контекстное меню тестового обозревателя &#45; одномодульных тестов](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    >  ![Unit Test Explorer &#45; uni test context menu](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
      Выполняется модульный тест. По завершении обозреватель тестов отображает состояние теста, затраченное время и содержит ссылку на источник.
 
-     ![Тест обозревателя &#45; модульных тестов завершен](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
+     ![Unit Test Explorer &#45; test completed](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="videos"></a>Видеоролики
- [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](http://go.microsoft.com/fwlink/?LinkId=226285)
+ [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>Форумы
- [Visual Studio Unit Testing](http://go.microsoft.com/fwlink/?LinkId=224477) (Модульное тестирование в Visual Studio)
+ [Visual Studio Unit Testing](https://go.microsoft.com/fwlink/?LinkId=224477) (Модульное тестирование в Visual Studio)
 
 ### <a name="msdn-library"></a>Библиотека MSDN
- [Библиотека MSDN. Создание и запуск модульных тестов для существующего кода (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)
+ [Библиотека MSDN. Создание и запуск модульных тестов для существующего кода (Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=223683)
 
 ## <a name="see-also"></a>См. также раздел
- [Тестирование приложений Магазина в Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Сборка и тестирование приложения Магазина Windows с помощью Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Testing Store apps with Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Build and test a Windows Store app using Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

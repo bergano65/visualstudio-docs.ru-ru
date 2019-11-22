@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77220ef55871d59bf8c8810547fccae5399869ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665679"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297797"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Страница «Быстрый запуск», папка «Среда», диалоговое окно «Параметры»
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "72665679"
 ## <a name="show-previous-results"></a>Отображение предыдущих результатов
  По умолчанию вводимое условие поиска не сохраняется между сеансами поиска. Строка поиска очищается, если осуществляется поиск термина, курсор перемещается за пределы области **Быстрый запуск**, а затем возвращается обратно. Чтобы сохранить результаты поиска, перейдите в диалоговое окно **Параметры**, выберите **Быстрый запуск**, а затем установите флажок **Результаты предыдущего поиска при включении быстрого запуска** . При следующем выполнении поиска выйдите из области быстрого запуска, а затем вернитесь обратно. Область быстрого запуска сохранит последнее использовавшееся условие поиска и выведет результаты поиска.
 
- Самые актуальные советы и рекомендации по использованию поля **Быстрый запуск** см. в [блоге по Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
+ Самые актуальные советы и рекомендации по использованию поля **Быстрый запуск** см. в [блоге по Visual Studio](https://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>См. также раздел
- [Общие элементы пользовательского интерфейса (](../../ide/reference/general-user-interface-elements-visual-studio.md) [диалоговое окно "параметры среды](../../ide/reference/environment-options-dialog-box.md) Visual Studio)"
+ [General User Interface Elements (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)

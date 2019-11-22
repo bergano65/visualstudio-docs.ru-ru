@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660635"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302607"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "72660635"
 
 1. Создайте проект.
 
-     ![Создание проекта закодированного теста пользовательского интерфейса](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
+     ![Create a coded UI test project](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
 2. Выберите запись действий.
 
-     ![Выберите запись действий](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![Choose to record the actions](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. Откройте приложение "Калькулятор" и начните запись теста.
 
-     ![Действия записи](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Record actions](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. Сложите 1 и 2, приостановите средство записи и создайте метод теста. Позже эти значения ввода пользователя будут заменены значениями из файла данных.
 
-     ![Создать метод теста](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
+     ![Generate test method](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
 
      Закройте построитель теста. Метод добавляется в тест.
 
@@ -67,15 +67,15 @@ ms.locfileid: "72660635"
 
      Сопоставьте элемент управления "Текст" с калькулятором, который отображает сумму.
 
-     ![Сопоставьте элемент управления "текст" пользовательского интерфейса](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
+     ![Map the UI text control](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
 7. Добавьте утверждение, которое проверяет правильность значения суммы. Выберите свойство **DisplayText**, которое имеет значение **3**, а затем выберите **Добавить утверждение**. С помощью средства сравнения **AreEqual** проверьте, имеет ли сравнение значение **3**.
 
-     ![Настройка утверждения](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
+     ![Configure the assertion](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
 
 8. После настройки утверждения снова создайте код из построителя. При этом создается новый метод для проверки.
 
-     ![Создание метода утверждения](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
+     ![Generate the assertion method](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
 
      Так как метод `ValidateSum` проверяет результаты метода `AddNumbers`, переместите его в нижнюю часть блока кода.
 
@@ -98,7 +98,7 @@ ms.locfileid: "72660635"
 
 1. Добавьте в проект dataDrivenSample текстовый файл с именем `data.csv`.
 
-     ![Добавление в проект файла разделенных запятыми значений](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Add a comma seperated value file to the project](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. Заполните CSV-файл следующими данными.
 
@@ -110,13 +110,13 @@ ms.locfileid: "72660635"
 
      После добавления данных этот файл должен выглядеть следующим образом.
 
-     ![Заполните. CSV-файл с данными](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![Populate the .CSV file with data](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
 3. Важно сохранить этот CSV-файл в правильной кодировке. В меню **ФАЙЛ** выберите **Дополнительные параметры сохранения** и выберите в качестве кодировки **Юникод (UTF-8 без сигнатуры) — кодовая страница 65001**.
 
 4. Этот CSV-файл необходимо скопировать в выходной каталог, иначе не удается запустить тест. Скопируйте его с помощью окна «Свойства».
 
-     ![Разверните. CSV-файл](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![Deploy the .CSV file](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
 
      Теперь, когда у нас есть созданный набор данных, следует привязать данные к тесту.
 
@@ -185,15 +185,15 @@ ms.locfileid: "72660635"
 
     - Откройте файл UIMap.uitest.
 
-         ![Открытие редактора закодированных тестов пользовательского интерфейса](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![Open the Coded UI Test Editor](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - Выберите действие пользовательского интерфейса и просмотрите соответствующее сопоставление элементов управления пользовательского интерфейса. Обратите внимание, как сопоставление соответствует коду, например, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Использование редактора закодированных тестов пользовательского интерфейса для помощи с кодом](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Use the Coded UI Test Editor to assist with code](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - В окне свойств откройте **свойства поиска**. Значение **Имя** свойств поиска — это то, что обрабатывается в коде с помощью источника данных. Например, `SearchProperties` назначаются значения в первом столбце каждой строки данных: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. В рамках трех итераций этот тест изменит значение **Имя** для свойства поиска на 3, затем на 5 и, наконец, на 6.
 
-         ![Использование свойств поиска для помощи в написании кода](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Use the search properties to assist in coding](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. Сохраните решение.
 
@@ -205,7 +205,7 @@ ms.locfileid: "72660635"
 
    **Руководство**
 
-   Дополнительные сведения см. в разделах [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188) и [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196).
+   Дополнительные сведения см. в разделах [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188) и [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://go.microsoft.com/fwlink/?LinkID=255196).
 
 ## <a name="q--a"></a>Вопросы и ответы
 

@@ -1,5 +1,5 @@
 ---
-title: Проверка кода с помощью схем слоев | Документация Майкрософт
+title: Validate code with layer diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 45aa7c9807ba08751a354c336b646aa7f7ce641b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659379"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301357"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Проверка кода по схемам слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,59 +49,59 @@ ms.locfileid: "72659379"
 
 - Visual Studio на сервере Team Foundation Build для проверки кода автоматически с помощью Team Foundation Build
 
-- Решение, включающее проект моделирования со схемой слоев. Эта схема слоев должна быть связана с артефактами в проектах Visual C# .NET или Visual Basic .NET, которые необходимо проверить. См. раздел [Создание схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md).
+- Решение, включающее проект моделирования со схемой слоев. Эта схема слоев должна быть связана с артефактами в проектах Visual C# .NET или Visual Basic .NET, которые необходимо проверить. See [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md).
 
   Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Можно проверить код вручную из открытой схемы слоев в Visual Studio или из командной строки. Также код можно проверить автоматически при выполнении локальных сборок или Team Foundation Build. См. [видео Channel 9: проектирование и проверка архитектуры с помощью схем слоев](http://go.microsoft.com/fwlink/?LinkID=252073).
+  Можно проверить код вручную из открытой схемы слоев в Visual Studio или из командной строки. Также код можно проверить автоматически при выполнении локальных сборок или Team Foundation Build. See [Channel 9 Video: Design and validate your architecture using layer diagrams](https://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Если необходимо выполнить проверку слоев в Team Foundation Build, следует также установить ту же версию Visual Studio на сервере сборки.
 
-- [Проверьте, поддерживает ли элемент проверку](#SupportsValidation)
+- [See if an item supports validation](#SupportsValidation)
 
-- [Включение других сборок и проектов .NET для проверки](#IncludeReferences)
+- [Include other .NET assemblies and projects for validation](#IncludeReferences)
 
-- [Проверка кода вручную](#ValidateManually)
+- [Validate code manually](#ValidateManually)
 
-- [Автоматически проверять код](#ValidateAuto)
+- [Validate code automatically](#ValidateAuto)
 
-- [Устранение проблем при проверке слоев](#TroubleshootingValidation)
+- [Troubleshoot layer validation issues](#TroubleshootingValidation)
 
-- [Изучение и разрешение ошибок проверки слоев](#UnderstandingValidationErrors)
+- [Understand and resolve layer validation errors](#UnderstandingValidationErrors)
 
-## <a name="SupportsValidation"></a>Проверьте, поддерживает ли элемент проверку
+## <a name="SupportsValidation"></a> See if an item supports validation
  Можно связать слои с веб-сайтами, документами Office, обычными текстовыми файлами и файлами в проектах, которые являются общими для нескольких приложений, но они не войдут в процесс проверки. Ошибки проверки для ссылок на проекты или сборки, связанные с отдельными слоями, отображаются только в том случае, если между этими слоями отображаются зависимости. Эти ссылки считаются зависимостями, только если используются в коде.
 
-1. На схеме слоев выберите один или несколько слоев, щелкните выделенный фрагмент правой кнопкой мыши и выберите команду **Просмотреть ссылки**.
+1. On the layer diagram, select one or more layers, right-click your selection, and then click **View Links**.
 
-2. В **обозревателе слоев**просмотрите столбец **поддерживает проверку** . Если значение равно false, элемент не поддерживает проверку.
+2. In **Layer Explorer**, look at the **Supports Validation** column. Если значение равно false, элемент не поддерживает проверку.
 
-## <a name="IncludeReferences"></a>Включение других сборок и проектов .NET для проверки
- При перетаскивании элементов на схему слоев ссылки на соответствующие сборки или проекты .NET автоматически добавляются в папку «ссылки на **слой** » в проекте моделирования. Эта папка содержит ссылки на сборки и проекты, которые анализируются во время проверки. Также можно добавить другие сборки и проекты .NET для проверки, не перетаскивая их на схему слоев вручную.
+## <a name="IncludeReferences"></a> Include other .NET assemblies and projects for validation
+ When you drag items to the layer diagram, references to the corresponding .NET assemblies or projects are added automatically to the **Layer References** folder in the modeling project. Эта папка содержит ссылки на сборки и проекты, которые анализируются во время проверки. Также можно добавить другие сборки и проекты .NET для проверки, не перетаскивая их на схему слоев вручную.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши проект моделирования или папку **ссылки на слой** , а затем выберите команду **Добавить ссылку**.
+1. In **Solution Explorer**, right-click the modeling project or the **Layer References** folder, and then click **Add Reference**.
 
-2. В диалоговом окне **Добавление ссылки** выберите сборки или проекты, а затем нажмите кнопку **ОК**.
+2. In the **Add Reference** dialog box, select the assemblies or projects, and then click **OK**.
 
-## <a name="ValidateManually"></a>Проверка кода вручную
- Если имеется открытая схема слоев, связанная с элементами решения, можно выполнить команду **проверить** ярлык на схеме. Можно также использовать командную строку для выполнения команды **MSBuild** с настраиваемым свойством **/p: validatearchitectureonbuild** , установленным в **значение true**. Например, при внесении изменений в код регулярно выполняйте проверку слоев, чтобы заранее обнаруживать конфликты зависимостей.
+## <a name="ValidateManually"></a> Validate code manually
+ If you have an open layer diagram that is linked to solution items, you can run the **Validate** shortcut command from the diagram. You can also use the command prompt to run the **msbuild** command with the **/p:ValidateArchitecture** custom property set to **True**. Например, при внесении изменений в код регулярно выполняйте проверку слоев, чтобы заранее обнаруживать конфликты зависимостей.
 
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>Проверка кода из открытой схемы слоев
 
-1. Щелкните правой кнопкой мыши поверхность схемы и выберите пункт **Проверить архитектуру**.
+1. Right-click the diagram surface, and then click **Validate Architecture**.
 
     > [!NOTE]
-    > По умолчанию для свойства **действие сборки** в файле схемы слоев (. LAYERDIAGRAM) задано значение **Проверка** , чтобы схема включалась в процесс проверки.
+    > By default, the **Build Action** property on the layer diagram (.layerdiagram) file is set to **Validate** so that the diagram is included in the validation process.
 
-     Окно **Список ошибок** сообщает о любых произошедших ошибках. Дополнительные сведения об ошибках проверки см. в разделе [изучение и устранение ошибок проверки слоев](#UnderstandingValidationErrors).
+     The **Error List** window reports any errors that occur. For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
 
-2. Чтобы просмотреть источник каждой ошибки, дважды щелкните ошибку в окне **Список ошибок** .
+2. To view the source of each error, double-click the error in the **Error List** window.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может вместо источника ошибки показывать карту кода. Это происходит, если код имеет зависимость в сборке, не заданной схемой слоев, либо в коде отсутствует зависимость, заданная схемой слоев. Просмотрите карту кода или код, чтобы определить, должна ли существовать зависимость. Дополнительные сведения о картах кода см. в статье [сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md).
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может вместо источника ошибки показывать карту кода. Это происходит, если код имеет зависимость в сборке, не заданной схемой слоев, либо в коде отсутствует зависимость, заданная схемой слоев. Просмотрите карту кода или код, чтобы определить, должна ли существовать зависимость. For more information about code maps, see [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-3. Сведения об управлении ошибками см. в разделе [Управление ошибками проверки](#ManageErrors).
+3. To manage errors, see [Manage validation errors](#ManageErrors).
 
 #### <a name="to-validate-code-at-the-command-prompt"></a>Проверка кода в командной строке
 
@@ -137,11 +137,11 @@ ms.locfileid: "72659379"
      msbuild /p:ValidateArchitecture=true
      ```
 
-     Отобразятся любые возникающие ошибки. Дополнительные сведения о [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] см. в разделе задача [MSBuild](../msbuild/msbuild.md) и [MSBuild](../msbuild/msbuild-task.md).
+     Отобразятся любые возникающие ошибки. For more information about [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], see [MSBuild](../msbuild/msbuild.md) and [MSBuild Task](../msbuild/msbuild-task.md).
 
-   Дополнительные сведения об ошибках проверки см. в разделе [изучение и устранение ошибок проверки слоев](#UnderstandingValidationErrors).
+   For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
 
-### <a name="ManageErrors"></a>Управление ошибками проверки
+### <a name="ManageErrors"></a> Manage validation errors
  В процессе разработки может понадобиться подавить некоторые конфликты, выявленные в ходе проверки. Например, можно подавлять ошибки, над которыми уже ведется работа, а также ошибки, не имеющие отношения к конкретному сценарию. При подавлении ошибки рекомендуется фиксировать рабочий элемент в журнале в [!INCLUDE[esprfound](../includes/esprfound-md.md)].
 
 > [!WARNING]
@@ -149,19 +149,19 @@ ms.locfileid: "72659379"
 
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Создание рабочего элемента для ошибки проверки
 
-- В окне **Список ошибок** щелкните ошибку правой кнопкой мыши, наведите указатель на пункт **создать рабочий элемент**, а затем выберите тип рабочего элемента, который требуется создать.
+- In the **Error List** window, right-click the error, point to **Create Work Item**, and then click the type of work item that you want to create.
 
-  Используйте эти задачи для управления ошибками проверки в окне **Список ошибок** :
+  Use these tasks to manage validation errors in the **Error List** window:
 
-|**Задача**|**Выполните следующие действия**|
+|**Задача**|**Follow these steps**|
 |------------|----------------------------|
-|Подавить выбранные ошибки во время проверки|Щелкните правой кнопкой мыши одну или несколько выбранных ошибок, наведите указатель на пункт **Управление ошибками проверки**, а затем выберите пункт **подавлять ошибки**.<br /><br /> Отобразятся подавленные ошибки с форматированием в виде зачеркивания. При выполнении проверки в следующий раз эти ошибки отображаться не будут.<br /><br /> Подавленные ошибки отслеживаются в SUPPRESSIONS-файле, относящемся к соответствующему файлу схемы слоев.|
-|Остановить подавление выбранных ошибок|Щелкните правой кнопкой мыши выбранную подавленную ошибку или ошибки, наведите указатель на пункт **Управление ошибками проверки**и выберите команду **отменить подавление ошибок**.<br /><br /> При выполнении проверки в следующий раз выбранные подавленные ошибки будут отображаться.|
-|Восстановление всех подавленных ошибок в окне **Список ошибок**|Щелкните правой кнопкой мыши в любом месте окна **Список ошибок** , наведите указатель на пункт **Управление ошибками проверки**и выберите команду **отобразить все подавленные ошибки**.|
-|Скрыть все подавленные ошибки в окне **Список ошибок**|Щелкните правой кнопкой мыши в любом месте окна **Список ошибок** , наведите указатель на пункт **Управление ошибками проверки**, а затем выберите команду **Скрыть все подавленные ошибки**.|
+|Подавить выбранные ошибки во время проверки|Right-click the one or multiple selected errors, point to **Manage Validation Errors**, and then click **Suppress Errors**.<br /><br /> Отобразятся подавленные ошибки с форматированием в виде зачеркивания. При выполнении проверки в следующий раз эти ошибки отображаться не будут.<br /><br /> Подавленные ошибки отслеживаются в SUPPRESSIONS-файле, относящемся к соответствующему файлу схемы слоев.|
+|Остановить подавление выбранных ошибок|Right-click the selected suppressed error or errors, point to **Manage Validation Errors**, and then click **Stop Suppressing Errors**.<br /><br /> При выполнении проверки в следующий раз выбранные подавленные ошибки будут отображаться.|
+|Restore all suppressed errors in the **Error List** window|Right-click anywhere in the **Error List** window, point to **Manage Validation Errors**, and then click **Show All Suppressed Errors**.|
+|Hide all suppressed errors from the **Error List** window|Right-click anywhere in the **Error List** window, point to **Manage Validation Errors**, and then click **Hide All Suppressed Errors**.|
 
-## <a name="ValidateAuto"></a>Автоматически проверять код
- Проверку слоев можно выполнять при каждом выполнении локальной сборки. Если команда использует Team Foundation Build, можно выполнить проверку слоев с записью с проверкой изменений, которые можно задать путем создания пользовательской задачи MSBuild, и использовать отчеты по сборке для сбора ошибок проверки. Сведения о создании сборок с условным возвратом см. [в разделе Использование процесса сборки с условным возвратом для проверки изменений](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+## <a name="ValidateAuto"></a> Validate code automatically
+ Проверку слоев можно выполнять при каждом выполнении локальной сборки. Если команда использует Team Foundation Build, можно выполнить проверку слоев с записью с проверкой изменений, которые можно задать путем создания пользовательской задачи MSBuild, и использовать отчеты по сборке для сбора ошибок проверки. To create gated check-in builds, see [Use a gated check-in build process to validate changes](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Автоматическая проверка кода во время локальной сборки
 
@@ -173,48 +173,48 @@ ms.locfileid: "72659379"
 
  \- или -
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши проект моделирования, содержащий схему слоев или схемы, и выберите пункт **свойства**.
+1. In **Solution Explorer**, right-click the modeling project that contains the layer diagram or diagrams, and then click **Properties**.
 
-2. В окне **Свойства** задайте для свойства **Проверить архитектуру** проекта моделирования **значение true**.
+2. In the **Properties** window, set the modeling project's **Validate Architecture** property to **True**.
 
     Это позволяет включить проект моделирования в процесс проверки.
 
-3. В **Обозреватель решений**щелкните файл схемы слоев (. LAYERDIAGRAM), который нужно использовать для проверки.
+3. In **Solution Explorer**, click the layer diagram (.layerdiagram) file that you want to use for validation.
 
-4. В окне **Свойства** убедитесь, что для свойства **действие построения** схемы задано значение **Проверка**.
+4. In the **Properties** window, make sure that the diagram's **Build Action** property is set to **Validate**.
 
     Это позволяет включить схему слоев в процесс проверки.
 
-   Сведения об управлении ошибками в окне Список ошибок см. в разделе [Управление ошибками проверки](#ManageErrors).
+   To manage errors in the Error List window, see [Manage Validation Errors](#ManageErrors).
 
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Автоматическая проверка кода во время выполнения Team Foundation Build
 
-1. В **Team Explorer**дважды щелкните определение сборки, а затем нажмите кнопку **обработать**.
+1. In **Team Explorer**, double-click the build definition, and then click **Process**.
 
-2. В разделе **Параметры процесса сборки**разверните узел **Компиляция**и введите в параметре **Аргументы MSBuild** следующую команду:
+2. Under **Build process parameters**, expand **Compilation**, and type the following in the **MSBuild Arguments** parameter:
 
     `/p:ValidateArchitecture=true`
 
-   Дополнительные сведения об ошибках проверки см. в разделе [изучение и устранение ошибок проверки слоев](#UnderstandingValidationErrors). Дополнительные сведения о [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] см. в разделах:
+   For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors). Дополнительные сведения о [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] см. в разделах:
 
 - [Сборка приложения](/azure/devops/pipelines/index)
 
-- [Использование шаблона по умолчанию для процесса сборки](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
+- [Use the Default Template for your build process](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
-- [Изменение устаревшей сборки, основанной на Упградетемплате. XAML](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
+- [Modify a Legacy Build that is Based on UpgradeTemplate.xaml](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
 
 - [Настройка шаблона процесса сборки](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-- [Отслеживание хода выполнения выполняющейся сборки](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+- [Monitor Progress of a Running Build](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
-## <a name="TroubleshootingValidation"></a>Устранение проблем при проверке слоев
- Следующая таблица описывает проблемы проверки слоев и способы их устранения. Эти проблемы отличаются от ошибок, возникающих из-за несоответствия между кодом и структурой. Дополнительные сведения об этих ошибках см. в разделе [изучение и устранение ошибок проверки слоев](#UnderstandingValidationErrors).
+## <a name="TroubleshootingValidation"></a> Troubleshoot layer validation issues
+ Следующая таблица описывает проблемы проверки слоев и способы их устранения. Эти проблемы отличаются от ошибок, возникающих из-за несоответствия между кодом и структурой. For more information about these errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
 
-|**Проблема**|**Возможная причина**|**Решение**|
+|**Проблема**|**Possible Cause**|**Решение**|
 |---------------|------------------------|--------------------|
 |Ошибки проверки не возникают так, как это ожидается.|Проверка не работает на схемах слоев, которые скопированы из других схем слоев в обозревателе решений и находятся в том же проекте моделирования. Скопированные таким образом схемы слоев содержат те же ссылки, что и исходная схема слоев.|Добавьте новую схему слоев в проект моделирования.<br /><br /> Скопируйте элементы из исходной схемы слоев в новую схему.|
 
-## <a name="UnderstandingValidationErrors"></a>Основные сведения и разрешение ошибок проверки слоев
+## <a name="UnderstandingValidationErrors"></a> Understanding and Resolving Layer Validation Errors
  При проверке кода с помощью схемы слоев будут происходить ошибки проверки, если код конфликтует со структурой. Например, ошибки проверки могут происходить по следующим причинам:
 
 - Артефакт назначен неправильному слою. В этом случае следует переместить артефакт.
@@ -227,18 +227,18 @@ ms.locfileid: "72659379"
 
 |**Синтаксис**|**Описание**|
 |----------------|---------------------|
-|*Артифактн*(*артифакттипен*)|*Артифактн* — это артефакт, связанный с слоем на схеме слоев.<br /><br /> *Артифакттипен* — это тип *Артифактн*, например **класс** или **метод**, например:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
-|*намеспаценамен*|Имя пространства имен.|
-|*лайернамен*|Название слоя на диаграмме слоев.|
-|*депенденцитипе*|Тип отношения зависимости между *Артефакт1* и *Артефакт2*. Например, метод *Артефакт1* имеет связь с *Артефакт2*.|
+|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* is an artifact that is associated with a layer on the layer diagram.<br /><br /> *ArtifactTypeN* is the type of *ArtifactN*, such as a **Class** or **Method**, for example:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*NamespaceNameN*|Имя пространства имен.|
+|*LayerNameN*|Название слоя на диаграмме слоев.|
+|*DependencyType*|The type of dependency relationship between *Artifact1* and *Artifact2*. For example, *Artifact1* has a **Calls** relationship with *Artifact2*.|
 
-|**Синтаксис ошибки**|**Описание ошибки**|
+|**Error Syntax**|**Error Description**|
 |----------------------|---------------------------|
-|AV0001: Недопустимая зависимость: *Артефакт1*(*ArtifactType1*) — > *Артефакт2*(*ArtifactType2*)<br /><br /> Слои: *LayerName1*, *LayerName2* &#124; зависимостей: *депенденцитипе*|Для функции *Артефакт1* в *LayerName1* не должно быть зависимости от *Артефакт2* в *LayerName2* , так как *LayerName1* не имеет прямой зависимости от *LayerName2*.|
-|AV1001: Недопустимое пространство имен: *артефакт*<br /><br /> Слой: требуемое пространство имен для *Имя_слоя* &#124; : *NamespaceName1* &#124; текущее пространство имен: *NamespaceName2*|Для *Имя_слоя* необходимо, чтобы связанные с ним артефакты принадлежали *NamespaceName1*. *Артефакт* находится в *NamespaceName2*, а не *NamespaceName1*.|
-|AV1002: зависит от запрещенного пространства имен: *Артефакт1*(*ArtifactType1*) &#124; *Артефакт2*(*ArtifactType2*)<br /><br /> Слой: &#124; недоступное пространство имен для недоступного уровня:, &#124; зависимости: *депенденцитипе*|Для *Имя_слоя* необходимо, чтобы связанные с ним артефакты не зависели *от самого себя.* В системе *Артефакт1* не может зависеть от *Артефакт2* , поскольку *Артефакт2* находится в некотором *ходе.*|
-|AV1003: в запрещенном пространстве имен: *артефакт*(*ArtifactType*)<br /><br /> Слой: недоступное пространство имен для *Имя_слоя* &#124; .|Для *Имя_слоя* требуется, чтобы *связанные с ним*артефакты не применялись к этому. *Артефакт* принадлежит к *«самое*самое».|
-|AV3001: отсутствует ссылка: слой "*Имя_слоя*" ссылается на "*артефакт*", который не удается найти. Отсутствует ссылка на сборку?|*Имя_слоя* связываются с артефактом, который не удается найти. Например, связь с классом может отсутствовать из-за отсутствия в проекте моделирования ссылки на сборку, содержащую этот класс.|
+|AV0001: Invalid Dependency: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Layers: *LayerName1*, *LayerName2* &#124; Dependencies: *DependencyType*|*Artifact1* in *LayerName1* should not have a dependency on *Artifact2* in *LayerName2* because *LayerName1* does not have a direct dependency on *LayerName2*.|
+|AV1001: Invalid Namespace: *Artifact*<br /><br /> Layer: *LayerName* &#124; Required Namespace: *NamespaceName1* &#124; Current Namespace: *NamespaceName2*|*LayerName* requires that its associated artifacts must belong to *NamespaceName1*. *Artifact* is in *NamespaceName2*, not *NamespaceName1*.|
+|AV1002: Depends on Forbidden Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Layer: *LayerName* &#124; Forbidden Namespace: *NamespaceName* &#124; Dependencies: *DependencyType*|*LayerName* requires that its associated artifacts must not depend on *NamespaceName*. *Artifact1* cannot depend on *Artifact2* because *Artifact2* is in *NamespaceName*.|
+|AV1003: In Forbidden Namespace: *Artifact*(*ArtifactType*)<br /><br /> Layer: *LayerName* &#124; Forbidden Namespace: *NamespaceName*|*LayerName* requires that its associated artifacts cannot belong to *NamespaceName*. *Artifact* belongs to *NamespaceName*.|
+|AV3001: Missing Link: Layer '*LayerName*' links to '*Artifact*' which cannot be found. Отсутствует ссылка на сборку?|*LayerName* links to an artifact that cannot be found. Например, связь с классом может отсутствовать из-за отсутствия в проекте моделирования ссылки на сборку, содержащую этот класс.|
 |AV9001: при проверке архитектуры обнаружены внутренние ошибки. Результат может быть неполным. Для получения дополнительных сведений см. подробный журнал событий построения или окно вывода.|Для получения дополнительных сведений см. журнал событий сборки или окно вывода.|
 
 ## <a name="security"></a>Безопасность

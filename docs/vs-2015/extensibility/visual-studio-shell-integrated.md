@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Shell (интегрированной) | Документация Майкрософт
+title: Visual Studio Shell (Integrated) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,62 +11,62 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 78ccba3ab8c2dda531614fa791eac3100813840a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690931"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299700"
 ---
-# <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (интегрированной)
+# <a name="visual-studio-shell-integrated"></a>Оболочка Visual Studio (интегрированная)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Интегрированная оболочка Visual Studio включает в себя интегрированной среды разработки (IDE), отладчик и интеграция системы управления версиями. Язык программирования, не включается. Тем не менее интегрированная оболочка предоставляет платформу, можно добавить языки программирования.  
+The Visual Studio integrated shell includes the integrated development environment (IDE), debugger, and source control integration. No programming language is included. However, the integrated shell does provide a framework that allows you to add programming languages.  
   
- Интегрированная оболочка Visual Studio фактически представляет собой соединение изолированная оболочка Visual Studio, а также дополнительные установки, который включения определенных компонентов интегрированной оболочки.  Интегрированная оболочка приложения должен включать оба изолированной оболочки распространяемого пакета из [распространяемый пакет Microsoft Visual Studio Shell (изолированная)](http://go.microsoft.com/fwlink/?LinkId=616022) а также распространяемый пакет интегрированная оболочка из [(интегрированной) распространяемый пакет оболочки Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=616021).  
+ The Visual Studio integrated shell is actually a combination of the Visual Studio isolated shell plus an additional install which include integrated shell specific components.  Your integrated shell application should include both the isolated shell redistributable package from [Microsoft Visual Studio Shell (Isolated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616022) as well as the integrated shell redistributable package from [Microsoft Visual Studio Shell (Integrated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
-> Для доступа к изолированной и интегрированной оболочек распространяемые пакеты, вам будет предложено заполнить краткую анкету клиента.  После заполнения анкеты вы будете перенаправлены на страницу со ссылками на распространяемые пакеты Visual Studio Connect.  Вы найдете ссылки для загрузки при последующих посещениях сайта Visual Studio Connect согласно **программы &#124; 2015 ИНТЕГРИРОВАННАЯ ОБОЛОЧКА VISUAL STUDIO и ИЗОЛИРОВАННОЙ** вкладки.  
+> Before you can access the isolated and integrated shell redistributable packages, you will be asked to fill out a brief customer survey.  After filling out the survey, you’ll be directed to a Visual Studio Connect page with redistributable package download links.  You can find the download links on subsequent visits to the Visual Studio Connect site under the **PROGRAMS &#124; VISUAL STUDIO 2015 INTEGRATED AND ISOLATED SHELL** tab.  
   
- При установке приложения интегрированной оболочки на компьютере полную версию Visual Studio, компоненты приложения будет интегрирована непосредственно в Visual Studio.  
+ If you install your integrated shell application on the same computer as a full version of Visual Studio, your application’s components will be integrated directly into Visual Studio.  
   
-## <a name="features-in-the-integrated-shell"></a>Возможности в интегрированной оболочке  
+## <a name="features-in-the-integrated-shell"></a>Features in the Integrated Shell  
   
 |||  
 |-|-|  
-|Область функции|Функция|  
-|Языковая поддержка|-None|  
-|IDE|<ul><li>Параметры<br /><br /> <ul><li>Создание параметров</li><li>Импорт и экспорт параметров</li><li>Сброс параметров</li></ul></li><li>**Панель элементов** интеграции</li><li>**Список задач** интеграции</li><li>Интеграция справки</li><li>**Параметры** диалоговое окно</li><li>Шрифты и цвета управления</li><li>**Выходные данные** окно</li><li>**Команда** окно</li><li>Управление окнами</li><li>Команды, меню и сочетания клавиш</li><li>Среда выполнения доменный язык (DSL)</li></ul>|  
-|Система проектов и типы проектов|-Решения и папки решения<br />-Диспетчер конфигурации решения<br />-Элемент управления<br />-Один проект и многопроектных решений<br />-Конструктор приложений (свойства упрощенный проекта)<br />— Добавить веб-ссылку<br />— Добавление ссылки на службу<br />Один проект<br />— Типы проектов веб-сайта<br />-Проекты веб приложений|  
-|Построить|-Настраиваемые этапы построения в интегрированной среде разработки<br />-Предварительной компиляции для защиты интеллектуальной собственности (IP)<br />-Подписывание кода<br />     MSBuild|  
-|Редактор|-Код обозревателей (единый поиск, определение источника, наследования)<br />-Навигация по коду<br />— IntelliSense<br />-Смарт-тегов<br />-Refactoring<br />-Красивое<br />-Фильтрация IntelliSense<br />-   **Код определения** окно|  
-|Designer|— Windows Presentation Foundation конструктора<br />-Windows Forms Designer<br />-Веб-конструктор и редактор HTML|  
-|Данные|-   **Обозреватель серверов** (упрощенное письмо: только данные). См. примечание 1.<br />-   **Источники данных** окно<br />-Полный набор элементов данных<br />-XML редактор<br />— Привязка данных локальный источник данных (. MDF-ФАЙЛОМ или. MDB)<br />-Данные привязки к объекту<br />— Привязка данных веб-службе<br />— Привязка данных на локальном сервере баз данных<br />— Привязка данных удаленным сервером баз данных<br />-DDL средства для удаленных данных<br />-   **Обозреватель серверов** расширяемости ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] образцы)|  
-|Отладчик|-Локальной отладки. См. Примечание 2.<br />-Отладки управляемого кода<br />-Локальная отладка<br />-Присоединения локального процесса<br />— Присоединение к процессу удаленного<br />-Анонимный делегат<br />-Домены приложений<br />-ASPX отладки<br />-Атрибуты<br />-Прервать выполнение Func eval<br />-Точки останова<br />-Точка останова ограничения<br />-Стек вызовов<br />-   **Команда** окно<br />-Отладка между потоками<br />-Советы данных<br />-Визуализатор данных<br />-Поддержка отладчика для управляемых помощников по отладке (MDA)<br />-Поддержка отладчика метод передачи типа<br />-Поддержка DTEEvents инициирует событие OTB<br />-JMC несопоставимого<br />-Тест AppID отладчика (DBGCLR)<br />-Профиль отладчик<br />-Отладчика средств и параметров<br />-Отладка итератора<br />-Вычисление выражений разработки<br />— Средство оценки выражений C#<br />-Дизассемблированный код<br />-Изменить и продолжить<br />-Выражение средство оценки windows (Контрольные значения "Локальные", "Видимые")<br />-Помощник по исправлению ошибок<br />-Исключения<br />-Выполнение<br />– Универсальные шаблоны<br />— Получение исходного кода<br />-Отладка HPC-кластера<br />-В Интегрированная отладка Многоязычная версия<br />-Отладка взаимодействия<br />-Отладка just-in-time<br />-Локальная отладка<br />-Отладки управляемого кода<br />-Ручное управление (окно процессов)<br />-Памяти<br />-Поддержка минидампа<br />-Modules<br />-Отладка нескольких процессов<br />-Отладка машинного кода<br />-Новую поддержку ядра отладки<br />-Отладка оптимизированного кода<br />-Фильтрации windows output<br />-Обработка размещения для отладки управляемого кода<br />-Процессов<br />— "Быстрая проверка"<br />— Регистрация<br />-Регистров в стек<br />— Удаленная отладка<br />-Возвращаемые значения<br />-Отладка скриптов<br />-Поддержка службы источника<br />-Безопасность<br />Side-by-side<br />-SQL<br />-Сервер символов<br />-Точки трассировки<br />-Потока<br />-Визуализаций<br />Отладчик. расширяемые таблицы стилей языковых преобразований (XSLT)|  
-|Поддержка 64-разрядных|— 64-разрядная отладка для управляемого и машинного кода, все языки<br />-поддерживает собственный x64|  
-|Системы управления исходным кодом (SCC)|— Базовая интеграция SCC. См. Примечание 3.<br />-Средства и параметры проверки|  
-|Расширение среды|-Использование компонентов, пакеты VSPackage и MEF|  
+|Область функции|Возможность|  
+|Языковая поддержка|-   None|  
+|IDE|<ul><li>Параметры<br /><br /> <ul><li>Create settings</li><li>Import and export settings</li><li>Сброс параметров</li></ul></li><li>**Toolbox** integration</li><li>**Task List** integration</li><li>Help integration</li><li>**Options** dialog box</li><li>Fonts and colors management</li><li>**Output** window</li><li>**Command** window</li><li>Управление окнами</li><li>Commands, menus, and key bindings</li><li>Domain-specific language (DSL) runtime</li></ul>|  
+|Project System and Project Types|-   Solutions and solution folders<br />-   Solution configuration manager<br />-   Item management<br />-   Single-project and multi-project solutions<br />-   Application Designer (simplified project properties)<br />-   Add Web Reference<br />-   Add Service Reference<br />-   Single-project<br />-   Web site project types<br />-   Web application projects|  
+|Построить|-   Custom build steps in IDE<br />-   Pre-compilation for intellectual property (IP) protection<br />-   Code signing<br />     MSBuild|  
+|Редактор|-   Code browsing tools (unified find, source definition, inheritance)<br />-   Code navigation<br />-   IntelliSense<br />-   SmartTags<br />-   Refactoring<br />-   Pretty listing<br />-   IntelliSense filtering<br />-   **Code Definition** window|  
+|Designer|-   Windows Presentation Foundation Designer<br />-   Windows Forms Designer<br />-   Web Designer and HTML Editor|  
+|Data|-   **Server Explorer** (Simplified: data only). См. примечание 1.<br />-   **Data Sources** window<br />-   Full set of data controls<br />-   XML Editor<br />-   Data bind to local data source (.MDF or .MDB)<br />-   Data bind to object<br />-   Data bind to Web service<br />-   Data bind to local database server<br />-   Data bind to remote database server<br />-   DDL tools for remote data<br />-   **Server Explorer** extensibility ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] samples)|  
+|Отладчик|-   Local debugging. See Note 2.<br />-   Managed debugging<br />-   Local debugging<br />-   Attach to local process<br />-   Attach to remote process<br />-   Anonymous delegate<br />-   Application domains<br />-   ASPX Debugging<br />-   Attributes<br />-   Break during Func-eval<br />-   Breakpoints<br />-   Breakpoint constraints<br />-   Callstack<br />-   **Command** window<br />-   Cross-thread debugging<br />-   Data Tips<br />-   Data visualizer<br />-   Debugger support for managed debugging assistants (MDAs)<br />-   Debugger support for type forwarder<br />-   DTEEvents support for OTB<br />-   JMC Stepper<br />-   Debugger AppID test (DBGCLR)<br />-   Debugger profile<br />-   Debugger tools and options<br />-   Debugging iterator<br />-   Design-time expression evaluation<br />-   C# Expression Evaluator<br />-   Disassembly<br />-   Edit and Continue<br />-   Expression evaluator windows (Watch, Locals, Autos)<br />-   Exception Helper<br />-   Exceptions<br />-   Execution<br />– Универсальные шаблоны<br />-   Getting right source<br />-   HPC/Cluster debugging<br />-   Integrated multi-language debugging<br />-   InterOp debugging<br />-   Just-in-time debugging<br />-   Local debugging<br />-   Managed debugging<br />-   Manual control (Processes window)<br />-   Memory<br />-   MiniDump support<br />-   Modules<br />-   Multi-process debugging<br />-   Native debugging<br />-   New debug engine support<br />-   Optimized code debugging<br />-   Output windows filtering<br />-   Process hosting for managed debugging<br />-   Processes<br />-   Quickwatch<br />-   Registers<br />-   Registers in stack<br />-   Remote debugging<br />-   Return values<br />-   Script debugging<br />-   Source service support<br />-   Security<br />-   Side-by-side<br />-   SQL<br />-   Symbol server<br />-   Trace points<br />-   Thread<br />-   Visualizations<br />-   Extensible Stylesheet Language Transformations (XSLT) debugger|  
+|64-bit Support|-   64-bit debugging for both managed and native code, all languages<br />-   x64 native support|  
+|Source Code Control (SCC)|-   Basic SCC integration. See Note 3.<br />-   Tools and options verification|  
+|Расширение среды|-   Consume VSPackages and MEF components|  
   
 ## <a name="notes"></a>Примечания  
   
 #### <a name="1-data-tools"></a>1. Data Tools  
- Интегрированная оболочка включает средства разработки базы данных, таких как поддержка расширяемости данных и упрощенный интерфейс **обозревателе решений**. Тем не менее SQL Server Express, SQL Reporting и Crystal Reports не включаются в интегрированной оболочке.  
+ The integrated shell includes database development tools such as data extensibility support and the simplified **Solution Explorer**. However, SQL Server Express, SQL Reporting, and Crystal Reports are not included in the integrated shell.  
   
-#### <a name="2-debugging-support"></a>2. Поддержка отладки  
- Интегрированная оболочка содержит такое же ядро отладки, включенный в версию сообщества Visual Studio. Ядро отладки содержат распространенные отладчик для управляемого кода, а также связанные функции, такие, как запустить, Attach, установить точку останова, изменить и продолжить и другие. Тем не менее ядро отладки не поддерживает отладку базы данных SQL Server.  
+#### <a name="2-debugging-support"></a>2. Debugging Support  
+ The integrated shell includes the same debugging engine that is included in the Community version of Visual Studio. The debugging engine includes the common debugger for managed code, and also related features, such as Run, Attach, Set Breakpoint, Edit and Continue, and others. However, the debugging engine does not support SQL Server database debugging.  
   
- Хотя поддержка для отладка машинного кода включен в пакет основных отладчика, его нельзя расширить для поддержки дополнительных языков.  
+ Although support for native debugging is included in the basic debugger package, you cannot extend it to support additional languages.  
   
-#### <a name="3-source-code-control-integration"></a>3. Интеграция контроля исходного кода  
- Интегрированная оболочка предоставляет интерфейсы API для реализации управления исходным кодом (SCC), а также для предоставления компоненты интеграции на базе MSSCCI распространенных системы управления версиями.  
+#### <a name="3-source-code-control-integration"></a>3. Source Code Control Integration  
+ The integrated shell provides APIs for implementing source-code control (SCC) and for providing the MSSCCI-based common source control integration components.  
   
- Несмотря на то, что интеграция SCC не регулярным разделом профессионального выпуска Visual Studio, интеграция SCC предоставляется в интегрированной оболочке.  
+ Although SCC integration is not a regular feature of the Pro edition of Visual Studio, SCC integration is provided in the integrated shell.  
   
-#### <a name="4-build-support"></a>4. Поддержка сборки  
- Интегрированная оболочка обеспечивает поддержку построения. Сведения о сборках в [Справочник по MSBuild](../msbuild/msbuild-reference.md).  
+#### <a name="4-build-support"></a>4. Build Support  
+ The integrated shell provides build support. You can find information about builds in the [MSBuild Reference](../msbuild/msbuild-reference.md).  
   
-## <a name="features-not-included-in-the-integrated-shell"></a>Функции, не включенные в интегрированной оболочке  
- Ниже приведен список компонентов, которые не включены в интегрированной оболочке:  
+## <a name="features-not-included-in-the-integrated-shell"></a>Features Not Included in the Integrated Shell  
+ The following is a list of features that are not included in the integrated shell:  
   
 - Конструктор классов  
   
@@ -76,7 +76,7 @@ ms.locfileid: "65690931"
   
 - VSHost  
   
-- Никакие языки Visual Studio, или их шаблоны связанного проекта или шаблонов элементов проекта, включаются в интегрированной оболочке. Для примеров фрагментов кода Visual Basic включены не зависящие от языка реализации других компонентов.  
+- No Visual Studio languages or their associated project templates or project item templates, are included in the integrated shell. No language-specific implementations of other features are included, for example Visual Basic code snippets.  
   
-## <a name="see-also"></a>См. также  
- [Обзор расширения Visual Studio](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+## <a name="see-also"></a>См. также раздел  
+ [Extending Visual Studio Overview](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

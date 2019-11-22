@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551004"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300592"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Начало работы с PTVS. Создание веб-сайта в Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "62551004"
   
  Эти инструкции можно просмотреть в очень коротком [видеоролике в Youtube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
- Откройте диалоговое окно "Новый проект" и в списке проектов Python выберите веб-проект Bottle.  Шаблон [Bottle](http://bottlepy.org/docs/dev/index.html) — это начальный сайт на основе [платформы Bootstrap](http://getbootstrap.com/).  При создании проекта Visual Studio предложит вам установить зависимости (в данном случае Bottle) в виртуальной среде.  Поскольку развертывание выполняется на веб-сайте Azure, необходимо добавить зависимости в виртуальную среду для развертывания необходимых элементов для работы веб-сайта.  Возможно, вам потребуется выбрать в качестве основы среды 32-разрядную версию Python 2.7 или 3.4.  После создания проекта нажмите клавишу F5 для локального запуска веб-сайта.  
+ Откройте диалоговое окно "Новый проект" и в списке проектов Python выберите веб-проект Bottle.  Шаблон [Bottle](http://bottlepy.org/docs/dev/index.html) — это начальный сайт на основе [платформы Bootstrap](https://getbootstrap.com/).  При создании проекта Visual Studio предложит вам установить зависимости (в данном случае Bottle) в виртуальной среде.  Поскольку развертывание выполняется на веб-сайте Azure, необходимо добавить зависимости в виртуальную среду для развертывания необходимых элементов для работы веб-сайта.  Возможно, вам потребуется выбрать в качестве основы среды 32-разрядную версию Python 2.7 или 3.4.  После создания проекта нажмите клавишу F5 для локального запуска веб-сайта.  
   
  Протестировать работу сайта можно в Azure.  Если у вас нет подписки Azure, воспользуйтесь пробной версией на странице [try.azurewebsites.net](https://trywebsites.azurewebsites.net/).  Этот сайт обеспечивает простой способ проверки веб-сайтов Azure в течение часа за раз. Для доступа требуется только имя для входа социальных сетей.  Кредитная карта не требуется.  Выберите шаблон пустого сайта в раскрывающемся списке «Изменить язык» и щелкните «Создать».  В разделе «Работа с веб-приложением» выберите «Загрузить профиль публикации» и сохраните файл для использования с Visual Studio.  Кроме того, развертывание можно выполнить с помощью Git из любой операционной системы.  
   
@@ -33,6 +33,6 @@ ms.locfileid: "62551004"
   
  Эти инструкции можно просмотреть в очень коротком [видеоролике в Youtube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Документация на вики-сайте](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [Видеоролики по началу работы и углубленному рассмотрению PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

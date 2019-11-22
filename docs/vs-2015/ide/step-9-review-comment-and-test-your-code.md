@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7fc6f29246f90c47a4c59a5ae6bb1999ceac72bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646906"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299960"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Шаг 9. Проверка, комментирование и тестирование кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ ms.locfileid: "72646906"
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Операторы это то, что указывает программам выполнять действия. В Visual C# оператор всегда заканчивается точкой с запятой. В Visual Basic конец строки это конец оператора. (В Visual Basic не требуется точка с запятой.) Приведенная выше инструкция указывает элементу управления `PictureBox` загрузить файл, выбранный пользователем с компонентом **OpenFileDialog** .
+   Операторы это то, что указывает программам выполнять действия. В Visual C# оператор всегда заканчивается точкой с запятой. В Visual Basic конец строки это конец оператора. (No semicolon is needed in Visual Basic.) The preceding statement tells your `PictureBox` control to load the file that the user selected with the **OpenFileDialog** component.
 
-  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 5](http://go.microsoft.com/fwlink/?LinkId=205206). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-add-comments"></a>Добавление комментариев
 
@@ -66,13 +66,13 @@ ms.locfileid: "72646906"
 
 2. Перед выполнением программы сохраните программу, нажав на панели инструментов показанную ниже кнопку **Сохранить все**.
 
-     ![Кнопка "сохранить все" на панели инструментов](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Кнопка "сохранить все"
+     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All button
 
      Кроме того, чтобы сохранить программу, в строке меню выберите **Файл**, **Сохранить все**. Рекомендуется выполнять сохранение от начала разработки и как можно чаще.
 
      При выполнении программа должна выглядеть, как показано на рисунке ниже.
 
-     ![Средство просмотра изображений](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Средство просмотра изображений
+     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Picture Viewer
 
 ### <a name="to-test-your-program"></a>Проверка программы
 

@@ -1,5 +1,5 @@
 ---
-title: Обработчики событий распространяют изменения за пределы модели | Документация Майкрософт
+title: Event Handlers Propagate Changes Outside the Model | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,39 +12,39 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669686"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295518"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Обработчики событий распространяют изменения за пределы модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В пакете SDK для визуализации и моделирования можно определить обработчики событий хранилища, чтобы распространить изменения на ресурсы за пределами хранилища, такие как переменные, не связанные с хранением, файлы, модели в других магазинах или другие расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Обработчики событий хранилища выполняются после окончания транзакции, в которой произошло событие, вызывающее срабатывание. Они также выполняются при выполнении операции отмены или повтора. Таким образом, в отличие от правил хранения, события хранилища наиболее полезны для обновления значений, находящихся за пределами хранилища. В отличие от событий .NET, обработчики событий хранилища регистрируются для прослушивания класса: вам не нужно регистрировать отдельный обработчик для каждого экземпляра. Дополнительные сведения о выборе между различными способами для управления изменениями см. [в разделе реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md).
+In Visualization and Modeling SDK, you can define store event handlers to propagate changes to resources outside the store, such as non-store variables, files, models in other stores, or other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions. Store event handlers are executed after the end of the transaction in which the triggering event occurred. They are also executed in an Undo or Redo operation. Therefore, unlike store rules, store events are most useful for updating values that are outside the store. Unlike .NET events, store event handlers are registered to listen to a class: you do not have to register a separate handler for each instance. For more information about how to choose between different ways to handle changes, see [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md).
 
- Графические поверхности и другие элементы управления пользовательского интерфейса — это примеры внешних ресурсов, которые могут обрабатываться событиями магазина.
+ The graphical surface and other user interface controls are examples of external resources that can be handled by store events.
 
-### <a name="to-define-a-store-event"></a>Определение события магазина
+### <a name="to-define-a-store-event"></a>To define a store event
 
-1. Выберите тип события, которое требуется отслеживать. Полный список см. в свойствах <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Каждое свойство соответствует типу события. Чаще всего используются следующие типы событий:
+1. Choose the type of event that you want to monitor. For a full list, look at the properties of <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Each property corresponds to a type of event. The most frequently used event types are:
 
-   - `ElementAdded` — активируется при создании элемента модели, связи, фигуры или соединителя.
+   - `ElementAdded` – triggered when a model element, relationship link, shape or connector is created.
 
-   - Елементпропертичанжед — активируется при изменении значения свойства домена `Normal`. Событие активируется только в том случае, если новые и старые значения не равны. Событие не может применяться к вычисляемым и пользовательским свойствам хранилища.
+   - ElementPropertyChanged – triggered when the value of a `Normal` domain property is changed. The event is triggered only if the new and old values are not equal. The event cannot be applied to calculated and custom storage properties.
 
-        Его нельзя применить к свойствам роли, которые соответствуют связям связей. Вместо этого используйте `ElementAdded` для отслеживания доменной связи.
+        It cannot be applied to the role properties that correspond to relationship links. Instead, use `ElementAdded` to monitor the domain relationship.
 
-   - `ElementDeleted` — активируется после удаления элемента модели, связи, фигуры или соединителя. Вы по-прежнему можете получить доступ к значениям свойств элемента, но он не будет иметь связей с другими элементами.
+   - `ElementDeleted` – triggered after a model element, relationship, shape or connector has been deleted. You can still access the property values of the element, but it will have no relationships to other elements.
 
-2. Добавьте определение разделяемого класса для _йоурдсл_**DocData** в отдельный файл кода в проекте **DslPackage** .
+2. Add a partial class definition for _YourDsl_**DocData** in a separate code file in the **DslPackage** project.
 
-3. Напишите код события как метод, как показано в следующем примере. Это может быть `static`, если не требуется доступ к `DocData`.
+3. Write the code of the event as a method, as in the following example. It can be `static`, unless you want to access `DocData`.
 
-4. Переопределите `OnDocumentLoaded()`, чтобы зарегистрировать обработчик. При наличии нескольких обработчиков их можно зарегистрировать в одном месте.
+4. Override `OnDocumentLoaded()` to register the handler. If you have more than one handler, you can register them all in the same place.
 
-   Расположение регистрационного кода не является критическим. `DocView.LoadView()` является альтернативным расположением.
+   The location of the registration code is not critical. `DocView.LoadView()` is an alternative location.
 
 ```
 using System;
@@ -93,12 +93,12 @@ namespace Company.MusicLib
 
 ```
 
-## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Использование событий для внесения отменяемых корректировок в хранилище
- События хранилища обычно не используются для распространения изменений в хранилище, так как обработчик событий выполняется после фиксации транзакции. Вместо этого следует использовать правило магазина. Дополнительные сведения см. [в разделе правила распространяют изменения в модели](../modeling/rules-propagate-changes-within-the-model.md).
+## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Using Events to Make Undoable Adjustments in the Store
+ Store events are not normally used for propagating changes inside the store, because the event handler executes after the transaction is committed. Instead, you would use a store rule. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
- Однако можно использовать обработчик событий для внесения дополнительных обновлений в хранилище, если вы хотите, чтобы пользователь мог отменить дополнительные обновления отдельно от исходного события. Например, предположим, что буквы в нижнем регистре являются обычным соглашением для названий альбомов. Можно написать обработчик событий хранилища, исправляет заголовок в нижний регистр после ввода пользователем в верхнем регистре. Но пользователь может использовать команду Отменить, чтобы отменить исправление, восстановив символы верхнего регистра. Вторая операция отмены приведет к удалению изменений пользователя.
+ However, you could use an event handler to make additional updates to the store, if you want the user to be able to undo the additional updates separately from the original event. For example, suppose that lower case characters are the usual convention for album titles. You could write a store event handler that corrects the title to lower case after the user has typed it in upper case. But the user could use the Undo command to cancel your correction, restoring the upper case characters. A second Undo would remove the user’s change.
 
- Напротив, если вы написали правило хранения, чтобы сделать то же самое, изменение и исправление пользователя будут находиться в той же транзакции, чтобы пользователь не мог отменить корректировку без потери первоначального изменения.
+ By contrast, if you wrote a store rule to do the same thing, the user’s change and your correction would be in the same transaction, so that the user could not undo the adjustment without losing the original change.
 
 ```
 
@@ -164,30 +164,30 @@ private static void AlbumTitleAdjuster(object sender,
 
 ```
 
- При написании события, которое обновляет хранилище:
+ If you write an event that updates the store:
 
-- Используйте `store.InUndoRedoOrRollback`, чтобы избежать внесения изменений в элементы модели в случае отмены. Диспетчер транзакций задаст все данные в хранилище обратно в исходное состояние.
+- Use `store.InUndoRedoOrRollback` to avoid making changes to model elements in Undo. The transaction manager will set everything in the store back to its original state.
 
-- Используйте `store.InSerializationTransaction`, чтобы избежать внесения изменений во время загрузки модели из файла.
+- Use `store.InSerializationTransaction` to avoid making changes while the model is being loaded from file.
 
-- Изменения приведут к срабатыванию дальнейших событий. Убедитесь, что не существует бесконечного цикла.
+- Your changes will cause further events to be triggered. Make sure that you avoid an infinite loop.
 
-## <a name="store-event-types"></a>Хранение типов событий
- Каждый тип события соответствует коллекции в Store. Евентманажердиректори. Обработчики событий можно добавлять и удалять в любое время, но обычно они добавляются при загрузке документа.
+## <a name="store-event-types"></a>Store Event types
+ Each event type corresponds to a collection in Store.EventManagerDirectory. You can add or remove event handlers at any time, but it is usual to add them when the document is loaded.
 
-|имя свойства `EventManagerDirectory`|Выполняется, когда|
+|`EventManagerDirectory` Property name|Executed when|
 |-------------------------------------------|-------------------|
-|елементаддед|Создается экземпляр класса домена, отношения домена, фигуры, соединитель или схема.|
-|елементделетед|Элемент модели был удален из каталога элементов хранилища и больше не является источником или целевым объектом какой-либо связи. Элемент фактически не удаляется из памяти, но сохраняется в случае последующей отмены.|
-|елементевентсбегун|Вызывается в конце внешней транзакции.|
-|елементевентсендед|Вызывается, когда обрабатывались все другие события.|
-|елементмовед|Элемент модели был перемещен из одного раздела хранилища в другой.<br /><br /> Это не связано с расположением фигуры на схеме.|
-|елементпропертичанжед|Значение свойства домена изменилось. Это выполняется только в том случае, если старое и новое значения не равны.|
-|ролеплайерчанжед|Одна из двух ролей (окончаний) связи ссылается на новый элемент.|
-|ролеплайерордерчанжед|В роли с кратностью больше 1 последовательность ссылок изменилась.|
-|трансактионбегиннинг||
-|трансактионкоммиттед||
-|трансактионролледбакк||
+|ElementAdded|An instance of a domain class, domain relationship, shape, connector or diagram is created.|
+|ElementDeleted|A model element has been removed from the store’s element directory and is no longer the source or target of any relationship. The element is not actually deleted from memory, but is retained in case of a future Undo.|
+|ElementEventsBegun|Invoked at the end of an outer transaction.|
+|ElementEventsEnded|Invoked when all other events have been processed.|
+|ElementMoved|A model element has been moved from one store partition to another.<br /><br /> This is not related to the location of a shape on the diagram.|
+|ElementPropertyChanged|The value of a domain property has changed. This is executed only if the old and new values are unequal.|
+|RolePlayerChanged|One of the two roles (ends) of a relationship references a new element.|
+|RolePlayerOrderChanged|In a role with multiplicity greater than 1, the sequence of links has changed.|
+|TransactionBeginning||
+|TransactionCommitted||
+|TransactionRolledBack||
 
 ## <a name="see-also"></a>См. также раздел
- [Ответ на пример кода и распространение изменений](../modeling/responding-to-and-propagating-changes.md) [: схемы цепи](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)

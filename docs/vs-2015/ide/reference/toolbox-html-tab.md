@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3d6eafbafbf9b373028a7ba052ba9e8df62511c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661603"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297780"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ ms.locfileid: "72661603"
  Дополнительные сведения см. в разделе [Элементы управления ввода HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Декларативный синтаксис серверного элемента управления HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Практическое руководство. Установка серверного веб-элемента управления для ввода пароля](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) и [Практическое руководство. Проверка пользовательского ввода на странице веб-форм](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
-> Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](http://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](https://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Ввод (флажок)** ![параметр "Панель элементов веб-страницы HTML"](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -159,7 +159,7 @@ ms.locfileid: "72661603"
 
  Дополнительные сведения см. в статьях [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Элементы управления для ввода HTML), [Декларативный синтаксис серверного элемента управления HtmlInputHidden](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) и <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.
 
- ![Текстовая область панели инструментов HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") в **TextArea**
+ **** ![Текстовая область панели инструментов HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") в TextArea
 
  Вставляет элемент `textarea`. Можно изменить размер текстовой области или с помощью полос прокрутки просматривать текст, выходящий за пределы области отображения. Чтобы изменить отображаемый текст по умолчанию, измените атрибут `value`. По умолчанию `id="textarea1"` вставляется для первой текстовой области, `id=" textarea 2"` для второй и т. д.
 
@@ -174,7 +174,7 @@ ms.locfileid: "72661603"
 > [!IMPORTANT]
 > Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
- ![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "|::ref12::|") **таблицы**
+ **** ![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "|::ref12::|") таблицы
 
  Вставляет элемент `table`.
 
@@ -186,7 +186,7 @@ ms.locfileid: "72661603"
 
  Дополнительные сведения см. в статьях [Предыдущие версии продуктов, служб и технологий Майкрософт](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow, and TableCell Web Server Control Overview](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) (Обзор элементов управления веб-сервера Table, TableRow и TableCell), <xref:System.Web.UI.HtmlControls.HtmlTable> и <xref:System.Web.UI.WebControls.Table>.
 
- ![Элемент изображения HTML-страницы](../../ide/reference/media/vximage.gif "|::ref13::|") **изображения**
+ **** ![Элемент изображения HTML-страницы](../../ide/reference/media/vximage.gif "|::ref13::|") изображения
 
  Вставляет элемент `img`. Измените этот элемент, чтобы указать его `src` и текст `alt`.
 
@@ -224,7 +224,7 @@ ms.locfileid: "72661603"
 
  Дополнительные сведения см. в разделе [Элемент управления горизонтальной линии HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- ![Метка HTML-страницы](../../ide/reference/media/vxlabel.gif "|::ref16::|") **div**
+ **** ![Метка HTML-страницы](../../ide/reference/media/vxlabel.gif "|::ref16::|") div
 
  Вставляет элемент `div`, включающий атрибут `ms_positioning="FlowLayout"`. За исключением ширины и высоты, этот элемент аналогичен панели потокового макета. Чтобы форматировать текст, содержащийся в элементе `div`, добавьте атрибут `class="stylename"` в открывающий тег.
 

@@ -1,5 +1,5 @@
 ---
-title: Отладка кода GPU | Документация Майкрософт
+title: Debugging GPU Code | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 28ea84e4de92ae2cd3bad8b6fea4f9036fd65014
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691550"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298289"
 ---
 # <a name="debugging-gpu-code"></a>Отладка кода GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "65691550"
 - Откройте контекстное меню для своего проекта в области **Обозреватель решений** и выберите **Свойства**. В диалоговом окне **Страницы свойств** выберите **Отладка**, после чего выберите **Только GPU** в списке **Тип отладчика**.  
   
 ## <a name="launching-and-attaching-to-applications"></a>Запуск приложений и присоединение к ним  
- Для запуска и остановки отладки GPU можно использовать команды отладки Visual Studio. Дополнительные сведения см. в статье [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md). Можно также присоединить отладчик GPU к выполняющемуся процессу, но лишь при условии, что этот процесс выполняет код GPU. Дополнительные сведения см. в разделе [подключиться к процессам, под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Для запуска и остановки отладки GPU можно использовать команды отладки Visual Studio. Дополнительные сведения см. в статье [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md). Можно также присоединить отладчик GPU к выполняющемуся процессу, но лишь при условии, что этот процесс выполняет код GPU. For more information, see [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Команды "Выполнить текущий Tile до курсора" и "Выполнить до текущей позиции"  
  При отладке кода GPU существуют два варианта выполнения кода до текущего положения курсора. Команды для обоих вариантов доступны в контекстном меню редактора кода.  
   
-1. По команде **Выполнить до текущей позиции** приложение выполняется до достижения текущей позиции курсора, после чего выполнение приостанавливается. Это не означает, что текущий поток будет выполнен до позиции курсора. Инициировать приостановку выполнения может любой поток, который первым достигнет текущего положения курсора. См. в разделе [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)  
+1. По команде **Выполнить до текущей позиции** приложение выполняется до достижения текущей позиции курсора, после чего выполнение приостанавливается. Это не означает, что текущий поток будет выполнен до позиции курсора. Инициировать приостановку выполнения может любой поток, который первым достигнет текущего положения курсора. See [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md)  
   
 2. По команде **Выполнить текущий блок до курсора** приложение выполняется до тех пор, пока все потоки в текущем блоке потоков (tile) не достигнут курсора, после чего выполнение приостанавливается.  
   
 ## <a name="debugging-windows"></a>Окна отладки  
- С помощью некоторых окон отладки можно просматривать, помечать и замораживать потоки GPU. Дополнительные сведения:  
+ С помощью некоторых окон отладки можно просматривать, помечать и замораживать потоки GPU. Дополнительные сведения см. на странице  
   
 - [Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)  
   
@@ -58,31 +58,31 @@ ms.locfileid: "65691550"
   
 - [Практическое руководство. Использование окна контроля параллельных данных](../debugger/how-to-use-the-parallel-watch-window.md)  
   
-- [Отладка потоков и процессов](../debugger/debug-threads-and-processes.md) (панель инструментов "Место отладки")  
+- [Debug Threads and Processes](../debugger/debug-threads-and-processes.md) (Debug Location toolbar)  
   
-- [Практическое руководство. использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+- [Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Исключения синхронизации данных  
- Отладчик может распознавать несколько условий синхронизации данных во время выполнения. При обнаружении условия отладчик переходит в состояние приостановки выполнения. На выбор предлагаются два варианта действий: **Прервать** или **Продолжить**. В диалоговом окне **Исключения** предусмотрены параметры, с помощью которых можно указать, должен ли отладчик распознавать эти условия и при каких из этих условий он должен прерывать выполнение. Дополнительные сведения см. в разделе [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md). Можно также использовать **параметры** диалоговое окно, чтобы указать, что отладчик должен игнорировать исключения, если данные, которые записываются не изменяют значения данных. Для получения дополнительной информации см. [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
+ Отладчик может распознавать несколько условий синхронизации данных во время выполнения. При обнаружении условия отладчик переходит в состояние приостановки выполнения. На выбор предлагаются два варианта действий: **Прервать** или **Продолжить**. В диалоговом окне **Исключения** предусмотрены параметры, с помощью которых можно указать, должен ли отладчик распознавать эти условия и при каких из этих условий он должен прерывать выполнение. For more information, see [Managing Exceptions with the Debugger](../debugger/managing-exceptions-with-the-debugger.md). You can also use the **Options** dialog box to specify that the debugger should ignore exceptions if the data that's written doesn’t change the value of the data. Для получения дополнительной информации см. [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Устранение неполадок  
   
 ### <a name="specifying-an-accelerator"></a>Определение ускорителя  
- Точки останова в коде GPU распознаются, только если код выполняется на ускорителе [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Если ускоритель в коде не указывается, в свойствах проекта в качестве значения **Тип ускорителя отладки** будет автоматически выбран ускоритель REF. Если ускоритель явным образом указывается непосредственно в коде, ускоритель REF во время отладки использоваться не будет и точки останова не будут распознаваться, если только поддержка отладки не предусмотрена в самом оборудовании GPU. Выходом из этой ситуации может быть создание собственного кода, который будет использовать ускоритель REF во время отладки. Дополнительные сведения см. в разделе свойств проекта и [использование объектов accelerator и accelerator_view](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) и [параметры проекта для C++ конфигурации отладки](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Точки останова в коде GPU распознаются, только если код выполняется на ускорителе [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Если ускоритель в коде не указывается, в свойствах проекта в качестве значения **Тип ускорителя отладки** будет автоматически выбран ускоритель REF. Если ускоритель явным образом указывается непосредственно в коде, ускоритель REF во время отладки использоваться не будет и точки останова не будут распознаваться, если только поддержка отладки не предусмотрена в самом оборудовании GPU. Выходом из этой ситуации может быть создание собственного кода, который будет использовать ускоритель REF во время отладки. For more information, see project properties and [Using accelerator and accelerator_view Objects](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) and [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Условные точки останова  
  Условные точки останова в коде GPU поддерживаются, но не каждое выражение может быть вычислено на устройстве. Если выражение не может быть вычислено на устройстве, оно вычисляется в отладчике. Отладчик, вероятно, работает медленнее, чем устройство.  
   
-### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Ошибка: Существует проблема конфигурации с помощью выбранного типа акселератора отладки.  
- Эта ошибка возникает, если значения параметров проекта не соответствуют конфигурации компьютера, на котором производится отладка. Дополнительные сведения см. в разделе [параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Ошибка: Возникла проблема конфигурации с выбранным типом акселератора отладки.  
+ Эта ошибка возникает, если значения параметров проекта не соответствуют конфигурации компьютера, на котором производится отладка. For more information, see [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Ошибка: Драйвер отладки для выбранного типа акселератора отладки не установлен на целевом компьютере.  
+### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Ошибка: На целевом компьютере не установлен драйвер отладки для выбранного типа акселератора отладки.  
  Эта ошибка происходит при отладке на удаленном ПК. Пока не будет начато выполнение, отладчик не может определить, установлены ли драйверы на удаленном ПК. Драйверы предоставляются производителем видеоадаптера.  
   
-### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Ошибка: На удаленном сайте необходимо отключить время ожидания обнаружения и восстановления (TDR).  
- При выполнении вычислений C++ AMP существует вероятность превышения контрольного времени ожидания, установленного предусмотренным в Windows механизмом обнаружения и исправления зависаний (TDR). При возникновении этой ошибки вычисления прекращаются и данные утрачиваются. Дополнительные сведения см. в разделе [Обработка ошибок TDR в C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
+### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Ошибка: На удаленном сайте необходимо отключить механизм обнаружения и исправления зависания во время ожидания (TDR).  
+ При выполнении вычислений C++ AMP существует вероятность превышения контрольного времени ожидания, установленного предусмотренным в Windows механизмом обнаружения и исправления зависаний (TDR). При возникновении этой ошибки вычисления прекращаются и данные утрачиваются. Дополнительные сведения см. в разделе [Обработка ошибок TDR в C++ AMP](https://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Отладка приложения C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+## <a name="see-also"></a>См. также раздел  
+ [Walkthrough: Debugging a C++ AMP Application](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Запуск отладки GPU в Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)
+ [Запуск отладки GPU в Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=255381)

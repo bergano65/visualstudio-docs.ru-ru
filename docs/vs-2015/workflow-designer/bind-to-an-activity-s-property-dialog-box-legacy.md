@@ -1,5 +1,5 @@
 ---
-title: Диалоговое окно "&#39;привязка к свойству действия s" (устаревшая) | Документация Майкрософт
+title: Bind to an Activity&#39;s Property Dialog Box (Legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,26 +13,26 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b93f6787ef24a191385c0fd86672aa23ff72e3e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 451544a84237bc6fa4e069df9dd1e17feccf86f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659221"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301014"
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Диалоговое окно "&#39;привязка к свойству действия s" (прежние версии)
-В этом разделе описывается использование диалогового окна **Привязка к свойству действия** в устаревшей [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Bind to an Activity&#39;s Property Dialog Box (Legacy)
+This topic describes how use the **Bind to an Activity's Property** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Экземпляр с типом свойства зависимостей может быть привязан к другому открытому свойству действия или событию. Дополнительные сведения о привязке действий см. [в разделе Использование свойств зависимостей](http://go.microsoft.com/fwlink?LinkID=65007).
+ Экземпляр с типом свойства зависимостей может быть привязан к другому открытому свойству действия или событию. For more information about activity binding, see [Using Dependency Properties](https://go.microsoft.com/fwlink?LinkID=65007).
 
- Выберите свойство для привязки с помощью диалогового окна **Привязка к свойству действия** . Чтобы открыть это диалоговое окно, нажмите кнопку с многоточием **[...]** в конце текстового поля выбранного свойства в окне **свойств** или щелкните синий значок восклицательного знака рядом с именем свойства в обозревателе свойств.
+ You select a property to bind to using the **Bind to an Activity's Property** dialog box. You open this dialog box by clicking the ellipses **[…]** at the end of the selected property's text box in the **Properties** window, or by clicking the blue exclamation mark icon that appears next to the property name in the property browser.
 
- В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна **Привязка к свойству действия** .
+ The following table describes the user interface (UI) elements of the **Bind to an Activity's Property** dialog box.
 
 |Элемент пользовательского интерфейса|Описание|
 |----------------|-----------------|
-|**Привязка к существующему элементу**|На панели с представлением в виде дерева выделите член, к которому нужно выполнить привязку. На панели под представлением в виде дерева показано сообщение, которое сообщает имеет или не имеет член допустимый для привязки тип. Нажмите кнопку **ОК** , чтобы выполнить привязку к выбранному допустимому члену.|
-|**Привязка к новому элементу**|Создание свойства или поля нового члена для привязки. Введите **имя нового члена**. Выберите, следует ли создать свойство зависимости или открытое поле, выбрав **создать поле** или **создать свойство**. Нажмите кнопку **ОК** , чтобы создать новый элемент.|
+|**Bind to an existing member**|На панели с представлением в виде дерева выделите член, к которому нужно выполнить привязку. На панели под представлением в виде дерева показано сообщение, которое сообщает имеет или не имеет член допустимый для привязки тип. Click **OK** to bind to the selected valid member.|
+|**Bind to a new member**|Создание свойства или поля нового члена для привязки. Enter a **New Member Name**. Choose whether you want to create a dependency property or a public field by selecting **Create Field** or **Create Property**. Click **OK** to create the new member.|
 
 ## <a name="see-also"></a>См. также раздел
- [Использование свойств действия](http://go.microsoft.com/fwlink?LinkID=65013) [с помощью свойств зависимостей](http://go.microsoft.com/fwlink?LinkID=65007) [конструктор прежних версий для Windows Workflow Foundation справки по пользовательскому интерфейсу](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Using Activity Properties](https://go.microsoft.com/fwlink?LinkID=65013) [Using Dependency Properties](https://go.microsoft.com/fwlink?LinkID=65007) [Legacy Designer for Windows Workflow Foundation UI Help](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

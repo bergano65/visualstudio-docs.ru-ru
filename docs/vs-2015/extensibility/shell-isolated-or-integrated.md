@@ -1,5 +1,5 @@
 ---
-title: Оболочка (изолированная или интегрированная) | Документация Майкрософт
+title: Shell (Isolated or Integrated) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,48 +14,48 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d570c181125a1f94108624e6f9b1ce23bdcca25a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447219"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300483"
 ---
 # <a name="shell-isolated-or-integrated"></a>Оболочка (изолированная или интегрированная)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно создать собственные приложения на основе Visual Studio в режиме интеграции или изолированной. В режиме интеграции с дополнение к вашему приложению доступны многие функции Visual Studio. В изолированном режиме вы выбираете подмножество функций Visual Studio, которые хотите распространять вместе с собственным расширением.  
+You can create your own Visual Studio-based application in either integrated or isolated mode. In integrated mode, many Visual Studio features are available in addition to your application. In the isolated mode, you choose a subset of Visual Studio features that you wish to distribute along with your own extension.  
   
-## <a name="integrated-mode"></a>В режиме интеграции с  
- Интегрированный режим позволяет пользователям использовать стандартные возможности Visual Studio, а также пользовательские инструменты. Интегрированная оболочка предназначена главным образом для размещения языков программирования и средств разработки программного обеспечения.  
+## <a name="integrated-mode"></a>Integrated Mode  
+ Integrated mode enables your users to use standard Visual Studio features along with your custom tools. The integrated shell is intended primarily for hosting programming languages and software development tools.  
   
- Пользовательские инструменты, которые создаются автоматически на основе интегрированной оболочки слияние с любой другой выпуск Visual Studio, установленной на том же компьютере. Если Visual Studio не установлена, можно предоставить распространяемую версию интегрированная оболочка Visual Studio.  
+ Custom tools that are built on the integrated shell automatically merge with any other edition of Visual Studio that is installed on the same computer. You can provide a redistributable version of the Visual Studio integrated shell if Visual Studio is not already installed.  
   
- Распространяемая версия интегрированная оболочка Visual Studio не включает языками программирования и функций, которые поддерживают соответствующие им системы проектирования.  
+ The redistributable version of the Visual Studio integrated shell does not include programming languages and the features that support their respective project systems.  
   
 > [!NOTE]
-> Режим интегрированной оболочки Visual Studio можно установить вместе с всех выпусков Visual Studio кроме экспресс-выпусков.  
+> The Visual Studio shell integrated mode can be installed together with all editions of Visual Studio except the Express editions.  
   
- Дополнительные сведения см. в разделе [оболочки Visual Studio (интегрированная)](../extensibility/visual-studio-shell-integrated.md).  
+ For more information, see [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md).  
   
-## <a name="isolated-mode"></a>Изолированный режим  
- Изолированный режим позволяет создавать пользовательские средства, которые запущены side-by-side с другими версиями Visual Studio. Она предназначена главным образом для средств, которые могут обращаться к службам Visual Studio без зависимости от того, все стандартные функции Visual Studio. Можно настроить внешний вид приложения, построенные на изолированная оболочка Visual Studio. Можно легко отключить функции и группы команд меню, которые не будут отображаться вместе с приложением.  
+## <a name="isolated-mode"></a>Isolated Mode  
+ Isolated mode allows you to create custom tools that run side-by-side with other versions of Visual Studio. It is intended primarily for tools that can access Visual Studio services without depending on all the standard Visual Studio features. You can customize the appearance of applications built on the Visual Studio isolated shell. You can easily turn off the features and menu command groups that you do not wish to appear together with your application.  
   
- Дополнительные сведения см. в разделе [изолированной оболочки Visual Studio](../extensibility/visual-studio-isolated-shell.md).  
+ For more information, see [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md).  
   
-## <a name="distributing-your-integrated-or-isolated-shell-application"></a>Распространение приложения интегрированной или изолированной оболочки  
- Для распространения приложения интегрированной или изолированной оболочки, необходимо включить в приложение, специальные встроенной или изолированной оболочки распространяемый пакет и программу установки. Дополнительные сведения об установке и распространения см. в разделе [распространение приложений изолированной оболочки](../extensibility/distributing-isolated-shell-applications.md).  
+## <a name="distributing-your-integrated-or-isolated-shell-application"></a>Distributing your Integrated or Isolated Shell Application  
+ In order to distribute your integrated or isolated shell application, you need to include your application, a special integrated or isolated shell redistributable, and an installation program. For more information about distribution and installation, see [Distributing Isolated Shell Applications](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
-> [Лицензионного соглашения конечного пользователя (EULA)](https://www.visualstudio.com/support/legal/mt171552) для Visual Studio интегрированная и изолированная оболочки содержит раздел сбора данных (**раздел 3. Данные**).  Она описывает данные об использовании клиента, собираемые корпорацией Майкрософт от пользователей либо встроенной или изолированной оболочки программное обеспечение, встроенное в приложении. Дополнительные сведения см. в разделе [Visual Studio продукта семейства заявление о конфиденциальности Microsoft](https://www.visualstudio.com/dn948229).  
+> The [End User License Agreement (EULA)](https://www.visualstudio.com/support/legal/mt171552) for the Visual Studio integrated and isolated shells includes a section on data collection (**Section 3. Data**).  It describes the customer usage data that may be collected by Microsoft from users of either the integrated or isolated shell software that you build into your application. For more information, see [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).  
 > 
-> Если ведется сбор данных об использовании отдельных от своих клиентов в приложении, необходимо предоставить соответствующие Обратите внимание, что пользователям вашего приложения можно собирать.  При распространении по встроенной или изолированной оболочки как часть вашего приложения, в соответствии с лицензией на Visual Studio средств разработки, необходимо включить одно из следующих:  
+> If you collect separate usage data from your customers through your application, you must provide appropriate notice to users of your application of what you collect.  When you distribute either the isolated or integrated shell software as part of your application, according to the Visual Studio Software Development Kit license, you must include one of the following:  
 > 
-> - Лицензионное соглашение конечного пользователя как часть вашей лицензии на приложение  
-> - собственные лицензионное соглашение, ваши клиенты должны согласиться с условиями, которые защищают Visual Studio интегрированной или изолированная оболочка по крайней мере столько как условия лицензионного соглашения Майкрософт конечного пользователя для программного обеспечения оболочки  
+> - the End User License Agreement as part of your application license  
+> - your own EULA that requires your customers to agree to terms that protect the Visual Studio integrated or isolated shell at least as much as the Microsoft End User License Terms for the shell software  
   
 ## <a name="additional-resources"></a>Дополнительные ресурсы  
- Дополнительные сведения о распространяемых пакетов, см. в разделе [загрузки Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) веб-сайта.  
+ For more information about redistributable packages, see the [Visual Studio Extensibility Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) Web site.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

@@ -1,5 +1,5 @@
 ---
-title: InstallShield Limited Edition | Документация Майкрософт
+title: InstallShield Limited Edition | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab2f063f684407c89cd3ec73cd256d0219805b66
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e56618138fccf6ac431741769b1d4b5ebe7bad4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409433"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295125"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63409433"
 InstallShield Limited Edition помогает создать файл установки и распространить его среди пользователей, чтобы они смогли установить классическое приложение или компонент без подключения к сети. InstallShield Limited Edition предоставляется бесплатно пользователям выпусков Visual Studio Professional и Enterprise. Он заменяет технологию установщика Windows, которая больше не поддерживается в Visual Studio. Кроме того, приложения и компоненты можно распространять с помощью технологии развертывания ClickOnce, которая требует подключения к сети. См. раздел [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
 > [!NOTE]
-> Вы можете и дальше использовать проекты Windows Installer, созданные в более ранних версиях Visual Studio, установив расширение проектов установщиков Visual Studio. См. раздел [Расширение проектов установщиков Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx).  
+> Вы можете и дальше использовать проекты Windows Installer, созданные в более ранних версиях Visual Studio, установив расширение проектов установщиков Visual Studio. См. раздел [Расширение проектов установщиков Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/).  
   
 ### <a name="to-enable-installshield-limited-edition"></a>Включение InstallShield Limited Edition  
   

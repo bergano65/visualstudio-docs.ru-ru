@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670479"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300748"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense помогает быстрее писать код, допуска
 ### <a name="UserDefined"></a> Пользовательские переменные, функции и объекты
  При изменении файла JavaScript [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] сканирует открытые и связанные документы для определения всех доступных ресурсов кода. В их число входят созданные пользователем переменные, функции и объекты. Потом эти ресурсы становятся доступны IntelliSense для JavaScript.
 
- Дополнительные сведения о пользовательских переменных, функциях и объектах см. в статье [о создании собственных объектов](http://go.microsoft.com/fwlink/?LinkId=108671) на веб-сайте MSDN.
+ Дополнительные сведения о пользовательских переменных, функциях и объектах см. в статье [о создании собственных объектов](https://go.microsoft.com/fwlink/?LinkId=108671) на веб-сайте MSDN.
 
 ### <a name="External"></a> Ссылки на внешние файлы
  Можно включить различные типы внешних ссылок на файлы, чтобы обеспечить поддержку IntelliSense в коде. Ссылки на внешние файлы могут представлять собой ссылки на скрипты, директивы ссылок, а также могут быть заданы при помощи эталонных групп.
@@ -283,6 +283,6 @@ IntelliSense помогает быстрее писать код, допуска
 - [Расширение IntelliSense для JavaScript](../ide/extending-javascript-intellisense.md)
 - [Завершение операторов с использованием идентификаторов](../ide/statement-completion-for-identifiers.md)
 - [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md)
-- [Сведения об объектной модели DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
+- [Сведения об объектной модели DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
 - [Отображение списка членов](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Атрибут SRC &#124; Свойство src](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [Атрибут SRC &#124; Свойство src](https://go.microsoft.com/fwlink/?LinkId=92345)
