@@ -1,5 +1,5 @@
 ---
-title: Примеры | Документация Майкрософт
+title: Samples | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,17 +11,17 @@ caps.latest.revision: 58
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ca8edf15aaf8a48ee7003d7c7a5f66d7762b87d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d19e5eb12b756353a261ceba8974b38a7ffe8a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667075"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296848"
 ---
 # <a name="visual-studio-samples"></a>Примеры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Примеры Visual Studio можно найти на веб-сайте [Галерея кода MSDN](http://go.microsoft.com/fwlink/?LinkID=127810) .
+Примеры Visual Studio можно найти на веб-сайте [Галерея кода MSDN](https://go.microsoft.com/fwlink/?LinkID=127810) .
 
  Можно использовать диалоговое окно **Создать проект** для навигации по примерам. (Чтобы открыть диалоговое окно, в строке меню выберите **Файл**, **Новый**, **Проект**.)
 
@@ -30,15 +30,15 @@ ms.locfileid: "72667075"
 
 |Область|Описание|
 |----------|-----------------|
-|[Примеры из центра разработчиков Windows](http://go.microsoft.com/fwlink/?LinkID=255278)|Описание разработки приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .|
+|[Примеры из центра разработчиков Windows](https://go.microsoft.com/fwlink/?LinkID=255278)|Описание разработки приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .|
 |[Примеры по платформе .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Описание различных аспектов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в C# и Visual Basic.|
-|[Примеры C#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)|Показывает, как использовать различные возможности C#.|
-|[Примеры Visual Basic](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Показывает, как использовать различные возможности Visual Basic.|
-|[Примеры F#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=F%23&f%5B0%5D.Text=F%23)|Показывает, как использовать различные возможности F#.|
-|[Примеры JavaScript](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|Показывает, как использовать различные функции в JavaScript.|
-|[Примеры C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Показывает, как использовать различные функции в C++.|
-|[Примеры DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Показывает способы использования DirectX.|
-|[Примеры разработки решений Office](https://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Показывает способы использования средств разработки Office в Visual Studio. Наиболее актуальные примеры см. в разделе [Примеры разработчиков MSDN: сведения о коде](http://go.microsoft.com/fwlink/?LinkID=248199).|
+|[Примеры C#](https://docs.microsoft.com/samples/browse/?languages=csharp)|Показывает, как использовать различные возможности C#.|
+|[Примеры Visual Basic](https://docs.microsoft.com/samples/browse/?languages=vb)|Показывает, как использовать различные возможности Visual Basic.|
+|[Примеры F#](https://docs.microsoft.com/samples/browse/?languages=fsharp)|Показывает, как использовать различные возможности F#.|
+|[Примеры JavaScript](https://docs.microsoft.com/samples/browse/?languages=javascript)|Показывает, как использовать различные функции в JavaScript.|
+|[Примеры C++](https://docs.microsoft.com/samples/browse/?languages=cpp)|Показывает, как использовать различные функции в C++.|
+|[Примеры DirectX](https://docs.microsoft.com/samples/browse/?products=xbox)|Показывает способы использования DirectX.|
+|[Примеры разработки решений Office](https://docs.microsoft.com/samples/browse/?products=office)|Показывает способы использования средств разработки Office в Visual Studio. Наиболее актуальные примеры см. в разделе [Примеры разработчиков MSDN: сведения о коде](https://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Примеры VSSDK](https://aka.ms/vs2015sdksamples)|Описание способов расширения Visual Studio.|
 
 ## <a name="see-also"></a>См. также раздел

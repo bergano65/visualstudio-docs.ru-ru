@@ -1,5 +1,5 @@
 ---
-title: Конфигурации для выходных данных проекта | Документация Майкрософт
+title: Project Configuration for Output | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,44 +10,44 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: addd7e8630ce35c6bdbbbb4c063197f75a74c97d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443880"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300680"
 ---
 # <a name="project-configuration-for-output"></a>Конфигурация проекта для вывода
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Каждая конфигурация может поддерживать набор процессов сборки, которые создают выходные элементы, такие как файлы исполняемого файла или ресурса. Эти элементы выходных данных для пользователя и могут быть помещены в группы, которые связывают связанных типов выходных данных, например исполняемые файлы (.exe, .dll, .lib) и исходных файлов (.idl, h-файлы).  
+Every configuration can support a set of build processes that produce output items such as executable or resource files. These output items are private to the user and can be placed in groups that link related types of output such as executable files (.exe, .dll, .lib) and source files (.idl, .h files).  
   
- Выходные элементы могут быть доступными через <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> методы и перечисления с <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> методы. При необходимости для группирования элементов выходных данных проекта следует реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> интерфейс.  
+ Output items can be made available through the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> methods and enumerated with the <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> methods. When you want to group output items, your project should also implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interface.  
   
- Конструкция разработанная реализация `IVsOutputGroup` разрешает проектам группировать вывод по использованию. Например библиотеки DLL могут быть сгруппированы с его базы данных программы (PDB).  
+ The construct developed by implementing `IVsOutputGroup` allows projects to group outputs according to usage. For instance, a DLL might be grouped with its program database (PDB).  
   
 > [!NOTE]
-> PDB-файл содержит сведения об отладке и создается при указании параметра «Создавать отладочные сведения» при построении .dll или .exe. PDB-файл, как правило, создаются для отладки только в конфигурации проекта.  
+> A PDB file contains debugging information and it is created when 'Generate Debug Info' option is specified when building the .dll or .exe. The .pdb file is usually generated for Debug project configuration only.  
   
- Проект должен возвращать одинаковое количество групп для каждой конфигурации, которую она поддерживает, несмотря на то, что количество выходов, содержащихся в группе может отличаться от конфигурации для конфигурации. Например, проекта Мэтт DLL может включать mattd.dll и mattd.pdb в конфигурации отладки, но только включить matt.dll в розничную конфигурацию.  
+ The project must return the same number of groups for each configuration that it supports, even though the number of outputs contained within a group may vary from configuration to configuration. For example, the project Matt's DLL might include mattd.dll and mattd.pdb in Debug configuration, but only include matt.dll in Retail configuration.  
   
- Группы также имеют те же сведения идентификатора, например каноническое имя, отображаемое имя и сведения о группе, из конфигурации для конфигурации в рамках проекта. Эта согласованность позволяет развертывания и упаковки, продолжают работать, даже если изменение конфигурации.  
+ The groups also have the same identifier information, such as canonical name, display name, and group information, from configuration to configuration within a project. This consistency allows deployment and packaging to continue to operate even if configurations change.  
   
- Группы могут также иметь ключа выходных данных, позволяющий упаковки помещаются ярлыки понятное имя. Любой группы может быть пустым в заданной конфигурации, поэтому следует сделать никаких предположений о размере группы. Размер (количество выходов) каждой группы в любой конфигурации может отличаться от размера другой группы в той же конфигурации. Он также может быть отличается от размера одной группы в другую конфигурацию.  
+ Groups can also have a key output that allows packaging shortcuts to point to something meaningful. Any group might be empty in a given configuration, so no assumptions should be made about the size of a group. The size (number of outputs) of each group in any configuration can be different from the size of another group in the same configuration. It can also be different from the size of the same group in another configuration.  
   
- ![График групп вывода](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
+ ![Output Groups graphic](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
 Выходные группы  
   
- Главным образом используется <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> интерфейса заключается в предоставлении доступа к построения, развертывания и отладки объектов управления и позволить проектам группировать вывод свободу выбора. Дополнительные сведения об использовании этого интерфейса см. в разделе [объект конфигурации проекта](../../extensibility/internals/project-configuration-object.md).  
+ The primary use of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interface is to provide access to build, deploy and debug management objects and allow projects the freedom to group outputs. For more information on the use of this interface, see [Project Configuration Object](../../extensibility/internals/project-configuration-object.md).  
   
- На предыдущей диаграмме, встроенные группы имеет ключ вывода конфигурациях (bD.exe или b.exe), поэтому пользователь может создать ярлык для Built и знать, что ярлык будет работать независимо от конфигурации развертывания. Источник группы не имеет ключа выходных данных, поэтому пользователю не удается создать ярлык. Если построение отладка группы вывода ключей, но встроенные группы розничной торговли — нет, это было бы неверная реализация. Отслеживается, затем, если какой-либо настройки имеет группу, содержащую ни одного выхода, и, таким образом, нет файла ключа, а затем с этой группой других конфигураций, которые содержат выходные данные не могут иметь файлы ключей. Установщик редакторы предполагается, что канонические имена и отображаемые имена групп, а также наличие файла ключа, не изменяются зависимости в конфигурациях.  
+ In the previous diagram, Group Built has a key output across configurations (either bD.exe or b.exe) so the user can create a shortcut to Built and know that the shortcut will work regardless of the configuration deployed. Group Source does not have a key output, so the user cannot create a shortcut to it. If the Debug Group Built has a key output, but the Retail Group Built does not, that would be an incorrect implementation. It follows, then, that if any configuration has a group that contains no outputs, and, as a result, no key file, then other configurations with that group that do contain outputs cannot have key files. The installer editors assume that canonical names and display names of groups, plus the existence of a key file, do not change based in configurations.  
   
- Обратите внимание, что, если проект имеет `IVsOutputGroup` что не нужно для упаковки и развертывания, то достаточно не размещать эти выходные данные в группе. Выходные данные по-прежнему могут быть перечислены обычно путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> метод, который возвращает все выходные данные конфигурации независимо от группирования.  
+ Note that if a project has an `IVsOutputGroup` that it does not want to package or deploy, it is sufficient to not put that output in a group. The output can still be enumerated normally by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> method that returns all of a configuration's outputs regardless of grouping.  
   
- Дополнительные сведения см. в разделе реализации `IVsOutputGroup` в образец проекта Custom в [MPF для проектов](http://mpfproj12.codeplex.com).  
+ For more information, see the implementation of `IVsOutputGroup` in the Custom Project sample at [MPF for Projects](https://archive.codeplex.com/?p=mpfproj12).  
   
-## <a name="see-also"></a>См. также  
- [Управление параметрами конфигурации](../../extensibility/internals/managing-configuration-options.md)   
- [Конфигурация проекта для сборки](../../extensibility/internals/project-configuration-for-building.md)   
- [Объект конфигурации проекта](../../extensibility/internals/project-configuration-object.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Managing Configuration Options](../../extensibility/internals/managing-configuration-options.md)   
+ [Project Configuration for Building](../../extensibility/internals/project-configuration-for-building.md)   
+ [Project Configuration Object](../../extensibility/internals/project-configuration-object.md)   
  [Конфигурация решения](../../extensibility/internals/solution-configuration.md)

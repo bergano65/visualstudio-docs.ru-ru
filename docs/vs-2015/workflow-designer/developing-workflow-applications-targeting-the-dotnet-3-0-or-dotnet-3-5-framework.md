@@ -1,5 +1,5 @@
 ---
-title: Разработка приложений рабочих процессов, предназначенных для .NET 3,0 или .NET 3,5 Framework | Документация Майкрософт
+title: Developing Workflow Applications Targeting the .NET 3.0 or .NET 3.5 Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d5049a24b7457adb5ae126a75816814e1295b73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a80aef71271df0a1353dfd73898dbe8fcd7007c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656815"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300925"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Разработка приложений рабочих процессов, предназначенных для платформы .NET 3.0 или .NET 3.5
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] предоставляет средство [!INCLUDE[wfd1](../includes/wfd1-md.md)] для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], ориентированных на [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Конструктор использует привычный пользовательский интерфейс [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для графического конструирования и отладки приложений рабочих процессов.
@@ -29,4 +29,4 @@ ms.locfileid: "72656815"
  [Отладка рабочих процессов прежних версий](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Связанные разделы
- [Windows Workflow Foundationое программное руководством](http://go.microsoft.com/fwlink?LinkID=65012)
+ [Windows Workflow Foundation Programming Guide](https://go.microsoft.com/fwlink?LinkID=65012)

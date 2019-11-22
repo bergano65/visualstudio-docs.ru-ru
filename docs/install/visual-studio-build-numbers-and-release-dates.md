@@ -5,19 +5,19 @@ description: Список выпущенных версий и номеров с
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/20/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 234220dae4ca891e5cd7671d2fc7ded4a1912d71
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.openlocfilehash: 1001fe2e22a924c9e47dc4188c45ba2a7674363e
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261720"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316454"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -29,8 +29,9 @@ ms.locfileid: "74261720"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.0 | предварительная версия 6 | 21 ноября 2019 г. | 16.4.29519.161 |
 | 16.3.10 | Выпуск | 20 ноября 2019 г. | 16.3.29519.87 |
-| 16.4.0 | Preview 5 | 14 ноября 2019 г. | 16.4.29512.175 |
+| 16.4.0 | Предварительная версия 5 | 14 ноября 2019 г. | 16.4.29512.175 |
 | 16.3.9 | Выпуск | 12 ноября 2019 г. | 16.3.29509.3 |
 | 16.4.0 | Предварительная версия 4 | 6 ноября 2019 г. | 16.4.29505.145 |
 | 16.3.8 | Выпуск | 5 ноября 2019 г. | 16.3.29503.13 |

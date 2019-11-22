@@ -1,5 +1,5 @@
 ---
-title: Определение пользовательского элемента панели элементов моделирования | Документация Майкрософт
+title: Define a custom modeling toolbox item | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 27692c31c2c0f1c52ab026fb2d55e5d240839ff3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654905"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299298"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Определение пользовательского элемента для панели элементов моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72654905"
 > [!NOTE]
 > Этот метод можно использовать для создания инструментов элемента. Таким образом, можно создать инструменты, которые можно перетаскивать из панели элементов на схему. Инструменты соединителя создавать нельзя.
 
-## <a name="DefineTool"></a>Определение пользовательского инструмента моделирования
+## <a name="DefineTool"></a> Defining a Custom Modeling Tool
 
 #### <a name="to-define-a-custom-modeling-tool"></a>Порядок определения пользовательского инструмента моделирования
 
@@ -42,21 +42,21 @@ ms.locfileid: "72654905"
 
     - Эти элементы могут иметь отношения между собой и дочерние элементы, например порты, атрибуты, операции или закрепления.
 
-2. Сохраните схему, используя имя, которое хотите присвоить новому инструменту. В меню **файл** используйте команду **Сохранить... Как**.
+2. Сохраните схему, используя имя, которое хотите присвоить новому инструменту. On the **File** menu, use **Save…As**.
 
 3. С помощью проводника Windows скопируйте два файла схемы в следующую папку или любую вложенную папку:
 
-     **Элементы панели элементов йоурдокументс \висуал студио\арчитектуре тулс\кустом**
+     *YourDocuments* **\Visual Studio\Architecture Tools\Custom Toolbox Items**
 
-    - Создайте эту папку, если она еще не существует. Может потребоваться создать как **инструменты архитектуры** , так и **настраиваемые элементы панели элементов**.
+    - Создайте эту папку, если она еще не существует. You might have to create both **Architecture Tools** and **Custom Toolbox Items**.
 
-    - Скопируйте оба файла схемы с именем, которое оканчивается на "... **Диаграмма**", а другая с именем, которое оканчивается на"... **схема. макет**»
+    - Copy both diagram files, one with a name that ends "…**diagram**" and the other with a name that ends "…**diagram.layout**"
 
     - Можно создать столько пользовательских инструментов, сколько необходимо. Используйте одну схему для каждого инструмента.
 
-4. Используемых Создайте **tbxinfo** -файл, как описано в разделе [Определение свойств пользовательских средств](#tbxinfo)и добавление его в тот же каталог. Это позволяет определить значок панели элементов, подсказку и т. п.
+4. (Optional) Create a **.tbxinfo** file as described in [How to Define the Properties of Custom Tools](#tbxinfo), and add it to the same directory. Это позволяет определить значок панели элементов, подсказку и т. п.
 
-    - Для определения нескольких средств можно использовать один **tbxinfo** -файл. Он может ссылаться на файлы схемы, расположенные во вложенных папках.
+    - A single **.tbxinfo** file can be used to define several tools. Он может ссылаться на файлы схемы, расположенные во вложенных папках.
 
 5. Перезапустите Visual Studio. Дополнительные инструменты будут отображаться на панели элементов для соответствующего типа схемы.
 
@@ -83,8 +83,8 @@ ms.locfileid: "72654905"
 
 - Маршрутизация соединителей Если маршрутизация соединителей осуществляется вручную, она не сохраняется при использовании инструмента. Положения некоторых вложенных фигур, таких как порты, не сохраняется относительно своих владельцев.
 
-## <a name="tbxinfo"></a>Определение свойств пользовательских средств
- Файл сведений панели элементов ( **. tbxinfo**) позволяет указать имя панели элементов, значок, подсказку, вкладку и ключевое слово справки для одного или нескольких настраиваемых инструментов. Присвойте ему любое имя, например **митулс. tbxinfo**.
+## <a name="tbxinfo"></a> How to Define the Properties of Custom Tools
+ A toolbox information ( **.tbxinfo**) file allows you to specify a toolbox name, icon, tooltip, tab, and help keyword for one or more custom tools. Give it any name, such as **MyTools.tbxinfo**.
 
  Общий вид файла выглядит следующим образом:
 
@@ -123,31 +123,31 @@ ms.locfileid: "72654905"
 
   Добавьте узел `<customToolboxItem>` для каждого элемента панели элементов, который необходимо определить.
 
-  Ниже приведены узлы в файле **tbxinfo** . Для каждого узла имеется значение по умолчанию.
+  The nodes in the **.tbxinfo** file are as follows. Для каждого узла имеется значение по умолчанию.
 
 |Имя узла|Определяет следующее|
 |---------------|-------------|
 |displayName|Имя элемента панели элементов.|
 |tabName|Вкладка панели элементов, на которой должен отображаться элемент. Можно указать либо имя обычной вкладки для этого типа схемы, либо отдельное имя.|
-|изображение|Расположение файла точечного рисунка (**BMP**), ширина которого должна быть равна 16, и глубина цвета — 24 бита.|
+|изображение|The location of the bitmap ( **.bmp**) file, which must have height and width of 16, and a color depth of 24 bits.|
 |f1Keyword|Ключевое слово, осуществляющее поиск раздела справки.|
 |подсказка|Подсказка для этого инструмента.|
 
  Можно изменить файл точечного рисунка в Visual Studio и задать его высоту и ширину равными 16 в окне "Свойства".
 
 > [!NOTE]
-> Если начать использовать файл TBXINFO после проведения экспериментов по использованию отдельных файлов схем, может оказаться, что панель элементов содержит старые и новые версии элемента панели элементов. Это также может произойти, если имя файла схемы было неправильно указано в файле TBXINFO. Если это происходит, в контекстном меню панели элементов выберите **Сброс панели элементов**. Настраиваемые элементы панели элементов исчезают. Перезапустите Visual Studio, после чего отображаются правильные пользовательские элементы.
+> Если начать использовать файл TBXINFO после проведения экспериментов по использованию отдельных файлов схем, может оказаться, что панель элементов содержит старые и новые версии элемента панели элементов. Это также может произойти, если имя файла схемы было неправильно указано в файле TBXINFO. If this occurs, on the shortcut menu of the toolbox choose **Reset Toolbox**. Настраиваемые элементы панели элементов исчезают. Перезапустите Visual Studio, после чего отображаются правильные пользовательские элементы.
 
-## <a name="Extension"></a>Как распределять элементы панели элементов в расширении Visual Studio
- Вы можете распределить элементы панели элементов другим пользователям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], упаковывая их в расширение Visual Studio (VSIX). Команды, профили и другие расширения можно упаковать в один файл VSIX. Дополнительные сведения см. в разделе [развертывание расширений Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).
+## <a name="Extension"></a> How to Distribute Toolbox Items in a Visual Studio Extension
+ You can distribute toolbox items to other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] users by packaging them into a Visual Studio Extension (VSIX). Команды, профили и другие расширения можно упаковать в один файл VSIX. For more information, see [Deploying Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160780).
 
  Для создания расширения Visual Studio обычно используется шаблон проекта VSIX. Чтобы воспользоваться им, необходимо установить [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Добавление элемента панели элементов в расширение Visual Studio
 
-1. [Создание и тестирование одного или нескольких пользовательских инструментов](#DefineTool).
+1. [Create and test one or more custom tools](#DefineTool).
 
-2. [Создайте tbxinfo-файл](#tbxinfo) , который ссылается на средства.
+2. [Create a .tbxinfo file](#tbxinfo) that references the tools.
 
 3. Создайте проект расширения Visual Studio.
 
@@ -157,55 +157,55 @@ ms.locfileid: "72654905"
 
     1. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.
 
-    2. В диалоговом окне **Новый проект** в разделе **Установленные шаблоны**выберите **визуальный C#** элемент, **расширяемость**, **проект VSIX**.
+    2. In the **New Project** dialog box, under **Installed Templates**, choose **Visual C#** , **Extensibility**, **VSIX project**.
 
-4. Добавьте в проект определения панели элементов. Включите файл **. tbxinfo** , файлы схем, файлы точечных рисунков и все файлы ресурсов, а также убедитесь, что они включены в VSIX.
+4. Добавьте в проект определения панели элементов. Include the **.tbxinfo** file, the diagram files, bitmap files, and any resource files, and make sure that they are included in the VSIX.
 
-    - В обозреватель решений в контекстном меню проекта VSIX выберите **Добавить**, **существующий элемент**. В диалоговом окне задайте **объекты типа: все файлы**. Найдите файлы, выберите их все и нажмите кнопку **Добавить**.
+    - In Solution Explorer, on the shortcut menu of the VSIX project, choose **Add**, **Existing Item**. In the dialog box, set **Objects of Type: All Files**. Locate the files, select them all, and then choose **Add**.
 
         > [!NOTE]
         > В этом проекте нельзя открыть файлы схемы в редакторе моделей.
 
 5. Задайте следующие свойства всех недавно добавленных файлов. В то же время можно задавать их свойства, выбрав всех их в обозревателе решений. Не следует изменять свойства других файлов в проекте.
 
-     **Копировать в выходной каталог**  = **всегда копировать**
+     **Copy to Output Directory** = **Copy Always**
 
-     **Содержимое**  =  **действия сборки**
+     **Build Action** = **Content**
 
-     **Включить в VSIX**  = **true**
+     **Include in VSIX** = **true**
 
 6. Откройте **source.extension.vsixmanifest**. Открывается в редакторе манифеста расширения.
 
-7. В разделе **метаданные**добавьте описание пользовательских инструментов.
+7. Under **Metadata**, add a description for the custom tools.
 
-     В разделе **активы**выберите **создать** , а затем задайте поля в диалоговом окне следующим образом:
+     Under **Assets**, choose **New** and then set the fields in the dialog as follows:
 
-    - **Тип**  = **пользовательского расширения**
+    - **Type** = **Custom Extension Type**
 
     - Тип = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Это значение не указано в раскрывающемся списке. Его необходимо ввести с помощью клавиатуры.
 
-    - **Исходный**  = **файл в файловой системе**.
+    - **Source** = **File on filesystem**.
 
-    - **Path** = ваш **tbxinfo** файл, например **митулс. tbxinfo**
+    - **Path** = your **.tbxinfo** file, for example **MyTools.tbxinfo**
 
 8. Выполните построение проекта.
 
-9. **Чтобы убедиться, что расширение работает**, нажмите клавишу F5. Откроется экспериментальный экземпляр Visual Studio.
+9. **To verify that the extension works**, press F5. Откроется экспериментальный экземпляр Visual Studio.
 
      В экспериментальном экземпляре создайте или откройте схему UML соответствующего типа. Убедитесь, что новый инструмент отображается на панели элементов и что он правильно создает элементы.
 
-10. **Чтобы получить VSIX-файл для развертывания, выполните следующие действия.** В проводнике Windows откройте папку **.\бин\дебуг** или **.\бин\релеасе** , чтобы найти **VSIX** файл. Это файл расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Его можно установить на своем компьютере и отправить другим пользователям Visual Studio.
+10. **To obtain a VSIX file for deployment:** In Windows Explorer, open the folder **.\bin\Debug** or **.\bin\Release** to find the **.vsix** file. Это файл расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Его можно установить на своем компьютере и отправить другим пользователям Visual Studio.
 
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Установка пользовательских инструментов из расширения Visual Studio
 
 1. Откройте файл `.vsix` в проводнике Windows или в Visual Studio.
 
-2. В появившемся диалоговом окне нажмите кнопку **установить** .
+2. Choose **Install** in the dialog box that appears.
 
-3. Чтобы удалить или временно отключить расширение, откройте меню **Сервис** и выберите пункт **расширения и обновления** .
+3. To uninstall or temporarily disable the extension, open **Extensions and Updates** from the **Tools** menu.
 
 ## <a name="localization"></a>Локализация
  Можно создать расширение, которое при установке на другом компьютере отображает имена и подсказки для инструмента на языке целевого компьютера.
@@ -214,13 +214,13 @@ ms.locfileid: "72654905"
 
 1. Создайте проект расширения Visual Studio, который содержит один или несколько пользовательских инструментов.
 
-    В **tbxinfo** файле используйте метод файла ресурсов, чтобы определить `displayName`, `tabName` панели элементов и подсказку средства. Создайте файл ресурсов, в котором определяются эти строки, скомпилируйте его в сборку, а затем сошлитесь на него из файла TBXINFO.
+    In the **.tbxinfo** file, use the resource file method to define the tool's `displayName`, toolbox `tabName`, and the tooltip. Создайте файл ресурсов, в котором определяются эти строки, скомпилируйте его в сборку, а затем сошлитесь на него из файла TBXINFO.
 
 2. Создайте дополнительные сборки, содержащие файлы ресурсов со строками на других языках.
 
-3. Поместите каждую дополнительную сборку в папку, имя которой является идентификатором соответствующего языка и региональных параметров. Например, поместите французскую версию сборки в папку с именем **fr**.
+3. Поместите каждую дополнительную сборку в папку, имя которой является идентификатором соответствующего языка и региональных параметров. For example, place a French version of the assembly inside a folder that is named **fr**.
 
-4. Следует использовать нейтральный идентификатор языка и региональных параметров (как правило, состоящий из двух букв), а не указывать конкретные язык и региональные параметры, например `fr-CA`. Дополнительные сведения о кодах языка и региональных параметрах см. в разделе [метод CultureInfo. DataCulture](http://go.microsoft.com/fwlink/?LinkId=160782), который предоставляет полный список кодов языка и региональных параметров.
+4. Следует использовать нейтральный идентификатор языка и региональных параметров (как правило, состоящий из двух букв), а не указывать конкретные язык и региональные параметры, например `fr-CA`. For more information about culture codes, see [CultureInfo.GetCultures method](https://go.microsoft.com/fwlink/?LinkId=160782), which provides a complete list of culture codes.
 
 5. Выполните сборку расширения Visual Studio и распределите его.
 
@@ -231,7 +231,7 @@ ms.locfileid: "72654905"
 ## <a name="other-toolbox-operations"></a>Другие операции панели элементов
  Обычно в [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] панель элементов можно персонализировать, переименовывая инструменты, перемещая их на другие вкладки и удаляя их. Однако эти изменения не сохраняются для пользовательских инструментов моделирования, которые созданы с использованием процедур, описанных в этом разделе. При перезапуске [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] пользовательские инструменты отображаются с заданными для них именами и расположениями на панели элементов.
 
- Кроме того, при выполнении команды **Сбросить Панель элементов** будут отображаться пользовательские средства. Однако после перезапуска [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] они снова появляются.
+ Furthermore, your custom tools will disappear if you perform the **Reset Toolbox** command. Однако после перезапуска [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] они снова появляются.
 
 ## <a name="see-also"></a>См. также раздел
- [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)
+ [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md)

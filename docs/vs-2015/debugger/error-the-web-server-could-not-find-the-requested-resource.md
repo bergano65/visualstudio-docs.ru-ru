@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Веб-серверу не удалось найти запрошенный ресурс | Документация Майкрософт'
+title: 'Error: The Web Server Could Not Find the Requested Resource | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,14 +16,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3904a9fcb2e15190018dbc4caabe925690e023f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 904d628b09c7add48460273ecaff7d8ac288cbc3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263711"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297428"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Ошибка: веб-сервер не обнаружил запрашиваемый ресурс
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Ошибка. Запрашиваемый ресурс не найден
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Службами IIS возвращена общая ошибка, связанная с безопасностью.  
@@ -32,8 +32,8 @@ ms.locfileid: "66263711"
   
  Эта ошибка может быть вызвана многими причинами. К наиболее распространенным причинам относятся проблемы, связанные с установкой или конфигурацией IIS, конфигурацией веб-сайта или разрешениями в файловой системе. Можно попытаться получить доступ к ресурсу с помощью браузера. В зависимости от того, как настроены службы IIS, возможно, потребуется использовать локальный браузер на сервере или просмотреть журнал ошибок служб IIS, чтобы получить подробное сообщение об ошибке.  
   
- Дополнительные сведения об устранении неполадок IIS см. в разделе [Управление и администрирование IIS](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Дополнительные сведения об устранении неполадок IIS см. в разделе [Управление и администрирование IIS](https://go.microsoft.com/fwlink/?LinkId=255872).  
   
-## <a name="see-also"></a>См. также  
- [Средство безопасности UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
+## <a name="see-also"></a>См. также раздел  
+ [UrlScan Security Tool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Ошибка: веб-сервер заблокирован и блокирует команду DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

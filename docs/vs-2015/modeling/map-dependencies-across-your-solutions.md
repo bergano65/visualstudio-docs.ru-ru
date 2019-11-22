@@ -1,5 +1,5 @@
 ---
-title: Сопоставьте зависимости в решениях | Документация Майкрософт
+title: Map dependencies across your solutions | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -29,27 +29,27 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1352da002b16c736ce20a9fbaf7cdc26b258b718
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657614"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296334"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Сопоставление зависимостей в разных решениях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы разобраться в реализованных в коде зависимостях, визуализируйте их, создав карты кода. Это поможет увидеть, как код сочетается друг с другом без чтения файлов и строк кода.
 
- ![Просмотр зависимостей в решениях](../modeling/media/codemapsmainintro.png "кодемапсмаининтро")
+ ![View dependencies across your solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
 
  **Далее приводится несколько ссылок на видеоролики**:
 
-- [Выявление зависимостей кода путем визуализации](http://go.microsoft.com/fwlink/?LinkID=252065)
+- [Выявление зависимостей кода путем визуализации](https://go.microsoft.com/fwlink/?LinkID=252065)
 
-- [Визуализация влияния изменений](http://go.microsoft.com/fwlink/?LinkID=252068)
+- [Визуализация влияния изменений](https://go.microsoft.com/fwlink/?LinkID=252068)
 
-- [Анализ сложного кода с помощью карт кода](http://go.microsoft.com/fwlink/?LinkID=259869)
+- [Анализ сложного кода с помощью карт кода](https://go.microsoft.com/fwlink/?LinkID=259869)
 
 ## <a name="GetStarted"></a> Начало работы с картами кода
  **Для работы с картами кода необходим один из следующих ресурсов**:
@@ -87,7 +87,7 @@ ms.locfileid: "72657614"
 
 2. Выберите все интересующие вас проекты, ссылки на сборки, папки, файлы, типы или члены.
 
-3. На панели инструментов **Обозреватель решений** нажмите кнопку **отобразить на карте кода**![создать новый граф из выбранных узлов](../modeling/media/createnewgraphfromselectedbutton.gif "креатеневграффромселектедбуттон"). Либо откройте контекстное меню и выберите пункт **Показать на карте кода**. Также можно перетащить элементы из представления классов или обозревателя объектов на новую или уже существующую карту кода.
+3. On the **Solution Explorer** toolbar, choose **Show on Code Map**![Create New Graph From Selected Nodes Button](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton"). Либо откройте контекстное меню и выберите пункт **Показать на карте кода**. Также можно перетащить элементы из представления классов или обозревателя объектов на новую или уже существующую карту кода.
 
 4. [Просмотр конкретных зависимостей](#SeeSpecificSource) позволяет понять, как использовать карты кода для просмотра отдельных зависимостей в решении.
 
@@ -121,38 +121,38 @@ ms.locfileid: "72657614"
 
 1. В меню **Архитектура** выберите пункт **Создать карту кода для решения**.
 
-    ![Создание команды с картой кода](../modeling/media/codemapsarchitecturemenu.png "кодемапсарчитектуремену")
+    ![Generate a code map command](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")
 
     Отобразится карта кода со сборками верхнего уровня и совокупными связями между ними. Чем шире совокупная связь, тем больше зависимостей она представляет.
 
 2. Чтобы открыть список значков, обозначающих различные типы проектов (такие как тестовый, веб- или телефонный проект), элементов кода (таких как классы, методы и свойства) и типов отношений (таких как «Наследует от», «"Реализует» и «Вызывает»), нажмите кнопку **Условные обозначения** .
 
-    ![Граф&#45;зависимостей верхнего уровня для сборок](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")
+    ![Top&#45;level dependency graph of assemblies](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")
 
     Решение в этом примере включает папки решений (**Тесты** и **Компоненты**), тестовые проекты, веб-проекты и сборки. По умолчанию все отношения вложения представляются в виде *групп*, которые можно развернуть и свернуть. Группа **Внешние** содержит объекты вне решения, в том числе зависимости платформы. Во внешних сборках отображаются только используемые элементы. Для удобства системные базовые типы на карте по умолчанию скрыты.
 
 3. Чтобы детализировать карту, разверните группы, представляющие проекты и сборки. Чтобы развернуть все компоненты, выделите все узлы нажатием клавиш **CTRL+A** , а затем последовательно выберите в контекстном меню пункты **Группа**и **Развернуть** .
 
-    ![Развертывание всех групп в карте кода](../modeling/media/codemapsexpandallgroups.png "кодемапсекспандаллграупс")
+    ![Expanding all groups in a code map](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")
 
 4. В большом решении это не пригодится. Более того, если решение комплексное, ограничения памяти могут не позволить развернуть все группы. Вместо этого разворачивайте отдельные интересующие вас узлы. Наведите указатель мыши на верхнюю часть узла и нажмите на значок шеврона (стрелка вниз), когда он появится.
 
-    ![Расширение узла в карте кода](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")
+    ![Expanding a node in a code map](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")
 
     Также можно выбрать нужный элемент с помощью клавиатуры и нажать клавишу **+** . Чтобы изучить более глубокие уровни кода, проделайте то же самое для пространств имен, типов и членов.
 
    > [!TIP]
-   > Дополнительные сведения о работе с картами кода с помощью мыши, клавиатуры и сенсорного экрана см. в разделе [Обзор и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
+   > For more details of working with code maps using the mouse, keyboard, and touch, see [Browse and rearrange code maps](../modeling/browse-and-rearrange-code-maps.md).
 
 5. Чтобы упростить карту и выделить ее отдельные части, выберите **Фильтры** на панели элементов в карте кода и отметьте только те типы узлов и связей, которые вас интересуют. Например, можно скрыть все контейнеры папки решения и сборки.
 
-    ![Упрощение Map путем фильтрации контейнеров](../modeling/media/codemapsfilterfoldersassemblies.png "кодемапсфилтерфолдерсассемблиес")
+    ![Simplify the map by filtering containers](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")
 
     Карты можно также упростить, скрыв или удалив отдельные группы и элементы, но не меняя базовый код решения.
 
 6. Чтобы просмотреть отношения между элементами, выберите их на карте. Цвета связей обозначают типы отношений, как показано на панели **Условные обозначения** .
 
-    ![Просмотр зависимостей в решениях](../modeling/media/codemapsmainintro.png "кодемапсмаининтро")
+    ![View dependencies across your solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
 
     В этом примере фиолетовые связи обозначают вызовы, пунктирные — ссылки, а голубые — доступ к полю. Зеленые связи могут представлять наследование, а также *совокупные связи* , обозначающие сразу несколько видов отношений (или *категорий*).
 
@@ -161,25 +161,25 @@ ms.locfileid: "72657614"
 
 7. Для получения дополнительных сведений об элементе или связи наведите указатель на элемент или связь и дождитесь появления подсказки. Подсказка будет содержать подробные сведения об элементе кода или представляемых связью категориях.
 
-    ![Отображение категорий связей](../modeling/media/codemapsshowlinkcatgories.png "кодемапсшовлинккатгориес")
+    ![Show the categories of a relationship](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")
 
 8. Чтобы проверить элементы и зависимости, представленные совокупной связью, выберите связь и откройте ее контекстное меню. Выберите пункт **Показать добавляющие ссылки** (или **Показать добавляющие ссылки на новой карте кода**). Программа развернет группы на обоих концах связи и отобразит только те элементы и зависимости, которые участвуют в связи.
 
 9. Чтобы сосредоточиться на определенных фрагментах карты, удалите все элементы, которые вас пока не интересуют. Например, чтобы получить детализированное представление класса и его членов, просто отфильтруйте все узлы пространства имен на панели **Фильтры** .
 
-     ![Детализация до уровня класса и члена](../modeling/media/dependencygraph-expandedselectedgroups-2012.png "DependencyGraph_ExpandedSelectedGroups_2012")
+     ![Drilling down to class and member level](../modeling/media/dependencygraph-expandedselectedgroups-2012.png "DependencyGraph_ExpandedSelectedGroups_2012")
 
 10. Еще один способ концентрации в комплексном решении — это создать новую карту с выбранными элементами существующей карты. Выделите необходимые элементы, удерживая нажатой клавишу **CTRL** , откройте контекстное меню и выберите пункт **Новый граф по выделенному фрагменту**.
 
-     ![Показывать выбранные элементы на новой карте кода](../ide/media/codemapsshowonnewmap.png "кодемапсшовонневмап")
+     ![Show selected items on a new code map](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
 11. Выбранные элементы будут добавлены в новую карту вместе с контекстом. Скройте папки решений и другие ненужные контейнеры с помощью панели **Фильтры** .
 
-     ![Фильтрация контейнеров для упрощения представления](../modeling/media/codemapsexpandnewgroups.png "кодемапсекспандневграупс")
+     ![Filter the containers to simplify the view](../modeling/media/codemapsexpandnewgroups.png "CodeMapsExpandNewGroups")
 
 12. Разверните группы и выберите элементы на карте, чтобы просмотреть отношения.
 
-     ![Выберите элементы для просмотра связей](../modeling/media/codemapsviewnewrelationships.png "кодемапсвиевневрелатионшипс")
+     ![Select items to view the relationships](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")
 
     См. также:
 
@@ -201,19 +201,19 @@ ms.locfileid: "72657614"
 ## <a name="SeeSpecificSource"></a> Просмотр конкретных зависимостей
  В качестве примера предположим, что нужно выполнить проверку кода в некоторых файлах с ожидающими изменениями. Чтобы просмотреть зависимости в этих изменениях, создайте карту кода на основе этих файлов.
 
- ![Отображение конкретных зависимостей на карте кода](../modeling/media/codemapsspecificdependenciesintro.png "кодемапсспеЦификдепенденЦиесинтро")
+ ![Show specific dependencies on a code map](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")
 
 ### <a name="see-specific-dependencies-in-your-solution"></a>Просмотр конкретных зависимостей в решении
 
 1. Откройте **обозреватель решений**. Выберите проекты, ссылки на сборки, папки, файлы, типы или члены, которые вас интересуют. Чтобы найти элементы, имеющие зависимости от типов и членов, откройте контекстное меню типа или члена в **обозревателе решений**. Выберите тип зависимости, а затем результаты.
 
-2. Сопоставьте элементы с их членами. На панели инструментов **Обозреватель решений** нажмите кнопку **отобразить на карте кода**![создать новый граф из выбранных узлов](../modeling/media/createnewgraphfromselectedbutton.gif "креатеневграффромселектедбуттон").
+2. Сопоставьте элементы с их членами. On the **Solution Explorer** toolbar click **Show on Code Map**![Create New Graph From Selected Nodes Button](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").
 
-     ![Выберите элементы, которые необходимо связать](../modeling/media/codemapsselectinsolutionexplorer.png "кодемапсселектинсолутионексплорер")
+     ![Select the items you want to map](../modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")
 
 3. На картах кода выбранные элементы отображаются в сборках, частью которых они являются.
 
-     ![Выбранные элементы, отображаемые как группы на карте](../modeling/media/codemapsshowitemsfromsolnexplorer.png "кодемапсшовитемсфромсолнексплорер")
+     ![Selected items shown as groups on the map](../modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")
 
      Также можно перетащить элементы из обозревателя решений, представления классов или обозревателя объектов на новую или уже существующую карту кода. Инструкции по созданию пустой карты см. в разделе [Создание пустой карты кода](#GetStarted). Чтобы включить родительскую иерархию для элементов, перетащите элементы, нажав и удерживая клавишу **CTRL** , или нажмите кнопку **Включить родительские элементы** на панели инструментов карты кода и укажите действие по умолчанию.
 
@@ -222,15 +222,15 @@ ms.locfileid: "72657614"
 
 4. Для исследования элементов разверните их. Наведите указатель мыши на элемент и щелкните значок шеврона (стрелка вниз), когда он появится.
 
-     ![Расширение узла в карте кода](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")
+     ![Expanding a node in a code map](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")
 
      Чтобы развернуть все элементы, выберите их с помощью клавиш **CTRL+A**, откройте контекстное меню для карты кода и последовательно выберите пункты **Группа**, **Развернуть**. Этот параметр недоступен, если при развертывании всех групп карта кода станет непригодна к использованию или возникнут проблемы с памятью.
 
 5. Продолжайте разворачивать интересующие вас элементы вплоть до уровня классов и членов, если это понадобится.
 
-     ![Развернуть группы для уровня класса и члена](../modeling/media/codemapsexpandtoclassandmember.png "кодемапсекспандтоклассандмембер")
+     ![Expand groups to class and member level](../modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")
 
-     Чтобы просмотреть элементы, которые находятся в коде, но не отображаются на карте, щелкните значок повторно извлечь **дочерние элементы значок** повторной ![выборки потомков](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") в левом верхнем углу группы.
+     To see members that are in the code but don't appear on the map, click the **Refetch Children** icon ![Refetch Children Icon](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") in the top left corner of a group.
 
 6. Для просмотра дополнительных элементов, связанных с элементами на карте, выделите нужный элемент и выберите команду **Показать связанные** на панели инструментов карты кода. После этого выберите тип связанных элементов, которые нужно добавить на карту. Также можно выбрать один или несколько элементов, открыть контекстное меню и выбрать пункт **Показать...** для типа связанных элементов, которые нужно добавить на карту. Пример:
 
@@ -273,30 +273,30 @@ ms.locfileid: "72657614"
     |**Показать содержащий тип**|Добавьте родительский тип.|
     |**Показать содержащие тип, пространство имен и сборку**|Добавьте родительскую иерархию контейнера.|
 
-     ![Показывать методы, вызываемые этим членом](../modeling/media/codemapsshowrelatedmethods.png "кодемапсшоврелатедмесодс")
+     ![Show methods called by this member](../modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")
 
 7. На карте показаны отношения. В этом примере методы вызываются методом `Find` и находятся в решении или за его пределами.
 
-     ![Отображение конкретных зависимостей на карте кода](../modeling/media/codemapsspecificdependenciesintro.png "кодемапсспеЦификдепенденЦиесинтро")
+     ![Show specific dependencies on a code map](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")
 
 8. Чтобы упростить карту и выделить ее отдельные части, выберите **Фильтры** на панели элементов в карте кода и отметьте только те типы узлов и связей, которые вас интересуют. Например, отключите отображение папок решения, сборок и пространств имен.
 
-     ![Использование панели «фильтр» для упрощения экрана](../modeling/media/almcodemapfilterpane.png "алмкодемапфилтерпане")
+     ![Use the Filter pane to simplify the display](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")
 
 ## <a name="SeeSourceHeader"></a> Просмотр зависимостей между исходными файлами C и C++ и файлами заголовков
  Если нужно создать более полные карты для проектов C++, установите в этих проектах параметр компилятора для просмотра информации ( **/FR**). См. раздел [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). В противном случае отобразится запрос на установку этого параметра. При нажатии кнопки **ОК**этот параметр будет установлен только для текущей карты. Вы можете скрыть это сообщение для всех последующих карт. Если это сообщение было скрыто, можно снова сделать его видимым. Установите значение `0` для следующего раздела реестра или удалите этот раздел:
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: Аутоенаблесбр**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**
 
  При открытии решения, содержащего проекты Visual C++, обновление базы данных IntelliSense может занять некоторое время. При этом создание карт кода для файлов заголовков (H или `#include`) может оказаться невозможным до тех пор, пока не завершится обновление базы данных IntelliSense. Вы можете наблюдать за ходом обновления в строке состояния Visual Studio. Сведения о разрешении проблем или сообщений, которые появляются потому, что некоторые параметры IntelliSense отключены, см. в разделе [Устранение неполадок в картах для кода C и C++](#Troubleshooting).
 
 - Чтобы просмотреть зависимости между всеми исходными файлами и файлами заголовков в решении, в меню **Архитектура** выберите пункт **Создать диаграмму включаемых файлов**.
 
-     ![Граф зависимостей для машинного кода](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")
+     ![Dependency graph for native code](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")
 
 - Чтобы просмотреть зависимости между открытым файлом и связанными с ним исходными файлами и файлами заголовков, откройте либо исходный файл, либо файл заголовка. Откройте контекстное меню в любом месте файла. Выберите пункт **Создать диаграмму включаемых файлов**.
 
-     ![Граф&#45;зависимостей первого уровня для h file](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
+     ![First&#45;level dependency graph for .h file](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
 ### <a name="Troubleshooting"></a> Устранение неполадок в картах для кода C и C++
  Для кода C и C++ не поддерживаются указанные ниже элементы.
@@ -311,12 +311,12 @@ ms.locfileid: "72657614"
 |---------------|------------------------|--------------------|
 |Не удалось создать карту кода.|Отсутствуют успешно собранные проекты в решении.|Устраните возникшие ошибки сборки и создайте карту кода заново.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не отвечает при попытке создать карту кода из меню **Архитектура** .|Файл базы данных программы (PDB) может быть поврежден.<br /><br /> В PDB-файле хранятся сведения для отладки, такие как сведения о типе, методе и исходном файле.|Выполните сборку решения еще раз и повторите попытку.|
-|Некоторые параметры базы данных обзора IntelliSense отключены.|Возможно, отключены некоторые параметры IntelliSense в диалоговом окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**в** .|Включите нужные параметры.<br /><br /> См. раздел [Параметры, текстовый редактор,C++C/, расширенный](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|Некоторые параметры базы данных обзора IntelliSense отключены.|Возможно, отключены некоторые параметры IntelliSense в диалоговом окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**в** .|Включите нужные параметры.<br /><br /> See [Options, Text Editor, C/C++, Advanced](../ide/reference/options-text-editor-c-cpp-advanced.md).|
 |В узле методов выводится сообщение **Неизвестные методы** .<br /><br /> Эта проблема возникает из-за невозможности разрешить имя метода.|Возможно, в двоичном файле отсутствует базовая таблица перемещений.|Включите параметр **/FIXED:NO** в компоновщике.<br /><br /> См. раздел [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
 ||Возможно, не выполнена сборка файла базы данных программы (PDB).<br /><br /> В PDB-файле хранятся сведения для отладки, такие как сведения о типе, методе и исходном файле.|Включите параметр **/DEBUG** в компоновщике.<br /><br /> См. раздел [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
 ||Невозможно открыть или найти PDB-файл в ожидаемом местоположении.|Убедитесь в том, что PDB-файл существует в ожидаемом местоположении.|
 ||Сведения, необходимые для отладки, удалены из PDB-файла.|Если в компоновщике использовался параметр **/PDBSTRIPPED** , включите полный PDB-файл.<br /><br /> См. раздел [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
-||Вызывающий объект не является функцией и представляет собой либо преобразователь в двоичном файле, либо указатель в разделе данных.|Если вызывающим объектом является преобразователь, попробуйте использовать `_declspec(dllimport)` , чтобы избежать преобразования.<br /><br /> Пример<br /><br /> -   [Общие правила и ограничения](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Импорт вызовов функций с помощью __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||Вызывающий объект не является функцией и представляет собой либо преобразователь в двоичном файле, либо указатель в разделе данных.|Если вызывающим объектом является преобразователь, попробуйте использовать `_declspec(dllimport)` , чтобы избежать преобразования.<br /><br /> Пример<br /><br /> -   [General Rules and Limitations](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importing Function Calls Using __declspec(dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
 ## <a name="RenderMoreQuickly"></a> Повышение скорости отрисовки карты кода
  При создании карты кода в первый раз Visual Studio индексирует все найденные зависимости. Этот процесс может занять некоторое время, особенно для больших решений, но улучшает производительность в будущем. При изменении кода Visual Studio повторно индексирует только обновленный код. Чтобы сократить время, необходимое для отрисовки карты, соблюдайте приведенные ниже правила.
@@ -331,7 +331,7 @@ ms.locfileid: "72657614"
 
 - Удалите ненужные узлы и ссылки, отредактировав файл карты кода. Изменение карты не влияет на базовый код. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-  ![Пропустить сборку и включить родительские кнопки](../modeling/media/codemapsfilterskipbuildicons.png "кодемапсфилтерскипбуилдиконс")
+  ![Skip Build and Include Parents buttons](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 
   Хотя Visual Studio может выполняться при наличии 1 ГБ памяти, рекомендуется, чтобы на компьютере было по крайней мере 2 ГБ памяти во избежание длительных задержек во время создания индекса кода и формирования карты кода в Visual Studio.
 
@@ -348,7 +348,7 @@ ms.locfileid: "72657614"
 
  Чтобы сохранить карту кода как часть определенного проекта, на панели инструментов карты последовательно выберите пункты **Совместный доступ**и **Переместить** \<*Имя_карты_кода*> **.dgml в**и укажите проект, в котором нужно сохранить карту.
 
- ![Перемещение схемы в другой проект](../modeling/media/codemapsmovemapmenu.png "кодемапсмовемапмену")
+ ![Move a map into another project](../modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")
 
  Visual Studio сохранит карту в виде файла DGML, к которому вы можете предоставить доступ другим пользователям Visual Studio Enterprise и Visual Studio Professional.
 
@@ -373,7 +373,7 @@ ms.locfileid: "72657614"
 
 2. Выберите место для сохранения файла.
 
-3. Укажите имя для карты кода. Убедитесь, что для поля **Тип файла** выбрано значение **XPS-файлы (\*. XPS)** . Нажмите кнопку **Сохранить**.
+3. Укажите имя для карты кода. Make sure that the **Save as type** box is set to **XPS files (\*.xps)** . Нажмите кнопку **Сохранить**.
 
 ## <a name="what-else-can-i-do"></a>Что еще можно сделать?
 
