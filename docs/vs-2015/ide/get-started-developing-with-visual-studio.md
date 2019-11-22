@@ -1,5 +1,5 @@
 ---
-title: Начало разработки | Документация Майкрософт
+title: Get Started Developing | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,29 +11,29 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e0dbc2c4a4402cc60febaaf158a7a4578bc78115
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655890"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292066"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вас приветствует Visual Studio! После того как вы [скачаете](http://www.visualstudio.com/community) продукт, сведения на этих страницах помогут вам начать работу по созданию кода.
+Вас приветствует Visual Studio! После того как вы [скачаете](https://visualstudio.microsoft.com/vs/community/) продукт, сведения на этих страницах помогут вам начать работу по созданию кода.
 
 - **[Создание веб-приложений](https://www.visualstudio.com/features/modern-web-tooling-vs):** средства для создания и развертывания современных веб-приложений.
 
-     [Пройти обучение](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) | [Посмотреть документы](https://docs.asp.net/) | [Посмотреть видео](http://www.asp.net/vnext)
+     [Пройти обучение](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) | [Посмотреть документы](https://docs.asp.net/) | [Посмотреть видео](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
 
-- **[Создание кроссплатформенных мобильных приложений в HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)** : Apache Cordova — кроссплатформенная среда с открытым исходным кодом, основанная на HTML/CSS/Javascript.  Код Javascript выполняется в оболочке, нацеленной на конкретную платформу и обеспечивающей доступ ко всем возможностям оборудования устройства. Разработка приложений для Apple Store, магазина Android и Магазина Windows.
+- **[Создание кроссплатформенных мобильных приложений в HTML/Javascript (Apache Cordova)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova — кроссплатформенная среда с открытым исходным кодом, основанная на HTML/CSS/Javascript.  Код Javascript выполняется в оболочке, нацеленной на конкретную платформу и обеспечивающей доступ ко всем возможностям оборудования устройства. Разработка приложений для Apple Store, магазина Android и Магазина Windows.
 
-     [Скачать пример](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) | [Пройти обучение](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) | [Посмотреть документы](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) | [Посмотреть видео](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [Скачать пример](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) | [Пройти обучение](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) | [Посмотреть документы](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) | [Посмотреть видео](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[Создание кроссплатформенных мобильных приложений на C# или Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : начало работы с Visual Studio и средствами для Xamarin в целях создания мобильных приложений, работающих на Android, iOS и универсальной платформе Windows из базы общего кода.
 
-     Загрузка примера: [таскипортабле](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (собственный пользовательский интерфейс) или [Пример Xamarin Forms TODO](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (общий пользовательский интерфейс Xamarin. &#124;Forms) [руководство](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [по просмотру документов](https://msdn.microsoft.com/library/mt299001.aspx) &#124;Просмотр [видео](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     Load a sample: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (native UI) or  [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms shared UI) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Browse the docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[Создание кроссплатформенных приложений и библиотек на C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Перейдите сюда, чтобы начать создавать приложения и библиотеки C++, которые работают на Android, iOS и универсальной платформе Windows.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72655890"
 
 - **[Создание игр с помощью Unity](../cross-platform/visual-studio-tools-for-unity.md)** : создание кроссплатформенных игр на платформе Unity.
 
-     [Скачать пример](http://unity3d.com/learn/resources/downloads) | [Пройти обучение](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) | [Посмотреть документы](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) | [Посмотреть видео](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
+     [Скачать пример](http://unity3d.com/learn/resources/downloads) | [Пройти обучение](https://learn.unity.com/projects) | [Посмотреть документы](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) | [Посмотреть видео](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
 - **[Создание приложений на универсальной платформе Windows](https://dev.windows.com/windows-apps)** : создание приложений, которые работают на универсальной платформе Windows (XBox, ПК, планшетах, Windows Phone, Surface Hub и в "Интернете вещей").
 
@@ -55,9 +55,9 @@ ms.locfileid: "72655890"
 
      [Скачать пример](https://github.com/microsoft/windows-classic-samples) | [Пройти обучение](https://msdn.microsoft.com/library/dd492171.aspx) | [Посмотреть документы](https://dev.windows.com/desktop)
 
-- Создание **[приложений Office](https://msdn.microsoft.com/library/fp161347.aspx)** . Начните создавать приложения Office, которые расширяют и настраивают Word, Excel, Outlook и PowerPoint с помощью служб Office 365.
+- **[Make Office applications](https://msdn.microsoft.com/library/fp161347.aspx)** : Get started creating Office applications that extend and customize Word, Excel, Outlook and PowerPoint with Office 365 services.
 
-     [Скачать пример](https://code.msdn.microsoft.com/office365/) | [Пройти обучение](http://dev.office.com/getting-started/office365apis) | [Посмотреть документы](https://msdn.microsoft.com/office/aa905340.aspx) | [Посмотреть видео](http://dev.office.com/videos)
+     [Скачать пример](https://code.msdn.microsoft.com/office365/) | [Пройти обучение](https://developer.microsoft.com/graph) | [Посмотреть документы](https://msdn.microsoft.com/office/aa905340.aspx) | [Посмотреть видео](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 
 - **[Тур по Visual Studio Team Services и Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Дополнительные сведения о Visual Studio Team Services и Team Foundation Server.
 

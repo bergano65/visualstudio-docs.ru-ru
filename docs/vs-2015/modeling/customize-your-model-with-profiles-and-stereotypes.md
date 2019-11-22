@@ -1,5 +1,5 @@
 ---
-title: Настройка модели с помощью профилей и стереотипов | Документация Майкрософт
+title: Customize your model with profiles and stereotypes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4f83fcf3ea500e0640a226b80d3d3c0e2c7ed869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655091"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301193"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Настройка модели с помощью профилей и стереотипов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio стандартные элементы модели UML, например классы и компоненты, можно адаптировать для определенных целей. Можно применить *стереотип* к элементу модели, который может изменить список свойств элемента. Стереотипы определяются в коллекциях, называемых *профилями*.
+В Visual Studio стандартные элементы модели UML, например классы и компоненты, можно адаптировать для определенных целей. You can apply a *stereotype* to a model element that can change the element's list of properties. Stereotypes are defined within collections called *profiles*.
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -31,7 +31,7 @@ ms.locfileid: "72655091"
 
  Стереотипы можно устанавливать в списке свойств элемента. Для основных видов фигур на схеме примененные стереотипы отображаются и на фигуре, как показано в примере.
 
- ![Класс UML с стереотипом.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![A UML class with a stereotype.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Если создать модель с помощью профиля, а затем отправить кому-либо эту модель, получатель не сможет видеть стереотипы, если на его компьютере не установлен тот же профиль.
@@ -45,4 +45,3 @@ ms.locfileid: "72655091"
 |[Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md)|Программа позволяет определять собственные стереотипы и средства, подходящие для вашего приложения.<br /><br /> Например, при разработке программного обеспечения для банка можно определить для применения к классам стереотип Account (Счет). Это позволит описывать различные типы счетов и их отношения, используя схемы классов.|
 |[Установка профиля UML](../modeling/install-a-uml-profile.md)|Если кто-то предоставил вам UML-профиль, его можно установить на компьютере.|
 |[Определение пользовательского элемента для панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md)|Настраиваемый элемент панели элементов позволяет избежать постоянной установки стереотипа для новых элементов.|
-|[Цвет UML-классов по стереотипу](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Данный пример кода расширяет схемы UML. Цвет формы UML задается автоматически в соответствии со стереотипом элемента.|

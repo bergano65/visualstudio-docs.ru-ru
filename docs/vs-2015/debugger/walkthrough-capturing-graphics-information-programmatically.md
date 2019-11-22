@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Запись графических сведений программными средствами | Документация Майкрософт
+title: 'Walkthrough: Capturing Graphics Information Programmatically | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444333"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296901"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "63444333"
     ```  
   
     > [!IMPORTANT]
-    > Не включайте заголовок файла vsgcapture.h—which поддерживает программный захват в Windows 8.0 и более ранних версий, для выполнения программного захвата в приложениях Windows 8.1. Этот заголовок несовместим с DirectX 11.2. Если этот файл включен после заголовка d3d11_2.h включено, компилятор выдает предупреждение. Если vsgcapture.h включен перед d3d11_2.h, приложение не запустится.  
+    > Do not include the header file vsgcapture.h—which supports programmatic capture on Windows 8.0 and earlier—to perform programmatic capture in your Windows 8.1 apps. Этот заголовок несовместим с DirectX 11.2. If this file is included after the d3d11_2.h header is included, the compiler issues a warning. If vsgcapture.h is included before d3d11_2.h, the app will not start.  
   
     > [!NOTE]
     > Если пакет SDK DirectX от июня 2010 г. установлен на компьютере и путь включаемых файлов проекта содержит строку `%DXSDK_DIR%includex86`, переместите ее в конец пути включаемых файлов. Сделайте то же самое для пути к библиотеке.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Поскольку пакет SDK для Windows Phone 8.1 не включает заголовок DXProgrammableCapture.h, необходимо определить `IDXGraphicsAnalysis` интерфейс самостоятельно, чтобы вы могли использовать `BeginCapture()` и `EndCapture()` методы. Включите другие заголовки, как описано в предыдущем разделе.  
+ Because the Windows Phone 8.1 SDK doesn't include the DXProgrammableCapture.h header, you'll need to define the `IDXGraphicsAnalysis` interface yourself so that you can use the `BeginCapture()` and `EndCapture()` methods. Включите другие заголовки, как описано в предыдущем разделе.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Определение интерфейса IDXGraphicsAnalysis  
   
@@ -85,7 +85,7 @@ ms.locfileid: "63444333"
  Чтобы получить возможность захватывать графические данные из DirectX 11.2, необходимо получить интерфейс отладки DXGI.  
   
 > [!IMPORTANT]
-> При использовании программного захвата, необходимо запустить приложение в режиме диагностики графики (Alt + F5 в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) или в разделе [программа командной строки для захвата](../debugger/command-line-capture-tool.md).  
+> When using programmatic capture, you must still run your app under graphics diagnostics (Alt+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) or under the [Command-Line Capture Tool](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Получение интерфейса IDXGraphicsAnalysis  
   
@@ -145,7 +145,7 @@ ms.locfileid: "63444333"
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>подготовка компьютера к использованию программного захвата;  
  API программного захвата использует Инструменты удаленной отладки для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для предоставления функциональности захвата. На компьютере, на котором будет выполняться приложение, должны быть установлены Инструменты удаленной отладки, даже если программный захват используется на локальном компьютере. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] не следует запускать при выполнении программного захвата на локальном компьютере.  
   
- Для использования API удаленного захвата в приложении, которое работает на компьютере, необходимо сначала установить Инструменты удаленной отладки для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] на этом компьютере. Разные версии Инструментов удаленной отладки поддерживают различные аппаратные платформы. Сведения о способах установки средств удаленной отладки см. на [странице скачивания средств удаленной отладки](http://go.microsoft.com/fwlink/p/?LinkId=246691) веб-сайта для скачивания файлов Майкрософт.  
+ Для использования API удаленного захвата в приложении, которое работает на компьютере, необходимо сначала установить Инструменты удаленной отладки для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] на этом компьютере. Разные версии Инструментов удаленной отладки поддерживают различные аппаратные платформы. Сведения о способах установки средств удаленной отладки см. на [странице скачивания средств удаленной отладки](https://go.microsoft.com/fwlink/p/?LinkId=246691) веб-сайта для скачивания файлов Майкрософт.  
   
  Кроме того, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может устанавливать необходимые компоненты для выполнения удаленного захвата для 32-разрядных приложений.  
   
@@ -182,7 +182,7 @@ ms.locfileid: "63444333"
   
    Если не выполнить это действие, файл будет иметь имя default.vsglog. Если элемент `DONT_SAVE_VSGLOG_TO_TEMP`не определен, расположение файла является относительным к временному каталогу. В противном случае оно является относительным к рабочему каталогу или представляет собой другое расположение, если указано абсолютное имя файла.  
   
-  Для [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения, расположение временного каталога для каждого пользователя и приложения и обычно находится в расположении, например C:\users\\*username*\AppData\Local\Packages\\ *имя семейства пакетов*\TempState\\. Для классических приложений расположение временного каталога, относится к каждому пользователю и обычно находится в расположении, например C:\Users\\*username*\AppData\Local\Temp\\.  
+  For [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps, the location of the temp directory is specific to each user and app, and is typically found in a location such as C:\users\\*username*\AppData\Local\Packages\\*package family name*\TempState\\. For desktop apps, the location of the temp directory is specific to each user and is typically found in a location such as C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 > Для записи в определенное расположение необходимо иметь разрешения на запись в него; в противном случае возникает ошибка. Имейте в виду, что приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] имеют больше ограничений, чем классические приложения, касающиеся того, куда они могут записывать данные. Для записи в некоторые расположения может потребоваться дополнительная настройка.  
@@ -196,9 +196,9 @@ ms.locfileid: "63444333"
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве было продемонстрировано, как захватывать графические данные программным путем. Далее можно перейти к рассмотрению следующего этапа.  
   
-- Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. See [Overview](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство: запись графических сведений](../debugger/walkthrough-capturing-graphics-information.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Walkthrough: Capturing Graphics Information](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Программа командной строки для захвата](../debugger/command-line-capture-tool.md)

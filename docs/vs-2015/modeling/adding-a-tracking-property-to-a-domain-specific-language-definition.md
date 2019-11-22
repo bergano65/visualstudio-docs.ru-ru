@@ -1,5 +1,5 @@
 ---
-title: Добавление свойства отслеживания в определение предметно-ориентированного языка | Документация Майкрософт
+title: Adding a Tracking Property to a Domain-Specific Language Definition | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,163 +13,163 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609249"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292643"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В этом пошаговом руководстве показано, как добавить свойство отслеживания в модель предметной области.
+This walkthrough shows how to add a tracking property to a domain model.
 
- Свойство *домена отслеживания* — это свойство, которое может быть обновлено пользователем, но имеет значение по умолчанию, вычисляемое с использованием значений других свойств или элементов домена.
+ A *tracking domain* property is a property that can be updated by the user but which has a default value that is calculated by using the values of other domain properties or elements.
 
- Например, в Средства предметно-ориентированных языков (средства DSL) свойство "отображаемое имя" доменного класса имеет значение по умолчанию, вычисляемое с помощью имени доменного класса, но пользователь может изменить это значение во время разработки или сбросить его до вычисляемого значения.
+ For example, in the Domain-Specific Language Tools (DSL Tools), the Display Name property of a domain class has a default value that is calculated by using the name of the domain class, but a user can change the value at design time or reset it to the calculated value.
 
- В этом пошаговом руководстве вы создадите доменный язык (DSL) с свойством отслеживания пространства имен, имеющим значение по умолчанию, основанное на свойстве пространства имен по умолчанию для модели. Дополнительные сведения о свойствах отслеживания см. в разделе [Определение свойств отслеживания](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+ In this walkthrough, you create a domain-specific language (DSL) that has a Namespace tracking property that has a default value based on the Default Namespace property of the model. For more information about tracking properties, see [Defining Tracking Properties](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
-- Средства DSL поддерживают дескрипторы свойств отслеживания. Однако конструктор DSL нельзя использовать для добавления свойства отслеживания в язык. Поэтому необходимо добавить пользовательский код для определения и реализации свойства отслеживания.
+- The DSL Tools support tracking property descriptors. However, the DSL designer cannot be used to add a tracking property to a language. Therefore, you must add custom code to define and implement the tracking property.
 
-  Свойство отслеживания имеет два состояния: отслеживание и обновление пользователем. Свойства отслеживания имеют следующие характеристики.
+  A tracking property has two states: tracking, and updated by the user. Tracking properties have the following features:
 
-- В состоянии отслеживания значение свойства отслеживания вычисляется, и значение обновляется по мере изменения других свойств модели.
+- When in the tracking state, the value of the tracking property is calculated, and the value is updated as other properties in the model change.
 
-- При изменении состояния пользователя значение свойства отслеживания оставляет значение, которое пользователь последним установил свойство.
+- When in the updated by user state, the value of the tracking property retains the value to which the user last set the property.
 
-- В окне **Свойства** команда **сброса** для свойства Отслеживание включается только в том случае, если свойство находится в состоянии Обновлено пользователем. Команда **Reset** устанавливает отслеживаемое состояние свойства.
+- In the **Properties** window, the **Reset** command for the tracking property is only enabled when the property is in the updated by user state. The **Reset** command sets the tracking property state to tracking.
 
-- В окне **Свойства** , если свойство отслеживания находится в состоянии отслеживания, его значение отображается в обычном шрифте.
+- In the **Properties** window, when the tracking property is in the tracking state, its value is displayed in a regular font.
 
-- В окне **Свойства** , когда свойство отслеживания находится в состоянии Обновлено пользователем, его значение отображается полужирным шрифтом.
+- In the **Properties** window, when the tracking property is in the updated by user state, its value is displayed in a bold font.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
- Перед началом работы с этим пошаговым руководством необходимо сначала установить следующие компоненты:
+ Before you can start this walkthrough, you must first install these components:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
-## <a name="creating-the-dsl-project"></a>Создание проекта DSL
- Создайте проект для конкретного доменного языка.
+## <a name="creating-the-dsl-project"></a>Creating the DSL Project
+ Create the project for your domain-specific language.
 
 #### <a name="to-create-the-project"></a>Создание проекта
 
-1. Создайте проект Конструктор предметно-ориентированных языков. Присвойте обработчику события имя `TrackingPropertyDSL`.
+1. Create a Domain-Specific Language Designer project. Присвойте обработчику события имя `TrackingPropertyDSL`.
 
-2. В **мастере конструктор предметно-ориентированных языков**задайте следующие параметры.
+2. In the **Domain-Specific Language Designer Wizard**, set the following options:
 
-    1. Выберите шаблон **минималлангуаже** .
+    1. Select the **MinimalLanguage** template.
 
-    2. Используйте имя по умолчанию для предметно-ориентированного языка `TrackingPropertyDSL`.
+    2. Use the default name for the domain-specific language, `TrackingPropertyDSL`.
 
-    3. Задайте для расширения файлов модели значение `trackingPropertyDsl`.
+    3. Set the extension for model files to `trackingPropertyDsl`.
 
-    4. Используйте значок шаблона по умолчанию для файлов модели.
+    4. Use the default template icon for the model files.
 
-    5. Задайте имя продукта для `Product Name`.
+    5. Set the name of the product to `Product Name`.
 
-    6. Задайте имя компании, `Company Name`.
+    6. Set the name of the company to `Company Name`.
 
-    7. Используйте значение по умолчанию для корневого пространства имен проектов в решении `CompanyName.ProductName.TrackingPropertyDSL`.
+    7. Use the default value for the root namespace for projects in the solution, `CompanyName.ProductName.TrackingPropertyDSL`.
 
-    8. Разрешите мастеру создать файл ключа строгого имени для сборок.
+    8. Allow the wizard to create a strong name key file for your assemblies.
 
-    9. Просмотрите сведения о решении и нажмите кнопку **Готово** , чтобы создать проект определения DSL.
+    9. Review the details of the solution, and then click **Finish** to create the DSL definition project.
 
-## <a name="customizing-the-default-dsl-definition"></a>Настройка определения DSL по умолчанию
- В этом разделе вы настроите определение DSL, чтобы оно содержало следующие элементы:
+## <a name="customizing-the-default-dsl-definition"></a>Customizing the Default DSL Definition
+ In this section, you customize the DSL definition to contain the following items:
 
-- Свойство отслеживания пространства имен для каждого элемента модели.
+- A Namespace tracking property for every element of the model.
 
-- Логическое свойство Иснамеспацетраккинг для каждого элемента модели. Это свойство будет указывать, находится ли свойство отслеживания в состоянии отслеживания или в обновленном состоянии пользователем.
+- A Boolean IsNamespaceTracking property for every element of the model. This property will indicate whether the tracking property is in the tracking state or in the updated by user state.
 
-- Свойство пространства имен по умолчанию для модели. Это свойство будет использоваться для вычисления значения по умолчанию для свойства отслеживания пространства имен.
+- A Default Namespace property for the model. This property will be used to calculate the default value of the Namespace tracking property.
 
-- Вычисляемое свойство Кустомелементс для модели. Это свойство будет указывать долю элементов, имеющих пользовательское пространство имен.
+- A CustomElements calculated property for the model. This property will indicate the proportion of elements that have a custom namespace.
 
-#### <a name="to-add-the-domain-properties"></a>Добавление свойств домена
+#### <a name="to-add-the-domain-properties"></a>To add the domain properties
 
-1. В конструкторе DSL щелкните правой кнопкой мыши класс домена **пространстве ExampleModel** , наведите указатель на пункт **Добавить**и выберите пункт **DomainProperty**.
+1. In the DSL designer, right-click the **ExampleModel** domain class, point to **Add**, and then click **DomainProperty**.
 
-    1. Назовите новое свойство `DefaultNamespace`.
+    1. Name the new property `DefaultNamespace`.
 
-    2. В окне **Свойства** нового свойства задайте **значение по умолчанию** `DefaultNamespace` и присвойте параметру **тип** **строковое**.
+    2. In the **Properties** window for the new property, set **Default Value** to `DefaultNamespace`, and set **Type** to **String**.
 
-2. В доменный класс **пространстве ExampleModel** добавьте свойство домена с именем `CustomElements`.
+2. To the **ExampleModel** domain class, add a domain property named `CustomElements`.
 
-     В окне **Свойства** нового свойства задайте для параметра **тип** значение **вычисляемое**.
+     In the **Properties** window for the new property, set **Kind** to **Calculated**.
 
-3. В доменный класс **ексамплилемент** добавьте свойство домена с именем `Namespace`.
+3. To the **ExampleElement** domain class, add a domain property named `Namespace`.
 
-     В окне **Свойства** для нового **Свойства задайте для параметра значение значение** **false**и задайте для параметра **тип** значение **CustomStorage**.
+     In the **Properties** window for the new property, set **Is Browsable** to **False**, and set **Kind** to **CustomStorage**.
 
-4. В доменный класс **ексамплилемент** добавьте свойство домена с именем `IsNamespaceTracking`.
+4. To the **ExampleElement** domain class, add a domain property named `IsNamespaceTracking`.
 
-     В окне **Свойства** для нового свойства задайте для параметра вид значение **false**, в поле **по умолчанию** **—** `true`, а для параметра **тип** — **логическое**.
+     In the **Properties** window for the new property, set **Is Browsable** to **False**, set **Default Value** to `true`, and set **Type** to **Boolean**.
 
-#### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Обновление элементов схемы и сведений о DSL
+#### <a name="to-update-the-diagram-elements-and-dsl-details"></a>To update the diagram elements and DSL details
 
-1. В конструкторе DSL щелкните правой кнопкой мыши фигуру Geometry **ексамплешапе** , наведите указатель на пункт **Добавить**, а затем выберите **текст декоратор**.
+1. In the DSL designer, right-click the **ExampleShape** geometry shape, point to **Add**, and then click **Text Decorator**.
 
-    1. Назовите новый декоратор текста `NamespaceDecorator`.
+    1. Name the new text decorator `NamespaceDecorator`.
 
-    2. В окне **Свойства** декоратора текста задайте для параметра **Расположение** значение **InnerBottomLeft**.
+    2. In the **Properties** window for the text decorator, set **Position** to **InnerBottomLeft**.
 
-2. В конструкторе DSL выберите строку, соединяющую класс **ексамплилемент** с фигурой **ексамплешапе** .
+2. In the DSL designer, select the line that connects the **ExampleElement** class to the **ExampleShape** shape.
 
-    1. В окне **сведения о DSL** перейдите на вкладку **карты декораторов** .
+    1. In the **DSL Details** window, select the **Decorator Maps** tab.
 
-    2. В списке **декораторов** выберите **намеспацедекоратор**, установите его флажок, а затем в списке **отображаемое свойство** выберите **пространство имен**.
+    2. In the **Decorators** list, select **NamespaceDecorator**, select its check box and then on the **Display property** list, select **Namespace**.
 
-3. В **обозревателе DSL**разверните папку **классы доменов** , щелкните правой кнопкой мыши узел **Ексамплилемент** и выберите команду **Добавить новый дескриптор типа домена**.
+3. In **DSL Explorer**, expand the **Domain Classes** folder, right-click the **ExampleElement** node, and then click **Add New Domain Type Descriptor**.
 
-    1. Разверните узел **ексамплилемент** и выберите узел **дескриптор настраиваемого типа (дескриптор типа домена)** .
+    1. Expand the **ExampleElement** node, and select the **Custom Type Descriptor (Domain Type Descriptor)** node.
 
-    2. В окне **Свойства** для дескриптора типа домена присвойте параметру **Custom закодировано** **значение true**.
+    2. In the **Properties** window for the domain type descriptor, set **Custom Coded** to **True**.
 
-4. В **обозревателе DSL**выберите узел **поведение сериализации XML** .
+4. In **DSL Explorer**, select the **Xml Serialization Behavior** node.
 
-    1. В окне **Свойства** установите для параметра **Пользовательская** отправка **значение true**.
+    1. In the **Properties** window, set **Custom Post Load** to **True**.
 
-## <a name="transforming-templates"></a>Преобразование шаблонов
- После определения доменных классов и свойств для DSL можно убедиться, что определение DSL может быть правильно преобразовано для повторного создания кода проекта.
+## <a name="transforming-templates"></a>Transforming Templates
+ Now that you have defined the domain classes and properties for your DSL, you can verify that the DSL definition can be transformed correctly to regenerate the code for your project.
 
-#### <a name="to-transform-the-text-templates"></a>Преобразование текстовых шаблонов
+#### <a name="to-transform-the-text-templates"></a>To transform the text templates
 
-1. На панели инструментов **Обозреватель решений** нажмите кнопку **преобразовать все шаблоны**.
+1. On the **Solution Explorer** toolbar, click **Transform All Templates**.
 
-2. Система повторно создает код для решения и сохраняет DslDefinition. DSL. Дополнительные сведения о XML-формате файлов определений см. [в файле DslDefinition. DSL](../modeling/the-dsldefinition-dsl-file.md).
+2. The system regenerates the code for the solution, and saves DslDefinition.dsl. For information about the XML format of definition files, see [The DslDefinition.dsl File](../modeling/the-dsldefinition-dsl-file.md).
 
-## <a name="creating-files-for-custom-code"></a>Создание файлов для пользовательского кода
- При преобразовании всех шаблонов система создает исходный код, определяющий доменный язык в проектах DSL и DslPackage. Чтобы избежать конфликта с созданным текстом, напишите пользовательский код в файлах, которые отличаются от созданных файлов кода.
+## <a name="creating-files-for-custom-code"></a>Creating Files for Custom Code
+ When you transform all templates, the system generates the source code that defines your domain-specific language in the Dsl and DslPackage projects. So that you can avoid interfering with the generated text, write your custom code in files that are distinct from the generated code files.
 
- Необходимо указать код для сохранения значения и состояния свойства отслеживания. Чтобы облегчить различение пользовательского кода от созданного кода и избежать конфликтов именования файлов, разместите файлы пользовательского кода в отдельной вложенной папке.
+ You must provide code for maintaining the value and the state of your tracking property. To help you distinguish your custom code from the generated code, and to avoid file naming conflicts, put your custom code files in a separate subfolder.
 
-#### <a name="to-create-the-code-files"></a>Создание файлов кода
+#### <a name="to-create-the-code-files"></a>To create the code files
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши проект **DSL** , наведите указатель на пункт **добавить**и выберите пункт **создать папку**. Назовите новую папку `CustomCode`.
+1. In **Solution Explorer**, right-click the **DSL** project, point to **Add**, and then click **New Folder**. Name the new folder `CustomCode`.
 
-2. Щелкните правой кнопкой мыши новую папку **значение CustomCode** , выберите команду **Добавить**, а затем пункт **новый элемент**.
+2. Right-click the new **CustomCode** folder, point to **Add**, and then click **New Item**.
 
-3. Выберите шаблон **файл кода** , задайте **имя** для `NamespaceTrackingProperty.cs` и нажмите кнопку **ОК**.
+3. Select the **Code File** template, set the **Name** to `NamespaceTrackingProperty.cs`, and then click **OK**.
 
-     Файл NamespaceTrackingProperty.cs создается и открывается для редактирования.
+     The NamespaceTrackingProperty.cs file is created and opened for editing.
 
-4. В папке создайте следующие файлы кода: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs` и `TypeDescriptor.cs`.
+4. In the folder, create the following code files: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, and `TypeDescriptor.cs`.
 
-5. В проекте **DslPackage** также создайте папку `CustomCode` и добавьте в нее файл `Package.cs` Code.
+5. In the **DslPackage** project, also create a `CustomCode` folder, and add to it a `Package.cs` code file.
 
-## <a name="adding-helper-classes-to-support-tracking-properties"></a>Добавление вспомогательных классов для поддержки свойств отслеживания
- В файл HelperClasses.cs добавьте классы `TrackingHelper` и `CriticalException`, как показано ниже. Далее в этом пошаговом руководстве вы будете ссылаться на эти классы.
+## <a name="adding-helper-classes-to-support-tracking-properties"></a>Adding Helper Classes to Support Tracking Properties
+ To the HelperClasses.cs file, add the `TrackingHelper` and `CriticalException` classes as follows. You will reference these classes later in this walkthrough.
 
-#### <a name="to-add-the-helper-classes"></a>Добавление вспомогательных классов
+#### <a name="to-add-the-helper-classes"></a>To add the helper classes
 
-1. Добавьте следующий код в файл HelperClasses.cs.
+1. Add the following code to the HelperClasses.cs file.
 
     ```csharp
     using System;
@@ -244,17 +244,17 @@ ms.locfileid: "72609249"
     }
     ```
 
-## <a name="adding-custom-code-for-the-custom-type-descriptor"></a>Добавление пользовательского кода для пользовательского дескриптора типа
- Реализуйте метод `GetCustomProperties` для дескриптора типа `ExampleModel` доменного класса.
+## <a name="adding-custom-code-for-the-custom-type-descriptor"></a>Adding Custom Code for the Custom Type Descriptor
+ Implement the `GetCustomProperties` method for the type descriptor for the `ExampleModel` domain class.
 
 > [!NOTE]
-> Код, создаваемый инструментами DSL для пользовательского дескриптора типа для `ExampleModel` вызывает `GetCustomProperties`; Однако средства DSL не создают код, реализующий метод.
+> The code that the DSL Tools generate for the custom type descriptor for `ExampleModel` calls `GetCustomProperties`; however, the DSL Tools do not generate code that implements the method.
 
- При определении этого метода создается дескриптор свойства отслеживания для свойства отслеживания пространства имен. Кроме того, предоставление атрибутов для свойства отслеживания позволяет окну **свойств** правильно отображать свойство.
+ Defining this method creates the tracking property descriptor for the Namespace tracking property. Also, providing attributes for the tracking property enables the **Properties** window to display the property correctly.
 
-#### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Изменение дескриптора типа для доменного класса пространстве ExampleModel
+#### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>To modify the type descriptor for the ExampleModel domain class
 
-1. Добавьте следующий код в файл TypeDescriptor.cs.
+1. Add the following code to the TypeDescriptor.cs file.
 
     ```csharp
     using System;
@@ -312,12 +312,12 @@ ms.locfileid: "72609249"
     }
     ```
 
-## <a name="adding-custom-code-for-the-package"></a>Добавление пользовательского кода для пакета
- Созданный код определяет поставщик описания типа для доменного класса Ексамплилемент. Однако необходимо добавить код, чтобы указать DSL использовать поставщик описания типа.
+## <a name="adding-custom-code-for-the-package"></a>Adding Custom Code for the Package
+ The generated code defines a type description provider for the ExampleElement domain class; however, you must add code to instruct the DSL to use this type description provider.
 
-#### <a name="to-update-the-dsl-package-to-use-your-custom-type-descriptor"></a>Обновление пакета DSL для использования пользовательского дескриптора типа
+#### <a name="to-update-the-dsl-package-to-use-your-custom-type-descriptor"></a>To update the DSL package to use your custom type descriptor
 
-1. Добавьте следующий код в файл Package.cs.
+1. Add the following code to the Package.cs file.
 
     ```csharp
     using System.ComponentModel;
@@ -340,21 +340,21 @@ ms.locfileid: "72609249"
     }
     ```
 
-## <a name="adding-custom-code-for-the-model"></a>Добавление пользовательского кода для модели
- Реализуйте метод `GetCustomElementsValue` для класса `ExampleModel` домена.
+## <a name="adding-custom-code-for-the-model"></a>Adding Custom Code for the Model
+ Implement the `GetCustomElementsValue` method for the `ExampleModel` domain class.
 
 > [!NOTE]
-> Код, создаваемый инструментами DSL для `ExampleModel`, вызывает `GetCustomElementsValue`; Однако средства DSL не создают код, реализующий метод.
+> The code that the DSL Tools generate for `ExampleModel` calls `GetCustomElementsValue`; however, the DSL Tools do not generate code that implements the method.
 
- Определение метода `GetCustomElementsValue` предоставляет логику для вычисляемого свойства Кустомелементс `ExampleModel`. Этот метод подсчитывает количество `ExampleElement` классов доменов, имеющих свойство отслеживания пространства имен с измененным пользователем значением, и возвращает строку, представляющую это количество как часть общего числа элементов в модели.
+ Defining the `GetCustomElementsValue` method provides the logic for the CustomElements calculated property of `ExampleModel`. This method counts the number of `ExampleElement` domain classes that have a Namespace tracking property that has a user-updated value, and returns a string that represents this count as a proportion of the total elements in the model.
 
- Кроме того, добавьте метод `OnDefaultNamespaceChanged` для `ExampleModel` и переопределите метод `OnValueChanged` `DefaultNamespacePropertyHandler` вложенного класса `ExampleModel`, чтобы вызвать `OnDefaultNamespaceChanged`.
+ In addition, add an `OnDefaultNamespaceChanged` method to `ExampleModel`, and override the `OnValueChanged` method of the `DefaultNamespacePropertyHandler` nested class of `ExampleModel` to call `OnDefaultNamespaceChanged`.
 
- Так как свойство свойство DefaultNamespace используется для вычисления свойства отслеживания пространства имен, `ExampleModel` должен уведомлять все `ExampleElement`ные классы домена о том, что значение свойство DefaultNamespace изменилось.
+ Because the DefaultNamespace property is used to calculate the Namespace tracking property, `ExampleModel` must notify all `ExampleElement` domain classes that the value of DefaultNamespace has changed.
 
-#### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Изменение обработчика свойства для свойства Tracked
+#### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>To modify the property handler for the tracked property
 
-1. Добавьте следующий код в файл ExampleModel.cs.
+1. Add the following code to the ExampleModel.cs file.
 
     ```csharp
     using System.Linq;
@@ -417,19 +417,19 @@ ms.locfileid: "72609249"
     }
     ```
 
-## <a name="adding-custom-code-for-the-tracking-property"></a>Добавление пользовательского кода для свойства отслеживания
- Добавьте `CalculateNamespace` метод в доменный класс `ExampleElement`.
+## <a name="adding-custom-code-for-the-tracking-property"></a>Adding Custom Code for the Tracking Property
+ Add a `CalculateNamespace` method to the `ExampleElement` domain class.
 
- Определение этого метода обеспечивает логику для вычисляемого свойства Кустомелементс `ExampleModel`. Этот метод подсчитывает количество `ExampleElement` классов доменов, имеющих свойство отслеживания пространства имен, которое находится в состоянии "Обновлено пользователем", и возвращает строку, представляющую это количество как часть общего числа элементов в модели.
+ Defining this method provides the logic for the CustomElements calculated property of `ExampleModel`. This method counts the number of `ExampleElement` domain classes that have a Namespace tracking property that is in the updated by user state, and returns a string that represents this count as a proportion of the total elements in the model.
 
- Кроме того, добавьте хранилище для методов и, чтобы получить и задать свойство "пользовательское хранилище" для пространства имен `ExampleElement` доменного класса.
+ Also, add storage for, and methods to get and set, the Namespace custom storage property of the `ExampleElement` domain class.
 
 > [!NOTE]
-> Код, создаваемый инструментами DSL для `ExampleModel`, вызывает методы get и Set; Однако средства DSL не создают код, реализующий методы.
+> The code that the DSL Tools generate for `ExampleModel` calls the get and set methods; however, the DSL Tools do not generate code that implements the methods.
 
-#### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Добавление метода для пользовательского дескриптора типа
+#### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>To add the method for the custom type descriptor
 
-1. Добавьте следующий код в файл NamespaceTrackingProperty.cs.
+1. Add the following code to the NamespaceTrackingProperty.cs file.
 
     ```csharp
     using System;
@@ -587,15 +587,15 @@ ms.locfileid: "72609249"
     }
     ```
 
-## <a name="adding-custom-code-to-support-serialization"></a>Добавление пользовательского кода для поддержки сериализации
- Добавьте код для поддержки пользовательского поведения после загрузки для сериализации XML.
+## <a name="adding-custom-code-to-support-serialization"></a>Adding Custom Code to Support Serialization
+ Add code to support the custom post-load behavior for XML serialization.
 
 > [!NOTE]
-> Код, создаваемый инструментами DSL, вызывает методы `OnPostLoadModel` и `OnPostLoadModelAndDiagram`; Однако средства DSL не создают код, реализующий эти методы.
+> The code that the DSL Tools generate calls the `OnPostLoadModel` and `OnPostLoadModelAndDiagram` methods; however, the DSL Tools do not generate code that implements these methods.
 
-#### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Добавление кода для поддержки пользовательского поведения после загрузки
+#### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>To add code to support the custom post-load behavior
 
-1. Добавьте следующий код в файл Serialization.cs.
+1. Add the following code to the Serialization.cs file.
 
     ```csharp
     using System;
@@ -717,48 +717,48 @@ ms.locfileid: "72609249"
     }
     ```
 
-## <a name="testing-the-language"></a>Тестирование языка
- Следующим шагом является создание и запуск конструктора DSL в новом экземпляре [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], чтобы можно было убедиться, что свойство отслеживания работает правильно.
+## <a name="testing-the-language"></a>Testing the Language
+ The next step is to build and run the DSL designer in a new instance of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] so that you can verify that the tracking property is working correctly.
 
-#### <a name="to-exercise-the-language"></a>Чтобы применить язык
+#### <a name="to-exercise-the-language"></a>To exercise the language
 
 1. В меню **Построить** выберите пункт **Перестроить решение**.
 
 2. В меню **Отладка** щелкните **Начать отладку**.
 
-     Экспериментальная сборка [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] открывает решение для **отладки** , которое содержит пустой тестовый файл.
+     The experimental build of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] opens the **Debugging** solution, which contains an empty test file.
 
-3. В **Обозреватель решений**дважды щелкните файл Test. траккингпропертидсл, чтобы открыть его в конструкторе, а затем щелкните область конструктора.
+3. In **Solution Explorer**, double-click the Test.trackingPropertyDsl file to open it in the designer, and then click the design surface.
 
-     Обратите внимание, что в окне **Свойства** схемы свойство **Namespace по умолчанию** имеет значение **свойство DefaultNamespace**, а свойство **Custom Elements** — **0/0**.
+     Notice that in the **Properties** window for the diagram, the **Default Namespace** property is **DefaultNamespace**, and the **Custom Elements** property is **0/0**.
 
-4. Перетащите элемент **ексамплилемент** с **панели элементов** на поверхность схемы.
+4. Drag an **ExampleElement** element from the **Toolbox** to the diagram surface.
 
-5. В окне **Свойства** для элемента выберите свойство **пространство имен элемента** и измените значение с **свойство DefaultNamespace** на **осернамеспаце**.
+5. In the **Properties** window for the element, select the **Element Namespace** property, and change the value from **DefaultNamespace** to **OtherNamespace**.
 
-     Обратите внимание, что значение **пространства имен element** теперь отображается полужирным шрифтом.
+     Notice that the value of **Element Namespace** is now shown in bold.
 
-6. В окне **Свойства** щелкните правой кнопкой мыши **элемент пространство имен**и выберите команду **сбросить**.
+6. In the **Properties** window, right-click **Element Namespace**, and then click **Reset**.
 
-     Значение свойства меняется на **свойство DefaultNamespace**, а значение отображается в обычном шрифте.
+     The value of the property is changed to **DefaultNamespace**, and the value is shown in a regular font.
 
-     Щелкните правой кнопкой мыши **элемент пространство имен** еще раз. Команда **Reset** теперь отключена, так как свойство в настоящее время находится в состоянии отслеживания.
+     Right-click **Element Namespace** again. The **Reset** command is now disabled because the property is currently in its tracking state.
 
-7. Перетащите еще один **ексамплилемент** из **области элементов** на поверхность схемы и измените **пространство имен элемента** на **осернамеспаце**.
+7. Drag another **ExampleElement** from the **Toolbox** to the diagram surface, and change its **Element Namespace** to **OtherNamespace**.
 
-8. Щелкните область конструктора.
+8. Click the design surface.
 
-     В окне **свойств** схемы значение **настраиваемые элементы** теперь равно **1/2**.
+     In the **Properties** window for the diagram, the value of **Custom Elements** is now **1/2**.
 
-9. Измените **пространство имен по умолчанию** для схемы с **свойство DefaultNamespace** на **невнамеспаце**.
+9. Change **Default Namespace** for the diagram from **DefaultNamespace** to **NewNamespace**.
 
-     **Пространство имен** первого элемента отслеживает свойство **пространства имен по умолчанию** , в то время как **пространство имен** второго элемента оставляет свое измененное пользователем значение **осернамеспаце**.
+     The **Namespace** of the first element tracks the **Default Namespace** property, whereas the **Namespace** of the second element retains its user-updated value of **OtherNamespace**.
 
-10. Сохраните решение, а затем закройте экспериментальную сборку.
+10. Save the solution, and then close the experimental build.
 
 ## <a name="next-steps"></a>Следующие шаги
- Если планируется использовать несколько свойств отслеживания или реализовать свойства отслеживания более чем в одном DSL, можно создать текстовый шаблон для создания общего кода для поддержки каждого свойства отслеживания. Дополнительные сведения о текстовых шаблонах см. в разделе [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md).
+ If you plan to use more than one tracking property, or implement tracking properties in more than one DSL, you can create a text template to generate the common code for supporting each tracking property. For more information about text templates, see [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md).
 
 ## <a name="see-also"></a>См. также раздел
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
- Инструкции по [определению доменного языка](../modeling/how-to-define-a-domain-specific-language.md) [Практическое руководство. Создание решения для](../modeling/how-to-create-a-domain-specific-language-solution.md) доменного языка — [Настройка определения предметно-](../misc/walkthrough-customizing-the-domain-specific-language-definition.md) ориентированного языка
+ [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md) [Walkthrough: Customizing the Domain-Specific Language Definition](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

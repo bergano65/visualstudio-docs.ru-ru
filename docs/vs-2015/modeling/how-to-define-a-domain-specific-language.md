@@ -1,5 +1,5 @@
 ---
-title: Определение предметно-ориентированного языка | Документация Майкрософт
+title: How to Define a Domain-Specific Language | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -18,38 +18,38 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf25f5e0239eafd5594c38f7f3701114558b55cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671688"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299549"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы определить доменный язык (DSL), необходимо создать решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] из шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.
 
- Если вы не знакомы с доменным DSL, мы рекомендуем вам работать в **лаборатории средств DSL**, которую можно найти на этом сайте: [висуализатон и пакет SDK для моделирования](http://go.microsoft.com/fwlink/?LinkID=186128) .
+ If you are new to DSLs, we recommend that you work through the **DSL Tools Lab**, which you can find in this site: [Visualizaton and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
-## <a name="templates"></a>Выбор шаблона решения
+## <a name="templates"></a> Selecting a Template Solution
  Для определения доменного языка необходимо установить следующие компоненты.
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  Для создания нового доменного языка необходимо создать новое решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] при помощи шаблона проекта доменного языка.
 
 #### <a name="to-create-a-dsl-solution"></a>Создание решения DSL
 
-1. Создайте решение с шаблоном **доменного языка** , который можно найти в разделе **другие типы или расширяемость проектов** в диалоговом окне **Новый проект** .
+1. Create a solution with the **Domain-Specific Language** template, which can be found under **Other Project Types/Extensibility** in the **New Project** dialog box.
 
-    ![Диалоговое окно создания DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+    ![Create DSL dialog](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-    После нажатия кнопки **ОК**открывается **Мастер доменного языка** , в котором отображается список решений DSL для шаблонов.
+    When you click **OK**, the **Domain-Specific Language Wizard** opens and displays a list of template DSL solutions.
 
 2. Нажмите на каждый шаблон, чтобы увидеть его описание. Выберите решение, максимально соответствующее тому, что вы хотите создать.
 
@@ -57,18 +57,18 @@ ms.locfileid: "72671688"
 
     Нажмите на каждый образец, чтобы получить дополнительную информацию.
 
-   - Выберите **последовательность задач** , чтобы создать DSL с дорожками. Дорожки — это вертикальные или горизонтальные разделы схемы.
+   - Select **Task Flow** to create a DSL that has swimlanes. Дорожки — это вертикальные или горизонтальные разделы схемы.
 
-   - Выберите **модели компонентов** , чтобы создать DSL с портами. Порты — это небольшие фигуры на краю более крупной фигуры.
+   - Select **Component Models** to create a DSL that has ports. Порты — это небольшие фигуры на краю более крупной фигуры.
 
-   - Выберите **схемы классов** , чтобы определить DSL с фигурами секций. Фрагменты фигур содержат списки элементов.
+   - Select **Class Diagrams** to define a DSL that has compartment shapes. Фрагменты фигур содержат списки элементов.
 
-   - Выберите **Минимальный язык** в других случаях или, если вы не уверены.
+   - Select **Minimal Language** in other cases, or if you are uncertain.
 
        > [!NOTE]
-       > Если требуется создать схему классов или компонентов, лучше всего использовать модели UML. Средства моделирования UML предоставляют набор схем, собранных в единую модель. Они могут расширяться и интегрироваться в DSL при помощи ModelBus. Дополнительные сведения см. в статье [Создание моделей для приложения](../modeling/create-models-for-your-app.md).
+       > Если требуется создать схему классов или компонентов, лучше всего использовать модели UML. Средства моделирования UML предоставляют набор схем, собранных в единую модель. Они могут расширяться и интегрироваться в DSL при помощи ModelBus. For more information, see [Create models for your app](../modeling/create-models-for-your-app.md).
 
-   - Выберите **минимальный конструктор WinForm** или **минимальный конструктор WPF** , чтобы создать DSL, отображаемое на Windows Forms или в области WPF. Вам нужно будет написать код для определения редактора. Дополнительные сведения см. в следующих разделах:
+   - Select **Minimal WinForm Designer** or **Minimal WPF Designer** to create a DSL that is displayed on a Windows Forms or WPF surface. Вам нужно будет написать код для определения редактора. Дополнительные сведения см. в следующих разделах:
 
         [Создание доменного языка на основе Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -76,9 +76,9 @@ ms.locfileid: "72671688"
 
 3. Введите расширение имени файла для DSL на соответствующей странице мастера. Это расширение будут использовать файлы, содержащие экземпляры DSL.
 
-   - Выберите расширение имени файла, не связанное ни с одним другим приложением на вашем или другом компьютере, где планируется устанавливать DSL. Например, **docx** и **htm** будут неприемлемыми расширениями имен файлов.
+   - Выберите расширение имени файла, не связанное ни с одним другим приложением на вашем или другом компьютере, где планируется устанавливать DSL. For example, **docx** and **htm** would be unacceptable file name extensions.
 
-   - Мастер предупредит, если расширение уже используется в качестве DSL. В этом случае выберите другое расширение имени файла. Можно также сбросить экземпляр экспериментального пакета SDK для Visual Studio, чтобы удалить старые экспериментальные конструкторы. Нажмите кнопку **Пуск**, выберите пункт **все программы**, **Microsoft Visual Studio пакет SDK 2010**, **средства**, а затем выполните **Сброс экспериментального экземпляра Microsoft Visual Studio 2010**.
+   - Мастер предупредит, если расширение уже используется в качестве DSL. В этом случае выберите другое расширение имени файла. Можно также сбросить экземпляр экспериментального пакета SDK для Visual Studio, чтобы удалить старые экспериментальные конструкторы. Click **Start**, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**.
 
 4. Также можно изменить настройки на других страницах или оставить значения по умолчанию.
 
@@ -88,9 +88,9 @@ ms.locfileid: "72671688"
 
    После этого пользовательский интерфейс примет следующий вид:
 
-   ![конструктор DSL](../modeling/media/dsl-designer.png "dsl_designer")
+   ![конструктор dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
-   Данное решение определяет доменный язык. Дополнительные сведения см. [в разделе Общие сведения о средства предметно-ориентированных языков пользовательском интерфейсе](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+   Данное решение определяет доменный язык. For more information, see [Overview of the Domain-Specific Language Tools User Interface](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ### <a name="test-the-solution"></a>Тестирование решения
  Шаблон решения предоставляет рабочий DSL, который можно изменить или использовать как есть.
@@ -99,7 +99,7 @@ ms.locfileid: "72671688"
 
  В новом экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в Обозревателе решений откройте файл Sample. Он откроется в виде схемы с панелью элементов.
 
- При запуске решения, созданного на основе шаблона **минимального языка** , экспериментальный [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] будет выглядеть следующим образом:
+ If you run a solution that you have created from the **Minimal Language** template, your experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] will resemble the following example:
 
  ![](../modeling/media/dsl-min.png "DSL_min")
 
@@ -115,15 +115,15 @@ ms.locfileid: "72671688"
 
  Рекомендуем сохранить следующие классы:
 
-- Корневой класс отображается в левом верхнем углу схемы определения DSL в разделе **классы и связи**. Присвойте ему другое имя, которое будет отличаться от имени DSL. Например, домен DSL с именем **мусиклибрари** может иметь корневой класс с именем **Music**.
+- The root class appears at the upper-left of the DSL Definition diagram, under **Classes and Relationships**. Присвойте ему другое имя, которое будет отличаться от имени DSL. For example, a DSL named **MusicLibrary** might have a root class named **Music**.
 
-- Класс схемы отображается в нижней правой части схемы определения DSL в столбце **элементы схемы** . Возможно, чтобы его увидеть, экран придется прокрутить вправо. Обычно это называется**схемой** _йоурдсл_.
+- The diagram class appears at the lower right of the DSL Definition diagram, in the **Diagram Elements** column. Возможно, чтобы его увидеть, экран придется прокрутить вправо. It is typically named _YourDsl_**Diagram**.
 
-- Если вы использовали шаблон **потока задач** и хотите создать диаграммы с дорожками, следует удерживать и переименовать класс субъекта и форму акторсвимлане.
+- If you used the **Task Flow** template and you want to create diagrams with swimlanes, keep and rename the Actor domain class and ActorSwimlane shape.
 
   Удалите или переименуйте другие классы в соответствии со своими потребностями.
 
-## <a name="patterns"></a>Шаблоны для определения DSL
+## <a name="patterns"></a> Patterns for Defining a DSL
  Рекомендуем разрабатывать DSL путем добавления или настройки одного или двух функций за один раз. Добавьте функцию, запустите DSL и протестируйте его работу, затем добавьте еще одну или несколько функций. В число типовых функций DSL входят следующие.
 
 - Класс домена, отношение внедрения, соединяющее элемент с моделью, фигура, предназначенная для отображения элементов класса на схеме, и средство элемента, позволяющее пользователям создавать элементы.
@@ -137,25 +137,25 @@ ms.locfileid: "72671688"
   В следующих разделах описывается, как построить наиболее полезные виды функций DSL. Существуют много других шаблонов, с помощью которых может быть создан DSL, но эти используются наиболее часто.
 
 > [!NOTE]
-> После добавления функции не забудьте нажать кнопку **преобразовать все шаблоны** на панели инструментов Обозреватель решений перед созданием и запуском DSL.
+> After adding a feature, do not forget to click **Transform All Templates** in the toolbar of Solution Explorer before you build and running your DSL.
 
  На следующем рисунке показаны классы и отношения, которые являются частью DSL и используются в качестве примера в данном разделе.
 
- ![Внедрение отношений внедрения и ссылки](../modeling/media/music-classes.png "Music_Classes")
+ ![Embedding and Reference relationships](../modeling/media/music-classes.png "Music_Classes")
 
  Следующий рисунок является примером модели данного DSL:
 
- ![Модель экземпляра созданного DSL](../modeling/media/music-instance.png "Music_Instance")
+ ![Instance model of generated DSL](../modeling/media/music-instance.png "Music_Instance")
 
 > [!NOTE]
 > "Модель" означает экземпляр DSL, который создается пользователем и обычно отображается в виде схемы. В данном разделе рассматривается как схема определения DSL, так и схемы модели, которые отображаются при использовании DSL.
 
-## <a name="classes"></a>Определение доменных классов
- Классы доменов представляют собой концепции DSL. Экземпляры являются *элементами модели*. Например, в **мусиклибрари** DSL могут существовать классы доменов с именами " **альбом** " и " **песня**".
+## <a name="classes"></a> Defining Domain Classes
+ Классы доменов представляют собой концепции DSL. The instances are *model elements*. For example in a **MusicLibrary** DSL you might have Domain Classes named **Album** and **Song**.
 
- Чтобы создать доменный класс, можно перетащить его из средства **именованного доменного класса** на схему, а затем переименовать класс.
+ To create a domain class, you can drag from the **Named Domain Class** tool to the diagram, and then rename the class.
 
- Дополнительные сведения см. в разделе [Свойства доменных классов](../modeling/properties-of-domain-classes.md).
+ For more information, see [Properties of Domain Classes](../modeling/properties-of-domain-classes.md).
 
 ### <a name="create-an-embedding-relationship-for-each-domain-class"></a>Создание отношения внедрения для каждого класса домена
  Каждый класс домена, кроме корневого, должен быть целевым объектом хотя бы одного отношения внедрения или наследоваться от класса, который является таким целевым объектом.
@@ -170,43 +170,43 @@ ms.locfileid: "72671688"
 
 |Отображение элемента|Родительский класс (класс внедрения)|Пример в шаблоне решения DSL|
 |------------------------------|--------------------------------|--------------------------------------|
-|Фигура на схеме<br /><br /> Дорожка|Корневой класс DSL|Минимальный язык<br /><br /> Поток задач: класс субъекта.|
-|Фигура в дорожке|Класс домена элементов, который отображаются в качестве дорожек.|Поток задач: класс задачи.|
-|Элемент в списке в фигуре, удаляемый при удалении контейнера<br /><br /> Порт на краю фигуры|Класс домена, сопоставленный с фигурой контейнера|Схема классов: класс атрибута.<br /><br /> Схема компонента: класс порта.|
+|Фигура на схеме<br /><br /> Дорожка|Корневой класс DSL|Минимальный язык<br /><br /> Task Flow: Actor class.|
+|Фигура в дорожке|Класс домена элементов, который отображаются в качестве дорожек.|Task Flow: Task class.|
+|Элемент в списке в фигуре, удаляемый при удалении контейнера<br /><br /> Порт на краю фигуры|Класс домена, сопоставленный с фигурой контейнера|Class diagram: Attribute class.<br /><br /> Component diagram: Port class.|
 |Элемент в списке, не удаляемый при удалении контейнера|Корневой класс DSL<br /><br /> Список с указанием связей и отношений||
 |Не отображается напрямую|Класс, часть которого он формирует||
 
  В примере Music Library, альбомы (Album) отображаются как прямоугольники, в которых перечислены названия песен (Song). Следовательно, родителем элемента Album является корневой класс Music (Музыка), а родителем элемента Song (Песня) — класс Album (Альбом).
 
- Чтобы создать доменный класс и его внедрение одновременно, щелкните инструмент **отношение внедрения** , затем щелкните родительский класс, а затем щелкните пустую часть диаграммы.
+ To create a domain class and its embedding at the same time, click the **Embedding Relationship** tool, then click the parent class, and then click on a blank part of the diagram.
 
  Как правило, изменять имя отношения внедрения и его ролей не обязательно, так как они будут отслеживать имена классов автоматически.
 
- Дополнительные сведения см. в разделе [Свойства доменных отношений](../modeling/properties-of-domain-relationships.md) и [Свойства ролей домена](../modeling/properties-of-domain-roles.md).
+ For more information, see [Properties of Domain Relationships](../modeling/properties-of-domain-relationships.md) and [Properties of Domain Roles](../modeling/properties-of-domain-roles.md).
 
 > [!NOTE]
 > Внедрение не является наследованием. Дочерние элементы в отношении внедрения не наследуют свойства родительских элементов.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Добавление свойств домена в каждый класс домена
- Свойства доменов хранят значения. Примеры: имя, заголовок, Дата публикации.
+ Свойства доменов хранят значения. Examples are: Name, Title, Publication Date.
 
- Щелкните **свойства домена** в классе, нажмите клавишу ВВОД, а затем введите имя свойства. Тип свойства домена по умолчанию — строка. Если вы хотите изменить тип, выберите свойство Domain и задайте **тип** в окне **свойства** . Если нужный тип отсутствует в раскрывающемся списке, см. раздел [Добавление типов свойств](#addTypes).
+ Click **Domain Properties** in the class, press the ENTER key, and then type the name of a property. Тип свойства домена по умолчанию — строка. If you want to change the type, select the domain property, and set the **Type** in the **Properties** window. If the type that you want is not in the drop-down list, see [Adding Property Types](#addTypes).
 
- **Задайте свойство имени элемента.** Выберите свойство домена, которое может использоваться для определения элементов в Обозревателе языка. Например, в классе домена Song (Песня) можно выбрать свойство домена "Название". В окне **Свойства** задайте для параметра **имя элемента** значение `true`.
+ **Set an Element Name property.** Выберите свойство домена, которое может использоваться для определения элементов в Обозревателе языка. Например, в классе домена Song (Песня) можно выбрать свойство домена "Название". In the **Properties** window, set **Is Element Name** to `true`.
 
 ### <a name="create-derived-domain-classes"></a>Создание производных классов доменов
  Если у классов доменов должны быть экземпляры, которые наследуют его свойства и отношения, можно создать классы, которые являются производными от него. Например, класс Album (Альбом) может иметь производные классы WMA и MP3.
 
- Создайте производный класс с помощью средства **доменный класс** .
+ Create the derived class using the **Domain Class** tool.
 
- Щелкните инструмент **наследование** , щелкните производный класс, а затем щелкните базовый класс.
+ Click the **Inheritance** tool, click the derived class, and then click the base class.
 
- Рекомендуется задать **абстрактный** **Модификатор наследования** базового класса. Если вам могут понадобиться экземпляры базового класса, создайте для них отдельные производные классы.
+ Consider setting the **Inheritance Modifier** of the base class to **abstract**. Если вам могут понадобиться экземпляры базового класса, создайте для них отдельные производные классы.
 
  Производные классы наследуют свойства и роли базовых классов.
 
 ### <a name="tidy-the-dsl-definition-diagram"></a>Чистка схемы определения DSL
- При добавлении отношений некоторые из классов появятся сразу в нескольких местах. Чтобы уменьшить количество представлений и сделать диаграмму шире, щелкните правой кнопкой мыши целевой класс связи и выберите пункт **переместить дерево здесь**. Для обратного воздействия щелкните правой кнопкой мыши целевой класс связи и выберите пункт **разделить дерево**. Если эти команды меню отсутствуют, убедитесь, что выбран только класс домена.
+ При добавлении отношений некоторые из классов появятся сразу в нескольких местах. To reduce the number of appearances and make the diagram wider, right-click the target class of a relationship, and then click **Bring Tree Here**. For the opposite effect, right-click the target class of a relationship and click **Split Tree**. Если эти команды меню отсутствуют, убедитесь, что выбран только класс домена.
 
  Для перемещения классов доменов и фигур используйте сочетания клавиш CTRL + стрелка вверх и CTRL + стрелка вниз.
 
@@ -214,46 +214,46 @@ ms.locfileid: "72671688"
 
 ##### <a name="to-test-the-new-domain-classes"></a>Чтобы проверить новые классы доменов, сделайте следующее.
 
-1. **Щелкните Преобразовать все шаблоны** на панели инструментов Обозреватель решений, чтобы создать код конструктора DSL. Этот шаг можно автоматизировать. Дополнительные сведения см. [в разделе Автоматизация преобразования всех шаблонов](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+1. **Click Transform All Templates** in the toolbar of Solution Explorer, to generate the DSL designer code. Этот шаг можно автоматизировать. For more information, see [How to Automate Transform All Templates](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
 
-2. **Создайте и запустите DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
+2. **Build and run the DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
 
-3. **Откройте обозреватель.** На боковой стороне схемы находится окно обозревателя языков, которое обычно называется *вашязык* Explorer. Если вы не видите это окно, оно может быть на вкладке под Обозревателем решений. Если его не удается найти, в меню **вид** выберите **другие окна**, а затем щелкните**Обозреватель** _вашязык_.
+3. **Open the Explorer.** At the side of the diagram is the language explorer window, which is usually named *YourLanguage* Explorer. Если вы не видите это окно, оно может быть на вкладке под Обозревателем решений. If you cannot find it, on the **View** menu, point to **Other Windows**, and then click _YourLanguage_**Explorer**.
 
      В обозревателе представлен вид модели в качестве дерева.
 
-4. **Создание новых элементов.** Щелкните правой кнопкой мыши корневой узел вверху и выберите команду **Добавить новый**_йоуркласс_.
+4. **Create new elements.** Right-click the root node at the top, and then click **Add New**_YourClass_.
 
      Новый экземпляр класса появится в Обозревателе языка.
 
-5. При создании новых экземпляров следите за тем, чтобы все экземпляры получали разные имена. Это произойдет только в том случае, если установлен флаг **является именем элемента** для свойства домена.
+5. При создании новых экземпляров следите за тем, чтобы все экземпляры получали разные имена. This will occur only if you have set the **Is Element Name** flag on a domain property.
 
-6. **Изучите свойства домена. Изучите окно свойств в выбранном экземпляре класса** . Оно должно показывать свойства домена, которые вы определили для данного класса домена.
+6. **Examine the domain properties. With an instance of your class selected,** inspect the Properties window. Оно должно показывать свойства домена, которые вы определили для данного класса домена.
 
-7. **Сохраните файл, закройте его и снова откройте**. Все созданные экземпляры должны отобразиться в обозревателе, когда вы развернете узлы.
+7. **Save the file, close it, and re-open it**. Все созданные экземпляры должны отобразиться в обозревателе, когда вы развернете узлы.
 
-## <a name="shapes"></a>Определение фигур на диаграмме
+## <a name="shapes"></a> Defining Shapes on the Diagram
  Вы можете определить классы элементов, которые отображаются на схеме в виде прямоугольников, эллипсов или ярлыков.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Определение класса элементов, которые отображаются на схеме в виде фигур
 
-1. **Определите и протестируйте доменный класс, как описано в разделе**  [Определение доменных классов](#classes) **.**
+1. **Define and test a domain class as described in**  [Defining Domain Classes](#classes) **.**
 
    - Родителем класса должен быть корневой класс. Это значит, что между корневым классом и новым классом домена должно существовать отношение внедрения.
 
-   - Если в схеме есть дорожки, то родителем может быть класс домена, сопоставленный с дорожкой. Перед продолжением этой процедуры см. раздел [Определение DSL с дорожками](#swimlanes).
+   - Если в схеме есть дорожки, то родителем может быть класс домена, сопоставленный с дорожкой. Before continuing with this procedure, see [Defining a DSL that has Swimlanes](#swimlanes).
 
-2. **Добавьте класс Shape** для представления элементов на схеме модели. Перетащите один из следующих инструментов на схему определения DSL.
+2. **Add a shape class** to represent the elements on the model diagram. Перетащите один из следующих инструментов на схему определения DSL.
 
-   - **Геометрическая фигура** содержит прямоугольник или эллипс.
+   - **Geometry Shape** provides a rectangle or ellipse.
 
-   - В **фигуре изображения** отображается предоставленное изображение.
+   - **Image Shape** displays an image that you provide.
 
-   - **Фигура секции** — это прямоугольник, содержащий один или несколько списков элементов.
+   - **Compartment Shape** is a rectangle that contains one or more lists of items.
 
      Переименуйте класс фигуры, который отображается в правой части схемы определения DSL под фигурами и соединителями.
 
-3. **Определите изображение, если вы создали фигуру изображения**.
+3. **Define an image, if you created an image shape**.
 
    1. Создайте файл изображения любого размера. Поддерживаются форматы BMP, JPEG, GIF и EMF.
 
@@ -261,79 +261,79 @@ ms.locfileid: "72671688"
 
    3. Вернитесь в схему определения DSL и выберите новый класс фигуры изображения.
 
-   4. В окно свойств щелкните свойство **Image** .
+   4. In the Properties window, click the **Image** property.
 
-   5. В диалоговом окне **Выбор изображения** в поле **имя файла**щелкните раскрывающееся меню и выберите изображение.
+   5. In the **Select Image** dialog box, click the drop-down menu under **File name**, and select the image.
 
-4. **Добавьте в фигуру текстовые декораторы, чтобы отобразить свойства домена.**
+4. **Add text decorators to the shape, to display the domain properties.**
 
     Чтобы отобразить имя или название элемента модели, потребуется хотя бы один декоратор.
 
-    Щелкните правой кнопкой мыши заголовок класса Shape, наведите указатель на пункт **Добавить**и выберите **текстовый декоратор**. Задайте имя декоратора и в окно свойств задайте его **Расположение**.
+    Right-click the header of the shape class, point to **Add**, and then click **Text Decorator**. Set the name of the decorator, and in the Properties window set its **Position**.
 
-5. **Соедините каждую фигуру с картой элемента схемы с классом домена, который должен отображаться**.
+5. **Connect each shape with a Diagram Element Map to the domain class that it should display**.
 
-    Щелкните инструмент " **схема элементов схемы** ", затем щелкните доменный класс, а затем выберите класс Shape.
+    Click the **Diagram Element Map** tool, then click the domain class, then click the shape class.
 
-6. **Сопоставьте свойства декораторам текста.**
+6. **Map the properties to the text decorators.**
 
    1. Выберите серую линию между классом домена и классом фигуры, которая представляет карту элементов схемы.
 
-   2. В окне **сведения о DSL** перейдите на вкладку **карты декораторов** . Если окно **сведения о DSL** не отображается, в меню **вид** наведите указатель на пункт **другие окна** и щелкните **сведения о DSL**. Часто нужно поднять верхнюю часть окна, чтобы увидеть все его содержимое.
+   2. In the **DSL Details** window, click the **Decorator Maps** tab. If you do not see the **DSL Details** window, on the **View** menu, point to **Other Windows** and then click **DSL Details**. Часто нужно поднять верхнюю часть окна, чтобы увидеть все его содержимое.
 
-   3. Выберите имя декоратора. В разделе **свойство экрана**выберите имя свойства доменного класса. Повторите эти шаги для каждого декоратора.
+   3. Выберите имя декоратора. Under **Display property**, select the name of a property of the domain class. Повторите эти шаги для каждого декоратора.
 
-       Если требуется отобразить свойство связанного элемента, щелкните раскрывающийся список в разделе **путь к отображаемому свойству**.
+       If you want to display a property of a related element, click the drop-down tree navigator under **Path to display property**.
 
    4. Возле имени каждого декоратора должен быть установлен флажок.
 
-      ![Сопоставления фигур и окно сведений о DSL](../modeling/media/dsldetailswindow.png "дслдетаилсвиндов")
+      ![Shape Mappings and DSL Details window](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
 
-7. **Создание элемента панели элементов для создания элементов доменного класса.**
+7. **Make a toolbox item for creating elements of the domain class.**
 
-   1. В **обозревателе DSL**разверните узел **редактора** и все его дочерние узлы.
+   1. In **DSL Explorer**, expand the **Editor** node and all its sub-nodes.
 
-   2. Щелкните правой кнопкой мыши узел в разделе **вкладки области элементов** , имя которого совпадает с именем DSL, например мусиклибрари. Нажмите кнопку **Добавить элемент средство**.
+   2. Right-click the node under **Toolbox Tabs** that has the same name as your DSL, for example MusicLibrary. Click **Add Element Tool**.
 
        > [!NOTE]
-       > Если щелкнуть правой кнопкой мыши узел **инструменты** , то **средство добавить элемент**не будет отображаться. Вместо этого необходимо щелкнуть узел на уровень выше.
+       > If you right-click the **Tools** node, you will not see **Add Element Tool**. Вместо этого необходимо щелкнуть узел на уровень выше.
 
-   3. В окно свойств с выбранным инструментом "новый элемент" задайте **класс** в качестве класса домена, который вы недавно добавили.
+   3. In the Properties window with the new element tool selected, set **Class** to the domain class that you have recently added.
 
-   4. Задайте **заголовок** и **подсказку**.
+   4. Set **Caption** and **Tooltip**.
 
-   5. Установите **значок панели элементов** на значок, который будет отображаться на панели элементов. Можно выбрать новый значок или значок, который уже используется для другого инструмента.
+   5. Set **Toolbox Icon** to an icon that will appear in the toolbox. Можно выбрать новый значок или значок, который уже используется для другого инструмента.
 
-        Чтобы создать новый значок, откройте Дсл\ресаурцес в **Обозреватель решений**. Скопируйте и вставьте один из существующих BMP-файлов средства элемента. Переименуйте вставленную копию, а затем откройте ее двойным щелчком кнопки мыши для редактирования.
+        To create a new icon, open Dsl\Resources in **Solution Explorer**. Скопируйте и вставьте один из существующих BMP-файлов средства элемента. Переименуйте вставленную копию, а затем откройте ее двойным щелчком кнопки мыши для редактирования.
 
-        Вернитесь на схему определения DSL, выберите инструмент и в окно свойств щелкните значок **[...]** на **панели элементов**. В диалоговом окне **Выбор растрового изображения** выберите свой. BMP-файл из раскрывающегося меню.
+        Return to the DSL Definition diagram, select the tool, and in the Properties window click **[...]** in **Toolbox Icon**. In the **Select Bitmap** dialog box, select your .BMP file from the drop-down menu.
 
-   Дополнительные сведения см. в разделе [Свойства геометрических фигур](../modeling/properties-of-geometry-shapes.md) и [свойств фигур изображений](../modeling/properties-of-image-shapes.md).
+   For more information, see [Properties of Geometry Shapes](../modeling/properties-of-geometry-shapes.md) and [Properties of Image Shapes](../modeling/properties-of-image-shapes.md).
 
 #### <a name="to-test-shapes"></a>Тестирование Фигур
 
-1. **Щелкните Преобразовать все шаблоны** на панели инструментов Обозреватель решений, чтобы создать код конструктора DSL.
+1. **Click Transform All Templates** in the toolbar of Solution Explorer, to generate the DSL designer code.
 
-2. **Создайте и запустите DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
+2. **Build and run the DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
 
-3. **Убедитесь, что инструменты элемента отображаются на панели элементов.**
+3. **Verify that the element tools appear on the toolbox.**
 
-4. **Создание фигур** путем перетаскивания из средства на схему модели.
+4. **Create shapes** by dragging from a tool onto the model diagram.
 
-5. **Убедитесь, что отображается каждый текстовый декоратор** и что:
+5. **Verify that each text decorator appears,** and that:
 
-   1. Его можно изменить, если только в свойстве домена не установлен флаг " **только чтение пользовательского интерфейса** ".
+   1. You can edit it, unless you have set the **Is UI Read Only** flag on the domain property.
 
    2. в случае изменения свойства в окне"Свойства" или в декораторе другой вид обновляется.
 
-   После первого тестирования фигуры можно откорректировать некоторые свойства и добавить расширенные свойства. Дополнительные сведения см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
+   После первого тестирования фигуры можно откорректировать некоторые свойства и добавить расширенные свойства. For more information, see [Customizing and Extending a Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="references"></a>Определение ссылочных отношений
+## <a name="references"></a> Defining Reference Relationships
  Между любым классом домена источника и классом домена целевого объекта можно определить ссылочное отношение. Ссылочные отношения обычно отображаются на схеме в виде соединителей — линий между фигурами.
 
  Например, если музыкальные альбомы (Album) и исполнители (Artist) отображаются в схеме в виде фигур, можно определить отношение с именем ArtistsAppearedOnAlbums, связывающее исполнителей и альбомы, в которых они участвуют. См. пример на рисунке.
 
- ![Модель экземпляра созданного DSL](../modeling/media/music-instance.png "Music_Instance")
+ ![Instance model of generated DSL](../modeling/media/music-instance.png "Music_Instance")
 
  Ссылочные отношения могут также связывать элементы одного типа. Например, в DSL, представляющем собой генеалогическое древо, взаимосвязь между родительскими и дочерними элементами является ссылочным отношением между персонами.
 
@@ -342,164 +342,164 @@ ms.locfileid: "72671688"
 
  Каждое отношение имеет две роли, представленные линией с каждой стороны окна отношений. Можно выбрать каждую роль и настроить ее свойства в окне "Свойства".
 
- **Рассмотрите возможность переименования ролей**. Например, в отношении между персонами можно изменить имена по умолчанию на "Родители" и "Дети", "Руководитель" и "Подчиненные", "Преподаватель" и "Студент" и т. д.
+ **Consider renaming the roles**. Например, в отношении между персонами можно изменить имена по умолчанию на "Родители" и "Дети", "Руководитель" и "Подчиненные", "Преподаватель" и "Студент" и т. д.
 
- При необходимости **Настройте кратность каждой роли**. Если у каждой персоны должно быть не больше одного Руководителя, укажите для параметра кратности под ярлыком "Руководитель" в схеме значение "0..1".
+ **Adjust the multiplicities of each role**, if it is necessary. Если у каждой персоны должно быть не больше одного Руководителя, укажите для параметра кратности под ярлыком "Руководитель" в схеме значение "0..1".
 
- **Добавьте в связь свойства домена.** На рисунке отношение между исполнителем и альбомом имеет свойство роли.
+ **Add domain properties to the relationship.** На рисунке отношение между исполнителем и альбомом имеет свойство роли.
 
- **Установите свойство допускает повторение связи,** если между одной и той же парой элементов модели может существовать несколько ссылок одного и того же класса. Например, можно разрешить Преподавателю обучать одного и того же Студента нескольким Дисциплинам.
+ **Set the Allows Duplicates property of the relationship,** if more than one link of the same class can exist between the same pair of model elements. Например, можно разрешить Преподавателю обучать одного и того же Студента нескольким Дисциплинам.
 
- ![Карты фигур для соединителей](../modeling/media/music-connector.png "Music_Connector")
+ ![Shape maps for connectors](../modeling/media/music-connector.png "Music_Connector")
 
- Дополнительные сведения см. в разделе [Свойства доменных отношений](../modeling/properties-of-domain-relationships.md) и [Свойства ролей домена](../modeling/properties-of-domain-roles.md).
+ For more information, see [Properties of Domain Relationships](../modeling/properties-of-domain-relationships.md) and [Properties of Domain Roles](../modeling/properties-of-domain-roles.md).
 
 ### <a name="define-a-connector-to-display-the-relationship"></a>Определение соединителя для отображения отношения
  Соединитель отображает линию между двумя фигурами в схеме модели.
 
- Перетащите инструмент **Connector** на схему определения DSL.
+ Drag the **Connector** tool onto the DSL definition diagram.
 
- Добавьте текстовые декораторы если необходимо отобразить ярлыки на соединителе. Установите их расположение. Чтобы позволить пользователю перемещать декоратор текста, установите свойство для свойства **перемещаемого** элемента.
+ Добавьте текстовые декораторы если необходимо отобразить ярлыки на соединителе. Установите их расположение. To let the user move a text decorator, set its **Is Moveable** property.
 
- С помощью инструмента "схема **элементов схемы** " свяжите соединитель со ссылочной связью.
+ Use the **Diagram Element Map** tool to link the connector to the reference relationship.
 
- Выбрав карту элементов схемы, откройте окно " **сведения о DSL** " и откройте вкладку " **карты декораторов** ".
+ With the diagram element map selected, open the **DSL Details** window, and open the **Decorator Maps** tab.
 
- Выберите каждый **декоратор** и задайте для **Свойства отображение** правильное свойство домена.
+ Select each **Decorator** and set **Display property** to the correct domain property.
 
- Убедитесь, что рядом с каждым элементом в списке **декораторов** отображается галочка.
+ Make sure that a check mark appears next to each item in the **Decorators** list.
 
 ### <a name="define-a-connection-builder-tool"></a>Определение средства построителя подключений
- В окне **обозревателя DSL** разверните узел **Редактор** и все его подузлы.
+ In the **DSL Explorer** window, expand the **Editor** node and all its subnodes.
 
- Щелкните правой кнопкой мыши узел, имя которого совпадает с именем вашего DSL, и выберите команду **Добавить новое подключение**.
+ Right-click the node that has the same name as your DSL, and then click **Add New Connection Tool**.
 
  Выбрав новый инструмент, в окне "Свойства":
 
-- Задайте **заголовок** и **подсказку**.
+- Set the **Caption** and **Tooltip**.
 
-- Щелкните **Построитель подключений** и выберите соответствующий конструктор для новой связи.
+- Click **Connection Builder** and select the appropriate builder for the new relationship.
 
-- Установите **значок панели элементов** на значок, который должен отображаться на панели элементов. Можно выбрать новый значок или значок, который уже используется для другого инструмента.
+- Set **Toolbox Icon** to the icon that you want to appear in the toolbox. Можно выбрать новый значок или значок, который уже используется для другого инструмента.
 
-     Чтобы создать новый значок, откройте Дсл\ресаурцес в **Обозреватель решений**. Скопируйте и вставьте один из существующих BMP-файлов средства элемента. Переименуйте вставленную копию, а затем откройте ее двойным щелчком кнопки мыши для редактирования.
+     To create a new icon, open Dsl\Resources in **Solution Explorer**. Скопируйте и вставьте один из существующих BMP-файлов средства элемента. Переименуйте вставленную копию, а затем откройте ее двойным щелчком кнопки мыши для редактирования.
 
-     Вернитесь на схему определения DSL, выберите инструмент и в окно свойств щелкните значок **[...]** на **панели элементов**. В диалоговом окне **Выбор растрового изображения** выберите свой. BMP-файл из раскрывающегося меню.
+     Return to the DSL Definition diagram, select the tool, and in the Properties window click **[...]** in **Toolbox Icon**. In the **Select Bitmap** dialog box, select your .BMP file from the drop-down menu.
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>Тестирование ссылочного отношения и соединителя
 
-1. **Щелкните Преобразовать все шаблоны** на панели инструментов Обозреватель решений, чтобы создать код конструктора DSL.
+1. **Click Transform All Templates** in the toolbar of Solution Explorer, to generate the DSL designer code.
 
-2. **Создайте и запустите DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
+2. **Build and run the DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
 
-3. **Убедитесь, что средство подключения отображается на панели элементов.**
+3. **Verify that the connection tool appears on the toolbox.**
 
-4. **Создание фигур** путем перетаскивания из средства на схему модели.
+4. **Create shapes** by dragging from a tool onto the model diagram.
 
-5. **Создание соединений** между фигурами. Выберите соединитель, щелкните фигуру, а затем выберите другую фигуру.
+5. **Create connections** between the shapes. Выберите соединитель, щелкните фигуру, а затем выберите другую фигуру.
 
-6. **Убедитесь, что не удается создать соединения между недопустимыми классами.** Например, если установлено отношение между Альбомами и Исполнителями, убедитесь, что нельзя связать Исполнителей с Исполнителями.
+6. **Verify that you cannot create connections between inappropriate classes.** Например, если установлено отношение между Альбомами и Исполнителями, убедитесь, что нельзя связать Исполнителей с Исполнителями.
 
-7. **Проверьте правильность кратности. Например, убедитесь, что невозможно подключить пользователя к нескольким руководителям.**
+7. **Verify that the multiplicities are correct. For example, verify that you cannot connect a Person to more than one manager.**
 
-8. **Убедитесь, что отображается каждый текстовый декоратор** и что:
+8. **Verify that each text decorator appears,** and that:
 
-   1. Его можно изменить, если только в свойстве домена не установлен флаг " **только чтение пользовательского интерфейса** ".
+   1. You can edit it, unless you have set the **Is UI Read Only** flag on the domain property.
 
    2. в случае изменения свойства в окне"Свойства" или в декораторе другой вид обновляется.
 
-   После первого тестирования соединителя можно откорректировать некоторые свойства и добавить расширенные свойства. Дополнительные сведения см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
+   После первого тестирования соединителя можно откорректировать некоторые свойства и добавить расширенные свойства. For more information, see [Customizing and Extending a Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a>Определение фигур, содержащих списки: фигуры секций
+## <a name="compartments"></a> Defining Shapes that Contain Lists: Compartment Shapes
  Фигура секции содержит один или несколько списков элементов. Например, в DSL Music Library можно использовать фигуру секции для представления музыкальных Альбомов. В каждом Альбоме есть список Песен.
 
- ![Фигура секции](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Compartment Shape](../modeling/media/compartmentshape.png "CompartmentShape")
 
  Самый простой способ добиться этого эффекта в определении DSL — это определить один класс домена для контейнера и один класс домена для каждого списка. Класс контейнера сопоставлен с фигурой секции.
 
- ![Схема фигуры](../modeling/media/music-mapcomp.png "Music_MapComp")
+ ![Shape map](../modeling/media/music-mapcomp.png "Music_MapComp")
 
- Дополнительные сведения см. в разделе [Свойства фигур секций](../modeling/properties-of-compartment-shapes.md).
+ For more information, see [Properties of Compartment Shapes](../modeling/properties-of-compartment-shapes.md).
 
 #### <a name="to-define-a-compartment-shape"></a>Определение фигуры секции
 
-1. **Создайте доменный класс контейнера**. Щелкните инструмент **отношение внедрения** , щелкните корневой класс модели, а затем щелкните пустую часть схемы определения DSL. Это создаст класс домена, который на рисунке примера называется Album.
+1. **Create the container domain class**. Click the **Embedding Relationship** tool, click the root class of the model, and then click a blank part of the DSL definition diagram. Это создаст класс домена, который на рисунке примера называется Album.
 
      В качестве альтернативы вместо встраивания в корневой класс можно встроить контейнер в класс домена, сопоставленный с дорожкой.
 
-     Добавьте в класс свойство домена, например Name, и установите в окно свойств флаг **Name элемента** .
+     Add a domain property such as Name to the class, and set its **Is Element Name** flag in the Properties window.
 
-2. **Создайте доменный класс элемента списка**. Щелкните инструмент **отношение внедрения** , щелкните класс контейнера (альбом) и выберите пустую часть диаграммы. Это создаст класс домена, который на рисунке примера называется Song (Песня).
+2. **Create the list item domain class**. Click the **Embedding Relationship** tool, click the container class (Album) and then click a blank part of the diagram. Это создаст класс домена, который на рисунке примера называется Song (Песня).
 
-     Добавьте в класс свойство домена, например Title, и установите для него флаг **— имя элемента** .
+     Add a domain property such as Title to the class, and set its **Is Element Name** flag.
 
      Добавьте другие свойства домена.
 
      Добавьте по классу домена для каждого списка элементов, который необходимо отобразить.
 
-3. **Чтобы смешать несколько типов элементов в списке**, создайте классы, которые наследуются от класса List. Сделайте класс списка абстрактным, установив его **Модификатор наследования**.
+3. **To mix several types of item in the list**, create classes that inherit from the list class. Make the list class abstract by setting its **Inheritance Modifier**.
 
      Например, если вы хотите, чтобы классическая музыка сортировалась по композитору, а не по исполнителю, можно создать в классе Song (Песня) два подкласса: ClassicalSong (Классические) и NonClassicalSong (Не классические).
 
-4. **Создайте фигуру секции**. Перетащите инструмент « **фигура секции** » на схему определения DSL.
+4. **Create the compartment shape**. Drag from the **Compartment Shape** tool onto the DSL definition diagram.
 
      Добавьте текстовый декоратор и укажите для него имя.
 
      Добавьте секцию и укажите для нее имя.
 
-5. Чтобы позволить пользователю скрыть секции списка, щелкните правой кнопкой мыши класс Shape, наведите указатель на пункт **Добавить**, а затем выберите **развернуть или свернуть декоратор**. В окне "Свойства" задайте расположение декоратора.
+5. To let the user hide the list compartments, right-click the compartment shape class, point to **Add**, and then click **Expand/Collapse Decorator**. В окне "Свойства" задайте расположение декоратора.
 
-6. Щелкните инструмент " **схема элементов схемы** ", щелкните доменный класс контейнера, а затем щелкните фигуру секции.
+6. Click the **Diagram Element Map** tool, click the container domain class, and then click the compartment shape.
 
-7. Выберите связь карты элемента схемы между классом домена и фигурой. В окне **сведения о DSL** выполните следующие действия.
+7. Выберите связь карты элемента схемы между классом домена и фигурой. In the **DSL Details** window:
 
-    1. Перейдите на вкладку **декораторы** . Щелкните имя декоратора и выберите соответствующий элемент в разделе **отображаемое свойство**. Убедитесь, что возле имени каждого декоратора установлен флажок.
+    1. Click the **Decorators** tab. Click the name of the decorator and then select the appropriate item under **Display Property**. Убедитесь, что возле имени каждого декоратора установлен флажок.
 
-    2. Перейдите на вкладку **карты секций** .
+    2. Click the **Compartment Maps** tab.
 
          Выберите имя секции.
 
-         В разделе **отображаемый путь коллекции элементов**перейдите к классу элементов списка (песня). Щелкните стрелку раскрывающегося меню, чтобы воспользоваться инструментом навигации.
+         Under **Displayed elements collection path**, navigate to the list element class (Song). Щелкните стрелку раскрывающегося меню, чтобы воспользоваться инструментом навигации.
 
-         В разделе **свойство отображения**выберите свойство, которое должно отображаться в списке. В этом примере это свойство — Название.
+         Under **Display Property**, select the property that should be displayed in the list. В этом примере это свойство — Название.
 
 > [!NOTE]
 > Используя поля "Путь" в карте декораторов и полях в карте секций, установите более сложные отношения между классами доменов и фигурой секции.
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Определение инструмента для создания фигуры
 
-1. **Создание элемента панели элементов для создания элементов доменного класса.**
+1. **Make a toolbox item for creating elements of the domain class.**
 
-2. В **обозревателе DSL**разверните узел **редактора** и все его дочерние узлы.
+2. In **DSL Explorer**, expand the **Editor** node and all its sub-nodes.
 
-3. Щелкните правой кнопкой мыши узел в разделе **вкладки области элементов** , имя которого совпадает с именем DSL, например мусиклибрари. Нажмите кнопку **Добавить элемент средство**.
+3. Right-click the node under **Toolbox Tabs** that has the same name as your DSL, for example MusicLibrary. Click **Add Element Tool**.
 
     > [!NOTE]
-    > Если щелкнуть правой кнопкой мыши узел **инструменты** , то **средство добавить элемент**не будет отображаться. Вместо этого необходимо щелкнуть узел на уровень выше.
+    > If you right-click the **Tools** node, you will not see **Add Element Tool**. Вместо этого необходимо щелкнуть узел на уровень выше.
 
-4. В окно свойств с выбранным инструментом "новый элемент" задайте **класс** в качестве класса домена, который вы недавно добавили.
+4. In the Properties window with the new element tool selected, set **Class** to the domain class that you have recently added.
 
-5. Задайте **заголовок** и **подсказку**.
+5. Set **Caption** and **Tooltip**.
 
-6. Установите **значок панели элементов** на значок, который будет отображаться на панели элементов. Можно выбрать новый значок или значок, который уже используется для другого инструмента.
+6. Set **Toolbox Icon** to an icon that will appear in the toolbox. Можно выбрать новый значок или значок, который уже используется для другого инструмента.
 
-     Чтобы создать новый значок, откройте Дсл\ресаурцес в **Обозреватель решений**. Скопируйте и вставьте один из существующих BMP-файлов средства элемента. Переименуйте вставленную копию, а затем откройте ее двойным щелчком кнопки мыши для редактирования.
+     To create a new icon, open Dsl\Resources in **Solution Explorer**. Скопируйте и вставьте один из существующих BMP-файлов средства элемента. Переименуйте вставленную копию, а затем откройте ее двойным щелчком кнопки мыши для редактирования.
 
-     Вернитесь на схему определения DSL, выберите инструмент и в окно свойств щелкните значок **[...]** на **панели элементов**. В диалоговом окне **Выбор растрового изображения** в раскрывающемся меню выберите НУЖНЫЙ файл BMP.
+     Return to the DSL Definition diagram, select the tool, and in the Properties window click **[...]** in **Toolbox Icon**. In the **Select Bitmap** dialog box, select your BMP file from the drop-down menu.
 
 #### <a name="to-test-a-compartment-shape"></a>Тестирование фигуры сегмента
 
-1. **Щелкните Преобразовать все шаблоны** на панели инструментов Обозреватель решений, чтобы создать код конструктора DSL.
+1. **Click Transform All Templates** in the toolbar of Solution Explorer, to generate the DSL designer code.
 
-2. **Создайте и запустите DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
+2. **Build and run the DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.
 
-3. **Убедитесь, что средство отображается на панели элементов.**
+3. **Verify that the tool appears on the toolbox.**
 
 4. Перетащите инструмент в схему модели. Будет создана новая фигура.
 
     Убедитесь, что имя элемента отображается и автоматически получает значение по умолчанию.
 
-5. Щелкните правой кнопкой мыши заголовок новой фигуры и выберите команду Добавить *элемент списка.* В этом примере используется команда "Добавить песню".
+5. Right-click the header of the new shape, and then click Add *Your List Item.* В этом примере используется команда "Добавить песню".
 
     Убедитесь, что элемент отображается в списке под новым именем.
 
@@ -507,9 +507,9 @@ ms.locfileid: "72671688"
 
 7. Откройте Обозреватель языка. Убедитесь, что узлы контейнера содержат узлы элементов списка.
 
-   ![Созданный Обозреватель DSL](../modeling/media/music-explorer.png "Music_Explorer")
+   ![Generated explorer of DSL](../modeling/media/music-explorer.png "Music_Explorer")
 
-   После первого тестирования фигуры секции можно откорректировать некоторые свойства и добавить расширенные свойства. Дополнительные сведения см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
+   После первого тестирования фигуры секции можно откорректировать некоторые свойства и добавить расширенные свойства. For more information, see [Customizing and Extending a Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Отображение ссылочной связи в секции
  Обычно элемент, который отображается в секции, является дочерним для элемента, который представлен фигурой фрагмента. Однако в некоторых случаях можно отобразить элемент, который связан с ним ссылочным отношением.
@@ -524,44 +524,44 @@ ms.locfileid: "72671688"
 
 ##### <a name="to-display-a-reference-link-in-a-compartment"></a>Отображение ссылочной связи в секции
 
-1. **Добавьте секцию в фигуру секции**. На схеме определения DSL щелкните правой кнопкой мыши класс Shape, наведите указатель на пункт **Добавить**, а затем выберите пункт **Секция**.
+1. **Add a compartment to the compartment shape**. On the DSL Definition diagram, right-click the compartment shape class, point to **Add**, and then click **Compartment**.
 
-2. Установите **отображаемый путь коллекции элементов** для перехода к ссылке, а не к ее целевому элементу. Откройте раскрывающееся меню и выберите в представлении дерева вместо цели ссылочное отношение. В примере это связь **артистаппеаредоналбумс**.
+2. Set **Displayed elements collection path** to navigate to the link, instead of its target element. Откройте раскрывающееся меню и выберите в представлении дерева вместо цели ссылочное отношение. In the example, the relationship is **ArtistAppearedOnAlbums**.
 
-3. Задайте **для параметра путь значение отображаемое свойство** , чтобы перейти от ссылки к целевому элементу. В этом примере это **исполнитель**.
+3. Set **Path to Display Property** to navigate from the link to the target element. In the example, this is **Artist**.
 
-4. Задайте для **Свойства отображение** соответствующее свойство целевого элемента, например **имя**.
+4. Set **Display Property** to the appropriate property of the target element, for example **Name**.
 
-5. **Преобразование всех шаблонов**, сборка и запуск DSL, а также открытие тестовой модели.
+5. **Transform All Templates**, build and run the DSL, and open a test model.
 
 6. В схеме модели создайте соответствующие классы фигур, присвойте им имена и создайте связь между ними. В фигуре секции должны появиться имена связанных элементов.
 
 7. Выберите связь или элемент в фигуре секции. Связь и элемент должны исчезнуть.
 
-## <a name="ports"></a>Определение портов на границе другой фигуры
+## <a name="ports"></a> Defining Ports on the Boundary of another Shape
  Порт — это фигура, которая находится на границе с другой фигурой.
 
  Порты могут также использоваться для предоставления фиксированной точки соединения с другой фигурой, для которой пользователь может нарисовать соединители. В данном случае фигуру порта можно сделать прозрачной.
 
- Чтобы просмотреть пример, использующий порты, выберите шаблон **Схема компонентов** при создании нового решения DSL. В данном примере показаны основные точки, которые можно использовать при определении портов.
+ To see an example that uses ports, select the **Component Diagram** template when you create a new DSL solution. В данном примере показаны основные точки, которые можно использовать при определении портов.
 
 - Класс домена, который представляет контейнер портов (`Component`).
 
 - Класс домена, который представляет порты. В этом примере используется класс `ComponentPort`.
 
-- Отношение внедрения между классом домена контейнера и классом домена порта. Дополнительные сведения см. в разделе [Определение доменных классов](#classes).
+- Отношение внедрения между классом домена контейнера и классом домена порта. For more information, see [Defining Domain Classes](#classes).
 
 - Если в одном контейнере нужно смешать разные типы портов, можно создать подклассы класса домена порта. В данном примере `InPort` и `OutPort` наследуются от `ComponentPort`.
 
-- Класс домена контейнера может быть сопоставлен с любым видом фигуры. В этом примере используется `ComponentShape`. Дополнительные сведения см. в разделе [Определение фигур](#shapes).
+- Класс домена контейнера может быть сопоставлен с любым видом фигуры. В этом примере используется `ComponentShape`. For more information, see [Defining Shapes](#shapes).
 
 - Классы доменов портов сопоставлены с фигурами портов. Можно сопоставить либо производные классы с отдельными классами фигур портов, либо базовый класс с одним классом фигуры порта.
 
-  В других отношениях формы порта ведут себя так, как описано в разделе [Определение фигур](#shapes).
+  In other respects, port shapes behave as described in [Defining Shapes](#shapes).
 
-  Дополнительные сведения см. в разделе [Свойства фигур порта](../modeling/properties-of-port-shapes.md).
+  For more information, see [Properties of Port Shapes](../modeling/properties-of-port-shapes.md).
 
-## <a name="swimlanes"></a>Определение DSL с дорожками
+## <a name="swimlanes"></a> Defining a DSL that has Swimlanes
  Дорожки — это вертикальные или горизонтальные разделения схемы. Каждая дорожка соответствует элементу модели. Определение DSL требует одного класса домена для элементов дорожек.
 
  Лучший способ создать DSL с дорожками — это создать новое решение DSL и выбрать шаблон решения "Поток задач". В определении DSL класс субъекта является классом домена, сопоставленным с дорожкой. Переименуйте его и другие классы в соответствии со своим проектом.
@@ -570,34 +570,34 @@ ms.locfileid: "72671688"
 
  Чтобы добавить класс, который будет отображаться как фигура, независимая от дорожки, создайте отношение внедрения между корневым и новым классами. Пользователи смогут размещать эти фигуры в любом месте схемы, в т. ч. на границах и за пределами дорожек. В шаблоне решения "Поток задач", Comment является дочерним классом класса дорожки.
 
- Дополнительные сведения см. в разделе [Свойства дорожек](../modeling/properties-of-swimlanes.md).
+ For more information, see [Properties of Swimlanes](../modeling/properties-of-swimlanes.md).
 
-## <a name="addTypes"></a>Добавление типов свойств
+## <a name="addTypes"></a> Adding Property Types
 
 ### <a name="domain-enumerations-and-literals"></a>Доменные перечисления и литералы
  Доменное перечисление — это тип с несколькими значениями литералов.
 
- Чтобы добавить перечисление доменов, щелкните правой кнопкой мыши корень модели в **обозревателе DSL** и выберите **Добавить новое перечисление доменов**. Элемент появится в **обозревателе DSL** в узле **типы домена** . Этот элемент не отображается в схеме.
+ To add a domain enumeration, right-click the root of the model in the **DSL Explorer** and then click **Add New Domain Enumeration**. The element will appear in the **DSL Explorer** under the **Domain Types** node. Этот элемент не отображается в схеме.
 
- Чтобы добавить литералы перечисления в перечисление доменов, щелкните правой кнопкой мыши перечисление доменов в **обозревателе DSL** и выберите команду **Добавить новый литерал перечисления**.
+ To add enumeration literals to the domain enumeration, right-click the domain enumeration in the **DSL Explorer** and then click **Add New Enumeration Literal**.
 
- По умолчанию свойство, которое имеет тип перечисления, может иметь только одно значение перечисления за раз. Если вы хотите, чтобы пользователи и программисты могли задавать любое сочетание значений — "битовое поле", установите свойство "свойства- **Флаги** " перечисления.
+ По умолчанию свойство, которое имеет тип перечисления, может иметь только одно значение перечисления за раз. If you want users and programmers to be able to set any combination of values - a "bit field" - set the **IsFlags** property of the Enumeration.
 
 ### <a name="external-types"></a>Внешние типы
- При задании типа свойства домена, если нужный тип не найден в раскрывающемся списке **тип** , можно добавить внешний тип. Например, можно добавить тип **System. Drawing. Color** в список.
+ When you set the type of a domain property, if you do not find the type you want in the **Type** drop-down list, you can add an external type. For example, you could add the **System.Drawing.Color** type to the list.
 
- Чтобы добавить тип, щелкните правой кнопкой мыши корень модели в обозревателе DSL и выберите команду **Добавить новый внешний тип**. В окно свойств задайте для имени значение **Color** , а для пространства имен — **System. Drawing**. Этот тип теперь отображается в обозревателе DSL в разделе **типы доменов**. и будет доступен для выборе при установке типа свойства домена.
+ To add a type, right-click the root of the model in DSL Explorer, and then click **Add New External Type**. In the Properties window, set the name to **Color** and the namespace to **System.Drawing**. This type now appears in DSL Explorer under **Domain Types**. и будет доступен для выборе при установке типа свойства домена.
 
-## <a name="custom"></a>Настройка DSL
+## <a name="custom"></a> Customizing the DSL
  Используя техники, описанные в этом разделе, можно быстро создать DSL со схематическим представлением, читаемой формой XML и основными инструментами, необходимыми для генерирования кода или других артефактов.
 
  Существуют два метода расширения определения DSL.
 
 1. Точная настройка DSL с использованием многочисленных функций определения DSL. Например, можно сделать единое средство подключения, способное создавать несколько типов соединителей, и настроить правила, по которым удаление одного элемента ведет к удалению связанных элементов. Большинство этих техник требуют установки значений в определении DSL, а некоторые — написания нескольких строк программного кода.
 
-     Дополнительные сведения см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
+     For more information, see [Customizing and Extending a Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-2. Расширение инструментов моделирования с помощью программного кода для достижения более сложных эффектов. Например, можно создать команды меню, способные изменять модель, а также инструменты, соединяющие в себе два и более DSL. VMSDK разработан специально для того, чтобы облегчить интеграцию расширений с кодом, который генерируется из определения DSL.  Дополнительные сведения см. [в разделе Написание кода для того, чтобы настроить предметно-](../modeling/writing-code-to-customise-a-domain-specific-language.md)ориентированный язык.
+2. Расширение инструментов моделирования с помощью программного кода для достижения более сложных эффектов. Например, можно создать команды меню, способные изменять модель, а также инструменты, соединяющие в себе два и более DSL. VMSDK разработан специально для того, чтобы облегчить интеграцию расширений с кодом, который генерируется из определения DSL.  For more information, see [Writing Code to Customise a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ### <a name="changing-the-dsl-definition"></a>Изменение определения DSL
  При создании любого элемента в определении DSL многие значения устанавливаются автоматически. Установленные значения можно изменять. Это упрощает разработку DSL и в то же время позволяет осуществлять значительные настройки.
@@ -606,21 +606,21 @@ ms.locfileid: "72671688"
 
  Следовательно, необходимо знать, что при изменении некоторых взаимосвязей в определении DSL нет ничего необычного в том, что при сохранении определения или трансформации всех шаблонов будут выдаваться сообщения об ошибках. Большинство этих ошибок легко исправить. Откройте сообщение об ошибке двойным щелчком кнопки мыши, чтобы найти расположение ошибки.
 
- См. также [руководство. изменение пространства имен доменного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ See also [How to: Change the Namespace of a Domain-Specific Language](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Выявлен
- В следующей таблице перечислено большинство стандартных проблем, возникающих при разработке DSL, а также предложения по их решению. Дополнительные рекомендации можно найти на [форуме по средствам визуализации форуме](http://go.microsoft.com/fwlink/?LinkId=186074).
+## <a name="trouble"></a> Troubleshooting
+ В следующей таблице перечислено большинство стандартных проблем, возникающих при разработке DSL, а также предложения по их решению. More advice is available on the [Visualization Tools Extensibililty Forum](https://go.microsoft.com/fwlink/?LinkId=186074).
 
 |Проблема|Предложение|
 |-------------|----------------|
-|Изменения, внесенные в файл определения DSL, не работают.|Щелкните **преобразовать все шаблоны** на панели инструментов, расположенной выше Обозреватель решений, а затем перестройте решение.|
-|Фигуры показывают имя декоратора вместо значения свойства.|Настройте сопоставление декоратора. В схеме определения DSL щелкните карту элементов схемы — это серая линия между классом домена и классом фигуры.<br /><br /> Откройте окно **сведения о DSL** . Если вы не видите его, в меню Вид выберите **другие окна**, а затем щелкните **сведения о DSL**.<br /><br /> Перейдите на вкладку " **карты декораторов** ". Выберите имя декоратора. Убедитесь, что флажок рядом с ним установлен. В разделе **свойство экрана**выберите имя свойства домена.<br /><br /> Дополнительные сведения см. [в разделе фигуры на схеме](#shapes).|
+|Изменения, внесенные в файл определения DSL, не работают.|Click **Transform All Templates** in the toolbar above Solution Explorer, and then rebuild the solution.|
+|Фигуры показывают имя декоратора вместо значения свойства.|Настройте сопоставление декоратора. В схеме определения DSL щелкните карту элементов схемы — это серая линия между классом домена и классом фигуры.<br /><br /> Open the **DSL Details** window. If you cannot see it, on the View menu, point to **Other Windows**, and then click **DSL Details**.<br /><br /> Click the **Decorator Maps** tab. Select the name of the decorator. Убедитесь, что флажок рядом с ним установлен. Under **Display property**, select the name of a domain property.<br /><br /> For more information, see [Shapes on the Diagram](#shapes).|
 |В Обозревателе DSL не удается добавить коллекцию. Например, при щелчке правой кнопкой мыши по пункт "Инструменты" в меню не отображается команда "Добавить инструмент".<br /><br /> В Обозревателе DSL не удается добавить элемент в список.|Щелкните элемент над интересующим вас узлом правой кнопкой мыши. Если вы хотите добавить элемент в список, ищите команду "Добавить" не в узле списка, а во владельце.|
 |Я создал класс домена, но не могу создать экземпляры в Обозревателе языка.|Каждый класс домена, кроме корневого, должен быть целевым объектом отношения внедрения.|
-|В Обозревателе DSL элементы отображаются только с именами их типов.|В определении DSL выберите свойство домена класса и в окно свойств задайте для параметра **имя элемента** значение true.|
-|DSL всегда открывается в XML-редакторе.|Это происходит из-за ошибки чтения файла. Даже если вы исправите эту ошибку, необходимо будет специально сбросить редактор, чтобы он больше не выступал в качестве конструктора DSL.<br /><br /> Щелкните правой кнопкой мыши элемент проекта, выберите команду **Открыть с помощью** и выберите Конструктор _Вашязык_ **(по умолчанию)** .|
-|Панель элементов в DSL не отображается после изменения имен сборки.|Просмотрите и обновите **дслпаккаже\женератедкоде\паккаже.ТТ** . Дополнительные сведения см. в разделе [как изменить пространство имен для доменного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|Панель элементов в DSL не отображается, хотя имя сборки не изменялось.<br /><br /> Либо появляется сообщение о невозможности загрузить расширение.|Сбросьте экспериментальный экземпляр и выполните сборку решения заново.<br /><br /> 1. в меню "Пуск" в разделе " **все программы**" разверните [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)], затем **инструменты**, а затем щелкните **сбросить Microsoft Visual Studio экспериментальный экземпляр**.<br />2. в меню [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Сборка** щелкните **Перестроить решение**.|
+|В Обозревателе DSL элементы отображаются только с именами их типов.|In the DSL Definition, select a domain property of the class and in the Properties window, set **Is Element Name** to true.|
+|DSL всегда открывается в XML-редакторе.|Это происходит из-за ошибки чтения файла. Даже если вы исправите эту ошибку, необходимо будет специально сбросить редактор, чтобы он больше не выступал в качестве конструктора DSL.<br /><br /> Right-click the project item, click **Open With** and select _YourLanguage_**Designer (Default)** .|
+|Панель элементов в DSL не отображается после изменения имен сборки.|Inspect and update **DslPackage\GeneratedCode\Package.tt** For more information, see [How to: Change the Namespace of a Domain-Specific Language](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
+|Панель элементов в DSL не отображается, хотя имя сборки не изменялось.<br /><br /> Либо появляется сообщение о невозможности загрузить расширение.|Сбросьте экспериментальный экземпляр и выполните сборку решения заново.<br /><br /> 1.  At the Windows Start menu, under **All Programs**, expand [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)], then **Tools**, and then click **Reset the Microsoft Visual Studio Experimental Instance**.<br />2.  On the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Build** menu, click **Rebuild Solution**.|
 
 ## <a name="see-also"></a>См. также раздел
- [Начало работы с помощью доменных языков](../modeling/getting-started-with-domain-specific-languages.md) создание доменного языка [на основе Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md) [Создание ДОМЕНного языка на основе WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
+ [Getting Started with Domain-Specific Languages](../modeling/getting-started-with-domain-specific-languages.md) [Creating a Windows Forms-Based Domain-Specific Language](../modeling/creating-a-windows-forms-based-domain-specific-language.md) [Creating a WPF-Based Domain-Specific Language](../modeling/creating-a-wpf-based-domain-specific-language.md)

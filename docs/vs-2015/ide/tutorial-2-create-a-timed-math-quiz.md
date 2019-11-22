@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a5112ac6b0fc14d7a5bfc5066ae6fbabbc3c0bc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b91e5f864bc15f1fbcab9400d0cd3a4a2e8224a9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654746"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299867"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание ограниченной по времени математической головоломки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,8 +32,6 @@ ms.locfileid: "72654746"
   По завершении урока головоломка будет выглядеть так, как показано на следующем рисунке, но в ней будут использоваться другие числа.
 
   ![Math quiz with four problems](../ide/media/express-finishedquiz.png "Express_FinishedQuiz") Головоломка, созданная в этом учебнике
-
-  Загрузить готовую версию головоломки можно на странице [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Полный пример руководства по созданию математической головоломки).
 
 > [!NOTE]
 > В этом учебнике приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.

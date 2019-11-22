@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee281e2cabcbce4f950188465163769caae7b2bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657244"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297967"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72657244"
 
  Покрытие кода возможно при выполнении методов тестов с помощью обозревателя тестов. В таблице результатов отображается процент кода, который был выполнен в каждой сборке, классе и методе. Кроме того, редактор исходного кода показывает, какой код был протестирован.
 
- ![Результаты покрытия кода с помощью цветов](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Code coverage results with coloring](../test/media/codecoverage1.png "CodeCoverage1")
 
  **Requirements**
 
@@ -36,7 +36,7 @@ ms.locfileid: "72657244"
 
 1. В меню **Тест** щелкните **Анализ покрытия кода**.
 
-2. Чтобы увидеть, какие строки были запущены, щелкните ![значок цветовой охват покрытия кода](../test/media/codecoverage-showcoloringicon.png "CodeCoverage — Шовколорингикон")**Показать цвет покрытия кода**.
+2. To see which lines have been run, choose ![Show Code Coverage Coloring Icon](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Show Code Coverage Coloring**.
 
      Чтобы изменить цвета или использовать полужирный шрифт, последовательно щелкните **Сервис**, **Параметры**, **Среда**, **Шрифты и цвета**, **Параметры для: текстовый редактор**. В разделе **Отображаемые элементы** настройте элементы покрытия.
 
@@ -81,7 +81,7 @@ ms.locfileid: "72657244"
 
  Например, предположим, что при выполнении теста со входными данными "2" обнаружилось, что покрыто 50 % определенной функции. При выполнении теста во второй раз со входными данными "-2 " в представлении расцветки покрытия видно, что покрыты другие 50% данной функции. Теперь можно объединить результаты двух тестовых запусков, чтобы в отчете и представлении расцветки покрытия было видно, что покрыто 100 % данной функции.
 
- Используйте ![значок для кнопки слияния в окне "покрытие кода"](../test/media/codecoverage-mergeicon.png "CodeCoverage — Мержеикон")**слияние результатов покрытия кода** для выполнения этой задачи. Можно выбрать любые сочетания последних запусков или импортированных результатов. Если требуется объединить экспортированные результаты, в первую очередь необходимо их импортировать.
+ Use ![Icon for Merge button in Code Coverage window](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Merge Code Coverage Results** to do this. Можно выбрать любые сочетания последних запусков или импортированных результатов. Если требуется объединить экспортированные результаты, в первую очередь необходимо их импортировать.
 
  Щелкните **Экспортировать результаты покрытия кода**, чтобы сохранить результаты операции слияния.
 
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Можно обеспечить более полное управление выбором сборок и элементов для включения в анализ покрытия кода путем записи RUNSETTINGS-файла. Например, можно исключить сборки определенных типов, не добавляя атрибуты к их классам. См. дополнительные сведения по [настройке анализа покрытия кода](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Анализ покрытия кода в службе сборки
- При проверке кода тесты будут выполняться на сервере сборки вместе с другими тестами от других членов команды. (Если вы еще этого не сделали, см. раздел [Запуск тестов в процессе сборки](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Полезно анализировать покрытие кода в службе сборок, поскольку это дает наиболее актуальную и исчерпывающую картину покрытия всего проекта. Сюда также входят автоматические системные тесты и другие закодированные тесты, которые обычно не выполняются на компьютерах разработчиков.
+ При проверке кода тесты будут выполняться на сервере сборки вместе с другими тестами от других членов команды. (If you haven’t already set this up, see [Run tests in your build process](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) It’s useful to analyze code coverage on the build service, because that gives the most up-to-date and comprehensive picture of coverage in the whole project. Сюда также входят автоматические системные тесты и другие закодированные тесты, которые обычно не выполняются на компьютерах разработчиков.
 
 1. В Team Explorer откройте меню **Сборки**, а затем добавьте или измените определение сборки.
 
@@ -260,7 +260,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
       В разделе **Автоматизированные тесты** щелкните **Тестовая сборка** и нажмите кнопку с многоточием **[...]** в конце строки. В диалоговом окне **Добавление/изменение тестового запуска** в разделе **Средство выполнения тестов** щелкните **Средство выполнения тестов Visual Studio**.
 
-   ![Задание определения сборки для покрытия кода](../test/media/codecoverage-plaincc.png "CodeCoverage — Плаинкк")
+   ![Setting the build definition for code coverage](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    После выполнения сборки результаты покрытия кода присоединяются к тестовому запуску и отображаются в сводке сборки.
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>См. также раздел
- [Настройка анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md) [модульное тестирование](../test/unit-test-your-code.md) кода для [устранения проблем](../test/troubleshooting-code-coverage.md) с кодом
+ [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md) [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md) [Unit Test Your Code](../test/unit-test-your-code.md)

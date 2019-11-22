@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaaaacdcc5cf7e3044505f7cdb7aeb2e7e3e7078
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871966"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300640"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно инструментировать свой исходный код с помощью пакета SDK визуализатора параллелизма для отображения дополнительных сведений в визуализаторе параллелизма. Можно связать дополнительные данные с этапами выполнения кода и событиями в коде. Эти дополнительные визуализации известны как *маркеры*.  Ознакомительное пошаговое руководство см. в разделе [Сведения о пакете SDK визуализатора параллелизма](http://go.microsoft.com/fwlink/?LinkId=235405).
+Можно инструментировать свой исходный код с помощью пакета SDK визуализатора параллелизма для отображения дополнительных сведений в визуализаторе параллелизма. Можно связать дополнительные данные с этапами выполнения кода и событиями в коде. Эти дополнительные визуализации известны как *маркеры*.  Ознакомительное пошаговое руководство см. в разделе [Сведения о пакете SDK визуализатора параллелизма](https://go.microsoft.com/fwlink/?LinkId=235405).
 
 ## <a name="properties"></a>Свойства
  Флаги, интервалы и сообщения имеют по два свойства: "Категория"и "Важность". В диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) эти свойства можно использовать для фильтрации набора отображаемых маркеров. Кроме того, эти свойства влияют на визуальное представление маркеров. Например, размер флагов используется для представления важности. А цвет используется для указания категории.
@@ -31,9 +31,9 @@ ms.locfileid: "68871966"
 
 ### <a name="c-and-visual-basic"></a>C# и Visual Basic
 
-В C#, Visual Basic и другой управляемый код используют поставщик по умолчанию путем вызова методов в классе [маркеров](/previous-versions/hh694099(v=vs.140)) . Он предоставляет четыре метода для создания маркеров: [Вритефлаг](/previous-versions/hh694185(v=vs.140)), [статического EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))и [вритеалерт](/previous-versions/hh694180(v=vs.140)). Для этих функций есть несколько перегруженных методов, применяемых в зависимости от того, нужно ли использовать значения по умолчанию для свойства.  Простейшая перегрузка принимает только строковый параметр, который указывает описание события. Описание отображается в отчетах визуализатора параллелизма.
+В коде на языке C#, Visual Basic или другом управляемом коде используйте поставщик по умолчанию путем вызова методов в классе [Markers](/previous-versions/hh694099(v=vs.140)). It exposes four methods for generating markers: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)), and [WriteAlert](/previous-versions/hh694180(v=vs.140)). Для этих функций есть несколько перегруженных методов, применяемых в зависимости от того, нужно ли использовать значения по умолчанию для свойства.  Простейшая перегрузка принимает только строковый параметр, который указывает описание события. Описание отображается в отчетах визуализатора параллелизма.
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Добавление поддержки пакета SDK в C# проект или Visual Basic
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Add SDK support to a C# or Visual Basic project
 
 1. В строке меню выберите **Анализ**, **Визуализатор параллелизма**, **Добавить пакет SDK в проект**.
 
@@ -78,19 +78,19 @@ ms.locfileid: "68871966"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Использование нового поставщика маркера в проекте C# или Visual Basic
 
-1. Создайте объект [MarkerWriter](/previous-versions/hh694138(v=vs.140)) . Конструктор принимает идентификатор GUID.
+1. Создайте объект [MarkerWriter](/previous-versions/hh694138(v=vs.140)). Конструктор принимает идентификатор GUID.
 
 2. Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) визуализатора параллелизма.  Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Использование нового поставщика маркеров в проекте C# или Visual Basic
 
-1. Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER. Конструктор принимает идентификатор GUID * и PCV_PROVIDER\*.
+1. Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER. The constructor takes a GUID* and PCV_PROVIDER\*.
 
 2. Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Использование набора маркеров в проекте C# или Visual Basic
 
-1. Чтобы использовать новый [MarkerSeries](/previous-versions/hh694127(v=vs.140)), сначала создайте его с помощью объекта [MarkerWriter](/previous-versions/hh694138(v=vs.140)) , а затем создайте события маркера непосредственно из нового ряда.
+1. Для использования нового [MarkerSeries](/previous-versions/hh694127(v=vs.140)) сначала создайте его с помощью объекта [MarkerWriter](/previous-versions/hh694138(v=vs.140)), а затем сформируйте события маркеров непосредственно из нового набора.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);

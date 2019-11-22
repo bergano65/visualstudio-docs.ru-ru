@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Развертывание вручную приложения ClickOnce | Документация Майкрософт
+title: 'Walkthrough: Manually Deploying a ClickOnce Application | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,193 +21,193 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686330"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294679"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Пошаговое руководство. Развертывание вручную приложения ClickOnce
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Разбор примера: развертывание вручную приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Если Visual Studio нельзя использовать для развертывания вашего [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, или если необходимо использовать дополнительные функции развертывания, например технологии развертывания доверенных приложений следует использовать средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифесты. В этом пошаговом руководстве описывается создание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания с помощью командной строки версии (Mage.exe) или графической версии (MageUI.exe) Manifest Generation and Editing Tool.  
+If you cannot use Visual Studio to deploy your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, or you need to use advanced deployment features, such as Trusted Application Deployment, you should use the Mage.exe command-line tool to create your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests. This walkthrough describes how to create a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment by using either the command-line version (Mage.exe) or the graphical version (MageUI.exe) of the Manifest Generation and Editing Tool.  
   
-## <a name="prerequisites"></a>Предварительные требования  
- В этом пошаговом руководстве имеет некоторые предварительные условия и параметры, которые необходимо выбрать до создания развертывания.  
+## <a name="prerequisites"></a>Необходимые компоненты  
+ This walkthrough has some prerequisites and options that you need to choose before building a deployment.  
   
-- Установите Mage.exe и MageUI.exe.  
+- Install Mage.exe and MageUI.exe.  
   
-     Mage.exe и MageUI.exe являются частью [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Вы должны либо иметь [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] установлен или версию [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] поставляемой с Visual Studio. Дополнительные сведения см. в разделе [пакета Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) на сайте MSDN.  
+     Mage.exe and MageUI.exe are part of the [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. You must either have the [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] installed or the version of the [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] included with Visual Studio. For more information, see [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) on MSDN.  
   
-- Создать приложения для развертывания.  
+- Provide an application to deploy.  
   
-     В этом пошаговом руководстве предполагается, что это приложение Windows, которое вы готовы к развертыванию. Это приложение будет называться AppToDeploy.  
+     This walkthrough assumes that you have a Windows application that you are ready to deploy. This application will be referred to as AppToDeploy.  
   
-- Определите, как будут распределяться развертывания.  
+- Determine how the deployment will be distributed.  
   
-     Возможны следующие варианты: Интернет, файловый ресурс или компакт-диска. Для получения дополнительной информации см. [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+     The distribution options include: Web, file share, or CD. Для получения дополнительной информации см. [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
-- Определите, требуется ли приложению повышенного уровня доверия.  
+- Determine whether the application requires an elevated level of trust.  
   
-     Если приложение требует полного доверия, например, полный доступ к системе пользователя, можно использовать `-TrustLevel` параметр Mage.exe для этого. Если вы хотите определить пользовательский набор разрешений для приложения, можно скопировать в разделе разрешения в Интернете или интрасети из другого манифеста, изменить его в соответствии с потребностями и его добавления в манифест приложения, используя текстовый редактор или MageUI.exe. Для получения дополнительной информации см. [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+     If your application requires Full Trust—for example, full access to the user's system—you can use the `-TrustLevel` option of Mage.exe to set this. If you want to define a custom permission set for your application, you can copy the Internet or intranet permission section from another manifest, modify it to suit your needs, and add it to the application manifest using either a text editor or MageUI.exe. Для получения дополнительной информации см. [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-- Получите сертификат Authenticode.  
+- Obtain an Authenticode certificate.  
   
-     Следует подписать развертывание с помощью сертификата Authenticode. Можно создать тестовый сертификат с помощью средств Visual Studio, MageUI.exe, или MakeCert.exe и Pvk2Pfx.exe, или сертификат можно получить из центром сертификации (ЦС). Если вы решили использовать развертывание доверенных приложений, необходимо также выполнить однократную установку сертификата на всех клиентских компьютерах. Для получения дополнительной информации см. [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
-  
-    > [!NOTE]
-    > Также можно подписать развертывание с сертификатом CNG, который можно получить в центре сертификации.  
-  
-- Убедитесь, что у приложения нет манифеста с помощью сведений об UAC.  
-  
-     Необходимо определить, содержит ли приложение манифест со сведениями контроля учетных записей (UAC), такие как `<dependentAssembly>` элемент. Чтобы просмотреть манифест приложения, можно использовать Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) служебной программы.  
-  
-     Если приложение содержит манифест с подробными сведениями контроля учетных Записей, необходимо повторно создать его без сведений об UAC. Для проекта C# в Visual Studio откройте свойства проекта и выберите вкладку "приложения". В **манифеста** стрелку раскрывающегося списка выберите **создать приложение без манифеста**. Для проекта Visual Basic в Visual Studio, откройте свойства проекта, выберите вкладку "приложения" и нажмите кнопку **параметров контроля учетных Записей представление**. В открытом файле манифеста, удалите все элементы с одним `<asmv1:assembly>` элемент.  
-  
-- Определите, требуется ли приложению необходимые компоненты на клиентском компьютере.  
-  
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, развертываемые из Visual Studio, могут включать предварительные условия для установки загрузчика (setup.exe) с развертыванием. В этом пошаговом руководстве создается два манифеста, необходимые для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания. Загрузчик необходимых компонентов можно создать с помощью [задача GenerateBootstrapper](../msbuild/generatebootstrapper-task.md).  
-  
-### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Чтобы развернуть приложение с помощью средства командной строки Mage.exe  
-  
-1. Создайте каталог, где будут храниться ваши [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] файлы развертывания.  
-  
-2. В каталоге развертывания, который вы только что создали создайте подпапку версии. Если это первый раз, что вы развертываете приложение, имя, которое в подпапку версии **1.0.0.0**.  
+     You should sign your deployment with an Authenticode certificate. You can generate a test certificate by using Visual Studio, MageUI.exe, or MakeCert.exe and Pvk2Pfx.exe tools, or you can obtain a certificate from a Certificate Authority (CA). If you choose to use Trusted Application Deployment, you must also perform a one-time installation of the certificate onto all client computers. Для получения дополнительной информации см. [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    > Версия развертывания может отличаться от версии приложения.  
+    > You can also sign your deployment with a CNG certificate that you can obtain from a Certificate Authority.  
   
-3. Скопируйте все файлы приложения в подпапку версии, включая исполняемые файлы, сборки, ресурсы и файлы данных. При необходимости можно создать дополнительные вложенные каталоги, содержащие дополнительные файлы.  
+- Make sure that the application does not have a manifest with UAC information.  
   
-4. Откройте [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] или команды Visual Studio и замените в подпапку версии.  
+     You need to determine whether your application contains a manifest with User Account Control (UAC) information, such as an `<dependentAssembly>` element. To examine an application manifest, you can use the Windows Sysinternals [Sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) utility.  
   
-5. Создайте манифест приложения с помощью вызова Mage.exe. Следующая инструкция создает манифест приложения для кода, скомпилированного для выполнения на процессоре Intel x86.  
+     If your application contains a manifest with UAC details, you must re-build it without the UAC information. For a C# project in Visual Studio, open the project properties and select the Application tab. In the **Manifest** drop-down list, select **Create application without a manifest**. For a Visual Basic project in Visual Studio, open the project properties, select the Application tab, and click **View UAC Settings**. In the opened manifest file, remove all elements within the single `<asmv1:assembly>` element.  
+  
+- Determine whether the application requires prerequisites on the client computer.  
+  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications deployed from Visual Studio can include a prerequisite installation bootstrapper (setup.exe) with your deployment. This walkthrough creates the two manifests required for a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment. You can create a prerequisite bootstrapper by using the [GenerateBootstrapper Task](../msbuild/generatebootstrapper-task.md).  
+  
+### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>To deploy an application with the Mage.exe command-line tool  
+  
+1. Create a directory where you will store your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment files.  
+  
+2. In the deployment directory you just created, create a version subdirectory. If this is the first time that you are deploying the application, name the version subdirectory **1.0.0.0**.  
+  
+    > [!NOTE]
+    > The version of your deployment can be distinct from the version of your application.  
+  
+3. Copy all of your application files to the version subdirectory, including executable files, assemblies, resources, and data files. If necessary, you can create additional subdirectories that contain additional files.  
+  
+4. Open the [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] or Visual Studio command prompt and change to the version subdirectory.  
+  
+5. Create the application manifest with a call to Mage.exe. The following statement creates an application manifest for code compiled to run on the Intel x86 processor.  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
     > [!NOTE]
-    > Не забудьте включить точку (.) после `-FromDirectory` параметр, который указывает на текущий каталог. Если точка не будет включен, необходимо указать путь к файлам приложения.  
+    > Be sure to include the dot (.) after the `-FromDirectory` option, which indicates the current directory. If you do not include the dot, you must specify the path to your application files.  
   
-6. Подписать манифест приложения с помощью сертификата Authenticode. Замените *mycert.pfx* с путем к файлу сертификата. Замените *passwd* с паролем для файла сертификата.  
+6. Sign the application manifest with your Authenticode certificate. Replace *mycert.pfx* with the path to your certificate file. Replace *passwd* with the password for your certificate file.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-     Чтобы подписать манифест приложения с сертификатом CNG, используйте следующий код. Замените *cngCert.pfx* с путем к файлу сертификата.  
+     To sign  the application manifest with a CNG certificate, use the following. Replace *cngCert.pfx* with the path to your certificate file.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-7. Измените корневой каталог развертывания.  
+7. Change to the root of the deployment directory.  
   
-8. Создайте манифест развертывания с помощью вызова Mage.exe. По умолчанию пометит Mage.exe вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания как установленное приложение, так что он может выполняться как в интерактивном и автономном режиме. Чтобы сделать приложение доступным только в том случае, если пользователь находится в сети, используйте `-Install` параметр со значением `false`. Если пользователи будут устанавливать приложение из веб-сайт или общую папку по умолчанию, убедитесь, что значение `-ProviderUrl` манифеста указывает расположение приложения на веб-сервер или общую папку.  
+8. Generate the deployment manifest with a call to Mage.exe. By default, Mage.exe will mark your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment as an installed application, so that it can be run both online and offline. To make the application available only when the user is online, use the `-Install` option with a value of `false`. If you use the default, and users will install your application from a Web site or file share, make sure that the value of the `-ProviderUrl` option points to the location of the application manifest on the Web server or share.  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
-9. Подписать манифест развертывания с помощью сертификата Authenticode или CNG.  
+9. Sign the deployment manifest with your Authenticode  or CNG certificate.  
   
     ```  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
-     или  
+     or  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-10. Скопируйте все файлы в каталоге развертывания назначение развертывания или носителя. Это может быть папка на веб-сайта или сайта FTP, общей папки или компакт-диска.  
+10. Copy all of the files in the deployment directory to the deployment destination or media. This may be either a folder on a Web site or FTP site, a file share, or a CD-ROM.  
   
-11. Предоставить пользователям URL-адрес, UNC-путь или носитель, необходимые для установки приложения. Если указать URL-адрес или UNC-путь, необходимо предоставить пользователям полный путь к манифесту развертывания. Например, если развертывается AppToDeploy http://webserver01/ в каталоге AppToDeploy полный путь URL-адрес будет иметь http://webserver01/AppToDeploy/AppToDeploy.application.  
+11. Provide your users with the URL, UNC, or physical media required to install your application. If you provide a URL or a UNC, you must give your users the full path to the deployment manifest. For example, if AppToDeploy is deployed to http://webserver01/ in the AppToDeploy directory, the full URL path would be http://webserver01/AppToDeploy/AppToDeploy.application.  
   
-### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Чтобы развернуть приложение с помощью графического средства MageUI.exe  
+### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>To deploy an application with the MageUI.exe graphical tool  
   
-1. Создайте каталог, где будут храниться ваши [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] файлы развертывания.  
+1. Create a directory where you will store your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment files.  
   
-2. В каталоге развертывания, который вы только что создали создайте подпапку версии. Если это первый раз, что вы развертываете приложение, имя, которое в подпапку версии **1.0.0.0**.  
+2. In the deployment directory you just created, create a version subdirectory. If this is the first time that you are deploying the application, name the version subdirectory **1.0.0.0**.  
   
     > [!NOTE]
-    > Версия развертывания может отличаться от версии приложения.  
+    > The version of your deployment is probably distinct from the version of your application.  
   
-3. Скопируйте все файлы приложения в подпапку версии, включая исполняемые файлы, сборки, ресурсы и файлы данных. При необходимости можно создать дополнительные вложенные каталоги, содержащие дополнительные файлы.  
+3. Copy all of your application files to the version subdirectory, including executable files, assemblies, resources, and data files. If necessary, you can create additional subdirectories that contain additional files.  
   
-4. Запуск графического средства MageUI.exe.  
+4. Start the MageUI.exe graphical tool.  
   
     ```  
     MageUI.exe  
     ```  
   
-5. Создайте новый манифест приложения, выбрав **файл**, **New**, **манифест приложения** в меню.  
+5. Create a new application manifest by selecting **File**, **New**, **Application Manifest** from the menu.  
   
-6. По умолчанию **имя** вкладке, введите имя и номер версии данного развертывания. Также укажите **процессора** , сборки приложения, например x86.  
+6. On the default **Name** tab, type the name and version number of this deployment. Also specify the **Processor** that your application is built for, such as x86.  
   
-7. Выберите **файлы** и нажмите кнопку с многоточием (**...** ) рядом с пунктом **каталога приложения** текстовое поле. Появится диалоговое окно Выбор папки.  
+7. Select the **Files** tab and click the ellipsis ( **...** ) button next to the **Application directory** text box. A Browse For Folder dialog box appears.  
   
-8. Выберите в подпапку версии, содержащий файлы приложения и нажмите кнопку **ОК**.  
+8. Select the version subdirectory containing your application files, and then click **OK**.  
   
-9. Если вы развернете из Internet Information Services (IIS), выберите **при заполнении добавить расширение .deploy любой файл, который не имеет** "флажок".  
+9. If you will deploy from Internet Information Services (IIS), select the **When populating add the .deploy extension to any file that does not have it** check box.  
   
-10. Нажмите кнопку **заполнить** кнопку, чтобы добавить все файлы приложения в список файлов. Если приложение содержит более одного исполняемого файла, пометьте главный исполняемый файл для этого развертывания в качестве запускаемого приложения, выбрав **точки входа** из **тип файла** стрелку раскрывающегося списка. (Если приложение содержит только один исполняемый файл, MageUI.exe пометит его автоматически.)  
+10. Click the **Populate** button to add all your application files to the file list. If your application contains more than one executable file, mark the main executable file for this deployment as the startup application by selecting **Entry Point** from the **File Type** drop-down list. (If your application contains only one executable file, MageUI.exe will mark it for you.)  
   
-11. Выберите **разрешения, необходимые** и выберите уровень доверия, что требуется приложению. По умолчанию используется **FullTrust**, которое подойдет для большинства приложений.  
+11. Select the **Permissions Required** tab and select the level of trust that you need your application to assert. The default is **FullTrust**, which will be suitable for most applications.  
   
-12. Выберите **файл**, **Сохранить как** в меню. Параметры создания подписей диалоговое окно появляется при попытке подписать манифест приложения.  
+12. Select **File**, **Save As** from the menu. A Signing Options dialog box appears prompting you to sign the application manifest.  
   
-13. При наличии сертификата, хранящегося в виде файла в файловой системе, используйте **подписывать с файлом сертификата** и выберите сертификат из файловой системы, нажав кнопку с многоточием (**...** ) кнопку. Затем введите пароль сертификата.  
+13. If you have a certificate stored as a file on your file system, use the **Sign with certificate file** option, and select the certificate from the file system by using the ellipsis ( **...** ) button. Then type your certificate password.  
   
-     -или-  
+     \- или -  
   
-     Если сертификат содержится в хранилище сертификатов, доступном с компьютера, выберите **входа, сохраненным сертификатом** и выберите сертификат из предоставленного списка.  
+     If your certificate is kept in a certificate store accessible from your computer, select the **Sign with stored certificate** option, and select the certificate from the provided list.  
   
-14. Нажмите кнопку **ОК** чтобы подписать манифест приложения. Будет открыто диалоговое окно Сохранить как.  
+14. Click **OK** to sign your application manifest. The Save As dialog box appears.  
   
-15. В диалоговом окне Сохранение укажите каталог версии и нажмите кнопку **Сохранить**.  
+15. In the Save As dialog box, specify the version directory, and then click **Save**.  
   
-16. Выберите **файл**, **New**, **манифест развертывания** меню, чтобы создать манифест развертывания.  
+16. Select **File**, **New**, **Deployment Manifest** from the menu to create your deployment manifest.  
   
-17. На **имя** задайте имя и номер версии для этого развертывания (**1.0.0.0** в этом примере). Также укажите **процессора** , сборки приложения, например x86.  
+17. On the **Name** tab, specify a name and version number for this deployment (**1.0.0.0** in this example). Also specify the **Processor** that your application is built for, such as x86.  
   
-18. Выберите **описание** и укажите значения для **издателя** и **продукта**. (**Продукта** — это имя, данное приложение в меню Пуск в Windows при установке приложения на клиентский компьютер для автономного использования.)  
+18. Select the **Description** tab, and specify values for **Publisher** and **Product**. (**Product** is the name given to your application on the Windows Start menu when your application installs on a client computer for offline use.)  
   
-19. Выберите **варианты развертывания** вкладку и в **начальное расположение** текстовом окне укажите расположение манифеста приложения на веб-сервера или общей папки. Например \\\myServer\myShare\AppToDeploy.application.  
+19. Select the **Deployment Options** tab, and in the **Start Location** text box, specify the location of the application manifest on the Web server or share. For example, \\\myServer\myShare\AppToDeploy.application.  
   
-20. Если вы добавили расширение .deploy на предыдущем шаге, также выберите **использовать расширение .deploy** здесь.  
+20. If you added the .deploy extension in a previous step, also select **Use .deploy file name extension** here.  
   
-21. Выберите **параметры обновления** вкладке и укажите частоту обновления приложения. Если приложение использует <xref:System.Deployment.Application.UpdateCheckInfo> для самостоятельной проверки обновлений, снимите **это приложение должно проверять наличие обновлений** "флажок".  
+21. Select the **Update Options** tab, and specify how often you would like this application to update. If your application uses <xref:System.Deployment.Application.UpdateCheckInfo> to check for updates itself, clear the **This application should check for updates** check box.  
   
-22. Выберите **ссылка приложения** вкладке и нажмите кнопку **выбрать манифест** кнопки. Откройте диалоговое окно.  
+22. Select the **Application Reference** tab and then click the **Select Manifest** button. An open dialog box appears.  
   
-23. Выберите манифест приложения, который был создан ранее и нажмите кнопку **откройте**.  
+23. Select the application manifest that you created earlier and then click **Open**.  
   
-24. Выберите **файл**, **Сохранить как** в меню. Параметры создания подписей диалоговое окно появляется при попытке подписать манифест развертывания.  
+24. Select **File**, **Save As** from the menu. A Signing Options dialog box appears prompting you to sign the deployment manifest.  
   
-25. При наличии сертификата, хранящегося в виде файла в файловой системе, используйте **подписывать с файлом сертификата** и выберите сертификат из файловой системы, нажав кнопку с многоточием (**...** ) кнопку. Затем введите пароль сертификата.  
+25. If you have a certificate stored as a file on your file system, use the **Sign with certificate file** option, and select the certificate from the file system by using the ellipsis ( **...** ) button. Then type your certificate password.  
   
-     -или-  
+     \- или -  
   
-     Если сертификат содержится в хранилище сертификатов, доступном с компьютера, выберите **входа, сохраненным сертификатом** и выберите сертификат из предоставленного списка.  
+     If your certificate is kept in a certificate store accessible from your computer, select the **Sign with stored certificate** option, and select the certificate from the provided list.  
   
-26. Нажмите кнопку **ОК** чтобы подписать манифест развертывания. Будет открыто диалоговое окно Сохранить как.  
+26. Click **OK** to sign your deployment manifest. The Save As dialog box appears.  
   
-27. В **Сохранить как** диалоговое окно, перемещение на один уровень выше в корневой каталог развертывания и нажмите кнопку **Сохранить**.  
+27. In the **Save As** dialog box, move up one directory to the root of your deployment and then click **Save**.  
   
-28. Скопируйте все файлы в каталоге развертывания назначение развертывания или носителя. Это может быть папка на веб-сайта или сайта FTP, общей папки или компакт-диска.  
+28. Copy all of the files in the deployment directory to the deployment destination or media. This may be either a folder on a Web site or FTP site, a file share, or a CD-ROM.  
   
-29. Предоставить пользователям URL-адрес, UNC-путь или носитель, необходимые для установки приложения. Если указать URL-адрес или UNC-путь, необходимо предоставить пользователям полный путь манифеста развертывания. Например, если развертывается AppToDeploy http://webserver01/ в каталоге AppToDeploy полный путь URL-адрес будет иметь http://webserver01/AppToDeploy/AppToDeploy.application.  
+29. Provide your users with the URL, UNC, or physical media required to install your application. If you provide a URL or a UNC, you must give your users the full path the deployment manifest. For example, if AppToDeploy is deployed to http://webserver01/ in the AppToDeploy directory, the full URL path would be http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Следующие шаги  
- Если необходимо развернуть новую версию приложения, создайте новый каталог с именем новой версии — например, 1.0.0.1—and скопируйте файлы нового приложения в новый каталог. Далее необходимо выполнить приведенные выше шаги, чтобы создать и подписать новый манифест приложения и обновить и подписать манифест развертывания. Будьте внимательны указать ту же версию, более поздней версии в Mage.exe `-New` и `–Update` вызовы, как [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] обновляет только новые версии с наибольшее целое число слева. Если вы использовали MageUI.exe, можно обновить манифест развертывания, открыв его, выбрав **ссылка приложения** вкладки, щелкнув **выбрать манифест** кнопку, а затем выбрав обновленный манифест приложения.  
+ When you need to deploy a new version of the application, create a new directory named after the new version—for example, 1.0.0.1—and copy the new application files into the new directory. Next, you need to follow the previous steps to create and sign a new application manifest, and update and sign the deployment manifest. Be careful to specify the same higher version in both the Mage.exe `-New` and `–Update` calls, as [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] only updates higher versions, with the left-most integer most significant. If you used MageUI.exe, you can update the deployment manifest by opening it, selecting the **Application Reference** tab, clicking the **Select Manifest** button, and then selecting the updated application manifest.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Mage.exe (средство создания и редактирования манифеста)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
+ [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

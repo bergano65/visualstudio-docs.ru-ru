@@ -1,5 +1,5 @@
 ---
-title: Добавление стереотипов в элементы модели UML | Документация Майкрософт
+title: Add stereotypes to UML model elements | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655277"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292336"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Добавление стереотипов к элементам модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ ms.locfileid: "72655277"
 
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Связывание профиля с моделью или пакетом
 
-1. Откройте **Обозреватель моделей UML**. В меню **архитектура** выберите пункт **окна**, а затем выберите пункт **Обозреватель моделей UML**.
+1. Open **UML Model Explorer**. On the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
 
 2. Найдите пакет или модель, содержащие все элементы, к которым требуется применить стереотипы в профиле.
 
-3. Щелкните правой кнопкой мыши пакет или модель и выберите пункт **Свойства**.
+3. Right-click the package or the model and then click **Properties**.
 
-4. В окне **Свойства** задайте для свойства **Профили** профили, которые содержат стереотипы, которые вы хотите использовать.
+4. In the **Properties** window, set the **Profiles** property to the profiles that contain the stereotypes you want to use.
 
      Стереотипы этого профиля станут доступны во всех элементах внутри модели или пакета. Если пакет содержит другие пакеты, стереотипы также будут доступны и в элементах внутри них.
 
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>Добавление стереотипов в элементы модели или отношения
 
-1. Щелкните правой кнопкой мыши элемент модели или связь на схеме или в **обозревателе моделей UML**и выберите пункт **свойства**.
+1. Right-click the model element or relationship, either on a diagram or in **UML Model Explorer**, and then click **Properties**.
 
     > [!NOTE]
     > Чтобы добавить одни и те же стереотипы в несколько элементов, можно выбрать несколько элементов и щелкните один из них правой кнопкой мыши.
 
-2. Щелкните свойство **стереотипы** и выберите стереотипы, которые необходимо применить.
+2. Click the **Stereotypes** property and select the stereotypes that you want to apply.
 
      для большинства видов элементов и отношений выбранные стереотипы заключаются в элементе модели в угловые скобки.
 
     > [!NOTE]
-    > Если вы не видите свойство **стереотипы** или если нужный стереотип не отображается, убедитесь, что элемент модели находится внутри пакета или модели, с которой связан соответствующий профиль.
+    > If you cannot see the **Stereotypes** property, or if the stereotype you want does not appear, verify that the model element is inside a package or a model to which the appropriate profile has been linked.
 
-3. Некоторые стереотипы позволяют задавать значения дополнительных свойств для элемента модели. Чтобы просмотреть эти свойства, разверните свойство **стереотипы** .
+3. Некоторые стереотипы позволяют задавать значения дополнительных свойств для элемента модели. To see these properties, expand the **Stereotypes** property.
 
 ### <a name="to-create-model-elements-within-a-package"></a>Создание элементов модели внутри пакета
 
-1. Создайте пакет на UML-схеме классов или в **обозревателе моделей UML**.
+1. Create a package either in a UML Class Diagram, or in **UML Model Explorer**.
 
 2. Добавьте элементы модели в пакет одним из следующих способов:
 
@@ -65,7 +65,7 @@ ms.locfileid: "72655277"
 
          \- или -
 
-    - В обозревателе моделей UML щелкните правой кнопкой мыши пакет, наведите указатель на пункт **Добавить**и выберите тип элемента.
+    - In UML Model Explorer, right-click the package, point to **Add**, and then click an element type.
 
          \- или -
 
@@ -75,11 +75,12 @@ ms.locfileid: "72655277"
 
     - Свяжите схему с пакетом, а затем создайте в ней элементы.
 
-         Для этого щелкните правой кнопкой мыши пустую часть диаграммы и выберите пункт **Свойства**. В окне **Свойства** задайте для параметра **связанный пакет** нужный пакет.
+         To do this, right-click a blank part of the diagram and then click **Properties**. In the **Properties** window, set **Linked Package** to the package you want.
 
          Все создаваемые на схеме новые элементы будут определены внутри этого пакета.
 
          Это допускают только некоторые типы схем.
 
 ## <a name="see-also"></a>См. также раздел
- [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [определяет пакеты и пространства имен](../modeling/define-packages-and-namespaces.md) [цвета классы UML по стереотипу](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)
+ [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Define packages and namespaces](../modeling/define-packages-and-namespaces.md)
+

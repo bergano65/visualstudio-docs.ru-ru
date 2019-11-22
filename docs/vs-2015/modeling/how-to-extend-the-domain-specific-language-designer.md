@@ -1,5 +1,5 @@
 ---
-title: Руководство. расширение Конструктор предметно-ориентированных языков | Документация Майкрософт
+title: 'How to: Extend the Domain-Specific Language Designer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,52 +9,52 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656023"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300905"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете сделать расширения конструктором, который используется для редактирования определений DSL. Типы расширений, которые можно сделать, включают добавление команд меню, добавление обработчиков для жестов перетаскивания и двойных щелчков, а также правила, активируемые при изменении определенных типов значений или связей. Расширения можно упаковать как расширение интеграции Visual Studio (VSIX) и распространить среди других пользователей.
+You can make extensions to the designer that you use to edit DSL Definitions. Types of extension that you can make include adding menu commands, adding handlers for drag and double-click gestures, and rules that are triggered when particular types of values or relationships change. The extensions can be packaged as a Visual Studio Integration Extension (VSIX) and distributed to other users.
 
- Пример кода и дополнительные сведения об этой функции см. на [веб-сайте SDK визуализации и моделирования Visual Studio (VMSDK)](http://go.microsoft.com/fwlink/?LinkID=186128).
+ For sample code and more information about this feature, see the Visual Studio [Visualization and Modeling SDK (VMSDK) Web site](https://go.microsoft.com/fwlink/?LinkID=186128).
 
-## <a name="setting-up-the-solution"></a>Настройка решения
- Настройте проект, содержащий код вашего расширения, и проект VSIX, который экспортирует проект. Решение может содержать другие проекты, включенные в один и тот же VSIX.
+## <a name="setting-up-the-solution"></a>Setting up the Solution
+ Set up a project that contains the code of your extension, and a VSIX project that exports the project. Your solution can contain other projects that are incorporated into the same VSIX.
 
-#### <a name="to-create-a-dsl-designer-extension-solution"></a>Создание решения расширения Конструктор DSL
+#### <a name="to-create-a-dsl-designer-extension-solution"></a>To create a DSL Designer Extension Solution
 
-1. Создайте новый проект, используя шаблон проекта библиотеки классов. В диалоговом окне **Новый проект** нажмите кнопку **визуальный C#**  элемент, а затем в среднем окне щелкните **Библиотека классов**.
+1. Create a new project using the Class Library project template. In the **New Project** dialog box, click **Visual C#** and then in the middle window click **Class Library**.
 
-     Этот проект будет содержать код ваших расширений.
+     This project will contain the code of your extensions.
 
-2. Создайте новый проект с помощью шаблона проекта VSIX. В диалоговом окне **Новый проект** разверните узел **визуальный C#** элемент, щелкните **расширяемость**, а затем в среднем окне выберите **проект VSIX**.
+2. Create a new project using the VSIX project template. In the **New Project** dialog box, expand **Visual C#** , click **Extensibility**, and then in the middle window select **VSIX Project**.
 
-     Выберите **Добавить в решение**.
+     Select **Add to Solution**.
 
-     Source. extension. vsixmanifest откроется в редакторе манифеста VSIX.
+     Source.extension.vsixmanifest opens in the VSIX manifest editor.
 
-3. Над полем содержимое щелкните **Добавить содержимое**.
+3. Above the Content field, click **Add Content**.
 
-4. В диалоговом окне **Добавление содержимого** установите **флажок выбрать тип содержимого** в **компоненте MEF**и задайте для параметра **проект** проект библиотеки классов.
+4. In the **Add Content** dialog box, set **Select a Content Type** to **MEF Component**, and set **Project** to your class library project.
 
-5. Щелкните **Выбрать выпуски** и убедитесь, что **Visual Studio Enterprise** установлен.
+5. Click **Select Editions** and make sure that **Visual Studio Enterprise** is checked.
 
-6. Убедитесь, что проект VSIX является запускаемым проектом решения.
+6. Make sure that the VSIX project is the Startup project of the solution.
 
-7. В проекте библиотеки классов добавьте ссылки на следующие сборки:
+7. In the class library project, add references to the following assemblies:
 
-     Microsoft. VisualStudio. Кореутилити
+     Microsoft.VisualStudio.CoreUtility
 
-     Microsoft. VisualStudio. моделирование. SDK. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-     Microsoft. VisualStudio. моделирование. SDK. схемы. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-     Microsoft. VisualStudio. моделирование. SDK. DslDefinition. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0;
 
@@ -67,26 +67,26 @@ ms.locfileid: "72656023"
      System.Windows.Forms.
 
 ## <a name="testing-and-deployment"></a>Тестирование и развертывание
- Чтобы протестировать любое из расширений в этом разделе, выполните сборку и запустите решение. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . В этом экземпляре откройте решение DSL. Измените схему DslDefinition. Поведение расширения можно увидеть.
+ To test any of the extensions in this topic, build and run the solution. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In this instance, open a DSL solution. Edit the DslDefinition diagram. The extension behavior can be seen.
 
- Чтобы развернуть расширения в основной [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а также на другие компьютеры, выполните следующие действия.
+ To deploy the extensions to the main [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], and to other computers, follow these steps:
 
-1. Найдите файл установки VSIX в проекте VSIX в папке bin \\ * \\ \*. VSIX.
+1. Find the VSIX installation file, in your VSIX project in bin\\*\\\*.vsix
 
-2. Скопируйте этот файл на конечный компьютер, а затем в проводнике Windows (или в проводнике) дважды щелкните его.
+2. Copy this file to the target computer, and then in Windows Explorer (or File Explorer), double-click it.
 
-    Откроется диспетчер расширений [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], чтобы убедиться, что расширение установлено.
+    The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension Manager opens to confirm that the extension has been installed.
 
-   Чтобы удалить расширение, выполните следующие действия.
+   To uninstall the extension, follow these steps:
 
-3. в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в меню **Сервис** выберите пункт **Диспетчер расширений**.
+3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], on the **Tools** menu, click **Extension Manager**.
 
-4. Выберите расширение и удалите его.
+4. Select the extension and delete it.
 
-## <a name="adding-a-shortcut-menu-command"></a>Добавление команды контекстного меню
- Чтобы отобразить команду контекстного меню на Конструктор DSL поверхности или в окне обозревателя DSL, напишите класс, подобный приведенному ниже.
+## <a name="adding-a-shortcut-menu-command"></a>Adding a Shortcut Menu Command
+ To make a shortcut menu command appear on the DSL Designer surface or in the DSL Explorer window, write a class resembling the following.
 
- Класс должен реализовывать `ICommandExtension` и должен иметь атрибут `DslDefinitionModelCommandExtension`.
+ The class must implement `ICommandExtension` and must have the attribute `DslDefinitionModelCommandExtension`.
 
 ```
 using System.Collections.Generic;
@@ -148,8 +148,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
 }
 ```
 
-## <a name="handling-mouse-gestures"></a>Обработка жестов мыши
- Код аналогичен коду команды меню.
+## <a name="handling-mouse-gestures"></a>Handling Mouse Gestures
+ The code is similar to the code of the menu command.
 
 ```
 [DslDefinitionModelGestureExtension]
@@ -209,8 +209,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
  }
 ```
 
-## <a name="responding-to-value-changes"></a>Реагирование на изменения значений
- Для правильной работы этого обработчика необходима модель предметной области. Мы предоставляем простую модель предметной области.
+## <a name="responding-to-value-changes"></a>Responding to Value Changes
+ This handler needs a domain model to work correctly. We provide a simple domain model.
 
 ```
 using System.Diagnostics;
@@ -250,7 +250,7 @@ namespace Fabrikam.SimpleDslDesignerExtension
 } }  }  );
 ```
 
- В следующем коде реализуется простая модель. Создайте новый GUID, чтобы заменить заполнитель.
+ The following code implements a simple model. Create a new GUID to replace the placeholder.
 
 ```
 using System;

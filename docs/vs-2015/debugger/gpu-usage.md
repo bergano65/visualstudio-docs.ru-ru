@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437957"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297393"
 ---
 # <a name="gpu-usage"></a>Использование GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "63437957"
   
  Это окно **GPU Usage Report** (Отчет об использовании GPU):  
   
- ![Отчет об использовании GPU с временными шкалами ЦП и GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Требования  
  Ниже приведены требования по использованию инструмента учета использования GPU, дополняющие требования по диагностике графики.  
@@ -44,7 +44,7 @@ ms.locfileid: "63437957"
   
 2. В концентраторе "Производительность и диагностика" установите флажок **Использование GPU**. При необходимости установите флажки для других интересующих вас инструментов. Можно одновременно запустить несколько инструментов производительности и диагностики, чтобы получить более полное представление о производительности приложения.  
   
-    ![Выбор требуемых средств диагностики.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Choose the diagnostic tools you want to use.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
    > Не все инструменты производительности и диагностики можно использовать одновременно.  
@@ -63,15 +63,15 @@ ms.locfileid: "63437957"
   
 1. В нижней части окна сеанса диагностики выберите ссылку **Остановка сбора** или нажмите кнопку **Остановить** в верхнем левом углу.  
   
-    ![Сбор данных о времени работы GPU и ЦП.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Collect GPU and CPU timing information.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. В верхней части отчета выберите часть одного из графиков, где изображена соответствующая проблема. Выбранный фрагмент может иметь длину до 3 секунд, более длинные фрагменты усекаются с конца.  
   
-    ![Событие после сбора, выбор диапазона для просмотра сведений](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Post&#45;collection, select a range to view details](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. В нижней части отчета выберите ссылку **view details** (Просмотр сведений) в сообщении **…click here to view details of GPU usage for that range** (Щелкните для просмотра сведений об использовании GPU для этого диапазона) для просмотра подробной временной шкалы выделенного фрагмента.  
   
-    ![Событие после сбора, с выбранным диапазоном](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Post&#45;collection, with range selected](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Открывается новый документ с вкладками, содержащий отчет. Отчет об использовании GPU помогает определить, когда событие графики было запущено на ЦП, когда оно достигло GPU и сколько времени потребовалось GPU для его выполнения. Эти сведения помогают выявить узкие места и возможности для повышения уровня параллелизма в коде.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "63437957"
   
  Это окно **отчета об использовании GPU**:  
   
- ![Отчет об использовании GPU с временными шкалами ЦП и GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  При выборе одного из событий в нижней части отчета маркер помещается на связанные события соответствующих временных шкал, обычно это одно событие в потоке ЦП, которые представляет вызов API, и другое событие на одной из временных шкал GPU, представляющее выполнение задачи GPU. Аналогичным образом, при выборе одного из событий на временной шкале выделяется соответствующее событие в нижней части отчета. При уменьшении масштаба временных шкал в верхней части отчета остаются видимыми только наиболее продолжительные события. Чтобы просмотреть более кратковременные события, увеличьте масштаб временных шкал, нажав клавишу CTRL и вращая колесико указывающего устройства либо воспользовавшись элементом управления масштабирования в левом нижнем углу верхней панели. Можно также перетаскивать содержимое панели временных шкал для перемещения по записанным событиям.  
   
@@ -94,7 +94,7 @@ ms.locfileid: "63437957"
 |--------------------|-----------------|  
 |**Process**|Имя процесса, который вас интересует. В этот раскрывающийся список включаются все процессы, использовавшие GPU во время сеанса диагностики. Цвет, связанный с процессом в этом раскрывающемся списке, является цветом операций потока на приведенных ниже временных шкалах.|  
 |**Поток**|Идентификатор потока, который вас интересует. В многопоточном приложении это может помочь изолировать определенные потоки, относящиеся к интересующему вас процессу. События, связанные с выбранным потоком, выделяются на каждой временной шкале.|  
-|**Дисплей**|Номер дисплея, для которого отображается частота обновления **Примечание.**  Некоторые драйверы можно настроить для представления нескольких физических дисплеев в качестве одного большого виртуального дисплея. Может отображаться только один дисплей, даже если к компьютеру подключено несколько дисплеев.|  
+|**Дисплей**|Номер дисплея, для которого отображается частота обновления. **Примечание**. Некоторые драйверы можно настроить для представления нескольких физических дисплеев в качестве одного большого виртуального дисплея. Может отображаться только один дисплей, даже если к компьютеру подключено несколько дисплеев.|  
 |**Фильтр**|Ключевые слова, которые вас интересуют. В нижней части отчета будут отображаться только те события, которые полностью или частично соответствуют ключевому слову. Можно указать несколько ключевых слов, разделяя их точкой с запятой (;).|  
 |**Иерархическая сортировка**|Флажок, указывающий, сохраняются или игнорируются иерархии событий, определенные с помощью пользовательских маркеров.|  
   
@@ -123,7 +123,7 @@ ms.locfileid: "63437957"
   
 3. В области **GPU Profiling Configuration** (Конфигурация профилирования GPU) страницы свойств **Общие** снимите флажок **Begin profiling at app start** (Начать профилирование с момента запуска приложения), чтобы отложить профилирование.  
   
-     ![Настройка времени запуска сбора данных об использовании GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Configure when GPU Usage collection starts](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > В настоящее время откладывание профилирования не поддерживается для приложений Direct3D 12.  
@@ -143,10 +143,10 @@ ms.locfileid: "63437957"
   
 ## <a name="see-also"></a>См. также  
   
-- [Решения сложных проблем с графикой в игре с помощью инструментов DirectX (видео)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Решения сложных проблем с графикой в игре с помощью инструментов DirectX (видео)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
-- [Средство использования GPU в Visual Studio (видео)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Средство использования GPU в Visual Studio (видео)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
-- [Средство использования GPU в Visual Studio 2013 с обновлением 4, CTP-версия 1 (блог)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Средство использования GPU в Visual Studio 2013 с обновлением 4, CTP-версия 1 (блог)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)  
   
-- [Использование GPU для DirectX в Visual Studio (блог)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Использование GPU для DirectX в Visual Studio (блог)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)

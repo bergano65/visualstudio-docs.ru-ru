@@ -1,5 +1,5 @@
 ---
-title: Определение обработчика жестов на схеме моделирования | Документация Майкрософт
+title: Define a gesture handler on a modeling diagram | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,17 +12,17 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf111dbf8297994994f10b9b867e03321268679
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654874"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299303"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Определение обработчика жестов на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно определить команды, которые выполняются, когда пользователь дважды щелкает элементы на схеме UML или перетаскивает элементы на эту схему. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) и распространить их другим пользователям Visual Studio.
+В Visual Studio можно определить команды, которые выполняются, когда пользователь дважды щелкает элементы на схеме UML или перетаскивает элементы на эту схему. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) и распространить их другим пользователям Visual Studio.
 
  Так как это поведение уже является встроенным для типа схемы и типа элемента, который нужно перетащить, его расширение и перезапись могут быть невозможны.
 
@@ -34,9 +34,9 @@ ms.locfileid: "72654874"
 ## <a name="creating-a-gesture-handler"></a>Создание обработчика жестов
  Чтобы определить обработчик жестов для конструктора UML, необходимо создать класс, определяющий поведение обработчика жестов, и внедрить этот класс в расширение Visual Studio Integration Extension (VSIX). VSIX выполняет роль контейнера, позволяющего установить обработчик. Определить обработчик жестов можно одним из двух способов:
 
-- **Создайте обработчик жестов в своем собственном расширении VSIX с помощью шаблона проекта.** Этот способ быстрее. Используйте его, если не хотите объединять обработчик с другими типами расширений, такими как расширения проверки, пользовательские элементы панели элементов или команды меню.
+- **Create a gesture handler in its own VSIX using a project template.** Этот способ быстрее. Используйте его, если не хотите объединять обработчик с другими типами расширений, такими как расширения проверки, пользовательские элементы панели элементов или команды меню.
 
-- **Создание отдельного обработчика жестов и проектов VSIX.** Используйте этот метод, если нужно объединить несколько типов расширения в одном расширении VSIX. Например, если для обработчика жестов требуется, чтобы модель соблюдала определенные ограничения, можно внедрить его в то же расширение VSIX, что и метод проверки.
+- **Create separate gesture handler and VSIX projects.** Используйте этот метод, если нужно объединить несколько типов расширения в одном расширении VSIX. Например, если для обработчика жестов требуется, чтобы модель соблюдала определенные ограничения, можно внедрить его в то же расширение VSIX, что и метод проверки.
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Создание обработчика жестов в отдельном расширении VSIX
 
@@ -48,7 +48,7 @@ ms.locfileid: "72654874"
 
 3. Проверьте обработчик жестов, нажав клавишу F5. Более подробную информацию см. в разделе [Выполнение обработчика жестов](#Executing).
 
-4. Установите обработчик жестов на другом компьютере, скопировав файл **bin \\ \* \\ \*. VSIX** , созданный проектом. Более подробную информацию см. в разделе [Установка и удаление расширения](#Installing).
+4. Install the gesture handler on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. Более подробную информацию см. в разделе [Установка и удаление расширения](#Installing).
 
    Ниже описана альтернативная процедура.
 
@@ -74,7 +74,7 @@ ms.locfileid: "72654874"
 
     `System.Windows.Forms`
 
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — требуется только при расширении схем слоев. Дополнительные сведения см. в разделе [расширение схем слоев](../modeling/extend-layer-diagrams.md).
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — требуется только при расширении схем слоев. For more information, see [Extend layer diagrams](../modeling/extend-layer-diagrams.md).
 
 3. Добавьте файл класса в проект и вставьте в него указанный ниже код.
 
@@ -230,7 +230,7 @@ ms.locfileid: "72654874"
 
          **Проект** = *Ваш проект библиотеки классов*
 
-## <a name="Executing"></a>Исполнение обработчика жестов
+## <a name="Executing"></a> Executing the Gesture Handler
  В целях проверки запустите обработчик жестов в режиме отладки.
 
 #### <a name="to-test-the-gesture-handler"></a>Проверка обработчика жестов
@@ -243,7 +243,7 @@ ms.locfileid: "72654874"
 
    - При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".
 
-   - В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт "Свойства". В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь, что строка в поле **Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], обычно:
+   - В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт "Свойства". In the project properties editor, choose the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,7 +265,7 @@ ms.locfileid: "72654874"
 
 - Для данного типа целевого и перетаскиваемого элемента не предусмотрено встроенной функциональности.
 
-## <a name="Implementing"></a>Реализация обработчика жестов
+## <a name="Implementing"></a> Implementing the Gesture Handler
 
 ### <a name="the-gesture-handler-methods"></a>Методы обработчика жестов
  Класс обработчика жестов реализует и экспортирует тип <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Ниже перечислены методы, которые необходимо определить.
@@ -282,7 +282,7 @@ ms.locfileid: "72654874"
 
 - `ShapeElement target` Фигура или схема, на которую пользователь перетащил объекты.
 
-    `ShapeElement`. Класс реализации, лежащий в основе инструментов моделирования UML. Чтобы снизить риск приведения модели и схем UML в несогласованное состояние, рекомендуется не использовать методы этого класса напрямую. Вместо этого заключите элемент в `IShape`, а затем используйте методы, описанные в разделе [Отображение UML-модели на схемах](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement`. Класс реализации, лежащий в основе инструментов моделирования UML. Чтобы снизить риск приведения модели и схем UML в несогласованное состояние, рекомендуется не использовать методы этого класса напрямую. Instead, wrap the element in an `IShape`, and then use the methods described in [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Получение оболочки `IShape`:
 
@@ -319,14 +319,14 @@ ms.locfileid: "72654874"
 
      На схему можно перетаскивать элементы разных видов из разных частей [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]или с рабочего стола Windows. В `IDataObject`разные типы элементов кодируются по-разному. Инструкции по извлечению элементов см. в документации по соответствующему типу объекта.
 
-     Если исходный объект является элементом UML, который перетаскивается из обозревателя моделей UML или из другой схемы UML, см. статью [Получение элементов модели UML из IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
+     If your source object is a UML element dragged from UML Model Explorer or from another UML diagram, refer to [Get UML model elements from IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
 ### <a name="writing-the-code-of-the-methods"></a>Написание кода методов
  Более подробную информацию о создании кода для чтения и обновления модели см. в разделе [Programming with the UML API](../modeling/programming-with-the-uml-api.md).
 
- Сведения о доступе к сведениям о модели в операции перетаскивания см. в разделе [Получение элементов модели UML из IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
+ For information about accessing model information in a drag operation, see [Get UML model elements from IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
- Если вы работаете со схемой последовательностей, см. также раздел [изменение схем последовательностей UML с помощью API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
+ If you are dealing with a sequence diagram, see also [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
  Помимо параметров методов, вы можете также объявить импортированное свойство в собственном классе, который предоставляет доступ к текущей схеме и модели.
 
@@ -346,9 +346,9 @@ foreach (IDiagram diagram in modelStore.Diagrams) {...}
 foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 ```
 
- Дополнительные сведения см. [в разделе Навигация по модели UML](../modeling/navigate-the-uml-model.md).
+ For more information, see [Navigate the UML model](../modeling/navigate-the-uml-model.md).
 
-## <a name="Installing"></a>Установка и удаление расширения
+## <a name="Installing"></a> Installing and uninstalling an extension
  Расширение [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] можно установить как на своем компьютере, так и на других.
 
 #### <a name="to-install-an-extension"></a>Установка расширения
@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. В контекстном меню проекта VSIX в **обозревателе решений**выберите пункт **Открыть папку в проводнике Windows**.
 
-    2. Откройте файл **bin \\ \* \\** _йоурпрожект_ **. VSIX**
+    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
 
 2. Скопируйте файл **.vsix** на компьютер, где необходимо установить расширение. Это может быть как ваш собственный компьютер, так и любой другой.
 
@@ -379,14 +379,14 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
 
-   *% LocalAppData%* **\локал\микрософт\висуалстудио \\ [версия] \екстенсионс**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="DragExample"></a> Пример
  В приведенном ниже примере показано создание линий жизни на схеме последовательностей с использованием частей и портов компонента, перетащенных со схемы компонентов.
 
- Чтобы проверить этот сценарий, нажмите клавишу F5. Откроется экспериментальный экземпляр Visual Studio. Откройте модель UML и создайте компонент на схеме компонентов в этом экземпляре. Добавьте в этот компонент несколько интерфейсов и внутренних частей компонента. Выберите интерфейсы и части. Затем перетащите интерфейсы и части на схему последовательностей. (Перетащите с диаграммы компонентов на вкладку схемы последовательностей, а затем на схему последовательностей.) Для каждого интерфейса и части будет отображаться линия жизни.
+ Чтобы проверить этот сценарий, нажмите клавишу F5. Откроется экспериментальный экземпляр Visual Studio. Откройте модель UML и создайте компонент на схеме компонентов в этом экземпляре. Добавьте в этот компонент несколько интерфейсов и внутренних частей компонента. Выберите интерфейсы и части. Затем перетащите интерфейсы и части на схему последовательностей. (Drag from the component diagram up to the tab for the sequence diagram, and then down into the sequence diagram.) A lifeline will appear for each interface and part.
 
- Дополнительные сведения о связывании взаимодействий с схемами последовательностей см. [в разделе изменение схем последовательностей UML с помощью API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
+ For more information about binding interactions to sequence diagrams, see [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
 ```
 using System.Collections.Generic;
@@ -517,7 +517,7 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
 ```
 
- Код `GetModelElementsFromDragEvent()` описан в разделе [Получение элементов модели UML из IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
+ The code of `GetModelElementsFromDragEvent()` is described in [Get UML model elements from IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
 ## <a name="see-also"></a>См. также раздел
- [Определение и установка расширения моделирования расширение](../modeling/define-and-install-a-modeling-extension.md) [моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение ограничений проверки для программирования UML-моделей](../modeling/define-validation-constraints-for-uml-models.md) [с помощью API UML](../modeling/programming-with-the-uml-api.md)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

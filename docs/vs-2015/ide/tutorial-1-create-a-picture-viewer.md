@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ad57a05e45b7e9acd3db455f0a8849166dc3c735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654752"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299911"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Учебное руководство 1. Создание приложения для просмотра рисунков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,12 @@ ms.locfileid: "72654752"
 
   ![Изображение результата, создаваемого в этом учебнике](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Изображение результата, создаваемого в этом учебнике
 
-  Загрузить готовую версию примера можно на странице [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Полный пример учебного руководства по созданию приложения для просмотра рисунков).
-
-  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этого раздела см [. раздел практические руководства. Создание средства просмотра изображений в Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) или [инструкции. Создание средства просмотра изображений в C#?](http://go.microsoft.com/fwlink/?LinkId=205198).
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [How Do I: Create a Picture Viewer in Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) or [How Do I: Create a Picture Viewer in C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
 >
-> Чтобы просмотреть код для Visual Basic, выберите вкладку **VB** в верхней части блоков кода, а чтобы увидеть код для визуального элемента C#, выберите **C#** вкладку. Если вы заинтересованы в изучении визуального элемента C++, ознакомьтесь с руководством по [Начало работы](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) и [ C++ языку](http://www.cplusplus.com/doc/tutorial/).
+> To see code for Visual Basic, choose the **VB** tab at the top of code blocks, and to see code for Visual C#, choose the **C#** tab. If you're interested in learning about Visual C++, see [Getting Started](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) and [C++ Language Tutorial](http://www.cplusplus.com/doc/tutorial/).
 >
 > Если вас интересует написание приложений для Магазина Windows на языках Visual C# или Visual Basic, см. раздел [Создание своего первого приложения Магазина Windows на C# или Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Сведения о создании приложений для Магазина Windows на языке JavaScript см. в разделе [Создание вашего первого приложения Магазина Windows на JavaScript](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).
 
