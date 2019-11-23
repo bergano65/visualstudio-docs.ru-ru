@@ -34,7 +34,7 @@ ms.locfileid: "72576575"
   
 - Старайтесь не использовать символы, которые не являются частью определения языка [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## <a name="see-also"></a>См. также  
- [Переменные](../../javascript/variables-javascript.md)    
- [Специальные символы](../../javascript/advanced/special-characters-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Переменные](../../javascript/variables-javascript.md)   
+ [Специальные символы](../../javascript/advanced/special-characters-javascript.md)   
  [Типы данных](../../javascript/data-types-javascript.md)

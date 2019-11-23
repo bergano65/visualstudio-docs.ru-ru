@@ -58,14 +58,14 @@ HRESULT CreatePropertyBrowserEx(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод возвращает браузер свойств, который создает оболочку для VARIANT и позволяет выполнить пользовательское преобразование значений типа VARIANT или типа VARTYPE в строки.  
   
-## <a name="see-also"></a>См. также  
- [Идебугхелпер:: креатепропертибровсер](../../winscript/reference/idebughelper-createpropertybrowser.md)    
- @No__t_1 [интерфейса идебугхелпер](../../winscript/reference/idebughelper-interface.md)  
+## <a name="see-also"></a>См. также:  
+ [Идебугхелпер:: креатепропертибровсер](../../winscript/reference/idebughelper-createpropertybrowser.md)   
+   [интерфейса идебугхелпер](../../winscript/reference/idebughelper-interface.md)  
  [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

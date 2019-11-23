@@ -28,6 +28,6 @@ ms.locfileid: "72573418"
   
 - Вставьте двоеточие между вторым и третьим операндами.  
   
-## <a name="see-also"></a>См. также  
- [Оператор Conditional (Ternary) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
- [Инструкции](../../javascript/operators-javascript.md)
+## <a name="see-also"></a>См. также:  
+ [Оператор Conditional (Ternary) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
+ [Операторы](../../javascript/operators-javascript.md)

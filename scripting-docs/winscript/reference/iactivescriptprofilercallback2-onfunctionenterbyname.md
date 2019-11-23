@@ -36,14 +36,14 @@ HRESULT OnFunctionEnterByName(
  окне Имя функции, которую будет выполнять обработчик скриптов.  
   
  `scriptType`  
- окне Тип функции. Описание допустимых значений см. в разделе [PROFILER_SCRIPT_TYPE enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
+ окне Тип функции. Описание допустимых значений см. в разделе [Перечисление PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращаемое значение этого метода игнорируется обработчиком скриптов.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Для вызовов DOM обработчик скриптов вызывает этот метод вместо вызова [IActiveScriptProfilerCallback:: онфунктионентер](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md). Это связано с большим количеством уникальных методов и свойств в модели DOM.  
   
-## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerCallback2:: онфунктионекситбинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)    
+## <a name="see-also"></a>См. также:  
+ [IActiveScriptProfilerCallback2:: онфунктионекситбинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
  [Интерфейс IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

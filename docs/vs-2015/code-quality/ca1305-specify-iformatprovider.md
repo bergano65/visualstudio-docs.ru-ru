@@ -61,7 +61,7 @@ ms.locfileid: "72661443"
  Предупреждение от этого правила можно отключить, если известно, что поставщик языка и региональных параметров по умолчанию является правильным выбором, а поддержка кода не является важным приоритетом разработки.
 
 ## <a name="example"></a>Пример
- В следующем примере `BadMethod` вызывает два нарушения этого правила. `GoodMethod` устраняет первое нарушение, передавая инвариантный язык и региональные параметры для <xref:System.String.Compare%2A> и исправляет второе нарушение, передавая текущий язык и региональные параметры в <xref:System.String.ToLower%2A>, так как `string3` отображается для пользователя.
+ В следующем примере `BadMethod` вызывает два нарушения этого правила. `GoodMethod` устраняет первое нарушение, передавая инвариантный язык и региональные параметры для <xref:System.String.Compare%2A>и исправляет второе нарушение, передавая текущий язык и региональные параметры в <xref:System.String.ToLower%2A>, так как `string3` отображается для пользователя.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -72,10 +72,10 @@ ms.locfileid: "72661443"
 
  В этом примере формируются следующие данные:
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Связанные правила
  [CA1304: укажите CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [NIB: использование класса CultureInfo](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

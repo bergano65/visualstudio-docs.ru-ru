@@ -28,7 +28,7 @@ ms.locfileid: "72573669"
   
 - Убедитесь, что структура строки поиска регулярных выражений соответствует синтаксису регулярного выражения [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
- [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+## <a name="see-also"></a>См. также:  
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [Метод compile (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

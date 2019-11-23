@@ -43,9 +43,9 @@ HRESULT OnFunctionExit(
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращаемое значение этого метода игнорируется обработчиком скриптов.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Для вызовов DOM обработчик скриптов вызывает [IActiveScriptProfilerCallback2:: онфунктионекситбинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) вместо `IActiveScriptProfilerCallback::OnFunctionExit`. Это связано с большим количеством уникальных методов и свойств в модели DOM.  
   
-## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerCallback:: онфунктионентер](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)    
+## <a name="see-also"></a>См. также:  
+ [IActiveScriptProfilerCallback:: онфунктионентер](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
  [Интерфейс IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

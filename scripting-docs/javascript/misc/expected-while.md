@@ -28,6 +28,6 @@ ms.locfileid: "72575916"
   
 - Включите `while`ную инструкцию теста после закрывающей фигурной скобки.  
   
-## <a name="see-also"></a>См. также  
- [оператор while](../../javascript/reference/while-statement-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [оператор while](../../javascript/reference/while-statement-javascript.md)   
  [Управление выполнением программы](../../javascript/controlling-program-flow-javascript.md)

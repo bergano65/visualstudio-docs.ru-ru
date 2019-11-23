@@ -32,6 +32,6 @@ ms.locfileid: "72573744"
   
 - Дополнительные сведения см. в документации объекта.  
   
-## <a name="see-also"></a>См. также  
- [Объект  ](../../javascript/reference/object-object-javascript.md)  
+## <a name="see-also"></a>См. также:  
+ [Объект ](../../javascript/reference/object-object-javascript.md)  
  [Объекты JavaScript](../../javascript/reference/javascript-objects.md)

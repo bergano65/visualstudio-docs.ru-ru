@@ -30,6 +30,6 @@ ms.locfileid: "72573424"
   
 - Попробуйте использовать блок **finally** вместо блока **catch** .  
   
-## <a name="see-also"></a>См. также  
- [попробуйте... перехватить... Оператор finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [попробуйте... перехватить... Оператор finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Объект Error](../../javascript/reference/error-object-javascript.md)

@@ -42,14 +42,14 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод вызывается диспетчером отладки процессов всякий раз, когда вызывается `IProcessDebugManager::RemoveApplication`.  
   
-## <a name="see-also"></a>См. также  
- [Имачинедебугманажер:: аддаппликатион](../../winscript/reference/imachinedebugmanager-addapplication.md)    
- @No__t_1 [интерфейса имачинедебугманажер](../../winscript/reference/imachinedebugmanager-interface.md)  
+## <a name="see-also"></a>См. также:  
+ [Имачинедебугманажер:: аддаппликатион](../../winscript/reference/imachinedebugmanager-addapplication.md)   
+   [интерфейса имачинедебугманажер](../../winscript/reference/imachinedebugmanager-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

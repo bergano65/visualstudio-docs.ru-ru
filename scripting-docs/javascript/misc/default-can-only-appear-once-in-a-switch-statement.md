@@ -28,7 +28,7 @@ ms.locfileid: "72572879"
   
 - Удалите все лишние операторы Case **по умолчанию** из оператора `switch` (используйте не более одного оператора case по умолчанию в операторе switch).  
   
-## <a name="see-also"></a>См. также  
- [оператор switch](../../javascript/reference/switch-statement-javascript.md)    
- [Управление   последовательности программ](../../javascript/controlling-program-flow-javascript.md)  
+## <a name="see-also"></a>См. также:  
+ [оператор switch](../../javascript/reference/switch-statement-javascript.md)   
+ [Управление  последовательности программ](../../javascript/controlling-program-flow-javascript.md)  
  [Зарезервированные слова языка JavaScript](../../javascript/reference/javascript-reserved-words.md)

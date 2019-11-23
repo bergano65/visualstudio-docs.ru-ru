@@ -28,6 +28,6 @@ ms.locfileid: "72573715"
   
 - Убедитесь, что имя элемента данных введено правильно.  
   
-## <a name="see-also"></a>См. также  
- [Объект  ](../../javascript/reference/object-object-javascript.md)  
+## <a name="see-also"></a>См. также:  
+ [Объект ](../../javascript/reference/object-object-javascript.md)  
  [Объекты и массивы](../../javascript/objects-and-arrays-javascript.md)

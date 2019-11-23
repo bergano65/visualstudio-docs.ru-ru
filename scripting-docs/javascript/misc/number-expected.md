@@ -28,6 +28,6 @@ ms.locfileid: "72573759"
   
 - Вызываются только методы **Number. prototype. ToString** или **Number. prototype. valueOf** для объектов типа **Number**.  
   
-## <a name="see-also"></a>См. также  
- [Объект Number](../../javascript/reference/number-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект Number](../../javascript/reference/number-object-javascript.md)   
  [Свойство number (Error)](../../javascript/reference/number-property-error-javascript.md)

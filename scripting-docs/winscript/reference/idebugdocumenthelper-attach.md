@@ -42,13 +42,13 @@ HRESULT Attach(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод добавляет этот документ в дерево документа, используя `pddhParent` в качестве родителя. Если `pddhParent` `NULL`, этот документ будет документом верхнего уровня.  
   
-## <a name="see-also"></a>См. также  
- [IDebugDocumentHelper::D етач](../../winscript/reference/idebugdocumenthelper-detach.md)    
+## <a name="see-also"></a>См. также:  
+ [IDebugDocumentHelper::D етач](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -21,7 +21,7 @@ ms.lasthandoff: 10/28/2019
 ms.locfileid: "72985287"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Возвращает основной поток для узлов, вызывающих [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite), в противном случае ВОЗВРАЩАЕТ значение E_FAIL.  
+Возвращает основной поток для узлов, вызывающих [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite), в противном случае возвращает E_FAIL.  
   
 > [!IMPORTANT]
 > [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) реализуется с помощью PDM v 11.0 и более поздних версий. Обнаружено в activdbg100.h.  
@@ -36,6 +36,6 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
  `ppThread`  
  заполняет Основной [интерфейс иремотедебугаппликатионсреад](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
    [интерфейса IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
  [Интерфейс IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)

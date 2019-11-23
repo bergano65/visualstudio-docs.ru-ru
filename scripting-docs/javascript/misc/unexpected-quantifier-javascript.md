@@ -47,6 +47,6 @@ ms.locfileid: "72572535"
   
 - Убедитесь, что элемент шаблона поиска содержит только допустимые коэффициенты повторения.  
   
-## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

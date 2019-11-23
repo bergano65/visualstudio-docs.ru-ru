@@ -42,13 +42,13 @@ HRESULT GetDebugger(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод возвращает текущий отладчик, подключенный к приложению.  
   
-## <a name="see-also"></a>См. также  
- [IRemoteDebugApplication:: коннектдебугжер](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
+## <a name="see-also"></a>См. также:  
+ [IRemoteDebugApplication:: коннектдебугжер](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -46,14 +46,14 @@ HRESULT AddApplication(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод вызывается диспетчером отладки процессов всякий раз, когда вызывается `IProcessDebugManager::AddApplication`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса имачинедебугманажер](../../winscript/reference/imachinedebugmanager-interface.md)  
- [Имачинедебугманажер:: ремовеаппликатион](../../winscript/reference/imachinedebugmanager-removeapplication.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса имачинедебугманажер](../../winscript/reference/imachinedebugmanager-interface.md)  
+ [Имачинедебугманажер:: ремовеаппликатион](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

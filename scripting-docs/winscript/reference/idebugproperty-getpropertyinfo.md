@@ -50,7 +50,7 @@ HRESULT GetPropertyInfo (
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

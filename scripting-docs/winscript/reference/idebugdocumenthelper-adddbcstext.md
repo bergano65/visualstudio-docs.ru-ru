@@ -42,18 +42,18 @@ HRESULT AddDBCSText(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Методу не удалось добавить символы.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод создает `IDebugDocumentTextEvents` уведомления.  
   
 > [!NOTE]
 > Если этот метод вызывается после вызова `IDebugDocumentHelper::AddDeferredText`, возвращается `E_FAIL`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: адддеферредтекст](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: адддеферредтекст](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Интерфейс IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)

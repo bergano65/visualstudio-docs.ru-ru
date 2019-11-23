@@ -41,7 +41,7 @@ typedef struct DebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
  дввалидфиелдс  
  Перечислимый тип данных, используемый для указания, какие поля инициализируются.  
   
@@ -61,9 +61,9 @@ typedef struct DebugPropertyInfo{
  Перечисление, указывающее флаги для атрибутов свойств отладки.  
   
  пдебугпроп  
- @No__t_0, описываемые данными в этой структуре `DebugPropertyInfo`.  
+ `IDebugProperty`, описываемые данными в этой структуре `DebugPropertyInfo`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

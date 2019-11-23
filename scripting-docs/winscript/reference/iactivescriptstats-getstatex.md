@@ -50,17 +50,17 @@ HRESULT GetStatEx(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_NOTIMPL`|Метод не реализован.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод позволяет пользовательскому обработчику скриптов возвращать статистически значимые данные для пользовательского хоста.  
   
 > [!NOTE]
 > Этот метод в настоящее время не реализован.  
   
-## <a name="see-also"></a>См. также  
- [Иактивескриптстатс:: stat](../../winscript/reference/iactivescriptstats-getstat.md)    
+## <a name="see-also"></a>См. также:  
+ [Иактивескриптстатс:: stat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [Интерфейс IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)

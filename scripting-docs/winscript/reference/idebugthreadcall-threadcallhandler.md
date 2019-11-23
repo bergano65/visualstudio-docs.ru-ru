@@ -50,14 +50,14 @@ HRESULT ThreadCallHandler(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод обрабатывает вызовы для выполнения кода в потоке отладчика.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса идебугсреадкалл](../../winscript/reference/idebugthreadcall-interface.md)  
- [IDebugApplication:: синчронаускаллиндебугжерсреад](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса идебугсреадкалл](../../winscript/reference/idebugthreadcall-interface.md)  
+ [IDebugApplication:: синчронаускаллиндебугжерсреад](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

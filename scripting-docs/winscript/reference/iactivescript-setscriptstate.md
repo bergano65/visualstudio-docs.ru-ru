@@ -42,7 +42,7 @@ HRESULT SetScriptState(
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Возвращаемое значение|Смысл|  
+|Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
 |`E_FAIL`|Обработчик скриптов не поддерживает переход обратно в инициализированное состояние. Узел должен отбросить этот обработчик скриптов и создать, инициализировать и загрузить новый обработчик скриптов для достижения того же результата.|  
@@ -50,12 +50,12 @@ HRESULT SetScriptState(
 |`OLESCRIPT_S_PENDING`|Метод был успешно поставлен в очередь, но состояние еще не изменилось. При изменении состояния сайт будет вызываться обратно с помощью метода [IActiveScriptSite:: онстатечанже](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
 |`S_FALSE`|Метод выполнен успешно, но скрипт уже находится в заданном состоянии.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Дополнительные сведения о состоянии обработчика скриптов см. в разделе состояния обработчика сценариев в [обработчиках сценариев Windows](../../winscript/windows-script-engines.md) .  
   
-## <a name="see-also"></a>См. также  
- [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)    
- [IActiveScript:: жетскриптдиспатч](../../winscript/reference/iactivescript-getscriptdispatch.md)    
- [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
- [IActiveScriptParse::P арсескрипттекст](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
+## <a name="see-also"></a>См. также:  
+ [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript:: жетскриптдиспатч](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::P арсескрипттекст](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

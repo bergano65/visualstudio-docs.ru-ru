@@ -44,7 +44,7 @@ ms.locfileid: "72572379"
 
   - цикл **for/in** .  
   
-## <a name="see-also"></a>См. также  
- [оператор continue](../../javascript/reference/continue-statement-javascript.md)    
- [Управление   последовательности программ](../../javascript/controlling-program-flow-javascript.md)  
+## <a name="see-also"></a>См. также:  
+ [оператор continue](../../javascript/reference/continue-statement-javascript.md)   
+ [Управление  последовательности программ](../../javascript/controlling-program-flow-javascript.md)  
  [Устранение неполадок в скриптах](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
