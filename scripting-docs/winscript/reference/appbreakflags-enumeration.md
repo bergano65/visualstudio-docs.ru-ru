@@ -33,9 +33,9 @@ ms.locfileid: "72572660"
 enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEBUGGER_HALT= 0x00000002,APPBREAKFLAG_STEP= 0x00010000,APPBREAKFLAG_NESTED= 0x00020000,APPBREAKFLAG_STEPTYPE_SOURCE= 0x00000000,APPBREAKFLAG_STEPTYPE_BYTECODE= 0x00100000,APPBREAKFLAG_STEPTYPE_MACHINE= 0x00200000,APPBREAKFLAG_STEPTYPE_MASK= 0x00F00000,APPBREAKFLAG_IN_BREAKPOINT= 0x80000000};  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
   
-|Член|значения|Описание|  
+|Член|Значение|Описание|  
 |------------|-----------|-----------------|  
 |APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Модуль языка должен немедленно переключиться на все потоки с BREAKREASON_DEBUGGER_BLOCK.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Модуль языка должен немедленно прерывать работу с BREAKREASON_DEBUGGER_HALT.|  
@@ -47,9 +47,9 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
 |APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Маска для разложения типов шагов.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Точка останова выполняется.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Некоторые флаги указывают, что обработчики языка должны прерываться при следующей возможности, а другие флаги указывают режим пошагового отладчика.  
   
-## <a name="see-also"></a>См. также  
- [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
+## <a name="see-also"></a>См. также:  
+ [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [Перечисление BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

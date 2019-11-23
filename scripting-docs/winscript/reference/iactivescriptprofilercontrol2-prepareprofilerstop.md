@@ -35,16 +35,16 @@ HRESULT PrepareProfilerStop();
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает значение HRESULT. Ниже приведены возможные значения.  
   
-|Возвращаемое значение|Смысл|  
+|Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Не удалось запустить профилирование.|  
 |`S_FALSE`|Профилирование было остановлено, когда сценарий не выполнялся.|  
 |`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включено.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Вызов `IActiveScriptProfilerControl2::PrepareProfilerStop` гарантирует отправку событий для функций в стеке вызовов. Этот метод должен быть вызван перед остановкой профилирования на любом обработчике скриптов, который находится на текущей вкладке. Метод может быть вызван для любого обработчика скриптов.  
   
-## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerControl2:: комплетепрофилерстарт](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
+## <a name="see-also"></a>См. также:  
+ [IActiveScriptProfilerControl2:: комплетепрофилерстарт](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [Интерфейс IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

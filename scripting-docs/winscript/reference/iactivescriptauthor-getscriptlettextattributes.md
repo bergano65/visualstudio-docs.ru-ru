@@ -52,7 +52,7 @@ HRESULT GetScriptletTextAttributes(
  `dwFlags`  
  окне Флаги, связанные с атрибутами Text объекта скриптлет. Может быть сочетанием следующих значений.  
   
-|Константа|значения|Описание|  
+|постоянное значение.|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Выявление идентификаторов, имеющих атрибут SOURCETEXT_ATTR_IDENTIFIER, и идентификации операторов Dot, имеющих атрибут SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Определяет текущий объект, имеющий атрибут SOURCETEXT_ATTR_THIS.|  
@@ -62,15 +62,15 @@ HRESULT GetScriptletTextAttributes(
  [in, out, size_is (`cch`)] Сведения о цвете для кода скриптлет.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
+ `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса иактивескриптаусор](../../winscript/reference/iactivescriptauthor-interface.md)  
- [Иактивескриптаусор:: жетскрипттекстаттрибутес](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса иактивескриптаусор](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [Иактивескриптаусор:: жетскрипттекстаттрибутес](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

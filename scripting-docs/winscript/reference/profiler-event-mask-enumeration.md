@@ -40,7 +40,7 @@ typedef enum {
 } PROFILER_EVENT_MASK;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -50,7 +50,7 @@ typedef enum {
 |PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Функции профилей, вызывающие модель DOM.|  
 |PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Профили всех функций, включая вызовы модели DOM.|  
   
-## <a name="see-also"></a>См. также  
- [Константы, перечисления и структуры в профилировщике Active Script](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerControl:: сетпрофилеревентмаск](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
+## <a name="see-also"></a>См. также:  
+ [Константы, перечисления и структуры в профилировщике Active Script](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerControl:: сетпрофилеревентмаск](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

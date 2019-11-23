@@ -52,7 +52,7 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  окне Флаги, связанные с блоком скрипта. Может быть сочетанием следующих значений:  
   
-|Константа|значения|Описание|  
+|постоянное значение.|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Указывает, что идентификаторы и операторы точек должны быть идентифицированы с помощью флагов SOURCETEXT_ATTR_IDENTIFIER и SOURCETEXT_ATTR_MEMBERLOOKUP соответственно.|  
 |GETATTRFLAG_THIS|0x0100|Указывает, что идентификатор для текущего объекта должен быть идентифицирован с помощью флага SOURCETEXT_ATTR_THIS.|  
@@ -64,18 +64,18 @@ HRESULT GetScriptTextAttributes(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Направляющий узел, реализующий интерфейс `IDebugDocumentText`, может использовать этот метод для делегирования вызовов методу `IDebugDocumentText::GetText`.  
   
  Этот метод для блоков сценариев; метод `GetScriptletTextAttributes` предназначен для сценарии.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса иактивескриптдебуг](../../winscript/reference/iactivescriptdebug-interface.md)  
- [Иактивескриптдебуг:: жетскриптлеттекстаттрибутес](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
- @No__t_1 [интерфейса идебугдокументтекст](../../winscript/reference/idebugdocumenttext-interface.md)  
- @No__t_1 [идебугдокументтекст:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)  
+## <a name="see-also"></a>См. также:  
+   [интерфейса иактивескриптдебуг](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [Иактивескриптдебуг:: жетскриптлеттекстаттрибутес](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
+   [интерфейса идебугдокументтекст](../../winscript/reference/idebugdocumenttext-interface.md)  
+   [идебугдокументтекст:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)  
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

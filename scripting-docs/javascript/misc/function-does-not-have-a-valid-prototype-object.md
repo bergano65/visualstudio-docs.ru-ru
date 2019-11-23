@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574603"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Функция не имеет допустимого объекта прототипа
-Предпринята попытка использовать **instanceof** для определения того, был ли объект производным от определенного класса функции, но свойство `prototype` объекта было переопределено как `null` или тип внешнего объекта (как недопустимые [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекты). Внешним объектом может быть объект из объектной модели узла (например, документ или объект окна Internet Explorer) или внешний COM-объект.  
+Предпринята попытка использовать **instanceof** для определения того, был ли объект производным от определенного класса функции, но свойство `prototype` объекта было переопределено как `null`или тип внешнего объекта (как недопустимые [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекты). Внешним объектом может быть объект из объектной модели узла (например, документ или объект окна Internet Explorer) или внешний COM-объект.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
 - Убедитесь, что свойство `prototype` функции ссылается на допустимый объект [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## <a name="see-also"></a>См. также  
- [Объект функции](../../javascript/reference/function-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект функции](../../javascript/reference/function-object-javascript.md)   
  [Свойство prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)

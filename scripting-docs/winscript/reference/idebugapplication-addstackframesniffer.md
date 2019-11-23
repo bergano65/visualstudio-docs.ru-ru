@@ -46,14 +46,14 @@ HRESULT AddStackFrameSniffer(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Хотя обработчики языка обычно вызывают этот метод для предоставления кадров стека отладчику, другие сущности могут предоставлять фреймы стека.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
- [IDebugApplication:: ремовестаккфрамесниффер](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication:: ремовестаккфрамесниффер](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [Интерфейс IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

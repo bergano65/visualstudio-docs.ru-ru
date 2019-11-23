@@ -39,16 +39,16 @@ HRESULT onDetach();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод обрабатывает событие, которое означает, что объект узла приложения отладки был отсоединен от родительского узла.  
   
  Разработчики `IDebugApplicationNode`ного интерфейса вызывают это событие.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса идебугаппликатионнодивентс](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
- [Идебугаппликатионнодивентс:: onattach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса идебугаппликатионнодивентс](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [Идебугаппликатионнодивентс:: onattach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
  [Интерфейс IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

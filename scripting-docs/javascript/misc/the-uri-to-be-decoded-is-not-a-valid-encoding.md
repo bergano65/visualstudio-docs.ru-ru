@@ -36,6 +36,6 @@ ms.locfileid: "72572264"
   
 - Убедитесь, что вы пытаетесь декодировать только допустимые URI. Нельзя декодировать обычные [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строки, так как они могут содержать недопустимые символы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
    [функции decodeURI](../../javascript/reference/decodeuri-function-javascript.md)  
  [Функция DecodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)

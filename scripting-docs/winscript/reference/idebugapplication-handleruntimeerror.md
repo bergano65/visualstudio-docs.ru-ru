@@ -58,19 +58,19 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Языковой механизм вызывает этот метод в контексте потока, который вызывает ошибку во время выполнения. Этот метод заставляет текущий поток блокировать и отправлять уведомление об ошибке в интегрированную среду разработки отладчика. При возобновлении работы приложения интегрированной средой разработки отладчика этот метод возвращает и выполняемое действие.  
   
 > [!NOTE]
 > Во время сбоя времени выполнения обработчик языка может вызываться потоком для выполнения таких задач, как перечисление кадров стека или вычисление выражений.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
- @No__t_1 [интерфейса иактивескриптеррордебуг](../../winscript/reference/iactivescripterrordebug-interface.md)  
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
- @No__t_1 [перечисления BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+   [интерфейса иактивескриптеррордебуг](../../winscript/reference/iactivescripterrordebug-interface.md)  
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
+   [перечисления BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [Перечисление ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

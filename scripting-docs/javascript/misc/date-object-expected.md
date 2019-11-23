@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572899"
 ---
 # <a name="date-object-expected"></a>Ожидается объект даты
-Предпринята попытка вызвать метод **Date. prototype. ToString** или **Date. prototype. valueOf** для объекта типа, отличного от `Date`. Объект этого типа вызова должен иметь тип `Date`. Пример:  
+Предпринята попытка вызвать метод **Date. prototype. ToString** или **Date. prototype. valueOf** для объекта типа, отличного от `Date`. Объект этого типа вызова должен иметь тип `Date`. Например:  
   
 ```JavaScript  
 var o = new Object;  
@@ -34,7 +34,7 @@ o.f();
   
 - Вызываются только методы **Date. prototype. ToString** или **Date. prototype. valueOf** для объектов типа `Date`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Объект Date](../../javascript/reference/date-object-javascript.md)   
- [метод GETDATE (Date)](../../javascript/reference/getdate-method-date-javascript.md)    
+ [метод GETDATE (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Встроенные объекты](../../javascript/intrinsic-objects-javascript.md)

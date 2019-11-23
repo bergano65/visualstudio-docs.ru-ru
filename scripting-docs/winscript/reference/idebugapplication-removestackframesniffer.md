@@ -42,14 +42,14 @@ HRESULT RemoveStackFrameSniffer(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Метод `RemoveStackFrameSniffer` удаляет из этого приложения поставщик перечислителя кадра стека.  
   
-## <a name="see-also"></a>См. также  
- [IDebugApplication:: аддстаккфрамесниффер](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
- @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+## <a name="see-also"></a>См. также:  
+ [IDebugApplication:: аддстаккфрамесниффер](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+   [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [Интерфейс IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

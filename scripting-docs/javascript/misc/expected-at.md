@@ -26,13 +26,13 @@ ms.locfileid: "72576513"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Добавьте знак at " **@** " непосредственно перед именем переменной. Пример:  
+- Добавьте знак at " **@** " непосредственно перед именем переменной. Например:  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
-## <a name="see-also"></a>См. также  
- [@set   инструкции](../../javascript/reference/at-set-statement-javascript.md)  
- @No__t_1 [условной компиляции](../../javascript/advanced/conditional-compilation-javascript.md)  
+## <a name="see-also"></a>См. также:  
+ [@set  инструкции](../../javascript/reference/at-set-statement-javascript.md)  
+   [условной компиляции](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)

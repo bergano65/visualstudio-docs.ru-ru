@@ -41,7 +41,7 @@ return [ expression ];
   
 - Удалите оператор `return` из основного текста кода (глобальной области).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Оператор return](../../javascript/reference/return-statement-javascript.md)   
- [Объект функции](../../javascript/reference/function-object-javascript.md)    
+ [Объект функции](../../javascript/reference/function-object-javascript.md)   
  [Свойство caller (Function)](../../javascript/reference/caller-property-function-javascript.md)

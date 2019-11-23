@@ -29,8 +29,8 @@ ms.locfileid: "72577541"
 - Добавьте крайние правые закрывающие скобки.  
   
     > [!NOTE]
-    > Если нужно сопоставить одну круглую скобку, заключите ее в обратную косую черту \\ (так что она не интерпретируется как Специальный символ путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Если нужно сопоставить одну круглую скобку, заключите ее в обратную косую черту \\(так что она не интерпретируется как Специальный символ путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

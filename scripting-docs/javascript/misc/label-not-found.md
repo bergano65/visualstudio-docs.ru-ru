@@ -30,8 +30,8 @@ ms.locfileid: "72573783"
   
 - Убедитесь, что все ссылки на метки сделаны в метки, определенные в текущей области (включая перекрестные определения).  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [оператора с метками](../../javascript/reference/labeled-statement-javascript.md)  
- [оператор switch](../../javascript/reference/switch-statement-javascript.md)    
+## <a name="see-also"></a>См. также:  
+   [оператора с метками](../../javascript/reference/labeled-statement-javascript.md)  
+ [оператор switch](../../javascript/reference/switch-statement-javascript.md)   
  [Оператор break](../../javascript/reference/break-statement-javascript.md)   
  [Оператор continue](../../javascript/reference/continue-statement-javascript.md)

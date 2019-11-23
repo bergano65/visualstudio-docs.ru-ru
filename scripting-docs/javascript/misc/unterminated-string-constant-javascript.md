@@ -31,6 +31,6 @@ ms.locfileid: "72575889"
   
 - Добавьте закрывающую кавычку в конец строки.  
   
-## <a name="see-also"></a>См. также  
- [Строковый объект](../../javascript/reference/string-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Строковый объект](../../javascript/reference/string-object-javascript.md)   
  [Метод toString (Object)](../../javascript/reference/tostring-method-object-javascript.md)

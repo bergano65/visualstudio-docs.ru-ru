@@ -28,6 +28,6 @@ ms.locfileid: "72576528"
   
 - Добавьте правую скобку в выражение, которое ссылается на элемент массива.  
   
-## <a name="see-also"></a>См. также  
- [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)   
  [Объект Array](../../javascript/reference/array-object-javascript.md)

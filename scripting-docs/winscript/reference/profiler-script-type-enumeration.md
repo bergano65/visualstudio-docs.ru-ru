@@ -36,7 +36,7 @@ typedef enum {
 } PROFILER_SCRIPT_TYPE;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -45,8 +45,8 @@ typedef enum {
 |PROFILER_SCRIPT_TYPE_NATIVE|Указывает тип скрипта для собственных функций и объектов, определенных обработчиком скриптов.|  
 |PROFILER_SCRIPT_TYPE_DOM|Указывает вызов в модель DOM (DOM) Internet Explorer, например вызов метода `document.getElementById`.|  
   
-## <a name="see-also"></a>См. также  
- [Константы, перечисления и структуры в профилировщике Active Script](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerCallback:: скрипткомпилед](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
- [IActiveScriptProfilerCallback2:: онфунктионентербинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+## <a name="see-also"></a>См. также:  
+ [Константы, перечисления и структуры в профилировщике Active Script](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerCallback:: скрипткомпилед](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
+ [IActiveScriptProfilerCallback2:: онфунктионентербинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

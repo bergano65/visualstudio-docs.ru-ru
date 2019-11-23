@@ -50,16 +50,16 @@ HRESULT SetTextAttributes(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
- Вызов `SetTextAttributes` в текстовом диапазоне до добавления текста в документ является ошибкой. Вызовите методы `AddDBCSText`, `AddUnicodeText` или `AddDeferredText`, чтобы добавить текст в документ.  
+## <a name="remarks"></a>Примечания  
+ Вызов `SetTextAttributes` в текстовом диапазоне до добавления текста в документ является ошибкой. Вызовите методы `AddDBCSText`, `AddUnicodeText`или `AddDeferredText`, чтобы добавить текст в документ.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: аддуникодетекст](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
- [IDebugDocumentHelper:: адддеферредтекст](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: аддуникодетекст](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper:: адддеферредтекст](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

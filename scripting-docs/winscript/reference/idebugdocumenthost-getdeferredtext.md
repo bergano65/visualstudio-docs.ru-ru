@@ -58,18 +58,18 @@ HRESULT GetDeferredText(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_NOTIMPL`|Метод не реализован.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод может возвращать `E_NOTIMPL`, если узел не вызывает `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
 > Этот метод возвращает текст из исходного документа. Узел не отслеживает изменения и другие изменения в документе.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
- [IDebugDocumentHelper:: адддеферредтекст](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHelper:: адддеферредтекст](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Перечисление SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

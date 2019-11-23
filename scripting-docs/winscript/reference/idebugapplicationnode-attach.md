@@ -42,13 +42,13 @@ HRESULT Attach(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод добавляет этот узел приложения в дерево проекта, используя `pdanParent` в качестве родителя. Если `pdanParent` `NULL`, этот узел приложения будет узлом верхнего уровня.  
   
-## <a name="see-also"></a>См. также  
- [Идебугаппликатионноде::D етач](../../winscript/reference/idebugapplicationnode-detach.md)    
+## <a name="see-also"></a>См. также:  
+ [Идебугаппликатионноде::D етач](../../winscript/reference/idebugapplicationnode-detach.md)   
  [Интерфейс IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

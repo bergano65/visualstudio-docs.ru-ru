@@ -54,16 +54,16 @@ HRESULT Init(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод инициализирует вспомогательный объект документа отладки с именем и исходными атрибутами.  
   
  Этот документ не отображается в дереве до тех пор, пока не будет вызван `IDebugDocumentHelper::Attach`.  
   
-## <a name="see-also"></a>См. также  
- [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
- @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+## <a name="see-also"></a>См. также:  
+ [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+   [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Константы TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

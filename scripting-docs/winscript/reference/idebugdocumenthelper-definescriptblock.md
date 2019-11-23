@@ -58,18 +58,18 @@ HRESULT DefineScriptBlock(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Направляющий узел может использовать этот метод, если его документы содержат внедренные блоки скриптов. Языковой механизм может использовать этот метод, если его код содержит внедренные скрипты для других языков.  
   
  Обработчик скриптов отвечает за все выкраски синтаксиса и поиск контекста кода в блоке script.  
   
  Метод `DefineScriptBlock` должен вызываться после добавления текста (например, с помощью метода `IDebugDocumentHelper::AddDBCSText`), но перед синтаксическим анализом блока скрипта (например, с помощью метода `IActiveScriptParse ::ParseScriptText`).  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

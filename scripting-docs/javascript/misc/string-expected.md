@@ -28,6 +28,6 @@ ms.locfileid: "72573675"
   
 - Вызываются методы **String. prototype. ToString** или **String. prototype. valueOf** для объектов типа `String`.  
   
-## <a name="see-also"></a>См. также  
- [Строковый объект](../../javascript/reference/string-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Строковый объект](../../javascript/reference/string-object-javascript.md)   
  [Метод toString (Object)](../../javascript/reference/tostring-method-object-javascript.md)

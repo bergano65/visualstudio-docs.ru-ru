@@ -42,16 +42,16 @@ HRESULT Start(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_UNEXPECTED`|Операция уже находится в состоянии ожидания.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод вызывает асинхронный вызов `IDebugSyncOperation::Execute` в потоке, полученном из `IDebugSyncOperation::GetTargetThread`. Этот метод должен вызываться только в потоке отладчика; в противном случае она не будет возвращаться до завершения операции.  
   
-## <a name="see-also"></a>См. также  
- [Идебугасинкоператион:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
- @No__t_1 [интерфейса идебугасинкоператион](../../winscript/reference/idebugasyncoperation-interface.md)  
- [Идебугсинкоператион:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+## <a name="see-also"></a>См. также:  
+ [Идебугасинкоператион:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+   [интерфейса идебугасинкоператион](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [Идебугсинкоператион:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)
