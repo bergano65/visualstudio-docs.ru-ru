@@ -1,5 +1,5 @@
 ---
-title: Extending Projects | Microsoft Docs
+title: Расширение проектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,35 +21,35 @@ ms.locfileid: "74295981"
 # <a name="extending-projects"></a>Расширение проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projects and solutions are the ways Visual Studio organizes code and resource files into compilation and deployment units. You can find more information about projects in [Projects (Visual Studio SDK)](../extensibility/extending-projects.md).  
+Проекты и решения — это способы, с помощью которых Visual Studio организует файлы кода и ресурсов в единицах компиляции и развертывания. Дополнительные сведения о проектах в [проектах (пакет SDK для Visual Studio)](../extensibility/extending-projects.md)см. здесь.  
   
- You can create your own project types with the Visual Studio SDK and the Managed Package Framework for Projects, which you can download at [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). To understand how custom projects are implemented, see [New Project Generation: Under the Hood, Part One](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) and [New Project Generation: Under the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Вы можете создавать собственные типы проектов с помощью пакета SDK для Visual Studio и платформы управляемого пакета для проектов, которые можно скачать в [среде управляемых пакетов для проектов](https://archive.codeplex.com/?p=mpfproj12). Сведения о реализации пользовательских проектов см. в разделе Создание [нового проекта: внутри, части одна](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и новая возможность [создания проекта: в этой части вторая](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
- The topics in this section describe how to create custom projects and how to manage different types of Visual Studio solution.  
+ В подразделах этого раздела описывается создание пользовательских проектов и управление различными типами решений Visual Studio.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Создание системы базового проекта. Часть 1](../extensibility/creating-a-basic-project-system-part-1.md)  
- Describes how to create a custom project system.  
+ Описывает создание пользовательской системы проектов.  
   
  [Создание системы базового проекта. Часть 2](../extensibility/creating-a-basic-project-system-part-2.md)  
- Describes how to create a custom project system.  
+ Описывает создание пользовательской системы проектов.  
   
  [Сохранение данных в файлах проектов](../extensibility/saving-data-in-project-files.md)  
- Explains how add to project (.*proj) files.  
+ Объясняет, как добавить файлы проекта (. * proj).  
   
  [Проверка подтипов проекта во время выполнения](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
- Explains how to verify the subtype of a project at run time.  
+ Объясняет, как проверить подтип проекта во время выполнения.  
   
  [Добавление и удаление страниц свойств](../extensibility/adding-and-removing-property-pages.md)  
- Explains how to customize the property pages for your custom project.  
+ Объясняет, как настроить страницы свойств для пользовательского проекта.  
   
  [Добавление атрибута в элемент проекта](../extensibility/adding-an-attribute-to-a-project-item.md)  
- Explains how to add an attribute to a custom project item.  
+ Объясняет, как добавить атрибут в пользовательский элемент проекта.  
   
  [Сохранение свойства элемента проекта](../extensibility/persisting-the-property-of-a-project-item.md)  
- Explains how to persist the properties of a custom project item.  
+ Объясняет, как сохранить свойства пользовательского элемента проекта.  
   
  [Управление универсальными проектами Windows](../extensibility/managing-universal-windows-projects.md)  
- Explains how to manage universal projects.  
+ Объясняется, как управлять универсальными проектами.  
   
 ## <a name="related-sections"></a>Связанные разделы

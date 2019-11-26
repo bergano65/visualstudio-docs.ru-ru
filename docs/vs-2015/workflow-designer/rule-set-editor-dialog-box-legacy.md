@@ -1,5 +1,5 @@
 ---
-title: Rule Set Editor Dialog Box (Legacy) | Microsoft Docs
+title: Диалоговое окно "Редактор набора правил" (прежние версии) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -21,74 +21,74 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302761"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор набора правил» (для прежних версий)
-This topic describes how use the **Rule Set Editor** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+В этом разделе описывается использование диалогового окна **Редактор набора правил** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- The **Rule Set Editor** dialog box is used to create and modify [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) rule sets, which are serialized to a .rules file.
+ Диалоговое окно **Редактор набора правил** используется для создания и изменения наборов правил [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) , которые сериализуются в файл rules.
 
 > [!NOTE]
-> If you want to open the .rules file with the **XML Editor with encoding**, you must first close the associated designer window for the workflow or activity.
+> Если необходимо открыть файл rules с помощью **редактора XML с кодировкой**, необходимо сначала закрыть соответствующее окно конструктора для рабочего процесса или действия.
 
- For information about how to access the **Rule Set Editor** dialog box, see [How to: Create a PolicyActivity Rule Set (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ Дополнительные сведения о доступе к диалоговому окну **Редактор набора правил** см. [в разделе инструкции. Создание набора правил PolicyActivity (прежних версий)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
 > Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.
 
- The following table describes the user interface (UI) elements of the **Rule Set Editor** dialog box.
+ В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна « **Редактор набора правил** ».
 
 |Элемент пользовательского интерфейса|Описание|
 |----------------|-----------------|
-|**Add Rule**|Добавляет новое определение правила в набор правил.|
+|**Добавить правило**|Добавляет новое определение правила в набор правил.|
 |**Удалить**|Удаляет выбранное правило из набора правил.|
-|**Chaining**|Задает тип прямой логической цепочки для использования с набором правил. Доступны следующие варианты:<br /><br /> -   **Full Chaining**, which specifies to use all forward chaining mechanisms: implicit, method attributing, and explicit using an **Update** function.<br />-   **Sequential**, which specifies not to use any forward chaining.<br />-   **Explicit Update Only**, which specifies to only perform forward chaining on **Update** actions.<br /><br /> For more information about forward chaining, see [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004).|
-|**Name**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по имени.|
-|**Priority**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по приоритету.|
-|**Reevaluation**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по типу повторной оценки.|
-|**Rule Preview**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по условию предварительного просмотра правила и действиям.|
+|**Цепочки**|Задает тип прямой логической цепочки для использования с набором правил. Доступны следующие варианты:<br /><br /> -   **полная цепочка**, которая указывает на использование всех механизмов прямой цепочки: неявные, присвоение методов и явное использование функции **Update** .<br />-   **последовательный**, который указывает, что не следует использовать прямую цепочку.<br />-   **только явное обновление**, которое указывает выполнять только прямую цепочку для действий **обновления** .<br /><br /> Дополнительные сведения о прямой цепочке см. [в разделе Использование действия PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).|
+|**Имя**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по имени.|
+|**Приоритеты**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по приоритету.|
+|**Повторной оценки**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по типу повторной оценки.|
+|**Предварительный просмотр правила**|Заголовок столбца со списком набора правил. Нажмите, чтобы отсортировать список правил по условию предварительного просмотра правила и действиям.|
 |**Name.**|Введите имя правила.|
-|**Priority:**|Введите приоритет правила. Приоритет по умолчанию равен 0.|
-|**Reevaluation:**|Задает тип повторной оценки правила для использования с правилом. Доступны следующие варианты:<br /><br /> -   **Always**, which causes the rule to be reevaluated as needed.<br />-   **Never**, which causes the rule to never be reevaluated. В этом случае правило выполняется только один раз.|
+|**Приоритеты**|Введите приоритет правила. Приоритет по умолчанию равен 0.|
+|**Повторной оценки**|Задает тип повторной оценки правила для использования с правилом. Доступны следующие варианты:<br /><br /> -   **всегда**, что приводит к повторной оценке правила по мере необходимости.<br />-   **никогда**, что приводит к тому, что правило никогда не будет переоцениваться. В этом случае правило выполняется только один раз.|
 |**Active**|Включите, чтобы сделать это правило активным.|
-|**Condition:**|Введите выражение для условия правила. Описание синтаксиса выражений см. в разделе "Ввод выражений условия и действия" на этой странице.|
-|**Then Actions:**|Введите выражение для действий THEN. Описание синтаксиса выражений см. в разделе "Ввод выражений условия и действия" на этой странице.|
-|**Else Actions:**|Введите выражение для действий ELSE. Описание синтаксиса выражений см. в разделе "Ввод выражений условия и действия" на этой странице.|
-|**OK**|Нажмите для сохранения набора правил в файл RULES.|
+|**Выполняет**|Введите выражение для условия правила. Описание синтаксиса выражений см. в разделе "Ввод выражений условия и действия" на этой странице.|
+|**Действия.**|Введите выражение для действий THEN. Описание синтаксиса выражений см. в разделе "Ввод выражений условия и действия" на этой странице.|
+|**Действия else:**|Введите выражение для действий ELSE. Описание синтаксиса выражений см. в разделе "Ввод выражений условия и действия" на этой странице.|
+|**Хорошо**|Нажмите для сохранения набора правил в файл RULES.|
 
- For more information about rule sets, see [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004).
+ Дополнительные сведения о наборах правил см. [в разделе Использование действия PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).
 
 ## <a name="entering-condition-and-action-expressions"></a>Ввод выражений условия и действия
- You enter expressions for the Condition and the Then and Else actions as text in their respective text boxes in the **Rule Set Editor** dialog box. You can type **this.** into the editor to reference fields, properties and methods used in the workflow, using an IntelliSense-type of menu. Либо можно прямо ввести имя члена рабочего процесса. Можно вызвать статические методы для ссылочных типов, для этого введите имя класса, далее имя метода.
+ Вы вводите выражения для условия, а затем действия then и else в виде текста в соответствующие текстовые поля в диалоговом окне **Редактор набора правил** . Это можно ввести **.** в редактор для ссылки на поля, свойства и методы, используемые в рабочем процессе, с использованием типа меню IntelliSense. Либо можно прямо ввести имя члена рабочего процесса. Можно вызвать статические методы для ссылочных типов, для этого введите имя класса, далее имя метода.
 
- К условию можно добавить логические операторы, например AND ("И"), OR ("ИЛИ") и NOT ("НЕ"). Также можно добавлять предикаты. Предикат - это бинарный оператор и два операнда. The binary operators supported are ==, >, \<, >=, and <=. Поддерживаемые операнды - константа арифметическая функция и члены с соответствующей областью действия.
+ К условию можно добавить логические операторы, например AND ("И"), OR ("ИЛИ") и NOT ("НЕ"). Также можно добавлять предикаты. Предикат - это бинарный оператор и два операнда. Поддерживаются двоичные операторы = =, >, \<, > = и < =. Поддерживаемые операнды - константа арифметическая функция и члены с соответствующей областью действия.
 
- You can specify the type for the comparison, and you can compare to **null** or an empty string. Можно вложить вызовы к членам в переменные, которые содержат сложный тип, например `this.Address.State == "WA"`.
+ Можно указать тип для сравнения, а также сравнить со **значением NULL** или с пустой строкой. Можно вложить вызовы к членам в переменные, которые содержат сложный тип, например `this.Address.State == "WA"`.
 
  Выражения поддерживают следующие операторы:
 
 - Реляционные операторы: ==, =, !=
 
-- Comparison operators: <, \<=, >, >=
+- Операторы сравнения: <, \<=, >, > =
 
 - Арифметические операторы: +, -, *, /, MOD
 
-- Logical operators: AND, &&, OR, &#124;&#124;, NOT, !
+- Логические операторы: и, & & или, &#124; &#124;, not,!
 
-- Bitwise operators: &, &#124;
+- Побитовые операторы: &,&#124;
 
   Приоритет оператора выражения определяется правилами приоритета операторов языка C#.
 
-  For more information about conditions, see [Using Conditions in Workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).
+  Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).
 
 ### <a name="halt-and-update-functions"></a>Функции Halt и Update
- **Then Actions:** and **Else Actions:** expressions support **Halt** and **Update** functions. To use the **Halt** function, type **Halt** into a **Then Action:** or **Else Action:** text box. The **Halt** action causes rule set execution to stop immediately, and control returns to the calling code. You use the **Update** function with forward chaining.
+ **Then Actions:** and **else Actions:** Expressions поддерживают **остановку** и **Обновление** функций. Чтобы использовать функцию **halt** , введите команду **halt** в текстовое поле **действие then:** или **else Action:** . Действие **остановить** приводит к немедленной остановке выполнения набора правил, а управление возвратом в вызывающий код. Используйте функцию **Update** с прямой цепочкой.
 
- An **Update** statement can be expressed in the editor in one of two forms; both forms are shown in the following example:
+ Инструкция **Update** может быть выражена в редакторе в одной из двух форм. в следующем примере показаны обе формы:
 
 ```
 Update(this.Address.State)
 Update("this/Address/State")
 ```
 
- For more information about using **Update** with forward chaining, see [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004).
+ Дополнительные сведения об использовании инструкции **Update** с прямой цепочкой см. [в разделе Использование действия PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).
 
-## <a name="see-also"></a>См. также раздел
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Select Rule Set Dialog Box (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+## <a name="see-also"></a>См. также
+ [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [диалоговое окно "Выбор набора правил" (устаревшее)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [Использование действия PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004) [с условиями в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009)

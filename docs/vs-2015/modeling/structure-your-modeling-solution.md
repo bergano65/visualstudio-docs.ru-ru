@@ -1,5 +1,5 @@
 ---
-title: Structure your modeling solution | Microsoft Docs
+title: Структурирование решения моделирования | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -26,7 +26,7 @@ ms.locfileid: "74298169"
 
 В этом разделе предполагается, что вы работаете над достаточно крупным проектом, для которого требуются несколько членов команды или даже, возможно, несколько команд. Код и модели проекта хранятся в системе управления версиями, такой как [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. По крайней мере некоторые члены команды используют Visual Studio для разработки моделей, а другие могут просматривать модели с помощью других версий Visual Studio.
 
-To see which versions of Visual Studio support each tool and modeling feature, see [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Чтобы узнать, какие версии Visual Studio поддерживают все средства и функции моделирования, см. раздел [Поддержка версий для инструментов архитектуры и моделирования](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Структура решения
 
@@ -34,13 +34,13 @@ To see which versions of Visual Studio support each tool and modeling feature, s
 
 #### <a name="to-divide-an-application-into-layers"></a>Разделение приложения на слои
 
-1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. A variety of common architectures is discussed in [Application Archetypes in the Microsoft Application Architecture Guide](https://go.microsoft.com/fwlink/?LinkId=196681).
+1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](https://go.microsoft.com/fwlink/?LinkId=196681)).
 
 2. Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которое мы будем называть решением "Архитектура". Это решение будет использоваться для создания общей структуры системы. Оно будет содержать только модели без кода.
 
     Добавьте в это решение схему слоев. На схеме слоев нарисуйте архитектуру, выбранную для приложения. Например, на схеме могут отображаться следующие слои и зависимости между ними: "Презентация", "Бизнес-логика" и "Данные".
 
-    You can create the layer diagram and a new Visual Studio solution at the same time by using the **New UML or Layer Diagram** command on the **Architecture** menu.
+    Вы можете одновременно создать схему слоев и новое решение Visual Studio с помощью команды **создать UML или схему слоев** в меню **архитектура** .
 
 3. Добавьте в модель архитектуры схемы UML, представляющие важные бизнес-концепции, и используйте варианты, на которые имеются ссылки в структуре всех слоев.
 
@@ -60,7 +60,7 @@ To see which versions of Visual Studio support each tool and modeling feature, s
 
     Теперь имеются модели для каждого слоя и модель для архитектуры приложения. Каждая модель содержится в своем собственном решении. Это позволяет членам команды одновременно работать над слоями.
 
-2. В решение "Архитектура" добавьте проект моделирования для каждого решения слоя. Для этого откройте решение "Архитектура". In Solution Explorer, right-click the solution node, point to Add, and then click **Existing Project**. Перейдите в проект моделирования (MODELPROJ) в решении для одного слоя.
+2. В решение "Архитектура" добавьте проект моделирования для каждого решения слоя. Для этого откройте решение "Архитектура". В обозреватель решений щелкните правой кнопкой мыши узел решения, наведите указатель на пункт Добавить и выберите пункт **существующий проект**. Перейдите в проект моделирования (MODELPROJ) в решении для одного слоя.
 
     Каждая модель теперь видна в двух решениях: в своем "домашнем" решении и в решении "Архитектура".
 
@@ -80,9 +80,9 @@ To see which versions of Visual Studio support each tool and modeling feature, s
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>Использование отдельного пакета для каждого слоя
 
-1. В решение для каждого слоя добавьте проект моделирования "Архитектура". In Solution Explorer, right-click the solution node, point to **Add**, and then click **Existing Project**. Теперь один проект моделирования доступен из каждого решения: из проекта "Архитектура" и из проекта разработки для каждого слоя.
+1. В решение для каждого слоя добавьте проект моделирования "Архитектура". В обозреватель решений щелкните правой кнопкой мыши узел решения, наведите указатель на пункт **Добавить**и выберите пункт **существующий проект**. Теперь один проект моделирования доступен из каждого решения: из проекта "Архитектура" и из проекта разработки для каждого слоя.
 
-2. В общей модели UML создайте пакет для каждого слоя: в обозревателе решений выберите проект моделирования. In UML Model Explorer, right-click the model root node, point to **Add**, and then click **Package**.
+2. В общей модели UML создайте пакет для каждого слоя: в обозревателе решений выберите проект моделирования. В обозревателе моделей UML щелкните правой кнопкой мыши корневой узел модели, наведите указатель на пункт **Добавить**и выберите **пакет**.
 
     Каждый пакет будет содержать схемы UML, описывающие требования и структуру соответствующего слоя.
 
@@ -90,7 +90,7 @@ To see which versions of Visual Studio support each tool and modeling feature, s
 
     Этот метод позволяет элементам структуры каждого слоя ссылаться напрямую на те слои и общую архитектуру, от которых они зависят.
 
-    Хотя одновременная работа над различными пакетами может приводить к некоторым конфликтам, ими достаточно просто управлять, так как пакеты хранятся в отдельных файлах. Наибольшие сложности возникают при удалении элемента, на который имеются ссылки из зависящего от него пакета. For more information, see [Manage models and diagrams under version control](../modeling/manage-models-and-diagrams-under-version-control.md).
+    Хотя одновременная работа над различными пакетами может приводить к некоторым конфликтам, ими достаточно просто управлять, так как пакеты хранятся в отдельных файлах. Наибольшие сложности возникают при удалении элемента, на который имеются ссылки из зависящего от него пакета. Дополнительные сведения см. [в разделе Управление моделями и диаграммами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md).
 
 ## <a name="creating-architecture-templates"></a>Создание шаблонов архитектуры
 
@@ -100,24 +100,24 @@ To see which versions of Visual Studio support each tool and modeling feature, s
 
 #### <a name="to-create-a-solution-template"></a>Создание шаблона решения
 
-1. [Download and install the Export Template Wizard](https://go.microsoft.com/fwlink/?LinkId=196686), if you have not already done this.
+1. [Скачайте и установите мастер экспорта шаблонов](https://go.microsoft.com/fwlink/?LinkId=196686), если вы еще этого не сделали.
 
 2. Создайте структуру решения, которую требуется использовать в качестве отправной точки для будущих проектов.
 
-3. В меню **Файл** выберите команду **Export Template as VSIX**(Экспорт шаблона как VSIX). The **Export Template as VSIX Wizard** opens.
+3. В меню **Файл** выберите команду **Export Template as VSIX**(Экспорт шаблона как VSIX). Откроется **Мастер экспорта шаблона как VSIX** .
 
 4. Следуя инструкциям в мастере, выберите проекты, которые требуется включить в шаблон, укажите имя и описание шаблона, а также укажите расположение выходных файлов.
 
 > [!NOTE]
-> Материал из этого раздела представляет собой краткое изложение руководства по средствам проектирования архитектуры Visual Studio, написанного группой Visual Studio ALM Rangers, в которую входят партнеры со статусом MVP, службы Microsoft Services, а также команда разработчиков и авторов Visual Studio. [Click here to download the complete Guidance package.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> Материал из этого раздела представляет собой краткое изложение руководства по средствам проектирования архитектуры Visual Studio, написанного группой Visual Studio ALM Rangers, в которую входят партнеры со статусом MVP, службы Microsoft Services, а также команда разработчиков и авторов Visual Studio. [Щелкните здесь, чтобы скачать полный пакет рекомендаций.](https://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>Связанные материалы
 
-[Organizing and Managing Your Models](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) - video by Clint Edmondson.
+[Организация и управление моделями](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) — видео с помощью Клинт едмондсон.
 
-[Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md) – Further guidance on managing models in a team
+[Руководство по использованию средств архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) — дополнительные рекомендации по управлению моделями в команде
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Manage models and diagrams under version control](../modeling/manage-models-and-diagrams-under-version-control.md)
-[Use models in your development process](../modeling/use-models-in-your-development-process.md)
+[Управление моделями и диаграммами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md)
+[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

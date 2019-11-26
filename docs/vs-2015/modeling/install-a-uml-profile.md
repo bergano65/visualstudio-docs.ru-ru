@@ -1,5 +1,5 @@
 ---
-title: Install a UML profile | Microsoft Docs
+title: Установка профиля UML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,7 +25,7 @@ ms.locfileid: "74298908"
 
  Если вы получили модель UML, созданную с использованием профилей, некоторые свойства не будут отображаться, если эти профили не установлены.
 
- Профиль распространяется внутри расширения Visual Studio. Расширение также может содержать другие функции, такие как команды меню. For more information, see [Managing Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160728).
+ Профиль распространяется внутри расширения Visual Studio. Расширение также может содержать другие функции, такие как команды меню. Дополнительные сведения см. в разделе [Управление расширениями Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160728).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Установка профиля UML на компьютер
 
@@ -35,15 +35,15 @@ ms.locfileid: "74298908"
 
 2. Дважды щелкните файл `.vsix` в проводнике или откройте его в [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-3. Click **Install** in the dialog box that appears.
+3. В появившемся диалоговом окне нажмите кнопку **установить** .
 
-4. To uninstall or temporarily disable the extension, open **Extension Manager** from the **Tools** menu.
+4. Чтобы удалить или временно отключить расширение, откройте **Диспетчер расширений** в меню **Сервис** .
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Удаление или отключение расширения профиля
 
-1. On the Visual Studio **Tools** menu, click **Extension Manager**.
+1. В меню **Сервис** Visual Studio выберите пункт **Диспетчер расширений**.
 
-2. Click the extension that you want to remove, and then click **Disable** or **Uninstall**.
+2. Выберите расширение, которое требуется удалить, а затем нажмите кнопку **Отключить** или **Удалить**.
 
-## <a name="see-also"></a>См. также раздел
- [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md)
+## <a name="see-also"></a>См. также
+ [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md)

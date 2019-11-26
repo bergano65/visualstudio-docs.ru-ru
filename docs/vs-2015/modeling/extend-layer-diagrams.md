@@ -1,5 +1,5 @@
 ---
-title: Extend layer diagrams | Microsoft Docs
+title: Расширение схем слоев | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -39,15 +39,15 @@ ms.locfileid: "74301034"
 
 - Visual Studio
 
-- [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
+- [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
 
-- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Пакет SDK моделирования для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  На компьютере, где планируется выполнять расширения слоев, должна быть установлена подходящая версия Visual Studio. For more information, see [Deploy a layer model extension](../modeling/deploy-a-layer-model-extension.md).
+  На компьютере, где планируется выполнять расширения слоев, должна быть установлена подходящая версия Visual Studio. Дополнительные сведения см. [в разделе Развертывание расширения модели слоев](../modeling/deploy-a-layer-model-extension.md).
 
   Чтобы узнать, какие версии Visual Studio поддерживают схемы слоев, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
  [Добавление команд и жестов в схемы слоев](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 
  [Добавление пользовательской проверки архитектуры в схемы слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
@@ -60,5 +60,5 @@ ms.locfileid: "74301034"
 
  [Устранение неполадок, связанных с расширениями для схем слоев](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
-## <a name="see-also"></a>См. также раздел
- [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md) [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md) [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md) [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md) [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md) [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+## <a name="see-also"></a>См. также
+ [Определение и установка](../modeling/define-and-install-a-modeling-extension.md) [схем слоев расширения моделирования: эталонные](../modeling/layer-diagrams-reference.md) [схемы](../modeling/layer-diagrams-guidelines.md) слоев. рекомендации по [созданию схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md) [Проверка кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md) [Создание файлов из модели UML](../modeling/generate-files-from-a-uml-model.md) [Открытие модели UML с помощью API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

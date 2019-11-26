@@ -21,13 +21,13 @@ ms.locfileid: "74295785"
 
 Первый шаг в создании программы для просмотра изображений — это создание проекта приложения Windows Forms.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 1](https://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Создание проекта приложения Windows Forms
 
 1. В строке меню выберите **Файл**, **Создать**, **Проект**. Диалоговое окно должно выглядеть следующим образом.
 
-     ![New project dialog](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") New project dialog box
+     ![Диалоговое окно создания проекта](../ide/media/newprojectdialogcallouts.png "невпрожектдиалогкаллаутс") Диалоговое окно «Создание проекта»
 
 2. В списке **Установленные шаблоны** выберите **Visual C#** или **Visual Basic**.
 
@@ -40,7 +40,7 @@ ms.locfileid: "74295785"
     > [!NOTE]
     > В вашем случае макет окна может отличаться от показанного. Точный макет окна зависит от версии Visual Studio, используемого языка программирования и других факторов. Однако необходимо убедиться, что отображаются все три окна.
 
-     ![IDE window](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE window
+     ![Окно интегрированной среды разработки](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") Окно интегрированной среды разработки
 
      Интерфейс содержит три окна: главное окно, **Обозреватель решений** и окно **Свойства**.
 
@@ -61,7 +61,7 @@ ms.locfileid: "74295785"
 
      Другой вариант — нажать кнопку **Сохранить все** на панели инструментов, показанной на следующем рисунке.
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All toolbar button
+     ![Кнопка "сохранить все" на панели инструментов](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Кнопка "сохранить все" на панели инструментов
 
      Visual Studio автоматически заполняет имя папки и имя проекта, а затем сохраняет проект в папке проектов.
 

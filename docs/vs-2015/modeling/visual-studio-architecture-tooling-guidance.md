@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Architecture Tooling Guidance | Microsoft Docs
+title: Руководство по использованию средств архитектуры Visual Studio | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,8 +19,8 @@ ms.locfileid: "74301330"
 # <a name="visual-studio-architecture-tooling-guidance"></a>Руководство по средствам проектирования архитектуры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This Architecture Tooling Guidance is a downloadable package of practical guidance about the use of the modeling tools in Visual Studio 2010. It presents a high-level view of how to use all the modeling tools in an integrated manner, and discusses the most common scenarios in which the tools are used.
+Это руководство по архитектуре средств — это загружаемый пакет практических рекомендаций по использованию средств моделирования в Visual Studio 2010. Дают общее представление об использовании всех средств моделирования интегрированным образом и рассматриваются наиболее распространенные сценарии, в которых используются средства.
 
- The content was created by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers, a special group that has members from the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Product Team, Microsoft Services, Microsoft Most Valued Professionals (MVPs), and [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Community Leads.
+ Содержимое было создано [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ными диапазонами управления жизненным циклом приложений, специальной группой, которая содержит членов группы разработчиков [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], служб Майкрософт, наиболее ценных специалистов Майкрософт (MVP) и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интересов сообщества.
 
- [Click here to download the Architecture Tooling Guidance.](https://go.microsoft.com/fwlink/?LinkID=191984).
+ [Щелкните здесь, чтобы скачать руководство по инструментам архитектуры.](https://go.microsoft.com/fwlink/?LinkID=191984)

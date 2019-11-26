@@ -1,5 +1,5 @@
 ---
-title: Define and install a modeling extension | Microsoft Docs
+title: Определение и установка расширения моделирования | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -74,10 +74,10 @@ ms.locfileid: "74298718"
 
         |||
         |-|-|
-        |**Type** =|**Microsoft.VisualStudio.MefComponent**|
-        |**Source** =|**A project in current solution**|
-        |**Project** =|*Your class library project*|
-        |**Embed in this folder** =|*(empty)*|
+        |**Тип** =|**Microsoft. VisualStudio. MefComponent**|
+        |**Source** =|**Проект в текущем решении**|
+        | = **проекта**|*Ваш проект библиотеки классов*|
+        |**Внедрить в эту папку** =|*указано*|
 
          Для остальных типов компонентов см. ссылки в следующем разделе.
 
@@ -109,14 +109,14 @@ ms.locfileid: "74298718"
 
 3. Если был выбран параметр **Запуск без отладки** и необходимо использовать отладчик, вернитесь в основной экземпляр Visual Studio. В меню **Отладка** выберите пункт **Прикрепить к процессу**. В диалоговом окне выберите экспериментальный экземпляр Visual Studio, который имеет имя программы **devenv**.
 
-## <a name="Installing"></a> Installing and uninstalling an extension
+## <a name="Installing"></a>Установка и удаление расширения
  Выполните указанные ниже действия, чтобы запустить расширение в основном экземпляре Visual Studio на своем компьютере или на других компьютерах.
 
 1. На своем компьютере найдите файл **.vsix** , который был создан проектом расширения.
 
     1. В контекстном меню проекта в **обозревателе решений**выберите пункт **Открыть папку в проводнике Windows**.
 
-    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
+    2. Откройте файл **bin\\\*\\** _йоурпрожект_ **. VSIX**
 
 2. Скопируйте файл **.vsix** на компьютер, где необходимо установить расширение. Это может быть как ваш собственный компьютер, так и любой другой.
 
@@ -136,9 +136,9 @@ ms.locfileid: "74298718"
 
 3. Выберите расширение и щелкните **Удалить**.
 
-   Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:
+   Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующего расположения, где *% LocalAppData%* обычно *DriveName*: \Users\\*username*\аппдата\локал:
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\микрософт\висуалстудио\\[версия] \екстенсионс**
 
-## <a name="see-also"></a>См. также раздел
- [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+## <a name="see-also"></a>См. также
+ [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

@@ -1,5 +1,5 @@
 ---
-title: Managed Package Framework Classes | Microsoft Docs
+title: Классы платформы управляемых пакетов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -28,7 +28,7 @@ ms.locfileid: "74297694"
 ## <a name="mpf-namespaces"></a>Пространства имен MPF  
  В следующей таблице перечислены пространства имен MPF, предоставляемые [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
-|Пространство имен|Описание|  
+|Пространство имен|Содержание|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio>|Содержит полезные классы для обработки ошибок COM, констант [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и окон Win32.|  
 |<xref:Microsoft.VisualStudio.Package>|Включает оболочки управляемого кода для проектов, редакторов и MSBuild [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
@@ -38,7 +38,7 @@ ms.locfileid: "74297694"
 |<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|Содержит расширения конструктора CodeDom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|Поддерживает подтипы проекта (также называемые "версиями").|  
   
-## <a name="see-also"></a>См. также раздел  
- [VSPackages and the Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
- [Using Visual Studio Interop Assemblies](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
+## <a name="see-also"></a>См. также  
+ [Пакеты VSPackage и управляемая платформа пакетов](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Использование сборок взаимодействия Visual Studio](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [Пакеты VSPackage и Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)

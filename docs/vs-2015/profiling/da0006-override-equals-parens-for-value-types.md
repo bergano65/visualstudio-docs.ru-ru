@@ -24,11 +24,11 @@ ms.locfileid: "74300989"
 # <a name="da0006-override-equals-for-value-types"></a>DA0006. Переопределение Equals() для типов значений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0006|  
-|Category|.NET Framework Usage|  
-|Profiiling methods|Sampling|  
-|Message|Override Equals and equality operator on value types.|  
-|Messge type|Warning|  
+Идентификатор правила | DA0006 |  
+| Категория |. Использование NET Framework |  
+| Методы профилирования | Выборка |  
+| Сообщение | Переопределите Equals и оператор равенства для типов значений. |  
+| Тип сообщений | Предупреждение |  
   
 ## <a name="cause"></a>Причина  
  Вызовы метода Equals или операторов равенства открытого типа составляют значительную часть данных профилирования. Рекомендуется использовать более эффективный метод.  

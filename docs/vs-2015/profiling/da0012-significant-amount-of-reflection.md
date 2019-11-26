@@ -24,11 +24,11 @@ ms.locfileid: "74300300"
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012. Слишком много вызовов метода Reflection
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0012|  
-|Category|.NET Framework Usage|  
-|Profiling methods|Sampling|  
-|Message|You may be using Reflection excessively. Это ресурсоемкая операция. |  
-|Rule type|Warning|  
+Идентификатор правила | DA0012 |  
+| Категория |. Использование NET Framework |  
+| Методы профилирования | Выборка |  
+| Сообщение | Возможно, используется отражение слишком часто. Это ресурсоемкая операция. |  
+| Тип правила | Предупреждение |  
   
 ## <a name="cause"></a>Причина  
  Вызовы методов System.Reflection, таких как InvokeMember и GetMember, или методов Type, таких как MemberInvoke, составляют значительную часть данных профилирования. По возможности рекомендуется заменить эти методы ранней привязкой к методам зависимых сборок.  

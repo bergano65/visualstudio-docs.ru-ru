@@ -1,5 +1,5 @@
 ---
-title: Select Condition Dialog Box (Legacy) | Microsoft Docs
+title: Диалоговое окно «Выбор условия» (устаревшая) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -21,9 +21,9 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301460"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Диалоговое окно «Выбор условия» (для прежних версий)
-This topic describes how use the **Select Condition** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+В этом разделе описывается использование диалогового окна **Выбор условия** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- The **Select Condition** dialog box is used to select a declarative rule condition to be assigned to an activity's condition property. Эти условия правила представляются как свойства в следующих готовых действиях Windows Workflow Foundation:
+ Диалоговое окно **Выбор условия** используется для выбора условия декларативного правила, назначаемого свойству условия действия. Эти условия правила представляются как свойства в следующих готовых действиях Windows Workflow Foundation:
 
 - [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -33,22 +33,22 @@ This topic describes how use the **Select Condition** dialog box in the legacy [
 
 - [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-  For information about how to access the **Select Condition** dialog box, see [How to: Create a Declarative Rule Condition (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+  Дополнительные сведения о доступе к диалоговому окну **Выбор условия** см. [в разделе как создать условие декларативного правила (устаревшее)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
-  The following table describes the user interface (UI) elements of the **Select Condition** dialog box.
+  В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна « **Выбор условия** ».
 
 |Элемент пользовательского интерфейса|Описание|
 |----------------|-----------------|
-|**New…**|Click to open the [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) to create a new rule condition.|
-|**Edit…**|Click to open the [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) to edit the selected rule condition.|
-|**Rename…**|Щелкните, чтобы открыть диалоговое окно, используемое для переименования выбранного условия правила.|
+|**Новые функции...**|Нажмите, чтобы открыть [диалоговое окно Редактор условий правил (устаревшее)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) , чтобы создать новое условие правила.|
+|**Изменить...**|Нажмите, чтобы открыть [диалоговое окно Редактор условий правил (устаревшее)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) , чтобы изменить выбранное условие правила.|
+|**Переименовать...**|Щелкните, чтобы открыть диалоговое окно, используемое для переименования выбранного условия правила.|
 |**Удалить**|Щелкните, чтобы удалить выбранное условие правила.|
-|**Condition Preview**|Отображает выражение условия для выбранного условия правила.|
-|**OK**|Щелкните, чтобы назначить выбранное условие правила условию действия.|
+|**Предварительный просмотр условия**|Отображает выражение условия для выбранного условия правила.|
+|**Хорошо**|Щелкните, чтобы назначить выбранное условие правила условию действия.|
 
- For more information about creating and editing rule conditions, see [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
+ Дополнительные сведения о создании и изменении условий правил см. в разделе [диалоговое окно редактора условий правил (прежние версии)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 
- For more information about conditions, see [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
+ Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009).
 
-## <a name="see-also"></a>См. также раздел
- [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [How to: Create a Declarative Rule Condition (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009) [Using the ConditionedActivityGroup Activity](https://go.microsoft.com/fwlink?LinkID=65066) [Using the IfElseBranchActivity Activity](https://go.microsoft.com/fwlink?LinkID=65075) [Using the ReplicatorActivity Activity](https://go.microsoft.com/fwlink?LinkID=65080) [Using the WhileActivity Activity](https://go.microsoft.com/fwlink?LinkID=65091) [Legacy Designer for Windows Workflow Foundation UI Help](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+## <a name="see-also"></a>См. также
+ [Диалоговое окно редактора условий правил (устаревшая)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [как создать условие декларативного правила (устаревшее)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [с помощью условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009) , использующих действие [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) с помощью действия [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65075) , используя действие [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65080) с помощью конструктора [действий WhileActivity](https://go.microsoft.com/fwlink?LinkID=65091) [для Windows Workflow Foundation справки по пользовательскому интерфейсу](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md) .

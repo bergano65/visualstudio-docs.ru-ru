@@ -63,10 +63,10 @@ ms.locfileid: "74301427"
 
  Предоставляет ссылки на информацию об использовании Visual Studio в противоположность использованию [!INCLUDE[TCMext](../includes/tcmext-md.md)] для запуска автоматических тестов.
 
-## <a name="reference"></a>Справочник
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Describes the UnitTesting namespace, which provides attributes, exceptions, asserts, and other classes that support unit testing.
+## <a name="reference"></a>Справочные сведения
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> описывает пространство имен UnitTesting, которое предоставляет атрибуты, исключения, утверждения и другие классы, поддерживающие модульное тестирование.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Describes the UnitTesting.Web namespace, which extends the UnitTesting namespace by providing support for [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] and Web service unit tests.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> описывает пространство имен UnitTesting. Web, которое расширяет пространство имен UnitTesting, предоставляя поддержку модульных тестов для [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и веб-служб.
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
@@ -74,13 +74,13 @@ ms.locfileid: "74301427"
  [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>Форумы
- [Visual Studio Unit Testing](https://go.microsoft.com/fwlink/?LinkId=224477) (Модульное тестирование в Visual Studio)
+ [Модульное тестирование Visual Studio](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="reference"></a>Справочник
+### <a name="reference"></a>Справочные сведения
  [Content Index for Unit Tests](https://go.microsoft.com/fwlink/?LinkID=254719) (Индекс материалов по модульным тестам)
 
-## <a name="see-also"></a>См. также раздел
- [Improve Code Quality](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [Testing the application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
+## <a name="see-also"></a>См. также
+ [Улучшение тестирования качества кода](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [для приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

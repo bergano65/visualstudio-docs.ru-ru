@@ -24,11 +24,11 @@ ms.locfileid: "74301246"
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: частые коллекции GC2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-RuleId|DA0005|  
-|Category|.NET Framework Usage|  
-|Profiling method|.NET Memory|  
-|Message|Many of your objects are being collected in generation 2 garbage collection.|  
-|Message type|Warning|  
+RuleId | DA0005 |  
+| Категория |. Использование NET Framework |  
+| Метод профилирования |. NET Memory |  
+| Сообщение | Многие из ваших объектов собираются в сборке мусора поколения 2. |  
+| Тип сообщения | Предупреждение |  
   
 ## <a name="cause"></a>Причина  
  Большое число объектов памяти .NET освобождается при сборке мусора поколения 2.  

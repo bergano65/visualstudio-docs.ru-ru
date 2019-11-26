@@ -1,5 +1,5 @@
 ---
-title: Prefetch content for Windows Store apps | Microsoft Docs
+title: Предзагрузка содержимого для приложений Магазина Windows | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,9 +24,9 @@ ms.locfileid: "74300525"
 # <a name="prefetch-content-for-windows-store-apps"></a>Предварительная загрузка контента для приложений Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows only](../Image/windows_only_content.png "windows_only_content")  
+Применяется только к Windows] (.. /Video windows_only_content. png "windows_only_content")  
   
- To make your Windows Store app more responsive, you can request Windows to preload some web content, such as web pages or images, into the app's [WinINet](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](https://msdn.microsoft.com/library/aa383630.aspx)cache. Эта функциональность называется предварительной загрузкой. Он особенно эффективен для содержимого, которое используется при запуске, но также можно выполнять предварительную загрузку другого часто используемого содержимого. Методы класса [Windows.Networking.BackgroundTransfer.ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) позволяют указывать URI содержимого, которое необходимо предварительно загрузить.  
+ Чтобы обеспечить более высокую скорость реагирования приложения из Магазина Windows, можно запросить Windows загрузить некоторое веб-содержимое, например веб-страницы или изображения, в кэш [WinInet](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinInet](https://msdn.microsoft.com/library/aa383630.aspx)приложения. Эта функциональность называется предварительной загрузкой. Он особенно эффективен для содержимого, которое используется при запуске, но также можно выполнять предварительную загрузку другого часто используемого содержимого. Методы класса [Windows.Networking.BackgroundTransfer.ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) позволяют указывать URI содержимого, которое необходимо предварительно загрузить.  
   
  Windows использует эвристику для определения времени и необходимости выполнения предварительной загрузки, а также того, какие ресурсы будут загружены. Эта эвристика учитывает условия питания и системной сети, историю использования приложения пользователем, а также результаты предыдущих попыток предварительной загрузки. В Visual Studio можно использовать команду **Запустить предварительную загрузку приложения для Microsoft Store**, чтобы принудить Windows к игнорированию эвристики ContentPrefetcher и выполнению предварительной загрузки всего указанного веб-содержимого. Это может быть полезно, если требуется протестировать поведение или производительность приложения с содержимым, которое необходимо предварительно загрузить в известном состоянии (либо загруженном, либо незагруженном).  
   
@@ -44,5 +44,5 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 > [!NOTE]
 > Повторите эти действия, если необходимо добавить или изменить указанное веб-содержимое.  
   
-## <a name="see-also"></a>См. также раздел  
- [Blog post: Triggering Prefetch for Windows Store Apps in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+## <a name="see-also"></a>См. также  
+ [Запись блога: Активация предвыборки для приложений Магазина Windows в Visual Studio 2013 обновление 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

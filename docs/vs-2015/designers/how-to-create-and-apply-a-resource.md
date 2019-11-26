@@ -34,7 +34,7 @@ ms.locfileid: "74300865"
 
      Появится диалоговое окно для создания ресурса. Это диалоговое окно появляется при создании ресурса на основе кисти:
 
-     ![Create Resource Dialog Box](../designers/media/xaml-create-resource.png "xaml_create_resource")
+     ![Диалоговое окно «Создание ресурса»](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
 3. В поле **Имя (ключ)** введите имя ключа. Это имя используется при ссылке других элементов на ресурс.
 
@@ -75,5 +75,5 @@ ms.locfileid: "74300865"
 
 3. Измените параметры ресурса.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

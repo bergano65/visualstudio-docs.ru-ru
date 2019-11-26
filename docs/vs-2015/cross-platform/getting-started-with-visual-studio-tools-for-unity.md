@@ -24,7 +24,7 @@ ms.locfileid: "74299825"
 > [!IMPORTANT]
 > В Unity 5.2 добавлена встроенная поддержка инструментов Visual Studio для Unity 2.1, что упрощает настройку проекта. Для использования этой возможности потребуется Unity 5.2.0 или более поздней версии в Windows и инструменты Visual Studio для Unity 2.1 или более поздней версии.  
   
-## <a name="prerequisites"></a>Необходимые компоненты  
+## <a name="prerequisites"></a>Prerequisites  
  Для использования средств Visual Studio для Unity вам потребуется следующее:  
   
 - версия **Visual Studio** , поддерживающая расширение, например Visual Studio Community, Professional, Premium или Enterprise (скачать Visual Studio Community можно бесплатно);  
@@ -68,7 +68,7 @@ ms.locfileid: "74299825"
   
  В противном случае, если у вас нет опыта работы с Unity, ознакомьтесь с базовым учебным пособием. На странице "Изучение Unity" найдите учебники с примерами проектов, с которых вы можете начать, а также с уроками, которые позволят вам создать собственную игру с помощью Unity. На данной странице имеются удобные учебники для нескольких различных игр.  
   
- [Учебники – страница "Изучение Unity"](https://learn.unity.com/tutorials)  
+ [Учебники — страница "Изучение Unity"](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2\. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
  Чтобы в проекте можно было использовать инструменты Visual Studio для Unity, просто задайте Visual Studio в качестве внешнего редактора скриптов. В редакторе Unity в главном меню выберите пункт **Edit &gt; Preferences**(Правка &gt; Настройки), а затем в диалоговом окне **Unity Preferences** (Настройки Unity) выберите **External Tools**(Внешние средства). Далее укажите в качестве значения свойства **External Script Editor** (Внешний редактор скриптов) версию Visual Studio, которую нужно использовать (для этой версии Visual Studio должны быть установлены инструменты Visual Studio для Unity), и убедитесь в том, что задано свойство **Editor Attaching** (Присоединение редактора).  
@@ -77,7 +77,7 @@ ms.locfileid: "74299825"
   
  Наконец, убедитесь в том, что вы установили целевой объект сборки на странице **Build Settings** (Параметры сборки) и что функция **Script Debugging** (Отладка скриптов) включена.  
   
- ![Configure the Unity build settings for debugging.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Настройка параметров сборки Unity для отладки.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3\. Запуск Visual Studio из редактора Unity  
  Начиная с версии Unity 5.2 меню расширения **Инструменты Visual Studio** больше не требуется для запуска Visual Studio или настройки инструментов Visual Studio для Unity. Вместо этого после настройки Visual Studio в качестве внешнего редактора скриптов просто выберите файл скрипта в редакторе Unity, и ваш код откроется в Visual Studio.  
@@ -90,26 +90,26 @@ ms.locfileid: "74299825"
   
  В противном случае, если у вас нет опыта работы с Unity, ознакомьтесь с базовым учебным пособием. На странице "Изучение Unity" найдите учебники с примерами проектов, с которых вы можете начать, а также с уроками, которые позволят вам создать собственную игру с помощью Unity. На данной странице имеются удобные учебники для нескольких различных игр.  
   
- [Учебники – страница "Изучение Unity"](https://learn.unity.com/tutorials)  
+ [Учебники — страница "Изучение Unity"](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2\. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
  Если вы используете существующий проект Unity или не импортировали пакет unitypackage инструментов Visual Studio на этапе создания проекта, необходимо импортировать этот пакет. В редакторе Unity в главном меню выберите **Assets &gt; Import Package &gt; Visual Studio 2015 Tools** (Ресурсы &gt; Импорт пакета &gt; Набор средств Visual Studio 2015) (вы увидите вариант для версии Visual Studio, которую вы установили).  
   
- ![Import the VSTU package into your Unity project.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
+ ![Импортируйте пакет VSTU в проект Unity.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
   
  Наконец, убедитесь в том, что вы установили целевой объект сборки на странице **Build Settings** (Параметры сборки) и что функция **Script Debugging** (Отладка скриптов) включена.  
   
- ![Configure the Unity build settings for debugging.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Настройка параметров сборки Unity для отладки.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3\. Запуск Visual Studio из редактора Unity  
  Теперь необходимо запустить Visual Studio из Unity. При этом создается решение Visual Studio для вашего проекта, которое открывается в Visual Studio.  
   
  В редакторе Unity в главном меню выберите **"Средства Visual Studio", "Открыть в Visual Studio"** .  
   
- ![Open your unity project in Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
+ ![Откройте проект Unity в Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Информацию о работе с проектом Unity и его отладке в Visual Studio см. в разделе [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Главная страница Unity](https://unity.com/)

@@ -30,7 +30,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300163"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>How to: Add or Remove References By Using the Reference Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Диалоговое окно **Диспетчер ссылок** позволяет добавлять ссылки на компоненты, которые разработали вы, корпорация Майкрософт или другая организация, а также управлять этими ссылками. При разработке универсального приложения Windows ваш проект автоматически ссылается на все правильные библиотеки DLL пакета SDK Windows. При разработке приложения .NET ваш проект автоматически ссылается на mscorlib.dll. Некоторые API .NET представлены в компонентах, которые необходимо добавить вручную. Ссылки на компоненты COM или пользовательские компоненты необходимо добавить вручную.
@@ -131,7 +131,7 @@ ms.locfileid: "74300163"
 
     Создание ключа реестра в узле HKEY_LOCAL_MACHINE позволяет всем пользователям видеть сборки в указанном расположении в диалоговом окне **Добавить ссылку**. Создание ключа реестра в узле HKEY_CURRENT_USER влияет только на настройки для текущего пользователя.
 
-    Снова откройте диалоговое окно **Добавление ссылки**. The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
+    Снова откройте диалоговое окно **Добавление ссылки**. Сборки должны отображаться на вкладке **.NET** . Если это не так, убедитесь, что сборки находятся в указанном каталоге *AssemblyLocation* , перезапустите Visual Studio и повторите попытку.
 
 ## <a name="com-tab"></a>Вкладка COM
  Вкладка COM содержит список всех COM-компонентов, ссылки на которые можно добавить. Если необходимо добавить ссылку на зарегистрированную DLL-библиотеку COM, содержащую внутренний манифест, сначала необходимо отменить регистрацию DLL-библиотеки. В противном случае среда разработки Visual Studio добавить ссылку как элемент управления ActiveX, а не как библиотеку DLL с машинным кодом.
@@ -215,5 +215,5 @@ ms.locfileid: "74300163"
 ## <a name="search"></a>Поиск
  Панель поиска в диалоговом окне **Диспетчер ссылок** работает с текущей активной вкладкой. Например, если пользователь вводит в области поиска запрос "System", когда открыта вкладка **Решение**, поиск не вернет результаты, если решение не содержит проекта, в имени которого есть слово "System".
 
-## <a name="see-also"></a>См. также раздел
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)
+## <a name="see-also"></a>См. также
+ [NIB. как добавить или удалить ссылки с помощью диалогового окна "Добавление ссылки"](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)

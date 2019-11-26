@@ -1,5 +1,5 @@
 ---
-title: Anatomy of a VSIX Package | Microsoft Docs
+title: Анатомия пакета VSIX | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,41 +22,41 @@ ms.locfileid: "74295642"
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A VSIX package is a .vsix file that contains one or more Visual Studio extensions, together with the metadata Visual Studio uses to classify and install the extensions. That metadata is contained in the VSIX manifest and the [Content_Types].xml file. A VSIX package may also contain one or more Extension.vsixlangpack files to provide localized setup text, and may contain additional VSIX packages to install dependencies.  
+Пакет VSIX — это VSIX-файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными, которые Visual Studio использует для классификации и установки расширений. Эти метаданные содержатся в манифесте VSIX и файле [Content_Types]. XML. Пакет VSIX может также содержать один или несколько файлов extension. всикслангпакк для предоставления локализованного текста программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.  
   
- The VSIX package format follows the Open Packaging Conventions (OPC) standard. The package contains binaries and supporting files, together with a [Content_Types].xml file and a .vsix manifest file. One VSIX package may contain the output of multiple projects, or even multiple packages that have their own manifests.  
+ Формат пакета VSIX соответствует стандартам Open Packaging Conventions (OPC). Этот пакет содержит двоичные файлы и вспомогательный файл вместе с файлом [Content_Types]. XML и файлом манифеста VSIX. Один пакет VSIX может содержать выходные данные нескольких проектов или даже несколько пакетов с собственными манифестами.  
   
 > [!NOTE]
-> The names of the files included in VSIX packages must not include spaces, nor characters that are reserved in Uniform Resource Identifiers (URI), as defined under [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
+> Имена файлов, включенных в пакеты VSIX, не должны содержать пробелы или символы, зарезервированные в универсальных идентификаторах ресурсов (URI), как определено в разделе [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
-## <a name="the-vsix-manifest"></a>The VSIX Manifest  
- The VSIX manifest contains information about the extension to be installed, and follows the VSX Schema. For more information, see [VSIX Extension Schema 1.0 Reference](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). For an example VSIX manifest, see [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+## <a name="the-vsix-manifest"></a>Манифест VSIX  
+ Манифест VSIX содержит сведения о устанавливаемом расширении и соответствует схеме VSX. Дополнительные сведения см. в разделе [Справочник по схеме расширений VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Пример манифеста VSIX см. в разделе [элемент PackageManifest (корневой элемент, Схема VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
- The VSIX manifest must be named `extension.vsixmanifest` when it is included in a .vsix file.  
+ Манифест VSIX должен иметь имя `extension.vsixmanifest`, если он включен в VSIX-файл.  
   
-## <a name="the-content"></a>The Content  
- A VSIX package may contain templates, toolbox items, VSPackages, or any other kind of extension that is supported by Visual Studio.  
+## <a name="the-content"></a>Содержимое  
+ Пакет VSIX может содержать шаблоны, элементы панели элементов, пакеты VSPackage или любые другие расширения, поддерживаемые Visual Studio.  
   
 ## <a name="language-packs"></a>Языковые пакеты  
- A VSIX package may contain once or more Extension.vsixlangpack files to provide localized text during installation. For more information, see [Localizing VSIX Packages](../extensibility/localizing-vsix-packages.md).  
+ Пакет VSIX может содержать один или несколько файлов extension. всикслангпакк для предоставления локализованного текста во время установки. Дополнительные сведения см. в разделе [Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md).  
   
-## <a name="dependencies-and-references"></a>Dependencies and References  
- A VSIX package may contain other VSIX packages as references. Each of these other packages must include its own VSIX manifest.  
+## <a name="dependencies-and-references"></a>Зависимости и ссылки  
+ Пакет VSIX может содержать другие пакеты VSIX в качестве ссылок. Каждый из этих пакетов должен содержать собственный манифест VSIX.  
   
- If a user tries to install an extension that has dependencies, the installer verifies that the required assemblies are installed on the user system. If the required assemblies are not found, **Extensions and Updates** displays a list of the missing assemblies.  
+ Если пользователь пытается установить расширение с зависимостями, установщик проверяет, установлены ли необходимые сборки в системе пользователя. Если требуемые сборки не найдены, то **расширения и обновления** отображают список отсутствующих сборок.  
   
- If the extension manifest includes one or more [Reference](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) elements, **Extensions and Updates** compares the manifest of each reference to the extensions that are installed on the system, and installs the referenced extension if it is not already installed. If an earlier version of a referenced extension is installed, the newer version replaces it.  
+ Если манифест расширения содержит один или несколько [ссылочных](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) элементов, **расширения и обновления** сравнивают манифест каждой ссылки с расширениями, установленными в системе, и устанавливает расширение, на которое указывает ссылка, если оно еще не установлено. Если установлена более ранняя версия расширения, на которую указывает ссылка, более новая версия заменяет ее.  
   
- If a project in a multi-project solution includes a reference to another project in the same solution, the VSIX package includes the dependencies of that project. You can override this behavior by clicking the reference for the internal project, and then, in the **Properties** window, setting the **Output Groups Included in VSIX** property to `BuiltProjectOutputGroup`.  
+ Если проект в решении с несколькими проектами содержит ссылку на другой проект в том же решении, пакет VSIX включает в себя зависимости этого проекта. Это поведение можно переопределить, щелкнув ссылку на внутренний проект, а затем в окне **Свойства** задать для **выходных групп, включенных в свойство VSIX** , значение `BuiltProjectOutputGroup`.  
   
- To include satellite DLLs from referenced assemblies in the VSIX package, add `SatelliteDllsProjectOutputGroup` to the **Output Groups Included in VSIX** property.  
+ Чтобы включить вспомогательные библиотеки DLL из сборок, на которые имеются ссылки в пакете VSIX, добавьте `SatelliteDllsProjectOutputGroup` в **выходные группы, включенные в свойство VSIX** .  
   
 ## <a name="installation-location"></a>Расположение установки  
- During installation, **Extensions and Updates** looks for the contents of the VSIX package in a folder under %LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
+ Во время установки **расширения и обновления** просматривают содержимое пакета VSIX в папке в разделе%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- By default, the installation applies only to the current user, because %LocalAppData% is a user-specific directory. However, if you set the [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) element of the manifest to `True`, the extension will be installed under ..\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions and will be available to all users of the computer.  
+ По умолчанию установка применяется только к текущему пользователю, так как% LocalAppData% является каталогом конкретного пользователя. Однако если задать для элемента [ALLUSERS](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) манифеста значение `True`, то расширение будет установлено в..\\*висуалстудиоинсталлатионфолдер*\Common7\IDE\Extensions и будут доступны всем пользователям компьютера.  
   
-## <a name="content_typesxml"></a>[Content_Types].xml  
- The [Content_Types].xml file identifies the file types in the expanded .vsix file. Visual Studio uses this file during installation of the package but does not install the file itself. For more information about this file, see [The Structure of the Content_types\].xml File](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+## <a name="content_typesxml"></a>[Content_Types]. XML  
+ Файл [Content_Types]. XML определяет типы файлов в развернутом VSIX-файле. Visual Studio использует этот файл во время установки пакета, но не устанавливает сам файл. Дополнительные сведения об этом файле см. в описании [структуры файла Content_types\]. XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- A [Content_Types].xml file is required by the Open Packaging Conventions (OPC) standard. For more information about OPC, see [OPC: A New Standard For Packaging Your Data](https://go.microsoft.com/fwlink/?LinkID=148207) on the MSDN Web site.
+ Для стандарта Open Packaging Conventions (OPC) требуется файл [Content_Types]. XML. Дополнительные сведения о OPC см. в статье [OPC: новый стандарт для упаковки данных](https://go.microsoft.com/fwlink/?LinkID=148207) на веб-сайте MSDN.

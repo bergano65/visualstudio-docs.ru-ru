@@ -1,5 +1,5 @@
 ---
-title: Upgrading Coded UI Tests
+title: Обновление закодированных тестов пользовательского интерфейса
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -39,7 +39,7 @@ ms.locfileid: "74298004"
 > [!CAUTION]
 > Известна проблема с ссылками в проектах закодированных тестов пользовательского интерфейса, которые не появляются в обозревателе решений. Дополнительные сведения см. в файле сведений, который включен в установочный носитель [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .
 
-|Функции закодированного пользовательского интерфейса|Проблемы|Решение|
+|Функции закодированного пользовательского интерфейса|Проблема|Решение|
 |----------------------------|-----------|--------------|
 |Тестирование пользовательского интерфейса Silverlight в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]не поддерживается|**Сборка завершится ошибкой**<br /><br /> Если у вас имеется пакет 2 дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и вы создали проекты закодированных тестов пользовательского интерфейса для приложений Silverlight, то эти проекты не получится открыть в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Рекомендуется управлять этими проектами только в пакете дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2.|
 |Тестирование пользовательского интерфейса Firefox в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]не поддерживается|**Сборка будет выполнена успешно, тестовый запуск завершится ошибкой**<br /><br /> Если у вас имеется пакет 2 дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и вы создали проекты закодированных тестов пользовательского интерфейса для веб-приложений в Firefox, то эти проекты не получится открыть в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Рекомендуется управлять этими проектами только в пакете дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2.|
@@ -63,5 +63,5 @@ ms.locfileid: "74298004"
 
 - **Нагрузочное тестирование:** при выполнении нагрузочного теста вместе с типом сети, отличным от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](https://support.microsoft.com/help/2736182/a-gdr-update-for-visual-studio-2010-sp1-is-available-to-add-compatibil).
 
-## <a name="see-also"></a>См. также раздел
- [Porting, Migrating, and Upgrading Visual Studio Projects](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Upgrading Tests from Earlier Versions of Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Generating a Coded UI Test from an Existing Action Recording](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>См. также
+ [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Обновление тестов из предыдущих версий Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [, создающего закодированный тест пользовательского интерфейса на основе существующей записи действий](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

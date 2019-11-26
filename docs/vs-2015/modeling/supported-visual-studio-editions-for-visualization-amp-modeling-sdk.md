@@ -1,5 +1,5 @@
 ---
-title: Supported Visual Studio Editions for Visualization and Modeling SDK | Microsoft Docs
+title: Поддерживаемые выпуски Visual Studio для визуализации и моделирования SDK | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -18,10 +18,10 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74298154"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Supported Visual Studio Editions for Visualization &amp; Modeling SDK
+# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Поддерживаемые выпуски Visual Studio для визуализации SDK &amp; моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The following are lists of the Visual Studio editions that are supported with [!INCLUDE[dsl](../includes/dsl-md.md)] in the authoring and deployment environments. For more information on these editions, see the Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Developer Center](https://go.microsoft.com/fwlink/?LinkId=75628).
+Ниже перечислены выпуски Visual Studio, которые поддерживаются [!INCLUDE[dsl](../includes/dsl-md.md)] в средах разработки и развертывания. Дополнительные сведения об этих выпусках см. в [центре разработчиков](https://go.microsoft.com/fwlink/?LinkId=75628)[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Майкрософт.
 
 ## <a name="authoring-edition"></a>Разработка версии
  Для определения доменного языка необходимо установить следующие компоненты.
@@ -33,18 +33,18 @@ The following are lists of the Visual Studio editions that are supported with [!
 |Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
 ## <a name="deployment-editions"></a>Развертывание выпусков
- [!INCLUDE[dsl](../includes/dsl-md.md)] supports the following configurations for deploying the domain-specific languages that you build:
+ [!INCLUDE[dsl](../includes/dsl-md.md)] поддерживает следующие конфигурации для развертывания создаваемых доменных языков.
 
 - Visual Studio Enterprise
 
 - Visual Studio Professional
 
-- Visual Studio Shell (integrated mode) redistributable package redistributable package
+- Распространяемый пакет распространяемого пакета Visual Studio Shell (интегрированный режим)
 
 - Оболочка Visual Studio Shell (изолированный режим), распространяемый пакет.
 
 > [!NOTE]
-> To make a DSL able to run on a Shell product, you must set the **Supported VS Edition** field in the Extension Manifest. Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).
+> Чтобы обеспечить возможность запуска DSL в продукте оболочки, необходимо задать поле **Supported VS Edition** в манифесте расширения. Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

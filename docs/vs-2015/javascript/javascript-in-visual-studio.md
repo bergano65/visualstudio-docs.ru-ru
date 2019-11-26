@@ -41,11 +41,11 @@ JavaScript — полноправный язык в Visual Studio. При нап
 ## <a name="whats-new-in-javascript"></a>Новые возможности JavaScript
  Новые функции для JavaScript перечислены в следующей таблице.
 
-|Возможность|Описание|
+|Возможности|Описание|
 |-------------|-----------------|
 |Классы|Новый синтаксис поддерживает объявление [классов](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Обещания|[Обещания](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) упрощают создание асинхронного и более чистого кода. Конструкторы обещаний поддерживаются вместе со служебными методами `all` и `race`.|
-|Iterators|Теперь можно выполнить итерацию поддерживающих итерацию объектов (включая массивы, объекты, похожие на массивы, и итераторы), вызывая пользовательский обработчик итераций с операторами, которые должны быть исполнены для значения каждого свойства по отдельности. См. дополнительные сведения см. об [итераторах и генераторах](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Примечание.** Генераторы пока не поддерживаются.|
+|Итераторы|Теперь можно выполнить итерацию поддерживающих итерацию объектов (включая массивы, объекты, похожие на массивы, и итераторы), вызывая пользовательский обработчик итераций с операторами, которые должны быть исполнены для значения каждого свойства по отдельности. См. дополнительные сведения см. об [итераторах и генераторах](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Примечание.** Генераторы пока не поддерживаются.|
 |Функции со стрелкой|Функция со стрелкой (=>) предоставляет сокращенный синтаксис для ключевого слова `function` с лексической привязкой `this`.|
 |Новые методы для встроенных объектов|Встроенные объекты [Array Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) и [String Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) предоставляют множество новых служебных функций и свойств для обработки и инспектирования данных.|
 |Усовершенствования объектного литерала|Объекты теперь поддерживают вычисляемые свойства, точные определения методов и сокращенный синтаксис для свойств, значения которых инициализируются в переменную с таким же именем. См. дополнительные сведения о [создании объектов](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

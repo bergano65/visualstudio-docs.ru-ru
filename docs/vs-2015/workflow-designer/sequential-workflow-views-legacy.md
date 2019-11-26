@@ -1,5 +1,5 @@
 ---
-title: Sequential Workflow Views (Legacy) | Microsoft Docs
+title: Представления последовательных рабочих процессов (прежние версии) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -20,21 +20,21 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74292355"
 ---
 # <a name="sequential-workflow-views-legacy"></a>Представления последовательных рабочих процессов (для прежних версий)
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] предоставляет средство [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, которое можно использовать для приложений, работающих с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] предоставляет устаревшие [!INCLUDE[wfd1](../includes/wfd1-md.md)], которые можно использовать для нацеливания на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- [!INCLUDE[wfd2](../includes/wfd2-md.md)] предоставляет способ создания с помощью графических средств приложений [!INCLUDE[wf](../includes/wf-md.md)] с использованием знакомого пользовательского интерфейса [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Приложения [!INCLUDE[wf](../includes/wf-md.md)] состоят из этапов рабочего процесса, называемых действиями. To create a workflow, compose activities on the design surface by dragging their respective activity designers from **Toolbox** onto the design surface.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)] предоставляет способ создания с помощью графических средств приложений [!INCLUDE[wf](../includes/wf-md.md)] с использованием знакомого пользовательского интерфейса [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Приложения [!INCLUDE[wf](../includes/wf-md.md)] состоят из этапов рабочего процесса, называемых действиями. Чтобы создать рабочий процесс, создайте действия в области конструктора, перетащив соответствующие конструкторы действий из **области элементов** в область конструктора.
 
- When you create a sequential workflow, which is a [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040), three views of the workflow are available. These views are accessible from the **Workflow** menu and from the context menu on the design surface.
+ При создании последовательного рабочего процесса, который является [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040), доступны три представления рабочего процесса. Эти представления доступны из меню **Рабочий процесс** и из контекстного меню в области конструктора.
 
  В следующей таблице перечислены имена и описание каждого представления.
 
 |Параметры меню/вкладок|Описание|
 |----------------------|-----------------|
-|**View SequentialWorkflow**|Right-click the design surface and select the **View SequentialWorkflow** option from the context menu to display the **Sequential Workflow** view, which shows the activity-based graphical representation of the sequential workflow. Or select **View SequentialWorkflow** from the **Workflow** menu.|
-|**View Cancel Handler**|Right-click the design surface and select the **View Cancel Handler** option from the context menu to display the **Sequential Workflow** view, which shows the [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) activity associated with the workflow. Or select **View Cancel Handler** from the **Workflow** menu.|
-|**View Fault Handler**|Right-click the design surface and select the **View Fault Handler** option from the context menu to display the **Faults** view, which shows the [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) activity associated with the workflow. Or select **View Fault Handler** from the **Workflow** menu.|
+|**Просмотреть SequentialWorkflow**|Щелкните правой кнопкой мыши область конструктора и выберите в контекстном меню пункт **Просмотреть SequentialWorkflow** , чтобы отобразить представление **последовательного рабочего процесса** , которое показывает графическое представление последовательного рабочего процесса на основе действий. Или выберите **Просмотреть SequentialWorkflow** в меню **Рабочий процесс** .|
+|**Просмотр обработчика отмены**|Щелкните правой кнопкой мыши область конструктора и выберите в контекстном меню пункт **Просмотреть обработчик отмены** , чтобы отобразить представление **последовательного рабочего процесса** , в котором отображается действие [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) , связанное с рабочим процессом. Или выберите **Просмотреть обработчик отмены** в меню **Рабочий процесс** .|
+|**Просмотр обработчика ошибок**|Щелкните правой кнопкой мыши область конструктора и выберите в контекстном меню пункт **Просмотреть обработчик ошибок** , чтобы отобразить представление **ошибок** , в котором отображается действие [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) , связанное с рабочим процессом. Или выберите пункт **Просмотреть обработчик ошибок** в меню **Рабочий процесс** .|
 
- For more information about similar views, see [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md).
+ Дополнительные сведения о схожих представлениях см. в разделе [представления действий (прежние версии)](../workflow-designer/activity-views-legacy.md).
 
-## <a name="see-also"></a>См. также раздел
- [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md) [Creating Legacy Workflow Projects](../workflow-designer/creating-legacy-workflow-projects.md) [Workflow Authoring Modes](https://go.microsoft.com/fwlink?LinkID=65014)
+## <a name="see-also"></a>См. также
+ [Представления действий (прежние версии)](../workflow-designer/activity-views-legacy.md) [Создание устаревших проектов рабочих](../workflow-designer/creating-legacy-workflow-projects.md) процессов. [режимы разработки рабочих процессов](https://go.microsoft.com/fwlink?LinkID=65014)

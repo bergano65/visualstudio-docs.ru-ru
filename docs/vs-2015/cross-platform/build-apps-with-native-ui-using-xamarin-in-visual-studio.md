@@ -1,5 +1,5 @@
 ---
-title: Build apps with native UI using Xamarin
+title: Создание приложений с помощью собственного пользовательского интерфейса с использованием Xamarin
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -20,7 +20,7 @@ ms.locfileid: "74297918"
 
 Выполнив действия, описанные в разделах [Установка и настройка](../cross-platform/setup-and-install.md) и [Проверка среды Xamarin](../cross-platform/verify-your-xamarin-environment.md), вы можете перейти к этому пошаговому руководству, в котором будет описано, как создать базовое приложение Xamarin (показано ниже) с собственным пользовательским интерфейсом. При использовании собственного пользовательского интерфейса общий код находится в переносимой библиотеке классов (PCL), а проекты для отдельных платформ содержат определения пользовательского интерфейса.
 
- ![Xamarin app on Android and Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")
+ ![Приложение Xamarin на Android и Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Кросс-Plat Xamarin Build 1")
 
  Вам предстоит выполнить следующие действия.
 
@@ -32,7 +32,7 @@ ms.locfileid: "74297918"
 
 - [Разработка пользовательского интерфейса для приложения Windows Phone](#Windows)
 
-- [Следующие шаги](#next)
+- [Дальнейшие действия](#next)
 
 > [!TIP]
 > Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -87,7 +87,7 @@ ms.locfileid: "74297918"
 
    - Нажмите кнопку **Установить**.
 
-   - ![Locating and installing the Newtonsoft.Json NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![Поиск и установка пакета NuGet Newtonsoft. JSON](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 4. Повторите шаг 3 для поиска и установки пакета **Microsoft.Net.Http**.
 
@@ -100,7 +100,7 @@ ms.locfileid: "74297918"
 
 1. Чтобы запустить этот пример, зарегистрируйтесь на сайте [http://openweathermap.org/appid](https://openweathermap.org/appid) для получения бесплатного ключа API.
 
-2. Щелкните проект **WeatherApp** правой кнопкой мыши и выберите **Добавить > Класс…** . В диалоговом окне **Добавление нового элемента** дайте файлу имя **Weather.cs**. Этот класс будет использован для хранения данных службы погоды.
+2. Щелкните проект **WeatherApp** правой кнопкой мыши и выберите пункт **"Добавить" > "Класс…"** . В диалоговом окне **Добавление нового элемента** дайте файлу имя **Weather.cs**. Этот класс будет использован для хранения данных службы погоды.
 
 3. Замените все содержимое файла **Weather.cs** следующим кодом:
 
@@ -247,7 +247,7 @@ ms.locfileid: "74297918"
 
 7. Установите эти свойства в окне **Свойства** (примечание: для удобства можно отсортировать список в алфавитном порядке с помощью сортировки кнопки на панели инструментов окна "Свойства"):
 
-    |свойство;|значения|
+    |Свойство|значения|
     |--------------|-----------|
     |**текст**|**Search by Zip Code**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -279,7 +279,7 @@ ms.locfileid: "74297918"
 
 9. В окне **Свойства** задайте следующие свойства.
 
-    |свойство;|значения|
+    |Свойство|значения|
     |--------------|-----------|
     |**текст**|**Почтовый индекс**|
     |**id**|`@+id/ZipCodeLabel`|
@@ -301,7 +301,7 @@ ms.locfileid: "74297918"
 
 10. Перетащите элемент управления **Number** c **панели элементов** на элемент управления **RelativeLayout** и разместите его под меткой **Zip Code**. Затем установите следующие свойства:
 
-    |свойство;|значения|
+    |Свойство|значения|
     |--------------|-----------|
     |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -324,7 +324,7 @@ ms.locfileid: "74297918"
 
 11. Перетащите элемент управления **Button** c **панели элементов** на элемент управления **RelativeLayout** и разместите его справа от элемента управления zipCodeEntry. Затем установите следующие свойства:
 
-    |свойство;|значения|
+    |Свойство|значения|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**текст**|**Get Weather**|
@@ -450,7 +450,7 @@ ms.locfileid: "74297918"
 
 13. Сохраните файл и переключитесь в представление **Макет**. Пользовательский интерфейс будет выглядеть следующим образом:
 
-     ![UI for Android app](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![Пользовательский интерфейс для приложения Android](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
 14. Откройте файл **MainActivity.cs** и удалите строки в методе *OnCreate*, которые ссылаются на кнопку по умолчанию, которая была удалена ранее. Готовый код должен выглядеть следующим образом:
 
@@ -520,7 +520,7 @@ ms.locfileid: "74297918"
 
 3. На устройстве или в эмуляторе введите действительный почтовый индекс США в поле ввода (например, 60601), а затем нажмите кнопку **Узнать погоду**. В элементах управления появятся данные о погоде в этом регионе.
 
-     ![Weather app for Android and Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
+     ![Приложение Weather для Android и Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 > Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -579,13 +579,13 @@ ms.locfileid: "74297918"
 
  В представлении конструктора пользовательский интерфейс должен выглядеть следующим образом:
 
- ![Windows Phone app UI](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
+ ![Пользовательский интерфейс приложения Windows Phone](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
 
 ### <a name="consume-your-shared-code"></a>Использование общего кода
 
 1. В конструкторе нажмите кнопку **Узнать погоду** .
 
-2. In the **Properties** window, choose the event handler button (![Visual Studio Event Handlers icon](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
+2. В окне **Свойства** нажмите кнопку обработчика событий (значок обработчиков![событий Visual Studio](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
 
      Этот значок появится в верхнем углу окна **Свойства** .
 
@@ -626,12 +626,12 @@ ms.locfileid: "74297918"
 
 3. В эмуляторе Windows Phone введите действительный почтовый индекс США в поле ввода (например, 60601), а затем нажмите кнопку **Узнать погоду**. В элементах управления появятся данные о погоде в этом регионе.
 
-     ![Windows version of the running app](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
+     ![Версия работающего приложения для Windows](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 > Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-## <a name="next"></a> Следующие шаги
+## <a name="next"></a> Дальнейшие действия
  **Добавление пользовательского интерфейса для iOS в решение**
 
  Расширьте этот пример, добавив собственный пользовательский интерфейс для iOS. Для этого необходимо подключиться к компьютеру Mac в локальной сети, на котором установлены Xcode и Xamarin. После этого можно использовать конструктор iOS непосредственно в Visual Studio. Законченное приложение можно найти [в репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -642,5 +642,5 @@ ms.locfileid: "74297918"
 
  Общий код в переносимой библиотеке классов не зависит от платформы, так как эта библиотека компилируется один раз и включается в пакеты приложений для каждой платформы. Если вы хотите писать общий код, который использует условную компиляцию для изоляции кода для конкретных платформ, можете воспользоваться *общим* проектом. Дополнительные сведения см. в разделе [Варианты совместного использования кода](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
 
-## <a name="see-also"></a>См. также раздел
- [Xamarin Developer site](https://docs.microsoft.com/xamarin/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift and C# Quick Reference Poster](https://aka.ms/scposter)
+## <a name="see-also"></a>См. также
+ [Веб-узел разработчика Xamarin](https://docs.microsoft.com/xamarin/) для [Windows Dev Center](https://dev.windows.com/en-us) [SWIFT и C# краткий справочник](https://aka.ms/scposter)

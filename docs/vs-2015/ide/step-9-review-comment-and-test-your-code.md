@@ -43,9 +43,9 @@ ms.locfileid: "74299960"
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Операторы это то, что указывает программам выполнять действия. В Visual C# оператор всегда заканчивается точкой с запятой. В Visual Basic конец строки это конец оператора. (No semicolon is needed in Visual Basic.) The preceding statement tells your `PictureBox` control to load the file that the user selected with the **OpenFileDialog** component.
+   Операторы это то, что указывает программам выполнять действия. В Visual C# оператор всегда заканчивается точкой с запятой. В Visual Basic конец строки это конец оператора. (В Visual Basic не требуется точка с запятой.) Приведенная выше инструкция указывает элементу управления `PictureBox` загрузить файл, выбранный пользователем с компонентом **OpenFileDialog** .
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 5](https://go.microsoft.com/fwlink/?LinkId=205206). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-add-comments"></a>Добавление комментариев
 
@@ -66,13 +66,13 @@ ms.locfileid: "74299960"
 
 2. Перед выполнением программы сохраните программу, нажав на панели инструментов показанную ниже кнопку **Сохранить все**.
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All button
+     ![Кнопка "сохранить все" на панели инструментов](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Кнопка "сохранить все"
 
      Кроме того, чтобы сохранить программу, в строке меню выберите **Файл**, **Сохранить все**. Рекомендуется выполнять сохранение от начала разработки и как можно чаще.
 
      При выполнении программа должна выглядеть, как показано на рисунке ниже.
 
-     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Picture Viewer
+     ![Средство просмотра изображений](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Средство просмотра изображений
 
 ### <a name="to-test-your-program"></a>Проверка программы
 

@@ -1,5 +1,5 @@
 ---
-title: Deploying Applications, Services, and Components | Microsoft Docs
+title: Развертывание приложений, служб и компонентов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -36,22 +36,22 @@ ms.locfileid: "74289810"
   
  В следующей таблице приведены описания различных сценариев развертывания и даны ссылки на более подробные сведения о реализации этих сценариев.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
 |Сценарий развертывания|Справочные материалы|  
 |-------------------------|------------------------|  
-|**Publish to the cloud:** You can make applications, services, and data available from anywhere by using Visual Studio to deploy them to Microsoft Azure.|[Publishing Applications to Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Publish a Windows Store app:** You can easily build, submit, and sell your apps from the Windows Store to customers around the world.|[Packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**Publish a Windows Phone app:** You can submit a new app or an update to an existing app for certification on the Windows Phone Dev Center.|[Publish a Windows Phone App](https://developer.microsoft.com/)|  
-|**Deploy an ASP.NET application or service:** You can deploy ASP.NET applications and services in a number of different ways.|[Deploying ASP.NET web applications and services](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
-|**Deploy a LightSwitch application or service:** After you create applications and OData services by using LightSwitch, you can deploy them to a web server or to Microsoft Azure.|[Развертывание приложений LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
-|**Publish an app for SharePoint:** You can publish an app for SharePoint to the Office Store or to an app catalog for an internal organization.|[Publish an app for SharePoint by using Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Publish an app for Office:** You can publish an app for Office to the Office Store or to an app catalog for an internal organization.|[Publishing your app for Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**Deploy a WCF service:** Other applications can use WCF RIA services that you deploy to a web server.|[Deploying WCF RIA Services Solutions](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**Deploy an OData service:** Other applications can use OData services that you deploy to a web server.|[Deploy an OData Service](https://msdn.microsoft.com/library/hh973447.aspx)|  
-|**Deploy a desktop application:** By using ClickOnce deployment, you can publish a desktop application to a web server or a network file share. Затем пользователи смогут устанавливать приложение одним щелчком.|[Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
-|**Create a setup program:** You can create a setup program by using InstallShield Limited Edition, which is free.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**Maintain an existing setup program:** Continue using a setup program created in an earlier version of Visual Studio by installing the Visual Studio Installer Projects Extension.|[Visual Studio Installer Projects Extension](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> Documentation for installer projects is available here: [Visual Studio Installer Deployment](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Deploy a Visual C++ application:** You can deploy the Visual C++ runtime with an application by using central deployment, local deployment, or static linking.|[Развертывание классических приложений неуправляемого кода (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
-|**Deploy an application for testing:** You can enable more sophisticated development and testing by deploying your applications into virtual environments.|[Тестирование в лабораторной среде](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**Install prerequisites:** You can install prerequisite components for desktop applications by configuring a generic installer, which is known as a bootstrapper.|[Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)|
+|**Публикация в облаке:** Вы можете предоставить доступ к приложениям, службам и данным из любого места с помощью Visual Studio, развернув их в Microsoft Azure.|[Публикация приложений в Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
+|**Публикация приложения для Магазина Windows:** Вы можете легко создавать, отправлять и продавать приложения из Магазина Windows клиентам по всему миру.|[Упаковка, развертывание и запрос приложений Магазина Windows](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Публикация Windows Phone приложения:** Вы можете отправить новое приложение или обновление в существующее приложение для сертификации в центре разработки Windows Phone.|[Публикация приложения Windows Phone](https://developer.microsoft.com/)|  
+|**Развертывание приложения или службы ASP.NET:** Приложения и службы ASP.NET можно развертывать различными способами.|[Развертывание веб-приложений и служб ASP.NET](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Развертывание приложения или службы LightSwitch:** После создания приложений и служб OData с помощью LightSwitch их можно развернуть на веб-сервере или Microsoft Azure.|[Развертывание приложений LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
+|**Публикация приложения для SharePoint:** Приложение для SharePoint можно опубликовать в магазине Office или в каталоге приложений для внутренней организации.|[Публикация приложения для SharePoint с помощью Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
+|**Публикация приложения для Office:** Вы можете опубликовать приложение для Office в магазине Office или в каталоге приложений для внутренней организации.|[Публикация приложения для Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
+|**Развертывание службы WCF:** Другие приложения могут использовать службы RIA WCF, развертываемые на веб-сервере.|[Развертывание решений служб RIA WCF](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
+|**Развертывание службы OData.** Другие приложения могут использовать службы OData, развертываемые на веб-сервере.|[Развертывание службы OData](https://msdn.microsoft.com/library/hh973447.aspx)|  
+|**Развертывание классического приложения:** С помощью развертывания ClickOnce можно опубликовать настольное приложение на веб-сервере или в общей сетевой папке. Затем пользователи смогут устанавливать приложение одним щелчком.|[Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
+|**Создайте программу установки:** Программу установки можно создать с помощью InstallShield Limited Edition, который предоставляется бесплатно.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
+|**Обслуживание существующей программы установки:** Продолжайте использовать программу установки, созданную в более ранней версии Visual Studio, путем установки расширения проектов Visual Studio Installer.|[Расширение проектов Visual Studio Installer](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> Документация по проектам установщика доступна здесь: [Visual Studio Installer Deployment](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
+|**Развертывание визуального C++ приложения.** вы можете развернуть визуальную C++ среду выполнения с помощью приложения, используя центральное развертывание, локальное развертывание или статическую компоновку.|[Развертывание классических приложений неуправляемого кода (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Развертывание приложения для тестирования.** Вы можете включить более сложные разработки и тестирование, развернув приложения в виртуальных средах.|[Тестирование в лабораторной среде](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
+|**Установить необходимые компоненты:** Вы можете установить необходимые компоненты для настольных приложений, настроив универсальный установщик, известный как начальный загрузчик.|[Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)|

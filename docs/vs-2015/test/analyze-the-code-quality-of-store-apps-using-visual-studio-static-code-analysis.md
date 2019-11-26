@@ -1,5 +1,5 @@
 ---
-title: Analyze the code quality of Store apps using static code analysis
+title: Анализ качества кода приложений магазина с помощью статического анализа кода
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -24,7 +24,7 @@ ms.locfileid: "74297554"
 > [!NOTE]
 > Анализ кода недоступен для кода JavaScript.
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>В этом разделе
 
 |||
 |-|-|

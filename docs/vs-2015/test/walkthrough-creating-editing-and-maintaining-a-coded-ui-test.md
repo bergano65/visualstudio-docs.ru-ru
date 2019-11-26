@@ -20,7 +20,7 @@ ms.locfileid: "74302060"
 
 В этом пошаговом руководстве создается простое приложение Windows Presentation Foundation (WPF), чтобы с его помощью продемонстрировать создание, редактирование и обслуживание закодированного теста пользовательского интерфейса. В этом пошаговом руководстве приведены решения для корректировки тестов с проблемами, связанными со временем и рефакторингом элементов управления.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Для этого пошагового руководства требуется следующее:
 
 - Visual Studio Enterprise
@@ -55,7 +55,7 @@ ms.locfileid: "74302060"
 
 12. Выберите элемент управления Checkbox. В окне "Свойства" измените значение свойства **Имя** с \<No Name> на checkBox1 и очистите свойство **IsEnabled**.
 
-     ![Simple WPF Application](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
+     ![Простое приложение WPF](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
 13. Дважды щелкните элемент управления "Кнопка", чтобы добавить обработчик события щелчка.
 
@@ -141,17 +141,17 @@ ms.locfileid: "74302060"
 
 7. Выберите параметр **Записать действия, изменить карту ИП или добавить утверждения** и нажмите кнопку **ОК**.
 
-     Откроется окно "UIMap — Построитель кодированных тестов ИП", а окно Visual Studio свернется.
+     Откроется окно UIMap – Построитель кодированных тестов ИП, а окно Visual Studio свернется.
 
      Дополнительные сведения о параметрах в этом диалоговом окне см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
 8. Щелкните **Начать запись** в окне "UIMap — Построитель кодированных тестов ИП".
 
-     ![Start recording](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
+     ![Начать запись](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
 
      Вы можете приостановить запись, например если вы работаете с входящей почтой.
 
-     ![Pause the recording](../test/media/cuit.png "CUIT_")
+     ![Приостановить запись](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > Все действия, выполненные на рабочем столе, будут записаны. Приостановите запись, если вы выполняете действия, которые могут привести к записи конфиденциальных данных.
@@ -369,11 +369,11 @@ ms.locfileid: "74302060"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="videos"></a>Видеоролики
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-episode2-маинтаиненцеанддебуггинг](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode3-хандкодинг](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>Практическое лабораторное занятие
  [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
@@ -386,5 +386,5 @@ ms.locfileid: "74302060"
 ### <a name="forum"></a>Форум
  [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>См. также раздел
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Getting Started with the WPF Designer](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>См. также
+ [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [Начало работы с](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [поддерживаемыми конфигурациями и платформами конструктора WPF для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Редактирование закодированных тестов пользовательского интерфейса с помощью редактора закодированных](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) тестов пользовательского интерфейса

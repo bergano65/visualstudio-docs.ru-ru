@@ -1,5 +1,5 @@
 ---
-title: Debug CSS styles using DOM Explorer | Microsoft Docs
+title: Отладка стилей CSS с помощью проводника DOM | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,7 +30,7 @@ ms.locfileid: "74299499"
 # <a name="debug-css-styles-using-dom-explorer"></a>Отладка стилей CSS с использованием проводника DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "windows_and_phone_content")  
+Применяется к Windows и Windows Phone] (.. /Video windows_and_phone_content. png "windows_and_phone_content")  
   
  При отладке приложений Магазина Windows, приложений Магазина Windows Phone и приложений, созданных с помощью инструментов Visual Studio для Apache Cordova, можно просматривать и изменять правила CSS для выбранных элементов DOM и их дочерних элементов.  
   
@@ -48,7 +48,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
 - Вкладка **Изменения** (только для приложений Магазина Windows и Магазина Windows Phone) служит для определения и отслеживания стилей CSS, измененных во время сеанса отладки.  
   
 > [!TIP]
-> Изменения, вносимые для стилей на вкладках **Стили** и **Вычисленные** , не являются окончательными. При остановке отладки они удаляются. To change source code and reload pages without stopping and restarting the debugger, refresh your app by using the  ![Refresh Windows app button](../debugger/media/js-refresh.png "JS_Refresh") button (**Refresh Windows app**) on the **Debug** toolbar (Windows Store and Windows Phone Store apps only). For more info, see [Refresh an app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Изменения, вносимые для стилей на вкладках **Стили** и **Вычисленные** , не являются окончательными. При остановке отладки они удаляются. Чтобы изменить исходный код и перезагрузить страницы без остановки и перезапуска отладчика, обновите приложение с помощью кнопки !["обновить приложение Windows](../debugger/media/js-refresh.png "JS_Refresh") " (**обновить приложение Windows**) на панели инструментов " **Отладка** " (только для приложений Магазина Windows и Windows Phone Store). Дополнительные сведения см. в разделе [Обновление приложения (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Пример исправления правила CSS  
  В этом примере продемонстрированы процедуры проверки правил CSS и отладки проблем со стилями. Предположим, нам нужно изменить цвет шрифта, используемого для заголовков групп в приложении, созданном на базе шаблона приложения с разделением [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
@@ -91,7 +91,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 4. Выберите **Имитатор** в раскрывающемся списке на панели инструментов **Отладка** (значение по умолчанию —**Локальный компьютер** ).  
   
-     ![Select debug target list](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Выбор целевого списка отладки](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 5. Нажмите клавишу F5, чтобы запустить приложение в режиме отладки.  
   
@@ -100,14 +100,14 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
     > [!TIP]
     > После появления приложения в имитаторе расположите имитатор рядом с окном Visual Studio, чтобы можно было сразу видеть результаты выполняемых действий выбора и изменений, вносимых в стили CSS.  
   
-6. Переключитесь на Visual Studio и в проводнике DOM нажмите кнопку **Выбрать элемент** (или сочетание клавиш CTRL+B). При этом изменится режим выбора, то есть элемент можно будет выбирать щелчком, и приложение появится на переднем плане. Вернуть предыдущий режим можно одним щелчком. Кнопка **Выбрать элемент** : ![Select Element Button in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Переключитесь на Visual Studio и в проводнике DOM нажмите кнопку **Выбрать элемент** (или сочетание клавиш CTRL+B). При этом изменится режим выбора, то есть элемент можно будет выбирать щелчком, и приложение появится на переднем плане. Вернуть предыдущий режим можно одним щелчком. Кнопка **Выбрать элемент** : ![Кнопка "выбрать элемент" в проводнике DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
   
     > [!TIP]
-    > Выбирать HTML-элементы можно также непосредственно в проводнике DOM. For more info on selecting elements, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Выбирать HTML-элементы можно также непосредственно в проводнике DOM. Дополнительные сведения о выборе элементов см. в разделе [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 7. В имитаторе наведите курсор на заголовок первого элемента в списке, **Заголовок группы: 1**, на левой панели начальной страницы. Заголовок выделяется, как показано ниже:  
   
-     ![Using the Select Element button](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
+     ![Использование кнопки выбора элемента](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     > В эмуляторе Windows Phone выделение элементов с помощью наведения поддерживается лишь частично.  
@@ -120,7 +120,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
      При выборе элемента H4 в проводнике DOM на вкладках этого проводника отображаются правила, связанные с элементом H4. Ниже показана вкладка **Вычисленные** с открытым свойством `color` :  
   
-     ![Trace Styles tab in DOM Explorer](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
+     ![Вкладка «Стили трассировки» в проводнике DOM](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
      В этом представлении содержится полезная информация о правилах, связанных со стилем `color` , например следующая:  
   
@@ -136,13 +136,13 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 9. Снимите флажок для первого экземпляра стиля `color` , предназначенного для селектора `.itemspage .itemslist .item .item-overlay .item-title` . Теперь в имитаторе можно заметить, что цвет всех заголовков элементов изменился на оранжевый, как и было предусмотрено, и селектор, измененный в таблице CSS ( `.itemspage .itemslist .item`), больше не переопределен (то есть для него больше не используется зачеркнутый текст). Ниже показана вкладка **Вычисленные** после снятия флажка.  
   
-     ![The Computed tab after updating the CSS style](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![Вкладка "вычисленные" после обновления стиля CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. Перейдите на вкладку **Изменения** .  
   
      Вкладка **Изменения** служит для определения и отслеживания изменений стилей, вносимых во время сеанса отладки. На следующем рисунке показан селектор `.itemspage .itemslist .item .item-overlay .item-title` на вкладке **Изменения** , который сейчас переопределен.  
   
-     ![Changes tab of the DOM Explorer](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
+     ![Вкладка "изменения" проводника DOM](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
 11. Также можно вручную изменять значения стилей CSS и сразу же видеть результаты на вкладке **Стили** .  
   
@@ -154,10 +154,10 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 15. Для изменения этого значения воспользуйтесь клавиатурой. Измените значение на `rgb(255, 255, 0, 0.87)`и нажмите клавишу ВВОД. Цвета заголовков элементов в имитаторе изменятся на желтый.  
   
-16. To make changes to the source CSS file, click the **items.css** link on the **Styles** tab. This opens items.css, where you can change the value of the `color` style in your app code. To refresh the app without stopping and restarting the debugger, click the  ![Refresh Windows app button](../debugger/media/js-refresh.png "JS_Refresh") (**Refresh Windows app**) button on the **Debug** toolbar.  
+16. Чтобы внести изменения в исходный CSS файл, щелкните ссылку **Items. CSS** на вкладке **стили** . Откроется диалоговое окно Items. CSS, где можно изменить значение стиля `color` в коде приложения. Чтобы обновить приложение без остановки и перезапуска отладчика, нажмите кнопку ![обновить приложение Windows](../debugger/media/js-refresh.png "JS_Refresh") (**обновить приложение Windows**) на панели инструментов " **Отладка** ".  
   
-## <a name="see-also"></a>См. также раздел  
- [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debug layout using DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
- [View DOM event listeners](../debugger/view-dom-event-listeners.md)   
+## <a name="see-also"></a>См. также  
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Макет отладки с использованием ПРОВОДНИКА DOM](../debugger/debug-layout-using-dom-explorer.md)   
+ [Просмотр  прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)  
  [Поддержка и специальные возможности продукта](https://go.microsoft.com/fwlink/?LinkId=253502)
