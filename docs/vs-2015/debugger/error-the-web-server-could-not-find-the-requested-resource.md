@@ -1,5 +1,5 @@
 ---
-title: 'Error: The Web Server Could Not Find the Requested Resource | Microsoft Docs'
+title: 'Ошибка: веб-серверу не удалось найти запрошенный ресурс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -34,6 +34,6 @@ ms.locfileid: "74297428"
   
  Дополнительные сведения об устранении неполадок IIS см. в разделе [Управление и администрирование IIS](https://go.microsoft.com/fwlink/?LinkId=255872).  
   
-## <a name="see-also"></a>См. также раздел  
- [UrlScan Security Tool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
+## <a name="see-also"></a>См. также  
+ [Средство защиты UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Ошибка: веб-сервер заблокирован и блокирует команду DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Python | Microsoft Docs
+title: начало работы с Python | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -19,35 +19,35 @@ ms.locfileid: "74298187"
 # <a name="getting-started-with-python"></a>Начало работы с Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The Python Tools for Visual Studio (PTVS), is a free, [open-source](https://github.com/Microsoft/ptvs) plug-in for Visual Studio that a powerful Python development experience.  
+Инструменты Python для Visual Studio (PTVS) — это бесплатный подключаемый модуль с [открытым исходным кодом](https://github.com/Microsoft/ptvs) для Visual Studio, который является мощным процессом разработки Python.  
   
 ## <a name="python-the-language"></a>Язык Python.
   
-Python is a popular programming language that is used by many universities, scientists, app scripters, casual developers, and professional developers, working on applications, web sites, and cloud services.
+Python — это популярный язык программирования, который используется многими университетами, специалистами, разработчиками приложений, пользователями, посвященными и профессиональным разработчикам, работающим над приложениями, веб-сайтами и облачными службами.
 
-As a programming language, Python is:
+Язык программирования Python:
   
 - Надежность.
-- Generally useful for scripting quick programs, app scripting, desktop apps, web servers, web services, and scientific computing.
+- Обычно это удобно при написании сценариев для быстрых программ, сценариев приложений, настольных приложений, веб-серверов, веб-служб и научных вычислений.
 - Легкий для понимания; хорошая архитектура, упрощающая написание качественного кода (многие университеты используют его для начальных курсов обучения программированию).
-- Flexible, supporting imperative, functional, and object-oriented programming styles.
+- Гибкие возможности, поддерживающие императивные, функциональные и объектно-ориентированные стили программирования.
 - Бесплатно и с открытым кодом.
-- Runs well on all major operating systems.  
-- Supported by many free, useful, and well-designed libraries.  
-- Supported by lots of documentation, samples, and a strong developer community.  
+- Хорошо работает на всех основных операционных системах.  
+- Поддерживается многими бесплатными, полезными и хорошо спроектированными библиотеками.  
+- Поддерживается множеством документации, примерами и надежным сообществом разработчиков.  
 
-To learn more about the language, start with [Python for Beginners](https://www.python.org/about/gettingstarted/) on python.org.
+Чтобы узнать больше о языке, начните с [Python для начинающих](https://www.python.org/about/gettingstarted/) на Python.org.
 
-To install Python itself, visit [https://www.python.org/download/](https://www.python.org/download/).
+Чтобы установить Python, посетите [https://www.python.org/download/](https://www.python.org/download/).
 
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-The Python Tools for Visual Studio, which you can install from [visualstudio.com](https://www.visualstudio.com/explore/python-vs), provide the following features:  
+Инструменты Python для Visual Studio, который можно установить из [VisualStudio.com](https://www.visualstudio.com/explore/python-vs), предоставляет следующие возможности.  
   
 - Поддержка нескольких интерпретаторов: различные версии CPython, IronPython и IPython.  
 - Система проектов, которая неявно получает структуру папок кода Python и обеспечивает явное управление, позволяя определять код приложения, тестовый код, веб-страницы, JavaScript, скрипты сборки и т. д.  
 - Шаблоны проектов для консольных приложений, веб-приложений, Azure, обработки и анализа данных и других типов проектов.    
-- The Azure SDK for Python (see below)    
+- Пакет Azure SDK для Python (см. ниже)    
 - Широкие возможности редактирования и понимания кода, включая раскраску синтаксических конструкций, автозавершение для всего кода и библиотек, справку по сигнатурам, представление классов, переход к определению, поиск всех ссылок, рефакторинг и т. д.    
 - Интерактивное окно (REPL)
 - IPython с визуализацией данных.
@@ -60,14 +60,14 @@ The Python Tools for Visual Studio, which you can install from [visualstudio.com
 
 - [Руководство по установке](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Короткие видеоролики по началу работы и углубленному рассмотрению](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Installation and features demo (27 min)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Демонстрация установки и возможностей (27 мин)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Документация](https://github.com/Microsoft/PTVS/wiki)  
 
-Note that Visual Studio does not at present provide the means to create a stand-alone executable using Python, which essentially means a program with an embedded Python interpreter. Но предназначенные для выполнения этой задачи средства можно найти в сообществе Python, как описано на сайте [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython также можно внедрять в приложение машинного кода. Об этом можно узнать в записи блога [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Использование внедряемого ZIP-файла CPython).
+Обратите внимание, что Visual Studio в настоящее время не предоставляет средств для создания автономного исполняемого файла с помощью Python, что по сути означает программу с внедренным интерпретатором Python. Но предназначенные для выполнения этой задачи средства можно найти в сообществе Python, как описано на сайте [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython также можно внедрять в приложение машинного кода. Об этом можно узнать в записи блога [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Использование внедряемого ZIP-файла CPython).
   
-## <a name="building-ui-with-python"></a>Building UI with Python  
+## <a name="building-ui-with-python"></a>Создание пользовательского интерфейса с помощью Python  
 
-The main offering for building a UI with Python is the [Qt Project](https://www.qt.io/qt-for-application-development/), with bindings for Python known as [PySide (the official binding)](https://wiki.qt.io/PySide) (also see [PySide downloads](https://download.qt.io/official_releases/pyside/.))and [PyQt](https://wiki.python.org/moin/PyQt). В настоящее время поддержки Python в Visual Studio не включает какие-либо конкретные средства для разработки пользовательского интерфейса.
+Основным предложением для создания пользовательского интерфейса с помощью Python является [проект Qt](https://www.qt.io/qt-for-application-development/)с привязками для Python, известными как [PySide (официальная привязка)](https://wiki.qt.io/PySide) (также см. раздел [загрузки PySide](https://download.qt.io/official_releases/pyside/.)) и [PyQt](https://wiki.python.org/moin/PyQt). В настоящее время поддержки Python в Visual Studio не включает какие-либо конкретные средства для разработки пользовательского интерфейса.
 
 ## <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
   
@@ -89,7 +89,7 @@ The main offering for building a UI with Python is the [Qt Project](https://www.
 
 Мы рекомендуем получить среду IPython и библиотеки научных вычислений (matplotlib, scipy, numpy и т. д.) из [Калифорнийского университета в Ирвайне](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
 
 [Начало работы с PTVS. Настройка Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [Начало работы с PTVS. Приступаем к написанию кода (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)

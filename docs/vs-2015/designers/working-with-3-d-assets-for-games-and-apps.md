@@ -51,7 +51,7 @@ ms.locfileid: "74298095"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание|
+|Название|Описание|
 |-----------|-----------------|
 |[Работа с текстурами и изображениями](../designers/working-with-textures-and-images.md)|Описывает, как работать с изображениями и текстурами в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Работа с трехмерными моделями](../designers/working-with-3-d-models.md)|Описывает, как работать с трехмерными моделями в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

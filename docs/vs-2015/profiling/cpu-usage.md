@@ -25,13 +25,13 @@ ms.locfileid: "74300763"
   
  Пошаговое руководство, которое позволяет анализировать производительность приложения Магазина Windows, см. в разделе [Анализ использования ЦП в приложениях Магазина](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx).  
   
- Концентратор производительности и диагностики предоставляет различные возможности по запуску сеансов диагностики и управления ими. Например, средство **Загрузка ЦП** можно запустить на локальном и удаленном компьютерах, в имитаторе или эмуляторе. Можно анализировать производительность открытого в Visual Studio проекта, присоединившись к выполняемому приложению, либо запустить приложение, которое устанавливается из Магазина Windows. For more information, see [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ Концентратор производительности и диагностики предоставляет различные возможности по запуску сеансов диагностики и управления ими. Например, средство **Загрузка ЦП** можно запустить на локальном и удаленном компьютерах, в имитаторе или эмуляторе. Можно анализировать производительность открытого в Visual Studio проекта, присоединившись к выполняемому приложению, либо запустить приложение, которое устанавливается из Магазина Windows. Дополнительные сведения см. в разделе [Запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01) .  
   
-## <a name="BKMK_Collect_CPU_usage_data"></a> Сбор данных о загрузке ЦП  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Сбор данных об использовании ЦП  
   
 1. В Visual Studio установите для решения конфигурацию **Выпуск** и выберите цель развертывания.  
   
-    ![Select Release and Local Machine](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Выберите выпуск и локальный компьютер](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
    - Запуск приложения в режиме **Выпуск** обеспечивает более качественное представление фактической производительности приложения.  
   
@@ -45,25 +45,25 @@ ms.locfileid: "74300763"
   
 3. Нажмите **Использование ЦП** и **Запуск**.  
   
-    ![Choose CPU Usage](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Выбор загрузки ЦП](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
 4. После запуска приложения нажмите кнопку **Get Max Number**(Получить максимальное количество). После вывода результата подождите примерно одну секунду, а затем нажмите **Get Max Number Async**(Получить максимальное количество асинхронно). Перерыв между нажатиями кнопок облегчает нахождение в диагностическом отчете информации о подпрограммах обработки нажатия кнопок.  
   
 5. После вывода второй строки выберите **Остановка сбора** в разделе "Производительность и диагностика".  
   
-   ![Stop CpuUsage data collection](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Завершение сбора данных CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
    Инструмент "Использование ЦП" анализирует данные и отображает отчет.  
   
-   ![CpuUsage report](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Отчет CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Анализ отчета об использовании ЦП  
   
-### <a name="BKMK_The_CPU_Usage_call_tree"></a> Дерево вызовов средства "Загрузка ЦП"  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Дерево вызовов средства "Использование ЦП"  
  Чтобы понять сведения в дереве вызовов, повторно выберите сегмент `GetMaxNumberButton_Click` и просмотрите дерево вызовов.  
   
 #### <a name="BKMK_Call_tree_structure"></a> Структура дерева вызовов  
- ![GetMaxNumberButton&#95;Click call tree](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![Дерево&#95;щелкнуть дерево вызовов](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
@@ -77,15 +77,15 @@ ms.locfileid: "74300763"
   
  Если вы захотите посмотреть пути к вызовам внешнего кода, выберите **Показать внешний код** в списке **Представление фильтра** и выберите **Применить**.  
   
- ![Choose Filter View, then Show External Code](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
+ ![Выберите режим фильтра, а затем показать внешний код](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
   
  Помните о том, что многие цепочки вызовов имеют глубокий уровень вложенности, поэтому ширина столбца "Имя функции" может превышать ширину многих мониторов. В этом случае имена функций отображаются в виде **[…]** :  
   
- ![Nested external code in the call tree](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
+ ![Вложенный внешний код в дереве вызовов](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
  Используйте поле поиска, чтобы найти требуемый узел, а затем воспользуйтесь горизонтальной полосой прокрутки для отображения данных в представлении:  
   
- ![Search for nested external code](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
+ ![Поиск вложенного внешнего кода](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
 ### <a name="BKMK_Call_tree_data_columns"></a> Столбцы данных дерева вызовов  
   
@@ -97,18 +97,18 @@ ms.locfileid: "74300763"
 |**Собственное время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
 |**Модуль**|Имя модуля, содержащего функцию, или количество модулей, содержащих функции в узле [Внешний код].|  
   
-### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Асинхронные функции в дереве вызовов средства "Загрузка ЦП"  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Асинхронные функции в дереве вызовов средства "Использование ЦП"  
  Если компилятор обнаруживает асинхронный метод, он создает скрытый класс для контроля выполнения этого метода. По существу, класс представляет собой конечный автомат, содержащий список функций, созданных компилятором, которые асинхронно вызывают операции исходного метода. Также класс включает обратные вызовы, планировщик и итераторы, необходимые для его правильной работы. При вызове исходного метода родительским методом среда выполнения удаляет метод из контекста выполнения родительского метода и выполняет методы скрытого класса в контексте кода системы и инфраструктуры, который управляет выполнением приложения. Асинхронные методы часто, но не всегда выполняются в отдельном потоке (или в нескольких потоках). Этот код отображается в дереве вызовов средства "Использование ЦП" в виде дочерних элементов узла **[Внешний код]** сразу под верхним узлом дерева.  
   
  Чтобы увидеть его в нашем примере, снова выберите период `GetMaxNumberAsyncButton_Click` на временной шкале.  
   
- ![GetMaxNumberAsyncButton&#95;Click report selection](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Выбор&#95;нажмите кнопку "Выбор отчета"](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  Два первых узла в узле **[Внешний код]** представляют собой созданные компилятором методы класса конечного автомата. Третий узел является вызовом исходного метода. Развернув созданные методы, можно понять, как это работает.  
   
- ![Expanded GetMaxNumberAsyncButton&#95;Click call tree](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![Развернутый выбор&#95;щелкните дерево вызовов](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
-- `MainPage::GetMaxNumberAsyncButton_Click` выполняет немного функций: управляет списком значений задач, вычисляет максимальное значение на основе результатов и отображает выходные данные.  
+- `MainPage::GetMaxNumberAsyncButton_Click` не делает ничего сложного — он управляет списком значений задач, вычисляет максимальное значение из результатов и отображает выходные данные.  
   
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` показывает время ЦП, затраченное на планирование и запуск 48 задач, которые являются оболочкой вызова `GetNumberAsync`.  
   

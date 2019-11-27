@@ -1,5 +1,5 @@
 ---
-title: MSI and VSIX Deployment of a DSL | Microsoft Docs
+title: Развертывание MSI и VSIX для DSL | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,122 +19,122 @@ ms.locfileid: "74297738"
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can install a domain-specific language on your own computer or on other computers. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] must already be installed on the target computer.
+Вы можете установить доменный язык на своем компьютере или на других компьютерах. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] уже должны быть установлены на целевом компьютере.
 
-## <a name="which"></a> Choosing between VSIX and MSI Deployment
- There are two methods of deploying a domain-specific language:
+## <a name="which"></a>Выбор между развертыванием VSIX и MSI
+ Существует два способа развертывания предметно-ориентированного языка:
 
 |Метод|Преимущества|
 |------------|--------------|
-|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension)|Very easy to deploy: Copy and execute the **.vsix** file from the DslPackage project.<br /><br /> For more information see [Installing and Uninstalling a DSL by using the VSX](#Installing).|
-|MSI (installer file)|-   Allows the user to open [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] by double-clicking a DSL file.<br />-   Associates an icon with the DSL file type in the target computer.<br />-   Associates an XSD (XML schema) with the DSL file type. This avoids warnings when the file is loaded into [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> You must add a setup project to your solution to create an MSI.<br /><br /> For more information, see [Deploying a DSL by using an MSI file](#msi).|
+|VSX (расширение[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])|Простота развертывания: Скопируйте и выполните **VSIX** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. [в статье Установка и удаление DSL с помощью VSX](#Installing).|
+|MSI (файл установщика)|— Позволяет пользователю открыть [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], дважды щелкнув файл DSL.<br />— Связывает значок с типом файла DSL на конечном компьютере.<br />— Связывает XSD (схему XML) с типом файла DSL. Это позволяет избежать предупреждений при загрузке файла в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Чтобы создать MSI-файл, необходимо добавить в решение проект установки.<br /><br /> Дополнительные сведения см. в разделе [Развертывание DSL с помощью MSI-файла](#msi).|
 
-## <a name="Installing"></a> Installing and Uninstalling a DSL by using the VSX
- When your DSL is installed by this method, the user can open a DSL file from within [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], but the file cannot be opened from Windows Explorer.
+## <a name="Installing"></a>Установка и удаление DSL с помощью VSX
+ При установке DSL этим методом пользователь может открыть файл DSL в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], но файл нельзя открыть из проводника Windows.
 
-#### <a name="to-install-a-dsl-by-using-the-vsx"></a>To install a DSL by using the VSX
+#### <a name="to-install-a-dsl-by-using-the-vsx"></a>Установка DSL с помощью VSX
 
-1. In your computer, find the **.vsix** file that was built by your DSL Package project.
+1. На компьютере найдите **VSIX** файл, созданный проектом пакета DSL.
 
-    1. In **Solution Explorer**, right-click the **DslPackage** project, and then click **Open Folder in Windows Explorer**.
+    1. В **Обозреватель решений**щелкните правой кнопкой мыши проект **DslPackage** и выберите пункт **Открыть папку в проводнике Windows**.
 
-    2. Locate the file **bin\\\*\\** _YourProject_ **.DslPackage.vsix**
+    2. Откройте файл **bin\\\*\\** _йоурпрожект_ **. DslPackage. VSIX**
 
-2. Copy the **.vsix** file to the target computer on which you want to install the DSL. Это может быть как ваш собственный компьютер, так и любой другой.
+2. Скопируйте **VSIX** файл на конечный компьютер, на который необходимо установить DSL. Это может быть как ваш собственный компьютер, так и любой другой.
 
-    - The target computer must have one of the editions of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] that supports DSLs at run time. For more information, see [Supported Visual Studio Editions for Visualization & Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
+    - На целевом компьютере должен быть установлен один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], поддерживающих DSL во время выполнения. Дополнительные сведения см. в разделе [Поддерживаемые выпуски Visual Studio для визуализации & моделирования SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    - The target computer must have one of the editions of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] specified in **DslPackage\source.extensions.manifest**.
+    - На целевом компьютере должен быть установлен один из выпусков [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], указанных в **дслпаккаже\саурце.екстенсионс.манифест**.
 
-3. On the target computer, double-click the **.vsix** file.
+3. На целевом компьютере дважды щелкните **VSIX** -файл.
 
      Откроется**установщик расширений Visual Studio** , который устанавливает расширение.
 
 4. Запустите или перезапустите [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-5. To test the DSL, use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to create a new file that has the extension that you defined for your DSL.
+5. Чтобы протестировать DSL, используйте [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], чтобы создать новый файл с расширением, определенным для вашего DSL.
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>To uninstall a DSL that was installed by using VSX
+#### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Удаление DSL, установленного с помощью VSX
 
-1. On the **Tools** menu, click **Extension Manager**.
+1. В меню **Сервис** выберите пункт **Диспетчер расширений**.
 
 2. Разверните узел **Установленные расширения**.
 
-3. Select the extension in which the DSL is defined, and then click **Uninstall**.
+3. Выберите расширение, в котором определен DSL, и нажмите кнопку **Удалить**.
 
    Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-## <a name="msi"></a> Deploying a DSL in an MSI
- By defining an MSI (Windows Installer) file for your DSL, you can allow users to open DSL files from Windows Explorer. You can also associate an icon and short description with your file name extension. In addition, the MSI can install an XSD that can be used to validate DSL files. If you want, you can add other components into the MSI that will be installed at the same time.
+## <a name="msi"></a>Развертывание DSL в MSI
+ Определив файл MSI (установщик Windows) для DSL, можно разрешить пользователям открывать файлы DSL из проводника Windows. Можно также связать значок и краткое описание с расширением имени файла. Кроме того, MSI может установить XSD, который можно использовать для проверки файлов DSL. При необходимости можно добавить в MSI другие компоненты, которые будут установлены одновременно.
 
- For more information about MSI files and other deployment options, see [Deploying Applications, Services, and Components](../deployment/deploying-applications-services-and-components.md).
+ Дополнительные сведения о файлах MSI и других вариантах развертывания см. в разделе [развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md).
 
- To build an MSI, you add a Setup project to your [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution. The easiest method of creating a Setup project is to use the CreateMsiSetupProject.tt template, which you can download from the [VMSDK site](https://go.microsoft.com/fwlink/?LinkID=186128).
+ Чтобы создать MSI, добавьте в решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект установки. Самый простой способ создать проект установки — использовать шаблон CreateMsiSetupProject.tt, который можно загрузить с [сайта VMSDK](https://go.microsoft.com/fwlink/?LinkID=186128).
 
-#### <a name="to-deploy-a-dsl-in-an-msi"></a>To Deploy a DSL in an MSI
+#### <a name="to-deploy-a-dsl-in-an-msi"></a>Развертывание DSL в MSI
 
-1. Set `InstalledByMsi` in the extension manifest. This prevents the VSX from being installed and uninstalled except by the MSI. This is important if you will include other components in the MSI.
+1. Задайте `InstalledByMsi` в манифесте расширения. Это предотвращает установку и удаление VSX, кроме MSI. Это важно, если в MSI будут включены другие компоненты.
 
-   1. Open DslPackage\source.extension.tt
+   1. Открыть Дслпаккаже\саурце.екстенсион.ТТ
 
-   2. Insert the following line before `<SupportedProducts>`:
+   2. Перед `<SupportedProducts>`вставьте следующую строку:
 
        ```
        <InstalledByMsi>true</InstalledByMsi>
        ```
 
-2. Create or edit an icon that will represent your DSL in Windows Explorer. For example, edit **DslPackage\Resources\File.ico**
+2. Создайте или измените значок, который будет представлять ваш DSL в проводнике Windows. Например, Edit **дслпаккаже\ресаурцес\филе.ИКО**
 
-3. Make sure that the following attributes of your DSL are correct:
+3. Убедитесь в правильности следующих атрибутов DSL:
 
-   - In DSL Explorer click the root node, and in Properties window, review:
+   - В обозревателе DSL щелкните корневой узел, а затем в окно свойств проверьте следующее:
 
        - Описание
 
-       - Version
+       - Версия
 
-   - Click the **Editor** node and in the Properties window, click **Icon**. Set the value to reference an icon file in **DslPackage\Resources**, such as **File.ico**
+   - Щелкните узел **редактора** и в окно свойств щелкните **значок**. Задайте значение для ссылки на файл значка в **дслпаккаже\ресаурцес**, например **File. ico.**
 
-   - On the **Build** menu, open **Configuration Manager**, and select the configuration that you want to build, such as **Release** or **Debug**.
+   - В меню **Сборка** откройте **Configuration Manager**и выберите конфигурацию, которую требуется собрать, например **выпуск** или **отладку**.
 
-4. Go to [Visualization and Modeling SDK home page](https://go.microsoft.com/fwlink/?LinkID=186128), and from the **Downloads** tab, download **CreateMsiSetupProject.tt**.
+4. Перейдите на [домашнюю страницу SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkID=186128)и на вкладке **Downloads (загрузки** ) Скачайте **CreateMsiSetupProject.TT**.
 
-5. Add **CreateMsiSetupProject.tt** to your Dsl project.
+5. Добавьте **CreateMsiSetupProject.TT** в проект DSL.
 
-    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] will create a file named **CreateMsiSetupProject.vdproj**.
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создаст файл с именем **креатемсисетуппрожект. vdproj**.
 
-6. In Windows Explorer, copy Dsl\\*.vdproj to a new folder named Setup.
+6. В проводнике Windows скопируйте DSL\\*. vdproj в новую папку с именем Setup.
 
-    (If you want, you can now exclude CreateMsiSetupProject.tt from your Dsl project.)
+    (Если нужно, теперь можно исключить CreateMsiSetupProject.tt из проекта DSL.)
 
-7. In **Solution Explorer**, add **Setup\\\*.vdproj** as an existing project.
+7. В **Обозреватель решений**добавьте **программу установки\\\*. vdproj** в качестве существующего проекта.
 
-8. On the **Project** menu, click **Project Dependencies**.
+8. В меню **проект** выберите пункт **зависимости проекта**.
 
-    In the **Project Dependencies** dialog box, select the setup project.
+    В диалоговом окне **зависимости проекта** выберите проект установки.
 
-    Select the box next to **DslPackage**.
+    Установите флажок рядом с **DslPackage**.
 
 9. Выполните повторную сборку решения.
 
-10. In Windows Explorer, locate the built MSI file in your Setup project.
+10. В проводнике Windows выберите в проекте установки созданный MSI файл.
 
-     Copy the MSI file to a computer on which you want to install your DSL. Double-click the MSI file. The installer runs.
+     Скопируйте MSI-файл на компьютер, на котором требуется установить DSL. Дважды щелкните файл MSI. Запуск установщика.
 
-11. In the target computer, create a new file that has the file extension of your DSL. Verify that:
+11. На конечном компьютере создайте новый файл с расширением DSL. Убедитесь, что:
 
-    - In Windows Explorer list view, the file appears with the icon and description that you defined.
+    - В представлении списка проводника Windows файл отображается с указанными значком и описанием.
 
-    - When you double-click the file, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] starts, and opens the DSL file in your DSL editor.
+    - При двойном щелчке файла [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запускается и открывается файл DSL в редакторе DSL.
 
-    If you prefer, you can create the Setup project manually, instead of using the text template. For a walkthrough that includes this procedure see Chapter 5 of the [Visualization and Modeling SDK Lab](https://go.microsoft.com/fwlink/?LinkId=208878).
+    При желании можно создать проект установки вручную, а не использовать текстовый шаблон. Пошаговое руководство, включающее эту процедуру, см. в главе 5 [лаборатории SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkId=208878).
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>To uninstall a DSL that was installed from an MSI
+#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Удаление DSL, установленного из MSI
 
-1. In Windows, open the **Programs and Features** control panel.
+1. В Windows откройте панель управления **программы и компоненты** .
 
-2. Uninstall the DSL.
+2. Удалите DSL.
 
 3. Перезапустите Visual Studio.

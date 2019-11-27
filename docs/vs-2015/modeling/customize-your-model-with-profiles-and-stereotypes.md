@@ -1,5 +1,5 @@
 ---
-title: Customize your model with profiles and stereotypes | Microsoft Docs
+title: Настройка модели с помощью профилей и стереотипов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,7 +23,7 @@ ms.locfileid: "74301193"
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Настройка модели с помощью профилей и стереотипов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio стандартные элементы модели UML, например классы и компоненты, можно адаптировать для определенных целей. You can apply a *stereotype* to a model element that can change the element's list of properties. Stereotypes are defined within collections called *profiles*.
+В Visual Studio стандартные элементы модели UML, например классы и компоненты, можно адаптировать для определенных целей. Можно применить *стереотип* к элементу модели, который может изменить список свойств элемента. Стереотипы определяются в коллекциях, называемых *профилями*.
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -31,14 +31,14 @@ ms.locfileid: "74301193"
 
  Стереотипы можно устанавливать в списке свойств элемента. Для основных видов фигур на схеме примененные стереотипы отображаются и на фигуре, как показано в примере.
 
- ![A UML class with a stereotype.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![Класс UML с стереотипом.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Если создать модель с помощью профиля, а затем отправить кому-либо эту модель, получатель не сможет видеть стереотипы, если на его компьютере не установлен тот же профиль.
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-|Заголовок|Описание|
+|Название|Описание|
 |-----------|-----------------|
 |[Добавление стереотипов к элементам модели UML](../modeling/add-stereotypes-to-uml-model-elements.md)|Размещение элемента модели в пакете, связывание пакета с профилем и применение стереотипа к элементу.|
 |[Стандартные стереотипы для моделей UML](../modeling/standard-stereotypes-for-uml-models.md)|Стандартные профили UML L2 и L3 устанавливаются вместе с Visual Studio, и все модели связаны с ними по умолчанию. Они предоставляют стереотипы для создания заметок к моделям.<br /><br /> Например, применив к классу стереотип Specification, можно указать, что он позволяет настраивать поведение только тех его экземпляров, которые видно извне.|

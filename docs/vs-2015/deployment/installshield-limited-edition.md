@@ -1,5 +1,5 @@
 ---
-title: InstallShield Limited Edition | Microsoft Docs
+title: InstallShield Limited Edition | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment

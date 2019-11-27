@@ -1,5 +1,5 @@
 ---
-title: Modeling SDK - Domain-Specific Languages | Microsoft Docs
+title: Пакет SDK для моделирования — доменные языки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,7 +22,7 @@ ms.locfileid: "74297683"
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK моделирования для Visual Studio — доменные языки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-By using the Modeling SDK for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), you can create powerful model-based development tools that you can integrate into [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Например, с помощью MSDK создаются средства UML. Таким же образом можно создать одно или несколько определений моделей и интегрировать их в набор средств.
+С помощью пакета SDK моделирования для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (МСДК) можно создавать мощные средства разработки на основе моделей, которые можно интегрировать в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Например, с помощью MSDK создаются средства UML. Таким же образом можно создать одно или несколько определений моделей и интегрировать их в набор средств.
 
  Ключевой элемент MSDK — определение модели, которая создается для представления концепций в бизнес-сфере. Для модели можно предусмотреть различные дополнительные средства и возможности, например схематическое представление, возможность создания кода и других артефактов, команды преобразования модели и возможность взаимодействия с кодом и другими объектами в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При разработке модели ее можно объединить с другими моделями и средствами для создания эффективного набора инструментов, предназначенных для разработки.
 
@@ -41,13 +41,13 @@ By using the Modeling SDK for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK
   Все эти средства можно настраивать и расширять. Расширения интегрируются таким образом, что сохраняются возможности обновления определения доменного языка и повторного создания функций без потери расширений.
 
 ## <a name="samples-and-the-latest-information"></a>Примеры и последние сведения
- [Download the Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
+ [Скачайте пакет SDK моделирования для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Samples](https://go.microsoft.com/fwlink/?LinkId=186128) for the Modeling SDK for Visual Studio.
+ [Примеры](https://go.microsoft.com/fwlink/?LinkId=186128) для пакета SDK для моделирования для Visual Studio.
 
- For guidance on advanced techniques and troubleshooting, visit [Visual Studio DSL & Modeling Tools Extensibility forum](https://go.microsoft.com/fwlink/?LinkID=186074).
+ Рекомендации по расширенным методикам и устранению неполадок см. на [форуме по Visual Studio DSL & средства моделирования](https://go.microsoft.com/fwlink/?LinkID=186074).
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
  [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)
 
  [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)

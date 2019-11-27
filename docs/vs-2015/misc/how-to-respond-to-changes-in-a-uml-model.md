@@ -1,5 +1,5 @@
 ---
-title: 'How to: Respond to Changes in a UML Model | Microsoft Docs'
+title: Как реагировать на изменения в модели UML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -22,5 +22,5 @@ ms.locfileid: "74293398"
 > [!WARNING]
 > API UML эти методы не поддерживает. В будущих версиях Visual Studio они также могут не работать.
 
-## <a name="see-also"></a>См. также раздел
- [Navigate the UML model](../modeling/navigate-the-uml-model.md) [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md) [Sample: Color by Stereotype](https://go.microsoft.com/fwlink/?LinkId=213841)
+## <a name="see-also"></a>См. также
+ [Навигация по](../modeling/navigate-the-uml-model.md) [обработчикам событий модели UML изменение распространения изменений за пределами модели](../modeling/event-handlers-propagate-changes-outside-the-model.md) [— Выбор цвета по стереотипу](https://go.microsoft.com/fwlink/?LinkId=213841)

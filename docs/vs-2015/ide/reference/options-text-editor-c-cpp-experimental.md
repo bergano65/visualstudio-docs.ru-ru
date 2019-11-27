@@ -28,23 +28,23 @@ ms.locfileid: "74297857"
  Эти функции доступны в версии-кандидате Visual Studio 2015 с обновлением 1.
 
 > [!NOTE]
-> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. См. раздел [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Обзор и навигация
- **Enable New Database Engine** This should automatically speed up database population and make all database operations faster (with no loss in accuracy) for operations such as **Go To Definition** and **Find All References**. (Чтобы применить изменения, просто закройте и повторно откройте решение. Перезапускать Visual Studio не нужно.)
+ **Включить новые ядро СУБД** Это должно автоматически ускорить заполнение базы данных и сделать все операции базы данных более быстрыми (без потери точности) для таких операций, как **Переход к определению** и **Поиск всех ссылок**. (Чтобы применить изменения, просто закройте и повторно откройте решение. Перезапускать Visual Studio не нужно.)
 
 ## <a name="intellisense"></a>IntelliSense
- **Member List Dot-To-Arrow** Replaces '.' with '->' when applicable for Member List.
+ **Точка-стрелка в списке элементов** Заменяет "." на "->", если применимо для списка членов.
 
-## <a name="refactoring"></a>Рефакторинг
- **Enable Extract Function** Extract selected code to its own function and replace code with a call to the new function. Чтобы получить доступ к этой возможности, щелкните выделенный код правой кнопкой мыши и выберите пункт **Быстрые действия**или просто нажмите клавиши CTRL+точка [CTRL+.].
+## <a name="refactoring"></a>Refactoring
+ **Включить функцию извлечения** Извлеките выбранный код в собственную функцию и замените код вызовом новой функции. Чтобы получить доступ к этой возможности, щелкните выделенный код правой кнопкой мыши и выберите пункт **Быстрые действия**или просто нажмите клавиши CTRL+точка [CTRL+.].
 
- **Enable Change Signature** Add, reorder, and delete parameters of a function and propagate the changes to all call sites. Чтобы получить доступ к этой возможности, щелкните правой кнопкой мыши в любом месте, где используется функция, и выберите пункт **Быстрые действия**или просто нажмите клавиши CTRL+точка [CTRL+.].
+ **Включить сигнатуру изменений** Добавление, изменение порядка и удаление параметров функции, а также распространение изменений на все сайты вызовов. Чтобы получить доступ к этой возможности, щелкните правой кнопкой мыши в любом месте, где используется функция, и выберите пункт **Быстрые действия**или просто нажмите клавиши CTRL+точка [CTRL+.].
 
 ## <a name="text-editor"></a>Текстовый редактор
- **Enable Expand Scopes** If enabled, you can surround selected text with curly braces by typing '{' into the text editor.
+ **Включить развертывание областей** Если параметр включен, выделенный текст можно заключить в фигурные скобки, введя "{" в текстовом редакторе.
 
- **Enable Expand Precedence** If enabled, you can surround selected text with parentheses by typing '(' into the text editor.
+ **Включить приоритет развертывания** Если параметр включен, выделенный текст можно заключить в круглые скобки, введя "(" в текстовом редакторе.
 
  Список дополнительных функций текстового редактора в галерее Visual Studio можно найти [здесь](https://go.microsoft.com/fwlink/?LinkId=692016). Примером может служить расширение [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), которое поддерживает перечисленные ниже возможности.
 
@@ -58,5 +58,5 @@ ms.locfileid: "74297857"
 
   Вы можете либо навести указатель на волнистую линию, чтобы появилась лампочка, либо нажать клавиши CTRL+точка (CTRL+.). Имейте в виду, что при использовании сочетания клавиш курсор не обязательно должен находиться в элементе с ошибкой или в токене. Для получения предложений по любым элементам в строке достаточно, чтобы курсор находился в этой строке.
 
-## <a name="see-also"></a>См. также раздел
- [Setting Language-Specific Editor Options](../../ide/reference/setting-language-specific-editor-options.md) [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+## <a name="see-also"></a>См. также
+ Рефакторинг для [настройки параметров редактора для конкретного языка](../../ide/reference/setting-language-specific-editor-options.md) [в C++ (блог VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

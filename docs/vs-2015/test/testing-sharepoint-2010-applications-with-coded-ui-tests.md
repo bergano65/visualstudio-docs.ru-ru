@@ -29,14 +29,14 @@ ms.locfileid: "74298014"
 
  **Примечания**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI tests for SharePoint applications are supported only with SharePoint 2010.
+- ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Закодированные тесты пользовательского интерфейса для приложений SharePoint поддерживаются только с SharePoint 2010.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Support for Visio and PowerPoint 2010 controls in your SharePoint application is not supported.
+- ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Поддержка элементов управления Visio и PowerPoint 2010 в приложении SharePoint не поддерживается.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Создание закодированного теста пользовательского интерфейса для приложения SharePoint
  [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) для приложений SharePoint 2010 происходит таким же способом, что и создание тестов для других типов приложений. Запись и воспроизведение поддерживаются для всех элементов управления в интерфейсе веб-редактирования. Интерфейс для выбора категорий и веб-частей — стандартные веб-элементы управления.
 
- ![SharePoint web parts](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+ ![Веб-части SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
 > В случае записи действия необходимо проверить действия перед созданием кода. Поскольку существует несколько расширений функциональности, связанных с указателем мыши, оно включено по умолчанию. Следите за тем, чтобы удалить повторные наведения на основе закодированных тестов пользовательского интерфейса. Это можно сделать, отредактировав код для теста или с помощью [Редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
@@ -53,7 +53,7 @@ ms.locfileid: "74298014"
 > [!WARNING]
 > Вставка текста в любую ячейку Excel, а затем действие клавишей со стрелкой не запишется правильно. Используйте мышь для выделения ячеек.
 
- Если происходит запись действий в пустой ячейке, необходимо изменить код, дважды щелкнув по ячейке и выполнив набор операций с текстом. Это необходимо, поскольку щелчок по ячейке, за которым следует любое действие клавиатуры, активирует `textarea` внутри ячейки. Простая запись `setvalue` в пустой ячейке вызовет поиск `editbox` , которого не существует, пока по ячейке не щелкнули. Пример:
+ Если происходит запись действий в пустой ячейке, необходимо изменить код, дважды щелкнув по ячейке и выполнив набор операций с текстом. Это необходимо, поскольку щелчок по ячейке, за которым следует любое действие клавиатуры, активирует `textarea` внутри ячейки. Простая запись `setvalue` в пустой ячейке вызовет поиск `editbox` , которого не существует, пока по ячейке не щелкнули. Пример.
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
@@ -138,10 +138,10 @@ uiGridKeyboardInputEdit.Text=value;
  [Индекс содержимого для закодированных тестов пользовательского интерфейса](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>Руководство
- [Тестирование при непрерывной поставке с использованием Visual Studio 2012, глава 5, "Автоматизация системных тестов"](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>Форум
  [Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=254496)
 
-## <a name="see-also"></a>См. также раздел
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Web performance and load testing SharePoint 2010 and 2013 applications](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Create SharePoint Solutions](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifying and Debugging SharePoint Code](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Building and Debugging SharePoint Solutions](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Profiling the Performance of SharePoint Applications](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+## <a name="see-also"></a>См. также
+ [Использование модели автоматизации пользовательского интерфейса для тестирования](../test/use-ui-automation-to-test-your-code.md) [веб-тестов производительности и нагрузочного тестирования приложения sharepoint 2010 и 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Создание решений SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Проверка и отладка кода SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Создание и отладка решений SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Профилирование производительности приложений SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

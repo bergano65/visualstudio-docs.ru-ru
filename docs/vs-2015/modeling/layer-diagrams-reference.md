@@ -1,5 +1,5 @@
 ---
-title: 'Layer Diagrams: Reference | Microsoft Docs'
+title: 'Схемы слоев: справочные материалы | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -32,7 +32,7 @@ ms.locfileid: "74301609"
 # <a name="layer-diagrams-reference"></a>Схемы слоев: справочные материалы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, you can use a *layer diagram* to visualize the high-level, logical architecture of your system. A layer diagram organizes the physical artifacts in your system into logical, abstract groups called *layers*. Слои описывают основные компоненты системы или задачи, выполняемые этими артефактами. Каждый слой может также содержать вложенные слои, описывающие более подробные задачи.
+В Visual Studio можно использовать *схему слоев* для визуализации логической архитектуры системы на высоком уровне. Схема слоев организует физические артефакты в системе в логические, абстрактные группы, называемые *слоями*. Слои описывают основные компоненты системы или задачи, выполняемые этими артефактами. Каждый слой может также содержать вложенные слои, описывающие более подробные задачи.
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -48,22 +48,22 @@ In Visual Studio, you can use a *layer diagram* to visualize the high-level, log
 
 - дополнительно контролировать предполагаемую архитектуру в процессе разработки и обслуживания кода за счет добавления проверки операций возврата и построения.
 
-  В этом разделе описаны элементы, которые можно использовать на схемах слоев. For more detailed information about how to create and draw layer diagrams, see [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md). For more information about layering patterns, visit the [Patterns & Practices site](https://go.microsoft.com/fwlink/?LinkId=145794).
+  В этом разделе описаны элементы, которые можно использовать на схемах слоев. Более подробные сведения о создании и отрисовке схем слоев см. в разделе [схемы слоев. рекомендации](../modeling/layer-diagrams-guidelines.md). Дополнительные сведения о шаблонах слоев см. на [веб-сайте patterns & Practices](https://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-layer-diagrams"></a>Чтение схем слоев
- ![Elements on layer diagrams](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
+ ![Элементы на схемах слоев](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
 
  В следующей таблице описаны элементы, которые можно использовать на схемах слоев.
 
-|**Shape**|**Элемент**|**Описание**|
+|**Сектор**|**Элемент**|**Описание**|
 |---------------|-----------------|---------------------|
-|1|**Layer**|Логическая группа физических артефактов в системе. Артефактами могут быть пространства имен, проекты, классы, методы и т. п.<br /><br /> To see the artifacts that are linked to a layer, open the shortcut menu for the layer, and then choose **View Links** to open **Layer Explorer**.<br /><br /> For more information, see [Layer Explorer](#Explorer).<br /><br /> -   **Forbidden Namespace Dependencies** - Specifies that artifacts associated with this layer cannot depend on the specified namespaces.<br />-   **Forbidden Namespaces** - Specifies that artifacts associated with this layer must not belong to the specified namespaces.<br />-   **Required Namespaces** - Specifies that artifacts associated with this layer must belong to one of the specified namespaces.|
-|2|**Dependency**|Указывает, что один слой может использовать функции другого слоя, но не наоборот.<br /><br /> -   **Direction** - Specifies the direction of the dependency.|
-|3|**Bidirectional Dependency**|Указывает, что один слой может использовать функции другого слоя и наоборот.<br /><br /> -   **Direction** - Specifies the direction of the dependency.|
+|1|**Уровневые**|Логическая группа физических артефактов в системе. Артефактами могут быть пространства имен, проекты, классы, методы и т. п.<br /><br /> Чтобы просмотреть артефакты, связанные с слоем, откройте контекстное меню слоя и выберите **Просмотреть ссылки** , чтобы открыть **Обозреватель слоев**.<br /><br /> Дополнительные сведения см. в разделе [Обозреватель слоев](#Explorer).<br /><br /> -   **Запрещенные зависимости пространств имен** — указывает, что артефакты, связанные с этим слоем, не могут зависеть от указанных пространств имен.<br />-   **Запрещенные пространства имен** . указывает, что артефакты, связанные с этим слоем, не должны принадлежать к указанным пространствам имен.<br />-   **обязательные пространства имен** — указывает, что артефакты, связанные с этим слоем, должны принадлежать одному из указанных пространств имен.|
+|2|**Зависимостей**|Указывает, что один слой может использовать функции другого слоя, но не наоборот.<br /><br /> **направление** -   — задает направление зависимости.|
+|3|**Двунаправленная зависимость**|Указывает, что один слой может использовать функции другого слоя и наоборот.<br /><br /> **направление** -   — задает направление зависимости.|
 |4|**Комментарий**|Используется для добавления общих примечаний к схеме или ее элементам.|
-|5|**Comment Link**|Используется для связи комментариев с элементами на схеме.|
+|5|**Ссылка на комментарий**|Используется для связи комментариев с элементами на схеме.|
 
-## <a name="Explorer"></a> Layer Explorer
+## <a name="Explorer"></a>Обозреватель слоев
  Каждый слой можно связать с артефактами в решении, например с проектами, классами, пространствами имен, файлами проекта и другими частями программного обеспечения. Число на слое обозначает количество связанных с этим слоем артефактов. Число артефактов в слое следует толковать с учетом следующих факторов.
 
 - Если слой связан с артефактом, содержащим другие артефакты, но слой не связан с другими артефактами напрямую, то число включает только связанный артефакт. Однако для анализа в ходе проверки слоя включаются другие артефакты.
@@ -80,19 +80,19 @@ In Visual Studio, you can use a *layer diagram* to visualize the high-level, log
 
 #### <a name="to-examine-the-linked-artifacts"></a>Просмотр связанных артефактов
 
-- On the layer diagram, open the shortcut menu for one or more layers, and then choose **View Links**.
+- На схеме слоев откройте контекстное меню для одного или нескольких слоев и выберите **Просмотреть ссылки**.
 
-     **Layer Explorer** opens and shows the artifacts that are linked to the selected layers. **Layer Explorer** has a column that shows each of the properties of the artifact links.
+     Откроется **Обозреватель слоев** , в котором отображаются артефакты, связанные с выбранными слоями. В **обозревателе слоев** имеется столбец, показывающий каждое из свойств ссылок артефактов.
 
     > [!NOTE]
-    > If you cannot see all of these properties, expand the **Layer Explorer** window.
+    > Если вы не видите все эти свойства, разверните окно **Обозреватель слоев** .
 
-    |**Column in Layer Explorer**|**Описание**|
+    |**Столбец в обозревателе слоев**|**Описание**|
     |----------------------------------|---------------------|
-    |**Categories**|Вид артефакта, например класс, пространство имен, исходный файл и т. д.|
-    |**Layer**|Связанный с артефактом слой|
-    |**Supports Validation**|If **True**, then the layer validation process can verify that the project conforms to dependencies to or from this element.<br /><br /> If **False**, then the link does not participate in the layer validation process.<br /><br /> For more information, see [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md).|
+    |**Категорий**|Вид артефакта, например класс, пространство имен, исходный файл и т. д.|
+    |**Уровневые**|Связанный с артефактом слой|
+    |**Поддержка проверки**|Если **значение — true**, процесс проверки слоев может проверить, соответствует ли проект зависимостям к или из этого элемента.<br /><br /> Если **значение равно false**, ссылка не участвует в процессе проверки слоев.<br /><br /> Дополнительные сведения см. в разделе [схемы слоев. рекомендации](../modeling/layer-diagrams-guidelines.md).|
     |**Идентификатор**|Ссылка на связанный артефакт|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)

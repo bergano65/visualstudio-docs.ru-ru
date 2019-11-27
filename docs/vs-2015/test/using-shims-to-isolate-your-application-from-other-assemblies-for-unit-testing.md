@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  Очень важно правильно ликвидировать каждый контекст оболочки. Как правило, следует всегда вызывать `ShimsContext.Create` внутри оператора `using`, чтобы гарантировать правильный сброс зарегистрированных оболочек. Например, можно зарегистрировать оболочку для метода теста, заменяющего метод `DateTime.Now` делегатом, который всегда возвращает 1 января 2000 г. Если вы забудете сбросить зарегистрированную оболочку в методе теста, остальная часть тестового запуска всегда будет возвращать в качестве значения DateTime.Now 1 января 2000 г. Это может быть неожиданно и неудобно.
 
 ### <a name="WriteShims"></a> Создание теста с оболочками
- В коде теста вставьте *обход* для метода, который требуется имитировать. Пример:
+ В коде теста вставьте *обход* для метода, который требуется имитировать. Пример.
 
 ```csharp
 [TestClass]
@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>См. также раздел
- [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost’s blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
+## <a name="see-also"></a>См. также
+ [Изоляция тестируемого кода с помощью подпрограммы Microsoft имитирует](../test/isolating-code-under-test-with-microsoft-fakes.md) [блог Питер Провоста: видео о оболочках Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(1:16): тестирование Нетестируемого кода с имитациями в Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)

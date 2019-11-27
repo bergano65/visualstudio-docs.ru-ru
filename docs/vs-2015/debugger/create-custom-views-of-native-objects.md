@@ -1,5 +1,5 @@
 ---
-title: Create Custom Views of Native Objects | Microsoft Docs
+title: Создание пользовательских представлений собственных объектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,13 +42,13 @@ ms.locfileid: "74299487"
 
  Например, на рисунке ниже показана переменная типа [Windows::UI::Xaml::Controls::TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) , отображаемая в отладчике без применения дополнительных пользовательских визуализаций.  
 
- ![TextBox default visualization](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
+ ![Визуализация по умолчанию для текстового поля](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
  В выделенной строке показано свойство `Text` класса `TextBox` . Сложная иерархия класса затрудняет поиск этого решения; кроме того, отладчик не знает, как интерпретировать тип настраиваемой строки, используемый объектом, поэтому мы не видим строку, находящуюся внутри текстового поля.  
 
  Тот же тип объекта `TextBox` выглядит гораздо проще в окне переменных, когда применяются пользовательские правила визуализации. Важные члены класса можно просматривать вместе, и отладчик может отображать базовое строковое значение типа настраиваемой строки.  
 
- ![TextBox data using visualizer](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
+ ![Данные текстового поля с помощью визуализатора](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
 
 ## <a name="BKMK_Using_Natvis_files"></a> Использование файлов Natvis  
  NATVIS-файлы — это XML-файлы с расширением .natvis. Схема определена в **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**.  
@@ -105,13 +105,13 @@ ms.locfileid: "74299487"
  Команда **.natvisreload** используется при обновлении NATVIS-файла до более новой версии (например, если при записи в систему управления версиями после изменения требуется получить последние изменения, внесенные в файл другими пользователями). Рекомендуется изменять файлы Natvis с помощью XML-редактора Visual Studio.  
 
 ## <a name="BKMK_Expressions_and_formatting"></a> Выражения и форматирование  
- Визуализации Natvis используют выражения C++ для указания элементов данных для отображения. In addition to the enhancements and limitations of C++ expressions in the debugger that are described in [Context Operator (C++)](../debugger/context-operator-cpp.md), you should be aware of the following differences:  
+ Визуализации Natvis используют выражения C++ для указания элементов данных для отображения. В дополнение к усовершенствованиям и ограничениям C++ выражений в отладчике, описанных в [операторе контекста (C++)](../debugger/context-operator-cpp.md), следует учитывать следующие отличия.  
 
 - Выражения Natvis вычисляются в контексте визуализируемого объекта, а не текущего кадра стека. Например, при использовании `x` в выражении Natvis, он ссылается на поле с именем `x` в визуализируемом объекте, а не на локальную переменную с именем `x` в выполняющейся в данный момент функции. Локальные переменные недоступны в выражениях Natvis, хотя доступны глобальные переменные.  
 
 - Выражения Natvis не позволяют выполнять вычисление функции или реализовать побочные эффекты. Это означает, что вызовы функций и операторы присваивания игнорируются. Поскольку [встроенные функции отладчика](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) не зависимы от побочных эффектов, их можно свободно вызывать из любого выражения Natvis, даже если другие вызовы функций запрещены.  
 
-  To control how an expression is displayed in a variable window, you can use any of the format specifiers that are described in the [Format Specifiers](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) section of the [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) topic. Note that format specifiers are ignored when the virtualization entry is used internally by Natvis, such as the `Size` expression in an ArrayItems expansion.  
+  Чтобы управлять отображением выражения в окне переменных, можно использовать любой из описателей формата, описанных в разделе [описатели формата](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) [описателей формата в C++ ](../debugger/format-specifiers-in-cpp.md) разделе. Обратите внимание, что описатели формата игнорируются, если запись виртуализации используется для внутренних целей Natvis, например `Size` выражение в расширении ArrayItems.  
 
 ## <a name="natvis-views"></a>Представления Natvis  
  Представления Natvis позволяют просматривать любой тип несколькими способами. Например, можно определить представление с именем **simple** , которое создает упрощенное представление типа. Вот пример визуализации `std::vector`:  
@@ -132,7 +132,7 @@ ms.locfileid: "74299487"
 
  Элементы `DisplayString` и `ArrayItems` используются в представлении по умолчанию и простом представлении, а элементы `[size]` и `[capacity]` исключаются из простого представления. Можно использовать описатель формата **,view** для указания альтернативного представления. В окне **Контрольные значения** простое представление указывается как **vec,view(simple)** :  
 
- ![Watch window with simple view](../debugger/media/watch-simpleview.png "Watch-SimpleView")  
+ ![окно контрольных значений с простым представлением](../debugger/media/watch-simpleview.png "Просмотр — Симплевиев")  
 
 ## <a name="BKMK_Diagnosing_Natvis_errors"></a> Диагностика ошибок Natvis  
  Диагностику Natvis можно использовать для устранения проблем синтаксиса и ошибок синтаксического анализа. Когда отладчик обнаруживает ошибки в записи визуализации, анализ которых выполнить не удалось, он просто пропускает ошибки и указывает тип в его необработанной форме или выбирает другую подходящую визуализацию. Чтобы понять, почему определенная запись визуализации пропускается, и просмотреть соответствующие ошибки, можно включить диагностику Natvis ( **Сервис/Параметры/Отладка/Окно вывода/Диагностические сообщения Natvis (только C++)** ). Ошибки отображаются в окне **Вывод** .  
@@ -224,7 +224,7 @@ ms.locfileid: "74299487"
 ```  
 
 #### <a name="BKMK_Versioning"></a> Элемент Version  
- Используйте элемент `Version` для ограничения области визуализаций конкретными модулями и их версиями, чтобы свести к минимуму конфликты имен и иметь возможность использовать разные визуализации для разных версий типов. Пример:  
+ Используйте элемент `Version` для ограничения области визуализаций конкретными модулями и их версиями, чтобы свести к минимуму конфликты имен и иметь возможность использовать разные визуализации для разных версий типов. Пример.  
 
 ```xml  
 <Type Name="DirectUI::Border">  
@@ -299,7 +299,7 @@ ms.locfileid: "74299487"
 
  означает, что переменные типа `CPoint` отображаются следующим образом:  
 
- ![Using a DisplayString element](../debugger/media/dbg-natvis-cpoint-displaystring.png "DBG_NATVIS_CPoint_DisplayString")  
+ ![Использование элемента DisplayString](../debugger/media/dbg-natvis-cpoint-displaystring.png "DBG_NATVIS_CPoint_DisplayString")  
 
  В выражении `DisplayString` `x` и `y`, которые являются членами `CPoint`, находятся внутри фигурных скобок и поэтому их значения вычисляются. Выражение также показывает, как можно экранировать фигурную скобку путем использования двойных фигурных скобок ( `{{` или `}}` ).  
 
@@ -318,7 +318,7 @@ ms.locfileid: "74299487"
 
  Объект `CStringT` выглядит следующим образом:  
 
- ![CStringT DisplayString element](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
+ ![CStringT DisplayString, элемент](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
 
  Визуализация отображает объект `CStringT` в окне переменной следующим образом:  
 
@@ -333,7 +333,7 @@ ms.locfileid: "74299487"
 
  Обратите внимание на значок лупы рядом со значением ниже. Нажатие значка запустит средство визуализации текста, которое отобразит строку, на которую указывает `m_pszData` .  
 
- ![CStringT data with StringView visualizer](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
+ ![CStringT данных с помощью визуализатора Стрингвиев](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
 > Обратите внимание, что `{m_pszData,su}` содержит спецификатор формата C++ ( `su` ), чтобы значение отображалось как строка Юникода. Дополнительные сведения см. в разделе [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
@@ -363,7 +363,7 @@ ms.locfileid: "74299487"
 
  Тип `CRect` будет выглядеть следующим образом.  
 
- ![CRect with Item element expansion](../debugger/media/dbg-natvis-expand-item-crect1.png "DBG_NATVIS_Expand_Item_CRect1")  
+ ![Крект с расширением элемента Item](../debugger/media/dbg-natvis-expand-item-crect1.png "DBG_NATVIS_Expand_Item_CRect1")  
 
  Выражения, заданные в элементах `Width` и `Height` , вычисляются и отображаются в столбце значений. Узел `[Raw View]` автоматически создается отладчиком всякий раз, когда используется пользовательское расширение. Он развернут на снимке экрана выше, чтобы показать, как начальное представление объекта отличается от его визуализации. Расширение Visual Studio по умолчанию создает поддерево для базового класса и перечисляет все данные-члены базового класса в качестве дочерних элементов.  
 
@@ -390,7 +390,7 @@ ms.locfileid: "74299487"
 
  `std::vector` указывает его отдельные элементы, когда он развернут в окне переменных:  
 
- ![std::vector using ArrayItems expansion](../debugger/media/dbg-natvis-expand-arrayitems-stdvector.png "DBG_NATVIS_Expand_ArrayItems_StdVector")  
+ ![std:: Vector с использованием расширения ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-stdvector.png "DBG_NATVIS_Expand_ArrayItems_StdVector")  
 
  Как минимум, узел `ArrayItems` должен иметь:  
 
@@ -424,7 +424,7 @@ ms.locfileid: "74299487"
 
  Здесь приводится пример того, как двумерный объект `Concurrency::array` выглядит в отладчике.  
 
- ![Two dimensional array with ArrayItems expansion](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
+ ![Двумерный массив с расширением ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
 #### <a name="BKMK_IndexListItems_expansion"></a> Расширение IndexListItems  
  Можно использовать расширение `ArrayItems` только в том случае, если элементы массива располагаются в памяти непрерывно. Отладчик переходит к следующему элементу, просто увеличивая свой указатель на текущий элемент. В случаях, когда необходимо манипулировать индексом узла значения, можно использовать узлы `IndexListItems` . Здесь приводится визуализация, использующая узел `IndexListItems` .  
@@ -532,7 +532,7 @@ ms.locfileid: "74299487"
 #### <a name="BKMK_ExpandedItem_expansion"></a> Расширение ExpandedItem  
  Элемент `ExpandedItem` может использоваться для создания агрегированного дочернего представления путем отображения свойств базовых классов или данных-членов так, как будто они являются дочерними элементами визуализируемого типа. Указанное выражение вычисляется, и дочерние узлы результата добавляются в список дочерних элементов визуализируемого типа. Например, предположим, что у нас есть интеллектуальный указатель типа `auto_ptr<vector<int>>` , который обычно будет отображаться следующим образом:  
 
- ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; default expansion](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![Автоматическое&#95;расширение&#60;типа&#60;int&#62; &#62; по умолчанию для векторного прерывания](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
 
  Чтобы просмотреть значения вектора, необходимо развернуть два уровня в окне переменных, проходя через член _Myptr. При добавлении элемента `ExpandedItem` можно исключить переменную `_Myptr` из иерархии и просмотреть непосредственно элементы вектора elements::  
 
@@ -546,7 +546,7 @@ ms.locfileid: "74299487"
 
 ```  
 
- ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; ExpandedItem expansion](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![Автоматическое&#95;расширение&#60;типа&#60;int&#62; &#62; расширение expandeditem](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
 
  В следующем примере показано, как добавлять свойства из базового класса в производный класс. Предположим, класс `CPanel` является производным от `CFrameworkElement`. Вместо повторения свойств, полученных от базового класса `CFrameworkElement` , узел `ExpandedItem` позволяет присоединить эти свойства к дочернему списку класса `CPanel` . Здесь необходим спецификатор формата **nd** , который отключает сопоставление визуализации для производного класса. В противном случае выражение `*(CFrameworkElement*)this` приведет к тому, что визуализация `CPanel` будет применена снова, поскольку правила сопоставления типов визуализации по умолчанию считают ее наиболее подходящей. Использование спецификатора формата **nd** дает отладчику указание использовать визуализацию базового класса или расширение по умолчанию базового класса, если базовый класс не имеет визуализации.  
 
@@ -582,7 +582,7 @@ ms.locfileid: "74299487"
 
 ```  
 
- ![Concurrency::Array with Sythentic element expansio](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
+ ![Concurrency:: Array с элементом Сисентик експансио](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
 
 ### <a name="BKMK_HResult"></a> HResult  
  Элемент `HResult` позволяет настраивать сведения, которые отображаются для HRESULT в окнах отладчика. Элемент `HRValue` должен содержать 32-разрядное значение HRESULT, который требуется настроить. Элемент `HRDescription` содержит сведения, отображаемые в отладчике.  
@@ -617,7 +617,7 @@ ms.locfileid: "74299487"
 
  Атрибут `MenuName` — это то, что пользователи видят как имя визуализатора при открытии раскрывающегося меню рядом со значком лупы в окнах переменных отладчика, например:  
 
- ![UIVisualizer menu shortcut menu](../debugger/media/dbg-natvis-vectorvisualizer.png "DBG_NATVIS_VectorVisualizer")  
+ ![Контекстное меню меню UIVisualizer](../debugger/media/dbg-natvis-vectorvisualizer.png "DBG_NATVIS_VectorVisualizer")  
 
  Каждый тип, определенный в NATVIS–файле, должен явно указать визуализаторы пользовательского интерфейса, которые могут отображать их. Отладчик сопоставляет ссылки визуализаторов в записях типов для сопоставления типов с зарегистрированными визуализаторам. Например, следующая запись типа для `std::vector` ссылается на UIVisualizer в приведенном выше примере.  
 

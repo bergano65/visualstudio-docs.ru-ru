@@ -1,5 +1,5 @@
 ---
-title: Bind WPF controls to a WCF data service | Microsoft Docs
+title: Привязка элементов управления WPF к службе данных WCF | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -34,36 +34,36 @@ ms.locfileid: "74299407"
 
 - Создание модели данных с использованием сущностей (EDM), сформированной из данных в учебной базе данных AdventureWorksLT.
 
-- Creating a [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] that exposes the data in the Entity Data Model to a WPF application.
+- Создание [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], предоставляющей данные в EDM приложению WPF.
 
 - Создание набора элементов управления с привязкой к данным путем перетаскивания элементов из окна **Источники данных** в конструктор WPF.
 
 - Создание кнопок для перехода вперед и назад по записям клиентов.
 
-- Creating a button that saves changes to data in the controls to the [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] and the underlying data source.
+- Создание кнопки, сохраняющей изменения данных в элементах управления, на [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] и в базовом источнике данных.
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. You can download the AdventureWorksLT database from the [CodePlex Web site](https://go.microsoft.com/fwlink/?linkid=87843).
+- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
-- Службы данных WCF. For more information, see [Overview](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - Модели данных в [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].
 
-- Модели EDM и ADO.NET Entity Framework. For more information, see [Entity Framework Overview](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).
+- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Entity Framework обзор](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).
 
-- Работа с Конструктором WPF. For more information, see [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
+- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [Общие сведения о конструкторе WPF и Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
 - Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
-## <a name="create-the-service-project"></a>Create the service project
+## <a name="create-the-service-project"></a>Создание проекта службы
  Начните работу с данным пошаговым руководством с создания проекта для [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
 #### <a name="to-create-the-service-project"></a>Порядок создания проекта службы
@@ -76,14 +76,14 @@ ms.locfileid: "74299407"
 
 4. Выберите шаблон проекта **Веб-приложение ASP.NET**.
 
-5. In the **Name** box, type `AdventureWorksService` and click **OK**.
+5. В поле **имя** введите `AdventureWorksService` и нажмите кнопку **ОК**.
 
-     Visual Studio creates the `AdventureWorksService` project.
+     Visual Studio создает проект `AdventureWorksService`.
 
 6. В **обозревателе решений** щелкните правой кнопкой мыши **Default.aspx** и выберите пункт **Удалить**. Этот файл для прохождения данного руководства не требуется.
 
-## <a name="create-an-entity-data-model-for-the-service"></a>Create an Entity Data Model for the service
- Чтобы предоставить данные приложению с помощью [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], следует определить модель данных для этой службы. The [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] supports two types of data models: Entity Data Models, and custom data models that are defined by using common language runtime (CLR) objects that implement the <xref:System.Linq.IQueryable%601> interface. В данном пошаговом руководстве вы создадите модель EDM для использования в качестве модели данных.
+## <a name="create-an-entity-data-model-for-the-service"></a>Создание EDM для службы
+ Чтобы предоставить данные приложению с помощью [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], следует определить модель данных для этой службы. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] поддерживает два типа моделей данных: модели EDM и пользовательские модели данных, которые определяются с помощью объектов среды CLR, реализующих интерфейс <xref:System.Linq.IQueryable%601>. В данном пошаговом руководстве вы создадите модель EDM для использования в качестве модели данных.
 
 #### <a name="to-create-an-entity-data-model"></a>Создание модели EDM
 
@@ -91,7 +91,7 @@ ms.locfileid: "74299407"
 
 2. В списке "Установленные шаблоны" щелкните **Данные** и выберите элемент проекта **Модель ADO.NET EDM**.
 
-3. Change the name to `AdventureWorksModel.edmx`, and click **Add**.
+3. Измените имя на `AdventureWorksModel.edmx`и нажмите кнопку **Добавить**.
 
      Открывается **Мастер моделей EDM**.
 
@@ -110,33 +110,33 @@ ms.locfileid: "74299407"
 8. Нажмите кнопку **Готово**.
 
 ## <a name="create-the-service"></a>Создание службы
- Create a [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] to expose the data in the Entity Data Model to a WPF application.
+ Создайте [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] для предоставления данных в EDM приложению WPF.
 
 #### <a name="to-create-the-service"></a>Создание службы
 
 1. В меню **Проект** выберите пункт **Добавить новый элемент**.
 
-2. In the Installed Templates list, click **Web**, and then select the **WCF Data Service** project item.
+2. В списке Установленные шаблоны щелкните **веб**, а затем выберите элемент проект **службы данных WCF** .
 
-3. In the **Name** box, type `AdventureWorksService.svc`, and click **Add**.
+3. В поле **имя** введите `AdventureWorksService.svc`и нажмите кнопку **Добавить**.
 
-     Visual Studio adds the `AdventureWorksService.svc` to the project.
+     Visual Studio добавит `AdventureWorksService.svc` в проект.
 
 ## <a name="configure-the-service"></a>Настройка службы
  Вам необходимо настроить службу на использование созданной модели EDM.
 
 #### <a name="to-configure-the-service"></a>Порядок настройки службы
 
-1. In the `AdventureWorks.svc` code file, replace the `AdventureWorksService` class declaration with the following code.
+1. В файле кода `AdventureWorks.svc` замените объявление класса `AdventureWorksService` следующим кодом.
 
      [!code-csharp[Data_WPFWCF#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs#1)]
      [!code-vb[Data_WPFWCF#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb#1)]
 
-     This code updates the `AdventureWorksService` class, so that it derives from a <xref:System.Data.Services.DataService%601> that operates on the `AdventureWorksLTEntities` object context class in your Entity Data Model. Он также обновляет метод `InitializeService`, чтобы предоставить клиентам службы полный доступ на чтение/запись к сущности `SalesOrderHeader`.
+     Этот код обновляет класс `AdventureWorksService`, чтобы он наследовался от <xref:System.Data.Services.DataService%601>, который работает с классом `AdventureWorksLTEntities` контекста объекта в EDM. Он также обновляет метод `InitializeService`, чтобы предоставить клиентам службы полный доступ на чтение/запись к сущности `SalesOrderHeader`.
 
 2. Соберите проект и убедитесь в отсутствии ошибок.
 
-## <a name="create-the-wpf-client-application"></a>Create the WPF client application
+## <a name="create-the-wpf-client-application"></a>Создание клиентского приложения WPF
  Чтобы отобразить данные из [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], создайте новое приложение WPF с источником данных, основанным на этой службе. Позднее в этом пошаговом руководстве вы добавите в приложение элементы управления с привязкой к данным.
 
 #### <a name="to-create-the-wpf-client-application"></a>Порядок создания клиентского приложения WPF
@@ -149,7 +149,7 @@ ms.locfileid: "74299407"
 
 4. В поле **Имя** введите `AdventureWorksSalesEditor`, а затем нажмите кнопку **ОК**.
 
-     Visual Studio adds the `AdventureWorksSalesEditor` project to the solution.
+     Visual Studio добавляет проект `AdventureWorksSalesEditor` в решение.
 
 5. В меню **Данные** выберите команду **Показать источники данных**.
 
@@ -163,24 +163,24 @@ ms.locfileid: "74299407"
 
 8. В диалоговом окне **Добавление ссылки на службу** щелкните элемент **Найти**.
 
-     Visual Studio searches the current solution for available services, and adds `AdventureWorksService.svc` to the list of available services in the **Services** box.
+     Visual Studio выполняет поиск доступных служб в текущем решении и добавляет `AdventureWorksService.svc` в список доступных служб в поле **службы** .
 
-9. In the **Namespace** box, type `AdventureWorksService`.
+9. В поле **пространство имен** введите `AdventureWorksService`.
 
 10. В поле **Службы** щелкните **AdventureWorksService.svc** и нажмите кнопку **ОК**.
 
-     Visual Studio downloads the service information, and then returns to the **Data Source Configuration** wizard.
+     Visual Studio загрузит сведения о службе, а затем вернет его в мастер **настройки источника данных** .
 
 11. На странице **Добавление ссылки на службу** нажмите кнопку **Готово**.
 
      Visual Studio добавляет узлы, которые представляют данные, возвращаемые службой в окно **Источники данных**.
 
-## <a name="define-the-user-interface-of-the-window"></a>Define the user interface of the window
+## <a name="define-the-user-interface-of-the-window"></a>Определение пользовательского интерфейса окна
  Добавьте несколько кнопок в окно, изменив в XAML в конструкторе WPF. Позднее в рамках данного пошагового руководства вы добавите код, позволяющий пользователям просматривать и обновлять торговые записи с помощью этих кнопок.
 
 #### <a name="to-create-the-window-layout"></a>Создание макета окна
 
-1. In **Solution Explorer**, double-click MainWindow.xaml.
+1. В **Обозреватель решений**дважды щелкните файл MainWindow. XAML.
 
      Открывается окно в Конструкторе WPF.
 
@@ -198,8 +198,8 @@ ms.locfileid: "74299407"
 
 3. Выполните построение проекта.
 
-## <a name="create-the-data-bound-controls"></a>Create the data-bound controls
- Create controls that display customer records by dragging the `SalesOrderHeaders` node from the **Data Sources** window to the designer.
+## <a name="create-the-data-bound-controls"></a>Создание элементов управления с привязкой к данным
+ Создайте элементы управления, отображающие записи клиентов, перетащив узел `SalesOrderHeaders` из окна **Источники данных** в конструктор.
 
 #### <a name="to-create-the-data-bound-controls"></a>Порядок создания элементов управления с привязкой к данным
 
@@ -219,11 +219,11 @@ ms.locfileid: "74299407"
 
    - **rowguid**
 
-     Это действие не позволяет Visual Studio создать элементы управления с привязкой к данным для этих узлов на следующем шаге. For this walkthrough, assume that the end user does not need to see this data.
+     Это действие не позволяет Visual Studio создать элементы управления с привязкой к данным для этих узлов на следующем шаге. В этом пошаговом руководстве предполагается, что конечному пользователю не нужно видеть эти данные.
 
 4. Из окна **Источники данных** перетащите узел **SalesOrderHeaders** на строку сетки под строкой с кнопками.
 
-    Visual Studio формирует XAML и код, который создает набор элементов управления, привязанных к данным в таблице **Продукт**. For more information about the generated XAML and code, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+    Visual Studio формирует XAML и код, который создает набор элементов управления, привязанных к данным в таблице **Продукт**. Дополнительные сведения о созданных XAML и коде см. в разделе [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
 5. Щелкните в конструкторе текстовое поле рядом с меткой **Идентификатор клиента**.
 
@@ -238,7 +238,7 @@ ms.locfileid: "74299407"
    - **Номер заказа на продажу**
 
 ## <a name="load-the-data-from-the-service"></a>Загрузка данных из службы
- Use the service proxy object to load sales data from the service. Then assign the returned data to the data source for the <xref:System.Windows.Data.CollectionViewSource> in the WPF window.
+ Используйте объект прокси службы для загрузки данных о продажах из службы. Затем назначьте возвращенные данные источнику данных для <xref:System.Windows.Data.CollectionViewSource> в окне WPF.
 
 #### <a name="to-load-the-data-from-the-service"></a>Порядок загрузки данных из службы
 
@@ -249,7 +249,7 @@ ms.locfileid: "74299407"
      [!code-csharp[Data_WPFWCF#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFWCF#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#2)]
 
-## <a name="navigatesales-records"></a>Navigatesales records
+## <a name="navigatesales-records"></a>Записи навигатесалес
  Добавьте код, позволяющий пользователям выполнять прокрутку торговых записей с помощью кнопок **\<** и **>** .
 
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Предоставление пользователям возможности навигации по торговым записям
@@ -272,8 +272,8 @@ ms.locfileid: "74299407"
      [!code-csharp[Data_WPFWCF#4](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#4)]
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
-## <a name="saving-changes-to-sales-records"></a>Saving changes to sales records
- Add code that enables users to both view and save changes to sales records by using the **Save changes** button.
+## <a name="saving-changes-to-sales-records"></a>Сохранение изменений в записях о продажах
+ Добавьте код, позволяющий пользователям просматривать и сохранять изменения в записях продаж с помощью кнопки **сохранить изменения** .
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Добавление возможности сохранения изменений в торговых записях
 
@@ -291,9 +291,9 @@ ms.locfileid: "74299407"
 
 #### <a name="to-test-the-application"></a>Тестирование приложения
 
-1. On **Build** menu, click **Build Solution**. Убедитесь, что сборка решения выполняется без ошибок.
+1. В меню **Сборка** выберите пункт **построить решение**. Убедитесь, что сборка решения выполняется без ошибок.
 
-2. Press **Ctrl+F5**.
+2. Нажмите клавиши **CTRL + F5**.
 
      Visual Studio запускает проект **AdventureWorksService** без его отладки.
 
@@ -315,12 +315,12 @@ ms.locfileid: "74299407"
 
 8. Закройте приложение.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
  После прохождения пошагового руководства вы можете выполнить следующие задачи.
 
-- Узнайте, как использовать окно **Источники данных** в Visual Studio для привязки элементов управления WPF к другим типам источников данных. For more information, see [Bind WPF controls to a dataset](../data-tools/bind-wpf-controls-to-a-dataset.md).
+- Узнайте, как использовать окно **Источники данных** в Visual Studio для привязки элементов управления WPF к другим типам источников данных. Дополнительные сведения см. в разделе [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. For more information, see [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
+- Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>См. также раздел
- [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Bind WPF controls to a dataset](../data-tools/bind-wpf-controls-to-a-dataset.md) [Overview](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework Overview](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+## <a name="see-also"></a>См. также
+ [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) привязка элементов управления WPF [к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Привязка элементов управления WPF к](../data-tools/bind-wpf-controls-to-a-dataset.md) [обзору](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) набора данных [Entity Framework обзор](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [конструкторов WPF и Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) обзор [привязки данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

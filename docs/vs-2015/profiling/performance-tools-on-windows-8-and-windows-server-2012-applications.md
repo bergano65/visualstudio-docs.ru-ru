@@ -64,7 +64,7 @@ ms.locfileid: "74299652"
   
 - [Время выполнения функций JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [JavaScript Function Timing on a Remote Device](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Время выполнения функции JavaScript на удаленном устройстве](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
 - [Анализ данных о времени выполнения функций JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
@@ -122,7 +122,7 @@ ms.locfileid: "74299652"
   
  Данные профилирования уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]или [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
- **Windows 8 или Windows Server 2012**  
+ **Windows 8 и Windows Server 2012**  
   
 1. Чтобы собрать данные об уровневом взаимодействии из приложений, выполняющихся на рабочем столе Windows 8 или Windows Server 2012, необходимо использовать метод инструментирования.  
   
@@ -142,9 +142,9 @@ ms.locfileid: "74299652"
   
    **Отчеты TIP**  
   
-   Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] или [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Отчеты об уровневом взаимодействии на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступны.  
+   Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] или [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Получение отчетов об уровневом взаимодействии (TIP) на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступно.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Обозреватель производительности](../profiling/performance-explorer.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

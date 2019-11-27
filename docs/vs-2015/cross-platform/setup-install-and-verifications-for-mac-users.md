@@ -8,7 +8,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
 ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297709"
@@ -20,7 +20,7 @@ ms.locfileid: "74297709"
   
  Для работы с Xamarin на Mac потребуется следующее:  
   
-- Учетная запись Xamarin. Go to [https://www.xamarin.com/](https://www.xamarin.com/) and click **Sign In** on the upper right of the page, then click **Create a new account** on the page that appears. Выберите адрес электронной почты и пароль для учетной записи Xamarin.  
+- Учетная запись Xamarin. Перейдите в [https://www.xamarin.com/](https://www.xamarin.com/) и щелкните **войти** в правом верхнем углу страницы, а затем на появившейся странице щелкните **создать новую учетную запись** . Выберите адрес электронной почты и пароль для учетной записи Xamarin.  
   
 - компьютер Mac с OS X Yosemite (10.10) или более поздней версии с установленными Xcode 7 и Xamarin 4;  
   
@@ -56,13 +56,13 @@ ms.locfileid: "74297709"
   
 2. В программе установки выберите тип установки **Пользовательская** .  
   
-     ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+     ![Выбор параметра Custom в установке Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1.png "Установка Plat для Xamarin")  
   
 3. Установите/снимите следующие флажки:  
   
     1. Установите флажок **"Разработка кроссплатформенных мобильных приложений" > "C#/.NET (Xamarin)"** . При этом также будут автоматически выбраны различные инструменты Android в разделе "Общие средства и пакеты средств разработки".  
   
-         ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+         ![Выбор параметра Xamarin в разделе&#45;межплатформенная разработка мобильных приложений](../cross-platform/media/cross-plat-xamarin-setup-2.png "Установка Plat для Xamarin. 2")  
   
     2. Снимите флажок **"Разработка кроссплатформенных мобильных приложений" > "Эмулятор Microsoft Visual Studio для Android"** .  
   
@@ -70,7 +70,7 @@ ms.locfileid: "74297709"
   
 5. После завершения установки запустите Visual Studio и выполните вход с помощью учетной записи Майкрософт при появлении соответствующего запроса (это та же учетная запись, что используется и в Windows). Проверьте наличие обновлений для Xamarin через меню **"Сервис" > "Параметры" > Xamarin** или **"Сервис" > "Параметры" > Xamarin > "Другие"** , где вы найдете ссылку **Проверить сейчас**:  
   
-     ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+     ![Проверка наличия обновлений Xamarin в параметрах Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "Настройка Plat Xamarin 3")  
   
     > [!NOTE]
     > Требуется обновить Xamarin до версии 4.0.3.214 или более поздней, чтобы избежать проблем с более ранними лицензиями Xamarin.  Если при попытке проверить наличие обновлений возникает ошибка Microsoft Build Tools, см. беседу на [форумах по Xamarin](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
@@ -83,7 +83,7 @@ ms.locfileid: "74297709"
 ### <a name="xamarin-studio"></a>Xamarin Studio  
  Во-первых, убедитесь, что при переходе по указанным ссылкам у вас выбран **Xamarin Studio** в правом верхнем углу, чтобы увидеть правильную версию документации по Xamarin:  
   
- ![Selecting Xamarin Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
+ ![Выбор Xamarin Studio для просмотра правильной документации по Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
   
  **Android**  
   
@@ -100,7 +100,7 @@ ms.locfileid: "74297709"
 ### <a name="visual-studio"></a>Visual Studio  
  Во-первых, убедитесь, что при переходе по указанным ссылкам у вас выбран **Visual Studio** в правом верхнем углу, чтобы увидеть правильную версию документации по Xamarin:  
   
- ![Selecting Visual Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
+ ![Выбор Visual Studio для просмотра правильной документации по Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
   
  Также войдите с помощью своей учетной записи Xamarin, выбрав **"Сервис" > "Учетная запись Xamarin..."** .  
   
@@ -128,8 +128,8 @@ ms.locfileid: "74297709"
   
    2. Выберите целевой объект **iPhoneSimulator** из раскрывающегося списка сборки Visual Studio, как показано ниже. Если симуляторов в списке нет, запустите Xcode на компьютере Mac, выберите **Xcode -> Preferences** (Xcode -> Параметры) и нажмите кнопку **Download** (Cкачать). В разделе **Components** (Компоненты) вы должны увидеть доступные для скачивания версии симулятора. Дополнительные инструкции по отладке можно найти на странице Xamarin [Отладка](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com).  
   
-        ![Selecting the iPhoneSimulator build target](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
+        ![Выбор целевого объекта сборки iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
   
    3. Выберите целевой объект iPhone в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу F5. Это откроет симулятор на Mac, где можно будет взаимодействовать с приложением во время отладки из Visual Studio.  
   
-        ![Selecting an iPhone debug target](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
+        ![Выбор целевого объекта отладки iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")

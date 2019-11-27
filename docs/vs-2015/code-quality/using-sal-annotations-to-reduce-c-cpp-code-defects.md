@@ -1,5 +1,5 @@
 ---
-title: Using SAL Annotations to Reduce C-C++ Code Defects | Microsoft Docs
+title: Использование аннотаций SAL для сокращения дефектов C-C++ Code | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -23,44 +23,44 @@ ms.locfileid: "74291887"
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Использование аннотаций SAL для сокращения количества дефектов в коде C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-SAL is the Microsoft source code annotation language. By using source code annotations, you can make the intent behind your code explicit. These annotations also enable automated static analysis tools to analyze your code more accurately, with significantly fewer false positives and false negatives.  
+SAL — это язык заметок исходного кода Майкрософт. С помощью заметок исходного кода можно сделать так, чтобы код был в явном виде. Эти аннотации также позволяют автоматически выполнять анализ кода с помощью автоматизированных средств статического анализа, при этом значительно меньше ложных срабатываний и ложных отрицательных результатов.  
   
- The articles in this section of the documentation discuss aspects of SAL, provide reference for SAL syntax, and give examples of its use.  
+ Статьи в этом разделе документации обсуждают аспекты SAL, предоставляют Справочник по синтаксису SAL и предоставляют примеры использования.  
   
 - [Основные сведения о языке SAL](../code-quality/understanding-sal.md)  
   
-     Provides information and examples that show the core SAL annotations.  
+     Содержит сведения и примеры, показывающие основные аннотации SAL.  
   
 - [Создание примечаний к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)  
   
-     Lists the SAL annotations for functions and function parameters.  
+     Список аннотаций SAL для функций и параметров функций.  
   
 - [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)  
   
-     Lists the SAL annotations for functions and function behavior.  
+     Перечисляет аннотации SAL для функций и поведения функций.  
   
 - [Аннотация структур и классов](../code-quality/annotating-structs-and-classes.md)  
   
-     Lists the SAL annotations for structures and classes.  
+     Список аннотаций SAL для структур и классов.  
   
 - [Аннотация поведения блокировки](../code-quality/annotating-locking-behavior.md)  
   
-     Explains how to use SAL annotations with lock mechanisms.  
+     Объясняется, как использовать аннотации SAL с механизмами блокировки.  
   
 - [Указание времени и места применения примечания](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
-     Lists the SAL annotations that specify the condition or scope (placement) of other SAL annotations.  
+     Список аннотаций SAL, указывающих условие или область (размещение) других аннотаций SAL.  
   
 - [Встроенные функции](../code-quality/intrinsic-functions.md)  
   
-     Lists the intrinsic SAL annotations.  
+     Список встроенных аннотаций SAL.  
   
 - [Рекомендации и примеры](../code-quality/best-practices-and-examples-sal.md)  
   
-     Provides examples that show how to use SAL annotations. Also explains common pitfalls.  
+     Содержит примеры, демонстрирующие использование аннотаций SAL. Также описываются распространенные ошибки.  
   
 ## <a name="related-resources"></a>Связанные ресурсы  
- [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Блог команды разработчиков анализа кода](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>См. также раздел  
- [SAL 2.0 Annotations for Windows Drivers](https://go.microsoft.com/fwlink/?LinkId=250979)
+## <a name="see-also"></a>См. также  
+ [Примечания SAL 2,0 для драйверов Windows](https://go.microsoft.com/fwlink/?LinkId=250979)

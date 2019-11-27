@@ -1,5 +1,5 @@
 ---
-title: Edit UML models and diagrams | Microsoft Docs
+title: Изменение моделей и схем UML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -35,69 +35,69 @@ ms.locfileid: "74295524"
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- В этом разделе описываются способы редактирования модели, общие для различных типов схем. For more information that is specific to particular types of diagrams, see [Create models for your app](../modeling/create-models-for-your-app.md).
+ В этом разделе описываются способы редактирования модели, общие для различных типов схем. Дополнительные сведения о конкретных типах схем см. в статье [Создание моделей для приложения](../modeling/create-models-for-your-app.md).
 
 ## <a name="in-this-topic"></a>В этом разделе
 
-- [UML Diagrams are Views of a UML Model](#Views)
+- [UML-схемы — это представления модели UML](#Views)
 
-- [Creating UML Modeling Diagrams](#Creating)
+- [Создание UML-схем моделирования](#Creating)
 
-- [Drawing UML Modeling Diagrams](#Drawing)
+- [Рисование UML-схем моделирования](#Drawing)
 
-- [Editing Shapes and Connectors](#Editing)
+- [Редактирование фигур и соединителей](#Editing)
 
-- [Undoing Changes to the Model](#Undo)
+- [Отмена изменений модели](#Undo)
 
-- [Sharing Elements between Diagrams](#Sharing)
+- [Совместное использование элементов в диаграммах](#Sharing)
 
-- [Copying Elements and Groups of Related Elements](#Copying)
+- [Копирование элементов и групп связанных элементов](#Copying)
 
-- [Deleting a Model Element or its Views](#Deleting)
+- [Удаление элемента модели или его представлений](#Deleting)
 
-- [Searching text in a diagram](#Searching)
+- [Поиск текста в диаграмме](#Searching)
 
-- [Preparing a Diagram for Presentation](#presentation)
+- [Подготовка схемы для презентации](#presentation)
 
-- [Extending the UML Designers](#extensions)
+- [Расширение конструкторов UML](#extensions)
 
-## <a name="Views"></a> UML Diagrams are Views of a UML Model
- Схемы UML можно создавать и использовать только в проектах моделирования. For more information about how to create diagrams and projects, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
+## <a name="Views"></a>UML-схемы — это представления модели UML
+ Схемы UML можно создавать и использовать только в проектах моделирования. Дополнительные сведения о создании диаграмм и проектов см. в статье [Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 - Проект моделирования содержит одну модель UML. Все схемы UML в проекте является представлением модели UML.
 
-- You can see the model in **UML Model Explorer**. On the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
+- Модель можно увидеть в **обозревателе моделей UML**. В меню **архитектура** выберите пункт **окна**, а затем выберите пункт **Обозреватель моделей UML**.
 
 - Каждая фигура на схеме является представлением элемента в модели. При размещении новой фигуры на схеме вы создаете новый элемент в модели.
 
-- When you save any diagram, Visual Studio saves the whole model, all its diagrams, and the modeling project file.
+- При сохранении любой диаграммы Visual Studio сохраняет всю модель, все ее схемы и файл проекта моделирования.
 
-## <a name="Creating"></a> Creating UML Modeling Diagrams
+## <a name="Creating"></a>Создание UML-схем моделирования
 
-1. On the **Architecture** menu in Visual Studio, click **New UML or Layer Diagram**.
+1. В меню **архитектура** в Visual Studio щелкните **создать UML или схему слоев**.
 
 2. Выберите схему и присвойте ей имя.
 
-3. In **Add to modeling project**, select an existing modeling project, or select **Create a new modeling project**.
+3. В окне **Добавить в проект моделирования**выберите существующий проект моделирования или выберите **создать новый проект моделирования**.
 
    > [!NOTE]
    > Схема моделирования должна существовать внутри проекта моделирования.
 
-   Можно также добавить схему в существующий проект моделирования в обозревателе решений. Right-click the modeling project, point to **Add**, and then click **New Item**.
+   Можно также добавить схему в существующий проект моделирования в обозревателе решений. Щелкните проект моделирования правой кнопкой мыши, наведите указатель на пункт **Добавить**и выберите пункт **новый элемент**.
 
 #### <a name="to-create-an-empty-uml-modeling-project"></a>Создание пустого проекта моделирования UML
 
-- On the **File** menu, point to **New**, click **Project**, and in the **New Project** dialog box, double-click **Modeling Projects**.
+- В меню **файл** наведите указатель мыши на пункт **создать**, выберите **проект**и в диалоговом окне **Новый проект** дважды щелкните **Проекты моделирования**.
 
-  For more information about how to manage modeling projects, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
+  Дополнительные сведения об управлении проектами моделирования см. в статье [Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="Drawing"></a> Drawing UML Modeling Diagrams
+## <a name="Drawing"></a>Рисование UML-схем моделирования
  Схема моделирования отображает коллекцию элементов модели, связанных отношениями. Каждый элемент отображается в виде фигуры, а каждое отношение отображается в виде соединителя между двумя фигурами.
 
- Существует два вида инструментов: для элементов и для отношений. For example, in the UML class diagram Toolbox, **Class** is an element tool, and **Association** is a relationship tool.
+ Существует два вида инструментов: для элементов и для отношений. Например, в панели элементов UML-схемы классов **класс** является инструментом элемента, а **Ассоциация** — инструментом связи.
 
 > [!NOTE]
-> If you want information that is specific to particular diagram types, see [Create models for your app](../modeling/create-models-for-your-app.md).
+> Сведения, относящиеся к конкретным типам диаграмм, см. в разделе [Создание моделей для приложения](../modeling/create-models-for-your-app.md).
 
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Создание элементов и отношений в схеме моделирования UML
 
@@ -106,43 +106,43 @@ ms.locfileid: "74295524"
     В некоторых случаях можно поместить новый элемент внутрь другого элемента. Например, на схеме классов UML можно поместить класс внутрь пакета.
 
    > [!NOTE]
-   > If you cannot see the toolbox, click **Toolbox** on the **View** menu.
+   > Если панель элементов не отображается, в меню **вид** выберите пункт **область элементов** .
 
 2. Чтобы создать отношение, щелкните инструмент отношений, выберите элемент, с которого должно начинаться отношение, и выберите конечный элемент отношения.
 
     Различные типы отношений могут начинаться и заканчиваться разными типами элементов. Например, на схеме классов UML отношение ассоциации не может начинаться или заканчиваться элементом комментария.
 
    > [!NOTE]
-   > Чтобы использовать один инструмент несколько раз, дважды щелкните его. When you have finished, click the **Pointer** tool.
+   > Чтобы использовать один инструмент несколько раз, дважды щелкните его. Завершив работу, щелкните инструмент **указатель** .
 
    На некоторых типах схем можно рисовать простые фигуры. Эти фигуры не являются частью модели, но их можно использовать для привлечения внимания к частям схемы или для разделения ее на различные области.
 
-## <a name="Editing"></a> Editing Shapes and Connectors
+## <a name="Editing"></a>Редактирование фигур и соединителей
  В случае изменения размера или цвета фигуры или изменения маршрута соединителя это никак не повлияет на базовую модель. Однако при переименовании фигуры на схеме или в обозревателе моделей UML соответствующий элемент переименовывается в обозревателе моделей UML и на всех других схемах, содержащих этот элемент.
 
 > [!NOTE]
-> Существует простой способ создавать новые элементы панели элементов, из которых можно формировать группы элементов, или элементы с собственным набором свойств. For more information, see [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md).
+> Существует простой способ создавать новые элементы панели элементов, из которых можно формировать группы элементов, или элементы с собственным набором свойств. Дополнительные сведения см. [в разделе Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md).
 
  На следующем рисунке показано, как изменить размер фигуры или ее имя.
 
- ![Adjusting a model element](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
+ ![Настройка элемента модели](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
 
 > [!TIP]
-> В число встроенных команд не входит команда для аккуратного выравнивания фигур. However, you can easily create your own alignment command by copying the code in the example in [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
+> В число встроенных команд не входит команда для аккуратного выравнивания фигур. Тем не менее можно легко создать собственную команду выравнивания, скопировав код в примере в области [Отображение UML-модели на схемах](../modeling/display-a-uml-model-on-diagrams.md).
 
  На следующем рисунке показано, как настроить маршрут и положение соединителя или его меток.
 
- ![Adjusting a connector](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
+ ![Настройка соединителя](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Перемещение одного конца соединителя на другую фигуру
 
 1. Выполните одно из следующих действий.
 
-   - Press **CTRL** and move the end.
+   - Нажмите клавишу **CTRL** и переместите конец.
 
      \- или -
 
-   - Right-click the connector and then click **Reconnect**.
+   - Щелкните соединитель правой кнопкой мыши и выберите команду **Повторное соединение**.
 
 2. Щелкните конец соединителя, который требуется переместить.
 
@@ -150,55 +150,55 @@ ms.locfileid: "74295524"
 
 #### <a name="to-change-color-or-other-properties-of-an-element-relationship-or-diagram"></a>Изменение цвета или других свойств элемента, отношения или схемы
 
-- Click the element and set the fields in the **Properties** window.
+- Щелкните элемент и задайте поля в окне **Свойства** .
 
-     If you cannot see the **Properties** window, right-click the element, and then click **Properties.**
+     Если окно **Свойства** не отображается, щелкните правой кнопкой мыши элемент и выберите пункт **Свойства.**
 
 #### <a name="to-zoom-in-and-out-on-a-modeling-diagram"></a>Увеличение и уменьшение масштаба схемы моделирования
 
-- Press and hold the **CTRL** key while you rotate the mouse wheel.
+- Нажмите и удерживайте клавишу **CTRL** при вращении колесика мыши.
 
      \- или -
 
-- Press and hold **CTRL+SHIFT**, and then click the left or right mouse button.
+- Нажмите и удерживайте клавиши **CTRL + SHIFT**, а затем щелкните левую или правую кнопку мыши.
 
      \- или -
 
-- On the **Architecture Designers** toolbar, click the plus sign ( **+** ) or minus sign ( **-** ), or choose a zoom level.
+- На панели инструментов **Конструкторы архитектуры** щелкните знак "плюс" ( **+** ) или знак "минус" ( **-** ) или выберите уровень масштаба.
 
-## <a name="Searching"></a> Searching in a Diagram
- Функция быстрого поиска позволяет искать элементы на схеме. You must set **Look in:** to **Current Document**.
+## <a name="Searching"></a>Поиск в диаграмме
+ Функция быстрого поиска позволяет искать элементы на схеме. Необходимо задать параметр **"Искать в:"** в **текущем документе**.
 
 #### <a name="to-search-for-text-in-a-modeling-diagram"></a>Поиск текста на схеме моделирования
 
-1. Press **CTRL+F**.
+1. Нажмите клавиши **CTRL + F**.
 
      \- или -
 
-     On the **Edit** menu, point to **Find and Replace**, and then click **Quick Find**.
+     В меню **Правка** наведите указатель на пункт **найти и заменить**, а затем щелкните **Быстрый поиск**.
 
     > [!NOTE]
-    > In the **Find and Replace** dialog box, you must leave the **Look in** field set to **Current Document**. Другие значения не поддерживаются.
+    > В диалоговом окне **найти и заменить** необходимо оставить поле « **Искать в** », установленное в « **текущий документ**». Другие значения не поддерживаются.
 
-2. Type the text that you want to find, and then click **Find Next**.
+2. Введите текст, который необходимо найти, и нажмите кнопку **Найти далее**.
 
     > [!NOTE]
-    > Если текст, который требуется найти, находится внутри свернутой фигуры, эта фигура будет выделена. Expand the shape, and then click **Find Next** again.
+    > Если текст, который требуется найти, находится внутри свернутой фигуры, эта фигура будет выделена. Разверните фигуру и нажмите кнопку **Найти далее** еще раз.
 
-## <a name="Undo"></a> Undoing Changes to the Model
- You can undo and redo changes that you have made to the model and diagrams by using the **Undo** and **Redo** commands on the **Edit** menu.
+## <a name="Undo"></a>Отмена изменений модели
+ Вы можете отменить и повторить изменения, внесенные в модель и диаграммы, с помощью команд **отменить** и **повторить** в меню **Правка** .
 
- **Each modeling project has a single stack of changes.** Все вносимые в модель и схемы изменения хранятся в этом стеке. Стек также включает в себя изменения фокуса с одной схемы на другую. Команда отмены отменяет изменения в этом стеке.
+ **Каждый проект моделирования имеет один стек изменений.** Все вносимые в модель и схемы изменения хранятся в этом стеке. Стек также включает в себя изменения фокуса с одной схемы на другую. Команда отмены отменяет изменения в этом стеке.
 
  Например, предположим, что выполняются следующие операции: изменение схемы 1, изменение фокуса на схему 2, изменение схемы 2. При отмене изменений первая команда отмены отменит последнее изменение, следующая вернет фокус на схему 1, а третья отменит изменение схемы 1.
 
- **Closing a diagram truncates the stack of changes.** В случае закрытия схемы нельзя отменить изменения, внесенные в эту схему, а также предыдущие изменения модели или любой ее схемы.
+ **Закрытие диаграммы усекает стек изменений.** В случае закрытия схемы нельзя отменить изменения, внесенные в эту схему, а также предыдущие изменения модели или любой ее схемы.
 
- **You cannot undo while you are editing a property.** При редактировании свойства в окне свойств или в метке на схеме можно отменить только изменения, внесенные в это свойство. Завершите изменение свойства нажатием клавиши ВВОД или отмените его, нажав клавишу ESC. После этого вы сможете отменить изменения в модели и схемах.
+ **Нельзя отменить изменения свойства.** При редактировании свойства в окне свойств или в метке на схеме можно отменить только изменения, внесенные в это свойство. Завершите изменение свойства нажатием клавиши ВВОД или отмените его, нажав клавишу ESC. После этого вы сможете отменить изменения в модели и схемах.
 
- **Closing a diagram without saving might not have the effect you expect.** Если внести некоторые изменения, а затем закрыть схему без сохранения, изменения все равно будут сохранены в модели. Рекомендуется закрывать всю модель, если вы хотите сделать это без сохранения.
+ **Закрытие схемы без сохранения может не привести к желаемому результату.** Если внести некоторые изменения, а затем закрыть схему без сохранения, изменения все равно будут сохранены в модели. Рекомендуется закрывать всю модель, если вы хотите сделать это без сохранения.
 
-## <a name="Sharing"></a> Sharing Elements between Diagrams
+## <a name="Sharing"></a>Совместное использование элементов в диаграммах
  Определенный экземпляр элемента модели можно отобразить на схемах несколько раз. Это относится к классам, интерфейсам, компонентам, вариантам использования и субъектам.
 
  Это удобно, если нужно показать различные группы отношений на разных схемах. Например, на одной схеме можно показать ассоциации между классами клиента и адреса. На другой схеме можно снова показать класс адреса, имеющий ассоциацию с почтовым районом.
@@ -209,36 +209,36 @@ ms.locfileid: "74295524"
 
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-uml-model-explorer"></a>Добавление нового представления элемента модели с помощью обозревателя моделей UML
 
-1. To open **UML Model Explorer**, on the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
+1. Чтобы открыть **Обозреватель моделей UML**, в меню **архитектура** выберите пункт **окна**, а затем выберите пункт **Обозреватель моделей UML**.
 
-2. Drag the model element from **UML Model Explorer** to a compatible diagram in the same project.
+2. Перетащите элемент модели из **обозревателя моделей UML** на совместимую схему в том же проекте.
 
      Отображается фигура, предоставляющая представление элемента модели, что может служить дополнением представлений на других схемах или на той же самой схеме.
 
     > [!NOTE]
-    > Иной результат дает перетаскивание класса или компонента на схему последовательностей. В этом случае создается новый жизненный цикл, типом которого является этот класс или компонент. For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
+    > Иной результат дает перетаскивание класса или компонента на схему последовательностей. В этом случае создается новый жизненный цикл, типом которого является этот класс или компонент. Дополнительные сведения см. в разделе [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md).
 
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Добавление нового представления элемента модели с помощью команды "Вставить ссылку"
 
-1. Right-click an existing element, and then click **Copy**.
+1. Щелкните правой кнопкой мыши существующий элемент и выберите команду **Копировать**.
 
-    - Можно скопировать несколько элементов за один раз. Hold down the CTRL key while you click each element, right-click one of them, and then click **Copy**.
+    - Можно скопировать несколько элементов за один раз. Удерживая нажатой клавишу CTRL, щелкните каждый элемент, щелкните правой кнопкой мыши один из них и выберите команду **Копировать**.
 
-2. Right-click an empty part of a compatible diagram, and then click **Paste Reference**.
+2. Щелкните правой кнопкой мыши пустую часть совместимой схемы и выберите команду **Вставить ссылку**.
 
      Появляется другое представление того же самого элемента.
 
     > [!NOTE]
-    > This differs from the **Paste** command, which creates a new element in the model. For more information, see [Copying Elements and Groups of Related Elements](#Copying).
+    > Это отличается от команды **вставки** , которая создает новый элемент в модели. Дополнительные сведения см. в разделе [копирование элементов и групп связанных элементов](#Copying).
 
 > [!NOTE]
 > Если добавить в схему представления двух элементов модели, уже связанных отношением, представление этого отношения также отображается на схеме. В этом представлении можно удалить, только удалив один из элементов из схемы или удалив связь из модели.
 
-## <a name="Copying"></a> Copying Elements and Groups of Related Elements
+## <a name="Copying"></a>Копирование элементов и групп связанных элементов
  Можно копировать и вставлять элементы модели, а также копировать и вставлять группы элементов вместе с отношениями между ними.
 
 > [!NOTE]
-> The **Paste** and **Paste Reference** commands have different effects. **Paste** creates new elements whose properties are like those of the copied elements. **Paste Reference** creates new views of the same elements.
+> Команды **Вставить** и **вставить ссылки** имеют разные эффекты. При **вставке** создаются новые элементы, свойства которых аналогичны копируемым элементам. Команда **Вставить ссылку** создает новые представления тех же элементов.
 
 #### <a name="to-copy-elements-and-their-relationships"></a>Копирование элементов и их отношений
 
@@ -247,11 +247,11 @@ ms.locfileid: "74295524"
     > [!NOTE]
     > Копировать отношения можно только в виде части группы элементов.
 
-2. On the **Edit** menu, click **Copy**.
+2. В меню **Правка** выберите команду **Копировать**.
 
 3. Если требуется скопировать элементы в другую схему, создайте новую схему или откройте существующую.
 
-4. On the **Edit** menu, click **Paste**.
+4. В меню **Правка** выберите команду **Вставить**.
 
     - Отображаются копии элементов вместе с копиями связывающих их отношений.
 
@@ -270,29 +270,29 @@ ms.locfileid: "74295524"
 
    Нельзя реплицировать схему путем копирования и вставки в обозревателе решений.
 
-## <a name="Deleting"></a> Deleting a Model Element or its Views
- Некоторые виды элементов, в частности классификаторы, можно удалить из схемы без удаления их из модели. Классификаторы — это основные элементы, которые отображаются на схемах классов, схемах компонентов и схемах вариантов использования. Они могут отображаться на нескольких схемах. For these types of elements, there are two separate commands: **Remove from Diagram** and **Delete from Model**.
+## <a name="Deleting"></a>Удаление элемента модели или его представлений
+ Некоторые виды элементов, в частности классификаторы, можно удалить из схемы без удаления их из модели. Классификаторы — это основные элементы, которые отображаются на схемах классов, схемах компонентов и схемах вариантов использования. Они могут отображаться на нескольких схемах. Для этих типов элементов существуют две отдельные команды: **удалить из схемы** и **удалить из модели**.
 
  В противоположность этому при удалении отношения из схемы оно всегда удаляется и из модели.
 
 > [!NOTE]
-> Некоторые виды элементов на схеме UML имеют метки. Когда вы выбираете такие элементы, рисуя вокруг них прямоугольник, можно выбрать метки, но не элементы, которым они принадлежат. Удаление подмножества элементов, выбранных таким образом, не поддерживается. To select a subset of these elements, press and hold the **CTRL** key while you click each element.
+> Некоторые виды элементов на схеме UML имеют метки. Когда вы выбираете такие элементы, рисуя вокруг них прямоугольник, можно выбрать метки, но не элементы, которым они принадлежат. Удаление подмножества элементов, выбранных таким образом, не поддерживается. Чтобы выбрать подмножество этих элементов, нажмите и удерживайте клавишу **CTRL** , щелкая каждый элемент.
 
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Удаление представления классификатора из схемы
 
-- Right-click the element on the diagram, and then click **Remove from Diagram**.
+- Щелкните правой кнопкой мыши элемент на схеме и выберите команду **удалить из диаграммы**.
 
   \- или -
 
-- Click the element on the diagram and then press the **DELETE** key.
+- Щелкните элемент на схеме и нажмите клавишу **Delete** .
 
-  - Это представление элемента удаляется. However, the element remains in the model, and you can still find it in **UML Model Explorer**. Все другие представления этого элемента также сохраняются.
+  - Это представление элемента удаляется. Однако элемент остается в модели и по-прежнему можно найти в **обозревателе моделей UML**. Все другие представления этого элемента также сохраняются.
 
-  - Каждый соединитель, оканчивающийся на данной фигуре, удаляется из схемы, однако представленное им отношение остается в модели. You can see the relationship in **UML Model Explorer** under **Relationships**, under each element that it connects.
+  - Каждый соединитель, оканчивающийся на данной фигуре, удаляется из схемы, однако представленное им отношение остается в модели. Связь можно увидеть в **обозревателе моделей UML** в разделе **связи**в каждом подсоединенном элементе.
 
 #### <a name="to-delete-an-element-from-the-model"></a>Удаление элемента из модели
 
-- Right-click the element either in **UML Model Explorer** or on a diagram, and then click **Delete from Model**.
+- Щелкните правой кнопкой мыши элемент в **обозревателе моделей UML** или на схеме, а затем выберите команду **удалить из модели**.
 
   - Элемент удаляется из всех схем, на которых он отображается.
 
@@ -300,31 +300,31 @@ ms.locfileid: "74295524"
 
 #### <a name="to-delete-a-relationship-from-the-model"></a>Удаление отношения из модели
 
-- Right-click the relationship on a diagram or in **UML Model Explorer**, and then click **Delete from Model**.
+- Щелкните правой кнопкой мыши связь на схеме или в **обозревателе моделей UML**и выберите команду **удалить из модели**.
 
     > [!CAUTION]
     > Отношение нельзя удалить из схемы без его удаления из модели.
 
      Отношение удаляется из модели и удаляется из всех схем, на которых оно отображается.
 
-## <a name="presentation"></a> Preparing a Diagram for Presentation
+## <a name="presentation"></a>Подготовка схемы для презентации
  Следующие функции помогают привлечь внимание к определенным частям схемы, добавить пояснения или разделить схему на различные области.
 
-- Можно скопировать любую часть схемы в Word, PowerPoint или другой документ. Select the shapes and connectors you want, right-click and then click **Copy**.
+- Можно скопировать любую часть схемы в Word, PowerPoint или другой документ. Выберите нужные фигуры и соединители, щелкните их правой кнопкой мыши и выберите команду **Копировать**.
 
-- Можно изменить цвет любой фигуры или любого соединителя. Select one or more shapes and change the **Color** property. Если окно **Свойства** не отображается, нажмите клавишу **F4**.
+- Можно изменить цвет любой фигуры или любого соединителя. Выберите одну или несколько фигур и измените свойство **Color** . Если окно **Свойства** не отображается, нажмите клавишу **F4**.
 
-- On diagrams of some kinds, you can draw lines, rectangles and ellipses from the **Simple Shapes** section of the Toolbox. Эти фигуры не являются частью модели UML.
+- На диаграммах некоторых видов линии, прямоугольники и эллипсы можно нарисовать в разделе " **простые фигуры** " панели элементов. Эти фигуры не являются частью модели UML.
 
-- To label an area, you can drag a Comment from the Toolbox and then set its **Transparent** property to **True**. Как и простые фигуры, комментарии не являются частью модели UML и не отображаются в обозревателе моделей UML.
+- Чтобы пометить область, можно перетащить комментарий с панели элементов, а затем присвоить его **прозрачному** свойству **значение true**. Как и простые фигуры, комментарии не являются частью модели UML и не отображаются в обозревателе моделей UML.
 
 - Чтобы добавить заметки и пояснения к элементам модели, можно создать комментарии и связать их с этими элементами.
 
 ### <a name="to-export-a-diagram-as-an-image"></a>Экспорт схемы в виде изображения
- For more information, see [Export diagrams as images](../modeling/export-diagrams-as-images.md).
+ Дополнительные сведения см. в статье [Экспорт схем как изображений](../modeling/export-diagrams-as-images.md).
 
-## <a name="extensions"></a> Extending the UML Designers
- Можно добавить новые функциональные возможности для инструментов UML и адаптировать нотацию схемы под свои потребности. For more information, see [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md).
+## <a name="extensions"></a>Расширение конструкторов UML
+ Можно добавить новые функциональные возможности для инструментов UML и адаптировать нотацию схемы под свои потребности. Дополнительные сведения см. в разделе [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md).
 
-## <a name="see-also"></a>См. также раздел
- [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md) [Analyzing and Modeling Architecture](../modeling/analyze-and-model-your-architecture.md) [Create models for your app](../modeling/create-models-for-your-app.md)
+## <a name="see-also"></a>См. также
+ [Создание проектов моделирования UML и схем](../modeling/create-uml-modeling-projects-and-diagrams.md) [анализ и моделирование архитектура](../modeling/analyze-and-model-your-architecture.md) [Создание моделей для приложения](../modeling/create-models-for-your-app.md)

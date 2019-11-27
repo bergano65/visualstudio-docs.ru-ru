@@ -21,7 +21,7 @@ ms.locfileid: "74299934"
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [Talk to Us](https://docs.microsoft.com/visualstudio/ide/feedback-options).
+Последнюю документацию по Visual Studio см. в разделе [разговор с нами](https://docs.microsoft.com/visualstudio/ide/feedback-options).
 
 Нас интересуют ваши идеи по улучшению нашей документации. Мы не можем ответить вам лично, но обязательно передадим ваши отзывы нужному специалисту.
 
@@ -29,7 +29,7 @@ For the latest documentation on Visual Studio, see [Talk to Us](https://docs.mic
  Используйте кнопку обратной связи (**Была ли эта страница полезной?** ) в нижней части страницы. Эта кнопка имеется на всех страницах MSDN. Если вы ищете ответ, но не можете его найти, сообщите нам, какую информацию вы ищете.
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Я хочу сообщить о проблеме с Visual Studio
- If you are running into issues using Visual Studio such as crashes, sluggish performance, unexpected behavior, and so on, please report the problem to us by right-clicking on the feedback icon next to **QuickLaunch**, or by choosing **Help &#124; Send Feedback &#124; Report a Problem** from the main menu. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
+ При возникновении проблем с использованием Visual Studio, таких как сбои, низкая производительность, непредвиденное поведение и т. д., сообщите о проблеме, щелкнув правой кнопкой мыши значок обратной связи рядом с пунктом **Быстрый**запуск или выбрав **Справка &#124; отправить отзыв &#124; сообщить о проблеме** в главном меню. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Я хочу внести предложение по поводу возможностей Visual Studio
  Если мы можем что-то сделать лучше, сообщите нам об этом! Выберите пункт **Внести предложение** , чтобы предложить функцию или изменение группе Visual Studio.
@@ -50,5 +50,5 @@ For the latest documentation on Visual Studio, see [Talk to Us](https://docs.mic
 
  Стоимость услуг, условия и положения, регламентирующие пользование службами поддержки корпорации Майкрософт могут изменяться с течением времени. Цены и условия могут быть изменены без предварительного уведомления.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Как сообщить о проблеме с Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create a Domain-Specific Language Solution | Microsoft Docs'
+title: Как создать решение на предметно-ориентированном языке | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,10 +25,10 @@ ms.locfileid: "74301401"
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A domain-specific language (DSL) is created by using a specialized [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution.
+Доменный язык (DSL) создается с помощью специализированного [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решения.
 
-## <a name="prerequisites"></a>Необходимые компоненты
- Before you can start this procedure, you must first install these components:
+## <a name="prerequisites"></a>Prerequisites
+ Перед началом этой процедуры необходимо сначала установить следующие компоненты:
 
 |||
 |-|-|
@@ -36,98 +36,98 @@ A domain-specific language (DSL) is created by using a specialized [!INCLUDE[vsp
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
 |Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
-## <a name="creating-a-domain-specific-language-solution"></a>Creating a Domain-Specific Language Solution
+## <a name="creating-a-domain-specific-language-solution"></a>Создание решения на предметно-ориентированном языке
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>To create a domain-specific language solution
+#### <a name="to-create-a-domain-specific-language-solution"></a>Создание решения на предметно-ориентированном языке
 
-1. Start the DSL Wizard.
+1. Запустите мастер DSL.
 
    1. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
 
    2. Откроется диалоговое окно **Новый проект** .
 
-   3. Under **Project types**, expand the **Other Project Types** node, and click **Extensibility**.
+   3. В разделе **типы проектов**разверните узел **другие типы проектов** и щелкните **расширяемость**.
 
-   4. Click **Domain-Specific Language Designer**.
+   4. Щелкните **конструктор предметно-ориентированных языков**.
 
-   5. In the **Name** box, type a name for the solution. Нажмите кнопку **ОК**.
+   5. В поле **имя** введите имя решения. Нажмите кнопку **ОК**.
 
-       The **Domain-Specific Language Designer Wizard** appears.
+       Откроется **мастер конструктор предметно-ориентированных языков** .
 
       > [!NOTE]
-      > Preferably, the name that you type should be a valid Visual C# identifier, because it might be used to generate code.
+      > Желательно, чтобы введенное имя было допустимым визуальным C# идентификатором, поскольку оно может использоваться для создания кода.
 
-      ![Create DSL dialog](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+      ![Диалоговое окно создания DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-2. Choose a DSL template.
+2. Выберите шаблон DSL.
 
-    On the **Select Domain-Specific Language Options** page, select one of the solution templates such as **Minimal Language**. Choose a template that is similar to the DSL that you want to create.
+    На странице **Выбор параметров предметно-ориентированного языка** выберите один из шаблонов решений, например **Минимальный язык**. Выберите шаблон, аналогичный языку DSL, который требуется создать.
 
-    For more information about solution templates, see [Choosing a Domain-Specific Language Solution Template](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Дополнительные сведения о шаблонах решений см. [в разделе Выбор шаблона решения для доменного языка](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3. Enter a filename extension on the **File Extension** page. It should be unique in your computer, and in any computers on which you want to install the DSL. You should see the message **No applications or Visual Studio editors use this extension**.
+3. Введите расширение имени файла на странице **расширение файла** . Он должен быть уникальным на компьютере и на всех компьютерах, на которых требуется установить DSL. Вы должны увидеть сообщение **нет приложений или редакторы Visual Studio используют это расширение**.
 
-   - If you have used the file name extension in previous experimental DSLs that have not been fully installed, you can clear them out by using the **Reset the Experimental Instance** tool, which can be found in the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK menu.
+   - Если вы использовали расширение имени файла в предыдущем экспериментальном DSL, который не был полностью установлен, можно удалить их, используя средство **сброса экспериментального экземпляра** , которое можно найти в меню [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
 
-   - If another [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension that uses this file extension has been fully installed on your computer, consider uninstalling it. On the **Tools** menu, click **Extension Manager**.
+   - Если другое расширение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], использующее это расширение файла, было полностью установлено на компьютере, рассмотрите возможность его удаления. В меню **Сервис** выберите пункт **Диспетчер расширений**.
 
-4. Inspect, and if necessary adjust, the fields in the remaining pages of the wizard. When you are satisfied with the settings, click **Finish**. For more information about the settings, see [DSL Designer Wizard Pages](#settings).
+4. Проверьте и при необходимости скорректируйте поля на оставшихся страницах мастера. Когда параметры будут удовлетворены, нажмите кнопку **Готово**. Дополнительные сведения о параметрах см. в разделе [страницы мастера конструктор DSL](#settings).
 
-    The wizard creates a solution that has two projects, which are named **Dsl** and **DslPackage**.
+    Мастер создаст решение с двумя проектами, именуемыми **DSL** и **DslPackage**.
 
    > [!NOTE]
-   > If you see a message that alerts you not to run text templates from untrusted sources, click **OK**. You can set this message not to appear again.
+   > Если появится сообщение о том, что не нужно запускать текстовые шаблоны из ненадежных источников, нажмите кнопку **ОК**. Вы можете задать, чтобы это сообщение не отображалось снова.
 
-## <a name="settings"></a> The DSL Designer Wizard Pages
- You can leave several of the fields unchanged from their default values. However, make sure that you set the File Extension field.
+## <a name="settings"></a>Страницы мастера Конструктор DSL
+ Можно оставить несколько полей неизменными по значениям по умолчанию. Однако убедитесь, что задано поле расширения файла.
 
-### <a name="solution-settings-page"></a>Solution Settings page
- **Which Template would you like to base your domain specific language on?**
-Choose a template that is similar to the DSL that you want to create. The different templates provide convenient starting points. When you select a solution template, the wizard displays a description. For more information about solution templates, see [Choosing a Domain-Specific Language Solution Template](../modeling/choosing-a-domain-specific-language-solution-template.md).
+### <a name="solution-settings-page"></a>Страница "параметры решения"
+ **В каком шаблоне вы хотите создать доменный язык?**
+Выберите шаблон, аналогичный языку DSL, который требуется создать. Различные шаблоны предоставляют удобные стартовые точки. При выборе шаблона решения мастер отображает описание. Дополнительные сведения о шаблонах решений см. [в разделе Выбор шаблона решения для доменного языка](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- **What do you want to name your domain-specific language?**
-Defaults to the solution name. Code is generated from this value. It must be valid as a C# class name.
+ **Какое имя нужно присвоить доменному языку?**
+По умолчанию используется имя решения. Код создается на основе этого значения. Оно должно быть допустимым в C# качестве имени класса.
 
-### <a name="file-extension-page"></a>File Extension page
- **What extension should model files use?**
-Type a new file extension.
+### <a name="file-extension-page"></a>Страница "расширение файла"
+ **Какое расширение следует использовать для файлов модели?**
+Введите новое расширение файла.
 
- Verify that this file extension has not already been registered for use in this computer, as follows:
+ Убедитесь, что это расширение файла еще не зарегистрировано для использования на этом компьютере, следующим образом:
 
- Look under **Other tools and applications registered to handle this extension**. If you see the message **No applications or Visual Studio editors use this extension**, then you can use this file extension.
+ Просмотрите раздел **другие средства и приложения, зарегистрированные для обработки этого расширения**. Если отображается сообщение **нет приложений или редакторы Visual Studio используют это расширение**, можно использовать это расширение файла.
 
- If you see a list of tools or packages, you should do one of the following:
+ Если отображается список средств или пакетов, необходимо выполнить одно из следующих действий.
 
-- Type a different file extension.
-
-     \- или -
-
-- Reset the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Experimental Instance. This will unregister all of the DSLs that you have previously built. On the **Start** menu, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**. You can rebuild any other DSLs that you want to use again.
+- Введите другое расширение файла.
 
      \- или -
 
-- If a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension that uses this file extension has been fully installed on your computer, uninstall it. On the **Tools** menu, click **Extension Manager**.
+- Сбросьте [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] экспериментальный экземпляр. При этом будет отменена регистрация всех созданных ранее доменных служб. В меню **Пуск** последовательно выберите пункты **все программы**, **пакет SDK для Microsoft Visual Studio 2010**, **средства**, а затем выполните **Сброс экспериментального экземпляра Microsoft Visual Studio 2010**. Вы можете перестроить любой другой домен, который вы хотите использовать снова.
 
-### <a name="product-settings-page"></a>Product Settings page
- **What is the name of the product that the new domain-specific language belongs to?**
-Defaults to the DSL name.
+     \- или -
 
- This value is used in Windows Explorer (or File Explorer) to describe files that have this file extension.
+- Если расширение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], использующее это расширение файла, было полностью установлено на компьютере, удалите его. В меню **Сервис** выберите пункт **Диспетчер расширений**.
 
- **What is the name of the company that the product belongs to?**
-Your company name.
+### <a name="product-settings-page"></a>Страница "параметры продукта"
+ **Каково название продукта, к которому принадлежит новый доменный язык?**
+По умолчанию используется имя DSL.
 
- This value is incorporated into the AssemblyInfo properties of your DSL package.
+ Это значение используется в проводнике Windows (или в проводнике) для описания файлов с этим расширением.
 
- **What is the root namespace for projects in this solution?**
-This defaults to a name composed from your company and product names.
+ **Имя компании, к которой принадлежит продукт?**
+Название вашей компании.
 
-### <a name="signing-page"></a>Signing page
- **Create a strong name key file** The default option is to create a new key to sign your DSL assembly.
+ Это значение включено в свойства AssemblyInfo пакета DSL.
 
- **Use existing strong name key** Use this option if you want to integrate your DSL with another assembly.
+ **Что такое корневое пространство имен для проектов в этом решении?**
+По умолчанию используется имя, состоящее из названий вашей компании и продукта.
 
- For more information about strong naming, see [Creating and Using Strong-Named Assemblies](https://go.microsoft.com/fwlink/?LinkId=186073).
+### <a name="signing-page"></a>Страница подписывания
+ **Создание файла ключа строгого имени** Параметр по умолчанию — создать новый ключ для подписания сборки DSL.
 
-## <a name="see-also"></a>См. также раздел
- [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ **Использовать существующий ключ строгого имени** Используйте этот параметр, если требуется интегрировать DSL с другой сборкой.
+
+ Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](https://go.microsoft.com/fwlink/?LinkId=186073).
+
+## <a name="see-also"></a>См. также
+ [Как определить доменный язык](../modeling/how-to-define-a-domain-specific-language.md) [средства предметно-ориентированных языков Глоссарий](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

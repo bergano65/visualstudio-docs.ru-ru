@@ -1,5 +1,5 @@
 ---
-title: Migrate apps to the Universal Windows Platform (UWP) | Microsoft Docs
+title: Перенос приложений в универсальная платформа Windows (UWP) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -31,13 +31,13 @@ ms.locfileid: "74299469"
 
   Если вы не хотите вносить все эти изменения, узнайте, как [перенести существующие приложения](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) в новый проект универсального приложения Windows.
 
-## <a name="MigrateCSharp"></a> Migrate your C#/VB Windows Store 8.1 or Windows Phone 8.1 apps to use the Universal Windows Platform
+## <a name="MigrateCSharp"></a>Перенесите C#/VB приложения магазина Windows 8,1 Windows Phone или 8,1 для использования универсальная платформа Windows
 
 #### <a name="migrate-your-cvb-project-files"></a>Перенос файлов проекта C# или Visual Basic
 
 1. Чтобы определить установленную универсальную платформу Windows, откройте следующую папку: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Она содержит список папок для каждой установленной универсальной платформы Windows. Имя папки соответствует версии установленной универсальной платформы Windows. Например, для устройства с ОС Windows 10 устанавливается универсальная платформа Windows версии 10.0.10240.0.
 
-     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Откройте папку, чтобы просмотреть установленные версии.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      Можно установить несколько версий универсальной платформы Windows. Мы рекомендуем использовать последнюю версию для вашего приложения.
 
@@ -82,19 +82,19 @@ ms.locfileid: "74299469"
 
 5. В обозревателе решений щелкните существующий проект приложения правой кнопкой мыши и выберите пункт **Выгрузить проект**. После выгрузки проекта щелкните его файл правой кнопкой мыши еще раз и выберите команду изменения файла CSPROJ или VBPROJ.
 
-     ![Right click the project and choose Edit](../misc/media/uap-editproject.png "UAP_EditProject")
+     ![Щелкните правой кнопкой мыши проект и выберите Изменить.](../misc/media/uap-editproject.png "UAP_EditProject")
 
-6. Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:
+6. Найдите элемент PropertyGroup \<>, содержащий элемент \<TargetPlatformVersion > со значением 8,1. Выполните следующие действия для этого \<PropertyGroup > Element:
 
-    1. Set the value of the \<Platform> element to: **x86**.
+    1. Присвойте элементу \<Platform > значение: **x86**.
 
-    2. Add a \<TargetPlatformIdentifier> element and set its value to: **UAP**.
+    2. Добавьте элемент \<TargetPlatformIdentifier > и задайте для него значение: **UAP**.
 
-    3. Change the existing value of the \<TargetPlatformVersion> element to be the value of the Universal Windows Platform version that you installed. Also add a \<TargetPlatformMinVersion> element and give it the same value.
+    3. Измените существующее значение элемента \<TargetPlatformVersion > на значение установленной версии универсальная платформа Windows. Также добавьте элемент \<TargetPlatformMinVersion > и присвойте ему то же значение.
 
-    4. Change the value of the \<MinimumVisualStudioVersion> element to: **14**.
+    4. Измените значение элемента \<Минимумвисуалстудиоверсион > на: **14**.
 
-    5. Replace the \<ProjectTypeGuids> element as shown below:
+    5. Замените элемент \<ProjectTypeGuids >, как показано ниже.
 
          Для C#:
 
@@ -108,11 +108,11 @@ ms.locfileid: "74299469"
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
         ```
 
-    6. Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: **true**.
+    6. Добавьте элемент \<Енабледотнетнативекомпатиблепрофиле > и задайте для него значение: **true**.
 
-    7. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. If your project includes assets not scaled at 200, you will need to add a \<UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
+    7. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Если в проекте есть ресурсы, которые не масштабируются в 200, необходимо добавить элемент \<Уапдефаултассетскале > со значением масштаба ресурсов для этих элементов PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
 
-         Now your \<PropertyGroup> element should look similar to this example:
+         Теперь элемент PropertyGroup \<> должен выглядеть примерно так:
 
         ```xml
         <PropertyGroup>
@@ -140,7 +140,7 @@ ms.locfileid: "74299469"
         <VisualStudioVersion>14.0</VisualStudioVersion>
     ```
 
-8. Find \<PropertyGroup> elements that are configured for the AnyCPU platform as part of the Condition attribute. Удалите эти элементы и все их дочерние элементы. Платформа AnyCPU не поддерживается для приложений Windows 10 в Visual Studio 2015. For example, you should remove \<PropertyGroup> elements like these ones:
+8. Найдите \<PropertyGroup > элементов, которые настроены для платформы AnyCPU как часть атрибута Condition. Удалите эти элементы и все их дочерние элементы. Платформа AnyCPU не поддерживается для приложений Windows 10 в Visual Studio 2015. Например, следует удалить \<PropertyGroup > элементов, как показано ниже.
 
     ```xml
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -164,7 +164,7 @@ ms.locfileid: "74299469"
       </PropertyGroup>
     ```
 
-9. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
+9. Для каждого оставшегося \<PropertyGroup > Element проверьте, имеет ли элемент атрибут Condition с конфигурацией выпуска. Если это так, но не содержит элемент \<UseDotNetNativeToolchain >, добавьте его. Присвойте элементу \<UseDotNetNativeToolchain > значение true следующим образом:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
@@ -181,7 +181,7 @@ ms.locfileid: "74299469"
       </PropertyGroup>
     ```
 
-10. For Windows Phone projects only, remove the \<PropertyGroup> element that contains a \<TargetPlatformIdentifier> element with a value of WindowsPhoneApp. Также удалите все его дочерние элементы.
+10. Только для Windows Phone проектов удалите элемент \<PropertyGroup >, содержащий элемент \<TargetPlatformIdentifier > со значением Виндовсфонеапп. Также удалите все его дочерние элементы.
 
     ```xml
     <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
@@ -189,27 +189,27 @@ ms.locfileid: "74299469"
     </PropertyGroup>
     ```
 
-11. Find the \<ItemGroup> element that contains the \<AppxManifest> element. Add the following \<None> element as a child of the \<ItemGroup> element:
+11. Найдите элемент \<ItemGroup >, содержащий элемент \<AppxManifest >. Добавьте следующий элемент > \<None в качестве дочернего элемента \<ItemGroup >:
 
     ```xml
     <None Include="project.json" />
     ```
 
-12. Find the \<ItemGroup> element that contains other assets that are added to your project such as logo .png files (\<Content Include="Assets\Logo.scale-100.png" />). Add the following \<Content> child element to this \<ItemGroup> element:
+12. Найдите элемент ItemGroup > \<, который содержит другие ресурсы, добавленные в проект, такие как файлы Logo. png (содержимое\<включает = "Assets\Logo.scale-100.png"/>). Добавьте следующее \<содержимого > дочерний элемент в этот \<ItemGroup > элемент:
 
-     **For C#:**
+     **Для C#:**
 
     ```xml
     <Content Include="Properties\default.rd.xml" />
     ```
 
-     **For VB:**
+     **Для VB:**
 
     ```xml
     <Content Include="My Project\default.rd.xml" />
     ```
 
-13. Find the \<ItemGroup> element that includes \<Reference> children elements to NuGet packages. Запишите пакеты NuGet, которые вы использовали, так как их потребуется загрузить с помощью диспетчера пакетов NuGet после перезагрузки проекта. Remove this \<ItemGroup> along with its children. Например, проект UWP может содержать следующие пакеты NuGet, которые необходимо удалить.
+13. Найдите элемент \<ItemGroup >, включающий \<ссылку > дочерние элементы в пакеты NuGet. Запишите пакеты NuGet, которые вы использовали, так как их потребуется загрузить с помощью диспетчера пакетов NuGet после перезагрузки проекта. Удалите этот \<ItemGroup > вместе с его дочерними элементами. Например, проект UWP может содержать следующие пакеты NuGet, которые необходимо удалить.
 
     ```xml
     <ItemGroup>
@@ -246,13 +246,13 @@ ms.locfileid: "74299469"
 
      Теперь необходимо выполнить инструкции по [обновлению файлов манифеста пакета](#PackageManifest) для всех проектов для Магазина Windows 8.1 и Windows Phone 8.1.
 
-## <a name="MigrateCPlusPlus"></a> Migrate your C++ Windows Store 8.1 or Windows Phone 8.1 apps to use the Universal Windows Platform
+## <a name="MigrateCPlusPlus"></a>Перенесите C++ приложения из магазина Windows 8,1 или Windows Phone 8,1 для использования универсальная платформа Windows
 
 #### <a name="migrate-your-c-project-files"></a>Перенос файлов проекта C++
 
 1. Чтобы определить установленную универсальную платформу Windows, откройте следующую папку: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Она содержит список папок для каждой установленной универсальной платформы Windows. Имя папки соответствует версии установленной универсальной платформы Windows. Например, для устройства с ОС Windows 10 устанавливается универсальная платформа Windows версии 10.0.10240.0.
 
-     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Откройте папку, чтобы просмотреть установленные версии.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      Можно установить несколько версий универсальной платформы Windows. Мы рекомендуем использовать последнюю версию для вашего приложения.
 
@@ -260,23 +260,23 @@ ms.locfileid: "74299469"
 
      Щелкните правой кнопкой мыши существующий проект в обозревателе решений и выберите пункт **Выгрузить проект**. После выгрузки проекта щелкните его файл правой кнопкой мыши еще раз и выберите команду изменения файла VCXPROJ.
 
-     ![Right&#45;click project file and choose to edit](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")
+     ![Щелкните&#45;правой кнопкой мыши файл проекта и выберите команду "Изменить".](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")
 
-3. Find the \<PropertyGroup> element that contains the \<ApplicationTypeRevision> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:
+3. Найдите элемент PropertyGroup \<>, содержащий элемент \<ApplicationTypeRevision > со значением 8,1. Выполните следующие действия для этого \<PropertyGroup > Element:
 
-    1. Add a \<WindowsTargetPlatformVersion> element and a \<WindowsTargetPlatformMinVersion> element and give them the value of the Universal Windows Platform version that you installed.
+    1. Добавьте элемент \<WindowsTargetPlatformVersion > и элемент \<Виндовстаржетплатформминверсион > и присвойте им значение установленной версии универсальная платформа Windows.
 
     2. Обновите значение элемента ApplicationTypeRevision с 8.1 до 10.0.
 
-    3. Change the value of the \<MinimumVisualStudioVersion> element to: 14.
+    3. Измените значение элемента \<Минимумвисуалстудиоверсион > на: 14.
 
-    4. Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: true.
+    4. Добавьте элемент \<Енабледотнетнативекомпатиблепрофиле > и задайте для него значение: true.
 
-    5. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. If your project includes assets not scaled at 200, you will need to add a \<UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
+    5. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Если в проекте есть ресурсы, которые не масштабируются в 200, необходимо добавить элемент \<Уапдефаултассетскале > со значением масштаба ресурсов для этих элементов PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
 
-    6. For Windows Phone projects only, change the value of \<ApplicationType> from Windows Phone to Windows Store.
+    6. Для Windows Phone только проектов измените значение \<ApplicationType > с Windows Phone на Магазин Windows.
 
-         Now your \<PropertyGroup> element should look similar to this example:
+         Теперь элемент PropertyGroup \<> должен выглядеть примерно так:
 
         ```xml
         <PropertyGroup>
@@ -292,7 +292,7 @@ ms.locfileid: "74299469"
         </PropertyGroup>
         ```
 
-4. Change all instances of the \<PlatformToolset> element to have the value v140. Пример:
+4. Измените значение V140 для всех экземпляров элемента \<PlatformToolset >. Пример.
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -304,7 +304,7 @@ ms.locfileid: "74299469"
       </PropertyGroup>
     ```
 
-5. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
+5. Для каждого оставшегося \<PropertyGroup > Element проверьте, имеет ли элемент атрибут Condition с конфигурацией выпуска. Если это так, но не содержит элемент \<UseDotNetNativeToolchain >, добавьте его. Присвойте элементу \<UseDotNetNativeToolchain > значение true следующим образом:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
@@ -323,16 +323,16 @@ ms.locfileid: "74299469"
 
      Теперь необходимо выполнить инструкции по [обновлению файлов манифеста пакета](#PackageManifest) для всех проектов для Магазина Windows 8.1 и Windows Phone 8.1.
 
-## <a name="PackageManifest"></a> Update your package manifest file for all your Windows Store 8.1 or Windows Phone 8.1 projects
+## <a name="PackageManifest"></a>Обновите файл манифеста пакета для всех проектов Магазина Windows 8,1 или Windows Phone 8,1
  Файл манифеста пакета необходимо обновить для каждого проекта в рамках решения.
 
 #### <a name="update-your-package-manifest-file"></a>Обновление файла манифеста пакета
 
 1. Откройте файл Package.appxmanifest в проекте. Файл Package.AppxManifest необходимо изменить для каждого проекта приложения Магазина Windows и приложения для Windows Phone.
 
-2. You need to update the \<Package> element with the new schemas based on your existing project type. Сначала удалите указанные ниже схемы в соответствии с типом проекта (приложение Магазина Windows или приложение для Windows Phone).
+2. Необходимо обновить элемент \<пакета > с новыми схемами, основанными на существующем типе проекта. Сначала удалите указанные ниже схемы в соответствии с типом проекта (приложение Магазина Windows или приложение для Windows Phone).
 
-    **OLD for Windows Store project:** Your \<Package> element will look similar to this one.
+    **Старый проект для Магазина Windows:** Элемент > пакета \<будет выглядеть примерно так.
 
    ```xml
    <Package
@@ -341,7 +341,7 @@ ms.locfileid: "74299469"
 
    ```
 
-    **OLD for Windows Phone project:** Your \<Package> element will look similar to this one.
+    **Старый для проекта Windows Phone:** Элемент > пакета \<будет выглядеть примерно так.
 
    ```xml
    <Package
@@ -351,7 +351,7 @@ ms.locfileid: "74299469"
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
    ```
 
-    **NEW for Universal Windows Platform:** Add the schemas below to your \<Package> element. Удалите из элементов префиксы идентификаторов пространств имен, связанные со схемами, которые вы удалили. Обновите свойство IgnorableNamespaces, присвоив ему значение uap mp. Your new \<Package> element should look similar to this one.
+    **Новые для универсальная платформа Windows:** Добавьте приведенные ниже схемы в элемент \<пакета >. Удалите из элементов префиксы идентификаторов пространств имен, связанные со схемами, которые вы удалили. Обновите свойство IgnorableNamespaces, присвоив ему значение uap mp. Новый элемент > пакета \<должен выглядеть примерно так.
 
    ```xml
    <Package
@@ -362,7 +362,7 @@ ms.locfileid: "74299469"
 
    ```
 
-3. Add a \<Dependencies> child element to the \<Package> element. Then add a \<TargetDeviceFamily> child element to this \<Dependencies> element with Name, MinVersion, and MaxVersionTested attributes. Присвойте атрибуту Name следующее значение: Windows.Universal. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Этот элемент должен выглядеть следующим образом:
+3. Добавьте \<зависимости > дочернего элемента в элемент \<пакета >. Затем добавьте \<TargetDeviceFamily > дочерний элемент к этому \<зависимостей > элемент с атрибутами name, MinVersion и Maxversiontested укажите установленную. Присвойте атрибуту Name следующее значение: Windows.Universal. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Этот элемент должен выглядеть следующим образом:
 
    ```xml
    <Dependencies>
@@ -370,16 +370,16 @@ ms.locfileid: "74299469"
    </Dependencies>
    ```
 
-4. **For Windows Store only:** You need to add a \<mp:PhoneIdentity> child element to the \<Package> element. Добавьте атрибуты PhoneProductId и PhonePublisherId. Set the PhoneProductId to have the same value as the Name attribute in the \<Identity> element. Присвойте атрибуту PhonePublishedId значение 00000000-0000-0000-0000-000000000000. Пример:
+4. **Только для Магазина Windows:** Необходимо добавить дочерний элемент \<MP: Фонеидентити > в элемент \<пакета >. Добавьте атрибуты PhoneProductId и PhonePublisherId. Задайте для Фонепродуктид то же значение, что и атрибут Name в элементе \<Identity >. Присвойте атрибуту PhonePublishedId значение 00000000-0000-0000-0000-000000000000. Пример:
 
    ```xml
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />
    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
    ```
 
-5. Find the \<Prerequisites> element and delete this element and any child elements that it has.
+5. Найдите элемент \<необходимые компоненты > и удалите этот элемент и все его дочерние элементы.
 
-6. Add the **uap** namespace to the following \<Resource> elements: Scale, DXFeatureLevel. Пример:
+6. Добавьте пространство имен **UAP** в следующие \<ресурс > элементы: Scale, дксфеатурелевел. Пример.
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ ms.locfileid: "74299469"
 
    ```
 
-7. Add the **uap** namespace to the following \<Capability> elements: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, appointments, and contacts. Пример:
+7. Добавьте пространство имен **UAP** в следующие возможности \<> элементов: Документслибрари, Пиктуреслибрари, Видеослибрари, Мусиклибрари, Ентерприсеаусентикатион, SharedUserCertificates, removableStorage, встречах и Contacts. Пример.
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ ms.locfileid: "74299469"
 
    ```
 
-8. Add the **uap** namespace to the \<VisualElements> element and any of its child elements. Пример:
+8. Добавьте пространство имен **UAP** в элемент > \<висуалелементс и все его дочерние элементы. Пример.
 
    ```xml
    <uap:VisualElements
@@ -414,7 +414,7 @@ ms.locfileid: "74299469"
 
    ```
 
-    **Только для проектов Магазина Windows.** Названия размеров плитки изменились. Change the attributes in the \<VisualElements> element to reflect the new converged tile sizes. Размер 70x70 изменен на 71x71, а 30x30 — на 44x44.
+    **Только для проектов Магазина Windows.** Названия размеров плитки изменились. Измените атрибуты в элементе \<Висуалелементс >, чтобы отразить новые размеры Объединенных плиток. Размер 70x70 изменен на 71x71, а 30x30 — на 44x44.
 
     **Прежний вариант** названий размеров плитки:
 
@@ -444,7 +444,7 @@ ms.locfileid: "74299469"
 
    ```
 
-9. Add the **uap** namespace to the \<ApplicationContentUriRules> and all its child elements. Пример:
+9. Добавьте пространство имен **UAP** в > \<аппликатионконтентурирулес и все его дочерние элементы. Пример.
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ ms.locfileid: "74299469"
 
     ```
 
-10. Add the **uap** namespace to the following \<Extension> elements and all of its child elements: windows.accountPictureProvide,  windows.alarm, windows.appointmentsProvider windows.autoPlayContent,  windows.autoPlayDevice, windows.cachedFileUpdate, windows.cameraSettings, windows.fileOpenPicker, windows.fileTypeAssociation, windows.fileSavePicke, windows.lockScreenCall, windows.printTaskSettings, windows.protocol, windows.search, windows.shareTarget. Пример:
+10. Добавьте пространство имен **UAP** в следующие \<расширения > элементы и все его дочерние элементы: Windows. аккаунтпиктурепровиде, Windows. Alarm, Windows. аппоинтментспровидер Windows. аутоплайконтент, Windows. аутоплайдевице, Windows. качедфилеупдате, Windows. cameraSettings, Windows. FileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Протокол, Windows. Search, Windows. shareTarget. Пример.
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ ms.locfileid: "74299469"
 
     ```
 
-11. Добавьте пространство имен **uap** в фоновые задачи типа chatMessageNotification. Пример:
+11. Добавьте пространство имен **uap** в фоновые задачи типа chatMessageNotification. Пример.
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -480,9 +480,9 @@ ms.locfileid: "74299469"
 
     ```
 
-12. Измените зависимости платформы. Add a Publisher name to all \<PackageDependency> elements, and specify a MinVersion if it’s not already specified.
+12. Измените зависимости платформы. Добавьте имя издателя ко всем элементам \<Паккажедепенденци > и укажите MinVersion, если оно еще не указано.
 
-     **OLD:** \<PackageDependency> element
+     **Old:** \<паккажедепенденци > элемент
 
     ```xml
     <Dependencies>
@@ -491,7 +491,7 @@ ms.locfileid: "74299469"
 
     ```
 
-     **NEW:** \<PackageDependency> element
+     **New:** \<паккажедепенденци > элемент
 
     ```xml
     <Dependencies>
@@ -505,9 +505,9 @@ ms.locfileid: "74299469"
 
      Укажите соответствующие значения Publisher и MinVersion для используемой платформы. Учтите, что в Windows 10 эти имена могут измениться.
 
-13. Замените фоновые задачи типов gattCharacteristicNotification и rfcommConnection задачей типа Bluetooth. Пример:
+13. Замените фоновые задачи типов gattCharacteristicNotification и rfcommConnection задачей типа Bluetooth. Пример.
 
-     **OLD:**
+     **ИСХОДНОГО**
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -528,9 +528,9 @@ ms.locfileid: "74299469"
     </Extension>
     ```
 
-14. Замените возможности устройства Bluetooth bluetooth.rfcomm и bluetooth.genericAttributeProfile универсальной возможностью Bluetooth. Пример:
+14. Замените возможности устройства Bluetooth bluetooth.rfcomm и bluetooth.genericAttributeProfile универсальной возможностью Bluetooth. Пример.
 
-     **OLD:**
+     **ИСХОДНОГО**
 
     ```xml
     <Capabilities>
@@ -558,15 +558,15 @@ ms.locfileid: "74299469"
 
 15. Удалите все нерекомендуемые элементы.
 
-    1. These attributes for \<VisualElements> are deprecated and should be removed:
+    1. Эти атрибуты для \<Висуалелементс > являются устаревшими и должны быть удалены:
 
-       - The \<VisualElements> attributes: ForegroundText, ToastCapable
+       - \<Висуалелементс > атрибуты: Фореграундтекст, Тоасткапабле
 
-       - The \<DefaultTile> attribute DefaultSize
+       - Атрибут \<Дефаулттиле > Дефаултсизе
 
-       - The \<ApplicationView> element
+       - Элемент \<Аппликатионвиев >
 
-         Пример:
+         Пример.
 
        ```xml
        <m2:VisualElements
@@ -585,7 +585,7 @@ ms.locfileid: "74299469"
 
 17. Прежде чем повторно открывать решение, необходимо удалить некоторые скрытые файлы.
 
-    1. Откройте проводник, на панели инструментов нажмите **Вид** и выберите пункты **Скрытые элементы** и **Расширения имен файлов**. Open this folder on your machine: \<path for the location of your solution>\\.vs\\{Project Name}\v14. Если есть файл с расширением SUO, удалите его.
+    1. Откройте проводник, на панели инструментов нажмите **Вид** и выберите пункты **Скрытые элементы** и **Расширения имен файлов**. Откройте эту папку на компьютере: \<путь к расположению решения >\\. VS\\{имя проекта} \v14. Если есть файл с расширением SUO, удалите его.
 
     2. Теперь вернитесь к папке, в которой находится решение. Откройте папки проектов, имеющихся в решении. Если внутри этих папок есть файлы с расширением CSPROJ.USER или VBPROJ.USER, удалите их.
 
@@ -593,21 +593,21 @@ ms.locfileid: "74299469"
 
          Узнайте, как [адаптировать код](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx) для использования новых возможностей универсальной платформы Windows.
 
-## <a name="PreviousVersions"></a> Changes required for existing Universal Windows apps created with Visual Studio 2015 RC
+## <a name="PreviousVersions"></a>Изменения, необходимые для существующих универсальных приложений Windows, созданных с помощью версии-КАНДИДАТа Visual Studio 2015
  Если вы создали универсальные приложения для Windows 10 с помощью версии-кандидата Visual Studio 2015, проект необходимо изменить так, чтобы он использовал версию универсальной платформы Windows, установленную с последним выпуском Visual Studio 2015. Предыдущие версии не поддерживаются. Необходимые изменения различаются в зависимости от языка, на котором было создано приложение:
 
-- [C#/VB apps](#RCUpdate10CSharp)
+- [C#Приложения/VB](#RCUpdate10CSharp)
 
-- [C++ apps](#RCUpdate10CPlusPlus)
+- [C++приложениям](#RCUpdate10CPlusPlus)
 
-### <a name="RCUpdate10CSharp"></a> Update your C#/VB projects to use the latest Universal Windows Platform
+### <a name="RCUpdate10CSharp"></a>Обновление проектов C#/VB для использования последней версии универсальная платформа Windows
  При открытии решения существующего приложения вы увидите, что приложение требуется обновить.
 
- ![View your project in Solution Explorer](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")
+ ![Просмотр проекта в обозреватель решений](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")
 
  Если вы выберете перезагрузку этого проекта в обозревателе решений, появится следующее диалоговое окно.
 
- ![Retarget your app to use the correct SDK](../misc/media/missingsdkforuap.png "MissingSDKforUAP")
+ ![Измените целевое приложение, чтобы использовать правильный пакет SDK](../misc/media/missingsdkforuap.png "миссингсдкфоруап")
 
  Так как пакет SDK универсальной платформы Windows для вашего проекта больше не поддерживается, вы не сможете установить его. Просто нажмите кнопку "ОК" и выполните описанные ниже действия.
 
@@ -615,7 +615,7 @@ ms.locfileid: "74299469"
 
 1. Чтобы определить установленную универсальную платформу Windows, откройте следующую папку: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Она содержит список папок для каждой установленной универсальной платформы Windows. Имя папки соответствует версии установленной универсальной платформы Windows. Например, для устройства с ОС Windows 10 устанавливается универсальная платформа Windows версии 10.0.10240.0.
 
-    ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+    ![Откройте папку, чтобы просмотреть установленные версии.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
     Можно установить несколько версий универсальной платформы Windows. Мы рекомендуем использовать последнюю версию для вашего приложения.
 
@@ -647,13 +647,13 @@ ms.locfileid: "74299469"
 
 3. В Visual Studio откройте решение, содержащее универсальное приложение Windows на языке C# или VB. Вы увидите, что файл проекта (CSPROJ или VBPROJ) необходимо обновить. Щелкните файл проекта правой кнопкой мыши и выберите команду редактирования.
 
-    ![Right click the project and choose Edit](../misc/media/uap-editproject.png "UAP_EditProject")
+    ![Щелкните правой кнопкой мыши проект и выберите Изменить.](../misc/media/uap-editproject.png "UAP_EditProject")
 
-4. Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements. Change the existing value of the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements to be the same version of the Universal Windows Platform that you have installed.
+4. Найдите элемент \<PropertyGroup >, содержащий элементы \<TargetPlatformVersion > и \<TargetPlatformMinVersion >. Измените существующее значение \<TargetPlatformVersion > и \<TargetPlatformMinVersion >, чтобы они совпадали с установленной версией универсальная платформа Windows.
 
-    Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
+    Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Проекты, созданные с помощью версии-КАНДИДАТа Visual Studio 2015, которые включали в себя ресурсы, масштабируемые в 100, необходимо добавить в этот PropertyGroup элемент \<Уапдефаултассетскале > со значением 100. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
 
-5. При добавлении ссылок на пакет SDK расширения UWP (например, Windows Mobile SDK) потребуется обновить версию пакета SDK. For example this \<SDKReference> element:
+5. При добавлении ссылок на пакет SDK расширения UWP (например, Windows Mobile SDK) потребуется обновить версию пакета SDK. Например, это \<элемент > SDKReference:
 
    ```xml
    <SDKReference Include="WindowsMobile, Version=10.0.0.1">
@@ -671,7 +671,7 @@ ms.locfileid: "74299469"
 
    ```
 
-6. Find the \<Target> element with a name attribute that has the value: EnsureNuGetPackageBuildImports. Удалите этот элемент и все его дочерние элементы.
+6. Найдите элемент \<Target > с атрибутом Name, имеющим значение Енсуренужетпаккажебуилдимпортс. Удалите этот элемент и все его дочерние элементы.
 
    ```xml
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -683,7 +683,7 @@ ms.locfileid: "74299469"
    </Target>
    ```
 
-7. Find and delete the \<Import> elements with Project and Condition attributes that reference Microsoft.Diagnostics.Tracing.EventSource and Microsoft.ApplicationInsights, like this:
+7. Найдите и удалите \<импортировать > элементы с атрибутами Project и Condition, которые ссылаются на Microsoft. Diagnostics. Tracing. EventSource и Microsoft. ApplicationInsights, например:
 
    ```xml
    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />
@@ -691,9 +691,9 @@ ms.locfileid: "74299469"
 
    ```
 
-8. Find the \<ItemGroup> that has \<Reference> children elements to NuGet packages. Запишите пакеты NuGet, на которые имеются ссылки, так как эти сведения потребуются для следующей процедуры. Одно важное отличие форматов проектов для Windows 10 между версией-кандидатом Visual Studio 2015 и окончательной первоначальной версией Visual Studio 2015 RTM заключается в том, что в последней версии используется формат [NuGet](https://docs.microsoft.com/nuget/) версии 3.
+8. Найдите \<ItemGroup >, который содержит \<ссылки на дочерние элементы > в пакеты NuGet. Запишите пакеты NuGet, на которые имеются ссылки, так как эти сведения потребуются для следующей процедуры. Одно важное отличие форматов проектов для Windows 10 между версией-кандидатом Visual Studio 2015 и окончательной первоначальной версией Visual Studio 2015 RTM заключается в том, что в последней версии используется формат [NuGet](https://docs.microsoft.com/nuget/) версии 3.
 
-    Remove the \<ItemGroup> and all its children. Например, проект UWP, созданный в версии-кандидате Visual Studio, будет содержать следующие пакеты NuGet, которые необходимо удалить.
+    Удалите \<ItemGroup > и все его дочерние элементы. Например, проект UWP, созданный в версии-кандидате Visual Studio, будет содержать следующие пакеты NuGet, которые необходимо удалить.
 
    ```xml
    <ItemGroup>
@@ -721,7 +721,7 @@ ms.locfileid: "74299469"
 
    ```
 
-9. Find the \<ItemGroup> element that contains an \<AppxManifest> element. If there is a \<None> element with an Include attribute set to: packages.config, delete it. Also, add a \<None> element with an Include attribute and set its value to: project.json.
+9. Найдите элемент \<ItemGroup >, содержащий элемент \<AppxManifest >. Если имеется элемент > \<None с атрибутом Include, установленным в: Packages. config, удалите его. Кроме того, добавьте элемент > \<None с атрибутом Include и задайте для него значение: Project. JSON.
 
 10. Сохраните изменения. Закройте файл проекта.
 
@@ -731,7 +731,7 @@ ms.locfileid: "74299469"
 
 13. Откройте файл Package.appxmanifest в проекте.
 
-    1. Find the \<TargetDeviceFamily> element. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Пример:
+    1. Найдите элемент \<TargetDeviceFamily >. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Пример:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -745,25 +745,25 @@ ms.locfileid: "74299469"
 
     При наличии проектов модульных тестов для универсальных приложений Windows необходимо также выполнить [эти действия](#MigrateUnitTest).
 
-### <a name="RCUpdate10CPlusPlus"></a> Update your C++ projects to use the latest Universal Windows Platform
+### <a name="RCUpdate10CPlusPlus"></a>Обновите C++ проекты, чтобы использовать последние универсальная платформа Windows
 
 1. Чтобы определить установленную универсальную платформу Windows, откройте следующую папку: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**. Она содержит список папок для каждой установленной универсальной платформы Windows. Имя папки соответствует версии установленной универсальной платформы Windows. Например, для устройства с ОС Windows 10 устанавливается универсальная платформа Windows версии 10.0.10240.0.
 
-     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Откройте папку, чтобы просмотреть установленные версии.](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      Можно установить несколько версий универсальной платформы Windows. Мы рекомендуем использовать последнюю версию для вашего приложения.
 
 2. Откройте решение, содержащее универсальное приложение Windows на языке C++. Щелкните правой кнопкой мыши VCXPROJ-файл проекта и выберите команду его выгрузки. После выгрузки проекта щелкните его файл правой кнопкой мыши еще раз и выберите команду изменения файла.
 
-     ![Unload the project, then edit the project file](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")
+     ![Выгрузить проект, а затем изменить файл проекта](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")
 
-3. Find any \<PropertyGroup> elements that do not contain a Condition attribute but do contain an \<ApplicationTypeRevision> element. Обновите значение ApplicationTypeRevision с 8.2 до 10.0. Add a \<WindowsTargetPlatformVersion> and a \<WindowsTargetPlatformMinVersion> element and set their values to be the value of the Universal Windows Platform version that you installed.
+3. Найдите все \<PropertyGroup > элементов, которые не содержат атрибут Condition, но содержат элемент \<ApplicationTypeRevision >. Обновите значение ApplicationTypeRevision с 8.2 до 10.0. Добавьте \<WindowsTargetPlatformVersion > и элемент \<Виндовстаржетплатформминверсион > и задайте их значения в качестве значения установленной версии универсальная платформа Windows.
 
-     Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to true if the element does not already exist.
+     Добавьте элемент \<Енабледотнетнативекомпатиблепрофиле > и присвойте ему значение true, если элемент еще не существует.
 
-     Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
+     Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Проекты, созданные с помощью версии-КАНДИДАТа Visual Studio 2015, которые включали в себя ресурсы, масштабируемые в 100, необходимо добавить в этот PropertyGroup элемент \<Уапдефаултассетскале > со значением 100. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).
 
-     So this \<PropertyGroup> element will now be similar to this:
+     Поэтому этот \<PropertyGroup > Element будет выглядеть примерно так:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -779,7 +779,7 @@ ms.locfileid: "74299469"
 
     ```
 
-4. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
+4. Для каждого оставшегося \<PropertyGroup > Element проверьте, имеет ли элемент атрибут Condition с конфигурацией выпуска. Если это так, но не содержит элемент \<UseDotNetNativeToolchain >, добавьте его. Присвойте элементу \<UseDotNetNativeToolchain > значение true следующим образом:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -792,7 +792,7 @@ ms.locfileid: "74299469"
 
     ```
 
-5. You need to update the \<EnableDotNetNativeCompatibleProfile> element and the \<UseDotNetNativeToolchain> element to enable .NET Native, but .NET Native is not enabled in the C++ templates.
+5. Необходимо обновить элемент \<Енабледотнетнативекомпатиблепрофиле > и элемент \<UseDotNetNativeToolchain >, чтобы включить .NET Native, но .NET Native не включен в C++ шаблонах.
 
      Сохраните изменения. Закройте файл проекта.
 
@@ -800,7 +800,7 @@ ms.locfileid: "74299469"
 
 7. Откройте файл Package.appxmanifest в проекте.
 
-    1. Find the \<TargetDeviceFamily> element. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Пример:
+    1. Найдите элемент \<TargetDeviceFamily >. В качестве значений атрибутов MinVersion и MaxVersionTested укажите установленную версию универсальной платформы Windows. Пример:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -812,16 +812,16 @@ ms.locfileid: "74299469"
 
          При наличии проектов модульных тестов для универсальных приложений Windows необходимо также выполнить [эти действия](#MigrateUnitTest).
 
-## <a name="MigrateUnitTest"></a> Changes required for existing unit test projects for Universal Windows apps created with Visual Studio 2015 RC
+## <a name="MigrateUnitTest"></a>Изменения, необходимые для существующих проектов модульных тестов для универсальных приложений Windows, созданных с помощью Visual Studio 2015 RC
  Если вы создавали проекты модульных тестов для универсальных приложений Windows 10 с помощью версии-кандидата Visual Studio 2015, в файлы проектов необходимо внести следующие дополнительные изменения, чтобы такие проекты тестов можно было использовать в последнем выпуске Visual Studio 2015. Необходимые изменения различаются в зависимости от языка, на котором было создано приложение:
 
-- [C#/VB apps](#UnitTestRCUpdate10CSharp)
+- [C#Приложения/VB](#UnitTestRCUpdate10CSharp)
 
-- [C++ apps](#UnitTestRCUpdate10CPlusPlus)
+- [C++приложениям](#UnitTestRCUpdate10CPlusPlus)
 
-### <a name="UnitTestRCUpdate10CSharp"></a> Update your C#/VB unit test projects
+### <a name="UnitTestRCUpdate10CSharp"></a>Обновление проектов C#модульных тестов/VB
 
-1. В Visual Studio откройте решение, содержащее проект модульного теста C# или VB. Change the value of the \<OuttputType> element to: AppContainerExe.
+1. В Visual Studio откройте решение, содержащее проект модульного теста C# или VB. Измените значение элемента \<Ауттпуттипе > на: AppContainerExe.
 
    ```xml
 
@@ -829,7 +829,7 @@ ms.locfileid: "74299469"
 
    ```
 
-2. Replace this element \<EnableCoreRuntime>false\</EnableCoreRuntime> with the following element:
+2. Замените этот элемент \<Енаблекорерунтиме > false\</Енаблекорерунтиме > со следующим элементом:
 
    ```xml
 
@@ -867,7 +867,7 @@ ms.locfileid: "74299469"
 
    ```
 
-4. Add this element \<UseDotNetNativeToolchain>true\</UseDotNetNativeToolchain> as a child element to these property groups:
+4. Добавьте этот элемент \<UseDotNetNativeToolchain > true\</Уседотнетнативетулчаин > как дочерний элемент для этих групп свойств:
 
    ```xml
 
@@ -877,7 +877,7 @@ ms.locfileid: "74299469"
 
    ```
 
-5. Delete the following \<ItemGroup> elements:
+5. Удалите следующие элементы > \<ItemGroup:
 
    ```xml
 
@@ -992,7 +992,7 @@ ms.locfileid: "74299469"
 
    Теперь можно выполнить модульные тесты.
 
-### <a name="UnitTestRCUpdate10CPlusPlus"></a> Update your C++ projects to use the latest Universal Windows Platform
+### <a name="UnitTestRCUpdate10CPlusPlus"></a>Обновите C++ проекты, чтобы использовать последние универсальная платформа Windows
 
 1. В Visual Studio откройте решение, содержащее проект модульного теста C++. Удалите следующие элементы.
 
@@ -1005,7 +1005,7 @@ ms.locfileid: "74299469"
 
     ```
 
-2. Add the following \<ProjectConfiguration> elements below this element \<ItemGroup Label="ProjectConfigurations"> if they are not already in this fille:
+2. Добавьте следующие \<конфигурацию ProjectConfiguration > элементы, расположенные ниже этого элемента \<ItemGroup Label = "Прожектконфигуратионс" > если они еще не включены в эту заливку:
 
     ```xml
 
@@ -1036,7 +1036,7 @@ ms.locfileid: "74299469"
 
     ```
 
-4. Add these \<PropertyGroup> elements if they are not already in the file:
+4. Добавьте эти \<PropertyGroup > элементы, если они еще не находятся в файле:
 
     ```xml
 
@@ -1086,7 +1086,7 @@ ms.locfileid: "74299469"
 
     ```
 
-7. Add these \<ItemDefinitionGroup> elements in the section that already contains other \<ItemDefinitionGroup> elements:
+7. Добавьте эти \<ItemDefinitionGroup > элементы в раздел, который уже содержит другие элементы \<ItemDefinitionGroup >.
 
     ```xml
 
@@ -1113,7 +1113,7 @@ ms.locfileid: "74299469"
 
     ```
 
-8. Delete the following \< ItemGroup> element:
+8. Удалите следующий элемент \< ItemGroup >:
 
     ```xml
 
@@ -1127,7 +1127,7 @@ ms.locfileid: "74299469"
 
     ```
 
-     Replace it with this \<ItemGroup> element:
+     Замените его этим \<ItemGroup > Element:
 
     ```xml
 
@@ -1143,7 +1143,7 @@ ms.locfileid: "74299469"
 
     ```
 
-9. Delete the following \< ItemGroup> element:
+9. Удалите следующий элемент \< ItemGroup >:
 
     ```xml
 
@@ -1152,7 +1152,7 @@ ms.locfileid: "74299469"
     </ItemGroup>
     ```
 
-     Replace it with these \<ItemGroup> elements:
+     Замените его следующими \<ItemGroup > элементами:
 
     ```xml
 
@@ -1176,7 +1176,7 @@ ms.locfileid: "74299469"
     <ClCompile Include="UnitTest.cpp"/>
     ```
 
-     Replace it with these \<CICompile> elements:
+     Замените его следующими элементами \<Цикомпиле >:
 
     ```xml
 

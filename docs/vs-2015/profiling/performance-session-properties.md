@@ -27,7 +27,7 @@ ms.locfileid: "74290117"
   
  **Requirements**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]значение [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]значение [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   **Сеанс анализа производительности** создается либо посредством запуска **мастера производительности**, либо вручную. **Сеанс производительности** отображается в **обозревателе производительности** после того, как был создан **сеанс производительности**.  
   
@@ -35,7 +35,7 @@ ms.locfileid: "74290117"
   
   Ниже перечислены страницы свойств сеанса анализа производительности.  
   
-## <a name="general"></a>Общее  
+## <a name="general"></a>Общие правила  
  Эти параметры позволяют выбрать метод профилирования, добавить коллекцию объектов .NET и данные о времени существования, указать соглашения о наименовании и местоположение файла отчета по умолчанию.  
   
  Дополнительные сведения см. на странице  
@@ -111,7 +111,7 @@ ms.locfileid: "74290117"
   
  [Практическое руководство. Указание дополнительных параметров инструментирования](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Управление сбором данных](../profiling/controlling-data-collection.md)

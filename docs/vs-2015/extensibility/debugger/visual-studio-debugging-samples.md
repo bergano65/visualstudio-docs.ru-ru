@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Debugging Samples | Microsoft Docs
+title: Примеры отладки Visual Studio | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,8 +22,8 @@ ms.locfileid: "74295998"
 # <a name="visual-studio-debugging-samples"></a>Примеры отладки Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Two samples show how to extend the Visual Studio debugger using [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+В двух примерах показано, как расширить отладчик Visual Studio с помощью [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
-- The Debugger Expression Evaluator Sample, for managed languages, is included in the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] window, click the **Samples** tab, click **All** or **C#** in the list of languages, and then click **Debugger**.  
+- Пример средства оценки выражений отладчика для управляемых языков включен в [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. В окне [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] перейдите на вкладку **примеры** , выберите **все** или **C#** в списке языков, а затем щелкните **отладчик**.  
   
-- The Visual Studio Debug Engine Sample, for native languages, is available on MSDN Code Gallery. For more information, see this page on the Microsoft Web site: [Visual Studio Debug Engine Sample](https://go.microsoft.com/fwlink/?LinkId=150236).
+- Пример модуля отладки Visual Studio для собственных языков доступен в коллекции кода MSDN. Дополнительные сведения см. на этой странице веб-сайта корпорации Майкрософт: [Пример модуля отладки Visual Studio](https://go.microsoft.com/fwlink/?LinkId=150236).

@@ -1,5 +1,5 @@
 ---
-title: Image Service and Catalog | Microsoft Docs
+title: Служба образов и каталог | Документация Майкрософт
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -16,61 +16,61 @@ ms.locfileid: "74301169"
 # <a name="image-service-and-catalog"></a>Каталог и служба образов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This cookbook contains guidance and best practices for adopting the Visual Studio Image Service and Image Catalog introduced in Visual Studio 2015.  
+Этот Cookbook содержит рекомендации и рекомендации по внедрению службы образов Visual Studio и каталога образов, появившихся в Visual Studio 2015.  
 
- The image service introduced in Visual Studio 2015 lets developers get the best images for the device and the user’s chosen theme to display the image, including correct theming for the context in which they are displayed. Adopting the image service will help eliminate major pain points related to asset maintenance, HDPI scaling, and theming.  
+ Служба образов, появившаяся в Visual Studio 2015, позволяет разработчикам получить лучшие изображения для устройства и выбранную тему пользователя для отображения изображения, включая исправление для контекста, в котором они отображаются. Внедрение службы образов поможет устранить основные моменты, связанные с обслуживанием активов, масштабированием HDPI и ними.  
 
 |||  
 |-|-|  
-|**Problems today**|**Решения**|  
-|Background color blending|Built-in alpha blending|  
-|Theming (some) images|Theme metadata|  
-|High Contrast mode|Alternate High Contrast resources|  
-|Need multiple resources for different DPI modes|Selectable resources with vector-based fallback|  
-|Duplicate images|One identifier per image concept|  
+|**Проблемы сегодня**|**Решения**|  
+|Смешение цветов фона|Встроенное альфа-смешение|  
+|Их (некоторые) образы|Метаданные темы|  
+|Режим высокая контрастность|Альтернативные ресурсы высокая контрастность|  
+|Требуется несколько ресурсов для разных режимов DPI|Выбираемые ресурсы с применением векторной резервной стратегии|  
+|Дубликаты изображений|Один идентификатор на концепцию образа|  
 
- Why adopt the image service?  
+ Зачем применять службу образов?  
 
-- Always get the latest “pixel-perfect” image from Visual Studio  
+- Всегда получайте новейшие образы из Visual Studio.  
 
-- You can submit and use your own images  
+- Вы можете отправлять и использовать собственные образы.  
 
-- No need to test your images out when Windows adds new DPI scaling  
+- Нет необходимости тестировать изображения, когда Windows добавляет новое масштабирование DPI  
 
-- Address old architectural hurdles in your implementations  
+- Устранение старых архитектурных недостатков в реализациях  
 
-  The Visual Studio shell toolbar before and after using the image service:  
+  Панель инструментов оболочки Visual Studio до и после использования службы изображений:  
 
-  ![Image Service Before and After](../extensibility/media/image-service-before-and-after.png "Служба изображений "до" и "после"")  
+  ![Служба образов до и после](../extensibility/media/image-service-before-and-after.png "Служба изображений "до" и "после"")  
 
-## <a name="how-it-works"></a>How it works  
- The image service can supply a bitmapped image suitable for any supported UI framework:  
+## <a name="how-it-works"></a>Принцип работы  
+ Служба образов может предоставить точечный рисунок, подходящий для любой поддерживаемой платформы пользовательского интерфейса:  
 
-- WPF: BitmapSource  
+- WPF: пересистема  
 
-- WinForms: System.Drawing.Bitmap  
+- WinForms: System. Drawing. Bitmap  
 
-- Win32: HBITMAP  
+- Win32: ХБИТМАП  
 
-  Image service flow diagram  
+  Схема потока службы изображений  
 
-  ![Image Service Flow Diagram](../extensibility/media/image-service-flow-diagram.png "Схема потока службы изображений")  
+  ![Схема потока службы изображений](../extensibility/media/image-service-flow-diagram.png "Схема потока службы изображений")  
 
-  **Image monikers**  
+  **Моникеры изображений**  
 
-  An image moniker (or moniker for short) is a GUID/ID pair that uniquely identifies an image asset or image list asset in the image library.  
+  Моникер образа (или моникер) — это пара GUID/ID, которая однозначно определяет ресурс изображения или ресурс списка изображений в библиотеке изображений.  
 
-  **Known monikers**  
+  **Известные моникеры**  
 
-  The set of image monikers contained in the Visual Studio Image Catalog and publicly consumable by any Visual Studio component or extension.  
+  Набор моникеров образов, содержащихся в каталоге образов Visual Studio и общедоступный для использования любым компонентом или расширением Visual Studio.  
 
-  **Image manifest files**  
+  **Файлы манифестов изображений**  
 
-  Image manifest (.imagemanifest) files are XML files that define a set of image assets, the monikers that represent those assets, and the real image or images that represent each asset. Image manifests can define standalone images or image lists for legacy UI support. Additionally, there are attributes that can be set either on the asset or on the individual images behind each asset to change when and how those assets are displayed.  
+  Файлы манифеста образа (. имажеманифест) — это XML-файлы, определяющие набор ресурсов изображений, моникеров, представляющих эти ресурсы, а также реальные изображения или изображения, представляющие каждый ресурс. Манифесты изображений могут определять автономные образы или списки изображений для устаревшей поддержки пользовательского интерфейса. Кроме того, существуют атрибуты, которые можно задать для ресурса или отдельных изображений каждого ресурса, чтобы изменить время и способ отображения этих ресурсов.  
 
-  **Image manifest schema**  
+  **Схема манифеста образа**  
 
-  A complete image manifest looks like this:  
+  Полный манифест образа выглядит следующим образом:  
 
 ```xml  
 <ImageManifest>  
@@ -89,9 +89,9 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 </ImageManifest>  
 ```  
 
- **Symbols**  
+ **Стрелки**  
 
- As a readability and maintenance aid, the image manifest can use symbols for attribute values. Symbols are defined like this:  
+ Для удобства чтения и обслуживания манифест образа может использовать символы для значений атрибутов. Символы определяются следующим образом:  
 
 ```xml  
 <Symbols>  
@@ -104,13 +104,13 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 
 |||  
 |-|-|  
-|**Subelement**|**Определение**|  
-|Импорт|Imports the symbols of the given manifest file for use in the current manifest|  
-|GUID|The symbol represents a GUID and must match GUID formatting|  
-|ID|The symbol represents an ID and must be a nonnegative integer|  
-|Строковое|The symbol represents an arbitrary string value|  
+|**Подэлемент**|**Определение**|  
+|Импорт|Импортирует символы заданного файла манифеста для использования в текущем манифесте|  
+|Идентификатор GUID|Символ представляет GUID и должен соответствовать форматированию GUID|  
+|ID|Символ представляет идентификатор и должен быть неотрицательным целым числом|  
+|Строка|Символ представляет произвольное строковое значение|  
 
- Symbols are case-sensitive, and referenced using $(symbol-name) syntax:  
+ Символы чувствительны к регистру и указываются с помощью синтаксиса $ (symbol-name):  
 
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -118,24 +118,24 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 </Image>  
 ```  
 
- Some symbols are predefined for all manifests. These can be used in the Uri attribute of the \<Source> or \<Import> element to reference paths on the local machine.  
+ Некоторые символы предопределены для всех манифестов. Их можно использовать в атрибуте URI источника \<> или \<импорта >, чтобы ссылаться на пути на локальном компьютере.  
 
 |||  
 |-|-|  
-|**Symbol**|**Описание**|  
-|CommonProgramFiles|The value of the %CommonProgramFiles% environment variable|  
-|LocalAppData|The value of the %LocalAppData% environment variable|  
-|ManifestFolder|The folder containing the manifest file|  
-|MyDocuments|The full path of the My Documents folder of the current user|  
-|ProgramFiles|The value of the %ProgramFiles% environment variable|  
-|Система|The Windows\System32 folder|  
-|WinDir|The value of the %WinDir% environment variable|  
+|**Знак**|**Описание**|  
+|CommonProgramFiles|Значение переменной среды% CommonProgramFiles%|  
+|LocalAppData|Значение переменной среды% LocalAppData%|  
+|манифестфолдер|Папка, содержащая файл манифеста|  
+|MyDocuments|Полный путь к папке "Мои документы" текущего пользователя|  
+|ProgramFiles|Значение переменной окружения% ProgramFiles%|  
+|Система|Папка Windows\System32|  
+|WinDir|Значение переменной среды% WinDir%|  
 
  **Изображение**  
 
- The \<Image> element defines an image that can be referenced by a moniker. The GUID and ID taken together form the image moniker. The moniker for the image must be unique across the entire image library. If more than one image has a given moniker, the first one encountered while building the library is the one that is retained.  
+ Элемент > изображения \<определяет изображение, на которое может ссылаться моникер. Идентификатор GUID и идентификатор, сопринятый вместе, формируют моникер образа. Моникер для образа должен быть уникальным во всей библиотеке изображений. Если в нескольких изображениях имеется заданное специальное имя, то во время сборки библиотеки будет найден первый из них.  
 
- It must contain at least one source. Size-neutral sources will give the best results across a broad range of sizes, but they are not required. If the service is asked for an image of a size not defined in the \<Image> element and there is no size-neutral source, the service will choose the best size-specific source and scale it to the requested size.  
+ Он должен содержать хотя бы один источник. Источники, не зависящие от размера, дают лучшие результаты в широком диапазоне размеров, но не являются обязательными. Если служба запрашивает изображение размера, не определенного в элементе \<Image > и нет источника, не зависящего от размера, служба выберет оптимальный источник и масштабирует его до запрошенного размера.  
 
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -146,14 +146,14 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 
 |||  
 |-|-|  
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|  
-|GUID|[Required] The GUID portion of the image moniker|  
-|ID|[Required] The ID portion of the image moniker|  
-|AllowColorInversion|[Optional, default true] Indicates whether the image can have its colors programmatically inverted when used on a dark background.|  
+|**Атрибут**|**Определение**|  
+|Идентификатор GUID|Необходимости Часть идентификатора GUID моникера образа|  
+|ID|Необходимости Часть идентификатора моникера образа|  
+|алловколоринверсион|[Необязательно, по умолчанию true] Указывает, может ли изображение изменяться с помощью программного инвертирования цветов при использовании темного фона.|  
 
- **Source**  
+ **Источник**  
 
- The \<Source> element defines a single image source asset (XAML and PNG).  
+ Элемент источника \<> определяет один исходный ресурс изображения (XAML и PNG).  
 
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -163,22 +163,22 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement)) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Определение**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               [Required] A URI that defines where the image can be loaded from. It can be one of the following:<br /><br /> -   A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) using the application:/// authority<br />-   An absolute component resource reference<br />-   A path to a file containing a native resource                                                                                                                                                                                                                                                                                                               |
-|  Фон   | [Optional] Indicates what on kind of background the source is intended to be used.<br /><br /> It can be one of the following:<br /><br /> *Light:* The source can be used on a light background.<br /><br /> <em>Dark:</em>The source can be used on a dark background.<br /><br /> *HighContrast:* The source can be used on any background in High Contrast mode.<br /><br /> *HighContrastLight:* The source can be used on a light background in High Contrast mode.<br /><br /> *HighContrastDark:* The source can be used on a dark background in High Contrast mode.<br /><br /> If the Background attribute is omitted, the source can be used on any background.<br /><br /> If Background is *Light*, *Dark*, *HighContrastLight*, or *HighContrastDark*, the source’s colors are never inverted. If Background is omitted or set to *HighContrast*, the inversion of the source’s colors is controlled by the image’s **AllowColorInversion** attribute. |
+| **Атрибут** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Определение**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      URI      |                                                                                                                                                                                                                                                                                                               Необходимости URI, который определяет, откуда можно загрузить изображение. Может быть одним из следующих:<br /><br /> — URI типа " [Pack](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) " с помощью центра Application:///.<br />— Абсолютная ссылка на ресурс компонента.<br />— Путь к файлу, содержащему машинный ресурс;                                                                                                                                                                                                                                                                                                               |
+|  Фон   | Используемых Указывает, какой тип фона предполагается использовать в качестве источника.<br /><br /> Может быть одним из следующих:<br /><br /> *Источник:* Источник можно использовать на светлом фоне.<br /><br /> <em>Темный:</em> Источник можно использовать на темном фоне.<br /><br /> *HighContrast:* Источник можно использовать в любом фоне в режиме высокая контрастность.<br /><br /> *Хигхконтрастлигхт:* Источник можно использовать на светлом фоне в режиме высокая контрастность.<br /><br /> *Хигхконтрастдарк:* Источник можно использовать на темном фоне в режиме высокая контрастность.<br /><br /> Если атрибут Background отсутствует, источник можно использовать в любом фоновом режиме.<br /><br /> Если фон имеет *светлое*, *темное*, *хигхконтрастлигхт*или *хигхконтрастдарк*, цвета источника никогда не переносятся. Если параметр Background опущен или имеет значение *HighContrast*, то Инверсия цветов источника управляется атрибутом **алловколоринверсион** изображения. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
- A \<Source> element can have exactly one of the following optional subelements:  
+ Элемент \<источника > может иметь только один из следующих необязательных вложенных элементов:  
 
 ||||  
 |-|-|-|  
-|**Элемент**|**Attributes (all required)**|**Определение**|  
-|\<Size>|значения|The source will be used for images of the given size (in device units). The image will be square.|  
-|\<SizeRange>|MinSize, MaxSize|The source will be used for images from MinSize to MaxSize (in device units) inclusively. The image will be square.|  
-|\<Dimensions>|Width, Height|The source will be used for images of the given width and height (in device units).|  
-|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|The source will be used for images from the minimum width/height to the maximum width/height (in device units) inclusively.|  
+|**Элемент**|**Атрибуты (все обязательные)**|**Определение**|  
+|Размер \<>|значения|Источник будет использоваться для изображений заданного размера (в единицах устройства). Изображение будет квадратным.|  
+|\<Сизеранже >|MinSize, MaxSize|Источник будет использоваться для изображений из MinSize в MaxSize (в единицах устройства) включительно. Изображение будет квадратным.|  
+|\<измерения >|Ширина, высота|Источник будет использоваться для изображений с заданной шириной и высотой (в единицах устройства).|  
+|\<Дименсионранже >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Источник будет использоваться для изображений с минимальной ширины и высоты до максимальной ширины и высоты (в единицах устройства) включительно.|  
 
- A \<Source> element can also have an optional \<NativeResource> subelement, which defines a \<Source> that is loaded from a native assembly rather than a managed assembly.  
+ Элемент \<источника > также может иметь необязательный вложенный элемент \<Нативересаурце >, который определяет \<источника >, который загружается из машинной сборки, а не из управляемой сборки.  
 
 ```xml  
 <NativeResource Type="type" ID="int" />  
@@ -186,13 +186,13 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 
 |||  
 |-|-|  
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|  
-|Type|[Required] The type of the native resource, either XAML or PNG|  
-|ID|[Required] The integer ID portion of the native resource|  
+|**Атрибут**|**Определение**|  
+|Введите|Необходимости Тип машинного ресурса: XAML или PNG|  
+|ID|Необходимости Часть целочисленного идентификатора машинного ресурса|  
 
  **ImageList**  
 
- The \<ImageList> element defines a collection of images that can be returned in a single strip. The strip is built on demand, as needed.  
+ Элемент \<ImageList > определяет коллекцию изображений, которые могут возвращаться в одной полосе. При необходимости полоса строится по требованию.  
 
 ```xml  
 <ImageList>  
@@ -203,90 +203,90 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 
 |||  
 |-|-|  
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|  
-|GUID|[Required] The GUID portion of the image moniker|  
-|ID|[Required] The ID portion of the image moniker|  
-|Внешняя|[Optional, default false] Indicates whether the image moniker references an image in the current manifest.|  
+|**Атрибут**|**Определение**|  
+|Идентификатор GUID|Необходимости Часть идентификатора GUID моникера образа|  
+|ID|Необходимости Часть идентификатора моникера образа|  
+|Внешняя|[Необязательно, по умолчанию false] Указывает, ссылается ли моникер изображения на изображение в текущем манифесте.|  
 
- The moniker for the contained image does not have to reference an image defined in the current manifest. If the contained image cannot be found in the image library, a blank placeholder image will be used in its place.  
+ Моникер для автономного образа не должен ссылаться на образ, определенный в текущем манифесте. Если содержащийся образ не удается найти в библиотеке изображений, вместо него будет использоваться пустое изображение заполнителя.  
 
-## <a name="using-the-image-service"></a>Using the image service  
+## <a name="using-the-image-service"></a>Использование службы образов  
 
-### <a name="first-steps-managed"></a>First steps (managed)  
- To use the image service, you need to add references to some or all of the following assemblies to your project:  
+### <a name="first-steps-managed"></a>Первые шаги (управляемые)  
+ Чтобы использовать службу образов, необходимо добавить в проект ссылки на некоторые или все следующие сборки:  
 
-- **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **Microsoft. VisualStudio. Имажекаталог. dll**  
 
-  - Required if you use the built-in image catalog KnownMonikers  
+  - Требуется, если используется встроенный каталог образов Кновнмоникерс  
 
-- **Microsoft.VisualStudio.Imaging.dll**  
+- **Microsoft. VisualStudio. Imaging. dll**  
 
-  - Required if you use **CrispImage** and **ImageThemingUtilities** in your WPF UI  
+  - Требуется, если в пользовательском интерфейсе WPF используются **криспимаже** и **имажесемингутилитиес**  
 
-- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **Microsoft. VisualStudio. Imaging. Interop. DesignTime. dll**  
 
-  - Required if you use the **ImageMoniker** and **ImageAttributes** types  
+  - Требуется, если используются типы **имажемоникер** и **ImageAttributes**  
 
-  - **EmbedInteropTypes** should be set to true  
+  - **Ембединтероптипес** должно иметь значение true  
 
-- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **Microsoft. VisualStudio. Shell. Interop. DesignTime**  
 
-  - Required if you use the **IVsImageService2** type  
+  - Требуется, если используется тип **IVsImageService2**  
 
-  - **EmbedInteropTypes** should be set to true  
+  - **Ембединтероптипес** должно иметь значение true  
 
-- **Microsoft.VisualStudio.Utilities.dll**  
+- **Microsoft. VisualStudio. Utilities. dll**  
 
-  - Required if you use the **BrushToColorConverter** for the ImageThemingUtilities.**ImageBackgroundColor** in your WPF UI  
+  - Требуется, если для Имажесемингутилитиес используется **бруштоколорконвертер** . **Имажебаккграундколор** в пользовательском ИНТЕРФЕЙСе WPF  
 
-- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
+- **Microsoft. VisualStudio. Shell.\<Всверсион >. 0**  
 
-  - Required if you use the **IVsUIObject** type  
+  - Требуется, если используется тип **IVsUIObject**  
 
-- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **Microsoft. VisualStudio. Shell. Interop. 10.0. dll**  
 
-  - Required if you use the WinForms-related UI helpers  
+  - Требуется при использовании вспомогательных функций для работы с ИНТЕРФЕЙСом WinForms  
 
-  - **EmbedInteropTypes** should be set to true  
+  - **Ембединтероптипес** должно иметь значение true  
 
-### <a name="first-steps-native"></a>First steps (native)  
- To use the image service, you need to include some or all of the following headers to your project:  
+### <a name="first-steps-native"></a>Первые шаги (машинный код)  
+ Чтобы использовать службу образов, необходимо включить в проект некоторые или все следующие заголовки:  
 
-- **KnownImageIds.h**  
+- **Кновнимажеидс. h**  
 
-  - Required if you use the built-in image catalog **KnownMonikers**, but cannot use the **ImageMoniker** type, such as when returning values from **IVsHierarchy GetGuidProperty** or **GetProperty** calls.  
+  - Требуется, если используется встроенный каталог образов **кновнмоникерс**, но он не может использовать тип **имажемоникер** , например при возврате значений из вызовов **IVsHierarchy жетгуидпроперти** или- **Property** .  
 
-- **KnownMonikers.h**  
+- **Кновнмоникерс. h**  
 
-  - Required if you use the built-in image catalog **KnownMonikers**.  
+  - Требуется, если используется встроенный каталог образов **кновнмоникерс**.  
 
-- **ImageParameters140.h**  
+- **ImageParameters140. h**  
 
-  - Required if you use the **ImageMoniker** and **ImageAttributes** types.  
+  - Требуется, если используются типы **имажемоникер** и **ImageAttributes** .  
 
-- **VSShell140.h**  
+- **VSShell140. h**  
 
-  - Required if you use the **IVsImageService2** type.  
+  - Требуется, если используется тип **IVsImageService2** .  
 
-- **ImageThemingUtilities.h**  
+- **Имажесемингутилитиес. h**  
 
-  - Required if you are unable to let the image service handle theming for you.  
+  - Требуется, если не удается разрешить службе образов работать с ними.  
 
-  - Do not use this header if the image service can handle your image theming.  
+  - Не используйте этот заголовок, если служба образов может управлять своими изображениями.  
 
-- **VSUIDPIHelper.h**  
+- **Всуидпихелпер. h**  
 
-  - Required if you use the DPI helpers to get the current DPI.  
+  - Требуется при использовании вспомогательных функций DPI для получения текущего DPI.  
 
-## <a name="how-do-i-write-new-wpf-ui"></a>How do I write new WPF UI?  
+## <a name="how-do-i-write-new-wpf-ui"></a>Разделы справки создать новый пользовательский интерфейс WPF?  
 
-1. Start by adding the assembly references required in the above first steps section to your project. You don’t need to add all of them, so add just the references you need. (Note: if you are using or have access to **Colors** instead of **Brushes**, then you can skip the reference to **Utilities**, since you won’t need the converter.)  
+1. Сначала добавьте ссылки на сборки, необходимые в разделе "первые шаги", в проект. Вам не нужно добавлять все, поэтому нужно добавить только необходимые ссылки. (Примечание. Если вы используете или имеете доступ к **цветам** вместо **кистей**, вы можете пропустить эту ссылку на **Служебные программы**, так как вам не потребуется преобразователь.)  
 
-2. Select the desired image and get its moniker. Use a **KnownMoniker**, or use your own if you have your own custom images and monikers.  
+2. Выберите нужное изображение и получите его моникер. Используйте **кновнмоникер**или используйте собственный, если у вас есть собственные пользовательские образы и моникеры.  
 
-3. Add **CrispImages** to your XAML. (See below example.)  
+3. Добавьте **криспимажес** в код XAML. (См. пример ниже.)  
 
-4. Set the **ImageThemingUtilities.ImageBackgroundColor** property in your UI hierarchy. (This should be set at the location where the background color is known, not necessarily on the **CrispImage**.) (See below example.)  
+4. Задайте свойство **имажесемингутилитиес. имажебаккграундколор** в иерархии пользовательского интерфейса. (Это значение должно быть задано в расположении, где известен цвет фона, но не обязательно на **криспимаже**.) (См. пример ниже.)  
 
 ```xaml  
 <Window  
@@ -308,35 +308,35 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 </Window>  
 ```  
 
- **How do I update existing WPF UI?**  
+ **Разделы справки обновить существующий пользовательский интерфейс WPF?**  
 
- Updating existing WPF UI is a relatively simple process that consists of three basic steps:  
+ Обновление существующего пользовательского интерфейса WPF является относительно простым процессом, который состоит из трех основных этапов:  
 
-1. Replace all \<Image> elements in your UI with \<CrispImage> elements  
+1. Замена всех элементов \<Image > в пользовательском интерфейсе с помощью элементов \<Криспимаже >  
 
-2. Change all the Source attributes to Moniker attributes  
+2. Изменение всех исходных атрибутов на атрибуты моникера  
 
-    - If the image never changes and you are using **KnownMonikers**, then statically bind that property to the **KnownMoniker**. (See the above example.)  
+    - Если изображение никогда не изменяется и используется **кновнмоникерс**, статически привяжите это свойство к **кновнмоникер**. (См. пример выше.)  
 
-    - If the image never changes and you are using your own custom image, then statically bind to your own moniker.  
+    - Если образ никогда не изменится и вы используете собственный пользовательский образ, выполните статическую привязку к своему собственному моникеру.  
 
-    - If the image can change, bind the Moniker attribute to a code property that notifies on property changes.  
+    - Если изображение может измениться, привяжите атрибут моникер к свойству Code, которое уведомляет об изменениях свойства.  
 
-3. Somewhere in the UI hierarchy, set **ImageThemingUtilities.ImageBackgroundColor** to make sure color inversion works correctly.  
+3. Где-то в иерархии пользовательского интерфейса установите **имажесемингутилитиес. имажебаккграундколор** , чтобы убедиться, что Инверсия цветов работает правильно.  
 
-    - This might require the use of the **BrushToColorConverter** class. (See the above example.)  
+    - Это может потребовать использования класса **бруштоколорконвертер** . (См. пример выше.)  
 
-## <a name="how-do-i-update-win32-ui"></a>How do I update Win32 UI?  
- Add the following to your code wherever appropriate to replace the raw loading of images. Switch values for returning HBITMAPs versus HICONs versus HIMAGELIST as needed.  
+## <a name="how-do-i-update-win32-ui"></a>Разделы справки обновить пользовательский интерфейс Win32?  
+ Добавьте следующее в код в любом месте, где нужно заменить начальную загрузку изображений. При необходимости переключите значения для возврата Хбитмапс и Хиконс по сравнению с ХИМАЖЕЛИСТ.  
 
- **Get the image service**  
+ **Получение службы образов**  
 
 ```cpp  
 CComPtr<IVsImageService2> spImgSvc;  
 CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);  
 ```  
 
- **Requesting the image**  
+ **Запрос образа**  
 
 ```cpp  
 ImageAttributes attr = { 0 };  
@@ -357,16 +357,16 @@ spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
 
 ```  
 
-## <a name="how-do-i-update-winforms-ui"></a>How do I update WinForms UI?  
- Add the following to your code wherever appropriate to replace the raw loading of images. Switch values for returning Bitmaps versus Icons as needed.  
+## <a name="how-do-i-update-winforms-ui"></a>Разделы справки обновить пользовательский интерфейс WinForms?  
+ Добавьте следующее в код в любом месте, где нужно заменить начальную загрузку изображений. Переключайте значения для возвращения точечных рисунков и значков по мере необходимости.  
 
- **Helpful using statement**  
+ **Полезный оператор using**  
 
 ```csharp  
 using GelUtilities = Microsoft.Internal.VisualStudio.PlatformUI.Utilities;  
 ```  
 
- **Get the image service**  
+ **Получение службы образов**  
 
 ```csharp  
 // This or your preferred way of querying for Visual Studio services  
@@ -374,7 +374,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
 
 ```  
 
- **Request the image**  
+ **Запрос образа**  
 
 ```csharp  
 ImageAttributes attributes = new ImageAttributes  
@@ -398,23 +398,23 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 ```  
 
-## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>How do I use image monikers in a new tool window?  
- The VSIX package project template was updated for Visual Studio 2015. To create a new tool window, right-click on the VSIX project and select “Add New Item…” (Ctrl+Shift+A). Under the Extensibility node for the project language, select “Custom Tool Window,” give the tool window a name, and press the “Add” button.  
+## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Разделы справки использовать моникеры изображений в новом окне инструментов?  
+ Шаблон проекта пакета VSIX обновлен для Visual Studio 2015. Чтобы создать новое окно инструментов, щелкните правой кнопкой мыши проект VSIX и выберите "добавить новый элемент...". (Ctrl + Shift + A). В узле расширяемость языка проекта выберите пункт "настраиваемое окно инструментов", введите имя окна инструментов и нажмите кнопку "Добавить".  
 
- These are the key places to use monikers in a tool window. Follow the instructions for each:  
+ Это ключевые места для использования моникеров в окне инструментов. Следуйте инструкциям по каждому из них.  
 
-1. The tool window tab when the tabs get small enough (also used in the Ctrl+Tab window switcher).  
+1. Вкладка окно инструментов, когда вкладки достаточно малы (также используются в окне переключения клавиш CTRL + TAB).  
 
-    Add this line to the constructor for the class that derives from the **ToolWindowPane** type:  
+    Добавьте эту строку в конструктор для класса, производного от типа **ToolWindowPane** :  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
    this.BitmapImageMoniker = KnownMonikers.Blank;  
    ```  
 
-2. The command to open the tool window.  
+2. Команда для открытия окна инструментов.  
 
-    In the .vsct file for the package, edit the tool window’s command button:  
+    В файле vsct для пакета измените командную кнопку окна инструментов:  
 
    ```xml  
    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
@@ -429,29 +429,29 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
    </Button>  
    ```  
 
-   **How do I use image monikers in an existing tool window?**  
+   **Разделы справки использовать моникеры изображений в существующем окне инструментов?**  
 
-   Updating an existing tool window to use image monikers is similar to the steps for creating a new tool window.  
+   Обновление существующего окна инструментов для использования моникеров образа аналогично пошаговому созданию нового окна инструментов.  
 
-   These are the key places to use monikers in a tool window. Follow the instructions for each:  
+   Это ключевые места для использования моникеров в окне инструментов. Следуйте инструкциям по каждому из них.  
 
-3. The tool window tab when the tabs get small enough (also used in the Ctrl+Tab window switcher).  
+3. Вкладка окно инструментов, когда вкладки достаточно малы (также используются в окне переключения клавиш CTRL + TAB).  
 
-   1. Remove these lines (if they exist) in the constructor for the class that derives from the **ToolWindowPane** type:  
+   1. Удалите эти строки (если они существуют) в конструкторе класса, производного от типа **ToolWindowPane** :  
 
        ```csharp  
        this.BitmapResourceID = <Value>;  
        this.BitmapIndex = <Value>;  
        ```  
 
-   2. See step #1 of the “How Do I Use Image Monikers in a New Tool Window?” section above.  
+   2. См. шаг #1 из раздела "как использовать моникеры изображений в новом окне инструментов". разделе выше.  
 
-4. The command to open the tool window.  
+4. Команда для открытия окна инструментов.  
 
-   - See step #2 of the “How Do I Use Image Monikers in a New Tool Window?” section above.  
+   - См. шаг #2 из раздела "как использовать моникеры изображений в новом окне инструментов". разделе выше.  
 
-## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>How do I use image monikers in a .vsct file?  
- Update your .vsct file as indicated by the commented lines below:  
+## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Разделы справки использовать моникеры изображений в vsct-файле?  
+ Обновите файл. vsct, как показано в строках с комментариями ниже:  
 
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -491,11 +491,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 </CommandTable>  
 ```  
 
- **What if my .vsct file also needs to be read by older versions of Visual Studio?**  
+ **Что делать, если файл My. vsct также требуется считывать в более старых версиях Visual Studio?**  
 
- Older versions of Visual Studio do not recognize the **IconIsMoniker** command flag. You can use images from the image service on versions of Visual Studio that support it, but continue to use old-style images on older versions of Visual Studio. To do this, you’d leave the .vsct file unchanged (and therefore compatible with older versions of Visual Studio), and create a CSV (comma-separated values) file that maps from GUID/ID pairs defined in a .vsct file’s \<Bitmaps> element to image moniker GUID/ID pairs.  
+ Более старые версии Visual Studio не распознают флаг команды **иконисмоникер** . Вы можете использовать образы из службы образов в поддерживаемых версиях Visual Studio, но продолжать использовать образы старого типа в более старых версиях Visual Studio. Для этого следует оставить файл. vsct без изменений (и, следовательно, совместимый с более старыми версиями Visual Studio) и создать файл CSV (с разделителями-запятыми), сопоставляемый с парами GUID/ID, определенными в \<точечных > рисунках vsct-файлов, в виде пар GUID и ИДЕНТИФИКАТОРов моникера изображения.  
 
- The format of the mapping CSV file is:  
+ Формат CSV-файла сопоставления:  
 
 ```  
 Icon guid, Icon id, Moniker guid, Moniker id  
@@ -503,49 +503,49 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,1,fda30684-682d-421c-8be4-650a2967058e,100
 b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200  
 ```  
 
- The CSV file is deployed with the package and its location is specified by the **IconMappingFilename** property of the **ProvideMenuResource** package attribute:  
+ CSV-файл развертывается вместе с пакетом и его расположение задается свойством **иконмаппингфиленаме** атрибута пакета **провидеменуресаурце** :  
 
 ```csharp  
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
 
- The **IconMappingFilename** is either a relative path implicitly rooted at $PackageFolder$ (as in the example above), or an absolute path explicitly rooted at a directory defined by an environment variable, such as @"%UserProfile%\dir1\dir2\MyMappingFile.csv".  
+ **Иконмаппингфиленаме** является либо относительным путем, неявно корнем в $PackageFolder $ (как в примере выше), либо абсолютным путем, явно корневым в каталоге, определенном переменной среды, например @ "%UserProfile%\dir1\dir2\MyMappingFile.csv".  
 
-## <a name="how-do-i-port-a-project-system"></a>How do I port a project system?  
- **How to supply ImageMonikers for a project**  
+## <a name="how-do-i-port-a-project-system"></a>Разделы справки переносить систему проектов?  
+ **Как предоставить Имажемоникерс для проекта**  
 
-1. Implement **VSHPROPID_SupportsIconMonikers** on the project’s **IVsHierarchy**, and return true.  
+1. Реализуйте **VSHPROPID_SupportsIconMonikers** **IVsHierarchy**проекта и возвращайте значение true.  
 
-2. Implement either **VSHPROPID_IconMonikerImageList** (if the original project used **VSHPROPID_IconImgList**) or **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (if the original project used **VSHPROPID_IconHandle** and **VSHPROPID_OpenFolderIconHandle**).  
+2. Реализуйте либо **VSHPROPID_IconMonikerImageList** (если исходный проект используется **VSHPROPID_IconImgList**), **либо VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (если исходный проект использовал **VSHPROPID_IconHandle** и **VSHPROPID_OpenFolderIconHandle**).  
 
-3. Change the implementation of the original VSHPROPIDs for icons to create “legacy” versions of the icons if extension points request them. **IVsImageService2** provides functionality necessary to get those icons  
+3. Измените реализацию исходного Вшпропидс для значков, чтобы создать "устаревшие" версии значков, если точки расширения запрашивают их. **IVsImageService2** предоставляет функциональные возможности, необходимые для получения этих значков  
 
-   **Extra requirements for VB/C# project flavors**  
+   **Дополнительные требования для разновидностейC# VB/Project**  
 
-   Only implement **VSHPROPID_SupportsIconMonikers** if you detect that your project is the **outermost flavor**. Otherwise, the actual outermost flavor may not support image monikers in reality, and your base flavor might effectively “hide” customized images.  
+   Реализуйте только **VSHPROPID_SupportsIconMonikers** , если обнаружите, что проект является самой **внешней разновидностью**. В противном случае фактическая внешний флаг может не поддерживать моникеры изображений в реальности, а базовый вариант может эффективно "скрывать" настроенные образы.  
 
-   **How do I use image monikers in CPS?**  
+   **Разделы справки использовать моникеры образов в CPS?**  
 
-   Setting custom images in CPS (Common Project System) can be done manually or via an item template that comes with the Project System Extensibility SDK.  
+   Настройка пользовательских образов в CPS (общая система проектов) может выполняться вручную или с помощью шаблона элемента, поставляемого с пакетом SDK для расширяемости системы проектов.  
 
-   **Using the Project System Extensibility SDK**  
+   **Использование пакета SDK для расширения системы проекта**  
 
-   Follow the instructions at [Provide custom icons for the Project Type/Item type](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) to customize your CPS images. More information about CPS can be found at [Visual Studio Project System Extensibility Documentation](https://github.com/Microsoft/VSProjectSystem)  
+   Следуйте инструкциям в разделе [Указание пользовательских значков для типа или типа элемента проекта](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) , чтобы настроить образы CPS. Дополнительные сведения о CPS можно найти в [документации по расширению системы проектов Visual Studio](https://github.com/Microsoft/VSProjectSystem) .  
 
-   **Manually use ImageMonikers**  
+   **Использование Имажемоникерс вручную**  
 
-4. Implement and export the **IProjectTreeModifier** interface in your project system.  
+4. Реализация и экспорт интерфейса **ипрожекттримодифиер** в системе проектов.  
 
-5. Determine which **KnownMoniker** or custom image moniker you want to use.  
+5. Определите, какой моникер **кновнмоникер** или пользовательский образ следует использовать.  
 
-6. In the **ApplyModifications** method, do the following somewhere in the method before returning the new tree, similar to the below example:  
+6. В методе **апплимодификатионс** перед возвратом нового дерева выполните следующие действия в методе, как показано в примере ниже.  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
    ```  
 
-7. If you are creating a new tree, you can set the custom images by passing in the desired monikers into the NewTree method, similar to the below example:  
+7. При создании нового дерева можно задать пользовательские образы, передав нужные моникеры в метод Невтри, как показано в примере ниже:  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
@@ -559,38 +559,38 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
                                                 expandedIcon);  
    ```  
 
-## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>How do I convert from a real image strip to a moniker-based image strip?  
- **I need to support HIMAGELISTs**  
+## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Разделы справки преобразовать реальную ленту изображения в ленту изображений на основе моникера?  
+ **Мне нужно поддерживать Химажелистс**  
 
- If there is an already existing image strip for your code that you want to update to use the image service, but you are constrained by APIs that require passing around image lists, you can still get the benefits of the image service. To create a moniker-based image strip, follow the steps below to create a manifest from existing monikers.  
+ Если для кода, который необходимо обновить для использования службы изображений, уже существует полоса образа, но вы ограничены интерфейсами API, требующими передачи списков изображений, вы все равно можете воспользоваться преимуществами службы образов. Чтобы создать полосу изображений на основе моникера, выполните следующие действия, чтобы создать манифест на основе существующих моникеров.  
 
-1. Run the **ManifestFromResources** tool, passing it the image strip. This will generate a manifest for the strip.  
+1. Запустите средство **манифестфромресаурцес** , передав ему ленту с изображением. Будет создан манифест для полосы.  
 
-   - Recommended: provide a non default name for the manifest to suit its usage.  
+   - Рекомендуется. Укажите для манифеста имя, отличное от имени по умолчанию, в соответствии с его использованием.  
 
-2. If you are using only **KnownMonikers**, then do the following:  
+2. Если вы используете только **кновнмоникерс**, выполните следующие действия.  
 
-   - Replace the \<Images> section of the manifest with \<Images/>.  
+   - Замените \<образы > разделе манифеста \<ными образами/>.  
 
-   - Remove all the subimage IDs (anything with \<imagestrip name>_##).  
+   - Удалите все идентификаторы подобраза (что угодно с \<именем имажестрип > _ # #).  
 
-   - Recommended: rename the AssetsGuid symbol and image strip symbol to suit its usage.  
+   - Рекомендуется: переименуйте символ Ассетсгуид и ленту изображения в соответствии с его использованием.  
 
-   - Replace each **ContainedImage**’s GUID with $(ImageCatalogGuid), replace each **ContainedImage**’s ID with $(\<moniker>), and add the External=”true” attribute to each **ContainedImage**  
+   - Замените идентификатор GUID каждого **контаинедимаже**на $ (имажекаталоггуид), замените идентификатор каждого **контаинедимаже**на $ (\<моникер >) и добавьте атрибут External = "true" в каждый **контаинедимаже**  
 
-       - \<moniker> should be replaced with the **KnownMoniker** that matches the image but with the “KnownMonikers.” removed from the name.  
+       - \<моникер > следует заменить на **кновнмоникер** , который соответствует образу, но с кновнмоникерс. удаляется из имени.  
 
-   - Add <Import Manifest="$(ManifestFolder)\\<Relative install dir path to\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\> to the top of the \<Symbols> section.  
+   - Добавьте < импорт манифеста = "$ (Манифестфолдер)\\< путь к относительным папкам установки\>\Микрософт.висуалстудио.имажекаталог.имажеманифест"/\> в начало раздела \<символов >.  
 
-       - The relative path is determined by the deployment location defined in the setup authoring for the manifest.  
+       - Относительный путь определяется местом развертывания, определенным в процессе создания манифеста.  
 
-3. Run the **ManifestToCode** tool to generate wrappers so that the existing code has a moniker it can use to query the image service for the image strip.  
+3. Запустите средство **манифесттокоде** , чтобы создать оболочки, чтобы существующий код использовал моникер, который можно использовать для запроса к службе изображений для полосы изображений.  
 
-   - Recommended: provide nondefault names for the wrappers and namespaces to suit their usage.  
+   - Рекомендуется: указывать имена оболочек и пространств имен по умолчанию в соответствии с их использованием.  
 
-4. Do all the adds, setup authoring/deployment, and other code changes to work with the image service and the new files.  
+4. Выполните все операции добавления, Настройки разработки и развертывания, а также другие изменения кода для работы со службой образов и новыми файлами.  
 
-   Sample manifest including both internal and external images to see what it should look like:  
+   Пример манифеста, включающий как внутренние, так и внешние изображения, чтобы увидеть, как это должно выглядеть:  
 
 ```xml  
 <?xml version="1.0"?>  
@@ -641,352 +641,352 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 </ImageManifest>  
 ```  
 
- **I don’t need to support HIMAGELISTs**  
+ **Мне не нужно поддерживать Химажелистс**  
 
-1. Determine the set of **KnownMonikers** that match the images in your image strip, or create your own monikers for the images in your image strip.  
+1. Определите набор **кновнмоникерс** , соответствующих изображениям на ленте изображений, или создайте собственные моникеры для изображений на ленте изображений.  
 
-2. Update whatever mapping you used to get the image at the required index in the image strip to use the monikers instead.  
+2. Обновите любое сопоставление, которое использовалось для получения изображения по требуемому индексу в полосе изображений, чтобы использовать моникеры.  
 
-3. Update your code to use the image service to request monikers via the updated mapping. (This might mean updating to **CrispImages** for managed code, or requesting HBITMAPs or HICONs from the image service and passing them around for native code.)  
+3. Обновите код, чтобы использовать службу изображений для запроса моникеров через обновленное сопоставление. (Это может означать обновление до **криспимажес** для управляемого кода или запрос Хбитмапс или хиконс из службы образов и их передача для машинного кода.)  
 
-## <a name="testing-your-images"></a>Testing your images  
- You can use the Image Library Viewer tool to test your image manifests to make sure everything is authored correctly. You can find the tool in the [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx). Documentation for this tool and others can be found [here](https://aka.ms/VSImageThemeTools).  
+## <a name="testing-your-images"></a>Тестирование образов  
+ Средство просмотра библиотеки изображений можно использовать для тестирования манифестов изображений, чтобы убедиться, что все создано правильно. Это средство можно найти в [пакете SDK для Visual Studio 2015](https://msdn.microsoft.com/library/bb166441.aspx). Документацию по этому средству и другим пользователям можно найти [здесь](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы  
 
 ### <a name="samples"></a>Примеры  
- Several of the Visual Studio samples on GitHub have been updated to show how to use the image service as part of various Visual Studio extensibility points.  
+ Некоторые из примеров Visual Studio на сайте GitHub были обновлены, чтобы продемонстрировать, как использовать службу Image Service как часть различных точек расширения Visual Studio.  
 
- Check [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) for the latest samples.  
+ Проверьте [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) последние примеры.  
 
 ### <a name="tooling"></a>Инструментарий  
- A set of support tools for the Image Service was created to aid in creating/updating UI that works with the Image Service. For more information about each tool, check the documentation that comes with the tools. The tools are included as part of the [Visual Studio 2015 SDK.](https://msdn.microsoft.com/library/bb166441.aspx)  
+ Для создания и обновления пользовательского интерфейса, работающего со службой образов, была создана поддержка набора средств поддержки для службы образов. Дополнительные сведения о каждом средстве см. в документации, поставляемой вместе с инструментами. Эти средства входят в состав [пакета SDK для Visual Studio 2015.](https://msdn.microsoft.com/library/bb166441.aspx)  
 
- **ManifestFromResources**  
+ **манифестфромресаурцес**  
 
- The Manifest from Resources Tool takes a list of image resources (PNG or XAML) and generates an image manifest file for using those images with the image service.  
+ Средство Manifest from Resources принимает список ресурсов изображений (PNG или XAML) и создает файл манифеста изображения для использования этих образов со службой изображений.  
 
- **ManifestToCode**  
+ **манифесттокоде**  
 
- The Manifest to Code Tool takes an image manifest file and generates a wrapper file for referencing the manifest values in code (C++, C#, or VB) or .vsct files.  
+ Средство manifest to Code принимает файл манифеста изображения и создает файл-оболочку для ссылки на значения манифеста в файлахC++кода C#(, или VB) или. vsct.  
 
- **ImageLibraryViewer**  
+ **имажелибраривиевер**  
 
- The Image Library Viewer Tool can load image manifests and allows the user to manipulate them in the same way Visual Studio would to make sure the manifest is authored correctly. The user can alter background, sizes, DPI setting, High Contrast, and other settings. It also displays loading information to find errors in the manifests and displays source information for each image in the manifest.  
+ Средство просмотра библиотеки изображений может загружать манифесты изображений и позволяет пользователю управлять ими точно так же, как и Visual Studio, чтобы убедиться, что манифест создан правильно. Пользователь может изменять фон, размеры, параметры DPI, высокая контрастность и другие параметры. Он также отображает сведения о загрузке для поиска ошибок в манифестах и отображает сведения об источнике для каждого изображения в манифесте.  
 
 ## <a name="faq"></a>Часто задаваемые вопросы  
 
-- Are there any dependencies that you must include when loading \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" />?  
+- Существуют ли зависимости, которые необходимо включить при загрузке \<ссылки include = "Microsoft. VisualStudio. *. Interop. DesignTime "/>?  
 
-  - Set EmbedInteropTypes="true" on all interop DLLs.  
+  - Задайте Ембединтероптипес = "true" во всех библиотеках DLL взаимодействия.  
 
-- How do I deploy an image manifest with my extension?  
+- Разделы справки развернуть манифест образа с расширением My?  
 
-  - Add the .imagemanifest file to your project.  
+  - Добавьте в проект файл. имажеманифест.  
 
-  - Set “Include in VSIX” to True.  
+  - Задайте для параметра "включить в VSIX" значение true.  
 
-- I am updating my CPS Project System. What happened to **ImageName** and **StockIconService**?  
+- Я обновляя систему проектов CPS. Что случилось с **imageName** и **стоккиконсервице**?  
 
-  - These were removed when CPS was updated to use monikers. You no longer need to call the **StockIconService**, just pass the desired **KnownMoniker** to the method or property using the **ToProjectSystemType()** extension method in the CPS utilities. You can find a mapping from **ImageName** to **KnownMonikers** below:  
+  - Они были удалены при обновлении сервера публикаций Contribute для использования моникеров. Вам больше не нужно вызывать **стоккиконсервице**. просто передайте нужный **кновнмоникер** методу или свойству с помощью метода расширения **топрожектсистемтипе ()** в служебных программах CPS. Сопоставление из **imageName** с **кновнмоникерс** можно найти ниже:  
 
     |||  
     |-|-|  
-    |**ImageName**|**KnownMoniker**|  
-    |ImageName.OfflineWebApp|KnownImageIds.Web|  
-    |ImageName.WebReferencesFolder|KnownImageIds.Web|  
-    |ImageName.OpenReferenceFolder|KnownImageIds.FolderOpened|  
-    |ImageName.ReferenceFolder|KnownImageIds.Reference|  
-    |ImageName.Reference|KnownImageIds.Reference|  
-    |ImageName.SdlWebReference|KnownImageIds.WebReferenceFolder|  
-    |ImageName.DiscoWebReference|KnownImageIds.DynamicDiscoveryDocument|  
-    |ImageName.Folder|KnownImageIds.FolderClosed|  
-    |ImageName.OpenFolder|KnownImageIds.FolderOpened|  
-    |ImageName.ExcludedFolder|KnownImageIds.HiddenFolderClosed|  
-    |ImageName.OpenExcludedFolder|KnownImageIds.HiddenFolderOpened|  
-    |ImageName.ExcludedFile|KnownImageIds.HiddenFile|  
-    |ImageName.DependentFile|KnownImageIds.GenerateFile|  
-    |ImageName.MissingFile|KnownImageIds.DocumentWarning|  
-    |ImageName.WindowsForm|KnownImageIds.WindowsForm|  
-    |ImageName.WindowsUserControl|KnownImageIds.UserControl|  
-    |ImageName.WindowsComponent|KnownImageIds.ComponentFile|  
-    |ImageName.XmlSchema|KnownImageIds.XMLSchema|  
-    |ImageName.XmlFile|KnownImageIds.XMLFile|  
-    |ImageName.WebForm|KnownImageIds.Web|  
-    |ImageName.WebService|KnownImageIds.WebService|  
-    |ImageName.WebUserControl|KnownImageIds.WebUserControl|  
-    |ImageName.WebCustomUserControl|KnownImageIds.WebCustomControl|  
-    |ImageName.AspPage|KnownImageIds.ASPFile|  
-    |ImageName.GlobalApplicationClass|KnownImageIds.SettingsFile|  
-    |ImageName.WebConfig|KnownImageIds.ConfigurationFile|  
-    |ImageName.HtmlPage|KnownImageIds.HTMLFile|  
-    |ImageName.StyleSheet|KnownImageIds.StyleSheet|  
-    |ImageName.ScriptFile|KnownImageIds.JSScript|  
-    |ImageName.TextFile|KnownImageIds.Document|  
-    |ImageName.SettingsFile|KnownImageIds.Settings|  
-    |ImageName.Resources|KnownImageIds.DocumentGroup|  
-    |ImageName.Bitmap|KnownImageIds.Image|  
-    |ImageName.Icon|KnownImageIds.IconFile|  
-    |ImageName.Image|KnownImageIds.Image|  
-    |ImageName.ImageMap|KnownImageIds.ImageMapFile|  
-    |ImageName.XWorld|KnownImageIds.XWorldFile|  
-    |ImageName.Audio|KnownImageIds.Sound|  
-    |ImageName.Video|KnownImageIds.Media|  
-    |ImageName.Cab|KnownImageIds.CABProject|  
-    |ImageName.Jar|KnownImageIds.JARFile|  
-    |ImageName.DataEnvironment|KnownImageIds.DataTable|  
-    |ImageName.PreviewFile|KnownImageIds.Report|  
-    |ImageName.DanglingReference|KnownImageIds.ReferenceWarning|  
-    |ImageName.XsltFile|KnownImageIds.XSLTransform|  
-    |ImageName.Cursor|KnownImageIds.CursorFile|  
-    |ImageName.AppDesignerFolder|KnownImageIds.Property|  
-    |ImageName.Data|KnownImageIds.Database|  
-    |ImageName.Application|KnownImageIds.Application|  
-    |ImageName.DataSet|KnownImageIds.DatabaseGroup|  
-    |ImageName.Pfx|KnownImageIds.Certificate|  
-    |ImageName.Snk|KnownImageIds.Rule|  
-    |ImageName.VisualBasicProject|KnownImageIds.VBProjectNode|  
-    |ImageName.CSharpProject|KnownImageIds.CSProjectNode|  
-    |ImageName.Empty|KnownImageIds.Blank|  
-    |ImageName.MissingFolder|KnownImageIds.FolderOffline|  
-    |ImageName.SharedImportReference|KnownImageIds.SharedProject|  
-    |ImageName.SharedProjectCs|KnownImageIds.CSSharedProject|  
-    |ImageName.SharedProjectVc|KnownImageIds.CPPSharedProject|  
-    |ImageName.SharedProjectJs|KnownImageIds.JSSharedProject|  
-    |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
-    |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
+    |**ImageName**|**кновнмоникер**|  
+    |ImageName. Оффлиневебапп|Кновнимажеидс. Web|  
+    |ImageName. Вебреференцесфолдер|Кновнимажеидс. Web|  
+    |ImageName. Опенреференцефолдер|Кновнимажеидс. Фолдеропенед|  
+    |ImageName. Референцефолдер|Кновнимажеидс. Reference|  
+    |ImageName. Reference|Кновнимажеидс. Reference|  
+    |ImageName. Сдлвебреференце|Кновнимажеидс. Вебреференцефолдер|  
+    |ImageName. Дисковебреференце|Кновнимажеидс. Динамикдисковеридокумент|  
+    |ImageName. папка|Кновнимажеидс. Фолдерклосед|  
+    |ImageName. Опенфолдер|Кновнимажеидс. Фолдеропенед|  
+    |ImageName. Ексклудедфолдер|Кновнимажеидс. Хидденфолдерклосед|  
+    |ImageName. Опенексклудедфолдер|Кновнимажеидс. Хидденфолдеропенед|  
+    |ImageName. Ексклудедфиле|Кновнимажеидс. Хидденфиле|  
+    |ImageName. Депендентфиле|Кновнимажеидс. Женератефиле|  
+    |ImageName. Миссингфиле|Кновнимажеидс. Документварнинг|  
+    |ImageName. Виндовсформ|Кновнимажеидс. Виндовсформ|  
+    |ImageName. Виндовсусерконтрол|Кновнимажеидс. UserControl|  
+    |ImageName. Виндовскомпонент|Кновнимажеидс. Компонентфиле|  
+    |ImageName. XmlSchema|Кновнимажеидс. XMLSchema|  
+    |ImageName. XmlFile|Кновнимажеидс. XMLFile|  
+    |ImageName. WebForms|Кновнимажеидс. Web|  
+    |ImageName. WebService|Кновнимажеидс. WebService|  
+    |ImageName.|Кновнимажеидс.|  
+    |ImageName. Вебкустомусерконтрол|Кновнимажеидс. Вебкустомконтрол|  
+    |ImageName. Асппаже|Кновнимажеидс. Аспфиле|  
+    |ImageName. Глобалаппликатионкласс|Кновнимажеидс. SettingsFile|  
+    |ImageName. config|Кновнимажеидс. файл ConfigurationFile|  
+    |ImageName. HtmlPage|Кновнимажеидс. Хтмлфиле|  
+    |ImageName. StyleSheet|Кновнимажеидс. StyleSheet|  
+    |ImageName. ScriptFile|Кновнимажеидс. Жсскрипт|  
+    |ImageName. TextFile|Кновнимажеидс. документ|  
+    |ImageName. SettingsFile|Кновнимажеидс. Settings|  
+    |ImageName. Resources|Кновнимажеидс. Документграуп|  
+    |ImageName. Bitmap|Кновнимажеидс. Image|  
+    |ImageName. Icon|Кновнимажеидс. Иконфиле|  
+    |ImageName. Image|Кновнимажеидс. Image|  
+    |ImageName. Имажемап|Кновнимажеидс. Имажемапфиле|  
+    |ImageName. Ксворлд|Кновнимажеидс. Ксворлдфиле|  
+    |ImageName. Audio|Кновнимажеидс. звук|  
+    |ImageName. видео|Кновнимажеидс. Media|  
+    |ImageName. cab|Кновнимажеидс. Кабпрожект|  
+    |ImageName. jar|Кновнимажеидс. JARFile|  
+    |Среда ImageName.|Кновнимажеидс. DataTable|  
+    |ImageName. Превиевфиле|Кновнимажеидс. отчет|  
+    |ImageName. Данглингреференце|Кновнимажеидс. Референцеварнинг|  
+    |ImageName. Ксслтфиле|Кновнимажеидс. XSLTransform|  
+    |ImageName. Cursor|Кновнимажеидс. Курсорфиле|  
+    |ImageName. Аппдесигнерфолдер|Кновнимажеидс. Property|  
+    |ImageName. Data|Кновнимажеидс. база данных|  
+    |ImageName. Application|Кновнимажеидс. Application|  
+    |ImageName. DataSet|Кновнимажеидс. Датабасеграуп|  
+    |ImageName. pfx|Кновнимажеидс. Certificate|  
+    |ImageName. snk|Кновнимажеидс. Rule|  
+    |ImageName. Висуалбасикпрожект|Кновнимажеидс. Вбпрожектноде|  
+    |ImageName. Кшарппрожект|Кновнимажеидс. Кспрожектноде|  
+    |ImageName. Empty|Кновнимажеидс. Blank|  
+    |ImageName. Миссингфолдер|Кновнимажеидс. Фолдероффлине|  
+    |ImageName. Шаредимпортреференце|Кновнимажеидс. Шаредпрожект|  
+    |ImageName. Шаредпрожекткс|Кновнимажеидс. Ксшаредпрожект|  
+    |ImageName. Шаредпрожектвк|Кновнимажеидс. Кппшаредпрожект|  
+    |ImageName. Шаредпрожектжс|Кновнимажеидс. Жсшаредпрожект|  
+    |ImageName. Кшарпкодефиле|Кновнимажеидс. Ксфиленоде|  
+    |ImageName. Висуалбасиккодефиле|Кновнимажеидс. Вбфиленоде|  
 
-  - I am updating my completion list provider. What **KnownMonikers** match to the old **StandardGlyphGroup** and **StandardGlyph** values?  
+  - Я обновляя поставщик списка завершения. Какие **кновнмоникерс** соответствуют старым значениям **стандардглифграуп** и **стандардглиф** ?  
 
     ||||  
     |-|-|-|  
-    |GlyphGroupClass|GlyphItemPublic|ClassPublic|  
-    |GlyphGroupClass|GlyphItemInternal|ClassInternal|  
-    |GlyphGroupClass|GlyphItemFriend|ClassInternal|  
-    |GlyphGroupClass|GlyphItemProtected|ClassProtected|  
-    |GlyphGroupClass|GlyphItemPrivate|ClassPrivate|  
-    |GlyphGroupClass|GlyphItemShortcut|ClassShortcut|  
-    |GlyphGroupConstant|GlyphItemPublic|ClassPublic|  
-    |GlyphGroupConstant|GlyphItemInternal|ClassInternal|  
-    |GlyphGroupConstant|GlyphItemFriend|ClassInternal|  
-    |GlyphGroupConstant|GlyphItemProtected|ClassProtected|  
-    |GlyphGroupConstant|GlyphItemPrivate|ClassPrivate|  
-    |GlyphGroupConstant|GlyphItemShortcut|ClassShortcut|  
-    |GlyphGroupDelegate|GlyphItemPublic|DelegatePublic|  
-    |GlyphGroupDelegate|GlyphItemInternal|DelegateInternal|  
-    |GlyphGroupDelegate|GlyphItemFriend|DelegateInternal|  
-    |GlyphGroupDelegate|GlyphItemProtected|DelegateProtected|  
-    |GlyphGroupDelegate|GlyphItemPrivate|DelegatePrivate|  
-    |GlyphGroupDelegate|GlyphItemShortcut|DelegateShortcut|  
-    |GlyphGroupEnum|GlyphItemPublic|EnumerationPublic|  
-    |GlyphGroupEnum|GlyphItemInternal|EnumerationInternal|  
-    |GlyphGroupEnum|GlyphItemFriend|EnumerationInternal|  
-    |GlyphGroupEnum|GlyphItemProtected|EnumerationProtected|  
-    |GlyphGroupEnum|GlyphItemPrivate|EnumerationPrivate|  
-    |GlyphGroupEnum|GlyphItemShortcut|EnumerationShortcut|  
-    |GlyphGroupEnumMember|GlyphItemPublic|EnumerationMemberPublic|  
-    |GlyphGroupEnumMember|GlyphItemInternal|EnumerationMemberInternal|  
-    |GlyphGroupEnumMember|GlyphItemFriend|EnumerationMemberInternal|  
-    |GlyphGroupEnumMember|GlyphItemProtected|EnumerationMemberProtected|  
-    |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationMemberPrivate|  
-    |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationMemberShortcut|  
-    |GlyphGroupEvent|GlyphItemPublic|EventPublic|  
-    |GlyphGroupEvent|GlyphItemInternal|EventInternal|  
-    |GlyphGroupEvent|GlyphItemFriend|EventInternal|  
-    |GlyphGroupEvent|GlyphItemProtected|EventProtected|  
-    |GlyphGroupEvent|GlyphItemPrivate|EventPrivate|  
-    |GlyphGroupEvent|GlyphItemShortcut|EventShortcut|  
-    |GlyphGroupException|GlyphItemPublic|ExceptionPublic|  
-    |GlyphGroupException|GlyphItemInternal|ExceptionInternal|  
-    |GlyphGroupException|GlyphItemFriend|ExceptionInternal|  
-    |GlyphGroupException|GlyphItemProtected|ExceptionProtected|  
-    |GlyphGroupException|GlyphItemPrivate|ExceptionPrivate|  
-    |GlyphGroupException|GlyphItemShortcut|ExceptionShortcut|  
-    |GlyphGroupField|GlyphItemPublic|FieldPublic|  
-    |GlyphGroupField|GlyphItemInternal|FieldInternal|  
-    |GlyphGroupField|GlyphItemFriend|FieldInternal|  
-    |GlyphGroupField|GlyphItemProtected|FieldProtected|  
-    |GlyphGroupField|GlyphItemPrivate|FieldPrivate|  
-    |GlyphGroupField|GlyphItemShortcut|FieldShortcut|  
-    |GlyphGroupInterface|GlyphItemPublic|InterfacePublic|  
-    |GlyphGroupInterface|GlyphItemInternal|InterfaceInternal|  
-    |GlyphGroupInterface|GlyphItemFriend|InterfaceInternal|  
-    |GlyphGroupInterface|GlyphItemProtected|InterfaceProtected|  
-    |GlyphGroupInterface|GlyphItemPrivate|InterfacePrivate|  
-    |GlyphGroupInterface|GlyphItemShortcut|InterfaceShortcut|  
-    |GlyphGroupMacro|GlyphItemPublic|MacroPublic|  
-    |GlyphGroupMacro|GlyphItemInternal|MacroInternal|  
-    |GlyphGroupMacro|GlyphItemFriend|MacroInternal|  
-    |GlyphGroupMacro|GlyphItemProtected|MacroProtected|  
-    |GlyphGroupMacro|GlyphItemPrivate|MacroPrivate|  
-    |GlyphGroupMacro|GlyphItemShortcut|MacroShortcut|  
-    |GlyphGroupMap|GlyphItemPublic|MapPublic|  
-    |GlyphGroupMap|GlyphItemInternal|MapInternal|  
-    |GlyphGroupMap|GlyphItemFriend|MapInternal|  
-    |GlyphGroupMap|GlyphItemProtected|MapProtected|  
-    |GlyphGroupMap|GlyphItemPrivate|MapPrivate|  
-    |GlyphGroupMap|GlyphItemShortcut|MapShortcut|  
-    |GlyphGroupMapItem|GlyphItemPublic|MapItemPublic|  
-    |GlyphGroupMapItem|GlyphItemInternal|MapItemInternal|  
-    |GlyphGroupMapItem|GlyphItemFriend|MapItemInternal|  
-    |GlyphGroupMapItem|GlyphItemProtected|MapItemProtected|  
-    |GlyphGroupMapItem|GlyphItemPrivate|MapItemPrivate|  
-    |GlyphGroupMapItem|GlyphItemShortcut|MapItemShortcut|  
-    |GlyphGroupMethod|GlyphItemPublic|MethodPublic|  
-    |GlyphGroupMethod|GlyphItemInternal|MethodInternal|  
-    |GlyphGroupMethod|GlyphItemFriend|MethodInternal|  
-    |GlyphGroupMethod|GlyphItemProtected|MethodProtected|  
-    |GlyphGroupMethod|GlyphItemPrivate|MethodPrivate|  
-    |GlyphGroupMethod|GlyphItemShortcut|MethodShortcut|  
-    |GlyphGroupOverload|GlyphItemPublic|MethodPublic|  
-    |GlyphGroupOverload|GlyphItemInternal|MethodInternal|  
-    |GlyphGroupOverload|GlyphItemFriend|MethodInternal|  
-    |GlyphGroupOverload|GlyphItemProtected|MethodProtected|  
-    |GlyphGroupOverload|GlyphItemPrivate|MethodPrivate|  
-    |GlyphGroupOverload|GlyphItemShortcut|MethodShortcut|  
-    |GlyphGroupModule|GlyphItemPublic|ModulePublic|  
-    |GlyphGroupModule|GlyphItemInternal|ModuleInternal|  
-    |GlyphGroupModule|GlyphItemFriend|ModuleInternal|  
-    |GlyphGroupModule|GlyphItemProtected|ModuleProtected|  
-    |GlyphGroupModule|GlyphItemPrivate|ModulePrivate|  
-    |GlyphGroupModule|GlyphItemShortcut|ModuleShortcut|  
-    |GlyphGroupNamespace|GlyphItemPublic|NamespacePublic|  
-    |GlyphGroupNamespace|GlyphItemInternal|NamespaceInternal|  
-    |GlyphGroupNamespace|GlyphItemFriend|NamespaceInternal|  
-    |GlyphGroupNamespace|GlyphItemProtected|NamespaceProtected|  
-    |GlyphGroupNamespace|GlyphItemPrivate|NamespacePrivate|  
-    |GlyphGroupNamespace|GlyphItemShortcut|NamespaceShortcut|  
-    |GlyphGroupOperator|GlyphItemPublic|OperatorPublic|  
-    |GlyphGroupOperator|GlyphItemInternal|OperatorInternal|  
-    |GlyphGroupOperator|GlyphItemFriend|OperatorInternal|  
-    |GlyphGroupOperator|GlyphItemProtected|OperatorProtected|  
-    |GlyphGroupOperator|GlyphItemPrivate|OperatorPrivate|  
-    |GlyphGroupOperator|GlyphItemShortcut|OperatorShortcut|  
-    |GlyphGroupProperty|GlyphItemPublic|PropertyPublic|  
-    |GlyphGroupProperty|GlyphItemInternal|PropertyInternal|  
-    |GlyphGroupProperty|GlyphItemFriend|PropertyInternal|  
-    |GlyphGroupProperty|GlyphItemProtected|PropertyProtected|  
-    |GlyphGroupProperty|GlyphItemPrivate|PropertyPrivate|  
-    |GlyphGroupProperty|GlyphItemShortcut|PropertyShortcut|  
-    |GlyphGroupStruct|GlyphItemPublic|StructurePublic|  
-    |GlyphGroupStruct|GlyphItemInternal|StructureInternal|  
-    |GlyphGroupStruct|GlyphItemFriend|StructureInternal|  
-    |GlyphGroupStruct|GlyphItemProtected|StructureProtected|  
-    |GlyphGroupStruct|GlyphItemPrivate|StructurePrivate|  
-    |GlyphGroupStruct|GlyphItemShortcut|StructureShortcut|  
-    |GlyphGroupTemplate|GlyphItemPublic|TemplatePublic|  
-    |GlyphGroupTemplate|GlyphItemInternal|TemplateInternal|  
-    |GlyphGroupTemplate|GlyphItemFriend|TemplateInternal|  
-    |GlyphGroupTemplate|GlyphItemProtected|TemplateProtected|  
-    |GlyphGroupTemplate|GlyphItemPrivate|TemplatePrivate|  
-    |GlyphGroupTemplate|GlyphItemShortcut|TemplateShortcut|  
-    |GlyphGroupTypedef|GlyphItemPublic|TypeDefinitionPublic|  
-    |GlyphGroupTypedef|GlyphItemInternal|TypeDefinitionInternal|  
-    |GlyphGroupTypedef|GlyphItemFriend|TypeDefinitionInternal|  
-    |GlyphGroupTypedef|GlyphItemProtected|TypeDefinitionProtected|  
-    |GlyphGroupTypedef|GlyphItemPrivate|TypeDefinitionPrivate|  
-    |GlyphGroupTypedef|GlyphItemShortcut|TypeDefinitionShortcut|  
-    |GlyphGroupType|GlyphItemPublic|TypePublic|  
-    |GlyphGroupType|GlyphItemInternal|TypeInternal|  
-    |GlyphGroupType|GlyphItemFriend|TypeInternal|  
-    |GlyphGroupType|GlyphItemProtected|TypeProtected|  
-    |GlyphGroupType|GlyphItemPrivate|TypePrivate|  
-    |GlyphGroupType|GlyphItemShortcut|TypeShortcut|  
-    |GlyphGroupUnion|GlyphItemPublic|UnionPublic|  
-    |GlyphGroupUnion|GlyphItemInternal|UnionInternal|  
-    |GlyphGroupUnion|GlyphItemFriend|UnionInternal|  
-    |GlyphGroupUnion|GlyphItemProtected|UnionProtected|  
-    |GlyphGroupUnion|GlyphItemPrivate|UnionPrivate|  
-    |GlyphGroupUnion|GlyphItemShortcut|UnionShortcut|  
-    |GlyphGroupVariable|GlyphItemPublic|FieldPublic|  
-    |GlyphGroupVariable|GlyphItemInternal|FieldInternal|  
-    |GlyphGroupVariable|GlyphItemFriend|FieldInternal|  
-    |GlyphGroupVariable|GlyphItemProtected|FieldProtected|  
-    |GlyphGroupVariable|GlyphItemPrivate|FieldPrivate|  
-    |GlyphGroupVariable|GlyphItemShortcut|FieldShortcut|  
-    |GlyphGroupValueType|GlyphItemPublic|ValueTypePublic|  
-    |GlyphGroupValueType|GlyphItemInternal|ValueTypeInternal|  
-    |GlyphGroupValueType|GlyphItemFriend|ValueTypeInternal|  
-    |GlyphGroupValueType|GlyphItemProtected|ValueTypeProtected|  
-    |GlyphGroupValueType|GlyphItemPrivate|ValueTypePrivate|  
-    |GlyphGroupValueType|GlyphItemShortcut|ValueTypeShortcut|  
-    |GlyphGroupIntrinsic|GlyphItemPublic|ObjectPublic|  
-    |GlyphGroupIntrinsic|GlyphItemInternal|ObjectInternal|  
-    |GlyphGroupIntrinsic|GlyphItemFriend|ObjectInternal|  
-    |GlyphGroupIntrinsic|GlyphItemProtected|ObjectProtected|  
-    |GlyphGroupIntrinsic|GlyphItemPrivate|ObjectPrivate|  
-    |GlyphGroupIntrinsic|GlyphItemShortcut|ObjectShortcut|  
-    |GlyphGroupJSharpMethod|GlyphItemPublic|MethodPublic|  
-    |GlyphGroupJSharpMethod|GlyphItemInternal|MethodInternal|  
-    |GlyphGroupJSharpMethod|GlyphItemFriend|MethodInternal|  
-    |GlyphGroupJSharpMethod|GlyphItemProtected|MethodProtected|  
-    |GlyphGroupJSharpMethod|GlyphItemPrivate|MethodPrivate|  
-    |GlyphGroupJSharpMethod|GlyphItemShortcut|MethodShortcut|  
-    |GlyphGroupJSharpField|GlyphItemPublic|FieldPublic|  
-    |GlyphGroupJSharpField|GlyphItemInternal|FieldInternal|  
-    |GlyphGroupJSharpField|GlyphItemFriend|FieldInternal|  
-    |GlyphGroupJSharpField|GlyphItemProtected|FieldProtected|  
-    |GlyphGroupJSharpField|GlyphItemPrivate|FieldPrivate|  
-    |GlyphGroupJSharpField|GlyphItemShortcut|FieldShortcut|  
-    |GlyphGroupJSharpClass|GlyphItemPublic|ClassPublic|  
-    |GlyphGroupJSharpClass|GlyphItemInternal|ClassInternal|  
-    |GlyphGroupJSharpClass|GlyphItemFriend|ClassInternal|  
-    |GlyphGroupJSharpClass|GlyphItemProtected|ClassProtected|  
-    |GlyphGroupJSharpClass|GlyphItemPrivate|ClassPrivate|  
-    |GlyphGroupJSharpClass|GlyphItemShortcut|ClassShortcut|  
-    |GlyphGroupJSharpNamespace|GlyphItemPublic|NamespacePublic|  
-    |GlyphGroupJSharpNamespace|GlyphItemInternal|NamespaceInternal|  
-    |GlyphGroupJSharpNamespace|GlyphItemFriend|NamespaceInternal|  
-    |GlyphGroupJSharpNamespace|GlyphItemProtected|NamespaceProtected|  
-    |GlyphGroupJSharpNamespace|GlyphItemPrivate|NamespacePrivate|  
-    |GlyphGroupJSharpNamespace|GlyphItemShortcut|NamespaceShortcut|  
-    |GlyphGroupJSharpInterface|GlyphItemPublic|InterfacePublic|  
-    |GlyphGroupJSharpInterface|GlyphItemInternal|InterfaceInternal|  
-    |GlyphGroupJSharpInterface|GlyphItemFriend|InterfaceInternal|  
-    |GlyphGroupJSharpInterface|GlyphItemProtected|InterfaceProtected|  
-    |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|  
-    |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
-    |GlyphGroupError||StatusError|  
-    |GlyphBscFile||ClassFile|  
-    |GlyphAssembly||Справочник|  
-    |GlyphLibrary||Библиотека|  
-    |GlyphVBProject||VBProjectNode|  
-    |GlyphCoolProject||CSProjectNode|  
-    |GlyphCppProject||CPPProjectNode|  
-    |GlyphDialogId||Dialog|  
-    |GlyphOpenFolder||FolderOpened|  
-    |GlyphClosedFolder||FolderClosed|  
-    |GlyphArrow||GoToNext|  
-    |GlyphCSharpFile||CSFileNode|  
-    |GlyphCSharpExpansion||Snippet|  
-    |GlyphKeyword||IntellisenseKeyword|  
-    |GlyphInformation||StatusInformation|  
-    |GlyphReference||ClassMethodReference|  
-    |GlyphRecursion||Рекурсия|  
-    |GlyphXmlItem||Тег|  
-    |GlyphJSharpProject||DocumentCollection|  
-    |GlyphJSharpDocument||Document|  
-    |GlyphForwardType||GoToNext|  
-    |GlyphCallersGraph||CallTo|  
-    |GlyphCallGraph||CallFrom|  
-    |GlyphWarning||StatusWarning|  
-    |GlyphMaybeReference||QuestionMark|  
-    |GlyphMaybeCaller||CallTo|  
-    |GlyphMaybeCall||CallFrom|  
-    |GlyphExtensionMethod||ExtensionMethod|  
-    |GlyphExtensionMethodInternal||ExtensionMethod|  
-    |GlyphExtensionMethodFriend||ExtensionMethod|  
-    |GlyphExtensionMethodProtected||ExtensionMethod|  
-    |GlyphExtensionMethodPrivate||ExtensionMethod|  
-    |GlyphExtensionMethodShortcut||ExtensionMethod|  
-    |GlyphXmlAttribute||XmlAttribute|  
-    |GlyphXmlChild||XmlElement|  
-    |GlyphXmlDescendant||XmlDescendant|  
-    |GlyphXmlNamespace||XmlNamespace|  
-    |GlyphXmlAttributeQuestion||XmlAttributeLowConfidence|  
-    |GlyphXmlAttributeCheck||XmlAttributeHighConfidence|  
-    |GlyphXmlChildQuestion||XmlElementLowConfidence|  
-    |GlyphXmlChildCheck||XmlElementHighConfidence|  
-    |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
-    |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
-    |GlyphCompletionWarning||IntellisenseWarning|
+    |глифграупкласс|глифитемпублик|класспублик|  
+    |глифграупкласс|глифитеминтернал|классинтернал|  
+    |глифграупкласс|глифитемфриенд|классинтернал|  
+    |глифграупкласс|глифитемпротектед|класспротектед|  
+    |глифграупкласс|глифитемпривате|класспривате|  
+    |глифграупкласс|глифитемшорткут|классшорткут|  
+    |глифграупконстант|глифитемпублик|класспублик|  
+    |глифграупконстант|глифитеминтернал|классинтернал|  
+    |глифграупконстант|глифитемфриенд|классинтернал|  
+    |глифграупконстант|глифитемпротектед|класспротектед|  
+    |глифграупконстант|глифитемпривате|класспривате|  
+    |глифграупконстант|глифитемшорткут|классшорткут|  
+    |глифграупделегате|глифитемпублик|делегатепублик|  
+    |глифграупделегате|глифитеминтернал|делегатеинтернал|  
+    |глифграупделегате|глифитемфриенд|делегатеинтернал|  
+    |глифграупделегате|глифитемпротектед|делегатепротектед|  
+    |глифграупделегате|глифитемпривате|делегатепривате|  
+    |глифграупделегате|глифитемшорткут|делегатешорткут|  
+    |глифграупенум|глифитемпублик|енумератионпублик|  
+    |глифграупенум|глифитеминтернал|енумератионинтернал|  
+    |глифграупенум|глифитемфриенд|енумератионинтернал|  
+    |глифграупенум|глифитемпротектед|енумератионпротектед|  
+    |глифграупенум|глифитемпривате|енумератионпривате|  
+    |глифграупенум|глифитемшорткут|енумератионшорткут|  
+    |глифграупенуммембер|глифитемпублик|енумератионмемберпублик|  
+    |глифграупенуммембер|глифитеминтернал|енумератионмемберинтернал|  
+    |глифграупенуммембер|глифитемфриенд|енумератионмемберинтернал|  
+    |глифграупенуммембер|глифитемпротектед|енумератионмемберпротектед|  
+    |глифграупенуммембер|глифитемпривате|енумератионмемберпривате|  
+    |глифграупенуммембер|глифитемшорткут|енумератионмембершорткут|  
+    |глифграупевент|глифитемпублик|евентпублик|  
+    |глифграупевент|глифитеминтернал|евентинтернал|  
+    |глифграупевент|глифитемфриенд|евентинтернал|  
+    |глифграупевент|глифитемпротектед|евентпротектед|  
+    |глифграупевент|глифитемпривате|евентпривате|  
+    |глифграупевент|глифитемшорткут|евентшорткут|  
+    |глифграупексцептион|глифитемпублик|ексцептионпублик|  
+    |глифграупексцептион|глифитеминтернал|ексцептионинтернал|  
+    |глифграупексцептион|глифитемфриенд|ексцептионинтернал|  
+    |глифграупексцептион|глифитемпротектед|ексцептионпротектед|  
+    |глифграупексцептион|глифитемпривате|ексцептионпривате|  
+    |глифграупексцептион|глифитемшорткут|ексцептионшорткут|  
+    |глифграупфиелд|глифитемпублик|фиелдпублик|  
+    |глифграупфиелд|глифитеминтернал|фиелдинтернал|  
+    |глифграупфиелд|глифитемфриенд|фиелдинтернал|  
+    |глифграупфиелд|глифитемпротектед|фиелдпротектед|  
+    |глифграупфиелд|глифитемпривате|фиелдпривате|  
+    |глифграупфиелд|глифитемшорткут|фиелдшорткут|  
+    |глифграупинтерфаце|глифитемпублик|интерфацепублик|  
+    |глифграупинтерфаце|глифитеминтернал|интерфацеинтернал|  
+    |глифграупинтерфаце|глифитемфриенд|интерфацеинтернал|  
+    |глифграупинтерфаце|глифитемпротектед|интерфацепротектед|  
+    |глифграупинтерфаце|глифитемпривате|интерфацепривате|  
+    |глифграупинтерфаце|глифитемшорткут|интерфацешорткут|  
+    |глифграупмакро|глифитемпублик|макропублик|  
+    |глифграупмакро|глифитеминтернал|макроинтернал|  
+    |глифграупмакро|глифитемфриенд|макроинтернал|  
+    |глифграупмакро|глифитемпротектед|макропротектед|  
+    |глифграупмакро|глифитемпривате|макропривате|  
+    |глифграупмакро|глифитемшорткут|макрошорткут|  
+    |глифграупмап|глифитемпублик|маппублик|  
+    |глифграупмап|глифитеминтернал|мапинтернал|  
+    |глифграупмап|глифитемфриенд|мапинтернал|  
+    |глифграупмап|глифитемпротектед|маппротектед|  
+    |глифграупмап|глифитемпривате|маппривате|  
+    |глифграупмап|глифитемшорткут|мапшорткут|  
+    |глифграупмапитем|глифитемпублик|мапитемпублик|  
+    |глифграупмапитем|глифитеминтернал|мапитеминтернал|  
+    |глифграупмапитем|глифитемфриенд|мапитеминтернал|  
+    |глифграупмапитем|глифитемпротектед|мапитемпротектед|  
+    |глифграупмапитем|глифитемпривате|мапитемпривате|  
+    |глифграупмапитем|глифитемшорткут|мапитемшорткут|  
+    |глифграупмесод|глифитемпублик|месодпублик|  
+    |глифграупмесод|глифитеминтернал|месодинтернал|  
+    |глифграупмесод|глифитемфриенд|месодинтернал|  
+    |глифграупмесод|глифитемпротектед|MethodProtected|  
+    |глифграупмесод|глифитемпривате|месодпривате|  
+    |глифграупмесод|глифитемшорткут|месодшорткут|  
+    |глифграуповерлоад|глифитемпублик|месодпублик|  
+    |глифграуповерлоад|глифитеминтернал|месодинтернал|  
+    |глифграуповерлоад|глифитемфриенд|месодинтернал|  
+    |глифграуповерлоад|глифитемпротектед|MethodProtected|  
+    |глифграуповерлоад|глифитемпривате|месодпривате|  
+    |глифграуповерлоад|глифитемшорткут|месодшорткут|  
+    |глифграупмодуле|глифитемпублик|модулепублик|  
+    |глифграупмодуле|глифитеминтернал|модулеинтернал|  
+    |глифграупмодуле|глифитемфриенд|модулеинтернал|  
+    |глифграупмодуле|глифитемпротектед|модулепротектед|  
+    |глифграупмодуле|глифитемпривате|модулепривате|  
+    |глифграупмодуле|глифитемшорткут|модулешорткут|  
+    |глифграупнамеспаце|глифитемпублик|намеспацепублик|  
+    |глифграупнамеспаце|глифитеминтернал|намеспацеинтернал|  
+    |глифграупнамеспаце|глифитемфриенд|намеспацеинтернал|  
+    |глифграупнамеспаце|глифитемпротектед|намеспацепротектед|  
+    |глифграупнамеспаце|глифитемпривате|намеспацепривате|  
+    |глифграупнамеспаце|глифитемшорткут|намеспацешорткут|  
+    |глифграупоператор|глифитемпублик|операторпублик|  
+    |глифграупоператор|глифитеминтернал|операторинтернал|  
+    |глифграупоператор|глифитемфриенд|операторинтернал|  
+    |глифграупоператор|глифитемпротектед|операторпротектед|  
+    |глифграупоператор|глифитемпривате|операторпривате|  
+    |глифграупоператор|глифитемшорткут|операторшорткут|  
+    |глифграуппроперти|глифитемпублик|пропертипублик|  
+    |глифграуппроперти|глифитеминтернал|пропертинтернал|  
+    |глифграуппроперти|глифитемфриенд|пропертинтернал|  
+    |глифграуппроперти|глифитемпротектед|пропертипротектед|  
+    |глифграуппроперти|глифитемпривате|пропертипривате|  
+    |глифграуппроперти|глифитемшорткут|пропертишорткут|  
+    |глифграупструкт|глифитемпублик|структурепублик|  
+    |глифграупструкт|глифитеминтернал|структуреинтернал|  
+    |глифграупструкт|глифитемфриенд|структуреинтернал|  
+    |глифграупструкт|глифитемпротектед|структурепротектед|  
+    |глифграупструкт|глифитемпривате|структурепривате|  
+    |глифграупструкт|глифитемшорткут|структурешорткут|  
+    |глифграуптемплате|глифитемпублик|темплатепублик|  
+    |глифграуптемплате|глифитеминтернал|темплатеинтернал|  
+    |глифграуптемплате|глифитемфриенд|темплатеинтернал|  
+    |глифграуптемплате|глифитемпротектед|темплатепротектед|  
+    |глифграуптемплате|глифитемпривате|темплатепривате|  
+    |глифграуптемплате|глифитемшорткут|темплатешорткут|  
+    |глифграуптипедеф|глифитемпублик|типедефинитионпублик|  
+    |глифграуптипедеф|глифитеминтернал|типедефинитионинтернал|  
+    |глифграуптипедеф|глифитемфриенд|типедефинитионинтернал|  
+    |глифграуптипедеф|глифитемпротектед|типедефинитионпротектед|  
+    |глифграуптипедеф|глифитемпривате|типедефинитионпривате|  
+    |глифграуптипедеф|глифитемшорткут|типедефинитионшорткут|  
+    |глифграуптипе|глифитемпублик|типепублик|  
+    |глифграуптипе|глифитеминтернал|типеинтернал|  
+    |глифграуптипе|глифитемфриенд|типеинтернал|  
+    |глифграуптипе|глифитемпротектед|типепротектед|  
+    |глифграуптипе|глифитемпривате|типепривате|  
+    |глифграуптипе|глифитемшорткут|типешорткут|  
+    |глифграупунион|глифитемпублик|унионпублик|  
+    |глифграупунион|глифитеминтернал|унионинтернал|  
+    |глифграупунион|глифитемфриенд|унионинтернал|  
+    |глифграупунион|глифитемпротектед|унионпротектед|  
+    |глифграупунион|глифитемпривате|унионпривате|  
+    |глифграупунион|глифитемшорткут|унионшорткут|  
+    |глифграупвариабле|глифитемпублик|фиелдпублик|  
+    |глифграупвариабле|глифитеминтернал|фиелдинтернал|  
+    |глифграупвариабле|глифитемфриенд|фиелдинтернал|  
+    |глифграупвариабле|глифитемпротектед|фиелдпротектед|  
+    |глифграупвариабле|глифитемпривате|фиелдпривате|  
+    |глифграупвариабле|глифитемшорткут|фиелдшорткут|  
+    |глифграупвалуетипе|глифитемпублик|валуетипепублик|  
+    |глифграупвалуетипе|глифитеминтернал|валуетипеинтернал|  
+    |глифграупвалуетипе|глифитемфриенд|валуетипеинтернал|  
+    |глифграупвалуетипе|глифитемпротектед|валуетипепротектед|  
+    |глифграупвалуетипе|глифитемпривате|валуетипепривате|  
+    |глифграупвалуетипе|глифитемшорткут|валуетипешорткут|  
+    |глифграупинтринсик|глифитемпублик|обжектпублик|  
+    |глифграупинтринсик|глифитеминтернал|обжектинтернал|  
+    |глифграупинтринсик|глифитемфриенд|обжектинтернал|  
+    |глифграупинтринсик|глифитемпротектед|обжектпротектед|  
+    |глифграупинтринсик|глифитемпривате|обжектпривате|  
+    |глифграупинтринсик|глифитемшорткут|обжектшорткут|  
+    |глифграупжшарпмесод|глифитемпублик|месодпублик|  
+    |глифграупжшарпмесод|глифитеминтернал|месодинтернал|  
+    |глифграупжшарпмесод|глифитемфриенд|месодинтернал|  
+    |глифграупжшарпмесод|глифитемпротектед|MethodProtected|  
+    |глифграупжшарпмесод|глифитемпривате|месодпривате|  
+    |глифграупжшарпмесод|глифитемшорткут|месодшорткут|  
+    |глифграупжшарпфиелд|глифитемпублик|фиелдпублик|  
+    |глифграупжшарпфиелд|глифитеминтернал|фиелдинтернал|  
+    |глифграупжшарпфиелд|глифитемфриенд|фиелдинтернал|  
+    |глифграупжшарпфиелд|глифитемпротектед|фиелдпротектед|  
+    |глифграупжшарпфиелд|глифитемпривате|фиелдпривате|  
+    |глифграупжшарпфиелд|глифитемшорткут|фиелдшорткут|  
+    |глифграупжшарпкласс|глифитемпублик|класспублик|  
+    |глифграупжшарпкласс|глифитеминтернал|классинтернал|  
+    |глифграупжшарпкласс|глифитемфриенд|классинтернал|  
+    |глифграупжшарпкласс|глифитемпротектед|класспротектед|  
+    |глифграупжшарпкласс|глифитемпривате|класспривате|  
+    |глифграупжшарпкласс|глифитемшорткут|классшорткут|  
+    |глифграупжшарпнамеспаце|глифитемпублик|намеспацепублик|  
+    |глифграупжшарпнамеспаце|глифитеминтернал|намеспацеинтернал|  
+    |глифграупжшарпнамеспаце|глифитемфриенд|намеспацеинтернал|  
+    |глифграупжшарпнамеспаце|глифитемпротектед|намеспацепротектед|  
+    |глифграупжшарпнамеспаце|глифитемпривате|намеспацепривате|  
+    |глифграупжшарпнамеспаце|глифитемшорткут|намеспацешорткут|  
+    |глифграупжшарпинтерфаце|глифитемпублик|интерфацепублик|  
+    |глифграупжшарпинтерфаце|глифитеминтернал|интерфацеинтернал|  
+    |глифграупжшарпинтерфаце|глифитемфриенд|интерфацеинтернал|  
+    |глифграупжшарпинтерфаце|глифитемпротектед|интерфацепротектед|  
+    |глифграупжшарпинтерфаце|глифитемпривате|интерфацепривате|  
+    |глифграупжшарпинтерфаце|глифитемшорткут|интерфацешорткут|  
+    |глифграуперрор||статусеррор|  
+    |глифбскфиле||классфиле|  
+    |глифассембли||Справочные сведения|  
+    |глифлибрари||Библиотека|  
+    |глифвбпрожект||вбпрожектноде|  
+    |глифкулпрожект||кспрожектноде|  
+    |глифкпппрожект||кпппрожектноде|  
+    |глифдиалогид||Откроется|  
+    |глифопенфолдер||фолдеропенед|  
+    |глифклоседфолдер||фолдерклосед|  
+    |глифарров||готонекст|  
+    |глифкшарпфиле||ксфиленоде|  
+    |глифкшарпекспансион||Пример|  
+    |глифкэйворд||интеллисенсекэйворд|  
+    |глифинформатион||статусинформатион|  
+    |глифреференце||классмесодреференце|  
+    |глифрекурсион||Рекурсия|  
+    |глифксмлитем||Тег|  
+    |глифжшарппрожект||Коллекции documentcollection|  
+    |глифжшарпдокумент||Document|  
+    |глиффорвардтипе||готонекст|  
+    |глифкаллерсграф||каллто|  
+    |глифкаллграф||каллфром|  
+    |глифварнинг||статусварнинг|  
+    |глифмайбереференце||куестионмарк|  
+    |глифмайбекаллер||каллто|  
+    |глифмайбекалл||каллфром|  
+    |глифекстенсионмесод||екстенсионмесод|  
+    |глифекстенсионмесодинтернал||екстенсионмесод|  
+    |глифекстенсионмесодфриенд||екстенсионмесод|  
+    |глифекстенсионмесодпротектед||екстенсионмесод|  
+    |глифекстенсионмесодпривате||екстенсионмесод|  
+    |глифекстенсионмесодшорткут||екстенсионмесод|  
+    |глифксмлаттрибуте||XmlAttribute|  
+    |глифксмлчилд||XmlElement|  
+    |глифксмлдесцендант||ксмлдесцендант|  
+    |глифксмлнамеспаце||XmlNamespace|  
+    |глифксмлаттрибутекуестион||ксмлаттрибутеловконфиденце|  
+    |глифксмлаттрибутечекк||ксмлаттрибутехигхконфиденце|  
+    |глифксмлчилдкуестион||ксмлелементловконфиденце|  
+    |глифксмлчилдчекк||ксмлелеменсигхконфиденце|  
+    |глифксмлдесценданткуестион||ксмлдесцендантловконфиденце|  
+    |глифксмлдесцендантчекк||ксмлдесцендансигхконфиденце|  
+    |глифкомплетионварнинг||интеллисенсеварнинг|

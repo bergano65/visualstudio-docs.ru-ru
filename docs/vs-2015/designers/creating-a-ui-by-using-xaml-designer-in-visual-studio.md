@@ -36,7 +36,7 @@ ms.locfileid: "74294662"
 
  В режиме конструктора окно, содержащее *область рисования* , — это активное окно, которое можно использовать в качестве основной рабочей области. С его помощью можно визуально создавать страницы приложения, добавляя или рисуя элементы, а затем изменяя их. Дополнительные сведения см. в разделе [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). На этом рисунке показана область рисования в режиме конструктора.
 
- ![Design view of XAML Designer](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![представление конструирования Конструктор XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  В области рисования доступны следующие функции.
 
@@ -58,7 +58,7 @@ ms.locfileid: "74294662"
 
  В режиме конструктора в левой нижней части экрана доступны дополнительные команды области рисования, как показано ниже:
 
- ![Design view commands](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![представление конструирования команды](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  На этой панели инструментов доступны следующие команды:
 
@@ -72,7 +72,7 @@ ms.locfileid: "74294662"
 
  В представлении XAML окно, содержащее редактор XAML, активно, а редактор XAML служит основным средством разработки. Язык XAML предоставляет декларативный, основанный на XML словарь для создания пользовательского интерфейса приложения. Представление XAML поддерживает IntelliSense, автоматическое форматирование, выделение синтаксиса и перемещение по тегам. На этом рисунке показано представление XAML.
 
- ![XAML view](../designers/media/xaml-editor.png "xaml_editor")
+ ![Представление XAML](../designers/media/xaml-editor.png "xaml_editor")
 
  **Панель представления с разделением**. Панель разделенного представления отображается в верхней части представления XAML, когда редактор XAML находится в нижнем окне. Панель разделенного представления позволяет управлять относительными размерами представлений конструктора и XAML. Вы также можете менять представления местами (с помощью кнопки **Переставить панели** ), выбрать упорядочивание представлений по горизонтали или вертикали, а также свернуть любое представление.
 
@@ -81,7 +81,7 @@ ms.locfileid: "74294662"
 ## <a name="device-window"></a>Окно устройства
  Окно устройства в конструкторе XAML позволяет моделировать различные представления, экраны и параметры отображения во время разработки проекта приложения для Магазина Windows или Windows Phone. Окно устройства можно найти в меню **Конструктор** при работе в конструкторе XAML. Вот как оно выглядит:
 
- ![Device window](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Окно устройства](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  В окне устройств доступны следующие параметры:
 
@@ -116,7 +116,7 @@ ms.locfileid: "74294662"
 
   Чтобы открыть окно "Структура документа", в строке меню выберите **Вид**, **Другие окна**, **Структура документа**.
 
-  ![Document Outline window](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![Окно структуры документа](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   В окне "Структура документа" доступны следующие параметры.
 
@@ -137,5 +137,5 @@ ms.locfileid: "74294662"
 
  Справа от значения каждого свойства отображается *метка свойства* в виде квадрата. Внешний вид метки свойства указывает, применены ли к свойству привязка данных или ресурс. Например, белый квадрат указывает значение по умолчанию, черный квадрат обычно указывает, что был применен локальный ресурс, а оранжевый квадрат обычно указывает, что была применена привязка данных. Щелкнув метку свойства, можно перейти к определению стиля, открыть построитель привязки данных или открыть средство выбора ресурсов.
 
-## <a name="see-also"></a>См. также раздел
- [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md) [How to create and apply a resource](../designers/how-to-create-and-apply-a-resource.md) [Walkthrough: Binding to data in XAML Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+## <a name="see-also"></a>См. также
+ [Работа с элементами в конструктор XAML](../designers/working-with-elements-in-xaml-designer.md) [Создание и применение ресурсов](../designers/how-to-create-and-apply-a-resource.md) [Пошаговое руководство. привязка к данным в конструктор XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

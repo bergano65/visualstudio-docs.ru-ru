@@ -1,5 +1,5 @@
 ---
-title: Extend UML models and diagrams | Microsoft Docs
+title: Расширение моделей и схем UML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,7 +19,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301048"
 ---
-# <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
+# <a name="extend-uml-models-and-diagrams"></a>Extend UML models and diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе приведены сводные сведения о способах расширения инструментов моделирования UML, входящих в состав Visual Studio. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -30,7 +30,7 @@ ms.locfileid: "74301048"
 
  Команда специалистов по инструментам Fabrikam вносит ряд усовершенствований, облегчающих работу команд разработчиков. В следующих разделах описываются разные виды расширений, которые вы можете определить. Несколько таких методов можно объединить в одно расширение Visual Studio.
 
- For more information, see this video: ![link to video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I Series: UML Tools and Extensibility](https://go.microsoft.com/fwlink/?LinkId=214467).
+ Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[серия практических руководств MSDN: средства и расширяемость UML](https://go.microsoft.com/fwlink/?LinkId=214467).
 
 ## <a name="Requirements"></a> Требования
 
@@ -43,80 +43,80 @@ ms.locfileid: "74301048"
 
  Разработчики инструментов Fabrikam определяют стереотипы в узлах объектов схем деятельности, такие как «конвейерная лента» и «стойка регистрации». Когда член команды создает схему обработки багажа с помощью схемы деятельности, он может задавать стереотипы, чтобы указать, какой тип оборудования представлен каждым из узлов. Разработчики инструментов определяют дополнительные свойства для некоторых стереотипов, чтобы пользователи могли записывать значения емкости конвейерной ленты и направление прохождения стойки регистрации.
 
- For more information, see [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md).
+ Дополнительные сведения см. в разделе [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md).
 
 ## <a name="custom-toolbox-items"></a>Настраиваемые элементы панели элементов
  Настраиваемый элемент панели элементов создает элемент или группу элементов на основе прототипа, определенного на схеме. Например, можно создать инструмент, создающий варианты использования с определенным цветом или стереотипом либо группу классов и ассоциаций, представляющую шаблон проектирования. Эти элементы можно добавлять в расширения Visual Studio и предоставлять их другим пользователям.
 
- For more information, see [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md).
+ Дополнительные сведения см. [в разделе Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md).
 
 ## <a name="validation"></a>Проверка
  Вы можете определить правила, чтобы гарантировать, что модель UML соответствует заданным ограничениям.
 
  Разработчики инструментов Fabrikam определяют правила, чтобы помочь членам команды избежать простых ошибок в моделях обработки багажа. Например, стойку регистрации нельзя напрямую подключать к ячейке для хранения. Между ними должна находиться хотя бы конвейерная лента.
 
- For more information, see [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md).
+ Дополнительные сведения см. в разделе [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md).
 
 ## <a name="menu-commands"></a>Команды меню
  Можно определить команды, которые пользователи смогут вызвать щелчком правой кнопкой мыши по элементу на схеме UML. Команды могут обновлять модель и схемы или выполнять другие операции в [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
  Fabrikam определяет команды меню для автоматизации часто выполняемых операций, таких как создание стойки регистрации и ее соединение с выбранной конвейерной лентой или приведение схемы в соответствие с действующими в компании правилами разметки.
 
- See [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ См. раздел [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ## <a name="gestures"></a>Жесты
  Вы можете определить команды, которые инициируются двойным щелчком по элементу схемы или перетаскиванием на схему или ее элемент. Вы можете определить команды, которые обрабатывают элементы, перетаскиваемые с других схем UML, из других частей Visual Studio или из других приложений или проводника Windows (проводника).
 
  Члены команды Fabrikam могут сопоставить файл, например спецификацию, с любым элементом модели, перетащив его с рабочего стола Windows. Разработчики инструментов определили стереотип, предоставляющий каждому элементу свойство пути к файлу, и жест, задающий стереотип и путь к файлу при перетаскивании файла на элемент.
 
- For more information, see [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).
+ Дополнительные сведения см. в разделе [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).
 
 ## <a name="responding-to-changes"></a>Реагирование на изменения
  Вы можете написать код, который реагирует на изменения в модели, вызваны ли они действиями пользователя или кодом другой программы.
 
  Разработчики Fabrikam создают код, который автоматически задает цвет элемента в зависимости от его стереотипа. Это помогает пользователям различать назначение элементов в моделях.
 
- For more information, see [How to: Respond to Changes in a UML Model](../misc/how-to-respond-to-changes-in-a-uml-model.md).
+ Дополнительные сведения см. в разделе [инструкции. реагирование на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).
 
 ## <a name="model-bus"></a>Шина модели
  Шина модели позволяет осуществлять доступ к схеме или модели из другой схемы или другого расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Помимо прочего, это позволяет распространять сведения в рамках нескольких моделей, чтобы над объединенной моделью одновременно могло работать несколько пользователей.
 
  Fabrikam использует элементы на схемах деятельности для представления оборудования обработки багажа. Каждая единица оборудования может иметь более подробную спецификацию на другой схеме, которая может находиться в другой модели. Ограничения проверки на схеме потока багажа могут извлекать соответствующие свойства оборудования из других схем. Ссылки на другие схемы хранятся в дополнительных свойствах, определенных в стереотипах.
 
- For more information, see [Integrate UML models with other models and tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+ Дополнительные сведения см. [в разделе Интеграция моделей UML с другими моделями и инструментами](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
 ## <a name="generation"></a>Создание
  На основе модели можно создавать программный код, скрипты, конфигурации, документы, новые модели или другие артефакты.
 
  В разрабатываемых Fabrikam системах обработки багажа значительная часть кода остается неизменной от проекта к проекту. Главным переменным фактором является план потока багажа в аэропорту. После того как команда разработчиков накопила опыт в течение нескольких первых проектов, разработчики инструментов создают шаблон, который создает на базе модели потока багажа большую часть переменного программного кода и другие файлы, например документы пользователя. Это значительно сокращает время разработки и количество ошибок для всех новых проектов.
 
- For more information, see [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md).
+ Дополнительные сведения см. в разделе [Создание файлов из модели UML](../modeling/generate-files-from-a-uml-model.md).
 
 ## <a name="team-foundation-server-integration"></a>Интеграция с Team Foundation Server
  Вы можете связывать рабочие элементы с элементами модели и получать доступ к этим связанным элементам программным путем.
 
  Разработчики инструментов Fabrikam разрабатывают инструмент, который создает график работ для каждого проекта. Рабочие элементы в графике связаны с элементами модели.
 
- For more information, see [Define a work item link handler](../modeling/define-a-work-item-link-handler.md).
+ Дополнительные сведения см. [в разделе Определение обработчика ссылок рабочих элементов](../modeling/define-a-work-item-link-handler.md).
 
 ## <a name="tools-that-update-models"></a>Инструменты, обновляющие модели
  Вы можете создавать автономные приложения и расширения Visual Studio, способные загружать модели UML.
 
  Разработчики Fabrikam создают инструмент, который считывает модели и создает отчеты о ходе работы над каждым ее элементом.
 
- For more information, see [Read a UML model in program code](../modeling/read-a-uml-model-in-program-code.md).
+ Дополнительные сведения см. [в разделе Чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).
 
 ## <a name="domain-specific-languages"></a>Предметно-ориентированные языки
- В случаях, когда часто используется определенный тип модели, может оказаться полезным создать предметно-ориентированный язык. Он позволяет более точно удовлетворить потребности вашего бизнеса по сравнению с моделью UML, но требует больше усилий на сборку и поддержку. For more information, see [Modeling SDK for Visual Studio - Domain-Specific Languages](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
+ В случаях, когда часто используется определенный тип модели, может оказаться полезным создать предметно-ориентированный язык. Он позволяет более точно удовлетворить потребности вашего бизнеса по сравнению с моделью UML, но требует больше усилий на сборку и поддержку. Дополнительные сведения см. в статье [моделирование пакета SDK для Visual Studio — языки, относящиеся к домену](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Видеоролики**|![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: UML Tools and Extensibility](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML with Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") - [канал 9: UML с помощью Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>См. также раздел
- [Create models for your app](../modeling/create-models-for-your-app.md) [API Reference for UML Modeling Extensibility](../modeling/api-reference-for-uml-modeling-extensibility.md)
+## <a name="see-also"></a>См. также
+ [Создание моделей для](../modeling/create-models-for-your-app.md) [справочника по API приложений для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

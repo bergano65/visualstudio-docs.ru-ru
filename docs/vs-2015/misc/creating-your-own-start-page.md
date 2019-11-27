@@ -1,5 +1,5 @@
 ---
-title: Creating Your Own Start Page | Microsoft Docs
+title: Создание собственной начальной страницы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -31,7 +31,7 @@ ms.locfileid: "74299313"
 1. Скачайте и установите [шаблон проекта начальной страницы](https://go.microsoft.com/fwlink/?LinkId=186204) из коллекции Visual Studio.  
   
     > [!WARNING]
-    > На данный момент шаблон проекта начальной страницы Visual Studio 2010 еще не обновлен. For information about how to upgrade this template, see [How to: Upgrade a Visual Studio Custom Start Page](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > На данный момент шаблон проекта начальной страницы Visual Studio 2010 еще не обновлен. Сведения о том, как обновить этот шаблон, см. [в разделе как обновить настраиваемую начальную страницу Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Установив шаблон, создайте с его помощью проект начальной страницы.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "74299313"
   
     Файлы VSIX и PKGDEF следует сохранить для целей развертывания.  
   
-   Кроме того, пустую начальную страницу можно создать путем создания XAML-файла с правильной структурой тегов, распознаваемой средой Visual Studio. Затем можно добавить разметку и код программной части для получения нужного внешнего вида и функциональности. For more information, see [Creating a Custom Start Page](../extensibility/creating-a-custom-start-page.md).  
+   Кроме того, пустую начальную страницу можно создать путем создания XAML-файла с правильной структурой тегов, распознаваемой средой Visual Studio. Затем можно добавить разметку и код программной части для получения нужного внешнего вида и функциональности. Дополнительные сведения см. [в разделе Создание настраиваемой начальной страницы](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Тестирование и применение настраиваемой начальной страницы  
  Не запускайте начальную страницу в основном экземпляре, пока не убедитесь в том, что она работает без сбоев. Протестировав настраиваемую начальную страницу, можно применить ее к системе, повторив последние три действия этой процедуры в основном экземпляре Visual Studio.  
@@ -97,8 +97,8 @@ ms.locfileid: "74299313"
   
     Откроется работающая начальная страница. Чтобы увидеть изменения, необходимо закрыть экспериментальный экземпляр, повторно скопировать все измененные файлы, а затем снова открыть экспериментальный экземпляр.  
   
-   You can share your custom Start Page by uploading the .vsix file from your bin\debug directory to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site, or to another Web site or intranet share. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   Вы можете предоставить общий доступ к настраиваемой начальной странице, передав файл VSIX из каталога bin\Debug на веб-сайт [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или на другой веб-сайт или в общую папку интрасети. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
-## <a name="see-also"></a>См. также раздел  
- [Customizing the Start Page](../ide/customizing-the-start-page-for-visual-studio.md)   
+## <a name="see-also"></a>См. также  
+ [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Пошаговое руководство. Добавление настраиваемого XAML-файла на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
