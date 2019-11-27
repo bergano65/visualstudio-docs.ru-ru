@@ -1,5 +1,5 @@
 ---
-title: Directed Graph Markup Language (DGML) reference | Microsoft Docs
+title: Справочник по языку XML-ориентированного графа (DGML) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,12 +21,12 @@ ms.locfileid: "74296034"
 
 Язык разметки направленных графов (Directed Graph Markup Language, DGML) описывает информацию, которая используется для визуализации и выполнения анализов сложности, а также служит форматом, в котором Visual Studio хранит карты кодов. Для описания циклических и ациклических направленных графов в DGML используется простой XML-код. Направленный граф представляет собой набор узлов, соединенных ссылками или границами. Узлы и ссылки могут быть использованы для представления сетевых структур, например элементов программного проекта.
 
- Note that some versions of Visual Studio support only a subset of DGML capabilities, see [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Обратите внимание, что некоторые версии Visual Studio поддерживают только подмножество возможностей DGML, см. раздел [Поддержка версий для инструментов архитектуры и моделирования](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). For more information, see [Colors Class](https://go.microsoft.com/fwlink/?LinkId=182345).
+> При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [класс Colors](https://go.microsoft.com/fwlink/?LinkId=182345).
 
-## <a name="DGML"></a> DGML syntax
+## <a name="DGML"></a>Синтаксис DGML
  В следующей таблице описаны виды элементов, используемых в языке DGML.
 
 - `<DirectedGraph></DirectedGraph>`
@@ -35,17 +35,17 @@ ms.locfileid: "74296034"
 
    Следующий список описывает необязательные атрибуты, которые могут быть включены в элемент.
 
-   `Background` — цвет фона.
+   `Background` — цвет фона на карте
 
-   `BackgroundImage` — местоположение файла изображения, используемого в качестве фона карты.
+   `BackgroundImage` — расположение файла изображения, используемого в качестве фона на карте.
 
-   `GraphDirection` — если для карты выбрана древовидная структура (`Sugiyama`), расположите узлы таким образом, чтобы большинство ссылок было упорядочены в определенном направлении: `TopToBottom`, `BottomToTop`, `LeftToRight` или `RightToLeft`. See [Change the map layout](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection` — если для параметра Map задано значение структура в виде дерева (`Sugiyama`), разместите узлы так, чтобы большинство ссылок в указанном направлении: `TopToBottom`, `BottomToTop`, `LeftToRight`или `RightToLeft`. См. раздел [изменение макета схемы](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `Layout` — организует карту в одну из следующих структур: `None`, `Sugiyama` (древовидная структура), `ForceDirected` (быстрые кластеры) или `DependencyMatrix`. See [Change the map layout](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `Layout`-установить карту в следующих макетах: `None`, `Sugiyama` (Древовидный макет), `ForceDirected` (быстрые кластеры) или `DependencyMatrix`. См. раздел [изменение макета схемы](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `NeighborhoodDistance` — если карта организована в виде древовидной структуры или быстрых кластеров, показывает только узлы, удаленные от выбранных узлов не более, чем на указанное количество ссылок (1–7). See [Change the map layout](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `NeighborhoodDistance` — когда для параметра Map установлено значение древовидный макет или структура быстрых кластеров, отображаются только те узлы, которые имеют указанное число (1-7) ссылок за пределами выбранных узлов. См. раздел [изменение макета схемы](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "74296034"
   > [!NOTE]
   > Если сослаться в элементе `<Link/>` на несуществующий элемент карты, она создаст элемент `<Node/>` автоматически.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -92,25 +92,25 @@ ms.locfileid: "74296034"
 
    Этот элемент в обязательном порядке включает следующие атрибуты.
 
-   `Id` — уникальное имя узла; одновременно является значением по умолчанию атрибута `Label`, если атрибут `Label` не определен отдельно. Это имя должно совпадать с атрибутом `Source` или `Target` ссылки, которая ссылается на данный элемент.
+   `Id` — уникальное имя узла и значение по умолчанию атрибута `Label`, если не указан отдельный атрибут `Label`. Это имя должно совпадать с атрибутом `Source` или `Target` ссылки, которая ссылается на данный элемент.
 
    Следующий список описывает некоторые из необязательных атрибутов, которые могут быть включены в элемент.
 
-   `Label` - The display name of the node.
+   `Label` — отображаемое имя узла.
 
    Атрибуты стилей. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` — имя категории, которая указывает на элементы, имеющие одинаковое значение этого атрибута. Дополнительные сведения см. в описании элемента `<Category/>`.
+   `Category` — имя категории, определяющей элементы, совместно использующие этот атрибут. Дополнительные сведения см. в описании элемента `<Category/>`.
 
-   `Property` — имя свойства, указывающего на элементы, которые имеют одинаковое значение этого свойства. Дополнительные сведения см. в описании элемента `<Property/>`.
+   `Property` — имя свойства, определяющего элементы, имеющие одинаковое значение свойства. Дополнительные сведения см. в описании элемента `<Property/>`.
 
-   `Group` — если узел содержит другие узлы, следует присвоить этому атрибуту значение `Expanded` или `Collapsed`, чтобы его содержимое отображалось или скрывалось. Обязателен элемент `<Link/>`, включающий атрибут `Category="Contains"` и задающий родительский узел как исходный узел и дочерние узлы как целевые. See [Group code elements](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
+   `Group` — если узел содержит другие узлы, следует присвоить этому атрибуту значение `Expanded` или `Collapsed`, чтобы его содержимое отображалось или скрывалось. Обязателен элемент `<Link/>`, включающий атрибут `Category="Contains"` и задающий родительский узел как исходный узел и дочерние узлы как целевые. См. раздел [элементы кода группы](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` — следует задать этому атрибуту значение `Visible`, `Hidden` или `Collapsed`. Используются сочетания клавиш `System.Windows.Visibility`. See [Hide or show nodes and links](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility` — задайте для этого атрибута значение `Visible`, `Hidden`или `Collapsed`. Используются сочетания клавиш `System.Windows.Visibility`. См. раздел [Скрытие или отображение узлов и ссылок](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
-   `Reference` — задайте этот атрибут для связывания с документом или URL-адресом. See [Link documents or URLs to code elements and links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
+   `Reference` — задайте этот атрибут для связывания с документом или URL-адресом. См. статью [связывание документов или URL-адресов с элементами кода и ссылками](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -135,7 +135,7 @@ ms.locfileid: "74296034"
 
    Этот элемент содержит список элементов `<Link>`, задающих ссылки между узлами. Дополнительные сведения см. в описании элемента `<Link/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -155,7 +155,7 @@ ms.locfileid: "74296034"
 
    Этот элемент в обязательном порядке включает следующие атрибуты.
 
-   `Source` — исходный узел ссылки.
+   `Source` — исходный узел ссылки
 
    `Target` — целевой узел ссылки.
 
@@ -165,11 +165,11 @@ ms.locfileid: "74296034"
 
    Атрибуты стилей. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` — имя категории, которая указывает на элементы, имеющие одинаковое значение этого атрибута. Дополнительные сведения см. в описании элемента `<Category/>`.
+   `Category` — имя категории, определяющей элементы, совместно использующие этот атрибут. Дополнительные сведения см. в описании элемента `<Category/>`.
 
-   `Property` — имя свойства, указывающего на элементы, которые имеют одинаковое значение этого свойства. Дополнительные сведения см. в описании элемента `<Property/>`.
+   `Property` — имя свойства, определяющего элементы, имеющие одинаковое значение свойства. Дополнительные сведения см. в описании элемента `<Property/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -193,7 +193,7 @@ ms.locfileid: "74296034"
 
    Этот элемент содержит список элементов `<Category/>`. Дополнительные сведения см. в описании элемента `<Category/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -216,13 +216,13 @@ ms.locfileid: "74296034"
 
    `Label` — удобное для чтения имя категории.
 
-   `BasedOn` — родительская категория, от которой унаследован данный элемент `<Category/>`.
+   `BasedOn` — Родительская категория, от которой наследуется `<Category/>` текущего элемента.
 
-   В примере категория `FailedTest` унаследовала атрибут `Stroke` от категории `PassedTest`. See "To create hierarchical categories" in [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   В примере категория `FailedTest` унаследовала атрибут `Stroke` от категории `PassedTest`. См. раздел "создание иерархических категорий" раздела [Настройка карт кода путем редактирования DGML файлов](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Категории предоставляют также базовый шаблон поведения, который определяет отображение узлов и ссылок на карте. См. раздел [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -250,7 +250,7 @@ ms.locfileid: "74296034"
 
    Этот элемент содержит список элементов `<Property/>`. Дополнительные сведения см. в описании элемента `<Property/>`.
 
-   Пример
+   Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -267,15 +267,15 @@ ms.locfileid: "74296034"
 
    Этот элемент в обязательном порядке включает следующие атрибуты.
 
-  - `Id` — уникальное имя свойства; одновременно является значением по умолчанию атрибута `Label`, если атрибут `Label` не определен отдельно.
+  - `Id` — уникальное имя свойства и значение по умолчанию атрибута `Label`, если не указан отдельный атрибут `Label`.
 
-  - `DataType` — тип данных, хранящихся в свойстве.
+  - `DataType` — тип данных, хранящихся в свойстве
 
-    If you want the property to appear in the **Properties** window, use the `Label` property to specify the property's display name.
+    Если требуется, чтобы свойство отображалось в окне **Свойства** , используйте свойство `Label`, чтобы указать отображаемое имя свойства.
 
-    See [Assign categories to code elements and links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
+    См. раздел [Назначение категорий элементам кода и ссылкам](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
-    Пример
+    Пример.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -302,7 +302,7 @@ ms.locfileid: "74296034"
   </DirectedGraph>
   ```
 
-### <a name="AddAlias"></a> Aliases for commonly-used paths
+### <a name="AddAlias"></a>Псевдонимы для часто используемых путей
  Замена часто используемых путей псевдонимами уменьшает размер DGML-файла и время, требуемое на загрузку или сохранение файла. Для создания псевдонима добавьте раздел `<Paths></Paths>` в конце DGML-файла. В этом разделе добавьте элемент `<Path/>` для того, чтобы определить псевдоним для пути.
 
 ```xml
@@ -311,7 +311,7 @@ ms.locfileid: "74296034"
 </Paths>
 ```
 
- To reference the alias from an element in the .dgml file, enclose the `Id` of the \<Path/> element with a dollar sign ($) and parentheses (()):
+ Чтобы сослаться на псевдоним из элемента в DGML-файле, заключите `Id` \<путь/> в знак доллара ($) и круглые скобки (()):
 
 ```xml
 <Nodes>
@@ -322,5 +322,5 @@ ms.locfileid: "74296034"
 </Properties>
 ```
 
-## <a name="see-also"></a>См. также раздел
- [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md) [Use code maps to debug your applications](../modeling/use-code-maps-to-debug-your-applications.md) [Find potential problems using code map analyzers](../modeling/find-potential-problems-using-code-map-analyzers.md)
+## <a name="see-also"></a>См. также
+ [Сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md) [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md) [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)

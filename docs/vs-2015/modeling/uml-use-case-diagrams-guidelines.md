@@ -1,5 +1,5 @@
 ---
-title: 'UML Use Case Diagrams: Guidelines | Microsoft Docs'
+title: 'UML-схемы вариантов использования: рекомендации | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,9 +25,9 @@ ms.locfileid: "74302835"
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-схемы вариантов использования: правила работы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, you can draw a *use case diagram* to summarize who uses your application or system, and what they can do with it. To create a UML use case diagram, on the **Architecture** menu, click **New UML or Layer Diagram**.
+В Visual Studio можно нарисовать *схему вариантов использования* , чтобы обобщить сведения о том, кто использует ваше приложение или систему и что они могут делать с ним. Чтобы создать схему вариантов использования UML, в меню **архитектура** выберите пункт **создать UML или схему слоев**.
 
- For a video demonstration, see [Organizing Features into Use Cases](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases).
+ Демонстрационные видеоролики см. в разделе [упорядочение функций в вариантах использования](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases).
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -39,44 +39,44 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 - Область действия системы.
 
-  На схеме вариантов использования не отображаются подробности о вариантах использования: на ней представлены только некоторые отношения между вариантами использования, субъектами и системами. В частности, схема не показывает порядок выполнения шагов для достижения цели каждого из вариантов использования. Эти сведения можно описать в других схемах и документах, которые можно связать с каждым вариантом использования. For more information, see [Describing Use Cases in Detail](#Details) in this topic.
+  На схеме вариантов использования не отображаются подробности о вариантах использования: на ней представлены только некоторые отношения между вариантами использования, субъектами и системами. В частности, схема не показывает порядок выполнения шагов для достижения цели каждого из вариантов использования. Эти сведения можно описать в других схемах и документах, которые можно связать с каждым вариантом использования. Дополнительные сведения см. в разделе [подробное описание вариантов использования](#Details) в этой статье.
 
-  Описания для вариантов использования будут использовать несколько терминов, связанных с доменом, в котором работает система, например продажи, меню, клиент и т. д. Очень важно четко определить эти термины и их отношения, и это можно сделать с помощью схемы классов UML. For more information, see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).
+  Описания для вариантов использования будут использовать несколько терминов, связанных с доменом, в котором работает система, например продажи, меню, клиент и т. д. Очень важно четко определить эти термины и их отношения, и это можно сделать с помощью схемы классов UML. Дополнительные сведения см. в разделе [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md).
 
-  Варианты использования фигурируют только в функциональных требованиях к системе. Другие требования, такие как бизнес-правила, требования к качеству обслуживания и ограничения реализации, должны быть представлены отдельно. Архитектура и подробности о внутренней структуре также нужно описывать отдельно. For more information about how to define user requirements, see [Model user requirements](../modeling/model-user-requirements.md).
+  Варианты использования фигурируют только в функциональных требованиях к системе. Другие требования, такие как бизнес-правила, требования к качеству обслуживания и ограничения реализации, должны быть представлены отдельно. Архитектура и подробности о внутренней структуре также нужно описывать отдельно. Дополнительные сведения о том, как определить требования пользователей, см. в разделе [Моделирование требований пользователей](../modeling/model-user-requirements.md).
 
   Примеры, используемые в этом разделе, относятся к веб-сайту, на котором клиенты могут заказывать еду из местных ресторанов.
 
-  ![Elements in a use case diagram](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
+  ![Элементы на схеме вариантов использования](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
 
-- An *actor* (1) is a class of person, organization, device, or external software component that interacts with your system. Example actors are **Customer**, **Restaurant**, **Temperature Sensor**, **Credit Card Authorizer.**
+- *Субъект* (1) — это класс человека, Организации, устройства или внешнего программного компонента, который взаимодействует с системой. Примерами субъектов являются **Customer**, **Ресторан**, **датчик температуры**, **авторизация кредитных карт.**
 
-- A *use case* (2) represents the actions that are performed by one or more actors in the pursuit of a particular goal. Example use cases are **Order Meal**, **Update Menu**, **Process Payment**.
+- *Вариант использования* (2) представляет действия, выполняемые одним или несколькими субъектами при достижении определенной цели. Примеры вариантов использования: **заказ еды**, **меню обновления**, **Обработка платежа**.
 
    На схеме вариантов использования варианты использования ассоциированы (3) с выполняющими их субъектами.
 
-- Your *system (4)* is whatever you are developing. Это может быть небольшой программный компонент, чьи субъекты являются просто другими программными компонентами; или это может быть полноценное приложение; или это может быть большой распределенный набор приложений, развернутый на множестве компьютеров и устройств. Example subsystems are **Meal Ordering Website**, **Meal Delivery Business**, **Website Version 2**.
+- Ваша *система (4)* — это все, что вы разрабатываете. Это может быть небольшой программный компонент, чьи субъекты являются просто другими программными компонентами; или это может быть полноценное приложение; или это может быть большой распределенный набор приложений, развернутый на множестве компьютеров и устройств. Примерами подсистем являются **веб-сайт заказов на еду**, **бизнес-доставка на еду**, **веб-сайт версии 2**.
 
    Схема вариантов использования может показать, какие варианты использования поддерживаются системой или ее подсистемами.
 
-## <a name="BasicSteps"></a> Basic Steps for Drawing Use Case Diagrams
+## <a name="BasicSteps"></a>Основные шаги для рисования схем вариантов использования
 
 > [!NOTE]
-> Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+> Подробные инструкции по созданию схем моделирования см. в разделе [изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-new-use-case-diagram"></a>Создание новой схемы вариантов использования
 
-1. On the **Architecture** menu, click **New UML or Layer Diagram**.
+1. В меню **архитектура** выберите пункт **создать UML или схему слоев**.
 
-2. Under **Templates**, click **UMLUse Case Diagram**.
+2. В разделе **шаблоны**щелкните **Схема вариантов умлусе**.
 
 3. Назовите схему.
 
-4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**, and then click **OK**.
+4. В меню **Добавить в проект моделирования**выберите существующий проект моделирования в решении или **Создайте новый проект моделирования**и нажмите кнопку **ОК**.
 
 #### <a name="to-draw-a-use-case-diagram"></a>Создание схемы вариантов использования
 
-1. Drag **Subsystem** boundaries from the toolbox onto the diagram, to represent either your whole system or its major components.
+1. Перетащите границы **подсистемы** из панели элементов на схему, чтобы представить всю систему или ее основные компоненты.
 
     - Вы можете нарисовать схему вариантов использования без границ системы, если не хотите описывать, какие варианты использования поддерживаются вашей системой или ее компонентами.
 
@@ -84,51 +84,51 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
     - Переименуйте ее соответствующим образом.
 
-2. Drag **Actors** from the toolbox onto the diagram (placing them outside any system boundary).
+2. Перетащите **субъекты** из области элементов на схему (разместив их за пределами границ системы).
 
     - Субъекты представляют классы пользователей, организаций и внешних систем, взаимодействующие с вашей системой.
 
-    - Переименуйте их. For example: **Customer, Restaurant, Credit card agency.**
+    - Переименуйте их. Например: **клиент, Ресторан, Агентство кредитных карт.**
 
-3. Drag **Use Cases** from the toolbox onto the appropriate systems.
+3. Перетащите **варианты использования** с панели элементов на соответствующие системы.
 
     - Варианты использования представляют действия, выполняемые субъектами с помощью системы.
 
-    - Переименуйте их, используя названия, понятные этим субъектам. Не используйте названия, имеющие отношение к вашему коду. For example: **Order Meal, Pay for Meal, Deliver Meal**.
+    - Переименуйте их, используя названия, понятные этим субъектам. Не используйте названия, имеющие отношение к вашему коду. Например: **заказ еды, Оплата еды, Доставка еды**.
 
-    - Begin with major transactions such as **Order Meal**, leaving until later smaller interactions such as **Select Menu Item**.
+    - Начинайте с крупных транзакций, таких как **заказ еды**, и заканчивая такими более мелкими взаимодействиями, как **Выбор пункта меню**.
 
     - Поместите каждый вариант использования в систему или крупную подсистему, поддерживающую его (игнорируя различные представления и компоненты, используемые только для связи с пользователем).
 
     - Можно создать вариант использования за пределами границы системы, чтобы показать, что он не поддерживается системой, возможно, в определенной версии или определенном выпуске.
 
-4. Click **Association** on the toolbox, then a use case, and then an actor that participates in the use case. Аналогичным образом свяжите каждый субъект с его вариантами использования.
+4. Щелкните **связь** на панели элементов, затем вариант использования, а затем субъект, который участвует в сценарии использования. Аналогичным образом свяжите каждый субъект с его вариантами использования.
 
-5. Structure the use cases with the **Include**, **Extend** and **Generalization** relationships. Чтобы создать каждую из этих связей, щелкните инструмент, затем источник вариантов использования и затем целевой объект. See the following section titled [Structuring Use Cases](#Structuring).
+5. Структурировать варианты использования с помощью отношений **включения**, **расширения** и **обобщения** . Чтобы создать каждую из этих связей, щелкните инструмент, затем источник вариантов использования и затем целевой объект. См. следующий раздел [структурирование вариантов использования](#Structuring).
 
-6. Опишите варианты использования более подробно. See the following section titled [Describing Use Cases in Detail](#Details).
+6. Опишите варианты использования более подробно. См. следующий раздел [с описанием вариантов использования в подробностях](#Details).
 
 7. Нарисуйте отдельные схемы, чтобы сконцентрироваться на различных подсистемах или разных группах связанных вариантов использования. Все схемы в одном проекте моделирования являются представлениями одной модели.
 
-## <a name="Actors"></a> Drawing Actors and Use Cases
+## <a name="Actors"></a>Рисование субъектов и вариантов использования
  Основное назначение схемы вариантов использования заключается в том, чтобы показать, кто взаимодействует с системой и каких основных целей он при этом достигает.
 
-- Create **Actors** to represent classes of people, organizations, other systems, software or devices that interact with your system or subsystem.
+- Создавайте **субъекты** для представления классов людей, организаций, других систем, программного обеспечения или устройств, взаимодействующих с системой или подсистемой.
 
-  - To learn how to draw actors and other elements, see [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+  - Сведения о том, как нарисовать субъекты и другие элементы, см. в разделе [изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md).
 
   - Для каждого отдельного набора целей определите субъекты по типу или роли, несмотря на то, что физические лица или сущности могут быть одинаковыми. Например, ресторан и клиент — это отдельные субъекты, хотя сотрудник ресторана иногда может быть клиентом.
 
-- Create **Use Cases** for each of the goals that each actor seeks to achieve with the system.
+- Создайте **варианты использования** для каждой цели, которую каждый субъект ищет для достижения в системе.
 
   - Назовите и опишите варианты использования понятными субъекту словами, а не терминами реализации.
 
-- Use **Associations** to link actors to use cases.
+- Используйте **ассоциации** , чтобы связать субъекты с вариантами использования.
 
 ### <a name="inheritance-between-actors"></a>Наследование между субъектами
- ![Use case diagram showing inheritance](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
+ ![Схема вариантов использования, демонстрирующая наследование](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
 
- You can draw a **Generalization** link between Actors. Специализированный субъект, такой как клиент клуба Club Customer в данном примере, наследует варианты использования обобщенного субъекта, такого как клиент Customer. Стрелка должна указывать на более общий субъект, например Customer. При создании связи сначала укажите более специализированный субъект.
+ Можно создать ссылку **обобщения** между субъектами. Специализированный субъект, такой как клиент клуба Club Customer в данном примере, наследует варианты использования обобщенного субъекта, такого как клиент Customer. Стрелка должна указывать на более общий субъект, например Customer. При создании связи сначала укажите более специализированный субъект.
 
  Специализированный субъект может иметь свои собственные дополнительные варианты использования, которые недоступны другим субъектам.
 
@@ -140,11 +140,11 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 ##### <a name="to-change-the-appearance-of-an-actor"></a>Изменение внешнего вида субъекта
 
-1. Right-click the actor and then click **Properties**.
+1. Щелкните субъект правой кнопкой мыши и выберите пункт **Свойства**.
 
      Откроется окно **Свойства** .
 
-2. Set the **Image Path** property to the location of an image file.
+2. Задайте для свойства **путь к изображению** расположение файла изображения.
 
     - Можно использовать любой из нескольких форматов изображения, включая GIF, JPG и BMP.
 
@@ -155,52 +155,52 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
     - Изменение изображения применяется только к представлению на определенной схеме. Оно не применяется к элементу базовой модели. Если перетащить субъект из обозревателя моделей UML на другую схему, он будет отображаться как стандартное схематическое изображение.
 
 ### <a name="multiplicities-between-actors-and-use-cases"></a>Кратности между субъектами и вариантами использования
- The association between an actor and a use case can show a *multiplicity* at each end.
+ Ассоциация между субъектом и вариантом использования может отображать *кратность* на каждой стороне.
 
- ![Use case one to one with actor](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
+ ![Используйте вариант "один к одному" с субъектом](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
 
 > [!NOTE]
-> The multiplicities of an association on a use case diagram are hidden if they are both **1**.
+> Кратность ассоциации на схеме вариантов использования скрывается, если они оба равны **1**.
 
- By default, each multiplicity is **1**. В строгой интерпретации модели кратность 1 означает, что, например, только один клиент участвует в заказе каждого блюда и что каждый клиент заказывает только одно блюдо за раз.
+ По умолчанию для каждой кратности задано значение **1**. В строгой интерпретации модели кратность 1 означает, что, например, только один клиент участвует в заказе каждого блюда и что каждый клиент заказывает только одно блюдо за раз.
 
  Эти кратности можно изменить.
 
- Пример:
+ Пример.
 
- ![Use case showing many to many multiplicity](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
+ ![Вариант использования с количеством элементов, кратным множеству](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- To state that several actors of the same class can take part in a single occurrence of a use case, set the multiplicity at the actor end of the association to **1..\*** .
+- Чтобы указать, что несколько субъектов одного и того же класса могут принимать участие в одном экземпляре варианта использования, установите кратность на стороне субъекта ассоциации равным **1..\*** .
 
    На рисунке один или несколько ресторанов могут участвовать в выполнении одного заказа.
 
-- To show that each actor can participate at the same time in several occurrences of a use case, set the multiplicity at the use case end of the association to **\*** .
+- Чтобы увидеть, что каждый субъект может одновременно участвовать в нескольких экземплярах варианта использования, задайте кратность в конце варианта использования ассоциации, чтобы **\*** .
 
    На рисунке каждый ресторан может одновременно работать на выполнением нескольких заказов.
 
 ##### <a name="to-set-multiplicities-on-an-association"></a>Задание кратностей в ассоциации
 
-1. Right-click the association and then click **Properties**.
+1. Щелкните ассоциацию правой кнопкой мыши и выберите пункт **Свойства**.
 
-2. Expand either **First Role** or **Second Role**.
+2. Разверните узел **первая роль** или **Вторая роль**.
 
-    *Role* means the element at one end of the association.
+    *Role* означает элемент на одном конце ассоциации.
 
 3. Задайте свойство кратности, выбрав значение из списка:
 
-   - **1** to state that exactly one instance of this role participates in each link.
+   - **1** , чтобы указать, что в каждом канале участвует ровно один экземпляр этой роли.
 
-   - **1..\*** to state that one or more instance of this role participate in each link.
+   - **1..\*** , чтобы указать, что один или несколько экземпляров этой роли участвуют в каждом канале связи.
 
-   - **0..1** to state that participation is optional.
+   - **0.. 1** , чтобы указать, что участие не является обязательным.
 
-   - **\*** to state that zero or more instances of this role participate in the link.
+   - **\*** , чтобы указать, что ни один экземпляр этой роли участвует в ссылке.
 
 > [!NOTE]
 > Многие команды не размещают сведения о кратностях на схемах вариантов использования, оставляя для них значение по умолчанию 1. Вместо этого они предоставляют информацию в отдельных описаниях для вариантов использования. В этом случае все кратности на схемах вариантов использования будут скрыты.
 
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Использование субъекта или варианта использования на нескольких схемах
- Можно отобразить одни и те же субъекты и варианты использования на нескольких схемах. Пример:
+ Можно отобразить одни и те же субъекты и варианты использования на нескольких схемах. Пример.
 
 - Разные варианты использования, в которых участвует один субъект, можно описать в разных схемах.
 
@@ -212,17 +212,17 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 2. Создайте другую схему вариантов использования.
 
-3. Drag an actor or use case off **Model Explorer** onto the new diagram.
+3. Перетащите субъект или вариант использования с помощью **обозревателя моделей** на новую диаграмму.
 
     > [!NOTE]
     > Если поместить на новой схеме субъект и вариант использования, которые уже связаны, ассоциация между ними автоматически отображается на новой схеме.
 
-## <a name="Details"></a> Describing use cases in detail
+## <a name="Details"></a>Подробное описание вариантов использования
  Вариант использования представляет следующее:
 
-- A goal of an actor in using the system, such as **Buy a Meal**; and
+- Цель субъекта в использовании системы, например **купить еду**; перетаскивани
 
-- One or more *scenarios*, that is, sequences of steps performed in pursuing the goal, such as: {**Order Meal, Pay, Deliver**}. In addition to success scenarios, there might be several exception or failure scenarios, such as **Credit Card Rejected**.
+- Один или несколько *сценариев*, то есть последовательность шагов, выполненных в соответствии с целью, например: {**заказ еды, оплата, Доставка**}. В дополнение к сценариям успеха может возникнуть несколько сценариев исключений или сбоев, таких как **отклонение кредитной карты**.
 
   Вариант использования можно описать с различными уровнями детализации. На раннем этапе разработки достаточно имени на схеме вариантов использования.  Позже можно написать более подробные описания сценариев.
 
@@ -230,13 +230,13 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 - Свяжите вариант использования с другой схемой или схемами в проекте.
 
-  - Схема деятельности позволяет пояснить более сложный процесс, где присутствуют циклы, ветви и параллельные потоки. Она также может отображать поток данных между разными частями процесса. For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
+  - Схема деятельности позволяет пояснить более сложный процесс, где присутствуют циклы, ветви и параллельные потоки. Она также может отображать поток данных между разными частями процесса. Дополнительные сведения см. в разделе [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md).
 
-  - Схема последовательностей позволяет описывать сложные серии взаимодействий между разными субъектами. Ее также можно использовать, чтобы показать, что происходит в системе при реагировании на каждый вариант использования. For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
+  - Схема последовательностей позволяет описывать сложные серии взаимодействий между разными субъектами. Ее также можно использовать, чтобы показать, что происходит в системе при реагировании на каждый вариант использования. Дополнительные сведения см. в разделе [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md).
 
 - Свяжите вариант использования со страницей, разделом или абзацем OneNote, который подробно описывает этот вариант использования.
 
-- Свяжите вариант использования с документом Word, в которой используется текст, снимки экрана и т. п. для описания сценариев варианта использования. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
+- Свяжите вариант использования с документом Word, в которой используется текст, снимки экрана и т. п. для описания сценариев варианта использования. Дополнительные сведения см. в разделе [Моделирование требований пользователей](../modeling/model-user-requirements.md).
 
 #### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Связывание варианта использования со схемой или файлом в том же решении
 
@@ -246,7 +246,7 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 3. Перетащите схему или файл из обозревателя решений на пустую часть схемы вариантов использования.
 
-4. Connect from the artifact to the use case using a **Dependency**.
+4. Подключитесь из артефакта к варианту использования с помощью **зависимости**.
 
 #### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Связывание с файлом решения, таким как документ Word или презентация PowerPoint
 
@@ -256,9 +256,9 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
     1. Переместите документ Word в папку Windows, в которой сохранено решение.
 
-    2. In Solution Explorer, right-click the solution, point to **Add**, and then click **Existing Item**.
+    2. В обозреватель решений щелкните решение правой кнопкой мыши, наведите указатель на пункт **Добавить**и выберите пункт **существующий элемент**.
 
-    3. Navigate to the Word document and click **Add**.
+    3. Перейдите к документу Word и нажмите кнопку **Добавить**.
 
          Документ Word отображается в папке решения в обозревателе решений.
 
@@ -266,21 +266,21 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
      Появится новый артефакт.
 
-4. Connect from the artifact to the use case using a **Dependency**.
+4. Подключитесь из артефакта к варианту использования с помощью **зависимости**.
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Связывание с общим документом, элементом OneNote или веб-страницей
 
-1. Получите URL-адрес общего элемента. This can be, for example, a network file path beginning '\\\\', or a web page or Sharepoint URL beginning 'http://', or a link to a OneNote section, page, or paragraph beginning 'onenote:'.
+1. Получите URL-адрес общего элемента. Это может быть, например, путь к сетевому файлу, начинающийся с "\\\\", или веб-страницу или URL-адрес SharePoint, начинающийся с "http://", или ссылку на раздел OneNote, страницу или абзац, начинающийся с "OneNote:".
 
-2. In the Toolbox, click **Artifact** and then click in the use case diagram.
+2. На панели элементов щелкните **артефакт** , а затем щелкните на схеме вариантов использования.
 
-3. With the new artifact selected, type or paste the URL into the **Hyperlink** property.
+3. Выбрав новый артефакт, введите или вставьте URL-адрес в свойство **Hyperlink** .
 
 > [!NOTE]
 > Дважды щелкните артефакт, чтобы открыть схему или документ, с которыми он связан.
 
 ### <a name="linking-use-cases-to-work-items"></a>Связывание вариантов использования с рабочими элементами
- If your project uses [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] and you have [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], you can link each use case to a work item in [!INCLUDE[esprfound](../includes/esprfound-md.md)]. To learn how to make these links, see [Link model elements and work items](../modeling/link-model-elements-and-work-items.md).
+ Если в проекте используется [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] и вы [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], то каждый вариант использования можно связать с рабочим элементом в [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Сведения о том, как сделать эти ссылки, см. в разделе [компоновка элементов модели и рабочих элементов](../modeling/link-model-elements-and-work-items.md).
 
  Это позволяет выполнять следующие действия:
 
@@ -290,7 +290,7 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 - Связывание задач с вариантом использования, чтобы отслеживать ход выполнения разработки.
 
-## <a name="Structuring"></a> Structuring Use Cases
+## <a name="Structuring"></a>Структурирование вариантов использования
  Следует попытаться описать поведение системы лишь с помощью нескольких основных вариантов использования. Каждый крупный вариант использования определяет основную цель, достигаемую субъектом, например приобретение продукции или с точки зрения поставщика — предоставление продукции на продажу.
 
  После уточнения этих целей можно переходить к более подробному рассмотрению способов достижения каждой цели и различий в основных целях.
@@ -299,21 +299,21 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
  На схеме вариантов использования можно подвести итог по отношениям между основной и дополнительной областями действия. В следующих раздела описано следующее:
 
-- [Showing the details of a use case with Include](#Include)
+- [Отображение сведений о варианте использования с include](#Include)
 
-- [Sharing goals with Generalization](#Inheritance)
+- [Совместное использование целей с обобщением](#Inheritance)
 
-- [Separating out variant cases with Extend](#Extend)
+- [Отделение вариантов варианта с расширением](#Extend)
 
-### <a name="Include"></a> Showing the details of a use case with Include
- Use an **Include** relation to show that one use case describes some of the detail of another. In the illustration, **Order a Meal** includes **Pay**, **Choose Menu**, and **Choose Menu Item**. Каждый из включенных и более подробных вариантов использования представляет собой действие, которое может потребоваться выполнить субъекту или субъектам для достижения общей цели включающего варианта использования. Стрелка должна указывать на более подробный включенный вариант использования.
+### <a name="Include"></a>Отображение сведений о варианте использования с include
+ Используйте отношение **include** , чтобы продемонстрировать, что один вариант использования описывает некоторые сведения другого. На рисунке **заказ еды** включает в себя **оплату**, **Выбор меню**и **пункт меню**. Каждый из включенных и более подробных вариантов использования представляет собой действие, которое может потребоваться выполнить субъекту или субъектам для достижения общей цели включающего варианта использования. Стрелка должна указывать на более подробный включенный вариант использования.
 
 > [!CAUTION]
 > Не рекомендуется создавать циклы отношений включения, которые приводят к тому, что варианты использования включают сами себя. Циклы могут стать причиной ошибок.
 
- Включенные варианты использования можно использовать совместно. In the example, the **Order a Meal** and **Subscribe to Reviews** use cases both include **Pay**.
+ Включенные варианты использования можно использовать совместно. В этом примере **заказ еды** и **Подписка на рецензии** используют оба варианта включают **оплату**.
 
- ![Use cases decomposed with include](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
+ ![Варианты использования, разлагаются с помощью include](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
 
  Цель и сценарии включенного варианта использования иметь смысл независимо друг от друга, чтобы их можно было включить в варианты использования, созданные позже.
 
@@ -323,10 +323,10 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 - Предотвращение дублирования общих сценариев в разных вариантах использования.
 
-#### <a name="Steps"></a> Defining the order of the detailed steps
+#### <a name="Steps"></a>Определение порядка подробных шагов
  Схема вариантов использования ничего не говорит о порядке, в которой следует выполнять более подробные шаги, а также о том, является ли каждый из них обязательным всегда.
 
- To make the order of the steps clear, you can use an **Artifact** to attach a separate document to the including use case. В следующем примере схема деятельности прикреплена к варианту использования для заказа еды. Кроме того, можно использовать текстовый документ со списком шагов или последовательностью снимков экрана. For more information, see [Describing Use Cases in Detail](#Details).
+ Чтобы сделать порядок шагов понятным, можно использовать **артефакт** , чтобы присоединить отдельный документ к включенному варианту использования. В следующем примере схема деятельности прикреплена к варианту использования для заказа еды. Кроме того, можно использовать текстовый документ со списком шагов или последовательностью снимков экрана. Дополнительные сведения см. [в разделе Подробное описание вариантов использования](#Details).
 
  Обратите внимание на эти соглашения именования при использовании схемы деятельности:
 
@@ -334,16 +334,16 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 - Действия на схеме деятельности имеют те же имена, что и включенные варианты использования.
 
-  For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
+  Дополнительные сведения см. в разделе [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md).
 
-  ![Use case steps shown in linked activity diagram](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
+  ![Шаги варианта использования, показанные на схеме связанных действий](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
 
-### <a name="Inheritance"></a> Sharing goals with Generalization
- Use a Generalization relation to show that a *specialized* use case is a particular way to achieve the goals expressed by another *general* use case. Стрелка должна указывать на более общий вариант использования.
+### <a name="Inheritance"></a>Совместное использование целей с обобщением
+ Используйте связь обобщения, чтобы продемонстрировать, что *специализированный* вариант использования — это конкретный способ достижения целей, представленных другим *общим* вариантом использования. Стрелка должна указывать на более общий вариант использования.
 
- ![Use cases showing the generalization relation](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
+ ![Варианты использования, отображающие отношение обобщения](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
 
- For example, **Pay** generalizes **Pay by Credit Card** and **Pay by Cash**.
+ Например, **Оплата** обобщает **оплату по кредитной карте** и оплату **наличными**.
 
 > [!CAUTION]
 > Вам не следует создавать циклы отношений обобщения, которые вызывают обобщение субъектом самого себя. Циклы могут стать причиной ошибок.
@@ -356,46 +356,46 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 1. Создайте и назовите новый общий вариант использования.
 
-2. Create a **Generalization** relation with the large arrow pointing at the new general use case.
+2. Создайте связь **обобщения** с большой стрелкой, указывающей на новый общий вариант использования.
 
-    1. Click **Generalization** in the toolbox.
+    1. Щелкните **обобщение** на панели элементов.
 
-    2. Click a specialized use case (**Pay by Credit Card** in the example).
+    2. Щелкните специализированный вариант использования (**Оплата по кредитной карте** в примере).
 
-    3. Click the general use case (**Pay** in the example).
+    3. Щелкните общий вариант использования (**платите** в примере).
 
 3. Если описаны цели для специализированных вариантов использования, переместите общие части в описание общего варианта использования.
 
 4. Субъекты, которые являются общими для специализированных вариантов использования, можно переместить общий вариант использования.
 
-### <a name="Extend"></a> Separating variant cases with Extend
+### <a name="Extend"></a>Отделение вариантов варианта с расширением
  Используйте связь расширения, чтобы показать, что при определенных обстоятельствах один вариант использования может добавлять функциональные возможности в другой. Стрелка должна указывать на основной, расширенный вариант использования.
 
- ![One use case extending another](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
+ ![Один вариант использования, расширяющий другой](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
 
 > [!CAUTION]
 > Вам не следует создавать циклы отношений расширения, которые вызывают обобщение субъектом самого себя. Циклы могут стать причиной ошибок.
 
- For example, the **Login** use case of a typical Web site can include **Register New User** - but only when the user does not already have an account.
+ Например, вариант использования **имени входа** обычного веб-сайта может включать **регистрацию нового пользователя** , но только в том случае, если у пользователя еще нет учетной записи.
 
 ##### <a name="to-separate-a-use-case-into-main-and-extending-parts"></a>Разделение варианта использования на основную и расширенную части
 
 1. Создайте и назовите новый расширенный вариант использования.
 
-2. Create an **Extend** relation with the arrow pointing at the extended use case.
+2. Создайте отношение **расширения** с помощью стрелки, указывающей на расширенный вариант использования.
 
-   1. Click **Extend** in the toolbox.
+   1. Нажмите кнопку **расширить** в области элементов.
 
-   2. Click the extending use case (**Register New User** in the example).
+   2. Щелкните расширение варианта использования (**зарегистрировать нового пользователя** в примере).
 
-   3. Click the extended use case (**Login** in the example).
+   3. Щелкните расширенный вариант использования (**имя входа** в примере).
 
        > [!NOTE]
        > Не рекомендуется создавать на схеме цикл отношений расширения. Вариант использования не должен быть расширением самого себя.
 
 3. Если вы уже создали сценарии для расширенного варианта использования, переместите соответствующие шаги в сценарий расширения.
 
-4. The description of the extension (**Register New User** in the example) should include details of where in the main use case scenarios it will occur, and under what circumstances. Это можно рассматривать как описание основного варианта.
+4. Описание расширения (**Регистрация нового пользователя** в примере) должно включать сведения о том, где в основных сценариях использования он будет выполняться и при каких обстоятельствах. Это можно рассматривать как описание основного варианта.
 
    Вариант использования расширения представляет шаги сценария, которые в противном случае были бы частью сценариев основного варианта использования. Сценарий и цель расширения всегда считываются в контексте основного варианта использования, поэтому они обязаны иметь значение при независимом использовании.
 
@@ -407,12 +407,12 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
 - Это расширение будет доступно только в определенных версиях системы. Каждую версию можно показать как отдельную подсистему на схеме вариантов использования.
 
-## <a name="Subsystems"></a> Using Subsystem Boundaries
+## <a name="Subsystems"></a>Использование границ подсистемы
  Используйте границу подсистемы, чтобы показать, какие варианты использования находятся в области действия системы.
 
 #### <a name="to-draw-a-subsystem-boundary"></a>Рисование границы подсистемы
 
-1. In the toolbox, click **Subsystem**, then click the diagram.
+1. На панели элементов щелкните **подсистема**, а затем щелкните диаграмму.
 
     На схеме появляется подсистема.
 
@@ -422,23 +422,23 @@ In Visual Studio, you can draw a *use case diagram* to summarize who uses your a
 
    \- или -
 
-   To create a new use case directly in a subsystem, click **Use Case** in the toolbox, then click inside the subsystem.
+   Чтобы создать новый вариант использования непосредственно в подсистеме, щелкните **вариант использования** на панели элементов, а затем щелкните внутри подсистемы.
 
 > [!NOTE]
-> The **Subjects** property of a use case indicates what subsystem it is contained within.
+> Свойство **subjects** варианта использования указывает, в какой подсистеме он содержится.
 
 ### <a name="use-cases-outside-the-system-scope"></a>Варианты использования за пределами области действия системы
  Часто бывает полезно включить в схему варианты использования, которые являются частью бизнеса, но не затрагиваются разрабатываемой системой. Это помогает разработчикам понять контекст своей работы. Например, доставку еды можно отображать как вариант использования, включающий субъекты ресторана и клиента, но выходящий за пределами ответственности веб-сайта заказа еды.
 
 ### <a name="multiple-subsystems"></a>Несколько подсистем
- Можно создать несколько границ подсистем, чтобы показать, как разные варианты использования обрабатываются различными компонентами системы. For example, **Add Restaurant Appraisal** may be dealt with on a separate forum Web site. Помните, что схема вариантов использования должна обрабатывать то, что видит пользователь. Если нужно описать внутреннее разделение работы в системе, рекомендуется использовать схему компонентов.
+ Можно создать несколько границ подсистем, чтобы показать, как разные варианты использования обрабатываются различными компонентами системы. Например, добавление подсчета **ресторана** может быть решено на отдельном веб-узле форума. Помните, что схема вариантов использования должна обрабатывать то, что видит пользователь. Если нужно описать внутреннее разделение работы в системе, рекомендуется использовать схему компонентов.
 
 ### <a name="system-versions"></a>Версии системы
  Можно использовать разные границы подсистемы , чтобы показать разные версии системы. Например, вариант использования оплаты может быть включен в веб-сайт версии 2, но не версии 1. Это означает, что система помогает клиентам осуществлять заказы. Однако клиенты должны оплачивать услуги ресторана напрямую.
 
- Use **Dependency** relations to link subsystems representing different versions or variants.
+ Используйте **зависимости зависимостей** для ссылок на подсистемы, представляющие разные версии или варианты.
 
- ![Subsystems show different versions of a system](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
+ ![Подсистемы отображают различные версии системы](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
-## <a name="see-also"></a>См. также раздел
- [Model user requirements](../modeling/model-user-requirements.md) [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md) [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md) [Video: Organizing Features into Use Cases](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)
+## <a name="see-also"></a>См. также
+ [Требования к пользователям модели](../modeling/model-user-requirements.md) [UML схемы последовательностей: рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md) [изменению моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы вариантов использования UML: ссылки на](../modeling/uml-use-case-diagrams-reference.md) UML-схемы [классов:](../modeling/uml-class-diagrams-reference.md) Справочник по схемам [компонентов UML](../modeling/uml-component-diagrams-reference.md) : Справочник по UML-схемам [деятельности: руководство](../modeling/uml-activity-diagrams-guidelines.md) [видео. упорядочение функций в вариантах использования](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

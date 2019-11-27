@@ -24,7 +24,7 @@ ms.locfileid: "74295959"
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001. Использование StringBuilder для объединений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [DA0001: Use StringBuilder for concatenations](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
+Последнюю документацию по Visual Studio см. в разделе [DA0001: использование класса StringBuilder для объединения](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  

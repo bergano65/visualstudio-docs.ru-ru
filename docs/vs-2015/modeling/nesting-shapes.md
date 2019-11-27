@@ -1,5 +1,5 @@
 ---
-title: Nesting Shapes | Microsoft Docs
+title: Вложение фигур | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,4 +19,4 @@ ms.locfileid: "74296043"
 # <a name="nesting-shapes"></a>Создание вложенных фигур
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-See [Jean-Marc Prieur’s blog](https://blogs.msdn.microsoft.com/jmprieur/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1/)
+См. [блог Жан-(Marc приеур](https://blogs.msdn.microsoft.com/jmprieur/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1/)

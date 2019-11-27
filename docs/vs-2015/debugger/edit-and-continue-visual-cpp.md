@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue (Visual C++) | Microsoft Docs
+title: Изменить и продолжить (визуальный C++элемент) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,15 +28,15 @@ ms.locfileid: "74301062"
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете использовать функцию "Изменить и продолжить" в проектах Visual C++. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.  
+Вы можете использовать функцию "Изменить и продолжить" в проектах Visual C++. Сведения об ограничениях "изменить и продолжить" см. в разделе [Поддерживаемые изменения кодаC++()](../debugger/supported-code-changes-cpp.md) .  
   
- Starting in Visual Studio 2015 Update 1, you can now use Edit and Continue in Windows Store C++ apps and DirectX apps, because it now supports the **/ZI** compiler switch with **/bigobj** switch. You can also use Edit  and Continue with binaries compiled with the **/FASTLINK** switch.  
+ Начиная с Visual Studio 2015 с обновлением 1 теперь можно использовать режим "изменить и продолжить" C++ в приложениях для Магазина Windows и в приложениях DirectX, так как он теперь поддерживает параметр компилятора **/Zi** с параметром **/bigobj** . Можно также использовать режим "изменить и продолжить" для двоичных файлов, скомпилированных с помощью параметра **/фастлинк** .  
   
- Other Update 1 improvements include a new, cancelable wait dialog, and notification when a file does not support Edit and Continue. For more information about Update 1 improvements, see [Improvements for C++ Edit and Continue in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
+ Кроме того, в обновлении 1 присутствуют такие усовершенствования, как новый диалог ожидания с возможностью отмены и уведомление, если файл не поддерживает "Изменить и продолжить". Дополнительные сведения об улучшениях обновления 1 см. [в статье C++ улучшения для функций Edit и Continue в Visual Studio 2015 с обновлением 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  Параметр компилятора [/Zo (Enhance Optimized Debugging)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f), который появился в Visual Studio 2013 с обновлением 3, добавляет дополнительные сведения в PDB-файлы символов для двоичных файлов, скомпилированных без параметра [/Od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   
- **/Zo** disables Edit and Continue. См. раздел [Практическое руководство. Отладка оптимизированного кода](../debugger/how-to-debug-optimized-code.md)  
+ **/ZO** отключает функцию "изменить и продолжить". См. раздел [Практическое руководство. Отладка оптимизированного кода](../debugger/how-to-debug-optimized-code.md)  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Включение и отключение возможности "Изменить и продолжить".  
  Можно отключить автоматический вызов возможности "Изменить и продолжить" при внесении изменений в код, которые не следует применять в текущем сеансе отладки. Можно также повторно включить автоматическую возможность "Изменить и продолжить".  
@@ -77,5 +77,5 @@ ms.locfileid: "74301062"
   
  В таких случаях отладчик продолжает выполнение исходного кода до тех пор, пока эти изменения не вступят в силу. Устаревший код отображается в качестве временного исходного файла в отдельном окне исходного кода. Заголовок этого окна имеет вид наподобие `enc25.tmp`. При этом отредактированный исходный код остается в своем окне. При попытке редактирования устаревшего кода появляется предупреждение.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md)

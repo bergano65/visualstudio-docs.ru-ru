@@ -1,5 +1,5 @@
 ---
-title: ClickOnce and Authenticode | Microsoft Docs
+title: ClickOnce и Authenticode | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -29,7 +29,7 @@ ms.locfileid: "74298270"
 # <a name="clickonce-and-authenticode"></a>ClickOnce и технология Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Authenticode* is a Microsoft technology that uses industry-standard cryptography to sign application code with digital certificates that verify the authenticity of the application's publisher. Используя Authenticode для развертывания приложения, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] снижает риск заражения программой-трояном. Программа-троян — это вирус или другая вредоносная программа, которые злоумышленник представляет как легальную программу, исходящую из авторитетного и заслуживающего доверия источника. Подписание развертываний [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] с помощью цифрового сертификата — это необязательный шаг, позволяющий убедиться, что сборки и файлы не были изменены.  
+Authenticode * — это технология Майкрософт, использующая стандартную отрасль для подписывания кода приложения с помощью цифровых сертификатов, которые проверяют подлинность издателя приложения. Используя Authenticode для развертывания приложения, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] снижает риск заражения программой-трояном. Программа-троян — это вирус или другая вредоносная программа, которые злоумышленник представляет как легальную программу, исходящую из авторитетного и заслуживающего доверия источника. Подписание развертываний [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] с помощью цифрового сертификата — это необязательный шаг, позволяющий убедиться, что сборки и файлы не были изменены.  
   
  В следующих разделах описываются различные типы цифровых сертификатов, используемых в Authenticode, способ проверки сертификатов с помощью центров сертификации (ЦС), роль меток времени в сертификатах и методы хранения сертификатов.  
   
@@ -47,11 +47,11 @@ Authenticode* is a Microsoft technology that uses industry-standard cryptography
 - создать собственный с помощью MakeCert.exe, который входит в состав [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Польза центров сертификации для пользователей  
- A certificate generated using the MakeCert.exe utility is commonly called a *self-cert* or a *test cert*. This kind of certificate works much the same way that a .snk file works in the .NET Framework. Он состоит только из пары открытого и закрытого криптографических ключей и не содержит проверяемых сведений об издателе. Автосертификаты можно использовать для развертывания приложений [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] с высоким уровнем доверия в интрасети. Однако когда эти приложения выполняются на клиентском компьютере, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] идентифицирует их как поступающие от неизвестного издателя. По умолчанию приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , подписанные с помощью автосертификатов и развертываемые через Интернет, не могут использовать развертывание доверенных приложений.  
+ Сертификат, созданный с помощью служебной программы MakeCert. exe, обычно называется *самозаверяющим-CERT* или *тестовым сертификатом*. Этот тип сертификата работает во многом так же, как SNK-файл работает в .NET Framework. Он состоит только из пары открытого и закрытого криптографических ключей и не содержит проверяемых сведений об издателе. Автосертификаты можно использовать для развертывания приложений [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] с высоким уровнем доверия в интрасети. Однако когда эти приложения выполняются на клиентском компьютере, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] идентифицирует их как поступающие от неизвестного издателя. По умолчанию приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , подписанные с помощью автосертификатов и развертываемые через Интернет, не могут использовать развертывание доверенных приложений.  
   
  И наоборот, если вы получаете сертификат из такого центра сертификации, как поставщик сертификатов или отдел внутри вашей организации, этот сертификат обеспечивает повышенную безопасность для пользователей. Он не только идентифицирует издателя подписанного программного обеспечения, но и проверяет его удостоверение путем сверки с ЦС, подписавшим его. Если ЦС не является корневым, Authenticode также выстраивает обратную "цепочку" до корневого центра, чтобы убедиться, что ЦС авторизован для выдачи сертификатов. Для повышения безопасности следует по возможности использовать сертификат, выданный центром сертификации.  
   
- For more information about generating self-certs, see [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Дополнительные сведения о создании самозаверяющих сертификатов см. в разделе [Makecert. exe (средство создания сертификатов)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
 ### <a name="timestamps"></a>Метки времени  
  Сертификаты, используемые для подписи приложений [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , имеют определенный срок действия, который обычно составляет двенадцать месяцев. Чтобы устранить необходимость в постоянном повторном подписывании приложений с использованием новых сертификатов, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] поддерживает метку времени. Когда приложение подписано с меткой времени, его сертификат будет приниматься даже после истечения срока действия, при условии, что действительна метка времени. Это позволяет скачивать и запускать приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] с просроченными сертификатами, но действительными метками времени. Кроме того, это позволяет установленным приложениям с просроченными сертификатами продолжать скачивать и устанавливать обновления.  
@@ -71,8 +71,8 @@ Authenticode* is a Microsoft technology that uses industry-standard cryptography
   
 - Сертификаты можно хранить в виде PFX-файла в файловой системе или внутри контейнера ключей. Пользователь в домене Windows может иметь несколько контейнеров ключей. По умолчанию MakeCert.exe сохраняет сертификаты в личном контейнере ключей, если не указано, что сертификат должен храниться в виде PFX-файла. Mage.exe и MageUI.exe — инструменты [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] для создания развертываний [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — позволяют использовать сертификаты, хранящиеся в любом режиме.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (средство создания и редактирования манифеста)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

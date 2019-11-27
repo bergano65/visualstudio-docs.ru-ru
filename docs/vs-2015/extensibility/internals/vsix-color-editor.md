@@ -1,5 +1,5 @@
 ---
-title: VSIX Color Editor | Microsoft Docs
+title: Редактор цветов VSIX | Документация Майкрософт
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
@@ -16,54 +16,54 @@ ms.locfileid: "74295442"
 # <a name="vsix-color-editor"></a>Редактор цветов VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The Visual Studio Extension Color Editor tool can create and edit custom colors for Visual Studio. The tool can also generate theme resource keys so that the colors can be used in code. This tool is useful for making colors for a Visual Studio extension that supports theming. This tool can open .pkgdef and .xml files. Visual Studio themes (.vstheme files) can be used with the Visual Studio Extension Color Editor by changing the file extension to .xml. Additionally, .vstheme files can be imported into a current .xml file.  
+Редактор цветов расширений Visual Studio позволяет создавать и редактировать пользовательские цвета для Visual Studio. Средство также может создавать ключи ресурсов тем, чтобы цвета можно было использовать в коде. Это средство удобно использовать для создания цветов для расширения Visual Studio, которое поддерживает их. Это средство может открывать файлы. pkgdef и. XML. Темы Visual Studio (вссеме-файлы) можно использовать в редакторе цветов расширения Visual Studio, изменив расширение файла на XML. Кроме того, файлы. вссеме можно импортировать в текущий XML-файл.  
   
- ![VSIX Color Editor Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "Редактор цветов VSIX — главный имиджевый баннер")  
+ ![Редактор цвета VSIX Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "Редактор цветов VSIX — главный имиджевый баннер")  
   
- **Package definition files**  
+ **Файлы определения пакета**  
   
- Package definition (.pkgdef) files are the files that define themes. The colors themselves are stored in theme color .xml files, which are compiled into a .pkgdef file. The .pkgdef files are deployed to Visual Studio searchable locations, processed at runtime, and merged together to define themes.  
+ Файлы определения пакета (. pkgdef) — это файлы, определяющие темы. Сами цвета хранятся в файлах Color. XML темы, которые компилируются в pkgdef-файл. Файлы pkgdef развертываются в расположениях, доступных для поиска Visual Studio, обрабатываются во время выполнения, а также объединяются для определения тем.  
   
- **Color tokens**  
+ **Маркеры цвета**  
   
- A color token is made up of four elements:  
+ Маркер цвета состоит из четырех элементов:  
   
-- **Category name:** A logical grouping for a set of colors. Use an existing category name if there are already colors that are specific to the desired UI element, or group of UI elements.  
+- **Имя категории:** Логическая группировка для набора цветов. Используйте существующее имя категории, если уже есть цвета, характерные для нужного элемента пользовательского интерфейса или группы элементов пользовательского интерфейса.  
   
-- **Token name:** A descriptive name for the color token and token sets. Sets include background and foreground (text) token names as well as all their states, and these should be named so that it is easy to identify the pairs and the states that they apply to.  
+- **Имя токена:** Описательное имя для маркера цвета и наборов токенов. Наборы включают имена маркеров фона и переднего плана (текста), а также все их состояния, и они должны называться так, чтобы можно было легко определять пары и состояния, к которым они применяются.  
   
-- **Color values (or hues):** Needed for each colored theme. Always create background and text color values in pairs. Colors are paired for background/foreground so that the text (foreground) color is always readable against the background color on which it is drawn. These colors are linked and will be used together in the UI. If the background is not intended for use with text, do not define a foreground color.  
+- **Цветовые значения (или тона):** Требуется для каждой цветовой темы. Всегда создавайте значения цвета фона и текста в парах. Цвета сопоставляются для фона и переднего плана, поэтому цвет текста (переднего плана) всегда читается в цвете фона, на котором он нарисован. Эти цвета связаны друг с другом и будут использоваться в пользовательском интерфейсе. Если фон не предназначен для использования с текстом, не определяйте цвет переднего плана.  
   
-- **System color name:** For use in high-contrast displays.  
+- **Имя системного цвета:** Для использования в экранах с высокой контрастностью.  
   
-## <a name="how-to-use-the-tool"></a>How to use the tool  
- As much as possible, and where appropriate, existing Visual Studio colors should be reused instead of making new ones. However, for cases where no appropriate colors are defined, custom colors should be created to keep an extension theming compatible.  
+## <a name="how-to-use-the-tool"></a>Использование средства  
+ Как можно больше, и там, где это уместно, необходимо повторно использовать существующие цвета Visual Studio вместо создания новых. Однако для случаев, когда не определены соответствующие цвета, необходимо создать пользовательские цвета, чтобы обеспечить совместимость расширений.  
   
- **Creating new color tokens**  
+ **Создание новых маркеров цвета**  
   
- To create custom colors using the Visual Studio Extension Color Editor, follow these steps:  
+ Чтобы создать пользовательские цвета с помощью редактора цветов расширения Visual Studio, выполните следующие действия.  
   
-1. Determine the category and token names for the new color tokens.  
+1. Определите имена категорий и маркеров для новых маркеров цвета.  
   
-2. Choose the hues that the UI element will use for each theme and the system color for High Contrast.  
+2. Выберите оттенки, которые будет использовать элемент пользовательского интерфейса для каждой темы, и системный цвет для высокая контрастность.  
   
-3. Use the color editor to create new color tokens.  
+3. Используйте редактор цветов для создания новых маркеров цвета.  
   
-4. Use the colors in a Visual Studio extension.  
+4. Используйте цвета в расширении Visual Studio.  
   
-5. Test the changes in Visual Studio.  
+5. Проверьте изменения в Visual Studio.  
   
-   **Step 1: Determine the category and token names for the new color tokens.**  
+   **Шаг 1. Определение категорий и имен маркеров для новых маркеров цвета.**  
   
-   The preferred naming scheme for a VSColor is **[Category] [UI type] [State]** . Do not use the word “color” in VSColor names, as it is redundant.  
+   Предпочтительной схемой именования для Всколор является **[Category] [тип ИП] [State]** . Не используйте слово "Color" в именах Всколор, так как оно избыточно.  
   
-   Category names provide logical groupings, and should be defined as narrowly as possible. For example, the name of a single tool window could be a category name, but the name of an entire business unit or project team is not. Grouping entries into categories helps prevent confusion between colors with the same name.  
+   Имена категорий обеспечивают логические группирования и должны быть определены как можно более узкими. Например, имя одного окна инструментов может быть именем категории, но имя целого подразделения или группы проекта — нет. Группировка записей по категориям помогает избежать путаницы между цветами с одинаковыми именами.  
   
-   A token name must clearly indicate the element type and the situations, or “state,” for which the color will be applied. For example, an active data tip’s **[UI type]** could be named “**DataTip**” and the **[State]** could be named “**Active**,” resulting in a color name of “**DataTipActive**.” Since data tips have text, both a foreground and a background color need to be defined. By using a background/foreground pairing, the color editor will automatically create the colors “**DataTipActive**” for the background and “**DataTipActiveText**” for the foreground.  
+   Имя токена должно четко указывать тип элемента, а также ситуации или состояния, для которых будет применен цвет. Например, подсказка активных данных **[тип ИП]** может называться "**подсказкой**", **а [State]** может называться "**Active**", что приводит к имени цвета "**дататипактиве**". Поскольку советы по данным содержат текст, необходимо определить как передний, так и фоновый цвет. Используя связывание фона или переднего плана, редактор цвета автоматически создаст цвета "**дататипактиве**" для фона и "**дататипактиветекст**" для переднего плана.  
   
-   If the piece of UI has only one state, the **[State]** part of the name can be omitted. For example, if a search box has a border and there is no state change that would affect the border’s color, then the name for the border’s color token can simply be called “**SearchBoxBorder**.”  
+   Если элемент пользовательского интерфейса имеет только одно состояние, часть **[State]** имени можно опустить. Например, если поле поиска имеет границу, а изменение состояния не повлияло на цвет границы, то имя маркера цвета границы можно просто назвать «**сеарчбоксбордер**».  
   
-   Some common state names include:  
+   Некоторые распространенные имена состояний включают:  
   
 - Активная  
   
@@ -71,75 +71,75 @@ The Visual Studio Extension Color Editor tool can create and edit custom colors 
   
 - MouseOver  
   
-- MouseDown  
+- Вниз  
   
 - Выбранные  
   
 - Focused  
   
-  Examples of a few token names for parts of a list item control:  
+  Примеры нескольких имен токенов для частей элемента управления "элемент списка":  
   
 - ListItem  
   
-- ListItemBorder  
+- листитембордер  
   
-- ListItemMouseOver  
+- листитеммаусеовер  
   
-- ListItemMouseOverBorder  
+- листитеммаусеовербордер  
   
-- ListItemSelected  
+- листитемселектед  
   
-- ListItemSelectedBorder  
+- листитемселектедбордер  
   
-- ListItemDisabled  
+- листитемдисаблед  
   
-- ListItemDisabledBorder  
+- листитемдисабледбордер  
   
-  **Step 2: Choose the hues that the UI element will use for each theme and the system color for High Contrast.**  
+  **Шаг 2. Выберите оттенки, которые элемент пользовательского интерфейса будет использовать для каждой темы, и системный цвет для высокая контрастность.**  
   
-  When choosing custom colors for UI, select a similar existing UI element, and use its colors as a base. The colors for in-the-box UI elements have undergone review and testing, so they will look appropriate and behave correctly in all themes.  
+  При выборе пользовательских цветов для пользовательского интерфейса выберите аналогичный существующий элемент пользовательского интерфейса и используйте его цвета в качестве основы. Цвета для встроенных элементов пользовательского интерфейса прошли проверку и тестирование, поэтому они будут выглядеть надлежащим образом и корректно работать во всех темах.  
   
-  **Step 3: Use the color editor to create new color tokens.**  
+  **Шаг 3. Создание новых маркеров цвета с помощью редактора цветов.**  
   
-  Launch the color editor and open or create a new custom theme colors .xml file. Select **Edit > New Color** from the menu. This opens a dialog for specifying the category and one or more names for color entries within that category:  
+  Запустите редактор цвета и откройте или создайте новый файл пользовательской темы Colors. XML. В меню выберите **изменить > новый цвет** . Откроется диалоговое окно для указания категории и одно или несколько имен для цветовых записей в этой категории:  
   
-  ![VSIX Color Editor New Color](../../extensibility/internals/media/vsix-color-editor-new-color.png "Новый цвет редактора цветов VSIX")  
+  ![Новый цвет редактора цвета VSIX](../../extensibility/internals/media/vsix-color-editor-new-color.png "Новый цвет редактора цветов VSIX")  
   
-  Select an existing category, or select **New Category** to create a new category. Another dialog will open, creating a new category name:  
+  Выберите существующую категорию или щелкните **создать категорию** , чтобы создать новую категорию. Откроется еще одно диалоговое окно, в котором будет создаваться имя новой категории:  
   
-  ![VSIX Color Editor New Category](../../extensibility/internals/media/vsix-color-editor-new-category.png "Новая категория редактора цветов VSIX")  
+  ![Редактор цвета VSIX — новая категория](../../extensibility/internals/media/vsix-color-editor-new-category.png "Новая категория редактора цветов VSIX")  
   
-  The new category will then become available in the **New Color** category drop-down menu. After choosing a category, enter one name per line for each new color token and select “Create” when finished:  
+  Новая категория станет доступной в раскрывающемся меню **Новая цветовая** Категория. После выбора категории введите одно имя в каждой строке для каждого нового маркера цвета и выберите "создать" по завершении:  
   
-  ![VSIX Color Editor New Color Filled](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "Новый цвет заполнения редактора цветов VSIX")  
+  ![Редактор цвета VSIX новый цвет заливка](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "Новый цвет заполнения редактора цветов VSIX")  
   
-  The color values are shown in background/foreground pairs, with “None” indicating that the color has not been defined. Note: if a color does not have a text color/background color pair, then only the background needs to be defined.  
+  Значения цвета отображаются в парах фона или переднего плана с «None», что означает, что цвет не был определен. Примечание. Если цвет не имеет пары цвет — цвет текста и фона, необходимо определить только фон.  
   
-  ![VSIX Color Editor Color Values](../../extensibility/internals/media/vsix-color-editor-color-values.png "Редактор цветов VSIX — значения цвета")  
+  ![Цветовые значения в редакторе цвета VSIX](../../extensibility/internals/media/vsix-color-editor-color-values.png "Редактор цветов VSIX — значения цвета")  
   
-  To edit a color token, select a color entry for the theme (column) of that token. Add the color value by either typing a hex color value in 8-digit ARGB format, entering a system color name into the cell, or using the drop-down menu to select the desired color via a set of color sliders or a list of system colors.  
+  Чтобы изменить маркер цвета, выберите запись цвета для темы (столбца) этого маркера. Добавьте значение цвета, введя шестнадцатеричное значение цвета в 8-значный формат ARGB, введя имя системного цвета в ячейку или используя раскрывающееся меню для выбора требуемого цвета с помощью набора ползунков цвета или списка системных цветов.  
   
-  ![VSIX Color Editor Edit Color](../../extensibility/internals/media/vsix-color-editor-edit-color.png "Редактор цветов VSIX — изменение цвета")  
+  ![Цвет редактирования редактора цвета VSIX](../../extensibility/internals/media/vsix-color-editor-edit-color.png "Редактор цветов VSIX — изменение цвета")  
   
-  ![VSIX Color Editor Background](../../extensibility/internals/media/vsix-color-editor-background.png "Фон редактора цветов VSIX")  
+  ![Фон редактора цветов VSIX](../../extensibility/internals/media/vsix-color-editor-background.png "Фон редактора цветов VSIX")  
   
-  For components that do not need to display text, enter only one color value: the background color. Otherwise, enter values for both background and text color, separated by a forward slash.  
+  Для компонентов, которым не требуется отображать текст, введите только одно значение цвета: цвет фона. В противном случае введите значения для цвета фона и текста, разделенные косой чертой.  
   
-  When entering values for High Contrast, enter valid Windows system color names. Do not enter hardcoded ARGB values. You can view a list of valid system color names by selecting “Background: System” or “Foreground: System” from the color value drop-down menus. When creating elements that have text components, use the correct background/text system color pair or the text might be unreadable.  
+  При вводе значений для высокая контрастность введите допустимые имена системных цветов Windows. Не вводите жестко зафиксированные значения ARGB. Список допустимых имен системных цветов можно просмотреть, выбрав "фон: система" или "передний план: система" в раскрывающихся меню "цветовые значения". При создании элементов, имеющих текстовые компоненты, используйте правильную комбинацию цвета фона и текста, иначе текст может оказаться нечитаемым.  
   
-  When you finish creating, setting, and editing the color tokens, save them into the desired .xml or .pkgdef format. Color tokens with neither a background nor a foreground set will be saved as empty colors in .xml format, but discarded in .pkgdef format. A dialog will warn you of potential color loss if you attempt to save empty colors to a .pkgdef file.  
+  Завершив создание, настройку и изменение маркеров цвета, сохраните их в нужный формат. XML или. pkgdef. Маркеры цвета без фона или набора переднего плана будут сохранены как пустые цвета в формате XML, но удалены в формате. pkgdef. При попытке сохранить пустые цвета в pkgdef-файле появится диалоговое окно с предупреждением о потенциальной потере цвета.  
   
-  **Step 4: Use the colors in a Visual Studio extension.**  
+  **Шаг 4. Используйте цвета в расширении Visual Studio.**  
   
-  After defining the new color tokens, include the .pkgdef in the project file with “Build Action” set to “Content,” and “Include in VSIX” set to “True.”  
+  Определив новые маркеры цвета, включите pkgdef в файл проекта с параметром "действие сборки", установленным в значение "содержимое", а "включить в VSIX" установите в значение "true".  
   
-  ![VSIX Color Editor pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "Редактор цветов VSIX — PKGDEF")  
+  ![Редактор цвета VSIX, pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "Редактор цветов VSIX — PKGDEF")  
   
-  In the Visual Studio Extension Color Editor, choose File > View Resource Code to view code that is used for accessing the custom colors in WPF-based UI.  
+  В редакторе цветов расширений Visual Studio выберите Файл > Просмотр кода ресурса, чтобы просмотреть код, используемый для доступа к пользовательским цветам в пользовательском интерфейсе на основе WPF.  
   
-  ![VSIX Color Editor Resource Code Viewer](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Редактор цветов VSIX — средство просмотра кода ресурса")  
+  ![Средство просмотра кода ресурса редактора цветов VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Редактор цветов VSIX — средство просмотра кода ресурса")  
   
-  Include this code in a static class in the project. A reference to **Microsoft.VisualStudio.Shell.\<VSVersion>.0.dll** needs to be added to the project to use the **ThemeResourceKey** type.  
+  Включите этот код в статический класс в проекте. Для использования типа **ThemeResourceKey** необходимо добавить в проект ссылку на **Microsoft. VisualStudio. Shell.\<всверсион > 0. dll** .  
   
 ```csharp  
 namespace MyCustomColors  
@@ -163,7 +163,7 @@ namespace MyCustomColors
 }  
 ```  
   
- This enables access to the colors in XAML code and allows the UI to respond to theme changes.  
+ Это обеспечивает доступ к цветам в коде XAML и позволяет пользовательскому интерфейсу реагировать на изменения темы.  
   
 ```xaml  
 <UserControl x:Class="NewTestProject.TestPackageControl" Name="MyToolWindow"  
@@ -179,21 +179,21 @@ namespace MyCustomColors
 </UserControl>  
 ```  
   
- **Step 5: Test the changes in Visual Studio.**  
+ **Шаг 5. тестирование изменений в Visual Studio.**  
   
- The color editor can temporarily apply color tokens to the running instances of Visual Studio to view live changes to colors without rebuilding the extension package. To do so, click the “Apply this theme to running Visual Studio windows” button located on the header of each theme column. This temporary theme will go away when the VSIX Color Editor is closed.  
+ Редактор цветов может временно применить маркеры цвета к запущенным экземплярам Visual Studio для просмотра динамических изменений цветов без перестроения пакета расширения. Для этого щелкните кнопку "применить эту тему для запуска Visual Studio Windows", расположенную в заголовке каждого столбца темы. Эта временная тема исчезнет при закрытии редактора цвета VSIX.  
   
- ![VSIX Color Editor Apply](../../extensibility/internals/media/vsix-color-editor-apply.png "Применение редактора цветов VSIX")  
+ ![Применение редактора цветов VSIX](../../extensibility/internals/media/vsix-color-editor-apply.png "Применение редактора цветов VSIX")  
   
- To make the changes permanent, rebuild and redeploy the Visual Studio extension after adding the new colors to the .pkgdef file and writing the code that will use those colors. Rebuilding the Visual Studio extension will merge the registry values for the new colors into the rest of the themes. Then relaunch Visual Studio, view the UI, and verify that the new colors appear as expected.  
+ Чтобы сделать изменения постоянными, перестройте и повторно разверните расширение Visual Studio после добавления новых цветов в файл pkgdef и записи кода, который будет использовать эти цвета. При перестроении расширения Visual Studio значения реестра для новых цветов будут объединены в остальные темы. Затем снова запустите Visual Studio, просмотрите пользовательский интерфейс и убедитесь, что новые цвета отображаются должным образом.  
   
 ## <a name="notes"></a>Примечания  
- This tool is intended to be used for creating custom colors for the preexisting Visual Studio themes, or for editing the colors of a custom Visual Studio theme. To create complete custom Visual Studio themes, download the [Visual Studio Color Theme Editor extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) from the Visual Studio Extensions Gallery.  
+ Этот инструмент предназначен для использования при создании пользовательских цветов для существующих тем Visual Studio или для редактирования цветов пользовательской темы Visual Studio. Чтобы создать полные пользовательские темы Visual Studio, скачайте [расширение редактора цветовых схем Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) из коллекции расширений Visual Studio.  
   
 ## <a name="sample-output"></a>Пример результатов выполнения  
- **XML color output**  
+ **Вывод цвета XML**  
   
- The .xml file generated by the tool will be similar to this:  
+ XML-файл, созданный средством, будет выглядеть примерно так:  
   
 ```xml  
 <Themes>  
@@ -222,9 +222,9 @@ namespace MyCustomColors
   
 ```  
   
- **PKGDEF color output**  
+ **Вывод цвета в PKGDEF**  
   
- The .pkgdef file generated by the tool will be similar to this:  
+ Файл pkgdef, созданный средством, будет выглядеть примерно так:  
   
 ```  
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\CategoryName]  
@@ -238,9 +238,9 @@ namespace MyCustomColors
   
 ```  
   
- **C# resource keys wrapper**  
+ **C#оболочка ключей ресурсов**  
   
- The color resource keys generated by the tool will be similar to this:  
+ Цветовые ключи ресурсов, создаваемые средством, будут выглядеть примерно так:  
   
 ```csharp  
 namespace MyNamespace  
@@ -267,9 +267,9 @@ namespace MyNamespace
 }  
 ```  
   
- **WPF resource dictionary wrapper**  
+ **Оболочка словаря ресурсов WPF**  
   
- The color **ResourceDictionary** keys generated by the tool will be similar to this:  
+ Ключи Color **ResourceDictionary** , созданные средством, будут выглядеть примерно так:  
   
 ```xaml  
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  

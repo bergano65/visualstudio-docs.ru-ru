@@ -1,5 +1,5 @@
 ---
-title: Debugging a published an Azure cloud service with Visual Studio and IntelliTrace | Microsoft Docs
+title: Отладка опубликованной облачной службы Azure с помощью Visual Studio и IntelliTrace | Документация Майкрософт
 description: Узнайте, как выполнять отладку облачной службы с помощью Visual Studio и IntelliTrace.
 author: mikejo5000
 manager: jillfra

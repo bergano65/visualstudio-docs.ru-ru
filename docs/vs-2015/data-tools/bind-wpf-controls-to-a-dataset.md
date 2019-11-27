@@ -1,5 +1,5 @@
 ---
-title: Bind WPF controls to a dataset | Microsoft Docs
+title: Привязка элементов управления WPF к набору данных | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -42,18 +42,18 @@ ms.locfileid: "74299423"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. You can download the AdventureWorksLT database from the [CodePlex Web site](https://go.microsoft.com/fwlink/?linkid=87843).
+- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
-- Наборы данных и адаптеры таблицы. For more information, see [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Наборы данных и адаптеры таблицы. Дополнительные сведения см. [в разделе Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-- Работа с Конструктором WPF. For more information, see [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
+- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [Общие сведения о конструкторе WPF и Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
 - Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
@@ -70,11 +70,11 @@ ms.locfileid: "74299423"
 
 4. Выберите шаблон проекта **Приложение WPF**.
 
-5. In the **Name** box, type `AdventureWorksProductsEditor` and click **OK**.
+5. В поле **имя** введите `AdventureWorksProductsEditor` и нажмите кнопку **ОК**.
 
-     Visual Studio creates the `AdventureWorksProductsEditor` project.
+     Visual Studio создает проект `AdventureWorksProductsEditor`.
 
-## <a name="create-a-dataset-for-the-application"></a>Create a dataset for the application
+## <a name="create-a-dataset-for-the-application"></a>Создание набора данных для приложения
  Перед созданием элементов управления с привязкой к данным нужно определить модель данных для своего приложения и добавить ее в окно **Источники данных**. В данном пошаговом руководстве вы создадите набор данных для использования в качестве модели данных.
 
 #### <a name="to-create-a-dataset"></a>Создание набора данных
@@ -103,20 +103,20 @@ ms.locfileid: "74299423"
 
 8. Нажмите кнопку **Готово**.
 
-     Visual Studio adds a new AdventureWorksLTDataSet.xsd file to the project, and it adds a corresponding **AdventureWorksLTDataSet** item to the **Data Sources** window. Файл AdventureWorksLTDataSet.xsd определяет типизированный набор данных с именем `AdventureWorksLTDataSet` и адаптер таблицы с именем `ProductTableAdapter`. Позднее в рамках данного пошагового руководства вы воспользуетесь `ProductTableAdapter` для заполнения набора данных данными и сохранения изменений в базу данных.
+     Visual Studio добавит в проект новый файл AdventureWorksLTDataSet. xsd и добавит соответствующий элемент **AdventureWorksLTDataSet** в окно **Источники данных** . Файл AdventureWorksLTDataSet.xsd определяет типизированный набор данных с именем `AdventureWorksLTDataSet` и адаптер таблицы с именем `ProductTableAdapter`. Позднее в рамках данного пошагового руководства вы воспользуетесь `ProductTableAdapter` для заполнения набора данных данными и сохранения изменений в базу данных.
 
 9. Выполните построение проекта.
 
-## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Edit the default fill method of the TableAdapter
+## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Изменение метода заливки TableAdapter по умолчанию
  Чтобы заполнить набор данных данными, используйте метод `Fill` объекта `ProductTableAdapter`. По умолчанию метод `Fill` заполняет `ProductDataTable` в `AdventureWorksLTDataSet` со всеми строками данных из таблицы продукта. Вы можете изменить этот метод, чтобы он возвращал только подмножество строк. В рамках данного руководства измените метод `Fill` для возврата только строк для продуктов с фотографиями.
 
 #### <a name="to-load-product-rows-that-have-photos"></a>Загрузка строк продуктов с фотографиями
 
-1. In **Solution Explorer**, double-click the AdventureWorksLTDataSet.xsd file.
+1. В **Обозреватель решений**дважды щелкните файл AdventureWorksLTDataSet. xsd.
 
      Открывается Конструктор наборов данных.
 
-2. In the designer, right-click the **Fill,GetData()** query and select **Configure**.
+2. В конструкторе щелкните правой кнопкой мыши запрос **Fill, GetData ()** и выберите **Configure (настроить**).
 
      Открывается **Мастер настройки адаптера таблицы**.
 
@@ -128,12 +128,12 @@ ms.locfileid: "74299423"
 
 4. Нажмите кнопку **Готово**.
 
-## <a name="define-the-user-interface"></a>Define the user interface
+## <a name="define-the-user-interface"></a>Определение пользовательского интерфейса
  Добавьте несколько кнопок в окно, изменив в XAML в Конструкторе WPF. Позднее в рамках данного пошагового руководства вы добавите код, позволяющий пользователям выполнять прокрутку и сохранять изменения записей продуктов с помощью этих кнопок.
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>Определение пользовательского интерфейса окна
 
-1. In **Solution Explorer**, double-click MainWindow.xaml.
+1. В **Обозреватель решений**дважды щелкните файл MainWindow. XAML.
 
      Открывается окно в Конструкторе WPF.
 
@@ -151,8 +151,8 @@ ms.locfileid: "74299423"
 
 3. Выполните построение проекта.
 
-## <a name="createdata-bound-controls"></a>Createdata-bound controls
- Create controls that display customer records by dragging the `Product` table from the **Data Sources** window to the WPF Designer.
+## <a name="createdata-bound-controls"></a>Элементы управления с привязкой к креатедата
+ Создайте элементы управления, отображающие записи клиентов, перетащив таблицу `Product` из окна **Источники данных** в конструктор WPF.
 
 #### <a name="to-create-data-bound-controls"></a>Порядок создания элементов управления с привязкой к данным
 
@@ -179,13 +179,13 @@ ms.locfileid: "74299423"
 
 5. Из окна **Источники данных** перетащите узел **Product** на строку сетки под строкой с кнопками.
 
-     Visual Studio создает XAML, который определяет набор элементов управления, привязанных к данным в таблице **Products**. Также создается код, который загружает эти данные. For more information about the generated XAML and code, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     Visual Studio создает XAML, который определяет набор элементов управления, привязанных к данным в таблице **Products**. Также создается код, который загружает эти данные. Дополнительные сведения о созданных XAML и коде см. в разделе [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
 6. Щелкните в конструкторе текстовое поле рядом с меткой **Идентификатор продукта**.
 
 7. В окне **Свойства** установите флажок рядом со свойством **IsReadOnly**.
 
-## <a name="navigating-product-records"></a>Navigating product records
+## <a name="navigating-product-records"></a>Навигация по записям продуктов
  Добавьте код, позволяющий пользователям выполнять прокрутку записей продуктов с помощью кнопок **\<** и **>** .
 
 #### <a name="to-enable-users-to-navigate-product-records"></a>Предоставление пользователям возможности навигации по записям продуктов
@@ -194,7 +194,7 @@ ms.locfileid: "74299423"
 
      Visual Studio открывает файл кода программной части и создает обработчик событий `backButton_Click` для события <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-2. Измените обработчик событий `Window_Loaded`, чтобы `ProductViewSource`, `AdventureWorksLTDataSet` и `AdventureWorksLTDataSetProductTableAdapter` находились за рамками метода и были доступны всей форме. Declare only these to be global to the form, and assign them within the `Window_Loaded` event handler similar to the following:
+2. Измените обработчик событий `Window_Loaded`, чтобы `ProductViewSource`, `AdventureWorksLTDataSet` и `AdventureWorksLTDataSetProductTableAdapter` находились за рамками метода и были доступны всей форме. Объявите эти данные как глобальные для формы и назначьте их в обработчике событий `Window_Loaded` следующим образом:
 
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]
@@ -211,7 +211,7 @@ ms.locfileid: "74299423"
      [!code-csharp[Data_WPFDATASET#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]
 
-## <a name="savechanges-to-product-records"></a>Savechanges to product records
+## <a name="savechanges-to-product-records"></a>Вызов SaveChanges для записей продуктов
  Добавьте код, позволяющий пользователям сохранять изменения в записях продуктов с помощью кнопки **Сохранить изменения**.
 
 #### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>Добавление возможности сохранения изменений в записях продуктов
@@ -226,7 +226,7 @@ ms.locfileid: "74299423"
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]
 
     > [!NOTE]
-    > В этом примере для сохранения изменений используется метод `Save` объекта `TableAdapter`. В данном пошаговом руководстве это целесообразно, так как изменяется только одна таблица данных. Если необходимо сохранить изменения нескольких таблиц, можно воспользоваться методом `UpdateAll` объекта `TableAdapterManager`, который Visual Studio создает вместе с вашим набором данных. For more information, see [TableAdapterManager Overview](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).
+    > В этом примере для сохранения изменений используется метод `Save` объекта `TableAdapter`. В данном пошаговом руководстве это целесообразно, так как изменяется только одна таблица данных. Если необходимо сохранить изменения нескольких таблиц, можно воспользоваться методом `UpdateAll` объекта `TableAdapterManager`, который Visual Studio создает вместе с вашим набором данных. Дополнительные сведения см. в [обзоре TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).
 
 ## <a name="test-the-application"></a>Тестирование приложения
  Выполните сборку и запуск приложения. Убедитесь, что вы можете просмотреть и обновить записи продуктов.
@@ -249,12 +249,12 @@ ms.locfileid: "74299423"
 
 5. Закройте приложение.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
  После прохождения пошагового руководства вы можете выполнить следующие задачи.
 
-- Узнайте, как использовать окно **Источники данных** в Visual Studio для привязки элементов управления WPF к другим типам источников данных. For more information, see [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+- Узнайте, как использовать окно **Источники данных** в Visual Studio для привязки элементов управления WPF к другим типам источников данных. Дополнительные сведения см. в разделе [Привязка элементов управления WPF к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. For more information, see [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
+- Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>См. также раздел
- [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+## <a name="see-also"></a>См. также
+ [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Привязка элементов управления WPF к данным в](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [средствах набора данных Visual Studio в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [WPF и конструкторе Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) общие сведения о [привязке данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

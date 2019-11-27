@@ -22,27 +22,27 @@ ms.locfileid: "74297679"
 # <a name="using-msbuild"></a>Использование MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-MSBuild supplies a well-defined, extensible XML format for creating project files that fully describe project items to be built, build tasks, and build configurations.  
+MSBuild предоставляет четко определенный расширяемый XML-формат для создания файлов проекта, которые полностью описывают элементы проекта для построения, задачи сборки и конфигурации сборки.  
   
- For an end-to-end sample of a language project system based on MSBuild, see the IronPython Sample Deep Dive in the[VSSDK Samples](../../misc/vssdk-samples.md).  
+ Полный пример системы проектного языка, основанной на MSBuild, см. в разделе[примеры VSSDK](../../misc/vssdk-samples.md).  
   
-## <a name="general-msbuild-considerations"></a>General MSBuild Considerations  
- MSBuild project files, for example, [!INCLUDE[csprcs](../../includes/csprcs-md.md)] .csproj and [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .vbproj files, contain data that is used at build time, but also can contain data that is used at design time. Build-time data is stored using MSBuild primitives, including [Item Element (MSBuild)](../../msbuild/item-element-msbuild.md) and [Property Element (MSBuild)](../../msbuild/property-element-msbuild.md). Design-time data, which is data specific to the project type and any related project subtypes, is stored in free-form XML reserved for it.  
+## <a name="general-msbuild-considerations"></a>Общие рекомендации по MSBuild  
+ Файлы проекта MSBuild, например [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. csproj и [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. vbproj, содержат данные, используемые во время сборки, но также могут содержать данные, используемые во время разработки. Данные времени сборки хранятся с помощью примитивов MSBuild, включая [элемент Item (MSBuild)](../../msbuild/item-element-msbuild.md) и [элемент Property (MSBuild)](../../msbuild/property-element-msbuild.md). Данные времени разработки, которые являются данными, относящимися к типу проекта и всем связанным подтипам проекта, хранятся в XML-файле произвольной формы, зарезервированном для него.  
   
- MSBuild does not have native support for configuration objects, but does provide conditional attributes for specifying configuration-specific data. Пример:  
+ MSBuild не поддерживает встроенную поддержку объектов конфигурации, но предоставляет условные атрибуты для указания данных, относящихся к конфигурации. Пример.  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
 ```  
   
- For more information on conditional attributes, see [Conditional Constructs](../../msbuild/msbuild-conditional-constructs.md).  
+ Дополнительные сведения об условных атрибутах см. в разделе [Условные конструкции](../../msbuild/msbuild-conditional-constructs.md).  
   
-### <a name="extending-msbuild-for-your-project-type"></a>Extending MSBuild for Your Project Type  
- MSBuild interfaces and APIs are subject to change in future versions of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Therefore, it is prudent to use the managed package framework (MPF) classes because they provide shielding from changes.  
+### <a name="extending-msbuild-for-your-project-type"></a>Расширение MSBuild для типа проекта  
+ Интерфейсы и API MSBuild могут быть изменены в будущих версиях [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Таким образом, разумно использовать классы Managed Package Framework (MPF), так как они обеспечивают экранирование от изменений.  
   
- The Managed Package Framework for Projects (MPFProj) provides helper classes for creating and managing new project system. You can find the source code and compilation instructions at [MPF for Projects - Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
+ Платформа управляемых пакетов для проектов (Мпфпрож) предоставляет вспомогательные классы для создания новой системы проектов и управления ею. Исходный код и инструкции по компиляции можно найти по адресу [MPF for Projects-Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
   
- The project-specific MPF classes are as follows:  
+ Классы MPF, относящиеся к проекту, выглядят следующим образом:  
   
 |Class|Реализация|  
 |-----------|--------------------|  
@@ -52,12 +52,12 @@ MSBuild supplies a well-defined, extensible XML format for creating project file
 |`Microsoft.VisualStudio.Package.ProjectConfig`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|  
 |`Microsoft.VisualStudio.Package.SettingsPage`|<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyPageSite>|  
   
- `Microsoft.VisualStudio.Package.ProjectElement` class is a wrapper for MSBuild items.  
+ `Microsoft.VisualStudio.Package.ProjectElement` класс является оболочкой для элементов MSBuild.  
   
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>Single File Generators vs. MSBuild Tasks  
- Single file generators are accessible at design-time only, but MSBuild tasks can be used at design-time and build-time. For maximum flexibility, therefore, use MSBuild tasks to transform and generate code. For more information, see [Custom Tools](../../extensibility/internals/custom-tools.md).  
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>Генераторы одиночных файлов и задачи MSBuild  
+ Генераторы отдельных файлов доступны только во время разработки, но задачи MSBuild можно использовать во время разработки и во время сборки. Для максимальной гибкости, следовательно, используйте задачи MSBuild для преобразования и создания кода. Дополнительные сведения см. в разделе [Custom Tools](../../extensibility/internals/custom-tools.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о MSBuild](../../msbuild/msbuild-reference.md)   
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
  [Настраиваемые средства](../../extensibility/internals/custom-tools.md)

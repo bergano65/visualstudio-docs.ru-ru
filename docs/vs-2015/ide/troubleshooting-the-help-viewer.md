@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the Help Viewer | Microsoft Docs
+title: Устранение неполадок в средстве просмотра справки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -47,7 +47,7 @@ ms.locfileid: "74299896"
 
 - Чтобы предоставить отзыв, воспользуйтесь страницей [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) на веб-сайте Майкрософт или отправьте сообщение электронной почты на адрес [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- For more information, see the [Developer Documentation and Help System](https://go.microsoft.com/fwlink/?LinkId=232741) forum and [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) blog.
+- Дополнительные сведения см. на форуме и [справочной документации для разработчиков](https://go.microsoft.com/fwlink/?LinkId=232741) и [в](https://go.microsoft.com/fwlink/?LinkId=232743) блоге помощника.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Руководство администратора Help Viewer 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)

@@ -1,5 +1,5 @@
 ---
-title: Add Azure Storage by using Connected Services
+title: Добавление службы хранилища Azure с помощью Подключенные службы
 description: Добавление хранилища Azure в приложение с помощью диалогового окна "Добавление подключенных служб" в Visual Studio
 author: ghogen
 manager: jillfra
@@ -69,6 +69,6 @@ ms.locfileid: "74300166"
 - Проекты веб-заданий: ознакомьтесь со статьей [Что произошло с моим проектом веб-заданий (подключенными к службе хранилища Azure службами Visual Studio)?](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Следующие шаги
-- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Форум MSDN: служба хранилища Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Блог команды разработчиков службы хранилища Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Документация по службе хранилища Azure](https://docs.microsoft.com/azure/storage/)

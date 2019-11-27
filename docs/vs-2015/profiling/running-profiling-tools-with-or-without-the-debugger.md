@@ -51,7 +51,7 @@ ms.locfileid: "74298210"
   
     На рисунке ниже показано окно **Средства диагностики** в Visual Studio 2015 с обновлением 1.  
   
-    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![Диагностиктулс&#45;update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4. Вы можете выбрать, что следует просмотреть — **использование памяти** или **загрузку ЦП** (либо и то, и другое) — с помощью параметра **Выбор средств** на панели инструментов. Если вы используете Visual Studio Enterprise, можно включить или отключить IntelliTrace, последовательно выбрав **Сервис | Параметры | IntelliTrace**.  
   
@@ -61,11 +61,11 @@ ms.locfileid: "74298210"
   
    Окно теперь содержит поле поиска, с помощью которого можно найти определенную строку в любом месте списка событий. Например, на рисунке ниже показаны результаты поиска строки install, которой соответствуют четыре события.  
   
-   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![диагностиксевентсеарч](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
    Вы также можете фильтровать события, отображаемые в окне. В раскрывающемся списке **Фильтр** можно выбрать определенные категории событий или отменить их выбор. Имена категорий совпадают с префиксами.  
   
-   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![диагностицевентфилтер](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
    Дополнительные сведения см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
@@ -74,11 +74,11 @@ ms.locfileid: "74298210"
   
 1. Откройте проект в Visual Studio.  
   
-2. On the **Debug** menu, choose **Performance Profiler...** (Shortcut key: Alt + F2).  
+2. В меню **Отладка** выберите пункт **профилировщик производительности...** (сочетание клавиш: Alt + F2).  
   
 3. На странице запуска средств диагностики выберите режим запуска одного средства или нескольких средств в сеансе. Отображаются только инструменты, подходящие типу проекта и языку программирования. При выборе средства диагностики можно указать только те средства, которые могут работать в одном и том же сеансе диагностики. Вот как может выглядеть вариант вашего выбора для универсального приложения Windows на C#:  
   
-    ![Select the diagnostic tools](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Выбор средств диагностики](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
 4. Для запуска диагностического сеанса нажмите кнопку **Запуск**.  
   
@@ -86,7 +86,7 @@ ms.locfileid: "74298210"
   
     Во время выполнения сеанса некоторые средства отображают графики по данным в режиме реального времени на странице запуска средств диагностики.  
   
-    ![Collect data on the Performance and Diagnostic pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Сбор данных в Pag производительности и диагностики](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Для завершения диагностического сеанса выберите команду **Остановить сбор**.  
   
@@ -94,10 +94,10 @@ ms.locfileid: "74298210"
   
    Также на странице запуска средств диагностики в перечне недавних файлов можно открывать сохраненные файлы сеанса диагностики.  
   
-   ![Open a saved diagnosis session file](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Открытие сохраненного файла сеанса диагностики](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Отчет о профилировании  
- ![Diagnostic tools report](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Отчет средств диагностики](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
@@ -111,17 +111,17 @@ ms.locfileid: "74298210"
 ## <a name="setting-the-analysis-target-to-another-device"></a>Настройка другого устройства в качестве целевого объекта анализа  
  Кроме запуска приложения из проекта Visual Studio, диагностические сеансы также можно запускать на альтернативных целевых объектах. Например, может потребоваться диагностика проблем производительности для определенной версии вашего приложения, установленного из Магазина приложений Windows.  
   
- ![Choose diagnostic tools analysis target](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Выбор целевого объекта анализа средств диагностики](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Можно запускать приложения, которые уже установлены на устройстве, или можно подключать средства диагностики к приложениям, которые уже работают. При выборе режима **выполняемого приложения** или **установленного приложения** вы выбираете приложение в списке приложений, обнаруженных в указанном целевом объекте развертывания.  
   
- ![Choose a running or installed app for diagnosis](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Выберите выполняющееся или установленное приложение для диагностики](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  При выборе **Internet Explorer** вы указываете URL-адрес и можете изменить телефон, который является целевым объектом развертывания.  
   
- ![Specify the url to display in Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Укажите URL-адрес для просмотра в Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
-## <a name="remote-debugging"></a>Remote Debugging  
+## <a name="remote-debugging"></a>Удаленная отладка  
  Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  Для универсальных приложений Windows см. раздел [Запуск приложений Магазина Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Записи в блогах и статьи MSDN от команды разработчиков средств диагностики  
@@ -137,6 +137,6 @@ ms.locfileid: "74298210"
   
  [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
+ [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
  [IntelliTrace в Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

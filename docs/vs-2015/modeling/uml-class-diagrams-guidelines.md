@@ -1,5 +1,5 @@
 ---
-title: 'UML Class Diagrams: Guidelines | Microsoft Docs'
+title: 'UML-схемы классов: рекомендации | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -27,23 +27,23 @@ ms.locfileid: "74297289"
 # <a name="uml-class-diagrams-guidelines"></a>UML-схемы классов: правила работы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, you can use a *UML class diagram* to describe data types and their relationships separately from their implementation. Схема позволяет сконцентрироваться на логических аспектах классов, а не их реализации.
+В Visual Studio можно использовать *схему классов UML* для описания типов данных и их связей отдельно от их реализации. Схема позволяет сконцентрироваться на логических аспектах классов, а не их реализации.
 
- To create a UML class diagram, on the **Architecture** menu, choose **New UML Diagram or Layer Diagram**.
+ Чтобы создать UML-схему классов, в меню **архитектура** выберите пункт **Новая схема UML или схема слоев**.
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Этот раздел посвящен UML-схемам классов. Существует другой вид схемы классов, которую можно создать и использовать для визуализации программного кода. See [Designing and Viewing Classes and Types](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Этот раздел посвящен UML-схемам классов. Существует другой вид схемы классов, которую можно создать и использовать для визуализации программного кода. См. раздел [проектирование и Просмотр классов и типов](https://go.microsoft.com/fwlink/?LinkId=142231).
 
-## <a name="Using"></a> Using UML Class Diagrams
+## <a name="Using"></a>Использование UML-схем классов
  UML-схему классов можно использовать в разных целях.
 
 - Для предоставления описания типов, используемых в системе и передаваемых между компонентами, независимо от реализации.
 
      Например, тип "Заказ еды" может реализовываться в бизнес-слое в коде .NET, в интерфейсах между компонентами в XML, в базе данных в SQL и в пользовательском интерфейсе в HTML. Несмотря на то что подробности этих реализаций различаются, отношение между типом "Заказ еды" и другими типами, такими как "Меню" и "Оплата", сохраняется. UML-схема классов позволяет обсуждать эти отношения отдельно от реализаций.
 
-- Для более точного определения набора терминов, используемых для обмена сведениями между приложением и его пользователями, а также в описаниях потребностей пользователей. See [Model user requirements](../modeling/model-user-requirements.md).
+- Для более точного определения набора терминов, используемых для обмена сведениями между приложением и его пользователями, а также в описаниях потребностей пользователей. См. статью [требования пользователей к модели](../modeling/model-user-requirements.md).
 
      В качестве примера можно привести описания функциональности пользователей (user story), варианты использования и описания других требований в приложении, обеспечивающем работу ресторана. В этом описании можно найти такие термины как "Меню", "Заказ", "Еда", "Цена", "Оплата" и т. д. Можно создать UML-схему классов, определяющую отношения между этими терминами. Это позволит снизить риск возникновения несоответствий в описаниях требований, пользовательском интерфейсе и справочной документации.
 
@@ -56,7 +56,7 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 
  типы закреплений ввода и вывода и узлы параметров действий.
 
- See [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
+ См. раздел [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md).
 
  Схема последовательностей
 
@@ -64,70 +64,70 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 
  типы линий жизни. Класс линии жизни должен включать операции для всех сообщений, которые он может получить.
 
- See [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
+ См. раздел [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md).
 
  схема компонентов
 
  интерфейсы компонента с перечислением их операций.
 
- See [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
+ См. раздел [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md).
 
  Схема вариантов использования
 
  типы, упомянутые в описаниях целей и шагов варианта использования.
 
- See [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
+ См. раздел [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a> Basic Steps for Drawing Class Diagrams
- For reference information about the elements on UML class diagrams, see [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md).
+## <a name="BasicSteps"></a>Основные шаги для рисования диаграмм классов
+ Справочные сведения об элементах на схемах классов UML см. в разделе [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md).
 
 > [!NOTE]
-> Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+> Подробные инструкции по созданию схем моделирования см. в разделе [изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-uml-class-diagram"></a>Создание UML-схемы классов
 
-1. On the **Architecture** menu, choose **New UML or Layer Diagram**.
+1. В меню **архитектура** выберите пункт **создать UML или схему слоев**.
 
-2. Under **Templates**, choose **UML Class Diagram**.
+2. В разделе **шаблоны**выберите **UML-схема классов**.
 
 3. Назовите схему.
 
-4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**, and then choose **OK**.
+4. В окне **Добавить в проект моделирования**выберите существующий проект моделирования в решении или **Создайте новый проект моделирования**и нажмите кнопку **ОК**.
 
-     A new class diagram appears with the **UMLClass Diagram** Toolbox. Панель элементов содержит требуемые элементы и отношения.
+     Появится новая диаграмма классов с панелью элементов **диаграммы умлкласс** . Панель элементов содержит требуемые элементы и отношения.
 
 #### <a name="to-draw-a-uml-class-diagram"></a>Создание UML-схемы классов
 
-1. To create a type, choose the **Class**, **Interface** or **Enumeration** tool on the Toolbox, and then click a blank part of the diagram. (Если панель элементов не отображается, нажмите клавиши CTRL+ALT+X.)
+1. Чтобы создать тип, выберите инструмент **класс**, **интерфейс** или **перечисление** на панели элементов, а затем щелкните пустую часть диаграммы. (Если панель элементов не отображается, нажмите клавиши CTRL+ALT+X.)
 
-2. To add attributes or operations to the types, or literals to an enumeration, choose the **Attributes**, **Operations** or **Literals** heading in the type, and press ENTER.
+2. Чтобы добавить атрибуты или операции в типы или литералы в перечисление, выберите заголовок **атрибуты**, **операции** или **литералы** в типе и нажмите клавишу ВВОД.
 
-     Можно создать сигнатуру, например `f(x:Boolean):Integer`. See [Attributes and Operations](#AttributesAndOperations).
+     Можно создать сигнатуру, например `f(x:Boolean):Integer`. См. раздел [атрибуты и операции](#AttributesAndOperations).
 
      Чтобы быстро добавить несколько элементов, дважды нажмите ВВОД в конце каждого элемента. Чтобы переместить элементы вверх или вниз по списку, можно воспользоваться клавишами со стрелками.
 
-3. Чтобы развернуть или свернуть тип, щелкните значок шеврона в левой верхней части типа. You can also expand and collapse the **Attributes** and **Operations** section of a class or interface.
+3. Чтобы развернуть или свернуть тип, щелкните значок шеврона в левой верхней части типа. Можно также развернуть и свернуть раздел **атрибуты** и **операции** класса или интерфейса.
 
 4. Чтобы создать связи ассоциаций, наследования или зависимостей между типами, щелкните соответствующий инструмент, выберите тип источника и укажите тип целевого объекта.
 
-5. To create types in a package, create a package using the **Package** tool, and then create new types and packages within the package. Чтобы скопировать типы и вставить их в пакет также можно использовать команду копирования.
+5. Чтобы создать типы в пакете, создайте пакет с помощью средства **пакет** , а затем создайте в пакете новые типы и пакеты. Чтобы скопировать типы и вставить их в пакет также можно использовать команду копирования.
 
-6. Каждая схема — это представление на модели, которое совместно используется другими схемами того же проекта. To see a tree view of the complete model, choose **View**, **Other Windows**, **UML Model Explorer**.
+6. Каждая схема — это представление на модели, которое совместно используется другими схемами того же проекта. Чтобы просмотреть представление всей модели в виде дерева, выберите **вид**, **другие окна**, **Обозреватель моделей UML**.
 
-## <a name="UsingTypes"></a> Using Classes, Interfaces, and Enumerations
- Существует три стандартных вида классификаторов, которые доступны на панели элементов. These are referred to as *types* throughout this document.
+## <a name="UsingTypes"></a>Использование классов, интерфейсов и перечислений
+ Существует три стандартных вида классификаторов, которые доступны на панели элементов. В этом документе они называются *типами* .
 
- ![A class, an enumeration, and an interface](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
+ ![Класс, перечисление и интерфейс](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
 
-- Use **Classes** (1) to represent data or object types for most purposes.
+- Для большинства целей используйте **классы** (1) для представления данных или типов объектов.
 
-- Use **Interfaces** (2) in a context where you have to differentiate between pure interfaces and concrete classes that have internal implementations. Различать эти сущности полезно при работе со схемами, целью которых является описание реализации программы. При моделировании пассивных данных или определении концептов для описания пользовательских требований это менее эффективно.
+- Используйте **интерфейсы** (2) в контексте, где необходимо различать чистые интерфейсы и конкретные классы, имеющие внутренние реализации. Различать эти сущности полезно при работе со схемами, целью которых является описание реализации программы. При моделировании пассивных данных или определении концептов для описания пользовательских требований это менее эффективно.
 
-- Use an **Enumeration** (3) to represent a type that has a limited number of literal values, for example `Stop` and `Go`.
+- Используйте **перечисление** (3) для представления типа с ограниченным числом литеральных значений, например `Stop` и `Go`.
 
   - Добавление значений литералов в перечисление Дайте каждому отдельное имя.
 
-  - При желании каждому значению литерала также можно присвоить численное значение. Open the shortcut menu for the literal in the enumeration, choose **Properties**, and then type a number in the **Value** field in the **Properties** window.
+  - При желании каждому значению литерала также можно присвоить численное значение. Откройте контекстное меню для литерала в перечислении, выберите пункт **Свойства**, а затем введите число в поле **значение** в окне **Свойства** .
 
   Дайте каждому типу уникальное имя.
 
@@ -136,7 +136,7 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 
  UML-схема классов
 
- Можно отображать класс на нескольких UML-схемах классов. When you have created a class on one diagram, drag the class from **UML Model Explorer** onto the other diagram.
+ Можно отображать класс на нескольких UML-схемах классов. После создания класса на одной диаграмме перетащите класс из **обозревателя моделей UML** на другую схему.
 
  Такой подход эффективен, если необходимо на каждой схеме отобразить определенную группу отношений.
 
@@ -144,26 +144,26 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 
  Схема компонентов
 
- If you have defined interfaces on the components in a component diagram, you can drag an interface from **UML Model Explorer** onto the class diagram. На схеме классов можно определить методы, которые входят в интерфейс.
+ Если в компонентах схемы компонентов определены интерфейсы, можно перетащить интерфейс из **обозревателя моделей UML** на схему классов. На схеме классов можно определить методы, которые входят в интерфейс.
 
- See [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
+ См. раздел [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md).
 
  Схема последовательностей UML
 
- You can create classes and interfaces from lifelines in a sequence diagram, and then drag the class from **UML Model Explorer** to a UML class diagram. Каждая линия жизни на схеме последовательностей представляет экземпляр объекта, компонента или субъекта.
+ Классы и интерфейсы можно создавать на основе линий жизни на схеме последовательностей, а затем перетаскивать класс из **обозревателя моделей UML** на схему классов UML. Каждая линия жизни на схеме последовательностей представляет экземпляр объекта, компонента или субъекта.
 
- To create a class from a lifeline, open the shortcut menu for the lifeline, and then choose **Create Class** or **Create Interface**. See [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
+ Чтобы создать класс на основе линии жизни, откройте контекстное меню для линии жизни, а затем выберите **создать класс** или **создать интерфейс**. См. раздел [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md).
 
-## <a name="AttributesAndOperations"></a> Attributes and Operations
+## <a name="AttributesAndOperations"></a>Атрибуты и операции
  Атрибут (4) — это именованное значение, которое может быть присвоено каждому экземпляру типа. Осуществление доступа к атрибуту не меняет состояние экземпляра.
 
- Операция (5) — это метод или функция, которая может выполняться экземплярами типа. Она может возвращать значение. If its **isQuery** property is true, it cannot change the state of the instance.
+ Операция (5) — это метод или функция, которая может выполняться экземплярами типа. Она может возвращать значение. Если его **свойство IsTrue** имеет значение true, оно не может изменить состояние экземпляра.
 
- To add an attribute or operation to a type, open the shortcut menu for the type, choose **Add**, and then choose **Attribute** or **Operation**.
+ Чтобы добавить атрибут или операцию к типу, откройте контекстное меню для типа, выберите **Добавить**, а затем выберите **атрибут** или **Операция**.
 
- To see its properties, open the shortcut menu for the attribute or operation, and then choose **Properties**. The properties appear in the **Properties** window.
+ Чтобы просмотреть его свойства, откройте контекстное меню для атрибута или операции, а затем выберите пункт **Свойства**. Свойства отображаются в окне **Свойства** .
 
- To see the properties of an operation's parameters, choose <strong>[…]</strong>in the **Parameters** property. Отобразится новое диалоговое окно свойств.
+ Чтобы просмотреть свойства параметров операции, выберите <strong>[...]</strong> в свойстве **Parameters** . Отобразится новое диалоговое окно свойств.
 
  Дополнительные сведения обо всех свойствах, которые можно задать, см. в следующих разделах:
 
@@ -172,17 +172,17 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 - [Свойства операций на схемах классов UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)
 
 ### <a name="types-of-attributes-and-operations"></a>Типы атрибутов и операций
- Each *Type* of an attribute or operation, and each parameter type, can be one of the following:
+ Каждый *тип* атрибута или операции, а также тип каждого параметра может быть одним из следующих:
 
-- **(none)** - You can leave a type unspecified in the signature by omitting the preceding colon (`:`).
+- **(нет)** — можно оставить тип, не указанный в сигнатуре, пропустив перед ним двоеточие (`:`).
 
-- One of the standard primitive types: **Boolean**, **Integer**, **String**.
+- Один из стандартных типов-примитивов: **Boolean**, **целое число**, **строка**.
 
 - Тип, определенный в модели.
 
-- A parameterized value of a template type, written Template\<Parameter>. See [Template Types](#Templates).
+- Параметризованное значение типа шаблона, записанный шаблон\<параметр >. См. раздел [типы шаблонов](#Templates).
 
-  Также можно записать имя типа, который еще не был определен в модели. The name will be listed under **Unspecified Types** in UML Model Explorer.
+  Также можно записать имя типа, который еще не был определен в модели. Имя будет указано в разделе **Неуказанные типы** в ОБОЗРЕВАТЕЛЕ моделей UML.
 
 > [!NOTE]
 > Если впоследствии в модели определяется класс или интерфейс этого имени, прежние атрибуты и операции все равно относятся к элементу в разделе "Незаданные типы". Если нужно изменить их так, чтобы они относились к новому классу, необходимо открыть каждый атрибут или операцию и сбросить тип, выбирая новый класс из раскрывающегося меню.
@@ -198,7 +198,7 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 
  `[0..1]`
 
- **Null** or a value of the given type.
+ **Null** или значение заданного типа.
 
  `[*]`
 
@@ -214,12 +214,12 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 
  Если кратность превышает 1, можно задать следующие свойства.
 
-- **IsOrdered** - If true, the collection has a defined order.
+- С **сортировкой** — если значение равно true, коллекция имеет определенный порядок.
 
-- **IsUnique** - If true, there are no duplicate values in the collection.
+- **IsUnique** — если значение true, в коллекции отсутствуют повторяющиеся значения.
 
 ### <a name="visibility"></a>Видимость
- *Visibility* indicates whether the attribute or operation can be accessed outside the class definition. Допустимы следующие значения.
+ *Видимость* указывает, возможен ли доступ к атрибуту или операции за пределами определения класса. Допустимы следующие значения.
 
  **Public**
 
@@ -237,13 +237,13 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
 
  **~**
 
- Возможен доступ только внутри пакета, который содержит данный тип, а также в любых пакетах, явно импортирующих его. See [Defining Namespaces and Packages](#Packages).
+ Возможен доступ только внутри пакета, который содержит данный тип, а также в любых пакетах, явно импортирующих его. См. раздел [Определение пространств имен и пакетов](#Packages).
 
  **Protected**
 
  **#**
 
- Доступ открыт только данному типу и всем типам, которые его наследуют. See [Inheritance](#Inheritance).
+ Доступ открыт только данному типу и всем типам, которые его наследуют. См. раздел [наследование](#Inheritance).
 
 ### <a name="setting-the-signature-of-an-attribute-or-an-operation"></a>Задание сигнатуры атрибута или операции
  Сигнатура атрибута или операции — это коллекция свойств, включающая видимость, имя, параметры (для операций) и тип.
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- Пример:
+ Пример.
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -286,10 +286,10 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Если атрибут или операция статична, имя атрибута или операции отображается в сигнатуре подчеркнутым. Если атрибут или операция абстрактна, имя отображается курсивом.
 
- However, you can only set the **Is Static** and **Is Abstract** properties in the **Properties** window.
+ Однако можно задать только **статический** параметр и **он является абстрактным** свойством в окне **Свойства** .
 
 #### <a name="full-signature"></a>Полная сигнатура
- При редактировании сигнатуры атрибута или операции в конце строки и после каждого параметра могут отображаться дополнительные свойства. Они отображаются заключенными в фигурные скобки {…}. Эти свойства можно редактировать и добавлять. Пример:
+ При редактировании сигнатуры атрибута или операции в конце строки и после каждого параметра могут отображаться дополнительные свойства. Они отображаются заключенными в фигурные скобки {…}. Эти свойства можно редактировать и добавлять. Пример.
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -300,58 +300,58 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  `unique`
 
- **Is Unique**
+ **Является уникальным**
 
  В коллекции нет повторяющихся значений. Применимо к типам с кратностью больше 1.
 
  `ordered`
 
- **Is Ordered**
+ **Является упорядоченным**
 
  Коллекция — это последовательность. Если значение false, не существует определенного первого элемента. Применимо к типам с кратностью больше 1.
 
  `query`
 
- **Is Query**
+ **Является запросом**
 
  Операция не меняет состояние экземпляра. Применимо только к операциям.
 
  `/`
 
- **Is Derived**
+ **Является производным**
 
  Атрибут вычисляется из значений других атрибутов или ассоциаций.
 
- "/" отображается перед именем атрибута. Пример:
+ "/" отображается перед именем атрибута. Пример.
 
 ```
 /TotalPrice: Integer
 ```
 
- Как правило, полная сигнатура отображается на схеме, только когда она редактируется. По завершении редактирования дополнительные свойства скрываются. If you want to see the full signature all the time, open the shortcut menu for the type, and then choose **Show Full Signature**.
+ Как правило, полная сигнатура отображается на схеме, только когда она редактируется. По завершении редактирования дополнительные свойства скрываются. Если необходимо все время просмотреть полную подпись, откройте контекстное меню для типа и выберите **Показать полную подпись**.
 
-## <a name="Associations"></a> Drawing and Using Associations
+## <a name="Associations"></a>Рисование и использование ассоциаций
  Используйте ассоциацию, чтобы представить любые виды отношений между двумя элементами, независимо от того, как эта связь реализуется в программе. Например, можно использовать ассоциацию, чтобы представить указатель в C#, отношение в базе данных или перекрестную ссылку одной части XML-файла на другую. Может представлять связь между объектами в реальном мире, например землей и солнцем. Ассоциация не показывает, как представлена ссылка, а только свидетельствует о наличии сведений.
 
 ### <a name="properties-of-an-association"></a>Свойства ассоциации
- После создания ассоциации необходимо задать ее свойства. Open the shortcut menu for the association, and then choose **Properties**.
+ После создания ассоциации необходимо задать ее свойства. Откройте контекстное меню для сопоставления и выберите пункт **Свойства**.
 
- In addition to the properties of the association as a whole, each *role*, that is, each end of the association, has some properties of its own. To view them, expand the **First Role** and **Second Role** properties.
+ В дополнение к свойствам ассоциации в целом каждая *роль*, то есть каждая конечная точка ассоциации, имеет собственные свойства. Чтобы просмотреть их, разверните **первую роль** и свойства **второй роли** .
 
  Некоторые свойства каждой роли напрямую видны на схеме. Они приведены ниже:
 
-- Имя роли. Отображается на соответствующем окончании ассоциации на схеме. You can set it either on the diagram or in the **Properties** window.
+- Имя роли. Отображается на соответствующем окончании ассоциации на схеме. Его можно задать либо на схеме, либо в окне **Свойства** .
 
-- **Multiplicity**, which defaults to **1**. Это значение также отображается на схеме рядом с соответствующим окончанием ассоциации.
+- **Кратность**, значение которой по умолчанию равно **1**. Это значение также отображается на схеме рядом с соответствующим окончанием ассоциации.
 
-- **Aggregation**. Отображается в форме ромбовидной фигуры на одном окончании соединителя. Можно использовать его для указания, что экземпляры в обобщающей роли владеют экземплярами другой роли или содержат их.
+- **Статистическая обработка**. Отображается в форме ромбовидной фигуры на одном окончании соединителя. Можно использовать его для указания, что экземпляры в обобщающей роли владеют экземплярами другой роли или содержат их.
 
-- **Is Navigable**. Если имеет значение true только для одной роли, в направлении перехода отображается стрелка. С помощью этого свойства можно показать возможности перехода по ссылкам и связи в базе данных в программе.
+- **Является перемещаемым**. Если имеет значение true только для одной роли, в направлении перехода отображается стрелка. С помощью этого свойства можно показать возможности перехода по ссылкам и связи в базе данных в программе.
 
-  For the full details of these and other properties, see [Properties of associations on UML class diagrams](../modeling/properties-of-associations-on-uml-class-diagrams.md).
+  Полные сведения об этих и других свойствах см. в разделе [Свойства ассоциаций на схемах классов UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 
 ### <a name="navigability"></a>Возможность перехода
- Когда изображается ассоциация, на одном конце у нее стрелка, обозначающая, что ассоциация дает возможность перехода в этом направлении. Это удобно, если схема классов представляет классы ПО, а ассоциации представляют указатели или ссылки. Но если схема классов представляет сущности и отношения или бизнес-концепции, возможность перехода показывать не обязательно. В таком случае можно изображать ассоциации без стрелок. You can do so by setting the **Is Navigable** property on both ends of the association to True.
+ Когда изображается ассоциация, на одном конце у нее стрелка, обозначающая, что ассоциация дает возможность перехода в этом направлении. Это удобно, если схема классов представляет классы ПО, а ассоциации представляют указатели или ссылки. Но если схема классов представляет сущности и отношения или бизнес-концепции, возможность перехода показывать не обязательно. В таком случае можно изображать ассоциации без стрелок. Это можно сделать, **задав свойству для перемещения** значение true на обоих концах ассоциации.
 
 ### <a name="attributes-and-associations"></a>Атрибуты и ассоциации
  Ассоциация — это графический способ представления атрибута. Например, вместо того чтобы создавать класс "Ресторан" с атрибутом типа "Меню", можно создать ассоциацию из элементов "Ресторан" и "Меню".
@@ -360,16 +360,16 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Как правило, рекомендуется использовать атрибуты только для типов, которые не отображаются на схеме, например для типов-примитивов.
 
- ![Equivalent association and attributes](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
+ ![Эквивалентная ассоциация и атрибуты](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
 
 ## <a name="Inheritance"></a> Наследование
- Use the **Inheritance** tool to create the following relationships:
+ Используйте средство **наследования** , чтобы создать следующие связи.
 
-- A *generalization* relationship between a specialized type and a general type
+- Отношение *обобщения* между специализированным типом и общим типом
 
    \- или -
 
-- A *realization* relation between a class and an interface that it implements.
+- Отношение *реализации* между классом и интерфейсом, который он реализует.
 
   Невозможно создавать циклы в отношениях наследования.
 
@@ -386,11 +386,11 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
     Оно станет выделенным, и рядом с ним отобразится тег действия.
 
-2. Click the Action tag, and then click **Override Operations**.
+2. Щелкните тег действия, а затем нажмите кнопку **Переопределить операции**.
 
-    The **Override Operations** dialog box appears.
+    Откроется диалоговое окно **операции переопределения** .
 
-3. Select the operations that you want to appear in the specializing type, and then click **OK**.
+3. Выберите операции, которые должны отображаться в специализирующем типе, а затем нажмите кнопку **ОК**.
 
    Выделенные операции теперь отображаются в специализирующем типе.
 
@@ -399,78 +399,78 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  При создании соединителя реализации операции интерфейса автоматически реплицируются в реализующем классе. При добавлении в интерфейс новых операций они реплицируются в реализующих классах интерфейса.
 
- После создания отношения реализации можно преобразовать его в обозначение без описания операций. Right-click the relationship and choose **Show as Lollipop**.
+ После создания отношения реализации можно преобразовать его в обозначение без описания операций. Щелкните правой кнопкой мыши связь и выберите пункт **Показывать как интерфейс без описания операций**.
 
  Так можно показать интерфейсы, реализуемые классом, не усложняя схемы классов многочисленными ссылками реализации. Также на отдельных схемах можно показать интерфейс и реализующие его классы.
 
- ![Realization shown with conector and lollipop](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
+ ![Реализация, показанная с помощью соединителях и без описания операций](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
 
-## <a name="Templates"></a> Template Types
+## <a name="Templates"></a>Типы шаблонов
  Можно определить общий тип или тип шаблона, параметры которого задаются другими типами и значениями.
 
  Например, можно создать общий тип Dictionary, параметры которого задаются ключевыми типами и типами значений.
 
- ![Template class with two parameters](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
+ ![Класс шаблона с двумя параметрами](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
 
 #### <a name="to-create-a-template-type"></a>Создание типа шаблонов
 
 1. Создайте класс или интерфейс. Это ваш тип шаблонов. Присвойте ему соответствующее имя, например `Dictionary`.
 
-2. Open the shortcut menu for the new type, and then choose **Properties**.
+2. Откройте контекстное меню для нового типа и выберите пункт **Свойства**.
 
-3. In the **Properties** window, click **[…]** in the **Template Parameters** field.
+3. В окне **Свойства** в поле **Параметры шаблона** щелкните **[...]** .
 
-    The **Template Parameter Collection Editor** dialog box appears.
+    Откроется диалоговое окно **Редактор коллекции параметров шаблонов** .
 
 4. Выберите **Добавить**.
 
 5. В свойстве "Имя" задайте имя параметра для типа шаблонов, например `Key`.
 
-6. Set **Parameter Kind**. The default is **Class**.
+6. Задайте **тип параметра**. Значение по умолчанию — **Class**.
 
-7. If you want the parameter to accept only derived classes of a particular base class, set **Constrained Value** to the base class that you want.
+7. Если требуется, чтобы параметр принимал только производные классы определенного базового класса, установите для параметра **constrained значение с ограничением** на необходимый базовый класс.
 
-8. Add as many parameters as you need, then choose **OK**.
+8. Добавьте столько параметров, сколько требуется, а затем нажмите кнопку **ОК**.
 
 9. Добавьте атрибуты и операции в тип шаблонов так же, как при работе с другими классами.
 
-     You can use parameters whose kind is **Class**, **Interface** or **Enumeration** in the definition of attributes and operations. Например, используя классы параметров `Key` и `Value`, можно определить эту операцию в `Dictionary`.
+     В определении атрибутов и операций можно использовать параметры, имеющие тип " **класс**", " **интерфейс** " или " **перечисление** ". Например, используя классы параметров `Key` и `Value`, можно определить эту операцию в `Dictionary`.
 
      `Get(k : Key) : Value`
 
-     You can use a parameter whose kind is **Integer** as a bound in a multiplicity. Например, максимально допустимое значение параметра Integer можно использовать для определения кратности атрибута в виде `[0..max]`.
+     Можно использовать параметр, тип которого — **целое число** в виде границы в кратности. Например, максимально допустимое значение параметра Integer можно использовать для определения кратности атрибута в виде `[0..max]`.
 
    Созданные типы шаблонов можно использовать для определения привязок шаблонов.
 
-   ![A  class bound from the Dictionary template](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")
+   ![Класс, привязанный к шаблону словаря](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")
 
 #### <a name="to-use-a-template-type"></a>Использование типа шаблонов
 
 1. Создайте новый тип, например `AddressTable`.
 
-2. Open the shortcut menu for the new type, and then choose **Properties**.
+2. Откройте контекстное меню для нового типа и выберите пункт **Свойства**.
 
-3. In the **Template Binding** property, select the template type, for example `Dictionary`, from the drop-down list.
+3. В свойстве **Привязка шаблона** выберите тип шаблона, например `Dictionary`, из раскрывающегося списка.
 
-4. Expand the **Template Binding** property.
+4. Разверните свойство **Привязка шаблона** .
 
      Отображается строка для каждого параметра типа шаблонов.
 
 5. Задайте подходящее значение для каждого параметра. Например, задайте для параметра `Key` класс `Name`.
 
-## <a name="Packages"></a> Packages
+## <a name="Packages"></a>Пакеты
  На UML-схеме классов можно просматривать пакеты. Пакет — это контейнер для других элементов модели. Внутри пакета можно создать любой элемент. На схеме элементы внутри пакета перемещаются по схеме, если перемещается пакет.
 
  Чтобы скрыть или отобразить содержимое пакета, можно использовать элемент управления "развернуть/свернуть".
 
- See [Define packages and namespaces](../modeling/define-packages-and-namespaces.md).
+ См. раздел [Определение пакетов и пространств имен](../modeling/define-packages-and-namespaces.md).
 
-## <a name="generating"></a> Generating Code from UML Class Diagrams
+## <a name="generating"></a>Создание кода на основе схем классов UML
  Чтобы приступить к реализации классов на схеме классов UML, можно создать код C# или настроить шаблоны создания кода. Чтобы приступить к созданию кода с помощью предоставленных шаблонов C#:
 
-- Open the shortcut menu for the diagram or an element, choose **Generate Code**, and then set the necessary properties.
+- Откройте контекстное меню схемы или элемента, выберите команду **создать код**, а затем задайте необходимые свойства.
 
-     For more information about how to set these properties and customize the provided templates, see [Generate code from UML class diagrams](../modeling/generate-code-from-uml-class-diagrams.md).
+     Дополнительные сведения о настройке этих свойств и настройке предоставленных шаблонов см. в разделе [Создание кода на основе схем классов UML](../modeling/generate-code-from-uml-class-diagrams.md).
 
-## <a name="see-also"></a>См. также раздел
- [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [Model user requirements](../modeling/model-user-requirements.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)
+## <a name="see-also"></a>См. также
+ [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы классов UML: эталонная](../modeling/uml-class-diagrams-reference.md) [модель требования пользователей](../modeling/model-user-requirements.md) [UML-схемы компонентов: ссылки на](../modeling/uml-component-diagrams-reference.md) [UML-схемы последовательностей:](../modeling/uml-sequence-diagrams-reference.md) Справочник по схемам [вариантов использования](../modeling/uml-use-case-diagrams-reference.md) UML: Справочник по UML- [схемам компонентов](../modeling/uml-component-diagrams-reference.md) : справочные материалы

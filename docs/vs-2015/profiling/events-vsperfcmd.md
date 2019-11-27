@@ -88,7 +88,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 > [!IMPORTANT]
 > Так как события запуска не перечислены в MOF-файле, то если их не исключить, они отображаются в отчете в виде идентификаторов GUID. Дополнительные сведения см. на странице [Образец файла формата управляемого объекта (MOF)](https://go.microsoft.com/fwlink/?linkid=37118) веб-сайта корпорации Майкрософт.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Error: Ensure that DNS is Correctly Configured on the Target Computer | Microsoft Docs'
+title: 'Ошибка: Убедитесь, что на целевом компьютере правильно настроена служба DNS | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -38,4 +38,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Для получения дополнительных сведений посетите [веб-сайт Microsoft Windows](https://go.microsoft.com/fwlink/?LinkId=252720) и выполните поиск по ключевым словам **изменение параметров TCP/IP**.  
   
-  Если устранить неполадки DNS не удается, можно попробовать запустить удаленный отладчик с другой учетной записью. Эта ошибка возникает только при запуске удаленного отладчика с учетной записью локальной системы (Local System) или сетевой службы (Network Service) Если запустить удаленный отладчик с другой учетной записью, то для него может использоваться проверка подлинности NTLM, которая не требует использования DNS. . For the procedure, see [Error: The Visual Studio Remote Debugger service on the target computer cannot connect back to this computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Если устранить неполадки DNS не удается, можно попробовать запустить удаленный отладчик с другой учетной записью. Эта ошибка возникает только при запуске удаленного отладчика с учетной записью локальной системы (Local System) или сетевой службы (Network Service) Если запустить удаленный отладчик с другой учетной записью, то для него может использоваться проверка подлинности NTLM, которая не требует использования DNS. . Процедуру см. в разделе [Ошибка: служба Удаленный отладчик Visual Studio на целевом компьютере не может подключиться к этому компьютеру](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).

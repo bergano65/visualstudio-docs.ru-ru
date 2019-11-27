@@ -54,7 +54,7 @@ ms.locfileid: "74295695"
  График временной шкалы показывает колебания объема памяти, используемого выполняемым приложением. Пики на графике обычно указывают на то, что некоторый код собирает или создает данные, а после обработки удаляет их. Крупные пики обозначают области, которые вы, вероятно, сможете оптимизировать. Особое внимание следует уделять использованию памяти без ее возвращения, так как это может указывать на неэффективное использование памяти и даже на ее утечку.  
   
 ### <a name="BKMK_Close_a_monitoring_session"></a> Закрытие сеанса мониторинга  
- ![Stop collection](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
+ ![Останавливает сбор](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
   
  Чтобы остановить сеанс мониторинга без создания отчета, просто закройте окно диагностики. Чтобы создать отчет по полученным снимкам памяти, нажмите кнопку **Остановить**.  
   
@@ -124,7 +124,7 @@ ms.locfileid: "74295695"
 ## <a name="BKMK_Snapshot_details_reports"></a> Подробные отчеты о снимках  
  Подробный отчет о снимках позволяет вам сосредоточиться на одном снимке из сеанса диагностики. Чтобы открыть подробный отчет, выберите одну из ссылок в представлении снимков, как показано на следующем изображении. Обе ссылки открывают один и тот же отчет, единственное различие заключается в начальном порядке сортировки дерева **Управляемая куча** в этом отчете. В обоих случаях вы можете изменить порядок сортировки после открытия отчета.  
   
- ![Links to snapshot report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![Ссылки на моментальный снимок отчета в представлении моментальных снимков](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
 - Ссылка **МБ** сортирует отчет по столбцу **Инклюзивный размер (байт)** .  
   
@@ -145,14 +145,14 @@ ms.locfileid: "74295695"
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Дерево "Пути к корню" (сведения о снимке)  
  Дерево **Пути к корню** показывает цепочку объектов, ссылающихся на тип или экземпляр. Сборщик мусора .NET Framework очищает память для объекта только после освобождения всех ссылок на него.  
   
- ![Paths to Root tree for Types](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
+ ![Пути к корневому дереву для типов](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
  При просмотре типа в дереве **Пути к корню** число объектов тех типов, которые содержат ссылки на этот тип, отображается в столбце **Количество ссылок**. Этот столбец не отображается, когда вы анализируете экземпляр.  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Дерево "Объекты, на которые указывает ссылка" (сведения о снимке)  
  Дерево **Объекты, на которые указывает ссылка** показывает объекты, на которые ссылается выбранный тип или экземпляр.  
   
- ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![Обжжектс дерево ссылок для экземпляров](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -163,7 +163,7 @@ ms.locfileid: "74295695"
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> Разностные отчеты по снимкам (diff)  
  Разностный отчет по снимкам (diff) показывает изменения между основным снимком и снимком, полученным непосредственно перед ним. Чтобы открыть разностный отчет (diff), выберите одну из ссылок в представлении снимков, как показано на следующем изображении. Обе ссылки открывают один и тот же отчет, единственное различие заключается в начальном порядке сортировки дерева **Управляемая куча** в этом отчете. Вы можете изменить порядок сортировки после открытия отчета.  
   
- ![Links to difference report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
+ ![Ссылки на отчет о различиях в представлении моментальных снимков](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
 - Ссылка **МБ** сортирует отчет по столбцу **Инклюзивный размер (байт)** .  
   
@@ -189,12 +189,12 @@ ms.locfileid: "74295695"
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Дерево "Пути к корню" (разница между снимками)  
  Дерево **Пути к корню** показывает цепочку объектов, ссылающихся на тип или экземпляр. Сборщик мусора .NET Framework очищает память для объекта только после освобождения всех ссылок на него.  
   
- ![Paths To Root tree for instances in a diff view](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+ ![Пути к корневому дереву для экземпляров в представлении diff](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Дерево "Объекты, на которые указывает ссылка" (разница между снимками)  
  Дерево **Объекты, на которые указывает ссылка** показывает объекты, на которые ссылается основной тип или экземпляр.  
   
- ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![Обжжектс дерево ссылок для экземпляров](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -202,7 +202,7 @@ ms.locfileid: "74295695"
 |**Размер (байт)**|Для экземпляра — это размер объекта в основном снимке без учета размера объектов, содержащихся в этом экземпляре.<br /><br /> Для типа — это общий размер экземпляров типа в основном снимке без учета размера объектов, содержащихся в этом экземпляре.|  
 |**Инклюзивный размер (байт)**|Размер объектов в основном снимке с учетом размера объектов, содержащихся в этих объектах.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Память JavaScript](../profiling/javascript-memory.md)   
  [Анализ производительности приложений](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Запуск средств анализа производительности](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   

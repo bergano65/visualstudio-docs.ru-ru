@@ -1,5 +1,5 @@
 ---
-title: Binding Keyboard Shortcuts to Menu Items | Microsoft Docs
+title: Привязка сочетаний клавиш к пунктам меню | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -24,46 +24,46 @@ ms.locfileid: "74295613"
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Привязка сочетаний клавиш к пунктам меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-To bind a keyboard shortcut to a custom menu command, just add an entry to the .vsct file for the package. This topic explains how to map a keyboard shortcut to a custom button, menu item, or toolbar command, and how to apply the keyboard mapping in the default editor or limit it to a custom editor.  
+Чтобы привязать сочетание клавиш к команде пользовательского меню, просто добавьте запись в файл. vsct для пакета. В этом разделе объясняется, как сопоставить сочетание клавиш с пользовательской кнопкой, пунктом меню или командой панели инструментов, а также как применить сочетание клавиш в редакторе по умолчанию или ограничить его настраиваемым редактором.  
   
- To assign keyboard shortcuts to existing Visual Studio menu items, see [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+ Сведения о назначении сочетаний клавиш для существующих элементов меню Visual Studio см. в разделе [Определение и настройка](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)сочетаний клавиш.  
   
-## <a name="choosing-a-key-combination"></a>Choosing a Key Combination  
- Many keyboard shortcuts are already used in Visual Studio. You should not assign the same shortcut to more than one command because duplicate bindings are hard to detect and may also cause unpredictable results. Therefore, it is a good idea to verify the availability of a shortcut before you assign it.  
+## <a name="choosing-a-key-combination"></a>Выбор сочетания клавиш  
+ Многие сочетания клавиш уже используются в Visual Studio. Не следует назначать один и тот же ярлык нескольким командам, поскольку дублирование привязок сложно обнаружить, а также может привести к непредсказуемым результатам. Поэтому рекомендуется проверять доступность ярлыка перед его назначением.  
   
-#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>To verify the availability of a keyboard shortcut  
+#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Проверка доступности сочетания клавиш  
   
-1. In the **Tools / Options / Environment** window, select **Keyboard**.  
+1. В окне **Сервис/параметры/среда** выберите **Клавиатура**.  
   
-2. Make sure that **Use new shortcut in** is set to **Global**.  
+2. Убедитесь, что для параметра **использовать новый ярлык в** выбрано значение **Global**.  
   
-3. In the **Press shortcut keys** box, type the keyboard shortcut that you want to use.  
+3. В поле Ввод **сочетаний** клавиш введите сочетание клавиш, которое нужно использовать.  
   
-    If the shortcut is already used in Visual Studio, the **Shortcut currently used by** box will show the command that the shortcut currently calls.  
+    Если сочетание клавиш уже используется в Visual Studio, в диалоговом окне **сочетание клавиш в настоящий момент** будет отображаться команда, которая в данный момент вызывается.  
   
-4. Try different combinations of keys until you find one that is not mapped.  
+4. Попробуйте использовать разные сочетания ключей, пока не найдете тот, который не сопоставлен.  
   
    > [!NOTE]
-   > Keyboard shortcuts that use ALT may open a menu and not directly execute a command. Therefore, the **Shortcut currently used by** box may be blank when you type a shortcut that includes ALT. You can verify that the shortcut does not open a menu by closing the **Options** dialog box and then pressing the keys.  
+   > Сочетания клавиш, использующие ALT, могут открывать меню, а не выполнять команду напрямую. Таким образом, **сочетание клавиш, используемое в настоящий момент** в поле, может быть пустым при вводе ярлыка, включающего ALT. Можно проверить, что ярлык не открывает меню, закрыв диалоговое окно **Параметры** и нажав клавиши.  
   
-   The following procedure assumes that you have an existing VSPackage with a menu command. If you need help doing that, take a look at [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+   В следующей процедуре предполагается наличие существующего пакета VSPackage с командой меню. Если вам нужна помощь, ознакомьтесь с [созданием расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>To assign a keyboard shortcut to a command  
+#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Назначение сочетания клавиш команде  
   
-1. Open the .vsct file for your package.  
+1. Откройте файл. vsct для пакета.  
   
-2. Create an empty `<KeyBindings>` section after the `<Commands>` if it is not already present.  
+2. Создайте пустой раздел `<KeyBindings>` после `<Commands>`, если он еще не указан.  
   
    > [!WARNING]
-   > For more information about key bindings, see [Keybinding](../extensibility/keybinding-element.md).  
+   > Дополнительные сведения о привязках ключей см. в разделе [настраиваемое сочетание клавиш](../extensibility/keybinding-element.md).  
   
-    In the `<KeyBindings>` section, create a `<KeyBinding>` entry.  
+    В разделе `<KeyBindings>` создайте запись `<KeyBinding>`.  
   
-    Set the `guid`  and  `id` attributes to those of the command you want to invoke.  
+    Задайте атрибуты `guid` и `id` для тех, которые будут вызываться командой.  
   
-    Set the `mod1` attribute to **Control**, **Alt**, or **Shift**.  
+    Задайте для атрибута `mod1` значение **Control**, **ALT**или **SHIFT**.  
   
-    The KeyBindings section should look something like this:  
+    Раздел сочетания клавиш должен выглядеть примерно так:  
   
    ```xml  
    <KeyBindings>  
@@ -73,18 +73,18 @@ To bind a keyboard shortcut to a custom menu command, just add an entry to the .
   
    ```  
   
-   If your keyboard shortcut requires more than two keys, set the `mod2` and `key2` attributes.  
+   Если для сочетания клавиш требуется более двух ключей, задайте атрибуты `mod2` и `key2`.  
   
-   In most situations, **Shift** should not be used without a second modifier because pressing it already causes most alphanumeric keys to type an uppercase letter or a symbol.  
+   В большинстве случаев **SHIFT** не следует использовать без второго модификатора, так как при нажатии на него наиболее буквенно-цифровой ключ вводится прописная буква или символ.  
   
-   Virtual-key codes let you access special keys that do not have a character associated with them, for example, function keys and the **BACKSPACE** key. For more information, see [Virtual-Key Codes](https://go.microsoft.com/fwlink/?LinkID=105932).  
+   С помощью кодов виртуальных клавиш можно получить доступ к специальным ключам, которые не содержат связанных с ними символов, например, функциональных клавиш и клавиши **Backspace** . Дополнительные сведения см. в разделе [коды виртуальных клавиш](https://go.microsoft.com/fwlink/?LinkID=105932).  
   
-   To make the command available in the Visual Studio editor, set the `editor` attribute to `guidVSStd97`.  
+   Чтобы сделать команду доступной в редакторе Visual Studio, присвойте атрибуту `editor` значение `guidVSStd97`.  
   
-   To make the command available only in a custom editor, set the `editor` attribute to the name of the custom editor that was generated by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package Template when you created the VSPackage that includes the custom editor. To find the name value, look in the `<Symbols>` section for a `<GuidSymbol>` node whose `name` attribute ends in "`editorfactory`." This is the name of the custom editor.  
+   Чтобы команда была доступна только в пользовательском редакторе, присвойте атрибуту `editor` имя пользовательского редактора, созданного с помощью шаблона пакета [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], при создании VSPackage, включающего пользовательский редактор. Чтобы найти значение имени, просмотрите раздел `<Symbols>` для `<GuidSymbol>` узла, атрибут `name` которого заканчивается на "`editorfactory`". Это имя пользовательского редактора.  
   
 ## <a name="example"></a>Пример  
- This example binds the keyboard shortcut CTRL+ALT+C to a command named `cmdidMyCommand` in a package named `MyPackage`.  
+ В этом примере сочетание клавиш CTRL + ALT + C привязывается к команде с именем `cmdidMyCommand` в пакете с именем `MyPackage`.  
   
 ```  
 <CommandTable>  
@@ -101,11 +101,11 @@ To bind a keyboard shortcut to a custom menu command, just add an entry to the .
 ```  
   
 ## <a name="example"></a>Пример  
- This example binds the keyboard shortcut CTL+B to a command named `cmdidBold` in a project named `TestEditor`. The command is available only in the custom editor and not in other editors.  
+ В этом примере сочетание клавиш CTL + B привязывается к команде с именем `cmdidBold` в проекте с именем `TestEditor`. Команда доступна только в пользовательском редакторе, а не в других редакторах.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)

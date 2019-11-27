@@ -1,5 +1,5 @@
 ---
-title: Visualize code | Microsoft Docs
+title: Визуализация кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,7 +23,7 @@ ms.locfileid: "74301320"
 # <a name="visualize-code"></a>Визуализация кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Пример:
+Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Пример.
 
 - Чтобы понять связи в коде, сопоставьте их визуально.
 
@@ -41,10 +41,10 @@ ms.locfileid: "74301320"
 
 |||
 |-|-|
-|**Understand code and its relationships:**<br /><br /> Установите связи между определенными частями кода.<br /><br /> Получите общие сведения о связях в коде для всего решения.<br /><br /> **Примечание**. В этой версии Visual Studio термин *карта кода* используется вместо *графа зависимостей*.|-   [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Use code maps to debug your applications](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Find potential problems using code map analyzers](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
-|**Understand class structures:**<br /><br /> Визуализируйте структуру классов в проекте путем создания схем классов на основе кода.|[Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Describe the high-level system design and validate code against this design:**<br /><br /> Опишите высокоуровневую структуру системы и ее предполагаемые зависимости, создав схемы слоев. Проверьте код на соответствие этой структуре, чтобы убедиться в том, что зависимости в коде согласованы с ней.|-   [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md)<br />-   [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)<br />-   [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md)|
-|**Communicate the user requirements and architecture:**<br /><br /> Смоделируйте требования пользователей и архитектуру программной системы, нарисовав схемы UML: схемы деятельности, компонентов, классов, последовательностей и вариантов использования.|-   [Create models for your app](../modeling/create-models-for-your-app.md)<br />-   [Model user requirements](../modeling/model-user-requirements.md)<br />-   [Model your app's architecture](../modeling/model-your-app-s-architecture.md)|
+|**Общие сведения о коде и его связях:**<br /><br /> Установите связи между определенными частями кода.<br /><br /> Получите общие сведения о связях в коде для всего решения.<br /><br /> **Примечание**. В этой версии Visual Studio термин *карта кода* используется вместо *графа зависимостей*.|-   [сопоставлять зависимости в решениях](../modeling/map-dependencies-across-your-solutions.md)<br />-   [использования карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [методы Map в стеке вызовов во время отладки](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Общие сведения о структурах классов:**<br /><br /> Визуализируйте структуру классов в проекте путем создания схем классов на основе кода.|[Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
+|**Опишите архитектуру высокоуровневой системы и проверяйте код в соответствии с этим дизайном:**<br /><br /> Опишите высокоуровневую структуру системы и ее предполагаемые зависимости, создав схемы слоев. Проверьте код на соответствие этой структуре, чтобы убедиться в том, что зависимости в коде согласованы с ней.|-   [создания схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)<br />-   [схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)<br />-   [проверки кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md)|
+|**Сообщите требования и архитектуру пользователя:**<br /><br /> Смоделируйте требования пользователей и архитектуру программной системы, нарисовав схемы UML: схемы деятельности, компонентов, классов, последовательностей и вариантов использования.|-   [создания моделей для приложения](../modeling/create-models-for-your-app.md)<br />[требования к пользователям модели](../modeling/model-user-requirements.md) -   <br />-   [модель архитектуры приложения](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
@@ -52,7 +52,7 @@ ms.locfileid: "74301320"
 |------------------|---------------|
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Технические статьи и журналы**|[MSDN Architecture Forum](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Технические статьи и журналы**|[Форум MSDN по архитектуре](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>См. также раздел
- [Scenario: Change your design using visualization and modeling](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [Analyzing and Modeling Architecture](../modeling/analyze-and-model-your-architecture.md) [Create models for your app](../modeling/create-models-for-your-app.md) [Model user requirements](../modeling/model-user-requirements.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [Use models in your development process](../modeling/use-models-in-your-development-process.md)
+## <a name="see-also"></a>См. также
+ [Сценарий. изменение структуры с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [архитектура и архитектурное моделирование](../modeling/analyze-and-model-your-architecture.md) [Создание моделей для вашей модели приложения](../modeling/create-models-for-your-app.md) [требования пользователя](../modeling/model-user-requirements.md) [модель модели](../modeling/model-your-app-s-architecture.md) приложения [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

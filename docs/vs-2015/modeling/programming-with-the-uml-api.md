@@ -1,5 +1,5 @@
 ---
-title: Programming with the UML API | Microsoft Docs
+title: Программирование с помощью API UML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,13 +22,13 @@ ms.locfileid: "74296055"
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The UML API of Visual Studio lets you write code to create, read, and update UML models and diagrams. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+API-интерфейс UML Visual Studio позволяет писать код для создания, чтения и обновления моделей и схем UML. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  API описывается на страницах справочных материалов об API и в следующих разделах.
 
 |Раздел|Примеры описываемых типов и методов|Описываемые функции|
 |-----------|-----------------------------------------|------------------------|
-|[Переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-элементы, их свойства и ассоциации. Например, IElement и его потомки, включая IClass, IActivity, IUseCase, IComponent, IInteraction, IModel и IPackage.|In Visual Studio, UML models conform to the UML specification version 2.1.2, which can be obtained at the [UML Resource Page](https://go.microsoft.com/fwlink/?LinkId=160796). Каждый тип является интерфейсом, имя которого совпадает с именем типа UML с префиксом "I".|
+|[Переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-элементы, их свойства и ассоциации. Например, IElement и его потомки, включая IClass, IActivity, IUseCase, IComponent, IInteraction, IModel и IPackage.|В Visual Studio модели UML соответствуют спецификации UML версии 2.1.2, которую можно получить на [странице ресурсов UML](https://go.microsoft.com/fwlink/?LinkId=160796). Каждый тип является интерфейсом, имя которого совпадает с именем типа UML с префиксом "I".|
 |[Создание элементов и отношений в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Каждый тип элемента имеет методы для создания дочерних элементов.|
 |[Отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Каждый элемент в модели может быть представлен в виде фигуры на схеме. В некоторых случаях можно создавать новые фигуры для каждого объекта. Эти фигуры можно перемещать, сворачивать или разворачивать, а также изменять их размер и цвет.|
 |[Навигация по модели UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Модель хранится в хранилище моделей.<br /><br /> Контекст схемы предоставляет доступ к текущей схеме и хранилищу.|
@@ -54,19 +54,19 @@ The UML API of Visual Studio lets you write code to create, read, and update UML
 |Assembly|Пространства имен|К чему предоставляет доступ|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(Все)|Типы UML.|
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml|[Creation methods](../modeling/create-elements-and-relationships-in-uml-models.md)|
-||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagrams and Shapes](../modeling/display-a-uml-model-on-diagrams.md)|
-||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[The modeling project](../modeling/read-a-uml-model-in-program-code.md)|
-|Microsoft.VisualStudio.Modeling.Sdk.[версия]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Menu command extension](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Linked Undo transactions](../modeling/link-uml-model-updates-by-using-transactions.md).|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. Арчитектуретулс. Extensibility. UML|[Методы создания](../modeling/create-elements-and-relationships-in-uml-models.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Схемы и фигуры](../modeling/display-a-uml-model-on-diagrams.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[Проект моделирования](../modeling/read-a-uml-model-in-program-code.md)|
+|Microsoft.VisualStudio.Modeling.Sdk.[версия]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Расширение команды меню](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Связанные транзакции отмены](../modeling/link-uml-model-updates-by-using-transactions.md).|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[Проверка](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(другие пространства имен)|Рекомендуется только для опытных пользователей.|
-|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[Gesture handlers](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).|
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[Обработчики жестов](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).|
 ||(другие пространства имен)|Рекомендуется только для опытных пользователей.|
-|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Links to work items](../modeling/define-a-work-item-link-handler.md).|
-|Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Work items and their fields](../modeling/define-a-work-item-link-handler.md).|
-|Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Work items and their fields](../modeling/define-a-work-item-link-handler.md).|
-|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Export and Import for MEF components](../modeling/define-and-install-a-modeling-extension.md)|
-|System.Linq|<xref:System.Linq>|[Easy manipulation of collections, especially when dealing with relationships](../modeling/navigate-relationships-with-the-uml-api.md).|
+|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Ссылки на рабочие элементы](../modeling/define-a-work-item-link-handler.md).|
+|Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Рабочие элементы и их поля](../modeling/define-a-work-item-link-handler.md).|
+|Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Рабочие элементы и их поля](../modeling/define-a-work-item-link-handler.md).|
+|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Экспорт и импорт для компонентов MEF](../modeling/define-and-install-a-modeling-extension.md)|
+|System.Linq|<xref:System.Linq>|[Простота управления коллекциями, особенно при работе с связями](../modeling/navigate-relationships-with-the-uml-api.md).|
 
-## <a name="see-also"></a>См. также раздел
- [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [API Reference for UML Modeling Extensibility](../modeling/api-reference-for-uml-modeling-extensibility.md)
+## <a name="see-also"></a>См. также
+ [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Справочник по API для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

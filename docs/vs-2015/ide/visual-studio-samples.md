@@ -1,5 +1,5 @@
 ---
-title: Samples | Microsoft Docs
+title: Примеры | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,7 +18,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74296848"
 ---
-# <a name="visual-studio-samples"></a>Примеры Visual Studio
+# <a name="visual-studio-samples"></a>Visual Studio Samples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Примеры Visual Studio можно найти на веб-сайте [Галерея кода MSDN](https://go.microsoft.com/fwlink/?LinkID=127810) .
@@ -41,5 +41,5 @@ ms.locfileid: "74296848"
 |[Примеры разработки решений Office](https://docs.microsoft.com/samples/browse/?products=office)|Показывает способы использования средств разработки Office в Visual Studio. Наиболее актуальные примеры см. в разделе [Примеры разработчиков MSDN: сведения о коде](https://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Примеры VSSDK](https://aka.ms/vs2015sdksamples)|Описание способов расширения Visual Studio.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Начало работы с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

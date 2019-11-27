@@ -1,5 +1,5 @@
 ---
-title: 'How to: Install a Visualizer | Microsoft Docs'
+title: Руководство. Установка визуализатора | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,35 +28,35 @@ ms.locfileid: "74491304"
 После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Установка визуализатора — это простой процесс.
 
 > [!NOTE]
-> In UWP apps, only the standard text, HTML, XML, and JSON visualizers are supported. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.
+> В приложениях UWP поддерживаются только стандартные визуализаторы Text, HTML, XML и JSON. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.
 
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>To install a visualizer for Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Установка визуализатора для Visual Studio 2019
   
 1. Найдите библиотеку DLL, содержащую построенный визуализатор.
 
-2. Copy the [Debugger Side](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL to either of the following locations:
+2. Скопируйте DLL-библиотеку на [стороне отладчика](create-custom-visualizers-of-data.md#to-create-the-debugger-side) в любое из следующих расположений:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copy the [Debuggee Side](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) DLL to either of the following locations:
+3. Скопируйте библиотеку DLL [отлаживаемого](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) объекта в любое из следующих расположений:
 
-    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
+    - *Висуалстудиоинсталлпас* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
 
-    Where *Framework* is either:
-    - `net2.0` for debuggees running the `.NET Framework` runtime.
-    - `netstandard2.0` for debuggees using a runtime that supports `netstandard 2.0` (`.NET Framework v4.6.1+` or `.NET Core 2.0+`).
-    - `netcoreapp` for debuggees running the `.NET Core` runtime. (supports `.NET Core 2.0+`)
+    Где *платформа* является одной из следующих:
+    - `net2.0` для дебугжеес, на котором запущена среда выполнения `.NET Framework`.
+    - `netstandard2.0` для дебугжеес с использованием среды выполнения, поддерживающей `netstandard 2.0` (`.NET Framework v4.6.1+` или `.NET Core 2.0+`).
+    - `netcoreapp` для дебугжеес, на котором запущена среда выполнения `.NET Core`. (поддерживает `.NET Core 2.0+`)
 
 4. Перезапустите сеанс отладки.
 
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>To install a visualizer for Visual Studio 2017 and older
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Установка визуализатора для Visual Studio 2017 и более ранних версий
 
 > [!IMPORTANT]
-> Only .NET Framework visualizers are supported in Visual Studio 2017 and older
+> В Visual Studio 2017 и более ранних версиях поддерживаются только визуализаторы .NET Framework
 
 1. Найдите библиотеку DLL, содержащую построенный визуализатор.
 

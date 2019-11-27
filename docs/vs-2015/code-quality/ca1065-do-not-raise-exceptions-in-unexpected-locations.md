@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: Do not raise exceptions in unexpected locations | Microsoft Docs'
+title: 'CA1065: не вызывайте исключения в непредвиденных расположениях | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -29,111 +29,111 @@ ms.locfileid: "74295944"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
  Метод вызывает исключение, хотя не должен этого делать.
 
 ## <a name="rule-description"></a>Описание правила
- Methods that are not expected to throw exceptions can be categorized as follows:
+ Методы, которые не должны вызывать исключения, можно классифицировать следующим образом:
 
-- Property Get Methods
+- Методы получения свойств
 
 - Методы доступа к событиям
 
-- Equals Methods
+- Методы Equals
 
-- GetHashCode Methods
+- Методы GetHashCode
 
-- ToString Methods
+- Методы ToString
 
 - Статические конструкторы
 
 - Методы завершения
 
-- Dispose Methods
+- Методы Dispose
 
 - Операторы равенства
 
-- Implicit Cast Operators
+- Операторы неявного приведения
 
-  The following sections discuss these method types.
+  Эти типы методов обсуждаются в следующих разделах.
 
-### <a name="property-get-methods"></a>Property Get Methods
- Properties are basically smart fields. Therefore, they should behave like a field as much as possible. Fields do not throw exceptions and neither should properties. If you have a property that throws an exception, consider making it a method.
+### <a name="property-get-methods"></a>Методы получения свойств
+ Свойства — это, по сути, интеллектуальные поля. Поэтому они должны вести себя как поле как можно больше. Поля не создают исключений, и ни одно из них не должно быть свойством. Если у вас есть свойство, вызывающее исключение, рассмотрите возможность сделать его методом.
 
- The following exceptions are allowed to be thrown from a property get method:
+ Следующие исключения могут быть вызваны из метода Get свойства:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
 
-- <xref:System.ArgumentException?displayProperty=fullName> (only from indexed get)
+- <xref:System.ArgumentException?displayProperty=fullName> (только из индексированного получения)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (only from indexed get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (только из индексированного получения)
 
 ### <a name="event-accessor-methods"></a>Методы доступа к событиям
- Event accessors should be simple operations that do not throw exceptions. An event should not throw an exception when you try to add or remove an event handler.
+ Методы доступа к событиям должны быть простыми операциями, которые не создают исключения. При попытке добавления или удаления обработчика событий событие не должно вызывать исключение.
 
- The following exceptions are allowed to be thrown from an event accesor:
+ Следующие исключения могут вызываться из акцесор событий:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
 
-- <xref:System.ArgumentException> and derivatives
+- <xref:System.ArgumentException> и производные
 
-### <a name="equals-methods"></a>Equals Methods
- The following **Equals** methods should not throw exceptions:
+### <a name="equals-methods"></a>Методы Equals
+ Следующие методы **Equals** не должны вызывать исключения.
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
+- [м:иекуатабле.екуалс](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  An **Equals** method should return `true` or `false` instead of throwing an exception. For example, if Equals is passed two mismatched types it should just return `false` instead of throwing an <xref:System.ArgumentException>.
+  Метод **Equals** должен возвращать `true` или `false` вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен просто возвращать `false` вместо создания <xref:System.ArgumentException>.
 
-### <a name="gethashcode-methods"></a>GetHashCode Methods
- The following **GetHashCode** methods should usually not throw exceptions:
+### <a name="gethashcode-methods"></a>Методы GetHashCode
+ Следующие методы **GetHashCode** обычно должны не создавать исключения:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [М:иекуалитикомпарер.жесашкоде (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
-  **GetHashCode** should always return a value. Otherwise, you can lose items in the hash table.
+  **GetHashCode** всегда должен возвращать значение. В противном случае можно потерять элементы в хэш-таблице.
 
-  The versions of **GetHashCode** that take an argument can throw an <xref:System.ArgumentException>. However, **Object.GetHashCode** should never throw an exception.
+  Версии **GetHashCode** , которые принимают аргумент, могут вызывать <xref:System.ArgumentException>. Однако **Object. GetHashCode** никогда не должен вызывать исключение.
 
-### <a name="tostring-methods"></a>ToString Methods
- The debugger uses <xref:System.Object.ToString%2A?displayProperty=fullName> to help display information about objects in string format. Therefore, **ToString** should not change the state of an object and it should not throw exceptions.
+### <a name="tostring-methods"></a>Методы ToString
+ Отладчик использует <xref:System.Object.ToString%2A?displayProperty=fullName> для просмотра сведений об объектах в строковом формате. Таким образом, **метод ToString** не должен изменять состояние объекта и не должен вызывать исключения.
 
 ### <a name="static-constructors"></a>Статические конструкторы
- Throwing exceptions from a static constructor causes the type to be unusable in the current application domain. You should have a very good reason (such as a security issue) for throwing an exception from a static constructor.
+ Создание исключений из статического конструктора приводит к тому, что тип будет непригоден для использования в текущем домене приложения. У вас должна быть очень хорошая причина (например, проблемы с безопасностью) для генерации исключения из статического конструктора.
 
 ### <a name="finalizers"></a>Методы завершения
- Throwing an exception from a finalizer causes the CLR to fail fast, which tears down the process. Therefore, throwing exceptions in a finalizer should always be avoided.
+ Создание исключения из метода завершения приводит к тому, что среда CLR быстро завершает работу, что слезамиет процесс. Поэтому всегда следует избегать генерации исключений в методе завершения.
 
-### <a name="dispose-methods"></a>Dispose Methods
- A <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method should not throw an exception. Dispose is often called as part of the clean up logic in a `finally` clause. Therefore, explicitly throwing an exception from Dispose forces the user to add exception handling inside the `finally` clause.
+### <a name="dispose-methods"></a>Методы Dispose
+ Метод <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> не должен вызывать исключение. Метод Dispose часто вызывается как часть логики очистки в предложении `finally`. Таким образом, явное создание исключения из Dispose приводит к тому, что пользователь добавляет обработку исключений в предложение `finally`.
 
- The **Dispose(false)** code path should never throw exceptions, because this is almost always called from a finalizer.
+ Путь кода **Dispose (false)** никогда не должен вызывать исключения, так как этот метод почти всегда вызывается методом завершения.
 
-### <a name="equality-operators--"></a>Equality Operators (==, !=)
- Like Equals methods, equality operators should return either `true` or `false` and should not throw exceptions.
+### <a name="equality-operators--"></a>Операторы равенства (= =,! =)
+ Как и методы Equals, операторы равенства должны возвращать либо `true`, либо `false` и не должны вызывать исключения.
 
-### <a name="implicit-cast-operators"></a>Implicit Cast Operators
- Because the user is often unaware that an implicit cast operator has been called, an exception thrown by the implicit cast operator is completely unexpected. Therefore, no exceptions should be thrown from implicit cast operators.
+### <a name="implicit-cast-operators"></a>Операторы неявного приведения
+ Поскольку пользователь часто не знает, что был вызван неявный оператор приведения, исключение, созданное неявным оператором приведения, является полностью непредвиденным. Поэтому исключения не должны вызываться из неявных операторов приведения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- For property getters, either change the logic so that it no longer has to throw an exception, or change the property into a method.
+ Для методов получения свойств либо измените логику так, чтобы она больше не вызывала исключение, либо измените свойство в методе.
 
- For all other method types listed previously, change the logic so that it no longer must throw an exception.
+ Для всех других типов методов, перечисленных ранее, измените логику так, чтобы она больше не вызывала исключение.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- It is safe to suppress a warning from this rule if the violation was caused by an exception declaration instead of a thrown exception.
+ Предупреждение из этого правила можно отключить, если нарушение было вызвано объявлением исключения вместо выданного исключения.
 
-## <a name="related-rules"></a>Related Rules
+## <a name="related-rules"></a>Связанные правила
  [CA2219: не создавайте исключения в предложениях исключений](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Предупреждения конструктора](../code-quality/design-warnings.md)

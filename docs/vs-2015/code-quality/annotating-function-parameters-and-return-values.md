@@ -1,5 +1,5 @@
 ---
-title: Annotating Function Parameters and Return Values | Microsoft Docs
+title: Добавление заметок к параметрам и возвращаемым значениям функции | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -136,76 +136,76 @@ ms.locfileid: "74295858"
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This article describes typical uses of annotations for simple function parameters—scalars, and pointers to structures and classes—and most kinds of buffers.  This article also shows common usage patterns for annotations. For additional annotations that are related to functions, see [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)  
+В этой статье описывается типичное использование заметок для простых параметров функции — скаляров и указателей на структуры и классы — и большинства типов буферов.  В этой статье также показаны распространенные шаблоны использования для заметок. Дополнительные примечания, связанные с функциями, см. в разделе [Аннотирование поведения функций](../code-quality/annotating-function-behavior.md) .  
   
-## <a name="pointer-parameters"></a>Pointer Parameters  
- For the annotations in the following table, when a pointer parameter is being annotated, the analyzer reports an error if the pointer is null.  This applies to pointers and to any data item that's pointed to.  
+## <a name="pointer-parameters"></a>Параметры указателя  
+ Для заметок в следующей таблице анализатор сообщает об ошибке, если указатель имеет значение null.  Это относится к указателям и к любому элементу данных, на который указывает.  
   
- **Annotations and Descriptions**  
+ **Аннотации и описания**  
   
 - `_In_`  
   
-     Annotates input parameters that are scalars, structures, pointers to structures and the like.  Explicitly may be used on simple scalars.  The parameter must be valid in pre-state and will not be modified.  
+     Закомментировать входные параметры, которые являются скалярными, структурами, указателями на структуры и т. д.  Явно можно использовать для простых скаляров.  Параметр должен быть допустимым в предварительном состоянии и не будет изменен.  
   
 - `_Out_`  
   
-     Annotates output parameters that are scalars, structures, pointers to structures and the like.  Do not apply this to an object that cannot return a value—for example, a scalar that's passed by value.  The parameter does not have to be valid in pre-state but must be valid in post-state.  
+     Закомментировать выходные параметры, которые являются скалярными, структурами, указателями на структуры и т. д.  Не применяйте этот метод к объекту, который не может возвращать значение, например скаляр, передаваемый по значению.  Параметр не обязательно должен быть допустимым в предварительном состоянии, но должен быть допустимым в состоянии после.  
   
 - `_Inout_`  
   
-     Annotates a parameter that will be changed by the function.  It must be valid in both pre-state and post-state, but is assumed to have different values before and after the call. Must apply to a modifiable value.  
+     Заметка параметра, который будет изменен функцией.  Он должен быть допустимым как в предварительном, так и после состояния, но предполагается, что они имеют разные значения до и после вызова. Необходимо применить к изменяемому значению.  
   
 - `_In_z_`  
   
-     A pointer to a null-terminated string that's used as input.  The string must be valid in pre-state.  Variants of `PSTR`, which already have the correct annotations, are preferred.  
+     Указатель на строку, завершающуюся нулем, которая используется в качестве входных данных.  Строка должна быть допустимой в предварительном состоянии.  Предпочтительными являются варианты `PSTR`, которые уже имеют нужные заметки.  
   
 - `_Inout_z_`  
   
-     A pointer to a null-terminated character array that will be modified.  It must be valid before and after the call, but the value is assumed to have changed.  The null terminator may be moved, but only the elements up to the original null terminator may be accessed.  
+     Указатель на массив символов, заканчивающийся нулем, который будет изменен.  Он должен быть допустимым до и после вызова, но предполагается, что значение изменилось.  Конечный символ NULL можно переместить, но доступ к элементам может осуществляться только до исходного нулевого терминатора.  
   
 - `_In_reads_(s)`  
   
      `_In_reads_bytes_(s)`  
   
-     A pointer to an array, which is read by the function.  The array is of size `s` elements, all of which must be valid.  
+     Указатель на массив, который считывается функцией.  Массив имеет размер `s` элементов, все из которых должны быть допустимыми.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` Variant предоставляет размер в байтах, а не в элементах. Используйте этот параметр только в том случае, если размер не может быть выражен как элемент.  Например, `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичная функция, использующая `wchar_t`, будет.  
   
 - `_In_reads_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  
+     Указатель на массив, заканчивающийся нулем и имеющий известный размер. Элементы вплоть до нулевого терминатора — или `s`, если нет терминатора NULL — должны быть допустимы в предварительном состоянии.  Если размер известен в байтах, масштабирование `s` по размеру элемента.  
   
 - `_In_reads_or_z_(s)`  
   
-     A pointer to an array that is null-terminated or has a known size, or both. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  (Used for the `strn` family.)  
+     Указатель на массив, заканчивающийся нулем или имеющий известный размер или оба. Элементы вплоть до нулевого терминатора — или `s`, если нет терминатора NULL — должны быть допустимы в предварительном состоянии.  Если размер известен в байтах, масштабирование `s` по размеру элемента.  (Используется для семейства `strn`.)  
   
 - `_Out_writes_(s)`  
   
      `_Out_writes_bytes_(s)`  
   
-     A pointer to an array of `s` elements (resp. bytes) that will be written by the function.  The array elements do not have to be valid in pre-state, and the number of elements that are valid in post-state is unspecified.  If there are annotations on the parameter type, they are applied in post-state. Например, рассмотрим следующий код.  
+     Указатель на массив элементов `s` (отв. bytes), которые будут записаны функцией.  Элементы массива не обязательно должны быть допустимы в предварительном состоянии, а количество элементов, допустимых в состоянии после, не указано.  Если в типе параметра есть аннотации, они применяются в состоянии после. Например, рассмотрим следующий код.  
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     In this example, the caller provides a buffer of `size` elements for `p1`.  `MyStringCopy` makes some of those elements valid. More importantly, the `_Null_terminated_` annotation on `PWSTR` means that `p1` is null-terminated in post-state.  In this way, the number of valid elements is still well-defined, but a specific element count is not required.  
+     В этом примере вызывающий объект предоставляет буфер `size` элементов для `p1`.  `MyStringCopy` делает некоторые из этих элементов допустимыми. Что более важно, `_Null_terminated_` Аннотация в `PWSTR` означает, что `p1` завершается нулем в состоянии после.  Таким образом, количество допустимых элементов по-прежнему четко определено, но определенный счетчик элементов не требуется.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` Variant предоставляет размер в байтах, а не в элементах. Используйте этот параметр только в том случае, если размер не может быть выражен как элемент.  Например, `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичная функция, использующая `wchar_t`, будет.  
   
 - `_Out_writes_z_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up through the null terminator—which must be present—must be valid.  If the size is known in bytes, scale `s` by the element size.  
+     Указатель на массив элементов `s`.  Элементы не обязательно должны быть допустимыми в предварительном состоянии.  В состоянии после состояния элементы, находящиеся вплоть до конца null, должны быть допустимыми.  Если размер известен в байтах, масштабирование `s` по размеру элемента.  
   
 - `_Inout_updates_(s)`  
   
      `_Inout_updates_bytes_(s)`  
   
-     A pointer to an array, which is both read and written to in the function.  It is of size `s` elements, and valid in pre-state and post-state.  
+     Указатель на массив, который считывается и записывается в функцию.  Он имеет размер `s` элементов и является допустимым в предварительном и поступающем состояниях.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` Variant предоставляет размер в байтах, а не в элементах. Используйте этот параметр только в том случае, если размер не может быть выражен как элемент.  Например, `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичная функция, использующая `wchar_t`, будет.  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Указатель на массив, заканчивающийся нулем и имеющий известный размер. Элементы вплоть до нулевого терминатора, который должен присутствовать, должны быть допустимыми как перед, так и после состояния.  Предполагается, что значение в состоянии после состояния отличается от значения в предварительном состоянии; Сюда входит расположение терминатора null. Если размер известен в байтах, масштабирование `s` по размеру элемента.  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -215,11 +215,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     Указатель на массив элементов `s`.  Элементы не обязательно должны быть допустимыми в предварительном состоянии.  В состоянии после состояния элементы, наравные элементу `c`-th, должны быть допустимыми.  Если размер известен в байтах, масштабируйте `s` и `c` по размеру элемента или используйте вариант `_bytes_`, который определяется следующим образом:  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  Пример:  
+     Иными словами, каждый элемент, существующий в буфере вплоть до `s` в предварительном состоянии, является допустимым в состоянии после.  Пример.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -227,13 +227,13 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     Указатель на массив, который считывается и записывается функцией.  Он имеет размер `s` элементов, все из которых должны быть допустимы в предварительном состоянии, а `c` элементы должны быть допустимыми в состоянии после.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` Variant предоставляет размер в байтах, а не в элементах. Используйте этот параметр только в том случае, если размер не может быть выражен как элемент.  Например, `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичная функция, использующая `wchar_t`, будет.  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Указатель на массив, заканчивающийся нулем и имеющий известный размер. Элементы вплоть до нулевого терминатора, который должен присутствовать, должны быть допустимыми как перед, так и после состояния.  Предполагается, что значение в состоянии после состояния отличается от значения в предварительном состоянии; Сюда входит расположение терминатора null. Если размер известен в байтах, масштабирование `s` по размеру элемента.  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -243,11 +243,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     Указатель на массив элементов `s`.  Элементы не обязательно должны быть допустимыми в предварительном состоянии.  В состоянии после состояния элементы, наравные элементу `c`-th, должны быть допустимыми.  Если размер известен в байтах, масштабируйте `s` и `c` по размеру элемента или используйте вариант `_bytes_`, который определяется следующим образом:  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  Пример:  
+     Иными словами, каждый элемент, существующий в буфере вплоть до `s` в предварительном состоянии, является допустимым в состоянии после.  Пример.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -255,72 +255,72 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     Указатель на массив, который считывается и записывается функцией.  Он имеет размер `s` элементов, все из которых должны быть допустимы в предварительном состоянии, а `c` элементы должны быть допустимыми в состоянии после.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` Variant предоставляет размер в байтах, а не в элементах. Используйте этот параметр только в том случае, если размер не может быть выражен как элемент.  Например, `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичная функция, использующая `wchar_t`, будет.  
   
 - `_Inout_updates_all_(s)`  
   
      `_Inout_updates_bytes_all_(s)`  
   
-     A pointer to an array, which is both read and written by the function of size `s` elements. Defined as equivalent to:  
+     Указатель на массив, который считывается и записывается функцией размера `s` элементов. Определяется как эквивалент:  
   
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the pre-state and post-state.  
+     Иными словами, каждый элемент, существующий в буфере вплоть до `s` в предварительном состоянии, является допустимым в предварительном состоянии и после состояния.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` Variant предоставляет размер в байтах, а не в элементах. Используйте этот параметр только в том случае, если размер не может быть выражен как элемент.  Например, `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичная функция, использующая `wchar_t`, будет.  
   
 - `_In_reads_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     Указатель на массив, для которого выражение `p` – `_Curr_` (то есть `p` минус `_Curr_`) определяется соответствующим стандартом языка.  Элементы до `p` должны быть допустимы в предварительном состоянии.  
   
 - `_In_reads_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     Указатель на массив, заканчивающийся нулем, для которого выражение `p` – `_Curr_` (то есть `p` минус `_Curr_`) определяется соответствующим стандартом языка.  Элементы до `p` должны быть допустимы в предварительном состоянии.  
   
 - `_Out_writes_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     Указатель на массив, для которого выражение `p` – `_Curr_` (то есть `p` минус `_Curr_`) определяется соответствующим стандартом языка.  Элементы до `p` не обязательно должны быть допустимыми в предварительном состоянии и должны быть допустимы в состоянии после.  
   
 - `_Out_writes_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     Указатель на массив, заканчивающийся нулем, для которого выражение `p` – `_Curr_` (то есть `p` минус `_Curr_`) определяется соответствующим стандартом языка.  Элементы до `p` не обязательно должны быть допустимыми в предварительном состоянии и должны быть допустимы в состоянии после.  
   
-## <a name="optional-pointer-parameters"></a>Optional Pointer Parameters  
- When a pointer parameter annotation includes `_opt_`, it indicates that the parameter may be null. Otherwise, the annotation performs the same as the version that doesn't include `_opt_`. Here is a list of the `_opt_` variants of the pointer parameter annotations:  
+## <a name="optional-pointer-parameters"></a>Необязательные параметры указателя  
+ Если заметка параметра указателя включает `_opt_`, это означает, что параметр может иметь значение null. В противном случае аннотация выполняется так же, как и версия, которая не содержит `_opt_`. Ниже приведен список `_opt_` вариантов заметок к параметрам указателя:  
   
 ||||  
 |-|-|-|  
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|  
   
-## <a name="output-pointer-parameters"></a>Output Pointer Parameters  
- Output pointer parameters require special notation to disambiguate null-ness on the parameter and the pointed-to location.  
+## <a name="output-pointer-parameters"></a>Выходные параметры указателя  
+ Параметрам выходного указателя требуется специальная нотация для неоднозначности значения NULL-rvalue характеристики в параметре и расположении, на которое указывает.  
   
- **Annotations and Descriptions**  
+ **Аннотации и описания**  
   
 - `_Outptr_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location cannot be null and must be valid.  
+   Параметр не может иметь значение null, а в состоянии после состояния значение расположения "указывает на" не может быть равно NULL и должно быть допустимым.  
   
 - `_Outptr_opt_`  
   
-   Parameter may be null, but in the post-state the pointed-to location cannot be null and must be valid.  
+   Параметр может иметь значение null, но в состоянии после состояния значение расположения "указывает на" не может быть равно NULL и должно быть допустимым.  
   
 - `_Outptr_result_maybenull_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location can be null.  
+   Параметр не может иметь значение null, а в состоянии после состояния значение расположения "указывает на" может быть равно null.  
   
 - `_Outptr_opt_result_maybenull_`  
   
-   Parameter may be null, and in the post-state the pointed-to location can be null.  
+   Параметр может иметь значение null, а в состоянии после состояния значение расположения "указывает на" может быть равно null.  
   
-  In the following table, additional substrings are inserted into the annotation name to further qualify the meaning of the annotation.  The various substrings are `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, and `_to_`.  
+  В следующей таблице дополнительные подстроки вставляются в имя заметки, чтобы уточнить смысл заметки.  Различные подстроки: `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`и `_to_`.  
   
 > [!IMPORTANT]
-> If the interface that you are annotating is COM, use the COM form of these annotations. Do not use the COM annotations with any other type interface.  
+> Если интерфейс, с которым записываются заметки, является COM, используйте COM-форму этих заметок. Не используйте заметки COM с любым другим интерфейсом типа.  
   
- **Annotations and Descriptions**  
+ **Аннотации и описания**  
   
 - `_Outptr_result_z_`  
   
@@ -330,7 +330,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Ouptr_opt_result_maybenull_z_`  
   
-   The returned pointer has the `_Null_terminated_` annotation.  
+   Возвращаемый указатель имеет `_Null_terminated_` заметку.  
   
 - `_COM_Outptr_`  
   
@@ -340,7 +340,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_COM_Outptr_opt_result_maybenull_`  
   
-   The returned pointer has COM semantics, and therefore carries an `_On_failure_` post-condition that the returned pointer is null.  
+   Возвращаемый указатель имеет семантику COM и, таким образом, переносит `_On_failure_`, что возвращаемый указатель имеет значение null.  
   
 - `_Outptr_result_buffer_(s)`  
   
@@ -350,7 +350,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_(s)`  
   
-   The returned pointer points to a valid buffer of size `s` elements or bytes.  
+   Возвращаемый указатель указывает на допустимый буфер размера `s` элементов или байтов.  
   
 - `_Outptr_result_buffer_to_(s, c)`  
   
@@ -360,102 +360,102 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-   The returned pointer points to a buffer of size `s` elements or bytes, of which the first `c` are valid.  
+   Возвращаемый указатель указывает на буфер размера `s` элементов или байтов, для которых первый `c` является допустимым.  
   
-  Certain interface conventions presume that output parameters are nullified on failure.  Except for explicitly COM code, the forms in the following table are preferred.  For COM code, use the corresponding COM forms that are listed in the previous section.  
+  Некоторые соглашения об интерфейсе предполагают, что выходные параметры обнулить при сбое.  За исключением явного COM-кода, рекомендуется использовать формы в следующей таблице.  Для COM-кода используйте соответствующие формы COM, перечисленные в предыдущем разделе.  
   
-  **Annotations and Descriptions**  
+  **Аннотации и описания**  
   
 - `_Result_nullonfailure_`  
   
-   Modifies other annotations. The result is set to null if the function fails.  
+   Изменяет другие заметки. Если функция завершается с ошибкой, в результате устанавливается значение null.  
   
 - `_Result_zeroonfailure_`  
   
-   Modifies other annotations. The result is set to zero if the function fails.  
+   Изменяет другие заметки. Если функция завершается с ошибкой, в результате устанавливается нулевое значение.  
   
 - `_Outptr_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a non-optional parameter.  
+   Возвращаемый указатель указывает на допустимый буфер, если функция завершается успешно, или значение null, если функция завершается ошибкой. Эта заметка предназначена для необязательного параметра.  
   
 - `_Outptr_opt_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for an optional parameter.  
+   Возвращаемый указатель указывает на допустимый буфер, если функция завершается успешно, или значение null, если функция завершается ошибкой. Эта заметка предназначена для необязательного параметра.  
   
 - `_Outref_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a reference parameter.  
+   Возвращаемый указатель указывает на допустимый буфер, если функция завершается успешно, или значение null, если функция завершается ошибкой. Эта заметка предназначена для ссылочного параметра.  
   
-## <a name="output-reference-parameters"></a>Output Reference Parameters  
- A common use of the reference parameter is for output parameters.  For simple output reference parameters—for example, `int&`—`_Out_` provides the correct semantics.  However, when the output value is a pointer—for example `int *&`—the equivalent pointer annotations like `_Outptr_ int **` don’t provide the correct semantics.  To concisely express the semantics of output reference parameters for pointer types, use these composite annotations:  
+## <a name="output-reference-parameters"></a>Выходные параметры ссылки  
+ Параметр ссылки обычно используется для выходных параметров.  Для простых выходных параметров ссылки, например `int&`—`_Out_` предоставляет правильную семантику.  Однако, если выходное значение является указателем, например `int *&`— эквивалентные заметки указателя, такие как `_Outptr_ int **`, не предоставляют правильную семантику.  Для краткого выражения семантики выходных параметров выходной ссылки для типов указателей используйте следующие составные аннотации:  
   
- **Annotations and Descriptions**  
+ **Аннотации и описания**  
   
 - `_Outref_`  
   
-     Result must be valid in post-state and cannot be null.  
+     Результат должен быть допустимым в состоянии POST и не может иметь значение null.  
   
 - `_Outref_result_maybenull_`  
   
-     Result must be valid in post-state, but may be null in post-state.  
+     Результат должен быть допустимым в состоянии после состояния, но может иметь значение NULL в состоянии после.  
   
 - `_Outref_result_buffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` elements.  
+     Результат должен быть допустимым в состоянии POST и не может иметь значение null. Указывает на допустимый буфер размера `s` элементов.  
   
 - `_Outref_result_bytebuffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` bytes.  
+     Результат должен быть допустимым в состоянии POST и не может иметь значение null. Указывает на допустимый буфер размера `s` байтов.  
   
 - `_Outref_result_buffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` elements, of which the first `c` are valid.  
+     Результат должен быть допустимым в состоянии POST и не может иметь значение null. Указывает на буфер элементов `s`, для которых первый `c` является допустимым.  
   
 - `_Outref_result_bytebuffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` bytes of which the first `c` are valid.  
+     Результат должен быть допустимым в состоянии POST и не может иметь значение null. Указывает на буфер `s` байтов, из которых первая `c` действительна.  
   
 - `_Outref_result_buffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` valid elements.  
+     Результат должен быть допустимым в состоянии POST и не может иметь значение null. Указывает на допустимый буфер размера `s` допустимые элементы.  
   
 - `_Outref_result_bytebuffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of `s` bytes of valid elements.  
+     Результат должен быть допустимым в состоянии POST и не может иметь значение null. Указывает на допустимый буфер `s` байтов допустимых элементов.  
   
 - `_Outref_result_buffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` elements.  
+     Результат должен быть допустимым в состоянии после состояния, но может иметь значение NULL в состоянии после. Указывает на допустимый буфер размера `s` элементов.  
   
 - `_Outref_result_bytebuffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` bytes.  
+     Результат должен быть допустимым в состоянии после состояния, но может иметь значение NULL в состоянии после. Указывает на допустимый буфер размера `s` байтов.  
   
 - `_Outref_result_buffer_to_maybenull_(s, c)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to buffer of `s` elements, of which the first `c` are valid.  
+     Результат должен быть допустимым в состоянии после состояния, но может иметь значение NULL в состоянии после. Указывает на буфер элементов `s`, для которых первый `c` является допустимым.  
   
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to buffer of `s` bytes of which the first `c` are valid.  
+     Результат должен быть допустимым в состоянии после состояния, но может иметь значение NULL в состоянии POST. Указывает на буфер `s` байтов, из которых первая `c` действительна.  
   
 - `_Outref_result_buffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of size `s` valid elements.  
+     Результат должен быть допустимым в состоянии после состояния, но может иметь значение NULL в состоянии POST. Указывает на допустимый буфер размера `s` допустимые элементы.  
   
 - `_Outref_result_bytebuffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of `s` bytes of valid elements.  
+     Результат должен быть допустимым в состоянии после состояния, но может иметь значение NULL в состоянии POST. Указывает на допустимый буфер `s` байтов допустимых элементов.  
   
 ## <a name="return-values"></a>Возвращаемые значения  
- The return value of a function resembles an `_Out_` parameter but is at a different level of de-reference, and you don't have to consider the concept of the pointer to the result.  For the following annotations, the return value is the annotated object—a scalar, a pointer to a struct, or a pointer to a buffer. These annotations have the same semantics as the corresponding `_Out_` annotation.  
+ Возвращаемое значение функции напоминает `_Out_` параметр, но находится на другом уровне разыменования, и вам не нужно рассматривать понятие указателя на результат.  Для следующих заметок возвращаемое значение является объектом с заметками — скаляром, указателем на структуру или указателем на буфер. Эти заметки имеют ту же семантику, что и соответствующая `_Out_` Аннотация.  
   
 |||  
 |-|-|  
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|  
   
-## <a name="other-common-annotations"></a>Other Common Annotations  
- **Annotations and Descriptions**  
+## <a name="other-common-annotations"></a>Другие общие заметки  
+ **Аннотации и описания**  
   
 - `_In_range_(low, hi)`  
   
@@ -471,36 +471,36 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Field_range_(low, hi)`  
   
-     The parameter, field, or result is in the range (inclusive) from `low` to `hi`.  Equivalent to `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     Параметр, поле или результат находятся в диапазоне (включая) от `low` до `hi`.  Эквивалентно `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`, который применяется к объекту с заметками вместе с соответствующими условиями предварительного или поступающего состояния.  
   
     > [!IMPORTANT]
-    > Although the names contain "in" and "out", the semantics of `_In_` and `_Out_` do **not** apply to these annotations.  
+    > Хотя имена содержат "in" и "out", семантика `_In_` и `_Out_` **не** применяются к этим заметкам.  
   
 - `_Pre_equal_to_(expr)`  
   
      `_Post_equal_to_(expr)`  
   
-     The annotated value is exactly `expr`.  Equivalent to `_Satisfies_(_Curr_ == expr)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     Значение с заметками точно `expr`.  Эквивалентно `_Satisfies_(_Curr_ == expr)`, который применяется к объекту с заметками вместе с соответствующими условиями предварительного или поступающего состояния.  
   
 - `_Struct_size_bytes_(size)`  
   
-     Applies to a struct or class declaration.  Indicates that a valid object of that type may be larger than the declared type, with the number of bytes being given by `size`.  Пример:  
+     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше, чем объявленный тип, с числом байтов, предоставленным `size`.  Пример.  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
-     The buffer size in bytes of a parameter `pM` of type `MyStruct *` is then taken to be:  
+     Размер буфера в байтах параметра, `pM` типа `MyStruct *`, принимается следующим образом:  
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Связанные ресурсы  
- [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Блог команды разработчиков анализа кода](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>См. также раздел  
- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Understanding SAL](../code-quality/understanding-sal.md)   
- [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)   
- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+## <a name="see-also"></a>См. также  
+ [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Основные сведения о SAL](../code-quality/understanding-sal.md)   
+ [Аннотирование поведения функций](../code-quality/annotating-function-behavior.md)   
+ [Добавление заметок к структурам и классам](../code-quality/annotating-structs-and-classes.md)   
+ [Аннотирование режима блокировки](../code-quality/annotating-locking-behavior.md)   
+ [Указание времени и места применения заметки](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Встроенные функции](../code-quality/intrinsic-functions.md)   
  [Рекомендации и примеры](../code-quality/best-practices-and-examples-sal.md)

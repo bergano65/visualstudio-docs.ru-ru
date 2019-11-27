@@ -1,5 +1,5 @@
 ---
-title: Installing an Isolated Shell Application | Microsoft Docs
+title: Установка изолированного приложения оболочки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,47 +21,47 @@ ms.locfileid: "74301156"
 # <a name="installing-an-isolated-shell-application"></a>Установка приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-To install a Shell app you must perform the following steps.  
+Чтобы установить приложение оболочки, необходимо выполнить следующие действия.  
   
-- Prepare your solution.  
+- Подготовьте решение.  
   
-- Create a Windows Installer (MSI) package for your application.  
+- Создайте пакет установщик Windows (MSI) для приложения.  
   
-- Create a Setup bootstrapper.  
+- Создайте начальный загрузчик программы установки.  
   
-  All of the example code in this document comes from the [Shell Deployment Sample](https://go.microsoft.com/fwlink/?LinkId=262245), which you can download from the Code Gallery on the MSDN website. The sample shows the results of performing each of these steps.  
+  Весь пример кода в этом документе взят из [примера развертывания оболочки](https://go.microsoft.com/fwlink/?LinkId=262245), который можно скачать из коллекции кода на веб-сайте MSDN. В этом примере показаны результаты выполнения каждого из этих действий.  
   
-## <a name="prerequisites"></a>Необходимые компоненты  
- To perform the procedures that this topic describes, the following tools must be installed on your computer.  
+## <a name="prerequisites"></a>Prerequisites  
+ Для выполнения процедур, описанных в этом разделе, на компьютере должны быть установлены следующие средства.  
   
-- The Visual Studio SDK  
+- Пакет SDK для Visual Studio  
   
-- The [Windows Installer XML Toolset](https://go.microsoft.com/fwlink/?LinkId=82720) version 3.6  
+- [Набор инструментов УСТАНОВЩИК Windows XML](https://go.microsoft.com/fwlink/?LinkId=82720) версии 3,6  
   
-  The sample also requires the Microsoft Visualization and Modeling SDK, which not all shells require.  
+  Для примера также требуется пакет SDK для визуализации и моделирования Microsoft, который не все оболочки требуется.  
   
-## <a name="preparing-your-solution"></a>Preparing Your Solution  
- By default, Shell templates build to VSIX packages, but this behavior is intended primarily for debugging purposes. When you deploy a Shell application, you must use MSI packages to allow for registry access and for restarts during installation. To prepare your application for MSI deployment, perform the following steps.  
+## <a name="preparing-your-solution"></a>Подготовка решения  
+ По умолчанию шаблоны оболочки создают пакеты VSIX, но это поведение предназначено главным образом для целей отладки. При развертывании приложения оболочки необходимо использовать пакеты MSI, чтобы обеспечить доступ к реестру и перезагрузку во время установки. Чтобы подготовить приложение к развертыванию MSI, выполните следующие действия.  
   
-#### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>To prepare a Shell application for MSI deployment  
+#### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>Подготовка приложения оболочки для развертывания MSI  
   
-1. Edit each .vsixmanifest file in your solution.  
+1. Измените каждый файл. vsixmanifest в решении.  
   
-     In the `Identifier` element, add an `InstalledByMSI` element and a `SystemComponent` element, and then set their values to `true`.  
+     В элементе `Identifier` добавьте элемент `InstalledByMSI` и элемент `SystemComponent`, а затем задайте для них значение `true`.  
   
-     These elements prevent the VSIX installer from trying to install your components and the user from uninstalling them by using the **Extensions and Updates** dialog box.  
+     Эти элементы не позволяют установщику VSIX пытаться установить компоненты, а пользователь не сможет их удалить с помощью диалогового окна **расширения и обновления** .  
   
-2. For each project that contains a VSIX manifest, edit the build tasks to output the content to the location from which your MSI will install. Include the VSIX manifest in the build output, but don't build a .vsix file.  
+2. Для каждого проекта, содержащего манифест VSIX, измените задачи сборки, чтобы вывести содержимое в расположение, из которого будет устанавливаться MSI. Включите манифест VSIX в выходные данные сборки, но не создавайте VSIX-файл.  
   
-## <a name="creating-an-msi-for-your-shell"></a>Creating an MSI for Your Shell  
- To build your MSI package, we recommend that you use the [Windows Installer XML Toolset](https://go.microsoft.com/fwlink/?LinkId=82720) because it gives greater flexibility than a standard Setup project.  
+## <a name="creating-an-msi-for-your-shell"></a>Создание MSI для оболочки  
+ Для создания пакета MSI рекомендуется использовать [набор инструментов УСТАНОВЩИК Windows XML](https://go.microsoft.com/fwlink/?LinkId=82720) , так как он обеспечивает большую гибкость, чем стандартный проект установки.  
   
- In your Product.wxs file, set detection blocks and the layout of Shell components.  
+ В файле Product. WXS задайте блоки обнаружения и макет компонентов оболочки.  
   
- Then create Registry entries, both in the .reg file for your solution and in ApplicationRegistry.wxs.  
+ Затем создайте записи реестра в файле с расширением REG для решения и в Аппликатионрегистри. WXS.  
   
-### <a name="detection-blocks"></a>Detection Blocks  
- A detection block consists of a `Property` element that specifies a prerequisite to detect and a `Condition` element that specifies a message to return if the prerequisite isn't present on the computer. For example, your Shell application will require the Microsoft Visual Studio Shell redistributable, and the detection block will resemble the following markup.  
+### <a name="detection-blocks"></a>Блоки обнаружения  
+ Блок обнаружения состоит из элемента `Property`, который указывает необходимое условие для обнаружения, и элемент `Condition`, указывающий возвращаемое сообщение, если необходимый компонент отсутствует на компьютере. Например, для приложения оболочки потребуется распространяемый компонент оболочки Microsoft Visual Studio, а блок обнаружения будет выглядеть так, как показано в следующей разметке.  
   
 ```xml  
 <Property Id="ISOSHELLSFX">  
@@ -80,12 +80,12 @@ To install a Shell app you must perform the following steps.
   
 ```  
   
-### <a name="layout-of-shell-components"></a>Layout of Shell Components  
- You must add elements to identify the target directory structure and the components to install.  
+### <a name="layout-of-shell-components"></a>Макет компонентов оболочки  
+ Необходимо добавить элементы для определения целевой структуры каталогов и устанавливаемых компонентов.  
   
-##### <a name="to-set-the-layout-of-shell-components"></a>To set the layout of Shell components  
+##### <a name="to-set-the-layout-of-shell-components"></a>Настройка макета компонентов оболочки  
   
-1. Create a hierarchy of `Directory` elements to represent all of the directories to create on the file system on the target computer, as the following example shows.  
+1. Создайте иерархию элементов `Directory` для представления всех каталогов, создаваемых в файловой системе на конечном компьютере, как показано в следующем примере.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -103,12 +103,12 @@ To install a Shell app you must perform the following steps.
     </Directory>  
     ```  
   
-     These directories are referred to by `Id` when files that must be installed are specified.  
+     На эти каталоги ссылаются `Id` при указании файлов, которые должны быть установлены.  
   
-2. Identify the components that the Shell and your Shell application require, as the following example shows.  
+2. Найдите компоненты, необходимые оболочке и приложению оболочки, как показано в следующем примере.  
   
     > [!NOTE]
-    > Some elements may refer to definitions in other .wxs files.  
+    > Некоторые элементы могут ссылаться на определения в других файлах WXS.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -123,7 +123,7 @@ To install a Shell app you must perform the following steps.
     </Feature>  
     ```  
   
-    1. The `ComponentRef` element refers to another .wxs file that identifies files that the current component requires. For example, GeneralProfile has the following definition in HelpAbout.wxs.  
+    1. Элемент `ComponentRef` ссылается на другой файл WXS, который определяет файлы, необходимые для текущего компонента. Например, Женералпрофиле имеет следующее определение в Хелпабаут. WXS.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -137,9 +137,9 @@ To install a Shell app you must perform the following steps.
         </Fragment>  
         ```  
   
-         The `DirectoryRef` element specifies where these files go on the user's computer. The `Directory` element specifies that it will be installed into a sub-directory, and each `File` element represents a file that's built or that exists as part of the solution and identifies where that file can be found when the MSI file is created.  
+         Элемент `DirectoryRef` указывает, где находятся эти файлы на компьютере пользователя. Элемент `Directory` указывает, что он будет установлен во вложенный каталог, а каждый элемент `File` представляет файл, который создан или существует как часть решения, и определяет, где можно найти этот файл при создании MSI-файла.  
   
-    2. The `ComponentGroupRef` element refers to a group of other components (or components and component groups). For instance, `ComponentGroupRef` under ApplicationGroup is defined as follows in Application.wxs.  
+    2. Элемент `ComponentGroupRef` ссылается на группу других компонентов (или компонентов и групп компонентов). Например, `ComponentGroupRef` в разделе ApplicationGroup определяется следующим образом в Application. WXS.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -159,120 +159,120 @@ To install a Shell app you must perform the following steps.
         ```  
   
     > [!NOTE]
-    > Required dependencies for Shell (Isolated) applications are: DebuggerProxy, MasterPkgDef, Resources (especially the .winprf file), Application, and PkgDefs.  
+    > Необходимые зависимости для приложений оболочки (изолированной): DebuggerProxy, Мастерпкгдеф, Resources (особенно файл. винпрф), Application и Пкгдефс.  
   
 ### <a name="registry-entries"></a>Записи реестра  
- The Shell (Isolated) project template includes a *ProjectName*.reg file for registry keys to merge on installation. These registry entries must be part of the MSI for both installation and cleanup purposes. You must also create matching registry blocks in ApplicationRegistry.wxs.  
+ Шаблон проекта Shell (изолированная среда) включает файл *имяПроекта*. reg для разделов реестра, которые необходимо объединить при установке. Эти записи реестра должны быть частью MSI в целях установки и очистки. Кроме того, необходимо создать соответствующие блоки реестра в Аппликатионрегистри. WXS.  
   
-##### <a name="to-integrate-registry-entries-into-the-msi"></a>To integrate registry entries into the MSI  
+##### <a name="to-integrate-registry-entries-into-the-msi"></a>Интеграция записей реестра в MSI  
   
-1. In the **Shell Customization** folder, open *ProjectName*.reg.  
+1. В папке **Настройка оболочки** откройте *имя_проекта*. reg.  
   
-2. Replace all instances of the $RootFolder$ token with the path of the target installation directory.  
+2. Замените все экземпляры токена $RootFolder $ на путь к целевому каталогу установки.  
   
-3. Add any other registry entries that your application requires.  
+3. Добавьте любые другие записи реестра, необходимые приложению.  
   
-4. Open ApplicationRegistry.wxs.  
+4. Откройте Аппликатионрегистри. WXS.  
   
-5. For each registry entry in *ProjectName*.reg, add a corresponding registry block, as the following examples show.  
+5. Для каждой записи реестра в *ProjectName*. reg добавьте соответствующий блок реестра, как показано в следующих примерах.  
   
-    |*ProjectName*.reg|ApplicationRegisty.wxs|  
+    |*Имя_проекта*. reg|Аппликатионрегисти. WXS|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \КЛСИД\\{bb431796-A179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Объект в студии DTE"|\<RegistryKey ID = ' Дтеклсидрегкэй ' root = ' HKCR ' key = ' $ (var. Дтеклсидрегкэй) "Action =" Креатеандремовеонунинсталл "><br /><br /> \<RegistryValue Type = "String" name = ' @ ' value = ' $ (var. Шортпродуктнаме) объект DTE "/><br /><br /> \</Регистрикэй >|  
+    |[HKEY_CLASSES_ROOT \КЛСИД\\{bb431796-A179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' key = ' $ (var. Дтеклсидрегкэй) \LocalServer32 "Action =" Креатеандремовеонунинсталл "><br /><br /> \<RegistryValue Type = "String" name = ' @ ' value = ' [INSTALLDIR] $ (var. Шортпродуктнаме). exe '/><br /><br /> \</Регистрикэй >|  
   
-     In this example, Var.DteClsidRegKey resolves to the registry key in the top row. Var.ShortProductName resolves to `PhotoStudio`.  
+     В этом примере var. Дтеклсидрегкэй разрешается в раздел реестра в верхней строке. Var. Шортпродуктнаме разрешается в `PhotoStudio`.  
   
-## <a name="creating-a-setup-bootstrapper"></a>Creating a Setup Bootstrapper  
- Your completed MSI will install only if all the prerequisites are installed first. To ease the end user experience, create a Setup program that gathers and installs all prerequisites before it installs your application. To ensure a successful installation, perform these actions:  
+## <a name="creating-a-setup-bootstrapper"></a>Создание начального загрузчика программы установки  
+ Завершенный MSI будет установлен только в том случае, если все необходимые компоненты установлены первыми. Чтобы упростить работу с конечным пользователем, создайте программу установки, которая собирает и устанавливает все необходимые компоненты перед установкой приложения. Чтобы обеспечить успешную установку, выполните следующие действия.  
   
-- Enforce installation by Administrator.  
+- Принудительная установка с помощью администратора.  
   
-- Detect whether the Visual Studio Shell (Isolated) is installed.  
+- Определить, установлена ли оболочка Visual Studio (изолированная).  
   
-- Run one or both Shell installers in order.  
+- Запустите один или оба установщика оболочки по порядку.  
   
-- Handle restart requests.  
+- Обрабатывает запросы на перезагрузку.  
   
-- Run your MSI.  
+- Запустите MSI.  
   
-### <a name="enforcing-installation-by-administrator"></a>Enforcing Installation by Administrator  
- This procedure is required to enable the Setup program to access required directories such as \Program Files\\.  
+### <a name="enforcing-installation-by-administrator"></a>Принудительная установка администратором  
+ Эта процедура необходима для предоставления программе установки доступа к необходимым каталогам, таким как \Program Files\\.  
   
-##### <a name="to-enforce-installation-by-administrator"></a>To enforce installation by Administrator  
+##### <a name="to-enforce-installation-by-administrator"></a>Принудительная установка администратором  
   
-1. Open the shortcut menu for the Setup project, and then choose **Properties**.  
+1. Откройте контекстное меню проекта установки и выберите пункт **Свойства**.  
   
-2. Under **Configuration Properties/Linker/Manifest File**, set **UAC Execution Level** to **requireAdministrator**.  
+2. В разделе **Свойства конфигурации/компоновщик/файл манифеста**задайте для параметра **уровень выполнения UAC** значение **requireAdministrator**.  
   
-     This property puts the attribute that requires the program to be run as Administrator into the embedded manifest file.  
+     Это свойство помещает атрибут, требующий запуска программы от имени администратора во внедренном файле манифеста.  
   
-### <a name="detecting-shell-installations"></a>Detecting Shell Installations  
- To determine whether the Visual Studio Shell (Isolated) must be installed, first determine whether it's already installed by checking the registry value of HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
+### <a name="detecting-shell-installations"></a>Обнаружение установок оболочки  
+ Чтобы определить, должна ли быть установлена оболочка Visual Studio (изолированная), сначала определите, установлена ли она, путем проверки значения реестра Хклм\софтваре\микрософт\девдив\вс\сервиЦинг\шеллверсион\исошелл\лЦид\инсталл.  
   
 > [!NOTE]
-> These values are also read by the Shell detection block in Product.wxs.  
+> Эти значения также считываются блоком обнаружения оболочки в Product. WXS.  
   
- HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder specifies the location where the Visual Studio Shell was installed, and you can check for files there.  
+ HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder указывает расположение, в котором установлена оболочка Visual Studio, и можно проверить наличие файлов.  
   
- For an example of how to detect a Shell installation, see the `GetProductDirFromReg` function of Utilities.cpp in the Shell Deployment Sample.  
+ Пример обнаружения установки оболочки см. в описании функции `GetProductDirFromReg` Utilities. cpp в примере развертывания оболочки.  
   
- If one or both of the Visual Studio Shells that your package requires isn't installed on the computer, you must add them to your list of components to install. For an example, see the `ComponentsPage::OnInitDialog` function of ComponentsPage.cpp in the Shell Deployment Sample.  
+ Если одна или обе оболочки Visual Studio, необходимые для пакета, не установлены на компьютере, необходимо добавить их в список компонентов для установки. Пример см. в описании функции `ComponentsPage::OnInitDialog` Компонентспаже. cpp в примере развертывания оболочки.  
   
-### <a name="running-the-shell-installers"></a>Running the Shell Installers  
- To run the Shell installers, call the Visual Studio Shell redistributables by using the correct command-line arguments. At a minimum, you must use the command-line arguments **/norestart /q** and watch for the return code to determine what should be done next. The following example runs the Shell (Isolated) redistributable.  
+### <a name="running-the-shell-installers"></a>Запуск установщиков оболочки  
+ Чтобы запустить установщики оболочки, вызовите распространяемые оболочки Visual Studio с помощью правильных аргументов командной строки. Как минимум, необходимо использовать аргументы командной строки **/norestart/q** и Watch для кода возврата, чтобы определить, что следует делать далее. Следующий пример запускает распространяемый компонент оболочки (изолированной).  
   
 ```  
 dwResult = ExecCmd("Vs_IsoShell.exe /norestart /q", TRUE);  
 ```  
   
-### <a name="running-the-shell-language-pack-installers"></a>Running the Shell Language Pack Installers  
- If you instead find that the shell or shells have been installed and just need a language pack, you can install the language packs as the following example shows.  
+### <a name="running-the-shell-language-pack-installers"></a>Запуск установщиков языкового пакета оболочки  
+ Если вместо этого вы обнаружите, что оболочка или оболочки установлены и требуется только языковой пакет, можно установить языковые пакеты, как показано в следующем примере.  
   
 ```  
 dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);  
   
 ```  
   
-### <a name="deciphering-return-values"></a>Deciphering Return Values  
- On some operating systems, the Visual Studio Shell (Isolated) installation will require a restart. This condition can be determined by the return code of the call to `ExecCmd`.  
+### <a name="deciphering-return-values"></a>Расшифровка возвращаемых значений  
+ В некоторых операционных системах для установки оболочки Visual Studio (изолированной) потребуется перезагрузка. Это условие можно определить с помощью кода возврата вызова `ExecCmd`.  
   
 |Возвращаемое значение|Описание|  
 |------------------|-----------------|  
-|ERROR_SUCCESS|Installation completed. You can now install your application.|  
-|ERROR_SUCCESS_REBOOT_REQUIRED|Installation completed. You can install your application after the computer has been restarted.|  
-|3015|Installation is in progress. A computer restart is required to continue the installation.|  
+|ERROR_SUCCESS|Установка завершена. Теперь можно установить приложение.|  
+|ERROR_SUCCESS_REBOOT_REQUIRED|Установка завершена. Приложение можно установить после перезагрузки компьютера.|  
+|3015|Выполняется установка. Для продолжения установки требуется перезагрузка компьютера.|  
   
-### <a name="handling-restarts"></a>Handling Restarts  
- When you ran the Shell installer by using the **/norestart** argument, you specified that it wouldn't restart the computer or ask for the computer to be restarted. However, a restart might be required, and you must ensure that your installer continues after the computer is restarted.  
+### <a name="handling-restarts"></a>Обработка перезапусков  
+ При запуске установщика оболочки с помощью аргумента **/norestart** вы указали, что он не перезагружает компьютер или не запрашивает перезагрузку компьютера. Однако может потребоваться перезагрузка, и необходимо убедиться, что установщик продолжит работу после перезагрузки компьютера.  
   
- To handle restarts correctly, make sure that only one Setup program is set to resume and that the resume process will be handled correctly.  
+ Для правильной обработки перезапусков убедитесь, что для одной программы установки задано возобновление и что процесс возобновления будет обрабатываться правильно.  
   
- If either ERROR_SUCCESS_REBOOT_REQUIRED or 3015 is returned, your code should restart the computer before the installation continues.  
+ Если возвращается значение ERROR_SUCCESS_REBOOT_REQUIRED или 3015, код должен перезагрузить компьютер перед продолжением установки.  
   
- To handle restarts, perform these actions:  
+ Для выполнения перезапусков выполните следующие действия.  
   
-- Set the registry to resume installation when Windows starts.  
+- Настройка реестра для возобновления установки при запуске Windows.  
   
-- Perform a double restart of the bootstrapper.  
+- Выполните двойной перезапуск начального загрузчика.  
   
-- Delete the Shell installer ResumeData key.  
+- Удалите ключ Ресумедата установщика оболочки.  
   
-- Restart Windows.  
+- Перезапустите Windows.  
   
-- Reset the start path of the MSI.  
+- Сброс начального пути MSI.  
   
-### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Setting the Registry to Resume Setup When Windows Starts  
- The HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ registry key executes at system startup with administrative permissions and then is erased. HKEY_CURRENT_USER contains a similar key, but it runs as a normal user and isn't appropriate for installations. You can resume installation by putting a string value in the RunOnce key that calls your installer. However, we recommend that you call the installer by using a **/restart** or similar parameter to notify the application that it's resuming instead of starting. You can also include parameters to indicate where you are in the installation process, which is especially useful in installations that may require multiple restarts.  
+### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Настройка реестра для возобновления установки при запуске Windows  
+ Раздел реестра HKEY_LOCAL_MACHINE \Софтваре\микрософт\виндовс\куррентверсион\рунонце\ выполняется при запуске системы с правами администратора, а затем удаляется. HKEY_CURRENT_USER содержит аналогичный ключ, но он работает от имени обычного пользователя и не подходит для установки. Можно возобновить установку, поместив строковое значение в раздел RunOnce, который вызывает установщик. Однако рекомендуется вызывать установщик с помощью **/restart** или аналогичного параметра, чтобы уведомить приложение о том, что оно возобновляется вместо запуска. Можно также включить параметры, чтобы указать, где находится процесс установки, что особенно полезно в установках, для которых может потребоваться несколько перезагрузок.  
   
- The following example shows a RunOnce registry key value for resuming an installation.  
+ В следующем примере показано значение раздела реестра RunOnce для возобновления установки.  
   
  `"c:\MyAppInstaller.exe /restart /SomeOtherDataFlag"`  
   
-### <a name="installing-double-restart-of-bootstrapper"></a>Installing Double Restart of Bootstrapper  
- If Setup is used directly from RunOnce, the desktop won't be able to load completely. To make the full user interface available, you must create another execution of Setup and end the RunOnce instance.  
+### <a name="installing-double-restart-of-bootstrapper"></a>Установка двойного перезапуска начального загрузчика  
+ Если программа установки используется непосредственно из RunOnce, Рабочий стол не сможет полностью загрузиться. Чтобы сделать доступным полный пользовательский интерфейс, необходимо создать еще одно выполнение программы установки и завершить экземпляр RunOnce.  
   
- You must re-execute the Setup program so that it obtains the correct permissions, and you must give it enough information to know where you stopped before the restart, as the following example shows.  
+ Необходимо повторно запустить программу установки, чтобы она получала правильные разрешения, и необходимо предоставить достаточно информации, чтобы узнать, где вы остановились перед перезапуском, как показано в следующем примере.  
   
 ```  
 if (_cmdLineInfo.IsRestart())  
@@ -284,16 +284,16 @@ if (_cmdLineInfo.IsRestart())
   
 ```  
   
-### <a name="deleting-the-shell-installer-resumedata-key"></a>Deleting the Shell Installer ResumeData Key  
- The Shell installer sets the HKLM\Software\Microsoft\VisualStudio\14.0\Setup\ResumeData registry key with data to resume Setup after restart. Because your application, not the Shell installer, is resuming, delete that registry key, as the following example shows.  
+### <a name="deleting-the-shell-installer-resumedata-key"></a>Удаление ключа Ресумедата установщика оболочки  
+ Установщик оболочки устанавливает раздел реестра HKLM\Software\Microsoft\VisualStudio\14.0\Setup\ResumeData с данными, чтобы возобновить установку после перезагрузки. Так как приложение, а не установщик оболочки, возобновляет работу, удалите этот раздел реестра, как показано в следующем примере.  
   
 ```  
 CString resumeSetupPath(MAKEINTRESOURCE("SOFTWARE\\Microsoft\\VisualStudio\\14.0\\Setup\\ResumeData"));  
 RegDeleteKey(HKEY_LOCAL_MACHINE, resumeSetupPath);  
 ```  
   
-### <a name="restarting-windows"></a>Restarting Windows  
- After you set the required registry keys, you can restart Windows. The following example invokes the restart commands for different Windows operating systems.  
+### <a name="restarting-windows"></a>Перезапуск Windows  
+ После настройки необходимых разделов реестра можно перезапустить Windows. В следующем примере вызываются команды перезапуска для различных операционных систем Windows.  
   
 ```  
 OSVERSIONINFO ov;  
@@ -330,8 +330,8 @@ catch(...)
   
 ```  
   
-### <a name="resetting-the-start-path-of-msi"></a>Resetting the Start Path of MSI  
- Before restart, the current directory is the location of your Setup program but, after restart, the location becomes the system32 directory. Your Setup program should reset the current directory before each MSI call, as the following example shows.  
+### <a name="resetting-the-start-path-of-msi"></a>Сброс начального пути MSI  
+ Перед перезагрузкой текущим каталогом является расположение программы установки, но после перезагрузки расположение становится каталогом System32. Программа установки должна сбрасывать текущий каталог перед вызовом MSI, как показано в следующем примере.  
   
 ```  
 CString GetSetupPath()  
@@ -350,8 +350,8 @@ CString GetSetupPath()
   
 ```  
   
-### <a name="running-the-application-msi"></a>Running the Application MSI  
- After the Visual Studio Shell installer returns ERROR_SUCCESS, you can run the MSI for your application. Because your Setup program is providing the user interface, start your MSI in quiet mode ( **/q**) and with logging ( **/L**), as the following example shows.  
+### <a name="running-the-application-msi"></a>Запуск MSI приложения  
+ После того как установщик оболочки Visual Studio возвратит ERROR_SUCCESS, можно запустить MSI для приложения. Так как программа установки предоставляет пользовательский интерфейс, запустите MSI в тихом режиме ( **/q**) и с ведением журнала ( **/l**), как показано в следующем примере.  
   
 ```cpp#  
 TCHAR temp[MAX_PATH];  
@@ -368,5 +368,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Пошаговое руководство. Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

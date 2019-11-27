@@ -23,7 +23,7 @@ ms.locfileid: "74298292"
   
  Если для управления IntelliTrace используется Microsoft Monitoring Agent, то также необходимо настроить параметры наблюдения за производительностью приложения на веб-сервере. При этом будет выполняться регистрация событий диагностики во время выполнения приложения и сохранение событий в файл журнала IntelliTrace. События можно будет просматривать в Visual Studio Enterprise (но не в выпусках Professional и Community), переходить к коду, в котором возникло событие, просматривать записанные значения на этот момент времени и переходить вперед и назад по выполнявшемуся коду. После того как вы найдете и исправите проблему, повторите цикл, включая сборку, выпуск и отслеживание выпуска, что позволит раньше выявлять и быстрее решать возможные проблемы в будущем.  
   
- ![Code, build, release, monitor, diagnose, fix](../debugger/media/ffr-cycle.png "FFR_Cycle")  
+ ![Код, сборка, выпуск, мониторинг, диагностика, исправление](../debugger/media/ffr-cycle.png "FFR_Cycle")  
   
  **Требуется:**  
   
@@ -42,19 +42,19 @@ ms.locfileid: "74298292"
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  Настройте определение сборки, чтобы добавить расположения исходного кода, сборки и символов в манифест сборки (файл BuildInfo.config). Team Foundation Build автоматически создает этот файл и помещает его в выходную папку проекта.  
   
-1. [Edit your build definition or create a new build definition.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Измените определение сборки или создайте новое определение сборки.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
-    ![View build definition in TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+    ![Просмотр определения сборки в TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
 2. Выберите шаблон по умолчанию (TfvcTemplate.12.xaml) или свой собственный пользовательский шаблон.  
   
-    ![Choose build process template &#45; TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+    ![Выберите шаблон &#45; процесса сборки TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3. Укажите место сохранения файла символов (PDB-файла), чтобы исходный код индексировался автоматически.  
   
     Если используется пользовательский шаблон, убедитесь, что в нем есть действие для индексации исходного кода. Позднее вы добавите аргумент MSBuild, чтобы указать расположение для сохранения файлов символов.  
   
-    ![Set up symbols path in build definition TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![Настройка пути к символам в определении сборки TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
     Дополнительные сведения о символах см. в разделе [Публикация символьных данных](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
@@ -68,7 +68,7 @@ ms.locfileid: "74298292"
   
     **/p:BuildSymbolStorePath=** \<*путь к символам*>  
   
-    ![Include build server info in build def TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+    ![Включить сведения о сервере сборки в сборку DEF TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
     Кроме того, добавьте следующие строки в файл веб-проекта (CSPROJ-файл, VBPROJ-файл).  
   
@@ -137,7 +137,7 @@ ms.locfileid: "74298292"
 ### <a name="MSBuild"></a> Создание манифеста сборки для ручной сборки с помощью MSBuild.exe  
  Добавьте следующие аргументы сборки при выполнении сборки:  
   
- **/p:GenerateBuildInfoConfigFile=True**  
+ **/p: Женератебуилдинфоконфигфиле = true**  
   
  **/p:IncludeServerNameInBuildInfo=True**  
   
@@ -158,21 +158,21 @@ ms.locfileid: "74298292"
   
 1. Откройте журнал IntelliTrace (iTrace-файл) в Visual Studio Enterprise. При наличии Visual Studio Enterprise вы также можете дважды щелкнуть этот файл на том же компьютере.  
   
-2. Выберите **Открыть решение** , чтобы автоматически открыть соответствующее решение или проект в Visual Studio, если проект не был собран в составе решения. [Q: The IntelliTrace log is missing information about my deployed app. Why did this happen? What do I do?](#InvalidConfigFile)  
+2. Выберите **Открыть решение** , чтобы автоматически открыть соответствующее решение или проект в Visual Studio, если проект не был собран в составе решения. [Вопрос. в журнале IntelliTrace отсутствуют сведения о развернутом приложении. Почему это произошло? Чем я занимаюсь?](#InvalidConfigFile)  
   
      Visual Studio автоматически откладывает все ожидающие изменения при открытии соответствующего решения или проекта. Чтобы получить дополнительные сведения об этом наборе отложенных изменений, откройте окно **Выходные данные** или **Team Explorer**.  
   
      Перед внесением любых изменений убедитесь в наличии правильного источника. Если используется ветвление, вы можете работать в ветви, которая отличается от той, в которой Visual Studio находит соответствующий исходный код, например в ветви выпуска.  
   
-     ![Open solution from IntelliTrace log](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
+     ![Открыть решение из журнала IntelliTrace](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
   
      При наличии рабочей области, сопоставленной с этим решением или проектом, Visual Studio выбирает эту рабочую область для размещения найденного исходного кода.  
   
-     ![Open from source control to mapped workspace](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
+     ![Открыть из системы управления версиями в сопоставленной рабочей области](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
   
      В противном случае выберите другую рабочую область или создайте новую рабочую область. Visual Studio сопоставит всю ветвь с этой рабочей областью.  
   
-     ![Open from source control &#45; create new workspace](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Открыть из системы управления &#45; версиями создание новой рабочей области](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
   
      Для создания рабочей области с конкретными сопоставлениями или с именем, отличным от имени вашего компьютера, щелкните **Управление**.  
   
@@ -184,7 +184,7 @@ ms.locfileid: "74298292"
   
 1. В области **Нарушения производительности**просмотрите записанные события производительности, значения их полного времени выполнения и другие данные о событиях. Затем более глубоко проанализируйте методы, вызванные во время конкретного события производительности.  
   
-     ![View performance event details](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Просмотр сведений о событии производительности](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      Можно также просто открыть событие двойным щелчком.  
   
@@ -194,13 +194,13 @@ ms.locfileid: "74298292"
   
      Разверните этот вызов, чтобы просмотреть все вложенные вызовы и значения, которые были записаны в тот момент времени. Затем запустите отладку из этого вызова.  
   
-     ![Start debugging from method call](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Начать отладку из вызова метода](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      Можно также дважды щелкнуть вызов.  
   
      Если метод находится в коде приложения, Visual Studio перейдет к этому методу.  
   
-     ![Go to application code from performance event](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Переход к коду приложения из события производительности](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      Теперь можно просмотреть другие записанные значения, стек вызова, выполнить пошаговый обход кода или использовать окно **IntelliTrace** для [перемещения вперед или назад "по времени" между другими методами](../debugger/intellitrace.md) , которые вызывались в ходе этого события производительности. [Что означают остальные события и данные в журнале IntelliTrace?](../debugger/using-saved-intellitrace-data.md)[What else can I do from here?](#WhatElse)[Требуются дополнительные сведения о событиях производительности?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)  
   
@@ -208,13 +208,13 @@ ms.locfileid: "74298292"
   
 1. В области **Данные исключения**просмотрите записанные события исключения, их типы, сообщения и время возникновения исключений. Чтобы глубже изучить код, начните отладку из последнего события в группе исключений.  
   
-     ![Start debugging from exception event](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Начать отладку из события исключения](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      Можно также просто открыть событие двойным щелчком.  
   
      Если исключение возникло в коде приложения, Visual Studio переходит туда, где произошло исключение.  
   
-     ![Go to application code from an exception event](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![Переход к коду приложения из события исключения](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      Теперь можно просмотреть другие записанные значения, стек вызова или использовать окно **IntelliTrace** для [перемещения вперед или назад "по времени" между различными записанными событиями](../debugger/intellitrace.md), по связанному с ними коду и значениям, записанным в эти моменты времени. [Что означают остальные события и данные в журнале IntelliTrace?](../debugger/using-saved-intellitrace-data.md)  
   
@@ -222,13 +222,13 @@ ms.locfileid: "74298292"
   
 - [Дополнительные сведения о данном коде](../ide/find-code-changes-and-other-history-with-codelens.md). Чтобы найти ссылки на этот код, журнал изменений, связанные ошибки, рабочие элементы, проверки кода или модульные тесты, не выходя из окна редактора, используйте индикаторы CodeLens.  
   
-     ![CodeLens &#45; View references to this code](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![Представление &#45; CodeLens ссылается на этот код](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
   
-     ![CodeLens &#45; View change history for this code](../debugger/media/ffr-itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![Журнал &#45; изменений представления CodeLens для этого кода](../debugger/media/ffr-itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
   
 - [Сопоставьте текущую позицию в коде во время отладки.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Чтобы визуально отслеживать методы, которые были вызваны во время сеанса отладки, сопоставьте стек вызовов.  
   
-     ![Map the call stack while debugging](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
+     ![Сопоставьте стек вызовов во время отладки](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
   
 ### <a name="FAQ"></a> Вопросы и ответы  
   
@@ -248,7 +248,7 @@ ms.locfileid: "74298292"
   
 - **ProjectName**  
   
-   Имя проекта в Visual Studio. Пример:  
+   Имя проекта в Visual Studio. Пример.  
   
   ```  
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
@@ -266,7 +266,7 @@ ms.locfileid: "74298292"
   
     - **ProjectVersionSpec**— версия проекта  
   
-      Пример:  
+      Пример.  
   
     ```  
     <SourceControl type="TFS">  
@@ -288,7 +288,7 @@ ms.locfileid: "74298292"
   
     - **CommitId**— идентификатор фиксации  
   
-      Пример:  
+      Пример.  
   
     ```  
     <SourceControl type="Git">   
@@ -314,7 +314,7 @@ ms.locfileid: "74298292"
   
   - **BuiltSolution**— путь к файлу решения, используемый Visual Studio для поиска и открытия соответствующего решения. Это содержимое свойства **SolutionPath** MsBuild.  
   
-    Пример:  
+    Пример.  
   
   - **TFS**  
   
@@ -344,14 +344,14 @@ ms.locfileid: "74298292"
 #### <a name="IneligibleWorkspace"></a>В. Почему Visual Studio сообщает, что выбранная рабочая область недопустима?  
  **О.** Выбранная рабочая область не имеет сопоставлений между папкой системы управления версиями и локальной папкой. Чтобы создать сопоставление для данной рабочей области, щелкните **Управление**. В противном случае выберите уже сопоставленную рабочую область или создайте новую рабочую область.  
   
- ![Open from source control with no mapped workspace](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
+ ![Открыть из системы управления версиями без сопоставленной рабочей области](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
   
 #### <a name="ChooseTeamProject"></a>В. Почему невозможно продолжать работу до тех пор, пока не будет выбрана командная или другая коллекция?  
  **О.** Это может произойти по любой из следующих причин.  
   
 - Программа Visual Studio не подключена к TFS.  
   
-     ![Open from source control &#45; not connected](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![Открыть из системы управления &#45; версиями не подключено](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
   
 - Программа Visual Studio не нашла решение или проект в текущей командной коллекции.  
   
@@ -361,12 +361,12 @@ ms.locfileid: "74298292"
   
      Указанный сервер TFS может больше не содержать соответствующий источник или вовсе не существовать в результате перехода на новый TFS. Если указанный TFS не существует, по прошествии приблизительно минуты время ожидания Visual Studio завершится, и вам будет предложено подключиться к другой коллекции. Для продолжения подключитесь к правильному серверу TFS.  
   
-     ![Open from source control &#45; migrated](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Открыть из системы управления &#45; версиями, перенесено](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> В. Что такое рабочая область?  
  **О.** В [рабочей области хранится копия источника](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) , и ее можно разрабатывать и тестировать отдельно до возврата работы. Если у вас еще нет рабочей области, которая сопоставлена с найденным решением или проектом, то Visual Studio предложит выбрать доступную рабочую область или создать новую рабочую область с именем вашего компьютера в качестве имени рабочей области по умолчанию.  
   
 #### <a name="UntrustedSymbols"></a>В. Почему появляется сообщение о ненадежных символах?  
- ![Debug with untrusted symbols path?](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![Отладка с использованием ненадежного пути к символам](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
   
  **О.** Это сообщение появляется, когда путь к символам в файле манифеста сборки (\<*имя_проекта*>.BuildInfo.config) не включен в список доверенных путей к символам. Добавить путь к списку путей к символам можно в параметрах отладчика.

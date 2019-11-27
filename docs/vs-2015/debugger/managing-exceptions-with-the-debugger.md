@@ -1,5 +1,5 @@
 ---
-title: Managing Exceptions with the Debugger | Microsoft Docs
+title: Управление исключениями с помощью отладчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -69,7 +69,7 @@ ms.locfileid: "74301098"
   
  В окне **Параметры исключений** разверните узел для категории исключений (например, **Исключения среды CLR**, то есть исключения .NET) и установите флажок для конкретного исключения в этой категории (например, **System.AccessViolationException**). Можно также выбрать всю категорию исключений.  
   
- ![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![Проверено AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ексцептионсеттингсчеккакцесс")  
   
  При проверке данного исключения выполнение отладчика будет прерываться везде, где возникает это исключение независимо от того, обрабатывается оно или нет. На этом этапе исключение называется первым экземпляром исключения. Ниже приведено несколько примеров.  
   
@@ -139,9 +139,9 @@ ms.locfileid: "74301098"
   
    Чтобы восстановить заданные по умолчанию параметры исключений, нажмите кнопку **Восстановить** на панели инструментов.  
   
-   ![Restore defaults in Exception Settings](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Восстановить значения по умолчанию в параметрах исключений](../debugger/media/restoredefaultexceptions.png "ресторедефаултексцептионс")  
   
-### <a name="BKMK_UserUnhandled"></a> Setting the debugger to continue on user-unhandled exceptions  
+### <a name="BKMK_UserUnhandled"></a>Настройка отладчика на продолжение при необработанных пользователем исключениях  
  При отладке кода .NET или JavaScript с параметром [Just My Code](../debugger/just-my-code.md)можно указать отладчику не прерывать выполнение при возникновении исключений, которые не обрабатываются в пользовательском коде, но обрабатываются в другом месте.  
   
 1. В окне **Параметры исключений** откройте контекстное меню, щелкнув в окне правой кнопкой мыши, а затем затем выберите команду **Показать столбцы**. (Если параметр **Только мой код**отключен, данная команда не отображается.)  
@@ -152,7 +152,7 @@ ms.locfileid: "74301098"
   
    Например, веб-приложения ASP.NET обрабатывают исключения путем их преобразования в код состояния HTTP 500 ([Обработка исключений в API ASP.NET](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)), что может затруднить определение источника исключения. В следующем примере пользовательский код вызывает метод `String.Format()` , который создает <xref:System.FormatException>. Выполнение прерывается следующим образом.  
   
-   ![breaks on user&#45;unhanlded exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![прерывание на&#45;исключении пользователя унханлдед](../debugger/media/exceptionunhandledbyuser.png "ексцептионунхандледбюсер")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Добавление и удаление исключений  
  Исключения можно добавлять и удалять. Можно удалить любой тип исключения из любой категории. Для этого нужно выбрать исключение и нажать кнопку **Удалить** (знак «минус») на панели инструментов **Параметры исключений** либо щелкнуть исключение правой кнопкой мыши и в контекстном меню выбрать команду **Удалить** . Удаление исключения аналогично снятию флажка для исключения и заключается в том, что при возникновении исключения отладчик продолжит выполнение.  
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  Исключение можно добавить в окно **Параметры исключений** следующим образом.  
   
- ![adding generic exception](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![Добавление универсального исключения](../debugger/media/addgenericexception.png "аддженерицексцептион")  
   
-## <a name="see-also"></a>См. также раздел  
- [Continuing Execution After an Exception](../debugger/continuing-execution-after-an-exception.md)   
- [How to: Examine System Code After an Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [How to: Use Native Run-Time Checks](../debugger/how-to-use-native-run-time-checks.md)   
- [Using Run-Time Checks Without the C Run-Time Library](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Exception Assistant](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+## <a name="see-also"></a>См. также  
+ [Продолжение выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)   
+ [Руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Как использовать проверки машинного кода во время выполнения](../debugger/how-to-use-native-run-time-checks.md)   
+ [Использование проверок во время выполнения без библиотеки времени выполнения C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
+   [помощника по исключениям](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)  
  [Основы отладки](../debugger/debugger-basics.md)

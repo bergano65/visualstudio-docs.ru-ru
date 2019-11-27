@@ -1,5 +1,5 @@
 ---
-title: '&lt;Signature&gt; Element (ClickOnce Deployment) | Microsoft Docs'
+title: Элемент&gt; подписи &lt;(развертывание ClickOnce) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,7 +22,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295080"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; Element (ClickOnce Deployment)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>Элемент&gt; подписи &lt;(развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи.  
@@ -37,12 +37,12 @@ ms.locfileid: "74295080"
 ```  
   
 ## <a name="remarks"></a>Заметки  
- Signing a deployment manifest using an envelope signature is optional, but recommended. For more information about signing XML files see the World Wide Web Consortium Recommendation, "XML-Signature Syntax and Processing," described at [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
+ Подпись манифеста развертывания с помощью подписи конверта является необязательной, но рекомендуется. Дополнительные сведения о подписывании XML-файлов см. в разделе консорциум W3C рекомендации «синтаксис XML-подписи и обработка», описанная в разделе [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
   
- If you want to sign your manifest, hashes must be provided for all files. A manifest with files that are not hashed cannot be signed, because users cannot verify the contents of unhashed files.  
+ Если вы хотите подписать манифест, необходимо предоставить хэши для всех файлов. Манифест с файлами, которые не хэшируются, не может быть подписан, так как пользователи не могут проверить содержимое нехэшированных файлов.  
   
 ## <a name="example"></a>Пример  
- The following code example illustrates a `Signature` element in a deployment manifest used in a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment.  
+ В следующем примере кода показан элемент `Signature` в манифесте развертывания, который используется в развертывании [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
@@ -73,5 +73,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)

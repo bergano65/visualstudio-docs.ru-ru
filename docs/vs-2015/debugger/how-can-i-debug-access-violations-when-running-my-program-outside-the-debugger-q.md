@@ -36,8 +36,8 @@ ms.locfileid: "74299252"
 ## <a name="solution"></a>Решение  
  Активируйте параметр [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md) и запустите автономное выполнение программы до момента возникновения нарушения доступа. Затем в диалоговом окне **Нарушение доступа** можно нажать **Отмена** и запустить отладчик.  
   
- Кроме того, обратитесь к статье Q133174 информационной базы данных, "How to Locate Where a General Protection (GP) Fault Occurs". You can find Knowledge Base articles on the MSDN Library CD or by searching [http://support.microsoft.com/](https://support.microsoft.com/).  
+ Кроме того, обратитесь к статье Q133174 информационной базы данных, "How to Locate Where a General Protection (GP) Fault Occurs". Статьи базы знаний можно найти на компакт-диске библиотеки MSDN или с помощью поиска [http://support.microsoft.com/](https://support.microsoft.com/).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

@@ -1,5 +1,5 @@
 ---
-title: VSPackages and the Managed Package Framework | Microsoft Docs
+title: Пакеты VSPackage и управляемая платформа пакетов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -19,25 +19,25 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74298228"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>Пакеты VSPackage и Managed Package Framework
-You can reduce development time by creating a VSPackage with the managed package framework (MPF) classes instead of by using COM interop classes.  
+Вы можете сократить время разработки, создав пакет VSPackage с классами Managed Package Framework (MPF), а не используя классы COM-взаимодействия.  
   
- There are two ways to create a managed VSPackage:  
+ Существует два способа создания управляемого пакета VSPackage:  
   
-- Use the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package project template  
+- Использование шаблона проекта пакета [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-     For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Дополнительные сведения см. [в разделе Пошаговое руководство. Создание команды меню с помощью шаблона пакета Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-- Build your VSPackage without the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package project template  
+- Создайте пакет VSPackage без шаблона проекта пакета [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-     For example, you can copy a sample VSPackage and change the GUIDs and the names. 
+     Например, можно скопировать пример VSPackage и изменить идентификаторы GUID и имена. 
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Классы Managed Package Framework](../misc/managed-package-framework-classes.md)  
- Describes and lists the MPF class namespaces and DLL files.  
+ Описывает и перечисляет пространства имен класса MPF и DLL-файлы.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
- Explains how to create a managed VSPackage.  
+ [Пошаговое руководство. Создание команды меню с помощью шаблона пакета Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ Объясняет, как создать управляемый пакет VSPackage.  
   
  [Управляемые пакеты VSPackage](../misc/managed-vspackages.md)  
- Introduces aspects of VSPackages that apply to managed code.
+ Содержит описание аспектов пакетов VSPackage, которые применяются к управляемому коду.

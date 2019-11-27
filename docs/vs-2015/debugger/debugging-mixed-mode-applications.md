@@ -1,5 +1,5 @@
 ---
-title: Debugging Mixed-Mode Applications | Microsoft Docs
+title: Отладка приложений в смешанном режиме | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -57,5 +57,5 @@ ms.locfileid: "74298308"
   
    Поскольку машинный стек вызовов отличается от управляемого стека вызовов, отладчик не всегда может предоставить полный стек вызовов для смешанного кода. Когда машинный код вызывает управляемый код, могут возникнуть некоторые несоответствия. Дополнительные сведения см. в разделе [Смешанный код и отсутствующая информация в окне стека вызовов](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)
