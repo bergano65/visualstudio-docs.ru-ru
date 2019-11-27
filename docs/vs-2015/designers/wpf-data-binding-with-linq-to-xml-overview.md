@@ -88,5 +88,5 @@ ms.locfileid: "74299522"
 
  Для реализации динамической привязки WPF динамические свойства используются со средствами пространства имен <xref:System.Windows.Data>, особенно с классом <xref:System.Windows.Data.Binding>.
 
-## <a name="see-also"></a>См. также раздел
- [WPF Data Binding with LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML Dynamic Properties](../designers/linq-to-xml-dynamic-properties.md) [XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [Data Binding (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [Using Workflow Markup](https://go.microsoft.com/fwlink/?LinkId=98685)
+## <a name="see-also"></a>См. также
+ [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML XAML динамических свойств](../designers/linq-to-xml-dynamic-properties.md) [в](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [привязке данных WPF (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [с использованием разметки рабочего процесса](https://go.microsoft.com/fwlink/?LinkId=98685)

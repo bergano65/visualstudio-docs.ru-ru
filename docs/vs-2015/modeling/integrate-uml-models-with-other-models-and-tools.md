@@ -1,5 +1,5 @@
 ---
-title: Integrate UML models with other models and tools | Microsoft Docs
+title: Интеграция моделей UML с другими моделями и инструментами | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -32,47 +32,47 @@ ms.locfileid: "74301468"
 
  Существует два способа сохранения строк и других данных в любом элементе:
 
-- **Stereotype properties.** Можно определить профиль UML, в котором определяется стереотип, добавляющий свойства в элемент UML указанных типов. For example, you could define a profile that adds a property named **MoreDetail** to a UML action. Можно написать код расширения, который сохраняет данные связей в действии, применяя стереотип к действию и затем сохраняя данные в свойстве.
+- **Свойства стереотипа.** Можно определить профиль UML, в котором определяется стереотип, добавляющий свойства в элемент UML указанных типов. Например, можно определить профиль, который добавляет свойство с именем **моредетаил** к действию UML. Можно написать код расширения, который сохраняет данные связей в действии, применяя стереотип к действию и затем сохраняя данные в свойстве.
 
    Стереотип и его свойства отображаются для пользователя в окне "Свойства".
 
    Чтобы развернуть это расширение, следует упаковать определение профиля и код расширения в одно расширение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-   For more information, see [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md).
+   Дополнительные сведения см. в разделе [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   For a sample project in which a profile is deployed together with menu commands and gesture handlers, see [Sample: UML Profiles](https://go.microsoft.com/fwlink/?LinkID=213811).
+   Пример проекта, в котором профиль развертывается вместе с командами меню и обработчиками жестов, см. в разделе [Пример: профили UML](https://go.microsoft.com/fwlink/?LinkID=213811).
 
-- **References.** Набор строк можно присоединить к любому элементу UML. Можно написать код, который хранит данные, такие как имя файла или GUID другого элемента. Это можно сделать без задания дополнительных определений. Ссылки не отображаются непосредственно пользователю.
+- **Ссылку.** Набор строк можно присоединить к любому элементу UML. Можно написать код, который хранит данные, такие как имя файла или GUID другого элемента. Это можно сделать без задания дополнительных определений. Ссылки не отображаются непосредственно пользователю.
 
-   For more information, see [Attach reference strings to UML model elements](../modeling/attach-reference-strings-to-uml-model-elements.md). For a sample, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
+   Дополнительные сведения см. [в разделе Присоединение строк ссылок к элементам модели UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813).
 
   Существует два способа кодирования ссылок на элементы модели:
 
-- **GUID and Filename** of the target model element and the model that contains it, or a particular diagram that displays it.
+- **GUID и имя файла** целевой модели, а также модель, которая содержит этот элемент, или конкретную диаграмму, которая отображает ее.
 
-   For an example, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
+   Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813).
 
-- **ModelBus References.** ModelBus — это платформа для создания и разрешения ссылок между моделями. Она включает в себя средство выбора ModelBus, позволяющее пользователю выбрать элемент в модели. Она также помогает пользователю разрешать ссылки, которые теряются из-за изменений в целевой модели.
+- **Ссылки на ModelBus.** ModelBus — это платформа для создания и разрешения ссылок между моделями. Она включает в себя средство выбора ModelBus, позволяющее пользователю выбрать элемент в модели. Она также помогает пользователю разрешать ссылки, которые теряются из-за изменений в целевой модели.
 
-   For more information, see [Integrating Models by using Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+   Дополнительные сведения см. в разделе [Интеграция моделей с помощью Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
   Распространите изменения из одной модели в другую.
   Например, можно синхронизировать имя элемента с именем связанной схемы, чтобы при изменении пользователем одного имени также изменялось и другое. Существует два механизма для реализации такой работы:
 
-1. **VMSDK Rules** can be used to propagate changes inside the same model.
+1. **Правила VMSDK** можно использовать для распространения изменений внутри одной модели.
 
-    For an example, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
+    Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813).
 
-2. **VMSDK Events** can be used to propagate changes outside the model – for example, to change the filename of a linked document, or to change an element in another model.
+2. **События VMSDK** можно использовать для распространения изменений вне модели, например для изменения имени файла связанного документа или для изменения элемента в другой модели.
 
-   For information about both these mechanisms, see [How to: Respond to Changes in a UML Model](../misc/how-to-respond-to-changes-in-a-uml-model.md).
+   Сведения об этих механизмах см. в разделе [инструкции. реагирование на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).
 
-   Drag elements to copy them from one model to another You can let the user create elements by dragging items onto a UML diagram. Созданный элемент необязательно должен быть копией исходного. Например, можно разрешить пользователю перетаскивать схему деятельности из обозревателя решений на другую схему деятельности для создания нового действия.
+   Перетаскивание элементов. чтобы скопировать их из одной модели в другую, можно позволить пользователю создавать элементы путем перетаскивания элементов на схему UML. Созданный элемент необязательно должен быть копией исходного. Например, можно разрешить пользователю перетаскивать схему деятельности из обозревателя решений на другую схему деятельности для создания нового действия.
 
-   For more information see [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) and [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
+   Дополнительные сведения см. в разделе [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) и [инструкции: Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="samples"></a>Примеры
- Please see the code sample [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813). Пример позволяет перетащить файл на любой элемент UML и затем открыть этот файл двойным щелчком элемента. Например, можно связать схему деятельности с элементом варианта использования. Значок, который показывает наличие связей у элементов.
+ См. пример кода, [связывающий элементы UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813). Пример позволяет перетащить файл на любой элемент UML и затем открыть этот файл двойным щелчком элемента. Например, можно связать схему деятельности с элементом варианта использования. Значок, который показывает наличие связей у элементов.
 
  В этом примере кода демонстрируются следующие методики:
 
@@ -80,7 +80,7 @@ ms.locfileid: "74301468"
 
    Пример кода сохраняет пути к файлам и GUID элементов в строках ссылок, сопоставленных с элементом.
 
-- Добавление декораторов в элементы UML. For general information about decorators, see [Customizing Text and Image Fields](../modeling/customizing-text-and-image-fields.md).
+- Добавление декораторов в элементы UML. Общие сведения о декораторах см. в разделе [Настройка полей текста и изображений](../modeling/customizing-text-and-image-fields.md).
 
    В этом примере добавляется декоратор изображения для фигур UML.
 
@@ -94,7 +94,7 @@ ms.locfileid: "74301468"
 
    В примере показано, как обрабатывать элементы, перетаскиваемые из проводника Windows (или проводника), обозревателя решений и других элементов UML.
 
-  For an example in which a UML model is be read by a DSL, see [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
+  Пример, в котором модель UML считывается с помощью DSL, см. в разделе [как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="see-also"></a>См. также раздел
- [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md) [How to: Respond to Changes in a UML Model](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Sample: UML Profiles](https://go.microsoft.com/fwlink/?LinkID=213811) [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813)
+## <a name="see-also"></a>См. также
+ [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [. как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) . [как реагировать на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Пример: профили UML](https://go.microsoft.com/fwlink/?LinkID=213811) [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813)

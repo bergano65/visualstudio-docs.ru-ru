@@ -24,9 +24,9 @@ Cloud Explorer позволяет просматривать ресурсы и �
 
 Приложение Cloud Explorer, как и [портал Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040), основано на стеке Azure Resource Manager. Благодаря этому Cloud Explorer распознает ресурсы (например, группы ресурсов Azure) и службы Azure (например, Logic Apps и API-приложения), а также поддерживает [управление доступом на основе ролей](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
-* Visual Studio 2015 with the [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2015 с [Пакет Microsoft Azure SDK для .NET 2,9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Учетная запись Azure. Если у вас ее нет, [зарегистрируйтесь для работы с бесплатной пробной версией](https://go.microsoft.com/fwlink/?LinkId=623901) или [активируйте преимущества для подписчиков Visual Studio](https://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

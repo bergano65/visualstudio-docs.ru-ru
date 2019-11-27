@@ -1,5 +1,5 @@
 ---
-title: 'How to: Add a Command to the Shortcut Menu | Microsoft Docs'
+title: Как добавить команду в контекстное меню | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -26,16 +26,16 @@ ms.locfileid: "74300884"
 
  В проекте DslPackage эта задача решается выполнением следующих действий.
 
-1. [Declare the command in Commands.vsct](#VSCT)
+1. [Объявите команду в командах Commands. vsct](#VSCT)
 
-2. [Update the package version number in Package.tt](#version). (Это действие выполняется при любом изменении файла Commands.vsct.)
+2. [Обновите номер версии пакета в Package.TT](#version). (Это действие выполняется при любом изменении файла Commands.vsct.)
 
-3. [Write methods in the CommandSet class](#CommandSet) to make the command visible and to define what you want the command to do.
+3. [Напишите методы в классе командного метода](#CommandSet) , чтобы сделать команду видимой, и определить, что должна делать команда.
 
-   For samples, see the [Visualization and Modeling SDK website](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Примеры см. на [веб-сайте SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
-> Также можно изменить поведение некоторых существующих команд, например "Вырезать", "Вставить", "Выбрать все" и "Печать", переопределив соответствующие методы в CommandSet.cs. For more information, see [How to: Modify a Standard Menu Command](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+> Также можно изменить поведение некоторых существующих команд, например "Вырезать", "Вставить", "Выбрать все" и "Печать", переопределив соответствующие методы в CommandSet.cs. Дополнительные сведения см. [в разделе инструкции. Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="defining-a-command-using-mef"></a>Определение команды с помощью MEF
  MEF (Managed Extension Framework) предлагает альтернативный метод определения команд в меню схемы. Его основная задача — включение доменного языка для расширения вами или другими сторонами. Пользователи могут выбрать установить только DSL или DSL и расширения. Кроме того, MEF уменьшает объем работы по определению команд контекстного меню после выполнения начальной работы по включению MEF в DSL.
@@ -50,20 +50,20 @@ ms.locfileid: "74300884"
 
 4. вы хотите определить только одну команду.
 
-   В остальных случаях используйте для определения команд метод MEF. For more information, see [Extend your DSL by using MEF](../modeling/extend-your-dsl-by-using-mef.md).
+   В остальных случаях используйте для определения команд метод MEF. Дополнительные сведения см. в статье [расширение возможностей DSL с помощью MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-## <a name="VSCT"></a> Declare the Command in Commands.Vsct
+## <a name="VSCT"></a>Объявите команду в командах Commands. vsct
  Команды меню объявляются в файле DslPackage\Commands.vsct. Эти определения указывают на метки элементов меню и место их отображения в меню.
 
- The file that you edit, Commands.vsct, imports definitions from several .h files, which are located in the directory *Visual Studio SDK install path*\VisualStudioIntegration\Common\Inc. It also includes GeneratedVsct.vsct, which is generated from your DSL definition.
+ Файл, который вы изменяете, Commands. vsct, импортирует определения из нескольких h файлов, которые находятся в каталоге *установки пакета SDK для Visual Studio*\висуалстудиоинтегратион\коммон\инк. Он также включает Женератедвскт. vsct, который создается из определения DSL.
 
- For more information about .vsct files, see [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Дополнительные сведения о vsct-файлах см. в разделе [Командная таблица Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 #### <a name="to-add-the-command"></a>Добавление команды
 
-1. In **Solution Explorer**, under the **DslPackage** project, open Commands.vsct.
+1. В **Обозреватель решений**в проекте **DslPackage** откройте команды. vsct.
 
-2. В элементе `Commands` определите одну или несколько кнопок и группу. A *button* is an item on the menu. A *group* is a section in the menu. Чтобы определить эти элементы, добавьте следующий код:
+2. В элементе `Commands` определите одну или несколько кнопок и группу. *Кнопка* — это элемент меню. *Группа* — это раздел в меню. Чтобы определить эти элементы, добавьте следующий код:
 
     ```
     <!-- Define a group - a section in the menu -->
@@ -90,9 +90,9 @@ ms.locfileid: "74300884"
     ```
 
     > [!NOTE]
-    > Каждая кнопка или группа идентифицируются по GUID и целочисленному идентификатору. Один и тот же GUID можно использовать при создании различных групп и кнопок, но при этом у них должны быть разные идентификаторы. The GUID names and ID names are translated to actual GUIDs and numeric IDs in the `<Symbols>` node.
+    > Каждая кнопка или группа идентифицируются по GUID и целочисленному идентификатору. Один и тот же GUID можно использовать при создании различных групп и кнопок, но при этом у них должны быть разные идентификаторы. Имена GUID и ИДЕНТИФИКАТОРы преобразуются в фактические идентификаторы GUID и числовые идентификаторы в узле `<Symbols>`.
 
-3. Чтобы она загружалась только в контексте вашего доменного языка, добавьте для нее ограничение видимости. For more information, see [VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md).
+3. Чтобы она загружалась только в контексте вашего доменного языка, добавьте для нее ограничение видимости. Дополнительные сведения см. в разделе [элемент висибилитиконстраинтс](../extensibility/visibilityconstraints-element.md).
 
      Для этого добавьте в элемент `CommandTable` после элемента `Commands` следующий код:
 
@@ -117,7 +117,7 @@ ms.locfileid: "74300884"
     </Symbols>
     ```
 
-5. Замените `{000...000}` на GUID, идентифицирующий группы и элементы меню. To obtain a new GUID, use the **Create GUID** tool on the **Tools** menu.
+5. Замените `{000...000}` на GUID, идентифицирующий группы и элементы меню. Чтобы получить новый идентификатор GUID, используйте средство **создания GUID** в меню **Сервис** .
 
     > [!NOTE]
     > Если вы хотите добавить сразу несколько групп или элементов меню, можно использовать один и тот же GUID. При этом необходимо использовать новые значения для `IDSymbols`.
@@ -132,23 +132,23 @@ ms.locfileid: "74300884"
 
     - `My Context Menu Command`
 
-## <a name="version"></a> Update the Package Version in Package.tt
+## <a name="version"></a>Обновление версии пакета в Package.tt
  При добавлении или изменении команды обновляйте параметр `version`<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>, который применяется к классу пакета перед выпуском новой версии доменного языка.
 
  Поскольку класс пакета определяется в созданном классе, обновите атрибут в файле текстового шаблона, из которого создается файл Package.cs.
 
 #### <a name="to-update-the-packagett-file"></a>Обновление файла Package.tt
 
-1. In **Solution Explorer**, in the **DslPackage** project, in the **GeneratedCode** folder, open the Package.tt file.
+1. В **Обозреватель решений**в проекте **DslPackage** в папке **GeneratedCode** откройте файл Package.tt.
 
 2. Найдите элемент `ProvideMenuResource`.
 
-3. Увеличьте параметр `version` атрибута, который является вторым параметром. При необходимости можно написать имя параметра, прямо указывающее на его назначение. Пример:
+3. Увеличьте параметр `version` атрибута, который является вторым параметром. При необходимости можно написать имя параметра, прямо указывающее на его назначение. Пример.
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="CommandSet"></a> Define the Behavior of the Command
- В доменном языке уже имеются некоторые команды, внедренные в разделяемый класс, который был объявлен в файле DslPackage\GeneratedCode\CommandSet.cs. Чтобы добавить новые команды, необходимо расширить этот класс, создав новый файл с частичным объявлением того же класса. The name of the class is usually *\<YourDslName>* `CommandSet`. Лучше всего начать с проверки имени класса и его содержимого.
+## <a name="CommandSet"></a>Определение поведения команды
+ В доменном языке уже имеются некоторые команды, внедренные в разделяемый класс, который был объявлен в файле DslPackage\GeneratedCode\CommandSet.cs. Чтобы добавить новые команды, необходимо расширить этот класс, создав новый файл с частичным объявлением того же класса. Имя класса обычно *\<йоурдслнаме >* `CommandSet`. Лучше всего начать с проверки имени класса и его содержимого.
 
  Класс набора команд производится из <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
@@ -160,15 +160,15 @@ ms.locfileid: "74300884"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. In **DslPackage**, create a folder that is named **Custom Code**. In this folder, create a new class file that is named `CommandSet.cs`.
+2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs`.
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример.
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Note** If you used the class template to create the new file, you must correct both the namespace and the class name.
+     **Примечание** . Если для создания нового файла использовался шаблон класса, необходимо исправить как пространство имен, так и имя класса.
 
 ### <a name="extend-the-command-set-class"></a>Расширение класса наборов команд
  Код наборов команд обычно требуется для импорта следующих пространств имен:
@@ -196,7 +196,7 @@ namespace Company.Language1 /* Make sure this is correct */
  Необходимо определить два метода: один определяет, как команда будет отображаться в контекстном меню, а другой выполняет эту команду. Эти методы не переопределяются. Наоборот, их нужно зарегистрировать в списке команд.
 
 ### <a name="define-when-the-command-will-be-visible"></a>Определение условий для отображения команды
- For each command, define an `OnStatus...` method that determines whether the command will appear on the menu, and whether it will be enabled or greyed out. Set the `Visible` and `Enabled` properties of the `MenuCommand`, as shown in the following example. Этот метод вызывается для создания контекстного меню каждый раз, когда пользователь щелкает схему правой кнопкой мыши, поэтому должен работать быстро.
+ Для каждой команды Определите метод `OnStatus...`, который определяет, будет ли команда отображаться в меню и будет ли она включена или серым цветом. Задайте свойства `Visible` и `Enabled` `MenuCommand`, как показано в следующем примере. Этот метод вызывается для создания контекстного меню каждый раз, когда пользователь щелкает схему правой кнопкой мыши, поэтому должен работать быстро.
 
  В данном примере команда отображается, только когда пользователь выбирает определенный тип фигуры, и включается, только когда хотя бы один из выбранных элементов находится в определенном состоянии. Пример основан на шаблоне схем классов доменного языка, а типы ClassShape и ModelClass определяются в доменном языке.
 
@@ -223,17 +223,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Следующие фрагменты часто используются в методах OnStatus:
 
-- `this.CurrentSelection` Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
+- `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
 
-- `this.IsDiagramSelected()` - `true` if the user clicked a blank part of the diagram.
+- `this.IsDiagramSelected()` - `true`, если пользователь щелкнул пустую часть диаграммы.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - the user did not select multiple objects
+- `this.IsSingleSelection()` — пользователь не выберет несколько объектов
 
-- `this.SingleSelection` - the shape or diagram that the user right-clicked
+- `this.SingleSelection` — фигура или схема, которую щелкнул пользователь правой кнопкой мыши
 
-- `shape.ModelElement as MyLanguageElement` - the model element represented by a shape.
+- `shape.ModelElement as MyLanguageElement` — элемент модели, представленный фигурой.
 
   Как правило, свойство `Visible` должно определяться выбранным параметром, а свойство `Enabled` — состоянием выбранных элементов.
 
@@ -242,7 +242,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>Определение действий команды
  Для каждой команды определите метод `OnMenu...`, выполняющий необходимое действие при выборе этой команды в меню.
 
- Если изменения вносятся в элементы моделей, необходимо делать это внутри транзакции. For more information, see [How to: Modify a Standard Menu Command](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Если изменения вносятся в элементы моделей, необходимо делать это внутри транзакции. Дополнительные сведения см. [в разделе инструкции. Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  В данном примере типы `ClassShape`, `ModelClass` и `Comment` определяются в доменном языке, который производится из шаблона схем классов DSL.
 
@@ -283,7 +283,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- For more information about how to navigate from object to object in the model, and about how to create objects and links, see [How to: Modify a Standard Menu Command](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Дополнительные сведения о переходе от объекта к объекту в модели и о создании объектов и ссылок см. в разделе [как изменить стандартную команду меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Регистрация команды
  Повторите в C# объявления значений GUID и идентификаторов, которые были сделаны в разделе "Символы" CommandSet.vsct:
@@ -295,12 +295,12 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- Use the same GUID value as you inserted in **Commands.vsct**.
+ Используйте то же значение GUID, которое было вставлено в **Commands. vsct**.
 
 > [!NOTE]
 > В случае изменений в разделе "Символы" VSCT-файла для сопоставления нужно будет также изменить эти объявления. Кроме того, необходимо увеличить номер версии в Package.tt
 
- Зарегистрируйте команды меню как часть данного набора команд. `GetMenuCommands()` is called once when the diagram is initialized:
+ Зарегистрируйте команды меню как часть данного набора команд. `GetMenuCommands()` вызывается один раз при инициализации схемы:
 
 ```
 protected override IList<MenuCommand> GetMenuCommands()
@@ -324,26 +324,26 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 #### <a name="to-exercise-the-command"></a>Выполнение команды
 
-1. On the **Solution Explorer** toolbar, click **Transform All Templates**.
+1. На панели инструментов **Обозреватель решений** нажмите кнопку **преобразовать все шаблоны**.
 
-2. Press **F5** to rebuild the solution, and start debugging the domain-specific language in the experimental build.
+2. Нажмите клавишу **F5** , чтобы перестроить решение, и начните отладку предметно-ориентированного языка в экспериментальной сборке.
 
 3. В экспериментальном построении откройте пример схемы.
 
 4. Щелкните несколько элементов в схеме правой кнопкой мыши, чтобы проверить, правильно ли включается и отключается команда, а также правильно ли работает ее отображение или скрытие в зависимости от выбранного элемента.
 
 ## <a name="troubleshooting"></a>Устранение неполадок
- **Command does not appear in menu:**
+ **Команда не отображается в меню:**
 
 - Пока вы не установите пакет доменного языка, команда будет отображаться только в экземплярах отладки Visual Studio. Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).
 
 - Убедитесь, что экспериментальный язык имеет правильное расширение имени файла для этого доменного языка. Чтобы проверить расширение имени файла, откройте DslDefinition.dsl в основном экземпляре Visual Studio. Затем в Обозревателе DSL щелкните узел "Редактор" правой кнопкой мыши и выберите "Свойства". В окне "Свойства" проверьте свойство FileExtension.
 
-- Did you [increment the package version number](#version)?
+- Вы [увеличили номер версии пакета](#version)?
 
 - Установите точку останова в начале метода OnStatus. Он должен останавливаться при щелчке правой кнопкой мыши по любой части схемы.
 
-   **OnStatus method is not called**:
+   **Метод OnStatus не вызывается**:
 
   - Убедитесь, что GUID и идентификаторы в коде CommandSet совпадают с идентификаторами в разделе "Символы" файла Commands.vsct.
 
@@ -353,11 +353,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Выполните метод OnStatus и убедитесь, что command.Visible и command.Enabled имеют значение true.
 
-  **Wrong menu text appears, or command appears in the wrong place**:
+  **Отображается неправильный текст меню, или команда отображается в неправильном месте**:
 
 - Убедитесь, что комбинация GUID и идентификатора уникальна для данной команды.
 
 - Убедитесь, что более ранние версии пакета удалены.
 
-## <a name="see-also"></a>См. также раздел
- [Writing Code to Customise a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md) [How to: Modify a Standard Menu Command](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [Deploying Domain-Specific Language Solutions](../modeling/deploying-domain-specific-language-solutions.md)
+## <a name="see-also"></a>См. также
+ [Написание кода для настройки в предметно-ориентированном языке](../modeling/writing-code-to-customise-a-domain-specific-language.md) [. как изменить стандартную команду меню,](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [развернув решения доменного языка](../modeling/deploying-domain-specific-language-solutions.md)

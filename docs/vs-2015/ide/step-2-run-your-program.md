@@ -21,7 +21,7 @@ ms.locfileid: "74295770"
 
 При создании нового решения фактически выполняется построение программы, которая в последующем запускается. Она пока ничего не делает — просто открывает пустое окно, у которого в строке заголовка окна надпись **Form1**. Но, как очевидно, она выполняется.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 1](https://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-run-your-program"></a>Для запуска программы
 
@@ -33,15 +33,15 @@ ms.locfileid: "74295770"
 
     - На панели инструментов нажмите кнопку **Начать отладку**, которая показана на рисунке ниже.
 
-         ![Start Debugging toolbar button](../ide/media/express-icondebug.png "Express_IconDebug") Start Debugging toolbar button
+         ![Кнопка панели инструментов "начать отладку"](../ide/media/express-icondebug.png "Express_IconDebug") Кнопка панели инструментов "начать отладку"
 
 2. Visual Studio запускает программу, и открывается окно **Form1**. На следующей диаграмме показана только что созданная программа. Программа выполняется и скоро она будет дополнена.
 
-     ![Windows Form application program running](../ide/media/express-firstrun.png "Express_FirstRun") Windows Form Application program running
+     ![Приложение Windows Forms, работающее](../ide/media/express-firstrun.png "Express_FirstRun") Приложение Windows Forms, работающее
 
 3. Вернитесь в интегрированную среду разработки Visual Studio и посмотрите на новую панель инструментов. При запуске программы на панели инструментов появляются дополнительные кнопки. Эти кнопки позволяют выполнять такие действия, как остановка и запуск программы, а также помогают отслеживать все ошибки. В этом примере мы просто используем его для запуска и остановки программы.
 
-     ![Debugging toolbar](../ide/media/express-debugtoolbar.png "Express_DebugToolbar") Debugging toolbar
+     ![Панель инструментов отладки](../ide/media/express-debugtoolbar.png "Express_DebugToolbar") Панель инструментов отладки
 
 4. Для остановки программы используйте один из следующих методов.
 

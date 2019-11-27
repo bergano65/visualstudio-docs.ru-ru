@@ -101,17 +101,17 @@ ms.locfileid: "74297955"
  *Что еще мне нужно знать?*
  **Примечания**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
+- ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Веб-браузер Apple Safari не поддерживается.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
+- ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Действие запуска веб-браузера должно быть частью закодированного теста пользовательского интерфейса.
 
    Если веб-браузер уже открыт и в нем требуется выполнить действия, воспроизведение завершится ошибкой, если используется не Internet Explorer. Поэтому рекомендуется включить запуск веб-браузера в закодированные тесты пользовательского интерфейса.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
+- ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Автоматизация действий пользовательского интерфейса, основанных на браузерах, таких как максимизация, сворачивания и восстановление, не поддерживается.
 
   **Советы**
 
-- ![Tip](../test/media/tip.png "Совет") You can configure the output to include screenshots in the coded UI logs. Для этого необходимо задать некоторые параметры конфигурации в файле QTAgent32.exe.config. По умолчанию этот файл устанавливается в следующую папку:
+- ![Совет](../test/media/tip.png "Совет") Можно настроить вывод для включения снимков экрана в закодированные журналы пользовательского интерфейса. Для этого необходимо задать некоторые параметры конфигурации в файле QTAgent32.exe.config. По умолчанию этот файл устанавливается в следующую папку:
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -139,7 +139,7 @@ ms.locfileid: "74297955"
  [Устранение неполадок в случае сбоев тестов для различных браузеров](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
  [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://go.microsoft.com/fwlink/?LinkID=255196)
 
@@ -151,5 +151,5 @@ ms.locfileid: "74297955"
 ### <a name="forum"></a>Форум
  [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает Coded UI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>См. также раздел
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+## <a name="see-also"></a>См. также
+ [Использование модели автоматизации пользовательского интерфейса для тестирования поддерживаемых в коде](../test/use-ui-automation-to-test-your-code.md) [конфигураций и платформ для ЗАКОДИРОВАННЫХ тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md) интерфейса

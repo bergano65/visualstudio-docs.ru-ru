@@ -34,7 +34,7 @@ ms.locfileid: "74297785"
 
 - **Общие сведения о SAMI 1.0**. Технология Microsoft Synchronized Accessible Media Interchange (SAMI) позволяет разработчикам захватывать звуковое содержимое для компьютерного мультимедиа. Дополнительные сведения см. на веб-сайте [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx).
 
-## <a name="windows-applications"></a>Windows-приложения
+## <a name="windows-applications"></a>Приложения Windows
 
 - [Пошаговое руководство. Создание приложения Windows со специальными возможностями](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b). Этот раздел содержит пошаговые инструкции по реализации в образце приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".
 
@@ -56,5 +56,5 @@ ms.locfileid: "74297785"
 
 - **Инициатива Web Accessibility Initiative консорциума W3C**. На этом веб-сайте содержатся рекомендации и методики для разработки доступных веб-сайтов. Дополнительные сведения см. на веб-сайте [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

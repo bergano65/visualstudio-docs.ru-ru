@@ -31,9 +31,9 @@ ms.locfileid: "74300640"
 
 ### <a name="c-and-visual-basic"></a>C# и Visual Basic
 
-В коде на языке C#, Visual Basic или другом управляемом коде используйте поставщик по умолчанию путем вызова методов в классе [Markers](/previous-versions/hh694099(v=vs.140)). It exposes four methods for generating markers: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)), and [WriteAlert](/previous-versions/hh694180(v=vs.140)). Для этих функций есть несколько перегруженных методов, применяемых в зависимости от того, нужно ли использовать значения по умолчанию для свойства.  Простейшая перегрузка принимает только строковый параметр, который указывает описание события. Описание отображается в отчетах визуализатора параллелизма.
+В коде на языке C#, Visual Basic или другом управляемом коде используйте поставщик по умолчанию путем вызова методов в классе [Markers](/previous-versions/hh694099(v=vs.140)). Он предоставляет четыре метода создания маркеров: [вритефлаг](/previous-versions/hh694185(v=vs.140)), [статического EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))и [вритеалерт](/previous-versions/hh694180(v=vs.140)). Для этих функций есть несколько перегруженных методов, применяемых в зависимости от того, нужно ли использовать значения по умолчанию для свойства.  Простейшая перегрузка принимает только строковый параметр, который указывает описание события. Описание отображается в отчетах визуализатора параллелизма.
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Add SDK support to a C# or Visual Basic project
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Добавление поддержки пакета SDK в C# проект или Visual Basic
 
 1. В строке меню выберите **Анализ**, **Визуализатор параллелизма**, **Добавить пакет SDK в проект**.
 
@@ -84,7 +84,7 @@ ms.locfileid: "74300640"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Использование нового поставщика маркеров в проекте C# или Visual Basic
 
-1. Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER. The constructor takes a GUID* and PCV_PROVIDER\*.
+1. Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER. Конструктор принимает идентификатор GUID * и PCV_PROVIDER\*.
 
 2. Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.
 
@@ -121,9 +121,9 @@ ms.locfileid: "74300640"
     CvWriteFlag(series, _T("Writing a flag"));
     ```
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-|Заголовок|Описание|
+|Название|Описание|
 |-----------|-----------------|
 |[Справочник по библиотеке C++](../profiling/cpp-library-reference.md)|Описывает API визуализатора параллелизма для C++.|
 |[Справочник по библиотеке C](../profiling/c-library-reference.md)|Описывает API визуализатора параллелизма для C.|

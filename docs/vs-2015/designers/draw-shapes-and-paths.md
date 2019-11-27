@@ -40,7 +40,7 @@ ms.locfileid: "74294323"
 ## <a name="Shape"></a> Рисование фигуры
  Фигуры можно найти на панели **Ресурсы** .
 
- ![Shapes category on the Assets panel](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
+ ![Категория «фигуры» на панели «активы»](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
 
  Перетащите любую нужную фигуру в область рисования. Затем используйте маркеры фигуры, чтобы масштабировать, поворачивать, перемещать и наклонять фигуру.
 
@@ -54,47 +54,47 @@ ms.locfileid: "74294323"
  ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")
 
 ### <a name="draw-a-straight-line"></a>Рисование прямой линии
- Use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54"), or the **Line** tool ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").
+ Используйте инструмент ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")«перо» или « **линия** » ![ ](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").
 
- **Using the Pen tool** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")
+ **Использование инструмента "перо"** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")
 
  Щелкните один раз в области рисования, чтобы определить начальную точку, а затем щелкните еще раз для задания конечной точки линии.
 
- **Using the Line tool** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")
+ **Использование инструмента "линия"** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")
 
  В области рисования зажмите кнопку мыши в том месте, где должна начинаться линия, затем перетащите и отпустите кнопку мыши там, где линия завершается.
 
 ### <a name="draw-a-curve"></a>Рисование кривой
- Use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
+ Используйте инструмент «перо ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")».
 
  В области рисования щелкните один раз, чтобы определить начальную точку линии, а затем зажмите и перетащите указатель мыши, чтобы задать нужную кривизну.
 
  Если требуется замкнуть контур, щелкните начальную точку линии.
 
 ### <a name="change-the-shape-of-a-curve"></a>Изменение формы кривой
- Use the **Direct selection** tool ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").
+ Используйте ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "непосредственное выделение 6dd6571f-C116-451d-8dd2-1f88b8406362")средство **прямого выбора** .
 
  Щелкните фигуру, а затем потяните за любую точку на фигуре, чтобы изменить форму кривой.
 
 ### <a name="draw-a-free-form-path"></a>Рисование контура произвольной формы
- Use the **Pencil** tool ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd").
+ Используйте инструмент «карандаш ![ ](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")».
 
  Нарисуйте произвольный контур в области рисования, как если бы вы пользовались настоящим карандашом.
 
 ### <a name="remove-part-of-a-path"></a>Удаление части контура
- Use the **Direct selection** tool ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").
+ Используйте ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "непосредственное выделение 6dd6571f-C116-451d-8dd2-1f88b8406362")средство **прямого выбора** .
 
  Выберите контур, содержащий сегмент, который требуется удалить, и нажмите кнопку **Удалить** .
 
 ### <a name="remove-a-point-in-a-path"></a>Удаление точки контура
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa"), and the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
+ Используйте инструмент ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")«выделение» и инструмент ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")«перо».
 
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") to select the path. Then, use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") to click the point that you want to remove.
+ Используйте ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") инструмент **выбора** для выбора пути. Затем с помощью инструмента ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") "перо" щелкните точку, которую нужно удалить.
 
 ### <a name="add-a-point-to-a-path"></a>Добавление точки контура
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa"), and the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
+ Используйте инструмент ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")«выделение» и инструмент ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54")«перо».
 
- Use the **Selection** tool  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") to select the path. Use the **Pen** tool ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") to click anywhere on the path where you want to add the point.
+ Используйте ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") инструмент **выбора** для выбора пути. Используйте инструмент «перо ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") », чтобы щелкнуть в любом месте пути, куда нужно добавить точку.
 
 ## <a name="Convert"></a> Преобразование фигуры в контур
  Чтобы изменить фигуру теми же способами, которые вы использовали для изменения контура, преобразуйте фигуру в контур.
@@ -130,5 +130,5 @@ ms.locfileid: "74294323"
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание контура кадрирования](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

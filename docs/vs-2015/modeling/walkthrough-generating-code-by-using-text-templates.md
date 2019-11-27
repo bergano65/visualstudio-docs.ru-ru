@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
+title: Пошаговое руководство. Создание кода с помощью текстовых шаблонов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>Добавление файла кода тестирования
- Добавьте в проект файл C# и напишите в нем пример кода, который вы хотите иметь возможность записать. Пример:
+ Добавьте в проект файл C# и напишите в нем пример кода, который вы хотите иметь возможность записать. Пример.
 
 ```
 using System;
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>Устранение неполадок для текстового шаблона
  Если при преобразовании или компиляции шаблона в **списке ошибок** появились ошибки или выходной файл был создан неправильно, эти неполадки текстового шаблона можно устранить с помощью методов, описанных в статье [Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>См. также раздел
- [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)
+## <a name="see-also"></a>См. также
+ [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Создание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)

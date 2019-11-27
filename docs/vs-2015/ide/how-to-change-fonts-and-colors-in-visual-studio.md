@@ -65,5 +65,5 @@ ms.locfileid: "74300138"
 
 5. В списке **Размер** выберите размер текста и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [как: Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

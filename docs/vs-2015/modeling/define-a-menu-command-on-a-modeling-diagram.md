@@ -1,5 +1,5 @@
 ---
-title: Define a menu command on a modeling diagram | Microsoft Docs
+title: Определение команды меню на схеме моделирования | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,7 +21,7 @@ ms.locfileid: "74299265"
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Определение команды меню на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно определить дополнительные пункты контекстных меню схемы UML. Вы можете управлять отображением и доступностью команды в контекстном меню любого элемента на схеме, а также написать код, который запускается при выборе пункта меню пользователем. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) и распространить их другим пользователям Visual Studio.
+В Visual Studio можно определить дополнительные пункты контекстных меню схемы UML. Вы можете управлять отображением и доступностью команды в контекстном меню любого элемента на схеме, а также написать код, который запускается при выборе пункта меню пользователем. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) и предоставить их другим пользователям Visual Studio.
 
 ## <a name="requirements"></a>Требования
  См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -31,9 +31,9 @@ ms.locfileid: "74299265"
 ## <a name="defining-the-menu-command"></a>Определение команды меню
  Чтобы создать команду меню для конструктора UML, необходимо создать класс, определяющий поведение команды, и внедрить этот класс в расширение Visual Studio Integration Extension (VSIX). VSIX выполняет роль контейнера, позволяющего установить команду. Существует два альтернативных способа определения команды меню.
 
-- **Create a menu command in its own VSIX using a project template.** Этот способ быстрее. Используйте его, если не хотите объединять команды меню с другими типами расширения, такими как расширения проверки, пользовательские элементы панели элементов или обработчики жестов.
+- **Создайте команду меню в своем собственном расширении VSIX с помощью шаблона проекта.** Этот способ быстрее. Используйте его, если не хотите объединять команды меню с другими типами расширения, такими как расширения проверки, пользовательские элементы панели элементов или обработчики жестов.
 
-- **Create separate menu command and VSIX projects.** Используйте этот метод, если нужно объединить несколько типов расширения в одном расширении VSIX. Например, если для команды меню требуется, чтобы модель соблюдала определенные ограничения, можно внедрить ее в то же расширение VSIX, что и метод проверки.
+- **Создание отдельных команд меню и проектов VSIX.** Используйте этот метод, если нужно объединить несколько типов расширения в одном расширении VSIX. Например, если для команды меню требуется, чтобы модель соблюдала определенные ограничения, можно внедрить ее в то же расширение VSIX, что и метод проверки.
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Создание команды меню в ее собственном расширении VSIX
 
@@ -47,7 +47,7 @@ ms.locfileid: "74299265"
 
 4. Выполните проверку команды меню, нажав клавишу F5. Более подробную информацию см. в разделе [Выполнение команды меню](#Executing).
 
-5. Install the menu command on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. Более подробную информацию см. в разделе [Установка и удаление расширения](#Installing).
+5. Установите команду меню на другом компьютере, скопировав файл **bin\\\*\\\*. VSIX** , созданный проектом. Более подробную информацию см. в разделе [Установка и удаление расширения](#Installing).
 
    Ниже описана альтернативная процедура.
 
@@ -63,16 +63,16 @@ ms.locfileid: "74299265"
 
    4. Укажите имя и расположение проекта и нажмите кнопку «ОК».
 
-2. Добавьте в проект следующие ссылки:
+2. Добавьте в проект указанные ниже ссылки.
 
-   |                                                                                                    Справочник                                                                                                    |                                                                                                  Возможности                                                                                                  |
+   |                                                                                                    Справочные сведения                                                                                                    |                                                                                                  Возможности                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Определение компонентов с помощью [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Чтение и изменение свойств элементов модели.                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Создание элементов модели, изменение фигур на схемах.                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[версия]                                                                                  | Определение обработчиков событий модели.<br /><br /> Инкапсуляция серии изменений в модель. For more information, see [Link UML model updates by using transactions](../modeling/link-uml-model-updates-by-using-transactions.md). |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[версия]                                                                                  | Определение обработчиков событий модели.<br /><br /> Инкапсуляция серии изменений в модель. Дополнительные сведения см. в разделе [Связывание обновлений модели UML с помощью транзакций](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]<br /><br /> (требуется не всегда)                                                             |                                                                                   Доступ к дополнительным элементам схемы для обработчиков жестов.                                                                                   |
-   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Требуется только для команд на схемах слоев. For more information, see [Extend layer diagrams](../modeling/extend-layer-diagrams.md). |                                                                                             Определение команд на схеме слоев.                                                                                              |
+   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Требуется только для команд на схемах слоев. Дополнительные сведения см. в разделе [расширение схем слоев](../modeling/extend-layer-diagrams.md). |                                                                                             Определение команд на схеме слоев.                                                                                              |
 
 3. Добавьте файл класса в проект и вставьте в него указанный ниже код.
 
@@ -146,7 +146,7 @@ ms.locfileid: "74299265"
 
 2. Создайте проект VSIX, если ваше решение еще его не содержит.
 
-    1. В в контекстном меню решения в **обозревателе решений**выберите пункт **Добавить**, а затем **Новый проект**.
+    1. В контекстном меню решения в **обозревателе решений**выберите пункт **Добавить**, а затем **Новый проект**.
 
     2. В разделе **Установленные шаблоны**разверните узел **Visual C#** или **Visual Basic**и выберите пункт **Расширение среды**. В среднем столбце выберите пункт **Проект VSIX**.
 
@@ -166,13 +166,13 @@ ms.locfileid: "74299265"
 
          **Проект** = *Ваш проект библиотеки классов*
 
-## <a name="Implementing"></a> Implementing the Menu Command
+## <a name="Implementing"></a>Реализация команды меню
  Класс команды меню реализует необходимые методы для <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.
 
 |||
 |-|-|
 |`string Text { get; }`|Возвратите метку пункта меню.|
-|`void QueryStatus(IMenuCommand command);`|Вызывается, когда пользователь щелкает схему правой кнопкой мыши.<br /><br /> Этот метод не должен изменять модель.<br /><br /> Используйте `DiagramContext.CurrentDiagram.SelectedShapes` , чтобы определить, должна ли команда отображаться и быть доступной.<br /><br /> Задайте следующие значения:<br /><br /> -   `command.Visible` to `true` if the command must appear in the menu when the user right-clicks in the diagram<br />-   `command.Enabled` to `true` if the user can click the command in the menu<br />-   `command.Text` to set the menu label dynamically|
+|`void QueryStatus(IMenuCommand command);`|Вызывается, когда пользователь щелкает схему правой кнопкой мыши.<br /><br /> Этот метод не должен изменять модель.<br /><br /> Используйте `DiagramContext.CurrentDiagram.SelectedShapes` , чтобы определить, должна ли команда отображаться и быть доступной.<br /><br /> Задайте следующие значения:<br /><br /> -   `command.Visible` `true`, если команда должна отображаться в меню, когда пользователь щелкает правой кнопкой мыши на схеме<br />-   `command.Enabled` `true`, если пользователь может щелкнуть команду в меню<br />-   `command.Text` для динамического задания метки меню|
 |`void Execute (IMenuCommand command);`|Вызывается при выборе пункта меню пользователем, если этот пункт отображается и доступен.|
 
 ### <a name="accessing-the-model-in-code"></a>Доступ к модели в коде
@@ -196,20 +196,20 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 ```
 
 ### <a name="navigating-and-updating-the-model"></a>Перемещение по модели и ее обновление
- Все элементы модели UML доступны через API. Из текущего выбранного элемента или из корня модели можно получить доступ ко всем другим элементам. For more information, see [Navigate the UML model](../modeling/navigate-the-uml-model.md) and [Programming with the UML API](../modeling/programming-with-the-uml-api.md).
+ Все элементы модели UML доступны через API. Из текущего выбранного элемента или из корня модели можно получить доступ ко всем другим элементам. Дополнительные сведения см. [в разделе Навигация по модели UML](../modeling/navigate-the-uml-model.md) и [программированию с помощью API UML](../modeling/programming-with-the-uml-api.md).
 
- If you are dealing with a sequence diagram, see also [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
+ Если вы работаете со схемой последовательностей, см. также раздел [изменение схем последовательностей UML с помощью API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
  API также позволяет изменять свойства элементов, удалять элементы и отношения и создавать новые элементы и отношения.
 
- По умолчанию каждое изменение, вносимое в метод Execute, будет выполняться в отдельной транзакции. Пользователь сможет отменить каждое изменение по отдельности. If you want to group the changes into a single transaction, use a <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> as described in [Link UML model updates by using transactions](../modeling/link-uml-model-updates-by-using-transactions.md).
+ По умолчанию каждое изменение, вносимое в метод Execute, будет выполняться в отдельной транзакции. Пользователь сможет отменить каждое изменение по отдельности. Если вы хотите сгруппировать изменения в одну транзакцию, используйте <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction>, как описано в статье [Связывание обновлений модели UML с помощью транзакций](../modeling/link-uml-model-updates-by-using-transactions.md).
 
 ### <a name="use-the-ui-thread-for-updates"></a>Использование потока пользовательского интерфейса для обновлений
  В некоторых случаях может оказаться полезным выполнять обновления модели из фонового потока. Например, если команда загружает данные из медленного ресурса, можно выполнить загрузку в фоновом потоке, чтобы пользователь мог видеть вносимые изменения и при необходимости отменить операцию.
 
- Однако следует помнить, что хранилище моделей не является потокобезопасным. Следует всегда использовать поток пользовательского интерфейса для выполнения обновления и, если это возможно, запретить пользователям вносить изменения во время выполнения фоновой операции. For an example, see [Update a UML model from a background thread](../modeling/update-a-uml-model-from-a-background-thread.md).
+ Однако следует помнить, что хранилище моделей не является потокобезопасным. Следует всегда использовать поток пользовательского интерфейса для выполнения обновления и, если это возможно, запретить пользователям вносить изменения во время выполнения фоновой операции. Пример см. в разделе [обновление модели UML из фонового потока](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="Executing"></a> Executing the Menu Command
+## <a name="Executing"></a>Выполняя команду меню
  В целях проверки запустите команду в режиме отладки.
 
 #### <a name="to-test-the-menu-command"></a>Проверка команды меню
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".
 
-    - В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт **Свойства**. In the project properties editor, select the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
+    - В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт **Свойства**. В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь, что строка в поле **Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], обычно:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -236,11 +236,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Параметры атрибутов `Import` и `Export` являются допустимыми.
 
-    - The `QueryStatus` method is not setting the `command`.`Enabled` или `Visible` значение `false`.
+    - Метод `QueryStatus` не задает `command`.`Enabled` или `Visible` значение `false`.
 
     - Используемый тип схемы модели (класс UML, последовательность и т. п.) указан как один из атрибутов класса команды меню `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` и т. д.
 
-## <a name="Installing"></a> Installing and uninstalling an extension
+## <a name="Installing"></a>Установка и удаление расширения
  Расширение [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] можно установить как на своем компьютере, так и на других.
 
 #### <a name="to-install-an-extension"></a>Установка расширения
@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. В контекстном меню проекта VSIX в **обозревателе решений**выберите пункт **Открыть папку в проводнике Windows**.
 
-    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
+    2. Откройте файл **bin\\\*\\** _йоурпрожект_ **. VSIX**
 
 2. Скопируйте файл **.vsix** на компьютер, где необходимо установить расширение. Это может быть как ваш собственный компьютер, так и любой другой.
 
@@ -271,7 +271,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\локал\микрософт\висуалстудио\\[версия] \екстенсионс**
 
 ## <a name="MenuExample"></a> Пример
  В приведенном ниже примере показан код для команды меню, позволяющий поменять местами имена двух элементов на схеме классов. Этот код должен быть встроен в проект расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и установлен в соответствии с описанием в предыдущих разделах.
@@ -362,5 +362,5 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
- [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md) [Sample: Command to Align Shapes on a UML Diagram](https://go.microsoft.com/fwlink/?LinkID=213809)
+## <a name="see-also"></a>См. также
+ [Определение и установка расширения моделирования расширение](../modeling/define-and-install-a-modeling-extension.md) [моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) определение [ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [изменить UML-схемы ПОследовательностей с помощью программирования API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [с](../modeling/programming-with-the-uml-api.md) примером "API UML" [для выровняйте фигуры на схеме UML](https://go.microsoft.com/fwlink/?LinkID=213809)

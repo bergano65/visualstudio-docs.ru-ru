@@ -35,8 +35,8 @@ ms.locfileid: "74290989"
 | lt |Меньше |Price lt 20 |
 | le |Меньше или равно |Price le 100 |
 | ne |Не равно |City ne 'London' |
-| and |и |Price le 200 and Price gt 3.5 |
-| or |Или |Price le 3.5 or Price gt 200 |
+| и |И |Price le 200 and Price gt 3.5 |
+| или |Или |Price le 3.5 or Price gt 200 |
 | not |not |not isAvailable |
 
 При создании строки фильтра соблюдайте следующие правила.

@@ -1,5 +1,5 @@
 ---
-title: Analyze .NET Framework memory issues | Microsoft Docs
+title: Анализ проблем с памятью .NET Framework | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,170 +20,170 @@ ms.locfileid: "74295896"
 # <a name="analyze-net-framework-memory-issues"></a>Анализ проблем с памятью .NET Framework
 С помощью анализатора управляемой памяти Visual Studio вы можете найти утечки памяти и определить неэффективное использование памяти в коде .NET Framework. Минимальная версия .NET Framework целевого кода — .NET Framework 4.5.  
   
- The memory analysis tool analyzes information in *dump files with heap data* that a copy of the objects in an app's memory. Вы можете собрать файлы дампа (DMP) в среде Visual Studio или с помощью других системных средств.  
+ Средство анализа памяти анализирует сведения в *файлах дампа с данными кучи* , которые являются копией объектов в памяти приложения. Вы можете собрать файлы дампа (DMP) в среде Visual Studio или с помощью других системных средств.  
   
 - Можно проанализировать один мгновенный снимок, чтобы понять относительное влияние типов объектов на использование памяти и найти код в приложении, который использует память неэффективно.  
   
-- You can also compare (*diff*) two snapshots of an app to find areas in your code that cause the memory use to increase over time.  
+- Вы также можете сравнить (*diff*) два моментальных снимка приложения, чтобы найти области в коде, которые приводят к увеличению использования памяти с течением времени.  
   
-  For a walkthrough of the managed memory analyzer, see [Using Visual Studio 2013 to Diagnose .NET Memory Issues in Production](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/) on the Visual Studio ALM + Team Foundation Server blog .  
+  Пошаговое руководство по анализатору управляемой памяти см. в разделе [использование Visual Studio 2013 для диагностики проблем с памятью .NET в рабочей](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/) области Visual Studio ALM + Team Foundation Server.  
   
 ## <a name="BKMK_Contents"></a> Описание  
- [Memory use in .NET Framework apps](#BKMK_Memory_use_in__NET_Framework_apps)  
+ [Использование памяти в .NET Framework приложениях](#BKMK_Memory_use_in__NET_Framework_apps)  
   
- [Identify a memory issue in an app](#BKMK_Identify_a_memory_issue_in_an_app)  
+ [Выявление проблемы с памятью в приложении](#BKMK_Identify_a_memory_issue_in_an_app)  
   
- [Collect memory snapshots](#BKMK_Collect_memory_snapshots)  
+ [Получение моментальных снимков памяти](#BKMK_Collect_memory_snapshots)  
   
- [Analyze memory use](#BKMK_Analyze_memory_use)  
+ [Анализ использования памяти](#BKMK_Analyze_memory_use)  
   
-## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Memory use in .NET Framework apps  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a>Использование памяти в .NET Framework приложениях  
  .NET Framework — это среда выполнения со сборкой мусора, поэтому в большинстве приложений использование памяти не вызывает проблем. Но в долго работающих приложениях, таких как веб-службы и приложения, и на устройствах с ограниченным объемом памяти, накопление объектов в памяти может снизить производительность приложения и устройства. Избыточное использование памяти может привести к дефициту ресурсов, если сборщик мусора будет запускаться слишком часто или операционной системе приходится часто перемещать данные между ОЗУ и диском. В худшем случае приложение может завершить работу с исключением "Недостаточно памяти".  
   
- The .NET *managed heap* is a region of virtual memory where reference objects created by an app are stored. Жизненный цикл объектов контролирует сборщик мусора (GC). Сборщик мусора использует ссылки для отслеживания объектов, занимающих блоки памяти. Ссылка создается, когда объект создается и назначается переменной. У одного объекта может быть несколько ссылок. Например, дополнительные ссылки на объект можно создать, добавив его в класс, коллекцию или другую структуру данных или назначив объект второй переменной. Менее очевидный способ создания ссылки — добавление обработчика в событие другого объекта. В этом случае второй объект содержит ссылку на первый объект, пока не будет явно удален обработчик или второй объект.  
+ *Управляемая куча* .NET — это область виртуальной памяти, в которой хранятся ссылочные объекты, созданные приложением. Жизненный цикл объектов контролирует сборщик мусора (GC). Сборщик мусора использует ссылки для отслеживания объектов, занимающих блоки памяти. Ссылка создается, когда объект создается и назначается переменной. У одного объекта может быть несколько ссылок. Например, дополнительные ссылки на объект можно создать, добавив его в класс, коллекцию или другую структуру данных или назначив объект второй переменной. Менее очевидный способ создания ссылки — добавление обработчика в событие другого объекта. В этом случае второй объект содержит ссылку на первый объект, пока не будет явно удален обработчик или второй объект.  
   
- Для каждого приложения сборщик мусора хранит три ссылки, отслеживающие объекты, на которые ссылается приложение. The *reference tree* has a set of roots, which includes global and static objects, as well as associated thread stacks and dynamically instantiated objects. Объект становится корневым, если у него есть по крайней мере один родительский объект с ссылкой на него. Сборщик мусора может освободить память, занимаемую объектом, только если другие объекты или переменные в приложении не ссылаются на него.  
+ Для каждого приложения сборщик мусора хранит три ссылки, отслеживающие объекты, на которые ссылается приложение. *Дерево ссылок* содержит набор корней, включая глобальные и статические объекты, а также связанные стеки потоков и динамически создаваемые объекты. Объект становится корневым, если у него есть по крайней мере один родительский объект с ссылкой на него. Сборщик мусора может освободить память, занимаемую объектом, только если другие объекты или переменные в приложении не ссылаются на него.  
   
- ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+ К [содержимому](#BKMK_Contents) ![сверху](../debugger/media/pcs-backtotop.png "PCS_BackToTop")  
   
-## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identify a memory issue in an app  
- Самым очевидным признаком проблем с памятью служит производительность приложения, особенно ее падение с течением времени. Ухудшение производительности других приложений во время работы вашего приложения также может указывать на проблему с памятью. If you suspect a memory issue, use a tool like Task Manager or [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx) to investigate further. Например, посмотрите, существуют ли случаи увеличения общего объема памяти, которые вы не можете объяснить — возможно, это источник утечки памяти:  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a>Выявление проблемы с памятью в приложении  
+ Самым очевидным признаком проблем с памятью служит производительность приложения, особенно ее падение с течением времени. Ухудшение производительности других приложений во время работы вашего приложения также может указывать на проблему с памятью. Если вы подозреваете проблему с памятью, воспользуйтесь для дальнейшего изучения средством, например диспетчером задач или [монитором производительности Windows](https://technet.microsoft.com/library/cc749249.aspx) . Например, посмотрите, существуют ли случаи увеличения общего объема памяти, которые вы не можете объяснить — возможно, это источник утечки памяти:  
   
- ![Consistent memory growth in Resource Monitor](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
+ ![Последовательный рост памяти в монитор ресурсов](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
  Вы также можете заметить пиковые объемы используемой памяти, которые превышают предполагаемый объем — это может указывать на неэффективное использование памяти в процедуре:  
   
- ![Memory spikes in Resource Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
+ ![Пиковая память в диспетчер ресурсов](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-## <a name="BKMK_Collect_memory_snapshots"></a> Collect memory snapshots  
- The memory analysis tool analyzes information in *dump files* that contain heap information. You can create dump files in Visual Studio, or you can use a tool like [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) from [Windows Sysinternals](https://technet.microsoft.com/sysinternals). See [What is a dump, and how do I create one?](https://blogs.msdn.microsoft.com/debugger/2009/12/30/what-is-a-dump-and-how-do-i-create-one/) on the Visual Studio Debugger Team blog.  
+## <a name="BKMK_Collect_memory_snapshots"></a>Получение моментальных снимков памяти  
+ Средство анализа памяти анализирует данные в *файлах дампа* , содержащих сведения о куче. Вы можете создавать файлы дампа в Visual Studio, а также использовать такие средства, как [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) , из [Windows Sysinternals](https://technet.microsoft.com/sysinternals). См. раздел [что такое дамп и как создать его?](https://blogs.msdn.microsoft.com/debugger/2009/12/30/what-is-a-dump-and-how-do-i-create-one/) в блоге группы отладчика Visual Studio.  
   
 > [!NOTE]
 > Большинство средств могут собирать данные дампа с полными данными памяти кучи или без них. Анализатору памяти Visual Studio требуются полные сведения о куче.  
   
- **To collect a dump from Visual Studio**  
+ **Получение дампа из Visual Studio**  
   
-1. Вы можете создать файл дампа для процесса, запущенного из проекта Visual Studio, или можете присоединить отладчик к запущенному процессу. See [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. Вы можете создать файл дампа для процесса, запущенного из проекта Visual Studio, или можете присоединить отладчик к запущенному процессу. См. раздел [Присоединение к запущенным процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2. Остановите выполнение. The debugger stops when you choose **Break All** on the **Debug** menu, or at an exception or at a breakpoint  
+2. Остановите выполнение. Отладчик останавливается, если выбрать пункт **прервать все** в меню **Отладка** , либо в случае исключения или в точке останова  
   
-3. On the **Debug** menu, choose **Save Dump As**. In the **Save Dump As** dialog box, specify a location and make sure that **Minidump with Heap** (the default) is selected in the **Save as type** list.  
+3. В меню **Отладка** выберите команду **сохранить дамп как**. В диалоговом окне **сохранить дамп как** укажите расположение и убедитесь, что в списке **Тип файла** выбрано мини- **дамп с кучей** (по умолчанию).  
   
-   **To compare two memory snapshots**  
+   **Сравнение двух моментальных снимков памяти**  
   
    Для анализа роста объема используемой приложением памяти получите два файла дампа из одного экземпляра приложения.  
   
-   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+   К [содержимому](#BKMK_Contents) ![сверху](../debugger/media/pcs-backtotop.png "PCS_BackToTop")  
   
-## <a name="BKMK_Analyze_memory_use"></a> Analyze memory use  
- [Filter the list of objects](#BKMK_Filter_the_list_of_objects) **&#124;** [Analyze memory data in from a single snapshot](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [Compare two memory snapshots](#BKMK_Compare_two_memory_snapshots)  
+## <a name="BKMK_Analyze_memory_use"></a>Анализ использования памяти  
+ [Фильтрация списка объектов](#BKMK_Filter_the_list_of_objects) **&#124;** . [анализ данных памяти в из одного моментального снимка](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [Сравнение двух моментальных снимков памяти](#BKMK_Compare_two_memory_snapshots)  
   
  Чтобы проанализировать файл дампа на наличие проблем с памятью:  
   
-1. In Visual Studio, choose **File**, **Open** and specify the dump file.  
+1. В Visual Studio выберите **файл**, **откройте** и укажите файл дампа.  
   
-2. On the **Minidump File Summary** page, choose **Debug Managed Memory**.  
+2. На странице **Сводка по файлу минидампа** выберите **Отладка управляемой памяти**.  
   
-    ![Dump file summary page](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![Страница "Сводка файлов дампа"](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
    Анализатор памяти начнет сеанс отладки для анализа файла, а результаты появятся на странице "Представление кучи":  
   
-   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+   К [содержимому](#BKMK_Contents) ![сверху](../debugger/media/pcs-backtotop.png "PCS_BackToTop")  
   
-### <a name="BKMK_Filter_the_list_of_objects"></a> Filter the list of objects  
- По умолчанию анализатор памяти фильтрует список объектов в снимке памяти, отображая только типы и экземпляры, относящиеся к коду пользователя, и показывая только те типы, общий инклюзивный размер которых превышает процентный порог от общего размера кучи. You can change these options in the **View Settings** list:  
+### <a name="BKMK_Filter_the_list_of_objects"></a>Фильтрация списка объектов  
+ По умолчанию анализатор памяти фильтрует список объектов в снимке памяти, отображая только типы и экземпляры, относящиеся к коду пользователя, и показывая только те типы, общий инклюзивный размер которых превышает процентный порог от общего размера кучи. Эти параметры можно изменить в списке **Просмотреть параметры** .  
   
 |||  
 |-|-|  
-|**Включение функции "Только мой код"**|В режиме "Только мой код" основные системные объекты скрыты, поэтому в списке отображаются только типы, созданные вами.<br /><br /> You can also set the Just My Code option in the Visual Studio **Options** dialog box. В меню **Отладка** выберите **Параметры и настройки**. In the **Debugging**/**General** tab, choose or clear **Just My Code**.|  
-|**Collapse Small Objects**|**Collapse Small Objects** hides all types whose total inclusive size is less than 0.5 percent of the total heap size.|  
+|**Включение функции "Только мой код"**|В режиме "Только мой код" основные системные объекты скрыты, поэтому в списке отображаются только типы, созданные вами.<br /><br /> Можно также задать параметр Только мой код в диалоговом окне **Параметры** Visual Studio. В меню **Отладка** выберите **Параметры и настройки**. На вкладке/**Общие** ( **Отладка** ) выберите или снимите флажок **только мой код**.|  
+|**Свернуть небольшие объекты**|**Свернуть небольшие объекты** скрывает все типы, общий инклюзивный размер которых меньше 0,5% от общего размера кучи.|  
   
- You can also filter the type list by entering a string in the **Search** box. В списке будут показаны только типы, имена которых содержат введенную строку.  
+ Можно также отфильтровать список типов, введя строку в поле **поиска** . В списке будут показаны только типы, имена которых содержат введенную строку.  
   
- ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+ К [содержимому](#BKMK_Contents) ![сверху](../debugger/media/pcs-backtotop.png "PCS_BackToTop")  
   
-### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analyze memory data in from a single snapshot  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a>Анализ данных памяти в одном снимке  
  Visual Studio начнет новый сеанс отладки для анализа файла, а результаты появятся в окне "Представление кучи".  
   
- ![The Object Type list](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
+ ![Список типов объектов](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
   
- ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+ К [содержимому](#BKMK_Contents) ![сверху](../debugger/media/pcs-backtotop.png "PCS_BackToTop")  
   
 #### <a name="object-type-table"></a>Таблица "Тип объекта"  
  В верхней таблице перечислены типы объектов, которые хранятся в памяти.  
   
-- **Count** shows the number of instances of the type in the snapshot.  
+- **Количество** показывает количество экземпляров типа в моментальном снимке.  
   
-- **Size (Bytes)** is the size of the all instances of the type, excluding the size of objects it holds references to. Классу  
+- **Размер (в байтах)** — это размер всех экземпляров типа, исключая размер объектов, на которые он ссылается. Классу  
   
-- **Inclusive Size (Bytes)** includes the sizes of referenced objects.  
+- **Инклюзивный размер (в байтах)** включает размеры объектов, на которые имеются ссылки.  
   
-  You can choose the instances icon (![The instance icon in the Object Type column](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) in the **Object Type** column to view a list of the instances of the type.  
+  Чтобы просмотреть список экземпляров типа, можно выбрать значок экземпляры (![значок экземпляра в столбце Тип объекта](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) в столбце **тип объекта** .  
   
 #### <a name="instance-table"></a>Таблица экземпляров  
- ![Instances table](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
+ ![Таблица экземпляров](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
-- **Instance** is the memory location of the object that serves as the object identifier of the object  
+- **Instance** — это расположение памяти объекта, который служит в качестве идентификатора объекта объекта.  
   
-- **Value** shows the actual value of value types. Можно навести указатель мыши на имя ссылочного типа, чтобы просмотреть его значения в подсказке.  
+- **Значение** показывает фактическое значение типов значений. Можно навести указатель мыши на имя ссылочного типа, чтобы просмотреть его значения в подсказке.  
   
-   ![Instance values in a data tip](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![Значения экземпляров в подсказке к данным](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
-- **Size (Bytes)** is the size of the object, excluding the size of objects it holds references to. Классу  
+- **Размер (в байтах)** — это размер объекта, исключая размер объектов, на которые он ссылается. Классу  
   
-- **Inclusive Size (Bytes)** includes the sizes of referenced objects.  
+- **Инклюзивный размер (в байтах)** включает размеры объектов, на которые имеются ссылки.  
   
-  By default, types and instances are sorted by **Inclusive Size (Bytes)** . Выберите заголовок столбца в списке, чтобы изменить порядок сортировки.  
+  По умолчанию типы и экземпляры сортируются по **инклюзивному размеру (в байтах)** . Выберите заголовок столбца в списке, чтобы изменить порядок сортировки.  
   
 #### <a name="paths-to-root"></a>Пути к корню  
   
-- For a type selected from the **Object Type** table, the **Paths to Root** table shows the unique type hierarchies that lead to root objects for all objects of the type, along with the number of references to the type that is above it in the hierarchy.  
+- Для типа, выбранного из таблицы **тип объекта** , **пути к корневой** таблице показывают уникальные иерархии типов, ведущие к корневым объектам для всех объектов данного типа, а также число ссылок на тип, расположенный над ним в иерархии.  
   
-- For an object selected from the instance of a type, **Paths to Root** shows a graph of the actual objects that hold a reference to the instance. Можно навести указатель мыши на имя объекта, чтобы просмотреть его значения в подсказке.  
+- Для объекта, выбранного из экземпляра типа, **пути к корню** показывают графы фактических объектов, которые содержат ссылку на экземпляр. Можно навести указатель мыши на имя объекта, чтобы просмотреть его значения в подсказке.  
   
 #### <a name="referenced-types--referenced-objects"></a>Ссылочные типы и объекты  
   
-- For a type selected from the **Object Type** table, the **Referenced Types** tab shows the size and number of referenced types held by all objects of the selected type.  
+- Для типа, выбранного из таблицы **тип объекта** , на вкладке **Ссылочные типы** отображается размер и количество ссылочных типов, удерживаемых всеми объектами выбранного типа.  
   
-- For a selected instance of a type, **Referenced Objects** shows the objects that are held by the selected instance. Можно навести указатель мыши на имя, чтобы просмотреть значения в подсказке.  
+- Для выбранного экземпляра типа объекты, на которые **указывают ссылки** , показывают объекты, удерживаемые выбранным экземпляром. Можно навести указатель мыши на имя, чтобы просмотреть значения в подсказке.  
   
-  **Circular references**  
+  **Циклические ссылки**  
   
-  Объект может ссылаться на второй объект, который напрямую или косвенно содержит ссылку на первый объект. When the memory analyzer encounters this situation, it stops expanding the reference path and adds a **[Cycle Detected]** annotation to the listing of the first object and stops.  
+  Объект может ссылаться на второй объект, который напрямую или косвенно содержит ссылку на первый объект. Когда анализатор памяти встречает эту ситуацию, он прекращает расширение пути ссылки и добавляет заметку **[Cycled]** в список первого объекта и останавливается.  
   
-  **Root types**  
+  **Корневые типы**  
   
   Анализатор памяти добавляет к корневым объектам комментарии с описанием ссылки, которые содержатся в объектах:  
   
 |Комментарий|Описание|  
 |----------------|-----------------|  
-|**Static variable** `VariableName`|Статическая переменная. `VariableName` — имя переменной.|  
-|**Finalization Handle**|Ссылка из очереди метода завершения|  
-|**Local Variable**|Локальная переменная.|  
-|**Strong Handle**|Дескриптор строгой ссылки из таблицы дескрипторов объектов.|  
-|**Async. Pinned Handle**|Асинхронный закрепленный объект из таблицы дескрипторов объектов.|  
-|**Dependent Handle**|Зависимый объект из таблицы дескрипторов объектов.|  
-|**Pinned Handle**|Закрепленная строгая ссылка из таблицы дескрипторов объектов.|  
-|**RefCount Handle**|Объект с подсчетом ссылок из таблицы дескрипторов объектов.|  
-|**SizedRef Handle**|Строгая ссылка, хранящая приблизительный размер общего закрытия всех объектов и корневых объектов во время сборки мусора.|  
-|**Pinned local variable**|Закрепленная локальная переменная.|  
+|**Статическая переменная** `VariableName`|Статическая переменная. `VariableName` — имя переменной.|  
+|**Маркер финализации**|Ссылка из очереди метода завершения|  
+|**Локальная переменная**|Локальная переменная.|  
+|**Строгий маркер**|Дескриптор строгой ссылки из таблицы дескрипторов объектов.|  
+|**Async. Закрепленный маркер**|Асинхронный закрепленный объект из таблицы дескрипторов объектов.|  
+|**Зависимый маркер**|Зависимый объект из таблицы дескрипторов объектов.|  
+|**Закрепленный маркер**|Закрепленная строгая ссылка из таблицы дескрипторов объектов.|  
+|**Маркер RefCount**|Объект с подсчетом ссылок из таблицы дескрипторов объектов.|  
+|**Дескриптор sizedref, обработчик**|Строгая ссылка, хранящая приблизительный размер общего закрытия всех объектов и корневых объектов во время сборки мусора.|  
+|**Закрепленная локальная переменная**|Закрепленная локальная переменная.|  
   
-### <a name="BKMK_Compare_two_memory_snapshots"></a> Compare two memory snapshots  
+### <a name="BKMK_Compare_two_memory_snapshots"></a>Сравнение двух моментальных снимков памяти  
  Вы можете сравнить два файла дампа процесса, чтобы найти объекты, которые могут вызывать утечку памяти. Интервал между сбором первого (более раннего) и второго (более позднего) файла должен быть достаточно большим, чтобы увеличение числа потерянных объектов было очевидным. Сравнение двух файлов  
   
-1. Open the second dump file, and then choose **Debug Managed Memory** on the **Minidump File Summary** page.  
+1. Откройте второй файл дампа и выберите **Отладка управляемой памяти** на странице **Сводка файла минидампа** .  
   
-2. On the memory analysis report page, open the **Select baseline** list, and then choose **Browse** to specify the first dump file.  
+2. На странице Отчет об анализе памяти Откройте список **Выбор базовых показателей** и нажмите кнопку **Обзор** , чтобы указать первый файл дампа.  
   
-   The analyzer adds columns to the top pane of the report that display the difference between the **Count**, **Size**, and **Inclusive Size** of the types to those values in the earlier snapshot.  
+   Анализатор добавляет столбцы в верхнюю область отчета, которая показывает разницу между **числом**, **размером**и **инклюзивным размером** типов с этими значениями в более раннем снимке.  
   
-   ![Diff columns in the type list](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Сравнение столбцов в списке типов](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
-   A **Reference Count Diff** column is also added to the **Paths to Root** table.  
+   В **пути к корневой** таблице также добавляется столбец **разницы по числу ссылок** .  
   
-   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+   К [содержимому](#BKMK_Contents) ![сверху](../debugger/media/pcs-backtotop.png "PCS_BackToTop")  
   
-## <a name="see-also"></a>См. также раздел  
- [VS ALM TFS Blog: Using Visual Studio 2013 to Diagnose .NET Memory Issues in Production](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/)   
- [Channel 9 &#124; Visual Studio TV &#124; Managed Memory Analysis](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
- [Channel 9 &#124; Visual Studio Toolbox &#124; Managed Memory Analysis in Visual Studio 2013](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)
+## <a name="see-also"></a>См. также  
+ [Блог по VS ALM TFS. использование Visual Studio 2013 для диагностики проблем с памятью .NET в рабочей среде](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/)   
+   [анализа &#124; управляемой памяти &#124; канала 9 Visual Studio TV](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)  
+ [Анализ управляемой памяти на канале 9 &#124; в панели элементов &#124; Visual Studio в Visual Studio 2013](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

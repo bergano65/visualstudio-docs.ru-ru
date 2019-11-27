@@ -1,5 +1,5 @@
 ---
-title: XSLT Profiler | Microsoft Docs
+title: Профилировщик XSLT | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -21,14 +21,14 @@ ms.locfileid: "74300958"
 
 Профилировщик XSLT представляет собой средство профилирования для анализа производительности, используемое при разработке и отладке XSLT-документов. С помощью профилировщика XSLT разработчики могут измерять и оценивать связанные с производительностью проблемы в XSLT-коде, создавая подробные отчеты о производительности XSLT. Профилировщик XSLT содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT, необходимые для приложений XSLT, требующих максимальной производительности.
 
- The XSLT Profiler is part of Visual Studio 2010 and is available from the Visual Studio **XML** menu.
+ Профилировщик XSLT входит в состав Visual Studio 2010 и доступен в меню Visual Studio **XML** .
 
- ![Профилировщик XSLT](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
+ ![Профилировщик XSLT](../xml-tools/media/xsltprofilermenu.gif "ксслтпрофилермену")
 
- Профилировщик XSLT впервые был представлен в виде надстройки для Visual Studio 2008. For more information, see the Related Resources section on the [XSLT Profiler for Visual Studio Feb 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) page.
+ Профилировщик XSLT впервые был представлен в виде надстройки для Visual Studio 2008. Дополнительные сведения см. в разделе связанные ресурсы на странице [профилировщика XSLT для Visual Studio Фев 08 ознакомительная версия для сообщества](https://go.microsoft.com/fwlink/?LinkId=142987) .
 
 > [!NOTE]
 > Внешний вид некоторых окон в Visual Studio 2010 может отличаться от изображенного в этих документах, так как некоторые визуальные элементы были изменены по сравнению с версией Visual Studio 2008.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Пошаговое руководство. Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)

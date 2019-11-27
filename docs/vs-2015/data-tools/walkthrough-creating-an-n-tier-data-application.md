@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating an N-Tier Data Application | Microsoft Docs'
+title: Пошаговое руководство. Создание N-уровневого приложения для данных | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -27,11 +27,11 @@ ms.locfileid: "74299595"
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Пошаговое руководство. Создание многоуровневого приложения для работы с данными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-N-tier* data applications are applications that access data and are separated into multiple logical layers, or *tiers*. Разделение компонентов приложения на несколько отдельных уровней повышает удобство обслуживания и масштабируемость приложения. Это обеспечивается за счет упрощения внедрения новых технологий, которые можно применить к отдельному уровню без пересмотра всего решения. N-уровневая архитектура включает в себя уровень представления, средний уровень и уровень данных. Средний уровень обычно содержит слой доступа к данным, слой бизнес-логики и общие компоненты, такие как аутентификация и проверка. Уровень данных содержит реляционную базу данных. N-уровневые приложения обычно хранят конфиденциальную информацию на слое доступа к данным среднего уровня, чтобы обеспечить изоляцию от конечных пользователей, работающих с уровнем представления. For more information, see [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md).
+N-уровневые приложения для данных — это приложения, которые обращаются к данным и делятся на несколько логических слоев или *уровней*. Разделение компонентов приложения на несколько отдельных уровней повышает удобство обслуживания и масштабируемость приложения. Это обеспечивается за счет упрощения внедрения новых технологий, которые можно применить к отдельному уровню без пересмотра всего решения. N-уровневая архитектура включает в себя уровень представления, средний уровень и уровень данных. Средний уровень обычно содержит слой доступа к данным, слой бизнес-логики и общие компоненты, такие как аутентификация и проверка. Уровень данных содержит реляционную базу данных. N-уровневые приложения обычно хранят конфиденциальную информацию на слое доступа к данным среднего уровня, чтобы обеспечить изоляцию от конечных пользователей, работающих с уровнем представления. Дополнительные сведения см. в статье [Общие сведения о N-уровневых приложениях данных](../data-tools/n-tier-data-applications-overview.md).
 
  Один из способов разделения разных уровней в n-уровневом приложении заключается в создании отдельных проектов для каждого уровня, который требуется включить в приложение. Типизированные наборы данных содержат свойство `DataSet Project`, определяющее, в какие проекты следует передать созданный набор данных и код `TableAdapter`.
 
- В данном пошаговом руководстве демонстрируется, как разделить набор данных и код `TableAdapter` по отдельным проектам библиотеки классов с помощью **конструктора наборов данных**. After you separate the dataset and TableAdapter code, you will create a [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) service to call into the data access tier. Наконец, вы создадите приложение Windows Forms в качестве уровня представления. Этот уровень осуществляет доступ к данным из службы данных.
+ В данном пошаговом руководстве демонстрируется, как разделить набор данных и код `TableAdapter` по отдельным проектам библиотеки классов с помощью **конструктора наборов данных**. После разделения набора данных и кода TableAdapter вы создадите [Windows Communication Foundation служб и WCF Data Services в службе Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) для вызова уровня доступа к данным. Наконец, вы создадите приложение Windows Forms в качестве уровня представления. Этот уровень осуществляет доступ к данным из службы данных.
 
  В этом пошаговом руководстве выполняются следующие задачи.
 
@@ -41,7 +41,7 @@ N-tier* data applications are applications that access data and are separated in
 
 - Создание типизированного набора данных с помощью **мастера настройки источника данных**.
 
-- Separate the generated [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) and dataset code into discrete projects.
+- Разделите созданные [TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) и код набора данных на отдельные проекты.
 
 - Создание службы WCF для вызова уровня доступа к данным.
 
@@ -53,66 +53,66 @@ N-tier* data applications are applications that access data and are separated in
 
 - Написание кода для заполнения таблиц данных.
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo") For a video version of this topic, see [Video How to: Creating an N-Tier Data Application](https://go.microsoft.com/fwlink/?LinkId=115188).
+  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Версию этого раздела для видео см. в [видео как создать N-уровневое приложение для работы с данными](https://go.microsoft.com/fwlink/?LinkId=115188).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Для выполнения данного пошагового руководства требуется:
 
 - Доступ к примеру базы данных "Борей".
 
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Создание N-уровневого решения и библиотеки классов для хранения набора данных (DataEntityTier)
- Первым шагом данного руководства является создание решения и двух проектов библиотеки классов. Первая библиотека классов будет содержать набор данных (сформированный класс типизированного набора данных и таблицы данных, которые будут содержать данные приложения). Этот проект используется в качестве слоя сущностей данных приложения и обычно находится в среднем уровне. The Dataset Designer is used to create the initial dataset and automatically separate the code into the two class libraries.
+ Первым шагом данного руководства является создание решения и двух проектов библиотеки классов. Первая библиотека классов будет содержать набор данных (сформированный класс типизированного набора данных и таблицы данных, которые будут содержать данные приложения). Этот проект используется в качестве слоя сущностей данных приложения и обычно находится в среднем уровне. Конструктор наборов данных используется для создания исходного набора данных и автоматического разделения кода на две библиотеки классов.
 
 > [!NOTE]
 > Обязательно присвойте проекту и решению правильные имена перед нажатием кнопки **ОК**. Это облегчит выполнение данного пошагового руководства.
 
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Создание n-уровневого решения и библиотеки классов DataEntityTier
 
-1. From the **File** menu, create a new project.
+1. В меню **файл** создайте новый проект.
 
     > [!NOTE]
-    > The **Dataset Designer** is supported in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] and C# projects. Создайте новый проект на одном из этих языков.
+    > **Конструктор наборов данных** поддерживается в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] и C# проектах. Создайте новый проект на одном из этих языков.
 
-2. In the **New Project** dialog box, in the **Project types** pane, click **Windows**.
+2. В диалоговом окне **Новый проект** на панели **типы проектов** щелкните **Windows**.
 
-3. Click the **Class Library** template.
+3. Щелкните шаблон **Библиотека классов** .
 
 4. Присвойте проекту имя **DataEntityTier**.
 
-5. Name the solution **NTierWalkthrough**.
+5. Назовите решение **NTierWalkthrough**.
 
 6. Нажмите кнопку **ОК**.
 
      Создается решение NTierWalkthrough, содержащее проект DataEntityTier, которое добавляется в **Обозреватель решений**.
 
 ## <a name="creating-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>Создание библиотеки классов для хранения адаптеров таблицы (DataAccessTier)
- Следующий наг после создания проекта DataEntityTier заключается в создании другого проекта библиотеки классов. This project will hold the generated `TableAdapter`s and is called the *data access tier* of the application. Уровень доступа к данным содержит информацию, необходимую для подключения к базе данных, и обычно находится на среднем уровне.
+ Следующий наг после создания проекта DataEntityTier заключается в создании другого проекта библиотеки классов. Этот проект будет содержать созданные `TableAdapter`s и называется *уровнем доступа к данным* приложения. Уровень доступа к данным содержит информацию, необходимую для подключения к базе данных, и обычно находится на среднем уровне.
 
 #### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>Создание новой библиотеки классов для адаптеров таблиц
 
-1. From the **File** menu, add a new project to the NTierWalkthrough solution.
+1. В меню **файл** добавьте новый проект в решение NTierWalkthrough.
 
-2. In the **New Project** dialog box, in the **Templates** pane, click **Class Library**.
+2. В диалоговом окне **Новый проект** в области **шаблоны** выберите пункт **Библиотека классов**.
 
-3. Name the project **DataAccessTier** and click **OK**.
+3. Присвойте проекту имя **DataAccessTier** и нажмите кнопку **ОК**.
 
      Создается проект DataAccessTier, который добавляется в решение NTierWalkthrough.
 
 ## <a name="creating-the-dataset"></a>Создание набора данных
- Следующим шагом является создание типизированного набора данных. Типизированные наборы данных создаются с классом набора данных (включая классы таблиц данных) и классами `TableAdapter` в одном проекте. (All classes are generated into a single file.) When you separate the dataset and `TableAdapter`s into different projects, it is the dataset class that is moved to the other project, leaving the `TableAdapter` classes in the original project. Таким образом, создайте набор данных в проекте, который в конечном итоге будет содержать `TableAdapter` (проект DataAccessTier). You will create the dataset by using the **Data Source Configuration Wizard**.
+ Следующим шагом является создание типизированного набора данных. Типизированные наборы данных создаются с классом набора данных (включая классы таблиц данных) и классами `TableAdapter` в одном проекте. (Все классы создаются в одном файле.) Если набор данных и `TableAdapter`s разделяются на разные проекты, то это класс набора данных, который перемещается в другой проект, в результате чего классы `TableAdapter` в исходном проекте будут удалены. Таким образом, создайте набор данных в проекте, который в конечном итоге будет содержать `TableAdapter` (проект DataAccessTier). Набор данных будет создан с помощью **мастера настройки источника данных**.
 
 > [!NOTE]
 > Для создания подключения необходимо иметь доступ к учебной базе данных "Борей".
 
 #### <a name="to-create-the-dataset"></a>Создание набора данных
 
-1. Click DataAccessTier in **Solution Explorer**.
+1. Щелкните DataAccessTier в **Обозреватель решений**.
 
 2. В меню **Данные** выберите команду **Показать источники данных**.
 
-3. In the **Data Sources** window, click **Add New Data Source** to start the **Data Source Configuration Wizard**.
+3. В окне **Источники данных** щелкните **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
-4. On the **Choose a Data Source Type** page, click **Database** and then click **Next**.
+4. На странице **Выбор типа источника данных** выберите **база данных** и нажмите кнопку **Далее**.
 
 5. На странице **Выбор подключения к базе данных** выполните одно из следующих действий:
 
@@ -120,18 +120,18 @@ N-tier* data applications are applications that access data and are separated in
 
      \- или -
 
-     Click **New Connection** to open the **Add Connection** dialog box.
+     Нажмите кнопку **создать соединение** , чтобы открыть диалоговое окно **Добавление соединения** .
 
 6. Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных и щелкните **Далее**.
 
     > [!NOTE]
-    > Если вы выбрали файл локальной базы данных (вместо подключения к SQL Server), может отображаться запрос о том, требуется ли включить этот файл в проект. Click **Yes** to add the database file to the project.
+    > Если вы выбрали файл локальной базы данных (вместо подключения к SQL Server), может отображаться запрос о том, требуется ли включить этот файл в проект. Нажмите кнопку **Да** , чтобы добавить файл базы данных в проект.
 
-7. Click **Next** on the **Save the Connection String to the Application Configuration File** page.
+7. Нажмите кнопку **Далее** на странице **Сохранение строки подключения в файле конфигурации приложения** .
 
 8. Разверните узел **Таблицы** на странице **Выбор объектов базы данных** .
 
-9. Click the check boxes for the **Customers** and **Orders** tables, and then click **Finish**.
+9. Установите флажки для таблиц **Customers** и **Orders** , а затем нажмите кнопку **Готово**.
 
      NorthwindDataSet добавляется в проект DataAccessTier и отображается в окне **Источники данных**.
 
@@ -146,11 +146,11 @@ N-tier* data applications are applications that access data and are separated in
 
 3. Найдите узел **Проект DataSet** в окне **Свойства**.
 
-4. In the **DataSet Project** list, click **DataEntityTier**.
+4. В списке **проект набора данных** выберите **DataEntityTier**.
 
 5. В меню **Сборка** выберите **Собрать решение**.
 
-   Набор данных и адаптеры таблицы делятся на два проекта библиотеки классов. Проект, который изначально содержал весь набор данных (DataAccessTier), теперь содержит только адаптеры таблицы. The project designated in the **DataSet Project** property (DataEntityTier) contains the typed dataset: NorthwindDataSet.Dataset.Designer.vb (or NorthwindDataSet.Dataset.Designer.cs).
+   Набор данных и адаптеры таблицы делятся на два проекта библиотеки классов. Проект, который изначально содержал весь набор данных (DataAccessTier), теперь содержит только адаптеры таблицы. Проект, указанный в свойстве **проекта набора данных** (DataEntityTier), содержит типизированный набор данных: NorthwindDataSet. DataSet. Designer. vb (или NorthwindDataSet.DataSet.Designer.cs).
 
 > [!NOTE]
 > При разделении наборов данных и адаптеров таблиц (посредством установки свойства **Проект DataSet**) существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Их необходимо переместить в проект набора данных вручную.
@@ -160,11 +160,11 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-create-a-new-wcf-service-application"></a>Создание нового приложения службы WCF
 
-1. From the **File** menu, add a new project to the NTierWalkthrough solution.
+1. В меню **файл** добавьте новый проект в решение NTierWalkthrough.
 
-2. In the **New Project** dialog box, in the **Project types** pane, click **WCF**. In the **Templates** pane, click **WCF Service Library**.
+2. В диалоговом окне **Новый проект** на панели **типы проектов** щелкните **WCF**. В области **шаблоны** выберите пункт **Библиотека служб WCF**.
 
-3. Name the project **DataService** and click **OK**.
+3. Назовите **службу** Project и нажмите кнопку **ОК**.
 
      Создается проект DataService, который добавляется в решение NTierWalkthrough.
 
@@ -173,9 +173,9 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Создание метода на уровне доступа к данным, возвращающего таблицу клиентов
 
-1. In **Solution Explorer**, double-click NorthwindDataset.xsd to open the dataset in the Dataset Designer.
+1. В **Обозреватель решений**дважды щелкните NorthwindDataSet. xsd, чтобы открыть набор данных в конструктор наборов данных.
 
-2. Right-click CustomersTableAdapter and click **Add Query** to edit the Tableadapter.
+2. Щелкните правой кнопкой мыши CustomersTableAdapter и выберите команду **Добавить запрос** , чтобы изменить TableAdapter.
 
 3. На странице **Выбор типа команды** оставьте значение по умолчанию для параметра **Использовать инструкции SQL** и нажмите кнопку **Далее**.
 
@@ -189,7 +189,7 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Создание метода на уровне доступа к данным, возвращающего таблицу заказов
 
-1. Right-click OrdersTableAdapter and click **Add Query**.
+1. Щелкните правой кнопкой мыши OrdersTableAdapter и выберите команду **Добавить запрос**.
 
 2. На странице **Выбор типа команды** оставьте значение по умолчанию для параметра **Использовать инструкции SQL** и нажмите кнопку **Далее**.
 
@@ -208,7 +208,7 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-add-references-to-the-data-service"></a>Добавление ссылок в службу данных
 
-1. Right-click DataService in **Solution Explorer** and click **Add Reference**.
+1. Щелкните правой кнопкой мыши элемент службы **Обозреватель решений** и выберите команду **Добавить ссылку**.
 
 2. Откройте вкладку **Проекты** в диалоговом окне **Добавление ссылки**.
 
@@ -224,7 +224,7 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Создание функций GetCustomers и GetOrders в службе данных
 
-1. In the **DataService** project, double-click IService1.vb or IService1.cs.
+1. В проекте **службы** объектных служб дважды щелкните IService1. vb или IService1.cs.
 
 2. Добавьте следующий код под комментарием **Добавьте здесь операции служб**:
 
@@ -287,9 +287,9 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-create-the-presentation-tier-project"></a>Создание проекта уровня представления
 
-1. From the **File** menu, add a new project to the NTierWalkthrough solution.
+1. В меню **файл** добавьте новый проект в решение NTierWalkthrough.
 
-2. In the **New Project** dialog box, in the **Project types** pane, click **Windows**. Выберите **Приложение Windows Forms** в области **Шаблоны**.
+2. В диалоговом окне **Новый проект** на панели **типы проектов** щелкните **Windows**. Выберите **Приложение Windows Forms** в области **Шаблоны**.
 
 3. Присвойте проекту имя **PresentationTier** и нажмите кнопку **ОК**.
 
@@ -307,19 +307,19 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-add-a-reference-to-the-presentation-tier"></a>Добавление ссылки на уровень представления
 
-1. In **Solution Explorer**, right-click PresentationTier and click **Add Reference**.
+1. В **Обозреватель решений**щелкните правой кнопкой мыши узел PresentationTier и выберите команду **Добавить ссылку**.
 
-2. In the **Add Reference** dialog box, click the **Projects** tab.
+2. В диалоговом окне **Добавление ссылки** перейдите на вкладку **проекты** .
 
-3. Select **DataEntityTier** and click **OK**.
+3. Выберите **DataEntityTier** и нажмите кнопку **ОК**.
 
 #### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>Добавление ссылки на службу на уровень представления
 
-1. In **Solution Explorer**, right-click PresentationTier and click **Add Service Reference**.
+1. В **Обозреватель решений**щелкните правой кнопкой мыши узел PresentationTier и выберите пункт **Добавление ссылки на службу**.
 
 2. В диалоговом окне **Добавление ссылки на службу** щелкните элемент **Найти**.
 
-3. Select **Service1** and click **OK**.
+3. Выберите **Service1** и нажмите кнопку **ОК**.
 
     > [!NOTE]
     > Если на текущем компьютере имеется несколько служб, выберите службу, созданную ранее в рамках работы с этим руководством (эта служба содержит методы GetCustomers и GetOrders).
@@ -329,7 +329,7 @@ N-tier* data applications are applications that access data and are separated in
 
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Создание двух элементов DataGridView с привязкой к данным на форме
 
-1. In **Solution Explorer**, select the PresentationTier project.
+1. В **Обозреватель решений**выберите проект PresentationTier.
 
 2. В окне **Источники данных** разверните **NorthwindDataSet** и найдите узел **Customers**.
 
@@ -361,11 +361,11 @@ N-tier* data applications are applications that access data and are separated in
  Поскольку служба возвращает данные из таблиц "Клиенты" и "Заказы", значение по умолчанию для maxReceivedMessageSize слишком мало для хранения данных, поэтому его следует увеличить. В этом пошаговом руководстве вы измените это значение на 6553600. Вы измените это значение в клиенте, после чего будет автоматически обновлена ссылка на службу.
 
 > [!NOTE]
-> Меньший размер по умолчанию призван ограничить уязвимость для атак типа "отказ в обслуживании" (DoS). Для получения дополнительной информации см. <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> Меньший размер по умолчанию призван ограничить уязвимость для атак типа "отказ в обслуживании" (DoS). Дополнительные сведения см. в разделе <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Увеличение значения maxReceivedMessageSize
 
-1. In **Solution Explorer**, double-click the app.config file in the PresentationTier project.
+1. В **Обозреватель решений**дважды щелкните файл App. config в проекте PresentationTier.
 
 2. Найдите атрибут размера **maxReceivedMessage** и измените его значение на `6553600`.
 
@@ -378,12 +378,12 @@ N-tier* data applications are applications that access data and are separated in
 
 2. Данные из таблиц клиентов и заказов извлекаются из службы данных и отображаются на форме.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
  В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после сохранения связанных данных в приложении Windows. Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.
 
-- Добавьте проверку в набор данных. For information, see [Walkthrough: Adding Validation to an N-Tier Data Application](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).
+- Добавьте проверку в набор данных. Дополнительные сведения см. [в разделе Пошаговое руководство. Добавление проверки в N-уровневое приложение для данных](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).
 
 - Добавьте в службу дополнительные методы для обновления данных в базе данных.
 
-## <a name="see-also"></a>См. также раздел
- [Work with datasets in n-tier applications](../data-tools/work-with-datasets-in-n-tier-applications.md) [Hierarchical update](../data-tools/hierarchical-update.md) [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>См. также
+ [Работа с наборами данных в n-уровневых приложениях](../data-tools/work-with-datasets-in-n-tier-applications.md) [Иерархическое обновление](../data-tools/hierarchical-update.md) [доступа к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

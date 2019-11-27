@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue Errors and Warnings (C#) | Microsoft Docs
+title: Ошибки и предупреждения для изменения и продолженияC#() | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -85,5 +85,5 @@ ms.locfileid: "74299277"
   
 2. Остановите сеанс отладки, внесите изменения и начните новый сеанс отладки.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Режим "Изменить и продолжить" (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

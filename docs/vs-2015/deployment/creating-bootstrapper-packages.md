@@ -1,5 +1,5 @@
 ---
-title: Creating Bootstrapper Packages | Microsoft Docs
+title: Создание пакетов начального загрузчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -76,7 +76,7 @@ ms.locfileid: "74300732"
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- or  
+ или  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  В следующей таблице перечислены свойства, которые заполняются начальным загрузчиком автоматически.  
   
-|свойство;|Описание|  
+|Свойство|Описание|  
 |--------------|-----------------|  
 |ApplicationName|Имя приложения.|  
 |ProcessorArchitecture|Процессор и количество бит на слово в платформе, для которой предназначен исполняемый файл. В эти значения входят:<br /><br /> — Intel<br />— IA64<br />— AMD64|  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Диалоговое окно «Необходимые компоненты»](../ide/reference/prerequisites-dialog-box.md)   
- [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)   
+ [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)   
  [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](https://go.microsoft.com/fwlink/?LinkId=107537)

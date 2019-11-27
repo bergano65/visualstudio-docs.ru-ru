@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Lifecycle Policy Exceptions | Microsoft Docs
+title: Исключения политики жизненного цикла Visual Studio | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -49,4 +49,4 @@ Visual Studio включает в себя ряд компиляторов, яз
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Пакет SDK для Windows 7|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Пакет SDK для Windows 8|  
 |[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Пакет SDK для Windows 8.1<br /><br /> Библиотека Windows для JavaScript (WinJS)|  
-|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> See also: [Online Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Пакет SDK для мобильных служб Microsoft Azure<br /><br /> Инструменты мобильных служб Microsoft Azure|
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> См. также: [Политика жизненного цикла в сети](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Пакет SDK для мобильных служб Microsoft Azure<br /><br /> Инструменты мобильных служб Microsoft Azure|

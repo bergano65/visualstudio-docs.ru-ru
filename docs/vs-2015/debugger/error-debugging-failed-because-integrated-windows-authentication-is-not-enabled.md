@@ -1,5 +1,5 @@
 ---
-title: 'Error: Debugging Failed Because Integrated Windows Authentication Is Not Enabled | Microsoft Docs'
+title: 'Ошибка: Отладка не удалась, так как встроенная проверка подлинности Windows не включена | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -71,7 +71,7 @@ ms.locfileid: "74299793"
   
 2. Включите проверку подлинности Windows и совместимость управления IIS6, если раньше это не было выполнено, используя следующие шаги:  
   
-    1. Click **Start**, click **Control Panel** and then click **Programs**.  
+    1. Нажмите кнопку **Пуск**, выберите **Панель управления** , а затем — **программы**.  
   
     2. В группе **Программы и компоненты** выберите пункт **Включение или отключение компонентов Windows**.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "74299793"
   
 10. Закройте окно **Диспетчер служб IIS**.  
   
-## <a name="see-also"></a>См. также раздел  
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>См. также  
+ [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Дайджест-аутентификация Microsoft](https://go.microsoft.com/fwlink/?LinkId=77938)   
- [Running Web Applications on Windows Vista with IIS 7.0 and Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Запуск веб-приложений в Windows Vista с помощью IIS 7,0 и Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -39,18 +39,18 @@ ms.locfileid: "74299911"
 
   ![Изображение результата, создаваемого в этом учебнике](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Изображение результата, создаваемого в этом учебнике
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [How Do I: Create a Picture Viewer in Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) or [How Do I: Create a Picture Viewer in C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
+  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этого раздела см [. раздел практические руководства. Создание средства просмотра изображений в Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) или [инструкции. Создание средства просмотра изображений в C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
 >
-> To see code for Visual Basic, choose the **VB** tab at the top of code blocks, and to see code for Visual C#, choose the **C#** tab. If you're interested in learning about Visual C++, see [Getting Started](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) and [C++ Language Tutorial](http://www.cplusplus.com/doc/tutorial/).
+> Чтобы просмотреть код для Visual Basic, выберите вкладку **VB** в верхней части блоков кода, а чтобы увидеть код для визуального элемента C#, выберите **C#** вкладку. Если вы заинтересованы в изучении визуального элемента C++, ознакомьтесь с руководством по [Начало работы](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) и [ C++ языку](http://www.cplusplus.com/doc/tutorial/).
 >
 > Если вас интересует написание приложений для Магазина Windows на языках Visual C# или Visual Basic, см. раздел [Создание своего первого приложения Магазина Windows на C# или Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Сведения о создании приложений для Магазина Windows на языке JavaScript см. в разделе [Создание вашего первого приложения Магазина Windows на JavaScript](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-|Заголовок|Описание|
+|Название|Описание|
 |-----------|-----------------|
 |[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начало разработки программы с создания проекта приложения Windows Forms.|
 |[Шаг 2. Запуск программы](../ide/step-2-run-your-program.md)|Запуск программы приложения Windows Forms, которая была создана на предыдущем шаге.|

@@ -1,5 +1,5 @@
 ---
-title: VSSDK Samples | Microsoft Docs
+title: Примеры VSSDK | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -21,5 +21,5 @@ ms.locfileid: "74298178"
   
  Также доступен пример IronPython. Он интегрирован с [проектом IronPython Studio](https://go.microsoft.com/fwlink/?LinkID=183554) на сайте CodePlex.  
   
-## <a name="see-also"></a>См. также раздел  
- [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
+## <a name="see-also"></a>См. также  
+ [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)

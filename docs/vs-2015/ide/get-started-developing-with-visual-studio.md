@@ -1,5 +1,5 @@
 ---
-title: Get Started Developing | Microsoft Docs
+title: Начало разработки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -33,7 +33,7 @@ ms.locfileid: "74292066"
 
 - **[Создание кроссплатформенных мобильных приложений на C# или Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : начало работы с Visual Studio и средствами для Xamarin в целях создания мобильных приложений, работающих на Android, iOS и универсальной платформе Windows из базы общего кода.
 
-     Load a sample: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (native UI) or  [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms shared UI) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Browse the docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     Загрузка примера: [таскипортабле](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (собственный пользовательский интерфейс) или [Пример Xamarin Forms TODO](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (общий пользовательский интерфейс Xamarin. &#124;Forms) [руководство](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [по просмотру документов](https://msdn.microsoft.com/library/mt299001.aspx) &#124;Просмотр [видео](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[Создание кроссплатформенных приложений и библиотек на C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Перейдите сюда, чтобы начать создавать приложения и библиотеки C++, которые работают на Android, iOS и универсальной платформе Windows.
 
@@ -55,13 +55,13 @@ ms.locfileid: "74292066"
 
      [Скачать пример](https://github.com/microsoft/windows-classic-samples) | [Пройти обучение](https://msdn.microsoft.com/library/dd492171.aspx) | [Посмотреть документы](https://dev.windows.com/desktop)
 
-- **[Make Office applications](https://msdn.microsoft.com/library/fp161347.aspx)** : Get started creating Office applications that extend and customize Word, Excel, Outlook and PowerPoint with Office 365 services.
+- Создание **[приложений Office](https://msdn.microsoft.com/library/fp161347.aspx)** . Начните создавать приложения Office, которые расширяют и настраивают Word, Excel, Outlook и PowerPoint с помощью служб Office 365.
 
      [Скачать пример](https://code.msdn.microsoft.com/office365/) | [Пройти обучение](https://developer.microsoft.com/graph) | [Посмотреть документы](https://msdn.microsoft.com/office/aa905340.aspx) | [Посмотреть видео](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 
 - **[Тур по Visual Studio Team Services и Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Дополнительные сведения о Visual Studio Team Services и Team Foundation Server.
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>В этом разделе
 
 |||
 |-|-|

@@ -42,7 +42,7 @@ ms.locfileid: "74300782"
 
 Для визуального отслеживания стека вызовов при отладке можно создать сопоставление кода. В это сопоставление можно вносить примечания для отслеживания операций, выполняемых кодом. Таким образом, вы сможете сосредоточиться на поиске ошибок.
 
- ![Debugging with call stacks on code maps](../debugger/media/debuggermap-overview.png "DebuggerMap_Overview")
+ ![Отладка с стеками вызовов в картах кода](../debugger/media/debuggermap-overview.png "DebuggerMap_Overview")
 
  Требуется:
 
@@ -50,120 +50,120 @@ ms.locfileid: "74300782"
 
 - Код, поддерживающий отладку: Visual C# .NET, Visual Basic .NET, C++, JavaScript и X++
 
-  See: [Video: Debug visually with Code Map debugger integration (Channel 9)](https://go.microsoft.com/fwlink/?LinkId=293418) • [Map the call stack](#MapStack) • [Make notes about the code](#MakeNotes) • [Update the map with the next call stack](#UpdateMap) • [Add related code to the map](#AddRelatedCode) • [Find bugs using the map](#FindBugs) • [Q & A](#QA)
+  См. [видео: Отладка визуального элемента с помощью функции интеграции с отладчиком карт кода (канал 9)](https://go.microsoft.com/fwlink/?LinkId=293418) • [карта стека вызовов](#MapStack) • [Создание примечаний о коде](#MakeNotes) • [Обновление карты со следующим стеком вызовов](#UpdateMap) • [Добавление связанного кода в карту](#AddRelatedCode) • [Поиск ошибок с помощью карты](#FindBugs) • [Q & A](#QA)
 
-  For details of the commands and actions you can use when working with code maps, see [Browse and rearrange code maps](../modeling/browse-and-rearrange-code-maps.md).
+  Дополнительные сведения о командах и действиях, которые можно использовать при работе с картами кода, см. в разделе [Обзор и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
 
 ## <a name="MapStack"></a> Сопоставление стека вызова
 
-1. Приступите к отладке. (Keyboard: **F5**)
+1. Приступите к отладке. (Клавиатура: **F5**)
 
-2. After your app enters break mode or you step into a function, choose **Code Map**. (Keyboard: **Ctrl** + **Shift** +  **`** )
+2. После того как приложение переходит в режим приостановки выполнения или вы выполняете шаг с заходом в функцию, выберите **карту кода**. (Клавиатура: **Ctrl** + **SHIFT** +  **`** )
 
-     ![Choose Code Map to start mapping call stack](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
+     ![Выбор сопоставления кода для начала сопоставления стека вызовов](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
      Текущий стек вызовов выделен в новой карте кода оранжевым цветом:
 
-     ![See call stack on code map](../debugger/media/debuggermap-seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
+     ![См. раздел стек вызовов на карте кода.](../debugger/media/debuggermap-seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
 
-     Эта карта будет автоматически обновляться в ходе отладки. See [Update the map with the next call stack](#UpdateMap).
+     Эта карта будет автоматически обновляться в ходе отладки. См. раздел [обновление схемы с помощью следующего стека вызовов](#UpdateMap).
 
 ## <a name="MakeNotes"></a> Добавление примечаний к коду
- Добавьте комментарии для отслеживания операций, выполняемых в коде. To add a new line in a comment, press **Shift + Return**.
+ Добавьте комментарии для отслеживания операций, выполняемых в коде. Чтобы добавить новую строку в комментарий, нажмите клавиши **Shift + Return**.
 
- ![Add comment to call stack on code map](../debugger/media/debuggermap-addcomment.png "DebuggerMap_AddComment")
+ ![Добавить комментарий в стек вызовов на карте кода](../debugger/media/debuggermap-addcomment.png "DebuggerMap_AddComment")
 
 ## <a name="UpdateMap"></a> Обновление сопоставления путем добавления следующего стека вызовов
  Выполните приложение до следующей точки останова или зайдите в функцию. В сопоставление будет добавлен новый стек вызовов.
 
- ![Update code map with next call stack](../debugger/media/debuggermap-addclearcallstack.png "DebuggerMap_AddClearCallStack")
+ ![Обновить карту кода со следующим стеком вызовов](../debugger/media/debuggermap-addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
 ## <a name="AddRelatedCode"></a> Добавление связанного кода в сопоставление
  Итак, сопоставление готово. Что дальше? При работе с Visual C#, .NET или Visual Basic .NET добавьте в него элементы, такие как поля, свойства и методы, для отслеживания операций в коде.
 
- Дважды щелкните метод для просмотра его определения кода или используйте контекстное меню метода. (Keyboard: Select the method on the map and press **F12**)
+ Дважды щелкните метод для просмотра его определения кода или используйте контекстное меню метода. (Клавиатура: выберите метод на карте и нажмите клавишу **F12**)
 
- ![Go to code definition for a method on code map](../debugger/media/debuggermap-gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
+ ![Переход к определению кода для метода на карте кода](../debugger/media/debuggermap-gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 
  Добавьте элементы, которые необходимо отслеживать в сопоставлении.
 
- ![Show fields in a method on call stack code map](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
+ ![Отображение полей в методе на карте кода стека вызовов](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
-> По умолчанию при добавлении элементов в сопоставление также добавляются узлы родительской группы, соответствующие, например, классу, пространству имен или сборке. While this is useful, you can keep the map simple by turning off this feature using the **Include Parents** button on the map toolbar, or by pressing **CTRL** when you add items.
+> По умолчанию при добавлении элементов в сопоставление также добавляются узлы родительской группы, соответствующие, например, классу, пространству имен или сборке. Хотя это и полезно, можно сделать карту простой, отключив эту функцию с помощью кнопки **включить родителей** на панели инструментов Map или нажав **клавишу CTRL** при добавлении элементов.
 
- ![Fields related to a method on call stack code map](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
+ ![Поля, связанные с методом в карте кода стека вызовов](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 
  Нетрудно определить, какие методы используют одинаковые поля. Последние добавленные элементы отображаются зеленым цветом.
 
  Продолжайте формировать сопоставление, чтобы увидеть дополнительный код.
 
- ![See methods that use a field: call stack code map](../debugger/media/debuggermap-findallreferences.png "DebuggerMap_FindAllReferences")
+ ![См. методы, использующие поле: карту кода стека вызовов](../debugger/media/debuggermap-findallreferences.png "DebuggerMap_FindAllReferences")
 
- ![Methods that use a field on call stack code map](../debugger/media/debuggermap-foundallreferences.png "DebuggerMap_FoundAllReferences")
+ ![Методы, использующие поле в карте кода стека вызовов](../debugger/media/debuggermap-foundallreferences.png "DebuggerMap_FoundAllReferences")
 
 ## <a name="FindBugs"></a> Поиск ошибок с помощью сопоставления
  Визуализация кода поможет вам быстрее находить ошибки. Например, предположим, что вы ищите ошибку в программе для рисования. Когда вы создаете линию и пробуете отменить ее создание, ничего не происходит до тех пор, пока не будет нарисована следующая линия.
 
  Установив точки останова в методах `clear`, `undo` и `Repaint`, вы начинаете отладку и создаете сопоставление, аналогичное представленному ниже:
 
- ![Add another call stack to code map](../debugger/media/debuggermap-addpaintobjectcallstack.png "DebuggerMap_AddPaintObjectCallStack")
+ ![Добавить еще один стек вызовов в карту кода](../debugger/media/debuggermap-addpaintobjectcallstack.png "DebuggerMap_AddPaintObjectCallStack")
 
  Учтите, что все жесты пользователя в сопоставлении вызывают метод `Repaint`, за исключением `undo`. Возможно, именно поэтому функция `undo` срабатывает не сразу.
 
  Когда вы исправите ошибку и продолжите выполнение программы, в сопоставление будет добавлен новый вызов из `undo` в `Repaint`.
 
- ![Add new method call to call stack on code map](../debugger/media/debuggermap-addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
+ ![Добавить новый вызов метода в стек вызовов на карте кода](../debugger/media/debuggermap-addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
 ## <a name="QA"></a> Вопросы и ответы
 
-- **Not all calls appear on the map. Why?**
+- **На карте отображаются не все вызовы. Важно?**
 
-   По умолчанию в сопоставлении отображается только ваш код. To see external code, turn it on in the **Call Stack** window:
+   По умолчанию в сопоставлении отображается только ваш код. Чтобы просмотреть внешний код, включите его в окне **Стек вызовов** :
 
-   ![Display external code using the Call Stack window](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")
+   ![Отображение внешнего кода с помощью окна "стек вызовов"](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")
 
-   or turn off **Enable Just My Code** in the Visual Studio debugging options:
+   или отключите параметр **включить только мой код** в вариантах отладки Visual Studio:
 
-   ![Show external code using Options dialog](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")
+   ![Отображение внешнего кода с помощью диалогового окна параметров](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")
 
-- **Does changing the map affect the code?**
+- **Влияет ли изменение схемы на код?**
 
    Изменение сопоставления никак не влияет на код. Можно свободно переименовать, изменить или удалить любой элемент в сопоставлении.
 
-- **What does this message mean: “The diagram may be based on an older version of the code”?**
+- **Что означает это сообщение: "схема может основываться на более старой версии кода"?**
 
    С момента последнего обновления сопоставления код мог измениться. Например, вызов в сопоставлении может уже не существовать в коде. Закройте сообщение, а затем попытайтесь повторить сборку решения, прежде чем повторно обновлять сопоставление.
 
-- **How do I control the map’s layout?**
+- **Разделы справки управлять макетом схемы?**
 
-   Open the **Layout** menu on the map toolbar:
+   Откройте меню **Макет** на панели инструментов Map:
 
   - Измените макет по умолчанию.
 
-  - To stop rearranging the map automatically, turn off **Automatically Layout when Debugging**.
+  - Чтобы отключить автоматическое перераспределение карт, отключите **Автоматический макет при отладке**.
 
-  - To rearrange the map as little as possible when you add items, turn off **Incremental Layout**.
+  - Чтобы изменить расположение на карте как можно меньше при добавлении элементов, отключите **добавочный макет**.
 
-- **Can I share the map with others?**
+- **Можно ли поделиться картой с другими пользователями?**
 
    Сопоставление можно экспортировать, отправить его другим пользователям при наличии Microsoft Outlook или сохранить его в решении, чтобы можно было вернуть его в систему управления версиями Team Foundation.
 
-   ![Share call stack code map with others](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")
+   ![Предоставление общего доступа к карте кода стека вызовов другим пользователям](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")
 
-- **How do I stop the map from adding new call stacks automatically?**
+- **Разделы справки отключить автоматическое добавление новых стеков вызовов?**
 
-   Choose ![Button &#45; Show call stack on code map automatically](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") on the map toolbar. To manually add the current call stack to the map, press **Ctrl** + **Shift** +  **`** .
+   На панели инструментов !["Map" (выбор кнопки &#45; ) автоматически отображать стек вызовов на карте кода](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") . Чтобы вручную добавить текущий стек вызовов в карту, нажмите клавиши **Ctrl** + **SHIFT** +  **`** .
 
    Существующие стеки вызовов по-прежнему будут выделяться на сопоставлении во время отладки.
 
-- **What do the item icons and arrows mean?**
+- **Что означают значки и стрелки элемента?**
 
-   Чтобы узнать дополнительные сведения об элементе, наведите на него указатель мыши и прочитайте подсказку. You can also look at the **Legend** to learn what each icon means.
+   Чтобы узнать дополнительные сведения об элементе, наведите на него указатель мыши и прочитайте подсказку. Вы также можете просмотреть **Условные обозначения** , чтобы узнать, что означает каждый значок.
 
-   ![What do icons on the call stack code map mean?](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")
+   ![Что означают значки в карте кода стека вызовов?](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")
 
-  See: [Map the call stack](#MapStack) • [Make notes about the code](#MakeNotes) • [Update the map with the next call stack](#UpdateMap) • [Add related code to the map](#AddRelatedCode) • [Find bugs using the map](#FindBugs)
+  См. раздел [Привязка стека вызовов](#MapStack) • [Создание заметок о коде](#MakeNotes) • [обновление схемы с помощью следующего стека вызовов](#UpdateMap) • [Добавление связанного кода к карте](#AddRelatedCode) • [Поиск ошибок с помощью Map](#FindBugs) .
 
-## <a name="see-also"></a>См. также раздел
- [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md) [Use code maps to debug your applications](../modeling/use-code-maps-to-debug-your-applications.md) [Find potential problems using code map analyzers](../modeling/find-potential-problems-using-code-map-analyzers.md) [Browse and rearrange code maps](../modeling/browse-and-rearrange-code-maps.md)
+## <a name="see-also"></a>См. также
+ [Сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md) [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md) [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md) [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md)

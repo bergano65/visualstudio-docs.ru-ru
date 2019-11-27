@@ -1,5 +1,5 @@
 ---
-title: 'UML Sequence Diagrams: Guidelines | Microsoft Docs'
+title: 'UML-схемы последовательностей: рекомендации | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -33,33 +33,33 @@ ms.locfileid: "74297142"
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, you can draw a *sequence diagram* to show an interaction. Взаимодействие — это последовательность сообщений между типичными экземплярами классов, компонентов, подсистем или субъектов.
+В Visual Studio можно нарисовать *схему последовательностей* , чтобы отобразить взаимодействие. Взаимодействие — это последовательность сообщений между типичными экземплярами классов, компонентов, подсистем или субъектов.
 
- Схемы последовательностей UML являются частью модели UML и существуют только в проектах моделирования UML. To create a UML sequence diagram, on the **Architecture** menu, click **New UML or Layer Diagram**. Find out more about [UML sequence diagram elements](../modeling/uml-sequence-diagrams-reference.md) or [UML modeling diagrams](../modeling/edit-uml-models-and-diagrams.md) in general. For a video demonstration, see [Sketching Interactions by using Sequence Diagrams (2010)](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
+ Схемы последовательностей UML являются частью модели UML и существуют только в проектах моделирования UML. Чтобы создать UML-схему последовательностей, в меню **архитектура** выберите пункт **создать UML или схему слоев**. Узнайте больше о [элементах схемы последовательностей UML](../modeling/uml-sequence-diagrams-reference.md) или [UML-схемах моделирования](../modeling/edit-uml-models-and-diagrams.md) в целом. Демонстрационные видеоролики см. в разделе [наброска взаимодействия с помощью схем последовательностей (2010)](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-topic"></a>Содержание раздела
- [Using UML Sequence Diagrams](#Using)
+ [Использование UML-схем последовательностей](#Using)
 
- [Basic Steps for Drawing Sequence Diagrams](#BasicSteps)
+ [Основные шаги для рисования схем последовательностей](#BasicSteps)
 
- [Creating and Using Simple Sequence Diagrams](#Simple)
+ [Создание и использование простых схем последовательностей](#Simple)
 
- [Classes and Lifelines](#ClassesAndLifelines)
+ [Классы и линии жизни](#ClassesAndLifelines)
 
- [Creating Reusable Interaction Sequences](#Multiple)
+ [Создание повторно используемых последовательностей взаимодействия](#Multiple)
 
- [Collapsing Groups of Lifelines](#Collapse)
+ [Сворачивание групп жизненных циклов жизни](#Collapse)
 
- [Describing Control Structures with Fragments](#Fragments)
+ [Описание структур элементов управления с помощью фрагментов](#Fragments)
 
-## <a name="Using"></a> Using UML Sequence Diagrams
+## <a name="Using"></a>Использование UML-схем последовательностей
  Схемы последовательностей можно использовать в разных целях и на разных уровнях детализации программы. Как правило, схема последовательностей создается в указанных ниже случаях.
 
-- Если есть схема вариантов использования, которая обобщает сведения о пользователях системы и их целях, можно создать схемы последовательностей, чтобы описать, как основные компоненты системы взаимодействуют для достижения цели каждого варианта использования. For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
+- Если есть схема вариантов использования, которая обобщает сведения о пользователях системы и их целях, можно создать схемы последовательностей, чтобы описать, как основные компоненты системы взаимодействуют для достижения цели каждого варианта использования. Дополнительные сведения см. в разделе [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md).
 
-- Если определены сообщения, поступающие в интерфейс компонента, можно создать схемы последовательностей, чтобы описать, как внутренние части компонента взаимодействуют для достижения результата, требуемого для каждого входящего сообщения. For more information, see [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
+- Если определены сообщения, поступающие в интерфейс компонента, можно создать схемы последовательностей, чтобы описать, как внутренние части компонента взаимодействуют для достижения результата, требуемого для каждого входящего сообщения. Дополнительные сведения см. в разделе [UML-схемы компонентов: рекомендации](../modeling/uml-component-diagrams-guidelines.md).
 
   Создание схем последовательностей имеет несколько преимуществ.
 
@@ -71,40 +71,40 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
  Схемы последовательностей UML можно использовать с другими схемами несколькими способами.
 
 #### <a name="lifelines-and-types"></a>Линии жизни и типы
- Линии жизни, создаваемые в схеме последовательностей, могут представлять типичные экземпляры компонентов или классов в системе. Можно создавать линии жизни из типов, а типы — из линий жизни, а также отображать типы на схемах классов и компонентов UML. For more information, see [Classes and Lifelines](#ClassesAndLifelines).
+ Линии жизни, создаваемые в схеме последовательностей, могут представлять типичные экземпляры компонентов или классов в системе. Можно создавать линии жизни из типов, а типы — из линий жизни, а также отображать типы на схемах классов и компонентов UML. Дополнительные сведения см. в разделе [классы и линии жизни](#ClassesAndLifelines).
 
 #### <a name="parameter-types"></a>Типы параметров
  С помощью схемы классов UML можно также описать типы параметров и возвращаемые значения в сообщениях, обмен которыми ведется между линиями жизни.
 
 #### <a name="use-case-details"></a>Подробности варианта использования
- Вариант использования представляет цель пользователя, а также последовательность шагов для достижения этой цели. Последовательность шагов можно описать несколькими способами. Во-первых, можно создать схему последовательностей, показывающую взаимодействия между пользователями и основными компонентами системы. For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
+ Вариант использования представляет цель пользователя, а также последовательность шагов для достижения этой цели. Последовательность шагов можно описать несколькими способами. Во-первых, можно создать схему последовательностей, показывающую взаимодействия между пользователями и основными компонентами системы. Дополнительные сведения см. в разделе [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a> Basic Steps for Drawing Sequence Diagrams
- For a complete list of elements on sequence diagrams, see [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md).
+## <a name="BasicSteps"></a>Основные шаги для рисования схем последовательностей
+ Полный список элементов на схемах последовательностей см. в разделе [UML-схемы последовательностей. Справочник](../modeling/uml-sequence-diagrams-reference.md).
 
 > [!NOTE]
-> Detailed steps for how to create any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+> Подробные инструкции по созданию схем моделирования см. в разделе [изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-sequence-diagram"></a>Создание схемы последовательностей
 
-1. On the **Architecture** menu, click **New UML or Layer Diagram**.
+1. В меню **архитектура** выберите пункт **создать UML или схему слоев**.
 
-2. Under **Templates**, click **UML Sequence Diagram**.
+2. В разделе **шаблоны**щелкните **схема последовательностей UML**.
 
 3. Назовите схему.
 
-4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a new modeling project**, and then click **OK**.
+4. В меню **Добавить в проект моделирования**выберите существующий проект моделирования в решении или **Создайте новый проект моделирования**и нажмите кнопку **ОК**.
 
-    A new sequence diagram appears with the **Sequence Diagram** toolbox. Эта панель содержит требуемые элементы и соединители.
+    Откроется новая схема последовательностей с панелью элементов **схемы последовательностей** . Эта панель содержит требуемые элементы и соединители.
 
-   ![Parts of a sequence diagram](../modeling/media/uml-sequence.png "UML_Sequence")
+   ![Части схемы последовательностей](../modeling/media/uml-sequence.png "UML_Sequence")
 
 #### <a name="to-draw-a-sequence-diagram"></a>Создание схемы последовательностей
 
-1. Drag **Lifelines** (1) from the **Toolbox** onto the diagram to represent instances of classes, components, actors, or devices.
+1. Перетащите **линии жизни** (1) из **области элементов** на схему, чтобы представить экземпляры классов, компонентов, субъектов или устройств.
 
     > [!NOTE]
-    > You can also create a lifeline by dragging an existing class, interface, actor or component from **UML Model Explorer** onto the diagram. Так создается линия жизни, представляющая экземпляр выбранного типа.
+    > Можно также создать линию жизни, перетащив существующий класс, интерфейс, субъект или компонент из **обозревателя моделей UML** на схему. Так создается линия жизни, представляющая экземпляр выбранного типа.
 
 2. Создайте сообщения, чтобы показать, как линии жизни взаимодействуют для достижения конкретной цели.
 
@@ -112,10 +112,10 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
      Вхождение выполнения (5) отображается на получающей линии жизни. Вхождение выполнения представляет период времени, в течение которого экземпляр выполняет метод. Можно создать другие сообщения, начинающиеся с вхождения выполнения.
 
-3. Чтобы показать сообщение, поступающее из неизвестного источника события (9) или передающее данные неизвестным получателям (10), создайте асинхронное сообщение из пустого пространства на схеме или в него. These messages are called *found messages* (9) and *lost messages* (10).
+3. Чтобы показать сообщение, поступающее из неизвестного источника события (9) или передающее данные неизвестным получателям (10), создайте асинхронное сообщение из пустого пространства на схеме или в него. Эти сообщения называются *найденными сообщениями* (9) и *потерянными сообщениями* (10).
 
     > [!NOTE]
-    > To move a group of lifelines that have lost or found messages, follow these steps to select the lifelines before you move them: Draw a rectangle around those lifelines, or press and hold the **CTRL** key while you click each lifeline. If you use **Select All** or **CTRL**+**A** to select all lifelines, and then move them, any lost or found messages attached to these lifelines will not move. В этом случае такие сообщения можно переместить отдельно.
+    > Чтобы переместить группу жизненных линий жизни, которые содержат потерянные или найденные сообщения, выполните следующие действия, чтобы выбрать линии жизни перед перемещением: Нарисуйте прямоугольник вокруг этих линий жизни или нажмите и удерживайте клавишу **CTRL** , щелкнув каждую линию жизни. Если для выбора всех линий жизни выбрано **значение** **выделить все** или **CTRL**+A, а затем переместить их, все потерянные или найденные сообщения, прикрепленные к этим линиям жизни, не будут перемещаться. В этом случае такие сообщения можно переместить отдельно.
 
 4. Создайте схемы последовательностей для каждого основного сообщения одному и тому же компоненту или системе.
 
@@ -125,13 +125,13 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
      \- или -
 
-- Click the message and use the **UP ARROW** and **DOWN ARROW** keys to adjust message positions. Use **SHIFT+UP ARROW** and **SHIFT+DOWN ARROW** to change the order of the messages.
+- Щелкните сообщение и используйте клавиши **стрелка вверх** и **стрелка вниз** для настройки положения сообщения. Чтобы изменить порядок сообщений, используйте **клавиши Shift + стрелка вверх** и **Shift + стрелка вниз** .
 
 #### <a name="to-move-or-copy-message-sequences-on-the-sequence-diagram"></a>Перемещение или копирование последовательностей сообщений на схеме последовательностей
 
-1. Right-click a message (3, 4) and then click **Copy**.
+1. Щелкните правой кнопкой мыши сообщение (3, 4) и выберите команду **Копировать**.
 
-2. Right-click the execution occurrence (5) or a lifeline (1) from which you want the new message to be sent, and then click **Paste**. При необходимости нового отправителя можно изобразить на другой схеме.
+2. Щелкните правой кнопкой мыши вхождение выполнения (5) или линию жизни (1), из которой нужно отправить новое сообщение, и выберите команду **Вставить**. При необходимости нового отправителя можно изобразить на другой схеме.
 
      Копия сообщения и все его дочерние сообщения добавляются в конец вхождения выполнения или в конец линии жизни.
 
@@ -142,34 +142,34 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 - Для того чтобы текст подписи был видим, линия жизни целевого объекта должна быть связана или сопоставлена с каким-либо типом. Для выполнения этой задачи необходимо выполнить одно из указанных ниже действий.
 
-  - Right-click the lifeline, and then choose **Create Class**.
+  - Щелкните линию жизни правой кнопкой мыши и выберите команду **создать класс**.
 
      \- или -
 
-  - Select the lifeline, press **F4**, and then in the **Properties** window, set the **Type** property to an existing type or specify the name for a new type. Right-click the message label, and then choose **Create Operation**.
+  - Выберите линию жизни, нажмите клавишу **F4**, а затем в окне **Свойства** задайте для свойства **тип** значение существующий тип или укажите имя для нового типа. Щелкните правой кнопкой мыши метку сообщения и выберите команду **Создать операцию**.
 
-    Текст подписи отобразится под меткой сообщения. Теперь текст подписи можно изменять. For more information, see [Classes and Lifelines](#ClassesAndLifelines).
+    Текст подписи отобразится под меткой сообщения. Теперь текст подписи можно изменять. Дополнительные сведения см. в разделе [классы и линии жизни](#ClassesAndLifelines).
 
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>Оптимизация размещения элементов на схеме последовательностей
 
-- Right-click a blank part of the diagram, and then click **Rearrange Layout**.
+- Щелкните правой кнопкой мыши пустую часть диаграммы и выберите пункт **изменить макет**.
 
-- To undo the operation, click **Edit**, and then click **Undo**.
+- Чтобы отменить операцию, нажмите кнопку **изменить**, а затем кнопку **отменить**.
 
 #### <a name="to-change-the-package-that-owns-the-interaction"></a>Изменение пакета, которому принадлежит взаимодействие
 
-1. In **UML Model Explorer**, find the Interaction that the sequence diagram displays.
+1. В **обозревателе моделей UML**найдите взаимодействие, которое отображается на схеме последовательностей.
 
     > [!NOTE]
-    > The interaction will not appear in **UML Model Explorer** until you add the first lifeline to the sequence diagram.
+    > Взаимодействие не будет отображаться в **обозревателе моделей UML** , пока вы не добавите первую линию жизни в схему последовательностей.
 
 2. Перетащите взаимодействие в пакет.
 
      \- или -
 
-     Right-click the Interaction, and then click **Cut**. Right-click the Package, and then click **Paste**.
+     Щелкните взаимодействие правой кнопкой мыши и выберите команду **Вырезать**. Щелкните пакет правой кнопкой мыши и выберите команду **Вставить**.
 
-## <a name="Simple"></a> Creating and Using Simple Sequence Diagrams
+## <a name="Simple"></a>Создание и использование простых схем последовательностей
  Наиболее простая и часто используемая форма схемы последовательностей содержит только линии жизни и сообщения. Схема этого вида позволяет ясно показать типичную последовательность взаимодействий между объектами в проектируемой системе или между системой и ее пользователями. Часто этого достаточно, чтобы обсуждать проектируемую систему и передавать сведения о ней.
 
  При создании простой схемы последовательностей не следует забывать об указанных ниже моментах.
@@ -177,20 +177,20 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 ### <a name="types-of-message"></a>Типы сообщений
  Для создания сообщений можно использовать три различных инструмента.
 
-- Use the **Synchronous** tool to describe an interaction in which the sender waits for the receiver to return a response (3).
+- Используйте **синхронное** средство для описания взаимодействия, в котором отправитель ждет, пока получатель возвратит ответ (3).
 
-     A **<\<return>>** arrow will be shown at the end of the execution occurrence. Она обозначает, что контроль над взаимодействием возвращается отправителю.
+     В конце вхождения выполнения будет отображаться **<\<return > стрелка >** . Она обозначает, что контроль над взаимодействием возвращается отправителю.
 
-- Use the **Asynchronous** tool to describe an interaction in which the sender can continue immediately without waiting for the receiver (4).
+- Используйте **асинхронное** средство для описания взаимодействия, в котором отправитель может продолжать работу немедленно, не дожидаясь получателя (4).
 
-- Use the **Create** tool to describe an interaction in which the sender creates the receiver (8).
+- Используйте средство **создать** для описания взаимодействия, в котором отправитель создает получателя (8).
 
      Сообщение о создании должно быть первым сообщением, которое получит получатель.
 
 ### <a name="annotating-the-interactions"></a>Создание заметок о взаимодействиях
- To describe more detail about the sequence, you can place a **Comment** anywhere on the diagram.
+ Чтобы описать последовательность более подробно, можно поместить **Комментарий** в любое место на схеме.
 
- Using **Comment Links**, you can link a comment to lifelines, executions, interaction uses, and fragments.
+ С помощью **ссылок на комментарии**можно связать комментарий с жизненным циклом, выполнением, использованием взаимодействия и фрагментами.
 
 > [!CAUTION]
 > Если нужно прикрепить комментарий к определенной точке последовательности, свяжите его с вхождением выполнения, использованием взаимодействия или фрагментом. Не связывайте комментарий с линией жизни, потому что в этом случае он не будет прикреплен к правильной точке последовательности.
@@ -205,7 +205,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 - Чтобы создавать примечания об исключениях и других вариантах последовательностей, которые могут быть выполнены в качестве альтернативы показанной типичной последовательности. Пример: "Клиент может пропустить остальные элементы последовательности".
 
-  - В качестве более формальной альтернативы этого вида примечаний можно использовать фрагменты. See [Describing Control Structures with Fragments](#Fragments)
+  - В качестве более формальной альтернативы этого вида примечаний можно использовать фрагменты. См. раздел [Описание структур управления с помощью фрагментов](#Fragments) .
 
 ## <a name="deciding-the-scope-of-the-diagram"></a>Определение области действия схемы
  Очень важно четко обозначить, что должно отображаться на схеме.
@@ -245,7 +245,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 - создать отдельные схемы последовательностей для описания этих сценариев;
 
-- Use [Describing Control Structures with Fragments](#Fragments) to show loops, alternatives, and so on.
+- Используйте [Описание структур управления с фрагментами](#Fragments) для отображения циклов, альтернатив и т. д.
 
 ## <a name="assessing-the-design"></a>Оценка проекта
  Схему можно использовать для оценки распределения задач между ее объектами или компонентами. Необходимо провести реструктуризацию, если наблюдаются указанные ниже явления.
@@ -256,13 +256,13 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 - Некоторые линии жизни выполняют несколько разных видов задач. Область ответственности каждой линии жизни должна описываться в одном кратком предложении. В нем должны обобщаться сведения о том, что линия жизни делает в ответ на каждое получаемое сообщение.
 
-## <a name="ClassesAndLifelines"></a> Classes and Lifelines
+## <a name="ClassesAndLifelines"></a>Классы и линии жизни
  Линии жизни на схемах последовательностей показывают экземпляры классов или интерфейсов компонентов. Существует два способа именования линии жизни.
 
-|**For this purpose**|**Use this format**|
+|**Для этой цели**|**Используйте этот формат**|
 |--------------------------|-------------------------|
-|Анонимный экземпляр типа.<br /><br /> Используйте его, если для каждого типа имеется только одна линия жизни.|*typeName*|
-|Именованный экземпляр типа.<br /><br /> Используйте его, если необходимо показать последовательность, включающую несколько экземпляров одного типа.|*objectName*:*typeName*|
+|Анонимный экземпляр типа.<br /><br /> Используйте его, если для каждого типа имеется только одна линия жизни.|*Имени*|
+|Именованный экземпляр типа.<br /><br /> Используйте его, если необходимо показать последовательность, включающую несколько экземпляров одного типа.|*имя_объекта*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Создание линий жизни на основе типов
  Линии жизни можно создавать из уже определенных классов (например, на схеме классов).
@@ -276,9 +276,9 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
    \- или -
 
-  1. Right-click the class, component, or interface on its respective diagram, and then click **Create Lifeline**.
+  1. Щелкните правой кнопкой мыши класс, компонент или интерфейс на соответствующей схеме и выберите команду **создать линию жизни**.
 
-  2. In the **Create Lifeline** dialog box, select a sequence diagram, and then click **OK**.
+  2. В диалоговом окне **Создание линии жизни** выберите схему последовательностей и нажмите кнопку **ОК**.
 
      Появится новая линия жизни с именованным экземпляром. Ее типом является тип, который вы перетащили.
 
@@ -287,16 +287,16 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Изменение типа линии жизни
 
-1. Right-click a lifeline, and then click **Properties**.
+1. Щелкните линию жизни правой кнопкой мыши и выберите пункт **Свойства**.
 
-2. In the **Properties** window, set the **Type** property. Можно выбрать тип из раскрывающегося меню или указать новое имя.
+2. В окне **Свойства** задайте свойство **Type** . Можно выбрать тип из раскрывающегося меню или указать новое имя.
 
 ### <a name="creating-classes-from-lifelines"></a>Создание классов на основе линий жизни
  Создав одну или несколько схем последовательностей, можно обобщить линии жизни, создав на их основе классы или интерфейсы.
 
 ##### <a name="to-create-a-class-or-interface-from-a-lifeline"></a>Создание класса или интерфейса на основе линии жизни
 
-1. Right-click the lifeline, and then click **Create Class** or **Create Interface**.
+1. Щелкните линию жизни правой кнопкой мыши и выберите команду **создать класс** или **создать интерфейс**.
 
      В обозревателе моделей UML появится новый класс или интерфейс.
 
@@ -304,11 +304,11 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
     1. Выделите все сообщения, которые нужно включить.
 
-    2. Right-click one of the messages, and then click **Create Method**.
+    2. Щелкните правой кнопкой мыши одно из сообщений и выберите команду **создать метод**.
 
          Новый класс или интерфейс имеет операции для каждого выделенного сообщения.
 
-         The operation name appears below each message arrow, and in the **Operation** property of the message.
+         Имя операции отображается под каждой стрелкой сообщения и в свойстве " **Операция** " сообщения.
 
          Если сообщение включает параметры в форме "(параметр : тип)", они отобразятся в списке параметров новой операции.
 
@@ -319,20 +319,20 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
     1. Откройте или создайте схему классов или компонентов.
 
-    2. Drag the new class or interface from **UML Model Explorer** to a class diagram.
+    2. Перетащите новый класс или интерфейс из **обозревателя моделей UML** на схему классов.
 
          Класс или интерфейс появится на схеме классов.
 
          \- или -
 
-    3. Drag the new interface from **UML Model Explorer** onto a component or port in a component diagram.
+    3. Перетащите новый интерфейс из **обозревателя моделей UML** на компонент или порт на схеме компонентов.
 
          Интерфейс отображается в компоненте в качестве обозначения без описания операций.
 
 ### <a name="creating-classes-for-parameters"></a>Создание классов параметров
  В сообщения на схеме последовательностей можно включить параметры. Схему классов UML можно использовать для описания типов параметров.
 
-## <a name="Multiple"></a> Creating Reusable Interaction Sequences
+## <a name="Multiple"></a>Создание повторно используемых последовательностей взаимодействия
  Для описания последовательности можно использовать отдельную схему, которая содержит подробные сведения, которые необходимо отделить от других, либо сведения, относящиеся к нескольким схемам.
 
  На одной схеме можно создать прямоугольник использования взаимодействия (12), указывающий на подробные сведения на другой схеме.
@@ -341,7 +341,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 #### <a name="to-create-a-reusable-interaction-sequence-from-existing-lifelines"></a>Создание последовательности взаимодействий с возможностью повторного использования на основе существующих линий жизни
 
-1. In the **Toolbox**, click **Interaction Use**.
+1. На **панели элементов**щелкните **взаимодействие использование**.
 
 2. Удерживая нажатой кнопку мыши, перетащите по схеме последовательностей линии жизни, которые нужно включить в последовательность с возможностью повторного использования. Начните с выбора положения по вертикали для вставки использования взаимодействия.
 
@@ -355,11 +355,11 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 4. Свяжите использование взаимодействия с другой схемой последовательностей. Щелкните использование взаимодействия правой кнопкой мыши и выполните одно из указанных ниже действий.
 
-     Click **Create New Sequence** to create a new sequence diagram
+     Щелкните **создать новую последовательность** , чтобы создать новую схему последовательностей.
 
      \- или -
 
-     Click **Link to Sequence** to link to an existing diagram.
+     Щелкните **связать с последовательностью** , чтобы связать существующую схему.
 
      Visual Studio создает связь между использованием взаимодействия и новой последовательностью взаимодействий.
 
@@ -370,7 +370,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>Создание последовательности с возможностью повторного использования на основе существующих сообщений
 
-- Right-click the message that you want to move, and then click **Move to Diagram**.
+- Щелкните правой кнопкой мыши сообщение, которое необходимо переместить, и выберите пункт **переместить в диаграмму**.
 
   Visual Studio:
 
@@ -386,19 +386,19 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
      \- или -
 
-     Right-click the interaction use and then click **Go to Sequence**.
+     Щелкните правой кнопкой мыши использование взаимодействия и выберите команду **Переход к последовательности**.
 
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>Создание заполнителя с использованием взаимодействия
- Вы можете создать использование взаимодействия, не связывая его с другой схемой. You can use this as a placeholder for a part of the sequence whose details are yet to be worked out. Use the name of the interaction use to indicate the outcome that you want.
+ Вы можете создать использование взаимодействия, не связывая его с другой схемой. Его можно использовать в качестве заполнителя для части последовательности, сведения о которой еще должны быть обработаны. Используйте имя использования взаимодействия, чтобы указать нужный результат.
 
-## <a name="Collapse"></a> Collapsing Groups of Lifelines
+## <a name="Collapse"></a>Сворачивание групп жизненных циклов жизни
  Вы можете свернуть несколько линий жизни, чтобы группа отображалась как одна линия. Так можно визуально представить группу объектов как один компонент. Сообщения и использования взаимодействий между линиями жизни свернутой группы скрыты. Сообщения и последовательности взаимодействий, включающие другие линии жизни, отображаются.
 
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>Сворачивание группы линий жизни
 
 1. Выберите две или более линий жизни.
 
-2. Right-click one of them, and then click **Collapse**.
+2. Щелкните правой кнопкой мыши один из них и выберите **Свернуть**.
 
      Несколько линий жизни заменяются одной.
 
@@ -411,15 +411,15 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
 
 #### <a name="to-expand-a-collapsed-group"></a>Разворачивание свернутой группы
 
-- Right-click the collapsed lifeline, and then click **Expand**.
+- Щелкните свернутую линию жизни правой кнопкой мыши и выберите **развернуть**.
 
     > [!NOTE]
     > Имя группы будет утеряно, равно как и любые ссылки из группы на комментарии или рабочие элементы.
 
-## <a name="Fragments"></a> Describing Control Structures with Fragments
+## <a name="Fragments"></a>Описание структур элементов управления с помощью фрагментов
  Для определения циклов, ветвей и параллельной обработки на схеме последовательностей можно использовать объединенные фрагменты (13). Эти сведения можно отобразить и на схеме деятельности. Схема деятельности не позволяет показывать сообщения, которыми обмениваются субъекты, так же наглядно, но иногда с ее помощью можно более эффективно представить циклы, ветви и параллелизм.
 
- For a full list of the types of fragment, see [Describe control flow with fragments on UML sequence diagrams](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).
+ Полный список типов фрагментов см. в разделе [Описание потока управления с помощью фрагментов на UML-схемах последовательностей](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).
 
 #### <a name="to-create-a-combined-fragment"></a>Создание объединенного фрагмента
 
@@ -428,19 +428,19 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. Вз
     > [!NOTE]
     > Выделите стрелки сообщений, а не вхождения выполнения, на которые указывают сообщения.
 
-2. Right-click one of the messages, point to **Surround With**, and then click the type of fragment that you require.
+2. Щелкните правой кнопкой мыши одно из сообщений, наведите указатель на пункт **окружить**, а затем выберите нужный тип фрагмента.
 
      Появится новый фрагмент. В нем содержатся выбранные сообщения.
 
      Если тип объединенного фрагмента допускает наличие нескольких фрагментов, отображается также пустой фрагмент.
 
-3. To set the guard of a fragment, right-click the fragment border, and then click **Properties**. Set the **Guard** property.
+3. Чтобы задать условие для фрагмента, щелкните правой кнопкой мыши границу фрагмента и выберите пункт **Свойства**. Задайте свойство **Guard** .
 
      Условие используется для определения требований к ветви или циклу.
 
-4. To add a new fragment to a kind that allows multiple fragments, right-click the boundary of a fragment, and point to **Add**. Click either **Interaction Operand Before** or **Interaction Operand After**.
+4. Чтобы добавить новый фрагмент к виду, допускающему несколько фрагментов, щелкните правой кнопкой мыши границу фрагмента и наведите указатель на пункт **Добавить**. Щелкните **операнд взаимодействия до** или **операнда взаимодействия после**.
 
 5. Чтобы добавить во фрагмент новые сообщения, используйте инструменты создания сообщений либо скопируйте и вставьте их во фрагмент.
 
-## <a name="see-also"></a>См. также раздел
- [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Sketching Interactions by using Sequence Diagrams](https://go.microsoft.com/fwlink/?LinkId=201113)
+## <a name="see-also"></a>См. также
+ [UML-схемы последовательностей. ссылки для](../modeling/uml-sequence-diagrams-reference.md) [изменения моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы вариантов использования UML: ссылки на](../modeling/uml-use-case-diagrams-reference.md) UML-схемы [классов:](../modeling/uml-class-diagrams-reference.md) ссылки на UML- [схемы компонентов:](../modeling/uml-component-diagrams-reference.md) Справочник по схемам [компонентов UML](../modeling/uml-component-diagrams-reference.md) : справочное [видео. изменение наброска взаимодействия с помощью схем последовательностей](https://go.microsoft.com/fwlink/?LinkId=201113)

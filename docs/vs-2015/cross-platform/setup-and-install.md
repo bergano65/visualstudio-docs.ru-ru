@@ -31,13 +31,13 @@ ms.locfileid: "74297727"
   
  **Содержание раздела**  
   
-- [Необходимые компоненты](#prereq)  
+- [Предварительные требования](#prereq)  
   
-- [Программа установки Windows (Visual Studio и Xamarin)](#windows)  
+- [Настройка Windows (Visual Studio и Xamarin)](#windows)  
   
 - [Настройка Mac (Apple ID, Xcode и Xamarin)](#mac)  
   
-## <a name="prereq"></a> Необходимые компоненты  
+## <a name="prereq"></a> Предварительные требования  
   
 1. Для Windows и Android:  
   
@@ -53,7 +53,7 @@ ms.locfileid: "74297727"
   
     1. При использовании Visual Studio на компьютере Windows (версии 7 или более поздней) в качестве основной среды разработки, подключенный к сети Mac необходим только для компиляции и отладки приложений iOS, подключения к симулятору iOS или связанным устройствам, а также для использования конструктора раскадровки в Visual Studio для разработки пользовательского интерфейса. Старые модели Mac полностью подходят для этой дополнительной роли.  
   
-## <a name="windows"></a> Программа установки Windows (Visual Studio и Xamarin)  
+## <a name="windows"></a> Настройка Windows (Visual Studio и Xamarin)  
   
 > [!TIP]
 > Эти инструкции предназначены для Visual Studio 2015. Чтобы использовать Xamarin с Visual Studio 2013 (требуется обновление 2), следуйте инструкциям по [прямой установке Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
@@ -64,13 +64,13 @@ ms.locfileid: "74297727"
   
 2. (Только для новых установок) В установщике выберите тип установки **Выборочная**:  
   
-    ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+    ![Выбор параметра Custom в установке Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1.png "Установка Plat для Xamarin")  
   
 3. Установите следующие флажки.  
   
    1. **Разработка кроссплатформенных мобильных приложений > C# или .NET (Xamarin)** . При этом также будут автоматически выбраны различные инструменты Android в разделе "Общие средства и пакеты средств разработки". Этот параметр также позволяет обновить любую существующую установку Xamarin.  
   
-        ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+        ![Выбор параметра Xamarin в разделе&#45;межплатформенная разработка мобильных приложений](../cross-platform/media/cross-plat-xamarin-setup-2.png "Установка Plat для Xamarin. 2")  
   
    2. Для Windows 8 и более поздних версий: **"Разработка кросс-платформенных мобильных приложений" > "Эмулятор Microsoft Visual Studio для Android"** . Примечание. Если используется компьютер под управлением Windows 7 или более ранней версии или запущена ОС Windows на Mac, убедитесь, что этот флажок *снят*. После шага 5 см. примечание об эмуляторах на компьютерах Windows. Вы также можете оставить этот флажок снятым, если собираетесь выполнять отладку только на физических устройствах Android.  
   
@@ -80,7 +80,7 @@ ms.locfileid: "74297727"
   
 5. После завершения установки запустите Visual Studio и выполните вход с помощью учетной записи Майкрософт при появлении соответствующего запроса (это та же учетная запись, что используется и в Windows). Проверьте наличие обновлений для Xamarin через меню **"Сервис" > "Параметры" > Xamarin** или **"Сервис" > "Параметры" > Xamarin > "Другие"** , где вы найдете ссылку **Проверить сейчас**:  
   
-    ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+    ![Проверка наличия обновлений Xamarin в параметрах Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "Настройка Plat Xamarin 3")  
   
    > [!NOTE]
    > Как отмечалось ранее, требуется обновить Xamarin до версии 4.0.3.214 или более поздней, чтобы избежать проблем с более ранними лицензиями Xamarin.  

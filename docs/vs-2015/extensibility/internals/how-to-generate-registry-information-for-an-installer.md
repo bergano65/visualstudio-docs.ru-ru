@@ -1,5 +1,5 @@
 ---
-title: 'How to: Generate Registry Information for an Installer | Microsoft Docs'
+title: Инструкции. Создание данных реестра для установщика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -19,29 +19,29 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74298244"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>How to: Generate Registry Information for an Installer
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Инструкции. Создание данных реестра для установщика
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The RegPkg.exe utility can be used to generate a registration manifest for a managed VSPackage. The manifest can be incorporated into a Windows Installer setup package. RegPkg also can generate a file that can be included in a setup source file based on the [Windows Installer XML Toolset](https://go.microsoft.com/fwlink/?LinkId=62238).  
+Служебную программу RegPkg. exe можно использовать для создания манифеста регистрации для управляемого пакета VSPackage. Манифест можно встроить в пакет установки установщик Windows. RegPkg также может создать файл, который можно включить в исходный файл установки на основе [набора инструментов УСТАНОВЩИК Windows XML](https://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]
-> RegPkg generates path names that are specific to your development system, so every time you use RegPkg, you must edit the output to use appropriate Windows Installer formatted properties. For example, the InprocServer32 value should be **[SystemFolder]mscoree.dll** and paths should use **[#filekey]** and **[$componentkey]** . Adjusting the output in this way supports computers with Windows installed on a different drive or in a different directory, localized directory names, and paths that users can choose. For more information, see [Formatted](https://go.microsoft.com/fwlink/?LinkId=71120) in the Windows Installer SDK. If you follow RegPkg conventions for your development system paths—for example, file IDs of the form File_*filename*—you need make fewer changes.  
+> RegPkg создает имена путей, характерные для конкретной системы разработки, поэтому при каждом использовании RegPkg необходимо изменить выходные данные, чтобы они использовали соответствующие свойства установщик Windows форматирования. Например, значение InprocServer32 должно быть равно **[системфолдер] Mscoree. dll** , а пути — использовать **[#filekey]** и **[$componentkey]** . Настройка вывода таким образом поддерживает компьютеры с Windows, установленные на другом диске или в другом каталоге, локализованных именах каталогов и путях, которые пользователи могут выбрать. Дополнительные сведения см. в разделе [отформатировано](https://go.microsoft.com/fwlink/?LinkId=71120) в пакете SDK для установщик Windows. При соблюдении соглашений RegPkg для путей к системе разработки, например идентификаторов файлов формы File_*filename*, необходимо внести меньше изменений.  
   
-### <a name="to-create-a-registration-manifest"></a>To create a registration manifest  
+### <a name="to-create-a-registration-manifest"></a>Создание манифеста регистрации  
   
-- Run RegPkg with the **/regfile** switch. Provide any other switches, the name of the output file, and the path of the VSPackage.  
+- Запустите RegPkg с параметром **/regfile** . Укажите любые другие параметры, имя выходного файла и путь к пакету VSPackage.  
   
-     For example, at the command prompt, you would type something like the following:  
+     Например, в командной строке введите нечто вроде следующего:  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll  
     ```  
   
-### <a name="to-view-a-registration-manifest"></a>To view a registration manifest  
+### <a name="to-view-a-registration-manifest"></a>Просмотр манифеста регистрации  
   
-- Open the registration manifest in any text editor.  
+- Откройте манифест регистрации в любом текстовом редакторе.  
   
-     The following example is the registration manifest that RegPkg creates for the IronPython language service:  
+     Ниже приведен пример манифеста регистрации, который RegPkg создает для языковой службы IronPython:  
   
     ```  
     REGEDIT4  
@@ -98,21 +98,21 @@ The RegPkg.exe utility can be used to generate a registration manifest for a man
   
     ```  
   
-### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>To create a Windows Installer XML Toolset include file  
+### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Создание установщик Windows файла набора инструментов XML  
   
-- Run RegPkg with the **/wixfile** switch. Provide any other switches, the name of the output file, and the path of the VSPackage.  
+- Запустите RegPkg с помощью параметра **/виксфиле** . Укажите любые другие параметры, имя выходного файла и путь к пакету VSPackage.  
   
-     For example, at the command prompt, you would type something like the following:  
+     Например, в командной строке введите нечто вроде следующего:  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll  
     ```  
   
-### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>To view a Windows Installer XML Toolset include file  
+### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Просмотр установщик Windows файла набора инструментов XML  
   
-- Open the Windows Installer XML Toolset include file in any text editor.  
+- Откройте файл набора инструментов установщик Windows XML в любом текстовом редакторе.  
   
-     The following example is the include file that RegPkg creates for the IronPython language service:  
+     Ниже приведен пример включаемого файла, который RegPkg создает для языковой службы IronPython:  
   
     ```  
     <Include>  
@@ -182,6 +182,6 @@ The RegPkg.exe utility can be used to generate a registration manifest for a man
     </Include>  
     ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Registering VSPackages](registering-vspackages.md)   
+## <a name="see-also"></a>См. также  
+ [Регистрация пакетов vspackage](registering-vspackages.md)   
  [Пакеты VSPackage](../../extensibility/internals/vspackages.md)

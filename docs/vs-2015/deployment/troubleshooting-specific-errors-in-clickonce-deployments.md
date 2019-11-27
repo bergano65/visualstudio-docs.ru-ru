@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting Specific Errors in ClickOnce Deployments | Microsoft Docs
+title: Устранение конкретных ошибок в развертываниях ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -30,115 +30,115 @@ ms.locfileid: "74294730"
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This topic lists the following common errors that can occur when you deploy a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, and provides steps to resolve each problem.  
+В этом разделе перечислены распространенные ошибки, которые могут возникнуть при развертывании приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], а также действия по устранению каждой проблемы.  
   
-## <a name="general-errors"></a>General Errors  
+## <a name="general-errors"></a>Общие ошибки  
   
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>When you try to locate an .application file, nothing occurs, or XML renders in Internet Explorer, or you receive a Run or Save As dialog box  
- This error is likely caused by content types (also known as MIME types) not being registered correctly on the server or client.  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>При попытке выполнить обнаружение файла приложения, ничего не происходит, или XML-файлы визуализируются в Internet Explorer или появляется диалоговое окно «Запуск или сохранение как»  
+ Эта ошибка может быть вызвана неправильной регистрацией типов содержимого (также известных как типы MIME) на сервере или клиенте.  
   
- First, make sure that the server is configured to associate the .application extension with content type "application/x-ms-application".  
+ Во-первых, убедитесь, что сервер настроен для связи расширения приложения с типом содержимого application/x-MS-Application.  
   
- If the server is configured correctly, ensure that the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] is installed on your computer. If the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] is installed, and you are still seeing this problem, try uninstalling and reinstalling the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] to re-register the content type on the client.  
+ Если сервер настроен правильно, убедитесь, что на компьютере установлен [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]. Если [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] установлен и вы по-прежнему видите эту проблему, попробуйте удалить и переустановить [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] для повторной регистрации типа содержимого на клиенте.  
   
-#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Error message says, "Unable to retrieve application. Files missing in deployment" or "Application download has been interrupted, check for network errors and try again later"  
- This message indicates that one or more files being referenced by the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests cannot be downloaded. The easiest way to debug this error is to try to download the URL that [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] says it cannot download. Here are some possible causes:  
+#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Сообщение об ошибке "не удалось получить приложение. Файлы, отсутствующие в развертывании "или" скачивание приложения прерваны, проверьте наличие ошибок сети и повторите попытку позже ".  
+ Это сообщение означает, что не удается скачать один или несколько файлов, на которые ссылаются манифесты [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Самый простой способ отладки этой ошибки — попытаться загрузить URL-адрес, который [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] говорит, что он не может быть загружен. Ниже приведены некоторые возможные причины.  
   
-- If the log file says "(403) Forbidden" or "(404) Not found," verify that the Web server is configured so that it does not block download of this file. Дополнительные сведения см. в разделе [Вопросы настройки сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Если в файле журнала указано "(403) запрещено" или "(404) не найдено", убедитесь, что веб-сервер настроен так, чтобы он не блокировал загрузку этого файла. Дополнительные сведения см. в разделе [Вопросы настройки сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
-- If the .config file is being blocked by the server, see the section "Download error when you try to install a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application that has a .config file" later in this topic.  
+- Если файл конфигурации блокируется сервером, см. раздел "ошибка загрузки при попытке установить приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] с расширением config" Далее в этом разделе.  
   
-- Determine whether this occurred because the `deploymentProvider` URL in the deployment manifest is pointing to a different location than the URL used for activation.  
+- Определите, произошло ли это, потому что URL-адрес `deploymentProvider` в манифесте развертывания указывает на расположение, отличное от URL-адреса, используемого для активации.  
   
-- Ensure that all files are present on the server; the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] log should tell you which file was not found.  
+- Убедитесь, что на сервере имеются все файлы. Журнал [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] должен сообщить, какой файл не был найден.  
   
-- See whether there are network connectivity issues; you can receive this message if your client computer went offline during the download.  
+- Проверьте наличие проблем с сетевым подключением. Это сообщение можно получить, если клиентский компьютер перешел в автономный режим во время загрузки.  
   
-#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Download error when you try to install a ClickOnce application that has a .config file  
- By default, a Visual Basic Windows-based application includes an App.config file. There will be a problem when a user tries to install from a Web server that uses Windows Server 2003, because that operating system blocks the installation of .config files for security reasons. To enable the .config file to be installed, click **Use ".deploy" file extension** in the **Publish Options** dialog box.  
+#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Ошибка скачивания при попытке установить приложение ClickOnce с файлом config  
+ По умолчанию Visual Basic приложение на основе Windows включает файл App. config. Если пользователь пытается установить с веб-сервера, использующего Windows Server 2003, возникает проблема, так как эта операционная система блокирует установку файлов. config по соображениям безопасности. Чтобы включить устанавливаемый файл конфигурации, нажмите кнопку **использовать расширение файла. deploy** в диалоговом окне **Параметры публикации** .  
   
- You also must set the content types (also known as MIME types) appropriately for .application, .manifest, and .deploy files. For more information, see your Web server documentation.  
+ Кроме того, для файлов. Application,. manifest и. deploy должны быть соответствующим образом заданы типы содержимого (также называемые MIME-типами). Дополнительные сведения см. в документации по веб-серверу.  
   
- For more information, see "Windows Server 2003: Locked-Down Content Types" in [Server and Client Configuration Issues in ClickOnce Deployments](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Дополнительные сведения см. в разделе "Windows Server 2003: заблокированные типы содержимого" статьи [проблемы конфигурации сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Error message: "Application is improperly formatted;" Log file contains "XML signature is invalid"  
- Ensure that you updated the manifest file and signed it again. Republish your application by using [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] or use Mage to sign the application again.  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Сообщение об ошибке: "приложение неправильно отформатировано;" Файл журнала содержит "XML-подпись недопустима"  
+ Убедитесь, что вы обновили файл манифеста и повторно подписали его. Повторно опубликуйте приложение с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или с помощью Mage, чтобы снова подписать приложение.  
   
-#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>You updated your application on the server, but the client does not download the update  
- This problem might be solved by completing one of the following tasks:  
+#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Приложение было обновлено на сервере, но клиент не скачивает обновление  
+ Эту проблему можно устранить, выполнив одну из следующих задач.  
   
-- Examine the `deploymentProvider` URL in the deployment manifest. Ensure that you are updating the bits in the same location that `deploymentProvider` points to.  
+- Проверьте URL-адрес `deploymentProvider` в манифесте развертывания. Убедитесь, что вы обновляете биты в том же расположении, на которое `deploymentProvider` указывает.  
   
-- Verify the update interval in the deployment manifest. If this interval is set to a periodic interval, such as one time every six hours, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] will not scan for an update until this interval has passed. You can change the manifest to scan for an update every time that the application starts. Changing the update interval is a convenient option during development time to verify updates are being installed, but it slows down application activation.  
+- Проверьте интервал обновления в манифесте развертывания. Если для этого интервала задано значение периодического интервала, например один раз в шесть часов, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] не будет проверять наличие обновления до тех пор, пока этот интервал не пройдет. Вы можете изменить манифест, чтобы проверять наличие обновлений при каждом запуске приложения. Изменение интервала обновления является удобным вариантом во время разработки для проверки установки обновлений, но замедляет активацию приложения.  
   
-- Try starting the application again on the Start menu. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] may have detected the update in the background, but will prompt you to install the bits on the next activation.  
+- Попробуйте снова запустить приложение в меню "Пуск". [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] мог обнаружить обновление в фоновом режиме, но предложит установить эти биты при следующей активации.  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>During update you receive an error that has the following log entry: "The reference in the deployment does not match the identity defined in the application manifest"  
- This error may occur because you have manually edited the deployment and application manifests, and have caused the description of the identity of an assembly in one manifest to become out of sync with the other. The identity of an assembly consists of its name, version, culture, and public key token. Examine the identity descriptions in your manifests, and correct any differences.  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Во время обновления возникает ошибка со следующей записью журнала: "ссылка в развертывании не соответствует удостоверению, определенному в манифесте приложения"  
+ Эта ошибка может возникать из-за того, что вы вручную редактировали манифесты развертывания и приложения, и это привело к тому, что описание удостоверения сборки в одном манифесте не будет синхронизировано с другим. Идентификатор сборки состоит из ее имени, версии, языка и региональных параметров и токена открытого ключа. Изучите описания удостоверений в манифестах и исправьте все различия.  
   
-#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>First time activation from local disk or CD-ROM succeeds, but subsequent activation from Start Menu does not succeed  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uses the Deployment Provider URL to receive updates for the application. Verify that the location that the URL is pointing to is correct.  
+#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>При первой активации с локального диска или с компакт-диска происходит успешная активация, но последующие активации из меню "Пуск" не выполняются.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] использует URL-адрес поставщика развертывания для получения обновлений для приложения. Убедитесь, что расположение, на которое указывает URL-адрес, является правильным.  
   
-#### <a name="error-cannot-start-the-application"></a>Error: "Cannot start the application"  
- This error message usually indicates that there is a problem installing this application into the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] store. Either the application has an error or the store is corrupted. The log file might tell you where the error occurred.  
+#### <a name="error-cannot-start-the-application"></a>Ошибка: "не удается запустить приложение"  
+ Это сообщение об ошибке обычно указывает на наличие проблемы при установке этого приложения в хранилище [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Либо приложение содержит ошибку, либо хранилище повреждено. Файл журнала может сообщить, где произошла ошибка.  
   
- You should do the following:  
+ Необходимо выполнить следующие действия.  
   
-- Verify that the identity of the deployment manifest, identity of application manifest, and identity of the main application EXE are all unique.  
+- Убедитесь, что идентификатор манифеста развертывания, удостоверение манифеста приложения и идентификатор основного EXE приложения являются уникальными.  
   
-- Verify that your file paths are not longer than 100 characters. If your application contains file paths that are too long, you may exceed the limitations on the maximum path you can store. Try shortening the paths and reinstall.  
+- Убедитесь, что пути к файлам не длиннее 100 символов. Если приложение содержит слишком длинные пути к файлам, возможно превышение ограничений на максимальный путь, который можно хранить. Попробуйте сократить пути и переустановить.  
   
-#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath settings in application config file are not honored  
- To use PrivatePath (Fusion probing paths), the application must request full trust permission. Try changing the application manifest to request full trust, and then try again.  
+#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Параметры PrivatePath в файле конфигурации приложения не учитываются  
+ Чтобы использовать PrivatePath (пути зондирования Fusion), приложение должно запросить разрешение полного доверия. Попробуйте изменить манифест приложения, чтобы запросить полное доверие, а затем повторите попытку.  
   
-#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>During uninstall a message appears saying, "Failed to uninstall application"  
- This message usually indicates that the application has already been removed or the store is corrupted. After you click **OK**, the **Add/Remove Program** entry will be removed.  
+#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Во время удаления появляется сообщение "не удалось удалить приложение".  
+ Это сообщение обычно означает, что приложение уже удалено, или хранилище повреждено. После нажатия кнопки **ОК**будет удалена запись **Добавить или удалить программу** .  
   
-#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>During installation, a message appears that says that the platform dependencies are not installed  
- You are missing a prerequisite in the GAC (global assembly cache) that the application needs in order to run.  
+#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Во время установки появляется сообщение о том, что зависимости платформы не установлены  
+ Отсутствует необходимое условие в GAC (глобальный кэш сборок), которое требуется приложению для запуска.  
   
-## <a name="publishing-with-visual-studio"></a>Publishing with Visual Studio  
+## <a name="publishing-with-visual-studio"></a>Публикация с помощью Visual Studio  
   
-#### <a name="publishing-in-visual-studio-fails"></a>Publishing in Visual Studio fails  
- Ensure that you have the right to publish to the server that you are targeting. For example, if you are logged in to a terminal server computer as an ordinary user, not as an administrator, you probably will not have the rights required to publish to the local Web server.  
+#### <a name="publishing-in-visual-studio-fails"></a>Сбой публикации в Visual Studio  
+ Убедитесь, что у вас есть право на публикацию на сервере, на котором вы нацелены. Например, если вы выполнили вход на компьютер сервера терминалов в качестве обычного пользователя, а не администратора, то, вероятно, у вас не будет прав, необходимых для публикации на локальном веб-сервере.  
   
- If you are publishing with a URL, ensure that the destination computer has FrontPage Server Extensions enabled.  
+ При публикации с помощью URL-адреса убедитесь, что на целевом компьютере включены серверные расширения FrontPage.  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Error Message: Unable to create the Web site '\<site>'. The components for communicating with FrontPage Server Extensions are not installed.  
- Ensure that you have the Microsoft Visual Studio Web Authoring Component installed on the machine that you are publishing from. For Express users, this component is not installed by default. Дополнительные сведения см. на веб-сайте [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310).  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: не удалось создать веб-сайт "\<сайт >". Компоненты для взаимодействия с серверными расширениями FrontPage не установлены.  
+ Убедитесь, что на компьютере, на котором выполняется публикация, установлен компонент Microsoft Visual Studio Web Authoring. Для пользователей Express этот компонент не устанавливается по умолчанию. Дополнительные сведения см. на веб-сайте [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Error Message: Could not find file 'Microsoft.Windows.Common-Controls, Version=6.0.0.0, Culture=*, PublicKeyToken=6595b64144ccf1df, ProcessorArchitecture=\*, Type=win32'  
- This error message appears when you attempt to publish a WPF application with visual styles enabled. To resolve this issue, see [How to: Publish a WPF Application with Visual Styles Enabled](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: не удалось найти файл "Microsoft. Windows. Common-Controls, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = Win32"  
+ Это сообщение об ошибке появляется при попытке публикации приложения WPF с включенными стилями оформления. Чтобы устранить эту проблему, см. раздел [как опубликовать приложение WPF с включенными визуальными стилями](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
-## <a name="using-mage"></a>Using Mage  
+## <a name="using-mage"></a>Использование Mage  
   
-#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>You tried to sign with a certificate in your certificate store and a received blank message box  
- In the **Signing** dialog box, you must:  
+#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Вы попытались подписать сертификат в хранилище сертификатов и получено пустое окно сообщения  
+ В диалоговом окне **Подписывание** необходимо:  
   
-- Select **Sign with a stored certificate**, and  
+- Выберите **знак с сохраненным сертификатом**и  
   
-- Select a certificate from the list; the first certificate is not the default selection.  
+- Выберите сертификат из списка. Первый сертификат не является выбором по умолчанию.  
   
-#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Clicking the "Don't Sign" button causes an exception  
- This issue is a known bug. All [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests are required to be signed. Just select one of the signing options, and then click **OK**.  
+#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Нажатие кнопки "не подписывать" приводит к возникновению исключения  
+ Эта проблема является известной ошибкой. Все манифесты [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] должны быть подписаны. Просто выберите один из параметров подписывания и нажмите кнопку **ОК**.  
   
-## <a name="additional-errors"></a>Additional Errors  
- The following table shows some common error messages that a client-computer user may receive when the user installs a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Each error message is listed next to a description of the most probable cause for the error.  
+## <a name="additional-errors"></a>Дополнительные ошибки  
+ В следующей таблице показаны некоторые распространенные сообщения об ошибках, которые пользователь клиентского компьютера может получить, когда пользователь устанавливает [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение. Каждое сообщение об ошибке отображается рядом с описанием наиболее вероятной причины ошибки.  
   
 |Сообщение об ошибке|Описание|  
 |-------------------|-----------------|  
-|Application cannot be started. Contact the application publisher.<br /><br /> Cannot start the application. Contact the application vendor for assistance.|These are generic error messages that occur when the application cannot be started, and no other specific reason can be found. Frequently this means that the application is somehow corrupted, or that the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] store is corrupted.|  
-|Cannot continue. The application is improperly formatted. Contact the application publisher for assistance.<br /><br /> Application validation did not succeed. Unable to continue.<br /><br /> Unable to retrieve application files. Files corrupt in deployment.|One of the manifest files in the deployment is syntactically not valid, or contains a hash that cannot be reconciled with the corresponding file. This error may also indicate that the manifest embedded inside an assembly is corrupted. Re-create your deployment and recompile your application, or find and fix the errors manually in your manifests.|  
-|Cannot retrieve application. Ошибка проверки подлинности.<br /><br /> Application installation did not succeed. Cannot locate applications files on the server. Contact the application publisher or your administrator for assistance.|One or more files in the deployment cannot be downloaded because you do not have permission to access them. This can be caused by a 403 Forbidden error being returned by a Web server, which may occur if one of the files in your deployment ends with an extension that makes the Web server treat it as a protected file. Also, a directory that contains one or more of the application's files might require a username and password in order to access.|  
-|Cannot download the application. The application is missing required files. Contact the application vendor or your system administrator for assistance.|One or more of the files listed in the application manifest cannot be found on the server. Verify that you have uploaded all the deployment's dependent files, and try again.|  
-|Загрузка приложения не выполнена. Check your network connection, or contact your system administrator or network service provider.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cannot establish a network connection to the server. Examine the server's availability and the state of your network.|  
-|URLDownloadToCacheFile failed with HRESULT '\<number>'. An error occurred trying to download '\<file>'.|If a user has set Internet Explorer Advanced Security option "Warn if changing between secure and not secure mode" on the deployment target computer, and if the setup URL of the ClickOnce application being installed is redirected from a non-secure to a secure site (or vice-versa), the installation will fail because the Internet Explorer warning interrupts it.<br /><br /> To resolve this, you can do one of the following:<br /><br /> -   Clear the security option.<br />-   Make sure that the setup URL is not redirected in such a way that changes security modes.<br />-   Remove the redirection completely and point to the actual setup URL.|  
-|An error has occurred writing to the hard disk. There might be insufficient space available on the disk. Contact the application vendor or your system administrator for assistance.|This may indicate insufficient disk space for storing the application, but it may also indicate a more general I/O error when you are trying to save the application files to the drive.|  
-|Cannot start the application. There is not enough available space on the disk.|The hard disk is full. Clear off space and try to run the application again.|  
-|Too many deployed activations are attempting to load at once.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] limits the number of different applications that can start at the same time. This is largely to help protect against malicious attempts to instigate denial-of-service attacks against the local [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] service; users who try to start the same application repeatedly, in rapid succession, will only end up with a single instance of the application.|  
-|Shortcuts cannot be activated over the network.|Shortcuts to a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application can only be started on the local hard disk. They cannot be started by opening a URL that points to a shortcut file on a remote server.|  
-|The application is too large to run online in partial trust. Contact the application vendor or your system administrator for assistance.|An application that runs in partial trust cannot be larger than half of the size of the online application quota, which by default is 250 MB.|  
+|Не удается запустить приложение. Обратитесь к издателю приложения.<br /><br /> Не удается запустить приложение. Обратитесь за помощью к поставщику приложения.|Это общие сообщения об ошибках, которые возникают, когда не удается запустить приложение и не удается найти другие конкретные причины. Часто это означает, что приложение каким-либо образом повреждено или что хранилище [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] повреждено.|  
+|Не удается продолжить. Приложение имеет неправильный формат. Обратитесь за помощью к издателю приложения.<br /><br /> Проверка приложения не выполнена. Продолжение невозможно.<br /><br /> Не удалось получить файлы приложения. Файлы повреждены при развертывании.|Один из файлов манифеста в развертывании синтаксически недействителен или содержит хэш, который не может быть согласован с соответствующим файлом. Эта ошибка может также означать, что манифест, внедренный в сборку, поврежден. Повторное создание развертывания и повторная компиляция приложения, а также поиск и исправление ошибок в манифестах вручную.|  
+|Не удается получить приложение. Ошибка проверки подлинности.<br /><br /> Установка приложения не выполнена. Не удается разместить файлы приложений на сервере. Обратитесь за помощью к издателю приложения или к администратору.|Не удается скачать один или несколько файлов в развертывании, так как у вас нет разрешения на доступ к ним. Это может быть вызвано ошибкой 403, которая возвращается веб-сервером, что может произойти, если один из файлов в развертывании заканчивается расширением, позволяющим веб-серверу рассматривать его как защищенный файл. Кроме того, для доступа к каталогу, содержащему один или несколько файлов приложения, может потребоваться имя пользователя и пароль.|  
+|Не удается скачать приложение. В приложении отсутствуют необходимые файлы. Обратитесь за помощью к поставщику приложения или к системному администратору.|Один или несколько файлов, перечисленных в манифесте приложения, не найдены на сервере. Убедитесь, что все зависимые от развертывания файлы отправлены, и повторите попытку.|  
+|Загрузка приложения не выполнена. Проверьте сетевое подключение или обратитесь к системному администратору или поставщику сетевых услуг.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] не удается установить сетевое подключение к серверу. Проверьте доступность сервера и состояние сети.|  
+|Сбой Урлдовнлоадтокачефиле с HRESULT "\<number >". При попытке загрузить файл "\<>" произошла ошибка.|Если пользователь установил параметр Internet Explorer Advanced Security (предупреждать при переходе между безопасным и небезопасным режимами) на целевом компьютере развертывания, и если URL-адрес установки устанавливаемого приложения ClickOnce перенаправляется с незащищенного на защищенный сайт (или наоборот), установка не будет выполнена, так как предупреждение Internet Explorer прервет его.<br /><br /> Для решения этой проблемы можно выполнить одно из следующих действий.<br /><br /> -Снимите флажок безопасность.<br />— Убедитесь, что URL-адрес установки не перенаправляется таким образом, чтобы изменить режим безопасности.<br />— Полностью удалить перенаправление, указав фактический URL-адрес настройки.|  
+|Произошла ошибка при записи на жесткий диск. Возможно, на диске недостаточно свободного места. Обратитесь за помощью к поставщику приложения или к системному администратору.|Это может означать нехватку дискового пространства для хранения приложения, но оно также может указывать на более общую ошибку ввода-вывода при попытке сохранить файлы приложения на диске.|  
+|Не удается запустить приложение. Недостаточно свободного места на диске.|Жесткий диск заполнен. Освободите место и попробуйте запустить приложение еще раз.|  
+|Одновременно выполняется попытка загрузки слишком большого числа развернутых активаций.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ограничивает количество различных приложений, которые могут запускаться одновременно. В основном это помогает защититься от вредоносных попыток инстигате атак типа «отказ в обслуживании» на локальную службу [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]; Пользователи, которые пытаются повторно запустить одно и то же приложение, в быстрых успешных операциях будут иметь только один экземпляр приложения.|  
+|Ярлыки нельзя активировать по сети.|Ярлыки для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения можно запускать только на локальном жестком диске. Они не могут быть запущены путем открытия URL-адреса, указывающего на файл ярлыка на удаленном сервере.|  
+|Приложение слишком велико для работы в режиме частичного доверия. Обратитесь за помощью к поставщику приложения или к системному администратору.|Приложение, выполняющееся в режиме частичного доверия, не может быть больше половины размера квоты онлайн-приложения, значение по умолчанию — 250 МБ.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

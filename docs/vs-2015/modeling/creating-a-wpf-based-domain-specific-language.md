@@ -1,5 +1,5 @@
 ---
-title: Creating a WPF-Based Domain-Specific Language | Microsoft Docs
+title: Создание доменного языка на основе WPF | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,9 +19,9 @@ ms.locfileid: "74295652"
 # <a name="creating-a-wpf-based-domain-specific-language"></a>Создание доменного языка на основе WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can create a domain-specific language that has a WPF designer instead of a graphical designer.
+Можно создать доменный язык с конструктором WPF вместо графического конструктора.
 
- Information and samples about this feature can be found on the Visual Studio Visualization and Modeling Tools website at [http://go.microsoft.com/fwlink/?LinkId=186128](https://go.microsoft.com/fwlink/?LinkId=186128)
+ Сведения и примеры по этой функции можно найти на веб-сайте средств визуализации и моделирования Visual Studio по адресу [http://go.microsoft.com/fwlink/?LinkId=186128](https://go.microsoft.com/fwlink/?LinkId=186128)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)

@@ -24,7 +24,7 @@ ms.locfileid: "74297895"
 
  Для создания игр или мощных графических приложений установите инструменты Visual Studio для Unity. Это позволит максимально эффективно использовать функции Visual Studio и Unity — популярного движка и среды разработки для игр и мощных графических приложений в Windows, iOS, Android и на других платформах.
 
- **В этой статье:**
+ **Содержание этой статьи**
 
 - [Сборка приложения для устройств Android, iOS и Windows (.NET Framework)](#NET)
 
@@ -39,7 +39,7 @@ ms.locfileid: "74297895"
 - [Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity](#Unity)
 
 ## <a name="NET"></a> Сборка приложения для устройств Android, iOS и Windows (.NET Framework)
- ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Устройствах](../cross-platform/media/homedevices.png "HomeDevices")
 
  С помощью Xamarin вы можете указать Android, iOS и Windows в качестве целевых устройств в одном и том же решении, при этом код и даже графический интерфейс будут использоваться совместно.
 
@@ -79,7 +79,7 @@ ms.locfileid: "74297895"
 |Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
 
 ### <a name="WindowsHTML"></a> Целевые устройства Windows 10
- ![Устройства Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Устройства Windows](../cross-platform/media/windowsdevices.png "Устройства Windows")
 
  Если вы хотите создать одно приложение, предназначенное для полного спектра устройств Windows 10, создайте универсальное приложение Windows. Разработка приложения будет осуществляться с помощью одного проекта, а страницы будут отображаться должным образом независимо от того, какое устройство используется для их просмотра.
 
@@ -95,7 +95,7 @@ ms.locfileid: "74297895"
 |[Перенос приложений на универсальную платформу Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
- ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Устройствах](../cross-platform/media/homedevices.png "HomeDevices")
 
  Если вы разработчик веб-решений и знакомы с HTML и JavaScript, то вы можете создавать приложения для целевых платформ Windows, Android и iOS с помощью средств Visual Studio для Apache Cordova. Такие приложения могут быть ориентированы на все три платформы, и при их создании вы можете полагаться на привычные навыки и процедуры.
 
@@ -103,7 +103,7 @@ ms.locfileid: "74297895"
 
  Поскольку эти API-интерфейсы являются кроссплатформенными, большую часть написанного кода можно совместно использовать для всех трех платформ. Это снижает расходы на разработку и обслуживание. Кроме того, нет необходимости начинать с нуля. При создании других типов веб-приложений можно предоставить эти файлы приложению Cordova без каких-либо изменений и переработки.
 
- ![Multi&#45;Device Hybrid Apps](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Гибридные приложения для нескольких&#45;устройств](../cross-platform/media/multidevicehybridapps.png "мултидевицехибридаппс")
 
  Чтобы приступить к работе, установите Visual Studio 2015 и выберите **HTML/JavaScript (Apache Cordova)** во время установки. Если вы пользуетесь Visual Studio 2013, установите инструменты Visual Studio для расширения Apache Cordova. В любом случае, инструменты Cordova автоматически установят любое стороннее программное обеспечение, необходимое для создания универсального приложения (для нескольких платформ).
 
@@ -126,7 +126,7 @@ ms.locfileid: "74297895"
 
  Если вам нужно создать приложение для Android, требующее сложных операций с графикой (например, игру), можно воспользоваться C++. Начните с проекта **Собственное приложение действия (Android)** . В этом проекте реализована полная поддержка цепочки инструментов Clang.
 
- ![Шаблон проекта Native Activity](../cross-platform/media/cross-plat-cpp-native.png "Cross-Plat_CPP_Native")
+ ![Шаблон проекта Native Activity](../cross-platform/media/cross-plat-cpp-native.png "Перекрестное Plat_CPP_Native")
 
  Для запуска готового приложения и оценки его интерфейса воспользуйтесь эмулятором Visual Studio для Android. Это быстрый, надежный и простой в установке и настройке инструмент.
 
@@ -143,7 +143,7 @@ ms.locfileid: "74297895"
 |**Дополнительные сведения**|
 |--------------------|
 |[Скачивание Visual Studio.](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
+|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Библиотека MSDN)|
 |[Дополнительные сведения об использовании C++ для нескольких платформ.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Установите нужные компоненты, а затем создайте собственное приложение действия для Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
 |[Сведения об эмуляторе Visual Studio для Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
@@ -169,7 +169,7 @@ ms.locfileid: "74297895"
 |[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
 |[Сведения о Unity](https://unity.com/) (веб-сайт Unity)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Добавление API Office 365 в проект Visual Studio](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Мобильные службы Azure](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)

@@ -1,5 +1,5 @@
 ---
-title: Adding Extensions to DSL Definitions | Microsoft Docs
+title: Добавление расширений в определения DSL | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,23 +19,23 @@ ms.locfileid: "74292150"
 # <a name="adding-extensions-to-dsl-definitions"></a>Добавление расширений в определения доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DSL Definition extension allows you to create a package of extensions to a domain-specific language (DSL). The DSL extension, which is contained in a Visual Studio Integration Extension (VSIX), can be installed on a user's computer in the same manner as a DSL. The additional features can be dynamically enabled and disabled at run time. DSLs do not have to be explicitly designed for extension, and extensions can be designed later or by third parties without altering the extended DSL.
+Расширение определения DSL позволяет создать пакет расширений для доменного языка (DSL). Расширение DSL, которое содержится в расширении интеграции Visual Studio (VSIX), может быть установлено на компьютере пользователя точно так же, как и DSL. Дополнительные функции могут динамически включаться и отключаться во время выполнения. Доменный язык не обязательно должен быть специально спроектирован для расширения, а расширения могут быть созданы позже или сторонними производителями без изменения расширенного DSL.
 
- The additional features can include the following:
+ К дополнительным функциям могут относиться следующие:
 
-- Properties for model and presentation elements
+- Свойства элементов Model и Presentation
 
-- Decorators for shapes and connectors
+- Декораторы для фигур и соединителей
 
-- Classes, relationships, shapes and connectors
+- Классы, связи, фигуры и соединители
 
-- Validation constraints
+- Ограничения проверки
 
-- Toolbox items and tabs
+- Элементы и вкладки панели элементов
 
-  A user of an extended DSL can create and save a model that contains instances of the additional features, and these can be read by other users who have installed the appropriate extension. Users who have not installed the extension cannot use the additional features, but they can update and save a model without losing the additional features.
+  Пользователь расширенного DSL может создать и сохранить модель, содержащую экземпляры дополнительных компонентов, и они могут быть прочитаны другими пользователями, которые установили соответствующее расширение. Пользователи, которые не установили расширение, не могут использовать дополнительные функции, но могут обновлять и сохранять модель без потери дополнительных функций.
 
-  For sample code and more information about this feature, see the [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128) Web site.
+  Пример кода и дополнительные сведения об этой функции см. на веб-сайте [SDK визуализации и моделирования Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128) .
 
-## <a name="see-also"></a>См. также раздел
- [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>См. также
+ [Пакет SDK визуализации и моделирования Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128)
