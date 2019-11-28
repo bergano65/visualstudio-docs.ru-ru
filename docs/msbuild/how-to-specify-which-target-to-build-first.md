@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Выбор цели для первой сборки | Документация Майкрософт
+title: Практическое руководство. Выбор цели для первой сборки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a567ca32a78eb6a78aad3702a68a6e08ed122db8
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997361"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316506"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Как выполнить Выбор цели для первой сборки
+# <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первой сборки
 Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) выполняет сборку первого найденного проекта, а также всех зависимостей, если только файл проекта не содержит атрибут `DefaultTargets` или `InitialTargets` либо целевой объект не указан в командной строке с помощью параметра **-target**.
 
 ## <a name="use-the-initialtargets-attribute"></a>Использование атрибута InitialTargets
@@ -72,6 +72,6 @@ ms.locfileid: "62997361"
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>См. также
-  [MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [Целевые объекты](../msbuild/msbuild-targets.md)
 - [Практическое руководство. Очистка сборки](../msbuild/how-to-clean-a-build.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d2bf2f8a45618e8b1f7540479a02c1a5f91b9bf
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977363"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316474"
 ---
 
 # <a name="how-to-build-incrementally"></a>Практическое руководство. Инкрементная сборка
@@ -37,7 +37,7 @@ ms.locfileid: "62977363"
       Outputs="hello.exe">
   ```
 
-  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. В следующем примере, если какой-либо файл в списке элементов `@(CSFile)` новее, чем файл *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] запустит целевой объект; в противном случае он будет пропущен.
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. В следующем примере, если какой-либо файл в списке элементов `@(CSFile)` новее, чем файл *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] запустит целевой объект; в противном случае он будет пропущен.
 
 ```xml
 <Target Name="Build"
@@ -60,9 +60,9 @@ ms.locfileid: "62977363"
 ## <a name="example"></a>Пример
 В следующем примере используется проект, который создает файлы справки для гипотетической справочной системы. В проекте выполняется преобразование исходных *TXT*-файлов в промежуточные *CONTENT*-файлы, которые затем объединяются с XML-файлами метаданных для получения итогового *HELP*-файла, используемого в справке. В проекте используются следующие гипотетические задачи.
 
-- `GenerateContentFiles`: преобразует *TXT*-файлы в *CONTENT*-файлы.
+- `GenerateContentFiles`. преобразует *TXT*-файлы в *CONTENT*-файлы.
 
-- `BuildHelp`: объединяет *CONTENT*-файлы и XML-файлы метаданных для сборки итогового *HELP*-файла.
+- `BuildHelp`. объединяет *CONTENT*-файлы и XML-файлы метаданных для сборки итогового *HELP*-файла.
 
 В проекте используются преобразования для создания взаимно однозначного сопоставления между входными и выходными данными в задаче `GenerateContentFiles`. Дополнительные сведения см. в статье [Преобразования](../msbuild/msbuild-transforms.md). Кроме того, элемент `Output` настроен на автоматическое использование выходных данных задачи `GenerateContentFiles` в качестве входных данных для задачи `BuildHelp`.
 
