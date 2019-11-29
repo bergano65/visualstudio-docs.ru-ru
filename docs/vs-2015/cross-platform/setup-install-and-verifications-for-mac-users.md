@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: 703ee752a9f16f0abc5e4813707890a6d17947af
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297709"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538943"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Программа установки, установка и проверки для пользователей Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "74297709"
   
 3. Скачайте и установите Xamarin, следуя указаниям в статье [Установка и настройка Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (xamarin.com).  
   
-4. После завершения установки Xamarin на компьютерах Mac и Windows следуйте инструкциям в статье [Подключение к Mac с помощью XMA](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com), чтобы обеспечить возможность работы с iOS и Mac из Visual Studio на компьютере под управлением Windows.  
+4. После завершения установки Xamarin на компьютерах Mac и Windows следуйте инструкциям в статье [Подключение к Mac с помощью XMA](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com), чтобы обеспечить возможность работы с iOS и Mac из Visual Studio на компьютере под управлением Windows.  
   
 ## <a name="windows"></a> Программа установки Windows в Parallels (Visual Studio и Xamarin)  
   
@@ -75,7 +75,7 @@ ms.locfileid: "74297709"
     > [!NOTE]
     > Требуется обновить Xamarin до версии 4.0.3.214 или более поздней, чтобы избежать проблем с более ранними лицензиями Xamarin.  Если при попытке проверить наличие обновлений возникает ошибка Microsoft Build Tools, см. беседу на [форумах по Xamarin](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
   
-6. После завершения установки Xamarin на компьютерах Mac и Windows следуйте инструкциям в статье [Подключение к Mac с помощью XMA](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com), чтобы обеспечить возможность работы с iOS из Visual Studio.  
+6. После завершения установки Xamarin на компьютерах Mac и Windows следуйте инструкциям в статье [Подключение к Mac с помощью XMA](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com), чтобы обеспечить возможность работы с iOS из Visual Studio.  
   
 ## <a name="verify"></a> Проверка окружения  
  После завершения работы установщиков потратьте несколько минут на проверку готовности системы к разработке приложений в Xamarin.  
@@ -116,7 +116,7 @@ ms.locfileid: "74297709"
   
    **iOS**  
   
-4. Убедитесь, что компьютер Mac доступен в сети и соединен с Visual Studio, как описано в статье [Подключение к Mac с помощью XMA](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com).  
+4. Убедитесь, что компьютер Mac доступен в сети и соединен с Visual Studio, как описано в статье [Подключение к Mac с помощью XMA](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com).  
   
 5. Проверьте, правильно ли создается проект iOS, следуя инструкциям в статье [Создание проекта iOS](https://github.com/xamarin/docs-archive/tree/master/Recipes/ios/general/projects/create_an_ios_project) (xamarin.com).  
   
