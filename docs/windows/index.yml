@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 905fd0b3f9ad37125ae8cccd5dab30f0517d16a1
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
+  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74119718"
+  ms.lasthandoff: 11/25/2019
+  ms.locfileid: "74474002"
 highlightedContent:
   items:
   - title: Настройка и установка
@@ -157,8 +157,8 @@ additionalContent:
     - title: Совместная работа
       summary: Совместное использование, редактирование и отладка кода в среде для совместной работы в режиме реального времени.
       url: /visualstudio/liveshare/
-    - title: Разработка с помощью контейнеров
-      summary: Используйте контейнеры для изоляции модульных компонентов и улучшения масштабируемости.
+    - title: Разработка с использованием контейнеров Docker
+      summary: Используйте контейнеры Docker для изоляции модульных компонентов и улучшения масштабируемости.
       url: ../containers/index.yml
   - title: Рабочие нагрузки
     items:
