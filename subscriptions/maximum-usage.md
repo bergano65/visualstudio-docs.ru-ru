@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Сведения о просмотре максимального количества назначенных подписок на портале администрирования
-ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605495"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491719"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Использование функции максимального использования для отслеживания количества назначенных подписок
 Новая функция на портале администрирования подписок Visual Studio помогает отслеживать, сколько подписок вы приобрели и назначили, и определяет максимальное число назначенных подписок каждого уровня, как в прошлом году, так и в период действия ваших соглашений. 

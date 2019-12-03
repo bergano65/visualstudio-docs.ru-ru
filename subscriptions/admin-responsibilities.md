@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Сведения об обязанностях администраторов подписок.
-ms.openlocfilehash: eb5a557d19aafdd36ccf175ec4fc37e482091f80
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5ebdc3cb2448815ee5193020808c51630c5f1c17
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415613"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491528"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Общие сведения об обязанностях администратора
 Администраторы могут управлять подписками своей организации.  В обязанности администратора также входит контроль за тем, что подписки управляются в соответствии с условиями лицензии. В этой статье описаны обязанности, преимущества и ограничения роли администратора.

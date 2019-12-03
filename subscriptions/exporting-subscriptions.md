@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Сведения о том, как экспортировать список подписчиков, и подробные сведения о назначениях подписки.
-ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605565"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491736"
 ---
 # <a name="export-subscription-information"></a>Экспорт сведений о подписке
 На [портале администрирования](https://manage.visualstudio.com) подписок Visual Studio можно экспортировать список подписчиков и сведения об их назначениях. Эти сведения включают имя, адрес электронной почты, запасной адрес электронной почты, уровень подписки, дату назначения, состояние активации, дату окончания срока действия, эталонное поле, разрешенные загрузки, страну, язык, состояние подписки и GUID подписки.  Список экспортируется в виде CSV-файла, и его можно открыть в Microsoft Excel для создания диаграмм, сводных данных и других артефактов.

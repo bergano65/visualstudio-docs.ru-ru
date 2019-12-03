@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9740da2674ad7e48f8863027fcb9a1acc8f1cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bd54e97535c281d50119fdc7aa759d0704fa9e1
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842176"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491559"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства MSBuild
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предусмотрен набор предопределенных свойств для сохранения информации о файле проекта и двоичных файлах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Значения этих свойств вычисляются так же, как и значения других свойств [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Например, для использования свойства `MSBuildProjectFile` необходимо ввести `$(MSBuildProjectFile)`
@@ -30,7 +30,7 @@ ms.locfileid: "62842176"
 ## <a name="reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства
  В следующей таблице приведены предопределенные свойства, предусмотренные в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-| Свойство. | Зарезервированное или стандартное | Описание |
+| Свойство. | Зарезервированное или стандартное | ОПИСАНИЕ |
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | Зарезервированное | Абсолютный путь к папке, где находятся используемые в данный момент двоичные файлы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] (например, *C:\Windows\Microsoft.Net\Framework\\\<versionNumber*). Этим свойством удобно пользоваться в случае, когда требуется сослаться на файлы в каталоге [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> Не включайте в это свойство завершающую обратную косую черту. |
 | `MSBuildExtensionsPath` | Стандартное | Введено в .NET Framework 4: разницы между значениями по умолчанию `MSBuildExtensionsPath` и `MSBuildExtensionsPath32` нет. Переменной среды `MSBUILDLEGACYEXTENSIONSPATH` можно присвоить значение, отличное от null, чтобы включить поведение, соответствующее значению по умолчанию `MSBuildExtensionsPath` в предыдущих версиях.<br /><br /> В .NET Framework 3.5 и более ранних версиях значение по умолчанию `MSBuildExtensionsPath` указывает на путь к вложенной папке MSBuild в папке *\Program Files\\* или *\Program Files (x86)* , в зависимости от разрядности текущего процесса. Например, для 32-разрядного процесса на 64-разрядном компьютере это свойство указывает папку на *\Program Files (x86)* . Для 64-разрядного процесса на 64-разрядном компьютере это свойство указывает на папку *\Program Files*.<br /><br /> Не включайте в это свойство завершающую обратную косую черту.<br /><br /> Это расположение хорошо подходит для хранения пользовательских файлов целей. Например, файлы целей можно установить в папку *\Program Files\MSBuild\MyFiles\Northwind.targets*, а затем импортировать в файлы проекта с помощью следующего XML-кода:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
@@ -46,7 +46,7 @@ ms.locfileid: "62842176"
 | `MSBuildProjectFile` | Зарезервированное | Полное имя файла проекта, включая расширение, например *MyApp.proj*. |
 | `MSBuildProjectFullPath` | Зарезервированное | Абсолютный путь к файлу проекта и его полное имя, включая расширение, например *C:\MyCompany\MyProduct\MyApp.proj*. |
 | `MSBuildProjectName` | Зарезервированное | Имя файла проекта без расширения, например *MyApp*. |
-| `MSBuildRuntimeType` | Зарезервированное | Тип текущей среды выполнения. Представлено в MSBuild 15. Значение может быть не определено (до MSBuild 15), `Full` (указывает на то, что MSBuild выполняется на платформе .NET для ПК), `Core` (указывает на то, что MSBuild выполняется на платформе .NET Core) или `Mono` (указывает на то, что MSBuild выполняется на платформе на Mono). |
+| `MSBuildRuntimeType` | Зарезервированное | Тип текущей среды выполнения. Представлено в MSBuild 15. Значение может быть не определено (до MSBuild 15), `Full` (указывает на то, что MSBuild выполняется на платформе .NET для ПК), `Core` (указывает на то, что MSBuild выполняется на платформе .NET Core, например в `dotnet build`) или `Mono` (указывает на то, что MSBuild выполняется на платформе на Mono). |
 | `MSBuildStartupDirectory` | Зарезервированное | Абсолютный путь к каталогу, из которого вызывается [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. С помощью этого свойства можно собирать все, что находится ниже конкретной точки в дереве проекта, без создания файлов *\<dirs>.proj* в каждом каталоге. Вместо этого у вас будет только один проект — например, *c:\traversal.proj*, как показано ниже:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Чтобы выполнить сборку в любой точке дерева, введите следующее:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Не включайте в это свойство завершающую обратную косую черту. |
 | `MSBuildThisFile` | Зарезервированное | Часть `MSBuildThisFileFullPath`, представляющая собой имя и расширение файла. |
 | `MSBuildThisFileDirectory` | Зарезервированное | Часть `MSBuildThisFileFullPath`, представляющая собой каталог.<br /><br /> Включите в путь завершающую обратную косую черту. |
