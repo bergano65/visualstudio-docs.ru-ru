@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816569"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491667"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 
@@ -73,7 +73,7 @@ ms.locfileid: "72816569"
 
 - [Руководство администратора программы MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) — содержит инструкции о том, как назначать подписки Visual Studio сотрудникам MPN.
 - [Назначение подписок Visual Studio сотрудникам MPN](manage-mpn-subscriptions.md)
-- [Условия использования](http://www.microsoft.com/useterms/) — на подписки Visual Studio, предоставляемые через MPN, распространяются условия лицензии для подписок Visual Studio, не предназначенных для перепродажи.
+- [Условия использования](https://www.microsoft.com/useterms/) — на подписки Visual Studio, предоставляемые через MPN, распространяются условия лицензии для подписок Visual Studio, не предназначенных для перепродажи.
 
 ## <a name="next-steps"></a>Следующие шаги
 

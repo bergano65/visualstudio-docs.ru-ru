@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Узнайте об обязанности администратора отслеживать назначения пользователей и обрабатывать заказы.
-ms.openlocfilehash: ab2a19fc94be27e8eaf90290b50820d58e919297
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420535"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491601"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Отслеживание назначений пользователей и обработка заказов
 Администраторы подписок на Visual Studio должны отслеживать использование Visual Studio и оформлять заказы при превышении уровня использования в сроки, указанные в соглашении о корпоративном лицензировании Майкрософт или в соглашении о предоставлении продуктов и услуг Майкрософт. Новый портал администрирования подписок на Visual Studio упрощает эту задачу благодаря средству отслеживания, в котором можно просматривать доступные и используемые лицензии.
