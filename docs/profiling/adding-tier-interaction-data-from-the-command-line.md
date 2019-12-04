@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777872"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779874"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Добавление данных о взаимодействии уровней из командной строки
 
@@ -31,7 +32,7 @@ ms.locfileid: "62777872"
 
 **Сбор данных об уровневом взаимодействии на удаленном компьютере**
 
-Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs_profiler\_**_\<платформа>_**\_**_\<язык>_**.exe** из папки _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
+Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs_profiler\_** _\<платформа>_ **\_** _\<язык>_ **.exe** из папки _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
 
 **Отчеты TIP**
 

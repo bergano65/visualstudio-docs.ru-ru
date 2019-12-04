@@ -10,14 +10,15 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906d24513982917a455fb7fc59940446c89dae45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936388"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777493"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026. Обработка чрезмерного времени ядра ЦП
 
@@ -31,7 +32,7 @@ ms.locfileid: "62936388"
 
  При профилировании с помощью выборки, памяти .NET или методов разрешения конфликтов ресурсов необходимо собрать минимум 10 выборок, чтобы активировать это правило.
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Доля времени ЦП в режиме ядра превысила время, затраченное в пользовательском режиме. Рекомендуется повторить профилирование и сделать выборку по числу системных вызовов (syscall), чтобы определить причину высокой доли времени выполнения в режиме ядра.
 
 ## <a name="rule-description"></a>Описание правила

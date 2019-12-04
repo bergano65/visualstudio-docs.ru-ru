@@ -9,14 +9,15 @@ ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fe79d236750c5f165468c95f7ffa320f83f86f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436434"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780030"
 ---
 # <a name="functions-view---sampling-data"></a>Представление "Функции" — данные выборки
 В представлении отчета "Функции" для метода профиля выборки перечисляются функции, выбранные в ходе сеанса профилирования.
@@ -24,7 +25,7 @@ ms.locfileid: "63436434"
 > [!NOTE]
 > Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Столбец|Описание|
+|Столбец|ОПИСАНИЕ|
 |------------|-----------------|
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|
 |**Имя процесса**|Имя процесса.|

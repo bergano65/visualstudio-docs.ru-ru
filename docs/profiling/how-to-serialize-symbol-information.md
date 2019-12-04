@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Сериализация сведений о символах | Документация Майкрософт
+title: Практическое руководство. Сериализация сведений о символах | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b88268ba0ed8b1c324eda08ec3db969e088f279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 202c30b1786e7e3ddb27583ddaeda9180d680b53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539258"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774891"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Как выполнить Сериализация сведений о символах
+# <a name="how-to-serialize-symbol-information"></a>Практическое руководство. Сериализация сведений о символах
 Можно выполнить сериализацию символов, необходимых для анализа работы приложения. При сериализации символы добавляются в *VSP*-файл. Если вы добавите сведения о символах в *VSP*-файл, другие пользователи смогут анализировать отчет о производительности без доступа к исходным символам. Если символы не сериализованы, для анализа *VSP*-файла необходимо иметь исходные инструментированные *EXE*- и *PDB*-файлы.
 
 ### <a name="to-automatically-serialize-symbol-information"></a>Автоматическая сериализация сведений о символах

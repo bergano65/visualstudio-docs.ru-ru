@@ -11,14 +11,15 @@ ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aa263f6ceab515627fd33070517e3393aeec419d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f768a35e7c50ec55867ae49901718063ca39bd0b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936737"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777755"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002. Отсутствует файл VSPerfCorProf.dll
 
@@ -30,7 +31,7 @@ ms.locfileid: "62936737"
 |Сообщение|По-видимому, сбор данных для файла был выполнен без должной настройки переменных среды с помощью *VSPerfCLREnv.cmd*. Разрешение символов для управляемых двоичных данных может быть невозможно.|
 |Тип правила|Сведения|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Профилировщику не удалось найти библиотеку *VSPerfCorProf.dll* во время сеанса профилирования. Это предупреждение выводится, если программы командной строки для сбора данных профилирования используются без применения программы *VSPerfCLREnv.cmd* для инициализации необходимых переменных среды. Это предупреждение также может выдаваться, если при запуске Средств профилирования выполняется другой профилировщик.
 
 ## <a name="rule-description"></a>Описание правила

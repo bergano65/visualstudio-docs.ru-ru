@@ -8,14 +8,15 @@ ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: be5f748f4baa102bda16752904347954f97fea27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980204"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778262"
 ---
 # <a name="startprofile"></a>StartProfile
 Функция `StartProfile` устанавливает для счетчика значение 1 (вкл) для указанного уровня профилирования.
@@ -33,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:
 
-|Перечислитель|Описание|
+|Перечислитель|ОПИСАНИЕ|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:
 
-|Перечислитель|Описание|
+|Перечислитель|ОПИСАНИЕ|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|

@@ -9,14 +9,15 @@ ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfd22edc9bd672a8d82c94a705b523ce7d836169
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834311"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779627"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Сбор подробных сведений о времени с помощью инструментирования
 Метод инструментирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет внедрить код профилирования в копию модуля. Во время профилирования код записывает все входы, выходы и вызовы функций в модуле. Метод инструментирования целесообразно использовать для сбора подробных сведений о разделе кода и для понимания влияния операций ввода-вывода на производительность приложения.

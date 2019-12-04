@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493356"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706972"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -43,7 +43,7 @@ ms.locfileid: "68493356"
 ## <a name="renewing-my-subscriptions"></a>Продление подписок
 
 **Стандартные подписки**
-- Microsoft Store: если вы приобрели подписку в [Microsoft Store](http://www.microsoft.com/store), ее можно продлить в этом магазине.
+- Microsoft Store: если вы приобрели подписку в [Microsoft Store](https://www.microsoft.com/store), ее можно продлить в этом магазине.
 - Корпоративная лицензия:  если организация приобретает подписки по программе корпоративного лицензирования, администратор должен обратиться к торговому посреднику, чтобы продлить подписки.
 
 **Облачные подписки:**  облачные подписки продлевать не требуется. Пока подписка оплачивается, она будет активной.

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Справочная информация о символах Windows | Документация Майкрософт
+title: Практическое руководство. Справочная информация о символах Windows | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,17 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422878"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774917"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Как выполнить Справочная информация о символах Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Практическое руководство. Справочная информация о символах Windows
 Файлы символов (*PDB*) средств профилирования Visual Studio используются для разрешения символьных имен, например имен функций в двоичных файлах программ. Вы можете выполнить следующие действия, чтобы автоматически скачать и изменить правильные *PDB*-файлы для версии Windows на локальном компьютере.
 
 > [!NOTE]
@@ -44,7 +45,7 @@ ms.locfileid: "63422878"
 
      **C:\SymbolCache**
 
-     Можно также нажать кнопку с многоточием (**...** ) и выбрать каталог в диалоговом окне **Выбрать папку**.
+     Можно также нажать кнопку с многоточием ( **...** ) и выбрать каталог в диалоговом окне **Выбрать папку**.
 
 ## <a name="see-also"></a>См. также
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
