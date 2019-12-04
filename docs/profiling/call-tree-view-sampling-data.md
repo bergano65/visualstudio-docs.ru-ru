@@ -9,14 +9,15 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0655c0faf57a72d6e99ba65f9f84db059e5fe0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406014"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779757"
 ---
 # <a name="call-tree-view---sampling-data"></a>Представление "Дерево вызовов" — данные выборки
 В преставлении "Дерево вызовов" отображаются пути выполнения функции, пересеченные в профилируемом приложении.
@@ -36,7 +37,7 @@ ms.locfileid: "63406014"
 
  После задании корневого узла из представления удаляются все записи, кроме поддеревьев выбранного узла. Чтобы восстановить исходное состояние корневого узла, щелкните правой кнопкой мыши в окне представления "Дерево вызовов" и выберите **Сбросить корень**.
 
-|Столбец|Описание|
+|Столбец|ОПИСАНИЕ|
 |------------|-----------------|
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|
 |**Имя процесса**|Имя процесса.|

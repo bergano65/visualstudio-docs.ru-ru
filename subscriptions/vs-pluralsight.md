@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491291"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74707003"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -83,14 +83,14 @@ ms.locfileid: "74491291"
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Вопрос: У меня есть доступ к настраиваемым спискам воспроизведения или каналам обучения?
 Ответ. Да, как подписчик Visual Studio вы имеете доступ к экспертным каналам в рамках преимущества Pluralsight. Эти каналы курируются специалистами Майкрософт и подходят для обучения в сферах .Net, Azure, DevOps и мобильности. Активируйте преимущество Pluralsight через портал подписки Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), чтобы получить доступ к этим каналам на стартовой странице Pluralsight:
 
-• Скотт Ханселманн (Scott Hanselmann) (.Net, Azure) — [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
+• Скотт Ханселманн (Scott Hanselmann) (.Net, Azure) — [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
 
-• Донован Браун (Donovan Brown) (DevOps) — [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
+• Донован Браун (Donovan Brown) (DevOps) — [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
 
-• Джеймс Монтеманьо (James Montemagno) (Мобильность) — [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+• Джеймс Монтеманьо (James Montemagno) (Мобильность) — [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Вопрос: Что произойдет, когда закончится срок действия подписки Pluralsight?
-Ответ.  В конце срока действия бесплатной подписки Pluralsight вы можете приобрести платную подписку напрямую у Pluralsight.  Обратитесь в компанию [Pluralsight](http://www.pluralsight.com), чтобы получить подробные сведения.
+Ответ.  В конце срока действия бесплатной подписки Pluralsight вы можете приобрести платную подписку напрямую у Pluralsight.  Обратитесь в компанию [Pluralsight](https://www.pluralsight.com), чтобы получить подробные сведения.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - [Центр справки Pluralsight](https://help.pluralsight.com/help) поможет вам в прохождении курсов Pluralsight и в использовании веб-сайта Pluralsight.
@@ -98,6 +98,6 @@ ms.locfileid: "74491291"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Следующие шаги
-После создания учетной записи вы можете приступать к обучению.  Посетите [https://www.pluralsight.com](http://www.pluralsight.com) и нажмите элемент **вход** в правом верхнем углу страницы, чтобы начать новый курс или вернуться к курсу, который уже выполняется.
+После создания учетной записи вы можете приступать к обучению.  Посетите [https://www.pluralsight.com](https://www.pluralsight.com) и нажмите элемент **вход** в правом верхнем углу страницы, чтобы начать новый курс или вернуться к курсу, который уже выполняется.
 
 Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md). 

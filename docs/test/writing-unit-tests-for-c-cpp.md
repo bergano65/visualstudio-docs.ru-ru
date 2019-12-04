@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189101"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688862"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -79,7 +79,7 @@ ms.locfileid: "73189101"
 
 ### <a name="link-to-object-or-library-files"></a>Ссылка на объектный файл или файл библиотеки
 
-Если тестовый код не экспортирует функции, которые необходимо проверить, можно добавить выходной OBJ- или LIB-файл в зависимости тестового проекта. См. раздел [Связывание тестов с объектным файлом или файлом библиотеки](how-to-use-microsoft-test-framework-for-cpp.md).
+Если тестовый код не экспортирует функции, которые необходимо проверить, можно добавить выходной OBJ- или LIB-файл в зависимости тестового проекта. См. раздел [Связывание тестов с объектным файлом или файлом библиотеки](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project).
 
 ### <a name="add-include-directives-for-header-files"></a>Добавление директив #include для файлов заголовков
 

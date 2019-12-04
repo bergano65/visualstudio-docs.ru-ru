@@ -12,14 +12,15 @@ ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 049e1163f54dfcdfe2338faa59ae8c37c3114fa7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422040"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778041"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Использование Средств профилирования из командной строки
 С помощью программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно выполнять профилирование приложений в командной строке и автоматизировать этот процесс с помощью пакетных файлов и скриптов. Кроме того, с помощью командной строки можно создавать файлы отчетов. Для сбора данных на компьютерах без установленной системы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно использовать упрощенный автономный профилировщик.

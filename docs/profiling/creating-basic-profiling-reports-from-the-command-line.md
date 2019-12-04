@@ -6,14 +6,15 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552867"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777794"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Создание базовых отчетов профилирования из командной строки
 В этой статье описываются основные команды VSPerfReport, которые создают отчеты со значениями, разделенными запятыми (*CSV*), из файла данных профилирования с расширением *VSP* или *VSPS*. Описание всех параметров отчета см. в разделе [VSPerfReport](../profiling/vsperfreport.md).
@@ -23,7 +24,7 @@ ms.locfileid: "62552867"
 
  **VSPerfReport** `VSPFile` **/Summary:All** создает все отчеты, доступные для файла с расширением *VSP* или *VSPS*.
 
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] Создает заданные типы отчетов.
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] Создает заданные типы отчетов.
 
  **VSPerfReport** `VSPFile` **/CallTrace** создает отчет, в котором перечисляются все события сбора данных. Только для метода инструментирования.
 

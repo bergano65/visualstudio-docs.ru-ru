@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972419"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778392"
 ---
 # <a name="processon-and-processoff"></a>Подкоманды ProcessOn и ProcessOff
 Подкоманды **ProcessOff** и **ProcessOn** программы VSPerfCmd.exe приостанавливают и возобновляют профилирование заданного процесса в сеансе профилирования из командной строки. **ProcessOff** останавливает профилирование процесса, а **ProcessOn** запускает его.
@@ -54,7 +55,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
  **GlobalOff**&#124;**GlobalOn** начинает или останавливает профилирование для всех процессов сеанса профилирования из командной строки.
 
- {**ThreadOff** | **ThreadOn**}**:**`TID` Останавливает или запускает профилирование заданного потока (только метод инструментирования).
+ {**ThreadOff** | **ThreadOn**} **:** `TID` Останавливает или запускает профилирование заданного потока (только метод инструментирования).
 
 ## <a name="example"></a>Пример
  В этом примере подкоманда **ProcessOff** используется для сбора данных профилирования для запуска приложения.

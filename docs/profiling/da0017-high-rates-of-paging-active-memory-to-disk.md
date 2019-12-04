@@ -10,14 +10,15 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 87e7c6b2d94602eca9e81098bb50bd0330b2bcd9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425465"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779393"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017. Высокая скорость подкачки активной памяти на диск
 
@@ -31,7 +32,7 @@ ms.locfileid: "63425465"
 
  При профилировании с помощью выборки, памяти .NET или методов разрешения конфликтов ресурсов необходимо собрать минимум 10 выборок, чтобы активировать это правило.
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Данные о производительности системы, собранные в ходе сеанса профилирования, указывают на высокую частоту подкачки активной памяти на диск и с него на протяжении сеанса профилирования. Частота подкачки на этом уровне обычно влияет на производительность и скорость реагирования приложения. Рекомендуется сократить объем выделяемой памяти, изменив алгоритмы. Кроме того, возможно, потребуется учесть требования приложения к памяти.
 
 ## <a name="rule-description"></a>Описание правила

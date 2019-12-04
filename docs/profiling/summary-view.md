@@ -13,14 +13,15 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d44ff0c2c2406e9ba4508c835deab571b70e44
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87692c938462f166f93b4cfb8b223a45e2553ada
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926494"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771590"
 ---
 # <a name="summary-view"></a>представление "Сводка"
 Представление "Сводка" содержит информацию о создающих наибольшую нагрузку функциях или объектах в ходе сеанса профилирования. Оно предоставляет граф временной шкалы и два или более списков самых затратных функций или объектов, основываясь на метриках производительности метода профилирования. Данные в этом представлении зависят от использованного метода профилирования (выборка, инструментирование или параллелизм), а также от того, собирались ли в ходе сеанса профилирования данные о выделении памяти .NET.
