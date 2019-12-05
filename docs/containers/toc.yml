@@ -36,11 +36,11 @@
           href: container-tools-configure.md
     - name: Основные понятия
       items:
-        - name: Создание контейнерных приложений
+        - name: Как Visual Studio создает контейнерные приложения
           href: container-build.md
     - name: Устранение неполадок
       href: troubleshooting-docker-errors.md
-    - name: Справочник
+    - name: Ссылка
       items:
         - name: Свойства MSBuild для проектов контейнеров
           href: container-msbuild-properties.md
