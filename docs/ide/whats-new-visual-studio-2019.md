@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211330"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777921"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
-**Обновлено для [выпуска 16.3](/visualstudio/releases/2019/release-notes/)**
+**Обновлено для [выпуска 16.4](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Скачивание Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -110,7 +110,7 @@ ms.locfileid: "71211330"
 
 ### <a name="net-core"></a>.NET Core
 
-**Новые возможности в версии 16.3**. Мы включили поддержку .NET Core 3.0. Это кроссплатформенное решение с открытым кодом &mdash;полностью поддерживается корпорацией Майкрософт. 
+**Новые возможности в версии 16.3**. Мы включили поддержку .NET Core 3.0. Это кроссплатформенное решение с открытым кодом &mdash;полностью поддерживается корпорацией Майкрософт.
 
 Дополнительные сведения см. в записи блога [Объявление о выпуске .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
@@ -195,6 +195,12 @@ ms.locfileid: "71211330"
 **Новые возможности в 16.2**. Вы можете задать точку останова в приложении JavaScript и начать сеанс отладки с помощью браузера [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). При этом в Visual Studio откроется новое окно браузера с включенной отладкой, с помощью которого можно пошагово выполнять приложения JavaScript в Visual Studio.
 
    ![Снимок экрана, показывающий отрисовку кода JavaScript в браузере](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>Инструмент "Закрепляемые свойства"
+
+**Новые компоненты в версии 16.4**: Теперь можно легко находить объекты по их свойствам при отладке с помощью нового инструмента "Закрепляемые свойства". Просто наведите указатель мыши на свойство, которое нужно отобразить в окне отладчика окна просмотра, автоматических действий и локальных действий, щелкните значок закрепления. После этого в верхней части окна сразу же появится нужная информация.
+
+   ![Анимация, показывающая, как закрепить свойства в отладчике Visual Studio с помощью средства инструмента "Закрепляемые свойства"](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>Дальнейшие действия
 
