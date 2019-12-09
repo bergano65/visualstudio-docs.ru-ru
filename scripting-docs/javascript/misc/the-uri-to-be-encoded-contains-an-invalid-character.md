@@ -32,6 +32,6 @@ ms.locfileid: "72572248"
     <Scheme>:<first>/<second>;<third>?<fourth>  
     ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
    [функции encodeURI](../../javascript/reference/encodeuri-function-javascript.md)  
  [Функция encodeURIComponent](../../javascript/reference/encodeuricomponent-function-javascript.md)

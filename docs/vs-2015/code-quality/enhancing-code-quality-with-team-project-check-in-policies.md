@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e4c234d7b13b5c2211c833ee843ea80649c231a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13f943baef21560132f2f9b9ba98c0325540fbf2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667646"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301081"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Улучшение качества кода с помощью политик возврата командного проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +56,4 @@ ms.locfileid: "72667646"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)

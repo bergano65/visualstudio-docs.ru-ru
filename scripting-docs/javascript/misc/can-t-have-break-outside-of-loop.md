@@ -34,7 +34,7 @@ break labelname;
   
 - Убедитесь, что ключевое слово **break** отображается внутри внешнего цикла или оператора switch.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Оператор break](../../javascript/reference/break-statement-javascript.md)   
- [Управление   последовательности программ](../../javascript/controlling-program-flow-javascript.md)  
+ [Управление  последовательности программ](../../javascript/controlling-program-flow-javascript.md)  
  [Устранение неполадок в скриптах](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

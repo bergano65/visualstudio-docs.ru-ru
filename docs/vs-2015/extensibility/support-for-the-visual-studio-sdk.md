@@ -14,56 +14,56 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e404d569776eef1cd2146ed636177be30151aaab
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688730"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299741"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Поддержка пакета SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Несколько вариантов поддержки доступны для пользователей с вопросами о том, как расширения Visual Studio интегрированной среды разработки (IDE).  
+Для клиентов, у которых есть вопросы о том, как расширить интегрированную среду разработки (IDE) Visual Studio, доступны несколько вариантов поддержки.  
   
 ## <a name="free-support"></a>Бесплатная поддержка  
   
 ### <a name="msdn-development-center"></a>Центр разработки MSDN  
- [Центр разработчиков расширенных возможностей Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) на сайте MSDN содержит ресурсы, которые позволяют отвечать на вопросы о том, как расширить возможности Visual Studio. Например есть несколько ссылок на блоги разработчика VSIP.  
+ [Центр разработчиков расширяемости Visual Studio](https://go.microsoft.com/fwlink/?LinkID=84381) на MSDN содержит ресурсы, которые помогают ответить на вопросы о том, как расширить Visual Studio. Например, есть несколько ссылок на блоги разработчиков VSIP.  
   
-### <a name="microsoft-newsgroups"></a>Группы новостей Microsoft  
- Члены команды разработки Visual Studio и другими разработчиками, расширяющих возможности Visual Studio часто участвовать в группе новостей microsoft.public.vstudio.extensibility. Этой группе новостей — это управляемые группы новостей. Если вы являетесь подписчиком MSDN универсальной, убедитесь, что следует регистрировать псевдоним не рассылается спам, чтобы стало возможным Корпорация Майкрософт может отвечать.  
+### <a name="microsoft-newsgroups"></a>Группы новостей Майкрософт  
+ Участники группы разработки Visual Studio и другие разработчики, которые расширяют Visual Studio, часто участвуют в группе новостей Microsoft. public. встудио. Extensibility. Эта группа новостей является управляемой группой новостей. Если вы являетесь универсальным подписчиком MSDN, убедитесь, что вы зарегистрировали псевдоним без спама, чтобы ответить корпорации Майкрософт.  
   
 ### <a name="msdn-forums"></a>Форумы MSDN  
- [Форумы MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) предоставляют еще один способ общаться с коллегами и экспертами. Графический интерфейс (UI) из форумов позволяет сделать их проще в использовании, чем группы новостей. [Форум расширяемости Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) хорошо подходит для запуска для поиска ответов на вопросы расширяемости. Всегда поиска, прежде чем задать вопрос, так как кто-то другой могут уже ли такой вопрос.  
+ [Форумы MSDN](https://go.microsoft.com/fwlink/?LinkID=76632) предоставляют другой способ общения с коллегами и экспертами. Графический пользовательский интерфейс на форумах предназначен для упрощения их использования, чем группы новостей. [Форум по расширению Visual Studio](https://go.microsoft.com/fwlink/?LinkID=121964) — это хорошее место для начала поиска ответов на вопросы о расширяемости. Всегда ищите вопрос, так как другой пользователь может уже запросить тот же вопрос.  
   
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
- [Visual Studio Marketplace](https://marketplace.visualstudio.com/) — место для расширения и примеры кода. Можно найти средства, улучшить производительность и пользователя опыт работы с Visual Studio, примеры приложений, которые показывают, как использовать пакеты VSPackage и Managed Extensibility Framework (MEF) и другие виды примеры.  
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com/) — это место для расширений и примеров кода. Вы можете найти средства, повышающие производительность и удобство работы пользователей с помощью Visual Studio, примеры приложений, демонстрирующие использование пакетов VSPackage и Managed Extensibility Framework (MEF) и других типов примеров.  
   
-### <a name="codeplex"></a>CodePlex  
- [CodePlex](http://go.microsoft.com/fwlink/?LinkId=76627) является открытым исходным кодом размещения проектов веб-сайте Майкрософт. CodePlex можно использовать для создания и совместного использования новых проектов, участвовать в существующих проектах или работы с приложениями на узле и отправить отзыв. Все средства PowerToy (и связанную документацию), которые были включены в более ранних версиях [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] теперь доступны на сайте CodePlex.  
+### <a name="codeplex"></a>Codeplex  
+ [CodePlex](https://go.microsoft.com/fwlink/?LinkId=76627) — это веб-сайт размещения проектов Microsoft с открытым исходным кодом. CodePlex можно использовать для создания и совместного использования новых проектов, участия в существующих проектах или для использования приложений на сайте и предоставления отзывов. Все средства PowerToy (и их документация), включенные в более ранние версии [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], теперь доступны на сайте CodePlex.  
   
-## <a name="included-support"></a>Включить поддержку  
+## <a name="included-support"></a>Включена поддержка  
   
-### <a name="visual-studio-product-support"></a>Поддержка продукта Visual Studio  
- Некоторые поддержка включена при покупке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] продуктов. Дополнительные сведения см. в разделе [поддержки Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Корпорация Майкрософт поддерживает выделенный поддержки, чтобы ответить на вопросы о [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширяемости.  
+### <a name="visual-studio-product-support"></a>Поддержка продуктов Visual Studio  
+ Некоторые службы включают в себя приобретение продуктов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Поддержка Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Корпорация Майкрософт поддерживает специальную группу поддержки для получения ответов на вопросы о расширяемости [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-### <a name="msdn-subscription-support"></a>Поддержка по подписке MSDN  
- Пакеты подписки MSDN также могут включать некоторую поддержку. Дополнительные сведения см. в разделе [Техническая поддержка подписчиков MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
+### <a name="msdn-subscription-support"></a>Поддержка подписки MSDN  
+ Пакеты подписки MSDN могут также включать в себя некоторую поддержку. Дополнительные сведения см. в разделе [поддержка подписчиков MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
   
-## <a name="paid-support"></a>Платной поддержки  
+## <a name="paid-support"></a>Платная поддержка  
   
-### <a name="developer-tools-support"></a>Поддержка средств разработчика  
- Также можно приобрести поддержку. Широкий набор предложений поддержки доступны в категории средств разработчика в [справки (Майкрософт) и центры поддержки](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
+### <a name="developer-tools-support"></a>Поддержка Средства для разработчиков  
+ Также можно приобрести поддержку. Различные предложения поддержки доступны в категории Средства для разработчиков в центре [справки и поддержки Майкрософт](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
   
- Клиенты, желающие использовать [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] для разработки сложных пакетов можно купить услугу договор на техническую поддержку уровня Premier с корпорацией Майкрософт. Дополнительные сведения см. в разделе [поддержка Microsoft Premier](https://support.microsoft.com/premier). Для небольших компаний [расширенной поддержки для партнеров](https://partner.microsoft.com/support/advanced-cloud-support) может быть Заманчивой альтернативой традиционных предложение поддержки уровня Premier.  
+ Клиенты, желающие использовать [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] для разработки сложных пакетов, могут подумать о приобретении поддержка Premier контракта с корпорацией Майкрософт. Дополнительные сведения см. в разделе [Microsoft поддержка Premier](https://support.microsoft.com/premier). Для малых компаний [Расширенная поддержка партнеров](https://partner.microsoft.com/support/advanced-cloud-support) может быть привлекательным альтернативой традиционному предложению поддержка Premier.  
   
 > [!NOTE]
-> План поддержки Standard не может использоваться для консультации или для получения рекомендаций.  
+> Стандартную поддержку нельзя использовать для консультации или получения Совета.  
   
- Можно отправить вопросы о предложениях поддержки Premier в сочетании с программе VSIP [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Можно отправить вопросы о новой программе Partner Advantage [ advantg@microsoft.com ](mailto:advantg@microsoft.com).  
+ Вопросы о предложениях поддержка Premier в сочетании с программой VSIP можно отправлять в [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Вопросы о новых преимуществах для партнеров можно отправлять на [advantg@microsoft.com](mailto:advantg@microsoft.com).  
   
- Сведения о поддержки отдельных запросов можно найти на [отдельных запросов поддержки](http://go.microsoft.com/fwlink/?LinkID=82385).  
+ Сведения об индивидуальных запросах на поддержку можно найти по [отдельным запросам на поддержку](https://go.microsoft.com/fwlink/?LinkID=82385).  
   
 ## <a name="see-also"></a>См. также  
  [Обращайтесь к нам](../ide/talk-to-us.md)

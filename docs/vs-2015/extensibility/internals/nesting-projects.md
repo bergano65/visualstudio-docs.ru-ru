@@ -23,7 +23,7 @@ ms.locfileid: "68180410"
 # <a name="nesting-projects"></a>Проекты вложения
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Разработчики корпоративных приложений, использующие пакет VS, могут группировать схожие типы проектов вместе [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью *вложений проектов*. Например, проект корпоративного шаблона использует вложенные проекты для группировки проектов по категориям. Проекты Business фасадной, проекты пользовательского веб-интерфейса и т. д. группируются в одной категории.  
+Разработчики корпоративных приложений, использующие пакет VS, могут группировать схожие типы проектов вместе в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с помощью *вложений проектов*. Например, проект корпоративного шаблона использует вложенные проекты для группировки проектов по категориям. Проекты Business фасадной, проекты пользовательского веб-интерфейса и т. д. группируются в одной категории.  
   
  В этом сценарии нет ограничений на количество проектов, которые разработчик может вкладывать в каждый родительский проект, хотя разработчик может программно предоставлять ограничения. Этот тип группирования можно также сделать рекурсивным. в этом случае проекты того же типа, что и дочерний проект, могут быть вложены в дочерний проект дочернего проекта, который является подпроектом родительского.  
   
@@ -32,16 +32,16 @@ ms.locfileid: "68180410"
  Пример вложенных проектов можно найти в C# примере вложенного проекта Sample.  
   
 ## <a name="nested-projects-example"></a>Пример вложенных проектов  
- ![Решение вложенных проектов](../../extensibility/internals/media/vsnestedprojects.gif "вснестедпрожектс")  
+ (../../extensibility/internals/media/vsnestedprojects.gif "Вснестедпрожектс") ![решения вложенных проектов]  
 Пример вложенных проектов  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство. Реализация вложенных проектов](../../extensibility/internals/how-to-implement-nested-projects.md)   
+ [Руководство. Реализация вложенных проектов](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [Рекомендации по выгрузке и перезагрузке вложенных проектов](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [Поддержка мастера для вложенных проектов](../../extensibility/internals/wizard-support-for-nested-projects.md)   
  [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Реализация обработки команд для вложенных проектов](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
  [Фильтрация диалогового окна AddItem для вложенных проектов](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Контрольный список: создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Параметры контекста](../../extensibility/internals/context-parameters.md)   
  [Файл мастера (VSZ-файл)](../../extensibility/internals/wizard-dot-vsz-file.md)

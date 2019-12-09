@@ -1,7 +1,7 @@
 ---
 title: Инструменты Visual Studio для Unity | Документация Майкрософт
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 10/25/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d04f197b9114f87c0ebdfa54088d41a958d4584a
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777698"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797135"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
 
@@ -47,6 +47,12 @@ ms.locfileid: "72777698"
 * Оценивайте сложные выражения в окне "Контрольные значения".
 * Проверяйте и изменяйте значения переменных и аргументов.
 * Детализируйте сложные объекты и структуры данных.
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Диагностические данные Roslyn и быстрые исправления для Unity
+
+Напишите эффективный код, сочетающий в себе лучшие методики и глубокое понимание проектов Unity Visual Studio.
+
+![Сравнение строк рефакторинга VS с CompareTag](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Инструменты Visual Studio для Mac для Unity
 

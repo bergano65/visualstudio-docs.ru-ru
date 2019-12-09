@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572759"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>throw требует после себя выражение на той же строке
-Использовалось ключевое слово `throw`, но оно не следовало бы за выражением в той же исходной строке. Оператор `throw` состоит из двух частей: ключевого слова `throw`, за которым следует вызываемое выражение. Пример:  
+Использовалось ключевое слово `throw`, но оно не следовало бы за выражением в той же исходной строке. Оператор `throw` состоит из двух частей: ключевого слова `throw`, за которым следует вызываемое выражение. Например:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -36,7 +36,7 @@ if (denominator == 0) {
   
 - Убедитесь, что в одной строке отображаются ключевое слово `throw` и выражение, которое должно быть создано.  
   
-## <a name="see-also"></a>См. также  
- [Объект Error](../../javascript/reference/error-object-javascript.md)    
- [оператор throw](../../javascript/reference/throw-statement-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект Error](../../javascript/reference/error-object-javascript.md)   
+ [оператор throw](../../javascript/reference/throw-statement-javascript.md)   
  [Оператор try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

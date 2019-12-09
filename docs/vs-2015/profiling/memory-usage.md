@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 132e6252662ed765630764dabca26b22f868a315
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0feabad8dfa3b086c9ed5a1a58e231719774f9cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704879"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298357"
 ---
 # <a name="memory-usage"></a>Использование памяти
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "65704879"
   
   На рисунке ниже показано окно **Средства диагностики** в Visual Studio 2015 с обновлением 1.  
   
-  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+  ![Диагностиктулс&#45;update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
   Хотя с помощью средства **Использование памяти** можно делать снимки памяти в любой момент, для управления выполнением приложения во время анализа ошибок производительности вы можете использовать отладчик Visual Studio. Задание точек останова, пошаговое выполнение, всеобщее прерывание и другие действия отладчика могут помочь вам сосредоточиться на анализе производительности при обращении к наиболее важным ветвям кода. Выполняя эти действия, когда приложение запущено, вы сможете исключить влияние не интересующего вас кода и значительно ускорить диагностику проблем.  
   
@@ -41,15 +41,15 @@ ms.locfileid: "65704879"
 ## <a name="analyze-memory-use-with-the-debugger"></a>Анализ использования памяти с отладчиком  
   
 > [!NOTE]
-> Поскольку сбор данных об использовании памяти может повлиять на производительность отладки приложений, основанных на машинном коде, а также смешанных программ, по умолчанию снимки памяти выключены. Чтобы включить снимки для собственных или смешанных программ, начните сеанс отладки (быстрая клавиша: **F5**). Когда отобразится окно **Средства диагностики** , перейдите на вкладку "Использование памяти" и выберите команду **Включить снимки**.  
+> Поскольку сбор данных об использовании памяти может повлиять на производительность отладки приложений, основанных на машинном коде, а также смешанных программ, по умолчанию снимки памяти выключены. Чтобы включить снимки для приложений, основанных на машинном коде, или для смешанных программ, начните сеанс отладки (быстрая клавиша: **F5**). Когда отобразится окно **Средства диагностики** , перейдите на вкладку "Использование памяти" и выберите команду **Включить снимки**.  
 >   
-> ![Включение снимков](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![Включить моментальные снимки](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
-> Остановите (сочетание клавиш: **SHIFT + F5**) и перезапустите отладку.  
+> Остановите (сочетание клавиш: **Shift + F5**) и перезапустите отладку.  
   
  Каждый раз, когда вам требуется записать состояние памяти, нажимайте кнопку **Сделать снимок** на сокращенной панели инструментов **Использование памяти** .  
   
- ![Создание снимка](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
+ ![Сделать снимок](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
 > [!TIP]
 > - Чтобы получить базовые показатели для сравнения состояния памяти, сделайте снимок в начале сеанса отладки.  
@@ -81,7 +81,7 @@ ms.locfileid: "65704879"
 ### <a name="managed-types-reports"></a>Отчеты об управляемых типах  
  Щелкните текущее значение в столбце **Управляемые объекты** или **Размер управляемой кучи** в сводной таблице "Использование памяти".  
   
- ![Отчет отладчика управляемого типа отчета — пути к корню](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Путь отчета &#45; управляемого типа отладчика к корню](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  В верхней области показываются число и размер типов, зарегистрированных снимком, включая размер всех объектов, на которые ссылаются типы (**Инклюзивный размер**).  
   
@@ -89,9 +89,9 @@ ms.locfileid: "65704879"
   
  В дереве **Типы, на которые указывает ссылка** отображаются ссылки, активные для выбранного в верхней области типа.  
   
- ![Представление отчета по управляемым ссылочным типам](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
+ ![Представление отчета "управляемые типы представление"](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- Чтобы отобразить экземпляры типа, выбранного в области сверху, щелкните значок ![Значок экземпляра](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon").  
+ Чтобы отобразить экземпляры выбранного типа в верхней области, щелкните значок ![значок экземпляра](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon") .  
   
  ![Представление экземпляров](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
@@ -104,7 +104,7 @@ ms.locfileid: "65704879"
   
  В режиме **Представление типов** отображается число и размер типов, зарегистрированных снимком.  
   
-- Чтобы отобразить информацию об объектах выбранного типа, зарегистрированных снимком, щелкните значок "Экземпляры" (![Значок "Экземпляры" в столбце "Тип объекта"](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) в соответствующей строке.  
+- Щелкните значок экземпляры (![значок экземпляра в столбце Тип объекта](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) выбранного типа, чтобы отобразить сведения об объектах выбранного типа в моментальном снимке.  
   
      В окне **Экземпляры** отображаются все экземпляры выбранного типа. При выборе экземпляра на панели **Стек вызовов выделений** отображается стек вызовов, использованный для создания этого экземпляра.  
   
@@ -112,27 +112,27 @@ ms.locfileid: "65704879"
   
 - Чтобы отобразить стек вызовов для выбранного типа, в раскрывающемся меню **Режим просмотра** выберите пункт **Представление стеков** .  
   
-     ![Представление стеков](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Представление "стеки"](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>Отчеты об изменениях  
   
 - В окне **Средства диагностики** щелкните в необходимой ячейке сводной таблицы **Использование памяти** разницу в значениях.  
   
-   ![Выбор отчета изменений (Diff)](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Выбор отчета об &#40;изменении&#41;DIF f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
 - Выберите моментальный снимок в списке **Сравнить с** , в котором отображаются управляемые или собственные отчеты.  
   
-   ![Выбор моментального снимка из списка сравнения](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Выбор моментального снимка из списка "сравнить с"](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
-  С помощью отчета об изменениях в основной отчет можно добавить столбцы, помеченные надписью **(Разн.)**, в которых будет отображаться разница между двумя выбранными снимками. Отчет об изменениях собственных типов может выглядеть следующим образом:  
+  С помощью отчета об изменениях в основной отчет можно добавить столбцы, помеченные надписью **(Разн.)** , в которых будет отображаться разница между двумя выбранными снимками. Отчет об изменениях собственных типов может выглядеть следующим образом:  
   
-  ![Представление собственных типов Diff](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Сравнение машинных типов Веив](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Блоги и видео  
- [Окно отладчика "Средства диагностики" в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [Блог: Средства "использование памяти" во время отладки в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [Блог: применение средства "Использование памяти" при отладке в Visual Studio 2015](https://devblogs.microsoft.com/devops/memory-usage-tool-while-debugging-in-visual-studio-2015/)  
   
- [Блог по Visual C++. Диагностика внутренней памяти в предварительной версии Visual Studio 2015](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Блог о Visual C++: диагностика внутренней памяти в предварительной версии Visual Studio 2015](https://devblogs.microsoft.com/cppblog/native-memory-diagnostics-in-vs2015-preview/)  
   
- [Блог по Visual C++. Средства диагностики внутренней памяти для CTP-версии для Visual Studio 2015](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Блог о Visual C++: средства диагностики внутренней памяти для CTP-версии Visual Studio 2015](https://devblogs.microsoft.com/cppblog/native-memory-diagnostic-tools-for-visual-studio-14-ctp/)

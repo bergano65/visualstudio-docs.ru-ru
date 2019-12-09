@@ -202,8 +202,6 @@
               href: how-to-open-standard-editors.md
             - name: Открытие редакторов для открытых документов
               href: how-to-open-editors-for-open-documents.md
-        - name: "Руководство по миграции API расширяемости Конструктора\_XAML"
-          href: xaml-designer-extensibility-migration.md
 - name: Расширение проектов
   items:
     - name: Расширение проектов

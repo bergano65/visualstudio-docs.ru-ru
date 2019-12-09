@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660571"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302570"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "72660571"
 
 - SampleTestProject.
 
-  Скачайте образец из этой [записи блога](http://go.microsoft.com/fwlink/?LinkID=185592).
+  Скачайте образец из этой [записи блога](https://go.microsoft.com/fwlink/?LinkID=185592).
 
 > [!NOTE]
 > Образец предназначен для использования с Microsoft Excel 2010. Пример может работать с другими версиями Microsoft Excel, но в настоящее время это не поддерживается.

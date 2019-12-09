@@ -20,12 +20,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cfdf356d21558f2024cb83e00bdfc930284b1d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce5b21f92eecf2e8929c142bc1ee32e20d386335
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68164106"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299252"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Как отладить нарушения доступа при запуске программы без отладчика?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "68164106"
 ## <a name="solution"></a>Решение  
  Активируйте параметр [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md) и запустите автономное выполнение программы до момента возникновения нарушения доступа. Затем в диалоговом окне **Нарушение доступа** можно нажать **Отмена** и запустить отладчик.  
   
- Кроме того, обратитесь к статье Q133174 информационной базы данных, "How to Locate Where a General Protection (GP) Fault Occurs". Статьи базы знаний можно найти на компакт-диске библиотеки MSDN или поиска [ http://support.microsoft.com/ ](http://support.microsoft.com/).  
+ Кроме того, обратитесь к статье Q133174 информационной базы данных, "How to Locate Where a General Protection (GP) Fault Occurs". Статьи базы знаний можно найти на компакт-диске библиотеки MSDN или с помощью поиска [http://support.microsoft.com/](https://support.microsoft.com/).  
   
 ## <a name="see-also"></a>См. также  
  [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   

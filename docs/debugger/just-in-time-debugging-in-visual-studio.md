@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911458"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903869"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Отключение JIT-отладки
 
 Диалоговое окно JIT-отладчик может открыться при возникновении ошибки в работающем приложении и запрете продолжения работы приложения.
 
-JIT-отладчик дает возможность запустить Visual Studio для отладки ошибки. Для просмотра подробных сведений об ошибке или попытки ее отладки необходимо установить [Visual Studio](https://visualstudio.microsoft.com/) или другой выбранный отладчик.
+JIT-отладчик дает возможность запустить Visual Studio для отладки ошибки. Для просмотра подробных сведений об ошибке или попытки ее отладки необходимо установить Visual Studio или другой выбранный отладчик.
 
-Если вы являетесь пользователем Visual Studio и хотите попытаться выполнить отладку ошибки, см. раздел [Отладка с помощью JIT-отладчика](../debugger/debug-using-the-just-in-time-debugger.md). Если вы не можете исправить ошибку или хотите предотвратить открытие JIT-отладчика, можно [Отключить JIT-отладку из Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Если вы уже используете пользователя Visual Studio и хотите попытаться выполнить отладку ошибки, см. раздел [Отладка с помощью JIT-отладчика](../debugger/debug-using-the-just-in-time-debugger.md). Если вы не можете исправить ошибку или хотите предотвратить открытие JIT-отладчика, можно [Отключить JIT-отладку из Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
 Если Visual Studio установлена, но больше не выполняется, может потребоваться [Отключить JIT-отладку из реестра Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
 

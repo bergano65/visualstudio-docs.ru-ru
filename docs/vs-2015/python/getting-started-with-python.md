@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 5c5cea89b337f4da586ba4ca1954e49b96c84638
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154948"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298187"
 ---
 # <a name="getting-started-with-python"></a>Начало работы с Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,14 +60,14 @@ Python — это популярный язык программирования
 
 - [Руководство по установке](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Короткие видеоролики по началу работы и углубленному рассмотрению](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Демонстрация установки и возможностей (27 минут)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Демонстрация установки и возможностей (27 мин)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Документация](https://github.com/Microsoft/PTVS/wiki)  
 
-Обратите внимание, что Visual Studio в настоящее время не предоставляет средств для создания автономного исполняемого файла с помощью Python, что по сути означает программу с внедренным интерпретатором Python. Но предназначенные для выполнения этой задачи средства можно найти в сообществе Python, как описано на сайте [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython также можно внедрять в приложение машинного кода. Об этом можно узнать в записи блога [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Использование внедряемого ZIP-файла CPython).
+Обратите внимание, что Visual Studio в настоящее время не предоставляет средств для создания автономного исполняемого файла с помощью Python, что по сути означает программу с внедренным интерпретатором Python. Но предназначенные для выполнения этой задачи средства можно найти в сообществе Python, как описано на сайте [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython также можно внедрять в приложение машинного кода. Об этом можно узнать в записи блога [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Использование внедряемого ZIP-файла CPython).
   
 ## <a name="building-ui-with-python"></a>Создание пользовательского интерфейса с помощью Python  
 
-Основным предложением для создания пользовательского интерфейса с помощью Python является [проект Qt](https://www.qt.io/qt-for-application-development/)с привязками для Python, известными как [PySide (официальная привязка)](http://wiki.qt.io/PySide) (также см. раздел [загрузки PySide](https://download.qt.io/official_releases/pyside/.)) и [PyQt](https://wiki.python.org/moin/PyQt). В настоящее время поддержки Python в Visual Studio не включает какие-либо конкретные средства для разработки пользовательского интерфейса.
+Основным предложением для создания пользовательского интерфейса с помощью Python является [проект Qt](https://www.qt.io/qt-for-application-development/)с привязками для Python, известными как [PySide (официальная привязка)](https://wiki.qt.io/PySide) (также см. раздел [загрузки PySide](https://download.qt.io/official_releases/pyside/.)) и [PyQt](https://wiki.python.org/moin/PyQt). В настоящее время поддержки Python в Visual Studio не включает какие-либо конкретные средства для разработки пользовательского интерфейса.
 
 ## <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
   
@@ -87,13 +87,13 @@ Python — это популярный язык программирования
 
 В дополнение ко всем библиотекам научных данных Python Инструменты Python для Visual Studio поддерживают среды IPython и IPython Notebook, которые можно разместить в Azure.
 
-Мы рекомендуем получить среду IPython и библиотеки научных вычислений (matplotlib, scipy, numpy и т. д.) из [Калифорнийского университета в Ирвайне](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
+Мы рекомендуем получить среду IPython и библиотеки научных вычислений (matplotlib, scipy, numpy и т. д.) из [Калифорнийского университета в Ирвайне](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
 ## <a name="see-also"></a>См. также  
 
-[Начало работы с PTVS. Настройка Начало работы Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[с помощью PTVS: Начните программировать (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[начало работы с PTVS: Редактирование кода](../python/getting-started-with-ptvs-editing-code.md)
-НачалоработыспомощьюPTVS[: Отладка](../python/getting-started-with-ptvs-debugging.md)
-начало работыспомощьюPTVS:[ Интерактивный](../python/getting-started-with-ptvs-interactive-python.md)начало работы Python
-[с PTVS: Создание веб-сайта в Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Начало работы с PTVS. Настройка Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Начало работы с PTVS. Приступаем к написанию кода (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Начало работы с PTVS. Редактирование кода](../python/getting-started-with-ptvs-editing-code.md)
+[Начало работы с PTVS. Отладка](../python/getting-started-with-ptvs-debugging.md)
+[Начало работы с PTVS. Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)
+[Начало работы с PTVS. Создание веб-сайта в Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

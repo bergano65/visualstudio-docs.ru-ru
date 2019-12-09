@@ -9,19 +9,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12bce61c7d860f56142c25dd15dea3ac8ad21f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef28781252181dbf765db52dbe6fed1b286516b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671864"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295770"
 ---
 # <a name="step-2-run-your-program"></a>Шаг 2. Запуск программы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При создании нового решения фактически выполняется построение программы, которая в последующем запускается. Она пока ничего не делает — просто открывает пустое окно, у которого в строке заголовка окна надпись **Form1**. Но, как очевидно, она выполняется.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 1](http://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) или [учебном курсе 1. Создание средства просмотра C# изображений в видеоролике 1](https://go.microsoft.com/fwlink/?LinkId=205199). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-run-your-program"></a>Для запуска программы
 

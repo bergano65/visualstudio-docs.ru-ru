@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Ограничение инструментирования указанными библиотеками DLL | Документация Майкрософт
+title: Практическое руководство. Ограничение инструментирования указанными библиотеками DLL | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,16 +7,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980919"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778821"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Как выполнить Ограничение инструментирования указанными библиотеками DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Практическое руководство. Ограничение инструментирования указанными библиотеками DLL
 
 С помощью метода профилирования "Инструментирование" можно ограничить сбор данных профилирования одной или несколькими библиотеками DLL приложения. Для профилирования одной или нескольких библиотек DLL в приложении создайте сеанс анализа производительности, включающий *DLL*-файлы в качестве целевых объектов. Вы можете указать библиотеки DLL, которые требуется профилировать, как проекты в решении Visual Studio или независимые двоичные файлы.
 

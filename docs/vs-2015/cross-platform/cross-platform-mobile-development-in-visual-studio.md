@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824192"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297895"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "67824192"
 
  Для создания игр или мощных графических приложений установите инструменты Visual Studio для Unity. Это позволит максимально эффективно использовать функции Visual Studio и Unity — популярного движка и среды разработки для игр и мощных графических приложений в Windows, iOS, Android и на других платформах.
 
- **В этой статье:**
+ **Содержание этой статьи**
 
 - [Сборка приложения для устройств Android, iOS и Windows (.NET Framework)](#NET)
 
@@ -39,19 +39,19 @@ ms.locfileid: "67824192"
 - [Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity](#Unity)
 
 ## <a name="NET"></a> Сборка приложения для устройств Android, iOS и Windows (.NET Framework)
- ![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Устройствах](../cross-platform/media/homedevices.png "HomeDevices")
 
  С помощью Xamarin вы можете указать Android, iOS и Windows в качестве целевых устройств в одном и том же решении, при этом код и даже графический интерфейс будут использоваться совместно.
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Установка Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Сведения о Xamarin в Visual Studio](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Установка Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
+|[Сведения о Xamarin в Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Visual Studio и Xamarin](../cross-platform/visual-studio-and-xamarin.md) (Библиотека MSDN)|
 |[Управление жизненным циклом приложений (ALM) c приложениями Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (Библиотека MSDN)|
 |[Дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Сведения о сходстве между Swift и C#](https://aka.ms/scposter) (download.microsoft.com)|
-|[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Сведения об эмуляторе Visual Studio для Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
  Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Чтобы начать работу, установите Visual Studio 2015, выбрав вариант **Пользовательские параметры** в установщике и установив флажок **Кроссплатформенная разработка для мобильных устройств > C#/.NET (Xamarin)** . Вы также можете начать работу с [установщика Xamarin](https://www.xamarin.com/download), который необходим, чтобы установить Xamarin для Visual Studio 2013.
@@ -67,19 +67,19 @@ ms.locfileid: "67824192"
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Создание одного набора страниц, отображаемого на всех устройствах, с помощью Xamarin.Forms
  В зависимости от сложности конструкции приложения, возможно, имеет смысл использовать для его создания шаблоны *Xamarin.Forms* в группе шаблонов проектов **Мобильные приложения** . Xamarin.Forms — это набор средств разработки пользовательского интерфейса, с помощью которого можно создать единый интерфейс приложения для совместного использования на устройствах Android, iOS и Windows.  При компиляции решения Xamarin.Forms вы получаете приложение для Android, приложение для iOS и приложение для Windows. Дополнительные сведения см. в разделе [Дополнительные сведения о разработке мобильных приложений с помощью Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).
 
-#### <a name="ShareHTML"></a> Совместное использование кода между приложениями Android, iOS и Windows
+#### <a name="ShareHTML"></a> Совместное использование кода приложениями Android, iOS и Windows
  Если вы не используете Xamarin.Forms и предпочитаете разрабатывать приложения для каждой платформы отдельно, вы можете совместно использовать большую часть кода, не относящегося к пользовательскому интерфейсу, в проектах для разных платформ (Android, iOS и Windows). К нему относятся любая бизнес-логика, интеграция в облаке, доступ к базе данных или любой другой код, предназначенный для платформы .NET Framework. Единственным кодом, который нельзя совместно использовать, является код, предназначенный для конкретной платформы.
 
- ![Совместное использование кода между пользовательскими интерфейсами в приложениях Android, iOS и Windows](../cross-platform/media/sharecode.png "ShareCode")
+ ![Совместное использование кода для пользовательского интерфейса Windows, iOS и Android](../cross-platform/media/sharecode.png "ShareCode")
 
  Код можно совместно использовать с помощью общего проекта, проекта переносимой библиотеки классов или обоих этих проектов. Может оказаться, что какой-то код больше подходит в общем проекте, а другой код лучше себя ведет в рамках проекта переносимой библиотеки классов.
 
 |**Дополнительные сведения**|
 |--------------------|
-|Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
+|Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
 
 ### <a name="WindowsHTML"></a> Целевые устройства Windows 10
- ![Устройства Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Устройства Windows](../cross-platform/media/windowsdevices.png "Устройства Windows")
 
  Если вы хотите создать одно приложение, предназначенное для полного спектра устройств Windows 10, создайте универсальное приложение Windows. Разработка приложения будет осуществляться с помощью одного проекта, а страницы будут отображаться должным образом независимо от того, какое устройство используется для их просмотра.
 
@@ -95,7 +95,7 @@ ms.locfileid: "67824192"
 |[Перенос приложений на универсальную платформу Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
- ![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Устройствах](../cross-platform/media/homedevices.png "HomeDevices")
 
  Если вы разработчик веб-решений и знакомы с HTML и JavaScript, то вы можете создавать приложения для целевых платформ Windows, Android и iOS с помощью средств Visual Studio для Apache Cordova. Такие приложения могут быть ориентированы на все три платформы, и при их создании вы можете полагаться на привычные навыки и процедуры.
 
@@ -103,7 +103,7 @@ ms.locfileid: "67824192"
 
  Поскольку эти API-интерфейсы являются кроссплатформенными, большую часть написанного кода можно совместно использовать для всех трех платформ. Это снижает расходы на разработку и обслуживание. Кроме того, нет необходимости начинать с нуля. При создании других типов веб-приложений можно предоставить эти файлы приложению Cordova без каких-либо изменений и переработки.
 
- ![Универсальные гибридные приложения](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Гибридные приложения для нескольких&#45;устройств](../cross-platform/media/multidevicehybridapps.png "мултидевицехибридаппс")
 
  Чтобы приступить к работе, установите Visual Studio 2015 и выберите **HTML/JavaScript (Apache Cordova)** во время установки. Если вы пользуетесь Visual Studio 2013, установите инструменты Visual Studio для расширения Apache Cordova. В любом случае, инструменты Cordova автоматически установят любое стороннее программное обеспечение, необходимое для создания универсального приложения (для нескольких платформ).
 
@@ -115,18 +115,18 @@ ms.locfileid: "67824192"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Установка Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Начало работы с Инструментами Visual Studio для Apache Cordova](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
-|[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Установка Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
+|[Начало работы с Инструментами Visual Studio для Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Сведения об эмуляторе Visual Studio для Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a> Сборка приложений для устройств Android и Windows (C++)
- ![Использование C++ сборки приложений для Android, iOS и Windows](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
+ ![Используйте C&#43;&#43; чтобы создать приложение для Android, iOS и Windows](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
 
  Сначала установите Visual Studio 2015 и инструменты Visual C++ для разработки кроссплатформенных мобильных приложений. Затем вы сможете создать приложение native-activity для Android или Windows. Шаблоны C++, предназначенные для устройств iOS, сейчас недоступны. Одно и то же решение можно ориентировать на устройства Android и Windows, а затем наладить совместное использование кода между ними с помощью общей кроссплатформенной статической или динамической библиотеки.
 
  Если вам нужно создать приложение для Android, требующее сложных операций с графикой (например, игру), можно воспользоваться C++. Начните с проекта **Собственное приложение действия (Android)** . В этом проекте реализована полная поддержка цепочки инструментов Clang.
 
- ![Шаблон проекта native-activity](../cross-platform/media/cross-plat-cpp-native.png "Cross-Plat_CPP_Native")
+ ![Шаблон проекта Native Activity](../cross-platform/media/cross-plat-cpp-native.png "Перекрестное Plat_CPP_Native")
 
  Для запуска готового приложения и оценки его интерфейса воспользуйтесь эмулятором Visual Studio для Android. Это быстрый, надежный и простой в установке и настройке инструмент.
 
@@ -142,12 +142,12 @@ ms.locfileid: "67824192"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Скачивание Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
+|[Скачивание Visual Studio.](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
+|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Библиотека MSDN)|
 |[Дополнительные сведения об использовании C++ для нескольких платформ.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Установите нужные компоненты, а затем создайте собственное приложение действия для Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
-|[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
-|[Дополнительные сведения о совместном использовании кода C++ с приложениями Android и Windows](http://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx) (VisualStudio.com)|
+|[Сведения об эмуляторе Visual Studio для Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
+|[Дополнительные сведения о совместном использовании кода C++ с приложениями Android и Windows](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
 |[Примеры разработки кроссплатформенных мобильных приложений для C++](https://msdn.microsoft.com/library/dn707596.aspx) (Библиотека MSDN)|
 |[Дополнительные примеры разработки кроссплатформенных мобильных приложений для C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -165,9 +165,9 @@ ms.locfileid: "67824192"
 |[Дополнительные сведения о построении игр Unity с помощью Visual Studio](https://www.visualstudio.com/features/unitytools-vs.aspx)|
 |[Дополнительные сведения о средствах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md) (библиотека MSDN)|
 |[Начните работать со средствами Visual Studio Tools для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (библиотека MSDN)|
-|[Читать о последних возможностях Visual Studio Tools для предварительной версии Unity 2.0](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (блог Visual Studio)|
-|[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
-|[Сведения о Unity](http://unity3d.com/) (веб-сайт Unity)|
+|[Читать о последних возможностях Visual Studio Tools для предварительной версии Unity 2.0](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (блог Visual Studio)|
+|[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
+|[Сведения о Unity](https://unity.com/) (веб-сайт Unity)|
 
 ## <a name="see-also"></a>См. также
 

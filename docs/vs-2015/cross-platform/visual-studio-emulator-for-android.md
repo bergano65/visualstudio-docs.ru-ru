@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442088"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300776"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "63442088"
 ## <a name="Requirements"></a> Требования к системе и обратная совместимость  
  Важные сведения о требованиях к оборудованию, программному обеспечению и конфигурации для эмулятора Visual Studio для Android см. в следующих разделах.  
   
-- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [Требования к системе для эмулятора Android для Visual Studio](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
   Эмулятору Visual Studio для Android требуется Visual Studio 2015. Он не поддерживает обратную совместимость с более ранними версиями Visual Studio.  
   
@@ -90,7 +90,7 @@ ms.locfileid: "63442088"
  После установки набора профилей, которые будут являться целевыми, новые профили можно запускать непосредственно из диспетчера с помощью зеленой кнопки **Воспроизведение**. Они также будут отображаться в раскрывающемся меню целевого объекта отладки в кроссплатформенном мобильном проекте Visual Studio любого типа.  
   
 ## <a name="FeaturesTest"></a> Возможности, которые можно тестировать в эмуляторе  
- Подробные сведения о возможностях, которые можно протестировать в эмуляторе, см. в [документации](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Подробные сведения о возможностях, которые можно протестировать в эмуляторе, см. в [документации](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).  
   
 ## <a name="FeaturesNonTest"></a> Возможности, которые нельзя тестировать в эмуляторе  
  В следующем списке приведены возможности и компоненты платформы Android, которые **нельзя** тестировать в эмуляторе. Эти возможности и компоненты необходимо проверять на физическом устройстве.  
@@ -106,7 +106,7 @@ ms.locfileid: "63442088"
 ## <a name="Support"></a> Ресурсы поддержки  
  Если главный компьютер отвечает требованиям к системе и возникают проблемы, не описанные в этом руководстве по устранению неполадок:  
   
-- задайте вопрос на сайте StackOverflow, используя теги [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) и visual-studio;  
+- задайте вопрос на сайте StackOverflow, используя теги [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) и visual-studio;  
   
 - сообщите о проблеме с помощью средства отправки одобрения в Visual Studio или в диспетчере эмуляторов.  
   

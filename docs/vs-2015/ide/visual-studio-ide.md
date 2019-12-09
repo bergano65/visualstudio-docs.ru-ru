@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667145"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296921"
 ---
 # <a name="visual-studio-ide"></a>Интегрированная среда разработки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Visual Studio можно использовать для создания раз
 Подробные сведения о новых возможностях Visual Studio 2015 см. в статье [Новые возможности Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
 ## <a name="visual-studio-setup"></a>Установка Visual Studio
- Найти подходящий выпуск Visual Studio можно в разделе [Выпуски Visual Studio](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
+ Найти подходящий выпуск Visual Studio можно в разделе [Выпуски Visual Studio](https://visualstudio.microsoft.com/vs/).
 
- Можно установить Visual Studio 2015, загрузив эту среду со страницы [Загружаемые файлы Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Дополнительные сведения о процедуре установки см. в статье [Установка Visual Studio 2015](../install/install-visual-studio-2015.md).
+ Можно установить Visual Studio 2015, загрузив эту среду со страницы [Загружаемые файлы Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Дополнительные сведения о процедуре установки см. в статье [Установка Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>Основы среды IDE
  На следующем рисунке показана интегрированная среда разработки (IDE) Visual Studio с открытым проектом и окном обозревателя решений для навигации по файлам проекта, а также окном Team Explorer для перемещения в системе управления версиями и отслеживания рабочих элементов. Указанные функции в заголовке окна более подробно описываются ниже.

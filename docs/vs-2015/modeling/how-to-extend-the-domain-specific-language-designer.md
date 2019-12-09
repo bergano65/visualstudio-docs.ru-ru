@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656023"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300905"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете сделать расширения конструктором, который используется для редактирования определений DSL. Типы расширений, которые можно сделать, включают добавление команд меню, добавление обработчиков для жестов перетаскивания и двойных щелчков, а также правила, активируемые при изменении определенных типов значений или связей. Расширения можно упаковать как расширение интеграции Visual Studio (VSIX) и распространить среди других пользователей.
 
- Пример кода и дополнительные сведения об этой функции см. на [веб-сайте SDK визуализации и моделирования Visual Studio (VMSDK)](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Пример кода и дополнительные сведения об этой функции см. на [веб-сайте SDK визуализации и моделирования Visual Studio (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
 
 ## <a name="setting-up-the-solution"></a>Настройка решения
  Настройте проект, содержащий код вашего расширения, и проект VSIX, который экспортирует проект. Решение может содержать другие проекты, включенные в один и тот же VSIX.
@@ -48,13 +48,13 @@ ms.locfileid: "72656023"
 
 7. В проекте библиотеки классов добавьте ссылки на следующие сборки:
 
-     Microsoft. VisualStudio. Кореутилити
+     Microsoft.VisualStudio.CoreUtility
 
-     Microsoft. VisualStudio. моделирование. SDK. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-     Microsoft. VisualStudio. моделирование. SDK. схемы. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-     Microsoft. VisualStudio. моделирование. SDK. DslDefinition. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0;
 
@@ -64,14 +64,14 @@ ms.locfileid: "72656023"
 
      System.Drawing.Design
 
-     System.Windows.Forms.
+     System.Windows.Forms
 
 ## <a name="testing-and-deployment"></a>Тестирование и развертывание
  Чтобы протестировать любое из расширений в этом разделе, выполните сборку и запустите решение. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . В этом экземпляре откройте решение DSL. Измените схему DslDefinition. Поведение расширения можно увидеть.
 
  Чтобы развернуть расширения в основной [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а также на другие компьютеры, выполните следующие действия.
 
-1. Найдите файл установки VSIX в проекте VSIX в папке bin \\ * \\ \*. VSIX.
+1. Найдите файл установки VSIX в проекте VSIX в папке bin\\*\\\*. VSIX.
 
 2. Скопируйте этот файл на конечный компьютер, а затем в проводнике Windows (или в проводнике) дважды щелкните его.
 
@@ -79,7 +79,7 @@ ms.locfileid: "72656023"
 
    Чтобы удалить расширение, выполните следующие действия.
 
-3. в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в меню **Сервис** выберите пункт **Диспетчер расширений**.
+3. в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]в меню **Сервис** выберите пункт **Диспетчер расширений**.
 
 4. Выберите расширение и удалите его.
 

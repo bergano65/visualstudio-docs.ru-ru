@@ -1,5 +1,5 @@
 ---
-title: Создание пакетов загрузчика | Документация Майкрософт
+title: Создание пакетов начального загрузчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187810"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300732"
 ---
 # <a name="creating-bootstrapper-packages"></a>Создание пакетов загрузчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "68187810"
  Сначала начальный загрузчик проверяет, установлены ли необходимые компоненты. Если нет, то начальный загрузчик показывает лицензионные соглашения. Как только конечный пользователь примет условия лицензионного соглашения, начнется установка необходимых компонентов. Если все необходимые компоненты обнаружены, начальный загрузчик просто запустит установщик приложения.  
   
 ## <a name="creating-custom-packages"></a>Создание пользовательских пакетов  
- Для создания манифестов можно использовать редактор XML в Visual Studio. Дополнительные сведения см. в разделе [Практическое руководство. Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md) и [как: Создание манифеста продукта](../deployment/how-to-create-a-product-manifest.md). Пример создания пакета загрузчика см. в разделе [Пошаговое руководство: Создание пользовательского загрузчика для отображения подсказки заявления о конфиденциальности](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Для создания манифестов можно использовать редактор XML в Visual Studio. Дополнительные сведения см. в разделах [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) и [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Пример создания пакета загрузчика см. в разделе [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Чтобы создать пакет начального загрузчика, необходимо отправить распространяемый компонент в форме EXE- или MSI-файла в Генератор манифестов начального загрузчика. После этого Генератор манифестов начального загрузчика создаст следующие файлы.  
   
@@ -70,13 +70,13 @@ ms.locfileid: "68187810"
   
   `package.xml`  
   
-  Скопируйте распространяемые файлы в папку начального загрузчика. Дополнительные сведения см. в разделе [Практическое руководство. Создание локализованного пакета загрузчика](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Скопируйте распространяемые файлы в папку начального загрузчика. Для получения дополнительной информации см. [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- или диспетчер конфигурации служб  
+ или  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  В следующей таблице перечислены свойства, которые заполняются начальным загрузчиком автоматически.  
   
-|Свойство.|Описание|  
+|Свойство|Описание|  
 |--------------|-----------------|  
 |ApplicationName|Имя приложения.|  
 |ProcessorArchitecture|Процессор и количество бит на слово в платформе, для которой предназначен исполняемый файл. В эти значения входят:<br /><br /> — Intel<br />— IA64<br />— AMD64|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Список распространяемых компонентов — это XML файл, которому необходимо присвоить имя в следующем формате. *Название компании*. *Имя компонента*. RedistList.xml. Например, если компонент называется Datawidgets и разработан компанией Acme, файл необходимо назвать Acme.DataWidgets.RedistList.xml. Пример содержания списка распространяемых компонентов:  
+ Список распространяемых компонентов — это XML-файл, которому необходимо присвоить имя в следующем формате: *Название компании*.*Название компонента*.RedistList.xml. Например, если компонент называется Datawidgets и разработан компанией Acme, файл необходимо назвать Acme.DataWidgets.RedistList.xml. Пример содержания списка распространяемых компонентов:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -127,5 +127,5 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Диалоговое окно «Необходимые компоненты»](../ide/reference/prerequisites-dialog-box.md)   
- [Продукт и справочник по схемам пакета](../deployment/product-and-package-schema-reference.md)   
- [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)   
+ [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](https://go.microsoft.com/fwlink/?LinkId=107537)

@@ -12,14 +12,14 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669608"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301048"
 ---
-# <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
+# <a name="extend-uml-models-and-diagrams"></a>Extend UML models and diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе приведены сводные сведения о способах расширения инструментов моделирования UML, входящих в состав Visual Studio. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -30,13 +30,13 @@ ms.locfileid: "72669608"
 
  Команда специалистов по инструментам Fabrikam вносит ряд усовершенствований, облегчающих работу команд разработчиков. В следующих разделах описываются разные виды расширений, которые вы можете определить. Несколько таких методов можно объединить в одно расширение Visual Studio.
 
- Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[серия практических руководств MSDN: средства и расширяемость UML](http://go.microsoft.com/fwlink/?LinkId=214467).
+ Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[серия практических руководств MSDN: средства и расширяемость UML](https://go.microsoft.com/fwlink/?LinkId=214467).
 
 ## <a name="Requirements"></a> Требования
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-- [Пакет SDK моделирования для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).
+- [Пакет SDK моделирования для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Профили
  Профили позволяют определять стереотипы и дополнительные свойства элементов UML.
@@ -113,10 +113,10 @@ ms.locfileid: "72669608"
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") - [канал 9: UML с помощью Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") - [канал 9: UML с помощью Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание моделей для](../modeling/create-models-for-your-app.md) [справочника по API приложений для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

@@ -43,9 +43,9 @@ HRESULT OnFunctionEnter(
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращаемое значение этого метода игнорируется обработчиком скриптов.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Для вызовов DOM обработчик скриптов вызывает [IActiveScriptProfilerCallback2:: онфунктионентербинаме](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) вместо `IActiveScriptProfilerCallback::OnFunctionEnter`. Это связано с большим количеством уникальных методов и свойств в модели DOM.  
   
-## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerCallback:: онфунктионексит](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
+## <a name="see-also"></a>См. также:  
+ [IActiveScriptProfilerCallback:: онфунктионексит](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
  [Интерфейс IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 45aa7c9807ba08751a354c336b646aa7f7ce641b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659379"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301357"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Проверка кода по схемам слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "72659379"
 
   Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Можно проверить код вручную из открытой схемы слоев в Visual Studio или из командной строки. Также код можно проверить автоматически при выполнении локальных сборок или Team Foundation Build. См. [видео Channel 9: проектирование и проверка архитектуры с помощью схем слоев](http://go.microsoft.com/fwlink/?LinkID=252073).
+  Можно проверить код вручную из открытой схемы слоев в Visual Studio или из командной строки. Также код можно проверить автоматически при выполнении локальных сборок или Team Foundation Build. См. [видео Channel 9: проектирование и проверка архитектуры с помощью схем слоев](https://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Если необходимо выполнить проверку слоев в Team Foundation Build, следует также установить ту же версию Visual Studio на сервере сборки.
@@ -99,7 +99,7 @@ ms.locfileid: "72659379"
 2. Чтобы просмотреть источник каждой ошибки, дважды щелкните ошибку в окне **Список ошибок** .
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может вместо источника ошибки показывать карту кода. Это происходит, если код имеет зависимость в сборке, не заданной схемой слоев, либо в коде отсутствует зависимость, заданная схемой слоев. Просмотрите карту кода или код, чтобы определить, должна ли существовать зависимость. Дополнительные сведения о картах кода см. в статье [сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md).
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может показывать карту кода вместо источника ошибки. Это происходит, если код имеет зависимость в сборке, не заданной схемой слоев, либо в коде отсутствует зависимость, заданная схемой слоев. Просмотрите карту кода или код, чтобы определить, должна ли существовать зависимость. Дополнительные сведения о картах кода см. в статье [сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md).
 
 3. Сведения об управлении ошибками см. в разделе [Управление ошибками проверки](#ManageErrors).
 
@@ -137,7 +137,7 @@ ms.locfileid: "72659379"
      msbuild /p:ValidateArchitecture=true
      ```
 
-     Отобразятся любые возникающие ошибки. Дополнительные сведения о [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] см. в разделе задача [MSBuild](../msbuild/msbuild.md) и [MSBuild](../msbuild/msbuild-task.md).
+     Отобразятся любые возникающие ошибки. Дополнительные сведения о [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]см. в разделе задача [MSBuild](../msbuild/msbuild.md) и [MSBuild](../msbuild/msbuild-task.md).
 
    Дополнительные сведения об ошибках проверки см. в разделе [изучение и устранение ошибок проверки слоев](#UnderstandingValidationErrors).
 
@@ -197,7 +197,7 @@ ms.locfileid: "72659379"
 
    Дополнительные сведения об ошибках проверки см. в разделе [изучение и устранение ошибок проверки слоев](#UnderstandingValidationErrors). Дополнительные сведения о [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] см. в разделах:
 
-- [Сборка приложения](/azure/devops/pipelines/index)
+- [Построение приложения](/azure/devops/pipelines/index)
 
 - [Использование шаблона по умолчанию для процесса сборки](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
@@ -243,5 +243,5 @@ ms.locfileid: "72659379"
 
 ## <a name="security"></a>Безопасность
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)

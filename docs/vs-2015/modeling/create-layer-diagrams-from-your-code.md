@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 138f818eab34b0b1860c7daa85f1b6814888fc9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652849"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300270"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Создание схем слоев на основе кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,5 +135,5 @@ ms.locfileid: "72652849"
 
 - [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>См. также раздел
- [Видео на канале 9. Разработка и проверка архитектуры с помощью](http://go.microsoft.com/fwlink/?LinkID=252073) схем слоев схемы слоев [: эталонные](../modeling/layer-diagrams-reference.md) [схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md) [Проверка кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md) [Визуализация кода](../modeling/visualize-code.md)
+## <a name="see-also"></a>См. также
+ [Видео на канале 9. Разработка и проверка архитектуры с помощью](https://go.microsoft.com/fwlink/?LinkID=252073) схем слоев схемы слоев [: эталонные](../modeling/layer-diagrams-reference.md) [схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md) [Проверка кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md) [Визуализация кода](../modeling/visualize-code.md)

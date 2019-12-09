@@ -28,6 +28,6 @@ ms.locfileid: "72577567"
   
 - Вставьте завершающую косую черту, чтобы пометить конец регулярного выражения.  
   
-## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8e314b63490387b94c068e178f0d02db4822921f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1f2ac13b62dcc522626fde92b1b29cac9873edec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672172"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301842"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Тестирование приложений Windows UWP и приложений Windows Phone 8.1 с помощью закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -351,7 +351,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **О**. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.
 
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>В. Можно ли выполнять закодированный тест ИП для приложения Windows Phone из командной строки?
- **О**. Да, используйте файл runsettings, чтобы указать целевое устройство для выполнения теста. Пример:
+ **О**. Да, используйте файл runsettings, чтобы указать целевое устройство для выполнения теста. Пример.
 
  **vstest.console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings**
 
@@ -372,7 +372,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>В. В чем отличия закодированных тестов ИП для XAML-приложений Магазина Windows и приложений Windows Phone?
  **О**. Существуют следующие основные различия.
 
-|Возможность|Приложения для Магазина Windows|Приложения Windows Phone|
+|Возможности|Приложения для Магазина Windows|Приложения Windows Phone|
 |-------------|------------------------|------------------------|
 |Цель для запуска тестов|Локальный или удаленный компьютер. Удаленные компьютеры можно указать при использовании автоматизированного тестового случая для выполнения тестов. См. раздел [Автоматизация тестового случая в Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Эмулятор или устройство. См. раздел [В. Тесты можно выполнять только на эмуляторе или можно использовать и физическое устройство?](#TestingPhoneAppsCodedUI_EmulatorDevice) ранее.|
 |Выполнение из командной строки|Файл параметров не требуется для указания цели.|Для указания цели требуется файл Runsettings.|
@@ -382,7 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Тесты на основе данных|Сведения об использовании внешних источников данных и атрибута DataSource тестового метода см. в разделе [Тесты на основе данных](../test/creating-a-data-driven-coded-ui-test.md) .|Данные указываются в строке с использованием атрибута DataRow тестового метода. См. раздел [Использование закодированных тестов ИП на основе данных для приложений Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) этой статьи.|
 
 ## <a name="external-resources"></a>Внешние ресурсы
- Блог Microsoft Visual Studio Application Lifecycle Management: [Использование закодированных тестов пользовательского интерфейса для проверки XAML-приложений Windows Phone](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
+ Блог Microsoft Visual Studio Application Lifecycle Management: [Использование закодированных тестов пользовательского интерфейса для проверки XAML-приложений Windows Phone](https://devblogs.microsoft.com/devops/using-coded-ui-to-test-xaml-based-windows-phone-apps/#comments)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)

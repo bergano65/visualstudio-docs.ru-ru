@@ -12,39 +12,39 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 887afab85738e33bccd56543772b576e3843fe92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1ad59e6d8f4cb88004629b0dfd2cdf0631a7824
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675224"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297679"
 ---
 # <a name="using-msbuild"></a>Использование MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-MSBuild предоставляет строго определенными, расширяемый формат XML для создания файлов проекта, полного описания элементов проекта для построения, задачи сборки и конфигураций сборки.  
+MSBuild предоставляет четко определенный расширяемый XML-формат для создания файлов проекта, которые полностью описывают элементы проекта для построения, задачи сборки и конфигурации сборки.  
   
- Пример end-to-end языка системы проекта, основанные на MSBuild, см. в разделе Пример IronPython, глубокое погружение в[примеры VSSDK](../../misc/vssdk-samples.md).  
+ Полный пример системы проектного языка, основанной на MSBuild, см. в разделе[примеры VSSDK](../../misc/vssdk-samples.md).  
   
-## <a name="general-msbuild-considerations"></a>MSBuild общие вопросы  
- Файлы проекта MSBuild, например, [!INCLUDE[csprcs](../../includes/csprcs-md.md)] .csproj и [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] файлы .vbproj, содержат данные, которые используются во время сборки, но также может содержать данные, которые используются во время разработки. Во время сборки данные хранятся с помощью MSBuild примитивов, включая [элемент Item (MSBuild)](../../msbuild/item-element-msbuild.md) и [элемент Property (MSBuild)](../../msbuild/property-element-msbuild.md). Данные времени разработки, то данные, относящиеся к данного типа проектов и любых подтипов связанный проект, хранятся в XML произвольной формы, зарезервированного для ее.  
+## <a name="general-msbuild-considerations"></a>Общие рекомендации по MSBuild  
+ Файлы проекта MSBuild, например [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. csproj и [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. vbproj, содержат данные, используемые во время сборки, но также могут содержать данные, используемые во время разработки. Данные времени сборки хранятся с помощью примитивов MSBuild, включая [элемент Item (MSBuild)](../../msbuild/item-element-msbuild.md) и [элемент Property (MSBuild)](../../msbuild/property-element-msbuild.md). Данные времени разработки, которые являются данными, относящимися к типу проекта и всем связанным подтипам проекта, хранятся в XML-файле произвольной формы, зарезервированном для него.  
   
- MSBuild не имеют встроенной поддержки для объектов конфигурации, но поддерживает условные атрибуты для указания данных конфигурации. Пример:  
+ MSBuild не поддерживает встроенную поддержку объектов конфигурации, но предоставляет условные атрибуты для указания данных, относящихся к конфигурации. Пример.  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
 ```  
   
- Дополнительные сведения о условные атрибуты, см. в разделе [условных конструкциях](../../msbuild/msbuild-conditional-constructs.md).  
+ Дополнительные сведения об условных атрибутах см. в разделе [Условные конструкции](../../msbuild/msbuild-conditional-constructs.md).  
   
-### <a name="extending-msbuild-for-your-project-type"></a>Расширение для данного типа проекта MSBuild  
- MSBuild интерфейсы и интерфейсы API могут быть изменены в будущих версиях [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Таким образом разумно использовать классы управляемых пакетов framework (MPF), поскольку они обеспечивают защиту от изменений.  
+### <a name="extending-msbuild-for-your-project-type"></a>Расширение MSBuild для типа проекта  
+ Интерфейсы и API MSBuild могут быть изменены в будущих версиях [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Таким образом, разумно использовать классы Managed Package Framework (MPF), так как они обеспечивают экранирование от изменений.  
   
- Managed Package Framework для проектов (MPFProj) предоставляет вспомогательные классы для создания и управления новую систему проектов. Источник кода и компиляция инструкции доступны в [MPF для проектов — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+ Платформа управляемых пакетов для проектов (Мпфпрож) предоставляет вспомогательные классы для создания новой системы проектов и управления ею. Исходный код и инструкции по компиляции можно найти по адресу [MPF for Projects-Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
   
- Ниже приведены классы MPF конкретного проекта.  
+ Классы MPF, относящиеся к проекту, выглядят следующим образом:  
   
-|Класс|Реализация|  
+|Class|Реализация|  
 |-----------|--------------------|  
 |`Microsoft.VisualStudio.Package.ProjectNode`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents>|  
 |`Microsoft.VisualStudio.Package.ProjectFactory`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|  
@@ -54,8 +54,8 @@ MSBuild предоставляет строго определенными, ра
   
  `Microsoft.VisualStudio.Package.ProjectElement` класс является оболочкой для элементов MSBuild.  
   
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>Vs генераторов одного файла. Задачи MSBuild  
- Один файл генераторы доступ-только во время разработки, но задачи MSBuild можно использовать во время разработки и во время сборки. Для обеспечения максимальной гибкости поэтому используйте задачи MSBuild для преобразования и создания кода. Дополнительные сведения см. в разделе [средства пользовательских](../../extensibility/internals/custom-tools.md).  
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>Генераторы одиночных файлов и задачи MSBuild  
+ Генераторы отдельных файлов доступны только во время разработки, но задачи MSBuild можно использовать во время разработки и во время сборки. Для максимальной гибкости, следовательно, используйте задачи MSBuild для преобразования и создания кода. Дополнительные сведения см. в разделе [Custom Tools](../../extensibility/internals/custom-tools.md).  
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о MSBuild](../../msbuild/msbuild-reference.md)   

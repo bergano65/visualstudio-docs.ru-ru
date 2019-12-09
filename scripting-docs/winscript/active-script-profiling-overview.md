@@ -13,21 +13,21 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3b85410af965fdb9fe4785efe2cf12051e19436e
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572728"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797364"
 ---
 # <a name="active-script-profiling-overview"></a>Обзор профилирования активных скриптов
 [Интерфейсы профилировщика активных скриптов](../winscript/reference/active-script-profiler-interfaces.md) обеспечивают профилирование обработчика скриптов. Профилирование активных скриптов состоит из следующих частей:  
   
 - Модуль языка  
   
-- Узел  
+- Host  
   
-- профилировщик  
+- Приложение  Profiler  
   
 ## <a name="language-engine"></a>Модуль языка  
  Модуль языка выполняет скрипт. Он предоставляет методы, обеспечивающие профилирование кода скрипта по мере его выполнения. Когда включено профилирование, модуль языка принимает в качестве аргумента идентификатор класса (CLSID) COM-объекта профилировщика. Он создает экземпляр COM-объекта профилировщика и затем вызывает профилировщик при возникновении различных событий.  
@@ -37,11 +37,11 @@ ms.locfileid: "72572728"
 > [!NOTE]
 > Языковая среда выполнения [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] проверяет переменную среды JS_PROFILER при создании, чтобы определить, нужно ли включать профилирование. Если этой переменной присвоен идентификатор CLSID профилировщика, языковая среда выполнения создает экземпляр COM-объекта профилировщика, используя значение переменной, чтобы определить, какой профилировщик создать.  
   
-## <a name="host"></a>Узел  
+## <a name="host"></a>Host  
  Сервер создает модуль языка и предоставляет его вместе со скриптами, которые нужно выполнить. Интеллектуальный сервер также предоставляет контекст документа, который может использоваться отладчиком или профилировщиком для предоставления более подробных данных при отладке или профилировании.  
   
-## <a name="profiler"></a>профилировщик  
- Профилировщик получает вызовы из модуля языка при возникновении различных событий. Профилировщик должен быть зарегистрирован как COM-объект и реализовать [интерфейс IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md).  
+## <a name="profiler"></a>Приложение  Profiler  
+ Профилировщик получает вызовы из модуля языка при возникновении различных событий. Профилировщик должен быть зарегистрирован как COM-объект и должен реализовывать [интерфейс IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Интерфейсы профилировщика активных скриптов](../winscript/reference/active-script-profiler-interfaces.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d218f5f560a7ae2c95d7e7ae0e20002f922e257
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602076"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300884"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Практическое руководство. Добавление команды в контекстное меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "72602076"
 
 3. [Напишите методы в классе командного метода](#CommandSet) , чтобы сделать команду видимой, и определить, что должна делать команда.
 
-   Примеры см. на [веб-сайте SDK визуализации и моделирования](http://go.microsoft.com/fwlink/?LinkID=185579).
+   Примеры см. на [веб-сайте SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > Также можно изменить поведение некоторых существующих команд, например "Вырезать", "Вставить", "Выбрать все" и "Печать", переопределив соответствующие методы в CommandSet.cs. Дополнительные сведения см. [в разделе инструкции. Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -143,12 +143,12 @@ ms.locfileid: "72602076"
 
 2. Найдите элемент `ProvideMenuResource`.
 
-3. Увеличьте параметр `version` атрибута, который является вторым параметром. При необходимости можно написать имя параметра, прямо указывающее на его назначение. Пример:
+3. Увеличьте параметр `version` атрибута, который является вторым параметром. При необходимости можно написать имя параметра, прямо указывающее на его назначение. Пример.
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ## <a name="CommandSet"></a>Определение поведения команды
- В доменном языке уже имеются некоторые команды, внедренные в разделяемый класс, который был объявлен в файле DslPackage\GeneratedCode\CommandSet.cs. Чтобы добавить новые команды, необходимо расширить этот класс, создав новый файл с частичным объявлением того же класса. Имя класса обычно *\<YourDslName >* `CommandSet`. Лучше всего начать с проверки имени класса и его содержимого.
+ В доменном языке уже имеются некоторые команды, внедренные в разделяемый класс, который был объявлен в файле DslPackage\GeneratedCode\CommandSet.cs. Чтобы добавить новые команды, необходимо расширить этот класс, создав новый файл с частичным объявлением того же класса. Имя класса обычно *\<йоурдслнаме >* `CommandSet`. Лучше всего начать с проверки имени класса и его содержимого.
 
  Класс набора команд производится из <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
@@ -162,7 +162,7 @@ ms.locfileid: "72602076"
 
 2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs`.
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример.
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -223,9 +223,9 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Следующие фрагменты часто используются в методах OnStatus:
 
-- `this.CurrentSelection` Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
+- `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
 
-- `this.IsDiagramSelected()`  -  `true`, если пользователь щелкнул пустую часть диаграммы.
+- `this.IsDiagramSelected()` - `true`, если пользователь щелкнул пустую часть диаграммы.
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -359,5 +359,5 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Убедитесь, что более ранние версии пакета удалены.
 
-## <a name="see-also"></a>См. также раздел
- [Написание кода для настройки в предметно-ориентированном языке](../modeling/writing-code-to-customise-a-domain-specific-language.md) [. как изменить стандартную команду меню,](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [развернув пример кода для решений на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md) [: схемы цепи](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>См. также
+ [Написание кода для настройки в предметно-ориентированном языке](../modeling/writing-code-to-customise-a-domain-specific-language.md) [. как изменить стандартную команду меню,](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [развернув решения доменного языка](../modeling/deploying-domain-specific-language-solutions.md)

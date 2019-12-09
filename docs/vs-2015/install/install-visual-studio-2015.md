@@ -19,18 +19,18 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a31bc328c20aada21b05edeef61886d57e914165
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433013"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298050"
 ---
 # <a name="install-visual-studio-2015"></a>Установка Visual Studio 2015
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Эта страница содержит подробные сведения, которые помогут вам в установке **Visual Studio 2015** — нашего интегрированного набора инструментов для повышения производительности разработчиков. Также включены ссылки на сведения о [компонентах](https://www.visualstudio.com/news/vs2015-vs.aspx), [выпусках](http://go.microsoft.com/fwlink/?LinkID=242142), [требованиях к системе](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [скачиваемых материалах](http://go.microsoft.com/fwlink/?LinkId=517106)и многом другом.
+Эта страница содержит подробные сведения, которые помогут вам в установке **Visual Studio 2015** — нашего интегрированного набора инструментов для повышения производительности разработчиков. Также включены ссылки на сведения о [компонентах](https://www.visualstudio.com/news/vs2015-vs.aspx), [выпусках](https://go.microsoft.com/fwlink/?LinkID=242142), [требованиях к системе](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [скачиваемых материалах](https://go.microsoft.com/fwlink/?LinkId=517106)и многом другом.
 
 ## <a name="quick-links"></a>Полезные ссылки
 
@@ -38,14 +38,14 @@ ms.locfileid: "63433013"
 
 |||
 |------------------|----------------|
-|![Скачайте Visual Studio](../install/media/downloads.png "файлы для загрузки") |**Загружает**: Чтобы установить Visual Studio 2015, можно загрузить исполняемый файл продукта из [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) странице (необходима подписка), или воспользуйтесь установочным носителем из коробочного продукта. [Дополнительные сведения о том, как загрузить текущие или предыдущие версии Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
-|![Дополнительные сведения о возможностях](../install/media/features.png "функции") |**Функции**: Дополнительные сведения о функциях в Visual Studio 2015, см. заметки о выпуске [RTM](https://www.visualstudio.com/news/vs2015-vs), [с обновлением 1](https://www.visualstudio.com/news/vs2015-update1-vs), [с обновлением 2](https://www.visualstudio.com/news/vs2015-update2-vs), и [с обновлением 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
-|![Новые возможности в каждый номер SKU](../install/media/sku.png "номера SKU") |**Номера SKU**: чтобы узнать, какие компоненты и функции доступны в каждом выпуске Visual Studio 2015, посетите страницу [Сравнение предложений Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142).|
-|![Просмотреть требования к системе](../install/media/system-requirements.png "требования к системе") |**Требования к системе**: чтобы просмотреть требования к системе для каждого выпуска Visual Studio 2015, посетите страницу [Совместимость Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs).|
-|![Найдите ключ продукта](../install/media/product-keys.png "ключи продуктов") |**Ключи продуктов**: Чтобы найти ключ продукта, см. в разделе [как: Найти ключ продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) раздела.|
-|![Узнайте о лицензировании](../install/media/licensing.png "лицензирования") |**Лицензирование**: чтобы ознакомиться с вариантами лицензирования для отдельных пользователей и корпоративных клиентов, обратитесь к документу [Лицензирование Visual Studio и MSDN](https://www.microsoft.com/download/details.aspx?id=13350).|
+|![Скачать Visual Studio 2012](../install/media/downloads.png "Загрузки") |**Загрузки**. для установки Visual Studio 2015 можно загрузить исполняемый файл продукта со страницы [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (требуется подписка) или использовать установочный носитель из продукта в штучной упаковке. [Узнайте больше о том, как скачать текущую или предыдущую версию Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
+|![Дополнительные сведения о функциях](../install/media/features.png "Компоненты") |**Компоненты**. Дополнительные сведения о функциях Visual Studio 2015 см. в заметках о выпуске [RTM](https://www.visualstudio.com/news/vs2015-vs), [Обновление 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Обновление 2](https://www.visualstudio.com/news/vs2015-update2-vs)и [Обновление 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
+|![Узнайте, что находится в каждом номере SKU](../install/media/sku.png "Номера SKU") |**Номера SKU**: чтобы узнать, какие компоненты и функции доступны в каждом выпуске Visual Studio 2015, посетите страницу [Сравнение предложений Visual Studio](https://go.microsoft.com/fwlink/?LinkID=242142).|
+|![Просмотр требований к системе](../install/media/system-requirements.png "Требования к системе") |**Требования к системе**. сведения о требованиях к системе для каждого выпуска visual Studio 2015 см. на странице [совместимости с Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) .|
+|![Определение ключа продукта](../install/media/product-keys.png "Ключи продукта") |**Ключи продуктов**. чтобы найти ключ продукта, см. раздел [как найти ключ продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) .|
+|![Сведения о лицензировании](../install/media/licensing.png "Лицензирование") |**Лицензирование**. сведения о вариантах лицензирования для отдельных пользователей или корпоративных клиентов см. в техническом документе о [лицензировании Visual Studio и MSDN](https://www.microsoft.com/download/details.aspx?id=13350) .|
 
-## <a name="custom"></a> Установка по умолчанию и Выборочная установка
+## <a name="custom"></a>По умолчанию и Выборочная установка
  При установке Visual Studio 2015 можно включать или исключать компоненты в зависимости от того, насколько часто вы предполагаете их использовать. Это означает, что установка по умолчанию, как правило, требует меньше места и происходит быстрее, чем выборочная установка. Кроме того, это означает, что многие компоненты, которые устанавливались в предыдущих версиях по умолчанию, в этой версии считаются настраиваемыми компонентами, которые требуется явно выбирать для установки.
 
  ![Диалоговое окно установки Visual Studio 2015](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
@@ -61,13 +61,13 @@ ms.locfileid: "63433013"
 |------------------|----------------|
 |**Обновления**|Visual Studio 2015 с обновлением 3|
 |**Языки программирования**|Visual C++<br />Visual F#<br />Python Tools for Visual Studio|
-|**Разработка для Windows и веб-разработка**|Средства публикации ClickOnce<br />LightSwitch<br />Инструменты разработчика Microsoft Office<br />Microsoft SQL Server Data Tools<br /> Веб-инструменты Майкрософт для разработчиков<br />Инструменты PowerShell для Visual Studio (сторонний)<br />Набор разработки для Silverlight<br />Средства разработки универсальных приложений Windows<br />Средства и пакеты SDK Windows 10<br />Средства Windows 8.1 и Windows Phone 8.0/8.1<br />Средства и пакеты SDK Windows 8.1|
+|**Разработка для Windows и веб-разработка**|Средства публикации ClickOnce<br />LightSwitch<br />Инструменты разработчика Microsoft Office<br />Microsoft SQL Server Data Tools<br /> Веб-инструменты Майкрософт для разработчиков<br />PowerShell Tools for Visual Studio (третья сторона)<br />Набор разработки для Silverlight<br />Средства разработки универсальных приложений Windows<br />Средства и пакеты SDK Windows 10<br />Средства Windows 8.1 и Windows Phone 8.0/8.1<br />Средства и пакеты SDK Windows 8.1|
 |**Разработка кроссплатформенных мобильных приложений**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Разработка мобильных приложений Visual C++ для iOS и Android<br />Clang с Microsoft CodeGen|
-|**Общие средства и пакеты средств разработки программного обеспечения**|Android Native Development Kit (сторонний)<br /> Пакет SDK для Android [сторонний]<br />API-интерфейсы для установки пакета SDK для Android (сторонний)<br />Apache Ant (сторонний)<br /> Java SE Development Kit (сторонний)<br /> Joyent Node.js (сторонний)|
-|**Общие средства**|Git для Windows (сторонний)<br />Расширение GitHub для Visual Studio (сторонний)<br /> Средства расширения Visual Studio|
+|**Общие средства и пакеты средств разработки программного обеспечения**|Пакет Android Native Development Kit (третья сторона)<br /> Пакет SDK для Android [третья сторона]<br />API-интерфейсы установки пакет SDK для Android (третья сторона)<br />Apache Ant (третья сторона)<br /> Пакет SDK для Java SE (третья сторона)<br /> Жойент Node. js (сторонние)|
+|**Общие средства**|Git для Windows (третья сторона)<br />Расширение GitHub для Visual Studio (третья сторона)<br /> Средства расширения Visual Studio|
 
 ## <a name="installing"></a> Установка Visual Studio
- Visual Studio можно установить с установочного диска DVD, с помощью службы подписки Visual Studio из [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) веб-сайта, загрузив веб-установщик из [Visual Studio Загружает](http://go.microsoft.com/fwlink/?LinkId=517106) веб-сайта, или путем создания макета автономной установки (см. в разделе [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) получить дополнительные сведения).
+ Вы можете установить Visual Studio с помощью установочного носителя (DVD), используя службу подписки Visual Studio на веб-сайте [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) , загрузив веб-установщик с веб-сайта [загрузки Visual Studio](https://go.microsoft.com/fwlink/?LinkId=517106) или создав автономный макет установки (Дополнительные сведения см. в разделе [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) ).
 
 > [!IMPORTANT]
 > Установка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]должна выполняться от имени учетной записи администратора. Тем не менее для работы с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] после установки они не нужны.
@@ -82,7 +82,7 @@ ms.locfileid: "63433013"
 
  Более подробную информацию о требованиях к учетной записи локального администратора см. в статье базы знаний [Установка SQL Server завершается ошибкой, если учетная запись для установки не имеет определенных прав пользователя](https://support.microsoft.com/kb/2000257).
 
-### <a name="BKMK_Media"></a> С помощью установочного носителя
+### <a name="BKMK_Media"></a>Использование установочного носителя
  Чтобы установить [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], в корневом каталоге установочного носителя [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запустите файл установки для нужного выпуска:
 
 |Выпуск|Файл установки|
@@ -91,33 +91,33 @@ ms.locfileid: "63433013"
 |Visual Studio Professional|vs_professional.exe|
 |Visual Studio Community|vs_community.exe|
 
-### <a name="BKMK_Website"></a> Загрузка с веб-сайта продукта
- Посетите [загрузки Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) страницы и выберите выпуск Visual Studio, который вы хотите.
+### <a name="BKMK_Website"></a>Загрузка с веб-сайта продукта
+ Перейдите на страницу [загрузки Visual Studio](https://go.microsoft.com/fwlink/?LinkId=517106) и выберите нужный выпуск Visual Studio.
 
-### <a name="downloading-from-your-subscription-service"></a>Загрузка из службы подписки
- Посетите [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) страницы и выберите выпуск Visual Studio, который вы хотите.
+### <a name="downloading-from-your-subscription-service"></a>Скачивание из службы подписки
+ Перейдите на страницу [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) и выберите нужный выпуск Visual Studio.
 
-### <a name="BKMK_Offline"></a> Создание макета автономной установки
- Если у вас нет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] установочного носителя, или не иметь подписку Visual Studio, или вы не хотите установить [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с помощью веб-установщик, можно выполнить «разъединенное» установки путем создания как автономную Макет установки. Дополнительные сведения см. в разделе [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) страницы.
+### <a name="BKMK_Offline"></a>Создание макета автономной установки
+ Если у вас нет установочного носителя [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или у вас нет подписки Visual Studio или вы не хотите устанавливать [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с помощью веб-установщика, можно выполнить «отключенную» установку, создав автономный режим установки. Дополнительные сведения см. на странице [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) .
 
-## <a name="enterprise"></a> Развертывание Visual Studio на предприятии
- Сведения о развертывании [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] по сети, см. в разделе [руководства администратора Visual Studio](../install/visual-studio-administrator-guide.md).
+## <a name="enterprise"></a>Развертывание Visual Studio на предприятии
+ Дополнительные сведения о развертывании [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] по сети см. в разделе [Руководство администратора Visual Studio](../install/visual-studio-administrator-guide.md).
 
-### <a name="BKMK_Virtualized"></a> Установка Visual Studio в виртуализованной среде
+### <a name="BKMK_Virtualized"></a>Установка Visual Studio в виртуализированной среде
  **Проблемы, связанные с видео, при использовании Hyper-V**
 
  В случае использования Windows Server 2008 R2 с Hyper-V и графическим ускорителем, система может работать медленнее, чем обычно.
 
- Дополнительные сведения см. в указанной ниже статье на веб-сайте корпорации Microsoft. [Видео может привести к снижению производительности с Windows Server 2008 и Windows Server 2008 R2 на основе включенной ролью Hyper-V и установленным ускорителем адаптера дисплея](http://go.microsoft.com/fwlink/?LinkID=231084).
+ Более подробную информацию см. на следующей странице веб-сайта Майкрософт: [Видео может снизить производительность на компьютерах с Windows Server 2008 и Windows Server 2008 R2 с включенной ролью Hyper-V и установленным ускорителем адаптера дисплея](https://go.microsoft.com/fwlink/?LinkID=231084).
 
  **Эмуляция устройств с помощью Hyper-V**
 
  При установке Visual Studio 2015 на реальном оборудовании без виртуализации можно выбрать компоненты, обеспечивающие эмуляцию устройств Windows и Android с помощью Hyper-V. При установке в Hyper-V эмуляция устройств Windows или Android недоступна. Это связано с тем, что эмуляторы являются виртуальными машинами сами по себе, а размещать одну виртуальную машину внутри другой на данный момент нельзя. Эту проблему можно решить, развернув и отладив приложение на реальном устройстве Windows или Android.
 
-## <a name="optionalComponents"></a> Установка дополнительных компонентов
- Если вы хотите установить компоненты, которые вы не были выбраны во время исходной установки, используйте следующую процедуру.
+## <a name="optionalComponents"></a>Установка дополнительных компонентов
+ Если вы хотите установить компоненты, которые могут быть не выбраны во время первоначальной установки, выполните следующую процедуру.
 
-#### <a name="to-install-optional-components"></a>Чтобы установить дополнительные компоненты
+#### <a name="to-install-optional-components"></a>Установка дополнительных компонентов
 
 1. На странице **Программы и компоненты** **панели управления** выберите выпуск продукта, в который требуется добавить один или более компонентов, и нажмите кнопку **Изменить**.
 
@@ -140,10 +140,10 @@ ms.locfileid: "63433013"
 
 5. Нажмите кнопку **Обновить**.
 
-   Дополнительные сведения о том, как установить или развернуть автономную справку, см. в разделе [руководство администратора средства просмотра справки](../ide/help-viewer-administrator-guide.md).
+   Дополнительные сведения об установке и развертывании автономной справки см. в разделе [Руководство администратора окна справки](../ide/help-viewer-administrator-guide.md).
 
 ## <a name="serviceReleases"></a> Проверка наличия исправлений и обновлений
- Visual Studio не обновляет расширения автоматически при обновлении с предыдущих версий, так как не все расширения совместимы. Необходимо переустановить расширения из [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или от издателя программного обеспечения.
+ Visual Studio не обновляет расширения автоматически при обновлении с предыдущих версий, так как не все расширения совместимы. Расширения необходимо переустановить из [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или из издателя программного обеспечения.
 
 #### <a name="to-automatically-check-for-service-releases"></a>Автоматическая проверка наличия наборов исправлений
 
@@ -167,32 +167,32 @@ ms.locfileid: "63433013"
 
 2. В мастере установки выберите **Восстановить**, нажмите кнопку **Далее**, а затем следуйте инструкциям.
 
-#### <a name="to-repair-visual-studio-in-silent-or-passive-modes-that-is-to-repair-from-source"></a>Восстановление Visual Studio в автоматическом или в пассивном режиме (то есть для восстановления из источника)
+#### <a name="to-repair-visual-studio-in-silent-or-passive-modes-that-is-to-repair-from-source"></a>Восстановление Visual Studio в режиме молчания или пассивного режима (то есть для восстановления из источника)
 
 1. На компьютере, на котором установлена среда Visual Studio, откройте командную строку Windows.
 
 2. Введите следующие параметры:
 
-     *DVDRoot* \\< файл установки\> \</quiet&#124;/passive > [/ norestart] / Repair
+     *Двдрут* \\< файл установки\> \</quiet&#124;/passive > [/norestart]/Repair
 
-## <a name="troubleshooting"></a> Устранение неполадок при установке
+## <a name="troubleshooting"></a>Устранение неполадок установки
  Используйте следующие ресурсы, чтобы получить помощь в разрешении проблем настройки и установки:
 
-- Форум по[установке и настройке Visual Studio](http://go.microsoft.com/fwlink/?LinkID=151190) . Просмотрите вопросы и ответы от других пользователей сообщества Visual Studio. Если вы не нашли нужную информацию, задайте собственные вопросы.
+- Форум по[установке и настройке Visual Studio](https://go.microsoft.com/fwlink/?LinkID=151190) . Просмотрите вопросы и ответы от других пользователей сообщества Visual Studio. Если вы не нашли нужную информацию, задайте собственные вопросы.
 
-- Веб-сайт[службы поддержки Майкрософт для Visual Studio](http://go.microsoft.com/fwlink/?LinkID=251019) . Прочтите статьи базы знаний (KB) и узнайте, как связаться со службой поддержкой корпорации Майкрософт по вопросам установки Visual Studio.
+- Веб-сайт[службы поддержки Майкрософт для Visual Studio](https://go.microsoft.com/fwlink/?LinkID=251019) . Прочтите статьи базы знаний (KB) и узнайте, как связаться со службой поддержкой корпорации Майкрософт по вопросам установки Visual Studio.
 
 ## <a name="relatedTopics"></a> Связанные разделы
 
-|Заголовок|Описание|
+|Название|Описание|
 |-----------|-----------------|
-|[Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|В этой статье описывается установка Visual Studio, когда вы не подключены к Интернету.
+|[Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Описание установки Visual Studio без подключения к Интернету.
 |[Параллельная установка версий Visual Studio](../install/install-visual-studio-versions-side-by-side.md)|Сведения об установке и использовании нескольких версий Visual Studio на одном компьютере.|
-|[Использование параметров командной строки для установки Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Список параметров командной строки, которые можно использовать при установке Visual Studio из командной строки.|
-|[Удаление Visual Studio](../install/uninstall-visual-studio.md)|В этой статье описывается удаление Visual Studio.|
+|[Использование параметров командной строки для установки Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Выводит список параметров командной строки, которые можно использовать при установке Visual Studio в командной строке.|
+|[Удаление Visual Studio](../install/uninstall-visual-studio.md)|Описание удаления Visual Studio.|
 |[Руководство администратора Visual Studio](../install/visual-studio-administrator-guide.md)|Сведения о вариантах развертывания Visual Studio.|
 |[Библиотека изображений Visual Studio](../designers/the-visual-studio-image-library.md)|Сведения об установке графики, которая может использоваться в приложениях Visual Studio.|
-|[Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)|Содержит сведения и ссылки, которые помогут вам более эффективно использовать Visual Studio.|
+|[Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)|Содержит сведения и ссылки, которые могут помочь в более эффективном использовании Visual Studio.|
 
 ## <a name="see-also"></a>См. также
 

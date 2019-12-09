@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670124"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296874"
 ---
 # <a name="walkthrough-building-an-application"></a>Пошаговое руководство. Построение приложения
 
@@ -22,9 +22,9 @@ ms.locfileid: "72670124"
 
 Выполнив это пошаговое руководство, вы ознакомитесь с несколькими параметрами, которые можно настроить при создании приложений с помощью Visual Studio. Среди прочего, вы создадите настраиваемую конфигурацию сборки, скроете определенные предупреждения и расширите выходные данные о сборке для примера приложения.
 
-В этом разделе содержатся следующие подразделы.
+В этом разделе содержатся следующие подразделы:
 
-[Установка примера приложения](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Установка примера приложения](../ide/walkthrough-building-an-application.md)
 
 [Создание настраиваемой конфигурации сборки](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ ms.locfileid: "72670124"
 
 [Отображение дополнительных сведений о сборке в окне вывода](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Создание сборки выпуска](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> Установка примера приложения
-
-Вы будете использовать диалоговое окно **Расширения и обновления** для поиска и установки примера [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) (Введение в создание приложений WPF) из коллекции примеров на веб-сайте Майкрософт. Коллекция примеров содержит различные примеры проектов и кода, которые можно скачать и посмотреть при планировании и разработке приложений.
+[Создание сборки выпуска](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>Установка примера приложения
 
@@ -68,7 +64,7 @@ ms.locfileid: "72670124"
 
      ![Диалоговое окно "Создание проекта", установленные образцы](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     OR
+     ИЛИ
 
      Назовите решение `IntroWPFvb` для Visual Basic.
 
@@ -206,7 +202,7 @@ ms.locfileid: "72670124"
 
    Дополнительные сведения см. в статье [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a> Создание сборки выпуска
+## <a name="create-a-release-build"></a>Создание сборки выпуска
 
 Вы можете создать версию примера приложения, оптимизированную для поставки. Для сборки выпуска вы указываете, что исполняемый файл копируется в общую сетевую папку перед запуском сборки.
 
@@ -233,9 +229,9 @@ ms.locfileid: "72670124"
 
 6. Постройте приложение.
 
-     ![Команда "построить решение" в меню "сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE — BuildSolution")
+     ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE — BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Указание сборки выпуска для Visual C \#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Указание сборки выпуска для Visual C\#
 
 1. Открывается **Конструктор проектов**.
 
@@ -256,13 +252,13 @@ ms.locfileid: "72670124"
 
 6. Постройте приложение.
 
-    ![Команда "построить решение" в меню "сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE — BuildSolution")
+    ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE — BuildSolution")
 
    Исполняемый файл копируется в указанный сетевой путь. Для него используется путь \\\myserver\builds\\*имя_файла*.exe.
 
    Поздравляем! Вы успешно выполнили это пошаговое руководство.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Сборка проекта (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)

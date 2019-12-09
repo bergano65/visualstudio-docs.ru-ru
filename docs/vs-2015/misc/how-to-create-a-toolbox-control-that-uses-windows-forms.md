@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание элемента управления панели элементов, использующего Windows Forms | Документация Майкрософт
+title: Как создать элемент управления "Панель элементов", использующий Windows Forms | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442925"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300422"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Практическое руководство. Создание элемента управления панели элементов, использующего Windows Forms
 Шаблон элемента управления панели элементов Windows Forms, включенный в [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] , позволяет создавать элементы управления Windows Forms, которые автоматически добавляются в **панель элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания элемента управления **панели элементов** , который можно передавать другим пользователям.  
   
 > [!NOTE]
-> Чтобы узнать, как загрузить пакет SDK для Visual Studio, посетите [Центр по разработке для расширяемости Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) на веб-сайте MSDN.  
+> Чтобы узнать, как загрузить пакет SDK для Visual Studio, посетите [Центр по разработке для расширяемости Visual Studio](https://go.microsoft.com/fwlink/?linkid=121964) на веб-сайте MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Создание элемента управления панели элементов  
  С помощью шаблона элемента управления панели элементов Windows Forms создайте проект, а затем постройте пользовательский интерфейс в конструкторе.  
@@ -87,7 +87,7 @@ ms.locfileid: "63442925"
   
 2. Отправьте VSIX-файл в сеть или на веб-сайт.  
   
-     Если вы отправите файл [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайт, другие пользователи могут использовать **Диспетчер расширений** в Visual Studio для поиска элемента управления и установить его.  
+     При передаче файла на веб-сайт [Visual Studio Marketplace](https://marketplace.visualstudio.com/) другие пользователи могут использовать **Диспетчер расширений** в Visual Studio для нахождения элемента управления и его установки.  
   
 ## <a name="see-also"></a>См. также  
  [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)

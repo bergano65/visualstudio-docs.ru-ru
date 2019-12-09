@@ -15,17 +15,17 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: abcc83a301553ee0c6141502c25903ef2153258b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658491"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298988"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-схемы деятельности: рекомендации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно создавать схемы активности, описывающие бизнес-процесс или программный алгоритм как поток работы, состоящий из ряда действий. Эти действия могут выполняться людьми, программными компонентами или устройствами. Демонстрационные видеоролики см. в статье [запись бизнес-процессов с помощью схем действий](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).
+В Visual Studio можно создавать схемы активности, описывающие бизнес-процесс или программный алгоритм как поток работы, состоящий из ряда действий. Эти действия могут выполняться людьми, программными компонентами или устройствами. Демонстрационные видеоролики см. в статье [запись бизнес-процессов с помощью схем действий](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows).
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -295,11 +295,11 @@ ms.locfileid: "72658491"
 
  Клиент предоставил полные сведения, необходимые для обработки платежа по кредитной карте, в допустимом формате.
 
- Постусловие может выражать отношение между состояниями до и после выполнения действия. Пример:
+ Постусловие может выражать отношение между состояниями до и после выполнения действия. Пример.
 
  процентная ставка удвоилась.
 
- Можно писать постусловия в более формальном стиле, ссылаясь на определенные атрибуты данных, с которыми работают действия. Пример:
+ Можно писать постусловия в более формальном стиле, ссылаясь на определенные атрибуты данных, с которыми работают действия. Пример.
 
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
 
@@ -398,7 +398,7 @@ ms.locfileid: "72658491"
 
 - Добавить комментарий к закреплению ввода или вывода.
 
-  - Чтобы отличить это описание от общего комментария, можно начать комментарий с <**преобразования**\< > > или < \<**выбора**> >.
+  - Чтобы отличить это описание от общего комментария, можно начать комментарий с < **преобразования**\<> > или <\<**выбора**> >.
 
 - Подробно описать преобразование или выбор на отдельной схеме активности.
 
@@ -426,5 +426,5 @@ ms.locfileid: "72658491"
 
    Можно также определить выбор для узла объекта и отдельных закреплений ввода и вывода. Определите действие выбора, как в предыдущей процедуре, а затем задайте свойство **Selection** узла объекта, а также входной или выходной ПИН-код.
 
-## <a name="see-also"></a>См. также раздел
- [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы последовательностей UML. ссылки на](../modeling/uml-sequence-diagrams-reference.md) UML-схемы [компонентов:](../modeling/uml-component-diagrams-reference.md) эталонные схемы [вариантов использования UML](../modeling/uml-use-case-diagrams-reference.md) : справочные схемы [классов](../modeling/uml-class-diagrams-reference.md) UML: Справочник по схемам [компонентов UML: справочные материалы](../modeling/uml-component-diagrams-reference.md) [ Видео. запись бизнес-процессов с помощью схем активности](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
+## <a name="see-also"></a>См. также
+ [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [. схемы последовательностей UML. ссылки на](../modeling/uml-sequence-diagrams-reference.md) UML-схемы [компонентов](../modeling/uml-component-diagrams-reference.md) : эталонные схемы [вариантов использования UML](../modeling/uml-use-case-diagrams-reference.md) : ссылки на схемы [классов](../modeling/uml-class-diagrams-reference.md) UML: Справочник по схемам [компонентов UML](../modeling/uml-component-diagrams-reference.md) : справочное [видео: запись бизнес-процессов с помощью схем активности](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

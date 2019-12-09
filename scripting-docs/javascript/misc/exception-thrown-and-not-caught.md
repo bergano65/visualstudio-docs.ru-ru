@@ -32,7 +32,7 @@ ms.locfileid: "72572854"
   
 - Если исключение создается повторно, убедитесь, что имеется другой соответствующий оператор catch.  
   
-## <a name="see-also"></a>См. также  
- [Объект Error](../../javascript/reference/error-object-javascript.md)    
- [оператор throw](../../javascript/reference/throw-statement-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект Error](../../javascript/reference/error-object-javascript.md)   
+ [оператор throw](../../javascript/reference/throw-statement-javascript.md)   
  [Оператор try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

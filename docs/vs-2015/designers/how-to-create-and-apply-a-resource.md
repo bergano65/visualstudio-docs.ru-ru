@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0570dcc4b3cc79f2c882d5ddd4f10dc79a21332b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ab048fe69ca89086e9811e5277dccb86aeee6194
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664533"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300865"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Практическое руководство. Создание и применение ресурса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Стили и шаблоны элементов в конструкторе XAML хранятся в сущностях, допускающих многократное применение, которые называют ресурсами. Стили позволяют задавать свойства элемента и использовать их повторно для согласованного внешнего вида нескольких элементов. Шаблон [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) определяет внешний вид элемента управления и может также применяться в качестве ресурса. Дополнительные сведения см. в статьях [Краткое руководство: использование стилей для элементов управления (XAML)](http://go.microsoft.com/fwlink/?LinkID=248239) и [Краткое руководство: шаблоны элементов управления (XAML)](http://go.microsoft.com/fwlink/?LinkID=247982).
+Стили и шаблоны элементов в конструкторе XAML хранятся в сущностях, допускающих многократное применение, которые называют ресурсами. Стили позволяют задавать свойства элемента и использовать их повторно для согласованного внешнего вида нескольких элементов. Шаблон [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) определяет внешний вид элемента управления и может также применяться в качестве ресурса. Дополнительные сведения см. в статьях [Краткое руководство: использование стилей для элементов управления (XAML)](https://go.microsoft.com/fwlink/?LinkID=248239) и [Краткое руководство: шаблоны элементов управления (XAML)](https://go.microsoft.com/fwlink/?LinkID=247982).
 
  Когда вы создаете новый ресурс из существующего свойства, [Style](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) или `ControlTemplate`, диалоговое окно **Создание ресурса** позволяет определить ресурс на уровне приложения, документа или элемента. Эти уровни определяют, где можно использовать ресурс. Например, если определить ресурс на уровне элемента, его можно будет применять только к элементу, в котором он создан. Также можно сохранить ресурс в словаре ресурсов, представляющем собой отдельный файл, который можно повторно использовать в другом проекте.
 
@@ -75,5 +75,5 @@ ms.locfileid: "72664533"
 
 3. Измените параметры ресурса.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

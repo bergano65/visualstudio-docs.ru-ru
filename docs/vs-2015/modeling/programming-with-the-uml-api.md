@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b264987818e244cf016e9b54794109cafc548439
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcb179ae80e60654c981da8c76e9a57e6fb8ed66
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652100"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296055"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ API-интерфейс UML Visual Studio позволяет писать код 
 
 |Раздел|Примеры описываемых типов и методов|Описываемые функции|
 |-----------|-----------------------------------------|------------------------|
-|[Переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-элементы, их свойства и ассоциации. Например, IElement и его потомки, включая IClass, IActivity, IUseCase, IComponent, IInteraction, IModel и IPackage.|В Visual Studio модели UML соответствуют спецификации UML версии 2.1.2, которую можно получить на [странице ресурсов UML](http://go.microsoft.com/fwlink/?LinkId=160796). Каждый тип является интерфейсом, имя которого совпадает с именем типа UML с префиксом "I".|
+|[Переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-элементы, их свойства и ассоциации. Например, IElement и его потомки, включая IClass, IActivity, IUseCase, IComponent, IInteraction, IModel и IPackage.|В Visual Studio модели UML соответствуют спецификации UML версии 2.1.2, которую можно получить на [странице ресурсов UML](https://go.microsoft.com/fwlink/?LinkId=160796). Каждый тип является интерфейсом, имя которого совпадает с именем типа UML с префиксом "I".|
 |[Создание элементов и отношений в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Каждый тип элемента имеет методы для создания дочерних элементов.|
 |[Отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Каждый элемент в модели может быть представлен в виде фигуры на схеме. В некоторых случаях можно создавать новые фигуры для каждого объекта. Эти фигуры можно перемещать, сворачивать или разворачивать, а также изменять их размер и цвет.|
 |[Навигация по модели UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Модель хранится в хранилище моделей.<br /><br /> Контекст схемы предоставляет доступ к текущей схеме и хранилищу.|
@@ -68,5 +68,5 @@ API-интерфейс UML Visual Studio позволяет писать код 
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Экспорт и импорт для компонентов MEF](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[Простота управления коллекциями, особенно при работе с связями](../modeling/navigate-relationships-with-the-uml-api.md).|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Справочник по API для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

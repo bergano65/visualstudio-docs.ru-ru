@@ -50,9 +50,9 @@ ms.locfileid: "72578029"
 > [!CAUTION]
 > Структура этого файла, а также синтаксис правил автоматического использования могут изменяться от одного выпуска Visual Studio к другому.  
   
- Отображение машинного типа можно также настроить путем написания надстройки — вычислителя выражений. Дополнительные сведения см. в разделе EEAddIn Sample: Debugging Expression Evaluator Add-In. Дополнительные сведения см. [в разделе Иаддин Sample: отладка надстройки оценщика выражений](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Отображение машинного типа можно также настроить путем написания надстройки — вычислителя выражений. Дополнительные сведения см. в разделе {1}EEAddIn Sample: Debugging Expression Evaluator Add-In{2}. Дополнительные сведения см. [в разделе Иаддин Sample: отладка надстройки оценщика выражений](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
  [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   

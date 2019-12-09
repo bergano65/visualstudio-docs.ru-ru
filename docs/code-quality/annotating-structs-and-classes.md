@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747053"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879260"
 ---
 # <a name="annotating-structs-and-classes"></a>Аннотация структур и классов
 
@@ -45,7 +45,7 @@ ms.locfileid: "72747053"
 
      Поле с записываемым размером в элементах (или байтах), как определено в `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Поле с записываемым размером в элементах (или байтах), как определено в `size` и `count` этих элементов (байт), которые доступны для чтения.
 
@@ -59,7 +59,7 @@ ms.locfileid: "72747053"
 
 - `_Struct_size_bytes_(size)`
 
-     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа с количеством байт, указанным в `size`.  Пример:
+     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа с количеством байт, указанным в `size`.  Например:
 
     ```cpp
 
@@ -81,11 +81,9 @@ ms.locfileid: "72747053"
 
 ```cpp
 #include <sal.h>
-// For FIELD_OFFSET macro
-#include <windows.h>
 
 // This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
-_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+_Struct_size_bytes_(__builtin_offsetof(MyBuffer, buffer) + bufferSize * sizeof(int))
 struct MyBuffer
 {
     static int MaxBufferSize;
@@ -99,8 +97,9 @@ struct MyBuffer
 
     _Field_range_(1, MaxBufferSize)
     int bufferSize;
+    
     _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
-    int buffer[0];
+    int buffer[]; // Using C99 Flexible array member
 };
 ```
 
@@ -110,7 +109,7 @@ struct MyBuffer
 - `_Field_range_` для `bufferSize` указывает, что значение `bufferSize` должно находиться в диапазоне от 1 до `MaxBufferSize` (оба включительно).
 - Конечные результаты `_Struct_size_bytes_` и `_Field_size_` заметок эквивалентны. Для структур или классов с похожим макетом `_Field_size_` проще в чтении и обслуживании, так как он содержит меньше ссылок и вычислений, чем эквивалентная `_Struct_size_bytes_` Аннотация. `_Field_size_` не требует преобразования к размеру в байтах. Если размер Byte является единственным параметром, например для поля указателя void, можно использовать `_Field_size_bytes_`. Если оба `_Struct_size_bytes_` и `_Field_size_` существуют, они будут доступны для средств. Если две аннотации не согласны, это будет сделано с помощью инструмента.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Основные сведения о языке SAL](../code-quality/understanding-sal.md)

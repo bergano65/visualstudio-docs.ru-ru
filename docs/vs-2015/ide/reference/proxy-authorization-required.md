@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665716"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297821"
 ---
 # <a name="proxy-authorization-required"></a>Требуется проверка подлинности на прокси-сервере
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "72665716"
 
 - Перезапустите Visual Studio. Должно появиться диалоговое окно проверки подлинности прокси. Введите в диалоговом окне свои учетные данные.
 
-- Если приведенное выше действие не помогло решить проблему, возможно, прокси-сервер не запрашивает учетные данные для адресов http://go.microsoft.com, но запрашивает для адресов *.visualStudio.com. Для этих серверов необходимо добавить следующие URL-адреса в список разрешений, чтобы разблокировать все сценарии входа в Visual Studio:
+- Если приведенное выше действие не помогло решить проблему, возможно, прокси-сервер не запрашивает учетные данные для адресов https://go.microsoft.com, но запрашивает для адресов *.visualStudio.com. Для этих серверов необходимо добавить следующие URL-адреса в список разрешений, чтобы разблокировать все сценарии входа в Visual Studio:
 
   - *.windows.net
 
   - *.microsoftonline.com
 
-  - *.visualstudio.com
+  - *.visualStudio.com
 
   - *.microsoft.com
 
   - *.live.com
 
-- Вы можете удалить адрес http://go.microsoft.com из списка разрешений, чтобы диалоговое окно проверки подлинности прокси-сервера выпускалось как для адреса http://go.microsoft.com, так и для конечных точек сервера при перезапуске Visual Studio.
+- Вы можете удалить адрес https://go.microsoft.com из списка разрешений, чтобы диалоговое окно проверки подлинности прокси-сервера выпускалось как для адреса https://go.microsoft.com, так и для конечных точек сервера при перезапуске Visual Studio.
 
 - Если вы хотите использовать учетные данные по умолчанию с прокси-сервером, выполните следующие действия.
 
@@ -53,4 +53,4 @@ ms.locfileid: "72665716"
 
       Вставьте правильный прокси-адрес для сети в `proxyaddress="<http://<yourproxy:port#>`.
 
-- Следуйте инструкциям в [этой записи блога](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) , чтобы добавить код, позволяющий использовать прокси-сервер.
+- Следуйте инструкциям в [этой записи блога](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) , чтобы добавить код, позволяющий использовать прокси-сервер.

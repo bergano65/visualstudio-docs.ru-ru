@@ -9,14 +9,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870280"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779887"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
 
@@ -30,9 +31,6 @@ ms.locfileid: "68870280"
 
  Профилировщик Visual Studio позволяет ограничить объем собираемых данных. В этом пошаговом руководстве приведен пример ограничения сбора данных с помощью интерфейсов API профилировщика. Профилировщик Visual Studio предоставляет интерфейс API для управления сбором данных из приложения.
 
- ::: moniker range=">=vs-2019"
- Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK*.  Для 64-разрядных приложений используется папка *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*.
- ::: moniker-end
  ::: moniker range="vs-2017"
  Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Для 64-разрядных приложений используется папка *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
  ::: moniker-end

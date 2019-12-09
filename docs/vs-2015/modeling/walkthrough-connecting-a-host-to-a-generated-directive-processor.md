@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41023f49f1897f3e3d26d7fc57807ea98fa35f24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659298"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301275"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Связывание основного приложения с генерируемым обработчиком директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ ms.locfileid: "72659298"
 
 - Тестирование пользовательского узла с помощью созданного обработчика директив.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Для определения доменного языка необходимо установить следующие компоненты.
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  Кроме того, необходимо создать преобразование пользовательского текстового шаблона, созданное в [разделе Пошаговое руководство. Создание узла пользовательского текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -93,19 +93,19 @@ ms.locfileid: "72659298"
 
      Откроется диалоговое окно **Добавление ссылки** с отображаемой вкладкой **.NET** .
 
-3. Добавьте следующие ссылки:
+3. Добавьте следующие ссылки.
 
-    - Microsoft. VisualStudio. моделирование. SDK. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. моделирование. SDK. схемы. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. interfaces. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. моделирование. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. В верхней части Program.cs или Module1. vb добавьте следующую строку кода:
 
@@ -117,7 +117,7 @@ ms.locfileid: "72659298"
     Imports Microsoft.Win32
     ```
 
-5. Выберите код для свойства `StandardAssemblyReferences` и замените его следующим кодом:
+5. Выберите код для свойства `StandardAssemblyReferences`и замените его следующим кодом:
 
     > [!NOTE]
     > На этом шаге вы добавите ссылки на сборки, необходимые для созданного обработчика директив, который будет поддерживаться вашим узлом.
@@ -153,7 +153,7 @@ ms.locfileid: "72659298"
     }
     ```
 
-6. Выберите код для функции `ResolveDirectiveProcessor` и замените его следующим кодом:
+6. Выберите код для функции `ResolveDirectiveProcessor`и замените его следующим кодом:
 
     > [!IMPORTANT]
     > Этот код содержит жестко запрограммированные ссылки на имя созданного обработчика директив, к которому необходимо подключиться. Вы можете легко сделать это более общим, в этом случае он ищет все процессоры директив, перечисленные в реестре, и пытается найти совпадение. В этом случае узел будет работать с любым созданным обработчиком директив.
@@ -310,7 +310,7 @@ ms.locfileid: "72659298"
     #>
     ```
 
-3. В коде замените \<YOUR PATH > путем к файлу Sample. min из языка, созданного в первой процедуре.
+3. В коде замените \<путь > с путем к примеру файла Sample. min из языка, созданного в первой процедуре.
 
 4. Сохраните и закройте файл.
 
@@ -358,5 +358,5 @@ ms.locfileid: "72659298"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов](../modeling/walkthrough-creating-a-custom-text-template-host.md)

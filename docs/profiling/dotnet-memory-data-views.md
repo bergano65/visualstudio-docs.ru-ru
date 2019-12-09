@@ -9,14 +9,15 @@ ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a866ba73669caba0c8d96647a134123f4ae753
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970048"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779276"
 ---
 # <a name="net-memory-data-views"></a>Представления данных в памяти .NET
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, содержащим данные профилирования памяти .NET.

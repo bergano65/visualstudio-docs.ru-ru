@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Сбор данных счетчиков производительности ЦП | Документация Майкрософт
+title: Практическое руководство. Сбор данных счетчиков производительности ЦП | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,16 +10,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973985"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776375"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Как выполнить Сбор данных счетчиков производительности ЦП
+# <a name="how-to-collect-cpu-counter-data"></a>Практическое руководство. Сбор данных счетчиков производительности ЦП
 
 Счетчик событий ЦП используется для сбора данных о производительности конкретного оборудования. В этой статье демонстрируется сбор данных счетчиков событий при использовании метода профилирования "Инструментирование".
 
@@ -43,7 +44,7 @@ ms.locfileid: "62973985"
 
 - сбор данных из одного или нескольких счетчиков при профилировании путем инструментирования;
 
-- указание события счетчика в качестве интервала выборки при профилировании путем выборки. Дополнительные сведения см. в разделе [Как Выбор событий выборки](../profiling/how-to-choose-sampling-events.md).
+- указание события счетчика в качестве интервала выборки при профилировании путем выборки. Дополнительные сведения см. в разделе [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Сбор данных счетчика производительности ЦП при профилировании путем инструментирования
 

@@ -1,5 +1,5 @@
 ---
-title: Изменить и продолжить ошибок и предупреждений (C#) | Документация Майкрософт
+title: Ошибки и предупреждения для изменения и продолженияC#() | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822966"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299277"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Ошибки и предупреждения режима "Изменить и продолжить" (C#)
 Были внесены изменения в раздел кода, изменение которого не допускается при использовании операции "Изменить и продолжить" языка Visual C#.  
@@ -75,13 +75,13 @@ ms.locfileid: "62822966"
   
  Изменения в объявляющем коде, меняющие общедоступную (public) структуру класса, в общем случае запрещены. Кроме того, не разрешены некоторые виды изменений в теле метода или свойства, а также в объявлениях со спецификатором доступа private в пределах класса. Операция "Изменить и продолжить" по возможности помечает запрещенный к изменению код светло-серым и отображает сообщение об ошибке.  
   
- Дополнительные сведения об изменениях, поддерживаемых операцией "Изменить и продолжить" для [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], см. в разделе [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Если требуются дополнительные сведения о конкретной ошибке или предупреждении, можно поискать ответ или разместить вопрос на [форуме по IDE Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693)на веб-сайте MSDN.  
+ Дополнительные сведения об изменениях, поддерживаемых операцией "Изменить и продолжить" для [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], см. в разделе [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Если требуются дополнительные сведения о конкретной ошибке или предупреждении, можно поискать ответ или разместить вопрос на [форуме по IDE Visual C#](https://go.microsoft.com/fwlink/?LinkId=214693)на веб-сайте MSDN.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
 1. Выберите команду **Отменить** в меню **Отладка** для отмены изменений.  
   
-     -или-  
+     \- или -  
   
 2. Остановите сеанс отладки, внесите изменения и начните новый сеанс отладки.  
   

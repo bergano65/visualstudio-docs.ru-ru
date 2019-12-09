@@ -1,5 +1,5 @@
 ---
-title: С помощью сохраненных данных IntelliTrace | Документация Майкрософт
+title: Использование сохраненных данных IntelliTrace | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891091"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297129"
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "67891091"
   
  Убедитесь в наличии следующих элементов.  
   
-- Совпадающие файлы исходного кода и файлы символов (PDB) для кода приложения. В противном случае Visual Studio не удастся разрешить местоположения исходного кода, и отобразится сообщение "Символы не найдены". См. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) и [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).  
+- Совпадающие файлы исходного кода и файлы символов (PDB) для кода приложения. В противном случае Visual Studio не удастся разрешить местоположения исходного кода, и отобразится сообщение "Символы не найдены". См. раздел [Указание символов (. pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) и [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).  
   
 - Visual Studio Enterprise (не Professional и не Community) на компьютере разработчика или на другом компьютере для открытия ITRACE-файлов  
   
 - ITRACE-файл из одного из следующих источников:  
   
-    |**Источник**|**См. разделы**|  
+    |**Источник**|**См. статью**|  
     |----------------|-------------|  
     |Сеанс IntelliTrace в Visual Studio Enterprise (но не в выпусках Professional или Community)|[Возможности IntelliTrace](../debugger/intellitrace-features.md)|  
     |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -110,11 +110,11 @@ ms.locfileid: "67891091"
   
 3. Разверните этот вызов, чтобы просмотреть все вложенные вызовы и значения параметров, которые были записаны в тот момент времени.  
   
-     (Клавиатура: Для отображения или сворачивания вложенного вызова нажмите клавиши **Стрелка вправо** или **стрелка влево** соответственно. Для отображения и скрытия значений параметров для вложенного вызова нажмите клавишу **Пробел** .)  
+     (Клавиатура: для отображения и сворачивания вложенного вызова нажмите клавишу **Стрелка вправо** или **Стрелка влево** , соответственно. Для отображения и скрытия значений параметров для вложенного вызова нажмите клавишу **Пробел** .)  
   
      Запустите отладку из этого вызова.  
   
-     ![Запуск отладки из вызова метода](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Начать отладку из вызова метода](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      Также можно двойным щелчком открыть вызов или нажать клавишу **Ввод** .  
   
@@ -131,7 +131,7 @@ ms.locfileid: "67891091"
   
 1. В области **Данные исключения**просмотрите записанные события исключения, их типы, сообщения и время возникновения исключений. Чтобы глубже изучить код, начните отладку из последнего события в группе исключений.  
   
-     ![Начало отладки с события исключения](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Начать отладку из события исключения](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      Можно также просто открыть событие двойным щелчком. Если события не сгруппированы, выберите **Отладить это событие**.  
   
@@ -161,13 +161,13 @@ ms.locfileid: "67891091"
   
 1. Скопируйте идентификатор корреляции SharePoint из его источника.  
   
-    Например:  
+    Пример.  
   
-    ![IntelliTrace &#45; ошибку SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![Идентификатор &#45; корреляции &#45; ошибок SharePoint для IntelliTrace](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
 2. Откройте ITRACE-файл, затем перейдите в меню **Анализ** и введите идентификатор корреляции SharePoint для просмотра соответствующего веб-запроса и записанных событий.  
   
-    ![Журнал IntelliTrace &#45; введите Корреляционный идентификатор SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![Журнал &#45; INTELLITRACE введите идентификатор корреляции SharePoint](../debugger/media/entersharepointcorrelationid.png "ентершарепоинткоррелатионид")  
   
 3. Просмотрите события в разделе **События запроса**. События отображаются сверху вниз в порядке, в котором они произошли.  
   
@@ -175,7 +175,7 @@ ms.locfileid: "67891091"
   
    2. Выберите **Начать отладку** , чтобы начать отладку в точке, где произошло событие.  
   
-      ![Файл журнала IntelliTrace &#45; просмотр веб-запросов &#43; события](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![События веб- &#45; запроса &#43; представления файла журнала IntelliTrace](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
    Можно просмотреть эти типы событий SharePoint вместе с событиями IntelliTrace:  
   
@@ -194,7 +194,7 @@ ms.locfileid: "67891091"
     |**Идентификатор категории**|**Идентификатор категории**|  
     |**Категория**|**Категория**|  
     |**Область**|**Продукт**|  
-    |**Вывод**|**Сообщение**|  
+    |**Output**|**Сообщение**|  
     |**Идентификатор корреляции**|**Идентификатор корреляции**|  
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Запуск отладки из необработанного исключения  
@@ -205,9 +205,9 @@ ms.locfileid: "67891091"
   
 3. Выберите **Исключение отладки** , чтобы начать отладку в точке и в момент возникновения исключения.  
   
-    ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![Журнал &#45; IntelliTrace — необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Пошаговое руководство, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
+   Пошаговое руководство см. в разделе [Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Сведения о типах данных, которые регистрируются агентом, см. в разделе [функции IntelliTrace](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Список потоков  
  Изучите записанные потоки, которые работали в целевом процессе. Можно начать отладку с первого допустимого события IntelliTrace в выделенном потоке.  
@@ -218,14 +218,14 @@ ms.locfileid: "67891091"
   
 2. В нижней части раздела **Список потоков**выберите **Начать отладку**. Можно также выбрать поток двойным щелчком.  
   
-    Чтобы начать отладку из места начала приложения, двойным щелчком выберите **Основной поток**. См. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
+    Чтобы начать отладку из места начала приложения, двойным щелчком выберите **Основной поток**. См. раздел [функции IntelliTrace](../debugger/intellitrace-features.md).  
   
    Данные потока, созданного пользователем, могут быть более полезными, чем потоки, создаваемые и управляемые сервером для размещенных в IIS веб-приложений.  
   
 |**Столбец**|**Отображает**|  
 |----------------|-------------------|  
-|**ID**|Идентификационный номер потока|  
-|**Name**|Имя потока. Безымянные потоки отображаются как "\<No Name>".|  
+|**Идентификатор**|Идентификационный номер потока|  
+|**Имя**|Имя потока. Безымянные потоки отображаются как "\<No Name>".|  
 |**Время начала**|Время создания потока|  
 |**Время окончания**|Время завершения выполнения потока|  
   
@@ -270,7 +270,7 @@ ms.locfileid: "67891091"
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Форумы  
- [Отладчик Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Отладчик Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 – Chapter 6: Набор инструментов тестирования](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Тестирование при непрерывной доставке с использованием Visual Studio 2012, глава 6, "Средства тестирования"](https://go.microsoft.com/fwlink/?LinkID=255203)

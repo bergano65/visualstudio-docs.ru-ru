@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669347"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297455"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Средства XML в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +49,15 @@ ms.locfileid: "72669347"
 
  XML лежит в основе многих возможностей [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. В следующем разделе перечислены средства и возможности, связанныe с XML, которые доступны в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- Дополнительные сведения см. в [центре разработчиков XML](http://go.microsoft.com/fwlink/?LinkID=100176), который содержит последнюю документацию, технические сведения, файлы для загрузки, группы новостей и другие ресурсы для разработчиков XML.
+ Дополнительные сведения см. в [центре разработчиков XML](https://go.microsoft.com/fwlink/?LinkID=100176), который содержит последнюю документацию, технические сведения, файлы для загрузки, группы новостей и другие ресурсы для разработчиков XML.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
  [Работа с XML-данными](../xml-tools/working-with-xml-data.md) Обсуждается роль XML в способе обработки данных в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
  [Отладка XSLT](../xml-tools/debugging-xslt.md) Содержит ссылки на разделы, посвященные использованию отладчика Visual Studio для отладки XSLT.
 
-## <a name="reference"></a>Справочник
- [Microsoft. VisualStudio. XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) предоставляет дерево синтаксического анализа [XML-редактора](http://go.microsoft.com/fwlink/?LinkId=228249) через [System. XML. LINQ](http://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
+## <a name="reference"></a>Справочные сведения
+ [Microsoft. VisualStudio. XmlEditor](https://go.microsoft.com/fwlink/?LinkID=165699) предоставляет дерево синтаксического анализа [XML-редактора](https://go.microsoft.com/fwlink/?LinkId=228249) через [System. XML. LINQ](https://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
 
  [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Предоставляет сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
 

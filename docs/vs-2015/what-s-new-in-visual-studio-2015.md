@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 469405515b7cc0ebe615dc821ebfa5ddb7258468
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672085"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538988"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Новые возможности Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "72672085"
 
 На этой странице выделены некоторые наиболее важные возможности, которые впервые появились в Visual Studio 2013 RTM, включая функции, которые были впервые реализованы в одном из обновлений Visual Studio 2013. Полный список новых возможностей Visual Studio 2015 см. в [заметках о выпуске](https://www.visualstudio.com/news/vs2015-vs).
 
-Дополнительные сведения о многочисленных улучшениях и новых возможностях Visual Studio ALM см. в статье [новые возможности для TFS 2015](/tfs/server/whats-new?view=vsts#tfs-2015-rtm).
+Дополнительные сведения о многочисленных улучшениях и новых возможностях Visual Studio ALM см. в статье [новые возможности для TFS 2015](/azure/devops/server/whats-new#tfs-2015).
 
 ## <a name="a-new-setup-experience"></a>Новые возможности установки
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "72672085"
  Используйте C#, Visual Basic, C++ или JavaScript для создания этих [универсальных приложений Windows](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Интернет
- ASP.NET 5 представляет собой главное обновление для MVC, WebAPI и SignalR, и выполняется на платформах Windows, Mac и Linux.  Платформа ASP.NET 5 была разработана с нуля для предоставления компактного, компонуемого стека .NET с целью создания современных облачных приложений. Набор инструментов Visual Studio 2015 более тесно интегрирован с популярными инструментами веб-разработки, например Bower и Grunt. Описание начала работы см. в записях блога  [Веб-разработка и инструменты NET](http://blogs.msdn.com/b/webdev/).
+ ASP.NET 5 представляет собой существенное обновление для MVC, WebAPI и SignalR, которое работает на платформах Windows, Mac и Linux.  Платформа ASP.NET 5 была разработана с нуля для предоставления компактного, компонуемого стека .NET с целью создания современных облачных приложений. Набор инструментов Visual Studio 2015 более тесно интегрирован с популярными инструментами веб-разработки, например Bower и Grunt. Описание начала работы см. в записях блога  [Веб-разработка и инструменты NET](https://devblogs.microsoft.com/aspnet/).
 
 ### <a name="classic-desktop-and-windows-store"></a>Классические приложения и магазин Windows
  Visual Studio 2015 продолжает поддерживать разработку классических приложений и приложений Магазина Windows. Visual Studio, по мере развития ОС Windows, также развивается вместе с ней.  В Visual Studio 2015 библиотеки и языки платформы .NET, а также язык C++, подверглись значительным усовершенствованиям, которые применимы ко всем версиям Windows.
@@ -87,12 +87,12 @@ ms.locfileid: "72672085"
 
  Языки C# и Visual Basic содержат множество небольших усовершенствований, которые касаются базового языка и поддержки IDE. Эти усовершенствования делают процесс написания кода .NET еще более интуитивным, удобным и продуктивным.
 
- Дополнительные сведения см. в разделе [новые возможности](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) и [блог .NET](http://blogs.msdn.com/b/dotnet/).
+ Дополнительные сведения см. в разделе [новые возможности](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) и [блог .NET](https://devblogs.microsoft.com/dotnet/).
 
 #### <a name="c"></a>C++
  Visual C++ обеспечивает значительные усовершенствования в согласованности языка C++11/14, поддержку разработки кроссплатформенных приложений для мобильных устройств, поддержку возобновляемых функций и ожидания (в настоящее время запланировано для стандартизации в C++17), реализацию усовершенствований и исправлений ошибок в библиотеке времени выполнения C (CRT) и в стандартной библиотеке C++ (STL), возможность изменения размеров диалоговых окон в MFC, новый оптимизированный компилятор, улучшенную производительность сборки, новые возможности диагностики и новые инструменты производительности в редакторе кода.
 
- Дополнительные сведения см. в статье [новые возможности визуального C++ ](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) элемента и [ C++ визуального блога](http://blogs.msdn.com/b/vcblog/).
+ Дополнительные сведения см. в статье [новые возможности визуального C++ ](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) элемента и [ C++ визуального блога](https://devblogs.microsoft.com/cppblog/).
 
 ## <a name="device-preview-menu-bar"></a>Строка меню предварительного просмотра устройств
  В проектах универсальной платформы Windows строка меню предварительного просмотра устройств позволяет просматривать отрисовку пользовательского интерфейса на основе XAML на экранах различных размеров.
@@ -121,7 +121,7 @@ ms.locfileid: "72672085"
  Возможности Blend для разработки интерфейсов пользователя XAML были значительно расширены. Blend был полностью переделан и теперь содержит более понятный пользовательский интерфейс, более эффективные возможности редактирования XAML, включая IntelliSense, кроме того, он лучше интегрирован с Visual Studio. Дополнительные сведения см. в разделе [Разработка XAML в Visual Studio и Blend для Visual Studio](./designers/designing-xaml-in-visual-studio.md).
 
 ## <a name="cross-platform-debugging-support"></a>Поддержка отладки кросс-платформенных приложений
- Visual Studio можно использовать для создания и отладки встроенных мобильных приложений, выполняемых на устройствах Windows, iOS и Android. Используйте [эмулятор Visual Studio для Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)или подключите устройство и выполните отладку кода непосредственно в Visual Studio.
+ Visual Studio можно использовать для создания и отладки встроенных мобильных приложений, выполняемых на устройствах Windows, iOS и Android. Используйте [эмулятор Visual Studio для Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)или подключите устройство и выполните отладку кода непосредственно в Visual Studio.
 
 - **JavaScript / Cordova**. Используйте [средства Visual Studio для Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) для создания собственных приложений для Windows, iOS и Android с использованием JavaScript.
 
@@ -129,7 +129,7 @@ ms.locfileid: "72672085"
 
 - **C# / Xamarin**. Воспользуйтесь [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) для создания собственных приложений для Windows, iOS и Android в Visual Studio с помощью C#.
 
-     В разделах[Отладка](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) и [Отладка на устройстве](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/)  [руководств для разработчиков Xamarin](http://developer.xamarin.com/guides) описываются практические принципы отладки.
+     В разделах[Отладка](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) и [Отладка на устройстве](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows)  [руководств для разработчиков Xamarin](https://docs.microsoft.com/xamarin/) описываются практические принципы отладки.
 
 - **C++ / Android**. Используйте шаблоны [Visual C++ для разработки кроссплатформенных мобильных приложений](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) вместе со сторонними средствами, например [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , для создания собственных приложений для Windows и Android.
 
@@ -140,13 +140,13 @@ ms.locfileid: "72672085"
 Ниже перечислены новые и улучшенные инструменты, выполняющие различные виды диагностики и анализа кода:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips отображают время выполнения методов во время отладки, позволяя быстро определять узкие места без вызова профилировщика. Описание начала работы см. в записи блога [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).
+ PerfTips отображают время выполнения методов во время отладки, позволяя быстро определять узкие места без вызова профилировщика. Описание начала работы см. в записи блога [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).
 
 ### <a name="error-list"></a>Список ошибок
  В списке ошибок теперь можно выполнять фильтрацию в любом столбце. Он также обеспечивает динамическое представление ошибок, предупреждений и анализа кода в рамках всего решения C# или Visual Basic прямо при вводе кода, даже когда при изменении кода поступают тысячи предупреждений. Новый список ошибок обратно совместим с существующими списками. Для получения дополнительной информации см. [Error List Window](./ide/reference/error-list-window.md).
 
 ### <a name="gpu-usage-tool"></a>Инструмент обработки данных об использовании GPU
- Инструмент обработки данных об использовании позволяет собирать и анализировать данные об использовании GPU в приложениях и играх DirectX, а также определять, возникает ли ограничение производительности в ЦП или GPU. Описание начала работы с инструментом см. в [блоге команды разработчиков Visual C++](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx).
+ Инструмент обработки данных об использовании позволяет собирать и анализировать данные об использовании GPU в приложениях и играх DirectX, а также определять, возникает ли ограничение производительности в ЦП или GPU. Описание начала работы с инструментом см. в [блоге команды разработчиков Visual C++](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/).
 
 ## <a name="live-code-analysis-light-bulbs"></a>Динамический анализ кода (лампочки)
  Новый компилятор Roslyn для C# и Visual Basic не только быстрее компилирует, но также позволяет использовать полностью новые сценарии, такие как динамический анализ кода, который предоставляет подробный и настраиваемый отзыв и предложения непосредственно в редакторе кода по мере ввода данных. В Visual Studio 2015 лампочки отображаются в левой части (при использовании клавиатуры) или во всплывающей подсказке (при наведении указателя мыши на ошибку). Лампочка сообщает в режиме реального времени, что компилятор (возможно, использующий настраиваемый набор правил) обнаружил проблему в коде и предлагает вариант ее решения. Если вы видите лампочку, щелкните ее для получения предложений, требующих действий.

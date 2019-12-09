@@ -36,9 +36,9 @@ ms.locfileid: "72572938"
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [условной компиляции](../../javascript/advanced/conditional-compilation-javascript.md)  
- [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
- [@cc_on   инструкции](../../javascript/reference/at-cc-on-statement-javascript.md)  
- [@if   инструкции](../../javascript/reference/at-if-statement-javascript.md)  
+## <a name="see-also"></a>См. также:  
+   [условной компиляции](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
+ [@cc_on  инструкции](../../javascript/reference/at-cc-on-statement-javascript.md)  
+ [@if  инструкции](../../javascript/reference/at-if-statement-javascript.md)  
  [@set Оператор](../../javascript/reference/at-set-statement-javascript.md)

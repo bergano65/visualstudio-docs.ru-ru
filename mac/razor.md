@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962928"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715876"
 ---
 # <a name="create-razor-web-apps"></a>Создание веб-приложений Razor
 
-Из этого руководства вы узнаете, как создать свое первое веб-приложение Razor. Более подробные инструкции см. в статье [Введение в Razor Pages в ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
+Из этого руководства вы узнаете, как создать свое первое веб-приложение Razor. Более подробные инструкции см. в статье [Введение в Razor Pages в ASP.NET Core](/aspnet/core/razor-pages/index).
 
 Visual Studio для Mac поддерживает редактирование Razor, включая IntelliSense и выделение синтаксиса в файлах *.cshtml*. Начиная с Visual Studio 2019 для Mac версии 8.3 появилась возможность использовать IntelliSense с учетом контекста в файле Razor, что позволяет получать предложения IntelliSense для текущего языка документа.
 
@@ -36,7 +36,7 @@ Visual Studio для Mac поддерживает редактирование R
    Visual Studio для Mac откроет проект в окне макета с кодом.
 1. Выполните проект без отладки с помощью клавиш **COMMAND+OPTION+F5**.
 
-   Visual Studio запустит [Kestral](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), откроет в браузере адрес `https://localhost:5001` и отобразит ваше первое веб-приложение Razor.
+   Visual Studio запустит [Kestral](/aspnet/core/fundamentals/servers/kestrel), откроет в браузере адрес `https://localhost:5001` и отобразит ваше первое веб-приложение Razor.
 
    ![Веб-приложение Razor в Safari](media/razor-webapp.png)
 
@@ -50,7 +50,7 @@ Visual Studio для Mac поддерживает редактирование R
    - Файл *\*.cshtml* для разметки HTML и синтаксиса Razor.
    - Файл *\*.cshtml.cs* для кода программной части на C#, который обрабатывает события страниц.
 
-Имена вспомогательных файлов начинаются с символа подчеркивания. Например, файл _Layout.cshtml настраивает элементы пользовательского интерфейса, общие для всех страниц. Этот файл настраивает меню навигации в верхней части страницы и уведомление об авторских правах в нижней. Подробные сведения см. в статье [Макет в ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
+Имена вспомогательных файлов начинаются с символа подчеркивания. Например, файл _Layout.cshtml настраивает элементы пользовательского интерфейса, общие для всех страниц. Этот файл настраивает меню навигации в верхней части страницы и уведомление об авторских правах в нижней. Подробные сведения см. в статье [Макет в ASP.NET Core](/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Параметры запуска
 
@@ -60,20 +60,20 @@ Visual Studio для Mac поддерживает редактирование R
 
 Файл *appSettings.json* содержит данные конфигурации, например строки подключения.
 
-Дополнительные сведения о конфигурации см. в статье [Конфигурация в ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index).
+Дополнительные сведения о конфигурации см. в статье [Конфигурация в ASP.NET](/aspnet/core/fundamentals/configuration/index).
 
 ### <a name="wwwroot-folder"></a>Папка wwwroot
 
-Эта папка содержит статические файлы, такие как HTML-файлы, файлы JavaScript и CSS-файлы. Подробные сведения см. в статье [Статические файлы в ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files).
+Эта папка содержит статические файлы, такие как HTML-файлы, файлы JavaScript и CSS-файлы. Подробные сведения см. в статье [Статические файлы в ASP.NET Core](/aspnet/core/fundamentals/static-files).
 
 ### <a name="programcs"></a>Program.cs
 
-Этот файл содержит точку входа для программы. Подробные сведения см. в статье [Веб-узел ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host).
+Этот файл содержит точку входа для программы. Подробные сведения см. в статье [Веб-узел ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="startupcs"></a>Startup.cs
 
-Этот файл содержит код, который настраивает поведение приложения, например требуется ли согласие для файлов cookie. Подробные сведения см. в статье [Запуск приложения в ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup).
+Этот файл содержит код, который настраивает поведение приложения, например требуется ли согласие для файлов cookie. Подробные сведения см. в статье [Запуск приложения в ASP.NET Core](/aspnet/core/fundamentals/startup).
 
 ## <a name="see-also"></a>См. также
 
-Подробное руководство по созданию веб-приложений Razor см. в статье [Введение в Razor Pages в ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
+Подробное руководство по созданию веб-приложений Razor см. в статье [Введение в Razor Pages в ASP.NET Core](/aspnet/core/razor-pages/index).

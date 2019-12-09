@@ -42,13 +42,13 @@ HRESULT RemoveGlobalExpressionContextProvider(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Метод `RemoveGlobalExpressionContextProvider` удаляет из этого приложения поставщик контекста глобального выражения.  
   
-## <a name="see-also"></a>См. также  
- [IDebugApplication:: аддглобалекспрессионконтекстпровидер](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)    
+## <a name="see-also"></a>См. также:  
+ [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

@@ -46,11 +46,11 @@ HRESULT HandleBreakPoint(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Языковой механизм вызывает этот метод в контексте потока, который достигает точки останова. Этот метод блокирует текущий поток и отправляет уведомление точки останова в интегрированную среду разработки отладчика. Когда отладчик возобновляет работу приложения, параметр `pbra` указывает, какое действие следует выполнить.  
   
 > [!NOTE]
@@ -58,8 +58,8 @@ HRESULT HandleBreakPoint(
   
  Этот метод вызывает `IApplicationDebugger::onHandleBreakPoint`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
- [Иаппликатиондебугжер:: онхандлебреакпоинт](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)    
- @No__t_1 [перечисления бреакреасон](../../winscript/reference/breakreason-enumeration.md)  
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [Иаппликатиондебугжер:: онхандлебреакпоинт](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
+   [перечисления бреакреасон](../../winscript/reference/breakreason-enumeration.md)  
  [Перечисление BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)

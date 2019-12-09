@@ -6,14 +6,15 @@ ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a409a4fe4ffe843df536e3c9e17a3a5a3b6560db
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: 1cbabcf86afa9770f1616c7e4e508af1c9afa1ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322497"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779861"
 ---
 # <a name="waitstart"></a>WaitStart
 Благодаря параметру WaitStart подкоманда *VSPerfCmd.exe* Start возвращается только после инициализации профилировщика или через указанное число секунд. По умолчанию команда Start возвращается немедленно. Если подкоманда Start возвращается без инициализации профилировщика, возвращается ошибка. Если не указано число секунд, команда Start ожидает неограниченное время.

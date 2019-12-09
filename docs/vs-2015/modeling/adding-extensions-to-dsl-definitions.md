@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 447001a8aefa22fe15bce9158eddeb0cdb26e4e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654720"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292150"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Добавление расширений в определения доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "72654720"
 
   Пользователь расширенного DSL может создать и сохранить модель, содержащую экземпляры дополнительных компонентов, и они могут быть прочитаны другими пользователями, которые установили соответствующее расширение. Пользователи, которые не установили расширение, не могут использовать дополнительные функции, но могут обновлять и сохранять модель без потери дополнительных функций.
 
-  Пример кода и дополнительные сведения об этой функции см. на веб-сайте [SDK визуализации и моделирования Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186128) .
+  Пример кода и дополнительные сведения об этой функции см. на веб-сайте [SDK визуализации и моделирования Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128) .
 
-## <a name="see-also"></a>См. также раздел
- [Пакет SDK визуализации и моделирования Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>См. также
+ [Пакет SDK визуализации и моделирования Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128)

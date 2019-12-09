@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c09c4588bb1fcd0aa7487a6896d2fc286253e198
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606778"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302793"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Использование конструктора рабочих процессов для прежних версий
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, входящий в состав [!INCLUDE[vs2010](../includes/vs2010-md.md)], можно использовать для приложений, работающих с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -27,7 +27,7 @@ ms.locfileid: "72606778"
 
  В следующей таблице перечислены основные возможности [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для Windows Workflow Foundation.
 
-|Возможность|Описание|
+|Возможности|Описание|
 |-------------|-----------------|
 |Действие перетаскивания|Перетащите действия из **области элементов** в область конструктора, чтобы создать рабочий процесс.|
 |обозреватель свойств|Окно стандартные **Свойства** в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] используется для настройки свойств действия.|
@@ -36,7 +36,7 @@ ms.locfileid: "72606778"
 |Автоматическая прокрутка|Возможно, если рабочий процесс очень большой, возникнет необходимость разместить действие за границами видимой области рабочей области конструктора. С помощь расширений [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно перенести действие непосредственно к границе рабочей области конструктора, за которую необходимо поместить действие. Представление рабочей области конструктора автоматически прокручивается в этом направлении.|
 |Смарт-теги|Действия, которые настроены не полностью или с ошибками, помечаются значком с восклицательным знаком. Можно щелкнуть этот значок и просмотреть в раскрывающемся списке ошибки конфигурации, которые существуют в действии. Затем можно использовать окно **Свойства** для настройки действия соответствующим образом. После того, как все свойства действия настроены правильно, значок в виде восклицательного знака исчезает.|
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
  [Окна рабочих процессов в Visual Studio (для прежних версий)](../workflow-designer/visual-studio-workflow-windows-legacy.md)
 
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)
@@ -53,5 +53,5 @@ ms.locfileid: "72606778"
 
  [Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
-## <a name="see-also"></a>См. также раздел
- [Разработка рабочих процессов](http://go.microsoft.com/fwlink?LinkID=65010)
+## <a name="see-also"></a>См. также
+ [Разработка рабочих процессов](https://go.microsoft.com/fwlink?LinkID=65010)

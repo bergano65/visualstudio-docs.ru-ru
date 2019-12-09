@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821238"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778093"
 ---
 # <a name="understand-performance-collection-methods"></a>Общие сведения о методах сбора данных о производительности
 
@@ -25,7 +26,7 @@ ms.locfileid: "62821238"
 > [!NOTE]
 > Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Метод|Описание|
+|Метод|ОПИСАНИЕ|
 |------------|-----------------|
 |[Выборка](#sampling)|Собирает статистические данные по работе, выполненной приложением.|
 |[Инструментирование](#instrumentation)|Собирает подробные сведения о времени для каждого вызова функции.|
@@ -121,7 +122,7 @@ ms.locfileid: "62821238"
 
 При профилировании уровневого взаимодействия в файл данных профилирования добавляются сведения о синхронных вызовах [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] между страницей [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] или другим приложением и базой данных [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]. Данные включают в себя количество времени, затрачиваемого на вызовы, а также максимальное и минимальное время. Данные уровневого взаимодействия можно добавлять в данные профилирования, собранные с помощью методов выборки, инструментирования, памяти .NET или параллелизма.
 
-![Данные профиля взаимодействия уровней](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Данные профилирования уровневого взаимодействия](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 Данные уровневого взаимодействия, собранные средствами профилирования
 

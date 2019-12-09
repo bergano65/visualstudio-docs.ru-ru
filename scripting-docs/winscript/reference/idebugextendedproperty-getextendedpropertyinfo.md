@@ -39,7 +39,7 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>Параметры  
  `dwFieldSpec`  
- окне Указывает константы EX_DBGPROP_INFO_FLAGS, которые определяют поля, которые должны быть заполнены в структуре `ExtendedDebugPropertyInfo`.  
+ окне Задает EX_DBGPROP_INFO_FLAGS константы, определяющие поля, которые должны быть заполнены в структуре `ExtendedDebugPropertyInfo`.  
   
  `nRadix`  
  окне Основание системы счисления, используемое для интерпретации любой числовой информации.  
@@ -50,7 +50,7 @@ HRESULT GetExtendedPropertyInfo(
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса идебужекстендедпроперти](../../winscript/reference/idebugextendedproperty-interface.md)  
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса идебужекстендедпроперти](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
  [Структура ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

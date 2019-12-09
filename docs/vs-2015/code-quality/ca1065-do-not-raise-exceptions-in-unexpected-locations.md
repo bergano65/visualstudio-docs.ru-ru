@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663602"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295944"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: не вызывайте исключения в непредвиденных местах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,20 +89,20 @@ ms.locfileid: "72663602"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [м:иекуатабле.екуалс](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [м:иекуатабле.екуалс](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  Метод **Equals** должен возвращать `true` или `false` вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен просто вернуть `false` вместо создания <xref:System.ArgumentException>.
+  Метод **Equals** должен возвращать `true` или `false` вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен просто возвращать `false` вместо создания <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Методы GetHashCode
  Следующие методы **GetHashCode** обычно должны не создавать исключения:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [М:иекуалитикомпарер.жесашкоде (T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [М:иекуалитикомпарер.жесашкоде (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** всегда должен возвращать значение. В противном случае можно потерять элементы в хэш-таблице.
 
-  Версии **GetHashCode** , принимающие аргумент, могут вызывать исключение <xref:System.ArgumentException>. Однако **Object. GetHashCode** никогда не должен вызывать исключение.
+  Версии **GetHashCode** , которые принимают аргумент, могут вызывать <xref:System.ArgumentException>. Однако **Object. GetHashCode** никогда не должен вызывать исключение.
 
 ### <a name="tostring-methods"></a>Методы ToString
  Отладчик использует <xref:System.Object.ToString%2A?displayProperty=fullName> для просмотра сведений об объектах в строковом формате. Таким образом, **метод ToString** не должен изменять состояние объекта и не должен вызывать исключения.
@@ -135,5 +135,5 @@ ms.locfileid: "72663602"
 ## <a name="related-rules"></a>Связанные правила
  [CA2219: не создавайте исключения в предложениях исключений](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Предупреждения конструктора](../code-quality/design-warnings.md)

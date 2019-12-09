@@ -52,7 +52,7 @@ HRESULT SetProperty(
   
  Значения, разрешенные для `dwProperty`, описаны в следующей таблице.  
   
-|Константа|значения|Смысл|  
+|постоянное значение.|Значение|Значение|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|Принудительное разделение обработчиком скриптов в режиме целых чисел вместо режима с плавающей точкой. Значение по умолчанию — `False`.|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Позволяет заменить функцию сравнения строк обработчика скриптов.|  
@@ -62,21 +62,21 @@ HRESULT SetProperty(
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|Возвращаемое значение|Смысл|  
+|Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Выполнено.|  
 |`E_INVALIDARG`|Аргумент является недопустимым.|  
 |`E_UNEXPECTED`|Вызов не ожидался (например, обработчик скриптов еще не загружен или не инициализирован).|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Чтобы включить или отключить целочисленное деление, вызовите `SetProperty` и преобразуйте `Boolean` в `Object`. По умолчанию значение свойства равно `False`. Если задать для него значение `True`, операции деления будут возвращать только целые числа.  
   
  Чтобы включить или отключить пользовательское сравнение строк, вызовите `SetProperty` и передайте значение `Object`. Объект, передаваемый в, должен реализовывать [интерфейс IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)интерфейса. Метод [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) интерфейса [IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md) вызывается каждый раз при выполнении функции сравнения строк.  
   
- Чтобы выбрать набор языковых функций, которые должны поддерживаться при инициализации обработчика [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] скриптов, вызовите `SetProperty` и передайте значение, соответствующее набору функций языка, который должен быть включен для SCRIPTPROP_INVOKEVERSIONING. Если это свойство имеет значение 1 (SCRIPTLANGUAGEVERSION_5_7), доступные языковые функции будут такими же, как и в версии 5,7 обработчика сценариев [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Если задано значение 2 (SCRIPTLANGUAGEVERSION_5_8), доступны возможности языка, которые появились в версии 5,7 наряду с новыми функциями, добавленными в версии 5,8. По умолчанию это свойство имеет значение 0 (SCRIPTLANGUAGEVERSION_DEFAULT), которое эквивалентно набору функций языка, который появился в версии 5,7, если узел не поддерживает другое поведение по умолчанию. Например, Internet Explorer 8 перемещается в функции языка [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], которые поддерживаются обработчиком скриптов версии 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] по умолчанию, если режим документов по умолчанию для Internet Explorer 8 — режим "Internet Explorer 8 Standards". Переключение режима документов Internet Explorer 8 на режим "Стандартный" или "неограниченный" Internet Explorer 7 приводит к сбросу обработчика сценариев [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] для поддержки только набора функций языка, существовавшего в обработчике сценариев версии 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+ Чтобы выбрать набор языковых функций, которые должны поддерживаться при инициализации обработчика [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] скриптов, вызовите `SetProperty` и передайте значение, соответствующее набору функций языка, который должен быть включен для SCRIPTPROP_INVOKEVERSIONING. Если это свойство имеет значение 1 (SCRIPTLANGUAGEVERSION_5_7), доступные языковые функции будут такими же, как и в версии 5,7 обработчика сценариев [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Если задано значение 2 (SCRIPTLANGUAGEVERSION_5_8), доступны языковые функции, которые появились в версии 5,7 наряду с новыми функциями, добавленными в версии 5,8. По умолчанию это свойство имеет значение 0 (SCRIPTLANGUAGEVERSION_DEFAULT), которое эквивалентно набору функций языка, который появился в версии 5,7, если узел не поддерживает другое поведение по умолчанию. Например, Internet Explorer 8 перемещается в функции языка [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], которые поддерживаются обработчиком скриптов версии 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] по умолчанию, если режим документов по умолчанию для Internet Explorer 8 — режим "Internet Explorer 8 Standards". Переключение режима документов Internet Explorer 8 на режим "Стандартный" или "неограниченный" Internet Explorer 7 приводит к сбросу обработчика сценариев [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] для поддержки только набора функций языка, существовавшего в обработчике сценариев версии 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 > [!NOTE]
-> SCRIPTPROP_INVOKEVERSIONING следует устанавливать только при инициализации обработчика сценариев [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+> SCRIPTPROP_INVOKEVERSIONING должны быть заданы только при инициализации обработчика сценариев [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как заставить обработчик скриптов использовать деление целых чисел и как разрешить перегрузку функции Compare.  
@@ -100,7 +100,7 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
     System.IntPtr.Zero, ref vtStrCmpInstance);  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Определение   совместимости документов](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  
- [Иактивескриптпроперти](../../winscript/reference/iactivescriptproperty.md)    
+## <a name="see-also"></a>См. также:  
+ [Определение  совместимости документов](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  
+ [Иактивескриптпроперти](../../winscript/reference/iactivescriptproperty.md)   
  [Сведения о версии](../../javascript/reference/javascript-version-information.md)

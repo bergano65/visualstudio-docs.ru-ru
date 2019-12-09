@@ -35,6 +35,6 @@ var x = example();           // Try and call example as if it were a function.
   
 - Убедитесь, что для вызова функций используется оператор вызова функции `()`.  
   
-## <a name="see-also"></a>См. также  
- [Объект функции](../../javascript/reference/function-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект функции](../../javascript/reference/function-object-javascript.md)   
  [Свойство prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание условия декларативного правила (устаревшее) | Документация Майкрософт
+title: Как создать условие декларативного правила (устаревшее) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,31 +13,31 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a15aad987e46edb58da3560828c70571df2227
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663413"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297492"
 ---
-# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Практическое руководство. Создание условия декларативного правила (для прежних версий)
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Как создать условие декларативного правила (для прежних версий)
 В этом разделе описывается объявление условия правила с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Оператор Condition принимает **значение true** или **false**. Условие декларативного правила — это оператор условия, созданный с помощью [диалогового окна Редактор условий правил (устаревший)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) и хранимый в виде XML с рабочим процессом. Он может включать предикаты, которые сравнивают состояние рабочего процесса и булеву алгебру, в которой объединено множество предикатов.
 
  Условия декларативного правила используются в следующих готовых действиях Windows Workflow Foundation:
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [статемачиневоркфловактивити](http://go.microsoft.com/fwlink?LinkID=65045)
+- [статемачиневоркфловактивити](https://go.microsoft.com/fwlink?LinkID=65045)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Для создания условия декларативного правила используется Редактор условий для правил
 
@@ -64,4 +64,4 @@ ms.locfileid: "72663413"
      Дополнительные сведения об использовании диалогового окна **Выбор** условия см. в разделе [диалоговое окно «Выбор условия» (устаревшая)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
 ## <a name="see-also"></a>См. также
- [Устаревшие действия рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [с использованием ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066) [с помощью действия IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075) с [помощью действия репликатора](http://go.microsoft.com/fwlink?LinkID=65080) в [Using the While Activity](http://go.microsoft.com/fwlink?LinkID=65091) [диалоговом окне "Редактор условий правил действий" (устаревшая) ](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Диалоговое окно "Выбор условия" (устаревшее)](../workflow-designer/select-condition-dialog-box-legacy.md) [с использованием условий в рабочих процессах](http://go.microsoft.com/fwlink?LinkID=65009)
+ [Устаревшие действия рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [с использованием ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) [с помощью действия IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65075) [с помощью действия репликатора](https://go.microsoft.com/fwlink?LinkID=65080) в [диалоговом окне диалогового окна](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) « [время выполнения правила действия](https://go.microsoft.com/fwlink?LinkID=65091) » (устаревшая) диалоговое окно [выбора условия (](../workflow-designer/select-condition-dialog-box-legacy.md) устаревшая) [Использование условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009)

@@ -6,16 +6,17 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 459b495ea6f440a670c9a257566b19a1bc8756dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 04dcf800074476b285a07e36db5a85fa3a366585
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439645"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779133"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к автономному приложению .NET Framework для сбора данных об использовании памяти с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework для сбора данных об использовании памяти с помощью командной строки
 
 В этой статье описано, как использовать средства профилирования Visual Studio из командной строки для подключения профилировщика к запущенному автономному (клиентскому) приложению .NET Framework и сбора данных об использовании памяти.
 
@@ -34,7 +35,7 @@ ms.locfileid: "63439645"
 
 2. Инициализируйте переменные среды профилирования. Тип:
 
-     **VSPerfClrEnv** {**/samplegc** &#124; **/samplegclife**} [**/samplelineoff**]
+     **VSPerfClrEnv** { **/samplegc** &#124; **/samplegclife**} [ **/samplelineoff**]
 
     - Параметры **/samplegc** и **/samplegclife** позволяют указать, нужно ли собирать только данные по выделению памяти или же следует собирать данные как по выделению памяти, так и по времени существования объектов. Задать нужно один и только один параметр.
 
@@ -49,15 +50,15 @@ ms.locfileid: "63439645"
 
      **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - Параметр [/start](../profiling/start.md)**:sample** инициализирует профилировщик.
+   - Параметр [/start](../profiling/start.md) **:sample** инициализирует профилировщик.
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
 
      С параметром **/start:sample** можно использовать любой из следующих параметров.
 
-     | Параметр | Описание |
+     | Параметр | ОПИСАНИЕ |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса. Этот параметр является обязательным только в том случае, если процесс выполняется в качестве пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows. |
+     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса. Этот параметр является обязательным только в том случае, если процесс выполняется в качестве пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows. |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах. Этот параметр является обязательным, если приложение выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
      | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс. |
@@ -66,7 +67,7 @@ ms.locfileid: "63439645"
 
 5. Присоедините профилировщик к целевому приложению. Тип:
 
-     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
+     **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
     - `PID` указывает идентификатор процесса целевого приложения. `ProcessName` указывает имя процесса. Обратите внимание, что при наличии нескольких процессов с одинаковыми именами использование `ProcessName` приводит к непредсказуемым результатам. Идентификаторы всех запущенных процессов можно просмотреть в диспетчере задач Windows.
 
@@ -80,11 +81,11 @@ ms.locfileid: "63439645"
 
 - Следующие пары параметров запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.
 
-    |Параметр|Описание|
+    |Параметр|ОПИСАНИЕ|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса, который указан в `PID`.|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором `PID` или именем процесса (ProcName). **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса, который указан в `PID`.|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором `PID` или именем процесса (ProcName). **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
 
@@ -96,7 +97,7 @@ ms.locfileid: "63439645"
 
     - Введите команду **VSPerfCmd /detach**.
 
-         - или -
+         -или-
 
     - Закройте целевое приложение.
 

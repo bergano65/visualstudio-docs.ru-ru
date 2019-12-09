@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81c4160ca6d03d55d631cd4dad8c3bce01fa9722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667864"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297933"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,5 +284,5 @@ The project folder is: <#= ProjectFolder #>
 Хорошее руководство содержится в шаблоне MSbuild T4, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)
-- [Пакет SDK визуализации и моделирования Visual Studio](http://go.microsoft.com/fwlink/?LinkID=185579)
+- [Пакет SDK визуализации и моделирования Visual Studio](https://go.microsoft.com/fwlink/?LinkID=185579)
 - [Олег сыч: основные сведения о средстве T4: интеграция MSBuild](https://github.com/olegsych/T4Toolbox)

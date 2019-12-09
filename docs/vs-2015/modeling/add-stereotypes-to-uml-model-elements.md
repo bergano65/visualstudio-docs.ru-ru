@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655277"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292336"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Добавление стереотипов к элементам модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,5 +81,6 @@ ms.locfileid: "72655277"
 
          Это допускают только некоторые типы схем.
 
-## <a name="see-also"></a>См. также раздел
- [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [определяет пакеты и пространства имен](../modeling/define-packages-and-namespaces.md) [цвета классы UML по стереотипу](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)
+## <a name="see-also"></a>См. также
+ [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Определение пакетов и пространств имен](../modeling/define-packages-and-namespaces.md)
+

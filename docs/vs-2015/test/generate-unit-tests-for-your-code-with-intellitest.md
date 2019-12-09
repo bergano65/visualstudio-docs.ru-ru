@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7b3d6a3cdb6eefd27f391dbe68a45ec3824b7de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f03490fc7ea3513a006254e3931cc1113f3bc159
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660559"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302593"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ IntelliTest изучает код .NET, чтобы создать тестовы
  Затем запустите IntelliTest, чтобы сформировать отдельные модульные тесты в соответствующих файлах G.CS.
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос. Можно получить более подробную информацию о создании тестов?
- **О** . Да, общий обзор приведен в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
+ **О** . Да, общий обзор приведен в этой [записи блога](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

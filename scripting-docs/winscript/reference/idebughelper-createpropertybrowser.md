@@ -54,14 +54,14 @@ HRESULT CreatePropertyBrowser(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод возвращает браузер свойств, который упаковывает вариант.  
   
-## <a name="see-also"></a>См. также  
- [Идебугхелпер:: креатепропертибровсерекс](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
- @No__t_1 [интерфейса идебугхелпер](../../winscript/reference/idebughelper-interface.md)  
+## <a name="see-also"></a>См. также:  
+ [Идебугхелпер:: креатепропертибровсерекс](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
+   [интерфейса идебугхелпер](../../winscript/reference/idebughelper-interface.md)  
  [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

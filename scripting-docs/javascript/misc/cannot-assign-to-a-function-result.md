@@ -42,7 +42,7 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     myFunction = new Function("return 42;");  
     ```  
   
-## <a name="see-also"></a>См. также  
- [Объект функции](../../javascript/reference/function-object-javascript.md)    
- [Написание кода JavaScript](../../javascript/writing-javascript-code.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект функции](../../javascript/reference/function-object-javascript.md)   
+ [Написание кода JavaScript](../../javascript/writing-javascript-code.md)   
  [Функции](../../javascript/functions-javascript.md)

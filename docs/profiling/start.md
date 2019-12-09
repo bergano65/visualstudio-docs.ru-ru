@@ -6,16 +6,17 @@ ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979683"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778275"
 ---
-# <a name="start"></a>Запуск
+# <a name="start"></a>Начало
 **Start** — это параметр программы *VSPerfCmd.exe*, который инициализирует профилировщик для использования указанного метода профилирования.
 
 ## <a name="syntax"></a>Синтаксис
@@ -45,7 +46,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **CrossSession**&#124;**CS** включает профилирование в нескольких процессах. Поддерживаются оба имени параметра: **CrossSession** и **CS**.
 
- **User:**[`domain\`]`username` позволяет клиентам получать доступ к монитору с помощью указанной учетной записи.
+ **User:** [`domain\`]`username` позволяет клиентам получать доступ к монитору с помощью указанной учетной записи.
 
  **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** задает счетчик производительности Windows, который включается в файл данных профилирования в виде метки. **AutoMark** задает интервал в миллисекундах между сборами файла данных.
 
@@ -54,7 +55,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Status**. Параметр **Status** применяется к процессам, для которых выполняется профилирование. Этот параметр перечисляет процессы и потоки и их текущее состояние профилирования (On/Off). Например, если процесс остановлен, параметр **Status** не отразит это в отчете. **Status** показывает, выполняется ли профилирование для процесса или нет.
 
- **Shutdown**[**:**`Timeout`] отключает профилировщик.
+ **Shutdown**[ **:** `Timeout`] отключает профилировщик.
 
 ## <a name="example"></a>Пример
  В приведенном ниже примере кода показано, как с помощью параметра **Start** программы *VSPerfCmd.exe* инициализировать профилировщик.

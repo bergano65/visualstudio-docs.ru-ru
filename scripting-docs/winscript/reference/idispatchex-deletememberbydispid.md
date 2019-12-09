@@ -47,7 +47,7 @@ HRESULT DeleteMemberByDispID(
 |`S_OK`|Выполнено.|  
 |`S_FALSE`|Элемент существует, но не может быть удален.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Если элемент удален, идентификатор DISPID должен оставаться допустимым для `GetNextDispID`.  
   
  Если элемент с заданным именем удаляется, а позднее элемент с таким же именем создается повторно, идентификатор DISPID должен быть таким же. (Имена элементов, отличающиеся только регистром, являются "одинаковыми", зависит от объекта.)  
@@ -64,7 +64,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

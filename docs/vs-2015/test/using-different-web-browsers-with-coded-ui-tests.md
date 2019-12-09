@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 31ca0fdbecf7ea3742fef60f99f2a0a25220f9cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657222"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297955"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ ms.locfileid: "72657222"
 
   - Windows Internet Explorer 10
 
-  - Сведения о поддерживаемых версиях Mozilla Firefox и Google Chrome см. [здесь](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)
+  - Сведения о поддерживаемых версиях Mozilla Firefox и Google Chrome см. [здесь](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)
 
-- Установите [компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса в различных браузерах](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+- Установите [компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса в различных браузерах](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
   **Что поддерживается во всех браузерах?**
 
-- [Добавление пользовательского кода для управления компонентами](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx), такими как свойства, поиск и ожидающие объекты воспроизведения.
+- [Добавление пользовательского кода для управления компонентами](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), такими как свойства, поиск и ожидающие объекты воспроизведения.
 
 - Всплывающие окна и диалоговые окна
 
-- [Выполнение базового JavaScript без возвращаемого типа](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+- [Выполнение базового JavaScript без возвращаемого типа](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
-- Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+- Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Зачем нужно использовать закодированные тесты пользовательского интерфейса в нескольких типах веб-браузеров?
  При тестировании веб-приложения с помощью различных типов веб-браузеров рекомендуется эмулировать взаимодействие с пользовательским интерфейсом для пользователей, которые могут запускать приложение в различных браузерах. Например, приложение может включать элемент управления или код в Internet Explorer, который несовместим с другими веб-браузерами. Выполнив закодированные тесты пользовательского интерфейса с другими браузерами, можно найти и исправить любые проблемы, прежде чем они повлияют на работу клиентов.
@@ -76,7 +76,7 @@ ms.locfileid: "72657222"
 3. Выберите расширение и нажмите кнопку **Скачать**.
 
    > [!TIP]
-   > Кроме того, компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса можно скачать [здесь](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+   > Кроме того, компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса можно скачать [здесь](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
    Дополнительные сведения о создании и использовании закодированных тестов пользовательского интерфейса см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -139,17 +139,17 @@ ms.locfileid: "72657222"
  [Устранение неполадок в случае сбоев тестов для различных браузеров](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Часто задаваемые вопросы
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Форум
- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает Coded UI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает Coded UI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Использование модели автоматизации пользовательского интерфейса для тестирования поддерживаемых в коде](../test/use-ui-automation-to-test-your-code.md) [конфигураций и платформ для ЗАКОДИРОВАННЫХ тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md) интерфейса

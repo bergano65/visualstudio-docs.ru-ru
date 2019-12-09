@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211470"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714477"
 ---
 # <a name="xamarin-mobile-app-development"></a>Разработка мобильных приложений Xamarin
 
@@ -22,7 +22,7 @@ ms.locfileid: "71211470"
 
 Чтобы включить Горячую перезагрузку XAML, установите флажок **Включить горячую перезагрузку Xamarin** в окне **Visual Studio > Параметры > Проекты > Горячая перезагрузка Xamarin**.
 
-Дополнительные сведения о Горячей перезагрузке см. в [руководстве по Горячей перезагрузке XAML для Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) в этой документации.
+Дополнительные сведения о Горячей перезагрузке см. в [руководстве по Горячей перезагрузке XAML для Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload) в этой документации.
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ Visual Studio для Mac включает собственный констр�
 
 ![Конструктор раскадровки iOS](media/intro-image30.png)
 
-Дополнительные сведения об использовании конструктора iOS см. в руководствах по [конструктору](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Дополнительные сведения об использовании конструктора iOS см. в руководствах по [конструктору](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 

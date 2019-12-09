@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824840"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299670"
 ---
 # <a name="html-ui-responsiveness"></a>Скорость реагирования ИП HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ ms.locfileid: "67824840"
   
      На следующем рисунке показана диаграмма использования ЦП с выделенной интересующей областью.  
   
-     ![График использования ЦП](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+     ![Граф использования ЦП](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Используйте [Просмотр сведений о временной шкале](#TimelineDetails) , чтобы получить подробную информацию о событиях, выполнение которых либо занимает слишком много времени, либо производится слишком часто. Например, обратите внимание на следующее:  
   
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
   
  Измерение длительности появляется как событие **Показатель пользователя** в представлении сведений о временной шкале и в случае его выбора показывает подробную информацию.  
   
- ![Событие оценки пользователя в представлении сведений в виде временной шкалы](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
+ ![Событие оценки пользователя в представлении сведений о шкале времени](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
   
 ## <a name="AnalyzeData"></a> Анализ данных  
  В следующих разделах содержатся сведения, помогающие интерпретировать данные, отображаемые в профилировщике.  
@@ -202,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  На рисунке ниже представлен пример диаграммы использования ЦП.  
   
- ![График использования ЦП](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+ ![Граф использования ЦП](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
  Используйте эту диаграмму для:  
   
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  В приведенном ниже примере показана диаграмма сведений о временной шкале при выборе прослушивателя событий для события щелчка DOM.  
   
- ![График сведений на временной шкале](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
+ ![Диаграмма сведений о временной шкале](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
  На этом рисунке обработчик событий **spinAction** в столбце **Имя события** является ссылкой, по которой можно перейти к обработчику событий в исходном коде. В правой области свойство **Функция обратного вызова** содержит такую же ссылку на исходный код. Другие свойства также предоставляют сведения о событии, например о связанном элементе DOM.  
   
@@ -279,14 +279,14 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> Фильтр сведений о временной шкале  
  Можно фильтровать представление сведений о временной шкале по определенному событию, выбрав **Фильтр для события** в контекстном меню для конкретного события. При выборе этого параметра временная шкала и представление в виде сетки фокусируются на выбранном событии. Выделение на диаграмме использования ЦП также фокусирует на определенном событии.  
   
- ![Фильтрация временной шкалы по событию](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![Фильтрация шкалы времени по событию](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
-### <a name="FilterEvents"></a> Фильтрация событий  
+### <a name="FilterEvents"></a> Фильтр событий  
  Можно отфильтровать некоторые события из диаграммы сведений о временной шкале для очистки данных от шума или для удаления данных, которые не представляют интереса в этом сценарии производительности. Фильтровать можно по имени или длительности события или с использованием определенных фильтров, описанных здесь.  
   
  Для отфильтровки декодирования изображения, наблюдающей загрузки и событий GC отключите параметр **Фоновое действие** , используя значок фильтра в нижней области. Поскольку с этими событиями нельзя выполнить большое количество действий, они скрыты по умолчанию.  
   
- ![Фильтрация событий на временной шкале](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![Фильтрация событий на шкале времени](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  Для отфильтровки событий HTTP-запросов отключите параметр **Сетевой трафик** , используя значок фильтра в нижней области. По умолчанию эти события показываются на диаграмме сведений о временной шкале.  
   
@@ -300,11 +300,11 @@ if (performance.mark && performance.measure) {
 ### <a name="GroupFrames"></a> События группы по кадрам  
  События, которые появляются в представлении сведений о временной шкале, можно группировать по отдельным кадрам. Эти события кадров являются событиями, созданными инструментами, и представляют собой контейнеры событий верхнего уровня для всех действий потока ИП, которые возникают между событиями рисования. Чтобы включит это представление, выберите **Группировать события верхнего уровня по кадрам**.  
   
- ![Группировка событий верхнего уровня по кадрам](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Группирование событий верхнего уровня по кадру](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  При группировании событий по кадрам каждое событие верхнего уровня в представлении сведений о временной шкале является кадром.  
   
- ![События на временной шкале, сгруппированные по кадрам](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
+ ![События шкалы времени, сгруппированные по кадру](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
 ## <a name="SaveSession"></a> Сохранение диагностического сеанса  
  В Visual Studio можно сохранить диагностический сеанс при закрытии связанной с ним вкладки. Сохраненные сеансы можно повторно открыть позднее.  
@@ -356,7 +356,7 @@ if (performance.mark && performance.measure) {
   
 ## <a name="Tips"></a> Дополнительные сведения  
   
-- Посмотрите [этот видеоролик](http://channel9.msdn.com/Events/Build/2013/3-316) о профилировщике скорости реагирования ИП с конференции Build 2013.  
+- Посмотрите [этот видеоролик](https://channel9.msdn.com/Events/Build/2013/3-316) о профилировщике скорости реагирования ИП с конференции Build 2013.  
   
 - Просмотрите советы по оптимизации производительности приложений Магазина Windows, созданных для Windows с использованием JavaScript. Дополнительные сведения см. в разделе [рекомендаций по оптимизации производительности приложений Магазина Windows на основе JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   

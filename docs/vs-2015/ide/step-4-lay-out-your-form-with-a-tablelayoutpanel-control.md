@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab16750694e1bc8bb74afa7d22d899dc492d7c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671789"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295730"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 На этом шаге в форму добавляется элемент управления `TableLayoutPanel`. TableLayoutPanel помогает должным образом выровнять элементы управления в форме, которая будет добавлена позднее.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений на Visual Basic-Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) или в [руководстве 1. Создание средства просмотра изображений C# в видеоролике 2](http://go.microsoft.com/fwlink/?LinkId=205200). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений на Visual Basic-Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) или в [руководстве 1. Создание средства просмотра изображений C# в видеоролике 2](https://go.microsoft.com/fwlink/?LinkId=205200). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Создание макета формы с помощью элемента управления TableLayoutPanel
 

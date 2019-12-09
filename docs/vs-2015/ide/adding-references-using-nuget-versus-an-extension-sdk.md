@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81dd772d78b0abec7c2e22093ac6d30a9f6a0465
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63d9e6694fab400b1f29ed5e2706bb788a760357
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620978"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301270"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Добавление ссылок с использованием NuGet или расширения SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно предоставить пакет для использования в проектах Visual Studio, используя либо расширения NuGet для Visual Studio, либо пакет средств разработки программного обеспечения (SDK). В этом разделе описываются сходства и различия между двумя механизмами, которые помогут вам выбирать наиболее подходящий вариант для решения ваших задач.
 
-- NuGet — это основанная на открытом исходном коде система управления пакетами, которая упрощает процесс включения библиотек в решение проекта. Дополнительные сведения см. на странице [NuGet Overview](http://go.microsoft.com/fwlink/?LinkId=254877).
+- NuGet — это основанная на открытом исходном коде система управления пакетами, которая упрощает процесс включения библиотек в решение проекта. Дополнительные сведения см. на странице [NuGet Overview](https://go.microsoft.com/fwlink/?LinkId=254877).
 
 - Пакет SDK — это коллекция файлов, которая обрабатывается Visual Studio как единый компонент. В диалоговом окне **Диспетчер ссылок** приводится список всех пакетов SDK, относящихся к проекту, который открыт при отображении диалогового окна. Добавив пакет SDK в проект, вы можете обращаться ко всему его содержимому с помощью IntelliSense, **панели элементов**, конструкторов, **обозревателя объектов**, MSBuild, в процессе развертывания, отладки и упаковки. Дополнительные сведения см. в статье [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Создание пакета средств разработки программного обеспечения).
 

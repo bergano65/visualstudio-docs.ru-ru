@@ -72,10 +72,10 @@ ms.locfileid: "72661459"
 
  В этом примере формируются следующие данные:
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Связанные правила
  [CA1305: укажите IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [NIB: использование класса CultureInfo](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

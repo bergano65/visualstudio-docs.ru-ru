@@ -6,18 +6,19 @@ ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3878f22e37c281235e62e025c6b73779d3478f8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798363"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778444"
 ---
 # <a name="performance-rules-by-id"></a>Правила производительности по идентификаторам
 
-| Предупреждение | Описание |
+| Предупреждение | ОПИСАНИЕ |
 | - | - |
 | [DA0001. Использование StringBuilder для объединений](../profiling/da0001-use-stringbuilder-for-concatenations.md) | Вызовы метода System.String.Concat составляют значительную часть данных профилирования. Для построения строк из нескольких сегментов рекомендуется использовать класс <xref:System.Text.StringBuilder>. |
 | [DA0002. Отсутствует файл VSPerfCorProf.dll](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | Профилировщику не удалось найти библиотеку VSPerfCorProf.dll во время сеанса профилирования. Это предупреждение выводится, если программы командной строки для сбора данных профилирования используются без применения программы VSPerfCLREnv.cmd для инициализации необходимых переменных среды. |

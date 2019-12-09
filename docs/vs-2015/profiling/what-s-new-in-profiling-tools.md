@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f9611170c7b23a9db72c27b9c3f69a39e21a4bdc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261625"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300621"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Новые возможности средств профилирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "66261625"
  Информацию о новых возможностях отладки и диагностики в Visual Studio 2015 см. в [заметках о выпуске Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
   
 ## <a name="whats-new-in-update-1"></a>Что нового в обновлении 1  
- Начиная с версии Visual Studio 2015 с обновлением 1 можно просматривать разбивку загрузки ЦП по функциям, не выходя из отладчика. Дополнительные сведения см. в разделе [Профилирование ЦП в отладчике в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
+ Начиная с версии Visual Studio 2015 с обновлением 1 можно просматривать разбивку загрузки ЦП по функциям, не выходя из отладчика. Дополнительные сведения см. в разделе [Профилирование ЦП в отладчике в Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
- В окне **Средства диагностики** на вкладке **События** добавлены параметры поиска и фильтрации. Дополнительные сведения см. в разделах [Средства профилирования, интегрированные в отладчик](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) и [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+ В окне **Средства диагностики** на вкладке **События** добавлены параметры поиска и фильтрации. Дополнительные сведения см. в разделах [Средства профилирования, интегрированные в отладчик](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) и [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Изменения в диагностике с помощью пользовательского интерфейса отладки и в сочетаниях клавиш  
  Теперь средства диагностики можно запустить во время отладки с помощью нового окна **Diagnostic Tools** (Средства диагностики). Это окно открывается автоматически, но его также можно открыть с помощью нового элемента меню **Показать средства диагностики** (сочетание клавиш **CTRL+ALT+F2**).  
@@ -43,5 +43,5 @@ ms.locfileid: "66261625"
   
  Средства анализа приложений Windows Phone доступны в меню **Отладка &gt; Профилировщик &gt; Средства анализа приложений Windows Phone** (или по сочетанию клавиш **ALT+F1**).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Средства профилирования](../profiling/profiling-tools.md)

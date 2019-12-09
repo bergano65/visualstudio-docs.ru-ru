@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671676"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301401"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Доменный язык (DSL) создается с помощью специализированного [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решения.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Перед началом этой процедуры необходимо сначала установить следующие компоненты:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решения на предметно-ориентированном языке
 
@@ -127,7 +127,7 @@ ms.locfileid: "72671676"
 
  **Использовать существующий ключ строгого имени** Используйте этот параметр, если требуется интегрировать DSL с другой сборкой.
 
- Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](https://go.microsoft.com/fwlink/?LinkId=186073).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Как определить доменный язык](../modeling/how-to-define-a-domain-specific-language.md) [средства предметно-ориентированных языков Глоссарий](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

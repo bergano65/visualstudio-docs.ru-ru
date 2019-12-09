@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa7d087d8354a25b5e16f89b72963c2bfdb55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657028"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297612"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Диалоговое окно "Обзор и выбор типа .NET"
 В окне **Свойства** , в диалоговых окнах или конструкторах, таких как конструктор переменных, при нажатии **кнопки Обзор типов...** из списка типов данных — это диалоговое окно **Обзор и выбор типа .NET** (в сокращенном виде в виде «браузера типов»). В этом диалоговом окне из представления в виде дерева сборок и проектов можно выбрать тип.
@@ -31,7 +31,7 @@ ms.locfileid: "72657028"
 - При добавлении захвата в действие <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> Браузер типов может отображать типы массива массивов Visual Basic, но не типы многомерных массивов. Дополнительные сведения см. в разделе [массивы](http://go.microsoft.com/fwlink/?LinkId=195226) и [многомерные](http://go.microsoft.com/fwlink/?LinkId=195227) массивы.
+> Браузер типов может отображать типы массива массивов Visual Basic, но не типы многомерных массивов. Дополнительные сведения см. в разделе [массивы](https://go.microsoft.com/fwlink/?LinkId=195226) и [многомерные](https://go.microsoft.com/fwlink/?LinkId=195227) массивы.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Выбор значения или ссылочного типа из браузера типов
 
@@ -61,7 +61,7 @@ ms.locfileid: "72657028"
 ## <a name="filtering-search-results-in-the-type-browser"></a>Фильтрация результатов поиска в браузере типов
  Список типов в поле **имя типа** сокращается по мере ввода большего числа символов для поиска совпадения. В отфильтрованном списке отображаются только те типы, чье полное или короткое имя начинается с введенной строки.
 
- Пример:
+ Пример.
 
 1. **Операция** ввода соответствует <xref:System.OperationCanceledException>, но не <xref:System.InvalidOperationException>. Чтобы введенное слово совпало с <xref:System.InvalidOperationException>, начните строку с System.I или Invalid.
 
@@ -70,5 +70,5 @@ ms.locfileid: "72657028"
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Выбор контракта службы с помощью диалогового окна браузера типов
  При выборе типа контракта службы браузер типов отображает только типы, имеющие атрибут <xref:System.ServiceModel.ServiceContractAttribute>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)

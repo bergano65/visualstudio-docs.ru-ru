@@ -1,18 +1,18 @@
 ---
 title: Настройка модульных тестов с помощью RUNSETTINGS-файла
-ms.date: 06/14/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665143"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771512"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -38,11 +38,52 @@ ms.locfileid: "72665143"
 
 ::: moniker range=">=vs-2019"
 
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 версии 16.3 и более ранней
+
 Чтобы указать файл параметров запуска в интегрированной среде разработки, выберите **Тестирование** > **Выбрать файл параметров**. Найдите и выберите файл *.runsettings*.
 
 ![Выбор файла параметров тестирования в Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
 В меню "Тестирование" появится файл, который можно выбрать или отменить выбор. Если файл параметров запуска выбран, он применяется при каждом выборе функции **Анализ объема протестированного кода**.
+
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 версии 16.4 и более поздней
+
+Файл параметров запуска можно указать тремя способами в Visual Studio 2019 версии 16.4 и более поздней:
+
+- Добавить свойство сборки в проект с помощью файла проекта или файла Directory.Build.props. Файл параметров запуска для проекта задается свойством **RunSettingsFilePath**. 
+
+    - В настоящее время параметры запуска на уровне проекта поддерживаются в проектах C#, VB, C++ и F#.
+    - Файл, указанный для проекта, переопределяет любой другой файл параметров запуска, указанный в решении.
+
+    Пример указания файла с расширением *RUNSETTINGS* для проекта:
+    
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+      </PropertyGroup>
+      ...
+    </Project>
+    ```
+
+- Поместите файл параметров запуска с именем ".runsettings" в корневой каталог решения.
+
+  Если включено автоматическое определение файлов параметров запуска, параметры в этом файле применяются ко всем тестовым запускам. Вы можете включить автоматическое обнаружение RUNSETTINGS-файлов из двух расположений:
+  
+    - **Сервис** > **Параметры** > **Тест** > **Автоматическое обнаружение файлов параметров выполнения**
+
+      ![Параметр "Автоматическое обнаружение файлов параметров выполнения" в Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      
+    - **Тест** > **Настройка параметров выполнения** > **Автоматическое обнаружение файлов параметров выполнения**
+    
+      ![Меню "Автоматическое обнаружение файлов параметров выполнения" в Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
+
+- В интегрированной среде разработки выберите **Тест** > **Настройка параметров выполнения** > **Выберите файл параметров выполнения на уровне решения**, а затем выберите файл с расширением *RUNSETTINGS*.
+
+   ![Меню "Выберите файл параметров выполнения на уровне решения" для теста в Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
+      
+   - Этот файл переопределяет RUNSETTINGS-файл в корневом каталоге решения, если он существует, и применяется ко всем тестовым запускам.  
+   - Этот выбор файла сохраняется только локально. 
 
 ::: moniker-end
 
@@ -70,7 +111,7 @@ ms.locfileid: "72665143"
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-   или
+   or
 
    ```cmd
    vstest.console.exe --settings:test.runsettings test.dll

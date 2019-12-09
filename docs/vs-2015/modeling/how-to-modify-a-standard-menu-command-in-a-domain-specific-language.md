@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a821899eb660fb8448b541f9c1be082351dacc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662585"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300870"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "72662585"
 
 2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs`.
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример.
 
     ```
     using System;
@@ -136,9 +136,9 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Написание кода методов
  В этих методах часто используются следующие фрагменты:
 
-- `this.CurrentSelection` Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
+- `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
 
-- `this.IsDiagramSelected()`  -  `true`, если пользователь щелкнул пустую часть диаграммы.
+- `this.IsDiagramSelected()` - `true`, если пользователь щелкнул пустую часть диаграммы.
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -150,5 +150,5 @@ protected override void ProcessOnMenuDeleteCommand()
 
   Дополнительные сведения о переходе от элемента к элементу и о создании объектов и ссылок см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>См. также раздел
- <xref:System.ComponentModel.Design.MenuCommand> [написание кода для выбора доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md) [Практическое руководство. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Пошаговое руководство. Получение сведений из выбранной ссылки](../misc/walkthrough-getting-information-from-a-selected-link.md) [как пакеты VSPackage Добавление элементов пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md) в [Visual Studio Командная таблица (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct Справочник по схемам XML](../extensibility/vsct-xml-schema-reference.md) [VMSDK — образцы схем. Обширный](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8) [пример кода для настройки DSL: схемы цепи](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>См. также
+ <xref:System.ComponentModel.Design.MenuCommand> [написание кода для выбора доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md) [Практическое руководство. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Пошаговое руководство. Получение сведений из выбранной ссылки](../misc/walkthrough-getting-information-from-a-selected-link.md) [как пакеты VSPackage Добавление элементов пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md) в [командную таблицу Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct Справочник по XML-схеме](../extensibility/vsct-xml-schema-reference.md)

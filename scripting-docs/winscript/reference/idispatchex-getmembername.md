@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

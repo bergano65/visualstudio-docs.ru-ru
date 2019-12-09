@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6585fbfa7c16e710633e81841b4c8eb380f9f564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669728"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295524"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Изменение моделей и схем UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -320,23 +320,11 @@ ms.locfileid: "72669728"
 
 - Чтобы добавить заметки и пояснения к элементам модели, можно создать комментарии и связать их с этими элементами.
 
-- Чтобы точно выровнять фигуры столбцов или строк на схеме, можно установить команду выравнивания фигур. Это можно получить в виде примера расширения UML: [команда UML: для выровняйте фигуры](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)
-
 ### <a name="to-export-a-diagram-as-an-image"></a>Экспорт схемы в виде изображения
  Дополнительные сведения см. в статье [Экспорт схем как изображений](../modeling/export-diagrams-as-images.md).
 
 ## <a name="extensions"></a>Расширение конструкторов UML
  Можно добавить новые функциональные возможности для инструментов UML и адаптировать нотацию схемы под свои потребности. Дополнительные сведения см. в разделе [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md).
 
- Доступно несколько примеров расширений. Можно просто установить и использовать их либо взять их исходный код в качестве основы для собственных расширений. К таким примерам относятся следующие:
-
-|||
-|-|-|
-|[Выровняйте фигуры](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)|Команда меню, которая помогает сделать схему более аккуратной.|
-|[Ссылка на документацию](http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8)|Свяжите любой элемент UML с заголовками Word, слайдами PowerPoint, файлами любого типа, схемами UML или другими элементами UML. Связь можно осуществить с помощью простого перетаскивания. Позднее можно дважды щелкнуть элемент, чтобы просмотреть связанный с ним элемент. Например, можно связать варианты использования со спецификацией Word или схемами деятельности, а также действия со слайдами раскадровки.|
-|[Быстрая запись](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)|Быстро создайте модель с помощью ввода текста. Это удобно для воплощения идей на собрании.|
-|[Цвет по стереотипу](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Классификация цветов в соответствии со стереотипом. Можно легко расширить код для работы со своими собственными стереотипами.|
-|[Моделирование домена](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)|Полезные значения по умолчанию для бизнес-моделей. По умолчанию ассоциации показаны без стрелок, а операции не отображаются в классах.|
-
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание проектов моделирования UML и схем](../modeling/create-uml-modeling-projects-and-diagrams.md) [анализ и моделирование архитектура](../modeling/analyze-and-model-your-architecture.md) [Создание моделей для приложения](../modeling/create-models-for-your-app.md)

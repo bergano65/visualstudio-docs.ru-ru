@@ -13,29 +13,29 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93aef1e4466bd88d87ebce71161dcd1665178317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663354"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302848"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор условий для правила» (для прежних версий)
-В этом разделе описывается использование диалогового окна **Редактор условий правил** в [!INCLUDE[wfd1](../includes/wfd1-md.md)] устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+В этом разделе описывается использование диалогового окна **Редактор условий правил** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Условия декларативного правила создаются и изменяются с помощью диалогового окна **Редактор условий правил** . Эти условия правила представляются как свойства в следующих готовых действиях Windows Workflow Foundation:
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [статемачиневоркфловактивити](http://go.microsoft.com/fwlink?LinkID=65045)
+- [статемачиневоркфловактивити](https://go.microsoft.com/fwlink?LinkID=65045)
 
   Доступ к диалоговому окну **Редактор условий правил** можно получить с помощью [диалогового окна Выбор условия (прежних версий)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
@@ -55,7 +55,7 @@ ms.locfileid: "72663354"
 
 - Реляционные операторы: ==, =, !=
 
-- Операторы сравнения: <, \< =, >, > =
+- Операторы сравнения: <, \<=, >, > =
 
 - Арифметические операторы: +, -, *, /, MOD
 
@@ -79,7 +79,7 @@ ms.locfileid: "72663354"
 
   this.i == 1U (вычисляется как unsigned int)
 
-  Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](http://go.microsoft.com/fwlink?LinkID=65009).
+  Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009).
 
-## <a name="see-also"></a>См. также раздел
- [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049) [SELECT условие (прежние версии)](../workflow-designer/select-condition-dialog-box-legacy.md) [Использование условий в рабочих](http://go.microsoft.com/fwlink?LinkID=65009) процессах [устаревший конструктор для Windows Workflow Справка по пользовательскому интерфейсу Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+## <a name="see-also"></a>См. также
+ [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [SELECT условие (устаревший)](../workflow-designer/select-condition-dialog-box-legacy.md) [Использование условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009) [устаревший конструктор для Windows Workflow Foundation справки по пользовательскому интерфейсу](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

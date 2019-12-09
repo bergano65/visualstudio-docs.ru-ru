@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: edf9eaee512eda7439d1beea7303cd0e74b27178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661038"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298169"
 ---
 # <a name="structure-your-modeling-solution"></a>Разработка структуры решения моделирования
 
@@ -34,7 +34,7 @@ ms.locfileid: "72661038"
 
 #### <a name="to-divide-an-application-into-layers"></a>Разделение приложения на слои
 
-1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](http://go.microsoft.com/fwlink/?LinkId=196681)).
+1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](https://go.microsoft.com/fwlink/?LinkId=196681)).
 
 2. Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которое мы будем называть решением "Архитектура". Это решение будет использоваться для создания общей структуры системы. Оно будет содержать только модели без кода.
 
@@ -100,7 +100,7 @@ ms.locfileid: "72661038"
 
 #### <a name="to-create-a-solution-template"></a>Создание шаблона решения
 
-1. [Скачайте и установите мастер экспорта шаблонов](http://go.microsoft.com/fwlink/?LinkId=196686), если вы еще этого не сделали.
+1. [Скачайте и установите мастер экспорта шаблонов](https://go.microsoft.com/fwlink/?LinkId=196686), если вы еще этого не сделали.
 
 2. Создайте структуру решения, которую требуется использовать в качестве отправной точки для будущих проектов.
 
@@ -109,15 +109,15 @@ ms.locfileid: "72661038"
 4. Следуя инструкциям в мастере, выберите проекты, которые требуется включить в шаблон, укажите имя и описание шаблона, а также укажите расположение выходных файлов.
 
 > [!NOTE]
-> Материал из этого раздела представляет собой краткое изложение руководства по средствам проектирования архитектуры Visual Studio, написанного группой Visual Studio ALM Rangers, в которую входят партнеры со статусом MVP, службы Microsoft Services, а также команда разработчиков и авторов Visual Studio. [Щелкните здесь, чтобы скачать полный пакет рекомендаций.](http://go.microsoft.com/fwlink/?LinkID=191984)
+> Материал из этого раздела представляет собой краткое изложение руководства по средствам проектирования архитектуры Visual Studio, написанного группой Visual Studio ALM Rangers, в которую входят партнеры со статусом MVP, службы Microsoft Services, а также команда разработчиков и авторов Visual Studio. [Щелкните здесь, чтобы скачать полный пакет рекомендаций.](https://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>Связанные материалы
 
-[Организация и управление моделями](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/) — видео с помощью Клинт едмондсон.
+[Организация и управление моделями](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) — видео с помощью Клинт едмондсон.
 
 [Руководство по использованию средств архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) — дополнительные рекомендации по управлению моделями в команде
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Управление моделями и диаграммами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md) 
+[Управление моделями и диаграммами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md)
 [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

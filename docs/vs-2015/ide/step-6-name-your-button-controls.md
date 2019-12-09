@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: be633da5e8af6b987178d7c7360096db57fff1a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ebe3813ad01566e2994b0a16b4a3fdc735de8c8c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647002"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295710"
 ---
 # <a name="step-6-name-your-button-controls"></a>Шаг 6. Присвоение имен элементам управления "Кнопка"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72647002"
 
  В форме есть четыре кнопки. Интегрированная среда разработки назвала их как **button1**, **button2**, **button3**и **button4**. Только по их текущему имени нельзя узнать, какая кнопка является кнопкой **Закрыть** , а какая кнопкой **Показать рисунок** . Вот почему присвоение элементам управления в виде кнопок более осмысленных названий полезно.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) или [учебном курсе 1. Создание средства просмотра C# изображений в видео 3](http://go.microsoft.com/fwlink/?LinkId=205202). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений в Visual Basic-Video 3](https://go.microsoft.com/fwlink/?LinkId=205213) или [учебном курсе 1. Создание средства просмотра C# изображений в видео 3](https://go.microsoft.com/fwlink/?LinkId=205202). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Присвоение имен элементам управления "Кнопка"
 
@@ -35,7 +35,7 @@ ms.locfileid: "72647002"
      ![Окно свойств с именем closeButton](../ide/media/express-setnameproperty.png "Express_SetNameProperty") окно свойств с именем closeButton
 
     > [!NOTE]
-    > If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Пробелы (а также несколько других символов) запрещено использовать в именах элементов управления.
+    > Если попробовать изменить имя кнопки на **closeButton**, с пробелом между словами close и Button, среда интегрированной разработки выведет сообщение об ошибке «Недопустимое значение свойства». Пробелы (а также несколько других символов) запрещено использовать в именах элементов управления.
 
 2. Переименуйте другие три кнопки как **backgroundButton**, **clearButton**, **showButton**. Имена можно проверить в раскрывающемся списке селектора элементов управления в окне **Свойства** . Отобразятся новые имена кнопок.
 
@@ -77,4 +77,4 @@ ms.locfileid: "72647002"
 
 - Следующий шаг руководства см. в разделе [Step 7: Add Dialog Components to Your Form](../ide/step-7-add-dialog-components-to-your-form.md) (Шаг 7. Добавление компонентов диалогового окна в форму).
 
-- Предыдущий шаг руководства см. в разделе [Step 5: Add Controls to Your Form](../ide/step-5-add-controls-to-your-form.md) (Шаг 5. Добавление элементов управления в форму).
+- Предыдущий шаг руководства см. в разделе [Step 5: Add Controls to Your Form](../ide/step-5-add-controls-to-your-form.md).

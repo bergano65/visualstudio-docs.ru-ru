@@ -52,16 +52,16 @@ HRESULT AddTypeLib(
  окне Не используется.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
+ `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод вызывает `LoadTypeLib` для загрузки библиотеки типов. После успешного выполнения этот метод вызывает `IActiveScriptAuthor::AddNamedItem` для добавления сведений о типе.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
    [интерфейса иактивескриптаусор](../../winscript/reference/iactivescriptauthor-interface.md)  
- [Иактивескриптаусор:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+ [Иактивескриптаусор:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [лоадтипелиб](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

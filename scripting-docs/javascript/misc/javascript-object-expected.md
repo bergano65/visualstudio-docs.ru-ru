@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573793"
 ---
 # <a name="javascript-object-expected"></a>Ожидался объект JavaScript
-Предпринята попытка передать объект, не являющийся [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], во встроенную функцию, ожидающую объект [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Для различных встроенных функций требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных узлом, или внешнего компонента, такого как элемент управления).  
+Предпринята попытка передать объект, не являющийся[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], во встроенную функцию, ожидающую объект [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Для различных встроенных функций требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных узлом, или внешнего компонента, такого как элемент управления).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
 - Убедитесь, что передаваемый в качестве параметра объект имеет правильный тип.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Объекты и массивы](../../javascript/objects-and-arrays-javascript.md)   
  [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)

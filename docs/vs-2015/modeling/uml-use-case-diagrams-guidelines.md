@@ -15,19 +15,19 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d3434236908771cbc2149e766b841e7bcf4cb4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667842"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302835"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-схемы вариантов использования: правила работы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В Visual Studio можно нарисовать *схему вариантов использования* , чтобы обобщить сведения о том, кто использует ваше приложение или систему и что они могут делать с ним. Чтобы создать схему вариантов использования UML, в меню **архитектура** выберите пункт **создать UML или схему слоев**.
 
- Демонстрационные видеоролики см. в разделе [упорядочение функций в вариантах использования](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/).
+ Демонстрационные видеоролики см. в разделе [упорядочение функций в вариантах использования](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases).
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -166,11 +166,11 @@ ms.locfileid: "72667842"
 
  Эти кратности можно изменить.
 
- Пример:
+ Пример.
 
  ![Вариант использования с количеством элементов, кратным множеству](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Чтобы указать, что несколько субъектов одного и того же класса могут принимать участие в одном экземпляре варианта использования, установите кратность на стороне субъекта ассоциации равным **1.. \*** .
+- Чтобы указать, что несколько субъектов одного и того же класса могут принимать участие в одном экземпляре варианта использования, установите кратность на стороне субъекта ассоциации равным **1..\*** .
 
    На рисунке один или несколько ресторанов могут участвовать в выполнении одного заказа.
 
@@ -190,7 +190,7 @@ ms.locfileid: "72667842"
 
    - **1** , чтобы указать, что в каждом канале участвует ровно один экземпляр этой роли.
 
-   - **1.. \*** , чтобы указать, что один или несколько экземпляров этой роли участвуют в каждом канале связи.
+   - **1..\*** , чтобы указать, что один или несколько экземпляров этой роли участвуют в каждом канале связи.
 
    - **0.. 1** , чтобы указать, что участие не является обязательным.
 
@@ -200,7 +200,7 @@ ms.locfileid: "72667842"
 > Многие команды не размещают сведения о кратностях на схемах вариантов использования, оставляя для них значение по умолчанию 1. Вместо этого они предоставляют информацию в отдельных описаниях для вариантов использования. В этом случае все кратности на схемах вариантов использования будут скрыты.
 
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Использование субъекта или варианта использования на нескольких схемах
- Можно отобразить одни и те же субъекты и варианты использования на нескольких схемах. Пример:
+ Можно отобразить одни и те же субъекты и варианты использования на нескольких схемах. Пример.
 
 - Разные варианты использования, в которых участвует один субъект, можно описать в разных схемах.
 
@@ -270,7 +270,7 @@ ms.locfileid: "72667842"
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Связывание с общим документом, элементом OneNote или веб-страницей
 
-1. Получите URL-адрес общего элемента. Это может быть, например, путь к сетевому файлу, начинающийся с "\\ \\", или веб-страницу или URL-адрес SharePoint, начинающийся с "http://", или ссылку на раздел OneNote, страницу или абзац, начинающийся с "OneNote:".
+1. Получите URL-адрес общего элемента. Это может быть, например, путь к сетевому файлу, начинающийся с "\\\\", или веб-страницу или URL-адрес SharePoint, начинающийся с "http://", или ссылку на раздел OneNote, страницу или абзац, начинающийся с "OneNote:".
 
 2. На панели элементов щелкните **артефакт** , а затем щелкните на схеме вариантов использования.
 
@@ -440,5 +440,5 @@ ms.locfileid: "72667842"
 
  ![Подсистемы отображают различные версии системы](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
-## <a name="see-also"></a>См. также раздел
- [Требования к пользователям модели](../modeling/model-user-requirements.md) [UML схемы последовательностей: рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md) [изменению моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы вариантов использования UML: ссылки на](../modeling/uml-use-case-diagrams-reference.md) UML-схемы [классов:](../modeling/uml-class-diagrams-reference.md) эталонные UML- [схемы](../modeling/uml-component-diagrams-reference.md) . [ Схемы активности: руководство](../modeling/uml-activity-diagrams-guidelines.md) [видео. упорядочение функций в вариантах использования](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
+## <a name="see-also"></a>См. также
+ [Требования к пользователям модели](../modeling/model-user-requirements.md) [UML схемы последовательностей: рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md) [изменению моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы вариантов использования UML: ссылки на](../modeling/uml-use-case-diagrams-reference.md) UML-схемы [классов:](../modeling/uml-class-diagrams-reference.md) Справочник по схемам [компонентов UML](../modeling/uml-component-diagrams-reference.md) : Справочник по UML-схемам [деятельности: руководство](../modeling/uml-activity-diagrams-guidelines.md) [видео. упорядочение функций в вариантах использования](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

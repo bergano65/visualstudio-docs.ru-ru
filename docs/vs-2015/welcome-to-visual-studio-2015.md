@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657049"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537962"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Вас приветствует Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "72657049"
 >
 > Щелкните здесь, чтобы ознакомиться с заметками о выпуске [для Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
- Загрузите [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) бесплатно, чтобы сразу приступить к программированию. Для кросс-платформенной разработки необходимо установить дополнительные пакеты. (Дополнительные возможности можно найти в [других выпусках Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
+ Загрузите [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) бесплатно, чтобы сразу приступить к программированию. Для кросс-платформенной разработки необходимо установить дополнительные пакеты. (Дополнительные возможности можно найти в [других выпусках Visual Studio](https://visualstudio.microsoft.com/vs/compare/).)
 
  Начните немедленно: создайте новый проект и приступайте к созданию кода. Выберите тип создаваемого приложения. Кроме того, можно [просмотреть обзор](./ide/visual-studio-ide.md) интегрированной среды разработки Visual Studio, чтобы ознакомиться с возможностями инструментов.
 
  Не забудьте просмотреть нашу [галерею кода](https://code.msdn.microsoft.com/) , где вы найдете примеры, которые помогут вам создавать приложения быстрее.
 
- Можно установить Visual Studio 2015, загрузив эту среду со страницы [Загружаемые файлы Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Дополнительные сведения о процессе установки см. в статье [Установка Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Можно установить Visual Studio 2015, загрузив эту среду со страницы [Загружаемые файлы Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Дополнительные сведения о процессе установки см. в статье [Установка Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Расширение Visual Studio
  Добавьте собственное расширение Visual Studio, чтобы включить в решение инструмент или скрипт, который вы часто используете в работе с кодом. Можно создать пользовательские элементы меню и окна инструментов, чтобы интегрировать собственные инструменты в интегрированную среду разработки Visual Studio. Можно расширить редактор Visual Studio, обеспечив возможность анализа и исправления кода или добавить новый тип проекта и включить в него только то, что нужно.
@@ -74,14 +74,14 @@ ms.locfileid: "72657049"
 - Интеграция API-интерфейсов REST Office 365 в приложения для подключения к данным, хранящимся в облаке. Дополнительные сведения см. в [этих примерах](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Создание превосходных веб-приложений с ASP.NET
- [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) представляет собой существенное обновление для MVC, WebAPI и SignalR, которое работает на платформах Windows, Mac и Linux.  Платформа ASP.NET 5 была разработана с нуля для предоставления компактного, компонуемого стека .NET для создания современных облачных веб-приложений и служб.
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) представляет собой существенное обновление для MVC, WebAPI и SignalR, которое работает на платформах Windows, Mac и Linux.  Платформа ASP.NET 5 была разработана с нуля для предоставления компактного, компонуемого стека .NET для создания современных облачных веб-приложений и служб.
 
 ## <a name="build-test-and-manage-your-code"></a>Создание, тестирование кода и управление им
 
 ### <a name="check-in-your-code"></a>Возврат кода
  При работе в команде необходимо обеспечить обмен актуальными версиями кода, чтобы все участники рабочей группы работали с одной и той же базой кода. Visual Studio легко интегрируется с Visual Studio Team Services или Team Foundation Server, обеспечивая возможность управления версиями с использованием Git или системы управления версиями Team Foundation (TFVC). Используйте Visual Studio Team Services для хранения кода в облаке без необходимости обслуживания локального сервера. Воспользуйтесь Team Foundation Server, если вам нужен локальный сервер. Имеется возможность добавления всех создаваемых проектов кода в систему управления версиями. Узнайте, какая система управления версиями подходит вам больше всего: [Использование системы управления версиями](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
-### <a name="build-your-app"></a>Построение приложения
+### <a name="build-your-app"></a>Построение приложений
  Можно [разработать приложение локально](./ide/compiling-and-building-in-visual-studio.md) и убедиться, что оно правильно работает. Затем воспользуйтесь [средствами отладки](./debugger/debugging-in-visual-studio.md) , чтобы исправить ошибки в приложении. Кроме того, можно создавать проекты на общих серверах сборки или в облаке. Автоматизируйте процедуру сборки, чтобы обеспечить создание кода, который разработчики вашей рабочей группы смогут вернуть в систему управления версиями. Например, можно создавать один или более проектов каждую ночь или всякий раз при возврате кода.
 
 ### <a name="test-your-app"></a>Проверка приложения
@@ -96,7 +96,7 @@ ms.locfileid: "72657049"
 
 |||||
 |-|-|-|-|
-|[Новые возможности Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Новые возможности Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Новые возможности .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Новые возможности ALM](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Новые возможности Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Новые возможности Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Новые возможности .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Новые возможности ALM](/azure/devops/server/whats-new)|
 |[Новые возможности C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Новые возможности Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Новые возможности JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

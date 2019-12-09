@@ -46,6 +46,6 @@ ms.locfileid: "72573725"
     }  
     ```  
   
-## <a name="see-also"></a>См. также  
- [Объект  ](../../javascript/reference/object-object-javascript.md)  
+## <a name="see-also"></a>См. также:  
+ [Объект ](../../javascript/reference/object-object-javascript.md)  
  [Объекты и массивы](../../javascript/objects-and-arrays-javascript.md)

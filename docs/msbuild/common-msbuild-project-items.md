@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0493e7d16a7c7ecb7a9cf7d414e3bd13cb9ad9a7
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636574"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956148"
 ---
 # <a name="common-msbuild-project-items"></a>Общие элементы проектов MSBuild
 В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] элемент представляет собой именованную ссылку на один или несколько файлов. Элементы содержат метаданные, такие как имена файлов, пути и номера версий. Все типы проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеют по несколько общих элементов. Эти элементы определены в файле  *Microsoft.Build.CommonTypes.xsd*.
@@ -141,6 +141,7 @@ ms.locfileid: "73636574"
 
 > [!NOTE]
 > Это относится только к проектам, в которых используется пакет SDK для .NET Core.
+
 ### <a name="baseapplicationmanifest"></a>БазовыйМанифестПриложения
  Представляет базовый манифест приложения для сборки и содержит сведения о безопасности развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 

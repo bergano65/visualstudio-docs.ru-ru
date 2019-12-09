@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3bf4f5fd7ab18efb13e1c52847daf647e908b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968780"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778145"
 ---
 # <a name="tier-interactions-view"></a>Представление "Взаимодействие между уровнями"
 
@@ -36,7 +37,7 @@ ms.locfileid: "62968780"
 
 ## <a name="master-pane"></a>Главная область
 
-|Столбец|Описание|
+|Столбец|ОПИСАНИЕ|
 |------------|-----------------|
 |**Name**|— Для строки верхнего уровня: имя профилируемого процесса или веб-страницы.<br />— Для строки подключения к базе данных: имя сервера, на котором располагается база данных.|
 |**База данных**|Имя базы данных (только для строк подключения к базе данных).|
@@ -48,7 +49,7 @@ ms.locfileid: "62968780"
 
 ## <a name="database-connection-details-pane"></a>Область сведений о подключении к базе данных
 
-|Столбец|Описание|
+|Столбец|ОПИСАНИЕ|
 |------------|-----------------|
 |**Текст команды**|SQL-запрос в запросе.|
 |**Количество запросов**|Количество запусков запроса.|

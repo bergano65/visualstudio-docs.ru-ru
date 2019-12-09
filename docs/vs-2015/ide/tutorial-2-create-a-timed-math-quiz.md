@@ -9,14 +9,14 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a5112ac6b0fc14d7a5bfc5066ae6fbabbc3c0bc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b91e5f864bc15f1fbcab9400d0cd3a4a2e8224a9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654746"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299867"
 ---
-# <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание ограниченной по времени математической головоломки
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание математической головоломки с ограничением по времени
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом учебнике вам предстоит создать головоломку, в которой игрок должен решить четыре арифметические задачи со случайными числами за определенное время. Вы научитесь:
@@ -33,14 +33,12 @@ ms.locfileid: "72654746"
 
   ![Math quiz with four problems](../ide/media/express-finishedquiz.png "Express_FinishedQuiz") Головоломка, созданная в этом учебнике
 
-  Загрузить готовую версию головоломки можно на странице [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Полный пример руководства по созданию математической головоломки).
-
 > [!NOTE]
 > В этом учебнике приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-|Заголовок|Описание|
+|Название|Описание|
 |-----------|-----------------|
 |[Шаг 1. Создание проекта и добавление меток в форму](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Начало работы: создание проекта, изменение свойств и добавление элементов управления `Label`.|
 |[Шаг 2. Создание задачи на сложение случайных чисел](../ide/step-2-create-a-random-addition-problem.md)|Создание задачи на сложение с использованием класса `Random` для генерации случайных чисел.|

@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96ab033cad301f478df3d011b7c648e6e5e8d6c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660365"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301427"
 ---
 # <a name="unit-test-your-code"></a>Модульное тестирование кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "72660365"
 |**Использование покрытия кода для определения того, какая часть кода проекта проверяется с помощью модульных тестов.** Изучите возможности покрытия кода, которые предоставляют средства тестирования [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)].|-   [Using Code Coverage to Determine How Much Code is being Tested](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) (Использование покрытия кода для определения объема тестируемого кода)|
 |**Анализ нагрузки и производительности с помощью нагрузочных тестов для модульных тестов.** Вы можете создать нагрузочный тест и добавить в него модульные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении. **Примечание.** Создание и использование нагрузочных тестов доступно только в Visual Studio Enterprise.|-   [Creating and Editing Load Tests](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337) (Создание и изменение нагрузочных тестов)<br />-   [How to: Add Web Performance Tests and Unit Tests to a Load Test Scenario](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594) (Практическое руководство. Добавление веб-тестов производительности и модульных тестов в сценарий тестовой нагрузки)<br />-   [How to: Remove Web Tests and Unit Tests from a Load Test Scenario](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07) (Практическое руководство. Удаление веб-тестов и модульных тестов из сценария тестовой нагрузки)|
 |**Установка и внедрение системы контроля качества.** Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением кода, что поможет обеспечить его качество.|-   [Установка и внедрение системы контроля качества](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**Расширение типа модульного теста.** Вы можете добавить в тесты функции, которые отсутствуют в платформе модульного тестирования. Например, можно добавить свойство теста, указывающее, должен ли тест выполняться в качестве обычного пользователя. Или можно расширить платформу, чтобы добавить строковые атрибуты в метод и использовать данные из этой строки внутри теста.|Пример кода, который расширяет платформу модульных тестов, вы найдете на следующем [веб-сайте корпорации Майкрософт](http://go.microsoft.com/fwlink/?LinkId=185591).|
+|**Расширение типа модульного теста.** Вы можете добавить в тесты функции, которые отсутствуют в платформе модульного тестирования. Например, можно добавить свойство теста, указывающее, должен ли тест выполняться в качестве обычного пользователя. Или можно расширить платформу, чтобы добавить строковые атрибуты в метод и использовать данные из этой строки внутри теста.|Пример кода, который расширяет платформу модульных тестов, вы найдете на следующем [веб-сайте корпорации Майкрософт](https://go.microsoft.com/fwlink/?LinkId=185591).|
 |**Задание параметров тестирования.** Вы можете, например, задать место для сохранения результатов тестирования.|[Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>Связанные задачи
@@ -63,7 +63,7 @@ ms.locfileid: "72660365"
 
  Предоставляет ссылки на информацию об использовании Visual Studio в противоположность использованию [!INCLUDE[TCMext](../includes/tcmext-md.md)] для запуска автоматических тестов.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Справочные сведения
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> описывает пространство имен UnitTesting, которое предоставляет атрибуты, исключения, утверждения и другие классы, поддерживающие модульное тестирование.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> описывает пространство имен UnitTesting. Web, которое расширяет пространство имен UnitTesting, предоставляя поддержку модульных тестов для [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и веб-служб.
@@ -71,16 +71,16 @@ ms.locfileid: "72660365"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="videos"></a>Видеоролики
- [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](http://go.microsoft.com/fwlink/?LinkId=226285)
+ [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>Форумы
- [Visual Studio Unit Testing](http://go.microsoft.com/fwlink/?LinkId=224477) (Модульное тестирование в Visual Studio)
+ [Модульное тестирование Visual Studio](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="reference"></a>Справочник
- [Content Index for Unit Tests](http://go.microsoft.com/fwlink/?LinkID=254719) (Индекс материалов по модульным тестам)
+### <a name="reference"></a>Справочные сведения
+ [Content Index for Unit Tests](https://go.microsoft.com/fwlink/?LinkID=254719) (Индекс материалов по модульным тестам)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Улучшение тестирования качества кода](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [для приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

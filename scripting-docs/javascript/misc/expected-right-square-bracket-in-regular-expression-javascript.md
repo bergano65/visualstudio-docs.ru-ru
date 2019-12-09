@@ -29,8 +29,8 @@ ms.locfileid: "72576481"
 - Добавьте правую квадратную скобку в регулярное выражение.  
   
     > [!NOTE]
-    > Если нужно сопоставить одну квадратную скобку, построчно заменив ее символом обратной косой черты, \\ [-таким образом, она не интерпретируется как Специальный знак путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Если нужно сопоставить одну квадратную скобку, построчно заменив ее символом обратной косой черты, \\[-таким образом, она не интерпретируется как Специальный знак путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## <a name="see-also"></a>См. также  
- [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

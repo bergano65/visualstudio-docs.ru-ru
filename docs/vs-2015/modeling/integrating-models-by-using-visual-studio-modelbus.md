@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bbb22dd65b806672c7ec2b4888ed8142764f908e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9abb8bd82f8a00c37cb76588ded8813ec984067
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646161"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298894"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Интеграция моделей с помощью Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus предоставляет метод для создания ссылок между моделями и из других средств в модели. Например, можно связать модели доменного языка (DSL) и модели UML. или создать интегрированный набор DSL.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus предоставляет метод для создания ссылок между моделями и из других средств в модели. Например можно связать модели доменного языка (DSL) и моделей UML. или создать интегрированный набор DSL.
 
  ModelBus позволяет создать уникальную ссылку на модель или на определенный элемент внутри модели. Эта ссылка может храниться вне модели, например в элементе другой модели. Если впоследствии средству потребуется доступ к элементу, инфраструктура ModelBus загрузит соответствующую модель и вернет элемент. При необходимости модель можно отобразить для пользователя. Если доступ к файлу в его прежнем расположении невозможен, ModelBus предложит пользователю его найти. Если пользователь найдет файл, ModelBus исправит все ссылки на этот файл.
 
@@ -37,7 +37,7 @@ ms.locfileid: "72646161"
 
 ### <a name="expose"></a>Предоставление определения DSL для шины модели
 
-1. Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [SDK визуализации и моделирования](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkID=185579).
 
 2. Откройте файл определения DSL. Щелкните правой кнопкой мыши область конструктора и выберите команду **включить ModelBus**.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72646161"
    В папке `ModelBusAdapters\bin\*` содержатся сборки, построенные проектом `Dsl` и проектом `ModelBusAdapters`. Чтобы сослаться на этот DSL из другого DSL, импортируйте эти сборки.
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Проверка возможности ссылки на элементы
- По умолчанию адаптеры [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus используют для идентификации элемента его глобальный уникальный идентификатор. Это значит, что такие идентификаторы должны храниться в файле модели.
+ Адаптеры [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus по умолчанию используют идентификатор GUID элемента для его однозначного обнаружения. Это значит, что такие идентификаторы должны храниться в файле модели.
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Проверка сохранности идентификаторов элемента
 
@@ -95,7 +95,7 @@ ms.locfileid: "72646161"
 
 2. В диалоговом окне выберите **я хочу включить эту модель для использования ссылок на шины модели**.
 
-3. В проекте Dsl принимающего DSL к ссылкам проекта добавьте указанные ниже сборки (файлы .DLL). Эти сборки (DLL-файлы) находятся в каталоге Моделбусадаптер\бин \\ * предоставленного DSL.
+3. В проекте Dsl принимающего DSL к ссылкам проекта добавьте указанные ниже сборки (файлы .DLL). Эти сборки (DLL-файлы) находятся в каталоге Моделбусадаптер\бин\\* предоставленного DSL.
 
     - Предоставленная сборка DSL, например **Fabrikam. FamilyTree. DSL. dll**
 
@@ -143,7 +143,7 @@ ms.locfileid: "72646161"
 3. В проект "Отладка" в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] добавьте файлы, являющиеся экземплярами каждого DSL.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus может разрешать ссылки только на модели, которые являются элементами того же решения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus может разрешать ссылки только на модели, которые являются элементами одного и того же [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решения. Например, создать ссылку на файл модели, расположенный в другой части файловой системы, нельзя.
 
 4. Создайте и сохраните несколько элементов и связей в экземпляре предоставляемого DSL.
 
@@ -382,7 +382,7 @@ ModelBusReference elementReferenceRestored =
 
  MBR десериализуется в два этапа.
 
-- `ModelBusReferencePropertySerializer`представляет собой стандартный сериализатор, который работает с заголовком MBR. Он использует стандартный для DSL контейнер свойств `SerializationContext`, который сохраняется в `ReferenceContext` с помощью ключа `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. В частности, `SerializationContext` должен содержать экземпляр `ModelBus`.
+- `ModelBusReferencePropertySerializer` является стандартным сериализатором, который работает с заголовком MBR. Он использует стандартный для DSL контейнер свойств `SerializationContext`, который сохраняется в `ReferenceContext` с помощью ключа `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. В частности, `SerializationContext` должен содержать экземпляр `ModelBus`.
 
 - Адаптер ModelBus работает с адаптерной частью MBR. Он может использовать дополнительные сведения, сохраненные в значении ReferenceContext ссылки ModelBus. Простой адаптер на основе файлов сохраняет пути к корневым файлам, используя ключи `FilePathLoadContextKey` и `FilePathSaveContextKey`.
 
@@ -505,9 +505,9 @@ private const string INVALID_REF_FORMAT =
 
 - Новый проект `ModelBusAdapter` будет добавлен в решение.
 
-- Ссылка на `ModelBusAdapter` будет добавлена в проект `DslPackage`. В `ModelBusAdapter` появится ссылка на проект `Dsl`.
+- Ссылка на `ModelBusAdapter` будет добавлена в проект `DslPackage`. `ModelBusAdapter` имеет ссылку на проект `Dsl`.
 
 - В **дслпаккаже\саурце.екстентион.ТТ**в качестве компонента MEF добавляется `|ModelBusAdapter|`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Как открыть модель из файла в программном коде](../modeling/how-to-open-a-model-from-file-in-program-code.md) [Интеграция моделей UML с другими моделями и инструментами](../modeling/integrate-uml-models-with-other-models-and-tools.md) [Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md) .

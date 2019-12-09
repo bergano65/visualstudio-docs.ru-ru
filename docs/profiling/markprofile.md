@@ -8,14 +8,15 @@ ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430934"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778574"
 ---
 # <a name="markprofile"></a>MarkProfile
 Метод `MarkProfile` вставляет метку профилирования в *VSP*-файл. Для добавления метки должно быть активировано профилирование для потока, содержащего функцию `MarkProfile`.
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:
 
-|Перечислитель|Описание|
+|Перечислитель|ОПИСАНИЕ|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|Значение параметра меньше или равно нулю. Эти значения зарезервированы. Метка и комментарий не записываются.|
 |MARK_ERROR_MODE_NEVER|На момент вызова функции был установлен режим профилирования NEVER. Метка и комментарий не записываются.|

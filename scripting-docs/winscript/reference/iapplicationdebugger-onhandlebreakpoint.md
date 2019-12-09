@@ -50,17 +50,17 @@ HRESULT onHandleBreakPoint(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод вызывается при попадании в точку останова и вызове `IDebugApplication::HandleBreakPoint`.  
   
  Приложение будет оставаться приостановленным до тех пор, пока IDE отладчика не вызовет `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса иаппликатиондебугжер](../../winscript/reference/iapplicationdebugger-interface.md)  
- [IDebugApplication:: хандлебреакпоинт](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
- [IRemoteDebugApplication:: ресумефромбреакпоинт](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса иаппликатиондебугжер](../../winscript/reference/iapplicationdebugger-interface.md)  
+ [IDebugApplication:: хандлебреакпоинт](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
+ [IRemoteDebugApplication:: ресумефромбреакпоинт](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [Перечисление BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

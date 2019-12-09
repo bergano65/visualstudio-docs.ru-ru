@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668543"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289859"
 ---
 # <a name="navigate-the-uml-model"></a>Навигация по модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "72668543"
 В этом разделе представлены основные типы модели UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Элементы модели, модель и ее хранилище
- Типы, определенные в сборке **Microsoft. VisualStudio. UML. interfaces. dll** , соответствуют типам, определенным в [спецификации UML версии 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ Типы, определенные в сборке **Microsoft. VisualStudio. UML. interfaces. dll** , соответствуют типам, определенным в [спецификации UML версии 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
  Типы в спецификации UML реализуются в Visual Studio как интерфейсы. Перед именем каждого типа добавляется буква "I". Например: [IElement](/previous-versions/dd516035(v=vs.140)), [икласс](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
@@ -45,7 +45,7 @@ ms.locfileid: "72668543"
 
  При удалении элемента из модели все связи, в которых он был задействован, автоматически удаляются с обновлением свойства на другом конце.
 
- Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Кратность с максимальным значением больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*type* `>`.
+ Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Кратность с максимальным значением больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*type*`>`.
 
  Дополнительные сведения о просмотре связей см. [в разделе Навигация по связям с помощью API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```
 
 ## <a name="accessing-another-model-or-diagrams"></a>Доступ к другой модели или схемам
- Можно выполнить следующие действия.
+ Можно сделать следующее:
 
 - Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. [в разделе Интеграция моделей UML с другими моделями и инструментами](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 

@@ -3,14 +3,14 @@ title: Инструменты Visual Studio для Mac для Unity
 description: Введение в расширение инструментов Visual Studio для Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 98a34df9960ca95edbaf6b9c5ae91d7cd4e06568
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691861"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797252"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Инструменты Visual Studio для Mac для Unity
 
@@ -47,6 +47,12 @@ IntelliSense позволяет легко и быстро [реализоват
 ### <a name="powerful-refactoring-and-context-actions"></a>Эффективный рефакторинг и контекстные действия
 
 Пишите более удобный код благодаря быстрым меню и сочетаниям клавиш для [переименования, рефакторинга и контекстных действия](refactoring.md).
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Диагностические данные Roslyn и быстрые исправления для Unity
+
+Напишите эффективный код, сочетающий в себе лучшие методики и глубокое понимание проектов Unity Visual Studio для Mac. 
+
+![Сравнение строки рефакторинга VS для Mac с CompareTag](media/using-vsmac-tools-unity-image9.png)
 
 ### <a name="browse-and-add-new-files"></a>Обзор и добавление новых файлов
 

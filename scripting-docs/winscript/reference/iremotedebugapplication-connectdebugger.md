@@ -42,14 +42,14 @@ HRESULT ConnectDebugger(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Отладчик уже подключен к этому приложению.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  В приложении может быть подключен только один отладчик за раз. Этот метод завершается ошибкой, если уже подключен отладчик.  
   
-## <a name="see-also"></a>См. также  
- [IRemoteDebugApplication::   отладчика](../../winscript/reference/iremotedebugapplication-getdebugger.md)  
+## <a name="see-also"></a>См. также:  
+ [IRemoteDebugApplication::  отладчика](../../winscript/reference/iremotedebugapplication-getdebugger.md)  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

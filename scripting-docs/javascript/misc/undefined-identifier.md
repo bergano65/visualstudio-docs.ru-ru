@@ -34,6 +34,6 @@ ms.locfileid: "72572544"
   
 - Объявите переменную с помощью оператора **var** (как в `var` x;).  
   
-## <a name="see-also"></a>См. также  
- [Переменные](../../javascript/variables-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Переменные](../../javascript/variables-javascript.md)   
  [Область действия переменных](../../javascript/advanced/variable-scope-javascript.md)

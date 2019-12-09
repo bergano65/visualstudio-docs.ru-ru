@@ -46,12 +46,12 @@ HRESULT AddDeferredText(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Сбой метода.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод позволяет узлу отложить предоставление символов для добавления до тех пор, пока они не понадобятся, в то же время позволяя вспомогательному приложению формировать точные уведомления и сведения о размере. Параметр `dwTextStartCookie` — это файл cookie, определяемый узлом, который представляет начальную точку текста. Последующие вызовы `IDebugDocumentText::GetText` должны предоставить этот файл cookie. Например, в узле, представляющем текст в двухбайтовой кодировке (DBCS), файл cookie может быть смещением в байтах.  
   
  Предполагается, что один вызов `IDebugDocumentText::GetText` может получать символы из нескольких вызовов `AddDeferredText`. Вспомогательные классы также могут запрашивать один и тот же диапазон отложенных символов более одного раза.  
@@ -59,8 +59,8 @@ HRESULT AddDeferredText(
 > [!NOTE]
 > Вызовы `AddDeferredText` не должны смешиваться с вызовами `AddUnicodeText` или `AddDBCSText`. Если это происходит, возвращается `E_FAIL`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: аддуникодетекст](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: аддуникодетекст](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper:: адддбкстекст](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

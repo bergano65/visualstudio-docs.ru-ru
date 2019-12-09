@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da86a6cf2e561fdc7e642a76b84b4e604bec12d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651245"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300244"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Схемы моделирования помогают понять, уточнить и передать другим сведения о коде и пользовательских требованиях, которым должна удовлетворять ваша программная система. Например, для описания и передачи пользовательских требований можно использовать схемы UML вариантов использования, деятельности, классов и последовательностей. Для описания функциональных возможностей системы и передачи сведений о них можно использовать схемы UML компонентов, классов, деятельности и последовательностей.
 
- См. [видео Channel 9: улучшение архитектуры с помощью моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).
+ См. [видео Channel 9: улучшение архитектуры с помощью моделирования](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  В этом выпуске можно создавать следующие UML-схемы:
 
@@ -98,4 +98,4 @@ ms.locfileid: "72651245"
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|

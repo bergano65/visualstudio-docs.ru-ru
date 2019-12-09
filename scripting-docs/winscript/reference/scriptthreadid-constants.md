@@ -35,17 +35,17 @@ typedef DWORD SCRIPTTHREADID;
   
 ## <a name="constants"></a>Константы  
   
-|Константа|значения|Смысл|  
+|постоянное значение.|Значение|Значение|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Выполняющийся в данный момент поток.|  
 |SCRIPTTHREADID_BASE|0xFFFFFFFE|Базовый поток; то есть поток, в котором был создан экземпляр обработчика сценариев.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Все потоки.|  
   
-## <a name="remarks"></a>Заметки  
- Тип `SCRIPTTHREADID` используется `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` и `IActiveScript::InterruptScriptThread`, но константы могут использоваться только `IActiveScript::GetScriptThreadState` и `IActiveScript::InterruptScriptThread`.  
+## <a name="remarks"></a>Примечания  
+ Тип `SCRIPTTHREADID` используется `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`и `IActiveScript::InterruptScriptThread`, но константы могут использоваться только `IActiveScript::GetScriptThreadState` и `IActiveScript::InterruptScriptThread`.  
   
-## <a name="see-also"></a>См. также  
- [IActiveScript:: жеткуррентскриптсреадид](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript:: жетскриптсреадид](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript:: жетскриптсреадстате](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
+## <a name="see-also"></a>См. также:  
+ [IActiveScript:: жеткуррентскриптсреадид](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript:: жетскриптсреадид](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript:: жетскриптсреадстате](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

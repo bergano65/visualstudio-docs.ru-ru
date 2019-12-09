@@ -44,7 +44,7 @@ HRESULT GetMemberProperties(
  `grfdexFetch`  
  Определяет, какие свойства следует извлечь. Это может быть сочетание значений, перечисленных в разделе `pgrfdex` и/или сочетания следующих значений:  
   
-|значения|Смысл|  
+|Значение|Значение|  
 |-----------|-------------|  
 |грфдекспропканалл|Объединяет Фдекспропканжет, Фдекспропканпут, Фдекспропканпутреф, Фдекспропканкалл, Фдекспропканконструкт и fdexPropCanSourceEvents.|  
 |грфдекспропканноталл|Объединяет Фдекспропканнотжет, Фдекспропканнотпут, Фдекспропканнотпутреф, Фдекспропканноткалл, Фдекспропканнотконструкт и fdexPropCannotSourceEvents.|  
@@ -54,7 +54,7 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  Адрес `DWORD`, который получает запрошенные свойства. Это может быть сочетание следующих значений:  
   
-|значения|Смысл|  
+|Значение|Значение|  
 |-----------|-------------|  
 |фдекспропканжет|Элемент можно получить с помощью DISPATCH_PROPERTYGET.|  
 |фдекспропканнотжет|Не удается получить элемент с помощью DISPATCH_PROPERTYGET.|  
@@ -67,7 +67,7 @@ HRESULT GetMemberProperties(
 |фдекспропканкалл|Член можно вызвать как метод с помощью DISPATCH_METHOD.|  
 |фдекспропканноткалл|Член нельзя вызвать как метод с помощью DISPATCH_METHOD.|  
 |фдекспропканконструкт|Член можно вызвать как конструктор с помощью DISPATCH_CONSTRUCT.|  
-|фдекспропканнотконструкт|Член нельзя вызвать как конструктор с помощью DISPATCH_CONSTRUCT.|  
+|фдекспропканнотконструкт|Элемент не может быть вызван как конструктор с помощью DISPATCH_CONSTRUCT.|  
 |фдекспропкансаурцеевентс|Элемент может запускать события.|  
 |фдекспропканнотсаурцеевентс|Член не может порождать события.|  
   
@@ -96,7 +96,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

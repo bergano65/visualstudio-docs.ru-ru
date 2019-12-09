@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432303"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299313"
 ---
 # <a name="creating-your-own-start-page"></a>Создание собственной начальной страницы
 Настраиваемую начальную страницу можно создать с помощью шаблона проекта начальной страницы или путем создания пустой начальной страницы.  
@@ -28,10 +28,10 @@ ms.locfileid: "63432303"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Создание настраиваемой начальной страницы с помощью шаблона проекта начальной страницы  
   
-1. Скачайте и установите [шаблон проекта начальной страницы](http://go.microsoft.com/fwlink/?LinkId=186204) из коллекции Visual Studio.  
+1. Скачайте и установите [шаблон проекта начальной страницы](https://go.microsoft.com/fwlink/?LinkId=186204) из коллекции Visual Studio.  
   
     > [!WARNING]
-    > На данный момент шаблон проекта начальной страницы Visual Studio 2010 еще не обновлен. Сведения об обновлении этого шаблона см. в разделе [как: Обновление настраиваемой начальной страницы Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > На данный момент шаблон проекта начальной страницы Visual Studio 2010 еще не обновлен. Сведения о том, как обновить этот шаблон, см. [в разделе как обновить настраиваемую начальную страницу Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Установив шаблон, создайте с его помощью проект начальной страницы.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "63432303"
   
     Файлы VSIX и PKGDEF следует сохранить для целей развертывания.  
   
-   Кроме того, пустую начальную страницу можно создать путем создания XAML-файла с правильной структурой тегов, распознаваемой средой Visual Studio. Затем можно добавить разметку и код программной части для получения нужного внешнего вида и функциональности. Дополнительные сведения см. в разделе [Создание настраиваемая начальная страница](../extensibility/creating-a-custom-start-page.md).  
+   Кроме того, пустую начальную страницу можно создать путем создания XAML-файла с правильной структурой тегов, распознаваемой средой Visual Studio. Затем можно добавить разметку и код программной части для получения нужного внешнего вида и функциональности. Дополнительные сведения см. [в разделе Создание настраиваемой начальной страницы](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Тестирование и применение настраиваемой начальной страницы  
  Не запускайте начальную страницу в основном экземпляре, пока не убедитесь в том, что она работает без сбоев. Протестировав настраиваемую начальную страницу, можно применить ее к системе, повторив последние три действия этой процедуры в основном экземпляре Visual Studio.  
@@ -97,8 +97,8 @@ ms.locfileid: "63432303"
   
     Откроется работающая начальная страница. Чтобы увидеть изменения, необходимо закрыть экспериментальный экземпляр, повторно скопировать все измененные файлы, а затем снова открыть экспериментальный экземпляр.  
   
-   Вы можете делиться к настраиваемой начальной странице, отправьте файл VSIX из каталога bin\debug на [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайт или на другой веб-сайт или интрасети в общую папку. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   Вы можете предоставить общий доступ к настраиваемой начальной странице, передав файл VSIX из каталога bin\Debug на веб-сайт [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или на другой веб-сайт или в общую папку интрасети. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Пошаговое руководство: добавление настраиваемого XAML-файла на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Пошаговое руководство. Добавление настраиваемого XAML-файла на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

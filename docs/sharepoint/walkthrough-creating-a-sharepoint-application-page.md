@@ -37,7 +37,7 @@ ms.locfileid: "72985031"
 > [!NOTE]
 > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
 - Поддерживаемые выпуски Windows и SharePoint.
 
@@ -151,7 +151,7 @@ ms.locfileid: "72985031"
 
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Как создать страницу приложения](../sharepoint/how-to-create-an-application-page.md)
-[тип страницы приложения](/previous-versions/office/aa979604(v=office.14)) в папке _layouts
+[тип страницы _layouts приложения](/previous-versions/office/aa979604(v=office.14))

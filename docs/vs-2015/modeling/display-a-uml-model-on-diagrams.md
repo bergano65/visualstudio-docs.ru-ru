@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c8365f045618b92b4b34935bf5024c2ff781650
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669744"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296012"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Отображение модели UML на схемах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "72669744"
 |---------------------|-----------------|-------------------------------------|
 |Классификатор|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Создайте связанные фигуры на заданных схемах. Можно создать любое количество фигур для каждого классификатора.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Задайте для `parentShape` значение `null` для фигуры на верхнем уровне схемы.<br /><br /> Отображение одной фигуры внутри другой:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Примечание.** если вы выполняете отображение внутри транзакции **илинкедундо** , метод иногда не возвращает `IShape`. Однако фигура создается правильно и доступна посредством `IElement.Shapes().`|
 |Дочерний элемент классификатора|Атрибут, операция,<br /><br /> Часть, порт|Выполняется автоматически — код не требуется.<br /><br /> Он отображается в качестве части родительского элемента.|
-|Поведение|Взаимодействие (последовательность),<br /><br /> Действие|Привяжите поведение к соответствующей схеме.<br /><br /> Каждое поведение одновременно можно привязать только к одной.<br /><br /> Пример:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|Поведение|Взаимодействие (последовательность),<br /><br /> Действие|Привяжите поведение к соответствующей схеме.<br /><br /> Каждое поведение одновременно можно привязать только к одной.<br /><br /> Пример.<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Дочерний элемент поведения|Жизненные циклы, сообщения, действия, узлы объектов|Выполняется автоматически — код не требуется.<br /><br /> Отображается, если родительский объект привязан к схеме.|
 |Relationship|Ассоциация, обобщение, поток, зависимость|Выполняется автоматически — код не требуется.<br /><br /> Он отображается на каждой схеме, на которой показаны оба конца.|
 
@@ -378,5 +378,5 @@ namespace AlignCommand
 
 ```
 
-## <a name="see-also"></a>См. также раздел
- [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Навигация по модели UML](../modeling/navigate-the-uml-model.md) [Образец: Выровняйте фигуры в диаграмме команда меню](http://go.microsoft.com/fwlink/?LinkId=213809) [: создание элементов, фигур и стереотипов](http://go.microsoft.com/fwlink/?LinkId=213811)
+## <a name="see-also"></a>См. также
+ [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Навигация по модели UML](../modeling/navigate-the-uml-model.md) [Образец: Выровняйте фигуры в диаграмме команда меню](https://go.microsoft.com/fwlink/?LinkId=213809) [: создание элементов, фигур и стереотипов](https://go.microsoft.com/fwlink/?LinkId=213811)

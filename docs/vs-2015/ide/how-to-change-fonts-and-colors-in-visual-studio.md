@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645441"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300138"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "72645441"
     > [!IMPORTANT]
     > При изменении цветовой темы шрифты текста и их размер в интегрированной среде разработки возвращаются к значениям по умолчанию или ранее настроенным значениям.
     >
-    >  Если вы работаете в выпуске Visual Studio Professional, Visual Studio Premium или Visual Studio Ultimate, можно установить дополнительные предопределенные темы, а также создать свои собственные темы, скачав и установив редактор [Visual Studio 2013 Color Theme Editor](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
+    >  Если вы работаете в выпуске Visual Studio Professional, Visual Studio Premium или Visual Studio Ultimate, можно установить дополнительные предопределенные темы, а также создать свои собственные темы, скачав и установив редактор [Visual Studio 2013 Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=MatthewJohnsonMSFT.VisualStudio2013ColorThemeEditor).
 
 ### <a name="use-windows-high-contrast-colors"></a>Использование цветов Windows высокой контрастности
 
@@ -65,5 +65,5 @@ ms.locfileid: "72645441"
 
 5. В списке **Размер** выберите размер текста и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [как: Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

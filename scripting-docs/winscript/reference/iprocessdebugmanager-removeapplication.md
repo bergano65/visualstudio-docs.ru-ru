@@ -42,13 +42,13 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот метод удаляет приложение из списка выполняющихся приложений.  
   
-## <a name="see-also"></a>См. также  
- [IProcessDebugManager:: аддаппликатион](../../winscript/reference/iprocessdebugmanager-addapplication.md)    
+## <a name="see-also"></a>См. также:  
+ [IProcessDebugManager:: аддаппликатион](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [Интерфейс IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

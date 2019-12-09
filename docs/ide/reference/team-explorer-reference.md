@@ -5,18 +5,18 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945092"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538574"
 ---
 # <a name="team-explorer-reference"></a>Справка по Team Explorer
 
 В этой статье приводятся ссылки на статьи по Azure DevOps, посвященные различным возможностям в **Team Explorer**.
 
-Окно средства **Team Explorer** используется для координации усилий с другими членами команды при разработке проекта, а также для управления работой, назначенной вам, вашей команде или вашим командным проектам. **Team Explorer** обеспечивает подключение Visual Studio к репозиториям Git и GitHub, репозиториям системы управления версиями Team Foundation (TFVC), а также проектам, размещенным в [службах Azure DevOps](/azure/devops/user-guide/what-is-azure-devops-services) или на локальном [сервере Azure DevOps](/tfs/index) (прежнее название TFS). Можно управлять исходным кодом, рабочими элементами и сборками.
+Окно средства **Team Explorer** используется для координации усилий с другими членами команды при разработке проекта, а также для управления работой, назначенной вам, вашей команде или вашим командным проектам. **Team Explorer** обеспечивает подключение Visual Studio к репозиториям Git и GitHub, репозиториям системы управления версиями Team Foundation (TFVC), а также проектам, размещенным в [службах Azure DevOps](/azure/devops/user-guide/what-is-azure-devops-services) или на локальном [сервере Azure DevOps](/azure/devops/index-all) (прежнее название TFS). Можно управлять исходным кодом, рабочими элементами и сборками.
 
 ## <a name="home-page"></a>домашняя страница
 
@@ -102,7 +102,7 @@ ms.locfileid: "62945092"
 
 На странице **Параметры** можно настроить административные функции для проектов или коллекции проектов. См. следующие статьи:
 
-| Проект | Коллекция проектов | Другое |
+| Проект | Коллекция проектов | Другой |
 | - | - | - |
 | [Безопасность, членство в группе](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Безопасность, система управления версиями (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Области рабочих элементов](/azure/devops/organizations/settings/set-area-paths)<br/>[Итерации рабочих элементов](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Параметры портала](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Оповещения проекта](/azure/devops/notifications/howto-manage-team-notifications) | [Безопасность, членство в группе](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Система управления версиями (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Диспетчер шаблона процесса](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Глобальные параметры Git](/azure/devops/repos/git/git-config)<br/>[Параметры репозитория Git](/azure/devops/repos/git/git-config) |
 

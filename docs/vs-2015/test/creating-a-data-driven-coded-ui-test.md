@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660635"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302607"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ ms.locfileid: "72660635"
 
    **Руководство**
 
-   Дополнительные сведения см. в разделах [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188) и [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196).
+   Дополнительные сведения см. в разделах [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188) и [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://go.microsoft.com/fwlink/?LinkID=255196).
 
 ## <a name="q--a"></a>Вопросы и ответы
 

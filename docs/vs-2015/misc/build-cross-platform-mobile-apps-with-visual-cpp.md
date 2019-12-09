@@ -1,5 +1,5 @@
 ---
-title: Создание кросс платформенных мобильных приложений с помощью Visual C++ | Документация Майкрософт
+title: Создание кросс-платформенных мобильных приложений с C++ помощью Visual | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,17 +9,17 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 860ca971d8c3e42ef6d690c7f55b3ce2716b1c4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 60dbeacbbb4b4e169dd84d0018a0c078ccca7def
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946821"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299357"
 ---
-# <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Создание кросс платформенных мобильных приложений с помощью Visual C++
+# <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Создание кросс-платформенных мобильных приложений с помощью VisualC++
 Вы можете создать кроссплатформенный код для устройств Android, iOS и Windows, используя Visual C++ для разработки кроссплатформенных мобильных приложений. Это необязательный компонент, доступный в Visual Studio 2015, который обеспечивает поддержку кроссплатформенной разработки кода для iOS, Android и Windows с помощью Visual C++.  
   
- Инструкции по установке и примеры кода см. в разделе [Visual C++ для разработки кросс-платформенных мобильных приложений](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).  
+ Инструкции по установке и примеры кода см. в разделе [ C++ Visual для кросс-платформенной разработки мобильных приложений](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).  
   
 ## <a name="see-also"></a>См. также  
- [Скачайте Visual Studio 2015](http://go.microsoft.com/fwlink/?linkid=517106)
+ [Загрузка Visual Studio 2015](https://go.microsoft.com/fwlink/?linkid=517106)

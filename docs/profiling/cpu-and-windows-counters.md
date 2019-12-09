@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553023"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779554"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 
@@ -95,7 +96,7 @@ ms.locfileid: "62553023"
 
       **Примечание.** Нажмите кнопку **Отмена**, чтобы вернуться к предыдущей конфигурации выборки.
 
-     - или -
+     -или-
 
    - Выберите **Счетчики ЦП**, а затем — **Сбор данных счетчиков ЦП**. Счетчики ЦП отображаются в списке **Доступные счетчики**.
 

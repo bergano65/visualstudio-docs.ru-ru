@@ -9,14 +9,15 @@ ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d13a3db996537005c0d4ec67b85c185ac2841cc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447248"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779302"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Отчет трассировки событий Windows
 Отчет о трассировке событий Windows содержит события трассировки событий Windows, зарегистрированные в ходе сеанса производительности для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Данные трассировки событий Windows собираются в двоичном *ETL*-файле.
@@ -30,7 +31,7 @@ ms.locfileid: "63447248"
 
 - Отчет о трассировке событий Windows можно создать с помощью команды **VSReport/Summary:ETW**. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md).
 
-|Столбец|Описание|
+|Столбец|ОПИСАНИЕ|
 |------------|-----------------|
 |**Метка времени**|Указывает время, когда произошло событие.|
 |**Идентификатор процесса**|Указывает процесс, создавший событие.|

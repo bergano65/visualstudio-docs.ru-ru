@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 489642936c6b309cd7a30eb6e0a5ad9b0edc8bd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659410"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301344"
 ---
 # <a name="validate-your-system-during-development"></a>Проверка системы в ходе разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ Visual Studio помогает привести в соответствие пр
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Дуг семь: понимание кода и проектирование систем с помощью Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") - [канал 9. Создание архитектуры приложения с помощью схемы слоев](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") [серия практических руководств MSDN: как проверить код с помощью схем слоев](http://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Блоги**|-   [Блог по Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Дуг семь: понимание кода и проектирование систем с помощью Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") - [канал 9. Создание архитектуры приложения с помощью схемы слоев](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") [серия практических руководств MSDN: как проверить код с помощью схем слоев](https://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Блоги**|-   [Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Тестирование приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [модель схемы требования пользователей](../modeling/model-user-requirements.md) [анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)

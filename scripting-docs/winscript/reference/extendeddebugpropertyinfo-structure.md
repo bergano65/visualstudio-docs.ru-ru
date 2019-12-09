@@ -46,7 +46,7 @@ typedef struct ExtendedDebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
  `dwValidFields`  
  Перечислимый тип данных, используемый для указания, какие поля инициализируются.  
   
@@ -83,9 +83,9 @@ typedef struct ExtendedDebugPropertyInfo{
  `pDebugExtProp`  
  `IDebugExtendedProperty` объект, соответствующий этому `ExtendedDebugPropertyInfo`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [структуры дебугпропертинфо](../../winscript/reference/debugpropertyinfo-structure.md)  
- @No__t_1 [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
- @No__t_1 [интерфейса идебужекстендедпроперти](../../winscript/reference/idebugextendedproperty-interface.md)  
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+## <a name="see-also"></a>См. также:  
+   [структуры дебугпропертинфо](../../winscript/reference/debugpropertyinfo-structure.md)  
+   [интерфейса IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+   [интерфейса идебужекстендедпроперти](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

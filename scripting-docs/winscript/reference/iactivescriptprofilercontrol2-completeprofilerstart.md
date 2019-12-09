@@ -35,7 +35,7 @@ HRESULT CompleteProfilerStart();
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает значение HRESULT. Ниже приведены возможные значения.  
   
-|Возвращаемое значение|Смысл|  
+|Возвращаемое значение|Значение|  
 |------------------|-------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Не удается запустить профилирование.|  
@@ -43,9 +43,9 @@ HRESULT CompleteProfilerStart();
 |`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включено. Обратный вызов не задан.|  
 |`E_OUTOFMEMORY`|Не удается получить стек вызовов из-за нехватки памяти.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Вызов `IActiveScriptProfilerControl2::CompleteProfilerStart` гарантирует отправку событий для функций, уже находящиеся в стеке вызовов. Этот метод должен вызываться после запуска профилирования на любом обработчике скриптов, который находится на текущей вкладке. Метод может быть вызван для любого обработчика скриптов.  
   
-## <a name="see-also"></a>См. также  
- [IActiveScriptProfilerControl2::P репарепрофилерстоп](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+## <a name="see-also"></a>См. также:  
+ [IActiveScriptProfilerControl2::P репарепрофилерстоп](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [Интерфейс IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

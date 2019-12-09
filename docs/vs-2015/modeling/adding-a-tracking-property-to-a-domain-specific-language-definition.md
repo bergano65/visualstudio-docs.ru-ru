@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609249"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292643"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,14 +45,14 @@ ms.locfileid: "72609249"
 
 - В окне **Свойства** , когда свойство отслеживания находится в состоянии Обновлено пользователем, его значение отображается полужирным шрифтом.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Перед началом работы с этим пошаговым руководством необходимо сначала установить следующие компоненты:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-the-dsl-project"></a>Создание проекта DSL
  Создайте проект для конкретного доменного языка.
@@ -98,7 +98,7 @@ ms.locfileid: "72609249"
 
     1. Назовите новое свойство `DefaultNamespace`.
 
-    2. В окне **Свойства** нового свойства задайте **значение по умолчанию** `DefaultNamespace` и присвойте параметру **тип** **строковое**.
+    2. В окне **Свойства** нового свойства задайте **значение по умолчанию** `DefaultNamespace`и присвойте параметру **тип** **строковое**.
 
 2. В доменный класс **пространстве ExampleModel** добавьте свойство домена с именем `CustomElements`.
 
@@ -156,11 +156,11 @@ ms.locfileid: "72609249"
 
 2. Щелкните правой кнопкой мыши новую папку **значение CustomCode** , выберите команду **Добавить**, а затем пункт **новый элемент**.
 
-3. Выберите шаблон **файл кода** , задайте **имя** для `NamespaceTrackingProperty.cs` и нажмите кнопку **ОК**.
+3. Выберите шаблон **файл кода** , задайте **имя** для `NamespaceTrackingProperty.cs`и нажмите кнопку **ОК**.
 
      Файл NamespaceTrackingProperty.cs создается и открывается для редактирования.
 
-4. В папке создайте следующие файлы кода: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs` и `TypeDescriptor.cs`.
+4. В папке создайте следующие файлы кода: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`и `TypeDescriptor.cs`.
 
 5. В проекте **DslPackage** также создайте папку `CustomCode` и добавьте в нее файл `Package.cs` Code.
 
@@ -348,7 +348,7 @@ ms.locfileid: "72609249"
 
  Определение метода `GetCustomElementsValue` предоставляет логику для вычисляемого свойства Кустомелементс `ExampleModel`. Этот метод подсчитывает количество `ExampleElement` классов доменов, имеющих свойство отслеживания пространства имен с измененным пользователем значением, и возвращает строку, представляющую это количество как часть общего числа элементов в модели.
 
- Кроме того, добавьте метод `OnDefaultNamespaceChanged` для `ExampleModel` и переопределите метод `OnValueChanged` `DefaultNamespacePropertyHandler` вложенного класса `ExampleModel`, чтобы вызвать `OnDefaultNamespaceChanged`.
+ Кроме того, добавьте метод `OnDefaultNamespaceChanged` для `ExampleModel`и переопределите метод `OnValueChanged` `DefaultNamespacePropertyHandler` вложенного класса `ExampleModel`, чтобы вызвать `OnDefaultNamespaceChanged`.
 
  Так как свойство свойство DefaultNamespace используется для вычисления свойства отслеживания пространства имен, `ExampleModel` должен уведомлять все `ExampleElement`ные классы домена о том, что значение свойство DefaultNamespace изменилось.
 
@@ -756,9 +756,9 @@ ms.locfileid: "72609249"
 
 10. Сохраните решение, а затем закройте экспериментальную сборку.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
  Если планируется использовать несколько свойств отслеживания или реализовать свойства отслеживания более чем в одном DSL, можно создать текстовый шаблон для создания общего кода для поддержки каждого свойства отслеживания. Дополнительные сведения о текстовых шаблонах см. в разделе [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
  Инструкции по [определению доменного языка](../modeling/how-to-define-a-domain-specific-language.md) [Практическое руководство. Создание решения для](../modeling/how-to-create-a-domain-specific-language-solution.md) доменного языка — [Настройка определения предметно-](../misc/walkthrough-customizing-the-domain-specific-language-definition.md) ориентированного языка

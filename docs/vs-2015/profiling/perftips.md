@@ -9,31 +9,31 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac7068fae27e2f0ba699f404374859ef7b91d1a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fa56b6731e359db486a111194a710069d41a2f1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675312"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295863"
 ---
 # <a name="perftips"></a>PerfTips
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 С помощью подсказок *PerfTips* , отображаемых в отладчике Visual Studio, а также встроенных в отладчик **средств диагностики** вы можете отслеживать и анализировать производительность вашего приложения во время отладки.  
   
- Несмотря на то, что встроенные в отладчик средства диагностики — это отличный способ оценить производительность приложения во время разработки, работа отладчика может существенно сказаться на показателях программы. Чтобы получить более точные данные о производительности, попробуйте дополнительно проанализировать программу с помощью средств диагностики Visual Studio, не встроенных в отладчик. См. в разделе [запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Несмотря на то, что встроенные в отладчик средства диагностики — это отличный способ оценить производительность приложения во время разработки, работа отладчика может существенно сказаться на показателях программы. Чтобы получить более точные данные о производительности, попробуйте дополнительно проанализировать программу с помощью средств диагностики Visual Studio, не встроенных в отладчик. См. раздел [Запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 ## <a name="perftips"></a>PerfTips  
- При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в разделе [PerfTips. Информация о производительности прямо при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
+ При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в записи блога [PerfTips: информация о производительности при отладке с помощью Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).  
   
- ![PerfTip](../profiling/media/dbgdiag-perf-perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![Подсказку с затраченным](../profiling/media/dbgdiag-perf-perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Окно "Средства диагностики"  
  Точки останова и связанные с ними данные о времени отображаются в окне "Средства диагностики".  
   
  На рисунке ниже показано окно "Средства диагностики в Visual Studio 2015 с обновлением 1.  
   
- ![DiagnosticTools: обновление 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+ ![Диагностиктулс&#45;update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 - На временной шкале **События прерывания** отмечаются точки останова, достигнутые за сеанс отладки. Щелкните событие, чтобы выбрать его в списке сведений **отладчика** .  
   

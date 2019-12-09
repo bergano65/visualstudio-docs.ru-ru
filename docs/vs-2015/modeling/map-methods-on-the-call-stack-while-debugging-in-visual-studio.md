@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81ae908c29b45b09d2ecec84c3189e6fb4e7a45b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a2c6e95822794394dbdfc7f53104b31b7c17ea9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657587"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296070"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "72657587"
 
 - Код, поддерживающий отладку: Visual C# .NET, Visual Basic .NET, C++, JavaScript и X++
 
-  См. [видео: Отладка с использованием отладчика карт кода (канал 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [карта стека вызовов](#MapStack) • [Создание заметок о коде](#MakeNotes) • [Обновление карты со следующим стеком вызовов](#UpdateMap) • [Добавление связанного кода в карту](#AddRelatedCode) • [Поиск ошибок с помощью Map](#FindBugs) • [вопросы & A](#QA)
+  См. [видео: Отладка визуального элемента с помощью функции интеграции с отладчиком карт кода (канал 9)](https://go.microsoft.com/fwlink/?LinkId=293418) • [карта стека вызовов](#MapStack) • [Создание примечаний о коде](#MakeNotes) • [Обновление карты со следующим стеком вызовов](#UpdateMap) • [Добавление связанного кода в карту](#AddRelatedCode) • [Поиск ошибок с помощью карты](#FindBugs) • [Q & A](#QA)
 
   Дополнительные сведения о командах и действиях, которые можно использовать при работе с картами кода, см. в разделе [Обзор и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -58,7 +58,7 @@ ms.locfileid: "72657587"
 
 1. Приступите к отладке. (Клавиатура: **F5**)
 
-2. После того как приложение переходит в режим приостановки выполнения или вы выполняете шаг с заходом в функцию, выберите **карту кода**. (Клавиатура: **Ctrl**  + **SHIFT**  +  **`** )
+2. После того как приложение переходит в режим приостановки выполнения или вы выполняете шаг с заходом в функцию, выберите **карту кода**. (Клавиатура: **Ctrl** + **SHIFT** +  **`** )
 
      ![Выбор сопоставления кода для начала сопоставления стека вызовов](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -153,7 +153,7 @@ ms.locfileid: "72657587"
 
 - **Разделы справки отключить автоматическое добавление новых стеков вызовов?**
 
-   На панели инструментов !["Map" (выбор кнопки &#45; ) автоматически отображать стек вызовов на карте кода](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") . Чтобы вручную добавить текущий стек вызовов в карту, нажмите клавиши **Ctrl**  + **SHIFT**  +  **`** .
+   На панели инструментов !["Map" (выбор кнопки &#45; ) автоматически отображать стек вызовов на карте кода](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") . Чтобы вручную добавить текущий стек вызовов в карту, нажмите клавиши **Ctrl** + **SHIFT** +  **`** .
 
    Существующие стеки вызовов по-прежнему будут выделяться на сопоставлении во время отладки.
 
@@ -165,5 +165,5 @@ ms.locfileid: "72657587"
 
   См. раздел [Привязка стека вызовов](#MapStack) • [Создание заметок о коде](#MakeNotes) • [обновление схемы с помощью следующего стека вызовов](#UpdateMap) • [Добавление связанного кода к карте](#AddRelatedCode) • [Поиск ошибок с помощью Map](#FindBugs) .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md) [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md) [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md) [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md)

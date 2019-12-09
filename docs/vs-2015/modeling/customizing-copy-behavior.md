@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdd45a1de7e2882626d9b12db9be4b0c7a36eb38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655055"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301188"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,13 +85,13 @@ partial class MyDslClipboardCommandSet
  Переопределите `ClipboardCommandSet.ProcessOnPasteCommand()` для создания дополнительных связей после вызова базового метода.
 
  **Настройте форматы, в которых элементы могут быть скопированы** во внешние приложения, например, чтобы добавить границу в форму точечного рисунка.
-Переопределите `ClipboardCommandSet.ProcessOnMenuCopyCommand()` *мидсл* в проекте DslPackage.
+Переопределите`ClipboardCommandSet.ProcessOnMenuCopyCommand()` *мидсл* в проекте DslPackage.
 
  **Настройка копирования элементов в буфер обмена с помощью команды Copy, но не в операции перетаскивания.**
-Переопределите `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *мидсл* в проекте DslPackage.
+Переопределите`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *мидсл* в проекте DslPackage.
 
  **Сохранение макета фигуры с помощью копирования и вставки.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](http://go.microsoft.com/fwlink/?LinkId=213879).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](https://go.microsoft.com/fwlink/?LinkId=213879).
 
  Чтобы достигнуть такого эффекта, добавьте фигуры и соединители в скопированный ElementGroupPrototype. Самый удобный метод переопределения — это ElementOperations.CreateElementGroupPrototype(). Для этого добавьте в проект Dsl следующий код:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Вставка фигур в выбранном месте, например текущей позиции курсора.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](http://go.microsoft.com/fwlink/?LinkId=213879).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](https://go.microsoft.com/fwlink/?LinkId=213879).
 
  Для достижения такого эффекта переопределите `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, чтобы использовать версию `ElementOperations.Merge()`, зависящую от местоположения. Для этого добавьте в проект DslPackage следующий код:
 
@@ -377,7 +377,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  Когда пользователь нажимает сочетание клавиш CTRL + C или применяет команду меню "Копировать", вызывается метод <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. Вы можете увидеть, как это настроить в **Дслпаккаже\женератед коде\коммандсет.КС**. Дополнительные сведения о настройке команд см. в разделе [инструкции. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Можно переопределить Процессонменукопикомманд, добавив определение разделяемого класса *мидсл* `ClipboardCommandSet` в проект DslPackage.
+ Можно переопределить Процессонменукопикомманд, добавив определение разделяемого класса *мидсл*`ClipboardCommandSet` в проект DslPackage.
 
 ```csharp
 using System.Collections.Generic;
@@ -563,5 +563,5 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>См. также раздел
- [Настройка создания элементов и перемещение](../modeling/customizing-element-creation-and-movement.md) [инструкций. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) [Настройка поведения при удалении](../modeling/customizing-deletion-behavior.md) [. Пример: схемы канала VMSDK пример](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>См. также
+ [Настройка создания элементов и перемещение](../modeling/customizing-element-creation-and-movement.md) [инструкций. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) [Настройка поведения при удалении](../modeling/customizing-deletion-behavior.md) [. Пример: схемы канала VMSDK пример](https://go.microsoft.com/fwlink/?LinkId=213879)

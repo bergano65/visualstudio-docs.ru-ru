@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984186"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983779"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Безопасность для решений SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] включает следующие функции для повышения безопасности приложений SharePoint.
 
 ## <a name="safe-control-entries"></a>Записи безопасного контроля
- Каждый элемент проекта SharePoint, созданный в [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], имеет свойство **записей безопасного элемента управления** , представляющее коллекцию безэлементных элементов управления. Его **безопасное** подсвойство позволяет указать элементы управления, которые вы считаете безопасными. Дополнительные сведения см. [в разделе Предоставление сведений о пакете и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) и [Указание безопасного веб-части](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
+ Каждый элемент проекта SharePoint, созданный в [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], имеет свойство **записей безопасного элемента управления** , представляющее коллекцию безэлементных элементов управления. Его **безопасное** подсвойство позволяет указать элементы управления, которые вы считаете безопасными. Дополнительные сведения см. [в разделе Предоставление сведений о пакете и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) и [Указание безопасного веб-части](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Атрибут AllowPartiallyTrustedCallers
  По умолчанию только приложения, полностью доверенные системой управления доступом для кода среды выполнения (CAS), могут получить доступ к общей сборке управляемого кода. Пометка полностью доверенной сборки атрибутом AllowPartiallyTrustedCallers позволяет сборкам с частичным доверием обращаться к ней.

@@ -28,7 +28,7 @@ ms.locfileid: "72576027"
   
 - В качестве второго аргумента укажите либо `Array`, либо объект **arguments** .  
   
-## <a name="see-also"></a>См. также  
- [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)    
- [метод Apply (функция)](../../javascript/reference/apply-method-function-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)   
+ [метод Apply (функция)](../../javascript/reference/apply-method-function-javascript.md)   
  [Функции](../../javascript/functions-javascript.md)

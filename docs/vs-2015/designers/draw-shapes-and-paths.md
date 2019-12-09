@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b683e2d266e065ce9fcf7caa1943cd44d1bd9be6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8eb2d4f5b025be6f68860c18d1c14da017aaf3fe
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664724"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294323"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В конструкторе XAML *фигура* — это именно тот объект, который соответствует вашим представлениям. Например, прямоугольник, круг или эллипс. Объект *контур* является более универсальной версией фигуры. Можно, например, изменить эти объекты или объединить их в форме новых фигур.
 
- Для фигур и контуров используется векторная графика, поэтому их легко масштабировать для дисплеев с высоким разрешением. Если вы хотите узнать больше о векторной графике, ознакомьтесь с видео о том, [что такое векторная графика](https://www.youtube.com/watch?v=MoCSwF0n-io) , или статьей о [векторной графике](http://www.webopedia.com/TERM/V/vector_graphics.html).
+ Для фигур и контуров используется векторная графика, поэтому их легко масштабировать для дисплеев с высоким разрешением. Если вы хотите узнать больше о векторной графике, ознакомьтесь с видео о том, [что такое векторная графика](https://www.youtube.com/watch?v=MoCSwF0n-io) , или статьей о [векторной графике](https://www.webopedia.com/TERM/V/vector_graphics.html).
 
  **Содержание раздела**
 
@@ -130,5 +130,5 @@ ms.locfileid: "72664724"
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание контура кадрирования](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

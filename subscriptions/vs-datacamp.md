@@ -3,15 +3,15 @@ title: Повысьте свои навыки обработки и анализ
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
-ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681644"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706882"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 К подходящим подпискам Visual Studio относятся подписки на DataCamp.  С помощью DataCamp можно получить все необходимые навыки обработки и анализа данных, работая в браузере. Вы выбираете, когда и чему вы учитесь. Обучаться обработке и анализу данных стало намного проще, так как вам не нужно устанавливать программное обеспечение и выполнять особые требования к оборудованию.
@@ -50,7 +50,7 @@ ms.locfileid: "68681644"
    > [!div class="mx-imgBorder"]
    > ![Начало работы с DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-Вы можете в любой момент остановиться и продолжить обучение в следующем сеансе.  Просто перейдите на сайт [http://www.datacamp.com](http://www.datacamp.com) и выполните вход.  Вы увидите информационную панель и сможете возобновить обучение с того места, на котором остановились. Для этого нажмите **Продолжить путь**.
+Вы можете в любой момент остановиться и продолжить обучение в следующем сеансе.  Просто перейдите на сайт [https://www.datacamp.com](https://www.datacamp.com) и выполните вход.  Вы увидите информационную панель и сможете возобновить обучение с того места, на котором остановились. Для этого нажмите **Продолжить путь**.
 
 > [!div class="mx-imgBorder"]
 > ![Продолжение обучения в DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
@@ -59,7 +59,9 @@ ms.locfileid: "68681644"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | 3 месяца       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Enterprise с GitHub Enterprise   | VL | 3 месяца       |  Нет.  Доступно только для новых подписчиков          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |  Нет.  Доступно только для новых подписчиков           |
+| Visual Studio Professional с GitHub Enterprise| VL | 3 месяца                                                            |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков           |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
@@ -84,4 +86,6 @@ ms.locfileid: "68681644"
 Ознакомьтесь с другими возможностями профессиональной разработки в вашей подписке:
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
-- [Журнал MSDN Magazine](vs-msdn.md)
+
+
+Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

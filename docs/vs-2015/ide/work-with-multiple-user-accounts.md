@@ -9,14 +9,14 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9aa08d68da53f54491439da8e35c28db90f4c508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662661"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296782"
 ---
-# <a name="work-with-multiple-user-accounts"></a>Работа с несколькими учетными записями пользователя
+# <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Если у вас несколько учетных записей Майкрософт и рабочих учетных записей, их все можно добавить в Visual Studio, чтобы ресурсы всех учетных записей были доступны из любой учетной записи, с помощью которой выполнен вход. На момент выхода Visual Studio 2015 RTM службы Azure, Application Insights, Team Foundation Server и Office 365 поддерживают упрощенную процедуру входа в систему. С течением времени будут доступны дополнительные службы.
@@ -56,7 +56,7 @@ ms.locfileid: "72662661"
 
  ![Диалоговое окно изменения проверки подлинности для ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- Дополнительные сведения о различных типах проверки подлинности в ASP.NET см. в разделе [Создание веб-проектов ASP.NET в Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (сведения о проверке подлинности все еще актуальны для Visual Studio 2015 г.).
+ Дополнительные сведения о различных типах проверки подлинности в ASP.NET см. в разделе [Создание веб-проектов ASP.NET в Visual Studio 2013](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (сведения о проверке подлинности все еще актуальны для Visual Studio 2015 г.).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Доступ к учетной записи Visual Studio Team Services
  В главном меню выберите пункт **Команда > Подключиться к Team Foundation Server**, чтобы открыть окно **Team Explorer**. Щелкните пункт **Выберите командные проекты**, а затем в списке **Выберите Team Foundation Server**появится URL-адрес для учетной записи Visual Studio Team Services. При выборе URL-адреса будет выполнен вход в систему без необходимости повторного ввода учетных данных.

@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.author: jillfra
 author: jillre
 ms.manager: jillfra
-ms.openlocfilehash: f3e4b2b5df96f397104afb3ab6268e1fa294116e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c442ec22080a5f3533776e9d581aa1e7ef0e52ee
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652636"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538672"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Подключение к проектам в Team Explorer
 
-Окно средства **Team Explorer** используется для координации усилий с другими членами команды при разработке проекта, а также для управления работой, назначенной вам, вашей команде или вашим командным проектам. **Team Explorer** обеспечивает подключение Visual Studio к репозиториям Git и GitHub, репозиториям системы управления версиями Team Foundation (TFVC), а также проектам, размещенным в [службах Azure DevOps](/azure/devops/user-guide/what-is-azure-devops-services) или на локальном [сервере Azure DevOps](/tfs/index) (прежнее название TFS). Можно управлять исходным кодом, рабочими элементами и сборками.
+Окно средства **Team Explorer** используется для координации усилий с другими членами команды при разработке проекта, а также для управления работой, назначенной вам, вашей команде или вашим командным проектам. **Team Explorer** обеспечивает подключение Visual Studio к репозиториям Git и GitHub, репозиториям системы управления версиями Team Foundation (TFVC), а также проектам, размещенным в [службах Azure DevOps](/azure/devops/user-guide/what-is-azure-devops-services) или на локальном [сервере Azure DevOps](/azure/devops/index-all) (прежнее название TFS). Можно управлять исходным кодом, рабочими элементами и сборками.
 
 ![Домашняя страница Team Explorer в Visual Studio](media/team-explorer/team-explorer.png)
 

@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 421bd778b86aa223e1e7b3a96aa3943a86588174
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662513"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299407"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ ms.locfileid: "72662513"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
@@ -83,7 +83,7 @@ ms.locfileid: "72662513"
 6. В **обозревателе решений** щелкните правой кнопкой мыши **Default.aspx** и выберите пункт **Удалить**. Этот файл для прохождения данного руководства не требуется.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Создание EDM для службы
- Чтобы предоставить данные приложению с помощью [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], следует определить модель данных для этой службы. @No__t_0 поддерживает два типа моделей данных: модели EDM и пользовательские модели данных, которые определяются с помощью объектов среды CLR, реализующих интерфейс <xref:System.Linq.IQueryable%601>. В данном пошаговом руководстве вы создадите модель EDM для использования в качестве модели данных.
+ Чтобы предоставить данные приложению с помощью [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], следует определить модель данных для этой службы. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] поддерживает два типа моделей данных: модели EDM и пользовательские модели данных, которые определяются с помощью объектов среды CLR, реализующих интерфейс <xref:System.Linq.IQueryable%601>. В данном пошаговом руководстве вы создадите модель EDM для использования в качестве модели данных.
 
 #### <a name="to-create-an-entity-data-model"></a>Создание модели EDM
 
@@ -91,7 +91,7 @@ ms.locfileid: "72662513"
 
 2. В списке "Установленные шаблоны" щелкните **Данные** и выберите элемент проекта **Модель ADO.NET EDM**.
 
-3. Измените имя на `AdventureWorksModel.edmx` и нажмите кнопку **Добавить**.
+3. Измените имя на `AdventureWorksModel.edmx`и нажмите кнопку **Добавить**.
 
      Открывается **Мастер моделей EDM**.
 
@@ -118,7 +118,7 @@ ms.locfileid: "72662513"
 
 2. В списке Установленные шаблоны щелкните **веб**, а затем выберите элемент проект **службы данных WCF** .
 
-3. В поле **имя** введите `AdventureWorksService.svc` и нажмите кнопку **Добавить**.
+3. В поле **имя** введите `AdventureWorksService.svc`и нажмите кнопку **Добавить**.
 
      Visual Studio добавит `AdventureWorksService.svc` в проект.
 
@@ -315,12 +315,12 @@ ms.locfileid: "72662513"
 
 8. Закройте приложение.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
  После прохождения пошагового руководства вы можете выполнить следующие задачи.
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для привязки элементов управления WPF к другим типам источников данных. Дополнительные сведения см. в разделе [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>См. также раздел
- [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [связывание элементов управления WPF с данными в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Привязка элементов управления WPF к](../data-tools/bind-wpf-controls-to-a-dataset.md) данным в [обзоре](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) набора данных [Entity Framework общие](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) сведения [о конструкторе WPF и Silverlight обзор](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [данных Общие сведения о привязке](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+## <a name="see-also"></a>См. также
+ [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) привязка элементов управления WPF [к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Привязка элементов управления WPF к](../data-tools/bind-wpf-controls-to-a-dataset.md) [обзору](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) набора данных [Entity Framework обзор](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [конструкторов WPF и Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) обзор [привязки данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

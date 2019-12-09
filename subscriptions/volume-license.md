@@ -6,14 +6,14 @@ manager: lank
 ms.date: 08/22/2019
 ms.topic: conceptual
 description: Узнайте, как администраторы по соглашениям корпоративного лицензирования могут получить доступ к порталу администрирования подписок Visual Studio
-ms.openlocfilehash: 35a2186346bd50d883e5dddd0c353393d1f8b85e
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: f160d9278453ea87ae8f793692930ff2a95c4537
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000954"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491678"
 ---
-# <a name="accessing-the-administation-portal-as-an-admin-on-a-volume-license-agreement"></a>Доступ к порталу администрирования в качестве администратора в рамках соглашения корпоративного лицензирования
+# <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Доступ к порталу администрирования в качестве администратора в рамках соглашения корпоративного лицензирования
 
 Если вы являетесь основным контактным лицом или контактным лицом для уведомлений, указанным в соглашении вашей организации, вы автоматически получите доступ к порталу после настройки соглашения корпоративного лицензирования. Вы получите системное приветственное сообщение с приглашением войти на портал. В сообщении будет указано, какой адрес электронной почты следует использовать для входа на портал. 
 

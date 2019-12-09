@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
-ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314157"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983693"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 Как действующий подписчик Visual Studio вы можете использовать целый ряд возможностей в Azure DevOps, которые включены в вашу подписку в виде преимуществ. Вы сможете использовать эти возможности в каждой организации Azure DevOps, членом которой вы являетесь, независимо от того, создали вы эту организацию или были добавлены в нее.
@@ -25,7 +25,9 @@ ms.locfileid: "72314157"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>  | Azure Boards и Azure Repos (цен. категория "Базовый"), Azure Test Plans, Azure Pipelines (локальное размещение)       |  Yes          |
+| Visual Studio Enterprise с GitHub Enterprise   | VL| Azure Boards и Azure Repos (цен. категория "Базовый"), Azure Test Plans, Azure Pipelines (локальное размещение)       |  Yes          |
 | Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                        | Azure Boards и Azure Repos (уровень "Базовый")                                                            |  Yes          |
+| Visual Studio Professional с GitHub Enterprise | VL| Azure Boards и Azure Repos (уровень "Базовый")                                                            |  Yes          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Yes          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Yes          |
 ||
@@ -49,3 +51,5 @@ ms.locfileid: "72314157"
 - [Azure Boards и Azure Repos (уровень "Базовый")](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+
+Сведения о том, как активировать ваш [индивидуальный кредит Azure DevTest](vs-azure.md).

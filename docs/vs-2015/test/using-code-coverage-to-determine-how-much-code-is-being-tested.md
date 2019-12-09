@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee281e2cabcbce4f950188465163769caae7b2bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657244"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297967"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "72657244"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Исключение элементов из результатов покрытия кода
  Иногда требуется исключить конкретные элементы в коде из результатов покрытия, например, если код создан из текстового шаблона. Добавьте атрибут `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` к любому из следующих элементов кода: классу, структуре, методу, свойству, методу задания или получения свойства, событию. Обратите внимание, что исключение класса не исключает его производные классы.
 
- Пример:
+ Пример.
 
 ```csharp
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Настройка анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md) [модульное тестирование](../test/unit-test-your-code.md) кода для [устранения проблем](../test/troubleshooting-code-coverage.md) с кодом

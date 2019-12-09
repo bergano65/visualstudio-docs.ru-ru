@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673824"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297913"
 ---
 # <a name="network-usage"></a>Использование сети
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ ms.locfileid: "65673824"
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  
   
 > [!NOTE]
-> Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx) (Введение в средство "Сеть" Visual Studio).  
+> Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](https://devblogs.microsoft.com/visualstudio/?m=20155) (Введение в средство "Сеть" Visual Studio).  
   
 ## <a name="collecting-network-tool-data"></a>Сбор данных средством «Сеть»  
  Средство **Сеть** следует запускать с открытым проектом Visual Studio на компьютере Visual Studio.  
   
 1. Откройте проект в Visual Studio.  
   
-2. В меню выберите **Отладка, Профилировщик производительности**. Выберите **Сеть** и нажмите кнопку **Запуск**.  
+2. В меню выберите **Отладка/профилировщик производительности.** ... Выберите **сеть**, а затем нажмите кнопку **запустить**.  
   
 3. Средство «Сеть» начнет сбор HTTP-трафика вашего приложения.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "65673824"
   
    Окно отчета должно выглядеть следующим образом:  
   
-   ![Окно средства "Сеть"](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Окно сети](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Анализ данных  
  Вы можете проанализировать записанный HTTP-трафик во время выполнения приложения и даже после того, как приложение будет закрыто, выбрав любую из сетевых операций, отображенных в представлении сводки.  
@@ -52,7 +52,7 @@ ms.locfileid: "65673824"
   
  В представлениях сведений средства **Сеть** отображаются дополнительные сведения о выбранной в представлении сводки сетевой операции.  
   
- ![Область сведений средства "Сеть"](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
+ ![Область сведений об инструментах сети](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
 |||  
 |-|-|  
@@ -75,5 +75,5 @@ ms.locfileid: "65673824"
   
 ## <a name="see-also"></a>См. также  
  [Запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Блог о Visual Studio. Введение в инспектор сети Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Видео на Channel 9. Средства диагностики VS — новый Profiler сети](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Блог о Visual Studio. Введение в инспектор сети Visual Studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Channel 9 Video: VS Diagnostics tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: Средства диагностики VS — новый профилировщик сети)

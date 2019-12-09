@@ -7,16 +7,17 @@ ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6caca91849727fa21fec0401c776e4c80f9a6b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f2b9ea7799656b0dd7dacd35bde62dc84aea08dd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439530"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779068"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Как выполнить присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки
 В этой статье описан порядок использования программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью подключения профилировщика к веб-приложению [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и сбора данных по количеству выделений памяти .NET Framework и выделяемых объемах. Кроме того, с помощью этих программ можно собирать данные по времени существования объектов памяти .NET Framework.
 
 > [!NOTE]
@@ -36,13 +37,13 @@ ms.locfileid: "63439530"
 
 2. Инициализируйте переменные среды профилирования. Тип:
 
-    **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
+    **VSPerfClrEnv** { **/globalsamplegc** &#124; **/globalsamplegclife**} [ **/samplelineoff**]
 
    - Параметры **/globalsamplegc** и **/globalsamplegclife** задают тип собираемых данных по использованию памяти.
 
         Задайте один и только один из указанных ниже параметров.
 
-       |Параметр|Описание|
+       |Параметр|ОПИСАНИЕ|
        |------------|-----------------|
        |**/globalsamplegc**|Включает сбор данных по выделению памяти.|
        |**/globalsamplegclife**|Включает сбор данных по выделению памяти и времени существования объектов.|
@@ -66,11 +67,11 @@ ms.locfileid: "63439530"
    > [!NOTE]
    > Параметры **/user** и **/crosssession** обычно являются обязательными для приложений ASP.NET.
 
-   | Параметр | Описание |
+   | Параметр | ОПИСАНИЕ |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows. |
    | [/crossession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах входа. Этот параметр является обязательным, если приложение ASP.NET выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
-   | [/waitstart](../profiling/waitstart.md) [**:**`Interval`] | Задает интервал ожидания инициализации профилировщика до возвращения ошибки (в секундах). Если значение `Interval` не указано, профилировщик ожидает в течение неограниченного срока. По умолчанию параметр **/start** возвращает ошибку немедленно. |
+   | [/waitstart](../profiling/waitstart.md) [ **:** `Interval`] | Задает интервал ожидания инициализации профилировщика до возвращения ошибки (в секундах). Если значение `Interval` не указано, профилировщик ожидает в течение неограниченного срока. По умолчанию параметр **/start** возвращает ошибку немедленно. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный ETL-файл. |
@@ -79,7 +80,7 @@ ms.locfileid: "63439530"
 
 7. Подключите профилировщик к рабочему процессу [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Тип:
 
-    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
+    **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
    - Идентификатор процесса (`(PID)`) задает идентификатор или имя рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Идентификаторы всех запущенных процессов можно просмотреть в диспетчере задач Windows.
 
@@ -92,11 +93,11 @@ ms.locfileid: "63439530"
 
 - Следующие пары параметров **VSPerfCmd** запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.
 
-    |Параметр|Описание|
+    |Параметр|ОПИСАНИЕ|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором `PID`.|
-    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|**/attach** запускает сбор данных для процесса, определяемого идентификатором или именем процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором `PID`.|
+    |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;:`ProcName`}]|**/attach** запускает сбор данных для процесса, определяемого идентификатором или именем процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
  Чтобы завершить сеанс профилирования следует отключить профилировщик от веб-приложения. Чтобы остановить сбор данных в приложении, для которого выполняется профилирование методом выборки, можно перезапустить рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] или вызвать параметр **VSPerfCmd /detach**. Затем можно вызвать параметр **VSPerfCmd** [/shutdown](../profiling/shutdown.md), чтобы завершить работу профилировщика и закрыть файл данных профилирования. Команда **VSPerfClrEnv/globaloff** очищает переменные среды профилирования, однако конфигурация системы не сбрасывается до перезагрузки компьютера.
@@ -107,7 +108,7 @@ ms.locfileid: "63439530"
 
    - Введите команду **VSPerfCmd** [/detach](../profiling/detach.md)
 
-      - или -
+      -или-
 
    - Завершите рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Тип:
 

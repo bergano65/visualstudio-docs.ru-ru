@@ -1,5 +1,5 @@
 ---
-title: 'UML-схемы компонентов: рекомендации | Документация Майкрософт'
+title: 'UML Component Diagrams: Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -15,23 +15,23 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652261"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297160"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML-схемы компонентов: правила работы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно нарисовать *схему компонентов* , чтобы отобразить структуру программной системы. Демонстрационные видеоролики см. в разделе [проектирование физической структуры с помощью схем компонентов](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).
+In Visual Studio, you can draw a *component diagram* to show the structure a software system. For a video demonstration, see [Designing the Physical Structure by using Component Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Чтобы создать схему компонентов UML, в меню **архитектура** выберите пункт **создать UML или схему слоев**.
+ To create a UML component diagram, on the **Architecture** menu, click **New UML or Layer Diagram**.
 
- Компонент — это модульная единица, заменяемая в пределах среды. Его внутренние функции скрыты, но имеют один или несколько четко определенных *интерфейсов* , с помощью которых можно получить доступ к своим функциям. Компонент может также иметь *необходимые интерфейсы*. Требуемый интерфейс определяет, какие функции и службы он требует от других компонентов. Объединив предоставленные и требуемые интерфейсы нескольких компонентов, можно создать более крупный компонент. Можно сказать, что вся программная система, по сути, представляет собой компонент.
+ Компонент — это модульная единица, заменяемая в пределах среды. Its internals are hidden, but it has one or more well-defined *provided interfaces* through which its functions can be accessed. A component can also have *required interfaces*. Требуемый интерфейс определяет, какие функции и службы он требует от других компонентов. Объединив предоставленные и требуемые интерфейсы нескольких компонентов, можно создать более крупный компонент. Можно сказать, что вся программная система, по сути, представляет собой компонент.
 
  Создание схем компонентов имеет несколько преимуществ.
 
@@ -41,58 +41,58 @@ ms.locfileid: "72652261"
 
   Можно использовать схему компонентов, чтобы представить конструкцию системы независимо от того, какой язык или платформа используется сейчас или будет использоваться в будущем.
 
-## <a name="OtherDiagrams"></a>Связь с другими схемами
+## <a name="OtherDiagrams"></a> Relationship to Other Diagrams
  Можно использовать схему компонентов совместно с другими схемами.
 
 |Другая схема|Помогает обсуждать следующие аспекты конструкции и передавать сведения о них|
 |-------------------|--------------------------------------------------------------------|
-|Схема последовательностей UML|— Взаимодействия между компонентами системы;<br />— Взаимодействия и между частями внутри компонента.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md).|
-|UML-схема классов|— Интерфейсы компонента. Схема классов позволяет детализировать методы интерфейса.<br />— Данные, отправляемые в параметрах через интерфейсы компонентов.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md).|
-|Схемы активности|— Внутренняя обработка, выполняемая компонентом в ответ на входящие сообщения.<br /><br /> Дополнительные сведения см. в разделе [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md).|
-|Схемы слоев|— Логические архитектурные уровни для компонентов.<br /><br /> Дополнительные сведения см. в разделе [схемы слоев. Справочник](../modeling/layer-diagrams-reference.md).|
+|Схема последовательностей UML|-   Interactions between a system's components<br />-   Interactions and between the parts inside a component.<br /><br /> For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).|
+|UML-схема классов|-   The interfaces of a component. Схема классов позволяет детализировать методы интерфейса.<br />-   The data sent in parameters across the components' interfaces.<br /><br /> For more information, see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).|
+|Схемы активности|-   The internal processing performed by a component in response to incoming messages.<br /><br /> For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).|
+|Схемы слоев|-   Logical architectural tiers for your components.<br /><br /> For more information, see [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Основные шаги для рисования схем компонентов
- Справочные сведения об элементах на схемах компонентов см. в разделе [UML-схемы компонентов: Справочник](../modeling/uml-component-diagrams-reference.md).
+## <a name="Basics"></a> Basic Steps for Drawing Component Diagrams
+ For reference information about the elements on component diagrams, see [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md).
 
- Дополнительные сведения об использовании схем компонентов в процессе разработки см. в разделе [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md).
+ For more information about how to use component diagrams in the process of design, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
 
 > [!NOTE]
-> Подробные инструкции по созданию схем моделирования см. в разделе [изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md).
+> Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-component-diagram"></a>Создание схемы компонентов
 
-1. В меню **архитектура** выберите пункт **создать UML или схему слоев**.
+1. On the **Architecture** menu, click **New UML or Layer Diagram**.
 
-2. В разделе **шаблоны**щелкните **UML-схема компонентов**.
+2. Under **Templates**, click **UML Component Diagram**.
 
 3. Назовите схему.
 
-4. В меню **Добавить в проект моделирования**выберите существующий проект моделирования в решении или **Создайте новый проект моделирования**и нажмите кнопку **ОК**.
+4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**, and then click **OK**..
 
-     Новая схема компонентов отображается с панелью элементов UML- **схемы компонентов** . Панель элементов содержит требуемые элементы и отношения.
+     A new component diagram appears with the UML **Component Diagram** toolbox. Панель элементов содержит требуемые элементы и отношения.
 
 ### <a name="drawing-components"></a>Создание компонентов
- ![Компоненты с интерфейсами](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
+ ![Components with interfaces](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
 
- Создайте *компонент* (1) для каждой основной функциональной единицы в системе или приложении.
+ Create a *component* (1) for each major functional unit in your system or application.
 
  В качестве примеров можно привести приложение, аппаратное средство, веб-службу, сборку .NET, программный класс или группу классов или любой другой отделимый сегмент программы.
 
 ##### <a name="to-create-components"></a>Создание компонентов
 
-1. Щелкните **компонент** на панели элементов, а затем щелкните пустую часть диаграммы.
+1. Click **Component** in the toolbox, and then click a blank part of the diagram.
 
      \- или -
 
      Скопируйте и вставьте существующий компонент.
 
-    1. Поиск существующего компонента в схеме или в **обозревателе моделей UML**.
+    1. Find an existing component in a diagram or in **UML Model Explorer**.
 
-    2. Щелкните правой кнопкой мыши компонент и выберите команду **Копировать**.
+    2. Right-click the component and then click **Copy**.
 
     3. Откройте схему, на которой необходимо отобразить скопированный компонент.
 
-    4. Щелкните правой кнопкой мыши пустую часть диаграммы и выберите команду **Вставить**.
+    4. Right-click a blank part of the diagram and then click **Paste**.
 
          Копия компонента отображается с новым именем.
 
@@ -101,13 +101,13 @@ ms.locfileid: "72652261"
 3. Щелкните шеврон (5), если нужно отобразить только заголовок компонента.
 
 ### <a name="showing-the-ports-of-a-component"></a>Отображение портов компонента
- *Порт* (2, 3) представляет группу сообщений или вызовов операций, которые передаются либо в компонент, либо из него. Группа описывается интерфейсом, который определяет тип порта. Порт может либо предоставлять, либо требовать интерфейс.
+ A *port* (2, 3) represents a group of messages or operation calls that pass either into or out of a component. Группа описывается интерфейсом, который определяет тип порта. Порт может либо предоставлять, либо требовать интерфейс.
 
- Порт с *предоставленным интерфейсом* (2) предоставляет операции, реализуемые компонентом, которые могут использоваться другими компонентами.
+ A port with a *provided interface* (2) supplies operations that are implemented by the component, and that can be used by other components.
 
  В качестве примеров можно назвать пользовательский интерфейс, веб-службу, интерфейс .NET или коллекцию функций на любом языке программирования.
 
- Порт с *требуемым интерфейсом* (3) представляет требование компонента для группы операций или служб, предоставляемых другими компонентами или внешними системами.
+ A port with a *required interface* (3) represents a component's requirement for a group of operations or services to be provided by other components or external systems.
 
  Например, веб-браузер требует веб-серверы, а надстройка приложения требует службы из приложения.
 
@@ -115,13 +115,13 @@ ms.locfileid: "72652261"
 
 ##### <a name="to-add-ports-to-a-component"></a>Добавление портов в компонент
 
-1. На панели элементов щелкните **предоставленный интерфейс** или **требуемый интерфейс**.
+1. In the toolbox, click **Provided Interface** or **Required Interface**.
 
 2. Щелкните компонент, который необходимо добавить в интерфейс.
 
     На границе компонента появляется порт.
 
-    Новый интерфейс создается как тип порта. Этот интерфейс отображается в **обозревателе моделей UML**.
+    Новый интерфейс создается как тип порта. This interface appears in **UML Model Explorer**.
 
 3. Перетащите порт через границу компонента и разместите его, где нужно.
 
@@ -136,7 +136,7 @@ ms.locfileid: "72652261"
 
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Как показать, что предоставленный интерфейс может удовлетворить условия требуемого интерфейса
 
-1. В области элементов щелкните **зависимость**.
+1. In the toolbox, click **Dependency**.
 
 2. Щелкните порт с требуемым интерфейсом одного компонента, затем щелкните порт с предоставленным интерфейсом другого компонента.
 
@@ -144,25 +144,25 @@ ms.locfileid: "72652261"
 
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Добавление в компонент порта для существующего интерфейса
 
-- Найдите интерфейс в **обозревателе моделей UML** и перетащите его из этого компонента в компонент.
+- Find the interface in **UML Model Explorer** and then drag it from there onto the component.
 
      \- или -
 
 - Скопируйте и вставьте ссылку на интерфейс из схемы.
 
-    1. На схеме классов или схеме компонентов щелкните интерфейс правой кнопкой мыши и выберите команду **Копировать**.
+    1. On a class diagram or a component diagram, right-click the interface and then click **Copy**.
 
-    2. На схеме компонентов щелкните правой кнопкой мыши компонент и выберите команду **Вставить ссылку**.
+    2. On the component diagram, right-click the component, and then click **Paste Reference**.
 
          В компоненте отобразится предоставленный интерфейс. Рядом отобразится тег действия.
 
         > [!NOTE]
-        > Если вместо **ссылки вставить**используется команда **Вставить** , будет создан новый интерфейс с новым именем.
+        > If you use **Paste** instead of **Paste Reference**, a new interface that has a new name will be created.
 
-    3. Если вы хотите создать требуемый интерфейс, щелкните тег action, а затем выберите **преобразовать в требуемый интерфейс**.
+    3. If you wanted to create a required interface, click the Action tag and then click **Convert to Required Interface**.
 
-## <a name="Parts"></a>Отображение внутренних частей компонента
- ![Схема компонентов, отображающая внутренние части](../modeling/media/uml-compshowing.png "UML_CompShowing")
+## <a name="Parts"></a> Showing the Internal Parts of a Component
+ ![Component diagram showing internal parts](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  Можно разместить части (3) в компоненте (1), чтобы показать, что он состоит из более мелких компонентов, взаимодействующих друг с другом.
 
@@ -172,9 +172,9 @@ ms.locfileid: "72652261"
 
  `+ partName : TypeName`
 
- Внутри родительского компонента каждая часть показывает предоставляемые и требуемые интерфейсы, определенные для ее типа (4, 5). Операции или службы, требуемые одной частью, могут быть предоставлены другой. Соединители **сборки частей** можно использовать для демонстрации соединения частей друг с другом (6).
+ Внутри родительского компонента каждая часть показывает предоставляемые и требуемые интерфейсы, определенные для ее типа (4, 5). Операции или службы, требуемые одной частью, могут быть предоставлены другой. You can use **Part Assembly** connectors to show how parts are connected with one another (6).
 
- Также можно показать, что одна из частей родительского компонента фактически предоставляет или требует его интерфейс. Вы можете подключить порт родительского компонента к порту внутренней части, используя отношение **делегирования** (9). Оба порта должны относиться к одному виду (предоставленные или требуемые) и иметь совместимые типы интерфейса.
+ Также можно показать, что одна из частей родительского компонента фактически предоставляет или требует его интерфейс. You can connect a port of the parent to a port of an internal part using a **Delegation** relation (9). Оба порта должны относиться к одному виду (предоставленные или требуемые) и иметь совместимые типы интерфейса.
 
  Новую часть можно создать либо с помощью нового типа, либо из существующего типа.
 
@@ -182,11 +182,11 @@ ms.locfileid: "72652261"
 
 1. Создайте часть для каждой крупной функциональной единицы, которая является частью родительского компонента.
 
-    1. Щелкните **компонент** на панели элементов, а затем щелкните внутри родительского компонента (1).
+    1. Click **Component** in the toolbox, and then click inside the parent component (1).
 
          Новая часть (3) появляется внутри родительского компонента.
 
-         В **обозревателе моделей UML**создается новый компонент. Это тип новой части.
+         A new component is created in **UML Model Explorer**. Это тип новой части.
 
          \- или -
 
@@ -196,31 +196,31 @@ ms.locfileid: "72652261"
 
          \- или -
 
-         Щелкните правой кнопкой мыши компонент на схеме или в обозревателе моделей UML и выберите команду **Копировать**.
+         Right-click a component, either in a diagram or in UML Model Explorer, and then click **Copy**.
 
-         Щелкните родительский компонент правой кнопкой мыши и выберите команду **Вставить ссылку**.
+         Right-click on the parent component, and then click **Paste Reference**.
 
          Новая часть (3) появляется внутри родительского компонента. Ее тип — это скопированный компонент.
 
     2. Щелкните имя новой части, чтобы изменить его. Изменить ее тип невозможно.
 
-    3. В новую часть можно добавить предоставленные и требуемые интерфейсы (4, 5). Щелкните **указанный интерфейс** или **требуемый интерфейс** , а затем щелкните в части.
+    3. В новую часть можно добавить предоставленные и требуемые интерфейсы (4, 5). Click the **Provided Interface** or **Required Interface** tool, and then click in the part.
 
          \- или -
 
-         Перетащите существующий интерфейс из **обозревателя моделей UML** на часть.
+         Drag an existing interface from **UML Model Explorer** onto the part.
 
          Интерфейсы добавляются в тип части и отображаются в самой части. При необходимости корректируется размер родительского компонента.
 
 2. Соедините части друг с другом.
 
-    - Используйте средство **зависимости** для подключения портов различных частей (6).
+    - Use the **Dependency** tool to connect the ports of different parts (6).
 
 3. Соедините части с портами родительского компонента.
 
-    1. Создайте один или несколько портов (7) в родительском компоненте. Щелкните **требуемый интерфейс** или **указанный интерфейс** на панели элементов, а затем щелкните родительский компонент.
+    1. Создайте один или несколько портов (7) в родительском компоненте. Click **Required Interface** or **Provided Interface** on the toolbox, and then click the parent component.
 
-    2. Делегируйте (9) порт одной или нескольким частям. Щелкните инструмент **делегирования** , затем порт родительского компонента, а затем порт на части. Можно соединить порты, предоставляющие или требующие интерфейсы аналогичным способом.
+    2. Делегируйте (9) порт одной или нескольким частям. Click the **Delegation** tool, then a port on the parent component, and then a port on a part. Можно соединить порты, предоставляющие или требующие интерфейсы аналогичным способом.
 
 ### <a name="showing-the-parts-of-a-part"></a>Отображение частей части
  После разложения компонента на части каждый тип части можно дополнительно разложить на внутренние части.
@@ -231,17 +231,17 @@ ms.locfileid: "72652261"
 
 1. Определите полное имя для типа части.
 
-     Щелкните правой кнопкой мыши часть и выберите пункт **Свойства**.
+     Right-click the part and then click **Properties**.
 
-     Имя типа отображается в поле **Type (тип** ) окно свойств.
+     The type name appears in the **Type** field of the Properties window.
 
-2. Укажите тип части в **обозревателе моделей UML**.
+2. Locate the part's type in **UML Model Explorer**.
 
-     В меню **вид**выберите пункт **другие окна**, а затем выберите пункт **Обозреватель моделей UML**.
+     Click **View**, point to **Other Windows**, and then click **UML Model Explorer**.
 
      Разверните проект и (при необходимости) любой пакет, к которому принадлежит тип.
 
-     Тип будет указан как **компонент**.
+     The type will be listed as a **Component**.
 
      При необходимости его имя можно изменить здесь.
 
@@ -255,7 +255,7 @@ ms.locfileid: "72652261"
 
      Теперь можно добавлять части в компонент.
 
-## <a name="Designing"></a>Проектирование компонента
+## <a name="Designing"></a> Designing the Component
 
 ### <a name="describing-how-the-parts-collaborate"></a>Описание взаимодействия частей
  Можно создать схему последовательностей, чтобы показать, как части взаимодействуют друг с другом в ответ на сообщение, поступающее в родительский компонент.
@@ -270,17 +270,17 @@ ms.locfileid: "72652261"
 
 - Если функции, напротив, распределены между большим числом компонентов, между которыми существует много взаимодействий, производительность системы может снизиться, ее понимание будет затруднено.
 
-  ![Схема последовательностей, показывающая части совместной работы](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![Sequence diagram showing collaborating parts](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Создание схемы последовательностей, показывающей взаимодействие частей
 
 1. Создайте новую схему последовательностей.
 
-     Дополнительные сведения см. в разделе [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md).
+     For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
 2. Создайте линию жизни для внешнего компонента, пользователя, устройства или другого субъекта (1), отправляющего сообщения этому компоненту.
 
-     Для свойства **субъекта** этой линии жизни можно задать значение true, чтобы указать, что он является внешним по отношению к рассматриваемому компоненту. Над линией жизни отображается контурограмма.
+     You can set the **Actor** property of this lifeline to true, to indicate that it is external to the component under consideration. Над линией жизни отображается контурограмма.
 
 3. Создайте линию жизни для предоставленного интерфейса (2) этого компонента, которому выбранный субъект отправляет сообщения.
 
@@ -295,12 +295,12 @@ ms.locfileid: "72652261"
 ### <a name="is-the-component-more-than-its-parts"></a>Компонент — это больше, чем его части?
  В некоторых случаях компонент — это не больше, чем имя, присвоенное коллекции частей. Всю работу выполняют части, и во время выполнения нет ни кода, ни других артефактов, которые представляют компонент.
 
- Это можно указать в модели, установив свойство **является неявно созданным экземпляром** компонента. В этом случае все интерфейсы компонента должны находиться в портах и иметь делегирования во внутренние части.
+ You can indicate this in the model by setting the **Is Indirectly Instantiated** property of the component. В этом случае все интерфейсы компонента должны находиться в портах и иметь делегирования во внутренние части.
 
 ### <a name="describing-the-process-inside-each-part"></a>Описание процесса внутри каждой части
- Чтобы показать, как компонент обрабатывает каждое входящее сообщение, можно использовать схемы активности. Дополнительные сведения см. в разделе [UML-схемы деятельности: рекомендации](../modeling/uml-activity-diagrams-guidelines.md).
+ Чтобы показать, как компонент обрабатывает каждое входящее сообщение, можно использовать схемы активности. For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
 
- ![Схема активности с буфером данных](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
+ ![Activity diagram with data buffer](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
 
  Используйте "Принять действие события" (1), чтобы показать, что входящее сообщение начинает новый поток.
 
@@ -318,9 +318,9 @@ ms.locfileid: "72652261"
 ### <a name="general-dependencies-between-components"></a>общих зависимостей между компонентами.
  Можно использовать схему компонентов только для того, чтобы показать основные части конструкции и взаимозависимости между ними.
 
- ![Зависимость между компонентами](../modeling/media/uml-compdepend.png "UML_CompDepend")
+ ![A dependency between components](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
- Используйте инструмент **зависимости** для рисования зависимости. Это означает, что конструкция одного компонента зависит от конструкции другого.
+ Use the **Dependency** tool to draw a dependency. Это означает, что конструкция одного компонента зависит от конструкции другого.
 
  Наиболее распространены следующие виды зависимостей.
 
@@ -330,7 +330,7 @@ ms.locfileid: "72652261"
 
 - Один компонент использует сведения, созданные другим.
 
-  Можно использовать имя стрелки зависимости, чтобы обозначить конкретный вид использования. Чтобы задать имя, щелкните стрелку правой кнопкой мыши, выберите пункт **Свойства**и задайте поле **имя** в окне Свойства.
+  Можно использовать имя стрелки зависимости, чтобы обозначить конкретный вид использования. To set the name, right-click the arrow, then click **Properties**, and set the **Name** field in the properties window.
 
 ## <a name="see-also"></a>См. также раздел
- [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) схемы [компонентов UML. ссылки на](../modeling/uml-component-diagrams-reference.md) [UML-схемы последовательностей: эталонные](../modeling/uml-sequence-diagrams-reference.md) схемы [вариантов использования UML](../modeling/uml-use-case-diagrams-reference.md) : Справочник по схемам [классов](../modeling/uml-class-diagrams-reference.md) UML: Справочник по UML- [схемам компонентов: справочные материалы](../modeling/uml-component-diagrams-reference.md) [ Видео. Разработка физической структуры с помощью схем компонентов](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+ [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Designing the Physical Structure by using Component Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

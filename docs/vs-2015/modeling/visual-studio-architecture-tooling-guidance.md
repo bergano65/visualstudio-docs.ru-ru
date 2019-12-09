@@ -9,18 +9,18 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7c34e9cae335af12f59e6c25d5fb3c24e5c1749
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fae0bb2cca6f6f8a4ffb4e5af58473d041a12eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659345"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301330"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Руководство по средствам проектирования архитектуры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Это руководство по архитектуре представляет собой загружаемый пакет практических рекомендаций по использованию средств моделирования в Visual Studio 2010. В нем представлено общее представление о том, как использовать все средства моделирования в интегрированном режиме и обсуждаются наиболее распространенные сценарии, в которых используются эти средства.
+Это руководство по архитектуре средств — это загружаемый пакет практических рекомендаций по использованию средств моделирования в Visual Studio 2010. Дают общее представление об использовании всех средств моделирования интегрированным образом и рассматриваются наиболее распространенные сценарии, в которых используются средства.
 
  Содержимое было создано [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ными диапазонами управления жизненным циклом приложений, специальной группой, которая содержит членов группы разработчиков [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], служб Майкрософт, наиболее ценных специалистов Майкрософт (MVP) и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интересов сообщества.
 
- [Щелкните здесь, чтобы скачать руководство по инструментам архитектуры.](http://go.microsoft.com/fwlink/?LinkID=191984)
+ [Щелкните здесь, чтобы скачать руководство по инструментам архитектуры.](https://go.microsoft.com/fwlink/?LinkID=191984)

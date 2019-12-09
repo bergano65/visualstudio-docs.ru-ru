@@ -39,7 +39,7 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Параметры  
  `dwFieldSpec`  
- окне Задает константы EX_DBGPROP_INFO_FLAGS, которые определяют поля в структуре перечислимых свойств расширенной отладки, которые должны быть заполнены.  
+ окне Задает EX_DBGPROP_INFO_FLAGS константы, определяющие поля в структурах свойств расширенной отладки, которые должны быть заполнены.  
   
  `nRadix`  
  окне Основание системы счисления, используемое для интерпретации любой числовой информации.  
@@ -50,7 +50,7 @@ HRESULT EnumExtendedMembers(
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает допустимый `HRESULT`, обычно `S_OK`.  
   
-## <a name="see-also"></a>См. также  
- @No__t_1 [интерфейса идебужекстендедпроперти](../../winscript/reference/idebugextendedproperty-interface.md)  
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
+## <a name="see-also"></a>См. также:  
+   [интерфейса идебужекстендедпроперти](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
  [Структура ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

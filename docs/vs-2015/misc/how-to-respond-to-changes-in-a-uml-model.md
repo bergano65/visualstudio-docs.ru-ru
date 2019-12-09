@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eff43f3c7547a46b75885448999335637e9fbc62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eaaa1406591bc950dbbf95aff8dcd732eef3448
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609807"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293398"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Практическое руководство. Реагирование на изменения в UML-модели
 Можно написать код, который будет выполняться при возникновении изменений в модели UML в Visual Studio. Такой код будет одинаково реагировать на изменения, внесенные самими пользователями, и на изменения, внесенные другими расширениями Visual Studio . Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -22,7 +22,5 @@ ms.locfileid: "72609807"
 > [!WARNING]
 > API UML эти методы не поддерживает. В будущих версиях Visual Studio они также могут не работать.
 
- Пример кода доступен на [UML: реагирование на изменения в модели UML с помощью событий и правил](http://code.msdn.microsoft.com/UML-Responding-to-changes-c024cd4b) .
-
-## <a name="see-also"></a>См. также раздел
- [Навигация по](../modeling/navigate-the-uml-model.md) [обработчикам событий модели UML изменение распространения изменений за пределами модели](../modeling/event-handlers-propagate-changes-outside-the-model.md) [— Выбор цвета по стереотипу](http://go.microsoft.com/fwlink/?LinkId=213841)
+## <a name="see-also"></a>См. также
+ [Навигация по](../modeling/navigate-the-uml-model.md) [обработчикам событий модели UML изменение распространения изменений за пределами модели](../modeling/event-handlers-propagate-changes-outside-the-model.md) [— Выбор цвета по стереотипу](https://go.microsoft.com/fwlink/?LinkId=213841)

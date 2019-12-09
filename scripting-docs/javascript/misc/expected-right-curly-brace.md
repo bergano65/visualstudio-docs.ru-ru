@@ -28,6 +28,6 @@ ms.locfileid: "72577548"
   
 - Добавьте правую фигурную скобку, которая отмечает конец функции, цикла, блока или инициализатора объекта.  
   
-## <a name="see-also"></a>См. также  
- [Объект функции](../../javascript/reference/function-object-javascript.md)    
+## <a name="see-also"></a>См. также:  
+ [Объект функции](../../javascript/reference/function-object-javascript.md)   
  [Управление выполнением программы](../../javascript/controlling-program-flow-javascript.md)

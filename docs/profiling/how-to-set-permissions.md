@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Установка разрешений | Документация Майкрософт
+title: Практическое руководство. Установка разрешений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539189"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774593"
 ---
-# <a name="how-to-set-permissions"></a>Как выполнить Настройка разрешений
+# <a name="how-to-set-permissions"></a>Практическое руководство. Настройка разрешений
 
 В этом разделе описано, как администратор компьютера может предоставить разрешения безопасности, необходимые для профилирования, пользователю или группе без прав администратора на этом компьютере.
 
@@ -63,7 +64,7 @@ ms.locfileid: "62539189"
 
 2. Щелкните папку правой кнопкой мыши и выберите пункт **Свойства**.
 
-     Откроется диалоговое окно **Свойства \<имя_папки>**.
+     Откроется диалоговое окно **Свойства \<имя_папки>** .
 
 3. Перейдите на вкладку **Безопасность** .
 

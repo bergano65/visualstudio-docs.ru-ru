@@ -6,22 +6,22 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 3578e3e903470f857192643a3da47d62e87da934
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691725"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716967"
 ---
 # <a name="debugging-with-xamarin"></a>Отладка с помощью Xamarin
 
 Visual Studio для Mac имеет отладчик машинного кода, обеспечивая поддержку отладки для приложений Xamarin.iOS, Xamarin.Android и Xamarin.Mac.
 
-Visual Studio для Mac использует отладчик [*Mono Soft Debugger*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), который реализован в среде выполнения Mono, что позволяет Visual Studio для Mac выполнять отладку управляемого кода на всех платформах.
+Visual Studio для Mac использует отладчик [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), который реализован в среде выполнения Mono, что позволяет Visual Studio для Mac выполнять отладку управляемого кода на всех платформах.
 
 ## <a name="the-debugger"></a>Отладчик
 
-Visual Studio для Mac использует Mono Soft Debugger для отладки управляемого кода (C# и F#) во всех приложениях Xamarin. Mono Soft Debugger отличается от обычных отладчиков тем, что является взаимодействующим и встроен в среду выполнения Mono. Созданный код и среда выполнения Mono взаимодействуют с интегрированной средой разработки (IDE) для обеспечения отладки. Среда выполнения Mono предоставляет функции отладки через протокол связи, подробнее о котором можно прочитать [в документации по Mono](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio для Mac использует Mono Soft Debugger для отладки управляемого кода (C# и F#) во всех приложениях Xamarin. Mono Soft Debugger отличается от обычных отладчиков тем, что является взаимодействующим и встроен в среду выполнения Mono. Созданный код и среда выполнения Mono взаимодействуют с интегрированной средой разработки (IDE) для обеспечения отладки. Среда выполнения Mono предоставляет функции отладки через протокол связи, подробнее о котором можно прочитать [в документации по Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Жестко заданные отладчики, такие как [LLDB]( http://lldb.llvm.org/index.html) или [GDB]( https://www.gnu.org/software/gdb/), управляют программой без информации об отлаживаемой программе или взаимодействия с ней, но по-прежнему могут пригодиться при отладке приложений Xamarin, когда требуется отладка машинного кода iOS или Android.
 
