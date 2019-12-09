@@ -1403,28 +1403,6 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Жизненный цикл поддержки и обслуживание
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: Отчеты о проблемах
-      items:
-        - name: Как сообщить о проблеме с Visual Studio
-          href: ide/how-to-report-a-problem-with-visual-studio.md
-        - name: Отправка сообщения о проблеме с состоянием и часто задаваемые вопросы
-          displayName: Developer Community
-          href: ide/report-a-problem.md
-        - name: Повышение шансов решения проблемы с производительностью
-          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
-        - name: "Создание минидампов со всеми стеками вызовов для процесса Visual\_Studio"
-          displayName: Create minidumps with call stacks
-          href: ide/report-a-problem-minidumps.md
-        - name: Создание журналов по проблемам MSBuild
-          displayName: Create logs for MSBuild problems
-          href: ide/msbuild-logs.md
-        - name: Сбор журналов трассировки событий с помощью PerfView
-          displayName: ETL trace with PerfView
-          href: ide/report-a-problem-perfview.md
-    - name: Предложить функцию для Visual Studio
-      href: ide/suggest-a-feature.md
-    - name: Конфиденциальность данных сообщества разработчиков
-      href: ide/developer-community-privacy.md
     - name: Программа улучшения качества программного обеспечения
       items:
         - name: Обзор
@@ -1434,6 +1412,25 @@
           href: ide/diagnostic-data-collection.md
     - name: Ресурсы для устранения неполадок интегрированной среды разработки
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-    - name: Отзывы
-      displayName: Feedback
+- name: Отправка отзывов
+  items:
+    - name: Обзор
       href: ide/feedback-options.md
+    - name: Сообщите о проблеме
+      items:
+        - name: Сообщение о проблеме
+          href: ide/how-to-report-a-problem-with-visual-studio.md
+        - name: Отправка сообщения о проблеме с состоянием и часто задаваемые вопросы
+          href: ide/report-a-problem.md
+        - name: Быстрое решение проблем с производительностью
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
+        - name: Создание минидампов со стеками вызовов
+          href: ide/report-a-problem-minidumps.md
+        - name: Создание журналов по проблемам MSBuild
+          href: ide/msbuild-logs.md
+        - name: Сбор журналов трассировки событий с помощью PerfView
+          href: ide/report-a-problem-perfview.md
+    - name: Предложение функции
+      href: ide/suggest-a-feature.md
+    - name: Конфиденциальность данных сообщества разработчиков
+      href: ide/developer-community-privacy.md
