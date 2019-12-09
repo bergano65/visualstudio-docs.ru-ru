@@ -1,0 +1,118 @@
+### YamlMime:Hub
+title: Документация по Подпискам Visual Studio
+summary: Преимущества Подписок Visual Studio включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.
+brand: visual-studio
+metadata:
+  title: Подписки Visual Studio
+  description: Подписки Visual Studio — это исчерпывающий набор инструментов для разработки, развертывания великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux, и управления такими приложениями. Преимущества подписок включают доступ к средствам разработчика, облачным службам и программному обеспечению, обучению и службе поддержки для разработки и тестирования.
+  ms.topic: hub-page
+  author: evanwindom
+  ms.author: lank
+  manager: lank
+  ms.date: 12/04/2019
+  ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
+  ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 12/06/2019
+  ms.locfileid: "74883836"
+highlightedContent:
+  items:
+  - title: Новые возможности Подписок Visual Studio
+    itemType: whats-new
+    url: ~/whats-new-in-subscriptions.md
+  - title: Как использовать портал для подписчиков
+    itemType: how-to-guide
+    url: ~/using-the-subscriber-portal.md
+  - title: Как использовать портал администрирования
+    itemType: how-to-guide
+    url: ~/using-admin-portal.md
+conceptualContent:
+  title: Начало работы
+  items:
+  - title: Использование преимуществ
+    links:
+    - text: Деньги на счете в Azure
+      url: ~/vs-azure.md
+      itemType: get-started
+    - text: Загрузка программного обеспечения
+      url: ~/software-download-list.md
+      itemType: get-started
+    footerLink:
+      url: ~/vs-azure.md
+      text: Дополнительные сведения
+  - title: Популярные ресурсы
+    links:
+    - text: Сравнение вариантов и цен
+      url: https://visualstudio.microsoft.com/vs/pricing
+      itemType: overview
+    - text: Поддержка по администрированию VS и Подпискам Visual Studio
+      url: https://visualstudio.microsoft.com/support/support-overview-vs
+      itemType: overview
+  - title: Доступ к порталу Подписок
+    links:
+    - text: Подписчики
+      url: https://my.visualstudio.com/
+      itemType: get-started
+    - text: Администраторы
+      url: https://manage.visualstudio.com/
+      itemType: get-started
+tools:
+  title: Доступные продукты
+  summary: Это лишь некоторые из продуктов, доступных через Подписки Visual Studio.
+  items:
+  - title: Azure
+    imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg
+    url: /azure/
+  - title: Интегрированная среда разработки Visual Studio
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
+    url: /visualstudio/windows/
+  - title: Azure DevOps Services
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+    url: /azure/devops/
+  - title: Visual Studio Code
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+    url: https://code.visualstudio.com/docs
+  - title: Visual Studio для Mac
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
+    url: /visualstudio/mac/
+  - title: Центр приложений Visual Studio
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg
+    url: /appcenter/
+additionalContent:
+  sections:
+  - title: Подробные сведения о преимуществах
+    summary: Ваша подписка может включать следующие преимущества
+    items:
+    - title: Инструменты для разработчиков
+      links:
+      - text: Visual Studio
+        url: ~/vs-ide-benefit.md
+        note: (включая Visual Studio для Mac)
+    - title: Облачные службы
+      links:
+      - text: Службы Azure для разработки и тестирования
+        url: ~/vs-azure-payg.md
+      - text: Центр приложений Visual Studio
+        url: ~/vs-visual-studio-app-center.md
+      - text: Azure DevOps Server и клиентская лицензия (CAL)
+        url: ~/vs-vsts.md
+      - text: Подписка на Office 365 для разработчиков
+        url: ~/vs-office-dev.md
+      - text: Учетная запись разработчика Windows
+        url: ~/vs-windows-dev.md
+    - title: Обучение и поддержка
+      links:
+      - text: LinkedIn Premium
+        url: ~/vs-linkedin-learning.md
+        note: (бизнес, технологии и творчество)
+      - text: Pluralsight
+        url: ~/vs-pluralsight.md
+        note: (облако, разработка, мобильные технологии и данные)
+      - text: Data Camp
+        url: ~/vs-datacamp.md
+        note: (обработка и анализ данных, ИИ)
+      - text: Обращения в службу профессиональной технической поддержки Майкрософт
+        url: ~/vs-tech-support.md
+      - text: Сообщество Azure
+        url: ~/vs-azure-community.md
