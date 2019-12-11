@@ -1,17 +1,17 @@
 ---
 title: Начало работы с ASP.NET Core
 description: В этой статье описывается начало работы с ASP.NET в Visual Studio для Mac, включая установку и создание нового проекта.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493724"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984893"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -66,10 +66,10 @@ public static void Main(string[] args)
 
 Приложение ASP.NET Core создает в основном методе веб-сервер, настраивая и запуская узел с помощью экземпляра [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Этот построитель предоставляет методы, позволяющие настроить узел. В шаблоне приложения используются следующие конфигурации:
 
-* `UseKestrel`: указывает, что приложением будет использоваться сервер Kestrel.
-* `UseContentRoot(Directory.GetCurrentDirectory())`: использует корневую папку веб-проекта в качестве корня содержимого приложения при запуске приложения из этой папки.
-* `.UseIISIntegration()`: указывает, что приложение должно работать с IIS. Чтобы использовать IIS с ASP.NET Core, нужно указать как `UseKestrel`, так и `UseIISIntegration`.
-* `.UseStartup<Startup>()`: указывает класс Startup.
+* `UseKestrel`. указывает, что приложением будет использоваться сервер Kestrel.
+* `UseContentRoot(Directory.GetCurrentDirectory())`. использует корневую папку веб-проекта в качестве корня содержимого приложения при запуске приложения из этой папки.
+* `.UseIISIntegration()`. указывает, что приложение должно работать с IIS. Чтобы использовать IIS с ASP.NET Core, нужно указать как `UseKestrel`, так и `UseIISIntegration`.
+* `.UseStartup<Startup>()`. указывает класс Startup.
 
   Методы Build и Run выполняют сборку IWebHost, который разместит приложение и запустит в нем прослушивание входящих HTTP-запросов.
 

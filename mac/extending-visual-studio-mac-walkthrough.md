@@ -1,16 +1,16 @@
 ---
 title: Пошаговое руководство по расширению Visual Studio для Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984109"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983288"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Пошаговое руководство по расширению Visual Studio для Mac
 
@@ -22,7 +22,7 @@ ms.locfileid: "62984109"
 
    ![Снимок экрана Visual Studio для Mac](media/extending-visual-studio-mac-addin3.png)
 
-2. Установите _пакет расширения Add-in Maker_ с помощью диспетчера расширений. В меню Visual Studio выберите **Расширения...**:
+2. Установите _пакет расширения Add-in Maker_ с помощью диспетчера расширений. В меню Visual Studio выберите **Расширения...** :
 
    ![Вкладка "Диспетчер надстроек"](media/extending-visual-studio-mac-addin4.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "62984109"
 
 4. Установив Addin Maker, вы можете приступить к созданию пакета расширения. Начнем с создания решения.
 
-5. В диалоговом окне **Новое решение** выберите шаблон **Другие > Прочее > Общие > Xamarin Studio Addin > C#**, а на следующем экране назовите новое решение `DateInserter`:
+5. В диалоговом окне **Новое решение** выберите шаблон **Другие > Прочее > Общие > Xamarin Studio Addin > C#** , а на следующем экране назовите новое решение `DateInserter`:
 
    ![Создание решения](media/extending-visual-studio-mac-addin7New.png)
 

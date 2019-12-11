@@ -1,18 +1,18 @@
 ---
 title: Обновление Visual Studio для Mac
 description: Инструкции по обновлению Visual Studio для Mac до последней версии.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 06/20/2018
 ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
-ms.openlocfilehash: 66461beec5fa619c33e0d33aeb4e57bfefd43d96
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 092cf0c8794d143a6e563183fdea96fd5e6cf8cc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715678"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985147"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>Обновление Visual Studio 2017 для Mac (версия 7) до Visual Studio 2019 для Mac (версия 8.0).
 

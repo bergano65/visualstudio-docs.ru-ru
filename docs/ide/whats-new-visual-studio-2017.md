@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189600"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955040"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -389,6 +389,6 @@ Visual Studio перемещает свои расширения, а также 
 * [Новые возможности пакета SDK для Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Новые возможности Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Новые возможности C#](/dotnet/csharp/whats-new)
-* [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Новые возможности Team Foundation Server)
+* [What's New for Team Foundation Server](/azure/devops/server/whats-new) (Новые возможности Team Foundation Server)
 * [Новые возможности Visual Studio для Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Новые возможности Visual Studio 2019](whats-new-visual-studio-2019.md)

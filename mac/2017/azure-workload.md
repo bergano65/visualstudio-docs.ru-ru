@@ -2,15 +2,15 @@
 title: Azure
 description: Добавление хранилища данных Azure, проверка подлинности и push-уведомления в мобильных приложениях в среде Visual Studio для Mac
 ms.assetid: 3E5ADF4A-6655-42AD-BFC1-CE5E437C457B
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
-ms.openlocfilehash: 1fd646c1d0ac444d1c4675715562efe73b7d6554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e00869e8393b0b074e3eefc403b95c5498377e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932928"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983236"
 ---
 # <a name="azure"></a>Azure
 

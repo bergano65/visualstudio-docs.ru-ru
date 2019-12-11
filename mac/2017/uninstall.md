@@ -1,17 +1,17 @@
 ---
 title: Удаление Visual Studio для Mac
 description: Инструкции по удалению системы Visual Studio для Mac и связанных с ней инструментов.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef9b609b74b878a2d9bdafb087481ad1c6e79a70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78bf7fce98f2a77e05a3fbbd31afcf3f20d97a9f
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986834"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985136"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
@@ -102,7 +102,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
-Можно также удалить следующий каталог, содержащий разные папки и файлы Xamarin. Но учитывайте, что этот каталог содержит ключи подписывания Android. См. дополнительные сведения об **[удалении пакета SDK для Android и пакета SDK для Java](#uninstall-android-sdk-and-java-sdk)**:
+Можно также удалить следующий каталог, содержащий разные папки и файлы Xamarin. Но учитывайте, что этот каталог содержит ключи подписывания Android. См. дополнительные сведения об **[удалении пакета SDK для Android и пакета SDK для Java](#uninstall-android-sdk-and-java-sdk)** :
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
