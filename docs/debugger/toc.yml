@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: Устранение неполадок точек останова
           href: troubleshooting-breakpoints.md
+        - name: 'Устранение неполадок точек останова в данных C#'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: Проверка данных
       items:
         - name: Проверка данных в окнах отладчика
