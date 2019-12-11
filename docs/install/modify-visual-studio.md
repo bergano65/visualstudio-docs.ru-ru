@@ -3,7 +3,7 @@ title: Изменение Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапном изменении среды Visual Studio.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 08/23/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.openlocfilehash: 23e44479bedfdb44b2375baae9f342f47b38700b
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74566995"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810101"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio путем добавления или удаления рабочих нагрузок и компонентов
 
@@ -69,7 +69,7 @@ Visual Studio можно легко изменить таким образом, 
 
      Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
-     ![Visual Studio Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск Microsoft Visual Studio Installer")
+     ![Visual Studio Installer](media/locate-the-visual-studio-installer.png "Поиск Microsoft Visual Studio Installer")
 
      >[!TIP]
      >На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"**  — для **Microsoft Visual Studio**.<br/><br/> Кроме того, Visual Studio Installer можно найти в следующем расположении: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -84,7 +84,7 @@ Visual Studio можно легко изменить таким образом, 
 
 1. На экране **Рабочие нагрузки** выберите рабочие нагрузки, которые нужно установить, или отмените выбор тех, которые нужно удалить.
 
-    ![Диалоговое окно установки Visual Studio 2017](media/vs2017-modify-workloads.PNG "Выбор рабочей нагрузки в Visual Studio 2017")
+    ![Диалоговое окно установки Visual Studio 2017](media/modify-workloads.png "Выбор рабочей нагрузки в Visual Studio 2017")
 
 1. Снова выберите команду **Изменить**.
 
