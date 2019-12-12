@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983767"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810038"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -74,6 +74,9 @@ ms.locfileid: "73983767"
 3. Отправьте инцидент в службу технической поддержки.
 
 Дополнительные сведения см. в документации по [технической поддержке](vs-tech-support.md).
+
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Вопрос: Как владеет интеллектуальной собственностью, созданной с помощью индивидуального кредита Azure DevTest?
+Ответ.  Интеллектуальная собственность, создаваемая сотрудником с использованием ресурсов, предоставляемых компанией, является интеллектуальной собственностью такой компании. Таким образом, если вы получили подписку Visual Studio от своего работодателя, будут применяться корпоративные политики, связанные с интеллектуальной собственностью. 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Вопрос: Мне пришло сообщение о том, что мой доступ к Azure скоро закончится.  Что мне сделать, чтобы продолжить использование Azure?
 Ответ.  Вы получили это сообщение, так как используете преимущества Azure, связанные с вашей подпиской Visual Studio, и у этой подписки истек срок действия либо она была удалена.  Чтобы продолжить использование Azure, у вас есть несколько вариантов:

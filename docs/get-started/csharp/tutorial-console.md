@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180238"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830012"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Учебник. Создание простого консольного приложения C# в Visual Studio
 
@@ -136,7 +136,7 @@ ms.locfileid: "70180238"
 
     ![Анимация кода целочисленных вычислений, показывающая функцию автовыполнения IntelliSense в интегрированной среде разработки Visual Studio](./media/integer-math-intellisense.gif)
 
-1. Выберите **Calculator**, чтобы запустить программу, или нажмите клавишу **F5**.
+1. Нажмите зеленую кнопку **Пуск** или клавишу **F5** рядом с **калькулятором**, чтобы создать и запустить программу.
 
    ![Нажмите кнопку Calculator, чтобы запустить приложение с панели инструментов](./media/csharp-console-calculator-button.png)
 

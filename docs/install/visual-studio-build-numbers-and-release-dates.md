@@ -5,19 +5,19 @@ description: Список выпущенных версий и номеров с
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1520f5f74ea28850d615b93f37278c4cda090988
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 752e1a73686a5932682642555089988f49c0eb1a
+ms.sourcegitcommit: 2485f597d909e8176622af25678bc3764fcd860c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797235"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000268"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -29,6 +29,8 @@ ms.locfileid: "74797235"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.1 | Выпуск | 10 декабря 2019 г. | 16.4.29609.76 |
+| 16.0.10 | Выпуск | 10 декабря 2019 г. | 16.0.28803.631 |
 | 16.5.0 | Предварительная версия 1 | 3 декабря 2019 г. | 16.5.29521.150 |
 | 16.4.0 | Выпуск | 3 декабря 2019 г. | 16.4.29519.181 |
 | 16.4.0 | предварительная версия 6 | 21 ноября 2019 г. | 16.4.29519.161 |
@@ -116,6 +118,7 @@ ms.locfileid: "74797235"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.18 | Выпуск | 10 декабря 2019 г. | 15.9.28307.960 |
 | 15.9.17 | Выпуск | 15 октября 2019 г. | 15.9.28307.905 |
 | 15.9.16 | Выпуск | 10 сентября 2019 г. | 15.9.28307.858 |
 | 15.0.27 | Выпуск | 10 сентября 2019 г. | 15.0.26228.98 |
