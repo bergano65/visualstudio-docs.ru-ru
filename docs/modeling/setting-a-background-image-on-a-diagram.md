@@ -2,17 +2,17 @@
 title: Задание фонового изображения схемы
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8806571939cb057852ddd9cca971f9415339ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748252"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591961"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Задание фонового изображения схемы
 В пакете SDK визуализации и моделирования Visual Studio можно задать фоновое изображение для созданного конструктора с помощью пользовательского кода.
@@ -53,7 +53,7 @@ ms.locfileid: "72748252"
 
 16. В диалоговом окне **Добавление нового элемента** в списке **шаблоны** щелкните **файл кода**.
 
-17. В поле **имя** введите `BackgroundImage.cs` и нажмите кнопку **Добавить**.
+17. В поле **имя** введите `BackgroundImage.cs`и нажмите кнопку **Добавить**.
 
 18. Скопируйте указанный ниже код в файл BackgroundImage.cs, изменив пространство имен, имя класса схемы и имя ресурса файла изображения.
 
@@ -100,7 +100,7 @@ ms.locfileid: "72748252"
 
      Дополнительные сведения о настройке модели с помощью программного кода см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md)
 - [Настройка полей с текстом и изображениями](../modeling/customizing-text-and-image-fields.md)

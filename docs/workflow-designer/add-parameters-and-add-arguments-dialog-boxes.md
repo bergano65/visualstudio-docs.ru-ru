@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650753"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597130"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Диалоговые окна «Добавление параметров» и «Добавление аргументов»
 
@@ -23,7 +23,7 @@ ms.locfileid: "72650753"
 
 |||
 |-|-|
-|**Двух**|Определяет, представляет параметр поток данных в метод, из метода или и тот и другой.|
+|**Направление**|Определяет, представляет параметр поток данных в метод, из метода или и тот и другой.|
 |**Type**|Имя типа нового параметра.|
 |**Значение**|Visual Basic выражение, используемое для присвоения новому параметру значения по умолчанию|
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650753"
 
 |||
 |-|-|
-|**Name**|Имя аргумента.|
-|**Двух**|Определяет, представляет аргумент поток данных в делегат, из делегата или и тот и другой.|
+|**Имя**|Имя аргумента.|
+|**Направление**|Определяет, представляет аргумент поток данных в делегат, из делегата или и тот и другой.|
 |**Type**|Имя типа нового аргумента.|
 |**Значение**|Значение, используемое для этого экземпляра аргумента делегата.|

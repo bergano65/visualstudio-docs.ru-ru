@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658362"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566180"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Работа с моделями и изменение их в коде программы
 
@@ -55,7 +55,7 @@ ms.locfileid: "72658362"
 
  `henry.Name = "Henry VIII";`
 
- Если в определении DSL **вычисляется** **тип** свойства, его нельзя задать. Дополнительные сведения см. в разделе [вычисляемые и настраиваемые свойства хранилища](../modeling/calculated-and-custom-storage-properties.md).
+ Если в определении DSL **вычисляется** **тип** свойства, его нельзя задать. Дополнительные сведения см. в разделе [вычисляемые и пользовательские свойства хранилища](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Отношения
  Доменные отношения, определяемые в определении DSL, становятся парами свойств, по одному в классе на каждом конце связи. Имена свойств отображаются в диаграмме DslDefinition как метки для ролей на каждой стороне связи. В зависимости от кратности роли тип свойства является либо классом на другом конце связи, либо коллекцией этого класса.
@@ -84,7 +84,7 @@ ms.locfileid: "72658362"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Существуют также другие методы доступа к ссылкам. Пример:
+ Существуют также другие методы доступа к ссылкам. Например:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ ms.locfileid: "72658362"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="metadata"></a>Доступ к сведениям о классе
- Вы можете получить сведения о классах, связях и других аспектах определения DSL. Пример:
+ Вы можете получить сведения о классах, связях и других аспектах определения DSL. Например:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +199,13 @@ using (Transaction t =
 
  Существует три способа, с помощью которых можно создать экземпляр связи. Каждый из этих трех методов имеет одинаковый результат:
 
-- Задайте свойство исходного исполнителя роли. Пример:
+- Задайте свойство исходного исполнителя роли. Например:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Задайте свойство целевого исполнителя роли. Пример:
+- Задайте свойство целевого исполнителя роли. Например:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +215,7 @@ using (Transaction t =
 
        Кратность этой роли — `0..*`, поэтому мы добавим ее в коллекцию.
 
-- Явным образом создайте экземпляр связи. Пример:
+- Явным образом создайте экземпляр связи. Например:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -237,7 +237,7 @@ using (Transaction t =
 
 - Элементы в ролях, для которых флаг `PropagatesDelete` имеет значение true. Например, фигура, которая отображает элемент, будет удалена.
 
-По умолчанию каждое отношение внедрения имеет `PropagatesDelete` true в целевой роли. При удалении `henry` `familyTree` не удаляется, но `familyTree.Delete()` удаляет все `Persons`.
+По умолчанию каждое отношение внедрения имеет `PropagatesDelete` true в целевой роли. При удалении `henry` `familyTree`не удаляется, но `familyTree.Delete()` удаляет все `Persons`.
 
 По умолчанию `PropagatesDelete` не имеет значения true для ролей ссылочных отношений.
 
@@ -262,7 +262,7 @@ using (Transaction t =
 
  Все эти три метода имеют одинаковый результат. Необходимо использовать только один из них.
 
- Если роль имеет 0.. 1 или 1.. 1 Кратность, можно задать для нее `null` или другое значение:
+ Если роль имеет 0.. 1 или 1.. 1 Кратность, можно задать для нее `null`или другое значение:
 
  `edward.FamilyTreeModel = null;` или:
 
@@ -285,7 +285,7 @@ using (Transaction t =
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a>Намерен
+## <a name="locks"></a> Блокировки
  Изменения могут быть предотвращены блокировкой. Блокировки могут быть заданы для отдельных элементов, в секциях и в хранилище. Если какой-либо из этих уровней имеет блокировку, которая не позволяет изменить тип изменения, при попытке выполнения может возникнуть исключение. Можно определить, установлены ли блокировки с помощью элемента. NOLOCK () — это метод расширения, который определен в пространстве имен <xref:Microsoft.VisualStudio.Modeling.Immutability>.
 
  Дополнительные сведения см. [в разделе Определение политики блокировки для создания сегментов, которые доступны только для чтения](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
@@ -331,7 +331,7 @@ using (Transaction t = targetDiagram.Store.
 |Соединитель|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |Схема|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
- Элемент на схеме обычно представляет элемент модели. Как правило (но не всегда), <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> представляет экземпляр класса домена, а <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> представляет экземпляр доменной связи. @No__t_0 связь связывает узел или форму ссылки с элементом модели, который она представляет.
+ Элемент на схеме обычно представляет элемент модели. Как правило (но не всегда), <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> представляет экземпляр класса домена, а <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> представляет экземпляр доменной связи. <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> связь связывает узел или форму ссылки с элементом модели, который она представляет.
 
  Каждая фигура узла или ссылки относится к одной схеме. Фигура с двоичной ссылкой соединяет две фигуры узла.
 
@@ -482,7 +482,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Хранение секций
  При загрузке модели соответствующая схема загружается в то же время. Как правило, модель загружается в Store. Дефаултпартитион, а содержимое схемы загружается в другую секцию. Как правило, содержимое каждой секции загружается и сохраняется в отдельный файл.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)

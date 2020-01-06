@@ -2,17 +2,17 @@
 title: Директива Import T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1165a966a532dcb9f07bbc1e46f08a1cb26de161
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748194"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591870"
 ---
 # <a name="t4-import-directive"></a>Директива Import T4
 
@@ -49,6 +49,6 @@ The file contains: <#=  fileContent #>
 
 - Пространство имен DSL
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Директива Assembly T4](../modeling/t4-assembly-directive.md)

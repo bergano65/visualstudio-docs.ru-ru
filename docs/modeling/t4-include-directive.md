@@ -2,17 +2,17 @@
 title: Директива Include T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606389"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591857"
 ---
 # <a name="t4-include-directive"></a>Директива Include T4
 
@@ -24,13 +24,13 @@ ms.locfileid: "72606389"
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- Путь `filePath` может быть абсолютным или относительным для текущего файла шаблона.
+- `filePath` может быть абсолютным или относительным для текущего файла шаблона.
 
    Кроме того, конкретные расширения Visual Studio могут указывать собственные каталоги для поиска включаемых файлов. Например, если вы установили пакет SDK визуализации и моделирования (средства DSL), в список включения добавляется следующая папка: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
    Эти дополнительные папки включения могут зависеть от расширения включающего файла. Например, папка включения DSL Tools доступна только для включающих файлов с расширением `.tt`.
 
-- `filePath` может включать переменные среды, отделенные знаком "%". Пример:
+- `filePath` может включать переменные среды, отделенные знаком "%". Например:
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **TextFile1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **TextFile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).

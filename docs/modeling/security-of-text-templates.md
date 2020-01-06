@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660092"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591974"
 ---
 # <a name="security-of-text-templates"></a>Безопасность текстовых шаблонов
 Текстовые шаблоны имеют следующие соображения по безопасности:
@@ -24,7 +24,7 @@ ms.locfileid: "72660092"
 - Если механизм, используемый узлом для поиска процессора директив, не является безопасным, можно запустить обработчик вредоносных директив.
 
 ## <a name="arbitrary-code"></a>Произвольный код
- При написании шаблона можно поместить любой код в теги \< # # >. Это позволяет выполнять произвольный код в текстовом шаблоне.
+ При написании шаблона можно поместить любой код в теги \<# # >. Это позволяет выполнять произвольный код в текстовом шаблоне.
 
  Не забудьте получить шаблоны из надежных источников. Не забудьте предупредить конечных пользователей приложения, чтобы не выполнять шаблоны, которые не поступают из надежных источников.
 

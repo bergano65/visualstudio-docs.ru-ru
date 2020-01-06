@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658335"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595895"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Переопределение и расширение созданных классов
 
@@ -80,7 +80,7 @@ public partial class Book
 
 Диспетчер транзакций позволяет определять правила, выполняемые до окончания транзакции, в которой произошло указанное событие, например изменение свойства. Правила обычно используются для поддержания синчронисм между различными элементами в хранилище. Например, правила используются, чтобы убедиться, что на диаграмме отображается текущее состояние модели.
 
-Правила определяются отдельно для каждого класса, поэтому нет необходимости иметь код, регистрирующий правило для каждого объекта. Дополнительные сведения см. [в разделе правила распространяют изменения в модели](../modeling/rules-propagate-changes-within-the-model.md).
+Правила определяются отдельно для каждого класса, поэтому нет необходимости иметь код, регистрирующий правило для каждого объекта. Дополнительные сведения см. в разделе [распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="store-events"></a>Сохранить события
 
