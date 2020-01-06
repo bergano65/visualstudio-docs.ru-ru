@@ -8,23 +8,23 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639446"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586033"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктор наборов данных
 
 В этом пошаговом руководстве вы создадите набор данных с помощью **Конструктор наборов данных**. В этой статье описывается процесс создания нового проекта и добавления в него нового элемента **набора данных** . Вы узнаете, как создавать таблицы на основе таблиц в базе данных без использования мастера.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -44,7 +44,7 @@ ms.locfileid: "72639446"
 
 ## <a name="create-a-new-windows-forms-application-project"></a>Создание проекта приложения Windows Forms
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -98,7 +98,7 @@ ms.locfileid: "72639446"
 
      Таблица данных **Order Details** , **ордердетаилстаблеадаптер**и связь данных между таблицами **Orders** и **OrderDetails** добавляются в набор данных.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - Сохраните набор данных.
 
@@ -108,7 +108,7 @@ ms.locfileid: "72639446"
 
 - Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging> события таблиц данных в наборе данных. Дополнительные сведения см. [в разделе Проверка данных в DataSets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

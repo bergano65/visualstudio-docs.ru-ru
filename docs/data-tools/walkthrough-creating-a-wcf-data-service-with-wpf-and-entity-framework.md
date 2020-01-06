@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585994"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простой службы [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] в веб-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и последующий доступ к ней из приложения Windows Forms.
@@ -32,7 +32,7 @@ ms.locfileid: "72648077"
 
 - Создайте [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], представляющий `Customers` таблицу в базе данных Northwind.
 
-- Создайте таблицу [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Создайте [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
 - Создайте клиентское приложение и добавьте ссылку на [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
@@ -40,7 +40,7 @@ ms.locfileid: "72648077"
 
 - При необходимости в приложение будут добавлены возможности фильтрации.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
 1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
@@ -84,7 +84,7 @@ ms.locfileid: "72648077"
 
 3. В текстовом поле **имя** введите `NorthwindModel`, а затем нажмите кнопку **Добавить** .
 
-     Появится мастер модели EDM.
+     Появится Мастер моделей EDM.
 
 4. В мастере моделей EDM на странице **Выбор модели содержимого** выберите элемент **Конструктор EF из базы данных** и нажмите кнопку **Далее**.
 
@@ -132,7 +132,7 @@ ms.locfileid: "72648077"
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. В строке меню выберите **отладка**  > **начать без отладки** , чтобы запустить службу. Откроется окно браузера, и отобразится схема XML для службы.
+6. В строке меню выберите **отладка** > **начать без отладки** , чтобы запустить службу. Откроется окно браузера, и отобразится схема XML для службы.
 
 7. В **адресной** строке введите `Customers` в конце URL-адреса для **норсвиндкустомерс. svc**, а затем нажмите клавишу **Ввод** .
 
@@ -152,7 +152,7 @@ ms.locfileid: "72648077"
 
 ### <a name="to-create-the-client-application"></a>Создание клиентского приложения
 
-1. В строке меню выберите файл, **добавить**  > **Новый проект**.
+1. В строке меню выберите файл, **добавить** > **Новый проект**.
 
 2. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#**  , выберите узел **Windows** , а затем выберите **Windows Forms приложение**.
 
@@ -166,7 +166,7 @@ ms.locfileid: "72648077"
 
 ### <a name="to-add-a-service-reference"></a>Добавление ссылки на службу
 
-1. В строке меню выберите **проект**  > **Добавление ссылки на службу**.
+1. В строке меню выберите **проект** > **Добавление ссылки на службу**.
 
 2. В диалоговом окне **Добавление ссылки на службу** нажмите кнопку **Найти**.
 
@@ -178,7 +178,7 @@ ms.locfileid: "72648077"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Включение привязки данных к службе
 
-1. В строке меню выберите **просмотреть**  >  другие  > **Источники данных** **Windows** .
+1. В строке меню выберите **просмотреть** > другие > **Источники данных** **Windows** .
 
    Открывается окно **Источники данных**.
 
@@ -236,7 +236,7 @@ ms.locfileid: "72648077"
 
 8. В коде, добавленном на этапе 4, выберите код `http://localhost:53161/NorthwindCustomers.svc/` и замените его только что скопированным URL-адресом.
 
-9. В строке меню выберите **отладка**  > **начать отладку** , чтобы запустить приложение. Отобразятся сведения о клиенте.
+9. В строке меню выберите **отладка** > **начать отладку** , чтобы запустить приложение. Отобразятся сведения о клиенте.
 
    Теперь в наличии имеется рабочее приложение, которое будет отображать список клиентов из службы NorthwindCustomers. При необходимости в отображении дополнительных данных посредством службы, свойство [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] можно изменить, чтобы включить дополнительные таблицы из базы данных Northwind.
 
@@ -282,11 +282,11 @@ ms.locfileid: "72648077"
 
 4. В коде выше замените `http://localhost:53161/NorthwindCustomers.svc` URL-адресом из обработчика событий `Form1_Load`.
 
-5. В строке меню выберите **отладка**  > **начать отладку** , чтобы запустить приложение.
+5. В строке меню выберите **отладка** > **начать отладку** , чтобы запустить приложение.
 
 6. В текстовом поле введите **London** и нажмите кнопку. Будут отображены только клиенты из Лондона.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

@@ -2,17 +2,17 @@
 title: Директива Assembly T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f605748d4bda13567713b646f0232d684ec46fe1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748190"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591896"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 
@@ -36,7 +36,7 @@ ms.locfileid: "72748190"
 
 - абсолютный путь к сборке;
 
-  Синтаксис `$(variableName)` можно использовать для ссылки на переменные среды Visual Studio, такие как `$(SolutionDir)`, а также для `%VariableName%` ссылок на них. Пример:
+  Синтаксис `$(variableName)` можно использовать для ссылки на переменные среды Visual Studio, такие как `$(SolutionDir)`, а также для `%VariableName%` ссылок на них. Например:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -88,6 +88,6 @@ ms.locfileid: "72748190"
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Директива Include T4](../modeling/t4-include-directive.md)
