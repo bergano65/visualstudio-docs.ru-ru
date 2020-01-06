@@ -3,17 +3,17 @@ title: Как изменять XML-файлы
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645923"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592741"
 ---
 # <a name="how-to-edit-xml-files"></a>Как изменить XML-файлы
 
@@ -36,7 +36,7 @@ ms.locfileid: "72645923"
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Добавление существующего XML-файла в проект
 
-1. В меню **проект** выберите команду **Добавить существующий элемент**.
+1. В меню **Проект** выберите пункт **Добавить существующий элемент**.
 
    Откроется диалоговое окно **Добавление существующего элемента** .
 
@@ -46,7 +46,7 @@ ms.locfileid: "72645923"
 
 1. В меню **файл** выберите **создать**.
 
-   Откроется диалоговое окно « **Создание файла** ».
+   Откроется диалоговое окно **Создание файла** .
 
 2. Выберите **XML-файл** , чтобы создать новый XML-файл. или выберите **XSLT-файл** , чтобы создать новую таблицу стилей XSLT.
 
@@ -56,7 +56,7 @@ ms.locfileid: "72645923"
 
 ::: moniker range="vs-2017"
 
-1. В меню **Файл** выберите **Создать** > **Проект**.
+1. В меню **файл** выберите пункт **создать** > **проект**.
 
    Откроется диалоговое окно **Новый проект** .
 
@@ -68,7 +68,7 @@ ms.locfileid: "72645923"
 
 ::: moniker range=">=vs-2019"
 
-1. В меню **Файл** выберите **Создать** > **Проект**.
+1. В меню **файл** выберите пункт **создать** > **проект**.
 
 2. В поле поиска шаблона введите **пустой проект** , выберите шаблон **пустой проект (.NET Framework)** , а затем нажмите кнопку **Далее**.
 
@@ -80,7 +80,7 @@ ms.locfileid: "72645923"
 
    Редактор XML находит схемы, добавленные в этот проект, и использует их для проверки и IntelliSense в любых файлах XML, схем или XSLT, которые редактируются, пока этот проект открыт.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Редактор XML](../xml-tools/xml-editor.md)
 - [Свойства XML-документа, окно "Свойства"](../xml-tools/xml-document-properties-properties-window.md)

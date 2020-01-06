@@ -12,17 +12,17 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24c3549cf98e49f3419ef0e7387a6c236c15e9e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 244829edb30bbd43384ba445852f0a9ceafafb3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648846"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587021"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "72648846"
 ![Операция перетаскивания источника данных](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Если окно **Источники данных** не отображается, его можно открыть, выбрав **вид**  >  другие  > **Источники данных** **Windows** или нажав клавиши **SHIFT** +**ALT** +**D**. Для просмотра окна **Источники данных** в Visual Studio должен быть открыт проект.
+> Если окно **Источники данных** не отображается, его можно открыть, выбрав **вид** > другие > **Источники данных** **Windows** или нажав клавиши **SHIFT**+**ALT**+**D**. Для просмотра окна **Источники данных** в Visual Studio должен быть открыт проект.
 
 Перед перетаскиванием элементов можно задать тип элемента управления, к которому необходимо выполнить привязку. Различные значения отображаются в зависимости от выбора самой таблицы или отдельного столбца.  Можно также задать пользовательские значения. Для таблицы **сведения** означает, что каждый столбец привязан к отдельному элементу управления.
 
@@ -53,7 +53,7 @@ ms.locfileid: "72648846"
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Привязка к данным в элементе управления DataGridView
 
-Для [элемента управления DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)вся таблица привязана к этому отдельному элементу управления. При перетаскивании **элемента DataGridView** в форму также появляется панель инструментов для просмотра записей (<xref:System.Windows.Forms.BindingNavigator>). [Набор данных](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов. На следующем рисунке также добавлен [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) , так как таблица Customers имеет связь с таблицей Orders. Все эти переменные объявляются в автоматически созданном коде как закрытые члены класса Form. Автоматически созданный код для заполнения **DataGridView** находится в обработчике событий `Form_Load`. Код для сохранения данных для обновления базы данных находится в обработчике событий `Save` для **BindingNavigator**. Этот код можно перемещать или изменять при необходимости.
+Для [элемента управления DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)вся таблица привязана к этому отдельному элементу управления. При перетаскивании **элемента DataGridView** в форму также появляется панель инструментов для просмотра записей (<xref:System.Windows.Forms.BindingNavigator>). [Набор данных](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов. На следующем рисунке также добавлен [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) , так как таблица Customers имеет связь с таблицей Orders. Все эти переменные объявляются в автоматически созданном коде как закрытые члены класса Form. Автоматически созданный код для заполнения **DataGridView** находится в обработчике событий `Form_Load`. Код для сохранения данных для обновления базы данных находится в обработчике событий `Save` для **BindingNavigator**. Этот код можно перемещать или изменять при необходимости.
 
 ![GridView с BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "72648846"
 
 Обратите внимание, что каждый элемент управления имеет смарт-тег. Этот тег включает настройки, применяемые только к этому элементу управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Привязка данных в Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

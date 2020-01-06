@@ -7,17 +7,17 @@ helpviewer_keywords:
 - database compatibility
 - databases for Visual Studio
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dd469f955a24c6d3c2fb5e438d81e6b8a2db8458
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806994"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586410"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Совместимые системы баз данных для Visual Studio
 
@@ -39,21 +39,21 @@ SQL Server является предложением базы данных Micro
 
 ## <a name="mysql"></a>MySQL
 
-MySQL — это популярная система баз данных с открытым кодом, широко используемая на предприятиях и веб-сайтах. Загружаемые файлы для MySQL, MySQL для Visual Studio и связанных продуктов находятся в [MySQL в Windows](https://www.mysql.com/why-mysql/windows/). Сторонние лица предлагают различные расширения Visual Studio и автономные приложения управления для MySQL. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**средства**  > **диспетчер пакетов NuGet**  > **управления пакетами NuGet для решения**).
+MySQL — это популярная система баз данных с открытым кодом, широко используемая на предприятиях и веб-сайтах. Загружаемые файлы для MySQL, MySQL для Visual Studio и связанных продуктов находятся в [MySQL в Windows](https://www.mysql.com/why-mysql/windows/). Сторонние лица предлагают различные расширения Visual Studio и автономные приложения управления для MySQL. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**средства** > **диспетчер пакетов NuGet** > **управления пакетами NuGet для решения**).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL — это бесплатная система реляционной базы данных с открытым исходным кодом. Чтобы установить его в Windows, можно скачать его со [страницы загрузки PostgreSQL](https://www.postgresql.org/download/windows/). Можно также создать PostgreSQL из исходного кода. Система PostgreSQL Core включает в себя интерфейс языка C. Многие сторонние лица предоставляют пакеты NuGet для использования PostgreSQL из приложений .NET. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**средства**  > **диспетчер пакетов NuGet**  > **управления пакетами NuGet для решения**). Возможно, самый популярный пакет предоставляется [npgsql.org](http://www.npgsql.org).
+PostgreSQL — это бесплатная система реляционной базы данных с открытым исходным кодом. Чтобы установить его в Windows, можно скачать его со [страницы загрузки PostgreSQL](https://www.postgresql.org/download/windows/). Можно также создать PostgreSQL из исходного кода. Система PostgreSQL Core включает в себя интерфейс языка C. Многие сторонние лица предоставляют пакеты NuGet для использования PostgreSQL из приложений .NET. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**средства** > **диспетчер пакетов NuGet** > **управления пакетами NuGet для решения**). Возможно, самый популярный пакет предоставляется [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite — это встроенное ядро СУБД SQL, которое работает в собственном процессе приложения. Его можно скачать на [странице загрузки SQLite](https://www.sqlite.org/download.html). Также доступны многие сторонние пакеты NuGet для SQLite. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**средства**  > **диспетчер пакетов NuGet**  > **управления пакетами NuGet для решения**).
+SQLite — это встроенное ядро СУБД SQL, которое работает в собственном процессе приложения. Его можно скачать на [странице загрузки SQLite](https://www.sqlite.org/download.html). Также доступны многие сторонние пакеты NuGet для SQLite. Вы можете просмотреть предложения в диспетчере пакетов NuGet (**средства** > **диспетчер пакетов NuGet** > **управления пакетами NuGet для решения**).
 
 ## <a name="firebird"></a>Firebird
 
 Firebird — это система баз данных SQL с открытым исходным кодом. Его можно загрузить на [странице загрузки Firebird](http://firebirdsql.org/en/downloads/). Поставщик данных ADO.NET доступен через диспетчер пакетов NuGet.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Определение версии и выпуска системы SQL Server и ее компонентов](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

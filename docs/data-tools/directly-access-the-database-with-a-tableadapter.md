@@ -18,21 +18,21 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e8d5d8e3091b464084df065bb7b889db9fc2194f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648517"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586696"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Непосредственный доступ к базе данных с помощью адаптера таблицы TableAdapter
 
-Кроме `InsertCommand`, `UpdateCommand` и `DeleteCommand`, адаптеры таблиц создаются с помощью методов, которые могут выполняться непосредственно в базе данных. Эти методы (`TableAdapter.Insert`, `TableAdapter.Update` и `TableAdapter.Delete`) можно вызывать для управления данными непосредственно в базе данных.
+Кроме `InsertCommand`, `UpdateCommand`и `DeleteCommand`, адаптеры таблиц создаются с помощью методов, которые могут выполняться непосредственно в базе данных. Эти методы (`TableAdapter.Insert`, `TableAdapter.Update`и `TableAdapter.Delete`) можно вызывать для управления данными непосредственно в базе данных.
 
 Если вы не хотите создавать эти прямые методы, задайте для свойства `GenerateDbDirectMethods` TableAdapter значение `false` в окне **Свойства** . Если какие-либо запросы добавляются в TableAdapter в дополнение к основному запросу TableAdapter, они являются автономными запросами, которые не создают эти `DbDirect` методов.
 
@@ -70,6 +70,6 @@ ms.locfileid: "72648517"
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28ff14f10cd6ad5612551bb65b7b17f0280358f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639602"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586124"
 ---
 # <a name="troubleshoot-service-references"></a>Диагностика ссылок на службы
 
@@ -90,7 +90,7 @@ ms.locfileid: "72639602"
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services не отображаются в браузере
 
-При попытке просмотра XML-представления данных в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] Internet Explorer может ошибочно интерпретировать данные в качестве RSS-канала. Убедитесь, что параметр отображение RSS-каналов отключен.
+При попытке просмотра XML-представления данных в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]Internet Explorer может ошибочно интерпретировать данные в качестве RSS-канала. Убедитесь, что параметр отображение RSS-каналов отключен.
 
 Чтобы устранить эту ошибку, отключите RSS-каналы.
 
@@ -102,6 +102,6 @@ ms.locfileid: "72639602"
 
 4. Нажмите кнопку **ОК** для закрытия диалогового окна **Свойства обозревателя**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -2,17 +2,17 @@
 title: Практическое руководство. Добавление обработчика перетаскивания
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985092"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594699"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 
@@ -22,7 +22,7 @@ ms.locfileid: "72985092"
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>Определение обработчиков жестов путем переопределения методов ShapeElement
 
-`OnDragDrop`, `OnDoubleClick`, `OnDragOver` и других методов можно переопределить.
+`OnDragDrop`, `OnDoubleClick`, `OnDragOver`и других методов можно переопределить.
 
 Добавьте новый файл кода в проект DSL. Для обработчика жестов обычно требуется по крайней мере следующие директивы `using`:
 
@@ -124,11 +124,11 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
 Для поиска форматов, в которых доступны сведения об источнике перетаскивания, запустите код в режиме отладки, задав точку останова на входе в `OnDragOver()` или `CanDragDrop()`. Проверьте значения параметра `DiagramDragEventArgs`. Сведения предоставляются в двух формах.
 
-- <xref:System.Windows.Forms.IDataObject> `Data` — это свойство содержит сериализованные версии исходных объектов, обычно в нескольких форматах. Наиболее полезные функции:
+- <xref:System.Windows.Forms.IDataObject>`Data` — это свойство содержит сериализованные версии исходных объектов, обычно в нескольких форматах. Наиболее полезные функции:
 
   - Диаграмевентаргс. Data. Жетдатаформатс () — содержит список форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)`-декодирует перетаскиваемый объект в указанном формате. Приведите объект в соответствующий тип. Пример:
+  - `diagramEventArgs.Data.GetData(format)`-декодирует перетаскиваемый объект в указанном формате. Приведите объект в соответствующий тип. Например:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -160,7 +160,7 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
 Сделайте исходный DSL доступным для шины модели Visual Studio:
 
-1. Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора и выберите команду **включить ModelBus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.
+1. Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора, а затем нажмите кнопку **включить Modelbus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.
 
 2. Щелкните **преобразовать все шаблоны** и перестроить решение.
 
@@ -569,7 +569,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Настройка функции копирования](../modeling/customizing-copy-behavior.md)
 - [Развертывание решений на доменных языках](msi-and-vsix-deployment-of-a-dsl.md)

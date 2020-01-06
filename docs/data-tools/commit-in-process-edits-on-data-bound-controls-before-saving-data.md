@@ -13,17 +13,17 @@ helpviewer_keywords:
 - BindingSource class, committing edited records
 - EndEdit method
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 129f8e03ca982dc1e028dc23a9e342b5793e39cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4a708128f827568e072c617effff17129e41e558
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648678"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586943"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных
 
@@ -50,7 +50,7 @@ ms.locfileid: "72648678"
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)

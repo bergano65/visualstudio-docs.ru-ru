@@ -12,17 +12,17 @@ helpviewer_keywords:
 - application architecture
 - architecture [Visual Studio ALM], modeling
 - application modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f669b8e0b737aa945641d1e7a32c7c05bee3c711
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0c9bbb0e98fe717e696aa974f4af5ba29de498e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654344"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590583"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Анализ и моделирование архитектуры
 
@@ -43,7 +43,7 @@ ms.locfileid: "72654344"
 |**Визуализация кода**<br /><br />— Просмотрите организацию кода и связи, создав карты кода. Визуализация зависимостей между сборками, пространствами имен, классами, методами и т. д.<br />— См. структуру классов и элементы для конкретного проекта путем создания схем классов на основе кода.<br />— Поиск конфликтов между кодом и его конструкцией путем создания схем зависимостей для проверки кода.|- [Визуализация кода](../modeling/visualize-code.md)<br />- [работе с классами и другими типами (конструктор классов)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [видео: изучение структуры кода с помощью Visual Studio 2015 Maps Map](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [видео: проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Определение архитектуры**<br /><br />— Определение и принудительное применение ограничений для зависимостей между компонентами кода путем создания схем зависимостей.|- [видео: проверка зависимостей архитектуры с помощью Visual Studio (канал 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Проверка системы на соответствие требованиям и намеченной структуре**<br /><br />— Проверка зависимостей кода с помощью схем зависимостей, описывающих предполагаемую архитектуру и предотвращение изменений, которые могут конфликтовать с архитектурой.|- [видео: проверка зависимостей архитектуры с помощью Visual Studio (канал 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Настройка моделей и схем**<br /><br />— Создайте собственные языки для конкретных доменов.|[пакет SDK для моделирования -  для Visual Studio — языки, относящиеся к домену](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Настройка моделей и схем**<br /><br />— Создайте собственные языки для конкретных доменов.|[пакет SDK для моделирования - для Visual Studio — языки, относящиеся к домену](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**Создание текстов с помощью шаблонов T4**<br /><br />— Использование текстовых блоков и логики элементов управления внутри шаблонов для создания текстовых файлов.<br /> -Сборка шаблона T4 с MSBuild, добавленная в Visual Studio|- [создания кода и текстовых шаблонов T4](../modeling/code-generation-and-t4-text-templates.md)|
 |**Совместное использование моделей, схем и карт кода с помощью системы управления версиями Team Foundation**<br /><br />— Размещение карт кода, проектов и схем зависимостей в системе управления версиями Team Foundation, чтобы вы могли поделиться ими.| |
 
@@ -59,7 +59,7 @@ ms.locfileid: "72654344"
 
 - Изучите программный код, чтобы лучше понять его структуру и зависимости, порядок обновления и расчетную стоимость реализации предлагаемых изменений.
 
-**Смотрите**
+**См. следующие документы.**
 
 - [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)
@@ -74,7 +74,7 @@ ms.locfileid: "72654344"
 - Стабилизация структуры приложения путем внесения многочисленных изменений на протяжении его жизненного цикла.
 - Выявление непредвиденных конфликтов зависимостей до возвращения внесенных в код изменений.
 
-**Смотрите**
+**См. следующие документы.**
 
 - [Создание схем зависимостей на основе кода](../modeling/create-layer-diagrams-from-your-code.md)
 - [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)
@@ -89,11 +89,11 @@ ms.locfileid: "72654344"
 - Создание или настройка частей приложения. Разработка нотации и инструментов требует усилий. Результат может лучше соответствовать вашему домену, чем настройка языка UML.
 - Крупные проекты или линейки продуктов, когда инвестиции в разработку предметно-ориентированного языка и его инструментов окупаются за счет его использования сразу в нескольких проектах.
 
-**Смотрите**
+**См. следующие документы.**
 
 - [SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Новые возможности моделирования в Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps и управление жизненным циклом приложений](/azure/devops/user-guide/devops-alm-overview)

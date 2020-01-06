@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648222"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586293"
 ---
 # <a name="save-data-back-to-the-database"></a>Сохранение данных обратно в базу данных
 
@@ -73,21 +73,21 @@ ms.locfileid: "72648222"
 |Числен|Целевой набор данных|Исходный набор данных|
 | - | - | - |
 |До преобразования|Джеймс Уилсон (|Джеймс C. Уилсон (|
-|Текущие|Джим Уилсон (|Джеймс C. Уилсон (|
+|Current|Джим Уилсон (|Джеймс C. Уилсон (|
 
 Вызов метода <xref:System.Data.DataSet.Merge%2A> в предыдущей таблице с `preserveChanges=false targetDataset.Merge(sourceDataset)` приводит к следующим данным:
 
 |Числен|Целевой набор данных|Исходный набор данных|
 | - | - | - |
 |До преобразования|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
-|Текущие|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
+|Current|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
 
 Вызов метода <xref:System.Data.DataSet.Merge%2A> с `preserveChanges = true targetDataset.Merge(sourceDataset, true)` приводит к следующим данным:
 
 |Числен|Целевой набор данных|Исходный набор данных|
 | - | - | - |
 |До преобразования|Джеймс C. Уилсон (|Джеймс C. Уилсон (|
-|Текущие|Джим Уилсон (|Джеймс C. Уилсон (|
+|Current|Джим Уилсон (|Джеймс C. Уилсон (|
 
 > [!CAUTION]
 > В сценарии `preserveChanges = true`, если метод <xref:System.Data.DataSet.RejectChanges%2A> вызывается для записи в целевом наборе данных, то возвращается к исходным данным из *исходного* набора данных. Это означает, что при попытке обновить исходный источник данных с помощью целевого набора данных может оказаться невозможным найти исходную строку для обновления. Можно предотвратить нарушение параллелизма, заполняя другой набор данных обновленными записями из источника данных, а затем выполнив слияние, чтобы предотвратить нарушение параллелизма. (Нарушение параллелизма происходит, когда другой пользователь изменяет запись в источнике данных после заполнения набора данных.)
@@ -103,7 +103,7 @@ ms.locfileid: "72648222"
 - Он предотвращает возникновение некоторых событий обновления (событий, которые часто используются для проверки).
 
 > [!NOTE]
-> В Windows Forms архитектура привязки данных, встроенная в DataGrid, приостанавливает проверку ограничений до тех пор, пока фокус не будет перемещен из строки, и вам не нужно явно вызывать методы <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> или <xref:System.Data.DataRow.CancelEdit%2A>.
+> В Windows Forms архитектура привязки данных, встроенная в DataGrid, приостанавливает проверку ограничений до тех пор, пока фокус не будет перемещен из строки, и вам не нужно явно вызывать методы <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>или <xref:System.Data.DataRow.CancelEdit%2A>.
 
 Ограничения автоматически отключаются при вызове метода <xref:System.Data.DataSet.Merge%2A> в наборе данных. Когда слияние завершено, при наличии ограничений на набор данных, который не может быть включен, создается <xref:System.Data.ConstraintException>. В этом случае свойство <xref:System.Data.DataSet.EnforceConstraints%2A> имеет значение `false,` и все нарушения ограничений должны быть разрешены перед сбросом свойства <xref:System.Data.DataSet.EnforceConstraints%2A> в `true`.
 
@@ -131,7 +131,7 @@ ms.locfileid: "72648222"
 |<xref:System.Data.DataRowState.Deleted>|Строка была удалена с помощью <xref:System.Data.DataRow.Delete%2A> объекта <xref:System.Data.DataRow>.|
 |<xref:System.Data.DataRowState.Detached>|Строка была создана, но не является частью какой-либо <xref:System.Data.DataRowCollection>. Объект <xref:System.Data.DataRow> находится в этом состоянии сразу после его создания, перед добавлением в коллекцию и после его удаления из коллекции.|
 |<xref:System.Data.DataRowState.Modified>|Значение столбца в строке изменилось каким-либо образом.|
-|<xref:System.Data.DataRowState.Unchanged>|Строка не изменилась со времени последнего вызова <xref:System.Data.DataRow.AcceptChanges%2A>.|
+|<xref:System.Data.DataRowState.Unchanged>|Строка не была изменена с момента последнего вызова <xref:System.Data.DataRow.AcceptChanges%2A>.|
 
 ### <a name="datarowversion-enumeration"></a>DataRowVersion - перечисление
 
@@ -259,7 +259,7 @@ ms.locfileid: "72648222"
    > [!NOTE]
    > Если свойству `UpdateCommand` TableAdapter присвоено имя хранимой процедуры, адаптер не формирует инструкцию SQL. Вместо этого он вызывает хранимую процедуру с соответствующими передаваемыми параметрами.
 
-## <a name="pass-parameters"></a>Передать параметры
+## <a name="pass-parameters"></a>Передача параметров
 
 Обычно параметры используются для передачи значений для записей, которые будут обновляться в базе данных. Когда метод `Update` TableAdapter выполняет инструкцию UPDATE, ему необходимо заполнить значения параметров. Он получает эти значения из коллекции `Parameters` для соответствующей команды данных, в данном случае `UpdateCommand` объекта в TableAdapter.
 
@@ -272,7 +272,7 @@ ms.locfileid: "72648222"
 > [!NOTE]
 > Можно также вручную задать значения в коллекции `Parameters` в коде, который обычно выполняется в обработчике событий для события <xref:System.Data.DataTable.RowChanging> адаптера данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Создание и настройка адаптеров таблиц](create-and-configure-tableadapters.md)

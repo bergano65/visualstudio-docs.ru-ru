@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662915"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594049"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Использование escape-последовательностей в текстовых шаблонах
 
@@ -32,10 +32,10 @@ ms.locfileid: "72662915"
 
 - Если тег текстового шаблона предшествует четному числу escape-символов (\\), средство синтаксического анализа шаблонов будет включать половину экранированных символов и включать последовательность в качестве тега текстового шаблона. Например, если в текстовом шаблоне имеется четыре escape-символа, в создаваемом файле будет два символа «\\».
 
-- Если тегу текстового шаблона предшествует нечетное число escape-символов (\\), средство синтаксического анализа шаблонов будет включать половину символов "\\" и сам тег (\< # или # >). Тег не считается тегом текстового шаблона.
+- Если тегу текстового шаблона предшествует нечетное число escape-символов (\\), средство синтаксического анализа шаблонов будет включать половину символов "\\" и сам тег (\<# или # >). Тег не считается тегом текстового шаблона.
 
 - Если escape-символ (\\) встречается в любой другой последовательности, Кроме того, где он помещает управляющий символ или кавычку C# (только в), символ будет выведен напрямую.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Практическое руководство. Создание шаблонов из шаблонов с помощью escape-последовательностей](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

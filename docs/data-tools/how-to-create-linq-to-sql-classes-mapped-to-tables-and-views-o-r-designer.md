@@ -3,17 +3,17 @@ title: Сопоставьте LINQ to SQL классы с таблицами и�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a06d162a9f439690753f23f74ab9923c3201716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b0e3103c1b4faa62ff82dafe8ba4aa0ef9193f06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586501"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Практическое руководство. Создание классов LINQ to SQL, сопоставленных с таблицами и представлениями (реляционный конструктор объектов)
 
@@ -61,7 +61,7 @@ ms.locfileid: "72641965"
 
 7. Перетащите элементы из окна **Источники данных** на форму.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

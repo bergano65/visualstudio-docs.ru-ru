@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648832"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587008"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Привязка элементов управления к рисункам из базы данных
 
@@ -39,7 +39,7 @@ ms.locfileid: "72648832"
 2. В окне **Источники данных** разверните нужную таблицу или объект, чтобы отобразить их столбцы или свойства.
 
    > [!TIP]
-   > Если окно **Источники данных** не открыто, откройте его, выбрав **вид**  >  другие  > **Источники данных** **Windows** .
+   > Если окно **Источники данных** не открыто, откройте его, выбрав **вид** > другие > **Источники данных** **Windows** .
 
 3. Выберите столбец или свойство, содержащие данные изображения, и выберите один из следующих элементов управления из раскрывающегося списка элементов управления:
 
@@ -49,6 +49,6 @@ ms.locfileid: "72648832"
 
     - Кроме того, можно выбрать другой элемент управления, который поддерживает привязку данных и может отображать изображения. Если элемент управления, который вы хотите использовать, отсутствует в списке доступных элементов управления, его можно добавить в список, а затем выбрать. Дополнительные сведения см. в разделе [Добавление пользовательских элементов управления в окно Источники данных](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)

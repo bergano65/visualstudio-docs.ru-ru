@@ -9,17 +9,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b51b5b4be12f76e2237ff93659617e1c1843722a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648498"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586657"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 Изменение данных в таблицах данных аналогично изменению данных в таблице в любой базе данных. Процесс может включать в себя вставку, обновление и удаление записей в таблице. В форме с привязкой к данным можно указать, какие поля доступны для изменения пользователем. В таких случаях инфраструктура привязки данных обрабатывает все отслеживание изменений, чтобы изменения можно было отправить обратно в базу данных позже. Если вы собираетесь вносить изменения в данные программными средствами и планируете их отправить обратно в базу данных, необходимо использовать объекты и методы, которые выполняют отслеживание изменений.
@@ -70,7 +70,7 @@ ms.locfileid: "72648498"
 
 Изменения записываются двумя способами в каждой строке данных:
 
-- Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted> или <xref:System.Data.DataRowState.Unchanged>).
+- Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>или <xref:System.Data.DataRowState.Unchanged>).
 
 - Каждая измененная строка данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходную версию (до изменений) и текущую версию (после изменений). В течение периода, когда ожидается изменение (время, когда вы можете ответить на событие <xref:System.Data.DataTable.RowChanging>), также доступен третья версия — предложенная версия.
 
@@ -98,7 +98,7 @@ ms.locfileid: "72648498"
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
 ## <a name="to-locate-rows-that-have-errors"></a>Обнаружение строк с ошибками
-При работе с отдельными столбцами и строками данных могут возникнуть ошибки. Можно проверить свойство `HasErrors`, чтобы определить, существуют ли ошибки в <xref:System.Data.DataSet>, <xref:System.Data.DataTable> или <xref:System.Data.DataRow>.
+При работе с отдельными столбцами и строками данных могут возникнуть ошибки. Можно проверить свойство `HasErrors`, чтобы определить, существуют ли ошибки в <xref:System.Data.DataSet>, <xref:System.Data.DataTable>или <xref:System.Data.DataRow>.
 
 1. Проверьте свойство `HasErrors`, чтобы проверить наличие ошибок в наборе данных.
 
@@ -107,6 +107,6 @@ ms.locfileid: "72648498"
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

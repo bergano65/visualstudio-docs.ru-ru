@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641150"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586215"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
 
-В этом пошаговом руководстве содержатся подробные инструкции по выполнению инструкций SQL непосредственно в базе данных с помощью методов DBDirect адаптера таблицы. Методы DBDirect адаптера таблицы обеспечивают точный контроль над обновлениями базы данных. Их можно использовать для выполнения определенных инструкций SQL и хранимых процедур, вызывая отдельные методы `Insert`, `Update` и `Delete` в соответствии с требованиями приложения (в отличие от перегруженного метода `Update`, который выполняет обновление, INSERT и УДАЛЯют все операторы в одном вызове).
+В этом пошаговом руководстве содержатся подробные инструкции по выполнению инструкций SQL непосредственно в базе данных с помощью методов DBDirect адаптера таблицы. Методы DBDirect адаптера таблицы обеспечивают точный контроль над обновлениями базы данных. Их можно использовать для выполнения определенных инструкций SQL и хранимых процедур, вызывая отдельные методы `Insert`, `Update`и `Delete` в соответствии с требованиями приложения (в отличие от перегруженного метода `Update`, который выполняет инструкции UPDATE, INSERT и DELETE в одном вызове).
 
 В этом пошаговом руководстве описаны следующие процедуры.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72641150"
 
 - Добавьте методы для прямого доступа к базе данных и выполнения операций вставки, обновления и удаления.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72641150"
 
 Первым шагом является создание **приложения Windows Forms**.
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -109,7 +109,7 @@ ms.locfileid: "72641150"
 
 Чтобы создать элементы управления с привязкой к данным в форме Windows Forms, перетащите узел основной **области** из окна **Источники данных** на форму.
 
-На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.
+На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>и <xref:System.Windows.Forms.BindingNavigator>.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Порядок добавления кнопок, вызывающих отдельные методы DbDirect адаптера таблицы
 
@@ -117,7 +117,7 @@ ms.locfileid: "72641150"
 
 2. Задайте следующие свойства **Имя** и **Текст** для каждой из кнопок.
 
-    |Название|Text|
+    |Name|Текст|
     |----------|----------|
     |`InsertButton`|**Вставить**|
     |`UpdateButton`|**Обновление**|
@@ -168,6 +168,6 @@ ms.locfileid: "72641150"
 
 - Добавление дополнительных таблиц в набор данных посредством выбора элемента **Настроить набор данных с помощью мастера** в окне **Источники данных**. Вы можете добавить элементы управления, отображающие связанные данные, перетащив связанные узлы на форму. Дополнительные сведения см. [в разделе связи в наборах данных](relationships-in-datasets.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

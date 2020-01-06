@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649388"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587411"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Как синхронизировать наборы правил проекта кода с политикой возврата проекта Azure DevOps
 
@@ -31,9 +31,9 @@ ms.locfileid: "72649388"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Указание набора стандартных правил Майкрософт
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши проект кода и нажмите кнопку **свойства**.
 
-2. Щелкните **анализ кода**.
+2. Щелкните **Анализ кода**.
 
 ::: moniker range="vs-2017"
 
@@ -51,19 +51,19 @@ ms.locfileid: "72649388"
 
 1. При необходимости выполните операцию Get с файлом набора правил, который указывает политику возврата.
 
-2. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
+2. В **обозревателе решений**, щелкните правой кнопкой мыши проект кода и нажмите кнопку **свойства**.
 
-3. Щелкните **анализ кода**.
+3. Щелкните **Анализ кода**.
 
 ::: moniker range="vs-2017"
 
-4. В списке **выполнить этот набор правил** щелкните **\<Browse >** .
+4. В списке **выполнить этот набор правил** нажмите кнопку **\<Обзор >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. В списке **активные правила** щелкните **\<Browse >** .
+4. В списке **активные правила** щелкните **\<Обзор >** .
 
 ::: moniker-end
 

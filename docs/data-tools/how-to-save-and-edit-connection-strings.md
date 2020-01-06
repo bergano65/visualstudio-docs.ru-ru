@@ -3,17 +3,17 @@ title: Практическое руководство. Сохранение и 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a78194ae6e4f462ec732e1ae2a1981aa8d857978
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed0f0105383667e1122d6636a3baab3aa925a742
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586462"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Практическое руководство. Сохранение и изменение строк подключения
 Строки подключения в приложениях Visual Studio сохраняются в файле конфигурации приложения (также называемом параметрами приложения) или жестко запрограммированы непосредственно в приложении. Сохранение строк подключения в файле конфигурации приложения упрощает процесс обслуживания приложения. Если строку подключения необходимо изменить, вы можете обновить ее в файле параметров приложения (сравните это с ее изменением в исходном коде и повторной компиляцией приложения).
@@ -52,10 +52,10 @@ ms.locfileid: "72641805"
 1. В окне **Свойства** разверните **узел подключение**.
 1. Чтобы быстро изменить строку подключения, измените свойство **ConnectionString** или щелкните стрелку вниз в свойстве **соединения** и выберите **создать соединение**.
 
-## <a name="security"></a>Безопасность
+## <a name="security"></a>по безопасности
 Хранение конфиденциальных сведений (например, пароля) в строке подключения может повлиять на безопасность приложений. Использование встроенных средств безопасности Windows — более безопасный способ управления доступом к базе данных.
 Дополнительные сведения см. в разделе [Защита сведений о подключении](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Добавление подключений](../data-tools/add-new-connections.md)

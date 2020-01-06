@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639578"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586098"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
 
@@ -101,7 +101,7 @@ Visual Studio можно использовать для открытия про
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Создание SQL Server Express ядра СУБД по умолчанию
 
-1. В строке меню выберите **сервис**  > **Параметры**.
+1. В строке меню выберите пункт **Сервис** > **Параметры**.
 
 2. В диалоговом окне **Параметры** разверните узел Параметры **инструментов базы данных** и выберите подключения к **данным**.
 
@@ -111,6 +111,6 @@ Visual Studio можно использовать для открытия про
 
     SQL Server Express будет ядром СУБД по умолчанию для приложений.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Доступ к данным в Visual Studio](accessing-data-in-visual-studio.md)

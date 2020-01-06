@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649477"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587541"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
 
@@ -61,12 +61,12 @@ ms.locfileid: "72649477"
 
 - Выберите набор правил Microsoft Standard.
 
-- Выберите набор настраиваемых правил, щелкнув **\<Select набор правил из системы управления версиями... >** . Затем введите путь управления версиями набора правил в обозревателе системы управления версиями. Синтаксис пути к системе управления версиями:
+- Выберите набор настраиваемых правил, нажав кнопку **\<выбрать набор правил из системы управления версиями... >** . Затем введите путь управления версиями набора правил в обозревателе системы управления версиями. Синтаксис пути к системе управления версиями:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
 Дополнительные сведения о создании и реализации пользовательского набора правил политики возврата см. в разделе [Реализация пользовательских политик возврата для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
-- [Создание и использование политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Реализация настраиваемых политик возврата с анализом кода для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

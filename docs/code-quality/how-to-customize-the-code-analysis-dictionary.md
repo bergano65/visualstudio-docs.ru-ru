@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649456"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587528"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
 
@@ -241,7 +241,7 @@ ms.locfileid: "72649456"
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Словарь, акронимы, Касинжексцептионси и акронимы
 
-Чтобы включить акроним в список терминов, идентифицируемых при анализе кода, и указать, как акроним при проверке условий регистра для составных слов, добавьте этот термин в качестве внутреннего текста словаря, акронимов/Касинжексцептионс/ Элемент акронима. Акроним в элементе Dictionary/акронимы/Касинжексцептионс/акроним учитывает регистр.
+Чтобы включить акроним в список терминов, идентифицируемых при анализе кода, и указать, как акроним при проверке условий регистра для составных слов, добавьте этот термин в качестве внутреннего текста в элементе Dictionary/акронимы/Касинжексцептионс/акроним. Акроним в элементе Dictionary/акронимы/Касинжексцептионс/акроним учитывает регистр.
 
 **Пример**
 

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984430"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590531"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 
@@ -44,7 +44,7 @@ ms.locfileid: "72984430"
 
 ## <a name="related-tasks"></a>Связанные задачи
 
-|**Главе**|**Задача**|
+|**статья**;|**Задача**|
 |-|-|
 |[Визуализация кода](../modeling/visualize-code.md)|Создайте карты кода и схемы зависимостей, чтобы лучше понять незнакомый код.|
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|

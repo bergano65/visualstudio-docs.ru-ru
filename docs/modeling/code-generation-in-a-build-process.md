@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654201"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590557"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Вызов преобразования текста в процессе сборки
 
@@ -51,7 +51,7 @@ ms.locfileid: "72654201"
   - Microsoft. VisualStudio. TextTemplating. моделирование. 15,0. dll
 
 > [!TIP]
-> Если вы получаете `MissingMethodException` для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге с именем *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например,  *MSBuild. exe*).
+> Если вы получаете `MissingMethodException` для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге с именем *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например, *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Изменение файла проекта
 
@@ -198,7 +198,7 @@ ms.locfileid: "72654201"
 </ItemGroup>
 ```
 
-Указывать OutputFileName или OutputFilePath не рекомендуется, если вы также преобразуете шаблоны в Visual Studio, используя **Преобразование ALL** или запуск генератора одиночных файлов. В итоге вы получите разные пути к файлам в зависимости от того, как вы активировали преобразование. Это может вызвать путаницу.
+Указывать OutputFileName или OutputFilePath не рекомендуется, если вы также преобразуете шаблоны в Visual Studio, используя **Преобразование ALL** или запуск генератора одиночных файлов. В итоге вы получите разные пути к файлам в зависимости от того, как вы активировали преобразование. Это может сбить с толку.
 
 ## <a name="add-reference-and-include-paths"></a>Добавление ссылок и путей включения
 
@@ -299,7 +299,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 - [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуются во время выполнения в приложении.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 ::: moniker range="vs-2017"
 

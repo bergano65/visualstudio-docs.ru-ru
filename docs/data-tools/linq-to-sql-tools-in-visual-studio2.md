@@ -3,17 +3,17 @@ title: Общие сведения о реляционном конструкт�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648284"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586397"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Инструменты LINQ to SQL в Visual Studio
 
@@ -27,7 +27,7 @@ LINQ to SQL была первой технологией объектно-рел
 
 ## <a name="open-the-or-designer"></a>Открытие реляционного конструктора O/R
 
-Чтобы добавить LINQ to SQL сущностную модель в проект, выберите **проект**  > **Добавить новый элемент**, а затем в списке элементов проекта выберите **LINQ to SQL классы** :
+Чтобы добавить LINQ to SQL сущностную модель в проект, выберите **проект** > **Добавить новый элемент**, а затем в списке элементов проекта выберите **LINQ to SQL классы** :
 
 ![Классы LINQ-SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -78,7 +78,7 @@ Visual Studio создает *DBML* -файл и добавляет его в р
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Часто задаваемые вопросы (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)

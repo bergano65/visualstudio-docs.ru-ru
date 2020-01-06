@@ -4,17 +4,17 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc30d0299e83423474c673b9d32e019885c2d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603881"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573252"
 ---
 # <a name="code-analysis-faq"></a>Анализ кода: вопросы и ответы
 
@@ -47,7 +47,7 @@ ms.locfileid: "72603881"
 
 **Вопрос**. работает ли анализ кода на основе .NET Compiler Platform в сборках непрерывной интеграции (CI)?
 
-Ответ **. Да**. Для анализаторов, установленных из пакета NuGet, эти правила [применяются во время сборки, в](roslyn-analyzers-overview.md#build-errors)том числе во время сборки CI. Анализаторы, используемые в CI, строят конфигурацию правил из наборов правил и файлов EditorConfig. В настоящее время анализаторы кода, встроенные в Visual Studio, недоступны в качестве пакета NuGet, поэтому эти правила не могут быть применены в сборке CI.
+**Ответ**: Да. Для анализаторов, установленных из пакета NuGet, эти правила [применяются во время сборки, в](roslyn-analyzers-overview.md#build-errors)том числе во время сборки CI. Анализаторы, используемые в CI, строят конфигурацию правил из наборов правил и файлов EditorConfig. В настоящее время анализаторы кода, встроенные в Visual Studio, недоступны в качестве пакета NuGet, поэтому эти правила не могут быть применены в сборке CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Анализаторы IDE и StyleCop
 
@@ -63,7 +63,7 @@ ms.locfileid: "72603881"
 
 Ответ **. анализ кода на основе**.NET Compiler Platform анализирует исходный код в режиме реального времени и во время компиляции, в то время как устаревший анализ анализирует двоичные файлы после завершения сборки. Дополнительные сведения см. в статье вопросы и ответы по [анализу на основе .NET Compiler Platform сравнению с устаревшим анализом](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) и [FxCop Analyzer](fxcop-analyzers-faq.md).
 
-## <a name="treat-warnings-as-errors"></a>Обрабатывать предупреждения как ошибки
+## <a name="treat-warnings-as-errors"></a>Рассматривать предупреждения как ошибки
 
 **Вопрос**. в моем проекте используется параметр сборки для обработки предупреждений как ошибок. После перехода с предыдущего анализа на анализ исходного кода все предупреждения анализа кода будут отображаться как ошибки. Как предотвратить это?
 
@@ -88,7 +88,7 @@ ms.locfileid: "72603881"
      ...
      ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Обзор анализаторов](roslyn-analyzers-overview.md)
 - [Параметры соглашений о написании кода .NET в EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

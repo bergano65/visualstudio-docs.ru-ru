@@ -3,17 +3,17 @@ title: Контекстные меню в обозревателе XML-схем
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9310102177e19d2129dd620285d6c45df63ec78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651206"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592897"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Контекстные меню (обозреватель XML-схем)
 
@@ -112,7 +112,7 @@ ms.locfileid: "72651206"
 |**Показывать все элементы**|Находит и выделяет все члены именованной группы.|
 |**Отображение всех ссылок**|Находит и выделяет все ссылки (группы, у которых есть ссылка `ref="selectedGroup"`) на выбранную группу.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Обозреватель схемы XML](../xml-tools/xml-schema-explorer.md)
 - [Поиск в наборе схем](../xml-tools/searching-the-schema-set.md)

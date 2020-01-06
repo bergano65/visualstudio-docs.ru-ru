@@ -3,17 +3,17 @@ title: Как выбрать XML-схему для использования
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275def786a93d42e6b8e110d3b3d785a24e948b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2acafe0c782b39bb7aa345b5456df7238703cb20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601899"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592650"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Как выбрать схемы XML для использования
 
@@ -34,7 +34,7 @@ ms.locfileid: "72601899"
 
    ![Свойство Schemas для XML-файла](media/properties-schemas.png)
 
-   Откроется [диалоговое окно схемы XML](xml-schemas-dialog-box.md) . В диалоговом окне перечислены все схемы с помощью. расширение *XSD* в кэше схемы (включая схемы, на которые имеются ссылки в файле *Catalog. XML* ), а также любую схему, которая находится в текущем решении, открыта в Visual Studio, на которую имеется ссылка в атрибуте `xsd:schemaLocation` или на которые имеются ссылки в **схемах** свойства.
+   Откроется [диалоговое окно схемы XML](xml-schemas-dialog-box.md) . В диалоговом окне перечислены все схемы с помощью. расширение *XSD* в кэше схемы (включая схемы, на которые имеются ссылки в файле *Catalog. XML* ), а также любую схему, которая находится в текущем решении, открыта в Visual Studio, на которую ссылается атрибут `xsd:schemaLocation` или на которую ссылается свойство **Schemas** .
 
 3. Выберите схемы, которые будут использоваться для проверки правильности, одним из приведенных ниже способов.
 
@@ -73,7 +73,7 @@ ms.locfileid: "72601899"
    > [!NOTE]
    > Если у вас по-прежнему есть ссылка на схему с помощью `schemaLocation` атрибута или совпадающая `targetNamespace`, то в этой ситуации **Удаление** не будет работать из-за автоматической ассоциации. В этом случае рекомендуется пометить схему как **не использовать выбранные схемы** в столбце **использовать** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Кэш схемы](../xml-tools/schema-cache.md)
 - [Диалоговое окно «схемы XML»](../xml-tools/xml-schemas-dialog-box.md)
