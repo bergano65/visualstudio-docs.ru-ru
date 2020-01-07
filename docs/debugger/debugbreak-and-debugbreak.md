@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce99cd360d75472df6326cfaf6a3f4ddb198b6d2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738356"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404656"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak и __debugbreak
-Вызов функции DebugBreak Win32 или встроенной функции [__debugbreak](/cpp/intrinsics/debugbreak) можно разместить в любом месте кода. Вызов `DebugBreak` или `__debugbreak` эквивалентен установке точки останова в этом месте программы.
+Вы можете вызвать функцию Win32 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) или встроенную [__debugbreak](/cpp/intrinsics/debugbreak) в любой точке кода. Вызов `DebugBreak` или `__debugbreak` эквивалентен установке точки останова в этом месте программы.
 
  Поскольку `DebugBreak` — это системная функция, на компьютере должны быть установлены системные отладочные символы, гарантирующие правильное отображение информации стека вызовов после приостановки выполнения. В противном случае сведения стека вызовов, отображаемые в отладчике, могут выйти за пределы одного кадра. При использовании `__debugbreak` символы не требуются.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Встроенные инструкции компилятора](/cpp/intrinsics/compiler-intrinsics)
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Отладка машинного кода](../debugger/debugging-native-code.md)
