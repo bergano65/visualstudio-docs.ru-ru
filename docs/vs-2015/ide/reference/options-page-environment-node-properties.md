@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668706"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595037"
 ---
 # <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "72668706"
 ## <a name="general"></a>Общее
  `DTE.Properties("Environment", "General")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |ShowStatusBar|Get/Set (Boolean)|Определяет, является ли строка состояния видимой.|
 |WindowMenuContainsNItems|Get/Set (Short)|Определяет, как располагаются окна документов в нижней части меню «Окна».|
@@ -42,7 +42,7 @@ ms.locfileid: "72668706"
 ## <a name="add-inmacros-security"></a>Безопасность надстроек и макросов
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |MacrosEnabled|Get/Set (Boolean)|Разрешает выполнение макросов.|
 |AddinsEnabled|Get/Set (Boolean)|Разрешает загрузку надстроек.|
@@ -51,7 +51,7 @@ ms.locfileid: "72668706"
 ## <a name="documents"></a>Документы
  `DTE.Properties("Environment", "Documents")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|Определяет, использовать ли при открытии нового файла текущее окно документа, если текущий документ сохранен. `false` означает, что новый документ всегда следует открывать в новом окне.|
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Определяет, должна ли среда автоматически перезагружать файлы, открытые в интегрированной среде разработки, если операционная система сообщает ей, что файлы на диске были изменены.|
@@ -68,7 +68,7 @@ ms.locfileid: "72668706"
 ## <a name="extension-manager"></a>диспетчер расширений
  `DTE.Properties("Environment", "ExtensionManager")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |EnableAdminExtensions|Get/Set (Boolean)|Загружает расширения пользователей при запуске Visual Studio от имени администратора. После изменения этого значения необходимо перезапустить Visual Studio.|
 |EnableOnline|Get/Set (Boolean)|Включает доступ к расширениям в коллекции Visual Studio.|
@@ -77,7 +77,7 @@ ms.locfileid: "72668706"
 ## <a name="find-and-replace"></a>Поиск и замена
  `DTE.Properties("Environment", "FindAndReplace")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |ShowWarningMessages|Get/Set (Boolean)|Отображает предупреждающие сообщения.|
 |InitializeFromEditor|Get/Set (Boolean)|Автоматически заполняет поле **Найти** текстом из редактора.|
@@ -87,7 +87,7 @@ ms.locfileid: "72668706"
 ## <a name="import-and-export-settings"></a>Импорт и экспорт параметров
  `DTE.Properties("Environment", "Import and Export Settings")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |TrackTeamSettings|Get/Set (Boolean)|Использует параметры в файле, заданном свойством TeamSettingsFile.|
 |TeamSettingsFile|Get/Set (String)|Имя файла с параметрами рабочей группы.|
@@ -96,21 +96,21 @@ ms.locfileid: "72668706"
 ## <a name="international-settings"></a>Выбор языка
  `DTE.Properties("Environment", "International")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |Язык|Get/Set (String)|Значение кода языка для текущего языка для Visual Studio.|
 
 ## <a name="keyboard"></a>Клавиатура
  `DTE.Properties("Environment", "Keyboard")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |Схема|Get/Set (String)|Возвращает строку, содержащую встроенную схему, строку, содержащую полный путь к загруженному VSK-файлу или «(Default)», если VSK-файл не загружен.|
 
 ## <a name="projects-and-solution"></a>Проекты и решения
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|Определяет, должна ли интегрированная среда разработки сохранять все свои файлы перед просмотром или запуском построенного приложения.|
 |ProjectsLocation|Get/Set (String)|Определяет каталог по умолчанию, в который будут сохраняться новые проекты из диалогового окна **Добавление проекта**.|
@@ -133,9 +133,9 @@ ms.locfileid: "72668706"
 ## <a name="startup"></a>Запуск
  `DTE.Properties("Environment", "Startup")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> 0: открыть домашнюю страницу<br />1: загрузить последнее загружавшееся решение<br />2: показать диалоговое окно **Открытие проекта**<br />3: показать диалоговое окно **Создание проекта**<br />4: показать пустую среду<br />5: показать начальную страницу|
+|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> — 0: открыть домашнюю страницу<br />— 1: загрузить последнее загружавшееся решение<br />— 2: показать диалоговое окно **Открытие проекта**<br />— 3: показать диалоговое окно **Создание проекта**<br />— 4: показать пустую среду<br />— 5: показать начальную страницу|
 |StartPageRSSUrl|Get/Set (String)|URL-адрес RSS-канала, используемый при запуске.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Обновляет начальную страницу каждый раз по истечении интервала, заданного свойством StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Интервал обновления начальной страницы в минутах.|
@@ -143,7 +143,7 @@ ms.locfileid: "72668706"
 ## <a name="tasklist"></a>TaskList
  `DTE.Properties("Environment", "TaskList")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|Указывает, запрашивать ли подтверждение при удалении задач из **списка задач**.|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Указывает, выводить ли предупреждение при добавлении пользовательской задачи, которая не будет отображаться.|
@@ -153,7 +153,7 @@ ms.locfileid: "72668706"
 ## <a name="web-browser"></a>Веб-браузер
  `DTE.Properties("Environment", "WebBrowser")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |HomePage|Get/Set (String)|Представляет URL-адрес домашней страницы.|
 |SearchPage|Get/Set (String)|Представляет URL-адрес страницы поиска.|
@@ -161,4 +161,9 @@ ms.locfileid: "72668706"
 |ViewSourceExternalProgram|Get/Set (String)|Путь к внешнему средству просмотра исходного кода.|
 
 ## <a name="see-also"></a>См. также
- [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [Параметры определение имен элементов свойств на](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) странице "параметры страниц параметров" [, "шрифты и цвета](../../ide/reference/options-page-fonts-and-colors-node-properties.md) " страница "Параметры". свойства узла " [текстовый редактор](../../ide/reference/options-page-text-editor-node-properties.md) [" диалогового окна "параметры среды"](../../ide/reference/environment-options-dialog-box.md)
+
+- [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Страница "Параметры", свойства узла "Шрифты и цвета"](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [Страница "Параметры", свойства узла "Текстовый редактор"](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

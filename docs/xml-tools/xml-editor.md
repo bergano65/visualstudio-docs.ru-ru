@@ -2,17 +2,17 @@
 title: Редактор XML
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7898ff0a592ff8aaf6c6a44672024e13e2f0221
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10741daffff2213e8ababde2395663e78241fdc4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608359"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592403"
 ---
 # <a name="xml-editor"></a>Редактор XML
 
@@ -54,7 +54,7 @@ ms.locfileid: "72608359"
 
 С помощью [инструмента "XSLT-иерархия](../xml-tools/walkthrough-using-xslt-hierarchy.md) " можно добавлять точки останова в встроенные таблицы стилей или правила шаблонов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Параметры редактора XML — форматирование](../ide/reference/options-text-editor-xml-formatting.md)
 - [Параметры редактора XML — Разное](../ide/reference/options-text-editor-xml-miscellaneous.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data binding, user controls
 - data binding, complex
 - user controls [Visual Studio], complex data binding
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8da3485ac28d1d4f3ad77f3aa0ba381e0350dae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648647"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586852"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Создание пользовательского элемента управления Windows Forms со сложной привязкой данных
 
@@ -51,7 +51,7 @@ ms.locfileid: "72648647"
 
 - Добавьте новый элемент управления, перетащив его из окна **Источники данных** на **Form1**.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -156,7 +156,7 @@ ms.locfileid: "72648647"
 
 - Создание элементов управления, поддерживающих сценарии поиска. Дополнительные сведения см. [в разделе создание Windows Forms пользовательского элемента управления, поддерживающего привязку данных подстановки](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

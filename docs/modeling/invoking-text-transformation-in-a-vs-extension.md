@@ -2,17 +2,17 @@
 title: Вызов преобразования текста в расширении VS
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667769"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594595"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Вызов преобразования текста в расширении Visual Studio
 
@@ -140,6 +140,6 @@ Sample text.
 
 Чтобы создать текст из предварительно обработанного текстового шаблона, вызовите метод `TransformText()` созданного класса. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Создание текста вне расширения Visual Studio: определение пользовательского узла. Дополнительные сведения см. [в разделе Обработка текстовых шаблонов с помощью пользовательского узла](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Создание текста вне расширения Visual Studio: определение пользовательского узла. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
 Для создания исходного кода, который впоследствии может быть скомпилирован и выполнен: вызовите метод [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) объекта [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

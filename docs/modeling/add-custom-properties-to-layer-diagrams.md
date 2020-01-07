@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652299"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590596"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Добавление пользовательских свойств в схемы зависимостей
 
@@ -22,7 +22,7 @@ ms.locfileid: "72652299"
 
 ## <a name="non-visible-properties"></a>Свойства, не являющиеся видимыми
 
-Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В [илайерелемент](/previous-versions/ff644511(v=vs.140))имеется словарь с именем `Properties`. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
+Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В [ILayerElement](/previous-versions/ff644511(v=vs.140)) есть словарь с именем `Properties`. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
 
 ## <a name="editable-properties"></a>Редактируемые свойства
 
@@ -63,11 +63,11 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Можно определить свойства для [илайерелемент](/previous-versions/ff644511(v=vs.140)) или любого из его производных классов, которые включают:
 
-- `ILayerModel` — модель
+- `ILayerModel` — модель
 
-- `ILayer` — каждый слой
+- `ILayer` — каждый слой
 
-- `ILayerDependencyLink` — ссылки между слоями
+- `ILayerDependencyLink`-ссылки между слоями
 
 - `ILayerComment`
 
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Расширение схем зависимостей](../modeling/extend-layer-diagrams.md)

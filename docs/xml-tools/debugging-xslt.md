@@ -2,19 +2,19 @@
 title: Способы отладки кода XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: bb358efb711211d58525afb8d30d5cb4cad6b2e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6f4a1ce60f04bcea6e21b52db9347a95292dab2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592858"
 ---
 # <a name="debugging-xslt"></a>Отладка XSLT
 
@@ -33,7 +33,7 @@ ms.locfileid: "72646070"
 
 1. Откройте таблицу стилей или XML-файл в Visual Studio.
 
-1. Выберите **запустить отладку XSLT** в меню **XML** или нажмите клавишу **ALT** +**F5**.
+1. Выберите **запустить отладку XSLT** в меню **XML** или нажмите клавишу **ALT**+**F5**.
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Отладка из приложения, использующего XSLT
 
@@ -76,7 +76,7 @@ namespace ConsoleApplication
       XslCompiledTransform xslt = new XslCompiledTransform(true);
 
       // Compile the style sheet.
-      xslt.Load(stylesheet)
+      xslt.Load(stylesheet);
 
       // Execute the XSLT transform.
       FileStream outputStream = new FileStream(outputFile, FileMode.Append);
@@ -90,7 +90,7 @@ namespace ConsoleApplication
 
 [Профилировщик XSLT](../xml-tools/xslt-profiler.md) — это средство, которое позволяет разработчикам измерять, оценивать и нацелить проблемы производительности в коде XSLT, создавая подробные отчеты о производительности XSLT. Дополнительные сведения см. в статье [Профилировщик XSLT](../xml-tools/xslt-profiler.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Пошаговое руководство. Отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [Знакомство с отладчиком Visual Studio](../debugger/debugger-feature-tour.md)

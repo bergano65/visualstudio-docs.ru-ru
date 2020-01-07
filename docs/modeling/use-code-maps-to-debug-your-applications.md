@@ -11,17 +11,17 @@ helpviewer_keywords:
 - mapping code relationships
 - code maps
 - mapping relationships in code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748274"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594114"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Использование карт кода для отладки приложений
 
@@ -31,7 +31,7 @@ ms.locfileid: "72748274"
 
 **Зеленая стрелка показывает, где в редакторе отображается курсор.**
 
-Дополнительные сведения о командах и действиях, которые можно использовать при работе с картами кода, см. в разделе [Обзор и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
+Узнать о командах и действиях, которые можно использовать при работе с картами кода, см. в разделе [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
 
 > [!NOTE]
 > Для создания и редактирования карт кода требуется Visual Studio Enterprise Edition. В выпусках Visual Studio Community и Professional можно открывать схемы, созданные в выпуске Enterprise Edition, но нельзя изменять их.
@@ -140,7 +140,7 @@ ms.locfileid: "72748274"
 
  Теперь вы готовы к исследованию. Вы успешно нашли и устранили проблему путем сопоставления кода. Также у вас есть карта, с помощью которой можно переходить по коду, вспоминать предыдущие действия и просматривать действия, предпринятые для решения проблемы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Визуализация кода](../modeling/visualize-code.md)

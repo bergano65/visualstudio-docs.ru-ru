@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747625"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597195"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Создание схем зависимостей на основе кода
 
@@ -70,7 +70,7 @@ ms.locfileid: "72747625"
 
 4. Создание новой схемы зависимостей для решения с помощью меню " **архитектура** "
 
-5. Выберите все узлы на карте кода (нажмите _клавишу Ctrl_  + _A_или используйте выбор с резиновой полосой, нажав клавишу _SHIFT_ перед нажатием, перетаскиванием и выпуском.
+5. Выберите все узлы на карте кода (нажмите _клавишу Ctrl_ + _A_или используйте выбор с резиновой полосой, нажав клавишу _SHIFT_ перед нажатием, перетаскиванием и выпуском.
 
 6. Перетащите или скопируйте и вставьте выбранные элементы в новую схему проверки зависимостей.
 
@@ -156,7 +156,7 @@ ms.locfileid: "72747625"
 
 - [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Поддержка выпуска для средств моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Видео. Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

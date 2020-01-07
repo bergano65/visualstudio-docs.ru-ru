@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984269"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597169"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Настройка и расширение предметно-ориентированного языка
 
@@ -41,7 +41,7 @@ ms.locfileid: "72984269"
 |Задание фонового изображения для любой фигуры|Переопределите Инитиализеинстанцересаурцес (), чтобы добавить привязанный Имажефиелд.|
 |Вложение фигур в любую глубину|Настройте рекурсивное дерево внедрения. Определите Баундсрулес для размещения фигур.|
 |Присоединение соединителей в фиксированных точках на границе элемента.|Определите в схеме внедренные элементы терминала, представленные маленькими портами. Используйте Баундсрулес, чтобы исправить порты на месте. См. Пример схемы цепи в [пакете SDK для визуализации и моделирования](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
-|Текстовое поле отображает значение, полученное из других значений.|Сопоставьте декоратор текста с вычисляемым или пользовательским свойством домена хранилища. Дополнительные сведения см. в разделе [вычисляемые и настраиваемые свойства хранилища](../modeling/calculated-and-custom-storage-properties.md).|
+|Текстовое поле отображает значение, полученное из других значений.|Сопоставьте декоратор текста с вычисляемым или пользовательским свойством домена хранилища. Дополнительные сведения см. в разделе [вычисляемые и пользовательские свойства хранилища](../modeling/calculated-and-custom-storage-properties.md).|
 |Распространение изменений между элементами модели или между фигурами|См. раздел [Проверка на предметно-](../modeling/validation-in-a-domain-specific-language.md)ориентированном языке.|
 |Распространите изменения на ресурсы, такие как другие расширения Visual Studio, за пределами магазина.|См. раздел [обработчики событий, распространяющие изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |В окне свойств отображаются свойства связанного элемента.|Настройка пересылки свойств. См. раздел [Настройка окна свойств](../modeling/customizing-the-properties-window.md).|
@@ -68,7 +68,7 @@ ms.locfileid: "72984269"
 |Интегрируйте несколько доменных служб, чтобы они работали как часть одного приложения.|См. раздел [Интеграция моделей с помощью Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|
 |Разрешите, что ваш домен DSL должен быть расширен сторонними производителями, и контролируйте расширение.|[Расширение доменного языка с помощью MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Совместное использование классов в различных доменных языках с помощью библиотеки доменных языков](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Определение политики блокировки для создания сегментов, доступных только для чтения](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
 - [Написание кода для настройки предметно-ориентированного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)

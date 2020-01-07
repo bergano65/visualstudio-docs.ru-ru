@@ -3,17 +3,17 @@ title: Кэш схемы редактора XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae5749d57dd1c9aaca8748ed02bdbb5587cade6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668744"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592494"
 ---
 # <a name="schema-cache"></a>Кэш схем
 
@@ -23,25 +23,25 @@ ms.locfileid: "72668744"
 
 В следующей таблице описаны схемы, которые устанавливаются вместе с редактором XML.
 
-| имя_файла | Описание |
+| {2&gt;Имя_файла&lt;2} | Описание |
 |-| - |
 | *Catalog. xsd* | Схема для файлов каталога схем редактора XML. Сведения о каталоге схем см. ниже. |
-| *Дотнетконфиг. xsd* | Схема для файлов Web. config, «<http://schemas.microsoft.com/.NETConfiguration/v2.0>». |
-| *MSBuild. xsd* | Схема для файлов создания MSBuild "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *msdata. xsd* | Схема для XSD-аннотаций, добавленных классом <xref:System.Data.DataSet>, «urn:schemas-microsoft-com:xml-msdata». |
+| *Дотнетконфиг. xsd* | Схема для файлов Web. config, `http://schemas.microsoft.com/.NETConfiguration/v2.0`. |
+| *MSBuild. xsd* | Схема для создания файлов MSBuild, `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| *msdata.xsd* | Схема для XSD-аннотаций, добавленных классом <xref:System.Data.DataSet>, «urn:schemas-microsoft-com:xml-msdata». |
 | *msxsl. xsd* | Схема для расширений блоков скриптов XSLT (Майкрософт), urn:schemas-microsoft-com:xslt. |
 | *Сниппетформат. xsd* | Схема для файлов фрагментов кода XML. Примеры см. в разделе *% VSInstallDir%VC#\ \експансионс*. |
-| *SOAP 1.1. xsd* | Схема для протокола SOAP 1,1, http://schemas.xmlsoap.org/soap/envelope/. |
+| *SOAP 1.1. xsd* | Схема для протокола SOAP 1,1, `http://schemas.xmlsoap.org/soap/envelope/`. |
 | *SOAP 1.2. xsd* | Схема для протокола SOAP 1.2. |
-| *Ситемапсчема. xsd* | Схема для XML-файла ASP.NET Sitemap "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL. xsd* | Схема для языка описания веб-службы, http://schemas.xmlsoap.org/wsdl/. |
-| *ксенк. xsd* | Схема для XML-шифрования http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML. xsd* | Схема для http://www.w3.org/1999/xhtml XHTML. |
-| *XLink. xsd* | Схема для XLink 1.0, http://www.w3.org/1999/xlink. |
-| *XML. xsd* | Схема, описывающая атрибуты XML: Space и XML: lang, http://www.w3.org/XML/1998/namespace. |
-| *ксмлсиг. xsd* | Схема для цифровых подписей XML http://www.w3.org/2000/09/xmldsig#. |
-| *кссдсчема. xsd* | Схема, описывающая саму XSD-схему, http://www.w3.org/2001/XMLSchema. |
-| *XSLT. xsd* | Схема для преобразований XML, http://www.w3.org/1999/XSL/Transform. |
+| *Ситемапсчема. xsd* | Схема для XML-файла ASP.NET Sitemap `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`. |
+| *WSDL. xsd* | Схема для языка описания веб-службы, `http://schemas.xmlsoap.org/wsdl/`. |
+| *ксенк. xsd* | Схема для XML-шифрования `http://www.w3.org/2000/09/xmldsig#`. |
+| *XHTML. xsd* | Схема для `http://www.w3.org/1999/xhtml`XHTML. |
+| *XLink. xsd* | Схема для XLink 1.0, `http://www.w3.org/1999/xlink`. |
+| *XML. xsd* | Схема, описывающая атрибуты XML: Space и XML: lang, `http://www.w3.org/XML/1998/namespace`. |
+| *ксмлсиг. xsd* | Схема для цифровых подписей XML `http://www.w3.org/2000/09/xmldsig#`. |
+| *кссдсчема. xsd* | Схема, описывающая саму XSD-схему, `http://www.w3.org/2001/XMLSchema`. |
+| *XSLT. xsd* | Схема для преобразований XML, `http://www.w3.org/1999/XSL/Transform`. |
 
 ## <a name="update-schemas-in-the-cache"></a>Обновление схем в кэше
 
@@ -64,7 +64,7 @@ ms.locfileid: "72668744"
 
 - VSInstallDir
 
-- Система
+- System
 
 - ProgramFiles
 
@@ -110,7 +110,7 @@ ms.locfileid: "72668744"
 
 ### <a name="to-change-the-schema-cache-location"></a>Изменение расположения кэша схем
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите **Параметры**.
 
 2. Разверните **текстовый редактор**, разверните **XML**, а затем щелкните **Прочее**.
 
@@ -128,6 +128,6 @@ ms.locfileid: "72668744"
 
    Каталог будет автоматически перезагружен.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Редактор XML](../xml-tools/xml-editor.md)

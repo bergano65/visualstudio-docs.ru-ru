@@ -2,17 +2,17 @@
 title: Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344a9331ed63d2da27379770305905ecf5edee77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593529"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 При изменении или добавлении текстовых шаблонов в решении доменного языка могут возникнуть ошибки, когда обработчик преобразует шаблон в исходный код или компилирует созданный код. В следующем пошаговом руководстве демонстрируются некоторые действия, которые можно выполнить для отладки текстового шаблона.
@@ -157,11 +157,11 @@ ms.locfileid: "72666960"
 
      (C#)
 
-     **Компиляция преобразования: Microsoft. VisualStudio. TextTemplating \<GUID >. Женератедтексттрансформатион "не содержит определения для" пространстве ExampleModel "**
+     **Компиляция преобразования: Microsoft. VisualStudio. TextTemplating\<> GUID. Женератедтексттрансформатион "не содержит определения для" пространстве ExampleModel "**
 
      (Visual Basic)
 
-     **Компиляция преобразования: "пространстве ExampleModel" не является членом "Microsoft. VisualStudio. TextTemplating \<GUID >. Женератедтексттрансформатион ".**
+     **Компиляция преобразования: "пространстве ExampleModel" не является членом "Microsoft. VisualStudio. TextTemplating\<GUID >. Женератедтексттрансформатион ".**
 
      В этом случае код текстового шаблона содержит неправильное имя свойства. В качестве имени свойства указан `ExampleModel`, но правильное имя свойства — `LibraryModel`. Правильное имя свойства можно найти в параметре, как показано в следующем коде:
 

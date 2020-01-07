@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2cf385aaf24db2172a61ddbe7ecf77dcbe40f3c
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537775"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573291"
 ---
 # <a name="enable-a-category-of-rules"></a>Включение категории правил
 
@@ -28,11 +28,11 @@ ms.locfileid: "74537775"
 
 - Все правила
 - Поток данных
-- Конструктор
+- В разработке
 - Документация
 - Глобализация
 - Взаимодействие
-- Удобство поддержки
+- Удобство обслуживания
 - Именование
 - Производительность
 - Перенесено из FxCop

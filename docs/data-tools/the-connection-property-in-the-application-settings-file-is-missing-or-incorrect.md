@@ -3,17 +3,17 @@ title: Свойство подключения в файле параметро�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2619b5826002944bd728a7744e0b2507cb493dc4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23a5d9a149fb39b763df71e0dabb21314a5143a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648176"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586202"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Свойство подключения в файле параметров приложения отсутствует или неверно
 
@@ -23,6 +23,6 @@ ms.locfileid: "72648176"
 
 Чтобы ответить на это сообщение, нажмите кнопку **ОК**. Информация о подключении, которая содержится в *DBML*-файле, добавляется к параметрам настройки приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

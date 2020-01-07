@@ -10,17 +10,17 @@ helpviewer_keywords:
 - LookupBindingPropertiesAttribute class, examples
 - user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2c6542ac89f82443cbe4245862473861c94da3cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642660"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586800"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных
 
@@ -54,7 +54,7 @@ ms.locfileid: "72642660"
 
 - Создание формы для отображения данных в новом элементе управления.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -76,7 +76,7 @@ ms.locfileid: "72642660"
 
 Первым шагом является создание проекта **приложения Windows Forms** .
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -177,6 +177,6 @@ ms.locfileid: "72642660"
 
 - Перейдите по нескольким записям и проверьте, что `CompanyName` отображается в элементе управления `LookupBox`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

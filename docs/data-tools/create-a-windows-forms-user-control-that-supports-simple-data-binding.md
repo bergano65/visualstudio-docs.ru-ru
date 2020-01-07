@@ -9,17 +9,17 @@ helpviewer_keywords:
 - custom controls [Visual Studio], Data Sources Window
 - Data Sources Window, controls
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 296f1a9ca076e9728c65d240bab5a81f80669783
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648617"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586828"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создание пользовательского элемента управления Windows Forms с простой привязкой данных
 
@@ -53,7 +53,7 @@ ms.locfileid: "72648617"
 
 - Создание формы для отображения данных в новом элементе управления.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -75,7 +75,7 @@ ms.locfileid: "72648617"
 
 Первым шагом является создание **приложения Windows Forms**:
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -180,7 +180,7 @@ ms.locfileid: "72648617"
 
 - Создание элементов управления, поддерживающих более сложных сценариев привязки к данным. Дополнительные сведения см. в разделе [создание Windows Forms пользовательского элемента управления, поддерживающего сложную привязку данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) , и [Создание Windows Forms пользовательского элемента управления, поддерживающего привязку данных подстановки](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

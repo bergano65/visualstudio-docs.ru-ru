@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648058"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585981"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание LINQ to SQL классов с помощью наследования одной таблицы (реляционный конструктор R)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживают наследование одной таблицы, так как обычно реализуются в реляционных системах. Это пошаговое руководство раскрывает общие шаги, приведенные в разделе [Практическое руководство. Настройка наследования с помощью конструктора O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) , и предоставляет некоторые реальные данные для демонстрации использования наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -91,7 +91,7 @@ ms.locfileid: "72648058"
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Создание нового приложения Windows Forms
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -138,7 +138,7 @@ ms.locfileid: "72648058"
 
 11. Задайте свойству **Наследование по умолчанию** значение **Person**.
 
-12. Выполните построение проекта.
+12. Постройте проект.
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Выполнение запроса наследуемого класса и отображение данных на форме
 Теперь добавьте в форму код, который запрашивает определенный класс в объектной модели.
@@ -185,7 +185,7 @@ ms.locfileid: "72648058"
 
 3. Закройте форму. (В меню **Отладка** щелкните пункт **Остановить отладку**.)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

@@ -6,17 +6,17 @@ f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650292"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584560"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Как использовать конструктор аргументов
 
@@ -28,12 +28,12 @@ ms.locfileid: "72650292"
 
 2. Откройте конструктор аргументов, нажав кнопку **arguments (аргументы** ) в левом нижнем углу полотна конструктора. Появится конструктор аргументов.
 
-3. Щелкните пустую строку с надписью **Создать аргумент**. Это приведет к добавлению новой строки с новым аргументом, используя следующие значения по умолчанию: аргументкс для **имени** , где x — это целое число с начальным значением 1, которое автоматически увеличивается для создания уникальных имен аргументов ( **в** для **направления**). и **String** для **типа аргумента**. Значение **по умолчанию**не добавляется. В процессе разработки рабочего процесса эти значения можно изменить в любое время.
+3. Щелкните пустую строку с надписью **Создать аргумент**. При этом будет добавлена новая строка с новым аргументом, используя следующие значения по умолчанию: аргументкс для **имени** , где x — это целое число с начальным значением 1, которое автоматически увеличивается, чтобы создать уникальные имена аргументов, **в** для **направления**и **строку** для **типа аргумента**. Значение **по умолчанию**не добавляется. В процессе разработки рабочего процесса эти значения можно изменить в любое время.
 
     > [!NOTE]
     > Чтобы удалить аргумент, выберите его, щелкнув его, и нажмите клавишу **Delete** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)
 - [Переменные и аргументы](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

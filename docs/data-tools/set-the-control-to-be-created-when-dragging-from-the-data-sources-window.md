@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5c57b73656f75ae9d99211ba28e38935d3164cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641040"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586189"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"
 
@@ -37,7 +37,7 @@ ms.locfileid: "72641040"
 2. В окне **Источники данных** выберите элемент, представляющий таблицу или объект данных, которые необходимо задать.
 
    > [!TIP]
-   > Если окно **Источники данных** не открыто, его можно открыть, выбрав **вид**  >  другие  > **Источники данных** **Windows** .
+   > Если окно **Источники данных** не открыто, его можно открыть, выбрав **вид** > другие > **Источники данных** **Windows** .
 
 3. Щелкните раскрывающееся меню элемента, а затем выберите один из следующих элементов в меню:
 
@@ -69,6 +69,6 @@ ms.locfileid: "72641040"
 
      Если вы не хотите создавать элемент управления для столбца или свойства, выберите **нет** в раскрывающемся меню. Это полезно, если необходимо перетащить родительскую таблицу или объект в конструктор, но не нужно включать конкретный столбец или свойство.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

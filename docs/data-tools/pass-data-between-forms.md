@@ -12,17 +12,17 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641436"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586371"
 ---
 # <a name="pass-data-between-forms"></a>Передача данных между формами
 
@@ -47,7 +47,7 @@ ms.locfileid: "72641436"
 
 - Передача данных между формами.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -67,7 +67,7 @@ ms.locfileid: "72641436"
 
 ## <a name="create-the-windows-forms-app-project"></a>Создание проекта Windows Forms приложения
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -198,6 +198,6 @@ ms.locfileid: "72641436"
 
 - Добавление функциональности для сохранения данных в базу данных. Дополнительные сведения см. [в разделе Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

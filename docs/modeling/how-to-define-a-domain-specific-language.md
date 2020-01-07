@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985159"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594686"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 Чтобы определить доменный язык (DSL), создайте решение Visual Studio на основе шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.
@@ -606,7 +606,7 @@ ms.locfileid: "72985159"
 
  См. также [руководство. изменение пространства имен доменного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Выявлен
+## <a name="trouble"></a> Устранение неполадок
  В следующей таблице перечислено большинство стандартных проблем, возникающих при разработке DSL, а также предложения по их решению. Дополнительные советы доступны на форуме по [расширению средств визуализации](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Проблема | Предложение |
@@ -620,7 +620,7 @@ ms.locfileid: "72985159"
 | Панель элементов в DSL не отображается после изменения имен сборки. | Просмотрите и обновите **дслпаккаже\женератедкоде\паккаже.ТТ** . Дополнительные сведения см. в разделе [как изменить пространство имен для доменного языка](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | Панель элементов в DSL не отображается, хотя имя сборки не изменялось.<br /><br /> Либо появляется сообщение о невозможности загрузить расширение. | Сбросьте экспериментальный экземпляр и выполните сборку решения заново.<br /><br /> 1. в меню "Пуск" в разделе " **все программы**" разверните [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], затем **инструменты**, а затем щелкните **сбросить Microsoft Visual Studio экспериментальный экземпляр**.<br />2. в меню **Сборка** выберите пункт **Перестроить решение**. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)
 - [Создание доменного языка на основе Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

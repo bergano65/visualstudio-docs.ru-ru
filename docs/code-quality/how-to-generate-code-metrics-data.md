@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568844"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587476"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -24,7 +24,7 @@ ms.locfileid: "73568844"
 
 - Установка средств [FxCop Analyzer](#fxcop-analyzers-code-metrics-rules) и включение четырех метрик кода (обслуживаемости), которые он содержит.
 
-- Выбрав команду « [ **анализ**  > **вычислить метрики кода** ](#calculate-code-metrics-menu-command) » в Visual Studio.
+- Выбрав команду « [ **анализ** > **вычислить метрики кода** ](#calculate-code-metrics-menu-command) » в Visual Studio.
 
 - Из [командной строки](#command-line-code-metrics) для C# проектов и Visual Basic.
 
@@ -48,7 +48,7 @@ ms.locfileid: "73568844"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Параметр Configuration
+### <a name="configuration"></a>Конфигурация
 
 Можно настроить пороговые значения, при которых будут срабатывать правила метрики кода в пакете средств FxCop Analyzer.
 
@@ -62,7 +62,7 @@ ms.locfileid: "73568844"
 
    В этом примере правило [CA1502](ca1502.md) настраивается на срабатывание, когда сложность сложностью организации циклов метода больше 10.
 
-3. В окне **Свойства** Visual Studio или в файле проекта пометьте действие сборки файла конфигурации как [**аддитионалфилес**](../ide/build-actions.md#build-action-values). Пример:
+3. В окне **Свойства** Visual Studio или в файле проекта пометьте действие сборки файла конфигурации как [**аддитионалфилес**](../ide/build-actions.md#build-action-values). Например:
 
    ```xml
    <ItemGroup>
@@ -72,13 +72,13 @@ ms.locfileid: "73568844"
 
 ## <a name="calculate-code-metrics-menu-command"></a>Команда меню «вычислить метрики кода»
 
-Создайте метрики кода для одного или всех открытых проектов в интегрированной среде разработки с помощью меню **анализ**  > **вычислить метрики кода** .
+Создайте метрики кода для одного или всех открытых проектов в интегрированной среде разработки с помощью меню **анализ** > **вычислить метрики кода** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Создание результатов метрик кода для всего решения
 
 Вы можете создавать Результаты метрик кода для всего решения одним из следующих способов:
 
-- В строке меню выберите **анализ**  > **рассчитать метрики кода**  > **для решения**.
+- В строке меню выберите **анализ** > **рассчитать метрики кода** > **для решения**.
 
 - В **Обозреватель решений**щелкните правой кнопкой мыши решение и выберите команду **вычислить метрики кода**.
 
@@ -90,7 +90,7 @@ ms.locfileid: "73568844"
 
 1. В **Обозреватель решений**выберите один или несколько проектов.
 
-1. В строке меню выберите **анализ**  > **рассчитать метрики кода**  > **для выбранных проектов**.
+1. В строке меню выберите **анализ** > **рассчитать метрики кода** > **для выбранных проектов**.
 
 Результаты будут сформированы, и откроется окно **результаты метрики кода** . Чтобы просмотреть подробные сведения о результатах, разверните дерево в **иерархии**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "73568844"
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Пакет NuGet Microsoft. CodeAnalysis. Metrics
 
-Самый простой способ создать данные метрик кода из командной строки — установить пакет NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . После установки пакета запустите `msbuild /t:Metrics` из каталога, содержащего файл проекта. Пример:
+Самый простой способ создать данные метрик кода из командной строки — установить пакет NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . После установки пакета запустите `msbuild /t:Metrics` из каталога, содержащего файл проекта. Например:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Можно переопределить имя выходного файла, указав `/p:MetricsOutputFile=<filename>`. Вы также можете получить данные метрик кода в [стиле прежних версий](#previous-versions) , указав `/p:LEGACY_CODE_METRICS_MODE=true`. Пример:
+Можно переопределить имя выходного файла, указав `/p:MetricsOutputFile=<filename>`. Вы также можете получить данные метрик кода в [стиле прежних версий](#previous-versions) , указав `/p:LEGACY_CODE_METRICS_MODE=true`. Например:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -231,7 +231,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Использование метрик. exe
 
-Чтобы запустить файл *Metric. exe*, предоставьте в качестве аргументов проект или решение, а также выходные XML-файлы. Пример:
+Чтобы запустить файл *Metric. exe*, предоставьте в качестве аргументов проект или решение, а также выходные XML-файлы. Например:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -263,7 +263,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Другие метрики, такие как `CyclomaticComplexity` и `MaintainabilityIndex`, используют те же формулы, что и предыдущие версии *метрик. exe*, но новое средство подсчитывает количество `IOperations` (инструкции логического источника) вместо инструкций промежуточного языка (IL). Номера будут немного отличаться от тех, которые создаются в интегрированной среде разработки Visual Studio и предыдущих версиях *метрик. exe*.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
-- [Использование окна "Результаты метрик кода"](../code-quality/working-with-code-metrics-data.md)
+- [В окне результатов метрики кода](../code-quality/working-with-code-metrics-data.md)
 - [Значения метрик кода](../code-quality/code-metrics-values.md)

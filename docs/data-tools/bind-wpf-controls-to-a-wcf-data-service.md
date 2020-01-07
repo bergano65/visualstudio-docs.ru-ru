@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924554"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586969"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 
@@ -40,7 +40,7 @@ ms.locfileid: "72924554"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
@@ -72,7 +72,7 @@ ms.locfileid: "72924554"
 
 2. В списке "Установленные шаблоны" щелкните **Данные** и выберите элемент проекта **Модель ADO.NET EDM**.
 
-3. Измените имя на `AdventureWorksModel.edmx` и нажмите кнопку **Добавить**.
+3. Измените имя на `AdventureWorksModel.edmx`и нажмите кнопку **Добавить**.
 
      Открывается **Мастер моделей EDM**.
 
@@ -98,7 +98,7 @@ ms.locfileid: "72924554"
 
 2. В списке **Установленные шаблоны** щелкните **Веб-сайт** и выберите элемент проекта **Служба данных WCF**.
 
-3. В поле **имя** введите `AdventureWorksService.svc` и нажмите кнопку **Добавить**.
+3. В поле **имя** введите `AdventureWorksService.svc`и нажмите кнопку **Добавить**.
 
      Visual Studio добавит `AdventureWorksService.svc` в проект.
 
@@ -173,7 +173,7 @@ ms.locfileid: "72924554"
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Выполните построение проекта.
+3. Постройте проект.
 
 ## <a name="create-the-data-bound-controls"></a>Создание элементов управления с привязкой к данным
 
@@ -265,7 +265,7 @@ ms.locfileid: "72924554"
 
 1. В меню **Сборка** выберите пункт **построить решение**. Убедитесь, что сборка решения выполняется без ошибок.
 
-2. Нажмите клавиши **Ctrl** +**F5**.
+2. Нажмите клавиши **Ctrl**+**F5**.
 
      Visual Studio запускает проект **AdventureWorksService** без его отладки.
 
@@ -295,7 +295,7 @@ ms.locfileid: "72924554"
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md)

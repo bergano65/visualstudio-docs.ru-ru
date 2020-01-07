@@ -3,17 +3,17 @@ title: Как создать XML-документ на основе XSD-схем
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645978"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592806"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как создать XML-документ на основе схемы XSD
 
@@ -31,11 +31,11 @@ ms.locfileid: "72645978"
 
 - Ограничения удостоверения `xs:key`, `xs:keyref` и `xs:unique`.
 
-- Аспекты `xs:pattern`.
+- `xs:pattern` аспектов.
 
 - Перечисления типа `xs:QName`.
 
-- Типы `xs:ENTITY`, `xs:ENTITIES` и `xs:NOTATION`.
+- типы `xs:ENTITY`, `xs:ENTITIES`и `xs:NOTATION`.
 
 Также заметьте, что содержимое `xs:base64Binary` будет создано, только если в схеме есть перечисления для этого типа.
 

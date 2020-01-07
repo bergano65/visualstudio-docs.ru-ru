@@ -3,17 +3,17 @@ title: Редактирование таблиц стилей XSLT
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc987f8362d5daf435b7e9de860cc13f16a1aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646061"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592845"
 ---
 # <a name="edit-xslt-style-sheets"></a>Изменение таблиц стилей XSLT
 
@@ -43,6 +43,6 @@ ms.locfileid: "72646061"
 
 Можно запустить отладчик XSLT из XSLT-файла в редакторе XML. Отладчик поддерживает установку точек останова в XSLT-файле, просмотр состояния выполнения XSLT и т. д. При проведении указателя над переменной XSLT появляется подсказка со значением переменной. Отладчик можно использовать для отладки таблицы стилей или отладки преобразования скомпилированного XSL-файла, вызванного из другого приложения. Дополнительные сведения см. в разделе [Отладка XSLT](../xml-tools/debugging-xslt.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Редактор XML](../xml-tools/xml-editor.md)

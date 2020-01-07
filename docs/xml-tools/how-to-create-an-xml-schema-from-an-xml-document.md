@@ -3,17 +3,17 @@ title: Создание схемы XML
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73563d732aab48192892794c15750bc9e5d3eb6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 857b75f22d45cbabc22062fd14b385e8f6ea5f14
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645966"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592780"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Как создать XML-схему из XML-документа
 
@@ -33,10 +33,10 @@ ms.locfileid: "72645966"
 
 1. Откройте XML-файл в Visual Studio.
 
-2. В строке меню выберите **XML**  > **создать схему**.
+2. В строке меню выберите **XML** > **создать схему**.
 
    Создается и открывается документ схемы XML для каждого пространства имен, найденного в XML-файле. Каждая схема открывается, как и любой временный файл. Схемы можно сохранять на диск, добавлять в проект или удалять.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Редактор XML](../xml-tools/xml-editor.md)

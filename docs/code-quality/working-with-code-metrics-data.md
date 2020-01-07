@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648999"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587086"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Использование окна "Результаты метрик кода"
 
@@ -30,9 +30,9 @@ ms.locfileid: "72648999"
 
 Окно Результаты метрик кода можно отобразить с помощью одной из следующих последовательностей меню:
 
-- В меню **анализ** выберите пункт**Результаты метрик кода** **Windows**  > .
+- В меню **анализ** выберите пункт **Результаты метрик кода** **Windows** > .
 
-- В меню **вид** выберите **другие окна**  > **Результаты метрик кода**.
+- В меню **вид** выберите **другие окна** > **Результаты метрик кода**.
 
 Откроется окно **Результаты метрик кода** , даже если оно не содержит результатов.
 
@@ -106,7 +106,7 @@ ms.locfileid: "72648999"
 
 4. В меню **файл** выберите команду **сохранить все** , чтобы сохранить рабочий элемент.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Значения метрик кода](../code-quality/code-metrics-values.md)
-- [Как создавать данные метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
+- [Практическое: создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md)

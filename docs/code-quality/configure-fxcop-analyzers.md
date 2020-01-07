@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649700"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587723"
 ---
 # <a name="configure-fxcop-analyzers"></a>Настройка анализаторов FxCop
 
 [Пакет анализаторов FxCop](install-fxcop-analyzers.md) состоит из наиболее важных правил FXCop из устаревшего анализа, преобразованных в анализаторы кода на основе .NET Compiler Platform. Для некоторых правил FxCop можно уточнить, к каким частям базы кода следует применить эти параметры с помощью [настраиваемых параметров](fxcop-analyzer-options.md). Каждый параметр указывается путем добавления пары "ключ-значение" в файл [EditorConfig](https://editorconfig.org) . Файл конфигурации может быть [специфичным для проекта](#per-project-configuration) или может [совместно](#shared-configuration) использоваться двумя или более проектами.
 
 > [!TIP]
-> Добавьте в проект файл. editorconfig, щелкнув правой кнопкой мыши проект в **Обозреватель решений** и выбрав **Добавить**  > **новый элемент**. В окне **Добавление нового элемента** введите **editorconfig** в поле поиска. Выберите шаблон **Editorconfig File (по умолчанию)** и нажмите кнопку **Добавить**.
+> Добавьте в проект файл. editorconfig, щелкнув правой кнопкой мыши проект в **Обозреватель решений** и выбрав **Добавить** > **новый элемент**. В окне **Добавление нового элемента** введите **editorconfig** в поле поиска. Выберите шаблон **Editorconfig File (по умолчанию)** и нажмите кнопку **Добавить**.
 >
 > ![Добавление файла editorconfig в проект в Visual Studio](media/add-editorconfig-file.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "72649700"
 
 В настоящее время отсутствует иерархическая поддержка для объединения editorconfig-файлов, которые существуют на разных уровнях каталогов, например на уровне решения и проекта.
 
-## <a name="shared-configuration"></a>Общая конфигурация
+## <a name="shared-configuration"></a>Конфигурация совместного использования
 
 Вы можете предоставить общий доступ к файлу editorconfig для конфигурации анализатора FxCop между двумя или более проектами, но для этого требуется выполнить некоторые дополнительные действия.
 
@@ -103,7 +103,7 @@ ms.locfileid: "72649700"
 > [!NOTE]
 > Произвольное общее расположение файла EditorConfig, описанного здесь, применяется только для настройки области определенных правил анализатора FxCop. Для других параметров, таких как серьезность правила, общие параметры редактора и стиль кода, файл EditorConfig всегда должен быть помещен в папку проекта или в родительскую папку.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Параметры области действия правила для средств FxCop Analyzer](fxcop-analyzer-options.md)
 - [Конфигурация анализатора](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

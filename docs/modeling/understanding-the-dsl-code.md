@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189456"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565946"
 ---
 # <a name="understanding-the-dsl-code"></a>Общие сведения о коде доменных языков
 
@@ -70,7 +70,7 @@ ms.locfileid: "73189456"
 
  (В примере решения компонента один из построителей подключений называется ConnectionBuilder. Это совпадение, поскольку доменная связь называется Connection.)
 
- Связь создается в методе `Builder.Connect()` *связей* . Версия по умолчанию проверяет приемлемость элементов исходной и целевой модели, а затем создает экземпляр отношения. Пример:
+ Связь создается в методе`Builder.Connect()` *связей* . Версия по умолчанию проверяет приемлемость элементов исходной и целевой модели, а затем создает экземпляр отношения. Например:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ ms.locfileid: "73189456"
 
 - Методы обработчика прототипа группы элементов (EGP). Они необходимы, если пользователь может *объединить* (Добавить) другой элемент на экземплярах этого класса. Обычно для этой цели пользователь перетаскивает элемент из средства элемента или другой фигуры или использует команду вставки.
 
-   В примере DSL порты ввода и вывода могут быть объединены в один компонент. Кроме того, компоненты и комментарии могут быть объединены в одну модель. Классу
+   В примере DSL порты ввода и вывода могут быть объединены в один компонент. Кроме того, компоненты и комментарии могут быть объединены в одну модель. Вариант
 
    Методы обработчика EGP в классе Component разрешают компоненту доступ к портам, но не к комментариям. Обработчик EGP в классе модели корня принимает комментарии и компоненты, но не порты.
 
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  Этот файл управляет порядком упаковки DSL в Visual Studio Integration Extension (VSIX). Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
 - [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)

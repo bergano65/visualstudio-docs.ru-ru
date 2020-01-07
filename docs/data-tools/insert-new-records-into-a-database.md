@@ -12,17 +12,17 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3a3830c9dd1921939ced3577b7bafa22772b49f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648317"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586423"
 ---
 # <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базу данных
 
@@ -46,7 +46,7 @@ ms.locfileid: "72648317"
 
 1. Добавьте новые записи в нужные <xref:System.Data.DataTable>, создав новый <xref:System.Data.DataRow> и добавив их в коллекцию <xref:System.Data.DataTable.Rows%2A>.
 
-2. После добавления новых строк в <xref:System.Data.DataTable> вызовите метод `TableAdapter.Update`. Объем обновляемых данных можно контролировать путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массива <xref:System.Data.DataRow>s или одного <xref:System.Data.DataRow>.
+2. После добавления новых строк в <xref:System.Data.DataTable>вызовите метод `TableAdapter.Update`. Объем обновляемых данных можно контролировать путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массива <xref:System.Data.DataRow>s или одного <xref:System.Data.DataRow>.
 
    В следующем коде показано, как добавить новую запись в <xref:System.Data.DataTable> и затем вызвать метод `TableAdapter.Update`, чтобы сохранить новую строку в базе данных. (В этом примере используется таблица `Region` в базе данных Northwind.)
 
@@ -73,7 +73,7 @@ ms.locfileid: "72648317"
 
 ### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Вставка новых записей в базу данных с помощью командных объектов
 
-- Создайте новый объект Command, а затем задайте его свойства `Connection`, `CommandType` и `CommandText`.
+- Создайте новый объект Command, а затем задайте его свойства `Connection`, `CommandType`и `CommandText`.
 
 В следующем примере демонстрируется вставка записей в базу данных с помощью командного объекта. Данные вставляются в таблицу `Region` базы данных Northwind.
 
@@ -84,6 +84,6 @@ ms.locfileid: "72648317"
 
 Необходимо иметь доступ к базе данных, к которой вы пытаетесь подключиться, а также разрешение на выполнение вставки в нужную таблицу.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

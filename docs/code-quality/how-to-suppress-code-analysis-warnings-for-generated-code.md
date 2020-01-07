@@ -3,17 +3,17 @@ title: Подавлять нарушения анализа кода для со
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ab2ffce28103059414cef8f1b556152485a12ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649393"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587437"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Как отключить предупреждения анализа кода для созданного кода
 
@@ -32,5 +32,5 @@ ms.locfileid: "72649393"
 
 3. Установите флажок **подавлять результаты из созданного кода** .
 
-> [!NOTE]
-> Предупреждения можно подавлять только из устаревшего анализа. В настоящее время предупреждения анализа кода нельзя отключить от [анализаторов](roslyn-analyzers-overview.md).
+> [!IMPORTANT]
+> Предупреждения можно подавлять только из устаревшего анализа. Страница свойств с параметром устарела и будет удалена в будущих выпусках продукта. В настоящее время предупреждения анализа кода нельзя отключить от [анализаторов](roslyn-analyzers-overview.md).

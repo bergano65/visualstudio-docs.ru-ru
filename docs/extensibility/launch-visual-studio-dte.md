@@ -3,17 +3,17 @@ title: Запуск Visual Studio с помощью DTE
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79af14e80ef39b0cad732dcd0c9f37af1481bd4c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590635"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Запуск Visual Studio с помощью DTE
 
@@ -33,7 +33,7 @@ ms.locfileid: "72647963"
 
 4. Вставьте приведенный ниже [пример кода](#example-code) в файл *Program.CS* .
 
-5. Нажмите клавишу **F5** , чтобы запустить программу. Перед выходом из программы вы увидите Visual Studio 2019 Open.
+5. Нажмите клавишу **F5** для запуска программы. Перед выходом из программы вы увидите Visual Studio 2019 Open.
 
 ## <a name="example-code"></a>пример кода
 
@@ -185,7 +185,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Обнаружение Visual Studio](locating-visual-studio.md)
 - [Пошаговое руководство. доступ к объекту DTE из расширения редактора](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

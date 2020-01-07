@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3222a7bdf8e843a915d0ed0fb72f58ff4a89dca0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e35c279f397f1228c17fb6a41a18a2fe583ab88
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654001"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589738"
 ---
 # <a name="customize-t4-text-transformation"></a>Настройка преобразования текста T4
 
-Текстовые шаблоны — это функция Visual Studio, позволяющая создавать программный код или другие текстовые файлы с помощью процесса преобразования. С помощью [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] можно расширить процесс преобразования шаблона по умолчанию, настроив обработчик директив текстового шаблона или узел текстового шаблона.
+Текстовые шаблоны — это функция Visual Studio, позволяющая создавать программный код или другие текстовые файлы с помощью процесса преобразования. С помощью [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]можно расширить процесс преобразования шаблона по умолчанию, настроив обработчик директив текстового шаблона или узел текстового шаблона.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
 
  [Процесс преобразования текстовых шаблонов](../modeling/the-text-template-transformation-process.md) Описывает принцип работы преобразования текста и объясняет роль узла шаблона и процессоров директив.
 
@@ -33,6 +33,6 @@ ms.locfileid: "72654001"
 
  При написании расширения Visual Studio рассмотрите возможность использования существующей службы преобразования текста вместо написания собственного узла. Дополнительные сведения см. [в разделе вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Справочные сведения
 
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md) предоставляет синтаксис директив и управляющих блоков текстового шаблона.

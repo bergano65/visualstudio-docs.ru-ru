@@ -4,17 +4,17 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649341"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587463"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
 
@@ -34,7 +34,7 @@ ms.locfileid: "72649341"
 
 2. Нажмите кнопку **Установить**.
 
-   Visual Studio устанавливает последнюю версию пакета Microsoft. Кодеанализерс. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **ссылки**  > **Analyzer**.
+   Visual Studio устанавливает последнюю версию пакета Microsoft. Кодеанализерс. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **ссылки** > **Analyzer**.
 
    ![Узел «Анализаторы» в обозреватель решений](media/solution-explorer-analyzers-node.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "72649341"
 
 | Версия Visual Studio | Версия пакета анализатора FxCop |
 | - | - |
-| Visual Studio 2019 (все версии)<br />Visual Studio 2017 версии 15,8 и более поздних версий | [Последняя](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (все версии)<br />Visual Studio 2017 версии 15,8 и более поздних версий | [Актуальная](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 версии 15,5 до 15,7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 версии 15,3 до 15,4 | [2.3.0 — Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 версии 15,0 до 15,2 | [2.0.0 — бета-версия](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -120,7 +120,7 @@ ms.locfileid: "72649341"
 
 ::: moniker-end
 
-4. Выберите **скачать**.
+4. Выберите **Скачать**.
 
    Расширение скачивается.
 
@@ -142,17 +142,17 @@ ms.locfileid: "72649341"
 
 ::: moniker range="vs-2017"
 
-Если вы хотите проверить, установлено ли расширение, выберите **инструменты**  > **расширения и обновления**. В диалоговом окне **расширения и обновления** выберите категорию **установленные** слева и найдите расширение по имени.
+Если вы хотите проверить, установлено ли расширение, выберите **инструменты** > **расширения и обновления**. В диалоговом окне **расширения и обновления** выберите категорию **установленные** слева и найдите расширение по имени.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Если требуется проверить, установлено ли расширение, выберите **расширения**  > **Управление расширениями**. В диалоговом окне **Управление расширениями** выберите категорию **установленные** слева и найдите расширение по имени.
+Если требуется проверить, установлено ли расширение, выберите **расширения** > **Управление расширениями**. В диалоговом окне **Управление расширениями** выберите категорию **установленные** слева и найдите расширение по имени.
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Обзор анализаторов кода в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Использование анализаторов кода в Visual Studio](../code-quality/use-roslyn-analyzers.md)

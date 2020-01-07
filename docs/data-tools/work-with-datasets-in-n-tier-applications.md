@@ -14,17 +14,17 @@ helpviewer_keywords:
 - typed datasets, n-tier applications
 - multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b96f2e51048216388eea50935a1ced536d8d230b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648032"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585929"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n-уровневых приложениях
 
@@ -34,12 +34,12 @@ ms.locfileid: "72648032"
 
 N-уровневая поддержка в типизированных наборах данных позволяет итеративно разрабатывать архитектуру приложения в n-уровневой конструкции. Также устраняется необходимость разделения кода вручную на более одного проекта. Начните разработку уровня данных с помощью **Конструктор наборов данных**. Когда все готово к переводу архитектуры приложения на n-уровневую структуру, задайте свойство **Проект DataSet** набора данных, чтобы сформировать класс набора данных в отдельном проекте.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Справочные сведения
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
 - [Пошаговое руководство. Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

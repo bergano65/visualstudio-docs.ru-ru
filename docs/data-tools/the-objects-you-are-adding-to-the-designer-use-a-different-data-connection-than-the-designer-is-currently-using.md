@@ -3,17 +3,17 @@ title: Объекты, добавленные в конструктор, исп�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 915860c2559335f37869f5c6009f7a38dde6abcd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9a3a2e00ccdee20fd374c52235ba648f89a0faa1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640848"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586163"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Объекты, добавляемые в конструктор, используют другое соединение с данными, чем конструктор
 
@@ -34,6 +34,6 @@ ms.locfileid: "72640848"
 
    Действие отменяется. *DataContext.Connection* остается установленным на существующее подключение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

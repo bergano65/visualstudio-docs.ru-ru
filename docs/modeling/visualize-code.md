@@ -6,21 +6,21 @@ helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 073a91e9bafca41192a12a20a7c06ff89644085f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b938321c2b6d1161052ac2358547d72a6bf4e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663700"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593997"
 ---
 # <a name="visualize-code"></a>Визуализация кода
 
-Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Пример:
+Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Например:
 
 - Чтобы понять связи в коде, сопоставьте их визуально.
 
@@ -32,7 +32,7 @@ ms.locfileid: "72663700"
 
 Чтобы узнать, какие выпуски Visual Studio поддерживают каждый компонент, см. статью [Поддержка выпуска для средств архитектуры и моделирования](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) .
 
-## <a name="what-do-you-want-to-do"></a>Выберите действие
+## <a name="what-do-you-want-to-do"></a>Что необходимо сделать?
 
 |||
 |-|-|
@@ -40,7 +40,7 @@ ms.locfileid: "72663700"
 |**Общие сведения о структурах классов:**<br /><br /> Визуализируйте структуру классов в проекте путем создания схем классов на основе кода.|[Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**Опишите архитектуру высокоуровневой системы и проверяйте код в соответствии с этим дизайном:**<br /><br /> Опишите архитектуру системы высокого уровня и ее предполагаемые зависимости, создавая схемы зависимостей. Проверьте код на соответствие этой структуре, чтобы убедиться в том, что зависимости в коде согласованы с ней.|- [создания схем зависимостей из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />- [схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)<br />[схемы зависимостей - : рекомендации](../modeling/layer-diagrams-guidelines.md)<br />- [проверки кода с помощью схем зависимостей](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сценарий: изменение проекта с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Архитектура анализа и модели](../modeling/analyze-and-model-your-architecture.md)

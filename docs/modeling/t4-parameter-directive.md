@@ -2,17 +2,17 @@
 title: Директива Parameter T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4a9ea9d3c1f80c669ec52936969ae38342e6343
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606187"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591805"
 ---
 # <a name="t4-parameter-directive"></a>Директива Parameter T4
 
@@ -26,7 +26,7 @@ ms.locfileid: "72606187"
 
  Директива `parameter` объявляет свойства в коде шаблона, которые инициализируются из значений, переданных из внешнего контекста. Эти значения можно задать при написании кода, вызывающего преобразование текста. Значения могут передаваться либо в `Session` словаре, либо в <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Можно объявлять параметры любого типа, поддерживающего удаленное взаимодействие. То есть тип должен быть объявлен с <xref:System.SerializableAttribute> или должен быть производным от <xref:System.MarshalByRefObject>. Это позволяет передавать значения параметров в домен приложения, в котором обрабатывается шаблон.
+ Можно объявлять параметры любого типа, поддерживающего удаленное взаимодействие. То есть тип должен быть объявлен с <xref:System.SerializableAttribute>или должен быть производным от <xref:System.MarshalByRefObject>. Это позволяет передавать значения параметров в домен приложения, в котором обрабатывается шаблон.
 
  Например, можно написать текстовый шаблон со следующим содержимым:
 
