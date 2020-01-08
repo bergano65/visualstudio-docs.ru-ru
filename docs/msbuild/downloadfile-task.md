@@ -17,17 +17,17 @@ helpviewer_keywords:
 - MSBuild, DownloadFile task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821434"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590479"
 ---
 # <a name="downloadfile-task"></a>Задача DownloadFile
 Загружает указанные файлы, используя протокол HTTP.
@@ -43,9 +43,9 @@ ms.locfileid: "62821434"
 |`DestinationFileName`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Имя, используемое для загруженного файла.  По умолчанию имя файла получается от `SourceUrl` или удаленного сервера.|
 |`DestinationFolder`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает папку назначения для загрузки файла.  Если папка не существует, она создается.|
 |`DownloadedFile`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, который вы загрузили.|
-|`Retries`|Необязательный параметр `Int32` .<br /><br /> Задает количество попыток загрузки, если предыдущие попытки не удались. По умолчанию установлен нуль.|
-|`RetryDelayMilliseconds`|Необязательный параметр `Int32` .<br /><br /> Определяет задержку в миллисекундах между попытками. По умолчанию — 5000.|
-|`SkipUnchangedFiles`|Необязательный параметр `Boolean` .<br /><br /> При значении `true` пропускает загрузку файлов, которые не изменились. По умолчанию — `true`. В задаче `DownloadFile` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения по данным удаленного сервера. <br /><br />**Примечание.**  Не все HTTP-серверы указывают дату последнего изменения файла, что приведет к его повторному скачиванию.|
+|`Retries`|Необязательный параметр `Int32`.<br /><br /> Задает количество попыток загрузки, если предыдущие попытки не удались. По умолчанию установлен нуль.|
+|`RetryDelayMilliseconds`|Необязательный параметр `Int32`.<br /><br /> Определяет задержку в миллисекундах между попытками. По умолчанию — 5000.|
+|`SkipUnchangedFiles`|Необязательный параметр `Boolean`.<br /><br /> При значении `true` пропускает загрузку файлов, которые не изменились. По умолчанию — `true`. В задаче `DownloadFile` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения по данным удаленного сервера. <br /><br />**Примечание.**  Не все HTTP-серверы указывают дату последнего изменения файла, что приведет к его повторному скачиванию.|
 |`SourceUrl`|Обязательный параметр `String` .<br /><br /> Указывает URL-адрес для загрузки.|
 
 ## <a name="remarks"></a>Примечания

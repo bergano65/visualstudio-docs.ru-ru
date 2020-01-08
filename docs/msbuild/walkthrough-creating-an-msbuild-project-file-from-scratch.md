@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0c7b79347416df5fd0790baf7ebe6495c739f7c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748030"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565985"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
 Языки программирования, предназначенные для платформы .NET Framework, используют файлы проекта MSBuild для описания и контроля процесса построения приложения. Если для создания файла проекта MSBuild используется Visual Studio, соответствующий XML добавляется в файл автоматически. Тем не менее, понимание принципов организации XML и способов его изменения, позволяющих контролировать построение, может вам пригодиться.
@@ -400,7 +400,7 @@ ms.locfileid: "72748030"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>ОПИСАНИЕ
+### <a name="description"></a>Описание
  В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] и записывает сообщение, содержащее имя файла вывода.
 
 ### <a name="code"></a>Код
@@ -438,7 +438,7 @@ ms.locfileid: "72748030"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>ОПИСАНИЕ
+### <a name="description"></a>Описание
  В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и записывает сообщение, содержащее имя файла вывода.
 
 ### <a name="code"></a>Код

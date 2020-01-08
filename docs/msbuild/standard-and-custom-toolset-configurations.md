@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440039"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595076"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 Набор инструментов MSBuild содержит ссылки на задачи, целевые объекты и средства, которые можно использовать для создания проекта приложения. В состав MSBuild входит стандартный набор инструментов, но вы также можете создавать пользовательские наборы. Сведения об указании набора инструментов см. в разделе [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
@@ -29,7 +29,7 @@ ms.locfileid: "63440039"
 |ToolsVersion|Путь к набору инструментов (указанный в свойстве сборки MSBuildToolsPath или MSBuildBinPath)|
 |------------------| - |
 |2.0|*\<Путь установки Windows>\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Путь установки Windows>\Microsoft.NET\Framework\v3.5\\\*|
+|3.5|*\<Путь установки Windows>\Microsoft.NET\Framework\v3.5\\*|
 |4.0|*\<Путь установки Windows>\Microsoft.NET\Framework\v4.0.30319\\*|
 |Текущие|*\<Путь установки Visual Studio>\MSBuild\Current\bin*|
 
@@ -43,7 +43,7 @@ ms.locfileid: "63440039"
 |ToolsVersion|Путь к набору инструментов (указанный в свойстве сборки MSBuildToolsPath или MSBuildBinPath)|
 |------------------| - |
 |2.0|*\<Путь установки Windows>\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Путь установки Windows>\Microsoft.NET\Framework\v3.5\\\*|
+|3.5|*\<Путь установки Windows>\Microsoft.NET\Framework\v3.5\\*|
 |4.0|*\<Путь установки Windows>\Microsoft.NET\Framework\v4.0.30319\\*|
 |15.0|*\<Путь установки Visual Studio>\MSBuild\15.0\bin*|
 

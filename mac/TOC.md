@@ -81,6 +81,7 @@
 ### [Начало работы с ASP.NET Core](asp-net-core.md)
 ### [Создание приложений ASP.NET Core в Visual Studio для Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
+### [Blazor](blazor.md)
 ### [JavaScript и TypeScript](javascript.md)
 ### [launchSettings.json](launch-settings.md)
 ## Azure

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590167"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Практическое руководство. Настройка диаграмм классов
 
@@ -37,7 +37,7 @@ ms.locfileid: "72647803"
 
 2. Чтобы изменить уровень масштабирования области конструктора, нажмите кнопку **Увеличить** или **Уменьшить** на панели инструментов **конструктора классов**.
 
-     или
+     or
 
      Укажите конкретное значение масштабирования. Для этого можно воспользоваться раскрывающимся списком **Масштаб** или ввести допустимый уровень масштабирования (в диапазоне от 10 % до 400 %).
 

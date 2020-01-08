@@ -3,17 +3,17 @@ title: Глоссарий MSBuild
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b5feaa70a79a534af45c67e61b300feb1188bf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926345"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593672"
 ---
 # <a name="msbuild-glossary"></a>Глоссарий MSBuild
 
@@ -107,7 +107,7 @@ AssemblyFoldersEx\
 Дополнительные сведения см. в разделе [Функции свойств](../msbuild/property-functions.md).
 
 свойство, глобальное\
-Глобальное свойство — это пара "ключ — значение", используемая для управления процессом сборки. Глобальные свойства задаются в командной строке или с помощью атрибута `Properties` [задачи MSBuild](../msbuild/msbuild-task.md) и не могут быть изменены на этапе оценки сборки. Дополнительные сведения см. в разделе [Свойства MSBuild](../msbuild/msbuild-properties.md).
+Глобальное свойство — это пара "ключ — значение", используемая для управления процессом сборки. Глобальные свойства задаются в командной строке или с помощью атрибута `Properties`[задачи MSBuild](../msbuild/msbuild-task.md) и не могут быть изменены на этапе оценки сборки. Дополнительные сведения см. в разделе [Свойства MSBuild](../msbuild/msbuild-properties.md).
 
 свойство, локальное\
 Локальное свойство — это пара "ключ — значение", используемая для управления процессом сборки. Этот термин используется только для того, чтобы отличать это свойство от глобального.

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779095"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567142"
 ---
 # <a name="warning-task"></a>Warning - задача
 Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.
@@ -33,10 +33,10 @@ ms.locfileid: "62779095"
 
 | Параметр | Описание |
 |---------------| - |
-| `Code` | Необязательный параметр `String` .<br /><br /> Код предупреждения для связи с предупреждением. |
-| `File` | Необязательный параметр `String` .<br /><br /> Указывает соответствующий файл (при его наличии). Если файл не указан, используется файл, содержащий задачу Warning. |
-| `HelpKeyword` | Необязательный параметр `String` .<br /><br /> Ключевое слово справки для связи с предупреждением. |
-| `Text` | Необязательный параметр `String` .<br /><br /> Текст предупреждения, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], если результат вычисления параметра `Condition` оказывается равным `true`. |
+| `Code` | Необязательный параметр `String`.<br /><br /> Код предупреждения для связи с предупреждением. |
+| `File` | Необязательный параметр `String`.<br /><br /> Указывает соответствующий файл (при его наличии). Если файл не указан, используется файл, содержащий задачу Warning. |
+| `HelpKeyword` | Необязательный параметр `String`.<br /><br /> Ключевое слово справки для связи с предупреждением. |
+| `Text` | Необязательный параметр `String`.<br /><br /> Текст предупреждения, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], если результат вычисления параметра `Condition` оказывается равным `true`. |
 
 ## <a name="remarks"></a>Примечания
  Задача `Warning` позволяет проектам [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] проверять наличие необходимой конфигурации или необходимого свойства перед переходом к следующему шагу сборки.

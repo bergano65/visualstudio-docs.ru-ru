@@ -2,17 +2,17 @@
 title: Настройка цветовой темы и шрифтов
 ms.date: 11/20/2017
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039e48dec17ce902932e2d0df26ebb336c396985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667788"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596948"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Персонализация интегрированной среды разработки и редактора Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "72667788"
 
 1. В строке меню, где расположены разделы **Файл** и **Изменить**, выберите **Средства** > **Параметры**.
 
-1. На странице параметров **Среда** > **Общие** измените значение параметра **Цветовая тема** на **Темная** и нажмите кнопку **ОК**.
+1. Откройте страницу параметров **Окружение**  > **Общие**, измените значение **Цветовая тема** на **Темная** и щелкните **ОК**.
 
    Цветовая тема для всей среды разработки (IDE) Visual Studio изменяется на **Темная**.
 

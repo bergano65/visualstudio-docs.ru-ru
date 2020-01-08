@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a8ed6b9789569e9f68706a5b132aa9000b25d910
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251714"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590648"
 ---
 # <a name="msbuild-items"></a>Элементы MSBuild
 Элементы MSBuild — это входные данные для системы сборки. Они, как правило, представляют файлы (файлы указаны в атрибуте `Include`). Элементы группируются в типы, определяемые их именами. Типы элементов — это именованные списки элементов, которые можно использовать в качестве параметров для задач. Задачи используют значения элементов для выполнения этапов процесса сборки.
@@ -157,7 +157,7 @@ ms.locfileid: "71251714"
  Дополнительные сведения см. в статье [Преобразования](../msbuild/msbuild-transforms.md).
 
 ## <a name="item-definitions"></a>Определения элементов
- Начиная с версии .NET Framework 3.5, добавить метаданные по умолчанию в любой тип элементов можно с помощью [элемента ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Подобно стандартным метаданным, метаданные по умолчанию связаны со всеми элементами указанного типа. Метаданные по умолчанию можно в явном виде переопределить в определении элемента. В следующем примере XML-кода элементам `Compile` *one.cs* и *three.cs* назначаются метаданные `BuildDay` со значением "Понедельник". В этом коде элементу *two.cs* назначаются метаданные `BuildDay` со значением "Вторник".
+ Начиная с версии .NET Framework 3.5, добавить метаданные по умолчанию в любой тип элементов можно с помощью [элемента ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Подобно стандартным метаданным, метаданные по умолчанию связаны со всеми элементами указанного типа. Метаданные по умолчанию можно в явном виде переопределить в определении элемента. В следующем примере XML-кода элементам `Compile`*one.cs* и *three.cs* назначаются метаданные `BuildDay` со значением "Понедельник". В этом коде элементу *two.cs* назначаются метаданные `BuildDay` со значением "Вторник".
 
 ```xml
 <ItemDefinitionGroup>

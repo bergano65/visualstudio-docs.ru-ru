@@ -8,15 +8,15 @@ helpviewer_keywords:
 - controllers, configuring
 - controllers, timeouts
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4e82261b9b36ced471dfa3e93be085e22c4d64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653323"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594764"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Практическое руководство. задание периодов ожидания для контроллеров тестирования и агентов тестирования
 
@@ -28,7 +28,7 @@ ms.locfileid: "72653323"
 
 - Контроллер тестирования: *QTController.exe.config*
 
-    |Имя раздела|ОПИСАНИЕ|Значение|
+    |Имя раздела|Описание|Значение|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Период времени (в секундах), в течение которого агент прослушивает запрос, прежде чем подключение считается разорванным.|"n" секунд.|
     |AgentSyncTimeoutInSeconds|Период времени (в секундах) после начала тестового запуска синхронизации, в течение которого все агенты должны ожидать синхронизации, прежде чем прервать запуск.|"n" секунд.|
@@ -37,7 +37,7 @@ ms.locfileid: "72653323"
 
 - Агент тестирования: *QTAgentService.exe.config*
 
-    |Имя раздела|ОПИСАНИЕ|Значение|
+    |Имя раздела|Описание|Значение|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Количество секунд между попытками подключения к контроллеру.|"n" секунд. По умолчанию: "30" (тридцать секунд).|
     |RemotingTimeoutSeconds|Максимальная продолжительность (в секундах) вызова удаленного взаимодействия.|"n" секунд. По умолчанию: "600" (десять минут).|

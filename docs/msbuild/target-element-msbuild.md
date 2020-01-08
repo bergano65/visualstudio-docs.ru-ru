@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491616"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566427"
 ---
 # <a name="target-element-msbuild"></a>Элемент Target (MSBuild)
 Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения.
@@ -55,7 +55,7 @@ ms.locfileid: "74491616"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|ОПИСАНИЕ|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`Name`|Обязательный атрибут.<br /><br /> Имя целевого объекта.|
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Если условие принимает значение `false`, целевой объект не будет выполнять тело целевого объекта или любые целевые объекты, заданные в атрибуте `DependsOnTargets`. Дополнительные сведения об условиях см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
@@ -70,7 +70,7 @@ ms.locfileid: "74491616"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-| Элемент | ОПИСАНИЕ |
+| Элемент | Описание |
 | - | - |
 | [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Целевой объект может содержать нуль и более задач. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Содержит набор определяемых пользователем элементов `Property`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `PropertyGroup`. |

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - special characters to escape
 - msbuild, special characters to escape
 ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7df1c087e35fd188461382e4f44de6ab703964
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 686640cbe3c93cbe3d938cd3025a77129c829bd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595115"
 ---
 # <a name="special-characters-to-escape"></a>Знаки, требующие отключения их специального значения
 Специальные знаки необходимо экранировать только в том случае, если они имеют особое значение в контексте, в котором используются. Например, звездочка (*) является специальным символом только в атрибутах "Включить" и "Исключить" определения элемента или при вызове <xref:Microsoft.Build.Tasks.CreateItem>. Во всех остальных случаях звездочка считается символом звездочки. Если не требуется экранировать звездочки в файлах проекта, использование их в таком виде не приносит никакого вреда.
@@ -30,7 +30,7 @@ ms.locfileid: "71481957"
 
  Полный список специальных символов для экранирования см. далее.
 
-|Знак|ОПИСАНИЕ|
+|Знак|Описание|
 |---------------|-----------------|
 |%|Знак процента, используемый для ссылки на метаданные.|
 |$|Знак доллара, используемый для ссылки на свойства.|

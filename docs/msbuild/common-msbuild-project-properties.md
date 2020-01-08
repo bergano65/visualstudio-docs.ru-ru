@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747369"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596194"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в *TARGETS*-файлы, предоставляемые MSBuild.
@@ -32,7 +32,7 @@ ms.locfileid: "72747369"
 
 ## <a name="list-of-common-properties-and-parameters"></a>Список общих свойств и параметров
 
-| Имя свойства или параметра | ОПИСАНИЕ |
+| Имя свойства или параметра | Описание |
 |------------------------------------| - |
 | AdditionalLibPaths | Задает дополнительные папки, в которых компиляторы должны искать ссылочные сборки. |
 | AddModules | Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту. Это свойство эквивалентно переключателю `/addModules` компилятора. |
@@ -77,7 +77,7 @@ ms.locfileid: "72747369"
 | NoLogo | Логическое значение, указывающее, требуется ли отключить эмблему компилятора. Это свойство эквивалентно переключателю `/nologo` компилятора. |
 | NoStdLib | Логическое значение, указывающее, следует ли избегать ссылок на стандартную библиотеку (*mscorlib.dll*). Значение по умолчанию — `false`. |
 | NoVBRuntimeReference | Логическое значение, указывающее, следует ли включить в проект в качестве ссылки среду выполнения [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft.VisualBasic.dll*). |
-| NoWin32Manifest | Логическое значение, указывающее, внедряется ли в исполняемый файл приложения информация манифеста контроля учетных записей (UAC). Применяется только к проектам Visual Studio, нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, этот элемент игнорируется. Значение `False` (используется по умолчанию) указывает, что информация манифеста UAC внедряется в исполняемый файл приложения. Значение `True` указывает, что информация манифеста UAC не внедряется.<br /><br /> Это свойство применяется только к проектам [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, это свойство игнорируется.<br /><br /> Добавлять свойство NoWin32Manifest следует только в том случае, если не требуется, чтобы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] внедряла какую-либо информацию манифеста в исполняемый файл приложения; этот процесс называется *виртуализацией*. Для использования виртуализации задайте `<ApplicationManifest>` вместе с `<NoWin32Manifest>` следующим образом:<br /><br /> —   Для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] удалите узел `<ApplicationManifest>`. (В проектах [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] `<NoWin32Manifest>` игнорируется, если существует узел `<ApplicationManifest>`.)<br />—   Для проектов [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] установите для параметра `<ApplicationManifest>` значение `False`, а для параметра `<NoWin32Manifest>` — значение `True`. (В проектах [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] `<ApplicationManifest>` переопределяет `<NoWin32Manifest>`.)<br /> Это свойство эквивалентно переключателю `/nowin32manifest` компилятора *vbc.exe*. |
+| NoWin32Manifest | Логическое значение, указывающее, внедряется ли в исполняемый файл приложения информация манифеста контроля учетных записей (UAC). Применяется только к проектам Visual Studio, нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, этот элемент игнорируется. Значение `False` (используется по умолчанию) указывает, что информация манифеста UAC внедряется в исполняемый файл приложения. Значение `True` указывает, что информация манифеста UAC не внедряется.<br /><br /> Это свойство применяется только к проектам [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], нацеленным на [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. В проектах, развертываемых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] и COM-компонентов без регистрации, это свойство игнорируется.<br /><br /> Добавлять свойство NoWin32Manifest следует только в том случае, если не требуется, чтобы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] внедряла какую-либо информацию манифеста в исполняемый файл приложения; этот процесс называется *виртуализацией*. Для использования виртуализации задайте `<ApplicationManifest>` вместе с `<NoWin32Manifest>` следующим образом:<br /><br /> —   Для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] удалите узел `<ApplicationManifest>`. (В проектах [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]`<NoWin32Manifest>` игнорируется, если существует узел `<ApplicationManifest>`.)<br />—   Для проектов [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] установите для параметра `<ApplicationManifest>` значение `False`, а для параметра `<NoWin32Manifest>` — значение `True`. (В проектах [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]`<ApplicationManifest>` переопределяет `<NoWin32Manifest>`.)<br /> Это свойство эквивалентно переключателю `/nowin32manifest` компилятора *vbc.exe*. |
 | Optimize | Логическое значение, которое, будучи установленным в `true`, разрешает оптимизации компилятора. Это свойство эквивалентно переключателю `/optimize` компилятора. |
 | OptionCompare | Задает способ сравнения строк. Допустимые значения: "binary" и "text". Это свойство эквивалентно переключателю `/optioncompare` компилятора *vbc.exe*. |
 | OptionExplicit | Логическое значение, которое, будучи установленным в `true`, требует явного объявления переменных в исходном коде. Это свойство эквивалентно переключателю `/optionexplicit` компилятора. |

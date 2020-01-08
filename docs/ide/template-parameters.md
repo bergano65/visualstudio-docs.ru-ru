@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647390"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585890"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -23,7 +23,7 @@ ms.locfileid: "72647390"
 
 ## <a name="declare-and-enable-template-parameters"></a>Объявление и включение параметров шаблона
 
-Параметры шаблона объявляются в формате $*параметр*$. Например:
+Параметры шаблона объявляются в формате $*параметр*$. Пример:
 
 - $safeprojectname$
 
@@ -47,7 +47,7 @@ ms.locfileid: "72647390"
 
 В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном:
 
-|Параметр|ОПИСАНИЕ|
+|Параметр|Описание|
 |---------------|-----------------|
 |clrversion|Текущая версия среды CLR.|
 |ext_*|Добавьте префикс `ext_` к любому параметру, чтобы сослаться на переменные родительского шаблона. Например, `ext_safeprojectname`.|
@@ -74,7 +74,7 @@ ms.locfileid: "72647390"
 
 Вы можете указать собственные параметры шаблона и значения в дополнение к зарезервированным параметрам шаблона по умолчанию, которые используются во время замены параметров. Дополнительные сведения см. в разделе [Элемент CustomParameters (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Пример Использование имени проекта в качестве имени файла
+## <a name="example-use-the-project-name-for-a-file-name"></a>Пример. Использование имени проекта в качестве имени файла
 
 Можно указать переменные имена файлов для элементов проекта с помощью параметра в атрибуте `TargetFileName`.
 
@@ -91,7 +91,7 @@ ms.locfileid: "72647390"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Пример Использование безопасного имени проекта в качестве имени пространства имен
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Пример. Использование безопасного имени проекта в качестве имени пространства имен
 
 Чтобы использовать безопасное имя проекта для пространства имен в файле класса C#, используйте следующий синтаксис:
 

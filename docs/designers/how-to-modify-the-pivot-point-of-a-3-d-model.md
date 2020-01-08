@@ -3,17 +3,17 @@ title: Практическое руководство. Изменение це�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c49e42009c81f6932f76128f12fb37399a789b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635465"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589946"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Практическое руководство. Изменение центра вращения трехмерной модели
 

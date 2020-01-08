@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668215"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596870"
 ---
 # <a name="build-page-project-designer-c"></a>Страница "Построение" в конструкторе проектов (C#)
 
@@ -129,7 +129,7 @@ ms.locfileid: "72668215"
 
 **Регистрация для COM-взаимодействия**
 
-Указывает, что ваше управляемое приложение предоставляет COM-объект (вызываемую оболочку COM), чтобы COM-объект мог взаимодействовать с управляемым приложением. Свойству **Тип вывода** на странице [Приложение](../../ide/reference/application-page-project-designer-visual-basic.md) **конструктора проектов** для этого приложения следует задать значение **Библиотеки классов**, чтобы было доступно свойство **Регистрация для COM-взаимодействия**. Пример класса, который можно включить в приложение [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и предоставлять в виде COM-объекта, см. в разделе [Пример COM-класса](/dotnet/csharp/programming-guide/interop/example-com-class).
+Указывает, что ваше управляемое приложение предоставляет COM-объект (вызываемую оболочку COM), чтобы COM-объект мог взаимодействовать с управляемым приложением. Свойству **Тип вывода** на странице [Приложение](../../ide/reference/application-page-project-designer-visual-basic.md)**конструктора проектов** для этого приложения следует задать значение **Библиотеки классов**, чтобы было доступно свойство **Регистрация для COM-взаимодействия**. Пример класса, который можно включить в приложение [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и предоставлять в виде COM-объекта, см. в разделе [Пример COM-класса](/dotnet/csharp/programming-guide/interop/example-com-class).
 
 **Создание сборки сериализации**
 

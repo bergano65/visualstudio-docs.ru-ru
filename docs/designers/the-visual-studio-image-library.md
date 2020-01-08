@@ -11,23 +11,23 @@ helpviewer_keywords:
 - icons [Visual Studio], Image Library
 - bitmaps [Visual Studio], Image Library
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fc3719f57e91ddd602bdb6eeb382bf5885a81a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888427"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589907"
 ---
 # <a name="the-visual-studio-image-library"></a>Библиотека изображений Visual Studio
 
 Библиотека изображений Visual Studio содержит изображения приложений, отображаемые в Microsoft Visual Studio, Microsoft Windows, системе Office и другом программном обеспечении Microsoft. Набор из более 1000 изображений можно использовать для создания приложений, внешний вид которых сочетается с программным обеспечением Microsoft.
 
-[Загрузка библиотеки изображений Visual Studio](http://www.microsoft.com/download/details.aspx?id=35825)
+[Загрузка библиотеки изображений Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825)
 
 Библиотека изображений содержит элементы пяти категорий: общие элементы, действия, заметки, значки и объекты. Для типов общих элементов и значков в библиотеку также включены файлы сведений в формате PDF. Они содержат информацию о правильном использовании этих изображений в приложениях.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644617"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590258"
 ---
 # <a name="toolbox-data-tab"></a>Панель элементов, вкладка "Данные"
 
@@ -30,7 +30,7 @@ ms.locfileid: "72644617"
 
 Чтобы перейти непосредственно на страницу справочника по .NET для конкретного компонента, нажмите клавишу **F1** для элемента на **панели элементов** или для элемента компонента в области конструктора.
 
-|name|ОПИСАНИЕ|
+|name|Описание|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Добавляет экземпляр типизированного или нетипизированного набора данных в форму или компонент. При перетаскивании объекта в конструктор отображается диалоговое окно, которое позволяет выбрать существующий класс типизированного набора данных или указать, что требуется создать новый, пустой, нетипизированный набор данных. **Примечание.**  Объект <xref:System.Data.DataSet> не используется на **панели элементов** для создания схемы и класса типизированного набора данных. Дополнительные сведения см. в разделе, посвященном [созданию и настройке наборов данных](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Обеспечивает эффективный и гибкий способ отображения данных в табличном формате.|

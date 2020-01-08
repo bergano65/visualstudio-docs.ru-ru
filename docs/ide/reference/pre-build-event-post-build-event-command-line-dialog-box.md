@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461309"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567922"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"
 
@@ -73,7 +73,7 @@ ms.locfileid: "68461309"
 
 Эти макросы можно использовать для указания расположений файлов или для получения фактического имени входного файла в случае множественного выбора. В этих макросах регистр не учитывается.
 
-|Макрос|ОПИСАНИЕ|
+|Макрос|Описание|
 |-----------|-----------------|
 |`$(ConfigurationName)`|Имя текущей конфигурации проекта, например "Debug".|
 |`$(OutDir)`|Путь к выходному каталогу файлов относительно каталога проекта. Путь разрешается в значение для свойства Output Directory. Он включает обратную косую черту "\\" в конце.|

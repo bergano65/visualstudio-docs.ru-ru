@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 82ae72ee835fa5b5e0d2ebb484ce24a5ffb85b91
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443594"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589244"
 ---
 # <a name="msbuild-properties"></a>свойства MSBuild
 Свойства представляют собой пары "имя-значение", с помощью которых выполняется настройка сборок. Свойства используются для передачи значений задачам, проверки условий и хранения значений, на которые можно давать ссылки в файле проекта.
@@ -44,7 +44,7 @@ ms.locfileid: "63443594"
 ## <a name="reserved-properties"></a>Зарезервированные свойства
  MSBuild резервирует некоторые имена свойств для хранения сведений о файле проекта и двоичных файлах MSBuild. Обращение к этим свойствам, так же как и к другим свойствам, осуществляется с помощью символа $. Например, оператор $(MSBuildProjectFile) возвращает полное имя файла проекта, включая расширение.
 
- Дополнительные сведения см. в разделе [Как Использование ссылки на имя или расположение файла проекта](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) и [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ Дополнительные сведения см. в разделе [Практическое руководство. Использование ссылки на имя или расположение файла проекта](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) и [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="environment-properties"></a>Свойства среды
  Обращаться к переменным среды в файлах проектов можно так же как к зарезервированным свойствам. Например, чтобы использовать переменную среды `PATH` в файле проекта, укажите оператор $(Path). Если проект содержит определение свойства с тем же именем, что и у свойства среды, свойство в проекте переопределит значение переменной среды.
@@ -56,7 +56,7 @@ ms.locfileid: "63443594"
 > [!TIP]
 > Не все переменные среды считываются в качестве исходных свойств. Все переменные среды, имена которых не являются допустимыми именами свойств MSBuild, например "386", игнорируются.
 
- Дополнительные сведения см. в разделе [Как Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Дополнительные сведения см. в разделе [Практическое руководство. Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Свойство реестра
  Значения разделов системного реестра можно считывать, используя следующий синтаксис. Здесь `Hive` — это куст реестра (например, **HKEY_LOCAL_MACHINE**), `MyKey` — имя раздела, `MySubKey` — имя подраздела, `Value` — значение подраздела.

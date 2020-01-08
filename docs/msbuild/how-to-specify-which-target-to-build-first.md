@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, specifying the defalut target
 - MSBuild, DefaultTargets attribute
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a567ca32a78eb6a78aad3702a68a6e08ed122db8
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 75bcb41bb2df2afcb6e71b0fdaf58d0d7429e974
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316506"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574633"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первой сборки
 Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) выполняет сборку первого найденного проекта, а также всех зависимостей, если только файл проекта не содержит атрибут `DefaultTargets` или `InitialTargets` либо целевой объект не указан в командной строке с помощью параметра **-target**.
@@ -27,7 +27,7 @@ ms.locfileid: "74316506"
 
 #### <a name="to-specify-one-initial-target"></a>Задание одного начального целевого объекта
 
-- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Например:
+- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Пример:
 
    `<Project InitialTargets="Clean">`
 
@@ -44,7 +44,7 @@ ms.locfileid: "74316506"
 
 #### <a name="to-specify-one-default-target"></a>Задание одного целевого объекта по умолчанию
 
-- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Например:
+- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Пример:
 
    `<Project DefaultTargets="Compile">`
 
@@ -61,13 +61,13 @@ ms.locfileid: "74316506"
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь
 
-- Укажите целевой объект в качестве первого с помощью параметра командной строки **-target**. Например:
+- Укажите целевой объект в качестве первого с помощью параметра командной строки **-target**. Пример:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Использование нескольких целевых объектов, отличных от заданных по умолчанию, в первую очередь
 
-- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **-target**. Например:
+- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **-target**. Пример:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
