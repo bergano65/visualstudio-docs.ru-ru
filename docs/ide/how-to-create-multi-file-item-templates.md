@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655942"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593737"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Практическое руководство. Создание многофайловых шаблонов элементов
 
@@ -30,13 +30,13 @@ ms.locfileid: "72655942"
 
 ## <a name="use-the-export-template-wizard"></a>Использование мастера экспорта шаблонов
 
-Многофайловый шаблон элемента создается аналогично однофайловому шаблону элемента. См. [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md). На странице **Выбор элементов для экспорта** мастера выберите файл, который содержит зависимые файлы (например, файл формы Windows Forms). Мастер автоматически включит в шаблон все зависимые файлы, например файлы ресурсов и конструктора.
+Многофайловый шаблон элемента создается аналогично однофайловому шаблону элемента. См. практическое руководство по [ Создание шаблонов элементов](../ide/how-to-create-item-templates.md). На странице **Выбор элементов для экспорта** мастера выберите файл, который содержит зависимые файлы (например, файл формы Windows Forms). Мастер автоматически включит в шаблон все зависимые файлы, например файлы ресурсов и конструктора.
 
 ## <a name="manually-create-a-multi-file-item-template"></a>Создание шаблона многофайлового элемента вручную
 
 1. Создайте шаблон элемента так же, как если бы вы создавали однофайловый шаблон элемента вручную, но включите каждый файл, который составляет многофайловый элемент.
 
-1. В *VSTEMPLATE*-файл XML-кода добавьте элемент `ProjectItem` для каждого отдельного файла и добавьте атрибут `TargetFileName` в этот элемент. Присвойте атрибуту `TargetFileName` значение *$входное_имя_файла$.расширение_файла*, где *расширение_файла* — это расширение файла, включаемого в шаблон. Например:
+1. В *VSTEMPLATE*-файл XML-кода добавьте элемент `ProjectItem` для каждого отдельного файла и добавьте атрибут `TargetFileName` в этот элемент. Присвойте атрибуту `TargetFileName` значение *$входное_имя_файла$.расширение_файла*, где *расширение_файла* — это расширение файла, включаемого в шаблон. Пример:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

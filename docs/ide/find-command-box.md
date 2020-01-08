@@ -6,17 +6,17 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653731"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591532"
 ---
 # <a name="findcommand-box"></a>Поиск/Команда - окно
 
@@ -34,7 +34,7 @@ ms.locfileid: "72653731"
 
 ## <a name="entering-commands"></a>Ввод команд
 
-Чтобы с помощью поля **Найти/Команда** выполнить отдельную команду или псевдоним [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не поиск текста, введите перед командой знак "больше, чем" ( **>** ). Например:
+Чтобы с помощью поля **Найти/Команда** выполнить отдельную команду или псевдоним [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не поиск текста, введите перед командой знак "больше, чем" ( **>** ). Пример:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ ms.locfileid: "72653731"
 
 ## <a name="escape-characters"></a>Escape-символы
 
-Символ крышки ( **^** ) в команде означает, что следующий за ним символ интерпретируется буквально, а не как управляющий символ. Благодаря этому в значение параметра можно внедрить прямые кавычки ( **"** ), пробелы, начальные символы косой черты, крышки или другие знаки, за исключением имен параметров. Например:
+Символ крышки ( **^** ) в команде означает, что следующий за ним символ интерпретируется буквально, а не как управляющий символ. Благодаря этому в значение параметра можно внедрить прямые кавычки ( **"** ), пробелы, начальные символы косой черты, крышки или другие знаки, за исключением имен параметров. Пример:
 
 ```
 >Edit.Find ^^t /regex

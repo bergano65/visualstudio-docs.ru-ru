@@ -2,18 +2,18 @@
 title: Использование оболочек совместимости для изоляции приложения при модульном тестировании
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982800"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585539"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения при модульном тестировании
 
@@ -31,7 +31,7 @@ ms.locfileid: "72982800"
 > [!NOTE]
 > Проекты .NET Standard не поддерживаются.
 
-## <a name="example-the-y2k-bug"></a>Пример Ошибка 2000 года
+## <a name="example-the-y2k-bug"></a>Пример. Ошибка 2000 года
 
 Рассмотрим метод, который создает исключение 1 января 2000 г.
 
@@ -92,7 +92,7 @@ public void Y2kCheckerTest() {
 
 ### <a name="write-a-test-with-shims"></a>Создание теста с оболочками
 
-В коде теста вставьте *обход* для метода, который требуется имитировать. Например:
+В коде теста вставьте *обход* для метода, который требуется имитировать. Пример:
 
 ```csharp
 [TestClass]

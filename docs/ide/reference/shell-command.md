@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747746"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565881"
 ---
 # <a name="shell-command"></a>Команда Shell
 Запускает исполняемые программы из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -41,20 +41,20 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
 `args`
 
-Необязательный параметр. Все аргументы, передаваемые в вызванную программу.
+Необязательный элемент. Все аргументы, передаваемые в вызванную программу.
 
 ## <a name="switches"></a>Переключатели
 /commandwindow [или] /command [или] /c [или] /cmd
 
-Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.
+Необязательный элемент. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.
 
 /dir:`folder` [или] /d: `folder`
 
-Необязательный параметр. Указывает рабочий каталог, задаваемый при запуске программы.
+Необязательный элемент. Указывает рабочий каталог, задаваемый при запуске программы.
 
 /outputwindow [или] /output [или] /out [или] /o
 
-Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.
+Необязательный элемент. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.
 
 ## <a name="remarks"></a>Примечания
 Параметры /dir /o /c должны быть указаны сразу после `Tools.Shell`. Все, что указано после имени исполняемого файла, передается в виде аргументов командной строки.

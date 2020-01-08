@@ -7,17 +7,17 @@ helpviewer_keywords:
 - incremental builds
 - MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2bf2f8a45618e8b1f7540479a02c1a5f91b9bf
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 949ec0622dd19ef906d4c3a40a2ddadac2b75065
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316474"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75575904"
 ---
 # <a name="how-to-build-incrementally"></a>Практическое руководство. Инкрементная сборка
 При сборке большого проекта важно, чтобы созданные ранее компоненты, которые все еще актуальны, не перестраивались. Если каждый раз создаются все целевые объекты, каждая сборка будет занимать много времени. Для выполнения инкрементных построений (сборки, в которых перестраиваются только те целевые объекты, которые не были построены ранее, или устаревшие целевые объекты) [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) может сравнить метки времени входных файлов с метками времени выходных файлов и определить, следует ли пропустить, построить или частично перестроить целевой объект. Однако должно быть однозначное сопоставление между входными и выходными данными. Чтобы целевые объекты могли идентифицировать это прямое сопоставление, можно использовать преобразования. Дополнительные сведения о преобразованиях см. в статье [Преобразования](../msbuild/msbuild-transforms.md).
@@ -27,7 +27,7 @@ ms.locfileid: "74316474"
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Указание входных и выходных данных для целевого объекта
 
-- Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Например:
+- Используйте атрибуты `Inputs` и `Outputs` для элемента `Target`. Пример:
 
   ```xml
   <Target Name="Build"
@@ -67,7 +67,7 @@ ms.locfileid: "74316474"
 Этот файл проекта содержит оба целевых объекта `Convert` и `Build`. Задачи `GenerateContentFiles` и `BuildHelp` помещаются в целевые объекты `Convert` и `Build` соответственно, чтобы все целевые объекты можно было построить инкрементно. Используя элемент `Output`, выходные данные задачи `GenerateContentFiles` помещаются в список элементов `ContentFile`, где они могут использоваться в качестве входных данных для задачи `BuildHelp`. Использование элемента `Output` таким образом позволяет автоматически представить выходные данные одной задачи в качестве входных данных для другой задачи, что исключает необходимость в перечислении отдельных элементов или списков элементов вручную в каждой задаче.
 
 > [!NOTE]
-> Несмотря на то что для целевого объекта `GenerateContentFiles` используется инкрементное построение, все выходные данные этого целевого объекта всегда требуются в качестве входных данных для целевого объекта `BuildHelp`. При использовании элемента `Output` [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] автоматически предоставляет все выходные данные одного целевого объекта в качестве входных данных для другого целевого объекта.
+> Несмотря на то что для целевого объекта `GenerateContentFiles` используется инкрементное построение, все выходные данные этого целевого объекта всегда требуются в качестве входных данных для целевого объекта `BuildHelp`. При использовании элемента `Output`[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] автоматически предоставляет все выходные данные одного целевого объекта в качестве входных данных для другого целевого объекта.
 
 ```xml
 <Project DefaultTargets="Build"

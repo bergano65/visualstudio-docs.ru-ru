@@ -8,17 +8,17 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977297"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585223"
 ---
 # <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка сборки
 При очистке сборки все промежуточные и выходные файлы удаляются, а остаются только файлы проекта и компонентов. Из файлов проекта и компонентов можно собрать новые экземпляры промежуточных и выходных файлов. Библиотека общих задач, предоставляемая вместе с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], включает в себя задачу [Exec](../msbuild/exec-task.md), позволяющую запускать системные команды. Дополнительные сведения о библиотеке задач см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).
@@ -32,7 +32,7 @@ ms.locfileid: "62977297"
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:
+2. Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Пример:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,14 +44,14 @@ ms.locfileid: "62977297"
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем
 
-- Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:
+- Используйте задачу `RemoveDir`, чтобы удалить каталог. Пример:
 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Пример
  Приведенный ниже проект с примером кода содержит новый целевой объект `Clean`, который использует задачу `RemoveDir`, чтобы удалить каталог и все содержащиеся в нем файлы и каталоги. Также в этом примере целевой объект `Compile` создает отдельный каталог для выходных файлов, удаляемых при очистке сборки.
 
- `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **-target**, чтобы указать другой целевой объект. Например:
+ `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **-target**, чтобы указать другой целевой объект. Пример:
 
  `msbuild <file name>.proj -target:Clean`
 

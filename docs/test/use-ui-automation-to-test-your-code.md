@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6491a6b9ac9312befbf0c8c6c3fb0f293885ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659866"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585643"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Использование закодированных тестов пользовательского интерфейса для проверки кода
 
@@ -415,7 +415,7 @@ myWinCheckBox.Checked = true;
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> возвращает соответствующий тип данных, после чего это значение преобразуется в тип <xref:System.Object>. Возвращенное значение <xref:System.Object> необходимо преобразовать в соответствующий тип.
 
-     Пример
+     Пример.
 
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`
 
@@ -425,7 +425,7 @@ myWinCheckBox.Checked = true;
 
 - Чтобы указать свойство, которое необходимо установить, используйте соответствующую строку из класса `PropertyNames` как первый параметр для <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, а значение свойства — как второй параметр.
 
-     Пример
+     Пример.
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 

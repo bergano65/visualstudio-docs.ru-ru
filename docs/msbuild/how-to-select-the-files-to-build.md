@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Выбор файлов для сборки | Документация Майкрософт
+title: Практическое руководство. Выбор файлов для сборки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574617"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Как выполнить Выбор файлов для сборки
+# <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 При создании проекта, содержащего несколько файлов, можно указать каждый файл отдельно в файле проекта либо можно использовать подстановочные знаки, чтобы включить все файлы в одном каталоге или наборе вложенных каталогов.
 
 ## <a name="specify-inputs"></a>Указание входных данных
@@ -33,7 +33,7 @@ ms.locfileid: "63386178"
 
     `<CSFile Include="form1.cs"/>`
 
-    или
+    or
 
     `<VBFile Include="form1.vb"/>`
 
@@ -46,7 +46,7 @@ ms.locfileid: "63386178"
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
-    или
+    or
 
     `<VBFile Include="form1.vb;form2.vb"/>`
 
@@ -79,7 +79,7 @@ ms.locfileid: "63386178"
 
     `Include="Images\**\*jpgs\*.*"`
 
-    или
+    or
 
     `Include="Images\**\*jpgs\*"`
 
@@ -92,7 +92,7 @@ ms.locfileid: "63386178"
 
     `<CSC Sources="@(CSFile)">...</CSC>`
 
-    или
+    or
 
     `<VBC Sources="@(VBFile)">...</VBC>`
 

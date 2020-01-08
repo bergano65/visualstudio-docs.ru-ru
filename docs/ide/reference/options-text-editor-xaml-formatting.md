@@ -24,21 +24,21 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ac7c3eebe9498f4ac596ed09ae063eefacf3b6b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666634"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568247"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>"Параметры", "Текстовый редактор", XAML, "Форматирование"
 
-Используйте страницу свойств **Форматирование** для настройки форматирования элементов и атрибутов в документах XAML. Чтобы открыть диалоговое окно **Параметры**, в меню **Сервис** выберите пункт **Параметры**. Чтобы открыть страницу свойств **Форматирование**, разверните узел **Текстовый редактор**  >  **XAML**  >  **Форматирование**.
+Используйте страницу свойств **Форматирование** для настройки форматирования элементов и атрибутов в документах XAML. Чтобы открыть диалоговое окно **Параметры**, в меню **Сервис** выберите пункт **Параметры**. Чтобы открыть страницу свойств **Форматирование**, разверните узел **Текстовый редактор** > **XAML** > **Форматирование**.
 
 ## <a name="auto-formatting-events"></a>События автоформатирования
 

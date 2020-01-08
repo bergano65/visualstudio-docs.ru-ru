@@ -7,16 +7,16 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938873"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594933"
 ---
 # <a name="trackedvctooltask-base-class"></a>Базовый класс TrackedVCToolTask
 
@@ -30,21 +30,21 @@ ms.locfileid: "62938873"
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Необязательный параметр типа **bool**.|
 |**EnableExecuteTool**|Необязательный параметр типа **bool**.|
-|**ExcludedInputPaths**|Необязательный параметр **ITaskItem[]**.|
+|**ExcludedInputPaths**|Необязательный параметр **ITaskItem[]** .|
 |**MinimalRebuildFromTracking**|Необязательный параметр типа **bool**.|
 |**PathOverride**|Необязательный параметр типа **string**.|
 |**PostBuildTrackingCleanup**|Необязательный параметр типа **bool**.|
 |**RootSource**|Необязательный параметр типа **string**.|
 |**SkippedExecution**|Необязательный параметр вывода типа **bool**.|
-|**SourcesCompiled**|Необязательный параметр вывода **ITaskItem[]**.|
-|**TLogCommandFile**|Необязательный параметр **ITaskItem[]**.|
-|**TLogReadFiles**|Необязательный параметр **ITaskItem[]**.|
-|**TLogWriteFiles**|Необязательный параметр **ITaskItem[]**.|
+|**SourcesCompiled**|Необязательный параметр вывода **ITaskItem[]** .|
+|**TLogCommandFile**|Необязательный параметр **ITaskItem[]** .|
+|**TLogReadFiles**|Необязательный параметр **ITaskItem[]** .|
+|**TLogWriteFiles**|Необязательный параметр **ITaskItem[]** .|
 |**ToolArchitecture**|Необязательный параметр типа **string**.|
 |**TrackCommandLines**|Необязательный параметр типа **bool**.|
 |**TrackFileAccess**|Необязательный параметр типа **bool**.|
-|**TrackedInputFilesToIgnore**|Необязательный параметр **ITaskItem[]**.|
-|**TrackedOutputFilesToIgnore**|Необязательный параметр **ITaskItem[]**.|
+|**TrackedInputFilesToIgnore**|Необязательный параметр **ITaskItem[]** .|
+|**TrackedOutputFilesToIgnore**|Необязательный параметр **ITaskItem[]** .|
 |**TrackerFrameworkPath**|Необязательный параметр типа **string**.|
 |**TrackerSdkPath**|Необязательный параметр типа **string**.|
 

@@ -13,20 +13,20 @@ helpviewer_keywords:
 - MSBuild, .rsp files
 - .rsp files
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e83ed29e2caf180cdd8950b73f65f62794a8783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff207bdb5797cbbfb490a3b5b081ddfb1d665853
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004842"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585812"
 ---
 # <a name="msbuild-response-files"></a>Файлы ответов MSBuild
-Файлы ответов (*RSP*) — это текстовые файлы, содержащие параметры командной строки *MSBuild.exe*. Каждый параметр может находиться в отдельной строке, либо все они могут быть в одной строке. Перед строками примечаний указывается символ **#**. Параметр **@** используется для передачи другого файла ответов в *MSBuild.exe*.
+Файлы ответов (*RSP*) — это текстовые файлы, содержащие параметры командной строки *MSBuild.exe*. Каждый параметр может находиться в отдельной строке, либо все они могут быть в одной строке. Перед строками примечаний указывается символ **#** . Параметр **@** используется для передачи другого файла ответов в *MSBuild.exe*.
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 Файл автоматического ответа — это специальный файл *RSP*, который автоматически используется программой *MSBuild.exe* при сборке проекта. Этот файл *MSBuild.rsp* должен находиться в одном каталоге с программой *MSBuild.exe*, иначе он не будет обнаружен. Этот файл можно изменять для того, чтобы задать для *MSBuild.exe* параметры командной строки по умолчанию. Например, если при сборке проекта всегда используется одно и то же средство ведения журнала, можно добавить в файл *MSBuild.rsp* параметр **-logger**. В этом случае *MSBuild.exe* будет всегда использовать это средство ведения журнала при сборке проекта.

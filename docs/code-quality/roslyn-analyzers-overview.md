@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649140"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587281"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Обзор анализаторов исходного кода
 
@@ -25,7 +25,7 @@ ms.locfileid: "72649140"
 
 - Некоторые анализаторы встроены в Visual Studio. Идентификатор диагностики или код для этих анализаторов имеет формат IDExxxx, например IDE0067. Большинство таких встроенных анализаторов изучают [стиль кода](../ide/code-styles-and-code-cleanup.md), и вы можете настроить соответствующие предпочтения на [странице параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) или в [файле EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Несколько встроенных анализаторов изучают качество кода.
 
-- Вы можете установить дополнительные анализаторы в виде пакета NuGet или расширения Visual Studio. Например:
+- Вы можете установить дополнительные анализаторы в виде пакета NuGet или расширения Visual Studio. Пример:
 
   - [Анализаторы FxCop](../code-quality/install-fxcop-analyzers.md), рекомендованные корпорацией Майкрософт
   - Анализаторы сторонних разработчиков, такие как [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) и [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
