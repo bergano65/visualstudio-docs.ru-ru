@@ -25,6 +25,7 @@
 ## [Создание новых проектов](create-new-projects.md)
 ## [Добавление и удаление элементов проекта](add-and-remove-project-items.md)
 ## [Управление свойствами решений и проектов](managing-solutions-and-project-properties.md)
+## [Настройка для различных версий](project-multitargeting.md)
 ## Управление ссылками в проекте
 ### [Обзор](managing-references-in-a-project.md)
 ### [Пошаговое руководство. Включение пакета NuGet в проект](nuget-walkthrough.md)
@@ -35,6 +36,8 @@
 ## [Возможности редактора](source-editor.md)
 ## [Рефакторинг](refactoring.md)
 ## [IntelliSense](intellisense.md)
+## [Отображение элементов импорта](show-imports.md)
+## [Редактирование в нескольких точках вставки](multi-caret-editing.md)
 ## [Комментарии](comments.md)
 ## [Работа редактора](editor-behavior.md)
 ## [Комментарии к задачам](task-comments.md)
@@ -47,6 +50,7 @@
 # Отладка
 ## [Обзор](debugging.md)
 ## [Визуализация данных](data-visualizations.md)
+## [Отладка пакетов NuGet со ссылкой на источник](source-link.md)
 
 # Компилирование и сборка
 ## [Обзор](compiling-and-building.md)
