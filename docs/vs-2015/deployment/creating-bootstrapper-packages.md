@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300732"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845520"
 ---
 # <a name="creating-bootstrapper-packages"></a>Создание пакетов загрузчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  В следующей таблице перечислены свойства, которые заполняются начальным загрузчиком автоматически.  
   
-|Свойство|Описание|  
+|Идентификаторы|Описание|  
 |--------------|-----------------|  
 |ApplicationName|Имя приложения.|  
 |ProcessorArchitecture|Процессор и количество бит на слово в платформе, для которой предназначен исполняемый файл. В эти значения входят:<br /><br /> — Intel<br />— IA64<br />— AMD64|  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Диалоговое окно «Необходимые компоненты»](../ide/reference/prerequisites-dialog-box.md)   
  [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)   
- [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](https://go.microsoft.com/fwlink/?LinkId=107537)
+ [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](https://msdn.microsoft.com/magazine/cc163899.aspx)

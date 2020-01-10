@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297857"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851702"
 ---
 # <a name="options-text-editor-cc-experimental"></a>"Параметры", "Текстовый редактор", C/C++, "Экспериментальный"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "74297857"
 ## <a name="browsingnavigation"></a>Обзор и навигация
  **Включить новые ядро СУБД** Это должно автоматически ускорить заполнение базы данных и сделать все операции базы данных более быстрыми (без потери точности) для таких операций, как **Переход к определению** и **Поиск всех ссылок**. (Чтобы применить изменения, просто закройте и повторно откройте решение. Перезапускать Visual Studio не нужно.)
 
-## <a name="intellisense"></a>IntelliSense
+## <a name="intellisense"></a>Технология IntelliSense
  **Точка-стрелка в списке элементов** Заменяет "." на "->", если применимо для списка членов.
 
 ## <a name="refactoring"></a>Refactoring
@@ -46,7 +46,7 @@ ms.locfileid: "74297857"
 
  **Включить приоритет развертывания** Если параметр включен, выделенный текст можно заключить в круглые скобки, введя "(" в текстовом редакторе.
 
- Список дополнительных функций текстового редактора в галерее Visual Studio можно найти [здесь](https://go.microsoft.com/fwlink/?LinkId=692016). Примером может служить расширение [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), которое поддерживает перечисленные ниже возможности.
+ Список дополнительных функций текстового редактора в галерее Visual Studio можно найти [здесь](https://marketplace.visualstudio.com/). Примером может служить расширение [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), которое поддерживает перечисленные ниже возможности.
 
 - **Добавление недостающих операторов #include** — для неизвестных символов в коде предлагаются подходящие операторы #include.
 
@@ -58,5 +58,5 @@ ms.locfileid: "74297857"
 
   Вы можете либо навести указатель на волнистую линию, чтобы появилась лампочка, либо нажать клавиши CTRL+точка (CTRL+.). Имейте в виду, что при использовании сочетания клавиш курсор не обязательно должен находиться в элементе с ошибкой или в токене. Для получения предложений по любым элементам в строке достаточно, чтобы курсор находился в этой строке.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  Рефакторинг для [настройки параметров редактора для конкретного языка](../../ide/reference/setting-language-specific-editor-options.md) [в C++ (блог VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ab2651767e36abd8e85efff0dadea8071fc7db5b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302644"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851841"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "74302644"
 > При выборе действия пользовательского интерфейса, расположенного в методе в области **действий пользовательского интерфейса** , соответствующий элемент управления выделяется. Вы также можете изменять свойства действия или элемента управления пользовательского интерфейса.
 
  *Я не вижу* редактор закодированных тестов пользовательского интерфейса.
-Возможно, вы используете версию Visual Studio Enterprise до 2012. Редактор закодированных тестов пользовательского интерфейса также доступен в пакете дополнительных компонентов Visual Studio Feature Pack 2 2010 с подпиской MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119).
+Возможно, вы используете версию Visual Studio Enterprise до 2012. Редактор закодированных тестов пользовательского интерфейса также доступен в пакете дополнительных компонентов Visual Studio Feature Pack 2 2010 с подпиской MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://msdn.microsoft.com/library/gg269474.aspx).
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Изменение свойств действия пользовательского интерфейса и соответствующих свойств элемента управления
  В редакторе закодированных тестов пользовательского интерфейса можно быстро найти и просмотреть все действия пользовательского интерфейса в методах теста. При выборе действия пользовательского интерфейса в редакторе соответствующий элемент управления автоматически выделяется. Аналогичным образом при выборе элемента управления выделяются связанные действия пользовательского интерфейса. Таким образом, если выбрать действие пользовательского интерфейса или элемент управления, в окне свойств можно легко изменить соответствующие ему свойства.
@@ -194,7 +194,7 @@ ms.locfileid: "74302644"
  *Что еще мне нужно знать?*
  **Примечания**
 
-- ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Если необходимо обеспечить доступность определенного элемента управления перед действием пользовательского интерфейса, следует рассмотреть возможность добавления пользовательского кода в метод теста с помощью соответствующего метода UITestControl. WaitForControlXXX (). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+- ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Если необходимо обеспечить доступность определенного элемента управления перед действием пользовательского интерфейса, следует рассмотреть возможность добавления пользовательского кода в метод теста с помощью соответствующего метода UITestControl. WaitForControlXXX (). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
   **Советы**
 
@@ -203,15 +203,15 @@ ms.locfileid: "74302644"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://msdn.microsoft.com/library/jj159340.aspx)
 
-### <a name="faq"></a>Часто задаваемые вопросы
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Вопросы и ответы
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Форум
- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [Создание закодированных тестов](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) пользовательского интерфейса [Создание управляемого данными закодированного](../test/creating-a-data-driven-coded-ui-test.md) теста пользовательского интерфейса, [создающего закодированный тест пользовательского интерфейса из существующего](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [пошагового руководства по записи действий: создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

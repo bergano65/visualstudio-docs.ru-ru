@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299574"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850241"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Пошаговое руководство. Отображение связанных данных в приложении WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "74299574"
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](https://codeplex.com/SqlServerSamples).
 
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
@@ -108,7 +108,7 @@ ms.locfileid: "74299574"
 
 7. Нажмите кнопку **Готово**.
 
-8. Выполните построение проекта.
+8. Постройте проект.
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Создание элементов управления с привязкой к данным, отображающих заказы
  Создайте элементы управления, которые отображают записи о заказах, перетащив Сущность `SalesOrderHeaders` из окна **Источники данных** в конструктор WPF.
@@ -143,7 +143,7 @@ ms.locfileid: "74299574"
 
    - **TaxAmt**
 
-   - **Транспортировк**
+   - **Freight**
 
    - **rowguid**
 
@@ -202,8 +202,8 @@ ms.locfileid: "74299574"
 
 2. Закройте приложение.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  По завершении этого пошагового руководства вы узнаете, как использовать окно " **Источники данных** " в Visual Studio для привязки элементов управления WPF к другим типам источников данных. Дополнительные сведения см. в разделе [Привязка элементов управления WPF к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) и [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Отображение связанных данных в приложениях WPF](../data-tools/display-related-data-in-wpf-applications.md)

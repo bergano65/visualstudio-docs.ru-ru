@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290117"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848163"
 ---
 # <a name="performance-session-properties"></a>Свойства сеанса анализа производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "74290117"
   
  **Requirements**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]значение [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]значение [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   **Сеанс анализа производительности** создается либо посредством запуска **мастера производительности**, либо вручную. **Сеанс производительности** отображается в **обозревателе производительности** после того, как был создан **сеанс производительности**.  
   
@@ -35,10 +35,10 @@ ms.locfileid: "74290117"
   
   Ниже перечислены страницы свойств сеанса анализа производительности.  
   
-## <a name="general"></a>Общие правила  
+## <a name="general"></a>Общие  
  Эти параметры позволяют выбрать метод профилирования, добавить коллекцию объектов .NET и данные о времени существования, указать соглашения о наименовании и местоположение файла отчета по умолчанию.  
   
- Дополнительные сведения см. на странице  
+ Дополнительные сведения см. в следующих разделах.  
   
  [Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)  
   
@@ -46,7 +46,7 @@ ms.locfileid: "74290117"
   
  [Практическое руководство. Настройка параметров имени файла с данными о производительности](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Launch  
+## <a name="launch"></a>Запустите  
  Эти параметры позволяют выбирать двоичные файлы из списка и указывать порядок запуска двоичных файлов.  
   
  Дополнительные сведения см. в разделе [Практическое руководство. Указание двоичного файла для запуска](../profiling/how-to-specify-the-binary-to-start.md).  
@@ -74,10 +74,10 @@ ms.locfileid: "74290117"
 ## <a name="tier-interactions"></a>Взаимодействия уровня  
  Дополнительные сведения см. в разделе [Сбор данных взаимодействия уровней](../profiling/collecting-tier-interaction-data.md).  
   
-## <a name="instrumentation"></a>Инструментирование  
+## <a name="instrumentation"></a>Инструментарий  
  Эти параметры позволяют собирать данные о производительности кода JScript на веб-страницах [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и указать в полях **События до инструментирования** и **События после инструментирования** любые события, которые должны происходить до или после процесса инструментирования.  
   
- Дополнительные сведения см. на странице  
+ Дополнительные сведения см. в следующих разделах.  
   
  [Практическое руководство. Профилирование кода JavaScript в веб-страницах](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
@@ -89,9 +89,9 @@ ms.locfileid: "74290117"
  Дополнительные сведения см. в разделе [Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md).  
   
 ## <a name="windows-events"></a>События Windows  
- Во время профилирования можно собирать данные от поставщиков трассировки событий. Просматривать эти данные можно с помощью параметра `/calltrace` средства командной строки VSPerfReport.exe. Дополнительные сведения о трассировке событий Windows (ETW) см. в разделе [О трассировке событий](https://go.microsoft.com/fwlink/?linkid=90752).  
+ Во время профилирования можно собирать данные от поставщиков трассировки событий. Просматривать эти данные можно с помощью параметра `/calltrace` средства командной строки VSPerfReport.exe. Дополнительные сведения о трассировке событий Windows (ETW) см. в разделе [О трассировке событий](https://msdn2.microsoft.com/library/aa363668.aspx).  
   
- Дополнительные сведения см. на странице  
+ Дополнительные сведения см. в следующих разделах.  
   
  [Практическое руководство. Сбор данных трассировки событий Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
@@ -105,13 +105,13 @@ ms.locfileid: "74290117"
 ## <a name="advanced"></a>Дополнительно  
  Эти настройки позволяют добавлять параметры процесса инструментирования, указывая один или несколько параметров средства профилирования [VSInstr](../profiling/vsinstr.md). Если в приложении используются несколько версий, можно также задать версию среды CLR для профилирования.  
   
- Дополнительные сведения см. на странице  
+ Дополнительные сведения см. в следующих разделах.  
   
  [Практическое руководство. Определение среды выполнения .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
  [Практическое руководство. Указание дополнительных параметров инструментирования](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Управление сбором данных](../profiling/controlling-data-collection.md)

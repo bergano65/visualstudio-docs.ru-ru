@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299652"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847997"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,9 +100,9 @@ ms.locfileid: "74299652"
   
  Для профилирования приложений на устройствах, на которых не установлен Visual Studio, выполните одно из следующих действий.  
   
-- Загрузите программы командной строки как часть инструментов удаленной отладки для Visual Studio с [веб-сайта MSDN](https://go.microsoft.com/fwlink/?LinkID=219549).  
+- Загрузите программы командной строки как часть инструментов удаленной отладки для Visual Studio с [веб-сайта MSDN](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software).  
   
-- Скопируйте и запустите программу установки инструментов автономного профилировщика с компьютера Visual Studio. Программы установки находятся в папке *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Выберите программу установки для операционной системы удаленного компьютера (x86 или x64).  
+- Скопируйте и запустите программу установки инструментов автономного профилировщика с компьютера Visual Studio. Программы установки находятся в папке *% VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Выберите программу установки для операционной системы удаленного компьютера (x86 или x64).  
   
 > [!NOTE]
 > Для сбора данных профилирования TIP необходимо установить автономный профилировщик с компьютера с Visual Studio на удаленный компьютер.  
@@ -122,7 +122,7 @@ ms.locfileid: "74299652"
   
  Данные профилирования уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]или [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
- **Windows 8 и Windows Server 2012**  
+ **Windows 8 или Windows Server 2012**  
   
 1. Чтобы собрать данные об уровневом взаимодействии из приложений, выполняющихся на рабочем столе Windows 8 или Windows Server 2012, необходимо использовать метод инструментирования.  
   
@@ -142,9 +142,9 @@ ms.locfileid: "74299652"
   
    **Отчеты TIP**  
   
-   Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] или [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Получение отчетов об уровневом взаимодействии (TIP) на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступно.  
+   Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] или [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Отчеты об уровневом взаимодействии на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступны.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Обозреватель производительности](../profiling/performance-explorer.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

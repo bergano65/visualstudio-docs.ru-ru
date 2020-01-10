@@ -13,26 +13,26 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9c6cc7a101a854611228b1a3bc38f63fffff45c1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301452"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846174"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Диалоговое окно «Выбор набора правил» (для прежних версий)
 В этом разделе описывается использование диалогового окна **Выбор набора правил** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Диалоговое окно **Выбор набора правил** используется для выбора набора правил, который можно использовать с действием [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Дополнительные сведения о доступе к диалоговому окну **Выбор набора правил** см. в разделе [инструкции: Создайте набор правил PolicyActivity (прежних версий)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ Диалоговое окно **Выбор набора правил** используется для выбора набора правил, который можно использовать с действием [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) . Дополнительные сведения о доступе к диалоговому окну **Выбор набора правил** см. [в разделе как создать набор правил PolicyActivity (устаревший)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
  В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна « **Выбор набора правил** ».
 
-|Элемент пользовательского интерфейса|Описание|
+|Элемент интерфейса|Описание|
 |----------------|-----------------|
 |**Новые функции...**|Нажмите, чтобы открыть [диалоговое окно Редактор набора правил (устаревшее)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) для создания нового условия правила.|
 |**Изменить...**|Нажмите, чтобы открыть [диалоговое окно Редактор набора правил (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) , чтобы изменить выбранное условие правила.|
 |**Переименовать...**|Щелкните, чтобы открыть диалоговое окно, используемое для переименования выбранного набора правил.|
-|**Удаление**|Щелкните, чтобы удалить выбранный набор правил.|
+|**Удалить**|Щелкните, чтобы удалить выбранный набор правил.|
 |**Предварительный просмотр набора правил**|Удаляет правила из выбранного набора правил.|
 |**OK**|Нажмите, чтобы назначить выбранный набор правил для действия **PolicyActivity** .|
 
@@ -41,7 +41,7 @@ ms.locfileid: "74301452"
 > [!WARNING]
 > Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.
 
- Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009).
+ Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>См. также
- [Диалоговое окно "Редактор набора правил [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)" (устаревшая)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Использование действия PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004) [с условиями в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009)
+## <a name="see-also"></a>См. также раздел
+ [Диалоговое окно "Редактор набора правил [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx)" (устаревшая)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Использование действия PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx) [с условиями в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx)

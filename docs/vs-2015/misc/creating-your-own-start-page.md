@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299313"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850980"
 ---
 # <a name="creating-your-own-start-page"></a>Создание собственной начальной страницы
 Настраиваемую начальную страницу можно создать с помощью шаблона проекта начальной страницы или путем создания пустой начальной страницы.  
@@ -28,7 +28,7 @@ ms.locfileid: "74299313"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Создание настраиваемой начальной страницы с помощью шаблона проекта начальной страницы  
   
-1. Скачайте и установите [шаблон проекта начальной страницы](https://go.microsoft.com/fwlink/?LinkId=186204) из коллекции Visual Studio.  
+1. Скачайте и установите [шаблон проекта начальной страницы](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) из коллекции Visual Studio.  
   
     > [!WARNING]
     > На данный момент шаблон проекта начальной страницы Visual Studio 2010 еще не обновлен. Сведения о том, как обновить этот шаблон, см. [в разделе как обновить настраиваемую начальную страницу Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
@@ -99,6 +99,6 @@ ms.locfileid: "74299313"
   
    Вы можете предоставить общий доступ к настраиваемой начальной странице, передав файл VSIX из каталога bin\Debug на веб-сайт [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или на другой веб-сайт или в общую папку интрасети. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Пошаговое руководство. Добавление настраиваемого XAML-файла на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

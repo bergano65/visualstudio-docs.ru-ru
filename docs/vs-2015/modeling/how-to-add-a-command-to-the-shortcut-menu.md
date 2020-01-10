@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300884"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850417"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Практическое руководство. Добавление команды в контекстное меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300884"
 
 3. [Напишите методы в классе командного метода](#CommandSet) , чтобы сделать команду видимой, и определить, что должна делать команда.
 
-   Примеры см. на [веб-сайте SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Примеры см. на [веб-сайте SDK визуализации и моделирования](https://www.visualstudio.com/).
 
 > [!NOTE]
 > Также можно изменить поведение некоторых существующих команд, например "Вырезать", "Вставить", "Выбрать все" и "Печать", переопределив соответствующие методы в CommandSet.cs. Дополнительные сведения см. [в разделе инструкции. Изменение стандартной команды меню](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -143,7 +143,7 @@ ms.locfileid: "74300884"
 
 2. Найдите элемент `ProvideMenuResource`.
 
-3. Увеличьте параметр `version` атрибута, который является вторым параметром. При необходимости можно написать имя параметра, прямо указывающее на его назначение. Пример.
+3. Увеличьте параметр `version` атрибута, который является вторым параметром. При необходимости можно написать имя параметра, прямо указывающее на его назначение. Например:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -162,7 +162,7 @@ ms.locfileid: "74300884"
 
 2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs`.
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример.
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Например:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -332,7 +332,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Щелкните несколько элементов в схеме правой кнопкой мыши, чтобы проверить, правильно ли включается и отключается команда, а также правильно ли работает ее отображение или скрытие в зависимости от выбранного элемента.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
  **Команда не отображается в меню:**
 
 - Пока вы не установите пакет доменного языка, команда будет отображаться только в экземплярах отладки Visual Studio. Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).
@@ -359,5 +359,5 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Убедитесь, что более ранние версии пакета удалены.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Написание кода для настройки в предметно-ориентированном языке](../modeling/writing-code-to-customise-a-domain-specific-language.md) [. как изменить стандартную команду меню,](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [развернув решения доменного языка](../modeling/deploying-domain-specific-language-solutions.md)

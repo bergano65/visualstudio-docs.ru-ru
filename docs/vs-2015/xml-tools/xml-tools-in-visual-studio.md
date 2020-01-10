@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b9a46523c4c856367e77c345c7e44d0dbc87508f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297455"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845973"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Средства XML в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "74297455"
 
  XML лежит в основе многих возможностей [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. В следующем разделе перечислены средства и возможности, связанныe с XML, которые доступны в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- Дополнительные сведения см. в [центре разработчиков XML](https://go.microsoft.com/fwlink/?LinkID=100176), который содержит последнюю документацию, технические сведения, файлы для загрузки, группы новостей и другие ресурсы для разработчиков XML.
+ Дополнительные сведения см. в [центре разработчиков XML](https://msdn.microsoft.com/data/bb190600.aspx), который содержит последнюю документацию, технические сведения, файлы для загрузки, группы новостей и другие ресурсы для разработчиков XML.
 
 ## <a name="in-this-section"></a>В этом разделе
  [Работа с XML-данными](../xml-tools/working-with-xml-data.md) Обсуждается роль XML в способе обработки данных в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
@@ -57,16 +57,16 @@ ms.locfileid: "74297455"
  [Отладка XSLT](../xml-tools/debugging-xslt.md) Содержит ссылки на разделы, посвященные использованию отладчика Visual Studio для отладки XSLT.
 
 ## <a name="reference"></a>Справочные сведения
- [Microsoft. VisualStudio. XmlEditor](https://go.microsoft.com/fwlink/?LinkID=165699) предоставляет дерево синтаксического анализа [XML-редактора](https://go.microsoft.com/fwlink/?LinkId=228249) через [System. XML. LINQ](https://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
+ [Microsoft.VisualStudio.XmlEditor](https://msdn.microsoft.com/library/microsoft.visualstudio.xmleditor.aspx) предоставляет [редактор XML](https://msdn.microsoft.com/library/ms255810.aspx) синтаксического анализа дерева через [System.Xml.Linq](https://msdn.microsoft.com/library/system.xml.linq.aspx) для любых XML-документов.
 
- [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Предоставляет сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
+ [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) содержит сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
 
- <xref:System.Xml?displayProperty=fullName> описывает классы и другие элементы, составляющие пространство имен <xref:System.Xml>, и ссылки на более подробные сведения о каждом элементе.
+ <xref:System.Xml?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml> пространства имен и ссылки на более подробные сведения для каждого элемента.
 
- <xref:System.Xml.Serialization?displayProperty=fullName> описываются классы и другие элементы, составляющие пространство имен <xref:System.Xml.Serialization>, а также ссылки на более подробные сведения о каждом элементе.
+ <xref:System.Xml.Serialization?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml.Serialization> пространства имен и ссылки на более подробные сведения о каждом элементе.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Модель DOM XML (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Описывает, как <xref:System.Xml.XmlDocument> и связанные с ними классы соответствуют спецификациям поддержки пространств имен модель DOM уровня 1 и уровня 2 консорциума W3C.
+ [XML объекта модели (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) описывает как <xref:System.Xml.XmlDocument> и связанные с ним классы соответствуют объектной модели документов W3C (Core) уровня 1 и спецификации пространству имен уровня 2.
 
  [Считывание XML с помощью XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Описывает, как <xref:System.Xml.XmlReader> предоставляет доступ только для чтения к XML-данным в потоке XML с некэшированным прямым доступом.
 
@@ -76,4 +76,4 @@ ms.locfileid: "74297455"
 
  [Обработка XML-данных с помощью модели данных XPath](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) Описывает, как класс <xref:System.Xml.XPath.XPathNavigator> может обрабатывать XML-данные, хранящиеся в <xref:System.Xml.XPath.XPathDocument> или в объекте <xref:System.Xml.XmlDocument>. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.
 
- [Модель объектов схемы XML (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) Описывает классы, используемые для создания схем XML и управления ими, предоставляя класс <xref:System.Xml.Schema.XmlSchema> для загрузки и редактирования схемы.
+ [Объектной модели схемы XML (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) описаны классы, используемые для создания и обработки XML-схем, предоставляя <xref:System.Xml.Schema.XmlSchema> класс для загрузки и изменения схемы.

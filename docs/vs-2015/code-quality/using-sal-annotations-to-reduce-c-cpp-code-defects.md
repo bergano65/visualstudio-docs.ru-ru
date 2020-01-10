@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3dd1a481a7db9739bdd847c0b6780a2b55d28469
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291887"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848301"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Использование аннотаций SAL для сокращения количества дефектов в коде C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ SAL — это язык заметок исходного кода Майкро�
      Содержит примеры, демонстрирующие использование аннотаций SAL. Также описываются распространенные ошибки.  
   
 ## <a name="related-resources"></a>Связанные ресурсы  
- [Блог команды разработчиков анализа кода](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Блог команды разработчиков анализа кода](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>См. также  
- [Примечания SAL 2,0 для драйверов Windows](https://go.microsoft.com/fwlink/?LinkId=250979)
+## <a name="see-also"></a>См. также раздел  
+ [Примечания SAL 2,0 для драйверов Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

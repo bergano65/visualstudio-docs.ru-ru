@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300663"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852171"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Общие шаблоны для неправильно работающих многопоточных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300663"
   
  Как показано на следующем рисунке, визуализатор параллелизма может также обнаруживать подобные признаки в представлении использования ЦП, когда, несмотря на наличие нескольких потоков, приложение использует только одно логическое ядро.  
   
- Дополнительные сведения см. в публикации "Performance Pattern 1: Identifying Lock Contention" ("Шаблон производительности 1. Введение в конфликт блокировок") в блоге Хазима Шафи (Hazim Shafi) [Parallel Performance Tools For Windows](https://go.microsoft.com/fwlink/?LinkID=160569) (Средства параллельной производительности для Windows) на веб-сайте блогов MSDN.  
+ Дополнительные сведения см. в публикации "Performance Pattern 1: Identifying Lock Contention" ("Шаблон производительности 1. Введение в конфликт блокировок") в блоге Хазима Шафи (Hazim Shafi) [Parallel Performance Tools For Windows](https://blogs.msdn.com/hshafi) (Средства параллельной производительности для Windows) на веб-сайте блогов MSDN.  
   
  ![Состязание за блокировку](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -66,5 +66,5 @@ ms.locfileid: "74300663"
   
  Колонны блокировок возникают, когда приложение получает блокировки в порядке поступления запросов и когда скорость прибытия на блокировку превышает скорость получения блокировок. При сочетании этих двух условий блокировки начинают резервироваться. Один из способов устранения этой проблемы заключается в использовании "нечестных" блокировок или блокировок, которые предоставляют доступ первому потоку, чтобы он мог перейти в разблокированное состояние. На предыдущем рисунке показано такое построение в колонну. Для решения этой проблемы попытайтесь снизить число конфликтов при синхронизации объектов и прибегнуть к "нечестным" блокировкам.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

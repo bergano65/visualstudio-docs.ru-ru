@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298139"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850791"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,12 +45,12 @@ ms.locfileid: "74298139"
 
  Допустимые значения: "", инвариантный язык и региональные параметры, используемые по умолчанию.
 
- Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Для получения дополнительной информации см. <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  Этот атрибут задает язык и региональные параметры для использования при преобразовании блока выражений в текст.
 
 ## <a name="debug-attribute"></a>атрибут debug
- Пример.
+ Пример:
 
 ```
 debug="true"
@@ -65,7 +65,7 @@ debug="true"
  Чтобы запустить шаблон времени разработки в отладчике, сохраните текстовый шаблон, откройте контекстное меню текстового шаблона в обозреватель решений и выберите **Отладка шаблона T4**.
 
 ## <a name="hostspecific-attribute"></a>атрибут hostspecific
- Пример.
+ Пример:
 
 ```
 hostspecific="true"
@@ -77,7 +77,7 @@ hostspecific="true"
 
  Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблонам времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не к [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример.
+ Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Например:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -110,7 +110,7 @@ Content of myFile is:
 
  Атрибут Language задает язык ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../includes/csprcs-md.md)]), используемый для исходного кода в блоках операторов и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
 
- Пример.
+ Например:
 
 ```vb
 <#@ template language="VB" #>
@@ -211,7 +211,7 @@ This is the common footer.
 
  Для текстового шаблона времени разработки можно задать любой базовый класс, наследуемый от <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Воспользуйтесь директивой `<#@assembly#>` для загрузки сборки или проекта, содержащего базовый класс.
 
- Дополнительные сведения см. [в разделе "наследование в текстовых шаблонах" в блоге Гарет Jones "](https://go.microsoft.com/fwlink/?LinkId=208373).
+ Дополнительные сведения см. [в разделе "наследование в текстовых шаблонах" в блоге Гарет Jones "](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
 
 ## <a name="linepragmas-attribute"></a>Атрибут LinePragmas
  Пример: `linePragmas="false"`

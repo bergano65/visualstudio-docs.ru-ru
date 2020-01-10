@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 751840960288f46c0a1ca09ebe80a2b8e7603359
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c0cbd93f2d32c06ba52b2c47c1af8f326948609a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299522"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843928"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Общие сведения о привязке данных WPF с помощью LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,5 +88,5 @@ ms.locfileid: "74299522"
 
  Для реализации динамической привязки WPF динамические свойства используются со средствами пространства имен <xref:System.Windows.Data>, особенно с классом <xref:System.Windows.Data.Binding>.
 
-## <a name="see-also"></a>См. также
- [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML XAML динамических свойств](../designers/linq-to-xml-dynamic-properties.md) [в](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [привязке данных WPF (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [с использованием разметки рабочего процесса](https://go.microsoft.com/fwlink/?LinkId=98685)
+## <a name="see-also"></a>См. также раздел
+ [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML XAML динамических свойств](../designers/linq-to-xml-dynamic-properties.md) [в](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [привязке данных WPF (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [с использованием разметки рабочего процесса](https://msdn2.microsoft.com/library/ms735921(vs.90).aspx)

@@ -12,17 +12,17 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299303"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850495"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Определение обработчика жестов на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно определить команды, которые выполняются, когда пользователь дважды щелкает элементы на схеме UML или перетаскивает элементы на эту схему. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) и предоставить их другим пользователям Visual Studio.
+В Visual Studio можно определить команды, которые выполняются, когда пользователь дважды щелкает элементы на схеме UML или перетаскивает элементы на эту схему. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) и предоставить их другим пользователям Visual Studio.
 
  Так как это поведение уже является встроенным для типа схемы и типа элемента, который нужно перетащить, его расширение и перезапись могут быть невозможны.
 
@@ -60,7 +60,7 @@ ms.locfileid: "74299303"
 
    2. В разделе **Установленные шаблоны**разверните узел **Visual C#** или **Visual Basic**и выберите в среднем столбце пункт **Библиотека классов**.
 
-2. Добавьте в проект указанные ниже ссылки.
+2. Добавьте в проект следующие ссылки:
 
     `Microsoft.VisualStudio.Modeling.Sdk.[version]`
 
@@ -243,7 +243,7 @@ ms.locfileid: "74299303"
 
    - При наличии нескольких проектов убедитесь в том, что для проекта VSIX задан параметр "Назначить запускаемым проектом".
 
-   - В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт "Свойства". В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь, что строка в поле **Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], обычно:
+   - В обозревателе решений в контекстном меню запускаемого или единственного проекта выберите пункт Свойства. В редакторе свойств проекта перейдите на вкладку **Отладка** . Убедитесь, что строка в поле **Запуск внешней программы** является полным путем к [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], обычно:
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -371,13 +371,13 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
 #### <a name="to-uninstall-an-extension"></a>Удаление расширения
 
-1. В меню **Сервис** щелкните пункт **Расширения и обновления**.
+1. В меню **Сервис** щелкните **Расширения и обновления**.
 
 2. Разверните узел **Установленные расширения**.
 
 3. Выберите расширение и щелкните **Удалить**.
 
-   Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
+   В редких случаях не удается загрузить неисправное расширение, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
 
    *% LocalAppData%* **\локал\микрософт\висуалстудио\\[версия] \екстенсионс**
 
@@ -519,5 +519,5 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
  Код `GetModelElementsFromDragEvent()` описан в разделе [Получение элементов модели UML из IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Определение и установка расширения моделирования расширение](../modeling/define-and-install-a-modeling-extension.md) [моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение ограничений проверки для программирования UML-моделей](../modeling/define-validation-constraints-for-uml-models.md) [с помощью API UML](../modeling/programming-with-the-uml-api.md)

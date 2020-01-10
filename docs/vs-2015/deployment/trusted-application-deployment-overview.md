@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294689"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847708"
 ---
 # <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "74294689"
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Добавление издателя в хранилище надежных издателей  
  Для того чтобы приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] получило более высокий уровень доверия, необходимо добавить сертификат в качестве надежного издателя на каждый клиентский компьютер, где будет выполняться приложение. Для выполнения этой задачи достаточно выполнить настройку один раз. После этого можно развернуть нужное количество приложений [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , подписанных сертификатом издателя, и все они будут выполняться с высоким уровнем доверия.  
   
- При развертывании приложения в управляемой среде настольных компьютеров, например в корпоративной интрасети с ОС Windows, можно добавить надежных издателей в хранилище клиента, создав новый список доверия сертификатов (CTL) с использованием групповой политики. Дополнительные сведения см. в статье [Create a certificate trust list for a Group Policy object](https://go.microsoft.com/fwlink/?LinkId=102576)(Создание списка доверия сертификатов для объекта групповой политики).  
+ При развертывании приложения в управляемой среде настольных компьютеров, например в корпоративной интрасети с ОС Windows, можно добавить надежных издателей в хранилище клиента, создав новый список доверия сертификатов (CTL) с использованием групповой политики. Дополнительные сведения см. в статье [Create a certificate trust list for a Group Policy object](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7)(Создание списка доверия сертификатов для объекта групповой политики).  
   
  Если развертывание приложения выполняется не в управляемой среде настольных компьютеров, имеются следующие варианты добавления сертификата в хранилище надежных издателей.  
   
@@ -104,6 +104,6 @@ ms.locfileid: "74294689"
 ## <a name="limitations-of-trusted-application-deployment"></a>Ограничения на развертывание надежных приложений  
  Развертывание надежных приложений можно использовать для предоставления доверия более высокого уровня приложениям [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , развернутым через Интернет или общую папку организации. Не нужно использовать развертывание надежных приложений для приложений [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , распространяемых на компакт-диске, потому что по умолчанию этим приложениям предоставлено полное доверие.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Mage.exe (средство создания и редактирования манифеста)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Разбор примера: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

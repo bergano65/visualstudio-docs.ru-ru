@@ -12,17 +12,17 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298718"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850450"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Определение и установка расширения моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно определять расширения для схем моделирования. Таким образом можно адаптировать схемы и модели под свои потребности. Например, можно определить команды меню, профили UML, ограничения проверки и элементы панели элементов. В одном расширении можно определить несколько компонентов. Можно также предоставить эти расширения другим пользователям Visual Studio в виде [Visual Studio Integration Extension (VSIX)](https://go.microsoft.com/fwlink/?LinkId=160780). Расширение VSIX можно создать с помощью проекта VSIX в Visual Studio.
+В Visual Studio можно определять расширения для схем моделирования. Таким образом можно адаптировать схемы и модели под свои потребности. Например, можно определить команды меню, профили UML, ограничения проверки и элементы панели элементов. В одном расширении можно определить несколько компонентов. Можно также предоставить эти расширения другим пользователям Visual Studio в виде [Visual Studio Integration Extension (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx). Расширение VSIX можно создать с помощью проекта VSIX в Visual Studio.
 
 ## <a name="requirements"></a>Требования
  См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -76,7 +76,7 @@ ms.locfileid: "74298718"
         |-|-|
         |**Тип** =|**Microsoft. VisualStudio. MefComponent**|
         |**Source** =|**Проект в текущем решении**|
-        | = **проекта**|*Ваш проект библиотеки классов*|
+        |**Project** =|*Ваш проект библиотеки классов*|
         |**Внедрить в эту папку** =|*указано*|
 
          Для остальных типов компонентов см. ссылки в следующем разделе.
@@ -97,7 +97,7 @@ ms.locfileid: "74298718"
 
 #### <a name="to-run-an-extension-during-its-development"></a>Запуск расширения во время его разработки
 
-1. В меню [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] последовательно выберите пункты **Start ging**.
+1. В меню **Отладка** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] выберите пункт **Начать отладку**.
 
      Выполняется сборка проекта, и новый экземпляр [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] запускается в экспериментальном режиме.
 
@@ -136,9 +136,9 @@ ms.locfileid: "74298718"
 
 3. Выберите расширение и щелкните **Удалить**.
 
-   Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующего расположения, где *% LocalAppData%* обычно *DriveName*: \Users\\*username*\аппдата\локал:
+   В редких случаях не удается загрузить неисправное расширение, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующего расположения, где *% LocalAppData%* обычно *DriveName*: \Users\\*username*\аппдата\локал:
 
    *% LocalAppData%* **\микрософт\висуалстудио\\[версия] \екстенсионс**
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299499"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852427"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Отладка стилей CSS с использованием проводника DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ ms.locfileid: "74299499"
     > [!TIP]
     > После появления приложения в имитаторе расположите имитатор рядом с окном Visual Studio, чтобы можно было сразу видеть результаты выполняемых действий выбора и изменений, вносимых в стили CSS.  
   
-6. Переключитесь на Visual Studio и в проводнике DOM нажмите кнопку **Выбрать элемент** (или сочетание клавиш CTRL+B). При этом изменится режим выбора, то есть элемент можно будет выбирать щелчком, и приложение появится на переднем плане. Вернуть предыдущий режим можно одним щелчком. Кнопка **Выбрать элемент** : ![Кнопка "выбрать элемент" в проводнике DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
+6. Переключитесь на Visual Studio и в проводнике DOM нажмите кнопку **Выбрать элемент** (или сочетание клавиш CTRL+B). При этом изменится режим выбора, то есть элемент можно будет выбирать щелчком, и приложение появится на переднем плане. Вернуть предыдущий режим можно одним щелчком. Кнопка **Выбрать элемент** : ![Кнопка "выбрать элемент" в проводнике DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > Выбирать HTML-элементы можно также непосредственно в проводнике DOM. Дополнительные сведения о выборе элементов см. в разделе [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -156,8 +156,8 @@ ms.locfileid: "74299499"
   
 16. Чтобы внести изменения в исходный CSS файл, щелкните ссылку **Items. CSS** на вкладке **стили** . Откроется диалоговое окно Items. CSS, где можно изменить значение стиля `color` в коде приложения. Чтобы обновить приложение без остановки и перезапуска отладчика, нажмите кнопку ![обновить приложение Windows](../debugger/media/js-refresh.png "JS_Refresh") (**обновить приложение Windows**) на панели инструментов " **Отладка** ".  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Макет отладки с использованием ПРОВОДНИКА DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Просмотр  прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)  
- [Поддержка и специальные возможности продукта](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [Поддержка и специальные возможности продукта](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

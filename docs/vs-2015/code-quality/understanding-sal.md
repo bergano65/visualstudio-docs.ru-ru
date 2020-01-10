@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291877"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848467"
 ---
 # <a name="understanding-sal"></a>Основные сведения о языке SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Язык аннотирования Microsoft Source-Code (SAL) предоставляет набор заметок, которые можно использовать для описания того, как функция использует ее параметры, предположения, что она делает, и гарантирует, что она делает это после завершения. Заметки определяются в файле заголовка `<sal.h>`. Анализ кода Visual Studio для C++ использует аннотации SAL, чтобы изменить его анализ функций. Дополнительные сведения о языке SAL 2,0 для разработки драйверов Windows см. в статье [sal 2,0 заметки для драйверов Windows](https://go.microsoft.com/fwlink/?LinkId=250979).  
+Язык аннотирования Microsoft Source-Code (SAL) предоставляет набор заметок, которые можно использовать для описания того, как функция использует ее параметры, предположения, что она делает, и гарантирует, что она делает это после завершения. Заметки определяются в файле заголовка `<sal.h>`. Анализ кода Visual Studio для C++ использует аннотации SAL, чтобы изменить его анализ функций. Дополнительные сведения о языке SAL 2,0 для разработки драйверов Windows см. в статье [sal 2,0 заметки для драйверов Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
   
  В языке C и C++ предоставляют разработчикам только ограниченные способы согласованного определения намерений и расхождений. С помощью аннотаций SAL можно более подробно описать функции, чтобы разработчики, использующие их, могли лучше понять, как их использовать.  
   
@@ -409,9 +409,9 @@ bool GetValue(_Out_ int *pInt, bool flag)
   Кроме того, можно добавить заметки ко всем параметрам, чтобы сделать свою намерение понятной, чтобы упростить проверку выполнения заметок.  
   
 ## <a name="related-resources"></a>Связанные ресурсы  
- [Блог команды разработчиков анализа кода](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [Блог команды разработчиков анализа кода](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Добавление заметок к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)   
  [Аннотирование поведения функций](../code-quality/annotating-function-behavior.md)   

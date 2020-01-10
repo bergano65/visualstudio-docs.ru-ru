@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301156"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851714"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Установка приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "74301156"
   
 - Создайте начальный загрузчик программы установки.  
   
-  Весь пример кода в этом документе взят из [примера развертывания оболочки](https://go.microsoft.com/fwlink/?LinkId=262245), который можно скачать из коллекции кода на веб-сайте MSDN. В этом примере показаны результаты выполнения каждого из этих действий.  
+  Весь пример кода в этом документе взят из [примера развертывания оболочки](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7), который можно скачать из коллекции кода на веб-сайте MSDN. В этом примере показаны результаты выполнения каждого из этих действий.  
   
 ## <a name="prerequisites"></a>Prerequisites  
  Для выполнения процедур, описанных в этом разделе, на компьютере должны быть установлены следующие средства.  
   
-- Пакет SDK для Visual Studio  
+- Visual Studio SDK  
   
-- [Набор инструментов УСТАНОВЩИК Windows XML](https://go.microsoft.com/fwlink/?LinkId=82720) версии 3,6  
+- [Набор инструментов УСТАНОВЩИК Windows XML](http://wix.sourceforge.net/) версии 3,6  
   
   Для примера также требуется пакет SDK для визуализации и моделирования Microsoft, который не все оболочки требуется.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "74301156"
 2. Для каждого проекта, содержащего манифест VSIX, измените задачи сборки, чтобы вывести содержимое в расположение, из которого будет устанавливаться MSI. Включите манифест VSIX в выходные данные сборки, но не создавайте VSIX-файл.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Создание MSI для оболочки  
- Для создания пакета MSI рекомендуется использовать [набор инструментов УСТАНОВЩИК Windows XML](https://go.microsoft.com/fwlink/?LinkId=82720) , так как он обеспечивает большую гибкость, чем стандартный проект установки.  
+ Для создания пакета MSI рекомендуется использовать [набор инструментов УСТАНОВЩИК Windows XML](http://wix.sourceforge.net/) , так как он обеспечивает большую гибкость, чем стандартный проект установки.  
   
  В файле Product. WXS задайте блоки обнаружения и макет компонентов оболочки.  
   
@@ -161,7 +161,7 @@ ms.locfileid: "74301156"
     > [!NOTE]
     > Необходимые зависимости для приложений оболочки (изолированной): DebuggerProxy, Мастерпкгдеф, Resources (особенно файл. винпрф), Application и Пкгдефс.  
   
-### <a name="registry-entries"></a>Записи реестра  
+### <a name="registry-entries"></a>Разделы реестра  
  Шаблон проекта Shell (изолированная среда) включает файл *имяПроекта*. reg для разделов реестра, которые необходимо объединить при установке. Эти записи реестра должны быть частью MSI в целях установки и очистки. Кроме того, необходимо создать соответствующие блоки реестра в Аппликатионрегистри. WXS.  
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Интеграция записей реестра в MSI  
@@ -178,8 +178,8 @@ ms.locfileid: "74301156"
   
     |*Имя_проекта*. reg|Аппликатионрегисти. WXS|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT \КЛСИД\\{bb431796-A179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Объект в студии DTE"|\<RegistryKey ID = ' Дтеклсидрегкэй ' root = ' HKCR ' key = ' $ (var. Дтеклсидрегкэй) "Action =" Креатеандремовеонунинсталл "><br /><br /> \<RegistryValue Type = "String" name = ' @ ' value = ' $ (var. Шортпродуктнаме) объект DTE "/><br /><br /> \</Регистрикэй >|  
-    |[HKEY_CLASSES_ROOT \КЛСИД\\{bb431796-A179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' key = ' $ (var. Дтеклсидрегкэй) \LocalServer32 "Action =" Креатеандремовеонунинсталл "><br /><br /> \<RegistryValue Type = "String" name = ' @ ' value = ' [INSTALLDIR] $ (var. Шортпродуктнаме). exe '/><br /><br /> \</Регистрикэй >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Объект в студии DTE"|\<RegistryKey ID = ' Дтеклсидрегкэй ' root = ' HKCR ' key = ' $ (var. Дтеклсидрегкэй) "Action =" Креатеандремовеонунинсталл "><br /><br /> \<RegistryValue Type = "String" name = ' @ ' value = ' $ (var. Шортпродуктнаме) объект DTE "/><br /><br /> \</Регистрикэй >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' key = ' $ (var. Дтеклсидрегкэй) \LocalServer32 "Action =" Креатеандремовеонунинсталл "><br /><br /> \<RegistryValue Type = "String" name = ' @ ' value = ' [INSTALLDIR] $ (var. Шортпродуктнаме). exe '/><br /><br /> \</Регистрикэй >|  
   
      В этом примере var. Дтеклсидрегкэй разрешается в раздел реестра в верхней строке. Var. Шортпродуктнаме разрешается в `PhotoStudio`.  
   
@@ -368,5 +368,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Пошаговое руководство. Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

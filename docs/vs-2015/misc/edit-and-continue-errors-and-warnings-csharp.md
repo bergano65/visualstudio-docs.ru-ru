@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299277"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850976"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Ошибки и предупреждения режима "Изменить и продолжить" (C#)
 Были внесены изменения в раздел кода, изменение которого не допускается при использовании операции "Изменить и продолжить" языка Visual C#.  
@@ -75,7 +75,7 @@ ms.locfileid: "74299277"
   
  Изменения в объявляющем коде, меняющие общедоступную (public) структуру класса, в общем случае запрещены. Кроме того, не разрешены некоторые виды изменений в теле метода или свойства, а также в объявлениях со спецификатором доступа private в пределах класса. Операция "Изменить и продолжить" по возможности помечает запрещенный к изменению код светло-серым и отображает сообщение об ошибке.  
   
- Дополнительные сведения об изменениях, поддерживаемых операцией "Изменить и продолжить" для [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], см. в разделе [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Если требуются дополнительные сведения о конкретной ошибке или предупреждении, можно поискать ответ или разместить вопрос на [форуме по IDE Visual C#](https://go.microsoft.com/fwlink/?LinkId=214693)на веб-сайте MSDN.  
+ Дополнительные сведения об изменениях, поддерживаемых операцией "Изменить и продолжить" для [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], см. в разделе [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Если требуются дополнительные сведения о конкретной ошибке или предупреждении, можно поискать ответ или разместить вопрос на [форуме по IDE Visual C#](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads)на веб-сайте MSDN.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
@@ -85,5 +85,5 @@ ms.locfileid: "74299277"
   
 2. Остановите сеанс отладки, внесите изменения и начните новый сеанс отладки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Режим "Изменить и продолжить" (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300244"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852010"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Схемы моделирования помогают понять, уточнить и передать другим сведения о коде и пользовательских требованиях, которым должна удовлетворять ваша программная система. Например, для описания и передачи пользовательских требований можно использовать схемы UML вариантов использования, деятельности, классов и последовательностей. Для описания функциональных возможностей системы и передачи сведений о них можно использовать схемы UML компонентов, классов, деятельности и последовательностей.
 
- См. [видео Channel 9: улучшение архитектуры с помощью моделирования](https://go.microsoft.com/fwlink/?LinkID=252078).
+ См. [видео Channel 9: улучшение архитектуры с помощью моделирования](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  В этом выпуске можно создавать следующие UML-схемы:
 
@@ -73,7 +73,7 @@ ms.locfileid: "74300244"
 
 ## <a name="common-tasks"></a>Общие задачи
 
-|**Главе**|**Задача**|
+|**статья**;|**Задача**|
 |---------------|--------------|
 |[Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Создание моделей** и Добавление схем.|
 |[Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)|Для изменения модели **Нарисуйте диаграммы** .|
@@ -85,7 +85,7 @@ ms.locfileid: "74300244"
 
 ## <a name="related-tasks"></a>Связанные задачи
 
-|**Главе**|**Задача**|
+|**статья**;|**Задача**|
 |---------------|--------------|
 |[Визуализация кода](../modeling/visualize-code.md)|Создавайте карты кода и схемы слоев, чтобы лучше разобраться в незнакомом коде.|
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|
@@ -98,4 +98,4 @@ ms.locfileid: "74300244"
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

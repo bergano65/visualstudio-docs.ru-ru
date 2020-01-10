@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e988c8818cdee756310b73d0d214deda43226f2b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299561"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850216"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Visual Studio предоставляет средства для работы с
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] — это единая платформа для создания безопасных, надежных, транзакционных и взаимодействующих распределенных приложений. Он заменяет более старые технологии межпроцессного взаимодействия, такие как веб-службы ASMX, .NET Remoting, Enterprise Services (DCOM) и MSMQ. WCF объединяет функциональные возможности всех этих технологий в унифицированной модели программирования. Это упрощает процесс разработки распределенных приложений.
 
 #### <a name="what-are-wcf-data-services"></a>Что такое WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] является реализацией стандарта протокола Open Data (OData).  WCF Data Services позволяет предоставлять табличные данные в виде набора API-интерфейсов, что позволяет возвращать данные с помощью стандартных глаголов HTTP, таких как GET, POST, Set или DELETE. На стороне сервера WCF Data Services заменяются [веб-API ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) для создания новых служб OData. WCF Data Services клиентской библиотеке остается хорошим выбором для использования служб OData в приложении .NET из Visual Studio (**проект &#124; Добавление ссылки на службу**). Дополнительные сведения см. в разделе [Службы данных WCF 4.5](https://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] является реализацией стандарта протокола Open Data (OData).  WCF Data Services позволяет предоставлять табличные данные в виде набора API-интерфейсов, что позволяет возвращать данные с помощью стандартных глаголов HTTP, таких как GET, POST, Set или DELETE. На стороне сервера WCF Data Services заменяются [веб-API ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) для создания новых служб OData. WCF Data Services клиентской библиотеке остается хорошим выбором для использования служб OData в приложении .NET из Visual Studio (**проект &#124; Добавление ссылки на службу**). Дополнительные сведения см. в разделе [Службы данных WCF 4.5](https://msdn.microsoft.com/library/cc668792.aspx).
 
 ### <a name="wcf-programming-model"></a>Модель программирования WCF
  Модель программирования WCF основана на связи между двумя сущностями: службой WCF и клиентом WCF. Модель программирования инкапсулирована в пространстве имен <xref:System.ServiceModel> в [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
-#### <a name="wcf-service"></a>Служба WCF
+#### <a name="wcf-service"></a>Службы WCF
  Служба WCF основана на интерфейсе, который определяет контракт между службой и клиентом. Он помечается атрибутом <xref:System.ServiceModel.ServiceContractAttribute>, как показано в следующем коде:
 
  [!code-csharp[WCFWalkthrough#6](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs#6)]
@@ -232,7 +232,7 @@ Visual Studio предоставляет средства для работы с
 
 ## <a name="related-topics"></a>Связанные разделы
 
-|Название|Описание|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство. Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Содержит пошаговую демонстрацию создания и использования служб WCF в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Содержит пошаговую демонстрацию создания и использования [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
@@ -250,5 +250,5 @@ Visual Studio предоставляет средства для работы с
 
  <xref:System.Data.Services>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

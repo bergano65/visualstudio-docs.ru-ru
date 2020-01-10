@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301241"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846372"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Структура файла [типы_содержимого].xml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ ms.locfileid: "74301241"
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types]. XML для установки пакета, но не устанавливает сам файл.  
   
 > [!NOTE]
-> Хотя этот раздел применим только к файлам [Content_Type]. XML, которые используются в пакетах VSIX, тип файла [Content_Types]. XML является частью стандарта *Open Packaging Conventions (OPC)* . Дополнительные сведения см. в статье [OPC: новый стандарт для упаковки данных](https://go.microsoft.com/fwlink/?LinkID=148207) на веб-сайте MSDN.  
+> Хотя этот раздел применим только к файлам [Content_Type]. XML, которые используются в пакетах VSIX, тип файла [Content_Types]. XML является частью стандарта *Open Packaging Conventions (OPC)* . Дополнительные сведения см. в статье [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx) на веб-сайте MSDN.  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
  В следующих разделах описывается корневой элемент, его атрибуты и дочерние элементы.  
   
-### <a name="root-element"></a>Корневой элемент  
+### <a name="root-element"></a>Элемент Root  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
@@ -45,7 +45,7 @@ ms.locfileid: "74301241"
   
 ### <a name="attribute-name-attribute"></a>{Имя атрибута} Версию  
   
-|                           значения                           |                Описание                |
+|                           {2&gt;Value&lt;2}                           |                Описание                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | Расположение схемы типов содержимого. |
   
@@ -68,16 +68,16 @@ ms.locfileid: "74301241"
   
 |Расширение|ContentType|  
 |---------------|-----------------|  
-|текстовые|text/plain|  
-|pkgdef|text/plain|  
+|txt|текст/обычный|  
+|pkgdef|текст/обычный|  
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
-|htm или HTML|Text/HTML|  
+|htm или HTML|text/html|  
 |RTF|приложение/RTF|  
 |pdf|приложение/PDF|  
-|файл|image/gif|  
+|gif|image/gif|  
 |JPG или JPEG|Image/JPG|  
-|-|изображение/TIFF|  
+|tiff|image/tiff|  
 |vsix|приложение/ZIP-файл|  
 |zip|приложение/ZIP-файл|  
 |dll|application/octet-stream|  
@@ -101,7 +101,7 @@ ms.locfileid: "74301241"
 </Types>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Анатомия пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: новый стандарт для упаковки данных](https://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx)

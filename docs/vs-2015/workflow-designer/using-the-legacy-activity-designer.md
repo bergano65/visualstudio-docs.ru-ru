@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a13aeeb3394ee6b8896376c0e7d520b90fb56fa6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302826"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846142"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Использование конструктора действия для прежних версий
 В данном разделе описано использование конструктора действий в средстве [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии. Используйте конструктор более ранней версии, если приложение должно ориентироваться на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -46,15 +46,15 @@ ms.locfileid: "74302826"
 ## <a name="configuring-an-activity"></a>Настройка действия
  Пока конструктор действия активен, для настройки свойств, перечисленных в следующей таблицы, можно использовать браузер свойств.
 
-|Свойство|Комментарии|
+|Идентификаторы|Comments|
 |--------------|--------------|
 |**Имя**|Имя действия.|
-|**Базовый класс**|Базовый класс от которого наследуется действие. Базовым классом по умолчанию является [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020). В окне **Свойства** щелкните **базовый класс** многоточие **[...]** , чтобы выбрать другой базовый класс в [диалоговом окне Обзор и выбор типа .NET (прежние версии)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
+|**Базовый класс**|Базовый класс от которого наследуется действие. Базовым классом по умолчанию является [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). В окне **Свойства** щелкните **базовый класс** многоточие **[...]** , чтобы выбрать другой базовый класс в [диалоговом окне Обзор и выбор типа .NET (прежние версии)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
 |**Описание**|Пользовательское описание действия.|
-|**Включено**|Установите значение **true** по умолчанию, чтобы включить выполнение и проверку действия. Задайте значение **false** , чтобы отключить выполнение и проверку действия. Сведения о выполнении и проверке действий см. в разделе [Разработка действий рабочего процесса](https://go.microsoft.com/fwlink?LinkID=65024).|
+|**Включено**|Установите значение **true** по умолчанию, чтобы включить выполнение и проверку действия. Задайте значение **false** , чтобы отключить выполнение и проверку действия. Сведения о выполнении и проверке действий см. в разделе [Разработка действий рабочего процесса](https://msdn2.microsoft.com/library/ms734413.aspx).|
 
 ## <a name="adding-child-activities"></a>Добавление дочерних действий
  Можно перетащить дочерние действия с панели элементов на разрабатываемое действие. Далее, используя браузер свойств, можно настроить каждое дочернее действие.
 
-## <a name="see-also"></a>См. также
- [Разработка действий рабочего процесса](https://go.microsoft.com/fwlink?LinkID=65024) [Создание настраиваемых действий](https://go.microsoft.com/fwlink?LinkID=65021) [устаревшие действия рабочих процессов](../workflow-designer/legacy-workflow-activities.md) [примеры](https://go.microsoft.com/fwlink?LinkID=65022) действий [: создание библиотеки действий рабочего процесса (устаревшая)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [с помощью устаревшей конструктор рабочих процессов](../workflow-designer/using-the-legacy-workflow-designer.md)
+## <a name="see-also"></a>См. также раздел
+ [Разработка действий рабочего процесса](https://msdn2.microsoft.com/library/ms734413.aspx) [Создание настраиваемых действий](https://msdn2.microsoft.com/library/bb675228.aspx) [устаревшие действия рабочих процессов](../workflow-designer/legacy-workflow-activities.md) [примеры](https://msdn2.microsoft.com/library/bb472471.aspx) действий [: создание библиотеки действий рабочего процесса (устаревшая)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [с помощью устаревшей конструктор рабочих процессов](../workflow-designer/using-the-legacy-workflow-designer.md)
