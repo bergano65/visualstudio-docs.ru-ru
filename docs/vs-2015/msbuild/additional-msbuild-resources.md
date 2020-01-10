@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6460d26ea7b7240cf54dfe3379ec75634bc5465d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298224"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847062"
 ---
 # <a name="additional-msbuild-resources"></a>Дополнительные ресурсы MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -615,12 +615,12 @@ ms.locfileid: "74298224"
  Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Эти статьи доступны на веб-сайте [базы знаний (результаты поиска MSBuild)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0).  
   
 ## <a name="community-forums"></a>Форумы сообщества  
- Форумы позволяют взаимодействовать с другими разработчиками, а также с сотрудниками корпорации Майкрософт. Если вы столкнулись с ошибкой и не можете найти решение, можно задать вопрос о ней на форуме. Можно также выполнить поиск по группам новостей, чтобы узнать, не публиковал ли кто-то другой материалы о подобной проблеме. Форум Visual Studio MSBuild доступен на веб сайте [форумов MSDN](https://go.microsoft.com/fwlink/?LinkId=48931).  
+ Форумы позволяют взаимодействовать с другими разработчиками, а также с сотрудниками корпорации Майкрософт. Если вы столкнулись с ошибкой и не можете найти решение, можно задать вопрос о ней на форуме. Можно также выполнить поиск по группам новостей, чтобы узнать, не публиковал ли кто-то другой материалы о подобной проблеме. Форум Visual Studio MSBuild доступен на веб сайте [форумов MSDN](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/).  
   
  Ресурсы сообщества [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] доступны на веб-сайте [Channel 9 MSBuild](https://channel9.msdn.com/).  
   
 ## <a name="product-support"></a>Поддержка продуктов  
- Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [справки и поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../ide/talk-to-us.md).  
+ Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [справки и поддержки Майкрософт](https://support.microsoft.com/). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../ide/talk-to-us.md).  
   
 ## <a name="see-also"></a>См. также  
  [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

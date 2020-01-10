@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298022"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851024"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Параллельная установка версий Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Эту версию Visual Studio можно установить на компьютер, на котором уже установлена более ранняя версия. В случае сбоя установки можно с помощью [средства сбора данных журнала](https://go.microsoft.com/fwlink/?LinkId=262077) собрать информацию о сбоях, чтобы самостоятельно найти причины неполадок.
+Эту версию Visual Studio можно установить на компьютер, на котором уже установлена более ранняя версия. В случае сбоя установки можно с помощью [средства сбора данных журнала](https://www.microsoft.com/download/details.aspx?id=12493) собрать информацию о сбоях, чтобы самостоятельно найти причины неполадок.
 
 > [!NOTE]
 > Версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] рекомендуется устанавливать в порядке их выпуска. Например, Visual Studio 2013 необходимо устанавливать до Visual Studio 2015.
@@ -36,7 +36,7 @@ ms.locfileid: "74298022"
 
 - В случае удаления версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с компьютера, на котором установлено более одной версии, сопоставления файлов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] будут удалены для всех версий. Изменить сопоставления файлов можно с помощью кнопки **Восстановить сопоставления файлов** на станице **Среда**, **Общее** диалогового окна [Параметры](../ide/reference/general-environment-options-dialog-box.md) .
 
-- Visual Studio не обновляет расширения автоматически, так как не все расширения совместимы. Необходимо переустановить расширения из [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) или с помощью средств издателя программного обеспечения.
+- Visual Studio не обновляет расширения автоматически, так как не все расширения совместимы. Необходимо переустановить расширения из [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/) или с помощью средств издателя программного обеспечения.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Версии платформы .NET Framework и установка нескольких версий на один компьютер
 

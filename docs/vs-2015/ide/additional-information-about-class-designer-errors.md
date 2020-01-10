@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300285"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852210"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Дополнительные сведения об ошибках конструктора классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "74300285"
 
  [Работа с визуальным C++ кодом (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md) включает сведения об устранении неполадок отображения C++ на схеме классов.
 
- [Форум по конструктору классов Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160754) Форум предназначен для вопросов по работе с конструктором классов.
+ [Форум по конструктору классов Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) Форум предназначен для вопросов по работе с конструктором классов.
 
 ## <a name="see-also"></a>См. также
  [Разработка и просмотр классов и типов](../ide/designing-and-viewing-classes-and-types.md)
