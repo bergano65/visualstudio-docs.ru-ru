@@ -3,17 +3,17 @@ title: Сочетания клавиш для клавиатуры и мыши
 description: Эта статья содержит советы по вызову команд Visual Studio с помощью клавиатуры и мыши, которые помогут вам повысить производительность.
 ms.date: 11/02/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666747"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585734"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Рекомендации по сочетаниям клавиш в Visual Studio
 
@@ -69,10 +69,10 @@ ms.locfileid: "72666747"
 |Задача|Сочетание клавиш|
 |-|-|
 |Перейти ко всем|**CTRL**+**T**|
-|Перейти к последним файлам|**CTRL** + **T**, **R**|
-|Несколько точек вставки|**CTRL** + **ALT** + **нажатие**|
+|Перейти к последним файлам|**CTRL**+**T**, **R**|
+|Несколько точек вставки|**CTRL**+**ALT**+**нажатие**|
 |Добавление совпадений выбранного фрагмента в нескольких местах|**Shift**+**Alt**+**Ins**|
-|Форматировать документ|**CTRL** + **K**, **D**|
+|Форматировать документ|**CTRL**+**K**, **D**|
 |Режим предложений IntelliSense|**CTRL**+**ALT**+**ПРОБЕЛ** (переключатель)|
 |Принудительно показывать IntelliSense|**CTRL**+**J**|
 |Быстрые действия|**CTRL**+ **.**|

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661652"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595713"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для Devenv
 
@@ -62,7 +62,7 @@ Devenv позволяет устанавливать различные пара
 
 Перечисленные ниже параметры командной строки отображают интегрированную среду разработки и выполняют описанные задачи.
 
-|Параметр командной строки|ОПИСАНИЕ|
+|Параметр командной строки|Описание|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Запускает среду IDE и выполняет указанную команду.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Загружает исполняемый файл C++ под управлением отладчика. Этот параметр недоступен для исполняемых файлов Visual Basic или C#. Дополнительные сведения см. в разделе [Автоматический запуск процесса в отладчике](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
@@ -79,7 +79,7 @@ Devenv позволяет устанавливать различные пара
 
 Следующие параметры командной строки не отображают интегрированную среду разработки.
 
-|Параметр командной строки|ОПИСАНИЕ|
+|Параметр командной строки|Описание|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|Отображает справку по параметрам `devenv` в **окне командной строки**.<br /><br /> У этого параметра нет аргументов.|
 |[/Build](build-devenv-exe.md)|Выполняет сборку указанного решения или проекта согласно конфигурации заданного решения.<br /><br /> `devenv mysln.sln /build`|

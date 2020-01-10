@@ -3,20 +3,20 @@ title: Распространенные быстрые действия
 description: Наиболее популярные быстрые действия для C# и Visual Basic, включая исправление опечаток в ключевых словах или символах, разрешение конфликтов слияния, удаление необходимых импортов, создание типов, введение локальных переменных и т. д.
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652251"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585526"
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
 
@@ -30,7 +30,7 @@ ms.locfileid: "72652251"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Исправление опечаток в символах или ключевых словах
 
-Если вы неправильно вводите тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправляет его. В меню лампочки отобразится следующий текст: **Изменить "\<слово с опечаткой>" на "\<правильное слово>"** . Например:
+Если вы неправильно вводите тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправляет его. В меню лампочки отобразится следующий текст: **Изменить "\<слово с опечаткой>" на "\<правильное слово>"** . Пример:
 
 ```csharp
 // Before
