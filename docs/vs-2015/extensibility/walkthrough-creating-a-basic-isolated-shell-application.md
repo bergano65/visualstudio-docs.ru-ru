@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291273"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850351"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Пошаговое руководство. Создание базового приложения изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +163,7 @@ ms.locfileid: "74291273"
 6. Перестройте решение и начните отладку изолированной оболочки. Окно "Справка/о программе" должно иметь приблизительно квадрат.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Перед развертыванием приложения изолированной оболочки  
- Приложение изолированной оболочки можно установить на любой компьютер с распространяемым пакетом Visual Studio Shell (изолированной). Дополнительные сведения о распространяемом пакете см. на веб-сайте [загрузки Visual Studio Extensibility](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Приложение изолированной оболочки можно установить на любой компьютер с распространяемым пакетом Visual Studio Shell (изолированной). Дополнительные сведения о распространяемом пакете см. на веб-сайте [загрузки Visual Studio Extensibility](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="deploying-the-isolated-shell-application"></a>Развертывание приложения изолированной оболочки  
  Чтобы развернуть приложение изолированной оболочки на целевом компьютере, создайте проект установки. Необходимо указать следующие элементы:  

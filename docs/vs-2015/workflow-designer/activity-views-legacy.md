@@ -13,29 +13,29 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9b65a46d5d0061eeaf3ad707affea1423e5fca5d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297533"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851480"
 ---
 # <a name="activity-views-legacy"></a>Представления действий (для прежних версий)
 Для многих предоставляемых средой [!INCLUDE[wf](../includes/wf-md.md)] действий, из которых составляются рабочие процессы, в средстве [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий доступно несколько представлений конструкторов. При перетаскивании конструктора действий из **области элементов** в область конструктора, а затем при каждом выборе действия можно переключаться между различными представлениями конструктора, используя меню **рабочего процесса** или щелкнув правой кнопкой мыши выбранное действие. Также при перемещении указателя над именем выбранного действия, появляется раскрывающийся набор вкладок, который можно использовать для переключения между различными представлениями.
 
- Каждое действие имеет по крайней мере одно представление; Это представление по умолчанию, отображаемое при перетаскивании конструктора действий из **панели элементов** в область конструктора. Это представление действия по умолчанию доступно в виде параметра **View [тип действия]** в меню и на вкладке, например в поле **параллельное**представление. Большая часть этих действий имеет дополнительные представления, различные действия могут иметь различные представления. Например, действие [TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093) имеет представление компенсации, а действие [евенсандлингскопеактивити](https://go.microsoft.com/fwlink?LinkID=65030) — представление событий. Многие из действий, поступающих с Windows Workflow Foundation, имеют **обработчики просмотра отмены** и представлений **ошибок View** , чтобы просмотреть [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) и [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) , связанные с ними.
+ Каждое действие имеет по крайней мере одно представление; Это представление по умолчанию, отображаемое при перетаскивании конструктора действий из **панели элементов** в область конструктора. Это представление действия по умолчанию доступно в виде параметра **View [тип действия]** в меню и на вкладке, например в поле **параллельное**представление. Большая часть этих действий имеет дополнительные представления, различные действия могут иметь различные представления. Например, действие [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx) имеет представление компенсации, а действие [евенсандлингскопеактивити](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx) — представление событий. Многие из действий, поступающих с Windows Workflow Foundation, имеют **обработчики просмотра отмены** и представлений **ошибок View** , чтобы просмотреть [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) и [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) , связанные с ними.
 
  В следующей таблице перечислены имена и описание каждого представления.
 
 |Параметры меню/вкладок|Описание|
 |----------------------|-----------------|
 |**View [тип действия]**|Выберите эту команду меню (вкладки) для просмотра графического представления по умолчанию выбранного действия.|
-|**Просмотр обработчика отмены**|Выберите это меню или режим вкладки, чтобы просмотреть [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) , связанный с выбранным действием.|
-|**Просмотр обработчика ошибок**|Выберите это меню или режим вкладки, чтобы просмотреть [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) , связанный с выбранным действием.|
-|**Просмотр обработчика компенсаций**|Выберите это меню или режим вкладки, чтобы просмотреть [CompensationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65053) , связанный с выбранным [TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093).|
-|**Просмотр обработчика событий**|Выберите это меню или режим вкладки, чтобы просмотреть [евенсандлерсактивити](https://go.microsoft.com/fwlink?LinkID=65018) , связанный с выбранным [евенсандлингскопеактивити](https://go.microsoft.com/fwlink?LinkID=65030).|
+|**Просмотр обработчика отмены**|Выберите это меню или режим вкладки, чтобы просмотреть [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) , связанный с выбранным действием.|
+|**Просмотр обработчика ошибок**|Выберите это меню или режим вкладки, чтобы просмотреть [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) , связанный с выбранным действием.|
+|**Просмотр обработчика компенсаций**|Выберите это меню или режим вкладки, чтобы просмотреть [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) , связанный с выбранным [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx).|
+|**Просмотр обработчика событий**|Выберите это меню или режим вкладки, чтобы просмотреть [евенсандлерсактивити](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) , связанный с выбранным [евенсандлингскопеактивити](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx).|
 
  Сведения о схожих представлениях см. в разделе [последовательные представления рабочего процесса (прежние версии)](../workflow-designer/sequential-workflow-views-legacy.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  Устаревшие представления рабочего процесса с последовательными [действиями рабочих процессов](../workflow-designer/legacy-workflow-activities.md) [(прежние версии)](../workflow-designer/sequential-workflow-views-legacy.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a80aef71271df0a1353dfd73898dbe8fcd7007c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300925"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843877"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Разработка приложений рабочих процессов, предназначенных для платформы .NET 3.0 или .NET 3.5
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] предоставляет [!INCLUDE[wfd1](../includes/wfd1-md.md)] для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], предназначенных для [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Конструктор использует привычный пользовательский интерфейс [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для графического конструирования и отладки приложений рабочих процессов.
@@ -29,4 +29,4 @@ ms.locfileid: "74300925"
  [Отладка рабочих процессов прежних версий](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Связанные разделы
- [Windows Workflow Foundationое программное руководством](https://go.microsoft.com/fwlink?LinkID=65012)
+ [Windows Workflow Foundationое программное руководством](https://msdn2.microsoft.com/library/bb628474.aspx)

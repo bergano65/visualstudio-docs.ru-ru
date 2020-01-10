@@ -9,14 +9,14 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 66988fa88ae347a2db08bf2f6d1b79ba3bcd80b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299911"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851324"
 ---
-# <a name="tutorial-1-create-a-picture-viewer"></a>Учебное руководство 1. Создание приложения для просмотра рисунков
+# <a name="tutorial-1-create-a-picture-viewer"></a>Учебник 1. Создание приложения для просмотра рисунков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом руководстве выполняется создание программы, которая загружает изображение из файла и отображает его в окне. Изучается процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Выполняется настройка свойств элементов управления. Изучается использование контейнеров для согласованного изменения размеров формы. Также начинается создание кода. Вы научитесь:
@@ -39,7 +39,7 @@ ms.locfileid: "74299911"
 
   ![Изображение результата, создаваемого в этом учебнике](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Изображение результата, создаваемого в этом учебнике
 
-  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этого раздела см [. раздел практические руководства. Создание средства просмотра изображений в Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) или [инструкции. Создание средства просмотра изображений в C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
+  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этого раздела см [. раздел практические руководства. Создание средства просмотра изображений в Visual Basic?](https://msdn.microsoft.com/vstudio/gg315352) или [инструкции. Создание средства просмотра изображений в C#?](https://msdn.microsoft.com/vcsharp/gg278960.aspx).
 
 > [!NOTE]
 > Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
@@ -50,7 +50,7 @@ ms.locfileid: "74299911"
 
 ## <a name="related-topics"></a>Связанные разделы
 
-|Название|Описание|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начало разработки программы с создания проекта приложения Windows Forms.|
 |[Шаг 2. Запуск программы](../ide/step-2-run-your-program.md)|Запуск программы приложения Windows Forms, которая была создана на предыдущем шаге.|

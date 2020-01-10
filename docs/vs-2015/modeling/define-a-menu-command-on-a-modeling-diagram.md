@@ -11,17 +11,17 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299265"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850459"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Определение команды меню на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно определить дополнительные пункты контекстных меню схемы UML. Вы можете управлять отображением и доступностью команды в контекстном меню любого элемента на схеме, а также написать код, который запускается при выборе пункта меню пользователем. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) и предоставить их другим пользователям Visual Studio.
+В Visual Studio можно определить дополнительные пункты контекстных меню схемы UML. Вы можете управлять отображением и доступностью команды в контекстном меню любого элемента на схеме, а также написать код, который запускается при выборе пункта меню пользователем. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) и предоставить их другим пользователям Visual Studio.
 
 ## <a name="requirements"></a>Требования
  См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -63,7 +63,7 @@ ms.locfileid: "74299265"
 
    4. Укажите имя и расположение проекта и нажмите кнопку «ОК».
 
-2. Добавьте в проект указанные ниже ссылки.
+2. Добавьте в проект следующие ссылки:
 
    |                                                                                                    Справочные сведения                                                                                                    |                                                                                                  Возможности                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -263,13 +263,13 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 #### <a name="to-uninstall-an-extension"></a>Удаление расширения
 
-1. В меню **Сервис** щелкните пункт **Расширения и обновления**.
+1. В меню **Сервис** щелкните **Расширения и обновления**.
 
 2. Разверните узел **Установленные расширения**.
 
 3. Выберите расширение и щелкните **Удалить**.
 
-   Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
+   В редких случаях не удается загрузить неисправное расширение, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
 
    *% LocalAppData%* **\локал\микрософт\висуалстудио\\[версия] \екстенсионс**
 
@@ -362,5 +362,5 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>См. также
- [Определение и установка расширения моделирования расширение](../modeling/define-and-install-a-modeling-extension.md) [моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) определение [ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [изменить UML-схемы ПОследовательностей с помощью программирования API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [с](../modeling/programming-with-the-uml-api.md) примером "API UML" [для выровняйте фигуры на схеме UML](https://go.microsoft.com/fwlink/?LinkID=213809)
+## <a name="see-also"></a>См. также раздел
+ [Определение и установка расширения моделирования расширение](../modeling/define-and-install-a-modeling-extension.md) [моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) определение [ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [изменить UML-схемы ПОследовательностей с помощью программирования API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [с](../modeling/programming-with-the-uml-api.md) примером "API UML" [для выровняйте фигуры на схеме UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

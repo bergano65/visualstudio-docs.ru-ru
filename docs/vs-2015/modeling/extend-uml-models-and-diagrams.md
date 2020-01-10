@@ -12,14 +12,14 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301048"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849804"
 ---
-# <a name="extend-uml-models-and-diagrams"></a>Extend UML models and diagrams
+# <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе приведены сводные сведения о способах расширения инструментов моделирования UML, входящих в состав Visual Studio. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -30,7 +30,7 @@ ms.locfileid: "74301048"
 
  Команда специалистов по инструментам Fabrikam вносит ряд усовершенствований, облегчающих работу команд разработчиков. В следующих разделах описываются разные виды расширений, которые вы можете определить. Несколько таких методов можно объединить в одно расширение Visual Studio.
 
- Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[серия практических руководств MSDN: средства и расширяемость UML](https://go.microsoft.com/fwlink/?LinkId=214467).
+ Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[серия практических руководств MSDN: средства и расширяемость UML](https://msdn.microsoft.com/vstudio/ff859492).
 
 ## <a name="Requirements"></a> Требования
 
@@ -106,17 +106,17 @@ ms.locfileid: "74301048"
 
  Дополнительные сведения см. [в разделе Чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="domain-specific-languages"></a>Предметно-ориентированные языки
+## <a name="domain-specific-languages"></a>Доменные языки
  В случаях, когда часто используется определенный тип модели, может оказаться полезным создать предметно-ориентированный язык. Он позволяет более точно удовлетворить потребности вашего бизнеса по сравнению с моделью UML, но требует больше усилий на сборку и поддержку. Дополнительные сведения см. в статье [моделирование пакета SDK для Visual Studio — языки, относящиеся к домену](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PЛайвидео ") - [канал 9: UML с помощью Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") - [канал 9: UML с помощью Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Создание моделей для](../modeling/create-models-for-your-app.md) [справочника по API приложений для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

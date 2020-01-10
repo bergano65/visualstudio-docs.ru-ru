@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300905"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850679"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете сделать расширения конструктором, который используется для редактирования определений DSL. Типы расширений, которые можно сделать, включают добавление команд меню, добавление обработчиков для жестов перетаскивания и двойных щелчков, а также правила, активируемые при изменении определенных типов значений или связей. Расширения можно упаковать как расширение интеграции Visual Studio (VSIX) и распространить среди других пользователей.
 
- Пример кода и дополнительные сведения об этой функции см. на [веб-сайте SDK визуализации и моделирования Visual Studio (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
+ Пример кода и дополнительные сведения об этой функции см. на [веб-сайте SDK визуализации и моделирования Visual Studio (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Настройка решения
  Настройте проект, содержащий код вашего расширения, и проект VSIX, который экспортирует проект. Решение может содержать другие проекты, включенные в один и тот же VSIX.
@@ -64,14 +64,14 @@ ms.locfileid: "74300905"
 
      System.Drawing.Design
 
-     System.Windows.Forms
+     System.Windows.Forms.
 
 ## <a name="testing-and-deployment"></a>Тестирование и развертывание
  Чтобы протестировать любое из расширений в этом разделе, выполните сборку и запустите решение. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . В этом экземпляре откройте решение DSL. Измените схему DslDefinition. Поведение расширения можно увидеть.
 
  Чтобы развернуть расширения в основной [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а также на другие компьютеры, выполните следующие действия.
 
-1. Найдите файл установки VSIX в проекте VSIX в папке bin\\*\\\*. VSIX.
+1. Найдите VSIX-файл установки, в проект VSIX в bin\\*\*\\\*.vsix
 
 2. Скопируйте этот файл на конечный компьютер, а затем в проводнике Windows (или в проводнике) дважды щелкните его.
 

@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ef6ae6b042b1616997821febe156ef5cac3b7f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299710"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850370"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "74299710"
  Справочник по API пакета SDK для Visual Studio можно найти в [справочнике по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  
   
 ## <a name="visual-studio-sdk-samples"></a>Примеры пакета SDK для Visual Studio  
- Примеры Open Source для расширений VS SDK можно найти на сайте GitHub в [примерах Visual Studio](https://aka.ms/vs2015sdksamples). Этот репозиторий GitHub содержит примеры, иллюстрирующие различные Расширяемые функции в Visual Studio.  
+ Примеры Open Source для расширений VS SDK можно найти на сайте GitHub в [примерах Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Этот репозиторий GitHub содержит примеры, иллюстрирующие различные Расширяемые функции в Visual Studio.  
   
 ## <a name="other-visual-studio-sdk-resources"></a>Другие ресурсы пакета SDK для Visual Studio  
  Если у вас есть вопросы о VSSDK или хотите поделиться опытом разработки расширений, вы можете использовать [форум по расширению Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) или [чат екстендвс Group Chat](https://gitter.im/Microsoft/extendvs).  
@@ -75,7 +75,7 @@ ms.locfileid: "74299710"
   
 - [Расширение Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Как перенести проекты расширяемости в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   

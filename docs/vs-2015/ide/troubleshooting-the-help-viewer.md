@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299896"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851070"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Устранение неполадок средства просмотра справки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ ms.locfileid: "74299896"
 ## <a name="additional-resources"></a>Дополнительные ресурсы
  Вы можете получить дополнительные сведения и предоставить отзыв об окне справки с помощью следующих ресурсов:
 
-- Чтобы предоставить отзыв, воспользуйтесь страницей [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) на веб-сайте Майкрософт или отправьте сообщение электронной почты на адрес [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Чтобы предоставить отзыв, воспользуйтесь страницей [Microsoft Connect](https://connect.microsoft.com/) на веб-сайте Майкрософт или отправьте сообщение электронной почты на адрес [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Дополнительные сведения см. на форуме и [справочной документации для разработчиков](https://go.microsoft.com/fwlink/?LinkId=232741) и [в](https://go.microsoft.com/fwlink/?LinkId=232743) блоге помощника.
+- Дополнительные сведения см. на форуме и [справочной документации для разработчиков](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) и [в](https://blogs.msdn.com/b/thehelpguy/) блоге помощника.
 
-## <a name="see-also"></a>См. также
- [Руководство администратора Help Viewer 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)
+## <a name="see-also"></a>См. также раздел
+ [Руководство администратора Help Viewer 2.1](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

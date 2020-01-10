@@ -14,14 +14,14 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298327"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850521"
 ---
-# <a name="debug-xaml-in-blend"></a>Отладка XAML в Blend
+# <a name="debug-xaml-in-blend"></a>выполнять отладку XAML в Blend.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно использовать инструменты в [!INCLUDE[blend_first](../includes/blend-first-md.md)] для отладки XAML в вашем приложении. При сборке проекта все ошибки отображаются на панели **Результаты**. Для поиска разметки, относящейся к ошибке, дважды щелкните ошибку. Если для работы требуется больше места, можно скрыть панель **Результаты**, нажав клавишу F12.  
@@ -42,7 +42,7 @@ ms.locfileid: "74298327"
   
 - Элемент XAML находится в недопустимом месте.  
   
-  Дополнительные сведения об общем синтаксисе XAML см. в разделе [Руководство по синтаксису XAML](https://go.microsoft.com/fwlink/?LinkId=329942).  
+  Дополнительные сведения об общем синтаксисе XAML см. в разделе [Руководство по синтаксису XAML](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx).  
   
   Также можно обнаруживать и устранять простые синтаксические ошибки кода программной части, ошибки компиляции и ошибки времени выполнения в [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Однако обнаружить и исправить ошибки кода программной части, возможно, легче в Visual Studio.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "74298327"
 ## <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio  
  Для облегчения отладки кода в приложении можно открывать проекты [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] в Visual Studio. Чтобы открыть проект [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] в Visual Studio, щелкните проект правой кнопкой мыши на панели **Проекты** и выберите команду **Изменить в Visual Studio**. По завершении сеанса отладки в Visual Studio нажмите Ctrl+Shift+S для сохранения всех изменений, а затем переключитесь обратно в [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Вам будет предложено перезагрузить проект. Нажмите кнопку **Да для всех**, чтобы продолжить работу в [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Дополнительные сведения об отладке приложения см. [в разделе Отладка приложений для Магазина Windows в Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ Дополнительные сведения об отладке приложения см. [в разделе Отладка приложений для Магазина Windows в Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Получение справки  
- Если вам нужна дополнительная помощь в отладке [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] приложения, можно найти в [форумах сообщества приложений Магазина Windows](https://go.microsoft.com/fwlink/?LinkId=280308) сообщения, связанные с проблемой, или отправить вопрос.
+ Если вам нужна дополнительная помощь в отладке [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] приложения, можно найти в [форумах сообщества приложений Магазина Windows](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) сообщения, связанные с проблемой, или отправить вопрос.

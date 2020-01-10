@@ -13,38 +13,38 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302848"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846336"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор условий для правила» (для прежних версий)
 В этом разделе описывается использование диалогового окна **Редактор условий правил** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Условия декларативного правила создаются и изменяются с помощью диалогового окна **Редактор условий правил** . Эти условия правила представляются как свойства в следующих готовых действиях Windows Workflow Foundation:
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [статемачиневоркфловактивити](https://go.microsoft.com/fwlink?LinkID=65045)
+- [статемачиневоркфловактивити](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
   Доступ к диалоговому окну **Редактор условий правил** можно получить с помощью [диалогового окна Выбор условия (прежних версий)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
   В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна **Редактор условий правил** .
 
-|Элемент пользовательского интерфейса|Описание|
+|Элемент интерфейса|Описание|
 |----------------|-----------------|
 |**Выполняет**|Введите выражение для условия правила.|
-|**Хорошо**|Нажмите для сохранения условия правила.|
+|**OK**|Нажмите для сохранения условия правила.|
 
 ## <a name="entering-condition-expressions"></a>Введите выражения условий.
  Выражения условий вводятся как текст. Это можно ввести **.** в редактор для ссылки на поля, свойства и методы, используемые в рабочем процессе, с помощью меню, похожего на IntelliSense. Либо можно прямо ввести имя члена рабочего процесса. К условию можно добавить логические операторы, например AND ("И"), OR ("ИЛИ") и NOT ("НЕ"). Также можно добавлять предикаты. Предикат - это бинарный оператор и два операнда. Поддерживаются бинарные операторы: **==** , **>** , **\<** , **>=** и **<=** . Поддерживаемые операнды - константа арифметическая функция и члены с соответствующей областью действия.
@@ -79,7 +79,7 @@ ms.locfileid: "74302848"
 
   this.i == 1U (вычисляется как unsigned int)
 
-  Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009).
+  Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>См. также
- [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [SELECT условие (устаревший)](../workflow-designer/select-condition-dialog-box-legacy.md) [Использование условий в рабочих процессах](https://go.microsoft.com/fwlink?LinkID=65009) [устаревший конструктор для Windows Workflow Foundation справки по пользовательскому интерфейсу](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+## <a name="see-also"></a>См. также раздел
+ [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) [SELECT условие (устаревший)](../workflow-designer/select-condition-dialog-box-legacy.md) [Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx) [устаревший конструктор для Windows Workflow Foundation справки по пользовательскому интерфейсу](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

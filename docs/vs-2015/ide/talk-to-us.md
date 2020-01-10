@@ -11,14 +11,14 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299934"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851064"
 ---
-# <a name="talk-to-us"></a>Talk to Us
+# <a name="talk-to-us"></a>Обращайтесь к нам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [разговор с нами](https://docs.microsoft.com/visualstudio/ide/feedback-options).
@@ -38,17 +38,17 @@ ms.locfileid: "74299934"
  В предварительных версиях Visual Studio есть пункт меню **Оценить продукт** , который позволяет отправить отзыв о качестве сборки, которую вы используете. Он будет отсутствовать в выпущенных версиях продукта.
 
 ## <a name="i-need-help"></a>Мне нужна помощь!
- Чтобы получить помощь через Интернет, обратитесь на сайт [службы поддержки Майкрософт](https://go.microsoft.com/fwlink/?LinkID=99019) .
+ Чтобы получить помощь через Интернет, обратитесь на сайт [службы поддержки Майкрософт](https://support.microsoft.com/) .
 
  Объем услуг поддержки за пределами США и Канады может отличаться. Список контактов по регионам см. на странице [Microsoft Worldwide Sites](https://www.microsoft.com/worldwide/).
 
  Дополнительные варианты см. на странице [Общие сведения о поддержке](https://visualstudio.microsoft.com/support/).
 
- Для более крупных организаций, которым требуется управляемая поддержка непосредственно от корпорации Майкрософт, контракты доступны через различные предложения Premier Support. Более подробную информацию см. в разделе [Microsoft Services Premier Support](https://go.microsoft.com/fwlink/?LinkId=258223).
+ Для более крупных организаций, которым требуется управляемая поддержка непосредственно от корпорации Майкрософт, контракты доступны через различные предложения Premier Support. Более подробную информацию см. в разделе [Microsoft Services Premier Support](https://www.microsoft.com/industry/services/support).
 
  Если продукт поставляется установленным на новые компьютер или устройство, техническую поддержку для этого программного обеспечения обеспечивает производитель оборудования. Для получения поддержки обратитесь непосредственно к производителю.
 
  Стоимость услуг, условия и положения, регламентирующие пользование службами поддержки корпорации Майкрософт могут изменяться с течением времени. Цены и условия могут быть изменены без предварительного уведомления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Как сообщить о проблеме с Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

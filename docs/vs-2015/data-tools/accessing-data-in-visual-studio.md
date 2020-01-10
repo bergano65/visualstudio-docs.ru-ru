@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299437"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846668"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ ms.locfileid: "74299437"
  Многие поставщики баз данных и сторонние производители поддерживают интеграцию с Visual Studio с помощью пакетов NuGet. Вы можете исследовать предложения в nuget.org или с помощью диспетчера пакетов NuGet в Visual Studio (**средства** > **диспетчер пакетов NuGet** > **управления пакетами NuGet для решения**). Другие продукты баз данных интегрируются с Visual Studio как расширение.   Вы можете просмотреть эти предложения в коллекции Visual Studio, перейдя к **средствам** > **расширения и обновления** , а затем выбрав пункт в **сети** в левой области диалогового окна.  Дополнительные сведения см. в разделе [Установка систем баз данных, средств и примеров](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> Расширенная поддержка для SQL Server 2005 закончилась 12 апреля 2016.   Нет никакой гарантии, что средства работы с данными в Visual Studio 2015 и более поздних версий будут продолжать работать с SQL Server 2005 после этой даты. Дополнительные сведения см. в [объявлении об окончании поддержки для SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Расширенная поддержка SQL Server 2005 закончилась 12 апреля 2016 г.   Нет никакой гарантии, что средства работы с данными в Visual Studio 2015 и более поздних версий будут продолжать работать с SQL Server 2005 после этой даты. Дополнительные сведения см. в [объявлении об окончании поддержки для SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
-### <a name="net-languages"></a>Языки .NET
+### <a name="net-languages"></a>Языки платформы .NET
  Весь доступ к данным .NET, включая в .NET Core, основан на ADO.NET, наборе классов, определяющих интерфейс для доступа к любому типу источника данных — реляционному и нереляционному. Visual Studio содержит несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, управления данными и предоставления данных пользователю. В документации в этом разделе описывается использование этих средств. Вы также можете программировать непосредственно для командных объектов ADO.NET. Дополнительные сведения о непосредственном вызове API-интерфейсов ADO.NET см. в разделе [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) библиотеки MSDN.
 
  Документацию по доступу к данным, специально связанная с ASP.NET, см. в разделе [Работа с данными](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/) на сайте ASP.NET. Руководство по использованию Entity Framework с ASP.NET MVC см. в разделе [Начало работы с Entity Framework 6 Code First с помощью MVC 5](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
@@ -115,7 +115,7 @@ ms.locfileid: "74299437"
 ### <a name="python"></a>Python
  Установите [Инструменты Python для Visual Studio](http://microsoft.github.io/PTVS/) вместе с предпочтительной платформой Python для создания приложений CPython или IronPython (.NET).  На веб-сайте Инструменты Python для Visual Studio есть несколько руководств по подключению к данным, включая [Django и базу данных SQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django и MySQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) , а также на [MongoDB в Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>В данном разделе
  [Установка систем баз данных, средств и примеров](../data-tools/installing-database-systems-tools-and-samples.md) Описывает, как получить продукты базы данных и расширения или драйверы Visual Studio, которые их поддерживают, а также где можно найти образцы баз данных для экспериментов и обучения.
 
  [Visual Studio Data Tools для .NET](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Описывает использование окон инструментов Visual Studio для подключения к источникам данных, создания или Entity Framework моделей, а также привязки данных к элементам управления пользовательского интерфейса.
@@ -133,7 +133,7 @@ ms.locfileid: "74299437"
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) Описывает создание приложений для работы с данными, которые позволяют разработчикам программировать на основе концептуальной модели, а не непосредственно в реляционной базе данных.
 
- [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Описывает использование [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](https://go.microsoft.com/fwlink/?LinkID=182204).
+ [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Описывает использование [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] для развертывания служб данных в Интернете или интрасети, которые реализуют [Open Data Protocol (OData)](https://www.odata.org/).
 
  [Данные в решениях Office](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Содержит ссылки на разделы, в которых объясняется, как работают данные в решениях Office. Сюда входят сведения о программировании на основе схемы, кэшировании данных и доступе к данным на стороне сервера.
 

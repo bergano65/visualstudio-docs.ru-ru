@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297913"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850751"
 ---
 # <a name="network-usage"></a>Использование сети
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "74297913"
 |**Заголовки**|Сведения о заголовках запроса события.|  
 |**Текст**|Полезные данные запросов и ответов.|  
 |**Параметры**|Имена параметров строки запроса и их значения.|  
-|**Файлы "cookie"**|Данные cookie в запросе и ответе.|  
+|**Файлы cookie**|Данные cookie в запросе и ответе.|  
 |**Время**|Диаграмма этапов при получении выбранных ресурсов.|  
   
  В строке **сводки** средства "Сеть" показано число отображенных сетевых операций, объем переданных данных, время их загрузки и число видимых ошибок (запросы с ответами 4xx или 5xx).  
@@ -73,7 +73,7 @@ ms.locfileid: "74297913"
   
 3. Ответ кнопки «Качественная печать» (на вкладке «Текст») поможет проанализировать полезные данные ответов JSON, XML, HTML, CSS, JavaScript и TypeScript и повысит удобочитаемость содержимого.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Блог о Visual Studio. Введение в инспектор сети Visual Studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Блог о Visual Studio. Введение в инспектор сети Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Channel 9 Video: VS Diagnostics tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: Средства диагностики VS — новый профилировщик сети)

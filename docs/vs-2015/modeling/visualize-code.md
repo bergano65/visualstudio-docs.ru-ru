@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301320"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851344"
 ---
 # <a name="visualize-code"></a>Визуализация кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Пример.
+Вы можете использовать средства визуализации и моделирования в Visual Studio, чтобы анализировать существующий код и описать приложение. Это позволяет наглядно изучить, как изменения могут повлиять на код, а также оценить работы и риски, возникающие в результате этих изменений. Например:
 
 - Чтобы понять связи в коде, сопоставьте их визуально.
 
@@ -37,7 +37,7 @@ ms.locfileid: "74301320"
 
   Чтобы узнать, какие версии Visual Studio поддерживают каждую функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="what-do-you-want-to-do"></a>Выберите действие
+## <a name="what-do-you-want-to-do"></a>Что необходимо сделать?
 
 |||
 |-|-|
@@ -50,9 +50,9 @@ ms.locfileid: "74301320"
 
 |**Категория**|**Links**|
 |------------------|---------------|
-|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Технические статьи и журналы**|[Форум MSDN по архитектуре](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Технические статьи и журналы**|[Форум MSDN по архитектуре](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Сценарий. изменение структуры с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [архитектура и архитектурное моделирование](../modeling/analyze-and-model-your-architecture.md) [Создание моделей для вашей модели приложения](../modeling/create-models-for-your-app.md) [требования пользователя](../modeling/model-user-requirements.md) [модель модели](../modeling/model-your-app-s-architecture.md) приложения [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299407"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850144"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +49,11 @@ ms.locfileid: "74299407"
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Доступ к запущенному экземпляру SQL Server или SQL Server Express с подключенной учебной базой данных AdventureWorksLT. Базу данных AdventureWorksLT можно загрузить с [веб-сайта CodePlex](https://codeplex.com/SqlServerSamples).
 
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
-- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- Службы данных WCF. Дополнительные сведения см. в этом [обзоре](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - Модели данных в [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].
 
@@ -76,7 +76,7 @@ ms.locfileid: "74299407"
 
 4. Выберите шаблон проекта **Веб-приложение ASP.NET**.
 
-5. В поле **имя** введите `AdventureWorksService` и нажмите кнопку **ОК**.
+5. В поле **Имя** введите `AdventureWorksService`, а затем нажмите кнопку **ОК**.
 
      Visual Studio создает проект `AdventureWorksService`.
 
@@ -125,7 +125,7 @@ ms.locfileid: "74299407"
 ## <a name="configure-the-service"></a>Настройка службы
  Вам необходимо настроить службу на использование созданной модели EDM.
 
-#### <a name="to-configure-the-service"></a>Порядок настройки службы
+#### <a name="to-configure-the-service"></a>Настройка службы
 
 1. В файле кода `AdventureWorks.svc` замените объявление класса `AdventureWorksService` следующим кодом.
 
@@ -196,7 +196,7 @@ ms.locfileid: "74299407"
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. Выполните построение проекта.
+3. Постройте проект.
 
 ## <a name="create-the-data-bound-controls"></a>Создание элементов управления с привязкой к данным
  Создайте элементы управления, отображающие записи клиентов, перетащив узел `SalesOrderHeaders` из окна **Источники данных** в конструктор.
@@ -315,12 +315,12 @@ ms.locfileid: "74299407"
 
 8. Закройте приложение.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  После прохождения пошагового руководства вы можете выполнить следующие задачи.
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для привязки элементов управления WPF к другим типам источников данных. Дополнительные сведения см. в разделе [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) привязка элементов управления WPF [к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Привязка элементов управления WPF к](../data-tools/bind-wpf-controls-to-a-dataset.md) [обзору](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) набора данных [Entity Framework обзор](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [конструкторов WPF и Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) обзор [привязки данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

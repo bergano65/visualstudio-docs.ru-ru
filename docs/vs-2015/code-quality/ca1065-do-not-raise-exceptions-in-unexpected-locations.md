@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2df740abf25344253627b614fdbd80dce86c7bfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295944"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847474"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: не вызывайте исключения в непредвиденных местах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74295944"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Метод вызывает исключение, хотя не должен этого делать.
 
 ## <a name="rule-description"></a>Описание правила
@@ -89,7 +89,7 @@ ms.locfileid: "74295944"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [м:иекуатабле.екуалс](https://go.microsoft.com/fwlink/?LinkId=113472)
+- [м:иекуатабле.екуалс](https://msdn2.microsoft.com/library/ms131190(VS.80).aspx)
 
   Метод **Equals** должен возвращать `true` или `false` вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен просто возвращать `false` вместо создания <xref:System.ArgumentException>.
 
@@ -98,7 +98,7 @@ ms.locfileid: "74295944"
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [М:иекуалитикомпарер.жесашкоде (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [М:иекуалитикомпарер.жесашкоде (T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
 
   **GetHashCode** всегда должен возвращать значение. В противном случае можно потерять элементы в хэш-таблице.
 
@@ -135,5 +135,5 @@ ms.locfileid: "74295944"
 ## <a name="related-rules"></a>Связанные правила
  [CA2219: не создавайте исключения в предложениях исключений](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Предупреждения конструктора](../code-quality/design-warnings.md)

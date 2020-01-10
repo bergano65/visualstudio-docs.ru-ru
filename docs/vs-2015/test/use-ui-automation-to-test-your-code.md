@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6478de1573a90c0a7171285df1d04675f77435e2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297983"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851270"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Использование модели автоматизации пользовательского интерфейса для тестирования кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -425,7 +425,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> возвращает соответствующий тип данных, после чего это значение преобразуется в тип <xref:System.Object>. Возвращенное значение <xref:System.Object> необходимо преобразовать в соответствующий тип.
 
-     Пример.
+     Пример:
 
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`
 
@@ -435,7 +435,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - Чтобы указать свойство, которое необходимо установить, используйте соответствующую строку из класса `PropertyNames` как первый параметр для <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, а значение свойства — как второй параметр.
 
-     Пример.
+     Пример:
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
@@ -465,24 +465,24 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Закодированные тесты ИП часто используются для автоматизации ручных тестов. Дополнительные сведения см. на странице [Книга "Шаблоны и приемы. Тестирование непрерывной доставки с использованием Visual Studio 2012", глава 5, "Автоматизация системных тестов"](https://go.microsoft.com/fwlink/?LinkID=255196). Дополнительные сведения о ручных тестах см. в разделе [&#91;удалено&#93; Создание ручных тестовых случаев с помощью Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Дополнительные сведения об автоматизированных тестах см. в разделе [Создание автоматических системных тестов](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Закодированные тесты ИП часто используются для автоматизации ручных тестов. Дополнительные сведения см. на странице [Книга "Шаблоны и приемы. Тестирование непрерывной доставки с использованием Visual Studio 2012", глава 5, "Автоматизация системных тестов"](https://msdn.microsoft.com/library/jj159335.aspx). Дополнительные сведения о ручных тестах см. в разделе [&#91;удалено&#93; Создание ручных тестовых случаев с помощью Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Дополнительные сведения об автоматизированных тестах см. в разделе [Создание автоматических системных тестов](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="guidance"></a>Руководство
-- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
+- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://msdn.microsoft.com/library/jj159340.aspx)
 
-- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://go.microsoft.com/fwlink/?LinkID=255196)
+- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>Часто задаваемые вопросы
-- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Вопросы и ответы
+- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
-- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Форум
-- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

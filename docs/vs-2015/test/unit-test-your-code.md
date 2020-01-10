@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7a8b9a4b52fce5fb838c12ccf057fd0e80619cd7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301427"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851260"
 ---
 # <a name="unit-test-your-code"></a>Модульное тестирование кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "74301427"
 ## <a name="key-tasks"></a>Ключевые задачи
  Следующие разделы помогут в понимании и создании модульных тестов.
 
-|Задачи|Связанные разделы|
+|Задачи|Связанные темы|
 |-----------|-----------------------|
 |**Краткие и подробные руководства.** В следующих статьях можно изучить модульное тестирование в Visual Studio на конкретных примерах кода.|-   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) (Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода)<br />-   [Quick Start: Test Driven Development with Test Explorer](../test/quick-start-test-driven-development-with-test-explorer.md) (Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов)<br />-   [Unit testing existing C++ applications with Test Explorer ](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) (Модульное тестирование существующих приложений C++ с использованием обозревателя тестов)<br />-   [Модульное тестирование машинного кода с использованием обозревателя тестов](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
 |**Модульное тестирование с помощью обозревателя тестов.** Узнайте, как с помощью обозревателя тестов создавать более производительные и более эффективные модульные тесты.|-   [Unit Test Basics](../test/unit-test-basics.md) (Основные сведения о модульных тестах)<br />-   [Create a unit test project](../test/create-a-unit-test-project.md) (Создание проекта модульного теста)<br />-   [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)<br />-   [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md) (Установка платформ модульного тестирования сторонних поставщиков)<br />-   [Обновление модульных тестов с версии Visual Studio 2010](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
@@ -51,7 +51,7 @@ ms.locfileid: "74301427"
 |**Использование покрытия кода для определения того, какая часть кода проекта проверяется с помощью модульных тестов.** Изучите возможности покрытия кода, которые предоставляют средства тестирования [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)].|-   [Using Code Coverage to Determine How Much Code is being Tested](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) (Использование покрытия кода для определения объема тестируемого кода)|
 |**Анализ нагрузки и производительности с помощью нагрузочных тестов для модульных тестов.** Вы можете создать нагрузочный тест и добавить в него модульные тесты, чтобы выявить проблемы с нагрузкой и производительностью в приложении. **Примечание.** Создание и использование нагрузочных тестов доступно только в Visual Studio Enterprise.|-   [Creating and Editing Load Tests](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337) (Создание и изменение нагрузочных тестов)<br />-   [How to: Add Web Performance Tests and Unit Tests to a Load Test Scenario](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594) (Практическое руководство. Добавление веб-тестов производительности и модульных тестов в сценарий тестовой нагрузки)<br />-   [How to: Remove Web Tests and Unit Tests from a Load Test Scenario](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07) (Практическое руководство. Удаление веб-тестов и модульных тестов из сценария тестовой нагрузки)|
 |**Установка и внедрение системы контроля качества.** Вы можете создать систему контроля качества, чтобы выполнять тесты перед сохранением кода, что поможет обеспечить его качество.|-   [Установка и внедрение системы контроля качества](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**Расширение типа модульного теста.** Вы можете добавить в тесты функции, которые отсутствуют в платформе модульного тестирования. Например, можно добавить свойство теста, указывающее, должен ли тест выполняться в качестве обычного пользователя. Или можно расширить платформу, чтобы добавить строковые атрибуты в метод и использовать данные из этой строки внутри теста.|Пример кода, который расширяет платформу модульных тестов, вы найдете на следующем [веб-сайте корпорации Майкрософт](https://go.microsoft.com/fwlink/?LinkId=185591).|
+|**Расширение типа модульного теста.** Вы можете добавить в тесты функции, которые отсутствуют в платформе модульного тестирования. Например, можно добавить свойство теста, указывающее, должен ли тест выполняться в качестве обычного пользователя. Или можно расширить платформу, чтобы добавить строковые атрибуты в метод и использовать данные из этой строки внутри теста.|Пример кода, который расширяет платформу модульных тестов, вы найдете на следующем [веб-сайте корпорации Майкрософт](https://msdn.microsoft.com/vstudio/ff420671.aspx).|
 |**Задание параметров тестирования.** Вы можете, например, задать место для сохранения результатов тестирования.|[Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>Связанные задачи
@@ -71,16 +71,16 @@ ms.locfileid: "74301427"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="videos"></a>Видеоролики
- [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](https://go.microsoft.com/fwlink/?LinkId=226285)
+ [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Форумы
- [Модульное тестирование Visual Studio](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Модульное тестирование Visual Studio](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="reference"></a>Справочные сведения
- [Content Index for Unit Tests](https://go.microsoft.com/fwlink/?LinkID=254719) (Индекс материалов по модульным тестам)
+ [Content Index for Unit Tests](https://blogs.msdn.com/b/mathew_aniyan/archive/2012/05/17/content-index-for-unit-test.aspx) (Индекс материалов по модульным тестам)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Улучшение тестирования качества кода](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [для приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299835"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844371"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74299835"
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Убедитесь в том, что универсальные средства разработки приложений Windows выбраны в списке дополнительных функций. Без этих средств создать универсальные приложения невозможно.
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Убедитесь в том, что универсальные средства разработки приложений Windows выбраны в списке дополнительных функций. Без этих средств создать универсальные приложения невозможно.
 
   После установки программного обеспечения необходимо [включить устройство Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) для разработки. (Вам больше не нужна лицензия разработчика для каждого устройства Windows 10.)
 

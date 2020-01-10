@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: faa0cf18bfd9810d84e01028b3f787b3b2c99578
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295959"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844744"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001. Использование StringBuilder для объединений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "74295959"
   
 |||  
 |-|-|  
-|Идентификатор правила|DA0001|  
+|ИД правила|DA0001|  
 |Категория|Использование .NET Framework|  
-|Методы профилирования|Дискретизация<br /><br /> Инструментирование|  
-|Сообщение|Рекомендуется использовать класс StringBuilder для объединения строк.|  
+|Методы профилирования|Дискретизация<br /><br /> Инструментарий|  
+|Message|Рекомендуется использовать класс StringBuilder для объединения строк.|  
 |Тип сообщения|Предупреждение|  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
  Вызовы метода System.String.Concat составляют значительную часть данных профилирования. Для построения строк из нескольких сегментов рекомендуется использовать класс <xref:System.Text.StringBuilder>.  
   
 ## <a name="rule-description"></a>Описание правила  
@@ -45,4 +45,4 @@ ms.locfileid: "74295959"
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения  
  Дважды щелкните сообщение в окне "Список ошибок", чтобы перейти к представлению [Сведения о функциях](../profiling/function-details-view.md) выборки данных профилирования. Найдите участок программы, в котором наиболее часто используются операции объединения строк. Для выполнения сложных операций со строками, а также частых операций объединения строк используйте класс StringBuilder.  
   
- Дополнительные сведения о работе со строками см. в подразделе [Строковые операции](https://go.microsoft.com/fwlink/?LinkId=177816) в разделе [Глава 5. Улучшение производительности управляемого кода](https://go.microsoft.com/fwlink/?LinkId=177817) в библиотеке шаблонов и методик Microsoft.
+ Дополнительные сведения о работе со строками см. в подразделе [Строковые операции](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26) в разделе [Глава 5. Улучшение производительности управляемого кода](https://msdn.microsoft.com/library/ms998547.aspx) в библиотеке шаблонов и методик Microsoft.

@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e404d569776eef1cd2146ed636177be30151aaab
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5b1b4846bcceba2325da1c835b59a48e651190a1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299741"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852111"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Поддержка пакета SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "74299741"
 ## <a name="free-support"></a>Бесплатная поддержка  
   
 ### <a name="msdn-development-center"></a>Центр разработки MSDN  
- [Центр разработчиков расширяемости Visual Studio](https://go.microsoft.com/fwlink/?LinkID=84381) на MSDN содержит ресурсы, которые помогают ответить на вопросы о том, как расширить Visual Studio. Например, есть несколько ссылок на блоги разработчиков VSIP.  
+ [Центр разработчиков расширяемости Visual Studio](https://msdn.microsoft.com/vstudio/default.aspx) на MSDN содержит ресурсы, которые помогают ответить на вопросы о том, как расширить Visual Studio. Например, есть несколько ссылок на блоги разработчиков VSIP.  
   
 ### <a name="microsoft-newsgroups"></a>Группы новостей Майкрософт  
  Участники группы разработки Visual Studio и другие разработчики, которые расширяют Visual Studio, часто участвуют в группе новостей Microsoft. public. встудио. Extensibility. Эта группа новостей является управляемой группой новостей. Если вы являетесь универсальным подписчиком MSDN, убедитесь, что вы зарегистрировали псевдоним без спама, чтобы ответить корпорации Майкрософт.  
   
 ### <a name="msdn-forums"></a>Форумы MSDN  
- [Форумы MSDN](https://go.microsoft.com/fwlink/?LinkID=76632) предоставляют другой способ общения с коллегами и экспертами. Графический пользовательский интерфейс на форумах предназначен для упрощения их использования, чем группы новостей. [Форум по расширению Visual Studio](https://go.microsoft.com/fwlink/?LinkID=121964) — это хорошее место для начала поиска ответов на вопросы о расширяемости. Всегда ищите вопрос, так как другой пользователь может уже запросить тот же вопрос.  
+ [Форумы MSDN](https://social.msdn.microsoft.com/forums/categories/) предоставляют другой способ общения с коллегами и экспертами. Графический пользовательский интерфейс на форумах предназначен для упрощения их использования, чем группы новостей. [Форум по расширению Visual Studio](https://msdn.microsoft.com/vsx/default.aspx) — это хорошее место для начала поиска ответов на вопросы о расширяемости. Всегда ищите вопрос, так как другой пользователь может уже запросить тот же вопрос.  
   
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/) — это место для расширений и примеров кода. Вы можете найти средства, повышающие производительность и удобство работы пользователей с помощью Visual Studio, примеры приложений, демонстрирующие использование пакетов VSPackage и Managed Extensibility Framework (MEF) и других типов примеров.  
   
 ### <a name="codeplex"></a>Codeplex  
- [CodePlex](https://go.microsoft.com/fwlink/?LinkId=76627) — это веб-сайт размещения проектов Microsoft с открытым исходным кодом. CodePlex можно использовать для создания и совместного использования новых проектов, участия в существующих проектах или для использования приложений на сайте и предоставления отзывов. Все средства PowerToy (и их документация), включенные в более ранние версии [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], теперь доступны на сайте CodePlex.  
+ [CodePlex](https://www.codeplex.com/) — это веб-сайт размещения проектов Microsoft с открытым исходным кодом. CodePlex можно использовать для создания и совместного использования новых проектов, участия в существующих проектах или для использования приложений на сайте и предоставления отзывов. Все средства PowerToy (и их документация), включенные в более ранние версии [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], теперь доступны на сайте CodePlex.  
   
 ## <a name="included-support"></a>Включена поддержка  
   
@@ -63,7 +63,7 @@ ms.locfileid: "74299741"
   
  Вопросы о предложениях поддержка Premier в сочетании с программой VSIP можно отправлять в [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Вопросы о новых преимуществах для партнеров можно отправлять на [advantg@microsoft.com](mailto:advantg@microsoft.com).  
   
- Сведения об индивидуальных запросах на поддержку можно найти по [отдельным запросам на поддержку](https://go.microsoft.com/fwlink/?LinkID=82385).  
+ Сведения об индивидуальных запросах на поддержку можно найти по [отдельным запросам на поддержку](https://support.microsoft.com/oas/default.aspx?gprid=3040).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Обращайтесь к нам](../ide/talk-to-us.md)

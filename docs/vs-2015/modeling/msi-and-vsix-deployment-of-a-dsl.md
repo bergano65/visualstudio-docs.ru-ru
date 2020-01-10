@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5770fb604c1c700919f2e738a00ee07cc969b355
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297738"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850118"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "74297738"
 
 3. Выберите расширение, в котором определен DSL, и нажмите кнопку **Удалить**.
 
-   Иногда неисправное расширение не удается загрузить, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
+   В редких случаях не удается загрузить неисправное расширение, в результате чего в окне ошибок создается отчет, который не отображается в диспетчере расширений. В этом случае расширение можно удалить, удалив файл из следующей папки:
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
@@ -71,7 +71,7 @@ ms.locfileid: "74297738"
 
  Дополнительные сведения о файлах MSI и других вариантах развертывания см. в разделе [развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md).
 
- Чтобы создать MSI, добавьте в решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект установки. Самый простой способ создать проект установки — использовать шаблон CreateMsiSetupProject.tt, который можно загрузить с [сайта VMSDK](https://go.microsoft.com/fwlink/?LinkID=186128).
+ Чтобы создать MSI, добавьте в решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект установки. Самый простой способ создать проект установки — использовать шаблон CreateMsiSetupProject.tt, который можно загрузить с [сайта VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Развертывание DSL в MSI
 
@@ -93,19 +93,19 @@ ms.locfileid: "74297738"
 
        - Описание
 
-       - Версия
+       - {2&gt;Version&lt;2}
 
    - Щелкните узел **редактора** и в окно свойств щелкните **значок**. Задайте значение для ссылки на файл значка в **дслпаккаже\ресаурцес**, например **File. ico.**
 
    - В меню **Сборка** откройте **Configuration Manager**и выберите конфигурацию, которую требуется собрать, например **выпуск** или **отладку**.
 
-4. Перейдите на [домашнюю страницу SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkID=186128)и на вкладке **Downloads (загрузки** ) Скачайте **CreateMsiSetupProject.TT**.
+4. Перейдите на [домашнюю страницу SDK визуализации и моделирования](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)и на вкладке **Downloads (загрузки** ) Скачайте **CreateMsiSetupProject.TT**.
 
 5. Добавьте **CreateMsiSetupProject.TT** в проект DSL.
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создаст файл с именем **креатемсисетуппрожект. vdproj**.
 
-6. В проводнике Windows скопируйте DSL\\*. vdproj в новую папку с именем Setup.
+6. В проводнике Windows, скопируйте Dsl\\\*.vdproj в новую папку с именем установки.
 
     (Если нужно, теперь можно исключить CreateMsiSetupProject.tt из проекта DSL.)
 
@@ -123,13 +123,13 @@ ms.locfileid: "74297738"
 
      Скопируйте MSI-файл на компьютер, на котором требуется установить DSL. Дважды щелкните файл MSI. Запуск установщика.
 
-11. На конечном компьютере создайте новый файл с расширением DSL. Убедитесь, что:
+11. На конечном компьютере создайте новый файл с расширением DSL. Проверьте следующее:
 
     - В представлении списка проводника Windows файл отображается с указанными значком и описанием.
 
     - При двойном щелчке файла [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] запускается и открывается файл DSL в редакторе DSL.
 
-    При желании можно создать проект установки вручную, а не использовать текстовый шаблон. Пошаговое руководство, включающее эту процедуру, см. в главе 5 [лаборатории SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkId=208878).
+    При желании можно создать проект установки вручную, а не использовать текстовый шаблон. Пошаговое руководство, включающее эту процедуру, см. в главе 5 [лаборатории SDK визуализации и моделирования](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Удаление DSL, установленного из MSI
 

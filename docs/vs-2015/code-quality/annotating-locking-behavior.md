@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295832"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850160"
 ---
 # <a name="annotating-locking-behavior"></a>Аннотация поведения блокировки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "74295832"
 |`_Interlocked_operand_`|Параметр функции с заметками является целевым операндом одной из различных взаимоблокированных функций.  Эти операнды должны иметь определенные дополнительные свойства.|  
 |`_Write_guarded_by_(expr)`|Добавляет заметки к переменной и указывает на то, что при изменении данной переменной количество блокировок объекта с именем `expr` не менее единицы.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Основные сведения о SAL](../code-quality/understanding-sal.md)   
  [Добавление заметок к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)   
@@ -117,4 +117,4 @@ ms.locfileid: "74295832"
  [Указание времени и места применения заметки](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Встроенные функции](../code-quality/intrinsic-functions.md)   
  Рекомендации [и примеры](../code-quality/best-practices-and-examples-sal.md)   
- [Блог команды разработчиков анализа кода](https://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [Блог команды разработчиков анализа кода](https://blogs.msdn.com/b/codeanalysis/)

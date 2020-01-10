@@ -12,63 +12,63 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6a9e5b73315d8332c71e0fb7ddc3c6c1df041c3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9170532746dfc61cdec6636fb669676a94535de1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344684"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848769"
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 
-Изменения в модель проекта из одной версии Visual Studio к следующему может потребоваться обновление проекты и решения, чтобы они могут работать на более новой версии. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Предоставляет интерфейсы, которые могут использоваться для реализации поддержки обновления в своих собственных проектах.
+Изменение модели проекта с одной версии Visual Studio на следующую может потребовать обновления проектов и решений, чтобы они могли работать в более новой версии. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] предоставляет интерфейсы, которые можно использовать для реализации поддержки обновления в собственных проектах.
 
 ## <a name="upgrade-strategies"></a>Стратегии обновления
 
-Для поддержки обновления, реализации системы проекта необходимо определить и реализовать стратегию обновления. В определении стратегии, вы можете для поддержки резервного копирования side-by-side (SxS) и резервного копирования.
+Для поддержки обновления в реализации системы проектов должна быть определена и реализована стратегия обновления. При определении стратегии можно выбрать поддержку параллельного резервного копирования (SxS), резервного копирования или и того и другого.
 
-- Резервное копирование SxS означает, что проект копирует только те файлы, которые требуется обновление на месте, добавив подходящий файл суффикса имени, например, «расширения» OLD.
+- Резервное копирование SxS означает, что проект копирует только те файлы, которые требуют обновления на месте, добавляя подходящий суффикс имени файла, например ". old".
 
-- Резервная копия для копирования означает, что проект копирует все элементы проекта папку резервного копирования, предоставляемый пользователем. Затем обновляются соответствующие файлы в исходное расположение проекта.
+- Копирование резервной копии означает, что проект копирует все элементы проекта в указанное пользователем расположение резервной копии. После этого обновляются соответствующие файлы в исходном расположении проекта.
 
-## <a name="how-upgrade-works"></a>О принципах работы обновления
+## <a name="how-upgrade-works"></a>Принцип работы обновления
 
-При открытии решения, созданного в более ранней версии Visual Studio в более новой версии интегрированной среды разработки проверяет файл решения, чтобы определить, если он должен быть обновлен. Если обновление является обязательным, **мастер обновления** запускается автоматически, чтобы ознакомить пользователя через процесс обновления.
+Если решение, созданное в более ранней версии Visual Studio, открывается в более новой версии, интегрированная среда разработки проверяет файл решения, чтобы определить, нужно ли его обновить. Если требуется обновление, то **Мастер обновления** запускается автоматически, чтобы проанализировать пользователя с помощью процесса обновления.
 
-При решении необходимо обновить, он запрашивает Каждая фабрика проекта для его обновления стратегии. Стратегия определяет, поддерживает ли фабрика проектов резервного копирования или резервного копирования SxS. Информация отправляется **мастер обновления**, который собирает сведения, необходимые для резервного копирования и пользователю предоставляются соответствующие флажки.
+Когда решение нуждается в обновлении, оно запрашивает стратегию обновления для каждой фабрики проектов. Стратегия определяет, поддерживает ли фабрика проектов резервное копирование и архивацию SxS. Эти сведения отправляются в **Мастер обновления**, который собирает сведения, необходимые для резервного копирования, и предоставляет пользователю соответствующие параметры.
 
-### <a name="multi-project-solutions"></a>Многопроектные решения
+### <a name="multi-project-solutions"></a>Решения для нескольких проектов
 
-Если решение содержит несколько проектов и стратегии обновления отличаются, например, при создании проекта C++, который поддерживает только резервное копирование SxS и проект веб-приложения поддерживают только резервного копирования, фабрик проектов должны согласовывать стратегии обновления.
+Если решение содержит несколько проектов, а стратегии обновления отличаются, например, если C++ проект поддерживает только службу резервного копирования по протоколу SxS и веб-проект, поддерживающий только резервное копирование, фабрики проектов должны согласовать стратегию обновления.
 
-Решение запрашивает Каждая фабрика проекта для <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Затем он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> см. в разделе, если файлы глобальных проектов требуется обновление и определение поддерживаемых стратегии обновления. **Мастер обновления** затем вызывается.
+Решение запрашивает у каждой фабрики проектов <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Затем он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A>, чтобы узнать, требуется ли обновление глобальных файлов проекта и определить поддерживаемые стратегии обновления. Затем вызывается **Мастер обновления** .
 
-Как только пользователь завершит мастера <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> вызывается для каждой фабрики проекта для выполнения фактического обновления. Для упрощения резервного копирования, предоставляют методы интерфейса IVsProjectUpgradeViaFactory <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> службу для записи сведений о процессе обновления. Эта служба не может кэшироваться.
+После того как пользователь завершит работу мастера, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> вызывается в каждой фабрике проектов для выполнения фактического обновления. Чтобы упростить резервное копирование, методы Ивспрожектупградевиафактори предоставляют службу <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> для записи в журнал сведений о процессе обновления. Эта служба не может быть кэширована.
 
-После обновления все соответствующие файлы глобального, каждая фабрика проекта можно создать экземпляр проекта. Реализация проекта должна поддерживать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Затем вызывается метод для обновления всех элементов соответствующего проекта.
+После обновления всех соответствующих глобальных файлов каждая фабрика проектов может выбрать экземпляр проекта. Реализация проекта должна поддерживать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. Затем вызывается метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> для обновления всех соответствующих элементов проекта.
 
 > [!NOTE]
-> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Метод не предоставляет службу SVsUpgradeLogger. Эту службу можно получить путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.
+> Метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> не предоставляет службу Свсупграделогжер. Эту службу можно получить, вызвав <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.
 
 ## <a name="best-practices"></a>Рекомендации
 
-Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> службы, чтобы проверить можно изменить файл, прежде чем изменять его, а затем сохранить их перед сохранением. Это поможет резервного копирования и обновления реализаций обрабатывать файлы проекта в системе управления версиями, файлы с недостаточно разрешений и т. д.
+Используйте службу <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>, чтобы проверить, можно ли изменить файл перед его редактированием, а также сохранить его перед сохранением. Это поможет вашим реализациям резервного копирования и обновления управлять файлами проекта в системе управления версиями, файлами с недостаточными разрешениями и т. д.
 
-Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> службы во время всех этапов резервное копирование и обновление для предоставления сведений об успешности выполнения процесса обновления.
+Используйте службу <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> на всех этапах резервного копирования и обновления, чтобы предоставить сведения об успешном или неуспешном завершении процесса обновления.
 
-Дополнительные сведения о резервном копировании и обновление проектов см. в разделе комментариев для интерфейса IVsProjectUpgrade в vsshell2.idl.
+Дополнительные сведения о резервном копировании и обновлении проектов см. в комментариях к IVsProjectUpgrade в vsshell2. idl.
 
-## <a name="upgrading-custom-projects"></a> Обновление пользовательских проектов
+## <a name="upgrading-custom-projects"></a>Обновление пользовательских проектов
 
-Если вы изменяете данные, сохраненные в файле проекта, при переводе продукта с одной версии Visual Studio на другую, то вам необходимо обеспечить обновление файла проекта со старой версии до новой. Для поддержки обновления, в котором позволяет участвовать в **мастера преобразования Visual Studio**, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> интерфейс. Этот интерфейс содержит единственный доступный метод для обновления копии. Обновление проекта происходит в процессе открытия решения. Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> реализуется фабрикой проектов или по крайней мере должен получаться из нее.
+Если вы изменяете данные, сохраненные в файле проекта, при переводе продукта с одной версии Visual Studio на другую, то вам необходимо обеспечить обновление файла проекта со старой версии до новой. Для поддержки обновления, позволяющего принять участие в **мастере преобразования Visual Studio**, реализуйте интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Этот интерфейс содержит единственный доступный метод для обновления копии. Обновление проекта происходит в процессе открытия решения. Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> реализуется фабрикой проектов или по крайней мере должен получаться из нее.
 
-Старый механизм, предполагающий использование интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, по-прежнему поддерживается, но по сути обновляет систему проекта в процессе открытия проекта. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Интерфейса таким образом вызывается среды Visual Studio, даже если <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> вызывается или реализуется интерфейс. Такой подход позволяет использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> для реализации обновления с копированием только для частей проекта, а остальную работу выполнять на месте (возможно, в новом расположении) с помощью интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
+Старый механизм, предполагающий использование интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, по-прежнему поддерживается, но по сути обновляет систему проекта в процессе открытия проекта. Таким образом, интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> вызывается средой Visual Studio, даже если вызывается или реализуется интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Такой подход позволяет использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> для реализации обновления с копированием только для частей проекта, а остальную работу выполнять на месте (возможно, в новом расположении) с помощью интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
 
-Для реализации примера <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, см. в разделе [примеры VSSDK](https://aka.ms/vs2015sdksamples).
+Пример реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>см. в разделе [VSSDK Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 При обновлении проектов возникают описанные ниже ситуации.
 
-- Если файл имеет более новый формат, который не поддерживается проектом, то должна возникать соответствующая ошибка. При этом предполагается, что более раннюю версию продукта включает код для проверки версии.
+- Если файл имеет более новый формат, который не поддерживается проектом, то должна возникать соответствующая ошибка. Предполагается, что более старая версия продукта содержит код для проверки версии.
 
 - Если в методе <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> указан флаг <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>, будет производиться обновление на месте перед открытием проекта.
 
@@ -98,11 +98,11 @@ ms.locfileid: "66344684"
 
 ### <a name="ivsprojectupgrade-implementation"></a>Реализация интерфейса IVsProjectUpgrade
 
-Если реализует систему проектов <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> , он не может участвовать в **мастера преобразования Visual Studio**. Однако даже если вы реализуете интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, вы все же можете задействовать реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> для обновления файлов.
+Если система проектов реализует только <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, она не может участвовать в **мастере преобразования Visual Studio**. Однако даже если вы реализуете интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, вы все же можете задействовать реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> для обновления файлов.
 
 #### <a name="to-implement-ivsprojectupgrade"></a>Реализация интерфейса IVsProjectUpgrade
 
-1. Когда пользователь пытается открыть проект, метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> вызывается средой сразу после открытия проекта. Любые действия пользователя с проектом могут совершаться только после выполнения этого метода. Если пользователь уже получил запрос на обновление решения, флаг <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> передается в параметре `grfUpgradeFlags`. Если пользователь открывает проект напрямую, таких как с помощью **добавить существующий проект** команды, то <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> флаг не передается и проект должен запрашивать пользователя для обновления.
+1. Когда пользователь пытается открыть проект, метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> вызывается средой сразу после открытия проекта. Любые действия пользователя с проектом могут совершаться только после выполнения этого метода. Если пользователь уже получил запрос на обновление решения, флаг <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> передается в параметре `grfUpgradeFlags`. Если пользователь открывает проект напрямую, например с помощью команды **Добавить существующий проект** , то флаг <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> не передается и проект должен предложить пользователю выполнить обновление.
 
 2. В ответ на вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> проект должен определить, должен ли обновляться файл проекта. Если тип проекта не нужно обновлять до новой версии, то проект может просто вернуть флаг <xref:Microsoft.VisualStudio.VSConstants.S_OK>.
 
@@ -112,7 +112,7 @@ ms.locfileid: "66344684"
 
     - Если значение `VSQueryEditResult`, возвращаемое в параметре `pfEditCanceled`, равно <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> и в значении `VSQueryEditResult` задан бит <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyNotUnderScc>, то метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> должен вернуть ошибку, так как пользователи должны решить проблему с разрешениями самостоятельно. После этого проект должен выполнить следующее действие:
 
-         Сообщить об ошибке для пользователя, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> и вернуть <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> код ошибки, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
+         Сообщите пользователю об ошибке, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> и возвращая код ошибки <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> для <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
 
     - Если значение `VSQueryEditResult` равно <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> и в значении `VSQueryEditResultFlags` задан бит <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc>, то файл проекта следует получить для изменения, вызвав метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>...).
 
@@ -140,7 +140,7 @@ ms.locfileid: "66344684"
 
 - Если вы самостоятельно обеспечиваете перезагрузку проекта, то среда вызывает вашу реализацию метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT). Получив этот вызов, перезагрузите первый экземпляр проекта (Project1) и продолжайте обновление файла проекта. Среда определяет, что вы самостоятельно обеспечиваете перезагрузку проекта, если для <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) возвращается значение `true`.
 
-- Если вы не обеспечиваете перезагрузку проекта самостоятельно, то для <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) должно возвращаться значение `false`. В этом случае перед <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>(QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) возвращает среде создает еще один новый экземпляр проекта, например Project2, следующим образом:
+- Если вы не обеспечиваете перезагрузку проекта самостоятельно, то для <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) должно возвращаться значение `false`. В этом случае, перед <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>(QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) среда создает еще один экземпляр проекта, например Project2, как показано ниже:
 
     1. Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> для первого объекта проекта (Project1), переводя его таким образом в неактивное состояние.
 
@@ -161,24 +161,24 @@ ms.locfileid: "66344684"
 
 ## <a name="upgrading-project-items"></a>Обновление элементов проекта
 
-При добавлении или управлять элементами внутри системы проектов, которые не реализуют, может потребоваться принять участие в процессе обновления проекта. Crystal Reports является примером элемента, который можно добавить в систему проектов.
+При добавлении элементов или управлении ими в системах проектов, которые не реализуются, может потребоваться участие в процессе обновления проекта. Crystal Reports — это пример элемента, который можно добавить в систему проектов.
 
-Как правило реализации элемента проекта нужно использовать уже полностью созданным экземпляром и обновленного проекта, так как им нужно знать, какие ссылки на проект и какие другие свойства проекта есть для принятия решения об обновлении.
+Как правило, разработчики элементов проекта хотят использовать уже полностью созданный и обновленный проект, так как им нужно знать, что такое ссылки на проект и какие другие свойства проекта должны принять решение об обновлении.
 
-### <a name="to-get-the-project-upgrade-notification"></a>Чтобы получить уведомление об обновлении проекта
+### <a name="to-get-the-project-upgrade-notification"></a>Получение уведомления об обновлении проекта
 
-1. Задайте <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> флаг (определенных в файле vsshell80.idl) в реализации элемента проекта. Это вызывает элемента проекта VSPackage для автоматической загрузки, если оболочка Visual Studio определяет, что система проектов находится в процессе обновления.
+1. Установите флаг <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> (определяется в vsshell80. IDL) в реализации элемента проекта. Это приведет к автоматической загрузке пакета VSPackage элемента проекта, когда оболочка Visual Studio определит, что система проектов находится в процессе обновления.
 
-2. Уведомить <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> интерфейс через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> метод.
+2. Посоветуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> интерфейс с помощью метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A>.
 
-3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> Интерфейс срабатывает после реализации системы проекта завершении обновления и создается новый обновленный проект. В зависимости от сценария <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> интерфейс срабатывает после <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>, или <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> методы.
+3. Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> срабатывает после того, как реализация системы проекта завершит операции обновления и будет создан новый обновленный проект. В зависимости от сценария интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> срабатывает после <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>или методов <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>.
 
-### <a name="to-upgrade-the-project-item-files"></a>Чтобы обновить файлы элементов проекта
+### <a name="to-upgrade-the-project-item-files"></a>Обновление файлов элементов проекта
 
-1. Необходимо тщательно управлять процесс резервного копирования файла в реализации элемента проекта. Это относится, в частности, для резервного копирования side-by-side, где `fUpgradeFlag` параметр <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> задан метод <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>, куда помещаются файлы, которые созданы резервные копии вдоль стороны файлы, которые обозначены как «расширения» OLD. Старше системное время, когда проект был обновлен файла резервной копии может быть назначен как устаревший. Кроме того они могут быть перезаписаны, если только вы выполнить определенные действия, чтобы избежать этого.
+1. Необходимо тщательно управлять процессом резервного копирования файлов в реализации элемента проекта. Это относится к параллельной резервной копии, где параметру `fUpgradeFlag` метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> присваивается значение <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>, где файлы, для которых была создана резервная копия, помещаются в файлы параллельных файлов, обозначенные как "Old". Резервные копии файлов старше системного времени, когда проект был обновлен, можно назначить как устаревшие. Кроме того, они могут быть перезаписаны, если не предпринять конкретные меры по предотвращению этого.
 
-2. Во время вашего элемента проекта получает уведомление о обновления проекта, **мастера преобразования Visual Studio** по-прежнему отображается. Таким образом, следует использовать методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> интерфейс для предоставления сообщений обновления пользовательского интерфейса мастера.
+2. Когда элемент проекта получает уведомление об обновлении проекта, **Мастер преобразования Visual Studio** по-прежнему отображается. Поэтому следует использовать методы интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> для предоставления сообщений об обновлении пользовательскому интерфейсу мастера.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Проекты](../../extensibility/internals/projects.md)

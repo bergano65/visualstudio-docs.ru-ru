@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60e7ddd7c535d99abcb64d4adde97157b117f3ed
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f5e62fe83d644b577d7d0a5f87312642f438c490
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301385"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851174"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Пошаговое руководство. Создание и выполнение модульных тестов для приложений для Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74301385"
 Visual Studio включает поддержку модульного тестирования управляемых приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] и шаблоны библиотек модульных тестов для Visual C#, Visual Basic и Visual C++.
 
 > [!TIP]
-> Дополнительные сведения о разработке приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] см. в разделе [Начало работы с приложениями Магазина Windows](https://go.microsoft.com/fwlink/?LinkID=241410).
+> Дополнительные сведения о разработке приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] см. в разделе [Начало работы с приложениями Магазина Windows](https://msdn.microsoft.com/windows/apps/br211386.aspx).
 
  Visual Studio предоставляет следующие возможности модульного тестирования:
 
@@ -96,7 +96,7 @@ Visual Studio включает поддержку модульного тест�
 
 1. В редакторе кода добавьте модульный тест и включите необходимые утверждения и логику.
 
-     Дополнительные сведения см. в статье [Использование классов утверждений](https://go.microsoft.com/fwlink/?LinkID=224991) в библиотеке MSDN.
+     Дополнительные сведения см. в статье [Использование классов утверждений](https://msdn.microsoft.com/library/ms182530.aspx) в библиотеке MSDN.
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Run"></a> Запуск модульных тестов
 
@@ -139,13 +139,13 @@ Visual Studio включает поддержку модульного тест�
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="videos"></a>Видеоролики
- [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](https://go.microsoft.com/fwlink/?LinkId=226285)
+ [Канал 9. Модульное тестирование приложений для Магазина Windows, построенных с помощью XAML](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Форумы
- [Модульное тестирование Visual Studio](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Модульное тестирование Visual Studio](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
 ### <a name="msdn-library"></a>Библиотека MSDN
- [Библиотека MSDN. Создание и запуск модульных тестов для существующего кода (Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=223683)
+ [Библиотека MSDN. Создание и запуск модульных тестов для существующего кода (Visual Studio 2010)](https://msdn.microsoft.com/library/hh270865(v=vs.110).aspx)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Тестирование приложений Магазина в Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Сборка и тестирование приложения Магазина Windows с помощью Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

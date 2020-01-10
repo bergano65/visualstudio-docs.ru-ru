@@ -17,21 +17,21 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dca65fdfdfa6ad4ea27aa97033a95b4ed27e81ca
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4880f2907584504ba659c9a887173e6cd365c241
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300820"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846448"
 ---
 # <a name="the-visual-studio-image-library"></a>Библиотека изображений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Библиотека изображений Visual Studio содержит изображения приложений, отображаемые в Microsoft Visual Studio, Microsoft Windows, системе Office и другом программном обеспечении Microsoft. Набор из более 1000 изображений можно использовать для создания приложений, внешний вид которых сочетается с программным обеспечением Microsoft.
 
- [Скачать библиотеку изображений Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=275090)
+ [Скачать библиотеку изображений Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825)
 
  Библиотека изображений состоит из пяти категорий: общие элементы, действия, заметки, значки и объекты. Для типов общих элементов и значков в библиотеку также включены файлы сведений в формате PDF. Они содержат информацию о правильном использовании этих изображений в приложениях.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Изображения, точечные рисунки и метафайлы](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: caecb85392170559a860a7dc334570880d6e76f1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 87d7742c988e0193c8175621a08478b6225c8670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301468"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850645"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Интеграция моделей UML с другими моделями и средствами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "74301468"
 
    Дополнительные сведения см. в разделе [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   Пример проекта, в котором профиль развертывается вместе с командами меню и обработчиками жестов, см. в разделе [Пример: профили UML](https://go.microsoft.com/fwlink/?LinkID=213811).
+   Пример проекта, в котором профиль развертывается вместе с командами меню и обработчиками жестов, см. в разделе [Пример: профили UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 - **Ссылку.** Набор строк можно присоединить к любому элементу UML. Можно написать код, который хранит данные, такие как имя файла или GUID другого элемента. Это можно сделать без задания дополнительных определений. Ссылки не отображаются непосредственно пользователю.
 
-   Дополнительные сведения см. [в разделе Присоединение строк ссылок к элементам модели UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813).
+   Дополнительные сведения см. [в разделе Присоединение строк ссылок к элементам модели UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
   Существует два способа кодирования ссылок на элементы модели:
 
 - **GUID и имя файла** целевой модели, а также модель, которая содержит этот элемент, или конкретную диаграмму, которая отображает ее.
 
-   Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813).
+   Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 - **Ссылки на ModelBus.** ModelBus — это платформа для создания и разрешения ссылок между моделями. Она включает в себя средство выбора ModelBus, позволяющее пользователю выбрать элемент в модели. Она также помогает пользователю разрешать ссылки, которые теряются из-за изменений в целевой модели.
 
@@ -61,7 +61,7 @@ ms.locfileid: "74301468"
 
 1. **Правила VMSDK** можно использовать для распространения изменений внутри одной модели.
 
-    Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813).
+    Пример см. в разделе [связывание элементов UML с диаграммами или другими файлами](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 2. **События VMSDK** можно использовать для распространения изменений вне модели, например для изменения имени файла связанного документа или для изменения элемента в другой модели.
 
@@ -71,8 +71,8 @@ ms.locfileid: "74301468"
 
    Дополнительные сведения см. в разделе [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) и [инструкции: Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="samples"></a>Примеры
- См. пример кода, [связывающий элементы UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813). Пример позволяет перетащить файл на любой элемент UML и затем открыть этот файл двойным щелчком элемента. Например, можно связать схему деятельности с элементом варианта использования. Значок, который показывает наличие связей у элементов.
+## <a name="samples"></a>Образцы
+ См. пример кода, [связывающий элементы UML с диаграммами или другими файлами](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Пример позволяет перетащить файл на любой элемент UML и затем открыть этот файл двойным щелчком элемента. Например, можно связать схему деятельности с элементом варианта использования. Значок, который показывает наличие связей у элементов.
 
  В этом примере кода демонстрируются следующие методики:
 
@@ -96,5 +96,5 @@ ms.locfileid: "74301468"
 
   Пример, в котором модель UML считывается с помощью DSL, см. в разделе [как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="see-also"></a>См. также
- [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [. как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) . [как реагировать на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Пример: профили UML](https://go.microsoft.com/fwlink/?LinkID=213811) [связывание элементов UML с диаграммами или другими файлами](https://go.microsoft.com/fwlink/?LinkId=213813)
+## <a name="see-also"></a>См. также раздел
+ [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [. как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) . [как реагировать на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Пример: профили UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [связывание элементов UML с диаграммами или другими файлами](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
