@@ -3,8 +3,8 @@ title: Идентификаторы рабочих нагрузок и комп�
 titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов позволяют устанавливать Visual Studio с помощью командной строки. Также их можно указать в качестве зависимости в манифесте VSIX.
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca3e73c7f804a543c9a57a5ca7b4a80905434db3
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 79fddeaae88f98cd8ef40a7179a28fd8ded7fa5d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797310"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588425"
 ---
 # <a name="visual-studio-community-component-directory"></a>Каталог компонентов Visual Studio Community
 

@@ -4,17 +4,17 @@ ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 923e8bb50b1caa323c602334c1d9a28b072043bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154816"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591324"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки
 
@@ -34,7 +34,7 @@ ms.locfileid: "70154816"
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Создание файла журнала сборки для проекта управляемого кода
 
-1. В строке меню последовательно выберите **Сборка**  >  **Собрать решение**.
+1. В строке меню последовательно выберите **Сборка** > **Собрать решение**.
 
 2. В окне **вывода** щелкните где-нибудь в тексте.
 
@@ -52,7 +52,7 @@ ms.locfileid: "70154816"
 
 3. В списке **Степень подробности сообщений при построении проекта MSBuild** выберите одно из указанных ниже значений, а затем нажмите кнопку **ОК**.
 
-    |Уровень детализации|ОПИСАНИЕ|
+    |Уровень детализации|Описание|
     | - |-----------------|
     |**Тихий**|Отображает только сводку по сборке.|
     |**Минимальное**|Отображает сводку по сборке, а также ошибки, предупреждения и сообщения с высокой важностью.|

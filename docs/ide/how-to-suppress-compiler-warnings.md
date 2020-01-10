@@ -3,17 +3,17 @@ title: Отключение предупреждений компилятора 
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747952"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591428"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Практическое руководство. Отключение предупреждений компилятора
 
@@ -87,7 +87,7 @@ ms.locfileid: "72747952"
     ```
 
    > [!NOTE]
-   > По умолчанию проекты .NET Core не содержат группы свойств для конфигурации сборки. Чтобы отключить предупреждения для проекта .NET Core, вручную добавьте нужный раздел конфигурации в файл. Например:
+   > По умолчанию проекты .NET Core не содержат группы свойств для конфигурации сборки. Чтобы отключить предупреждения для проекта .NET Core, вручную добавьте нужный раздел конфигурации в файл. Пример:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
