@@ -2,7 +2,7 @@
 # [Новые возможности](whats-new-in-subscriptions.md)
 # Подписки
 ## Приобретение подписок
-### [Retail](https://visualstudio.microsoft.com/vs/pricing)
+### [Розничная версия](https://visualstudio.microsoft.com/vs/pricing)
 ### Облако 
 #### [Обзор](vscloud-overview.md)
 #### [Часто задаваемые вопросы о выставлении счетов](vscloud-billing-faq.md)
@@ -88,7 +88,7 @@
 ### [Подписчики, входящие по личным электронным адресам](personal-email-sign-ins.md)
 ### [Управление Visual Studio в GitHub Enterprise](assign-github.md)
 # Ресурсы
-## [Документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
+## [Документ по лицензированию Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [Сравнение вариантов подписок и цен на них](https://visualstudio.microsoft.com/vs/pricing)
 ## [Сравнение возможностей интегрированной среды разработки Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ## [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
