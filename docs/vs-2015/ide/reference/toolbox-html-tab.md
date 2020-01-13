@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297780"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851660"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74297780"
 
  **Указатель** ![ASP.NET мобильного конструктора HtmlPage указатель](../../ide/reference/media/vxpointer.gif "|::ref1::|")
 
- Это средство выбирается по умолчанию при открытии любой вкладки области элементов. Его нельзя удалить. Указатель позволяет перетаскивать объекты на поверхность конструктора, изменять их размеры и перемещать по странице или форме. Дополнительные сведения см. в разделах [Практическое руководство. Управление окном панели элементов](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) и [Практическое руководство. Управление вкладками панели элементов](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
+ Это средство выбирается по умолчанию при открытии любой вкладки области элементов. Его нельзя удалить. Указатель позволяет перетаскивать объекты на поверхность конструктора, изменять их размеры и перемещать по странице или форме. Дополнительные сведения см. в разделе [Практическое руководство. Управление окном панели элементов](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) и [Практическое руководство. Управление вкладками панели элементов](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
 
  Кнопка **ввода (кнопка)** ![HTML веб-страница](../../ide/reference/media/vxbutton.gif "|::ref2::|")
 
@@ -52,7 +52,7 @@ ms.locfileid: "74297780"
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- Дополнительные сведения см. в статьях [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Элементы управления для ввода HTML), [Декларативный синтаксис серверного элемента управления HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [How to: Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Руководство по созданию скриптов и редактированию обработчиков событий), [Button Web Server Controls Content Map](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) (Обзор элементов управления веб-сервера Button), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> и <xref:System.Web.UI.WebControls.Button>.
+ Дополнительные сведения см. в статьях [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Элементы управления для ввода HTML), [Декларативный синтаксис серверного элемента управления HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa) и [NIB. Практическое руководство. Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Создание скриптов и изменение обработчиков событий), [Button Web Server Controls Content Map](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) (Обзор серверных веб-элементов управления Button), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> и <xref:System.Web.UI.WebControls.Button>.
 
  ![Снимок экрана](../../ide/reference/media/vxreset.gif "|::ref3::|") **ввода (сброса)** снимок
 
@@ -118,10 +118,10 @@ ms.locfileid: "74297780"
 <input id="Password1" type="password" name="Password1">
 ```
 
- Дополнительные сведения см. в разделе [Элементы управления ввода HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Декларативный синтаксис серверного элемента управления HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Практическое руководство. Установка серверного веб-элемента управления для ввода пароля](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) и [Практическое руководство. Проверка пользовательского ввода на странице веб-форм](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
+ Дополнительные сведения см. в статьях [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Элементы управления для ввода HTML), [Декларативный синтаксис серверного веб-элемента управления HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f) и [How to: Set a TextBox Web Server Control for Password Entry](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) (Практическое руководство. Задание серверного веб-элемента управления TextBox для ввода пароля) и [Walkthrough: Validating User Input in a Web Forms Page](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436) (Пошаговое руководство. Проверка вводимых пользователем данных на странице Web Forms).
 
 > [!IMPORTANT]
-> Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](https://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Ввод (флажок)** ![параметр "Панель элементов веб-страницы HTML"](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -159,7 +159,7 @@ ms.locfileid: "74297780"
 
  Дополнительные сведения см. в статьях [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Элементы управления для ввода HTML), [Декларативный синтаксис серверного элемента управления HtmlInputHidden](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) и <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.
 
- **** ![Текстовая область панели инструментов HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") в TextArea
+ ![Текстовая область панели инструментов HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") в **TextArea**
 
  Вставляет элемент `textarea`. Можно изменить размер текстовой области или с помощью полос прокрутки просматривать текст, выходящий за пределы области отображения. Чтобы изменить отображаемый текст по умолчанию, измените атрибут `value`. По умолчанию `id="textarea1"` вставляется для первой текстовой области, `id=" textarea 2"` для второй и т. д.
 
@@ -174,7 +174,7 @@ ms.locfileid: "74297780"
 > [!IMPORTANT]
 > Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в разделе [Проверка пользовательского ввода на веб-страницах ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
- **** ![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "|::ref12::|") таблицы
+ ![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "|::ref12::|") **таблицы**
 
  Вставляет элемент `table`.
 
@@ -186,7 +186,7 @@ ms.locfileid: "74297780"
 
  Дополнительные сведения см. в статьях [Предыдущие версии продуктов, служб и технологий Майкрософт](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow, and TableCell Web Server Control Overview](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) (Обзор элементов управления веб-сервера Table, TableRow и TableCell), <xref:System.Web.UI.HtmlControls.HtmlTable> и <xref:System.Web.UI.WebControls.Table>.
 
- **** ![Элемент изображения HTML-страницы](../../ide/reference/media/vximage.gif "|::ref13::|") изображения
+ ![Элемент изображения HTML-страницы](../../ide/reference/media/vximage.gif "|::ref13::|") **изображения**
 
  Вставляет элемент `img`. Измените этот элемент, чтобы указать его `src` и текст `alt`.
 
@@ -210,7 +210,7 @@ ms.locfileid: "74297780"
 
  Можно создать многострочный элемент `select`, увеличивая значение свойства размера.
 
- Дополнительные сведения см. в статьях [Декларативный синтаксис серверного элемента управления HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [How to: Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Руководство по созданию скриптов и редактированию обработчиков событий), [DropDownList Web Server Control Overview](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) (Обзор элемента управления веб-сервера DropDownList), [ListBox Web Server Control Overview](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) (Обзор элемента управления веб-сервера ListBox), <xref:System.Web.UI.HtmlControls.HtmlSelect> и <xref:System.Web.UI.WebControls.DropDownList>.
+ Дополнительные сведения см. в статьях [Декларативный синтаксис серверного веб-элемента управления HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB. Практическое руководство. Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Создание скриптов и изменение обработчиков событий), [DropDownList Web Server Control Overview](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) (Обзор серверного веб-элемента управления DropDownList), [ListBox Web Server Control Overview](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) (Обзор серверного веб-элемента управления ListBox), <xref:System.Web.UI.HtmlControls.HtmlSelect> и <xref:System.Web.UI.WebControls.DropDownList>.
 
  Элемент горизонтального ![правила HTML-страницы](../../ide/reference/media/vxhorizontal.gif "|::ref15::|") **горизонтального правила**
 
@@ -224,7 +224,7 @@ ms.locfileid: "74297780"
 
  Дополнительные сведения см. в разделе [Элемент управления горизонтальной линии HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- **** ![Метка HTML-страницы](../../ide/reference/media/vxlabel.gif "|::ref16::|") div
+ ![Метка HTML-страницы](../../ide/reference/media/vxlabel.gif "|::ref16::|") **div**
 
  Вставляет элемент `div`, включающий атрибут `ms_positioning="FlowLayout"`. За исключением ширины и высоты, этот элемент аналогичен панели потокового макета. Чтобы форматировать текст, содержащийся в элементе `div`, добавьте атрибут `class="stylename"` в открывающий тег.
 
