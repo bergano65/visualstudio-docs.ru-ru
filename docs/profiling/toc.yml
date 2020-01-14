@@ -24,12 +24,14 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Практические руководства
   items:
-    - name: Загрузка ЦП.
+    - name: Использование ЦП
       href: cpu-usage.md
     - name: Использование памяти
       items:
         - name: Анализ данных об использовании памяти
           href: analyze-memory-usage.md
+        - name: Анализ использования памяти для объектов .NET
+          href: dotnet-alloc-tool.md
         - name: События пользовательской собственной кучи трассировки событий Windows
           href: custom-native-etw-heap-events.md
         - name: Использование памяти без отладчика
@@ -572,7 +574,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Запуск
+                    - name: Начало
                       href: start.md
                     - name: Параметр CrossSession
                       href: crosssession.md
