@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850459"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918833"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Определение команды меню на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,4 +363,5 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>См. также раздел
- [Определение и установка расширения моделирования расширение](../modeling/define-and-install-a-modeling-extension.md) [моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) определение [ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [изменить UML-схемы ПОследовательностей с помощью программирования API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [с](../modeling/programming-with-the-uml-api.md) примером "API UML" [для выровняйте фигуры на схеме UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Определение и установка расширения моделирования](../modeling/define-and-install-a-modeling-extension.md) [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [изменение UML-схем последовательностей с помощью API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [для UML](../modeling/programming-with-the-uml-api.md)
+ 

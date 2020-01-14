@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851457"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915657"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Настройка системы диагностики для облачных служб и виртуальных машин Azure
 Чтобы устранить неполадки в облачных службах или виртуальных машинах Azure, можно использовать Visual Studio для быстрой настройки системы диагностики Azure. Система диагностики собирает системные данные и данные журналов, поступающие от виртуальных машин и их экземпляров, на которых работает ваша облачная служба. Данные диагностики переносятся в указанную вами учетную запись хранения. Дополнительные сведения о ведении журнала диагностики см. в статье [Включение ведения журнала диагностики для веб-приложений в службе приложений Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -110,7 +110,7 @@ ms.locfileid: "75851457"
     ![Установка расширения виртуальной машины Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > Для виртуальных машин существуют и другие диагностические расширения. Дополнительные сведения см. в разделе [Обзор расширений и компонентов виртуальной машины под управлением Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > Для виртуальных машин существуют и другие диагностические расширения. Дополнительные сведения см. в разделе [Обзор расширений и компонентов виртуальной машины под управлением Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Чтобы добавить расширение и просмотреть информацию в диалоговом окне **конфигурации диагностики**, выберите **Добавить**.

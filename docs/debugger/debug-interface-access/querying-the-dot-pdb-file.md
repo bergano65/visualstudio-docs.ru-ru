@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a22bc8fbe65795a3c5162607a12690081e565666
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738583"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917108"
 ---
 # <a name="querying-the-pdb-file"></a>Запрос PDB-файла
-Файл базы данных программы (Extension. pdb) представляет собой двоичный файл, содержащий тип и символьную отладочную информацию, собранную в ходе компиляции и связывания проекта. PDB-C++ файл создается при компиляции C/Program с **/Zi** или **/Zi** либо [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] или программы [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] с параметром **/Debug** . Объектные файлы содержат ссылки на PDB-файл для отладки данных. Дополнительные сведения о PDB-файлах см. в разделе [PDB-файлы](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Приложение DIA может использовать следующие общие шаги для получения сведений о различных символах, объектах и элементах данных в исполняемом образе.
+Файл базы данных программы (Extension. pdb) представляет собой двоичный файл, содержащий тип и символьную отладочную информацию, собранную в ходе компиляции и связывания проекта. PDB-C++ файл создается при компиляции C/Program с **/Zi** или **/Zi** либо [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]или программы [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] с параметром **/Debug** . Объектные файлы содержат ссылки на PDB-файл для отладки данных. Дополнительные сведения о PDB-файлах см. в разделе [PDB-файлы](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Приложение DIA может использовать следующие общие шаги для получения сведений о различных символах, объектах и элементах данных в исполняемом образе.
 
 ### <a name="to-query-the-pdb-file"></a>Запрос к PDB-файлу
 
@@ -90,5 +90,5 @@ ms.locfileid: "72738583"
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

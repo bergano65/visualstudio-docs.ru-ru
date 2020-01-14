@@ -11,19 +11,19 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f6e88e5c430129faa80f34a45f9b6620d5b0d13
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 6220afc2bdf75cc22529c65d5514f5f9e0766555
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850362"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919209"
 ---
 # <a name="visual-studio-shell-integrated"></a>Оболочка Visual Studio (интегрированная)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Интегрированная оболочка Visual Studio включает интегрированную среду разработки (IDE), отладчик и интегрированную систему управления версиями. Язык программирования не включен. Однако Интегрированная оболочка предоставляет платформу, которая позволяет добавлять языки программирования.  
   
- Интегрированная оболочка Visual Studio на самом деле является сочетанием изолированной оболочки Visual Studio и дополнительной установки, включающей встроенные компоненты оболочки.  Интегрированное приложение оболочки должно содержать как распространяемый пакет изолированной оболочки из [оболочка Microsoft Visual Studio Shell (изолированная) распространяемого пакета](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J) , так и распространяемый пакет интегрированной оболочки из [оболочка Microsoft Visual Studio Shell (интегрированная) распространяемого пакета](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J).  
+ Интегрированная оболочка Visual Studio на самом деле является сочетанием изолированной оболочки Visual Studio и дополнительной установки, включающей встроенные компоненты оболочки.  Интегрированное приложение оболочки должно включать в себя как распространяемый пакет изолированной оболочки, так и распространяемый пакет интегрированной оболочки из [распространяемых пакетов оболочки Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
 > Для доступа к распространяемым пакетам изолированной и интегрированной оболочек сначала потребуется заполнить краткую анкету клиента.  После заполнения анкеты вы будете направлены на страницу подключения к Visual Studio со ссылками на распространяемые пакеты.  Ссылки для скачивания см. в последующих посещениях сайта Visual Studio Connect на вкладке **программы &#124; Visual Studio 2015 интеграция и изолированная оболочка** .  

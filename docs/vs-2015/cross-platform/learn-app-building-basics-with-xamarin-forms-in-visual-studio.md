@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 09da3bd59163cbef8b33b1d5ece732330e32eac7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299761"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918935"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Основы создания приложений с помощью Xamarin.Forms в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -290,7 +290,7 @@ ms.locfileid: "74299761"
 ## <a name="finish"></a> Завершение пользовательского интерфейса с помощью собственного интерфейса на разных платформах
  Xamarin.Forms отображает собственные элементы управления пользовательского интерфейса на каждой платформе, чтобы приложение автоматически выглядело как изначально предназначенное именно для нее. Чтобы увидеть это более подробно, добавим в пользовательский интерфейс поле ввода для почтового индекса, а затем отобразим данные погоды, возвращенные из службы.
 
-1. Замените содержимое **WeatherPage.xaml** кодом ниже. Обратите внимание, что каждый элемент именован с использованием атрибута **x:Name** , как описано ранее, чтобы на элемент могла указывать ссылка из кода. Xamarin.Forms также предоставляет ряд [параметров макета](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com); здесь WeatherPage использует [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
+1. Замените содержимое **WeatherPage.xaml** кодом ниже. Обратите внимание, что каждый элемент именован с использованием атрибута **x:Name** , как описано ранее, чтобы на элемент могла указывать ссылка из кода. Xamarin.Forms также предоставляет ряд [параметров макета](/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com); здесь WeatherPage использует [StackLayout](/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ ms.locfileid: "74299761"
    </ContentPage>
    ```
 
-    Обратите внимание на использование тега **OnPlatform** в Xamarin.Forms. **OnPlatform** выбирает значение свойства, относящееся к текущей платформе, на которой выполняется приложение (см. статью [External XAML Syntax](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (Внешний синтаксис XAML) на сайте xamarin.com). Здесь он используется для установки другого цвета текста для полей данных: белого на Android и Windows Phone, черного на iOS. Вы можете использовать **OnPlatform** для любых свойств и типов данных в целях внесения специальных настроек в XAML. В файле кода программной части можно использовать [API Device.OnPlatform](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) для той же цели.
+    Обратите внимание на использование тега **OnPlatform** в Xamarin.Forms. **OnPlatform** выбирает значение свойства, относящееся к текущей платформе, на которой выполняется приложение (см. статью [External XAML Syntax](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (Внешний синтаксис XAML) на сайте xamarin.com). Здесь он используется для установки другого цвета текста для полей данных: белого на Android и Windows Phone, черного на iOS. Вы можете использовать **OnPlatform** для любых свойств и типов данных в целях внесения специальных настроек в XAML. В файле кода программной части можно использовать [API Device.OnPlatform](/xamarin/xamarin-forms/platform/device) для той же цели.
 
 2. В **WeatherPage.xaml.cs**замените обработчик событий **GetWeatherBtn_Clicked** кодом ниже. Этот код проверяет, существует ли почтовый индекс, указанный в поле ввода, извлекает данные для этого почтового индекса, задает результирующий экземпляр класса Weather в качестве контекста привязки всего экрана, в затем задает в качестве текста кнопки Search Again (Повторить поиск). Обратите внимание, что каждая метка в пользовательском интерфейсе привязывается к свойству класса Weather, поэтому при указании контекста привязки экрана к экземпляру **Weather** эти метки обновляются автоматически.
 

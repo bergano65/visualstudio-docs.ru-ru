@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f005ea0fce0ccf33902b6ebfd6822640782ef20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292066"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917590"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "74292066"
 
 - **[Создание веб-приложений](https://www.visualstudio.com/features/modern-web-tooling-vs):** средства для создания и развертывания современных веб-приложений.
 
-     [Пройти обучение](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) | [Посмотреть документы](https://docs.asp.net/) | [Посмотреть видео](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
+     [Пройти обучение](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) | [Посмотреть документы](https://docs.asp.net/) | [Посмотреть видео](/aspnet/core/?view=aspnetcore-3.0)
 
-- **[Создание кроссплатформенных мобильных приложений в HTML/Javascript (Apache Cordova)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova — кроссплатформенная среда с открытым исходным кодом, основанная на HTML/CSS/Javascript.  Код Javascript выполняется в оболочке, нацеленной на конкретную платформу и обеспечивающей доступ ко всем возможностям оборудования устройства. Разработка приложений для Apple Store, магазина Android и Магазина Windows.
+- **[Создание кроссплатформенных мобильных приложений в HTML/Javascript (Apache Cordova)](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova — кроссплатформенная среда с открытым исходным кодом, основанная на HTML/CSS/Javascript.  Код Javascript выполняется в оболочке, нацеленной на конкретную платформу и обеспечивающей доступ ко всем возможностям оборудования устройства. Разработка приложений для Apple Store, магазина Android и Магазина Windows.
 
-     [Скачать пример](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) | [Пройти обучение](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) | [Посмотреть документы](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) | [Посмотреть видео](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [Скачать пример](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) | [Пройти обучение](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) | [Посмотреть документы](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) | [Посмотреть видео](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[Создание кроссплатформенных мобильных приложений на C# или Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : начало работы с Visual Studio и средствами для Xamarin в целях создания мобильных приложений, работающих на Android, iOS и универсальной платформе Windows из базы общего кода.
 
@@ -61,7 +61,7 @@ ms.locfileid: "74292066"
 
 - **[Тур по Visual Studio Team Services и Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Дополнительные сведения о Visual Studio Team Services и Team Foundation Server.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>В данном разделе
 
 |||
 |-|-|

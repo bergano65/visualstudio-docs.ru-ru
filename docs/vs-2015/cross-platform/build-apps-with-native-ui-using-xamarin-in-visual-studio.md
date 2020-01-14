@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297918"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918345"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74297918"
 
 - [Разработка пользовательского интерфейса для приложения Windows Phone](#Windows)
 
-- [Дальнейшие действия](#next)
+- [Следующие шаги](#next)
 
 > [!TIP]
 > Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -46,7 +46,7 @@ ms.locfileid: "74297918"
 >
 >   - [Привет, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (простое приложение с одним экраном)
 >   - [Привет, Android (несколько экранов)](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (приложение с переходами между экранами)
->   - [Пошаговое руководство по фрагментам в Android](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (помимо прочего, используется для иерархических экранов)
+>   - [Пошаговое руководство по фрагментам в Android](/xamarin/android/platform/fragments/implementing-with-fragments/) (помимо прочего, используется для иерархических экранов)
 >   - [Привет, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Привет, iOS (несколько экранов)](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Приложения Xamarin с Xamarin.Forms (общий пользовательский интерфейс)
@@ -230,7 +230,7 @@ ms.locfileid: "74297918"
 1. В **обозревателе решений** разверните узел **WeatherApp.Droid**>**Ресурсы**>**макет** и откройте файл **Main.axml**. Файл откроется в визуальном конструкторе. (При появлении ошибки, связанной с Java, см. следующую [запись в блоге](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    > В этом проекте есть много других файлов. Их изучение выходит за рамки этого раздела, но, если вы хотите подробно рассмотреть структуру проекта Android, обратитесь к разделу [Часть 2. Подробное описание структуры](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) на странице Hello Android на сайте xamarin.com.
+    > В этом проекте есть много других файлов. Их изучение выходит за рамки этого раздела, но, если вы хотите подробно рассмотреть структуру проекта Android, обратитесь к разделу [Часть 2. Подробное описание структуры](/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) на странице Hello Android на сайте xamarin.com.
 
 2. Выберите и удалите кнопку по умолчанию, которая отображается в конструкторе.
 
@@ -247,7 +247,7 @@ ms.locfileid: "74297918"
 
 7. Установите эти свойства в окне **Свойства** (примечание: для удобства можно отсортировать список в алфавитном порядке с помощью сортировки кнопки на панели инструментов окна "Свойства"):
 
-    |Свойство|значения|
+    |Идентификаторы|{2&gt;Value&lt;2}|
     |--------------|-----------|
     |**текст**|**Search by Zip Code**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -279,7 +279,7 @@ ms.locfileid: "74297918"
 
 9. В окне **Свойства** задайте следующие свойства.
 
-    |Свойство|значения|
+    |Идентификаторы|{2&gt;Value&lt;2}|
     |--------------|-----------|
     |**текст**|**Почтовый индекс**|
     |**id**|`@+id/ZipCodeLabel`|
@@ -301,7 +301,7 @@ ms.locfileid: "74297918"
 
 10. Перетащите элемент управления **Number** c **панели элементов** на элемент управления **RelativeLayout** и разместите его под меткой **Zip Code**. Затем установите следующие свойства:
 
-    |Свойство|значения|
+    |Идентификаторы|{2&gt;Value&lt;2}|
     |--------------|-----------|
     |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -324,7 +324,7 @@ ms.locfileid: "74297918"
 
 11. Перетащите элемент управления **Button** c **панели элементов** на элемент управления **RelativeLayout** и разместите его справа от элемента управления zipCodeEntry. Затем установите следующие свойства:
 
-    |Свойство|значения|
+    |Идентификаторы|{2&gt;Value&lt;2}|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**текст**|**Get Weather**|
@@ -631,16 +631,16 @@ ms.locfileid: "74297918"
 > [!TIP]
 > Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-## <a name="next"></a> Дальнейшие действия
+## <a name="next"></a> Следующие шаги
  **Добавление пользовательского интерфейса для iOS в решение**
 
  Расширьте этот пример, добавив собственный пользовательский интерфейс для iOS. Для этого необходимо подключиться к компьютеру Mac в локальной сети, на котором установлены Xcode и Xamarin. После этого можно использовать конструктор iOS непосредственно в Visual Studio. Законченное приложение можно найти [в репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
- Также обратитесь к пошаговому руководству [Привет, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Обратите внимание, что для отображения правильного набора инструкций в правом верхнем углу страниц сайта xamarin.com должен быть выбран пункт "Visual Studio".
+ Также обратитесь к пошаговому руководству [Привет, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Обратите внимание, что для отображения правильного набора инструкций в правом верхнем углу страниц сайта xamarin.com должен быть выбран пункт "Visual Studio".
 
  **Добавление кода конкретной платформы в общий проект**
 
- Общий код в переносимой библиотеке классов не зависит от платформы, так как эта библиотека компилируется один раз и включается в пакеты приложений для каждой платформы. Если вы хотите писать общий код, который использует условную компиляцию для изоляции кода для конкретных платформ, можете воспользоваться *общим* проектом. Дополнительные сведения см. в разделе [Варианты совместного использования кода](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
+ Общий код в переносимой библиотеке классов не зависит от платформы, так как эта библиотека компилируется один раз и включается в пакеты приложений для каждой платформы. Если вы хотите писать общий код, который использует условную компиляцию для изоляции кода для конкретных платформ, можете воспользоваться *общим* проектом. Дополнительные сведения см. в разделе [Варианты совместного использования кода](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
 
-## <a name="see-also"></a>См. также
- [Веб-узел разработчика Xamarin](https://docs.microsoft.com/xamarin/) для [Windows Dev Center](https://dev.windows.com/en-us) [SWIFT и C# краткий справочник](https://aka.ms/scposter)
+## <a name="see-also"></a>См. также раздел
+ [Веб-узел разработчика Xamarin](/xamarin/) для [Windows Dev Center](https://dev.windows.com/en-us) [SWIFT и C# краткий справочник](https://aka.ms/scposter)

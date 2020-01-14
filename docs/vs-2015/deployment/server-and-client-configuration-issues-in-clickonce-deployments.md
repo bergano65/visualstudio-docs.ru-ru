@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844986"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918813"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ ms.locfileid: "75844986"
  С помощью [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]можно выполнять загрузку, использующую сжатие HTTP, технологию веб-сервера, использующую алгоритм GZIP для сжатия потока данных перед отправкой потока клиенту. Клиент — в данном случае [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]— распаковывает поток перед чтением файлов.  
   
  При использовании IIS можно легко включить сжатие HTTP. Однако при включении сжатия HTTP оно включается только для определенных типов файлов — а именно, HTML и текстовых файлов. Чтобы включить сжатие для сборок (DLL), XML (XML), манифестов развертывания (. Application) и манифестов приложений (. manifest), необходимо добавить эти типы файлов в список типов для сжатия IIS. Пока вы не добавите типы файлов в развертывание, будут сжиматься только текстовые и HTML-файлы.  
-  
- Подробные инструкции для IIS см. [в разделе Указание дополнительных типов документов для СЖАТИЯ HTTP](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>См. также раздел  
  [Устранение неполадок при развертывании ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

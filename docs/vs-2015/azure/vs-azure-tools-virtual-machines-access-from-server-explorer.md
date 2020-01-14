@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849943"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917098"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Доступ к виртуальным машинам Azure из обозревателя сервера
 
@@ -31,7 +31,7 @@ ms.locfileid: "75849943"
    | DNS-имя |URL-адрес виртуальной машины в Интернете. |
    | Среда |У виртуальной машины значение этого свойства всегда равно "Производство". |
    | Name |Имя виртуальной машины. |
-   | Размер |Размер виртуальной машины, который отражает объем памяти и доступного дискового пространства. См. дополнительные сведения о [размерах виртуальных машин](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
+   | Размер |Размер виртуальной машины, который отражает объем памяти и доступного дискового пространства. См. дополнительные сведения о [размерах виртуальных машин](/azure/cloud-services/cloud-services-sizes-specs). |
    | Status |Возможные значения: "Запуск", "Запущено", "Остановка", "Остановлено" и "Получение состояния". Если отображается значение "Получение состояния", текущее состояние неизвестно. Значения этого свойства отличаются от значений, используемых на [портале Azure](https://portal.azure.com/). |
    | SubscriptionID |Идентификатор подписки вашей учетной записи Azure. Эти сведения можно узнать на [портале Azure](https://portal.azure.com/), просмотрев свойства подписки. |
 2. Выберите узел конечной точки, а затем просмотрите окно **Свойства** .

@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 81bb9bcecf37d2ed3fca29a4edc57738732de1a5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850602"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917277"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "75850602"
  При публикации с помощью URL-адреса убедитесь, что на целевом компьютере включены серверные расширения FrontPage.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: не удалось создать веб-сайт "\<сайт >". Компоненты для взаимодействия с серверными расширениями FrontPage не установлены.  
- Убедитесь, что на компьютере, на котором выполняется публикация, установлен компонент Microsoft Visual Studio Web Authoring. Для пользователей Express этот компонент не устанавливается по умолчанию. Дополнительные сведения см. на веб-сайте [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us).  
+ Убедитесь, что на компьютере, на котором выполняется публикация, установлен компонент Microsoft Visual Studio Web Authoring. Для пользователей Express этот компонент не устанавливается по умолчанию.  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: не удалось найти файл "Microsoft. Windows. Common-Controls, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = Win32"  
  Это сообщение об ошибке появляется при попытке публикации приложения WPF с включенными стилями оформления. Чтобы устранить эту проблему, см. раздел [как опубликовать приложение WPF с включенными визуальными стилями](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  

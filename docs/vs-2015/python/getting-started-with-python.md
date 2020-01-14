@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 960511fcfb83dfc6ac3c58a806d8a23f1ff61597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298187"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918779"
 ---
 # <a name="getting-started-with-python"></a>Начало работы с Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Python — это популярный язык программирования
 
 Чтобы установить Python, посетите [https://www.python.org/download/](https://www.python.org/download/).
 
-## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
+## <a name="python-tools-for-visual-studio"></a>Инструменты Python для Visual Studio
   
 Инструменты Python для Visual Studio, который можно установить из [VisualStudio.com](https://www.visualstudio.com/explore/python-vs), предоставляет следующие возможности.  
   
@@ -60,7 +60,7 @@ Python — это популярный язык программирования
 
 - [Руководство по установке](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Короткие видеоролики по началу работы и углубленному рассмотрению](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Демонстрация установки и возможностей (27 мин)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Демонстрация установки и возможностей (27 минут)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Документация](https://github.com/Microsoft/PTVS/wiki)  
 
 Обратите внимание, что Visual Studio в настоящее время не предоставляет средств для создания автономного исполняемого файла с помощью Python, что по сути означает программу с внедренным интерпретатором Python. Но предназначенные для выполнения этой задачи средства можно найти в сообществе Python, как описано на сайте [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython также можно внедрять в приложение машинного кода. Об этом можно узнать в записи блога [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Использование внедряемого ZIP-файла CPython).
@@ -73,7 +73,7 @@ Python — это популярный язык программирования
   
 Пакет Azure SDK для Python — это удобное средство для использования служб Microsoft Azure и управления ими. Оно поддерживает ОС Windows, Mac и Linux. Подробные сведения см. в перечисленных ниже ресурсах. 
 
-- Чтобы установить пакет SDK, используйте [индекс пакета Python](https://pypi.python.org/pypi/azure) или следуйте инструкциям по [установке Python и пакета SDK](https://docs.microsoft.com/azure/python/python-sdk-azure-install) в документации Azure. 
+- Чтобы установить пакет SDK, используйте [индекс пакета Python](https://pypi.python.org/pypi/azure) или следуйте инструкциям по [установке Python и пакета SDK](/azure/python/python-sdk-azure-install) в документации Azure. 
 - В [Центре разработчиков пакета Azure SDK для Python](https://azure.microsoft.com/develop/python/) содержится много полезных сведений, начиная с описания установки и заканчивая документацией с учебниками.  Описание некоторых особенностей  
 - Практические руководства
   - [Хранилище BLOB-объектов](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
@@ -89,7 +89,7 @@ Python — это популярный язык программирования
 
 Мы рекомендуем получить среду IPython и библиотеки научных вычислений (matplotlib, scipy, numpy и т. д.) из [Калифорнийского университета в Ирвайне](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
 
 [Начало работы с PTVS. Настройка Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [Начало работы с PTVS. Приступаем к написанию кода (проекты)](../python/getting-started-with-ptvs-start-coding-projects.md)

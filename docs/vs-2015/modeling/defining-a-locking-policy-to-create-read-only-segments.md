@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849570"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918846"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ API неизменности [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK в
 > [!NOTE]
 > Политику блокировки можно обойти с помощью отражения. Она предоставляет четкие границы для сторонних разработчиков, но не обеспечивает надежную защиту.
 
- Дополнительные сведения и примеры доступны на веб-сайте [SDK для визуализации и моделирования](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Дополнительные сведения можно найти на веб-сайте [SDK для визуализации и моделирования](https://www.microsoft.com/download/details.aspx?id=48148) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="setting-and-getting-locks"></a>Установка и получение блокировок
  Можно установить блокировки для хранилища, для секции или для отдельного элемента. Например, эта инструкция предотвращает удаление элемента модели и также предотвратит изменение его свойств:

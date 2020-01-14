@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850396"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919167"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Отладка облачной службы или виртуальной машины Azure в Visual Studio
 
@@ -50,7 +50,7 @@ Visual Studio предоставляет разнообразные вариан
 Если вы включили удаленную отладку для облачной службы, это не приводит к снижению производительности и не требует дополнительных затрат. Не используйте удаленную отладку для рабочей службы, так как это может негативно сказаться на работе клиентов, использующих эту службу.
 
 > [!NOTE]
-> При публикации облачной службы из Visual Studio для всех ролей в службе, которые используют .NET Framework 4 или .NET Framework 4.5, можно активировать **IntelliTrace**. С помощью **IntelliTrace** можно изучить события, произошедшие в экземпляре роли в прошлом, и воспроизвести контекст за тот период времени. Ознакомьтесь со статьями [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) и [Использование IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> При публикации облачной службы из Visual Studio для всех ролей в службе, которые используют .NET Framework 4 или .NET Framework 4.5, можно активировать **IntelliTrace**. С помощью **IntelliTrace** можно изучить события, произошедшие в экземпляре роли в прошлом, и воспроизвести контекст за тот период времени. Ознакомьтесь со статьями [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md) и [Использование IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Порядок включения удаленной отладки для облачной службы
 
@@ -150,7 +150,7 @@ Visual Studio предоставляет разнообразные вариан
     > [!NOTE]
     > Если вы еще не вошли в систему, отобразится запрос на выполнение входа с использованием вашей учетной записи Azure.
 
-3. Выберите параметры для виртуальной машины, а затем нажмите кнопку **ОК**. Дополнительные сведения см. в статье [Виртуальные машины](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN).
+3. Выберите параметры для виртуальной машины, а затем нажмите кнопку **ОК**. Дополнительные сведения см. в статье [Виртуальные машины](/previous-versions/azure/jj156003(v=azure.100)).
 
     Имя, введенное в поле DNS-имя, становится именем виртуальной машины.
 
@@ -188,6 +188,6 @@ Visual Studio предоставляет разнообразные вариан
 
 ## <a name="next-steps"></a>Следующие шаги
 
-* Используйте **Intellitrace** для сбора данных журнала вызовов и событий с сервера выпуска. Ознакомьтесь со статьей [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+* Используйте **Intellitrace** для сбора данных журнала вызовов и событий с сервера выпуска. Ознакомьтесь со статьей [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 * Используйте **систему диагностики Azure** для регистрации подробных сведений из кода, выполняющегося в ролях, независимо от того, запущены ли эти роли в среде разработки или в Azure. Ознакомьтесь со статьей [Включение системы диагностики Azure в облачных службах Azure](https://msdn.microsoft.com/library/gg433048.aspx).

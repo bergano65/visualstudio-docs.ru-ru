@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a571be6b713cd59ca290906e9398b78c8c021ba8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ce4aa6aef9c70d0d628603afa7a256c309f280d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661170"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917947"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: помечайте члены как статические
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю документацию по Visual Studio см. в разделе [CA1822: Пометьте члены как статические](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).
+Последнюю документацию по Visual Studio см. в разделе [CA1822: Пометьте члены как статические](/visualstudio/code-quality/ca1822-mark-members-as-static).
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "72661170"
 |Категория|Microsoft. Performance|
 |Критическое изменение|Не критическое — если элемент не виден за пределами сборки, независимо от внесенных изменений.<br /><br /> Не критическое — если вы просто изменяете член на член экземпляра с ключевым словом `this`.<br /><br /> Критическое — при изменении члена члена экземпляра на статический член, который является видимым за пределами сборки.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Элемент, не обращающийся к данным экземпляра, не помечен как статический (общий в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
 
 ## <a name="rule-description"></a>Описание правила

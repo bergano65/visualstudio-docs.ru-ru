@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2a1611f8fcc1ba7f754b6d178b70180678cd06d6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848921"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917612"
 ---
 # <a name="image-service-and-catalog"></a>Служба образов и каталог
 Этот Cookbook содержит рекомендации и рекомендации по внедрению службы образов Visual Studio и каталога образов, появившихся в Visual Studio 2015.
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Обновите код, чтобы использовать службу изображений для запроса моникеров через обновленное сопоставление. (Это может означать обновление до **криспимажес** для управляемого кода или запрос Хбитмапс или хиконс из службы образов и их передача для машинного кода.)
 
 ## <a name="testing-your-images"></a>Тестирование образов
- Средство просмотра библиотеки изображений можно использовать для тестирования манифестов изображений, чтобы убедиться, что все создано правильно. Это средство можно найти в [пакете SDK для Visual Studio 2015](visual-studio-sdk.md). Документацию по этому средству и другим пользователям можно найти [здесь](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).
+ Средство просмотра библиотеки изображений можно использовать для тестирования манифестов изображений, чтобы убедиться, что все создано правильно. Это средство можно найти в [пакете SDK для Visual Studio 2015](visual-studio-sdk.md). Документацию по этому средству и другим пользователям можно найти [здесь](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289810"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917554"
 ---
 # <a name="deploying-applications-services-and-components"></a>Развертывание приложений, служб и компонентов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "74289810"
 |**Публикация в облаке:** Вы можете предоставить доступ к приложениям, службам и данным из любого места с помощью Visual Studio, развернув их в Microsoft Azure.|[Публикация приложений в Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Публикация приложения для Магазина Windows:** Вы можете легко создавать, отправлять и продавать приложения из Магазина Windows клиентам по всему миру.|[Упаковка, развертывание и запрос приложений Магазина Windows](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Публикация Windows Phone приложения:** Вы можете отправить новое приложение или обновление в существующее приложение для сертификации в центре разработки Windows Phone.|[Публикация приложения Windows Phone](https://developer.microsoft.com/)|  
-|**Развертывание приложения или службы ASP.NET:** Приложения и службы ASP.NET можно развертывать различными способами.|[Развертывание веб-приложений и служб ASP.NET](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Развертывание приложения или службы ASP.NET:** Приложения и службы ASP.NET можно развертывать различными способами.|[Развертывание веб-приложений и служб ASP.NET](/aspnet/mvc/overview/deployment/)|  
 |**Развертывание приложения или службы LightSwitch:** После создания приложений и служб OData с помощью LightSwitch их можно развернуть на веб-сервере или Microsoft Azure.|[Развертывание приложений LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
 |**Публикация приложения для SharePoint:** Приложение для SharePoint можно опубликовать в магазине Office или в каталоге приложений для внутренней организации.|[Публикация приложения для SharePoint с помощью Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
 |**Публикация приложения для Office:** Вы можете опубликовать приложение для Office в магазине Office или в каталоге приложений для внутренней организации.|[Публикация приложения для Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  

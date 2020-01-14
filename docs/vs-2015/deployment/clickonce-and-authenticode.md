@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f7fd108250a406339d5be08b5a6e9aaf67d039
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847791"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917567"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce и технология Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Authenticode * — это технология Майкрософт, испол�
   
 - Удалите приложение и переустановите новую версию с действительным сертификатом.  
   
-- Создайте сборку командной строки, которая обновляет сертификат. Пошаговые инструкции для этого процесса можно найти в [справочной статье 925521 Майкрософт](https://support.microsoft.com/kb/925521).  
+- Создайте сборку командной строки, которая обновляет сертификат.  
   
 ### <a name="storing-certificates"></a>Хранение сертификатов  
   

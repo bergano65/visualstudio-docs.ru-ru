@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e590af12e8979d16a946339cae530fd5ccc1b08d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c3e970ac2d6f7de86908a88aff6235c598ead810
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850743"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918476"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Загрузка файла в качестве модели с возможностью навигации**. Более эффективный способ — это чтение данных как модели, по которой может перемещаться код текстового шаблона. Например, можно загрузить XML-файл и выполнять навигацию по этому файлу с помощью выражений XPath. Можно также использовать [XSD. exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) для создания набора классов, с помощью которых можно считывать XML-данные.
+ **Загрузка файла в качестве модели с возможностью навигации**. Более эффективный способ — это чтение данных как модели, по которой может перемещаться код текстового шаблона. Например, можно загрузить XML-файл и выполнять навигацию по этому файлу с помощью выражений XPath. Можно также использовать [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) для создания набора классов, с помощью которых можно считывать XML-данные.
 
  **Измените файл модели на диаграмме или в форме.** [!INCLUDE[dsl](../includes/dsl-md.md)] предоставляет средства, позволяющие редактировать модель в виде диаграммы или формы Windows Forms. Это упрощает обсуждение модели с пользователями созданного приложения. [!INCLUDE[dsl](../includes/dsl-md.md)] также создает набор строго типизированных классов, отражающих структуру модели. Дополнительные сведения см. в разделе [Создание кода на основе предметно-](../modeling/generating-code-from-a-domain-specific-language.md)ориентированного языка.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845287"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918919"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ partial class MyDslClipboardCommandSet
 Переопределите`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *мидсл* в проекте DslPackage.
 
  **Сохранение макета фигуры с помощью копирования и вставки.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. 
 
  Чтобы достигнуть такого эффекта, добавьте фигуры и соединители в скопированный ElementGroupPrototype. Самый удобный метод переопределения — это ElementOperations.CreateElementGroupPrototype(). Для этого добавьте в проект Dsl следующий код:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Вставка фигур в выбранном месте, например текущей позиции курсора.**
-Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось.
 
  Для достижения такого эффекта переопределите `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, чтобы использовать версию `ElementOperations.Merge()`, зависящую от местоположения. Для этого добавьте в проект DslPackage следующий код:
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>См. также раздел
- [Настройка создания элементов и перемещение](../modeling/customizing-element-creation-and-movement.md) [инструкций. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) [Настройка поведения при удалении](../modeling/customizing-deletion-behavior.md) [. Пример: схемы канала VMSDK пример](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Настройка создания элементов и перемещение](../modeling/customizing-element-creation-and-movement.md) [инструкций: Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) [Настройка поведения удаления](../modeling/customizing-deletion-behavior.md)
+ 

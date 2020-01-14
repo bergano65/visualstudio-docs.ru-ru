@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573317"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916019"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Использование скриптов Windows PowerShell для публикации в тестовую среду и среду разработки
 
@@ -26,7 +26,7 @@ ms.locfileid: "75573317"
 
 * Visual Studio 2015 или последующей версии с установленной **рабочей нагрузкой Azure** или Visual Studio 2013 с пакетом Azure SDK, начиная с версии 2.3. Ознакомьтесь со страницей [скачиваемых компонентов Visual Studio](https://visualstudio.microsoft.com/downloads). (Пакет Azure SDK не нужен для создания сценариев для веб-проектов. Он предназначен для веб-проектов, а не веб-ролей облачных служб.)
 * Azure PowerShell 0.7.4 или более поздней версии. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) , начиная с версии 3.0.
+* [Windows PowerShell](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) , начиная с версии 3.0.
 
 ## <a name="additional-tools"></a>Дополнительные инструменты
 

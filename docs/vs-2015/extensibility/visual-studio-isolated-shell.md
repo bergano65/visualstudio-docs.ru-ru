@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850389"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919208"
 ---
 # <a name="visual-studio-isolated-shell"></a>Изолированная оболочка Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "75850389"
   
  Для работы с проектом изолированной оболочки необходимо установить пакет SDK для Visual Studio. Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Чтобы создать изолированное приложение оболочки, начните с изолированного проекта оболочки Visual Studio. Этот проект содержит все необходимое для разработки и тестирования собственного приложения изолированной оболочки. Когда вы будете готовы к написанию программы установки, которая развертывает приложение, необходимо получить распространяемый пакет изолированной оболочки из [оболочка Microsoft Visual Studio Shell (изолированная) распространяемого пакета](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J).  
+ Чтобы создать изолированное приложение оболочки, начните с изолированного проекта оболочки Visual Studio. Этот проект содержит все необходимое для разработки и тестирования собственного приложения изолированной оболочки. Когда вы будете готовы к написанию программы установки, которая развертывает приложение, необходимо получить распространяемый пакет изолированной оболочки из [оболочка Microsoft Visual Studio Shell (изолированная) распространяемого пакета](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
 > Перед тем как получить доступ к распространяемому пакету изолированной оболочки, вам будет предложено заполнить краткий опрос клиентов.  После заполнения анкеты вы будете направлены на страницу подключения к Visual Studio со ссылками на распространяемые пакеты.  Ссылки для скачивания см. в последующих посещениях сайта Visual Studio Connect на вкладке **программы &#124; Visual Studio 2015 интеграция и изолированная оболочка** .  
