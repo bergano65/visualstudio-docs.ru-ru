@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850473"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918882"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Определение профиля для расширения UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ ms.locfileid: "75850473"
 7. Выполните сборку расширения Visual Studio, создав проект расширения или сжав все файлы, следуя инструкциям в предыдущих разделах.
 
 ## <a name="Schema"></a>Структура профиля
- XSD-файл для профилей UML можно найти в следующем примере: [Настройка стереотипов и профилей XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Для облегчения изменения файлов профилей установите файл `.xsd` в следующий каталог:
+
+ Для облегчения изменения файлов профилей установите файл `.xsd` в следующий каталог:
 
  **%ProgramFiles%\Microsoft Visual Studio [версия] \Ксмл\счемас**
 
@@ -365,4 +366,5 @@ ms.locfileid: "75850473"
 6. Перезапустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>См. также раздел
- [Добавление стереотипов в элементы модели UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Настройка модели с помощью профилей и](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [стандартных стереотипов стереотипов для моделей UML](../modeling/standard-stereotypes-for-uml-models.md) [пример. цвет элементов UML по образцу стереотипа](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [: Настройка стереотипов, XSD-схем](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Добавление стереотипов в элементы модели UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Настройка модели с помощью профилей и](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [стандартных стереотипов стереотипов для моделей UML](../modeling/standard-stereotypes-for-uml-models.md)
+ 

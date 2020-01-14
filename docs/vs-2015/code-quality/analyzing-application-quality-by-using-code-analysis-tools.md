@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f8ec0706530cd61653d44533654cf453d25eb42e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849882"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919075"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>{2&gt;Анализ качества приложений с помощью средств анализа кода&lt;2}
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "75849882"
 
  [Анализ качества драйвера с помощью средств анализа кода](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Анализ кода для драйверов — это средство статической проверки времени компиляции, которое обнаруживает основные ошибки кода в C и C++ программах и включает специализированный модуль, предназначенный для обнаружения ошибок в (в основном) коде драйвера режима ядра. Средство статической проверки (SDV) — это средство статической проверки, которое систематически анализирует исходный код в работающих в режиме ядра драйверах Windows. SDV определяет, правильно ли драйвер взаимодействует с ядром операционной системы Windows.
 
- [Анализ кода для драйверов предупреждения](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Описание предупреждений, которые анализ кода для драйверов сообщает при обнаружении возможной ошибки в коде драйвера.
+ [Анализ кода для драйверов предупреждения](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings) Описание предупреждений, которые анализ кода для драйверов сообщает при обнаружении возможной ошибки в коде драйвера.
 
 ## <a name="related-tasks"></a>Связанные задачи
  [Измерение сложности и удобства поддержки управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Вставьте здесь описание.

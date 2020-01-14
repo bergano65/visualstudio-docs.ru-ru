@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850679"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916801"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете сделать расширения конструктором, который используется для редактирования определений DSL. Типы расширений, которые можно сделать, включают добавление команд меню, добавление обработчиков для жестов перетаскивания и двойных щелчков, а также правила, активируемые при изменении определенных типов значений или связей. Расширения можно упаковать как расширение интеграции Visual Studio (VSIX) и распространить среди других пользователей.
-
- Пример кода и дополнительные сведения об этой функции см. на [веб-сайте SDK визуализации и моделирования Visual Studio (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Настройка решения
  Настройте проект, содержащий код вашего расширения, и проект VSIX, который экспортирует проект. Решение может содержать другие проекты, включенные в один и тот же VSIX.

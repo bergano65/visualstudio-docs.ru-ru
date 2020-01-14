@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850806"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917317"
 ---
 # <a name="structure-your-modeling-solution"></a>Разработка структуры решения моделирования
 
@@ -34,7 +34,7 @@ ms.locfileid: "75850806"
 
 #### <a name="to-divide-an-application-into-layers"></a>Разделение приложения на слои
 
-1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN)).
+1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](/previous-versions/msp-n-p/ee658107(v=pandp.10))).
 
 2. Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которое мы будем называть решением "Архитектура". Это решение будет использоваться для создания общей структуры системы. Оно будет содержать только модели без кода.
 

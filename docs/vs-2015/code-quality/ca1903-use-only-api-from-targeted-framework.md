@@ -15,17 +15,17 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7dec130e4a4704bea347f94ff57d354a4465ddd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604968"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917824"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: использовать API-интерфейс только из целевой исполняющей среды
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю документацию по Visual Studio см. в разделе [CA1903: использование API только из целевой платформы](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
+Последнюю документацию по Visual Studio см. в разделе [CA1903: использование API только из целевой платформы](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "72604968"
 |Категория|Microsoft. переносимость|
 |Критическое изменение|Критическое — при срабатывании сигнатуры видимого извне члена или типа.<br /><br /> Не критическое — при срабатывании в теле метода.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Элемент или тип использует член или тип, который появился в пакете обновления, который не был включен в целевую платформу проекта.
 
 ## <a name="rule-description"></a>Описание правила
@@ -47,7 +47,7 @@ ms.locfileid: "72604968"
 |Когда Целевая платформа|Срабатывает при использовании членов, появившихся в|
 |.NET Framework 2.0|.NET Framework 2,0 с пакетом обновления 1 (SP1), .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3,5|.NET Framework 3.5 SP1|
+|.NET Framework 3.5|Платформа .NET Framework 3.5 с пакетом обновления 1 (SP1)|
 |.NET Framework 4|Н/Д|
 
  Чтобы изменить целевую платформу проекта, см. раздел [нацеленность на определенную версию .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955053"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919121"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Записи реестра для надстроек VSTO
   При развертывании надстроек VSTO, созданных с помощью Visual Studio, необходимо создать определенный набор записей реестра. Эти записи реестра предоставляют сведения, позволяющие приложению Microsoft Office обнаружить и загрузить надстройку VSTO.
@@ -62,7 +62,7 @@ ms.locfileid: "74955053"
 >
 >Если установщик предназначен для текущего пользователя, его не нужно устанавливать в WOW6432Node, так как путь к HKEY_CURRENT_USER \Софтваре является общим.
 >
->Дополнительные сведения см. [в разделе данные о 32-разрядных и 64-битных приложениях в реестре](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
+>Дополнительные сведения см. [в разделе данные о 32-разрядных и 64-битных приложениях в реестре](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
 
  В следующей таблице перечислены записи в данном разделе реестра.
 

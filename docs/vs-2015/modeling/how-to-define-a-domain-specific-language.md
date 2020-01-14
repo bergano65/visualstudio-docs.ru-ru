@@ -18,28 +18,26 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 03c0da634ea740517380896542e9df5e6c7a5fbd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850699"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918595"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы определить доменный язык (DSL), необходимо создать решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] из шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.
 
- Если вы не знакомы с доменным DSL, мы рекомендуем вам работать в **лаборатории средств DSL**, которую можно найти на этом сайте: [висуализатон и пакет SDK для моделирования](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
-
 ## <a name="templates"></a>Выбор шаблона решения
  Для определения доменного языка необходимо установить следующие компоненты.
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)|
+|Пакет SDK для визуализации и моделирования в Visual Studio|[Загрузка пакета SDK для моделирования](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  Для создания нового доменного языка необходимо создать новое решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] при помощи шаблона проекта доменного языка.
 

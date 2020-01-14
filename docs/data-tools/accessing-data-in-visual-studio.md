@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587099"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916718"
 ---
 # <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -108,7 +108,7 @@ ms.locfileid: "75587099"
 
 ## <a name="native-c"></a>Неуправляемый C++
 
-C++в большинстве случаев приложения, подключающиеся к SQL Server, должны использовать [драйвер Microsoft® ODBC 13,1 для SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) . Если серверы связаны, OLE DB является обязательным и для использования [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Доступ к другим базам данных можно получить с помощью [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) или драйверов OLE DB напрямую. ODBC — это текущий стандартный интерфейс базы данных, но большинство систем баз данных предоставляют настраиваемые функции, доступ к которым через интерфейс ODBC невозможен. OLE DB — это устаревшая технология доступа к данным COM, которая по-прежнему поддерживается, но не рекомендуется для новых приложений. Дополнительные сведения см. [в разделе доступ к данным C++в Visual ](/cpp/data/data-access-in-cpp).
+C++в большинстве случаев приложения, подключающиеся к SQL Server, должны использовать [драйвер Microsoft® ODBC 13,1 для SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) . Если серверы связаны, OLE DB является обязательным и для использования [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Доступ к другим базам данных можно получить с помощью [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) или драйверов OLE DB напрямую. ODBC — это текущий стандартный интерфейс базы данных, но большинство систем баз данных предоставляют настраиваемые функции, доступ к которым через интерфейс ODBC невозможен. OLE DB — это устаревшая технология доступа к данным COM, которая по-прежнему поддерживается, но не рекомендуется для новых приложений. Дополнительные сведения см. [в разделе доступ к данным C++в Visual ](/cpp/data/data-access-in-cpp).
 
 C++программы, использующие службы RESTful, могут использовать [ C++ пакет SDK для оставшейся](https://github.com/Microsoft/cpprestsdk)работы.
 

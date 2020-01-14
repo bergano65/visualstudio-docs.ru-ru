@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851490"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919258"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Новые возможности Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ ms.locfileid: "75851490"
 
 - **C# / Xamarin**. Воспользуйтесь [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) для создания собственных приложений для Windows, iOS и Android в Visual Studio с помощью C#.
 
-     В разделах[Отладка](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) и [Отладка на устройстве](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows)[руководств для разработчиков Xamarin](https://docs.microsoft.com/xamarin/) описываются практические принципы отладки.
+     В разделах[Отладка](/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) и [Отладка на устройстве](/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows)[руководств для разработчиков Xamarin](/xamarin/) описываются практические принципы отладки.
 
 - **C++ / Android**. Используйте шаблоны [Visual C++ для разработки кроссплатформенных мобильных приложений](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) вместе со сторонними средствами, например [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , для создания собственных приложений для Windows и Android.
 

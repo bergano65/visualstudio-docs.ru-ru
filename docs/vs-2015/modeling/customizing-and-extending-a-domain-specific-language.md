@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 55ec2cf2f2a6ebf4186f81f6f3dd61766acd7958
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852417"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918890"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Настройка и расширение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "75852417"
 |Значок на фигуре изменяется для обозначения состояния.|Установите видимость для сопоставления декораторов в окне сведения о DSL. Находит несколько декораторов изображений на одной и той же должности. См. раздел [Обновление фигур и соединителей для отражения модели](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Или переопределите `ImageField.GetDisplayImage()`. См. пример в <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Задание фонового изображения для любой фигуры|Переопределите Инитиализеинстанцересаурцес (), чтобы добавить привязанный Имажефиелд. См. раздел [Настройка представления на диаграмме](../modeling/customizing-presentation-on-the-diagram.md).|
 |Вложение фигур в любую глубину|Настройте рекурсивное дерево внедрения. Определите Баундсрулес для размещения фигур. См. раздел [Настройка представления на диаграмме](../modeling/customizing-presentation-on-the-diagram.md).|
-|Присоединение соединителей в фиксированных точках на границе элемента.|Определите в схеме внедренные элементы терминала, представленные маленькими портами. Используйте Баундсрулес, чтобы исправить порты на месте. См. Пример схемы цепи в [пакете SDK для визуализации и моделирования](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).|
+|Присоединение соединителей в фиксированных точках на границе элемента.|Определите в схеме внедренные элементы терминала, представленные маленькими портами. Используйте Баундсрулес, чтобы исправить порты на месте.|
 |Текстовое поле отображает значение, полученное из других значений.|Сопоставьте декоратор текста с вычисляемым или пользовательским свойством домена хранилища. Дополнительные сведения см. в разделе [вычисляемые и пользовательские свойства хранилища](../modeling/calculated-and-custom-storage-properties.md).|
 |Распространение изменений между элементами модели или между фигурами|См. раздел [Проверка на предметно-](../modeling/validation-in-a-domain-specific-language.md)ориентированном языке.|
 |Распространите изменения на ресурсы, такие как другие расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], за пределами хранилища.|См. раздел [обработчики событий, распространяющие изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md).|

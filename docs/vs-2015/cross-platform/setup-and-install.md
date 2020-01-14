@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 430c54527ad0a4647bb750c505942242688aaa17
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbdeeab49da1a63562bb9a4188a264a8d3d99da2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297727"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917047"
 ---
 # <a name="setup-and-install"></a>Настройка и установка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "74297727"
   
  **Содержание раздела**  
   
-- [Предварительные требования](#prereq)  
+- [Необходимые компоненты](#prereq)  
   
-- [Настройка Windows (Visual Studio и Xamarin)](#windows)  
+- [Программа установки Windows (Visual Studio и Xamarin)](#windows)  
   
 - [Настройка Mac (Apple ID, Xcode и Xamarin)](#mac)  
   
-## <a name="prereq"></a> Предварительные требования  
+## <a name="prereq"></a> Необходимые компоненты  
   
 1. Для Windows и Android:  
   
@@ -53,7 +53,7 @@ ms.locfileid: "74297727"
   
     1. При использовании Visual Studio на компьютере Windows (версии 7 или более поздней) в качестве основной среды разработки, подключенный к сети Mac необходим только для компиляции и отладки приложений iOS, подключения к симулятору iOS или связанным устройствам, а также для использования конструктора раскадровки в Visual Studio для разработки пользовательского интерфейса. Старые модели Mac полностью подходят для этой дополнительной роли.  
   
-## <a name="windows"></a> Настройка Windows (Visual Studio и Xamarin)  
+## <a name="windows"></a> Программа установки Windows (Visual Studio и Xamarin)  
   
 > [!TIP]
 > Эти инструкции предназначены для Visual Studio 2015. Чтобы использовать Xamarin с Visual Studio 2013 (требуется обновление 2), следуйте инструкциям по [прямой установке Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
@@ -97,8 +97,8 @@ ms.locfileid: "74297727"
   
 2. Скачайте и установите Xcode на странице [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) и добавьте ваш идентификатор Apple ID, как описано в разделе [Добавление учетной записи для XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  
   
-3. Скачайте и установите Xamarin, следуя указаниям в статье [Установка и настройка Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (xamarin.com).  
+3. Скачайте и установите Xamarin, следуя указаниям в статье [Установка и настройка Xamarin.iOS](/xamarin/ios/get-started/installation/mac) (xamarin.com).  
   
-4. После завершения установки Xamarin на компьютерах Mac и Windows следуйте инструкциям в статье [Подключение к Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com), чтобы обеспечить возможность работы с iOS и Mac из Visual Studio на компьютере под управлением Windows.  
+4. После завершения установки Xamarin на компьютерах Mac и Windows следуйте инструкциям в статье [Подключение к Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com), чтобы обеспечить возможность работы с iOS и Mac из Visual Studio на компьютере под управлением Windows.  
   
      Обратите внимание, что оба компьютера должны находиться в одной локальной сети.

@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d2b716bb4e6119c76f593ff067784f360cb48187
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846668"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917028"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "75846668"
 ### <a name="net-languages"></a>Языки платформы .NET
  Весь доступ к данным .NET, включая в .NET Core, основан на ADO.NET, наборе классов, определяющих интерфейс для доступа к любому типу источника данных — реляционному и нереляционному. Visual Studio содержит несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, управления данными и предоставления данных пользователю. В документации в этом разделе описывается использование этих средств. Вы также можете программировать непосредственно для командных объектов ADO.NET. Дополнительные сведения о непосредственном вызове API-интерфейсов ADO.NET см. в разделе [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) библиотеки MSDN.
 
- Документацию по доступу к данным, специально связанная с ASP.NET, см. в разделе [Работа с данными](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/) на сайте ASP.NET. Руководство по использованию Entity Framework с ASP.NET MVC см. в разделе [Начало работы с Entity Framework 6 Code First с помощью MVC 5](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ Документацию по доступу к данным, специально связанная с ASP.NET, см. в разделе [Работа с данными](/aspnet/web-forms/overview/presenting-and-managing-data/) на сайте ASP.NET. Руководство по использованию Entity Framework с ASP.NET MVC см. в разделе [Начало работы с Entity Framework 6 Code First с помощью MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
  Приложения универсальная платформа Windows (UWP) в C# или Visual Basic могут использовать пакет Microsoft Azure SDK для .NET для доступа к службе хранилища Azure и другим службам Azure. Класс Windows. Web. HttpClient обеспечивает взаимодействие с любой службой RESTFUL. Дополнительные сведения см. в разделе [Подключение к HTTP-серверу с помощью Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 

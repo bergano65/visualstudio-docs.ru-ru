@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60951091914474f07f19672799fb59c8b2d0aa56
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299469"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919140"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Перенос приложений на универсальную платформу Windows (UWP)
 Вручную внесите необходимые изменения в существующие файлы проектов для приложений Магазина Windows 8.1, Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, чтобы их можно было использовать в окончательной первоначальной версии Visual Studio 2015. (Если у вас есть универсальное приложение Windows 8.1 с проектом приложения Windows и проектом Windows Phone, инструкции по миграции нужно будет выполнить для каждого проекта.)
@@ -292,7 +292,7 @@ ms.locfileid: "74299469"
         </PropertyGroup>
         ```
 
-4. Измените значение V140 для всех экземпляров элемента \<PlatformToolset >. Пример.
+4. Измените значение V140 для всех экземпляров элемента \<PlatformToolset >. Например:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -379,7 +379,7 @@ ms.locfileid: "74299469"
 
 5. Найдите элемент \<необходимые компоненты > и удалите этот элемент и все его дочерние элементы.
 
-6. Добавьте пространство имен **UAP** в следующие \<ресурс > элементы: Scale, дксфеатурелевел. Пример.
+6. Добавьте пространство имен **UAP** в следующие \<ресурс > элементы: Scale, дксфеатурелевел. Например:
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ ms.locfileid: "74299469"
 
    ```
 
-7. Добавьте пространство имен **UAP** в следующие возможности \<> элементов: Документслибрари, Пиктуреслибрари, Видеослибрари, Мусиклибрари, Ентерприсеаусентикатион, SharedUserCertificates, removableStorage, встречах и Contacts. Пример.
+7. Добавьте пространство имен **UAP** в следующие возможности \<> элементов: Документслибрари, Пиктуреслибрари, Видеослибрари, Мусиклибрари, Ентерприсеаусентикатион, SharedUserCertificates, removableStorage, встречах и Contacts. Например:
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ ms.locfileid: "74299469"
 
    ```
 
-8. Добавьте пространство имен **UAP** в элемент > \<висуалелементс и все его дочерние элементы. Пример.
+8. Добавьте пространство имен **UAP** в элемент > \<висуалелементс и все его дочерние элементы. Например:
 
    ```xml
    <uap:VisualElements
@@ -444,7 +444,7 @@ ms.locfileid: "74299469"
 
    ```
 
-9. Добавьте пространство имен **UAP** в > \<аппликатионконтентурирулес и все его дочерние элементы. Пример.
+9. Добавьте пространство имен **UAP** в > \<аппликатионконтентурирулес и все его дочерние элементы. Например:
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ ms.locfileid: "74299469"
 
     ```
 
-10. Добавьте пространство имен **UAP** в следующие \<расширения > элементы и все его дочерние элементы: Windows. аккаунтпиктурепровиде, Windows. Alarm, Windows. аппоинтментспровидер Windows. аутоплайконтент, Windows. аутоплайдевице, Windows. качедфилеупдате, Windows. cameraSettings, Windows. FileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Протокол, Windows. Search, Windows. shareTarget. Пример.
+10. Добавьте пространство имен **UAP** в следующие \<расширения > элементы и все его дочерние элементы: Windows. аккаунтпиктурепровиде, Windows. Alarm, Windows. аппоинтментспровидер Windows. аутоплайконтент, Windows. аутоплайдевице, Windows. качедфилеупдате, Windows. cameraSettings, Windows. FileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Протокол, Windows. Search, Windows. shareTarget. Например:
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ ms.locfileid: "74299469"
 
     ```
 
-11. Добавьте пространство имен **uap** в фоновые задачи типа chatMessageNotification. Пример.
+11. Добавьте пространство имен **uap** в фоновые задачи типа chatMessageNotification. Например:
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -505,7 +505,7 @@ ms.locfileid: "74299469"
 
      Укажите соответствующие значения Publisher и MinVersion для используемой платформы. Учтите, что в Windows 10 эти имена могут измениться.
 
-13. Замените фоновые задачи типов gattCharacteristicNotification и rfcommConnection задачей типа Bluetooth. Пример.
+13. Замените фоновые задачи типов gattCharacteristicNotification и rfcommConnection задачей типа Bluetooth. Например:
 
      **ИСХОДНОГО**
 
@@ -528,7 +528,7 @@ ms.locfileid: "74299469"
     </Extension>
     ```
 
-14. Замените возможности устройства Bluetooth bluetooth.rfcomm и bluetooth.genericAttributeProfile универсальной возможностью Bluetooth. Пример.
+14. Замените возможности устройства Bluetooth bluetooth.rfcomm и bluetooth.genericAttributeProfile универсальной возможностью Bluetooth. Например:
 
      **ИСХОДНОГО**
 
@@ -566,7 +566,7 @@ ms.locfileid: "74299469"
 
        - Элемент \<Аппликатионвиев >
 
-         Пример.
+         Например:
 
        ```xml
        <m2:VisualElements
@@ -691,7 +691,7 @@ ms.locfileid: "74299469"
 
    ```
 
-8. Найдите \<ItemGroup >, который содержит \<ссылки на дочерние элементы > в пакеты NuGet. Запишите пакеты NuGet, на которые имеются ссылки, так как эти сведения потребуются для следующей процедуры. Одно важное отличие форматов проектов для Windows 10 между версией-кандидатом Visual Studio 2015 и окончательной первоначальной версией Visual Studio 2015 RTM заключается в том, что в последней версии используется формат [NuGet](https://docs.microsoft.com/nuget/) версии 3.
+8. Найдите \<ItemGroup >, который содержит \<ссылки на дочерние элементы > в пакеты NuGet. Запишите пакеты NuGet, на которые имеются ссылки, так как эти сведения потребуются для следующей процедуры. Одно важное отличие форматов проектов для Windows 10 между версией-кандидатом Visual Studio 2015 и окончательной первоначальной версией Visual Studio 2015 RTM заключается в том, что в последней версии используется формат [NuGet](/nuget/) версии 3.
 
     Удалите \<ItemGroup > и все его дочерние элементы. Например, проект UWP, созданный в версии-кандидате Visual Studio, будет содержать следующие пакеты NuGet, которые необходимо удалить.
 
@@ -739,7 +739,7 @@ ms.locfileid: "74299469"
 
     2. Сохраните изменения.
 
-14. Используйте диспетчер NuGet, чтобы добавить пакеты, удаленные в предыдущем шаге. Одно важное отличие форматов проектов для Windows 10 между версией-кандидатом Visual Studio 2015 и окончательной первоначальной версией Visual Studio 2015 RTM заключается в том, что в последней версии используется формат [NuGet](https://docs.microsoft.com/nuget/) версии 3.
+14. Используйте диспетчер NuGet, чтобы добавить пакеты, удаленные в предыдущем шаге. Одно важное отличие форматов проектов для Windows 10 между версией-кандидатом Visual Studio 2015 и окончательной первоначальной версией Visual Studio 2015 RTM заключается в том, что в последней версии используется формат [NuGet](/nuget/) версии 3.
 
     Теперь можно приступать к написанию кода, сборке и отладке приложения.
 

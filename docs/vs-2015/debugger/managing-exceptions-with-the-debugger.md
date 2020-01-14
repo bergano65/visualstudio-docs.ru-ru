@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301098"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918958"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Управление исключениями с помощью отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ ms.locfileid: "74301098"
   
 3. Этот параметр можно изменить либо для конкретного исключения (выберите исключение, щелкните его правой кнопкой мыши и выберите или отмените выбор параметра **Продолжать, если не обрабатывается в пользовательском коде**), либо для всей категории исключений (например, все исключения CLR).  
   
-   Например, веб-приложения ASP.NET обрабатывают исключения путем их преобразования в код состояния HTTP 500 ([Обработка исключений в API ASP.NET](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)), что может затруднить определение источника исключения. В следующем примере пользовательский код вызывает метод `String.Format()` , который создает <xref:System.FormatException>. Выполнение прерывается следующим образом.  
+   Например, веб-приложения ASP.NET обрабатывают исключения путем их преобразования в код состояния HTTP 500 ([Обработка исключений в API ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), что может затруднить определение источника исключения. В следующем примере пользовательский код вызывает метод `String.Format()` , который создает <xref:System.FormatException>. Выполнение прерывается следующим образом.  
   
    ![прерывание на&#45;исключении пользователя унханлдед](../debugger/media/exceptionunhandledbyuser.png "ексцептионунхандледбюсер")  
   
@@ -181,7 +181,7 @@ public class GenericException<T> : Exception
   
  ![Добавление универсального исключения](../debugger/media/addgenericexception.png "аддженерицексцептион")  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Продолжение выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)   
  [Руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Как использовать проверки машинного кода во время выполнения](../debugger/how-to-use-native-run-time-checks.md)   

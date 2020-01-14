@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12c3dca7cded0742da367e8b17e3f9d52a3e30a9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: cf88661f9ec15e1a3a25e7eb6a40bbd82335a7f4
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850295"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918721"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Практическое руководство. Реагирование на изменения в UML-модели
 Можно написать код, который будет выполняться при возникновении изменений в модели UML в Visual Studio. Такой код будет одинаково реагировать на изменения, внесенные самими пользователями, и на изменения, внесенные другими расширениями Visual Studio . Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -23,4 +23,5 @@ ms.locfileid: "75850295"
 > API UML эти методы не поддерживает. В будущих версиях Visual Studio они также могут не работать.
 
 ## <a name="see-also"></a>См. также раздел
- [Навигация по](../modeling/navigate-the-uml-model.md) [обработчикам событий модели UML изменение распространения изменений за пределами модели](../modeling/event-handlers-propagate-changes-outside-the-model.md) [— Выбор цвета по стереотипу](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Навигация по](../modeling/navigate-the-uml-model.md) [обработчикам событий модели UML распространение изменений за пределами модели](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+ 

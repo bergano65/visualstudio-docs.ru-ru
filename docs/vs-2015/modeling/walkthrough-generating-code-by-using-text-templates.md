@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849931"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918581"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Пошаговое руководство. Создание кода с помощью текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "75849931"
  В данном примере проекта шаблон считывает пример файла XML и создает классы, соответствующие каждому типу узла. В написанном вручную коде эти классы можно использовать для перехода по XML-файлу. Можно также запустить приложение для любых других файлов, использующих те же типы узлов. Пример XML-файла служит для предоставления примеров всех типов узлов, с которыми должно работать ваше приложение.
 
 > [!NOTE]
-> Приложение [xsd.exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
+> Приложение [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
 
  Ниже приведен пример файла:
 

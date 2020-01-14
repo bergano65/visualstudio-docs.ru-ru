@@ -9,19 +9,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c7e8ca0fa1558ce0a2d37d4e11a35ba10a27fd2d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847192"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919083"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Начало работы с доменными языками
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе объясняются основные понятия, связанные с определением и использованием доменного языка (DSL), созданного с помощью пакета SDK для моделирования для Visual Studio.
-
- Если вы не знакомы с доменным DSL, мы рекомендуем вам работать в **лаборатории средств DSL**, которую можно найти на этом сайте: [висуализатон и пакет SDK для моделирования](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Что можно сделать с помощью доменного языка?
  Доменный язык — это нотация, обычно графическая, предназначенная для использования в конкретной цели. Напротив, такие языки, как UML, предназначены для общего назначения. В DSL можно определить типы элементов модели и их связи, а также их представления на экране.
@@ -42,7 +40,7 @@ ms.locfileid: "75847192"
 |||
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Пакет SDK моделирования для Visual Studio|[Скачать МСДК](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Создание решения DSL
@@ -399,4 +397,4 @@ ms.locfileid: "75847192"
 2. Перестройте все экспериментальные или другие экспериментальные расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которые вы по-прежнему хотите использовать.
 
 ## <a name="see-also"></a>См. также раздел
- [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md) определение [пакета SDK для висуализатон и моделирования](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [для определенного домена](../modeling/how-to-define-a-domain-specific-language.md)
+ [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md) определение [пакета SDK для висуализатон и моделирования](https://www.microsoft.com/download/details.aspx?id=48148) [для определенного домена](../modeling/how-to-define-a-domain-specific-language.md)

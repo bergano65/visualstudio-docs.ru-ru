@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: HT
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844917"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918273"
 ---
 # <a name="model-user-requirements"></a>Моделирование требований пользователей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio помогает понимать и обсуждать потре
 |Элементы концептуальной схемы классов|[UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)|
 |Разработка кода на основе концептуальных классов|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|
 
- В концептуальной схеме классов обычно не стоит размещать стрелки, указывающие на ассоциации, чтобы показать возможности перехода. Связано это с тем, что на схеме не представлена реализация. Ассоциации представляют отношения между объектами реального мира. Следующее расширение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] делает ненаправленные стрелки стрелками по умолчанию: [Образец: возможности моделирования домена UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+ В концептуальной схеме классов обычно не стоит размещать стрелки, указывающие на ассоциации, чтобы показать возможности перехода. Связано это с тем, что на схеме не представлена реализация. Ассоциации представляют отношения между объектами реального мира.
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Бизнес-правило — это требование, не связанное с определенным вариантом использования, которое необходимо соблюдать во всех частях системы.
@@ -239,4 +239,4 @@ Visual Studio помогает понимать и обсуждать потре
   Проанализировав отношения между представлениями, предоставляемыми разными схемами, можно быстро разобраться в основных понятиях, с которыми работают пользователи, и помочь пользователям понять, что им требуется от системы. Также можно лучше понять, в отношении каких требований заинтересованные лица испытывают наибольшие сомнения. Можно запланировать разработку этих функций (по крайней мере в упрощенной форме) на ранней стадии проекта, чтобы пользователи могли поэкспериментировать с ними.
 
 ## <a name="see-also"></a>См. также раздел
- [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [Разработка тестов на основе модели](../modeling/develop-tests-from-a-model.md) [Использование моделей в модели процесса разработки](../modeling/use-models-in-your-development-process.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [пример расширения VS для приложения "моделирование домена UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) " [примеры расширений VS: цвет элементов UML по расширению стереотипов](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [. пример расширения VS: Связывание элементов UML с диаграммами, файлами и другими элементами](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) пример расширения VS. [выровняйте фигуры на диаграмме UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [: моделирование бизнес-домена](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [Разработка тестов на основе модели](../modeling/develop-tests-from-a-model.md) [Использование моделей в модели процесса разработки модель в](../modeling/use-models-in-your-development-process.md) [архитектуре приложения](../modeling/model-your-app-s-architecture.md) [видео: моделирование бизнес-домена](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

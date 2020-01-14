@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 246ffa914ba21b9b2813abca1bae063162576486
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852143"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918491"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Исключения политики жизненного цикла Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio включает в себя ряд компиляторов, яз
 |[Exchange 2013](https://support.microsoft.com/kb/2902020)|Веб-службы Exchange|  
 |[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
 |[Инструменты разработчика Microsoft Web 2013](https://support.microsoft.com/kb/2902020)|Веб-инструменты Майкрософт для разработчиков 2013|  
-|Обновления для этих компонентов распространяются с помощью NuGet и не следуют стандартным политикам жизненного цикла Майкрософт.  Дополнительные сведения см. в разделе [http://docs.nuget.org/](https://docs.microsoft.com/nuget/).|Веб-обработчик токенов JSON для Microsoft .Net Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
+|Обновления для этих компонентов распространяются с помощью NuGet и не следуют стандартным политикам жизненного цикла Майкрософт.  Дополнительные сведения см. в разделе [http://docs.nuget.org/](/nuget/).|Веб-обработчик токенов JSON для Microsoft .Net Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
 |[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[Политика служб Online Services](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  
