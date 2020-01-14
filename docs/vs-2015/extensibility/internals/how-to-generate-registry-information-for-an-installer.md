@@ -12,17 +12,17 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9403121a235d71a42639121458fc37607180b18a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: df6ef440202057bb8e0612af0987782fa281c952
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851340"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944249"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Инструкции. Создание данных реестра для установщика
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Служебную программу RegPkg. exe можно использовать для создания манифеста регистрации для управляемого пакета VSPackage. Манифест можно встроить в пакет установки установщик Windows. RegPkg также может создать файл, который можно включить в исходный файл установки на основе [набора инструментов УСТАНОВЩИК Windows XML](http://wix.sourceforge.net/).  
+Служебную программу RegPkg. exe можно использовать для создания манифеста регистрации для управляемого пакета VSPackage. Манифест можно встроить в пакет установки установщик Windows. RegPkg также может создать файл, который можно включить в исходный файл установки на основе [набора инструментов УСТАНОВЩИК Windows XML](https://documentation.help/WiX-Toolset/index.html).
   
 > [!IMPORTANT]
 > RegPkg создает имена путей, характерные для конкретной системы разработки, поэтому при каждом использовании RegPkg необходимо изменить выходные данные, чтобы они использовали соответствующие свойства установщик Windows форматирования. Например, значение InprocServer32 должно быть равно **[системфолдер] Mscoree. dll** , а пути — использовать **[#filekey]** и **[$componentkey]** . Настройка вывода таким образом поддерживает компьютеры с Windows, установленные на другом диске или в другом каталоге, локализованных именах каталогов и путях, которые пользователи могут выбрать. Дополнительные сведения см. в разделе [отформатировано](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp) в пакете SDK для установщик Windows. При соблюдении соглашений RegPkg для путей к системе разработки, например идентификаторов файлов формы File_*filename*, необходимо внести меньше изменений.  

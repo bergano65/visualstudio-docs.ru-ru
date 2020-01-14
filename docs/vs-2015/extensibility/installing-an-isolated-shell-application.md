@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851714"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944267"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Установка приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "75851714"
   
 - Visual Studio SDK  
   
-- [Набор инструментов УСТАНОВЩИК Windows XML](http://wix.sourceforge.net/) версии 3,6  
+- [Набор инструментов УСТАНОВЩИК Windows XML](https://documentation.help/WiX-Toolset/index.html/) версии 3,6  
   
   Для примера также требуется пакет SDK для визуализации и моделирования Microsoft, который не все оболочки требуется.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "75851714"
 2. Для каждого проекта, содержащего манифест VSIX, измените задачи сборки, чтобы вывести содержимое в расположение, из которого будет устанавливаться MSI. Включите манифест VSIX в выходные данные сборки, но не создавайте VSIX-файл.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Создание MSI для оболочки  
- Для создания пакета MSI рекомендуется использовать [набор инструментов УСТАНОВЩИК Windows XML](http://wix.sourceforge.net/) , так как он обеспечивает большую гибкость, чем стандартный проект установки.  
+ Для создания пакета MSI рекомендуется использовать [набор инструментов УСТАНОВЩИК Windows XML](https://documentation.help/WiX-Toolset/index.html) , так как он обеспечивает большую гибкость, чем стандартный проект установки.  
   
  В файле Product. WXS задайте блоки обнаружения и макет компонентов оболочки.  
   
