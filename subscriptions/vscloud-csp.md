@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Сведения для поставщиков облачных решений о приобретении облачных подписок Visual Studio для клиентов и управлении ими.
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787749"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851405"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Покупайте облачные подписки Visual Studio для ваших клиентов и управляйте ими
 Партнеры программы [Поставщик облачных решений (CSP)](https://partner.microsoft.com/cloud-solution-provider) могут приобретать облачные подписки на Visual Studio Enterprise и Visual Studio Professional для своих клиентов.
@@ -103,5 +103,5 @@ ms.locfileid: "68787749"
 Ответ.  Нет, цены на подписки Visual Studio фиксированы. Покупка и продление подписки стоят одинаково.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Вопрос: Существуют ли специальные цены на средства Azure для разработки и тестирования для поставщиков облачных решений?
-Ответ. Пока что нет. Ваши клиенты могут воспользоваться [расценками на средства для разработки и тестирования Azure](https://aka.ms/azuredevtestpricing), но мы не предлагаем специальные условия для поставщиков облачных решений.
+Ответ. Пока что нет. Ваши клиенты могут воспользоваться [расценками на средства для разработки и тестирования Azure](https://azure.microsoft.com/pricing/dev-test/), но мы не предлагаем специальные условия для поставщиков облачных решений.
 

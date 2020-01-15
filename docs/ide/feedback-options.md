@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853494"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847463"
 ---
 # <a name="visual-studio-feedback-options"></a>Параметры обратной связи Visual Studio
 
@@ -75,12 +75,12 @@ ms.locfileid: "74853494"
 
 ## <a name="contact-microsoft-support"></a>Обратитесь в службу поддержки Майкрософт
 
-Дополнительные сведения о поддержке Visual Studio см. на странице с описанием [жизненного цикла продукта и обслуживания](/visualstudio/releases/2019/servicing/). Чтобы получить помощь по другим продуктам и службам Майкрософт через Интернет, обратитесь на сайт [службы поддержки Майкрософт](https://go.microsoft.com/fwlink/?LinkID=99019).
+Дополнительные сведения о поддержке Visual Studio см. на странице с описанием [жизненного цикла продукта и обслуживания](/visualstudio/releases/2019/servicing/). Чтобы получить помощь по другим продуктам и службам Майкрософт через Интернет, обратитесь на сайт [службы поддержки Майкрософт](https://support.microsoft.com/).
 
 > [!NOTE]
 > Объем услуг поддержки за пределами США и Канады может отличаться. Список контактов по регионам см. на странице [международных сайтов Майкрософт](https://www.microsoft.com/worldwide/).
 
-Для более крупных организаций, которым требуется управляемая поддержка непосредственно от корпорации Майкрософт, контракты доступны в рамках предложений Enterprise Support. См. дополнительные сведения о. [решениях Microsoft Enterprise Support](https://go.microsoft.com/fwlink/?LinkId=258223).
+Для более крупных организаций, которым требуется управляемая поддержка непосредственно от корпорации Майкрософт, контракты доступны в рамках предложений Enterprise Support. См. дополнительные сведения о. [решениях Microsoft Enterprise Support](https://www.microsoft.com/industry/services/support).
 
 Если продукт поставляется установленным на новые компьютер или устройство, техническую поддержку для этого программного обеспечения обеспечивает производитель оборудования. Для получения поддержки обратитесь непосредственно к производителю.
 

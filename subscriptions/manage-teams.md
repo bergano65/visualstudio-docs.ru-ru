@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов по управлению подписками для больших рабочих групп, а также сторонних подрядчиков.
-ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491693"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850054"
 ---
 # <a name="large-teams-and-external-contractors"></a>Большие рабочие группы и внешние подрядчики
 Администраторы подписок на Visual Studio отвечают за наличие соответствующей подписки на Visual Studio у всех пользователей, которые взаимодействуют с программным обеспечением с лицензией Visual Studio.
@@ -29,7 +29,7 @@ ms.locfileid: "74491693"
 Внешние подрядчики могут использовать собственные лицензии для взаимодействия с вашей средой, лицензируемой по подписке на Visual Studio. Сертифицированные партнеры Майкрософт могут получать бесплатные подписки на Visual Studio для внутреннего использования. Однако эти подписки не распространяются на процессы, приводящие к созданию прибыли, такие как разработка программного обеспечения для клиента по индивидуальному заказу. Попросите партнера отправить вам заказное письмо с указанием лицензий, которые предоставляет сам партнер, и лицензий, которые должны обеспечить вы.
 
 ## <a name="resources"></a>Ресурсы
-- [Документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
+- [Документ по лицензированию Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590960"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776174"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Обновление Visual Studio во время обслуживания
 
@@ -62,7 +62,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 При выходе обновления для базовой версии на сайте [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0) публикуются файлы загрузчика определенной версии для служебного обновления.
 
-При развертывании с помощью макета сетевой установки администратору потребуется обновить [расположение макета](update-a-network-installation-of-visual-studio.md). Клиенты, установленные из расположения, получат уведомления об обновлении. Если требуется развернуть обновление в клиентах, следуйте [этим инструкциям](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). При изменении файла response.json для обновления не добавляйте дополнительные рабочие нагрузки, компоненты или языки. Управление этими параметрами должно выполняться как "модифицирующее" развертывание после обновления продукта.
+При развертывании с помощью макета сетевой установки администратору потребуется обновить [расположение макета](update-a-network-installation-of-visual-studio.md). Клиенты, установленные из расположения, получат уведомления об обновлении. Если требуется развернуть обновление в клиентах, следуйте [этим инструкциям](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). При изменении файла response.json для обновления не добавляйте дополнительные рабочие нагрузки, компоненты или языки. Управление этими параметрами должно выполняться как "модифицирующее" развертывание после обновления продукта.
 
 При установке по Интернету запустите в клиенте новый начальный загрузчик определенной версии с параметром `--channelUri`, указывающим на манифест несуществующего канала. Если обновление развертывается в тихом или пассивном режиме, используйте две отдельные команды:
 

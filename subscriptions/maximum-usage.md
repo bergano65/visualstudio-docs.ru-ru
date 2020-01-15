@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Сведения о просмотре максимального количества назначенных подписок на портале администрирования
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491719"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852340"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Использование функции максимального использования для отслеживания количества назначенных подписок
 Новая функция на портале администрирования подписок Visual Studio помогает отслеживать, сколько подписок вы приобрели и назначили, и определяет максимальное число назначенных подписок каждого уровня, как в прошлом году, так и в период действия ваших соглашений. 
@@ -42,7 +42,7 @@ ms.locfileid: "74491719"
 Ответ.  Сведения в обзоре показывают *текущие* назначения и доступные подписки для каждого уровня подписки.  Эти сведения могут значительно отличаться от максимального числа назначенных подписок по соглашению в течение текущего года или срока действия соглашения.  Функция максимального использования позволяет увидеть, когда был достигнут максимум назначений и какими были уровни.  Это важное различие, поскольку выставление счетов для подписок во время сверки основано на максимальном числе подписок, назначенных в любой момент года. 
 
 ## <a name="resources"></a>Ресурсы
-- [Документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
+- [Документ по лицензированию Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735835"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852034"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -161,7 +161,7 @@ public enum DateInserterCommands
 
 ## <a name="extending-the-new-editor"></a>Расширение нового редактора
 
-Visual Studio для Mac [предоставляет новый собственный пользовательский интерфейс Cocoa для редактирования текста](https://aka.ms/vs/mac/editor/learn-more), созданный на основе тех же слоев редактирования, что и Visual Studio в Windows.
+Visual Studio для Mac [предоставляет новый собственный пользовательский интерфейс Cocoa для редактирования текста](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes#RTW), созданный на основе тех же слоев редактирования, что и Visual Studio в Windows.
 
 Одним из многих преимуществ совместного использования редактора в Visual Studio и Visual Studio для Mac можно считать то, что предназначенный для редактора Visual Studio код можно легко адаптировать для работы в Visual Studio для Mac.
 
@@ -191,7 +191,7 @@ Visual Studio для Mac [предоставляет новый собствен
 ## <a name="additional-information"></a>Дополнительные сведения
 
 > [!NOTE]
-> Сейчас мы работаем над улучшением сценариев расширения для Visual Studio для Mac. Если вы создаете расширения и нуждаетесь в дополнительной помощи или информации или хотите оставить отзыв, заполните форму [создания расширений Visual Studio для Mac](https://aka.ms/vsmac-extensions-survey).
+> Сейчас мы работаем над улучшением сценариев расширения для Visual Studio для Mac. Если вы создаете расширения и нуждаетесь в дополнительной помощи или информации или хотите оставить отзыв, заполните форму [создания расширений Visual Studio для Mac](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u).
 
 ## <a name="see-also"></a>См. также
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594543"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845906"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "75594543"
 
 Ниже приведен полный список возможностей, которые вы получаете после входа:
 
-- **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+- **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 - **Синхронизация параметров Visual Studio**. Настраиваемые параметры, например привязки клавиш, макет окна и цветовая тема, вступают в силу, как только вы войдете в Visual Studio на любом устройстве. См. раздел [Синхронизированные параметры в Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
