@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239432"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944235"
 ---
 # <a name="using-net-4x-in-unity"></a>Использование .NET 4.x в Unity
 
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>Интерполяция строк
 
-В более ранней среде выполнения .NET 3.5 синтаксис объединения строк был громоздким. В новой среде выполнения .NET 4.x есть функция [`$`интерполяции строк](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated), которая позволяет вставлять выражения в строки, используя более прямой и удобочитаемый синтаксис:
+В более ранней среде выполнения .NET 3.5 синтаксис объединения строк был громоздким. В новой среде выполнения .NET 4.x есть функция [`$`интерполяции строк](/dotnet/csharp/language-reference/tokens/interpolated), которая позволяет вставлять выражения в строки, используя более прямой и удобочитаемый синтаксис:
 
 ```csharp
 // .NET 3.5
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>Элементы, воплощающие выражение
 
-Новый синтаксис C# в среде выполнения .NET 4.x позволяет заменять тело функций на [лямбда-выражения](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) и, таким образом, делать их более краткими:
+Новый синтаксис C# в среде выполнения .NET 4.x позволяет заменять тело функций на [лямбда-выражения](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) и, таким образом, делать их более краткими:
 
 ```csharp
 // .NET 3.5
@@ -181,9 +181,9 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 ### <a name="task-based-asynchronous-pattern-tap"></a>Асинхронный шаблон, основанный на задачах (TAP)
 
-[Асинхронное программирование](https://docs.microsoft.com/dotnet/csharp/async) позволяет выполнять длинные операции без зависания приложений. Кроме того, с помощью этой функции можно сделать так, чтобы код, в котором используются результаты ресурсоемких операций, выполнялся только после того, как будут выполнены эти операции, например после загрузки определенного файла или завершения сетевой операции.
+[Асинхронное программирование](/dotnet/csharp/async) позволяет выполнять длинные операции без зависания приложений. Кроме того, с помощью этой функции можно сделать так, чтобы код, в котором используются результаты ресурсоемких операций, выполнялся только после того, как будут выполнены эти операции, например после загрузки определенного файла или завершения сетевой операции.
 
-В Unity асинхронное программирование обычно выполняется с [соподпрограммами](https://docs.unity3d.com/Manual/Coroutines.html). Однако начиная с C# 5 предпочтительным методом асинхронного программирования в среде разработки .NET стал [Асинхронный шаблон, основанный на задачах (TAP)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap), с использованием ключевых слов `async` и `await` в [System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task). Таким образом, для функции `async` можно задать ожидание завершения задачи (`await`) без запрета обновлений в остальной части приложения:
+В Unity асинхронное программирование обычно выполняется с [соподпрограммами](https://docs.unity3d.com/Manual/Coroutines.html). Однако начиная с C# 5 предпочтительным методом асинхронного программирования в среде разработки .NET стал [Асинхронный шаблон, основанный на задачах (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap), с использованием ключевых слов `async` и `await` в [System.Threading.Task](/dotnet/api/system.threading.tasks.task). Таким образом, для функции `async` можно задать ожидание завершения задачи (`await`) без запрета обновлений в остальной части приложения:
 
 ```csharp
 // Unity coroutine
@@ -229,7 +229,7 @@ TAP — это сложная тема с определенными харак
 
 Эти советы помогут вам приступить к работе с TAP в Unity.
 
-* Асинхронные функции, выполнения которых код будет дожидаться, должны иметь тип возвращаемого значения [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) или [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1).
+* Асинхронные функции, выполнения которых код будет дожидаться, должны иметь тип возвращаемого значения [`Task`](/dotnet/api/system.threading.tasks.task) или [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1).
 * К именам асинхронных функций, возвращающих задачу, необходимо добавлять суффикс **Async**. Суффикс Async означает, что эта функция требует ожидания.
 * Используйте тип возвращаемого значения `async void` только для тех функций, которые запускают асинхронные функции из традиционного синхронного кода. Сами такие функции не могут требовать ожидания, а их имена не должны содержать суффикс Async.
 * Чтобы асинхронные функции по умолчанию выполнялись в основном потоке, в Unity используется unitySynchronizationContext. API Unity за пределами основного потока недоступен.
@@ -274,7 +274,7 @@ private void RecordHighScore(string playerName)
 
 ### <a name="caller-info-attributes"></a>Информационные атрибуты вызывающего объекта
 
-[Информационные атрибуты вызывающего объекта](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/caller-information) содержат информацию о вызывающем объекте метода. Для каждого параметра, который вы хотите использовать c информационным атрибутом вызывающего объекта, необходимо указать значение по умолчанию.
+[Информационные атрибуты вызывающего объекта](/dotnet/csharp/programming-guide/concepts/caller-information) содержат информацию о вызывающем объекте метода. Для каждого параметра, который вы хотите использовать c информационным атрибутом вызывающего объекта, необходимо указать значение по умолчанию.
 
 ```csharp
 private void Start ()
@@ -300,7 +300,7 @@ public void ShowCallerInfo(string message,
 
 ### <a name="using-static"></a>Директива using static
 
-Директива [using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) позволяет использовать статические функции, не указывая имя класса. Директива using static помогает сэкономить место и время при использовании нескольких статических функций одного класса.
+Директива [using static](/dotnet/csharp/language-reference/keywords/using-static) позволяет использовать статические функции, не указывая имя класса. Директива using static помогает сэкономить место и время при использовании нескольких статических функций одного класса.
 
 ```csharp
 // .NET 3.5
@@ -344,8 +344,8 @@ public class UsingStaticExample: MonoBehaviour
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
 * [Блог Unity: усовершенствования среды выполнения сценариев в Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
-* [История C#](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
-* [Что нового в C# 6](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
-* [Асинхронное программирование в Unity с использованием соподпрограмм и TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
+* [История C#](/dotnet/csharp/whats-new/csharp-version-history)
+* [Что нового в C# 6](/dotnet/csharp/whats-new/csharp-6)
+* [Асинхронное программирование в Unity с использованием соподпрограмм и TAP](/archive/blogs/appconsult/unity-coroutine-tap-en-us)
 * [Async-Await вместо соподпрограмм в Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
 * [Форум Unity: предварительные версии экспериментальных сценариев](https://forum.unity.com/forums/experimental-scripting-previews.107/)

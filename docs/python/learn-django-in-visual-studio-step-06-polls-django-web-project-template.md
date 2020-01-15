@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254383"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755578"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Шаг 6. Использование шаблона веб-проекта Django для опросов
 
@@ -160,7 +160,7 @@ def seed(request):
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Вопрос. Можно ли инициализировать базу данных с помощью административной служебной программы Django?
 
-Ответ. Да, выполнить задачу, подобную заполнению страницы в приложении, можно с помощью [команды django-admin loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata). При работе с полным веб-приложением можно использовать сочетание двух методов: инициализировать базу данных из командной строки, а затем преобразовать страницу начальных значений в интерфейс API, в который можно отправлять любые произвольные объекты JSON, а не полагаться на жестко запрограммированный файл.
+Ответ. Да, выполнить задачу, подобную заполнению страницы в приложении, можно с помощью [команды django-admin loaddata](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata). При работе с полным веб-приложением можно использовать сочетание двух методов: инициализировать базу данных из командной строки, а затем преобразовать страницу начальных значений в интерфейс API, в который можно отправлять любые произвольные объекты JSON, а не полагаться на жестко запрограммированный файл.
 
 ## <a name="step-6-3-use-migrations"></a>Шаг 6-3. Использование миграций
 

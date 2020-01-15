@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593399"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917812"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Параллельное построение нескольких проектов с помощью MSBuild
 С помощью MSBuild вы можете ускорить сборку нескольких проектов, выполняя ее параллельно. Для параллельного выполнения сборки используйте следующие параметры на компьютере с несколькими процессорами или многоядерным процессором:
@@ -43,7 +43,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>Параметр задачи BuildInParallel
-`BuildInParallel` является необязательным логическим параметром задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если для `BuildInParallel` установлено значение `true` (значение по умолчанию — `false`), создается несколько рабочих процессов для одновременной сборки максимально возможного числа проектов. Для надлежащего выполнения параметр `-maxcpucount` должен иметь значение больше 1, а компьютер должен быть оснащен по меньшей мере двухъядерным процессором или минимум двумя процессорами.
+`BuildInParallel` является необязательным логическим параметром задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если для `BuildInParallel` установлено значение `true` (значение по умолчанию — `true`), создается несколько рабочих процессов для одновременной сборки максимально возможного числа проектов. Для надлежащего выполнения параметр `-maxcpucount` должен иметь значение больше 1, а компьютер должен быть оснащен по меньшей мере двухъядерным процессором или минимум двумя процессорами.
 
 Следующий пример из *microsoft.common.targets* демонстрирует использование параметра `BuildInParallel`.
 

@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427590"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915831"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Обучение модели TensorFlow в облаке
 
-С помощью этого руководства мы обучим модель TensorFlow с помощью [набора данных MNIST](http://yann.lecun.com/exdb/mnist/) в виртуальной машине Azure для [глубинного обучения](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview).
+С помощью этого руководства мы обучим модель TensorFlow с помощью [набора данных MNIST](http://yann.lecun.com/exdb/mnist/) в виртуальной машине Azure для [глубинного обучения](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview).
 
 База данных MNIST содержит обучающий набор из 60 000 примеров и тестовый набор из 10 000 примеров рукописных цифр.
 
@@ -31,7 +31,7 @@ ms.locfileid: "62427590"
 > [!NOTE]
 > В качестве **типа ОС** выберите Linux.
 
-Инструкции по настройке виртуальной машины для глубинного обучения можно найти [здесь](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
+Инструкции по настройке виртуальной машины для глубинного обучения можно найти [здесь](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Удаление комментария в скобках
 

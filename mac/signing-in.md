@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983654"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844262"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
 
 При входе в Visual Studio для Mac [активируется подписка](enable-subscription.md). При скачивании Visual Studio для Mac по умолчанию доступен только выпуск Community. При наличии [лицензии Professional или Enterprise](https://visualstudio.microsoft.com/vs/compare/) необходимо выполнить вход при первом запуске, чтобы разблокировать дополнительные компоненты. Кроме того, вам предоставляется следующее:
 
-* **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+* **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 * **Автоматическое подключение к Azure** в интегрированной среде разработки без повторного запроса учетных данных той же учетной записи.
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Узнайте, как партнеры управляют подписками Visual Studio для своих клиентов.
-ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000902"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850560"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Партнеры, управляющие подписками от имени клиентов
 Для управления подписками на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com) клиентам необходимо выполнить несколько действий. Процесс будет выглядеть следующим образом.
@@ -50,7 +50,7 @@ ms.locfileid: "70000902"
 > Клиент получает по электронной почте уведомление о том, что партнер был добавлен в Open License. Он может аннулировать доступ партнера по своему желанию.
 
 ## <a name="resources"></a>Ресурсы
-- [Технический документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
+- [Технический документ по лицензированию Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

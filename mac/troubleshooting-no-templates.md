@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
-ms.openlocfilehash: 119c257ef2c1120e8c97995c1fad076bae093ac0
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: cb6f9e3a41236d10b0558a508c2531b08ec7fe13
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983492"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845820"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>Устранение неполадок: Почему не отображаются все доступные шаблоны?
 
@@ -27,4 +27,4 @@ ms.locfileid: "74983492"
 |Mac     |macOS (Cocoa)         |
 |.NET Core     |.NET Core         |
 
-Запустите VisualStudioForMacInstaller.dmg еще раз, чтобы установить компоненты. Если у вас больше его нет, его можно загрузить с веб-страницы [Visual Studio для Mac](https://aka.ms/vsmac).
+Запустите VisualStudioForMacInstaller.dmg еще раз, чтобы установить компоненты. Если у вас больше его нет, его можно загрузить с веб-страницы [Visual Studio для Mac](https://visualstudio.microsoft.com/vs/mac/).

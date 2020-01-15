@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c445c8fa5b1b4c9b2e4a45025b161223bfa6de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 97188d7dcaff2133c22f4954146ba5e977ab2c6d
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588737"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776066"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Шаг 3. Добавление таймера с обратным отсчетом
 
 В третьей части этого учебника вам предстоит добавить таймер обратного отсчета для отслеживания количества секунд, оставшихся у игрока на решение задач викторины.
 
 > [!NOTE]
-> Этот раздел входит в серию учебников, посвященных основам написания кода.
-> - Общие сведения об учебнике см. в разделе [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Скачать готовую версию кода можно на странице с [полным примером руководства по созданию математической головоломки](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Добавление таймера с обратным отсчетом
 

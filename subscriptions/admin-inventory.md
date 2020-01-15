@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов проводить предварительную инвентаризацию
-ms.openlocfilehash: 97a7a95354cd4d5d85581830830705bc328f2311
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 8218b1802a6369aed00be63572c80cba7b5c29f3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491710"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849827"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Инвентаризация подготовительной среды
 Подписки на Visual Studio упрощают управление активами благодаря инвентаризации пользователей, а не устройств.
@@ -25,7 +25,7 @@ ms.locfileid: "74491710"
 - Получите помощь при проведении согласования вручную. Назначьте сотрудников, которые будут помогать вам при согласовании пользователей среды разработки и тестирования.
 
 ## <a name="resources"></a>Ресурсы
-- [Документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
+- [Документ по лицензированию Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

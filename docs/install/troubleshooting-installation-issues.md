@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594491"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849597"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio
 
@@ -127,11 +127,11 @@ ms.locfileid: "75594491"
 
 Для устранения большинства неполадок при установке необходимы журналы установки. При отправке проблемы с помощью средства [сообщения о проблеме](../ide/how-to-report-a-problem-with-visual-studio.md) в Visual Studio Installer эти журналы автоматически включаются в отчет.
 
-Если вы обращаетесь в службу поддержки Майкрософт, для отправки этих журналов установки может понадобиться [средство сбора журналов для Microsoft Visual Studio и .NET Framework](https://aka.ms/vscollect). Средство сбора журналов собирает журналы установки для всех компонентов, устанавливаемых Visual Studio, включая .NET Framework, Windows SDK и SQL Server. Оно также собирает сведения о компьютере, данные инвентаризации установщика Windows и сведения журнала событий Windows для Visual Studio Installer, установщика Windows и восстановления системы.
+Если вы обращаетесь в службу поддержки Майкрософт, для отправки этих журналов установки может понадобиться [средство сбора журналов для Microsoft Visual Studio и .NET Framework](https://www.microsoft.com/download/details.aspx?id=12493). Средство сбора журналов собирает журналы установки для всех компонентов, устанавливаемых Visual Studio, включая .NET Framework, Windows SDK и SQL Server. Оно также собирает сведения о компьютере, данные инвентаризации установщика Windows и сведения журнала событий Windows для Visual Studio Installer, установщика Windows и восстановления системы.
 
 Чтобы собрать журналы, выполните указанные ниже действия.
 
-1. [Скачайте средство](https://aka.ms/vscollect).
+1. [Скачайте средство](https://www.microsoft.com/download/details.aspx?id=12493).
 2. Откройте командную строку от имени администратора.
 3. Запустите файл `Collect.exe` из каталога, в котором сохранено средство.
 4. Найдите итоговый файл `vslogs.zip` в каталоге `%TEMP%`, например `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`.
