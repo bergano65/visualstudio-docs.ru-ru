@@ -10,19 +10,19 @@ helpviewer_keywords:
 - virtual machine
 - installation
 - visual studio
-author: PhilLee-MSFT
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dc5fc9642401b1c90f079cae714fca9e214d6d9c
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: a659d01edd62defc7f49d05058e0c9e1d1df554b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903856"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590921"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -53,7 +53,7 @@ ms.locfileid: "74903856"
 
 * Все доступные рабочие нагрузки, в том числе дополнительные рекомендуемые компоненты каждой рабочей нагрузки.
 * Пакеты SDK .NET 4.6.2 и .NET 4.7, Targeting Pack и средства разработчика.
-* Visual F#;
+* Visual F#
 * Расширение GitHub для Visual Studio
 * Инструменты LINQ to SQL.
 

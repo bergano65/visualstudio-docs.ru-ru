@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313967"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589985"
 ---
 # <a name="step-6-name-your-button-controls"></a>Шаг 6. Присвоение имен элементам управления "Кнопка"
 
@@ -33,7 +33,7 @@ ms.locfileid: "72313967"
 
 1. В форме нажмите кнопку **Закрыть** . (Если все кнопки все еще выделены, для отмены выделения нажмите клавишу **ESC**.) Прокрутите содержимое окна **Свойства**, пока не появится свойство **(Name)** . (Свойство **(Name)** расположено в верхней части, когда свойства расположены в алфавитном порядке.) Измените имя на **closeButton**, как показано на снимке экрана ниже.
 
-    ![Окно "Свойства" с именем closeButton](../ide/media/express_setnameproperty.png)<br>*Окно* ***Свойства*** *с именем* ***closeButton***
+    ![Окно "Свойства" с именем closeButton](../ide/media/express_setnameproperty.png)<br>*Окно ***Свойства*** с* *именем* ***closeButton***
 
     > [!NOTE]
     > Попробуйте изменить имя кнопки на **close Button** (с пробелом между словами close и Button). В интегрированной среде разработки появится сообщение об ошибке: "Недопустимое значение свойства". Пробелы (а также несколько других символов) запрещено использовать в именах элементов управления.
@@ -46,7 +46,7 @@ ms.locfileid: "72313967"
    На этой вкладке отображается файл кода для формы, как показано на снимке экрана ниже.
 
     ![Вкладка Form1.cs с кодом Visual C#](../ide/media/express_showbuttoncode.png)<br>
-Вкладка ***Form1.cs*** *с кодом C#*
+*Вкладка ***Form1.cs*** с кодом C#*
 
     > [!NOTE]
     > На вкладке Form1.cs или Form1.vb кнопка **showButton** может отображаться как **ShowButton**.

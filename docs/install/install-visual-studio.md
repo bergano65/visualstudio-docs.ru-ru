@@ -2,7 +2,7 @@
 title: Установка Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапной установке среды Visual Studio.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018850"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590128"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -131,7 +131,7 @@ ms.locfileid: "72018850"
 
 2. Мы попросим вас принять [условия лицензии](https://visualstudio.microsoft.com/license-terms/) и [заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement) корпорации Майкрософт. Нажмите **Продолжить**.
 
-   ![Условия лицензии и заявление о конфиденциальности](media/privacy-and-license-terms.png "Условия лицензии и заявление о конфиденциальности корпорации Майкрософт")
+   ![Условия лицензии и заявление о конфиденциальности](media/privacy-and-license-terms.png "Условия лицензии и заявление о конфиденциальности Майкрософт")
 
 ## <a name="step-4---choose-workloads"></a>Шаг 4. Выбор рабочих нагрузок
 
@@ -139,7 +139,7 @@ ms.locfileid: "72018850"
 
  ::: moniker range="vs-2017"
 
-1. Найдите нужную рабочую нагрузку на экране **Установка Visual Studio**.
+1. Найдите нужную рабочую нагрузку в **Visual Studio Installer**.
 
    ![Visual Studio 2017: Установка рабочей нагрузки](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ ms.locfileid: "72018850"
 
 ::: moniker range="vs-2019"
 
-1. После установки новых рабочих нагрузок и компонентов выберите команду **Запуск**.
+1. Найдите нужную рабочую нагрузку в **Visual Studio Installer**.
 
    ![Visual Studio 2019: Установка рабочей нагрузки](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -210,7 +210,7 @@ ms.locfileid: "72018850"
 
 **Новая возможность в версии 15.7**. Теперь можно уменьшить место, занимаемое установкой Visual Studio на системном диске. Вы можете переместить кэш загрузки, общие компоненты, пакеты SDK и средства на другие диски и оставить Visual Studio на самом быстром диске.
 
-  ![Visual Studio 2017 — изменение расположения установки](media/installation-options-by-location.png "Изменение расположения установки")
+  ![Visual Studio 2017 — изменение расположений установки](media/installation-options-by-location.png "Изменение расположения установки")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ ms.locfileid: "72018850"
 
 Вы можете уменьшить место, занимаемое установкой Visual Studio на системном диске. Вы можете переместить кэш загрузки, общие компоненты, пакеты SDK и средства на другие диски и оставить Visual Studio на самом быстром диске.
 
-  ![Visual Studio 2019 — выбор расположения установки](media/vs-2019/vs-installer-installation-locations.png "Выберите расположение установки")
+  ![Visual Studio 2019 — выбор расположений установки](media/vs-2019/vs-installer-installation-locations.png "Выбор расположения установки")
 
 ::: moniker-end
 

@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653041"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591545"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
 
@@ -85,15 +85,26 @@ ms.locfileid: "72653041"
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>Сообщения об ошибках с \<OutputPath> или \<OutDir>
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>Сообщения об ошибках с \<OutputPath>, \<OutDir> или \<IntermediateOutputPath>
 
 **При попытке выполнить сборку решения с помощью Live Unit Testing отображается сообщение об ошибке, указывающее, что свойство `<OutputPath>` или `<OutDir>` задано безусловно и Live Unit Testing не будет выполнять тесты из выходной сборки. С чем это связано?**
 
-Эта ошибка может возникать, если в процессе сборки решения без проверки условий переопределяется свойство `<OutputPath>` или `<OutDir>`, после чего оно больше не является подкаталогом `<BaseOutputPath>`. В таких случаях Live Unit Testing не будет работать, так как эта функция также переопределяет эти значения, чтобы артефакты сборки отправлялись в папку в каталоге `<BaseOutputPath>`. Если вы должны переопределить расположение, в которое будут отправляться артефакты в обычной сборке, переопределите свойство `<OutputPath>` на основе `<BaseOutputPath>`.
+Эта ошибка может возникать, если в процессе сборки для решения определена пользовательская логика, которая указывает на место создания двоичных файлов. По умолчанию расположение двоичных файлов зависит от `<OutputPath>`, `<OutDir>` или `<IntermediateOutputPath>`, а также от `<BaseOutputPath>` или `<BaseIntermediateOutputPath>`.
 
-Например, сборка может переопределить `<OutputPath>`, как показано ниже.
+Live Unit Testing переопределяет эти переменные, чтобы гарантировать перенос артефактов сборки в папку артефактов Live Unit Testing. Если же процесс сборки также переопределит эти переменные, произойдет сбой.
 
-```xml 
+Существует два основных подхода к выполнению успешной сборки Live Unit Testing. Для более простых конфигураций сборки пути к выходным файлам могут быть основаны на `<BaseIntermediateOutputPath>`. Для более сложных конфигураций пути к выходным файлам могут быть основаны на `<LiveUnitTestingBuildRootPath>`.
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>Условное переопределение `<OutputPath>`/`<IntermediateOutputPath>` на основе `<BaseOutputPath>`/`<BaseIntermediateOutputPath>`.
+
+> [!NOTE]
+> Чтобы использовать этот подход, для каждого проекта необходимо обеспечить возможность независимой друг от друга сборки. Ссылка в одном проекте на артефакт из другого проекта во время сборки запрещена. Не используйте один проект для динамической загрузки сборок из другого проекта во время выполнения (например, вызвав `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")`).
+
+Во время сборки Live Unit Testing автоматически переопределяет переменные `<BaseOutputPath>`/`<BaseIntermediateOutputPath>`, чтобы указать целевую папку артефактов Live Unit Testing.
+
+Например, сборка может переопределить <OutputPath>, как показано ниже.
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ ms.locfileid: "72653041"
 
 В этом случае ее можно заменить следующим кодом XML:
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ ms.locfileid: "72653041"
 Это гарантирует, что `<OutputPath>` находится в папке `<BaseOutputPath>`.
 
 Не переопределяйте `<OutDir>` непосредственно в процессе сборки. Переопределите `<OutputPath>` вместо того, чтобы отправлять артефакты сборки в определенное расположение.
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>Переопределение свойств на основе свойства `<LiveUnitTestingBuildRootPath>`.
+
+> [!NOTE]
+> Такой подход требует осторожного использования файлов, добавленных в папку артефактов, которые не создаются во время сборки. В приведенном ниже примере показано, что делать при помещении папки пакетов в артефакты. Так как содержимое этой папки не создается во время сборки, свойство MSBuild **должно оставаться неизменным**.
+
+Во время сборки Live Unit Testing свойство `<LiveUnitTestingBuildRootPath>` задается в расположении папки артефактов Live Unit Testing.
+
+Например, предположим, что ваш проект имеет структуру, приведенную в этой статье.
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+Во время сборки Live Unit Testing для свойства `<LiveUnitTestingBuildRootPath>` задается полный путь `.vs\...\lut\0\b`. Если проект определяет свойство `<ArtifactsRoot>`, отображаемое в каталоге решения, вы можете обновить проект MSBuild следующим образом:
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>Расположение артефакта сборки
 
@@ -133,8 +184,6 @@ ms.locfileid: "72653041"
 - Функция Live Unit Testing не создает домен приложения для выполнения тестов, но при выполнении тестов в окне **обозревателя тестов** этот домен создается.
 
 - Функция Live Unit Testing выполняет тесты из разных сборок последовательно. В окне **обозревателя тестов** можно выбрать режим параллельного выполнения нескольких тестов.
-
-- Для обнаружения и выполнения тестов с помощью Live Unit Testing используется `TestPlatform` версии 2, а в окне **обозревателя тестов** — версии 1. В большинстве случаев вы не заметите разницу.
 
 - **Обозреватель тестов** по умолчанию выполняет тесты в однопотоковом подразделении (STA), а Live Unit Testing — в многопотоковом (MTA). Чтобы выполнить тесты MSTest в однопотоковом подразделении с помощью функции Live Unit Testing, декорируйте метод теста или содержащий класс атрибутом `<STATestMethod>` или `<STATestClass>`, который находится в пакете `MSTest.STAExtensions 1.0.3-beta` NuGet. Для NUnit декорируйте метод теста атрибутом `<RequiresThread(ApartmentState.STA)>`, а для xUnit — атрибутом `<STAFact>`.
 

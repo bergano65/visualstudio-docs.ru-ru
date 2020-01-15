@@ -2,17 +2,17 @@
 title: Модульное тестирование кода Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659845"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590869"
 ---
 # <a name="unit-test-c-code"></a>Модульное тестирование кода C#
 
@@ -52,7 +52,7 @@ ms.locfileid: "72659845"
 
 ::: moniker range="vs-2017"
 
-2. В меню **Тест** выберите **Запуск** > **Все тесты**.
+2. В меню **Тест** выберите **Выполнить** > **Все тесты**.
 
 ::: moniker-end
 

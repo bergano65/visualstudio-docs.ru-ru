@@ -2,17 +2,17 @@
 title: Настройка модульных тестов с помощью RUNSETTINGS-файла
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771512"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593256"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -28,7 +28,7 @@ ms.locfileid: "74771512"
 
 ::: moniker range="vs-2017"
 
-Чтобы указать файл параметров запуска в интегрированной среде разработки, выберите **Тест** > **Параметры тестирования** > **Выбрать файл параметров тестирования**, а затем выберите файл *.runsettings*.
+Чтобы указать файл параметров запуска в интегрированной среде разработки, выберите **Тест** > **Параметры тестирования** > **Выбрать файл параметров теста**, а затем выберите файл *RUNSETTINGS*.
 
 ![Выбор файла параметров тестирования в Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -78,7 +78,7 @@ ms.locfileid: "74771512"
     
       ![Меню "Автоматическое обнаружение файлов параметров выполнения" в Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
-- В интегрированной среде разработки выберите **Тест** > **Настройка параметров выполнения** > **Выберите файл параметров выполнения на уровне решения**, а затем выберите файл с расширением *RUNSETTINGS*.
+- В интегрированной среде разработки выберите **Тест** > **Настройка параметров выполнения** > **Выберите файл параметров выполнения на уровне решения**, а затем выберите файл *RUNSETTINGS*.
 
    ![Меню "Выберите файл параметров выполнения на уровне решения" для теста в Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
       
@@ -95,13 +95,13 @@ ms.locfileid: "74771512"
 
    ::: moniker range="vs-2017"
 
-   В ОС Windows в меню **Пуск** выберите **Visual Studio 2017** > **Командная строка разработчика для VS 2017**.
+   В ОС Windows в меню **Пуск** выберите **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Командная строка разработчика для VS 2017).
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   В ОС Windows в меню **Пуск** выберите **Visual Studio 2019** > **Командная строка разработчика для VS 2019**.
+   В ОС Windows в меню **Пуск** выберите **Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Командная строка разработчика для VS 2019).
 
    ::: moniker-end
 

@@ -1,21 +1,21 @@
 ---
-title: Отладка с помощью Xamarin
+title: Отладка с помощью Visual Studio для Mac
 description: Отладка — это типичная и неотъемлемая часть программирования. Являясь сформировавшейся интегрированной средой разработки, Visual Studio для Mac предоставляет обширный набор функций для облегчения отладки. Эта статья описывает использование всего арсенала средств отладки в Visual Studio для Mac — от безопасной отладки до визуализации данных.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716967"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397950"
 ---
-# <a name="debugging-with-xamarin"></a>Отладка с помощью Xamarin
+# <a name="debugging-with-visual-studio-for-mac"></a>Отладка с помощью Visual Studio для Mac
 
-Visual Studio для Mac имеет отладчик машинного кода, обеспечивая поддержку отладки для приложений Xamarin.iOS, Xamarin.Android и Xamarin.Mac.
+Visual Studio для Mac содержит отладчики с поддержкой приложений .NET Core, .NET Framework, Unity и Xamarin.
 
 Visual Studio для Mac использует отладчик [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), который реализован в среде выполнения Mono, что позволяет Visual Studio для Mac выполнять отладку управляемого кода на всех платформах.
 
@@ -24,6 +24,8 @@ Visual Studio для Mac использует отладчик [*Mono Soft Debug
 Visual Studio для Mac использует Mono Soft Debugger для отладки управляемого кода (C# и F#) во всех приложениях Xamarin. Mono Soft Debugger отличается от обычных отладчиков тем, что является взаимодействующим и встроен в среду выполнения Mono. Созданный код и среда выполнения Mono взаимодействуют с интегрированной средой разработки (IDE) для обеспечения отладки. Среда выполнения Mono предоставляет функции отладки через протокол связи, подробнее о котором можно прочитать [в документации по Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Жестко заданные отладчики, такие как [LLDB]( http://lldb.llvm.org/index.html) или [GDB]( https://www.gnu.org/software/gdb/), управляют программой без информации об отлаживаемой программе или взаимодействия с ней, но по-прежнему могут пригодиться при отладке приложений Xamarin, когда требуется отладка машинного кода iOS или Android.
+
+Для приложений .NET Core и ASP.NET Core Visual Studio для Mac использует отладчик .NET Core. Это взаимодействующий отладчик, который работает со средой выполнения .NET.
 
 ## <a name="using-the-debugger"></a>Использование отладчика
 
@@ -43,9 +45,10 @@ Visual Studio для Mac использует Mono Soft Debugger для отла
 
 ## <a name="start-debugging"></a>Начать отладку
 
-Чтобы начать отладку, выберите целевое устройство или подходящий эмулятор в IDE:
+Чтобы начать отладку, выберите целевой браузер, устройство или подходящий имитатор/эмулятор:
 
-![Выберите целевое устройство](media/debugging-image1.png)
+![Конфигурация отладки](media/debugging-image_0.png)
+![Выбор целевого устройства](media/debugging-image1.png)
 
 После этого разверните приложение, нажав кнопку **Воспроизвести** или клавиши **CMD+ВВОД**. При попадании в точку останова код выделяется желтым цветом:
 
@@ -90,9 +93,9 @@ Visual Studio для Mac использует Mono Soft Debugger для отла
 
 Так как эта функция использует больше памяти во время отладки, по умолчанию она отключена.
 
-Чтобы включить ее, перейдите в раздел **Visual Studio для Mac > Параметры > Отладчик** и убедитесь, что выбор параметра "**Отладка только кода проекта (без захода в код платформы)** " **отменен**, как показано ниже:
+Чтобы включить ее, перейдите в раздел **Visual Studio для Mac > Параметры > Отладчик** и убедитесь, что параметр **Выполнение по шагам во внешнем коде** **выбран** как показано ниже:
 
-![Параметр "Отладка только кода проекта (без захода в код платформы)"](media/debugging-image8.png)
+![Параметр "Выполнение по шагам во внешнем коде"](media/debugging-image8.png)
 
 ## <a name="see-also"></a>См. также
 

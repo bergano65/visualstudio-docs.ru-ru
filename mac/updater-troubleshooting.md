@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984407"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405478"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Устранение неполадок: Сбой средства обновления при получении сведений
 
@@ -24,4 +24,5 @@ ms.locfileid: "74984407"
 - Если это сообщение об ошибке не исчезает, попробуйте выполнить обновление с помощью установщика, если на вашем компьютере есть файл **.dmg** (его можно скачать на сайте [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/)).
   - Установщик обновит все установленные компоненты на компьютере.
   - Повторно запустив установщик, вы также сможете установить недостающие компоненты, которые не были установлены ранее.
-- Кроме того, можно попробовать удалить скачанные кэшированные данные. Для этого удалите файл, расположенный в `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml`.
+- Кроме того, можно попробовать удалить скачанные кэшированные данные. Для этого удалите файл, расположенный в `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml`.
+- Если вы работаете с более ранней версией Visual Studio для Mac, у вас могут быть другие номера версий в каталоге `VisualStudio`. Также удалите файл `index.xml` в этих путях.

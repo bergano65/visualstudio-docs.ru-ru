@@ -1,6 +1,6 @@
 ---
 title: Развертывание контейнера Docker для ASP.NET в реестре ACR
-description: Сведения об использовании инструментов Visual Studio для работы с контейнерами с целью развертывания веб-приложения ASP.NET Core в реестре контейнеров
+description: Сведения об использовании инструментов Visual Studio для работы с контейнерами и развертывания веб-приложения ASP.NET Core или ASP.NET Core в реестре контейнеров
 author: ghogen
 manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: b3b012bfe3b9fc359a8c9688c52aa5bfc27fd2c7
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 200c94950c9dd6309481e7d79b27eeba166a0e1f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126145"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402509"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Развертывание контейнера ASP.NET в реестр контейнеров из Visual Studio
 
@@ -38,7 +38,7 @@ Docker — это облегченная платформа контейнеро
 * Установить [Docker для Windows](https://docs.docker.com/docker-for-windows/install/).
 
 ## <a name="create-an-aspnet-core-web-app"></a>Создание веб-приложения ASP.NET Core
-Давайте создадим простое приложение ASP.NET Core, которое мы будем использоваться в этом руководстве.
+Давайте создадим простое приложение ASP.NET Core, которое мы будем использоваться в этом руководстве. Если у вас уже есть проект, этот раздел можно пропустить.
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -53,7 +53,7 @@ Docker — это облегченная платформа контейнеро
 3. Выберите **Создать реестр контейнеров Azure** и щелкните **Опубликовать**.
 4. Заполните нужные значения в окне **Создать новый реестр контейнеров Azure**.
 
-    | Параметр      | Рекомендуемое значение  | ОПИСАНИЕ                                |
+    | Параметр      | Рекомендуемое значение  | Описание                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS-префикс** | Глобально уникальное имя | Имя, которое однозначно идентифицирует реестр контейнеров. |
     | **Подписка** | Выберите свою подписку | Подписка Azure, которую нужно использовать. |
@@ -66,3 +66,7 @@ Docker — это облегченная платформа контейнеро
 5. Нажмите кнопку **Создать**.
 
 Теперь можно извлечь контейнер из реестра в любой узел, поддерживающий работу образов Docker, например [Экземпляры контейнеров Azure](/azure/container-instances/container-instances-tutorial-deploy-app).
+
+## <a name="see-also"></a>См. также
+
+[Краткое руководство. Развертывание экземпляра контейнера в Azure с помощью Azure CLI](/azure/container-instances/container-instances-quickstart)

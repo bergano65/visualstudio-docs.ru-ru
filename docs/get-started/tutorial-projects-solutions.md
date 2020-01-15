@@ -4,17 +4,17 @@ ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caa8fde228d83cbb14b911965573e78648133b81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c130f7f55409bd24520dd55e949d20e8d5bbb97
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647822"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567272"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Сведения о проектах и решениях
 
@@ -49,7 +49,7 @@ ms.locfileid: "72647822"
 
 1. Запустите Visual Studio.
 
-1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+1. В верхней строке меню щелкните выберите **Файл** > **Создать** > **Проект**.
 
    Откроется диалоговое окно **Новый проект** .
 
@@ -83,7 +83,7 @@ ms.locfileid: "72647822"
 
 ::: moniker range="vs-2017"
 
-1. В контекстном меню, вызываемом щелчком правой кнопкой мыши элемента **Решение "QuickSolution"** в **обозревателе решений**, выберите пункты **Добавить** > **Создать проект**.
+1. В контекстном меню (щелчок правой кнопкой мыши) элемента **Решение QuickSolution** в **обозревателе решений** щелкните **Добавить** > **Создать проект**.
 
    Откроется диалоговое окно **Добавить новый проект** .
 
@@ -100,7 +100,7 @@ ms.locfileid: "72647822"
 
 ::: moniker range=">=vs-2019"
 
-1. В контекстном меню, вызываемом щелчком правой кнопкой мыши элемента **Решение "QuickSolution"** в **обозревателе решений**, выберите пункты **Добавить** > **Создать проект**.
+1. В контекстном меню (щелчок правой кнопкой мыши) элемента **Решение QuickSolution** в **обозревателе решений** щелкните **Добавить** > **Создать проект**.
 
    Открывается диалоговое окно с заголовком **Добавление проекта**.
 

@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659896"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590505"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -120,7 +120,7 @@ public void Withdraw(double amount)
 
 **Добавление нового проекта модульного тестирование в решение**
 
-1. В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите пункты **Добавить** > **Новый** **проект**.
+1. В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите **Добавить**  >  **Создать** **Проект**.
 
 ::: moniker range="vs-2017"
 
@@ -273,7 +273,7 @@ public void My_Test ()
 
 ::: moniker range="vs-2017"
 
-|Кнопка|ОПИСАНИЕ|
+|Кнопка|Описание|
 |-|-|
 |![Запуск после построения](../test/media/ute_runafterbuild_btn.png)|Чтобы запускать модульные тесты после каждой локальной сборки, в стандартном меню выберите **Тест**, а затем выберите **Выполнить тесты после сборки** в панели инструментов **обозревателя тестов**.|
 
@@ -299,7 +299,7 @@ public void My_Test ()
 ![Категории фильтров поиска](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
 ::: moniker-end
 
-|Кнопка|ОПИСАНИЕ|
+|Кнопка|Описание|
 |-|-|
 |![Кнопка группы обозревателя тестов](../test/media/ute_groupby_btn.png)|Для группировки тестов по категории, нажмите кнопку **Группировать по** .|
 
