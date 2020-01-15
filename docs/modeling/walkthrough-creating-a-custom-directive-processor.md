@@ -1,24 +1,24 @@
 ---
-title: Пошаговое руководство. Создание пользовательского обработчика директив
+title: Пошаговое руководство. Создание пользовательского процессора директив
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666982"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596493"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 
@@ -84,9 +84,9 @@ End Property
 
 2. Добавьте ссылки на следующие сборки:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. interfaces.\*. 0**
 
 3. Замените код в файле **Class1** на следующий код. Этот код определяет класс CustomDirectiveProcessor, наследующий класс <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> и реализующий необходимые методы.
 
@@ -637,9 +637,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. Выполните команду `regedit` с помощью меню "Пуск" или командной строки.
 
-2. Перейдите в папку **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* 0 \ тексттемплатинг\директивепроцессорс**и щелкните узел.
+2. Перейдите в папку **HKEY_LOCAL_MACHINE \софтваре\микрософт\висуалстудио\\\*0 \ тексттемплатинг\директивепроцессорс**и щелкните узел.
 
-   В 64-разрядных системах используйте **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ тексттемплатинг\директивепроцессорс**
+   В 64-разрядных системах используйте **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*. 0 \ тексттемплатинг\директивепроцессорс**
 
 3. Добавьте новый раздел с именем CustomDirectiveProcessor.
 
@@ -654,18 +654,18 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      Ваш раздел реестра должен содержать следующие значения:
 
-   | Название | Type | Data |
+   | name | Type | Data |
    |-|-|-|
    | (Значение по умолчанию) | REG_SZ | (значение не задано) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<Path в решение ></strong> кустомдп\бин\дебуг\кустомдп.длл |
+   | Класс | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<путь к решению ></strong> кустомдп\бин\дебуг\кустомдп.длл |
 
      Если вы поместили сборку в глобальный кэш сборок, эти значения должны выглядеть так:
 
-   | Название | Type | Data |
+   | name | Type | Data |
    |-|-|-|
    | (Значение по умолчанию) | REG_SZ | (значение не задано) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Класс | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
 6. Перезапустите Visual Studio.
@@ -877,7 +877,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Замените код в *TestDP.TT* следующим кодом. Код HTML будет выделен. Обязательно замените строку `YOUR PATH` путем к файлу *докфиле. XML* .
 
     > [!NOTE]
-    > Дополнительные теги Open \< # и Close # > разделяют код инструкции из HTML-тегов.
+    > Дополнительные теги Open \<# и Close # > разделяют код инструкции из HTML-тегов.
 
     ```csharp
     <#@ assembly name="System.Xml" #>
