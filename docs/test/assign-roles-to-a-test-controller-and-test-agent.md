@@ -9,15 +9,15 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665304"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591194"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Назначение ролей контроллеру и агенту тестирования
 
@@ -97,7 +97,7 @@ ms.locfileid: "72665304"
 
 ::: moniker range="vs-2017"
 
-8. В меню **Тестирование** последовательно выберите пункты **Параметры тестирования** > **Выбрать файл параметров тестирования** и файл *TestSettingDistributedTestWalkthrough.testsettings*.
+8. В меню **Тестирование** щелкните **Параметры тестирования** > **Выбрать файл параметров тестирования** и файл *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 

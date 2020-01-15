@@ -11,18 +11,18 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 84f6ddc2012617a5216c58fa0761dc100fb8942f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745928"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402748"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Пример проекта C++ для анализа кода
 
 В следующих процедурах показано, как создать пример для пошагового руководства [ Анализ кода C/C++ на наличие дефектов](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Эти процедуры создают следующее:
 
-- Решение Visual Studio с именем CppDemo.
+- Решение [!INCLUDEvsprvs] с именем CppDemo.
 
 - Проект статической библиотеки CodeDefects.
 
@@ -32,19 +32,17 @@ ms.locfileid: "72745928"
 
 ## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Создание решения CppDemo и проекта CodeDefects
 
-1. В меню **Файл** выберите команду **Создать**, а затем **Создать проект**.
+1. Откройте [!INCLUDEvsprvs] и выберите **Создание проекта**
 
-2. Если C++ не является вашим языком по умолчанию в Visual Studio, в списке дерева **Типы проектов** разверните узел **Другие языки**.
+2. Изменить языковой фильтр на **C++**
 
-3. Разверните **Visual C++** и выберите **Общие**.
+3. Выберите **Пустой проект** и нажмите кнопку **Далее**
 
-4. В области **Шаблоны** щелкните **Пустой проект**.
+4. В текстовом поле **Имя проекта** введите **CodeDefects**.
 
-5. В текстовом поле **Имя** введите **CodeDefects**.
+5. В текстовом поле **Имя решения** введите **CppDemo**.
 
-6. Установите флажок **Создать каталог для решения**.
-
-7. В текстовом поле **Имя решения** введите **CppDemo**.
+6. Нажмите кнопку **Создать**.
 
 ## <a name="configure-the-codedefects-project-as-a-static-library"></a>Настройка проекта CodeDefects в качестве статической библиотеки
 
@@ -52,9 +50,9 @@ ms.locfileid: "72745928"
 
 2. Разверните пункт **Свойства конфигурации** и выберите **Общие**.
 
-3. В списке **Общие** выберите текст в столбце рядом с полем **Конечное расширение**, а затем введите **.lib**.
+3. В списке **Общее** измените **тип конфигурации** на **Статическая библиотека (.lib)** .
 
-4. В области **Значения по умолчанию для проекта** щелкните столбец рядом с полем **Тип конфигурации**, а затем выберите **Статическая библиотека (.lib)** .
+4. В списке **Дополнительно** измените **целевое расширение файла** на **.lib**
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Добавление заголовка и исходного файла в проект CodeDefects
 
@@ -64,27 +62,23 @@ ms.locfileid: "72745928"
 
 3. В поле **Имя** введите **Bug.h** и нажмите кнопку **Добавить**.
 
-4. Скопируйте приведенный ниже код и вставьте его в файл *Bug.h* в редакторе Visual Studio.
+4. Скопируйте приведенный ниже код и вставьте его в файл *Bug.h* в редакторе.
 
-    ```cpp
-    #include <windows.h>
+```cpp
+#pragma once
 
-    //
-    //These 3 functions are consumed by the sample
-    //  but are not defined. This project cannot be linked!
-    //
+#include <windows.h>
 
-    bool CheckDomain( LPCSTR );
-    HRESULT ReadUserAccount();
+// These functions are consumed by the sample
+// but are not defined. This project cannot be linked!
+bool CheckDomain(LPCTSTR);
+HRESULT ReadUserAccount();
 
-    //
-    //These constants define the common sizes of the
-    //  user account information throughout the program
-    //
-
-    const int USER_ACCOUNT_LEN = 256;
-    const int ACCOUNT_DOMAIN_LEN = 128;
-    ```
+// These constants define the common sizes of the
+// user account information throughout the program
+const int USER_ACCOUNT_LEN = 256;
+const int ACCOUNT_DOMAIN_LEN = 128;
+```
 
 5. В обозревателе решений щелкните правой кнопкой мыши **Исходные файлы** и последовательно выберите пункты **Создать** и **Новый элемент**.
 
@@ -92,65 +86,63 @@ ms.locfileid: "72745928"
 
 7. В поле **Имя** введите **Bug.cpp** и нажмите кнопку **Добавить**.
 
-8. Скопируйте приведенный ниже код и вставьте его в файл *Bug.cpp* в редакторе Visual Studio.
+8. Скопируйте приведенный ниже код и вставьте его в файл *Bug.cpp* в редакторе.
 
-    ```cpp
-    #include <stdlib.h>
-    #include "Bug.h"
+```cpp
+#include "Bug.h"
 
-    // the user account
-    TCHAR g_userAccount[USER_ACCOUNT_LEN] = "";
-    int len = 0;
+// the user account
+TCHAR g_userAccount[USER_ACCOUNT_LEN] = {};
+int len = 0;
 
-    bool ProcessDomain()
+bool ProcessDomain()
+{
+    TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
+    // ReadUserAccount gets a 'domain\user' input from
+    //the user into the global 'g_userAccount'
+    if (ReadUserAccount())
     {
-        TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
-        // ReadUserAccount gets a 'domain\user' input from
-        //the user into the global 'g_userAccount'
-        if (ReadUserAccount() )
+        // Copies part of the string prior to the '\'
+        // character onto the 'domain' buffer
+        for (len = 0; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != L'\0'); len++)
         {
-
-            // Copies part of the string prior to the '\'
-            // character onto the 'domain' buffer
-            for( len = 0 ; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != '\0') ; len++  )
+            if (g_userAccount[len] == '\\')
             {
-                if ( g_userAccount[len] == '\\' )
-                {
-                    // Stops copying on the domain and user separator ('\')
-                    break;
-                }
-                domain[len] = g_userAccount[len];
+                // Stops copying on the domain and user separator ('\')
+                break;
             }
-            if((len= ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
-            {
-                // '\' was not found. Invalid domain\user string.
-                delete [] domain;
-                return false;
-            }
-            else
-            {
-                domain[len]='\0';
-            }
-            // Process domain string
-            bool result = CheckDomain( domain );
-
-            delete[] domain;
-            return result;
+            domain[len] = g_userAccount[len];
         }
-        return false;
-    }
-
-    int path_dependent(int n)
-    {
-        int i;
-        int j;
-        if (n == 0)
-            i = 1;
+        if ((len = ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
+        {
+            // '\' was not found. Invalid domain\user string.
+            delete[] domain;
+            return false;
+        }
         else
-            j = 1;
-        return i+j;
+        {
+            domain[len] = '\0';
+        }
+        // Process domain string
+        bool result = CheckDomain(domain);
+
+        delete[] domain;
+        return result;
     }
-    ```
+    return false;
+}
+
+int path_dependent(int n)
+{
+    int i;
+    int j;
+    if (n == 0)
+        i = 1;
+    else
+        j = 1;
+    return i + j;
+}
+```
 
 9. Откройте меню **Файл** и щелкните пункт **Сохранить все**.
 
@@ -158,17 +150,18 @@ ms.locfileid: "72745928"
 
 1. В обозревателе решений щелкните **CppDemo** и последовательно выберите пункты **Добавить** и **Новый проект**.
 
-2. В диалоговом окне **Добавить новый проект** разверните узел Visual C++, выберите пункт **Общие** и пункт **Пустой проект**.
+2. В диалоговом окне **Добавить новый проект** измените языковой фильтр на **C++** и выберите **Пустой проект**, а затем нажмите кнопку **Далее**.
 
-3. В текстовом поле **Имя** введите **Annotations** и нажмите кнопку **Добавить**.
+3. В текстовом поле **Имя проекта** введите **Аннотации** и нажмите кнопку **Создать**.
 
 4. В обозревателе решений щелкните правой кнопкой мыши проект **Annotations** и выберите пункт **Свойства**.
 
 5. Разверните пункт **Свойства конфигурации** и выберите **Общие**.
 
-6. В списке **Общие** выберите текст в столбце рядом с полем **Конечное расширение**, а затем введите **.lib**.
+6. В списке **Общее** измените **тип конфигурации** на "Статическая библиотека (.lib)", а затем щелкните **Статическая библиотека (.lib)** .
 
-7. В области **Значения по умолчанию для проекта** щелкните столбец рядом с полем **Тип конфигурации**, а затем выберите **Статическая библиотека (.lib)** .
+7. В списке **Дополнительно** выберите текст в столбце рядом с полем **Расширение целевого файла**, а затем введите **.lib**.
+
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Добавление файла заголовка и исходного файла в проект Annotations
 
@@ -178,22 +171,22 @@ ms.locfileid: "72745928"
 
 3. В поле **Имя** введите **annotations.h** и нажмите кнопку **Добавить**.
 
-4. Скопируйте приведенный ниже код и вставьте его в файл *annotations.h* в редакторе Visual Studio.
+4. Скопируйте приведенный ниже код и вставьте его в файл *annotations.h* в редакторе.
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
+```cpp
+#pragma once
+#include <sal.h>
 
-    struct LinkedList
-    {
-        struct LinkedList* next;
-        int data;
-    };
+struct LinkedList
+{
+    struct LinkedList* next;
+    int data;
+};
 
-    typedef struct LinkedList LinkedList;
+typedef struct LinkedList LinkedList;
 
-    [returnvalue:SA_Post( Null=SA_Maybe )] LinkedList* AllocateNode();
-
-    ```
+_Ret_maybenull_ LinkedList* AllocateNode();
+```
 
 5. В обозревателе решений щелкните правой кнопкой мыши **Исходные файлы** и последовательно выберите пункты **Создать** и **Новый элемент**.
 
@@ -201,33 +194,30 @@ ms.locfileid: "72745928"
 
 7. В поле **Имя** введите **annotations.cpp** и нажмите кнопку **Добавить**.
 
-8. Скопируйте приведенный ниже код и вставьте его в файл *annotations.cpp* в редакторе Visual Studio.
+8. Скопируйте приведенный ниже код и вставьте его в файл *annotations.cpp* в редакторе.
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
-    #include <windows.h>
-    #include <stdlib.h>
-    #include "annotations.h"
+```cpp
+#include "annotations.h"
 
-    LinkedList* AddTail( LinkedList *node, int value )
+LinkedList* AddTail(LinkedList* node, int value)
+{
+    // finds the last node
+    while (node->next != nullptr)
     {
-        LinkedList *newNode = NULL;
-
-        // finds the last node
-        while ( node->next != NULL )
-        {
-            node = node->next;
-        }
-
-        // appends the new node
-        newNode = AllocateNode();
-        newNode->data = value;
-        newNode->next = 0;
-        node->next = newNode;
-
-        return newNode;
+        node = node->next;
     }
 
-    ```
+    // appends the new node
+    LinkedList* newNode = AllocateNode();
+    newNode->data = value;
+    newNode->next = 0;
+    node->next = newNode;
+
+    return newNode;
+}
+```
 
 9. Откройте меню **Файл** и щелкните пункт **Сохранить все**.
+
+
+Теперь решение завершено и должно создаться без ошибок.

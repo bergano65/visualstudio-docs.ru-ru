@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 9e8e306aea1615649223c96f0c5a7041574f844d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516681"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588854"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Шаг 1. Создание проекта и добавление в форму элементов управления Label
 
@@ -30,7 +30,7 @@ ms.locfileid: "72516681"
 
 ::: moniker range="vs-2017"
 
-1. В строке меню выберите **Файл** > **Создать** > **Проект**.
+1. В строке меню щелкните **Файл** > **Создать** > **Проект**.
 
 1. Выберите **Visual C#** или **Visual Basic** в левой области диалогового окна **Новый проект**, а затем — **Классическое приложение Windows**.
 

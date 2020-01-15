@@ -4,17 +4,17 @@ ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: cf70ad5e28286d3906b1d670303e5fdfad4cbbe2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+author: mikejo5000
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982943"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845812"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
 
@@ -36,7 +36,7 @@ ms.locfileid: "72982943"
 | Операционные системы | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Поддержка 32–разрядной и 64–разрядной архитектур | 32-разрядные приложения можно тестировать в 32-разрядных ОС Windows с установленным приложением [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .<br /><br /> В 64-разрядной ОС Windows, в которой выполняется 32-разрядное приложение [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] , можно тестировать 32-разрядные приложения WOW с синхронизацией пользовательского интерфейса.<br /><br /> В 64-разрядных ОС Windows, в которых выполняется 32-разрядное приложение [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] , можно тестировать 64-разрядные приложения Windows Forms и WPF без синхронизации пользовательского интерфейса. |
 | Архитектура | x86 и x64 **Примечание.**  Internet Explorer не поддерживается в 64-разрядном режиме, кроме запуска в [!INCLUDE[win8](../debugger/includes/win8_md.md)] или более поздних версиях. |
-| .NET | .NET 2.0, 3.0, 3.5, 4 и 4.5. **Примечание**. Для работы [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] и Visual Studio требуется .NET 4. Тем не менее, приложения, разработанные с помощью перечисленных версий .NET, все же поддерживаются. |
+| .NET | .NET 2.0, 3.0, 3.5, 4 и 4.5. **Примечание.** Для работы [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] и Visual Studio требуется .NET 4. Тем не менее, приложения, разработанные с помощью перечисленных версий .NET, все же поддерживаются. |
 
 > [!NOTE]
 > *Синхронизация пользовательского интерфейса* — это функция проверки воспроизведения в очереди сообщений каждого элемента управления. Если элемент управления не отвечает на отправленное ему событие, это событие отправляется еще раз.
@@ -54,7 +54,7 @@ ms.locfileid: "72982943"
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | Не поддерживается. |
 | Хром<br /><br /> Firefox | Запись шагов действий не поддерживается. Закодированные тесты пользовательского интерфейса можно воспроизводить в браузерах Chrome и Firefox, если установлена программа Visual Studio 2012 Обновление 4 или более поздняя версия. Щелкните [здесь](using-different-web-browsers-with-coded-ui-tests.md) для получения дополнительных сведений. |
 | Opera<br /><br /> Safari | Не поддерживается. |
-| Silverlight | Не поддерживается.<br /><br /> Однако для Visual Studo 2013 можно скачать [подключаемый модуль закодированных тестов пользовательского интерфейса Microsoft Visual Studio 2013 для Silverlight](https://go.microsoft.com/fwlink/?LinkId=691026) из коллекции Visual Studio. |
+| Silverlight | Не поддерживается.<br /><br /> Однако для Visual Studo 2013 можно скачать [подключаемый модуль закодированных тестов пользовательского интерфейса Microsoft Visual Studio 2013 для Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) из коллекции Visual Studio. |
 | Flash/Java | Не поддерживается. |
 | Windows Forms 2.0 и более поздних версий | Поддерживается полностью. **Примечание.**  Элементы управления NetFx поддерживаются полностью, однако поддерживаются не все элементы управления сторонних разработчиков. |
 | WPF 3.5 и более поздние версии | Поддерживается полностью.<br /><br /> **Примечание.** Элементы управления NetFx поддерживаются полностью, однако поддерживаются не все элементы управления сторонних разработчиков. |

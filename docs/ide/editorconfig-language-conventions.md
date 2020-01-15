@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588633"
 ---
 # <a name="language-conventions"></a>Языковые соглашения
 
@@ -1838,7 +1838,7 @@ void M()
 | **Имя правила** | csharp_prefer_simple_using_statement |
 | **Идентификатор правила** | IDE0063 |
 | **Применимые языки** | C# 8.0+ |
-| **Значения** | `true` — предпочитать использовать *простую* инструкцию `using`<br /><br />`false` — не предпочитать использовать *простую* инструкцию `using` |
+| **Значения** | `true` — предпочитать использовать *простую* инструкцию `using`.<br /><br />`false` — не предпочитать использовать *простую* инструкцию `using`. |
 | **Значение по умолчанию в Visual Studio** | `true:suggestion` |
 
 Примеры кода:

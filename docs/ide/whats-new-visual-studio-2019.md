@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810123"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406720"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
@@ -201,6 +201,8 @@ ms.locfileid: "74810123"
 **Новые компоненты в версии 16.4**: Теперь можно легко находить объекты по их свойствам при отладке с помощью нового инструмента "Закрепляемые свойства". Просто наведите указатель мыши на свойство, которое нужно отобразить в окне отладчика в окне просмотра, автоматических действий и локальных действий, а затем щелкните значок закрепления. После этого в верхней части окна сразу же появится нужная информация.
 
    ![Анимация, показывающая, как закрепить свойства в отладчике Visual Studio с помощью средства инструмента "Закрепляемые свойства"](media/vs-2019/debugger-pinnable-properties.gif)
+
+См. сведения о [закрепляемых свойствах (отладка и отображение управляемых объектов удобным для пользователя способом)](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/).
 
 ## <a name="whats-next"></a>Дальнейшие действия
 

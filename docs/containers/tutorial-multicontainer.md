@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/21/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ce6e98e2d068cd569247c4c4ea869c4280101d47
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126091"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75399757"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Учебник. Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -28,6 +28,7 @@ ms.locfileid: "71126091"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**.
 * [Средства разработки .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) для разработки с использованием .NET Core 2.2.
+* [Средства разработки .NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.1) для разработки с использованием .NET Core 3.1.
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Создание проекта веб-приложения
@@ -54,7 +55,7 @@ ms.locfileid: "71126091"
 
 ## <a name="create-a-web-api-project"></a>Создание проекта веб-API
 
-Добавьте еще один проект в то же решение и назовите его *MyWebAPI*. Выберите тип проекта **API** и снимите флажок **Настроить для HTTPS**. В данном случае протокол SSL используется только для обмена данными с клиентом, но не для обмена данными между контейнерами в пределах веб-приложения. Протокол HTTPS требуется только для `WebFrontEnd`.
+Добавьте еще один проект в то же решение и назовите его *MyWebAPI*. Выберите тип проекта **API** и снимите флажок **Настроить для HTTPS**. В данном случае протокол SSL используется только для обмена данными с клиентом, но не для обмена данными между контейнерами в пределах веб-приложения. Только для `WebFrontEnd` необходим протокол HTTPS, а в коде в примерах предполагается, что флажок снят.
 
 ::: moniker range="vs-2017"
    ![Снимок экрана: создание проекта веб-API](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -76,12 +77,15 @@ ms.locfileid: "71126091"
        {
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
-          request.RequestUri = new Uri("http://mywebapi/api/values/1");
+          // request.RequestUri = new Uri("http://mywebapi/WeatherForecast"); // ASP.NET 3 (VS 2019 only)
+          request.RequestUri = new Uri("http://mywebapi/api/values/1"); // ASP.NET 2.x
           var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }
    ```
+
+   Для .NET Core 3.1 в Visual Studio 2019 или более поздней версии шаблон веб-API использует API WeatherForecast, поэтому раскомментируйте эту строку и закомментируйте строку для ASP.NET 2.x.
 
 1. В файл *Index.cshtml* добавьте строку для отображения `ViewData["Message"]`, чтобы файл выглядел примерно так:
     
@@ -99,7 +103,7 @@ ms.locfileid: "71126091"
       </div>
       ```
 
-1. Теперь перейдите в проект веб-API и добавьте в контроллер Values код с пользовательским сообщением API для вызова, который вы добавили из *webfrontend*.
+1. (Только для ASP.NET 2.x) Теперь перейдите в проект веб-API и добавьте в контроллер Values код с пользовательским сообщением API для вызова, который вы добавили из *webfrontend*.
     
       ```csharp
         // GET api/values/5
@@ -109,6 +113,12 @@ ms.locfileid: "71126091"
             return "webapi (with value " + id + ")";
         }
       ```
+
+    В .NET Core 3.1 это не требуется, так как вы можете использовать уже имеющийся API WeatherForecast. Однако необходимо закомментировать вызов `UseHttpsRedirections` в методе `Configure` в *Startup.cs*, так как этот код использует HTTP, а не HTTPS для вызова веб-API.
+
+    ```csharp
+                //app.UseHttpsRedirection();
+    ```
 
 1. В проекте `WebFrontEnd` выберите **Добавить > Container Orchestrator Support** (Поддержка оркестратора контейнеров). Появится диалоговое окно **Варианты поддержки Docker**.
 
@@ -163,15 +173,17 @@ ms.locfileid: "71126091"
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. Теперь запустите сайт локально (F5 или CTRL+F5), чтобы убедиться в том, что он работает правильно. Если все настроено правильно, вы увидите следующее сообщение: "Hello from webfrontend and webapi (with value 1)" (Привет от webfrontend и веб-API (со значением 1)).
+1. Теперь запустите сайт локально (F5 или CTRL+F5), чтобы убедиться в том, что он работает правильно. Если все настроено правильно для версии NET Core 2.x, вы увидите следующее сообщение: Hello from webfrontend and webapi (Привет от webfrontend и веб-API) (со значением 1).  В .NET Core 3 отображаются данные прогноза погоды.
 
    Первый проект, используемый при добавлении оркестрации контейнеров, настраивается как начальный при запуске или отладке. Настроить действие запуска для проекта docker-compose можно в **свойствах проекта**.  Щелкните правой кнопкой мыши узел проекта docker-compose и выберите в контекстном меню пункт **Свойства** или нажмите клавиши ALT+ВВОД.  На снимке экрана ниже показаны свойства, которые требуются для решения в этом руководстве.  Например, можно изменить загружаемую страницу, настроив свойство **URL-адрес службы**.
 
    ![Снимок экрана: свойства проекта docker-compose](media/tutorial-multicontainer/launch-action.png)
 
-   Вот что вы увидите при запуске:
+   Вот что вы видите при запуске (версия .NET Core 2.x):
 
    ![Снимок экрана с запущенным веб-приложением](media/tutorial-multicontainer/webfrontend.png)
+
+   В веб-приложении для .NET 3.1 отображаются данные о погоде в формате JSON.
 
 ## <a name="next-steps"></a>Следующие шаги
 

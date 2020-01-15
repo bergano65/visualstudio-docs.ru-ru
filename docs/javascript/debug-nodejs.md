@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777937"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678978"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio позволяет выполнять отладку кода Java
 ## <a name="debug-client-side-script"></a>Отладка клиентского скрипта
 
 ::: moniker range=">=vs-2019"
-Visual Studio обеспечивает отладку на стороне клиента только для Chrome и Microsoft Edge (Chromium). В некоторых сценариях отладчик автоматически останавливается на точках останова в коде JavaScript и TypeScript, в том числе во внедренных в HTML-файлы скриптах. Сведения об отладке сценария на стороне клиента в приложениях ASP.NET см. в записи блога [Отладка JavaScript в Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) и этом [записи в Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+Visual Studio обеспечивает отладку на стороне клиента только для Chrome и Microsoft Edge (Chromium). В некоторых сценариях отладчик автоматически останавливается на точках останова в коде JavaScript и TypeScript, в том числе во внедренных в HTML-файлы скриптах. Сведения об отладке сценария на стороне клиента в приложениях ASP.NET см. в записи блога [Отладка JavaScript в Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) и этом [записи в Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome). См. сведения об отладке TypeScript в ASP.NET Core см. в руководстве по [созданию приложения ASP.NET Core с помощью TypeScript](tutorial-aspnet-with-typescript.md).
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio поддерживает отладку на стороне клиента только для браузеров Chrome и Internet Explorer. В некоторых сценариях отладчик автоматически останавливается на точках останова в коде JavaScript и TypeScript, в том числе во внедренных в HTML-файлы скриптах. Сведения об отладке сценария на стороне клиента в приложениях ASP.NET см. в записи блога [Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Отладка проектов ASP.NET на стороне клиента в Google Chrome).

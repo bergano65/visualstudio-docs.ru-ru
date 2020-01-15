@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Использование ссылки на имя или расположение файла проекта | Документация Майкрософт
+title: Практическое руководство. Использование ссылки на имя или расположение файла проекта | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - reserved properties
 - project files, referencing
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574786"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Как выполнить Использование ссылки на имя или расположение файла проекта
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Практическое руководство. Использование ссылки на имя или расположение файла проекта
 Имя или расположение проекта в файле проекта можно использовать без создания отдельного свойства. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет зарезервированные свойства, ссылающиеся на имя файла проекта, и другие свойства, связанные с проектом. Дополнительные сведения о зарезервированных свойствах см. в статье [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Использование свойств проекта
@@ -31,7 +31,7 @@ ms.locfileid: "63386805"
 
 #### <a name="to-use-the-project-properties"></a>Использование свойств проекта
 
-- Укажите ссылка на свойство в файле проекта с помощью нотации $() так же, как и для любого свойства. Например:
+- Укажите ссылка на свойство в файле проекта с помощью нотации $() так же, как и для любого свойства. Пример:
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -40,6 +40,8 @@ ms.locfileid: "63386805"
   ```
 
   Преимущество использования зарезервированного свойства заключается в том, что любые изменения имени файла проекта применяются автоматически. В следующий раз при сборке проекта выходной файл будет иметь новое имя, и это не потребует никаких дополнительных действий с вашей стороны.
+
+  См. сведения об [использовании специальных символов MSBuild в ссылках на файл или проект](../msbuild/msbuild-special-characters.md).
 
 > [!NOTE]
 > Зарезервированные свойства нельзя переопределить в файле проекта.

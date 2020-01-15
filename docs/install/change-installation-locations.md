@@ -9,19 +9,19 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea0651ee1cfde14d5ef7b422095707d8f81cb2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974388"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590154"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Выбор расположения установки в Visual Studio
 
@@ -46,11 +46,11 @@ ms.locfileid: "62974388"
 
 1. При установке Visual Studio откройте вкладку **Расположения установки**.
 
-   ![Visual Studio 2017 — выбор расположения установки](media/vs-installation-locations.png "Выберите расположение установки.")
+   ![Visual Studio 2017 — выбор расположения установки](media/vs-installation-locations.png "Выберите расположение установки.")
 
 1. В разделе **Visual Studio IDE** примите значение по умолчанию. Visual Studio устанавливает основной продукт и файлы, относящиеся к этой версии Visual Studio.
 
-   ![Раздел Visual Studio IDE на вкладке "Расположения установки"](media/vs-installation-locations-ide.png "Примите значение по умолчанию для раздела Visual Studio IDE на вкладке \"Расположения установки\".")
+   ![Раздел Visual Studio IDE на вкладке "Расположения установки"](media/vs-installation-locations-ide.png "Примите значение по умолчанию для раздела Visual Studio IDE вкладки "Расположения установки".")
 
    > [!TIP]
    > Если системный диск является твердотельным накопителем (SSD), рекомендуется принять расположение по умолчанию на системном диске. Почему? При разработке с помощью Visual Studio вы часто считываете и записываете данные в большом количестве файлов, что увеличивает интенсивность дисковых операций ввода-вывода. Рекомендуется выбрать самый быстрый диск, чтобы справиться с нагрузкой.
@@ -80,7 +80,7 @@ ms.locfileid: "62974388"
 
 1. При установке Visual Studio откройте вкладку **Расположения установки**.
 
-   ![Visual Studio 2019 — выбор расположения установки](media/vs-2019/vs-installer-installation-locations.png "Выберите расположение установки.")
+   ![Visual Studio 2019 — выбор расположения установки](media/vs-2019/vs-installer-installation-locations.png "Выберите расположение установки.")
 
 1. В разделе **Visual Studio IDE** примите значение по умолчанию. Visual Studio устанавливает основной продукт и файлы, относящиеся к этой версии Visual Studio.
 

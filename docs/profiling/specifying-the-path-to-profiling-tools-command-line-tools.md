@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 087407f511c038a369694beca8a9fe4ecc2ff7b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771591"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406304"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Указание пути к программам командной строки средств профилирования
 
@@ -22,9 +22,7 @@ ms.locfileid: "74771591"
 
 ## <a name="32-bit-computers"></a>32-разрядные компьютеры
 
-::: moniker range="vs-2017"
- Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
-::: moniker-end
+Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
 
  Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL находится в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
@@ -32,12 +30,14 @@ ms.locfileid: "74771591"
 
 На 64-разрядных компьютерах укажите путь в соответствии с целевой платформой профилируемого приложения.
 
-::: moniker range="vs-2017"
 - Для 32-разрядных приложений каталог средств профилирования по умолчанию:
 
-     (машинный код) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (управляемый код) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+     (Собственный) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
+     
+     (Управляемый) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - Для 64-разрядных приложений каталог средств профилирования по умолчанию:
 
-     (машинный код) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (управляемый код) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
-::: moniker-end
+     (Собственный) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+
+     (Управляемый) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654215"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594413"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Управление расширениями для Visual Studio
 
@@ -57,7 +57,7 @@ ms.locfileid: "72654215"
 
 1. В диалоговом окне **Сервис** > **Расширения и обновления** найдите расширение, которое вы намерены установить. Если известно имя или часть имени расширения, можно выполнить поиск в окне **Поиск**.
 
-2. Выберите **Скачать**.
+2. Щелкните **Скачать**.
 
    Запланирована установка расширения. Расширение будет установлено после закрытия всех экземпляров Visual Studio.
 
@@ -81,7 +81,7 @@ ms.locfileid: "72654215"
 
 1. В диалоговом окне **Расширения** > **Управление расширениями** найдите расширение, которое вы намерены установить. (Если известно имя или часть имени расширения, можно выполнить поиск в окне **Поиск**.)
 
-2. Выберите **Скачать**.
+2. Щелкните **Скачать**.
 
    Запланирована установка расширения. Расширение будет установлено после закрытия всех экземпляров Visual Studio.
 

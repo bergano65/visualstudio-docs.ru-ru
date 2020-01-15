@@ -3,17 +3,17 @@ title: Пошаговое руководство. Создание прилож�
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647175"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594153"
 ---
 # <a name="walkthrough-build-an-application"></a>Пошаговое руководство. Создание приложения
 
@@ -154,7 +154,7 @@ ms.locfileid: "72647175"
 
      Сведения о сборке включают в себя время запуска сборки (находится в начале) и порядок обработки файлов. Они также включают фактический синтаксис компилятора, запускаемый Visual Studio при сборке.
 
-     Например, параметр [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) в сборке C# выводит указанный вами ранее код предупреждения **1762**, а также три других предупреждения.
+     Например, параметр [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) в сборке C# выводит указанный вами ранее код предупреждения **0168**, а также три других предупреждения.
 
      В сборке Visual Basic параметр [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) не включает в себя определенные исключаемые предупреждения, поэтому предупреждения не отображаются.
 
