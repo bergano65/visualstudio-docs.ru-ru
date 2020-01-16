@@ -2,17 +2,17 @@
 title: Настройка функции копирования
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4e3ab9a30b373e2421607f6dd1609b13adad3087
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984309"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115351"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 В доменном языке (DSL), созданном с помощью пакета SDK визуализации и моделирования Visual Studio, можно изменить то, что происходит, когда пользователь копирует и вставит элементы.
@@ -80,10 +80,10 @@ partial class MyDslClipboardCommandSet
  Переопределите `ClipboardCommandSet.ProcessOnPasteCommand()` для создания дополнительных связей после вызова базового метода.
 
  **Настройте форматы, в которых элементы могут быть скопированы** во внешние приложения, например, чтобы добавить границу в форму точечного рисунка.
-Переопределите `ClipboardCommandSet.ProcessOnMenuCopyCommand()` *мидсл* в проекте DslPackage.
+Переопределите`ClipboardCommandSet.ProcessOnMenuCopyCommand()` *мидсл* в проекте DslPackage.
 
  **Настройка копирования элементов в буфер обмена с помощью команды Copy, но не в операции перетаскивания.**
-Переопределите `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *мидсл* в проекте DslPackage.
+Переопределите`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *мидсл* в проекте DslPackage.
 
  **Сохранение макета фигуры с помощью копирования и вставки.**
 Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта методика показана в примере в [VMSDK: пример схем цепи](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
@@ -367,7 +367,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  Когда пользователь нажимает сочетание клавиш CTRL + C или применяет команду меню "Копировать", вызывается метод <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. Вы можете увидеть, как это настроить в **Дслпаккаже\женератед коде\коммандсет.КС**. Дополнительные сведения о настройке команд см. в разделе [инструкции. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Можно переопределить Процессонменукопикомманд, добавив определение разделяемого класса *мидсл* `ClipboardCommandSet` в проект DslPackage.
+ Можно переопределить Процессонменукопикомманд, добавив определение разделяемого класса *мидсл*`ClipboardCommandSet` в проект DslPackage.
 
 ```csharp
 using System.Collections.Generic;
@@ -552,7 +552,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)
 - [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)

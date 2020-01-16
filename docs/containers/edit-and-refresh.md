@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400909"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916524"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Отладка приложений в локальном контейнере Docker
 
@@ -60,6 +60,28 @@ Visual Studio обеспечивает согласованную разрабо
 Для быстрой итерации изменений можно запустить приложение в контейнере. Затем продолжайте вносить изменения, просматривая их так же, как в IIS Express.
 
 1. Убедитесь, что Docker настроен для применения типа контейнера (Linux или Windows), который вы используете. На панели задач щелкните правой кнопкой мыши значок Docker и выберите пункт **Switch to Linux containers** (Переключиться на контейнеры Linux) или **Switch to Windows containers** (Переключиться на контейнеры Windows) в зависимости от ситуации.
+
+1. (Только для .NET Core 3 и более поздних версий) Изменение кода и обновление работающего сайта, как описано в этом разделе, не включены в шаблоны по умолчанию в .NET Core 3.0 и более поздних версий. Чтобы включить их, установить пакет NuGet [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). В *Startup.cs* добавьте вызов метода расширения `IMvcBuilder.AddRazorRuntimeCompilation` в код в методе `ConfigureServices`. Этот параметр должен быть включен только в режиме отладки, поэтому код должен выглядеть следующим образом:
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   Дополнительные сведения см. в статье [Компиляция файла Razor в ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
 
 1. В качестве **конфигурации решения** выберите **Отладка**. Затем нажмите клавиши **CTRL**+**F5**, чтобы создать образ Docker и запустить его локально.
 
@@ -138,6 +160,6 @@ Visual Studio обеспечивает согласованную разрабо
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Дополнительные сведения об использовании Docker с Visual Studio, Windows и Azure
 
 * Дополнительные сведения о [разработке контейнеров с помощью Visual Studio](/visualstudio/containers).
-* Сведения о сборке и развертывании контейнера Docker см. в статье [Интеграция Docker для Azure Pipelines](https://aka.ms/dockertoolsforvsts).
-* Указатель статей, посвященных Windows Server и Nano Server, см. на странице [Контейнеры в документации Windows](https://aka.ms/containers).
+* Сведения о сборке и развертывании контейнера Docker см. в статье [Интеграция Docker для Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
+* Указатель статей, посвященных Windows Server и Nano Server, см. на странице [Контейнеры в документации Windows](/virtualization/windowscontainers/).
 * Ознакомьтесь с общими сведениями о [Службе Azure Kubernetes](https://azure.microsoft.com/services/kubernetes-service/) и [документацией по Службе Azure Kubernetes](/azure/aks).

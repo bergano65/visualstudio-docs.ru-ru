@@ -2,17 +2,17 @@
 title: Обновление фигур и соединителей в соответствии с моделью
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663792"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115022"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Изменение фигур и соединителей в соответствии с моделью
 
@@ -37,7 +37,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Если нужно сделать переменную свойства только под управлением программы, а не пользователем, выберите новое свойство домена, такое как **Цвет заливки** на схеме определения DSL. Затем в окно свойств задайте для параметра режим **просмотра значение `false`** или задано значение `true` для **интерфейса ReadOnly** .
+Если нужно сделать переменную свойства только под управлением программы, а не пользователем, выберите новое свойство домена, такое как **Цвет заливки** на схеме определения DSL. Затем в окно свойств задайте для параметра режим **просмотра значение `false`** или задано значение `true`для **интерфейса ReadOnly** .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Определить правила изменения, чтобы цвет, стиль или расположение зависели от свойств элемента модели
  Можно определить правила, которые обновляют внешний вид фигуры, зависят от других частей модели. Например, можно определить правило изменения для элемента модели, который обновляет цвет его фигуры в зависимости от свойств элемента модели. Дополнительные сведения о правилах изменения см. в разделе [правила распространяют изменения в модели](../modeling/rules-propagate-changes-within-the-model.md).
@@ -84,7 +84,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Использование Ончилдконфигуред для инициализации свойств фигуры
 
-Чтобы задать свойства фигуры при ее первоначальном создании, переопределение `OnChildConfigured()` в частичном определении класса схемы. Класс схемы указан в определении DSL, а созданный код — в **Дсл\женератед коде\диаграм.КС**. Пример:
+Чтобы задать свойства фигуры при ее первоначальном создании, переопределение `OnChildConfigured()` в частичном определении класса схемы. Класс схемы указан в определении DSL, а созданный код — в **Дсл\женератед коде\диаграм.КС**. Например:
 
 ```csharp
 partial class MyLanguageDiagram

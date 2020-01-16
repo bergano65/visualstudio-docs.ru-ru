@@ -8,17 +8,17 @@ helpviewer_keywords:
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 932d50d44fbfaa810225ef90c2f5361bc26d9b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648571"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113658"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio
 
@@ -26,13 +26,13 @@ ms.locfileid: "72648571"
 
 ::: moniker range="vs-2017"
 
-Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион**, **смарткаптионреплацемент**и **смарткаптионсуффикс** в **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0 Раздел реестра \Data Designers** .
+Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион**, **смарткаптионреплацемент**и **смарткаптионсуффикс** в разделе реестра **HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион**, **смарткаптионреплацемент**и **смарткаптионсуффикс** в **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0 Раздел реестра \Data Designers** .
+Можно настроить способ создания этих меток, задав значения **смарткаптионекспрессион**, **смарткаптионреплацемент**и **смарткаптионсуффикс** в разделе реестра **HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\data Designers** .
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ ms.locfileid: "72648571"
 
 В следующей таблице перечислены внутренние параметры по умолчанию для этих значений реестра.
 
-|Элемент реестра|Значение по умолчанию|Объяснение|
+|Элемент реестра|Значение по умолчанию|Пояснение|
 |-------------------|-------------------|-----------------|
 |**смарткаптионекспрессион**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Соответствует символу нижнего регистра, за которым следует символ верхнего регистра или знак подчеркивания.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** представляет все символы, совпадающие в первых скобках выражения, а **$2** — все символы, совпадающие во второй скобке. Замена представляет собой первое совпадение, пробел, а затем второе совпадение.|
@@ -68,7 +68,7 @@ ms.locfileid: "72648571"
 
 2. Введите `regedit` в диалоговом окне **выполнить** и нажмите кнопку **ОК**.
 
-3. Разверните раздел **HKEY_CURRENT_USER**  > **Software**  >  узле**Microsoft**  > **VisualStudio** .
+3. Разверните узел **HKEY_CURRENT_USER** > **программное обеспечение** > узле **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ ms.locfileid: "72648571"
 
 2. Введите `regedit` в диалоговом окне **выполнить** и нажмите кнопку **ОК**.
 
-3. Разверните раздел **HKEY_CURRENT_USER**  > **Software**  >  узле**Microsoft**  > **VisualStudio** .
+3. Разверните узел **HKEY_CURRENT_USER** > **программное обеспечение** > узле **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
@@ -138,6 +138,6 @@ ms.locfileid: "72648571"
 
     При следующем перетаскивании элементов из окна **Источники данных** метки заголовков создаются с неизмененными заголовками.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

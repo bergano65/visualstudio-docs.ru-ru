@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8d733c41e2833eeca2a8bf8c68f5e329f0af723c
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.openlocfilehash: 40011b035afdf4a04eb760d13c001e39d9c578c4
+ms.sourcegitcommit: 91a054beb6b3a16ed5140f9f829239ec31bbbec8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75681609"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75810587"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Учебник. Создание приложения ASP.NET Core с помощью TypeScript в Visual Studio
 
@@ -68,7 +68,7 @@ Visual Studio управляет файлами для отдельного пр
     Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите клавиши **CTRL+Q**, чтобы открыть поле поиска, введите **asp.net** и выберите **ASP.NET Core Web Application — C#** (Веб-приложение ASP.NET Core — C#). В появившемся диалоговом окне выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    В верхней строке меню последовательно выберите **Файл**  > **Создать**  > **Проект**. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **ASP.NET Core Web Application — C#** (Веб-приложение ASP.NET Core — C#) и нажмите кнопку **ОК**.
+    В верхней строке меню последовательно выберите **Файл**  > **Создать**  > **Проект**. В левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **.NET Core**. В средней области выберите **ASP.NET Core Web Application — C#** (Веб-приложение ASP.NET Core — C#) и нажмите кнопку **ОК**.
     ::: moniker-end
     Если шаблон проекта **Веб-приложение ASP.NET Core** отсутствует, его можно получить, добавив рабочую нагрузку **ASP.NET и разработка веб-приложений**. Подробные инструкции см. в разделе [с предварительными требованиями](#prerequisites).
 

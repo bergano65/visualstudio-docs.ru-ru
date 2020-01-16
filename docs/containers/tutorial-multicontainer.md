@@ -3,15 +3,15 @@ title: Руководство по использованию нескольки
 author: ghogen
 description: Узнайте, как использовать несколько контейнеров с помощью Docker Compose
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75399757"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916515"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Учебник. Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -98,7 +98,7 @@ ms.locfileid: "75399757"
     
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
-          <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+          <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
           <p>@ViewData["Message"]</p>
       </div>
       ```
@@ -114,7 +114,7 @@ ms.locfileid: "75399757"
         }
       ```
 
-    В .NET Core 3.1 это не требуется, так как вы можете использовать уже имеющийся API WeatherForecast. Однако необходимо закомментировать вызов `UseHttpsRedirections` в методе `Configure` в *Startup.cs*, так как этот код использует HTTP, а не HTTPS для вызова веб-API.
+    В .NET Core 3.1 это не требуется, так как вы можете использовать уже имеющийся API WeatherForecast. Однако необходимо закомментировать вызов <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> в методе `Configure` в *Startup.cs*, так как этот код использует HTTP, а не HTTPS для вызова веб-API.
 
     ```csharp
                 //app.UseHttpsRedirection();
