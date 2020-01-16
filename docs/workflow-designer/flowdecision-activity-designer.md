@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650428"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111434"
 ---
 # <a name="flowdecision-activity-designer"></a>Конструктор действия FlowDecision
 
@@ -27,7 +27,7 @@ ms.locfileid: "72650428"
 
 ### <a name="using-the-flowdecision-designer"></a>Использование конструктора FlowDecision
 
-Конструктор **FlowDecision** можно найти в категории блок- **схемы** **области элементов**, щелкнув вкладку **область элементов** на конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** +**ALT** +**X**.
+Конструктор **FlowDecision** можно найти в категории блок- **схемы** **области элементов**, щелкнув вкладку **область элементов** на конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL**+**ALT**+**X**.
 
 Конструктор **FlowDecision** можно перетащить из **панели элементов** в область Конструктор рабочих процессов в конструкторе действия **блок-схемы** . При этом создается <xref:System.Activities.Statements.FlowDecision> с меткой **принятия решений** в рамках действия <xref:System.Activities.Statements.Flowchart>. Наведите указатель мыши на конструктор и появятся квадратные дескрипторы **true** и **false** для двух ветвей.
 
@@ -39,13 +39,13 @@ ms.locfileid: "72650428"
 
 В следующей таблице показаны свойства <xref:System.Activities.Statements.FlowDecision> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или в области конструктора.
 
-|Имя свойства|Обязательное значение|Использование|
+|Имя свойства|Обязательное|Метрики|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Условие, которое определяет, какой из путей будет использован потоком данных.|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Путь потока управления при удовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Путь потока управления при неудовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Да|Условие, которое определяет, какой из путей будет использован потоком данных.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|Ложь|Путь потока управления при удовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|Ложь|Путь потока управления при неудовлетворении условия <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
 - [Блок-схема](../workflow-designer/flowchart-activity-designer.md)

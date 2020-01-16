@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f35c94004a76e5671585969686798c38e5f750e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747567"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114601"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Обработчики событий распространяют изменения за пределы модели
 
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Использование событий для внесения отменяемых корректировок в хранилище
 
-События хранилища обычно не используются для распространения изменений в хранилище, так как обработчик событий выполняется после фиксации транзакции. Вместо этого следует использовать правило магазина. Дополнительные сведения см. [в разделе правила распространяют изменения в модели](../modeling/rules-propagate-changes-within-the-model.md).
+События хранилища обычно не используются для распространения изменений в хранилище, так как обработчик событий выполняется после фиксации транзакции. Вместо этого следует использовать правило магазина. Дополнительные сведения см. в разделе [распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).
 
 Однако можно использовать обработчик событий для внесения дополнительных обновлений в хранилище, если вы хотите, чтобы пользователь мог отменить дополнительные обновления отдельно от исходного события. Например, предположим, что буквы в нижнем регистре являются обычным соглашением для названий альбомов. Можно написать обработчик событий хранилища, исправляет заголовок в нижний регистр после ввода пользователем в верхнем регистре. Но пользователь может использовать команду Отменить, чтобы отменить исправление, восстановив символы верхнего регистра. Вторая операция отмены приведет к удалению изменений пользователя.
 
@@ -184,7 +184,7 @@ private static void AlbumTitleAdjuster(object sender,
 |трансактионкоммиттед||
 |трансактионролледбакк||
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)
 - [Пример кода: схемы цепи](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

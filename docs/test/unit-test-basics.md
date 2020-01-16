@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590505"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846931"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -91,13 +91,16 @@ public void Withdraw(double amount)
 
    ::: moniker range="vs-2017"
    ![В окне редактора просмотрите контекстное меню](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![В окне редактора просмотрите контекстное меню](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > Команда меню **Создать модульные тесты** доступна только для управляемого кода, предназначенного для платформы .NET Framework (но не .NET Core).
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![В окне редактора просмотрите контекстное меню](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > Команда меню **Создать модульные тесты** доступна только для управляемого кода.
+   ::: moniker-end
 
 2. Нажмите кнопку **ОК**, чтобы принять значения по умолчанию для создания модульных тестов, или измените значения, которые использовались для создания и назначения имени проекта модульного теста и модульных тестов. Можно выбрать код, который добавляется по умолчанию в методы модульных тестов.
 
