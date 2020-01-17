@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72bf11519ec500082304fde431122d05ee65db54
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186013"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124521"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,27 +62,27 @@ ms.locfileid: "68186013"
 | Компонент или пакет | Решение |
 |-|-|
 | Dotfuscator и Analytics Community Edition версии 5.19.1 (для таких выпусков Visual Studio как Community, Professional и Enterprise, установленных на ОС **Windows 7 SP1** и **Windows Server 2008 R2**) | Если на компьютере, который не подключен к сети, установлена ОС **Windows 7 SP1** или **Windows Server 2008 R2**, то для установки Visual Studio 2015 необходимо выполнить следующие действия.<br /><br /> 1.  Чтобы скачать CTL-файлы, настройте файловый или веб-сервер.<br /><br /> 2.    Перенаправьте URL-адрес автоматического обновления Майкрософт для среды, в которой отсутствует подключение.<br /><br /> Дополнительные сведения см. на сайте TechNet Майкрософт в статье [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/library/dn265983.aspx) (Настройка доверенных корневых сертификатов и запрещенных сертификатов). |
-| Программа установки Android SDK (уровень API) | Для установки пакетов Android SDK (уровень API) требуется подключение к Интернету. Если вы находитесь в сети с ограниченным доступом, при установке Visual Studio необходимо разрешить доступ к следующим URL-адресам:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Дополнительные сведения об устранении возможных проблем с параметрами прокси-сервера см. в записи блога [Сбои установки Visual Studio 2015 (программа установки Android SDK) при использовании прокси-сервера](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/). |
-| Шаблоны элементов расширяемости Visual Studio<br /><br /> Расширение GitHub для Visual Studio<br /><br /> Инструменты PowerShell для Visual Studio | Если во время установки Visual Studio 2015 отсутствует подключение к Интернету, то для создания макета автономной установки можно использовать отдельный автономный канал. **Примечание.** В этот отдельный канал включены последние обновления Visual Studio 2015. <br /><br /> Чтобы создать отдельный автономный канал, выполните следующую команду: /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*.<br /><br /> Например, для отдельного автономного канала Visual Studio 2015 Enterprise на английском языке выполните следующие команды.<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Чтобы получить полный список URL-адресов, которые можно использовать для создания отдельного автономного канала на выбранном языке, см. таблицу ниже. |
+| Программа установки Android SDK (уровень API) | Для установки пакетов Android SDK (уровень API) требуется подключение к Интернету. Если вы находитесь в сети с ограниченным доступом, при установке Visual Studio необходимо разрешить доступ к следующим URL-адресам:<br /><br /> -   https://dl.google.com:443<br />-   https://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Дополнительные сведения об устранении возможных проблем с параметрами прокси-сервера см. в записи блога [Сбои установки Visual Studio 2015 (программа установки Android SDK) при использовании прокси-сервера](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/). |
+| Шаблоны элементов расширяемости Visual Studio<br /><br /> Расширение GitHub для Visual Studio<br /><br /> Инструменты PowerShell для Visual Studio | Если во время установки Visual Studio 2015 отсутствует подключение к Интернету, то для создания макета автономной установки можно использовать отдельный автономный канал. **Примечание.**  В этот отдельный канал включены последние обновления Visual Studio 2015. <br /><br /> Чтобы создать отдельный автономный канал, выполните следующую команду: /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*.<br /><br /> Например, для отдельного автономного канала Visual Studio 2015 Enterprise на английском языке выполните следующие команды.<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "https://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Чтобы получить полный список URL-адресов, которые можно использовать для создания отдельного автономного канала на выбранном языке, см. таблицу ниже. |
 
  Чтобы создать отдельный автономный канал для выбранного языка, используйте следующие URL-адреса и сведения из таблицы, приведенной выше.
 
 |       Язык        |                            URL-адрес                            |
 |-----------------------|-----------------------------------------------------------|
-| Китайский (упрощенное письмо)  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| Китайский (традиционное письмо) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
-|         Чешский         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
-|        Немецкий         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
-|        Английский        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
-|        Испанский        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
-|        Французский         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
-|        Итальянский        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
-|       Японский        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
-|        Корейский         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
-|        Польский         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
-|      Португальский       | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
-|        Русский        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
-|        Турецкий        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
+| Китайский (упрощенное письмо)  | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
+| Китайский (традиционное письмо) | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+|         Чешский         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
+|        Немецкий         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
+|        Английский        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
+|        Испанский        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
+|        Французский         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
+|        Итальянский        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
+|       Японский        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
+|        Корейский         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
+|        Польский         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
+|      Португальский       | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
+|        Русский        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
+|        Турецкий        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>См. также
 

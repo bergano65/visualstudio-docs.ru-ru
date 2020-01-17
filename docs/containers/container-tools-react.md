@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516441"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916748"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Краткое руководство. Использование Docker с одностраничным приложением React в Visual Studio
 
@@ -222,12 +222,12 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 1. Выберите **Создать реестр контейнеров Azure** и щелкните **Опубликовать**.
 1. Заполните нужные значения в окне **Создать новый реестр контейнеров Azure**.
 
-    | Параметр      | Рекомендуемое значение  | ОПИСАНИЕ                                |
+    | Параметр      | Рекомендуемое значение  | Описание                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS-префикс** | Глобально уникальное имя | Имя, которое однозначно идентифицирует реестр контейнеров. |
     | **Подписка** | Выберите свою подписку | Подписка Azure, которую нужно использовать. |
     | **[Группа ресурсов](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Имя группы ресурсов, в которой создается реестр контейнеров. Чтобы создать группу ресурсов, выберите **Создать**.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Стандартный | Уровень обслуживания в реестре контейнеров  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Стандартный | Уровень обслуживания в реестре контейнеров  |
     | **Расположение реестра** | Расположение рядом с вами | Выберите расположение в ближайшем [регионе](https://azure.microsoft.com/regions/) или в регионе, расположенном рядом с другими службами, которые будут использовать реестр контейнеров. |
 
     ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio][0]

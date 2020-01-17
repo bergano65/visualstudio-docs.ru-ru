@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777772"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916882"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -168,6 +168,6 @@ ms.locfileid: "72777772"
 
 ## <a name="see-also"></a>См. также
 
-- [Добавление API Office 365 в проект Visual Studio](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
+- [Добавление API Office 365 в проект Visual Studio](/office/developer-program/office-365-developer-program)
 - [Службы приложений Azure — мобильные приложения](https://azure.microsoft.com/services/app-service/mobile/)
-- [Центр приложений Visual Studio](https://docs.microsoft.com/appcenter)
+- [Центр приложений Visual Studio](/appcenter)

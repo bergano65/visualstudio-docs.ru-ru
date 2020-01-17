@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072727"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916931"
 ---
 # <a name="docker-compose-build-properties"></a>Свойства сборки Docker Compose
 
@@ -33,15 +33,15 @@ ms.locfileid: "74072727"
 
 В таблице ниже приводятся свойства MSBuild, доступные для проектов Docker Compose.
 
-| Имя свойства | Местоположение | ОПИСАНИЕ | Значение по умолчанию  |
+| Имя свойства | Местоположение | Описание | Значение по умолчанию  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|DCPROJ|Указывает дополнительные файлы Compose в списке, разделенном точкой с запятой, которые будут отправлены в docker-compose.exe для всех команд. Относительные пути от файла проекта docker-compose (DCPROJ) разрешены.|-|
-|DockerComposeBaseFilePath|DCPROJ|Указывает первую часть имен файлов docker-compose без расширения *YML*. Например: <br>1.  DockerComposeBaseFilePath равен NULL или не определен: используется базовый путь к файлу *docker-compose*, и файлы будут называться *docker-compose.yml* и *docker-compose.override.yml*.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: файлы будут называться *mydockercompose.yml* и *mydockercompose.override.yml*.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: файлы будут располагаться на один уровень выше. |docker-compose|
+|AdditionalComposeFilePaths|DCPROJ|Указывает дополнительные файлы Compose в списке, разделенном точкой с запятой, которые будут отправлены в docker-compose.exe для всех команд. Относительные пути от файла проекта docker-compose (DCPROJ) разрешены.|-|
+|DockerComposeBaseFilePath|DCPROJ|Указывает первую часть имен файлов docker-compose без расширения *YML*. Пример: <br>1.  DockerComposeBaseFilePath равен NULL или не определен: используется базовый путь к файлу *docker-compose*, и файлы будут называться *docker-compose.yml* и *docker-compose.override.yml*.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: файлы будут называться *mydockercompose.yml* и *mydockercompose.override.yml*.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: файлы будут располагаться на один уровень выше. |docker-compose|
 |DockerComposeBuildArguments|DCPROJ|Указывает дополнительные параметры, передаваемые в команду `docker-compose build`. Например: `--parallel --pull` |
 |DockerComposeDownArguments|DCPROJ|Указывает дополнительные параметры, передаваемые в команду `docker-compose down`. Например: `--timeout 500`|-|  
 |DockerComposeProjectPath|CSPROJ или VBPROJ|Относительный путь к файлу проекта docker-compose (DCPROJ). Задайте это свойство при публикации проекта службы, чтобы можно было найти связанные параметры сборки образа, хранящиеся в файле docker-compose.yml.|-|
 |DockerComposeUpArguments|DCPROJ|Указывает дополнительные параметры, передаваемые в команду `docker-compose up`. Например: `--timeout 500`|-|
-|DockerLaunchAction| DCPROJ | Указывает действие запуска, выполняемое при нажатии клавиши F5 или клавиш CTRL+F5.  Допустимые значения: None, LaunchBrowser и LaunchWCFTestClient|Нет|
+|DockerLaunchAction| DCPROJ | Указывает действие запуска, выполняемое при нажатии клавиши F5 или клавиш CTRL+F5.  Допустимые значения: None, LaunchBrowser и LaunchWCFTestClient|Отсутствуют|
 |DockerLaunchBrowser| DCPROJ | Указывает, следует ли запускать браузер. Игнорируется, если задано свойство DockerLaunchAction. | False |
 |DockerServiceName| DCPROJ|Если указано свойство DockerLaunchAction или DockerLaunchBrowser, DockerServiceName — это имя службы, которую следует запустить.  Используйте это свойство, чтобы указать, какой из множества проектов, на которые может ссылаться файл docker-compose, будет запущен.|-|
 |DockerServiceUrl| DCPROJ | URL-адрес, используемый при запуске браузера.  Допустимые токены замены: "{ServiceIPAddress}", "{ServicePort}" и "{Scheme}".  Пример: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
@@ -103,7 +103,7 @@ services:
 
 Заключайте значения в двойные кавычки, как в предыдущем примере, и используйте обратную косую черту как escape-символ для обратных косых черт в путях.
 
-|Имени метки|ОПИСАНИЕ|
+|Имени метки|Описание|
 |----------|-----------|
 |com.microsoft.visualstudio.debuggee.arguments|Аргументы, передаваемые в программу при запуске отладки. Для приложений .NET Core эти аргументы обычно представляют собой дополнительные пути поиска пакетов NuGet, за которыми следует путь к выходной сборке проекта.|
 |com.microsoft.visualstudio.debuggee.killprogram|Эта команда служит для остановки отлаживаемой программы, выполняемой в контейнере (при необходимости).|
