@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253044"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916571"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Использование инструментов Visual Studio для Unity
 
@@ -83,17 +83,17 @@ ms.locfileid: "71253044"
 
 6. Нажмите кнопку **ОК**, чтобы выйти из мастера и вставить методы в код.
 
-   ![Диалоговое окно мастера MonoBehaviour](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![Диалоговое окно мастера MonoBehaviour.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Обозреватель проектов Unity
 
-![Окно обозревателя проектов Unity](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Окно обозревателя проектов Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 Обозреватель проектов Unity показывает все файлы и каталоги ваших проектов Unity в том же виде, что и редактор Unity. Это отличается от навигации по сценариям Unity с помощью обычного обозревателя решений Visual Studio, который организует их в проекты и решения, созданные Visual Studio.
 
 - В главном меню Visual Studio выберите **Представление > Обозреватель проектов Unity**. Сочетание клавиш: **ALT**+**SHIFT**+**E**
 
-   ![Изображение окна обозревателя проектов Unity](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Откройте окно обозревателя проектов Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Отладка Unity
 
@@ -145,17 +145,17 @@ ms.locfileid: "71253044"
 
 2. В окне параметров сборки установите флажки **Сборка разработки** и **Отладка скриптов**.
 
-   ![Настройка параметров сборки Unity для отладки.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+   ![Настройте параметры сборки Unity для отладки.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>Выбор экземпляр Unity для присоединения отладчика
 
 - В главном меню Visual Studio выберите **Отладка > Присоединить отладчик Unity**.
 
-   ![Присоединение отладчика Unity](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Подключите отладчик Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    В диалоговом окне **Выбор экземпляра Unity** отображаются сведения о каждом экземпляре Unity, к которому можно подключиться.
 
-   ![Выбор экземпляра Unity, к которому нужно подключиться](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![Выберите экземпляр Unity, к которому необходимо подключиться.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
    **Project**
 
@@ -163,7 +163,7 @@ ms.locfileid: "71253044"
 
    **Компьютер** Имя компьютера или устройства, на котором выполняется этот экземпляр Unity.
 
-   **Тип** **Редактор**, если этот экземпляр Unity выполняется как часть редактора Unity; **Проигрыватель**, если этот экземпляр Unity является автономным проигрывателем.
+   **Тип** **Редактор** — если этот экземпляр Unity выполняется как часть редактора Unity; **Проигрыватель** — если этот экземпляр Unity является автономным проигрывателем.
 
    **Порт** Номер порта UDP-сокета, через который данный экземпляр Unity обменивается данными.
 
@@ -183,7 +183,7 @@ ms.locfileid: "71253044"
 
 1. Добавьте существующий проект библиотеки DLL в решение Visual Studio, которое создается набором средств Visual Studio для Unity. В ряде случаев вы можете создать новый проект с управляемой библиотекой DLL, который будет содержать компоненты кода проекта Unity. В этом сценарии в решение Visual Studio можно добавить новый проект с управляемой библиотекой DLL. Дополнительные сведения о добавлении нового или существующего проекта в решение см. в разделе [Практическое руководство. Добавление проектов в решение](https://msdn.microsoft.com/library/ff460187.aspx).
 
-   ![Добавление существующего проекта библиотеки DLL в решение](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+   ![Добавьте существующий проект библиотеки DLL в решение.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
    В любом случае набор средств Visual Studio для Unity сохраняет ссылку на проект, даже если он должен повторно создать файлы проекта и решения, поэтому эти действия нужно будет выполнить только один раз.
 
@@ -192,7 +192,7 @@ ms.locfileid: "71253044"
 > [!NOTE]
 > Указанные ниже действия требуется выполнять, только если вы используете устаревшую среду выполнения Unity. В новой среде выполнения Unity такие выделенные профили версии 3.5 использовать не нужно. Выберите профиль .NET 4.x, совместимый с вашей версией Unity.
 
-   ![Настройка целевой платформы Unity для библиотеки DLL](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![Укажите платформу Unity в качестве целевой платформы библиотеки DLL.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Скопируйте библиотеку DLL в папку Asset (ресурсы) своего проекта Unity. В Unity ресурсы представляют собой файлы, которые упаковываются и развертываются вместе с вашим приложением Unity, чтобы их можно было загружать во время выполнения. Так как библиотеки DLL связываются во время выполнения, их необходимо развертывать как ресурсы. Для развертывания в виде ресурса редактору Unity требуется, чтобы библиотеки DLL были помещены в папку Assets вашего проекта Unity. Предусмотрены два способа выполнения этой задачи.
 
@@ -202,7 +202,7 @@ ms.locfileid: "71253044"
 
    PDB-файлы необходимы для отладки, так как они содержат символы отладки библиотеки DLL и сопоставляют код DLL с формой его исходного кода. Если будет применяться устаревшая среда выполнения, Инструменты Visual Studio для Unity будут использовать сведения из файлов DLL и PDB для создания файла DLL.MDB. Это формат отладочных символов, применяемый устаревшим модулем обработки скрипов Unity. Если будет применяться новая среда выполнения и формат Portable-PDB, Инструменты Visual Studio для Unity не будут пытаться преобразовывать символы, так как новая среда выполнения Unity может самостоятельно обрабатывать файлы Portable-PDB.
 
-   См. подробнее сведения о [создании PDB-файлов](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Если будет применяться новая среда выполнения, убедитесь, что для параметра "Отладочная информация" задано значение "Переносимый" для корректного создания файла Portable PDB. Если будет применяться устаревшая среда выполнения, воспользуйтесь значением "Полный".
+   См. подробнее сведения о [создании PDB-файлов](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Если будет применяться новая среда выполнения, убедитесь, что для параметра "Отладочная информация" задано значение "Переносимый" для корректного создания файла Portable PDB. Если будет применяться устаревшая среда выполнения, воспользуйтесь значением "Полный".
 
 4. Выполните отладку своего кода. Теперь вы можете отлаживать свой исходный код DLL вместе с исходным кодом проекта Unity и использовать все доступные функции, например точки останова и пошаговое выполнение кода.
 

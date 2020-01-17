@@ -8,18 +8,18 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188758"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916951"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы со Средствами Visual Studio для Kubernetes
 
 Средства Visual Studio для Kubernetes помогают упростить разработку контейнерных приложений, предназначенных для Kubernetes. Visual Studio может автоматически создавать файлы с кодом конфигурации, необходимые для поддержки развертывания Kubernetes, например файлы Dockerfile и диаграммы Helm. Вы можете отлаживать код в активном кластере Службы Azure Kubernetes (AKS) с помощью Azure Dev Spaces или выполнять публикацию непосредственно в кластере AKS из Visual Studio.
 
-В этом руководстве рассматривается использование Visual Studio для добавления поддержки Kubernetes в проект и публикации в AKS. Если вы заинтересованы в первую очередь в использовании [Azure Dev Spaces](https://aka.ms/get-azds) для отладки и тестирования проекта, работающего в AKS, то можете перейти к [руководству по Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio).
+В этом руководстве рассматривается использование Visual Studio для добавления поддержки Kubernetes в проект и публикации в AKS. Если вы заинтересованы в первую очередь в использовании [Azure Dev Spaces](/azure/dev-spaces/) для отладки и тестирования проекта, работающего в AKS, то можете перейти к [руководству по Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -121,13 +121,13 @@ ms.locfileid: "73188758"
 
 - Диаграмма Helm и папка *charts*. Эти YAML-файлы образуют диаграмму Helm для приложения, которую можно использовать для его развертывания в Kubernetes. Дополнительные сведения о Helm см. на сайте [https://www.helm.sh](https://www.helm.sh).
 
-- *azds.yaml*. Содержит параметры для службы Azure Dev Spaces, обеспечивающей быструю итеративную отладку в Службе Azure Kubernetes. Дополнительные сведения см. в [документации по Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
+- *azds.yaml*. Содержит параметры для службы Azure Dev Spaces, обеспечивающей быструю итеративную отладку в Службе Azure Kubernetes. Дополнительные сведения см. в [документации по Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
 ::: moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Публикация в Службе Azure Kubernetes (AKS)
 
-При наличии всех этих файлов можно использовать интегрированную среду разработки Visual Studio для написания и отладки кода приложения обычным образом. Можно также использовать [Azure Dev Spaces](https://aka.ms/get-azds) для быстрого запуска и отладки кода, выполняющегося в кластере AKS. Дополнительные сведения см. в [руководстве по Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio).
+При наличии всех этих файлов можно использовать интегрированную среду разработки Visual Studio для написания и отладки кода приложения обычным образом. Можно также использовать [Azure Dev Spaces](/azure/dev-spaces/) для быстрого запуска и отладки кода, выполняющегося в кластере AKS. Дополнительные сведения см. в [руководстве по Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio).
 
 Когда код выполняется нужным образом, его можно опубликовать непосредственно из Visual Studio в кластере AKS.
 
@@ -171,4 +171,4 @@ ms.locfileid: "73188758"
 
 Узнайте больше о разработке для Kubernetes в Azure в [документации по AKS](/azure/aks).
 
-Узнайте больше об Azure Dev Spaces в [документации по Azure Dev Spaces](https://aka.ms/get-azds).
+Узнайте больше об Azure Dev Spaces в [документации по Azure Dev Spaces](/azure/dev-spaces/).

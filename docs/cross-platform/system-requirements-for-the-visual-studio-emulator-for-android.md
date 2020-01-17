@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815484"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916809"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Требования к системе для эмулятора Visual Studio для Android
 
@@ -71,7 +71,7 @@ ms.locfileid: "62815484"
 
 Чтобы проверить требования к оперативной памяти и Windows, в панели управления выберите "Система и безопасность", а затем — "Система".
 
-![Проверьте требования к системе](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
+![Проверка требований к системе](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
 ## <a name="network-requirements"></a>Требования к сети
 
@@ -107,7 +107,7 @@ BIOS компьютера должна поддерживать следующи
 
 |Требование|Проверка и включение этого необходимого компонента|
 |-----------------|----------------------------------------------|
-|Необходимо установить Hyper-V.|Выполните те же инструкции, что и для [включения Hyper-V для эмулятора Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Проверьте состояние службы **Управление виртуальными машинами Hyper-V** в оснастке "Службы".|
+|Необходимо установить Hyper-V.|Выполните те же инструкции, что и для [включения Hyper-V для эмулятора Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Проверьте состояние службы **Управление виртуальными машинами Hyper-V** в оснастке "Службы".|
 |Технология Hyper-V должна быть запущена.|Дополнительные сведения об управлении службами см. в следующих разделах.<br /><br /> -   [Запуск, остановка, приостановка, возобновление работы или перезапуск службы](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Настройка способа запуска службы](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Необходимо быть членом локальной группы администраторов Hyper-V.
@@ -119,7 +119,7 @@ BIOS компьютера должна поддерживать следующи
 > [!IMPORTANT]
 > После входа в группу выйдите из системы или выполните перезагрузку, чтобы изменения вступили в силу.
 
- ![Присоединение к группе безопасности администраторов Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Присоединение к группе безопасности администраторов Hyper-V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы".
 

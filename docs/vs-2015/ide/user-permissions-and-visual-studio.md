@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ead3faa5354dae198524e2a816a85b05bc5d8f08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: aa01cb77e8a003438721984da13f46de350104ea
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845551"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918994"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "75845551"
 |Отладка|Отладка приложений с повышенными разрешениями.|[Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)|
 ||Отладка приложений, выполняемых под другой учетной записью пользователя, например веб-сайтов ASP.NET.|[Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||Отладка в зоне для приложений XAML-браузера (XBAP).|[Основное приложение WPF (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||Использование эмулятора для отладки проектов облачных служб для Microsoft Azure.|[Отладка облачной службы в Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debug-cloud-services-virtual-machines?view=vs-2019)|
+||Использование эмулятора для отладки проектов облачных служб для Microsoft Azure.|[Отладка облачной службы в Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)|
 ||Настройка межсетевого экрана для удаленной отладки.|[Настройка инструментов удаленной отладки в устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|
 |Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения с помощью Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
@@ -71,4 +71,4 @@ ms.locfileid: "75845551"
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)** .
 
 ## <a name="see-also"></a>См. также
- [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [установка Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Статья об установке Visual Studio 2015](../install/install-visual-studio-2015.md)

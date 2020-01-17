@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777725"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916475"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 
@@ -25,10 +25,10 @@ ms.locfileid: "72777725"
 > В большинстве случаев мы рекомендуем использовать эмулятор Google Android вместо эмулятора Android для Visual Studio:
 > - Эмулятор Android для Visual Studio не поддерживается в версиях старше Visual Studio 2015.
 > - Образы эмулятора версии, старше Android 6.0, не доступны для эмулятора Android для Visual Studio.
-> - Google Android Emulator теперь поддерживает [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
+> - Google Android Emulator теперь поддерживает [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - Инструменты Visual Studio для Apache Cordova работают с эмулятором Google Android Emulator. Дополнительные сведения см. в разделе [Запуск приложения Apache Cordova в Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (обратите внимание, что больше не нужно отключать Hyper-V, как описано в этой статье).
 >
-> Дополнительные сведения о настройке и использовании Google Android Emulator см. в [этой статье](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
+> Дополнительные сведения о настройке и использовании Google Android Emulator см. в [этой статье](/xamarin/android/get-started/installation/android-emulator/).
 
  Эмулятор Visual Studio для Android обеспечивает производительность, сравнимую с быстродействием реального устройства. Однако перед публикацией приложение рекомендуется проверить на физическом устройстве.
 
@@ -105,4 +105,4 @@ ms.locfileid: "72777725"
 - сообщите о проблеме с помощью средства отправки одобрения в Visual Studio или в диспетчере эмуляторов.
 
 ## <a name="see-also"></a>См. также
- [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Устранение неполадок для эмулятора Visual Studio для Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Устранение неполадок эмулятора Visual Studio для Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

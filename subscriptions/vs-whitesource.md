@@ -3,15 +3,15 @@ title: Преимущество WhiteSource Bolt | Документация Ма
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 11/18/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 description: Сведения об активации учебной подписки WhiteSource Bolt, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 8db777135e9f78321ccbc7cc9d40bf657da97589
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174127"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75866172"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
 
@@ -38,7 +38,22 @@ ms.locfileid: "74174127"
 9. Дополнительные сведения см. на [странице с вопросами и ответами](https://bolt.whitesourcesoftware.com/azure/faq/) по WhiteSource Bolt. 
 
 ## <a name="eligibility"></a>Право на участие
-Средство [WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) теперь доступно бесплатно в Visual Studio Marketplace. 
+
+| Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 6 месяцев       |  Да       |
+| Visual Studio Enterprise с GitHub Enterprise | VL | 6 месяцев       |  Да       |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                           |Н/Д         |
+| Visual Studio Professional с GitHub Enterprise | VL                                      | Недоступно                                                           |Н/Д         |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                                           |Н/Д         |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                                           |Н/Д         |
+| Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+||
+
+<sup>1</sup> *Включает: Microsoft Partner Network (Enterprise).  Не включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD).  ПО и службы MCT.*
+
+> [!NOTE]
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - Нужна помощь с WhiteSource Bolt?  Вы можете начать беседу с представителем WhiteSource Bolt на странице https://www.whitesourcesoftware.com/vse_whitesource_bolt/
@@ -50,3 +65,9 @@ ms.locfileid: "74174127"
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Индивидуальный кредит Azure DevTest](vs-azure.md)
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
