@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316489"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269066"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Как сделать расширения совместимыми с Visual Studio 2017 и Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Как сделать расширения совместимыми с Visual Studio 2019/2017 и Visual Studio 2015
 
-В этом документе объясняется, как сделать проекты расширяемости циклическим обменом между Visual Studio 2015 и Visual Studio 2017. После завершения этого обновления проект будет доступен для открытия, сборки, установки и запуска в Visual Studio 2015 и Visual Studio 2017. В качестве справочной ссылки некоторые расширения, которые могут циклически переноситься между Visual Studio 2015 и Visual Studio 2017, можно найти в [примерах расширяемости пакета SDK VS](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+В этом документе объясняется, как сделать проекты расширяемости циклическим обменом между Visual Studio 2015 и Visual Studio 2019 или Visual Studio 2017. После завершения этого обновления проект будет доступен для открытия, сборки, установки и запуска в Visual Studio 2015 и Visual Studio 2019 или 2017. В качестве справочной ссылки некоторые расширения, которые могут циклически переноситься между Visual Studio 2015 и Visual Studio 2019 или 2017, можно найти в [примерах расширяемости пакета SDK VS](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-Если вы планируете выполнять сборку только в Visual Studio 2017, но хотите, чтобы выходной VSIX выполнялся как в Visual Studio 2015, так и в Visual Studio 2017, см. [документ по миграции расширений](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Если вы планируете выполнять сборку только в Visual Studio 2019/2017, но хотите, чтобы выходной VSIX выполнялся как в Visual Studio 2015, так и в Visual Studio 2019/2017, см. [документ по миграции расширений](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 > [!NOTE]
 > Из-за изменений в Visual Studio между версиями некоторые элементы, которые работали в одной версии, не работают в другой. Убедитесь, что компоненты, к которым вы пытаетесь получить доступ, доступны в обеих версиях, или расширение будет иметь непредвиденные результаты.
@@ -31,8 +31,8 @@ ms.locfileid: "74316489"
     * Целевой объект установки
     * Prerequisites
 3. Обновление CSProj:
-    * Обновление `<MinimumVisualStudioVersion>`.
-    * Добавьте свойство `<VsixType>`.
+    * Обновите `<MinimumVisualStudioVersion>`.
+    * Добавление свойства `<VsixType>`
     * Добавьте свойство отладки `($DevEnvDir)` 3 раза.
     * Добавьте условия для импорта средств и целевых объектов сборки.
 
@@ -43,11 +43,11 @@ ms.locfileid: "74316489"
 В этом документе предполагается, что на компьютере установлены следующие компоненты:
 
 * Visual Studio 2015 с установленным пакетом SDK для VS
-* Visual Studio 2017 с установленной рабочей нагрузкой расширяемости
+* Visual Studio 2019 или 2017 с установленной рабочей нагрузкой
 
 ## <a name="recommended-approach"></a>Рекомендуемый подход
 
-Настоятельно рекомендуется запускать это обновление с помощью Visual Studio 2015, а не Visual Studio 2017. Основным преимуществом разработки в Visual Studio 2015 является обеспечение ссылок на сборки, недоступные в Visual Studio 2015. При разработке в Visual Studio 2017 существует риск, что можно ввести зависимость от сборки, которая существует только в Visual Studio 2017.
+Настоятельно рекомендуется запускать это обновление с помощью Visual Studio 2015, а не Visual Studio 2019 или 2017. Основным преимуществом разработки в Visual Studio 2015 является обеспечение ссылок на сборки, недоступные в Visual Studio 2015. При разработке в Visual Studio 2019 или 2017 существует риск, что вы можете ввести зависимость от сборки, которая существует только в Visual Studio 2019 или 2017.
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Убедитесь, что ссылка на Project. JSON отсутствует.
 
@@ -67,14 +67,14 @@ ms.locfileid: "74316489"
 
 Необходимо добавить средства сборки, которые позволят вам выполнять сборку и отладку соответствующим образом. Корпорация Майкрософт создала сборку для этой сборки с именем Microsoft. VisualStudio. SDK. Буилдтаскс.
 
-Чтобы создать и развернуть VSIXv3 в Visual Studio 2015 и 2017, вам потребуется следующие пакеты NuGet:
+Чтобы создать и развернуть VSIXv3 в Visual Studio 2015 и 2019/2017, вам потребуется следующие пакеты NuGet:
 
-Версия | Встроенные средства
+{2&gt;Version&lt;2} | Встроенные средства
 --- | ---
 Visual Studio 2015 | Microsoft. VisualStudio. SDK. Буилдтаскс.,
-Visual Studio 2017 | Microsoft. VSSDK. Буилдтул
+Visual Studio 2019 или 2017 | Microsoft. VSSDK. Буилдтул
 
-Для этого:
+Для этого сделайте следующее:
 
 * Добавьте в проект пакет NuGet Microsoft. VisualStudio. SDK. Буилдтаскс. ".
 * Если проект не содержит Microsoft. VSSDK. BuildTools, добавьте его.
@@ -112,7 +112,7 @@ Visual Studio 2017 | Microsoft. VSSDK. Буилдтул
 * Сохраните и закройте файл.
 
 > [!NOTE]
-> Вам может потребоваться изменить предварительную версию вручную, чтобы убедиться, что она совместима со всеми версиями Visual Studio 2017. Это связано с тем, что конструктор вставит минимальную версию в качестве текущей версии Visual Studio (например, 15.0.26208.0). Однако, так как другие пользователи могут иметь более раннюю версию, вам потребуется вручную изменить это значение на 15,0.
+> Вам может потребоваться изменить предварительную версию вручную, чтобы убедиться, что она совместима со всеми версиями Visual Studio 2019 или 2017. Это связано с тем, что конструктор вставит минимальную версию в качестве текущей версии Visual Studio (например, 15.0.26208.0). Однако, так как другие пользователи могут иметь более раннюю версию, вам потребуется вручную изменить это значение на 15,0.
 
 На этом этапе файл манифеста должен выглядеть примерно так:
 
@@ -165,7 +165,7 @@ Visual Studio 2017 | Microsoft. VSSDK. Буилдтул
 
 * Добавьте дополнительные условные операторы в теги `<import>`, которые содержат ссылку на Microsoft. VSSDK. BuildTools. Вставьте `'$(VisualStudioVersion)' != '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в верхнем и нижнем колонтитулах файла CSPROJ.
 
-Пример.
+Например:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ Visual Studio 2017 | Microsoft. VSSDK. Буилдтул
 
 * Добавьте дополнительные условные операторы в теги `<import>`, которые имеют Microsoft. VisualStudio. SDK. Буилдтаскс., Вставьте `'$(VisualStudioVersion)' == '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в верхнем и нижнем колонтитулах файла CSPROJ.
 
-Пример.
+Например:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ Visual Studio 2017 | Microsoft. VSSDK. Буилдтул
 
 * Добавьте дополнительные условные операторы в теги `<Error>`, которые содержат ссылку на Microsoft. VSSDK. BuildTools. Для этого вставьте `'$(VisualStudioVersion)' != '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в нижнем колонтитуле файла CSPROJ.
 
-Пример.
+Например:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,15 +189,16 @@ Visual Studio 2017 | Microsoft. VSSDK. Буилдтул
 
 * Добавьте дополнительные условные операторы в теги `<Error>`, которые имеют Microsoft. VisualStudio. SDK. Буилдтаскс., Вставьте `'$(VisualStudioVersion)' == '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в нижнем колонтитуле файла CSPROJ.
 
-Пример.
+Например:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* Сохраните файл csproj и закройте его.
+* Сохраните файл csproj и закройте его. 
+  * Обратите внимание, что если в решении используется более одного проекта, установите этот проект в качестве запускаемого проекта с помощью команды "Назначить запускаемым проектом" в контекстном меню проекта). Это гарантирует, что Visual Studio повторно откроет проект после его выгрузки.
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Тестирование установки расширения в Visual Studio 2015 и Visual Studio 2017
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>Тестирование установки расширения в Visual Studio 2015 и Visual Studio 2019 или 2017
 
 На этом этапе проект должен быть готов к созданию VSIXv3, который можно установить как в Visual Studio 2015, так и в Visual Studio 2017.
 
@@ -205,7 +206,7 @@ Visual Studio 2017 | Microsoft. VSSDK. Буилдтул
 * Создайте проект и убедитесь, что в выходных данных правильно построен VSIX.
 * Перейдите в каталог проекта.
 * Откройте папку *\bin\Debug* .
-* Дважды щелкните VSIX-файл и установите расширение в Visual Studio 2015 и Visual Studio 2017.
+* Дважды щелкните VSIX-файл и установите расширение в Visual Studio 2015 и Visual Studio 2019/2017.
 * Убедитесь, что расширение можно увидеть в разделе **средства** > **расширения и обновления** раздела **установленные** .
 * Попытайтесь запустить или использовать расширение, чтобы проверить его работоспособность.
 

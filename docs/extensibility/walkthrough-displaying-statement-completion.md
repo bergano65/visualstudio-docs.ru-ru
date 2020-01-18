@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632514"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269071"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Пошаговое руководство. Отображение завершения операторов
 Можно реализовать завершение операторов на основе языка, определив идентификаторы, для которых необходимо предоставить завершение, а затем активировать сеанс завершения. Можно определить завершение операторов в контексте языковой службы, определить собственное расширение имени файла и тип содержимого, а затем отобразить сведения о завершении только для этого типа. Или можно активировать завершение для существующего типа содержимого, например "обычный текст". В этом пошаговом руководстве показано, как активировать завершение операторов для типа содержимого "обычный текст", который является типом содержимого текстовых файлов. Тип содержимого text является предком всех других типов содержимого, включая код и XML-файлы.
@@ -27,7 +27,7 @@ ms.locfileid: "72632514"
 
  В этом пошаговом руководстве показано, как реализовать завершение операторов для жестко запрограммированного набора идентификаторов. В полной реализации языковая служба и документация по языку отвечают за предоставление этого содержимого.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
  Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
@@ -48,7 +48,7 @@ ms.locfileid: "72632514"
 
      Microsoft. VisualStudio. OLE. Interop
 
-     Microsoft. VisualStudio. Shell.,
+     Microsoft. VisualStudio. Shell. 15,0
 
      Microsoft. VisualStudio. Shell. неизменяемый. 10.0
 
@@ -133,7 +133,7 @@ ms.locfileid: "72632514"
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Импортируйте <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, что позволяет выполнять преобразование из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> в <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> и <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>, обеспечивающие доступ к стандартным службам Visual Studio.
+4. Импортируйте <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, что позволяет выполнять преобразование из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> в <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>и <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>, обеспечивающие доступ к стандартным службам Visual Studio.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
@@ -196,7 +196,7 @@ ms.locfileid: "72632514"
 
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Создание и тестирование решения Комплетионтест
 
-1. Постройте решение.
+1. Выполните сборку решения.
 
 2. При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
@@ -204,5 +204,5 @@ ms.locfileid: "72632514"
 
 4. При вводе первого "a" и затем "d" должен появиться список, содержащий "Сложение" и "Адаптация". Обратите внимание, что выбрано сложение. При вводе другого "d" список должен содержать только "Сложение", которое теперь выбрано. Можно применить "Сложение", нажав клавиши **пробел**, **Tab**или клавишу **Ввод** или отклонить список, введя ESC или любой другой ключ.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
