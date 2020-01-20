@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
-  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+  ms.openlocfilehash: cfe00b21654e9ab07b79b3a1b6ec38a4a4792780
+  ms.sourcegitcommit: aabd9d10a0cb7e7344532a04df763a70be20acf0
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/25/2019
-  ms.locfileid: "74474002"
+  ms.lasthandoff: 01/17/2020
+  ms.locfileid: "76256480"
 highlightedContent:
   items:
   - title: Настройка и установка
@@ -178,7 +178,7 @@ additionalContent:
         url: ../python/data-science-and-analytical-applications-workload.md
       - text: Разработка для Office и Sharepoint
         url: https://developer.microsoft.com/office/docs
-    - title: Windows
+    - title: Классические и мобильные приложения
       links:
       - text: Разработка классических приложений .NET
         url: /dotnet/framework/develop-client-apps
@@ -186,17 +186,17 @@ additionalContent:
         url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
       - text: Разработка для Windows на C++
         url: /cpp/windows/desktop-applications-visual-cpp
-    - title: Мобильные приложения и игры
-      links:
       - text: Разработка мобильных приложений на .NET (Xamarin)
         url: /xamarin/
-      - text: Разработка игр с помощью Unity
-        url: ../cross-platform/visual-studio-tools-for-unity.md
+      - text: Разработка мобильных приложений на C++
+        url: /visualstudio/cross-platform/
       - text: Разработка мобильных приложений на языке JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (Только для Visual Studio 2017 и 2015)
-      - text: Разработка мобильных приложений на C++
-        url: /visualstudio/cross-platform/
+    - title: Игры
+      links:
+      - text: Разработка игр с помощью Unity
+        url: ../cross-platform/visual-studio-tools-for-unity.md
       - text: Разработка игр на C++
         url: /windows/uwp/gaming/e2e
     - title: Другие наборы инструментов
