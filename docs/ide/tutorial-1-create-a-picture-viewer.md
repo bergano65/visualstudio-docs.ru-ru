@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: f9af5a3e8796af3aeaefae569d61e78a1039d84e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516631"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115091"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Учебник 1. Создание средства просмотра рисунков
 
@@ -46,7 +46,7 @@ ms.locfileid: "72516631"
 
 ## <a name="tutorial-links"></a>Ссылки на руководства
 
-|Заголовок|ОПИСАНИЕ|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начните с создания проекта приложения Windows Forms.|
 |[Шаг 2. Запуск приложения для просмотра изображений](../ide/step-2-run-your-program.md)|Запустите проект приложения Windows Forms, созданный в предыдущем шаге.|

@@ -3,19 +3,19 @@ title: Идентификаторы рабочих нагрузок и комп�
 titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для распространения автоматических тестов на несколько компьютеров
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 5517f67481e45c8a441c88be4f6de2edc55bc2c6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 5f7a003d11f9db26e9c2deb95deb641ee2e730a7
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795720"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76158840"
 ---
 ## <a name="test-controller"></a>Test Controller
 
@@ -27,7 +27,7 @@ ms.locfileid: "74795720"
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основные функции Test Controller | 16.0.28315.86 | Обязательно
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основные функции Test Controller | 16.0.28315.86 | Обязательное значение
 
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 

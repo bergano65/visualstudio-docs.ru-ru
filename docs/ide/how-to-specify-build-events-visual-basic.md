@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461508"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115107"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий сборки (Visual Basic)
 
@@ -49,7 +49,7 @@ ms.locfileid: "68461508"
     > [!NOTE]
     > Если событие перед сборкой или после сборки завершается ошибкой, можно прервать сборку, задав завершение действия события с кодом, отличным от нуля (0), что означает успешное выполнение действия.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Пример как изменить данные манифеста с помощью события после сборки
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Пример. как изменить данные манифеста с помощью события после сборки
 
 В следующей процедуре демонстрируется, как задать минимальную версию операционной системы в манифесте приложения с помощью команды *EXE*, вызываемой из события после сборки (файл *exe.manifest* в каталоге проекта). Минимальная версия операционной системы — число из четырех частей, например 4.10.0.0. Чтобы это сделать, команда изменит раздел `<dependentOS>` манифеста:
 
