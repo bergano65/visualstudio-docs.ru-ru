@@ -3,19 +3,19 @@ title: Идентификаторы рабочих нагрузок и комп�
 titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов позволяют устанавливать Visual Studio с помощью командной строки. Также их можно указать в качестве зависимости в манифесте VSIX.
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: dbc7fa1f5b931a598a607ce76cfe5c7f336e8ee2
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 83a1daa65642d720bd5f2420ee634688cf4be2c4
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68177686"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159500"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2017"></a>Основной редактор Visual Studio (входит в состав Visual Studio Community 2017)
 
@@ -25,10 +25,10 @@ ms.locfileid: "68177686"
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная страница Visual Studio для пользователей C++ | 15.0.27128.1 | Optional
+Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная страница Visual Studio для пользователей C++ | 15.0.27128.1 | Необязательный
 
 ## <a name="azure-development"></a>Разработка для Azure
 
@@ -38,57 +38,57 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная с
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательно
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Обязательно
-Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательно
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательно
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.Component.NetFX.Core.Runtime | Среда выполнения .NET Core | 15.0.26208.0 | Обязательно
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.NetCore.ComponentGroup.Web.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.9.28307.421 | Обязательно
-Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Эмулятор вычислений Azure | 15.9.28307.421 | Обязательно
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Эмулятор хранения Azure | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | Обязательно
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Поддержка языка F# для веб-проектов | 15.9.28307.421 | Обязательно
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательно
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательно
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Необходимые компоненты для разработки на базе Azure | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательно
+Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательное значение
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Обязательное значение
+Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательное значение
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательное значение
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.Component.NetFX.Core.Runtime | Среда выполнения .NET Core | 15.0.26208.0 | Обязательное значение
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательное значение
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.NetCore.ComponentGroup.Web.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.9.28307.421 | Обязательное значение
+Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Эмулятор вычислений Azure | 15.9.28307.421 | Обязательное значение
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Эмулятор хранения Azure | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | Обязательное значение
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Поддержка языка F# для веб-проектов | 15.9.28307.421 | Обязательное значение
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательное значение
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Необходимые компоненты для разработки на базе Azure | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательное значение
 Microsoft.Component.Azure.DataLake.Tools | Средства Azure Data Lake и Stream Analytics | 15.9.28107.0 | Рекомендованное
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Рекомендованное
@@ -104,25 +104,25 @@ Microsoft.VisualStudio.Component.DiagnosticTools | Средства профил
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices | Инструменты облачных служб Azure | 15.0.26504.0 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Средства Azure Resource Manager | 15.0.27005.2 | Рекомендованное
-Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Optional
-Microsoft.NetCore.1x.ComponentGroup.Web | Средства разработки .NET Core 1.0–1.1 для веб-приложений | 15.6.27406.0 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Optional
-Microsoft.NetCore.ComponentGroup.Web | Средства разработки .NET Core 2.0 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | AzCopy службы хранилища Azure | 15.0.26906.1 | Optional
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Optional
+Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Необязательный
+Microsoft.NetCore.1x.ComponentGroup.Web | Средства разработки .NET Core 1.0–1.1 для веб-приложений | 15.6.27406.0 | Необязательный
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Необязательный
+Microsoft.NetCore.ComponentGroup.Web | Средства разработки .NET Core 2.0 | 15.7.27625.0 | Необязательный
+Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | AzCopy службы хранилища Azure | 15.0.26906.1 | Необязательный
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Необязательный
 
 ## <a name="data-storage-and-processing"></a>Хранение и обработка данных
 
@@ -132,7 +132,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Рекомендованное
 Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Рекомендованное
@@ -183,7 +183,7 @@ Microsoft.VisualStudio.Component.VisualStudioData | Источники данн�
 Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Рекомендованное
-Microsoft.VisualStudio.Component.FSharp.Desktop | Поддержка языка F# для классических приложений | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.FSharp.Desktop | Поддержка языка F# для классических приложений | 15.8.27825.0 | Необязательный
 
 ## <a name="data-science-and-analytical-applications"></a>Приложения для обработки и анализа данных и аналитические приложения
 
@@ -193,7 +193,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Поддержка языка�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
 Component.Anaconda3.x64 | 64-разрядная версия Anaconda3 (5.2.0) | 5.2.0 | Рекомендованное
 Microsoft.Component.CookiecutterTools | Поддержка шаблонов Cookiecutter | 15.0.26621.2 | Рекомендованное
@@ -215,20 +215,20 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScri
 Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Рекомендованное
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Рекомендованное
-Component.Anaconda2.x64 | 64-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Optional
-Component.Anaconda2.x86 | 32-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Optional
-Component.Anaconda3.x86 | 32-разрядная версия Anaconda3 (5.2.0) | 5.2.0 | Optional
-Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Встроенные средства разработки Python | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.140 | Набор инструментов VC++ 2015.3 v14.00 (v140) для ПК | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | Средства профилирования C++ | 15.0.26823.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Optional
+Component.Anaconda2.x64 | 64-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Необязательный
+Component.Anaconda2.x86 | 32-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Необязательный
+Component.Anaconda3.x86 | 32-разрядная версия Anaconda3 (5.2.0) | 5.2.0 | Необязательный
+Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Необязательный
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Встроенные средства разработки Python | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.140 | Набор инструментов VC++ 2015.3 v14.00 (v140) для ПК | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | Средства профилирования C++ | 15.0.26823.1 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Необязательный
 
 ## <a name="net-desktop-development"></a>Разработка классических приложений .NET
 
@@ -238,22 +238,22 @@ Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Средства разработки классических приложений .NET | 15.7.27625.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательно
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Средства разработки классических приложений .NET | 15.7.27625.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательное значение
 Microsoft.ComponentGroup.Blend | Blend для Visual Studio | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Рекомендованное
@@ -263,47 +263,47 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.6.27406.0 | Рекомендованное
 Microsoft.VisualStudio.Component.Debugger.JustInTime | JIT-отладчик | 15.0.27005.2 | Рекомендованное
 Microsoft.VisualStudio.Component.EntityFramework | Инструменты для Entity Framework 6 | 15.6.27406.0 | Рекомендованное
-Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 15.0.26208.0 | Optional
-Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Optional
-Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Optional
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
-Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Optional
-Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Optional
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.FSharp.Desktop | Поддержка языка F# для классических приложений | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Optional
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Optional
-Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Optional
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Optional
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Optional
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Optional
+Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 15.0.26208.0 | Необязательный
+Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Необязательный
+Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Необязательный
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Необязательный
+Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Необязательный
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Необязательный
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Необязательный
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Необязательный
+Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Необязательный
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.FSharp.Desktop | Поддержка языка F# для классических приложений | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Необязательный
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Необязательный
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Необязательный
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Необязательный
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Необязательный
+Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Необязательный
 
 ## <a name="game-development-with-unity"></a>Разработка игр с помощью Unity
 
@@ -313,15 +313,15 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-р�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.Unity | Набор средств Visual Studio для Unity | 15.7.27617.1 | Обязательно
+Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Unity | Набор средств Visual Studio для Unity | 15.7.27617.1 | Обязательное значение
 Component.UnityEngine.x64 | Редактор Unity 2018.3 (64-разрядный) | 15.9.28307.271 | Рекомендованное
 Component.UnityEngine.x86 | Редактор Unity 5.6 (32-разрядный) | 15.6.27406.0 | Рекомендованное
 
@@ -333,17 +333,17 @@ Component.UnityEngine.x86 | Редактор Unity 5.6 (32-разрядный) |
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.MDD.Linux | Visual C++ для разработки в среде Linux | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Обязательно
+Component.MDD.Linux | Visual C++ для разработки в среде Linux | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Обязательное значение
 Component.Linux.CMake | Инструменты Visual C++ для CMake и Linux | 15.9.28307.102 | Рекомендованное
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Рекомендованное
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Рекомендованное
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Рекомендованное
-Component.MDD.Linux.GCC.arm | Разработка для встроенных платформ и Интернета вещей | 15.6.27309.0 | Optional
+Component.MDD.Linux.GCC.arm | Разработка для встроенных платформ и Интернета вещей | 15.6.27309.0 | Необязательный
 
 ## <a name="desktop-development-with-c"></a>Разработка классических приложений на C++
 
@@ -353,14 +353,14 @@ Component.MDD.Linux.GCC.arm | Разработка для встроенных �
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Распространяемый компонент Visual C++ 2017 с обновлением | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Основные возможности Visual C++ для классических приложений | 15.8.27729.1 | Обязательно
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Распространяемый компонент Visual C++ 2017 с обновлением | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Основные возможности Visual C++ для классических приложений | 15.8.27729.1 | Обязательное значение
 Microsoft.VisualStudio.Component.Debugger.JustInTime | JIT-отладчик | 15.0.27005.2 | Рекомендованное
 Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Рекомендованное
 Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Рекомендованное
@@ -374,32 +374,32 @@ Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Адаптер т
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Рекомендованное
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Рекомендованное
-Component.Incredibuild | IncrediBuild — ускорение сборки | 15.7.27617.1 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
-Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Optional
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.140 | Набор инструментов VC++ 2015.3 v14.00 (v140) для ПК | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | Visual C++ MFC для x86 и x64 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Модули для стандартной библиотеки (экспериментальная версия) | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.WinXP | Поддержка Windows XP для C++ | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Пакеты SDK для Windows 8.1 и UCRT | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Поддержка Windows XP для C++ | 15.8.27705.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
+Component.Incredibuild | IncrediBuild — ускорение сборки | 15.7.27617.1 | Необязательный
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Необязательный
+Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Необязательный
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.140 | Набор инструментов VC++ 2015.3 v14.00 (v140) для ПК | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.VC.ATLMFC | Visual C++ MFC для x86 и x64 | 15.7.27625.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI | 15.6.27309.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Модули для стандартной библиотеки (экспериментальная версия) | 15.6.27309.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.WinXP | Поддержка Windows XP для C++ | 15.8.27924.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Пакеты SDK для Windows 8.1 и UCRT | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Поддержка Windows XP для C++ | 15.8.27705.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Необязательный
 
 ## <a name="game-development-with-c"></a>Разработка игр на C++
 
@@ -409,55 +409,55 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Распространяемый компонент Visual C++ 2017 с обновлением | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Обязательно
-Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Обязательно
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Распространяемый компонент Visual C++ 2017 с обновлением | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Обязательное значение
+Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Обязательное значение
 Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Рекомендованное
 Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Рекомендованное
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Средства профилирования C++ | 15.0.26823.1 | Рекомендованное
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Рекомендованное
-Component.Android.NDK.R12B | Пакет NDK для Android (R12B) | 12.1.10 | Optional
-Component.Android.SDK23.Private | Установка пакета SDK для Android (уровень API 23) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Optional
-Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Optional
-Component.Cocos | Cocos | 15.0.26906.1 | Optional
-Component.Incredibuild | IncrediBuild — ускорение сборки | 15.7.27617.1 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
-Component.MDD.Android | Средства разработки на C++ для Android | 15.0.26606.0 | Optional
-Component.OpenJDK | Дистрибутив OpenJDK от Майкрософт | 15.9.28125.51 | Optional
-Component.Unreal | Установщик Unreal Engine | 15.8.27729.1 | Optional
-Component.Unreal.Android | Поддержка Visual Studio Android для Unreal Engine | 15.9.28307.341 | Optional
-Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Optional
-Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.9.28016.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Пакеты SDK для Windows 8.1 и UCRT | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
+Component.Android.NDK.R12B | Пакет NDK для Android (R12B) | 12.1.10 | Необязательный
+Component.Android.SDK23.Private | Установка пакета SDK для Android (уровень API 23) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Необязательный
+Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Необязательный
+Component.Cocos | Cocos | 15.0.26906.1 | Необязательный
+Component.Incredibuild | IncrediBuild — ускорение сборки | 15.7.27617.1 | Необязательный
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Необязательный
+Component.MDD.Android | Средства разработки на C++ для Android | 15.0.26606.0 | Необязательный
+Component.OpenJDK | Дистрибутив OpenJDK от Майкрософт | 15.9.28125.51 | Необязательный
+Component.Unreal | Установщик Unreal Engine | 15.8.27729.1 | Необязательный
+Component.Unreal.Android | Поддержка Visual Studio Android для Unreal Engine | 15.9.28307.341 | Необязательный
+Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Необязательный
+Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Необязательный
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 15.9.28016.0 | Необязательный
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Необязательный
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Пакеты SDK для Windows 8.1 и UCRT | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Необязательный
 
 ## <a name="mobile-development-with-c"></a>Разработка мобильных приложений на C++
 
@@ -467,28 +467,28 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.Android.SDK19.Private | Установка пакета SDK для Android (уровень API 19) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28107.0 | Обязательно
-Component.Android.SDK21.Private | Установка пакета SDK для Android (уровень API 21) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательно
-Component.Android.SDK22.Private | Установка пакета SDK для Android (уровень API 22) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательно
-Component.Android.SDK23.Private | Установка пакета SDK для Android (уровень API 23) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательно
-Component.Android.SDK25.Private | Установка пакета SDK для Android (уровень API 25) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательно
-Component.OpenJDK | Дистрибутив OpenJDK от Майкрософт | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательно
+Component.Android.SDK19.Private | Установка пакета SDK для Android (уровень API 19) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28107.0 | Обязательное значение
+Component.Android.SDK21.Private | Установка пакета SDK для Android (уровень API 21) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательное значение
+Component.Android.SDK22.Private | Установка пакета SDK для Android (уровень API 22) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательное значение
+Component.Android.SDK23.Private | Установка пакета SDK для Android (уровень API 23) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательное значение
+Component.Android.SDK25.Private | Установка пакета SDK для Android (уровень API 25) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Обязательное значение
+Component.OpenJDK | Дистрибутив OpenJDK от Майкрософт | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Обязательное значение
 Component.Android.NDK.R15C | Пакет NDK для Android (R15C) | 15.2.1 | Рекомендованное
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Рекомендованное
 Component.MDD.Android | Средства разработки на C++ для Android | 15.0.26606.0 | Рекомендованное
-Component.Android.NDK.R12B | Пакет NDK для Android (R12B) | 12.1.10 | Optional
-Component.Android.NDK.R12B_3264 | Пакет NDK для Android (R12B) (32-разрядная версия) | 12.1.11 | Optional
-Component.Android.NDK.R13B | Пакет NDK для Android (R13B) | 13.1.7 | Optional
-Component.Android.NDK.R13B_3264 | Пакет NDK для Android (R13B) (32-разрядная версия) | 13.1.8 | Optional
-Component.Android.NDK.R15C_3264 | Пакет NDK для Android (R15C) (32-разрядная версия) | 15.2.1 | Optional
-Component.Google.Android.Emulator.API23.Private | Google Android Emulator (уровень API 23), локальная установка | 15.6.27413.0 | Optional
-Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM), локальная установка | 15.9.28307.421 | Optional
-Component.Incredibuild | IncrediBuild — ускорение сборки | 15.7.27617.1 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
-Component.MDD.IOS | Средства разработки C++ для iOS | 15.0.26621.2 | Optional
+Component.Android.NDK.R12B | Пакет NDK для Android (R12B) | 12.1.10 | Необязательный
+Component.Android.NDK.R12B_3264 | Пакет NDK для Android (R12B) (32-разрядная версия) | 12.1.11 | Необязательный
+Component.Android.NDK.R13B | Пакет NDK для Android (R13B) | 13.1.7 | Необязательный
+Component.Android.NDK.R13B_3264 | Пакет NDK для Android (R13B) (32-разрядная версия) | 13.1.8 | Необязательный
+Component.Android.NDK.R15C_3264 | Пакет NDK для Android (R15C) (32-разрядная версия) | 15.2.1 | Необязательный
+Component.Google.Android.Emulator.API23.Private | Google Android Emulator (уровень API 23), локальная установка | 15.6.27413.0 | Необязательный
+Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM), локальная установка | 15.9.28307.421 | Необязательный
+Component.Incredibuild | IncrediBuild — ускорение сборки | 15.7.27617.1 | Необязательный
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Необязательный
+Component.MDD.IOS | Средства разработки C++ для iOS | 15.0.26621.2 | Необязательный
 
 ## <a name="net-core-cross-platform-development"></a>Кроссплатформенная разработка .NET Core
 
@@ -498,47 +498,47 @@ Component.MDD.IOS | Средства разработки C++ для iOS | 15.0.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательно
-Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательно
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательно
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.NetCore.ComponentGroup.Web.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Поддержка языка F# для веб-проектов | 15.9.28307.421 | Обязательно
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательно
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательно
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательно
+Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательное значение
+Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательное значение
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательное значение
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательное значение
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.NetCore.ComponentGroup.Web.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Поддержка языка F# для веб-проектов | 15.9.28307.421 | Обязательное значение
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательное значение
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательное значение
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Рекомендованное
 Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Рекомендованное
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.9.28307.421 | Рекомендованное
@@ -551,12 +551,12 @@ Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-раз
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Облачные средства для веб-разработки | 15.8.27729.1 | Рекомендованное
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Optional
-Microsoft.NetCore.1x.ComponentGroup.Web | Средства разработки .NET Core 1.0–1.1 для веб-приложений | 15.6.27406.0 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Optional
-Microsoft.NetCore.ComponentGroup.Web | Средства разработки .NET Core 2.0 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Поддержка времени разработки в IIS | 15.9.28219.51 | Optional
+Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Необязательный
+Microsoft.NetCore.1x.ComponentGroup.Web | Средства разработки .NET Core 1.0–1.1 для веб-приложений | 15.6.27406.0 | Необязательный
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Необязательный
+Microsoft.NetCore.ComponentGroup.Web | Средства разработки .NET Core 2.0 | 15.7.27625.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Поддержка времени разработки в IIS | 15.9.28219.51 | Необязательный
 
 ## <a name="mobile-development-with-net"></a>Разработка мобильных приложений на платформе .NET
 
@@ -566,39 +566,39 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Поддержка вре
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.Xamarin | Xamarin | 15.8.27906.1 | Обязательно
-Component.Xamarin.RemotedSimulator | Симулятор удаленной работы для Xamarin | 15.6.27323.2 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Обязательно
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.Merq | Внутренние средства Common Xamarin | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.MonoDebugger | Отладчик Mono | 15.0.26720.2 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | Модуль создания шаблонов ASP.NET | 15.8.27729.1 | Обязательно
+Component.Xamarin | Xamarin | 15.8.27906.1 | Обязательное значение
+Component.Xamarin.RemotedSimulator | Симулятор удаленной работы для Xamarin | 15.6.27323.2 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательное значение
+Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Обязательное значение
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Merq | Внутренние средства Common Xamarin | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.MonoDebugger | Отладчик Mono | 15.0.26720.2 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | Модуль создания шаблонов ASP.NET | 15.8.27729.1 | Обязательное значение
 Component.Android.SDK27 | Программа установки пакета SDK для Android (уровень API 27) | 15.9.28016.0 | Рекомендованное
 Component.Google.Android.Emulator.API27 | Google Android Emulator (уровень API 27) | 15.9.28307.421 | Рекомендованное
 Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM), глобальная установка | 15.9.28307.421 | Рекомендованное
 Component.OpenJDK | Дистрибутив OpenJDK от Майкрософт | 15.9.28125.51 | Рекомендованное
-Component.Xamarin.Inspector | Xamarin Workbooks | 15.0.26606.0 | Optional
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Optional
-Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Средства универсальной платформы Windows для Xamarin | 15.9.28307.102 | Optional
+Component.Xamarin.Inspector | Xamarin Workbooks | 15.0.26606.0 | Необязательный
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Необязательный
+Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Средства универсальной платформы Windows для Xamarin | 15.9.28307.102 | Необязательный
 
 ## <a name="aspnet-and-web-development"></a>ASP.NET и веб-разработка
 
@@ -608,48 +608,48 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Средства униве�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательно
-Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательно
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательно
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.NetCore.ComponentGroup.Web.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Поддержка языка F# для веб-проектов | 15.9.28307.421 | Обязательно
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательно
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательно
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательно
+Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательное значение
+Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательное значение
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательное значение
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательное значение
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.NetCore.ComponentGroup.Web.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.FSharp | Поддержка языка F# | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Поддержка языка F# для веб-проектов | 15.9.28307.421 | Обязательное значение
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательное значение
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательное значение
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Рекомендованное
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | Рекомендованное
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Рекомендованное
@@ -668,25 +668,25 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Средства веб-заданий Microsoft Azure | 15.7.27617.1 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Облачные средства для веб-разработки | 15.8.27729.1 | Рекомендованное
-Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Optional
-Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Optional
-Microsoft.NetCore.1x.ComponentGroup.Web | Средства разработки .NET Core 1.0–1.1 для веб-приложений | 15.6.27406.0 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Optional
-Microsoft.NetCore.ComponentGroup.Web | Средства разработки .NET Core 2.0 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Поддержка времени разработки в IIS | 15.9.28219.51 | Optional
-Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK | Средства разработки .NET Core 2.0 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Core.Component.SDK.1x | Средства разработки .NET Core 1.0–1.1 | 15.6.27406.0 | Необязательный
+Microsoft.NetCore.1x.ComponentGroup.Web | Средства разработки .NET Core 1.0–1.1 для веб-приложений | 15.6.27406.0 | Необязательный
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Средства разработки .NET Core 2.0 | 15.8.27729.1 | Необязательный
+Microsoft.NetCore.ComponentGroup.Web | Средства разработки .NET Core 2.0 | 15.7.27625.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Поддержка времени разработки в IIS | 15.9.28219.51 | Необязательный
+Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | Необязательный
 
 ## <a name="nodejs-development"></a>Разработка Node.js
 
@@ -696,23 +696,23 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.Node.Build | Поддержка MSBuild в Node.js | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.Node.Tools | Поддержка разработки Node.js | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.TestTools.Core | Основные компоненты средств тестирования | 15.7.27520.0 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательно
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.Node.Build | Поддержка MSBuild в Node.js | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Node.Tools | Поддержка разработки Node.js | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TestTools.Core | Основные компоненты средств тестирования | 15.7.27520.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательное значение
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
-Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Optional
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Optional
+Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Необязательный
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Необязательный
 
 ## <a name="officesharepoint-development"></a>Разработка для Office и SharePoint
 
@@ -722,64 +722,64 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя верс�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательно
-Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательно
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательно
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Средства разработки классических приложений .NET | 15.7.27625.0 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.Sharepoint.Tools | Инструменты разработчика Office для Visual Studio | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательно
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательно
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательно
+Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Обязательное значение
+Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Обязательное значение
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательное значение
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательное значение
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Средства подключения и публикации | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Средства разработки классических приложений .NET | 15.7.27625.0 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.Sharepoint.Tools | Инструменты разработчика Office для Visual Studio | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательное значение
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательное значение
 Microsoft.VisualStudio.Component.TeamOffice | Набор средств Visual Studio для Office (VSTO) | 15.7.27625.0 | Рекомендованное
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
-Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Optional
-Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.2.SDK | Пакет SDK для .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.SDK | Пакет SDK для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 15.8.27825.0 | Необязательный
+Microsoft.Net.Component.4.7.SDK | Пакет SDK для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | Средства разработки для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 15.6.27406.0 | Необязательный
 
 ## <a name="python-development"></a>Разработка на Python
 
@@ -789,9 +789,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разраб�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.PythonTools | Поддержка языка Python | 15.0.26823.1 | Обязательно
+Microsoft.Component.PythonTools | Поддержка языка Python | 15.0.26823.1 | Обязательное значение
 Component.CPython3.x64 | 64-разрядная версия Python 3 (3.6.6) | 3.6.6 | Рекомендованное
 Microsoft.Component.CookiecutterTools | Поддержка шаблонов Cookiecutter | 15.0.26621.2 | Рекомендованное
 Microsoft.Component.PythonTools.Web | Поддержка веб-приложений Python | 15.9.28107.0 | Рекомендованное
@@ -802,67 +802,67 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScri
 Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Рекомендованное
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | Рекомендованное
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Рекомендованное
-Component.Anaconda2.x64 | 64-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Optional
-Component.Anaconda2.x86 | 32-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Optional
-Component.Anaconda3.x64 | 64-разрядная версия Anaconda3 (5.2.0) | 5.2.0 | Optional
-Component.Anaconda3.x86 | 32-разрядная версия Anaconda3 (5.2.0) | 5.2.0 | Optional
-Component.CPython2.x64 | 64-разрядная версия Python 2 (2.7.14) | 2.7.14 | Optional
-Component.CPython2.x86 | 32-разрядная версия Python 2 (2.7.14) | 2.7.14 | Optional
-Component.CPython3.x86 | 32-разрядная версия Python 3 (3.6.6) | 3.6.6 | Optional
-Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Optional
-Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Optional
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Optional
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Optional
-Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
-Microsoft.Component.PythonTools.UWP | Поддержка Интернета вещей для Python | 15.0.26606.0 | Optional
-Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Встроенные средства разработки Python | 15.9.28307.102 | Optional
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Optional
-Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.9.28307.421 | Optional
-Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Эмулятор вычислений Azure | 15.9.28307.421 | Optional
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Эмулятор хранения Azure | 15.9.28125.51 | Optional
-Microsoft.VisualStudio.Component.Azure.Waverton | Основные инструменты облачных служб Azure | 15.9.28107.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Средства сборки облачных служб Azure | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.ClassDesigner | Конструктор классов | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Optional
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Optional
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Optional
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.140 | Набор инструментов VC++ 2015.3 v14.00 (v140) для ПК | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | Средства профилирования C++ | 15.0.26823.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Optional
-Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Optional
+Component.Anaconda2.x64 | 64-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Необязательный
+Component.Anaconda2.x86 | 32-разрядная версия Anaconda2 (5.2.0) | 5.2.0 | Необязательный
+Component.Anaconda3.x64 | 64-разрядная версия Anaconda3 (5.2.0) | 5.2.0 | Необязательный
+Component.Anaconda3.x86 | 32-разрядная версия Anaconda3 (5.2.0) | 5.2.0 | Необязательный
+Component.CPython2.x64 | 64-разрядная версия Python 2 (2.7.14) | 2.7.14 | Необязательный
+Component.CPython2.x86 | 32-разрядная версия Python 2 (2.7.14) | 2.7.14 | Необязательный
+Component.CPython3.x86 | 32-разрядная версия Python 3 (3.6.6) | 3.6.6 | Необязательный
+Component.Microsoft.VisualStudio.RazorExtension | Службы языка Razor | 15.0.26720.2 | Необязательный
+Component.Microsoft.Web.LibraryManager | Диспетчер библиотек | 15.8.27705.0 | Необязательный
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Необязательный
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Необязательный
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Необязательный
+Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Необязательный
+Microsoft.Component.PythonTools.UWP | Поддержка Интернета вещей для Python | 15.0.26606.0 | Необязательный
+Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 15.6.27309.0 | Необязательный
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Встроенные средства разработки Python | 15.9.28307.102 | Необязательный
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Необязательный
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Необязательный
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Необязательный
+Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 15.9.28307.421 | Необязательный
+Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Эмулятор вычислений Azure | 15.9.28307.421 | Необязательный
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Эмулятор хранения Azure | 15.9.28125.51 | Необязательный
+Microsoft.VisualStudio.Component.Azure.Waverton | Основные инструменты облачных служб Azure | 15.9.28107.0 | Необязательный
+Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Средства сборки облачных служб Azure | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.ClassDesigner | Конструктор классов | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.DockerTools | Средства разработки контейнеров | 15.8.27906.1 | Необязательный
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | Основные средства рабочей нагрузки управляемого рабочего стола | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Необязательный
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Необязательный
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Необязательный
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.SQL.ADAL | Среда выполнения SQL ADAL | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Служебные программы командной строки SQL Server | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.DataSources | Источники данных для поддержки SQL Server | 15.0.26621.2 | Необязательный
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | LocalDB для экспресс-выпуска SQL Server 2016 | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.SQL.NCLI | Собственный клиент SQL Server | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Необязательный
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.140 | Набор инструментов VC++ 2015.3 v14.00 (v140) для ПК | 15.7.27617.1 | Необязательный
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | Средства профилирования C++ | 15.0.26823.1 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Необязательный
+Microsoft.VisualStudio.Component.Web | ASP.NET и средства веб-разработки | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.Component.Windows81SDK | Пакет SDK для Windows 8.1 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Web | Предварительные требования для ASP.NET и средств веб-разработки | 15.9.28219.51 | Необязательный
 
 ## <a name="universal-windows-platform-development"></a>Разработка с помощью универсальной платформы Windows
 
@@ -872,59 +872,59 @@ Microsoft.VisualStudio.ComponentGroup.Web | Предварительные тр�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательно
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательно
-Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Обязательно
-Microsoft.ComponentGroup.Blend | Blend для Visual Studio | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательно
-Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательно
-Microsoft.VisualStudio.Component.UWP.Support | Средства универсальной платформы Windows | 15.9.28119.51 | Обязательно
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательно
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Средства универсальной платформы Windows для Cordova | 15.9.28307.102 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET Native и .NET Standard | 15.8.27906.1 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Средства универсальной платформы Windows для Xamarin | 15.9.28307.102 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательно
-Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения Visual C++ для UWP | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Эмулятор мобильных устройств с ОС Windows 10 (Fall Creators Update) | 15.0.27406.0 | Optional
-Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Средства универсальной платформы Windows C++ для ARM64 | 15.0.28125.51 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Компиляторы и библиотеки Visual C++ для ARM64 | 15.9.28230.55 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | Подключение USB-устройств | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | Средства универсальной платформы Windows для C++ | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Optional
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательное значение
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Обязательное значение
+Microsoft.ComponentGroup.Blend | Blend для Visual Studio | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Core.Component.SDK.2.1 | Средства разработки .NET Core 2.1 | 15.8.27924.0 | Обязательное значение
+Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательное значение
+Microsoft.VisualStudio.Component.UWP.Support | Средства универсальной платформы Windows | 15.9.28119.51 | Обязательное значение
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Средства универсальной платформы Windows для Cordova | 15.9.28307.102 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET Native и .NET Standard | 15.8.27906.1 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Средства универсальной платформы Windows для Xamarin | 15.9.28307.102 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения Visual C++ для UWP | 15.6.27406.0 | Необязательный
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.Graphics.Tools | Отладчик графики и профилировщик GPU для DirectX | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Graphics.Win81 | Пакет SDK графических инструментов для Windows 8.1 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Эмулятор мобильных устройств с ОС Windows 10 (Fall Creators Update) | 15.0.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Средства универсальной платформы Windows C++ для ARM64 | 15.0.28125.51 | Необязательный
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Компиляторы и библиотеки Visual C++ для ARM | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Компиляторы и библиотеки Visual C++ для ARM64 | 15.9.28230.55 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Пакет SDK для Windows 10 (10.0.10240.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Пакет SDK для Windows 10 (10.0.10586.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Пакет SDK для Windows 10 (10.0.14393.0) | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Пакет SDK для Windows 10 (10.0.15063.0) для Desktop C++ x86 и x64 | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C#, VB, JS | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Пакет SDK для Windows 10 (10.0.15063.0) для UWP: C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) для Desktop C++ [x86 и x64] | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Пакет SDK для Windows 10 (10.0.16299.0) для Desktop C++ [ARM и ARM64] | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C#, VB, JS | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Пакет SDK для Windows 10 (10.0.16299.0) для UWP: C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | Подключение USB-устройств | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | Средства универсальной платформы Windows для C++ | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Пакет SDK для Windows 10 (10.0.15063.0) | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 15.8.27825.0 | Необязательный
 
 ## <a name="visual-studio-extension-development"></a>Разработка расширений Visual Studio
 
@@ -934,33 +934,33 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Пакет SDK для
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательно
-Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательно
-Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательно
-Microsoft.VisualStudio.Component.VSSDK | SDK для Visual Studio | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Необходимые компоненты для разработки расширений Visual Studio | 15.7.27625.0 | Обязательно
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.SDK | Пакет SDK для .NET Framework 4.6.1 | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки .NET Framework 4.6.1 | 15.8.27825.0 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 15.9.28016.0 | Обязательное значение
+Microsoft.VisualStudio.Component.PortableLibrary | Пакет нацеливания переносимой библиотеки .NET | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 15.6.27309.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Инструменты статического анализа | 15.0.26208.0 | Обязательное значение
+Microsoft.VisualStudio.Component.VSSDK | SDK для Visual Studio | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Необходимые компоненты для разработки расширений Visual Studio | 15.7.27625.0 | Обязательное значение
 Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Рекомендованное
 Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 15.0.26208.0 | Рекомендованное
-Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 15.0.26208.0 | Optional
-Microsoft.Component.CodeAnalysis.SDK | Пакет SDK для .NET Compiler Platform | 15.0.27729.1 | Optional
-Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения Visual C++ для UWP | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.ClassDesigner | Конструктор классов | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DslTools | Пакет SDK для моделирования | 15.0.27005.2 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL для x86 и x64 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | Visual C++ MFC для x86 и x64 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Optional
+Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 15.0.26208.0 | Необязательный
+Microsoft.Component.CodeAnalysis.SDK | Пакет SDK для .NET Compiler Platform | 15.0.27729.1 | Необязательный
+Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения Visual C++ для UWP | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.ClassDesigner | Конструктор классов | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.DslTools | Пакет SDK для моделирования | 15.0.27005.2 | Необязательный
+Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL для x86 и x64 | 15.7.27625.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.ATLMFC | Visual C++ MFC для x86 и x64 | 15.7.27625.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты Visual Studio C++ | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя версия 141 инструментов версии 14.16 для VC++ 2017 версии 15.9 | 15.9.28230.55 | Необязательный
 
 ## <a name="mobile-development-with-javascript"></a>Разработка мобильных приложений на языке JavaScript
 
@@ -970,38 +970,38 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Последняя верс�
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Component.CordovaToolset.6.3.1 | Набор инструментов Cordova 6.3.1 | 15.7.27625.0 | Обязательно
-Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательно
-Microsoft.VisualStudio.Component.Cordova | Основные компоненты для разработки мобильных приложений на JavaScript | 15.0.26606.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.ProjectSystem | JavaScript ProjectSystem и общий инструментарий | 15.0.26606.0 | Обязательно
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.2.3 | Пакет SDK для TypeScript 2.3 | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательно
-Component.Android.SDK23.Private | Установка пакета SDK для Android (уровень API 23) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Optional
-Component.Google.Android.Emulator.API23.Private | Google Android Emulator (уровень API 23), локальная установка | 15.6.27413.0 | Optional
-Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM), локальная установка | 15.9.28307.421 | Optional
-Component.OpenJDK | Дистрибутив OpenJDK от Майкрософт | 15.9.28125.51 | Optional
-Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Optional
-Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Optional
-Microsoft.VisualStudio.Component.Git | Git для Windows | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Эмулятор мобильных устройств с ОС Windows 10 (Fall Creators Update) | 15.0.27406.0 | Optional
-Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Средства универсальной платформы Windows для Cordova | 15.9.28307.102 | Optional
+Component.CordovaToolset.6.3.1 | Набор инструментов Cordova 6.3.1 | 15.7.27625.0 | Обязательное значение
+Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Обязательное значение
+Microsoft.VisualStudio.Component.Cordova | Основные компоненты для разработки мобильных приложений на JavaScript | 15.0.26606.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Диагностика JavaScript | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.ProjectSystem | JavaScript ProjectSystem и общий инструментарий | 15.0.26606.0 | Обязательное значение
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Поддержка языков JavaScript и TypeScript | 15.9.28125.51 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.2.3 | Пакет SDK для TypeScript 2.3 | 15.8.27729.1 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.1 | Пакет SDK для TypeScript 3.1 | 15.0.28218.60 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET и веб-разработка | 15.8.27825.0 | Обязательное значение
+Component.Android.SDK23.Private | Установка пакета SDK для Android (уровень API 23) (локальная установка для разработки мобильных приложений на JavaScript или C++) | 15.9.28016.0 | Необязательный
+Component.Google.Android.Emulator.API23.Private | Google Android Emulator (уровень API 23), локальная установка | 15.6.27413.0 | Необязательный
+Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM), локальная установка | 15.9.28307.421 | Необязательный
+Component.OpenJDK | Дистрибутив OpenJDK от Майкрософт | 15.9.28125.51 | Необязательный
+Microsoft.Component.ClickOnce | Компонент для публикации ClickOnce | 15.8.27825.0 | Необязательный
+Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.AppInsights.Tools | Средства анализа для разработчиков | 15.8.27825.0 | Необязательный
+Microsoft.VisualStudio.Component.DiagnosticTools | Средства профилирования .NET | 15.8.27729.1 | Необязательный
+Microsoft.VisualStudio.Component.Git | Git для Windows | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.Graphics | Редакторы изображений и трехмерных моделей | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Эмулятор мобильных устройств с ОС Windows 10 (Fall Creators Update) | 15.0.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.SQL.CLR | Типы данных среды CLR для SQL Server | 15.0.26208.0 | Необязательный
+Microsoft.VisualStudio.Component.VisualStudioData | Источники данных и ссылки на службы | 15.6.27406.0 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 15.9.28307.102 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Средства универсальной платформы Windows для Cordova | 15.9.28307.102 | Необязательный
 
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | name | Версия
+Идентификатор компонента | name | Version
 --- | --- | ---
 Component.Android.Emulator | Эмулятор Visual Studio для Android | 15.6.27413.0
 Component.Android.NDK.R11C | Пакет NDK для Android (R11C) | 11.3.14
