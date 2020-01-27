@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491667"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281702"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 
@@ -47,7 +47,7 @@ ms.locfileid: "74491667"
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Подписки для партнеров, купивших Action Pack
 
-Партнеры с компетенцией не могут приобрести Action Pack. Партнер может приобрести только один Action Pack.
+Партнеры с компетенцией могут приобрести Action Pack. Партнер может приобрести только один Action Pack.
 
 За Action Pack партнер получает **3 подписки на Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) — это индивидуальное предложение, не имеющее коммерческого эквивалента на рынке. Компоненты предложения:
 
