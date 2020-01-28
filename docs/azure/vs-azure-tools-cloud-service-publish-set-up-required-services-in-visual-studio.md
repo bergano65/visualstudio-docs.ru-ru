@@ -43,7 +43,7 @@ ms.locfileid: "62572413"
 
 ## <a name="create-a-storage-account"></a>Создание учетной записи хранения
 
-Учетная запись хранения предоставляет доступ к службам BLOB-объектов, очередей и талиц. Учетную запись хранения можно создать с помощью Visual Studio или [портала Azure](https://portal.azure.com/).
+Учетная запись хранения предоставляет доступ к службам BLOB-объектов, очередей и таблиц. Учетную запись хранения можно создать с помощью Visual Studio или [портала Azure](https://portal.azure.com/).
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Создание учетной записи хранения в Visual Studio
 
