@@ -1,4 +1,4 @@
-- name: MsBuild
+- name: MSBuild
   items:
     - name: MsBuild
       href: msbuild.md
@@ -8,7 +8,8 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: Основные возможности MSBuild
       items:
-        - name: "Основные возможности MSBuild\_— общие сведения"
+        - name: Обзор
+          displayName: msbuild concepts
           href: msbuild-concepts.md
         - name: Свойства
           items:
@@ -22,7 +23,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Функции свойств
               href: property-functions.md
-        - name: Элементы
+        - name: Items
           items:
             - name: Элементы MSBuild
               href: msbuild-items.md
@@ -36,7 +37,7 @@
               href: item-definitions.md
             - name: Функции элементов
               href: item-functions.md
-        - name: Целевые объекты
+        - name: Цели
           items:
             - name: Цели MSBuild
               href: msbuild-targets.md
@@ -56,7 +57,7 @@
               href: how-to-clean-a-build.md
             - name: Использование пакета SDK проекта MSBuild
               href: how-to-use-project-sdk.md
-        - name: Задачи
+        - name: Задания
           items:
             - name: Задачи MSBuild
               href: msbuild-tasks.md
@@ -98,7 +99,7 @@
               href: item-metadata-in-target-batching.md
         - name: Преобразования MSBuild
           href: msbuild-transforms.md
-        - name: Интеграция Visual Studio
+        - name: Интеграция со средой Visual Studio
           items:
             - name: Интеграция Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -134,7 +135,7 @@
               href: resolving-assemblies-at-design-time.md
             - name: Конфигурация целевых платформ и задач
               items:
-                - name: Настройка целевых платформ и задач
+                - name: Обзор
                   href: configuring-targets-and-tasks.md
                 - name: Настройка целевых платформ и задач
                   href: how-to-configure-targets-and-tasks.md
@@ -142,7 +143,8 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Отслеживание файлов
           items:
-            - name: "Отслеживание файлов\_— общие сведения"
+            - name: Обзор
+              displayName: file tracking
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -166,9 +168,10 @@
           href: customize-your-build.md
         - name: Рекомендации по MSBuild
           href: msbuild-best-practices.md
-    - name: Ведение журнала
+    - name: Logging
       items:
-        - name: "Ведение журнала в MSBuild\_— общие сведения"
+        - name: Обзор
+          displayName: logging
           href: logging-in-msbuild.md
         - name: Получение журналов построения с помощью MSBuild
           href: obtaining-build-logs-with-msbuild.md
@@ -186,63 +189,67 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: Справочные сведения о MSBuild
       items:
-        - name: "Справка по MSBuild\_— общие сведения"
+        - name: Обзор
+          displayName: msbuild reference
           href: msbuild-reference.md
         - name: Справочные сведения о схеме файлов проектов MSBuild
           items:
-            - name: "Справка по схеме файлов проектов MSBuild\_— общие сведения"
+            - name: Обзор
+              displayName: Project File Schema Reference
               href: msbuild-project-file-schema-reference.md
-            - name: Элемент Choose (MSBuild)
+            - name: Элемент Choose
               href: choose-element-msbuild.md
-            - name: Элемент Import (MSBuild)
+            - name: Элемент Import
               href: import-element-msbuild.md
             - name: Элемент ImportGroup
               href: importgroup-element.md
-            - name: Элемент Item (MSBuild)
+            - name: Элемент Item
               href: item-element-msbuild.md
-            - name: Элемент ItemDefinitionGroup (MSBuild)
+            - name: Элемент ItemDefinitionGroup
               href: itemdefinitiongroup-element-msbuild.md
-            - name: Элемент ItemGroup (MSBuild)
+            - name: Элемент ItemGroup
               href: itemgroup-element-msbuild.md
-            - name: Элемент ItemMetadata (MSBuild)
+            - name: Элемент ItemMetadata
               href: itemmetadata-element-msbuild.md
-            - name: Элемент OnError (MSBuild)
+            - name: Элемент OnError
               href: onerror-element-msbuild.md
-            - name: Элемент Otherwise (MSBuild)
+            - name: Элемент Otherwise
               href: otherwise-element-msbuild.md
-            - name: Элемент Output (MSBuild)
+            - name: Элемент Output
               href: output-element-msbuild.md
             - name: Элемент Parameter
               href: parameter-element.md
             - name: Элемент ParameterGroup
               href: parametergroup-element.md
-            - name: Элемент Project (MSBuild)
+            - name: Элемент Project
               href: project-element-msbuild.md
-            - name: Элемент ProjectExtensions (MSBuild)
+            - name: Элемент ProjectExtensions
               href: projectextensions-element-msbuild.md
-            - name: Элемент Property (MSBuild)
+            - name: Элемент Property
               href: property-element-msbuild.md
-            - name: Элемент PropertyGroup (MSBuild)
+            - name: Элемент PropertyGroup
               href: propertygroup-element-msbuild.md
-            - name: Элемент SDK (MSBuild)
+            - name: Элемент Sdk
               href: sdk-element-msbuild.md
-            - name: Элемент Target (MSBuild)
+            - name: Элемент Target
               href: target-element-msbuild.md
-            - name: Элемент Task (MSBuild)
+            - name: Элемент Task
               href: task-element-msbuild.md
-            - name: Элемент TaskBody (MSBuild)
+            - name: Элемент TaskBody
               href: taskbody-element-msbuild.md
-            - name: Элемент UsingTask (MSBuild)
+            - name: Элемент UsingTask
               href: usingtask-element-msbuild.md
-            - name: Элемент When (MSBuild)
+            - name: Элемент When
               href: when-element-msbuild.md
         - name: Справочные сведения о задачах
           items:
-            - name: "Справка по задачам MSBuild\_— общие сведения"
+            - name: Обзор
+              displayName: Task Reference
               href: msbuild-task-reference.md
-            - name: 'Задачи, относящиеся к Visual C++'
+            - name: 'Задачи, относящиеся к C++'
               items:
-                - name: "Задачи MSBuild, относящиеся к Visual C++\_— общие сведения"
+                - name: Обзор
+                  displayName: C++ tasks
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: Задача BscMake
                   href: bscmake-task.md
@@ -442,13 +449,15 @@
           href: msbuild-response-files.md
         - name: Справка по WPF
           items:
-            - name: "Справка по WPF для MSBuild\_— общие сведения"
+            - name: Обзор
+              displayName: WPF MSBuild Reference
               href: wpf-msbuild-reference.md
             - name: TARGETS-файлы WPF
               href: wpf-dot-targets-files.md
             - name: Справка по задачам WPF
               items:
-                - name: "Справка по задачам WPF для MSBuild\_— общие сведения"
+                - name: Обзор
+                  displayName: WPF MSBuild Task Reference
                   href: wpf-msbuild-task-reference.md
                 - name: Задача FileClassifier
                   href: fileclassifier-task.md
@@ -472,7 +481,8 @@
           href: special-characters-to-escape.md
     - name: Программное использование MSBuild
       items:
-        - name: Программное использование MSBuild
+        - name: Обзор
+          displayName: Use MSBuild Programmatically
           href: msbuild-api.md
         - name: "Обновление до MSBuild\_15"
           href: updating-an-existing-application.md
