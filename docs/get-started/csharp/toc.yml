@@ -38,6 +38,8 @@
 - name: Знакомство с Visual Studio
   expanded: true
   items:
+    - name: Запуск программы
+      href: run-program.md
     - name: Открытие проекта из репозитория
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Создание и редактирование кода
