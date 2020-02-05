@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fb499f8ab324f50c5a6019682253d76a078429bf
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 095fbcf35337ff2a619b6f3dcc6d5c28773ae975
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115252"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542650"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Примеры параметров командной строки для установки Visual Studio
 
@@ -94,7 +94,7 @@ ms.locfileid: "76115252"
 * Загрузите базовый редактор Visual Studio (минимальная конфигурация Visual Studio). Включите только английский языковой пакет:
 
   ```cmd
-   vs_community.exe --layout C:\VS
+   vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
   ```
