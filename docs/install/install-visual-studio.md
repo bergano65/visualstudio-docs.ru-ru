@@ -98,7 +98,9 @@ ms.locfileid: "76114568"
 
 ::: moniker-end
 
+
 ## <a name="step-2---download-visual-studio"></a>Шаг 2. Скачивание Visual Studio
+
 
 Теперь скачайте файл начального загрузчика Visual Studio.
 

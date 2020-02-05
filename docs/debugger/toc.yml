@@ -52,6 +52,8 @@
       items:
         - name: Проверка данных в окнах отладчика
           href: debugger-windows.md
+        - name: Проверка исключений
+          href: exception-helper.md
         - name: Проверка переменных
           href: autos-and-locals-windows.md
         - name: Просмотр переменных
@@ -292,7 +294,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
+            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -656,7 +658,7 @@
               href: javascript-console-commands.md
             - name: Сочетания клавиш (HTML и JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: 'Предупреждение: Отладка скриптов отключена'
+            - name: Предупреждение. Отладка скриптов отключена
               href: warning-script-debugging-disabled.md
         - name: Службы WCF
           items:
@@ -680,7 +682,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: Безопасность отладчика
       href: debugger-security.md
-- name: Ссылка
+- name: Справочник
   items:
     - name: Справочник по пользовательскому отладочному интерфейсу
       items:

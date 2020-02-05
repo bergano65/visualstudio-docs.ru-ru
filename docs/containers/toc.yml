@@ -40,7 +40,7 @@
           href: container-build.md
     - name: Устранение неполадок
       href: troubleshooting-docker-errors.md
-    - name: Ссылка
+    - name: Справочник
       items:
         - name: Свойства MSBuild для проектов контейнеров
           href: container-msbuild-properties.md

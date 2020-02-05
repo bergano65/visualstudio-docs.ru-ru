@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут назначать лицензии для подписчиков.
-ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797370"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892185"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Назначение лицензий на портале администрирования подписок Visual Studio
 Администраторы подписок Visual Studio могут использовать портал администрирования для назначения подписок отдельным пользователям и группам пользователей.
@@ -33,7 +33,7 @@ ms.locfileid: "74797370"
    > [!div class="mx-imgBorder"]
    > ![Доступ к загрузкам](media/access-to-downloads.png)
 
-       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
+    Добавить в подписку свои примечания к ссылке можно в разделе **Добавить ссылку**.
    > [!div class="mx-imgBorder"]
    > ![Добавление собственных примечаний к каждой подписке](media/add-subscriber-reference-notes.png)
 
