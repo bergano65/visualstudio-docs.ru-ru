@@ -1,5 +1,5 @@
 ---
-title: Использование средств Visual Studio для Docker с ASP.NET Core
+title: Использование средств Visual Studio для Docker с ASP.NET
 author: ghogen
 description: Сведения об использовании средств Visual Studio 2019 и Docker для Windows
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75928002"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922995"
 ---
 В Visual Studio можно легко выполнять сборку, отлаживать и запускать контейнерные приложения .NET, ASP.NET и ASP.NET Core и публиковать их в реестре контейнеров Azure (ACR), Docker Hub, службе приложений Azure или собственном реестре контейнеров. В этой статье рассматривается публикация приложения ASP.NET Core в реестре контейнеров Azure (ACR).
 
@@ -20,7 +20,7 @@ ms.locfileid: "75928002"
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**.
-* [Средства разработки .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) для разработки с использованием .NET Core 2.2.
+* [Средства разработки .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) для разработки с использованием .NET Core
 * Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Установка и настройка
@@ -29,10 +29,12 @@ ms.locfileid: "75928002"
 
 ## <a name="add-a-project-to-a-docker-container"></a>Добавление проекта в контейнер Docker
 
-1. Создайте проект, используя шаблон **Веб-приложение ASP.NET Core**.
+1. Создайте проект, используя шаблон **Веб-приложение ASP.NET Core**, или, если вы хотите использовать .NET Framework вместо .NET Core, выберите **Веб-приложение ASP.NET (.NET Framework)** .
 1. Выберите **Веб-приложение** и установите флажок **Включение поддержки Docker**.
 
    ![Флажок "Включение поддержки Docker"](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   На снимке экрана показана платформа .NET Core; если вы используете .NET Framework, она выглядит немного иначе.
 
 1. Выберите нужный тип контейнера (Windows или Linux) и нажмите кнопку **Создать**.
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Предыдущий *Dockerfile* основан на образе [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) и включает в себя инструкции по изменению базового образа путем сборки проекта и добавления его в контейнер.
+Предыдущий *Dockerfile* основан на образе [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) и включает в себя инструкции по изменению базового образа путем сборки проекта и добавления его в контейнер. Если вы используете .NET Framework, базовый образ будет отличаться.
 
 Если в диалоговом окне создания проекта установлен флажок **Configure for HTTP** (Настроить для трафика HTTPS), *Dockerfile* предоставляет два порта. Один порт используется для трафика HTTP, другой — для HTTPS. Если флажок не установлен, для трафика HTTP предоставляется один порт (80).
 
@@ -71,7 +73,7 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 Выберите пункт **Docker** в раскрывающемся списке отладки на панели инструментов, чтобы начать отладку приложения. Может появиться сообщение с запросом о доверии сертификату. Выберите доверие сертификату, чтобы продолжить.
 
-В параметре **Инструменты контейнера** в окне **Вывод** показано, какие действия выполняются.
+В параметре **Инструменты контейнера** в окне **Вывод** показано, какие действия выполняются. В первый раз может потребоваться некоторое время для скачивания базового образа, но при последующих запусках это происходит гораздо быстрее.
 
 ## <a name="containers-window"></a>Окно "Контейнеры"
 

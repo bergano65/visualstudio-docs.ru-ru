@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588633"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542663"
 ---
 # <a name="language-conventions"></a>Языковые соглашения
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **Имя правила** | csharp_prefer_braces |
 | **Идентификатор правила** | IDE0011 |
 | **Применимые языки** | C# |
-| **Значения** | `true` — предпочитать фигурные скобки даже для одной строки кода.<br /><br />`false` — предпочитать не использовать фигурные скобки, если это допустимо. |
+| **Значения** | `true` — предпочитать фигурные скобки даже для одной строки кода.<br /><br />`false` — предпочитать не использовать фигурные скобки, если это допустимо.<br /><br />`when_multiline` — предпочитать фигурные скобки на нескольких строках. |
 | **Значение по умолчанию в Visual Studio** | `true:silent` |
 
 Примеры кода:

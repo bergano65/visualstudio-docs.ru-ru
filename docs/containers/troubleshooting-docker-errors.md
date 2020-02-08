@@ -9,14 +9,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
-ms.date: 10/13/2017
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "71125959"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027273"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Устранение неполадок при разработке с Docker в Visual Studio
 
@@ -80,6 +80,18 @@ net localgroup docker-users DOMAIN\username /add
 ```
 
 В PowerShell используйте командлет [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember).
+
+## <a name="low-disk-space"></a>Недостаточно места на диске
+
+По умолчанию Docker хранит образы в папке *%ProgramData%/Docker/* , которая обычно находится на системном диске — *C:\ProgramData\Docker\*. Чтобы образы не занимали место на системном диске, можно изменить расположение папки образов.  С помощью значка Docker на панели задач откройте параметры Docker, выберите **Управляющая программа** и переключите режим с **Базовый** на **Расширенный**. На панели редактирования добавьте параметр свойства `graph`, указывающий требуемое расположение для образов Docker:
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Снимок экрана: параметр расположения образов Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+Нажмите кнопку **Применить**, чтобы перезапустить Docker. Эти действия изменяют файл конфигурации: *%ProgramData%\docker\config\daemon.json*. Ранее созданные образы не перемещаются.
 
 ## <a name="microsoftdockertools-github-repo"></a>Репозиторий GitHub Microsoft/DockerTools
 

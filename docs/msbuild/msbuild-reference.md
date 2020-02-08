@@ -15,69 +15,59 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9418143c9d93d960d3123868b89f24a97e1afafd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 92d8db803dd6e20a9a1d954847b63d3a02ddd257
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593971"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826540"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
+
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] — это система сборки для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Далее приведены ссылки на разделы, содержащие справочную информацию по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 ## <a name="in-this-section"></a>Содержание раздела
-- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 
+- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)\
  В нем описаны элементы XML, которые составляют формат файла [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)\
  В нем описаны некоторые типичные задачи, входящие в состав [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Условия](../msbuild/msbuild-conditions.md)
-
+- [Условия](../msbuild/msbuild-conditions.md)\
  Описаны условия, доступные в файлах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)
-
+- [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)\
  Описаны способы использования элементов `Choose`, `When` и `Otherwise`.
 
-- [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
+- [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)\
  Описаны зарезервированные свойства [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Общие свойства проектов MSBuild](../msbuild/common-msbuild-project-properties.md)
-
+- [Общие свойства проектов MSBuild](../msbuild/common-msbuild-project-properties.md)\
  Описаны свойства проектов, общие для всех типов проектов, а также свойства, которые часто используются отдельными типами проектов.
 
-- [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)
-
+- [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)\
  Описаны элементы проектов, общие для всех типов проектов, а также элементы, которые часто используются отдельными типами проектов.
 
-- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)
-
+- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)\
  Описаны аргументы и параметры, которые могут использоваться с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.
 
-- [TARGETS-файлы](../msbuild/msbuild-dot-targets-files.md)
-
+- [Файлы TARGETS](../msbuild/msbuild-dot-targets-files.md)\
  Описан *TARGETS*-файл, включенный в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)
-
+- [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)\
  Перечислены метаданные, которые создаются вместе с каждым элементом.
 
-- [Файлы ответов](../msbuild/msbuild-response-files.md)
-
+- [Файлы ответов](../msbuild/msbuild-response-files.md)\
  Описаны *RSP*-файлы, содержащие параметры командной строки.
 
-- [Дополнительные ресурсы](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild). Ссылки на веб-узлы и группы новостей по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+- [Дополнительные ресурсы](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
+ Ссылки на веб-узлы и группы новостей по [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)
-
+- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)\
  Содержит справочник целевых объектов и задач [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для Windows Presentation Foundation (WPF).
 
-- [Знаки, требующие отключения их специального значения](../msbuild/special-characters-to-escape.md)
-
+- [Экранируемые специальные знаки](../msbuild/special-characters-to-escape.md)\
  Список символов, которые должны использоваться в составе "escape-последовательностей" для обеспечения их правильной интерпретации. Escape-последовательность — это ряд символов, который означает, что следующие за ним символы должны интерпретироваться по-другому.
 
 ## <a name="see-also"></a>См. также
