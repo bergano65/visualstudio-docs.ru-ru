@@ -1,7 +1,7 @@
 ---
 title: Установка и использование в среде, защищенной брандмауэром или прокси-сервером
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
-ms.date: 05/22/2019
+ms.date: 02/01/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 474042f88b0bee90f2bdd61298e09c5fabfa122c
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114939"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027563"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -53,6 +53,7 @@ ms.locfileid: "76114939"
 | dl.xamarin.com | Настройка расположения для скачивания пакетов |
 | xamarin-downloads.azureedge.net | Расположение списка скачивания пакетов SDK для Android |
 | marketplace.visualstudio.com | Расположение для скачивания расширений Visual Studio |
+| \*.gallerycdn.vsassets.io  | Расположение для скачивания расширений Visual Studio |
 | visualstudio.microsoft.com | Расположение документации |
 | docs.microsoft.com | Расположение документации |
 | msdn.microsoft.com | Расположение документации |
@@ -76,6 +77,10 @@ ms.locfileid: "76114939"
 | www\.incredibuild.com | Разработка игр с помощью C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Разработка игр с помощью C++ (IncrediBuild) |
 | www\.python.org | Разработка с помощью Python (Python) <br /><br />Приложения для обработки и анализа данных и аналитические приложения (Python) |
+| developerservices2.apple.com | Подготовка Xamarin.iOS |
+| developer.apple.com | Подготовка Xamarin.iOS |
+| appstoreconnect.apple.com | Подготовка Xamarin.iOS |
+| idmsa.apple.com | Подготовка Xamarin.iOS |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Использование Visual Studio и служб Azure
@@ -88,24 +93,24 @@ ms.locfileid: "76114939"
 | - | - | - | - | - |
 | URL-адрес<br>разрешение | go.microsoft.com<br><br>aka.ms | | | Используется для сокращения URL-адресов, которые затем разрешаются в длинные URL-адреса |
 | Начальная страница | vsstartpage.blob.core.windows.net | | 443 | Используется для отображения новостей для разработчиков на начальной странице (только Visual Studio 2017) |
-| Целевая<br> Уведомление <br>Служба | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Используется для фильтрации глобального списка уведомлений, чтобы сделать его применимым только к определенным типам компьютеров и сценариев использования |
+| Целевая<br> Уведомление <br>Служба | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | | 443<br><br>443 | Используется для фильтрации глобального списка уведомлений, чтобы сделать его применимым только к определенным типам компьютеров и сценариев использования |
 | Расширение <br>для расширения | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Используется для уведомления о доступном обновлении для установленного расширения <br><br> Используется как расположение для входа |
 | Интеграция <br>Интеграция | az861674.vo.msecnd.net | | 443<br> | Используется для настройки новых проектов и отправки данных об использовании в зарегистрированную учетную запись Application Insights |
 | Code Lens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | | 443 | Используется для предоставления сведений в редакторе, например времени последнего обновления файла, временной шкалы изменений, связанных с изменениями рабочими элементами, данных о авторе и т. д. |
 | Экспериментальный <br>экспериментальной функции | visualstudio-devdiv-c2s.msedge.net | | 80 | Используется для активации новых экспериментальных функций или измененных функций |
-| Параметры индикатора событий для идентификации <br>(имя пользователя и аватар)<br>and <br>перемещения | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
+| Параметры индикатора событий для идентификации <br>(имя пользователя и аватар)<br>and <br>перемещения | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
 | Настройки удаленной системы | az700632.vo.msecnd.net | | 443 | Используется для отключения расширений, которые могут вызывать проблемы в работе Visual Studio |
 | Средства Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https | 443 | Применяется для сценариев использования магазина приложений Windows |
 | Поддержка <br>Обнаружение <br><br>Поддержка <br>Определение<br><br>Поддержка <br>схемы JSON для <br>ресурсов Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http<br>https<br><br>http<br><br>https | 80<br>443 <br><br> 443<br><br>443 | Используется для обнаружения и скачивания схем JSON, которые можно применять при изменении документов JSON <br><br>Используется для получения схемы проверки метаданных для JSON<br><br>Используется, чтобы получить текущую схему для шаблонов развертывания Azure Resource Manager |
 | Обнаружение <br>обнаружение | Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io | https<br><br>http/s<br><br>https | 443<br><br>80/443<br><br>443 | Требуется для поиска пакетов NPM и используется для установки клиентского пакета скриптов в веб-проектах |
 | Значки<br> значки<br><br>Значки <br>search | Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http<br><br>https<br>http<br>https | 80<br><br>443<br>80<br>443 | Предоставляет значок по умолчанию для пакета Bower  <br><br>Позволяет выполнять поиск пакетов Bower |
-| NuGet<br><br>Пакет NuGet<br> обнаружение | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | Используется для проверки подписанных пакетов NuGet.<br><br>Требуется для поиска пакетов NuGet и их версий |
+| NuGet<br><br>Пакет NuGet<br> обнаружение | api.nuget.org <br>www.nuget.org <br>nuget.org <br>azuresearch-usnc.nuget.org <br>azuresearch-ussc.nuget.org <br>licenses.nuget.org <br>nuget.cdn.azure.cn <br>azuresearch-ea.nuget.org <br>azuresearch-sea.nuget.org <br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | Используется для проверки подписанных пакетов NuGet.<br><br>Требуется для поиска пакетов NuGet и их версий |
 | Сведения о репозитории GitHub | api.github.com | https | 443 | Требуется для получения дополнительных сведений о пакетах Bower |
 | Веб-анализаторы кода | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Создание проекта<br>шаблонов обозревателя<br>обнаружение <br><br>Создание проекта <br>в обозревателе<br> Cookiecutter | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Используется для обнаружения шаблонов в Интернете из рекомендуемого нами веб-канала и репозиториев GitHub <br><br>Используется для создания проекта из шаблона Cookiecutter, для которого требуется один раз по требованию установить пакет Python для Cookiecutter из индекса пакета Python (PyPI) |
 | Управление <br>обнаружение<br><br>Управление <br>управление<br><br>Оператор new <br>Python <br> проект <br>шаблоны | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Позволяет выполнять поиск пакетов PIP<br><br>Используется для автоматической установки пакета PIP, если он отсутствует <br><br>Используется для разрешения следующих новых шаблонов проектов Python в URL-адреса шаблонов Cookiecutter:<br> — проект классификатора;<br>— проект кластеризации; <br> — проект регрессии; <br> — PyGame с использованием PyKinect; <br> — проект Pyvot. |
 | Служба <br>надстройка <br> манифеста <br>Проверка <br>Служба | verificationservice.osi.office.net | https | 443 | Используется для проверки манифестов веб-надстроек Office |
-| Веб-надстройки для SharePoint и <br>Office Add-ins | sharepoint.com | https | 443 | Используется для публикации и тестирования надстроек SharePoint и Office в SharePoint Online |
+| Веб-надстройки для SharePoint и <br>Office Add-ins | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https | 443 | Используется для публикации и тестирования надстроек SharePoint и Office в SharePoint Online и Office 365 |
 | Узел службы <br>тестирования<br> Узел | | http | 12292 | Правило брандмауэра, которое создается автоматически для тестирования надстроек SharePoint с помощью рабочих процессов |
 | Автоматически собранные <br>статистические данные о надежности <br>и другие <br>программы улучшения качества <br>программного обеспечения (CEIP)<br> для пакета Azure SDK и <br>инструментов SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https | 443 | Используется для отправки статистических данных о надежности (данные об аварийном завершении или зависании) от пользователя в корпорацию Майкрософт. Фактические дампы аварийного завершения или зависаний будут отправляться, даже если включено создание отчетов об ошибках Windows. Не будут отправляться только статистические данные. <br>Используется, чтобы выявить анонимное использование расширения пакета SDK для Azure Tools и средств SQL в Visual Studio |
 | Visual Studio <br> программного обеспечения <br>Visual Studio <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https | 443 | Используется для сбора данных об анонимном использовании и журналов ошибок <br><br>Используется для отслеживания проблем блокировки пользовательского интерфейса |
@@ -124,6 +129,16 @@ ms.locfileid: "76114939"
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Используется для компиляции, отправки, просмотра, диагностики и отладки заданий. Также используется для просмотра файлов ADLS, а также отправки и скачивания файлов |
 | Служба упаковки | [account].visualstudio.com <br/> [учетная_запись].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Файлы \*.npmjs.org, \*.nuget.org и \*.nodejs.org требуются только в некоторых сценариях задач построения (например, для установщиков инструментов NuGet или Node), а также если вы планируете использовать в своих веб-каналах общедоступные восходящие источники. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Используется для подключения с помощью Azure DevOps Services |
+| Сообщество разработчиков | sendvsfeedback2.azurewebsites.net/api | https | 443 | Используется для вызова API средства обратной связи сообщества разработчиков (мои вопросы, поиск, голосование, комментарий, отправка, загрузка, возобновление). |
+| Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https | 443 | Используется для вызова API Intellicode |
+| Live Share | \*.liveshare.vsengsaas.visualstudio.com| https | 443 | Используется для вызова API Live Share |
+| Visual Studio Online | \*.online.visualstudio.com | https | 443 | Используется для вызова API Visual Studio Online |
+| Автоматическое получение типа JavaScript | registry.npmjs.org | https | 443 | Используется для установки определений типов TypeScript в целях предоставления IntelliSense для популярных библиотек JavaScript |
+| Служба лицензирования подписок Visual Studio | app.vssps.visualstudio.com/apis/Licensing/ClientRights | https | 443 | Лицензирование для активации через Интернет |
+| Отладчик | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.commsdl.microsoft.com/download/symbols | https | 443 | 1. <br>Используется для скачивания битов отладчика для отладки .NET Core в Unix/MacOS через SSH <br><br>2. <br>Используется для скачивания битов отладчика для удаленной отладки контейнера Windows Docker<br><br> 3. Используется для пошагового выполнения исходного кода .NET Framework <br><br> 4. <br>(Если пользователь соглашается) Используется для скачивания символов, опубликованных на сервере символов nuget.org<br><br> 5. (Если пользователь соглашается) Используется для скачивания символов и двоичных файлов Майкрософт, может также потребоваться для отладки управляемого кода в дампах |
+| Visual Studio Online| \*.online.visualstudio.com | https | 443 | Используется для вызова API Visual Studio Online |
+| Публикация приложения Xamarin Android | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https | 443 | Используется для взаимодействия со службой Google Play Маркет для публикации и отправки приложений Xamarin Android непосредственно из Visual Studio. |
+| Реестр контейнеров Azure | *.azurecr.io | https | 443 | Доступ к реестрам контейнеров, размещенным в Azure, для настройки конвейеров CICD |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Устранение ошибок сети

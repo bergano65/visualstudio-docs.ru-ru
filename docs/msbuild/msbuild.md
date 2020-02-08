@@ -11,23 +11,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a489f9d42930dca88a6de69b8875a4406250f66e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e93e7d30a194df70260ef010b81c3026299f8565
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595063"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923322"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.
+
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений. Visual Studio использует MSBuild, но MSBuild не зависит от Visual Studio. Вызывая *msbuild.exe* для файла проекта или решения, можно контролировать и создавать в продукты в средах без установленного экземпляра Visual Studio.
 
  Visual Studio использует MSBuild для загрузки и сборки управляемых проектов. Файлы проектов в Visual Studio (с расширением *CSPROJ*, *VBPROJ*, *VCXPROJ*) содержат код XML MSBuild, который выполняется при создании проекта с помощью интегрированной среды разработки. Проекты Visual Studio импортируют все необходимые параметры и процессы сборки для выполнения стандартной работы по разработке, но их можно расширять и изменять в Visual Studio или в редакторе XML.
 
  Сведения об MSBuild для C++ см. в разделе [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
- В следующих примерах показаны случаи, когда сборки можно запускать с помощью командной строки MSBuild, а не интегрированной среды разработки Visual Studio.
+ В следующих примерах показаны случаи, когда сборки можно запускать с помощью вызова MSBuild из командной строки, а не интегрированной среды разработки Visual Studio.
 
-- Среда Visual Studio не установлена. ([Скачать MSBuild без Visual Studio.](https://visualstudio.microsoft.com/downloads/?q=build+tools))
+- Среда Visual Studio не установлена. ([Скачайте MSBuild без Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools).)
 
 - Необходимо использовать 64-разрядную версию MSBuild. Эта версия MSBuild обычно не нужна, но она позволяет MSBuild обращаться к большему объему памяти.
 
@@ -43,12 +44,12 @@ ms.locfileid: "75595063"
 
   - пост-обработка. Например, может потребоваться присвоить сборке другой номер версии.
 
-Можно написать код в интегрированной среде разработки Visual Studio, но запускать сборку с помощью MSBuild. В качестве альтернативы можно выполнять сборку кода в интегрированной среде разработки на компьютере разработчика, но использовать командную строку MSBuild для сборки и интеграции кода, полученного от нескольких разработчиков.
+Можно написать код в интегрированной среде разработки Visual Studio, но запускать сборку с помощью MSBuild. В качестве альтернативы можно выполнять сборку кода в интегрированной среде разработки на компьютере разработчика, но запускать MSBuild из командной строки для сборки и интеграции кода, полученного от нескольких разработчиков. Для сборки проектов .NET Core можно также применять [интерфейс командной строки (CLI) .NET Core](/dotnet/core/tools/), использующий MSBuild.
 
 > [!NOTE]
-> С помощью Team Foundation Build можно автоматически компилировать, тестировать и развертывать приложение. Система сборки может автоматически запускать сборку, когда разработчики возвращают код (например, как часть стратегии непрерывной интеграции) или по расписанию (например, выполнять ежедневную ночную тестовую сборку). Team Foundation Build компилирует код с использованием MSBuild. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+> С помощью Azure Pipelines можно автоматически компилировать, тестировать и развертывать приложение. Система сборки может автоматически запускать сборку, когда разработчики возвращают код (например, как часть стратегии непрерывной интеграции) или по расписанию (например, выполнять ежедневную ночную тестовую сборку). Azure Pipelines компилирует код с использованием MSBuild. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
- В этом разделе представлен обзор MSBuild. Вводную информацию см. в статье [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).
+В статье представлен обзор MSBuild. Вводную информацию см. в статье [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Использование MSBuild в командной строке
  Чтобы запустить [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] из командной строки, передайте файл проекта в *MSBuild.exe* с использованием соответствующих параметров командной строки. Параметры командной строки позволяют задавать свойства, выполнять определенные целевые объекты и задавать другие параметры, управляющие процессом построения. Например, используя следующий синтаксис командной строки, можно создать файл *MyProj.proj* со свойством `Configuration`, для которого задается значение `Debug`.
@@ -116,7 +117,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Алгоритм выполнения задачи записан в управляемом коде и сопоставлен с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] с помощью элемента [UsingTask](../msbuild/usingtask-element-msbuild.md). Для создания собственной задачи можно разработать управляемый тип, реализующий интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения о способах создания задач см. в руководстве по [написанию задач](../msbuild/task-writing.md).
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включает стандартные задачи, которые можно изменять в соответствии с требованиями.  Примеры: [Copy](../msbuild/copy-task.md) — копирование файлов, [MakeDir](../msbuild/makedir-task.md) — создание каталогов, [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода Visual C#. Список доступных задач и сведения об их использовании см. в [справочнике по задачам](../msbuild/msbuild-task-reference.md).
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включает стандартные задачи, которые можно изменять в соответствии с требованиями. Примеры: [Copy](../msbuild/copy-task.md) — копирование файлов, [MakeDir](../msbuild/makedir-task.md) — создание каталогов, [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода Visual C#. Список доступных задач и сведения об их использовании см. в [справочнике по задачам](../msbuild/msbuild-task-reference.md).
 
  Задача выполняется в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] путем создания элемента с таким же именем как у задачи в виде дочернего элемента по отношению к элементу [Target](../msbuild/target-element-msbuild.md). Задачи, как правило, принимают параметры, которые передаются как атрибуты элемента. В качестве параметров можно использовать свойства и элементы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Например, с помощью следующего кода вызывается задача [MakeDir](../msbuild/makedir-task.md) и ей передается значение свойства `BuildDir`, объявленного в предыдущем примере.
 
@@ -183,6 +184,8 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [Дополнительные ресурсы](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Содержит список ресурсов сообщества и службы поддержки с дополнительной информацией о MSBuild. |
 
 ## <a name="reference"></a>Справочник
-- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md). Содержит ссылки на разделы, содержащие справочную информацию.
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)\
+ Содержит ссылки на разделы, содержащие справочную информацию.
 
-- [Глоссарий](msbuild-glossary.md) Содержит определения общих терминов MSBuild.
+- [Глоссарий](msbuild-glossary.md)\
+ Содержит определения общих терминов MSBuild.
