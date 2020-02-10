@@ -100,14 +100,14 @@ ms.locfileid: "75406720"
 
    ![Отрисовка, учитывающая параметры монитора (PMA) в Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
 
-Дополнительные сведения см. в записи блога [Улучшенная работа с несколькими мониторами в Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/).
+Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
 
 ### <a name="test-explorer"></a>Обозреватель тестов
 
 **Новые возможности в 16.2**. Мы обновили обозреватель тестов и улучшили работу с крупными наборами тестов, упростили фильтрацию, усовершенствовали обнаружение команд, добавили представления списка воспроизведения со вкладками, а также настраиваемые столбцы для отображения информации о тестах.
 
    ![Снимок экрана, показывающий улучшения пользовательского интерфейса в обозревателе тестов](media/vs-2019/test-explorer-ui.png)
-"
+
 ### <a name="net-core"></a>.NET Core
 
 **Новые возможности в версии 16.3**. Мы включили поддержку .NET Core 3.0. Это кроссплатформенное решение с открытым кодом &mdash;полностью поддерживается корпорацией Майкрософт.
@@ -142,7 +142,7 @@ ms.locfileid: "75406720"
 
 ![Анимация: возможности совместной работы Live Share в Visual Studio 2019](media/vs-2019/live-share.gif)
 
-Дополнительные сведения см. в статьях [Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) и [Live Share now included with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) (Live Share теперь входит в состав Visual Studio 2019).
+Дополнительные сведения см. в статьях [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения) и [Live Share now included with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) (Live Share теперь входит в состав Visual Studio 2019).
 
 ### <a name="integrated-code-reviews"></a>Интегрированная проверка кода
 
@@ -178,8 +178,7 @@ ms.locfileid: "75406720"
 
    ![Новое окно контрольных значений и функция форматирования значений в Visual Studio 2019](media/search-watch-window.png)
 
-Дополнительные сведения см. в статье [Улучшения в Visual Studio 2019: поиск объектов и свойств в окнах "Контрольные значения", "Видимые" и "Локальные"](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
-
+Дополнительные сведения см. в статье [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Улучшения в Visual Studio 2019: поиск объектов и свойств в окнах "Контрольные значения", "Видимые" и "Локальные").
 ### <a name="snapshot-debugger"></a>Отладчик моментальных снимков
 
 Получайте моментальные снимки при выполнении приложения в облаке, чтобы в точности знать, что происходит. (Эта возможность доступна в только в Visual Studio Enterprise.)
@@ -188,7 +187,7 @@ ms.locfileid: "75406720"
 
 Мы добавили поддержку целевых приложений ASP.NET (приложения Core и классические приложения), которые выполняются на виртуальных машинах Azure. Также мы добавили поддержку приложений, которые выполняются в Службе Azure Kubernetes. Средство Snapshot Debugger позволяет значительно сократить затраты времени на устранение проблем, возникающих в рабочих средах.
 
-Дополнительные сведения см. в статье [Представление отладки перехода по времени для Visual Studio Enterprise 2019](../debugger/debug-live-azure-applications.md) и записи блога [](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/).
+Дополнительные сведения см. в статье [Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger](../debugger/debug-live-azure-applications.md) и записи блога [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Представление отладки перехода по времени для Visual Studio Enterprise 2019).
 
 ### <a name="microsoft-edge-insider-support"></a>Поддержка Microsoft Edge Insider
 
