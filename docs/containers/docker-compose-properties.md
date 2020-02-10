@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916931"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826462"
 ---
 # <a name="docker-compose-build-properties"></a>Свойства сборки Docker Compose
 
@@ -109,6 +109,20 @@ services:
 |com.microsoft.visualstudio.debuggee.killprogram|Эта команда служит для остановки отлаживаемой программы, выполняемой в контейнере (при необходимости).|
 |com.microsoft.visualstudio.debuggee.program|Программа, запускаемая при начале отладки. Для приложений .NET Core этот параметр обычно имеет значение **dotnet**.|
 |com.microsoft.visualstudio.debuggee.workingdirectory|Каталог, используемый в качестве начального при запуске отладки. Этот параметр обычно имеет значение */app* для контейнеров Linux или *C:\app* для контейнеров Windows.|
+
+## <a name="customize-the-app-startup-process"></a>Настройка процесса запуска приложения
+
+Вы можете выполнить команду или пользовательский скрипт перед запуском приложения с помощью параметра `entrypoint` и сделать их зависимыми от конфигурации. Например, если требуется настроить сертификат только в режиме **Отладка**, запустив `update-ca-certificates`, но не в режиме **Выпуск**, можно добавить следующий код только в *docker-compose.vs.debug.yml*:
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+Если опустить *docker-compose.vs.release.yml* или *docker-compose.vs.debug.yml*, Visual Studio создает его на основе параметров по умолчанию.
 
 ## <a name="next-steps"></a>Следующие шаги
 

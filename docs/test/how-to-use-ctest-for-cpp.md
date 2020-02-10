@@ -1,18 +1,18 @@
 ---
 title: Использование CTest для C++
-ms.date: 05/01/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: cc0ced6205444e1436ffbffa73ba647a6b682c5c
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 78759a017575916bce3b3fff643cbce8ff303fd6
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720548"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826527"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Использование CTest для C++ в Visual Studio 2017 и более поздних версиях
 
@@ -20,7 +20,7 @@ ms.locfileid: "71720548"
 
 ## <a name="to-write-tests"></a>Написание тестов
 
-Поддержка CMake в Visual Studio не распространяется на систему проектов Visual Studio. Поэтому тесты CTest создаются и настраиваются так же, как в любой среде CMake. Используйте команду `enable_testing()`, чтобы включить тестирование, и команду `add_test()`, чтобы добавить новый тест. Дополнительные сведения о CTest см. в [документации по CMake](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
+Поддержка CMake в Visual Studio не распространяется на систему проектов Visual Studio. Поэтому тесты CTest создаются и настраиваются так же, как в любой среде CMake. Используйте команду `enable_testing()`, чтобы включить тестирование, и команду `add_test()` или `gtest_discover_tests()`, чтобы добавить новый тест. Дополнительные сведения о CTest см. в [документации по CMake](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
 
 Дополнительные сведения об использовании CMake в Visual Studio см. в статье о [проектах CMake в Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 
