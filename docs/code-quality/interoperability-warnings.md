@@ -10,24 +10,24 @@ helpviewer_keywords:
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f717c4bdccd662764b73530d3ae416f8b95b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1eb65f52df4b27837c00b7557db0c5e15e6c187
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649287"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091760"
 ---
 # <a name="interoperability-warnings"></a>предупреждения взаимодействия
 
 Предупреждения взаимодействия поддерживают взаимодействие с клиентами COM.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
 
-| Правило | Описание |
+| Правило | Description |
 | - | - |
 | [CA1400: необходимо наличие точек входа P/Invoke](../code-quality/ca1400.md) | Открытый или защищенный метод, помеченный атрибутом System.Runtime.InteropServices.DllImportAttribute. Не удается найти неуправляемую библиотеку либо не удается сопоставить метод функции в библиотеке. |
 | [CA1401: методы P/Invoke не должны быть видимыми](../code-quality/ca1401.md) | Открытый или защищенный метод в открытом типе имеет атрибут System. Runtime. InteropServices. DllImportAttribute (также реализуется с помощью ключевого слова Declare в Visual Basic). Такие методы не следует делать видимыми. |
@@ -35,7 +35,7 @@ ms.locfileid: "72649287"
 | [CA1403: типы с автомакетом не должны быть видимыми для COM](../code-quality/ca1403.md) | Тип значения, видимый для COM, помечен с помощью атрибута System. Runtime. InteropServices. StructLayoutAttribute, установленного в LayoutKind. Auto. Макет этих типов может изменяться между версиями .NET, что приведет к нарушению работы клиентов COM, которые предполагают наличие определенного макета. |
 | [CA1404: вызывайте GetLastError сразу после P/Invoke](../code-quality/ca1404.md) | Выполняется вызов метода Marshal. GetLastWin32Error или эквивалентной функции [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] GetLastError, а предыдущий вызов не является методом вызова неуправляемого кода. |
 | [CA1405: базовые типы, относящиеся к типу видимых COM-клиенту, должны быть видимыми для COM](../code-quality/ca1405.md) | Тип, видимый для модели COM, наследует от типа, который не является видимым для COM. |
-| [CA1406: не используйте аргументы Int64 для клиентов Visual Basic 6](../code-quality/ca1406.md) | Visual Basic 6 COM-клиентов не может получить доступ к 64-разрядным целым числам. |
+| [CA1406: не используйте аргументы Int64 для клиентов Visual Basic 6](../code-quality/ca1406.md) | Клиенты COM Visual Basic 6 не может получить доступ к 64-разрядных целых чисел. |
 | [CA1407: не используйте статические члены в видимых COM типах](../code-quality/ca1407.md) | Модель COM не поддерживает статические методы. |
 | [CA1408: не используйте AutoDual ClassInterfaceType](../code-quality/ca1408.md) | Типы, использующие сдвоенный интерфейс, позволяют клиентам выполнять привязку к определенному макету интерфейса. Все изменения в будущей версии макета типа и в базовых типах приведут к нарушению работы COM-клиентов, связанных с интерфейсом. По умолчанию, если атрибут ClassInterfaceAttribute не указан, используется только диспетчерский интерфейс. |
 | [CA1409: видимые COM-типы должны быть создаваемыми](../code-quality/ca1409.md) | Ссылочный тип, который специально помечен как видимый для модели COM, содержит открытый параметризованный конструктор, но не содержит открытого конструктора по умолчанию (без параметров). COM-клиенты не могут создавать объекты типа, не содержащего открытый конструктор по умолчанию. |

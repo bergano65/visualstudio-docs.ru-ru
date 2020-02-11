@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: jillfra
+ms.author: mikejo
 author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5916121a555531672cf70280051f02a889f611ac
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649564"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091773"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Ошибки средства FxCopCmd
 
@@ -23,7 +23,7 @@ FxCopCmd не учитывает все ошибки как неустраним
 
 В следующей таблице описаны коды ошибок, возвращаемые средством FxCopCmd:
 
-|Error|Числовое значение|
+|Ошибка|Числовое значение|
 |-----------|-------------------|
 |Ошибок нет|0x0|
 |Ошибка анализа|0x1|
@@ -52,6 +52,6 @@ FxCopCmd не учитывает все ошибки как неустраним
 > [!NOTE]
 > Сборка кода возврата FxCopCmd **ссылается на ошибку** 0x200 сама по себе является предупреждением, а не ошибкой. Этот код возврата указывает, что отсутствуют косвенные ссылки, но это FxCopCmd удалось справиться с ними. Предупреждение означает, что есть вероятность, что некоторые результаты анализа могут быть скомпрометированы. Обрабатывать **ссылки на сборки** в виде ошибки, если она сочетается с любым другим кодом возврата.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Ошибки, возникающие при анализе кода](../code-quality/code-analysis-application-errors.md)
