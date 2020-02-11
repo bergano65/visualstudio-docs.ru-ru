@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596870"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923270"
 ---
 # <a name="build-page-project-designer-c"></a>Страница "Построение" в конструкторе проектов (C#)
 
@@ -65,6 +65,12 @@ ms.locfileid: "75596870"
 Указывает целевой процессор для выходного файла. Выберите **x86** для любого 32-разрядного Intel-совместимого процессора, **x64** для любого 64-разрядного Intel-совместимого процессора, **ARM** для процессоров ARM или **Любой ЦП**, чтобы указать, что приемлем любой процессор. **Любой ЦП** является значением по умолчанию для проектов, так как обеспечивает выполнение приложения на самом обширном спектре оборудования.
 
 Дополнительные сведения см. в разделе [/platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**Допускает значения NULL**
+
+Указывает допускающий значение NULL контекст C# для всего проекта. Этот параметр пользовательского интерфейса появился в Visual Studio 16.5 и доступен только для проектов, использующих C# 8.0 или более поздней версии.
+
+Дополнительные сведения см. в разделе [Контексты, допускающие значения NULL](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Предпочитать 32-разрядную**
 

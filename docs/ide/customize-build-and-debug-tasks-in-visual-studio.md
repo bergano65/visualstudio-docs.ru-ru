@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d10b02908c63d177149f9113c37f71813ee09dc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567441"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542689"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Настройка задач сборки и отладки для режима разработки "Открытая папка"
 
@@ -224,6 +224,8 @@ bin:
 |`${fileExtname}`| Расширение выбранного файла (например, *JS*).|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Настройка отладки с помощью launch.vs.json
+
+Сведения о настройке проектов CMake для отладки см. в разделе [Настройка сеансов отладки CMake](/cpp/build/configure-cmake-debugging-sessions).
 
 1. Чтобы настроить отладку для базы кода, выберите в контекстном меню **обозревателя решений** пункт **Параметры отладки и запуска**. Также его можно открыть, щелкнув исполняемый файл правой кнопкой мыши.
 
