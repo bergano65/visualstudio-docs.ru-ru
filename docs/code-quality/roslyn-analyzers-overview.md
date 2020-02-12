@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587281"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144771"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Обзор анализаторов исходного кода
 
@@ -28,7 +28,7 @@ ms.locfileid: "75587281"
 - Вы можете установить дополнительные анализаторы в виде пакета NuGet или расширения Visual Studio. Пример:
 
   - [Анализаторы FxCop](../code-quality/install-fxcop-analyzers.md), рекомендованные корпорацией Майкрософт
-  - Анализаторы сторонних разработчиков, такие как [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) и [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - Анализаторы сторонних разработчиков, такие как [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) и [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 Если анализатор обнаруживает нарушения правил, они помечаются в редакторе кода (*волнистая линия* под соответствующим кодом) и в окне "Список ошибок".
 

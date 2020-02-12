@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027387"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091812"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Учебник. Сведения об отладке кода C++ с помощью Visual Studio
 
@@ -74,9 +74,11 @@ ms.locfileid: "77027387"
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual C++** и выберите **Рабочий стол Windows**. В средней области выберите **Консольное приложение Windows**. Назовите проект *get-started-debugging*.
 
-     Если шаблон проекта **Консольное приложение** отсутствует, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**.
+     Если шаблон проекта **Консольное приложение** отсутствует, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.
 
-     Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.
+4. Нажмите кнопку **ОК**.
+
+   Новый проект открывается в Visual Studio.
 
 ::: moniker-end
 
