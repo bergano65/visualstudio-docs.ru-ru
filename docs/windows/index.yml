@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Документация по Visual Studio
-summary: Узнайте, как с помощью Visual Studio разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
+summary: Узнайте, как с помощью Visual Studio разрабатывать приложения, службы и инструменты для платформ и устройств на выбранном вами языке.
 brand: visual-studio
 metadata:
   title: Документация по Visual Studio | Документация Майкрософт
@@ -127,7 +127,7 @@ additionalContent:
     - title: Разработка
       summary: Написание и администрирование кода и в редакторе кода.
       url: ../ide/index-writing-code.yml
-    - title: Построить
+    - title: Построение
       summary: Компиляция и сборка исходного кода.
       url: ../ide/compiling-and-building-in-visual-studio.md
     - title: Отладка
@@ -136,7 +136,7 @@ additionalContent:
     - title: Проверка
       summary: Запускайте тесты в своих проектах.
       url: ../test/improve-code-quality.md
-    - title: Развернуть
+    - title: Развертывание
       summary: Совместное использование приложений и кода с помощью инструментов веб-развертывания, InstallShield, NuGet, непрерывной интеграции и др.
       url: ../deployment/index.yml
     - title: Управление версиями
@@ -151,7 +151,7 @@ additionalContent:
     - title: Расширения
       summary: Включение собственных функций в среду разработки Visual Studio для оптимизации разработки.
       url: ../extensibility/index.md
-    - title: Data
+    - title: Данные
       summary: Создание приложений для обработки данных, которые могут подключаться к любой локальной или облачной базе данных или службе.
       url: ../data-tools/accessing-data-in-visual-studio.md
     - title: Совместная работа
