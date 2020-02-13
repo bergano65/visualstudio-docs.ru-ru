@@ -2,7 +2,7 @@
 title: Изменение Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапном изменении среды Visual Studio.
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922877"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125355"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio путем добавления или удаления рабочих нагрузок и компонентов
 
@@ -123,6 +123,9 @@ Visual Studio можно легко изменить таким образом, 
 ::: moniker range="vs-2019"
 
  Рабочие нагрузки содержат функции, которые требуются для используемого языка программирования или платформы. С помощью рабочих нагрузок можно изменить среду Visual Studio так, чтобы она поддерживала выполнение нужных задач в любое время.
+
+ > [!TIP]
+>Дополнительные сведения о наборах средств и компонентов, необходимых для разработки, см. в разделе [Рабочие нагрузки Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
 
 1. В Visual Studio Installer перейдите на вкладку **Рабочие нагрузки**, а затем выберите или отмените выбор нужных рабочих нагрузок.
 
