@@ -5,18 +5,18 @@ description: Список выпущенных версий и номеров с
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 01/31/2020
+ms.date: 02/11/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 978ea63149223738e39be7035b5af6a5f7087591
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 5be0303d89ba33a56c22f8a149e42c107094a04b
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922935"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155219"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -28,6 +28,7 @@ ms.locfileid: "76922935"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.5 | Выпуск | 11 февраля 2020 г. | 16.4.29806.167 |
 | 16.4.4 | Выпуск | 31 января 2020 г. | 16.4.29728.190 |
 | 16.5.0 | Предварительная версия 2 | 22 января 2020 г. | 16.5.29721.120 |
 | 16.4.3 | Выпуск | 14 января 2020 г. | 16.4.29709.97 |
@@ -122,6 +123,7 @@ ms.locfileid: "76922935"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.20 | Выпуск | 11 февраля 2020 г. | 15.9.28307.1033 |
 | 15.9.19 | Выпуск | 14 января 2020 г. | 15.9.28307.1000 |
 | 15.0.28 | Выпуск | 11 декабря 2019 г. | 15.0.26228.102 |
 | 15.9.18 | Выпуск | 10 декабря 2019 г. | 15.9.28307.960 |
