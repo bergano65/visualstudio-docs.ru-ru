@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0e5895f7846a5c2aff6abef816548dd0a74a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652499"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596285"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
@@ -162,9 +162,9 @@ ms.locfileid: "72652499"
 
 |Команды|Сочетания клавиш|
 |--------------|-|
-|Edit.Copy|**CTRL+C**<br /><br /> или<br /><br /> **CTRL+INS**|
-|Edit.Cut|**CTRL+X**<br /><br /> или<br /><br /> **SHIFT+DELETE**|
-|Edit.CycleClipboardRing|**CTRL+SHIFT+V**<br /><br /> или<br /><br /> **CTRL+SHIFT+INS**|
+|Edit.Copy|**CTRL+C**<br /><br /> or<br /><br /> **CTRL+INS**|
+|Edit.Cut|**CTRL+X**<br /><br /> or<br /><br /> **SHIFT+DELETE**|
+|Edit.CycleClipboardRing|**CTRL+SHIFT+V**<br /><br /> or<br /><br /> **CTRL+SHIFT+INS**|
 |Edit.Delete|**Удалить**|
 |Edit.Duplicate|**CTRL+D**|
 |Edit.Find|**CTRL+F**|
@@ -194,11 +194,11 @@ ms.locfileid: "72652499"
 |Edit.NextBookmark|**CTRL+K, CTRL+N**|
 |Edit.NextBookmarkInFolder|**CTRL+SHIFT+K, CTRL+SHIFT+N**|
 |Edit.OpenFile|**CTRL+SHIFT+G** (Открывается файл, на имя которого наведен курсор)|
-|Edit.Paste|**CTRL+V**<br /><br /> или<br /><br /> **SHIFT+INS**|
+|Edit.Paste|**CTRL+V**<br /><br /> or<br /><br /> **SHIFT+INS**|
 |Edit.PreviousBookmark|**CTRL+K, CTRL+P**|
 |Edit.PreviousBookmarkInFolder|**CTRL+SHIFT+K, CTRL+SHIFT+P**|
 |Edit.QuickFindSymbol|**SHIFT+ALT+F12**|
-|Edit.Redo|**CTRL+Y**<br /><br /> или<br /><br /> **CTRL+SHIFT+Z**<br /><br /> или<br /><br /> **SHIFT+ALT+BACKSPACE**|
+|Edit.Redo|**CTRL+Y**<br /><br /> or<br /><br /> **CTRL+SHIFT+Z**<br /><br /> or<br /><br /> **SHIFT+ALT+BACKSPACE**|
 |Edit.RefreshRemoteReferences|**CTRL+SHIFT+J**|
 |Edit.Replace|**CTRL+H**|
 |Edit.ReplaceinFiles|**CTRL+SHIFT+H**|
@@ -216,7 +216,7 @@ ms.locfileid: "72652499"
 |Edit.SizeControlUpGrid|**SHIFT+СТРЕЛКА ВВЕРХ**|
 |Edit.StopSearch|**ALT+F3, S**|
 |Edit.SurroundWith|**CTRL+K, CTRL+S**|
-|Edit.Undo|**CTRL+Z**<br /><br /> или<br /><br /> **ALT+BACKSPACE**|
+|Edit.Undo|**CTRL+Z**<br /><br /> or<br /><br /> **ALT+BACKSPACE**|
 
 ### <a name="bkmk_editorContext"></a> Контекстные меню редактора
 
@@ -227,7 +227,7 @@ ms.locfileid: "72652499"
 |EditorContextMenus.CodeWindow.Execute|**CTRL+ALT+F5**|
 |EditorContextMenus.CodeWindow.GoToView|**CTRL+M, CTRL+G**|
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O** (латинская буква O)|
-|EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> или<br /><br /> **CTRL+K, T**|
+|EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> or<br /><br /> **CTRL+K, T**|
 
 ### <a name="bkmk_file"></a> Файл
 
@@ -300,33 +300,33 @@ ms.locfileid: "72652499"
 
 |Команды|Сочетания клавиш|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL+[** , **O** (латинская буква O)<br /><br /> или<br /><br /> **CTRL+[** , **CTRL+O** (латинская буква O)|
-|SolutionExplorer.PendingChangesFilter|**CTRL+[** , **P**<br /><br /> или<br /><br /> **CTRL+[** , **CTRL+P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL+[** , **S**<br /><br /> или<br /><br /> **CTRL+[** , **CTRL+S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL+[** , **O** (латинская буква O)<br /><br /> or<br /><br /> **CTRL+[** , **CTRL+O** (латинская буква O)|
+|SolutionExplorer.PendingChangesFilter|**CTRL+[** , **P**<br /><br /> or<br /><br /> **CTRL+[** , **CTRL+P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL+[** , **S**<br /><br /> or<br /><br /> **CTRL+[** , **CTRL+S**|
 
 ### <a name="bkmk_team"></a> Команда
 
 |Команды|Сочетания клавиш|
 |--------------| - |
-|Team.Git.GoToGitBranches|**CTRL+0** (ноль), **CTRL+N**<br /><br /> или<br /><br /> **CTRL+0, N**|
-|Team.Git.GoToGitChanges|**CTRL+0** (ноль), **CTRL+G**<br /><br /> или<br /><br /> **CTRL+0, G**|
-|Team.Git.GoToGitCommits|**CTRL+0** (ноль), **CTRL+O** (латинская буква O)<br /><br /> или<br /><br /> **CTRL+0, O**|
+|Team.Git.GoToGitBranches|**CTRL+0** (ноль), **CTRL+N**<br /><br /> or<br /><br /> **CTRL+0, N**|
+|Team.Git.GoToGitChanges|**CTRL+0** (ноль), **CTRL+G**<br /><br /> or<br /><br /> **CTRL+0, G**|
+|Team.Git.GoToGitCommits|**CTRL+0** (ноль), **CTRL+O** (латинская буква O)<br /><br /> or<br /><br /> **CTRL+0, O**|
 |Team.TeamExplorerSearch|**CTRL+'**|
 
 ### <a name="bkmk_TFcontext"></a> Контекстные меню Team Foundation
 
 |Команды|Сочетания клавиш|
 |--------------| - |
-|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL+0** (ноль), **CTRL+B**<br /><br /> или<br /><br /> **CTRL+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL+0** (ноль), **CTRL+C**<br /><br /> или<br /><br /> **CTRL+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL+0** (ноль), **CTRL+D**<br /><br /> или<br /><br /> **CTRL+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**CTRL+0** (ноль), **CTRL+H**<br /><br /> или<br /><br /> **CTRL+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL+0** (ноль), **CTRL+M**<br /><br /> или<br /><br /> **CTRL+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL+0** (ноль), **CTRL+P**<br /><br /> или<br /><br /> **CTRL+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**CTRL+0** (ноль), **CTRL+R**<br /><br /> или<br /><br /> **CTRL+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL+0** (ноль), **CTRL+S**<br /><br /> или<br /><br /> **CTRL+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0** (ноль), **CTRL+A**<br /><br /> или<br /><br /> **CTRL+0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0** (ноль), **CTRL+W**<br /><br /> или<br /><br /> **CTRL+0, W**|
+|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL+0** (ноль), **CTRL+B**<br /><br /> or<br /><br /> **CTRL+0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL+0** (ноль), **CTRL+C**<br /><br /> or<br /><br /> **CTRL+0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL+0** (ноль), **CTRL+D**<br /><br /> or<br /><br /> **CTRL+0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**CTRL+0** (ноль), **CTRL+H**<br /><br /> or<br /><br /> **CTRL+0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL+0** (ноль), **CTRL+M**<br /><br /> or<br /><br /> **CTRL+0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL+0** (ноль), **CTRL+P**<br /><br /> or<br /><br /> **CTRL+0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**CTRL+0** (ноль), **CTRL+R**<br /><br /> or<br /><br /> **CTRL+0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL+0** (ноль), **CTRL+S**<br /><br /> or<br /><br /> **CTRL+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0** (ноль), **CTRL+A**<br /><br /> or<br /><br /> **CTRL+0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0** (ноль), **CTRL+W**<br /><br /> or<br /><br /> **CTRL+0, W**|
 
 ### <a name="bkmk_test"></a> Тест
 
@@ -370,12 +370,12 @@ ms.locfileid: "72652499"
 |View.CallHierarchy|**CTRL+ALT+K**|
 |View.ClassView|**CTRL+SHIFT+C**|
 |View.ClassViewGoToSearchCombo|**CTRL+K, CTRL+V**|
-|View.CodeDefinitionWindow|**CTRL+\\, D**<br /><br /> или<br /><br /> **CTRL+\\, CTRL+D**|
+|View.CodeDefinitionWindow|**CTRL+\\, D**<br /><br /> or<br /><br /> **CTRL+\\, CTRL+D**|
 |View.CommandWindow|**CTRL+ALT+A**|
 |View.DataSources|**SHIFT+ALT+D**|
 |View.DocumentOutline|**CTRL+ALT+T**|
 |View.EditLabel|**F2**|
-|View.ErrorList|**CTRL+\\, E**<br /><br /> или<br /><br /> **CTRL+\\, CTRL+E**|
+|View.ErrorList|**CTRL+\\, E**<br /><br /> or<br /><br /> **CTRL+\\, CTRL+E**|
 |View.F#Interactive|**CTRL+ALT+F**|
 |View.FindSymbolResults|**CTRL+ALT+F12**|
 |View.Forward|**ALT+СТРЕЛКА ВПРАВО** (Работает не так, как View.NavigateForward в текстовом редакторе)|
@@ -384,7 +384,7 @@ ms.locfileid: "72652499"
 |View.NavigateBackward|**CTRL+-**|
 |View.NavigateForward|**CTRL+SHIFT+-**|
 |View.NextError|**CTRL+SHIFT+F12**|
-|View.Notifications|**CTRL+W, N**<br /><br /> или<br /><br /> **CTRL+W, CTRL+N**|
+|View.Notifications|**CTRL+W, N**<br /><br /> or<br /><br /> **CTRL+W, CTRL+N**|
 |View.ObjectBrowser|**CTRL+ALT+J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL+K, CTRL+R**|
 |View.Output|**CTRL+ALT+O** (латинская буква O)|
@@ -393,10 +393,10 @@ ms.locfileid: "72652499"
 |View.PropertyPages|**SHIFT+F4**|
 |View.ResourceView|**CTRL+SHIFT+E**|
 |View.ServerExplorer|**CTRL+ALT+S**|
-|View.ShowSmartTag|**SHIFT+ALT+F10**<br /><br /> или<br /><br /> **CTRL+.**|
+|View.ShowSmartTag|**SHIFT+ALT+F10**<br /><br /> or<br /><br /> **CTRL+.**|
 |View.SolutionExplorer|**CTRL+ALT+L**|
 |View.SQLServerObjectExplorer|**CTRL+\\, CTRL+S**|
-|View.TaskList|**CTRL+\\, T**<br /><br /> или<br /><br /> **CTRL+\\, CTRL+T**|
+|View.TaskList|**CTRL+\\, T**<br /><br /> or<br /><br /> **CTRL+\\, CTRL+T**|
 |View.TfsTeamExplorer|**CTRL+\\, CTRL+M**|
 |View.Toolbox|**CTRL+ALT+X**|
 |View.UMLModelExplorer|**CTRL+\\, CTRL+U**|
@@ -421,14 +421,14 @@ ms.locfileid: "72652499"
 |Window.NextDocumentWindowNav|**CTRL+TAB**|
 |Window.NextPane|**ALT+F6**|
 |Window.NextSplitPane|**F6**|
-|Window.NextTab|**CTRL+ALT+PGDN**<br /><br /> или<br /><br /> **CTRL+PGDN**|
+|Window.NextTab|**CTRL+ALT+PGDN**<br /><br /> or<br /><br /> **CTRL+PGDN**|
 |Window.NextTabandAddtoSelection|**CTRL+SHIFT+ALT+PGDN**|
 |Window.NextToolWindowNav|**ALT+F7**|
 |Window.PreviousDocumentWindow|**CTRL+SHIFT+F6**|
 |Window.PreviousDocumentWindowNav|**CTRL+SHIFT+TAB**|
 |Window.PreviousPane|**SHIFT+ALT+F6**|
 |Window.PreviousSplitPane|**SHIFT+F6**|
-|Window.PreviousTab|**CTRL+ALT+PGUP**<br /><br /> или<br /><br /> **CTRL+PGUP**|
+|Window.PreviousTab|**CTRL+ALT+PGUP**<br /><br /> or<br /><br /> **CTRL+PGUP**|
 |Window.PreviousTabandAddtoSelection|**CTRL+SHIFT+ALT+PGUP**|
 |Window.PreviousToolWindowNav|**SHIFT+ALT+F7**|
 |Window.QuickLaunch|**CTRL+Q**|
@@ -528,7 +528,7 @@ ms.locfileid: "72652499"
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**CTRL+SHIFT+K**<br /><br /> или<br /><br /> **CTRL+E, C**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**CTRL+SHIFT+K**<br /><br /> or<br /><br /> **CTRL+E, C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Удалить**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
@@ -536,7 +536,7 @@ ms.locfileid: "72652499"
 
 |Команды|Сочетания клавиш|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|Нет|
+|Debug.Graphics.CaptureFrame|Отсутствуют|
 |Graphics.MovePixelSelectionDown|**SHIFT+ALT+СТРЕЛКА ВНИЗ**|
 |Graphics.MovePixelSelectionLeft|**SHIFT+ALT+СТРЕЛКА ВЛЕВО**|
 |Graphics.MovePixelSelectionRight|**SHIFT+ALT+СТРЕЛКА ВПРАВО**|
@@ -630,10 +630,10 @@ ms.locfileid: "72652499"
 |Команды|Сочетания клавиш|
 |--------------| - |
 |CommitAllEdits|**SHIFT+ALT+U**|
-|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> или<br /><br /> **CTRL+R, CTRL+E**|
-|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> или<br /><br /> **CTRL+R, CTRL+Q**|
-|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> или<br /><br /> **CTRL+R, CTRL+M**|
-|SQL.Rename|**F2**<br /><br /> или<br /><br /> **CTRL+R, R**<br /><br /> или<br /><br /> **CTRL+R, CTRL+R**|
+|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> or<br /><br /> **CTRL+R, CTRL+E**|
+|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> or<br /><br /> **CTRL+R, CTRL+Q**|
+|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> or<br /><br /> **CTRL+R, CTRL+M**|
+|SQL.Rename|**F2**<br /><br /> or<br /><br /> **CTRL+R, R**<br /><br /> or<br /><br /> **CTRL+R, CTRL+R**|
 |ViewFileInScriptPanel|**SHIFT+ALT+PGDN**|
 
 ## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Средства работы с данными Microsoft SQL Server, редактор T-SQL
@@ -642,10 +642,10 @@ ms.locfileid: "72652499"
 |--------------| - |
 |CommitAllEdits|**SHIFT+ALT+U**|
 |SQL.ExecuteWithDebugger|**ALT+F5**|
-|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> или<br /><br /> **CTRL+R, CTRL+E**|
-|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> или<br /><br /> **CTRL+R, CTRL+Q**|
-|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> или<br /><br /> **CTRL+R, CTRL+M**|
-|SQL.Rename|**F2**<br /><br /> или<br /><br /> **CTRL+R, R**<br /><br /> или<br /><br /> **CTRL+R, CTRL+R**|
+|SQL.ExpandWildcards|**CTRL+R, E**<br /><br /> or<br /><br /> **CTRL+R, CTRL+E**|
+|SQL.FullyqualifyNames|**CTRL+R, Q**<br /><br /> or<br /><br /> **CTRL+R, CTRL+Q**|
+|SQL.MovetoSchema|**CTRL+R, M**<br /><br /> or<br /><br /> **CTRL+R, CTRL+M**|
+|SQL.Rename|**F2**<br /><br /> or<br /><br /> **CTRL+R, R**<br /><br /> or<br /><br /> **CTRL+R, CTRL+R**|
 |SQL.TSqlEditorCancelQuery|**ALT+BREAK**|
 |SQL.TSqlEditorExecuteQuery|**CTRL+SHIFT+E**|
 |SQL.TSqlEditorResultsAsFile|**CTRL+D, F**|
@@ -782,7 +782,7 @@ ms.locfileid: "72652499"
 
 | Команды | Сочетания клавиш |
 | - | - |
-| Edit.BreakLine | **ВВОД**<br /><br /> или<br /><br /> **SHIFT+ВВОД** |
+| Edit.BreakLine | **ВВОД**<br /><br /> or<br /><br /> **SHIFT+ВВОД** |
 | Edit.CharLeft | **СТРЕЛКА ВЛЕВО** |
 | Edit.CharLeftExtend | **SHIFT+СТРЕЛКА ВЛЕВО** |
 | Edit.CharLeftExtendColumn | **SHIFT+ALT+СТРЕЛКА ВЛЕВО** |
@@ -796,10 +796,10 @@ ms.locfileid: "72652499"
 | Edit.CollapseToDefinitions | **CTRL+M, CTRL+O** (латинская буква O) |
 | Edit.ContractSelection | **SHIFT+ALT+-** |
 | Edit.CommentSelection | **CTRL+K, CTRL+C** |
-| Edit.CompleteWord | **CTRL+ПРОБЕЛ**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВПРАВО** |
+| Edit.CompleteWord | **CTRL+ПРОБЕЛ**<br /><br /> or<br /><br /> **ALT+СТРЕЛКА ВПРАВО** |
 | Edit.CopyParameterTip | **CTRL+SHIFT+ALT+C** |
 | Edit.DecreaseFilterLevel | **ALT+,** |
-| Edit.DeleteBackwards | **BACKSPACE**<br /><br /> или<br /><br /> **SHIFT+BKSPCE** |
+| Edit.DeleteBackwards | **BACKSPACE**<br /><br /> or<br /><br /> **SHIFT+BKSPCE** |
 | Edit.DeleteHorizontalWhiteSpace | **CTRL+K, CTRL+\\** |
 | Edit.DocumentEnd | **CTRL+END** |
 | Edit.DocumentEndExtend | **CTRL+SHIFT+END** |
@@ -811,7 +811,7 @@ ms.locfileid: "72652499"
 | Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **CTRL+K, CTRL+D** |
 | Edit.FormatSelection | **CTRL+K, CTRL+F** |
-| Edit.GotoAll | **CTRL+T**<br /><br /> или<br /><br /> **CTRL+,** |
+| Edit.GotoAll | **CTRL+T**<br /><br /> or<br /><br /> **CTRL+,** |
 | Edit.GotoBrace | **CTRL+]** |
 | Edit.GotoBraceExtend | **CTRL+SHIFT+]** |
 | Edit.GotoRecent | **CTRL + T, R** |
@@ -956,8 +956,8 @@ ms.locfileid: "72652499"
 |Format.CenterVertical|**CTRL+F9**|
 |Format.CheckMnemonics|**CTRL+M**|
 |Format.SizetoContent|**SHIFT+F7**|
-|Format.SpaceAcross|**ALT+СТРЕЛКА ВПРАВО**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВЛЕВО**|
-|Format.SpaceDown|**ALT+СТРЕЛКА ВВЕРХ**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВНИЗ**|
+|Format.SpaceAcross|**ALT+СТРЕЛКА ВПРАВО**<br /><br /> or<br /><br /> **ALT+СТРЕЛКА ВЛЕВО**|
+|Format.SpaceDown|**ALT+СТРЕЛКА ВВЕРХ**<br /><br /> or<br /><br /> **ALT+СТРЕЛКА ВНИЗ**|
 |Format.TabOrder|**CTRL+D**|
 |Format.TestDialog|**CTRL+T**|
 |Format.ToggleGuides|**CTRL+G**|
@@ -983,14 +983,14 @@ ms.locfileid: "72652499"
 |Image.MagnificationTool|**CTRL+M**|
 |Image.Magnify|**CTRL+SHIFT+M**|
 |Image.NewImageType|**Вставить**|
-|Image.NextColor|**CTRL+]**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВПРАВО**|
-|Image.NextRightColor|**CTRL+SHIFT+]**<br /><br /> или<br /><br /> **CTRL+SHIFT+СТРЕЛКА ВПРАВО**|
+|Image.NextColor|**CTRL+]**<br /><br /> or<br /><br /> **CTRL+СТРЕЛКА ВПРАВО**|
+|Image.NextRightColor|**CTRL+SHIFT+]**<br /><br /> or<br /><br /> **CTRL+SHIFT+СТРЕЛКА ВПРАВО**|
 |Image.OutlinedEllipseTool|**SHIFT+ALT+P**|
 |Image.OutlinedRectangleTool|**SHIFT+ALT+R**|
 |Image.OutlinedRoundedRectangleTool|**SHIFT+ALT+W**|
 |Image.PencilTool|**CTRL+I**|
-|Image.PreviousColor|**CTRL+[**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВЛЕВО**|
-|Image.PreviousRightColor|**CTRL+SHIFT+[**<br /><br /> или<br /><br /> **CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|
+|Image.PreviousColor|**CTRL+[**<br /><br /> or<br /><br /> **CTRL+СТРЕЛКА ВЛЕВО**|
+|Image.PreviousRightColor|**CTRL+SHIFT+[**<br /><br /> or<br /><br /> **CTRL+SHIFT+СТРЕЛКА ВЛЕВО**|
 |Image.RectangleSelectionTool|**SHIFT+ALT+S**|
 |Image.RectangleTool|**ALT+R**|
 |Image.Rotate90Degrees|**CTRL+SHIFT+H**|
@@ -1001,8 +1001,8 @@ ms.locfileid: "72652499"
 |Image.SmallerBrush|**CTRL+-**|
 |Image.TextTool|**CTRL+T**|
 |Image.UseSelectionasBrush|**CTRL+U**|
-|Image.ZoomIn|**CTRL+SHIFT+.**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВВЕРХ**|
-|Image.ZoomOut|**CTRL+SHIFT+,**<br /><br /> или<br /><br /> **CTRL+СТРЕЛКА ВНИЗ**|
+|Image.ZoomIn|**CTRL+SHIFT+.**<br /><br /> or<br /><br /> **CTRL+СТРЕЛКА ВВЕРХ**|
+|Image.ZoomOut|**CTRL+SHIFT+,**<br /><br /> or<br /><br /> **CTRL+СТРЕЛКА ВНИЗ**|
 
 ## <a name="vc-string-editor"></a>Редактор строк VC
 
@@ -1094,27 +1094,27 @@ ms.locfileid: "72652499"
 
 |Команды|Сочетания клавиш|
 |--------------| - |
-|Edit.CompleteWord|**CTRL+K, W**<br /><br /> или<br /><br /> **CTRL+K, CTRL+W**<br /><br /> или<br /><br /> **CTRL+ПРОБЕЛ**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВПРАВО**|
+|Edit.CompleteWord|**CTRL+K, W**<br /><br /> or<br /><br /> **CTRL+K, CTRL+W**<br /><br /> or<br /><br /> **CTRL+ПРОБЕЛ**<br /><br /> or<br /><br /> **ALT+СТРЕЛКА ВПРАВО**|
 |Edit.DecreaseFilterLevel|**ALT+,**|
 |Edit.IncreaseFilterLevel|**ALT+.**|
-|Edit.ListMembers|**CTRL+K, L**<br /><br /> или<br /><br /> **CTRL+K, CTRL+L**<br /><br /> или<br /><br /> **CTRL+J**|
-|Edit.ParameterInfo|**CTRL+K, P**<br /><br /> или<br /><br /> **CTRL+K, CTRL+P**<br /><br /> или<br /><br /> **CTRL+SHIFT+ПРОБЕЛ**|
-|Edit.QuickInfo|**CTRL+K, I**<br /><br /> или<br /><br /> **CTRL+K, CTRL+I**|
-|WorkflowDesigner.Collapse|**CTRL+E, CTRL+C**<br /><br /> или<br /><br /> **CTRL+E, C**|
-|WorkflowDesigner.CollapseAll|или|
-|WorkflowDesigner.ConnectNodes|**CTRL+E, CTRL+F**<br /><br /> или<br /><br /> **CTRL+E, F**|
-|WorkflowDesigner.CreateVariable|**CTRL+E, CTRL+N**<br /><br /> или<br /><br /> **CTRL+E, N**|
-|WorkflowDesigner.ExpandAll|**CTRL+E, CTRL+X**<br /><br /> или<br /><br /> **CTRL+E, X**|
-|WorkflowDesigner.ExpandInPlace|**CTRL+E, CTRL+E**<br /><br /> или<br /><br /> **CTRL+E, E**|
-|WorkflowDesigner.GoToParent|**CTRL+E, CTRL+P**<br /><br /> или<br /><br /> **CTRL+E, P**|
-|WorkflowDesigner.MoveFocus|**CTRL+E, CTRL+M**<br /><br /> или<br /><br /> **CTRL+E, M**|
+|Edit.ListMembers|**CTRL+K, L**<br /><br /> or<br /><br /> **CTRL+K, CTRL+L**<br /><br /> or<br /><br /> **CTRL+J**|
+|Edit.ParameterInfo|**CTRL+K, P**<br /><br /> or<br /><br /> **CTRL+K, CTRL+P**<br /><br /> or<br /><br /> **CTRL+SHIFT+ПРОБЕЛ**|
+|Edit.QuickInfo|**CTRL+K, I**<br /><br /> or<br /><br /> **CTRL+K, CTRL+I**|
+|WorkflowDesigner.Collapse|**CTRL+E, CTRL+C**<br /><br /> or<br /><br /> **CTRL+E, C**|
+|WorkflowDesigner.CollapseAll|or|
+|WorkflowDesigner.ConnectNodes|**CTRL+E, CTRL+F**<br /><br /> or<br /><br /> **CTRL+E, F**|
+|WorkflowDesigner.CreateVariable|**CTRL+E, CTRL+N**<br /><br /> or<br /><br /> **CTRL+E, N**|
+|WorkflowDesigner.ExpandAll|**CTRL+E, CTRL+X**<br /><br /> or<br /><br /> **CTRL+E, X**|
+|WorkflowDesigner.ExpandInPlace|**CTRL+E, CTRL+E**<br /><br /> or<br /><br /> **CTRL+E, E**|
+|WorkflowDesigner.GoToParent|**CTRL+E, CTRL+P**<br /><br /> or<br /><br /> **CTRL+E, P**|
+|WorkflowDesigner.MoveFocus|**CTRL+E, CTRL+M**<br /><br /> or<br /><br /> **CTRL+E, M**|
 |WorkflowDesigner.NavigateThroughDesigner|**CTRL+ALT+F6**|
-|WorkflowDesigner.Restore|**CTRL+E, CTRL+R**<br /><br /> или<br /><br /> **CTRL+E, R**|
-|WorkflowDesigner.ShowHideArgumentDesigner|**CTRL+E, CTRL+A**<br /><br /> или<br /><br /> **CTRL+E, A**|
-|WorkflowDesigner.ShowHideImportsDesigner|**CTRL+E, CTRL+I**<br /><br /> или<br /><br /> **CTRL+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**CTRL+E, CTRL+O** (латинская буква O)<br /><br /> или<br /><br /> **CTRL+E, O**|
-|WorkflowDesigner.ShowHideVariableDesigner|**CTRL+E, CTRL+V**<br /><br /> или<br /><br /> **CTRL+E, V**|
-|WorkflowDesigner.ToggleSelection|**CTRL+E, CTRL+S**<br /><br /> или<br /><br /> **CTRL+E, S**|
+|WorkflowDesigner.Restore|**CTRL+E, CTRL+R**<br /><br /> or<br /><br /> **CTRL+E, R**|
+|WorkflowDesigner.ShowHideArgumentDesigner|**CTRL+E, CTRL+A**<br /><br /> or<br /><br /> **CTRL+E, A**|
+|WorkflowDesigner.ShowHideImportsDesigner|**CTRL+E, CTRL+I**<br /><br /> or<br /><br /> **CTRL+E, I**|
+|WorkflowDesigner.ShowHideOverviewMap|**CTRL+E, CTRL+O** (латинская буква O)<br /><br /> or<br /><br /> **CTRL+E, O**|
+|WorkflowDesigner.ShowHideVariableDesigner|**CTRL+E, CTRL+V**<br /><br /> or<br /><br /> **CTRL+E, V**|
+|WorkflowDesigner.ToggleSelection|**CTRL+E, CTRL+S**<br /><br /> or<br /><br /> **CTRL+E, S**|
 |WorkflowDesigner.ZoomIn|**CTRL+NUM +**|
 |WorkflowDesigner.ZoomOut|**CTRL+NUM -**|
 

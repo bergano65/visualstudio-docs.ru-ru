@@ -5,19 +5,19 @@ description: Сведения о восстановлении установки
 ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681331"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114745"
 ---
 # <a name="repair-visual-studio"></a>Восстановление Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "68681331"
 
 1. Откройте установщик, выберите **Дополнительно** и **Восстановить**.
 
-    ![Восстановление Visual Studio из установщика Visual Studio](media/repair-visual-studio.png "Repair Visual Studio from the Visual Studio Installer")
+    ![Восстановление Visual Studio из Visual Studio Installer](media/repair-visual-studio.png "Восстановление Visual Studio из Visual Studio Installer")
 
    > [!NOTE]
    > При восстановлении Visual Studio среда будет сброшена. Локальные настройки, включая пользовательские расширения, установленные без повышения прав, параметры пользователя и профили, будут удалены. Ваши синхронизированные параметры, такие как темы, цвета и сочетания клавиш, будут восстановлены.
@@ -53,7 +53,7 @@ ms.locfileid: "68681331"
 
      Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
-     ![Откройте Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Откройте Visual Studio Installer")
+     ![Открытие Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Открытие Visual Studio Installer")
 
      > [!NOTE]
      > Кроме того, Visual Studio Installer можно найти в следующем расположении:
@@ -64,7 +64,7 @@ ms.locfileid: "68681331"
 
 1. В установщике найдите установленный у вас выпуск Visual Studio. Затем выберите **Дополнительно** и **Восстановить**.
 
-     ![Восстановление Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Восстановление Visual Studio 2019")
+     ![Восстановление Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Восстановление Visual Studio 2019")
 
    > [!NOTE]
    > При восстановлении Visual Studio среда будет сброшена. Локальные настройки, включая пользовательские расширения, установленные без повышения прав, параметры пользователя и профили, будут удалены. Ваши синхронизированные параметры, такие как темы, цвета и сочетания клавиш, будут восстановлены.

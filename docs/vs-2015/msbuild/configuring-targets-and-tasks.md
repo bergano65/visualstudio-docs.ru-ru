@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d2e067b70256bd86a1f7598033689d6a498af60
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 892e9615599a8881e219c00f748a0cc1567d996d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298353"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850032"
 ---
 # <a name="configuring-targets-and-tasks"></a>Настройка целевых платформ и задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,12 +24,12 @@ ms.locfileid: "74298353"
 ## <a name="installation"></a>Установка  
  Платформы .NET Framework 4.5 и 4.5.1 заменяют общеязыковую среду выполнения (CLR), целевые объекты, задачи и средства платформы .NET Framework 4, не переименовывая их. Платформа .NET Framework 4.5.1 устанавливается в составе [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
- Если вы хотите установить MSBuild отдельно от Visual Studio, скачайте пакет установки на странице [скачиваемых материалов MSBuild](https://go.microsoft.com/fwlink/?LinkId=309745). Нужно также установить те версии .NET Framework, которые вы хотите использовать.  
+ Если вы хотите установить MSBuild отдельно от Visual Studio, скачайте пакет установки на странице [скачиваемых материалов MSBuild](https://www.microsoft.com/download/details.aspx?id=40760). Нужно также установить те версии .NET Framework, которые вы хотите использовать.  
   
 ## <a name="targets-and-tasks"></a>Целевые объекты и задачи  
  MSBuild запускает некоторые задачи сборки вне процесса, чтобы ориентироваться на более широкий набор контекстов.  Например, 32-разрядная MSBuild может запустить задачу сборки в 64-разрядном процессе, чтобы ориентироваться на 64-разрядный компьютер. Это поведение управляется аргументами `UsingTask` и параметрами `Task`. Целевые объекты, установленные платформой .NET Framework 4.5, задают эти аргументы и параметры, поэтому для сборки приложений в различных целевых контекстах никакие изменения не требуются.  
   
  Если вы хотите создать собственные целевой контекст, нужно задать эти аргументы и параметры соответствующим образом. Примеры см. в файлах Microsoft.Common.targets и Microsoft.Common.Tasks платформы .NET Framework 4.5.  Сведения о том, как создать настраиваемую задачу, способную работать с несколькими целевыми контекстами, или изменить существующие задачи, см. в разделе [Практическое руководство. Настройка целевых платформ и задач](../msbuild/how-to-configure-targets-and-tasks.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)

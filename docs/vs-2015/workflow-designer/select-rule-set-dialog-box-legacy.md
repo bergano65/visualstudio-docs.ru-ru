@@ -1,5 +1,5 @@
 ---
-title: Select Rule Set Dialog Box (Legacy) | Microsoft Docs
+title: Диалоговое окно «Выбор набора правил» (прежние версии) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,35 +13,35 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9c6cc7a101a854611228b1a3bc38f63fffff45c1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301452"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846174"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Диалоговое окно «Выбор набора правил» (для прежних версий)
-This topic describes how use the **Select Rule Set** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+В этом разделе описывается использование диалогового окна **Выбор набора правил** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- The **Select Rule Set** dialog box is used to select a rule set that you can use with a [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) activity. For information about how to access the **Select Rule Set** dialog box, see [How to: Create a PolicyActivity Rule Set (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ Диалоговое окно **Выбор набора правил** используется для выбора набора правил, который можно использовать с действием [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) . Дополнительные сведения о доступе к диалоговому окну **Выбор набора правил** см. [в разделе как создать набор правил PolicyActivity (устаревший)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
- The following table describes the user interface (UI) elements of the **Select Rule Set** dialog box.
+ В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна « **Выбор набора правил** ».
 
-|Элемент пользовательского интерфейса|Описание|
+|Элемент интерфейса|Описание|
 |----------------|-----------------|
-|**New…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to create a new rule condition.|
-|**Edit…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to edit the selected rule condition.|
-|**Rename…**|Щелкните, чтобы открыть диалоговое окно, используемое для переименования выбранного набора правил.|
+|**Новые функции...**|Нажмите, чтобы открыть [диалоговое окно Редактор набора правил (устаревшее)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) для создания нового условия правила.|
+|**Изменить...**|Нажмите, чтобы открыть [диалоговое окно Редактор набора правил (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) , чтобы изменить выбранное условие правила.|
+|**Переименовать...**|Щелкните, чтобы открыть диалоговое окно, используемое для переименования выбранного набора правил.|
 |**Удалить**|Щелкните, чтобы удалить выбранный набор правил.|
-|**Rule Set Preview**|Удаляет правила из выбранного набора правил.|
-|**OK**|Click to assign the selected rule set to the **PolicyActivity** activity.|
+|**Предварительный просмотр набора правил**|Удаляет правила из выбранного набора правил.|
+|**OK**|Нажмите, чтобы назначить выбранный набор правил для действия **PolicyActivity** .|
 
- For more information about how to create and edit rule sets, see [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
+ Дополнительные сведения о создании и изменении наборов правил см. в разделе [диалоговое окно редактора набора правил (прежние версии)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
 > Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.
 
- For more information about conditions, see [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
+ Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx).
 
 ## <a name="see-also"></a>См. также раздел
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [Диалоговое окно "Редактор набора правил [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx)" (устаревшая)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Использование действия PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx) [с условиями в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx)

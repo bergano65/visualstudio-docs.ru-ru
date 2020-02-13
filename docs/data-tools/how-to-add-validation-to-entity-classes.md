@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648408"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586566"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Практическое руководство. Добавление проверки в классы сущностей
 *Проверка* классов сущностей представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме объекта, а также правилам, установленным для приложения. Проверка данных перед отправкой обновлений в основную базы данных рекомендуется, это уменьшает количество ошибок. Это также уменьшает потенциальное количество циклов передачи между приложением и базой данных.
@@ -119,7 +119,7 @@ ms.locfileid: "72648408"
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Проверка данных](../data-tools/validate-data-in-datasets.md)

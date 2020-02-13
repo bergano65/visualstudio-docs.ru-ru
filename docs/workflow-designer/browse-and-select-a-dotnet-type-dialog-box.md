@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597117"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Диалоговое окно "Обзор и выбор типа .NET"
 
-В окне **Свойства** , в диалоговых окнах или конструкторах, таких как конструктор переменных, при нажатии **кнопки Обзор** типов из списка типов данных диалоговое окно Выбор **типа .NET** отображается в сокращенном виде в форме "тип". браузер»). В этом диалоговом окне из представления в виде дерева сборок и проектов можно выбрать тип.
+В окне **Свойства** , в диалоговых окнах или конструкторах, таких как конструктор переменных, при нажатии **кнопки Обзор** типов из списка типов данных диалоговое окно Выбор **типа .NET** отображается в сокращенном виде в виде браузера типов. В этом диалоговом окне из представления в виде дерева сборок и проектов можно выбрать тип.
 
 Данное диалоговое окно используется во множестве пользовательских сценариев, включая следующие.
 
@@ -63,7 +63,7 @@ ms.locfileid: "73189811"
 
 Список типов в поле **имя типа** сокращается по мере ввода большего числа символов для поиска совпадения. В отфильтрованном списке отображаются только типы, имя FullyQualified которых начинается со введенной строки или типов, краткое имя которых начинается со введенной строки.
 
-Пример:
+Например:
 
 1. **Операция** ввода соответствует <xref:System.OperationCanceledException>, но не <xref:System.InvalidOperationException>. Чтобы введенное слово совпало с <xref:System.InvalidOperationException>, начните строку с System.I или Invalid.
 
@@ -73,6 +73,6 @@ ms.locfileid: "73189811"
 
 При выборе типа контракта службы браузер типов отображает только типы, имеющие атрибут <xref:System.ServiceModel.ServiceContractAttribute>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Использование конструкторов действий](control-flow-activity-designers.md)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516693"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588789"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Шаг 1. Создание проекта приложения Windows Forms
 
@@ -25,7 +25,7 @@ ms.locfileid: "72516693"
 
 ## <a name="open-visual-studio-2017"></a>Откройте Visual Studio 2017.
 
-1. В строке меню выберите **Файл** > **Создать** > **Проект**. Диалоговое окно должно выглядеть так же, как на следующем снимке экрана.
+1. В строке меню выберите **Файл**  > **Создать**  > **Проект**. Диалоговое окно должно выглядеть так же, как на следующем снимке экрана.
 
      ![Диалоговое окно "Новый проект"](../ide/media/newprojectdialogcallouts.png)<br/>*Диалоговое окно* ***Новый проект***
 
@@ -105,7 +105,7 @@ Visual Studio создает решение для приложения. Реш
      Другой вариант — нажать кнопку **Сохранить все** на панели инструментов, как показано на рисунке ниже.
 
      ![Кнопка "Сохранить все" на панели инструментов](../ide/media/express_iconsaveall.png)<br/>
-     Кнопка ***Сохранить все*** *на панели инструментов*
+     *Кнопка ***Сохранить все*** на панели инструментов*
 
      Visual Studio автоматически заполняет имя папки и имя проекта, а затем сохраняет проект в папке проектов.
 

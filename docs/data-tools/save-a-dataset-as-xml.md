@@ -11,17 +11,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], saving as XML
 - saving data
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5b3aa23cb0fde98b4da4225b8e255b7cd6e7aef5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3198b94b1248f20b178e85e9e75a2765e6191c28
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641344"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586306"
 ---
 # <a name="save-a-dataset-as-xml"></a>Сохранение набора данных в формате XML
 
@@ -45,6 +45,6 @@ ms.locfileid: "72641344"
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

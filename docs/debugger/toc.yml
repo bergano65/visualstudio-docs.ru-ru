@@ -46,10 +46,14 @@
           href: using-breakpoints.md
         - name: Устранение неполадок точек останова
           href: troubleshooting-breakpoints.md
+        - name: 'Устранение неполадок точек останова в данных C#'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: Проверка данных
       items:
         - name: Проверка данных в окнах отладчика
           href: debugger-windows.md
+        - name: Проверка исключений
+          href: exception-helper.md
         - name: Проверка переменных
           href: autos-and-locals-windows.md
         - name: Просмотр переменных
@@ -264,6 +268,10 @@
                   href: visualizer-api-reference.md
         - name: Восстановление скрытых команд отладчика
           href: how-to-restore-hidden-debugger-commands.md
+    - name: Исходный код
+      items:
+        - name: Декомпиляция сборок .NET
+          href: decompilation.md
     - name: Удаленная отладка
       items:
         - name: Удаленная отладка
@@ -678,7 +686,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: Безопасность отладчика
       href: debugger-security.md
-- name: Ссылка
+- name: Справочник
   items:
     - name: Справочник по пользовательскому отладочному интерфейсу
       items:

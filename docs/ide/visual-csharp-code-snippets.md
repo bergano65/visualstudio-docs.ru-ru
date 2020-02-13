@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647251"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594166"
 ---
 # <a name="c-code-snippets"></a>Фрагменты кода C#
 
@@ -31,17 +31,17 @@ ms.locfileid: "72647251"
 
 По умолчанию в Visual Studio для C# включены указанные ниже фрагменты кода.
 
-|Имя (или сокращенное имя)|ОПИСАНИЕ|Допустимые места для вставки фрагмента|
+|Имя (или сокращенное имя)|Описание|Допустимые места для вставки фрагмента|
 | - |-----------------| - |
 |#if|Создает директивы [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) и [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|В любом месте.|
 |#region|Создает директивы [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) и [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|В любом месте.|
 |~|Создает [метод завершения](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (деструктор) для включающего класса.|Внутри класса.|
 |Атрибут|Создает объявление класса, производного от <xref:System.Attribute>.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
 |checked|Создает блок [checked](/dotnet/csharp/language-reference/keywords/checked).|Внутри метода, индексатора, метода доступа к свойству или событию.|
-|класс|Создает объявление класса.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
+|class|Создает объявление класса.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
 |ctor|Создает конструктор для включающего класса.|Внутри класса.|
 |cw|Создает вызов <xref:System.Console.WriteLine%2A>.|Внутри метода, индексатора, метода доступа к свойству или событию.|
-|do|Создает цикл [do](/dotnet/csharp/language-reference/keywords/do)`while`.|Внутри метода, индексатора, метода доступа к свойству или событию.|
+|do|Создает цикл [do](/dotnet/csharp/language-reference/keywords/do) `while`.|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |else|Создает [else](/dotnet/csharp/language-reference/keywords/if-else) блок.|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |enum|Создает объявление типа [enum](/dotnet/csharp/language-reference/keywords/enum).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
 |equals|Создает объявление метода, которое переопределяет метод <xref:System.Object.Equals%2A>, определенный в классе <xref:System.Object>.|Внутри класса или структуры.|
@@ -63,7 +63,7 @@ ms.locfileid: "72647251"
 |propg|Создает доступное только для чтения [автоматически реализуемое свойство](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) с закрытым методом доступа `set`.|Внутри класса или структуры.|
 |sim|Создает объявление метода [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) Main.|Внутри класса или структуры.|
 |структура|Создает объявление [struct](/dotnet/csharp/language-reference/keywords/struct).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
-|svm|Создает объявление метода [static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void) Main.|Внутри класса или структуры.|
+|svm|Создает объявление метода [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/void) Main.|Внутри класса или структуры.|
 |switch|Создает блок [switch](/dotnet/csharp/language-reference/keywords/switch).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |try|Создает блок [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |tryf|Создает блок [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|Внутри метода, индексатора, метода доступа к свойству или событию.|

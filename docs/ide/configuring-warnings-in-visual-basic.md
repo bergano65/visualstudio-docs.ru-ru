@@ -7,17 +7,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c71c352040898874cd90a397db6b8c7321ff39d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652075"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114729"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Настройка предупреждений в Visual Basic
 
@@ -50,7 +50,7 @@ ms.locfileid: "72652075"
 ## <a name="examples"></a>Примеры
 Эта таблица с примерами аргументов командной строки описывает назначение каждого аргумента.
 
-|Аргумент|ОПИСАНИЕ|
+|Аргумент|Описание|
 |--------------|-----------------|
 |`vbc /warnaserror`|Указывает, что все предупреждения должны рассматриваться как ошибки.|
 |`vbc /warnaserror:42024`|Указывает, что предупреждение 42024 должно рассматриваться как ошибка.|

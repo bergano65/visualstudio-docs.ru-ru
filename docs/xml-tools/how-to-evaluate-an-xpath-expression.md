@@ -3,17 +3,17 @@ title: Вычисление выражения XPath во время отлад�
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2e0b6c84fa9447dc38aa7976fa59bb5aa67d5c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654276"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592728"
 ---
 # <a name="evaluate-xpath-expressions"></a>Вычисление выражений XPath
 
@@ -34,7 +34,7 @@ ms.locfileid: "72654276"
 
 1. Добавьте точку останова в начальный тег `xsl:if`.
 
-2. Чтобы начать отладку, выберите **XML**  > **начать отладку XSLT** в строке меню (или нажмите клавиши **ALT** +**F5**).
+2. Чтобы начать отладку, выберите **XML** > **начать отладку XSLT** в строке меню (или нажмите клавиши **ALT**+**F5**).
 
    Отладчик начинается и останавлявается на теге `xsl:if`.
 
@@ -52,6 +52,6 @@ ms.locfileid: "72654276"
 
    В поле **значение** показано, что выражение XPath принимает значение `true`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Отладка XSLT](../xml-tools/debugging-xslt.md)

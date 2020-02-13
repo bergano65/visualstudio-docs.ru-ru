@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648232"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586345"
 ---
 # <a name="query-datasets"></a>Наборы данных запросов
 Для поиска конкретных записей в наборе данных используйте метод `FindBy` в объекте DataTable, напишите собственную инструкцию foreach для циклической обработки коллекции строк таблицы или используйте [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,13 +70,13 @@ ms.locfileid: "72648232"
 > [!NOTE]
 > Если вы работаете в Windows Forms приложении и используете функции привязки данных для вывода данных, форма, созданная конструктором, может предоставить достаточно функциональных возможностей для вашего приложения. Дополнительные сведения см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). В частности, см. раздел [связи в наборах данных](relationships-in-datasets.md).
 
-В следующих примерах кода показано, как перемещаться по связям вверх и вниз в типизированных наборах данных. В примерах кода используются типизированные <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) и созданные методы Финдби*PrimaryKey* (`FindByCustomerID`) для определения местоположения нужной строки и возврата связанных записей. Примеры компилируются и выполняются правильно, только если у вас есть:
+В следующих примерах кода показано, как перемещаться по связям вверх и вниз в типизированных наборах данных. В примерах кода используются типизированные <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) и созданные методы Финдби*PrimaryKey* (`FindByCustomerID`) для нахождение нужной строки и возврата связанных записей. Примеры компилируются и выполняются правильно, только если у вас есть:
 
 - Экземпляр набора данных с именем `NorthwindDataSet` с таблицей `Customers`.
 
 - Таблица `Orders`.
 
-- Связь с именем `FK_Orders_Customers`relating двух таблиц.
+- Связь с именем `FK_Orders_Customers`, связывающая две таблицы.
 
 Кроме того, обе таблицы должны быть заполнены данными для любых возвращаемых записей.
 
@@ -94,6 +94,6 @@ ms.locfileid: "72648232"
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Исключение файлов из сборки | Документация Майкрософт
+title: Практическое руководство. Исключение файлов из сборки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,23 +7,23 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446556"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75576060"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Как выполнить Исключение файлов из сборки
+# <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
 В файле проекта можно использовать подстановочные знаки, чтобы включить все файлы из одного каталога или набора вложенных каталогов в качестве входных данных для сборки. Однако может присутствовать один файл в каталоге или один каталог в наборе вложенных каталогов, который не требуется включать в качестве входных данных для сборки. Этот файл или каталог можно явным образом исключить из списка входных данных. Кроме того, в проекте может быть файл, который требуется включить только при определенных условиях. Можно явно объявить условия, при которых файл включается в сборку.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Исключение файла или каталога из входных данных для сборки
- Списки элементов являются входными файлами для сборки. Элементы, которые требуется включить, объявляются отдельно или в составе группы с помощью атрибута `Include`. Например:
+ Списки элементов являются входными файлами для сборки. Элементы, которые требуется включить, объявляются отдельно или в составе группы с помощью атрибута `Include`. Пример:
 
 ```xml
 <CSFile Include="Form1.cs"/>
@@ -42,7 +42,7 @@ ms.locfileid: "63446556"
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
     ```
 
-    или
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
@@ -56,7 +56,7 @@ ms.locfileid: "63446556"
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
     ```
 
-    или
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>

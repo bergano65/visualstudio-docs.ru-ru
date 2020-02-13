@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653964"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589699"
 ---
 # <a name="customize-the-properties-window"></a>Настройка окно свойств
 
@@ -40,7 +40,7 @@ ms.locfileid: "72653964"
 
 Щелкните правой кнопкой мыши класс Shape в определении DSL, наведите указатель на пункт **добавить предоставленный**, а затем выберите компонент.
 
-В фигурах можно предоставить свойства **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** и **FillGradientMode** . На соединителях можно предоставить **цвет** `,` свойствах**TextColor**, **DashStyle**и **толщина** . На схемах можно предоставить свойства **FillColor** и **TextColor** .
+В фигурах можно предоставить свойства **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** и **FillGradientMode** . На соединителях можно предоставить **цвет**`,`свойствах **TextColor**, **DashStyle**и **толщина** . На схемах можно предоставить свойства **FillColor** и **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Пересылка: Отображение свойств связанных элементов
 
@@ -179,16 +179,16 @@ ms.locfileid: "72653964"
 
 Редактор определяется путем написания класса, производного от <xref:System.Drawing.Design.UITypeEditor>. Класс должен переопределять:
 
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> для взаимодействия с пользователем и обновления значения свойства.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>для взаимодействия с пользователем и обновления значения свойства.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, чтобы указать, будет ли редактор открывать диалоговое окно или предоставлять раскрывающееся меню.
 
-Можно также предоставить графическое представление значения свойства, которое будет отображаться в сетке свойств. Для этого переопределите `GetPaintValueSupported` и `PaintValue`.  Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.
+Можно также предоставить графическое представление значения свойства, которое будет отображаться в сетке свойств. Для этого переопределите `GetPaintValueSupported`и `PaintValue`.  Для получения дополнительной информации см. <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Добавьте код в отдельный файл кода в проекте **DSL** .
 
-Пример:
+Например:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +226,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
-Определите класс, производный от класса <xref:System.ComponentModel.TypeConverter>. Добавьте код в отдельный файл в проекте **DSL** . Пример:
+Определите класс, производный от класса <xref:System.ComponentModel.TypeConverter>. Добавьте код в отдельный файл в проекте **DSL** . Например:
 
 ```csharp
 /// <summary>
@@ -319,6 +319,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md)

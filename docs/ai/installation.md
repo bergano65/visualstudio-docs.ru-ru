@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777473"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915810"
 ---
 # <a name="installation"></a>Установка
 
@@ -24,7 +24,7 @@ ms.locfileid: "72777473"
 
 Это расширение работает с Visual Studio 2015 и Visual Studio 2017 выпуска Community или более высокого уровня.
 
-Скачать эти средства можно с сайта [Visual Studio Marketplace](https://aka.ms/vstoolsforai) или из Visual Studio.
+Скачать эти средства можно с сайта [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) или из Visual Studio.
 
 1. Выберите **Сервис** > **Расширения и обновления**.
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > В настоящее время CNTK не поддерживает macOS.
 
-Сведения об установке пакета CNTK для Python см. в этой [статье](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
+Сведения об установке пакета CNTK для Python см. в этой [статье](/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 

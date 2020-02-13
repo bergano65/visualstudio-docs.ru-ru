@@ -10,17 +10,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ee422ec549ced0995db22258edf9ef21540804
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660310"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595375"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
 
@@ -53,9 +53,9 @@ This report is Company Confidential.
 
 ### <a name="to-create-a-run-time-text-template"></a>Создание текстового шаблона времени выполнения
 
-1. В обозреватель решений в контекстном меню проекта выберите **добавить**  > **новый элемент**.
+1. В обозреватель решений в контекстном меню проекта выберите **добавить** > **новый элемент**.
 
-2. В диалоговом окне **Добавление нового элемента** выберите **шаблон текста среды выполнения**. (В Visual Basic поищите общие **элементы**  > **Общие**.)
+2. В диалоговом окне **Добавление нового элемента** выберите **шаблон текста среды выполнения**. (В Visual Basic поищите общие **элементы** > **Общие**.)
 
 3. Введите имя для файла шаблона.
 
@@ -80,7 +80,7 @@ This report is Company Confidential.
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Преобразование существующего текстового файла в шаблон времени выполнения
 
-1. Включите файл в проект Visual Studio. В обозреватель решений в контекстном меню проекта выберите **добавить**  > **существующий элемент**.
+1. Включите файл в проект Visual Studio. В обозреватель решений в контекстном меню проекта выберите **добавить** > **существующий элемент**.
 
 2. Задайте для свойства файла **Custom Tools** значение **тексттемплатингфилепрепроцессор**. В обозреватель решений в контекстном меню файла выберите пункт **Свойства**.
 
@@ -107,7 +107,7 @@ This report is Company Confidential.
 
 ### <a name="plain-content"></a>Простое содержимое
 
-Измените **TT** файл, чтобы он содержал текст, который должен быть создан приложением. Пример:
+Измените **TT** файл, чтобы он содержал текст, который должен быть создан приложением. Например:
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Встроенный код программы
 
-Программный код можно вставлять между `<#` и `#>`. Пример:
+Программный код можно вставлять между `<#` и `#>`. Например:
 
 ```csharp
 <table>
@@ -427,13 +427,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
 Шаблоны времени разработки. Если вы хотите использовать шаблон для создания кода, который станет частью приложения, см. статью [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Шаблоны времени выполнения можно использовать в любом приложении, где шаблоны и их содержимое определяются во время компиляции. Но если вы хотите написать расширение Visual Studio, которое создает текст из шаблонов, которые изменяются во время выполнения, см. раздел [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)

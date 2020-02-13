@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6baaf22b0a57cf669fbe0ffc4fe75cf1c72baa3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666121"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568286"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>"Параметры", "Текстовый редактор", "HTML (веб-формы)", "Проверка"
 
@@ -27,7 +27,7 @@ ms.locfileid: "72666121"
 
    Схема позволяет определить, какие элементы, атрибуты и регистр текста допустимы в выбранной схеме. Кроме того, вы можете определить теги и атрибуты, доступные в IntelliSense.
 
-   Выберите этот параметр, если в Visual Studio нужно использовать объявление **<!DOCTYPE>** и элемент **html** в содержимом страницы, чтобы определить схему. Например, если вы выбрали этот параметр, а страница содержит объявление `<!DOCTYPE html>`, Visual Studio использует схему HTML5. Но если тег **html** имеет атрибут **xmlns**, такой как `<html xmlns="http://www.w3.org/1999/xhtml">`, в Visual Studio используется схема XHTML5.
+   Выберите этот параметр, если в Visual Studio нужно использовать объявление **<!DOCTYPE>** и элемент **html** в содержимом страницы, чтобы определить схему. Например, если вы выбрали этот параметр, а страница содержит объявление `<!DOCTYPE html>`, Visual Studio использует схему HTML5. Но если тег **html** имеет атрибут **xmlns**, такой как `<html>`, в Visual Studio используется схема XHTML5.
 
 - **Target when no doctype found** (Выбрать целевую схему, если тип документа не найден)
 

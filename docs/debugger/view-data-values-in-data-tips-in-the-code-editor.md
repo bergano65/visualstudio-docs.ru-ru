@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903892"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404280"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Просмотр значений данных в подсказках по данным в редакторе кода
 
@@ -96,7 +96,7 @@ ms.locfileid: "74903892"
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>Закрепление свойств в подсказках данных (поддерживается в Visual Studio 2019 версии 16,4, предварительная версия 3 или выше)
+## <a name="pin-properties-in-datatips"></a>Закрепление свойств в подсказках данных
 
 > [!NOTE]
 > Эта функция поддерживается для .NET Core 3,0 или более поздней версии.

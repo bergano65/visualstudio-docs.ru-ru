@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23b5705b7ee81e56945050fe63dd2f086894bd08
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661103"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917930"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: поля типа значения должны быть переносимыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю документацию по Visual Studio см. в разделе [CA1900: value type Field reportable](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
+Последнюю документацию по Visual Studio см. в разделе [CA1900: value type Field reportable](/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "72661103"
 |Категория|Microsoft. переносимость|
 |Критическое изменение|Критическое — если поле может отображаться за пределами сборки.<br /><br /> Не критическое — если поле не отображается за пределами сборки.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Это правило проверяет, должны ли структуры, объявленные с явно заданным макетом, правильно выстроиться при маршалировании в неуправляемый код в 64-разрядных операционных системах. IA-64 не допускает несогласованный доступ к памяти, и процесс будет аварийно завершиться, если это нарушение не исправлено.
 
 ## <a name="rule-description"></a>Описание правила

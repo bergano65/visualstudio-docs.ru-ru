@@ -1,25 +1,25 @@
 ---
 title: Установка Visual Studio для Mac 2019
 description: Инструкции по установке Visual Studio 2019 для Mac и дополнительных компонентов, которые требуются для кроссплатформенной разработки.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 45f9756607cbb638d1f69f77bdf8cd2ee30953c5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716781"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851941"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
 Чтобы приступить к разработке собственных кроссплатформенных приложений .NET в macOS, установите Visual Studio 2019 для Mac. Для этого выполните следующие действия.
 
  > [!div class="button"]
- > [Скачайте Visual Studio для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+ > [Скачайте Visual Studio для Mac](https://visualstudio.microsoft.com/vs/mac/)
 
 ## <a name="requirements"></a>Требования
 
@@ -32,7 +32,7 @@ ms.locfileid: "73716781"
 
 ## <a name="installation-instructions"></a>Инструкции по установке
 
-1. Скачайте установщик со [страницы загрузки Visual Studio для Mac](https://aka.ms/vsmac).
+1. Скачайте установщик со [страницы загрузки Visual Studio для Mac](https://visualstudio.microsoft.com/vs/mac/).
 2. После завершения загрузки щелкните **VisualStudioforMacInstaller.dmg**, чтобы подключить установщик, и запустите его, дважды щелкнув значок стрелки:
 
     [![Щелкните большую стрелку, чтобы начать установку](media/install-installer-sml.png)](media/install-installer.png#lightbox)

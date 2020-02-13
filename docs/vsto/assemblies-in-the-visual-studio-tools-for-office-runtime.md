@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c227748e1808aecabd9554b0e6b398a7c6c6df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986196"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918784"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Сборки в Инструменты Visual Studio среды выполнения Office
   При создании проекта Office Visual Studio автоматически добавляет ссылки на сборки [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] , используемые для данного типа проектов и платформы .NET Framework, для которой предназначен этот проект. В расширениях Office для .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]и [!INCLUDE[net_v45](includes/net-v45-md.md)]используются разные сборки. Дополнительные сведения о расширениях Office см. в разделе [Общие сведения о инструменты Visual Studio для среды выполнения Office](visual-studio-tools-for-office-runtime-overview.md).
@@ -55,12 +55,12 @@ ms.locfileid: "72986196"
 |Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет ведущие элементы и элементы управления ведущего приложения для решений Excel. Дополнительные сведения см. в разделе [Автоматизация Excel с помощью расширенных объектов](automating-excel-by-using-extended-objects.md).|
 |Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет классы, которые можно использовать для создания пользовательских областей формы в надстройках VSTO для Outlook.|
 |Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет ведущие элементы и элементы управления ведущего приложения для решений Word. Дополнительные сведения см. в разделе [Автоматизация Word с помощью расширенных объектов](automating-word-by-using-extended-objects.md).|
-|Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет следующие типы:<br /><br /> — Класс [ремотебиндаблекомпонент](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) , предоставляющий возможности привязки данных для элементов управления ведущего приложения в настройках уровня документа.<br />— Другие типы, которые являются частью Инструменты Visual Studio для инфраструктуры среды выполнения Office и не предназначены для использования непосредственно из кода.|
+|Microsoft.Office.Tools.Excel.v9.0.dll|Предоставляет следующие типы:<br /><br /> — Класс [ремотебиндаблекомпонент](/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) , предоставляющий возможности привязки данных для элементов управления ведущего приложения в настройках уровня документа.<br />— Другие типы, которые являются частью Инструменты Visual Studio для инфраструктуры среды выполнения Office и не предназначены для использования непосредственно из кода.|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Предоставляет следующие типы:<br /><br /> — Атрибут <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> и интерфейс <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType>, которые можно использовать для кэширования объектов данных в настройке на уровне документа. Дополнительные сведения см. в разделе [кэширование данных](caching-data.md).<br />— Исключения, которые могут вызываться Инструменты Visual Studio для среды выполнения Office.<br />— Другие типы, которые являются частью Инструменты Visual Studio для инфраструктуры среды выполнения Office и не предназначены для использования непосредственно из кода.|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Предоставляет интерфейс <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction>, который можно реализовать для выполнения дополнительных действий установки в качестве итогового шага установщика ClickOnce для решения Office. Дополнительные сведения см. в разделе [расширенное развертывание решений Office](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Предоставляет следующие типы:<br /><br /> — Класс <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>, который можно использовать для программного присоединения сборок настройки к документам и для доступа к кэшированным данным в документах. Дополнительные сведения см. в разделе [Управление документами на сервере с помощью класса ServerDocument](managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />— Несколько классов, представляющих иерархию кэшированных данных в настройке на уровне документа. Дополнительные сведения см. [в разделе доступ к данным в документах на сервере](accessing-data-in-documents-on-the-server.md).|
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Предоставляет следующие типы:<br /><br /> — Классы Microsoft. VisualStudio. Tools. Office. Runtime. Security. Аддинсекуритентри и Microsoft. VisualStudio. Tools. Office. Runtime. Security. Усеринклусионлист, которые можно использовать для создания записей списка включения пользователей для предоставления отношения доверия с Office решения, предназначенные для .NET Framework 3,5.<br />— Другие типы, которые являются частью Инструменты Visual Studio для инфраструктуры среды выполнения Office и не предназначены для использования непосредственно из кода.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Общие сведения о Инструменты Visual Studio для среды выполнения Office](visual-studio-tools-for-office-runtime-overview.md)
 - [Инструменты Visual Studio сценариев установки среды выполнения Office](visual-studio-tools-for-office-runtime-installation-scenarios.md)

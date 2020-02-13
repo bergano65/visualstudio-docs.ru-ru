@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668215"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923270"
 ---
 # <a name="build-page-project-designer-c"></a>Страница "Построение" в конструкторе проектов (C#)
 
@@ -65,6 +65,12 @@ ms.locfileid: "72668215"
 Указывает целевой процессор для выходного файла. Выберите **x86** для любого 32-разрядного Intel-совместимого процессора, **x64** для любого 64-разрядного Intel-совместимого процессора, **ARM** для процессоров ARM или **Любой ЦП**, чтобы указать, что приемлем любой процессор. **Любой ЦП** является значением по умолчанию для проектов, так как обеспечивает выполнение приложения на самом обширном спектре оборудования.
 
 Дополнительные сведения см. в разделе [/platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**Допускает значения NULL**
+
+Указывает допускающий значение NULL контекст C# для всего проекта. Этот параметр пользовательского интерфейса появился в Visual Studio 16.5 и доступен только для проектов, использующих C# 8.0 или более поздней версии.
+
+Дополнительные сведения см. в разделе [Контексты, допускающие значения NULL](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Предпочитать 32-разрядную**
 
@@ -129,7 +135,7 @@ ms.locfileid: "72668215"
 
 **Регистрация для COM-взаимодействия**
 
-Указывает, что ваше управляемое приложение предоставляет COM-объект (вызываемую оболочку COM), чтобы COM-объект мог взаимодействовать с управляемым приложением. Свойству **Тип вывода** на странице [Приложение](../../ide/reference/application-page-project-designer-visual-basic.md) **конструктора проектов** для этого приложения следует задать значение **Библиотеки классов**, чтобы было доступно свойство **Регистрация для COM-взаимодействия**. Пример класса, который можно включить в приложение [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и предоставлять в виде COM-объекта, см. в разделе [Пример COM-класса](/dotnet/csharp/programming-guide/interop/example-com-class).
+Указывает, что ваше управляемое приложение предоставляет COM-объект (вызываемую оболочку COM), чтобы COM-объект мог взаимодействовать с управляемым приложением. Свойству **Тип вывода** на странице [Приложение](../../ide/reference/application-page-project-designer-visual-basic.md)**конструктора проектов** для этого приложения следует задать значение **Библиотеки классов**, чтобы было доступно свойство **Регистрация для COM-взаимодействия**. Пример класса, который можно включить в приложение [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и предоставлять в виде COM-объекта, см. в разделе [Пример COM-класса](/dotnet/csharp/programming-guide/interop/example-com-class).
 
 **Создание сборки сериализации**
 

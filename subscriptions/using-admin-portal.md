@@ -6,17 +6,18 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Узнайте, как приступить к управлению подписками Visual Studio вашей организации с помощью портала администрирования подписок.
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490708"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850542"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Обзор портала администрирования подписок Visual Studio
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Общие сведения о портале администрирования Подписок Visual Studio
+
 На портале администрирования подписок Visual Studio доступны средства для централизованного управления подписками вашей организации. 
 
-## <a name="important-considerations"></a>Важные сведения
+## <a name="important-considerations"></a>Важные аспекты
 Используя портал администрирования подписок Visual Studio, помните следующее:
 - **Подписки Visual Studio предоставляются по лицензии "на пользователя".** Каждый подписчик может использовать ПО на том количестве компьютеров, которое необходимо для разработки и тестирования.
 - **Для каждого подписчика следует назначать только один уровень подписки** в соответствии с подпиской Visual Studio, приобретенной вашей организацией. Если каким-либо пользователям назначено несколько уровней подписки, измените соответствующие параметры, чтобы остался только один уровень.
@@ -46,7 +47,7 @@ ms.locfileid: "69490708"
 > ![Страница сведений на портале администрирования подписок Visual Studio](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>Ресурсы
-- [Документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
+- [Документ по лицензированию Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Сравнение вариантов подписок и цен на них](https://visualstudio.microsoft.com/vs/pricing)
 - [Сравнение возможностей интегрированной среды разработки Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - databases, managing change
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11e60c43e2b9935f4aaf2ffcc5d5c7e3683665d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648579"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586735"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Проекты баз данных и приложения уровня данных
 
@@ -31,6 +31,6 @@ ms.locfileid: "72648579"
 | **Выполнение итеративной разработки базы данных:** Разработчики могут извлекать части проекта и обновлять их в изолированной среде разработки. С помощью этого типа среды можно тестировать изменения, не затрагивая других участников команды. После внесения изменений файлы возвращаются в систему управления версиями, где другие участники команды могут получить ваши изменения, а затем выполнить сборку и развертывание на тестовом сервере. | - [разработки автономных баз данных, ориентированных на проекты (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [отладчик Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
 | Создание **прототипов, проверка результатов тестов и изменение скриптов и объектов базы данных:** Для выполнения одной из этих стандартных задач можно использовать редактор Transact-SQL. | - [редакторы запросов и текста (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

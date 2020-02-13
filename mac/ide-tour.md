@@ -1,17 +1,17 @@
 ---
 title: Обзор Visual Studio для Mac
 description: Visual Studio для Mac предоставляет интегрированную среду разработки для создания приложений .NET на базе macOS, включая веб-сайты ASP.NET Core и проекты Xamarin для iOS, Android, Mac и Xamarin.Forms.
-author: asb3993
-ms.author: amburns
-ms.date: 09/18/2019
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213733"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405818"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Общие сведения о Visual Studio 2019 для Mac
 
@@ -123,7 +123,7 @@ Visual Studio для Mac предоставляет два удобных спо
 
 ## <a name="debugging"></a>Отладка
 
-Visual Studio для Mac имеет отладчик машинного кода, обеспечивая поддержку отладки для приложений Xamarin.iOS, Xamarin.Android и Xamarin.Mac. Visual Studio для Mac использует отладчик Mono Soft Debugger, который реализован в среде выполнения Mono, что позволяет интегрированной среде разработки выполнять отладку управляемого кода на всех платформах. Дополнительные сведения об отладке см. в статье [Отладка с помощью Xamarin](/visualstudio/mac/debugging).
+Visual Studio для Mac содержит отладчики, поддерживающие проекты .NET Core, .NET Framework, Unity и Xamarin. Visual Studio для Mac использует отладчик .NET Core и Mono Soft Debugger, что позволяет интегрированной среде разработки отлаживать управляемый код на всех платформах. Дополнительные сведения об отладке см. в статье [Отладка с помощью Xamarin](/visualstudio/mac/debugging).
 
 Отладчик содержит полнофункциональные визуализаторы для специальных типов, таких как строки, цвета, URL-адреса, а также размеры, координаты и кривые Безье.
 

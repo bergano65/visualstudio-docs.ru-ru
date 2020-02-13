@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298933"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850424"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "74298933"
 
  В этом разделе описываются жесты перетаскивания, которые происходят из других схем. Для событий перемещения и копирования в рамках одной схемы предпочтительнее определить подкласс `ElementOperations`. Дополнительные сведения см. в разделе [Настройка поведения копирования](../modeling/customizing-copy-behavior.md). Также может быть доступна настройка определения DSL.
 
-## <a name="in-this-topic"></a>Содержание раздела
+## <a name="in-this-topic"></a>Содержание
 
 - В первых двух частях описываются альтернативные методы определения обработчика жестов.
 
@@ -140,7 +140,7 @@ using System.Linq;
 
   - diagramEventArgs.Data.GetDataFormats() — перечисление форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)` — декодирует перетаскиваемый объект в указанном формате. Приведите объект в соответствующий тип. Пример.
+  - `diagramEventArgs.Data.GetData(format)` — декодирует перетаскиваемый объект в указанном формате. Приведите объект в соответствующий тип. Например:
 
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Обеспечьте доступ шины модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] к исходному DSL.
 
-    1. Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [SDK визуализации и моделирования](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](https://www.visualstudio.com/).
 
-    2. Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора и выберите команду **включить ModelBus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.
+    2. Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора, а затем нажмите кнопку **включить Modelbus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.
 
     3. Щелкните **преобразовать все шаблоны** и перестроить решение.
 
@@ -587,5 +587,5 @@ namespace Company.CompartmentDrag  // EDIT.
 
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Настройка поведения копирования](../modeling/customizing-copy-behavior.md) [Развертывание решений для доменного языка](../modeling/deploying-domain-specific-language-solutions.md)

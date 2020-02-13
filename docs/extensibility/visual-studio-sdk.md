@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 5949a651c99c0ce45f963b5f2042cdfe6cb40b87
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568808"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848579"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio помогает расширить возможности Visual Studio или интегрировать новые функции в Visual Studio. Вы можете распространять расширения для других пользователей, а также для Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:
@@ -60,7 +60,7 @@ ms.locfileid: "73568808"
  Справочник по API пакета SDK для Visual Studio можно найти в [справочнике по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Примеры пакета SDK для Visual Studio
- Примеры Open Source для расширений VS SDK можно найти на сайте GitHub в [примерах Visual Studio](https://aka.ms/vs2015sdksamples). Этот репозиторий GitHub содержит примеры, иллюстрирующие различные Расширяемые функции в Visual Studio.
+ Примеры Open Source для расширений VS SDK можно найти на сайте GitHub в [примерах Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Этот репозиторий GitHub содержит примеры, иллюстрирующие различные Расширяемые функции в Visual Studio.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Другие ресурсы пакета SDK для Visual Studio
  Если у вас есть вопросы о VSSDK или хотите поделиться опытом разработки расширений, вы можете использовать [форум по расширению Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) или [екстендвс gitter чатрум](https://gitter.im/Microsoft/extendvs).
@@ -73,7 +73,7 @@ ms.locfileid: "73568808"
 
 - [Расширение Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Руководство. Миграция проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)

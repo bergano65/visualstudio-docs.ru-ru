@@ -2,21 +2,21 @@
 title: Создание кода из доменного языка
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5000b8b6150fe630959f4cc4bbc58617e98d4a3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662019"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596584"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставляет мощный способ создания кода, документов, файлов конфигурации и других артефактов из данных, представленных в моделях. С помощью [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] можно создать набор классов, представляющих данные, а также создавать текстовые шаблоны в классах, имена и свойства которых отражают эти данные.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставляет мощный способ создания кода, документов, файлов конфигурации и других артефактов из данных, представленных в моделях. С помощью [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]можно создать набор классов, представляющих данные, а также создавать текстовые шаблоны в классах, имена и свойства которых отражают эти данные.
 
 Например, Fabrikam имеет XML-файл с именами клиентов и адресами электронной почты. Разработчики создают модель, в которой клиент является классом с именем и электронной почтой. Они пишут несколько текстовых шаблонов для обработки данных, включая этот фрагмент, который создает таблицу всех клиентов как часть HTML-страницы:
 
@@ -34,23 +34,23 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставля
 
 В этом разделе обсуждаются некоторые способы создания, изменения и отладки текстовых шаблонов, используемых в [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
 
-[Доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md) \
+[Доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md)\
 Содержит основные сведения о ссылках на доменный язык в текстовых шаблонах.
 
-[Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md) \
+[Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
 Описание процедуры устранения неполадок и отладки в текстовом шаблоне, который относится к доменному языку.
 
-[Пошаговое руководство. подключение узла к созданному обработчику директив](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md) \
+[Пошаговое руководство. подключение узла к созданному обработчику директив](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)\
 Описывает, как подключить пользовательский узел к созданному обработчику директив.
 
-[Команда дслтексттрансформ](../modeling/the-dsltexttransform-command.md) \
+[Команда дслтексттрансформ](../modeling/the-dsltexttransform-command.md)\
 Описание командного файла, выполняющего исполняемый файл TextTransform в командной строке для текстовых шаблонов, которые ссылаются на языки, относящиеся к домену.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Справочные сведения
 
-[Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md) \
+[Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)\
 Предоставляет синтаксис директив и управляющих блоков текстового шаблона.
 
 ## <a name="related-sections"></a>Связанные разделы
@@ -58,5 +58,5 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] предоставля
 [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 Описывает процесс преобразования текстовых шаблонов.
 
-[Создание кода в процессе сборки](../modeling/code-generation-in-a-build-process.md) \
+[Создание кода в процессе сборки](../modeling/code-generation-in-a-build-process.md)\
 Прочтите этот раздел, если вы создаете файлы с DSL на сервере сборки.

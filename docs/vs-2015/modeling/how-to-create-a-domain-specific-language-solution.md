@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301401"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918823"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "74301401"
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|Пакет SDK для визуализации и моделирования в Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)|
+|Пакет SDK для визуализации и моделирования в Visual Studio|[Загрузка пакета SDK для моделирования](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решения на предметно-ориентированном языке
 
@@ -127,7 +127,7 @@ ms.locfileid: "74301401"
 
  **Использовать существующий ключ строгого имени** Используйте этот параметр, если требуется интегрировать DSL с другой сборкой.
 
- Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](https://go.microsoft.com/fwlink/?LinkId=186073).
+ Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>См. также
- [Как определить доменный язык](../modeling/how-to-define-a-domain-specific-language.md) [средства предметно-ориентированных языков Глоссарий](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>См. также раздел
+ [Как определить доменный язык](../modeling/how-to-define-a-domain-specific-language.md) [средства предметно-ориентированных языков Глоссарий](/previous-versions/bb126564(v=vs.100))

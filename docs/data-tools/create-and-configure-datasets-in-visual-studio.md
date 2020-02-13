@@ -6,17 +6,17 @@ helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44023543f1f7b57352448755de942af1c0c712ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642407"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586917"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Как создавать и настраивать наборы данных в Visual Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "72642407"
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Создание нового набора данных с помощью мастера настройки источника данных
 
-1. Откройте проект в Visual Studio, а затем выберите **проект**  > **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
+1. Откройте проект в Visual Studio, а затем выберите **проект** > **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
 2. Выберите тип источника данных, к которому будет осуществляться подключение.
 
@@ -84,11 +84,11 @@ ms.locfileid: "72642407"
 
 2. Перетащите класс <xref:System.Data.DataTable> из вкладки **набор данных** **панели элементов** на **Конструктор наборов данных**.
 
-3. Добавьте столбцы, чтобы определить таблицу данных. Щелкните таблицу правой кнопкой мыши и выберите **добавить**  > **столбец**. Используйте окно **Свойства** , чтобы задать тип данных столбца и ключ при необходимости.
+3. Добавьте столбцы, чтобы определить таблицу данных. Щелкните таблицу правой кнопкой мыши и выберите **добавить** > **столбец**. Используйте окно **Свойства** , чтобы задать тип данных столбца и ключ при необходимости.
 
 Изолированные таблицы должны реализовывать `Fill` логику в автономных таблицах, чтобы их можно было заполнить данными. Сведения о заполнении автономных таблиц данных см. в разделе [Заполнение набора данных из DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Отношения в наборах данных](../data-tools/relationships-in-datasets.md)

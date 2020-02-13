@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431675"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916449"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
 Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
  [Диалоговое окно "Ошибка в утверждении"](../debugger/assertion-failed-dialog-box.md)
 
  [Диалоговое окно "Не удается изменить значение"](../debugger/cannot-change-value-dialog-box.md)
@@ -63,9 +63,9 @@ ms.locfileid: "72431675"
 
  [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
- [Ошибки присоединения](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+ [Ошибки присоединения](/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
 
- [Устранение неполадок настройки отладки SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+ [Устранение неполадок настройки отладки SQL](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
  [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
 

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911575"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144801"
 ---
 # <a name="debugging-gpu-code"></a>Отладка кода GPU
 Можно выполнять отладку кода C++, который выполняется в графическом процессоре (GPU). Поддержка отладки GPU в Visual Studio включает обнаружение состояния гонки, запуск процессов и присоединение к ним, а также интеграцию с окнами отладчика.
 
 ## <a name="supported-platforms"></a>Поддерживаемые платформы
- Поддерживается отладка в [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] и [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Для отладки в программном эмуляторе требуется [!INCLUDE[win8](../debugger/includes/win8_md.md)] или [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Для отладки на оборудовании необходимо установить драйверы для видеокарты. Не все производители оборудования реализуют полный набор функций для отладки. См. информацию об ограничениях в документации производителя.
+ Отладка поддерживается на [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10, [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] и Windows Server 2016. Для отладки в эмуляторе программного обеспечения [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10 или [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)], требуется Windows Server 2016. Для отладки на оборудовании необходимо установить драйверы для видеокарты. Не все производители оборудования реализуют полный набор функций для отладки. См. информацию об ограничениях в документации производителя.
 
 > [!NOTE]
 > Независимые производители оборудования, желающие реализовать поддержку отладки GPU в Visual Studio, должны создать библиотеку DLL, реализующую интерфейс VSD3DDebug для взаимодействия с драйверами производителей.
@@ -47,7 +47,7 @@ ms.locfileid: "72911575"
 2. По команде **Выполнить текущий блок до курсора** приложение выполняется до тех пор, пока все потоки в текущем блоке потоков (tile) не достигнут курсора, после чего выполнение приостанавливается.
 
 ## <a name="debugging-windows"></a>Окна отладки
- С помощью некоторых окон отладки можно просматривать, помечать и замораживать потоки GPU. Дополнительные сведения см. на странице
+ С помощью некоторых окон отладки можно просматривать, помечать и замораживать потоки GPU. Дополнительные сведения см. в разделе:
 
 - [Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)
 
@@ -65,7 +65,7 @@ ms.locfileid: "72911575"
 ## <a name="troubleshooting"></a>Устранение неполадок
 
 ### <a name="specifying-an-accelerator"></a>Определение ускорителя
- Точки останова в коде GPU распознаются, только если код выполняется на ускорителе [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF). Если ускоритель в коде не указывается, в свойствах проекта в качестве значения **Тип ускорителя отладки** будет автоматически выбран ускоритель REF. Если ускоритель явным образом указывается непосредственно в коде, ускоритель REF во время отладки использоваться не будет и точки останова не будут распознаваться, если только поддержка отладки не предусмотрена в самом оборудовании GPU. Выходом из этой ситуации может быть создание собственного кода, который будет использовать ускоритель REF во время отладки. Дополнительные сведения см. в статьях свойства проекта и [Использование ускорителей и объектов accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) и [Параметры проекта C++ для конфигурации отладки](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Точки останова в коде GPU распознаются, только если код выполняется на ускорителе [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF). Если ускоритель в коде не указывается, в свойствах проекта в качестве значения **Тип ускорителя отладки** будет автоматически выбран ускоритель REF. Если ускоритель явным образом указывается непосредственно в коде, ускоритель REF во время отладки использоваться не будет и точки останова не будут распознаваться, если только поддержка отладки не предусмотрена в самом оборудовании GPU. Выходом из этой ситуации может быть создание собственного кода, который будет использовать ускоритель REF во время отладки. Дополнительные сведения см. в статьях свойства проекта и [Использование ускорителя и Accelerator_view объектов](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) и [Параметры проекта C++ для конфигурации отладки](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Условные точки останова
  Условные точки останова в коде GPU поддерживаются, но не каждое выражение может быть вычислено на устройстве. Если выражение не может быть вычислено на устройстве, оно вычисляется в отладчике. Отладчик, вероятно, работает медленнее, чем устройство.
@@ -79,7 +79,7 @@ ms.locfileid: "72911575"
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Ошибка: На удаленном сайте необходимо отключить механизм обнаружения и исправления зависания во время ожидания (TDR).
  При выполнении вычислений C++ AMP существует вероятность превышения контрольного времени ожидания, установленного предусмотренным в Windows механизмом обнаружения и исправления зависаний (TDR). При возникновении этой ошибки вычисления прекращаются и данные утрачиваются. Дополнительные сведения см. в разделе [Обработка ошибок TDR в C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. Отладка приложения C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Запуск отладки GPU в Visual Studio](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)

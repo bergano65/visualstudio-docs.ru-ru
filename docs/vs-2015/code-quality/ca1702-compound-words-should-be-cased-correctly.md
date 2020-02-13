@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669256"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919240"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: для сложных слов следует использовать правильный регистр
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю документацию по Visual Studio см. в разделе [CA1702: составные слова должны иметь правильный регистр](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
+Последнюю документацию по Visual Studio см. в разделе [CA1702: составные слова должны иметь правильный регистр](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "72669256"
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое — при срабатывании сборок.<br /><br /> Не критическое — при срабатывании параметров типа.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Имя идентификатора содержит несколько слов, а по крайней мере одно из слов является составным словом, которое не имеет правильного регистра.
 
 ## <a name="rule-description"></a>Описание правила

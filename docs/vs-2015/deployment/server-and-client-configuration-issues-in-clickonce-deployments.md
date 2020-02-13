@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a78fab1986c7fae50bbb4c8149e8f2c89ec4873
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295210"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918813"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "74295210"
 ## <a name="clickonce-and-proxy-authentication"></a>Проверка подлинности ClickOnce и прокси  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] обеспечивает поддержку встроенной проверки подлинности прокси Windows, начиная с .NET Framework 3,5. Никакие специальные директивы Machine. config не требуются. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] не обеспечивает поддержку других протоколов проверки подлинности, таких как Basic или Digest.  
   
- Чтобы включить эту функцию, можно также применить исправление к .NET Framework 2,0. Дополнительные сведения см. в разделе https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Чтобы включить эту функцию, можно также применить исправление к .NET Framework 2,0. Для получения дополнительной информации см. https://go.microsoft.com/fwlink/?LinkId=158730.  
   
  Дополнительные сведения см. в разделе [\<defaultProxy > Element (параметры сети)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
@@ -83,7 +83,7 @@ ms.locfileid: "74295210"
 ## <a name="using-third-party-web-servers"></a>Использование веб-серверов сторонних производителей  
  При развертывании [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения с веб-сервера, отличного от IIS, может возникнуть проблема, если сервер возвращает неверный тип содержимого для ключевых [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] файлов, таких как манифест развертывания и манифест приложения. Чтобы устранить эту проблему, ознакомьтесь с документацией по веб-серверу, посвященной добавлению новых типов содержимого на сервер, и убедитесь в наличии всех сопоставлений расширений имен файлов, перечисленных в следующей таблице.  
   
-|Расширение имени файла|Тип содержимого|  
+|Расширение имени файла|Тип контента|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -133,9 +133,7 @@ ms.locfileid: "74295210"
   
  При использовании IIS можно легко включить сжатие HTTP. Однако при включении сжатия HTTP оно включается только для определенных типов файлов — а именно, HTML и текстовых файлов. Чтобы включить сжатие для сборок (DLL), XML (XML), манифестов развертывания (. Application) и манифестов приложений (. manifest), необходимо добавить эти типы файлов в список типов для сжатия IIS. Пока вы не добавите типы файлов в развертывание, будут сжиматься только текстовые и HTML-файлы.  
   
- Подробные инструкции для IIS см. [в разделе Указание дополнительных типов документов для СЖАТИЯ HTTP](https://go.microsoft.com/fwlink/?LinkId=178459).  
-  
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Устранение неполадок при развертывании ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 53408ba2345c1bb7b3fc3f99939736c7a697d2df
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 15869119ea867e41d3b91a1f046d1ffb995cd4e4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446639"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398423"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
@@ -70,14 +70,26 @@ ms.locfileid: "63446639"
     ![Параметры разработки Python в установщике Visual Studio 2019](media/installation-python-options-2019.png)
     ::: moniker-end
 
+    ::: moniker range="<=vs-2017"
     | Параметр | Описание |
     | --- | --- |
     | Дистрибутивы Python | Выберите любое сочетание доступных дистрибутивов 32- и 64-разрядных версий Python 2, Python 3, Miniconda, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество предварительно установленных пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.)  **Примечание**. Если вы установили дистрибутив без использования установщика Visual Studio, вам не нужно выполнять дополнительные действия. Visual Studio автоматически определяет существующие установки Python. См. [Окно "Окружения Python"](managing-python-environments-in-visual-studio.md#the-python-environments-window). Кроме того, если доступна более новая версия Python, чем показанная в установщике, то вы можете установить эту версию отдельно, и Visual Studio обнаружит ее. |
     | **Поддержка шаблонов Cookiecutter** | Устанавливает графический пользовательский интерфейс Cookiecutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. раздел [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Поддержка веб-приложений Python** | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](python-web-application-project-templates.md). |
     | **Поддержка Интернета вещей для Python** | Поддерживает разработку для Windows IoT Core с помощью Python. |
-    | **Встроенные средства разработки Python** | Устанавливает компилятор C++ и другие компоненты, необходимые для разработки собственных расширений для Python. См. статью [Создание расширения C++ для Python](working-with-c-cpp-python-in-visual-studio.md). Чтобы обеспечить полную поддержку С++, установите рабочую нагрузку **Разработка классических приложений на C++**. |
+    | **Встроенные средства разработки Python** | Устанавливает компилятор C++ и другие компоненты, необходимые для разработки собственных расширений для Python. См. статью [Создание расширения C++ для Python](working-with-c-cpp-python-in-visual-studio.md). Чтобы обеспечить полную поддержку С++, установите рабочую нагрузку **Разработка классических приложений на C++** . |
     | **Основные инструменты облачных служб Azure** | Обеспечивает дополнительную поддержку для разработки облачных служб Azure на Python. См. статью [Проекты облачных служб Azure](python-azure-cloud-service-project-template.md). |
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    | Параметр | Описание |
+    | --- | --- |
+    | Дистрибутивы Python | Выберите любое сочетание доступных дистрибутивов 32- и 64-разрядных версий Python 2, Python 3, Miniconda, Anaconda2 и Anaconda3, с которыми вы планируете работать. Каждый дистрибутив включает в себя интерпретатор, среду выполнения и библиотеки. В частности, Anaconda — это открытая платформа обработки и анализа данных, которая включает в себя множество предварительно установленных пакетов. (Вы можете в любой момент вернуться в установщик Visual Studio, чтобы добавить или удалить дистрибутивы.)  **Примечание**. Если вы установили дистрибутив без использования установщика Visual Studio, вам не нужно выполнять дополнительные действия. Visual Studio автоматически определяет существующие установки Python. См. [Окно "Окружения Python"](managing-python-environments-in-visual-studio.md#the-python-environments-window). Кроме того, если доступна более новая версия Python, чем показанная в установщике, то вы можете установить эту версию отдельно, и Visual Studio обнаружит ее. |
+    | **Поддержка шаблонов Cookiecutter** | Устанавливает графический пользовательский интерфейс Cookiecutter для поиска шаблонов, ввода их параметров и создания проектов и файлов. См. раздел [Использование расширения Cookiecutter](using-python-cookiecutter-templates.md). |
+    | **Поддержка веб-приложений Python** | Устанавливает средства для разработки веб-приложений, включая поддержку редактирования кода HTML, CSS и JavaScript, а также шаблоны проектов на основе платформ Bottle, Flask и Django. См. статью [Шаблоны веб-проектов Python](python-web-application-project-templates.md). |
+    | **Встроенные средства разработки Python** | Устанавливает компилятор C++ и другие компоненты, необходимые для разработки собственных расширений для Python. См. статью [Создание расширения C++ для Python](working-with-c-cpp-python-in-visual-studio.md). Чтобы обеспечить полную поддержку С++, установите рабочую нагрузку **Разработка классических приложений на C++** . |
+    | **Основные инструменты облачных служб Azure** | Обеспечивает дополнительную поддержку для разработки облачных служб Azure на Python. См. статью [Проекты облачных служб Azure](python-azure-cloud-service-project-template.md). |
+    ::: moniker-end
 
 1. После установки в установщике предлагаются команды для изменения, запуска, восстановления и удаления Visual Studio. Если доступны обновления для установленных компонентов Visual Studio, кнопка **Изменить** меняется на **Обновить**. (Команду **Изменить** в этом случае можно выбрать в раскрывающемся меню.) Запускать среду Visual Studio и установщик можно также из меню **Пуск** в Windows. Для этого выполните поиск по запросу "Visual Studio".
 
@@ -109,9 +121,8 @@ ms.locfileid: "63446639"
 
 1. Установите версию Инструментов Python для Visual Studio, соответствующую вашей версии Visual Studio.
 
-    - Visual Studio 2013: [PTVS 2.2 для Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2). В Visual Studio 2013 этот процесс можно запустить через диалоговое окно **Файл** > **Новый проект**.
-    - Visual Studio 2012: [PTVS 2.1 для Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
-    - Visual Studio 2010: [PTVS 2.1 для Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
+    - Visual Studio 2013: [PTVS 2.2.2 для Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2) В Visual Studio 2013 этот процесс можно запустить через диалоговое окно **Файл** > **Новый проект**.
+    - Visual Studio 2010 и 2012: [PTVS 2.1.1 для Visual Studio 2010 и 2012](https://github.com/Microsoft/PTVS/releases/v2.1.1)
 
 1. [Selecting and installing Python interpreters](installing-python-interpreters.md) (Установка и настройка интерпретаторов Python). Если интерпретатор уже установлен, но Visual Studio не обнаруживает его автоматически, см. руководство по [определению существующего окружения вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
@@ -137,8 +148,8 @@ ms.locfileid: "63446639"
   - 12.0 for Visual Studio 2013
   - 11.0 for Visual Studio 2012
   - 10.0 for Visual Studio 2010
-- &lt;PTVS_ver&gt; — это номер версии, например 2.2, 2.1, 2.0, 1.1, 1.5 или 1.0.
+- &lt;PTVS_ver&gt; — это номер версии, например 2.2.2, 2.1.1, 2.0, 1.5, 1.1 или 1.0.
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Пользовательские установки (для версии 1.5 и более ранних)
 
-Инструменты Python для Visual Studio 1.5 и более ранних версий можно установить только для текущего пользователя. Путь установки будет выглядеть так: *%LocalAppData%\Microsoft\VisualStudio\\<версия_Visual_Studio>\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*. Здесь &lt;версия_Visual_Studio&gt; и &lt;версия_PTVS&gt; имеют то же значение, которое описано выше.
+Инструменты Python для Visual Studio 1.5 и более ранних версий можно установить только для текущего пользователя. Путь установки будет выглядеть так: *%LocalAppData%\Microsoft\VisualStudio\\<версия_Visual_Studio>\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>* . Здесь &lt;версия_Visual_Studio&gt; и &lt;версия_PTVS&gt; имеют то же значение, которое описано выше.

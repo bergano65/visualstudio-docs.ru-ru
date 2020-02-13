@@ -4,24 +4,30 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3edd4694688011722b9975d299bd09cfb3832a9e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665084"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844318"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
 
 Команда **Создать модульные тесты** создает заглушки метода модульных тестов. Эта функция упрощает настройку тестового проекта, тестового класса и заглушки тестового метода в нем.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Команда меню **Создать модульные тесты** доступна только для управляемого кода, предназначенного для платформы .NET Framework (но не .NET Core).
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Команда меню **Создать модульные тесты** доступна только для управляемого кода.
+::: moniker-end
 
 Команда меню **Создать модульные тесты** является расширяемой и может использоваться для создания тестов для MSTest, MSTest V2, NUnit и xUnit.
 

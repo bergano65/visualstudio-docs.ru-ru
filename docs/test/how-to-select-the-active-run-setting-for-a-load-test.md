@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91ac811c1f55fdb9a662db679ebd2d038ecdd5dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653439"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588984"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Практическое руководство. Выбор активного параметра запуска для нагрузочного теста
 
@@ -26,7 +26,7 @@ ms.locfileid: "72653439"
 > [!NOTE]
 > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
-Если нагрузочный тест содержит только один узел параметров в папке **Параметры запуска**, этот узел всегда будет активным. Если тест содержит несколько узлов параметров, при запуске можно выбрать любой из них. См. [Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Если нагрузочный тест содержит только один узел параметров в папке **Параметры запуска**, этот узел всегда будет активным. Если тест содержит несколько узлов параметров, при запуске можно выбрать любой из них. См. практическое руководство по [ Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 В **редакторе тестовой нагрузки** активный параметр запуска определяется с помощью суффикса "[Active]".
 

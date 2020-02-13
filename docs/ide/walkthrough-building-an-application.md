@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647175"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115406"
 ---
 # <a name="walkthrough-build-an-application"></a>Пошаговое руководство. Создание приложения
 
@@ -154,7 +154,7 @@ ms.locfileid: "72647175"
 
      Сведения о сборке включают в себя время запуска сборки (находится в начале) и порядок обработки файлов. Они также включают фактический синтаксис компилятора, запускаемый Visual Studio при сборке.
 
-     Например, параметр [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) в сборке C# выводит указанный вами ранее код предупреждения **1762**, а также три других предупреждения.
+     Например, параметр [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) в сборке C# выводит указанный вами ранее код предупреждения **0168**, а также три других предупреждения.
 
      В сборке Visual Basic параметр [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) не включает в себя определенные исключаемые предупреждения, поэтому предупреждения не отображаются.
 

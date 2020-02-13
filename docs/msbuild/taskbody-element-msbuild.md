@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TaskBody element [MSBuild]
 - <TaskBody> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f788df1dd3cad2baddd6d2966b04195af01fe7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac4e04c1a75fe7afdebc984381e17d7e55913fd4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594985"
 ---
 # <a name="taskbody-element-msbuild"></a>Элемент TaskBody (MSBuild)
 Содержит данные, передаваемые в `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
@@ -47,7 +47,7 @@ ms.locfileid: "62938965"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Данные|Текст между тегами `TaskBody` отправляется в `TaskFactory` без изменений.|
+|Data|Текст между тегами `TaskBody` отправляется в `TaskFactory` без изменений.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 

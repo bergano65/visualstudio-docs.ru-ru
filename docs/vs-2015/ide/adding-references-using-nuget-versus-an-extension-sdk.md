@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63d9e6694fab400b1f29ed5e2706bb788a760357
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301270"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917346"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Добавление ссылок с использованием NuGet или расширения SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно предоставить пакет для использования в проектах Visual Studio, используя либо расширения NuGet для Visual Studio, либо пакет средств разработки программного обеспечения (SDK). В этом разделе описываются сходства и различия между двумя механизмами, которые помогут вам выбирать наиболее подходящий вариант для решения ваших задач.
 
-- NuGet — это основанная на открытом исходном коде система управления пакетами, которая упрощает процесс включения библиотек в решение проекта. Дополнительные сведения см. на странице [NuGet Overview](https://go.microsoft.com/fwlink/?LinkId=254877).
+- NuGet — это основанная на открытом исходном коде система управления пакетами, которая упрощает процесс включения библиотек в решение проекта. Дополнительные сведения см. на странице [NuGet Overview](/nuget/what-is-nuget).
 
 - Пакет SDK — это коллекция файлов, которая обрабатывается Visual Studio как единый компонент. В диалоговом окне **Диспетчер ссылок** приводится список всех пакетов SDK, относящихся к проекту, который открыт при отображении диалогового окна. Добавив пакет SDK в проект, вы можете обращаться ко всему его содержимому с помощью IntelliSense, **панели элементов**, конструкторов, **обозревателя объектов**, MSBuild, в процессе развертывания, отладки и упаковки. Дополнительные сведения см. в статье [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Создание пакета средств разработки программного обеспечения).
 
@@ -68,7 +68,7 @@ ms.locfileid: "74301270"
 |Механизм поддерживает автообновление диспетчера пакетов.|Н/Д|Пакет SDK обновляется с помощью MSBuild.|Y||
 |Механизм поддерживает упрощенный формат манифеста.|Y|SDKManifest.xml поддерживает множество атрибутов, однако обычно требуется их небольшая часть.|Y||
 |Механизм доступен для всех выпусков Visual Studio.|Y|Пакет SDK поддерживает все выпуски Visual Studio — от Visual Studio Express до [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|Y|NuGet поддерживает все выпуски Visual Studio — от Visual Studio Express до [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|
-|Механизм доступен для всех типов проектов.|в|Пакет SDK поддерживает приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], начиная с [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Нет|Можно просмотреть список доступных проектов.|
+|Механизм доступен для всех типов проектов.|Нет|Пакет SDK поддерживает приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], начиная с [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Нет|Можно просмотреть список доступных проектов.|
 
 ## <a name="see-also"></a>См. также
  [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)

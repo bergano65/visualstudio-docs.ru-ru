@@ -2,17 +2,17 @@
 title: Работа с несколькими учетными записями пользователя
 ms.date: 07/23/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647069"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027597"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Работа с несколькими учетными записями пользователя
 

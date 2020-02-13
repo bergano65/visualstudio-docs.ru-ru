@@ -2,7 +2,7 @@
 title: Установка Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапной установке среды Visual Studio.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,25 +13,25 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018850"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114568"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
 ::: moniker range="vs-2019"
 
-Вас приветствует Visual Studio 2019! В этой версии можно легко выбрать и установить только необходимые компоненты. Поскольку она занимает меньше памяти, она быстро устанавливается и при этом меньше влияет на систему.
+Вас приветствует Visual Studio 2019! В этой версии можно легко выбрать и установить только необходимые компоненты. Поскольку она занимает меньше памяти, она быстро устанавливается и при установке меньше влияет на систему.
 
 ::: moniker-end
 
@@ -98,7 +98,7 @@ ms.locfileid: "72018850"
 
 ::: moniker-end
 
-## <a name="step-2---download-visual-studio"></a>Шаг 2.Скачивание Visual Studio
+## <a name="step-2---download-visual-studio"></a>Шаг 2. Скачивание Visual Studio
 
 Теперь скачайте файл начального загрузчика Visual Studio.
 
@@ -131,7 +131,7 @@ ms.locfileid: "72018850"
 
 2. Мы попросим вас принять [условия лицензии](https://visualstudio.microsoft.com/license-terms/) и [заявление о конфиденциальности](https://privacy.microsoft.com/privacystatement) корпорации Майкрософт. Нажмите **Продолжить**.
 
-   ![Условия лицензии и заявление о конфиденциальности](media/privacy-and-license-terms.png "Условия лицензии и заявление о конфиденциальности корпорации Майкрософт")
+   ![Условия лицензии и заявление о конфиденциальности](media/privacy-and-license-terms.png "Условия лицензии и заявление о конфиденциальности Майкрософт")
 
 ## <a name="step-4---choose-workloads"></a>Шаг 4. Выбор рабочих нагрузок
 
@@ -139,7 +139,7 @@ ms.locfileid: "72018850"
 
  ::: moniker range="vs-2017"
 
-1. Найдите нужную рабочую нагрузку на экране **Установка Visual Studio**.
+1. Найдите нужную рабочую нагрузку в **Visual Studio Installer**.
 
    ![Visual Studio 2017: Установка рабочей нагрузки](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ ms.locfileid: "72018850"
 
 ::: moniker range="vs-2019"
 
-1. После установки новых рабочих нагрузок и компонентов выберите команду **Запуск**.
+1. Найдите нужную рабочую нагрузку в **Visual Studio Installer**.
 
    ![Visual Studio 2019: Установка рабочей нагрузки](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -210,7 +210,7 @@ ms.locfileid: "72018850"
 
 **Новая возможность в версии 15.7**. Теперь можно уменьшить место, занимаемое установкой Visual Studio на системном диске. Вы можете переместить кэш загрузки, общие компоненты, пакеты SDK и средства на другие диски и оставить Visual Studio на самом быстром диске.
 
-  ![Visual Studio 2017 — изменение расположения установки](media/installation-options-by-location.png "Изменение расположения установки")
+  ![Visual Studio 2017 — изменение расположений установки](media/installation-options-by-location.png "Изменение расположения установки")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ ms.locfileid: "72018850"
 
 Вы можете уменьшить место, занимаемое установкой Visual Studio на системном диске. Вы можете переместить кэш загрузки, общие компоненты, пакеты SDK и средства на другие диски и оставить Visual Studio на самом быстром диске.
 
-  ![Visual Studio 2019 — выбор расположения установки](media/vs-2019/vs-installer-installation-locations.png "Выберите расположение установки")
+  ![Visual Studio 2019 — выбор расположений установки](media/vs-2019/vs-installer-installation-locations.png "Выбор расположения установки")
 
 ::: moniker-end
 

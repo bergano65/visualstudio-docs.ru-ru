@@ -22,17 +22,17 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b8c0a4269dcc2b7e647effb10432a984396f395d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298923"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918006"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю версию этой статьи можно найти в [IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/intellitrace) .  
+Последнюю версию этой статьи можно найти в [IntelliTrace](/visualstudio/debugger/intellitrace) .  
   
 Сократите затраты времени на отладку приложения, используя IntelliTrace для записи и отслеживания истории выполнения кода. Вы сможете без труда находить ошибки, поскольку IntelliTrace позволяет выполнять следующие задачи.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "74298923"
   
   IntelliTrace можно использовать в выпуске Visual Studio Enterprise (но не в выпусках Professional или Community).  
   
-## <a name="what-do-you-want-to-do"></a>Выберите действие  
+## <a name="what-do-you-want-to-do"></a>Что необходимо сделать?  
   
 |||  
 |-|-|  
@@ -128,7 +128,7 @@ ms.locfileid: "74298923"
   
 - **События .NET Framework**  
   
-   По умолчанию IntelliTrace записывает наиболее распространенные события .NET Framework. Пример.  
+   По умолчанию IntelliTrace записывает наиболее распространенные события .NET Framework. Например:  
   
   - при доступе к файлу IntelliTrace записывает имя файла;  
   
@@ -136,11 +136,11 @@ ms.locfileid: "74298923"
   
 - **События приложений SharePoint 2010 и SharePoint 2013**  
   
-   Можно записать события профиля пользователя и подмножество событий унифицированной системы ведения журнала (ULS) для приложений SharePoint 2010 и 2013, выполняемых вне Visual Studio. Можно сохранить эти события в ITRACE-файле. Требуется Visual Studio Enterprise 2015, Предыдущая версия Visual Studio Ultimate или [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384) выполняться в режиме **трассировки** .  
+   Можно записать события профиля пользователя и подмножество событий унифицированной системы ведения журнала (ULS) для приложений SharePoint 2010 и 2013, выполняемых вне Visual Studio. Можно сохранить эти события в ITRACE-файле. Требуется Visual Studio Enterprise 2015, Предыдущая версия Visual Studio Ultimate или [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771) выполняться в режиме **трассировки** .  
   
    При открытии ITRACE-файла введите идентификатор корреляции SharePoint для поиска соответствующего веб-запроса, просмотра записанных событий и запуска отладки из указанного события. Если файл содержит необработанные исключения, можно выбрать идентификатор корреляции для запуска отладки исключения.  
   
-   См. следующие разделы:  
+   См.:  
   
   - [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
@@ -174,7 +174,7 @@ ms.locfileid: "74298923"
   
  Сбор сведений о вызовах может значительно замедлить выполнение приложения. Это также может увеличить размер любых файлов журнала IntelliTrace (ITRACE-файлов), которые сохраняются на диск. Чтобы свести к минимуму указанные эффекты, собирайте информацию о вызовах только в важных для вас модулях.  Чтобы изменить максимальный размер ITRACE-файлов, последовательно выберите **Сервис**, **Параметры**, **IntelliTrace**, **Дополнительно**. См. раздел [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>В данном разделе  
  [Возможности IntelliTrace](../debugger/intellitrace-features.md)  
   
  [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
@@ -186,7 +186,7 @@ ms.locfileid: "74298923"
  [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Блоги  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
 ### <a name="forums"></a>Форумы  
- [Visual Studio Diagnostics](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio Diagnostics](https://social.msdn.microsoft.com/Forums/vsdebug)

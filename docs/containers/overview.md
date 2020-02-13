@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127189"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916564"
 ---
 # <a name="container-tools-in-visual-studio"></a>Средства для контейнеров в Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "74127189"
 
 Поддержка Docker в Visual Studio оптимизировалась с каждым выпуском программы с учетом пожеланий пользователей. Есть два уровня поддержки Docker, которые можно добавить в проект. Набор поддерживаемых возможностей зависит от типа проекта и версии Visual Studio. Если вам необходим контейнер для работы над отдельным проектом, а не оркестрация, для некоторых типов проектов можно просто добавить поддержку Docker.  Следующий уровень — это поддержка оркестрации контейнеров, в рамках которой добавляются соответствующие файлы поддержки для определенного оркестратора по выбору.  
 
-В Visual Studio 2017 в качестве служб оркестрации контейнеров можно использовать Docker Compose и Service Fabric.  Кроме того, вы можете применить Kubernetes, если установить [Средства Visual Studio для Kubernetes](https://aka.ms/get-vsk8stools).
+В Visual Studio 2017 в качестве служб оркестрации контейнеров можно использовать Docker Compose и Service Fabric.  Кроме того, вы можете применить Kubernetes, если установить [Средства Visual Studio для Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 
 > [!NOTE]
 > Если вы используете версию Visual Studio 2017, предшествующую 15.8, или шаблон проекта .NET Framework (не .NET Core), при добавлении поддержки Docker поддержка оркестрации с помощью Docker Compose добавляется автоматически. Поддержка оркестрации контейнеров с помощью Docker Compose автоматически добавляется в Visual Studio 2017 в версиях с 15.0 по 15.7, а также в проектах .NET Framework.
@@ -44,7 +44,7 @@ ms.locfileid: "74127189"
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**.
-* [Средства разработки .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) для разработки с использованием .NET Core 2.2.
+* [Средства разработки .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) для разработки с использованием .NET Core.
 * Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="docker-support-in-visual-studio"></a>Поддержка Docker в Visual Studio
@@ -56,7 +56,7 @@ ms.locfileid: "74127189"
 В Visual Studio 2019 в качестве служб оркестрации контейнеров можно использовать Docker Compose, Kubernetes и Service Fabric.
 
 > [!NOTE]
-> Если вы используете полный шаблон проекта консоли .NET Framework, при добавлении поддержки Docker автоматически добавляется поддержка оркестрации с помощью Docker Compose.
+> Если вы используете полный шаблон консольного проекта .NET Framework, после создания проекта поддерживается вариант **Добавление поддержки оркестратора контейнеров** с возможностью использования Service Fabric или Docker Compose. Варианты добавления поддержки при создании проекта и **добавления поддержки Docker** для одного проекта без оркестрации недоступны.
 
 В Visual Studio 2019 версии 16.4 и более поздних версиях доступно окно **Контейнеры**, которое позволяет просматривать запущенные контейнеры, доступные образы, переменные среды, журналы и сопоставления портов, проверять файловую систему, подключать отладчик или открывать окно терминала в среде контейнера. См. статью [Сведения о просмотре и диагностике контейнеров и образов в Visual Studio](view-and-diagnose-containers.md).
 
@@ -116,7 +116,7 @@ ms.locfileid: "74127189"
 ## <a name="kubernetes-support"></a>Поддержка Kubernetes
 
 ::: moniker range="vs-2017"
-Чтобы добавить поддержку Kubernetes, установите [Средства Visual Studio для Kubernetes](https://aka.ms/get-vsk8stools).
+Чтобы добавить поддержку Kubernetes, установите [Средства Visual Studio для Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
 Поддержка Kubernetes позволяет подключить локальный проект к кластеру Kubernetes, работающему в [Службе Azure Kubernetes (AKS)](/azure/aks), а также изменять и отлаживать работу служб, запущенных в AKS, с помощью Visual Studio.  Эту возможность обеспечивает [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). В целях разработки Azure Dev Spaces также позволяет настраивать отдельные ветви служб, именуемые *пространствами разработки*. Это дает возможность изолировать рабочие службы от разрабатываемых версий и четко разграничивать отдельные версии.

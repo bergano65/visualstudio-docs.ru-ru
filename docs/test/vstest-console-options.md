@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e46cd6f3589e50959ee521552bb66878147cf604
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659713"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919023"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 
@@ -26,11 +26,13 @@ ms.locfileid: "72659713"
 >
 > Для выполнения автоматических тестов на компьютере с архитектурой ARM необходимо использовать *VSTest.Console.exe*.
 
+Откройте [Командную строку разработчика](/dotnet/framework/tools/developer-command-prompt-for-vs), чтобы использовать программу командной строки. Это средство можно также найти в папке *%Program Files(x86)%\Microsoft Visual Studio\\<версия\>\\<выпуск\>\common7\ide\CommonExtensions\\<Платформа | Microsoft>* .
+
 ## <a name="general-command-line-options"></a>Общие параметры командной строки
 
 В следующей таблице перечислены все параметры *VSTest.Console.exe* и приведено их краткое описание. Аналогичные данные можно получить, введя `VSTest.Console/?` в командной строке.
 
-| Параметр | ОПИСАНИЕ |
+| Параметр | Описание |
 |---|---|
 |**[*тестовых*]**|Запускает тесты из указанных файлов. Для разделения имен тестовых файлов используйте пробелы.<br />Примеры: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*имя файла*]**|Запуск тестов с дополнительными параметрами, например со сборщиками данных.<br />Пример: `/Settings:Local.RunSettings`|
@@ -44,7 +46,7 @@ ms.locfileid: "72659713"
 |**/Framework: [*версия платформы*]**|Целевая версия .NET, которую следует использовать для выполнения тестов.<br />Примеры значений: `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />Если целевая версия платформы задана как **Framework35**, тесты выполняются в "режиме совместимости" среды CLR 4.0.<br />Пример: `/Framework:framework40`|
 |**/TestCaseFilter:[*выражение*]**|Запуск тестов, соответствующих заданному выражению.<br /><Выражение\> формата <свойство\>=<значение\>[\|<Выражение\>].<br />Пример: `/TestCaseFilter:"Priority=1"`<br />Пример: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Параметр командной строки **/TestCaseFilter** нельзя использовать с параметром командной строки **/Tests**. <br />Сведения о создании и использовании выражений см. в разделе [Фильтр TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Отображает сведения об использовании.|
-|**/Logger:[*uri/понятное имя*]**|Укажите средство ведения журнала результатов тестирования.<br />Пример чтобы регистрировать результаты в файле результатов теста Visual Studio (TRX), используйте **/Logger:trx**.<br />Пример чтобы опубликовать результаты теста в TFS, используйте TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url проекта\>;**<br />**BuildName=<имя сборки\>;**<br />**TeamProject=< имя проекта\>;**<br />**[;Platform=\<"Любой ЦП" по умолчанию>]**<br />**[;Flavor=\<"Отладка" по умолчанию>]**<br />**[;RunTitle=<заголовок\>]**|
+|**/Logger:[*uri/понятное имя*]**|Укажите средство ведения журнала результатов тестирования.<br />Пример. Чтобы записать результаты в файл результатов теста Visual Studio (TRX), воспользуйтесь<br />**/Logger:trx**<br />**[;LogFileName=\<По умолчанию уникальное имя файла>]**<br />Пример. чтобы опубликовать результаты теста в TFS, используйте TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url проекта\>;**<br />**BuildName=<имя сборки\>;**<br />**TeamProject=< имя проекта\>;**<br />**[;Platform=\<"Любой ЦП" по умолчанию>]**<br />**[;Flavor=\<"Отладка" по умолчанию>]**<br />**[;RunTitle=<заголовок\>]**<br />Примечание. Средство ведения журнала TfsPublisher не рекомендуется к использованию в Visual Studio 2017 и не поддерживается в более поздних версиях Visual Studio. В таких сценариях следует использовать вместо этого пользовательское средство ведения журнала. При использовании этого средства ведения журнала включается устаревший режим.|
 |**/ListTests:[*имя файла*]**|Перечисление обнаруженных тестов из указанного контейнера тестов.|
 |**/ListDiscoverers**|Перечисление установленных средств обнаружения тестов.|
 |**/ListExecutors**|Перечисление установленных исполнителей тестов.|
@@ -55,7 +57,7 @@ ms.locfileid: "72659713"
 |**/ResultsDirectory:[*path*]**|По указанному пути будет создан каталог с результатами теста, если этот путь не существует.<br />Пример: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|Идентификатор родительского процесса, отвечающего за запуск текущего процесса.|
 |**/Port:[*port*]**|Порт для подключения через сокет и получения сообщений о событиях.|
-|**/Collect:[*dataCollector friendlyName*]**|Включает сборщик данных для тестового запуска. [Дополнительные сведения](https://aka.ms/vstest-collect).|
+|**/Collect:[*dataCollector friendlyName*]**|Включает сборщик данных для тестового запуска. [Дополнительные сведения](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > Регистр в параметрах и значениях не учитывается.

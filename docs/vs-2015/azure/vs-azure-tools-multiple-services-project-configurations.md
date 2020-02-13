@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299016"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915587"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Настройка проекта Azure в Visual Studio для использования нескольких конфигураций службы
 
@@ -33,7 +33,7 @@ ms.locfileid: "74299016"
 
 ## <a name="configuration-page"></a>Страница «Конфигурация»
 
-### <a name="service-configuration"></a>Конфигурация службы
+### <a name="service-configuration"></a>Настройка службы
 
 Позволяет выбрать, на какой файл `ServiceConfiguration.*.cscfg` влияют изменения. По умолчанию это файл Local и Cloud. Вы можете использовать команду **Управление...** для копирования, переименования или удаления файлов конфигурации. Эти файлы будут добавлены в ваш проект облачной службы и появятся в **обозревателе решений**. Однако переименовать или удалить конфигурации можно только с помощью текущего элемента управления.
 
@@ -57,7 +57,7 @@ ms.locfileid: "74299016"
 
 ## <a name="settings-page"></a>Страница "Параметры"
 
-На странице **Параметры** можно добавлять параметры в конфигурацию в виде пары "имя — значение". С помощью кода, который выполняется в роли, и классов, предоставляемых [управляемой библиотекой Azure ](https://go.microsoft.com/fwlink?LinkID=171026), в частности метода [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx), можно считывать значения параметров конфигурации во время его выполнения.
+На странице **Параметры** можно добавлять параметры в конфигурацию в виде пары "имя — значение". С помощью кода, который выполняется в роли, и классов, предоставляемых [управляемой библиотекой Azure ](/previous-versions/azure/dn602775(v=azure.11)), в частности метода [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)), можно считывать значения параметров конфигурации во время его выполнения.
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Настройка строки подключения для учетной записи хранения
 

@@ -1,5 +1,5 @@
 ---
-title: предупреждения переносимости
+title: Portability Warnings
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,23 +10,23 @@ helpviewer_keywords:
 - warnings, portability
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3e1959066f81663d66e8af2af8039080d8cace6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 61efbc2022b2c0cd60e005936e148bbaf1d900a4
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649130"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091734"
 ---
-# <a name="portability-warnings"></a>предупреждения переносимости
+# <a name="portability-warnings"></a>Portability Warnings
 Предупреждения переносимости поддерживают переносимость в разных операционных системах.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
 
-|Правило|Описание|
+|Правило|Description|
 |----------|-----------------|
 |[CA1900: поля типа значения должны быть переносимыми](../code-quality/ca1900.md)|Это правило проверяет, должны ли структуры, объявленные с помощью явного атрибута макета, правильно выстроиться при маршалировании в неуправляемый код в 64-разрядных операционных системах.|
 |[CA1901: объявления P/Invoke должны быть переносимыми](../code-quality/ca1901.md)|Это правило оценивает размер каждого параметра и возвращаемое значение P/Invoke и проверяет правильность их размера при маршалировании в неуправляемый код в 32-разрядных и 64-разрядных операционных системах.|

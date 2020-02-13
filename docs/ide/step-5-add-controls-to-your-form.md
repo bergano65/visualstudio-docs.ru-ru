@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118996"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589972"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
 
@@ -74,7 +74,7 @@ ms.locfileid: "71118996"
 
    Кнопки теперь должны иметь соответствующий размер и быть расположены в правильном порядке. (Пока выделены все четыре кнопки, можно одновременно изменить все четыре свойства **AutoSize**.) На рисунке ниже показаны эти четыре кнопки.
 
-    ![Программа просмотра изображений с четырьмя кнопками](../ide/media/express_autosize.png)<br/>***Программа просмотра изображений*** *с четырьмя кнопками*
+    ![Программа просмотра изображений с четырьмя кнопками](../ide/media/express_autosize.png)<br/>***Средство просмотра изображений*** *с четырьмя кнопками*
 
 1. Теперь снова запустите программу, чтобы увидеть изменения.
 

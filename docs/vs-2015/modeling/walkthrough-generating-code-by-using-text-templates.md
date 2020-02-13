@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295507"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918581"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Пошаговое руководство. Создание кода с помощью текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74295507"
  В данном примере проекта шаблон считывает пример файла XML и создает классы, соответствующие каждому типу узла. В написанном вручную коде эти классы можно использовать для перехода по XML-файлу. Можно также запустить приложение для любых других файлов, использующих те же типы узлов. Пример XML-файла служит для предоставления примеров всех типов узлов, с которыми должно работать ваше приложение.
 
 > [!NOTE]
-> Приложение [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
+> Приложение [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.
 
  Ниже приведен пример файла:
 
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>Добавление файла кода тестирования
- Добавьте в проект файл C# и напишите в нем пример кода, который вы хотите иметь возможность записать. Пример.
+ Добавьте в проект файл C# и напишите в нем пример кода, который вы хотите иметь возможность записать. Например:
 
 ```
 using System;
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>Устранение неполадок для текстового шаблона
  Если при преобразовании или компиляции шаблона в **списке ошибок** появились ошибки или выходной файл был создан неправильно, эти неполадки текстового шаблона можно устранить с помощью методов, описанных в статье [Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Создание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)

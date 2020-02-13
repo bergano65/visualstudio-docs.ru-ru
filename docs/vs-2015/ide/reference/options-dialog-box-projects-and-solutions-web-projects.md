@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5456ef4935feb2ad6f08e2a0b7ff24ad58089e1f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 90da4845ca5edcf68a977ea79a73e06fa4c4455b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297869"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917674"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>«Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,6 +29,6 @@ ms.locfileid: "74297869"
 > Доступные в диалоговых окнах параметры, а также названия и расположение команд меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Эта страница справки была написана с учетом **веб-параметров**. Чтобы просмотреть или изменить настройки, выберите **Настройки импорта и экспорта** в меню **Сервис**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Параметры
- **Использовать 64-разрядную версию IIS Express для веб-сайтов и проектов** Выберите этот параметр, чтобы использовать IIS Express вместо Visual Studio Development Server. Дополнительные сведения см. в разделе [Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) (Знакомство с IIS Express) и [IIS Express Overview](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview) (Обзор IIS Express). По умолчанию этот параметр отключен.
+ **Использовать 64-разрядную версию IIS Express для веб-сайтов и проектов** Выберите этот параметр, чтобы использовать IIS Express вместо Visual Studio Development Server. Дополнительные сведения см. в разделе [Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) (Знакомство с IIS Express) и [IIS Express Overview](/iis/extensions/introduction-to-iis-express/iis-express-overview) (Обзор IIS Express). Этот параметр отключен по умолчанию.
 
  **Предупреждать перед запуском веб-приложений, если в списке ошибок есть ошибки** Если этот флажок установлен, вы получите предупреждение при попытке запустить веб-приложение, если оно не будет скомпилировано без ошибок.

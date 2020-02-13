@@ -23,14 +23,14 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297142"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850123"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
+# <a name="uml-sequence-diagrams-guidelines"></a>UML-схемы последовательностей: правила работы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В Visual Studio можно нарисовать *схему последовательностей* , чтобы отобразить взаимодействие. Взаимодействие — это последовательность сообщений между типичными экземплярами классов, компонентов, подсистем или субъектов.
@@ -39,7 +39,7 @@ ms.locfileid: "74297142"
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="in-this-topic"></a>Содержание раздела
+## <a name="in-this-topic"></a>Содержание
  [Использование UML-схем последовательностей](#Using)
 
  [Основные шаги для рисования схем последовательностей](#BasicSteps)
@@ -261,7 +261,7 @@ ms.locfileid: "74297142"
 
 |**Для этой цели**|**Используйте этот формат**|
 |--------------------------|-------------------------|
-|Анонимный экземпляр типа.<br /><br /> Используйте его, если для каждого типа имеется только одна линия жизни.|*Имени*|
+|Анонимный экземпляр типа.<br /><br /> Используйте его, если для каждого типа имеется только одна линия жизни.|*typeName*|
 |Именованный экземпляр типа.<br /><br /> Используйте его, если необходимо показать последовательность, включающую несколько экземпляров одного типа.|*имя_объекта*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Создание линий жизни на основе типов
@@ -442,5 +442,5 @@ ms.locfileid: "74297142"
 
 5. Чтобы добавить во фрагмент новые сообщения, используйте инструменты создания сообщений либо скопируйте и вставьте их во фрагмент.
 
-## <a name="see-also"></a>См. также
- [UML-схемы последовательностей. ссылки для](../modeling/uml-sequence-diagrams-reference.md) [изменения моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы вариантов использования UML: ссылки на](../modeling/uml-use-case-diagrams-reference.md) UML-схемы [классов:](../modeling/uml-class-diagrams-reference.md) ссылки на UML- [схемы компонентов:](../modeling/uml-component-diagrams-reference.md) Справочник по схемам [компонентов UML](../modeling/uml-component-diagrams-reference.md) : справочное [видео. изменение наброска взаимодействия с помощью схем последовательностей](https://go.microsoft.com/fwlink/?LinkId=201113)
+## <a name="see-also"></a>См. также раздел
+ [UML-схемы последовательностей. ссылки для](../modeling/uml-sequence-diagrams-reference.md) [изменения моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md) [схемы вариантов использования UML: ссылки на](../modeling/uml-use-case-diagrams-reference.md) UML-схемы [классов:](../modeling/uml-class-diagrams-reference.md) ссылки на UML- [схемы компонентов:](../modeling/uml-component-diagrams-reference.md) Справочник по схемам [компонентов UML](../modeling/uml-component-diagrams-reference.md) : справочное [видео. изменение наброска взаимодействия с помощью схем последовательностей](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (C++), Link task
 - Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911262"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592208"
 ---
 # <a name="link-task"></a>Связывание задачи
 Создает оболочку для компоновщика Microsoft C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
@@ -607,7 +607,7 @@ ms.locfileid: "72911262"
 
 - **PreprocessOutput**
 
-  Необязательный параметр `ITaskItem[]` .
+  Необязательный параметр `ITaskItem[]`.
 
   Определяет массив выходных элементов препроцессора, которые могут использоваться и создаваться задачами.
 

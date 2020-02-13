@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Узнайте, как войти в вашу подписку Visual Studio с помощью учетной записи GitHub.
-ms.openlocfilehash: 6279c9399a42bc07579f48c887987b4b662da9da
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315375"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944197"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Вход в подписки Visual Studio с учетной записью GitHub 
 
@@ -49,7 +49,7 @@ ms.locfileid: "68315375"
 Ответ.  Нет. Пароль GitHub останется без изменений. У вас просто будет еще один способ входа в учетную запись Майкрософт. При каждом входе с помощью адреса электронной почты вам будет предложено выполнить вход с использованием пароля учетной записи Майкрософт или перейти на сайт GitHub и выполнить вход там. Если вы хотите добавить пароль, настоятельно рекомендуется, чтобы он отличался от пароля для учетной записи GitHub.
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>Вопрос: Я хочу добавить приложение Authenticator для учетной записи, созданной с помощью GitHub.  Можно ли это сделать?
-Ответ.  Без проблем. Просто скачайте приложение и войдите с помощью адреса электронной почты. Вам будет предложено выбрать в качестве учетных данных [приложение Authenticator](https://go.microsoft.com/fwlink/?linkid=2090219) или GitHub.
+Ответ.  Без проблем. Просто скачайте приложение и войдите с помощью адреса электронной почты. Вам будет предложено выбрать в качестве учетных данных [приложение Authenticator](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6) или GitHub.
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>Вопрос: Для учетных записей GitHub и Майкрософт включена двухфакторная проверка подлинности, но при входе в учетную запись Майкрософт по-прежнему выводится требование на прохождение двойной проверки подлинности.  Почему?
 Ответ. Из-за ограничений безопасности корпорация Майкрософт считает вход с помощью учетных данных GitHub однофакторной проверкой, даже если включена двухфакторная проверка подлинности. Поэтому необходимо будет пройти проверку подлинности еще раз для учетной записи Майкрософт. 

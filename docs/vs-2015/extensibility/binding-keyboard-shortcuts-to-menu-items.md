@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295613"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852218"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Привязка сочетаний клавиш к пунктам меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "74295613"
   
    В большинстве случаев **SHIFT** не следует использовать без второго модификатора, так как при нажатии на него наиболее буквенно-цифровой ключ вводится прописная буква или символ.  
   
-   С помощью кодов виртуальных клавиш можно получить доступ к специальным ключам, которые не содержат связанных с ними символов, например, функциональных клавиш и клавиши **Backspace** . Дополнительные сведения см. в разделе [коды виртуальных клавиш](https://go.microsoft.com/fwlink/?LinkID=105932).  
+   С помощью кодов виртуальных клавиш можно получить доступ к специальным ключам, которые не содержат связанных с ними символов, например, функциональных клавиш и клавиши **Backspace** . Дополнительные сведения см. в разделе [коды виртуальных клавиш](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
    Чтобы сделать команду доступной в редакторе Visual Studio, присвойте атрибуту `editor` значение `guidVSStd97`.  
   
@@ -107,5 +107,5 @@ ms.locfileid: "74295613"
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)

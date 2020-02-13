@@ -3,17 +3,17 @@ title: Использование хранимых процедур в LINQ to S
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 019bf6b115fc526e39a3bc65bd9d0607c1a976db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8028171cf3255de3484bb89a374bfc22a2625b1a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648390"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586553"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)
 
@@ -63,7 +63,7 @@ ms.locfileid: "72648390"
 
 Чтобы возвратиться к использованию заданной по умолчанию логики среды выполнения для обновлений, нажмите кнопку с многоточием рядом с командами **Вставить**, **Обновить** или **Удалить** в окне **Свойства** и потом выберите **Использовать среду выполнения** в диалоговом окне **Настройка поведения**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Методы DataContext](../data-tools/datacontext-methods-o-r-designer.md)

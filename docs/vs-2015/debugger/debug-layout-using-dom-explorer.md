@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298394"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850077"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Отладка макета с использованием проводника DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Video windows_and_phone_content. png "windows_and_phone_content")  
   
- На вкладке **Макет** проводника DOM отображается [рамочная модель CSS](https://go.microsoft.com/fwlink/?LinkID=238778) для выбранного элемента в приложении [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , приложении Магазина Windows Phone или приложении, созданном с помощью инструментов Visual Studio для Apache Cordova. С помощью визуального представления рамочной модели можно находить и изменять значения, связанные с макетом и влияющие на внешний вид элементов.  
+ На вкладке **Макет** проводника DOM отображается [рамочная модель CSS](https://www.w3.org/TR/CSS2/box.html) для выбранного элемента в приложении [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , приложении Магазина Windows Phone или приложении, созданном с помощью инструментов Visual Studio для Apache Cordova. С помощью визуального представления рамочной модели можно находить и изменять значения, связанные с макетом и влияющие на внешний вид элементов.  
   
 > [!TIP]
 > Изменения, вносимые на вкладке **Макет** , не являются постоянными. Вы можете внести постоянные изменения в исходный код, а затем обновить приложение, нажав кнопку **Обновить приложение Windows** (только для приложений Магазина Windows и Магазина Windows Phone) на панели инструментов «Отладка». Это позволит избежать перезапуска отладчика.  
@@ -126,7 +126,7 @@ ms.locfileid: "74298394"
   
 15. Перейдите в эмулятор телефона или в имитатор. Обновленные значения margin-left применяются к изображениям раздела 4. Эти значения также обновляются на вкладке **Вычисленные** в правиле margin-left.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Отладка стилей CSS с помощью ПРОВОДНИКА DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Просмотр прослушивателей событий DOM](../debugger/view-dom-event-listeners.md)

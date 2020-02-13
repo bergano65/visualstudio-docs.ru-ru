@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8613633289189bec5e403ec76b78731d5e3ecc4f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983747"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594634"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Схемы зависимостей: рекомендации
 
@@ -77,7 +77,7 @@ ms.locfileid: "72983747"
 
 При обновлении незнакомого приложения можно также создать карты кода. Они помогают обнаружить закономерности и зависимости при анализе кода. Воспользуйтесь обозревателем решений, чтобы изучить пространства имен и классы, которые часто находятся в точном соответствии с существующими слоями. Назначьте эти артефакты кода слоям, перетащив их из обозреватель решений в схемы зависимостей. Затем можно использовать схемы зависимостей, которые помогут обновить код и обеспечить его соответствие дизайну.
 
-Пример
+См.:
 
 - [Создание схем зависимостей на основе кода](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -147,7 +147,7 @@ ms.locfileid: "72983747"
 
 После изменения схемы ее можно проверить на соответствие коду вручную в любое время или автоматически при каждой сборке.
 
-Пример
+См.:
 
 - [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)
 
@@ -172,7 +172,7 @@ ms.locfileid: "72983747"
 
 Чтобы обеспечить соответствие будущих изменений в коде схемам зависимостей, включите проверку слоев в стандартный процесс сборки решения. Каждый раз, когда другие члены команды создают решение, любые различия между зависимостями в коде и схемой зависимостей будут отображаться как ошибки сборки. Дополнительные сведения о включении проверки слоев в процесс сборки см. в разделе [Проверка кода с помощью схем зависимостей](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)
 - [Создание схем зависимостей на основе кода](../modeling/create-layer-diagrams-from-your-code.md)

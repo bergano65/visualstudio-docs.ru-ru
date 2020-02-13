@@ -1,16 +1,16 @@
 ---
 title: Visual Studio для Mac для пользователей Windows
 description: Описание специальных возможностей в Visual Studio для Mac и способов их включения.
-author: alclark
-ms.author: alcl
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/25/2019
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: 3306cdec93b501ad2006bbee2ceca3bf42514fe9
-ms.sourcegitcommit: 7739f36507b4762eea83c692102bdc5188460f28
+ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71315079"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984269"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio для Mac для пользователей Windows
 

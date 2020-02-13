@@ -1,5 +1,5 @@
 ---
-title: Customize code maps by editing the DGML files
+title: Настройка карт кода путем редактирования DGML-файлов
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748468"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590518"
 ---
-# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
+# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Настройка карт кода путем редактирования DGML-файлов
 
 Чтобы настроить карту кода, можно изменить его файл на языке разметки (. DGML). Например, можно изменить элементы, чтобы указать пользовательские стили, назначить свойства и категории кодовым точкам и связям либо связать узлы с документы или URL-адреса с кодовыми точками или связями. Дополнительные сведения об элементах DGML см. в разделе [Справочник по языку для направляемых графов (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).
 
@@ -47,7 +47,7 @@ ms.locfileid: "72748468"
 
     Чтобы добавить новую группу, найдите раздел `<Nodes>`. Добавьте новый элемент `<Node/>`.
 
-3. В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Пример:
+3. В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Например:
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ ms.locfileid: "72748468"
 
    - Атрибут `Category`, который определяет отношение `Contains` между кодовой точкой группы и ее дочерней кодовой точкой
 
-     Пример:
+     Например:
 
    ```xml
    <Links>
@@ -96,7 +96,7 @@ ms.locfileid: "72748468"
     Stroke="StrokeValue"
     ```
 
-     Пример:
+     Например:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -201,7 +201,7 @@ ms.locfileid: "72748468"
     Shape="ShapeFilePathLocation"
     ```
 
-     Пример:
+     Например:
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "72748468"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     Пример:
+     Например:
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ ms.locfileid: "72748468"
 
 2. В элементе `<Style/>` добавьте элемент `<Condition/>`, который содержит атрибут `Expression`, чтобы указать выражение, возвращающее логическое значение.
 
-    Пример:
+    Например:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ ms.locfileid: "72748468"
 
     Это выражение использует следующий синтаксис "Формы Бэкуса-Наура" (BNF):
 
-    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" \<Expression > ")" &#124; \<MemberBindings > &#124; \<Literal > &#124; 1Number >
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>
 
-    \<UnaryExpression >:: = "!"  \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression >
+    \<Унарекспрессион >:: = "!" \<выражение > &#124; "+" \<выражение > &#124; "-" \<выражение >
 
-    \<Operator >:: = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "или" &#124; "и &#124; " "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > ".  \<MemberBinding >
+    \<Мембербиндингс >:: = \<Мембербиндингс > &#124; \<мембербиндинг > "." \<мембербиндинг >
 
-    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
 
-    \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet >:: = идентификатор
+    \<PropertyGet> ::= Identifier
 
-    \<MethodArgs >:: = \<Expression > &#124; \<Expression > "," \<MethodArgs &#124; > \<empty >
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    \<Identifier >:: = [^. ]*
+    Идентификатор \<>:: = [^. ]*
 
-    \<Literal >:: = строковый литерал с одинарным или двойным кавычками
+    \<литерал >:: = строковый литерал с одинарным или двойным кавычками
 
-    \<Number >:: = строка цифр с необязательной десятичной запятой
+    \<number >:: = строка цифр с необязательной десятичной запятой
 
     Можно указать несколько элементов `<Condition/>`, которые должны иметь значение true, чтобы применить стиль.
 
 3. В следующей строке после элемента `<Condition/>` добавьте один или несколько элементов `<Setter/>`, чтобы указать атрибут `Property` и фиксированный атрибут `Value` или вычисляемый атрибут `Expression`, чтобы применить к карте, кодовым точкам или связям, удовлетворяющим условию.
 
-    Пример:
+    Например:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -442,7 +442,7 @@ ms.locfileid: "72748468"
 
 1. Откройте DGML-файл в текстовом редакторе или редакторе XML.
 
-2. Найдите элемент `<Node/>` для этой кодовой точки. Укажите имя свойства и его значение. Пример:
+2. Найдите элемент `<Node/>` для этой кодовой точки. Укажите имя свойства и его значение. Например:
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ ms.locfileid: "72748468"
 
 2. Найдите элемент `<Link/>`, содержащий имена исходной и целевой кодовых точек.
 
-3. В элементе `<Node/>` укажите имя свойства и его значение. Пример:
+3. В элементе `<Node/>` укажите имя свойства и его значение. Например:
 
     ```xml
     <Links>
@@ -489,7 +489,7 @@ ms.locfileid: "72748468"
 
 - Найдите элемент `<Node/>` для нужной кодовой точки.
 
-- В элементе `<Node/>` добавьте атрибут `Category`, чтобы указать имя категории. Пример:
+- В элементе `<Node/>` добавьте атрибут `Category`, чтобы указать имя категории. Например:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "72748468"
 
 2. Найдите элемент `<Link/>`, содержащий имена исходной и целевой кодовых точек.
 
-3. В элементе `<Link/>` добавьте атрибут `Category`, чтобы указать имя категории. Пример:
+3. В элементе `<Link/>` добавьте атрибут `Category`, чтобы указать имя категории. Например:
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "72748468"
 
 2. Добавьте элемент `<Category/>` для родительской категории, затем добавьте атрибут `BasedOn` к элементу дочерней категории `<Category/>`.
 
-     Пример:
+     Например:
 
     ```xml
     <Nodes>
@@ -582,7 +582,7 @@ ms.locfileid: "72748468"
      > [!NOTE]
      > У элемента может быть только один атрибут `Reference`.
 
-     Пример:
+     Например:
 
    ```xml
    <Nodes>
@@ -607,7 +607,7 @@ ms.locfileid: "72748468"
 
       4. Используйте атрибут `Label`, чтобы указать отображаемый текст в контекстном меню **Перейти к ссылке** на элемент кода.
 
-      Пример:
+      Например:
 
    ```xml
    <Nodes>
@@ -638,7 +638,7 @@ ms.locfileid: "72748468"
 
 5. Чтобы просмотреть кодовую точку, на которую указывает ссылка, или кодовые точки на карте, откройте контекстное меню кодовой точки или связи. Выберите **Переход к ссылке** , а затем элемент Code.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)

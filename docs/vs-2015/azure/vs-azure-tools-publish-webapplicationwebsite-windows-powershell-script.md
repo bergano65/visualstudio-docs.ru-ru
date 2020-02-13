@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298122"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915547"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (скрипт Windows PowerShell)
 ## <a name="syntax"></a>Синтаксис
@@ -38,32 +38,32 @@ Publish-WebApplicationWebSite
 | Параметр | Значение по умолчанию |
 | --- | --- |
 | Псевдонимы |Нет |
-| Необходим? |true |
-| Положение |именованные |
+| Обязательный? |true |
+| Позиция |именованная |
 | Значение по умолчанию |Нет |
 | Принимает входные данные конвейера? |false |
 | Принимает подстановочные знаки? |false |
 
-## <a name="subscriptionname"></a>Параметр SubscriptionName
+## <a name="subscriptionname"></a>SubscriptionName
 Имя подписки Azure, в которой необходимо создать веб-сайт.
 
 | Параметр | Значение по умолчанию |
 | --- | --- |
 | Псевдонимы |Нет |
-| Необходим? |false |
-| Положение |именованные |
+| Обязательный? |false |
+| Позиция |именованная |
 | Значение по умолчанию |Нет |
 | Принимает входные данные конвейера? |false |
 | Принимает подстановочные знаки? |false |
 
 ## <a name="webdeploypackage"></a>Параметр WebDeployPackage
-Путь к пакету веб-развертывания для публикации на веб-сайте. Этот пакет можно создать с помощью мастера «Публикация веб-сайта» в Visual Studio. Дополнительные сведения можно найти в статье [Начало работы с облачными службами Azure и ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
+Путь к пакету веб-развертывания для публикации на веб-сайте. Этот пакет можно создать с помощью мастера «Публикация веб-сайта» в Visual Studio. Дополнительные сведения можно найти в статье [Начало работы с облачными службами Azure и ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
 
 | Параметр | Значение по умолчанию |
 | --- | --- |
 | Псевдонимы |Нет |
-| Необходим? |false |
-| Положение |именованные |
+| Обязательный? |false |
+| Позиция |именованная |
 | Значение по умолчанию |Нет |
 | Принимает входные данные конвейера? |false |
 | Принимает подстановочные знаки? |false |
@@ -74,8 +74,8 @@ Publish-WebApplicationWebSite
 | Параметр | Значение по умолчанию |
 | --- | --- |
 | Псевдонимы |Нет |
-| Необходим? |false |
-| Положение |именованные |
+| Обязательный? |false |
+| Позиция |именованная |
 | Значение по умолчанию |Нет |
 | Принимает входные данные конвейера? |false |
 | Принимает подстановочные знаки? |false |
@@ -86,8 +86,8 @@ Publish-WebApplicationWebSite
 | Параметр | Значение по умолчанию |
 | --- | --- |
 | Псевдонимы |Нет |
-| Необходим? |false |
-| Положение |именованные |
+| Обязательный? |false |
+| Позиция |именованная |
 | Значение по умолчанию |false |
 | Принимает входные данные конвейера? |false |
 | Принимает подстановочные знаки? |false |
@@ -121,7 +121,7 @@ Publish-WebApplicationWebSite
 }
 ```
 
-В файле конфигурации JSON можно изменить объекты, которые подлежат развертыванию. Раздел webSite является обязательным, а раздел database — необязательным.
+В файле конфигурации JSON можно изменить объекты, которые подлежат развертыванию. Раздел webSite требуется иметь, а раздел database необязателен.
 
 ## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения см. в статье [Publish-WebApplicationVM (сценарий Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)

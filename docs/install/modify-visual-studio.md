@@ -2,8 +2,7 @@
 title: Изменение Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапном изменении среды Visual Studio.
-ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 08/23/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -11,19 +10,19 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74566995"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922877"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio путем добавления или удаления рабочих нагрузок и компонентов
 
@@ -35,7 +34,7 @@ Visual Studio можно легко изменить таким образом, 
 
 ::: moniker range="vs-2017"
 
-Мы упростили не только персонализацию Visual Studio в соответствии с выполняемыми задачами, но и настройку самой среды Visual Studio. Для этого запустите установщик Visual Studio и внесите нужные изменения.
+Мы упростили не только персонализацию Visual Studio в соответствии с выполняемыми задачами, но и настройку самой среды Visual Studio. Для этого откройте новый установщик Visual Studio Installer и внесите нужные изменения.
 
 ::: moniker-end
 
@@ -44,24 +43,12 @@ Visual Studio можно легко изменить таким образом, 
 >[!IMPORTANT]
 >Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в статье [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-## <a name="modify-workloads"></a>Изменение рабочих нагрузок
-
-::: moniker range="vs-2017"
-
- [Рабочие нагрузки](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) содержат функции, которые требуются для используемого языка программирования или платформы. С помощью рабочих нагрузок можно изменить среду Visual Studio так, чтобы она поддерживала выполнение нужных задач в любое время.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
- Рабочие нагрузки содержат функции, которые требуются для используемого языка программирования или платформы. С помощью рабочих нагрузок можно изменить среду Visual Studio так, чтобы она поддерживала выполнение нужных задач в любое время.
-
-::: moniker-end
-
 >[!NOTE]
-> В следующей процедуре предполагается, что у вас есть подключение к Интернету.
+> В следующих процедурах предполагается, что у вас есть подключение к Интернету.
 >
 > Дополнительные сведения о том, как внести изменения в ранее созданную [автономную установку](create-an-offline-installation-of-visual-studio.md) Visual Studio, см. на страницах [Управление обновлением сетевых развертываний Visual Studio](update-a-network-installation-of-visual-studio.md) и [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md).
+
+## <a name="open-the-visual-studio-installer"></a>Открытие Visual Studio Installer
 
 ::: moniker range="vs-2017"
 
@@ -69,26 +56,19 @@ Visual Studio можно легко изменить таким образом, 
 
      Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
-     ![Visual Studio Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск Microsoft Visual Studio Installer")
+     ![Visual Studio Installer](media/locate-the-visual-studio-installer.png "Поиск Microsoft Visual Studio Installer")
 
      >[!TIP]
      >На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"**  — для **Microsoft Visual Studio**.<br/><br/> Кроме того, Visual Studio Installer можно найти в следующем расположении: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Щелкните установщик (или коснитесь его), чтобы запустить, и выберите команду **Изменить**.
+1. Откройте установщик и выберите команду **Изменить**.
 
      ![Запуск или изменение Visual Studio](media/modify-visual-studio.png "Изменение Visual Studio 2017")
 
-     При наличии ожидающих обновлений кнопка "Изменить" будет находиться в другом месте. Таким образом, вы можете изменить Visual Studio без обновления, если захотите. Нажмите кнопку **Дополнительно**, затем кнопку **Изменить**.
-
-     ![Обновление или изменение Visual Studio](media/modify-or-update-visual-studio.png "Обновление или изменение Visual Studio 2017")
-
-1. На экране **Рабочие нагрузки** выберите рабочие нагрузки, которые нужно установить, или отмените выбор тех, которые нужно удалить.
-
-    ![Диалоговое окно установки Visual Studio 2017](media/vs2017-modify-workloads.PNG "Выбор рабочей нагрузки в Visual Studio 2017")
-
-1. Снова выберите команду **Изменить**.
-
-1. После установки новых рабочих нагрузок и компонентов выберите команду **Запуск**.
+     > [!IMPORTANT]
+     > При наличии ожидающих обновлений кнопка "Изменить" будет находиться в другом месте. Таким образом, вы можете изменить Visual Studio без обновления, если захотите. Нажмите кнопку **Дополнительно**, затем кнопку **Изменить**.
+     >
+     > ![Обновление или изменение Visual Studio](media/modify-or-update-visual-studio.png "Обновление или изменение Visual Studio 2017")
 
 ::: moniker-end
 
@@ -111,7 +91,40 @@ Visual Studio можно легко изменить таким образом, 
 
      ![Обновление или изменение Visual Studio](media/vs-2019/vs-installer-modify.png "Обновление или изменение Visual Studio 2019")
 
-1. На вкладке **Рабочие нагрузки** выберите рабочие нагрузки, которые нужно установить, или отмените выбор тех, которые нужно удалить.
+     > [!IMPORTANT]
+     > При наличии ожидающих обновлений кнопка "Изменить" будет находиться в другом месте. Таким образом, вы можете изменить Visual Studio без обновления, если захотите. Выберите **Дополнительно**, а затем **Изменить**.
+     >
+     > ![Обновление или изменение Visual Studio](media/vs-2019/modify-update-visual-studio.png "Обновление или изменение Visual Studio 2019")
+
+::: moniker-end
+
+## <a name="modify-workloads"></a>Изменение рабочих нагрузок
+
+::: moniker range="vs-2017"
+
+ [Рабочие нагрузки](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) содержат функции, которые требуются для используемого языка программирования или платформы. С помощью рабочих нагрузок можно изменить среду Visual Studio так, чтобы она поддерживала выполнение нужных задач в любое время.
+
+1. В Visual Studio Installer перейдите на вкладку **Рабочие нагрузки**, а затем выберите или отмените выбор нужных рабочих нагрузок.
+
+    ![Диалоговое окно установки Visual Studio 2017](media/modify-workloads.png "Выбор рабочей нагрузки в Visual Studio 2019")
+
+1. Выберите, хотите ли вы принять параметр по умолчанию **Установить при скачивании** или параметр **Скачать все и установить**.
+
+    ![Параметры установки Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Выбор установки при скачивании или установки после скачивания")
+
+    Параметр "Скачать все и установить" удобен, если вы хотите сначала загрузить среду, а позже установить ее.
+
+1. Выберите **Изменить**.
+
+1. После установки новых рабочих нагрузок выберите команду **Запуск** в Visual Studio Installer, чтобы открыть Visual Studio.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ Рабочие нагрузки содержат функции, которые требуются для используемого языка программирования или платформы. С помощью рабочих нагрузок можно изменить среду Visual Studio так, чтобы она поддерживала выполнение нужных задач в любое время.
+
+1. В Visual Studio Installer перейдите на вкладку **Рабочие нагрузки**, а затем выберите или отмените выбор нужных рабочих нагрузок.
 
     ![Диалоговое окно установки Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Выбор рабочей нагрузки в Visual Studio 2019")
 
@@ -123,13 +136,20 @@ Visual Studio можно легко изменить таким образом, 
 
 1. Выберите **Изменить**.
 
-1. После установки новых рабочих нагрузок и компонентов выберите команду **Запуск** в Visual Studio Installer.
+1. После установки новых рабочих нагрузок выберите команду **Запуск** в Visual Studio Installer, чтобы открыть Visual Studio.
 
 ::: moniker-end
 
 ## <a name="modify-individual-components"></a>Изменение отдельных компонентов
 
-Если вы не хотите устанавливать рабочие нагрузки для настройки установленного экземпляра Visual Studio, выберите в Visual Studio Installer вкладку **Отдельные компоненты**, затем включите нужные компоненты и следуйте указаниям.
+Если вы не хотите использовать рабочие нагрузки для настройки установленного экземпляра Visual Studio, выберите в Visual Studio Installer вкладку **Отдельные компоненты**, затем включите нужные компоненты и следуйте указаниям.
+
+>[!TIP]
+> Сведения о компоненте SQL Server Data Tools (SSDT) см. в разделе [Скачивание и установка SSDT для Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
+
+## <a name="modify-language-packs"></a>Измените языковой пакет
+
+По умолчанию при первом запуске установщик использует язык операционной системы. Однако вы можете изменить язык при необходимости. Для этого выберите вкладку **Языковые пакеты** в Visual Studio Installer, предпочтительный язык и следуйте инструкциям на экране.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

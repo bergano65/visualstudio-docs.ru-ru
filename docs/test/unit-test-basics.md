@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659896"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846931"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -91,13 +91,16 @@ public void Withdraw(double amount)
 
    ::: moniker range="vs-2017"
    ![В окне редактора просмотрите контекстное меню](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![В окне редактора просмотрите контекстное меню](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > Команда меню **Создать модульные тесты** доступна только для управляемого кода, предназначенного для платформы .NET Framework (но не .NET Core).
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![В окне редактора просмотрите контекстное меню](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > Команда меню **Создать модульные тесты** доступна только для управляемого кода.
+   ::: moniker-end
 
 2. Нажмите кнопку **ОК**, чтобы принять значения по умолчанию для создания модульных тестов, или измените значения, которые использовались для создания и назначения имени проекта модульного теста и модульных тестов. Можно выбрать код, который добавляется по умолчанию в методы модульных тестов.
 
@@ -120,7 +123,7 @@ public void Withdraw(double amount)
 
 **Добавление нового проекта модульного тестирование в решение**
 
-1. В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите пункты **Добавить** > **Новый** **проект**.
+1. В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите **Добавить**  >  **Создать** **Проект**.
 
 ::: moniker range="vs-2017"
 
@@ -273,7 +276,7 @@ public void My_Test ()
 
 ::: moniker range="vs-2017"
 
-|Кнопка|ОПИСАНИЕ|
+|Кнопка|Описание|
 |-|-|
 |![Запуск после построения](../test/media/ute_runafterbuild_btn.png)|Чтобы запускать модульные тесты после каждой локальной сборки, в стандартном меню выберите **Тест**, а затем выберите **Выполнить тесты после сборки** в панели инструментов **обозревателя тестов**.|
 
@@ -299,7 +302,7 @@ public void My_Test ()
 ![Категории фильтров поиска](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
 ::: moniker-end
 
-|Кнопка|ОПИСАНИЕ|
+|Кнопка|Описание|
 |-|-|
 |![Кнопка группы обозревателя тестов](../test/media/ute_groupby_btn.png)|Для группировки тестов по категории, нажмите кнопку **Группировать по** .|
 

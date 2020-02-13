@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651126"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596454"
 ---
 # <a name="toolbox"></a>Панель элементов
 
@@ -61,7 +61,7 @@ ms.locfileid: "72651126"
 
 ## <a name="create-and-distribute-custom-toolbox-controls"></a>Создание и распространение пользовательских элементов управления панели элементов
 
-Вы можете создать для **панели элементов** пользовательский элемент управления с помощью шаблона проекта на основе [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) или [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Затем этот пользовательский элемент управления можно предоставить коллегам или опубликовать в Интернете с помощью [установщика элементов управления панели элементов](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+Вы можете создать для **панели элементов** пользовательский элемент управления с помощью шаблона проекта на основе [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) или [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Затем этот пользовательский элемент управления можно предоставить коллегам или опубликовать в Интернете с помощью [установщика элементов управления панели элементов](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
 
 ## <a name="help-on-toolbox-tabs"></a>Справка по вкладкам панели элементов
 

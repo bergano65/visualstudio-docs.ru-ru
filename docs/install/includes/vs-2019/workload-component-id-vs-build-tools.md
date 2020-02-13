@@ -3,19 +3,19 @@ title: Идентификаторы рабочих нагрузок и комп�
 titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для создания классических приложений Windows
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1e9fa33bbd8604f4260b61767f69b85e3263198b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9f3920b7b746e4329cf94760e983d43e3579e8d3
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795732"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159625"
 ---
 ## <a name="azure-development-build-tools"></a>Средства сборки и разработки Azure
 
@@ -27,17 +27,17 @@ ms.locfileid: "74795732"
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательно
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 16.0.28625.61 | Обязательно
-Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 16.0.28315.86 | Обязательно
-Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Средства сборки облачных служб Azure | 16.3.29207.166 | Обязательно
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 16.0.28625.61 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательно
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Обязательно
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательно
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Средства разработки для Azure | 16.0.28625.61 | Обязательное значение
+Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure для .NET | 16.0.28315.86 | Обязательное значение
+Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Средства сборки облачных служб Azure | 16.3.29207.166 | Обязательное значение
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 16.0.28625.61 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Обязательное значение
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательное значение
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 16.0.28517.75 | Рекомендованное
@@ -46,19 +46,19 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 16.0.28516.191 | Рекомендованное
 Microsoft.VisualStudio.Component.AspNet45 | Дополнительные возможности ASP.NET | 16.0.28315.86 | Рекомендованное
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Рекомендованное
-Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Optional
-Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.4.29519.181 | Optional
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Optional
+Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Необязательный
+Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.4.29519.181 | Необязательный
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Необязательный
 
 ## <a name="data-storage-and-processing-build-tools"></a>Средства сборки для хранения и обработки данных
 
@@ -90,11 +90,11 @@ Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools — с
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательно
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
 Microsoft.Component.ClickOnce.MSBuild | Средства сборки ClickOnce | 16.0.28625.61 | Рекомендованное
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | Рекомендованное
@@ -106,17 +106,17 @@ Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .N
 Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Рекомендованное
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 16.4.29409.204 | Рекомендованное
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Рекомендованное
-Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Optional
-Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 16.0.28528.71 | Optional
+Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Необязательный
+Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 16.0.28528.71 | Необязательный
 
 ## <a name="msbuild-tools"></a>MSBuild Tools
 
@@ -128,9 +128,9 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 16
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательно
-Microsoft.VisualStudio.Component.CoreBuildTools | Ядро Visual Studio Build Tools | 16.0.28315.86 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательно
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Component.CoreBuildTools | Ядро Visual Studio Build Tools | 16.0.28315.86 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
 
 ## <a name="net-core-build-tools"></a>Средства сборки .NET Core
 
@@ -142,9 +142,9 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.NetCore.BuildTools.ComponentGroup | Средства сборки .NET Core | 16.3.29102.218 | Обязательно
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
+Microsoft.NetCore.BuildTools.ComponentGroup | Средства сборки .NET Core | 16.3.29102.218 | Обязательное значение
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
 Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.4.29519.181 | Рекомендованное
 
 ## <a name="nodejs-build-tools"></a>Средства сборки Node.js
@@ -157,8 +157,8 @@ Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .N
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.Node.Build | Поддержка MSBuild в Node.js | 16.0.28517.75 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательно
+Microsoft.VisualStudio.Component.Node.Build | Поддержка MSBuild в Node.js | 16.0.28517.75 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательное значение
 
 ## <a name="officesharepoint-build-tools"></a>Средства сборки Office и SharePoint
 
@@ -170,33 +170,33 @@ Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScri
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce.MSBuild | Средства сборки ClickOnce | 16.0.28625.61 | Обязательно
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательно
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательно
-Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательно
-Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательно
-Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Средства сборки и разработки Office и SharePoint | 16.0.28625.61 | Обязательно
-Microsoft.VisualStudio.Component.Workflow.BuildTools | Средства сборки Windows Workflow Foundation | 16.0.28315.86 | Обязательно
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Обязательно
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательно
+Microsoft.Component.ClickOnce.MSBuild | Средства сборки ClickOnce | 16.0.28625.61 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
+Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet | Диспетчер пакетов NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
+Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Средства сборки и разработки Office и SharePoint | 16.0.28625.61 | Обязательное значение
+Microsoft.VisualStudio.Component.Workflow.BuildTools | Средства сборки Windows Workflow Foundation | 16.0.28315.86 | Обязательное значение
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Обязательное значение
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательное значение
 Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Средства сборки набора средств Visual Studio для Office (VSTO) | 16.0.28625.61 | Рекомендованное
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Рекомендованное
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Optional
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Необязательный
 
 ## <a name="universal-windows-platform-build-tools"></a>Инструменты для создания приложений универсальной платформы Windows
 
@@ -208,31 +208,31 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разраб�
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательно
-Microsoft.Component.NetFX.Native | .NET Native | 16.4.29429.68 | Обязательно
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательно
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Необходимые компоненты для создания приложений универсальной платформы Windows | 16.3.29207.166 | Обязательно
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Component.NetFX.Native | .NET Native | 16.4.29429.68 | Обязательное значение
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Необходимые компоненты для создания приложений универсальной платформы Windows | 16.3.29207.166 | Обязательное значение
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Пакет SDK для Windows 10 (10.0.18362.0) | 16.1.28829.92 | Рекомендованное
-Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 16.4.29409.204 | Optional
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Поддержка универсальной платформы Windows C++ для средств сборки версии 142 (ARM64) | 16.3.29207.166 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты C++ | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.4.29429.68 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.24) | 16.4.29409.204 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.24) | 16.4.29409.204 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Optional
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC версии 141 — средства сборки C++ для VS 2017 для ARM (версия 14.16) | 16.2.29003.222 | Optional
-Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC версии 141 — средства сборки C++ для VS 2017 для ARM64 (версия 14.16) | 16.1.28829.92 | Optional
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC версии 141 — средства сборки C++ для VS 2017 для 64- или 32-разрядных систем (версия 14.16) | 16.1.28829.92 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Основные возможности C++ для классических приложений | 16.2.29012.281 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.VC.BuildTools | Средства универсальной платформы Windows на C++ (версия 142) | 16.3.29207.166 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | Средства универсальной платформы Windows для C++ (v141) | 16.3.29207.166 | Optional
+Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 16.0.28625.61 | Необязательный
+Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Поддержка универсальной платформы Windows C++ для средств сборки версии 142 (ARM64) | 16.3.29207.166 | Необязательный
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты C++ | 16.0.28625.61 | Необязательный
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.4.29429.68 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.24) | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.24) | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC версии 141 — средства сборки C++ для VS 2017 для ARM (версия 14.16) | 16.2.29003.222 | Необязательный
+Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC версии 141 — средства сборки C++ для VS 2017 для ARM64 (версия 14.16) | 16.1.28829.92 | Необязательный
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC версии 141 — средства сборки C++ для VS 2017 для 64- или 32-разрядных систем (версия 14.16) | 16.1.28829.92 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 16.0.28517.75 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 16.0.28517.75 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 16.0.28517.75 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Основные возможности C++ для классических приложений | 16.2.29012.281 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.UWP.VC.BuildTools | Средства универсальной платформы Windows на C++ (версия 142) | 16.3.29207.166 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | Средства универсальной платформы Windows для C++ (v141) | 16.3.29207.166 | Необязательный
 
 ## <a name="c-build-tools"></a>Средства сборки C++
 
@@ -244,34 +244,34 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | Средства 
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.VC.CoreBuildTools | Основные компоненты средств сборки C++ | 16.0.28625.61 | Обязательно
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.4.29429.68 | Обязательно
-Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 16.4.29409.204 | Обязательно
+Microsoft.VisualStudio.Component.VC.CoreBuildTools | Основные компоненты средств сборки C++ | 16.0.28625.61 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.4.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 16.4.29409.204 | Обязательное значение
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 16.4.29409.204 | Рекомендованное
 Microsoft.VisualStudio.Component.VC.ASAN | C++ AddressSanitizer (экспериментальная функция) | 16.4.29429.68 | Рекомендованное
 Microsoft.VisualStudio.Component.VC.CMake.Project | Средства CMake C++ для Windows | 16.3.29103.31 | Рекомендованное
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Рекомендованное
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Пакет SDK для Windows 10 (10.0.18362.0) | 16.1.28829.92 | Рекомендованное
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Optional
-Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 16.0.28625.61 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Optional
-Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.140 | MSVC версии 140 — средства сборки C++ VS 2015 (версия 14.00) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | ATL C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | MFC C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.24) | 16.4.29409.204 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты C++ | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Компилятор Clang C++ для Windows (9.0.0) | 16.4.29511.114 | Optional
-Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | C++ Clang-cl для средств сборки версии 142 (x64/x86) | 16.3.29207.166 | Optional
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Модули C++ для средств сборки версии 142 (x64 или x86 — экспериментальная) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC версии 141 — средства сборки C++ для VS 2017 для 64- или 32-разрядных систем (версия 14.16) | 16.1.28829.92 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Основные возможности C++ для классических приложений | 16.2.29012.281 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Средства C++ Clang для Windows (9.0.0 — 64-разрядная и 86-разрядная система) | 16.4.29511.114 | Optional
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Необязательный
+Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 16.0.28625.61 | Необязательный
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Необязательный
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Необязательный
+Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 16.0.28625.61 | Необязательный
+Microsoft.VisualStudio.Component.VC.140 | MSVC версии 140 — средства сборки C++ VS 2015 (версия 14.00) | 16.0.28625.61 | Необязательный
+Microsoft.VisualStudio.Component.VC.ATL | ATL C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
+Microsoft.VisualStudio.Component.VC.ATLMFC | MFC C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
+Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.24) | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты C++ | 16.0.28625.61 | Необязательный
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Компилятор Clang C++ для Windows (9.0.0) | 16.4.29511.114 | Необязательный
+Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | C++ Clang-cl для средств сборки версии 142 (x64/x86) | 16.3.29207.166 | Необязательный
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Модули C++ для средств сборки версии 142 (x64 или x86 — экспериментальная) | 16.0.28625.61 | Необязательный
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC версии 141 — средства сборки C++ для VS 2017 для 64- или 32-разрядных систем (версия 14.16) | 16.1.28829.92 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 16.0.28517.75 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 16.0.28517.75 | Необязательный
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 16.0.28517.75 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Основные возможности C++ для классических приложений | 16.2.29012.281 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Средства C++ Clang для Windows (9.0.0 — 64-разрядная и 86-разрядная система) | 16.4.29511.114 | Необязательный
 
 ## <a name="visual-studio-extension-development"></a>Разработка расширений Visual Studio
 
@@ -283,20 +283,20 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Средств�
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательно
-Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательно
-Microsoft.VisualStudio.Component.VSSDKBuildTools | Основные компоненты Visual Studio Build Tools | 16.0.28315.86 | Обязательно
-Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Необходимые компоненты для разработки расширений Visual Studio | 16.4.29318.151 | Обязательно
-Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 16.0.28528.71 | Optional
-Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения универсальной платформы Windows C++ для средств сборки версии 142 | 16.4.29409.204 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | ATL C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | MFC C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Optional
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
+Microsoft.VisualStudio.Component.VSSDKBuildTools | Основные компоненты Visual Studio Build Tools | 16.0.28315.86 | Обязательное значение
+Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Необходимые компоненты для разработки расширений Visual Studio | 16.4.29318.151 | Обязательное значение
+Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 16.0.28528.71 | Необязательный
+Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения универсальной платформы Windows C++ для средств сборки версии 142 | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.ATL | ATL C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
+Microsoft.VisualStudio.Component.VC.ATLMFC | MFC C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Необязательный
 
 ## <a name="web-development-build-tools"></a>Средства сборки для веб-разработчиков
 
@@ -308,12 +308,12 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — 
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательно
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательно
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательно
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательное значение
 Microsoft.Component.ClickOnce.MSBuild | Средства сборки ClickOnce | 16.0.28625.61 | Рекомендованное
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | Рекомендованное
@@ -328,17 +328,17 @@ Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства ра�
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 16.4.29409.204 | Рекомендованное
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Рекомендованное
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Рекомендованное
-Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
-Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Optional
-Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Optional
+Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.0.28517.75 | Необязательный
+Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Средства разработки .NET Framework 4.6.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разработки .NET Framework 4.6.2 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Необязательный
+Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Необязательный
 
 ## <a name="mobile-development-with-net"></a>Разработка мобильных приложений на платформе .NET
 
@@ -350,13 +350,13 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разраб�
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательно
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательно
-Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательно
-Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательно
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательно
-Component.Android.SDK28 | Программа установки пакета SDK для Android (уровень API 28) | 16.2.29003.222 | Optional
-Component.OpenJDK | OpenJDK (дистрибутив от Майкрософт) | 16.1.28811.260 | Optional
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательное значение
+Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
+Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
+Component.Android.SDK28 | Программа установки пакета SDK для Android (уровень API 28) | 16.2.29003.222 | Необязательный
+Component.OpenJDK | OpenJDK (дистрибутив от Майкрософт) | 16.1.28811.260 | Необязательный
 
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 

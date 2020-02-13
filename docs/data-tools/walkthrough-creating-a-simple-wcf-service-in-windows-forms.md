@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639473"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586020"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Пошаговое руководство. Создание простой службы WCF в Windows Forms
 
@@ -31,11 +31,11 @@ ms.locfileid: "72639473"
 
 ## <a name="create-a-service"></a>Создание службы
 
-1. Запустите Visual Studio.
+1. Откройте Visual Studio.
 
 ::: moniker range="vs-2017"
 
-2. В меню **Файл** последовательно выберите пункты **Создать**и > **Проект**.
+2. В меню **файл** выберите пункт **создать** > **проект**.
 
 3. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#**  и выберите **WCF**, а затем — **библиотеку службы WCF**.
 
@@ -150,6 +150,6 @@ ms.locfileid: "72639473"
 
      ![Форма с результатом](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

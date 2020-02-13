@@ -1,22 +1,22 @@
 ---
 title: Вход в Visual Studio для Mac
 description: Вход в Visual Studio для Mac
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213662"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844262"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
 
 При входе в Visual Studio для Mac [активируется подписка](enable-subscription.md). При скачивании Visual Studio для Mac по умолчанию доступен только выпуск Community. При наличии [лицензии Professional или Enterprise](https://visualstudio.microsoft.com/vs/compare/) необходимо выполнить вход при первом запуске, чтобы разблокировать дополнительные компоненты. Кроме того, вам предоставляется следующее:
 
-* **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+* **Доступ к программе Visual Studio Dev Essentials**. Эта программа включает бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 * **Автоматическое подключение к Azure** в интегрированной среде разработки без повторного запроса учетных данных той же учетной записи.
 

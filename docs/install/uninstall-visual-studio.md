@@ -2,26 +2,26 @@
 title: Удаление Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапном удалении среды Visual Studio.
-ms.date: 07/31/2019
+ms.date: 12/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9212bc5dda2ea69f685077eb2cbe86470d4064
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: fd21f01f89cb4fe4507775670968496cbb5f99f5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681353"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115012"
 ---
 # <a name="uninstall-visual-studio"></a>Удаление Visual Studio
 
@@ -36,14 +36,14 @@ ms.locfileid: "68681353"
 
      Например, на компьютере с юбилейным обновлением или более поздней версией Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
-     ![Установщик Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
+     ![Visual Studio Installer](media/locate-the-visual-studio-installer.png "Поиск Microsoft Visual Studio Installer")
 
    > [!NOTE]
    > На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"**  — для **Microsoft Visual Studio**.<br/><br/> Кроме того, Visual Studio Installer можно найти в следующем расположении: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 1. В установщике найдите установленный у вас выпуск Visual Studio. Затем выберите **Дополнительно** и **Удалить**.
 
-     ![Удаление Visual Studio 2017](media/uninstall-visual-studio.png "Удаление Visual Studio 2017")
+     ![Удаление Visual Studio 2017](media/uninstall-visual-studio.png "Удаление Visual Studio 2017")
 
 1. Нажмите кнопку **ОК**, чтобы подтвердить действие.
 
@@ -67,7 +67,7 @@ ms.locfileid: "68681353"
 
      Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
-     ![Откройте Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Откройте Visual Studio Installer")
+     ![Открытие Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Открытие Visual Studio Installer")
 
      > [!NOTE]
      > Кроме того, Visual Studio Installer можно найти в следующем расположении:
@@ -78,11 +78,11 @@ ms.locfileid: "68681353"
 
 1. В установщике найдите установленный у вас выпуск Visual Studio. Затем выберите **Дополнительно** и **Удалить**.
 
-     ![Удаление Visual Studio 2019](media/vs-2019/vs-installer-uninstall.png "Удаление Visual Studio 2019")
+     ![Удаление Visual Studio 2019](media/vs-2019/vs-installer-uninstall.png "Удаление Visual Studio 2019")
 
 1. Нажмите кнопку **ОК**, чтобы подтвердить действие.
 
-     ![Подтверждение удаления Visual Studio](media/vs-2019/uninstall-visualstudio-confirm.png "Подтвердите, что хотите удалить Visual Studio 2019")
+     ![Подтверждение удаления Visual Studio](media/vs-2019/uninstall-visualstudio-confirm.png "Подтвердите, что хотите удалить Visual Studio 2019")
 
 Если в будущем вы передумаете и захотите снова установить Visual Studio 2019, снова запустите Visual Studio Installer, выберите вкладку **Доступно**, выберите выпуск Visual Studio, который вы хотите установить, а затем нажмите **Установка**.
 
@@ -98,10 +98,13 @@ ms.locfileid: "68681353"
 
 ::: moniker-end
 
+## <a name="remove-all-files"></a>Удаление всех файлов
+
+Если произошла неустранимая ошибка и вы не можете удалить Visual Studio с помощью предыдущих инструкций, есть вариант, который можно использовать в качестве последнего средства. Дополнительные сведения о том, как полностью удалить все файлы установки Visual Studio и информацию о продукте, см. в [этой статье](remove-visual-studio.md).
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>См. также
 
 * [Изменение Visual Studio](modify-visual-studio.md)
 * [Обновление Visual Studio](update-visual-studio.md)
-* [Удаление Visual Studio для Mac](/visualstudio/mac/uninstall)

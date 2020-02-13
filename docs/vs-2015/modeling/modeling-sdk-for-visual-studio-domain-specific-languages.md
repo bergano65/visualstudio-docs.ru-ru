@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4907838720e3a68614e4b9774eb2d7e9fb42ff20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297683"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916541"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK моделирования для Visual Studio — доменные языки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,7 @@ ms.locfileid: "74297683"
 ## <a name="samples-and-the-latest-information"></a>Примеры и последние сведения
  [Скачайте пакет SDK моделирования для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Примеры](https://go.microsoft.com/fwlink/?LinkId=186128) для пакета SDK для моделирования для Visual Studio.
-
- Рекомендации по расширенным методикам и устранению неполадок см. на [форуме по Visual Studio DSL & средства моделирования](https://go.microsoft.com/fwlink/?LinkID=186074).
+ Руководство по передовым технологиям и устранению неполадок, см. в статье [форум по Visual Studio DSL и расширяемость средств моделирования](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 ## <a name="in-this-section"></a>В этом разделе
  [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)

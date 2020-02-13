@@ -9,17 +9,17 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 0a3162dcbbd041a7d2f540a335bd95854afd87d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643485"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589192"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. создание модульного теста, управляемого данными
 
@@ -86,7 +86,7 @@ public TestContext TestContext
 }
 ```
 
-В методе теста получить доступ к данным можно через свойство индексатора `DataRow` `TestContext`.
+В методе теста получить доступ к данным можно через свойство индексатора `DataRow``TestContext`.
 
 > [!NOTE]
 > .NET Core не поддерживает атрибут [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). При попытке получить доступ к данным тестирования таким образом в проекте модульного теста для .NET Core или универсальной платформы Windows вы увидите сообщение об ошибке **"'TestContext' не содержит определение для 'DataRow', и доступный метод расширения 'DataRow', принимающий первый аргумент типа 'TestContext', не найден (возможно, отсутствует директива using или ссылка на сборку?)"** .

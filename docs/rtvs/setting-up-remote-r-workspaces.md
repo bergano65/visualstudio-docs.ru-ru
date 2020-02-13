@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888544"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850056"
 ---
 # <a name="set-up-remote-workspaces"></a>Настройка удаленных рабочих областей
 
@@ -143,9 +143,9 @@ ms.locfileid: "72888544"
 
      Оба интерпретатора имеют одинаковые функциональные возможности, в Microsoft R Open используется [библиотека Intel Math Kernel](https://software.intel.com/intel-mkl), обеспечивающая дополнительные библиотеки линейной алгебры с аппаратным ускорением.
 
-2. Запустите [Установщик служб R](https://aka.ms/rtvs-services) и перезагрузите компьютер, когда будет предложено. Установщик выполняет следующие действия.
+2. Запустите [Установщик служб R](https://github.com/Microsoft/RTVS/blob/master/doc/rtvsd/rtvs-remote-downloads.md) и перезагрузите компьютер, когда будет предложено. Установщик выполняет следующие действия.
 
-    - Создайте папку в каталоге *%PROGRAMFILES%\Инструменты R для Visual Studio\1.0\\*  и скопируйте все необходимые двоичные файлы.
+    - Создайте папку в каталоге *%PROGRAMFILES%\Инструменты R для Visual Studio\1.0\\* и скопируйте все необходимые двоичные файлы.
     - Устанавливает `RHostBrokerService` и `RUserProfileService` и настраивает их на автоматический запуск.
     - Настраивает службу `seclogon` на автоматический запуск.
     - Добавьте файлы *Microsoft.R.Host.exe* и *Microsoft.R.Host.Broker.exe* в правила брандмауэра для входящего трафика в порт 5444 по умолчанию.

@@ -2,17 +2,17 @@
 title: Просмотр зависимостей между C++ исходными файлами и файлами заголовков
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654185"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597247"
 ---
 # <a name="code-maps-for-c-projects"></a>Карты кода для C++ проектов
 
@@ -20,7 +20,7 @@ ms.locfileid: "72654185"
 
 При открытии решения, содержащего проекты Visual C++, обновление базы данных IntelliSense может занять некоторое время. В течение этого времени создание карт кода для файлов заголовков (*h* или `#include`) может оказаться невозможным до тех пор, пока база данных IntelliSense не завершит обновление. Вы можете наблюдать за ходом обновления в строке состояния Visual Studio.
 
-- Чтобы просмотреть зависимости между всеми исходными файлами и файлами заголовков в решении, выберите **архитектура**  > **сформировать диаграмму включаемых файлов**.
+- Чтобы просмотреть зависимости между всеми исходными файлами и файлами заголовков в решении, выберите **архитектура** > **сформировать диаграмму включаемых файлов**.
 
    ![Граф зависимостей для машинного кода](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -49,6 +49,6 @@ ms.locfileid: "72654185"
 ||Сведения, необходимые для отладки, удалены из PDB-файла.|Если в компоновщике использовался параметр **/PDBSTRIPPED** , включите полный PDB-файл.|
 ||Вызывающий объект не является функцией и представляет собой либо преобразователь в двоичном файле, либо указатель в разделе данных.|Если вызывающим объектом является преобразователь, попробуйте использовать `_declspec(dllimport)` , чтобы избежать преобразования.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сопоставление зависимостей с картами кода](../modeling/map-dependencies-across-your-solutions.md)

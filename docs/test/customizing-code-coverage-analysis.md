@@ -2,17 +2,17 @@
 title: Настройка анализа покрытия кода
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665061"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918652"
 ---
 # <a name="customize-code-coverage-analysis"></a>Настройка анализа объема протестированного кода
 
@@ -51,7 +51,7 @@ ms.locfileid: "72665061"
 
 ::: moniker range="vs-2017"
 
-Чтобы включить или отключить пользовательские параметры, выберите файл или отмените его выбор в разделе **Тест** > **Параметры тестирования**.
+Чтобы включить или отключить пользовательские параметры, выберите файл или отмените его выбор в меню **Тест**  **>Параметры тестирования**.
 
 ![Меню параметров тестирования с пользовательским файлом параметров в Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "72665061"
 
 В приведенной ниже таблице показаны различные способы сопоставления сборок и членов для включения в анализ объема протестированного кода или исключения из него.
 
-| XML-элемент | Соответствие |
+| Элемент XML | Соответствие |
 | - | - |
 | ModulePath | Сопоставление со сборками, указанными по имени или пути к файлу. |
 | CompanyName | Сопоставление сборок по атрибуту **Company**. |
@@ -116,7 +116,7 @@ ms.locfileid: "72665061"
 
 ### <a name="regular-expressions"></a>Регулярные выражения
 
-Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Все соответствия не учитывают регистр. Ниже приведены некоторые примеры.
+Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Все соответствия не учитывают регистр. Ниже приведено несколько примеров.
 
 - **.\*** соответствует строке любых символов
 
@@ -197,7 +197,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--
 About include/exclude lists:
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.
-Each element in the list is a regular expression (ECMAScript syntax). See https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio.
+Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio.
 An item must first match at least one entry in the include list to be included.
 Included items must then not match any entries in the exclude list to remain included.
 -->

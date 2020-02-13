@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dcf8f67e240476ad75ab5b0b7b0c446be32ad816
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299450"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846524"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. В следующей таблице перечислены форумы, связанные с данными, доступные на сайте MSDN.
 
- [Windows Forms элементы управления данными и привязка данных](https://go.microsoft.com/fwlink/?LinkId=160179) Содержит форум для вопросов и общих дискуссий по доступу к данным в Windows Forms.
+ [Windows Forms элементы управления данными и привязка данных](https://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads) Содержит форум для вопросов и общих дискуссий по доступу к данным в Windows Forms.
 
- [Форум по набору данных ADO.NET](https://go.microsoft.com/fwlink/?LinkId=160180) Содержит форум для вопросов и общих дискуссий по наборам данных.
+ [Форум по набору данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataset/threads) Содержит форум для вопросов и общих дискуссий по наборам данных.
 
- [ADO.NET Entity Framework и LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Форум для вопросов и общих дискуссий по Entity Frameworkным приложениям и языку LINQ to Entities.
+ [ADO.NET Entity Framework и LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/adodotnetentityframework/) Форум для вопросов и общих дискуссий по Entity Frameworkным приложениям и языку LINQ to Entities.
 
- [Форум WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=160181) Форум для вопросов и общих дискуссий по службам данных.
+ [Форум WCF Data Services](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataservices/threads) Форум для вопросов и общих дискуссий по службам данных.
 
- [SQL Server форуме по доступу к данным](https://go.microsoft.com/fwlink/?LinkID=160184) Содержит форум для вопросов и общих дискуссий по доступу к данным в Microsoft SQL Server.
+ [SQL Server форуме по доступу к данным](https://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads) Содержит форум для вопросов и общих дискуссий по доступу к данным в Microsoft SQL Server.
 
- [Форум LINQ to SQL](https://go.microsoft.com/fwlink/?LinkId=160183) Содержит форум для вопросов и общих обсуждений LINQ to SQL.
+ [Форум LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/linqtosql/threads) Содержит форум для вопросов и общих обсуждений LINQ to SQL.
 
- [Форум поставщиков данных ADO.NET](https://go.microsoft.com/fwlink/?LinkId=160182) Форум для вопросов и общих дискуссий по различным поставщикам данных .NET Framework.
+ [Форум поставщиков данных ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads) Форум для вопросов и общих дискуссий по различным поставщикам данных .NET Framework.
 
- Сведения об устранении неполадок подключения к SQL Server см. в разделе [Устранение неполадок подключения к ядро СУБД SQL Server](https://go.microsoft.com/fwlink/?LinkID=246151).
+ Сведения об устранении неполадок подключения к SQL Server см. в разделе [Устранение неполадок подключения к ядро СУБД SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

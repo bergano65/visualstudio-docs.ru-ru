@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888479"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589803"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Работа с трехмерными ресурсами для игр и приложений
 
@@ -54,7 +54,7 @@ Visual Studio использует DirectX для отрисовки двуме�
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|ОПИСАНИЕ|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Работа с текстурами и изображениями](../designers/working-with-textures-and-images.md)|Описывается работа с изображениями и текстурами в Visual Studio.|
 |[Работа с трехмерными моделями](../designers/working-with-3-d-models.md)|Описывается работа с трехмерными моделями в Visual Studio.|

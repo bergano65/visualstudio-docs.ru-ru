@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641102"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586241"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Пошаговое руководство. Сохранение данных в транзакции
 
 В этом пошаговом руководстве показано, как сохранить данные в транзакции с помощью пространства имен <xref:System.Transactions>. В этом пошаговом руководстве вы создадите приложение Windows Forms. Мастер настройки источника данных используется для создания набора данных для двух таблиц в образце базы данных Northwind. Вы добавите элементы управления с привязкой к данным в форму Windows Forms, и измените код для кнопки "Сохранить" BindingNavigator, чтобы обновить базу данных в TransactionScope.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72641102"
 
 Первым шагом является создание **приложения Windows Forms**.
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -96,7 +96,7 @@ ms.locfileid: "72641102"
 
 2. Перетащите главный узел **Customers** из окна **Источники данных** на форму **Form1**.
 
-   На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.
+   На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>и <xref:System.Windows.Forms.BindingNavigator>.
 
 3. Перетащите связанный узел **Orders** (не главный узел **заказы** , а связанный узел дочерней таблицы ниже столбца **факса** ) в форму под элементом **кустомерсдатагридвиев**.
 
@@ -108,7 +108,7 @@ ms.locfileid: "72641102"
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Порядок добавления ссылки на DLL-файл System.Transactions
 
-1. В меню **проект** выберите команду **Добавить ссылку**.
+1. В меню **Проект** выберите пункт **Добавить ссылку**.
 
 2. Выберите **System. Transactions** (на вкладке **.NET** ) и нажмите кнопку **ОК**.
 
@@ -169,7 +169,7 @@ ms.locfileid: "72641102"
 
 Нажмите клавишу **F5** для запуска приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Практическое руководство. Сохранение данных с помощью транзакции](../data-tools/save-data-by-using-a-transaction.md)
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

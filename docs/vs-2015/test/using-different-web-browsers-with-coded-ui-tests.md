@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297955"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851220"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "74297955"
 
 #### <a name="installing-selenium-components"></a>Установка компонентов Selenium
 
-1. В меню **Сервис** щелкните пункт **Расширения и обновления**.
+1. В меню **Сервис** щелкните **Расширения и обновления**.
 
 2. В диалоговом окне "Расширения и обновления" выполните поиск `Selenium components for Cross Browser Testing`.
 
@@ -95,7 +95,7 @@ ms.locfileid: "74297955"
 
     2. В поле **Исключения среды CLR** снимите флажок **Не обработанное пользовательским кодом**.
 
-## <a name="generate"></a> *Я не вижу, как изменить параметр BrowserWindow.CurrentBrowser в закодированном тесте пользовательского интерфейса.*
+## <a name="generate"></a>*Я не вижу параметр для изменения BrowserWindow. CurrentBrowser в закодированном тесте пользовательского интерфейса.*
  Возможно, вы используете версию [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)], которая не поддерживает закодированные тесты пользовательского интерфейса в различных веб-браузерах. Чтобы использовать такие закодированные тесты пользовательского интерфейса, необходимо использовать Visual Studio Enterprise.
 
  *Что еще мне нужно знать?*
@@ -115,7 +115,7 @@ ms.locfileid: "74297955"
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
-   Установите следующие значения:
+   Задайте следующие значения.
 
   - `EqtTraceLevel` в разделе `system.diagnostics`.
 
@@ -139,17 +139,17 @@ ms.locfileid: "74297955"
  [Устранение неполадок в случае сбоев тестов для различных браузеров](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Руководство
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>Часто задаваемые вопросы
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Вопросы и ответы
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Форум
- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает Coded UI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает Coded UI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Использование модели автоматизации пользовательского интерфейса для тестирования поддерживаемых в коде](../test/use-ui-automation-to-test-your-code.md) [конфигураций и платформ для ЗАКОДИРОВАННЫХ тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md) интерфейса

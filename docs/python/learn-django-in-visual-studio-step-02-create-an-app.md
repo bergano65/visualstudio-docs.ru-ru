@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958229"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678991"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Django с представлениями и шаблонами страниц
 
@@ -101,7 +101,7 @@ class HelloDjangoAppConfig(AppConfig):
 
     Каждый шаблон URL-адреса описывает представления, в которые Django направляет определенные URL-адреса, связанные с сайтом (это фрагмент после `https://www.domain.com/`). Первая запись в `urlPatterns`, которая начинается с регулярного выражения `^$`, — это маршрутизация для корня сайта, "/". Вторая запись `^home$` конкретно направляет /home. К одному представлению можно иметь любое количество маршрутов.
 
-1. Повторно запустите проект, чтобы отобразилось сообщение **Hello, Django!**, как определено представлением. По завершении остановите сервер.
+1. Повторно запустите проект, чтобы отобразилось сообщение **Hello, Django!** , как определено представлением. По завершении остановите сервер.
 
 ### <a name="commit-to-source-control"></a>Фиксация в системе управления версиями
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648213"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586267"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 
@@ -36,7 +36,7 @@ ms.locfileid: "72648213"
 |Метод TableAdapter DBDirect|Описание|
 | - |-----------------|
 |`TableAdapter.Insert`|Добавляет новые записи в базу данных и позволяет передавать отдельные значения столбцов в качестве параметров метода.|
-|`TableAdapter.Update`|Обновляет существующие записи в базе данных. Метод `Update` принимает исходные и новые значения столбцов в качестве параметров метода. Исходные значения используются для нахождение исходной записи, а для обновления этой записи используются новые значения.<br /><br /> Метод `TableAdapter.Update` также используется для согласования изменений в наборе данных с базой данных путем создания <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> или массива <xref:System.Data.DataRow>s в качестве параметров метода.|
+|`TableAdapter.Update`|Обновляет существующие записи в базе данных. Метод `Update` принимает исходные и новые значения столбцов в качестве параметров метода. Исходные значения используются для нахождение исходной записи, а для обновления этой записи используются новые значения.<br /><br /> Метод `TableAdapter.Update` также используется для согласования изменений в наборе данных с базой данных путем создания <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>или массива <xref:System.Data.DataRow>s в качестве параметров метода.|
 |`TableAdapter.Delete`|Удаляет существующие записи из базы данных на основе значений исходных столбцов, переданных в качестве параметров метода.|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Сохранение новых записей из объекта в базу данных
@@ -74,8 +74,8 @@ ms.locfileid: "72648213"
 
 ## <a name="net-security"></a>Безопасность в .NET
 
-Необходимо иметь разрешение на выполнение выбранных `INSERT`, `UPDATE` или `DELETE` для таблицы в базе данных.
+Необходимо иметь разрешение на выполнение выбранных `INSERT`, `UPDATE`или `DELETE` для таблицы в базе данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

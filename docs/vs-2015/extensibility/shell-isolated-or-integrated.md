@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300483"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850235"
 ---
 # <a name="shell-isolated-or-integrated"></a>Оболочка (изолированная или интегрированная)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете создать собственное приложение на основе Visual Studio в интегрированном или изолированном режиме. В интегрированном режиме многие функции Visual Studio доступны в дополнение к приложению. В изолированном режиме вы выбираете подмножество компонентов Visual Studio, которые вы хотите распространить вместе с собственным расширением.  
+Вы можете создать собственное приложение на основе Visual Studio в интегрированном или изолированном режиме. В интегрированном режиме в дополнение к вашему приложению доступны многие функции Visual Studio. В изолированном режиме вы выбираете подмножество функций Visual Studio, которые хотите распространять вместе с собственным расширением.  
   
 ## <a name="integrated-mode"></a>Интегрированный режим  
  Интегрированный режим позволяет пользователям использовать стандартные функции Visual Studio вместе с пользовательскими инструментами. Интегрированная оболочка предназначена главным образом для размещения языков программирования и средств разработки программного обеспечения.  
@@ -55,7 +55,7 @@ ms.locfileid: "74300483"
 > - собственное лицензионное соглашение, согласно которому ваши клиенты должны принять условия, которые защищают интегрированную или изолированную оболочку Visual Studio по крайней мере до условий лицензионного соглашения на использование программного обеспечения оболочки Майкрософт.  
   
 ## <a name="additional-resources"></a>Дополнительные ресурсы  
- Дополнительные сведения о распространяемых пакетах см. на веб-сайте [Visual Studio Extensibility downloads](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Дополнительные сведения о распространяемых пакетах см. на веб-сайте [Visual Studio Extensibility downloads](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

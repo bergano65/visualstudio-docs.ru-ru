@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Обновление проектов Visual C++ до версии Visual Studio 2015 | Документация Майкрософт
+title: Практическое руководство. Обновление проектов Visual C++ до версии Visual Studio 2015 | Документация Майкрософт
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300386"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918804"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Практическое руководство. Обновление проектов Visual C++ до Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-См. последнюю документацию по Visual Studio 2017 в [руководстве по переносу и обновлению Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
+См. последнюю документацию по Visual Studio 2017 в [руководстве по переносу и обновлению Visual C++](/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 При первом открытии проекта Visual C++, созданного в более ранней версии Visual Studio, может потребоваться обновить проект. В сообщении спрашивается, требуется ли выполнить обновление до последней версии компилятора и библиотек Visual C++. Варианты обновления зависят от версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , которая использовалась для создания проекта.
 
@@ -51,7 +51,7 @@ ms.locfileid: "74300386"
 - Для проектов [!INCLUDE[cppcli](../includes/cppcli-md.md)] TargetFrameworkVersion заменяется на .NET Framework 4.5.2.
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Продолжение работы с пользовательским набором PlatformToolset
- Если требуется работать с пользовательским набором PlatformToolset в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], набор инструментов должен находиться в папке %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x86 или в папке %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x64. Сведения о создании пользовательского набора PlatformToolset см. в разделе [Настройка для различных версий для C++](https://go.microsoft.com/fwlink/?LinkId=248587) в блоге группы Visual C++.
+ Если требуется работать с пользовательским набором PlatformToolset в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], набор инструментов должен находиться в папке %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x86 или в папке %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x64. Сведения о создании пользовательского набора PlatformToolset см. в разделе [Настройка для различных версий для C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) в блоге группы Visual C++.
 
 ## <a name="see-also"></a>См. также
- [Руководство по переносу и обновлению Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Пошаговое руководство по переносу и обновлению Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

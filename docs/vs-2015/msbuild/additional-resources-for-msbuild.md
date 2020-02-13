@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d82531bcde6e0a03485ac6bf77965b5c5744f23
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8ede112706cfc0291d2523424192f123c9929771
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300439"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846970"
 ---
 # <a name="additional-resources-for-msbuild"></a>Дополнительные ресурсы для MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "74300439"
 ## <a name="microsoft-resources"></a>Ресурсы корпорации Майкрософт  
   
 ### <a name="on-the-web"></a>В Интернете  
- [Веб-сайт MSBuild Channel 9](https://go.microsoft.com/fwlink/?LinkId=243092)  
+ [Веб-сайт MSBuild Channel 9](https://channel9.msdn.com/tags/MSBuild/)  
  Содержит сведения о [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] и ссылки на другие веб-сайты [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Блог группы разработчиков MSBuild](https://go.microsoft.com/fwlink/?LinkId=65846)  
+ [Блог группы разработчиков MSBuild](https://blogs.msdn.com/msbuild/)  
  Содержит информацию, ссылки и обновления, предоставленные группой разработчиков [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Форум Visual Studio MSBuild](https://go.microsoft.com/fwlink/?LinkId=48931)  
+ [Форум Visual Studio MSBuild](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)  
  Форум сообщества [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="see-also"></a>См. также  

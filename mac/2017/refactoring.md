@@ -1,17 +1,17 @@
 ---
 title: Рефакторинг кода
 description: Переупорядочение кода в Visual Studio для Mac упрощается благодаря анализу источника.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988761"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985236"
 ---
 # <a name="refactoring"></a>Рефакторинг
 
@@ -35,7 +35,7 @@ ms.locfileid: "62988761"
 
 Контекстные действия позволяют проверять любой код C# и просматривать все возможные параметры рефакторинга.
 
-Контекстные элементы **Разрешить** и **Рефакторинг** объединяются в один элемент *Быстрое исправление...*, предоставляющий вам все доступные контекстные действия:
+Контекстные элементы **Разрешить** и **Рефакторинг** объединяются в один элемент *Быстрое исправление...* , предоставляющий вам все доступные контекстные действия:
 
 ![Отображение контекстных элементов](media/refactoring-context-action.png)
 

@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747952"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114508"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Практическое руководство. Отключение предупреждений компилятора
 
@@ -87,7 +87,7 @@ ms.locfileid: "72747952"
     ```
 
    > [!NOTE]
-   > По умолчанию проекты .NET Core не содержат группы свойств для конфигурации сборки. Чтобы отключить предупреждения для проекта .NET Core, вручную добавьте нужный раздел конфигурации в файл. Например:
+   > По умолчанию проекты .NET Core не содержат группы свойств для конфигурации сборки. Чтобы отключить предупреждения для проекта .NET Core, вручную добавьте нужный раздел конфигурации в файл. Пример:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">

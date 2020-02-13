@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: heaths
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f38757931cb22e9072571d96b015f37882dd500
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974247"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114787"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Отключение или перемещение кэша пакетов
 
@@ -46,13 +46,13 @@ ms.locfileid: "62974247"
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-Также вы можете использовать `KeepDownloadedPayloads` [политики реестра](set-defaults-for-enterprise-deployments.md), чтобы отключить кэш перед установкой, изменением или восстановлением Visual Studio.
+Вы также можете использовать [политики реестра](set-defaults-for-enterprise-deployments.md) `KeepDownloadedPayloads`, чтобы отключить кэш перед установкой, изменением или восстановлением Visual Studio.
 
 ## <a name="move-the-package-cache"></a>Перемещение кэша пакетов
 
 В типичной конфигурации операционная система Windows устанавливается на диске SSD, а более крупный диск HDD (или несколько дисков) отводятся под потребности среды разработки, например для хранения исходных кодов, двоичных файлов и других ресурсов. Если вы намерены работать в автономном режиме, кэш пакетов можно переместить в другое расположение.
 
-Сейчас для этого нужно применить `CachePath` [политику реестра](set-defaults-for-enterprise-deployments.md) перед установкой, изменением или восстановлением Visual Studio.
+Сейчас для этого нужно применить [политику реестра](set-defaults-for-enterprise-deployments.md) `CachePath` перед установкой, изменением или восстановлением Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

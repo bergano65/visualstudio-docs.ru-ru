@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671567"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918226"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: используйте предпочтительные термины
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последнюю документацию по Visual Studio см. в разделе [CA1726: использование предпочтительных терминов](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).
+Последнюю документацию по Visual Studio см. в разделе [CA1726: использование предпочтительных терминов](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
 |||
 |-|-|
@@ -33,7 +33,7 @@ ms.locfileid: "72671567"
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое — при срабатывании в сборках<br /><br /> Не критическое — при срабатывании параметров типа|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Имя видимого снаружи идентификатора включает термин, для которого существует другой предпочтительный термин. Кроме того, имя включает в себя флаг или флаги.
 
 ## <a name="rule-description"></a>Описание правила

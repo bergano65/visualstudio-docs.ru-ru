@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639171"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585955"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка поведения вставки, обновления и удаления классов сущностей
 
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляют визуальную область конструктора для создания и редактирования классов LINQ to SQL (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)можно использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](/dotnet/csharp/linq/).
 
-По умолчанию логика для выполнения обновлений предоставляется средой выполнения LINQ to SQL. Среда выполнения создает по умолчанию инструкции `Insert`, `Update` и `Delete` на основе схемы таблицы (определения столбцов и сведения о первичном ключе). Если вы не хотите использовать поведение по умолчанию, то можно настроить поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд "Вставить", "Обновить" и "Удалить", необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций с помощью хранимых процедур](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+По умолчанию логика для выполнения обновлений предоставляется средой выполнения LINQ to SQL. Среда выполнения создает по умолчанию инструкции `Insert`, `Update`и `Delete` на основе схемы таблицы (определения столбцов и сведения о первичном ключе). Если вы не хотите использовать поведение по умолчанию, то можно настроить поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд "Вставить", "Обновить" и "Удалить", необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций с помощью хранимых процедур](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Данное пошаговое руководство требует наличия хранимых процедур **InsertCustomer**, **UpdateCustomer** и **DeleteCustomer** в базе данных Northwind.
@@ -45,7 +45,7 @@ ms.locfileid: "72639171"
 
 - Настройте класс `Customer`, чтобы использовать хранимые процедуры для выполнения операций вставки, обновления и удаления.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -71,7 +71,7 @@ ms.locfileid: "72639171"
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Создание нового проекта Windows Forms приложения, содержащего классы LINQ to SQL
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -269,7 +269,7 @@ ms.locfileid: "72639171"
 
 - Добавьте запросы LINQ в данные фильтра Дополнительные сведения см. [в разделе Введение в запросыC#LINQ ()](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Методы DataContext](../data-tools/datacontext-methods-o-r-designer.md)

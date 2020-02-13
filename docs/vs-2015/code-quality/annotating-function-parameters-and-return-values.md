@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295858"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852384"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "74295858"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     Иными словами, каждый элемент, существующий в буфере вплоть до `s` в предварительном состоянии, является допустимым в состоянии после.  Пример.  
+     Иными словами, каждый элемент, существующий в буфере вплоть до `s` в предварительном состоянии, является допустимым в состоянии после.  Например:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ ms.locfileid: "74295858"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     Иными словами, каждый элемент, существующий в буфере вплоть до `s` в предварительном состоянии, является допустимым в состоянии после.  Пример.  
+     Иными словами, каждый элемент, существующий в буфере вплоть до `s` в предварительном состоянии, является допустимым в состоянии после.  Например:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ ms.locfileid: "74295858"
   
 - `_Struct_size_bytes_(size)`  
   
-     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше, чем объявленный тип, с числом байтов, предоставленным `size`.  Пример.  
+     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше, чем объявленный тип, с числом байтов, предоставленным `size`.  Например:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
@@ -493,9 +493,9 @@ ms.locfileid: "74295858"
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Связанные ресурсы  
- [Блог команды разработчиков анализа кода](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Блог команды разработчиков анализа кода](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Основные сведения о SAL](../code-quality/understanding-sal.md)   
  [Аннотирование поведения функций](../code-quality/annotating-function-behavior.md)   

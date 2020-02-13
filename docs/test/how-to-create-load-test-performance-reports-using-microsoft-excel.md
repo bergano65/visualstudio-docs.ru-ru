@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653564"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589075"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Практическое руководство. Создание отчетов по производительности нагрузочных тестов с помощью Microsoft Excel
 
@@ -29,7 +29,7 @@ ms.locfileid: "72653564"
 - **Тренд**. По результатам двух и более нагрузочных тестов можно создавать анализ тренда. Результаты отображаются в виде линейчатого графика, но данные доступны в виде сводных таблиц.
 
 > [!TIP]
-> Можно также вручную создавать отчеты Microsoft Word путем копирования и вставки данных из представлений сводки, диаграмм и таблиц. См. [Практическое руководство. Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Можно также вручную создавать отчеты Microsoft Word путем копирования и вставки данных из представлений сводки, диаграмм и таблиц. См. практическое руководство по [ Создание отчета о производительности нагрузочных тестов вручную с помощью Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Любой из отчетов можно использовать для совместного использования данных о производительности с заинтересованными лицами и делать выводы об общем повышении производительности и работоспособности системы.
 

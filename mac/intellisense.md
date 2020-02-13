@@ -4,12 +4,12 @@ description: Сведения об использовании IntelliSense в Vi
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026573"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405805"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -33,25 +33,15 @@ ms.locfileid: "70026573"
 | ![Значок поля](media/fields-icon.png)   | поле         |            |  ⌥F
 | ![Значок интерфейса](media/interface-icon.png)| interface     | `interface`|  ⌥I
 | ![Значок ключевого слова](media/keyword-icon.png)  | ключевое-слово       |            |  ⌥K
-| ![Значок метода](media/method-icon.png)   | метод        |            |  ⌥M
+| ![Значок метода](media/method-icon.png)   | method        |            |  ⌥M
 | ![Значок пространства имен](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
 | ![Значок свойств](media/props-icon.png)    | свойство;      |            |  ⌥P
-| ![Значок фрагмента кода](media/snippet-icon.png)  | snippet       | `class`    |  ⌥S
+| ![Значок фрагмента кода](media/snippet-icon.png)  | Фрагмент кода       | `class`    |  ⌥S
 | ![Значок структуры](media/struct-icon.png)   | структура     | `struct`   |  ⌥S
 
 Если щелкнуть любой из значков или нажать соответствующие сочетания клавиш, список завершения будет ограничен только типами, определенными набором фильтров.  
 
 ![Фильтрация IntelliSense по типам](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>Отображение элементов импорта
-
-По умолчанию функция завершения IntelliSense будет отображать только завершения из библиотек, которые были импортированы в проект. Например, если вы не импортировали `System.Collections.Generic` с помощью `using`, у вас не будет завершения для `List<>`. Чтобы отобразить завершения из библиотек, которые не импортированы, необходимо включить **Отображение элементов импорта** в параметрах для Visual Studio для Mac. Этот параметр можно найти в разделе **Параметры > Текстовый редактор > IntelliSense**:
-
-![IntelliSense — отображение элементов импорта](media/intellisense-showimport.png)
-
-После включения **отображения элементов импорта** в список завершения будут включены завершения, которые еще не импортированы. При выборе элемента, соответствующего необъявленной библиотеке, инструкция `using` для этой библиотеки будет автоматически добавлена в заголовок файла кода. Имя библиотеки, к которой принадлежит завершение, также указывается вместе с самим завершением.
-
-![Список отображения элементов импорта](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>Окно параметров
 

@@ -6,17 +6,17 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 134ed47d26fb7afb50bb50ac18418b436a563eb6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 98925402b91bea62e10b47312e7834ed92a1a178
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297587"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918744"
 ---
 # <a name="verify-your-xamarin-environment"></a>Проверка окружения Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-После завершения работы установщиков (см. [Setup and install](../cross-platform/setup-and-install.md)) потратьте несколько минут на проверку готовности системы к разработке приложений в Xamarin.  
+После завершения работы установщиков (см. раздел [Настройка и установка](../cross-platform/setup-and-install.md)) потратьте несколько минут на проверку готовности системы к разработке приложений в Xamarin.  
   
  После завершения этих проверок, можно выполнить одно или оба указанных ниже пошаговых руководства:  
   
@@ -50,16 +50,16 @@ ms.locfileid: "74297587"
   
     - Выберите подходящий эмулятор в зависимости от целевой версии Android. Если к компьютеру подключено устройство разработки с Android, вы увидите его здесь в списке с эмуляторами:  
   
-        - Для Windows 8 и более поздних версий: выберите целевой объект **Эмулятор VS** в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу **F5**. Дополнительные сведения см. в статье [Введение в эмулятор Visual Studio для Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (блог по Visual Studio ALM). При возникновении проблем с запуском эмулятора см. раздел [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Можно также создать новые профили устройств для эмулятора, выбрав **"Сервис" > "Эмулятор Visual Studio для Android..."** .  
+        - Для Windows 8 и более поздних версий: выберите целевой объект **Эмулятор VS** в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу **F5**. Дополнительные сведения см. в статье [Введение в эмулятор Visual Studio для Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (блог по Visual Studio ALM). При возникновении проблем с запуском эмулятора см. раздел [Устранение неполадок эмулятора Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Можно также создать новые профили устройств для эмулятора, выбрав **"Сервис" > "Эмулятор Visual Studio для Android..."** .  
   
              ![Выбор эмулятора Visual Studio для Android в качестве целевого объекта отладки](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin, проверка 3")  
   
              Примечание. Если вы не видите пункт меню **"Сервис" > "Эмулятор Visual Studio для Android..."** , возможно у вас не установлен сам эмулятор. Последовательно выберите пункты **"Панель управления" > "Программы и компоненты"** , выберите **Microsoft Visual Studio** и нажмите кнопку **Изменить** для перезапуска установщика. Щелкните **Изменить** в установщике, установите флажок **"Разработка кроссплатформенных мобильных приложений" > "Эмулятор Microsoft Visual Studio для Android"** и нажмите кнопку **Обновить**.  
   
-        - Для Windows 7 и более ранних версий ОС: выберите Xamarin Player для Android в раскрывающемся списке и нажмите клавишу F5 для запуска. Дополнительные сведения о Xamarin Player и его диспетчере устройств, а также советы по устранению проблем см. в статье [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
+        - Для Windows 7 и более ранних версий ОС: выберите Xamarin Player для Android в раскрывающемся списке и нажмите клавишу F5 для запуска. Дополнительные сведения о Xamarin Player и его диспетчере устройств, а также советы по устранению проблем см. в статье [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
 > [!NOTE]
-> В Visual Studio можно заметить наличие на панели инструментов кнопки диспетчера эмулятора Android (показано на следующем рисунке), по нажатию которой открывается диспетчер устройств, используемый конкретно для настройки эмулятора Google Android.  Это не оказывает влияния ни на эмулятор Visual Studio для Android, ни на Xamarin Player, каждый из которых имеет свой диспетчер устройств для настройки профилей.  Дополнительные сведения см. в статьях [Введение в эмулятор Visual Studio для Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (блог по Visual Studio ALM) и [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
+> В Visual Studio можно заметить наличие на панели инструментов кнопки диспетчера эмулятора Android (показано на следующем рисунке), по нажатию которой открывается диспетчер устройств, используемый конкретно для настройки эмулятора Google Android.  Это не оказывает влияния ни на эмулятор Visual Studio для Android, ни на Xamarin Player, каждый из которых имеет свой диспетчер устройств для настройки профилей.  See [Introducing Visual Studio’s Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM blog) and [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com) for details.  
 > ![Проверка CrossPlat Xamarin 7](../cross-platform/media/crossplat-xamarin-verify-7.png "Проверка CrossPlat Xamarin 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
@@ -74,11 +74,11 @@ ms.locfileid: "74297587"
   
          ![Выбор эмулятора Windows Phone в качестве цели отладки](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
   
-    - Если не получается начать работу с эмулятором, ознакомьтесь со статьей [Troubleshooting the Windows Phone 8 Emulator](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx)(Устранение неполадок в эмуляторе Windows Phone 8).  
+    - Если не получается начать работу с эмулятором, ознакомьтесь со статьей [Устранение неполадок в эмуляторе Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx).  
   
 ## <a name="ios"></a>iOS  
   
-1. Убедитесь, что компьютер Mac доступен в сети и связан с Visual Studio, как описано в статье [Подключение к Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com).  
+1. Убедитесь, что компьютер Mac доступен в сети и связан с Visual Studio, как описано в статье [Подключение к Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com).  
   
 2. Проверьте конструктор раскадровки: в проекте iOS в обозревателе решений откройте файл **Main.storyboard** . Здесь Visual Studio размещает конструктор, который выполняется удаленно на компьютере Mac.  
   
@@ -94,7 +94,7 @@ ms.locfileid: "74297587"
   
          ![Выбор целевого объекта отладки iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")  
   
-    4. Если возникли проблемы с подключением к Mac, ознакомьтесь со статьей [Устранение неполадок при подключении](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (xamarin.com).  
+    4. Если возникли проблемы с подключением к Mac, ознакомьтесь со статьей [Устранение неполадок при подключении](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (xamarin.com).  
   
     5. Если отображается ошибка "Нет установленных профилей подготовки, которые соответствуют установленным ключам подписи iOS", выполните следующие действия.  
   

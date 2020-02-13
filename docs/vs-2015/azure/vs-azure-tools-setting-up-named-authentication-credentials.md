@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 23abafcae0e777216a8880adc05ecac38d5b3f0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27837390306ad29da55c7c5262ecd8fa6bcf75b3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961954"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917369"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Настройка учетных данных для проверки подлинности
 
@@ -39,7 +39,7 @@ ms.locfileid: "62961954"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Документация по веб-приложениям](https://docs.microsoft.com/azure/app-service/)
-- [Развертывание приложения в службе приложений Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
-- [Развертывание веб-заданий с помощью Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [Создание и развертывание облачной службы](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Документация по веб-приложениям](/azure/app-service/)
+- [Развертывание приложения в службе приложений Azure](/azure/app-service/app-service-deploy-local-git) 
+- [Развертывание веб-заданий с помощью Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Создание и развертывание облачной службы](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

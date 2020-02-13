@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 836e2c24d9f236c7b87dfff60b934221b7645f1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654069"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597182"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Создание пользовательских обработчиков директив для текстовых шаблонов T4
 
@@ -64,7 +64,7 @@ ms.locfileid: "72654069"
 
 - Дополнительные сведения см. [в разделе Пошаговое руководство. Создание пользовательского обработчика директив](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Развертывание пользовательского обработчика директив](../modeling/deploying-a-custom-directive-processor.md) объясняет, как зарегистрировать пользовательский обработчик директив.
 - [Пошаговое руководство. Создание пользовательского обработчика директив](../modeling/walkthrough-creating-a-custom-directive-processor.md) описывает создание пользовательского обработчика директив, регистрацию и тестирование процессора директив, а также форматирование выходного файла в формате HTML.

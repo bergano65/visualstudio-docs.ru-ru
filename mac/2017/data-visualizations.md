@@ -1,17 +1,17 @@
 ---
 title: Отладка — визуализации данных
 description: Отладка — это типичная и неотъемлемая часть программирования. Visual Studio для Mac предоставляет обширный набор функций для облегчения отладки. Эта статья рассматривает различные визуализации данных, которые можно просматривать при проверке объектов в отладчике.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932190"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984755"
 ---
 # <a name="data-visualizations"></a>Визуализации данных
 
@@ -48,7 +48,7 @@ Rectangle/RectangleF или CGRect в iOS и Mac отображает разме
 
 ![Визуализация цветов](media/data-visualizations-image14.png)
 
-## <a name="images"></a>Изображения
+## <a name="images"></a>Образы
 
 Носитель отрисовывается в масштабе вплоть до максимального размера 250 пикселей, после чего масштабируется для сохранения размера:
 
@@ -60,7 +60,7 @@ Rectangle/RectangleF или CGRect в iOS и Mac отображает разме
 
 ![Визуализация кривых Безье](media/data-visualizations-image16.png)
 
-## <a name="string"></a>String
+## <a name="string"></a>Строка
 
 Строка из менее чем 100 символов отображается полностью без предварительного просмотра. Более длинные строки отображаются полностью в режиме предварительного просмотра. Строки можно редактировать, а в визуализаторе имеется кнопка "Изменить", позволяющая изменить строковое значение в области предварительного просмотра или в редакторе строковых значений, как показано ниже:
 

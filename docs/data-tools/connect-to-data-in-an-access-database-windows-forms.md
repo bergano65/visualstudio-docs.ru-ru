@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924520"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586865"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Подключение к данным в базе данных Access
 
 Вы можете подключиться к базе данных Access ( *MDB* -или *ACCDB* -файлу) с помощью Visual Studio. После того как определено подключение, источник данных отображается в окне **Источник данных**. После этого можно перетаскивать таблицы или представления в область конструктора.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 Чтобы использовать эти процедуры, необходим проект Windows Forms или WPF и база данных Access (*ACCDB* -файл) или база данных Access 2000-2003 (*MDB* -файл). Выполните процедуру, соответствующую типу файла.
 
@@ -33,7 +33,7 @@ ms.locfileid: "72924520"
 
 1. Откройте проект приложения Windows Forms или WPF в Visual Studio.
 
-2. Чтобы открыть окно **Источники данных** , в меню **вид** выберите другие  > **Источники данных** **Windows** .
+2. Чтобы открыть окно **Источники данных** , в меню **вид** выберите другие > **Источники данных** **Windows** .
 
    ![Просмотр других окон "Источники данных"](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "72924520"
 
 1. Откройте проект приложения Windows Forms или WPF в Visual Studio.
 
-2. В меню **вид** выберите другие  > **Источники данных** **Windows** .
+2. В меню **вид** выберите другие > **Источники данных** **Windows** .
 
    ![Просмотр других окон "Источники данных"](../data-tools/media/viewdatasources.png)
 
@@ -115,7 +115,7 @@ ms.locfileid: "72924520"
 
 - Добавьте логику проверки к событию <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging> таблиц данных в наборе данных (см. раздел [Проверка данных в наборах](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Добавление подключений](../data-tools/add-new-connections.md)
 - [Общие сведения о привязке данных в WPF](/dotnet/framework/wpf/data/data-binding-overview)

@@ -4,15 +4,15 @@ description: Узнайте, как расширить возможности о
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188725"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027309"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Сведения о просмотре и диагностике контейнеров и изображений в Visual Studio
 
@@ -21,7 +21,7 @@ ms.locfileid: "73188725"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019 версии 16.4 (Предварительная версия 2)](https://visualstudio.microsoft.com/downloads) или выше. Если вы используете более раннюю версию Visual Studio 2019, установите [расширение "Окно контейнеров"](https://aka.ms/vscontainerspreview).
+- [Visual Studio 2019 версии 16.4 (Предварительная версия 2)](https://visualstudio.microsoft.com/downloads) или выше. Если вы используете более раннюю версию Visual Studio 2019, установите [расширение "Окно контейнеров"](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
 
 ## <a name="view-information-about-your-containers"></a>Просмотр сведений о контейнерах
 

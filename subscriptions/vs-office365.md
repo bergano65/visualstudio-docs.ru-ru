@@ -6,23 +6,23 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения о преимуществе Office 365, входящем в состав некоторых подписок Visual Studio.
-ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: b9834411c4b951fb7cdb09ac48dad651d109d618
+ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099612"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76967342"
 ---
-# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
+# <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 в подписках Visual Studio
 
-Создайте лучшие условия работы. Работайте только с последними версиями приложений из любого расположения. Подписка Office 365 профессиональный плюс поставляется с приложениями категории "Премиум", такими как Word, Excel, PowerPoint, OneNote, Outlook, Publisher и Access (последние два доступны только на компьютере). Приложения можно установить на нескольких устройствах, включая персональные компьютеры, компьютеры Mac, устройства iPad, устройства iPhone, планшеты и телефоны с Android. С этой подпиской вы получите последние версии приложений. Кроме того вам будут автоматически предоставляться обновления, когда они будут доступны.
+Создайте лучшие условия работы. Работайте только с последними версиями приложений из любого расположения. Подписка Office 365 поставляется с приложениями категории "Премиум", такими как Word, Excel, PowerPoint, OneNote, Outlook, Publisher и Access (последние два доступны только на компьютере). Приложения можно установить на нескольких устройствах, включая персональные компьютеры, компьютеры Mac, устройства iPad, устройства iPhone, планшеты и телефоны с Android. С этой подпиской вы получите последние версии приложений. Кроме того вам будут автоматически предоставляться обновления, когда они будут доступны.
 
 > [!NOTE]
 > Ваша подписка Visual Studio позволяет использовать Office 365 в рабочей среде.  
 
-## <a name="getting-started-with-office-365-proplus"></a>Начало работы с Office 365 профессиональный плюс
+## <a name="getting-started-with-office-365"></a>Начало работы с Office 365 
 
-Чтобы скачать и активировать Office 365 профессиональный плюс, сделайте следующее:
+Чтобы скачать и активировать Office 365, сделайте следующее:
 1. Войдите в подписку Visual Studio Enterprise.
 2. Щелкните вкладку **Загрузки**.
 3. Вы увидите список файлов для загрузки. В списке Office выберите **Office 365**.
@@ -50,8 +50,8 @@ ms.locfileid: "74099612"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия| Доступно       |  Yes          |
-| Visual Studio Enterprise с GitHub Enterprise  | VL | Доступно       |  Yes          |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия| Доступно       |  Да          |
+| Visual Studio Enterprise с GitHub Enterprise  | VL | Доступно       |  Да          |
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Не для перепродажи (NFR) <sup>1</sup> | Недоступно       |  Н/Д          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                            |  Н/Д          |
 | Visual Studio Professional с GitHub Enterprise | VL | Недоступно         |  Н/Д          |
@@ -60,7 +60,7 @@ ms.locfileid: "74099612"
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 |  |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network.*
+<sup>1</sup> *Включает:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924547"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586982"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Привязка элементов управления WPF к набору данных
 
@@ -38,7 +38,7 @@ ms.locfileid: "72924547"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
@@ -58,9 +58,9 @@ ms.locfileid: "72924547"
 
 ::: moniker range="vs-2017"
 
-1. Запустите Visual Studio.
+1. Откройте Visual Studio.
 
-2. В меню **Файл** выберите **Создать** > **Проект**.
+2. В меню **файл** выберите пункт **создать** > **проект**.
 
 3. Разверните **Visual Basic** или **Visual C#** и выберите **Windows**.
 
@@ -72,7 +72,7 @@ ms.locfileid: "72924547"
 
 ::: moniker range=">=vs-2019"
 
-1. Запустите Visual Studio.
+1. Откройте Visual Studio.
 
 2. На начальном экране выберите **Создать проект**.
 
@@ -112,7 +112,7 @@ ms.locfileid: "72924547"
 
    Visual Studio добавляет в проект новый файл `AdventureWorksLTDataSet.xsd` и добавляет соответствующий элемент **AdventureWorksLTDataSet** в окно **Источники данных** . Файл `AdventureWorksLTDataSet.xsd` определяет типизированный набор данных с именем `AdventureWorksLTDataSet` и TableAdapter с именем `ProductTableAdapter`. Позднее в рамках данного пошагового руководства вы воспользуетесь `ProductTableAdapter` для заполнения набора данных данными и сохранения изменений в базу данных.
 
-9. Выполните построение проекта.
+9. Постройте проект.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Изменение метода заливки TableAdapter по умолчанию
 
@@ -154,7 +154,7 @@ ms.locfileid: "72924547"
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Выполните построение проекта.
+3. Постройте проект.
 
 ## <a name="create-data-bound-controls"></a>Создание элементов управления с привязкой к данным
 
@@ -258,7 +258,7 @@ ms.locfileid: "72924547"
 
 - Узнайте, как использовать окно **Источники данных** в Visual Studio для отображения связанных данных (то есть данных в отношении "родитель — потомок") в элементах управления WPF. Дополнительные сведения см. [в разделе Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

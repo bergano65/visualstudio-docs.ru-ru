@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c66a25830e34571648727bd6ec71791e5e637ca8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 81bb9bcecf37d2ed3fca29a4edc57738732de1a5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294730"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917277"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "74294730"
  При публикации с помощью URL-адреса убедитесь, что на целевом компьютере включены серверные расширения FrontPage.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Сообщение об ошибке: не удалось создать веб-сайт "\<сайт >". Компоненты для взаимодействия с серверными расширениями FrontPage не установлены.  
- Убедитесь, что на компьютере, на котором выполняется публикация, установлен компонент Microsoft Visual Studio Web Authoring. Для пользователей Express этот компонент не устанавливается по умолчанию. Дополнительные сведения см. на веб-сайте [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310).  
+ Убедитесь, что на компьютере, на котором выполняется публикация, установлен компонент Microsoft Visual Studio Web Authoring. Для пользователей Express этот компонент не устанавливается по умолчанию.  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Сообщение об ошибке: не удалось найти файл "Microsoft. Windows. Common-Controls, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = Win32"  
  Это сообщение об ошибке появляется при попытке публикации приложения WPF с включенными стилями оформления. Чтобы устранить эту проблему, см. раздел [как опубликовать приложение WPF с включенными визуальными стилями](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
@@ -139,6 +139,6 @@ ms.locfileid: "74294730"
 |Ярлыки нельзя активировать по сети.|Ярлыки для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения можно запускать только на локальном жестком диске. Они не могут быть запущены путем открытия URL-адреса, указывающего на файл ярлыка на удаленном сервере.|  
 |Приложение слишком велико для работы в режиме частичного доверия. Обратитесь за помощью к поставщику приложения или к системному администратору.|Приложение, выполняющееся в режиме частичного доверия, не может быть больше половины размера квоты онлайн-приложения, значение по умолчанию — 250 МБ.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

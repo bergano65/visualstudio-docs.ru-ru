@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d740f1cc6c19e8d3b53dc084d9de01547369337
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299541"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843880"
 ---
 # <a name="wpf-community-resources"></a>Ресурсы сообщества по WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "74299541"
 Корпорация Майкрософт предоставляет множество ресурсов сообщества для изучения, обсуждения и отправки отзывов о платформе Windows Presentation Foundation (WPF), включая блоги членов команды WPF и наиболее активных участников сообщества, форумы и центр обратной связи Microsoft Connect.
 
 ## <a name="community"></a>Сообщество
- [Форум по WPF](https://go.microsoft.com/fwlink/?LinkId=187440)
+ [Форум по WPF](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
  [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 

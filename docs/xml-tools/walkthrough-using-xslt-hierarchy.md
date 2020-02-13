@@ -2,15 +2,15 @@
 title: Пошаговое руководство. Использование XSLT иерархии
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604442"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592455"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Пошаговое руководство. Использование иерархии XSLT
 
@@ -107,8 +107,8 @@ ms.locfileid: "72604442"
 
 5. Приступите к отладке.
 
-6. При остановке отладчика в инструкции `<xsl:include href="xslincludefile.xsl" />` нажмите кнопку Шаг с **заходом** . Отладка может быть продолжена в упоминаемой таблице стилей. Иерархия видима, а конструктор отображает верный путь.
+6. При остановке отладчика в инструкции `<xsl:include href="xslincludefile.xsl" />`нажмите кнопку Шаг с **заходом** . Отладка может быть продолжена в упоминаемой таблице стилей. Иерархия видима, а конструктор отображает верный путь.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Профилировщик XSLT](../xml-tools/xslt-profiler.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648198"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586254"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Сохранение данных в базе данных (несколько таблиц)
 
@@ -41,7 +41,7 @@ ms.locfileid: "72648198"
 
 - Изменение кода для отправки обновленных данных в наборе данных обратно в базу данных.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -109,7 +109,7 @@ ms.locfileid: "72648198"
 
 1. Перетащите главный узел **Customers** из окна **Источники данных** на форму **Form1**.
 
-     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.
+     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>и <xref:System.Windows.Forms.BindingNavigator>.
 
 2. Перетащите связанный узел **Заказы** из окна **Источники данных** на **Form1**.
 
@@ -120,7 +120,7 @@ ms.locfileid: "72648198"
 
 ## <a name="add-code-to-update-the-database"></a>Добавление кода для обновления базы данных
 
-Вы можете обновить базу данных, вызвав методы `Update` адаптеров таблицы **Клиенты** и **Заказы**. По умолчанию обработчик событий для кнопки **сохранить** <xref:System.Windows.Forms.BindingNavigator> добавляется в код формы для отправки обновлений в базу данных. Эта процедура изменяет код для отправки обновлений в правильном порядке. Это устраняет возможность возникновения ошибок ссылочной целостности. Этот код также реализует обработку ошибок, упаковывая вызов обновления в блок try-catch. Вы можете изменить этот код в соответствии с потребностями своего приложения.
+Вы можете обновить базу данных, вызвав методы `Update` адаптеров таблицы **Клиенты** и **Заказы**. По умолчанию обработчик событий для кнопки **сохранить**<xref:System.Windows.Forms.BindingNavigator> добавляется в код формы для отправки обновлений в базу данных. Эта процедура изменяет код для отправки обновлений в правильном порядке. Это устраняет возможность возникновения ошибок ссылочной целостности. Этот код также реализует обработку ошибок, упаковывая вызов обновления в блок try-catch. Вы можете изменить этот код в соответствии с потребностями своего приложения.
 
 > [!NOTE]
 > Для ясности в этом пошаговом руководстве не используется транзакция. Однако при обновлении двух или более связанных таблиц включите всю логику обновления в рамках транзакции. Транзакция — это процесс, который гарантирует, что все связанные изменения базы данных будут успешными до фиксации каких-либо изменений. Дополнительные сведения см. в разделе [Transactions and Concurrency](/dotnet/framework/data/adonet/transactions-and-concurrency).
@@ -144,6 +144,6 @@ ms.locfileid: "72648198"
 
 4. Проверьте значения в базе данных и убедитесь, что изменения были сохранены.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 63fa0db72a01ddf1f6e1003fc27cf6a28128e036
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188864"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269132"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
 
 Если вы ранее не написали расширение Visual Studio, возможно, у вас есть вопросы. Некоторые из наиболее распространенных из них перечислены здесь. Если вы не видите нужную информацию, воспользуйтесь кнопками обратной связи (**Эта страница полезна?** в нижней части экрана), чтобы запросить нужные сведения.
 
 > [!NOTE]
-> Эта статья относится к Visual Studio в Windows. Дополнительные Visual Studio для Mac см. в разделе [расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac).
+> Эта статья относится к Visual Studio в Windows. Дополнительные Visual Studio для Mac см. в разделе [расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac). Visual Studio Code см. в разделе [API расширения Visual Studio Code](https://code.visualstudio.com/api).
 
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Какое программное обеспечение требуется для разработки расширений Visual Studio?
 
@@ -93,6 +93,7 @@ ms.locfileid: "73188864"
 
  Вы также можете опубликовать расширение на Visual Studio Marketplace, что делает его видимым для большого числа клиентов Visual Studio. Пример упаковки расширения в Marketplace см. в разделе [Пошаговое руководство. публикация расширения Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Дополнительные сведения о том, что необходимо сделать для публикации в Marketplace, см. в разделе [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac)
+- [Расширение Visual Studio Code](https://code.visualstudio.com/api)

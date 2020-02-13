@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c3e970ac2d6f7de86908a88aff6235c598ead810
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301122"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918476"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ private int Square(int i)
  Дополнительные сведения о блоках управления см. в разделе [блоки управления текстовыми шаблонами](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Блоки возможностей класса могут содержать текстовые блоки
- Вы можете написать метод, создающий текст. Пример.
+ Вы можете написать метод, создающий текст. Например:
 
 ```
 List of Squares:
@@ -191,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- Необходимо использовать абсолютные пути или стандартные имена макросов в пути. Пример.
+ Необходимо использовать абсолютные пути или стандартные имена макросов в пути. Например:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -242,7 +242,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Загрузка файла в качестве модели с возможностью навигации**. Более эффективный способ — это чтение данных как модели, по которой может перемещаться код текстового шаблона. Например, можно загрузить XML-файл и выполнять навигацию по этому файлу с помощью выражений XPath. Можно также использовать [XSD. exe](https://go.microsoft.com/fwlink/?LinkId=178765) для создания набора классов, с помощью которых можно считывать XML-данные.
+ **Загрузка файла в качестве модели с возможностью навигации**. Более эффективный способ — это чтение данных как модели, по которой может перемещаться код текстового шаблона. Например, можно загрузить XML-файл и выполнять навигацию по этому файлу с помощью выражений XPath. Можно также использовать [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) для создания набора классов, с помощью которых можно считывать XML-данные.
 
  **Измените файл модели на диаграмме или в форме.** [!INCLUDE[dsl](../includes/dsl-md.md)] предоставляет средства, позволяющие редактировать модель в виде диаграммы или формы Windows Forms. Это упрощает обсуждение модели с пользователями созданного приложения. [!INCLUDE[dsl](../includes/dsl-md.md)] также создает набор строго типизированных классов, отражающих структуру модели. Дополнительные сведения см. в разделе [Создание кода на основе предметно-](../modeling/generating-code-from-a-domain-specific-language.md)ориентированного языка.
 

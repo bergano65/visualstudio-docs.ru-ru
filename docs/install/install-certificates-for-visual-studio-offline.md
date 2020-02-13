@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018828"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114661"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Установка сертификатов, необходимых для установки Visual Studio в автономном режиме
 
@@ -50,7 +50,7 @@ Visual Studio рассчитана в основном на установку �
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Вариант 2. Распространение доверенных корневых сертификатов в среде предприятия
 
-Что касается предприятий с автономными компьютерами, на которых нет последних корневых сертификатов, администратор может использовать инструкции в статье [Настройка доверенных корневых сертификатов и запрещенных сертификатов](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) для их обновления.
+Что касается предприятий с автономными компьютерами, на которых нет последних корневых сертификатов, администратор может использовать инструкции в статье [Настройка доверенных корневых сертификатов и запрещенных сертификатов](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) для их обновления.
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Вариант 3. Установка сертификатов в рамках развертывания Visual Studio с помощью скрипта
 

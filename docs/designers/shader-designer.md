@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635058"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589933"
 ---
 # <a name="shader-designer"></a>Конструктор шейдеров
 
@@ -81,7 +81,7 @@ ms.locfileid: "72635058"
 
 Эта таблица описывает элементы на панели инструментов **Режим конструктора шейдеров**, перечисленные в порядке отображения, слева направо:
 
-|Элемент панели инструментов|ОПИСАНИЕ|
+|Элемент панели инструментов|Описание|
 |------------------|-----------------|
 |**Выбрать**|Активирует взаимодействие с узлами и краями на графе. В этом режиме можно выбирать, перемещать или удалять узлы, а также устанавливать края или прерывать их.|
 |**Панорама**|Активирует перемещение графа шейдера по отношению к рамке окна. Чтобы выполнить панорамирование, выберите точку в области конструктора и переместите ее.<br /><br /> В режиме **Выбрать**, нажав и удерживая клавишу **CTRL**, можно временно активировать режим **Панорама**.|
@@ -199,7 +199,7 @@ ms.locfileid: "72635058"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|ОПИСАНИЕ|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Работа с трехмерными ресурсами для игр и приложений](../designers/working-with-3-d-assets-for-games-and-apps.md)|Обзор средств Visual Studio для работы с текстурами и изображениями, трехмерными моделями и эффектами шейдеров.|
 |[Image Editor](../designers/image-editor.md)|Описывается использование редактора изображений Visual Studio для работы с текстурами и изображениями.|

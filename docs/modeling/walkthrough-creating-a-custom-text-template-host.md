@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666976"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593542"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Пошаговое руководство. Создание пользовательского основного приложения для текстовых шаблонов
 
@@ -35,7 +35,7 @@ ms.locfileid: "72666976"
 
 - Тестирование пользовательского ведущего приложения.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 Для выполнения данного пошагового руководства необходимо следующее:
 
@@ -51,7 +51,7 @@ ms.locfileid: "72666976"
 
 2. Добавьте ссылки на следующие сборки:
 
-   - **Microsoft. VisualStudio. TextTemplating. \*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
    - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 и более поздние версии**
 
@@ -781,7 +781,7 @@ ms.locfileid: "72666976"
 
 2. Введите путь к исполняемому файлу пользовательского ведущего приложения, но пока не нажимайте клавишу ВВОД.
 
-     Например, введите:
+     Например, введите: .
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
@@ -792,7 +792,7 @@ ms.locfileid: "72666976"
 
 4. Введите путь к файлу текстового шаблона и нажмите клавишу ВВОД.
 
-     Например, введите:
+     Например, введите: .
 
      `C:\<YOUR PATH>TestTemplate.tt`
 
@@ -821,6 +821,6 @@ ms.locfileid: "72666976"
 
 В этом пошаговом руководстве вы создали ведущее приложение преобразования текстовых шаблонов, поддерживающее базовые функциональные возможности преобразования. Можно расширить это ведущее приложение для поддержки текстовых шаблонов, которые вызывают пользовательские или сгенерированные процессоры директив. Дополнительные сведения см. в разделе [Пошаговое руководство. подключение узла к созданному обработчику директив](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

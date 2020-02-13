@@ -3,17 +3,17 @@ title: 'Схема XML: диаграммы печати в представле�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d25ef33e22055ff6e6aa17797fcd0c4dbcb0e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d1253e5470b176f04d715adc4caa10cec202a4c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668792"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592634"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Как печатать диаграммы из представления графика и представления модели содержимого
 
@@ -29,7 +29,7 @@ ms.locfileid: "72668792"
 
 3. Распечатайте сохраненный в XPS-файле образ с использованием средства просмотра XPS.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Представление диаграммы](../xml-tools/graph-view.md)
 - [Представление модели содержимого](../xml-tools/content-model-view.md)

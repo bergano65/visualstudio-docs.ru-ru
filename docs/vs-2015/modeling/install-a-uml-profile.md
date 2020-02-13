@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298908"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850654"
 ---
 # <a name="install-a-uml-profile"></a>Установка профиля UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "74298908"
 
  Если вы получили модель UML, созданную с использованием профилей, некоторые свойства не будут отображаться, если эти профили не установлены.
 
- Профиль распространяется внутри расширения Visual Studio. Расширение также может содержать другие функции, такие как команды меню. Дополнительные сведения см. в разделе [Управление расширениями Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160728).
+ Профиль распространяется внутри расширения Visual Studio. Расширение также может содержать другие функции, такие как команды меню. Дополнительные сведения см. в разделе [Управление расширениями Visual Studio](https://msdn.microsoft.com/library/dd293638(VS.100).aspx).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Установка профиля UML на компьютер
 
@@ -45,5 +45,5 @@ ms.locfileid: "74298908"
 
 2. Выберите расширение, которое требуется удалить, а затем нажмите кнопку **Отключить** или **Удалить**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md)

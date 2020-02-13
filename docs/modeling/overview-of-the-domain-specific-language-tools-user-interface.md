@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aacaa43dc9a95faee886440623fb4238abf9be5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51d6139caa84be5097ececd700c73aa6e231174f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748360"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566115"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Обзор пользовательского интерфейса средств доменных языков
 При первом открытии решения Средства предметно-ориентированных языков (DSL Tools) в Visual Studio пользовательский интерфейс будет выглядеть примерно так, как показано на следующем рисунке.
@@ -46,7 +46,7 @@ ms.locfileid: "72748360"
 |Фигуры и соединители|Фигуры указывают, как элементы модели должны отображаться на схеме DSL. Соединители указывают линии на схеме DSL, которые можно использовать для отображения отношений.<br /><br /> Чтобы создать фигуру или соединитель, перетащите средство на сторону **элементов схемы**.|
 |Карты фигур|Сопоставитель фигур отображается в виде линии на схеме модели предметной области и связывает фигуру с доменным классом, который она изображает, или соединитель с доменной связью, которую он изображает.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Обзор средств доменных языков](../modeling/overview-of-domain-specific-language-tools.md)
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302060"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851234"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -369,22 +369,22 @@ ms.locfileid: "74302060"
 ## <a name="external-resources"></a>Внешние ресурсы
 
 ### <a name="videos"></a>Видеоролики
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode1-GettingStarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-episode2-маинтаиненцеанддебуггинг](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-episode2-маинтаиненцеанддебуггинг](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode3-хандкодинг](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") о [закодированных тестах пользовательского интерфейса — DeepDive-Episode3-хандкодинг](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>Практическое лабораторное занятие
- [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
-### <a name="faq"></a>Часто задаваемые вопросы
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Вопросы и ответы
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Форум
- [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [Начало работы с](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [поддерживаемыми конфигурациями и платформами конструктора WPF для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Редактирование закодированных тестов пользовательского интерфейса с помощью редактора закодированных](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) тестов пользовательского интерфейса

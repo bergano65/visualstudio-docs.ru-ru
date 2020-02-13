@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641377"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586332"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 
@@ -137,14 +137,14 @@ ADO.NET предоставляет простые методы для работ
 
 3. Задайте следующие свойства:
 
-    |Элемент управления|свойство;|Параметр|
+    |Элемент управления|Идентификаторы|Параметр|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**По вертикали**|
-    |`Button1`|**Name**|`ReadXmlButton`|
-    ||**Текст**|`Read XML`|
-    |`Button2`|**Name**|`ShowSchemaButton`|
-    ||**Текст**|`Show Schema`|
+    |`Button1`|**Имя**|`ReadXmlButton`|
+    ||**Text**|`Read XML`|
+    |`Button2`|**Имя**|`ShowSchemaButton`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Создание набора данных, который получает XML-данные
 
@@ -158,7 +158,7 @@ ADO.NET предоставляет простые методы для работ
 
      **DataSet1** добавляется в область компонентов.
 
-4. В окне **Свойства** задайте свойства **Name** и <xref:System.Data.DataSet.DataSetName%2A> для `AuthorsDataSet`.
+4. В окне **Свойства** задайте свойства **Name** и <xref:System.Data.DataSet.DataSetName%2A> для`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Создание обработчика событий для чтения XML-файла в наборе данных
 
@@ -179,7 +179,7 @@ ADO.NET предоставляет простые методы для работ
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Создание обработчика событий для вывода схемы в текстовое поле
 
-Кнопка **Показать схему** создает объект <xref:System.IO.StringWriter>, который заполняется схемой и отображается в <xref:System.Windows.Forms.TextBox>control.
+Кнопка **Показать схему** создает объект <xref:System.IO.StringWriter>, который заполняется схемой и отображается в элементе управления <xref:System.Windows.Forms.TextBox>.
 
 1. В **Обозреватель решений**выберите **Form1**, а затем нажмите кнопку **Конструктор представлений** .
 
@@ -214,7 +214,7 @@ ADO.NET предоставляет простые методы для работ
 
 - Измените данные в наборе данных и запишите их в базу данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

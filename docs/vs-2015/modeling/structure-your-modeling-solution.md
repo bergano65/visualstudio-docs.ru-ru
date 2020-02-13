@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298169"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917317"
 ---
 # <a name="structure-your-modeling-solution"></a>Разработка структуры решения моделирования
 
@@ -34,7 +34,7 @@ ms.locfileid: "74298169"
 
 #### <a name="to-divide-an-application-into-layers"></a>Разделение приложения на слои
 
-1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](https://go.microsoft.com/fwlink/?LinkId=196681)).
+1. Структура решений должна основываться на структуре приложения, например веб-приложения, приложения службы или классического приложения. Различные распространенные архитектуры обсуждаются в разделе [Application архетипов (рекомендации по архитектуре приложений Майкрософт](/previous-versions/msp-n-p/ee658107(v=pandp.10))).
 
 2. Создайте решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], которое мы будем называть решением "Архитектура". Это решение будет использоваться для создания общей структуры системы. Оно будет содержать только модели без кода.
 
@@ -100,7 +100,7 @@ ms.locfileid: "74298169"
 
 #### <a name="to-create-a-solution-template"></a>Создание шаблона решения
 
-1. [Скачайте и установите мастер экспорта шаблонов](https://go.microsoft.com/fwlink/?LinkId=196686), если вы еще этого не сделали.
+1. [Скачайте и установите мастер экспорта шаблонов](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard), если вы еще этого не сделали.
 
 2. Создайте структуру решения, которую требуется использовать в качестве отправной точки для будущих проектов.
 
@@ -109,7 +109,7 @@ ms.locfileid: "74298169"
 4. Следуя инструкциям в мастере, выберите проекты, которые требуется включить в шаблон, укажите имя и описание шаблона, а также укажите расположение выходных файлов.
 
 > [!NOTE]
-> Материал из этого раздела представляет собой краткое изложение руководства по средствам проектирования архитектуры Visual Studio, написанного группой Visual Studio ALM Rangers, в которую входят партнеры со статусом MVP, службы Microsoft Services, а также команда разработчиков и авторов Visual Studio. [Щелкните здесь, чтобы скачать полный пакет рекомендаций.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> Материал из этого раздела представляет собой краткое изложение руководства по средствам проектирования архитектуры Visual Studio, написанного группой Visual Studio ALM Rangers, в которую входят партнеры со статусом MVP, службы Microsoft Services, а также команда разработчиков и авторов Visual Studio. [Щелкните здесь, чтобы скачать полный пакет рекомендаций.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Связанные материалы
 
@@ -117,7 +117,7 @@ ms.locfileid: "74298169"
 
 [Руководство по использованию средств архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) — дополнительные рекомендации по управлению моделями в команде
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Управление моделями и диаграммами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md)
 [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

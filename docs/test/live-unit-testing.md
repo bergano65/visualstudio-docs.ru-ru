@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653004"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851433"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Настройка и использование Live Unit Testing
 
@@ -79,7 +79,7 @@ ms.locfileid: "72653004"
 
 ## <a name="start-pause-and-stop"></a>Запуск, приостановка и остановка
 
-Чтобы включить Live Unit Testing, в меню верхнего уровня Visual Studio выберите **Тест** > **Live Unit Testing** > **Запустить**. После включения Live Unit Testing в меню **Live Unit Testing** параметр **Запустить** можно изменить на следующие параметры: **Пауза**, **Остановить** и **Чистый сброс**:
+Чтобы включить Live Unit Testing, в меню верхнего уровня Visual Studio выберите **Тест** > **Live Unit Testing** > **Запустить**. После включения Live Unit Testing в меню **Live Unit Testing** параметр **Запустить** можно изменить на следующие параметры: **Пауза** и **Остановить**:
 
 - **Пауза**. Этот параметр позволяет временно приостановить работу функции Live Unit Testing.
 
@@ -87,10 +87,8 @@ ms.locfileid: "72653004"
 
 - **Остановить**. Этот параметр позволяет полностью остановить работу функции Live Unit Testing. Все собранные данные будут удалены.
 
-- **Чистый сброс**. Этот параметр позволяет остановить работу Live Unit Testing, удалить сохраненные данные и перезапустить эту функцию.
-
 > [!NOTE]
-> При запуске Live Unit Testing в решении, не содержащем проект модульного теста, параметры **Пауза**, **Остановить** и **Reset Clean** (Сбросить очистку) отображаются в меню **Live Unit Testing**, но сама эта функция не запускается. В окне **Вывод** отображается сообщение, начинающееся со слов "No supported test adapters are referenced by this solution..." (Это решение не ссылается на поддерживаемые адаптеры тестов...).
+> При запуске Live Unit Testing в решении, не содержащем проект модульного теста, параметры **Пауза** и **Остановить** отображаются в меню **Live Unit Testing**, но сама эта функция не запускается. В окне **Вывод** отображается сообщение, начинающееся со слов "No supported test adapters are referenced by this solution..." (Это решение не ссылается на поддерживаемые адаптеры тестов...).
 
 Вы можете в любой момент временно или полностью остановить работу этой функции. Это можно сделать, например, если вы выполняете рефакторинг и знаете, что некоторое время тесты не будут работать.
 
@@ -156,7 +154,7 @@ ms.locfileid: "72653004"
 Если решение содержит 10 или более проектов, в Visual Studio отобразится следующее диалоговое окно при выполнении таких действий:
 
 - запуск Live Unit Testing без сохраненных данных;
-- выбор пунктов **Тест** > **Live Unit Testing** > **Чистый сброс**.
+- выбор элементов **Инструменты** > **Параметры** > **Live Unit Testing** > **Удаление хранимых данных**.
 
 ![Диалоговое окно Live Unit Testing для крупных проектов](media/lut-large-project.png)
 
@@ -200,6 +198,6 @@ ms.locfileid: "72653004"
 ## <a name="see-also"></a>См. также
 
 - [Средства тестирования кода](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Блог о функции Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Блог о функции Live Unit Testing](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
 - [Динамическое модульное тестирование: вопросы и ответы](live-unit-testing-faq.md)
 - [Видео на Channel 9. Функция Live Unit Testing в Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

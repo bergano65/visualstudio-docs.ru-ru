@@ -2,17 +2,17 @@
 title: Расширение доменного языка с помощью MEF
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f42186915ade2a518506f5f6ccc55b3599a3ba99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657513"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596610"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 
@@ -129,17 +129,17 @@ ms.locfileid: "72657513"
 
    - Эта сборка обычно имеет имя, заканчивающееся на ". DSL. dll».
 
-   - Если у вас есть доступ к проекту DSL, файл сборки можно найти в каталоге **dsl \\bin \\ \***
+   - Если у вас есть доступ к проекту DSL, файл сборки можно найти в каталоге **dsl\\bin\\\***
 
    - Если у вас есть доступ к VSIX-файлу DSL, сборку можно найти, изменив расширение имени файла VSIX на ZIP. Распакуйте ZIP-файл.
 
 3. Добавьте ссылки на следующие сборки .NET:
 
-   - Microsoft. VisualStudio. моделирование. SDK. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - Microsoft. VisualStudio. моделирование. SDK. схемы. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - Microsoft. VisualStudio. моделирование. SDK. Shell. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
@@ -157,7 +157,7 @@ ms.locfileid: "72657513"
 
    1. В **source. extension. vsixmanifest**нажмите кнопку **Добавить ссылку** .
 
-   2. В диалоговом окне щелкните **добавить полезные данные** , а затем найдите VSIX файл DSL. VSIX-файл создается в решении DSL в **DslPackage \\bin \\ \*** .
+   2. В диалоговом окне щелкните **добавить полезные данные** , а затем найдите VSIX файл DSL. VSIX-файл строится в решении DSL в **DslPackage\\bin\\\*** .
 
        Это позволяет пользователям одновременно установить DSL и расширение. Если пользователь уже установил DSL, будет установлено только расширение.
 
@@ -175,7 +175,7 @@ ms.locfileid: "72657513"
 
 ### <a name="menu-commands"></a>Команды меню
 
-Чтобы создать команду меню, определите класс, реализующий <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>, и добавьте к классу атрибут, определенный в DSL, с именем *йоурдсл* `CommandExtension`. Можно создать более одного класса команд меню.
+Чтобы создать команду меню, определите класс, реализующий <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>, и добавьте к классу атрибут, определенный в DSL, с именем *йоурдсл*`CommandExtension`. Можно создать более одного класса команд меню.
 
 `QueryStatus()` вызывается всякий раз, когда пользователь щелкает правой кнопкой мыши схему. Он должен проверить текущее выделение и задать `command.Enabled`, чтобы указать, когда команда применима.
 
@@ -372,7 +372,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

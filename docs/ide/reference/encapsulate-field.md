@@ -2,8 +2,8 @@
 title: Рефакторинг поля в свойство
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e47a62fcea8306c22564e50adde436b4f35e549
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654466"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569716"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Рефакторинг для инкапсуляции поля
 
@@ -54,7 +54,7 @@ ms.locfileid: "72654466"
       - Последовательно выберите **Правка >Рефакторинг > Инкапсулировать поле**.
       - Щелкните код правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Инкапсулировать поле**.
 
-   Выбранное | ОПИСАНИЕ
+   Выбранное | Описание
    --------- | -----------
    **Инкапсулировать поле (и использовать свойство)** | Инкапсулирует поле со свойством и обновляет все случаи использования поля, чтобы применить созданное свойство.
    **Инкапсулировать поле (но продолжать использовать поле)** | Инкапсулирует поле со свойством, но оставляет без изменений все случаи использования поля.

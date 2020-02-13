@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649444"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587515"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Включение и отключение полного анализа решений для управляемого кода
 
@@ -32,9 +32,9 @@ ms.locfileid: "72649444"
 
 ## <a name="toggle-full-solution-analysis"></a>Переключить полный анализ решения
 
-1. Чтобы открыть диалоговое окно " **Параметры** ", в строке меню Visual Studio выберите **Сервис**  > **Параметры**.
+1. Чтобы открыть диалоговое окно " **Параметры** ", в строке меню Visual Studio выберите **Сервис** > **Параметры**.
 
-1. В диалоговом окне **Параметры** выберите **текстовый редактор**  > **C#** или **базовый**  > **Дополнительно**.
+1. В диалоговом окне **Параметры** выберите **текстовый редактор** > **C#** или **базовый** > **Дополнительно**.
 
 1. Установите флажок **включить полное анализ решения** , чтобы включить полный анализ решения, или снимите флажок, чтобы отключить его. Когда все будет готово, нажмите кнопку **ОК** .
 
@@ -44,4 +44,4 @@ ms.locfileid: "72649444"
 
 Если Visual Studio обнаружит, что для нее доступно 200 МБ или меньше памяти, автоматически отключает полный анализ решений (и другие функции), если он включен. В этом случае появится предупреждение, информирующее о том, что в Visual Studio отключены некоторые функции. При необходимости кнопка позволяет повторно включить полный анализ решения.
 
-![Текст предупреждения приостановка полного анализа решения](../code-quality/media/fsa_alert.png)
+![Текст предупреждения, приостановка полный анализ решения](../code-quality/media/fsa_alert.png)

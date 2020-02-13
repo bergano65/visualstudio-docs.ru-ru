@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648919"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587112"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Добавление пользовательских элементов управления в окно "Источники данных"
 
@@ -39,7 +39,7 @@ ms.locfileid: "72648919"
 2. В окне **Источники данных** щелкните элемент, который является частью источника данных, добавленного в окно, а затем щелкните раскрывающееся меню для этого элемента.
 
    > [!TIP]
-   > Если окно Источники данных не открыто, откройте его, выбрав **вид**  >  другие  > **Источники данных** **Windows** .
+   > Если окно Источники данных не открыто, откройте его, выбрав **вид** > другие > **Источники данных** **Windows** .
 
 3. В раскрывающемся меню выберите команду **настроить**. Откроется одно из следующих диалоговых окон:
 
@@ -89,7 +89,7 @@ ms.locfileid: "72648919"
     > [!NOTE]
     > В список связанных элементов управления можно добавить только те элементы управления, которые находятся в текущем решении или в сборке, на которую указывает ссылка. (Элементы управления должны также реализовать один из атрибутов привязки данных в предыдущей таблице.) Чтобы привязать данные к пользовательскому элементу управления, недоступному в окне Источники данных, перетащите элемент управления из **панели элементов** в область конструктора, а затем перетащите элемент для привязки из окна **Источники данных** на элемент управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Диалоговое окно «Параметры настройки пользовательского интерфейса данных»](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

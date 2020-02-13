@@ -2,17 +2,17 @@
 title: Директива Output T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606218"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591818"
 ---
 # <a name="t4-output-directive"></a>Директива Output T4
 
@@ -50,7 +50,7 @@ ms.locfileid: "72606218"
  Допустимые значения: любое допустимое расширение имени файла.
 
 ## <a name="encoding-attribute"></a>атрибут Encoding
- Задает кодировку для использования при создании выходного файла. Пример:
+ Задает кодировку для использования при создании выходного файла. Например:
 
  `<#@ output encoding="utf-8"#>`
 
@@ -68,6 +68,6 @@ ms.locfileid: "72606218"
 
  `utf-32`
 
- `0` (системное значение по умолчанию)
+ `0` (система по умолчанию)
 
  Как правило, можно использовать строку WebName или число CodePage любых кодировок, возвращаемых <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

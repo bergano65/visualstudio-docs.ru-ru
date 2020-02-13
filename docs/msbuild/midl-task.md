@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (C++), MIDL task
 - MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911250"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592156"
 ---
 # <a name="midl-task"></a>MIDL - задача
 Является оболочкой для компилятора с языка MIDL (*midl.exe*). Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](/windows/desktop/Midl/midl-command-line-reference).
@@ -235,7 +235,7 @@ ms.locfileid: "72911250"
 
      Определяет *идентификатор языкового стандарта*, позволяющий использовать международные символы во входных файлах, именах файлов и путях к каталогам. Укажите идентификатор языкового стандарта в виде десятичного числа.
 
-     Дополнительные сведения см. в описании параметра **/lcid** [Справочнике по командной строке языка MIDL](/windows/desktop/Midl/midl-command-line-reference). Также см. раздел [Идентификаторы языкового стандарта](/windows/desktop/intl/locale-identifiers).
+     Дополнительные сведения см. в описании параметра **/lcid**[Справочнике по командной строке языка MIDL](/windows/desktop/Midl/midl-command-line-reference). Также см. раздел [Идентификаторы языкового стандарта](/windows/desktop/intl/locale-identifiers).
 
 - **MkTypLibCompatible**
 
@@ -319,7 +319,7 @@ ms.locfileid: "72911250"
 
 - **SuppressStartupBanner**
 
-     Необязательный параметр `Boolean` .
+     Необязательный параметр `Boolean`.
 
      Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.
 
@@ -344,7 +344,7 @@ ms.locfileid: "72911250"
 
 - **TrackerLogDirectory**
 
-     Необязательный параметр `String` .
+     Необязательный параметр `String`.
 
      Задает промежуточный каталог, в котором хранятся журналы отслеживания для этой задачи.
 
@@ -381,7 +381,7 @@ ms.locfileid: "72911250"
 
 - **ValidateAllParameters**
 
-     Необязательный параметр `Boolean` .
+     Необязательный параметр `Boolean`.
 
      Если это значение `true`, создаются дополнительные сведения для проверки, которые используются при проведении проверок на целостность во время выполнения. Если это значение `false`, сведения для проверки не создаются.
 
@@ -389,7 +389,7 @@ ms.locfileid: "72911250"
 
 - **WarnAsError**
 
-     Необязательный параметр `Boolean` .
+     Необязательный параметр `Boolean`.
 
      Если это значение `true`, все предупреждения будут обрабатываться как ошибки.
 

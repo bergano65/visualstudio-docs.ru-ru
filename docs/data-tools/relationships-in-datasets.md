@@ -10,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648245"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586319"
 ---
 # <a name="create-relationships-between-datasets"></a>Создание связей между наборами данных
 Наборы данных, содержащие связанные таблицы, используют <xref:System.Data.DataRelation> объекты для представления связи «родители-потомки» между таблицами и для возвращения связанных записей друг от друга. При добавлении связанных таблиц в наборы данных с помощью **мастера настройки источника**или **Конструктор наборов данных**создает и настраивает объект <xref:System.Data.DataRelation>.
@@ -104,6 +104,6 @@ ms.locfileid: "72648245"
 
 2. В меню **данные** выберите команду **Показать связи меток** , чтобы отобразить имя связи. Очистите эту команду, чтобы скрыть имя связи.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

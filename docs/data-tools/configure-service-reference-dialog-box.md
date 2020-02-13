@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642859"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586930"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Настроить ссылку на службу - диалоговое окно
 
@@ -71,11 +71,11 @@ ms.locfileid: "72642859"
 
 **Тип коллекции**
 
-Указывает тип коллекции списка для клиента WCF. Значение по умолчанию — <xref:System.Array>.
+Указывает тип коллекции списка для клиента WCF. Тип по умолчанию —<xref:System.Array>.
 
 **Тип коллекции для словаря**
 
-Указывает тип коллекции словаря для клиента WCF. Значение по умолчанию — <xref:System.Collections.Generic.Dictionary%602>.
+Указывает тип коллекции словаря для клиента WCF. Тип по умолчанию —<xref:System.Collections.Generic.Dictionary%602>.
 
 **Повторно использовать типы в сборках, на которые есть ссылки**
 
@@ -83,7 +83,7 @@ ms.locfileid: "72642859"
 
 **Повторно использовать типы во всех сборках, на которые имеется ссылка**
 
-Если этот флажок установлен, все типы в **списке сборок, на которые имеются ссылки** , будут использоваться повторно по возможности. Этот параметр выбран по умолчанию.
+Если этот флажок установлен, все типы в **списке сборок, на которые имеются ссылки** , будут использоваться повторно по возможности. По умолчанию этот параметр выбран.
 
 **Повторно использовать типы в указанных сборках, на которые есть ссылки**
 
@@ -103,7 +103,7 @@ ms.locfileid: "72642859"
 > [!NOTE]
 > Кнопка **Добавить веб-ссылку** доступна только в том случае, если диалоговое окно **Настройка ссылки на службу** отображается из **диалогового окна Добавление ссылки на службу**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Практическое руководство. Добавление ссылки на веб-службу](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Службы Windows Communication Foundation и службы данных WCF](../data-tools/configure-service-reference-dialog-box.md)

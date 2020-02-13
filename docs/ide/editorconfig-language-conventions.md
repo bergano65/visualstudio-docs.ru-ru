@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652811"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542663"
 ---
 # <a name="language-conventions"></a>Языковые соглашения
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **Имя правила** | csharp_prefer_braces |
 | **Идентификатор правила** | IDE0011 |
 | **Применимые языки** | C# |
-| **Значения** | `true` — предпочитать фигурные скобки даже для одной строки кода.<br /><br />`false` — предпочитать не использовать фигурные скобки, если это допустимо. |
+| **Значения** | `true` — предпочитать фигурные скобки даже для одной строки кода.<br /><br />`false` — предпочитать не использовать фигурные скобки, если это допустимо.<br /><br />`when_multiline` — предпочитать фигурные скобки на нескольких строках. |
 | **Значение по умолчанию в Visual Studio** | `true:silent` |
 
 Примеры кода:
@@ -1838,7 +1838,7 @@ void M()
 | **Имя правила** | csharp_prefer_simple_using_statement |
 | **Идентификатор правила** | IDE0063 |
 | **Применимые языки** | C# 8.0+ |
-| **Значения** | `true` — предпочитать использовать *простую* инструкцию `using`<br /><br />`false` — не предпочитать использовать *простую* инструкцию `using` |
+| **Значения** | `true` — предпочитать использовать *простую* инструкцию `using`.<br /><br />`false` — не предпочитать использовать *простую* инструкцию `using`. |
 | **Значение по умолчанию в Visual Studio** | `true:suggestion` |
 
 Примеры кода:

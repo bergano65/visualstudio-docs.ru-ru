@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1efc8ea7f40c3098e681cc80ac90789b629630a9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297895"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918296"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "74297895"
 - [Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity](#Unity)
 
 ## <a name="NET"></a> Сборка приложения для устройств Android, iOS и Windows (.NET Framework)
- ![Устройствах](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
 
  С помощью Xamarin вы можете указать Android, iOS и Windows в качестве целевых устройств в одном и том же решении, при этом код и даже графический интерфейс будут использоваться совместно.
 
@@ -76,7 +76,7 @@ ms.locfileid: "74297895"
 
 |**Дополнительные сведения**|
 |--------------------|
-|Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
+|Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
 
 ### <a name="WindowsHTML"></a> Целевые устройства Windows 10
  ![Устройства Windows](../cross-platform/media/windowsdevices.png "Устройства Windows")
@@ -95,7 +95,7 @@ ms.locfileid: "74297895"
 |[Перенос приложений на универсальную платформу Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
- ![Устройствах](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Устройства](../cross-platform/media/homedevices.png "HomeDevices")
 
  Если вы разработчик веб-решений и знакомы с HTML и JavaScript, то вы можете создавать приложения для целевых платформ Windows, Android и iOS с помощью средств Visual Studio для Apache Cordova. Такие приложения могут быть ориентированы на все три платформы, и при их создании вы можете полагаться на привычные навыки и процедуры.
 
@@ -116,7 +116,7 @@ ms.locfileid: "74297895"
 |**Дополнительные сведения**|
 |--------------------|
 |[Установка Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Начало работы с Инструментами Visual Studio для Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Начало работы с Инструментами Visual Studio для Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
 |[Сведения об эмуляторе Visual Studio для Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a> Сборка приложений для устройств Android и Windows (C++)
@@ -143,7 +143,7 @@ ms.locfileid: "74297895"
 |**Дополнительные сведения**|
 |--------------------|
 |[Скачивание Visual Studio.](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Библиотека MSDN)|
+|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
 |[Дополнительные сведения об использовании C++ для нескольких платформ.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Установите нужные компоненты, а затем создайте собственное приложение действия для Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
 |[Сведения об эмуляторе Visual Studio для Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
@@ -156,7 +156,7 @@ ms.locfileid: "74297895"
 
  ![Среда разработки VSTU](../cross-platform/media/vstu-overview.png "VSTU_Overview")
 
- Средства Visual Studio для Unity (VSTU) позволяют использовать Visual Studio для создания сценариев игр и редакторов на языке C#, а затем использовать его мощный отладчик для поиска и исправления ошибок. В последнем выпуске VSTU реализована поддержка Unity 5, включена цветовая маркировка синтаксиса для языка шейдера ShaderLab системы Unity, усовершенствована синхронизация с Unity, добавлены дополнительные функции отладки и улучшены механизмы создания кода благодаря использованию мастера MonoBehavior. VSTU также объединяет файлы проекта Unity, сообщения консоли и возможность запускать игру в Visual Studio, чтобы тратить меньше времени на переключение в редактор Unity Editor и из него при написании кода.
+ Набор средств Visual Studio для Unity (VSTU) позволяет использовать Visual Studio для создания скриптов игр и скриптов  редактора на языке C#, а затем применять его мощный отладчик для поиска и исправления ошибок. В последнем выпуске VSTU реализована поддержка Unity 5, включена цветовая маркировка синтаксиса для языка шейдера ShaderLab системы Unity, усовершенствована синхронизация с Unity, добавлены дополнительные функции отладки и улучшены механизмы создания кода благодаря использованию мастера MonoBehavior. VSTU также объединяет файлы проекта Unity, сообщения консоли и возможность запускать игру в Visual Studio, чтобы тратить меньше времени на переключение в редактор Unity Editor и из него при написании кода.
 
  Начните создавать игры с использованием Unity и средств Visual Studio Tools для Unity уже сегодня.
 
@@ -169,7 +169,7 @@ ms.locfileid: "74297895"
 |[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
 |[Сведения о Unity](https://unity.com/) (веб-сайт Unity)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление API Office 365 в проект Visual Studio](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Мобильные службы Azure](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)

@@ -1,5 +1,5 @@
 ---
-title: Использование средств Visual Studio для Docker с ASP.NET Core
+title: Использование средств Visual Studio для Docker с ASP.NET
 author: ghogen
 description: Сведения об использовании средств Visual Studio 2019 и Docker для Windows
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74485532"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922995"
 ---
 В Visual Studio можно легко выполнять сборку, отлаживать и запускать контейнерные приложения .NET, ASP.NET и ASP.NET Core и публиковать их в реестре контейнеров Azure (ACR), Docker Hub, службе приложений Azure или собственном реестре контейнеров. В этой статье рассматривается публикация приложения ASP.NET Core в реестре контейнеров Azure (ACR).
 
@@ -20,7 +20,7 @@ ms.locfileid: "74485532"
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**.
-* [Средства разработки .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) для разработки с использованием .NET Core 2.2.
+* [Средства разработки .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) для разработки с использованием .NET Core
 * Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Установка и настройка
@@ -29,10 +29,12 @@ ms.locfileid: "74485532"
 
 ## <a name="add-a-project-to-a-docker-container"></a>Добавление проекта в контейнер Docker
 
-1. Создайте проект, используя шаблон **Веб-приложение ASP.NET Core**.
+1. Создайте проект, используя шаблон **Веб-приложение ASP.NET Core**, или, если вы хотите использовать .NET Framework вместо .NET Core, выберите **Веб-приложение ASP.NET (.NET Framework)** .
 1. Выберите **Веб-приложение** и установите флажок **Включение поддержки Docker**.
 
    ![Флажок "Включение поддержки Docker"](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   На снимке экрана показана платформа .NET Core; если вы используете .NET Framework, она выглядит немного иначе.
 
 1. Выберите нужный тип контейнера (Windows или Linux) и нажмите кнопку **Создать**.
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Предыдущий *Dockerfile* основан на образе [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) и включает в себя инструкции по изменению базового образа путем сборки проекта и добавления его в контейнер.
+Предыдущий *Dockerfile* основан на образе [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) и включает в себя инструкции по изменению базового образа путем сборки проекта и добавления его в контейнер. Если вы используете .NET Framework, базовый образ будет отличаться.
 
 Если в диалоговом окне создания проекта установлен флажок **Configure for HTTP** (Настроить для трафика HTTPS), *Dockerfile* предоставляет два порта. Один порт используется для трафика HTTP, другой — для HTTPS. Если флажок не установлен, для трафика HTTP предоставляется один порт (80).
 
@@ -71,7 +73,7 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 Выберите пункт **Docker** в раскрывающемся списке отладки на панели инструментов, чтобы начать отладку приложения. Может появиться сообщение с запросом о доверии сертификату. Выберите доверие сертификату, чтобы продолжить.
 
-В параметре **Инструменты контейнера** в окне **Вывод** показано, какие действия выполняются.
+В параметре **Инструменты контейнера** в окне **Вывод** показано, какие действия выполняются. В первый раз может потребоваться некоторое время для скачивания базового образа, но при последующих запусках это происходит гораздо быстрее.
 
 ## <a name="containers-window"></a>Окно "Контейнеры"
 
@@ -97,12 +99,12 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 1. Выберите **Создать реестр контейнеров Azure** и щелкните **Опубликовать**.
 1. Заполните нужные значения в окне **Создать новый реестр контейнеров Azure**.
 
-    | Параметр      | Рекомендуемое значение  | ОПИСАНИЕ                                |
+    | Параметр      | Рекомендуемое значение  | Описание                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS-префикс** | Глобально уникальное имя | Имя, которое однозначно идентифицирует реестр контейнеров. |
     | **Подписка** | Выберите свою подписку | Подписка Azure, которую нужно использовать. |
     | **[Группа ресурсов](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Имя группы ресурсов, в которой создается реестр контейнеров. Чтобы создать группу ресурсов, выберите **Создать**.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Стандартный | Уровень обслуживания в реестре контейнеров  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Стандартный | Уровень обслуживания в реестре контейнеров  |
     | **Расположение реестра** | Расположение рядом с вами | Выберите расположение в ближайшем [регионе](https://azure.microsoft.com/regions/) или в регионе, расположенном рядом с другими службами, которые будут использовать реестр контейнеров. |
 
     ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio][0]

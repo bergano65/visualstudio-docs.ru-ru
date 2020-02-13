@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295550"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915972"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Руководство. Миграция проектов расширяемости в Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "74295550"
   
 3. Добавьте ссылку на Microsoft. VisualStudio. Shell. «. *. dll». (Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений** и выберите **Добавить/ссылка**. Перейдите на вкладку **расширения** и проверьте **Microsoft. VisualStudio. Shell.,**  
   
-4. Постройте решение. Созданные файлы развертываются в:  
+4. Выполните сборку решения. Созданные файлы развертываются в:  
   
      **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< имя автора\>\\< имя проекта** \>\\< версия проекта\>\\.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "74295550"
   
 2. Удалите эталонные сборки пакета VS SDK из проекта, выбрав их, щелкните правой кнопкой мыши и выберите пункт **Удалить**.  
   
-3. Добавьте версии NuGet для эталонных сборок пакета VS SDK.  Находясь в узле **ссылки на обозреватель решений** , откройте окно **Управление пакетами NuGet...** .  Если вы хотите узнать больше об этом диалоговом окне, см. раздел [Управление пакетами NuGet с помощью диалогового окна](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio). Эталонные сборки пакета VS SDK публикуются на [NuGet.org](https://www.nuget.org/) by [висуалстудиоекстенсибилити](https://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. Добавьте версии NuGet для эталонных сборок пакета VS SDK.  Находясь в узле **ссылки на обозреватель решений** , откройте окно **Управление пакетами NuGet...** .  Если вы хотите узнать больше об этом диалоговом окне, см. раздел [Управление пакетами NuGet с помощью диалогового окна](/nuget/consume-packages/install-use-packages-visual-studio). Эталонные сборки пакета VS SDK публикуются на [NuGet.org](https://www.nuget.org/) by [висуалстудиоекстенсибилити](https://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4. Используя **NuGet.org** в качестве **источника пакета**, найдите имя пакета NuGet, совпадающее с требуемой ссылочной сборкой (например, Microsoft. VisualStudio. Shell. г), и установите его в проекте.  NuGet может добавить несколько ссылочных сборок для удовлетворения зависимостей начальной сборки.  
   

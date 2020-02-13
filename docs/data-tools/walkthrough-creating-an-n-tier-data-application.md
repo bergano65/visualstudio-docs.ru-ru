@@ -9,17 +9,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806986"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916498"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Пошаговое руководство. Создание n-уровневого приложения для данных
 *N-уровневые* приложения для обработки данных — это приложения, которые осуществляют доступ к данным и разделены на несколько логических слоев или *уровней*. Разделение компонентов приложения на несколько отдельных уровней повышает удобство обслуживания и масштабируемость приложения. Это обеспечивается за счет упрощения внедрения новых технологий, которые можно применить к отдельному уровню без пересмотра всего решения. N-уровневая архитектура включает в себя уровень представления, средний уровень и уровень данных. Средний уровень обычно содержит слой доступа к данным, слой бизнес-логики и общие компоненты, такие как аутентификация и проверка. Уровень данных содержит реляционную базу данных. N-уровневые приложения обычно хранят конфиденциальную информацию на слое доступа к данным среднего уровня, чтобы обеспечить изоляцию от конечных пользователей, работающих с уровнем представления. Дополнительные сведения см. в статье [Общие сведения о N-уровневых приложениях данных](../data-tools/n-tier-data-applications-overview.md).
@@ -48,9 +48,9 @@ ms.locfileid: "72806986"
 
 - Написание кода для заполнения таблиц данных.
 
-![ссылка на видео](../data-tools/media/playvideo.gif) видеоверсию этого раздела, см. в разделе [Video How to: Создание n-уровневого приложения для работы с данными](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
+![ссылка на видео](../data-tools/media/playvideo.gif) видеоверсию этого раздела, см. в разделе [Video How to: Создание n-уровневого приложения для работы с данными](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
 1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **разработки классических приложений .NET** или как отдельный компонент.
@@ -75,7 +75,7 @@ ms.locfileid: "72806986"
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Создание n-уровневого решения и библиотеки классов DataEntityTier
 
-1. В Visual Studio в меню **файл** выберите пункт **создать**  > **проект**.
+1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
 2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
 
@@ -379,7 +379,7 @@ ms.locfileid: "72806986"
 
 - Добавьте в службу дополнительные методы для обновления данных в базе данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Работа с наборами данных в N-уровневых приложениях](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)

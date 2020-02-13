@@ -14,15 +14,15 @@ helpviewer_keywords:
 - protection
 description: Узнайте, как защитить свои приложения .NET с помощью бесплатной копии средства Dotfuscator Community, включенного в Visual Studio 2017.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 18e2ee678e5cf71693d12d4ddeb6af51f55a870b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1b2c0bfd4adbd4a952a64f20fc3d2639a8abb5f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652427"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918448"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -96,7 +96,7 @@ Dotfuscator Community предоставляет настроенную сис�
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
-[assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
+[assemblies]:  /dotnet/standard/assembly-format
 [software-protection]:  https://www.preemptive.com/software-protection
 [obfuscation]:  https://www.preemptive.com/obfuscation
 [app-protection]:  https://www.preemptive.com/application-protection

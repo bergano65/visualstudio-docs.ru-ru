@@ -3,17 +3,17 @@ title: Невозможно изменить конструктор во вре�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77034b422f710bd6e7811679f35024b543a91558
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1667277e4f833ddcd6c2b2e077898ae5c76aada4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648154"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113567"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Невозможно изменить конструктор во время отладки
 
@@ -21,6 +21,6 @@ ms.locfileid: "72648154"
 
 Чтобы исправить эту ошибку, выберите пункт **прерывать отладку** в меню **Отладка** . Приложение останавливает отладку и может изменять элементы в **конструкторе O/R**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

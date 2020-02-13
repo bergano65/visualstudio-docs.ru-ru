@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22b48cdb80f34a4bbf57626b9ffe6e4d753e5a55
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293680"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115078"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
@@ -50,18 +50,18 @@ ms.locfileid: "70293680"
 
 1. Выберите флаг уведомления, чтобы открыть центр **уведомлений**, а затем выберите уведомление, которое вы хотите установить.
 
-   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/vs-install-notifications-hub-15dot6.png "Центр уведомлений в Visual Studio 2017")
+   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/vs-install-notifications-hub-15dot6.png "Центр уведомлений в Visual Studio 2017")
 
       > [!TIP]
       > Обновление для выпуска Visual Studio 2017 является накопительным, поэтому всегда выбирайте для установки то, у которого новейший номер версии.
 
 1. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
 
-    ![Обновление Visual Studio 2017 с помощью диалогового окна "Обновление" в центре уведомлений](media/vs-update-now-from-notifications-hub.png "Диалоговое окно \"Обновление\" в центре уведомлений в Visual Studio")
+    ![Обновление Visual Studio 2017 с помощью диалогового окна Обновление в центре уведомлений](media/vs-update-now-from-notifications-hub.png "Диалоговое окно Обновление в центре уведомлений Visual Studio")
 
      Если откроется диалоговое окно управления доступом пользователя, выберите **Да**. Затем на некоторое время может открыться диалоговое окно с сообщением "Пожалуйста, подождите". Затем откроется Visual Studio Installer, чтобы начать обновление.
 
-     ![Новый интерфейс Visual Studio Installer в версии 15.6](media/visual-studio-15dot6-installer.png "Новый интерфейс Visual Studio Installer в версии 15.6")
+     ![Новый интерфейс Visual Studio Installer версии 15.6](media/visual-studio-15dot6-installer.png "Новый интерфейс Visual Studio Installer версии 15.6")
 
      Обновление продолжается. Когда обновление завершится, Visual Studio перезапустится.
 
@@ -76,7 +76,7 @@ ms.locfileid: "70293680"
 
 1. Выберите **Справка** > **Проверка обновлений**.
 
-     ![Новое меню "Справка" в Visual Studio версии 15.6](media/vs-help-menu-check-for-updates.png "Новое меню \"Справка\" в Visual Studio версии 15.6")
+     ![Новое меню Справка в Visual Studio версии 15.6](media/vs-help-menu-check-for-updates.png "Новое меню Справка в Visual Studio версии 15.6")
 
 1. Когда откроется диалоговое окно **Обновление**, выберите **Обновить сейчас**.
 
@@ -102,7 +102,7 @@ ms.locfileid: "70293680"
 
    Чтобы установить обновления, нажмите кнопку **Обновить**.
 
-     ![Обновление Visual Studio 2017 с помощью установщика Visual Studio](media/update-visual-studio.png "Обновление Visual Studio 2017 с помощью установщика Visual Studio")
+     ![Обновление Visual Studio 2017 с помощью Visual Studio Installer](media/update-visual-studio.png "Обновление Visual Studio 2017 с помощью Visual Studio Installer")
 
 ## <a name="update-visual-studio-2017-version-155-or-earlier"></a>Обновление Visual Studio 2017 версии 15.5 или более ранней версии
 
@@ -112,7 +112,7 @@ ms.locfileid: "70293680"
 
 1. При наличии обновлений в Visual Studio отображается соответствующий флаг уведомления.
 
-   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notification-flag.png "Флажок уведомления об обновлении в Visual Studio")
+   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notification-flag.png "Обновление флага уведомлений в Visual Studio")
 
    Выберите флажок уведомления, чтобы открыть **центр уведомлений**.
 
@@ -127,7 +127,7 @@ ms.locfileid: "70293680"
 
 1. В диалоговом окне **Расширения и обновления** нажмите кнопку **Обновить**.
 
-   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-extensions-and-updates.png "Диалоговое окно \"Расширения и обновления\" в Visual Studio")
+   ![Обновление Visual Studio 2017 с помощью центра уведомлений](media/notifications-extensions-and-updates.png "Диалоговое окно Расширения и обновления в Visual Studio")
 
 #### <a name="more-about-visual-studio-notifications"></a>Подробнее об уведомлениях Visual Studio
 
@@ -139,11 +139,11 @@ ms.locfileid: "70293680"
 
 Выберите флажок уведомления, чтобы открыть **центр уведомлений**, а затем выберите уведомления, в отношении которых необходимо предпринять меры. Уведомление можно также проигнорировать или закрыть.
 
- ![Просмотр дополнительного или информационного сообщения в центре уведомлений](media/notification-flag-optional.png "Флажок уведомления о дополнительном или информационном сообщении в Visual Studio")
+ ![Просмотр дополнительного или информационного сообщения в центре уведомлений](media/notification-flag-optional.png "Флаг уведомления о дополнительном или информационном сообщении в Visual Studio")
 
 Вы можете настроить пропуск уведомления, чтобы оно больше не отображалось в Visual Studio. Чтобы сбросить список игнорируемых уведомлений, нажмите кнопку **Параметры** в центре уведомлений.
 
-   ![Нажатие кнопки "Параметры" в центре уведомлений для просмотра параметров уведомлений](media/vs-notifications-hub-settings-button.png "Нажатие кнопки \"Параметры\" в центре уведомлений для просмотра параметров уведомлений")
+   ![Нажатие кнопки Параметры в центре уведомлений для просмотра параметров уведомлений](media/vs-notifications-hub-settings-button.png "Нажатие кнопки Параметры в центре уведомлений для просмотра параметров уведомлений")
 
 ### <a name="update-by-using-the-visual-studio-installer"></a>Обновление с помощью установщика Visual Studio
 
@@ -180,7 +180,7 @@ ms.locfileid: "70293680"
 
 1. Запустите установщик.
 
-     ![Открытие Visual Studio Installer из Windows](media/vs-2019/vs-installer-windows-start.png "Open the Visual Studio Installer")
+     ![В Windows откройте Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Открытие Visual Studio Installer")
 
    Для продолжения работы может потребоваться обновление самого установщика. Если это так, следуйте инструкциям на экране.
 
@@ -188,17 +188,17 @@ ms.locfileid: "70293680"
 
    Например, если вы ранее установили Visual&nbsp;Studio Community&nbsp;2019 и для этого выпуска есть обновление, в установщике будет отображаться сообщение **Доступно обновление**.
 
-     ![Выберите выпуск Visual Studio 2019, который вы хотите обновить](media/vs-2019/vs-installer-update-visual-studio-community.png "Выберите выпуск Visual Studio 2019, который вы хотите обновить")
+     ![Выбор выпуска Visual Studio 2019, который необходимо обновить](media/vs-2019/vs-installer-update-visual-studio-community.png "Выбор выпуска Visual Studio 2019, который необходимо обновить")
 
 1. Чтобы установить обновления, нажмите кнопку **Обновить**.
 
-    ![Нажмите кнопку "Обновить", чтобы установить обновления](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "Нажмите кнопку \"Обновить\", чтобы установить обновления")
+    ![Нажатие кнопки "Обновить" для установки обновлений](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "Нажатие кнопки "Обновить" для установки обновлений")
 
 1. Когда обновление завершится, может появиться запрос на перезагрузку компьютера. В таком случае перезагрузите компьютер, а затем запустите Visual Studio, как обычно.
 
    Если вам не будет предложено перезагрузить компьютер, выберите **Запуск**, чтобы запустить Visual Studio из установщика.
 
-    ![Выберите "Запуск", чтобы запустить Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "Выберите \"Запуск\", чтобы запустить Visual Studio")
+    ![Нажатие кнопки "Запуск" для запуска Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "Нажатие кнопки "Запуск" для запуска Visual Studio")
 
 ## <a name="use-the-ide"></a>Использование интегрированной среды разработки
 
@@ -208,23 +208,23 @@ ms.locfileid: "70293680"
 
 1. В меню Windows **Пуск** выберите **Visual Studio 2019**.
 
-    ![Открытие Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "Открытие Visual Studio 2019 из Windows")
+    ![Открытие Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "Открытие Visual Studio 2019 в Windows")
 
 1. В разделе **Приступая к работу** выберите любой параметр, чтобы открыть интегрированную среду разработки.
 
-    ![Откройте Visual Studio Installer](media/vs2019-choose-option-from-get-started.png "Откройте Visual Studio Installer")
+    ![Открытие Visual Studio Installer](media/vs2019-choose-option-from-get-started.png "Открытие Visual Studio Installer")
 
     Открывается Visual Studio. В интегрированной среде разработки отображается сообщение **Обновление Visual Studio 2019**.
 
-    ![Сообщение "Обновление Visual Studio 2019" в интегрированной среде разработки](media/vs-2019/update-visual-studio-ide-message.png "Сообщение \"Обновление Visual Studio 2019\" в интегрированной среде разработки")
+    ![Сообщение "Обновление Visual Studio 2019" в интегрированной среде разработки](media/vs-2019/update-visual-studio-ide-message.png "Сообщение "Обновление Visual Studio 2019" в интегрированной среде разработки")
 
 1. В сообщении **Обновление Visual Studio 2019** выберите **Просмотреть подробности**.
 
-   ![Нажатие кнопки "Просмотреть подробности" в сообщении "Обновление Visual Studio 2019"](media/vs-2019/update-visual-studio-ide-view-details.png "Нажатие кнопки \"Просмотреть подробности\" в сообщении \"Обновление Visual Studio 2019\"")
+   ![Нажатие кнопки "Просмотреть сведения" в сообщении "Обновление IDE Visual Studio 2019"](media/vs-2019/update-visual-studio-ide-view-details.png "Нажатие кнопки "Просмотреть сведения" в сообщении "Обновление Visual Studio 2019"")
 
 1. В диалоговом окне **Обновление скачано и готово к установке** выберите **Обновить**.
 
-     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "Нажатие кнопки \"Обновить\" в диалоговом окне \"Обновление скачано и готово к установке\"")
+     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"")
 
    Visual Studio обновляется, закрывается и снова открывается.
 
@@ -232,14 +232,14 @@ ms.locfileid: "70293680"
 
 1. В строке меню выберите **Help**, а затем выберите **Проверить наличие обновлений**.
 
-     ![В меню Help выберите "Проверить наличие обновлений"](media/vs-2019/vs-ide-check-updates-help-menu.png "В меню Help выберите \"Проверить наличие обновлений\"")
+     ![Выбор параметра "Проверить наличие обновлений" в меню "Справка"](media/vs-2019/vs-ide-check-updates-help-menu.png "Выбор параметра "Проверить наличие обновлений" в меню "Справка"")
 
     > [!NOTE]
     > Для проверки наличия обновлений вы также можете использовать окно поиска в IDE. Нажмите **Ctrl**+**Q**, введите "проверить наличие обновлений" и выберите соответствующий результат поиска.
 
 1. В диалоговом окне **Доступно обновление** нажмите кнопку **Обновить**.
 
-     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs-2019/update-visual-studio-community-from-ide.png "Нажатие кнопки \"Обновить\" в диалоговом окне \"Обновление скачано и готово к установке\"")
+     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs-2019/update-visual-studio-community-from-ide.png "Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"")
 
    Visual Studio обновляется, закрывается и снова открывается.
 

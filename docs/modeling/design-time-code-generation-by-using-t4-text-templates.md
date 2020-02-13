@@ -10,17 +10,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08451c679f372cb376c6baf97a9a4d06282ba45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748423"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589634"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Создание кода во время разработки с помощью текстовых шаблонов T4
 
@@ -41,7 +41,7 @@ ms.locfileid: "72748423"
 
 2. Добавьте в проект файл текстового шаблона и присвойте ему имя с расширением **TT**.
 
-    Для этого в **Обозреватель решений**в контекстном меню проекта выберите **Добавить**  > **новый элемент**. В диалоговом окне **Добавление нового элемента** выберите **текстовый шаблон** в средней области.
+    Для этого в **Обозреватель решений**в контекстном меню проекта выберите **Добавить** > **новый элемент**. В диалоговом окне **Добавление нового элемента** выберите **текстовый шаблон** в средней области.
 
     Обратите внимание, что свойство **Custom Tool** файла — **тексттемплатингфилеженератор**.
 
@@ -54,7 +54,7 @@ ms.locfileid: "72748423"
 
     Если вы добавили шаблон в проект [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], для атрибута языка будет задано значение `VB`.
 
-4. Добавьте любой текст в конец файла. Пример:
+4. Добавьте любой текст в конец файла. Например:
 
    ```
    Hello, world!
@@ -75,7 +75,7 @@ ms.locfileid: "72748423"
 
 - Измените шаблон, а затем переключитесь на другое окно Visual Studio.
 
-- при сохранении шаблона;
+- Сохраните шаблон.
 
 - Выберите **преобразовать все шаблоны** в меню **Сборка** . Это приведет к преобразованию всех шаблонов в решении Visual Studio.
 
@@ -123,7 +123,7 @@ ms.locfileid: "72748423"
 
 Отладка текстового шаблона
 
-- Вставьте строку `debug="true"` в директиву `template`. Пример:
+- Вставьте строку `debug="true"` в директиву `template`. Например:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -134,7 +134,7 @@ ms.locfileid: "72748423"
    Шаблон выполняется и останавливается в точках останова. Вы можете проверить переменные и выполнить код пошагово в обычном режиме.
 
 > [!TIP]
-> `debug="true"` более точно сопоставляет созданный код с текстовым шаблоном, вставляя в созданный код дополнительные директивы нумерации строк. Если опустить эту строку, точки останова могут останавливать выполнение в неверном состоянии.
+> `debug="true"` сделать созданный код более точным для текстового шаблона, вставив в созданный код дополнительные директивы нумерации строк. Если опустить эту строку, точки останова могут останавливать выполнение в неверном состоянии.
 >
 > Однако это выражение можно оставить в директиве шаблона, даже если вы не выполняете отладку. Это приведет к незначительному снижению производительности.
 
@@ -272,7 +272,7 @@ ms.locfileid: "72748423"
 
 ### <a name="getting-data-from-visual-studio"></a>Получение данных из Visual Studio
 
-Чтобы использовать службы, предоставляемые в Visual Studio, установите атрибут `hostSpecific` и загрузите сборку `EnvDTE`. Импорт `Microsoft.VisualStudio.TextTemplating`, который содержит метод расширения `GetCOMService()`.  Затем можно использовать метод IServiceProvider.GetCOMService() для получения доступа к DTE и другим службам. Пример:
+Чтобы использовать службы, предоставляемые в Visual Studio, установите атрибут `hostSpecific` и загрузите сборку `EnvDTE`. Импорт `Microsoft.VisualStudio.TextTemplating`, который содержит метод расширения `GetCOMService()`.  Затем можно использовать метод IServiceProvider.GetCOMService() для получения доступа к DTE и другим службам. Например:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -299,7 +299,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 Если вы установили пакет SDK для моделирования Visual Studio, все шаблоны можно преобразовать автоматически при каждом выполнении сборки. Для этого внесите изменения в файл проекта (CSPROJ или VBPROJ) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:
 
 > [!NOTE]
-> Пакет SDK для преобразования текстовых шаблонов и пакет SDK для моделирования Visual Studio устанавливаются автоматически при установке отдельных компонентов Visual Studio. Дополнительные сведения см. в [этой записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Пакет SDK для преобразования текстовых шаблонов и пакет SDK для моделирования Visual Studio устанавливаются автоматически при установке отдельных компонентов Visual Studio. Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -325,7 +325,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ::: moniker-end
 
-Дополнительные сведения см. [в разделе Создание кода в процессе сборки](../modeling/code-generation-in-a-build-process.md).
+Дополнительные сведения см. в разделе [создание кода в процессе построения](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Создание отчетов об ошибке
 
@@ -342,7 +342,7 @@ Warning("A warning message");
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Преобразование существующего файла в шаблон времени разработки
 
-1. В проект Visual Studio добавьте файл типа, который требуется создать, например `.cs`, `.vb` или `.resx` файл.
+1. В проект Visual Studio добавьте файл типа, который требуется создать, например `.cs`, `.vb`или `.resx` файл.
 
 2. Проверьте созданный файл, чтобы убедиться, что он работает.
 
@@ -388,6 +388,6 @@ Warning("A warning message");
 |Преобразование данных в форме доменного языка.|[Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Написание процессоров директив для преобразования собственных источников данных.|[Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Рекомендации по написанию текстовых шаблонов T4](../modeling/guidelines-for-writing-t4-text-templates.md)

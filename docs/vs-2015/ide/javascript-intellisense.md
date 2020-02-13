@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300748"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848386"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense помогает быстрее писать код, допуска
 ### <a name="UserDefined"></a> Пользовательские переменные, функции и объекты
  При изменении файла JavaScript [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] сканирует открытые и связанные документы для определения всех доступных ресурсов кода. В их число входят созданные пользователем переменные, функции и объекты. Потом эти ресурсы становятся доступны IntelliSense для JavaScript.
 
- Дополнительные сведения о пользовательских переменных, функциях и объектах см. в статье [о создании собственных объектов](https://go.microsoft.com/fwlink/?LinkId=108671) на веб-сайте MSDN.
+ Дополнительные сведения о пользовательских переменных, функциях и объектах см. в статье [о создании собственных объектов](https://msdn.microsoft.com/library/202863ha.aspx) на веб-сайте MSDN.
 
 ### <a name="External"></a> Ссылки на внешние файлы
  Можно включить различные типы внешних ссылок на файлы, чтобы обеспечить поддержку IntelliSense в коде. Ссылки на внешние файлы могут представлять собой ссылки на скрипты, директивы ссылок, а также могут быть заданы при помощи эталонных групп.
@@ -157,7 +157,7 @@ IntelliSense помогает быстрее писать код, допуска
 </asp:ScriptManager>
 ```
 
- IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. См. подробнее о [внедрении в сборку файла JavaScript в качестве ресурса](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. Дополнительные сведения о ресурсах внедренных скриптов см. в статье [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89) (Пошаговое руководство. Внедрение в сборку файла JavaScript в качестве ресурса).
 
 #### <a name="ReferenceDirectives"></a> Директивы ссылок
  Директивы `reference` позволяют [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] устанавливать отношение между редактируемым скриптом и другими скриптами. Директива `reference` позволяет включить файл скрипта в контекст программирования текущего файла скрипта. Эта дает возможность для IntelliSense ссылаться извне на определенные функции, типы и поля в процессе программирования.
@@ -283,6 +283,6 @@ IntelliSense помогает быстрее писать код, допуска
 - [Расширение IntelliSense для JavaScript](../ide/extending-javascript-intellisense.md)
 - [Завершение операторов с использованием идентификаторов](../ide/statement-completion-for-identifiers.md)
 - [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md)
-- [Сведения об объектной модели DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
+- [Сведения об объектной модели DHTML](https://msdn2.microsoft.com/library/ms533022.aspx)
 - [Отображение списка членов](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Атрибут SRC &#124; Свойство src](https://go.microsoft.com/fwlink/?LinkId=92345)
+- [Атрибут SRC &#124; Свойство src](https://msdn2.microsoft.com/library/ms534642.aspx)
