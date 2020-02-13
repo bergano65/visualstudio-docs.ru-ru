@@ -268,6 +268,10 @@
                   href: visualizer-api-reference.md
         - name: Восстановление скрытых команд отладчика
           href: how-to-restore-hidden-debugger-commands.md
+    - name: Исходный код
+      items:
+        - name: Декомпиляция сборок .NET
+          href: decompilation.md
     - name: Удаленная отладка
       items:
         - name: Удаленная отладка
@@ -294,7 +298,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
+            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -658,7 +662,7 @@
               href: javascript-console-commands.md
             - name: Сочетания клавиш (HTML и JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Предупреждение. Отладка скриптов отключена
+            - name: 'Предупреждение: Отладка скриптов отключена'
               href: warning-script-debugging-disabled.md
         - name: Службы WCF
           items:

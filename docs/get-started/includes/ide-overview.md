@@ -1,4 +1,4 @@
----
+﻿---
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
@@ -56,7 +56,7 @@ ms.locfileid: "72632456"
 
 Среда Visual Studio доступна для Windows и Mac. Функции [Visual Studio для Mac](/visualstudio/mac/) во многом аналогичны возможностям Visual Studio 2019 и оптимизированы для разработки кроссплатформенных и мобильных приложений. Эта статья посвящена версии Visual Studio 2019 для Windows.
 
-Существует три выпуска Visual Studio 2019: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. на странице [Сравнение выпусков Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
+Существует три выпуска Visual Studio 2019: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. на странице [Сравнение выпусков Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
 ::: moniker-end
 
@@ -175,7 +175,7 @@ ms.locfileid: "72632456"
 
    В диалоговом окне **Создать проект** отображается несколько *шаблонов проекта*. Шаблон содержит основные файлы и параметры, необходимые для данного типа проекта.
 
-1. В разделе **Visual C#** выберите категорию шаблонов **.NET Core** и щелкните шаблон **Консольное приложение (.NET Core)**. В текстовом поле **Имя** введите **HelloWorld**, а затем нажмите кнопку **ОК**.
+1. В разделе **Visual C#** выберите категорию шаблонов **.NET Core** и щелкните шаблон **Консольное приложение (.NET Core)** . В текстовом поле **Имя** введите **HelloWorld**, а затем нажмите кнопку **ОК**.
 
    ![Шаблон приложения .NET Core](../media/overview-new-project-dialog.png)
 
@@ -198,7 +198,7 @@ ms.locfileid: "72632456"
 
    ![Параметры меню "Отладка" -> "Запустить без отладки"](../media/overview-start-without-debugging.png)
 
-   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!**. Теперь у вас есть выполняемое приложение.
+   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!** . Теперь у вас есть выполняемое приложение.
 
    ![Окно консоли](../media/overview-console-window.png)
 
@@ -267,7 +267,7 @@ ms.locfileid: "72632456"
 
    ![Параметры меню "Отладка" -> "Запустить без отладки"](../media/overview-start-without-debugging.png)
 
-   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!**. Теперь у вас есть выполняемое приложение.
+   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!** . Теперь у вас есть выполняемое приложение.
 
    ![Окно консоли](../media/vs-2019/overview-console-window.png)
 
