@@ -68,7 +68,7 @@ ms.locfileid: "76114568"
 
 1. Примените актуальные обновления Windows. Эти обновления гарантируют, что на компьютере установлены последние обновления для системы безопасности и необходимые системные компоненты для Visual Studio.
 
-1. Перезагрузите систему. Перезагрузка гарантирует, что ожидающие установки или обновления компоненты не будут препятствовать установке Visual Studio.
+	> [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads)
 
 1. Освободите место. Удалите ненужные файлы и приложения с системного диска. Например, запустите приложение очистки диска.
 
@@ -98,7 +98,9 @@ ms.locfileid: "76114568"
 
 ::: moniker-end
 
-## <a name="step-2---download-visual-studio"></a>Шаг 2. Скачивание Visual Studio
+
+## <a name="step-2---download-visual-studio"></a>Шаг 2. Скачивание Visual Studio
+
 
 Теперь скачайте файл начального загрузчика Visual Studio.
 
@@ -113,7 +115,7 @@ ms.locfileid: "76114568"
 Для этого нажмите кнопку ниже, выберите нужный выпуск Visual Studio, щелкните **Сохранить**, а затем **Открыть папку**.
 
  > [!div class="button"]
- > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads)
+ > [Скачать Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
