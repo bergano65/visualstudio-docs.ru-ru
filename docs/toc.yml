@@ -92,7 +92,7 @@
           items:
             - name: "Подписки на Visual\_Studio: Общие сведения для администраторов"
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Ссылка
+        - name: Справочник
           items:
             - name: Идентификаторы рабочих нагрузок и компонентов Visual Studio
               items:
@@ -380,8 +380,10 @@
                   href: ide/reference/intellisense-completion-unimported-types.md
                 - name: Инверсия условных выражений и логических операций
                   href: ide/reference/invert-conditional-logical.md
-                - name: Инвертирование инструкции if
+                - name: Инверсия инструкции if
                   href: ide/reference/invert-if-statement.md
+                - name: Параметры рефакторинга статических локальных функций
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Перемещение объявления к ссылке
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Перемещение типа в соответствующий файл
@@ -396,7 +398,7 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: Переименовать
                   href: ide/reference/rename.md
-                - name: Сортировка директив using
+                - name: Сортировать директивы using
                   href: ide/reference/sort-usings.md
                 - name: Разбиение и объединение операторов If
                   href: ide/reference/split-or-merge-if-statement.md
@@ -591,7 +593,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: Отключение поддержки DPI для конструктора Windows Forms
               href: designers/disable-dpi-awareness.md
-            - name: Ссылка
+            - name: Справочник
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -780,7 +782,7 @@
         - name: Разработка приложений с поддержкой множества языков
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Построить
+- name: Построение
   items:
     - name: Обзор
       displayName: Compile build
