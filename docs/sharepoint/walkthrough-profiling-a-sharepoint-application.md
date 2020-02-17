@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189124"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277650"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Пошаговое руководство. Профилирование приложения SharePoint
   В этом пошаговом руководстве рассказывается, как использовать средства профилирования в Visual Studio, чтобы оптимизировать производительность приложений SharePoint. Примером приложения служит приемник событий компонентов SharePoint, который содержит цикл простоя, что ведет к снижению производительности приемника событий компонентов. Профилировщик Visual Studio позволяет нахождение и устранение наиболее дорогостоящей (самой медленной) части проекта, также известной как *горячий путь*.
 
  В этом пошаговом руководстве описаны следующие задачи.
 
-- [Аддг компонент и приемник событий компонента](#add-a-feature-and-feature-event-receiver).
+- [Добавьте приемник событий компонента и](#add-a-feature-and-feature-event-receiver)компонента.
 
 - [Настройка и развертывание приложения SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -37,19 +37,19 @@ ms.locfileid: "73189124"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Создание проекта SharePoint
  Сначала создайте проект SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Создание проекта SharePoint
 
-1. В строке меню выберите **файл**  > **Новый**  > **проект** , чтобы открыть диалоговое окно **Новый проект** .
+1. В строке меню выберите **файл** > **Новый** > **проект** , чтобы открыть диалоговое окно **Новый проект** .
 
 2. Разверните узел **SharePoint** в любом **визуальном C#**  элементе или **Visual Basic**, а затем выберите узел **2010** .
 
@@ -65,7 +65,7 @@ ms.locfileid: "73189124"
 
     В настоящее время можно профилировать только решения фермы. Дополнительные сведения о изолированных решениях и решениях фермы см. в статье [рекомендации по изолированным решениям](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Нажмите кнопку **Готово** . Проект отобразится в **Обозреватель решений**.
+7. Нажмите кнопку **Готово**. Проект отобразится в **Обозреватель решений**.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Добавление приемника событий компонента и компонента
  Затем добавьте в проект компонент вместе с приемником событий для этого компонента. Этот приемник событий будет содержать код для профилирования.
@@ -272,8 +272,7 @@ ms.locfileid: "73189124"
 
      Теперь, когда вызов цикла простоя устранен, компонент должен активироваться гораздо быстрее. Отчет о профилировании выборки должен отражать это.
 
-## <a name="see-also"></a>См. также
-- [Обозреватель производительности](../profiling/performance-explorer.md)
+## <a name="see-also"></a>См. также:
 - [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
 - [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)
 - [Поиск узких мест приложений с помощью профилировщика Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)

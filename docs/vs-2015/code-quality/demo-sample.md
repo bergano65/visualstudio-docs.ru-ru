@@ -1,5 +1,5 @@
 ---
-title: Демонстрация примера | Документация Майкрософт
+title: Демонстрационный пример | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201436"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277883"
 ---
 # <a name="demo-sample"></a>Пример Demo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В следующих процедурах показано, как создать пример для пошагового руководства [ Проверка кода C/C++ на наличие дефектов](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Эти процедуры создают следующее:  
+В следующих процедурах показано, как создать пример для [пошагового руководства: анализC++ кода C/Code для дефектов](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Эти процедуры создают следующее:  
   
-- Объект [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решение с именем CppDemo.  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] решение с именем Кппдемо.  
   
 - Проект статической библиотеки CodeDefects.  
   
 - Проект статической библиотеки Annotations.  
   
-  В процедурах также предусмотрен код для заголовка и CPP-файлов для статических библиотек.  
+  Процедуры также предоставляют код для заголовков и CPP для статических библиотек.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Создание решения CppDemo и проекта CodeDefects  
   
@@ -66,7 +66,7 @@ ms.locfileid: "68201436"
   
 3. В поле **Имя** введите **Bug.cpp** и нажмите кнопку **Добавить**.  
   
-4. Скопируйте следующий код и вставьте его в **Bug.cpp** файл [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] редактора.  
+4. Скопируйте приведенный ниже код и вставьте его в файл **Bug. cpp** в редакторе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <windows.h>  
@@ -94,7 +94,7 @@ ms.locfileid: "68201436"
   
 7. В поле **Имя** введите **Bug.cpp** и нажмите кнопку **Добавить**.  
   
-8. Скопируйте следующий код и вставьте его в файл Bug.h в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] редактора.  
+8. Скопируйте приведенный ниже код и вставьте его в файл Bug. h в редакторе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <stdlib.h>  
@@ -180,7 +180,7 @@ ms.locfileid: "68201436"
   
 3. В поле **Имя** введите **annotations.h** и нажмите кнопку **Добавить**.  
   
-4. Скопируйте следующий код и вставьте его в **annotations.h** файл [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] редактора.  
+4. Скопируйте приведенный ниже код и вставьте его в файл **Annotations. h** в редакторе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -203,7 +203,7 @@ ms.locfileid: "68201436"
   
 7. В поле **Имя** введите **annotations.cpp** и нажмите кнопку **Добавить**.  
   
-8. Скопируйте следующий код и вставьте его в **annotations.cpp** файл [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] редактора.  
+8. Скопируйте приведенный ниже код и вставьте его в файл **Annotations. cpp** в редакторе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

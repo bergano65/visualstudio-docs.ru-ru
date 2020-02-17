@@ -3,17 +3,17 @@ title: Основные сведения о языке SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807087"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271825"
 ---
 # <a name="understanding-sal"></a>Основные сведения о языке SAL
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Codeный анализ проверяет, что вызывающие объекты передают непустой указатель на инициализированный буфер для `pInt` и что перед возвратом `pInt` по-прежнему имеет значение, отличное от NULL, и инициализируется буфер.
+Visual Studio Codeный анализ проверяет, что вызывающие объекты передают непустой указатель на инициализированный буфер для `pInt`и что перед возвратом `pInt` по-прежнему имеет значение, отличное от NULL, и инициализируется буфер.
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Пример: \_InOut\_не\_ная Аннотация
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Codeный анализ проверяет, что вызывающий объект передает указатель, отличный от NULL, для `*pInt` и что буфер инициализируется функцией перед возвратом.
+Visual Studio Codeный анализ проверяет, что вызывающий объект передает указатель, отличный от NULL, для `*pInt`и что буфер инициализируется функцией перед возвратом.
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>Пример: \_Аутптр\_opt\_ Аннотация
 
@@ -404,7 +404,7 @@ SAL — это мощная технология, которая может по
 
 [Блог команды разработчиков анализа кода](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Создание примечаний к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)

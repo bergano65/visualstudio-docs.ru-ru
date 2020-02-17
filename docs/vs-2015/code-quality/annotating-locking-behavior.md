@@ -30,15 +30,15 @@ f1_keywords:
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850160"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271587"
 ---
 # <a name="annotating-locking-behavior"></a>Аннотация поведения блокировки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "75850160"
 ## <a name="locking-annotations"></a>Блокировка заметок  
  В следующей таблице перечислены заметки о блокировке.  
   
-|Комментарий|Описание|  
+|Заметка|Description|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Добавляет заметки к функции и указывает, что функция после вызова увеличивает на единицу число монопольных блокировок объекта блокировок с именем `expr`.|  
 |`_Acquires_lock_(expr)`|Аннотирует функцию и указывает, что функция после вызова увеличивает на единицу число блокировок объекта блокировок с именем `expr`.|  
@@ -91,7 +91,7 @@ ms.locfileid: "75850160"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Встроенные SAL для непредоставленных явно объектов блокировки  
  Некоторые объекты блокировки не предоставляются реализацией связанных функций блокировки.  В следующей таблице перечислены встроенные переменные SAL, которые содержат заметки для функций, действующих на эти защищенные объекты блокировки.  
   
-|Комментарий|Описание|  
+|Заметка|Description|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Описывает отмену спин-блокировки.|  
 |`_Global_critical_region_`|Описывает критическую область.|  
@@ -101,14 +101,14 @@ ms.locfileid: "75850160"
 ## <a name="shared-data-access-annotations"></a>Общие заметки о доступе к данным  
  В следующей таблице перечисляются аннотации для доступа к разделяемым данным.  
   
-|Комментарий|Описание|  
+|Заметка|Description|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Добавляет заметки к переменной и указывает на то, что при доступе к данной переменной количество блокировок объекта с именем `expr` не менее единицы.|  
 |`_Interlocked_`|Добавляет заметки к переменной и эквивалентен `_Guarded_by_(_Global_interlock_)`.|  
 |`_Interlocked_operand_`|Параметр функции с заметками является целевым операндом одной из различных взаимоблокированных функций.  Эти операнды должны иметь определенные дополнительные свойства.|  
 |`_Write_guarded_by_(expr)`|Добавляет заметки к переменной и указывает на то, что при изменении данной переменной количество блокировок объекта с именем `expr` не менее единицы.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Основные сведения о SAL](../code-quality/understanding-sal.md)   
  [Добавление заметок к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)   
