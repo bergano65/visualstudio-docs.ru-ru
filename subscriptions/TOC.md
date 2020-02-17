@@ -27,7 +27,7 @@
 ### Инструменты
 #### [Индивидуальный кредит Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Оплата за Azure по мере использования](vs-azure-payg.md)
+#### [Azure DevTest с оплатой по мере использования](vs-azure-payg.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
@@ -84,7 +84,7 @@
 ### [Превышение доступности](handle-overclaimed-license.md)
 ### [Максимальное использование](maximum-usage.md)
 ### [Подписки с истекшим сроком действия](handle-expired-license.md)
-### [Подписчики, использующие псевдонимы](aliasing.md)
+### [Сценарии входа подписчика ](aliasing.md)
 ### [Подписчики, входящие по личным электронным адресам](personal-email-sign-ins.md)
 ### [Управление Visual Studio в GitHub Enterprise](assign-github.md)
 # Ресурсы
