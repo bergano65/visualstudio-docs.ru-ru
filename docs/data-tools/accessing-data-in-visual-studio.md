@@ -1,5 +1,5 @@
 ---
-title: Доступ к данным и средства
+title: Работа с данными в Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916718"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272091"
 ---
-# <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
+# <a name="work-with-data-in-visual-studio"></a>Работа с данными в Visual Studio
 
 В Visual Studio можно создавать приложения, которые подключаются к данным практически в любом продукте или службе базы данных, в любом формате, где угодно — на локальном компьютере, в локальной сети или в общедоступном, частном или гибридном облаке.
 
 Для приложений, написанных на JavaScript, Python, PHP, C++Ruby или, вы подключаетесь к данным, как и любые другие, путем получения библиотек и написания кода. Для приложений .NET Visual Studio предоставляет средства, которые можно использовать для просмотра источников данных, создания объектных моделей для хранения данных и управления ими в памяти, а также для привязки данных к пользовательскому интерфейсу. Microsoft Azure предоставляет пакеты SDK для .NET, Java, Node. js, PHP, Python, Ruby и мобильных приложений, а также средства в Visual Studio для подключения к службе хранилища Azure.
 
+::: moniker range="vs-2017"
 В следующих списках показаны лишь некоторые из многих баз данных и систем хранения, которые можно использовать из Visual Studio. Предложения [Microsoft Azure](https://azure.microsoft.com/) — это службы данных, включающие все подготовку и администрирование базового хранилища данных. Рабочая нагрузка **разработки Azure** в [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) позволяет работать с хранилищами данных Azure непосредственно из Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+В следующих списках показаны лишь некоторые из многих баз данных и систем хранения, которые можно использовать из Visual Studio. Предложения [Microsoft Azure](https://azure.microsoft.com/) — это службы данных, включающие все подготовку и администрирование базового хранилища данных. Рабочая нагрузка **разработки Azure** в [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) позволяет работать с хранилищами данных Azure непосредственно из Visual Studio.
+::: moniker-end
 
 ![Рабочая нагрузка "Разработка для Azure"](media/azure-development-workload.png)
 
@@ -33,7 +38,7 @@ ms.locfileid: "75916718"
 
 **Microsoft Azure**
 
-- База данных SQL
+- база данных SQL
 - Azure Cosmos DB
 - Хранилище (большие двоичные объекты, таблицы, очереди, файлы)
 - Хранилище данных SQL
@@ -130,7 +135,7 @@ C++программы, работающие с служба хранилища M
 - [Django и MySQL в Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - Работа с [большими двоичными объектами](/azure/storage/blobs/storage-quickstart-blobs-python), [файлами](/azure/storage/files/storage-python-how-to-use-file-storage), [очередями](/azure/storage/queues/storage-python-how-to-use-queue-storage)и [таблицами (Космо DB)](/azure/cosmos-db/table-storage-how-to-use-python).
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
 &mdash;[платформы искусственного интеллекта Майкрософт](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) содержит общие сведения о интеллектуальном облаке Майкрософт, включая Кортану Analytics Suite и поддержку "Интернет вещей".
 
