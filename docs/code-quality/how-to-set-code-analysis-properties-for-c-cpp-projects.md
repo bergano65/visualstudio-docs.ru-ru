@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis properties
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1c517674bb3aba58caa865a02b384e9d90af8a10
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448919"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271698"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Практическое руководство. Задание свойств анализа кода для проектов C/C++
 
@@ -47,7 +47,7 @@ ms.locfileid: "72448919"
 
 В проектах CMak измените значение `enableMicrosoftCodeAnalysis` и `enableClangTidyCodeAnalysis` ключи в `CMakeSettings.json`, чтобы включить или отключить анализ кода. Дополнительные сведения см. [в разделе Использование Clang в Visual Studio](../code-quality/clang-tidy.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ качества управляемого кода](../code-quality/code-analysis-for-managed-code-overview.md)
 - [Анализ кода для предупреждений C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

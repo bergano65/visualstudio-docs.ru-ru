@@ -16,17 +16,17 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4991a72b2761e96e143bfa33e0b55f9a4e9467c6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806306"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271211"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Общие сведения об анализе кода в C/C++
 
@@ -64,7 +64,7 @@ C:\>cl /analyze Sample.cpp
 
 Вы можете использовать интегрированные возможности системы сборки для запуска средства анализа в рамках процесса сборки [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Краткое руководство. анализ кода для C/C++](quick-start-code-analysis-for-c-cpp.md)
 - [Пошаговое руководство.C++ анализ C/кода на наличие дефектов](walkthrough-analyzing-c-cpp-code-for-defects.md)

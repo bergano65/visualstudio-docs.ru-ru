@@ -4,17 +4,17 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: ec2d9c812de9ec6be5ba5f42ca2a4484703d0b84
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445607"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271791"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Использование наборов правил для указания C++ правил для выполнения
 
@@ -38,7 +38,7 @@ ms.locfileid: "72445607"
 
      \- или -
 
-   - Выберите **\<Browse... >** , чтобы указать существующий набор правил, отсутствующий в списке.
+   - Выберите **\<обзор... >** , чтобы указать существующий набор правил, отсутствующий в списке.
 
 4. Нажмите кнопку **Открыть** , чтобы отобразить правила в редакторе набора правил.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72445607"
 
 - Чтобы свернуть правила во всех группах, выберите **Свернуть все**.
 
-- Чтобы изменить поле, по которому группируются правила, выберите поле в списке **Группировать по** . Чтобы отобразить правила, разгруппированные, выберите **\<None >** .
+- Чтобы изменить поле, по которому группируются правила, выберите поле в списке **Группировать по** . Чтобы отобразить правила без группировки, выберите **\<None >** .
 
 - Чтобы добавить или удалить поля в столбцах правил, выберите **Параметры столбцов**.
 
