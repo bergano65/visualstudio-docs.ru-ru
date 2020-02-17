@@ -6,15 +6,15 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848467"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278443"
 ---
 # <a name="understanding-sal"></a>Основные сведения о языке SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Основы SAL  
  SAL определяет четыре основных типа параметров, которые классифицируются по шаблону использования.  
   
-|Категория|Аннотация параметра|Описание|  
+|Категория|Аннотация параметра|Description|  
 |--------------|--------------------------|-----------------|  
 |**Входные данные для вызываемой функции**|`_In_`|Данные передаются в вызываемую функцию и обрабатываются как доступная только для чтения.|  
 |**Вход в вызываемую функцию и вывод в вызывающий объект**|`_Inout_`|Пригодные для использования данные передаются в функцию и потенциально изменяются.|  
@@ -411,7 +411,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ## <a name="related-resources"></a>Связанные ресурсы  
  [Блог команды разработчиков анализа кода](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Добавление заметок к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)   
  [Аннотирование поведения функций](../code-quality/annotating-function-behavior.md)   
