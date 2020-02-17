@@ -362,6 +362,8 @@
                   href: ide/reference/convert-local-function-method.md
                 - name: Преобразование цикла foreach в LINQ
                   href: ide/reference/convert-foreach-linq.md
+                - name: Преобразование оператора if в оператор switch или в выражение switch
+                  href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: Преобразование запроса LINQ в оператор foreach
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: Преобразование инструкции switch в выражение switch
@@ -398,6 +400,8 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: Переименовать
                   href: ide/reference/rename.md
+                - name: Упрощение интерполяции строки
+                  href: ide/reference/simplify-string-interpolation.md
                 - name: Сортировать директивы using
                   href: ide/reference/sort-usings.md
                 - name: Разбиение и объединение операторов If
