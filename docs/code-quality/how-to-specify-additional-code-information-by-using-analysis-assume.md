@@ -57,6 +57,6 @@ void test()
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
 
 - [__assume](/cpp/intrinsics/assume)
