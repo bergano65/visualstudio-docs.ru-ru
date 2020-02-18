@@ -217,5 +217,5 @@ ms.locfileid: "77271382"
 - 26425 ASSIGNING_TO_STATIC
 - 26499 NO_LIFETIME_TRACKING
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
 [Использование C++ основных средств проверки рекомендаций](using-the-cpp-core-guidelines-checkers.md)

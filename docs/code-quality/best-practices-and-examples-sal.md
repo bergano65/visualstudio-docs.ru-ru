@@ -235,7 +235,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 В этом примере `_Out_opt_` говорит, что указатель может иметь значение NULL в составе предусловия. Однако предусловия нельзя применить к возвращаемому значению. В этом случае правильная Аннотация `_Ret_maybenull_`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
 
 [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
 [Основные сведения о языке SAL](../code-quality/understanding-sal.md)  
