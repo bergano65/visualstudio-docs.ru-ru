@@ -6,23 +6,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.View
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.View
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b867d81e4f0719ebf239bc89a6200fe833bc27b1
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278690"
 ---
 # <a name="options-text-editor-cc-view"></a>"Параметры", "Текстовый редактор", C/C++, "Представление"
 
 Используйте страницы свойств, чтобы изменять поведение по умолчанию редактора кода при написании программ на языках C и C++.
 
-Для доступа к этой странице свойств, выберите **Сервис**  >  **Параметры** и разверните **Текстовый редактор**, затем **C/C++** и **Представление**.
+Для доступа к этой странице свойств, выберите **Сервис** > **Параметры** и разверните **Текстовый редактор**, затем **C/C++** и **Представление**.
 
 ## <a name="code-squiggles"></a>Подчеркивание кода
 

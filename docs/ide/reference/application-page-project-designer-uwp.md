@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114401"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173079"
 ---
 # <a name="application-property-page-uwp-projects"></a>Страница свойств приложения (проекты UWP)
 
@@ -38,7 +38,7 @@ ms.locfileid: "76114401"
 
 **Сведения о сборке**&mdash;Нажмите эту кнопку, чтобы открыть диалоговое окно [Сведения о сборке](../../ide/reference/assembly-information-dialog-box.md).
 
-**Манифест пакета**&mdash;Эта кнопка открывает конструктор манифеста. Также конструктор манифеста можно вызвать, выбрав файл _Package.appxmanifest_ в **обозревателе решений**. Дополнительные сведения см. в разделе [Настройка пакета с помощью конструктора манифестов](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
+**Манифест пакета**&mdash;Эта кнопка открывает конструктор манифеста. Также конструктор манифеста можно вызвать, выбрав файл _Package.appxmanifest_ в **обозревателе решений**. Дополнительные сведения см. в разделе [Настройка пакета с помощью конструктора манифестов](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Раздел определения цели
 
