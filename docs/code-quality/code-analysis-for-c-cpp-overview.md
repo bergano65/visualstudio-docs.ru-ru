@@ -64,7 +64,7 @@ C:\>cl /analyze Sample.cpp
 
 Вы можете использовать интегрированные возможности системы сборки для запуска средства анализа в рамках процесса сборки [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Дополнительные сведения см. в описании [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
 
 - [Краткое руководство. анализ кода для C/C++](quick-start-code-analysis-for-c-cpp.md)
 - [Пошаговое руководство.C++ анализ C/кода на наличие дефектов](walkthrough-analyzing-c-cpp-code-for-defects.md)

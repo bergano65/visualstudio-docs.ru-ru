@@ -28,7 +28,7 @@ ms.locfileid: "77271203"
 # <a name="code-analysis-for-cc-warnings"></a>Анализ кода для предупреждений C/C++
 В этом разделе перечислены предупрежденияC++ анализа C/Code, за исключением тех, которые вызываются [ C++ основными проверочными](code-analysis-for-cpp-corecheck.md)анализаторами. Дополнительные сведения об анализе кода см. в разделе [/Analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрое начало: анализ кода дляC++C/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
 
 - [Анализ качества кода C/C++ с помощью метода анализа кода](../code-quality/code-analysis-for-c-cpp-overview.md)
 - [Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
