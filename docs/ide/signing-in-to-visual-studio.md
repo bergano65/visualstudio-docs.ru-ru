@@ -38,7 +38,7 @@ ms.locfileid: "77027585"
 
 - **Продление пробного периода Visual Studio**. Пробный период Visual Studio Professional и Visual Studio Enterprise продлевается с 30 до 90 дней.
 
-- **Разблокировка Visual Studio при использовании учетной записи, связанной с подпиской Visual Studio или организацией Azure DevOps **. См. раздел [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Разблокировка Visual Studio при использовании учетной записи, связанной с подпиской Visual Studio или организацией Azure DevOps**. См. раздел [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Автоматическое подключение к таким службам, как Azure и Azure DevOps Services**, в интегрированной среде разработки без повторного запроса учетных данных одной и той же учетной записи.
 
