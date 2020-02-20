@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670602"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477086"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Практическое руководство. Устранение неполадок, связанных с шаблонами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "72670602"
 
 2. Извлеките ZIP-файл.
 
-3. В меню **Файл** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выберите пункт **Открыть** и затем пункт **Файл**.
+3. В меню **Файл**[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выберите пункт **Открыть** и затем пункт **Файл**.
 
 4. Выберите файл VSTEMPLATE для шаблона и нажмите кнопку **Открыть**.
 
 5. Убедитесь, что XML-код в файле VSTEMPLATE соответствует схеме шаблона [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения о схеме VSTEMPLATE см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Чтобы обеспечить поддержку IntelliSense во время работы с файлом VSTEMPLATE, добавьте атрибут `xmlns` в элемент `VSTemplate` и присвойте ему значение http://schemas.microsoft.com/developer/vstemplate/2005.
+    > Чтобы обеспечить поддержку IntelliSense во время работы с файлом VSTEMPLATE, добавьте атрибут `xmlns` в элемент `VSTemplate` и присвойте ему значение `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
 6. Сохраните VSTEMPLATE-файл и закройте его.
 
@@ -58,9 +58,9 @@ ms.locfileid: "72670602"
 
 2. В левой области щелкните **Приложение**.
 
-3. Найдите события, у которых `Visual Studio - VsTemplate` имеет значение **Source**.
+3. Найдите события, у которых **имеет значение**Source`Visual Studio - VsTemplate`.
 
 4. Дважды щелкните событие шаблона, чтобы просмотреть ошибку.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md) для [создания шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

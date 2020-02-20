@@ -2,7 +2,7 @@
 title: Шаг 4. Предоставление веб-API приложения ASP.NET Core
 description: С помощью этого видео-урока и пошаговых инструкций добавьте веб-API в веб-приложение ASP.NET Core.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 02/13/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d3887c7cf665f9fd8d2789d460cc1a595e2bff
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553880"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271503"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Шаг 4. Предоставление веб-API приложения ASP.NET Core
 
@@ -187,7 +187,7 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 
 ## <a name="adding-swagger"></a>Добавление Swagger
 
-Swagger — это инструмент для документирования и тестирования API, который можно добавить в приложение ASP.NET Core в виде набора служб и промежуточного программного обеспечения. Чтобы сделать это, щелкните правой кнопкой по проекту и выберите **Управление пакетами NuGet**. Щелкните **Обзор**, найдите `Swashbuckle.AspNetCore` и установите соответствующий пакет.
+Swagger — это инструмент для документирования и тестирования API, который можно добавить в приложение ASP.NET Core в виде набора служб и промежуточного программного обеспечения. Чтобы сделать это, щелкните правой кнопкой по проекту и выберите **Управление пакетами NuGet**. Затем щелкните **Обзор**, найдите `Swashbuckle.AspNetCore` и установите версию 4.0.1.
 
 ![Visual Studio 2019. Добавление Swashbuckle из Nuget](media/vs-2019/vs2019-nuget-swashbuckle.png)
 

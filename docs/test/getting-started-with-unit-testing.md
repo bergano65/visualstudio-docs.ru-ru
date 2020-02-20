@@ -1,6 +1,6 @@
 ---
 title: Приступая к работе с модульным тестированием
-ms.date: 04/01/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596480"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279332"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -26,16 +26,18 @@ ms.locfileid: "75596480"
 
 1. Откройте проект, который хотите протестировать в Visual Studio.
 
-   Для наглядности в статье проводится модульный тест простого проекта Hello World. Пример кода для такого проекта выглядит следующим образом:
+   Для наглядности в статье проводится модульный тест простого проекта Hello World с именем **HelloWorldCore**. Пример кода для такого проекта выглядит следующим образом:
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. Выберите узел решения в **обозревателе решений**. Затем в верхней строке меню выберите **Файл** > **Добавить** > **Новый проект**.
@@ -70,14 +72,48 @@ ms.locfileid: "75596480"
 
 1. Добавьте код в метод модульных тестов.
 
-   ![Добавление кода в метод модульных тестов в Visual Studio](media/vs-2019/unit-test-method.png)
+   Например, для тестового проекта MSTest или NUnit вы можете использовать следующий код.
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
 > Более подробные инструкции по созданию модульных тестов см. в статье [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Запуск модульных тестов
 
-1. Откройте [Обозреватель тестов](../test/run-unit-tests-with-test-explorer.md), выбрав **Тест** > **Windows** > **Обозреватель тестов** в верхней строке меню.
+1. Откройте [обозреватель тестов](../test/run-unit-tests-with-test-explorer.md).
+
+   ::: moniker range=">=vs-2019"
+   Откройте Обозреватель тестов, выбрав **Тест** > **Обозреватель тестов** в верхней строке меню.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Откройте Обозреватель тестов, выбрав **Тест** > **Windows** > **Обозреватель тестов** в верхней строке меню.
+   ::: moniker-end
 
 1. Выполните модульные тесты, щелкнув **Запустить все**.
 

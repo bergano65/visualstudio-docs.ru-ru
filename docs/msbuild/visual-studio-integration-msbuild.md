@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a48725c0877110e969a98deb8c03b3181d31153
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594426"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277697"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.
@@ -110,6 +110,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
     </IntermediateFile>
 </ItemGroup>
 ```
+
+> [!NOTE]
+> Метаданные `Visible` игнорируются **обозревателем решений** для проектов C++. Элементы всегда будут отображаться, даже если `Visible` имеет значение false.
 
  По умолчанию не отображаются элементы, которые объявлены в файлах, импортированных в проект. В **обозревателе решений** никогда не отображаются элементы, созданные в процессе построения.
 

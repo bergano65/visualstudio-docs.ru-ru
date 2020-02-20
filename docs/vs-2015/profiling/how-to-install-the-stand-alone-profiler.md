@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка автономного профилировщика | Документация Майкрософт
+title: Практическое руководство. Установка автономного профилировщика | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 026162a2c8334c7163f9c7853d2de30e58e5939a
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432734"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476788"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка автономного Profiler
+# <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка изолированного профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.  
@@ -41,20 +41,20 @@ ms.locfileid: "63432734"
     > [!NOTE]
     > Если отображаются сведения об использовании файла vsinstr.exe, установка выполнена правильно. Если выводится сообщение об ошибке, в котором указывается, что файл vsinstr.exe или одна из его зависимостей не найдены, проверьте правильность задания путей, как описано в шаге 2.  
   
-4. Настройте сервер символов, присвоив переменной **_NT_SYMBOL_PATH** значение **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**.  
+4. Настройте сервер символов, задав для переменной **_NT_SYMBOL_PATH** значение `symsrv*symsrv.dll*c:\localcache*https://msdl.microsoft.com/download/symbols`  
   
 5. После настройки сервера символов с помощью системных переменных среды запустите средства профилирования из нового окна командной строки. Это позволит применить новые переменные среды. В окне командной строки введите следующую команду:  
   
      **start %COMSPEC%**  
   
     > [!NOTE]
-    > Подробные инструкции по настройке пакета сервера символов см. в статье [Практическое руководство. Сведения о символах Windows ссылку](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Подробные инструкции по настройке пакета сервера символов см. в разделе [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Для сериализации символов в файл данных профилирования (VSP) используется средство [VSPerfReport](../profiling/vsperfreport.md). Следует использовать параметры **VSPerfReport /summary:all /packsymbols**. Если символы в файл данных не вставлены, убедитесь в том, что переменная среды _NT_SYMBOL_PATH задана.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Пошаговое руководство: Командной строки, профилирование с помощью выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Пошаговое руководство: Командной строки, профилирование с помощью метода инструментирования](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Пошаговое руководство. Профилирование из командной строки с помощью выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

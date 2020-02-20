@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585448"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278516"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Выполнение модульных тестов с помощью обозревателя тестов
 
@@ -311,7 +311,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="diagnose-test-method-performance-issues"></a>Диагностика проблем производительности метода теста
 
-Чтобы выяснить, почему выполнение метода теста занимает слишком много времени, выберите метод в обозревателе тестов, а затем в контекстном меню пункт **Выбранный профиль тестирования**. См. [Обозреватель производительности](../profiling/performance-explorer.md).
+Чтобы выяснить, почему выполнение метода теста занимает слишком много времени, выберите метод в обозревателе тестов, а затем в контекстном меню пункт **Выбранный профиль тестирования**. См. [Отчет о профилировании инструментирования](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Анализ покрытия кода модульного теста
 
