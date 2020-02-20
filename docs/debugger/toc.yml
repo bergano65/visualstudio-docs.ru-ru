@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: Отладка приложения C++
       href: quickstart-debug-with-cplusplus.md
-    - name: Отладка приложения ASP.NET
+    - name: Отладка приложения ASP.NET Core
       href: quickstart-debug-aspnet.md
 - name: Учебники
   items:

@@ -10,7 +10,7 @@
       href: quickstart-cpu-usage-managed.md
     - name: Анализ использования ЦП (машинный код)
       href: quickstart-cpu-usage-native.md
-    - name: Анализ использования ЦП (ASP.NET)
+    - name: Анализ использования ЦП (ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
 - name: Учебники
   items:
