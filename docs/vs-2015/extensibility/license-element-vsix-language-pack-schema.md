@@ -1,5 +1,5 @@
 ---
-title: Лицензии элемент (схема языкового пакета VSIX) | Документация Майкрософт
+title: Элемент License (схема языкового пакета VSIX) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,12 +8,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a079dee3fc01995d70f77a9fa9791a5ab0f42561
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680596"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477077"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Элемент License (схема языкового пакета VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,38 +31,38 @@ ms.locfileid: "65680596"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|attribute|Description|  
 |---------------|-----------------|  
-|Нет||  
+|None||  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|Description|  
 |-------------|-----------------|  
-|Нет||  
+|None||  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|Description|  
 |-------------|-----------------|  
-|[Элемент LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Обязательный. Предоставляет корневой элемент для языкового пакета VSIX.|  
+|[Элемент LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Обязательный элемент. Предоставляет корневой элемент для языкового пакета VSIX.|  
   
 ## <a name="text-value"></a>Текстовое значение  
- Относительный путь к локализованному файлу лицензии для отображения.  
+ Относительный путь к локализованному файлу лицензии, который должен быть отображен.  
   
-## <a name="remarks"></a>Примечания  
- Если `License` элемент задан, то во время установки отображается текст назначенного файла лицензии, и пользователь должен принять лицензию для продолжения.  
+## <a name="remarks"></a>Remarks  
+ Если элемент `License` определен, то текст назначенного файла лицензии отображается во время установки и пользователь должен принять условия лицензии, чтобы продолжить.  
   
 ## <a name="element-information"></a>Сведения об элементе  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Пространство имен    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|    Пространство имен    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
 |   Имя схемы   |                 Схема языкового пакета VSIX                 |
-| Файл проверки |                VSIXLanguagePackSchema.xsd                 |
+| Файл проверки |                Всикслангуажепакксчема. xsd                 |
 |  Может быть пустым   |                      Неприменимо                       |
   
-## <a name="see-also"></a>См. также  
- [Справочник по схеме VSX языкового пакета](../extensibility/vsx-language-pack-schema-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Справочник по схеме языкового пакета VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)   
- [Справочник по схеме 1.0 расширение VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110))

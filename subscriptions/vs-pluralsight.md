@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74707003"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192420"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -60,15 +60,15 @@ ms.locfileid: "74707003"
 |          Visual Studio Enterprise с GitHub Enterprise          | VL  |   6 месяцев    | Да<sup>2</sup> |
 |         Visual Studio Professional (ценовая категория "Стандартный")          | Корпоративная лицензия, Azure, розничная версия |   3 месяца    | Да<sup>2</sup> |
 |         Visual Studio Professional с GitHub Enterprise          | VL  |   3 месяца    | Да<sup>2</sup> |
-|              Visual Studio Test Professional (стандартная)              |    Корпоративная лицензия, розничная версия     |   3 месяца    | Да<sup>2</sup>  |
-|                      MSDN Platforms (стандартная)                       |    Корпоративная лицензия, розничная версия     |   3 месяца    | Да<sup>2</sup>  |
+|              Visual Studio Test Professional (стандартная)              |    Корпоративная лицензия, розничная версия     |   Недоступно    | Н/Д  |
+|                      MSDN Platforms (стандартная)                       |    Корпоративная лицензия, розничная версия     |   Недоступно    | Н/Д  |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) |       Azure       | Недоступно |       Н/Д       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Программа      | Недоступно |       Н/Д       |
 ||
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Включает:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *Преимущество Pluralsight в некоторых подписках Visual Studio продляется после продления подписки. Например, если у вас есть годовая подписка, которую вы продлеваете каждый год, это преимущество доступно вам каждый год. Если у вас есть подписка на несколько лет, преимущество Pluralsight доступно вам в течение срока действия подписки.  Если вы продлеваете подписку на несколько лет, преимущество будет доступно снова после продления.*
+<sup>2</sup> *Преимущество Pluralsight в некоторых подписках Visual Studio продляется после продления подписки. Например, если у вас есть годовая подписка, которую вы продлеваете каждый год, это преимущество доступно вам каждый год. Если у вас есть подписка на несколько лет, преимущество Pluralsight доступно вам в течение срока действия подписки.  Если вы продлеваете подписку на несколько лет, преимущество будет доступно снова после продления.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

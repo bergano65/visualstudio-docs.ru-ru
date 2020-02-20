@@ -2,17 +2,17 @@
 title: Создание модульных тестов для библиотек DLL на C++
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926657"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279270"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Написание модульных тестов для библиотек DLL на C++ в Visual Studio
 
@@ -141,7 +141,7 @@ ms.locfileid: "68926657"
 
 1. В каждом файле кода модульного теста добавьте оператор `#include` для заголовков тестируемого проекта.
 
-2. Добавьте тестовые классы и методы в файлы кода модульного теста. Например:
+2. Добавьте тестовые классы и методы в файлы кода модульного теста. Пример:
 
     ```cpp
     #include "stdafx.h"

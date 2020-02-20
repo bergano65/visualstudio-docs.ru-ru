@@ -11,26 +11,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667953"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476985"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Практическое руководство. Распространение фрагментов кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Фрагменты кода можно просто передать другим пользователям для установки на других компьютерах с помощью диспетчера фрагментов кода. Однако если нужно распространить несколько фрагментов или распространить фрагмент более широко, файл фрагмента можно включить в расширение Visual Studio, которое могут установить пользователи Visual Studio.
 
- Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найдите версию VSSDK, соответствующую установке Visual Studio, в [центре загрузки Visual studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).
+ Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найдите версию VSSDK, соответствующую установке Visual Studio, в [центре загрузки Visual studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="setting-up-the-extension"></a>Настройка расширения
  В этой процедуре будет использоваться фрагмент кода Hello World, созданный в разделе [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). Текст файла SNIPPET будет предоставлен, так что вам не придется возвращаться к этому разделу.
 
-1. Создайте проект VSIX с именем **TestSnippet**. ( **"Файл" > "Создать" > "Проект" > "Visual C#" (или "Visual Basic" > "Расширение среды"** )
+1. Создайте проект VSIX с именем **TestSnippet**. (**"Файл" > "Создать" > "Проект" > "Visual C#" (или "Visual Basic" > "Расширение среды"**)
 
-2. Добавьте в проект **TestSnippet** новый XML-файл и присвойте ему имя **VBCodeSnippet.snippet**. Замените содержимое файла следующим кодом:
+2. Добавьте в проект **TestSnippet** новый XML-файл и присвойте ему имя **VBCodeSnippet.snippet**. Замените содержимое на приведенное ниже:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -102,5 +102,5 @@ ms.locfileid: "72667953"
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Фрагменты кода](../ide/code-snippets.md)
