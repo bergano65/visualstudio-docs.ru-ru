@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a49f208fe3c60dfb8b9e20c83675cc43f1efb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587177"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506464"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Использование наборов правил для группировки правил анализа кода
 
@@ -24,7 +24,7 @@ ms.locfileid: "75587177"
 
 Набор правил можно настроить, добавив или удалив правила или изменив серьезность правил, чтобы они отображались как предупреждения или ошибки в **Список ошибок**. Настроенные наборы правил могут удовлетворить потребности конкретной среды разработки. При настройке набора правил редактор набора правил предоставляет средства поиска и фильтрации, помогающие в процессе.
 
-Наборы правил доступны для [анализа управляемого кода](analyzer-rule-sets.md), [традиционного анализа управляемого кода](how-to-configure-code-analysis-for-a-managed-code-project.md)и [ C++ анализа кода](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+Наборы правил доступны для [анализа управляемого кода](analyzer-rule-sets.md), [традиционного анализа управляемого кода](how-to-configure-code-analysis-for-a-managed-code-project.md)и [ C++ анализа кода](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Формат набора правил
 
