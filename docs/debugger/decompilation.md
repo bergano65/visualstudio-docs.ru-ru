@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144785"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506515"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Создание исходного кода из сборок .NET во время отладки
 
@@ -82,13 +82,13 @@ ms.locfileid: "77144785"
 - Имена локальных переменных не могут быть точными.
 - Некоторые переменные могут быть недоступны для оценки.
 
-Дополнительные сведения см. в разделе [Интеграция с ичсарпкомпилер. декомпилятором в ОТЛАДЧИК VS](https://github.com/icsharpcode/ILSpy/issues/1901).
+Дополнительные сведения см. в разделе [Интеграция с икшарпкоде. декомпилятором в ОТЛАДЧИК VS](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="decompilation-reliability"></a>Надежность декомпиляции
 
 Относительно небольшой процент попыток декомпиляции может привести к сбою. Это происходит из-за ошибки ссылки на точку последовательности со значением NULL в ILSpy.  Проблема устранена за счет перехвата этих проблем и корректного сбоя попытки декомпиляции.
 
-Дополнительные сведения см. в разделе [Интеграция с ичсарпкомпилер. декомпилятором в ОТЛАДЧИК VS](https://github.com/icsharpcode/ILSpy/issues/1901).
+Дополнительные сведения см. в разделе [Интеграция с икшарпкоде. декомпилятором в ОТЛАДЧИК VS](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="limitations-with-async-code"></a>Ограничения с помощью асинхронного кода
 
