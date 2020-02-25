@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Включить необходимые компоненты ClickOnce-приложения | Документация Майкрософт
+title: Как включить необходимые компоненты в приложение ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,20 +9,20 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697655"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557673"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Включение необходимых компонентов для приложения ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Включение требуемых компонентов в дистрибутив приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Перед распространением программного обеспечения необходимых компонентов с приложением [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] следует загрузить на компьютер разработчика пакеты установщиков этих необходимых компонентов. При публикации приложения и выберите **загрузить необходимые компоненты с местоположения моего приложения**, произойдет ошибка, если пакеты установщиков отсутствуют в **пакетов** папки.  
+Перед распространением программного обеспечения необходимых компонентов с приложением [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] следует загрузить на компьютер разработчика пакеты установщиков этих необходимых компонентов. При публикации приложения и выборе **загрузки необходимых компонентов из того же расположения, что и мое приложение**, произойдет ошибка, если пакеты установщика отсутствуют в папке **packages** .  
   
 > [!NOTE]
-> Чтобы добавить пакет установщика для .NET Framework, см. в разделе [руководство по развертыванию .NET Framework для разработчиков](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+> Чтобы добавить пакет установщика для .NET Framework, ознакомьтесь с [руководством по развертыванию .NET Framework для разработчиков](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
 ## <a name="Package"></a> Добавление пакета установщика с помощью файла Package.xml  
   
@@ -34,10 +34,10 @@ ms.locfileid: "65697655"
   
 3. В блокноте откройте файл **Package.xml**.  
   
-4. Найдите **имя** элемент, содержащий **http://go.microsoft.com/fwlink** и скопируйте URL-адрес. Включите часть **LinkID**.  
+4. Выберите элемент **Name** , содержащий `http://go.microsoft.com/fwlink`, и скопируйте URL-адрес. Включите часть **LinkID**.  
   
     > [!NOTE]
-    > Если не **имя** элемент содержит **http://go.microsoft.com/fwlink** откройте **Product.xml** файл в корневой папке необходимого компонента и найдите **fwlink** строка.  
+    > Если элемент **Name** не содержит `http://go.microsoft.com/fwlink`, откройте файл **Product. XML** в корневой папке для необходимого компонента и перейдите к строке **fwlink** .  
   
     > [!IMPORTANT]
     > Некоторые необходимые компоненты имеют несколько пакетов установщиков (например, для 32-разрядных или 64-разрядных систем). Если строка **fwlink** содержится в нескольких элементах **Имя**, оставшиеся действия следует выполнить для каждого из них.  
@@ -52,5 +52,5 @@ ms.locfileid: "65697655"
   
      Теперь можно распространить пакет установщика с приложением.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476995"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557969"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "77476995"
   
     1. Найдите идентификатор CLSID пакета VSPackage в разделе Packages реестра:  
   
-         Хклм\софтваре\микрософт\висуал Studio\\*\<версии >* \паккажес  
+         Хклм\софтваре\микрософт\висуал Studio\\ *\<версии >* \паккажес  
   
     2. Убедитесь, что путь, указанный в подразделе Сателлитедлл, указан правильно.  
   
@@ -99,15 +99,13 @@ ms.locfileid: "77476995"
   
     1. В меню **Сервис/параметры** перейдите в диалоговое окно **Отладка/символы** .  
   
-    2. Добавьте следующее **расположение файла символов (. pdb)**:  
+    2. Добавьте следующее **расположение файла символов (. pdb)** :  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. Чтобы повысить производительность, укажите папку кэша символов, например:  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Устранение неполадок с отсутствующим пакетом VSPackage или одной из его зависимостей  
   
@@ -117,11 +115,11 @@ ms.locfileid: "77476995"
   
    2. Перейдите на вкладку **ссылки** в диалоговом окне **страницы свойств** и убедитесь, что все пути указаны правильно. Кроме того, можно использовать **Обозреватель объектов** для поиска объектов, на которые имеются ссылки.  
   
-        Для управляемого кода можно использовать [Fuslogvw. exe (средство просмотра журнала привязки сборок)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) для просмотра сведений о неудачных загрузках сборок.  
+        Для управляемого кода можно использовать [Fuslogvw. exe (средство просмотра журнала привязки сборок)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) для просмотра сведений о неудачных загрузках сборок.  
   
 2. Для неуправляемого кода найдите CLSID пакета VSPackage в узле реестра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID:  
   
-    Хклм\софтваре\микрософт\висуал Studio\\*\<версии >* \клсид  
+    Хклм\софтваре\микрософт\висуал Studio\\ *\<версии >* \клсид  
   
    Убедитесь, что запись InprocServer32 имеет правильный путь к библиотеке DLL VSPackage.  
   

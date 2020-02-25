@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b53a71a0a8215ae6bc9af47f9fe2a0ff911b5
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b1d2512c14c0630d2268adfa465e092555150943
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806879"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557867"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 Если в Windows Server используется службы IIS (IIS) и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, IIS отклоняет передачу этого файла, и развертывание не будет выполняться.
@@ -49,7 +49,7 @@ ms.locfileid: "72806879"
 ## <a name="clickonce-and-proxy-authentication"></a>Проверка подлинности ClickOnce и прокси
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] обеспечивает поддержку встроенной проверки подлинности прокси Windows, начиная с .NET Framework 3,5. Никакие специальные директивы Machine. config не требуются. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не обеспечивает поддержку других протоколов проверки подлинности, таких как Basic или Digest.
 
- Чтобы включить эту функцию, можно также применить исправление к .NET Framework 2,0. Для получения дополнительной информации см. http://go.microsoft.com/fwlink/?LinkId=158730.
+ Чтобы включить эту функцию, можно также применить исправление к .NET Framework 2,0. Дополнительные сведения см. в разделе [исправление: сообщение об ошибке при попытке установить приложение ClickOnce, созданное в .NET Framework 2,0 на клиентский компьютер, настроенный для использования прокси-сервера: "требуется проверка подлинности прокси"](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that).
 
  Дополнительные сведения см. в разделе [\<defaultProxy > Element (параметры сети)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
@@ -75,12 +75,12 @@ ms.locfileid: "72806879"
 ```
 
 > [!NOTE]
-> Проверку подлинности NTLM (запрос NT-ответ) можно выполнить, если на сайте запрашиваются учетные данные, отличные от учетных данных по умолчанию, а в диалоговом окне Безопасность нажмите кнопку **ОК** при появлении запроса на сохранение предоставленных учетных данных для. будущие сеансы. Однако это решение не будет работать для обычной проверки подлинности.
+> Проверку подлинности NTLM (запрос NT-ответ) можно выполнить, если на сайте запрашиваются учетные данные, отличные от учетных данных по умолчанию, а в диалоговом окне Безопасность нажмите кнопку **ОК** при появлении запроса на сохранение предоставленных учетных данных для будущих сеансов. Однако это решение не будет работать для обычной проверки подлинности.
 
 ## <a name="use-third-party-web-servers"></a>Использование веб-серверов сторонних производителей
  При развертывании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения с веб-сервера, отличного от IIS, может возникнуть проблема, если сервер возвращает неверный тип содержимого для ключевых [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] файлов, таких как манифест развертывания и манифест приложения. Чтобы устранить эту проблему, ознакомьтесь с документацией по веб-серверу, посвященной добавлению новых типов содержимого на сервер, и убедитесь в наличии всех сопоставлений расширений имен файлов, перечисленных в следующей таблице.
 
-|Расширение имени файла|Тип содержимого|
+|Расширение имени файла|Тип контента|
 |-------------------------|------------------|
 |`.application`|`application/x-ms-application`|
 |`.manifest`|`application/x-ms-manifest`|
@@ -118,7 +118,7 @@ ms.locfileid: "72806879"
 
 - Если вы создаете тип MIME с расширением "<em>" и типом MIME "Application/октет-Stream", он разрешит скачивать файлы незаблокированного типа файла. (Однако невозможно скачать Заблокированные типы файлов, такие как *. aspx</em> и *. asmx* .)
 
-  Конкретные инструкции по настройке типов MIME в Windows Server см. в статье базы знаний Майкрософт KB326965, "IIS 6,0 не обслуживает неизвестные типы MIME" в [http://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
+  Конкретные инструкции по настройке типов MIME в Windows Server см. в разделе [Добавление типа MIME к веб-сайту или приложению](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).
 
 ## <a name="content-type-mappings"></a>Сопоставления типов содержимого
  При публикации по протоколу HTTP тип содержимого (также известный как тип MIME) для файла *приложения* должен быть "Application/x-MS-Application". Если на сервере установлено .NET Framework 2,0, это будет установлено автоматически. Если этот параметр не установлен, необходимо создать ассоциацию типа MIME для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] виртуального корневого каталога приложения (или всего сервера).
@@ -132,7 +132,7 @@ ms.locfileid: "72806879"
 
  Подробные инструкции для IIS см. [в разделе Указание дополнительных типов документов для СЖАТИЯ HTTP](https://support.microsoft.com/help/234497).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)
