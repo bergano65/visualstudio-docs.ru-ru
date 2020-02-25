@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476910"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557988"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. Указание расположения, из которого будет производиться установка пользователями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "77476910"
   
 2. Перейдите на вкладку **Публикация**.  
   
-3. В поле URL-адрес установки введите расположение установки, используя полный URL-адрес в формате https://www.microsoft.com/ApplicationNameили UNC-путь в формате \\\Сервер\аппликатионнаме.  
+3. В поле URL-адрес установки введите расположение установки, используя полный URL-адрес в формате `https://www.contoso.com/ApplicationName`или UNC-путь в формате `\\Server\ApplicationName`.  
   
 ## <a name="see-also"></a>См. также:  
  [Практическое руководство. Указание расположения, в которое средой Visual Studio копируются файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

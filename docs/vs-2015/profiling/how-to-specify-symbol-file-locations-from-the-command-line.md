@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ed6ddc11a998d97a193c2ab01ff69d386ed4ffe
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 01fbb6cfd1717562af79c067ede0cad9753ad5dd
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476964"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557895"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Практическое руководство. Определение расположения файлов символов с помощью командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ ms.locfileid: "77476964"
   
 2. Используйте следующий синтаксис для задания переменной среды **_NT_SYMBOL_PATH** или параметра VSPerfReport /SymbolPath:  
   
-    `srv*<LocalStore>*https://msdl.microsoft.com/downloads/symbols`  
+   `srv*<LocalStore>*https://msdl.microsoft.com/downloads/symbols`  
   
-    где *<LocalStore>* — путь к созданному локальному каталогу.  
+   где *<LocalStore>* — путь к созданному локальному каталогу.  
   
 ## <a name="specifying-component-symbol-files"></a>Задание файлов символов компонентов  
  Средства профилирования выполняют поиск PDB-файлов компонентов, которые требуется профилировать, в исходном расположении в компонентах или в папке, содержащей файл данных профилирования. Можно указать другие расположения для поиска, добавив один или несколько путей в переменную **_NT_SYMBOL_PATH** или в параметр **/SymbolPath**. Отделяйте пути точкой с запятой.  
   
 ## <a name="example"></a>Пример  
  Следующая командная строка задает в качестве переменной среды **_NT_SYMBOL_PATH** сервер символов Windows и **C:\Symbols** в качестве локального каталога.  
-  
+
  ```cmd
- set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/downloads/symbols`  
+ set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/downloads/symbols
  ```
-  
+
  Следующая командная строка VSPerfReport добавляет каталог C:\Projects\Symbols в путь поиска с помощью параметра **/SymbolPath**.  
   
  **VSPerfReport**  *MyApp* **. exe/SymbolPath: к:\прожектс\симболс/Summary: ALL**
