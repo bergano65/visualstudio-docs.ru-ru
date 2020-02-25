@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599291"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578766"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Поиск задачи отладки в Visual Studio
 
@@ -75,7 +75,7 @@ ms.locfileid: "73599291"
 
 Дополнительные сведения см. [в разделе Навигация по коду с помощью отладчика](navigating-through-code-with-the-debugger.md).
 
-## <a name="inspect-data"></a>Проверка данных
+## <a name="inspect-data"></a>Данные проверки
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Проверка значений переменных во время выполнения приложения
 
@@ -130,3 +130,7 @@ ms.locfileid: "73599291"
 ### <a name="debug-multithreaded-applications"></a>Отладка многопоточных приложений
 
 См. раздел [Отладка многопоточных приложений](debug-multithreaded-applications-in-visual-studio.md).
+
+### <a name="fix-performance-issues"></a>Исправление проблем производительности
+
+Ознакомьтесь [с обзором средств профилирования](../profiling/profiling-feature-tour.md) .

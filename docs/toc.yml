@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Добавление параметра в метод
                   href: ide/reference/add-parameter.md
+                - name: Создание скрытого поля в конструкторе
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: Создание переопределения
                   href: ide/reference/generate-override.md
                 - name: Создание переопределений методов Equals и GetHashCode
@@ -374,6 +376,8 @@
                   href: ide/reference/extract-interface.md
                 - name: Извлечение метода
                   href: ide/reference/extract-method.md
+                - name: Извлечение локальной функции
+                  href: ide/reference/extract-local-function.md
                 - name: Создание параметра
                   href: ide/reference/generate-parameter.md
                 - name: Встроенная временная переменная
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: Параметры рефакторинга статических локальных функций
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: Как сделать элемент статическим
+                  href: ide/reference/make-member-static.md
                 - name: Перемещение объявления к ссылке
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Перемещение типа в соответствующий файл
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 'Неиспользуемые назначения, переменные и параметры'
                   href: ide/reference/unused-values-parameters.md
-                - name: Перенос и выравнивание цепочек вызовов
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 'Параметры переноса, отступа и выравнивания'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 'Рефакторинг для реализации переноса, отступа и выравнивания'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: Пошаговое руководство. Создание кода в результате использования
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
