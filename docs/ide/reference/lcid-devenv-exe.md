@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595531"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557932"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -53,13 +53,18 @@ devenv {/LCID|/L} LocaleID
 |--------------|----------|
 |Китайский (упрощенное письмо)|2052|
 |Китайский (традиционное письмо)|1028|
+|Чешский|1029|
 |Английский|1033|
 |Французский|1036|
 |Немецкий|1031|
 |Итальянский|1040|
 |Японский|1041|
 |Корейский|1042|
+|Польский|1045|
+|Португальский (Бразилия)|1046|
+|Русский|1049|
 |Испанский|3082|
+|Турецкий|1055
 
 ## <a name="example"></a>Пример
 

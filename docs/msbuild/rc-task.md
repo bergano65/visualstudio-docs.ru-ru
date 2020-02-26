@@ -17,17 +17,17 @@ helpviewer_keywords:
 - RC task (MSBuild (C++))
 - MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a0b19487551e7f132ea921eacdbcdb051104f9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912058"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578486"
 ---
 # <a name="rc-task"></a>RC - задача
 Является оболочкой для средства компиляции ресурсов Microsoft Windows *rc.exe*. Задача **RC** компилирует ресурсы, такие как курсоры, значки, растровые изображения, диалоговые окна и шрифты, в файл ресурсов (*RES*). Дополнительные сведения см. в статье [Resource Compiler](/windows/desktop/menurc/resource-compiler) (Компилятор ресурсов).
@@ -35,7 +35,7 @@ ms.locfileid: "72912058"
 ## <a name="parameters"></a>Параметры
  В представленной ниже таблице приводятся параметры задачи RC. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
-|Параметр|ОПИСАНИЕ|
+|Параметр|Описание|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Необязательный параметр типа **String[]** .<br /><br /> Добавляет каталог к списку каталогов, в которых выполняется поиск включаемых файлов.<br /><br /> Дополнительные сведения см. в описании параметра **/I** в разделе, посвященном [использованию компилятора ресурсов (командной строки RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**AdditionalOptions**|Необязательный параметр типа **String**.<br /><br /> Список параметров командной строки, например: /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для указания параметров командной строки, не представленных другими параметрами задачи **RC**.<br /><br /> Дополнительные сведения см. в описании параметров в разделе, посвященном [использованию компилятора ресурсов (командной строки RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|

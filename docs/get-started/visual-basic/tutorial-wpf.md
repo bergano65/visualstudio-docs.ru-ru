@@ -9,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864746"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579948"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Учебник. Создание простого приложения с помощью Visual Basic
 
@@ -63,11 +63,11 @@ ms.locfileid: "70864746"
 
 ::: moniker range="vs-2017"
 
-1. Создайте новый проект. В строке меню выберите **Файл** > **Создать** > **Проект**.
+1. Создайте новый проект. В строке меню выберите **Файл** > **Новый** > **Проект**.
 
      ![В строке меню выберите "Файл", "Создать", "Проект"](../media/exploreide-filenewproject.png)
 
-2. В диалоговом окне **Новый проект** выберите **Установленные** > **Visual Basic** >  категорию **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)** . Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
+2. В диалоговом окне **Новый проект** выберите категорию **Установленные** > **Visual Basic** > **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)** . Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
 
      ![Шаблон приложения WPF в диалоговом окне нового проекта Visual Studio](media/exploreide-newproject-vb.png)
 
