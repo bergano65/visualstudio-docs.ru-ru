@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Управление подписками в предложении Visual Studio с GitHub Enterprise
-ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 524002b875375c22da67bbf98d98f4ebc149c14b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150140"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558151"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Управление подписками Visual Studio с GitHub Enterprise
 Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новое предложение, в котором объединены стандартные подписки Visual Studio и GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
@@ -42,27 +42,27 @@ ms.locfileid: "71150140"
 
 ### <a name="githubcom"></a>GitHub.com 
 Подробные сведения об управлении на веб-сайте GitHub.com см. в следующих разделах [справки GitHub](https://help.github.com/en).
-- [Полный список разделов справки](https://help.github.com/en)
-- [Управление членством в вашей организации](https://help.github.com/en/articles/managing-membership-in-your-organization)
-> - [Отправка пользователям приглашений присоединиться к вашей организации](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-> - [Удаление пользователей из групп или организаций](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-> - [Восстановление бывшего члена вашей организации](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
-- [Управление доступом на основе ролей](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
-- [Объединение пользователей в группы](https://help.github.com/en/articles/organizing-members-into-teams)
-- [Управление доступом к репозиториям вашей организации](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
++ [Полный список разделов справки](https://help.github.com/en)
++ [Управление членством в вашей организации](https://help.github.com/en/articles/managing-membership-in-your-organization)
++ [Отправка пользователям приглашений присоединиться к вашей организации](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
+    - [Удаление пользователей из групп или организаций](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+    - [Восстановление бывшего члена вашей организации](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
++ [Управление доступом на основе ролей](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
++ [Объединение пользователей в группы](https://help.github.com/en/articles/organizing-members-into-teams)
++ [Управление доступом к репозиториям вашей организации](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
 В справке по GitHub представлено множество руководств для администраторов, содержащих ответы на вопросы и рекомендации, которые связаны с управлением сервером GitHub Enterprise Server, внедренным в вашей организации.
 
-- [Посмотреть все руководства для администраторов](https://help.github.com/en/enterprise/2.16/admin)
-- [Управление пользователями](https://help.github.com/en/enterprise/2.16/admin/user-management)
-> - [Организации и группы](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-> > - [Создание организаций](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-> > - [Создание групп](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-> > - [Добавление пользователей в группы](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-> > - [Удаление пользователей из групп и организаций](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-> - [Безопасность пользователя](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
-- [Установка и настройка GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
++ [Посмотреть все руководства для администраторов](https://help.github.com/en/enterprise/2.16/admin)
++ [Управление пользователями](https://help.github.com/en/enterprise/2.16/admin/user-management)
+    - [Организации и группы](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
+        - [Создание организаций](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+        - [Создание групп](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
+        - [Добавление пользователей в группы](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+        - [Удаление пользователей из групп и организаций](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+    - [Безопасность пользователя](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
++ [Установка и настройка GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - В [справке по GitHub](https://help.github.com/en) вы можете найти ответы на самые разные вопросы, связанные с GitHub.

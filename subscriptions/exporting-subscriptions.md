@@ -3,15 +3,15 @@ title: Экспорт сведений о подписке | Документа
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: Сведения о том, как экспортировать список подписчиков, и подробные сведения о назначениях подписки.
-ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: ddf466e314190b8c91d35aad522da14f4c4af69f
+ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491736"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77520856"
 ---
 # <a name="export-subscription-information"></a>Экспорт сведений о подписке
 На [портале администрирования](https://manage.visualstudio.com) подписок Visual Studio можно экспортировать список подписчиков и сведения об их назначениях. Эти сведения включают имя, адрес электронной почты, запасной адрес электронной почты, уровень подписки, дату назначения, состояние активации, дату окончания срока действия, эталонное поле, разрешенные загрузки, страну, язык, состояние подписки и GUID подписки.  Список экспортируется в виде CSV-файла, и его можно открыть в Microsoft Excel для создания диаграмм, сводных данных и других артефактов.
@@ -36,3 +36,9 @@ ms.locfileid: "74491736"
     - [Превышение доступности](handle-overclaimed-license.md)
     - [Максимальное использование](maximum-usage.md)
 - Нужна помощь с управлением подписками?  Обратитесь в [службу поддержки по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)

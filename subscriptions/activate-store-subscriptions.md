@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Сведения о том, как активировать подписки Visual Studio, приобретенные в Microsoft Store.
-ms.openlocfilehash: 8df8125280e17eba941e099d8d27b37a19de79b1
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 2fb3d958206cd3fcd76654b95d5be4b8d8e8a3a4
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439157"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476760"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Как активировать подписку, приобретенную через Microsoft Store?
 Если вы приобрели подписку Visual Studio в Microsoft Store, активацию можно инициировать на странице подтверждения оплаты или через сообщение электронной почты, которое вы получили после покупки.
@@ -35,7 +35,8 @@ ms.locfileid: "77439157"
 Посетите страницу [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), чтобы просмотреть все средства, службы, возможности обучения и поддержки, входящие в вашу подписку.  Мы рекомендуем настроить [Visual Studio](vs-ide-benefit.md) и [Azure DevOps](vs-azure-devops.md), чтобы приступить к работе. 
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](/visualstudio/)
-- [Документация по Azure DevOps](/azure/devops/)
-- [Документация по Azure](/azure/)
-- [Документация по Microsoft 365](/microsoft-365/)
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
