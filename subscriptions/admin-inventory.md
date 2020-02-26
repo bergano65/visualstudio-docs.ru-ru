@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов проводить предварительную инвентаризацию
-ms.openlocfilehash: 0eacd177b0901d866bbb974aca81a0e77cdaf25d
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439126"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476731"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Инвентаризация подготовительной среды
 Подписки на Visual Studio упрощают управление активами благодаря инвентаризации пользователей, а не устройств.
@@ -37,7 +37,8 @@ ms.locfileid: "77439126"
 - Используйте [Максимальное использование](maximum-usage.md) для учета обязательств по покупке
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](/visualstudio/)
-- [Документация по Azure DevOps](/azure/devops/)
-- [Документация по Azure](/azure/)
-- [Документация по Microsoft 365](/microsoft-365/)
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
