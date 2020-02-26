@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647505"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579322"
 ---
 # <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
 Затем добавьте в игру "Подбери пару" элемент управления <xref:System.Windows.Forms.Timer>. Таймер ожидает заданное число миллисекунд, а затем вызывает событие, называемое *тактом*. Это бывает удобно для запуска действия или повтора действия с определенной периодичностью. В этом случае таймер нужен для того, чтобы игроки могли выбрать два значка, а если они не совпадают, скрыть их через небольшой отрезок времени.

@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 178ef49c-5dee-405b-a14b-a37f41dc0609
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e752e345de9211a2b6c8d8fe076be863a04c70ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56e3526f130a8717dec2dafeef794375ceffc37c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977133"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579622"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Задача GetReferenceAssemblyPaths
 Возвращает пути к эталонным сборкам для различных версий .NET Framework.
@@ -30,9 +30,9 @@ ms.locfileid: "62977133"
 |---------------|-----------------|
 |`ReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker`. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|
 |`FullFrameworkReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker` без учета профильной части моникера. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|
-|`TargetFrameworkMoniker`|Необязательный параметр `String` .<br /><br /> Указывает моникер целевой платформы, связанный с путями базовых сборок.|
-|`RootPath`|Необязательный параметр `String` .<br /><br /> Указывает корневой путь, используемый для создания пути базовой сборки.|
-|`BypassFrameworkInstallChecks`|Необязательный параметр <xref:System.Boolean> .<br /><br /> Если задано значение `true`, обходит основные проверки, которые `GetReferenceAssemblyPaths` выполняет по умолчанию, чтобы убедиться в установке определенных платформ среды выполнения, в зависимости от целевой платформы.|
+|`TargetFrameworkMoniker`|Необязательный параметр `String`.<br /><br /> Указывает моникер целевой платформы, связанный с путями базовых сборок.|
+|`RootPath`|Необязательный параметр `String`.<br /><br /> Указывает корневой путь, используемый для создания пути базовой сборки.|
+|`BypassFrameworkInstallChecks`|Необязательный параметр <xref:System.Boolean>.<br /><br /> Если задано значение `true`, обходит основные проверки, которые `GetReferenceAssemblyPaths` выполняет по умолчанию, чтобы убедиться в установке определенных платформ среды выполнения, в зависимости от целевой платформы.|
 |`TargetFrameworkMonikerDisplayName`|Необязательный выходной параметр `String`.<br /><br /> Задает отображаемое имя для моникера целевой платформы.|
 
 ## <a name="remarks"></a>Примечания

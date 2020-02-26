@@ -14,17 +14,17 @@ helpviewer_keywords:
 - localizing XAML elements [WPF MSBuild], managing UIDs
 - checking UIDs when localizing XAML elements [WPF MSBuild]
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4e8c5ccae37aba0f287e2c2f9e29ab36371846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 312e174b1bbe0a21d155e4e6b5050e6f41dd8352
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938664"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579546"
 ---
 # <a name="uidmanager-task"></a>Задача UidManager
 Задача <xref:Microsoft.Build.Tasks.Windows.UidManager> проверяет, обновляет или удаляет уникальные идентификаторы (UID) для локализации всех элементов [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)], включенных в исходные файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].
@@ -34,7 +34,7 @@ ms.locfileid: "62938664"
 | Параметр | Описание |
 |-------------------------| - |
 | `IntermediateDirectory` | Необязательный параметр типа **String**.<br /><br /> Определяет каталог, используемый для резервного копирования файлов источника [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)], которые указываются с помощью параметра **MarkupFiles**. |
-| `MarkupFiles` | Обязательный параметр **ITaskItem[]**.<br /><br /> Определяет файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] источника, включаемые для проверки, обновления или удаления UID. |
+| `MarkupFiles` | Обязательный параметр **ITaskItem[]** .<br /><br /> Определяет файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] источника, включаемые для проверки, обновления или удаления UID. |
 | `Task` | Обязательный параметр **string**.<br /><br /> Определяет задачу управления UID для выполнения. Допустимые параметры: **Check**, **Update** и **Remove**. |
 
 ## <a name="example"></a>Пример

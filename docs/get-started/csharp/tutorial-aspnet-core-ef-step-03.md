@@ -1,5 +1,5 @@
 ---
-title: Шаг 3. Работа с данными в приложении ASP.NET Core
+title: Шаг 3. Работа с данными в приложении ASP.NET Core
 description: Начните работу с данными с помощью Entity Framework Core в веб-приложении ASP.NET Core с помощью этого видео-учебника и пошаговых инструкций.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300587"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580063"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Шаг 3. Работа с данными с использованием Entity Framework
+# <a name="step-3-work-with-data-using-entity-framework"></a>Шаг 3. Работа с данными с использованием Entity Framework
 
 Выполните следующие действия, чтобы приступить к работе с данными с помощью Entity Framework Core в веб-приложении ASP.NET Core.
 

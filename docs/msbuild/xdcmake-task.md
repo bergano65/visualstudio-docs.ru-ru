@@ -14,17 +14,17 @@ helpviewer_keywords:
 - XDCMake task (MSBuild (C++))
 - MSBuild (C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1ae0fbbcdb36c13a8c0ee91011f2b7d6fba9f5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747160"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578118"
 ---
 # <a name="xdcmake-task"></a>XDCMake - задача
 Является оболочкой для средства XML-документации (*xdcmake.exe*), которая помещает в XML-файл файлы комментариев (*XDC-файлы*) для файла *XML*.
@@ -37,7 +37,7 @@ ms.locfileid: "72747160"
 ## <a name="parameters"></a>Параметры
  В следующей таблице описываются параметры задачи **XDCMake**.
 
-|Параметр|ОПИСАНИЕ|
+|Параметр|Описание|
 |---------------|-----------------|
 |**AdditionalDocumentFile**|Необязательный параметр типа **String[]** .<br /><br /> Указывает один или несколько дополнительных файлов *XDC* для слияния.<br /><br /> Дополнительные сведения см. в описании параметра **Дополнительные файлы документации** в разделе [Страницы свойств средства создания XML-документов](/cpp/build/reference/xml-document-generator-tool-property-pages). Также см. описание параметров командной строки **/old** и **/Fs** для файла *xdcmake.exe*.|
 |**AdditionalOptions**|Необязательный параметр типа **String**.<br /><br /> Список параметров, как указано в командной строке. Например, /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для указания параметров, не представленных каким-либо другим параметром задачи **XDCMake**.<br /><br /> Дополнительные сведения см. в разделах [Справочник по XDCMake](/cpp/build/reference/xdcmake-reference), [Страницы свойств средства создания XML-документов](/cpp/build/reference/xml-document-generator-tool-property-pages), а также в разделе справки, вызываемом с помощью параметра командной строки ( **/?** ) для файла *xdcmake.exe*.|

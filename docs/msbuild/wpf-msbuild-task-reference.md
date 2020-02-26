@@ -13,17 +13,17 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778330"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578190"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Справочные сведения о задачах WPF для MSBuild
 Процесс сборки Windows Presentation Foundation (WPF) расширяет Microsoft Build Engine с помощью дополнительного набора задач сборки, включая задачи компиляции разметки и обработки ресурсов.
@@ -63,7 +63,7 @@ ms.locfileid: "62778330"
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Добавляет элемент **\<hostInBrowser />** в манифест приложения (*\<имя_проекта>.exe.manifest*) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
+ Добавляет элемент **\<hostInBrowser />** в манифест приложения ( *\<имя_проекта>.exe.manifest*) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
 
 ## <a name="see-also"></a>См. также
 - [MSBuild](../msbuild/msbuild.md)

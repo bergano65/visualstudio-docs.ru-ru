@@ -12,17 +12,17 @@ helpviewer_keywords:
 - non-localizable resources [WPF MSBuild], classifying to embed in an assembly
 - FileClassifier task [WPF MSBuild]
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830175"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579678"
 ---
 # <a name="fileclassifier-task"></a>Задача FileClassifier
 Задача <xref:Microsoft.Build.Tasks.Windows.FileClassifier> классифицирует набор исходных ресурсов как ресурсов, которые будут внедрены в сборку. Если ресурс является нелокализуемым, он внедряется в основную сборку приложения, в противном случае — во вспомогательную сборку.
@@ -35,10 +35,10 @@ ms.locfileid: "62830175"
 |`CLRResourceFiles`|Не используется.|
 |`CLRSatelliteEmbeddedResource`|Не используется.|
 |`Culture`|Необязательный параметр типа **String**.<br /><br /> Задает язык и региональные параметры для сборки. Он может иметь значение **NULL**, если сборка не подлежит локализации. Если указано значение **NULL**, по умолчанию используется значение, возвращаемое **CultureInfo.InvariantCulture**, в нижнем регистре.|
-|`MainEmbeddedFiles`|Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Указывает нелокализуемые ресурсы, которые внедряются в основную сборку.|
+|`MainEmbeddedFiles`|Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Указывает нелокализуемые ресурсы, которые внедряются в основную сборку.|
 |`OutputType`|Обязательный параметр **string**.<br /><br /> Задает тип файла, в который будут внедряться указанные исходные файлы. Допустимые значения: **exe**, **winexe**, или **library**.|
-|`SatelliteEmbeddedFiles`|Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Указывает локализуемые файлы, которые внедряются во вспомогательную сборку для языка и региональных параметров, указанных в параметре **Culture**.|
-|`SourceFiles`|Обязательный параметр **ITaskItem[]**.<br /><br /> Задает список файлов для классификации.|
+|`SatelliteEmbeddedFiles`|Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Указывает локализуемые файлы, которые внедряются во вспомогательную сборку для языка и региональных параметров, указанных в параметре **Culture**.|
+|`SourceFiles`|Обязательный параметр **ITaskItem[]** .<br /><br /> Задает список файлов для классификации.|
 
 ## <a name="remarks"></a>Примечания
 Если не задан параметр **Culture**, то все ресурсы, указанные с помощью параметра **SourceFiles**, считаются нелокализуемыми. В противном случае они считаются локализуемыми, если не связаны с атрибутом **Localizable**, который имеет значение **false**.

@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b0b461fa812d6fff8c4d6a258cb9dabf8b04f6db
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ec0f211db3d9906d83d9bcf7c7a0ab79ec3e1b7f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852293"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557825"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка автономного профилировщика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.
@@ -54,7 +54,6 @@ ms.locfileid: "75852293"
 
 ## <a name="see-also"></a>См. также
 - [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)
-- [Пошаговое руководство: Профилирование из командной строки с помощью метода выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)
 - [Пошаговое руководство: Профилирование из командной строки с помощью метода инструментирования](command-line-profiling-of-stand-alone-applications.md)
 - [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910347"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578340"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Анализ использования памяти без отладчика
 
 Средство **Использование памяти** отслеживает использование памяти в приложении. Вы можете использовать его для изучения воздействия сценариев, разрабатываемых в Visual Studio, на память в режиме реального времени. Можно создавать подробные моментальные снимки состояния памяти приложения и сравнивать их для выявления первопричин проблем с памятью.
 
 Средство **Использование памяти** можно запускать с отладчиком или без него. Ниже показано, как использовать средство **Использование памяти** без отладчика, используя **Профилировщик производительности** Visual Studio.
-
->[!NOTE]
->- Чтобы измерить использование памяти для приложения .NET Core, нужно средство **Использование памяти** с отладчиком. Инструкции см. в разделе [Профилирование использования памяти в Visual Studio](memory-usage.md).
->- Чтобы проанализировать использование памяти в приложениях UWP JavaScript или HTML, используйте средство [Память JavaScript](../profiling/javascript-memory.md) в **профилировщике производительности**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Диагностические сеансы по использованию памяти
 
