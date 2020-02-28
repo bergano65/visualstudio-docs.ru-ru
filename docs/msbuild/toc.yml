@@ -1,29 +1,29 @@
 - name: MSBuild
   items:
-    - name: MsBuild
+    - name: MSBuild
       href: msbuild.md
     - name: "Новые возможности в MSBuild\_16.0"
       href: whats-new-msbuild-16-0.md
-    - name: "Новые возможности MSBuild\_15.0"
+    - name: "Новые возможности в MSBuild\_15.0"
       href: what-s-new-in-msbuild-15-0.md
-    - name: Основные возможности MSBuild
+    - name: Основные понятия MSBuild
       items:
         - name: Обзор
           displayName: msbuild concepts
           href: msbuild-concepts.md
         - name: Свойства
           items:
-            - name: Свойства MSBuild
+            - name: свойства MSBuild
               href: msbuild-properties.md
-            - name: Использование переменных среды в построении
+            - name: Использование переменных среды в сборке
               href: how-to-use-environment-variables-in-a-build.md
             - name: Использование ссылки на имя или расположение файла проекта
               href: how-to-reference-the-name-or-location-of-the-project-file.md
-            - name: Построение одинаковых исходных файлов с различными параметрами
+            - name: Сборка одинаковых исходных файлов с различными параметрами
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Функции свойств
               href: property-functions.md
-        - name: Items
+        - name: Элементы
           items:
             - name: Элементы MSBuild
               href: msbuild-items.md
@@ -37,13 +37,13 @@
               href: item-definitions.md
             - name: Функции элементов
               href: item-functions.md
-        - name: Цели
+        - name: Целевые объекты
           items:
-            - name: Цели MSBuild
+            - name: Целевые объекты MSBuild
               href: msbuild-targets.md
-            - name: Порядок построения целевого объекта
+            - name: Порядок сборки целевого объекта
               href: target-build-order.md
-            - name: Инкрементные построения
+            - name: Добавочные сборки
               href: incremental-builds.md
             - name: Выбор цели для первой сборки
               href: how-to-specify-which-target-to-build-first.md
@@ -51,13 +51,13 @@
               href: how-to-use-the-same-target-in-multiple-project-files.md
             - name: Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
               href: how-to-build-specific-targets-in-solutions-by-using-msbuild-exe.md
-            - name: Последовательная сборка
+            - name: Инкрементная сборка
               href: how-to-build-incrementally.md
             - name: Очистка сборки
               href: how-to-clean-a-build.md
-            - name: Использование пакета SDK проекта MSBuild
+            - name: Ссылка на пакет SDK проекта MSBuild
               href: how-to-use-project-sdk.md
-        - name: Задания
+        - name: Задачи
           items:
             - name: Задачи MSBuild
               href: msbuild-tasks.md
@@ -65,7 +65,7 @@
               href: task-writing.md
             - name: Игнорирование ошибок в задачах
               href: how-to-ignore-errors-in-tasks.md
-            - name: 'Построение проекта, содержащего ресурсы'
+            - name: 'Сборка проекта, содержащего ресурсы'
               href: how-to-build-a-project-that-has-resources.md
             - name: Встроенные задачи
               items:
@@ -85,13 +85,13 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Использование резервных символов XML в файлах проектов
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Дополнительные возможности
+    - name: Дополнительные сведения
       items:
         - name: Дополнительные возможности MSBuild
           href: msbuild-advanced-concepts.md
         - name: Пакетная обработка
           items:
-            - name: Пакетная обработка в MSBuild
+            - name: Пакетная обработка MSBuild
               href: msbuild-batching.md
             - name: Метаданные элементов в пакетной обработке задач
               href: item-metadata-in-task-batching.md
@@ -99,23 +99,23 @@
               href: item-metadata-in-target-batching.md
         - name: Преобразования MSBuild
           href: msbuild-transforms.md
-        - name: Интеграция со средой Visual Studio
+        - name: интеграция Visual Studio
           items:
             - name: Интеграция Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
-            - name: Расширение процесса построения Visual Studio
+            - name: Расширение процесса сборки Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
-            - name: Запуск построения из интегрированной среды разработки
+            - name: Запуск сборки из интегрированной среды разработки
               href: starting-a-build-from-within-the-ide.md
             - name: Регистрация расширений платформы .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Параллельное построение нескольких проектов
+        - name: Параллельная сборка нескольких проектов
           items:
-            - name: Параллельное построение нескольких проектов с помощью MSBuild
+            - name: Параллельная сборка нескольких проектов с помощью MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
-            - name: Использование нескольких процессоров при построении проектов
+            - name: Использование нескольких процессоров при сборке проектов
               href: using-multiple-processors-to-build-projects.md
-            - name: Эффективное использование памяти при построении больших проектов
+            - name: Эффективное использование памяти при сборке больших проектов
               href: using-memory-efficiently-when-you-build-large-projects.md
         - name: Настройка для различных версий
           items:
@@ -168,20 +168,20 @@
           href: customize-your-build.md
         - name: Рекомендации по MSBuild
           href: msbuild-best-practices.md
-    - name: Logging
+    - name: Ведение журнала
       items:
         - name: Обзор
           displayName: logging
           href: logging-in-msbuild.md
-        - name: Получение журналов построения с помощью MSBuild
+        - name: Получение журналов сборки с помощью MSBuild
           href: obtaining-build-logs-with-msbuild.md
-        - name: Средства ведения журнала построения
+        - name: Средства ведения журнала сборки
           href: build-loggers.md
         - name: Ведение журнала в многопроцессорной среде
           href: logging-in-a-multi-processor-environment.md
         - name: Написание средств ведения журнала с поддержкой многопроцессорности
           href: writing-multi-processor-aware-loggers.md
-        - name: Создание средства ведения журнала переадресации
+        - name: Создание средства ведения журнала с перенаправлением
           href: creating-forwarding-loggers.md
     - name: Пошаговое руководство. Использование MSBuild
       href: walkthrough-using-msbuild.md
@@ -231,7 +231,7 @@
               href: propertygroup-element-msbuild.md
             - name: Элемент Sdk
               href: sdk-element-msbuild.md
-            - name: Элемент Target
+            - name: 'Target, элемент'
               href: target-element-msbuild.md
             - name: Элемент Task
               href: task-element-msbuild.md
@@ -244,7 +244,7 @@
         - name: Справочные сведения о задачах
           items:
             - name: Обзор
-              displayName: Task Reference
+              displayName: task reference
               href: msbuild-task-reference.md
             - name: 'Задачи, относящиеся к C++'
               items:
@@ -253,7 +253,7 @@
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: Задача BscMake
                   href: bscmake-task.md
-                - name: Задача CL
+                - name: CL - задача
                   href: cl-task.md
                 - name: Задача CPPClean
                   href: cppclean-task.md
@@ -267,31 +267,31 @@
                   href: getoutofdateitems-task.md
                 - name: Задача GetOutputFileName
                   href: getoutputfilename-task.md
-                - name: Задача LIB
+                - name: LIB - задача
                   href: lib-task.md
                 - name: Связывание задачи
                   href: link-task.md
-                - name: Задача MIDL
+                - name: MIDL - задача
                   href: midl-task.md
-                - name: Задача MT
+                - name: MT - задача
                   href: mt-task.md
                 - name: Задача MultiTool
                   href: multitooltask-task.md
                 - name: Задача ParallelCustomBuild
                   href: parallelcustombuild-task.md
-                - name: Задача RC
+                - name: RC - задача
                   href: rc-task.md
                 - name: Задача SetEnv
                   href: setenv-task.md
                 - name: Базовый класс TrackedVCToolTask
                   href: trackedvctooltask-base-class.md
-                - name: Задача VCMessage
+                - name: VCMessage - задача
                   href: vcmessage-task.md
                 - name: Базовый класс VCToolTask
                   href: vctooltask-base-class.md
-                - name: Задача XDCMake
+                - name: XDCMake - задача
                   href: xdcmake-task.md
-                - name: Задача XSD
+                - name: XSD - задача
                   href: xsd-task.md
             - name: Базовый класс Task
               href: task-base-class.md
@@ -303,129 +303,129 @@
               href: diagnosing-task-failures.md
             - name: Задача AL (компоновщик сборок)
               href: al-assembly-linker-task.md
-            - name: Задача AspNetCompiler
+            - name: AspNetCompiler - задача
               href: aspnetcompiler-task.md
-            - name: Задача AssignCulture
+            - name: AssignCulture - задача
               href: assignculture-task.md
             - name: Задача AssignProjectConfiguration
               href: assignprojectconfiguration-task.md
             - name: Задача AssignTargetPath
               href: assigntargetpath-task.md
-            - name: Задача CallTarget
+            - name: CallTarget - задача
               href: calltarget-task.md
-            - name: Задача CombinePath
+            - name: CombinePath - задача
               href: combinepath-task.md
-            - name: Задача ConvertToAbsolutePath
+            - name: ConvertToAbsolutePath - задача
               href: converttoabsolutepath-task.md
-            - name: Задача Copy
+            - name: Copy - задача
               href: copy-task.md
-            - name: Задача CreateCSharpManifestResourceName
+            - name: CreateCSharpManifestResourceName - задача
               href: createcsharpmanifestresourcename-task.md
-            - name: Задача CreateItem
+            - name: CreateItem - задача
               href: createitem-task.md
-            - name: Задача CreateProperty
+            - name: CreateProperty - задача
               href: createproperty-task.md
-            - name: Задача CreateVisualBasicManifestResourceName
+            - name: CreateVisualBasicManifestResourceName - задача
               href: createvisualbasicmanifestresourcename-task.md
-            - name: Задача Csc
+            - name: Csc - задача
               href: csc-task.md
-            - name: Задача Delete
+            - name: Delete - задача
               href: delete-task.md
             - name: Задача DownloadFile
               href: downloadfile-task.md
-            - name: Задача Error
+            - name: Error - задача
               href: error-task.md
-            - name: Задача Exec
+            - name: Exec - задача
               href: exec-task.md
-            - name: Задача FindAppConfigFile
+            - name: FindAppConfigFile - задача
               href: findappconfigfile-task.md
-            - name: Задача FindInList
+            - name: FindInList - задача
               href: findinlist-task.md
-            - name: Задача FindUnderPath
+            - name: FindUnderPath - задача
               href: findunderpath-task.md
-            - name: Задача FormatUrl
+            - name: FormatUrl - задача
               href: formaturl-task.md
             - name: Задача FormatVersion
               href: formatversion-task.md
-            - name: Задача GenerateApplicationManifest
+            - name: GenerateApplicationManifest - задача
               href: generateapplicationmanifest-task.md
-            - name: Задача GenerateBootstrapper
+            - name: GenerateBootstrapper - задача
               href: generatebootstrapper-task.md
-            - name: Задача GenerateDeploymentManifest
+            - name: GenerateDeploymentManifest - задача
               href: generatedeploymentmanifest-task.md
-            - name: Задача GenerateResource
+            - name: GenerateResource - задача
               href: generateresource-task.md
-            - name: Задача GenerateTrustInfo
+            - name: GenerateTrustInfo - задача
               href: generatetrustinfo-task.md
-            - name: Задача GetAssemblyIdentity
+            - name: GetAssemblyIdentity - задача
               href: getassemblyidentity-task.md
             - name: Задача GetFileHash
               href: getfilehash-task.md
-            - name: Задача GetFrameworkPath
+            - name: GetFrameworkPath - задача
               href: getframeworkpath-task.md
-            - name: Задача GetFrameworkSdkPath
+            - name: GetFrameworkSdkPath - задача
               href: getframeworksdkpath-task.md
             - name: Задача GetReferenceAssemblyPaths
               href: getreferenceassemblypaths-task.md
-            - name: Задача LC
+            - name: LC - задача
               href: lc-task.md
-            - name: Задача MakeDir
+            - name: MakeDir - задача
               href: makedir-task.md
-            - name: Задача Message
+            - name: Message - задача
               href: message-task.md
-            - name: Задача Move
+            - name: Move - задача
               href: move-task.md
-            - name: Задача MSBuild
+            - name: MSBuild - задача
               href: msbuild-task.md
-            - name: Задача ReadLinesFromFile
+            - name: ReadLinesFromFile - задача
               href: readlinesfromfile-task.md
-            - name: Задача RegisterAssembly
+            - name: RegisterAssembly - задача
               href: registerassembly-task.md
-            - name: Задача RemoveDir
+            - name: RemoveDir - задача
               href: removedir-task.md
-            - name: Задача RemoveDuplicates
+            - name: RemoveDuplicates - задача
               href: removeduplicates-task.md
-            - name: Задача RequiresFramework35SP1Assembly
+            - name: RequiresFramework35SP1Assembly - задача
               href: requiresframework35sp1assembly-task.md
-            - name: Задача ResolveAssemblyReference
+            - name: ResolveAssemblyReference - задача
               href: resolveassemblyreference-task.md
             - name: Задача ResolveComReference
               href: resolvecomreference-task.md
-            - name: Задача ResolveKeySource
+            - name: ResolveKeySource - задача
               href: resolvekeysource-task.md
-            - name: Задача ResolveManifestFiles
+            - name: ResolveManifestFiles - задача
               href: resolvemanifestfiles-task.md
-            - name: Задача ResolveNativeReference
+            - name: ResolveNativeReference - задача
               href: resolvenativereference-task.md
-            - name: Задача ResolveNonMSBuildProjectOutput
+            - name: ResolveNonMSBuildProjectOutput - задача
               href: resolvenonmsbuildprojectoutput-task.md
-            - name: Задача SGen
+            - name: SGen - задача
               href: sgen-task.md
-            - name: Задача SignFile
+            - name: SignFile - задача
               href: signfile-task.md
-            - name: Задача Touch
+            - name: Touch - задача
               href: touch-task.md
-            - name: Задача UnregisterAssembly
+            - name: UnregisterAssembly - задача
               href: unregisterassembly-task.md
             - name: Задача Unzip
               href: unzip-task.md
-            - name: Задача UpdateManifest
+            - name: UpdateManifest - задача
               href: updatemanifest-task.md
-            - name: Задача Vbc
+            - name: Vbc - задача
               href: vbc-task.md
             - name: Задача VerifyFileHash
               href: verifyfilehash-task.md
-            - name: Задача Warning
+            - name: Warning - задача
               href: warning-task.md
-            - name: Задача WriteCodeFragment
+            - name: WriteCodeFragment - задача
               href: writecodefragment-task.md
-            - name: Задача WriteLinesToFile
+            - name: WriteLinesToFile - задача
               href: writelinestofile-task.md
-            - name: Задача XmlPeek
+            - name: XmlPeek - задача
               href: xmlpeek-task.md
-            - name: Задача XmlPoke
+            - name: XmlPoke - задача
               href: xmlpoke-task.md
-            - name: Задача XslTransformation
+            - name: XslTransformation - задача
               href: xsltransformation-task.md
             - name: Задача ZipDirectory
               href: zipdirectory-task.md
@@ -441,7 +441,7 @@
           href: common-msbuild-project-items.md
         - name: Справочник по командной строке MSBuild
           href: msbuild-command-line-reference.md
-        - name: Файлы Targets в MSBuild
+        - name: Файлы TARGETS в MSBuild
           href: msbuild-dot-targets-files.md
         - name: Общеизвестные метаданные элементов MSBuild
           href: msbuild-well-known-item-metadata.md
@@ -450,14 +450,14 @@
         - name: Справка по WPF
           items:
             - name: Обзор
-              displayName: WPF MSBuild Reference
+              displayName: WPF MSBuild reference
               href: wpf-msbuild-reference.md
             - name: TARGETS-файлы WPF
               href: wpf-dot-targets-files.md
             - name: Справка по задачам WPF
               items:
                 - name: Обзор
-                  displayName: WPF MSBuild Task Reference
+                  displayName: WPF MSBuild task reference
                   href: wpf-msbuild-task-reference.md
                 - name: Задача FileClassifier
                   href: fileclassifier-task.md
@@ -467,7 +467,7 @@
                   href: getwinfxpath-task.md
                 - name: Задача MarkupCompilePass1
                   href: markupcompilepass1-task.md
-                - name: Задача MarkupCompilePass2
+                - name: MarkupCompilePass2 - задача
                   href: markupcompilepass2-task.md
                 - name: Задача MergeLocalizationDirectives
                   href: mergelocalizationdirectives-task.md
@@ -482,7 +482,7 @@
     - name: Программное использование MSBuild
       items:
         - name: Обзор
-          displayName: Use MSBuild Programmatically
+          displayName: Use MSBuild programmatically
           href: msbuild-api.md
         - name: "Обновление до MSBuild\_15"
           href: updating-an-existing-application.md

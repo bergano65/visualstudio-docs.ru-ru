@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275490"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557884"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в *TARGETS*-файлы, предоставляемые MSBuild.
@@ -68,6 +68,7 @@ ms.locfileid: "77275490"
 | FileAlignment | Задает выравнивание размеров выходного файла в байтах. Допустимые значения: 512, 1024, 2048, 4096, 8192. Это свойство эквивалентно переключателю `/filealignment` компилятора. |
 | FrameworkPathOverride | Задает расположение библиотек *mscorlib.dll* и *microsoft.visualbasic.dll*. Этот параметр эквивалентен переключателю `/sdkpath` компилятора *vbc.exe*. |
 | GenerateDocumentation | (C#, Visual Basic) Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в *XML*-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки. |
+| GenerateFullPaths | (C#) Создайте полные пути для имен файлов в выходных данных с помощью параметра компилятора [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option). |
 | GenerateSerializationAssemblies | Указывает, нужно ли создавать сборки XML-сериализации с помощью *SGen.exe*; свойство может быть включено, отключено и поставлено на автоматический режим. Это свойство используется для сборок, предназначенных только для .NET Framework. Для создания сборок XML-сериализации для сборок .NET Standard или .NET Core сошлитесь на пакет NuGet *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | Полный путь к промежуточной выходной папке, производный от `BaseIntermediateOutputPath`, если путь не указан. Например, *\obj\debug\\* . |
 | KeyContainerName | Имя контейнера ключа строгого имени. |

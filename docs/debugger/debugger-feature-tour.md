@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599304"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578953"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -110,7 +110,7 @@ ms.locfileid: "73599304"
 
 ## <a name="restart-your-app-quickly"></a>Быстрый перезапуск приложения
 
-Нажмите кнопку **Перезапустить** ![Перезапустить приложение](../debugger/media/dbg-tour-restart.png "Перезагрузить приложение") на панели инструментов отладки (**Ctrl + Shift + F5**).
+Нажмите кнопку **Перезапустить** ![Перезапустить приложение](../debugger/media/dbg-tour-restart.png "Перезагрузить приложение") на панели инструментов отладки (**CTRL + SHIFT + F5**).
 
 Кнопка **Перезапустить** позволяет сэкономить время, затрачиваемое на остановку приложения и перезапуск отладчика. Отладчик приостанавливается в первой точке останова, достигнутой при выполнении кода.
 
@@ -229,6 +229,10 @@ ms.locfileid: "73599304"
 ![Кнопки "Назад" и "Вперед"](../debugger/media/intellitrace-step-back-icons-description.png  "Кнопки "Назад" и "Вперед"")
 
 Дополнительные сведения см. в разделе [Проверка предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md).
+
+## <a name="debug-performance-issues"></a>Отладка проблем производительности
+
+Если приложение работает слишком медленно или использует слишком много памяти, возможно, вам следует протестировать его с помощью средств профилирования на раннем этапе. Дополнительные сведения о средствах профилирования, таких как средство загрузки ЦП и анализатор памяти, см. в разделе [Знакомство со средствами профилирования](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 
