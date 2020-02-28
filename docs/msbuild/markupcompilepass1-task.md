@@ -12,17 +12,17 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], parameters
 - converting XAML projects to compiled binary format [WPF MSBuild]
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d72b0a63235de4cc93e97f6e85dc5728e5ebbf43
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979807"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579665"
 ---
 # <a name="markupcompilepass1-task"></a>Задача MarkupCompilePass1
 
@@ -32,32 +32,32 @@ ms.locfileid: "62979807"
 
 | Параметр | Описание |
 | - | - |
-| `AllGeneratedFiles` | Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Содержит полный список файлов, созданных задачей <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>. |
+| `AllGeneratedFiles` | Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Содержит полный список файлов, созданных задачей <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>. |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | Необязательный параметр **Boolean** .<br /><br /> Указывает, следует ли запускать задачу в отдельном <xref:System.AppDomain>. Если этот параметр возвращает **false**, задача выполняется в том же <xref:System.AppDomain>, что и [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]. Это позволяет выполнить задачу быстрее. Если этот параметр возвращает значение **true**, то задача выполняется во втором <xref:System.AppDomain>, который изолирован от [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] и работает медленнее. |
-| `ApplicationMarkup` | Необязательный параметр **ITaskItem[]**.<br /><br /> Задает имя файла определения приложения [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
-| `AssembliesGeneratedDuringBuild` | Необязательный параметр типа **String[]**.<br /><br /> Задает ссылки на сборки, которые изменяются в процессе сборки. Например, решение Visual Studio может содержать один проект, который ссылается на выходные данные компиляции другого проекта. В этом случае выходные данные компиляции второго проекта можно добавить в параметр **AssembliesGeneratedDuringBuild**.<br /><br /> Примечание. Параметр **AssembliesGeneratedDuringBuild** должен содержать ссылки на полный набор сборок, созданных решением сборки. |
+| `ApplicationMarkup` | Необязательный параметр **ITaskItem[]** .<br /><br /> Задает имя файла определения приложения [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `AssembliesGeneratedDuringBuild` | Необязательный параметр типа **String[]** .<br /><br /> Задает ссылки на сборки, которые изменяются в процессе сборки. Например, решение Visual Studio может содержать один проект, который ссылается на выходные данные компиляции другого проекта. В этом случае выходные данные компиляции второго проекта можно добавить в параметр **AssembliesGeneratedDuringBuild**.<br /><br /> Примечание. Параметр **AssembliesGeneratedDuringBuild** должен содержать ссылки на полный набор сборок, созданных решением сборки. |
 | `AssemblyName` | Обязательный параметр **string**.<br /><br /> Задает короткое имя сборки, которая создается для проекта. Например, если проект создает исполняемый файл [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] с именем *WinExeAssembly.exe*, то параметр **AssemblyName** имеет значение **WinExeAssembly**. |
 | `AssemblyPublicKeyToken` | Необязательный параметр типа **String**.<br /><br /> Задает маркер открытого ключа для сборки. |
 | `AssemblyVersion` | Необязательный параметр типа **String**.<br /><br /> Задает номер версии сборки. |
-| `ContentFiles` | Необязательный параметр **ITaskItem[]**.<br /><br /> Задает список независимых файлов содержимого. |
+| `ContentFiles` | Необязательный параметр **ITaskItem[]** .<br /><br /> Задает список независимых файлов содержимого. |
 | `DefineConstants` | Необязательный параметр типа **String**.<br /><br /> Указывает, что текущее значение **DefineConstants** сохраняется, что влияет на создание конечной сборки. Изменение этого параметра может повлечь изменение общего API в конечной сборке и отразиться на компиляции файлов [!INCLUDE[TLA2#tla_titlexaml](../msbuild/includes/tla2sharptla_titlexaml_md.md)], ссылающихся на локальные типы. |
-| `ExtraBuildControlFiles` | Необязательный параметр **ITaskItem[]**.<br /><br /> Задает список файлов, определяющих, выполняется ли перестройка при повторном запуске задачи <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>. Перестройка активируется при изменении одного из этих файлов. |
-| `GeneratedBamlFiles` | Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Содержит список созданных файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
-| `GeneratedCodeFiles` | Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Содержит список созданных файлов управляемого кода. |
-| `GeneratedLocalizationFiles` | Необязательный параметр вывода **ITaskItem[]**.<br /><br /> Содержит список файлов локализации, созданных для каждого локализуемого [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] файла XAML. |
+| `ExtraBuildControlFiles` | Необязательный параметр **ITaskItem[]** .<br /><br /> Задает список файлов, определяющих, выполняется ли перестройка при повторном запуске задачи <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>. Перестройка активируется при изменении одного из этих файлов. |
+| `GeneratedBamlFiles` | Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Содержит список созданных файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `GeneratedCodeFiles` | Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Содержит список созданных файлов управляемого кода. |
+| `GeneratedLocalizationFiles` | Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Содержит список файлов локализации, созданных для каждого локализуемого [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] файла XAML. |
 | `HostInBrowser` | Необязательный параметр типа **String**.<br /><br /> Определяет, является ли созданная сборка [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]. Допустимые значения: **true** и **false**. Если присвоено значение**true**, создается код поддержки размещения в браузере. |
-| `KnownReferencePaths` | Необязательный параметр типа **String[]**.<br /><br /> Задает ссылки на сборки, которые не изменяются в процессе сборки. Сюда включаются сборки, расположенные в [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)], в каталоге установки [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] и т. д. |
-| `Language` | Обязательный параметр **string**.<br /><br /> Задает управляемый язык, который поддерживает компилятор. Допустимые значения: **C#**, **VB**, **JScript** и **C++**. |
+| `KnownReferencePaths` | Необязательный параметр типа **String[]** .<br /><br /> Задает ссылки на сборки, которые не изменяются в процессе сборки. Сюда включаются сборки, расположенные в [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)], в каталоге установки [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] и т. д. |
+| `Language` | Обязательный параметр **string**.<br /><br /> Задает управляемый язык, который поддерживает компилятор. Допустимые значения: **C#** , **VB**, **JScript** и **C++** . |
 | `LanguageSourceExtension` | Необязательный параметр типа **String**.<br /><br /> Задает расширение, которое добавляется к расширению созданного файла управляемого кода:<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Если для параметра **LanguageSourceExtension** не задано какое-либо определенное значение, используется стандартное расширение исходного файла для языка: *VB* для [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)], *CSHARP* для [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]. |
 | `LocalizationDirectivesToLocFile` | Необязательный параметр типа **String**.<br /><br /> Указывает, как создать сведения о локализации для каждого исходного файла [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. Допустимые значения: **None**, **CommentsOnly** и **All**. |
 | `OutputPath` | Обязательный параметр **string**.<br /><br /> Указывает каталог, в котором создаются файлы управляемого кода и двоичные файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
 | `OutputType` | Обязательный параметр **string**.<br /><br /> Задает тип сборки, которая создается проектом. Допустимые значения: **winexe**, **exe**, **library** и **netmodule**. |
-| `PageMarkup` | Необязательный параметр **ITaskItem[]**.<br /><br /> Задает список обрабатываемых файлов [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
-| `References` | Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список содержащихся в файлах ссылок на сборки, которые содержат типы, используемые в файлах [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `PageMarkup` | Необязательный параметр **ITaskItem[]** .<br /><br /> Задает список обрабатываемых файлов [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `References` | Необязательный параметр **ITaskItem[]** .<br /><br /> Указывает список содержащихся в файлах ссылок на сборки, которые содержат типы, используемые в файлах [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
 | `RequirePass2ForMainAssembly` | Необязательный параметр вывода типа **Boolean**.<br /><br /> Указывает, содержит ли проект нелокализуемые файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] со ссылками на локальные типы, внедренные в основную сборку. |
 | `RequirePass2ForSatelliteAssembly` | Необязательный параметр вывода типа **Boolean**.<br /><br /> Указывает, содержит ли проект локализуемые файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] со ссылками на локальные типы, внедренные в основную сборку. |
 | `RootNamespace` | Необязательный параметр типа **String**.<br /><br /> Задает корневое пространство имен для классов, которые находятся внутри проекта. **RootNamespace** также используется как пространство имен по умолчанию для созданного файла управляемого кода, если соответствующий файл [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] не содержит атрибут `x:Class`. |
-| `SourceCodeFiles` | Необязательный параметр **ITaskItem[]**.<br /><br /> Задает список файлов кода для текущего проекта. В этот список не входят файлы управляемого кода, созданные для определенного языка. |
+| `SourceCodeFiles` | Необязательный параметр **ITaskItem[]** .<br /><br /> Задает список файлов кода для текущего проекта. В этот список не входят файлы управляемого кода, созданные для определенного языка. |
 | `UICulture` | Необязательный параметр типа **String**.<br /><br /> Задает вспомогательную сборку для языка и региональных параметров пользовательского интерфейса, в которую внедряются созданные двоичные файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. Если значение для **UICulture** не задано, созданные двоичные файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] внедряются в основную сборку. |
 | `XAMLDebuggingInformation` | Необязательный параметр **Boolean** .<br /><br /> Если он имеет значение **true**, для помощи в отладке создается диагностическая информация, которая помещается в скомпилированный элемент [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
 

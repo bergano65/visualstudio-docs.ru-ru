@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984559"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567976"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Стандартные сочетания клавиш в Visual Studio для Mac
 
@@ -20,6 +20,13 @@ ms.locfileid: "74984559"
 
 > [!TIP]
 > Представленные в этом документе сочетания клавиш и параметры настраиваемых сочетаний клавиш в Visual Studio для Mac обозначаются стандартными символами для macOS. Если какой-то символ вам незнаком, изучите [таблицу поиска символов для клавиш в macOS](#macos-key-symbols-lookup).
+
+## <a name="downloadable-quick-ref-pdfs"></a>Загружаемые PDF-файлы с краткими руководствами
+
+Мы собрали наиболее часто используемые и наиболее полезные сочетания клавиш в загружаемом PDF-файле. У нас есть две версии — одна по сочетаниям клавиш в Visual Studio для Mac, в вторая — по сочетаниям клавиш в Visual Studio в сравнении для пользователей, имеющих опыт работы с Visual Studio в Windows.
+
+ - [Краткое руководство по сочетаниям клавиш в Visual Studio для Mac](https://aka.ms/vsm-keys)
+ - [Краткое руководство по сочетаниям клавиш в Visual Studio и Visual Studio для Mac](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>Навигация по коду
 
@@ -124,7 +131,7 @@ ms.locfileid: "74984559"
 |Команды|Сочетания клавиш|
 |-|-|
 |Добавить файлы|**⌥⌘A**|
-|Построить|**⌘K**, **⇧F6**|
+|Построение|**⌘K**, **⇧F6**|
 |Собрать все|**⌘B**, **F6**|
 |Очистить|**⇧⌘K**|
 |Перестроить|**⌃⌘K**|

@@ -6,18 +6,21 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Сведения о том, как найти и загрузить программное обеспечение Майкрософт в подписках Visual Studio
-ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439170"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476826"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Загрузка программного обеспечения в подписках Visual Studio
 В зависимости от вашей подписки Visual Studio вам доступно различное программное обеспечение Майкрософт.  В этой статье описывается, как найти и загрузить нужное программное обеспечение для максимально эффективного использования подписки. 
 
 > [!NOTE]
 > На странице [Загрузки](https://my.visualstudio.com/downloads/featured) отображаются только скачиваемые файлы, включенные в вашу подписку.  Если вы используете несколько подписок или членств в программах, отображаются скачиваемые файлы для вашего **наивысшего уровня подписки**, даже если вы работаете с другой подпиской.  Например, при наличии подписок Visual Studio Enterprise и Visual Studio Professional, связанных с одним идентификатором входа, даже если вы просматриваете преимущества подписки Professional, отображаются скачиваемые файлы для подписки Enterprise.
+
+> [!NOTE]
+> Мы осведомлены о проблемах, связанных с доступностью ключей продуктов Office 365.  Мы изучаем причину ошибки и обновим эту статью после устранения проблемы. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Как найти скачиваемые файлы на портале подписчика?
 На странице [Загрузки](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) вы увидите популярные скачиваемые файлы, упорядоченные в группы по типу продукта.  Вы можете выбрать один из отображаемых популярных файлов или найти любой продукт с помощью панели поиска в верхней части страницы.
@@ -53,7 +56,8 @@ ms.locfileid: "77439170"
 - [Поиск и запрос ключей](find-keys.md)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](/visualstudio/)
-- [Документация по Azure DevOps](/azure/devops/)
-- [Документация по Azure](/azure/)
-- [Документация по Microsoft 365](/microsoft-365/)
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+

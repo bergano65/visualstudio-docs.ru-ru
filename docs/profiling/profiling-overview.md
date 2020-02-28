@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994919"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77577958"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Обзор средств для измерения производительности в Visual Studio
 
@@ -26,3 +26,5 @@ ms.locfileid: "62994919"
 * [Анализируйте загрузку ЦП](../profiling/cpu-usage.md) для получения более подробных сведений о загрузке ЦП.
 
 * [Анализируйте использование памяти](../profiling/memory-usage.md) для выявления узких мест производительности.
+
+* [Анализ использования памяти с помощью инструмента распределения объектов .NET](../profiling/dotnet-alloc-tool.md) для выявления узких мест производительности в приложениях .NET.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3611a98a55d25e1ac31b8c8e0370a68b858441c9
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443142"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579475"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Написание средств ведения журнала с поддержкой многопроцессорности
 Поддержка нескольких процессоров в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет сократить время сборки проекта, но усложняет ведение журнала событий сборки. В среде с одним процессором события, сообщения, предупреждения и ошибки поступают в средство ведения журнала последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Для обеспечения такого сценария платформа [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет средство ведения журнала с поддержкой многопроцессорности и новую модель ведения журнала, а также позволяет создавать пользовательские средства ведения журнала с перенаправлением.
@@ -53,7 +53,7 @@ public interface INodeLogger: ILogger
 ### <a name="distributed-logging-model"></a>Распределенная модель ведения журнала
  В централизованной модели ведения журналов слишком большой трафик входящих сообщений может вызывать переполнение центрального узла, например, когда одновременно выполняется сборка множества проектов. При этом может увеличиться нагрузка на системные ресурсы и снизиться производительность сборки. Чтобы облегчить эту проблему, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] поддерживает распределенную модель ведения журналов.
 
- ![Распределенная модель ведения журналов](../msbuild/media/distnode.png "DistNode")
+ ![Распределенная модель ведения журнала](../msbuild/media/distnode.png "DistNode")
 
  Распределенная модель ведения журналов расширяет централизованную модель, позволяя создавать средства ведения журнала с перенаправлением.
 

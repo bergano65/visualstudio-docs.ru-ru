@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567467"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557965"
 ---
 # <a name="delete-task"></a>Delete - задача
 Удаляет указанные файлы.
@@ -39,6 +39,9 @@ ms.locfileid: "75567467"
 
 ## <a name="remarks"></a>Примечания
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+> [!WARNING]
+> Будьте осторожны при использовании подстановочных знаков в задаче `Delete`. Вы можете случайно удалить не те файлы, используя такие выражения, как `$(SomeProperty)\**\*.*` или `$(SomeProperty)/**/*.*`, особенно если для свойства задана пустая строка. В этом случае параметр `Files` может затронуть корень диска и удалить гораздо больше, чем требовалось.
 
 ## <a name="example"></a>Пример
 В следующем примере рассматривается удаление файла *MyApp.pdb*.

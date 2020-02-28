@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829997"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579932"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Учебник. Начало работы с Visual Basic в Visual Studio
 
@@ -45,7 +45,7 @@ ms.locfileid: "74829997"
 
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
+2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)** . Назовите проект *WhatIsYourName*.
 
@@ -67,7 +67,7 @@ ms.locfileid: "74829997"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Вариант 2: использование меню "Сервис"
 
-1. Закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты**.
+1. Закройте диалоговое окно **Создать проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты**.
 
 1. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.
 
@@ -173,7 +173,7 @@ ms.locfileid: "74829997"
 
 ::: moniker range="vs-2017"
 
-1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+1. Откройте Visual Studio 2017 и в верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
 1. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)** . Назовите файл *CalculateThis*.
 

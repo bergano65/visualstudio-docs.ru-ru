@@ -1,8 +1,8 @@
 ---
-title: Измерение использования ЦП из командной строки
-description: Измеряйте производительность ЦП в приложении из командной строки.
+title: Измерение производительности из командной строки
+description: Измеряйте производительность ЦП и использование управляемой памяти в приложении из командной строки.
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972425"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558121"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Измерение производительности приложения из командной строки
 
@@ -74,7 +74,7 @@ ms.locfileid: "62972425"
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * Конфигурации CpuUsage (базовая/низкая/высокая), которые соответствуют данным, собранным для средства профилирования [загрузки ЦП](../profiling/cpu-usage.md).
-* Конфигурации DotNetObjectAlloc (базовая/низкая), которые соответствуют данным, собранным для [средства распределения объектов .NET](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling).
+* Конфигурации DotNetObjectAlloc (базовая/низкая), которые соответствуют данным, собранным для [средства распределения объектов .NET](../profiling/dotnet-alloc-tool.md).
 
 Базовая/низкая/высокая конфигурации означают частоту выборки. Например, "Низкая" означает 100 выборок в секунду, а "Высокая" — 4000 выборок в секунду.
 
