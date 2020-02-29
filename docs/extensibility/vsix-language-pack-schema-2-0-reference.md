@@ -11,12 +11,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: zorio
 author: zoeyr
 manager: jillfra
-ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739329"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169343"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме языкового пакета VSIX 2,0
 
@@ -24,11 +24,11 @@ ms.locfileid: "70739329"
 
 ## <a name="language-pack-schema"></a>Схема языкового пакета
 
-Корневой элемент файла языкового пакета имеет `<PackageLanguagePackManifest>` `Version`атрибут, являющийся версией формата языкового пакета. В этой статье описывается версия 2,0 языка языкового пакета, который указывается в манифесте путем присвоения `Version` атрибуту значения. `Version="2.0.0"` Корневой элемент содержит ровно один дочерний `<Metadata>` элемент.
+Корневой элемент файла языкового пакета — `<PackageLanguagePackManifest>`с атрибутом `Version`, который является версией формата языкового пакета. В этой статье описан формат языкового пакета 2,0, который указывается в манифесте путем присвоения атрибуту `Version` значения `Version="2.0.0"`. Корневой элемент содержит ровно один дочерний элемент `<Metadata>`.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Паккажелангуажепаккманифест, элемент
 
-`<PackageLanguagePackManifest>` В элементе должен существовать следующий элемент:
+В элементе `<PackageLanguagePackManifest>` должен существовать следующий элемент:
 
 |Заголовок|Описание|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ ms.locfileid: "70739329"
 
 ### <a name="metadata-element"></a>Элемент Metadata
 
-`<Metadata>` В элементе можно использовать следующие элементы:
+В элементе `<Metadata>` можно иметь следующие элементы:
 
 |Заголовок|Описание|
 |-----------|-----------------|
@@ -53,7 +53,7 @@ ms.locfileid: "70739329"
 <?xml version="1.0" encoding="utf-8"?>
 <PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <DisplayName>Arbol de Familia</LocalizedName>
+    <DisplayName>Arbol de Familia</DisplayName>
     <Description> Esta extensión pone control personalizado en la caja de herramientas por manejar información de familia.</Description>
     <MoreInfo> http://www.contoso.com/products/es/ArbolDeFamilia.htm</MoreInfo>
     <License>Eula.rtf</License>
@@ -63,7 +63,7 @@ ms.locfileid: "70739329"
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 |Заголовок|Описание|
 |-----------|-----------------|

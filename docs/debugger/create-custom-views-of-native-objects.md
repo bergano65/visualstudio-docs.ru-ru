@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091787"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167758"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Создание пользовательских представлений C++ объектов в отладчике с помощью платформы Natvis
 
@@ -94,6 +94,30 @@ Visual Studio предоставляет некоторые файлы *natvis* 
 >[!NOTE]
 >Правила Natvis, загруженные из файла *pdb* , применяются только к типам в модулях, на которые ссылается *pdb* -файл. Например, если *Module1. pdb* имеет элемент Natvis для типа с именем `Test`, он применяется только к классу `Test` в файле *Module1. dll*. Если другой модуль также определяет класс с именем `Test`, то элемент Natvis *. pdb* не применяется к нему.
 
+**Чтобы установить и зарегистрировать *natvis* -файл с помощью пакета VSIX, выполните следующие действия.**
+
+Пакет VSIX позволяет устанавливать и регистрировать *natvis* -файлы. Независимо от того, где они установлены, все зарегистрированные *natvis* файлы автоматически выбираются во время отладки.
+
+1. Включите *natvis* – файл в пакет VSIX. Например, для следующего файла проекта:
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+     <ItemGroup>
+       <VSIXSourceItem Include="Visualizer.natvis" />
+     </ItemGroup>
+   </Project>
+   ```
+
+2. Зарегистрируйте *natvis* в файле *source. extension. vsixmanifest* :
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+     <Assets>
+       <Asset Type="NativeVisualizer" Path="Visualizer.natvis"  />
+     </Assets>
+   </PackageManifest>
+   ```
+
 ### <a name="BKMK_natvis_location"></a>Расположение файлов Natvis
 
 Можно добавить *natvis* -файлы в каталог пользователя или в системный каталог, если они должны применяться к нескольким проектам.
@@ -104,19 +128,21 @@ Visual Studio предоставляет некоторые файлы *natvis* 
 
 2. Любые *natvis* -файлы, которые находятся в загруженном C++ проекте или решении верхнего уровня. Эта группа включает все загруженные C++ проекты, включая библиотеки классов, но не проекты на других языках.
 
+3. Все *natvis* -файлы, установленные и зарегистрированные с помощью пакета VSIX.
+
 ::: moniker range="vs-2017"
 
-3. Каталог Natvis конкретного пользователя (например, *%UserProfile%\Documents\Visual Studio 2017 \ визуализаторы*).
+4. Каталог Natvis конкретного пользователя (например, *%UserProfile%\Documents\Visual Studio 2017 \ визуализаторы*).
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. Каталог Natvis конкретного пользователя (например, *%UserProfile%\Documents\Visual Studio 2019 \ визуализаторы*).
+4. Каталог Natvis конкретного пользователя (например, *%UserProfile%\Documents\Visual Studio 2019 \ визуализаторы*).
 
 ::: moniker-end
 
-4. Каталог Natvis всей системы ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Этот каталог содержит файлы *natvis* , которые устанавливаются вместе с Visual Studio. При наличии разрешений администратора можно добавить файлы в этот каталог.
+5. Каталог Natvis всей системы ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Этот каталог содержит файлы *natvis* , которые устанавливаются вместе с Visual Studio. При наличии разрешений администратора можно добавить файлы в этот каталог.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Изменение natvis файлов во время отладки
 
@@ -670,7 +696,7 @@ Visual Studio предоставляет некоторые файлы *natvis* 
 
 - `ServiceId` - `Id` пара атрибутов определяет `UIVisualizer`. `ServiceId` является идентификатором GUID службы, предоставляемой пакетом визуализатора. `Id` — это уникальный идентификатор, отличающий визуализаторы, если служба предоставляет более одного. В предыдущем примере одна и та же служба визуализатора предоставляет два визуализатора.
 
-- Атрибут `MenuName` определяет имя визуализатора, которое будет отображаться в раскрывающемся списке рядом со значком лупы в отладчике. Пример:
+- Атрибут `MenuName` определяет имя визуализатора, которое будет отображаться в раскрывающемся списке рядом со значком лупы в отладчике. Например:
 
   ![Контекстное меню меню UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Контекстное меню UIVisualizer")
 
@@ -682,7 +708,7 @@ Visual Studio предоставляет некоторые файлы *natvis* 
 </Type>
 ```
 
- Вы можете увидеть пример `UIVisualizer` в расширении [просмотра изображения](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017) , используемом для просмотра растровых изображений в памяти.
+ Вы можете увидеть пример `UIVisualizer` в расширении [просмотра изображения](https://marketplace.visualstudio.com/search?term=%22Image%20Watch%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) , используемом для просмотра растровых изображений в памяти.
 
 ### <a name="BKMK_CustomVisualizer"></a>Элемент CustomVisualizer
  `CustomVisualizer` — это точка расширяемости, которая указывает расширение VSIX, которое вы пишете для управления визуализациями в Visual Studio Code. Дополнительные сведения о создании расширений VSIX см. в [пакете SDK для Visual Studio](../extensibility/visual-studio-sdk.md).

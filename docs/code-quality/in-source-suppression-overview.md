@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587450"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167628"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Подавлять предупреждения анализа кода
 
@@ -78,7 +78,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **Scope** — целевой объект, в котором предупреждение подавляется. Если целевой объект не указан, ему присваивается значение целевого объекта атрибута. В число поддерживаемых [областей](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) входят следующие.
 
-  - `module` — эта область подавляет предупреждения для сборки. Это глобальное подавление, которое применяется ко всему проекту.
+  - [`module`](#module-suppression-scope) — эта область подавляет предупреждения для сборки. Это глобальное подавление, которое применяется ко всему проекту.
 
   - `resource`-(только для[устаревших FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) ). Эта область подавляет предупреждения в диагностических сведениях, записываемых в файлы ресурсов, которые являются частью модуля (сборки). Эта область не считывается и не учитывается C#в компиляторах/VB для диагностики анализатора Roslyn, которая анализирует только исходные файлы.
 
@@ -174,9 +174,17 @@ public class Animal
 > [!NOTE]
 > `Target` всегда содержит полное имя элемента.
 
-## <a name="global-suppression-file"></a>Файл глобального подавления
+### <a name="global-suppression-file"></a>Файл глобального подавления
 
 В глобальном файле подавления хранятся подавленные подавления или подавления на глобальном уровне, не указывающие цель. Например, подавление для нарушений уровня сборки хранится в этом файле. Кроме того, некоторые подавления ASP.NET хранятся в этом файле, так как параметры уровня проекта недоступны для кода, который находится под формой. Файл глобального подавления создается и добавляется в проект при первом выборе параметра **в файле подавления проекта** команды **подавлять** в окне **Список ошибок** .
+
+### <a name="module-suppression-scope"></a>Область подавления модуля
+
+Нарушения качества кода для всей сборки можно отключить с помощью области **модуля** .
+
+Например, следующий атрибут в файле проекта _глобалсуппрессионс_ будет подавлять нарушение ConfigureAwait для проекта ASP.NET Core:
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
 
 ## <a name="see-also"></a>См. также:
 
