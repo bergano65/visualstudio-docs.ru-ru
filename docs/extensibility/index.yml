@@ -1,0 +1,78 @@
+### YamlMime:Landing
+title: Расширяемость Visual Studio
+summary: Сведения о расширяемости Visual Studio.
+metadata:
+  title: Расширяемость Visual Studio
+  description: Узнайте, как расширить Visual Studio.
+  ms.topic: landing-page
+  ms.date: 02/24/2020
+  author: madskristensen
+  ms.author: madsk
+  manager: jillfra
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.openlocfilehash: e37a713b133d76bbd3d0e3fa4363238d58407ce4
+  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77910864"
+landingContent:
+- title: Приступая к работе
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Установка пакета SDK для Visual Studio
+      url: /visualstudio/extensibility/installing-the-visual-studio-sdk/
+  - linkListType: overview
+    links:
+    - text: Создание расширений Visual Studio
+      url: https://devblogs.microsoft.com/visualstudio/getting-started-writing-visual-studio-extensions
+  - linkListType: tutorial
+    links:
+    - text: 'Создание первого расширения: Hello World'
+      url: /visualstudio/extensibility/extensibility-hello-world
+- title: Расширения
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Меню и команды
+      url: /visualstudio/extensibility/extending-menus-and-commands
+    - text: Окна инструментов
+      url: /visualstudio/extensibility/extending-and-customizing-tool-windows
+    - text: Редактор и языки
+      url: /visualstudio/extensibility/editor-and-language-service-extensions
+    - text: Протокол языкового сервера
+      url: /visualstudio/extensibility/language-server-protocol
+    - text: Настройки и параметры
+      url: /visualstudio/extensibility/extending-user-settings-and-options
+- title: Ресурсы
+  linkLists:
+  - linkListType: sample
+    links:
+    - text: Примеры расширяемости Visual Studio
+      url: https://github.com/Microsoft/VSSDK-Extensibility-Samples
+  - linkListType: learn
+    links:
+    - text: Сообщество ExtendVS Gitter
+      url: https://gitter.im/Microsoft/extendvs
+    - text: Расширяемость в Visual Studio (блог)
+      url: https://devblogs.microsoft.com/visualstudio/tag/extensions/
+- title: Отправка расширений
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Публикация расширения
+      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension
+    - text: Публикация из командной строки
+      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension-via-command-line
+    - text: Частные коллекции
+      url: https://devblogs.microsoft.com/visualstudio/create-a-private-gallery-for-self-hosted-visual-studio-extensions
+- title: Узнайте о новых возможностях
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Пакет SDK для Visual Studio 2019
+      url: /visualstudio/extensibility/whats-new-visual-studio-2019-sdk
+    - text: Пакет SDK для Visual Studio 2017
+      url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk
