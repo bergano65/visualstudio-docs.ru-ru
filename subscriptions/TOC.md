@@ -33,7 +33,7 @@
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
 #### [Разработчик Microsoft 365](vs-m365.md)
-#### [Подписка на Office 365](vs-office365.md)
+#### [Office 365 профессиональный плюс](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
