@@ -13,14 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b36c4eb63c503132aaf434c64249e4a5fdd3872
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250c73ce0395f278b72c18605f1666290670e20a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595258"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634114"
 ---
 # <a name="formatversion-task"></a>Задача FormatVersion
+
 Добавляет номер редакции к номеру версии.
 
 - Случай 1. Вход: Version=\<не определена>; Revision=\<неважно>; выходные данные: OutputVersion="1.0.0.0"
@@ -30,6 +31,7 @@ ms.locfileid: "75595258"
 - Случай 3. Вход: Version="1.0.0.0"  Revision=\<неважно>; выходные данные: OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `FormatVersion` .
 
 |Параметр|Описание|
@@ -40,8 +42,10 @@ ms.locfileid: "75595258"
 |`Version`|Необязательный параметр `String`.<br /><br /> Указывает строку номера версии для форматирования.|
 
 ## <a name="remarks"></a>Примечания
+
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

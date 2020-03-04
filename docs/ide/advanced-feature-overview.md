@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591740"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235203"
 ---
 # <a name="features-of-visual-studio"></a>Возможности Visual Studio
 
@@ -84,13 +84,13 @@ Visual Studio предлагает набор инструментов, позв
 
 - Создавайте игры в форматах 2D и 3D на C# с помощью [средств Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Создавайте собственные приложения C++ для устройств iOS, Android и Windows. Предоставляйте доступ к общему коду в библиотеках, созданных для iOS, Android и Windows, с помощью [C++ для кроссплатформенной разработки](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Создавайте собственные приложения C++ для устройств iOS, Android и Windows. Предоставляйте доступ к общему коду в библиотеках, созданных для iOS, Android и Windows, с помощью [C++ для кроссплатформенной разработки](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
 - Выполняйте развертывание, тестирование и отладку приложений Android с помощью [эмулятора Android](../cross-platform/visual-studio-emulator-for-android.md).
 
 ## <a name="connect-to-databases"></a>Подключение к базам данных
 
-**Обозреватель сервера** позволяет просматривать и использовать экземпляры и ресурсы SQL Server в локальной или удаленной среде, в Azure, Salesforce.com, Office 365 и на веб-сайтах. Чтобы открыть **Обозреватель сервера**, в главном меню выберите **Вид** > **Обозреватель сервера**. Дополнительные сведения об использовании обозревателя серверов см. в статье [Добавление новых подключений](../data-tools/add-new-connections.md).
+**Обозреватель сервера** позволяет просматривать экземпляры и ресурсы SQL Server в локальной или удаленной среде, в Azure, Salesforce.com, Office 365 и на веб-сайтах, а также управлять ими. Чтобы открыть **обозреватель серверов**, выберите в главном меню **Вид** > **Обозреватель серверов**. Дополнительные сведения об использовании обозревателя серверов см. в статье [Добавление новых подключений](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) — это мощная среда разработки для SQL Server, базы данных SQL Azure и хранилища данных SQL Azure. С помощью SSDT вы можете создавать и обслуживать базы данных, а также выполнять их отладку и рефакторинг. Можно работать с проектом базы данных или напрямую с подключенным экземпляром базы данных (локально или удаленно).
 

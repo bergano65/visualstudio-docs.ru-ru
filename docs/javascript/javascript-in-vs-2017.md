@@ -12,13 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888660"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234960"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
@@ -261,7 +260,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 Поскольку новая языковая служба основана на статическом анализе, а не на механизме выполнения (сведения о различиях см. в [этой статье](https://github.com/Microsoft/TypeScript/issues/4789)), некоторые шаблоны JavaScript больше не могут быть обнаружены.
 Наиболее распространенным является шаблон "expando".
 Сейчас языковая служба не предоставляет данные IntelliSense по объектам, к которым приписываются свойства после объявления.
-Например:
+Пример:
 
 ```js
 var obj = {};

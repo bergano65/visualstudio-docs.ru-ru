@@ -22,17 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578486"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632918"
 ---
 # <a name="rc-task"></a>RC - задача
+
 Является оболочкой для средства компиляции ресурсов Microsoft Windows *rc.exe*. Задача **RC** компилирует ресурсы, такие как курсоры, значки, растровые изображения, диалоговые окна и шрифты, в файл ресурсов (*RES*). Дополнительные сведения см. в статье [Resource Compiler](/windows/desktop/menurc/resource-compiler) (Компилятор ресурсов).
 
 ## <a name="parameters"></a>Параметры
+
  В представленной ниже таблице приводятся параметры задачи RC. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
 |Параметр|Описание|
@@ -51,4 +53,5 @@ ms.locfileid: "77578486"
 |**UndefinePreprocessorDefinitions**|Отменяет определение символа препроцессора.<br /><br /> Дополнительные сведения см. в описании параметра **/u** в разделе, посвященном [использованию компилятора ресурсов (командной строки RC)](/windows/win32/menurc/using-rc-the-rc-command-line-). См. также описание параметра **PreprocessorDefinitions** в этой таблице.|
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

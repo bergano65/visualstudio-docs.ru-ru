@@ -1,7 +1,7 @@
 ---
 title: Создание пользовательских представлений для объектов C++
 description: Использование платформы Natvis для настройки способа отображения собственных типов в отладчике в Visual Studio
-ms.date: 10/31/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 064761d87b9aa851e40cf906e7734a3578dcad1a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167758"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234973"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Создание пользовательских представлений C++ объектов в отладчике с помощью платформы Natvis
 
@@ -537,7 +537,10 @@ Visual Studio предоставляет некоторые файлы *natvis* 
 `ValueNode` можно оставить пустым или использовать `this` для ссылки на сам узел `LinkedListItems`.
 
 #### <a name="customlistitems-expansion"></a>Расширение LinkedListItems
+
 Расширение `CustomListItems` позволяет записывать настраиваемую логику для обхода структуры данных, например хэш-таблицы. Используйте `CustomListItems` для визуализации структур данных, которые могут использовать C++ выражения для всех элементов, которые необходимо оценить, но не определение для `ArrayItems`, `IndexListItems`или `LinkedListItems`.
+
+`Exec` можно использовать для выполнения кода внутри `CustomListItems` расширения с помощью переменных и объектов, определенных в расширении. С помощью `Exec`можно использовать логические операторы, арифметические операторы и операторы присваивания. Нельзя использовать `Exec` для оценки функций, за исключением [встроенных функций отладчика](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) , поддерживаемых C++ средством оценки выражений.
 
 Следующий визуализатор для `CAtlMap` — отличный пример, где подходит `CustomListItems`.
 
@@ -569,24 +572,6 @@ Visual Studio предоставляет некоторые файлы *natvis* 
     </Expand>
 </Type>
 ```
-
-`Exec` можно использовать для выполнения кода внутри `CustomListItems` расширения с помощью переменных и объектов, определенных в расширении. С помощью `Exec`можно использовать логические операторы, арифметические операторы и операторы присваивания. Для вычисления функций нельзя использовать `Exec`.
-
-`CustomListItems` поддерживает следующие встроенные функции:
-
-- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
-- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, `DynamicMemberLookup`, `DecodePointer`, `DynamicCast`
-- `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
-- `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)`
-- `ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `Stdext_HashMap_Int_OperatorBracket_idx`
-- `Std_UnorderedMap_Int_OperatorBracket_idx`
-- `TreeTraverse_Init // Initializes a new tree traversal`
-- `TreeTraverse_Next // Returns nodes in a tree`
-- `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> Расширение TreeItems
  Если визуализированный тип представляет дерево, отладчик может пройти дерево отображать его дочерние элементы с помощью узла `TreeItems` . Ниже приведена визуализация для типа `std::map` с помощью `TreeItems` узла:
@@ -696,7 +681,7 @@ Visual Studio предоставляет некоторые файлы *natvis* 
 
 - `ServiceId` - `Id` пара атрибутов определяет `UIVisualizer`. `ServiceId` является идентификатором GUID службы, предоставляемой пакетом визуализатора. `Id` — это уникальный идентификатор, отличающий визуализаторы, если служба предоставляет более одного. В предыдущем примере одна и та же служба визуализатора предоставляет два визуализатора.
 
-- Атрибут `MenuName` определяет имя визуализатора, которое будет отображаться в раскрывающемся списке рядом со значком лупы в отладчике. Например:
+- Атрибут `MenuName` определяет имя визуализатора, которое будет отображаться в раскрывающемся списке рядом со значком лупы в отладчике. Пример:
 
   ![Контекстное меню меню UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Контекстное меню UIVisualizer")
 

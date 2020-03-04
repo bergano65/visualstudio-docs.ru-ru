@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578539"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633594"
 ---
 # <a name="lib-task"></a>LIB - задача
+
 Заключает в оболочку 32-разрядный диспетчер библиотек Майкрософт *lib.exe*. Диспетчер библиотек создает библиотеку объектных файлов в формате COFF и управляет ею. Диспетчер библиотек также может создавать файлы экспорта и импортировать библиотеки в экспортированные справочные определения. Дополнительные сведения см. в разделах [Справочник по LIB](/cpp/build/reference/lib-reference) и [Запуск программы LIB](/cpp/build/reference/running-lib).
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи **LIB**. Большинство параметров задач соответствуют параметрам командной строки.
 
 |Параметр|Описание|
@@ -66,4 +68,5 @@ ms.locfileid: "77578539"
 |**Verbose**|Необязательный параметр **Boolean** .<br /><br /> Если указано значение `true`, то отображаются сведения о ходе выполнения сеанса, включая имена добавляемых *OBJ*-файлов. Эти сведения отправляются в стандартный вывод и могут быть перенаправлены в файл.<br /><br /> Дополнительные сведения см. в описании параметра **/VERBOSE** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

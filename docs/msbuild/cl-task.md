@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c45f22011c32378af0690c9aee226877faf903bd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593360"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634465"
 ---
 # <a name="cl-task"></a>CL - задача
+
 Создает программу-оболочку для компилятора Microsoft C++ *cl.exe*. Компилятор создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).
 
 ## <a name="parameters"></a>Параметры
+
  В следующем списке приводятся параметры задачи **CL**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
 - **AdditionalIncludeDirectories**
@@ -801,4 +803,5 @@ ms.locfileid: "75593360"
    Дополнительные сведения см. в описании параметров **TLogReadFiles** и **TLogWriteFiles** в этой таблице.
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

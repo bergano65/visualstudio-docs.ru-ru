@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590479"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634257"
 ---
 # <a name="downloadfile-task"></a>Задача DownloadFile
+
 Загружает указанные файлы, используя протокол HTTP.
 
 >[!NOTE]
 >Задача DownloadFile доступна только в MSBuild 15.8 и более поздних версий.
 
 ## <a name="parameters"></a>Параметры
+
 В следующей таблице приводятся параметры задачи `DownloadFile` .
 
 |Параметр|Описание|
@@ -49,9 +51,11 @@ ms.locfileid: "75590479"
 |`SourceUrl`|Обязательный параметр `String` .<br /><br /> Указывает URL-адрес для загрузки.|
 
 ## <a name="remarks"></a>Примечания
+
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
 В следующем примере файл загружается и включается в элементы `Content` до сборки проекта.
 
 ```xml
@@ -73,5 +77,6 @@ ms.locfileid: "75590479"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892144"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706402"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Практическое руководство. вставку XML-комментариев для создания документации
 
@@ -50,7 +50,7 @@ Visual Studio может помочь вам документировать эл
 
 Стили можно использовать в комментариях XML, которые будут отображаться в виде кратких сведений при наведении указателя мыши на элемент. К этим стилям относятся курсив, полужирный шрифт, маркеры и ссылка, доступная для щелчка.
 
-   ![Ввод комментариев](media/doc-styles-cs.png) 
+   ![Ввод комментариев](media/doc-style-cs.png) 
 
 > [!NOTE]
 > Существует [параметр](../../ide/reference/options-text-editor-csharp-advanced.md) для переключения комментариев XML-документации после ввода `///` в C# или `'''` Visual Basic. В строке меню выберите **Сервис** > **Параметры**, чтобы открыть диалоговое окно **Параметры**. Перейдите в раздел **Текстовый редактор** > **C#** или **Basic** > **Дополнительно**. В разделе **Справка редактора** найдите параметр **Создавать комментарии XML-документации**.

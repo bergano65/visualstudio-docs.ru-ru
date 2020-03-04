@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93bbd0ab4ce0d27a270f3672e55173a1488e5910
-ms.sourcegitcommit: f28172c78745d14570e733db5d424f5fae98d139
+ms.openlocfilehash: 6e9320525d770344f131d9e3f04b357de43b5e73
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606662"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633100"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Общеизвестные метаданные элементов MSBuild
+
 В следующей таблице описаны метаданные, которые назначаются каждому элементу при его создании. В каждом примере для включения в проект файла *C:\MyProject\Source\Program.cs* используется следующее объявление элемента.
 
 ```xml
@@ -47,6 +48,7 @@ ms.locfileid: "75606662"
 |%(AccessedTime)|Содержит метку времени, соответствующую времени последнего доступа к элементу.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
 ## <a name="see-also"></a>См. также
+
 - [Элементы](../msbuild/msbuild-items.md)
 - [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

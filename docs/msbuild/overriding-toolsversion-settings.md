@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1706d0e82139da5962fbb43610cdecd6b1477ad1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590492"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633022"
 ---
 # <a name="override-toolsversion-settings"></a>Переопределение параметров ToolsVersion
+
 Набор инструментов для проектов и решений можно изменить одним из трех способов.
 
 1. Используя параметр `-ToolsVersion` (или сокращенно `-tv`) при сборке проекта или решения из командной строки.
@@ -28,6 +29,7 @@ ms.locfileid: "75590492"
 3. Задав свойство `$(ProjectToolsVersion)` для проекта в решении. Это позволяет собирать проект в решении с версией набора инструментов, отличающейся от используемой в других проектах.
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Переопределение параметров ToolsVersion для проектов и решений, собираемых из командной строки
+
  Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `-ToolsVersion` (или `-tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Пример:
 
 ```cmd
@@ -39,6 +41,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
  Если в командной строке используется параметр `-tv`, можно в отдельных проектах использовать дополнительно свойство `$(ProjectToolsVersion)`, чтобы создать их с другим значением ToolsVersion по сравнению с остальными проектами в решении.
 
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Переопределение параметров ToolsVersion с помощью параметра ToolsVersion в задаче MSBuild
+
  Задача MSBuild — основное средство для создания одного проекта из другого. Чтобы в задаче MSBuild можно было создать проект со значением ToolsVersion, отличающимся от значения, заданного в проекте, предоставляется дополнительный параметр задачи с именем `ToolsVersion`. В следующем примере демонстрируется применение этого параметра.
 
 1. Создайте файл с именем *projectA.proj* и добавьте в него следующий код:
@@ -95,6 +98,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     ```
 
 ## <a name="order-of-precedence"></a>Порядок приоритетов
+
  В следующем списке показан порядок приоритетов от самого высокого до самого низкого: `ToolsVersion`
 
 1. Атрибут `ToolsVersion` в задаче MSBuild, используемой для сборки проекта (если имеется).
@@ -124,6 +128,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     4. В противном случае используйте текущий параметр `ToolsVersion`.
 
 ## <a name="see-also"></a>См. также
+
 - [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
 - [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

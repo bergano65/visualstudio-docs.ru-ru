@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593854"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633191"
 ---
 # <a name="msbuild-targets"></a>Целевые объекты MSBuild
 
@@ -105,6 +105,7 @@ Reference: 4.0
  Если все выходные элементы актуальны, MSBuild пропускает этот целевой объект, что значительно ускоряет сборку. Это называется инкрементной сборкой целевого объекта. Если актуальны лишь некоторые файлы, MSBuild выполняет целевой объект без актуальных элементов. Это называется частичной инкрементной сборкой целевого объекта. Дополнительные сведения см. в разделе [Добавочные сборки](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Целевые объекты сборки по умолчанию
+
 Ниже перечислены общедоступные целевые объекты в Microsoft.Common.CurrentVersion.targets.
 
 ```

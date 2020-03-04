@@ -26,17 +26,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592156"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633477"
 ---
 # <a name="midl-task"></a>MIDL - задача
+
 Является оболочкой для компилятора с языка MIDL (*midl.exe*). Дополнительные сведения см. в разделе [Справочник по командной строке языка MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 ## <a name="parameters"></a>Параметры
+
  Ниже приводятся параметры задачи **MIDL**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
 - **AdditionalIncludeDirectories**
@@ -416,4 +418,5 @@ ms.locfileid: "75592156"
      Дополнительные сведения см. в описании параметра **/W** в [Справочнике по командной строке языка MIDL](/windows/desktop/Midl/midl-command-line-reference). См. также описание параметра **WarnAsError** в этой таблице.
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

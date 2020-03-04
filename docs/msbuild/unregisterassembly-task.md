@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22be291184ebf02ae0455f5b4656b1dec976dc89
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578286"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631501"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly - задача
+
 Отменяет регистрацию указанных сборок для целей COM-взаимодействия. Эта задача противоположна [задаче RegisterAssembly](../msbuild/registerassembly-task.md).
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `UnregisterAssembly` .
 
 |Параметр|Описание|
@@ -38,11 +40,13 @@ ms.locfileid: "77578286"
 |`TypeLibFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Отменяет регистрацию библиотеки заданного типа в указанной сборке. **Примечание.**  Этот параметр является обязательным только в том случае, если имя файла библиотеки типов отличается от имени сборки.|
 
 ## <a name="remarks"></a>Примечания
+
  Для успешного выполнения задачи не требуется, чтобы существовала указанная сборка. Если вы попытаетесь отменить регистрацию несуществующей сборки, задача завершится успешно с предупреждением. Такая логика объясняется тем, что целью этой задачи является удаление регистрации сборки из реестра. Если сборка не существует, то в реестре нет информации о ней, следовательно, задача выполнена успешно.
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension>, который, в свою очередь, наследует от класса <xref:System.MarshalByRefObject>. Класс `MarshalByRefObject` предоставляет те же возможности, что и класс <xref:Microsoft.Build.Utilities.Task>, но его экземпляр можно создать в собственном домене приложения.
 
 ## <a name="example"></a>Пример
+
  В следующем примере задача `UnregisterAssembly` отменяет регистрацию сборки, расположенной по пути, указанному в свойствах `OutputPath` и `FileName`, если такая сборка существует.
 
 ```xml
@@ -61,6 +65,7 @@ ms.locfileid: "77578286"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задача RegisterAssembly](../msbuild/registerassembly-task.md)
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -30,17 +30,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592208"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633581"
 ---
 # <a name="link-task"></a>Связывание задачи
+
 Создает оболочку для компоновщика Microsoft C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Параметры
+
  Ниже приводятся параметры задачи **Link**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
 - **AdditionalDependencies**
@@ -924,4 +926,5 @@ ms.locfileid: "75592208"
   Дополнительные сведения см. в разделе [/VERSION (сведения о версии)](/cpp/build/reference/version-version-information).
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

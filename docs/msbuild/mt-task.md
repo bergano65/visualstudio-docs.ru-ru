@@ -24,17 +24,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595034"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633061"
 ---
 # <a name="mt-task"></a>MT - задача
+
 Создает программу-оболочку для инструмента манифеста Майкрософт *(mt.exe)* . Дополнительные сведения см. в разделе [Mt.exe](/windows/desktop/SbsCs/mt-exe).
 
 ## <a name="parameters"></a>Параметры
+
  В представленной ниже таблице приводятся параметры задачи **MT**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
 > [!NOTE]
@@ -69,4 +71,5 @@ ms.locfileid: "75595034"
 |**VerboseOutput**|Необязательный параметр `Boolean`.<br /><br /> Если имеет значение `true`, выводятся подробные сведения об отладке.<br /><br /> Дополнительные сведения см. в описании параметра **/verbose** в разделе [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

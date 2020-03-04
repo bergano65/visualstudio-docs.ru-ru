@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594804"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634062"
 ---
 # <a name="generateresource-task"></a>GenerateResource - задача
+
 Преобразовывает файлы формата *TXT* и *RESX* (файлы ресурсов на основе XML) и двоичные *RESOURCES*-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата *TXT* и *RESX* в *RESOURCES*-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
 ## <a name="parameters"></a>Параметры
+
 В следующей таблице приводятся параметры задачи `GenerateResource` .
 
 |Параметр|Описание|
@@ -61,6 +63,7 @@ ms.locfileid: "75594804"
 |`UseSourcePath`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, задается каталог входного файла, который должен использоваться для разрешения относительных путей к файлам.|
 
 ## <a name="remarks"></a>Примечания
+
 Так как *RESX*-файлы могут содержать ссылки на другие файлы ресурсов, недостаточно просто сравнивать метки времени файлов с расширением *RESX* и *RESOURCE*, чтобы узнать, обновлены ли выходные данные. Вместо этого задача `GenerateResource` следует ссылкам *RESX*-файлов и проверяет метки времени связанных файлов. Это значит, что атрибуты `Inputs` и `Outputs` не следует использовать в целевом объекте, содержащем задачу `GenerateResource`, так как это может вызвать пропуск при запуске.
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
@@ -68,6 +71,7 @@ ms.locfileid: "75594804"
 При использовании MSBuild 4.0 для проектов .NET 3.5 в ресурсах x86 может произойти ошибка сборки. Чтобы избежать этой проблемы, можно создать целевой объект, например сборку AnyCPU.
 
 ## <a name="example"></a>Пример
+
 В следующем примере используется задача `GenerateResource` для создания *RECOURCES*-файлов из файлов, определенных коллекцией элементов `Resx`.
 
 ```xml
@@ -95,5 +99,6 @@ ms.locfileid: "75594804"
 Без метаданных \<LogicalName> ресурс будет называться *myAssembly.myResource.resources*.  Этот пример применяется только к процессу сборки Visual Basic и Visual C#.
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b02108e2ee47a31ced196643bf917b3b63c1c6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594907"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631514"
 ---
 # <a name="unzip-task"></a>Задача Unzip
+
 Распаковывает *ZIP-архив* в заданное расположение.
 
 >[!NOTE]
 >Задача `Unzip` доступна только в MSBuild 15.8 и более поздних версий.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `Unzip` .
 
 |Параметр|Описание|
@@ -46,9 +48,11 @@ ms.locfileid: "75594907"
 |`SourceFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает один или несколько распаковываемых файлов. При указании нескольких файлов они распаковываются по очереди одну папку.|
 
 ## <a name="remarks"></a>Примечания
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
  В следующем примере распаковывается архив и перезаписываются файлы только для чтения.
 
 ```xml
@@ -66,5 +70,6 @@ ms.locfileid: "75594907"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

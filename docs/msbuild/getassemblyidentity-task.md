@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aaa963da3f17265da6ebeaed4d30cfe75aa533c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593269"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634023"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity - задача
+
 Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.
 
 ## <a name="task-parameters"></a>Параметры задачи
+
 В следующей таблице приводятся параметры задачи `GetAssemblyIdentity` .
 
 |Параметр|Описание|
@@ -37,11 +39,13 @@ ms.locfileid: "75593269"
 |`AssemblyFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы, из которых требуется извлечь идентификаторы.|
 
 ## <a name="remarks"></a>Примечания
+
 Элементы, выводимые параметром `Assemblies`, содержат записи метаданных элементов с именем `Version`, `PublicKeyToken` и `Culture`.
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
 Следующий пример извлекает идентификатор файлов, указанных в элементе `MyAssemblies`, и выводит их в элемент `MyAssemblyIdentities`.
 
 ```xml
@@ -58,5 +62,6 @@ ms.locfileid: "75593269"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

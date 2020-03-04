@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb95da599e6362ad32c0ef94dcf9c184269ddedf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278401"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633412"
 ---
 # <a name="msbuild-command-line-reference"></a>Справочник по командной строке MSBuild
 
@@ -85,6 +85,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noConsoleLogger|-noconlog|Отключить средство ведения журнала консоли по умолчанию и не записывать события на консоль.|
 
 ## <a name="example"></a>Пример
+
  В следующем примере создается целевой объект `rebuild` проекта *MyProject.proj*.
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>Пример
+
  Файл *MSBuild.exe* можно использовать для выполнения более сложных сборок. Например, можно использовать его для создания конкретных целевых объектов определенных проектов в решении. В следующем примере повторно создается проект `NotInSolutionFolder` и удаляется проект `InSolutionFolder`, который находится в папке решения *Новая_папка*.
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
 - [Общие свойства проектов MSBuild](../msbuild/common-msbuild-project-properties.md)

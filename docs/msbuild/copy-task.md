@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558166"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634374"
 ---
 # <a name="copy-task"></a>Copy - задача
+
 Копирование файлов в новое расположение в файловой системе.
 
 ## <a name="parameters"></a>Параметры
+
 В следующей таблице приводятся параметры задачи `Copy` .
 
 |Параметр|Описание|
@@ -47,6 +49,7 @@ ms.locfileid: "77558166"
 |`UseHardlinksIfPossible`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, создает жесткие ссылки для скопированных файлов вместо того, чтобы копировать файлы.|
 
 ## <a name="warnings"></a>Предупреждения
+
 Регистрируются следующие предупреждения.
 
 - `Copy.DestinationIsDirectory`
@@ -66,11 +69,13 @@ ms.locfileid: "77558166"
 - `Copy.RemovingReadOnlyAttribute`
 
 ## <a name="remarks"></a>Примечания
+
 Можно указать либо параметр `DestinationFolder`, либо `DestinationFiles`, но не оба одновременно. В противном случае задача прерывает работу и в журнале регистрируется ошибка.
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
 В следующем примере кода выполняется копирование элементов из коллекции `MySourceFiles` в папку *c:\MyProject\Destination*.
 
 ```xml
@@ -91,6 +96,7 @@ ms.locfileid: "77558166"
 ```
 
 ## <a name="example"></a>Пример
+
 В следующем примере кода демонстрируется использование рекурсивного копирования. В этом проекте выполняется рекурсивное копирование всех файлов из папки *c:\MySourceTree* в папку *c:\MyDestinationTree* с сохранением структуры каталогов.
 
 ```xml
@@ -111,5 +117,6 @@ ms.locfileid: "77558166"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

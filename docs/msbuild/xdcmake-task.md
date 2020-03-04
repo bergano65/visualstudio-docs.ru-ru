@@ -19,22 +19,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578118"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630656"
 ---
 # <a name="xdcmake-task"></a>XDCMake - задача
+
 Является оболочкой для средства XML-документации (*xdcmake.exe*), которая помещает в XML-файл файлы комментариев (*XDC-файлы*) для файла *XML*.
 
  Файл *XDC* создается при добавлении комментариев к документации в исходный код C++ и выполнении компиляции с использованием параметра компиляции [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Дополнительные сведения см. в разделах [Справочник по XDCMake](/cpp/build/reference/xdcmake-reference), [Страницы свойств средства создания XML-документов](/cpp/build/reference/xml-document-generator-tool-property-pages), а также в разделе справки, вызываемом с помощью параметра командной строки ( **/?** ) для файла *xdcmake.exe*.
 
 ## <a name="remarks"></a>Примечания
+
  По умолчанию средство *xdcmake.exe* поддерживает несколько параметров командной строки. Для поддержки дополнительных параметров необходимо указать параметр командной строки **/old**.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице описываются параметры задачи **XDCMake**.
 
 |Параметр|Описание|
@@ -50,4 +53,5 @@ ms.locfileid: "77578118"
 |**TrackerLogDirectory**|Необязательный параметр типа **String**.<br /><br /> Задает каталог для журнала отслеживания.|
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

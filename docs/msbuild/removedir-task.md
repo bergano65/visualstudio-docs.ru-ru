@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0827e05b2c295df2922c5f58d6a47d52e9a50e3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595999"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632801"
 ---
 # <a name="removedir-task"></a>RemoveDir - задача
+
 Удаляет указанные каталоги и все содержащиеся в них файлы и подкаталоги.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `RemoveDir` .
 
 |Параметр|Описание|
@@ -37,9 +39,11 @@ ms.locfileid: "75595999"
 |`RemovedDirectories`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит каталоги, которые были успешно удалены.|
 
 ## <a name="remarks"></a>Примечания
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
  Следующий пример удаляет каталоги, указанные в свойствах `OutputDirectory` и `DebugDirectory`. Эти пути указываются относительно каталога проекта.
 
 ```xml
@@ -59,5 +63,6 @@ ms.locfileid: "75595999"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091825"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633724"
 ---
 # <a name="incremental-builds"></a>Добавочные сборки
 
@@ -79,4 +79,5 @@ MSBuild сравнивает атрибуты `Inputs` и `Outputs` целево
 Этот код создает свойство CompileRan и присваивает ему значение `true`, но только в случае выполнения целевого объекта. В случае пропуска целевого объекта свойство CompileRan не создается.
 
 ## <a name="see-also"></a>См. также
+
 - [Целевые объекты](../msbuild/msbuild-targets.md)

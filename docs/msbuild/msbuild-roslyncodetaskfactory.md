@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585903"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633230"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Встроенные задачи MSBuild с RoslynCodeTaskFactory
+
 Аналогично [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory использует кроссплатформенные компиляторы Roslyn для создания сборок задач в памяти, используемых в качестве встроенных задач.  Задачи RoslynCodeTaskFactory ориентированы на .NET Standard и могут работать в средах выполнения .NET Framework и .NET Core, а также на других платформах, таких как Linux и Mac OS.
 
 >[!NOTE]
 >RoslynCodeTaskFactory есть в MSBuild начиная с версии 15.8.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Структура встроенной задачи с RoslynCodeTaskFactory
+
  Встроенные задачи RoslynCodeTaskFactory объявляются так же, как [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md). Единственное отличие заключается в том, что они ориентированы на .NET Standard.  Встроенная задача и содержащий ее элемент `UsingTask` обычно включены в *TARGETS*-файл и при необходимости импортируются в другие файлы проекта. Ниже представлен пример обычной встроенной задачи. Обратите внимание, что в нем не предусмотрено выполнение каких-либо действий.
 
 ```xml
@@ -68,6 +70,7 @@ ms.locfileid: "75585903"
 > Элементы, содержащиеся в элементе `Task`, характерны для фабрики задачи, в этом случае для фабрики кода задачи.
 
 ### <a name="code-element"></a>Code, элемент
+
 Последний дочерний элемент в элементе `Task` — `Code`. Элемент `Code` содержит код, который нужно скомпилировать в задачу, или определяет его местонахождение. Содержимое в элементе `Code` зависит от того, каким образом вы хотите написать задачу.
 
 Атрибут `Language` указывает язык, на котором написан код. Допустимые значения: `cs` для C# и `vb` для Visual Basic.
@@ -88,6 +91,7 @@ ms.locfileid: "75585903"
 > При определении класса задачи в исходном файле имя класса должно быть согласовано с атрибутом `TaskName` соответствующего элемента [UsingTask](../msbuild/usingtask-element-msbuild.md).
 
 ## <a name="hello-world"></a>Hello World
+
  Здесь приведена более сложная встроенная задача с RoslynCodeTaskFactory. Задача HelloWorld отображает приветствие "Hello, world!". Оно отображается на устройстве регистрации ошибок по умолчанию. Как правило, это системная консоль или окно **вывода** Visual Studio. В примере элемент `Reference` используется просто для наглядности.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Входные и выходные параметры
+
  Параметры встроенной задачи являются дочерними элементами элемента `ParameterGroup`. Каждый параметр принимает имя элемента, который его определяет. Код, представленный ниже, определяет параметр `Text`.
 
 ```xml
@@ -162,6 +167,7 @@ Log.LogError("Hello, world!");
 Если в элементе `Code` значением атрибута `Type` является `Fragment` или `Method`, тогда свойства для каждого параметра создаются автоматически. В противном случае свойства следует явно объявить в исходном коде задачи. Кроме того, они должны в точности соответствовать определениям своих параметров.
 
 ## <a name="example"></a>Пример
+
  Следующая встроенная задача регистрирует некоторые сообщения и возвращает строку.
 
 ```xml
@@ -254,5 +260,6 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Пошаговое руководство: Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)
