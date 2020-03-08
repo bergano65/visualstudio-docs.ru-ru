@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593516"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409016"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Новые возможности разработки в Visual Studio 2017
 
@@ -30,7 +30,7 @@ ms.locfileid: "75593516"
 
 Процесс создания изменений изменился, чтобы проверка зависимостей стала более доступной и более удобной. Терминология изменена с "Схема слоев" на "Схема зависимостей".
 
-**Архитектура** меню теперь содержит команду, чтобы напрямую создать схему зависимостей:
+Меню **архитектура** теперь содержит команду для непосредственного создания схемы зависимостей.
 
 ![Элемент динамических зависимостей в меню «архитектура»](media/dep-validation-whatsnew-02.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "75593516"
 
 Вы сразу же увидите влияние изменений в результатах анализа для текущего кода в решении при каждом сохранении диаграммы. Не нужно ждать завершения команды **проверить зависимости** .
 
-Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Дополнительные сведения см. в [этой записи блога](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Будут удалены конструкторов UML
 
@@ -61,17 +61,17 @@ ms.locfileid: "75593516"
 
 Если вы являетесь пользователем значительные конструкторов UML, можно продолжать использовать Visual Studio 2015 или более ранних версий, хотя необходимо выбрать средство для ваших потребностей UML.
 
-Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Дополнительные сведения см. в [этой записи блога](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Поддержка выпуска для инструментов моделирования и архитектуры
+## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a>Поддержка <a name="VersionSupport" />Edition для инструментов архитектуры и моделирования
 
 Visual Studio доступна в нескольких выпусках. Не все они обеспечивают поддержку для инструментов моделирования и архитектуры. Следующая таблица содержит сведения о доступности каждого средства.
 
-|**Возможность**|**Выпуск Enterprise edition**|**Профессиональный выпуск**|**Community edition**|
+|**Компонент**|**Выпуск Enterprise**|**Профессиональный выпуск**|**Выпуск Community**|
 |-|-|-|-|
 |**Карты кода**|Да|Только поддерживает чтение карт кода, фильтрация код сопоставляет, добавление новых универсальных узлов и создание направленных графов из выделенной области.|-|
 |**Схемы зависимостей**|Да|Поддерживает только чтение схем зависимостей.|Поддерживает только чтение схем зависимостей.|
 |**Направленные графы** (схемы DGML)|Да|Да|Да|
-|**Клонирование кода**|Да|-|-|
+|**Клон кода**|Да|-|-|

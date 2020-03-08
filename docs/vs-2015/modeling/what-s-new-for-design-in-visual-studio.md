@@ -14,11 +14,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659244"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408353"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Новые возможности разработки в Visual Studio в Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ ms.locfileid: "72659244"
 
 ## <a name="VersionSupport"></a>Поддержка выпуска для средств моделирования и архитектуры
 
-Visual Studio 2015 доступна в нескольких выпусках. Не все из них обеспечивают поддержку для средств архитектуры и моделирования. Следующая таблица содержит сведения о доступности каждого средства.
+Visual Studio 2015 доступна в нескольких выпусках. Не все они обеспечивают поддержку для инструментов моделирования и архитектуры. Следующая таблица содержит сведения о доступности каждого средства.
 
-|**Возможность**|**Компании**|**Professional**|**Community**|**Ражающий**|
+|**Компонент**|**Enterprise**|**Professional**|**Сообщество**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**Карты кода**|Да|Поддерживает только чтение и фильтрацию карт кода, добавление новых универсальных узлов и создание нового направленного графа из выбранного фрагмента.|-|-|
 |**Схемы классов UML**|Да|-|-|-|
