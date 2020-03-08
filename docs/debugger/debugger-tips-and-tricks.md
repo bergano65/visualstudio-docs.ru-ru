@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188616"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409334"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Ознакомьтесь с советами и приемами работы с отладчиком в Visual Studio
 
@@ -145,11 +145,11 @@ ms.locfileid: "73188616"
 
 В приложениях UWP можно анализировать сетевые операции, выполняемые с помощью `Windows.Web.Http` API. Это средство можно использовать для отладки веб-служб и сетевых ресурсов. Чтобы использовать средство, выберите **отладка > профилировщик производительности**. Выберите **сеть**, а затем нажмите кнопку **запустить**. В приложении выполните нужные действия, где используется `Windows.Web.Http`, а затем щелкните **Остановка сбора**, чтобы создать отчет.
 
-![Средство профилирования использования сети](../profiling/media/prof-tour-network-usage.png "нетворкусажепрофтул")
+![Средство профилирования — использование сети](../profiling/media/prof-tour-network-usage.png "нетворкусажепрофтул")
 
 Выберите операцию в представлении "Сводка", чтобы просмотреть более подробные сведения.
 
-![Подробные сведения о средстве использования сети](../profiling/media/prof-tour-network-usage-details.png "детаиледвиевнетворкусаже")
+![Подробные сведения в средстве использования сети](../profiling/media/prof-tour-network-usage-details.png "детаиледвиевнетворкусаже")
 
 Дополнительные сведения см. в разделе [Использование сети](../profiling/network-usage.md).
 ::: moniker-end
@@ -175,6 +175,6 @@ ms.locfileid: "73188616"
 - [7 уязвимостей, которые менее известны при отладке в Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 скрытых драгоценных камней в Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Сочетания клавиш](../ide/productivity-shortcuts.md)
