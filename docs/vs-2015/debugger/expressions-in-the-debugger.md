@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158495"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78406330"
 ---
 # <a name="expressions-in-the-debugger"></a>Выражения в отладчике
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ int main()
 |**Поиск строки**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Для этих функций требуется, чтобы отлаживаемый процесс выполнялся в Windows 8. Для отладки файлов дампа, сгенерированных устройством Windows 8, также необходимо, чтобы компьютер Visual Studio работал под управлением Windows 8. В то же время, если устройство Windows 8 отлаживается удаленно, допускается работа компьютера Visual Studio под управлением Windows 7.|  
-|**Прочее**|__log2<br /><br /> Возвращает значение логарифма по основанию 2 от указанного целого числа, округленное до ближайшего меньшего целого числа.|  
+|**Разное**|__log2<br /><br /> Возвращает значение логарифма по основанию 2 от указанного целого числа, округленное до ближайшего меньшего целого числа.|  
   
 ## <a name="ccli---unsupported-expressions"></a>Неподдерживаемые выражения C++/CLI  
   
@@ -214,7 +214,7 @@ int main()
   
 - Ключевые слова пространства имен или уровня модуля, например `End Sub` или `Module`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Определители формата в C++](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)   
