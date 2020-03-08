@@ -21,21 +21,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187516"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409305"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Ошибки удаленной отладки и их устранение
 
 При попытке удаленной отладки могут возникнуть следующие ошибки.
 
-- [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [Ошибка: не удалось автоматически перейти в режим пошагового выполнения](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
 - [Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
-- [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+- [Не удается подключиться к монитору удаленной отладки Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
 - [Ошибка "Удаленный компьютер не отображается в диалоговом окне удаленных подключений"](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
@@ -73,5 +73,5 @@ ms.locfileid: "73187516"
 
 Вы **не** хотите запускать от имени администратора, если хотите запустить процессы, а процесс, который вы хотите запустить, **не** должен быть администратором.
 
-## <a name="see-also"></a>См. также
-- [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>См. также раздел
+- [Удаленная отладка](../debugger/remote-debugging.md)

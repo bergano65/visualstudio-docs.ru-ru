@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создайте. Файл vsct | Документация Майкрософт
+title: Как создать. Файл vsct | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3155ff69db461e652b11ff6e8ec6d405000244f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924174"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409089"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Практическое руководство. Создание vsct-файла
+# <a name="how-to-create-a-vsct-file"></a>Как создать vsct-файл
 
 Существует несколько способов создания файла конфигурации таблицы команд Visual Studio (*vsct*) на основе XML.
 
-- В шаблоне [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пакета можно создать новый пакет VSPackage.
+- Новый пакет VSPackage можно создать в шаблоне пакета [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 - Для создания файла из существующего *CTC* -файла можно использовать компилятор конфигурации *vsct. exe*для таблицы на основе XML.
 
@@ -33,9 +33,9 @@ ms.locfileid: "68924174"
 
 ### <a name="to-manually-create-a-new-vsct-file"></a>Создание нового vsct-файла вручную
 
-1. Запустите [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+1. Запустите среду [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-2. На **файл** последовательно выберите пункты **New**, а затем нажмите кнопку **файл**.
+2. В меню **Файл** укажите пункт **Создать**, а затем выберите пункт **Файл**.
 
 3. В области **шаблоны** выберите **XML-файл** и нажмите кнопку **Открыть**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "68924174"
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Практическое руководство. Создание vsct-файла из существующего CTC-файла
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Как создать vsct-файл из существующего CTC-файла
 
 Вы можете создать *VSCT* -файл на основе XML из существующего файла. *CTC* исходного кода. Таким образом можно воспользоваться новым форматом компилятора таблицы команд [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] на основе XML (VSCT).
 
@@ -61,13 +61,13 @@ ms.locfileid: "68924174"
 
 1. Получите копию языка Perl.
 
-2. Получите копию *ConvertCTCToVSCT.pl*сценария Perl, которая обычно находится в папке  *\<установки пакета SDK для Visual Studio > \висуалстудиоинтегратион\тулс\бин* .
+2. Получите копию *ConvertCTCToVSCT.pl*сценария Perl, которая обычно находится в папке *\<путь установки пакета SDK для Visual Studio > Папка \висуалстудиоинтегратион\тулс\бин* .
 
 3. Получите копию исходного файла *CTC* , который необходимо преобразовать.
 
 4. Поместите файлы в один каталог.
 
-5. В окне [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] командной строки перейдите в каталог.
+5. В окне командной строки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] перейдите в каталог.
 
 6. Тип
 
@@ -84,7 +84,7 @@ ms.locfileid: "68924174"
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Практическое руководство. Создание vsct-файла из существующего CTO-файла
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Как создать vsct-файл из существующего CTO-файла
 
 Можно создать XML-файл с *расширением vsct* на основе существующего файла binary *. CTO* . Это позволяет воспользоваться преимуществами нового формата компилятора таблицы команд. Этот процесс работает даже в том случае, если файл *. CTO* был скомпилирован из *CTC* -файла. Файл *. vsct* можно изменить и скомпилировать в другой файл CTO.
 
@@ -102,7 +102,7 @@ ms.locfileid: "68924174"
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
     ```
 
-     где \<ктофиленаме\> \< \<\> — это имя CTO-файла, всктфиленаме — имя файла vsct, который вы хотите создать, а симфиленаме — имя\> файл *ctsym* .
+     где \<ктофиленаме\> — имя *CTO* -файла, \<всктфиленаме\> — имя файла *vsct* , который вы хотите создать, а \<симфиленаме\> — имя файла *ctsym* .
 
      Этот процесс создает новый файл компилятора XML-команд *vsct* . Файл можно изменить и скомпилировать с помощью *vsct. exe*, компилятора vsct, как и любой другой файл *vsct* .
 
@@ -113,7 +113,7 @@ ms.locfileid: "68924174"
 
 1. Откройте файл проекта в редакторе. Если проект загружен, его необходимо сначала выгрузить.
 
-2. Добавьте [элемент ItemGroup](../../msbuild/itemgroup-element-msbuild.md) , содержащий `VSCTCompile` элемент, как показано в следующем примере.
+2. Добавьте [элемент ItemGroup](../../msbuild/itemgroup-element-msbuild.md) , содержащий элемент `VSCTCompile`, как показано в следующем примере.
 
     ```xml
     <ItemGroup>
@@ -124,9 +124,9 @@ ms.locfileid: "68924174"
 
     ```
 
-     Элемент всегда должен иметь `Menus.ctmenu`значение. `ResourceName`
+     Элемент `ResourceName` всегда должен иметь значение `Menus.ctmenu`.
 
-3. Если проект содержит *RESX* -файл, добавьте `EmbeddedResource` `MergeWithCTO` элемент, содержащий элемент, как показано в следующем примере:
+3. Если проект содержит *RESX* -файл, добавьте элемент `EmbeddedResource`, содержащий элемент `MergeWithCTO`, как показано в следующем примере:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -136,19 +136,19 @@ ms.locfileid: "68924174"
 
     ```
 
-     Эта разметка должна идти внутри `ItemGroup` элемента, содержащего внедренные ресурсы.
+     Эта разметка должна идти внутри элемента `ItemGroup`, который содержит внедренные ресурсы.
 
-4. Откройте файл пакета, обычно именуемый  *\<ProjectName\>Package.CS* или  *\<ИмяПроекта\>Package. vb*, в редакторе.
+4. Откройте файл пакета, обычно именуемый *\<имяпроекта\>Package.CS* или *\<имя_проекта\>Package. vb*в редакторе.
 
-5. `ProvideMenuResource` Добавьте атрибут в класс Package, как показано в следующем примере.
+5. Добавьте атрибут `ProvideMenuResource` в класс Package, как показано в следующем примере.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]
     ```
 
-     Первое значение параметра должно соответствовать значению `ResourceName` атрибута, определенного в файле проекта.
+     Значение первого параметра должно соответствовать значению атрибута `ResourceName`, определенного в файле проекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Файлы Author. vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Файлы таблицы команд Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Справочник по XML-схеме VSCT](../../extensibility/vsct-xml-schema-reference.md)

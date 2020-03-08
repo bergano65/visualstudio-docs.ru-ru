@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730255"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409396"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка проекта C# или Visual Basic в Visual Studio
 Чтобы выполнить отладку приложения Visual Studio, развернутого на другом компьютере, установите и запустите средства удаленной отладки на компьютере, где развернуто приложение, настройте проект для подключения к удаленному компьютеру из Visual Studio, а затем запустите приложение.
@@ -83,7 +83,7 @@ ms.locfileid: "72730255"
 
 7. Убедитесь в том, что параметр **Разрешить отладку машинного кода** не выбран.
 
-8. Выполните построение проекта.
+8. Создайте проект.
 
 9. Создайте на удаленном компьютере папку с тем же путем, что и у папки **Debug** на компьютере с Visual Studio: **\<исходный путь>\MyWPF\MyWPF\bin\Debug**.
 
@@ -116,10 +116,10 @@ ms.locfileid: "72730255"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Назначение портов удаленного отладчика](../debugger/remote-debugger-port-assignments.md)
+- [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) (Назначение портов для удаленного отладчика)
 - [Удаленная отладка ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

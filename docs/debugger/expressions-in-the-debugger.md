@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235007"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78925911"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Выражения в отладчике Visual Studio
 В состав отладчика Visual Studio входят вычислители выражений, которые работают при вводе выражения в диалоговое окно **Быстрая проверка** , окно **Контрольные значения** или окно **Интерпретация** . Вычислители выражений также работают в окне **точки останова** и многих других местах в отладчике.
@@ -99,12 +99,12 @@ int main()
 
 |Область|Встроенные функции|
 |----------|-------------------------|
-|**Длина строки**|strlen, wcslen, strnlen, wcsnlen|
-|**Сравнение строк**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Поиск строки**|strchr, вксчр, memchr, вмемчр, стрстр, вксстр|
-|**Win32**|GetLastError, Тлсжетвалуе|
-|**Windows 8**|Виндовсжетстринглен, Виндовсжетстрингравбуффер<br /><br /> Для этих функций требуется, чтобы отлаживаемый процесс выполнялся в Windows 8. Для отладки файлов дампа, сгенерированных устройством Windows 8, также необходимо, чтобы компьютер Visual Studio работал под управлением Windows 8. В то же время, если устройство Windows 8 отлаживается удаленно, допускается работа компьютера Visual Studio под управлением Windows 7.|
-|**Разное**|__log2//Возвращает основание журнала 2 указанного целого числа, округленное до ближайшего меньшего целого числа.<br /><br />__findNonNull, Декодехстринг, Виндовскомпарестрингординал, Роинспекткаптуредстаккбакктраце, Кодекодепрокси, GetEnvBlockLength, DecodeWinRTRestrictedException, DynamicMemberLookup, DecodePointer, DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx Concurrency:: Array < >:: operator [Индекс < >] и оператор (индекс < >)<br /><br />ConcurrencyArray_OperatorBracket_int Concurrency:: Array < >:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx Concurrency:: Array < >:: operator [tiled_index < >] и оператор (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx Concurrency:: array_view < >:: operator [Индекс < >] и оператор (индекс < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int Concurrency:: array_view < >:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx Concurrency:: array_view < >:: operator [tiled_index < >] и оператор (tiled_index < >)<br /><br />TreeTraverse_Init//Инициализирует новый обход дерева<br /><br />TreeTraverse_Next//возвращает узлы в дереве<br /><br />TreeTraverse_Skip пропускает узлы в состоянии незавершенного обхода дерева "|
+|**Длина строки**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [стрнлен, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**Сравнение строк**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [стрикмп, вксикмп](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [стрникмп, вксникмп](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**Поиск строки**|[strchr, вксчр](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, вмемчр](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [стрстр, вксстр](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[Кодекодепрокси](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [декодепоинтер](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [тлсжетвалуе](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[Роинспекткаптуредстаккбакктраце](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [виндовскомпарестрингординал](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [виндовсжетстринглен](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Для этих функций требуется, чтобы отлаживаемый процесс выполнялся в Windows 8. Для отладки файлов дампа, сгенерированных устройством Windows 8, также необходимо, чтобы компьютер Visual Studio работал под управлением Windows 8. В то же время, если устройство Windows 8 отлаживается удаленно, допускается работа компьютера Visual Studio под управлением Windows 7.|
+|**Разное**|__log2//Возвращает основание журнала 2 указанного целого числа, округленное до ближайшего меньшего целого числа.<br /><br />__findNonNull, Декодехстринг, Декодевинртрестриктедексцептион, Динамиккаст, Динамикмемберлукуп, Жетенвблоккленгс<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx Concurrency:: Array < >:: operator [Индекс < >] и оператор (индекс < >)<br /><br />ConcurrencyArray_OperatorBracket_int Concurrency:: Array < >:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx Concurrency:: Array < >:: operator [tiled_index < >] и оператор (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx Concurrency:: array_view < >:: operator [Индекс < >] и оператор (индекс < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int Concurrency:: array_view < >:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx Concurrency:: array_view < >:: operator [tiled_index < >] и оператор (tiled_index < >)<br /><br />TreeTraverse_Init//Инициализирует новый обход дерева<br /><br />TreeTraverse_Next//возвращает узлы в дереве<br /><br />TreeTraverse_Skip пропускает узлы в состоянии незавершенного обхода дерева "|
 
 ## <a name="ccli---unsupported-expressions"></a>Неподдерживаемые выражения C++/CLI
 

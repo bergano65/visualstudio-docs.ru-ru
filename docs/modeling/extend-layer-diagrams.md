@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596649"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410247"
 ---
 # <a name="extend-dependency-diagrams"></a>Расширение схем зависимостей
 
@@ -27,7 +27,7 @@ ms.locfileid: "75596649"
 
 - Visual Studio
 
-- [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
+- [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
 
 - Пакет SDK моделирования для Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "75596649"
 
 На компьютере, на котором нужно запустить расширения слоев, должен быть установлен подходящий выпуск Visual Studio. Чтобы узнать, какие выпуски поддерживаются на схемах зависимостей в Visual Studio, см. раздел [Поддержка архитектуры и средств моделирования в выпуске](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Схемы зависимостей: справочные материалы](../modeling/layer-diagrams-reference.md)
 - [Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)

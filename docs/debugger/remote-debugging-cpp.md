@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730323"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409389"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Удаленная отладка C++ проекта в Visual Studio
 Чтобы выполнить отладку приложения Visual Studio на другом компьютере, установите и запустите средства удаленной отладки на компьютере, где будет развернуто приложение, настройте проект для подключения к удаленному компьютеру из Visual Studio, а затем разверните и запустите приложение.
@@ -67,15 +67,15 @@ ms.locfileid: "72730323"
 
 5. Внесите в свойства следующие изменения:
 
-   |Параметр|значения|
+   |Параметр|Значение|
    |-|-|
    |Удаленная команда|C:\remotetemp\mymfc.exe|
    |Рабочий каталог|C:\remotetemp|
    |Имя удаленного сервера|МЖО-DL:*номер_порта*|
-   |Подключение|Удаленный доступ с аутентификацией Windows|
+   |Соединение|Удаленный доступ с аутентификацией Windows|
    |Тип отладчика|Только машинный код|
    |Каталог развертывания|C:\remotetemp.|
-   |Дополнительные файлы развертывания|C:\data\mymfcdata.txt.|
+   |Дополнительные файлы, которые необходимо развернуть|C:\data\mymfcdata.txt.|
 
     При развертывании дополнительных файлов (необязательно) папка должна существовать на обоих компьютерах.
 
@@ -106,10 +106,10 @@ ms.locfileid: "72730323"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Назначение портов удаленного отладчика](../debugger/remote-debugger-port-assignments.md)
+- [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) (Назначение портов для удаленного отладчика)
 - [Удаленная отладка ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)
