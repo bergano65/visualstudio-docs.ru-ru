@@ -60,19 +60,19 @@ ms.locfileid: "76114999"
 
 ::: moniker range="vs-2017"
 
-1. Закройте установщик Visual Studio.
-2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
-4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
+1. Закройте Установщик Visual Studio.
+2. Удалите каталог Установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Запустите загрузчик Установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+4. Снова попробуйте установить или обновить Visual Studio. Если запуск Установщика снова завершится ошибкой, переходите к следующему шагу.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Закройте установщик Visual Studio.
-2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
-4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
+1. Закройте Установщик Visual Studio.
+2. Удалите каталог Установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Запустите загрузчик Установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+4. Снова попробуйте установить или обновить Visual Studio. Если запуск Установщика снова завершится ошибкой, переходите к следующему шагу.
 
 ::: moniker-end
 
