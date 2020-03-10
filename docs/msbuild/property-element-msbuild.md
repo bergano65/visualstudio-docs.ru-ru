@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99970bfbc955fe972d5e3c9a4e38ae6f57e0e0bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597429"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632957"
 ---
 # <a name="property-element-msbuild"></a>Элемент Property (MSBuild)
-Содержит определяемое пользователем имя свойства и значение. Каждое свойство, используемое в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должно быть указано в качестве дочернего для элемента `PropertyGroup`.
+
+Содержит определяемое пользователем имя свойства и значение. Каждое свойство, используемое в проекте MSBuild, должно быть указано в качестве дочернего для элемента `PropertyGroup`.
 
  \<Project> \<PropertyGroup>
 
@@ -37,6 +38,7 @@ ms.locfileid: "75597429"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -46,6 +48,7 @@ ms.locfileid: "75597429"
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
+
  Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
@@ -55,14 +58,17 @@ ms.locfileid: "75597429"
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Группирующий элемент для свойств.|
 
 ## <a name="text-value"></a>Текстовое значение
+
  Текстовое значение является необязательным.
 
  Этот текст указывает значение свойства и может содержать XML.
 
 ## <a name="remarks"></a>Примечания
+
  Имена свойств ограничены только символами ASCII. Значения свойств указываются в проекте путем размещения имени свойства между "`$(`" и "`)`". Например, `$(builddir)\classes` разрешится в *build\classes*, если свойство `builddir` будет иметь значение `build`. Дополнительные сведения о свойствах см. в статье [MSBuild Properties](../msbuild/msbuild-properties.md) (Свойства MSBuild).
 
 ## <a name="example"></a>Пример
+
  В следующем коде свойству `Optimization` задается значение `false`, а свойству `DefaultVersion` — значение `1.0`, если свойство `Version` является пустым.
 
 ```xml
@@ -73,5 +79,6 @@ ms.locfileid: "75597429"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Свойства MSBuild](../msbuild/msbuild-properties.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

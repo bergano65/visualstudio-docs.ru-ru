@@ -16,27 +16,30 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bad6ab828af1f62818636b3af11232294256c03
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 831153a734fa88c045f7b8397db0a033e53862c7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593386"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634491"
 ---
 # <a name="calltarget-task"></a>CallTarget - задача
+
 Вызывает указанные целевые объекты в файле проекта.
 
 ## <a name="task-parameters"></a>Параметры задачи
+
  В следующей таблице приводятся параметры задачи `CallTarget` .
 
 | Параметр | Описание |
 |---------------------------| - |
-| `RunEachTargetSeparately` | Необязательный входной параметр `Boolean`.<br /><br /> Если задано значение `true`, модуль [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывается по одному разу для каждого целевого объекта. Если задано значение `false`, модуль [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывается однократно для сборки всех целевых объектов. Значение по умолчанию — `false`. |
+| `RunEachTargetSeparately` | Необязательный входной параметр `Boolean`.<br /><br /> Если задано значение `true`, модуль MSBuild вызывается однократно для каждого целевого объекта. Если задано значение `false`, модуль MSBuild вызывается однократно для сборки всех целевых объектов. Значение по умолчанию — `false`. |
 | `TargetOutputs` | Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит выходные данные всех собранных целевых объектов. |
 | `Targets` | Необязательный параметр `String[]`.<br /><br /> Указывает один или несколько целевых объектов для сборки. |
 | `UseResultsCache` | Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, возвращается кэшированный результат (при его наличии).<br /><br /> **Примечание**. При выполнении задачи MSBuild ее выходные данные кэшируются в области (ProjectFileName, GlobalProperties)[TargetNames] в виде списка элементов сборки. |
 
 ## <a name="remarks"></a>Примечания
+
  Если заданный в `Targets` целевой объект завершается сбоем, а `RunEachTargetSeparately` имеет значение `true`, задача продолжает сборку оставшихся целевых объектов.
 
  Если вы хотите выполнить сборку целевых объектов по умолчанию, используйте [задачу MSBuild](../msbuild/msbuild-task.md) и задайте для параметра `Projects` значение `$(MSBuildProjectFile)`.
@@ -44,6 +47,7 @@ ms.locfileid: "75593386"
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
  Приведенный ниже пример вызывается `TargetA` из `CallOtherTargets`.
 
 ```xml
@@ -62,5 +66,6 @@ ms.locfileid: "75593386"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Целевые объекты](../msbuild/msbuild-targets.md)

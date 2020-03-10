@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585890"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169369"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -61,7 +61,7 @@ ms.locfileid: "75585890"
 |safeitemrootname|Эквивалентно `safeitemname`.|
 |safeprojectname|Имя, указанное пользователем при создании проекта, но с удаленными небезопасными символами и пробелами.|
 |time|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
-|specifiedSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `specifiedSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `specifiedSolutionName` пусто.|
+|specifiedsolutionname|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `specifiedsolutionname` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `specifiedsolutionname` пусто.|
 |userdomain|Домен текущего пользователя.|
 |Имя пользователя|Имя текущего пользователя.|
 |webnamespace|Имя текущего веб-сайта. Этот параметр используется в шаблоне веб-формы, чтобы гарантировать уникальные имена классов. Если веб-сайт находится в корневом каталоге веб-сервера, этот параметр шаблона разрешается в корневой каталог веб-сервера.|

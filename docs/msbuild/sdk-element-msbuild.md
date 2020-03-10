@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c65bafd9183c97efa7595c10d7bdb3641c5f75f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595141"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632476"
 ---
 # <a name="sdk-element-msbuild"></a>Элемент SDK (MSBuild)
-Ссылка на пакет SDK для проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Ссылки на пакет SDK проекта MSBuild.
 
  \<Project> \<Sdk>
 
@@ -37,6 +38,7 @@ ms.locfileid: "75595141"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -47,15 +49,17 @@ ms.locfileid: "75595141"
 |`Version`|Необязательный атрибут.<br /><br /> Версия пакета SDK для проекта.|
 
 ### <a name="child-elements"></a>Дочерние элементы
+
  Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 | Элемент | Описание |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта MSBuild. |
 
 ## <a name="see-also"></a>См. также
+
 - [Практическое руководство. Ссылка на пакет SDK проекта MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

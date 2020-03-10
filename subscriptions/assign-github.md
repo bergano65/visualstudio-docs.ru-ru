@@ -3,15 +3,15 @@ title: Предложение Visual Studio с GitHub Enterprise | Докуме
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Управление подписками в предложении Visual Studio с GitHub Enterprise
-ms.openlocfilehash: 524002b875375c22da67bbf98d98f4ebc149c14b
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: e48b047862daa80452e1b2128dc74fee8bd1039e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558151"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263335"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Управление подписками Visual Studio с GitHub Enterprise
 Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новое предложение, в котором объединены стандартные подписки Visual Studio и GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
@@ -31,7 +31,7 @@ ms.locfileid: "77558151"
 > [!Important]
 > Подписки Visual Studio с GitHub Enterprise, которые назначены администраторами подписки Visual Studio и никогда не приобретались, не будут видны администраторам GitHub Enterprise в организации. Чтобы отображать подписки GitHub Enterprise, при первичном назначении подписки необходимо совершить покупку, включающую **как минимум одну** подписку Visual Studio Professional с GitHub Enterprise или Visual Studio Enterprise с GitHub Enterprise.  
 >
-> В целях соблюдения требований лицензионных соглашений в отношении подписки клиент отвечает за проверку того, что для каждой назначенной таким образом подписки GitHub присутствует соответствующая подписка Visual Studio с GitHub, назначенная на портале управления.
+> В целях соблюдения требований лицензионных соглашений в отношении подписки, клиент отвечает за проверку того, что для каждой назначенной таким образом подписки GitHub присутствует соответствующая подписка Visual Studio с GitHub, назначенная на портале администрирования подписок Visual Studio.
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Управление подписками GitHub Enterprise
 При приобретении подписок GitHub Enterprise клиенты получают со стороны GitHub помощь в создании и настройке организаций, которые будут получать доступ к GitHub, а также в определении администраторов.  Пользователи, назначенные в качестве администраторов, получат соответствующие уведомления.  
@@ -71,5 +71,20 @@ ms.locfileid: "77558151"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 - Обратитесь в [службу технической поддержки](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) для GitHub Enterprise.   
 
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Следующие шаги
+Узнайте больше об управлении подписками Visual Studio.
+- [Назначение отдельных подписок](assign-license.md)
+- [Назначение нескольких подписок](assign-license-bulk.md)
+- [Изменение подписок](edit-license.md)
+- [Удаление подписок](delete-license.md)
+- [Определение максимального использования](maximum-usage.md)
+
 Дополнительные сведения об управлении подписками Visual Studio с GitHub Enterprise см. также на [портале администрирования подписок](https://visualstudio.microsoft.com/subscriptions-administration/) Visual Studio.
+
+

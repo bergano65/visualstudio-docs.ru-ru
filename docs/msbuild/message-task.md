@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592182"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633490"
 ---
 # <a name="message-task"></a>Message - задача
+
 Записывает сообщения в журнал в процессе сборки.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `Message` .
 
 |Параметр|Описание|
@@ -37,7 +39,8 @@ ms.locfileid: "75592182"
 |`Text`|Необязательный параметр `String`.<br /><br /> Текст ошибки для записи в журнал.|
 
 ## <a name="remarks"></a>Примечания
- Задача `Message` позволяет проектам [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отправлять сообщения в средства ведения журнал на разных этапах процесса сборки.
+
+ Задача `Message` позволяет проектам MSBuild отправлять сообщения в средства ведения журнала на разных этапах процесса сборки.
 
  Если параметр `Condition` равен `true`, значение параметра `Text` записывается, а процесс сборки продолжает выполняться. Если параметр `Condition` не существует, текст сообщения записывается в журнал. Дополнительные сведения см. в статье о [получении журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -46,6 +49,7 @@ ms.locfileid: "75592182"
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
  В следующем примере кода сообщения регистрируются во всех зарегистрированных средствах ведения журнала.
 
 ```xml
@@ -59,5 +63,6 @@ ms.locfileid: "75592182"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)

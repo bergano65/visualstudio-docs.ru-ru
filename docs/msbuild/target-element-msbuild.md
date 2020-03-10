@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566427"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631982"
 ---
 # <a name="target-element-msbuild"></a>Элемент Target (MSBuild)
-Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения.
+
+Содержит набор задач для MSBuild для последовательного выполнения.
 
  \<Project> \<Target>
 
@@ -51,6 +52,7 @@ ms.locfileid: "75566427"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -72,7 +74,7 @@ ms.locfileid: "75566427"
 
 | Элемент | Описание |
 | - | - |
-| [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Целевой объект может содержать нуль и более задач. |
+| [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи MSBuild. Целевой объект может содержать нуль и более задач. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Содержит набор определяемых пользователем элементов `Property`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `PropertyGroup`. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Содержит набор определяемых пользователем элементов `Item`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `ItemGroup`. Дополнительные сведения см. в разделе [Элементы](../msbuild/msbuild-items.md). |
 | [OnError](../msbuild/onerror-element-msbuild.md) | Вызывает один или несколько целевых объектов для выполнения, если атрибут `ContinueOnError` — ErrorAndStop (или `false`) для задачи, завершившейся ошибкой. Целевой объект может содержать нуль и более элементов `OnError`. Если элементы `OnError` присутствуют, они должны быть последними элементами в элементе `Target`.<br /><br /> Дополнительные сведения об атрибуте `ContinueOnError` см. в статье [Элемент Task (MSBuild)](../msbuild/task-element-msbuild.md). |
@@ -81,10 +83,11 @@ ms.locfileid: "75566427"
 
 | Элемент | Описание |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта MSBuild. |
 
 ## <a name="remarks"></a>Примечания
- Первый целевой объект для выполнения задается во время выполнения. Целевые объекты могут иметь зависимости от других целевых объектов. Например, целевой объект для развертывания зависит от целевого объекта для компиляции. Обработчик [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет зависимости в том порядке, в котором они появляются в атрибуте `DependsOnTargets`, слева направо. Дополнительные сведения см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md).
+
+ Первый целевой объект для выполнения задается во время выполнения. Целевые объекты могут иметь зависимости от других целевых объектов. Например, целевой объект для развертывания зависит от целевого объекта для компиляции. Обработчик MSBuild выполняет зависимости в том порядке, в котором они появляются в атрибуте `DependsOnTargets`, слева направо. Дополнительные сведения см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md).
 
  Поведение MSBuild зависит от порядка импорта, то есть всегда используется последнее обработанное определение целевого объекта с определенным атрибутом `Name`.
 
@@ -101,6 +104,7 @@ ms.locfileid: "75566427"
  До выпуска MSBuild 4, если `Target` включал несколько ссылок на один и тот же элемент в его объектах `Outputs`, выполнялась запись этих повторяющихся элементов. В очень больших сборках с большим объемом выходных данных и большим числом взаимозависимостей проекта, это приводило к потреблению большого объема памяти из-за записи ненужных повторяющихся элементов. Если для атрибута `KeepDuplicateOutputs` задано значение `true`, дубликаты записываются.
 
 ## <a name="example"></a>Пример
+
  В следующем примере кода показан элемент `Target`, выполняющий задачу `Csc`.
 
 ```xml
@@ -118,5 +122,6 @@ ms.locfileid: "75566427"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Целевые объекты](../msbuild/msbuild-targets.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

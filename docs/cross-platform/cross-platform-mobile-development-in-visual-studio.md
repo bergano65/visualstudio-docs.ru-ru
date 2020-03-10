@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916882"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234986"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -140,12 +140,12 @@ ms.locfileid: "75916882"
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Загрузка Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Загрузка Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
+|[Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[Дополнительные сведения об использовании C++ для настройки для нескольких платформ](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Установка нужных компонентов и создание приложения Native Activity для Android](create-an-android-native-activity-app.md)|
+|[Установка нужных компонентов и создание нативного приложения С++ для Android](/cpp/cross-platform/create-an-android-native-activity-app)|
 |[Дополнительные сведения о совместном использовании кода C++ с приложениями Android и Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Примеры разработки кроссплатформенных мобильных приложений для C++](cross-platform-mobile-development-examples.md)|
+|[Примеры разработки кроссплатформенных мобильных приложений для C++](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 

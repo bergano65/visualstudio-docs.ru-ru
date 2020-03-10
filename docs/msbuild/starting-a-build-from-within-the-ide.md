@@ -10,22 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595089"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632125"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Запуск построения из интегрированной среды разработки
+
 Для запуска сборок пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>. В этой статье описаны причины этого требования, а также соответствующая процедура.
 
 ## <a name="parallel-builds-and-threads"></a>Параллельные сборки и потоки
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет использовать параллельные сборки, при этом необходим посредник для доступа к общим ресурсам. Системы проектов могут запускать сборки асинхронно, но такие системы не должны вызывать функции сборки из обратных вызовов.
+
+ Visual Studio позволяет использовать параллельные сборки, при выполнении которых необходим посредник для доступа к общим ресурсам. Системы проектов могут запускать сборки асинхронно, но такие системы не должны вызывать функции сборки из обратных вызовов.
 
  Если система проектов изменяет переменные среды, она должна присваивать NodeAffinity сборки значение OutOfProc. Это требование означает, что вы не можете использовать объекты узла, так как им требуется внутрипроцессный узел.
 
 ## <a name="use-ivsbuildmanageraccessor"></a>Использование IVSBuildManagerAccessor
+
  Следующий код описывает метод, который система проектов может использовать для запуска сборки:
 
 ```csharp

@@ -18,28 +18,32 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cac0af3371a5c4ae385cc19367b360b8e8f608fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 155e8e6b57cc388e8c2981297be8b26ef5444c1b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590063"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634322"
 ---
 # <a name="createproperty-task"></a>CreateProperty - задача
+
 Заполняет свойства переданными значениями. Это позволяет копировать значения из одного свойства или строки в другое свойство или строку.
 
 ## <a name="attributes"></a>Атрибуты
+
 В следующей таблице приводятся параметры задачи `CreateProperty` .
 
 | Параметр | Описание |
 |------------------| - |
 | `Value` | Необязательный выходной параметр `String`.<br /><br /> Указывает значение для копирования в новое свойство. |
-| `ValueSetByTask` | Необязательный выходной параметр `String`.<br /><br /> Содержит то же значение, что и параметр `Value`. Используйте этот параметр только в том случае, если вы не хотите, чтобы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] задавал выходное свойство при пропуске вложенного целевого объекта из-за актуальных выходных данных. |
+| `ValueSetByTask` | Необязательный выходной параметр `String`.<br /><br /> Содержит то же значение, что и параметр `Value`. Используйте этот параметр только в том случае, если вы не хотите, чтобы MSBuild задавал выходное свойство при пропуске вложенного целевого объекта из-за актуальных выходных данных. |
 
 ## <a name="remarks"></a>Примечания
+
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
 Следующий пример использует задачу `CreateProperty`, чтобы создать свойство `NewFile` с помощью сочетания значений свойств `SourceFilename` и `SourceFileExtension`.
 
 ```xml
@@ -67,5 +71,6 @@ ms.locfileid: "75590063"
 После запуска проекта значение свойства `NewFile` равно *Module1.vb*.
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78aef20a322ad3743ed1cb89955654456dff670e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591454"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634218"
 ---
 # <a name="exec-task"></a>Exec - задача
+
 Запускает заданную программу или команду с использованием заданных аргументов.
 
 ## <a name="parameters"></a>Параметры
+
 В следующей таблице приводятся параметры для задачи `Exec`.
 
 |Параметр|Описание|
@@ -48,13 +50,15 @@ ms.locfileid: "75591454"
 |`WorkingDirectory`|Необязательный параметр `String`.<br /><br /> Указывает каталог, в котором будет выполняться команда.<br /><br />По умолчанию: текущая рабочая папка проекта.|
 
 ## <a name="remarks"></a>Примечания
-Эта задача полезна, если отсутствует специальная задача [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для задания, которое вы хотите выполнить. Однако задача `Exec`, в отличие от более специализированных задач, не может выполнять дополнительную обработку или условные операции на основе результатов, полученных из средства или от команды, для которых она выполняется.
+
+Эта задача полезна, если отсутствует специальная задача MSBuild для задания, которое вы хотите выполнить. Однако задача `Exec`, в отличие от более специализированных задач, не может выполнять дополнительную обработку или условные операции на основе результатов, полученных из средства или от команды, для которых она выполняется.
 
 Задача `Exec` вызывает *cmd.exe*, а не запускает процесс напрямую.
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
 В следующем примере задача `Exec` выполняет команду.
 
 ```xml
@@ -71,5 +75,6 @@ ms.locfileid: "75591454"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

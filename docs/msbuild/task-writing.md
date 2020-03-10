@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594998"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631842"
 ---
 # <a name="task-writing"></a>Написание задач
-Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], см. в статье [Справочные сведения о задачах MSBuild](../msbuild/msbuild-task-reference.md).
+
+Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В MSBuild включена библиотека типичных задач, но вы также можете создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в MSBuild, см. в статье [Справочник по задачам MSBuild](../msbuild/msbuild-task-reference.md).
 
 ## <a name="tasks"></a>Задачи
- Примеры задач: [Copy](../msbuild/copy-task.md) — копирование одного или нескольких файлов; [MakeDir](../msbuild/makedir-task.md) — создание каталога; [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Каждая задача реализуется в виде класса платформы .NET, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>, который определяется в сборке *Microsoft.Build.Framework.dll*.
+
+ Примеры задач: [Copy](../msbuild/copy-task.md) — копирование одного или нескольких файлов; [MakeDir](../msbuild/makedir-task.md) — создание каталога; [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода C#. Каждая задача реализуется в виде класса платформы .NET, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>, который определяется в сборке *Microsoft.Build.Framework.dll*.
 
  Существуют два подхода к реализации задачи:
 
@@ -60,7 +62,7 @@ namespace MyTasks
 </Project>
 ```
 
- Если свойства .NET создаются в классе задач, то выполняющиеся задачи могут получать входные данные из файла проекта. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] задает эти свойства непосредственно перед вызовом метода `Execute` задачи. Чтобы создать свойство строки, используйте код задачи следующего вида:
+ Если свойства .NET создаются в классе задач, то выполняющиеся задачи могут получать входные данные из файла проекта. MSBuild задает эти свойства непосредственно перед вызовом метода `Execute` задачи. Чтобы создать свойство строки, используйте код задачи следующего вида:
 
 ```csharp
 using System;
@@ -92,14 +94,16 @@ namespace MyTasks
 ```
 
 ## <a name="register-tasks"></a>Регистрация задач
- Если проекту предстоит запускать задачу, платформе [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] необходимо знать, как найти сборку, содержащую класс задачи. Задачи регистрируются с помощью [элемента UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- Файл [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] в `UsingTask`Microsoft.Common.Tasks[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] — это файл проекта, который содержит список элементов *, регистрирующих все задачи, предоставленные в* . Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в *Microsoft.Common.Tasks*, зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.
+ Если проекту предстоит запускать задачу, MSBuild необходимо знать, как найти сборку, содержащую класс задачи. Задачи регистрируются с помощью [элемента UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+
+ Файл MSBuild в *Microsoft.Common.Tasks* — это файл проекта, который содержит список элементов `UsingTask`, регистрирующих все задачи предоставленные в MSBuild. Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в *Microsoft.Common.Tasks*, зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.
 
 > [!TIP]
-> Чтобы увидеть список задач, включенных в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], просмотрите содержимое файла *Microsoft.Common.Tasks*.
+> Чтобы увидеть список задач, включенных в MSBuild, просмотрите содержимое файла *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Создание событий из задачи
+
  Если задача является производной от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>, вы можете использовать любой из следующих вспомогательных методов класса <xref:Microsoft.Build.Utilities.Task> для создания событий, которые будут перехватываться и отображаться зарегистрированными средствами ведения журнала:
 
 ```csharp
@@ -132,6 +136,7 @@ public class SimpleTask : ITask
 ```
 
 ## <a name="require-task-parameters-to-be-set"></a>Обязательные параметры задачи
+
  Некоторые свойства задачи можно пометить как "обязательные", чтобы в любом файле проекта, из которого запускается задача, значения этих свойств должны были быть заданы, чтобы сборка не завершилась сбоем. Примените к свойству .NET в задаче атрибут `[Required]` следующим образом:
 
 ```csharp
@@ -141,9 +146,9 @@ public string RequiredProperty { get; set; }
 
  Атрибут `[Required]` определяется классом <xref:Microsoft.Build.Framework.RequiredAttribute> в пространстве имен <xref:Microsoft.Build.Framework>.
 
-## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Вызов задачи платформой [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]
+## <a name="how-msbuild-invokes-a-task"></a>Как MSBuild вызывает задачу
 
-При вызове задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] сначала создает экземпляр класса задачи, а затем вызывает методы задания свойств этого объекта для параметров задачи, указанных в элементе задачи в файле проекта. Если в элементе задачи не указан параметр или если результатом вычисления выражения, указанного в элементе, является пустая строка, метод задания свойства не вызывается.
+При вызове задачи MSBuild сначала создает экземпляр класса задачи, а затем вызывает методы задания свойств этого объекта для параметров задачи, указанных в элементе задачи в файле проекта. Если в элементе задачи не указан параметр или если результатом вычисления выражения, указанного в элементе, является пустая строка, метод задания свойства не вызывается.
 
 Например, в проекте
 
@@ -163,13 +168,13 @@ public string RequiredProperty { get; set; }
 
 ### <a name="task-parameter-types"></a>Типы параметров задачи
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] изначально обрабатывает свойства типов `string`, `bool`, `ITaskItem` и `ITaskItem[]`. Если задача принимает параметр другого типа, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывает <xref:System.Convert.ChangeType%2A> для преобразования `string` (со всеми развернутыми свойствами и ссылками на элементы) в целевой тип. Если преобразование для любого входного параметра завершается неудачно, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выдает ошибку и не вызывает метод `Execute()` задачи.
+MSBuild изначально обрабатывает свойства типов `string`, `bool`, `ITaskItem` и `ITaskItem[]`. Если задача принимает параметр другого типа, MSBuild вызывает <xref:System.Convert.ChangeType%2A> для преобразования `string` (со всеми развернутыми свойствами и ссылками на элементы) в целевой тип. Если преобразование для любого входного параметра завершается неудачно, MSBuild выдает ошибку и не вызывает метод `Execute()` задачи.
 
 ## <a name="example"></a>Пример
 
 ### <a name="description"></a>Описание
 
-В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
+В этом классе C# показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
 
 ### <a name="code"></a>Код
 
@@ -194,7 +199,7 @@ namespace SimpleTask1
 
 ### <a name="description"></a>Описание
 
-В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, реализующая интерфейс <xref:Microsoft.Build.Framework.ITask>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
+В этом классе C# показана задача, реализующая интерфейс <xref:Microsoft.Build.Framework.ITask>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
 
 ### <a name="code"></a>Код
 
@@ -230,7 +235,7 @@ namespace SimpleTask2
 
 ### <a name="description"></a>Описание
 
-В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. В ней задается обязательное строковое свойство и создается событие, отображаемое всеми зарегистрированными средствами ведения журнала.
+В этом классе C# показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. В ней задается обязательное строковое свойство и создается событие, отображаемое всеми зарегистрированными средствами ведения журнала.
 
 ### <a name="code"></a>Код
 

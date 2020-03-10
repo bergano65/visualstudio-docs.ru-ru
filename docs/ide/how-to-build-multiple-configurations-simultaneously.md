@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416763"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904091"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Практическое руководство. Сборка с использованием нескольких конфигураций
 
@@ -24,11 +24,13 @@ ms.locfileid: "68416763"
 
 2. Все проекты Visual Basic.
 
+Если решение содержит какие-либо проекты этих двух типов, то **Пакетная сборка** для этого решения будет недоступна. В этом случае команда не отображается в меню **Сборка**.
+
    Дополнительные сведения о конфигурациях сборки см. в статье [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md).
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Сборка проекта в нескольких конфигурациях сборок
 
-1. В строке меню выберите **Сборка** > **Пакетная сборка**.
+1. В строке меню выберите **Сборка** > **Пакетная сборка**. Или нажмите клавиши **Ctrl**+**Q**, чтобы открыть поле поиска, и выполните поиск `Batch Build`.
 
 2. В столбце **Сборка** установите флажки для конфигураций, с которыми требуется выполнить сборку проекта.
 

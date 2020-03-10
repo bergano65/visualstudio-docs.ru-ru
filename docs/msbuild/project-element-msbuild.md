@@ -19,15 +19,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb7c49e4f3dc86594c8a3211bacb538d3f10c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: df9eff3e941cc21aaa71c2779a72084e12e8e590
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597442"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632983"
 ---
 # <a name="project-element-msbuild"></a>Элемент Project (MSBuild)
-Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
+
+Обязательный корневой элемент файла проекта MSBuild.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,13 +51,14 @@ ms.locfileid: "75597442"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
 
 | Атрибут | Описание |
 |------------------------| - |
-| `DefaultTargets` | Необязательный атрибут.<br /><br /> Целевой объект или объекты по умолчанию служат точкой входа сборки, если целевой объект не указан. Несколько целевых объектов разделяются точкой с запятой (;).<br /><br /> Если целевой объект по умолчанию не указан в атрибуте `DefaultTargets` или командной строке [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], обработчик выполняет первый целевой объект в файл проекта после вычисления элементов [Импорт](../msbuild/import-element-msbuild.md). |
+| `DefaultTargets` | Необязательный атрибут.<br /><br /> Целевой объект или объекты по умолчанию служат точкой входа сборки, если целевой объект не указан. Несколько целевых объектов разделяются точкой с запятой (;).<br /><br /> Если целевой объект по умолчанию не указан в атрибуте `DefaultTargets` или командной строке MSBuild, обработчик выполняет первый целевой объект в файл проекта после вычисления элементов [Импорт](../msbuild/import-element-msbuild.md). |
 | `InitialTargets` | Необязательный атрибут.<br /><br /> Исходный целевой объект или объекты, выполняемые до целевых объектов, заданных в атрибуте `DefaultTargets` или в командной строке. Несколько целевых объектов разделяются точкой с запятой (`;`). Если несколько импортированных файлов определяют `InitialTargets`, все упомянутые целевые объекты будут выполняться в том порядке, в котором встречаются операции импорта. |
 | `Sdk` | Необязательный атрибут. <br /><br /> Имя и (необязательно) версия пакета SDK для создания неявных операторов import, которые добавляются в PROJ-файл. Если версия не указана, MSBuild будет пытаться использовать версию по умолчанию.  Например, `<Project Sdk="Microsoft.NET.Sdk" />` или `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Необязательный атрибут.<br /><br /> Версия набора инструментов MSBuild используется для определения значений $(MSBuildBinPath) и $(MSBuildToolsPath). |
@@ -72,16 +74,18 @@ ms.locfileid: "75597442"
 | [ImportGroup](../msbuild/importgroup-element.md) | Необязательный элемент.<br /><br /> Содержит коллекцию элементов `Import`, сгруппированных по необязательному условию. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Необязательный элемент.<br /><br /> Группирующий элемент для отдельных элементов. Элементы указываются с помощью элемента [Item](../msbuild/item-element-msbuild.md). Проект может содержать любое число элементов `ItemGroup`, включая ноль. |
 | [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) | Необязательный элемент.<br /><br /> Позволяет определить набор определений элементов, которые представляют собой значения метаданных, по умолчанию применяемых ко всем элементам проекта. Элемент ItemDefinitionGroup используется вместо задач `CreateItem` и `CreateProperty`. |
-| [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Необязательный элемент.<br /><br /> Предоставляет способ сохранения данные, не относящихся к [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать один элемент `ProjectExtensions` или ни одного такого элемента. |
+| [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Необязательный элемент.<br /><br /> Предоставляет способ сохранения данных, не относящихся к MSBuild, в файле проекта MSBuild. Проект может содержать один элемент `ProjectExtensions` или ни одного такого элемента. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Необязательный элемент.<br /><br /> Группирующий элемент для отдельных свойств. Свойства задаются с помощью элемента [Property](../msbuild/property-element-msbuild.md). Проект может содержать любое число элементов `PropertyGroup`, включая ноль. |
-| [Sdk](../msbuild/sdk-element-msbuild.md) | Необязательный элемент.<br /><br /> Ссылка на пакет SDK для проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  Этот элемент может использоваться в качестве альтернативы атрибуту Sdk. |
-| [Целевой объект](../msbuild/target-element-msbuild.md) | Необязательный элемент.<br /><br /> Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения. Задачи указываются с помощью элемента [Task](../msbuild/task-element-msbuild.md). Проект может содержать любое число элементов `Target`, включая ноль. |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Необязательный элемент.<br /><br /> Предоставляет способ регистрации задач в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать любое число элементов `UsingTask`, включая ноль. |
+| [Sdk](../msbuild/sdk-element-msbuild.md) | Необязательный элемент.<br /><br /> Ссылки на пакет SDK проекта MSBuild.  Этот элемент может использоваться в качестве альтернативы атрибуту Sdk. |
+| [Целевой объект](../msbuild/target-element-msbuild.md) | Необязательный элемент.<br /><br /> Содержит набор задач для MSBuild для последовательного выполнения. Задачи указываются с помощью элемента [Task](../msbuild/task-element-msbuild.md). Проект может содержать любое число элементов `Target`, включая ноль. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Необязательный элемент.<br /><br /> Предоставляет способ регистрации задач в MSBuild. Проект может содержать любое число элементов `UsingTask`, включая ноль. |
 
 ### <a name="parent-elements"></a>Родительские элементы
+
  Отсутствует.
 
 ## <a name="see-also"></a>См. также
+
 - [Практическое руководство. Выбор целевого объекта для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md)
 - [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

@@ -18,17 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579641"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634010"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath - задача
+
+Извлекает путь к сборкам .NET Framework.
 Извлекает путь к сборкам .NET Framework.
 
 ## <a name="task-parameters"></a>Параметры задачи
+
 В следующей таблице приводятся параметры задачи `GetFrameworkPath` .
 
 |Параметр|Описание|
@@ -41,11 +44,13 @@ ms.locfileid: "77579641"
 |`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к самым новым сборкам платформы, если они есть. В противном случае возвращает значение `null`.|
 
 ## <a name="remarks"></a>Примечания
-Если установлено несколько версий .NET Framework, эта задача возвращает версию, для которой предназначен [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Если установлено несколько версий .NET Framework, эта задача возвращает версию, для которой предназначен MSBuild.
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
 Следующий пример использует задачу `GetFrameworkPath` для сохранения пути к .NET Framework в свойстве `FrameworkPath`.
 
 ```xml
@@ -61,5 +66,6 @@ ms.locfileid: "77579641"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

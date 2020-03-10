@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9576bdf06593ae3cde3bc29e2585a7ab475671a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566622"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633373"
 ---
 # <a name="msbuild-conditions"></a>Условия MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] поддерживает определенный набор условий, которые можно применять везде, где разрешен атрибут `Condition`. В следующей таблице описаны эти условия.
+
+MSBuild поддерживает определенный набор условий, которые можно применять везде, где разрешен атрибут `Condition`. В следующей таблице описаны эти условия.
 
 |Условие|Описание|
 |---------------|-----------------|
@@ -40,6 +41,7 @@ ms.locfileid: "75566622"
 |$if$ (%expression%), $else$, $endif$|Проверяет, равняется ли значение указанного `%expression%` строковому значению переданного параметра пользовательского шаблона. Если результат проверки условия `$if$` принимает значение `true`, его операторы выполняются, в противном случае проверяется условие `$else$`. Если результат проверки условия `$else$` принимает значение `true`, его операторы выполняются, в противном случае условие `$endif$` завершает проверку выражений.<br /><br /> Примеры использования см. в разделе [Логика параметра-шаблона проекта или элемента Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
 - [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)
 - [Пошаговое руководство: Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
