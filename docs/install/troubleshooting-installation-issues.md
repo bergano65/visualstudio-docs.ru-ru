@@ -17,7 +17,7 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
 ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
-ms.translationtype: HT
+ms.translationtype: HT 
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/16/2020
 ms.locfileid: "76114999"
@@ -37,13 +37,13 @@ ms.locfileid: "76114999"
 
 ::: moniker range="vs-2017"
 
-Существуют несколько известных проблем с установщиком Visual Studio, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
+Существуют несколько известных проблем с Visual Studio Installer, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Существуют несколько известных проблем с установщиком Visual Studio, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](/visualstudio/releases/2019/release-notes#-known-issues).
+Существуют несколько известных проблем с Visual Studio Installer, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](/visualstudio/releases/2019/release-notes#-known-issues).
 
 ::: moniker-end
 
@@ -51,28 +51,28 @@ ms.locfileid: "76114999"
 
 Попробуйте найти полученное сообщение об ошибке в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). Возможно, другие члены сообщества уже описали решение для вашей проблемы.
 
-### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Шаг 3. Удалите каталог с установщиком Visual Studio, чтобы устранить проблемы, связанные с обновлением
+### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением
 
-Загрузчик установщика Visual Studio представляет собой минимально необходимый исполняемый файл небольшого размера, который устанавливает остальную часть установщика Visual Studio. Если вы удалите файлы установщика Visual Studio и повторно запустите загрузчик, это может решить некоторые ошибки, связанные с обновлением.
+Начальный загрузчик Visual Studio Installer представляет собой минимально необходимый исполняемый файл небольшого размера, который устанавливает остальные компоненты Visual Studio Installer. Если вы удалите файлы Visual Studio Installer и повторно запустите начальный загрузчик, это может решить некоторые проблемы, связанные с обновлением.
 
 > [!NOTE]
 > С помощью следующей процедуры можно переустановить файлы Visual Studio Installer и сбросить метаданные установки.
 
 ::: moniker range="vs-2017"
 
-1. Закройте установщик Visual Studio.
-2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
-4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
+1. Закройте Visual Studio Installer.
+2. Удалите каталог Visual Studio Installer. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Запустите начальный загрузчик Visual Studio Installer. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно скачать начальный загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+4. Снова попробуйте установить или обновить Visual Studio. Если запуск Visual Studio Installer снова завершится ошибкой, переходите к следующему шагу.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Закройте установщик Visual Studio.
-2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
-4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
+1. Закройте Установщик Visual Studio.
+2. Удалите каталог Установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Запустите загрузчик Установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+4. Снова попробуйте установить или обновить Visual Studio. Если запуск Установщика снова завершится ошибкой, переходите к следующему шагу.
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ ms.locfileid: "76114999"
 ::: moniker range="vs-2017"
 
 1. Соберите файлы журналов установки. Подробные сведения см. в разделе [Как получить журналы установки Visual Studio](#installation-logs).
-2. Откройте установщик Visual Studio и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
+2. Откройте Visual Studio Installer и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
 ![Чтобы открыть средство обратной связи, можно перейти к кнопе "Предоставление отзыва" с помощью клавиши табуляции](media/report-a-problem.png)
 3. Присвойте заголовок вашему отчету об ошибке и опишите все важные сведения. Нажмите кнопку **Далее**, чтобы перейти к разделу **Вложения**, а затем вложите созданный файл журнала (обычно этот файл находится по пути `%TEMP%\vslogs.zip`).
 4. Щелкните **Далее**, чтобы просмотреть свой отчет об ошибках, а затем нажмите кнопку **Отправить**.
@@ -105,7 +105,7 @@ ms.locfileid: "76114999"
 В качестве последнего средства можно [удалить Visual Studio](remove-visual-studio.md), чтобы удалить все файлы установки и сведения о продукте.
 
 1. Следуйте инструкциям в разделе [Удаление Visual Studio](remove-visual-studio.md).
-2. Повторно запустите загрузчик, описанный в разделе [Шаг 3. Удалите каталог с установщиком Visual Studio, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Повторно запустите начальный загрузчик, описанный в разделе [Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Снова попробуйте установить или обновить Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Шаг 6. Связь с нами (необязательно)
@@ -149,3 +149,4 @@ ms.locfileid: "76114999"
 * [Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+   
