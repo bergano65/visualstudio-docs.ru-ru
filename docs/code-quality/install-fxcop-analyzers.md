@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 78935673dbf57f75988d4c0a9e862b11e2fe855f
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587463"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937531"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "75587463"
 
    ![Установка пакета FxCop Analyzer со страницы свойств в Visual Studio](media/install-fxcop-properties-page.png)
 
-2. Нажмите кнопку **Установить**.
+2. Выберите пункт **Установить**.
 
    Visual Studio устанавливает последнюю версию пакета Microsoft. Кодеанализерс. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **ссылки** > **Analyzer**.
 
@@ -152,8 +152,8 @@ ms.locfileid: "75587463"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор анализаторов кода в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Использование анализаторов кода в Visual Studio](../code-quality/use-roslyn-analyzers.md)
-- [Миграция из устаревшего анализа в анализаторы кода](../code-quality/fxcop-analyzers.yml)
+- [Миграция из устаревшего анализа в анализаторы кода](../code-quality/migrate-from-legacy-analysis-to-fxcop-analyzers.md)
