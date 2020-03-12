@@ -10,9 +10,9 @@
         - name: Обзор
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
-        - name: Установка
+        - name: Установка анализаторов исходного кода
           href: install-roslyn-analyzers.md
-        - name: Параметр Configuration
+        - name: Настройка анализаторов исходного кода
           href: use-roslyn-analyzers.md
         - name: Отключить анализ кода
           href: disable-code-analysis.md
@@ -22,27 +22,24 @@
           href: analyzers-faq.md
         - name: Анализаторы FXCop
           items:
-            - name: Обзор
-              displayName: fxcop analyzers
-              href: fxcop-analyzers.yml
-            - name: Установка
+            - name: "Установка анализаторов\_FxCop"
               href: install-fxcop-analyzers.md
-            - name: Параметр Configuration
+            - name: "Миграция на анализаторы\_FxCop"
               items:
-                - name: Обзор
+                - name: Миграция с анализа прежних версий на анализаторы FxCop
+                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
+                - name: часто задаваемые вопросы
+                  href: fxcop-analyzers-faq.md
+                - name: Перенесенные правила
+                  href: fxcop-rule-port-status.md
+            - name: Настройка анализаторов FxCop
+              items:
+                - name: Настройка правил и проектов
                   href: configure-fxcop-analyzers.md
                 - name: 'Область: параметры'
                   href: fxcop-analyzer-options.md
                 - name: Включение категории правил
                   href: analyzer-rule-sets.md
-            - name: часто задаваемые вопросы
-              href: fxcop-analyzers-faq.md
-        - name: Миграция с анализа прежних версий на анализаторы FxCop
-          items:
-            - name: Обзор
-              href: fxcop-analyzers.yml
-            - name: Перенесенные правила
-              href: fxcop-rule-port-status.md
     - name: Анализ прежних версий
       items:
         - name: Обзор
@@ -50,8 +47,8 @@
           href: static-code-analysis-for-managed-code-overview.md
         - name: Пошаговое руководство по анализу прежних версий
           href: walkthrough-analyzing-managed-code-for-code-defects.md
-        - name: Миграция
-          href: fxcop-analyzers.yml
+        - name: "Миграция на анализаторы\_FxCop"
+          href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Запуск анализа прежних версий вручную
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Параметр Configuration
