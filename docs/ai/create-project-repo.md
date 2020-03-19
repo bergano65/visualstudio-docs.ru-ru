@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 73f1595e0e6c8f182f0bedcece51011390964ed2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62539662"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Клонирование репозитория с кодом Python в Visual Studio
@@ -39,7 +39,7 @@ ms.locfileid: "62539662"
 
 6. В появившемся диалоговом окне **Создание проекта** выберите вариант **На основе существующего кода Python**, укажите имя проекта, задайте папку репозитория в поле **Расположение**, а затем нажмите кнопку **ОК**. В появившемся мастере выберите **Готово**.
 
-7. Последовательно выберите в меню **"Вид" > "Обозреватель решений"**.
+7. Последовательно выберите в меню **"Вид" > "Обозреватель решений"** .
 
 8. В обозревателе решений разверните узел `TensorFlow Examples> MNIST`, щелкните правой кнопкой мыши файл `convolutional.py` и выберите пункт **Задать как файл запуска**. Таким образом вы указываете, какой файл среда Visual Studio должна использовать при запуске проекта.
 
