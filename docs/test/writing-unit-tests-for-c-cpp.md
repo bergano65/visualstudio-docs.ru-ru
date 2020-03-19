@@ -1,19 +1,19 @@
 ---
 title: Написание модульных тестов для C/C++
 description: Вы можете писать модульные тесты для C++ в Visual Studio с помощью различных платформ тестирования, включая CTest, Boost.Test и Google Test.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755585"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78937554"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "75755585"
 
 - Компонент **Boost.Test** включен по умолчанию в рабочую нагрузку **Разработка классических приложений на C++** . Он интегрирован с **обозревателем тестов**, но в настоящее время не имеет шаблона проекта. Его необходимо настроить вручную. Дополнительные сведения см. в разделе [Практическое руководство. Использование Boost.Test для C++ в Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- Поддержка **CTest** включена в компонент **Средства CMake C++** , который входит в рабочую нагрузку **Разработка классических приложений на C++** . Однако CTest пока не полностью интегрирован с **обозревателем тестов**. Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest для C++ в Visual Studio 2017 и более поздних версиях](how-to-use-ctest-for-cpp.md).
+- Поддержка **CTest** включена в компонент **Средства CMake C++** , который входит в рабочую нагрузку **Разработка классических приложений на C++** . Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest для C++ в Visual Studio 2017 и более поздних версиях](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 и более ранние версии**
 

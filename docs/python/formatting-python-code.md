@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957543"
 ---
 # <a name="format-python-code"></a>Форматирование кода Python
@@ -111,7 +111,7 @@ Visual Studio позволяет быстро переформатировать
 
 Команда **Правка** > **Дополнительно** > **Заполнить абзац комментариев** (вызывается клавишами **CTRL**+**E** > **P**) изменяет форматирование текста заметки, объединяя короткие строки и разбивая слишком длинные.
 
-Например:
+Пример:
 
 ```python
 # foo

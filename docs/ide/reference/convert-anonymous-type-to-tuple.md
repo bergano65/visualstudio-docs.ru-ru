@@ -1,26 +1,29 @@
 ---
 title: Преобразование анонимного типа в кортеж
-ms.date: 02/13/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6f5dd8e53ed2e0695370a1cdcb837609be30035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7e89c5b5a05900fe42af62ef87f70292e94e662
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968584"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094279"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Преобразование анонимного типа в кортеж
 
 Область применения этого рефакторинга:
 
 - C#
+
+- Visual Basic
 
 **Что?** Преобразование анонимного типа в кортеж.
 
@@ -31,7 +34,7 @@ ms.locfileid: "62968584"
 ## <a name="how-to"></a>Практические советы
 
 1. Поместите курсор в анонимном типе.
-2. Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
 
    ![Преобразование анонимного типа в кортеж](media/convert-anon-to-tuple.png)
 

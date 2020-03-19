@@ -9,12 +9,12 @@ author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97080d4ee2240725f009505cda8429ba8f5975d5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947688"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64556717"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Как сообщить о проблеме с Visual Studio или Visual Studio Installer
 
@@ -72,7 +72,7 @@ ms.locfileid: "62947688"
 
 1. Откройте вкладку **Запись**.
 
-1. В разделе **Запись действий** выберите текущий экземпляр Visual Studio, если вы можете воспроизвести проблему. Если не можете, например Visual Studio не отвечает, нажмите кнопку  **\<Создать новый экземпляр>**, чтобы записать действия в новом экземпляре Visual Studio.
+1. В разделе **Запись действий** выберите текущий экземпляр Visual Studio, если вы можете воспроизвести проблему. Если не можете, например Visual Studio не отвечает, нажмите кнопку **\<Создать новый экземпляр>** , чтобы записать действия в новом экземпляре Visual Studio.
 
 1. Нажмите кнопку **Начать запись**. Предоставьте разрешение для запуска средства.
 
@@ -122,7 +122,7 @@ ms.locfileid: "62947688"
 
 ## <a name="see-also"></a>См. также
 
-* [Обратная связь](../ide/talk-to-us.md)
+* [Параметры обратной связи Visual Studio](../ide/feedback-options.md)
 * [Сообщение о проблеме в Visual Studio для Mac](/visualstudio/mac/report-a-problem)
 * [Сообщение о проблеме в C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Сообщество разработчиков Visual Studio](https://developercommunity.visualstudio.com/)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 25f61b68249dfab7faf04c5e0460800947275db4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779471"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
@@ -47,5 +47,5 @@ ms.locfileid: "74779471"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Анализ представлений и отчетов данных об использовании памяти .NET
 - [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 - [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)

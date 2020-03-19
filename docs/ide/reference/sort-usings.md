@@ -1,27 +1,30 @@
 ---
-title: Сортировка директив using
+title: Сортировать директивы using
 description: Как отсортировать директивы `using` в верхней части файла, чтобы они располагались в алфавитном порядке.
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: de568398b0f12384ee5e913c479da3e6ab61bab8
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329067"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093783"
 ---
 # <a name="sort-usings"></a>Сортировка директив using
 
 Область применения этого рефакторинга:
 
 - C#
+
+- Visual Basic
 
 **Что?** Сортировка директив using.
 
@@ -34,7 +37,7 @@ ms.locfileid: "67329067"
 1. В строке меню выберите **Изменить**.
 2. Выберите **IntelliSense** > **Сортировать директивы using**.
 
-   ![Сортировка директив using](media/sort-usings.png)
+   ![Сортировать директивы using](media/sort-usings.png)
 
 ## <a name="see-also"></a>См. также
 

@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531920"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Использование тела выражения или блока для лямбда-выражений
@@ -31,7 +31,7 @@ ms.locfileid: "65531920"
 ## <a name="lambda-expression-body-or-block-body-refactoring"></a>Рефакторинг тела выражения или блока для лямбда-выражений
 
 1. Поместите курсор справа от лямбда-оператора.
-2. Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
 
   ![Использование тела лямбда-выражения или блока](media/block-body-lambda.png)
 

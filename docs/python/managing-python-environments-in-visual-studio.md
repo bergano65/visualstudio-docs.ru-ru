@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661945"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307163"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Как создавать окружения Python в Visual Studio и управлять ими
 
@@ -157,7 +157,7 @@ Visual Studio предоставляет прямую поддержку для 
 
 1. Настройте следующие поля:
 
-    | Поле | ОПИСАНИЕ |
+    | Поле | Описание |
     | --- | --- |
     | Проект | Проект, в котором вы создаете окружение (если в вашем решении Visual Studio есть несколько проектов). |
     | name | Имя среды Conda. |

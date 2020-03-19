@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779554"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
@@ -122,7 +122,7 @@ ms.locfileid: "74779554"
 
 1. Откройте окно командной строки.
 
-2. Тип
+2. Type
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**,
 
