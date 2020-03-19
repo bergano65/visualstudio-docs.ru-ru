@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9780a4ee81a4d063b5cfb7f66b1a5ea023d8fa2f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75573408"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Кодирование пользовательского правила проверки для веб-теста производительности
@@ -243,7 +243,7 @@ Namespace SampleWebTestRules
 End Namespace
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

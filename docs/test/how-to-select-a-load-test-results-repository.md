@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. выбор репозитория результатов нагрузочного теста
+title: Практическое руководство. Выбор хранилища результатов нагрузочного теста.
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,13 +16,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589010"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Практическое руководство. выбор репозитория результатов нагрузочного теста
+# <a name="how-to-select-a-load-test-results-repository"></a>Практическое руководство. Выбор репозитория результатов нагрузочного теста
 
 Не обязательно использовать локальное хранилище результатов. Нагрузочные тесты зачастую выполняются на наборе удаленных компьютеров агентов. Агенты совместно с контролером могут создавать большую имитационную нагрузку, чем любой одиночный компьютер. Дополнительные сведения см. в статье [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589010"
 
 8. В диалоговом окне **Управление контроллером тестирования** нажмите кнопку **Закрыть**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md)

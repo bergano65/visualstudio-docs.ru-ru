@@ -13,13 +13,13 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568884"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Пошаговое руководство. Создание и выполнение модульных тестов для приложений UWP
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Пошаговое руководство. Создание и запуск модульных тестов для приложений UWP
 
 Visual Studio поддерживает модульное тестирование приложений универсальной платформы Windows (UWP). Visual Studio предоставляет шаблоны проектов модульных тестов для C#, Visual Basic и C++.
 
@@ -93,7 +93,7 @@ Visual Studio поддерживает модульное тестировани
 
 В редакторе кода добавьте модульный тест и включите необходимые утверждения и логику.
 
-## <a name="run-unit-tests"></a>Запуск модульных тестов
+## <a name="run-unit-tests"></a>Выполнение модульных тестов
 
 Чтобы выполнить сборку решения и модульный тест с помощью обозревателя тестов, сделайте следующее:
 
@@ -123,7 +123,7 @@ Visual Studio поддерживает модульное тестировани
 
    ![Обозреватель модульных тестов &#45; тест завершен](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Тестирование приложений UWP в Visual Studio](../test/unit-test-your-code.md)
 - [Построение и тестирование приложения универсальной платформы Windows](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

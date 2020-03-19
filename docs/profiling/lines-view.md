@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773985"
 ---
 # <a name="lines-view"></a>Представление строк
@@ -43,7 +43,7 @@ ms.locfileid: "74773985"
 
 - знаком исходной строки, которой заканчивается оператор.
 
-## <a name="see-also"></a>См. также
-- [Представление "Строки"](../profiling/lines-view-sampling-data.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление строк](../profiling/lines-view-sampling-data.md)
 - [Представление "Строки" — выборка](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Представление "Строки"](../profiling/lines-view-contention-data.md)
+- [Представление строк](../profiling/lines-view-contention-data.md)

@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824773"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306965"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Начало работы с инструментами Visual Studio для Unity
 
@@ -43,7 +43,7 @@ ms.locfileid: "62824773"
 
 - [Обновление Visual Studio](../install/update-visual-studio.md)
 
-### <a name="manual-installation"></a>Установка вручную
+### <a name="manual-installation"></a>Ручная установка
 
 Если у вас уже установлен Visual Studio 2017 или вы предпочитаете выполнить установку вручную, запустите установщик Visual Studio.
 
@@ -67,11 +67,11 @@ ms.locfileid: "62824773"
 
 2. В диалоговом окне параметров откройте вкладку **Внешние инструменты**.
 
-3. В раскрывающемся списке **внешнего редактора скриптов** выберите необходимую версию элемента Visual Studio, если она присутствует, в противном случае нажмите кнопку **Обзор...**.
+3. В раскрывающемся списке **внешнего редактора скриптов** выберите необходимую версию элемента Visual Studio, если она присутствует, в противном случае нажмите кнопку **Обзор...** .
 
    ![Выберите Visual Studio](media/vstu_unity-external-tools.png)
 
-4. Если было выбрано **Обзор...**, необходимо перейти в каталог **Common7/IDE**, находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем щелкните **Открыть**.
+4. Если было выбрано **Обзор...** , необходимо перейти в каталог **Common7/IDE**, находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем щелкните **Открыть**.
 
    ![Выберите "Открыть"](media/vstu_browse-for-application.png)
 
@@ -91,6 +91,6 @@ ms.locfileid: "62824773"
 > Для инструментов Visual Studio для Unity требуется Unity версии не ниже чем 5.2, а также версия Visual Studio, поддерживающая расширения, например Visual Studio Community, Professional, Premium или Enterprise. Чтобы убедиться, что Инструменты Visual Studio для Unity включены в вашу версию Unity, выберите **About Unity** (О программе Unity) в меню **Справка** и найдите текст "Microsoft Visual Studio Tools for Unity enabled" (Инструменты Microsoft Visual Studio для Unity включены) в левом нижнем углу диалогового окна.
 > ![О программе Unity](media/vstu_about-unity.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Сведения о работе с проектом Unity и его отладке в Visual Studio см. в статье [Инструменты Visual Studio для Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

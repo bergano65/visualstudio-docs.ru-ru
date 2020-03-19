@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589231"
 ---
 # <a name="formatting-conventions"></a>Соглашения по форматированию
@@ -34,7 +34,7 @@ ms.locfileid: "75589231"
 
 `rule_name = value`
 
-Для большинства правил вы указываете значение `true` (предпочитать этот стиль) или `value` (не предпочитать этот стиль) для `false`. Для нескольких правил указываются другие значения, например `flush_left` или `before_and_after`, которые описывают порядок применения этих правил. Уровень серьезности указывать не нужно.
+Для большинства правил вы указываете значение `true` (предпочитать этот стиль) или `false` (не предпочитать этот стиль) для `value`. Для нескольких правил указываются другие значения, например `flush_left` или `before_and_after`, которые описывают порядок применения этих правил. Уровень серьезности указывать не нужно.
 
 ## <a name="net-formatting-settings"></a>Параметры форматирования .NET
 
@@ -1210,7 +1210,7 @@ public int MyProperty
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Языковые соглашения](editorconfig-language-conventions.md)
 - [Соглашения об именовании](editorconfig-naming-conventions.md)

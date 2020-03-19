@@ -10,10 +10,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585773"
 ---
 # <a name="preview-changes-window"></a>Окно просмотра изменений
@@ -28,7 +28,7 @@ ms.locfileid: "75585773"
 
 После просмотра изменений нажмите кнопку **Применить** для подтверждения изменений или нажмите кнопку **Отмена**, чтобы оставить все как есть.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг в Visual Studio](../ide/refactoring-in-visual-studio.md)
 - [Быстрые действия](../ide/quick-actions.md)

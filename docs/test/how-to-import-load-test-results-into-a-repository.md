@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. импорт результатов нагрузочного тестирования в репозиторий
+title: Практическое руководство. Импорт результатов нагрузочного тестирования в репозиторий
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbc8c352c7bf3cda0524f07aa82b6ccbe70602b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589036"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Практическое руководство. импорт результатов нагрузочного тестирования в репозиторий
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Практическое руководство. Импорт результатов нагрузочного тестирования в репозиторий
 
 При выполнении нагрузочного теста данные, собранные во время тестового запуска, сохраняются в репозитории результатов нагрузочных тестов. В репозитории результатов нагрузочных тестов содержатся данные счетчиков производительности и сведения о всех ошибках. Дополнительные сведения см. в статье [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -53,8 +53,8 @@ ms.locfileid: "75589036"
 
      Результаты импортируются и отобразятся в списке **Результаты нагрузочного теста**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство. экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Практическое руководство. Экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)

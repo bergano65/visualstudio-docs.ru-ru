@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. удаление результатов нагрузочного тестирования из репозитория
+title: Практическое руководство. Удаление результатов нагрузочного тестирования из репозитория
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26dc9750a2bf2eaf5d0ee5dd3d08485c458bb74a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589062"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Практическое руководство. удаление результатов нагрузочного тестирования из репозитория
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Практическое руководство. Удаление результатов нагрузочного тестирования из репозитория
 
 При выполнении нагрузочного теста данные, собранные во время тестового запуска, сохраняются в репозитории нагрузочных тестов. В репозитории результатов нагрузочных тестов содержатся данные счетчиков производительности и сведения о всех ошибках. Дополнительные сведения см. в статье [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -51,9 +51,9 @@ ms.locfileid: "75589062"
     > [!NOTE]
     > После удаления результатов диалоговое окно **Открытие и обработка результатов нагрузочных тестов** остается открытым.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Практическое руководство. Экспорт результатов нагрузочного тестирования из репозитория](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство. импорт результатов нагрузочного тестирования в репозиторий](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Практическое руководство. Импорт результатов нагрузочного тестирования в репозиторий](../test/how-to-import-load-test-results-into-a-repository.md)

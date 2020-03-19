@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169395"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "78169395"
 > [!NOTE]
 > Адаптер диагностических данных профилировщика ASP.NET профилирует процесс служб IIS. Поэтому он не будет работать для веб-сервера разработки. Для профилирования веб-сайта в нагрузочном тесте необходимо установить агент тестирования на компьютере, на котором выполняется сервер IIS. Этот агент тестирования будет использоваться не для создания нагрузки, а только для сбора данных. Дополнительные сведения см. в статье [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md).
 
-Дополнительные сведения см. в разделе [Практическое руководство. Создание параметра тестирования для распределенного нагрузочного теста](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Дополнительные сведения см. в статье [Практическое руководство. Создание параметра тестирования для распределенного нагрузочного теста](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Настройка профилировщика ASP.NET для параметров тестирования
 
@@ -58,7 +58,7 @@ ms.locfileid: "78169395"
 
 Настроенный в параметре тестирования адаптер диагностических данных профилировщика ASP.NET позволяет собирать данные профилирования ASP.NET для веб-приложения ASP.NET.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сбор диагностических данных с помощью параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md)
 - [Практическое руководство. Создание параметра тестирования для распределенного нагрузочного теста](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)

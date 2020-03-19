@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ddb082bf2451759be239d5c16404e82bcd84733
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77578160"
 ---
 # <a name="analyze-memory-usage"></a>Анализ данных об использовании памяти
@@ -27,15 +27,15 @@ ms.locfileid: "77578160"
 
 Подробные инструкции по использованию средств анализа памяти см. в руководстве [Анализ использования памяти](../profiling/memory-usage.md) и разделе [Средство распределения объектов .NET](../profiling/dotnet-alloc-tool.md).
 
-Можно использовать средства профилирования без отладчика с Windows 7 и более поздних версий. Для запуска средств профилирования с отладчиком (окно **Средства диагностики**) требуется Windows 8 и более поздние версии.
+Можно использовать средства профилирования без отладчика с Windows 7 и более поздних версий. Для запуска средств профилирования с отладчиком (окно **Средства диагностики**) требуется Windows 8 и более поздние версии.
 
 ## <a name="blogs-and-videos"></a>Блоги и видео
 
 [Анализ ресурсов ЦП и памяти во время отладки](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Блог по Visual C++. Профилирование памяти в Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Блог по Visual C++. Профилирование памяти в Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05b9f83fa7c80769ea3c584e2885c8fb1db24176
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633464"
 ---
 # <a name="move-task"></a>Move - задача
@@ -31,7 +31,7 @@ ms.locfileid: "77633464"
 
  В следующей таблице описаны параметры задачи `Move`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`DestinationFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список файлов, в который будут перемещены исходные файлы. Предполагается, что этот список будет взаимно-однозначно сопоставляться со списком, указанным в параметре `SourceFiles`. Для перемещения первого файла из списка `SourceFiles` используется первый путь из списка `DestinationFiles` и т. д.|
 |`DestinationFolder`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает каталог, в который вы хотите переместить файлы.|
@@ -39,7 +39,7 @@ ms.locfileid: "77633464"
 |`OverwriteReadOnlyFiles`|Необязательный параметр `Boolean`.<br /><br /> Значение `true` означает, что нужно перезаписывать даже файлы, доступные только для чтения.|
 |`SourceFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы для перемещения.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Можно указать либо параметр `DestinationFolder`, либо параметр `DestinationFiles`, но не оба одновременно. В противном случае задача прерывает работу и в журнале регистрируется ошибка.
 
@@ -47,7 +47,7 @@ ms.locfileid: "77633464"
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

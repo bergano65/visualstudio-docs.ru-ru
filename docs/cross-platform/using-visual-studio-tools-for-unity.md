@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916571"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306959"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Использование инструментов Visual Studio для Unity
 
@@ -113,7 +113,7 @@ ms.locfileid: "75916571"
 
 3. Когда игра запущена в редакторе Unity при подключении к Visual Studio, все проходимые точки останова будут приостанавливать выполнение игры и выводить соответствующую строку кода в Visual Studio.
 
-#### <a name="stop-debugging"></a>Остановка отладки
+#### <a name="stop-debugging"></a>Остановить отладку
 
 - В Visual Studio нажмите кнопку **Стоп** или используйте сочетание клавиш **SHIFT + F5**.
 
@@ -157,7 +157,7 @@ ms.locfileid: "75916571"
 
    ![Выберите экземпляр Unity, к которому необходимо подключиться.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
-   **Project**
+   **Проект**
 
    Имя проекта Unity, который выполняется в этом экземпляре Unity.
 
@@ -206,11 +206,11 @@ ms.locfileid: "75916571"
 
 4. Выполните отладку своего кода. Теперь вы можете отлаживать свой исходный код DLL вместе с исходным кодом проекта Unity и использовать все доступные функции, например точки останова и пошаговое выполнение кода.
 
-## <a name="keyboard-shortcuts"></a>Сочетания клавиш
+## <a name="keyboard-shortcuts"></a>сочетания клавиш
 
 Для быстрого доступа средств Unity к функциям Visual Studio можно использовать соответствующие сочетания клавиш. Ниже приведен список таких сочетаний клавиш.
 
-|Команда|Сочетание клавиш|Имя контекстной команды|
+|Get-Help|Клавиша|Имя контекстной команды|
 |-------------|--------------|---------------------------|
 |Открыть мастер MonoBehavior|**CTRL**+**SHIFT**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Открыть обозреватель проектов Unity|**ALT**+**SHIFT**+**E**|**View.UnityProjectExplorer**|

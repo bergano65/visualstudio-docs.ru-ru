@@ -24,15 +24,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114554"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Создание и очистка проектов и решений в Visual Studio
 
-Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md).
+Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Создание и очистка проектов и решений в Visual Studio для Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -111,9 +111,9 @@ ms.locfileid: "76114554"
 
 - Нажмите клавиши **CTRL**+**BREAK**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)
 - [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md)

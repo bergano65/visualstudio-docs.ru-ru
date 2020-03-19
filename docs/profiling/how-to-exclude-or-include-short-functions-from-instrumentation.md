@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de6d6325b1e518146768798c773754c091861aa8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775918"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Практическое руководство. Исключение и включение малых функций при инструментировании
@@ -31,7 +31,7 @@ ms.locfileid: "74775918"
 
 2. В окне **Страницы свойств** щелкните свойства **Инструментирование**.
 
-3. Чтобы исключить малые функции из инструментирования, выберите **Исключить малые функции из инструментирования**. Этот параметр используется по умолчанию.
+3. Чтобы исключить малые функции из инструментирования, выберите **Исключить малые функции из инструментирования**. Это параметр по умолчанию.
 
      -или-
 
@@ -39,6 +39,6 @@ ms.locfileid: "74775918"
 
 4. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Управление сбором данных](../profiling/controlling-data-collection.md)
 - [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)

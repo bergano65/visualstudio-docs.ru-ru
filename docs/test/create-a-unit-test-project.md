@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 313083090c94c94f4e196e87f3bf6cf6df36e118
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565257"
 ---
 # <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
@@ -55,7 +55,7 @@ ms.locfileid: "75565257"
 
    Если код, который требуется протестировать, находится в другом месте, сведения о добавлении ссылок см. в разделе [Управление ссылками в проекте](../ide/managing-references-in-a-project.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 См. один из следующих разделов:
 

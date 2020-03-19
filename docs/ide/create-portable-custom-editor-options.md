@@ -8,11 +8,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408483"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306917"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -66,7 +66,7 @@ ms.locfileid: "78408483"
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- корневой
+- root
 
 Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md), в том числе соглашения о [языке](../ide/editorconfig-language-conventions.md), [форматировании](../ide/editorconfig-formatting-conventions.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
 
@@ -82,7 +82,7 @@ ms.locfileid: "78408483"
 
 1. В строке меню выберите **Проект** > **Добавить новый элемент** либо нажмите сочетание клавиш **CTRL**+**SHIFT**+**A**.
 
-   Откроется диалоговое окно **Добавление нового элемента**.
+   Откроется диалоговое окно **Добавление нового элемента** .
 
 1. В поле поиска введите строку **editorconfig**.
 
@@ -178,7 +178,7 @@ dir .editorconfig /s
 
 Управлять областью действия соглашений EditorConfig можно с помощью свойства ```root=true``` в файле *EDITORCONFIG*, который находится в корне репозитория или в каталоге, где размещается проект. В Visual Studio поиск файла *EDITORCONFIG* выполняется в каталоге, где находится открытый файл, и во всех его родительских каталогах. Поиск завершается по достижении корня пути к файлу или при нахождении файла *EDITORCONFIG* с ```root=true```.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)

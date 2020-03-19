@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569287"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Создание переопределений для методов Equals и GetHashCode в Visual Studio
@@ -32,7 +32,7 @@ ms.locfileid: "75569287"
 
 - Переопределите метод **GetHashCode**, чтобы тип правильно работал в хэш-таблице. Дополнительные сведения см. в руководстве по [операторам равенства](/dotnet/standard/design-guidelines/equality-operators).
 
-## <a name="how-to"></a>Практические советы
+## <a name="how-to"></a>Практическое руководство
 
 1. Поместите курсор в любую позицию на строке объявления типа.
 
@@ -41,7 +41,7 @@ ms.locfileid: "75569287"
    > [!TIP]
    > Не выбирайте имя типа двойным щелчком, иначе параметр меню будет недоступен. Просто установите курсор в любую позицию на строке.
 
-1. Затем выполните одно из следующих действий:
+1. Затем выполните одно из следующих действий.
 
    - Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
 
@@ -64,7 +64,7 @@ ms.locfileid: "75569287"
 
    ![Результат создания метода](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание кода](../code-generation-in-visual-studio.md)
 - [Просмотр изменений](../../ide/preview-changes.md)

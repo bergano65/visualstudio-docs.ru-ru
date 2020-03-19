@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779939"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -58,6 +58,6 @@ ms.locfileid: "74779939"
 |**/detach**|Остановить сбор данных без прекращения работы целевых процессов.|
 |**/status**|Показать состояние профилировщика.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Средства оценки производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

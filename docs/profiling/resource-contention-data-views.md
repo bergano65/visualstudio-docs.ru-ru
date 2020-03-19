@@ -13,16 +13,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771534"
 ---
 # <a name="resource-contention-data-views"></a>Представления данных о конфликтах ресурсов
 В этом разделе содержатся справочные сведения о представлениях и отчетах по файлам данных профилировщика, содержащих данные профилирования состязаний потоков.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 - [Сводное представление —-данные профилировщика по состязаниям](../profiling/resource-contention-data-views.md)
 
  Отображает графическую временную шкалу данных профилирования, а также список функций и ресурсов, задействованных в большинстве событий блокировки.
@@ -55,11 +55,11 @@ ms.locfileid: "74771534"
 
  Содержит список данных по состязаниям за ресурсы по заблокированным ресурсам.
 
-- [Представление "Строки"](../profiling/lines-view-contention-data.md)
+- [Представление строк](../profiling/lines-view-contention-data.md)
 
  Содержит список данных по состязаниям за ресурсы по строкам исходного кода.
 
-- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-contention-data.md)
+- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-contention-data.md)
 
  Содержит список состязаний за ресурсы по инструкциям.
 
@@ -67,7 +67,7 @@ ms.locfileid: "74771534"
 
  Содержит список состязаний за ресурсы по процессам и потокам.
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 - [Представление "Сведения о функции"](../profiling/function-details-view.md)
 
  Отображает графическую схему связей между выбранной функцией и функциями, которые вызывали выбранную функцию и вызывались ею.

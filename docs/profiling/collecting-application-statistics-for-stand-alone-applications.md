@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de399bf493e328e583bdd2765822ca3a66144698
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779640"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Сбор статистики по автономным приложениям с помощью командной строки профилировщика
@@ -25,9 +25,9 @@ ms.locfileid: "74779640"
 > [!NOTE]
 > Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. Дополнительные сведения см. в статье [Средства оценки производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="common-tasks"></a>Типичные задачи
+## <a name="common-tasks"></a>Стандартные задачи
 
-|Задача|Связанная информация|
+|Задача|См. также|
 |----------|---------------------|
 |**Запуск приложения с использованием профилировщика**|-   [Практическое руководство. Запуск автономного приложения и сбор статистики приложения](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
 |**Присоединение профилировщика к выполняющемуся приложению .NET Framework**|-   [Практическое руководство. Присоединение профилировщика к приложению .NET Framework для сбора статистики приложения](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
@@ -38,7 +38,7 @@ ms.locfileid: "74779640"
 
 ### <a name="profile-stand-alone-applications"></a>Профилирование автономных приложений
 
-|Задача|Связанная информация|
+|Задача|См. также|
 |----------|---------------------|
 |**Инструментирование приложения**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Сбор данных о выделении памяти .NET и сборке мусора**|-   [Сбор данных об использовании памяти .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
@@ -46,7 +46,7 @@ ms.locfileid: "74779640"
 
 ### <a name="profile-by-using-the-sampling-method"></a>Профилирование с помощью метода выборки
 
-|Задача|Связанная информация|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование веб-приложений ASP.NET**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Профилирование служб**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md) Содержит описание сбора статистики о производительности служб Windows с помощью метода выборки.|

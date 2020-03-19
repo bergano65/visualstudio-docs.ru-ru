@@ -6,10 +6,10 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585487"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Подключение к проектам в Team Explorer
@@ -40,7 +40,7 @@ ms.locfileid: "75585487"
 > [!TIP]
 > Если вам необходимо создать новый проект или добавить пользователей в существующий, ознакомьтесь со статьями [Создание проекта (Azure DevOps)](/azure/devops/organizations/projects/create-project) и [Добавление пользователей в проект или команду (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справка по Team Explorer](reference/team-explorer-reference.md)
 - [Подключение к проекту (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

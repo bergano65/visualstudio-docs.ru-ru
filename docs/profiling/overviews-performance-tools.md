@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772688"
 ---
 # <a name="overviews-performance-tools"></a>Обзоры (средства оценки производительности)
 В данном разделе представлены концептуальные и терминологические обзоры средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], используемых для измерения характеристик производительности разрабатываемого приложения.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
 
  Сведения об основах профилирования с использованием средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -56,7 +56,7 @@ ms.locfileid: "74772688"
 
  Сведения о проблемах сбора данных выборки и профилирования приложений в нескольких сеансах в [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Начало работы](../profiling/getting-started-with-performance-tools.md)
 - [Обозреватель производительности](../profiling/performance-explorer.md)

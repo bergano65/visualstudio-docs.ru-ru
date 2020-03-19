@@ -1,5 +1,5 @@
 ---
-title: Дополнительные возможности
+title: Дополнительные функции
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78235203"
 ---
 # <a name="features-of-visual-studio"></a>Возможности Visual Studio
@@ -40,7 +40,7 @@ ms.locfileid: "78235203"
 
 Visual Studio предлагает набор инструментов, позволяющих с легкостью создавать облачные приложения на базе Microsoft Azure. Она упрощает настройку, сборку, отладку, упаковку и развертывание приложений и служб в Microsoft Azure прямо из IDE. Чтобы получить инструменты Azure и шаблоны проектов, при установке Visual Studio выберите рабочую нагрузку **Разработка для Azure**.
 
-![Рабочая нагрузка "Разработка для Azure"](../data-tools/media/azure-development-workload.png)
+![Рабочая нагрузка "Разработка для Azure".](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
@@ -136,7 +136,7 @@ Team Foundation Server (TFS) — это центр управления жиз�
 
 Дополнительные сведения о расширении среды IDE Visual Studio см. [здесь](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)
 - [Новые возможности Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)

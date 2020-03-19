@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596415"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
@@ -33,15 +33,15 @@ ms.locfileid: "75596415"
 
 В следующей таблице содержится список предопределенных псевдонимов команд Visual Studio. Некоторые имена команд имеют несколько предварительно определенных псевдонимов. Щелкните ссылки для имен команд, чтобы открыть разделы, в которых подробно объясняются правильный синтаксис, аргументы и параметры для этих команд.
 
-|Имя команды|Alias|Полное имя|
+|Имя команды|Псевдоним|Полное имя|
 |------------------|-----------|-------------------|
 |[Команда "Печать"](../../ide/reference/print-command.md)|?|Debug.Print|
 |[Команда "Быстрая проверка"](../../ide/reference/quick-watch-command.md)|??|Debug.QuickWatch|
 |Добавление нового проекта|AddProj|File.AddNewProject|
-|[Команда Alias](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
+|[Команда Alias](../../ide/reference/alias-command.md)|Псевдоним|Tools.Alias|
 |Видимые - окно|Автоматические|Debug.Autos|
 |Точки останова - окно|bl|Debug.Breakpoints|
-|Точка останова|bp|Debug.ToggleBreakpoint|
+|Переключить точку останова|bp|Debug.ToggleBreakpoint|
 |Стек вызовов - окно|CallStack|Debug.CallStack|
 |Clear Bookmarks|ClearBook|Edit.ClearBookmarks|
 |Закрыть|Закрыть|File.Close|
@@ -53,7 +53,7 @@ ms.locfileid: "75596415"
 |[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI|da|Debug.ListMemory /Ansi|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) в однобайтовом формате|db|Debug.ListMemory /Format:OneByte|
 |[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI с 4-байтовым форматом|dc|Debug.ListMemory /Format:FourBytes /Ansi|
-|[Команда List Memory](../../ide/reference/list-memory-command.md) в четырехбайтовом формате|dd|Debug.ListMemory /Format:FourBytes|
+|[Команда List Memory](../../ide/reference/list-memory-command.md) в четырехбайтовом формате|дд|Debug.ListMemory /Format:FourBytes|
 |Удалить до начала строки|DelBOL|Edit.DeleteToBOL|
 |Удалить до конца строки|DelEOL|Edit.DeleteToEOL|
 |Удалить пустое пространство по горизонтали|DelHSp|Edit.DeleteHorizontalWhitespace|
@@ -66,7 +66,7 @@ ms.locfileid: "75596415"
 |Exit|Exit|File.Exit|
 |Форматировать выделенный фрагмент|format|Edit.FormatSelection|
 |Во весь экран|Полный экран|View.FullScreen|
-|[Команда Start](../../ide/reference/start-command.md)|н|Debug.Start|
+|[Команда Start](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Команда "Перейти"](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Перейти к скобке|GotoBrace|Edit.GotoBrace|
 |F1Help|Справка|Help.F1Help|
@@ -88,7 +88,7 @@ ms.locfileid: "75596415"
 |[Команда ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Следующая закладка|NextBook|Edit.NextBookmark|
 |[Команда "Создать файл"](../../ide/reference/new-file-command.md)|nf|File.NewFile|
-|Создание проекта|np NewProj|File.NewProject|
+|Создать проект|np NewProj|File.NewProject|
 |[Команда "Открыть файл"](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Команда "Открыть проект"](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Свернуть в определения/прекратить показ структуры|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
@@ -97,12 +97,12 @@ ms.locfileid: "75596415"
 |Шаг с выходом|pr|Debug.StepOut|
 |Предыдущая закладка|PrevBook|Edit.PreviousBookmark|
 |Печать файла|print|File.Print|
-|Окно "Свойства"|props|View.PropertiesWindow|
+|Окно «Свойства»|props|View.PropertiesWindow|
 |Остановить|q|Debug.StopDebugging|
-|Повторить|redo|Edit.Redo|
+|Повторить|повтор|Edit.Redo|
 |Регистры - окно|регистры|Debug.Registers|
 |Выполнить до текущей позиции|rtc|Debug.RunToCursor|
-|Сохранить выбранные элементы|save|File.SaveSelectedItems|
+|Сохранить выбранные элементы|Сохранить|File.SaveSelectedItems|
 |Сохранить все|SaveAll|File.SaveAll|
 |Сохранить как|SaveAs|File.SaveSelectedItemsAs|
 |[Команда "Оболочка"](../../ide/reference/shell-command.md)|оболочка|Tools.Shell|
@@ -118,15 +118,15 @@ ms.locfileid: "75596415"
 |Окно "Панель элементов"|панель элементов|View.Toolbox|
 |[Команда "Вывести дизассемблированный код"](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Все прописные|Ucase|Edit.MakeUppercase|
-|Отменить|undo|Edit.Undo|
+|Отмена|отмена|Edit.Undo|
 |Отменить заполнение выделенного фрагмента знаками табуляции|Untabify|Edit.UntabifySelection|
 |Контрольные значения - окно|Контрольное значение|Debug.WatchN|
 |Включить перенос по словам|WordWrap|Edit.ToggleWordWrap|
 |Вывести процессы|&#124;|Debug.ListProcesses|
 |[Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)

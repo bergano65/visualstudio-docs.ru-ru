@@ -17,10 +17,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113843"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Каталог компонентов для Visual Studio Feedback Client
@@ -34,33 +34,33 @@ ms.locfileid: "76113843"
 * По вашему желанию вы можете включить в установку **рекомендованные** и (или) **дополнительные** компоненты.
 * Мы также добавили отдельный раздел для дополнительных компонентов, которые не связаны с конкретными рабочими нагрузками.
 
-Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в разделе [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в статье [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Руководство по переносу проектов расширения среды на Visual Studio 2017).
 
 Дополнительные сведения об использовании идентификаторов см. в статье [Использование параметров командной строки для установки версии-кандидата Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Список идентификаторов рабочих нагрузок и компонентов для других продуктов вы найдете в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="feedback-client"></a>клиент Feedback Client
 
-**Идентификатор:** Microsoft.VisualStudio.Workload.FeedbackClient
+**Идентификатор.** Microsoft.VisualStudio.Workload.FeedbackClient
 
 **Описание.** Feedback Client позволяет заинтересованным лицам предоставлять подробные отзывы об Azure DevOps Services или Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Version | Тип зависимости
+Идентификатор компонента | Имя | Версия | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Обязательное значение
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Обязательно
 
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | name | Version
+Идентификатор компонента | Имя | Версия
 --- | --- | ---
-Н/Д | Н/Д | Н/Д
+Недоступно | Недоступно | Недоступно
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)

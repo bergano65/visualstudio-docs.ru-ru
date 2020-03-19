@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594309"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307001"
 ---
 # <a name="attribute-glossary"></a>Глоссарий атрибутов
 
@@ -245,6 +245,6 @@ class CtorTest(int capacity) {
 
 [Дополнительные сведения](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>Хотите оставить отзыв?
+## <a name="got-feedback"></a>Хотите отправить отзыв?
 
 Делитесь своими идеями и пожеланиями относительно новых функций в [сообществе разработчиков](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

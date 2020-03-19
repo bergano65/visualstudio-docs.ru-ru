@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Очистка сборки | Документация Майкрософт
+title: Практическое руководство. Очистка сборки | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633919"
 ---
 # <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка сборки
@@ -103,9 +103,9 @@ ms.locfileid: "77633919"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задача MakeDir](../msbuild/makedir-task.md)
 - [Задача RemoveDir](../msbuild/removedir-task.md)
 - [Задача Csc](../msbuild/csc-task.md)
-- [Целевые объекты](../msbuild/msbuild-targets.md)
+- [Цели](../msbuild/msbuild-targets.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568689"
 ---
 # <a name="list-registers-command"></a>Команда List Registers
@@ -32,14 +32,14 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
 /Display [{`register`&#124;`registerGroup`}...]
 
 Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:
 
 `Debug.ListRegisters /Display eax`
 
-эквивалентно
+эквивалентно правилу
 
 `Debug.ListRegisters eax`
 
@@ -55,17 +55,17 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 Удаляет одно или несколько значений `register` или `registerGroup` из списка.
 
-## <a name="remarks"></a>Примечания
-Вместо `Debug.ListRegisters` можно использовать псевдоним `r`.
+## <a name="remarks"></a>Remarks
+Вместо `r` можно использовать псевдоним `Debug.ListRegisters`.
 
 ## <a name="example"></a>Пример
-Этот пример использует псевдоним `r` для `Debug.ListRegisters`, чтобы отобразить значения группы регистров `Flags`.
+Этот пример использует псевдоним `Debug.ListRegisters` для `r`, чтобы отобразить значения группы регистров `Flags`.
 
 ```cmd
 r /Display Flags
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Общие сведения об отладке: окно регистров](../../debugger/debugging-basics-registers-window.md)

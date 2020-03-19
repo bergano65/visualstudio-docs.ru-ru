@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944208"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307253"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
 
@@ -39,7 +39,7 @@ Visual Studio отображает уведомление на желтой па
 
 Если отключить автоматическое восстановление файлов, быстро перейти к нужным файлам можно с помощью одной из команд [Перейти к](../ide/go-to.md):
 
-- Чтобы использовать общие функции **Перейти к**, выберите **Изменить** > **Перейти к** > **Перейти ко всем** или нажмите **CTRL**+**T**.
+- Чтобы использовать общие функции **Перейти к**, выберите **Изменить** > **Перейти к** > **Перейти ко всем** или нажмите  **CTRL**+**T**.
 
 - Перейдите к последней правке в решении, выбрав **Изменить** > **Перейти к** > **Перейти к последнему изменению** или нажав **CTRL**+**SHIFT**+**BACKSPACE**.
 
@@ -137,7 +137,7 @@ Visual Studio отображает уведомление на желтой па
 
 Подробное описание сборщика мусора CLR см. в статье [Основы сборки мусора](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Оптимизация производительности Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Быстрая загрузка решений (блог по Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

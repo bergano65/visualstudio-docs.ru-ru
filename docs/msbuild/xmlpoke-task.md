@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588386"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke - задача
@@ -29,16 +29,16 @@ ms.locfileid: "75588386"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `XmlPoke` .
+ В следующей таблице приводятся параметры задачи `XmlPoke`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`Namespaces`|Необязательный параметр `String`.<br /><br /> Задает пространства имен для префиксов запроса XPath. `Namespaces` — это фрагмент кода XML, состоящий из элементов `Namespace` с атрибутами `Prefix` и `Uri`. Атрибут `Prefix` указывает префикс для привязки к пространству имен, указанному в атрибуте `Uri`. Не используйте пустой `Prefix`.|
 |`Query`|Необязательный параметр `String`.<br /><br /> Указывает запрос XPath.|
-|`Value`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает значение, вставляемое в указанный путь.|
+|`Value`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает значение, вставляемое в указанный путь.|
 |`XmlInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает входные данные XML в виде пути к файлу.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -79,7 +79,7 @@ ms.locfileid: "75588386"
 
 `dn` используется здесь в качестве искусственного префикса пространства имен для пространства имен по умолчанию.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

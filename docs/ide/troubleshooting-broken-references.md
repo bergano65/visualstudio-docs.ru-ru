@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565920"
 ---
 # <a name="troubleshoot-broken-references"></a>Диагностика неработающих ссылок
@@ -88,6 +88,6 @@ ms.locfileid: "75565920"
 
 Если пользователь добавил ссылку на COM-компонент, а другой пользователь пытается выполнить этот код на компьютере, где этот компонент не установлен, второй пользователь получит сообщение о неработающей ссылке. Для исправления ошибки достаточно установить этот компонент на втором компьютере. Дополнительные сведения об использовании ссылок на COM-компоненты в проектах см. в разделе [COM-взаимодействие в приложениях .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Ссылки" в конструкторе проектов (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

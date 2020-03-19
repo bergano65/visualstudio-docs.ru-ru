@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567844"
 ---
-# <a name="print-command"></a>Команда Print
+# <a name="print-command"></a>Печать - команда
 
 Вычисляет выражение или отображает указанный текст.
 
@@ -35,9 +35,9 @@ ms.locfileid: "75567844"
 
 `text`
 
-Обязательный. Вычисляемое выражение или отображаемый текст.
+Обязательный элемент. Вычисляемое выражение или отображаемый текст.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда
 
@@ -59,10 +59,10 @@ ms.locfileid: "75567844"
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команда "Вычислить оператор"](../../ide/reference/evaluate-statement-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

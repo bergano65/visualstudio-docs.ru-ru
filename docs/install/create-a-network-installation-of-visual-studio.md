@@ -16,11 +16,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115371"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307319"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "76115371"
 
 Исполняемый файл программы установки &mdash; а точнее файл начального загрузчика &mdash; должен иметь одно из перечисленных ниже имен или похожее на него.
 
-| Выпуск | имя_файла |
+| Выпуск | Имя файла |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
@@ -55,7 +55,7 @@ ms.locfileid: "76115371"
 
 Исполняемый файл программы установки &mdash; а точнее файл начального загрузчика &mdash; должен иметь одно из перечисленных ниже имен или похожее на него.
 
-|Выпуск | Скачать|
+|Выпуск | Скачивание|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
@@ -70,7 +70,7 @@ ms.locfileid: "76115371"
 
 ## <a name="create-an-offline-installation-folder"></a>Создание папки автономной установки
 
-Для выполнения этого действия необходимо подключение к Интернету. Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, подобную приведенным в следующих примерах.
+Для выполнения этого этапа необходимо подключение к Интернету. Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, подобную приведенным в следующих примерах.
 
    > [!IMPORTANT]
    > Для установки полного макета Visual Studio потребуется как минимум 35 ГБ дискового пространства. Загрузка может занять некоторое время. Чтобы создать макет, содержащий только выбранные компоненты для установки, см. инструкции в разделе [Настройка сетевого макета](#customize-the-network-layout).
@@ -100,7 +100,7 @@ ms.locfileid: "76115371"
 
 ::: moniker range="vs-2017"
 
-Пример.
+Пример
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -284,7 +284,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 У нас есть и другие возможности технической поддержки. Список можно найти на нашей странице [отзывов](../ide/feedback-options.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 - [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)

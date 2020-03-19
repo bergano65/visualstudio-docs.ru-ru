@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114263"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Практическое руководство. Изменение выходного каталога сборки
@@ -58,7 +58,7 @@ ms.locfileid: "76114263"
 >
 > ![Средство выбора конфигурации "Сборка" в Visual Studio 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Сведения о [странице сборки в конструкторе проектов (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - Сведения о [странице свойств "Общие" (проект)](/cpp/build/reference/general-property-page-project)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778314"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
@@ -34,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:
 
-|Перечислитель|ОПИСАНИЕ|
+|Перечислитель|Description|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|
@@ -47,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:
 
-|Перечислитель|ОПИСАНИЕ|
+|Перечислитель|Description|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|Вызов функции профилирования, уровень профилирования или сочетание вызова и уровня пока не реализованы.|
 |PROFILE_OK|Вызов выполнен успешно.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Начальное значение счетчика приостановки и возобновления равно 0. Каждый вызов SuspendProfile добавляет 1 к счетчику приостановки и возобновления; каждый вызов ResumeProfile вычитает 1.
 
  Если значение счетчика приостановки и возобновления больше 0, состояние приостановки и возобновления для уровня выключено. Если значение счетчика больше или равно 0, состояние приостановки и возобновления включено.
@@ -103,5 +103,5 @@ void ExerciseResumeProfile()
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

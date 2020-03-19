@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585708"
 ---
 # <a name="add-existing-item-command"></a>Команда Add Existing Item
@@ -31,11 +31,11 @@ File.AddExistingItem filename [/e:editorname]
 
 ## <a name="arguments"></a>Аргументы
 `filename`\
-Обязательный. Полный путь и имя файла с расширением для элемента, который нужно добавить в текущее решение. Если имя или путь файла содержат пробелы, нужно заключить весь путь в кавычки.
+Обязательный элемент. Полный путь и имя файла с расширением для элемента, который нужно добавить в текущее решение. Если имя или путь файла содержат пробелы, нужно заключить весь путь в кавычки.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
 /e: `editorname`\
-Необязательный элемент. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
+Необязательный параметр. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
 
 В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне **Открыть с помощью**, с заключением в кавычки. Например, чтобы открыть таблицу стилей в редакторе исходного кода, необходимо ввести для аргумента /e:`editorname` следующую строку:
 
@@ -43,7 +43,7 @@ File.AddExistingItem filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 Когда вы вводите данные, функция автозавершения пытается определить правильный путь и правильное имя файла.
 
 ## <a name="example"></a>Пример
@@ -53,9 +53,9 @@ File.AddExistingItem filename [/e:editorname]
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

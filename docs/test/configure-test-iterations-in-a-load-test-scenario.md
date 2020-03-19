@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590986"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Настройка итераций теста в сценарии тестовой нагрузки
@@ -89,7 +89,7 @@ ms.locfileid: "75590986"
 
 5. По завершении изменения свойства в меню **Файл** выберите команду **Сохранить**. После этого нагрузочный тест можно выполнять с новым значением свойства **Время на обдумывание между итерациями теста**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)
 - [Настройка контроллеров и агентов тестирования для нагрузочного тестирования](../test/configure-test-agents-and-controllers-for-load-tests.md)

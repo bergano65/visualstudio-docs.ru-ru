@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0981a276a21e1b3f816c6a182df29f1c4adb0d1c
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72777444"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Создание проекта ИИ на основе имеющегося кода
@@ -38,8 +38,8 @@ ms.locfileid: "72777444"
 5. Запустите программу, нажав клавиши **CTRL**+**F5** или выбрав пункты **Отладка > Запуск без отладки**.
 
 > [!div class="nextstepaction"]
-> [Учебник. Работа с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+> [Руководство. Работа с Python в Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Определение существующего окружения Python вручную](../python/managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

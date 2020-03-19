@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка столбцов представлений отчета | Документация Майкрософт
+title: Практическое руководство. Настройка столбцов представлений отчета | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778977"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Практическое руководство. Настройка столбцов представлений отчета
@@ -28,9 +28,9 @@ ms.locfileid: "74778977"
 
 - [Представление "Функции"](../profiling/functions-view.md)
 
-- [Представление "Строки"](../profiling/lines-view.md)
+- [Представление строк](../profiling/lines-view.md)
 
-- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view.md)
+- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view.md)
 
 - [Представление "Вызывающий/вызываемый"](../profiling/caller-callee-view.md)
 
@@ -50,7 +50,7 @@ ms.locfileid: "74778977"
 
 2. Щелкните правой кнопкой мыши область представления отчета и выберите пункт **Добавить или удалить столбцы**.
 
-     Откроется диалоговое окно **Добавление или удаление столбцов**.
+     Откроется диалоговое окно **Добавление или удаление столбцов** .
 
 3. Выберите нужные столбцы.
 

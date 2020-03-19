@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569079"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508944"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Практическое руководство. Управление переносом слов в редакторе
 
@@ -32,7 +32,7 @@ ms.locfileid: "75569079"
 
 2. В папке **Текстовый редактор** в подпапке **Все языки** выберите **общие** параметры, чтобы задать этот параметр глобально.
 
-     Или...
+     — или —
 
      Выберите **общие** параметры в подпапке языка программирования.
 
@@ -50,9 +50,8 @@ ms.locfileid: "75569079"
 Если вы знакомы с переносом слов в Notepad ++, Sublime Text или Visual Studio Code, необходимо учитывать следующие моменты, когда Visual Studio работает не так, как другие редакторы.
 
 * [Тройной щелчок не выделяет всю строку](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [Команда вырезания не удаляет всю строку](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
 * [Двойное нажатие клавиши END не перемещает курсор в конец строки](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)

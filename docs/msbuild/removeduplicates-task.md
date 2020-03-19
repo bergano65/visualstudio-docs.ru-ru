@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632788"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates - задача
@@ -31,14 +31,14 @@ ms.locfileid: "77632788"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `RemoveDuplicates` .
+ В следующей таблице приводятся параметры задачи `RemoveDuplicates`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`Filtered`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию элементов, из которой удалены все повторяющиеся элементы. При этом порядок входных элементов остается неизменным и сохраняется первый экземпляр каждого повторяющегося элемента.|
 |`Inputs`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Коллекция элементов, из которой нужно удалить повторяющиеся элементы.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Эта задача не учитывает регистр, а также не сравнивает метаданные элементов при определении повторяющихся элементов.
 
@@ -93,7 +93,7 @@ ms.locfileid: "77632788"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)

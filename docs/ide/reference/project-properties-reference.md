@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567727"
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
@@ -24,7 +24,7 @@ ms.locfileid: "75567727"
 
 ## <a name="project-properties-pages"></a>Страницы свойств проекта
 
-| Заголовок | Описание |
+| Title | Description |
 | - | - |
 | [Страница "Приложение" в конструкторе проектов (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Страница "Приложение" в конструкторе проектов (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
@@ -38,6 +38,6 @@ ms.locfileid: "75567727"
 | [Страница "Безопасность" в конструкторе проектов](../../ide/reference/security-page-project-designer.md) | Эта страница позволяет настроить параметры управления доступом для кода для приложений, развертываемых с помощью развертывания [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
 | [Страница "Подписывание" в конструкторе проектов](../../ide/reference/signing-page-project-designer.md) | Эта страница позволяет подписывать манифесты приложения и развертывания, а также подписывать сборки. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)

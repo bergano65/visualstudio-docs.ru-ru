@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588932"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Практическое руководство. Задание агентов тестирования для использования в сценариях тестовой нагрузки
@@ -64,7 +64,7 @@ ms.locfileid: "75588932"
 
 5. После изменения этого свойства в меню **Файл** выберите команду **Сохранить**. После этого нагрузочный тест можно выполнять с новым значением параметра **Агенты для использования**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)
 - [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md)

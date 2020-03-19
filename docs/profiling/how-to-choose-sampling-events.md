@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выбор событий выборки | Документация Майкрософт
+title: Практическое руководство. Выбор событий выборки | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779055"
 ---
 # <a name="how-to-choose-sampling-events"></a>Практическое руководство. Выбор событий выборки
@@ -59,7 +59,7 @@ ms.locfileid: "74779055"
 
 5. При выборе события выборки значение интервала выборки по умолчанию отображается в текстовом поле **Интервал выборки**. При необходимости можно ввести нужное значение в этом текстовом поле.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 - [Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)
 - [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)

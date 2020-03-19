@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589205"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
@@ -35,7 +35,7 @@ ms.locfileid: "75589205"
 
    Проект добавляется в новое решение, и в конструкторе отображается объект <xref:System.Windows.Forms.UserControl> с именем *UserControl1.cs*.
 
-1. Перетащите объект <xref:System.Windows.Forms.RichTextBox> из категории **Стандартные элементы управления** области **Панель элементов** в область элемента управления UserControl1.
+1. Перетащите объект **из категории**Стандартные элементы управления**области**Панель элементов<xref:System.Windows.Forms.RichTextBox> в область элемента управления UserControl1.
 
 1. Выберите глиф тега действия (![глиф смарт-тега](../test/media/vs_winformsmttagglyph.gif)) в правом верхнем углу элемента управления <xref:System.Windows.Forms.RichTextBox> и выберите команду **Закрепить в родительском контейнере**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "75589205"
 
 1. Откроется диалоговое окно **Изменение целевой рабочей среды**.
 
-1. Выберите **Да**.
+1. выберите **Yes** (Да).
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши узел **Ссылки** и выберите команду **Добавить ссылку**.
 
@@ -125,7 +125,7 @@ private MessageEditorControl messageEditorControl
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки элементов управления Windows Forms и выберите команду **Добавить новый элемент**.
 
-   Откроется диалоговое окно **Добавление нового элемента**.
+   Откроется диалоговое окно **Добавление нового элемента** .
 
 2. Выберите **Класс**.
 
@@ -192,7 +192,7 @@ private MessageEditorControl messageEditorControl
 
 ## <a name="add-a-ibinaryhttpbodyeditorplugin-to-the-class"></a>Добавление интерфейса IBinaryHttpBodyEditorPlugin в класс
 
-Реализовать интерфейс <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
+Реализуйте интерфейс <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
 **Обзор кода данной процедуры**
 
@@ -297,7 +297,7 @@ private MessageEditorControl messageEditorControl
 
 Дополнительные сведения см. в статье [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>
@@ -310,4 +310,4 @@ private MessageEditorControl messageEditorControl
 - [Кодирование пользовательского правила проверки для веб-теста производительности](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
 - [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Практическое руководство. создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Практическое руководство. Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
