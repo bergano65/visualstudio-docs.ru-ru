@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594725"
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
@@ -24,7 +24,7 @@ ms.locfileid: "75594725"
 
 1. Добавьте элемент в проект и измените его по своему усмотрению.
 
-1. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения см. в разделе [Практическое руководство. заменить параметры в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения см. в разделе [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. В меню **Проект** выберите команду **Экспорт шаблона**.
 
@@ -72,7 +72,7 @@ ms.locfileid: "75594725"
 
 Можно указать, что шаблон должен отображаться только для определенных подтипов проекта, например Windows, Office, базы данных или веб-сайта.
 
-1. Найдите в *VSTEMPLATE*-файле элемент `ProjectType` для шаблона элемента.
+1. Найдите в `ProjectType`VSTEMPLATE *-файле элемент*  для шаблона элемента.
 
 1. Добавьте элемент [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) сразу после элемента `ProjectType`.
 
@@ -83,7 +83,7 @@ ms.locfileid: "75594725"
     - База данных
     - Интернет
 
-Например, `<ProjectSubType>Database</ProjectSubType>`.
+Например: `<ProjectSubType>Database</ProjectSubType>`.
 
 В следующем примере показан шаблон элемента, доступный для проектов **Office**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "75594725"
 
 2. Измените элемент проекта, пока он не будет готов к сохранению в качестве шаблона.
 
-3. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения о замене параметров см. в статье [Практическое руководство. Замена параметров в шаблоне.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения о замене параметров см. в статье [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4. Создайте XML-файл и сохраните его, используя расширение *VSTEMPLATE*, в одном каталоге с файлом элемента проекта.
 
@@ -123,17 +123,17 @@ ms.locfileid: "75594725"
 
 ::: moniker range="vs-2017"
 
-8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Практическое руководство. разместить и упорядочить шаблоны проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Дополнительные сведения см. в статье [Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Практическое руководство. разместить и упорядочить шаблоны проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Скопируйте *ZIP*-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. Каталогом по умолчанию является *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Дополнительные сведения см. в статье [Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md)

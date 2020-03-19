@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bd28c7b41a01992ad52fa343b098b0a02460806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969619"
 ---
 # <a name="gpu-activity-paging"></a>Активность GPU (подкачка)
@@ -23,5 +23,5 @@ ms.locfileid: "62969619"
 
  При выборе сегмента подкачки GPU в отчете на вкладке **Текущие** отображаются сведения об обработанном пакете DMA. Эти сведения включают время ожидания пакета в очереди оборудования, связанной с ядром DirectX; процесс, отправивший пакет DMA; и время, которое потребовалось для обработки пакета.
 
-## <a name="see-also"></a>См. также
-- [Представление "Использование"](../profiling/utilization-view.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление использования](../profiling/utilization-view.md)

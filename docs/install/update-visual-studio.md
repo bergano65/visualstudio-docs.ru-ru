@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77453399"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
@@ -46,7 +46,7 @@ ms.locfileid: "77453399"
 
 При наличии обновлений в Visual Studio отображается соответствующий флаг уведомления.
 
-1. Сохраните все изменения.
+1. Сохраните результаты своих действий.
 
 1. Выберите флаг уведомления, чтобы открыть центр **уведомлений**, а затем выберите уведомление, которое вы хотите установить.
 
@@ -72,7 +72,7 @@ ms.locfileid: "77453399"
 
 Можно проверить наличие обновлений и установить из в строке меню Visual Studio.
 
-1. Сохраните все изменения.
+1. Сохраните результаты своих действий.
 
 1. Выберите **Справка** > **Проверка обновлений**.
 
@@ -89,7 +89,7 @@ ms.locfileid: "77453399"
 
 Как и в предыдущих версиях Visual Studio, для установки обновлений можно использовать Visual Studio Installer.
 
-1. Сохраните все изменения.
+1. Сохраните результаты своих действий.
 
 1. Запустите установщик. Прежде чем продолжить, может потребоваться обновить Visual Studio Installer.
 
@@ -204,7 +204,7 @@ ms.locfileid: "77453399"
 
 Можно проверить наличие обновлений и установить их, используя строку меню или поле поиска в Visual Studio 2019.
 
-### <a name="open-visual-studio"></a>Открытие Visual Studio
+### <a name="open-visual-studio"></a>Запустите Visual Studio
 
 1. В меню Windows **Пуск** выберите **Visual Studio 2019**.
 
@@ -249,7 +249,7 @@ ms.locfileid: "77453399"
 
 1. Чтобы открыть центр **Уведомления**, выберите значок уведомления в правом нижнем углу IDE Visual Studio.
 
-   ![Значок уведомления в IDE Visual Studio](media/vs-2019/notification-bar.png "Значок уведомления в IDE Visual Studio")
+   ![Значок уведомления в Visual Studio IDE](media/vs-2019/notification-bar.png "Значок уведомления в IDE Visual Studio")
 
 1. В **Центре уведомлений** выберите обновление, которое вы хотите установить, а затем **Показать сведения**.
 
@@ -287,7 +287,7 @@ ms.locfileid: "77453399"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Параллельная установка версий Visual Studio](install-visual-studio-versions-side-by-side.md)
 * [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)

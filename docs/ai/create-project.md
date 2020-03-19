@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b537d80b8db9150c6804aff2ee3de0e6c879bb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62546742"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Создание проекта для сценариев ИИ на основе шаблона в Visual Studio
@@ -28,7 +28,7 @@ ms.locfileid: "62546742"
 
 4. Visual Studio создает файл проекта (файл `.pyproj` на диске) вместе с другими файлами, описанными в этом шаблоне. При использовании шаблона "Приложение TensorFlow" проект содержит только один файл, названный так же, как и проект. По умолчанию файл открывается в редакторе кода Visual Studio.
 
-    ![Итоговый проект при использовании шаблона приложения Python](media/create-project/new-tensorflowapp.png)
+    ![Итоговый проект при использовании шаблона приложения Python](media/create-project/new-tensorflowapp.png)
 
 5. Обратите внимание, что код уже импортирует несколько библиотек, включая TensorFlow, numpy, sys и os. Кроме того, при запуске приложения осуществляется определенная подготовка с использованием входных аргументов, которые упрощают изменение расположения входных обучающих данных, выходных моделей и файлов журнала. Эти параметры используются при отправке заданий в несколько контекстов вычислений (то есть в другой каталог локальной среды вычислений, отличный от файлового ресурса Azure).
 

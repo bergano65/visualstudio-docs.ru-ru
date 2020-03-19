@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591194"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Назначение ролей контроллеру и агенту тестирования
@@ -25,7 +25,7 @@ ms.locfileid: "75591194"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 - Создайте модульные тесты или закодированные тесты пользовательского интерфейса, которые будут выполняться с параметром тестирования.
 
@@ -43,7 +43,7 @@ ms.locfileid: "75591194"
 
 4. Выберите **Добавить**.
 
-     В **обозревателе решений** появится новый файл *TestSettingDistributedTestWalkthrough.testsettings*, расположенный в папке **Элементы решения**.
+     В *обозревателе решений* появится новый файл **TestSettingDistributedTestWalkthrough.testsettings**, расположенный в папке **Элементы решения**.
 
      Откроется диалоговое окно **Параметры тестирования**. Выбирается страница **Общее**.
 
@@ -111,6 +111,6 @@ ms.locfileid: "75591194"
 
      Когда контроллер тестирования обрабатывает модульные тесты и закодированные тесты пользовательского интерфейса, контроллер тестирования разделяет тесты на группы по 100 тестов и передает их на компьютер агента тестирования. Например, при наличии 250 модульных тестов и трех агентов тестирования первые 100 модульных тестов направляются агенту 1, следующие 100 модульных тестов направляются агенту 2, а оставшиеся 50 модульных тестов направляются агенту 3.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)

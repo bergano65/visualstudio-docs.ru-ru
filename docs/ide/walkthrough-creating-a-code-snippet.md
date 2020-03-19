@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597299"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
@@ -86,7 +86,7 @@ ms.locfileid: "75597299"
 
 1. Вы можете импортировать фрагмент в установку Visual Studio с помощью **диспетчера фрагментов кода**. Чтобы открыть его, выберите **Сервис** > **Диспетчер фрагментов кода**.
 
-2. Нажмите кнопку **Импорт**.
+2. Нажмите кнопку **Import** (Импортировать).
 
 3. Перейдите к папке, в которой был сохранен фрагмент кода в предыдущей процедуре, выделите его и нажмите кнопку **Открыть**.
 
@@ -228,6 +228,6 @@ ms.locfileid: "75597299"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)

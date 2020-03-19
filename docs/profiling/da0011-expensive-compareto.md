@@ -1,5 +1,5 @@
 ---
-title: DA0011. Затратный метод CompareTo | Документация Майкрософт
+title: 'DA0011: затратное CompareTo | Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,23 +15,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779432"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011. Затратный метод CompareTo
+# <a name="da0011-expensive-compareto"></a>DA0011: затратное CompareTo
 
 |||
 |-|-|
 |Идентификатор правила|DA0011|
 |Категория|Использование .NET Framework|
-|Методы профилирования|Дискретизация<br /><br /> Память .NET|
+|Методы профилирования|Выборка<br /><br /> Память .NET|
 |Сообщение|Функции CompareTo должны быть малозатратными и не выделять память. Если возможно, уменьшите сложность функции CompareTo.|
 |Тип правила|Предупреждение|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Метод CompareTo типа является затратным или выделяет память.
 
 ## <a name="rule-description"></a>Описание правила

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591532"
 ---
 # <a name="findcommand-box"></a>Поиск/Команда - окно
@@ -52,7 +52,7 @@ ms.locfileid: "75591532"
 
 Крышка действует одинаково как внутри кавычек, так и за их пределами. Если крышка является последним символом в строке, она игнорируется.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Командное окно](../ide/reference/command-window.md)
 - [Поиск и замена текста](../ide/finding-and-replacing-text.md)

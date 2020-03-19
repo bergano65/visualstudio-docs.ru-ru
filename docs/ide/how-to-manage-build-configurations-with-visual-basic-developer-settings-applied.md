@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115162"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Практическое руководство. Управление конфигурациями сборок с применением параметров разработчика Visual Basic
@@ -29,7 +29,7 @@ ms.locfileid: "76115162"
 
 По умолчанию в параметрах разработчика Visual Basic возможность открыть диалоговое окно **диспетчера конфигураций**, как и списки **конфигураций** и **платформ** в [конструкторе проектов](../ide/reference/application-page-project-designer-visual-basic.md), скрыта.
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите команду **Параметры**.
 
 2. Разверните узел **Проекты и решения** и выберите **Общие**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "76115162"
 
      Теперь в меню **Сборка** можно выбрать пункт **Диспетчер конфигураций**, а списки **конфигураций** и **платформ** отображаются в **конструкторе проектов**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

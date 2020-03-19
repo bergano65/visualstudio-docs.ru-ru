@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114607"
 ---
 # <a name="install-build-tools-into-a-container"></a>Установка Build Tools в контейнер
@@ -28,7 +28,7 @@ ms.locfileid: "76114607"
 
 Если возможностей средств Visual Studio Build Tools недостаточно для сборки исходного кода, эти же инструкции можно использовать для других продуктов Visual Studio. Однако имейте в виду, что контейнеры Windows не поддерживают интерактивный пользовательский интерфейс, поэтому все команды должны быть автоматизированы.
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 Ниже предполагается, что вы знакомы с некоторыми функциями [Docker](https://www.docker.com/what-docker). Если вы еще знаете, как работать с Docker в Windows, прочитайте статью об [установке и настройке модуля Docker в Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
@@ -41,7 +41,7 @@ ms.locfileid: "76114607"
 > [!WARNING]
 > В этом примере файла Dockerfile исключены только более ранние пакеты Windows SDK, которые невозможно установить в контейнерах. Более ранние выпуски приводят к сбою команды сборки.
 
-1. Откройте окно командной строки.
+1. Откройте командную строку.
 
 1. Создайте каталог (рекомендуется):
 
@@ -168,7 +168,7 @@ ms.locfileid: "76114607"
 
 После создания образа его можно запустить в контейнере для выполнения как интерактивной, так и автоматической сборки. В этом примере используется Командная строка разработчика, поэтому PATH и другие переменные среды уже настроены.
 
-1. Откройте окно командной строки.
+1. Откройте командную строку.
 
 1. Запустите контейнер, чтобы запустить среду PowerShell, в которой заданы все переменные среды разработчика:
 
@@ -192,7 +192,7 @@ ms.locfileid: "76114607"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Расширенный пример для контейнеров](advanced-build-tools-container.md)
 * [Известные проблемы для контейнеров](build-tools-container-issues.md)

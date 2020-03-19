@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74797135"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
@@ -58,6 +58,6 @@ ms.locfileid: "74797135"
 
 Visual Studio для Mac также поддерживает проекты Unity. Дополнительную информацию см. в [документации по инструментам Visual Studio для Mac для Unity](/visualstudio/mac/unity-tools).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * [Начало работы с инструментами Visual Studio для Unity](getting-started-with-visual-studio-tools-for-unity.md)

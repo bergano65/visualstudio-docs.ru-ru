@@ -7,13 +7,13 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: a2a8a5bc03baf51f684777f39f0815699c6c77af
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76159323"
 ---
-## <a name="get-support"></a>Техническая поддержка
+## <a name="get-support"></a>Получение поддержки
 
 Иногда возникают проблемы. Если установить Visual Studio не удается, воспользуйтесь пошаговыми указаниями в статье [Устранение неполадок при установке и обновлении Visual Studio](../troubleshooting-installation-issues.md).
 

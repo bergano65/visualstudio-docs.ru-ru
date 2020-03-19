@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Исключение файлов из сборки | Документация Майкрософт
+title: Практическое руководство. Исключение файлов из сборки | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633867"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
@@ -44,7 +44,7 @@ ms.locfileid: "77633867"
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
     ```
 
-    or
+    или диспетчер конфигурации служб
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
@@ -58,7 +58,7 @@ ms.locfileid: "77633867"
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
     ```
 
-    or
+    или диспетчер конфигурации служб
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
@@ -126,7 +126,7 @@ ms.locfileid: "77633867"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Элементы](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)

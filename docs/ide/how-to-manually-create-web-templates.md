@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591012"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
@@ -34,11 +34,11 @@ ms.locfileid: "75591012"
 
 4. Измените файл *VSTEMPLATE* с XML-кодом, чтобы предоставить метаданные шаблона проекта. Дополнительные сведения см. в [приведенных ниже примерах](#example).
 
-5. Найдите в файле *VSTEMPLATE* элемент `ProjectType` и задайте `Web` в качестве текстового значения.
+5. Найдите в файле `ProjectType`VSTEMPLATE*элемент* и задайте `Web` в качестве текстового значения.
 
 6. После элемента `ProjectType` добавьте элемент `ProjectSubType` и задайте язык программирования этого шаблона в качестве текстового значения. Этот язык программирования может принимать одно из следующих значений:
 
-   - CSharp
+   - C#
    - VisualBasic
 
      Пример:
@@ -81,7 +81,7 @@ ms.locfileid: "75591012"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)

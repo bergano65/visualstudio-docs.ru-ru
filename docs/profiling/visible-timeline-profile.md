@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62823469"
 ---
 # <a name="visible-timeline-profile"></a>Профиль видимой временной шкалы
 Профиль видимой временной шкалы для представления блокировок потоков обеспечивает статистическую информацию и ссылки на отчеты. При увеличении, уменьшении, горизонтальной прокрутке, скрытии или отображении каналов числа в активной легенде меняются в соответствии с просматриваемым в данный момент содержимым. Чтобы просмотреть отчет о каком-либо элементе в легенде, щелкните этот элемент.
 
-## <a name="see-also"></a>См. также
-- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

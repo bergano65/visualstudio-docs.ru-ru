@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76269104"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 
-Начальные сведения о сборке в IDE см. в разделе [Пошаговое руководство: сборка приложения](walkthrough-building-an-application.md).
+Начальные сведения о сборке в IDE см. в разделе [Пошаговое руководство. Построение приложения](walkthrough-building-an-application.md).
 
 Сборку приложения можно выполнять с помощью интегрированной среды разработки Visual Studio, программ командной строки MSBuild и Azure Pipelines:
 
@@ -41,7 +41,7 @@ ms.locfileid: "76269104"
 
 При создании проекта среда Visual Studio создает для него конфигурации сборки по умолчанию, а также содержащее проект решение.  Эти конфигурации определяют, как выполняется сборка и развертывание решений и проектов. В частности, используются уникальные конфигурации проектов для разных целевых платформ (например, Windows или Linux) и типов сборки (например, отладка или выпуск). Вы можете как угодно изменять эти конфигурации и при необходимости создавать свои собственные.
 
-Начальные сведения о сборке в IDE см. в разделе [Пошаговое руководство: сборка приложения](walkthrough-building-an-application.md).
+Начальные сведения о сборке в IDE см. в разделе [Пошаговое руководство. Построение приложения](walkthrough-building-an-application.md).
 
 Затем ознакомьтесь с разделом [Построение и очистка проектов и решений в Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md), чтобы узнать о настройке разных аспектов процесса. Настройки включают [изменение выходных каталогов](how-to-change-the-build-output-directory.md), [указание настраиваемых событий построения](specifying-custom-build-events-in-visual-studio.md), [управление зависимостями проекта](how-to-create-and-remove-project-dependencies.md), [управление файлами журнала построения](how-to-view-save-and-configure-build-log-files.md) и [отключение предупреждений компилятора](how-to-suppress-compiler-warnings.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "76269104"
 - [Задание параметров сборок](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Параллельная сборка нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сборка (компиляция) проектов веб-узлов](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [Компиляция и сборка (Visual Studio для Mac)](/visualstudio/mac/compiling-and-building)

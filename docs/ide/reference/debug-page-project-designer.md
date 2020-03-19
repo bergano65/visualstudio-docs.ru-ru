@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595726"
 ---
 # <a name="debug-page-project-designer"></a>Страница "Отладка" в конструкторе проектов
@@ -48,7 +48,7 @@ ms.locfileid: "75595726"
 
 **Запуск проекта**
 
-Выберите этот параметр, чтобы указать, что при отладке приложения должен запускаться исполняемый файл (для проектов приложений Windows и консольных приложений). Этот параметр установлен по умолчанию.
+Выберите этот параметр, чтобы указать, что при отладке приложения должен запускаться исполняемый файл (для проектов приложений Windows и консольных приложений). Этот параметр выбран по умолчанию.
 
 **Запуск внешней программы**
 
@@ -82,7 +82,7 @@ ms.locfileid: "75595726"
 
 Установите или снимите этот флажок, чтобы включить или отключить отладку процедур SQL из приложения Visual Basic. По умолчанию этот флажок снят.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Первое знакомство с отладчиком](../../debugger/debugger-feature-tour.md)
 - [Параметры проекта для конфигураций отладки C#](../../debugger/project-settings-for-csharp-debug-configurations.md)

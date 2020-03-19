@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591714"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Рекомендации по использованию фрагментов кода
@@ -25,7 +25,7 @@ ms.locfileid: "75591714"
 
 Обычно блоки Try…Catch фрагмента кода перехватывают и передают все исключения. Это может оказаться ненужным для вашего проекта. Для каждого исключения имеется несколько способов реагирования. Примеры см. в разделах [Практическое руководство. Обработка исключений с помощью блока try-catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) и [Оператор Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
-## <a name="file-locations"></a>Расположения файлов
+## <a name="file-locations"></a>Местоположения файлов
 
 Настраивая расположения файлов под приложения, нужно обдумать следующее:
 
@@ -35,7 +35,7 @@ ms.locfileid: "75591714"
 
 - Использование допустимого имени. Элементы управления <xref:System.Windows.Forms.OpenFileDialog> и <xref:System.Windows.Forms.SaveFileDialog> можно использовать для снижения вероятности возникновения недопустимых имен файлов. Имейте в виду, что в перерыве между тем временем, когда пользователь выбирает файл, и тем, когда код обрабатывает файл, этот файл может быть удален. Кроме того, у пользователя может не быть достаточных разрешений для записи в файл.
 
-## <a name="security"></a>Безопасность
+## <a name="security"></a>безопасность
 
 То, насколько безопасен фрагмент кода, зависит от места его использования в исходном коде и изменения после добавления в код. Следующий список содержит несколько областей, которые необходимо учитывать.
 
@@ -67,7 +67,7 @@ ms.locfileid: "75591714"
 
   - Фрагмент может содержать ссылки, которые автоматически добавляются в проект и могут быть загружены из любой точки в системе. Эти ссылки могли быть скачаны на ваш компьютер оттуда же, откуда и сам фрагмент кода. Фрагмент может вызвать метод по ссылке, который выполняет вредоносный код. Для защиты от таких атак просмотрите блоки импорта и ссылок в файле фрагмента кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Фрагменты кода IntelliSense в Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Защита приложений](../ide/securing-applications.md)

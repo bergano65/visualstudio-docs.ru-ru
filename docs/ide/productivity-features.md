@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd85565ee573015737ab815258914bec89ab9369
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596987"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Советы по повышению продуктивности при работе в Visual Studio
@@ -138,12 +138,12 @@ ms.locfileid: "75596987"
 
    Для более эффективного управления файлами можно создать новый экземпляр **обозревателя решений** и переместить его на другой монитор. Чтобы создать еще один экземпляр **обозревателя решений**, откройте контекстное меню в **обозревателе решений** и выберите команду **Создать представление обозревателя решений**.
 
-- **Настройка шрифтов, отображаемых в Visual Studio**. Вы можете изменять начертания, размеры и цвета шрифтов, используемых для текста в интегрированной среде разработки. Например, можно задать цвета определенных элементов кода в редакторе и начертание шрифта в отдельных окнах инструментов или во всей интегрированной среде разработки. Дополнительные сведения см. в разделе [Практическое руководство. менять шрифты и цвета](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) и [Как менять шрифты и цвета в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Настройка шрифтов, отображаемых в Visual Studio**. Вы можете изменять начертания, размеры и цвета шрифтов, используемых для текста в интегрированной среде разработки. Например, можно задать цвета определенных элементов кода в редакторе и начертание шрифта в отдельных окнах инструментов или во всей интегрированной среде разработки. Дополнительные сведения см. в статьях [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) и [Практическое руководство: изменение шрифтов и цветов](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Публикация блога с советами и рекомендациями по Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Сочетания клавиш по умолчанию для часто используемых команд](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Практическое руководство. настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Пошаговое руководство: создание простого приложения](../get-started/csharp/tutorial-wpf.md)
+- [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Пошаговое руководство. Создание простого приложения](../get-started/csharp/tutorial-wpf.md)
 - [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md)

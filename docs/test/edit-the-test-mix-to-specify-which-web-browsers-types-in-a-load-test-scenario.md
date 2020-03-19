@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114537"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Изменение тестового набора для определения типов веб-браузеров в сценарии тестовой нагрузки
@@ -81,6 +81,6 @@ ms.locfileid: "76114537"
 
 При вводе процентных значений вручную необходимо следить за тем, чтобы суммарное значение равнялось 100 %. Если суммарное значение не равно 100 %, при сохранении набора будет предложено принять текущие значения или вернуться и изменить их. Если принять текущие занятия, они будут пропорционально изменены до 100%.  Например, если два элемента имеют значения 80% и 40%, то значение первого элемента изменится на 66,67% (80, деленное на 120), а второго — на 33,33% (40, деленное на 120).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Изменение сценариев тестовой нагрузки](../test/edit-load-test-scenarios.md)

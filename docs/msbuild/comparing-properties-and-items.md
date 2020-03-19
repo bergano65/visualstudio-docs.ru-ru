@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634413"
 ---
 # <a name="compare-properties-and-items"></a>Сравнение свойств и элементов
@@ -43,7 +43,7 @@ ms.locfileid: "77634413"
 </PropertyGroup>
 ```
 
-Свойство `BuildDependsOn` в основном используется в качестве аргумента атрибута `DependsOnTargets` целевого объекта и эффективно его преобразует в список элементов. Это свойство можно переопределить, чтобы добавить целевой объект или изменить порядок выполнения целевых объектов. Например, примененная к объекту директива
+Свойство `BuildDependsOn` в основном используется в качестве аргумента атрибута `DependsOnTargets` целевого объекта и эффективно его преобразует в список элементов. Это свойство можно переопределить, чтобы добавить целевой объект или изменить порядок выполнения целевых объектов. Например,
 
 ```xml
 <PropertyGroup>
@@ -185,6 +185,6 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)

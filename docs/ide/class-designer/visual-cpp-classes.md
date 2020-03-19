@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590739"
 ---
 # <a name="c-classes-in-class-designer"></a>Классы проектирования C++ в конструкторе классов
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-Также можно перетащить на схему только класс B, щелкнуть правой кнопкой мыши его фигуру, а затем выбрать команду **Показать базовые классы**. В этом случае будет показан базовый класс: О.
+Также можно перетащить на схему только класс B, щелкнуть правой кнопкой мыши его фигуру, а затем выбрать команду **Показать базовые классы**. В этом случае будет показан базовый класс A.
 
 ## <a name="multiple-inheritance"></a>Множественное наследование
 
@@ -129,7 +129,7 @@ typedef struct
 
 **Конструктор классов** поддерживает визуализацию классов шаблона. Поддерживаются вложенные объявления. В следующей таблице показаны некоторые типичные объявления.
 
-| Code, элемент | Представление конструктора классов |
+| Элемент кода | Представление конструктора классов |
 | - | - |
 | `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> Класс шаблона |
 | `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> Класс шаблона |
@@ -138,7 +138,7 @@ typedef struct
 
 В следующей таблице показаны некоторые примеры частичной специализации.
 
-|Code, элемент|Представление конструктора классов|
+|Элемент кода|Представление конструктора классов|
 |------------------| - |
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Класс шаблона|
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> Класс шаблона|
@@ -147,32 +147,32 @@ typedef struct
 
 В следующей таблице показаны некоторые примеры наследования в частичной специализации.
 
-|Code, элемент|Представление конструктора классов|
+|Элемент кода|Представление конструктора классов|
 |------------------| - |
-|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Класс шаблона<br /><br /> `B`<br /><br /> Класс<br /><br /> (указывает на класс A)<br /><br /> `C`<br /><br /> Класс<br /><br /> (указывает на класс A)|
+|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Класс шаблона<br /><br /> `B`<br /><br /> Class<br /><br /> (указывает на класс A)<br /><br /> `C`<br /><br /> Class<br /><br /> (указывает на класс A)|
 
 В следующей таблице приведены некоторые примеры функций шаблона частичной специализации.
 
-|Code, элемент|Представление конструктора классов|
+|Элемент кода|Представление конструктора классов|
 |------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 перегрузка)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Класс шаблона<br /><br /> `B<T2>`<br /><br /> Класс шаблона<br /><br /> (Класс B содержится в классе A в разделе **Вложенные типы**)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Класс<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Класс шаблона|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Класс шаблона|
 
 В следующей таблице показаны некоторые примеры наследования шаблонов.
 
-|Code, элемент|Представление конструктора классов|
+|Элемент кода|Представление конструктора классов|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Класс<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Класс<br /><br /> (Класс B содержится в классе C в разделе **Вложенные типы**)<br /><br /> `C<T>`<br /><br /> Класс шаблона|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (Класс B содержится в классе C в разделе **Вложенные типы**)<br /><br /> `C<T>`<br /><br /> Класс шаблона|
 
 В следующей таблице показаны некоторые примеры связей между классами в канонической специализации.
 
-|Code, элемент|Представление конструктора классов|
+|Элемент кода|Представление конструктора классов|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Класс<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Класс<br /><br /> `C<T>`<br /><br /> Класс шаблона<br /><br /> `D`<br /><br /> Класс<br /><br /> ->C\<float>|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Класс шаблона<br /><br /> `D`<br /><br /> Class<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Работа с кодом C++](working-with-visual-cpp-code.md)
 - [Классы и структуры](/cpp/cpp/classes-and-structs-cpp)

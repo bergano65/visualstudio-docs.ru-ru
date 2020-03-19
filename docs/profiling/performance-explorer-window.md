@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772443"
 ---
 # <a name="performance-explorer-window"></a>Окно "Обозреватель производительности"
@@ -50,7 +50,7 @@ ms.locfileid: "74772443"
 
 - **Отчеты.** Отображаются имена файлов данных профилировщика, которые были созданы в ходе сеанса. Чтобы добавить существующий отчет или сравнить два файла данных профилировщика, щелкните **Отчеты** правой кнопкой мыши. Чтобы открыть, удалить или экспортировать файл данных профилировщика, щелкните имя отчета правой кнопкой мыши.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Обзоры](../profiling/overviews-performance-tools.md)
 [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

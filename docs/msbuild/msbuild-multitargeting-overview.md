@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633334"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild: обзор настройки для различных версий
@@ -42,7 +42,7 @@ ms.locfileid: "77633334"
 
  Набор инструментов включает средства, задачи и целевые объекты, используемые для создания приложения. В набор инструментов входят компиляторы, такие как *csc.exe* и *vbc.exe*, общий файл целей построения (*microsoft.common.targets*) и общий файл задач (*microsoft.common.tasks*). Набор инструментов 4.5 можно использовать для платформы .NET Framework версий 2.0, 3.0, 3.5, 4 и 4.5. При этом набор инструментов 2.0 можно использовать только для платформы .NET Framework версии 2.0. Дополнительные сведения см. в разделе [Набор инструментов](../msbuild/msbuild-toolset-toolsversion.md).
 
-## <a name="reference-assemblies"></a>Базовые сборки
+## <a name="reference-assemblies"></a>Эталонные сборки
 
  Ссылочные сборки, заданные в наборе инструментов, позволяют проектировать и создавать приложения. Эти ссылочные сборки не только позволяют создать определенную целевую сборку, но также ограничивают набор компонентов и функций в Visual Studio IDE теми, которые совместимы с целевым объектом. Дополнительные сведения см. в статье [Разрешение сборок во время разработки](../msbuild/resolving-assemblies-at-design-time.md).
 

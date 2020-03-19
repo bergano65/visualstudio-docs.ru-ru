@@ -17,10 +17,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596259"
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
@@ -62,7 +62,7 @@ ms.locfileid: "75596259"
 
 Эти страницы позволяют использовать различные настройки форматирования, но игнорируются, если включен ClangFormat.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - [Использование технологии IntelliSense](../../ide/using-intellisense.md)

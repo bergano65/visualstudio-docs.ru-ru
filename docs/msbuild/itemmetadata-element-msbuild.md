@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633620"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Элемент ItemMetadata (MSBuild)
@@ -41,17 +41,17 @@ ms.locfileid: "77633620"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|
+|attribute|Description|
 |---------------|-----------------|
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание|
+|Элемент|Description|
 |-------------|-----------------|
 |[Элемент](../msbuild/item-element-msbuild.md)|Определяемый пользователем элемент, задающий входные данные для процесса сборки.|
 
@@ -73,7 +73,7 @@ ms.locfileid: "77633620"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 - [Элементы](../msbuild/msbuild-items.md)

@@ -12,13 +12,13 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784119"
 ---
-# <a name="publish-to-azure-app-service"></a>Публикация в службу приложений Azure
+# <a name="publish-to-azure-app-service"></a>Опубликовать в Службе приложений Azure
 
 Сейчас Python поддерживается в Службе приложений Azure для Linux. Вы можете публиковать приложения с помощью [развертывания Git](#publish-to-app-service-on-linux-using-git-deploy) и [контейнеров](#publish-to-app-service-on-linux-using-containers), как описано в этой статье.
 
@@ -33,7 +33,7 @@ ms.locfileid: "62784119"
 
 Дополнительные сведения см. в следующих статьях документации по Azure:
 
-- [Краткое руководство. Создание веб-приложения Python в службе приложений](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) содержит пошаговое описание развертывания из локального репозитория Git на примере приложения Flask.
+- В [кратком руководстве по созданию веб-приложения Python в Службе приложений](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) приведено пошаговое описание развертывания из локального репозитория Git на примере приложения Flask.
 - В руководстве по [настройке приложения Python](/azure/app-service/containers/how-to-configure-python) описаны характеристики Службы приложений для контейнеров Linux и объясняется, как настроить команду запуска Gunicorn для приложения.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Публикация в Службе приложений на Linux с помощью контейнеров

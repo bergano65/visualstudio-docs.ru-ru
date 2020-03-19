@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263113"
 ---
-# <a name="parameter-element"></a>Элемент Parameter
+# <a name="parameter-element"></a>Parameter, элемент
 
 Содержит сведения о конкретном параметре для задачи, созданной `UsingTask` `TaskFactory`.  Имя элемента — это имя параметра.  Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
@@ -44,19 +44,19 @@ ms.locfileid: "78263113"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|
+|attribute|Description|
 |---------------|-----------------|
 |`ParameterType`|Необязательный атрибут.<br /><br /> Тип параметра .NET, например `System.String`.|
-|`Output`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, этот параметр является для задачи параметром вывода. Значение по умолчанию `false`.|
-|`Required`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, этот параметр является для задачи обязательным. Значение по умолчанию `false`.|
+|`Output`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, этот параметр является для задачи параметром вывода. Значение по умолчанию — `false`.|
+|`Required`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, этот параметр является для задачи обязательным. Значение по умолчанию — `false`.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание|
+|Элемент|Description|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask` `TaskFactory`.|
 
@@ -77,7 +77,7 @@ ms.locfileid: "78263113"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

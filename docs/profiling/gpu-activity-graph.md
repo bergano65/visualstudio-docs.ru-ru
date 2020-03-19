@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969570"
 ---
 # <a name="gpu-activity-graph"></a>Граф активности GPU
@@ -27,5 +27,5 @@ ms.locfileid: "62969570"
 
  Белый цвет указывает на наличие неиспользуемых ядер DirectX в системе. Эти ядра доступны для процесса, если вам удастся найти дополнительные возможности для их использования. Некоторые ядра могут использоваться только для определенных видов задач.
 
-## <a name="see-also"></a>См. также
-- [Представление "Использование"](../profiling/utilization-view.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление использования](../profiling/utilization-view.md)

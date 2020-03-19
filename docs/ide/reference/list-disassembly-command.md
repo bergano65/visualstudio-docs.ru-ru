@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747922"
 ---
 # <a name="list-disassembly-command"></a>Команда List Disassembly
@@ -31,7 +31,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 [/linenumbers:yes|no]
 ```
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
 Каждый переключатель можно вызвать с помощью его полной или краткой формы.
 
 /count: `number` [или] /c: `number` [или] /length: `number` [или] /l: `number`
@@ -44,15 +44,15 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
 /codebytes:`yes`&#124;`no` [или] /bytes:`yes`&#124;`no` [или] /b:`yes`&#124;`no`
 
-Необязательный параметр. Указывает, следует ли отображать байты кода. Значение по умолчанию — `no`.
+Необязательный параметр. Указывает, следует ли отображать байты кода. Значение по умолчанию: `no`.
 
 /source:`yes`&#124;`no` [или] /s:`yes`&#124;`no`
 
-Необязательный параметр. Указывает, следует ли отображать исходный код. Значение по умолчанию — `no`.
+Необязательный параметр. Указывает, следует ли отображать исходный код. Значение по умолчанию: `no`.
 
 /symbolnames:`yes`&#124;`no` [или] /names:`yes`&#124;`no` [или] /n:`yes`&#124;`no`
 
-Необязательный параметр. Указывает, следует ли отображать имена символов. Значение по умолчанию — `yes`.
+Необязательный параметр. Указывает, следует ли отображать имена символов. Значение по умолчанию: `yes`.
 
  [/linenumbers:`yes`&#124;`no`]
 
@@ -64,11 +64,11 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)
 - [Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597312"
 ---
 # <a name="toolbox-components-tab"></a>Панель элементов, вкладка "Компоненты"
@@ -26,7 +26,7 @@ ms.locfileid: "75597312"
 
 Чтобы отобразить эту вкладку, откройте конструктор Windows Forms. Выберите **Представление** > **Панель элементов**. На **панели элементов** выберите вкладку **Компоненты**.
 
-## <a name="components"></a>Компоненты
+## <a name="components"></a>Components
 
 **BackgroundWorker**
 
@@ -68,7 +68,7 @@ ms.locfileid: "75597312"
 
 Создает экземпляр компонента <xref:System.Diagnostics.PerformanceCounter>, который можно использовать для взаимодействия со счетчиками производительности Windows, включая создание новых категорий и экземпляров, чтения значений из счетчиков и выполнения вычислений на основе данных счетчиков.
 
-**Process**
+**Процесс**
 
 Создает экземпляр компонента <xref:System.Diagnostics.Process>, который можно использовать для остановки, запуска и изменения данных, связанных с процессами в системе.
 
@@ -87,7 +87,7 @@ ms.locfileid: "75597312"
 > [!NOTE]
 > Существует также системный <xref:System.Timers.Timer>, который можно добавить на **панель элементов**. Этот компонент <xref:System.Timers.Timer> оптимизирован для серверных приложений и Windows Forms. <xref:System.Windows.Forms.Timer> лучше всего подходит для использования в формах Windows Forms.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Элементы управления для использования в Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Выбор элементов панели элементов — компоненты WPF](choose-toolbox-items-wpf-components.md)

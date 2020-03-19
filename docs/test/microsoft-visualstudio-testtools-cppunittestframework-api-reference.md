@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278647"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
@@ -22,7 +22,7 @@ ms.locfileid: "77278647"
 
 Пути к заголовкам и библиотекам автоматически настраиваются в собственном тестовом проекте.
 
-## <a name="In_this_topic"></a> Содержание раздела
+## <a name="In_this_topic"></a> В этом разделе
 
 [CppUnitTest.h](#cppUnitTest_h)
 
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)
 - [Написание модульных тестов для C/C++](writing-unit-tests-for-c-cpp.md)

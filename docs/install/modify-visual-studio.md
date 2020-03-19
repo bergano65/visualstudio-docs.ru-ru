@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77125355"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio путем добавления или удаления рабочих нагрузок и компонентов
@@ -38,7 +38,7 @@ Visual Studio можно легко изменить таким образом, 
 
 ::: moniker-end
 
-Ниже описывается порядок действий.
+Это делается так.
 
 >[!IMPORTANT]
 >Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в статье [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -156,7 +156,7 @@ Visual Studio можно легко изменить таким образом, 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Список идентификаторов рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
 * [Обновление Visual Studio](update-visual-studio.md)

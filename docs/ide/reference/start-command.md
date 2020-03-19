@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590284"
 ---
 # <a name="start-command"></a>Команда Start
@@ -32,9 +32,9 @@ Debug.Start [address]
 ## <a name="arguments"></a>Аргументы
 `address`
 
-Необязательный элемент. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.
+Необязательный параметр. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 При запуске команды **Запустить** она выполняет операцию RunToCursor по указанному адресу.
 
 ## <a name="example"></a>Пример
@@ -44,9 +44,9 @@ Debug.Start [address]
 >Debug.Start
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

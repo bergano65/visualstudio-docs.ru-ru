@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633022"
 ---
 # <a name="override-toolsversion-settings"></a>Переопределение параметров ToolsVersion
@@ -127,7 +127,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. В противном случае используйте текущий параметр `ToolsVersion`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание простейшего шейдера цвета с моделью освещения Фонга
+title: Практическое руководство. Создание простейшего шейдера освещения по методу Фонга
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3059048f44524b9a838a8dfefc948ec4018dd05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589491"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Практическое руководство. Создание простейшего шейдера цвета с моделью освещения Фонга
+# <a name="how-to-create-a-basic-phong-shader"></a>Практическое руководство. Создание простейшего шейдера освещения по методу Фонга
 
 В этой статье показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера, реализующего классическую модель освещения по методу Фонга.
 
@@ -59,7 +59,7 @@ ms.locfileid: "75589491"
 
 Дополнительные сведения о способах применения шейдера к трехмерной модели см. в статье [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)

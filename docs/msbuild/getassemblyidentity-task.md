@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634023"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity - задача
@@ -31,14 +31,14 @@ ms.locfileid: "77634023"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
-В следующей таблице приводятся параметры задачи `GetAssemblyIdentity` .
+В следующей таблице приводятся параметры задачи `GetAssemblyIdentity`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`Assemblies`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит извлеченные идентификаторы сборок.|
 |`AssemblyFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы, из которых требуется извлечь идентификаторы.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Элементы, выводимые параметром `Assemblies`, содержат записи метаданных элементов с именем `Version`, `PublicKeyToken` и `Culture`.
 
@@ -61,7 +61,7 @@ ms.locfileid: "77634023"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

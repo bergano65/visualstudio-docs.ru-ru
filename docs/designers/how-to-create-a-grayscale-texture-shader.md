@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76112625"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Практическое руководство. Создание шейдера текстуры с использованием оттенков серого
@@ -47,10 +47,10 @@ ms.locfileid: "76112625"
 
 Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)
-- [Image Editor](../designers/image-editor.md)
+- [Редактор изображений](../designers/image-editor.md)
 - [Конструктор шейдеров](../designers/shader-designer.md)
 - [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)

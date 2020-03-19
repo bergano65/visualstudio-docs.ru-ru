@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169382"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Пошаговое руководство. Изоляция неисправностей с помощью диаграммы активности виртуальных пользователей
@@ -24,7 +24,7 @@ ms.locfileid: "78169382"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 - Visual Studio Enterprise
 
@@ -89,7 +89,7 @@ ms.locfileid: "78169382"
 
     - **Network**
 
-    - **Время начала**
+    - **Start Time**
 
     - **Длительность**
 
@@ -103,7 +103,7 @@ ms.locfileid: "78169382"
 
      На панелях **Условные обозначения сведений** и **Фильтрация результатов** предусмотрены различные параметры, которые помогут при выявлении проблем производительности и ошибок в нагрузочных тестах. Поэкспериментируйте с этими параметрами и средством **Масштабировать на период времени**, чтобы увидеть, как изменяется представление данных по виртуальным пользователям на **диаграмме активности виртуальных пользователей**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ действий виртуальных пользователей в представлении сведений анализатора тестовой нагрузки](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md)

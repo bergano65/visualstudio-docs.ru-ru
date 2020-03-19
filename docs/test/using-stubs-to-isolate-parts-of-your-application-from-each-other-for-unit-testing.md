@@ -11,10 +11,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 328551a78464c7b682eea6a988c20e742f2797c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568552"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
@@ -458,6 +458,6 @@ stub.InstanceBehavior = StubsBehaviors.DefaultValue;
 StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

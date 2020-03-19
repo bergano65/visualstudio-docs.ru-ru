@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275440"
 ---
 # <a name="warnings-and-errors"></a>Предупреждения и ошибки
@@ -46,7 +46,7 @@ ms.locfileid: "77275440"
   * [Вызов внешнего метода](#external-method-called)
   * [Вызов неинструментируемого метода](#uninstrumentable-method-called)
   * [Проблема тестирования](#testability-issue)
-  * [Ограничение](#limitation)
+  * [Ограничения](#limitation)
 
 * **Интерпретатор**
   * [Обнаружено несовпадение вызовов](#observed-call-mismatch)
@@ -342,6 +342,6 @@ IntelliTest может систематически определять [рел
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>Хотите оставить отзыв?
+## <a name="got-feedback"></a>Хотите отправить отзыв?
 
 Делитесь своими идеями и пожеланиями относительно новых функций в [сообществе разработчиков](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

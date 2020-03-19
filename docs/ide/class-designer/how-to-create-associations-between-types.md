@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590388"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>Практическое руководство. Создание ассоциаций между типами (конструктор классов)
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Практическое руководство. Создание ассоциаций между типами в конструкторе классов
 
 Линии связи в **конструкторе классов** показывают отношения между классами на диаграмме. Линия связи представляет класс, который является типом "свойство" или "поле" другого класса в проекте. Линии связи обычно используются для иллюстрации наиболее важных отношений между классами в проекте.
 
@@ -54,6 +54,6 @@ ms.locfileid: "75590388"
 
    Имя обновится в окне **Сведения о классе**, на линии связи, в окне **Свойства** и коде.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Переключение между представлением в виде членов и представлением в виде ассоциации](how-to-change-between-member-notation-and-association-notation.md)

@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926239"
 ---
 # <a name="file-properties-javascript"></a>Свойства файлов (JavaScript)
@@ -76,7 +76,7 @@ ms.locfileid: "68926239"
 ### <a name="file-version"></a>Версия файла
 Отображает версию файла ссылки.
 
-### <a name="identity"></a>идентификации
+### <a name="identity"></a>Удостоверение
 Отображает удостоверение ссылки, используемое в проекте, которое хранится в файле проекта.
 
 ### <a name="package"></a>Пакет
@@ -94,6 +94,6 @@ ms.locfileid: "68926239"
 ### <a name="version"></a>Версия
 Отображает версию, на которую указывает ссылка.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление свойствами проектов и решений](../../ide/managing-project-and-solution-properties.md)

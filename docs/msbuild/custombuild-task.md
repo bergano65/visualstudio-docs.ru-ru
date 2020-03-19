@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595349"
 ---
 # <a name="custombuild-task"></a>Задача CustomBuild
@@ -32,12 +32,12 @@ ms.locfileid: "75595349"
 
 В следующей таблице приводятся параметры задачи **CustomBuild**.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |**BuildSuffix**|Необязательный параметр типа **string**.|
-|**Sources**|Обязательный параметр **ITaskItem[]** .|
+|**Источники**|Обязательный параметр **ITaskItem[]** .|
 |**TrackerLogDirectory**|Необязательный параметр типа **string**.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

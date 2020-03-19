@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62794330"
 ---
 # <a name="per-thread-summary-report"></a>Сводный отчет по каждому потоку
 На этой гистограмме показана доля времени, которую тратит каждый нескрытый поток в каждой категории в течение видимого в данный момент диапазона времени. "Выполнение" означает, что поток выполняется; все остальные категории означают, что поток находится в состоянии ожидания какого-либо события.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Время выполнения (представление "Потоки")](../profiling/execution-time-threads-view.md)
 - [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)
 - [Время управления памятью](../profiling/memory-management-time.md)
@@ -30,4 +30,4 @@ ms.locfileid: "62794330"
 - [Время спящего режима](../profiling/sleep-time.md)
 - [Время синхронизации](../profiling/synchronization-time.md)
 - [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)
-- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: DA0008. Собрано мало выборок | Документация Майкрософт
+title: DA0008. Собрано мало выборок | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,23 +15,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779445"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008. Собрано мало выборок
+# <a name="da0008-few-samples-collected"></a>DA0008. Собрано несколько образцов
 
 |||
 |-|-|
 |Идентификатор правила|DA0008|
 |Категория|Использование средств профилирования|
-|Способ профилирования|Дискретизация|
+|Способ профилирования|Выборка|
 |Сообщение|Собрано небольшое число выборок. Для получения значительных результатов рекомендуется использовать более высокую частоту выборки или более долгий запуск.|
 |Тип правила|Сведения|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  В сеансе профилирования было собрано небольшое число выборок.
 
 ## <a name="rule-description"></a>Описание правила

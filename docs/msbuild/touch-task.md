@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631657"
 ---
 # <a name="touch-task"></a>Touch - задача
@@ -31,9 +31,9 @@ ms.locfileid: "77631657"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `Touch` .
+ В следующей таблице приводятся параметры задачи `Touch`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`AlwaysCreate`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, создаются файлы, которые еще не существуют.|
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет коллекцию файлов для изменения.|
@@ -41,7 +41,7 @@ ms.locfileid: "77631657"
 |`Time`|Необязательный параметр `String`.<br /><br /> Задает время, отличное от текущего. Формат должен быть допустимым для метода <xref:System.DateTime.Parse%2A>.|
 |`TouchedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию успешно измененных элементов.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -67,7 +67,7 @@ ms.locfileid: "77631657"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594342"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Практическое руководство. Добавление счетчиков в наборы счетчиков с помощью редактора тестовой нагрузки
@@ -62,7 +62,7 @@ ms.locfileid: "75594342"
     > [!NOTE]
     > Можно добавить счетчики в набор, выбрав существующий счетчик или категорию счетчиков, выбрав команду "Копировать" и вставив счетчик или категорию в другой узел набора счетчиков. Если некоторые из скопированных счетчиков не нужны, их можно удалить.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594374"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Практическое руководство. Увеличение области диаграммы в результатах нагрузочного теста
@@ -57,7 +57,7 @@ ms.locfileid: "75594374"
 
      \- или -
 
-     Просмотрите данные ранее выполненного нагрузочного теста. Дополнительные сведения см. в разделе [Практическое руководство. получить доступ к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md).
+     Просмотрите данные ранее выполненного нагрузочного теста. Дополнительные сведения см. в разделе [Практическое руководство. Обращение к результатам нагрузочного теста для их анализа](../test/how-to-access-load-test-results-for-analysis.md).
 
 3. Выберите пункт **Диаграммы**, если диаграммы не отображаются.
 
@@ -113,8 +113,8 @@ ms.locfileid: "75594374"
 
      При этом будет показана вся длина тестового запуска.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ результатов нагрузочного тестирования в представлении диаграмм](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Практическое руководство. Добавление и удаление счетчиков на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Практическое руководство. Добавление и удаление счетчиков на графах в результатах нагрузочного теста](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

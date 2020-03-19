@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589530"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Практическое руководство. Создание простейшей трехмерной модели
@@ -70,9 +70,9 @@ ms.locfileid: "75589530"
 
    ![Полная модель упрощенного дома](../designers/media/gfx_model_demo_house_final.png)
 
-   Следующим шагом может быть применение к этой трехмерной модели шейдера. Дополнительные сведения см. в разделе [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Следующим шагом может быть применение к этой трехмерной модели шейдера. Дополнительные сведения см. в статье [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Моделирование трехмерного ландшафта](../designers/how-to-model-3-d-terrain.md)
 - [Редактор моделей](../designers/model-editor.md)

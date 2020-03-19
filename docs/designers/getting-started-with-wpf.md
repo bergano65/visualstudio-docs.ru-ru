@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb58a1a7bee7b07cc9b5434f7fa3e6bd295060d2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589543"
 ---
 # <a name="get-started-with-wpf"></a>Начало работы с WPF
@@ -23,15 +23,15 @@ Windows Presentation Foundation (WPF) — это платформа пользо
 
 ## <a name="where-should-i-start"></a>Где найти такую информацию?
 
-|Субъект|Статьи|
+|Тема|Статьи|
 |-|-|
-|Необходимо перейти непосредственно к…|[Пошаговое руководство: My first WPF desktop application](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application) (Пошаговое руководство. Создание классического приложения WPF)|
+|Необходимо перейти непосредственно к…|[Пошаговое руководство. Создание первого классического приложения WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Я хочу сравнить средства проектирования XAML...|[Разработка XAML в Visual Studio и Blend для Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|
 |Не знакомы с .NET?|[Руководство по .NET](/dotnet/standard/)<br /><br />[Основные сведения о приложениях .NET Framework](/dotnet/standard/application-essentials)<br /><br />[Начало работы с Visual C#](../ide/quickstart-csharp-console.md)|
 |Дополнительные сведения о WPF...|[Общие сведения о WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Обзор XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Элементы управления](/dotnet/framework/wpf/controls/)<br /><br />[Общие сведения о привязке данных](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Привязка данных WPF с помощью LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Вы разработчик Windows Forms?|[Элементы управления Windows Forms и эквивалентные элементы управления WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Поддерживаемые сценарии при взаимодействии WPF и Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство по классическим приложениям для WPF](/dotnet/desktop-wpf/overview/index)
 - [Библиотека классов (WPF)](/dotnet/framework/wpf/class-library-wpf)

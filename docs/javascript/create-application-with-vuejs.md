@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70180267"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
@@ -29,7 +29,7 @@ Visual Studio поддерживает разработку приложений
 * Распознавание атрибута `lang` в *VUE*-файлах
 * Шаблоны проектов и файлов Vue.js
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 * У вас должна быть установлена среда Visual Studio 2017 15.8 или последующей версии и рабочая нагрузка **Разработка Node.js**.
 
@@ -196,7 +196,7 @@ cd ../
 
 * Выполнение команды `npm run build` как события перед сборкой в свойствах проекта не работает при использовании vue-cli 3.0.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [руководство по началу работы с Vue](https://vuejs.org/v2/guide);
 - [Проект интерфейса командной строки Vue](https://github.com/vuejs/vue-cli).

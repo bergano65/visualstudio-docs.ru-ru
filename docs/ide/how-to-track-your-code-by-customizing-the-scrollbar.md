@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22436c221813ec4c3701d208fc74a96b403fff9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591402"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Практическое руководство. Настройка полосы прокрутки
+# <a name="how-to-customize-the-scroll-bar"></a>Практическое руководство по настройке полосы прокрутки
 
 Когда вы работаете с длинными файлами кода, может быть трудно запомнить расположение элементов в файле. Вы можете настроить полосу прокрутки в редакторе кода, чтобы лучше понимать, что происходит в коде.
 
@@ -67,6 +67,6 @@ ms.locfileid: "75591402"
 
 ![Полоса прокрутки Visual Studio и окно с подсказкой](../ide/media/enhancedscrollbarsearchtooltip.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

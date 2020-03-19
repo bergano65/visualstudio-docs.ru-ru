@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634192"
 ---
 # <a name="fileclassifier-task"></a>Задача FileClassifier
@@ -30,18 +30,18 @@ ms.locfileid: "77634192"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`CLREmbeddedResource`|Не используется.|
 |`CLRResourceFiles`|Не используется.|
 |`CLRSatelliteEmbeddedResource`|Не используется.|
-|`Culture`|Необязательный параметр типа **String**.<br /><br /> Задает язык и региональные параметры для сборки. Он может иметь значение **NULL**, если сборка не подлежит локализации. Если указано значение **NULL**, по умолчанию используется значение, возвращаемое **CultureInfo.InvariantCulture**, в нижнем регистре.|
+|`Culture`|Необязательный параметр **String** .<br /><br /> Задает язык и региональные параметры для сборки. Он может иметь значение **NULL**, если сборка не подлежит локализации. Если указано значение **NULL**, по умолчанию используется значение, возвращаемое **CultureInfo.InvariantCulture**, в нижнем регистре.|
 |`MainEmbeddedFiles`|Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Указывает нелокализуемые ресурсы, которые внедряются в основную сборку.|
 |`OutputType`|Обязательный параметр **string**.<br /><br /> Задает тип файла, в который будут внедряться указанные исходные файлы. Допустимые значения: **exe**, **winexe**, или **library**.|
 |`SatelliteEmbeddedFiles`|Необязательный параметр вывода **ITaskItem[]** .<br /><br /> Указывает локализуемые файлы, которые внедряются во вспомогательную сборку для языка и региональных параметров, указанных в параметре **Culture**.|
 |`SourceFiles`|Обязательный параметр **ITaskItem[]** .<br /><br /> Задает список файлов для классификации.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если не задан параметр **Culture**, то все ресурсы, указанные с помощью параметра **SourceFiles**, считаются нелокализуемыми. В противном случае они считаются локализуемыми, если не связаны с атрибутом **Localizable**, который имеет значение **false**.
 
@@ -66,7 +66,7 @@ ms.locfileid: "77634192"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)

@@ -15,10 +15,10 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77558121"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Измерение производительности приложения из командной строки
@@ -27,7 +27,7 @@ ms.locfileid: "77558121"
 
 В примере, описанном в этой статье, вы можете собирать данные производительности для Блокнота (Майкрософт), но тот же метод можно использовать для профилирования любого процесса.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 * Visual Studio 2019, предварительная версия 3, или более поздней версии
 

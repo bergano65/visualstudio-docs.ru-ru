@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591311"
 ---
 # <a name="manage-project-and-solution-properties"></a>Управление свойствами проектов и решений
@@ -54,7 +54,7 @@ ms.locfileid: "75591311"
 
 Для доступа к свойствам решения щелкните правой кнопкой мыши узел решения в **обозревателе решений** и выберите пункт **Свойства**. В открывшемся диалоговом окне можно задать параметры проекта для сборки **отладки** или **выпуска**, указать, какие проекты должны запускаться при нажатии клавиши **F5**, а также задать параметры анализа кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 - [Управление свойствами решения и проекта (Visual Studio для Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

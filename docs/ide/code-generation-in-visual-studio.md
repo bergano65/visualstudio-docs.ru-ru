@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594257"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Возможности создания кода в Visual Studio
 
 Visual Studio помогает создавать, исправлять код и выполнять его рефакторинг самыми разными способами.
 
-## <a name="features"></a>Функции
+## <a name="features"></a>Компоненты
 
 - Вы можете использовать [фрагменты кода](../ide/code-snippets.md) для вставки шаблона, такого как блок [switch](/dotnet/csharp/language-reference/keywords/switch) или объявление [enum](/dotnet/csharp/language-reference/keywords/enum).
 
@@ -29,7 +29,7 @@ Visual Studio помогает создавать, исправлять код �
 > [!NOTE]
 > Каждая языковая служба в Visual Studio предоставляет собственные возможности создания кода, поэтому некоторые возможности доступны только в C#, а другие — в C# и Visual Basic.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Фрагменты кода](../ide/code-snippets.md)
 - [Быстрые действия](../ide/quick-actions.md)

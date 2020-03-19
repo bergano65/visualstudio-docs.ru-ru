@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Инструменты Visual Studio для сценариев ИИ
+title: Инструменты Visual Studio для ИИ
 metadata:
   document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
   title: "Visual\_Studio Tools for\_AI\_| Документация Майкрософт"
@@ -14,7 +14,7 @@ metadata:
 abstract:
   description: "Visual\_Studio Tools for\_AI\_— это интегрированная среда разработки для создания, тестирования и развертывания решений глубинного обучения. Научитесь использовать AI\_Tools с помощью наших кратких руководств, учебников и примеров."
 sections:
-  - title: Пятиминутные краткие руководства
+  - title: Пятиминутные руководства по началу работы
     items:
       - type: paragraph
         text: 'Вы узнаете, как запускать решение глубинного обучения с помощью:'
@@ -25,7 +25,7 @@ sections:
               src: media/Tensorflow_logo.png
             text: TensorFlow и Python
             href: tensorflow-local.md
-  - title: Пошаговые руководства
+  - title: Пошаговые инструкции
     items:
       - type: paragraph
         text: 'Сведения о создании решения глубинного обучения:'

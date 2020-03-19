@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596727"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Популярные сочетания клавиш в Visual Studio
@@ -23,7 +23,7 @@ ms.locfileid: "75596727"
 > [!NOTE]
 > Сочетание клавиш для той или иной команды можно [определить](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.
 
-## <a name="build"></a>Построить
+## <a name="build"></a>Сборка
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------| - |
@@ -52,7 +52,7 @@ ms.locfileid: "75596727"
 |Debug.StopDebugging|**SHIFT+F5** [глобальный]|
 |Debug.ToggleBreakpoint|**F9** [глобальный]|
 
-## <a name="edit"></a>Правка
+## <a name="edit"></a>Изменить
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------| - |
@@ -128,17 +128,17 @@ ms.locfileid: "75596727"
 
 ## <a name="refactor"></a>Рефакторинг
 
-|Команда|Сочетание клавиш [контекст]|
+|Get-Help|Сочетание клавиш [контекст]|
 |-------------| - |
 |Refactor.ExtractMethod|**CTRL+R, CTRL+M** [глобальный]|
 
 ## <a name="tools"></a>Инструменты
 
-|Команда|Сочетание клавиш [контекст]|
+|Get-Help|Сочетание клавиш [контекст]|
 |-------------| - |
 |Tools.AttachtoProcess|**CTRL+ALT+P** [глобальный]|
 
-## <a name="view"></a>Просмотр
+## <a name="view"></a>Представление
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------| - |
@@ -169,7 +169,7 @@ ms.locfileid: "75596727"
 |Window.NextDocumentWindowNav|**CTRL+TAB** [глобальный]|
 |Window.NextSplitPane|**F6** [глобальный]|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Все сочетания клавиш в Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 570c3c1cfa4ee42b0b7262b92fba3c936297387c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440273"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64826677"
 ---
 # <a name="c-library-reference"></a>Справочник по библиотеке C
 В этом разделе приводятся справочные сведения о пакете SDK визуализатора параллелизма.

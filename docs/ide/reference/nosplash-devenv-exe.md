@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950657"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
@@ -39,7 +39,7 @@ devenv /NoSplash [File1[ FileN]...]
 
   Необязательный параметр. Один или несколько дополнительных файлов для открытия в существующем экземпляре Visual Studio.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Этот параметр скрывает экран-заставку. Если этот параметр не задан, экран-заставка отображается. Для отображения экрана-заставки в дальнейшем (например, для проверки логотипа продукта VSPackage) необходимо использовать параметр [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md).
 
@@ -57,7 +57,7 @@ devenv /nosplash /run MySolution.sln
 devenv /nosplash /debugexe MySolution.exe
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Параметры командной строки devenv для разработки VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)
+- [Параметры командной строки Devenv для разработки VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

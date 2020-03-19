@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f28d7271fdf33822475a663debed269bb515959
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777781"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Создание отчетов профилировщика из командной строки
@@ -21,9 +21,9 @@ ms.locfileid: "74777781"
 
  Вы также можете упростить общий доступ к файлам данных профилирования, внедрив символы в *VSP*-файлы и создав файлы предварительно проанализированных отчетов (*VSPS*), которые открываются быстрее и занимают меньше места.
 
-## <a name="common-tasks"></a>Типичные задачи
+## <a name="common-tasks"></a>Стандартные задачи
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Создание базового отчета.** Создайте все типы отчетов VSPerfReport или их подмножество.|-   [Создание базовых отчетов](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|
 |**Сравнение двух файлов данных профилирования.** Создайте разностный отчет, который сравнивает данные производительности в двух файлах данных профилирования.|-   [Практическое руководство. Создание отчета сравнения профилировщиков с помощью командной строки](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|

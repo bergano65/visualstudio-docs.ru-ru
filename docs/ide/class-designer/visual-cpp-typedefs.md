@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590700"
 ---
 # <a name="c-typedefs-in-class-designer"></a>Определения типов C++ в конструкторе классов
@@ -82,7 +82,7 @@ typedef class coord
 > [!NOTE]
 > **Конструктор классов** не отображает определение типа, если его исходный тип является указателем на функцию.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Работа с кодом C++](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

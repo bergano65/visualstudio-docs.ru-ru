@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590882"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
@@ -37,12 +37,12 @@ ms.locfileid: "75590882"
 
 |||||||
 |-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
+|Bat|F#|Java|Разметка Markdown|Rust|Visual Basic|
 |Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL-код|VBNet|
+|CMake|Groovy|JSON|Perl;|ShellScript|Visual C++|
+|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Производитель|Ruby|TypeScript|YAML|
+|Docker|Jade|Убедитесь,|Ruby|TypeScript|YAML|
 
 Помимо раскраски синтаксиса и завершения основных операторов в Visual Studio также имеется функция [Перейти к](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Она позволяет быстро выполнять поиск в файлах кода, путях к файлам и символах кода. Visual Studio предоставляет поддержку функции "Перейти к" для указанных далее языков.
 
@@ -74,7 +74,7 @@ Visual Studio предоставляет языковую поддержку в 
 
 По этому базовому пути добавьте следующие папки, если они применимы в вашем случае.
 
-|Имя папки|Описание|
+|Имя папки|Description|
 |-----------------|-----------------|
 |\\ *\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, *\Matlab*.|
 |*\Syntaxes*|Папка грамматики. Содержит файлы *JSON* грамматики для языка, например *Matlab.json*.|
@@ -87,8 +87,8 @@ Visual Studio предоставляет языковую поддержку в 
 
 Дополнительные сведения о создании грамматик TextMate см. в статьях [TextMate - Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Введение в грамматику языка) и [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Заметки о создании грамматики языка и пользовательской темы для пакета Textmate).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление расширения протокола языкового сервера](../extensibility/adding-an-lsp-extension.md)
-- [Пошаговое руководство: создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
-- [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
+- [Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)

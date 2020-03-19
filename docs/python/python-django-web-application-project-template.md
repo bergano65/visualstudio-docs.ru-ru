@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784889"
 ---
 # <a name="django-web-project-template"></a>Шаблон веб-проекта Django
@@ -51,7 +51,7 @@ Visual Studio предоставляет полную поддержку тех�
 
     ![Результаты выполнения команды Open Django Shell](media/template-django-console-shell.png)
 
-- **Django Sync DB** (База данных синхронизации Django) выполняет в **интерактивном** окне команду `manage.py syncdb`:
+- **Django Sync DB** (База данных синхронизации Django) выполняет в `manage.py syncdb`интерактивном**окне команду**:
 
     ![Результаты выполнения команды Django Sync DB](media/template-django-console-sync-db.png)
 
@@ -63,7 +63,7 @@ Visual Studio предоставляет полную поддержку тех�
 
     ![Результат выполнения команды Validate](media/template-django-console-validate.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство по изучению Django](learn-django-in-visual-studio-step-01-project-and-solution.md)
 - [Публикация в службу приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

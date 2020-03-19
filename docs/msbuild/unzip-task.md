@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631514"
 ---
 # <a name="unzip-task"></a>Задача Unzip
@@ -38,16 +38,16 @@ ms.locfileid: "77631514"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `Unzip` .
+ В следующей таблице приводятся параметры задачи `Unzip`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`DestinationFolder`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem><br /><br /> Указывает папку назначения для распаковки файла.|
-|`OverwriteReadOnlyFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, перезаписывает файлы, доступные только для чтения. По умолчанию — `false`.|
-|`SkipUnchangedFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, пропускает распаковку файлов, которые не изменились. По умолчанию — `true`. В задаче `Unzip` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения.|
+|`OverwriteReadOnlyFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, перезаписывает файлы, доступные только для чтения. По умолчанию равен `false`.|
+|`SkipUnchangedFiles`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, пропускает распаковку файлов, которые не изменились. По умолчанию равен `true`. В задаче `Unzip` неизмененными считаются файлы одного размера с одинаковым временем последнего изменения.|
 |`SourceFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает один или несколько распаковываемых файлов. При указании нескольких файлов они распаковываются по очереди одну папку.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -69,7 +69,7 @@ ms.locfileid: "77631514"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

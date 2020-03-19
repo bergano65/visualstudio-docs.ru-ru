@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278698"
 ---
 # <a name="options-text-editor-cc-experimental"></a>"Параметры", "Текстовый редактор", C/C++, "Экспериментальный"
@@ -63,7 +63,7 @@ ms.locfileid: "77278698"
 
 - И многое другое!
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка параметров языка редактора](../../ide/reference/setting-language-specific-editor-options.md)
 - [Рефакторинг в C++ (блог по VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/

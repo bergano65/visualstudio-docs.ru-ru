@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589803"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Работа с трехмерными ресурсами для игр и приложений
@@ -52,9 +52,9 @@ ms.locfileid: "75589803"
 
 Visual Studio использует DirectX для отрисовки двумерных и трехмерных ресурсов. Вы можете выбрать отрисовщик DirectX 11 или программный отрисовщик WARP (Windows Advanced Rasterization Platform). Отрисовщик DirectX 11 обеспечивает высокопроизводительную отрисовку с аппаратным ускорением на базе GPU с поддержкой DirectX 11 и DirectX 10 Отрисовщик WARP позволяет убедиться, что ваш ресурс работает на широком спектре компьютеров, включая компьютеры с устаревшим или интегрированным графическим оборудованием. Дополнительные сведения о WARP см. в [руководстве по Windows Advanced Rasterization Platform (WARP)](/windows/win32/direct3darticles/directx-warp).
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-|Заголовок|Описание|
+|Title|Description|
 |-----------|-----------------|
 |[Работа с текстурами и изображениями](../designers/working-with-textures-and-images.md)|Описывается работа с изображениями и текстурами в Visual Studio.|
 |[Работа с трехмерными моделями](../designers/working-with-3-d-models.md)|Описывается работа с трехмерными моделями в Visual Studio.|

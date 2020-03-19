@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Игнорирование ошибок в задачах | Документация Майкрософт
+title: Практическое руководство. Игнорирование ошибок в задачах | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,10 +10,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633828"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Практическое руководство. Игнорирование ошибок в задачах
@@ -34,7 +34,7 @@ ms.locfileid: "77633828"
 
 Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.
 
-Значением свойства `ContinueOnError` по умолчанию является `ErrorAndStop`. Если задать для атрибута значение `ErrorAndStop`, можно сделать такое поведение явным для всех объектов, считывающих файл проекта.
+Значение `ContinueOnError` по умолчанию — `ErrorAndStop`. Если задать для атрибута значение `ErrorAndStop`, можно сделать такое поведение явным для всех объектов, считывающих файл проекта.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Игнорирование ошибки в задаче
 
@@ -64,7 +64,7 @@ ms.locfileid: "77633828"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

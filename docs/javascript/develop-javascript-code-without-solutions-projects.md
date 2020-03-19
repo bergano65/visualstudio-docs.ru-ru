@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888642"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
@@ -54,7 +54,7 @@ ms.locfileid: "72888642"
 > [!NOTE]
 > При создании кода TypeScript мы используем последнюю версию, установленную в `C:\Program Files (x86)\Microsoft SDKs\TypeScript`.
 
-Если в папке есть файл *tsconfig.json*, щелкните правой кнопкой мыши файл TypeScript, чтобы открыть команду меню для отладки этого файла TypeScript. Этот параметр отображается только в том случае, если в *tsconfig.json* не указан `outFile`. Если `outFile` указан, для отладки этого файла щелкните правой кнопкой мыши *tsconfig.json* и выберите нужный параметр. Файл `tsconfig.json` также предоставляет параметр сборки для указания параметров компилятора.
+Если в папке есть файл *tsconfig.json*, щелкните правой кнопкой мыши файл TypeScript, чтобы открыть команду меню для отладки этого файла TypeScript. Этот параметр отображается только в том случае, если в `outFile`tsconfig.json*не указан*. Если `outFile` указан, для отладки этого файла щелкните правой кнопкой мыши *tsconfig.json* и выберите нужный параметр. Файл `tsconfig.json` также предоставляет параметр сборки для указания параметров компилятора.
 
 > [!NOTE]
 > Дополнительные сведения о файле *tsconfig.json* см. на [странице руководства по tsconfig.json в TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).

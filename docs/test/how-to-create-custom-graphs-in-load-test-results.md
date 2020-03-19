@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10433c63e0bad00d187f79634f74fa3727edc3dc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113297"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Практическое руководство. Создание пользовательских графиков в результатах нагрузочного теста
@@ -38,9 +38,9 @@ ms.locfileid: "76113297"
 
      В **анализаторе тестовой нагрузки** появится новая диаграмма. Она появится в выбранной в настоящий момент области диаграммы и заменит ранее отображавшуюся диаграмму.
 
-3. Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в разделе [Практическое руководство. добавлять и удалять счетчики на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в статье [Практическое руководство. Добавление и удаление счетчиков на графиках в результатах нагрузочного теста](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ результатов нагрузочного тестирования в представлении диаграмм](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Практическое руководство. Добавление и удаление счетчиков на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Практическое руководство. Добавление и удаление счетчиков на графах в результатах нагрузочного теста](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

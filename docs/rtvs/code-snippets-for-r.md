@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969462"
 ---
 # <a name="code-snippets"></a>Фрагменты кода
@@ -36,7 +36,7 @@ ms.locfileid: "62969462"
 
 ![Диалоговое окно "Диспетчер фрагментов кода" для R](media/code-snippet-dialog.png)
 
-Сведения о создании настраиваемых фрагментов кода см. в разделе [Пошаговое руководство. создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). В конечном счете фрагмент кода предоставляет собой лишь XML-файл. Например, ниже приведен фрагмент кода для оператора конвейера (ярлык `>`):
+Сведения о создании настраиваемых фрагментов кода см. в разделе [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). В конечном счете фрагмент кода предоставляет собой лишь XML-файл. Например, ниже приведен фрагмент кода для оператора конвейера (ярлык `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

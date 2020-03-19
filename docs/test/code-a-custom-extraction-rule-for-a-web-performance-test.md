@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591181"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Кодирование пользовательского правила извлечения для веб-теста производительности
@@ -206,7 +206,7 @@ End Namespace
 
 Метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> содержит основные функции правила извлечения. Метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> из предыдущего примера принимает аргумент <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs>, который предоставляет ответ, созданный запросом, содержащимся в данном правиле извлечения. Ответ содержит объект <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>, в котором находятся все теги ответа. В объекте <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>отфильтровываются теги "input". Каждый тег input проверяется на наличие атрибута `name`, значение которого равно значению свойства `Name`, предоставленному пользователем. После обнаружения тега с соответствующим атрибутом выполняется попытка извлечь значение, содержащееся в атрибуте `value`, если атрибут value существует. Если он существует, значения атрибутов "name" и "value" данного тега извлекаются и добавляются в контекст веб-теста производительности. Правило извлечения завершается успехом.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

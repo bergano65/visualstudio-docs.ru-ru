@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189543"
 ---
 # <a name="add-tags-to-project-templates"></a>Добавление тегов к шаблонам проектов
@@ -56,7 +56,7 @@ ms.locfileid: "73189543"
 
 Можно использовать следующие необязательные атрибуты в сложных пользовательских сценариях.
 
-|Атрибут|ОПИСАНИЕ|
+|attribute|Description|
 |---------------|-----------------|
 |`Package`|Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
 |`ID`|Определяет идентификатор ресурса Visual Studio.|
@@ -73,11 +73,11 @@ ms.locfileid: "73189543"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-Отсутствует.
+Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|ОПИСАНИЕ|
+|Элемент|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Обязательный.) Определяет категорию шаблона и то, как он отображается в диалоговом окне **Новый проект** или **Добавление нового элемента**.|
 
@@ -145,7 +145,7 @@ ms.locfileid: "73189543"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](creating-project-and-item-templates.md)

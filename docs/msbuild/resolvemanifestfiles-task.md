@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2628f06ac4eafc7d57123460771793005597b039
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632697"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles - задача
@@ -29,9 +29,9 @@ ms.locfileid: "77632697"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `ResolveManifestFiles` .
+ В следующей таблице приводятся параметры задачи `ResolveManifestFiles`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`DeploymentManifestEntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя манифеста развертывания.|
 |`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет управляемую сборку или ссылку на манифест ClickOnce, являющуюся точкой входа в манифест.|
@@ -48,11 +48,11 @@ ms.locfileid: "77632697"
 |`TargetCulture`|Необязательный параметр `String`.<br /><br /> Определяет целевой язык и региональные параметры для вспомогательных сборок.|
 |`TargetFrameworkVersion`|Необязательный параметр `String`.<br /><br /> Определяет целевую версию .NET Framework.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67587030"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Вложение файлов в обозревателе решений
@@ -28,7 +28,7 @@ ms.locfileid: "67587030"
 
 Доступные параметры для ненастраиваемого вложения файлов приведены ниже.
 
-* **Отключить**: этот параметр создает неструктурированный список файлов без вложения.
+* **Выключить**: этот параметр создает неструктурированный список файлов без вложения.
 
 * **По умолчанию**: этот параметр применяет поведение вложения файлов по умолчанию в **обозревателе решений**. Если параметры не существуют для данного типа проекта, вложение файлов в проекте не выполняется. Если параметры существуют (например, для веб-проекта), вложение применяется.
 
@@ -62,7 +62,7 @@ ms.locfileid: "67587030"
 
 ### <a name="the-extensiontoextension-provider"></a>Поставщик extensionToExtension
 
-Этот поставщик позволяет определить правила вложения файлов на основе определенных расширений файлов. Рассмотрим следующий пример.
+Этот поставщик позволяет определить правила вложения файлов на основе определенных расширений файлов. Рассмотрим следующий пример:
 
 ![Примеры правил extentionToExtension](media/filenesting_extensiontoextension.png) ![Действие правила extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "67587030"
 
 ### <a name="the-filesuffixtoextension-provider"></a>Поставщик fileSuffixToExtension
 
-Этот поставщик работает так же, как поставщик **extensionToExtension**. Единственное отличие заключается в том, что правило отслеживает суффикс файла, а не только расширение. Рассмотрим следующий пример.
+Этот поставщик работает так же, как поставщик **extensionToExtension**. Единственное отличие заключается в том, что правило отслеживает суффикс файла, а не только расширение. Рассмотрим следующий пример:
 
 ![Примеры правил fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Действие правила fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
@@ -88,7 +88,7 @@ ms.locfileid: "67587030"
 
 Этот поставщик выполняет вложение файлов с дополнительным расширением в файл без дополнительного расширения. Дополнительное расширение может использоваться только в конце полного имени файла.
 
-Рассмотрим следующий пример.
+Рассмотрим следующий пример:
 
 ![Примеры правил addedExtension](media/filenesting_addedextension.png) ![Действие правила addedExtension](media/filenesting_addedextension_effect.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "67587030"
 
 Этот поставщик выполняет вложение файлов с дополнительным расширением в файл без дополнительного расширения. Дополнительное расширение может использоваться только в середине полного имени файла.
 
-Рассмотрим следующий пример.
+Рассмотрим следующий пример:
 
 ![Примеры правил pathSegment](media/filenesting_pathsegment.png) ![Действие правила pathSegment](media/filenesting_pathsegment_effect.png)
 
@@ -126,7 +126,7 @@ ms.locfileid: "67587030"
 
 ### <a name="the-allextensions-provider"></a>Поставщик allExtensions
 
-Этот поставщик позволяет определить правила вложения файлов для файлов с любым расширением, но одним и тем же базовым именем. Рассмотрим следующий пример.
+Этот поставщик позволяет определить правила вложения файлов для файлов с любым расширением, но одним и тем же базовым именем. Рассмотрим следующий пример:
 
 ![Примеры правил allExtensions](media/filenesting_allextensions.png) ![Действие правила allExtensions](media/filenesting_allextensions_effect.png)
 
@@ -134,7 +134,7 @@ ms.locfileid: "67587030"
 
 ### <a name="the-filetofile-provider"></a>Поставщик fileToFile
 
-Этот поставщик позволяет определить правила вложения файлов на основе полных имен файлов. Рассмотрим следующий пример.
+Этот поставщик позволяет определить правила вложения файлов на основе полных имен файлов. Рассмотрим следующий пример:
 
 ![Примеры правил fileToFile](media/filenesting_filetofile.png) ![Действие правила fileToFile](media/filenesting_filetofile_effect.png)
 
@@ -178,7 +178,7 @@ ms.locfileid: "67587030"
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Персонализация интегрированной среды разработки](../ide/personalizing-the-visual-studio-ide.md)
 - [Решения и проекты в Visual Studio](solutions-and-projects-in-visual-studio.md)

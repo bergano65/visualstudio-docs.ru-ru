@@ -13,10 +13,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597000"
 ---
 # <a name="optimize-visual-studio-performance"></a>Оптимизация производительности Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "75597000"
 
 ::: moniker range="vs-2017"
 
-Если вы уже используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Скачать эту версию можно [здесь](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
+Если вы уже используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Его можно скачать [здесь](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ ms.locfileid: "75597000"
 
 Ваши отзывы помогают нам улучшить качество наших продуктов. Используйте функцию **Сообщить о проблеме** чтобы записать данные трассировки и отправить их нам. Щелкните значок отзыва рядом с кнопкой **быстрого запуска** или выберите в строке меню **Справка** > **Отправить отзыв** > **Сообщить о проблеме**. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Советы и рекомендации по производительности](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Блог Visual Studio. Ускорение загрузки решений в Visual Studio 2017 версии 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

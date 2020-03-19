@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278690"
 ---
 # <a name="options-text-editor-cc-view"></a>"Параметры", "Текстовый редактор", C/C++, "Представление"
@@ -40,13 +40,13 @@ ms.locfileid: "77278690"
 
 - **Процент прозрачности неактивного кода**. Процент прозрачности неактивных блоков кода.
 
-## <a name="miscellaneous"></a>Прочее
+## <a name="miscellaneous"></a>Разное
 
 - **Перечислить задачи комментариев**. Поиск в файлах с открытым исходным кодом токенов VS и их вывод в окне списка задач.
 
 - **Выделение совпадающих токенов**. Выделение вмещающих скобок или синтаксиса, который совпадает с фрагментом, где находится курсор.
 
-## <a name="outlining"></a>Структуризация
+## <a name="outlining"></a>Структура
 
 - **Включить структуру**. Входить в режим структуры при открытии файлов.
 
@@ -54,7 +54,7 @@ ms.locfileid: "77278690"
 
 - **Выделять структуру блоков операторов**. Автоматически выделять структуру блоков операторов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка параметров языка редактора](../../ide/reference/setting-language-specific-editor-options.md)
 - [Рефакторинг в C++ (блог по VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

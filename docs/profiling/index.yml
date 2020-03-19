@@ -3,60 +3,54 @@ title: Измерение производительности приложен�
 summary: Средства профилирования и диагностики позволяют разработчикам диагностировать использование памяти и ЦП и выявлять другие проблемы на уровне приложения. С помощью этих средств можно накапливать данные о производительности во время выполнения приложения.
 metadata:
   title: Измерение производительности в Visual Studio
-  description: Узнайте, как использовать Visual Studio для измерения производительности с помощью средств профилирования.
+  description: 'Узнайте, как использовать Visual Studio для измерения производительности с помощью средств профилирования.'
   ms.topic: landing-page
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
-  ms.openlocfilehash: 668d0b5837bb13dd7bcf7367a2734a9ed019bd9c
-  ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
-  ms.translationtype: HT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/25/2020
-  ms.locfileid: "77578146"
 landingContent:
-- title: О профилировании
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Первое знакомство со средствами профилирования
-      url: profiling-feature-tour.md
-  - linkListType: concept
-    links:
-    - text: Способы запуска средств профилирования
-      url: running-profiling-tools-with-or-without-the-debugger.md
-- title: Начало работы
-  linkLists:
-  - linkListType: quickstart
-    links:
-    - text: Анализ использования ЦП (C#, Visual Basic)
-      url: quickstart-cpu-usage-managed.md
-    - text: Анализ использования ЦП (C++)
-      url: quickstart-cpu-usage-native.md
-    - text: Анализ использования ЦП (ASP.NET)
-      url: quickstart-cpu-usage-aspnet.md
-  - linkListType: tutorial
-    links:
-    - text: Начало работы с анализом использования ЦП
-      url: beginners-guide-to-performance-profiling.md
-    - text: Начало работы с измерением использования памяти
-      url: memory-usage.md
-- title: Дополнительные средства производительности
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Измерение использования ЦП из командной строки
-      url: profile-apps-from-command-line.md
-    - text: Измерение использования памяти для объектов .NET
-      url: dotnet-alloc-tool.md
-    - text: PerfTips
-      url: perftips.md
-    - text: Анализ использования ресурсов (XAML)
-      url: application-timeline.md
-    - text: Анализ использования GPU (Direct3D)
-      url: gpu-usage.md
-    - text: Анализ использования сети (UWP)
-      url: network-usage.md
-    - text: Анализ расхода энергии (UWP)
-      url: analyze-energy-use-in-store-apps.md
+  - title: О профилировании
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Первое знакомство со средствами профилирования
+            url: profiling-feature-tour.md
+      - linkListType: concept
+        links:
+          - text: Способы запуска средств профилирования
+            url: running-profiling-tools-with-or-without-the-debugger.md
+  - title: Начало работы
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: 'Анализ использования ЦП (C#, Visual Basic)'
+            url: quickstart-cpu-usage-managed.md
+          - text: Анализ использования ЦП (C++)
+            url: quickstart-cpu-usage-native.md
+          - text: Анализ использования ЦП (ASP.NET)
+            url: quickstart-cpu-usage-aspnet.md
+      - linkListType: tutorial
+        links:
+          - text: Начало работы с анализом использования ЦП
+            url: beginners-guide-to-performance-profiling.md
+          - text: Начало работы с измерением использования памяти
+            url: memory-usage.md
+  - title: Дополнительные средства производительности
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Измерение использования ЦП из командной строки
+            url: profile-apps-from-command-line.md
+          - text: Измерение использования памяти для объектов .NET
+            url: dotnet-alloc-tool.md
+          - text: PerfTips
+            url: perftips.md
+          - text: Анализ использования ресурсов (XAML)
+            url: application-timeline.md
+          - text: Анализ использования GPU (Direct3D)
+            url: gpu-usage.md
+          - text: Анализ использования сети (UWP)
+            url: network-usage.md
+          - text: Анализ расхода энергии (UWP)
+            url: analyze-energy-use-in-store-apps.md

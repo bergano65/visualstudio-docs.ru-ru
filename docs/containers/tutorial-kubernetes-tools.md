@@ -9,10 +9,10 @@ ms.technology: vs-azure
 ms.workload:
 - azure
 ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75916951"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы со Средствами Visual Studio для Kubernetes
@@ -21,7 +21,7 @@ ms.locfileid: "75916951"
 
 В этом руководстве рассматривается использование Visual Studio для добавления поддержки Kubernetes в проект и публикации в AKS. Если вы заинтересованы в первую очередь в использовании [Azure Dev Spaces](/azure/dev-spaces/) для отладки и тестирования проекта, работающего в AKS, то можете перейти к [руководству по Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 Чтобы использовать эту новую функциональность, вам потребуется:
 
@@ -145,7 +145,7 @@ ms.locfileid: "75916951"
 
    ![Снимок экрана: пункт меню "Опубликовать в Azure AKS"](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. Выберите подписку и кластер AKS, а также только что созданный профиль публикации ACR. Затем нажмите кнопку **ОК**.
+4. Выберите подписку и кластер AKS, а также только что созданный профиль публикации ACR. Нажмите кнопку **ОК**.
 
    ![Снимок экрана: окно публикации в AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
@@ -167,7 +167,7 @@ ms.locfileid: "75916951"
 
 Поздравляем! Теперь вы можете использовать все возможности Visual Studio для разработки приложений Kubernetes.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о разработке для Kubernetes в Azure в [документации по AKS](/azure/aks).
 

@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027576"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Расширение пробной версии или обновление лицензии
@@ -68,14 +68,14 @@ ms.locfileid: "77027576"
 
 Если срок действия подписки истек и у вас больше нет доступа к Visual Studio, продлите подписку или добавьте другую учетную запись с подпиской. Чтобы просмотреть дополнительные сведения о лицензии, щелкните **Файл** > **Параметры учетной записи**. Сведения отображаются в правой части окна. При наличии другой подписки, связанной с другой учетной записью, добавьте эту учетную запись в список **Все учетные записи** в левой части диалогового окна, щелкнув ссылку **Добавить учетную запись**.
 
-## <a name="get-support"></a>Техническая поддержка
+## <a name="get-support"></a>Получение поддержки
 
 Иногда возникают проблемы. В случае возникновения проблем рассмотрите следующие варианты поддержки:
 
 * Сообщите о проблемах с продуктом с помощью функции [Сообщить о проблеме](how-to-report-a-problem-with-visual-studio.md).
 * Найдите ответы на вопросы о подписках, учетных записях и выставлении счетов на странице [вопросов и ответов относительно поддержки по подпискам](https://visualstudio.microsoft.com/subscriptions/support/).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Вход в Visual Studio](../ide/signing-in-to-visual-studio.md)
 * [Сравнение выпусков Visual Studio 2019](https://visualstudio.microsoft.com/vs/compare/)

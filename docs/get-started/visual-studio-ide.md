@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589361"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Добро пожаловать в интегрированную среду разработки Visual Studio
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о Visual Studio, прочитав одну из следующих вводных статей:
 
@@ -44,7 +44,7 @@ ms.locfileid: "75589361"
 
 - [Создание первого консольного приложения на C++ в Visual Studio](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Откройте для себя [другие возможности Visual Studio](../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

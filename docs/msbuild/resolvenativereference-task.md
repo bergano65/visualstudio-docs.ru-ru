@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64b76b31e96947914c9a641ed4ceb23c7761eb85
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632684"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference - задача
@@ -31,9 +31,9 @@ ms.locfileid: "77632684"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
- В следующей таблице приводятся параметры задачи `ResolveNativeReference` .
+ В следующей таблице приводятся параметры задачи `ResolveNativeReference`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`AdditionalSearchPaths`|Обязательный параметр <xref:System.String?displayProperty=fullName>`[]`.<br /><br /> Получает или задает пути поиска для разрешения идентификаторов сборок для собственных ссылок.|
 |`ContainedComComponents`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Получает или задает компоненты COM машинной сборки.|
@@ -44,11 +44,11 @@ ms.locfileid: "77632684"
 |`ContainingReferenceFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Получает или задает файлы ссылок.|
 |`NativeReferences`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Получает или задает ссылки на сборки в машинном коде Win32.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

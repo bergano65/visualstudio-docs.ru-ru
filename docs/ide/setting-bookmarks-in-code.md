@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595440"
 ---
 # <a name="set-bookmarks-in-code"></a>Установка закладок в коде
@@ -40,6 +40,6 @@ ms.locfileid: "75595440"
 
 Чтобы отключить закладки (без их удаления), нажмите кнопку **Отключить все закладки** в окне закладок. Чтобы снова включить закладки, нажмите ту же кнопку (которая теперь будет называться **Включить все закладки**).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

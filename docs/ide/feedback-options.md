@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847463"
 ---
 # <a name="visual-studio-feedback-options"></a>Параметры обратной связи Visual Studio
@@ -73,7 +73,7 @@ ms.locfileid: "75847463"
 * Используйте средство обратной связи **Была ли эта страница полезной?** в правом верхнем углу любой страницы документации.
 * Использовать учетную запись GitHub для отзывов о любой странице по Visual Studio на сайте [docs.microsoft.com](/visualstudio/). Для этого используйте кнопку **Отправить отзыв** > **Об этой странице** (внизу любой страницы документации).
 
-## <a name="contact-microsoft-support"></a>Обратитесь в службу поддержки Майкрософт
+## <a name="contact-microsoft-support"></a>Обратиться в службу поддержки Майкрософт
 
 Дополнительные сведения о поддержке Visual Studio см. на странице с описанием [жизненного цикла продукта и обслуживания](/visualstudio/releases/2019/servicing/). Чтобы получить помощь по другим продуктам и службам Майкрософт через Интернет, обратитесь на сайт [службы поддержки Майкрософт](https://support.microsoft.com/).
 
@@ -96,7 +96,7 @@ ms.locfileid: "75847463"
 
 Вы можете просматривать код других разработчиков и делиться собственными примерами на странице с [примерами кода](/samples/browse/).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Устранение ошибок установки или обновления](../install/troubleshooting-installation-issues.md)
 * [Конфиденциальность данных в сообществе разработчиков](developer-community-privacy.md)

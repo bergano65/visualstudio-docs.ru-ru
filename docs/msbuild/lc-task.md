@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633607"
 ---
 # <a name="lc-task"></a>LC - задача
@@ -33,9 +33,9 @@ ms.locfileid: "77633607"
 
 В следующей таблице приводятся параметры для задачи `LC`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
-|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES*-файлы.|
+|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES*-файлы.|
 |`NoLogo`|Необязательный параметр `Boolean`.<br /><br /> Отключает отображение эмблемы Майкрософт при запуске.|
 |`OutputDirectory`|Необязательный параметр `String`.<br /><br /> Определяет каталог для размещения выходных *LICENSES*-файлов.|
 |`OutputLicense`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя *LICENSES*-файла. Если имя не указано, используется имя *LICX*-файла, а создаваемый *LICENSES*-файл помещается в каталог, содержащий *LICX*-файл.|
@@ -69,7 +69,7 @@ ms.locfileid: "77633607"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

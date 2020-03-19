@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Visual Studio | Документация по Python
-summary: Учебники и статьи с основными понятиями по разработке приложений на Python в Visual Studio.
+title: "Visual Studio\_| Документация по\_Python"
+summary: "Учебники и статьи с\_основными понятиями по\_разработке приложений на\_Python в Visual\_Studio."
 metadata:
   title: Разработка на Python с помощью Visual Studio
-  description: Учебники и статьи с основными понятиями по разработке приложений на Python в Visual Studio.
+  description: "Учебники и статьи с\_основными понятиями по\_разработке приложений на\_Python в Visual\_Studio."
   ms.prod: visual-studio-windows
   ms.technology: vs-python
   ms.topic: landing-page
@@ -11,48 +11,42 @@ metadata:
   author: JoshuaPartlow
   ms.author: joshuapa
   ms.date: 09/23/2019
-  ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
-  ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
-  ms.translationtype: HT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/27/2019
-  ms.locfileid: "71322477"
 landingContent:
-- title: Поддержка Python в Visual Studio
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Общие сведения о поддержке Python
-      url: overview-of-python-tools-for-visual-studio.md
-    - text: Обзор интегрированной среды разработки Visual Studio
-      url: visual-studio-ide.md
-- title: Начало работы с Python
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: Установка поддержки Python в Visual Studio
-      url: installing-python-support-in-visual-studio.md
-    - text: Создание и редактирование кода
-      url: editing-python-code-in-visual-studio.md
-    - text: Отладка кода
-      url: debugging-python-in-visual-studio.md
-    - text: Написание и запуск тестов
-      url: unit-testing-python-in-visual-studio.md
-    - text: Использование интерактивного окна REPL
-      url: python-interactive-repl-in-visual-studio.md
-    - text: Управление средами Python
-      url: managing-python-environments-in-visual-studio.md
-    - text: Создание расширений С/C++ для Python
-      url: working-with-c-cpp-python-in-visual-studio.md
-  - linkListType: tutorial
-    links:
-    - text: Работа с Python в Visual Studio
-      url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-- title: Знакомство с разработкой веб-приложений
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Создание веб-приложения на платформе Django
-      url: learn-django-in-visual-studio-step-01-project-and-solution.md
-    - text: Создание веб-приложения на платформе Flask
-      url: learn-flask-visual-studio-step-01-project-solution.md
+  - title: "Поддержка Python в Visual\_Studio"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Общие сведения о поддержке Python
+            url: overview-of-python-tools-for-visual-studio.md
+          - text: Обзор интегрированной среды разработки Visual Studio
+            url: visual-studio-ide.md
+  - title: Начало работы с Python
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Установка поддержки Python в Visual Studio
+            url: installing-python-support-in-visual-studio.md
+          - text: Создание и редактирование кода
+            url: editing-python-code-in-visual-studio.md
+          - text: Отладка кода
+            url: debugging-python-in-visual-studio.md
+          - text: Написание и запуск тестов
+            url: unit-testing-python-in-visual-studio.md
+          - text: Использование интерактивного окна REPL
+            url: python-interactive-repl-in-visual-studio.md
+          - text: Управление средами Python
+            url: managing-python-environments-in-visual-studio.md
+          - text: Создание расширений С/C++ для Python
+            url: working-with-c-cpp-python-in-visual-studio.md
+      - linkListType: tutorial
+        links:
+          - text: Работа с Python в Visual Studio
+            url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+  - title: "Знакомство с\_разработкой веб-приложений"
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Создание веб-приложения на платформе Django
+            url: learn-django-in-visual-studio-step-01-project-and-solution.md
+          - text: Создание веб-приложения на платформе Flask
+            url: learn-flask-visual-studio-step-01-project-solution.md

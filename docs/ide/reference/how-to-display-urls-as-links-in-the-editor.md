@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569092"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Практическое руководство. Отображение URL-адресов как ссылок в редакторе
@@ -31,7 +31,7 @@ ms.locfileid: "75569092"
 
 ## <a name="display-urls-as-links"></a>Отображение URL-адресов как ссылок
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите команду **Параметры**.
 
 2. Щелкните **Текстовый редактор**.
 
@@ -43,6 +43,6 @@ ms.locfileid: "75569092"
 
 4. В разделе **Отображение** выберите **Открывать URL-адреса однократным щелчком**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)

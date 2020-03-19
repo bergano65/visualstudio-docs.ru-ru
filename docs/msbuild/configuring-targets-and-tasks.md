@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39a3d6ba3eff6a01c2d0ff68b4132d883eadb90f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634400"
 ---
 # <a name="configure-targets-and-tasks"></a>Настройка целевых платформ и задач
@@ -29,6 +29,6 @@ ms.locfileid: "77634400"
 
  Если вы хотите создать собственные целевой контекст, нужно задать эти аргументы и параметры соответствующим образом. Примеры см. в файлах *Microsoft.Common.targets* и *Microsoft.Common.Tasks* платформы .NET Framework 4.5.  Сведения о том, как создать настраиваемую задачу, способную работать с несколькими целевыми контекстами, или изменить существующие задачи, см. в разделе [Практическое руководство. Настройка целевых платформ и задач](../msbuild/how-to-configure-targets-and-tasks.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)

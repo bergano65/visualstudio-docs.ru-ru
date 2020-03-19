@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591051"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
@@ -156,10 +156,10 @@ ms.locfileid: "75591051"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
-- [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)

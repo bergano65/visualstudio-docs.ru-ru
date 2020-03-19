@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634140"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath - задача
@@ -31,17 +31,17 @@ ms.locfileid: "77634140"
 
 ## <a name="parameters"></a>Параметры
 
-В следующей таблице приводятся параметры задачи `FindUnderPath` .
+В следующей таблице приводятся параметры задачи `FindUnderPath`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |`Files`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файлы, пути которых следует сравнивать с путем, заданным в параметре `Path`.|
 |`InPath`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит элементы, найденные по указанному пути.|
 |`OutOfPath`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит элементы, не найденные по указанному пути.|
-|`Path`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает путь к папке для использования в качестве ссылки.|
+|`Path`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает путь к папке для использования в качестве ссылки.|
 |`UpdateToAbsolutePaths`|Необязательный параметр `Boolean`.<br /><br /> Если имеет значение true, пути к выходным элементам изменяются на абсолютные.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -76,7 +76,7 @@ ms.locfileid: "77634140"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

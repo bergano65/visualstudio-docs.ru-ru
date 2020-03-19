@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75844318"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
@@ -56,7 +56,7 @@ ms.locfileid: "75844318"
 
 Однако эта функция также применима и для ситуаций, когда разработчик сначала пишет код, а затем использует его для начальной загрузки модульных тестов. В рамках потока написания кода разработчику может потребоваться быстро создать заглушку для метода модульного тестирования (с подходящим тестовым классом и тестовым проектом) для определенного фрагмента кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Creating unit test method stubs with "Create Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) (Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов")
 - [Записи блога о функции модульного тестирования](https://devblogs.microsoft.com/devops/?s=unit+testing)

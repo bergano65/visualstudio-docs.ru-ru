@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552984"
 ---
 # <a name="c-library-reference"></a>Справочник по библиотеке C++
@@ -24,10 +24,10 @@ ms.locfileid: "62552984"
 > [!NOTE]
 > В стандарте языка C++ использование идентификаторов, начинающихся с символа подчеркивания (`_`), зарезервировано для таких реализаций, как библиотеки. Не используйте в коде имена, начинающиеся с символа подчеркивания. Поведение элементов кода, имена которых соответствуют этому соглашению, не гарантируется и может быть изменено в будущем. По этим причинам такие элементы кода исключены из этой документации.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 [Пространство имен Concurrency (визуализатор параллелизма)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593581"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
@@ -72,7 +72,7 @@ ms.locfileid: "75593581"
 
 Открывает диалоговое окно [Дополнительные параметры безопасности](../../ide/reference/advanced-security-settings-dialog-box.md), в котором можно настроить параметры отладки приложения с ограниченными разрешениями. Эти параметры проверяются во время отладки, а исключения разрешений указывают, что приложение может потребовать больше разрешений, чем предусмотрено соответствующей зоной.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>

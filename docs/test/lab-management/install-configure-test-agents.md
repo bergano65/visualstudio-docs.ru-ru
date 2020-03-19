@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594270"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Установка агентов и контроллеров тестирования
@@ -28,9 +28,9 @@ ms.locfileid: "75594270"
 
 | Элемент | Требования |
 | ---- | ------------ |
-| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
-| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1 (SP1)<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
-| **.NET Framework** | .NET Framework 4,5 |
+| **Агент** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
+| **Контроллер** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 с пакетом обновления 1<br />Windows Server 2016: Standard и Datacenter<br />Windows Server 2012 R2 |
+| **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Установка контроллера и агентов тестирования
 

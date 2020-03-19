@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62776781"
 ---
 # <a name="channels-threads-view"></a>Каналы (представление "Потоки")
@@ -47,5 +47,5 @@ ms.locfileid: "62776781"
 ## <a name="gpu-channels"></a>Каналы GPU
  Каналы GPU отображает сведения о действиях DirectX 11 в системе.  Каждый обработчик DirectX, который связан с видеокартой, имеет отдельный канал.  Отдельные сегменты представляют время, затраченное на обработку пакета прямого доступа к памяти.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
