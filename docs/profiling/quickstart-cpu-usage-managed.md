@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8fd77fe5fc00e8c1a3b487c93a6004b2f8cf7060
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77558202"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Краткое руководство. Анализ данных по загрузке ЦП в Visual Studio (C#, Visual Basic)
@@ -34,7 +34,7 @@ Visual Studio предоставляет множество эффективны
    ::: moniker range="vs-2017"
    В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
-   В левой области диалогового окна **Создать проект** разверните узел **C#** или **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите проект *MyProfilerApp*.
+   В левой области диалогового окна **Создать проект** разверните узел **C#** или **Visual Basic** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)** . Назовите проект *MyProfilerApp*.
 
    Если шаблона проекта **Console App (.NET Core)** (Консольное приложение (.NET Core)) нет, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Новый проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core** и затем элемент **Изменить**.
    ::: moniker-end

@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72806925"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
@@ -42,7 +42,7 @@ ms.locfileid: "72806925"
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** и **.NET Core**. Для развертывания в локальную папку используйте средство публикации. Выбор варианта зависит типа приложения. В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**. (Если профили публикации не были настроены ранее, необходимо щелкнуть **Создать профиль**.) Далее выберите **Папка**. Дополнительные сведения см. в статье [Развертывание в локальную папку](quickstart-deploy-to-local-folder.md).
 
-    ![Выбор команды "Опубликовать"](../deployment/media/quickstart-publish.png)
+    ![Выбор команды Опубликовать](../deployment/media/quickstart-publish.png)
 
 - **Классические приложения Windows**. Вы можете публиковать классические приложения Windows в папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C++/CLI см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 

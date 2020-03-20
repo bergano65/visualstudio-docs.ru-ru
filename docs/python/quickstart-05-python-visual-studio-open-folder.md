@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62431158"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Краткое руководство. Открытие и выполнение кода Python в папке
@@ -68,7 +68,7 @@ ms.locfileid: "62431158"
 
 В таком случае следует добавить в JSON-файл конфигурации запуска дополнительную строку, которая указывает рабочий каталог:
 
-1. Щелкните правой кнопкой мыши файл запуска Python (*.py*) в **обозревателе решений** и выберите **Параметры отладки и запуска**.
+1. Щелкните правой кнопкой мыши файл запуска Python ( *.py*) в **обозревателе решений** и выберите **Параметры отладки и запуска**.
 
     ![Команда "Параметры отладки и запуска" для файла Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 

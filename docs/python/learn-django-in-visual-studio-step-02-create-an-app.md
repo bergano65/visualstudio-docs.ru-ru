@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75678991"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79300891"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Django с представлениями и шаблонами страниц
 

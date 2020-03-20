@@ -12,10 +12,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180323"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Краткое руководство. Создание первой веб-службы ASP.NET Core на F\# с помощью Visual Studio
@@ -42,7 +42,7 @@ ms.locfileid: "70180323"
 
 1. Запустите Visual Studio.
 
-2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
+2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual F#** и выберите **Веб**. В средней области выберите **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
 

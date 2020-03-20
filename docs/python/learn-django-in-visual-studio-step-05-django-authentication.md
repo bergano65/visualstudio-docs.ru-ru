@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957889"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django
@@ -204,7 +204,7 @@ ms.locfileid: "62957889"
 
 1. По завершении остановите работу сервера и снова зафиксируйте изменения в системе управления версиями.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Вопрос. Для чего нужен тег {% csrf_token %}, который отображается в элементах \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Вопрос. Для чего нужен тег {% csrf_token %}, который отображается в элементах \<form\>?
 
 Ответ. Тег `{% csrf_token %}` содержит встроенную в Django функцию [защиты от подделки межсайтовых запросов (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (документация Django). Обычно этот тег добавляется в каждый элемент, для которого используются методы запросов POST, PUT или DELETE, такой как форма. С помощью функции отображения в шаблон (`render`) затем вставляются необходимые средства защиты.
 

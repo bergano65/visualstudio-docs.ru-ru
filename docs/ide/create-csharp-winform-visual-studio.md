@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71685532"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Создание приложения Windows Forms на C# в Visual Studio
@@ -47,7 +47,7 @@ ms.locfileid: "71685532"
 
 1. Откройте Visual Studio 2017.
 
-1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
+1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 1. В левой области диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **Рабочий стол Windows**. На средней панели выберите **Приложение Windows Forms (.NET Framework)** . Назовите файл `HelloWorld`.
 

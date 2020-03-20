@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 40011b035afdf4a04eb760d13c001e39d9c578c4
-ms.sourcegitcommit: 91a054beb6b3a16ed5140f9f829239ec31bbbec8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75810587"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Учебник. Создание приложения ASP.NET Core с помощью TypeScript в Visual Studio
@@ -52,7 +52,7 @@ ms.locfileid: "75810587"
     Установите Visual Studio 2017 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
     ::: moniker-end
 
-    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**, а затем щелкните **Изменить**.
+    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**, а затем щелкните **Изменить**.
 
 ## <a name="create-a-new-aspnet-core-mvc-project"></a>Создание проекта ASP.NET Core MVC
 
