@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73636586"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Знакомство с интегрированной средой разработки Visual Studio
@@ -90,11 +90,11 @@ ms.locfileid: "73636586"
 1. В открывшемся диалоговом окне **Новый проект** оставьте имя проекта по умолчанию и нажмите кнопку **ОК**.
 ::: moniker-end
 
-   Будет создан проект. В окне **редактора** откроется файл с именем *server.js*. В **редакторе** отображается содержимое файлов. Кроме того, здесь вы можете выполнять основную часть работы с кодом в Visual Studio.
+   Будет создан проект. В окне *редактора* откроется файл с именем **server.js**. В **редакторе** отображается содержимое файлов. Кроме того, здесь вы можете выполнять основную часть работы с кодом в Visual Studio.
 
    ![Редактор в Visual Studio](media/editor.png)
 
-## <a name="solution-explorer"></a>обозреватель решений
+## <a name="solution-explorer"></a>Обозреватель решений
 
 В **обозревателе решений**, который обычно находится в правой части Visual Studio, отображается графическое представление иерархии файлов и папок в проекте, решении или папке с кодом. В **обозревателе решений** можно просматривать эту иерархию и переходить к нужным файлам.
 
@@ -114,7 +114,7 @@ ms.locfileid: "73636586"
 
 ![Список ошибок в Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>окно выходных данных
+## <a name="output-window"></a>Окно вывода
 
 В окне **вывода** отображаются выходные сообщения от процесса сборки проекта и поставщика системы управления версиями.
 
@@ -146,7 +146,7 @@ ms.locfileid: "73636586"
 
 ![Меню "Отправить отзыв" в Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Мы рассмотрели лишь некоторые из возможностей Visual Studio, чтобы вы могли получить представление о пользовательском интерфейсе. Для дальнейшего ознакомления:
 
@@ -156,7 +156,7 @@ ms.locfileid: "73636586"
 > [!div class="nextstepaction"]
 > [Сведения о проектах и решениях](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения об интегрированной среде разработки (IDE) в Visual Studio](../get-started/visual-studio-ide.md)
 - [Дополнительные возможности Visual Studio 2017](../ide/advanced-feature-overview.md)

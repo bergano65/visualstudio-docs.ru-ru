@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72777433"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Локальное обучение модели tensorflow
@@ -23,7 +23,7 @@ ms.locfileid: "72777433"
 
 База данных MNIST содержит обучающий набор из 60 000 примеров и тестовый набор из 10 000 примеров рукописных цифр.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 Прежде чем начать, убедитесь в том, что установлены следующие компоненты:
 
@@ -38,7 +38,7 @@ C:\>pip.exe install tensorflow
 ### <a name="numpy-and-scipy"></a>NumPy и SciPy
 Установите [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) и [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
-### <a name="download-sample-code"></a>Скачивание образца кода
+### <a name="download-sample-code"></a>Скачивание примера кода
 Скачайте [репозиторий GitHub](https://github.com/Microsoft/samples-for-ai), содержащий образцы для начала работы с глубинным обучением на основе TensorFlow, CNTK, Theano и других библиотек.
 
 ## <a name="open-solution-and-train-model"></a>Открытие решения и обучение модели
@@ -53,7 +53,7 @@ C:\>pip.exe install tensorflow
 
 - В **обозревателе решений** найдите проект MNIST, щелкните его правой кнопкой мыши и выберите пункт **Назначить запускаемым проектом**.
 
-- Нажмите кнопку **Запустить**.
+- Нажмите **Запуск**.
 
 - Выходные данные будут выведены в консоли.
 

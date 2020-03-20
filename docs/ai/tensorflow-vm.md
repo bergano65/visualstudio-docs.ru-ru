@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75915831"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Обучение модели TensorFlow в облаке
@@ -23,7 +23,7 @@ ms.locfileid: "75915831"
 
 База данных MNIST содержит обучающий набор из 60 000 примеров и тестовый набор из 10 000 примеров рукописных цифр.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 Прежде чем начать, убедитесь в том, что установлены и настроены следующие компоненты:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Настройка виртуальной машины Azure для глубинного обучения
@@ -39,7 +39,7 @@ ms.locfileid: "75915831"
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Скачивание образца кода
+### <a name="download-sample-code"></a>Скачивание примера кода
 
 Скачайте [репозиторий GitHub](https://github.com/Microsoft/samples-for-ai), содержащий образцы для начала работы с глубинным обучением на основе TensorFlow, CNTK, Theano и других библиотек.
 
@@ -70,7 +70,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 - Введите **имя задания**.
 
-- Нажмите кнопку **Отправить**.
+- Щелкните **Отправить**.
 
 ## <a name="check-status-of-job"></a>Проверка состояния задания
 Для просмотра состояния задания и сведений о нем разверните узел виртуальной машины, куда было отправлено задание, в **обозревателе сервера**. Дважды щелкните элемент **Задания**.

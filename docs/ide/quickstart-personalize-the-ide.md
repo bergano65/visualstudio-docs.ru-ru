@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596948"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Персонализация интегрированной среды разработки и редактора Visual Studio
@@ -115,7 +115,7 @@ ms.locfileid: "75596948"
 
 Мы изучили только некоторые способы настраивать цвета в Visual Studio. Ознакомьтесь с другими возможностями в диалоговом окне **Параметры**, чтобы настроить Visual Studio в соответствии со своими предпочтениями.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка редактора](../ide/how-to-change-text-case-in-the-editor.md)
 - [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)
