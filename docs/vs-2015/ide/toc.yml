@@ -90,7 +90,7 @@
           href: getting-started-with-cpp-in-visual-studio.md
         - name: Начало работы с отладкой в Visual Studio 2015
           href: getting-started-with-debugging-in-visual-studio-2015.md
-        - name: Проекты и решения
+        - name: Решения и проекты
           href: solutions-and-projects-in-visual-studio.md
         - name: Creating Solutions and Projects
           href: creating-solutions-and-projects.md
@@ -178,15 +178,15 @@
               href: using-regular-expressions-in-visual-studio.md
             - name: Поиск/Команда - окно
               href: find-command-box.md
-            - name: Поиск в файлах
+            - name: Найти в файлах
               href: find-in-files.md
-            - name: Заменить в файлах
+            - name: Замена в файлах
               href: replace-in-files.md
         - name: Кодировки и разрывы строк
           href: encodings-and-line-breaks.md
-        - name: Структуризация
+        - name: Структура
           href: outlining.md
-        - name: Рефакторинг
+        - name: Refactoring
           href: refactoring-in-visual-studio.md
         - name: Советы по повышению производительности
           items:
@@ -230,9 +230,9 @@
                   href: statement-completion-for-identifiers.md
                 - name: Настройка IntelliSense для RequireJS
                   href: customizing-intellisense-for-requirejs.md
-                - name: Комментарии к XML-документации
+                - name: Комментарии XML-документации
                   items:
-                    - name: Комментарии к XML-документации
+                    - name: Комментарии XML-документации
                       href: xml-documentation-comments-javascript.md
                     - name: \<deprecated>
                       href: deprecated-javascript.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<value>
+                    - name: \<значение>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -296,7 +296,7 @@
               href: troubleshooting-snippets.md
             - name: Справочник по схеме фрагментов кода
               href: code-snippets-schema-reference.md
-        - name: Использование панели элементов
+        - name: Применение области элементов
           href: using-the-toolbox.md
         - name: Просмотр структуры кода
           items:
@@ -416,7 +416,7 @@
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Отладка в Visual Studio
       href: ../debugger/debugging-in-visual-studio.md
-    - name: Профилирование
+    - name: Профилирование.
       href: ../profiling/profiling-tools.md
     - name: Улучшение качества кода
       href: ../test/unit-test-your-code.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Поддержка 64-разрядных сред IDE Visual Studio
       href: visual-studio-ide-64-bit-support.md
-    - name: Примеры Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Учетные записи пользователей и обновления
       items:
@@ -494,7 +494,7 @@
           href: user-accounts-and-updates.md
         - name: Вход в Visual Studio
           href: signing-in-to-visual-studio.md
-        - name: Работа с несколькими учетными записями пользователя
+        - name: Work with multiple user accounts
           href: work-with-multiple-user-accounts.md
         - name: Разблокирование Visual Studio
           href: how-to-unlock-visual-studio.md
@@ -516,19 +516,19 @@
           href: managing-external-tools.md
         - name: Синхронизированные параметры
           href: synchronized-settings-in-visual-studio.md
-    - name: Безопасность
+    - name: безопасность
       items:
-        - name: Безопасность
+        - name: безопасность
           href: security-in-visual-studio.md
         - name: Защита приложений
           href: securing-applications.md
         - name: Обеспечение безопасности
           href: maintaining-security.md
-        - name: Разрешения пользователей
+        - name: Разрешения пользователя
           href: user-permissions-and-visual-studio.md
         - name: Библиография по вопросам безопасности
           href: security-bibliography.md
-    - name: Примеры Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Окно справки (Майкрософт)
       items:
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Добавление поддержки редактора Visual Studio для других языков
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: Ссылка
+    - name: Справочник
       items:
         - name: Общие элементы пользовательского интерфейса (Visual Studio)
           items:
@@ -626,11 +626,11 @@
               href: reference/call-hierarchy.md
             - name: 'Выбор элементов панели элементов, компоненты WPF'
               href: reference/choose-toolbox-items-wpf-components.md
-            - name: выбор фрагмента кода
+            - name: Выбор фрагмента кода
               href: reference/code-snippet-picker.md
-            - name: Командное окно
+            - name: Окно команд
               href: reference/command-window.md
-            - name: Преобразование - диалоговое окно
+            - name: Диалоговое окно "Преобразование"
               href: reference/convert-dialog-box.md
             - name: Окно "Список ошибок"
               href: reference/error-list-window.md
@@ -676,7 +676,7 @@
                   href: reference/synchronized-settings-environment-options-dialog-box.md
                 - name: 'Страница «Вкладки и окна», папка «Среда», диалоговое окно «Параметры»'
                   href: reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: 'Страница "Список задач", папка "Среда", диалоговое окно "Параметры"'
+                - name: 'Task List, Environment, Options Dialog Box'
                   href: reference/task-list-environment-options-dialog-box.md
                 - name: 'Страница "Браузер", папка "Среда", диалоговое окно "Параметры"'
                   href: reference/web-browser-environment-options-dialog-box.md
@@ -730,15 +730,15 @@
                   href: reference/options-page-text-editor-node-properties.md
             - name: 'Страница "Параметры", свойства узла отладки'
               href: reference/options-page-debugging-node-properties.md
-            - name: Окно выходных данных
+            - name: Окно вывода
               href: reference/output-window.md
             - name: Справочник по свойствам проектов
               items:
                 - name: Справочник по свойствам проектов
                   href: reference/project-properties-reference.md
-                - name: 'Application Page, Project Designer (Visual Basic)'
+                - name: Приложение" в конструкторе проектов (Visual Basic)
                   items:
-                    - name: 'Application Page, Project Designer (Visual Basic)'
+                    - name: Приложение" в конструкторе проектов (Visual Basic)
                       href: reference/application-page-project-designer-visual-basic.md
                     - name: Диалоговое окно "Сведения о сборке"
                       href: reference/assembly-information-dialog-box.md
@@ -788,7 +788,7 @@
                   items:
                     - name: Страница "Службы" в конструкторе проектов
                       href: reference/services-page-project-designer.md
-                    - name: Диалоговое окно "Дополнительные параметры служб"
+                    - name: Диалоговое окно “Дополнительные параметры служб”
                       href: reference/advanced-settings-for-services-dialog-box.md
                 - name: Страница "Подписывание" в конструкторе проектов
                   href: reference/signing-page-project-designer.md
@@ -808,11 +808,11 @@
                   href: reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Страницы свойств (JavaScript)
               href: reference/property-pages-javascript.md
-            - name: Окно свойств
+            - name: Окно «Свойства»
               href: reference/properties-window.md
-            - name: Панель элементов
+            - name: Область элементов
               items:
-                - name: Панель элементов
+                - name: Область элементов
                   href: reference/toolbox.md
                 - name: 'Вкладка "Компоненты", панель элементов'
                   href: reference/toolbox-components-tab.md
@@ -894,7 +894,7 @@
               href: reference/find-command.md
             - name: Команда Find in Files
               href: reference/find-in-files-command.md
-            - name: Команда Go To
+            - name: команда «Перейти к»
               href: reference/go-to-command.md
             - name: Импорт и экспорт параметров - команда
               href: reference/import-and-export-settings-command.md

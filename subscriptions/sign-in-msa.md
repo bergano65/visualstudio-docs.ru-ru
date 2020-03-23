@@ -3,15 +3,15 @@ title: Вход в подписки Visual Studio с учетной запись
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Как войти в вашу подписку Visual Studio с помощью учетной записи Майкрософт (MSA)
-ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 49a20e5c34d81e7b5437ff48e749e322c6c57828
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493081"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508735"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Вход в подписку Visual Studio с помощью учетной записи Майкрософт (MSA)
 
@@ -36,10 +36,16 @@ ms.locfileid: "68493081"
 
 ### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Вопрос:  Я не вижу свою подписку. Где они находятся?
 Ответ.  У многих пользователей есть несколько подписок.  Если вы можете войти на портал подписок по адресу https://my.visualstudio.com, но не видите свою подписку, у этого есть две основные причины:
-1. Вы выполнили вход с другой учетной записью Майкрософт.  Возможно, у вас несколько подписок, например Professional или Enterprise, а также членство в Visual Studio Dev Essentials, и они связаны с разными адресами электронной почты. Чтобы просмотреть другие подписки, выйдите и снова войдите, используя другую учетную запись MSA.
-2. К одной учетной записи MSA привязано несколько подписок.  Чтобы просмотреть все подписки, связанные с MSA, посетите https://my.visualstudio.com/subscriptions и выберите подписку, которую хотите использовать. 
+- Вы выполнили вход с другой учетной записью Майкрософт.  Возможно, у вас несколько подписок, например Professional или Enterprise, а также членство в Visual Studio Dev Essentials, и они связаны с разными адресами электронной почты. Чтобы просмотреть другие подписки, выйдите и снова войдите, используя другую учетную запись MSA.
+- К одной учетной записи MSA привязано несколько подписок.  Чтобы просмотреть все подписки, связанные с MSA, посетите https://my.visualstudio.com/subscriptions и выберите подписку, которую хотите использовать. 
 
 Если не получится, вы можете обратиться за помощью в [службу поддержки по подпискам](https://visualstudio.microsoft.com/subscriptions/support/).  
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 После успешного входа на портал подписок мы рекомендуем ознакомиться со страницей преимуществ по адресу https://my.visualstudio.com/benefits и изучить превосходные инструменты, службы и предложения, доступные вам.  

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: Узнайте, как использовать специальные цены на Azure DevTest, доступные клиентам с соглашениями Enterprise.
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580118"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78410429"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Предложение Azure DevTest по соглашению Enterprise
 
@@ -25,28 +25,28 @@ ms.locfileid: "77580118"
 
 ## <a name="enable-offers-in-the-ea-portal"></a>Включение предложений на портале EA
 Чтобы включить предложения, выполните следующие действия.
-1. Выполните вход в https://ea.azure.com/manage.
+1. Войдите на портал [https://ea.azure.com/manage](https://ea.azure.com/manage).
 0. Откройте меню **Учетная запись**.
 0. Найдите учетную запись, для которой требуется включить предложения.  Если у вас несколько учетных записей, используйте функцию **Поиск**. 
 0. Наведите на имя учетной записи. 
 0. Щелкните значок **изменить** (карандаш) в правом углу. 
 0. Установите флажок **Разработка и тестирование**.
-0. Нажмите кнопку **Сохранить**.
+0. Выберите команду **Сохранить**.
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Создание отдельных подписок в учетной записи
 Каждый подписчик в учетной записи может создать подписку, выполнив следующие действия.
-1. Выполните вход в https://account.windowsazure.com/signup?showCatalogs=True.
+1. Войдите на портал [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Выберите предложение **Enterprise — разработка и тестирование**.
 0. Поставьте флажок, чтобы признать, что подписка управляется соглашением Enterprise. 
 0. Щелкните **Приобрести**.  (Используя это предложение, на самом деле вы ничего не покупаете.)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об управлении подписками Visual Studio.
 - [Назначение отдельных подписок](assign-license.md)
 - [Назначение нескольких подписок](assign-license-bulk.md)

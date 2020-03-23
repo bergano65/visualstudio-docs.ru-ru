@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Сведения о том, как анонимизируются данные подписчика при потере доступа к подпискам.
-ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 439e53b1c67fde0fbda0666652e29bf396abfee2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77520843"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78894407"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Анонимизация данных подписчика Visual Studio
 При возникновении события, блокирующего подписчику возможность пользования подпиской, например при истечении срока действия подписки или удалении учетной записи для входа подписчика, персональные данные пользователя, такие как имя и учетная запись для входа, шифруются, чтобы сделать их непригодными к использованию.  Это позволяет защитить персональные данные подписчика.
@@ -41,11 +41,13 @@ ms.locfileid: "77520843"
 - Развертывание системы управления с одним удостоверением — MSA или AAD (но не обоими).  
 - Сопоставление удостоверений AAD и MSA через клиент. 
 
-## <a name="next-steps"></a>Следующие шаги
-Сведения о запрете анонимизации посредством [связывания удостоверений MSA и AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Следующие шаги
+Сведения о запрете анонимизации посредством [связывания удостоверений MSA и AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+
+

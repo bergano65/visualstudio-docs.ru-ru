@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: 4f7f3d1567972c3841af6deb37677a7e01cdb825
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985169"
 ---
 # <a name="task-comments"></a>Комментарии к задачам
@@ -18,7 +18,7 @@ ms.locfileid: "74985169"
 
 ![Параметры списка задач](media/source-editor-image10.png)
 
-Чтобы добавить новую заметку задачи, добавьте заметку, содержащую ключевое слово этой задачи. Например:
+Чтобы добавить новую заметку задачи, добавьте заметку, содержащую ключевое слово этой задачи. Пример:
 
 ```csharp
 //TODO: Finish this for all properties.
@@ -28,6 +28,6 @@ Visual Studio для Mac привлекает внимание к этим то�
 
 ![Панель списка задач](media/source-editor-image11.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование списка задач (Visual Studio в Windows)](/visualstudio/ide/using-the-task-list)

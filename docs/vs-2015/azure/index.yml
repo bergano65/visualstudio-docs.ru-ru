@@ -70,7 +70,7 @@ sections:
               src: 'https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg'
             text: Azure Active Directory
             href: /azure/active-directory/develop/vs-active-directory-add-connected-service
-  - title: Облачные службы Azure
+  - title: Oблачныe службы Azure
     items:
       - type: paragraph
         text: Облачные службы Azure — это технология общего назначения для создания универсальных служб Azure с возможностью доступа к хранилищу и другим ресурсам Azure.
@@ -117,7 +117,7 @@ sections:
             html: <p>Доступ к учетным записям хранения Azure в Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
-            title: Хранилище
+            title: Память
           - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
             html: <p>Доступ к виртуальным машинам из Visual Studio</p>
             image:
@@ -132,7 +132,7 @@ sections:
         items:
           - image:
               src: 'https://docs.microsoft.com/azure/azure-resource-manager/media/index/azure-resource-manager.svg'
-            text: Группа ресурсов Azure
+            text: группа ресурсов Azure.
             href: 'https://docs.microsoft.com/azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Azure-Data-Lake-Analytics-COLOR.svg'
@@ -144,5 +144,5 @@ sections:
             href: 'https://docs.microsoft.com/azure/stream-analytics/stream-analytics-quick-create-vs'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Fabric.svg'
-            text: Service Fabric.
+            text: Service Fabric
             href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started'

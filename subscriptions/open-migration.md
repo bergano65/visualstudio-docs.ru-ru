@@ -3,15 +3,15 @@ title: Партнеры, управляющие подписками Visual Stud
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Узнайте, как партнеры управляют подписками Visual Studio для своих клиентов.
-ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850560"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947076"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Партнеры, управляющие подписками от имени клиентов
 Для управления подписками на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com) клиентам необходимо выполнить несколько действий. Процесс будет выглядеть следующим образом.
@@ -54,6 +54,12 @@ ms.locfileid: "75850560"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="see-also"></a>См. также раздел
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Дальнейшие действия
 - Посетите [портал администрирования подписок](https://manage.visualstudio.com) Visual Studio, чтобы управлять подписками.
-- Нужна помощь? Обратитесь в [службу поддержки по администрированию и подпискам](https://visualstudio.microsoft.com/support/support-overview-vs) Visual Studio
+- Требуется помощь? Обратитесь в [службу поддержки по администрированию и подпискам](https://visualstudio.microsoft.com/support/support-overview-vs) Visual Studio

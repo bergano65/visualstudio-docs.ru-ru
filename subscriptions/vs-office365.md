@@ -7,10 +7,10 @@ ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения о преимуществе использования Office 365 профессиональный плюс, входящем в состав некоторых подписок Visual Studio.
 ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
-ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "77904156"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio

@@ -10,15 +10,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75591623"
 ---
 # <a name="intellitest-reference-manual"></a>Справочное руководство по IntelliTest
 
-## <a name="contents"></a>Описание
+## <a name="contents"></a>Содержимое
 
 * **[Общие сведения о IntelliTest](introduction.md)**
   - [Основы IntelliTest](introduction.md#the-hello-world-of-intellitest)
@@ -119,10 +119,10 @@ ms.locfileid: "75591623"
   - [Вызов внешнего метода](warnings-and-errors.md#external-method-called)
   - [Вызов неинструментируемого метода](warnings-and-errors.md#uninstrumentable-method-called)
   - [Проблема тестирования](warnings-and-errors.md#testability-issue)
-  - [Ограничение](warnings-and-errors.md#limitation)
+  - [Ограничения](warnings-and-errors.md#limitation)
   - [Обнаружено несовпадение вызовов](warnings-and-errors.md#observed-call-mismatch)
   - [Значение хранилось в статическом поле](warnings-and-errors.md#value-static-field)
 
-## <a name="got-feedback"></a>Хотите оставить отзыв?
+## <a name="got-feedback"></a>Хотите отправить отзыв?
 
 Делитесь своими идеями и пожеланиями относительно новых функций в [сообществе разработчиков](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

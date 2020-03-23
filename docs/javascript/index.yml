@@ -1,54 +1,60 @@
 ### YamlMime:Landing
-title: "Учебники по Visual\_Studio\_| JavaScript и TypeScript"
-summary: "Создание приложений JavaScript и TypeScript с помощью Visual\_Studio"
+title: Учебники по Visual Studio | JavaScript и TypeScript
+summary: Создание приложений JavaScript и TypeScript с помощью Visual Studio
 metadata:
-  title: "JavaScript и TypeScript в Visual\_Studio"
-  description: "Узнайте, как использовать Visual\_Studio, чтобы создавать приложения JavaScript и TypeScript."
+  title: JavaScript и TypeScript в Visual Studio
+  description: Узнайте, как использовать Visual Studio, чтобы создавать приложения JavaScript и TypeScript.
   ms.topic: landing-page
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
+  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75678952"
 landingContent:
-  - title: Начало работы
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: "JavaScript и TypeScript в Visual\_Studio"
-            url: javascript-in-vs-2019.md
-      - linkListType: how-to-guide
-        links:
-          - text: Установка Visual Studio
-            url: ../install/install-visual-studio.md
-      - linkListType: get-started
-        links:
-          - text: Начать интерактивный обзор
-            url: quickstart-ide-orientation-js.md
-  - title: Создание приложений JavaScript и TypeScript
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Создание веб-приложения на Node.js и Express
-            url: tutorial-nodejs.md
-          - text: Создание веб-приложения на Node.js и React
-            url: tutorial-nodejs-with-react-and-jsx.md
-          - text: Создание веб-приложения на Node.js и Vue.js
-            url: quickstart-vuejs-with-nodejs.md
-          - text: Создание приложения ASP.NET Core с помощью TypeScript
-            url: tutorial-aspnet-with-typescript.md
-  - title: Знакомство с Visual Studio
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Создание и редактирование кода
-            url: write-and-edit-code.md
-          - text: Управление npm-пакетами
-            url: npm-package-management.md
-          - text: Интерактивный цикл REPL в Node.js
-            url: nodejs-interactive-repl.md
-          - text: Отладка кода
-            url: debug-nodejs.md
-          - text: Разработка кода без использования проектов и решений
-            url: develop-javascript-code-without-solutions-projects.md
-          - text: Создание и выполнение модульных тестов
-            url: unit-testing-javascript-with-visual-studio.md
+- title: Начало работы
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: JavaScript и TypeScript в Visual Studio
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Установка Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Начать интерактивный обзор
+      url: quickstart-ide-orientation-js.md
+- title: Создание приложений JavaScript и TypeScript
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создание веб-приложения на Node.js и Express
+      url: tutorial-nodejs.md
+    - text: Создание веб-приложения на Node.js и React
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Создание веб-приложения на Node.js и Vue.js
+      url: quickstart-vuejs-with-nodejs.md
+    - text: Создание приложения ASP.NET Core с помощью TypeScript
+      url: tutorial-aspnet-with-typescript.md
+- title: Знакомство с Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Создание и редактирование кода
+      url: write-and-edit-code.md
+    - text: Управление npm-пакетами
+      url: npm-package-management.md
+    - text: Интерактивный цикл REPL в Node.js
+      url: nodejs-interactive-repl.md
+    - text: Отладка кода
+      url: debug-nodejs.md
+    - text: Разработка кода без использования проектов и решений
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: Создание и выполнение модульных тестов
+      url: unit-testing-javascript-with-visual-studio.md

@@ -1,6 +1,6 @@
-- name: Инструменты Visual Studio для сценариев ИИ
+- name: Инструменты Visual Studio для ИИ
   items:
-    - name: Инструменты Visual Studio для сценариев ИИ
+    - name: Инструменты Visual Studio для ИИ
       href: index.yml
     - name: Обзор
       href: about-ai-tools.md
@@ -28,7 +28,7 @@
               href: create-project-repo.md
         - name: Обучение модели
           href: train-model.md
-        - name: Просмотр сведений о задании
+        - name: Просмотреть сведения о задании
           href: job-details.md
         - name: Мониторинг использования GPU
           href: monitor-gpu.md

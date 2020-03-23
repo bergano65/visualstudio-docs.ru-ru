@@ -1,8 +1,8 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Средства для контейнеров в Visual Studio
 metadata:
   title: Документация по средствам разработки для контейнеров Docker
-  description: 'Узнайте, как создавать и администрировать контейнерные приложения и службы. Вы можете получить документацию, примеры кода, учебники и многое другое.'
+  description: Узнайте, как создавать и администрировать контейнерные приложения и службы. Вы можете получить документацию, примеры кода, учебники и многое другое.
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -10,62 +10,68 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
+  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75400726"
 landingContent:
-  - title: Инструменты для контейнера
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: "Средства Visual\_Studio для контейнеров"
-            url: overview.md
-  - title: Начало работы
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Использование Docker в Visual Studio
-            url: container-tools.md
-          - text: Выполнение средства сборки в контейнере
-            url: /visualstudio/install/build-tools-container
-          - text: Средства Visual Studio для Kubernetes
-            url: tutorial-kubernetes-tools.md
-  - title: Разработка контейнерных приложений
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Использование многоконтейнернего приложения с Docker Compose
-            url: tutorial-multicontainer.md
-          - text: Приложение React.js в контейнере
-            url: container-tools-react.md
-          - text: Отладка приложений Docker
-            url: edit-and-refresh.md
-  - title: Развертывание контейнеров Docker
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Развертывание в Реестр контейнеров Azure
-            url: hosting-web-apps-in-docker.md
-          - text: Развертывание в службе приложений Azure
-            url: deploy-app-service.md
-          - text: Развертывание в Docker Hub
-            url: deploy-docker-hub.md
-  - title: Задачи разработки в контейнерах
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Практическое руководство. Настройка среды сборки и отладки
-            url: container-build.md
-          - text: Практическое руководство. Просмотр и диагностика контейнеров
-            url: view-and-diagnose-containers.md
-          - text: Практическое руководство. Устранение неполадок с контейнерными средствами разработки
-            url: troubleshooting-docker-errors.md
-  - title: Параметры средств для контейнеров
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Параметры запуска контейнеров
-            url: container-launch-settings.md
-          - text: Свойства MSBuild для контейнеров
-            url: container-msbuild-properties.md
-          - text: Свойства MSBuild для Docker Compose
-            url: docker-compose-properties.md
-          - text: Настройка средств для контейнеров
-            url: container-tools-configure.md
+- title: Инструменты для контейнера
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Средства Visual Studio для контейнеров
+      url: overview.md
+- title: Начало работы
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Использование Docker в Visual Studio
+      url: container-tools.md
+    - text: Выполнение средства сборки в контейнере
+      url: /visualstudio/install/build-tools-container
+    - text: Средства Visual Studio для Kubernetes
+      url: tutorial-kubernetes-tools.md
+- title: Разработка контейнерных приложений
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Использование многоконтейнернего приложения с Docker Compose
+      url: tutorial-multicontainer.md
+    - text: Приложение React.js в контейнере
+      url: container-tools-react.md
+    - text: Отладка приложений Docker
+      url: edit-and-refresh.md
+- title: Развертывание контейнеров Docker
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Развертывание в Реестр контейнеров Azure
+      url: hosting-web-apps-in-docker.md
+    - text: Развертывание в службе приложений Azure
+      url: deploy-app-service.md
+    - text: Развертывание в Docker Hub
+      url: deploy-docker-hub.md
+- title: Задачи разработки в контейнерах
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Практическое руководство. Настройка среды сборки и отладки
+      url: container-build.md
+    - text: Практическое руководство. Просмотр и диагностика контейнеров
+      url: view-and-diagnose-containers.md
+    - text: Практическое руководство. Устранение неполадок с контейнерными средствами разработки
+      url: troubleshooting-docker-errors.md
+- title: Параметры средств для контейнеров
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Параметры запуска контейнеров
+      url: container-launch-settings.md
+    - text: Свойства MSBuild для контейнеров
+      url: container-msbuild-properties.md
+    - text: Свойства MSBuild для Docker Compose
+      url: docker-compose-properties.md
+    - text: Настройка средств для контейнеров
+      url: container-tools-configure.md

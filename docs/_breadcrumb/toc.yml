@@ -17,7 +17,7 @@
                 - name: Качество кода
                   tocHref: /visualstudio/code-quality/
                   topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
-                - name: Кроссплатформенные
+                - name: Кроссплатформенная поддержка
                   tocHref: /visualstudio/cross-platform/
                   topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
                 - name: Data Tools
@@ -42,7 +42,7 @@
                 - name: Архитектура моделирования
                   tocHref: /visualstudio/modeling/
                   topicHref: /visualstudio/modeling/analyze-and-model-your-architecture
-                - name: Профилирование
+                - name: Профилирование.
                   tocHref: /visualstudio/profiling/
                   topicHref: /visualstudio/profiling/index
                 - name: Тестирование
@@ -63,7 +63,7 @@
                 - name: "Начало работы с Visual\_Basic"
                   tocHref: /visualstudio/get-started/visual-basic/
                   topicHref: /visualstudio/get-started/visual-basic/
-            - name: Расширение среды
+            - name: Расширяемость
               tocHref: /visualstudio/extensibility/
               topicHref: /visualstudio/extensibility/index
               items:

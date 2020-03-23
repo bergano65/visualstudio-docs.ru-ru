@@ -3,15 +3,15 @@ title: Доступность продуктов в файлах для загр
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о доступности продуктов в файлах для загрузки программного обеспечения для подписок Visual Studio
-ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706810"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947103"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Доступность продуктов в файлах для загрузки программного обеспечения в подписках Visual Studio
 Ваши преимущества подписчика включают в себя доступ к обширному спектру скачиваемого программного обеспечения.
@@ -37,6 +37,12 @@ ms.locfileid: "74706810"
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="see-also"></a>См. также раздел
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Дальнейшие действия
 - Для установки и активации некоторых программ может потребоваться ключ продукта.  Дополнительные сведения о том, как получить ключи продуктов и управлять ими, см. в статье о [ключах продуктов](product-keys.md). 
 - Узнайте, как [скачивать программное обеспечение](download-software.md).

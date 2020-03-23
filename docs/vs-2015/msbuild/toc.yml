@@ -20,9 +20,9 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Функции свойств
               href: property-functions.md
-        - name: Элементы
+        - name: Items
           items:
-            - name: Элементы
+            - name: Items
               href: msbuild-items.md
             - name: Выбор файлов для сборки
               href: how-to-select-the-files-to-build.md
@@ -56,9 +56,9 @@
                   href: writealltlogs.md
                 - name: WriteContextTLogs
                   href: writecontexttlogs.md
-        - name: Целевые объекты
+        - name: Цели
           items:
-            - name: Целевые объекты
+            - name: Цели
               href: msbuild-targets.md
             - name: Порядок построения целевого объекта
               href: target-build-order.md
@@ -74,9 +74,9 @@
               href: how-to-build-incrementally.md
             - name: Очистка сборки
               href: how-to-clean-a-build.md
-        - name: Задачи
+        - name: Задания
           items:
-            - name: Задачи
+            - name: Задания
               href: msbuild-tasks.md
             - name: Написание задач
               href: task-writing.md
@@ -112,11 +112,11 @@
               href: item-metadata-in-task-batching.md
             - name: Метаданные элементов в пакетной обработке целевых объектов
               href: item-metadata-in-target-batching.md
-        - name: Transform
+        - name: Преобразования
           href: msbuild-transforms.md
-        - name: Интеграция Visual Studio
+        - name: Интеграция со средой Visual Studio
           items:
-            - name: Интеграция Visual Studio
+            - name: Интеграция со средой Visual Studio
               href: visual-studio-integration-msbuild.md
             - name: Расширение процесса построения Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Регистрация расширений платформы .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Параллельная сборка нескольких проектов
+        - name: Параллельное построение нескольких проектов
           items:
-            - name: Параллельная сборка нескольких проектов
+            - name: Параллельное построение нескольких проектов
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Использование нескольких процессоров при построении проектов
               href: using-multiple-processors-to-build-projects.md
@@ -162,7 +162,7 @@
       items:
         - name: Ведение журнала в MSBuild
           href: logging-in-msbuild.md
-        - name: Получение журналов сборки
+        - name: Получение журналов построения
           href: obtaining-build-logs-with-msbuild.md
         - name: Средства ведения журнала построения
           href: build-loggers.md
@@ -180,9 +180,9 @@
       items:
         - name: Справочные сведения о MSBuild
           href: msbuild-reference.md
-        - name: Справочник по схеме файла проекта
+        - name: Справочные сведения о схеме файлов проектов
           items:
-            - name: Справочник по схеме файла проекта
+            - name: Справочные сведения о схеме файлов проектов
               href: msbuild-project-file-schema-reference.md
             - name: Элемент Choose (MSBuild)
               href: choose-element-msbuild.md

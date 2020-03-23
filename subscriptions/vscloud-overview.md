@@ -7,10 +7,10 @@ ms.date: 07/28/2019
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
 ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "71962951"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
@@ -59,7 +59,7 @@ ms.locfileid: "71962951"
 > [!div class="mx-imgBorder"]
 > ![Просмотр подписок](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
-## <a name="manage-subscriptions"></a>Отмена продления приобретенных облачных подписок
+## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Отмена продления приобретенных облачных подписок
 
 * Чтобы изменить число приобретенных подписок, сделайте следующее:
 

@@ -3,15 +3,15 @@ title: Подписки Visual Studio, предоставляемые начин
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о подписках, предоставляемых по программе Microsoft for Startups.
-ms.openlocfilehash: 087fb820687063c22e98b34b0c3cd2292fb9a35b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605743"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947114"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Подписки Visual Studio для начинающих компаний
 Начинающие компании, вступившие в программу Microsoft for Startups, могут получить пять [ежемесячных облачных подписок Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). 
@@ -38,6 +38,12 @@ ms.locfileid: "68605743"
 Отмена ежемесячной подписки вступает в силу в первый день следующего месяца. Если вы отменяете только некоторые ежемесячные облачные подписки, удалите пользователей в первый день следующего месяца, чтобы нужные пользователи сохранили действующую подписку.
 
 Отмена годовой облачной подписки вступает в силу с первого дня месяца, следующего за 12-месячным периодом после покупки или предыдущего продления. Например, если вы приобрели годовую облачную подписку на Visual Studio Enterprise 3 января 2018 года, она будет действовать до 1 февраля 2019 года, а затем будет автоматически продлена на следующий год. Если вы отмените подписку после этой даты и до 1 февраля 2020 года, срок ее действия истечет 1 февраля 2020 года. За отмену подписки до окончания срока действия не предусмотрено возмещение.
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 [Узнайте больше о программе Microsoft for Startups](https://startups.microsoft.com)

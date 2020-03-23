@@ -6,9 +6,9 @@
       items:
         - name: Работа с XML-данными
           href: working-with-xml-data.md
-        - name: XML-редактор
+        - name: Редактор XML
           items:
-            - name: XML-редактор
+            - name: Редактор XML
               href: xml-editor.md
             - name: Проверка XML-документа
               href: xml-document-validation.md

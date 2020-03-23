@@ -3,15 +3,15 @@ title: Обращение к администратору подписки с п
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Узнайте, как обратиться к администратору подписки за помощью с вопросами или проблемами.
-ms.openlocfilehash: eb0720718f8ed5ccd0033456f887f638c0f3e395
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491579"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78937543"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Получение помощи от администратора подписок
 Если ваша подписка на Visual Studio предоставляется вашим работодателем или учебным заведением, вероятно, она была назначена вам администратором подписок.  Администраторы могут назначать или удалять подписки, изменять адреса электронной почты для входа, определять возможность загрузки программного обеспечения и выполнять другие функции, связанные с вашей подпиской.
@@ -33,6 +33,12 @@ ms.locfileid: "74491579"
 
 ## <a name="resources"></a>Ресурсы
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Если вы еще этого не сделали, рекомендуем активировать эти преимущества, чтобы максимально эффективно использовать вашу подписку Visual Studio:

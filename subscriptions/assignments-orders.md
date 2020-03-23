@@ -7,10 +7,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Узнайте об обязанности администратора отслеживать назначения пользователей и обрабатывать заказы.
 ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235229"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Отслеживание назначений пользователей и обработка заказов
@@ -36,13 +36,13 @@ ms.locfileid: "78235229"
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Соглашения Enterprise, MPSA и Select
 Соглашения Enterprise, MPSA и Select Plus корпорации Майкрософт обеспечивают гибкость в использовании и лицензировании программного обеспечения Visual Studio. Администраторы Visual Studio должны ежегодно оформлять сверочный заказ для приведения числа лицензий на ПО в соответствие с верхним пределом использования за период действия соглашения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об обязанностях администраторов:
 - [Обязанности администратора](admin-responsibilities.md)
 - [Инвентаризация подготовительной среды](admin-inventory.md)

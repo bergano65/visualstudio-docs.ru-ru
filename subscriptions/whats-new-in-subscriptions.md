@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "70060403"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Новые возможности в подписках Visual Studio
@@ -39,7 +39,7 @@ ms.locfileid: "70060403"
 
 ## <a name="2019-q1-january-march"></a>1-й квартал 2019 г. (январь — март)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>На [портале администрирования подписок](https://manage.visualstudio.com) появилась функция "Максимальное использование"
+### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>На [портале администрирования подписок](https://manage.visualstudio.com) появилась функция "Максимальное использование"
 Новая функция на портале администрирования подписок Visual Studio помогает отслеживать, сколько подписок вы приобрели и назначили, и определяет максимальное число назначенных подписок каждого уровня, как в прошлом году, так и в период действия ваших соглашений. Эта функция позволяет понять, как используется ваша текущая подписка, и планировать покупки на будущее. 
 
   > [!div class="mx-imgBorder"]

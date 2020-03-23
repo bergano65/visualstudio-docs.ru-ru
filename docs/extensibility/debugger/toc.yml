@@ -78,7 +78,7 @@
           href: expression-evaluation-in-break-mode.md
         - name: Обработка исключений (пакет SDK для Visual Studio)
           href: exception-handling-visual-studio-sdk.md
-    - name: 'Как выполнить: Отладка пользовательского модуля отладки'
+    - name: Практическое руководство. Отладка пользовательского модуля отладки
       href: how-to-debug-a-custom-debug-engine.md
 - name: Приступая к работе с расширением отладчика
   items:
@@ -116,13 +116,13 @@
           href: servers-visual-studio-sdk.md
         - name: Поставщики портов
           href: port-suppliers.md
-        - name: Порты
+        - name: порты;
           href: ports.md
         - name: Процессы
           href: processes.md
         - name: Узлы программы
           href: program-nodes.md
-        - name: Programs
+        - name: Программы
           href: programs.md
         - name: Потоки
           href: threads.md
@@ -148,7 +148,7 @@
       items:
         - name: Задачи отладки
           href: debugging-tasks.md
-        - name: Проблемы безопасности
+        - name: Проблемы с безопасностью
           href: security-issues.md
         - name: Запуск программы
           items:

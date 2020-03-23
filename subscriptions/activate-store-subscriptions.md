@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Сведения о том, как активировать подписки Visual Studio, приобретенные в Microsoft Store.
-ms.openlocfilehash: 2fb3d958206cd3fcd76654b95d5be4b8d8e8a3a4
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476760"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78894400"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Как активировать подписку, приобретенную через Microsoft Store?
 Если вы приобрели подписку Visual Studio в Microsoft Store, активацию можно инициировать на странице подтверждения оплаты или через сообщение электронной почты, которое вы получили после покупки.
@@ -31,12 +31,14 @@ ms.locfileid: "77476760"
 7. Введите ключ продукта, который вы можете получить на странице подтверждения оплаты или в сообщении электронной почты с подтверждением, а затем щелкните **Активировать**.
 8. Теперь эта подписка появится на странице [Подписки](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), и вы сможете воспользоваться любым из ее преимуществ.
 
-## <a name="next-steps"></a>Следующие шаги
-Посетите страницу [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), чтобы просмотреть все средства, службы, возможности обучения и поддержки, входящие в вашу подписку.  Мы рекомендуем настроить [Visual Studio](vs-ide-benefit.md) и [Azure DevOps](vs-azure-devops.md), чтобы приступить к работе. 
-
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Дальнейшие действия
+Посетите страницу [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), чтобы просмотреть все средства, службы, возможности обучения и поддержки, входящие в вашу подписку.  Мы рекомендуем настроить [Visual Studio](vs-ide-benefit.md) и [Azure DevOps](vs-azure-devops.md), чтобы приступить к работе. 
+
+
 

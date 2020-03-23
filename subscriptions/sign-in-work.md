@@ -3,15 +3,15 @@ title: Вход в подписки Visual Studio с рабочей или уч�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Узнайте, как войти в вашу подписку Visual Studio с помощью рабочей или учебной учетной записи.
-ms.openlocfilehash: fdad16a95c3686d738bd3ef77eb199549082b766
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315345"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508996"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Вход в подписки Visual Studio с рабочей или учебной учетной записью 
 
@@ -69,6 +69,12 @@ ms.locfileid: "68315345"
 2. К одному адресу электронной почты привязано несколько подписок.  Чтобы просмотреть все подписки, связанные с адресом электронной почты, посетите https://my.visualstudio.com/subscriptions и выберите подписку, которую хотите использовать. 
 
 Если не получится, вы можете обратиться за помощью в [службу поддержки по подпискам](https://visualstudio.microsoft.com/subscriptions/support/).  
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 После успешного входа на портал подписок мы рекомендуем ознакомиться со страницей преимуществ по адресу https://my.visualstudio.com/benefits и изучить превосходные инструменты, службы и предложения, доступные вам.  

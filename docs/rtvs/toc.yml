@@ -1,6 +1,6 @@
 - name: Обзор
   items:
-    - name: Средства R для Visual Studio
+    - name: cредства R для Visual Studio
       href: index.md
     - name: Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"
       href: ../python/data-science-and-analytical-applications-workload.md
@@ -30,7 +30,7 @@
       items:
         - name: Редактирование кода
           href: editing-r-code-in-visual-studio.md
-        - name: IntelliSense
+        - name: технология IntelliSense
           href: r-intellisense.md
         - name: Выделение
           href: linting-r-code.md
@@ -56,7 +56,7 @@
       href: variable-explorer.md
     - name: Отладка
       href: debugging-r-in-visual-studio.md
-- name: Ссылка
+- name: Справочник
   items:
     - name: Параметры
       href: options-for-r-tools-in-visual-studio.md

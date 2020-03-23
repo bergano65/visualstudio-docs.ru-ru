@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Сведения о новом предложении Visual Studio с GitHub
-ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: f8cfe09d6c9dc7608684ccf80238db4ac066fc20
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476751"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78894384"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Общие сведения о подписках Visual Studio с GitHub Enterprise  
 
@@ -77,12 +77,14 @@ ms.locfileid: "77476751"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 - Обратитесь в [службу технической поддержки](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) для GitHub Enterprise.   
 
-## <a name="next-steps"></a>Следующие шаги
-Если вы ранее не работали с GitHub, ознакомьтесь с [обучающей лабораторией по GitHub](https://lab.github.com/), в рамках которой вы сможете изучить ряд интересных и практически применимых проектов, работа с которыми будет сопровождаться полезными комментариями.
-
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Следующие шаги
+Если вы ранее не работали с GitHub, ознакомьтесь с [обучающей лабораторией по GitHub](https://lab.github.com/), в рамках которой вы сможете изучить ряд интересных и практически применимых проектов, работа с которыми будет сопровождаться полезными комментариями.
+
+
 

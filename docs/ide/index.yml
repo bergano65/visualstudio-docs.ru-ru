@@ -1,74 +1,80 @@
 ### YamlMime:Landing
 title: Документация по интегрированной среде разработки Visual Studio
-summary: "Интегрированная среда разработки (IDE)\_— это многофункциональное приложение, которое можно использовать для самых разных аспектов разработки программного обеспечения. Среда Visual\_Studio предоставляет удобные возможности для редактирования, отладки, сборки и публикации вашего приложения."
+summary: Интегрированная среда разработки (IDE) — это многофункциональное приложение, которое можно использовать для самых разных аспектов разработки программного обеспечения. Среда Visual Studio предоставляет удобные возможности для редактирования, отладки, сборки и публикации вашего приложения.
 metadata:
   title: Документация по интегрированной среде разработки Visual Studio
   titleSuffix: ''
-  description: "Заходите на разные страницы, которые помогут вам научиться работать с интерактивной средой разработки Visual\_Studio."
+  description: Заходите на разные страницы, которые помогут вам научиться работать с интерактивной средой разработки Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
   author: jillre
   ms.author: jillfra
   ms.date: 09/24/2019
+  ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "74316427"
 landingContent:
-  - title: Начало работы
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Скачать Visual Studio
-            url: 'https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019'
-      - linkListType: get-started
-        links:
-          - text: Установка Visual Studio
-            url: ../install/install-visual-studio.md
-      - linkListType: overview
-        links:
-          - text: Общие сведения о Visual Studio
-            url: ../get-started/visual-studio-ide.md
-  - title: Использование Visual Studio
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Использование редактора кода
-            url: ../get-started/tutorial-editor.md
-          - text: Компиляция и сборка
-            url: ../ide/compiling-and-building-in-visual-studio.md
-          - text: Отладка кода
-            url: ../debugger/debugger-feature-tour.md
-          - text: Написание тестов
-            url: ../test/getting-started-with-unit-testing.md
-          - text: Анализ качества кода
-            url: ../code-quality/roslyn-analyzers-overview.md
-          - text: Публикация веб-сайта
-            url: ../deployment/quickstart-deploy-to-a-web-site.md
-          - text: Доступ к данным
-            url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
-          - text: Персонализация интегрированной среды разработки
-            url: ../ide/quickstart-personalize-the-ide.md
-          - text: Возможности для повышения производительности
-            url: ../ide/productivity-features.md
-  - title: Разработка на вашем языке
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 'C#'
-            url: ../get-started/csharp/tutorial-console.md
-          - text: C++
-            url: /cpp/get-started/tutorial-console-cpp
-          - text: Visual Basic
-            url: ../get-started/visual-basic/tutorial-console.md
-          - text: Python
-            url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
-          - text: JavaScript
-            url: /visualstudio/javascript/tutorial-nodejs
-          - text: 'F#'
-            url: /dotnet/fsharp/get-started/get-started-visual-studio
-  - title: Узнайте о новых возможностях
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: Новые возможности Visual Studio 2019
-            url: ../ide/whats-new-visual-studio-2019.md
-          - text: Новые возможности Visual Studio 2017
-            url: ../ide/whats-new-visual-studio-2017.md
+- title: Начало работы
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Скачать Visual Studio
+      url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
+  - linkListType: get-started
+    links:
+    - text: Установка Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: overview
+    links:
+    - text: Общие сведения о Visual Studio
+      url: ../get-started/visual-studio-ide.md
+- title: Использование Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Использование редактора кода
+      url: ../get-started/tutorial-editor.md
+    - text: Компиляция и сборка
+      url: ../ide/compiling-and-building-in-visual-studio.md
+    - text: Отладка кода
+      url: ../debugger/debugger-feature-tour.md
+    - text: Написание тестов
+      url: ../test/getting-started-with-unit-testing.md
+    - text: Анализ качества кода
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: Публикация веб-сайта
+      url: ../deployment/quickstart-deploy-to-a-web-site.md
+    - text: Доступ к данным
+      url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
+    - text: Персонализация интегрированной среды разработки
+      url: ../ide/quickstart-personalize-the-ide.md
+    - text: Возможности для повышения производительности
+      url: ../ide/productivity-features.md
+- title: Разработка на вашем языке
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: C#
+      url: ../get-started/csharp/tutorial-console.md
+    - text: C++
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Visual Basic
+      url: ../get-started/visual-basic/tutorial-console.md
+    - text: Python
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+    - text: JavaScript
+      url: /visualstudio/javascript/tutorial-nodejs
+    - text: F#
+      url: /dotnet/fsharp/get-started/get-started-visual-studio
+- title: Узнайте о новых возможностях
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Новые возможности Visual Studio 2019
+      url: ../ide/whats-new-visual-studio-2019.md
+    - text: Новые возможности Visual Studio 2017
+      url: ../ide/whats-new-visual-studio-2017.md

@@ -24,8 +24,10 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Практические руководства
   items:
-    - name: Использование ЦП
+    - name: Загрузка ЦП.
       href: cpu-usage.md
+    - name: Использование PerfTips
+      href: perftips.md
     - name: Использование памяти
       items:
         - name: Анализ данных об использовании памяти
@@ -42,8 +44,6 @@
       href: gpu-usage.md
     - name: Анализ использования ресурсов
       href: application-timeline.md
-    - name: Использование PerfTips
-      href: perftips.md
     - name: Анализ использования сети
       href: network-usage.md
     - name: Анализ памяти JavaScript
@@ -90,7 +90,7 @@
               href: how-to-collect-performance-data-for-a-web-site.md
             - name: Создание сеансов анализа производительности вручную
               href: how-to-manually-create-performance-sessions.md
-        - name: Настройка
+        - name: Configure
           items:
             - name: Настройка сеансов анализа производительности
               href: configuring-performance-sessions.md
@@ -140,7 +140,7 @@
               href: setting-general-performance-session-options.md
             - name: Настройка текущего сеанса
               href: how-to-set-the-current-session.md
-            - name: Настройка разрешений
+            - name: Установка разрешений
               href: how-to-set-permissions.md
             - name: Определение двоичного файла для запуска
               href: how-to-specify-the-binary-to-start.md
@@ -188,7 +188,7 @@
                           href: dotnet-framework-usage-performance-rules.md
                         - name: DA0001. Использование StringBuilder для объединений
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: DA0005. Часто используемые коллекции GC2
+                        - name: 'DA0005: частые коллекции GC2'
                           href: da0005-frequent-gc2-collections.md
                         - name: DA0006. Переопределение Equals() для типов значений
                           href: da0006-override-equals-parens-for-value-types.md
@@ -196,21 +196,21 @@
                           href: da0007-avoid-using-exceptions-for-control-flow.md
                         - name: DA0010. Затратный метод GetHashCode
                           href: da0010-expensive-gethashcode.md
-                        - name: DA0011. Затратный метод CompareTo
+                        - name: 'DA0011: затратное CompareTo'
                           href: da0011-expensive-compareto.md
                         - name: DA0012. Слишком много вызовов метода Reflection
                           href: da0012-significant-amount-of-reflection.md
-                        - name: DA0013. Интенсивное использование String.Split или String.Substring
+                        - name: 'DA0013: интенсивное использование String.Split или String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
                         - name: DA0018. 32-битное приложение выполняется с ограничениями управляемой памяти процесса
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: DA0021. Высокая доля сборок мусора в генерации 1
+                        - name: 'DA0021: Высокая доля сборок мусора в генерации 1'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: DA0022. Высокая доля сборок мусора в генерации 2
+                        - name: 'DA0022: Высокая доля сборок мусора в генерации 2'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: DA0023. Высокое время сборки мусора в ЦП
+                        - name: DA0023. Высокое время ЦП ГК
                           href: da0023-high-gc-cpu-time.md
-                        - name: DA0024. Избыточное время сборки мусора в ЦП
+                        - name: DA0024. Избыточное время ЦП ГК
                           href: da0024-excessive-gc-cpu-time.md
                         - name: DA0038. Большое число конфликтов при блокировке
                           href: da0038-high-rate-of-lock-contentions.md
@@ -220,27 +220,27 @@
                       items:
                         - name: Обзор правил производительности памяти и подкачки
                           href: memory-and-paging-performance-rules.md
-                        - name: DA0014. Исключительно высокая скорость подкачки активной памяти на диск
+                        - name: 'DA0014: исключительно высокая скорость подкачки активной памяти на диск'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: DA0017. Высокая скорость подкачки активной памяти на диск
+                        - name: 'DA0017: высокая скорость подкачки активной памяти на диск'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Правила использования средств профилирования
                       items:
                         - name: Обзор правил использования средств профилирования
                           href: profiling-tools-usage-rules.md
-                        - name: DA0002. Отсутствует файл VSPerfCorProf.dll
+                        - name: 'DA0002: отсутствует файл VSPerfCorProf.dll'
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: DA0003. Много выборок в режиме ядра
                           href: da0003-many-kernel-samples.md
-                        - name: DA0004. Потребление значительных ресурсов процессора
+                        - name: 'DA0004: потребление значительных ресурсов процессора'
                           href: da0004-high-processor-usage.md
-                        - name: DA0008. Собрано мало выборок
+                        - name: DA0008. Собрано несколько образцов
                           href: da0008-few-samples-collected.md
-                        - name: DA0026. Обработка чрезмерного времени ядра ЦП
+                        - name: 'DA0026: обработка чрезмерного времени ядра ЦП'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: DA0029. Неподдерживаемая версия среды CLR
+                        - name: 'DA0029: неподдерживаемая версия среды CLR'
                           href: da0029-unsupported-clr-version.md
-                        - name: DA0030. Сбор измерений взаимодействия уровней для проектов баз данных
+                        - name: 'DA0030: сбор измерений взаимодействия уровней для проектов баз данных'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Правила производительности отслеживания ресурсов
                       items:
@@ -248,11 +248,11 @@
                           href: resource-monitoring-performance-rules.md
                         - name: DA0501. Средняя загрузка ЦП профилируемым процессом
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: DA0502. Максимальная загрузка ЦП профилируемым процессом
+                        - name: DA0502. Максимальное использование ЦП профилируемым процессом
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
                         - name: DA0503. Средний рабочий набор в байтах для профилируемого процесса
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: DA0504. Максимальный рабочий набор в байтах для профилируемого процесса
+                        - name: DA0505. Максимальный рабочий набор в байтах для профилируемого процесса
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0505. Среднее число байт исключительного пользования, распределенное для профилируемого процесса'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
@@ -572,11 +572,11 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Начало
+                    - name: Запуск
                       href: start.md
                     - name: Параметр CrossSession
                       href: crosssession.md
-                    - name: Вывод
+                    - name: Выходные данные
                       href: output.md
                     - name: WinCounter
                       href: wincounter.md
@@ -592,7 +592,7 @@
                       href: querycounters.md
                     - name: Параметр Events (VSPerfCmd)
                       href: events-vsperfcmd.md
-                    - name: Завершить работу
+                    - name: Shutdown
                       href: shutdown.md
                     - name: Параметры GlobalOn и GlobalOff
                       href: globalon-and-globaloff.md
@@ -622,7 +622,7 @@
                       href: lineoff.md
                     - name: Консоль
                       href: console.md
-                    - name: Status
+                    - name: Состояние
                       href: status.md
                     - name: TargetCLR
                       href: targetclr.md

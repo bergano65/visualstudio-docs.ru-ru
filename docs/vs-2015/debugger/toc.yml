@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Подключение к выполняющимся процессам
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Указание файлов символов (PDB) и файлов с исходным кодом
+    - name: Указание файлов символов (.pdb) и файлов с исходным кодом
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Отладка 64-разрядных приложений
       href: debug-64-bit-applications.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: Восстановление скрытых команд отладчика
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: Удаленная отладка
   items:
-    - name: Remote Debugging
+    - name: Удаленная отладка
       href: remote-debugging.md
     - name: Настройка брандмауэра Windows для удаленной отладки
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -246,7 +246,7 @@
           href: remote-debugging-errors-and-troubleshooting.md
         - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
           href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
-        - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
+        - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
           href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -350,9 +350,9 @@
       items:
         - name: Отладка приложений для Магазина Windows и универсальных приложений для Windows
           href: debugging-windows-store-and-windows-universal-apps.md
-        - name: Запуск приложений из Visual Studio
+        - name: Запуск приложения из Visual Studio
           items:
-            - name: Запуск приложений из Visual Studio
+            - name: Запуск приложения из Visual Studio
               href: run-store-apps-from-visual-studio.md
             - name: Запуск приложений для Магазина Windows на локальном компьютере
               href: run-windows-store-apps-on-the-local-machine.md
@@ -370,9 +370,9 @@
               href: debug-store-apps-in-visual-studio.md
             - name: Запуск сеанса отладки (JavaScript)
               href: start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md
-            - name: Управление выполнением в сеансе отладки (JavaScript)
+            - name: Управление выполнение в сеансе отладки (JavaScript)
               items:
-                - name: Управление выполнением в сеансе отладки (JavaScript)
+                - name: Управление выполнение в сеансе отладки (JavaScript)
                   href: control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md
                 - name: Навигация отладчика в примере кода (JavaScript)
                   href: debugger-navigation-sample-code-javascript.md
@@ -390,7 +390,7 @@
                   href: refresh-an-app-javascript.md
                 - name: Отладка элемента управления WebView
                   href: debug-a-webview-control.md
-                - name: Сочетания клавиш
+                - name: сочетания клавиш
                   href: keyboard-shortcuts-html-and-javascript.md
                 - name: 'Отладка примера кода HTML, CSS и JavaScript'
                   href: debug-html-css-and-javascript-sample-code.md
@@ -564,7 +564,7 @@
           href: visual-studio-graphics-diagnostics.md
         - name: Обзор
           href: overview-of-visual-studio-graphics-diagnostics.md
-        - name: Начало работы
+        - name: Приступая к работе
           href: getting-started-with-visual-studio-graphics-diagnostics.md
         - name: Захват графической информации
           href: capturing-graphics-information.md
@@ -572,9 +572,9 @@
           href: gpu-usage.md
         - name: Окно журнала графики
           href: graphics-log-document.md
-        - name: Анализ кадров
+        - name: Анализ кадра
           items:
-            - name: Анализ кадров
+            - name: Анализ кадра
               href: graphics-frame-analysis.md
             - name: Вариант размера окна просмотра (1x1)
               href: 1x1-viewport-size-variant.md
@@ -592,7 +592,7 @@
               href: bc-texture-compression-variant.md
         - name: Список событий
           href: graphics-event-list.md
-        - name: Область
+        - name: Штат
           href: graphics-state.md
         - name: Этапы конвейера
           href: graphics-pipeline-stages.md
@@ -764,7 +764,7 @@
       items:
         - name: 'Папка "Отладка", диалоговое окно "Параметры"'
           href: debugging-options-dialog-box.md
-        - name: 'Страница "Общие", папка "Отладка", диалоговое окно "Параметры"'
+        - name: 'General, Debugging, Options Dialog Box'
           href: general-debugging-options-dialog-box.md
         - name: 'Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"'
           href: just-in-time-debugging-options-dialog-box.md

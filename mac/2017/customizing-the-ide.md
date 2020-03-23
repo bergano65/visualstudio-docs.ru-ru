@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984766"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306665"
 ---
 # <a name="customizing-the-ide"></a>Настройка интегрированной среды разработки
 
@@ -39,7 +39,7 @@ Visual Studio для Mac можно настраивать различными 
 * Японский
 * Корейский
 * Польский
-* Португальский - Бразильская
+* Португальский (Бразилия)
 * Русский
 * Испанский
 * Турецкий
@@ -60,7 +60,7 @@ Visual Studio для Mac можно настраивать различными 
 
 Заполненные поля **Имя** и **Электронная почта** будут использоваться в любой фиксации, осуществляемой через систему управления версиями в Visual Studio для Mac. Если вы не заполнили эти поля, Visual Studio для Mac предложит сделать это при попытке воспользоваться системой управления версиями.
 
-## <a name="key-bindings"></a>Настраиваемые сочетания клавиш
+## <a name="key-bindings"></a>Сочетания клавиш
 
 Настраиваемые сочетания клавиш позволяют адаптировать среду разработки, чтобы повысить эффективность навигации по Visual Studio для Mac. Эта среда предоставляет привычные сочетания клавиш для многих популярных интегрированных сред разработки, таких как Visual Studio (в Windows), ReSharper, Visual Studio Code и Xcode.
 
@@ -132,6 +132,6 @@ Visual Studio для Mac позволяет открыть текстовые р
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Персонализация интегрированной среды разработки Visual Studio (в Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

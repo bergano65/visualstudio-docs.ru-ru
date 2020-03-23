@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985015"
 ---
 # <a name="debugging-with-xamarin"></a>Отладка с помощью Xamarin
@@ -94,6 +94,6 @@ Visual Studio для Mac использует Mono Soft Debugger для отла
 
 ![Параметр "Отладка только кода проекта (без захода в код платформы)"](media/debugging-image8.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Отладка в Visual Studio (в Windows)](/visualstudio/debugger/)

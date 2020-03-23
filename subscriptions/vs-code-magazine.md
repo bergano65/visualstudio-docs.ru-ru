@@ -7,10 +7,10 @@ ms.date: 10/13/2019
 ms.topic: conceptual
 description: Узнайте о преимуществе CODE Magazine, предусмотренном подпиской Visual Studio.
 ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74491658"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Преимущество CODE Magazine в подписках Visual Studio
@@ -56,7 +56,7 @@ CODE Magazine — это ведущий независимый журнал д�
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Доступно                                              |  Нет          |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, BizSpark, Imagine Premium.  Не включает следующие категории: Microsoft Partner Network (MPN), Most Valuable Professional (MVP), региональный директор (RD), разработчик ПО и служб MCT, ПО и службы MCT, Imagine.*
+<sup>1</sup> *Включает:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, BizSpark, Imagine Premium.  Не включает следующие категории: Microsoft Partner Network (MPN), Most Valuable Professional (MVP), региональный директор (RD), разработчик ПО и служб MCT, ПО и службы MCT, Imagine.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

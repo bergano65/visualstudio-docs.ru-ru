@@ -7,10 +7,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут назначать лицензии для подписчиков.
 ms.openlocfilehash: 3d444f930d1fab166d437911b5609caf75cad09e
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78263319"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Назначение лицензий на портале администрирования подписок Visual Studio
