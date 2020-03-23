@@ -1,5 +1,5 @@
 ---
-title: Регистрация и Отмена регистрации пакетов VSPackage | Документация Майкрософт
+title: Регистрация и нерегистрация VSPackages (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 701700ba9d5c6db1e5858a2419e1b2c0fa950ae5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409142"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301587"
 ---
-# <a name="register-and-unregister-vspackages"></a>Регистрация и Отмена регистрации пакетов VSPackage
-Для регистрации VSPackage используются атрибуты, но
+# <a name="register-and-unregister-vspackages"></a>Регистрация и распаковка VSPackages
+Вы используете атрибуты для регистрации VSPackage, но
 
-## <a name="register-a-vspackage"></a>Регистрация пакета VSPackage
- Для управления регистрацией управляемых пакетов VSPackage можно использовать атрибуты. Все сведения о регистрации содержатся в файле *pkgdef* . Дополнительные сведения о регистрации на основе файлов см. в разделе [служебная программа CreatePkgDef](../extensibility/internals/createpkgdef-utility.md).
+## <a name="register-a-vspackage"></a>Регистрация VSPackage
+ Вы можете использовать атрибуты для контроля регистрации управляемых VSPackages. Вся регистрационная информация содержится в файле *.pkgdef.* Для получения дополнительной информации о [CreatePkgDef utility](../extensibility/internals/createpkgdef-utility.md)регистрации файлов см.
 
- В следующем коде показано, как использовать стандартные атрибуты регистрации для регистрации пакета VSPackage.
+ Следующий код показывает, как использовать стандартные атрибуты регистрации для регистрации VSPackage.
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -36,15 +36,15 @@ public sealed class BasicPackage : Package
 ```
 
 ## <a name="unregister-an-extension"></a>Отмена регистрации расширения
- Если вы выполнили эксперимент с множеством различных пакетов VSPackage и хотите удалить их из экспериментального экземпляра, можно просто выполнить команду **Reset** . Найдите **Сброс экспериментального экземпляра Visual Studio** на начальной странице компьютера или выполните следующую команду в командной строке:
+ Если вы экспериментировали с большим количеством различных VSPackages и хотите удалить их из экспериментального экземпляра, вы можете просто запустить команду **сбросить.** Ищите **перезагрузку экспериментальной** версии Visual Studio на стартовой странице компьютера или запускайте эту команду из командной строки:
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- Если вы хотите удалить расширение, установленное на экземпляре Visual Studio Development, перейдите в **меню сервис** > **расширения и обновления**, найдите расширение и нажмите кнопку **Удалить**.
+ Если вы хотите удалить расширение, которое вы установили на экземпляре разработки Visual Studio, перейдите на расширения**и обновления инструментов,** **Tools** > найдите расширение и нажмите **Uninstall.**
 
- Если по какой бы то ни было из этих методов не удается удалить расширение, можно отменить регистрацию сборки VSPackage в командной строке следующим образом:
+ Если по какой-либо причине ни один из этих методов не удается установить расширение, вы можете отменить сборку VSPackage от командной строки следующим образом:
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>
@@ -52,13 +52,13 @@ public sealed class BasicPackage : Package
 
 <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>
 
-## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Использование пользовательского атрибута регистрации для регистрации расширения
+## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Используйте пользовательский атрибут регистрации для регистрации расширения
 
-В некоторых случаях может потребоваться создать новый атрибут регистрации для вашего расширения. Атрибуты регистрации можно использовать для добавления новых разделов реестра или для добавления новых значений к существующим ключам. Новый атрибут должен быть производным от <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>и должен переопределять методы <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> и <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>.
+В некоторых случаях может потребоваться создать новый атрибут регистрации для расширения. Атрибуты регистрации можно использовать для добавления новых ключей реестра или добавления новых значений к существующим ключам. Новый атрибут должен <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>вытекать из, <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> и <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> он должен переопределить и методы.
 
 ### <a name="create-a-custom-attribute"></a>Создание настраиваемого атрибута
 
-В следующем коде показано, как создать новый атрибут регистрации.
+Следующий код показывает, как создать новый атрибут регистрации.
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
@@ -67,11 +67,11 @@ public class CustomRegistrationAttribute : RegistrationAttribute
 }
 ```
 
- <xref:System.AttributeUsageAttribute> используется в классах атрибутов для указания программного элемента (класса, метода и т. д.), к которому относится атрибут, независимо от того, может ли он использоваться несколько раз и может ли он быть унаследован.
+ Используется <xref:System.AttributeUsageAttribute> на классах атрибутов для указания элемента программы (класса, метода и т.д.), к которому относится атрибут, можно ли его использовать более одного раза и можно ли его унаследовать.
 
-### <a name="create-a-registry-key"></a>Создание раздела реестра
+### <a name="create-a-registry-key"></a>Создание ключа реестра
 
-В следующем коде пользовательский атрибут создает **Пользовательский** подраздел в ключе для регистрируемого пакета VSPackage.
+В следующем коде пользовательский атрибут создает **подключку Custom** под ключом для зарегистрированного VSPackage.
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)
@@ -95,9 +95,9 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-### <a name="create-a-new-value-under-an-existing-registry-key"></a>Создание нового значения в существующем разделе реестра
+### <a name="create-a-new-value-under-an-existing-registry-key"></a>Создание нового значения под существующим ключом реестра
 
-Можно добавить пользовательские значения в существующий ключ. В следующем коде показано, как добавить новое значение в ключ регистрации VSPackage.
+Пользовательские значения можно добавить к существующему ключу. Следующий код показывает, как добавить новое значение к ключу регистрации VSPackage.
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)

@@ -1,5 +1,5 @@
 ---
-title: Выражения в отладчике | Документация Майкрософт
+title: Выражения в Debugger (англ.) Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78406330"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301419"
 ---
 # <a name="expressions-in-the-debugger"></a>Выражения в отладчике
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Использование встроенных функций отладчика для сохранения состояния  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Использование встроенных функций отладчика для сохранения состояния  
  С помощью встроенных функций отладчика можно вызывать некоторые функции C/C++ в выражениях, не изменяя при этом состояние приложения.  
   
  Встроенные функции отладчика:  
@@ -215,7 +215,7 @@ int main()
 - Ключевые слова пространства имен или уровня модуля, например `End Sub` или `Module`.  
   
 ## <a name="see-also"></a>См. также:  
- [Определители формата в C++](../debugger/format-specifiers-in-cpp.md)   
- [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)   
+ [Спекулянты формата в СЗ](../debugger/format-specifiers-in-cpp.md)   
+ [Оператор контекста (КЗ)](../debugger/context-operator-cpp.md)   
+ [Спецификаторы формата в C #](../debugger/format-specifiers-in-csharp.md)   
  [Псевдопеременные](../debugger/pseudovariables.md)
