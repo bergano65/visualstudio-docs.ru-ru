@@ -1,0 +1,238 @@
+- name: Visual Studio для Mac
+  href: index.yml
+- name: Начало работы
+  items:
+    - name: Обзор интегрированной среды разработки
+      href: ide-tour.md
+    - name: "Visual\_Studio для\_Mac для пользователей\_Windows"
+      href: vsmac-for-windows-users.md
+- name: Установка
+  items:
+    - name: "Установка Visual\_Studio 2019 для\_Mac"
+      href: installation.md
+    - name: 'Установка и использование в среде, защищенной брандмауэром или прокси-сервером'
+      href: install-behind-a-firewall-or-proxy-server.md
+    - name: Установка предварительной версии
+      href: install-preview.md
+    - name: Обновление
+      href: update.md
+    - name: Удалить
+      href: uninstall.md
+- name: Учетные записи пользователя
+  items:
+    - name: Обзор
+      href: user-accounts.md
+    - name: Выполнение входа
+      href: signing-in.md
+    - name: Активация подписки
+      href: enable-subscription.md
+- name: Настройка интегрированной среды разработки
+  items:
+    - name: "Настройка интерфейса\_IDE"
+      href: customizing-the-ide.md
+    - name: "Расширение Visual\_Studio для\_Mac"
+      href: extending-visual-studio-mac.md
+- name: Проекты и решения
+  items:
+    - name: Обзор
+      href: projects-and-solutions.md
+    - name: Создание новых проектов
+      href: create-new-projects.md
+    - name: Добавление и удаление элементов проекта
+      href: add-and-remove-project-items.md
+    - name: Управление свойствами решений и проектов
+      href: managing-solutions-and-project-properties.md
+    - name: Настройка для различных версий
+      href: project-multitargeting.md
+    - name: Управление ссылками в проекте
+      items:
+        - name: Обзор
+          href: managing-references-in-a-project.md
+        - name: "Пошаговое руководство. Включение пакета\_NuGet в проект"
+          href: nuget-walkthrough.md
+    - name: Управление ресурсами приложений
+      href: managing-app-resources.md
+    - name: Практическое руководство. Открытие нескольких решений или экземпляров
+      href: open-multiple-solutions.md
+- name: Редактор исходного кода
+  items:
+    - name: Функции редактора
+      href: source-editor.md
+    - name: Рефакторинг
+      href: refactoring.md
+    - name: IntelliSense
+      href: intellisense.md
+    - name: Отображение элементов импорта
+      href: show-imports.md
+    - name: Редактирование в нескольких точках вставки
+      href: multi-caret-editing.md
+    - name: Комментарии
+      href: comments.md
+    - name: Поведение редактора
+      href: editor-behavior.md
+    - name: Комментарии к задачам
+      href: task-comments.md
+    - name: Фрагменты кода
+      href: snippets.md
+    - name: Выбор блока
+      href: block-selection.md
+    - name: Темы редактора
+      href: editor-themes.md
+    - name: EditorConfig
+      href: editorconfig.md
+    - name: Сочетания клавиш по умолчанию
+      href: keyboard-shortcuts.md
+- name: Отладка
+  items:
+    - name: Обзор
+      href: debugging.md
+    - name: Визуализации данных
+      href: data-visualizations.md
+    - name: "Отладка пакетов NuGet с помощью Source\_Link"
+      href: source-link.md
+- name: Компилирование и сборка
+  items:
+    - name: Обзор
+      href: compiling-and-building.md
+    - name: Сборка и очистка проектов и решений
+      href: building-and-cleaning-projects-and-solutions.md
+    - name: Действия при сборке
+      href: build-actions.md
+    - name: Практическое руководство. Назначение нескольких запускаемых проектов
+      href: set-startup-projects.md
+    - name: Настройка системы сборки
+      href: customizing-build-system.md
+    - name: Конфигурации
+      items:
+        - name: Общие сведения о конфигурациях сборки
+          href: configurations.md
+        - name: Создание и изменение конфигураций
+          href: create-and-edit-configurations.md
+- name: Управление версиями
+  items:
+    - name: Обзор
+      href: version-control.md
+    - name: "Настройка репозитория\_Git"
+      href: set-up-git-repository.md
+    - name: "Работа с\_Git"
+      href: working-with-git.md
+    - name: "Настройка репозитория\_Subversion"
+      href: set-up-subversion-repository.md
+    - name: "Работа с\_Subversion"
+      href: working-with-subversion.md
+- name: Развертывание веб-приложения
+  items:
+    - name: Обзор
+      href: web-app-deployment.md
+    - name: Публикация в службу приложений Azure
+      href: publish-app-svc.md
+    - name: Публикация в папку
+      href: publish-folder.md
+- name: Рабочие нагрузки
+  items:
+    - name: Доступные рабочие нагрузки
+      href: workloads.md
+    - name: ASP.NET Core
+      items:
+        - name: Поддержка .NET Core
+          href: net-core-support.md
+        - name: Начало работы с ASP.NET Core
+          href: asp-net-core.md
+        - name: Создание приложений ASP.NET Core в Visual Studio для Mac
+          href: building-asp-net-core.md
+        - name: Razor
+          href: razor.md
+        - name: Blazor
+          href: blazor.md
+        - name: JavaScript и TypeScript
+          href: javascript.md
+        - name: launchSettings.json
+          href: launch-settings.md
+    - name: Azure
+      items:
+        - name: Обзор
+          href: azure-workload.md
+        - name: Введение в функции Azure
+          href: azure-functions.md
+        - name: Учебник. Проверка
+          href: azure-functions-lab.md
+        - name: Подключенные службы
+          href: connected-services.md
+    - name: Docker
+      items:
+        - name: "Начало работы с\_Docker"
+          href: docker-quickstart.md
+        - name: Создание многоконтейнерного приложения с помощью Docker Compose
+          href: docker-multi-container.md
+    - name: Разработка игр на Unity
+      items:
+        - name: Разработка игр на Unity
+          href: unity-tools.md
+        - name: Установка
+          href: setup-vsmac-tools-unity.md
+        - name: "Начало работы с\_Unity"
+          href: unity-walkthrough.md
+        - name: "Использование инструментов\_Unity"
+          href: using-vsmac-tools-unity.md
+        - name: "Использование .NET\_4.x в Unity"
+          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
+        - name: Журнал изменений
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+    - name: "Мобильные приложения с\_Xamarin"
+      href: /visualstudio/mac/xamarin
+- name: Специальные возможности
+  items:
+    - name: Обзор
+      href: accessibility.md
+    - name: Настройка в IDE специальных возможностей
+      href: accessibility-ide-options.md
+    - name: Специальные возможности macOS
+      items:
+        - name: "Использование специальных возможностей\_macOS"
+          href: accessibility-macos.md
+        - name: Навигация с помощью клавиатуры
+          href: accessibility-keyboard.md
+        - name: Использование VoiceOver
+          href: accessibility-voiceover.md
+- name: Видеоучебники
+  items:
+    - name: Начало работы с ASP.NET Core в Visual Studio для Mac
+      href: tutorial-aspnet-core-vsmac-getting-started.md
+    - name: "Расширение существующего веб-приложения ASP.NET\_Core"
+      href: tutorial-aspnet-core-vsmac-extending.md
+- name: "Visual\_Studio для\_Mac для пользователей\_Windows"
+  href: vsmac-for-windows-users.md
+- name: Устранение неполадок
+  items:
+    - name: Журналы и исключения
+      href: troubleshooting.md
+    - name: Программа улучшения качества программного обеспечения Visual Studio
+      href: visual-studio-experience-improvement-program.md
+    - name: Сообщение о проблеме
+      href: report-a-problem.md
+    - name: 'Устранение неполадок: Поддерживает ли Visual Studio для Mac систему управления версиями Team Foundation?'
+      href: tf-version-control.md
+    - name: 'Устранение неполадок: Почему не отображаются все шаблоны?'
+      href: troubleshooting-no-templates.md
+    - name: 'Устранение неполадок: Сбой средства обновления при получении сведений'
+      href: updater-troubleshooting.md
+- name: Заметки о выпуске
+  href: /visualstudio/releasenotes/vs2019-mac-relnotes
+- name: Заметки о предварительном выпуске
+  href: /visualstudio/releasenotes/vs2019-mac-preview-relnotes
+- name: Примеры
+  items:
+    - name: Подборка примеров
+      href: samples/index.yml
+    - name: "Все примеры для ASP.NET\_Core"
+      href: /samples/browse/?products=aspnet-core
+    - name: "Все примеры для .NET\_Core"
+      href: /samples/browse/?products=dotnet-core
+    - name: Образцы Xamarin.Forms
+      href: /xamarin/xamarin-forms/samples/
+    - name: Все образцы Xamarin.iOS
+      href: /xamarin/ios/samples/
+    - name: Все примеры Xamarin.Android
+      href: /xamarin/android/samples/
+    - name: Все образцы Xamarin.Mac
+      href: /xamarin/mac/samples/
