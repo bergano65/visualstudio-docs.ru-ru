@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633165"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865327"
 ---
 # <a name="msbuild-task-reference"></a>Справочник по задачам MSBuild
 
@@ -37,15 +37,15 @@ ms.locfileid: "77633165"
 
 - [Базовый класс Task](../msbuild/task-base-class.md)
 
- Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Utilities.Task>.
+ Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Utilities.Task>. Не предназначен для непосредственного использования.
 
 - [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md)
 
- Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.TaskExtension>.
+ Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.TaskExtension>. Не предназначен для непосредственного использования.
 
 - [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)
 
- Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>.
+ Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Не предназначен для непосредственного использования.
 
 - [Задача AL (компоновщик сборок)](../msbuild/al-assembly-linker-task.md)
 

@@ -3,15 +3,15 @@ title: Управление подписками Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706972"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79306761"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -112,3 +112,17 @@ ms.locfileid: "74706972"
 > [!NOTE]
 > - Если вы решили закрыть учетную запись Майкрософт или Azure AD, ваши личные данные будут немедленно преобразованы в анонимные.
 > - Мы не удаляем личные данные полностью при наличии активных подписок.
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Следующие шаги
+Вы управляете подписками для организации?  Узнайте больше об управлении подписками Visual Studio:
+- [Назначение отдельных подписок](assign-license.md)
+- [Назначение нескольких подписок](assign-license-bulk.md)
+- [Изменение подписок](edit-license.md)
+- [Удаление подписок](delete-license.md)
+- [Определение максимального использования](maximum-usage.md)

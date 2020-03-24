@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776970"
 ---
 # <a name="globalon-and-globaloff"></a>Параметры GlobalOn и GlobalOff
@@ -44,7 +44,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```
 
 #### <a name="parameters"></a>Параметры
- Нет
+ Отсутствуют
 
 ## <a name="valid-options"></a>Допустимые параметры
  **GlobalOn** и **GlobalOff** можно использовать в командной строке, которая содержит следующие параметры.
@@ -55,9 +55,9 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **Attach:** `PID` Начинает профилирование указанного процесса.
 
- {**ProcessOff** | **ProcessOn**} **:** `PID` Останавливает или запускает профилирование указанного процесса.
+ {**ProcessOff** | **ProcessOn**}**:**`PID` Останавливает или запускает профилирование указанного процесса.
 
- {**ThreadOff** | **ThreadOn**} **:** `TID` Останавливает или запускает профилирование заданного процесса (только для метода инструментирования).
+ {**ThreadOff** | **ThreadOn**}**:**`TID` Останавливает или запускает профилирование заданного процесса (только для метода инструментирования).
 
 ## <a name="example"></a>Пример
  В этом примере **GlobalOff** и **GlobalOn** используются для того, чтобы не собирать данные профилирования в процессе запуска и завершения работы приложения.

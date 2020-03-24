@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Сведения о том, как активировать преимущество технической поддержки, входящее в вашу подписку Visual Studio.
 ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74706985"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация и использование преимущества технической поддержки в подписках Visual Studio
@@ -111,18 +111,18 @@ ms.locfileid: "74706985"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 4 обращения       |  Yes|
-| Visual Studio Enterprise с GitHub Enterprise | VL | 4 обращения       |  Yes|
-| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>2</sup>                                        | 2 обращения                                                          |Yes         |
-| Visual Studio Professional с GitHub Enterprise | VL                                     | 2 обращения                                                          |Yes         |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 2 обращения                                             |  Yes         |
-| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 2 обращения                                               | Yes         |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | 4 обращения       |  Да|
+| Visual Studio Enterprise с GitHub Enterprise | VL | 4 обращения       |  Да|
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>2</sup>                                        | 2 обращения                                                          |Да         |
+| Visual Studio Professional с GitHub Enterprise | VL                                     | 2 обращения                                                          |Да         |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 2 обращения                                             |  Да         |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 2 обращения                                               | Да         |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 ||
 
-<sup>1</sup> *Включает следующие категории: Imagine Premium, BizSpark. Не включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, Imagine Standard, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT.*
+<sup>1</sup> *Включает: Imagine Premium, BizSpark. Не включает следующие категории: не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, Imagine Standard, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT.*
 
-<sup>2</sup> *Включает следующие категории: Imagine Standard.*
+<sup>2</sup> *Включает: Imagine Standard.*
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

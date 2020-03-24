@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779458"
 ---
 # <a name="crosssession"></a>Параметр CrossSession
-Параметр *VSPerfCmd.exe* **CrossSession** позволяет профилировщику собирать данные из любого консольного сеанса. Параметр **CrossSession** используется с параметром **Start**.
+Параметр **CrossSession** программы *VSPerfCmd.exe* позволяет профилировщику собирать данные из любого консольного сеанса. Параметр **CrossSession** используется с параметром **Start**.
 
  Вместо **CrossSession** можно использовать сокращение **CS**.
 
@@ -28,16 +28,16 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
 #### <a name="parameters"></a>Параметры
- Нет
+ Отсутствуют
 
 ## <a name="valid-options"></a>Допустимые параметры
  Чтобы включить профилирование в рамках другого сеанса, необходимо указать параметр **CrossSession** с параметром **Start**. **CrossSession** также необходимо указать в любой последующей команде **VSPerfCmd Attach** или **Detach**.
 
  **Start:** `Method` Параметр **Start** инициализирует профилировщик для заданного метода профилирования.
 
- **Attach:** _PID_[ **,** _PID_] начинает профилирование указанных процессов.
+ **Attach:** _PID_[**,**_PID_] начинает профилирование указанных процессов.
 
- **Detach**[ **:** _PID_[,_PID_]] останавливает профилирование указанных процессов.
+ **Detach**[**:**_PID_[,_PID_]] останавливает профилирование указанных процессов.
 
 ## <a name="example"></a>Пример
  В этом примере параметр **CrossSession** используется для присоединения к приложению, запущенному в другом консольном сеансе.

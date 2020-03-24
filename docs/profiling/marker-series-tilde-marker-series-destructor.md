@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9de1d51eb99fa6914f792ed4c34668f861caee02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62831375"
 ---
-# <a name="markerseriesmarkerseries-destructor"></a>Деструктор marker_series::~marker_series
+# <a name="marker_seriesmarker_series-destructor"></a>Деструктор marker_series::~marker_series
 Удаляет объект marker_series и освобождает все выделенные ресурсы.
 
 ## <a name="syntax"></a>Синтаксис

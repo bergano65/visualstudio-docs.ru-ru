@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73716887"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Создание и редактирование пользовательского файла EditorConfig
@@ -52,7 +52,7 @@ ms.locfileid: "73716887"
 
     ![Элемент решения, отображаемый на панели решения](media/editorconfig-image1a.png)
 
-4. Измените файл. Например:
+4. Измените файл. Пример:
 
     ```EditorConfig
     # This file is the top-most EditorConfig file
@@ -83,7 +83,7 @@ ms.locfileid: "73716887"
 
 2. Перейдите в каталог, где находится необходимый файл.
 
-3. Файлы, названия которых начинаются с `.` (например, `.editorconfig`), в macOS являются скрытыми, поэтому нажмите клавиши **Command+Shift+.**, чтобы сделать файл `.editorconfig` видимым.
+3. Файлы, названия которых начинаются с `.` (например, `.editorconfig`), в macOS являются скрытыми, поэтому нажмите клавиши **Command+Shift+.** , чтобы сделать файл `.editorconfig` видимым.
 
 4. Выберите файл `.editorconfig` и нажмите **Открыть**:
 
@@ -122,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 Установка параметра `root` в значение `true` пометит этот файл как файл верхнего уровня всей базы кода, и все файлы `.editorconfig` в проекте выше по уровню не будут учитываться, как это описано в разделе [Переопределение параметров EditorConfig](#override-editorconfig-settings).
 
-Каждый раздел файла обозначается квадратными скобками (**[]**) и задает тип файлов, к которым будут применяться параметры данного раздела.
+Каждый раздел файла обозначается квадратными скобками ( **[]** ) и задает тип файлов, к которым будут применяться параметры данного раздела.
 
 В приведенном выше примере некоторые параметры применяются ко всем файлам в проекте, а другие задаются только для файлов C#. На рисунках ниже изображен код до и после применения параметров из файла `.editorconfig`:
 

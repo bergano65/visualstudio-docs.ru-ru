@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633230"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865379"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Встроенные задачи MSBuild с RoslynCodeTaskFactory
 
 Аналогично [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory использует кроссплатформенные компиляторы Roslyn для создания сборок задач в памяти, используемых в качестве встроенных задач.  Задачи RoslynCodeTaskFactory ориентированы на .NET Standard и могут работать в средах выполнения .NET Framework и .NET Core, а также на других платформах, таких как Linux и Mac OS.
 
 >[!NOTE]
->RoslynCodeTaskFactory есть в MSBuild начиная с версии 15.8.
+>RoslynCodeTaskFactory есть в MSBuild начиная с версии 15.8. Версии MSBuild соответствуют версиям Visual Studio, поэтому компонент RoslynCodeTaskFactory доступен в Visual Studio 15.8 и более поздних версиях.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Структура встроенной задачи с RoslynCodeTaskFactory
 
@@ -164,7 +164,7 @@ Log.LogError("Hello, world!");
 
 - `Tally` является выходным параметром типа System.Int32.
 
-Если в элементе `Code` значением атрибута `Type` является `Fragment` или `Method`, тогда свойства для каждого параметра создаются автоматически. В противном случае свойства следует явно объявить в исходном коде задачи. Кроме того, они должны в точности соответствовать определениям своих параметров.
+Если в элементе `Code` значением атрибута `Type` является `Fragment` или `Method`, тогда свойства для каждого параметра создаются автоматически.  Если в RoslynCodeTaskFactory элемент `Code` имеет атрибут `Type` со значением `Class`, атрибут `ParameterGroup` указывать не нужно, так как он выводится из исходного кода (в отличие от `CodeTaskFactory`). В противном случае свойства следует явно объявить в исходном коде задачи. Кроме того, они должны в точности соответствовать определениям своих параметров.
 
 ## <a name="example"></a>Пример
 

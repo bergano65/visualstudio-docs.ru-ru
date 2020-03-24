@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 12/10/2019
+ms.date: 03/16/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125368"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437748"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
-**Обновлено для [выпуска 16.4](/visualstudio/releases/2019/release-notes/)**
+**Обновлено для [выпуска 16.5](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Скачивание Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -206,7 +206,7 @@ ms.locfileid: "77125368"
 
 ## <a name="whats-next"></a>Дальнейшие действия
 
-Мы часто добавляем в Visual Studio 2019 новые функции, облегчающие разработку. Узнать подробнее о последних новшествах можно из [блога о Visual Studio](https://devblogs.microsoft.com/visualstudio/). Ретроспективный список нововведений, появившихся в предварительных версиях, можно посмотреть в разделе [Заметки о предварительных выпусках](/visualstudio/releases/2019/release-notes-preview/).
+Мы часто добавляем в Visual Studio 2019 новые функции, облегчающие разработку. Узнать подробнее о последних новшествах можно из [блога о Visual Studio](https://devblogs.microsoft.com/visualstudio/). Ретроспективный список нововведений, появившихся в предварительных версиях, можно посмотреть в разделе [Заметки о предварительных выпусках](/visualstudio/releases/2019/release-notes-preview/). Список планируемых к выпуску возможностей см. в разделе [Стратегия развития Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
 Сведения о находящихся в разработке функциях Visual Studio 2019 см. в документе [Стратегия развития Visual Studio](/visualstudio/productinfo/vs-roadmap/).
 
@@ -221,7 +221,7 @@ ms.locfileid: "77125368"
 ## <a name="see-also"></a>См. также
 
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
-* [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Заметки о выпуске Visual Studio 2019 для Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Конференция Microsoft Build 2019](https://www.microsoft.com/build)
-* [Конференция Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)
+* [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Конференция Microsoft Build](https://www.microsoft.com/build)
+* [Конференция Microsoft Ignite](https://www.microsoft.com/ignite)

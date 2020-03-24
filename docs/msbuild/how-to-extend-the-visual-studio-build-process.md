@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cca0c55951d4928347528814d043bb8a7c55be9a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093935"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Практическое руководство. Расширение процесса сборки Visual Studio
 
@@ -28,7 +28,6 @@ ms.locfileid: "77633854"
 - Переопределение конкретных предварительно заданных целевых объектов, определенных в списке стандартных целевых объектов (в файле *Microsoft.Common.targets* или импортируемых им файлах).
 
 - Переопределение свойств DependsOn, определенных в списке стандартных целевых объектов.
-## <a name="override-predefined-targets"></a>Переопределение предопределенных целевых объектов
 
 ## <a name="override-predefined-targets"></a>Переопределение предопределенных целевых объектов
 
@@ -69,6 +68,45 @@ ms.locfileid: "77633854"
 |`BeforePublish`, `AfterPublish`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после вызова основной функции публикация.|
 |`BeforeResolveReferences`, `AfterResolveReferences`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после разрешения ссылок на сборки.|
 |`BeforeResGen`, `AfterResGen`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после создания ресурсов.|
+
+## <a name="example-aftertargets-and-beforetargets"></a>Пример. Атрибуты AfterTargets и BeforeTargets
+
+В приведенном ниже примере показано, как использовать атрибут `AfterTargets` для добавления пользовательского целевого объекта, который выполняет некоторые действия с выходными файлами. В данном случае он копирует выходные файлы в новую папку *CustomOutput*.  В примере также показано, как очистить файлы, созданные пользовательской операцией сборки с целевым объектом `CustomClean`, с помощью атрибута `BeforeTargets` и указать, что пользовательская операция очистки должна выполняться до целевого объекта `CoreClean`.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+   <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+</PropertyGroup>
+
+<Target Name="CustomAfterBuild" AfterTargets="Build">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean" BeforeTargets="CoreClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+> [!WARNING]
+> Используйте имена, отличные от имен предопределенных целевых объектов, перечисленных в таблице в предыдущем разделе (например, пользовательский целевой объект сборки назван здесь `CustomAfterBuild`, а не `AfterBuild`), так как эти объекты переопределяются операцией импорта пакета SDK, в которой они определены. Вы не видите операцию импорта целевого файла, который переопределяет эти целевые объекты, но она неявно добавляется в конец файла проекта при использовании метода атрибута `Sdk` для ссылки на пакет SDK.
 
 ## <a name="override-dependson-properties"></a>Переопределение свойств DependsOn
 
@@ -130,6 +168,60 @@ ms.locfileid: "77633854"
 |`BuildDependsOn`|Свойство, которое следует переопределить, если нужно вставить пользовательские целевые объекты до или после всего процесса сборки.|
 |`CleanDependsOn`|Свойство, которое следует переопределить, если нужно убрать выходные данные из пользовательского процесса сборки.|
 |`CompileDependsOn`|Свойство, которое следует переопределить, если нужно вставить пользовательские процессы до или после этапа компиляции.|
+
+## <a name="example-builddependson-and-cleandependson"></a>Пример. Атрибуты BuildDependsOn и CleanDependsOn
+
+Приведенный ниже пример похож на пример с атрибутами `BeforeTargets` и `AfterTargets`, и в нем решается аналогичная задача. В нем сборка расширяется путем добавления с помощью атрибута `BuildDependsOn` собственной задачи `CustomAfterBuild`, которая копирует выходные файлы после сборки, а также добавления соответствующей задачи `CustomClean` с помощью `CleanDependsOn`.  
+
+В этом примере проект имеет стиль пакета SDK. Как упоминалось в примечании о проектах в стиле пакета SDK ранее в этой статье, вместо атрибута `Sdk`, применяемого средой Visual Studio при создании файлов проекта, необходимо использовать импорт вручную.
+
+```xml
+<Project>
+<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+</PropertyGroup>
+
+<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <BuildDependsOn>
+      $(BuildDependsOn);CustomAfterBuild
+    </BuildDependsOn>
+
+    <CleanDependsOn>
+      $(CleanDependsOn);CustomClean
+    </CleanDependsOn>
+
+    <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+  </PropertyGroup>
+
+<Target Name="CustomAfterBuild">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+Порядок элементов важен. Элементы `BuildDependsOn` и `CleanDependsOn` должны следовать после импорта стандартного файла целей построения пакета SDK.
 
 ## <a name="see-also"></a>См. также
 

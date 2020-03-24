@@ -30,16 +30,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633581"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865353"
 ---
 # <a name="link-task"></a>Связывание задачи
 
-Создает оболочку для компоновщика Microsoft C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
+Создает оболочку для компоновщика Microsoft C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделах [Параметры компоновщика](/cpp/build/reference/linker-options), [Использование MSBuild из командной строки](/cpp/build/msbuild-visual-cpp) и [Использование набора инструментов Microsoft C++ из командной строки](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Параметры
 
@@ -47,7 +47,7 @@ ms.locfileid: "77633581"
 
 - **AdditionalDependencies**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Определяет список входных файлов, добавляемых в команду.
 
@@ -55,7 +55,7 @@ ms.locfileid: "77633581"
 
 - **AdditionalLibraryDirectories**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Переопределяет путь к библиотеке среды. Задает имя каталога.
 
@@ -63,7 +63,7 @@ ms.locfileid: "77633581"
 
 - **AdditionalManifestDependencies**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Определяет атрибуты, которые будут помещены в раздел `dependency` файла манифеста.
 
@@ -79,7 +79,7 @@ ms.locfileid: "77633581"
 
 - **AddModuleNamesToAssembly**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Добавление в сборку ссылки на модуль.
 
@@ -103,7 +103,7 @@ ms.locfileid: "77633581"
 
 - **AssemblyLinkResource**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл. Укажите имя ресурса.
 
@@ -139,13 +139,13 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-  - **Default** -  *\<отсутствует>*
+  - **Default** - *\<отсутствует>*
 
-  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**
+  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**
+  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**
+  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
   Дополнительные сведения см. в разделе [/CLRIMAGETYPE (указание типа образа среды CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
@@ -157,11 +157,11 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-  - **Enabled** -  **/CLRSupportLastError**
+  - **Enabled** - **/CLRSupportLastError**
 
-  - **Disabled** -  **/CLRSupportLastError:NO**
+  - **Disabled** - **/CLRSupportLastError:NO**
 
-  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**
+  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
   Дополнительные сведения см. в разделе [/CLRSUPPORTLASTERROR (сохранение кода последней ошибки для вызовов PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
@@ -173,11 +173,11 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**
+  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**
+  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**
+  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
   Дополнительные сведения см. в разделе [/CLRTHREADATTRIBUTE (определение атрибута потока среды CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
@@ -197,13 +197,13 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-  - **Enabled** -  **/FUNCTIONPADMIN**
+  - **Enabled** - **/FUNCTIONPADMIN**
 
-  - **X86Image** -  **/FUNCTIONPADMIN:5**
+  - **X86Image** - **/FUNCTIONPADMIN:5**
 
-  - **X64Image** -  **/FUNCTIONPADMIN:6**
+  - **X64Image** - **/FUNCTIONPADMIN:6**
 
-  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**
+  - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
   Дополнительные сведения см. в разделе [/FUNCTIONPADMIN (создание образа, допускающего оперативное обновление)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
@@ -217,7 +217,7 @@ ms.locfileid: "77633581"
 
 - **DelayLoadDLLs**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Этот параметр определяет *отложенную загрузку* библиотек DLL. Укажите имя DLL-библиотеки, загрузку которой нужно отложить.
 
@@ -239,19 +239,19 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet** - *\<none>*
 
-  - **Driver** -  **/Driver**
+  - **Driver** - **/Driver**
 
-  - **UpOnly** -  **/DRIVER:UPONLY**
+  - **UpOnly** - **/DRIVER:UPONLY**
 
-  - **WDM** -  **/DRIVER:WDM**
+  - **WDM** - **/DRIVER:WDM**
 
   Дополнительные сведения см. в разделе [/DRIVER (драйвер режима ядра Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
 - **EmbedManagedResourceFile**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Внедрение файла ресурсов в сборку. Укажите имя нужного файла ресурсов. При необходимости укажите логическое имя, используемое для загрузки ресурса, и параметр **PRIVATE**, который указывает в манифесте сборки, что файл ресурсов является частным.
 
@@ -297,17 +297,17 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Enabled** -  **/FORCE**
+  - **Enabled** - **/FORCE**
 
-  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**
+  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**
+  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
   Дополнительные сведения см. в разделе [/FORCE (принудительный вывод файла)](/cpp/build/reference/force-force-file-output).
 
 - **ForceSymbolReferences**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Предписывает компоновщику добавить заданный символ в таблицу символов.
 
@@ -387,7 +387,7 @@ ms.locfileid: "77633581"
 
 - **IgnoreSpecificDefaultLibraries**
 
-  Необязательный параметр типа **String[]** .
+  Необязательный параметр типа **String[]**.
 
   Указывает одно или несколько имен пропускаемых библиотек по умолчанию. Разделяйте библиотеки с помощью точки с запятой.
 
@@ -447,13 +447,13 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **NoErrorReport** -  **/ERRORREPORT:NONE**
+  - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**
+  - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**
+  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-  - **SendErrorReport** -  **/ERRORREPORT:SEND**
+  - **SendErrorReport** - **/ERRORREPORT:SEND**
 
   Дополнительные сведения см. в разделе [/ERRORREPORT (создание отчетов о внутренних ошибках компоновщика)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
@@ -489,13 +489,13 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **Default** -  *\<отсутствует>*
+  - **Default** - *\<отсутствует>*
 
-  - **UseLinkTimeCodeGeneration** -  **/LTCG**
+  - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-  - **PGInstrument** -  **/LTCG:PGInstrument**
+  - **PGInstrument** - **/LTCG:PGInstrument**
 
-  - **PGOptimization** -  **/LTCG:PGOptimize**
+  - **PGOptimization** - **/LTCG:PGOptimize**
 
   - **PGUpdate**
 
@@ -581,7 +581,7 @@ ms.locfileid: "77633581"
 
 - **ObjectFiles**
 
-  Неявный параметр **String[]** .
+  Неявный параметр **String[]**.
 
   Определяет скомпонованные файлы объектов.
 
@@ -683,19 +683,19 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet** - *\<none>*
 
-  - **LinkVerbose** -  **/VERBOSE**
+  - **LinkVerbose** - **/VERBOSE**
 
-  - **LinkVerboseLib** -  **/VERBOSE:Lib**
+  - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-  - **LinkVerboseICF** -  **/VERBOSE:ICF**
+  - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-  - **LinkVerboseREF** -  **/VERBOSE:REF**
+  - **LinkVerboseREF** - **/VERBOSE:REF**
 
-  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**
+  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-  - **LinkVerboseCLR** -  **/VERBOSE:CLR**
+  - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
   Дополнительные сведения см. в разделе [/VERBOSE (печать сообщений о ходе выполнения)](/cpp/build/reference/verbose-print-progress-messages).
 
@@ -745,25 +745,25 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet** - *\<none>*
 
-  - **Console** -  **/SUBSYSTEM:CONSOLE**
+  - **Console** - **/SUBSYSTEM:CONSOLE**
 
-  - **Windows** -  **/SUBSYSTEM:WINDOWS**
+  - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-  - **Native** -  **/SUBSYSTEM:NATIVE**
+  - **Native** - **/SUBSYSTEM:NATIVE**
 
-  - **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**
+  - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
 
-  - **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+  - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**
+  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**
+  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-  - **POSIX** -  **/SUBSYSTEM:POSIX**
+  - **POSIX** - **/SUBSYSTEM:POSIX**
 
   Дополнительные сведения см. в разделе [/SUBSYSTEM (определение подсистемы)](/cpp/build/reference/subsystem-specify-subsystem).
 
@@ -815,29 +815,29 @@ ms.locfileid: "77633581"
 
   Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet** - *\<none>*
 
-  - **MachineARM** -  **/MACHINE:ARM**
+  - **MachineARM** - **/MACHINE:ARM**
 
-  - **MachineEBC** -  **/MACHINE:EBC**
+  - **MachineEBC** - **/MACHINE:EBC**
 
-  - **MachineIA64** -  **/MACHINE:IA64**
+  - **MachineIA64** - **/MACHINE:IA64**
 
-  - **MachineMIPS** -  **/MACHINE:MIPS**
+  - **MachineMIPS** - **/MACHINE:MIPS**
 
-  - **MachineMIPS16** -  **/MACHINE:MIPS16**
+  - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**
+  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**
+  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-  - **MachineSH4** -  **/MACHINE:SH4**
+  - **MachineSH4** - **/MACHINE:SH4**
 
-  - **MachineTHUMB** -  **/MACHINE:THUMB**
+  - **MachineTHUMB** - **/MACHINE:THUMB**
 
-  - **MachineX64** -  **/MACHINE:X64**
+  - **MachineX64** - **/MACHINE:X64**
 
-  - **MachineX86** -  **/MACHINE:X86**
+  - **MachineX86** - **/MACHINE:X86**
 
   Дополнительные сведения см. в разделе [/MACHINE (определение целевой платформы)](/cpp/build/reference/machine-specify-target-platform).
 

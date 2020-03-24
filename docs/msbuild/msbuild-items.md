@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7ea464695faeaf6651f645a39ce2b41d255108
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633308"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093963"
 ---
 # <a name="msbuild-items"></a>Элементы MSBuild
 
@@ -44,6 +44,8 @@ ms.locfileid: "77633308"
     <Compile Include = "file1.cs;file2.cs"/>
 </ItemGroup>
 ```
+
+Атрибут `Include` — это путь, который интерпретируется относительно папки с файлом проекта, $(MSBuildProjectPath), даже если элемент находится в импортированном файле, например файле *.targets*.
 
 ## <a name="create-items-during-execution"></a>Создание элементов во время выполнения
 
@@ -122,7 +124,7 @@ ms.locfileid: "77633308"
 
  Элемент может содержать нуль или более значений метаданных. Значения метаданных можно изменить в любое время. Если задать для метаданных пустое значение, это фактически будет означать их удаление из сборки.
 
-### <a name="BKMK_ReferencingItemMetadata"></a> Ссылки на метаданные элементов в файле проекта
+### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> Ссылки на метаданные элементов в файле проекта
 
  Для обращения к метаданным элемента в файле проекта используется синтаксис %(\<ItemMetadataName>). Если возникает неоднозначность, можно ограничить применение ссылки с помощью имени типа элемента. Например, можно указать %(\<ItemType.ItemMetaDataName>). В следующем примере метаданные Display используются для пакетной обработки задачи Message. Дополнительные сведения об использовании метаданных элементов для пакетной обработки см. в разделе [Метаданные элементов в пакетной обработке задач](../msbuild/item-metadata-in-task-batching.md).
 
@@ -142,11 +144,11 @@ ms.locfileid: "77633308"
 </Project>
 ```
 
-### <a name="BKMK_WellKnownItemMetadata"></a> Стандартные метаданные элементов
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Стандартные метаданные элементов
 
  Когда элемент добавляется в тип элементов, ему назначаются некоторые стандартные метаданные. Например, все элементы имеют стандартные метаданные %(\<Filename>). В этом случае значением является имя файла элемента (без расширения). Дополнительные сведения см. в разделе [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md).
 
-### <a name="BKMK_Transforming"></a> Преобразование типов элементов с помощью метаданных
+### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Преобразование типов элементов с помощью метаданных
 
  С помощью метаданных можно преобразовать списки элементов в новые списки элементов. Например, можно преобразовать тип элемента `CppFiles`, содержащий элементы, представляющие *CPP*-файлы, в соответствующий список *OBJ*-файлов с помощью выражения `@(CppFiles -> '%(Filename).obj')`.
 
@@ -189,7 +191,7 @@ ms.locfileid: "77633308"
 
  Начиная с версии .NET Framework 3.5, элементы `Target` могут содержать элементы [ItemGroup](../msbuild/itemgroup-element-msbuild.md), которые могут содержать элементы Item. Атрибуты в этом разделе допустимы, если они указаны для элемента в `ItemGroup`, который находится в `Target`.
 
-### <a name="BKMK_RemoveAttribute"></a> Удаление атрибута
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> Удаление атрибута
 
  Атрибут `Remove` удаляет определенные элементы (файлы) из типа элементов. Этот атрибут появился в .NET Framework 3.5 (только для внутренних целевых объектов). Начиная с MSBuild 15.0, поддерживаются как внутренние, так и внешние целевые объекты.
 
@@ -203,7 +205,7 @@ ms.locfileid: "77633308"
 </Target>
 ```
 
-### <a name="BKMK_KeepMetadata"></a> Атрибут KeepMetadata
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> Атрибут KeepMetadata
 
  Если элемент создается в целевом объекте, элемент Item может содержать атрибут `KeepMetadata`. Если этот атрибут задан, из исходного элемента в целевой передаются только те метаданные, имена которых содержатся в списке имен, разделенных точкой с запятой. Пустое значение этого атрибута эквивалентно тому, что атрибут не задан. Атрибут `KeepMetadata` появился в .NET Framework версии 4.5.
 
@@ -246,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_RemoveMetadata"></a> Атрибут RemoveMetadata
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> Атрибут RemoveMetadata
 
  Если элемент создается в целевом объекте, элемент Item может содержать атрибут `RemoveMetadata`. Если этот атрибут задан, из исходного элемента в целевой передаются все метаданные за исключением метаданных, имена которых содержатся в списке имен, разделенных точкой с запятой. Пустое значение этого атрибута эквивалентно тому, что атрибут не задан. Атрибут `RemoveMetadata` появился в .NET Framework версии 4.5.
 
@@ -296,7 +298,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_KeepDuplicates"></a> Атрибут KeepDuplicates
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> Атрибут KeepDuplicates
 
  Если элемент создается в целевом объекте, элемент Item может содержать атрибут `KeepDuplicates`. `KeepDuplicates` — это атрибут `Boolean`, который указывает, следует ли добавлять элемент в целевую группу, если он является точной копией существующего элемента.
 

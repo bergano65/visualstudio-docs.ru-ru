@@ -3,15 +3,15 @@ title: Поиск и фильтрация | Документация Майкр
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут искать отдельных подписчиков или группы на портале администрирования.
-ms.openlocfilehash: 2f48efee4ad4447f6d76cdc71b7210833309d2c8
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ab6e680747e7c4c216315bad02e0373bb8fe271c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605783"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78408956"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Поиск и фильтрация подписчиков в подписках Visual Studio
 Портал администрирования подписок Visual Studio позволяет найти определенное подмножество подписчиков на основе различных условий. Вы можете отфильтровать список подписчиков по имени, адресу электронной почты, уровню подписки и другим сведениям.
@@ -19,7 +19,7 @@ ms.locfileid: "68605783"
 ## <a name="to-filter-the-subscriber-list"></a>Фильтрация списка подписчиков
 1. Чтобы найти определенную группу подписчиков, откройте вкладку **Фильтр**.
    > [!div class="mx-imgBorder"]
-   > ![Выбор фильтра для поиска по списку подписчиков](media/filter-list.png)
+   > ![Выбор фильтра для поиска по списку подписчиков](_img/search-filter/filter-list.png)
 
 2. Введите условия поиска и снова нажмите **Фильтр**.
    > [!div class="mx-imgBorder"]
@@ -29,10 +29,22 @@ ms.locfileid: "68605783"
    > [!NOTE]
    > Поле **Имя** сортируется по имени.
 
+   Обратите внимание, что значок **Фильтр** выделен, и это означает, что фильтр применен.  Также отображается вариант **Очистить фильтр**. 
+
 3. Чтобы очистить фильтр и восстановить нефильтрованный список, щелкните вкладку **Очистить фильтр** в правом верхнем углу. 
    > [!div class="mx-imgBorder"]
-   > ![Очистка фильтра из списка подписчиков](media/clear-filter.png)
+   > ![Очистка фильтра из списка подписчиков](_img/search-filter/clear-filter.png)
+
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Следующие шаги
 - Теперь, когда вы умеете находить подписчика, узнайте, как [изменить](edit-license.md) его подписку.
 - Нужна помощь с использованием портала администрирования?  Обратитесь в [службу поддержки по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+
+

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263127"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431453"
 ---
 # <a name="usingtask-element-msbuild"></a>Элемент UsingTask (MSBuild)
 
@@ -78,6 +78,8 @@ ms.locfileid: "78263127"
 > Свойства и элементы уровня проекта не имеют смысла, если элемент`UsingTask` получен из одного из файлов *TASKS*, зарегистрированных глобально в модуле MSBuild. Значения уровня проекта не являются глобальными по отношению к MSBuild.
 
  В MSBuild 4.0 задачи можно загрузить из файлов *OVERRIDETASK*.
+
+Сборка, содержащая пользовательскую задачу, загружается при первом использовании `Task`.
 
 ## <a name="example"></a>Пример
 

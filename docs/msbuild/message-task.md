@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633490"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865366"
 ---
 # <a name="message-task"></a>Message - задача
 
@@ -44,7 +44,7 @@ ms.locfileid: "77633490"
 
  Если параметр `Condition` равен `true`, значение параметра `Text` записывается, а процесс сборки продолжает выполняться. Если параметр `Condition` не существует, текст сообщения записывается в журнал. Дополнительные сведения см. в статье о [получении журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- По умолчанию сообщение отправляется в средство ведения журнала консоли MSBuild. Это поведение можно изменить, присвоив параметру <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> необходимое значение. Средство ведения журнала интерпретирует параметр `Importance`. Как правило, сообщение со свойством `high` отправляется, если для детализации средства ведения журнала задано значение <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` или более высокое. Сообщение со свойством `low` отправляется, если для детализации средства ведения журнала задано значение <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
+ По умолчанию сообщение отправляется во все зарегистрированные средства ведения журнала. Средство ведения журнала интерпретирует параметр `Importance`. Как правило, сообщение со свойством `high` отправляется, если для детализации средства ведения журнала задано значение <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Minimal` или более поздней версии. Сообщение со свойством `low` отправляется, если для детализации средства ведения журнала задано значение <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Detailed`.
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 

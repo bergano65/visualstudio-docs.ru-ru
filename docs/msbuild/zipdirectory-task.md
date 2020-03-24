@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630643"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094574"
 ---
 # <a name="zipdirectory-task"></a>Задача ZipDirectory
 
@@ -52,7 +52,7 @@ ms.locfileid: "77630643"
 
 ## <a name="example"></a>Пример
 
- В следующем примере создается *ZIP-архив* из каталога выходных данных после сборки проекта.
+ В приведенном ниже примере (используемом в качестве импортируемого файла *.targets*) создается *ZIP-архив* из каталога выходных данных после сборки проекта. Обычно свойство `$(OutputPath)` определяется в файле проекта MSBuild, поэтому для файла проекта, импортирующего следующий файл, создается ZIP-архив `output.zip`:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
