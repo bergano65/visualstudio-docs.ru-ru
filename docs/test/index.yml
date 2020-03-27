@@ -1,0 +1,64 @@
+### YamlMime:Landing
+title: Средства тестирования Visual Studio
+summary: Средства тестирования Visual Studio могут помочь вам и вашей команде в разработке и поддержке высоких стандартов качества кода.
+metadata:
+  title: Средства тестирования Visual Studio
+  description: Узнайте о том, как использовать Visual Studio для тестирования кода.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 03/23/2020
+  ms.openlocfilehash: cb29c5219cb3ad73cf8a3efeecaf344c7af81968
+  ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/25/2020
+  ms.locfileid: "80256404"
+landingContent:
+- title: Сведения о средствах тестирования
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Первое знакомство со средствами тестирования
+      url: improve-code-quality.md
+    - text: Основные сведения о средствах модульного тестирования
+      url: unit-test-your-code.md
+    - text: Обзор Live Unit Testing
+      url: live-unit-testing-intro.md
+- title: Модульное тестирование
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Приступая к работе с модульным тестированием
+      url: getting-started-with-unit-testing.md
+    - text: Создание и запуск модульных тестов для управляемого кода
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - text: Выполнение модульных тестов с помощью обозревателя тестов
+      url: run-unit-tests-with-test-explorer.md
+    - text: Начало работы с Live Unit Testing
+      url: live-unit-testing-start.md
+    - text: Создание модульных тестов (IntelliTest)
+      url: generate-unit-tests-for-your-code-with-intellitest.md
+- title: Другие средства тестирования
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Покрытие кода — определение объема протестированного кода
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - text: Microsoft Fakes — изоляция тестируемого кода
+      url: isolating-code-under-test-with-microsoft-fakes.md
+    - text: Закодированный пользовательский интерфейс (устаревшее)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Нагрузочное тестирование (устаревшее)
+      url: quickstart-create-a-load-test-project.md
+- title: Связанные средства (Azure DevOps)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Произвольное и ручное тестирование (Azure Test Plans)
+      url: /azure/devops/test/overview?view=azure-devops
+    - text: Нагрузочное тестирование (Azure Test Plans)
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+    - text: Непрерывное тестирование (Azure Pipelines)
+      url: /azure/devops/pipelines/?view=azure-devops
