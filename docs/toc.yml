@@ -329,6 +329,8 @@
                   href: ide/reference/generate-constructor.md
                 - name: Создание деконструктора
                   href: ide/reference/generate-deconstructor.md
+                - name: Добавить явное приведение
+                  href: ide/reference/add-explicit-cast.md
                 - name: Добавление параметра в метод
                   href: ide/reference/add-parameter.md
                 - name: Создание параметра
@@ -360,6 +362,8 @@
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: Преобразование анонимного типа в кортеж
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: Преобразование между автосвойством и полным свойством
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: Преобразование между циклом for и оператором foreach
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Преобразование между методом Get и свойством
