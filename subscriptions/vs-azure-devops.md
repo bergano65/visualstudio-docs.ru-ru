@@ -1,17 +1,18 @@
 ---
 title: Преимущества Azure DevOps для подписчиков Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
-ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 73c6ae54ed39375e695fd1d68b972edb1ec9b46c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79306743"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232044"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 Как действующий подписчик Visual Studio вы можете использовать целый ряд возможностей в Azure DevOps, которые включены в вашу подписку в виде преимуществ. Вы сможете использовать эти возможности в каждой организации Azure DevOps, членом которой вы являетесь, независимо от того, создали вы эту организацию или были добавлены в нее.
@@ -45,6 +46,12 @@ ms.locfileid: "79306743"
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Документация по Azure DevOps](/azure/devops/).
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о возможностях Azure DevOps:

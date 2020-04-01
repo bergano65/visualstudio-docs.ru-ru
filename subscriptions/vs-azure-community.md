@@ -1,17 +1,18 @@
 ---
 title: Преимущество поддержки сообщества Azure в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Сведения о преимуществе поддержки сообщества Azure, включенном в некоторые подписки Visual Studio.
-ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: ab5c6c7a1243843bd522ed33dab6a37c57a8f2fe
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "73983753"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232102"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Доступ к форуму поддержки сообщества Azure в рамках подписки Visual Studio
 Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.
@@ -69,6 +70,12 @@ ms.locfileid: "73983753"
 - [Документация по Azure](/azure/).
 - Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Знаете ли вы, что вместе со многими подписками Visual Studio предоставляется отдельная сумма на счете в Azure DevTest?  Узнайте, [как активировать](vs-azure.md) свои деньги на счете в Azure.
