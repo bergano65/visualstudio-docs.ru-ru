@@ -3,15 +3,16 @@ title: Доступность продуктов в файлах для загр
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о доступности продуктов в файлах для загрузки программного обеспечения для подписок Visual Studio
-ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947103"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232302"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Доступность продуктов в файлах для загрузки программного обеспечения в подписках Visual Studio
 Ваши преимущества подписчика включают в себя доступ к обширному спектру скачиваемого программного обеспечения.

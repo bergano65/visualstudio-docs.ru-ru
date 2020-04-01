@@ -3,15 +3,16 @@ title: Управление большими рабочими группами �
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов по управлению подписками для больших рабочих групп, а также сторонних подрядчиков.
-ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947064"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232324"
 ---
 # <a name="large-teams-and-external-contractors"></a>Большие рабочие группы и внешние подрядчики
 Администраторы подписок на Visual Studio отвечают за наличие соответствующей подписки на Visual Studio у всех пользователей, которые взаимодействуют с программным обеспечением с лицензией Visual Studio.

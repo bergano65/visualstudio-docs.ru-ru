@@ -3,15 +3,16 @@ title: Изменение подписок на портале админист�
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут изменять назначения подписок.
-ms.openlocfilehash: cd4bb40599ff242e20ba0e38fb561bde7d3f1823
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263290"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232558"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Изменение назначений для подписок Visual Studio
 Администраторы подписок могут вносить изменения в подписки, назначенные сотрудникам организации.  В этой статье рассмотрены изменения, которые можно внести, и описаны необходимые действия.

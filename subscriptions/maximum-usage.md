@@ -3,15 +3,16 @@ title: Использование функции максимального ис
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Сведения о просмотре максимального количества назначенных подписок на портале администрирования
-ms.openlocfilehash: 9d9aa2d83a84fcdecf1749e3730d43dabf7bd52d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410314"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232273"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Использование функции максимального использования для отслеживания количества назначенных подписок
 Новая функция на портале администрирования подписок Visual Studio помогает отслеживать, сколько подписок вы приобрели и назначили, и определяет максимальное число назначенных подписок каждого уровня, как в прошлом году, так и в период действия ваших соглашений. 

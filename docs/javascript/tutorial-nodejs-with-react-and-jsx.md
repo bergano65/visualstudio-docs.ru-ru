@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235097"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550026"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и React в Visual Studio
 
@@ -405,10 +405,6 @@ webpack объединяет файлы JavaScript, чтобы их можно �
 
    ::: moniker range=">=vs-2019"
    Для Microsoft Edge (Chromium) также отключите все экземпляры Chrome. Это дает лучшие результаты, так как оба браузера совместно используют базу кода Chromium.
-   ::: moniker-end
-
-   ::: moniker range=">=vs-2019"
-   Для Microsoft Edge (Chromium) также отключите все экземпляры Chrome. Это дает лучшие результаты, поскольку оба браузера используют базу кода Chromium.
    ::: moniker-end
 
 2. Запустите браузер с включенной отладкой.

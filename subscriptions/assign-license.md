@@ -3,15 +3,16 @@ title: Назначение лицензий для подписок Visual Stud
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут назначать лицензии для подписчиков.
-ms.openlocfilehash: 3d444f930d1fab166d437911b5609caf75cad09e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 87334251532dbaa127d4def8c33a9814c28d42e1
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263319"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232709"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Назначение лицензий на портале администрирования подписок Visual Studio
 Администраторы подписок Visual Studio могут использовать портал администрирования для назначения подписок отдельным пользователям и группам пользователей.
