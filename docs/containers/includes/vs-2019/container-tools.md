@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922995"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80501455"
 ---
 В Visual Studio можно легко выполнять сборку, отлаживать и запускать контейнерные приложения .NET, ASP.NET и ASP.NET Core и публиковать их в реестре контейнеров Azure (ACR), Docker Hub, службе приложений Azure или собственном реестре контейнеров. В этой статье рассматривается публикация приложения ASP.NET Core в реестре контейнеров Azure (ACR).
 
@@ -74,6 +74,9 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 Выберите пункт **Docker** в раскрывающемся списке отладки на панели инструментов, чтобы начать отладку приложения. Может появиться сообщение с запросом о доверии сертификату. Выберите доверие сертификату, чтобы продолжить.
 
 В параметре **Инструменты контейнера** в окне **Вывод** показано, какие действия выполняются. В первый раз может потребоваться некоторое время для скачивания базового образа, но при последующих запусках это происходит гораздо быстрее.
+
+>[!NOTE]
+> Если вам нужно изменить порты для отладки, это можно сделать в файле *launchSettings.json*. См. сведения о [параметрах запуска контейнеров](../../container-launch-settings.md).
 
 ## <a name="containers-window"></a>Окно "Контейнеры"
 

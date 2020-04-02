@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950689"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472666"
 ---
 # <a name="container-tools-build-properties"></a>Свойства сборки с помощью инструментов для работы с контейнерами
 
@@ -41,7 +41,7 @@ ms.locfileid: "71950689"
 | DockerImageLabels | Набор меток по умолчанию, применяемых к образу Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 или более поздняя|
 | DockerFastModeProjectMountDirectory|В **быстром режиме** это свойство управляет тем, где выходной каталог проекта подключен к тому в выполняющемся контейнере.|C:\app (Windows) или /app (Linux)|1.9.2 более поздней версии|
 | DockerfileBuildArguments | Дополнительные аргументы, передаваемые в команду сборки Docker. | Не применяется |1.0.1872750 или более поздняя|
-| DockerfileContext | Контекст по умолчанию, используемый при сборке образа Docker. | Задается средой Visual Studio. |1.0.1872750 или более поздняя|
+| DockerfileContext | Контекст по умолчанию, используемый при сборке образа Docker в качестве пути относительно Dockerfile. | Задается средой Visual Studio. |1.0.1872750 или более поздняя|
 | DockerfileFastModeStage | Этап Dockerfile (то есть целевой объект), который будет использоваться при сборке образа в режиме отладки. | Первый этап в файле Dockerfile (base) |
 | DockerfileFile | Описывает файл Dockerfile по умолчанию, который будет использоваться для сборки или запуска контейнера проекта. Значение также может быть путем. | Dockerfile |1.0.1872750 или более поздняя|
 | DockerfileRunArguments | Дополнительные аргументы, передаваемые в команду запуска Docker. | Не применяется |1.0.1872750 или более поздняя|

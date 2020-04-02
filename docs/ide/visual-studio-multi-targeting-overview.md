@@ -1,6 +1,6 @@
 ---
 title: Целевые платформы .NET Framework
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307331"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472737"
 ---
 # <a name="framework-targeting-overview"></a>Общие сведения о настройке целевой платформы
 
 В Visual Studio можно указать версию платформы .NET, на которую будет ориентироваться проект. Нацеливание на платформу помогает гарантировать, что приложение использует только те функциональные возможности, которые доступны в указанной версии платформы. Для запуска приложений .NET Framework на другом компьютере версия платформы для такого приложения должна быть совместима с версией платформы, установленной на компьютере.
 
-Решение Visual Studio может содержать проекты, предназначенные для различных версий .NET.
-
-Дополнительные сведения о требуемых версиях .NET Framework см. в разделе [Целевые платформы](/dotnet/standard/frameworks).
+Решение Visual Studio может содержать проекты, предназначенные для различных версий .NET.  Обратите внимание, что вы можете выполнить сборку только для одной версии .NET с помощью условий ссылок для одной сборки или рекурсивно создавать разные двоичные файлы для каждой версии.  Дополнительные сведения о требуемых версиях .NET Framework см. в разделе [Целевые платформы](/dotnet/standard/frameworks).
 
 > [!TIP]
 > Вы также можете нацеливать приложения на различные платформы. Дополнительные сведения см. в разделе [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md).
