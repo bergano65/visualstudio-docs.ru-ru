@@ -40,6 +40,7 @@
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Учетная запись разработчика Windows](vs-windows-dev.md)
+#### [Виртуальный рабочий стол Windows](vs-windows-virtual-desktop.md)
 ### Профессиональное развитие
 #### [Журнал CODE](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
