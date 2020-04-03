@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771547"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232917"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Журнал изменений (инструменты Visual Studio для Unity, Mac)
 
 Журнал изменений в наборе средств Visual Studio для Unity
+
+## <a name="2520"></a>2.5.2.0
+
+Выпущено 23 марта 2020 г.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Отладчик:**
+
+  - Исправлена регистрация потоков после присоединения.
+
+## <a name="2510"></a>2.5.1.0
+
+Выпущено 3 марта 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Интеграция:**
+
+  - Добавлен подавитель для [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md). Частные методы, используемые с методами Invoke, InvokeRepeating, StartCoroutine или StartCoroutine, не должны помечаться как неиспользуемые.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Внесены изменения в документацию по методам OnDrawGizmos и OnDrawGizmosSelected.
+
+- **Вычисления:**
+
+  - Исправлена проверка аргументов лямбда-выражений.
+
+## <a name="2501"></a>2.5.0.1
+
+Выпущено 19 февраля 2020 г.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Исправлена диагностическая проверка [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) на правильность подписи сообщения. При проверке типов с несколькими уровнями наследования эта диагностика может завершиться ошибкой с выводом следующего сообщения: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+
+## <a name="2500"></a>2.5.0.0
+
+Выпущено 22 января 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Интеграция:**
+
+  - Добавлена поддержка HLSL-файлов.
+  
+  - Используется новый пользовательский интерфейс диалогового окна "Новая папка".
+  
+  - Используется новая сетка доступных свойств.
+
+  - Добавлен подавитель для [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md). Частные поля с атрибутом `SerializeField` не должны помечаться как неиспользуемые.
+
+  - Добавлен подавитель для [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md). Поля с атрибутом `SerializeField` не должны помечаться как неназначенные.  
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Исправлен процесс создания проекта (поиск целевого объекта `GenerateTargetFrameworkMonikerAttribute` не всегда выполнялся правильно).
+
+- **Вычисления:**
+
+  - Исправлено вычисление строки (без использования вызовов ToString()).
 
 ## <a name="2420"></a>2.4.2.0
 

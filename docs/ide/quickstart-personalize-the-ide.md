@@ -1,18 +1,18 @@
 ---
 title: Настройка цветовой темы и шрифтов
-ms.date: 11/20/2017
+ms.date: 03/23/2020
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596948"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233149"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Персонализация интегрированной среды разработки и редактора Visual Studio
 
@@ -52,8 +52,19 @@ ms.locfileid: "75596948"
 
    ::: moniker-end
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > Вы можете выбрать дополнительные предопределенные темы, установив **редактор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Когда вы установите это средство, в раскрывающемся списке **Цветовая тема** появятся дополнительные темы.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Вы можете создать собственные темы, установив **конструктор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
+
+::: moniker-end
 
 ## <a name="change-text-color"></a>Изменение цвета текста
 
@@ -115,7 +126,7 @@ ms.locfileid: "75596948"
 
 Мы изучили только некоторые способы настраивать цвета в Visual Studio. Ознакомьтесь с другими возможностями в диалоговом окне **Параметры**, чтобы настроить Visual Studio в соответствии со своими предпочтениями.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка редактора](../ide/how-to-change-text-case-in-the-editor.md)
 - [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)

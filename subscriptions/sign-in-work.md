@@ -3,15 +3,16 @@ title: Вход в подписки Visual Studio с рабочей или уч�
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Узнайте, как войти в вашу подписку Visual Studio с помощью рабочей или учебной учетной записи.
-ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508996"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233217"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Вход в подписки Visual Studio с рабочей или учебной учетной записью 
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888642"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549932"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
@@ -27,7 +27,7 @@ ms.locfileid: "72888642"
 Чтобы приступить к работе, выберите **Файл** > **Открыть** > **Папку** на панели инструментов. Обозреватель решений отображает все файлы в папке, и можно открыть любой из файлов, чтобы начать редактирование. В фоновом режиме Visual Studio индексирует файлы, предоставляя функции npm, сборки и отладки.
 
 > [!IMPORTANT]
-> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8 или более поздней.
+> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8 или более поздней. Должна быть установлена рабочая нагрузка Visual Studio **Разработка Node.js**.
 
 ## <a name="npm-integration"></a>Интеграция npm
 
@@ -54,7 +54,7 @@ ms.locfileid: "72888642"
 > [!NOTE]
 > При создании кода TypeScript мы используем последнюю версию, установленную в `C:\Program Files (x86)\Microsoft SDKs\TypeScript`.
 
-Если в папке есть файл *tsconfig.json*, щелкните правой кнопкой мыши файл TypeScript, чтобы открыть команду меню для отладки этого файла TypeScript. Этот параметр отображается только в том случае, если в `outFile`tsconfig.json*не указан*. Если `outFile` указан, для отладки этого файла щелкните правой кнопкой мыши *tsconfig.json* и выберите нужный параметр. Файл `tsconfig.json` также предоставляет параметр сборки для указания параметров компилятора.
+Если в папке есть файл *tsconfig.json*, щелкните правой кнопкой мыши файл TypeScript, чтобы открыть команду меню для отладки этого файла TypeScript. Этот параметр отображается только в том случае, если в *tsconfig.json* не указан `outFile`. Если `outFile` указан, для отладки этого файла щелкните правой кнопкой мыши *tsconfig.json* и выберите нужный параметр. Файл `tsconfig.json` также предоставляет параметр сборки для указания параметров компилятора.
 
 > [!NOTE]
 > Дополнительные сведения о файле *tsconfig.json* см. на [странице руководства по tsconfig.json в TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
