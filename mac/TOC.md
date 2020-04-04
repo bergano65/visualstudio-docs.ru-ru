@@ -1,4 +1,4 @@
-# [Visual Studio для Mac](index.yml)
+8# [Visual Studio для Mac](index.yml)
 
 # Начало работы
 ## [Обзор интегрированной среды разработки](ide-tour.md)
@@ -10,6 +10,9 @@
 ## [Установка предварительной версии](install-preview.md)
 ## [Обновление](update.md)
 ## [Удаление](uninstall.md)
+---
+ site contain incorrect term form here
+---
 
 # Учетные записи пользователя
 ## [Обзор](user-accounts.md)
