@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank | Документация Майкрософт
+title: IDebugArrayField::GetRank Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33d5118ffa045ccc2315ccb596850be6922fc2ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321690"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736309"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-Возвращает ранг или число измерений массива.
+Получает ранг или количество размеров массива.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>Параметры
 `pdwRank`\
-[out] Возвращает ранг.
+(ваут) Возвращает ранг.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Ранг массива соответствует число измерений. В C++ и C# многомерных массивов, массивы массивов на самом деле являются и таким образом можно считать одномерного массива (и `GetRank` метод всегда возвращает значение 1). В [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], с другой стороны, многомерные массивы обрабатываются по-разному и ранг такой массив отражает число измерений (и `GetRank` метод всегда возвращает число измерений).
+ Ранг массива соответствует количеству размеров. В СЗ и СЗ многомерные массивы действительно представляют собой массивы массивов и поэтому их `GetRank` можно считать только одномерным массивом (и метод всегда возвращает 1). В [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], с другой стороны, многомерные массивы обрабатываются по-разному и ранг такого `GetRank` массива отражает количество измерений (и метод всегда возвращает количество измерений).
 
 ## <a name="see-also"></a>См. также
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

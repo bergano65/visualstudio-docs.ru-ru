@@ -1,28 +1,28 @@
 ---
-title: Элемент AppliesTo (шаблоны Visual Studio) | Документация Майкрософт
+title: ПрименяетсяК Элемент (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33288876d1a9101d96d4d2c0c0c7beb5e6f1ac72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740075"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>Элемент AppliesTo (шаблоны Visual Studio)
+# <a name="appliesto-element-visual-studio-templates"></a>ПрименяетсяДля элемента (шаблоны Visual Studio)
 
-Указывает необязательное выражение, которое соответствует один или несколько возможностей (см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Возможности предоставляются типами проектов через иерархию в виде свойства [__VSHPROPID5. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). Таким образом шаблон может использоваться в нескольких типах проектов, имеющих общие применимые возможности.
+Упомяните дополнительное выражение, чтобы <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>соответствовать одному или более возможностям (см.). Возможности разоблачаются типами проектов через иерархию как [__VSHPROPID5 свойств. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). Таким образом шаблон может использоваться в нескольких типах проектов, имеющих общие применимые возможности.
 
 Этот элемент является необязательным. В файле шаблона может быть не более одного экземпляра этого элемента. Этот элемент позволяет шаблону элемента быть применимым на основании возможностей выбранного в данный момент активного проекта. Его нельзя использовать, чтобы создать шаблон элемента неприменимым. Если `AppliesTo` отсутствует или выражение не проходит проверку применимости, `TemplateID` или `TemplateGroupID` используются, чтобы сделать шаблон применимым, как в предыдущих версиях продукта.
 
-Представлено в обновлении 2 для Visual Studio 2013. Чтобы сослаться на правильную версию, см. в разделе [ссылки на сборки, представленные в Visual Studio 2013 SDK с обновлением 2](/previous-versions/dn632168(v=vs.120)).
+Представлено в обновлении 2 для Visual Studio 2013. Для ссылки на правильную версию, см [Ссылки сборки доставлены в Visual Studio 2013 SDK Обновление 2](/previous-versions/dn632168(v=vs.120)).
 
 ```xml
 <VSTemplate>
@@ -42,11 +42,11 @@ ms.locfileid: "66352245"
 
 ### <a name="attributes"></a>Атрибуты
 
-Отсутствует.
+Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-Отсутствует.
+Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -60,11 +60,11 @@ ms.locfileid: "66352245"
 
 Синтаксис допустимого выражения определяется следующим образом:
 
-- Выражение возможности, такие как "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)».
+- Выражение возможностей, например , "(VisualC &#124; CSharp) (MSTest &#124; NUnit)".
 
-- "&#124;" — Оператор OR.
+- Оператором "&#124;" является OR.
 
-- «&» И «+» символы являются операторами.
+- Символы "&" и "Я" являются и операторами.
 
 - "!" — оператор NOT.
 
@@ -72,11 +72,11 @@ ms.locfileid: "66352245"
 
 - Значение NULL или пустое выражение считается совпадением.
 
-- Возможности проекта могут содержать любой символ, кроме следующих зарезервированных символов: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- Возможности проекта могут быть любыми символами, за исключением этих\\зарезервированных символов: «''';,--»,&#124;&% <> .{} \t\b\n\r
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано три разных шаблона. `Template1` применяется ко всем типам проектов C# или к любому другому типу проектов, который поддерживает возможность `WindowsAppContainer`. `Template2` применяется ко всем проектам C# любого типа. `Template3` применяется к проектам C#, которые не являются проектами `WindowsAppContainer`.
+В следующем примере показано три разных шаблона. `Template1`применяется либо ко всем типам проектов C, `WindowsAppContainer` либо к любому другому типу проекта, который поддерживает возможность. `Template2`применяется ко всем проектам C- `Template3` применяется к проектам C#, которые не являются проектами `WindowsAppContainer`.
 
 ```xml
 <!--  Template 1 -->
@@ -106,5 +106,5 @@ ms.locfileid: "66352245"
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

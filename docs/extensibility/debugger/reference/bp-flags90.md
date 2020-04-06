@@ -1,27 +1,27 @@
 ---
-title: BP_FLAGS90 | Документация Майкрософт
+title: BP_FLAGS90 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c423b8ecf0e4591913be5ef875057a947f42614
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319161"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738045"
 ---
-# <a name="bpflags90"></a>BP_FLAGS90
-Перечисляет допустимые значения для необязательные флаги. Необязательные флаги может использоваться для указания дополнительных сведений, если установить точку останова. Это перечисление расширяет [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления.
+# <a name="bp_flags90"></a>BP_FLAGS90
+Перечисляет действительные значения для дополнительных флагов. Дополнительные флаги могут использоваться для указания дополнительной информации при установке точки разрыва. Этот пересчет расширяет [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисление.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,21 +54,21 @@ public enum enum_BP_FLAGS90
 
 ## <a name="fields"></a>Поля
 `BP90_FLAG_NONE`\
-Задает флаг без точки останова.
+Указывает отсутствие флага точки разрыва.
 
 `BP90_FLAG_MAP_DOCPOSITION`\
-Указывает, что модуль отладки (DE) следует сопоставить точку останова с помощью позиции документа. Это значение применимо только к точки останова в скрипт ориентированного исходных файлов таких как Active Server Pages (ASP).
+Уточняется, что движок отладки (DE) должен отобразить точку разрыва с помощью позиции документа. Это применимо только к точкам разрыва, установленным в исходных файлах, ориентированных на сценарий, таких как Active Server Pages (ASP).
 
 `BP90_FLAG_DONT_STOP`\
-Указывает, что точка останова должны обрабатываться с помощью обработчика отладки, но что модуль отладки в конечном счете следует останавливает существует; то есть [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не следует отправлять объект события. Этот флаг предназначен для использования главным образом с точки трассировки.
+Уточняется, что точка разрыва должна быть обработана двигателем отладки, но что отладка двигателя в конечном счете, не должна останавливаться на достигнутом; то есть объект события [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не должен отправляться. Этот флаг предназначен для использования в основном со следами.
 
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
-Чтобы определить, следует ли очистить состояние пошагового выполнения, используемые ядром отладки машинного кода. Он отличается от BP90_FLAG_DONT_STOP, так как BP90_FLAG_DONT_STOP не задается, если макрос выполняет точки трассировки.
+Используется нативной отладкой двигателя, чтобы определить, следует ли очищать состояние шага. Он отличается от BP90_FLAG_DONT_STOP, поскольку BP90_FLAG_DONT_STOP не устанавливается, если точка трассировки выполняет макрос.
 
 ## <a name="requirements"></a>Требования
 Заголовок: Msdbg90.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

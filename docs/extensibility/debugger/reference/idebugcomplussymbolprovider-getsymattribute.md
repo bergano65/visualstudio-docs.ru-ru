@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute | Документация Майкрософт
+title: IDebugComPlusSymbolProvider::GetSymAttribute Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d4da2269211d4ae3e61061cbd3dee5f9d5e1264
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336691"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733769"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-Извлекает отладочные символы с атрибутом заданный родительский объект для указанного модуля.
+Извлекает символы отладки с указанным родительским атрибутом для указанного модуля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,31 +52,31 @@ int GetSymAttribute (
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-[in] Идентификатор домена приложения.
+(в) Идентификатор домена приложения.
 
 `guidModule`\
-[in] Уникальный идентификатор модуля.
+(в) Уникальный идентификатор модуля.
 
 `tokParent`\
-[in] Токен для родительского атрибута.
+(в) Токен для родительского атрибута.
 
 `pstrName`\
-[in] Имя модуля.
+(в) Название модуля.
 
 `cBuffer`\
-[in] Число байтов, необходимых для выходных данных `buffer`.
+(в) Количество байтов, необходимых для вывода. `buffer`
 
 `pcBuffer`\
-[out] Длина выходного `buffer`.
+(ваут) Длина вывода `buffer`.
 
 `buffer`\
-[out] Массив, содержащий символы.
+(ваут) Массив, содержащий символы.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymAttribute(
