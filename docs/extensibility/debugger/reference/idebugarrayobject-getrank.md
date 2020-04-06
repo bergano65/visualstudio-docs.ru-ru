@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetRank | Документация Майкрософт
+title: IDebugArrayObject::GetRank Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetRank method
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a733baf1be2e5a249c214547b31465bb2464ed6
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: c645683cf1f842afdecba3c3dee8942a3fd6971a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "66351784"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736187"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
-Возвращает ранг массива, то есть число измерений.
+Получает ранг массива, то есть количество измерений.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>Параметры
 `pdwRank`\
-[out] Возвращает ранг.
+(ваут) Возвращает ранг.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Используйте [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) метод для извлечения размер каждого измерения массива объекта.
+ Используйте метод [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) для получения размера каждого измерения объекта массива.
 
 ## <a name="see-also"></a>См. также
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

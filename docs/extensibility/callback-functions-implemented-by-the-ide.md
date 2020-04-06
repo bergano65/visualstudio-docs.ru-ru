@@ -1,48 +1,48 @@
 ---
-title: Функции обратного вызова, реализованные интегрированной среды разработки | Документация Майкрософт
+title: Функции обратного вызова, реализованные IDE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739891"
 ---
-# <a name="callback-functions-implemented-by-the-ide"></a>Функции обратного вызова, реализованные интегрированной среды разработки
-Чтобы интеграция с по интегрированной среде разработки (IDE) как простой, как можно и для обеспечения единой конечных пользователей, подключаемый модуль системы управления версиями можно использовать функции обратного вызова, реализуемые интегрированной среды разработки с. Подключаемый модуль может вызывать эти функции в соответствующее время во время операции управления версиями для передачи информации в интегрированную среду разработки; Эти сведения затем можно отобразить интегрированной среды разработки как внедренные элементы в его собственном пользовательском Интерфейсе. Пользователь имеет возможность менее фрагментированных в этом сценарии, чем если подключаемый модуль используются свой UI.
+# <a name="callback-functions-implemented-by-the-ide"></a>Функции обратного вызова, реализованные IDE
+Чтобы сделать интеграцию с интегрированной средой разработки (IDE) максимально бесшовной и обеспечить единый интерфейс управления исходным управлением, плагин управления исходным управлением может использовать функции обратного вызова, которые реализуются IDE. Плагин может вызывать эти функции в соответствующее время во время операции управления исходным источником, чтобы передать информацию в IDE; IDE может отображать эту информацию в качестве встроенных элементов в своем родном uI. Пользователь имеет менее фрагментированный опыт в этом сценарии, чем если бы плагин использовал свой собственный пользовательский интерфейс.
 
- Обязательный заголовок файл *scc.h*. Расположение по умолчанию — *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* . Это также в папку VSIP, образец подключаемого модуля управления источника в *\Program Files\VSIP 8.0\MSSCCI\\* .
+ Требуемый файл *заголовка scc.h*. Местоположение по умолчанию *является «Файлы программы»VSIP 8.0»EnvSDK.common.inc\\*. Кроме того, в папке VSIP, которая имеет образец плагина управления исходным элементом на *«Программные файлы» VSIP 8.0»MSSCCI.\\*
 
-## <a name="in-this-section"></a>Содержание раздела
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) описывает функцию обратного вызова, используемый [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений из системы управления версиями, подключаемый модуль через среду IDE.
+## <a name="in-this-section"></a>В этом разделе
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Описывает функцию обратного вызова, которая используется [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений от плагина управления исходным кодом через IDE.
 
-- [POPLISTFUNC](../extensibility/poplistfunc.md) описывает функцию обратного вызова, используемый [SccPopulateList](../extensibility/sccpopulatelist-function.md) при интегрированной среды разработки не имеет полный доступ к информации, которая доступна только для системы управления версиями, подключаемый модуль, например полный список файлы в системе управления версиями.
+- [ПОПЛИСФУНК](../extensibility/poplistfunc.md) Описывает функцию обратного вызова, которая используется [SccPopulateList,](../extensibility/sccpopulatelist-function.md) когда IDE не имеет полного доступа к информации, которая доступна только плагину управления исходным кодом, например, полный список файлов под управлением версии.
 
-- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) описывает функцию обратного вызова, используемый [SccQueryChanges](../extensibility/sccquerychanges-function.md) операции.
+- [КЕРИРАЗЕВЕФУНК](../extensibility/querychangesfunc.md) Описывает функцию обратного вызова, которая используется в операции [Scc'ruryChanges.](../extensibility/sccquerychanges-function.md)
 
-- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) описывает функцию обратного вызова, используемый [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) операции.
+- [ПОПДИРЛИСТФУНК](../extensibility/popdirlistfunc.md) Описывает функцию обратного вызова, используемую в операции [SccPopulateDirList.](../extensibility/sccpopulatedirlist-function.md)
 
-- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) описывает функцию обратного вызова, установленный вызовом метода для [SccSetOption](../extensibility/sccsetoption-function.md) , позволяющий системы управления версиями, подключаемый модуль для связи имя изменения обратно в интегрированную среду разработки.
+- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) Описывает функцию обратного вызова в [SccSetOption,](../extensibility/sccsetoption-function.md) которая позволяет плагину управления исходным источником передавать изменения имен обратно в IDE.
 
-## <a name="related-sections"></a>Связанные разделы
-- [SccOpenProject](../extensibility/sccopenproject-function.md) открывает проект.
+## <a name="related-sections"></a>См. также
+- [SccOpenProject](../extensibility/sccopenproject-function.md) Открывает проект.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) проверяет список файлов для их текущее состояние. Кроме того, использует `pfnPopulate` функция уведомляет вызывающего объекта, если файл не соответствует критериям для `nCommand`.
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Изучит список файлов для их текущего состояния. Кроме того, `pfnPopulate` использует функцию для уведомления вызываемого, когда `nCommand`файл не соответствует критериям для .
 
-- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) проверяет список каталогов и файлов в проект или проекты, которые находятся в системе управления версиями. Каждый каталог и имя файла найден передается функции обратного вызова.
+- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Изучит список каталогов и файлов в проекте или проектах, накоторыехаемых под контролем источников. Каждый найденный каталог и найденное имя файла передаются функции обратного вызова.
 
-- [SccQueryChanges](../extensibility/sccquerychanges-function.md) проверяет изменения имен, которые были внесены в список файлов. Имя каждого файла передается функции обратного вызова, вместе с его состоянием изменения.
+- [СккериИзменения](../extensibility/sccquerychanges-function.md) Рассматривает изменения имен, внесенные в список файлов. Каждое имя файла передается функции обратного вызова вместе со статусом изменения.
 
-- [SccSetOption](../extensibility/sccsetoption-function.md) задает разнообразные параметры. Каждый параметр начинается с `SCC_OPT_xxx` и имеет свой собственный определенный набор значений.
+- [SccSetOption](../extensibility/sccsetoption-function.md) Устанавливает широкий спектр опций. Каждый вариант `SCC_OPT_xxx` начинается с определенного набора значений и имеет свой собственный определенный набор.
 
-- [Подключаемые модули управления источника](../extensibility/source-control-plug-ins.md) описывает содержимое в справочном разделе пакета SDK подключаемого модуля управления источника.
+- [Подключаемые модули управления исходным элементом](../extensibility/source-control-plug-ins.md) Описывает содержание справочного раздела SDK управления исходным управлением.

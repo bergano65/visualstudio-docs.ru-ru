@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::EnumChildren | Документация Майкрософт
+title: IDebugСправка2::EnumChildren Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::EnumChildren
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 432a3c25722ae7adb966efa6998c42680bd60307
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335777"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720631"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-Получение списка выбранного дочернего элемента ссылки. Зарезервировано для будущего использования.
+Получите список выбранных детей ссылки. Зарезервировано для последующего использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,22 +51,22 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-[in] Сочетание флагов из [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисления, указывающее, какие поля в перечисленных [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть заполнены.
+(в) Сочетание флагов [из DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисления, которое определяет, какие поля в перечисленных [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть заполнены.
 
 `dwRadix`\
-[in] Основание системы счисления для использования в любой числовой сведения о форматировании.
+(в) Радикс, который будет использоваться при форматировании любой численной информации.
 
 `dwAttribFilter`\
-[in] Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, используемый в качестве фильтра в сочетании с `pszNameFilter` параметр, чтобы выбрать, какие структуры, которые необходимо перечислить.
+(в) Комбинация флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, которая используется в `pszNameFilter` качестве фильтра в сочетании с параметром, чтобы выбрать, какие структуры должны быть перечислены.
 
 `pszNameFilter`\
-[in] Строка, указывающая фильтр, например «MyX», используется в сочетании с `dwAttribFilter` параметр для выбора структуры, которые необходимо перечислить.
+(в) Строка, определяющая фильтр, например "MyX", `dwAttribFilter` используемая в сочетании с параметром для выбора перечисленных структур.
 
 `dwTimeout`\
-[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+(в) Максимальное время, в миллисекундах, ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
 
 `ppEnum`\
-[out] Возвращает [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) , содержащий список свойств запрошенного дочернего.
+(ваут) Возвращает объект [IEnumDebugReferenceInfo2,](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) содержащий список запрошенных свойств ребенка.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

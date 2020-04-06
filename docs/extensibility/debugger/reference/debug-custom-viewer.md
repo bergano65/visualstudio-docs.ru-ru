@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER | Документация Майкрософт
+title: DEBUG_CUSTOM_VIEWER Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba4af7ef465a4d98f78eccc9f7dce7dd4fa43aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346185"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737542"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-Структура, определяющая пользовательское средство просмотра или введите визуализатора.
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
+Структура, идентифицирует пользовательского просмотра или ввизуализатор.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,30 +51,30 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>Участники
 `dwID`\
-Идентификатор для различения нескольких средств просмотра или визуализаторы, реализованных в одном `GUID`.
+Идентификатор для дифференцирования `GUID`нескольких зрителей или визуализаторов, реализованных одним.
 
 `bstrMenuName`\
-Текст, который будет отображаться в раскрывающемся меню.
+Текст, который появится в меню выпадения.
 
 `bstrDescription`\
-Описание пользовательское средство просмотра или тип визуализатора (должен иметь значение null, если не используется).
+Описание пользовательского просмотра или ввизуализатора (должно быть нулевая стоимость, если не используется).
 
 `guidLang`\
-Язык обеспечивает средство оценки выражений.
+Язык оценщика выражения.
 
 `guidVendor`\
-Поставщик обеспечивает средство оценки выражений.
+Поставщик оценщика выражения.
 
 `bstrMetric`\
-Метрики, под которой пользовательское средство просмотра или тип визуализатора `CLSID` хранится.
+Метрика, под которой хранится `CLSID` пользовательский зритель или визуализатор типа.
 
 ## <a name="remarks"></a>Примечания
-Возвращает список этой структуры с помощью вызова [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) метод (и, следовательно, [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод).
+Список этой структуры возвращается путем вызова метода [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) (и, соответственно, метод [GetCustomViewerList).](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

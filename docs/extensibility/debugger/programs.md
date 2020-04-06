@@ -1,43 +1,43 @@
 ---
-title: Программы | Документация Майкрософт
+title: Программы Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e70a970aad250a30e19fd27ac3a47732952b3bf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d3fd1db5add74d2d94467e1f369916feb5f30d4a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351397"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738205"
 ---
-# <a name="programs"></a>Programs
-В архитектуре отладчик *программы*:
+# <a name="programs"></a>Программы
+В архитектуре отладчика *программа:*
 
-- — Это контейнер для набора потоков и набор модулей. Программа не имеет единый аналогов в операционной системе Windows.
+- Является контейнером как для набора потоков, так и для набора модулей. Программа не имеет единой аналогии в операционной системе Windows.
 
-     Программа представляет собой подпроцесса. Например при отладке веб-сайта, сценарий можно рассматривать как программу. Во время запуска сценария в процессе написания сценария ядра, независимо от других сценариев, он также имеет свой собственный набор потоков. Отладчик (DE) присоединяет к программе, а не процесс или поток.
+     Программа является своего рода подпроцесс. Например, при отладке веб-узла скрипт можно рассматривать как программу. В то время как скрипт работает в процессе создания скриптов, независимо от других скриптов, он также имеет свой собственный набор потоков. Отладка двигателя (DE) прикрепляется к программе, а не к процессу или потоку.
 
-- Можно указать сам и процесс, в котором он выполняется в. Программы можно прикреплять к, следует отсоединить от и описывают DE, создавшего его, если таковые имеются. Программу можно также выполнить, остановить, продолжить и быть завершен.
+- Может идентифицировать себя и процесс, в который он работает. Программа может быть прикреплена к, быть отделена от, и описать DE, который создал его, если таковые имеется. Программа также может выполняться, останавливаться, продолжать и быть прекращена.
 
-- Можно перечислить все потоки. Программа также может предоставлять собственный поток Дизассемблированный код и можно перечислить все контексты кода для положения данного документа.
+- Можно перечислить все его потоки. Программа также может предоставить свой собственный поток разборок и перечислить все контексты кода данной позиции документа.
 
-- Представленный [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) интерфейс, созданный до исполняемой программы или в ходе процесса присоединения в зависимости от реализации. При порт перечисляет программы процесса, каждая программа создается в соответствии с соответствующей [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс, передается в качестве аргумента для [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Хотя отладчиков также создать `IDebugProgram2` интерфейсы для представления программы эти программы не создаются в соответствии с узлом программы. `IDebugProgramNode2` Интерфейсы, созданные DE используются для фактического отладки, то время как созданные порт используются только для обнаружения, какие программы работают в процессе.
+- Представлен интерфейсом [IDebugProgram2,](../../extensibility/debugger/reference/idebugprogram2.md) созданным до присоединения программы или как часть процесса присоединения, в зависимости от реализации. Когда порт перечисляет программы процесса, каждая программа создается в соответствии с соответствующим интерфейсом [IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) передаваемым в качестве аргумента [addProgramNode.](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) В то время `IDebugProgram2` как отладка двигателей также создавать интерфейсы для представления программ, эти программы не создаются в соответствии с узлом программы. Интерфейсы, `IDebugProgramNode2` созданные DE, используются для фактической отладки, в то время как интерфейсы, созданные портом, используются только для обнаружения, какие программы работают в процессе.
 
 ## <a name="see-also"></a>См. также
-- [Процессы](../../extensibility/debugger/processes.md)
+- [Процессов](../../extensibility/debugger/processes.md)
 - [Узлы программы](../../extensibility/debugger/program-nodes.md)
 - [Модули](../../extensibility/debugger/modules.md)
-- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)
-- [Отладка ядра](../../extensibility/debugger/debug-engine.md)
-- [Позиция в документе](../../extensibility/debugger/document-position.md)
+- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md)
+- [Двигатель debug](../../extensibility/debugger/debug-engine.md)
+- [Позиция документа](../../extensibility/debugger/document-position.md)
 - [Контекст кода](../../extensibility/debugger/code-context.md)
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: IDebugBreakpointRequest2::GetRequestInfo Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352900"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734937"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-Получает сведения о запросе точки останова, описывающее этот запрос точки останова.
+Получает информацию о запросе точки разрыва, описывающая этот запрос точки разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetRequestInfo( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-[in] Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, определяющее, какие поля в `pBPRequestInfo` параметр должны заполняться.
+(в) Комбинация флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, определяющая, `pBPRequestInfo` какие поля в параметре должны быть заполнены.
 
 `pBPRequestInfo`\
-[out] Указывает [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структуры необходимо заполнить описание запроса точки останова.
+(ваут) Укажите [структуру BP_REQUEST_INFO,](../../../extensibility/debugger/reference/bp-request-info.md) которая должна быть заполнена с описанием запроса точки разрыва.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как реализовать этот метод для простого `CDebugBreakpointRequest` объекта, который предоставляет [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейс.
+ В следующем примере показано, как `CDebugBreakpointRequest` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(

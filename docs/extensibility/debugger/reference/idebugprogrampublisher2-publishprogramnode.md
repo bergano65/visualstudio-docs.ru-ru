@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgramNode | Документация Майкрософт
+title: IDebugProgramPublisher2::PublishProgramNode Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b0611b723b649fd8d899af427c6b41fb5db1e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343286"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721667"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
-Делает узел программы доступными для использования отладчиков (DEs) и сеанс отладки manager (SDM).
+Делает узло программы доступным для использования двигателями отладки (DEs) и диспетчером отладки сеанса (SDM).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int PublishProgramNode(
 
 ## <a name="parameters"></a>Параметры
 `pProgramNode`\
-[in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющий узел программы, чтобы сделать доступными.
+(в) Объект [IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) представляющий узла программы для доступности.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод позволяет программам требуется запросить сведения до выбора и запуска их для отладки.
+ Этот метод позволяет запрашивать информацию перед выбором и запуском программ для отладки.
 
- Чтобы удалить узел программы с доступностью, вызовите [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) метод.
+ Чтобы удалить узла программы из наличия, позвоните в метод [UnpublishProgramNode.](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

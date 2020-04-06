@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
+title: IDebugBreakpointRequest2:GetLocationType Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetLocationType
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c298bd220547c2faa6315ae7c06f9495368b62e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 06bb64190d6821b05ebd638c753bd2b6d3decf71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352967"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734996"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-Возвращает тип местоположения точки останова этого запроса точки останова.
+Получает тип определения местоположения точки разрыва этого запроса точки разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetLocationType(
 
 ## <a name="parameters"></a>Параметры
 `pBPLocationType`\
-[out] Возвращает значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, которое описывает расположение этого запроса точки останова.
+(ваут) Возвращает значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, описывающий местоположение этого запроса точки разрыва.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_FAIL` Если `bpLocation` в соответствующем поле [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структура не является допустимой.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает, `E_FAIL` `bpLocation` если поле в связанной [структуре BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) недействительно.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для простого `CDebugBreakpointRequest` объекта, который предоставляет[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейс.
+В следующем примере показано, как `CDebugBreakpointRequest` реализовать этот метод для простого объекта, который предоставляет интерфейс[IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)

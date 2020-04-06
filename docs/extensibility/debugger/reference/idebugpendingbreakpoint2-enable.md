@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Документация Майкрософт
+title: IDebugPendingBreakpoint2::Включить Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311682"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725891"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Переключает состояние выполнения ожидающая точка останова.
+Переключает включенное состояние ожидающего разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,18 +42,18 @@ int Enable(
 
 ## <a name="parameters"></a>Параметры
 `fEnable`\
-[in] Задайте ненулевое значение (`TRUE`) чтобы включить точку останова или до нуля (`FALSE`) для отключения.
+(в) Установите на`TRUE`nonzero () для включения ожидающей`FALSE`стадии разрыва, или до нуля () для отключать.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
 
 ## <a name="remarks"></a>Примечания
-Если ожидающая точка останова включена или отключена, все точки останова, привязанный из его присваивается то же состояние.
+При включении или отключении ожидающего разрыва все точки разрыва, связанные с ней, устанавливаются в одно и то же состояние.
 
-Этот метод может вызываться столько раз, при необходимости, даже в том случае, если точка останова уже включен или отключен.
+Этот метод можно вызвать столько раз, сколько необходимо, даже если точка разрыва уже включена или отключена.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.
+В следующем примере показано, как `CPendingBreakpoint` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)

@@ -1,30 +1,30 @@
 ---
-title: Поля m_children | Документация Майкрософт
+title: поле m_children Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab6446b18350fe1f11e0b164d9eb4bff39035ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330889"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738426"
 ---
-# <a name="mchildren-field"></a>m_children field
-Список дочерних задач, которые зарегистрированы с помощью этой задачи.
+# <a name="m_children-field"></a>m_children поле
+Список детских задач, зарегистрированных с этой задачей.
 
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+ Поскольку вы не можете получить доступ к этому внутреннему члену из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,9 +33,9 @@ ms.locfileid: "66330889"
 ```
 
 ## <a name="remarks"></a>Примечания
- Пока выполняется задача, только потоку, который выполняет задачу должен получить доступ к этот массив.
+ В то время как задача выполняется, только поток, выполняемый задачей, должен получить доступ к этому массиву.
 
- Если задача завершена, другие потоки могут обращаться к этому полю, пока они не ничего добавлять к нему или удалить любой элемент из него.
+ Если задача выполнена, другие потоки могут получить доступ к этому полю до тех пор, пока они ничего не добавят к нему или удалит что-либо из него.
 
 ## <a name="see-also"></a>См. также
 - [Класс ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

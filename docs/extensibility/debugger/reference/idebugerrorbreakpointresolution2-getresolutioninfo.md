@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: IDebugErrorОшибкаРазрешение2:GetResolutionInfo Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fefea5081278800b330dac665862a360b4a0c15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327826"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730033"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-Возвращает сведения об устранении ошибки точки останова.
+Получает информацию об разрешении ошибок точки разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-[in] Сочетание флагов из [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисление, определите, какие поля из `pErrorResolutionInfo` , для заполнения.
+(в) Сочетание флагов [из BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисления, определяющих, какие поля должны быть `pErrorResolutionInfo` заполнены.
 
 `pErrorResolutionInfo`\
-[in, out] [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры, который заполняется описание разрешение точек останова.
+(в, вне) Структура [BP_ERROR_RESOLUTION_INFO,](../../../extensibility/debugger/reference/bp-error-resolution-info.md) заполненная описанием разрешения точки разрыва.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере реализуется этот метод для простого `CDebugErrorBreakpointResolution` объекта, который предоставляет [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) интерфейс.
+Следующий пример реализует этот метод `CDebugErrorBreakpointResolution` для простого объекта, который предоставляет интерфейс [IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2 | Документация Майкрософт
+title: IDebugДокументТекст2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2 interface
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43716ce3b01464d2937fd75ce90ec5028679ef47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b5def7f6cc4ac5ced91ca0a273ce750003dca20
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330644"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731559"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
-Этот интерфейс представляет текстовый документ.
+Этот интерфейс представляет собой текстовый документ.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,27 +28,27 @@ ms.locfileid: "66330644"
 IDebugDocumentText2 : IDebugDocument2
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Отладчик (DE) реализует этот интерфейс, когда исходный код, которым требуется предоставить в виде текста. Так как это наиболее распространенный случай, если реализует DE [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) интерфейс, он должен также реализовывать `IDebugDocumentText2` интерфейс.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Отладка двигателя (DE) реализует этот интерфейс, когда исходный код, необходимый для поставки в текстовой форме. Так как это наиболее типичный случай, если DE реализует интерфейс [IDebugDocument2,](../../../extensibility/debugger/reference/idebugdocument2.md) он также должен реализовать `IDebugDocumentText2` интерфейс.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Используйте `QueryInterface` метод для получения этого интерфейса из `IDebugDocument2` интерфейс.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Используйте `QueryInterface` метод, чтобы получить `IDebugDocument2` этот интерфейс из интерфейса.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на `IDebugDocument2` интерфейс, этот интерфейс реализует следующие методы:
+ В дополнение к методам `IDebugDocument2` на интерфейсе, этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Получает размер текста в этой позиции в документе.|
-|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Получение текста из указанной позиции в документе.|
+|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Извлекает размер текста в этой позиции в документе.|
+|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Извлекает текст из указанной позиции в документе.|
 
 ## <a name="remarks"></a>Примечания
- Объект, реализующий этот интерфейс также необходимо реализовать <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> интерфейс предоставляет <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> интерфейс для [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) объекта.
+ Объект, реализуемый в <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> этом интерфейсе, должен также реализовать интерфейс, который предоставляет <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> интерфейс для объекта [IDebugDocumentTextEvents2.](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

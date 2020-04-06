@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Документация Майкрософт
+title: MACHINE_INFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO structure
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e50fe4901ebcbf008bf191226502ccac8ec4cf5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339228"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714552"
 ---
-# <a name="machineinfo"></a>MACHINE_INFO
-Описание конкретного компьютера.
+# <a name="machine_info"></a>MACHINE_INFO
+Описывает конкретную машину.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,21 +45,21 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>Участники
  `Fields`\
- Сочетание флагов из [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) перечисление, указать, какие поля структуры инициализируются.
+ Комбинация флагов [из MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) перечисления, которые определяют, какие поля структуры инициализированы.
 
  `bstrName`\
- Имя компьютера. Аналогичен вызову [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
+ Имя компьютера. Эквивалент вызова [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
 
  `Flags`\
- Сочетание флагов из [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) перечисление, описывающее атрибуты компьютера.
+ Комбинация флагов из [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) перечисления, описывающие атрибуты машины.
 
 ## <a name="remarks"></a>Примечания
- Эта структура возвращается путем вызова [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) метод.
+ Эта структура возвращается по вызову к методу [GetMachineInfo.](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

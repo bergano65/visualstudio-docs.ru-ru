@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3 | Документация Майкрософт
+title: IDebugModule3 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3 interface
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 582c6fa887062986ccd1b66c7f3466b89407bcca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323756"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726743"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
-Этот интерфейс представляет модуль, который поддерживает альтернативные расположения символов и JustMyCode состояний.
+Этот интерфейс представляет собой модуль, поддерживающий альтернативные местоположения символов и состояния JustMyCode.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,29 +28,29 @@ ms.locfileid: "66323756"
 IDebugModule3 : IDebugModule2
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс для поддержки альтернативные расположения символов и для работы с состояниями JustMyCode (см. в разделе [глоссарий отладчика Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) определение «JustMyCode»).
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Отладка двигателя (DE) реализует этот интерфейс для поддержки альтернативных местоположений символов и для работы с JustMyCode государств (см. [Visual Studio Debugger Glossary](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) для определения "JustMyCode").
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызов [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) возвращает этот интерфейс. Отправляет DE [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) интерфейс для сеанса отладки manager (SDM) с помощью [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) метод. Кроме того, вызов [QueryInterface](/cpp/atl/queryinterface) на [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) интерфейс возвращает этот интерфейс.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Звонок в [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) возвращает этот интерфейс. DE отправляет интерфейс [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) менеджеру отладки сеанса (SDM) с помощью метода [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Кроме того, звонок [в QueryInterface](/cpp/atl/queryinterface) на интерфейсе [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) возвращает этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) интерфейс, этот интерфейс реализует следующие методы:
+ В дополнение к методам на интерфейсе [IDebugModule2,](../../../extensibility/debugger/reference/idebugmodule2.md) этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Возвращает список путей поиска символов и результаты поиска каждого пути.|
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Загружает и инициализирует символов для текущего модуля.|
-|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Возвращает флаг, указывающий, представляет ли модуль пользовательским кодом.|
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Указывает, следует ли учитывать модуль пользовательским кодом или нет.|
+|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Возвращает список путей, иснаемых для символов, и результаты поиска каждого пути.|
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Загружает и инициализирует символы для текущего модуля.|
+|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Возвращает флаг с указанием того, представляет ли модуль код пользователя.|
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Уточняется, следует ли считать модуль кодом пользователя или нет.|
 
 ## <a name="remarks"></a>Примечания
- Visual Studio является типичного потребителя этого интерфейса.
+ Visual Studio является типичным потребителем этого интерфейса.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

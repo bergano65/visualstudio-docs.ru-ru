@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Документация Майкрософт
+title: IDebugExpressionОценор::SetLocale Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18d0dbde0d04dcdf42b3e1fbd19841645036e5bf
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 57ddee6e1796159c505b67982f25d1ba09684561
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "66325669"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729474"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-Этот метод задает язык, используемый для создания печатного результатов.
+Этот метод устанавливает язык для использования для создания результатов печати.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int SetLocale(
 
 ## <a name="parameters"></a>Параметры
 `wLangID`\
-[in] Идентификатор языка.
+(в) Идентификатор языка.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод может вызываться многократно хотя средство оценки выражений (EE) загружается, поэтому EE должен иметь возможность переключения языков в режиме реального времени. EE использует этот языковой стандарт для возврата сообщения об ошибках и строки на соответствующем языке.
+ Этот метод можно вызвать много раз, пока загружается оценщик выражения (EE), поэтому EE должна быть в состоянии переключать языки на лету. EE использует этот локаль для возврата сообщений об ошибках и строк на соответствующем языке.
 
 ## <a name="see-also"></a>См. также
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

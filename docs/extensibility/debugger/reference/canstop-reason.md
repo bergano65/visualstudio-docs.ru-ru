@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Документация Майкрософт
+title: CANSTOP_REASON Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327254"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737682"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
-Используется для определения того, если программы можно остановить выполнение после достижения определенной точке выполнения.
+# <a name="canstop_reason"></a>CANSTOP_REASON
+Используется для определения того, может ли программа остановить выполнение после достижения определенной точки в выполнении.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,15 +47,15 @@ public enum enum_CANSTOP_REASON {
 Определяет точку входа данной программы.
 
 `CANSTOP_STEPIN`\
-Указывает, шаг с заходом в функцию.
+Определяет шаг в функцию.
 
 ## <a name="remarks"></a>Примечания
-Передается в качестве аргумента для [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) метод подтверждения с сеанса отладки Manager (SDM), если необходимо остановить после достижения точки входа программы или шаг с заходом в функции или метода.
+Прошел в качестве аргумента в метод [GetReason,](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) чтобы подтвердить с диспетчером дебуга сеанса (SDM), если это нормально, чтобы остановить после достижения точки входа в программу или после вступления в функцию или метод.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

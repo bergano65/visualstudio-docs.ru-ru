@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName | Документация Майкрософт
+title: IDebugProgramNode2::GetProgramName Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetProgramName
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9882bd1686498bd9d1afc27f3a7edb695226a2f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351109"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721999"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
-Возвращает имя программы.
+Получает название программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetProgramName (
 
 ## <a name="parameters"></a>Параметры
 `pbstrProgramName`\
-[out] Возвращает имя программы.
+(ваут) Возвращает название программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-Имя программы не то же самое, что путь к программе, несмотря на то, что имя программы может быть частью такой путь.
+Название программы не то же самое, что путь к программе, хотя название программы может быть частью такого пути.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для простого `CProgram` объект, реализующий [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс. `MakeBstr` Функция выделяет копию указанной строки как BSTR.
+В следующем примере показано, как `CProgram` реализовать этот метод для простого объекта, который реализует интерфейс [IDebugProgramNode2.](../../../extensibility/debugger/reference/idebugprogramnode2.md) Функция `MakeBstr` выделяет копию указанной строки в виде BSTR.
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {

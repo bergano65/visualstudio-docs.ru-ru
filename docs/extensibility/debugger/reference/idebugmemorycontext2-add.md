@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Add | Документация Майкрософт
+title: IDebugMemoryКонтекст2::Добавить Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Add method
 - Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1cafbf22e51f867948491e2925c085bd387ea84
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a21fa2ec6d48bb1d6bf17bbc0d2ebf0d90a25a9f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347089"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727483"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
-Добавляет указанное значение к текущему контексту и возвращает новый контекст.
+Добавляет указанное значение в текущий контекст и возвращает новый контекст.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,18 +44,18 @@ int Add(
 
 ## <a name="parameters"></a>Параметры
 `dwCount`\
-[in] Значение, добавляемое к текущему контексту.
+(в) Значение для добавления к текущему контексту.
 
 `ppMemCxt`\
-[out] Возвращает новый [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объекта.
+(ваут) Возвращает новый объект [IDebugMemoryContext2.](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Контекст памяти — это адрес, поэтому добавление значения в адрес создает новый адрес, который требуется новый интерфейс контекста.
+ Контекст памяти — это адрес, поэтому добавление значения к адресу создает новый адрес, требующий нового интерфейса контекста.
 
- Этот метод всегда должен создавать новый контекст, даже если Итоговый адрес находится вне области памяти, связанный с данным контекстом. Единственное исключение — если недостаточно памяти, выделяемой для нового контекста или `ppMemCxt` имеет нулевое значение (который является ошибкой).
+ Этот метод должен всегда создавать новый контекст, даже если полученный адрес находится за пределами пространства памяти, связанного с этим контекстом. Единственным исключением является, если память не может быть `ppMemCxt` выделена для нового контекста или если это нулевое значение (что является ошибкой).
 
 ## <a name="see-also"></a>См. также
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

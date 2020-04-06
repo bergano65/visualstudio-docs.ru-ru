@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Документация Майкрософт
+title: IDebugCoreServer3:CreateInstanceServer Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::CreateInstanceInServer
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e74ea66f5b8ecd04acfbc2617f91bcaf0f7ecbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332412"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733017"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
-Создает экземпляр модуля отладки на сервере.
+Создает экземпляр отладки двигателя на сервере.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,23 +49,23 @@ int CreateInstanceInServer(
 
 ## <a name="parameters"></a>Параметры
 `szDll`\
-[in] Путь к dll, реализующим CLSID, указанный в `clsidObject` параметра. Если это `NULL`, затем COM `CoCreateInstance` функция вызывается.
+(в) Путь к dll, который реализует CLSID, указанный в параметре. `clsidObject` Если это `NULL`так, то `CoCreateInstance` функция COM называется.
 
 `wLangId`\
-[in] Языковой стандарт модуля отладки. Это может быть 0, если [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) не следует вызывать метод.
+(в) Локаль двигателя отладки. Это может быть 0, если метод [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) не должен быть вызван.
 
 `clsidObject`\
-[in] CLSID для обработчика отладки, чтобы создать.
+(в) CLSID отладки двигателя для создания.
 
 `riid`\
-[in] Идентификатор интерфейса указанного интерфейса для извлечения из объекта класса.
+(в) Идентификатор интерфейса конкретного интерфейса для извлечения из объекта класса.
 
 `ppvObject`\
-[out] `IUnknown` интерфейс из экземпляра объекта. Приведите или упаковывает и передает этот объект для требуемого интерфейса.
+(ваут) `IUnknown` интерфейс от мгновенного объекта. Влите или маршал этот объект к желаемому интерфейсу.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
-- [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)
+- [Setlocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

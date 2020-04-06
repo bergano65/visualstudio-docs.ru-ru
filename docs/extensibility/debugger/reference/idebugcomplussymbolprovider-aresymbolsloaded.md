@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Документация Майкрософт
+title: IDebugComPlusSymbolProvider::AreSymbolsЗагружено (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 452cfb7758b110621ead9bc9e7e71f9bfab1e924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338839"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734163"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-Определяет, если для указанного модуля, заданному идентификатору домена приложения загружаются символы отладки.
+Определяет, загружаются ли символы отладки для указанного модуля с учетом идентификатора домена приложения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,16 +42,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-[in] Идентификатор домена приложения.
+(в) Идентификатор для домена приложения.
 
 `guidModule`\
-[in] Уникальный идентификатор для модуля.
+(в) Уникальный идентификатор для модуля.
 
 ## <a name="return-value"></a>Возвращаемое значение
-Если отладочные символы загружены, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.
+Если символы отладки `S_OK`загружены, возвращается ; в противном случае, возвращается `S_FALSE`.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(

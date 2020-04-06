@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Документация Майкрософт
+title: IDebugProgramPublisher2::PоблишьЕПрограмма Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d4f0b279bafe5291679237efdaada7907ddc515
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343372"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721682"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Этот метод выполняет программу для отладчиков (DEs) и диспетчер отладки сеансов.
+Этот метод делает программу доступной для отладки двигателей (DEs) и диспетчера отладки сеанса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ int PublishProgram(
 
 ## <a name="parameters"></a>Параметры
 `Engines`\
-[in] Массив идентификаторов GUID для DEs, которые можно запустить или присоединить к этой программе.
+(в) Массив GUIDдля для DEs, которые могут запускать или прикрепляться к этой программе.
 
 `szFriendlyName`\
-[in] Понятное имя для программы (отображается в меню и диалоговых окон, показываемых пользователю).
+(в) Дружественное название программы (это появляется в меню или диалогах, представленных пользователю).
 
 `pDebuggeeInterface`\
-[in] `IUnknown` интерфейс для программы (это значение используется как файл cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программа)
+(в) `IUnknown` интерфейс для программы (это значение используется в качестве cookie для однозначного определения программы; это же значение используется для "непубликации" программы)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Чтобы сделать программу более не доступны для отладки, вызовите [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
+ Чтобы сделать программу недоступной для отладки, позвоните [в UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

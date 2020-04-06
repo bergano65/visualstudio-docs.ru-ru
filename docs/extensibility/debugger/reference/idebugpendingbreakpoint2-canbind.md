@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Документация Майкрософт
+title: IDebugPendingBreakpoint2::CanBind Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::CanBind method
 - CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9325d8a0c8ee39aec6f8ceccb5bbb894eef2163
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07625f7249092e2de3d3dccaaef31a2869755e36
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311734"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725976"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-Определяет ли этот ожидающая точка останова можно привязать к расположение кода.
+Определяет, может ли эта незавершенная точка разрыва связываться с местоположением кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,16 +42,16 @@ int CanBind ( 
 
 ## <a name="parameters"></a>Параметры
 `ppErrorEnum`\
-[out] Возвращает [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) , содержащий список [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) объектов, если могут возникнуть ошибки.
+(ваут) Возвращает объект [IEnumDebugErrorBreakpoints2,](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) содержащий список объектов [IDebugErrorBreakpoint2,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) если могут быть ошибки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK.` возвращает `S_FALSE` Если не удается привязать точку останова, в этом случае ошибки возвращаются по `ppErrorEnum` параметр. В противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.
+ В случае `S_OK.` успеха `S_FALSE` возвращается, если точка разрыва не может связаться, и в этом случае ошибки возвращаются по параметру. `ppErrorEnum` В противном случае возвращается код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
 
 ## <a name="remarks"></a>Примечания
- Этот метод вызывается для определения того, что произошло бы, если это ожидающее точка останова был привязан. Вызовите [привязать](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) метод для реальной привязки ожидающая точка останова.
+ Этот метод называется для определения того, что произойдет, если эта точка разрыва не будет связана. Вызов метода [Bind,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) чтобы фактически связать ожидавную точку разрыва.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.
+ В следующем примере показано, как `CPendingBreakpoint` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)

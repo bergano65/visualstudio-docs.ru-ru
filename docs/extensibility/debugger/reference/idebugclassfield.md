@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField | Документация Майкрософт
+title: IDebugClassField Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField interface
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d01ee3867481b8ab9bb100f2623c1197492666
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11b0e4cd7c851e65edf299f45ec97273804c25d8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329455"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734291"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 Этот интерфейс представляет класс как тип.
@@ -28,30 +28,30 @@ ms.locfileid: "66329455"
 IDebugClassField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс. Этот интерфейс является специализацией, представляющий тип класса.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик символов реализует этот интерфейс на том же объекте, который реализует интерфейс [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md) Этот интерфейс представляет собой специализацию, представляющую тип класса.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Число интерфейсов, которые имеют методы, которые могут возвращать эту интерфейс, включая [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md). Кроме того, можно использовать [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод возвращает флаг `FIELD_TYPE_CLASS`.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Ряд интерфейсов имеют методы, которые могут вернуть этот интерфейс, включая [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md). Кроме того, вы можете использовать [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из интерфейса `FIELD_TYPE_CLASS` [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) если метод [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает флаг.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейсы, этот интерфейс реализует следующее:
+ В дополнение к методам на интерфейсах [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) этот интерфейс реализует следующие:
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|Создает перечислитель для базовых классов данного класса.|
-|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|Определяет, если конкретный интерфейс определен в классе.|
-|[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|Создает перечислитель для вложенных классов данного класса.|
-|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|Возвращает класс, который содержит этот класс.|
-|[EnumInterfacesImplemented](../../../extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented.md)|Создает перечислитель для интерфейсов, реализованных данным классом.|
-|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|Создает перечислитель для конструкторов этого класса.|
-|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|Получает имя индексатора по умолчанию.|
-|[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|Создает перечислитель для вложенных перечислителей этого класса.|
+|[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|Создает регистратор для базовых классов этого класса.|
+|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|Определяется, определяется ли определенный интерфейс в классе.|
+|[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|Создает регистратор для вложенных классов этого класса.|
+|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|Получает класс, который примыкает к этому классу.|
+|[EnumInterfacesImplemented](../../../extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented.md)|Создает регистратор для интерфейсов, реализованных этим классом.|
+|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|Создает регистратор для конструкторов этого класса.|
+|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|Получает имя индекса по умолчанию.|
+|[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|Создает регистратор для вложенных регистраторов этого класса.|
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

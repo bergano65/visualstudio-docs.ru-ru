@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField | Документация Майкрософт
+title: IDebugObject2::GetField Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetField method
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e491d98219f1cbb105af653dee15f25bb246c2d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317324"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726223"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Возвращает тип этого объекта.
+Получает тип этого объекта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetField(
 
 ## <a name="parameters"></a>Параметры
 `ppField`\
-[out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект в противном случае значение null.
+(ваут) Возвращает объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) если не нулевое значение.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
  Поле описывает тип объекта.

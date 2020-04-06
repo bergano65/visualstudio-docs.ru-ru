@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetState | Документация Майкрософт
+title: IDebugPendingBreakpoint2::GetState Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - GetState method
 - IDebugPendingBreakpoint2::GetState method
 ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 84ee5c48a74fa9ed707cc55be3cbc1ab49940552
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ad65ff6fcebb18ac1b8852c08195e9a8b062749
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347778"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725751"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
-Получает состояние ожидающая точка останова.
+Получает состояние ожидающего разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,10 +42,10 @@ int GetState( 
 
 ## <a name="parameters"></a>Параметры
 `pState`\
-[in, out] Объект [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структуры, который заполняется это описание ожидающих точек останова.
+(в, вне) Структура [PENDING_BP_STATE_INFO,](../../../extensibility/debugger/reference/pending-bp-state-info.md) заполненная описанием этой ожидающего разрыва.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

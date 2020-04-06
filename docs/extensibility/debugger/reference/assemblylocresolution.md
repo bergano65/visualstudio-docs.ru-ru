@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Документация Майкрософт
+title: АССЕМСЛОКОЦИЯ (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327382"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738135"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Определяет расположение сборки.
+Определяет, где находится сборка.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,26 +48,26 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 
 ## <a name="fields"></a>Поля
 `ALR_NAME`\
-Сборка расположена в текущем пространстве имен.
+Сборка находится в текущем пространстве имен.
 
 `ALR_USERDIR`\
-Сборка расположена в каталоге пользователя.
+Сборка находится в каталоге пользователей.
 
 `ALR_SHAREDDIR`\
-Сборка расположена в общий каталог.
+Сборка находится в общем каталоге.
 
 `ALR_REMOTEDIR`\
 Сборка расположена в удаленном каталоге.
 
 ## <a name="remarks"></a>Примечания
-Эти значения возвращаются [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) и [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) методы.
+Эти значения возвращаются методами [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) и [GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
 
-Эти значения могут объединяться с помощью `OR` операции.
+Эти значения можно комбинировать с операцией. `OR`
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+title: IPropertyProxyEEside::GetManagedViewerCreationData (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 435f6924948ab1273abbded633bcce757b57d9b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329515"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714964"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Извлекает сведения о средстве просмотра для этого типа свойства для создания экземпляра этого средства просмотра.
+Извлекает информацию о зрителе для этого типа свойств, чтобы мгновенно увечить этого зрителя.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,28 +51,28 @@ int GetManagedViewerCreationData(
 
 ## <a name="parameters"></a>Параметры
 `assemName`\
-[out] Возвращает имя сборки, содержащий этот объект.
+(ваут) Возвращает название сборки, вмещаемых этим объектом.
 
 `assemBytes`\
-[out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если ни одного байта доступны).
+(ваут) Возвращает объект [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) содержащий байты сборки этого объекта (это нулевая величина, если байты отсутствуют).
 
 `assemPdb`\
-[out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это та значение null, если нет хранилища символов).
+(ваут) Возвращает `IEEDataStorage` объект, содержащий информацию о хранилище символов для этого объекта (это нулевое значение, если нет хранилища символов).
 
 `className`\
-[out] Возвращает имя класса, содержащий этот объект.
+(ваут) Возвращает имя класса, содержащее этот объект.
 
 `alr`\
-[out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение сборки.
+(ваут) Возвращает значение из [перечисления ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) с указанием местоположения сборки.
 
 `replacementOk`\
-[out] Возвращает ненулевое значение (`TRUE`), если значение этого объекта можно изменить; ноль (`FALSE`), если объект доступен только для чтения.
+(ваут) Возвращает ненулевой (`TRUE`), если значение этого объекта может быть изменено; ноль`FALSE`(), если объект читается только.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод используется с визуализаторами типов для создания экземпляра управляемого средство просмотра.
+ Этот метод используется визуализаторами типа для мгновенного мгновенного управляемого зрителя.
 
 ## <a name="see-also"></a>См. также
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

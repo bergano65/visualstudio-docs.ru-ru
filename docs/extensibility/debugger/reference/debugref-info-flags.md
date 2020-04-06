@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Документация Майкрософт
+title: DEBUGREF_INFO_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318359"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737388"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Указывает, какую информацию нужно извлечь сведения об объекте debug ссылку.
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
+Определяет, какую информацию получить об объекте отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -58,43 +58,43 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Поля
 `DEBUGREF_INFO_NAME`\
-Инициализация и использование `bstrName` в структуре.
+Инициализация/использование `bstrName` поля в структуре.
 
 `DEBUGREF_INFO_TYPE`\
-Инициализация и использование `bstrType` в структуре.
+Инициализация/использование `bstrType` поля в структуре.
 
 `DEBUGREF_INFO_VALUE`\
-Инициализация и использование `bstrValue` в структуре.
+Инициализация/использование `bstrValue` поля в структуре.
 
 `DEBUGREF_INFO_ATTRIB`\
-Инициализация и использование `dwAttrib` в структуре.
+Инициализация/использование `dwAttrib` поля в структуре.
 
 `DEBUGREF_INFO_REFTYPE`\
-Инициализация и использование `dwRefType` в структуре.
+Инициализация/использование `dwRefType` поля в структуре.
 
 `DEBUGREF_INFO_REF`\
-Инициализация и использование `pReference` в структуре.
+Инициализация/использование `pReference` поля в структуре.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-Поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
+Поле значений должно содержать автоматическое расширенное значение, если доступно, для этого типа объекта.
 
 `DEBUGREF_INFO_NONE`\
-Указывает, что флаги не установлены.
+Означает, что флаги не установлены.
 
 `DEBUGREF_INFO_ALL`\
-Указывает маску флагов.
+Указывает на маску флагов.
 
 ## <a name="remarks"></a>Примечания
-Эти флаги передаются [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) методы, чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.
+Эти флаги передаются методам [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo,](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.
 
-Используется для `dwFields` членом `DEBUG_REFERENCE_INFO` структура указывает, какие поля используются и допустимым при возвращении структуры.
+Используется для `dwFields` члена `DEBUG_REFERENCE_INFO` структуры для указания того, какие поля используются и действительны при возврате структуры.
 
-Эти значения могут объединяться с побитовым объектом `OR`.
+Эти значения могут быть объединены `OR`с bitwise .
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

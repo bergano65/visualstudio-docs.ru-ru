@@ -1,57 +1,57 @@
 ---
-title: Связывание точек останова | Документация Майкрософт
+title: Связывание брейк-пойнтов Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f861875e15a9051ab05d1b7398ea5902189830b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 680cff398a43d1ebe9ccf061ad42781500c7cf01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332570"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739230"
 ---
-# <a name="bind-breakpoints"></a>Привязка точки останова
-Если пользователь устанавливает точку останова, возможно, нажав клавишу **F9**, среда IDE формирует запрос и запрашивает у сеанса отладки, чтобы создать точку останова.
+# <a name="bind-breakpoints"></a>Связать точки разрыва
+Если пользователь устанавливает точку разрыва, возможно, нажав **F9,** IDE формулирует запрос и подсказывает сеанс отладки для создания точки разрыва.
 
 ## <a name="set-a-breakpoint"></a>Установка точки останова
- Задание точки останова — это двухэтапный процесс, так как код или данные, влияет точка останова, еще недоступен. Во-первых точки останова должны быть описаны, и затем, как кода или данных становится доступной, она должна быть привязана к этого кода или данных, следующим образом:
+ Установка точки разрыва — это двухэтапный процесс, поскольку код или данные, затронутые точкой разрыва, могут быть еще недоступны. Во-первых, точка разрыва должна быть описана, а затем, по мере поступления кода или данных, она должна быть привязана к этому коду или данным следующим образом:
 
-1. Точка останова запрашивается из соответствующих отладчики (DEs) и затем точку останова связанный код или данные, что она станет доступной.
+1. Точка разрыва запрашивается у соответствующих отладительных двигателей (DE), а затем точка разрыва привязана к коду или данным по мере ее поступления.
 
-2. Точка останова запрос отправляется в сеанс отладки, который отправляет его на всех соответствующих DEs. Любой DE, выбирает для обработки точки останова создает соответствующий ожидающих точек останова.
+2. Запрос точки разрыва отправляется на сеанс отладки, который отправляет его всем соответствующим DEs. Любой DE, который выбирает для обработки точки разрыва, создает соответствующую точку ожидания.
 
-3. Сеанс отладки собирает ожидающих точек останова и отправляет их обратно на отладочный пакет (компонент отладки Visual Studio).
+3. Сеанс отладки собирает ожидающие сячки и отправляет их обратно в пакет отладки (компонент отладки Visual Studio).
 
-4. Размер пакета отладки запрашивает сеанса отладки для привязки к коду или данным ожидающая точка останова. Сеанс отладки отправляет этот запрос на все соответствующие DEs.
+4. Пакет отладки побуждает сеанс отладки привязать отложенную точку разрыва к коду или данным. Сеанс отладки отправляет этот запрос всем соответствующим DEs.
 
-5. Если DE способен выполнять привязку точки останова, отправленному им точку останова привязки событий к сеансу отладки. Если нет, он отправляет событие ошибки точки останова.
+5. Если DE способен связать точку разрыва, он отправляет событие, связанное с точкой разрыва, обратно в сеанс отладки. Если нет, он отправляет событие ошибки точки разрыва вместо этого.
 
-## <a name="pending-breakpoints"></a>Ожидающих точек останова
- Ожидающая точка останова можно привязать несколько расположений кода. Например строки исходного кода для шаблонов C++ можно привязать к каждой последовательности кода, созданное на основе шаблона. Сеанс отладки можно использовать точки останова привязанных событий для перечисления контекстов кода, привязываются к точке останова во время отправки события. Несколько контекстов кода могут быть связаны более поздней версии, поэтому DE могут отправлять события для каждого запроса привязки, связанный с нескольких точек останова. Тем не менее DE должны отправлять только одно событие ошибки точки останова в запрос на привязку.
+## <a name="pending-breakpoints"></a>Ожидающие моменты разрыва
+ Отложенная точка разрыва может связываться с несколькими местоположениями кода. Например, строка исходного кода для шаблона СЗ может связываться с каждой последовательностью кода, генерируемой из шаблона. Сеанс отладки может использовать событие, связанное с точкой разрыва, для перечисления контекстов кода, связанных с точкой разрыва во время отправки события. Дополнительные контексты кода могут быть связаны позже, поэтому DE может отправить несколько событий, связанных точками разрыва, для каждого запроса на связывание. Однако DE должен отправить только одно событие ошибки точки разрыва на запрос привязки.
 
 ## <a name="implementation"></a>Реализация
- Программным образом, размер пакета отладки вызывает сеанса отладки manager (SDM) и присваивает ему [IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейс, который заключает в оболочку [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) структуру, которая описывает точка останова устанавливается. Несмотря на то, что точки останова могут быть различные формы, в конечном счете клиенты преобразуют контекст кода или данных.
+ Программно пакет отладки вызывает диспетчера отладки сеанса (SDM) и дает ему интерфейс [IDebugBreakpointRequest2,](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) который обертывает [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) структуру, которая описывает точку разрыва, которая должна быть установлена. Хотя точки разрыва могут быть разных форм, они в конечном счете решаются на контекст кода или данных.
 
- SDM передает этот вызов для каждого соответствующего DE путем вызова его [CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) метод. Если DE выбирает для обработки точки останова, он создает и возвращает [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс. SDM собирает эти интерфейсы и передает их обратно в отладочный пакет как одиночный `IDebugPendingBreakpoint2` интерфейс.
+ SDM передает этот вызов каждому соответствующему DE, позвонив в метод [CreatePendingBreakpoint.](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) Если DE выбирает для обработки точки разрыва, он создает и возвращает интерфейс [IDebugPendingBreakpoint2.](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) SDM собирает эти интерфейсы и передает их обратно в `IDebugPendingBreakpoint2` пакет отладки в качестве единого интерфейса.
 
- На данный момент не созданы нет событий.
+ До сих пор никаких событий не было получено.
 
- Размер пакета отладки затем пытается выполнить привязку ожидающая точка останова для кода или данных, вызвав [привязать](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md), реализованная DE.
+ Пакет отладки затем пытается связать отложенную точку разрыва с кодом или данными, вызывая [Bind,](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)который реализуется DE.
 
- Если точка останова привязаны, DE отправляет [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) интерфейс событий для пакета отладки. Использует пакет отладки, этот интерфейс для перечисления всех контекстов кода (или контекст данных single) привязан до точки останова, вызвав [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md), который возвращает один или несколько [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейсов. [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) интерфейс возвращает [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс, и [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) возвращает [BP_ RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) union, содержащий контекст кода или данных.
+ Если точка разрыва связана, DE отправляет интерфейс события [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) в пакет отладок. Пакет отладки использует этот интерфейс для перечисления всех контекстов кода (или единого контекста данных), привязанных к точке разрыва, позвонив [в EnumBoundBreakpoints,](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)который возвращает один или несколько интерфейсов [IDebugBoundBreakpoint2.](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Интерфейс [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) возвращает интерфейс [IDebugBreakpointResolution2,](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) а [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) возвращает [BP_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) союз, содержащий контекст кода или данных.
 
- Если DE не сможет выполнять привязку точки останова, он отправляет отдельный [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) интерфейс событий для пакета отладки. Отладочный пакет получает тип ошибки (ошибка или предупреждение) и информационные сообщения, вызывая [GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md), за которым следует [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) и [ GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md). Эта команда возвращает [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) структуру, содержащую тип ошибки и сообщение.
+ Если DE не может связать точку разрыва, он отправляет один интерфейс события [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) в пакет отладок. Пакет отладки получает тип ошибки (ошибка или предупреждение) и информационное сообщение, позвонив [GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md), а затем [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) и [GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md). Это возвращает [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) структуру, содержащую тип ошибки и сообщение.
 
- Если DE обрабатывает точки останова, но его невозможно привязать, возвращается ошибка типа `BPET_TYPE_ERROR`. Размер пакета отладки отвечает отобразив диалоговое окно ошибки, а интегрированной среды разработки помещает глиф в виде восклицательного знака внутри глиф точки останова слева от строке исходного кода.
+ Если DE обрабатывает точку разрыва, но не может связать `BPET_TYPE_ERROR`ее, он возвращает ошибку типа. Пакет отладки отвечает, отображая поле диалога ошибок, и IDE помещает восклицательный глиф внутри глифа разрыва глифа слева от строки исходного кода.
 
- Если DE обрабатывает точки останова, а не удается привязать его, но другой DE может привязать его, возвращается предупреждение. Интегрированная среда разработки отвечает, поместив глиф вопрос внутри глиф точки останова слева от строке исходного кода.
+ Если DE обрабатывает точку разрыва, не может связать ее, но некоторые другие DE могут связать ее, он возвращает предупреждение. IDE отвечает, размещая глиф-вопрос внутри точки разрыва глифа слева от строки исходного кода.
 
 ## <a name="see-also"></a>См. также
 - [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)

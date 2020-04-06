@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField | Microsoft Docs
+title: ИдебугЭнумфилд Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField interface
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14ea4834619d9e28d4b8a15206b3ea9411f50017
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7885f36a113809e81279498a769e257af4f1cde2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345110"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730169"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
-Этот интерфейс представляет тип перечисления.
+Этот интерфейс представляет собой тип перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,29 +28,29 @@ ms.locfileid: "66345110"
 IDebugEnumField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Символ поставщик реализует этот интерфейс для представления перечисления.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик символов реализует этот интерфейс для представления перечисления.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_ENUM`.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Используйте [queryInterface,](/cpp/atl/queryinterface) чтобы получить этот интерфейс из интерфейса [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращается. `FIELD_TYPE_ENUM`
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы VTable
- В дополнение к методам на `IDebugField` и `IDebugContainerField` интерфейсы, этот интерфейс реализует следующие методы:
+## <a name="methods-in-vtable-order"></a>Методы в порядке VTable
+ В дополнение к методам `IDebugField` и `IDebugContainerField` интерфейсам, этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий имя для этого типа перечисления.|
-|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Возвращает имя константы перечисления, связанный с заданным значением.|
-|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Возвращает значение, связанное с именем константы заданное перечисление|
-|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Возвращает значение, связанное с заданное перечисление постоянное имя, но без учета регистра букв.|
+|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Возвращает [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий название этого типа перечисления.|
+|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Возвращает название постоянной перечисления, связанной с данным значением.|
+|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Возвращает значение, связанное с данным постоянным именем перечисления|
+|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Возвращает значение, связанное с данным значением постоянного имени, но игнорируя случай.|
 
 ## <a name="remarks"></a>Примечания
- Это базовый символ, который фактически связан в расположение с [привязать](../../../extensibility/debugger/reference/idebugbinder-bind.md).
+ Это основной символ, который на самом деле связан с местом с [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,27 +1,27 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Документация Майкрософт
+title: IDebugПрограмма3::ExecuteonThread Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 798a0caca394a21d6ee12a99efeacb2f27f6969c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343605"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722656"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-Выполняет программу отладчика. Поток возвращается для предоставления информации отладчика, в каком потоке пользователь просматривает при выполнении программы.
+Выполняет программу отладчика. Поток возвращается, чтобы дать отладчику информацию о том, какой поток просматривает пользователь при выполнения программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,22 +38,22 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>Параметры
 `pThread`\
-[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) объекта.
+(в) Объект [IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Существует три разных способа, что отладчик можно возобновить выполнение после остановки:
+ Существует три способа возобновления выполнения отладчика после остановки:
 
-- Выполните: Отмена любой предыдущем шаге и выполняется до следующей точки останова, и т. д.
+- Выполнение: Отмена любого предыдущего шага и выполнение до следующего брейк-пойнта и так далее.
 
-- Шаг. Отменить какой-либо шаг старый и запустить до завершения нового шага.
+- Шаг: Отмена любого старого шага и запуск до завершения нового шага.
 
-- По-прежнему: Снова запустите и оставить все старые шаг active.
+- Продолжить: Выполнить еще раз, и оставить любой старый шаг активным.
 
-  Поток, передаваемый `ExecuteOnThread` полезна при принятии решения о этап для отмены. Если вы не знаете потоке, выполнение отменяет все шаги. С помощью базы знаний потока достаточно для отмены шага в активном потоке.
+  Передаваемый поток `ExecuteOnThread` полезен при принятии решения о том, какой шаг следует отменить. Если вы не знаете поток, выполнение выполнения отменяет все шаги. Зная поток, достаточно отменить шаг на активном потоке.
 
 ## <a name="see-also"></a>См. также
-- [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
+- [Выполнить](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

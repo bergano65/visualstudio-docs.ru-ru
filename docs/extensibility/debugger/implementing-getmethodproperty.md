@@ -1,41 +1,41 @@
 ---
-title: Реализация GetMethodProperty | Документация Майкрософт
+title: Реализация GetMethodProperty Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetMethodProperty method
 - IDebugExpressionEvaluator2 property
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f802733f74677a0426a99fb662302d816ad34721
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 252d09eee9c69ca75cb46d28dde807f2c500737f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344295"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738518"
 ---
 # <a name="implement-getmethodproperty"></a>Реализация GetMethodProperty
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
 
-Visual Studio вызывает отладки ядра (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md), который в свою очередь вызывает [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) для получения сведений о текущем методе в кадре стека.
+Visual Studio называет отладку двигателя (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md), который, в свою очередь, вызывает [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) для получения информации о текущем методе на кадре стека.
 
 Эта реализация `IDebugExpressionEvaluator::GetMethodProperty` выполняет следующие задачи:
 
-1. Вызовы [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md), передавая [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) объекта. Возвращает поставщик символов (SP) [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) предоставляющий метод, который содержит указанный адрес.
+1. Вызовы [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md), проходящие в [объекте IDebugAddress.](../../extensibility/debugger/reference/idebugaddress.md) Поставщик символов (SP) возвращает [IDebugContainerField,](../../extensibility/debugger/reference/idebugcontainerfield.md) представляющий метод, содержащий указанный адрес.
 
-2. Получает [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) из `IDebugContainerField`.
+2. Получает [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) от `IDebugContainerField`.
 
-3. Создает экземпляр класса (называется `CFieldProperty` в этом примере), реализующий [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, а также содержит `IDebugMethodField` объект, возвращенный верификации поставщиком услуг, выполните следующие действия.
+3. Мгновения класса `CFieldProperty` (называется в этом примере), который реализует интерфейс `IDebugMethodField` [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) и содержит объект, возвращенный из SP.
 
-4. Возвращает `IDebugProperty2` интерфейс из `CFieldProperty` объекта.
+4. Возвращает `IDebugProperty2` интерфейс с `CFieldProperty` объекта.
 
 ## <a name="managed-code"></a>Управляемый код
-В этом примере показана реализация `IDebugExpressionEvaluator::GetMethodProperty` в управляемом коде.
+В этом примере `IDebugExpressionEvaluator::GetMethodProperty` показана реализация управляемого кода.
 
 ```csharp
 namespace EEMC
@@ -67,7 +67,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Неуправляемый код
-В этом примере показана реализация `IDebugExpressionEvaluator::GetMethodProperty` в неуправляемом коде.
+Этот пример показывает `IDebugExpressionEvaluator::GetMethodProperty` реализацию неуправляемого кода.
 
 ```
 [CPP]
@@ -125,4 +125,4 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 ```
 
 ## <a name="see-also"></a>См. также
-- [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Пример реализации местных жителей](../../extensibility/debugger/sample-implementation-of-locals.md)

@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Документация Майкрософт
+title: ЭВАЛЕСЕС Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337880"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737109"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Указывает флаги, определяющие вычисления выражения.
+Определяет флаги, контролирующие оценку выражения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,35 +54,35 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>Поля
 `EVAL_RETURNVALUE`\
-Указывает, что возвращаемое значение, если таковое имеется, вычисляется.
+Упомяните, что значение возврата, если таковое, будет оценено.
 
 `EVAL_NOSIDEEFFECTS`\
-Указывает, что побочные эффекты не разрешается.
+Упомянет, что побочные эффекты не допускаются.
 
 `EVAL_ALLOWBPS`\
-Указывает остановки точек останова.
+Определяет остановку на брейк-пойнтах.
 
 `EVAL_ALLOWERRORREPORT`\
-Указывает отчетов к узлу разрешен об ошибках. В основном используется для вычисления выражений в скрипте в Internet Explorer.
+Упогоняет разрешение сообщения об ошибке к усею. В первую очередь используется для оценки выражения в скрипте в Internet Explorer.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Функции силы для оценки в качестве адреса, вместо вызова функции.
+Функции сил должны оцениваться как адреса, а не ссылаться на функцию.
 
 `EVAL_NOFUNCEVAL`\
-Запрещает вычисляется функция. Например, рассмотрим `int` маркера в выражении `myExpression(int) + 10`. Эта функция может вычисляться правильно, как адрес, а не как значение.
+Предотвращает оценку функции. Например, рассмотрим `int` маркер в `myExpression(int) + 10`выражении . Эту функцию можно правильно оценить как адрес, но не как значение.
 
 `EVAL_NOEVENTS`\
-Флаг, указывающий, что события, происходящие во время вычисления выражения не следует отправлять в диспетчер отладки сеансов (SDM) или в интегрированную среду разработки.
+Пометить, чтобы указать, что события, возникающие во время оценки выражения, не должны отправляться менеджеру отладки сеанса (SDM) или IDE.
 
 ## <a name="remarks"></a>Примечания
-Эти флаги передаются в качестве аргумента [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) методы.
+Эти флаги передаются в качестве аргумента методам [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [EvaluateSync.](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
 
-Эти флаги могут быть объединены с помощью побитового логического Сложения.
+Эти флаги могут быть объединены с bitwise OR.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

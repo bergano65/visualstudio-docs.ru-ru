@@ -1,27 +1,27 @@
 ---
-title: IDebugGenericParamField::GetIndex | Microsoft Docs
+title: IDebugGenericParamField::GetIndex Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetIndex
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bfb3f02640573eec17f7dd23790a854fc2461c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6b31acd57685058795186fcecb73164218d5ad15
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330307"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727982"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-Извлекает индекс этого универсального параметра.
+Извлекает индекс этого общего параметра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,16 +39,16 @@ int GetIndex(
 
 ## <a name="parameters"></a>Параметры
 `pIndex`\
-[out] Значение индекса этого универсального параметра.
+(ваут) Значение индекса этого общего параметра.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-Например для Dictionary(K,V), K имеет индекс 0, V — это индекс 1.
+Например, для словаря (K,V), K является индексом 0, V - индексом 1.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugGenericParamFieldType,** который предоставляет интерфейс [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)

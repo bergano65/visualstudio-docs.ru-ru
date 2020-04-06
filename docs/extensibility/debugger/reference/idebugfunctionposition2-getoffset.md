@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetOffset | Документация Майкрософт
+title: IDebugФункцияПозиция2::GetOffset Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2::GetOffset
 ms.assetid: 60943782-aec7-4be2-b222-1984ed53a543
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 891707f5937085f69bf037abdec81e6c36315fa0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaa5c13822322084c68aaf0453cb2707f79ddc05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313311"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728358"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
-Получает положение функции в исходном документе.
+Извлекает положение функции в исходном документе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetOffset(
 
 ## <a name="parameters"></a>Параметры
 `pPosition`\
-[in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры, который заполняется позицией функции в документе.
+(в, вне) [Структура TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) заполненная положением функции в документе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugLoadCompleteEvent2 | Документация Майкрософт
+title: IDebugLoadCompleteEvent2 (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugLoadCompleteEvent2
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd66d3fc31c799bed1c14891c04000374b9a153
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4cb39d3d814270414f28aec7f1876b6b44406e53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333142"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727755"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
-Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при загрузке программы, но до выполнения любого кода.
+Этот интерфейс отправляется движком отладки (DE) менеджеру отладки сеанса (SDM) при загрузке программы, но до выполнения любого кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,16 +28,16 @@ ms.locfileid: "66333142"
 IDebugLoadCompleteEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- DE реализует этот интерфейс, чтобы сообщить, что программы был успешно загружен. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ DE реализует этот интерфейс, чтобы сообщить, что программа была успешно загружена. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. SDM использует [QueryInterface](/cpp/atl/queryinterface) для `IDebugEvent2` доступа к интерфейсу.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- DE создает и отправляет этот объект события, чтобы сообщить, что программы был успешно загружен. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ DE создает и отправляет объект события, чтобы сообщить, что программа была успешно загружена. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) которая поставляется SDM при подключении к отладке программы.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

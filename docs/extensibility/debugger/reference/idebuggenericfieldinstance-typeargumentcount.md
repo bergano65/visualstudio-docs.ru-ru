@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericFieldInstance::TypeArgumentCount | Документация Майкрософт
+title: IDebugGenericFieldInstance::TypeArgumentCount (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - TypeArgumentCount
 - IDebugGenericFieldInstance::TypeArgumentCount
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f1a92cc5e595bd2574174f0d0776c6605e42da
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0f0272e86f5c1bbbd840ee222b2048440338302d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337013"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728157"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
-Возвращает число типа аргументов параметра для данного экземпляра.
+Возвращает число аргументов параметра типа для данного экземпляра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int TypeArgumentCount(
 
 ## <a name="parameters"></a>Параметры
 `pcArgs`\
-[in, out] Количество аргументов типа параметра для данного экземпляра.
+(в, вне) Количество аргументов параметра типа для данного экземпляра.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Например если список\<int >, этот метод возвращает значение 1 и, если список\<int, float2 > Этот метод возвращает значение 2. Этот метод возвращает 0, если аргументы типа.
+ Например, если\<List int>, этот метод\<возвращает 1, и, если List int, float2> этот метод возвращает 2. Этот метод возвращает 0, если нет аргументов типа.
 
 ## <a name="see-also"></a>См. также
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

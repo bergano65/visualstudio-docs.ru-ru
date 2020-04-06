@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses | Документация Майкрософт
+title: IDebugClassField::EnumNestedClasses Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75b963f7a342a9ce2b276cc03ea5dece9316ff6d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3e6ef918b55d8b311380264d688085b0d2803601
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313123"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734432"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
-Создает перечислитель для классов, вложенные в этот класс.
+Создает регистратор для классов, вложенных в этот класс.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int EnumNestedClasses(
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список вложенных классов. Возвращает значение null, если нет вложенных классов.
+(ваут) Возвращает объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список вложенных классов. Возвращает нулевую стоимость, если нет вложенных классов.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если нет вложенных классов. В противном случае возвращается код ошибки.
+В случае успеха, возвращает S_OK или возвращает S_FALSE, если Нет вложенных классов. В противном случае возвращается код ошибки.
 
 ## <a name="remarks"></a>Примечания
-Каждый элемент перечисления является [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) описывающий вложенного класса.
+Каждый элемент перечисления — объект [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) описывающий вложенный класс.
 
-Вложенный класс — это класс, определенный внутри другого класса. Пример:
+Вложенный класс — это класс, определяемый внутри другого класса. Пример:
 
 ```
 class RootClass {
@@ -57,7 +57,7 @@ class RootClass {
 };
 ```
 
-[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) перечисления будет содержать один объект, представляющий `NestedClass` класса.
+В перечислении [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) будет содержаться `NestedClass` один объект, представляющий класс.
 
 ## <a name="see-also"></a>См. также
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

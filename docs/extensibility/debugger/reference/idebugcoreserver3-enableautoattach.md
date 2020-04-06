@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Документация Майкрософт
+title: IDebugCoreServer3:EnableAutoAttach Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9eb8beed7f32e9c6fb64212f73a41a35544259bb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326976"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732911"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Включает автоматическое присоединение для указанного отладчики.
+Позволяет автоматическое крепение для указанных двигателей отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,22 +47,22 @@ int EnableAutoAttach(
 
 ## <a name="parameters"></a>Параметры
 `rgguidSpecificEngines`\
-[in] Массив идентификаторов GUID для каждого ядра отладки, чтобы пометить как автоматическое присоединение.
+(в) Массив GUIDs для каждого двигателя отладки, чтобы отметить как автоматическое присоединение.
 
 `celtSpecificEngines`\
-[in] Число ядер, указанный в `rgguidSpecificEngines`.
+(в) Количество двигателей, `rgguidSpecificEngines`указанных в .
 
 `pszStartPageUrl`\
-[in] Начальный URL-адрес для использования при присоединении автоматически.
+(в) Стартовый URL для использования при автоматическом подключении.
 
 `pbstrSessionID`\
-[out] Идентификатор сеанса, который был подключен автоматически.
+(ваут) Идентификатор сеанса, который был автоматически прикреплен.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Один код ошибки- `E_AUTO_ATTACH_NOT_REGISTERED`, который указывает, что фабрика класса auto-attach не был зарегистрирован.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки. Один код `E_AUTO_ATTACH_NOT_REGISTERED`ошибки, который указывает, что фабрика класса авто-атташе не была зарегистрирована.
 
 ## <a name="remarks"></a>Примечания
- При запуске программы, связанный с указанным URL-адрес, указанный отладчики автоматически к работе и подключен.
+ При запуска программы, связанной с указанным URL, указанные двигатели отладки автоматически запускаются и прикрепляются.
 
 ## <a name="see-also"></a>См. также
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

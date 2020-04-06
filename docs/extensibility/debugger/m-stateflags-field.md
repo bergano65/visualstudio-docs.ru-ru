@@ -1,30 +1,30 @@
 ---
-title: m_stateFlags поле | Документация Майкрософт
+title: m_stateFlags Поле Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dee91fa96e16cdc2cd1cd75083c381422a99092
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330851"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738393"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags field
-Хранит сведения о текущем состоянии <xref:System.Threading.Tasks.Task> объекта.
+# <a name="m_stateflags-field"></a>m_stateFlags поле
+Хранит информацию о текущем <xref:System.Threading.Tasks.Task> состоянии объекта.
 
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+ Поскольку вы не можете получить доступ к этому внутреннему члену из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,9 +33,9 @@ ms.locfileid: "66330851"
 ```
 
 ## <a name="remarks"></a>Примечания
- Как правило, используется <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> свойство для доступа к этому значению.
+ Обычно свойство <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> используется для доступа к этому значению.
 
- Этот член может быть любое сочетание следующих значений:
+ Этот участник может быть любым сочетанием следующих значений:
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 

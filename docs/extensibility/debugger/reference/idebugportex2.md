@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2 | Документация Майкрософт
+title: IDebugPortEx2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2 interface
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bed6cd047af4ba57a1880d87e30a990dcf83efac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5789681b0da70f46dadac1e29d0d6bb9dc905d1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340435"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724995"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
-Этот интерфейс позволяет сеанс отладки управление manager (SDM), программы и процессы, запущенные на порт.
+Этот интерфейс позволяет диспетчеру сеансов (SDM) управлять программами и процессами, запущенным в порту.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,11 +28,11 @@ ms.locfileid: "66340435"
 IDebugPortEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Пользовательский порт поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md).
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик пользовательских портов реализует этот интерфейс на том же объекте, который реализует [IDebugPort2.](../../../extensibility/debugger/reference/idebugport2.md)
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовы SDM [QueryInterface](/cpp/atl/queryinterface) на `IDebugPort2` интерфейс для получения этого интерфейса.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ SDM вызывает [queryInterface](/cpp/atl/queryinterface) `IDebugPort2` на интерфейсе для того чтобы получить этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugPortEx2`.
@@ -41,20 +41,20 @@ IDebugPortEx2 : IUnknown
 |------------|-----------------|
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)|Запускает исполняемый файл.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)|Возобновляет выполнение процесса.|
-|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugportex2-canterminateprocess.md)|Определяет, можно ли завершить процесс.|
-|[TerminateProcess](../../../extensibility/debugger/reference/idebugportex2-terminateprocess.md)|Завершает процесс.|
-|[GetPortProcessId](../../../extensibility/debugger/reference/idebugportex2-getportprocessid.md)|Получает идентификатор процесса сам класс port.|
-|[GetProgram](../../../extensibility/debugger/reference/idebugportex2-getprogram.md)|Возвращает программу, сопоставленную с узлом программы.|
+|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugportex2-canterminateprocess.md)|Определяет, может ли процесс быть прекращен.|
+|[TerminateProcess](../../../extensibility/debugger/reference/idebugportex2-terminateprocess.md)|Прекращает процесс.|
+|[GetPortProcessId](../../../extensibility/debugger/reference/idebugportex2-getportprocessid.md)|Получает идентификатор процесса самого порта.|
+|[GetProgram](../../../extensibility/debugger/reference/idebugportex2-getprogram.md)|Получает программу, связанную с узлами программы.|
 
 ## <a name="remarks"></a>Примечания
- Этот интерфейс обычно закрыт между SDM и поставщика пользовательского порта.
+ Этот интерфейс обычно является частным между SDM и поставщиком пользовательских портов.
 
- При желании модуля отладки (DE) можно найти на этом интерфейсе [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) передается интерфейс [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) и использовать [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) для запуска программы. Это не является обязательным, но DE можно сделать то, что нужно сделать, чтобы запустить программу запроса.
+ При желании, отладка двигателя (DE) может искать этот интерфейс на [интерфейсе IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) передается [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) и использовать [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) для запуска программы. Это не является требованием, однако, и DE может сделать все, что нужно сделать, чтобы запустить программу запроса.
 
 ## <a name="requirements"></a>Требования
  Заголовок: portpriv.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Документация Майкрософт
+title: IDebugПроцессКЕвириСвойства::КвириСвойства Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a26cbb1781561b6fb4d54da3cfaea9a9fbae7699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311584"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723315"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Этот метод запрашивает заданных значений свойств процесса отладки.
+Этот метод запрашивает для определенных значений свойств процесса отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,22 +41,22 @@ int QueryProperties(
 
 ## <a name="parameters"></a>Параметры
 `celt`\
-[in] Размер массива, содержащего определения свойств и значений свойств.
+(в) Размер массивов, содержащих определения свойств и значения свойств.
 
 `dwPropType`\
-[in] Массив, содержащий определения запрашиваемого свойства. Допустимые значения:
+(в) Массив, содержащий определения запрошенных свойств. Вы можете выбрать
 
-- PROCESS_PROPERTY_COMMAND_LINE = 1
+- PROCESS_PROPERTY_COMMAND_LINE No 1
 
-- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
+- PROCESS_PROPERTY_CURRENT_DIRECTORY No 2
 
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES No 3
 
 `pvarPropValue`\
-[out] Массив, содержащий значения свойств.
+(ваут) Массив, содержащий значения свойств.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
  Этот метод используется редко.

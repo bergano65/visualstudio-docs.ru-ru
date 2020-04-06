@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetEngineInfo | Документация Майкрософт
+title: IDebugProgram2::GetEngineInfo Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetEngineInfo
 ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6953200647278cf603491913e550722403823d45
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313827"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722828"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-Возвращает имя и идентификатор GUID для обработчика отладки (DE), выполнение программы.
+Получает название и GUID двигателя отладки (DE), работая над этой программой.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetEngineInfo( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrEngine`\
-[out] Возвращает имя DE, выполнение программы.
+(ваут) Возвращает название DE, запускаемого этой программой.
 
 `pguidEngine`\
-[out] Возвращает идентификатор GUID для DE, выполнение программы.
+(ваут) Возвращает GUID DE, запуская эту программу.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Каждый DE определяет собственный идентификатор GUID для идентификации.
+ Каждый DE определяет свой собственный GUID для идентификации.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

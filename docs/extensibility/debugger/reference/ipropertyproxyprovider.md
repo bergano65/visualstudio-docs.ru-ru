@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider | Документация Майкрософт
+title: IPropertyProxyProvider (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbda02c26018adc4e5f1f3677b75bc2dce25a2e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339290"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714793"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
-Этот интерфейс предоставляет интерфейс-посредник для просмотра и изменения данных объекта.
+Этот интерфейс предоставляет прокси-интерфейс для просмотра и изменения данных объекта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,26 +28,26 @@ ms.locfileid: "66339290"
 IPropertyProxyProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Средство оценки выражений (EE) реализует этот интерфейс на тот же объект, реализующий [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс как часть поддержки EE визуализаторами типов.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Оценщик выражения (EE) реализует этот интерфейс на том же объекте, который реализует интерфейс [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) как часть поддержки EE визуализаторов типа.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовите [QueryInterface](/cpp/atl/queryinterface) на `IDebugProperty3` интерфейс для получения этого интерфейса.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Вызов [queryInterface](/cpp/atl/queryinterface) `IDebugProperty3` на интерфейс, чтобы получить этот интерфейс.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- `IPropertyProxyProvider` Интерфейс реализует следующий метод:
+## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
+ Интерфейс `IPropertyProxyProvider` реализует следующий метод:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Извлекает свойство прокси-интерфейса для просмотра данных для объекта.|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Извлекает интерфейс прокси-сервера свойств для просмотра данных на объекте.|
 
 ## <a name="remarks"></a>Примечания
- Несмотря на то, что EE реализует этот интерфейс, реализация [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) обычно обрабатываются [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). См. в разделе [визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) Дополнительные сведения о получении IEEVisualizerService интерфейс.
+ Хотя EE реализует этот интерфейс, реализация [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) обычно обрабатывается [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Подробную информацию о получении интерфейса IEEVisualizerService можно получить [визуализационном](../../../extensibility/debugger/visualizing-and-viewing-data.md) интерфейсе.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

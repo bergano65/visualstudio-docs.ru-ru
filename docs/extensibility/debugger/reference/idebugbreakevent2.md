@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakEvent2 | Документация Майкрософт
+title: IDebugBreakEvent2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c500c6a54cc63dbcb8c7c6ad23c92d2105b9842
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314405"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735403"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-Этот интерфейс указывает диспетчер отладки сеансов (SDM), что асинхронные прерывания успешно завершена.
+Этот интерфейс сообщает менеджеру отладки сеанса (SDM), что асинхронный перерыв был успешно завершен.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,19 +28,19 @@ ms.locfileid: "66314405"
 IDebugBreakEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- DE реализует этот интерфейс для поддержки пользователя разрывы в программе. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс).
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ DE реализует этот интерфейс для поддержки пользовательских перерывов в программе. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот `IDebugEvent2` интерфейс (SDM использует [queryInterface](/cpp/atl/queryinterface) для доступа к интерфейсу).
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовы SDM [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) когда пользователь запросил будут приостановлены отлаживаемой программы. Когда программа успешно приостановлен, DE отправляет `IDebugBreakEvent2` событий. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемой SDM, если он присоединен к отлаживаемой программы.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ SDM вызывает [CauseBreak,](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) когда пользователь запросил отладку программы для приостановки. Когда программа успешно приостановлена, DE отправляет `IDebugBreakEvent2` событие. Это событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) поставляемой SDM при его подключении к отладке программы.
 
 ## <a name="remarks"></a>Примечания
- Например, пользователь может выбрать **прервать все** команды **Отладка** меню для выхода из программы, на котором выполняется бесконечный цикл. SDM сообщает программе, чтобы остановить путем вызова [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). Отправляет DE `IDebugBreakEvent2` наконец остановки программы.
+ Например, пользователь может выбрать команду **Break All** в меню **Debug,** чтобы выйти из программы, которая работает бесконечный цикл. SDM говорит программе, чтобы остановить, позвонив [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). DE отправляет, `IDebugBreakEvent2` когда программа, наконец, останавливается.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Createinplace-элемент (шаблоны Visual Studio)
+title: Элемент CreateInPlace (шаблоны визуальной студии)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341781"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739657"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Элемент CreateInPlace (шаблоны Visual Studio)
-Указывает, следует ли создать проект и выполнить замену в указанном расположении, или выполнить замену во временном расположении и сохраните проект в указанное расположение.
+Определяет, следует ли создавать проект и выполнять замену параметров в указанном месте, или выполнять замену параметров во временном месте, а затем сохранить проект в указанном месте.
 
- \<VSTemplate> \<TemplateData> \<CreateInPlace>
+ \<VStemplate \<> templateData> \<CreateInPlace>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,10 +36,10 @@ ms.locfileid: "66341781"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -50,10 +50,10 @@ ms.locfileid: "66341781"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Этот текст должен быть либо `true`, либо `false`. Если `true`, создается проект и выполняется замена параметров в расположении, указанном в **новый проект** диалоговое окно. Если `false`, выполняется замена параметров в во временную папку и проект копируется в указанное расположение.
+ Этот текст должен быть либо `true`, либо `false`. Если `true`проект создается и замена параметров выполняется в месте, указанном в диалоговом окне **нового проекта.** Если `false`замена параметра выполняется во временном месте, а проект затем скопирован в указанное место.
 
 ## <a name="remarks"></a>Примечания
- `CreateInPlace` — это необязательный элемент. Значение по умолчанию — `true`.
+ Параметр `CreateInPlace` является необязательным элементом. Значение по умолчанию — `true`.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
@@ -85,4 +85,4 @@ ms.locfileid: "66341781"
 
 ## <a name="see-also"></a>См. также
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

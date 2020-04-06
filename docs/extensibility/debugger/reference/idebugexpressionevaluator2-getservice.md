@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Документация Майкрософт
+title: IDebugExpressionО-Оценор2::GetService Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::GetService
 - GetService
 ms.assetid: f8988a9e-9d18-42af-84a7-55f41e9adf63
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42a4027b4153f262eb8164a915f229f04c7cbed4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325554"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729348"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-Извлекает объект службы по заданному идентификатору.
+Извлекает объект обслуживания с учетом его уникального идентификатора.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,16 +42,16 @@ int GetService (
 
 ## <a name="parameters"></a>Параметры
 `uid`\
-[in] Уникальный идентификатор извлекаемой службы.
+(в) Уникальный идентификатор службы для извлечения.
 
 `ppService`\
-[out] Возвращает объект, представляющий службу.
+(ваут) Возвращает объект, представляющий службу.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Это может быть поглощен вычислитель выражений независимых производителей для получения служб из другой средство оценки выражений. Например этот метод может использоваться для получения интерфейса для службы визуализатора из средство оценки выражений по умолчанию. Вычислители выражений сторонних вряд ли должны реализовать этот интерфейс.
+ Это может быть использовано сторонним оценщиком выражения для получения услуг от другого оценщика выражения. Например, этот метод может быть использован для получения интерфейса службы визуализатора от оценщика выражения по умолчанию. Сторонние оценщики выражений вряд ли должны реализовывать этот интерфейс.
 
 ## <a name="see-also"></a>См. также
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

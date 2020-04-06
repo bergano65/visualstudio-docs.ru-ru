@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT | Документация Майкрософт
+title: BP_PASSCOUNT Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fd1ab73a20b319af6c9464062113f4e8f2d64fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353014"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737911"
 ---
-# <a name="bppasscount"></a>BP_PASSCOUNT
-Описывает число и условия, на которых запускается условную точку останова.
+# <a name="bp_passcount"></a>BP_PASSCOUNT
+Описывает количество и условия, при которых высажено условный брейк-пойнт.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,20 +43,20 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>Участники
 `dwPassCount`\
-Сколько раз для передачи через точку останова перед порождением его.
+Количество раз, чтобы пройти над точкой разрыва перед стрельбой.
 
 `stylePassCount`\
-Значение из [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) число проходов перечисления, задающее стиль точки останова.
+Значение из [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) перечисления, которое определяет стиль подсчета проходов брейк-пойнта.
 
 ## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структуры.
+Эта структура является членом [структуры BP_REQUEST_INFO.](../../../extensibility/debugger/reference/bp-request-info.md)
 
-Эта структура также передается в качестве параметра[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) и[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) методы.
+Эта структура также передается в качестве параметра методам[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) и[SetPassCount.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

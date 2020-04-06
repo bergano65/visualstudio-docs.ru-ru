@@ -1,30 +1,30 @@
 ---
-title: m_contingentProperties поле | Документация Майкрософт
+title: поле m_contingentProperties Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a583f6e42198f3ad01af99ab9bfa164793eada68
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330871"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738412"
 ---
-# <a name="mcontingentproperties-field"></a>m_contingentProperties field
-Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.
+# <a name="m_contingentproperties-field"></a>m_contingentProperties поле
+Хранит дополнительные <xref:System.Threading.Tasks.Task> свойства объекта.
 
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+ Поскольку вы не можете получить доступ к этому внутреннему члену из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
 
 ## <a name="syntax"></a>Синтаксис
 

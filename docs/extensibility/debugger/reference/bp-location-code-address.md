@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Документация Майкрософт
+title: BP_LOCATION_CODE_ADDRESS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319130"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738035"
 ---
-# <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-Описывает расположение точки останова по адресу в коде.
+# <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
+Описывает расположение точки разрыва по адресу в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,24 +37,24 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 ## <a name="members"></a>Участники
 `bstrContext`\
-Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
+Контекст точки разрыва, как правило, метод или имя функции, как видно на стеке вызова.
 
 `bstrModuleUrl`\
-URL-адрес модуля, содержащего точку останова.
+URL-адрес модуля, содержащего точку разрыва.
 
 `bstrFunction`\
-Имя функции, содержащей точку останова.
+Название функции, содержащей точку разрыва.
 
 `bstrAddress`\
-Адрес точки останова, который анализируется с вычислитель выражений, чтобы привязать его к [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.
+Адрес точки разрыва, который разбирается оценщиком выражения, чтобы связать его с объектом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.
+Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуры в составе профсоюза.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,46 +1,46 @@
 ---
-title: Добавление команд Visual Studio на начальную страницу | Документация Майкрософт
+title: Добавление команд Visual Studio на стартовую страницу (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - start page commands
 - vs:VSCommands
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 86fe084d2dab10ed7370f5fc5b99931491b096be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352283"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740112"
 ---
-# <a name="add-visual-studio-commands-to-a-start-page"></a>Добавление команд Visual Studio для начальной страницы
+# <a name="add-visual-studio-commands-to-a-start-page"></a>Добавление команд Visual Studio в стартовую страницу
 
-При создании настраиваемой начальной страницы, можно добавить в него команды Visual Studio. В этом документе описываются различные способы для привязки к объектам XAML на начальной странице команды Visual Studio.
+При создании пользовательской страницы Start Page можно добавить к ней команды Visual Studio. В этом документе рассматриваются различные способы привязки команд Visual Studio к объектам XAML на стартовой странице.
 
-Дополнительные сведения о командах в XAML см. в разделе [Commanding Обзор](/dotnet/framework/wpf/advanced/commanding-overview)
+Для получения дополнительной информации о командах в XAML [см.](/dotnet/framework/wpf/advanced/commanding-overview)
 
-## <a name="add-commands-from-the-command-well"></a>Также добавить команды из команды
+## <a name="add-commands-from-the-command-well"></a>Добавление команд хорошо
 
-Начальная страница создана в [Создание настраиваемой начальной страницы](../extensibility/creating-a-custom-start-page.md) добавлены <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> и <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> пространства имен, как показано ниже.
+Стартовая страница, созданная в <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> создании <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> [пользовательской стартовой страницы,](../extensibility/creating-a-custom-start-page.md) добавила и пространства имен следующим образом.
 
 ```xml
 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-Добавить другое пространство имен из сборки Microsoft.VisualStudio.Shell *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*. (Может потребоваться добавить ссылку на эту сборку в проекте.)
+Добавьте еще одно пространство имен для Microsoft.VisualStudio.Shell из сборки *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*. (Возможно, потребуется добавить ссылку на эту сборку в проекте.)
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
 ```
 
-Можно использовать `vscom:` псевдоним для привязки команд Visual Studio к XAML элементы управления на странице, задав <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> свойство элемента управления, `vscom:VSCommands.ExecuteCommand`. Затем можно задать <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> имя выполняемой команды, как показано в следующем примере.
+Можно использовать `vscom:` псевдоним для привязки команд Visual Studio к элементам <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> управления XAML `vscom:VSCommands.ExecuteCommand`на странице, установив свойство элемента управления. Затем можно установить свойство <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> к имени команды для выполнения, как показано в следующем примере.
 
 ```xml
 <Button Name="btnNewProj" Content="New Project"
@@ -50,11 +50,11 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 > [!NOTE]
-> `x:` Псевдоним, который ссылается на схемы XAML, является обязательным в начале всех команд.
+> Псевдоним, `x:` относящаяся к схеме XAML, требуется в начале всех команд.
 
- Можно задать значение `Command` свойство для любой команды, который может быть организован **команда** окна. Список доступных команд, см. в разделе [псевдонимы команд Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+ Значение `Command` свойства можно установить для любой команды, к которым можно получить доступ из окна **команды.** Список доступных команд можно найти [в псевдонимах Visual Studio.](../ide/reference/visual-studio-command-aliases.md)
 
- Если добавляемая команда требует дополнительный параметр, можно добавить его к значению `CommandParameter` свойство. Отдельные параметры из команды разделяются пробелами, как показано в следующем примере.
+ Если для добавления команды требуется дополнительный параметр, `CommandParameter` его можно добавить к значению свойства. Отделите параметры от команд с помощью пробелов, как показано в следующем примере.
 
 ```xml
 <Button Content="Web Search"
@@ -62,40 +62,40 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
         CommandParameter="View.WebBrowser www.bing.com" />
 ```
 
-### <a name="call-extensions-from-the-command-well"></a>Также вызывать расширения из команды
- Для вызова команды из зарегистрированные объекты VSPackage используется тот же синтаксис, который используется для вызова других команд Visual Studio. Например, если установленный VSPackage добавляет **Домашняя страница** команды **представление** меню, можно вызвать эту команду, задав `CommandParameter` для `View.HomePage`.
+### <a name="call-extensions-from-the-command-well"></a>Расширение вызова из скважины команды
+ Команды из зарегистрированных VSPackages можно вызывать с помощью того же синтаксиса, который используется для вызова других команд Visual Studio. Например, если установленный VSPackage добавляет команду **Home Page** в меню **Просмотра,** эту команду можно вызвать, установив `CommandParameter` на кнопку: `View.HomePage`
 
 > [!NOTE]
-> Если вызвать команду, которая связана с помощью VSPackage, необходимо загрузить пакет, при вызове команды.
+> Если вы вызываете команду, связанную с VSPackage, пакет должен быть загружен при вызове команды.
 
-## <a name="add-commands-from-assemblies"></a>Добавить команды из сборок
- Чтобы вызвать команду из сборки, кода или к нему доступ в пакет VSPackage, который не связан с командой меню, необходимо создать псевдоним для сборки и затем вызвать псевдоним.
+## <a name="add-commands-from-assemblies"></a>Добавление команд из сборок
+ Чтобы вызвать команду из сборки или получить доступ к коду в VSPackage, не связанном с командой меню, необходимо создать псевдоним для сборки, а затем вызвать псевдоним.
 
-### <a name="to-call-a-command-from-an-assembly"></a>Для вызова команды из сборки
+### <a name="to-call-a-command-from-an-assembly"></a>Вызов команды из сборки
 
-1. В решении добавьте ссылку на сборку.
+1. В своем решении добавьте ссылку на сборку.
 
-2. В верхней части *StartPage.xaml* файл, добавьте директиву пространства имен для сборки, как показано в следующем примере.
+2. В верхней части файла *StartPage.xaml* добавьте директиву пространства имен для сборки, как показано в следующем примере.
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3. Вызвать команду, задав `Command` свойства объекта XAML, как показано в следующем примере.
+3. Вызвать команду, установив `Command` свойство объекта XAML, как показано в следующем примере.
 
-     XAML
+     Xaml
 
     ```
     <vs:Button Text="Hide me" Command="{x:Static vsc:HideControl}" .../>
     ```
 
 > [!NOTE]
-> Необходимо скопировать сборку и вставьте его в *... \\\Common7\IDE\PrivateAssemblies {папка установки visual Studio}\* чтобы убедиться в том, он загружается, прежде чем он вызывается.
+> Вы должны скопировать сборку, а затем вставить его в К. \\Папка установки Visual Studio (Общие7-IDE)PrivateAssemblies,\* чтобы убедиться, что она загружена до того, как она называется.
 
-## <a name="add-commands-with-the-dte-object"></a>Добавьте команды с объектом DTE
- Можно получить доступ к объект DTE из начальной страницы, как в разметке, так и в коде.
+## <a name="add-commands-with-the-dte-object"></a>Добавление команд с объектом DTE
+ Вы можете получить доступ к объекту DTE со стартовой страницы, как в разметке, так и в коде.
 
- В разметке, доступен с помощью [привязка расширения разметки](/dotnet/framework/wpf/advanced/binding-markup-extension) синтаксис для вызова <xref:EnvDTE.DTE> объекта. Этот подход можно использовать для привязки к простые свойства, например те, которые возвращают коллекции, но нельзя привязать к методам или служб. В следующем примере показан <xref:System.Windows.Controls.TextBlock> элемент управления, который привязывается к <xref:EnvDTE._DTE.Name%2A> свойство и <xref:System.Windows.Controls.ListBox> элемента управления, который перечисляет <xref:EnvDTE.Window.Caption%2A> свойства коллекции, который возвращается <xref:EnvDTE._DTE.Windows%2A> свойство.
+ В разметке <xref:EnvDTE.DTE> можно получить к нему доступ с помощью синтаксиса [расширения связывания для](/dotnet/framework/wpf/advanced/binding-markup-extension) вызова объекта. Этот подход можно использовать для привязки к простым свойствам, таким как те, которые возвращают коллекции, но нельзя связывать сястыть с методами или службами. В следующем примере показан <xref:System.Windows.Controls.TextBlock> элемент <xref:EnvDTE._DTE.Name%2A> управления, который <xref:System.Windows.Controls.ListBox> связывается с свойством, и элемент управления, который перечисляет <xref:EnvDTE.Window.Caption%2A> свойства коллекции, возвращенной <xref:EnvDTE._DTE.Windows%2A> свойством.
 
 ```xml
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>
@@ -108,8 +108,8 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox
 ```
 
- Пример см. в разделе [Пошаговое руководство. Сохранение пользовательских параметров на начальной странице](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
+ Например, [см. Walkthrough: Сохранение настроек пользователя на стартовой странице.](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Добавление пользовательского элемента управления на начальную страницу](../extensibility/adding-user-control-to-the-start-page.md)
+- [Добавление элемента управления пользователем в страницу «Старт»](../extensibility/adding-user-control-to-the-start-page.md)

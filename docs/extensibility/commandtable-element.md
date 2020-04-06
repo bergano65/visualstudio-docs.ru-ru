@@ -1,5 +1,5 @@
 ---
-title: Элемент Коммандтабле | Документация Майкрософт
+title: Элемент CommandTable Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - CommandTable element (VSCT XML schema)
 - VSCT XML schema elements, CommandTable
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f577b52ad2a9b1fd66ed9c24fb2737621aa8554c
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557780"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739645"
 ---
-# <a name="commandtable-element"></a>Коммандтабле, элемент
-Коммандтабле — это корневой элемент *vsct* -файла. Это файл, который определяет фактический макет и тип команд, которые пакет VSPackage предоставляет интегрированной среде разработки. Команды могут включать пункты меню, меню, панели инструментов и поля со списком. Дополнительные сведения см. в разделе [файлы командных таблиц Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+# <a name="commandtable-element"></a>Элемент CommandTable
+CommandTable — это корневой элемент файла *.vsct.* Это файл, который определяет фактическое расположение и тип команд, которые VSPackage предоставляет IDE. Команды могут включать в себя пункты меню, меню, панели инструментов и комбо-коробки. Для получения дополнительной информации смотрите [файлы командной таблицы Visual Studio (.vsct).](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,34 +40,34 @@ ms.locfileid: "77557780"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
- Следующие разделы описывают атрибуты, дочерние элементы и родительские элементы.
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
 
 | Атрибут | Описание |
 |-----------| - |
-| xmlns | Обязательное. Пространства имен XML:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: XS = "<http://www.w3.org/2001/XMLSchema>" |
-| язык | Необязательно. Атрибут Language можно использовать для указания языка по умолчанию для всех \<строк, > элементов в таблице команд.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> Language = "en-US" |
+| xmlns | Обязательный элемент. XML пространства имен:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns:xs"<http://www.w3.org/2001/XMLSchema>" |
+| Язык | Необязательный параметр. Атрибут языка может использоваться для указания \<языка по умолчанию всех строк> элементов в таблице команд.  Если язык не указан, язык текущего процесса будет использоваться:<br /><br /> язык "ан-нас" |
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Внешний элемент](../extensibility/extern-element.md)|Необязательно. Содержит директивы препроцессора для компилятора.|
-|[Включить элемент](../extensibility/include-element.md)|Необязательно. Содержит пути к любым файлам, которые необходимо включить в компиляцию.|
-|[Определение элемента](../extensibility/define-element.md)|Необязательно. Определяет символ с учетом его имени и значения.|
-|[Commands, элемент](../extensibility/commands-element.md)|Необязательно. Родительский элемент, определяющий все команды для VSPackage, которые содержат все остальные элементы.|
-|[CommandPlacements, элемент](../extensibility/commandplacements-element.md)|Необязательно. Определяет, где на панели команд должны размещаться команды.|
-|[Висибилитиконстраинтс, элемент](../extensibility/visibilityconstraints-element.md)|Необязательно. Определяет статическую видимость команд и панелей инструментов.|
-|[Сочетания клавиш, элемент](../extensibility/keybindings-element.md)|Необязательно. Задает сочетания клавиш, если они есть, для команд.|
-|[Уседкоммандс, элемент](../extensibility/usedcommands-element.md)|Необязательно. Позволяет пакету VSPackage при необходимости реализовать собственную версию функциональности, изначально поддерживаемую другими пакетами VSPackage.|
-|[Элемент Symbols](https://www.microsoft.com/download/details.aspx?id=55984)|Необязательно. Содержит любые символьные данные — идентификаторы GUID, идентификаторы и т. д. для компилятора.|
+|[Элемент Экстерн](../extensibility/extern-element.md)|Необязательный параметр. Содержит предпроцессорные директивы для компилятора.|
+|[Включить элемент](../extensibility/include-element.md)|Необязательный параметр. Содержит пути к любым файлам для включения в компилю.|
+|[Определить элемент](../extensibility/define-element.md)|Необязательный параметр. Определяет символ, учитывая его название и ценность.|
+|[Элемент команд](../extensibility/commands-element.md)|Необязательный параметр. Родительский элемент, определяющий все команды для VSPackage, содержащий все остальные элементы.|
+|[Элемент командных мест](../extensibility/commandplacements-element.md)|Необязательный параметр. Определяет, где на панели команд должны быть размещены команды.|
+|[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Необязательный параметр. Определяет статическую видимость команд и панелей инструментов.|
+|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Необязательный параметр. Определяет комбинации ключей ярлыка, если таковые имеется, для команд.|
+|[Элемент подержанных команд](../extensibility/usedcommands-element.md)|Необязательный параметр. Позволяет VSPackage дополнительно реализовать свою собственную версию функциональности, первоначально поддерживаемой другими VSPackages.|
+|[Элемент символов](https://www.microsoft.com/download/details.aspx?id=55984)|Необязательный параметр. Содержит любые данные символов - GUID, идентионные данные и т.д. - для компилятора.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Нет||
+|None||
 
-## <a name="see-also"></a>См. также:
-- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>См. также
+- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

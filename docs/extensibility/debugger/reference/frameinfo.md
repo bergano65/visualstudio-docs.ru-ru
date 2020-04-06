@@ -1,5 +1,5 @@
 ---
-title: ФРАМЕИНФО | Документация Майкрософт
+title: FRAMEINFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681100"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736792"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Описывает кадр стека.
@@ -65,22 +65,22 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Участники
 `m_dwValidFields`\
-Сочетание флагов из перечисления [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , которое указывает, какие поля заполняются.
+Комбинация флагов [из FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, которая определяет, какие поля заполнены.
 
 `m_bstrFuncName`\
-Имя функции, связанной с кадром стека.
+Имя функции, связанное с кадром стека.
 
 `m_bstrReturnType`\
-Возвращаемый тип, связанный с кадром стека.
+Тип возврата, связанный с кадром стека.
 
 `m_bstrArgs`\
-Аргументы функции, связанной с кадром стека.
+Аргументы к функции, связанной с кадром стека.
 
 `m_bstrLanguage`\
 Язык, на котором реализована функция.
 
 `m_bstrModule`\
-Имя модуля, связанного с кадром стека.
+Имя модуля, связанное с кадром стека.
 
 `m_addrMin`\
 Минимальный физический адрес стека.
@@ -89,29 +89,29 @@ public struct FRAMEINFO {
 Максимальный физический адрес стека.
 
 `m_pFrame`\
-Объект [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , представляющий этот кадр стека.
+Объект [IDebugStackFrame2,](../../../extensibility/debugger/reference/idebugstackframe2.md) представляющий этот кадр стека.
 
 `m_pModule`\
-Объект [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , представляющий модуль, содержащий этот кадр стека.
+Объект [IDebugModule2,](../../../extensibility/debugger/reference/idebugmodule2.md) представляющий модуль, содержащий этот кадр стека.
 
 `m_fHasDebugInfo`\
-Ненулевое значение`TRUE`(), если отладочная информация существует в данном кадре.
+Ненулевой`TRUE`( ), если информация об отладке существует в данном кадре.
 
 `m_fStaleCode`\
-Ненулевое значение`TRUE`(), если кадр стека связан с кодом, который больше не является допустимым.
+Ненулевой`TRUE`( ), если кадр стека связан с кодом, который больше не действителен.
 
 `m_fAnnotatedFrame`\
-Ненулевое значение`TRUE`(), если кадр стека снабжен заметками диспетчером отладки сеансов (SDM).
+Ненулевой`TRUE`(), если кадр стека аннотирован менеджером отладки сеанса (SDM).
 
 ## <a name="remarks"></a>Примечания
-Эта структура передается в метод " [info](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) ", который должен быть заполнен. Эта структура также содержится в списке, который содержится в интерфейсе [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) , который, в свою очередь, возвращается из вызова метода [енумфрамеинфо](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
+Эта структура передается методу [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) для заполнения. Эта структура также содержится в списке, который содержится в интерфейсе [IEnumDebugFrameInfo2,](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) который, в свою очередь, возвращается из вызова в метод [EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
 ## <a name="requirements"></a>Требования
-Заголовок: мсдбг. h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft. VisualStudio. Debugger. Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
-Сборка: Microsoft. VisualStudio. Debugger. Interop. dll
+Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)

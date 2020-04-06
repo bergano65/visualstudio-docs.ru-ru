@@ -1,24 +1,24 @@
 ---
-title: IDebugPortPicker | Документация Майкрософт
+title: IDebugPortPicker Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker interface
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 991480886c2c43c330ce37561d383ffdc420e214
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 554ac24d7148f0d5de07779f35376b28b7ff7b07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340368"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724845"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
-Представляет настраиваемый пользовательский Интерфейс для выбора порта.
+Представляет индивидуальный ui для выбора порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,20 +26,20 @@ ms.locfileid: "66340368"
 IDebugPortPicker : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Этот интерфейс реализуется поставщикам портов. Поставщика порта определяет их выбора порта предоставлением в качестве идентификатора класса CLSID, и выберите пункт `metricPortPickerCLSID` метрик в предоставленный идентификатор CLSID.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Этот интерфейс реализован портовыми поставщиками. Поставщик порта определяет их сборщик порта, подвергая его `metricPortPickerCLSID` как CLSID и указывая метрику на открытых CLSID.
 
 ## <a name="methods"></a>Методы
  В следующей таблице показаны методы `IDebugPortPicker`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|Отображает указанный диалоговое окно, которое позволяет пользователю выбрать порт.|
-|[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Задает поставщик службы.|
+|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|Отображает указанное поле диалога, которое позволяет пользователю выбрать порт.|
+|[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Задает поставщик служб.|
 
 ## <a name="requirements"></a>Требования
  Заголовок: Msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

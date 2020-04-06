@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::EnumProperties | Документация Майкрософт
+title: IDebugStackFrame2::EnumProperties Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::EnumProperties
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba4cf74c41d321cc03684ec6717a9eea74e9a622
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321858"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719895"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
-Создает перечислитель для свойства, связанные с этим кадром стека, такие как локальные переменные.
+Создает регистратор для свойств, связанных с кадром стека, таких как локальные переменные.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,28 +51,28 @@ int EnumProperties ( 
 
 ## <a name="parameters"></a>Параметры
 `dwFieldSpec`\
-[in] Сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, указывающее, какие поля в перечисленных [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры должны быть заполнены.
+(в) Сочетание флагов [из DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, которое определяет, какие поля в перечисленных [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры должны быть заполнены.
 
 `nRadix`\
-[in] Основание системы счисления для использования в любой числовой сведения о форматировании.
+(в) Радикс, который будет использоваться при форматировании любой численной информации.
 
 `refiid`\
-[in] Идентификатор GUID фильтра, используемого для выбора [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры являются перечисляемые, такие как `guidFilterLocals`.
+(в) GUID фильтра, используемого для выбора [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структур, должны быть `guidFilterLocals`перечислены, такие как .
 
 `dwTimeout`\
-[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+(в) Максимальное время, в миллисекундах, ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
 
 `pcelt`\
-[out] Возвращает количество свойств в перечисление. Это то же самое, что и вызов метода [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) метод.
+(ваут) Возвращает количество перечисленных свойств. Это то же самое, что вызов метода [GetCount.](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)
 
 `ppEnum`\
-[out] Возвращает [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объект, содержащий список требуемых свойств.
+(ваут) Возвращает объект [IEnumDebugPropertyInfo2,](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) содержащий список желаемых свойств.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Так как этот метод позволяет все выбранные свойства требуется получить с помощью одного вызова, он выполняется быстрее, чем последовательно вызова [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) и [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) методы.
+ Поскольку этот метод позволяет извлекать все выбранные свойства с помощью одного вызова, он быстрее, чем последовательное вызов методов [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) и [EnumChildren.](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

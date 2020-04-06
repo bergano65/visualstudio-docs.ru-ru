@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Документация Майкрософт
+title: IdebugEngineProgram2::WatchForExpressionEvaluationOnThread Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e72292f403b28c66cddbcee623f27ddfcbe5c3aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345180"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730361"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Разрешает или запрещает вычисления выражения для данного потока, даже если программа остановлена.
+Позволяет (или запрещает) оценку выражения происходит на данном потоке, даже если программа остановлена.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,27 +49,27 @@ int WatchForExpressionEvaluationOnThread( 
 
 ## <a name="parameters"></a>Параметры
 `pOriginatingProgram`\
-[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, которая оценивает выражение.
+(в) Объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий программу, которая оценивает выражение.
 
 `dwTid`\
-[in] Указывает идентификатор потока.
+(в) Определяет идентификатор потока.
 
 `dwEvalFlags`\
-[in] Сочетание флагов из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления, укажите, каким образом будет осуществляться вычисления.
+(в) Комбинация флагов из перечисления [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) которые определяют, как должна выполняться оценка.
 
 `pExprCallback`\
-[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для отправки события отладки, возникающие во время вычисления выражения.
+(в) Объект [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) который будет использоваться для отправки событий отладки, которые происходят во время оценки выражения.
 
 `fWatch`\
-[in] Если ненулевое значение (`TRUE`), позволяет вычислять выражение в потоке, идентифицируемый `dwTid`; в противном случае — значение ноль (`FALSE`) запрещает вычисление выражений в этом потоке.
+(в) Если не-ноль (),`TRUE`позволяет оценку `dwTid`выражения на потоке, идентифицированном ; в противном`FALSE`случае, ноль () запрещает оценку выражения на этом потоке.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Когда диспетчер отладки сеансов (SDM) запрашивает программы, идентифицируемый `pOriginatingProgram` параметр, чтобы вычислить выражение, он уведомляет всех остальных присоединенных программ путем вызова данного метода.
+ Когда диспетчер отладки сеанса (SDM) `pOriginatingProgram` запрашивает программу, определенную параметром, для оценки выражения, он уведомляет все другие прилагаемые программы, вызывая этот метод.
 
- Вычисление выражений в одной программе может вызвать код в другой, из-за вычисление функции или оценки любого `IDispatch` свойства. По этой причине этот метод позволяет вычисления выражения для запуска и завершения, несмотря на то, что поток может быть остановлена в этой программе.
+ Оценка экспрессии в одной программе может привести к запуску `IDispatch` кода в другой из-за оценки функций или оценки любых свойств. Из-за этого этот метод позволяет оценивать выражения для запуска и завершения, даже если поток может быть остановлен в этой программе.
 
 ## <a name="see-also"></a>См. также
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName | Документация Майкрософт
+title: IDebugCoreServer3::GetServerName Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerName
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fe2a6425e55e3e0fdb56dc1e4cb4429dd9d4df3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf8233a4e2e37478a5818da2c27e498fcf954de9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327028"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732859"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Извлекает имя сервера.
@@ -41,16 +41,16 @@ int GetServerName(
 
 ## <a name="parameters"></a>Параметры
 `pbstrName`\
-[out] Возвращает имя сервера.
+(ваут) Возвращает имя сервера.
 
 > [!NOTE]
-> Вызывающий объект несет ответственность за освобождение строки.
+> Звонящий отвечает за освобождение строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Понятное имя сервера, вызов [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) метод.
+ Для получения дружественного имени сервера позвоните в метод [GetServerFriendlyName.](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

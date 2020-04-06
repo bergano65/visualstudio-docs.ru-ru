@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule | Документация Майкрософт
+title: IDebugModuleLoadEvent2:GetModule Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2::GetModule
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ee91686051440fe44efd1f4e4f9ba933f3e0c99
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323702"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726720"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
-Возвращает модуль, для которого создается загрузке или выгрузке.
+Получает модуль, который загружается или выгружается.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,16 +45,16 @@ int GetModule( 
 
 ## <a name="parameters"></a>Параметры
 `pModule`\
-[out] Возвращает [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , представляющий модуль, который загрузкой или выгрузкой.
+(ваут) Возвращает объект [IDebugModule2,](../../../extensibility/debugger/reference/idebugmodule2.md) представляющий модуль, который загружается или разгружается.
 
 `pbstrDebugMessage`\
-[in, out] Возвращает необязательное сообщение, описывающее данное событие. Если этот параметр имеет значение null, сообщение не запрашивается.
+(в, вне) Возвращает дополнительное сообщение, описывающее это событие. Если этот параметр является нулевая величина, сообщение не запрашивается.
 
 `pbLoad`\
-[in, out] Ненулевое значение (`TRUE`) Если модуль является загрузка и ноль (`FALSE`) Если модуль выгружается. Если этот параметр имеет значение null, состояние не запрашивается.
+(в, вне) Nonzero`TRUE`( ), если модуль загружается и ноль ( ),`FALSE`если модуль разгрузки. Если этот параметр является нулевая величина, статус не запрашивается.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)

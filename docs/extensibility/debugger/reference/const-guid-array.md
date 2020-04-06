@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY | Документация Майкрософт
+title: CONST_GUID_ARRAY Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4eb1cf0a94a427363bc54b7b204f20d9447db0c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346519"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737637"
 ---
-# <a name="constguidarray"></a>CONST_GUID_ARRAY
-Структура, содержащая список `GUID`s.
+# <a name="const_guid_array"></a>CONST_GUID_ARRAY
+Структура, соотвественная списка `GUID`s.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,20 +43,20 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>Участники
 `dwCount`\
-Число `GUID`s в `Members` массива.
+Количество `GUID`s в `Members` массиве.
 
 `Members`\
-Массив `GUID`s.
+Массив `GUID`с.
 
 ## <a name="remarks"></a>Примечания
-Эта структура передается [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод и возвращается из [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) методы.
+Эта структура передается методу [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) и возвращается из методов [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [WatchForProviderEvents.](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
-Владелец экземпляра этой структуры отвечает за освобождение памяти, выделенной.
+Владелец экземпляра этой структуры несет ответственность за освобождение любой выделенной памяти.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

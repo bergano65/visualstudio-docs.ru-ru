@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Документация Майкрософт
+title: DEBUG_REASON Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346169"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737423"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
-Указывает, почему был запущен процесс для отладки.
+# <a name="debug_reason"></a>DEBUG_REASON
+Уточняется, почему процесс был запущен для отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,27 +50,27 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>Поля
 `DEBUG_REASON_ERROR`\
-Произошла общая ошибка (используется как условие по умолчанию при ни с одним другим причинам, по размеру).
+Произошла неспецифическая ошибка (это используется в качестве условия по умолчанию, когда ни одна из других причин не подходит).
 
 `DEBUG_REASON_USER_LAUNCHED`\
 Процесс был запущен по запросу пользователя.
 
 `DEBUG_REASON_USER_ATTACHED`\
-Уже выполняемым процессам был подключен к этим пользователем.
+Уже запущенный процесс был присоединен к пользователю.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-Процесс автоматически присоединяется к, если оно было запущено.
+Процесс был автоматически присоединен к тому, когда он был запущен.
 
 `DEBUG_REASON_CAUSALITY`\
-Процесс был запущен из-за *Just-In-Time* событие отладки (JIT).
+Процесс был запущен из-за события отладки *Just-In-Time* (JIT).
 
 ## <a name="remarks"></a>Примечания
-Возвращаемые [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) метод.
+Вернулся из метода [GetDebugReason.](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

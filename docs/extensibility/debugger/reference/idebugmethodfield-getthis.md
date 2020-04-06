@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetThis | Документация Майкрософт
+title: IDebugMethodField::GetThis Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetThis method
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 426fc0c74b44b1f137752814f9b6aaeff150baa8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324066"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727164"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
-Получает `this` (`Me` в [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) указатель на объект, содержащий метод.
+Получает `this` (в)`Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]указатель объекта, содержащего метод.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetThis(
 
 ## <a name="parameters"></a>Параметры
 `ppClass`\
-[out] Возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект, представляющий указатель «this».
+(ваут) Возвращает объект [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) представляющий "этот" указатель.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- В объектно ориентированных языках обычно имеется неявный указатель указывает на текущий экземпляр класса. Этот процесс называется `this` в C# / C++ и в качестве `Me` в [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].
+ В объектно-ориентированных языках, как правило, подразумевается указатель на текущее мгновенное значение класса. Это известно `this` как в C /C `Me` е [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]и как в .
 
 ## <a name="see-also"></a>См. также
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
