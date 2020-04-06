@@ -1,5 +1,5 @@
 ---
-title: Функция Сккжетверсион | Документация Майкрософт
+title: Функция SccGetVersion (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetVersion function
 ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69078200743f30c4ecfedce8e9be05ef9e7ce20b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a563a7d1d65dc4c6564abd4e337242eea1aa9924
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721481"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700677"
 ---
 # <a name="sccgetversion-function"></a>Функция SccGetVersion
-Эта функция возвращает номер версии API подключаемого модуля системы управления версиями, поддерживаемый подключаемым модулем системы управления версиями.
+Эта функция получает номер версии подключаемого к источнику API управления, поддерживаемый плагином управления исходным элементом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,18 +29,18 @@ LONG SccGetVersion(void);
 ```
 
 #### <a name="parameters"></a>Параметры
- Отсутствует.
+ Нет.
 
 ## <a name="return-value"></a>Возвращаемое значение
- @No__t_0 тип данных, содержащий номер версии поддерживаемого интерфейса API подключаемого модуля системы управления версиями:
+ Тип `LONG` данных, содержащий номер версии поддерживаемого API подключаемого элемента управления исходным управлением:
 
 |WORD|Описание|
 |----------|-----------------|
-|HIWORD|Основной номер версии|
-|ловорд|Дополнительный номер версии|
+|ПРИВЕТСЛОВОЕ СЛОВО|Основной номер версии|
+|СЛОВО|Дополнительный номер версии|
 
-## <a name="remarks"></a>Заметки
- Например, если подключаемый модуль системы управления версиями поддерживает версию 1,3 API подключаемого модуля системы управления версиями, эта функция возвратит 0x0103.
+## <a name="remarks"></a>Примечания
+ Например, если плагин управления исходным источником поддерживает версию 1.3 API подключаемого к исходного управления, эта функция будет возвращать 0x0103.
 
 ## <a name="see-also"></a>См. также
 - [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)

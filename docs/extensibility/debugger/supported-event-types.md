@@ -1,89 +1,89 @@
 ---
-title: Поддерживаемые типы событий | Документация Майкрософт
+title: Поддерживаемые типы событий Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c4ee45e1a3a7efeb990fcb6f9073420a99dbe7c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351093"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712803"
 ---
 # <a name="supported-event-types"></a>Поддерживаемые типы событий
-Отладка в Visual Studio в настоящее время поддерживает следующие типы событий:
+Отладка Visual Studio в настоящее время поддерживает следующие типы событий:
 
 - Асинхронные события
 
-   Уведомить диспетчер отладки сеансов (SDM) и IDE, изменения состояния отлаживаемого приложения. Эти события обрабатываются в свободное время, SDM и интегрированной среды разработки. Ответ не отправляется в модуль отладки (DE), после обработки события. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) и [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) интерфейсы являются примерами асинхронные события.
+   Сообщите диспетчеру отладки сеанса (SDM) и IDE о том, что состояние отладитого приложения меняется. Эти мероприятия обрабатываются в свободное время SDM и IDE. Ответ на отладку (DE) после обработки события не отправляется. Интерфейсы [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) и [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) являются примерами асинхронных событий.
 
 - Синхронные события
 
-   Уведомите SDM и IDE, изменения состояния отлаживаемого приложения. Единственное различие между эти события и асинхронные события является, что ответ отправляется с помощью параметра [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) метод.
+   Сообщите SDM и IDE о том, что состояние отладки приложения меняется. Единственное различие между этими событиями и асинхронными событиями заключается в том, что ответ отправляется с помощью метода [ContinueFromSynusEvent.](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
 
-   Отправка синхронных событий полезно в том случае, если необходимо, чтобы ваш DE, чтобы продолжить обработку после интегрированной среды разработки, получает и обрабатывает событие.
+   Отправка синхронного события полезна, если вам нужно, чтобы ваше DE продолжила обработку после получения и обработки события IDE.
 
-- Синхронные события остановки "или" Остановка событий
+- Синхронная остановка событий или остановка событий
 
-   Уведомите SDM и интегрированной среды разработки, что отлаживаемого приложения прекратила выполнение кода. При отправке событии остановки с помощью метода [событий](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) параметр является обязательным. Остановка события унаследованные путем вызова одного из следующих методов:
+   Сообщите SDM и IDE о том, что отладка приложения прекратила выполнение кода. При отправке события остановки с помощью метода [Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)требуется параметр [IDebugThread2.](../../extensibility/debugger/reference/idebugthread2.md) Остановка событий продолжается вызовом к одному из следующих методов:
 
-  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)
+  - [Выполнить](../../extensibility/debugger/reference/idebugprogram2-execute.md)
 
-  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)
+  - [Шаг](../../extensibility/debugger/reference/idebugprogram2-step.md)
 
-  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)
+  - [Продолжить](../../extensibility/debugger/reference/idebugprogram2-continue.md)
 
-    Интерфейсы [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) являются примерами событий остановки.
+    Интерфейсы [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) являются примерами остановки событий.
 
   > [!NOTE]
-  > Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.
+  > Асинхронные события остановки не поддерживаются. Это ошибка, чтобы отправить асинхронное событие остановки.
 
 ## <a name="discussion"></a>Обсуждение
- Фактическую реализацию событий зависит от структуры вашей DE. Тип каждое событие, отправленное определяется его атрибутов, которые настраиваются при создании DE. Например, может отправить один DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) как событие асинхронной, то время как другой может отправлять как событие остановки.
+ Фактическая реализация событий зависит от дизайна вашего DE. Тип отправленного события определяется его атрибутами, которые устанавливаются при проектировании DE. Например, один DE может отправить [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) как асинхронное событие, в то время как другой может отправить его в качестве события остановки.
 
- В следующей таблице указано, какие программы и поток параметры являются обязательными для какие события, а также типы событий. Любое событие может быть синхронным. Событие не должен быть синхронными.
+ В следующей таблице указывается, какие параметры программы и потока необходимы для каких событий, а также типов событий. Любое событие может быть синхронным. Ни одно событие не должно быть синхронным.
 
 > [!NOTE]
-> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) он необходим для всех событий.
+> Интерфейс [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) необходим для всех событий.
 
-|событие|IDebugProgram2|IDebugThread2|События остановки|
+|Событие|IDebugProgram2|IDebugThread2|Остановка событий|
 |-----------|--------------------|-------------------|---------------------|
-|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
+|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Обязательно|Обязательно|Да|
-|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
-|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
-|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
+|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
+|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
+|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|Обязательно|Обязательно|Да|
-|[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Обязательно|Обязательно|Нет|
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Нельзя использовать|Нельзя использовать|Нет|
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Нельзя использовать|Нельзя использовать|Нет|
+|[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Обязательно|Обязательно|нет|
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Не разрешено|Не разрешено|нет|
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Не разрешено|Не разрешено|нет|
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Обязательно|Обязательно|Да|
-|[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Может быть|
+|[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|Может быть|
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Обязательно|Обязательно|Да|
-|[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Может быть|
+|[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|Может быть|
 |[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|Обязательно|Обязательно|Да|
 |[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|Обязательно|Обязательно|Да|
-|[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Может быть|
-|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|Обязательно|Разрешено, хотя и не требуется|Нет|
-|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
-|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|Обязательно|Разрешено, хотя и не требуется|Нет|
-|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|Обязательно|Разрешено, хотя и не требуется|Нет|
-|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|Обязательно|Разрешено, хотя и не требуется|Нет|
-|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|Обязательно|Разрешено, хотя и не требуется|Нет|
-|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
+|[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|Может быть|
+|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|Обязательно|Разрешено, но не требуется|нет|
+|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
+|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|Обязательно|Разрешено, но не требуется|нет|
+|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|Обязательно|Разрешено, но не требуется|нет|
+|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|Обязательно|Разрешено, но не требуется|нет|
+|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|Обязательно|Разрешено, но не требуется|нет|
+|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
 |IDebugStopCompleteEvent2|Обязательно|Обязательно|Да|
 |[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|Обязательно|Обязательно|Да|
-|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
-|[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|Обязательно|Обязательно|Нет|
-|[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|Обязательно|Обязательно|Нет|
-|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
+|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
+|[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|Обязательно|Обязательно|нет|
+|[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|Обязательно|Обязательно|нет|
+|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|Разрешено, но не требуется|Разрешено, но не требуется|нет|
 
 ## <a name="see-also"></a>См. также
 - [Отправка событий](../../extensibility/debugger/sending-events.md)

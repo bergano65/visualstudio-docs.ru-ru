@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Документация Майкрософт
+title: IDebugExceptionEventEvent2::GetException Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetException
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 691df8f5a212f1d854d87076a215402c7ce0053c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310506"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729861"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Возвращает подробное описание исключение, которое возникает это событие.
+Получает подробное описание исключения, которое произвело это событие.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetException( 
 
 ## <a name="parameters"></a>Параметры
 `pExceptionInfo`\
-[in, out] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, который заполняется описание исключения.
+(в, вне) [Структура EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) заполненная описанием исключения.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
 
- [C++ только] Вызывающий объект отвечает за освобождение все строки в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, а также освобождение [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекта в структуре.
+ (только си) Звонящий отвечает за освобождение любых строк в [структуре EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) а также за освобождение объекта [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) в структуре.
 
 ## <a name="see-also"></a>См. также
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

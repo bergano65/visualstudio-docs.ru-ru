@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags | Документация Майкрософт
+title: IntelliSenseHostFlags Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d0e66f70b91985882df5691d05175995b4f6ca8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328081"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710272"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Указывает флаги узла IntelliSense.
@@ -40,11 +40,11 @@ enum IntellisenseHostFlags
 
 |Участники|Описание|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|Контекстный буфер доступен только для чтения.|
-|`IHF_NOSEPARATESUBJECT`|Нет текста темы. Буфер контекста содержит целевой объект IntelliSense (подразумевает `!IHF_READONLYCONTEXT`).|
-|`IHF_SINGLELINESUBJECT`|Текст темы не многопроцессорного-строки с поддержкой.|
+|`IHF_READONLYCONTEXT`|Буфер контекста читается только для чтения.|
+|`IHF_NOSEPARATESUBJECT`|Нет текста темы. Контекстный буфер содержит цель IntelliSense (подразумевается). `!IHF_READONLYCONTEXT`|
+|`IHF_SINGLELINESUBJECT`|Текст темы не является многолинейным.|
 |`IHF_FORCECOMMITTOCONTEXT`|Эквивалентно `CanCommitIntoReadOnlyBuffer`.|
-|`IHF_OVERTYPE`|Изменения (в предмета или контекста) должны выполняться в режиме замены.|
+|`IHF_OVERTYPE`|Редактирование (в предмете или контексте) должно осуществляться в режиме овертипа.|
 
 ## <a name="requirements"></a>Требования
  SingleFileeditor.idl

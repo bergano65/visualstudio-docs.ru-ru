@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Документация Майкрософт
+title: IDebugСимволпровайдер::GetAddressesFromContext Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff38d2bd286c0a1ff82aafc3526936447be69056
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335218"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719434"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
-Этот метод сопоставляет контекст документа в массив адресов отладки.
+Этот метод отображает контекст документа в массив адресов отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,24 +47,24 @@ int GetAddressesFromContext(
 
 ## <a name="parameters"></a>Параметры
 `pDocContext`\
-[in] Контекст документа.
+(в) Контекст документа.
 
 `fStatmentOnly`\
-[in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
+(в) Если true, ограничивает адреса отладки одним утверждением.
 
 `ppEnumBegAddresses`\
-[out] Возвращает перечислитель для начала отладки адреса, связанные с этой инструкции или строке.
+(ваут) Возвращает регистратор для исходных отладочных адресов, связанных с этой выпиской или строкой.
 
 `ppEnumEndAddresses`\
-[out] Возвращает [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) перечислитель для конечного адреса отладки, связанные с этой инструкции или строке.
+(ваут) Возвращает enumerator [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) для адресов окончания отладки, связанных с этим утверждением или строкой.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Контекст документа обычно обозначает диапазон строк источника. Этот метод содержит начальный и конечный адреса отладки связанных с такими строками. Некоторые языки допускают инструкций, которые охватывают несколько строк или строк, содержащих более одной инструкции. Этот метод предоставляет флаг для ограничения отладки адреса для одной инструкции.
+ Контекст документа обычно указывает диапазон исходных строк. Этот метод обеспечивает начальные и окончание отладки адреса, связанные с этими строками. Некоторые языки позволяют операторы, которые охватывают несколько строк, или строки, которые содержат более одного оператора. Этот метод предоставляет флаг для ограничения адресов отладки одним утверждением.
 
- Вполне возможно, для одной инструкции иметь несколько адресов отладки, как и в случае шаблонов.
+ Одно утверждение может иметь несколько адресов отладки, как в случае шаблонов.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

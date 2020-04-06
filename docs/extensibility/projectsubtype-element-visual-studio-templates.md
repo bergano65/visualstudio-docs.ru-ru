@@ -1,5 +1,5 @@
 ---
-title: Элемент ProjectSubType (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент ProjectSubType (Шаблоны визуальной студии) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - ProjectSubType element [Visual Studio Templates]
 - <ProjectSubType> element [Visual Studio Templates]
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16852378609b058bc1f5c1c02ea2ad54a37a2ac9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335924"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701831"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>Элемент ProjectSubType (шаблоны Visual Studio)
-Разделяет разновидность значение, указанное в шаблоне `ProjectType` элемент.
+# <a name="projectsubtype-element-visual-studio-templates"></a>Элемент ProjectSubType (шаблоны Визуальной студии)
+Классифицирует шаблон в подкатегорию значения, `ProjectType` указанного в элементе.
 
- \<VSTemplate > \<TemplateData > \<ProjectSubType >
+ \<VSTemplate \<> TemplateData> \<ProjectSubType>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,10 +36,10 @@ ms.locfileid: "66335924"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -50,25 +50,25 @@ ms.locfileid: "66335924"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Это значение задает подкатегорию шаблона.
+ Это значение определяет подкатегорию шаблона.
 
 ## <a name="remarks"></a>Примечания
  `ProjectSubType` — необязательный дочерний элемент элемента `TemplateData`.
 
- `ProjectSubType` Элемент предоставляет подкатегории для [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) элемент. Это значение может включать:
+ Элемент `ProjectSubType` обеспечивает подкатегорию элемента [ProjectType.](../extensibility/projecttype-element-visual-studio-templates.md) Это значение может включать в себя:
 
-- `SmartDevice-NETCFv1`: Указывает, что целевые объекты шаблона [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 1.0.
+- `SmartDevice-NETCFv1`: Указывает, что шаблон нацелен [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] на версию 1.0.
 
-- `SmartDevice-NETCFv2`: Указывает, что целевые объекты шаблона [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.
+- `SmartDevice-NETCFv2`: Указывает, что шаблон нацелен [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] на версию 2.0.
 
-  Если шаблон содержит `ProjectType` элемент со значением `Web`, `ProjectSubType` элемент указывает язык программирования шаблона. Этот элемент может иметь следующие значения:
+  Если шаблон содержит `ProjectType` элемент со `Web`значением, элемент `ProjectSubType` определяет язык программирования шаблона. Этот элемент может иметь следующие значения:
 
-- `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] веб-проекта или элемента.
+- `CSharp`: Упомянет, что [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблон создает веб-проект или элемент.
 
-- `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] веб-проекта или элемента.
+- `VisualBasic`: Упомянет, что [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] шаблон создает веб-проект или элемент.
 
 ## <a name="example"></a>Пример
- В следующем примере показано метаданные для шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения для устройства [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.
+ В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] проекта для приложения устройства, ориентированного на версию 2.0.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,6 +96,6 @@ ms.locfileid: "66335924"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Элемент ProjectType (шаблоны Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

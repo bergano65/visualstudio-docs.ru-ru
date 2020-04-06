@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2::GetPortName | Microsoft Docs
+title: IDebugPortRequest2:GetPortName Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2::GetPortName
 ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e8017237af68b3dc414dc64bf6ae077387f0a600
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 67121e98f2d506aa16c2b4dc3fff2ad5128fb93b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340383"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724814"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
-Получает имя порта.
+Получает название порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetPortName( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrPortName`\
-[out] Возвращает имя порта.
+(ваут) Возвращает название порта.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) обычно передается интерфейс из пакета отладки (клиент) для поставщика порта (сервер), чтобы получить соединение к порту. Размер пакета отладки и поставщика порта известно возможные варианты для порта. Если простой строки можно описать порт, а затем `IDebugPortRequest2::GetPortName` метод имеет достаточно сведений для подключения. В противном случае можно указать дополнительные интерфейсы клиентом, который можно получить с сервера с помощью `IDebugPortRequest2::QueryInterface`.
+ Интерфейс [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) обычно передается от пакета отладки (клиента) поставщику порта (серверу) для получения подключения к порту. Как отладка пакет и поставщик порта знают о возможных вариантов для порта. Если простая строка может описать порт, то `IDebugPortRequest2::GetPortName` метод имеет достаточно информации, чтобы сделать соединение. В противном случае, дополнительные интерфейсы могут быть предоставлены `IDebugPortRequest2::QueryInterface`клиентом, которые могут быть получены на сервере с помощью.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

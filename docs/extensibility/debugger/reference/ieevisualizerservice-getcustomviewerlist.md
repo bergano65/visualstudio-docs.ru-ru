@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList | Документация Майкрософт
+title: IEEVisualizerService::GetCustomViewerList Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350173"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718018"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-Этот метод возвращает список визуализаторов типов, эта служба, о которых известно.
+Этот метод возвращает список визуализаторов типов, о которым эта служба знает.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,24 +47,24 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Параметры
 `celtSkip`\
-[in] Число визуализаторы для пропуска.
+(в) Количество визуализаторов, чтобы пропустить.
 
 `celRequested`\
-[in] Число визуализаторы для извлечения (также указывает размер `rgViewers` массива).
+(в) Количество визуализаторов для получения (также указывает `rgViewers` размер массива).
 
 `rgViewers`\
-[in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
+(в, вне) Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур, которые должны быть заполнены.
 
 `pceltFetched`\
-[out] Число фактически извлеченных визуализаторы.
+(ваут) Количество визуальных элементов фактически извлечено.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) передает запрос в этот метод как часть поддержки для визуализаторов типов. Если средство оценки выражений также поддерживает пользовательские средства просмотра для одного типа, оно может Дописывать соответствующим образом заполненную [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структуры для этих пользовательских средств просмотра, в список. Убедитесь, что [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) отражает этих дополнительных средств просмотра.
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) передает запрос на этот метод в рамках поддержки визуализаторов типов. Если оценщик выражения также поставляет пользовательские зрители для того же типа, он может придумать надлежащим образом заполнены [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структуры для тех пользовательских зрителей в список. Убедитесь, что [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) отражает эти дополнительные зрители.
 
- См. в разделе [визуализатор типов и пользовательские средства просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Дополнительные сведения о различиях между визуализаторы, а также средства просмотра.
+ [Подробную](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) информацию о различиях между визуализаторами и зрителями можно узнать о различиях между визуализаторами и зрителями.
 
 ## <a name="see-also"></a>См. также
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

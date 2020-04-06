@@ -1,57 +1,57 @@
 ---
-title: Практическое руководство. Открытие стандартных редакторов | Документация Майкрософт
+title: 'Как: Открытые стандартные редакторы Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
 - projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c85ab7f10881d76fbefea471851007f3d13da9b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f42cfa64106acc41358568f4c8f6bca2cd1141fd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325451"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710789"
 ---
-# <a name="how-to-open-standard-editors"></a>Практическое руководство. Стандартные редакторы
-При открытии стандартного редактора, позволить определить стандартный редактор для назначенного типа файлов, вместо указания проектного редактора для файла интегрированной среды разработки.
+# <a name="how-to-open-standard-editors"></a>Как: Открытые стандартные редакторы
+При открытии стандартного редактора вы позволяете IDE определять стандартный редактор для определенного типа файлов вместо указания конкретного редактора для файла.
 
- Выполните следующую процедуру для реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод. Файл проекта откроется в стандартный редактор.
+ Выполните следующую процедуру для реализации метода. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Это позволит открыть файл проекта в стандартном редакторе.
 
-## <a name="to-implement-the-openitem-method-with-a-standard-editor"></a>Чтобы реализовать метод OpenItem с помощью стандартного редактора
+## <a name="to-implement-the-openitem-method-with-a-standard-editor"></a>Реализация метода OpenItem со стандартным редактором
 
-1. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) для определения ли файл объекта данных документа уже открыт.
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> Звоните`RDT_EditLock`() чтобы определить, открыт ли файл объектов данных документа.
 
-2. Если файл уже открыт, resurface файл путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> метод, указывая значение `IDO_ActivateIfOpen` для `grfIDO` параметра.
+2. Если файл уже открыт, покройте файл, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> позвонив в `IDO_ActivateIfOpen` метод, указав значение `grfIDO` параметра.
 
-     Если файл открыт и принадлежит другому проекту чем вызывающего проекта документа, ваш проект получает предупреждение, что редактор открывается из другого проекта. Затем отображается окно файла.
+     Если файл открыт и документ принадлежит другому проекту, чем проект вызова, проект получает предупреждение о том, что открываемый редактор принадлежит другому проекту. Затем всплывает окно файла.
 
-3. Если документ не открыт или не в таблице выполняющихся документов, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод (`OSE_ChooseBestStdEditor`) для открытия стандартного редактора для файла.
+3. Если документ не открыт или не находится в <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> таблице`OSE_ChooseBestStdEditor`подходящего документа, позвоните в метод () — открыть стандартный редактор для файла.
 
-     При вызове метода, интегрированная среда разработки выполняет следующие задачи:
+     При вызове метода IDE выполняет следующие задачи:
 
-    1. Интегрированной среды разработки сканирует редакторов / {guidEditorType} / расширения раздел реестра, чтобы определить, какой редактор можно открыть файл и имеет наивысший приоритет для этого.
+    1. IDE сканирует редакторы /«guidEditorType»/расширения подключили в реестре, чтобы определить, какой редактор может открыть файл и имеет наивысший приоритет для этого.
 
-    2. После интегрированной среды разработки определяет, какой редактор можно открыть файл, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Реализация редактора, этот метод возвращает сведения, которые требуются для интегрированной среды разработки для вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> и сайта открытый документ.
+    2. После того, как IDE определил, какой редактор <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>может открыть файл, IDE вызывает . Реализация редактором этого метода возвращает информацию, необходимую <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> для вызова IDE и сайта недавно открытого документа.
 
-    3. Наконец, интегрированной среды разработки загружает документ в интерфейсе обычные сохраняемости, такие как <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.
+    3. Наконец, IDE загружает документ, используя обычный <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>интерфейс настойчивости, например.
 
-    4. Если ранее определено интегрированной среды разработки, что иерархия или элемент иерархии доступен, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> метод в проекте для получения контекста на уровне проекта <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> указатель для передачи обратно с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> вызова метода.
+    4. Если IDE ранее определило, что элемент иерархии или иерархии <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> доступен, IDE вызывает метод <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> проекта, чтобы получить <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> указатель контекста на уровне проекта, чтобы передать обратно с вызовом метода.
 
-4. Вернуть <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> указатель в интегрированную среду разработки, когда вызывает интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> в проекте, если вы хотите разрешить контекст get редактора из проекта.
+4. <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Верните указатель в IDE, когда <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> IDE призывает ваш проект, если вы хотите, чтобы редактор получил контекст из вашего проекта.
 
-     Выполнение этого действия позволяет проекта предложения дополнительных служб в редактор.
+     Выполнение этого шага позволяет проекту предлагать дополнительные услуги редактору.
 
-     Если представление документа или объекта представления документа был успешно помещен в узел в рамку окна, объект инициализируется с его данными путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A>.
+     Если объект представления документа или представления документа был успешно размещен в оконной раме, объект инициализируется с его данными, вызывая <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A>.
 
 ## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
-- [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)
-- [Практическое руководство. Открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)
-- [Практическое руководство. Открытие редакторов для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)
-- [Отображение файлов с помощью команды открытия файла](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+- [Откройте и сохраните элементы проекта](../extensibility/internals/opening-and-saving-project-items.md)
+- [Как: Открыть редакторы для конкретных проектов](../extensibility/how-to-open-project-specific-editors.md)
+- [Как: Открыть редакторы для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)
+- [Отображение файлов с помощью команды Open File](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

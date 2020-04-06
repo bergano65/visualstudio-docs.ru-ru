@@ -1,5 +1,5 @@
 ---
-title: Элемент TemplateGroupID (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент TemplateGroupID (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718655"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699077"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Элемент TemplateGroupID (шаблоны Visual Studio)
-Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент важен, если [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) имеет значение `false`. Если [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) имеет значение `true`, то шаблон элемента доступен во всех типах проектов.
+Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент имеет важное значение, когда [ShowByDefault (Visual Studio Templates)](../extensibility/showbydefault-visual-studio-templates.md) установлен на `false`. Когда [ShowByDefault (Visual Studio Templates)](../extensibility/showbydefault-visual-studio-templates.md) установлен на `true`, то шаблон элемента доступен во всех типах проектов.
 
- \<VSTemplate > \<TemplateData > \<TemplateGroupID >
+ \<VSTemplate \<> TemplateData> \<TemplateGroupID>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,10 +36,10 @@ ms.locfileid: "72718655"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -52,12 +52,12 @@ ms.locfileid: "72718655"
 
  Этот текст задает идентификатор для категории шаблонов элементов.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
  `TemplateGroupID` является элементом.
 
- Значение элемента `TemplateGroupID` используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version number >* \Projects \\) для фильтрации шаблонов, которые отображаются в окне **Добавление нового элемента.** диалоговое окно.
+ `TemplateGroupID` Значение элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE »SOFTWARE»Microsoft»VisualStudio\\*\<номер версии>*«Проекты»\\для фильтрации шаблонов, которые появляются в диалоговом окне **Добавления нового элемента.**
 
-|Значение Visual C++|Смысл|
+|Значение Visual C++|Значение|
 |------------------------|-------------|
 |VC-Native|Используется для собственных проектов. Кроме того, используется по умолчанию, когда не удается определить тип проекта.|
 |VC-Managed|Используется для управляемых проектов (/clr).|

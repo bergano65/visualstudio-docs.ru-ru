@@ -1,5 +1,5 @@
 ---
-title: Расширение свойств и окна свойств | Документация Майкрософт
+title: Расширение свойств и окна свойства (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313054"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711738"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Расширение свойств и окна свойств
-**Свойства** окно используется для просмотра и изменения свойств времени разработки и события выбранных объектов.
+# <a name="extend-properties-and-the-property-window"></a>Расширить свойства и окно свойства
+Окно **Свойств** используется для просмотра и отправления свойств времени проектирования и событий выбранных объектов.
 
- При выборе объекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], открытые свойства этого объекта отображаются в **свойства** окна. Дополнительные сведения см. в разделе [Общие сведения об окне свойств](../extensibility/internals/properties-window-overview.md).
+ При выборе объекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]в окне свойств свойств свойств отображаются в окне **Свойств.** Для получения дополнительной информации смотрите [обзор окна Свойств](../extensibility/internals/properties-window-overview.md).
 
-## <a name="in-this-section"></a>Содержание раздела
-- [Свойств в окне «Свойства»](../extensibility/exposing-properties-to-the-properties-window.md) объясняет, как может иметь пользовательских свойств в окне свойств.
+## <a name="in-this-section"></a>В этом разделе
+- [Выставляет свойства в окно Свойств](../extensibility/exposing-properties-to-the-properties-window.md) Объясняет, как можно отображать пользовательские свойства в окне Свойств.
 
-- [Получение свойств проекта](../extensibility/getting-project-properties.md) объясняется, как получить свойства проекта.
+- [Получить свойства проекта](../extensibility/getting-project-properties.md) Объясняет, как получить свойства проекта.

@@ -1,29 +1,29 @@
 ---
-title: Сравнение папки проекта с хранилищем системы управления версиями | Документация Майкрософт
+title: Сравните проект Фолдер с магазином управления исходом (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
 - source control plug-ins, local project folders
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd5b105a2fd24078bc85d8cf5b044351cd78be
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726129"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706864"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Необязательное сравнение папки локального проекта с системой управления версиями
-В API подключаемого модуля системы управления версиями 1,2 Сравнение между локальной папкой проекта и системой управления версиями осуществляется с помощью функций [сккдиркуеринфо](../../extensibility/sccdirqueryinfo-function.md) и [сккдирдифф](../../extensibility/sccdirdiff-function.md).
+В элементе управления source Plug-in API 1.2 сравнение локальной папки проекта и управления исходным кодом осуществляется с помощью функций [SccDir-''иенфофо](../../extensibility/sccdirqueryinfo-function.md) и [SccDirDiff.](../../extensibility/sccdirdiff-function.md)
 
- В **Обозреватель решений**, если вместо отдельного файла выбрана папка, контекстное меню **Compare Versions** вызывает New [сккдиркуеринфо](../../extensibility/sccdirqueryinfo-function.md) и [сккдирдифф](../../extensibility/sccdirdiff-function.md) в подключаемом модуле системы управления версиями.
+ В **solution Explorer**, если папка выбрана вместо отдельного файла, меню ярлыка **версий Сравнения** вызывает новые [SccDir'eryInfo](../../extensibility/sccdirqueryinfo-function.md) и [SccDirDiff](../../extensibility/sccdirdiff-function.md) в плагине управления исходным кодом.
 
-## <a name="new-capability-flags"></a>Новые флаги возможностей
+## <a name="new-capability-flags"></a>Флаги новых возможностей
  `SCC_CAP_DIRECTORYDIFF`
 
  `SCC_CAP_DIRECTORYCHECKOUT`
@@ -33,10 +33,10 @@ ms.locfileid: "72726129"
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- Функция `SccDirQueryInfo` вызывается перед `SccDirDiff`, чтобы определить, является ли рабочий каталог управляемым источником. Функция `SccDirDiff` отображает различия между текущим локальным каталогом и соответствующей папкой системы управления версиями. Эта команда запрашивает у подключаемого модуля системы управления версиями список изменений, внесенных в каталог. Подключаемый модуль системы управления версиями предоставляет собственный пользовательский интерфейс для просмотра различий.
+ Функция `SccDirQueryInfo` вызывается `SccDirDiff` раньше, чтобы определить, контролируется ли рабочий каталог. Функция `SccDirDiff` отображает различия между текущим локальным каталогом и соответствующей папкой управления исходом. Эта команда просит плагин управления исходным источником для отображения списка изменений в каталоге. Плагин управления исходным элементом обеспечивает свой собственный uii для отображения различий.
 
 > [!NOTE]
-> Эта функция использует те же флаги команд, что и [сккдифф](../../extensibility/sccdiff-function.md). В качестве поставщика подключаемого модуля системы управления версиями вы можете не поддерживать операцию быстрого поиска в каталогах.
+> Эта функция использует те же флаги команды, [что и SccDiff.](../../extensibility/sccdiff-function.md) Как поставщик плагинов управления исходным кодом, вы можете отказаться от поддержки операции «быстрый дифф» для каталогов.
 
 ## <a name="see-also"></a>См. также
 - [Новые возможности в API версии 1.2 подключаемого модуля системы управления версиями](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,46 +1,46 @@
 ---
-title: Алгоритм маршрутизации команд | Документация Майкрософт
+title: Алгоритм командной ракруты (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c98e145961f8d98c7ea939bd051a94ee68cd93f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342114"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709538"
 ---
-# <a name="command-routing-algorithm"></a>Алгоритм маршрутизации команд
-В Visual Studio команды обрабатываются ряд различных компонентов. Команды направляются из внутреннего контекста, который основывается на текущую выборку, самый внешний контекст (также известный как глобальные). Дополнительные сведения см. в разделе [команды доступности](../../extensibility/internals/command-availability.md).
+# <a name="command-routing-algorithm"></a>Алгоритм командной разработки
+В Visual Studio команды обрабатываются несколькими различными компонентами. Команды направляются из внутреннего контекста, который основан на текущем выборе, во внешний (также известный как глобальный) контекст. Для получения дополнительной [информации](../../extensibility/internals/command-availability.md)см.
 
-## <a name="order-of-command-resolution"></a>Порядок выполнения команды
- Команды передаются через следующие уровни контекст команды:
+## <a name="order-of-command-resolution"></a>Разрешение командования
+ Команды передаются через следующие уровни контекста командования:
 
-1. Надстройки. Во-первых, в среде предлагает команду, чтобы надстройки, которые присутствуют.
+1. Дополнительные предложения: Среда сначала предлагает команду для любых надсмов, которые присутствуют.
 
-2. Приоритет команды: Эти команды регистрируются с помощью метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>. Они вызываются для каждой команды в Visual Studio и вызываются в порядке, в котором они были зарегистрированы.
+2. Приоритетные команды: Эти команды регистрируются с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>. Они вызваны для каждой команды в Visual Studio, и называются в порядке, в котором они были зарегистрированы.
 
-3. Команды контекстного меню: Сначала находятся в контекстном меню команду предлагается в целевой объект команды, указанный в контекстное меню, а после этого для типичных маршрутизации.
+3. Команды меню контекста: Команда, расположенная в контекстном меню, сначала предлагается цели команды, которая предоставляется в меню контекста, а затем типичной реукторе.
 
-4. Панели инструментов задайте целевые объекты команд: Эти целевые объекты команд регистрируются при вызове <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>. `pCmdTarget` Параметр может быть `null`. Если это не `null`, а затем этот целевой объект команды используется для обновления любых команд на панели инструментов, вы настраиваете. Если оболочка — Настройка панели инструментов, то он передает рамка окна, в качестве `pCmdTarget` таким образом, чтобы все обновления для команды на панели инструментов последовательности через рамку окна, даже если он недопустим в фокусе.
+4. Панель инструментов устанавливает командные цели: эти <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>командные цели регистрируются при вызове. Параметр `pCmdTarget` может `null`быть . Если это `null`не так, то эта цель команды используется для обновления любых команд, расположенных на панели инструментов, которые вы настраиваете. Если оболочка настраивает панель инструментов, то она `pCmdTarget` проходит оконную раму так, чтобы все обновления команд на панели инструментов протекают через оконную раму, даже если она не находится в фокусе.
 
-5. Окно инструментов: Средство windows, которые обычно реализуют <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> интерфейс, необходимо также реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса таким образом, Visual Studio можно получить целевой объект команды, когда окно инструментов является активным окном. Тем не менее, если окно инструментов, который имеет фокус находится **проекта** окна, то команда отправляется <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейс, который является общий родительский объект для выбранных элементов. Если этот выбор распространяется на несколько проектов, команда отправляется <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> иерархии. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Интерфейс содержит <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> методы, которые аналогичны соответствующих команд на <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс.
+5. Окно инструмента: окна инструментов, <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> которые обычно реализуют интерфейс, также должны реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, чтобы Visual Studio мог получить цель команды, когда окно инструмента является активным окном. Однако, если окно инструмента, в котором фокус фокусируется, является <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> окном **Project,** то команда направляется в интерфейс, который является общим родителем выбранных элементов. Если этот выбор охватывает несколько проектов, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> команда направляется в иерархию. Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> содержит <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> методы, аналогичные соответствующим командам на <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейсе.
 
-6. Окно документа: Если команда имеет `RouteToDocs` установлен флаг его *.vsct* файла, Visual Studio выполняет поиск целевого объекта команды в объекте представления документа, равное либо экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> интерфейс или экземпляр документа объект () Обычно <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> интерфейс или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> интерфейс). Если в объекте представления документа не поддерживает команды, Visual Studio направляет команду, чтобы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, который возвращается. (Это необязательный интерфейс для объектов данных документа).
+6. Окно документа: Если в `RouteToDocs` файле *.vsct* у команды есть флаг, Visual Studio ищет цель команды на <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> объекте представления документа, которая является <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> либо <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> экземпляром интерфейса, либо экземпляром объекта документа (обычно интерфейсом или интерфейсом). Если объект представления документа не поддерживает команду, Visual Studio <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> направляет команду к возвращенному интерфейсу. (Это дополнительный интерфейс для объектов данных документов.)
 
-7. Текущей иерархии: Текущей иерархии может быть проект, который является владельцем активного окна документа или иерархии, который выбран в **обозревателе решений**. Visual Studio ищет <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, реализуемый в текущей или активных иерархии. Команды, которые являются допустимыми, каждый раз, когда иерархии активен, даже если фокус находится в окне документа элемент проекта должен поддерживать иерархия. Однако команды, которые применяются только тогда, когда **обозревателе решений** имеет фокус должен поддерживаться с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейса и его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> методы.
+7. Текущая иерархия: Текущая иерархия может быть проектом, владеющим действующим окном документа или иерархией, выбранной в **Solution Explorer.** Visual Studio ищет <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, который реализован в текущей или активной иерархии. Иерархия должна поддерживать команды, действительные всякий раз, когда иерархия активна, даже если в центре внимания находится оконное окно документа элемента проекта. Тем не менее, команды, которые применяются только тогда, когда <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> **Solution Explorer** имеет фокус должен быть поддержан с помощью интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> и его методов.
 
-     **Вырезать**, **копирования**, **вставить**, **удалить**, **Переименовать**, **введите**и **DoubleClick** команды требуют специальной обработки. Сведения о том, как обрабатывать **удалить** и **удалить** команды в иерархии, см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> интерфейс.
+     **Вырезать**, **Копировать**, **Вставить**, **Удалить**, **переименовать**, **Введите**, и **DoubleClick** команды требуют специальной обработки. Для получения информации о том, как обрабатывать команды <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> **Удаления** и **удаления** в иерархиях, см.
 
-8. Глобальные: Если команда не было обработано, упомянутых ранее контекстах, Visual Studio пытается направить ее VSPackage, которому принадлежит команду, которая реализует <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс. Если VSPackage уже не был загружен, он не загружается при Visual Studio вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод. Только тогда, когда загружается VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> вызывается метод.
+8. Глобальный: Если команда не была обработана ранее упомянутыми контекстами, Visual Studio пытается направить ее в <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> VSPackage, который владеет командой, которая реализует интерфейс. Если VSPackage уже не загружен, он не загружается, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> когда Visual Studio вызывает метод. VSPackage загружается только <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> тогда, когда метод вызывается.
 
 ## <a name="see-also"></a>См. также
-- [Конструктор команд](../../extensibility/internals/command-design.md)
+- [Командный дизайн](../../extensibility/internals/command-design.md)

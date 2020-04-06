@@ -1,99 +1,99 @@
 ---
-title: Пошаговое руководство. Добавление компонентов в пользовательский редактор | Документация Майкрософт
+title: 'Пошаговая прогулка: Добавление функций в пользовательский редактор Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fa926b21171c3e09b5a0f4d74e9415da090bf2f
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569079"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697789"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление компонентов в пользовательский редактор
-После создания пользовательского редактора к нему можно добавить дополнительные компоненты.
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>Прохождение: Добавление функций в пользовательский редактор
+После создания пользовательского редактора можно добавить в него больше функций.
 
 ## <a name="to-create-an-editor-for-a-vspackage"></a>Создание редактора для VSPackage
 
-1. Создайте пользовательский редактор с помощью шаблона проекта пакета Visual Studio.
+1. Создайте пользовательский редактор с помощью шаблона проекта Visual Studio Package.
 
-     Дополнительные сведения см. [в разделе Пошаговое руководство. Создание пользовательского редактора](../extensibility/walkthrough-creating-a-custom-editor.md).
+     Для получения дополнительной информации [см.](../extensibility/walkthrough-creating-a-custom-editor.md)
 
-2. Решите, должен ли редактор поддерживать одно или несколько представлений.
+2. Решите, хотите ли редактор поддерживать одно представление или несколько представлений.
 
-     Редактор, поддерживающий команду " **создать окно** " или имеющий представление формы и кода, требует наличия отдельных объектов данных документа и объектов представления документов. В редакторе, поддерживающем только одно представление, объект данных документа и объект представления документа могут быть реализованы в одном и том же объекте.
+     Редактору, который поддерживает команду **New Window** или имеет представление формы и представление кода, требуются отдельные объекты данных документов и объекты представления документов. В редакторе, который поддерживает только одно представление, объект данных документа и объект представления документа могут быть реализованы на одном объекте.
 
-     Пример нескольких представлений см. в разделе [Поддержка нескольких представлений документов](../extensibility/supporting-multiple-document-views.md).
+     Для примера нескольких представлений [см.](../extensibility/supporting-multiple-document-views.md)
 
-3. Реализуйте фабрику редактора, настроив интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>.
+3. Реализация фабрики редакторов <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> путем настройки интерфейса.
 
-     Дополнительные сведения см. в разделе [фабрики редактора](../extensibility/editor-factories.md).
+     Для получения дополнительной [информации см.](../extensibility/editor-factories.md)
 
-4. Решите, должен ли редактор использовать активацию на месте или упрощенное внедрение для управления окном объекта представления документов.
+4. Решите, хотите ли редактор использовать активацию на месте или упрощенное встраивание для управления окном объекта представления документа.
 
-     В упрощенном окне редактора внедрено стандартное представление документа, в то время как в окне редактора активации на месте в качестве представления документа размещается элемент управления ActiveX или другой активный объект. Дополнительные сведения см. в разделе [упрощенное внедрение](../extensibility/simplified-embedding.md) и [Активация на месте](/visualstudio/misc/in-place-activation?view=vs-2015).
+     Упрощенное окно редактора встраивания размещает стандартное представление документа, в то время как окно редактора активации на месте размещает элемент управления ActiveX или другой активный объект в качестве представления документа. Для получения дополнительной информации [In-place activation](/visualstudio/misc/in-place-activation?view=vs-2015)см. [Simplified Embedding](../extensibility/simplified-embedding.md)
 
-5. Реализуйте интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> для обработки команд.
+5. Реализация <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса для обработки команд.
 
-6. Обеспечение сохраняемости документов и реагирование на изменения внешних файлов:
+6. Обеспечить сохранение документов и ответ на внешние изменения файлов:
 
-    1. Чтобы сохранить файл, реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> и <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> в объекте данных документа в редакторе.
+    1. Чтобы сохранить файл, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> реализовать и на объекте данных документа редактора.
 
-    2. Чтобы реагировать на изменения внешних файлов, реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> в объекте данных документа редактора.
+    2. Чтобы реагировать на внешние <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> изменения файлов, реализуйте и на объекте данных документа редактора.
 
         > [!NOTE]
-        > Вызовите `QueryService` для <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>, чтобы получить указатель на `IVsFileChangeEx`.
+        > Позвоните, `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> чтобы получить `IVsFileChangeEx`указатель на .
 
-7. Координация событий изменения документа с помощью системы управления исходным кодом. Выполните следующие действия.
+7. Координировать работу событий по проверке исходного кода с помощью управления исходным кодом. Выполните следующие действия.
 
-    1. Получите указатель на `IVsQueryEditQuerySave2`, вызвав `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
+    1. Получить указатель, `IVsQueryEditQuerySave2` позвонив `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
 
-    2. При возникновении первого события изменения вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>.
+    2. При первом событии отсеивайте, позвоните в <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> метод.
 
-         Этот метод предлагает пользователю извлечь файл, если он еще не извлечен. Не забудьте обрабатывать условие "файл не извлечен" для AVERT ошибок.
+         Этот метод побуждает пользователя проверить файл, если он еще не выбыл. Убедитесь в том, чтобы обрабатывать "файл не проверил" условие, чтобы предотвратить ошибки.
 
-    3. Аналогичным образом, перед сохранением файла вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>.
+    3. Аналогичным образом, прежде чем <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> сохранить файл, позвоните в метод.
 
-         Этот метод предлагает пользователю сохранить файл, если он не был сохранен или был изменен с момента последнего сохранения.
+         Этот метод предлагает пользователю сохранить файл, если он не был сохранен или если он изменился после последнего сохранения.
 
-8. Включите окно " **Свойства** ", чтобы отобразить свойства для текста, выбранного в редакторе. Выполните следующие действия.
+8. Включите окно **Свойств** для отображения свойств для текста, выбранного в редакторе. Выполните следующие действия.
 
-    1. Вызывайте <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> каждый раз при изменении выбора текста, передавая реализацию <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
+    1. Звоните <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> каждый раз, когда изменение <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>выбора текста, проходя в вашей реализации .
 
-    2. Вызовите `QueryService` в службе <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, чтобы получить указатель на <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
+    2. `QueryService` Позвоните <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> на службу, <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>чтобы получить указатель на .
 
-9. Разрешить пользователям перетаскивать элементы между редактором и **панелью элементов**, а также между внешними редакторами (например, Microsoft Word) и **панелью элементов**. Выполните следующие действия.
+9. Позволяет пользователям перетаскивать и сбрасывать элементы между редактором и **Toolbox**или между внешними редакторами (например, Microsoft Word) и **Toolbox.** Выполните следующие действия.
 
-    1. Реализуйте `IDropTarget` в редакторе, чтобы предупредить интегрированную среду разработки о том, что редактор является целью перетаскивания.
+    1. Внедрить `IDropTarget` на редакторе, чтобы предупредить IDE, что ваш редактор является целевой броской.
 
-    2. Реализуйте интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> в представлении, чтобы редактор мог включать и отключать элементы на **панели элементов**.
+    2. Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> интерфейса на представлении, чтобы редактор мог включить и отключить элементы в **Toolbox.**
 
-    3. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> и вызовите `QueryService` в службе <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>, чтобы получить указатель на интерфейсы <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>.
+    3. Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> и `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> вызов службы для получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> указателя на интерфейсы и интерфейсы.
 
-         Эти действия позволяют пакету VSPackage добавлять новые элементы на **панель элементов**.
+         Эти шаги позволяют VSPackage добавлять новые элементы в **Toolbox.**
 
-10. Решите, хотите ли вы использовать другие дополнительные функции для редактора.
+10. Решите, нужны ли вам другие дополнительные функции для редактора.
 
-    - Если вы хотите, чтобы редактор поддерживал команды Find и Replace, реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
+    - Если вы хотите, чтобы редактор поддерживал поиск <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>и замену команд, реализуйте.
 
-    - Если вы хотите использовать окно инструментов структуры документа в редакторе, реализуйте `IVsDocOutlineProvider`.
+    - Если в редакторе требуется использовать окно инструмента `IVsDocOutlineProvider`набросков документов, реализуйте.
 
-    - Если вы хотите использовать строку состояния в редакторе, реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> и вызовите `QueryService`, чтобы <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> получить указатель на `IVsStatusBar`.
+    - Если вы хотите использовать панель статуса <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> в `QueryService` редакторе, реализуйте и вызывайте, <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> чтобы получить указатель `IVsStatusBar`на .
 
-         Например, редактор может отображать сведения о строках и столбцах, режим выделения (поток/поле) и режим вставки (INSERT/зачеркнутый).
+         Например, редактор может отображать информацию о строке/ колонке, режиме выбора (поток/поле) и режиме вставки (вставить/ переутомить).
 
-    - Если требуется, чтобы редактор поддерживал команду `Undo`, рекомендуется использовать модель диспетчера OLE-отмены. В качестве альтернативы можно сделать так, чтобы редактор обрабатывал команду `Undo` напрямую.
+    - Если вы хотите, чтобы `Undo` редактор поддерживал команду, рекомендуемый метод заключается в использовании модели диспетчера OLE undo. В качестве альтернативы можно понавести `Undo` редактора напрямую.
 
-11. Создайте данные реестра, включая идентификаторы GUID для VSPackage, меню, редактор и другие функции.
+11. Создавайте информацию о реестре, включая GUID для VSPackage, меню, редактор и другие функции.
 
-     Ниже приведен общий пример кода, который можно разместить в скрипте *. RGS* -файла, чтобы продемонстрировать, как правильно зарегистрировать редактор.
+     Ниже приводится общий пример кода, который вы бы положить в свой сценарий *файла .rgs,* чтобы продемонстрировать, как правильно зарегистрировать редактор.
 
     ```csharp
     NoRemove Editors
@@ -113,21 +113,21 @@ ms.locfileid: "73569079"
     }
     ```
 
-12. Реализация поддержки контекстно-зависимой справки.
+12. Реализация чувствительной к контексту поддержки справки.
 
-     Этот шаг позволяет предоставить справку F1 и поддержку окна динамической справки для элементов в редакторе. Дополнительные сведения см. [в разделе руководство. Предоставление контекста для редакторов](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015).
+     Этот шаг позволяет предоставить f1 Справка и динамическая справка окно поддержки элементов в вашем редакторе. Для получения дополнительной [How to: Provide context for editors](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015)информации см.
 
-13. Предоставьте объектную модель автоматизации из редактора, реализовав интерфейс `IDispatch`.
+13. Вынаните модель объекта автоматизации `IDispatch` от редактора, реализовав интерфейс.
 
      Для получения дополнительной информации см. [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).
 
 ## <a name="robust-programming"></a>Отказоустойчивость
 
-- Экземпляр редактора создается, когда интегрированная среда разработки вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Если редактор поддерживает несколько представлений, `CreateEditorInstance` создает как данные документа, так и объекты представления документов. Если объект данных документа уже открыт, `IVsEditorFactory::CreateEditorInstance``punkDocDataExisting` передается значение, отличное от NULL. Реализация фабрики редактора должна определить, совместим ли существующий объект данных документа, путем запроса соответствующих интерфейсов. Дополнительные сведения см. в разделе [Поддержка нескольких представлений документов](../extensibility/supporting-multiple-document-views.md).
+- Экземпляр редактора создается, когда <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> IDE вызывает метод. Если редактор поддерживает несколько представлений, `CreateEditorInstance` создается как данные документа, так и объекты представления документа. Если объект данных документа уже открыт, `punkDocDataExisting` ненулл-значение передается `IVsEditorFactory::CreateEditorInstance`. Реализация фабрики редактора должна определить, совместим ли существующий объект данных документа, задав запрос на соответствующие интерфейсы. Для получения дополнительной [информации](../extensibility/supporting-multiple-document-views.md)см.
 
-- Если используется упрощенный подход к внедрению, реализуйте интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>.
+- Если вы используете упрощенный подход к <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> встраиванию, реализуй интерфейс.
 
-- Если вы решили использовать активацию на месте, реализуйте следующие интерфейсы:
+- Если вы решили использовать активацию на месте, реализуем следующие интерфейсы:
 
    <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>
 
@@ -138,15 +138,15 @@ ms.locfileid: "73569079"
   > [!NOTE]
   > Интерфейс `IOleInPlaceComponent` используется, чтобы избежать слияния меню OLE 2.
 
-   Ваша реализация `IOleCommandTarget` обрабатывает команды, такие как **вырезание**, **копирование**и **Вставка**. При реализации `IOleCommandTarget`решите, требуется ли редактору собственный файл *. vsct* , чтобы определить собственную структуру меню команд или, если она может реализовывать стандартные команды, определенные [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Обычно редакторы используют и расширяют меню интегрированной среды разработки и определяют собственные панели инструментов. Однако часто требуется, чтобы редактор определял собственные конкретные команды в дополнение к использованию стандартного набора команд IDE. Редактор должен объявлять стандартные используемые им команды, а затем определять новые команды, контекстные меню, меню верхнего уровня и панели инструментов в *vsct* -файле. Если вы создаете редактор активации на месте, реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> и определите меню и панели инструментов для редактора в файле *vsct* , а не слияние меню с OLE 2.
+   Реализация `IOleCommandTarget` обрабатывает такие команды, как **Cut,** **Copy**и **Paste.** При реализации, `IOleCommandTarget`решить, требуется ли редактору свой собственный файл *.vsct* для определения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]своей собственной структуры меню команд или если он может реализовать стандартные команды, определенные . Как правило, редакторы используют и расширяют меню IDE и определяют свои собственные панели инструментов. Однако редактору часто необходимо определить свои собственные конкретные команды в дополнение к использованию стандартного набора команд IDE. Редактор должен декларировать стандартные команды, которые он использует, а затем определять любые новые команды, контекстные меню, меню верхнего уровня и панели инструментов в файле *.vsct.* Если вы создаете редактор активации <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> на месте, реализуйте и определяйте меню и панели инструментов для редактора в файле *.vsct* вместо того, чтобы использовать слияние меню OLE 2.
 
-- Чтобы команда меню кровдинг в пользовательском интерфейсе, следует использовать существующие команды в интегрированной среде разработки перед созданием новых команд. Общие команды определяются в *шаредкмддеф. vsct* и *шеллкмддеф. vsct*. Эти файлы устанавливаются по умолчанию в подкаталог Висуалстудиоинтегратион\коммон\инк установки [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].
+- Чтобы предотвратить скученность команды меню в uI, следует использовать существующие команды в IDE, прежде чем изобретать новые команды. Общие команды определяются в *SharedCmdDef.vsct* и *ShellCmdDef.vsct.* Эти файлы устанавливаются по умолчанию в субдиректоре [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] установки VisualStudioIntegration-Common-Inc.
 
-- `ISelectionContainer` может выражать как один, так и несколько элементов. Каждый выбранный объект реализуется как объект `IDispatch`.
+- `ISelectionContainer`может выражать как одиночный, так и несколько вариантов. Каждый выбранный объект `IDispatch` реализуется как объект.
 
-- Интегрированная среда разработки реализует `IOleUndoManager` как службу, доступную из <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> или как объект, экземпляр которого можно создать с помощью <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Редактор реализует интерфейс `IOleUndoUnit` для каждого действия `Undo`.
+- IDE реализует `IOleUndoManager` как услугу, <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> доступную от объекта или как объект, который может быть мгновенно через <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Ваш редактор реализует `IOleUndoUnit` интерфейс `Undo` для каждого действия.
 
-- Существует два места, в которых пользовательский редактор может предоставлять объекты автоматизации:
+- Существует два места, где пользовательский редактор может предоставить объекты автоматизации:
 
   - `Document.Object`
 
@@ -154,4 +154,4 @@ ms.locfileid: "73569079"
 
 ## <a name="see-also"></a>См. также
 
-- [Участие в модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md)
+- [Внести свой вклад в модель автоматизации](../extensibility/internals/contributing-to-the-automation-model.md)

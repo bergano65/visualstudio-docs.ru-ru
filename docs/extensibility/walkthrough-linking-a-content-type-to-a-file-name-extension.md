@@ -1,35 +1,35 @@
 ---
-title: Пошаговое руководство. Связывание типа контента с расширением имени файла | Документация Майкрософт
+title: 'Прохождение: Привязка типа содержимого к расширению имени файла (ru) Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e402979dc5b76b8693a4be7a80a3d5d98f889616
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 328be013b5d522938cd7450fc53d4866c632abb3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320671"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697082"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа контента с расширением имени файла
-Можно определить свой собственный тип содержимого и связать его расширение имени файла с помощью Managed Extensibility Framework (MEF) расширения редактора. В некоторых случаях расширение имени файла уже определен на языковой службе. Но, чтобы использовать его с MEF, необходимо по-прежнему связать его с типом содержимого.
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Прохождение: Свяжите тип содержимого с расширением имени файла
+Вы можете определить свой собственный тип содержимого и связать с ним расширение имени файла с помощью расширений рамочной инфраструктуры управления (MEF) редактора. В некоторых случаях расширение имени файла уже определяется языковой службой. Но, чтобы использовать его с MEF, вы все равно должны связать его с типом содержимого.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, не устанавливайте Visual Studio SDK в центре загрузки. Этот пакет включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установить пакет SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, вы не устанавливаете Visual Studio SDK из центра загрузки. Он включен в качестве дополнительной функции в Visual Studio установки. Вы также можете установить VS SDK позже. Для получения дополнительной информации, [см.](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
 
-1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `ContentTypeTest`.
+1. Создайте проект СЗ VSIX. (В **диалоге нового проекта** выберите **Visual C / Расширяемость,** затем **VSIX Project**.) Назовите решение. `ContentTypeTest`
 
-2. В **source.extension.vsixmanifest** файл, перейдите к **активы** и задайте **тип** поле **Microsoft.VisualStudio.MefComponent**, **источника** поле **проект в текущем решении**и **проекта** на имя проекта.
+2. В файле **source.extension.vsixmanifest** перейдите на вкладку **Активы** и установите поле **типа** на **Microsoft.VisualStudio.MefComponent**, поле **исходного** кода для **проекта в текущем решении,** и поле **проекта** на название проекта.
 
-## <a name="define-the-content-type"></a>Определить тип содержимого
+## <a name="define-the-content-type"></a>Определение типа содержимого
 
 1. Добавьте файл класса с именем `FileAndContentTypes`.
 
@@ -41,7 +41,7 @@ ms.locfileid: "66320671"
 
     3. Microsoft.VisualStudio.CoreUtility
 
-3. Добавьте следующий `using` директивы.
+3. Добавьте `using` следующие директивы.
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -50,14 +50,14 @@ ms.locfileid: "66320671"
 
     ```
 
-4. Объявите статический класс, который содержит определения.
+4. Объявить статический класс, содержащий определения.
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
     {. . .}
     ```
 
-5. В этом классе Экспорт <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> с именем «hid» и объявить его базового определения, чтобы быть «text».
+5. В этом классе <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> экспортировать имя "спрятал" и объявить свое базовое определение "текстом".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -71,7 +71,7 @@ ms.locfileid: "66320671"
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>Связать расширение имени файла с типом содержимого
 
-- Чтобы сопоставить расширение имени файла данного типа содержимого, экспортировать <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> , имеет расширение *.hid* и тип содержимого «скрыто».
+- Чтобы сопоставить этот тип содержимого с <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> расширением имени файла, вывесьте a, который имеет расширение *.hid* и тип содержимого "спрятал".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -88,13 +88,13 @@ ms.locfileid: "66320671"
     }
     ```
 
-## <a name="add-the-content-type-to-an-editor-export"></a>Добавление типа содержимого к экспорту редактора
+## <a name="add-the-content-type-to-an-editor-export"></a>Добавление типа содержимого в экспорт редактора
 
-1. Создайте расширение редактора. Например, можно использовать модуль глиф полей, описанные в [Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md).
+1. Создайте расширение редактора. Например, можно использовать расширение глифа, описанное в [Walkthrough: Создание глифа поля.](../extensibility/walkthrough-creating-a-margin-glyph.md)
 
-2. Добавьте в класс, определенный в этой процедуре.
+2. Добавьте класс, определенный в этой процедуре.
 
-3. При экспорте класс расширения, добавление <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> типа «hid», к нему.
+3. При экспорте класса расширения <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> добавьте к нему тип "спрятался".
 
     ```csharp
     [Export]
@@ -102,4 +102,4 @@ ms.locfileid: "66320671"
     ```
 
 ## <a name="see-also"></a>См. также
-- [Точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md)
+- [Языковой сервис и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)

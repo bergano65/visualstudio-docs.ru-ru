@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление зависимости в пакет VSIX | Документация Майкрософт
+title: 'Как: Добавление зависимости в пакет VSIX Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - package dll
 - vsix reference
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee6ebeb776e6aa85d5fba200ac357a7375fa2b99
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8b350f063c28762edf90edfe71330534451c75d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341049"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711068"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Практическое руководство. Добавление зависимости в пакет VSIX
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Как: Добавление зависимости в пакет VSIX
 
-Можно настроить развертывание пакета VSIX, который устанавливает все зависимости, которых еще нет на целевом компьютере. Для этого необходимо включить файл с зависимостями VSIX для *source.extension.vsixmanifest* файл.
+Можно настроить развертывание пакета VSIX, которое устанавливает любые зависимости, которые еще не присутствуют на целевом компьютере. Для достижения этой цели включите в файл *the source.extension.vsixmanifest* зависимости VSIX.
 
 ## <a name="to-add-a-dependency"></a>Добавление зависимости
 
-1. Откройте *source.extension.vsixmanifest* файл **разработки** представления. Перейдите к **зависимости** вкладку и нажмите кнопку **New**.
+1. Откройте файл *source.extension.vsixmanifest* в представлении **Design.** Перейдите на вкладку **"Зависимости"** и нажмите **"Новый".**
 
-2. Чтобы добавить установленное расширение: в **добавить новую зависимость** выберите **установлено расширение** и затем для **имя**, выберите расширение в списке.
+2. Чтобы добавить установленное расширение: в поле диалога **Add New Dependency** выберите **удлинение,** а затем, для **name,** выберите расширение в списке.
 
-3. Чтобы добавить другой файл VSIX, который не установлен: в **добавить новую зависимость** выберите **файл в файловой системе** , а затем использовать **Обзор** кнопку, чтобы выбрать VSIX.
+3. Чтобы добавить еще один VSIX, который не установлен: в диалоговом поле **Add New Dependency** выберите **файл в файловой системе,** а затем используйте кнопку **«Просмотр»** для выбора VSIX.
 
-## <a name="require-a-specific-visual-studio-release"></a>Требуется конкретный выпуск Visual Studio
+## <a name="require-a-specific-visual-studio-release"></a>Требуется специальный релиз Visual Studio
 
-Если расширение требует определенной версии Visual Studio 2017, например, это зависит от компонентов, выпущена в версии 15.3, можно указать номер сборки в VSIX **InstallationTarget**. Например выпуске 15.3 имеет ряд сборки "15.0.26730.3». Вы увидите сопоставление выпусков для номера сборки [здесь](../install/visual-studio-build-numbers-and-release-dates.md). Обратите внимание на то, что с помощью номер выпуска «15.3"не будет работать правильно.
+Если для расширения требуется конкретная версия Visual Studio 2017, например, это зависит от функции, выпущенной в 15.3, вы можете указать номер сборки в VSIX **InstallationTarget.** Например, выпуск 15.3 имеет номер сборки '15.0.26730.3'. Вы можете увидеть отображение релизов для создания чисел [здесь](../install/visual-studio-build-numbers-and-release-dates.md). Обратите внимание, что использование номера выпуска '15.3' не будет работать правильно.
 
-Если для расширения требуется 15.3 или более поздней версии, можно объявить **InstallationTarget версии** как [15.0.26730.3, 16.0):
+Если ваше расширение требует 15,3 или выше, вы объявите **версию InstallationTarget** как 15.0.26730.3, 16.0):
 
 ```xml
 <Installation>
@@ -44,10 +44,10 @@ ms.locfileid: "66341049"
 </Installation>
 ```
 
-Установщик VSIX обнаружит более ранних версиях Visual Studio и информировать пользователей о том, что более позднее обновление является обязательным.
+VSIXInstaller обнаружит более ранние версии Visual Studio и сообщит пользователю о необходимости более позднего обновления.
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по схеме 1.0 расширение VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Подготовка расширения для развертывания установщика Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [Ссылка на схему расширения VSIX 1.0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [Анатомия пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)
+- [Подготовка расширений для развертывания установки Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

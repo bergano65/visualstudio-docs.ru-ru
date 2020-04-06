@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject | Документация Майкрософт
+title: IPropertyProxyEEside::CreateReplacementObject Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5621a3f32d68374339df9a6987033e5fef5e44dd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329594"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715039"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
-Создает копию объекта данных, относящиеся к вычислитель выражений (EE).
+Создает копию объекта данных, специфичныя для оценщика выражения (EE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ int CreateReplacementObject(
 
 ## <a name="parameters"></a>Параметры
 `dataIn`\
-[in] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий данные для копирования.
+(в) Объект [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) удерживая данные для копирования.
 
 `dataOut`\
-[out] Возвращает новый `IEEDataStorage` объекта.
+[out] Возвращает новый объект `IEEDataStorage`.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод предоставляется [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, представляющий массив байтов. Это входящий объект данных обычно не реализуют EE. Тем не менее, объект, возвращаемый этим методом всегда реализуется EE, которая позволяет реализовать EE `IEEDataStorage` интерфейс требуется любой класс.
+ Этому методу предоставляется объект [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) представляющий массив байтов. Этот входящий объект данных обычно не реализуется EE. Тем не менее, объект, возвращенный этим методом, всегда реализуется `IEEDataStorage` EE, что позволяет EE реализовать интерфейс на любом классе, который пожелает.
 
- Обратите внимание на то, что данные предоставляются во входящем `IEEDataStorage` объект должен иметь те же данные в исходящий `IEEDataStorage` объекта.
+ Обратите внимание, что данные, предоставляемые входящим `IEEDataStorage` объектом, должны быть теми же данными в исходящих `IEEDataStorage` объектах.
 
 ## <a name="see-also"></a>См. также
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

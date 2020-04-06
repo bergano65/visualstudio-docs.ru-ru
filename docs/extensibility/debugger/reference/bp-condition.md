@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Документация Майкрософт
+title: BP_CONDITION Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337428"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738101"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
-Описывает условия, при которых срабатывает точка останова.
+# <a name="bp_condition"></a>BP_CONDITION
+Описывает условия, в которых сращена точка прорыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,29 +49,29 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>Участники
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий активный поток приложения, содержащего точку останова.
+Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий активный поток для приложения, содержащего точку разрыва.
 
 `styleCondition`\
-Значение из [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) перечисление, описывающее стиль этого условия точки останова.
+Значение из [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) перечисления, описывающее стиль этого состояния точки разрыва.
 
 `bstrContext`\
-Расположение точки останова.
+Местонахождение точки разрыва.
 
 `bstrCondition`\
-Условия срабатывания точки останова.
+Состояние стрельбы точки прорыва.
 
 `nRadix`\
-Основание системы счисления для использования в оценке все числовые данные.
+Radix, который будет использоваться при оценке любой численной информации.
 
 ## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.
+Эта структура является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структур.
 
-Эта структура также передается в качестве параметра [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) и [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) методы.
+Эта структура также передается в качестве параметра методам [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) и [SetCondition.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

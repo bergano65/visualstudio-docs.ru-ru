@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Документация Майкрософт
+title: IDebugModule3::GetSymbolInfo Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd952242db8b7394fa8915319686ac431b84947d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323951"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726900"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
-Извлекает список путей, для которых выполняется поиск символов, а также результаты поиска каждого пути.
+Извлекает список путей, которые ищут символы, а также результаты поиска каждого пути.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,29 +44,29 @@ int GetSymbolInfo(
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-[in] Сочетание флагов из [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) перечисление, определяющее, какие поля `pInfo` должны быть заполнены.
+(в) Комбинация флагов из [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) перечисления с `pInfo` указанием, какие поля должны быть заполнены.
 
 `pInfo`\
-[out] Объект [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) структуры, члены которого должны быть заполнены с использованием указанных сведений об. Если это значение null, этот метод возвращает `E_INVALIDARG`.
+(ваут) [Структура MODULE_SYMBOL_SEARCH_INFO,](../../../extensibility/debugger/reference/module-symbol-search-info.md) члены которой должны быть заполнены указанной информацией. Если это нулевая величина, этот метод возвращается. `E_INVALIDARG`
 
 ## <a name="return-value"></a>Возвращаемое значение
-Если метод завершается успешно, возвращается `S_OK`; в противном случае он возвращает код ошибки.
+Если метод удается, `S_OK`он возвращается ; в противном случае он возвращает код ошибки.
 
 > [!NOTE]
-> Возвращаемая строка (в `MODULE_SYMBOL_SEARCH_INFO` структуры) могут быть пустыми даже в том случае, если `S_OK` возвращается. В этом случае отсутствуют сведения поиска для возврата.
+> Верная строка `MODULE_SYMBOL_SEARCH_INFO` (в структуре) `S_OK` может быть пустой, даже если она возвращается. В этом случае, не было никакой поисковой информации, чтобы вернуться.
 
 ## <a name="remarks"></a>Примечания
-Если `bstrVerboseSearchInfo` поле `MODULE_SYMBOL_SEARCH_INFO` структура не является пустым, то он содержит список пути поиска и результаты поиска. Список форматируется с путем, последующим многоточием («...»), а затем результат. Если имеется несколько пар результирующий путь, каждая пара отделяется пару «\r\n» (каретки возврата и перевода строки). Шаблон выглядит следующим образом:
+Если `bstrVerboseSearchInfo` поле `MODULE_SYMBOL_SEARCH_INFO` структуры не пусто, то оно содержит список поисковых путей и результаты этого поиска. Список отформатирован с помощью пути, за которым следует эллипсис ("..."), за которым следует результат. Если есть более чем одна пара результатов пути, то каждая пара отделяется парой «Зран» (перевозка-возврат/линия). Шаблон выглядит следующим образом:
 
-\<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>
+\<путь>... \<результат>\<> пути... \<результат>\<пути>... \<результат>
 
-Обратите внимание, что последний элемент последовательности \r\n.
+Обратите внимание, что последняя запись не имеет последовательности крюн.
 
 ## <a name="example"></a>Пример
-В этом примере этот метод возвращает три пути с три разные результаты. Каждая строка завершается парой каретки возврата и перевода строки. В примере выходных данных просто выводит результаты поиска в одну строку.
+В этом примере этот метод возвращает три пути с тремя различными результатами поиска. Каждая строка прекращается парой перевозки-возврата/линейного питания. Вывод примера просто печатает результаты поиска как одну строку.
 
 > [!NOTE]
-> Результат состояния — это все, что сразу после «...» до конца строки.
+> Статус результат все сразу же после "..." до конца строки.
 
 ```cpp
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
@@ -84,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Файл не найден.** 
-**c:\winnt\symbols\user32.pdb... Версия не совпадает.** 
- **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**
+**c: «символы»user32.pdb... Файл не найден.** 
+ **c: «Виннент»-символы-user32.pdb... Версия не совпадает.** 
+ ** \\«Символы»-символы»user32.dll»0a8sd0ad8ad»user32.pdb... Символы загружены.**
 
 ## <a name="see-also"></a>См. также
 

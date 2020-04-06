@@ -1,76 +1,76 @@
 ---
-title: Добавление проекта и шаблоны элементов проектов | Документация Майкрософт
+title: Добавление шаблонов элементов проекта и проекта (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ab7a0a14c5a4e832aec330852546b64a41fd0c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315848"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710197"
 ---
-# <a name="add-project-and-project-item-templates"></a>Добавьте в проект и шаблоны элементов проекта
-При создании собственных типов проектов, вы должны предоставить поддержку для добавления новых проектов и элементов проекта с помощью стандарта [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированных диалоговые окна Интегрированной среды разработки. В следующих разделах рассматриваются различные методы для добавления проектов и элементов проектов.
+# <a name="add-project-and-project-item-templates"></a>Добавление шаблонов элементов проекта и проекта
+При создании собственных типов проектов необходимо обеспечить поддержку добавления [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] новых проектов и элементов проекта с помощью стандартных диалогов ы интегрированной среды разработки (IDE). Следующие темы обсуждают различные методы добавления проектов и элементов проекта.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Контекст проекта](../../extensibility/internals/project-context.md)
 
- Объясняет, что проект предоставляет основные сведения о контексте для упрощенной среды.
+ Объясняет, что проект предоставляет большую часть контекстной информации для того, что происходит в среде.
 
 - [Приоритет проекта](../../extensibility/internals/project-priority.md)
 
- Объясняет, что элемент проекта обычно является членом одного проекта, чтобы избежать неоднозначности, о том, какие позволяет открыть элемент проекта.
+ Объясняет, что элемент проекта обычно является участником одного проекта, чтобы избежать двусмысленности того, какой проект используется для открытия элемента.
 
-- [Проект прочих файлов](../../extensibility/internals/miscellaneous-files-project.md)
+- [Проект «Разные файлы»](../../extensibility/internals/miscellaneous-files-project.md)
 
- Сведения об этих двух типах редакторов, которые могут использоваться для открытия файлов в проекте и в роли, проект играет определить, какой редактор использовать при открытии элемента проекта.
+ Предоставляет информацию о двух типах редакторов, которые могут быть использованы для открытия файлов в проекте, и о роли, которую проект играет в определении того, какой редактор использовать при открытии элемента проекта.
 
 - [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)
 
- Объясняет, что происходит при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] создается проект.
+ Объясняет, что [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] происходит при создании проекта.
 
-- [Добавление элементов в диалоговом окне Добавление нового элемента](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Добавление элементов в диалоговую окно Добавить новый элемент](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 
- Описание процесса добавления элементов к **Добавление нового элемента** диалоговое окно.
+ Объясняет процесс добавления элементов в диалоговую окно **Добавить новый элемент.**
 
-- [Добавить каталоги в диалоговом окне "новый проект" окно](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+- [Добавление каталогов в поле диалога нового проекта](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
 
- Предоставляет пример регистрации новый каталог, содержащий пользовательские шаблоны, доступные через VSPackage.
+ Приводит пример регистрации нового каталога, содержащего пользовательские шаблоны, доступные VSPackage.
 
-- [Добавить каталоги в диалоговом окне Добавление нового элемента](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [Добавить каталоги в диалоговую коробку Добавить новый элемент](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
 
- Предоставляет пример новый набор каталогов для регистрации **Добавление нового элемента** диалоговое окно.
+ Приводит пример регистрации нового набора каталогов для диалогового окна **Add New Item.**
 
-- [Команды, определенные в интегрированной среде разработки, для расширения систем проектов](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Определяющие IDE команды для расширения проектных систем](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 
- Перечислены различные типы элементов команды, используемые для расширения систем проектов.
+ Перечисляет различные типы командных элементов, используемых для расширения проектных систем.
 
 - [CATID для объектов, которые обычно используются для расширения проектов](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
 
- Перечисляет идентификаторы CATID для объектов, которые используются для расширения [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] системы проектов.
+ Перечисляет CATID для объектов, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]которые [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] используются для расширения, и проектных систем.
 
-## <a name="related-sections"></a>Связанные разделы
-- [Практическое руководство. Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md)
+## <a name="related-sections"></a>См. также
+- [Как: Открыть редакторы для конкретных проектов](../../extensibility/how-to-open-project-specific-editors.md)
 
- Содержит пошаговые инструкции по открытию элемент само по себе привязан к определенном редакторе для проекта.
+ Предоставляет пошаговые инструкции по открытию элемента, присущего конкретному редактору проекта.
 
-- [Практическое руководство. Стандартные редакторы](../../extensibility/how-to-open-standard-editors.md)
+- [Как: Открытые стандартные редакторы](../../extensibility/how-to-open-standard-editors.md)
 
- Содержит пошаговые инструкции по открытию стандартного редактора.
+ Предоставляет пошаговые инструкции по открытию стандартного редактора.
 
-- [Подтипов проекта](../../extensibility/internals/project-subtypes.md)
+- [Подтипы проекта](../../extensibility/internals/project-subtypes.md)
 
- Ссылки на концептуальные разделы подтип проекта. Подтипов проекта расширять существующие [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] проектов.
+ Предоставляет ссылки на концептуальные темы подтипа проекта. Подтипы проектов расширяют существующие [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] проекты.
 
 - [Типы проектов](../../extensibility/internals/project-types.md)
 
- Ссылки на дополнительные разделы, которые содержат сведения о создании новых типов проектов.
+ Предоставляет ссылки на дополнительные темы, которые предлагают информацию о том, как разрабатывать новые типы проектов.

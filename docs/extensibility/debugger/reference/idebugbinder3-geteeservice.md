@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Документация Майкрософт
+title: IDebugBinder3::GetEEService Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3afc38551dc04e7fc7f6d55df81c5b7248127acd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327136"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735829"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-Этот метод возвращает запрошенную службу.
+Этот метод возвращает запрашиваемую службу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,22 +47,22 @@ Int GetEEService(
 
 ## <a name="parameters"></a>Параметры
 `vendor`\
-[in] `GUID` поставщика (допустимо значение null).
+(в) `GUID` поставщика (нулевая стоимость приемлема).
 
 `language`\
-[in] `GUID` языка (допустимо значение null).
+(в) `GUID` языка (нулевая стоимость приемлема).
 
 `iid`\
-[in] `IID` службы для получения.
+(в) `IID` услуги для получения.
 
 `ppService`\
-[out] Интерфейс запрошенную службу.
+(ваут) Интерфейс запрашиваемый сервис.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Передайте `IID` для [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) интерфейс (`IID_IEEVisualizerServiceProvider`) для получения сведений о службе типа визуализатора. Если таким образом, можно получить средство оценки выражений [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) интерфейс для поддержки визуализаторами типов. См. в разделе [визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) подробные сведения.
+ Передайте `IID` для [iEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) `IID_IEEVisualizerServiceProvider`интерфейс ( ), чтобы увидеть, если тип Визуализатор услуга доступна. Если это так, то оценщик экспрессии может получить интерфейс [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) для поддержки визуализаторов типов. Подробности смотрите [визуализационные и просматриваемые данные.](../../../extensibility/debugger/visualizing-and-viewing-data.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

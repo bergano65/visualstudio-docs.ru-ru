@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Документация Майкрософт
+title: ПАРСЕХЕСИ Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6123c6438defff596351fff3d1ba31ea52a19f28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc70fdd9fe1279e4d419a422b970eb3d3b07c65
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349936"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714122"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Указывает, как выполнить синтаксический анализ выражения.
+Определяет, как разобрать выражение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,25 +46,25 @@ public enum enum_PARSEFLAGS { 
 
 ## <a name="fields"></a>Поля
  `PARSE_EXPRESSION`\
- Указывает, что выражение не является оператором.
+ Означает, что выражение не является заявлением.
 
  `PARSE_FUNCTION_AS_ADDRESS`\
- Указывает выражение для синтаксического анализа (и более поздней версии вычисляется) как адрес.
+ Означает, что выражение должно быть разобрано (а затем оценено) в качестве адреса.
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- Указывает, что выражение анализируется во время разработки (то есть, когда конструктор открыт).
+ Означает, что выражение разбирается во время проектирования (т.е. при открытии конструктора).
 
 ## <a name="remarks"></a>Примечания
- Переданный в качестве параметра для [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) и [проанализировать](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) методы.
+ Прошел в качестве параметра к методам [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) и [Parse.](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
-- [Анализ](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+- [Синтаксический анализ](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

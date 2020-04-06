@@ -1,5 +1,5 @@
 ---
-title: Элемент Уседкоммандс | Документация Майкрософт
+title: Элемент подержанных команд Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718615"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698754"
 ---
 # <a name="usedcommands-element"></a>Элемент UsedCommands
-Элемент Уседкоммандс группирует элементы Уседкомманд и другие группирования Уседкоммандс.
+Элементы групп UsedCommands использовали элементы «ИспользовалиКоманд» и другие группировки UsedCommands.
 
- Элемент Уседкоммандс является необязательным. Если не вызывать команды, определенные за пределами пакета, не нужно включать этот раздел в файл. vsct.
+ Элемент UsedCommands не является обязательным. Если вы не называете команды, определенные за пределами пакета, вам не нужно включать этот раздел в файл .vsct.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,7 +40,7 @@ ms.locfileid: "72718615"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Условие|Необязательный параметр. Смотрите [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -52,7 +52,7 @@ ms.locfileid: "72718615"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды (например, пункты меню, меню, панели инструментов и поля со списком), предоставляемые пакетом VSPackage в интегрированной среде разработки (IDE).|
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды (например, пункты меню, меню, панели инструментов и комбо-коробки), которые VSPackage предоставляет интегрированной среде разработки (IDE).|
 
 ## <a name="example"></a>Пример
 

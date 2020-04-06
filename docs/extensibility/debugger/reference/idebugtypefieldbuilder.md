@@ -1,24 +1,24 @@
 ---
-title: IDebugTypeFieldBuilder | Документация Майкрософт
+title: IDebugTypeFieldBuilder (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 165bbf6326bee67718c4c2ae44933d1b21b8252c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319796"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718395"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-Представляет возможность создавать поле, которое представляет тип.
+Представляет возможность создания поля, представляющего тип.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,20 +26,20 @@ ms.locfileid: "66319796"
 IDebugTypeFieldBuilder : IUnknown
 ```
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Этот интерфейс получается от поставщика символов.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Этот интерфейс получен от поставщика символов.
 
 ## <a name="methods"></a>Методы
  Этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Создает объект, представляющий тип-примитив.|
-|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Создает указатель к заданному типу.|
+|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Создает объект, представляющий примитивный тип.|
+|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Создает указатель к указанному типу.|
 
 ## <a name="requirements"></a>Требования
  Заголовок: Sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

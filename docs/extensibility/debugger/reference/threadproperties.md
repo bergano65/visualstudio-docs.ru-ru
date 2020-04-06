@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Документация Майкрософт
+title: THREADPROPERTIES (АНГЛ. Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316185"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713423"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Описывает свойства потока.
@@ -53,33 +53,33 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Участники
  `dwFields`\
- Сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуре являются допустимыми.
+ Комбинация флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисления, описывающая, какие поля в этой структуре являются действительными.
 
  `dwThreadId`\
- Идентификатор потока.
+ Идентификатор нити.
 
  `dwSuspendCount`\
- Число приостановок потока.
+ Поток приостанавливает подсчет.
 
  `dwThreadState`\
- Значение из [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) перечисление, указывающее состояние работы потока.
+ Значение из перечисления [THREADSTATE,](../../../extensibility/debugger/reference/threadstate.md) указывающее состояние рабочего потока.
 
  `bstrPriority`\
- Строка, указывающая приоритет потока; Например «Выше среднего», «Normal» или «Critical времени».
+ Строка, определяющая приоритет потока; например, "Выше нормы", "Нормальный" или "Критические моменты".
 
  `bstName`\
  Имя потока.
 
  `bstrLocation`\
- Расположение потока (обычно верхний кадр стека), обычно выраженное как имя метода, где выполнение приостановлено.
+ Местоположение потока (обычно верхняя рамка стека), обычно выраженное как название метода, где выполнение в настоящее время остановлено.
 
 ## <a name="remarks"></a>Примечания
- Эта структура заполняется с помощью вызова [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод. Сведения, поэтому возвращаемые обычно используется при заполнении **потоков** окна.
+ Эта структура заполняется вызовом к методу [GetThreadProperties.](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Используемая таким образом информация обычно используется при заполнении окна **потоков.**
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

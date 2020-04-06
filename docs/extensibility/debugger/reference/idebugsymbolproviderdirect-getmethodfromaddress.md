@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromAddress | Документация Майкрософт
+title: IDebugSymbolProviderDirect::GetMethodFromАдрес Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetMethodFromAddress
 - GetMethodFromAddress
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89a110886837c793d45842db6ed80690626dd9d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335169"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718942"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Извлекает сведения о методе по адресу указанного отладки.
+Извлекает информацию о методе по указанному адресу отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,28 +52,28 @@ int GetMethodFromAddress(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-[in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+(в) Адрес debug, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pGuid`\
-[out] Уникальный идентификатор модуля.
+(ваут) Уникальный идентификатор модуля.
 
 `pAppID`\
-[out] Идентификатор домена приложения.
+(ваут) Идентификатор домена приложения.
 
 `pTokenClass`\
-[out] Токен, представляющий содержащего класса.
+(ваут) Токен, представляющий класс, содержащий.
 
 `pTokenMethod`\
-[out] Токен, представляющий модуль.
+(ваут) Токен, представляющий модуль.
 
 `pdwOffset`\
-[out] Смещение в байтах от начала `pAddress` параметра.
+(ваут) Смещение в байтах `pAddress` с начала параметра.
 
 `pdwVersion`\
-[out] Номер версии метода.
+(ваут) Номер версии метода.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

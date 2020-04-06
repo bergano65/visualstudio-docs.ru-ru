@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields | Документация Майкрософт
+title: IEnumDebugFields Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d80242ca516c5fa7f3ad297250e25c782664d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d577ff2f5848f2cb348bcaccf57875507018634b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350371"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716781"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
-Этот интерфейс представляет коллекцию объектов, реализующая [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс.
+Этот интерфейс представляет собой набор объектов, реализующих интерфейс [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,29 +28,29 @@ ms.locfileid: "66350371"
 IEnumDebugFields : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Этот интерфейс реализуется поставщиком символ для предоставления наборы объектов, реализующих [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс. Обратите внимание, что это не стандартные перечисление COM из-за наличия [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) метод.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Этот интерфейс реализован поставщиком символов для предоставления наборов объектов, реализующих интерфейс [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Обратите внимание, что это не стандартный пересчет COM из-за присутствия метода [GetCount.](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
+## <a name="notes-for-callers"></a>Заметки для абонентов
  Этот интерфейс возвращается [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md) и [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md).
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
  Этот интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Вперед](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Извлекает следующий набор [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекты из перечисления.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Пропускает заданное число позиций.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Сбрасывает перечисление к первой записи.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Извлекает копию текущего перечисления.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Возвращает число элементов перечисления.|
+|[Далее](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Извлекает следующий набор объектов [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) из перечисления.|
+|[Пропустить](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Пропускает определенное количество записей.|
+|[Сбросить](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Сброс исчисляется перечислением первой записи.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md) (Клонировать)|Извлекает копию текущего перечисления.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Извлекает количество записей в перечислении.|
 
 ## <a name="remarks"></a>Примечания
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

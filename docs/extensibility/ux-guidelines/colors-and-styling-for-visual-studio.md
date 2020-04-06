@@ -3,17 +3,17 @@ title: Цвета и стиль для визуальной студии (ru) Д
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301563"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699850"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 
@@ -358,7 +358,7 @@ VSPackage может управлять шрифтами и цветами че�
 
 Заполнить реестр двумя значениями:
 
-| Имя | Тип | Данные  | Описание |
+| name | Type | Данные | Описание |
 | --- | --- | --- | --- |
 | Категория | REG_SZ | GUID | GUID, созданный для определения категории |
 | Пакет | REG_SZ | GUID | GUID службы VSPackage, поддерживающей категорию |
@@ -371,7 +371,7 @@ VSPackage может управлять шрифтами и цветами че�
 
 Заполнить реестр двумя значениями:
 
-| Имя | Тип | Данные  | Описание |
+| name | Type | Данные | Описание |
 |--- | --- | --- | --- |
 | Категория | REG_SZ | GUID | GUID, созданный для определения категории |
 | Пакет | REG_SZ | GUID | GUID службы VSPackage, поддерживающей категорию |

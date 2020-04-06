@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC | Microsoft Docs
+title: IDebugProcess3::DisableENC Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3ee29540a11248a299d65c32cf2c8396b1fa2ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314063"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723730"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Этот метод явно отключает Изменить и продолжить об этом процессе (и все программы, он содержит). Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
+Этот метод явно отстраняет от Edit и Продолжить этот процесс (и все программы, которые он содержит). Поставщик пользовательских портов `E_NOTIMPL`должен всегда возвращаться.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,16 +40,16 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>Параметры
 `reason`\
-[in] Значение из [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.
+(в) Значение из [encUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
 
 > [!NOTE]
-> Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
+> Поставщик пользовательских портов `E_NOTIMPL`должен всегда возвращаться.
 
 ## <a name="remarks"></a>Примечания
- Один раз изменить и продолжить отключен для процесса, его можно снова включить только путем перезапуска процесса.
+ После того, как edit and Continue отключен для процесса, он может быть восстановлен только путем перезапуска процесса.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

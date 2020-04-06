@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor | Документация Майкрософт
+title: IDebugFunctionObject::CreateObjectNoConstructor (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObjectNoConstructor method
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e42e19e0ac08fc7dff658df2188cd0a822097ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320926"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728577"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
-Создает объект с помощью отсутствует конструктор.
+Создает объект без конструктора.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ int CreateObjectNoConstructor(
 
 ## <a name="parameters"></a>Параметры
 `pClassObject`\
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий тип создаваемого объекта.
+(в) Объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) представляющий тип создаваемого объекта.
 
 `ppObject`\
-[out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющий только что созданный объект.
+(ваут) Возвращает [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий вновь созданный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Вызовите этот метод, чтобы создать объект, представляющий экземпляр структуры или сложного типа (который не требуется конструктор), являющийся параметром функции представленный [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.
+ Вызовите этот метод для создания объекта, представляющего экземпляр структуры или сложного типа (не требующего конструктора), который является параметром для функции, представленной интерфейсом [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
- Если параметр объекта требуется конструктор, вызвать [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) метод.
+ Если параметр объекта требует конструктора, вызовите метод [CreateObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

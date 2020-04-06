@@ -1,5 +1,5 @@
 ---
-title: Элемент FullClassName (расширение мастера шаблонов VS)
+title: Элемент FullClassName (расширение мастер-шаблона VS)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63b7e480944e8f5519db1c9cfd123c07a0cf6208
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3e533fdf5b5497b17949581801721136b18bc2d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342631"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711423"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Элемент FullClassName (расширение мастера шаблонов Visual Studio)
-Полное имя класса, который реализует `IWizard` интерфейс.
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Элемент FullClassName (расширение шаблона Visual Studio)
+Полностью квалифицированное название класса, `IWizard` который реализует интерфейс.
 
- \<VSTemplate > \<WizardExtension >... \<FullClassName >
+ \<VSTemplate \<> WizardExtension> ... \<FullClassName>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,27 +35,27 @@ ms.locfileid: "66342631"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Содержит элементы регистрации для настройки мастера шаблонов.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Содержит элементы регистрации для настройки мастера шаблона.|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Данный текст задает класс, реализующий `IWizard` интерфейс. Указанный класс должен существовать в сборка, заданная параметром [сборки](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) элемент.
+ В этом тексте оговаривается класс, реализуемый интерфейс. `IWizard` Указанный класс должен существовать в сборке, указанной элементом [Сборки.](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)
 
 ## <a name="remarks"></a>Примечания
  `FullClassName` — обязательный дочерний элемент элемента `WizardExtension`.
 
 ## <a name="example"></a>Пример
- В следующем примере показано метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.
+ Следующий пример иллюстрирует метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона проекта для приложения Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -86,6 +86,6 @@ ms.locfileid: "66342631"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Как: Использование мастеров с шаблонами проектов](../extensibility/how-to-use-wizards-with-project-templates.md)

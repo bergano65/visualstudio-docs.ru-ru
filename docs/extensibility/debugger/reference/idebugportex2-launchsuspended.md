@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Microsoft Docs
+title: IDebugPortEx2::ЗапускПриостановлено (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::LaunchSuspended
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94810761e546b0cae9eca32fc76bc0bfd396c7e7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28ff6065bbe83852b5acc3ffe253a0bdabcc67ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311119"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725098"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Запускает исполняемый файл.
@@ -55,36 +55,36 @@ int LaunchSuspended( 
 
 ## <a name="parameters"></a>Параметры
 `pszExe`\
-[in] Имя исполняемого файла для запуска. Это может быть полный путь или относительно рабочего каталога, указанного в `pszDir` параметра.
+(в) Название исполняемых будет запущен. Это может быть полный путь или относительно рабочего каталога, указанного в параметре. `pszDir`
 
 `pszArgs`\
-[in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.
+(в) Аргументы, чтобы перейти к исполняемым. Может быть нулевая стоимость, если нет аргументов.
 
 `pszDir`\
-[in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.
+(в) Название рабочего каталога, используемого исполняемым. Может быть нулевая стоимость, если не требуется рабочий каталог.
 
 `bstrEnv`\
-[in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.
+(в) Блок среды нулевых строк, а затем дополнительный терминатор NULL.
 
 `hStdInput`\
-[in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.
+(в) Обработка альтернативного входиного потока. Может быть 0, если перенаправление не требуется.
 
 `hStdOutput`\
-[in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.
+(в) Обработка альтернативного потока вывода. Может быть 0, если перенаправление не требуется.
 
 `hStdError`\
-[in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.
+(в) Обработка альтернативного потока вывода ошибок. Может быть 0, если перенаправление не требуется.
 
 `ppPortProcess`\
-[out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) объект, представляющий запущенный процесс.
+(ваут) Возвращает объект [IDebugPendingBreakpoint2,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) представляющий запущенный процесс.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод должен быть запущен процесс, поэтому он приостанавливается и не выполняет никакой код. [ResumeProcess для](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) вызывается метод, чтобы возобновить процесс.
+ Этот метод должен запустить процесс так, чтобы он был приостановлен и не запускал какой-либо код. Для возобновления процесса называется метод [ResumeProcess.](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)
 
- Также можно запустить программу из модуля отладки. Дополнительные сведения см. в разделе [запуск программы](../../../extensibility/debugger/launching-a-program.md).
+ Программа также может быть запущена с движка отладки. Для получения [подробной](../../../extensibility/debugger/launching-a-program.md)информации см.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

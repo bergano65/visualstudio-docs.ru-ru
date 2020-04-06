@@ -1,60 +1,60 @@
 ---
-title: Свойства отображения сетки | Документация Майкрософт
+title: Свойства Дисплей сетки (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], grid
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f22323f9201a40090a1aec0aeb1b8698c08b0e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311001"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706186"
 ---
-# <a name="properties-display-grid"></a>Отображение сетки свойств
+# <a name="properties-display-grid"></a>Свойства отображения сетки
 
-**Свойства** окно отображает поля в сетке. Левый столбец содержит имена свойств; правый столбец содержит значения свойств.
+Окно **Свойства** отображает поля внутри сетки. Левая колонка содержит имена свойств; правый столбец содержит значения свойств.
 
 ## <a name="work-with-the-grid"></a>Работа с сеткой
 
-В списке два столбца отображаются свойства конфигурациями, которые могут быть изменены во время разработки и их текущих значений. Обратите внимание, что все свойства могут не отображаться. Свойство может быть задано как скрытый, например, путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> метод. В частности, чтобы скрыть свойства, имеющих дочерние свойства:
+В списке из двух столбцов показаны независящие от конфигурации свойства, которые могут быть изменены во время проектирования и их текущие параметры. Обратите внимание, что все свойства могут не отображаться. Свойство может быть установлено как скрытое, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> например, путем реализации метода. В частности, чтобы скрыть свойства, которые имеют свойства ребенка:
 
-1. Задайте `pfDisplay` параметр в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> для `FALSE`.
+1. Установите `pfDisplay` параметр в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> `FALSE`.
 
-2. Задайте `pfHide` параметр в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> для `TRUE`.
+2. Установите `pfHide` параметр в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> `TRUE`.
 
-Чтобы сведения об операциях отправки для **свойства** окна, интегрированная среда разработки использует <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> вызывается для каждого окна, содержащий выбираемых объектов с помощью связанных свойств для отображения в пакеты VSPackage **свойства** окна. **Обозреватель решений**в реализации <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> вызовы `GetProperty` с помощью [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) в иерархии проекта для получения доступные для просмотра объектов в иерархии.
+Чтобы донести информацию до окна <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> **Properties,** IDE использует . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>называется VSPackages для каждого окна, содержащего выбранные объекты со связанными свойствами, отображаемыми в окне **Свойств.** **Реализация**вызовов <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> `GetProperty` Solution Explorer с использованием [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) в иерархии проектов для приобретения просматриваемых объектов в иерархии.
 
-Если VSPackage не поддерживает [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), IDE пытается использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> с использованием значения для [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) , указать или несколько элементов иерархии.
+Если ваш VSPackage не поддерживает [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), IDE пытается <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> использовать значение для [__VSHPROPID. VSHPROPID_SelContainer,](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) что элемент иерархии или элементы поставляются.
 
-Проект VSPackage не нужно создавать <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> так, как пакет предоставляемую интегрированной среды разработки окна, реализующий его (например, **обозревателе решений**) создает <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> от его имени.
+Ваш проект VSPackage не <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> нужно создавать, потому что пакет окон, поставляемых IDE, который реализует его (например, **Solution Explorer)** строится <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> от его имени.
 
-<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> состоит из трех методов, которые вызываются с помощью IDE:
+<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>состоит из трех методов, которые называются IDE:
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> содержит число объектов, выбранных для отображения в **свойства** окна.
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A>содержит количество объектов, выбранных для отображения в окне **Свойств.**
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Возвращает `IDispatch` объектов, выбранных для отображения в **свойства** окна.
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A>возвращает `IDispatch` выбранные объекты для отображения в окне **свойств.**
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> делает возможным для любого из объектов, возвращенных <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> выбираемые пользователем. Это позволяет VSPackage визуально обновить элементы, отображаемые для пользователя в пользовательском Интерфейсе.
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>позволяет любому из объектов, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> возвращенных пользователем, быть выбранным пользователем. Это позволяет VSPackage визуально обновить выбор, отображаемый для пользователя в пользовательском интерфейсе.
 
-**Свойства** окно извлекает сведения из `IDispatch` объектов для извлечения свойств, в который просматривается. В обозревателе свойств используются `IDispatch` попросить какие свойства объекта, он поддерживает, запросив `ITypeInfo`, которое было получено из `IDispatch::GetTypeInfo`. Затем браузер будет использовать эти значения для заполнения **свойства** окно и изменение значения отдельных свойств, отображаемых в сетке. Сведения о свойствах поддерживается внутри самого объекта.
+Окно **Свойства** извлекает информацию из объектов `IDispatch` для получения просматриваемых свойств. Браузер Properties `IDispatch` использует, чтобы спросить объект, какие `ITypeInfo`свойства он поддерживает, запрашивая, который получен из. `IDispatch::GetTypeInfo` Затем браузер использует эти значения для заполнения окна **Свойств** и изменения значений для отдельных свойств, отображаемых в сетке. Информация о свойствах сохраняется внутри самого объекта.
 
-Так как возвращаемые объекты поддерживают `IDispatch`, вызывающая сторона может получать сведения, такие как имя объекта, вызывая `IDispatch::Invoke` или `ITypeInfo::Invoke` с идентификатором предопределенные диспетчеризации (DISPID), который представляет нужные сведения. Объявленный DISPID имеет отрицательное значение, чтобы убедиться, что они не конфликтуют с определенные пользователем идентификаторы.
+Поскольку возвращенные `IDispatch`объекты поддерживаются, абонент может получить информацию, `IDispatch::Invoke` `ITypeInfo::Invoke` такую как имя объекта, позвонив либо, либо с помощью заданного идентификатора диспетчерской рассылки (DISPID), представляющего нужную информацию. Объявленные DISPID являются отрицательными, чтобы убедиться, что они не противоречат пользовательским идентификаторам.
 
-**Свойства** окне отображаются различные типы полей в зависимости от атрибутов свойств выбранного объекта. Эти поля включают поля ввода, раскрывающиеся списки и ссылки на диалоговые окна специализированного редактора.
+Окно **Свойства** отображает различные типы полей в зависимости от атрибутов определенных свойств выбранного объекта. Эти поля включают в себя редитивные коробки, списки выпадающих и ссылки на пользовательские диалоговые ящики редактора.
 
-- Значения, содержащиеся в пронумерованном списке извлекаются путем <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> запрос, `IDispatch`. Значения, полученные из списка можно изменить в таблице свойств, дважды щелкнув имя поля или выбрав значение и выбрав новое значение из раскрывающегося списка. Для свойств, которые имеют предопределенные параметры из перечислимые списки дважды щелкнув имя свойства в списке свойств циклический перебор доступных вариантов. Для стандартных свойств только два варианта, такие как true или false дважды щелкните имя свойства для переключения между вариантами.
+- Значения, содержащиеся в перечисленном списке, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> извлекаются `IDispatch`запросом на запрос. Значения, полученные из перечисленного списка, могут быть изменены в сетке свойств, дважды нажав на имя поля, или нажав на значение и выбрав новое значение из списка выпадающих. Для свойств, которые предопределили параметры из перечисленных списков, двойное нажатие имени свойства в списке свойств циклов через доступные варианты. Для предопределенных свойств только с двумя вариантами, такими как true/false, дважды щелкните имя свойства, чтобы переключаться между выборами.
 
-- Если <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> является `false`, указывающее, что значение было изменено, значение отображается полужирным шрифтом. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> используется для определения того, если значение можно сбросить к исходному значению. Если таким образом, можно изменить значение по умолчанию, щелкнув его правой кнопкой мыши и выбрав **Сброс** из меню. В противном случае необходимо вручную изменить значение по умолчанию. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> также позволяет локализовать и скрыть имена свойств, отображаемых во время разработки, но не влияет на имена свойств, отображаемых во время выполнения.
+- Если <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> `false`это означает, что значение было изменено, значение отображается жирным текстом. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A>используется для определения того, можно ли сбросить значение в исходное значение. Если это так, вы можете изменить обратно по умолчанию, нажав на стоимость и выбрав **сбросить** из отображаемого меню. В противном случае необходимо изменить значение обратно на значение по умолчанию вручную. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>также позволяет локализовать и скрыть имена свойств, отображаемых во время проектирования, но не влияет на имена свойств, отображаемые во время выполнения.
 
-- Нажав кнопку с многоточием (...) список значений свойств, из которых пользователь может выбрать (например, палитра цветов или списка шрифтов). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> предоставляет эти значения.
+- Нажатие кнопки ellipsis (...) отображает список значений свойств, из которых пользователь может выбрать (например, список сборщиков цветов или список шрифтов). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>обеспечивает эти значения.
 
 ## <a name="see-also"></a>См. также
 
-- [Расширение свойств](../../extensibility/internals/extending-properties.md)
+- [Расширить свойства](../../extensibility/internals/extending-properties.md)

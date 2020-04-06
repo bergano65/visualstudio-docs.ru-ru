@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8817ca48ff0a3f44a973986a173e647ce89c662c
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301635"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705497"
 ---
 # <a name="service-essentials"></a>Основные компоненты службы
 Услуга — это контракт между двумя VSPackages. Один VSPackage предоставляет определенный набор интерфейсов для другого VSPackage потреблять. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]сама коллекция VSPackages, которая предоставляет услуги другим VSPackages.
@@ -92,9 +92,9 @@ ms.locfileid: "79301635"
 
     Этот код получает службу SVsActivityLog и отбрасывает ее в интерфейс IVsActivityLog, который можно использовать для записи в журнал активности. Например, [см. Как: Используйте журнал активности](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Список доступных служб](../../extensibility/internals/list-of-available-services.md)
 - [Использование и предоставление служб](../../extensibility/using-and-providing-services.md)
-- [Конверсии литья и типа](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+- [Приведение и преобразование типов](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 - [Приведение](/cpp/cpp/casting)

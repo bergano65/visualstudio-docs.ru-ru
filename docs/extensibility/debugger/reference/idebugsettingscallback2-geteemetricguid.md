@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricGuid | Документация Майкрософт
+title: IDebugSettingsCallback2:GetEEMetricGuid Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca64245a4f0ce3436dce3e5623099b0d82669676
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d95842ecde264accd8989a83ae652ac540183ef1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322106"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720000"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
-Извлекает уникальный идентификатор для метрики вычислителя выражения, заданную ее именем.
+Извлекает уникальный идентификатор для метрики оценки выражения, учитывая его имя.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ HRESULT GetEEMetricGuid(
 
 ## <a name="parameters"></a>Параметры
 `guidLang`\
-[in] Уникальный идентификатор языка программирования.
+(в) Уникальный идентификатор языка программирования.
 
 `guidVendor`\
-[in] Уникальный идентификатор поставщика.
+(в) Уникальный идентификатор поставщика.
 
 `pszMetric`\
-[in] Имя метрики.
+(в) Название метрики.
 
 `pguidValue`\
-[out] Возвращает уникальный идентификатор метрики.
+(ваут) Возвращает уникальный идентификатор метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

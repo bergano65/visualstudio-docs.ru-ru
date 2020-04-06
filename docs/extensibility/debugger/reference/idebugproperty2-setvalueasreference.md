@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Документация Майкрософт
+title: IDebugProperty2::SetValueAsСправка (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsReference method
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f9e98465f16f58f734ef6fd58b66494b4aaf0b65
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 73d00ccedc6985061448170735e9ebcaac42f530
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314614"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721252"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-Задает значение этого свойства к значению данной ссылки.
+Устанавливает значение этого свойства к значению данной ссылки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,25 +47,25 @@ int SetValueAsReference(
 
 ## <a name="parameters"></a>Параметры
 `rgpArgs`\
-[in] Массив аргументов для передачи методу задания свойства управляемого кода. Если метод задания свойства не принимает аргументы или если данный [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект не ссылается на таких метода задания свойства, `rgpArgs` должен иметь значение null. Этот параметр обычно является значение null.
+(в) Массив аргументов для передачи управляемому набору свойств кода. Если сеттер свойств не принимает аргументы или если этот объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) не `rgpArgs` относится к такому сеттеру свойств, должен быть нулевым значением. Этот параметр обычно является нулевая величина.
 
 `dwArgCount`\
-[in] Число аргументов в `rgpArgs` массива.
+(в) Количество аргументов в `rgpArgs` массиве.
 
 `pValue`\
-[in] Ссылка, в виде [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объекта, чтобы значение, используемое для задания этого свойства.
+(в) Ссылка в виде объекта [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) на значение, используемее для установки этого свойства.
 
 `dwTimeout`\
-[in] Как долго следует использовать для задания значения, в миллисекундах. Стандартное значение — `INFINITE`. Это влияет на продолжительность времени, который может принимать любые возможные оценки.
+(в) Сколько времени нужно, чтобы установить значение, в миллисекундах. Типичное значение `INFINITE`. Это влияет на время, которое может занять любая возможная оценка.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает ошибку, код, обычно один из следующих:
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки, как правило, один из следующих:
 
 |Error|Описание|
 |-----------|-----------------|
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Значение из ссылки не поддерживается.|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Невозможно задать значение, так как оно ссылается на метод.|
-|`E_SETVALUE_VALUE_IS_READONLY`|Значение только для чтения и не может быть задано.|
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Установка значения из ссылки не поддерживается.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Значение не может быть установлено, так как это свойство относится к методу.|
+|`E_SETVALUE_VALUE_IS_READONLY`|Значение только для чтения и не может быть установлено.|
 |`E_NOTIMPL`|Метод не реализован.|
 
 ## <a name="see-also"></a>См. также

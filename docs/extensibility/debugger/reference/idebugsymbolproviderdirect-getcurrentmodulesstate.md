@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Документация Майкрософт
+title: IDebugSymbolProviderDirect::GetCurrentModulesState Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f1917f420e4815bcd525f131e4b524e53e6b3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347321"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719084"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Извлекает сведения о группе символов, членом которой является поставщик символов.
+Извлекает информацию о группе символов, членом которой является поставщик символов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,16 +42,16 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>Параметры
 `pState`\
-[out] Состояние группы поставщика символов.
+(ваут) Состояние группы поставщика символов.
 
 `count`\
-[out] Число модулей в группе.
+(ваут) Количество модулей в группе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Состояние изменяется каждый раз, когда модуль добавлен или удален из группы символов. Таким образом этот метод может использоваться для обнаружения, если был изменен группу символов.
+ Состояние изменяется всякий раз, когда модуль добавляется или удаляется из группы символов. Таким образом, этот метод может быть использован для обнаружения, если группа символов была изменена.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

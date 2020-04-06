@@ -1,25 +1,25 @@
 ---
-title: Элемент Уседкомманд | Документация Майкрософт
+title: ПодержанныйЭлемент Командования (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ea8f27cafb166968f66c53dc68398526e0aa5d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718774"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698828"
 ---
 # <a name="usedcommand-element"></a>Элемент UsedCommand
-Включает пакет VSPackage для доступа к команде, определенной в другом vsct-файле. Например, если пакет VSPackage использует стандартную команду **Copy** , которая определяется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] оболочкой, можно добавить команду в меню или на панель инструментов без повторной реализации.
+Позволяет VSPackage получить доступ к команде, которая определена в другом файле .vsct. Например, если ваш VSPackage использует стандартную команду [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **Copy,** которая определяется оболочкой, можно добавить команду в меню или панель инструментов, не реализовав ее.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,24 +34,24 @@ ms.locfileid: "72718774"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный. Идентификатор GUID пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|
-|id|Обязательный. Идентификатор пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|
-|Условие|Необязательный. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Обязательный элемент. GUID пары Идентификаторов GUID, которая идентифицирует команду.|
+|идентификатор|Обязательный элемент. Идентификатор пары GUID ID, идентифицирующий команду.|
+|Условие|Необязательный параметр. Смотрите [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Отсутствуют||
+|None||
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Группирует элементы Уседкомманд и другие группирования Уседкоммандс.|
+|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Группы использовалиэлементы команды и другие группировки UsedCommands.|
 
-## <a name="remarks"></a>Заметки
- Добавив команду в элемент `<UsedCommands>`, пакет VSPackage информирует среду [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], что пакету VSPackage требуется команда. Необходимо добавить элемент `<UsedCommand>` для любой команды, которая требуется для пакета, которая может не включаться во все версии и конфигурации Visual Studio. Например, если пакет вызывает команду, относящуюся к визуальному C++элементу, команда будет недоступна для пользователей Visual Web Developer, если для команды не включить `<UsedCommand>`.
+## <a name="remarks"></a>Примечания
+ Добавляя команду в `<UsedCommands>` элемент, VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] информирует среду о том, что VSPackage требует команды. Следует добавить `<UsedCommand>` элемент для любой команды, который требуется пакету, который не может быть включен во все версии и конфигурации Visual Studio. Например, если ваш пакет вызывает команду, специфичную для Visual C, команда будет недоступна `<UsedCommand>` пользователям Visual Web Developer, если вы не включите элемент для команды.
 
 ## <a name="example"></a>Пример
 

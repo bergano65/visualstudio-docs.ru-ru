@@ -1,27 +1,27 @@
 ---
-title: Элемент KeyBinding | Документация Майкрософт
+title: Элемент keyBinding (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309639"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703143"
 ---
 # <a name="keybinding-element"></a>Элемент KeyBinding
-Элемент KeyBinding указывает сочетания клавиш для команд.
+Элемент KeyBinding определяет ярлыки клавиатуры для команд.
 
- Команды могут иметь одного или двух привязок клавиш, связанных с ними. Пример одной привязки ключей — **Ctrl**+**S** для **Сохранить** команды. Двойной сочетания клавиш требуют двух последовательных сочетания клавиш для запуска команды. Пример двойного привязки ключей — <strong>Ctrl *+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** Чтобы установить закладку.
+ Команды могут иметь как одиночные, так и двойные ключевые привязки, связанные с ними. Примером одного связывания ключа является **Ctrl**+**S** для команды **Save.** Двойные крепления ключей требуют двух последовательных комбинаций ключей для запуска команды. Примером двойного связывания ключа является <strong>Ctrl*+</strong><strong>K,</strong><strong>+</strong>Ctrl K,* чтобы установить закладку.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,28 +36,28 @@ ms.locfileid: "66309639"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный.|
-|id|Обязательный.|
-|редактор|Обязательный. Идентификатор GUID редактора указывает контекст редактирования, для которого будет всегда активной это сочетание клавиш. Значение области действия глобального привязки — «guidVSStd97».|
-|key1|Обязательный. Допустимыми являются все прочтения буквенно-цифровые символы, а также шестнадцатеричные значения из двух цифр, предшествует 0 x и [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|MOD1|Необязательный параметр. Любое сочетание **Ctrl**, **Alt**, и **Shift** разделяются пробелами.|
-|key2|Необязательный параметр. Допустимыми являются все прочтения буквенно-цифровые символы, а также шестнадцатеричные значения из двух цифр, предшествует 0 x и [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|MOD2|Необязательный параметр. Любое сочетание **Ctrl**, **Alt**, и **Shift** разделяются пробелами.|
-|Эмулятор|Необязательный параметр.|
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Обязательный элемент.|
+|идентификатор|Обязательный элемент.|
+|редактор|Обязательный элемент. Редактор GUID указывает контекст редактирования, для которого этот ярлык клавиатуры будет активен. Глобальное значение обязательной сферы является "guidVSStd97".|
+|key1|Обязательный элемент. Допустимые значения включают все опечатанные алфавиты, а также двузначные гексадецимальные значения, которым предшествовали 0x и [VK_constants.](/windows/desktop/inputdev/virtual-key-codes)|
+|mod1|Необязательный параметр. Любая комбинация **Ctrl,** **Alt**и **Shift** разделена пространством.|
+|key2|Необязательный параметр. Допустимые значения включают все опечатанные алфавиты, а также двузначные гексадецимальные значения, которым предшествовали 0x и [VK_constants.](/windows/desktop/inputdev/virtual-key-codes)|
+|mod2|Необязательный параметр. Любая комбинация **Ctrl,** **Alt**и **Shift** разделена пространством.|
+|эмулятор|Необязательный параметр.|
+|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Родительский||
-|Комментарий||
+|Parent||
+|Заметка||
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Группирует элементы сочетание клавиш и другими признаками сочетания клавиш.|
+|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Группы элементов KeyBinding и другие группировки KeyBindings.|
 
 ## <a name="example"></a>Пример
 
@@ -72,4 +72,4 @@ ms.locfileid: "66309639"
 
 ## <a name="see-also"></a>См. также
 - [Элемент KeyBindings](../extensibility/keybindings-element.md)
-- [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

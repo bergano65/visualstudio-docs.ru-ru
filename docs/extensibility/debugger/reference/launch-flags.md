@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Документация Майкрософт
+title: LAUNCH_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339369"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714717"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
-Задает флаги запуска отладки.
+# <a name="launch_flags"></a>LAUNCH_FLAGS
+Определяет флаги запуска отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,26 +48,26 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>Поля
 `LAUNCH_DEBUG`\
-Запускает процесс для отладки.
+Запускает процесс отладки.
 
 `LAUNCH_NODEBUG`\
 Запускает процесс без его отладки.
 
 `LAUNCH_ENABLE_ENC`\
-РЕКОМЕНДУЕТСЯ ИСПОЛЬЗОВАТЬ, НЕ ИСПОЛЬЗУЙТЕ.
+УТОМЛЕННЫЙ, НЕ ИСПОЛЬЗУЙТЕ.
 
 `LAUNCH_MERGE_ENV`\
-Запускает процесс и выполняет слияние среды с помощью запуска сервера.
+Запускает процесс и объединяет среду с запуском хоста.
 
 ## <a name="remarks"></a>Примечания
-Эти значения передаются в качестве аргумента [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) метод.
+Эти значения передаются в качестве аргумента методу [LaunchSuspended.](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 
-Эти флаги могут быть объединены с побитовым объектом `OR`.
+Эти флаги могут быть `OR`объединены с bitwise .
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

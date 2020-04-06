@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetMetric | Документация Майкрософт
+title: IDebugEngine2:SetMetric Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2:::SetMetric
 ms.assetid: dcda4972-c32e-4693-a0e1-25d5c58b9782
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10e4662536dbe8fef8c250122d22520df1736cf8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: caada8db1791d94e7a9632394cd4659bf8cec3a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352568"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730895"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Этот метод задает значение реестра, известный как метрики.
+Этот метод устанавливает значение реестра, известное как метрика.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int SetMetric(
 
 ## <a name="parameters"></a>Параметры
 `pszMetric`\
-[in] Имя метрики.
+(в) Имя метрики.
 
 `varValue`\
-[in] Указывает значение метрики.
+(в) Определяет значение метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Метрика — это значение реестра, чтобы изменить поведение модуля отладки или для объявления поддерживаемые функции. Этот метод можно пересылать подходящей формой [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функции `SetMetric`.
+ Метрика — это значение реестра, используемое для изменения поведения движка отладки или для рекламы поддерживаемой функциональности. Этот метод может направить вызов в соответствующую форму [SDK Helpers для функции отладки.](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric`
 
 ## <a name="see-also"></a>См. также
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

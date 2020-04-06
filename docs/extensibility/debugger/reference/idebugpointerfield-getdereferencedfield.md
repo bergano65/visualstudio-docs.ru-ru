@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Документация Майкрософт
+title: IDebugPointerField::GetDereferencedField Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField::GetDereferencedField method
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fef8ee4e584703338afd09e5303ac184f28b3a49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331614"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725622"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Этот метод возвращает тип объекта, на который указывает этот указатель на объект.
+Этот метод возвращает тип объекта, на который указывает объект указателя.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Параметры
 `ppField`\
-[out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описанием типа целевого объекта.
+(ваут) Возвращает [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий тип целевого объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Например, если [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) объекта указывает на целое, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) тип, возвращаемый этим методом описывает типа integer.
+ Если, например, объект [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) указывает на несколько, тип [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) возвращенный этим методом, описывает этот тип.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)

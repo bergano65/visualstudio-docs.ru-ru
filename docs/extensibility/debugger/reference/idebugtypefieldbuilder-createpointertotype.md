@@ -1,28 +1,28 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType | Документация Майкрософт
+title: IDebugTypeFieldBuilder::CreatePointerToType Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreatePointerToType
 - IDebugTypeFieldBuilder::CreatePointerToType
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8947090c56376b03da83cfd81296604b6bd642a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 871f061df1fdc60362f39fab36136eb71f5d7e50
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319905"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718429"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
-Создает указатель к заданному типу.
+Создает указатель к указанному типу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,13 +42,13 @@ int CreatePointerToType(
 
 ## <a name="parameters"></a>Параметры
 `pTypeField`\
-[in] Тип, чтобы они указывали. Он представлен [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс.
+(в) Отведите указать на. Он представлен интерфейсом [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 `pPtrToTypeField`\
-[out] Возвращает указателя, представленного новый **IDebugField** объекта.
+(ваут) Возвращает указатель, представленный новым объектом **IDebugField.**
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC | Документация Майкрософт
+title: JMC_CODE_SPEC Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - JMC_CODE_SPEC structure
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9bc6d5c57c3d3c53b043f1ff5140beb8055a8c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339266"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714744"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
-Эта структура используется для задания данных JustMyCode для модуля.
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
+Эта структура используется для настройки информации JustMyCode для модуля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>Участники
 `fIsUserCode`\
-Ненулевое значение (`TRUE`) Если модуль будет считаться пользовательского кода; в противном случае — нуль (`FALSE`) Если модуль должен обрабатываться как внешний код и не для отладки.
+Ненулевой`TRUE`( ) если модуль должен считаться кодом пользователя; в противном`FALSE`случае, ноль ( ), если модуль должен рассматриваться как внешний код и не быть отдипываться.
 
 `bstrModuleName`\
-Имя модуля в вопросе.
+Название модуля, о котором идет речь.
 
 ## <a name="remarks"></a>Примечания
-Эта структура передается как список таких структур для [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) метод.
+Эта структура передается как список таких структур методу [SetJustMyCodeState.](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

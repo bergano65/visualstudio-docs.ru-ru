@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Документация Майкрософт
+title: THREADPROPERTY_FIELDS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9da7b995826b905af7faf6cac3fa0fc3d5ceba5e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316207"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713400"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
-Указывает, какие сведения о потоке требуется получить.
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
+Определяет, какая информация о потоке должна быть извлечена.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,37 +54,37 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
 ## <a name="fields"></a>Поля
  `TPF_ID`\
- Инициализация и использование `dwThreadId` поле [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры.
+ Инициализация/использование `dwThreadId` поля структуры [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
 
  `TPF_SUSPENDCOUNT`\
- Инициализация и использование `dwSuspendCount` поле `THREADPROPERTIE`структура.
+ Инициализация/использование `dwSuspendCount` `THREADPROPERTIE`поля структуры S.
 
  `TPF_STATE`\
- Инициализация и использование `dwThreadState` поле `THREADPROPERTIE`структура.
+ Инициализация/использование `dwThreadState` `THREADPROPERTIE`поля структуры S.
 
  `TPF_PRIORITY`\
- Инициализация и использование `bstrPriority` поле `THREADPROPERTIE`структура.
+ Инициализация/использование `bstrPriority` `THREADPROPERTIE`поля структуры S.
 
  `TPF_NAME`\
- Инициализация и использование `bstrName` поле `THREADPROPERTIE`структура.
+ Инициализация/использование `bstrName` `THREADPROPERTIE`поля структуры S.
 
  `TPF_LOCATION`\
- Инициализация и использование `bstrLocation` поле `THREADPROPERTIE`структура.
+ Инициализация/использование `bstrLocation` `THREADPROPERTIE`поля структуры S.
 
  `TPF_ALLFIELDS`\
- Указывает все поля.
+ Определяет все поля.
 
 ## <a name="remarks"></a>Примечания
- Эти значения передаются в качестве аргумента [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод, чтобы указать, какие поля [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры должны быть инициализированы.
+ Эти значения передаются в качестве аргумента методу [GetThreadProperties,](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) чтобы указать, какие поля структуры [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) должны быть инициализированы.
 
- Эти значения также используются в `dwFields` членом `THREADPROPERTIES` структура указывает, какие поля используются и допустимым.
+ Эти значения также используются `dwFields` в `THREADPROPERTIES` составе структуры для указания того, какие поля используются и действительны.
 
- Эти флаги могут быть объединены с побитовым объектом `OR`.
+ Эти флаги могут быть `OR`объединены с bitwise .
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,33 +1,33 @@
 ---
-title: Регистрация расширений имен файлов для развертываний Side-By-Side | Документация Майкрософт
+title: Регистрация расширений имен файлов для боковых развертываний (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, registering for side-by-side
 ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bdfb562ddfcce2584b8868c3c931c21f9dbc127
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334233"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701539"
 ---
-# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Регистрация расширений имен файлов для развертываний side-by-side
-Для пакетов VSPackage, развернутых в среде side-by-side, необходимо зарегистрировать расширения имен файлов, чтобы связать файлы с правильной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Если вы не используете расширение имени файла с конкретной версией, регистрация позволяет пользователям откройте проект и элемент файлы проекта в соответствующую версию [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Регистрация расширений имени файла для бок о бок развертывания
+Для VSPackages, развернутых в среде, размещенной в боковой среде, необходимо зарегистрировать [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]расширения имен файлов, чтобы связать файлы с правильной версией. Если вы не используете расширение имени файла для конкретной версии, регистрация [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]позволяет пользователям открывать файлы проекта и элемента проекта в соответствующей версии.
 
-## <a name="in-this-section"></a>Содержание раздела
-- [О расширения имен файлов](../extensibility/about-file-name-extensions.md) рассматриваются как зарегистрированных расширений имен файлов.
+## <a name="in-this-section"></a>В этом разделе
+- [О расширении имен файлов](../extensibility/about-file-name-extensions.md) Обсуждает, как регистрируются расширения имен файлов.
 
-- [Укажите обработчиков файлов для расширений имен файлов](../extensibility/specifying-file-handlers-for-file-name-extensions.md) предоставляет сведения о том, как зарегистрировать приложения, которые можно открыть, изменить и т.д., определенный расширением.
+- [Указать обработчики файлов для расширения имен файлов](../extensibility/specifying-file-handlers-for-file-name-extensions.md) Предоставляет информацию о том, как зарегистрировать приложения, которые могут открываться, отсваиваться и так далее, конкретное расширение имени файла.
 
-- [Регистрация команд для расширений имен файлов](../extensibility/registering-verbs-for-file-name-extensions.md) описывается регистрация команд.
+- [Регистрация глаголов для расширения имен файлов](../extensibility/registering-verbs-for-file-name-extensions.md) Обсуждает, как зарегистрировать глаголы.
 
-- [Управление сопоставлениями файлов side-by-side](../extensibility/managing-side-by-side-file-associations.md) обсуждается способ обработки side-by-side установок, в котором на конкретную версию [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должны вызываться для открытия файла.
+- [Управление бок о бок ассоциации файлов](../extensibility/managing-side-by-side-file-associations.md) Обсуждает, как обрабатывать бок о бок установки, в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] которых определенная версия должна быть вызвана, чтобы открыть файл.
 
-## <a name="related-sections"></a>Связанные разделы
-- [Поддержка нескольких версий Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md) описаны проблемы, связанные с несколькими версиями [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и VSPackage во время разработки и развертывания для конечных пользователей.
+## <a name="related-sections"></a>См. также
+- [Поддержка нескольких версий Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md) Описывает проблемы, связанные с несколькими [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версиями и ВАШИМ VSPackage во время разработки и развертывания для конечных пользователей.

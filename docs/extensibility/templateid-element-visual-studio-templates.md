@@ -1,5 +1,5 @@
 ---
-title: Элемент TemplateID (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент TemplateID (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <TemplateID> element [Visual Studio Templates]
 - TemplateID element [Visual Studio Templates]
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0e404921d1ed74db2a1f23117242f49a07206c2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718742"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699059"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Элемент TemplateID (шаблоны Visual Studio)
-Задает идентификатор для шаблона элемента, разбитого по категориям в группе шаблонов элементов с помощью элемента [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
+Уотек идентификатора шаблона элемента, который классифицируется в группу шаблонов элементов элементом элементом [элемента.](../extensibility/templategroupid-element-visual-studio-templates.md)
 
- \<VSTemplate > \<TemplateData > \<TemplateID >
+ \<VSTemplate \<> TemplateData> \<templateID>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,10 +36,10 @@ ms.locfileid: "72718742"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -48,14 +48,14 @@ ms.locfileid: "72718742"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 
 ## <a name="text-value"></a>Текстовое значение
- @No__t_0, представляющий идентификатор шаблона элемента, отнесенный к группе шаблонов элементов по элементу `TemplateGroupID`.
+ A, `string` представляющий идентификатор шаблона элемента, который классифицируется в группу шаблонов элементов элементом `TemplateGroupID` элементом.
 
-## <a name="remarks"></a>Заметки
- `TemplateID` — это необязательный элемент.
+## <a name="remarks"></a>Примечания
+ Параметр `TemplateID` является необязательным элементом.
 
- Если VSTEMPLATE-файл пропускает элемент `TemplateID`, то в качестве идентификатора шаблона используется элемент [Name](../extensibility/name-element-visual-studio-templates.md) .
+ Если файл «vstemplate» `TemplateID` опускает элемент, элемент [«Имя»](../extensibility/name-element-visual-studio-templates.md) используется в качестве идентификатора для шаблона.
 
- Значение элемента `TemplateID` используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects \\) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .
+ Значение `TemplateID` элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE »SOFTWARE»Microsoft»VisualStudio »11.0 »Проекты)\\для фильтрации шаблонов, которые появляются в диалоговом окне **Добавления нового элемента.**
 
 ## <a name="see-also"></a>См. также
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

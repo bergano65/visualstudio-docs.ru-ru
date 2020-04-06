@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramCreateEvent2 | Документация Майкрософт
+title: IDebugProgramСоздатьВен2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramCreateEvent2 interface
 ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8081e05d18719af060ddf58045c06ec64036ae35
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 78088d6e5da61c32302c13b08143c9ed902452e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331450"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722627"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
-Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при присоединении к программе.
+Этот интерфейс отправляется движком отладки (DE) менеджеру отладки сеанса (SDM) при подключении программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,19 +28,19 @@ ms.locfileid: "66331450"
 IDebugProgramCreateEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- DE или поставщика пользовательского порта реализует этот интерфейс, чтобы сообщить, что программа будет создан, обычно во время исполняемой программы к. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM `QueryInterface` метод для доступа к `IDebugEvent2` интерфейс.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ DE или поставщик пользовательских портов реализует этот интерфейс, чтобы сообщить, что программа была создана, как правило, во время присоединения программы. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. SDM использует `QueryInterface` метод для `IDebugEvent2` доступа к интерфейсу.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- DE или поставщика пользовательского порта создает и отправляет этот объект события для создания программы отчетов. DE отправляет данное событие с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейс.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ DE или пользовательский поставщик порта создает и отправляет этот объект события, чтобы сообщить о создании программы. DE отправляет это событие с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) которая поставляется SDM при подключении к отладке программы. Поставщик пользовательских портов отправляет это событие с помощью интерфейса [IDebugPortEvents2.](../../../extensibility/debugger/reference/idebugportevents2.md)
 
 ## <a name="remarks"></a>Примечания
- DE или пользовательский порт поставщик публикует новый [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс путем вызова [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
+ Поставщик DE или пользовательский порт публикует новый интерфейс [IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) позвонив [в PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

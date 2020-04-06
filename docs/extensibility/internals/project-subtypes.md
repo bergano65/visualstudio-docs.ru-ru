@@ -1,71 +1,71 @@
 ---
-title: Подтипы проекта | Документация Майкрософт
+title: Подтипы проекта Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aede76a39506f74c39d9ec63ed4bb4a410d1013c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71dab4767c806b44cbd1f9638738b4a13d6b2bcb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328106"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706412"
 ---
 # <a name="project-subtypes"></a>Подтипы проектов
-Подтипов проекта позволяют настраивать или flavor поведение системы проектов из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Настройки включают сохранение дополнительных данных в файле проекта, добавляя или фильтруя элементы в **Добавление нового элемента** » диалогового окна «Управление как сборки, отладки и развертывания и расширение проекта **свойство Страницы** диалоговое окно. Пакеты VSPackage реализовывать подтипов проекта, с помощью COM статистической обработки.
+Подтипы проекта позволяют настроить или приправить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]поведение проектных систем. Настройки включают сохранение дополнительных данных в файле проекта, добавление или фильтрацию элементов в диалоговом поле **Add New Item,** контроль за тем, как сборки отлаживаются и развертываются, и расширение диалогового окна **страниц свойств** проекта. VSPackages реализуют подтипы проекта с использованием агрегации COM.
 
 > [!NOTE]
-> Система проектов Visual C++ не поддерживает подтипов проекта. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] подтипов проекта самой используются для реализации проектов для смарт-устройств и SQL Server.
+> Система проекта Visual C' не поддерживает подтипы проектов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]сам использует подтипы проектов для реализации проектов S'L Server и Smart Device.
 
 ## <a name="in-this-section"></a>В этом разделе
 - [Разработка подтипов проекта](../../extensibility/internals/project-subtypes-design.md)
 
- Описывает основные концепции подтипов проекта.
+ Описывает концепцию подтипов проектов.
 
 - [Инициализация последовательности подтипов проекта](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)
 
- Описывает последовательность инициализации подтип программный проект с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды.
+ Описывает программную последовательность инициализации подтипа проекта по окружающей среде. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
 - [Свойства и методы, расширенные подтипами проектов](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
 
- Содержит подробное описание функций и методов, наиболее часто расширены с помощью подтипов проекта.
+ Предоставляет подробное описание функций и методов, наиболее часто расширяемых с помощью подтипов проекта.
 
 - [Сохранение данных в файле проекта MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
 
- Описываются способы сохранения данных в файл проекта и как использовать <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> для хранения данных в файле проекта через уровни статистических обработок подтип проекта.
+ Описывает, как сохранять данные в файле проекта и как использовать <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> их для поддержания данных в файле проекта на уровнях агрегации подтипов проекта.
 
 - [Пользовательский интерфейс свойств проекта](../../extensibility/internals/project-property-user-interface.md)
 
- Описывает, каким образом подтипов проекта можно изменить проект **страницы свойств** диалоговое окно.
+ Описывает, как подтипы проекта могут изменять диалоговую книжку страниц **свойств** проекта.
 
 - [Расширение модели объекта базового проекта](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)
 
- Сведения о том, как подтипов проекта расширители автоматизации можно использовать для расширения объектной модели автоматизации.
+ Предоставляет информацию о том, как подтипы проекта могут использовать расширители автоматизации для расширения модели объектов автоматизации.
 
-- [Добавление элементов в диалоговое окно "Добавление новых элементов"](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
+- [Добавление элементов в диалоговое окно "Добавить новый элемент"](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
 
- Описывается, как добавить элементы в **Добавление нового элемента** диалоговое окно.
+ Описывает, как добавить элементы в диалоговую коробку **Add New Item.**
 
 - [Сохранение данных в файлах проектов](../../extensibility/saving-data-in-project-files.md)
 
- Объясняет, как подтипом проекта можно сохранить и извлечь подтипа данных в файле проекта с помощью Managed Package Framework (MPF).
+ Объясняет, как подтип проекта может сохранять и извлекать данные, связанные с подтипом, в файле проекта с помощью рамочной программы управляемого пакета (MPF).
 
 - [Обработка специализированного развертывания](../../extensibility/internals/handling-specialized-deployment.md)
 
- Объясняет, как подтипов проекта можно указать поведение специализированного развертывания путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> интерфейс.
+ Объясняет, как подтипы проекта могут обеспечить специализированное поведение развертывания путем реализации интерфейса. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>
 
 - [Добавление и удаление страниц свойств](../../extensibility/adding-and-removing-property-pages.md)
 
- Описывает добавление и удаление страниц свойств в конструкторе проектов.
+ Описывает добавление и удаление страниц свойств в проекте Designer.
 
 ## <a name="related-sections"></a>Связанные разделы
 - [Типы проектов](../../extensibility/internals/project-types.md)
 
- Содержит ссылки на разделы с подробным описанием [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проектов.
+ Предоставляет ссылки на [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] темы с подробным описанием проектов.

@@ -1,5 +1,5 @@
 ---
-title: SEEK_START | Документация Майкрософт
+title: SEEK_START Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de4aa0214ab97c330ddfb689076a2c378c4d227a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329300"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713590"
 ---
-# <a name="seekstart"></a>SEEK_START
-Задает положение, с которого следует начать поиск в потоке Дизассемблированный код.
+# <a name="seek_start"></a>SEEK_START
+Определяет положение, с которого можно начать поиск в потоке разборки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,27 +50,27 @@ public enum enum_SEEK_START { 
 
 ## <a name="fields"></a>Поля
  `SEEK_START_BEGIN`\
- Начинает поиск с начала текущего документа.
+ Начинает поиск в начале текущего документа.
 
  `SEEK_START_END`\
  Начинает поиск в конце текущего документа.
 
  `SEEK_START_CURRENT`\
- Начинает поиск в текущей позиции текущего документа.
+ Начинает поиск текущей позиции текущего документа.
 
  `SEEK_START_CODECONTEXT`\
- Начинает поиск в контексте данного кода текущего документа.
+ Начинает поиск в данном контексте кода текущего документа.
 
  `SEEK_START_CODELOCID`\
- Начинает поиск в расположение идентификатора данного кода. Идентификаторы расположение кода можно получить путем вызова [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ Начинает поиск в данном идентификаторе местоположения кода. Идентификаторы местоположения кода можно получить по телефону [GetCurrentLocation.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)
 
 ## <a name="remarks"></a>Примечания
- Передается в качестве аргумента для [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) метод.
+ Прошел в качестве аргумента в метод [Поиска.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Step | Документация Майкрософт
+title: IDebugПрограмма2::Шаг Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8030bd45850a2b81e3cfb03a83497bba77c4515c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 194e72eba5a3f137e4650752a090d91ad7c402fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325286"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722758"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Выполняет шаг.
 
 > [!NOTE]
-> Этот метод является нерекомендуемым. Используйте [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод вместо этого.
+> Этот метод является устаревшим. Вместо этого используйте метод [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,24 +48,24 @@ int Step( 
 
 ## <a name="parameters"></a>Параметры
 `pThread`\
-[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в настоящее время шаг.
+(в) Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий шаг вперед потока.
 
 `sk`\
-[in] Значение из [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) перечисление, указывающее тип шага.
+(в) Значение из перечисления [STEPKIND,](../../../extensibility/debugger/reference/stepkind.md) которое определяет вид шага.
 
 `step`\
-[in] Значение из [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) перечисление, указывающее единицы шага (например, путем инструкцию или инструкции).
+(в) Значение из перечисления [STEPUNIT,](../../../extensibility/debugger/reference/stepunit.md) которое определяет единицу шага (например, по заявлению или инструкции).
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- В случае любой синхронизации потоков или связи между потоками, другие потоки в программе следует запускать при отладке определенного потока.
+ В случае синхронизации потоков или связи между потоками другие потоки в программе должны работать при наступлении определенного потока.
 
 > [!WARNING]
-> В случае остановки или немедленно (синхронно) событие, чтобы не отправлять [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.
+> Не отправляйте событие остановки или немедленное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) во время обработки этого вызова; в противном случае отладчик может повесить.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

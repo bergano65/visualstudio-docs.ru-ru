@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetAddress | Документация Майкрософт
+title: IDebugField::GetАдрес Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetAddress method
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0524121d17158471b3e5aa81945a8e11db5ec58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1be3d839cabe3fce07cdd42720306bdac47282f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352639"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729002"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
-Этот метод возвращает адрес отладки поля.
+Этот метод получает адрес отладки поля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetAddress(
 
 ## <a name="parameters"></a>Параметры
 `ppAddress`\
-[out] Возвращает адрес как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.
+(ваут) Возвращает адрес в качестве объекта [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае верните код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

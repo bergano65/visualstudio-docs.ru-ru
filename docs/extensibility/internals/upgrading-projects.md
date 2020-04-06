@@ -7,17 +7,17 @@ helpviewer_keywords:
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9170532746dfc61cdec6636fb669676a94535de1
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301629"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704257"
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 
@@ -179,6 +179,6 @@ ms.locfileid: "79301629"
 
 2. В то время, когда элемент проекта получает уведомление об обновлении проекта, **мастер преобразования Visual Studio** по-прежнему отображается. Поэтому следует использовать методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> интерфейса для предоставления обновлений сообщений в интерфейс мастер-класса.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Проекты](../../extensibility/internals/projects.md)

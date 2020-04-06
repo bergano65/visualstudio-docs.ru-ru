@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY | Документация Майкрософт
+title: PROGRAM_NODE_ARRAY Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROGRAM_NODE_ARRAY structure
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4b2cbda4bce24c08297734e9b50a004ea9a67dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce84fec7a0d9223575828da105e46f43cc6cab09
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309258"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713800"
 ---
-# <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
-Содержит массив объектов, описывающих программы интерес.
+# <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
+Содержит множество объектов, описывающих интересующие программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ public struct tagPROGRAM_NODE_ARRAY {
 
 ## <a name="members"></a>Участники
  `dwCount`\
- Число объектов в `Members` массива.
+ Количество объектов `Members` в массиве.
 
  `Members`\
- Массив [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объектов, описывающих программы, в запросе.
+ Массив объектов [IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) описывающих запрашиваемые программы.
 
 ## <a name="remarks"></a>Примечания
- Эта структура является частью [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуру, которая в свою очередь заполняется с помощью вызова [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод.
+ Эта структура является частью [структуры PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) которая, в свою очередь, заполняется вызовом к методу [GetProviderProcessData.](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

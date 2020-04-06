@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt | Документация Майкрософт
+title: IDebugMemoryBytes2::WriteAt Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5eefaee08d64952681e91711cdf8347186123e57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ac9113424c6cd5cce230774a6e5335ffa4d4ba77
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347138"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727519"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
-Записывает указанное число байтов памяти, начиная с указанного адреса.
+Записывает указанное количество байтов памяти, начиная с указанного адреса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,19 +46,19 @@ int WriteAt(
 
 ## <a name="parameters"></a>Параметры
 `pStartContext`\
-[in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, который указывает, где начинается запись байтов.
+(в) Объект [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) определяет, где начать писать байты.
 
 `dwCount`\
-[in] Число байтов для записи.
+[in] Количество записываемых байтов.
 
 `rgbMemory`\
-[in] Запись байтов. Этот массив предполагается, что по крайней мере `dwCount` байт размером.
+(в) Байты писать. Предполагается, что этот `dwCount` массив будет по крайней мере байтами по размеру.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если не все байты, может быть записан или возвращает код ошибки (обычно `E_FAIL`).
+ В случае `S_OK`успеха, возвращается ; в противном случае, возвраты, `S_FALSE` если не все `E_FAIL`байты могут быть написаны или возвращает код ошибки (обычно).
 
 ## <a name="remarks"></a>Примечания
- Если начальный адрес находится за пределами окна "память", представленный данным [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объекта, запись не выполняется и кодом ошибки `E_FAIL` возвращается, даже если перекрывается сумму для записи в области памяти.
+ Если исходный адрес не находится в окне памяти, представленном этим объектом [IDebugMemoryBytes2,](../../../extensibility/debugger/reference/idebugmemorybytes2.md) нет записи и код ошибки `E_FAIL` возвращается - даже если сумма для записи перекрывается в пространстве памяти.
 
 ## <a name="see-also"></a>См. также
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

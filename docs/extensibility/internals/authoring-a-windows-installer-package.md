@@ -1,53 +1,53 @@
 ---
-title: Создание пакета установщик Windows | Документация Майкрософт
+title: Авторство пакета установки Windows (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa967b5f23ff9f4e5afa67b9b1cb4e83707616c6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982234"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710029"
 ---
-# <a name="author-a-windows-installer-package"></a>Создание пакета установщик Windows
-Данные установщик Windows модели. Вместо написания процедурного скрипта для копирования файлов и записи записей реестра, например, создаются строки и столбцы в таблицах базы данных, содержащих данные файлов и реестра.
+# <a name="author-a-windows-installer-package"></a>Автор пакета установки Windows
+Данные диски модели установки Windows. Например, вместо того, чтобы писать процедурный скрипт для копирования файлов и записи записей в реестре, вы авторьтесь строк и столбцов в таблицах баз данных, содержащих данные файлов и реестров.
 
-## <a name="database-entries"></a>Записи базы данных
-Чтобы установить VSPackage, пакет установщик Windows должен содержать записи базы данных для выполнения следующих задач:
+## <a name="database-entries"></a>Записи баз данных
+Для установки VSPackage пакет установки Windows должен содержать записи баз данных для выполнения следующих задач:
 
-- Выполните поиск в системе, чтобы найти версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживаемых VSPackage (с помощью установщик Windows таблиц, включающих Аппсеарч, Комплокатор, Реглокатор, Дрлокатор и Signature).
+- Поиск в системе, чтобы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] найти версии ваших поддержки VSPackage (с помощью таблиц установки Windows, которые включают AppSearch, CompLocator, RegLocator, DrLocator и подпись).
 
-- Отмените установку, если не установлена поддерживаемая версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] или если не выполнено другое требование к системе VSPackage (с использованием таблицы Лаунчкондитион).
+- Отмените установку, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] если не установлена поддерживаемая версия или если не выполнено другое системное требование VSPackage (с помощью таблицы LaunchCondition).
 
-- Установите пакет VSPackage и зависимые файлы (с помощью таблиц каталога, компонента и файлов).
+- Установите VSPackage и зависимые файлы (с использованием таблиц каталога, компонентов и файлов).
 
-- Добавьте соответствующие сведения для пакета VSPackage в реестр (с помощью таблицы реестра).
+- Добавить соответствующую информацию для VSPackage в реестр (с помощью таблицы реестра).
 
-- Интегрируйте пакет VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], вызвав **devenv. exe/setup** (с помощью таблицы CustomAction).
+- Интегрируйте VSPackage, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] позвонив **по devenv.exe/setup** (с помощью таблицы CustomAction).
 
-Дополнительные сведения см. в разделе [установщик Windows](/windows/desktop/Msi/windows-installer-portal).
+Для получения дополнительной [Windows Installer](/windows/desktop/Msi/windows-installer-portal)информации см.
 
-## <a name="setup-tools"></a>Средства установки
-Различные средства настройки сторонних разработчиков предоставляют среду разработки для установщик Windows пакетов. Доступны следующие бесплатные средства:
+## <a name="setup-tools"></a>Инструменты настройки
+Различные сторонние средства настройки обеспечивают среду разработки пакетов Windows Installer. Доступны следующие бесплатные инструменты:
 
-- InstallShield Limited Edition
+- InstallShield ограниченным тиражом
 
-   Вы можете получить ограниченную версию InstallShield с помощью диалогового окна **Новый проект** Visual Studio. Разверните узел **другие типы проектов** , а затем выберите **Установка и развертывание**. Выберите шаблон InstallShield.
+   Вы можете получить ограниченную версию InstallShield через visual Studio Новый диалог **проекта.** Расширьте **другие типы проектов,** а затем выберите **настройку и развертывание.** Выберите шаблон InstallShield.
 
-- Набор инструментов установщик Windows XML
+- Набор инструментов установки Windows XML
 
-   Набор средств установщик Windows XML (WiX) создает установщик Windows пакеты из исходных файлов XML. Набор инструментов WiX — это проект Microsoft с открытым исходным кодом. Исходный код и исполняемые файлы можно загрузить из [набора инструментов WiX](https://sourceforge.net/projects/wix/).
+   Набор инструментов Windows Installer XML (WiX) создает пакеты Windows Installer из исходных файлов XML. Набор инструментов WiX — это проект с открытым исходным кодом Майкрософт. Вы можете скачать исходный код и исполняемые данные из [набора инструментов Wix.](https://sourceforge.net/projects/wix/)
 
-   Сведения о коммерческих продуктах, которые интегрируются в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], см. в разделе [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+   Для коммерческих продуктов, которые интегрируются в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], см. [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
 ## <a name="see-also"></a>См. также
-- [Установка пакетов VSPackage с помощью установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Установка VSPackages с установкой Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

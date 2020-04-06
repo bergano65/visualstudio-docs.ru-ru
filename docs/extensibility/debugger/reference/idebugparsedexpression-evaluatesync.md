@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Документация Майкрософт
+title: IDebugParsedExpression::EvaluateSync Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aac58831224a6bebadd625dad72177f2aec3fc76
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311826"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726007"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Этот метод вычисляет проанализированное выражение и при необходимости приводит результат к другому типу данных.
+Этот метод оценивает разобранное выражение и дополнительно отбрасывает результат в другой тип данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,31 +53,31 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Параметры
 `dwEvalFlags`\
-[in] Сочетание [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) константы, определяющие, каким образом будет вычисляться выражение.
+(в) Сочетание констант [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) которые контролируют, как выражение должно быть оценено.
 
 `dwTimeout`\
-[in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+(в) Определяет максимальное время, в миллисекундах, чтобы ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
 
 `pSymbolProvider`\
-[in] Поставщик символов, выраженное как [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) интерфейс.
+(в) Поставщик символов, выраженный как интерфейс [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
 `pAddress`\
-[in] Текущее положение выполнения внутри метода, выраженное как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+(в) Текущее местоположение выполнения в методе, выраженное как интерфейс [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pBinder`\
-[in] Связыватель, выраженное как [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) интерфейс.
+(в) Связующее звено, выраженное как интерфейс [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 `bstrResultType`\
-[in] Тип результата должен быть приведен к. Этот аргумент может принимать значение null.
+(в) Тип результата должен быть отлит. Этот аргумент может быть нулевая стоимость.
 
 `ppResult`\
-[out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, представляющий результаты оценки.
+(ваут) Возвращает интерфейс [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) представляющий результаты оценки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Контекст вычисления выражений определяется формулой `pAddress`, который дает возможность определить, содержащего метода и области использования языка правил для определения значения символов в выражении.
+ Контекст оценки выражения `pAddress`дается, что позволяет определить содержащий метод, а затем использовать правила языкового скопирования для определения значения символов в выражении.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: Функция SccCloseProject | Документация Майкрософт
+title: Функция SccCloseProject (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a5fe721a3b51f4d3f210e7f2d5450e4f4bc6f41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333934"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701048"
 ---
 # <a name="scccloseproject-function"></a>Функция SccCloseProject
-Эта функция закрывает проект, отмечающую конец конкретного сеанса.
+Эта функция закрывает проект, отмечая окончание определенной сессии.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,22 +31,22 @@ SCCRTN SccCloseProject (
 ```
 
 ### <a name="parameters"></a>Параметры
- pvContext структура подключаемого модуля контекста исходного элемента управления.
+ pvContext Структура контекста управления исходным элементом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
+ Ожидается, что внедрение этой функции элемента управления исходным элементом вернет одно из следующих значений:
 
 |Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Проект был успешно закрыт.|
-|SCC_E_PROJNOTOPEN|Проект не открыт.|
-|SCC_E_NOTAUTHORIZED|Пользователю запрещено для этой операции.|
-|SCC_E_NONSPECIFICERROR|Обнаружена неспецифическая ошибка.|
+|SCC_E_PROJNOTOPEN|В настоящее время проект не открыт.|
+|SCC_E_NOTAUTHORIZED|Пользователю не разрешается выполнять эту операцию.|
+|SCC_E_NONSPECIFICERROR|Неспецифический сбой.|
 
 ## <a name="remarks"></a>Примечания
- [SccOpenProject](../extensibility/sccopenproject-function.md) всегда вызывается перед этой функцией. Вызов этой функции выполняется путем вызова либо `SccOpenProject` функции или [SccUninitialize](../extensibility/sccuninitialize-function.md), для завершения подключения к системе управления версиями, полностью.
+ [SccOpenProject](../extensibility/sccopenproject-function.md) всегда называется до этой функции. Затем за вызовом к этой функции `SccOpenProject` следует вызов либо к функции, либо к [SccUninitialize,](../extensibility/sccuninitialize-function.md)который полностью завершает подключение к системе управления исходным ресурсом.
 
 ## <a name="see-also"></a>См. также
-- [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)
+- [Функции API управления исходным элементом](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

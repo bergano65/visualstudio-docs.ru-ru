@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2 | Документация Майкрософт
+title: IDebugProviderProgramNode2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33c4a4914e15a8ecbea0d4f28c2325a952a042de
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353806"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720678"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-Этот интерфейс выполняет маршалинг интерфейса, связанных с программой через границы процессов.
+Этот интерфейс маршалов программы, связанные с интерфейсами через границы процесса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,26 +28,26 @@ ms.locfileid: "66353806"
 IDebugProviderProgramNode2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс на тот же объект, реализующий [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки интерфейсов маршалинга через границы процессов.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс на том же объекте, который реализует [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки интерфейсов маршалинга через границы процесса.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовите [QueryInterface](/cpp/atl/queryinterface) на `IDebugProgramNode2` интерфейс для получения этого интерфейса. Если этот интерфейс не может быть получен, DE не поддерживает маршалинг интерфейсов.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Вызов [queryInterface](/cpp/atl/queryinterface) `IDebugProgramNode2` на интерфейс, чтобы получить этот интерфейс. Если этот интерфейс не может быть получен, DE не поддерживает маршалинг интерфейсов.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
  Этот интерфейс реализует следующий метод:
 
 |Метод|Описание|
 |------------|-----------------|
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Возвращает заданный интерфейс через границы процессов.|
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Получает определенный интерфейс через границы процесса.|
 
 ## <a name="remarks"></a>Примечания
- Этот интерфейс реализуется в том случае, когда DE работает в отдельное пространство процесса из отлаживаемой программы: например, при выполнении DE в пространстве процесса Visual Studio, а не пространство процесса отлаживаемой программы.
+ Этот интерфейс реализуется, когда DE работает в отдельном пространстве процесса от отладки программы: например, когда DE работает в пространстве процесса Visual Studio вместо отладительной программы.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

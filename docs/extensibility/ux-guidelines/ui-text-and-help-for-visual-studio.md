@@ -3,17 +3,17 @@ title: UI Текст и помощь для визуальной студии (r
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0477a0e1994e9c3b94df13ace4c1f3b4df51039
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301539"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698300"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Текст пользовательского интерфейса и справки для Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a>Текст и терминология uI
@@ -272,7 +272,7 @@ ms.locfileid: "79301539"
 
 - **Кнопки помощи uI** (унипраженные). Видимый индикатор в заглавной панели, который дает доступ к соответствующей теме Справки F1.
 
-### <a name="text"></a>текст
+### <a name="text"></a>Text
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Учебный и дополнительный текст в диалогах
  В диалогах, поддерживающих сложные задачи, может возникнуть необходимость в предоставлении учебного текста в рамках uI, часто в верхней части диалога или вблизи сложных элементов управления. Подробную информацию о стиле написания можно узнать из [текста и терминологии UI.](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)
@@ -420,7 +420,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Шрифты и форматирование для Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Макет для Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Уведомления и ход выполнения для Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
