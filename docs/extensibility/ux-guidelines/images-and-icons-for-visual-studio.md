@@ -3,17 +3,17 @@ title: Изображения и иконки для визуальной сту
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e449fb30bd95319a46d1db50da63778f6800a70
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: dfef803d2bffb19cc54974465c7892b4d68ff3d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301599"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699052"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Изображения и значки для Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Использование изображения в Visual Studio
@@ -258,7 +258,7 @@ ms.locfileid: "79301599"
 
 - дифференцировать элементы в IntelliSense
 
-### <a name="accessibility"></a>Возможности доступа
+### <a name="accessibility"></a>Специальные возможности
  Руководящие принципы соответствия Visual Studio требуют, чтобы все значки, зарегистрированные в продукте, проходили требования к доступности цвета и контрастности. Цвета в визуальной языковой палитре были протестированы и отвечают этим требованиям.
 
 #### <a name="color-inversion-for-dark-themes"></a>Инверсия цвета для темных тем
@@ -269,7 +269,7 @@ ms.locfileid: "79301599"
 ### <a name="base-palette"></a>Базовая палитра
  Все стандартные значки содержат три базовых цвета. Иконки не содержат градиентов или теней падения, за одним или двумя исключениями для значков 3D-инструмента.
 
-|Использование|Имя|Значение (Легкая тема)|Образец|Пример|
+|Использование|name|Значение (Легкая тема)|Образец|Пример|
 |-----------|----------|---------------------------|------------|-------------|
 |Фон/Темный|VS BG|424242 / 66,66,66|![Палитра 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Пример базовой палитры](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Передний план/Свет|VS FG|F0EFF1 / 240 239 241|![Палитра F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -282,7 +282,7 @@ ms.locfileid: "79301599"
 #### <a name="action-modifiers"></a>Модификаторы действий
  В четырех приведенных ниже цветах указаны типы действий, требуемых модификаторами действий:
 
-|Использование|Имя|Значение (все темы)|Образец|
+|Использование|name|Значение (все темы)|Образец|
 |-----------|----------|--------------------------|------------|
 |Positive|VS действий Зеленый|388A34 / 56 138,52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negative|VS действий красный|A1260D / 161,38,13|![Палитра A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -325,14 +325,14 @@ ms.locfileid: "79301599"
 
 #### <a name="folder"></a>Папка
 
-|Использование|Имя|Значение (все темы)|Образец|Пример|
+|Использование|name|Значение (все темы)|Образец|Пример|
 |-----------|----------|--------------------------|------------|-------------|
 |Папки|Папка|DCB67A / 220 182 122|![Палитра DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Значок цвета папки](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Языки визуальной студии
  Каждый из общих языков или платформ, доступных в Visual Studio, имеет связанный цвет. Эти цвета используются на базовом значке или на языковых модификаторах, которые появляются в правом верхнем углу значков соединения.
 
-|Использование|Имя|Значение (все темы)|Образец|
+|Использование|name|Значение (все темы)|Образец|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF Blue|0095D7 / 0,149,215|![Палитра 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP Фиолетовый|9B4F96 / 155,79,150|![Палитра 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -351,10 +351,10 @@ ms.locfileid: "79301599"
 |![Значок Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")<br />VB|![Значок C&#35;](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![Значок C&#43;&#43; ](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![Значок F&#35;](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![Значок JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Значок Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|
 |![Значок HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![Значок WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![Значок ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![Значок CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![Значок TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
 
-#### <a name="intellisense"></a>технология IntelliSense
+#### <a name="intellisense"></a>IntelliSense
  Иконки IntelliSense используют эксклюзивную цветовую палитру. Эти цвета используются для того, чтобы помочь пользователям быстро различать различные элементы всплывающих данных IntelliSense.
 
-|Использование|Имя|Значение (все темы)|Образец|
+|Использование|name|Значение (все темы)|Образец|
 |-----------|----------|--------------------------|------------|
 |Класс, Событие|VS действий оранжевый|C27D1A / 194 125,26|![Палитра C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Метод расширения, метод, модуль, делегат|VS действий фиолетовый|652D90 / 101,45,144|![Палитра 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -372,7 +372,7 @@ ms.locfileid: "79301599"
 ### <a name="notifications"></a>Уведомления
  Уведомления в Visual Studio используются для обозначения статуса. Палитра уведомлений использует следующие четыре цвета, а также черные или белые параметры заполнения переднего плана для определения уведомлений со следующими уровнями состояния.
 
-|Использование|Имя|Значение (все темы)|Образец|
+|Использование|name|Значение (все темы)|Образец|
 |-----------|----------|--------------------------|------------|
 |Статус: нейтральный|Уведомление синий (VS Синий)|1BA1E2 / 27 161 226|![Палитра 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Статус: положительный|Уведомление Зеленый (VS Зеленый)|339933 / 51,153,51|![Палитра 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -390,7 +390,7 @@ ms.locfileid: "79301599"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  В общем, Visual Studio Online состоит из функций, размещенных в браузере. Цвет варьируется в разных средах, но стиль остается неизменным.
 
-|Группа|Использование|Имя|Значение (все темы)|Образец|
+|Группа|Использование|name|Значение (все темы)|Образец|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Историческая справка|TFSO BG|656565/ 101, 101, 101|![Палитра 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|Контур|TFSO OUT|ФФФФ / 255, 255, 255|![Палитра FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
@@ -423,8 +423,8 @@ ms.locfileid: "79301599"
 
 |Монако||||
 |------------|-|-|-|
-|![Значок файлов Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405-57_MonacoFiles")<br />Файлы|![Значок Git Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit")<br />Git|![Значок поиска Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405-59_MonacoSearch")<br />Поиск|![Значок текста Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText")<br />текст|
+|![Значок файлов Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405-57_MonacoFiles")<br />Файлы|![Значок Git Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit")<br />Git|![Значок поиска Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405-59_MonacoSearch")<br />Поиск|![Значок текста Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText")<br />Text|
 
 |F12|||
 |---------|-|-|
-|![Значок красивого кода F12](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405-61_F12PrettyCode")<br />Довольно код|![Значок предупреждения F12](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405-62_F12Warning")<br />Предупреждение|![Значок эмуляции F12](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405-63_F12Emulate")<br />Эмулировать|
+|![Значок красивого кода F12](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405-61_F12PrettyCode")<br />Довольно код|![Значок предупреждения F12](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405-62_F12Warning")<br />Предупреждение|![Значок эмуляции F12](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405-63_F12Emulate")<br />Эмуляция|
