@@ -1,34 +1,34 @@
 ---
-title: Практическое руководство. Устранение неполадок в службах | Документация Майкрософт
+title: Как поставить услуги по устранению неполадок (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669b8880e3fe378b05cc258bf473d74d0e5401b6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 49560acdf57f5dad2c57f2a8e4649f194d6d8298
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324819"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710746"
 ---
-# <a name="how-to-troubleshoot-services"></a>Практическое руководство. Устранение неполадок служб
-Существует несколько распространенных проблем, которые могут возникнуть при попытке получения службы.
+# <a name="how-to-troubleshoot-services"></a>Как посмотреть на услуги по устранению неполадок
+Есть несколько распространенных проблем, которые могут возникнуть при попытке получить услугу:
 
-- Служба не зарегистрирована с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+- Услуга не зарегистрирована [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]в .
 
-- Служба запрашивается, тип интерфейса, а не тип службы.
+- Услуга запрашивается по типу интерфейса, а не по типу обслуживания.
 
-- Пакет VSPackage, запрашивающего службу не был размещен.
+- VSPackage запрос службы не был расположен.
 
-- Поставщик неверной службе используется.
+- Используется нетот поставщик услуг.
 
-  Если запрошенная служба недоступна, вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> возвращает значение null. Вы должны всегда тестировать со значением NULL после выполнения запроса службы:
+  Если запрашиваемый сервис не может <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> быть получен, вызов возвращается недействительным. Вы всегда должны проверить на нуле после запроса услуги:
 
 ```csharp
 IVsActivityLog log =
@@ -36,11 +36,11 @@ IVsActivityLog log =
 if (log == null) return;
 ```
 
-## <a name="to-troubleshoot-a-service"></a>Устранение неполадок со службой
+## <a name="to-troubleshoot-a-service"></a>Для устранения неполадок службы
 
-1. Проверьте в системный реестр, чтобы увидеть ли службы был правильно зарегистрирован. Дополнительные сведения см. в разделе [Практическое руководство. Предоставляет службу](../extensibility/how-to-provide-a-service.md).
+1. Изучите системный реестр, чтобы узнать, была ли служба правильно зарегистрирована. Для получения дополнительной информации [см.](../extensibility/how-to-provide-a-service.md)
 
-    Следующие *.reg* фрагмент файла показано, как служба SVsTextManager может быть зарегистрирована:
+    Следующий фрагмент файла *.reg* показывает, как может быть зарегистрирована служба SVsTextManager:
 
    ```
    [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]
@@ -48,25 +48,25 @@ if (log == null) return;
    "Name"="SVsTextManager"
    ```
 
-    В приведенном выше примере номер версии — версия [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], такие как 12.0 и 14.0, ключ {F5E7E71D-1401-11d1-883B-0000F87579D2} является идентификатором службы (SID) службы, SVsTextManager и {значение по умолчанию F5E7E720-1401-11D1-883B-0000F87579D2} является GUID диспетчера текстов VSPackage, который предоставляет службу пакета.
+    В приведенном выше примере номер [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]версии представляет собой версию 12.0 или 14.0, ключевого идентификатора «F5E7E71D-1401-11d1-883B-0000F87579D2» — это идентификатор службы (SID) службы, SVsTextManager, и значение по умолчанию (F5E7E720-1401-11d1-883B-0000F87579D2) представляет собой пакет GUID текстового менеджера VSPackage, который предоставляет услугу.
 
-2. Используйте тип службы, а не тип интерфейса, при вызове GetService. При запросе к службе из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> извлекает идентификатор GUID из типа. Не удалось найти службу, если выполняются следующие условия:
+2. Используйте тип службы, а не тип интерфейса при вызове GetService. При запросе службы <xref:Microsoft.VisualStudio.Shell.Package> от, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]извлекает GUID из типа. Услуга не будет найдена, если существуют следующие условия:
 
-   1. Тип интерфейса передается GetService вместо типа службы.
+   1. Тип интерфейса передается GetService вместо типа обслуживания.
 
-   2. Идентификатор GUID не явно назначенный интерфейсу. Таким образом система создает значение по умолчанию идентификатор GUID для объекта при необходимости.
+   2. НИ один GUID явно не присваивается интерфейсу. Таким образом, система создает GUID по умолчанию для объекта по мере необходимости.
 
-3. Убедитесь, что VSPackage, запрашивающего службу размещения. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] узлы VSPackage, после его создания и перед вызовом метода <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
+3. Убедитесь, что VSPackage запрос службы был расположен. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]сайты VSPackage после его строительства и перед вызовом <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 
-    Если у вас есть код в конструктор VSPackage, который нуждается в обслуживании, переместите его `Initialize` метод.
+    Если у вас есть код в конструкторе VSPackage, `Initialize` который нуждается в службе, переместите его в метод.
 
-4. Убедитесь, что вы используете правильный доступ к службе.
+4. Убедитесь, что вы используете правильного поставщика услуг.
 
-    Не все поставщики услуг похожи. Поставщик услуг, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает в окно инструментов отличается от того, он передает VSPackage. Поставщик услуг окно инструмента знает о <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, но он не знает о <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Вы можете вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> получить поставщик службы из VSPackage в окне инструментов.
+    Не все поставщики услуг похожи. Поставщик услуг, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] который переходит к окну инструмента, отличается от того, который он передает VSPackage. Поставщик услуг инструмент окна <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>знает о, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>но не знает о . Вы можете <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> позвонить, чтобы получить поставщика услуг VSPackage из окна инструмента.
 
-    Если окно инструментов содержит пользовательский элемент управления или любой другой контейнер элемента управления, контейнер будет размещаться по модели компонентов Windows и не будет доступа к любому [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] служб. Вы можете вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> получить поставщик служб VSPackage из контейнера элемента управления.
+    Если в окне инструмента размещается пользовательский контроль или любой другой контейнер управления, контейнер [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет размещен по модели компонента Windows и не будет иметь доступа к каким-либо услугам. Вы можете <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> позвонить, чтобы получить поставщика услуг VSPackage из контейнера управления.
 
 ## <a name="see-also"></a>См. также
-- [Список доступных служб](../extensibility/internals/list-of-available-services.md)
-- [Использование и предоставление сервисов](../extensibility/using-and-providing-services.md)
-- [Основные компоненты службы](../extensibility/internals/service-essentials.md)
+- [Список доступных услуг](../extensibility/internals/list-of-available-services.md)
+- [Использование и предоставление услуг](../extensibility/using-and-providing-services.md)
+- [Основные услуги](../extensibility/internals/service-essentials.md)

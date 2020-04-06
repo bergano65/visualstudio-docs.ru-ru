@@ -1,5 +1,5 @@
 ---
-title: Идентификаторы GUID и идентификаторы меню Visual Studio | Документация Майкрософт
+title: GUIDs и идентионные идентизация визуальных studio Меню (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,95 +10,95 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26171ae9f4464c3b8b63762d92e9a91d5a4b8420
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a656d5cb9a126a9dc3988d70a290fceb3e56439e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329105"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708240"
 ---
-# <a name="guids-and-ids-of-visual-studio-menus"></a>Меню идентификаторы GUID и идентификаторы Visual Studio
-В этой статье перечисляет значения GUID и идентификатор меню и группы в строке меню Visual Studio. Эти значения определены в *.vsct* файлы, которые устанавливаются как часть Visual Studio SDK. Дополнительные сведения см. в разделе [команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
+# <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs и идентиматы меню Visual Studio
+В этой статье перечисляется значения GUID и ID меню и групп в меню Visual Studio. Эти значения определяются в *файлах .vsct,* которые устанавливаются как часть Визуальной студии SDK. Для получения дополнительной [информации](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)см.
 
- Дополнительные сведения о том, как работать с объектами Интегрированной среды разработки, которые определены в *.vsct* файлы, см. в разделе [расширить меню и команд](../../extensibility/extending-menus-and-commands.md).
+ Для получения дополнительной [информации](../../extensibility/extending-menus-and-commands.md)о том, как работать с интегрированными объектами среды разработки (IDE), которые определяются в файлах *.vsct,* см.
 
- Меню и группы в строке меню Visual Studio используйте GUID `guidSHLMainMenu`. В самой строке меню имеет идентификатор `IDM_VS_TOOL_MAINMENU`.
+ Меню и группы в баре меню Visual `guidSHLMainMenu`Studio используют GUID. Сам бар меню имеет `IDM_VS_TOOL_MAINMENU`id.
 
-## <a name="groups-on-the-visual-studio-menu-bar"></a>Группы в строке меню Visual Studio
- Чтобы добавить меню в строку меню, в качестве одной из этих групп его родителя.
+## <a name="groups-on-the-visual-studio-menu-bar"></a>Группы в меню Visual Studio
+ Чтобы добавить меню в панель меню, установите одну из этих групп в качестве ее родителя.
 
 |Группа|ID|
 |-----------|--------|
-|Файл, редактирование, просмотр|IDG_VS_MM_FILEEDITVIEW|
+|Файл/Отожоблик/Просмотр|IDG_VS_MM_FILEEDITVIEW|
 |Рефакторинг|IDG_VS_MM_REFACTORING:|
 |Проект|IDG_VS_MM_PROJECT|
-|Построить|IDG_VS_MM_BUILDDEBUGRUN|
-|Формат/Tools|IDG_VS_MM_TOOLSADDINS|
-|Окна/Справка/сообщества|IDG_VS_MM_WINDOWHELP|
+|Построение|IDG_VS_MM_BUILDDEBUGRUN|
+|Формат/Инструменты|IDG_VS_MM_TOOLSADDINS|
+|Окно/Помощь/Сообщество|IDG_VS_MM_WINDOWHELP|
 |Надстройки|IDG_VS_MM_MACROS|
 |FullScreenBar|IDG_VS_MM_FULLSCREENBAR|
 
-## <a name="menus-on-the-visual-studio-menu-bar"></a>Меню в строке меню Visual Studio
- Чтобы добавить группу в существующее меню Visual Studio, задайте один из следующих меню с родительским. Подменю не включаются в этот список.
+## <a name="menus-on-the-visual-studio-menu-bar"></a>Меню в меню -13.09.2017
+ Чтобы добавить группу в существующее меню Visual Studio, установите одно из следующих меню в качестве его родителя. Submenus не включены в этот список.
 
 |Меню|ID|
 |----------|--------|
 |Файл|IDM_VS_MENU_FILE|
-|Правка|IDM_VS_MENU_EDIT|
+|Изменить|IDM_VS_MENU_EDIT|
 |Просмотр|IDM_VS_MENU_VIEW|
 |Рефакторинг|IDM_VS_MENU_REFACTORING|
 |Проект|IDM_VS_MENU_PROJECT|
-|Построить|IDM_VS_MENU_BUILD|
+|Построение|IDM_VS_MENU_BUILD|
 |Формат|IDM_VS_MENU_FORMAT|
 |Инструменты|IDM_VS_MENU_TOOLS|
 |Расширения|IDM_VS_MENU_EXTENSIONS|
 |Окно|IDM_VS_MENU_WINDOW|
 |Надстройки|IDM_VS_MENU_ADDINS|
 |Сообщество|IDM_VS_MENU_COMMUNITY|
-|Help|IDM_VS_MENU_HELP|
+|Справка|IDM_VS_MENU_HELP|
 
-## <a name="groups-on-visual-studio-menus"></a>Группы меню Visual Studio
- В следующих списках приведены группы, полученные непосредственно из меню в строке меню Visual Studio. Самый быстрый способ добавить команду в меню Visual Studio — присвоить одной из этих групп в качестве родительского элемента. Группы, которые получены из подменю не отображаются в этом разделе.
+## <a name="groups-on-visual-studio-menus"></a>Группы по меню Visual Studio
+ Ниже приведены группы, которые спускаются непосредственно из меню в меню Visual Studio. Самый быстрый способ добавить команду в меню Visual Studio — установить одну из этих групп в качестве родительской группы. Группы, которые происходят из подменю, не отображаются в этом разделе.
 
-### <a name="file-menu-groups"></a>Файловые группы меню
+### <a name="file-menu-groups"></a>Группы меню файлов
 
 |Группа|ID|
 |-----------|--------|
-|Новый или открыть|IDG_VS_FILE_FILE|
-|Add|IDG_VS_FILE_ADD|
+|Новое/Открытое|IDG_VS_FILE_FILE|
+|Добавить|IDG_VS_FILE_ADD|
 |Решение|IDG_VS_FILE_SOLUTION|
-|Прочее|IDG_VS_FILE_MISC|
-|Сохранение|IDG_VS_FILE_SAVE|
+|Разное|IDG_VS_FILE_MISC|
+|Сохранять|IDG_VS_FILE_SAVE|
 |Переименовать|IDG_VS_FILE_RENAME|
 |Браузер|IDG_VS_FILE_BROWSER|
-|Print|IDG_VS_FILE_PRINT|
-|Самые последние использовавшиеся|IDG_VS_FILE_MRU|
-|Перемещение|IDG_VS_FILE_MOVE|
-|Exit|IDG_VS_FILE_EXIT|
+|Оператор print|IDG_VS_FILE_PRINT|
+|Самые недавно использованные|IDG_VS_FILE_MRU|
+|Переместить|IDG_VS_FILE_MOVE|
+|Выход|IDG_VS_FILE_EXIT|
 
-### <a name="edit-menu-groups"></a>Изменение группы меню
+### <a name="edit-menu-groups"></a>Элементы меню группы
 
 |Группа|ID|
 |-----------|--------|
 |Отменить/Повторить|IDG_VS_EDIT_UNDOREDO|
-|Операции вырезания, копирования и вставки|IDG_VS_EDIT_CUTCOPY|
-|Выбрать|IDG_VS_EDIT_SELECT|
-|Оператор GoTo|IDG_VS_EDIT_GOTO|
-|Find|IDG_VS_EDIT_FIND|
+|Вырезать /Копировать/вставить|IDG_VS_EDIT_CUTCOPY|
+|Выберите пункт|IDG_VS_EDIT_SELECT|
+|Goto|IDG_VS_EDIT_GOTO|
+|Поиск|IDG_VS_EDIT_FIND|
 |Объекты|IDG_VS_EDIT_OBJECTS|
-|Команды OLE|IDG_VS_EDIT_OLEVERBS|
-|Команда также|IDG_VS_EDIT_COMMANDWELL|
+|OLE Глаголы|IDG_VS_EDIT_OLEVERBS|
+|Командование Ну|IDG_VS_EDIT_COMMANDWELL|
 
-### <a name="refactor-menu-groups"></a>Рефакторинг группы меню
+### <a name="refactor-menu-groups"></a>Группы меню рефактора
 
 |Группа|ID|
 |-----------|--------|
-|Общие|IDG_REFACTORING_COMMON|
+|Распространенные|IDG_REFACTORING_COMMON|
 |Дополнительно|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Просмотр групп меню
@@ -110,41 +110,41 @@ ms.locfileid: "66329105"
 |Определение представлений|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
 |Архитектор Windows|IDG_VS_VIEW_ARCH_WINDOWS|
-|Организации Windows|IDG_VS_VIEW_ORG_WINDOWS|
-|Обозреватель кода|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
-|Windows dev|IDG_VS_VIEW_DEV_WINDOWS|
+|Организация Windows|IDG_VS_VIEW_ORG_WINDOWS|
+|Код браузера|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
+|Дев Windows|IDG_VS_VIEW_DEV_WINDOWS|
 |Панели инструментов|IDG_VS_VIEW_TOOLBARS|
 |Символы|IDG_VS_VIEW_SYMBOLNAVIGATE|
-|Перейти|IDG_VS_VIEW_NAVIGATE|
-|Мелкий перехода|IDG_VS_VIEW_SMALLNAVIGATE|
+|Перейти.|IDG_VS_VIEW_NAVIGATE|
+|Малый Навигация|IDG_VS_VIEW_SMALLNAVIGATE|
 |Обозреватель объектов|IDG_VS_VIEW_OBJBRWSR|
-|Команда также|IDG_VS_VIEW_COMMANDWELL|
+|Командование Ну|IDG_VS_VIEW_COMMANDWELL|
 |Страницы свойств|IDG_VS_VIEW_PROPPAGES|
-|Обновление|IDG_VS_VIEW_REFRESH|
+|Обновить|IDG_VS_VIEW_REFRESH|
 
 ### <a name="project-menu-groups"></a>Группы меню проекта
 
 |Группа|ID|
 |-----------|--------|
-|Прочие добавить|IDG_VS_PROJ_MISCADD|
-|Add|IDG_VS_PROJ_ADD|
+|Разное добавление|IDG_VS_PROJ_MISCADD|
+|Добавить|IDG_VS_PROJ_ADD|
 |Папка|IDG_VS_PROJ_FOLDER|
-|Выгрузку/перезагрузку|IDG_VS_PROJ_UNLOADRELOAD|
-|Ссылка|IDG_VS_PROJ_REFERENCE|
+|Выгрузка/перезагрузка|IDG_VS_PROJ_UNLOADRELOAD|
+|Справочник|IDG_VS_PROJ_REFERENCE|
 |Параметры|IDG_VS_PROJ_OPTIONS|
 |Параметры|IDG_VS_PROJ_SETTINGS|
 
-### <a name="build-menu-groups"></a>Создание группы меню
+### <a name="build-menu-groups"></a>Создание групп меню
 
 |Группа|ID|
 |-----------|--------|
 |Решение|IDG_VS_BUILD_SOLUTION|
-|Выбранное|IDG_VS_BUILD_SELECTION|
+|Выбор|IDG_VS_BUILD_SELECTION|
 |Оптимизация с использованием профиля|IDG_VS_PGO_SELECTION|
 |Прочее|IDG_VS_BUILD_MISC|
 |Отмена|IDG_VS_BUILD_CANCEL|
 
-### <a name="tools-menu-groups"></a>Группы меню средств
+### <a name="tools-menu-groups"></a>Группы меню инструментов
 
 |Группа|ID|
 |-----------|--------|
@@ -154,17 +154,17 @@ ms.locfileid: "66329105"
 |Параметры|IDG_VS_TOOLS_OPTIONS|
 |Другие 2|IDG_VS_TOOLS_OTHER2|
 |Внешние инструменты|IDG_VS_TOOLS_EXT_TOOLS|
-|Внешние настроек|IDG_VS_TOOLS_EXT_CUST|
+|Внешние настройки|IDG_VS_TOOLS_EXT_CUST|
 
-### <a name="window-menu-groups"></a>Группы меню окна
+### <a name="window-menu-groups"></a>Группы меню окон
 
 |Группа|ID|
 |-----------|--------|
 |Оператор new|IDG_VS_WINDOW_NEW|
-|Закрепления и закрытия|IDG_VS_DOCKCLOSE|
-|Закрепления или скрыть|IDG_VS_DOCKHIDE|
+|Док/Клоуз|IDG_VS_DOCKCLOSE|
+|Док/Скрыть|IDG_VS_DOCKHIDE|
 |Упорядочить|IDG_VS_WINDOW_ARRANGE|
-|Навигация|IDG_VS_WINDOW_NAVIGATION|
+|Навигации|IDG_VS_WINDOW_NAVIGATION|
 |Список|IDG_VS_WINDOW_LIST|
 
 ### <a name="help-menu-groups"></a>Группы меню справки
@@ -173,15 +173,15 @@ ms.locfileid: "66329105"
 |-----------|--------|
 |Примеры|IDG_VS_HELP_SAMPLES|
 |Поддержка|IDG_VS_HELP_SUPPORT|
-|Общие сведения о|IDG_VS_HELP_ABOUT|
+|Сведения|IDG_VS_HELP_ABOUT|
 
-## <a name="submenus-of-visual-studio-menus"></a>Подменю из меню Visual Studio
- Следующая иерархия показывает подменю, которые связаны с меню в строке меню Visual Studio. Так, как только группа может включать меню в виде родительского, каждый подменю необходимо опускаются из группы, меню, вместо непосредственно из меню. Дополнительные сведения о связи между меню, подменю и групп см. в разделе [Добавление подменю в меню](../../extensibility/adding-a-submenu-to-a-menu.md).
+## <a name="submenus-of-visual-studio-menus"></a>Подменю меню Visual Studio
+ В следующей иерархии показаны подменю, связанные с меню в панели меню Visual Studio. Поскольку только группа может иметь меню в качестве своего родителя, каждое подменю должно происходить из группы в меню, а не непосредственно из меню. Для получения дополнительной информации о взаимосвязи между меню, группами и подменю, [см.](../../extensibility/adding-a-submenu-to-a-menu.md)
 
 > [!NOTE]
-> Имена меню в строке меню Visual Studio не отображаются отдельно в этой иерархии, так как их можно вывести из соглашения об именовании для групп в интегрированной среде разработки, следующим образом: *IDG_VS_\<имя меню\>_\<имя группы\>* .
+> Названия меню в панели меню Visual Studio не отображаются отдельно в этой иерархии, поскольку они могут быть выведены из конвенции о наименовании для групп в IDE, следующим образом: *\<IDG_VS_ название\>меню и\<название\>группы*.
 
-|Родительская группа|Подменю|Дочерние группы|
+|Родительская группа|Submenu|Детские группы|
 |------------------|-------------|------------------|
 |IDG_VS_FILE_FILE|IDM_VS_CSCD_NEW|IDG_VS_FILE_NEW_CASCADE|
 ||IDM_VS_CSCD_OPEN|IDG_VS_FILE_OPENP_CASCADE|
@@ -194,7 +194,7 @@ ms.locfileid: "66329105"
 |||IDG_VS_FILE_MOVE_PICKER|
 |IDG_VS_VIEW_DEV_WINDOWS|IDM_VS_CSCD_FINDRESULTS|IDG_VS_WNDO_FINDRESULTS|
 ||IDM_VS_CSCD_WINDOWS|IDG_VS_VIEW_CALLBROWSER|
-|||IDG_VS_WNDO_OTRWNDWS1...6|
+|||IDG_VS_WNDO_OTRWNDWS1... 6|
 |||IDG_VS_WNDO_WINDOWS2|
 |IDG_VS_VIEW_TOOLBARS|IDM_VS_CSCD_COMMANDBARS||
 |IDG_VS_EDIT_GOTO|IDM_VS_EDITOR_FIND_MENU||
@@ -214,6 +214,6 @@ ms.locfileid: "66329105"
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
 ## <a name="see-also"></a>См. также
-- [Идентификаторы GUID и идентификаторы Visual Studio панелей инструментов](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
-- [Идентификаторы GUID и идентификаторы Visual Studio команды](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
-- [Visual Studio командные файлы table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [GUIDs и идентионные идентизаны панели инструментов Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
+- [GUIDs и идентионные идентионности команд Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
+- [Таблица команд Visual Studio (.vsct) файлов](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

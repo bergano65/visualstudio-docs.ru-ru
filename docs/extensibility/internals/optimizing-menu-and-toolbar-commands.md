@@ -1,5 +1,5 @@
 ---
-title: Оптимизация меню и команды панели инструментов | Документация Майкрософт
+title: Оптимизация меню и команд панели инструментов (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,29 +9,29 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c76e4f37fd77bd35526153bd86d419417a6cdb6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333130"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706908"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Оптимизация команд меню и панелей инструментов
-Добавление пакетов VSPackage и их соответствующие команды, чтобы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] может привести к загромождению пользовательского интерфейса. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет способы путаницы пользовательского интерфейса команды.
+Добавление VSPackages и соответствующих команд [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] может привести к переполненному uI. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]предоставляет способы, чтобы свести к минимуму путаницу команд ногой.
 
 ## <a name="in-this-section"></a>В этом разделе
 - [Как сделать команды доступными](../../extensibility/internals/making-commands-available.md)
 
- Приводятся общие рекомендации по минимизации частенько получает сильнейший из [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса при добавлении пакетов VSPackage.
+ Предоставляет общие рекомендации по минимизации [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] скученности uI при добавлении VSPackages.
 
 - [Рекомендации по размещению](../../extensibility/internals/command-placement-guidelines.md)
 
- Предоставляет конкретные рекомендации для реализации VSPackage в соответствии с размером набора команд.
+ Предоставляет конкретные рекомендации по реализации VSPackage в зависимости от размера набора команд.
 
 ## <a name="related-sections"></a>Связанные разделы
 - [Команды, меню и панели инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)

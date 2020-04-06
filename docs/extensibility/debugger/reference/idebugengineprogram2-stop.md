@@ -1,5 +1,5 @@
 ---
-title: 'IDebugEngineProgram2:: останавливается | Документация Майкрософт'
+title: IDebugEngineProgram2::Остановка Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d7213dcd2484ba69caf51fdc21f52bba5bb3361
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506448"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730481"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
-Останавливает все потоки, выполняющиеся в этой программе.
+Остановка всех потоков, работающих в этой программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int Stop();
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод вызывается при отладке этой программы в среде с несколькими программами. При получении события остановки от какой-либо другой программы этот метод вызывается в этой программе. Реализация этого метода должна быть асинхронной; то есть не все потоки должны быть остановлены перед возвратом этого метода. Реализация этого метода может быть такой же простой, как вызов метода [каусебреак](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) в этой программе.
+ Этот метод вызывается при отладке этой программы в многопрограммной среде. Когда событие остановки из какой-либо другой программы получено, этот метод вызывается на эту программу. Реализация этого метода должна быть асинхронной; то есть не все потоки должны быть остановлены до возвращения этого метода. Реализация этого метода может быть так же просто, как вызов [метода CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) в этой программе.
 
- Разработчики должны отправить [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) при остановке программы.
+ Исполнители должны отправить [IDebugStopCompleteEvent2,](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) когда программа останавливается.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)
