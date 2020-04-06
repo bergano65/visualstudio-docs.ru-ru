@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE | Документация Майкрософт
+title: BP_TYPE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350568"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737789"
 ---
-# <a name="bptype"></a>BP_TYPE
-Определяет точку останова в месте кода, — это расположение данных или — еще один тип точки останова.
+# <a name="bp_type"></a>BP_TYPE
+Определяет, находится ли точка разрыва в месте кода, является ли местоположение данных или другой тип точки разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,24 +48,24 @@ public enum enum_BP_TYPE {
 
 ## <a name="fields"></a>Поля
 `BPT_NONE`\
-Указывает тип точки останова не.
+Не указывает тип точки разрыва.
 
 `BPT_CODE`\
-Задает точку останова кода.
+Определяет точку разрыва кода.
 
 `BPT_DATA`\
-Задает точку останова по данным.
+Определяет точку разрыва данных.
 
 `BPT_SPECIAL`\
-Задает точку останова, которая не является ни код, ни тип данных. Этот тип является устаревшим и не должны использоваться.
+Определяет точку разрыва, которая не является ни кодом, ни типом данных. Этот тип является амортизированным и не должен использоваться.
 
 ## <a name="remarks"></a>Примечания
-Переданный в качестве параметра для [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) и [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) методы.
+Прошел в качестве параметра для методов [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) и [GetBreakpointType.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

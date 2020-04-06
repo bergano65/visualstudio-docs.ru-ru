@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_LOCATION | Документация Майкрософт
+title: BP_RESOLUTION_LOCATION Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ed287f2d90e1ee92c7e0fd4ae685fbb9f38854f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350584"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737810"
 ---
-# <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
-Задает структуру разрешения расположения точки останова.
+# <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
+Определяет структуру расположения разрешения точки разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,41 +50,41 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="members"></a>Участники
 `bpType`\
-Значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисление, указывающее способ интерпретации `bpResLocation` объединение или `unionmemberX` членов.
+Значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, которое определяет, как `bpResLocation` интерпретировать `unionmemberX` союз или членов.
 
 `bpResLocation.bpresCode`\
-[C++ только] Содержит [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) структуры, если `bpType`  =  `BPT_CODE`.
+(только си) Содержит [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) структуру, если `bpType`  =  `BPT_CODE`.
 
 `bpResLocation.bpresData`\
-[C++ только] Содержит [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры, если `bpType`  =  `BPT_DATA`.
+(только си) Содержит [структуру BP_RESOLUTION_DATA,](../../../extensibility/debugger/reference/bp-resolution-data.md) если `bpType`  =  `BPT_DATA`.
 
 `bpResLocation.unused`\
-[C++ только] Заполнитель.
+(только си) Заполнитель.
 
 `unionmember1`\
-[C# только] См. в разделе "Примечания" о том, как интерпретировать.
+(Только для C) Смотрите замечания о том, как интерпретировать.
 
 `unionmember2`\
-[C# только] См. в разделе "Примечания" о том, как интерпретировать.
+(Только для C) Смотрите замечания о том, как интерпретировать.
 
 `unionmember3`\
-[C# только] См. в разделе "Примечания" о том, как интерпретировать.
+(Только для C) Смотрите замечания о том, как интерпретировать.
 
 `unionmember4`\
-[C# только] См. в разделе "Примечания" о том, как интерпретировать.
+(Только для C) Смотрите замечания о том, как интерпретировать.
 
 ## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) и [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.
+Эта структура является членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) и [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структур.
 
- [C# только] `unionmemberX` Члены интерпретируются согласно следующей таблице. Найдите в левом столбце для `bpType` поперек затем значение с целью определить, о том, что `unionmemberX` представляет член и marshal `unionmemberX` соответствующим образом. См. в примере способ интерпретации этой структуры в C#.
+ (Только для C) Члены `unionmemberX` интерпретируются в соответствии со следующей таблицей. Посмотрите вниз левая `bpType` колонка для значения `unionmemberX` затем поперек, чтобы определить, что каждый член представляет и маршал `unionmemberX` соответственно. См. Пример для интерпретации этой структуры в C.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPT_DATA`|`string` (выражение данных)|`string` (имя функции)|`string` (имя образа)|`enum_BP_RES_DATA_FLAGS`|
+|`BPT_DATA`|`string`(выражение данных)|`string`(имя функции)|`string`(имя изображения)|`enum_BP_RES_DATA_FLAGS`|
 
 ## <a name="example"></a>Пример
-В этом примере показано, как интерпретировать `BP_RESOLUTION_LOCATION` структуры в C#.
+В этом примере `BP_RESOLUTION_LOCATION` показано, как интерпретировать структуру в C.
 
 ```csharp
 using System;
@@ -114,9 +114,9 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

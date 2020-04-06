@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO | Документация Майкрософт
+title: DEBUG_PROPERTY_INFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346181"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737445"
 ---
-# <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
-Содержит сведения о свойстве отладки.
+# <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
+Содержит информацию об отладке свойства.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,35 +53,35 @@ public struct DEBUG_PROPERTY_INFO {
 
 ## <a name="members"></a>Участники
 `dwValidFields`\
-Сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисление, указывающее, какие поля заполнены.
+Комбинация флагов [из DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, которая определяет, какие поля заполнены.
 
 `bstrFullName`\
-Полное имя свойства.
+Полное название отеля.
 
 `bstrName`\
 Имя свойства в контексте.
 
 `bstrType`\
-Тип свойства как отформатированную строку.
+Тип свойства как отформатированная строка.
 
 `bstrValue`\
-Значение свойства как отформатированную строку.
+Значение свойства как отформатированная строка.
 
 `pProperty`\
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объекта, описанного этой структурой.
+[Объект IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) описанный этой структурой.
 
 `dwAttrib`\
-Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, описывающее атрибуты данного свойства.
+Комбинация флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, описывающая атрибуты этого свойства.
 
 ## <a name="remarks"></a>Примечания
-Свойство является объектом иерархическую сущность, которая имеет имя, тип и значение. Например свойство можно описать, локальные переменные, параметры, переменные контрольных значений и выражений и регистров.
+Свойство — это объект иерархического характера, имевавкоторый имя, тип и ценность. Например, свойство может описывать локальные переменные, параметры, смотреть переменные и выражения, а также регистры.
 
-Эта структура передается [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод, где он заполняется. Эта структура также возвращается как часть списка этой структуры из [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) интерфейс, который, в свою очередь, возвращается из вызова [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы.
+Эта структура передается методу [GetPropertyInfo,](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) где она заполняется. Эта структура также возвращается как часть списка этой структуры из интерфейса [IEnumDebugPropertyInfo2,](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) который, в свою очередь, возвращается из вызова к методам [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [EnumProperties.](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,28 +1,28 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Документация Майкрософт
+title: IdebugDocumentChecksum2:GetChecksumAndAlgorithmid Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20cf33743d222e160458afcdcf186022a7405fa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350071"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731944"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.
+Извлекает проверку документа и идентификатор алгоритма с учетом максимального количества байтов для использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>Параметры
 `pRetVal`\
-[out] Уникальный идентификатор алгоритма подсчета контрольной суммы.
+(ваут) Уникальный идентификатор для алгоритма проверки.
 
 `cMaxBytes`\
-[in] Максимальное число байтов, которое должно использоваться для контрольной суммы.
+(в) Максимальное количество байтов, которые будут использоваться для проверки.
 
 `pChecksum`\
-[out] Значение контрольной суммы.
+(ваут) Значение чекового сум.
 
 `pcNumBytes`\
-[out] Фактическое число байтов, используемых для контрольной суммы.
+(ваут) Фактическое количество байтов, используемых для проверки.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере этот метод используется для получения контрольной суммы и алгоритм для документа.
+Следующий пример использует этот метод для получения проверки и алгоритма для документа.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)

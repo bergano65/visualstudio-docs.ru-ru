@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Документация Майкрософт
+title: FIELD_KIND Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344474"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736864"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
-Указывает тип поля, содержащегося в [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
+# <a name="field_kind"></a>FIELD_KIND
+Определяет вид поля, содержащегося в объекте [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -126,113 +126,113 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>Поля
 `FIELD_KIND_TYPE`\
-Указывает, что поле только для типа.
+Означает, что поле является только типом.
 
 `FIELD_KIND_SYMBOL`\
-Указывает, что поле — это символ, с типом, имя и другие сведения.
+Означает, что поле является символом с типом, именем и другой информацией.
 
 `FIELD_TYPE_PRIMITIVE`\
-Указывает, что поле имеет тип-примитив.
+Означает, что поле является примитивным типом данных.
 
 `FIELD_TYPE_STRUCT`\
-Указывает, что поле является структурой.
+Означает, что поле является структурой.
 
 `FIELD_TYPE_CLASS`\
-Указывает, что поле является классом.
+Означает, что поле является классом.
 
 `FIELD_TYPE_INTERFACE`\
-Указывает, что поле является интерфейсом.
+Означает, что поле является интерфейсом.
 
 `FIELD_TYPE_UNION`\
-Указывает, что поле объединения.
+Означает, что поле является союзом.
 
 `FIELD_TYPE_ARRAY`\
-Указывает, что поле является массивом.
+Означает, что поле представляет собой массив.
 
 `FIELD_TYPE_METHOD`\
-Указывает, что поле является методом.
+Означает, что поле является методом.
 
 `FIELD_TYPE_BLOCK`\
-Указывает, что поле представляет собой блок.
+Означает, что поле является блоком.
 
 `FIELD_TYPE_POINTER`\
-Указывает, что поле является указателем.
+Означает, что поле является указателем.
 
 `FIELD_TYPE_ENUM`\
-Указывает, что поле перечисляемого типа данных.
+Означает, что поле является перечисленным типом данных.
 
 `FIELD_TYPE_LABEL`\
-Указывает, что поле метки.
+Означает, что поле является меткой.
 
 `FIELD_TYPE_TYPEDEF`\
-Указывает, что поле является определением типа.
+Означает, что поле является typedef.
 
 `FIELD_TYPE_BITFIELD`\
-Указывает, что поле битовое поле.
+Означает, что поле является битовым полем.
 
 `FIELD_TYPE_NAMESPACE`\
-Указывает, что поле является пространством имен.
+Означает, что поле является пространством имен.
 
 `FIELD_TYPE_MODULE`\
-Указывает, что поле является модулем.
+Означает, что поле является модулем.
 
 `FIELD_TYPE_DYNAMIC`\
-Указывает, что поле является динамическим.
+Означает, что поле является динамическим.
 
 `FIELD_TYPE_PROP`\
-Указывает, что поле является свойством.
+Означает, что поле является свойством.
 
 `FIELD_TYPE_INNERCLASS`\
-Указывает, что поле является внутренним классом.
+Означает, что поле является внутренним классом.
 
 `FIELD_TYPE_REFERENCE`\
-Указывает, что поле является ссылкой.
+Означает, что поле является эталоном.
 
 `FIELD_TYPE_EXTENDED`\
-Зарезервировано для будущего использования.
+Зарезервировано для последующего использования.
 
 `FIELD_SYM_MEMBER`\
-Указывает, что поле является членом.
+Означает, что поле является членом.
 
 `FIELD_SYM_LOCAL`\
-Указывает, что поле является локальным.
+Означает, что поле локальное.
 
 `FIELD_SYM_PARAMETER`\
-Указывает, что поле является параметром.
+Означает, что поле является параметром.
 
 `FIELD_SYM_THIS`\
-Указывает, что поле имеет указатель «this».
+Означает, что поле является "этим" указателем.
 
 `FIELD_SYM_GLOBAL`\
-Указывает, что поле является глобальным.
+Означает, что поле является глобальным.
 
 `FIELD_SYM_PROP_GETTER`\
-Указывает, что поле извлекает свойства.
+Означает, что поле извлекает свойства.
 
 `FIELD_SYM_PROP_SETTER`\
-Указывает, что поле задает свойства.
+Означает, что поле устанавливает свойства.
 
 `FIELD_SYM_EXTENDED`\
-Зарезервировано для будущего использования.
+Зарезервировано для последующего использования.
 
 `FIELD_KIND_MASK`\
-Указывает маску для типов полей.
+Указывает маску для видов полей.
 
 `FIELD_TYPE_MASK`\
 Указывает маску для типов полей.
 
 `FIELD_SYM_MASK`\
-Указывает маску для символьной информации.
+Указывает маску для информации о символах.
 
 ## <a name="remarks"></a>Примечания
-Возвращается из вызова [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод.
+Возвращается с вызова на метод [GetKind.](../../../extensibility/debugger/reference/idebugfield-getkind.md)
 
-В зависимости от типа поля [QueryInterface](/cpp/atl/queryinterface) могут быть вызваны для [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс более определенной формы интерфейса. Например если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_METHOD`, затем можно вызвать `QueryInterface` на я`DebugField` для получения [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) интерфейс.
+В зависимости от типа поля, [queryInterface](/cpp/atl/queryinterface) можно вызвать на [интерфейсе IDebugField](../../../extensibility/debugger/reference/idebugfield.md) для более конкретной формы интерфейса. Например, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) `FIELD_TYPE_METHOD`возвращается, `QueryInterface` вы`DebugField` можете вызвать I, чтобы получить интерфейс [IDebugMethodField.](../../../extensibility/debugger/reference/idebugmethodfield.md)
 
 ## <a name="requirements"></a>Требования
 Заголовок: sh.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

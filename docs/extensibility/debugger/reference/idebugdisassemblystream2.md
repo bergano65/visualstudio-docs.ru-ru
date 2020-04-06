@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2 | Документация Майкрософт
+title: IDebugDisassemblyStream2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2 interface
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf91235b1321b13571505c51af077643c606c4a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 98ba08e4ec32aceaf6c265714848939cc6ad9c66
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310301"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732045"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
-Этот интерфейс представляет поток инструкций.
+Этот интерфейс представляет собой поток инструкций.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,33 +28,33 @@ ms.locfileid: "66310301"
 IDebugDisassemblyStream2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки реализует этот интерфейс для поддержки Дизассемблированный код программного кода.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Отладка двигателя реализует этот интерфейс для поддержки разборки кода программы.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызов [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) метод возвращает этот интерфейс.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Вызов на метод [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) возвращает этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugDisassemblyStream2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Считывает инструкциям, начиная с текущей позиции в потоке Дизассемблированный код.|
-|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Перемещает указатель чтения в потоке дизассемблированного кода заданного числа инструкции относительно указанной позиции.|
-|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Возвращает идентификатор расположения кода для контекста кода.|
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Возвращает объект контекста кода, соответствующий идентификатору расположение указанного кода.|
-|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Возвращает идентификатор расположения кода, который представляет текущее расположение кода.|
-|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Возвращает исходный документ, связанный с этого потока Дизассемблированный код.|
-|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Получает область этого потока Дизассемблированный код.|
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Получает размер этого потока Дизассемблированный код.|
+|[Прочитать](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Читает инструкции, начиная с текущего положения в потоке разборки.|
+|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Перемещает указатель чтения в потоке разборки определенное количество инструкций относительно заданной позиции.|
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Возвращает идентификатор местоположения кода для определенного контекста кода.|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Возвращает объект контекста кода, соответствующий указанному идентификатору местоположения кода.|
+|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Возвращает идентификатор местоположения кода, представляющий текущее местоположение кода.|
+|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Получает исходный документ, связанный с этим потоком разборки.|
+|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Получает область действия этого потока разборки.|
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Получает размер этого потока разборки.|
 
 ## <a name="remarks"></a>Примечания
- Можно создать поток Дизассемблированный код для представления во всем адресном пространстве или просто функции или модуля в пространстве. Каждая инструкция, представленного [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры, возвращенный вызовом к [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод.
+ Поток разборки может быть создан для представления всего адресного пространства или просто функции или модуля в пространстве. Каждая инструкция представлена структурой [DisassemblyData,](../../../extensibility/debugger/reference/disassemblydata.md) возвращенной вызовом на метод [Read.](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
