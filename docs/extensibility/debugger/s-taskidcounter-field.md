@@ -1,30 +1,30 @@
 ---
-title: s_taskIdCounter типа поля | Документация Майкрософт
+title: поле s_taskIdCounter (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskIdCounter field, Task class [.NET Framework debug engines]
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca3e82b3adef44fd3d9473ba5eff0164bb12c8d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b4c91d47fc1123a6737873fd27b7c95e0a98487
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318911"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713129"
 ---
-# <a name="staskidcounter-field"></a>Поле s_taskIdCounter
-Следующий доступный идентификатор для <xref:System.Threading.Tasks.Task> объекта.
+# <a name="s_taskidcounter-field"></a>Поле s_taskIdCounter
+Следующий доступный <xref:System.Threading.Tasks.Task> идентификатор для объекта.
 
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в mscorlib.dll)
 
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+ Поскольку вы не можете получить доступ к этому внутреннему члену из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
 
 ## <a name="syntax"></a>Синтаксис
 
