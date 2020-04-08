@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Подписки Visual Studio — почему я вижу адреса моих подписчиков в системах Hotmail и (или) Gmail?
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550335"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808339"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Подписки Visual Studio — почему я вижу личные учетные записи моих подписчиков?
 Когда компания переходит из Volume Licensing Service Center (VLSC) на новый [портал администрирования подписок](https://manage.visualstudio.com) Visual Studio, администраторов удивляет наличие личных адресов электронной почты (например, Hotmail или Outlook) в поле "Адрес электронной почты для входа" у некоторых подписчиков.  Чтобы получить дополнительные сведения, просмотрите [это видео](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
@@ -28,6 +28,9 @@ ms.locfileid: "79550335"
 > Современный интерфейс для подписчиков, реализованный на портале [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), поддерживает оба типа удостоверений: рабочие или учебные учетные записи и учетные записи Майкрософт (MSA).
 
 ## <a name="solution"></a>Решение
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 Чтобы устранить эту проблему, просто выберите **Подключить адреса электронной почты**, и система попытается сопоставить учетные записи с MSA с существующими пользователями в Azure Active Directory (AAD) вашей организации на основе соответствия имени и фамилии. Если возникает ошибка, можно удалить любое совпадение, щелкнув **X** справа от совпадения.  
 
 > [!div class="mx-imgBorder"]

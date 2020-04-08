@@ -2,20 +2,21 @@
 title: Запуск модели TensorFlow в облаке
 description: запуск модели tensorflow в виртуальной машине azure для глубинного обучения
 keywords: ии, visual studio, виртуальная машина для глубинного обучения
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75915831"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638753"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Обучение модели TensorFlow в облаке
 

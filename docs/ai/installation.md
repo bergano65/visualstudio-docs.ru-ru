@@ -2,19 +2,20 @@
 title: Установка средств искусственного интеллекта
 description: Описание установки средств искусственного интеллекта для Visual Studio
 keywords: искусственный интеллект, visual studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915810"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638577"
 ---
 # <a name="installation"></a>Установка
 
@@ -33,7 +34,7 @@ ms.locfileid: "75915810"
 2. В диалоговом окне **Расширения и обновления** выберите **Online** (Онлайн) с левой стороны.
 3. В поле поиска в правом верхнем углу введите "tools for ai" (средства ИИ).
 4. В результатах выберите **Visual Studio Tools for AI** (Средства Visual Studio для ИИ).
-5. Щелкните элемент **Загрузить**.
+5. Нажмите **Загрузить**.
 
 ## <a name="prepare-your-local-machine"></a>Подготовка локального компьютера
 
@@ -130,7 +131,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > Приведенная выше команда обновляет существующие старые и неофициальные пакеты NumPy и SciPy (например, пакеты сторонних разработчиков для Windows со страницы http://www.lfd.uci.edu/~gohlke/pythonlibs/ ) до последних официальных версий пакетов.
 
-### <a name="microsoft-cognitive-toolkit-cntk"></a>Набор средств Microsoft Cognitive Toolkit (CNTK)
+### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
 
 [Microsoft Cognitive Toolkit](https://cntk.ai) — это единый набор средств глубинного обучения, который описывает нейронные сети как ряд вычислительных шагов в виде направленного графа. CNTK поддерживает языки программирования Python и BrainScript.
 

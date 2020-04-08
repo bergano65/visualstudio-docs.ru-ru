@@ -7,16 +7,18 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Узнайте, как приступить к управлению подписками Visual Studio вашей организации с помощью портала администрирования подписок.
-ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233169"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808369"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Общие сведения о портале администрирования Подписок Visual Studio
 
 На портале администрирования подписок Visual Studio доступны средства для централизованного управления подписками вашей организации. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>Важные аспекты
 Используя портал администрирования подписок Visual Studio, помните следующее:
