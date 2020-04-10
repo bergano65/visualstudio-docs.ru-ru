@@ -1,24 +1,24 @@
 ---
 title: Соглашения о языке .NET для EditorConfig
-ms.date: 09/23/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306863"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544012"
 ---
 # <a name="language-conventions"></a>Языковые соглашения
 
@@ -50,7 +50,7 @@ ms.locfileid: "79306863"
 
 Серьезность в языковых соглашениях указывает уровень, на котором нужно применять соответствующий стиль. Следующая таблица описывает возможные значения серьезности и их влияние:
 
-Severity | Действие
+Серьезность | Действие
 :------- | ------
 `error` | При несоблюдении этого правила стиля выводится ошибка компилятора.
 `warning` | При несоблюдении этого правила стиля выводится предупреждение компилятора.
@@ -94,7 +94,6 @@ Severity | Действие
   - dotnet\_style\_predefined\_type\_for\_member_access
 - [Предпочтения для модификаторов](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
-  - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
   - dotnet\_style\_readonly\_field
 - [Предпочтения относительно круглых скобок](#parentheses-preferences)
@@ -109,15 +108,15 @@ Severity | Действие
   - dotnet\_style\_prefer\_inferred\_tuple_names
   - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
   - dotnet\_style\_prefer\_auto\_properties
-  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
   - dotnet\_style\_prefer\_compound\_assignment
 - [Настройки проверки Null](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
+  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-### <a name="this-and-me"></a>Квалификаторы "This." и "Me."
+### <a name="this-and-me-qualifiers"></a><a name="this-and-me"></a>Квалификаторы "This." и "Me."
 
 Это правило стиля может применяться к полям, свойствам, методам или событиям. Значение **true** означает, что перед символом кода предпочтительно добавлять `this.` в C# или `Me.` в Visual Basic. Значение **false** означает, что перед символом кода предпочтительно _не_ добавлять `this.` или `Me.`.
 
@@ -244,7 +243,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-### <a name="language-keywords"></a>Ключевые слова языка вместо имен типов .NET Framework для ссылок на типы
+### <a name="language-keywords-instead-of-framework-type-names-for-type-references"></a><a name="language-keywords"></a>Ключевые слова языка вместо имен типов .NET Framework для ссылок на типы
 
 Это правило стиля можно применить к локальным переменным, параметрам методов и членам классов, а также в виде отдельного правила для ввода выражений доступа к члену. Значение **true** означает предпочтение ключевого слова языка (например, `int` или `Integer`) вместо имени типа (например, `Int32`) для типов, которые представляет ключевое слово. Значение **false** означает предпочтение имени типа вместо ключевого слова языка.
 
@@ -313,7 +312,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-### <a name="normalize-modifiers"></a>Предпочтения для модификаторов
+### <a name="modifier-preferences"></a><a name="normalize-modifiers"></a>Предпочтения для модификаторов
 
 Этот раздел приводит предпочтительные правила стиля для модификаторов, в том числе когда требуются модификаторы доступа, указывается предпочтительный порядок сортировки или требуется модификатор только для чтения.
 
@@ -407,6 +406,43 @@ class MyClass
 Public Class MyClass
     Private Shared ReadOnly daysInYear As Int = 365
 End Class
+```
+
+#### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **Имя правила** | visual_basic_style_unused_value_expression_statement_preference |
+| **Идентификатор правила** | IDE0058 |
+| **Применимые языки** | Visual Basic |
+| **Значения** | `unused_local_variable:silent` |
+| **Значение по умолчанию в Visual Studio** | `unused_local_variable:silent` |
+
+Примеры кода:
+
+```vb
+' visual_basic_style_unused_value_expression_statement_preference = unused_local_variable:silent
+
+Dim unused = Computation()
+```
+
+#### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **Имя правила** | visual_basic_style_unused_value_assignment_preference |
+| **Идентификатор правила** | IDE0059 |
+| **Применимые языки** | Visual Basic |
+| **Значения** | `unused_local_variable:silent` |
+| **Значение по умолчанию в Visual Studio** | `unused_local_variable:silent` |
+
+Примеры кода:
+
+```vb
+' visual_basic_style_unused_value_assignment_preference = unused_local_variable:suggestion
+
+Dim unused = Computation()
+Dim x = 1;
 ```
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
@@ -941,6 +977,7 @@ x = x + 1
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 ```
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
@@ -1002,6 +1039,16 @@ Dim v = o?.ToString()
 Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
+
+### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+
+|||
+|-|-|
+| **Имя правила** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **Идентификатор правила** | IDE0041 |
+| **Применимые языки** | C# 6.0+ и Visual Basic 14+ |
+| **Значения** | `true` — предпочитать проверку значений NULL вместо метода равенства ссылок<br /><br />`false` — предпочитать метод равенства ссылок вместо проверки значений NULL |
+| **Значение по умолчанию в Visual Studio** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>Параметры качества кода .NET
 
@@ -1081,6 +1128,8 @@ End Function
 - [Настройки проверки Null](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
+- [Предпочтения для модификаторов](#normalize-modifiers)
+  - csharp\_preferred\_modifier_order
 - [Настройки блока кода](#code-block-preferences)
   - csharp\_prefer_braces
 - [Предпочтения неиспользуемых значений](#unused-value-preferences)
@@ -1885,7 +1934,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Соглашения по форматированию](editorconfig-formatting-conventions.md)
 - [Соглашения об именовании](editorconfig-naming-conventions.md)

@@ -1,7 +1,7 @@
 ---
 title: Создание сетевой установки
 description: Узнайте, как создать сетевую точку установки для развертывания Visual Studio на предприятии.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307319"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759729"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "79307319"
 
 Исполняемый файл программы установки &mdash; а точнее файл начального загрузчика &mdash; должен иметь одно из перечисленных ниже имен или похожее на него.
 
-| Выпуск | Имя файла |
+| Выпуск | имя_файла |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
@@ -55,7 +55,7 @@ ms.locfileid: "79307319"
 
 Исполняемый файл программы установки &mdash; а точнее файл начального загрузчика &mdash; должен иметь одно из перечисленных ниже имен или похожее на него.
 
-|Выпуск | Скачивание|
+|Выпуск | Скачать|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
@@ -70,7 +70,7 @@ ms.locfileid: "79307319"
 
 ## <a name="create-an-offline-installation-folder"></a>Создание папки автономной установки
 
-Для выполнения этого этапа необходимо подключение к Интернету. Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, подобную приведенным в следующих примерах.
+Для выполнения этого действия необходимо подключение к Интернету. Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, подобную приведенным в следующих примерах.
 
    > [!IMPORTANT]
    > Для установки полного макета Visual Studio потребуется как минимум 35 ГБ дискового пространства. Загрузка может занять некоторое время. Чтобы создать макет, содержащий только выбранные компоненты для установки, см. инструкции в разделе [Настройка сетевого макета](#customize-the-network-layout).
@@ -100,7 +100,7 @@ ms.locfileid: "79307319"
 
 ::: moniker range="vs-2017"
 
-Пример
+Пример.
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -237,8 +237,11 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 При установке на основе макета содержимое, которое устанавливается, извлекается из макета. Однако если выбрать компонент, которого нет в макете, он будет получен из Интернета.  Чтобы запретить программе установки Visual Studio скачивать содержимое, которое отсутствует в макете, используйте параметр `--noWeb`. Если используется параметр `--noWeb`, а в макете отсутствует выбранное для установки содержимое, программа установки завершается ошибкой.
 
+> [!TIP]
+> Чтобы выполнить установку из автономного источника на компьютере, не подключенном к Интернету, укажите параметры `--noWeb` и `--noUpdateInstaller`. Первый блокирует скачивание обновленных рабочих нагрузок, компонентов и т. д. Второй блокирует самообновление установщика с помощью обновлений из Интернета.
+
 > [!IMPORTANT]
-> Параметр `--noWeb` не отключает проверку наличия обновлений при установке Visual Studio. Дополнительные сведения см. в статье [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md).
+> Параметр `--noWeb` не отключает проверку наличия обновлений при установке Visual Studio на компьютере, подключенном к Интернету. Дополнительные сведения см. в статье [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Коды ошибок
 
@@ -280,11 +283,11 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 Если что-то во время автономной установки возникнет проблема, мы очень хотим узнать об этом. Передайте нам информацию с помощью средства [сообщения о проблеме](../ide/how-to-report-a-problem-with-visual-studio.md). Это средство позволяет отправлять нам данные телеметрии и журналы, которые помогут диагностировать и устранить возникшую проблему.
 
-Также доступен [**чат поддержки в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
+Также доступен [**чат по вопросам установки**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
 
 У нас есть и другие возможности технической поддержки. Список можно найти на нашей странице [отзывов](../ide/feedback-options.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 - [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
@@ -294,3 +297,4 @@ vs_enterprise.exe --layout c:\VSLayout --all
 - [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md)
 - [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
+- [Установка сертификатов, необходимых для установки Visual Studio в автономном режиме](install-certificates-for-visual-studio-offline.md)

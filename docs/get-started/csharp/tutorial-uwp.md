@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580001"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543929"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Учебник. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
@@ -42,6 +42,9 @@ ms.locfileid: "77580001"
 1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 1. В левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **Универсальные приложения**. В средней панели выберите **Пустое приложение (универсальное приложение Windows)** . Назовите проект *HelloWorld* и нажмите **OK**.
+
+   > [!NOTE]
+   > Убедитесь, что исходный проект находится на отформатированном диске **NTFS**, например на диске операционной системы (ОС). В противном случае могут возникнуть проблемы при сборке и выполнении проекта. 
 
    ![Шаблон проекта "Универсальное приложение Windows" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 

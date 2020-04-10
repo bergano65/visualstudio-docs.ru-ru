@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558121"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638691"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Измерение производительности приложения из командной строки
 
@@ -27,11 +27,13 @@ ms.locfileid: "77558121"
 
 В примере, описанном в этой статье, вы можете собирать данные производительности для Блокнота (Майкрософт), но тот же метод можно использовать для профилирования любого процесса.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
-* Visual Studio 2019, предварительная версия 3, или более поздней версии
+* Visual Studio 2019 или более поздние версии
 
 * Знание программы командной строки
+
+* Чтобы собрать сведения о производительности на удаленном компьютере без установки Visual Studio, установите на нем [Средства производительности для Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019). Версия средств должна соответствовать версии Visual Studio.
 
 ## <a name="collect-performance-data"></a>Сбор данных производительности
 
@@ -65,7 +67,7 @@ ms.locfileid: "77558121"
 
 1. Перейдите в выходной файл из предыдущей команды и откройте его в Visual Studio, чтобы изучить собранные сведения.
 
-## <a name="config_file"></a> Файлы конфигурации агента
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Файлы конфигурации агента
 
 Агенты сборки являются взаимозаменяемыми компонентами, которые собирают различные типы данных в зависимости от того, что вы пытаетесь измерить.
 
