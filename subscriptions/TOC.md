@@ -75,7 +75,6 @@
 ### [Суперадминистраторы и администраторы](admin-roles.md)
 ### [Настройка параметров соглашения](admin-prefs.md)
 ### [Обзор](using-admin-portal.md)
-### [Видеоучебник. Использование портала администрирования](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Назначение подписок
 #### [Добавление отдельных пользователей](assign-license.md)
 #### [Добавление нескольких пользователей](assign-license-bulk.md)
