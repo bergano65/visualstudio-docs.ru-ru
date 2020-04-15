@@ -8,18 +8,18 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715904"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224502"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Публикация в папке с помощью Visual Studio для Mac
 
 Вы можете использовать средство публикации для публикации консольных приложений .NET Core или приложений ASP.NET Core в папке.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 - Среда [Visual Studio 2019 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019), установленная с поддержкой .NET Core.
 - Консоль .NET Core или проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](/visualstudio/mac/create-new-projects?view=vsmac-2019).
@@ -52,7 +52,7 @@ ms.locfileid: "73715904"
 
 ## <a name="customize-publish-options"></a>Настройка параметров публикации
 
-Чтобы изменить имя профиля публикации (которое отображается в контекстном меню публикации), переименуйте файл профиля публикации. Не меняйте расширение файла (`.puxbml`).
+Чтобы изменить имя профиля публикации (которое отображается в контекстном меню публикации), переименуйте файл профиля публикации. Не меняйте расширение файла (`.pubxml`).
 
 Чтобы изменить путь к папке публикации, откройте профиль публикации и измените значение `publishUrl`.
 

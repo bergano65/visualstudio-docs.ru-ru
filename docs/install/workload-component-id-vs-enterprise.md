@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a122ce7ab95ff529d231d34e3cdd4852a0b49b81
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 7b4ddc14a6409b0e8450a61ab70d7be9d4f88a3c
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437668"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276348"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Каталог компонентов для Visual Studio Enterprise
 
@@ -44,7 +45,7 @@ ms.locfileid: "79437668"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 * [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)

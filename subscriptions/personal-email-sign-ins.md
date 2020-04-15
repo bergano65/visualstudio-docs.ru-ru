@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/07/2020
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: Подписки Visual Studio — почему я вижу адреса моих подписчиков в системах Hotmail и (или) Gmail?
-ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808339"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223688"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Подписки Visual Studio — почему я вижу личные учетные записи моих подписчиков?
-Когда компания переходит из Volume Licensing Service Center (VLSC) на новый [портал администрирования подписок](https://manage.visualstudio.com) Visual Studio, администраторов удивляет наличие личных адресов электронной почты (например, Hotmail или Outlook) в поле "Адрес электронной почты для входа" у некоторых подписчиков.  Чтобы получить дополнительные сведения, просмотрите [это видео](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
+Когда компания переходит из Volume Licensing Service Center (VLSC) на новый [портал администрирования подписок](https://manage.visualstudio.com) Visual Studio, администраторов удивляет наличие личных адресов электронной почты (например, Hotmail или Outlook) в поле "Адрес электронной почты для входа" у некоторых подписчиков.  
 
 ## <a name="cause"></a>Причина:
 Такая ситуация может сложиться из-за процессов входа, применявшихся в устаревшем интерфейсе для подписчиков MSDN. Пользователи переносятся из VLSC на новый портал администрирования подписок Visual Studio без каких-либо изменений. Администраторы могли даже не знать, что пользователи применяли личные учетные записи для доступа к преимуществам подписки. До миграции подписчиков Visual Studio, которая проходила в 2016 году, для успешного использования подписки Visual Studio выполнялись следующие два действия.
