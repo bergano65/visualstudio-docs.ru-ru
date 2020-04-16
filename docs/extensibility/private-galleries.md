@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702042"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444652"
 ---
 # <a name="private-galleries"></a>Частные галереи
 Вы можете поделиться элементами управления, шаблонами и инструментами, которые вы разрабатываете, разместив их в *частной галерее* в интрасети для вашей организации, следующим образом:
@@ -42,9 +42,9 @@ ms.locfileid: "80702042"
 
 5. В поле **URL** введите URL-адрес канала Atom или сайта SharePoint, на размещении которого находится частная галерея.
 
-    1. Если хост является атомом, который подключается к частной http://www.mywebsite/mygallery/atom.xmlгалерее, URL будет напоминать этот: .  Этот URL-адрес может относиться к файлу или сетевому пути.
+    1. Если хост является атомом, который подключается к частной `http://www.mywebsite/mygallery/atom.xml`галерее, URL будет напоминать этот: .  Этот URL-адрес может относиться к файлу или сетевому пути.
 
-    2. Если хост является сайтом SharePoint, URL http://mysharepoint/sites/mygallery/forms/AllItems.aspxбудет напоминать этот: .
+    2. Если хост является сайтом SharePoint, URL `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`будет напоминать этот: .
 
 ### <a name="manage-private-galleries"></a>Управление частными галереями
  Администратор может сделать частную галерею доступной для нескольких компьютеров одновременно, изменив системный реестр на каждом компьютере. Для достижения этой цели создайте файл *.pkgdef,* описывающий новые ключи реестра и их значения.  Формат этого файла заключается в следующем.

@@ -7,25 +7,25 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ef0124c06cd6f1a4d24e29b2c02cd0b50a37b0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ca497244a806324d9d2315fa1b1b89404838ff3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115269"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445003"
 ---
 # <a name="vs-shell-deployment"></a>Развертывание VS Shell
 
-Изолированная оболочка позволяет определить, какие функциональные возможности Visual Studio необходимы для взаимодействия с конкретным доменным языком и как это решение должно отображаться. Дополнительные сведения о изолированной оболочке Visual Studio см. [в разделе Настройка изолированной оболочки](https://vspartner.com/pages/vsshells).
+Изолированная оболочка позволяет определить, какая функция Visual Studio вам нужна для взаимодействия с языком, на котором предназначен для домена, и как должно отображаться это решение. Для получения дополнительной информации об изолированной оболочке Visual Studio [см.](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell)
 
-Чтобы задать оболочку Visual Studio в качестве цели развертывания, сделайте следующее:
+Чтобы установить Visual Studio Shell в качестве цели развертывания:
 
-1. В проекте **DslPackage** откройте **source.extension.TT**.
+1. В проекте **DslPackage,** **открытые source.extension.tt**.
 
-2. В разделе `<SupportedProducts>` вставить:
+2. Под `<SupportedProducts>` вставкой:
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   Замените *мисолатедшелл* именем пакета изолированной оболочки.
+   Замените *MyIsolatedShell* именем изолированного пакета оболочки.
