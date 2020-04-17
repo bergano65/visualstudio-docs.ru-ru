@@ -1,16 +1,16 @@
 ---
 title: Практическое руководство. Повышение шансов решения проблемы с производительностью
 description: Дополнительные сведения и рекомендации по отправке проблем с производительностью в Visual Studio
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1a83a9c16e915bde2958193c640c0981f5edc005
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75918164"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276459"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Практическое руководство. Повышение шансов решения проблемы с производительностью
 
@@ -118,7 +118,7 @@ Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 **Отсутствие отклика по неизвестным причинам**
 
 Если отсутствие отклика проявляется без какой-либо закономерности, при следующем таком случае запустите новый экземпляр Visual Studio и сообщите о проблеме с его помощью.
-На [экране записи](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro) выберите сеанс Visual Studio, который не отвечает.
+На [экране "Запись"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro) выберите сеанс Visual Studio, который не отвечает.
 
 Если зависший экземпляр Visual Studio был запущен в режиме администратора, второй экземпляр также необходимо запускать в этом режиме.
 

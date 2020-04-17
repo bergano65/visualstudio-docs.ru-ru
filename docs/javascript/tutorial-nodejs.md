@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235084"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224528"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 
@@ -56,7 +56,7 @@ npm — это диспетчер пакетов по умолчанию для 
 
 ### <a name="what-is-express"></a>Что такое express?
 
-Express — это платформа веб-приложений, используемая в качестве серверной платформы Node.js для сборки веб-приложений. Express позволяет использовать различные внешние платформы для создания пользовательского интерфейса, такие как Pug (прежнее название Jade). В этом учебнике используется Pug.
+Express — это платформа веб-приложений, используемая в качестве серверной платформы Node.js для сборки веб-приложений. Express позволяет выбирать различные платформы для создания внешнего пользовательского интерфейса, например Pug (в прошлом — Jade). В этом учебнике используется Pug.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
