@@ -1335,6 +1335,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: "Windows\_Information\_Protection (WIP)"
           href: ide/exempt-visual-studio-from-wip.md
+        - name: Федеральный стандарт обработки информации (FIPS)
+          href: ide/fips-support-visual-studio.md
     - name: Ввод данных на языках с двунаправленным письмом
       href: ide/use-bidirectional-languages.md
     - name: Окно справки (Майкрософт)
