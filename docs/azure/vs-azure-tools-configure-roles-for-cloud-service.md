@@ -4,17 +4,17 @@ description: Узнайте, как настроить роли для обла�
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a01a1fb182fc9d45e4e08dcd9acb8e0ec734f098
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300957"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489731"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Настройка ролей для облачной службы Azure в Visual Studio
 Облачной службе Azure можно назначить одну или несколько рабочих ролей или веб-ролей. Для каждой роли нужно определить способ настройки, а также настроить способ выполнения. Дополнительные сведения о ролях в облачных службах см. в видео [Введение в облачные службы Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -268,5 +268,5 @@ using (FileStream writeStream = File.Create(filePath))
 
 1. Когда откроется окно проводника Windows, введите в текстовое поле **поиска** запрос "MyLocalStorageTest.txt'' и нажмите клавишу **ВВОД**, чтобы начать поиск.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о проектах Azure в Visual Studio см. в статье [Настройка проекта облачной службы в Visual Studio](vs-azure-tools-configuring-an-azure-project.md). Дополнительные сведения о схеме облачной службы см. в статье [Справка по схемам Windows Azure](https://msdn.microsoft.com/library/azure/dd179398).

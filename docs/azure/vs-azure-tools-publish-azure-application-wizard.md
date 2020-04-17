@@ -4,17 +4,17 @@ description: Узнайте, как настроить различные пар
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 312a7e072ff5dfbe1a462abb68c8a74a42823e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550370"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489653"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Использование мастера публикации приложений Azure в Visual Studio
 
@@ -99,7 +99,7 @@ ms.locfileid: "62550370"
 
 ![Сводка](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Целевой профиль**: здесь вы можете создать профиль публикации на основе ранее выбранных параметров. Например, можно создать один профиль для тестовой среды, а другой — для рабочей. Чтобы сохранить профиль, щелкните значок **Сохранить** . Мастер создаст профиль и сохранит его в проекте Visual Studio. Чтобы изменить имя профиля, откройте список **Целевой профиль**, а затем выберите **&lt;Управление&gt;**.
+**Целевой профиль**: здесь вы можете создать профиль публикации на основе ранее выбранных параметров. Например, можно создать один профиль для тестовой среды, а другой — для рабочей. Чтобы сохранить профиль, выберите значок **Сохранить**. Мастер создаст профиль и сохранит его в проекте Visual Studio. Чтобы изменить имя профиля, откройте список **Целевой профиль**, а затем выберите **&lt;Управление&gt;**.
 
    > [!Note]
    > Профиль публикации отображается в обозревателе решений в Visual Studio, а параметры профиля записываются в файл с расширением AZUREPUBXML. Параметры сохраняются как атрибуты XML-тегов.
@@ -118,6 +118,6 @@ ms.locfileid: "62550370"
 
 - [Тестирование производительности облачной службы](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Настройка системы диагностики для облачных служб и виртуальных машин Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Настройка диагностики для облачных служб Azure и виртуальных машин.](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
 
-- [Что такое Azure Application Insights?](/azure/application-insights/app-insights-overview)
+- [Что такое анализ приложений?](/azure/application-insights/app-insights-overview)

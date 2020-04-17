@@ -4,21 +4,21 @@ description: Узнайте, как создать проект облачной
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 722c816329c70bb2efad03f9554e201bcc9fde16
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23e2db0b42fb12872feb5942d9f4eeaab96d3c2d
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253463"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489757"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Создание проекта облачной службы в Visual Studio
 
-Инструменты Azure для Visual Studio предоставляют шаблон проекта, который позволяет создать [облачную службу Azure](/azure/cloud-services/cloud-services-choose-me). Это простая служба Azure общего назначения. Когда проект создан, Visual Studio дает возможность настроить облачную службу, выполнить ее отладку и развернуть ее в Azure.
+Visual Studio предоставляет шаблон проекта, который позволяет создавать [облачный сервис Azure,](/azure/cloud-services/cloud-services-choose-me)который является простой службой общего назначения Azure. Когда проект создан, Visual Studio дает возможность настроить облачную службу, выполнить ее отладку и развернуть ее в Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Шаги по созданию проекта облачной службы Azure в Visual Studio
 В этом разделе описывается процесс создания проекта облачной службы Azure в Visual Studio с применением одной или нескольких веб-ролей.
@@ -60,7 +60,7 @@ ms.locfileid: "71253463"
 
 Проект Azure в Visual Studio связан с проектами ролей в решении. Проект также содержит *файл определения службы* и *файл конфигурации службы*:
 
-- **Файл определения службы** — определяет параметры времени выполнения для приложения, включая необходимые роли, конечные точки и размер виртуальной машины.
+- **Файл определения обслуживания** - Определяет параметры времени выполнения приложения, включая, какие роли требуются, конечные точки и размер виртуальной машины.
 - **файл конфигурации службы** (CSCFG-файл) задает количество выполняемых экземпляров роли, а также значения параметров, определенных для роли.
 
 Дополнительные сведения об этих файлах см. в статье [Настройка ролей для облачной службы Azure в среде Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).

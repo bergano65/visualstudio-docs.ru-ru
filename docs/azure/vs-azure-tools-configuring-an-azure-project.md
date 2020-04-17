@@ -4,17 +4,17 @@ description: Узнайте, как настроить проект облачн
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 77985de756274793c99673c79dac26e59129a7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 609830b5182ef726a6d1933acecb1ddcbf4e25ef
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572489"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489705"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Настройка проекта облачной службы в Visual Studio
 Проект облачной службы Azure можно настроить в соответствии с вашими требованиями к этому проекту. Для проекта можно настраивать свойства следующих категорий.

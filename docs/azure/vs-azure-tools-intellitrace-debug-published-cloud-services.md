@@ -5,23 +5,23 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: 35e790f9651e0f358fe60dd7ebdc131496259102
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: c61af4a08c61cbfd16d33e2b5cf7402960163f12
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911815"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489718"
 ---
-# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Отладка опубликованной облачной службы Azure с помощью IntelliTrace и Visual Studio
+# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Отладка опубликованной облачной службы Azure с помощью Visual Studio и IntelliTrace
 С помощью IntelliTrace можно записывать в журнал расширенные отладочные сведения для экземпляра роли при его запуске в Azure. Если вам необходимо найти причину проблемы, можете использовать журналы IntelliTrace для пошагового выполнения кода из Visual Studio, как если бы он запускался в Azure. Фактически IntelliTrace записывает выполнение ключевого кода и данные среды при запуске приложения Azure в качестве облачной службы в Azure и позволяет воспроизводить записанные данные в Visual Studio.
 
 IntelliTrace можно использовать, если ваше приложение Azure предназначено для .NET Framework 4 или более поздней версии и если у вас установлена среда разработки Visual Studio Enterprise. IntelliTrace собирает сведения для ваших ролей Azure. Виртуальные машины для этих ролей всегда запускают 64-разрядные операционные системы.
 
-В качестве альтернативы можно использовать [удаленную отладку](vs-azure-tools-debugging-cloud-services-overview.md) для непосредственного подключения к облачной службе, запущенной в Azure.
+В качестве альтернативы можно использовать [удаленную отладку](vs-azure-tools-debugging-cloud-services-overview.md) для присоединения непосредственно к облачному сервису, работая в Azure.
 
 > [!IMPORTANT]
 > IntelliTrace предназначена только для отладки и не должна использоваться в рабочей среде.
@@ -30,7 +30,7 @@ IntelliTrace можно использовать, если ваше прилож
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Настройка приложения Azure для IntelliTrace
 Чтобы включить IntelliTrace для приложения Azure, необходимо создать и опубликовать приложение из проекта Visual Studio Azure. Перед публикацией в Azure необходимо настроить IntelliTrace для приложения Azure. Если вы опубликовали приложение без настройки IntelliTrace, то необходимо еще раз опубликовать проект. Дополнительные сведения см. в статье [Публикация облачной службы с помощью инструментов Azure](vs-azure-tools-publishing-a-cloud-service.md).
 
-1. Перед развертыванием приложения Azure убедитесь, что в качестве целей сборки проекта выбрана **Отладка**.
+1. Когда все готово к развертыванию приложения Azure, убедитесь, что для целевых объектов построения задано значение **Отладка**.
 
 1. В **обозревателе решений** щелкните проект правой кнопкой мыши и в контекстном меню выберите **Опубликовать**.
 
