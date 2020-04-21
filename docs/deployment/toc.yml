@@ -94,8 +94,6 @@
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
             - name: установку пользовательских разрешений для приложения ClickOnce
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: Отладка ClickOnce-приложения с ограниченными разрешениями
-              href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: Добавление надежного издателя на клиентский компьютер
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
             - name: повторное подписание манифестов приложения и развертывания
