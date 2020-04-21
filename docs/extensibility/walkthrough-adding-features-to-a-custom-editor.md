@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697789"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649847"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Прохождение: Добавление функций в пользовательский редактор
 После создания пользовательского редактора можно добавить в него больше функций.
@@ -34,7 +34,7 @@ ms.locfileid: "80697789"
 
 3. Реализация фабрики редакторов <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> путем настройки интерфейса.
 
-     Для получения дополнительной [информации см.](../extensibility/editor-factories.md)
+     Для получения дополнительной [информации см.](/visualstudio/extensibility/editor-factories?view=vs-2015)
 
 4. Решите, хотите ли редактор использовать активацию на месте или упрощенное встраивание для управления окном объекта представления документа.
 
