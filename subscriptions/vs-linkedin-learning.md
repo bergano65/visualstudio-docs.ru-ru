@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Сведения о преимуществе LinkedIn Learning, которое входит в состав подписки LinkedIn Premium, включенной в некоторые подписки Visual Studio.
-ms.openlocfilehash: 57744c21123188448048b469aa06153cf81a949f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: a0b837ce4a86b48acb690030c1a96064b336cd61
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273963"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649529"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "80273963"
 
 2. Найдите плитку LinkedIn Learning в категории "Образование" и щелкните ссылку **Получить код**.
    > [!div class="mx-imgBorder"]
-   > ![Плитка преимущества LinkedIn Learning](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
+   > ![Плитка преимущества LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
 3. Если у вас уже есть учетная запись LinkedIn и вы вошли автоматически, вы немедленно перейдете на страницу активации преимущества LinkedIn Learning.  Если у вас есть учетная запись LinkedIn, но вы не вошли в нее автоматически, просто введите свои имя пользователя и пароль, а затем нажмите кнопку **Вход**.  Чтобы активировать предложение, перейдите к [этому шагу](#activate-your-offer).
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74474012"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445016"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Публикация приложения Node.js в Azure (служба приложений Linux)
 
@@ -173,7 +173,7 @@ ms.locfileid: "74474012"
 ## <a name="troubleshooting"></a>Устранение неполадок
 
 * Если процесс node.exe завершается сбоем (то есть возникает необработанное исключение), контейнер перезапускается.
-* При запуске контейнер проходит через различные эвристические алгоритмы, чтобы понять, как запустить процесс Node.js. Сведения о реализации можно увидеть в [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
+* При запуске контейнер проходит через различные эвристические алгоритмы, чтобы понять, как запустить процесс Node.js. Сведения о реализации можно увидеть в [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
 * Вы можете подключиться к запущенному контейнеру по протоколу SSH для исследования. Это легко сделать с помощью портала Azure. Выберите службу приложений и прокрутите вниз список средств до пункта **SSH** в разделе **Средства разработки**.
 * Чтобы получить помощь в устранении неполадок, перейдите к параметрам **Журналы диагностики** для службы приложений и измените значение параметра **Ведение журнала контейнера Docker** с **Выкл.** на **Файловая система**. Журналы создаются в контейнере в папке */home/LogFiles/*_docker.log*, доступ к ним можно получить через SSH или FTP(S).
 * Сайту может быть присвоено пользовательское доменное имя вместо URL-адреса *.azurewebsites.net, назначенного по умолчанию. Дополнительные сведения см. в разделе [Подключение личного домена](/azure/app-service/app-service-web-tutorial-custom-domain).

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306917"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648527"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -104,7 +104,7 @@ ms.locfileid: "79306917"
 
 - [Функция определения кода](/visualstudio/intellicode/code-style-inference) IntelliCode для Visual Studio позволяет настроить стили кода по существующему коду. Она создает непустой файл EditorConfig с определенными параметрами для вашего стиля кода.
 
-- Начиная с Visual Studio 2019 вы можете [создать файл EditorConfig для настроенных параметров стиля кода](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) через пункт меню **Средства** > **Параметры**.
+- Начиная с Visual Studio 2019 вы можете [создать файл EditorConfig для настроенных параметров стиля кода](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) через пункт меню **Средства** > **Параметры**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Иерархия и приоритет файлов
 

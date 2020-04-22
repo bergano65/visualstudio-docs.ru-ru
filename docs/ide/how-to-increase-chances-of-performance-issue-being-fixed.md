@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 1a83a9c16e915bde2958193c640c0981f5edc005
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: f5c83a145eb56dcb95c6e9a299c690ae960442c9
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276459"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615048"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Практическое руководство. Повышение шансов решения проблемы с производительностью
 
@@ -74,17 +74,17 @@ Visual Studio — это обширная и сложная платформа,
 Если вы не можете определить причины сбоев или они возникают без какой-либо закономерности, вы можете записать локальные дампы для каждого случая сбоя Visual Studio и приложить их к отдельным элементам отзывов. Чтобы сохранять локальные дампы при сбоях Visual Studio, выполните следующие команды в окне командной строки администратора:
 
 ```
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe"
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 ```
 
 Задайте количество дампов и папку для их размещения. Дополнительные сведения об этих параметрах см. в [этом разделе](/windows/win32/wer/collecting-user-mode-dumps).

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Сведения о преимуществе Центра приложений Visual Studio, включенном в подписки Visual Studio.
-ms.openlocfilehash: abe929398035bef8800949712ad6cc4e0ac93721
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: d47e3cfef8be2a3a03dab94d6a38f2ecde160f0c
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301864"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649779"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 

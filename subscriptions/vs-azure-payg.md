@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Сведения о настройке учетной записи Azure с оплатой по мере использования.
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231983"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444858"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Использование подписок Azure для разработки и тестирования с оплатой по мере использования
 Работайте вместе с участниками команды в облаке.  Создайте несколько подписок для разработки и тестирования с оплатой по мере использования для совместной работы с другими подписчиками с одновременной поддержкой изоляции между командами и средами.  Вы получите специальные скидки на почасовые тарифы на использование средств разработки и тестирования в рамках ПО подписки Azure.

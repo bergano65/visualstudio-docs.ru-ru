@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916951"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444691"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы со Средствами Visual Studio для Kubernetes
 
@@ -40,7 +40,7 @@ ms.locfileid: "75916951"
 
     1. Кластер Службы Azure Kubernetes. Дополнительные сведения см. в статье [Создание кластера AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). [Подключитесь к кластеру](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) с рабочей станции разработки.
 
-    1. Установленный интерфейс командной строки Helm на рабочей станции разработки. Дополнительные сведения об установке Helm см. в [этой статье](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Установленный интерфейс командной строки Helm на рабочей станции разработки. Дополнительные сведения об установке Helm см. в [этой статье](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md).
 
     1. Средство Helm, настроенное для кластера AKS с помощью команды `helm init`. Дополнительные сведения о настройке Helm см. в [этой статье](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
