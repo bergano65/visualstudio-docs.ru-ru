@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300927"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760131"
 ---
 # <a name="code-analysis-faq"></a>Анализ кода часто задаваемые вопросы
 
@@ -88,7 +88,13 @@ ms.locfileid: "79300927"
      ...
      ```
 
+## <a name="code-analysis-solution-property-page"></a>Страница решения для анализа кода
+
+**В:** Где находится страница свойства анализа кода для решения?
+
+**A:** Страница свойства code Analysis на уровне решения была удалена в пользу более надежной группы общего имущества. Для управления анализом кода на уровне проекта по-прежнему доступна страница свойства code Analysis. (Для управляемых проектов мы также рекомендуем перейти из правил в EditorConfig для конфигурации правил.)  Для совместного использования правил в нескольких/всех проектах в рамках решения или репо мы рекомендуем определить группу свойств с свойством CodeAnalysisRuleSet в файле общего реквизита/целей или файле Directory.props/Directory.targets. Если у вас нет таких общих реквизитов или целей, которые импортируются все ваши проекты, следует рассмотреть вопрос о добавлении такой группы свойств в [каталог Directory.props или directory.targets в каталоге решений верхнего уровня, который автоматически импортируется во все файлы проекта, определенные в каталоге или его подкаталогах.](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)
+
 ## <a name="see-also"></a>См. также раздел
 
 - [Обзор анализаторов](roslyn-analyzers-overview.md)
-- [Настройки конвенции кодирования .NET для EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Параметры соглашений о написании кода .NET в EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
