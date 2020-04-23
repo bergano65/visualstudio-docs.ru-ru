@@ -175,9 +175,9 @@
         - name: "Использование инструментов\_Unity"
           href: using-vsmac-tools-unity.md
         - name: "Использование .NET\_4.x в Unity"
-          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
+          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
         - name: Журнал изменений
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: "Мобильные приложения с\_Xamarin"
       href: /visualstudio/mac/xamarin
 - name: Специальные возможности
