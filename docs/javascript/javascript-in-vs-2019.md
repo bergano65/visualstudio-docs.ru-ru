@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: df4630182e89dad08360794057bda856ff4d677b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549952"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544293"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript и TypeScript в Visual Studio 2019
 
@@ -38,7 +38,8 @@ Visual Studio 2019 предоставляет несколько вариант
 * [Пакет npm TypeScript](https://www.npmjs.com/package/typescript). Когда в проект устанавливается пакет npm или TypeScript 2.1 или более новой версии, в редактор загружается соответствующая версия языковой службы TypeScript.
 * Также как и стандартный SDK, который можно скачать из [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017), TypeScript SDK доступен в установщике Visual Studio по умолчанию.
 
-Для проектов, которые разработаны в Visual Studio 2019, рекомендуется использовать пакеты NuGet и npm TypeScript. Они обеспечивают лучшую портативность в различных средах и платформах.
+> [!TIP]
+> Для проектов, которые разработаны в Visual Studio 2019, рекомендуется использовать пакеты TypeScript NuGet и TypeScript npm. Они обеспечивают лучшую портативность в различных средах и платформах.
 
 Чаще всего пакеты NuGet используются для компиляции TypeScript с помощью .NET Core CLI. Пока файл проекта не будет вручную изменен для импорта целевых объектов сборки из установки TypeScript SDK, пакет NuGet останется единственным способом включения компиляции TypeScript с помощью команд .NET Core CLI, таких как `dotnet build` и `dotnet publish`.
 

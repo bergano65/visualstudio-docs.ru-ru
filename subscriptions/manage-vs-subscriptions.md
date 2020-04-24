@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232361"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444883"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -52,7 +52,6 @@ ms.locfileid: "80232361"
 **Подписки, предлагаемые по программам:**  если вы получили подписку по программе, она связана с вашим участием в программе. За дополнительными сведениями обратитесь к контактным лицам программы.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ ms.locfileid: "80232361"
 |    Сервисный центр корпоративного лицензирования (VLSC)              |    180          |
 |    Соглашение Microsoft Products and Services Agreement (MPSA)    |    180          |
 |    Облачные подписки Visual Studio                   |    180          |
-|    Программа (например, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Программа (например, MCT, MPN, Imagine)          |    180          |
 |    Не для продажи (например, MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235110"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744979"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
 
@@ -103,19 +103,24 @@ ms.locfileid: "78235110"
 
 ## <a name="build-the-project"></a>Построение проекта
 
-1. В Visual Studio выберите **Сборка** > **Очистить решение** (только для проектов TypeScript).
+::: moniker range=">=vs-2019"
+1. Затем выберите **Сборка**>**Собрать решение** для сборки проекта.
 
-    ::: moniker range=">=vs-2019"
-    В шаблоне TypeScript, входящем в состав Visual Studio 2019, пропустите этот шаг.
-    ::: moniker-end
+1. Просмотрите результаты сборки в окне **вывода** и выберите **Сборка** в списке **Показать выходные данные из**.
+::: moniker-end
+::: moniker range="vs-2017"
+1. В Visual Studio выберите **Сборка**>**Очистить решение** (только для проектов TypeScript).
 
-1. Затем выберите **Сборка** > **Собрать решение** для сборки проекта. Просмотрите результаты сборки в окне **вывода** и выберите **Сборка** в списке **Показать выходные данные из**.
+1. Затем выберите **Сборка**>**Собрать решение** для сборки проекта.
 
-    В шаблоне проекта JavaScript Vue.js (и более ранних версиях шаблона TypeScript) используйте скрипт `build` npm, настроив событие после сборки. Если вы хотите изменить этот параметр, откройте файл проекта ( *\<имя_проекта\>.njsproj*) в проводнике Windows и найдите следующую строку кода:
+1. Просмотрите результаты сборки в окне **вывода** и выберите **Сборка** в списке **Показать выходные данные из**.
+::: moniker-end
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+В шаблоне проекта JavaScript Vue.js (и более ранних версиях шаблона TypeScript) используйте скрипт `build` npm, настроив событие после сборки. Если вы хотите изменить этот параметр, откройте файл проекта ( *\<имя_проекта\>.njsproj*) в проводнике Windows и найдите следующую строку кода:
+
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
 
 ## <a name="run-the-application"></a>Запуск приложения
 
@@ -135,6 +140,6 @@ ms.locfileid: "78235110"
 
 ## <a name="next-steps"></a>Следующие шаги
 
+- Дополнительные сведения см. в статье [Vue. js](create-application-with-vuejs.md)
 - Пройдите [учебник по Node.js и выпуску Express](tutorial-nodejs.md)
-- Пройдите [учебник по Node.js и React](tutorial-nodejs-with-react-and-jsx.md)
 - [Развертывание приложения в службе приложений Linux](../javascript/publish-nodejs-app-azure.md)

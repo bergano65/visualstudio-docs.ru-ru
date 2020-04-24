@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544056"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649663"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Новые возможности в подписках Visual Studio
 
@@ -39,6 +39,23 @@ ms.locfileid: "80544056"
 Мы рады сообщить о продлении срока действия преимущества CAST Highlight, предлагаемого нашим партнером. 
 - Срок действия преимущества, включенного в подписки Visual Studio Enterprise, был продлен до шести месяцев.  
 - Теперь подписчики Visual Studio Professional могут получить подписку, позволяющую оценивать одно приложение в течение трех месяцев. 
+
+## <a name="2020-q2-april-june"></a>2-й квартал 2020 г. (апрель — июнь)
+
+### <a name="visual-studio-subscriptions-portal"></a>Портал подписок Visual Studio
+
+На портале подписок Visual Studio были внесены существенные изменения во внешний вид и удобство использования.  
+
+- Размеры плиток "преимущества" были изменены и все отображаются в окне, поэтому вам не нужно прокручивать влево или вправо, чтобы увидеть все плитки в категории. 
+- Можно выбрать отображение всех доступных преимуществ или отобразить только одну категорию с помощью средства выбора категорий.
+   > [!div class="mx-imgBorder"]
+   > ![Выбор категории новых преимуществ](_img/whats-new/whats-new-category-picker.png)
+- Средство выбора подписки перемещено из правого верхнего угла окна в более доступное расположение.
+   > [!div class="mx-imgBorder"]
+   > ![Новое средство выбора подписок](_img/whats-new/whats-new-sub-picker.png)
+- Мы добавили «популярное преимущество» в верхней части списка преимуществ, чтобы выделить новые или популярные преимущества.  
+   > [!div class="mx-imgBorder"]
+   > ![Новое рекомендуемое преимущество](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Ознакомьтесь с новыми возможностями [портала администрирования подписок](https://manage.visualstudio.com).

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180341"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444951"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio
 
@@ -182,7 +182,7 @@ ms.locfileid: "70180341"
 
 3. Выберите команду **Отладка > Запуск без отладки** (**CTRL**+**F5**), позволяющую сохранить изменения в файлах и запустить приложение.
 
-4. Появится командное окно с сообщением о выполнении по адресу <https://localhost:4449/>, а затем в окне браузера откроется узел `localhost:4449` и вы увидите сообщение "Hello, Python!" В командном окне также отобразится запрос GET с состоянием 200.
+4. Появится командное окно с сообщением **Запуск в https:\//localhost:4449**, а затем в окне браузера откроется узел `localhost:4449` и вы увидите сообщение "Hello, Python!" В командном окне также отобразится запрос GET с состоянием 200.
 
     Если браузер не открывается автоматически, запустите выбранный вами браузер и перейдите к `localhost:4449`.
 
