@@ -158,6 +158,10 @@ f1_keywords:
 - CA1823
 - CA1824
 - CA1825
+- CA1826
+- CA1827
+- CA1828
+- CA1829
 - CA1900
 - CA1901
 - CA1903
@@ -266,12 +270,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153014"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167388"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Предупреждения анализа кода для управляемого кода с помощью CheckId
 
@@ -424,6 +428,10 @@ ms.locfileid: "82153014"
 | CA1823 | [CA1823: избегайте наличия неиспользованных закрытых полей](../code-quality/ca1823.md) | Обнаружены закрытые поля, доступ к которым, судя по всему, не предоставляется в сборке. |
 | CA1824 |[CA1824: следует помечать сборки атрибутом NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | Атрибут NeutralResourcesLanguage информирует диспетчер ресурсов о языке, который использовался для вывода ресурсов нейтральной культуры для сборки. При этом повышается эффективность поиска первого загружаемого ресурса и может сократиться рабочее множество. |
 | CA1825 |[CA1825: Избегайте выделения массивов нулевой длины](../code-quality/ca1825.md) | Инициализация массива нулевой длины приводит к ненужному выделению памяти. Вместо этого используйте статический выделенный экземпляр пустого массива, вызвав метод <xref:System.Array.Empty%2A?displayProperty=nameWithType>. Выделение памяти является общим для всех вызовов этого метода. |
+| CA1826 |[CA1826: Используйте свойство вместо перечислимого метода LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное свойство. |
+| CA1827 |[CA1827: не используйте count/LongCount, когда можно использовать](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>метод <xref:System.Linq.Enumerable.LongCount%2A> или был использован, <xref:System.Linq.Enumerable.Any%2A> когда метод был бы более эффективным. |
+| CA1828 |[CA1828: не используйте Каунтасинк/Лонгкаунтасинк, если можно использовать Анясинк](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>метод <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> или был использован, <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> когда метод был бы более эффективным. |
+| CA1829 |[CA1829: Используйте свойство Length или Count вместо метода Enumerable. Count.](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное `Length` или `Count` свойство. |
 | CA1900 | [CA1900: поля типа значения должны быть переносимыми](../code-quality/ca1900.md) | Это правило проверяет правильность выравнивания структур, объявленных с явной разметкой, при маршалировании в неуправляемый код на 64-разрядных операционных системах. |
 | CA1901 | [CA1901: объявления P/Invoke должны быть переносимыми](../code-quality/ca1901.md) | Данное правило вычисляет размер каждого параметра и возвращаемого значения вызова P/Invoke и проверяет правильность размера параметра при маршалировании в неуправляемый код на 32-разрядных и 64-разрядных операционных системах. |
 | CA1903 | [CA1903: использовать API-интерфейс только из целевой исполняющей среды](../code-quality/ca1903.md) | Член или тип использует член или тип, который был впервые представлен в пакете обновления, не включенном в целевую среду проекта. |
