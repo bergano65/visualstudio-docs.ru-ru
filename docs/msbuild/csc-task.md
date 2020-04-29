@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c88e5aaef9262d320cdf61564078246dee46b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634270"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167427"
 ---
 # <a name="csc-task"></a>Csc - задача
 
@@ -82,9 +82,7 @@ ms.locfileid: "77634270"
 | `Win32Manifest` | Необязательный параметр `String`.<br /><br /> Задает манифест Win32, который требуется включить. |
 | `Win32Resource` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Примечания
-
-Помимо перечисленных выше параметров, эта задача наследует параметры от класса `Microsoft.Build.Tasks.ManagedCompiler`, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Пример
 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a1710336ebc73be707e962733e37376b5689e10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30f1a45c384495ccd02c624ea42f91a4379226df
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631241"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167459"
 ---
 # <a name="vbc-task"></a>Vbc - задача
 
@@ -89,9 +89,7 @@ ms.locfileid: "77631241"
 | `Win32Icon` | Необязательный параметр `String`.<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в **проводнике**. Этот параметр соответствует параметру [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) компилятора *vbc.exe*. |
 | `Win32Resources` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Этот параметр соответствует параметру [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) компилятора *vbc.exe*. |
 
-## <a name="remarks"></a>Примечания
-
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Пример
 

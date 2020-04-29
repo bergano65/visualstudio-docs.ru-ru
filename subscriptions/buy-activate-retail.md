@@ -1,0 +1,59 @@
+---
+title: Подписки Visual Studio, доступные для покупки в Microsoft Store | Документация Майкрософт
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
+ms.date: 04/13/2020
+ms.topic: conceptual
+description: Узнайте, как приобрести подписки Visual Studio в Microsoft Store и активировать их на портале подписок Visual Studio.
+ms.openlocfilehash: f8102a10f049c04695ba1d5415febd9cee3d7130
+ms.sourcegitcommit: 960bab34e126c9ca449560a76a839a8f8c3263fb
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82072512"
+---
+# <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Подписки Visual Studio доступны в Microsoft Store
+Подписки Visual Studio доступны по различным каналам, включая [Корпоративное лицензирование](https://www.microsoft.com/licensing/default), поставщиков облачных решений, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) и Microsoft Store.  В этой статье рассматривается приобретение и активация подписок с помощью [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
+
+## <a name="how-to-buy-subscriptions"></a>Приобретение подписок
+Нужна помощь при выборе подходящей подписки?  Посетите [страницу преимуществ подписок](https://visualstudio.microsoft.com/vs/benefits/).  
+
+Подписки Visual Studio, доступные в Microsoft Store, включают:
+- [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
+- [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+- [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
+
+Каждая из этих подписок предлагает первую покупку или продление существующей подписки.  Цены на продление с большой скидкой доступны только для существующих подписок. 
+
+> [!IMPORTANT]
+> Чтобы иметь право на продление подписок по цене продления со скидкой, подписки следует продлить до истечения срока их действия.  
+
+## <a name="how-to-activate-subscriptions"></a>Активация подписок
+Когда вы приобрели подписку Visual Studio в Microsoft Store, вы можете начать процесс активации на странице подтверждения оплаты или через сообщение электронной почты, которое вы получили после покупки.
+
+1. Выберите ссылку **Щелкните здесь, чтобы выполнить вход** в подтверждении по электронной почте или на странице подтверждения покупки.
+2. Произойдет перенаправление на страницу [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+3. Введите адрес электронной почты, для которого нужен доступ к подписке Visual Studio, и нажмите кнопку **Продолжить**.
+4. В зависимости от типа используемой учетной записи вы увидите одну из двух страниц входа:
+    - подписчики с личной учетной записью Майкрософт (MSA) попадают на страницу ввода пароля для учетной записи Майкрософт;
+    - подписчики с рабочей или учебной учетной записью попадают на страницу входа для соответствующей организации.
+5. Введите пароль или выполните другие процедуры входа, установленные для вашей организации.
+6. После успешного входа появится окно активации подписки Visual Studio.
+7. Введите ключ продукта, который вы можете получить на странице подтверждения оплаты или в сообщении электронной почты с подтверждением, а затем щелкните **Активировать**.
+8. Теперь эта подписка появится на странице [Подписки](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), и вы сможете воспользоваться любым из ее преимуществ.
+
+## <a name="support-for-microsoft-store"></a>Поддержка Microsoft Store
+Если у вас есть вопросы о приобретении через Microsoft Store, доступна справка.  Обратитесь в [службу поддержки Microsoft Store](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs).
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Следующие шаги
+После активации подписки посетите страницу [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), чтобы просмотреть все средства, службы, возможности обучения и поддержки, входящие в вашу подписку.  Мы рекомендуем настроить эти преимущества, чтобы приступить к работе:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)

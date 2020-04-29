@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4305f27435d97c346ce623a21b37f011fd8da0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cbf18c4477a164ec2e25a5ed4b2105f6fdad9130
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632307"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167440"
 ---
 # <a name="sgen-task"></a>SGen - задача
 
@@ -51,9 +51,7 @@ ms.locfileid: "77632307"
 | `Types` | Необязательный параметр `String[]`.<br /><br /> Возвращает или задает список определенных типов, для которых создается код сериализации. SGen создает код сериализации только для указанных типов. |
 | `UseProxyTypes` | Обязательный параметр `Boolean` .<br /><br /> Если он имеет значение `true`, задача SGen создает код сериализации только для типов прокси веб-службы XML. |
 
-## <a name="remarks"></a>Примечания
-
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="see-also"></a>См. также
 

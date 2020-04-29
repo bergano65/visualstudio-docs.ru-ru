@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d961af66658d6924da1b5ba38b9ec7f2a8b19aaa
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892802"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153039"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -104,13 +104,12 @@ ms.locfileid: "80892802"
    Для проекта NUnit вы можете использовать приведенный ниже код.
 
    ```csharp
-   using using NUnit.Framework;
+   using NUnit.Framework;
    using System.IO;
    using System;
 
    namespace HelloWorldTests
    {
-      [TestClass]
       public class Tests
       {
          private const string Expected = "Hello World!";

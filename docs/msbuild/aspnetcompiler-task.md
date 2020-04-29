@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8707371fac876586d38f12a797aaee7228b5f729
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 072d1b94c552b3aca34a1573e5d6545628f6568e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634582"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167336"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler - задача
 
@@ -50,9 +50,7 @@ ms.locfileid: "77634582"
 |`Updateable`|Необязательный параметр `Boolean`.<br /><br /> Если этот параметр имеет значение `true`, то предкомпилированное приложения будет обновляемым.  Значение по умолчанию — `false`. Этот параметр соответствует параметру командной строки **-u** для *aspnet_compiler.exe*.|
 |`VirtualPath`|Необязательный параметр `String`.<br /><br /> Виртуальный путь к компилируемому приложению. Если указан параметр `PhysicalPath`, для поиска приложения используется физический путь. В противном случае используется метабаза IIS, и предполагается, что приложение расположено в узле по умолчанию. Этот параметр соответствует параметру командной строки **-v** для *aspnet_compiler.exe*.|
 
-## <a name="remarks"></a>Примечания
-
-Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Пример
 

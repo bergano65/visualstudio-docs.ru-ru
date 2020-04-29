@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633607"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167401"
 ---
 # <a name="lc-task"></a>LC - задача
 
@@ -33,9 +33,9 @@ ms.locfileid: "77633607"
 
 В следующей таблице приводятся параметры для задачи `LC`.
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
-|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES*-файлы.|
+|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Определяет исполняемый файл, для которого создаются *LICENSES*-файлы.|
 |`NoLogo`|Необязательный параметр `Boolean`.<br /><br /> Отключает отображение эмблемы Майкрософт при запуске.|
 |`OutputDirectory`|Необязательный параметр `String`.<br /><br /> Определяет каталог для размещения выходных *LICENSES*-файлов.|
 |`OutputLicense`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя *LICENSES*-файла. Если имя не указано, используется имя *LICX*-файла, а создаваемый *LICENSES*-файл помещается в каталог, содержащий *LICX*-файл.|
@@ -43,7 +43,7 @@ ms.locfileid: "77633607"
 |`SdkToolsPath`|Необязательный параметр `String`.<br /><br /> Указывает путь к средствам пакета SDK, например *resgen.exe*.|
 |`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет элементы, содержащие лицензируемые компоненты для включения в *LICENSES*-файл. См. дополнительные сведения см. в документации по параметру `/complist` в [файле LС.exe (компиляторе лицензий)](/dotnet/framework/tools/lc-exe-license-compiler).|
 
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Пример
 
@@ -69,7 +69,7 @@ ms.locfileid: "77633607"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

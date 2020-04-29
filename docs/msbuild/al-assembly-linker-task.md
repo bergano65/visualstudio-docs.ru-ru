@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6861fee8691c32415111347ab673f9e48bfb9e11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5c7964c6654d1f6996d1acc44542e3a7bf093a52
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634595"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167466"
 ---
 # <a name="al-assembly-linker-task"></a>Задача AL (компоновщик сборок)
 
@@ -70,9 +70,7 @@ ms.locfileid: "77634595"
 | `Win32Icon` | Необязательный параметр `String`.<br /><br /> Внедряет в сборку *ICO*-файл. *ICO*-файл является изображением значка выходного файла в проводнике. Этот параметр соответствует параметру `/win32icon` в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Resource` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 (*RES*-файл) в выходной файл. Дополнительные сведения см. в документации по параметру `/win32res` в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
-## <a name="remarks"></a>Примечания
-
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Пример
 

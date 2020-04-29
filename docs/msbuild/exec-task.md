@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634218"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167308"
 ---
 # <a name="exec-task"></a>Exec - задача
 
@@ -49,13 +49,13 @@ ms.locfileid: "77634218"
 |`StdOutEncoding`|Необязательный выходной параметр `String`.<br /><br /> Указывает кодировку перехватываемого стандартного потока вывода для задачи. По умолчанию используется текущая кодировка выходной консоли.|
 |`WorkingDirectory`|Необязательный параметр `String`.<br /><br /> Указывает каталог, в котором будет выполняться команда.<br /><br />По умолчанию: текущая рабочая папка проекта.|
 
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
+
 ## <a name="remarks"></a>Примечания
 
 Эта задача полезна, если отсутствует специальная задача MSBuild для задания, которое вы хотите выполнить. Однако задача `Exec`, в отличие от более специализированных задач, не может выполнять дополнительную обработку или условные операции на основе результатов, полученных из средства или от команды, для которых она выполняется.
 
 Задача `Exec` вызывает *cmd.exe*, а не запускает процесс напрямую.
-
-Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Пример
 
