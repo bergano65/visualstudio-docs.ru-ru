@@ -1,5 +1,5 @@
 ---
-title: Приступая к работе (Разработка приложений SharePoint в Visual Studio) | Документация Майкрософт
+title: Начало работы (разработка решений SharePoint в Visual Studio) | Документация Майкрософт
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc6d6083b9a764acc915e6c0f800cb70569652b7
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557177"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586671"
 ---
-# <a name="get-started-sharepoint-development-in-visual-studio"></a>Получить работы (Разработка приложений SharePoint в Visual Studio)
+# <a name="get-started-sharepoint-development-in-visual-studio"></a>Начало работы (разработка решений SharePoint в Visual Studio)
   Этот раздел поможет начать работу с [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] для разработки решений SharePoint, которые используют преимущества [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] и [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) и [Создание надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Сведения о SharePoint 2013 и надстройках SharePoint см. в разделах [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) и [Сборка надстроек SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint предоставляет платформу для совместной работы в Интернете. В[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется множество шаблонов проектов для создания сайтов SharePoint и содержимого для них, включая определения списков, рабочие процессы, модели подключения к бизнес-данным и определения сайтов. Кроме того можно создавать расширения для проектов и инструментов SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 |Раздел|Описание|
 |-----------|-----------------|
@@ -39,21 +39,21 @@ ms.locfileid: "62557177"
 |Раздел|Описание|
 |-----------|-----------------|
 |[Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Описывает разработку приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Настройка общей среды разработки для SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Описание обязательных установок для создания решения SharePoint|
+|[Настройка общей среды разработки для SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Описывает необходимые установки для создания решения SharePoint|
 |[Создание столбцов сайта, типов содержимого и списков для SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Здесь описываются способы создания пользовательских столбцов сайта, типов содержимого и списков для SharePoint с помощью средств Visual Studio для разработки SharePoint.|
-|[Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Описывает проектирование и разработку рабочих процессов.|
+|[Создание решений для рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Описывает проектирование и разработку рабочих процессов.|
 |[Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Описывает процедуру подключения к моделям подключения к бизнес-данным (BDC) для интеграции бизнес-данных.|
 |[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Описывает веб-части и страницы веб-частей, которые являются составными частями страниц на сайте SharePoint.|
-|[Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Описывает процедуру проектирования страниц приложений с помощью конструктора.|
+|[Создание страниц приложения для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Описывает процедуру проектирования страниц приложений с помощью конструктора.|
 |[Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Описывает создание пользовательских, многократно используемых элементов управления для страниц приложений и веб-частей в SharePoint.|
-|[Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Описывает способы перемещения по компонентам сайта SharePoint в окне инструментов Visual Studio.|
-|[Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Описывает способы создания и отладки SharePoint решения.|
-|[Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Описание способа упаковки и развертывания решений SharePoint.|
-|[Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Описывает механизм расширения инструментов SharePoint для создания необходимых функций.|
+|[Просмотр подключений SharePoint с помощью обозреватель сервера](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Описывает способы перемещения по компонентам сайта SharePoint в окне инструментов Visual Studio.|
+|[Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Описывает создание и отладку решений SharePoint.|
+|[Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Описывает, как упаковывать и развертывать решения SharePoint.|
+|[Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Описывает механизм расширения инструментов SharePoint для создания необходимых функций.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [Просмотр подключений SharePoint с помощью обозреватель сервера](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

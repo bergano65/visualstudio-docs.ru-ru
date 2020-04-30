@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: becaa70d2eed862d77f4c666b0a408054eaf5926
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e7061acabbe5ce18ff6e1f210fe0003bdaf88980
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850950"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586821"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "75850950"
 > Визуализатор параллелизма — это дополнительное расширение Visual Studio. Загрузите визуализатор параллелизма и средства сбора данных визуализатора параллелизма по следующим ссылкам:  
 > 
 > - Скачать расширение              [Визуализатор параллелизма](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) .  
->   - Скачайте              [средства сбора данных визуализатора параллелизма для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).  
+>   - Скачайте [средства сбора визуализаторов параллелизма для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).  
 > 
 >   С помощью [служебной программы командной строки "Визуализатор параллелизма" (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) можно собирать трассировки из командной строки, чтобы просматривать их в визуализаторе параллелизма для Visual Studio 2015. Это средство можно использовать на компьютерах без установленной среды Visual Studio.  
   
@@ -41,18 +41,18 @@ ms.locfileid: "75850950"
 > [!NOTE]
 > Визуализатор параллелизма не поддерживает веб-проекты.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
 |Заголовок|Описание|  
 |-----------|-----------------|  
 |[Представление использования](../profiling/utilization-view.md)|Содержит описание процедуры просмотра и анализа системных действий для всех процессоров.|  
 |[Представление потоков](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|  
 |[Представление "Ядра"](../profiling/cores-view.md)|Содержит описание процедуры анализа миграции потоков между ядрами.|  
-|[Общие шаблоны для неправильно работающих многопоточных приложений](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Описывает несколько общих шаблонов и показывает, как они отображаются в визуализаторе параллелизма.|  
-|[Блог о параллельной разработке в Visual Studio](https://blogs.msdn.com/b/visualizeparallel)|Содержит советы и рекомендации для визуализатора параллелизма.|  
+|[Общие шаблоны для плохо работающих многопоточных приложений](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Описывает несколько общих шаблонов и показывает, как они отображаются в визуализаторе параллелизма.|  
+|[Блог о параллельной разработке в Visual Studio](https://docs.microsoft.com/archive/blogs/visualizeparallel/)|Содержит советы и рекомендации для визуализатора параллелизма.|  
 |[Представления отчетов о производительности](../profiling/performance-report-views.md)|Содержит справочные сведения по отчетам и представлениям средств профилирования Visual Studio.|  
 |[Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)|Описывает, как инструментировать исходный код для отображения дополнительных сведений в визуализаторе параллелизма.|  
 |[Служебная программа с интерфейсом командной строки визуализатора параллелизма (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Описывает, как использовать программу командной строки визуализатора параллелизма (CVCollectionCmd.exe) для сбора и обработки трассировки на компьютерах, на которых не установлена Visual Studio.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Средства профилирования](../profiling/profiling-tools.md)

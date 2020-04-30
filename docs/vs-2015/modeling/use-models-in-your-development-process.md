@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852186"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586357"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,17 +125,17 @@ ms.locfileid: "75852186"
 |Бизнес-процесс<br /><br /> Общее представление о контексте, в котором будет использоваться система, помогает понять потребности пользователей.|— Схемы активности описывают поток работы между людьми и системами для достижения бизнес-целей.<br />-Концептуальные схемы классов описывают бизнес-концепции, используемые в бизнес-процессе.|
 |Требования пользователей<br /><br /> Определение того, что нужно пользователям от вашей системы.|— Схемы вариантов использования обобщают взаимодействия пользователей и других внешних систем с разрабатываемой системой. К каждому варианту использования можно присоединить другие документы, чтобы подробно его описать.<br />— Схемы классов UML описывают типы данных, о которых обмениваются пользователи и системы.<br />Бизнес-правила и требования к качеству обслуживания можно описать в отдельных документах.|
 |Высокоуровневая структура<br /><br /> Общая структура системы: основные компоненты и их взаимосвязи.|— Схемы слоев описывают структуру системы в зависимости от части. Можно проверить код программы по схеме слоев, чтобы убедиться в его соответствии архитектуре.<br />-Схемы компонентов отображают интерфейсы частей, указывая сообщения и службы, которые предоставляются и требуются для каждого компонента.<br />-Схемы последовательностей показывают, как взаимодействуют компоненты для реализации каждого варианта использования.<br />— Схемы классов UML описывают интерфейсы компонентов и типы данных, передаваемых между компонентами.|
-|Конструктивные шаблоны<br /><br /> Соглашения и методы решения проблем проектирования, которые используются во всех частях процесса разработки|— Схемы классов UML описывают структуры шаблона<br />— Схемы последовательностей или активности показывают взаимодействия и алгоритмы.|
+|Шаблоны проектирования<br /><br /> Соглашения и методы решения проблем проектирования, которые используются во всех частях процесса разработки|— Схемы классов UML описывают структуры шаблона<br />— Схемы последовательностей или активности показывают взаимодействия и алгоритмы.|
 |Анализ кода<br /><br /> Из кода можно создать несколько типов схем.|-Схемы последовательностей показывают взаимодействие между объектами в коде.<br />— Схемы слоев показывают зависимости между классами. Обновленный код можно проверить на соответствие схеме слоев.<br />— Схемы классов показывают классы в коде.|
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
-|**Категория**|**Links**|
+|**Категория**|**Ссылки**|
 |------------------|---------------|
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") видео [практические руководства MSDN: создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") - [канал 9: UML с Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
+|**Видео**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") видео [практические руководства MSDN: создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") - [канал 9: UML с Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Создание моделей для модели приложения](../modeling/create-models-for-your-app.md) [требования к пользователям](../modeling/model-user-requirements.md) модель. [архитектура приложения](../modeling/model-your-app-s-architecture.md) [Разработка тестов на основе модели](../modeling/develop-tests-from-a-model.md) [Структура решения для моделирования](../modeling/structure-your-modeling-solution.md)
