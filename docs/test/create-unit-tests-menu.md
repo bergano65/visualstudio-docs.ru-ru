@@ -1,6 +1,6 @@
 ---
 title: Создание заглушек методов для модульных тестов
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75844318"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153001"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Создание заглушек для методов модульного тестирования с помощью команды "Создать модульные тесты"
 
@@ -22,11 +22,11 @@ ms.locfileid: "75844318"
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Команда меню **Создать модульные тесты** доступна только для управляемого кода, предназначенного для платформы .NET Framework (но не .NET Core).
+> Команда меню **Создать модульные тесты** доступна только для кода C#, предназначенного для платформы .NET Framework (но не для .NET Core).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Команда меню **Создать модульные тесты** доступна только для управляемого кода.
+> Команда меню **Создать модульные тесты** доступна только для кода C#.
 ::: moniker-end
 
 Команда меню **Создать модульные тесты** является расширяемой и может использоваться для создания тестов для MSTest, MSTest V2, NUnit и xUnit.
@@ -56,7 +56,7 @@ ms.locfileid: "75844318"
 
 Однако эта функция также применима и для ситуаций, когда разработчик сначала пишет код, а затем использует его для начальной загрузки модульных тестов. В рамках потока написания кода разработчику может потребоваться быстро создать заглушку для метода модульного тестирования (с подходящим тестовым классом и тестовым проектом) для определенного фрагмента кода.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Creating unit test method stubs with "Create Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) (Создание заглушек методов модульного тестирования с помощью команды "Создание модульных тестов")
 - [Записи блога о функции модульного тестирования](https://devblogs.microsoft.com/devops/?s=unit+testing)

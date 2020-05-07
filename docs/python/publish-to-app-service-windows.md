@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784665"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586574"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Публикация в службу приложений Azure на платформе Windows
 
@@ -63,7 +63,7 @@ Visual Studio предоставляет возможность опублико
 
 Создайте временную службу приложений без подписки Azure, как описано ниже.
 
-1. Откройте в браузере адрес [try.azurewebsites.net](https://try.azurewebsites.net).
+1. Откройте в браузере [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/).
 1. Выберите тип приложения **Веб-приложение**, затем нажмите **Далее**.
 1. Выберите **Пустой сайт** и нажмите кнопку **Создать**.
 1. Выполните вход через любую социальную сеть, и через некоторое время ваш сайт будет готов к работе по указанному URL-адресу.

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Узнайте, как администраторы могут назначать лицензии нескольким подписчикам, используя функцию массового добавления, либо группы Microsoft Azure Active Directory.
-ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385512"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564190"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Назначение подписок нескольким пользователям
 Портал администрирования подписок позволяет добавлять пользователей по одному или большими группами.  Чтобы добавлять пользователей по одному, см. раздел [Добавление отдельных пользователей](assign-license.md).
@@ -108,7 +108,7 @@ ms.locfileid: "81385512"
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Вопрос: Можно ли выбрать несколько уровней подписки, которые будут назначены в группе Azure AD? 

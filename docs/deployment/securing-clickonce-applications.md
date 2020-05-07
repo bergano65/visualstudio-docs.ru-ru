@@ -76,6 +76,6 @@ ms.locfileid: "82139641"
 ## <a name="deploying-obfuscated-assemblies"></a>Развертывание замаскированных сборок
  Visual Studio включает в себя бесплатную программу [PreEmptive Protection — Dotfuscator Community](../ide/dotfuscator/index.md), которую можно использовать для защиты приложений ClickOnce с помощью обфускации кода и активных мер по защите.  Дополнительные сведения см. в [разделе по ClickOnce руководства пользователя Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

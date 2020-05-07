@@ -493,7 +493,7 @@
 ###### [Сброс](ienumdebugports2-reset.md)
 ###### [Skip](ienumdebugports2-skip.md)
 ##### [IEnumDebugPortSuppliers2](ienumdebugportsuppliers2.md)
-###### [Клонировать](ienumdebugportsuppliers2-clone.md)Клонировать
+###### [Клонировать](ienumdebugportsuppliers2-clone.md)
 ###### [GetCount](ienumdebugportsuppliers2-getcount.md)
 ###### [Дальше](ienumdebugportsuppliers2-next.md)
 ###### [Сброс](ienumdebugportsuppliers2-reset.md)
