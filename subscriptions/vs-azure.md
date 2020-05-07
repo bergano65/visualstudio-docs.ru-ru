@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/10/2020
+ms.date: 04/28/2020
 ms.topic: conceptual
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: b556b90cc0c4f0904cbd6e08a34ec782f044dfae
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224489"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564177"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -42,10 +42,9 @@ ms.locfileid: "81224489"
 
 0. Добавьте [портал Azure](https://portal.azure.com) в закладки для быстрого доступа в будущем.
 
-## <a name="using-azure-without-a-visual-studio-subscription"></a>Использование Azure без подписки на Visual Studio
-По окончании срока действия подписки на Visual Studio все ее преимущества, включая ежемесячный индивидуальный кредит на разработку и тестирование в Azure, станут недоступны. Чтобы продолжить использование Azure с ежемесячным кредитом, вам потребуется продлить подписку, приобрести новую подписку или перенести преимущество Azure в действующую подписку, которая включает индивидуальный кредит на разработку и тестирование в Azure.  Вы можете и дальше использовать Azure без ежемесячного кредита, переведя текущую подписку Azure на оплату по мере использования.
+## <a name="maintain-a-subscription-to-use-monthly-credits"></a>Держите подписку активной для использования ежемесячного кредита
+При истечении срока действия или удалении подписки на Visual Studio все ее преимущества, включая ежемесячный индивидуальный кредит на разработку и тестирование в Azure, станут недоступны. Чтобы продолжить использование Azure с ежемесячным кредитом, вам потребуется продлить подписку, приобрести новую подписку или перенести преимущество Azure в действующую подписку, которая включает индивидуальный кредит на разработку и тестирование в Azure.  
 
-### <a name="continue-using-azure-with-a-monthly-credit"></a>Продолжение использования Azure с ежемесячным кредитом
 > [!IMPORTANT]
 > Перевести ресурсы на другую подписку Azure необходимо до того, как текущая подписка будет отключена, иначе вы потеряете доступ к своим данным.  
 
@@ -55,24 +54,16 @@ ms.locfileid: "81224489"
 - **Если в вашей организации есть ответственный за приобретение подписок**, [обратитесь к администратору подписки на Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
 - **При наличии другой активной подписки на Visual Studio** того же уровня, которая связана с другой учетной записью Майкрософт, вы можете перенести преимущество Azure в другую активную подписку на Visual Studio, [добавив альтернативную учетную запись](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) на [портале подписок](https://my.visualstudio.com/subscriptions) Visual Studio.  
 
-Вы можете определить необходимый уровень подписки по уровню кредита в Azure, который вы пытаетесь заменить.  
+Таблица "Право на участие" ниже показывает, сколько кредитов включает каждый тип подписки.  
 
-| Уровень подписки на Visual Studio | Ежемесячный кредит в Azure |
-|----------------------------------|----------------------|
-| Visual Studio Enterprise         | 150 долл. США                 |
-| Visual Studio Professional       | 50 долл. США                  |
-| Visual Studio Test Professional  | 50 долл. США                  |
-| MSDN Platforms *                  | $100                 |
 
-* Подписчики, использующие MSDN Platforms, должны запросить назначение новой подписки у администратора. 
-
-### <a name="continue-using-azure-without-a-monthly-credit"></a>Продолжение использования Azure без ежемесячного кредита
+## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Перевод подписки Azure на оплату по мере использования
 
 Если кредит или подписка на Visual Studio больше не требуются, но вы хотите продолжать использовать ресурсы Azure, [перенесите ресурсы](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) в другую подписку Azure или переведите подписку на оплату по мере использования, [удалив предельную сумму расходов](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
 
 Если не предпринять ни одно из вышеуказанных действий, подписка Azure будет отключена и удалена через 30 дней после получения соответствующего уведомления по электронной почте.  
 
-### <a name="have-a-question"></a>Возник вопрос?
+## <a name="have-a-question"></a>Возник вопрос?
 Если у вас есть вопросы о переносе ресурсов, удалении предельной суммы расходов или других аспектах Azure, вы можете [отправить запрос на поддержку по Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) на портале Azure. 
 
 ## <a name="eligibility"></a>Право на участие

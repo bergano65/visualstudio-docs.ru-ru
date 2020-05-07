@@ -7,29 +7,38 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Узнайте, как партнеры управляют подписками Visual Studio для своих клиентов.
-ms.openlocfilehash: bf1fe706a0e1ee0b027e465c0bfaa8c0d326ee99
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232294"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564216"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Партнеры, управляющие подписками от имени клиентов
-Для управления подписками на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com) клиентам необходимо выполнить несколько действий. Процесс будет выглядеть следующим образом.
+Для управления подписками на [портале администрирования подписок](https://manage.visualstudio.com) Visual Studio партнерам необходимо выполнить несколько действий. 
+
+Процесс будет выглядеть следующим образом.
 - Партнеры размещают новый заказ от имени клиента, указав его рабочий адрес электронной почты.
 - Клиент получает уведомление с предложением назначить администраторов и получить доступ к его подпискам на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com).
 - Чтобы партнеры могли управлять подписками от имени клиентов, их необходимо зарегистрировать на портале администрирования. Ниже перечислены различные варианты (по аналогии с процессом add-open).
 
 ## <a name="existing-partners-adding-a-new-license"></a>Существующие партнеры добавляют новую лицензию
-Сценарий относится к партнерам, которые уже имеют доступ к [порталу администрирования подписок Visual Studio](https://manage.visualstudio.com), но разместили заказ на Open License с подписками Visual Studio, необходимыми для управления.  Действия партнеров по добавлению новой лицензии:
+Сценарий относится к партнерам, которые уже имеют доступ к [порталу администрирования подписок Visual Studio](https://manage.visualstudio.com), но разместили заказ на Open License с подписками Visual Studio, необходимыми для управления.  
+
+<br> 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
+
+Действия партнеров по добавлению новой лицензии:
 - Выполните вход в https://manage.visualstudio.com.
-- Выберите раскрывающийся список соглашений и прокрутите его до параметра **+ Создать Open License**.
+- Откройте раскрывающееся меню соглашений и прокрутите его вниз до пункта **Создать Open License**.
 - Во всплывающем окне введите номер авторизации, номер лицензии и адрес электронной почты клиента, указанный в соглашении, установите флажок и нажмите кнопку **Отправить**.
 
 > [!NOTE]
 > Клиент получает по электронной почте уведомление о том, что партнер был добавлен в Open License. Он может аннулировать доступ партнера по своему желанию.
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Новые партнеры, зарегистрировавшиеся в сервисном центре корпоративного лицензирования (VLSC)
+
 Сценарий относится к новым партнерам, которые размещают новые заказы на Open License, но не зарегистрировались в [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) с помощью процедуры add-open, прежде чем заходить на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com). Партнеры должны выполнить следующие действия:
 - Войдите в VLSC и откройте раздел "Сводная таблица".
 - Выберите нужную лицензию Open License.
@@ -55,12 +64,12 @@ ms.locfileid: "80232294"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 - Посетите [портал администрирования подписок](https://manage.visualstudio.com) Visual Studio, чтобы управлять подписками.
-- Требуется помощь? Обратитесь в [службу поддержки по администрированию и подпискам](https://visualstudio.microsoft.com/support/support-overview-vs) Visual Studio
+- Нужна помощь? Обратитесь в [службу поддержки по администрированию и подпискам](https://visualstudio.microsoft.com/support/support-overview-vs) Visual Studio
