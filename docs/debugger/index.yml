@@ -50,7 +50,7 @@ landingContent:
       url: using-breakpoints.md
     - text: Изменение кода и продолжение отладки
       url: edit-and-continue.md
-- title: Данные проверки
+- title: Проверка данных
   linkLists:
   - linkListType: how-to-guide
     links:
