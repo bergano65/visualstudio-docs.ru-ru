@@ -1,4 +1,4 @@
----
+﻿---
 title: Устранение ошибок установки или обновления
 description: Иногда возникают проблемы. Если происходит сбой установки или обновления Visual Studio, эта страница может помочь решить проблему.
 ms.date: 03/23/2020
@@ -17,7 +17,7 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
 ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
-ms.translationtype: HT
+ms.translationtype: HT 
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/25/2020
 ms.locfileid: "80233111"
@@ -105,7 +105,7 @@ ms.locfileid: "80233111"
 В качестве последнего средства можно [удалить Visual Studio](remove-visual-studio.md), чтобы удалить все файлы установки и сведения о продукте.
 
 1. Следуйте инструкциям в разделе [Удаление Visual Studio](remove-visual-studio.md).
-2. Повторно запустите загрузчик, описанный в разделе [Шаг 3. Удалите каталог с установщиком Visual Studio, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Повторно запустите начальный загрузчик, описанный в разделе [Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Снова попробуйте установить или обновить Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Шаг 6. Связь с нами (необязательно)
@@ -149,3 +149,4 @@ ms.locfileid: "80233111"
 * [Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+   

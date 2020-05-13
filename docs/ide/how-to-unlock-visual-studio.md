@@ -20,7 +20,7 @@ ms.locfileid: "77027576"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Расширение пробной версии или обновление лицензии
 
-Вы можете продлить бесплатную пробную версию [Visual Studio Professional или Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) в течение 30 дней. При входе в систему пробный период можно продлить на 90 дней. (К Visual Studio Community предоставляется бесплатный доступ без пробного периода. Однако вы должны периодически [выполнять вход в систему](signing-in-to-visual-studio.md), поддерживая таким образом [обновленное состояние лицензии](#update-a-stale-license).)
+Вы можете пользоваться бесплатной пробной версией [Visual Studio Professional или Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) в течение 30 дней. При входе в систему пробный период можно продлить на 90 дней. (К Visual Studio Community предоставляется бесплатный доступ без пробного периода. Однако вы должны периодически [выполнять вход в систему](signing-in-to-visual-studio.md), поддерживая таким образом [обновленное состояние лицензии](#update-a-stale-license).)
 
 Чтобы продолжить использование службы Visual Studio после завершения пробного периода, разблокируйте ее с помощью [сетевой подписки](#use-an-online-subscription) или [ключа продукта](#enter-a-product-key).
 
