@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461539"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
@@ -63,7 +63,7 @@ Visual Studio с установленной рабочей нагрузкой **
 - На компьютере с архитектурой x86 установка по умолчанию производится в папку *C:\Program Files\Microsoft Visual Studio*
 - На компьютере с архитектурой x64 установка по умолчанию производится в папку *C:\Program Files (x86)\Microsoft Visual Studio*
 
-Обратите внимание, что имя папки *Program Files* зависит от установленной операционной системы. На компьютере с архитектурой x86 она называется *Program Files*. На компьютере с архитектурой x64 эта папка называется *Program Files (x86)* . Независимо от архитектуры системы в этом пошаговом руководстве папка *Program Files* обозначается как *%ProgramFiles%* .
+Обратите внимание, что имя папки *Program Files* зависит от установленной операционной системы. На компьютере с архитектурой x86 она называется *Program Files*. На компьютере с архитектурой x64 эта папка называется *Program Files (x86)*. Независимо от архитектуры системы в этом пошаговом руководстве папка *Program Files* обозначается как *%ProgramFiles%*.
 
 > [!NOTE]
 > На компьютере сборки все соответствующие файлы должны быть на одном диске. При этом буква диска может отличаться от буквы диска на главном компьютере, на котором находится Visual Studio. В любом случае необходимо учитывать расположение файлов при создании записей реестра, как описано далее в этом документе.
@@ -287,7 +287,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере, используемом для сборки
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере, используемом для сборки
 
 Для работы MSBuild на компьютере построения необходимо установить дополнительные сборки в глобальный кэш сборок.
 
@@ -331,7 +331,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
      В рамках этой процедуры этот каталог называется %Depot%.
 
-2. Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) этого пошагового руководства, и вставьте их в созданный только что каталог *%Depot%* . Например, скопируйте файлы из каталога *%ProgramFiles%\Windows Kits\8.0\bin* в *%Depot%\Windows Kits\8.0\bin*.
+2. Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) этого пошагового руководства, и вставьте их в созданный только что каталог *%Depot%*. Например, скопируйте файлы из каталога *%ProgramFiles%\Windows Kits\8.0\bin* в *%Depot%\Windows Kits\8.0\bin*.
 
 3. После вставки файлов в каталог *%Depot%* внесите следующие изменения:
 

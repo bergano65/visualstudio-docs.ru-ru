@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование API-интерфейсов профилировщика | Документация Майкрософт
+title: Пошаговое руководство. Использование интерфейсов API профилировщика | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779887"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
@@ -37,7 +37,7 @@ ms.locfileid: "74779887"
 
  Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL находится в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Для 64-разрядных приложений используется папка *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Дополнительные сведения см. в статье о [пространстве имен Microsoft.VisualStudio.Profiler](/previous-versions/ms242704(v=vs.140)).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
  В этом пошаговом руководстве предполагается, что используемая среда разработки настроена для отладки и выборки. В следующих разделах представлены общие сведения о предварительных требованиях:
 
 - [Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)
@@ -152,21 +152,21 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**.
 
-3. Введите следующую команду: **VSInstr \<имя_файла>.exe**
+3. Введите следующую команду: **VSInstr \<имя_файла>.exe**.
 
-4. Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**
+4. Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**.
 
-5. Введите следующую команду: **VSPerfCmd /globaloff**
+5. Введите следующую команду: **VSPerfCmd /globaloff**.
 
 6. Выполните программу.
 
-7. Введите следующую команду: **VSPerfCmd /shutdown**
+7. Введите следующую команду: **VSPerfCmd /shutdown**.
 
-8. Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**
+8. Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**.
 
      В текущем каталоге создается *CSV*-файл, содержащий результирующие данные производительности.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

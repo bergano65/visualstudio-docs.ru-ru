@@ -1,5 +1,5 @@
 ---
-title: Поддержка пользовательских параметров | Документация Майкрософт
+title: Поддержка настроек пользователя Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,53 +7,53 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90f04d5657fb6f680139ee6de5a47625304b5dbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309758"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704780"
 ---
 # <a name="support-for-user-settings"></a>Поддержка параметров пользователя
-VSPackage может определять одну или несколько категорий параметров, которые представляют собой группы переменных состояния, которые сохраняются, когда пользователь выбирает **параметры импорта и экспорта** команды **средства** меню. Чтобы включить этот сохраняемость, используйте API параметров в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+VSPackage может определить одну или несколько категорий параметров, которые представляют собой группы переменных состояния, которые сохраняются, когда пользователь выбирает команду **«Настройки импорта/экспорта»** в меню **«Инструменты».** Для обеспечения такой настойчивости используются настройки [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]AIS в .
 
- Запись реестра, который называется точки настраиваемых параметров и GUID определяет категорию параметров VSPackage. VSPackage может поддерживать несколько категорий параметров, каждый из которых определяется точки настраиваемых параметров.
+ Запись реестра, которая называется точкой пользовательских настроек, и GUID определяет категорию настроек VSPackage. VSPackage может поддерживать несколько категорий настроек, каждая из которых определена точкой пользовательских настроек.
 
-- Реализации параметров, которые основаны на сборки взаимодействия (с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> интерфейс) необходимо создать точки настраиваемых параметров путем редактирования реестра или с помощью скрипта регистратора (RGS-файл). Для получения дополнительной информации см. [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
+- Реализация настроек, основанных на межопомневных <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> сборках (с использованием интерфейса), должна создавать пользовательские настройки, либо редактируя реестр, либо используя скрипт регистратора (файл.rgs). Для получения дополнительной информации см. [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
-- Код, использующий Managed Package Framework (MPF) необходимо создать точках настраиваемых параметров, подключив <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> объекту VSPackage для каждой точки настраиваемых параметров.
+- Код, который использует рамочную программу управляемого пакета (MPF), должен создавать пользовательские настройки, прикрепляя <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> к VSPackage для каждого пункта пользовательских настроек.
 
-     Если один пакет VSPackage поддерживает несколько точках настраиваемых параметров, каждой точки настраиваемых параметров реализуется отдельный класс и каждый регистрируется с уникальный экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> класса. Следовательно параметры, реализация класса может поддерживать более чем одной категории параметров.
+     Если один VSPackage поддерживает несколько пользовательских точек настройки, каждая точка пользовательских настроек <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> реализуется отдельным классом, и каждая зарегистрирована уникальным экземпляром класса. Следовательно, класс реализации параметров может поддерживать несколько категорий параметров.
 
-## <a name="custom-settings-point-registry-entry-details"></a>Подробные сведения о записи реестра точки настраиваемых параметров
- Точках настраиваемых параметров создаются в записи реестра в следующем расположении: HKLM\Software\Microsoft\VisualStudio\\ *\<версии >* \UserSettings\\`<CSPName>`, где `<CSPName>` поддерживает VSPackage — это имя точки настраиваемых параметров и  *\<версии >* — это версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 8.0.
+## <a name="custom-settings-point-registry-entry-details"></a>Пользовательские настройки точки регистрации Сведения
+ Пользовательские настройки Очки создаются в регистрации запись в следующем месте:\\*\< *HKLM-Software-Microsoft-VisualStudio Версия>"UserSettings\\`<CSPName>`, где `<CSPName>` это имя пользовательских настроек точки VSPackage поддерживает и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] * \<версия>* является версия , например, 8.0.
 
 > [!NOTE]
-> Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<версии >* может быть переопределено с помощью альтернативного корневой при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированная среда разработки (IDE) инициализирован. Дополнительные сведения см. в разделе [переключателей командной строки](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Корневой путь HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio\\*\<Version>* может быть перекрыт [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с альтернативным корнем при инициализации интегрированной среды разработки (IDE). Для получения дополнительной информации [см.](../../extensibility/command-line-switches-visual-studio-sdk.md)
 
- Структура записи реестра как показано ниже:
+ Структура регистрации иллюстрируется ниже:
 
- HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\
+ HKLM-Программное обеспечение,Microsoft-VisualStudio\\*\<версия>*«UserSettings»
 
- `<CSPName`> = «#12345"s
+ `<CSPName`>и "#12345"
 
- Пакет = «{XXXXXX XXXX XXXX XXXX XXXXXXXXX}»
+ Пакет : «XXXXXX XXXX XXXX XXXXXXXXXXXXXXХ) »
 
- Категория = «{гггг ГГГГГГ гггг гггг YYYYYYYYY}»
+ Категория : «Yyyyy yyy yyy yyy yyy yyyyyyyyyyyyy'
 
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
+ Ресурсный пакет - «Я»
 
- AlternateParent = CategoryName
+ АльтернативныйРодитель - КатегорияИмя
 
-| name | Тип | Данные | Описание |
+| name | Type | Данные | Описание |
 |-----------------|--------| - | - |
-| (Значение по умолчанию) | REG_SZ | Имя точки настраиваемых параметров | Имя раздела, `<CSPName`>, нелокализованное имя точки настраиваемых параметров.<br /><br /> Для реализации в зависимости от MPF, его название получается путем объединения `categoryName` и `objectName` аргументы <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> конструктор в `categoryName_objectName`.<br /><br /> Ключ может быть пустым или может содержать идентификатор ссылки для локализованной строки в вспомогательной библиотеке DLL. Это значение получается из `objectNameResourceID` аргумент <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> конструктор. |
-| Пакет | REG_SZ | Идентификатор GUID | Идентификатор GUID VSPackage, который реализует точки настраиваемых параметров.<br /><br /> Реализации исходя из с помощью MPF <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> , используйте конструктор `objectType` аргументу, содержащему VSPackage <xref:System.Type> и отражение для получения этого значения. |
-| Категория | REG_SZ | Идентификатор GUID | Идентификатор GUID, определяющий категорию параметров.<br /><br /> Для реализации в зависимости от сборок взаимодействия, это значение может быть произвольно выбранным GUID, который [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] передает IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> методы. Все реализации этих двух методов следует проверить их аргументов GUID.<br /><br /> Для реализации в зависимости от MPF, полученных этим идентификатором GUID <xref:System.Type> класса, реализующего [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] механизм параметров. |
-| ResourcePackage | REG_SZ | Идентификатор GUID | Необязательный параметр.<br /><br /> Путь к вспомогательной DLL которого содержит локализованные строки, если реализации VSPackage не поддерживает их.<br /><br /> MPF использует отражение для получения необходимого ресурса VSPackage, поэтому <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> класса не устанавливает этот аргумент. |
-| AlternateParent | REG_SZ | Имя папки в разделе Сервис-Параметры страницы, содержащей этот точки настраиваемых параметров. | Необязательный параметр.<br /><br /> Это значение необходимо задать только в том случае, если параметры реализация поддерживает **Сервис-Параметры** страниц, использующих механизм сохранения в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] вместо механизма в модели автоматизации для сохранения состояния.<br /><br /> В этом случае — значение в ключе AlternateParent `topic` раздел `topic.sub-topic` строку, используемую для определения специального **ToolsOptions** страницы. Например, для **ToolsOptions** страницы `"TextEditor.Basic"` AlternateParent малейший `"TextEditor"`.<br /><br /> Когда <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> создает точки настраиваемых параметров, он совпадает со значением имя категории. |
+| (по умолчанию) | REG_SZ | Название точки пользовательских настроек | Имя ключа, `<CSPName`>, является нелокализованным названием точки пользовательских настроек.<br /><br /> Для реализаций, основанных на MPF, имя ключа `categoryName` получается путем <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> объединения `categoryName_objectName`и `objectName` аргументов конструктора в .<br /><br /> Ключ может быть пустым, или он может содержать идентификатор ссылки на локализованную строку в спутниковой DLL. Это значение получено `objectNameResourceID` от аргумента к конструктору. <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> |
+| Пакет | REG_SZ | GUID | GUID VSPackage, который реализует точку пользовательских настроек.<br /><br /> Реализации, основанные на <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> MPF с использованием `objectType` класса, использовать аргумент <xref:System.Type> конструктора, содержащий VSPackage и отражение, чтобы получить это значение. |
+| Категория | REG_SZ | GUID | GUID определяет категорию настроек.<br /><br /> Для реализаций, основанных на межопомненных сборках, это значение может [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] быть произвольно выбранным GUID, который IDE передает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> методам. Все реализации этих двух методов должны проверить свои аргументы GUID.<br /><br /> Для реализаций, основанных на MPF, этот <xref:System.Type> GUID получается [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] классом, реализующим механизм настроек. |
+| РесурсНыйпакет | REG_SZ | GUID | Необязательный параметр.<br /><br /> Путь к спутнику DLL, содержащему локализованные строки, если реализация VSPackage не поставляет их.<br /><br /> MPF использует отражение для получения правильного <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> ресурса VSPackage, поэтому класс не устанавливает этот аргумент. |
+| Альтернативныйродитель | REG_SZ | Название папки под страницей Параметры инструментов, содержащей эту точку пользовательских настроек. | Необязательный параметр.<br /><br /> Это значение необходимо установить только в том случае, если реализация параметров поддерживает страницы **«Параметры инструментов»,** которые используют механизм сохранения в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] модели автоматизации для сохранения состояния.<br /><br /> В этих случаях значение в ключе `topic` AlternateParent `topic.sub-topic` — это раздел строки, используемый для определения конкретной страницы **ToolsOptions.** Например, для страницы `"TextEditor.Basic"` `"TextEditor"` **ToolsOptions** значение AlternateParent будет .<br /><br /> При <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> создании точки пользовательских настроек она совпадает с именем категории. |

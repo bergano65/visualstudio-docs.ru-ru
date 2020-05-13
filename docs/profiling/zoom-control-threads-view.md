@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62960164"
 ---
 # <a name="zoom-control-threads-view"></a>Элемент управления масштабом (представление "Потоки")
@@ -28,7 +28,7 @@ ms.locfileid: "62960164"
 ## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Увеличение и уменьшение с помощью колесика мыши
  Щелкните любую точку временной шкалы (чтобы перевести на нее фокус мыши), а затем нажмите клавишу **CTRL** и вращайте колесико мыши (вперед — увеличение; назад — уменьшение).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Управление каналами](../profiling/manage-channels.md)
 - [Режим измерения (вкл./выкл.)](../profiling/measure-mode-on-off.md)
 - [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

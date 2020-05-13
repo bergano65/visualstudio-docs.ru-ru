@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Документация Майкрософт
+title: IDebugBreakpointBoundEvent2:EnumBoundBreakpoints Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2584e49209dd95c3d43673eadf72e138ac828f57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f208c52bd45953aaad9efab9b6b65b15b3b759c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314390"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735358"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-Создает перечислитель точек останова, которые были привязаны на это событие.
+Создает перечисление моментов, которые были связаны на этом событии.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-[out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) привязан объект, который перечисляет все точки останова из этого события.
+(ваут) Возвращает объект [IEnumDebugBoundPointspoints2,](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) который перечисляет все точки разрыва, связанные с этим событием.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии связанных точек останова; в противном случае возвращает код ошибки.
+В случае успеха возвращает `S_OK`. Возвращает, `S_FALSE` если нет связанных точек разрыва; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-Список связанных точек останова для привязанных к этому событию и не может быть весь список точек останова, привязанный из ожидающая точка останова. Чтобы получить список всех точек останова, привязанного к ожидающая точка останова, вызовите [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) метод, чтобы получить связанный [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) объекта, а затем вызвать [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) метод для получения [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объект, содержащий всех связанных точек останова для ожидающая точка останова.
+Список связанных брейк-пойнтов предназначен для тех, кто связан с этим событием, и может быть не весь список моментов разрыва, связанных с ожидавной точкой разрыва. Чтобы получить список всех точек разрыва, привязанных к ожидавшейся точке разрыва, позвоните в метод [GetPendingBreakpoint,](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) чтобы получить связанный объект [IDebugPendingBreakpoint2,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) а затем позвоните в метод [EnumBoundBreakpoints,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) чтобы получить объект [IEnumDebugBoundBreakpoints2,](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) содержащий все связанные точки разрыва для ожидающего разрыва.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CBreakpointSetDebugEventBase** объекта, который предоставляет [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CBreakpointSetEventBase,** который предоставляет интерфейс [IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(

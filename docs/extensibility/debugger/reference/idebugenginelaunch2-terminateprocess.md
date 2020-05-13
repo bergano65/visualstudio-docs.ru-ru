@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::TerminateProcess | Документация Майкрософт
+title: IDebugEngineLaunch2::TerminateProcess Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::TerminateProcess
 ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88536211083650fa1a6fe606c78bd7ecf9037c98
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 971259edc89d1ad8be01b6e6e4db46f760534349
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337200"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730510"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
-Завершает процесс.
+Прекращает процесс.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int TerminateProcess ( 
 
 ## <a name="parameters"></a>Параметры
 `pProcess`\
-[in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) , представляющий к завершению процесса.
+(в) Объект [IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md) представляющий процесс, который будет завершен.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Вызовите [CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md) метод перед вызовом этого метода.
+ Вызовите метод [CanTerminateProcess,](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md) прежде чем вызвать этот метод.
 
 ## <a name="see-also"></a>См. также
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

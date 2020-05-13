@@ -28,7 +28,7 @@
           href: visual-studio-tools-for-unity.md
         - name: Обзор
           href: overview-of-visual-studio-tools-for-unity.md
-        - name: Начало работы
+        - name: Приступая к работе
           href: getting-started-with-visual-studio-tools-for-unity.md
         - name: Применение набора средств Visual Studio для Unity
           href: using-visual-studio-tools-for-unity.md
@@ -64,7 +64,7 @@
           href: import-an-xcode-project.md
         - name: Изменения в синхронизации между XCode и Visual Studio
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: Примеры разработки кроссплатформенных мобильных приложений
+        - name: Cross-Platform Mobile Development Examples
           href: cross-platform-mobile-development-examples.md
     - name: Разработка приложений для универсальной платформы Windows (UWP)
       href: develop-apps-for-the-universal-windows-platform-uwp.md

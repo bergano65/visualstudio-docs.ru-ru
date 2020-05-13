@@ -1,5 +1,5 @@
 ---
-title: Пользовательский интерфейс свойства проекта | Документация Майкрософт
+title: Интерфейс пользователя свойств проекта (ru) Документы Майкрософт
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,39 +7,39 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], properties UI
 - project properties UI
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a83e5c9fb633322da536e62f1ba03484b965b162
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252359"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706395"
 ---
 # <a name="project-property-user-interface"></a>Пользовательский интерфейс свойств проекта
 
-Подтип проекта может использовать элементы в диалоговом окне **страницы свойств** проекта в том виде, в каком они предоставляются базовым проектом, скрывать или делать элементы управления только для чтения и целые страницы как предоставленные, а также добавлять страницы для конкретных подтипов проектов в диалоговое окно **страницы свойств** . Box.
+Подтип проекта может использовать элементы в диалоговом поле страниц **свойств** проекта, поскольку они поставляются базовым проектом, скрывать или делать только элементы управления и целые страницы в виде поставляемых или добавлять страницы, связанные с подтипом проекта, в диалоговую базу **«Страницы свойств».**
 
-## <a name="extending-the-project-property-dialog-box"></a>Расширение диалогового окна «Свойства проекта»
+## <a name="extending-the-project-property-dialog-box"></a>Расширение коробки диалогов свойств проекта
 
-Подтип проекта реализует расширители автоматизации и объекты обзора конфигурации проекта. Эти расширители реализуют <xref:EnvDTE.IFilterProperties> интерфейс, чтобы сделать конкретные свойства скрытыми или только для чтения. Диалоговое окно **страницы свойств** базового проекта, реализуемого базовым проектом, учитывает фильтрацию, выполняемую расширителями автоматизации.
+Подтип проекта реализует расширители автоматизации и объекты просмотра конфигурации проекта. Эти расширители реализуют <xref:EnvDTE.IFilterProperties> интерфейс, чтобы сделать определенные свойства скрытыми или только для чтения. Диалоговая коробка **«Страницы свойств»** базового проекта, реализуемая базовым проектом, чтит фильтрацию, выполняемую удлинителями автоматизации.
 
-Процесс расширения диалогового окна **свойств проекта** описан ниже.
+Процесс расширения диалогового окна **Project Property** описан ниже:
 
-- Базовый проект получает расширители из подтипа проекта путем реализации <xref:EnvDTE80.IInternalExtenderProvider> интерфейса. Для просмотра объектов базового проекта в области Обзор, Автоматизация проекта и проект используйте этот интерфейс.
+- Базовый проект извлекает расширители из подтипа <xref:EnvDTE80.IInternalExtenderProvider> проекта путем реализации интерфейса. Просмотр, автоматизация проекта и конфигурация проекта просматривают объекты базового проекта, реализуя этот интерфейс.
 
-- Реализация <xref:EnvDTE80.IInternalExtenderProvider> для объекта "Обзор проекта" и делегата объекта автоматизации проекта <xref:EnvDTE80.IInternalExtenderProvider> для реализации агрегатора подтипа проекта `QueryInterface` (то есть для <xref:EnvDTE80.IInternalExtenderProvider> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объект Project).
+- Реализация <xref:EnvDTE80.IInternalExtenderProvider> для объекта просмотра проекта и делегирование <xref:EnvDTE80.IInternalExtenderProvider> объекта автоматизации проекта до реализации агрегатора `QueryInterface` <xref:EnvDTE80.IInternalExtenderProvider> подтипа <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> проекта (то есть они для на объекте проекта).
 
-- Базовый объект "Обзор конфигурации проекта" также <xref:EnvDTE80.IInternalExtenderProvider> реализует прямую связь в расширителье автоматизации из объекта конфигурации подтипа проекта. Его реализация делегирует <xref:EnvDTE80.IInternalExtenderProvider> интерфейс, реализуемый агрегатором подтипа проекта.
+- Объект просмотра конфигурации <xref:EnvDTE80.IInternalExtenderProvider> базового проекта также реализуется непосредственно в расширитель автоматизации от объекта конфигурации подтипа проекта. Его реализация делегирует <xref:EnvDTE80.IInternalExtenderProvider> интерфейс, реализованный агрегатором подтипа проекта.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, реализованный объектом обзора конфигурации проекта, возвращает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объект.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, реализованная конфигурацией проекта просматривать <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объект, возвращает объект.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, также реализованный объектом обзора конфигурации проекта, возвращает <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> объект.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, также реализованный конфигурацией проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> просматривать объект, возвращает объект.
 
-- Подтип проекта может определять подходящие CATID для различных расширяемых объектов базового проекта во время выполнения, получая следующие <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> значения:
+- Подтип проекта может определить соответствующие CATID для различных расширяемых объектов <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> базового проекта во время выполнения, извлекая следующие значения:
 
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
@@ -47,17 +47,17 @@ ms.locfileid: "71252359"
 
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
-Чтобы определить CATID для области проекта, подтип проекта получает указанные выше свойства для [вситемид. Корень](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) из `VSITEMID typedef`. Подтип проекта может также контролировать, какие страницы диалогового окна **свойств** будут отображаться для проекта, как зависимые от конфигурации, так и зависящие от конфигурации. Некоторым подтипам проекта может потребоваться удалить встроенные страницы и добавить определенные страницы для подтипов проектов. Чтобы сделать это, управляемый клиентский проект вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод для следующих свойств:
+Чтобы определить CATID для области проекта, подтип проекта получает вышеуказанные свойства для [VSITEMID. Корень](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) из `VSITEMID typedef`. Подтип проекта может также захотеть контролировать, какие страницы диалогового окна **Страницы свойств** отображаются для проекта, как зависимые от конфигурации, так и независимые конфигурации. Некоторым подтипам проекта может потребоваться удалить встроенные страницы и добавить определенные страницы подтипа проекта. Для этого управляемый клиентский проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> называет метод для следующих свойств:
 
-- `VSHPROPID_PropertyPagesCLSIDList`— Разделенный точками с запятой список идентификаторов CLSID страниц свойств, не зависящих от конфигурации.
+- `VSHPROPID_PropertyPagesCLSIDList`— список CLSID, не зависят от конфигурации.
 
-- `VSHPROPID_CfgPropertyPagesCLSIDList —`Разделенный точками с запятой список идентификаторов CLSID страниц свойств, зависящих от конфигурации.
+- `VSHPROPID_CfgPropertyPagesCLSIDList —`список CLSID, зависящих от конфигурации страниц свойств.
 
-Поскольку подтип проекта выполняет статистическую обработку <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта, он может переопределить определение этих свойств, чтобы управлять отображением диалоговых окон **страниц свойств** . Подтип проекта может извлекать эти свойства из внутреннего базового проекта, а затем добавлять или удалять идентификаторы CLSID по мере необходимости.
+Поскольку подтип проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> агрегирует объект, он может переопределить определение этих свойств, чтобы контролировать, какие диалоговые **ящики Страниц свойств** отображаются. Подтип проекта может извлечь эти свойства из внутреннего базового проекта, а затем добавить или удалить CLSID s по мере необходимости.
 
-Новые страницы свойств, добавленные подтипом проекта, передаются в конфигурации проекта в качестве объекта обзора из базовой реализации проекта. Этот объект "Обзор" конфигурации проекта поддерживает расширители автоматизации. Дополнительные сведения о Аутоматионекстендерс см. в разделе [Реализация и использование расширителей автоматизации](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). Страницы свойств, реализованные при вызове <xref:EnvDTE.Project.Extender%2A> подтипа проекта для получения собственного объекта "Обзор конфигурации подтипа проекта", который расширяет объект "Обзор конфигурации" базового проекта.
+Новые страницы свойств, добавленные подтипом проекта, передаются объекту просмотра конфигурации проекта из реализации базового проекта. Этот объект просмотра конфигурации проекта поддерживает расширители автоматизации. Для получения дополнительной информации [Implementing and Using Automation Extenders](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356)об AutomationExtenders см. Страницы свойств, реализованные вызовом <xref:EnvDTE.Project.Extender%2A> подтипа проекта для получения собственного объекта подтипа проекта, расширяем объект просмотра конфигурации базового проекта.
 
 ## <a name="see-also"></a>См. также
 
 - <xref:EnvDTE.IFilterProperties>
-- [Диалоговое окно «страницы свойств»](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))
+- [Страницы свойств Диалог Box](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

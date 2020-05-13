@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77277829"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C++
@@ -52,7 +52,7 @@ ms.locfileid: "77277829"
 
 - На клавиатуре нажмите клавиши **CTRL**+**K**+**S**
 
-Выберите **#if**. Результат должен быть примерно таким:
+Выберите **#if**. Вы увидите нечто вроде этого:
 
 ```cpp
 #if 0
@@ -170,6 +170,6 @@ class SomeClass {
 {
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Фрагменты кода](../ide/code-snippets.md)

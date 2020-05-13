@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778249"
 ---
 # <a name="status"></a>Status
-Параметр *VSPerfCmd.exe* **Status** позволяет вывести сведения о состоянии профилировщика и процессов, которые в настоящий момент профилируются.
+Параметр **Status** программы *VSPerfCmd.exe* позволяет вывести сведения о состоянии профилировщика и процессов, которые в настоящий момент профилируются.
 
  Параметр **Status** должен быть единственным параметром, указанным в командной строке. Для отображения состояния необходимо инициализировать профилировщик параметром *VSPerfCmd.exe* **Start**.
 
@@ -28,7 +28,7 @@ VSPerfCmd.exe /Status
 ```
 
 #### <a name="parameters"></a>Параметры
- Нет
+ Отсутствуют
 
 ## <a name="remarks"></a>Примечания
  Параметр **Status** позволяет вывести указанные ниже сведения о состоянии профилировщика.

@@ -25,10 +25,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596805"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Обновление Dotfuscator Community
@@ -65,7 +65,7 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 Дополнительные сведения о расширенных функциях защиты приложений Dotfuscator Professional см. на [странице обзора Dotfuscator][product-about] PreEmptive Solutions и [сравните их с Dotfuscator Community][product-compare].
 [Полностью поддерживаемые пробные версии доступны на сайте preemptive.com][eval].
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Эта статья в полном руководстве пользователя Dotfuscator Community][full]
 

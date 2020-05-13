@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593607"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
@@ -35,15 +35,15 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   Полный путь и имя для файла решения.
 
-- *ProjectName*
+- *Имя проекта*
 
   Полный путь и имя для файла проекта.
 
 - `/Out` *OutputFilename*
 
-  Необязательный элемент. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
+  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр свертывает интегрированную среду разработки во время выполнения проекта или решения. Он закрывает интегрированную среду разработки после выполнения проекта или решения.
 
@@ -59,7 +59,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

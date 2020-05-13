@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f13df00059523ca87e720a999c596e203b20e49
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593685"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Управление подписыванием сборок и манифестов
@@ -71,7 +71,7 @@ ms.locfileid: "75593685"
 
 Дополнительные сведения о подписи манифестов см. в разделе [Практическое руководство. Подписание манифестов приложения и развертывания](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сборки со строгими именами](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Сборки со строгими именами (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

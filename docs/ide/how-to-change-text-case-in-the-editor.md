@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588724"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Практическое руководство. изменение регистра текста в редакторе
+# <a name="how-to-change-text-case-in-the-editor"></a>Практическое руководство. Изменение регистра текста в редакторе
 
 Для переключения регистра выбранного текста можно использовать команды меню или сочетания клавиш.
 
@@ -36,6 +36,6 @@ ms.locfileid: "75588724"
 > [!TIP]
 > Чтобы вернуться к форматированию, предшествовавшему изменению, выберите **Отменить** в меню **Правка**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

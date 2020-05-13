@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::Parse | Документация Майкрософт
+title: IDebugExpressionОмер::Parse Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::Parse method
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b732369aa5cf5a828dfad512c643f109346abcb7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325653"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729490"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
-Этот метод преобразует строку выражения проанализированное выражение.
+Этот метод преобразует строку выражения в разогнанное выражение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,28 +51,28 @@ int Parse(
 
 ## <a name="parameters"></a>Параметры
 `upstrExpression`\
-[in] Строка выражения, который необходимо проанализировать.
+(в) Строка выражения, которая должна быть разогнана.
 
 `dwFlags`\
-[in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.
+(в) Коллекция констант [PARSEFLAGS,](../../../extensibility/debugger/reference/parseflags.md) определяющих, как должно быть разогнано выражение.
 
 `nRadix`\
-[in] Основание системы счисления для использования для интерпретации все числовые данные.
+(в) Radix используется для интерпретации любой численной информации.
 
 `pbstrError`\
-[out] Возвращает ошибку в виде удобочитаемого текста.
+(ваут) Возвращает ошибку как читаемый человеком текст.
 
 `pichError`\
-[out] Возвращает позицию символа начинается ошибка в строке выражения.
+(ваут) Возвращает положение персонажа начала ошибки в строке выражения.
 
 `ppParsedExpression`\
-[out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
+(ваут) Возвращает разогнанные выражения в объект [IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод создает проанализированное выражение, а не фактического значения. Проанализированное выражение готов для вычисления, то есть преобразовать в значение.
+ Этот метод производит разогнанный выражение, а не фактическое значение. Разобраное выражение готово к оценке, т.е. преобразовано в значение.
 
 ## <a name="see-also"></a>См. также
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

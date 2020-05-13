@@ -1,5 +1,5 @@
 ---
-title: Вычисление выражений | Документация Майкрософт
+title: Оценка выражений Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b2af1cdf299b3e3f2c714fa569fa295a4e1d4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315428"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738828"
 ---
-# <a name="evaluate-expressions"></a>Вычисление выражений
-Выражения создаются на основе строк, переданные с **"Видимые"** , **Watch**, **"Быстрая проверка"** , или **Интерпретация** windows. При вычислении выражения, он создает строку печати, которая содержит имя и тип переменной или аргумента и его значение. Эта строка отображается в соответствующем окне интегрированной среды разработки.
+# <a name="evaluate-expressions"></a>Оценка выражений
+Выражения создаются из строк, передаваемых из **Autos,** **Watch,** **quickWatch**или **Immediate** windows. При оценке выражения создается строка, содержащая имя и тип переменной или аргумента и ее значение. Эта строка отображается в соответствующем окне IDE.
 
 ## <a name="implementation"></a>Реализация
- Выражения вычисляются в том случае, если программа остановлена в точке останова. Представленный самого выражения [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) интерфейс, который представляет проанализированное выражение, которое будет готов для привязки и оценки в контекст оценки данного выражения. Определяет, кадр стека контекста вычисления выражений, предоставляющего модуль отладки (DE), реализовав [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс.
+ Выражения оцениваются, когда программа остановилась в точке разрыва. Само выражение представлено интерфейсом [IDebugExpression2,](../../extensibility/debugger/reference/idebugexpression2.md) который представляет собой разогнанные выражения, готовые к связыванию и оценке в контексте данной оценки выражения. Кадр стека определяет контекст оценки выражения, который поставляют движок отладки (DE) путем реализации интерфейса [IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 
- Учитывая строку пользователя и [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейса модуля отладки (DE) можно получить [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) интерфейс путем передачи строки пользователя к [ IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) метод. Возвращаемый интерфейс IDebugExpression2 содержит готова для оценки проанализированное выражение.
+ Учитывая пользовательскую строку и интерфейс [IDebugExpressionContext2,](../../extensibility/debugger/reference/idebugexpressioncontext2.md) отладка (DE) может получить интерфейс [IDebugExpression2,](../../extensibility/debugger/reference/idebugexpression2.md) передавая строку пользователя методу [IDebugExpressionExpression2::ParseText.](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Возвращается интерфейс IDebugExpression2, содержащий разображенные выражения, готовые к оценке.
 
- С помощью `IDebugExpression2` интерфейс, DE можно получить значение выражения по синхронным или асинхронным выражениям, с помощью [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Это значение, а также имя и тип переменной или аргумента, отправляется в интегрированную среду разработки для отображения. Значение, имя и тип представлены [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) интерфейс.
+ С `IDebugExpression2` помощью интерфейса DE может получить значение выражения с помощью синхронной или асинхронной оценки выражения, используя [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Это значение, наряду с именем и типом переменной или аргументом, отправляется в IDE для отображения. Значение, имя и тип представлены интерфейсом [IDebugProperty2.](../../extensibility/debugger/reference/idebugproperty2.md)
 
- Чтобы включить вычисление выражений, необходимо реализовать DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) и [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейсов. Синхронные и асинхронные вычисления требуют реализации [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод.
+ Для обеспечения оценки экспрессии DE должен реализовать интерфейсы [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) и [IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md) Как синхронная, так и асинхронная оценка требуют реализации метода [IDebugProperty2::GetPropertyInfo.](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
 
 ## <a name="see-also"></a>См. также
-- [Кадры стека](../../extensibility/debugger/stack-frames.md)
-- [Контекст вычисления выражений](../../extensibility/debugger/expression-evaluation-context.md)
-- [Отладка задач](../../extensibility/debugger/debugging-tasks.md)
+- [Стек кадры](../../extensibility/debugger/stack-frames.md)
+- [Контекст оценки выражения](../../extensibility/debugger/expression-evaluation-context.md)
+- [Задачи дебуза](../../extensibility/debugger/debugging-tasks.md)

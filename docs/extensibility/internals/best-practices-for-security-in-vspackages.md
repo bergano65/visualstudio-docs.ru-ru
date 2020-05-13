@@ -1,5 +1,5 @@
 ---
-title: Рекомендации по безопасности в пакетах VSPackage | Документация Майкрософт
+title: Рекомендации по обеспечению безопасности в VSPackages (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,29 +7,29 @@ helpviewer_keywords:
 - security best practices, VSPackages
 - best practices, security
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 144bc62176ebc552e7070b29088acf70329a84d4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309159"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709908"
 ---
-# <a name="best-practices-for-security-in-vspackages"></a>Рекомендации по обеспечению безопасности в пакетах VSPackage
-Чтобы установить [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] на компьютере, необходимо использовать в контексте от имени администратора. Базовая единица безопасность и развертывание [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] приложение [VSPackage](../../extensibility/internals/vspackages.md). Необходимо зарегистрировать VSPackage с помощью [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], который также требуются административные учетные данные.
+# <a name="best-practices-for-security-in-vspackages"></a>Рекомендации по безопасности в VSPackages
+Чтобы установить [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] компьютер, необходимо работать в контексте с административными учетными данными. Основным блоком [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] безопасности и развертывания приложения является [VSPackage.](../../extensibility/internals/vspackages.md) VSPackage должен быть зарегистрирован [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]с помощью, который также требует административных учетных данных.
 
- Администраторы имеют полные права доступа для записи в реестре и файловой системе, а также для выполнения любого кода. Необходимо иметь следующие разрешения для разработки, развертывания или установки пакетов VSPackage.
+ Администраторы имеют полное разрешение на запись в реестр и файловую систему, а также на запуск любого кода. Вы должны иметь эти разрешения для разработки, развертывания или установки VSPackage.
 
- Как только установки VSPackage является полностью доверенным. Из-за высокий уровень разрешений, связанных с VSPackage существует возможность случайно установить пакет VSPackage, который злоумышленников.
+ Как только он установлен, VSPackage полностью доверяют. Из-за такого высокого уровня разрешения, связанного с VSPackage, можно непреднамеренно установить VSPackage, который имеет злой умысел.
 
- Пользователям следует убедиться, что они установку пакетов VSPackage только из доверенных источников. Компании разработка пакетов VSPackage должен строго имени и подпишите их, для обеспечения предсказуемой, незаконное изменение запрещено. Разработка пакетов VSPackage компаниям следует проверить их внешние зависимости, такие как веб-службы и удаленной установки, чтобы оценить и устранить все проблемы безопасности.
+ Пользователи должны убедиться, что они устанавливают VSPackages только из надежных источников. Компании, разрабатывающие VSPackages, должны решительно называть и подписывать их, чтобы убедить пользователя в том, что фальсификация предотвращается. Компании, разрабатывающие VSPackages, должны изучить свои внешние зависимости, такие как веб-сервисы и удаленная установка, для оценки и исправления любых проблем безопасности.
 
- Дополнительные сведения см. в разделе [правила написания безопасного кода для .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
+ Для получения дополнительной информации [см.](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))
 
 ## <a name="see-also"></a>См. также
-- [Добавить в систему безопасности](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
+- [Безопасность надстройки](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
 - [Безопасность DDEX](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)

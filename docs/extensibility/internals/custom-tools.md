@@ -1,5 +1,5 @@
 ---
-title: Пользовательские инструменты | Документация Майкрософт
+title: Пользовательские инструменты Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,50 +7,50 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9bad62d071fd7c2ef6e0a7c1f5500a5fccb18e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312268"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708957"
 ---
-# <a name="custom-tools"></a>Пользовательские инструменты
-*Пользовательские средства* позволяют связать с элементом в проекте это средство и запускать это средство, при каждом сохранении файла. Некоторые пользовательские инструменты, иногда называют *генераторов одного файла*, часто используются для реализации преобразователей, создающих код на основе данных и наоборот. Например, создать генераторов одного файла [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] исходный код из *.settings* и *.resx* файлов. Созданный исходный код предоставляет строго типизированный доступ к данным в *.settings* и *.resx* файлов. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] И [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] типов проектов поддерживают пользовательские средства; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов — нет. Собственные типы проектов также может поддерживать пользовательские инструменты.
+# <a name="custom-tools"></a>Специальные инструменты
+*Пользовательские инструменты* позволяют связать инструмент с элементом в проекте и запустить этот инструмент всякий раз, когда файл сохраняется. Некоторые пользовательские инструменты, иногда называемые *генераторами одного файла,* часто используются для реализации переводчиков, которые генерируют код из данных и наоборот. Например, генераторы с одним [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] файлами создают и исходируют код из файлов *.setting* и *.resx.* Генерируемый исходный код обеспечивает сильно набранный доступ к данным в *параметрах .setting s* и *.resx.* [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Типы [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] проектов поддерживают пользовательские инструменты; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов этого не делают. Ваши собственные типы проектов также могут поддерживать пользовательские инструменты.
 
- Пользовательские инструменты, зарегистрированных компонентов, которые реализуют `IVsSingleFileGenerator` интерфейс.
+ Пользовательские инструменты являются `IVsSingleFileGenerator` зарегистрированными компонентами, которые реализуют интерфейс.
 
- Пользовательские средства связаны с `ProjectItem` объекта интерфейса и, как редакторы и конструкторы. Настраиваемое средство принимает файл, представленный `ProjectItem` качестве входных данных и создает новый файл, имя которого обеспечивается `DefaultExtension` метод.
+ Пользовательские инструменты `ProjectItem` связаны с объектом интерфейса и подобны дизайнерам и редакторам. Пользовательский инструмент забирает файл, представленный вводимым `ProjectItem` и записывает `DefaultExtension` новый файл, имя файла которого предоставляется методом.
 
-## <a name="in-this-section"></a>Содержание раздела
-- [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)
+## <a name="in-this-section"></a>В этом разделе
+- [Внедрение генераторов с одним файлами](../../extensibility/internals/implementing-single-file-generators.md)
 
- Описывает использование <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> интерфейс для реализации пользовательского инструмента.
+ Описывает, как <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> использовать интерфейс для реализации пользовательского инструмента.
 
-- [Генераторы зарегистрировать одного файла](../../extensibility/internals/registering-single-file-generators.md)
+- [Регистрация генераторов одного файла](../../extensibility/internals/registering-single-file-generators.md)
 
- Содержит описание всех записей реестра для пользовательского средства.
+ Предоставляет описания для всех записей реестра для пользовательского инструмента.
 
-- [Предоставление типов конструкторам визуальных элементов](../../extensibility/internals/exposing-types-to-visual-designers.md)
+- [Экспозиция типов для визуальных дизайнеров](../../extensibility/internals/exposing-types-to-visual-designers.md)
 
- Объясняет, как системы проектов поддерживают визуальные конструкторы для доступа созданных классов и типов через временный переносимый исполняемый файл (PE) файлов.
+ Объясняет, как проектные системы обеспечивают поддержку визуальных дизайнеров для доступа к генерируемым классам и типам через временные портативные исполняемые (PE) файлы.
 
-- [Сохранить свойство элемента проекта](../../extensibility/persisting-the-property-of-a-project-item.md)
+- [Сохранение свойства элемента проекта](../../extensibility/persisting-the-property-of-a-project-item.md)
 
- Показан способ сохранения свойства элемента проекта, например автора исходного файла, в файле проекта.
+ Показано, как сохранить свойство элемента проекта, например автора исходного файла, в файле проекта.
 
-## <a name="reference"></a>Ссылка
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Предоставляет сведения о <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, который преобразует одного входного файла в один выходной файл, который можно скомпилировать и добавить в проект.
+## <a name="reference"></a>Справочник
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>Предоставляет подробную <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>информацию о , который преобразует один файл ввода в единый выходный файл, который может быть скомпилирован или добавлен в проект.
 
- <xref:EnvDTE.ProjectItem> Объясняет `ProjectItem` интерфейс, который представляет элемент в проекте.
+ <xref:EnvDTE.ProjectItem>Объясняет `ProjectItem` интерфейс, представляющий элемент в проекте.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> Предоставляет сведения о `DefaultExtension` метод, который получает расширение имени файла, который назначается имя выходного файла.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>Предоставляет подробную `DefaultExtension` информацию о методе, который получает расширение имени файла, которое дается имени вывода файла.
 
-## <a name="related-sections"></a>Связанные разделы
-- [Расширения проектов](../../extensibility/extending-projects.md)
+## <a name="related-sections"></a>См. также
+- [Расширение проектов](../../extensibility/extending-projects.md)
 
  Описывается использование проектов и решений [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для организации файлов кода и файлов ресурсов, а также реализация системы управления версиями.

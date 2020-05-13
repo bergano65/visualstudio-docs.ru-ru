@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Документация Майкрософт
+title: IDebugObject::Equal Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf592fa83a18c47bf676b84073c0be0e4cb476e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323587"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726505"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
-Сравнивает объект с данным объектом.
+Сравнивает объект с этим объектом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int IsEqual(
 
 ## <a name="parameters"></a>Параметры
 `pObject`\
-[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , который представляет объект для сравнения.
+(в) Объект [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий объект для сравнения.
 
 `pfIsEqual`\
-[out] Возвращает ненулевое значение (`TRUE`) Если значения объектов равны; в противном случае возвращает ноль (`FALSE`).
+(ваут) Возвращает ненулевой`TRUE`( ), если значения объектов равны; в противном`FALSE`случае, возвращаетнулно ноль ().
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Как правило, этот метод можно сравнить адреса значений, представленных `pObject` параметр и это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта; Если адреса совпадают, то объекты могут быть рассматриваются как равные.
+ Как правило, этот метод может сравнить адреса значений, представленных `pObject` параметром, и этого объекта [IDebugObject;](../../../extensibility/debugger/reference/idebugobject.md) если адреса равны, то объекты могут считаться равными.
 
 ## <a name="see-also"></a>См. также
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

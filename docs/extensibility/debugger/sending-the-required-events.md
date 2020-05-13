@@ -1,40 +1,40 @@
 ---
-title: Отправка необходимых событий | Документация Майкрософт
+title: Отправка требуемых событий Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ef1bb6c436faaefb309ab62db02ee43a0486ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc83b47e53607fe1111ececbbf892c96f7bbb639
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345596"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712994"
 ---
 # <a name="send-the-required-events"></a>Отправка необходимых событий
-Эта процедура используется для отправки необходимые события.
+Используйте эту процедуру для отправки необходимых событий.
 
-## <a name="process-for-sending-required-events"></a>Процесс отправки необходимые события
- В указанном порядке, при создании отладочной ядра (DE) и подключите его к программе необходимы следующие события:
+## <a name="process-for-sending-required-events"></a>Процесс отправки необходимых событий
+ В этом порядке требуется следующее события при создании движка отладки (DE) и присоединении его к программе:
 
-1. Отправить [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) объект события, чтобы диспетчер отладки сеансов (SDM), при инициализации DE для одной или нескольких программ в процессе отладки.
+1. Отправить объект события [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) менеджеру отладки сеанса (SDM), когда DE инициализирован для отладки одной или нескольких программ в процессе.
 
-2. При присоединении к программе для отладки, отправлять [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) объект события для SDM. Это событие может быть событие stopping, в зависимости от макета ядра.
+2. При подключении программы к sDM отправьте объект событий [IDebugProgramCreateEvent2.](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Это событие может быть остановкой события, в зависимости от конструкции двигателя.
 
-3. Если программа будет подключен к при запуске процесса, отправить [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) объект события для SDM для уведомления IDE по новому потоку. Это событие может быть событие stopping, в зависимости от макета ядра.
+3. Если программа присоединена к запуску процесса, отправьте объект события [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) в SDM, чтобы уведомить IDE о новом потоке. Это событие может быть остановкой события, в зависимости от конструкции двигателя.
 
-4. Отправить [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) объект события для SDM при завершении загрузки или после завершения присоединения к программе отлаживаемой программы. Это событие должно быть событии остановки.
+4. Отправьте объект события [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) в SDM, когда отладка программы будет завершена загрузка или при подключении к программе завершена. Это событие должно быть остановкой события.
 
-5. При запуске приложения для отладки, отправлять [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) объект события для SDM, должна быть выполнена при первой инструкции кода в архитектуре во время выполнения. Это событие всегда является событием остановки. При пошаговом выполнении в сеанс отладки, интегрированной среды разработки останавливается на это событие.
+5. Если приложение, которое будет отлажено запущено, отправьте объект события [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) в SDM, когда будет выполнена первая инструкция кода в архитектуре времени выполнения. Это событие всегда является остановкой события. При входе в сеанс отладки IDE останавливается на этом событии.
 
 > [!NOTE]
-> Многие языки использовать глобальные инициализаторы или внешних, предварительно скомпилированных функций (из библиотеки CRT или "_main") в начале кода. Если язык программы отладки содержит любой из этих типов элементов перед начальной отправной точкой, выполняется этот код и отправляется событие точки входа при пользователя точки входа, такие как **основной** или `WinMain`, — достигнут.
+> Многие языки используют глобальные инициализаторы или внешние, предварительно собранные функции (из библиотеки CRT или _Main) в начале своего кода. Если язык отладки программы содержит один из этих типов элементов до начальной точки входа, этот код запущен, и **main** событие `WinMain`точки входа отправляется при том, что точка входа пользователя, например основная или, будет достигнута.
 
 ## <a name="see-also"></a>См. также
-- [Включение программы для отладки](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Включение отладки программы](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

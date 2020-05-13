@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999111"
 ---
-# <a name="intellisense"></a>IntelliSense
+# <a name="intellisense"></a>технология IntelliSense
 
-IntelliSense в Visual Studio отображает сведения о функциях, которые можно вызывать, элементах объектов, аргументах функций и [фрагментах кода](code-snippets-for-r.md) прямо в представлении при написании кода. IntelliSense также отображает возможные варианты при вводе и автоматически завершает их при нажатии клавиш **TAB** или **ВВОД** (сведения о вкладке **Дополнительно** см. в разделе, посвященном [параметрам редактора](editing-r-code-in-visual-studio.md#editor-options)). IntelliSense доступен как в редакторе, так и в [интерактивном окне](interactive-repl-for-r-in-visual-studio.md).
+IntelliSense в Visual Studio отображает сведения о функциях, которые можно вызывать, элементах объектов, аргументах функций и [фрагментах кода](code-snippets-for-r.md) прямо в представлении при написании кода. IntelliSense также отображает возможные варианты при вводе и автоматически завершает их при нажатии клавиш **TAB** или **ВВОД** (сведения о вкладке [Дополнительно](editing-r-code-in-visual-studio.md#editor-options) см. в разделе, посвященном **параметрам редактора**). IntelliSense доступен как в редакторе, так и в [интерактивном окне](interactive-repl-for-r-in-visual-studio.md).
 
 ![IntelliSense — отображение сигнатуры функции](media/intellisense-function-signature.png)
 

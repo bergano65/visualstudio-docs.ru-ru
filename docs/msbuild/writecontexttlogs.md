@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c0793cc6d9f11cd1074c5cd0091687b154c069
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: cf34ff63b00cf523ba9ef704f4417be4d5cdbf77
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579458"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77630709"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
+
 Записывает файлы журнала для текущего контекста.
 
 ## <a name="syntax"></a>Синтаксис
@@ -32,6 +33,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ```
 
 #### <a name="parameters"></a>Параметры
+
 [in] `intermediateDirectory`
 
  Каталог, в котором хранится журнал отслеживания.
@@ -41,10 +43,13 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  Имя корневой папки для имени файла журнала.
 
 ## <a name="return-value"></a>Возвращаемое значение
+
  **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был создан.
 
 ## <a name="requirements"></a>Требования
+
  **Заголовок.** *FileTracker.h*
 
 ## <a name="see-also"></a>См. также
+
 - [WriteAllTLogs](../msbuild/writealltlogs.md)

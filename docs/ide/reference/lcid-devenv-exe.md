@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557932"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -39,9 +39,9 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  Обязательный. Код языка (LCID) для заданного вами языка.
+  Обязательный элемент. Код языка (LCID) для заданного вами языка.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Загружает интегрированную среду разработки и устанавливает естественный язык по умолчанию для среды. Это изменение сохраняется между сеансами. Интегрированная среда разработки показывает его в поле **Инструменты** > **Параметры** > **Среда** > **Международные параметры** > **Язык**.
 
@@ -74,7 +74,7 @@ devenv {/LCID|/L} LocaleID
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/international-settings-environment-options-dialog-box.md)

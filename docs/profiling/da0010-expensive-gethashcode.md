@@ -1,5 +1,5 @@
 ---
-title: DA0010. Затратный метод GetHashCode | Документация Майкрософт
+title: DA0010. Затратный метод GetHashCode | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777690"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010. Затратный метод GetHashCode
@@ -27,11 +27,11 @@ ms.locfileid: "74777690"
 |-|-|
 |Идентификатор правила|DA0010|
 |Категория|Использование .NET Framework|
-|Методы профилирования|Дискретизация<br /><br /> Память .NET|
+|Методы профилирования|Выборка<br /><br /> Память .NET|
 |Сообщение|Функции GetHashCode должны быть малозатратными и не должны выделять память. Если возможно, уменьшите сложность функции хэш-кода.|
-|Тип сообщения|Предупреждение|
+|тип сообщений;|Предупреждение|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Вызовы метода GetHashCode типа составляют значительную часть данных профилирования, или метод выделяет память.
 
 ## <a name="rule-description"></a>Описание правила

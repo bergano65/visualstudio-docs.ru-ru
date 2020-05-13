@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778639"
 ---
 # <a name="instruction-pointers-ips-view"></a>Представление указателей инструкций
@@ -34,7 +34,7 @@ ms.locfileid: "74778639"
 
  Для данных памяти .NET представление "Строки" определяет инструкции, выделяющие память.
 
-## <a name="see-also"></a>См. также
-- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-sampling-data.md)
 - [Представление "Указатели инструкций" — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
-- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-contention-data.md)
+- [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-contention-data.md)

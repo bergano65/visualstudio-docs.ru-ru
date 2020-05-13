@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278647"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109433"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -22,7 +22,7 @@ ms.locfileid: "77278647"
 
 Пути к заголовкам и библиотекам автоматически настраиваются в собственном тестовом проекте.
 
-## <a name="In_this_topic"></a> Содержание раздела
+## <a name="in-this-topic"></a><a name="In_this_topic"></a> Содержание раздела
 
 [CppUnitTest.h](#cppUnitTest_h)
 
@@ -94,9 +94,9 @@ ms.locfileid: "77278647"
 
   - [Пример использования](#example)
 
-## <a name="cppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppunittesth"></a><a name="cppUnitTest_h"></a> CppUnitTest.h
 
-### <a name="create_test_classes_and_methods"></a> Создание тестовых классов и методов
+### <a name="create-test-classes-and-methods"></a><a name="create_test_classes_and_methods"></a> Создание тестовых классов и методов
 
 ```cpp
 TEST_CLASS(className)
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
 
 Определяет *methodName* как метод теста. `TEST_METHOD` необходимо объявить в области класса метода.
 
-### <a name="Initialize_and_cleanup"></a> Инициализация и очистка
+### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a> Инициализация и очистка
 
-#### <a name="test_methods"></a> Методы тестов
+#### <a name="test-methods"></a><a name="test_methods"></a> Методы тестов
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -135,7 +135,7 @@ TEST_METHOD_CLEANUP(methodName)
 
 Определяет *methodName* в качестве метода, который выполняется после выполнения каждого метода теста. `TEST_METHOD_CLEANUP` может быть определен только один раз в тестовом классе и должен быть определен в его области.
 
-#### <a name="test_classes"></a> Тестовые классы
+#### <a name="test-classes"></a><a name="test_classes"></a> Тестовые классы
 
 ```cpp
 TEST_CLASS_INITIALIZE(methodName)
@@ -155,7 +155,7 @@ TEST_CLASS_CLEANUP(methodName)
 
 Определяет *methodName* в качестве метода, который выполняется после создания каждого тестового класса. `TEST_CLASS_CLEANUP` может быть определен только один раз в тестовом классе и должен быть определен в его области.
 
-#### <a name="test_modules"></a> Модули тестов
+#### <a name="test-modules"></a><a name="test_modules"></a> Модули тестов
 
 ```cpp
 TEST_MODULE_INITIALIZE(methodName)
@@ -172,9 +172,9 @@ TEST_MODULE_CLEANUP(methodName)
 
 Определяет метод *methodName*, который выполняется, когда модуль выгружается. `TEST_MODULE_CLEANUP` может быть определен только один раз в модуле теста и должен быть объявлен в области пространства имен.
 
-### <a name="create_test_attributes"></a> Создание атрибутов тестов
+### <a name="create-test-attributes"></a><a name="create_test_attributes"></a> Создание атрибутов тестов
 
-#### <a name="test_method_attributes"></a> Атрибуты метода теста
+#### <a name="test-method-attributes"></a><a name="test_method_attributes"></a> Атрибуты метода теста
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -187,7 +187,7 @@ END_TEST_METHOD_ATTRIBUTE()
 
 Макрос `TEST_METHOD_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.
 
-#### <a name="test_class_attributes"></a> Атрибуты тестового класса
+#### <a name="test-class-attributes"></a><a name="test_class_attributes"></a> Атрибуты тестового класса
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -200,7 +200,7 @@ END_TEST_CLASS_ATTRIBUTE()
 
 Макрос `TEST_CLASS_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.
 
-#### <a name="test_module_attributes"></a> Атрибуты модуля теста
+#### <a name="test-module-attributes"></a><a name="test_module_attributes"></a> Атрибуты модуля теста
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -213,7 +213,7 @@ END_TEST_MODULE_ATTRIBUTE()
 
 Макрос `TEST_MODULE_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.
 
-#### <a name="pre_defined_attributes"></a> Стандартные атрибуты
+#### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a> Стандартные атрибуты
 
 Эти предварительно определенные макросы атрибутов предоставляются для удобства реализации распространенных сценариев. Их можно заменить описанным выше макросом `TEST_METHOD_ATTRIBUTE`.
 
@@ -247,11 +247,11 @@ TEST_IGNORE()
 
 Определяет `TEST_METHOD_ATTRIBUTE` с именем `Ignore` и значение атрибута для `true`.
 
-## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
-### <a name="general_asserts"></a> Общие утверждения
+### <a name="general-asserts"></a><a name="general_asserts"></a> Общие утверждения
 
-#### <a name="general_are_equal"></a> Проверка на равенство
+#### <a name="are-equal"></a><a name="general_are_equal"></a> Проверка на равенство
 Проверяет, равны ли два объекта.
 
 ```cpp
@@ -307,7 +307,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_not_equal"></a> Проверка на неравенство
+#### <a name="are-not-equal"></a><a name="general_are_not_equal"></a> Проверка на неравенство
 Проверяет неравенство двух объектов типа double.
 
 ```cpp
@@ -363,7 +363,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_same"></a> Ссылаются на один и тот же объект
+#### <a name="are-same"></a><a name="general_are_same"></a> Ссылаются на один и тот же объект
 Проверяет, указывают ли две ссылки на один и тот же экземпляр объекта (идентификатор).
 
 ```cpp
@@ -375,7 +375,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_not_same"></a> Не ссылаются на один и тот же объект
+#### <a name="are-not-same"></a><a name="general_are_not_same"></a> Не ссылаются на один и тот же объект
 Проверяет, что две ссылки не указывают на один и тот же экземпляр объекта (идентификатор).
 
 ```cpp
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_null"></a> Имеет значение Null
+#### <a name="is-null"></a><a name="general_is_null"></a> Имеет значение Null
 Проверяет, имеет ли указатель значение NULL.
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_not_null"></a> Имеет значение не Null
+#### <a name="is-not-null"></a><a name="general_is_not_null"></a> Имеет значение не Null
 Проверяет, что указатель не равен NULL.
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_True"></a> Условие имеет значение true
+#### <a name="is-true"></a><a name="general_is_True"></a> Условие имеет значение true
 Проверяет, имеет ли условие значение true.
 
 ```cpp
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_false"></a> Условие имеет значение false
+#### <a name="is-false"></a><a name="general_is_false"></a> Условие имеет значение false
 Проверяет, имеет ли условие значение alse.
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_Fail"></a> Не пройден
+#### <a name="fail"></a><a name="general_Fail"></a> Не пройден
 Принудительно вернуть ошибку в тесте.
 
 ```cpp
@@ -438,9 +438,9 @@ static void Assert::Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-### <a name="winrt_asserts"></a> Утверждения среды выполнения Windows
+### <a name="windows-runtime-asserts"></a><a name="winrt_asserts"></a> Утверждения среды выполнения Windows
 
-#### <a name="winrt_are_equal"></a> Проверка на равенство
+#### <a name="are-equal"></a><a name="winrt_are_equal"></a> Проверка на равенство
 Проверяет, равны ли два указателя среды выполнения Windows.
 
 ```cpp
@@ -463,7 +463,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_same"></a> Ссылаются на один и тот же объект
+#### <a name="are-same"></a><a name="winrt_are_same"></a> Ссылаются на один и тот же объект
 Проверяет, указывают ли две ссылки среды выполнения Windows на один объект.
 
 ```cpp
@@ -475,7 +475,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_not_equal"></a> Проверка на неравенство
+#### <a name="are-not-equal"></a><a name="winrt_are_not_equal"></a> Проверка на неравенство
 Проверяет неравенство двух указателей среды выполнения Windows.
 
 ```cpp
@@ -498,7 +498,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_not_same"></a> Не ссылаются на один и тот же объект
+#### <a name="are-not-same"></a><a name="winrt_are_not_same"></a> Не ссылаются на один и тот же объект
 Проверяет, что две ссылки среды выполнения Windows не указывают на один объект.
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_is_null"></a> Имеет значение Null
+#### <a name="is-null"></a><a name="winrt_is_null"></a> Имеет значение Null
 Проверяет, равен ли указатель среды выполнения Windows nullptr.
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_is_not_null"></a> Имеет значение не Null
+#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a> Имеет значение не Null
 Проверяет, что указатель среды выполнения Windows не равен nullptr.
 
 ```cpp
@@ -532,9 +532,9 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-### <a name="exception_asserts"></a> Утверждения об исключениях
+### <a name="exception-asserts"></a><a name="exception_asserts"></a> Утверждения об исключениях
 
-#### <a name="expect_exception"></a> Ожидается исключение
+#### <a name="expect-exception"></a><a name="expect_exception"></a> Ожидается исключение
 Проверяет, вызывает ли функция исключение.
 
 ```cpp
@@ -555,12 +555,12 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
-### <a name="logger"></a> Ведение журнала
+### <a name="logger"></a><a name="logger"></a> Ведение журнала
 Класс Logger содержит статические методы для записи в **окно вывода**.
 
-### <a name="write_message"></a> Запись сообщения
+### <a name="write-message"></a><a name="write_message"></a> Запись сообщения
 Запись строки в **окно вывода**
 
 ```cpp
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a> Пример
+## <a name="example"></a><a name="example"></a> Пример
 Этот код является примером использования VSCppUnit. В него включены примеры метаданных атрибутов, фиксаций, модульных тестов с утверждениями и ведения пользовательских журналов.
 
 ```cpp

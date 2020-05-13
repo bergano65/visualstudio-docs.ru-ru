@@ -1,27 +1,27 @@
 ---
-title: BPREQI_FIELDS90 | Документация Майкрософт
+title: BPREQI_FIELDS90 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f4d6df181ac15746202ae9f67e7b8874848e8f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea46939118ec48490280d6a85cc84e144d320d4e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350548"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737732"
 ---
-# <a name="bpreqifields90"></a>BPREQI_FIELDS90
-Перечисляет допустимые значения, определяющие извлекаемого запроса точки останова. Это перечисление расширяет [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления.
+# <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
+Перечисляет допустимые значения, указывающие информацию, которая будет получена о запросе точки разрыва. Этот пересчет расширяет [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -78,54 +78,54 @@ public enum enum_BPREQI_FIELDS90
 
 ## <a name="fields"></a>Поля
 `BPREQI90_BPLOCATION`\
-Инициализировать или использовать `bpLocation` (точки останова) поле [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) или [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.
+Инициализируйте или используйте `bpLocation` (место разрыва) поле [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) или [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.
 
 `BPREQI90_LANGUAGE`\
-Инициализировать или использовать `guidLanguage` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` используйте `guidLanguage` поле или структуру.
 
 `BPREQI90_PROGRAM`\
-Инициализировать или использовать `pProgram` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` используйте `pProgram` поле или структуру.
 
 `BPREQI90_PROGRAMNAME`\
-Инициализировать или использовать `bstrProgramName` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` используйте `bstrProgramName` поле или структуру.
 
 `BPREQI90_THREAD`\
-Инициализировать или использовать `pThread` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` используйте `pThread` поле или структуру.
 
 `BPREQI90_THREADNAME`\
-Инициализировать или использовать `bstrThreadName` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` используйте `bstrThreadName` поле или структуру.
 
 `BPREQI90_PASSCOUNT`\
-Инициализировать или использовать `bpPassCount` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` используйте `bpPassCount` поле или структуру.
 
 `BPREQI90_CONDITION`\
-Инициализировать или использовать `bpCondition` (условие точки останова) поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или используйте `bpCondition` (условие брейк-пойнта) поле или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуру.
 
 `BPREQI90_FLAGS`\
-Инициализировать или использовать `dwFlags` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или `BP_REQUEST_INFO` `BP_REQUEST_INFO2` используйте `dwFlags` поле или структуру.
 
 `BPREQI90_ALLOLDFIELDS`\
-Инициализировать или использовать все поля для объекта `BP_REQUEST_INFO` структуры.
+Инициализация или использование `BP_REQUEST_INFO` всех полей для структуры.
 
 `BPREQI90_VENDOR`\
-Инициализировать или использовать `guidVendor` поле `BP_REQUEST_INFO2` структуры.
+Инициализация `guidVendor` или `BP_REQUEST_INFO2` использование поля структуры.
 
 `BPREQI90_CONSTRAINT`\
-Инициализировать или использовать `bstrConstraint` поле `BP_REQUEST_INFO2` структуры.
+Инициализация `bstrConstraint` или `BP_REQUEST_INFO2` использование поля структуры.
 
 `BPREQI90_TRACEPOINT`\
-Инициализировать или использовать `bstrTracepoint` поле `BP_REQUEST_INFO2` структуры.
+Инициализация `bstrTracepoint` или `BP_REQUEST_INFO2` использование поля структуры.
 
 `BPREQI90_MACROTRACEPOINT`\
-Инициализировать или использовать `bstrMacroTracepoint` поле `BP_REQUEST_INFO2` структуры. BPREQI_ALLFIELDS не содержит этого поля.
+Инициализация `bstrMacroTracepoint` или `BP_REQUEST_INFO2` использование поля структуры. BPREQI_ALLFIELDS не включает в себя это поле.
 
 `BPREQI90_ALLFIELDS`\
-Указывает все поля для `BP_REQUEST_INFO2` структуры.
+Определяет все поля для `BP_REQUEST_INFO2` структуры.
 
 ## <a name="requirements"></a>Требования
 Заголовок: Msdbg90.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

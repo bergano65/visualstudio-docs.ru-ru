@@ -1,39 +1,39 @@
 ---
-title: Присоединение к программе | Документация Майкрософт
+title: Присоединение к Программе (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1cc66dbade730409406a7dc3f3208c4d5147fa6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8f39b489a57ab93ba5f2d116738c591bd53ff95f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332630"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739244"
 ---
-# <a name="attach-to-the-program"></a>Присоединение к программе
-После регистрации ваших программ с соответствующий порт, необходимо подключить отладчик к программу, которую требуется отладить.
+# <a name="attach-to-the-program"></a>Прикрепите к программе
+После регистрации программ в соответствующем порту необходимо прикрепить отладчикки к программе, которая требуетотого отладки.
 
-## <a name="choose-how-to-attach"></a>Выберите способ прикрепления
- Существует три способа, в которых диспетчер отладки сеансов (SDM) пытается присоединиться к отлаживаемой программы.
+## <a name="choose-how-to-attach"></a>Выберите, как прикрепить
+ Существует три способа, с которыми диспетчер сеанса отладки (SDM) пытается прикрепить к отладке программы.
 
-1. Для программ, которые запускаются ядром отладки через [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (что типично для интерпретируемых языков, например), SDM получает [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) интерфейс из [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) объект, связанный с программой, присоединяемый к. Если можно получить SDM `IDebugProgramNodeAttach2` SDM интерфейс, затем вызывает [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод. `IDebugProgramNodeAttach2::OnAttach` Возвращает метод `S_OK` чтобы указать, что он не вложен в программу, и что другие попытки могут выполняться для присоединения к программе.
+1. Для программ, запускаемых отладкой через метод [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (типичный для интерпретированных языков, например), SDM получает интерфейс [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) от объекта [IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) связанного с прилагаемым к программе. Если SDM может `IDebugProgramNodeAttach2` получить интерфейс, SDM затем вызывает метод [OnAttach.](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Метод `IDebugProgramNodeAttach2::OnAttach` возвращается, `S_OK` чтобы указать, что он не прикрепил к программе и что другие попытки могут быть сделаны, чтобы прикрепить к программе.
 
-2. Если можно получить SDM [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) интерфейс из программы, присоединяемый к вызовы SDM [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md) метод. Этот подход является типичным для программ, которые были удаленно запускать с поставщика порта.
+2. Если SDM может получить интерфейс [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) из прилагаемых программ, SDM вызывает метод [присоединения.](../../extensibility/debugger/reference/idebugprogramex2-attach.md) Такой подход характерен для программ, которые были запущены удаленно поставщиком порта.
 
-3. Если программа не может быть присоединена через `IDebugProgramNodeAttach2::OnAttach` или `IDebugProgramEx2::Attach` методы, SDM загружает модуль отладки (если еще не загружен) путем вызова `CoCreateInstance` функции, а затем вызывает [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) метод. Этот подход является типичным для программ, запускать локально поставщика порта.
+3. Если программа не может быть `IDebugProgramNodeAttach2::OnAttach` `IDebugProgramEx2::Attach` прикреплена с помощью или методов, SDM загружает `CoCreateInstance` отладочный двигатель (если еще не загружен), вызывая функцию, а затем вызывает метод [Присоединения.](../../extensibility/debugger/reference/idebugengine2-attach.md) Такой подход характерен для программ, запущенных на местном уровне поставщиком портов.
 
-    Можно также для поставщика пользовательского порта для вызова `IDebugEngine2::Attach` метод в реализации поставщика пользовательского порта `IDebugProgramEx2::Attach` метод. В этом случае обычно поставщика пользовательского порта запускает модуль отладки на удаленном компьютере.
+    Поставщик портов также может назвать `IDebugEngine2::Attach` этот метод в реализации `IDebugProgramEx2::Attach` метода поставщика пользовательских портов. Обычно в этом случае поставщик порта запускает отладоть двигатель на удаленной машине.
 
-   Вложение достигается, когда диспетчер отладки сеансов (SDM) вызывает [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) метод.
+   Прикрепление достигается, когда диспетчер отладки сеанса (SDM) вызывает метод [присоединения.](../../extensibility/debugger/reference/idebugengine2-attach.md)
 
-   Если вы запустите вашей DE в том же процессе, что и приложение для отладки, а затем необходимо реализовать следующие методы класса [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):
+   Если вы запустите DE в том же процессе, что и приложение для отладки, необходимо реализовать следующие методы [IDebugProgramNode2:](../../extensibility/debugger/reference/idebugprogramnode2.md)
 
 - [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
 
@@ -41,21 +41,21 @@ ms.locfileid: "66332630"
 
 - [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)
 
-  После `IDebugEngine2::Attach` вызывается метод, выполните следующие действия в своей реализации `IDebugEngine2::Attach` метод:
+  После `IDebugEngine2::Attach` вызова метода выполните следующие действия `IDebugEngine2::Attach` в реализации метода:
 
-1. Отправить [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) объект события для SDM. Дополнительные сведения см. в разделе [отправки событий](../../extensibility/debugger/sending-events.md).
+1. Отправить объект события [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) в SDM. Для получения дополнительной информации [см.](../../extensibility/debugger/sending-events.md)
 
-2. Вызовите [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) метод [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) объект, который был передан `IDebugEngine2::Attach` метод.
+2. Позвоните методу [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) на объекте [IDebugProgram2,](../../extensibility/debugger/reference/idebugprogram2.md) который был передан методу. `IDebugEngine2::Attach`
 
-     Эта команда возвращает `GUID` , используемый для идентификации программы. `GUID` Должны храниться в объекте представляет локальной программу DE, что он должен быть возвращен при `IDebugProgram2::GetProgramId` вызывается метод `IDebugProgram2` интерфейс.
-
-    > [!NOTE]
-    > Если вы реализуете `IDebugProgramNodeAttach2` интерфейс программы `GUID` передается `IDebugProgramNodeAttach2::OnAttach` метод. Это `GUID` используется для программы `GUID` возвращаемые `IDebugProgram2::GetProgramId` метод.
-
-3. Отправить [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) объект события для уведомления SDM, локальной `IDebugProgram2` объект был создан для представления программы для DE. Дополнительные сведения см. в разделе [отправки событий](../../extensibility/debugger/sending-events.md).
+     Это возвращает, которое `GUID` используется для идентификации программы. Объект `GUID` должен храниться в объекте, представляющем локальную программу для `IDebugProgram2::GetProgramId` DE, и `IDebugProgram2` он должен быть возвращен при вызове метода на интерфейсе.
 
     > [!NOTE]
-    > Это не то же самое `IDebugProgram2` объект, который был передан в `IDebugEngine2::Attach` метод. Ранее переданный `IDebugProgram2` объект распознается только номер порта и представляет собой отдельный объект.
+    > При реализации `IDebugProgramNodeAttach2` интерфейса `GUID` программа передается методу. `IDebugProgramNodeAttach2::OnAttach` Это `GUID` используется для `GUID` возврата программы методом. `IDebugProgram2::GetProgramId`
+
+3. Отправить объект события [IDebugProgramCreateEvent2,](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) чтобы уведомить `IDebugProgram2` SDM о том, что локальный объект был создан для представления программы DE. Для получения подробной информации [см.](../../extensibility/debugger/sending-events.md)
+
+    > [!NOTE]
+    > Это не тот `IDebugProgram2` объект, который `IDebugEngine2::Attach` был передан в метод. Ранее пройденные `IDebugProgram2` объекты распознаются только портом и является отдельным объектом.
 
 ## <a name="see-also"></a>См. также
 - [Вложение на основе запуска](../../extensibility/debugger/launch-based-attachment.md)

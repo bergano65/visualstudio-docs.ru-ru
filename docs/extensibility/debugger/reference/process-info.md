@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Документация Майкрософт
+title: PROCESS_INFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f8333dd697f265480c46ed7edbfbea1a48970ae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309342"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713887"
 ---
-# <a name="processinfo"></a>PROCESS_INFO
-Содержит сведения о процессе.
+# <a name="process_info"></a>PROCESS_INFO
+Содержит информацию о процессе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -57,39 +57,39 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>Участники
  `Fields`\
- Сочетание флагов из [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) перечисление, указать, какие поля заполнены.
+ Комбинация флагов [из PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) перечисления, которые определяют, какие поля заполнены.
 
  `bstrFileName`\
- Полное имя пути процесса. Аналогичен вызову [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) метод с параметром `GN_FILENAME`.
+ Полное название пути процесса. Эквивалент вызову метода [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) с параметром. `GN_FILENAME`
 
  `bstrBaseName`\
- Имя файла и расширение процесса. Аналогичен вызову `IDebugProcess2::Getname` метод с параметром `GN_BASENAME`.
+ Имя файла и расширение процесса. Эквивалент вызову `IDebugProcess2::Getname` метода `GN_BASENAME`с параметром.
 
  `bstrTitle`\
- Название процесса, если он существует. Аналогичен вызову `IDebugProcess2::Getname` метод с параметром `GN_TITLE`.
+ Название процесса, если он существует. Эквивалент вызову `IDebugProcess2::Getname` метода `GN_TITLE`с параметром.
 
  `ProcessId`\
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, определяющий процесс. Аналогичен вызову [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) метод.
+ [Структура AD_PROCESS_ID,](../../../extensibility/debugger/reference/ad-process-id.md) которая определяет процесс. Эквивалент вызова метода [GetPhysicalProcessId.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
  `dwSessionId`\
- Идентификатор сеанса отладки, на котором этот процесс выполняется в.
+ Идентификатор сеанса отладки, в который находится этот процесс.
 
  `bstrAttachedSessionName`\
- Имя вложенного сеанса. Аналогичен вызову [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) метод.
+ Прилагаемое имя сеанса. Эквивалент вызова метода [GetAttachedSessionName.](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
 
  `CreationTime`\
  Время создания процесса.
 
  `Flags`\
- Сочетание флагов из [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) перечисления, укажите для свойства процесса.
+ Комбинация флагов [из PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) перечисления, которые определяют свойства процесса.
 
 ## <a name="remarks"></a>Примечания
- Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) метод, где он заполняется.
+ Эта структура передается методу [GetInfo,](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) где она заполняется.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

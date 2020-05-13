@@ -6,34 +6,34 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 6a602da63f86ee1a2a61054e5c3aa3b011541ba6
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: cb6e9e59ad0c45cfc92ba65ddbc594563ade91fa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76158960"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437575"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Основной редактор Visual Studio (включен в Visual Studio Team Explorer 2019)
 
-**Идентификатор:** Microsoft.VisualStudio.Workload.CoreEditor
+**Идентификатор.** Microsoft.VisualStudio.Workload.CoreEditor
 
 **Описание.** Основные возможности оболочки Visual Studio, включая редактирование кода с учетом синтаксиса, управление исходным кодом и рабочими элементами.
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Version | Тип зависимости
+Идентификатор компонента | Имя | Версия | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 16.1.28811.260 | Обязательное значение
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная страница Visual Studio для пользователей C++ | 16.0.28315.86 | Необязательный
+Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 16.1.28811.260 | Обязательно
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная страница Visual Studio для пользователей C++ | 16.0.28315.86 | Необязательно
 
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | name | Version
+Идентификатор компонента | Имя | Версия
 --- | --- | ---
-Н/Д | Н/Д | Н/Д
+Недоступно | Недоступно | Недоступно

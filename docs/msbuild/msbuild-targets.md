@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093606"
 ---
 # <a name="msbuild-targets"></a>Целевые объекты MSBuild
 
@@ -42,7 +42,7 @@ ms.locfileid: "75593854"
 </Target>
 ```
 
- Если выполняется AfterBuild, он отображает только "второе вхождение".
+ Если выполняется `AfterBuild`, отображается только "второе вхождение", так как второе определение `AfterBuild` скрывает первое.
 
  Поведение MSBuild зависит от порядка импорта, то есть всегда используется последнее обработанное определение целевого объекта.
 
@@ -105,6 +105,7 @@ Reference: 4.0
  Если все выходные элементы актуальны, MSBuild пропускает этот целевой объект, что значительно ускоряет сборку. Это называется инкрементной сборкой целевого объекта. Если актуальны лишь некоторые файлы, MSBuild выполняет целевой объект без актуальных элементов. Это называется частичной инкрементной сборкой целевого объекта. Дополнительные сведения см. в разделе [Добавочные сборки](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Целевые объекты сборки по умолчанию
+
 Ниже перечислены общедоступные целевые объекты в Microsoft.Common.CurrentVersion.targets.
 
 ```

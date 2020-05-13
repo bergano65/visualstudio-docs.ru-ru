@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Развертывание решения Office с помощью установщика Windows
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: "Развертывание решения Office с помощью проектов установки в Visual\_Studio"
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: 'Устранение неполадок, связанных с развертыванием решения Office'
               items:
                 - name: 'Устранение неполадок, связанных с развертыванием решения Office'

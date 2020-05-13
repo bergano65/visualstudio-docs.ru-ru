@@ -13,16 +13,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777833"
 ---
 # <a name="common-data-views"></a>Представления общих данных
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, которые являются общими для всех методов профилирования.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Представление "Сводка"](../profiling/summary-view.md)
 
  Содержит описание представления и отчета "Сводка". Столбцы данных зависят от используемого метода профилирования.
@@ -59,7 +59,7 @@ ms.locfileid: "74777833"
 
  Содержит список трассировки событий Windows и событий выборки, вставленных в файл данных профилирования.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
 - [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)
 
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода выборки.

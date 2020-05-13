@@ -1,16 +1,16 @@
 ---
 title: Практическое руководство. Повышение шансов решения проблемы с производительностью
 description: Дополнительные сведения и рекомендации по отправке проблем с производительностью в Visual Studio
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f5c83a145eb56dcb95c6e9a299c690ae960442c9
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918164"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615048"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Практическое руководство. Повышение шансов решения проблемы с производительностью
 
@@ -74,17 +74,17 @@ Visual Studio — это обширная и сложная платформа,
 Если вы не можете определить причины сбоев или они возникают без какой-либо закономерности, вы можете записать локальные дампы для каждого случая сбоя Visual Studio и приложить их к отдельным элементам отзывов. Чтобы сохранять локальные дампы при сбоях Visual Studio, выполните следующие команды в окне командной строки администратора:
 
 ```
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe"
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 ```
 
 Задайте количество дампов и папку для их размещения. Дополнительные сведения об этих параметрах см. в [этом разделе](/windows/win32/wer/collecting-user-mode-dumps).
@@ -118,7 +118,7 @@ Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 **Отсутствие отклика по неизвестным причинам**
 
 Если отсутствие отклика проявляется без какой-либо закономерности, при следующем таком случае запустите новый экземпляр Visual Studio и сообщите о проблеме с его помощью.
-На [экране записи](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro) выберите сеанс Visual Studio, который не отвечает.
+На [экране "Запись"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro) выберите сеанс Visual Studio, который не отвечает.
 
 Если зависший экземпляр Visual Studio был запущен в режиме администратора, второй экземпляр также необходимо запускать в этом режиме.
 

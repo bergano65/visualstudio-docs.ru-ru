@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594933"
 ---
 # <a name="trackedvctooltask-base-class"></a>Базовый класс TrackedVCToolTask
@@ -26,7 +26,7 @@ ms.locfileid: "75594933"
 
 В следующей таблице описываются параметры базового класса **TrackedVCToolTask**.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Необязательный параметр типа **bool**.|
 |**EnableExecuteTool**|Необязательный параметр типа **bool**.|
@@ -48,7 +48,7 @@ ms.locfileid: "75594933"
 |**TrackerFrameworkPath**|Необязательный параметр типа **string**.|
 |**TrackerSdkPath**|Необязательный параметр типа **string**.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)<br/>
 [Задачи](../msbuild/msbuild-tasks.md)

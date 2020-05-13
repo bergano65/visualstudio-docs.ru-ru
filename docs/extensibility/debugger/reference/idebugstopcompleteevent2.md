@@ -1,24 +1,24 @@
 ---
-title: IDebugStopCompleteEvent2 | Документация Майкрософт
+title: IDebugStopCompleteEvent2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080b3073ffc13b90870b40a16a353634f4aa0cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352011"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719444"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
-Модуль отладки (DE) можно отправлять это необязательное событие диспетчер отладки сеансов (SDM) после остановки программы.
+Двигатель отладки (DE) может отправить это дополнительное событие менеджеру отладки сеанса (SDM) при прекращении программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,18 +26,18 @@ ms.locfileid: "66352011"
 IDebugStopCompleteEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
 
-Этот интерфейс впервые появилась в Visual Studio 2005. Предыдущие версии не поддерживает асинхронной остановки.
+Этот интерфейс был представлен Visual Studio 2005. Предыдущие релизы не поддерживали асинхронную остановку.
 
-- [Остановить](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) вызывается SDM в сценариях с несколькими процессами или несколькими программы. Если для одной из них отправляет событие stopping SDM, SDM запрашивает другие программы, чтобы остановить, слишком.
+- [Остановка](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) вызывается SDM в многопроцессных или многопрограммных сценариях. Когда одна программа отправляет событие остановки в SDM, SDM просит другие программы, чтобы остановить, тоже.
 
-Остановка используется для асинхронного информирования SDM, который перестал программы. О том, SDM полезно для отладки двигателя интерпретатор, котором иногда не выполняется код внутри отладки программы, это [остановить](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) не может быть завершена синхронно. Если модуль отладки хочет использовать этот асинхронное уведомление, оно должно возвращать `S_ASYNC_STOP` из [остановить](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
+Остановка используется для асинхронного информирования SDM о том, что программа остановлена. Информирование SDM полезно для движка отладки переводчика, где иногда внутри отладоченной программы не работает код, поэтому [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) не может быть завершена синхронно. Если отладка двигателя хочет использовать это асинхронное уведомление, он должен вернуться `S_ASYNC_STOP` из [Стоп](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
 
 ## <a name="requirements"></a>Требования
 
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

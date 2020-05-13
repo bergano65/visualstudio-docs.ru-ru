@@ -1,5 +1,5 @@
 ---
-title: Программа узлов | Документация Майкрософт
+title: Узлы программы Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 084a386cc7d7f9c6d606e7015e593a4075ba53a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351427"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738215"
 ---
 # <a name="program-nodes"></a>Узлы программы
-В архитектуре отладчик *узел программы*:
+В архитектуре отладчика *узло программы:*
 
-- — Это упрощенный описание программы.
+- Является легким описанием программы.
 
-- Можно указать сам и процесс, в котором он выполняется в. Узел программы можно прикреплять к, следует отсоединить от и описывают отладчик (DE), были созданы, если таковые имеются.
+- Может идентифицировать себя и процесс, в который он работает. Узла программы можно прикрепить, отсоединить от двигателя отладки (DE), который создал его, если таковые имеется.
 
-- Представленный [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс, обычно создается с DE или порт. Программа узлы добавляются к порту, вызвав [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). При программы узел добавляется к порту, она добавляется к процессу с программой, которую представляет данный узел программы.
+- Представлен интерфейсом [IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) обычно созданным DE или портом. Узлы программы добавляются в порт, позвонив [в AddProgramNode.](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) Когда узла программы добавляется в порт, он добавляется к процессу, содержащему программу, которую представляет этот узлы программы.
 
-  Через некоторое время после запуска сеанса отладки, в зависимости от реализации пакета отладки, узлы программы используются для создания соответствующих программ. При запросе к процесса для своих программ, перечислены программы, один для каждого узла программы.
+  Через некоторое время после начала сеанса отладки, в зависимости от реализации пакета отладок, узлы программы используются для создания соответствующих программ. Когда процесс запрашивается для своих программ, программы перечисляются, по одному для каждого узла программы.
 
-  Программа будет подключен к, интегрированной среды разработки должна упрощенных описание программы. Эти сведения можно получить из узла программы. Когда программа будет подключен к, интегрированная среда разработки отображает более подробные сведения, такие как список всех потоков в программе. Эта информация получается из самой программы.
+  Перед присоединением программы IDE требуется только легкое описание программы. Эта информация может быть получена из узла программы. Как только программа прикреплена к программе, IDE отображает более подробную информацию, например список всех потоков, работающих в программе. Эта информация получена из самой программы.
 
 ## <a name="see-also"></a>См. также
 - [Программы](../../extensibility/debugger/programs.md)
-- [Процессы](../../extensibility/debugger/processes.md)
-- [Отладка ядра](../../extensibility/debugger/debug-engine.md)
-- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)
+- [Процессов](../../extensibility/debugger/processes.md)
+- [Двигатель debug](../../extensibility/debugger/debug-engine.md)
+- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Документация Майкрософт
+title: IDebugCustomАтрибутике::IsCustomАтрибутОпределяето (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f4359d2360f1186404229397bbb00f916fbcea8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3b0be4f8afdfe5320bdf871586f8c0e8f648ae84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346079"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732628"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-Определяет, если определен заданного настраиваемого атрибута.
+Определяет, определен указанный пользовательский атрибут.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Параметры
 `pszCustomAttributeName`\
-[in] Имя настраиваемого атрибута.
+(в) Название пользовательского атрибута.
 
 ## <a name="return-value"></a>Возвращаемое значение
-Если определен настраиваемый атрибут, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.
+Если пользовательский атрибут определен, возвращается `S_OK`; в противном случае, возвращается `S_FALSE`.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugClassFieldSymbol** объекта, который предоставляет [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugClassFieldSymbol,** который предоставляет интерфейс [IDebugCustomAttribute'ry.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75589907"
 ---
 # <a name="the-visual-studio-image-library"></a>Библиотека изображений Visual Studio
@@ -29,9 +29,9 @@ ms.locfileid: "75589907"
 
 [Загрузка библиотеки изображений Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825)
 
-Библиотека изображений содержит элементы пяти категорий: общие элементы, действия, заметки, значки и объекты. Для типов общих элементов и значков в библиотеку также включены файлы сведений в формате PDF. Они содержат информацию о правильном использовании этих изображений в приложениях.
+Библиотека изображений состоит из пяти категорий: общие элементы, действия, заметки, значки и объекты. Для типов общих элементов и значков в библиотеку также включены файлы сведений в формате PDF. Они содержат информацию о правильном использовании этих изображений в приложениях.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Установка Visual Studio](../install/install-visual-studio.md)
 - [Изображения, растровые изображения и метафайлы](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

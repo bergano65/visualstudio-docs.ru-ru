@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Документация Майкрософт
+title: BP_ERROR_TYPE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319298"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738079"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
-Указывает тип ошибки точки останова.
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
+Определяет тип ошибки точки разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -62,47 +62,47 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Поля
 `BPET_NONE`\
-Указывает ошибки не точки останова.
+Указывает отсутствие ошибки точки разрыва.
 
 `BPET_TYPE_WARNING`\
-Идентифицирует ошибку стиле предупреждение точки останова.
+Укажите ошибку точки разрыва в стиле предупреждения.
 
 `BPET_TYPE_ERROR`\
-Указывает ошибку стиля ошибки точки останова.
+Укажите ошибку точки ошибки.
 
 `BPET_SEV_HIGH`\
-Идентифицирует ошибку точки останова с высокой важностью.
+Указывает на ошибку точки разрыва высокой степени тяжести.
 
 `BPET_SEV_GENERAL`\
-Идентифицирует ошибку серьезности средняя точка останова.
+Указывает ошибку точки разрыва средней степени тяжести.
 
 `BPET_SEV_LOW`\
-Идентифицирует ошибку низкая серьезность точки останова.
+Указывает ошибку низкой степени тяжести точки разрыва.
 
 `BPET_TYPE_MASK`\
-Идентифицирует ошибку стиле маска точки останова.
+Указывает ошибку точки разрыва в стиле маски.
 
 `BPET_SEV_MASK`\
-Идентифицирует ошибку серьезности маска style точки останова.
+Указывает ошибку точки разрыва в стиле серьезности-маски.
 
 `BPET_GENERAL_WARNING`\
-Идентифицирует ошибку общие предупреждение style точки останова.
+Укажите ошибку точки разрыва в стиле общего предупреждения.
 
 `BPET_GENERAL_ERROR`\
-Идентифицирует ошибку общие стиля ошибки точки останова.
+Укажите ошибку точки разрыва в стиле общего ошибки.
 
 `BPET_ALL`\
-Указывает типы ошибок все точки останова.
+Определяет все типы ошибок точки разрыва.
 
 ## <a name="remarks"></a>Примечания
-Эти значения могут объединяться с помощью побитовой `OR` и используются для `dwType` членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры. Переданный в качестве параметра для [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) метод.
+Эти значения могут быть объединены `OR` с бигэром и использоваться для `dwType` члена [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры. Прошел в качестве параметра для метода [EnumErrorBreakpoints.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
 
-Тип ошибки точки останова представляет собой тип и уровень серьезности. Это означает, что тип ошибки точки останова никогда не является только типа (например, `BPET_TYPE_ERROR`,) или уровнем серьезности (например, `BPET_SEV_GENERAL`) сама по себе. `BPET_GENERAL_WARNING` и `BPET_GENERAL_ERROR` предоставляют предварительно определенные значения для общих точек останова предупреждений и ошибок.
+Тип точки разрыва состоит из типа и серьезности. Это означает, что тип ошибки точки разрыва никогда не является просто типом (например, `BPET_TYPE_ERROR`,) или серьезностью (например,) `BPET_SEV_GENERAL`сам по себе. `BPET_GENERAL_WARNING`и `BPET_GENERAL_ERROR` предоставлять предопределенные значения для общих точек предупреждения и ошибок.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

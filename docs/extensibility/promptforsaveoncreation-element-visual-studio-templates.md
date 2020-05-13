@@ -1,5 +1,5 @@
 ---
-title: Элемент PromptForSaveOnCreation (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент PromptForSaveOnCreation Элемент (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802bcd357fe82434f7cf5aaf835b2841e6dc8dc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335991"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701782"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны Visual Studio)
 
-Указывает, запрашивается ли пользователь в место сохранения проекта в **новый проект** диалоговое окно при создании проекта. Если этот элемент имеет значение `true`, то пользователю предлагается для сохранения расположения. Если `false`, то они не запрашиваются (то есть создается временный проект).
+Определяет, предлагается ли пользователю сохранить местоположение проекта через диалоговую коробку **Нового проекта** при создании проекта. Если этот элемент `true`настроен на, то пользователю предлагается сохранить местоположение. Если, `false`то они не подсказаны (то есть, временный проект создается).
 
 ```xml
 \<VSTemplate>
@@ -41,10 +41,10 @@ ms.locfileid: "66335991"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -55,15 +55,15 @@ ms.locfileid: "66335991"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Этот текст должен быть либо `true` или `false`, `true` , указывающее, что пользователь будет запрашиваться для сохранения расположение при создании нового проекта.
+ Текст должен быть `true` `false`либо, либо , `true` указывая, что пользователю будет предложено сохранить местоположение при создании нового проекта.
 
 ## <a name="remarks"></a>Примечания
- `PromptForSaveOnCreation` — это необязательный элемент. Значение по умолчанию — `false`.
+ Параметр `PromptForSaveOnCreation` является необязательным элементом. Значение по умолчанию — `false`.
 
- Временный проект — это проекты, которые можно создавать и изменять без сохранения содержимого проекта на диске.
+ Временные проекты — это проекты, которые можно создавать и изменять без сохранения содержимого этого проекта на диске.
 
 ## <a name="example"></a>Пример
- В следующем примере значение `PromptForSaveOnCreation` равным `false`, которое указывает, что проект может создаваться как временный проект.
+ Следующий пример устанавливает `PromptForSaveOnCreation` значение `false`равного , который определяет, чтобы позволить проекту быть создан в качестве временного проекта.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +92,5 @@ ms.locfileid: "66335991"
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

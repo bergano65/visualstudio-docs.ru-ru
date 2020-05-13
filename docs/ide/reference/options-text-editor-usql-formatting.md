@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568273"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>"Параметры", "Текстовый редактор", U-SQL, "Форматирование"
@@ -49,6 +49,6 @@ ms.locfileid: "75568273"
 - при вставке кода в файл, когда выбран параметр **Автоматически форматировать при вставке**;
 - когда форматируемый блок вводится вручную.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)

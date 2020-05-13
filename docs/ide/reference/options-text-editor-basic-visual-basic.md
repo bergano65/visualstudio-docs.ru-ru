@@ -18,21 +18,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a069e17e615199e367683273adb85e771f1d9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584521"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431479"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>"Параметры", "Текстовый редактор", Basic (Visual Basic), "Дополнительно"
 Страница свойств **Только для VB** в папке **Basic** внутри папки **Текстовый редактор** диалогового окна **Параметры** (меню **Сервис**) содержит следующие свойства:
 
 ## <a name="analysis"></a>Анализ
 
-- Включить полный анализ решения
+- Область динамического анализа кода или фонового анализа
 
-   Включает анализ кода для всех, а не только открытых файлов в решении. Дополнительные сведения см. в разделе [Полный анализ решения](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+   Настройте область фонового анализа для управляемого кода. Дополнительные сведения см. в разделе [Практическое руководство. Настройте область динамического анализа кода для управляемого кода](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Директивы using
 

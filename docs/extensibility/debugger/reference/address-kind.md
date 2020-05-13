@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND | Документация Майкрософт
+title: ADDRESS_KIND Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ADDRESS_KIND enumeration
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f80eb44c4f24340d26ab0b7aa1b5290760da6c77
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1298df79bbe34b240d6e7b186f42e20b3d1a89de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327343"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738158"
 ---
-# <a name="addresskind"></a>ADDRESS_KIND
-Указывает типы адресов.
+# <a name="address_kind"></a>ADDRESS_KIND
+Определяет виды адресов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -58,39 +58,39 @@ public enum enum_ADDRESS_KIND {
 
 ## <a name="fields"></a>Поля
 `ADDRESS_KIND_NATIVE`\
-Собственный адрес, представленный [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) структуры.
+Родной адрес, представленный [структурой NATIVE_ADDRESS.](../../../extensibility/debugger/reference/native-address.md)
 
 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`\
-Неуправляемый адрес относительно `this` (`Me` в Visual Basic) указатель и представленный [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) структуры.
+Неуправляемый адрес по `this` `Me` отношению к указателю (в Visual Basic) и представленный [структурой UNMANAGED_ADDRESS_THIS_RELATIVE.](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)
 
 `ADDRESS_KIND_UNMANAGED_PHYSICAL`\
-Неуправляемый физический адрес, представленный [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) структуры.
+Неуправляемый физический адрес, представленный [структурой UNMANAGED_ADDRESS_PHYSICAL.](../../../extensibility/debugger/reference/unmanaged-address-physical.md)
 
 `ADDRESS_KIND_METHOD`\
-Метод класса, представленного [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) структуры.
+Метод класса, представленный [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) структурой.
 
 `ADDRESS_KIND_FIELD`\
-Поле класса, представленного [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) структуры.
+Поле класса, представленное [структурой METADATA_ADDRESS_FIELD.](../../../extensibility/debugger/reference/metadata-address-field.md)
 
 `ADDRESS_KIND_LOCAL`\
-Адрес для локальной переменной, а также представлен [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) структуры.
+Адрес предназначен для локальной переменной и представлен [структурой METADATA_ADDRESS_LOCAL.](../../../extensibility/debugger/reference/metadata-address-local.md)
 
 `ADDRESS_KIND_PARAM`\
-Параметр метода или функции, представленной [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) структуры.
+Параметр метода или функции, представленный [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) структурой.
 
 `ADDRESS_KIND_ARRAYELEM`\
-Элемент массива, представленный [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) структуры.
+Элемент массива, представленный [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) структурой.
 
 `ADDRESS_KIND_RETVAL`\
-Возвращаемое значение, представленное [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) структуры.
+Значение возврата, представленное [структурой METADATA_ADDRESS_RETVAL.](../../../extensibility/debugger/reference/metadata-address-retval.md)
 
 ## <a name="remarks"></a>Примечания
-[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) возвращает [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры, который содержит объединение множества возможных структур [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры. `dwKind` Поле `DEBUG_ADDRESS_UNION` структуры содержит `ADDRESS_KIND` значение и описывается, как интерпретировать поле объединения.
+Метод [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) возвращает [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуру, которая содержит объединение возможных структур, [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуру. Поле `dwKind` `DEBUG_ADDRESS_UNION` структуры имеет `ADDRESS_KIND` значение и описывает, как интерпретировать поле союза.
 
 ## <a name="requirements"></a>Требования
 Заголовок: sh.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

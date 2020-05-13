@@ -1,30 +1,30 @@
 ---
-title: Поле TASK_STATE_RAN_TO_COMPLETION | Документация Майкрософт
+title: поле TASK_STATE_RAN_TO_COMPLETION Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a7108a9f17ee308c781e652fddc2c0fc6277e1d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a898ff09ff45ae77da91e54ba22351e9f70978d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331440"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712624"
 ---
-# <a name="taskstaterantocompletion-field"></a>Поле TASK_STATE_RAN_TO_COMPLETION
+# <a name="task_state_ran_to_completion-field"></a>TASK_STATE_RAN_TO_COMPLETION поле
 Задача успешно завершена.
 
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+ Поскольку вы не можете получить доступ к этому внутреннему члену из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,7 +33,7 @@ ms.locfileid: "66331440"
 ```
 
 ## <a name="remarks"></a>Примечания
- Если [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) поле содержит это значение <xref:System.Threading.Tasks.Task.Status%2A> возвращает <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.
+ Если [поле m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) содержит это <xref:System.Threading.Tasks.Task.Status%2A> значение, имущество возвращается. <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>
 
 ## <a name="see-also"></a>См. также
 - [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

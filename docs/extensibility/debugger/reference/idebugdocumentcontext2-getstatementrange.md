@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange | Документация Майкрософт
+title: IDebugDocumentContext2:GetStatementRange Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetStatementRange
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ef4dae20a69fefcb67240e82999bdf2798d56e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335297"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731766"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-Возвращает оператор диапазона файла в контексте документа.
+Получает диапазон файлового заявления контекста документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,21 +43,21 @@ int GetStatementRange(
 
 ## <a name="parameters"></a>Параметры
 `pBegPosition`\
-[in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры, который заполняется положением. Установите этот аргумент со значением null, если эта информация не требуется.
+(в, вне) [Структура TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) заполненная исходным положением. Установите этот аргумент в нулевую величину, если эта информация не нужна.
 
 `pEndPosition`\
-[in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры, который заполняется конечную позицию. Установите этот аргумент со значением null, если эта информация не требуется.
+(в, вне) [Структура TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) заполненная окончанием положения. Установите этот аргумент в нулевую величину, если эта информация не нужна.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-Оператор диапазона является диапазон строк, использованных кода, к которому относится этот контекст документа.
+Диапазон оператора — это диапазон строк, которые внесли код, на который ссылается этот контекст документа.
 
-Чтобы получить диапазон исходного кода (в том числе комментарии) в контексте этого документа, вызовите [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) метод.
+Чтобы получить диапазон исходного кода (включая комментарии) в этом контексте документа, позвоните в метод [GetSourceRange.](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для простого `CDebugContext` объекта, который предоставляет [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс. В этом примере заполняет конечную позицию только в том случае, если начальное положение не имеет значение null.
+В следующем примере показано, как `CDebugContext` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Этот пример заполняет окончание позиции только в том случае, если начальное положение не является нулевая величина.
 
 ```cpp
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,

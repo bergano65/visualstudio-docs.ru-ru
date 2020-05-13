@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566791"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Синхронизация параметров Visual Studio на нескольких компьютерах
@@ -89,7 +89,7 @@ ms.locfileid: "75566791"
 
 Чтобы сбросить все параметры до значений по умолчанию, войдите в Visual Studio и выберите **Сервис** > **Импорт и экспорт параметров**, чтобы открыть **Мастер импорта и экспорта параметров**. Выберите **Сбросить все параметры** и следуйте оставшимся шагам в мастере.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Персонализация интегрированной среды разработки](../ide/personalizing-the-visual-studio-ide.md)
 - [Параметры среды](../ide/environment-settings.md)

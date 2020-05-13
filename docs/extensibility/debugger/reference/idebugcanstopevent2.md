@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2 | Документация Майкрософт
+title: IDebugCanStopEvent2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab364b426005c838072fabc1a3c7ed2f7d64ac6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337331"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734509"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-Этот интерфейс используется для запроса диспетчер отладки сеансов (SDM), следует ли остановить от текущей позиции кода.
+Этот интерфейс используется для того, чтобы спросить менеджера отладки сеанса (SDM), стоит ли останавливаться на текущем местоположении кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,31 +28,31 @@ ms.locfileid: "66337331"
 IDebugCanStopEvent2 : IUknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс для поддержки пошагового выполнения исходного кода. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс).
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс для поддержки шага через исходный код. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот `IDebugEvent2` интерфейс (SDM использует [queryInterface](/cpp/atl/queryinterface) для доступа к интерфейсу).
 
- Реализация этого интерфейса должны взаимодействовать вызов SDM [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) к модулю отладки. Например, это можно сделать с помощью сообщение, отправленное в обработку потока сообщений обработчика отладки или объект, реализующий этот интерфейс может содержать ссылку на модуль отладки и обратный вызов обработчика отладки с флагом, передаваемые в `IDebugCanStopEvent2::CanStop`.
+ Реализация этого интерфейса должна сообщить вызов SDM [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) к движку отладки. Например, это можно сделать с помощью сообщения, размещенного на потоке обработки сообщений отладки, или объект, реализующий этот `IDebugCanStopEvent2::CanStop`интерфейс, может содержать ссылку на движок отладки и перезвонить обратно в движок отладки с переданным флагом.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Этот метод каждый раз, когда будет предложено продолжить выполнение и DE DE пошаговое выполнение кода может отправлять DE. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемой SDM, если он присоединен к отлаживаемой программы.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ DE может отправлять этот метод каждый раз, когда DE просят продолжить выполнение и DE шагает через код. Это событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) поставляемой SDM при его подключении к отладке программы.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugCanStopEvent2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Возвращает причину для данного события.|
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Указывает, следует остановиться на расположение этого события (и отправить событие, описывающее причину остановки) или просто продолжить выполнение отлаживаемой программы.|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Получает контекст документа, который описывает расположение этого события.|
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Возвращает контекст кода, которое описывает расположение этого события.|
+|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Получает причину этого события.|
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Определяется, должна ли отладить программу останавливаться в месте расположения этого события (и отправлять событие, описывающие причину остановки) или просто продолжать выполнение.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Получает контекст документа, описывающий местоположение этого события.|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Получает контекст кода, описывающий местоположение этого события.|
 
 ## <a name="remarks"></a>Примечания
- DE отправляет этот интерфейс, если действия пользователя в функцию и DE находит сведения об отладке существует или существует отладочной информации, но также DE не знает, если исходный код можно отображать для этого расположения.
+ DE отправляет этот интерфейс, если пользователь вступает в функцию и DE не находит информацию об отладке там или информация об отладке существует, но DE не знает, если исходный код может быть отображено для этого местоположения.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

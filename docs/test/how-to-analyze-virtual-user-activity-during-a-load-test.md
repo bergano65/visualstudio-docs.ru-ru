@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dda1f35a63d3f7788faf9a94f16888c8323529c4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091721"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169408"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Практическое руководство. Анализ действий виртуальных пользователей при нагрузочном тестировании с помощью диаграммы активности виртуальных пользователей
 
@@ -57,7 +57,7 @@ ms.locfileid: "77091721"
 
    - **Network**
 
-   - **Время начала**
+   - **Start Time**
 
    - **Длительность**
 
@@ -103,7 +103,7 @@ ms.locfileid: "77091721"
 
      **Диаграмма активности виртуальных пользователей** соответствующим образом обновляется.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ действий виртуальных пользователей в представлении сведений анализатора тестовой нагрузки](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Пошаговое руководство: изоляция неисправностей с помощью диаграммы активности виртуальных пользователей](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Пошаговое руководство. Изоляция неисправностей с помощью диаграммы активности виртуальных пользователей](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

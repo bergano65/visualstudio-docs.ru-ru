@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114480"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>«Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»
@@ -23,7 +23,7 @@ ms.locfileid: "76114480"
 
 По умолчанию при запуске веб-проекта в Visual Studio используется Visual Studio Development Server. Дополнительные сведения см. в разделе [Веб-серверы в Visual Studio для веб-проектов ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 
-## <a name="settings"></a>Параметры
+## <a name="settings"></a>Настройки
 
 **Использовать 64-разрядную версию IIS Express для веб-сайтов и проектов**
 
@@ -33,7 +33,7 @@ ms.locfileid: "76114480"
 
 Если этот параметр включен, вы получите предупреждение при попытке запуска веб-приложения, которое не компилируется без ошибок.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Диалоговое окно "Параметры", "Проекты и решения"](projects-and-solutions-options-dialog-box.md)
 - [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](options-dialog-box-projects-and-solutions-web-projects.md)

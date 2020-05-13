@@ -1,24 +1,24 @@
 ---
-title: IDebugSettingsCallback2 | Документация Майкрософт
+title: IDebugSettingsCallback2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 859522ebdbe231146c73b25c5e4c92fba9809727
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2c85b54f92970dca5d712b827019300f850b03cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321944"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719939"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
-Модули для чтения метрик параметров отладки позволяет удаленно.
+Позволяет отладить двигатели для чтения параметров метрики удаленно.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,33 +26,33 @@ ms.locfileid: "66321944"
 IDebugSettingsCallback2D : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
-Этот интерфейс реализуется обратным вызовом события диспетчера сеанса отладки и потребляемых отладчиков. Он может также использоваться локально вместо .lib Dbgmetric [d].
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+Этот интерфейс реализован путем обратного вызова сеанса отладки и потребляется отладоть двигатели. Он также может быть использован на местном уровне, а не Dbgmetric.d.lib.
 
 ## <a name="methods"></a>Методы
 В следующей таблице показаны методы `IDebugSettingsCallback2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|Перечисляет вычислители выражений доступны, учитывая идентификаторы языка и поставщика.|
-|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|Возвращает локальный объект вычислителя выражения по заданному метрики.|
-|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|Извлекает значение, соответствующее заданной метрики средство оценки выражений.|
-|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|Извлекает метрики файла вычислителя выражений, заданной имя или метрики.|
-|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|Извлекает уникальный идентификатор для метрики вычислителя выражения, заданную ее именем.|
-|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|Извлекает строковое значение метрики вычислителя выражений, заданную ее именем.|
-|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|Извлекает значение метрики, заданную ее именем.|
-|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|Извлекает уникальный идентификатор метрики с заданным именем.|
-|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|Извлекает строковое значение метрики, заданную ее именем.|
+|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|Перечисляет доступные оценщики выражений с учетом идентификаторов языка и поставщиков.|
+|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|Извлекает локальный объект оценщика выражения с учетом метрики.|
+|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|Извлекает значение, которое соответствует указанной метрике оценщика выражения.|
+|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|Извлекает файл метрики оценщика выражения с учетом имени или метрики.|
+|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|Извлекает уникальный идентификатор для метрики оценки выражения, учитывая его имя.|
+|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|Извлекает строку значения метрики оценки выражения с учетом его имени.|
+|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|Получает значение метрики, учитывая ее имя.|
+|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|Извлекает уникальный идентификатор метрики, учитывая его имя.|
+|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|Извлекает строку значения метрики с учетом ее имени.|
 
 ## <a name="requirements"></a>Требования
 Заголовок: Msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Пример
-В следующем примере показано функцию, которая принимает **IDebugSettingsCallback2** объект в качестве параметра.
+В следующем примере показана функция, которая использует объект **IDebugSettingsCallback2** в качестве параметра.
 
 ```cpp
 HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)

@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE | Документация Майкрософт
+title: REFERENCE_COMPARE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d166917ec9770e3f8d1f41f3774676278b894724
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322348"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713721"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
-Указывает тип сравнения для ссылки.
+# <a name="reference_compare"></a>REFERENCE_COMPARE
+Определяет тип сравнения для ссылок.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,24 +46,24 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>Поля
  `REF_COMPARE_EQUAL`\
- Указывает, обозначающая неравенство.
+ Определяет равное сравнение.
 
  `REF_COMPARE_LESS_THAN`\
- Указывает менее-чем сравнения.
+ Указывает меньше, чем сравнение.
 
  `REF_COMPARE_GREATER_THAN`\
- Указывает, больше — сравнение.
+ Определяет больше, чем сравнение.
 
 ## <a name="remarks"></a>Примечания
- Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugreference2-compare.md) метод.
+ Прошел в качестве аргумента методу [Сравнения.](../../../extensibility/debugger/reference/idebugreference2-compare.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+- [Сравнить](../../../extensibility/debugger/reference/idebugreference2-compare.md)

@@ -1,5 +1,5 @@
 ---
-title: Средство оценки выражений | Документация Майкрософт
+title: Оценка экспрессии Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,38 +7,38 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f990225cbff539281122d21d4773f6611f694f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353771"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738692"
 ---
 # <a name="expression-evaluator"></a>Вычислитель выражений
-Вычислители выражений (EE) просмотрите синтаксис языка для синтаксического анализа и оценки переменных и выражений во время выполнения, что позволяет им быть просмотрен пользователем, когда IDE в режиме приостановки выполнения.
+Оценки экспрессии (EE) изучают синтаксис языка для разбора и оценки переменных и выражений во время выполнения, что позволяет просматривать их пользователю, когда IDE находится в режиме перерыва.
 
-## <a name="use-expression-evaluators"></a>Использовать вычислители выражений
- Выражения создаются с помощью [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) метода, как показано ниже:
+## <a name="use-expression-evaluators"></a>Использование оценщиков выражений
+ Выражения создаются с помощью метода [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) следующим образом:
 
-1. Модуль отладки (DE) реализует [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс.
+1. Отладка двигателя (DE) реализует интерфейс [IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 
-2. Возвращает размер пакета отладки `IDebugExpressionContext2` объекта из [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс, а затем вызывает `IDebugStackFrame2::ParseText` метод его, чтобы получить [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта.
+2. Пакет отладки `IDebugExpressionContext2` получает объект из интерфейса [IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) а затем вызывает `IDebugStackFrame2::ParseText` метод на нем, чтобы получить объект [IDebugExpression2.](../../extensibility/debugger/reference/idebugexpression2.md)
 
-3. Вызовы отладки пакета [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) метод или [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для получения значения выражения. `IDebugExpression2::EvaluateAsync` вызывается из окна команд и интерпретация. Все другие компоненты пользовательского интерфейса вызывать `IDebugExpression2::EvaluateSync`.
+3. Пакет отладки вызывает метод [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или метод [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для получения значения выражения. `IDebugExpression2::EvaluateAsync`вызывается из окна Командования/Немедленного. Все остальные компоненты `IDebugExpression2::EvaluateSync`uI вызываются .
 
-4. Результатом вычисления выражения является [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, который содержит имя, тип и значение результата вычисления выражения.
+4. Результатом оценки выражения является объект [IDebugProperty2,](../../extensibility/debugger/reference/idebugproperty2.md) содержащий имя, тип и значение результата оценки выражения.
 
-   Во время вычисления выражения EE требует данные из компонент поставщика символов. Поставщик символов предоставляет символические сведения, используемые для определения и понимания проанализированное выражение.
+   Во время оценки выражения EE требуется информация от компонента поставщика символов. Поставщик символов предоставляет символическую информацию, используемую для идентификации и понимания разогнанных выражений.
 
-   По завершении оценки асинхронное выражение асинхронного события отправляет DE через диспетчер отладки сеансов (SDM) для уведомления IDE, что вычисление выражения завершения. И, если результат вычисления возвращается из вызова `IDebugExpression2::EvaluateSync` метод.
+   Когда асинхронная оценка выражения завершается, асинхронное событие отправляется DE через диспетчера отладки сеанса (SDM), чтобы уведомить IDE о завершении оценки выражения. И, результат оценки затем возвращается из `IDebugExpression2::EvaluateSync` вызова в метод.
 
 ## <a name="implementation-notes"></a>Примечания по реализации
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отладчиков ожидать, что дает возможность общаться с средство оценки выражений, с помощью интерфейсов Common Language Runtime (CLR). Таким образом, вычислитель выражений, работающее с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчики должны поддерживать среды CLR (полный список всех интерфейсами отладки среды CLR можно найти в debugref.doc, входящий в состав из [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).
+ Двигатели [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки рассчитывают поговорить с оценщиком выражения с помощью интерфейсов Common Language Runtime (CLR). В результате, оценщик выражения, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] который работает с двигателями отладки, должен поддерживать CLR (полный список всех интерфейсов отладки CLR можно найти в debugref.doc, который является частью [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).
 
 ## <a name="see-also"></a>См. также
-- [Компоненты отладчика](../../extensibility/debugger/debugger-components.md)
+- [Компоненты debugger](../../extensibility/debugger/debugger-components.md)

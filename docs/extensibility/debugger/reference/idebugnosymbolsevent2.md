@@ -1,24 +1,24 @@
 ---
-title: IDebugNoSymbolsEvent2 | Документация Майкрософт
+title: IDebugNoСимволыВевен2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugNoSymbolsEvent2 interface
 ms.assetid: f6fb6388-47f6-4385-9ad5-95d62f9a7592
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dadd4547d5b0f691b454a98ba714abea9bf6f058
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9483c5a434ddfddb3f877111deabea9be6520b05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323718"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726711"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
-Сигналы [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчика пользовательского интерфейса, чтобы предупредить пользователя, что символы не удалось найти для запущенный исполняемый файл.
+Сигналы [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uI отладчика, чтобы предупредить пользователя, что символы не могут быть расположены для запущенного исполняемого.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,12 +26,12 @@ ms.locfileid: "66323718"
 IDebugNoSymbolsEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Реализуется отладчиков и потребляемых [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчика пользовательского интерфейса.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Реализовано путем отладки [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] двигателей и потребляется uI отладчика.
 
 ## <a name="requirements"></a>Требования
  Заголовок: Msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

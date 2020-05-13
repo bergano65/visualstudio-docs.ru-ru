@@ -1,7 +1,7 @@
----
+﻿---
 title: Устранение ошибок установки или обновления
 description: Иногда возникают проблемы. Если происходит сбой установки или обновления Visual Studio, эта страница может помочь решить проблему.
-ms.date: 09/13/2019
+ms.date: 03/23/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT 
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114999"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233111"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio
 
 > [!IMPORTANT]
-> Возможно, у вас возникли проблемы с установкой? Мы готовы помочь. Мы предлагаем для поддержки [**чат в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous) (только на английском языке).
+> Возможно, у вас возникли проблемы с установкой? Мы готовы помочь. Мы предлагаем для поддержки [**чат по вопросам установки**](https://visualstudio.microsoft.com/vs/support/#talktous) (только на английском языке).
 
 Это руководство содержит пошаговые инструкции, которые помогут устранить большинство проблем при установке.
 
@@ -51,7 +51,7 @@ ms.locfileid: "76114999"
 
 Попробуйте найти полученное сообщение об ошибке в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). Возможно, другие члены сообщества уже описали решение для вашей проблемы.
 
-### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением
+### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением
 
 Начальный загрузчик Visual Studio Installer представляет собой минимально необходимый исполняемый файл небольшого размера, который устанавливает остальные компоненты Visual Studio Installer. Если вы удалите файлы Visual Studio Installer и повторно запустите начальный загрузчик, это может решить некоторые проблемы, связанные с обновлением.
 
@@ -69,10 +69,10 @@ ms.locfileid: "76114999"
 
 ::: moniker range="vs-2019"
 
-1. Закройте Установщик Visual Studio.
-2. Удалите каталог Установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик Установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
-4. Снова попробуйте установить или обновить Visual Studio. Если запуск Установщика снова завершится ошибкой, переходите к следующему шагу.
+1. Закройте Visual Studio Installer.
+2. Удалите каталог Visual Studio Installer. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Запустите начальный загрузчик Visual Studio Installer. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно скачать начальный загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+4. Снова попробуйте установить или обновить Visual Studio. Если запуск Visual Studio Installer снова завершится ошибкой, переходите к следующему шагу.
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ ms.locfileid: "76114999"
 ::: moniker range="vs-2019"
 
 1. Соберите файлы журналов установки. Подробные сведения см. в разделе [Как получить журналы установки Visual Studio](#installation-logs).
-2. Откройте установщик Visual Studio и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
+2. Откройте Visual Studio Installer и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
 ![Чтобы открыть средство обратной связи, можно перейти к кнопе "Предоставление отзыва" с помощью клавиши табуляции](media/vs-2019/vs-installer-report-problem.png)
 3. Присвойте заголовок вашему отчету об ошибке и опишите все важные сведения. Нажмите кнопку **Далее**, чтобы перейти к разделу **Вложения**, а затем вложите созданный файл журнала (обычно этот файл находится по пути `%TEMP%\vslogs.zip`).
 4. Щелкните **Далее**, чтобы просмотреть свой отчет об ошибках, а затем нажмите кнопку **Отправить**.

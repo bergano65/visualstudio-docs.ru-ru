@@ -16,23 +16,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b56d3b36545ecfe97015fc301ce3ce72e781ba
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588373"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094547"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation - задача
+
 Преобразует входные данные XML с помощью XSLT или скомпилированного XSLT и выводит результат на устройство вывода или в выходной файл.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `XslTransformation` .
 
 |Параметр|Описание|
 |---------------|-----------------|
 |`OutputPaths`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Задает выходные файлы для преобразования XML.|
-|`Parameters`|Необязательный параметр `String`.<br /><br /> Задает параметры для входного документа XSLT.|
+|`Parameters`|Необязательный параметр `String`.<br /><br /> Задает параметры для входного документа XSLT.  Предоставьте необработанный код XML со всеми параметрами в формате `<Parameter Name="" Value="" Namespace="" />`.|
 |`XmlContent`|Необязательный параметр `String`.<br /><br /> Указывает входные данные XML в виде строки.|
 |`XmlInputPaths`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает входные файлы XML.|
 |`XslCompiledDllPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает скомпилированный XSLT.|
@@ -40,8 +42,22 @@ ms.locfileid: "75588373"
 |`XslInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает входной файл XSLT.|
 
 ## <a name="remarks"></a>Примечания
+
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
+## <a name="example"></a>Пример
+
+В приведенном ниже примере файл преобразования XSL *transform.xslt* используется для изменения XML-файла `$(XmlInputFileName)`. Преобразованный код XML записывается в `$(IntermediateOutputPath)output.xml`. Преобразование XSL принимает `$(Parameter1)` в качестве входного параметра.
+
+```xml
+    <XslTransformation XslInputPath="transform.xslt"
+                       XmlInputPaths="$(XmlInputFileName)"
+                       OutputPaths="$(IntermediateOutputPath)output.xml"
+                       Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
+```
+
 ## <a name="see-also"></a>См. также
+
+- [Параметры XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

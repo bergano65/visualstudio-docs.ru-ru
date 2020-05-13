@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592234"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Практическое руководство. Создание типа, допускающего значение NULL, в конструкторе классов
@@ -85,7 +85,7 @@ ms.locfileid: "75592234"
 
 5. Щелкните правой кнопкой мыши фигуру класса и выберите пункт **Сведения о классе**. Свойства нового типа можно просмотреть или изменить в окне **Сведения о классе**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Nullable%601>
 - [Типы, допускающие значения NULL](/dotnet/csharp/programming-guide/nullable-types/index)

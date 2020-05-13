@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_INFO | Документация Майкрософт
+title: PENDING_BP_STATE_INFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_INFO structure
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306f3f6ac5f12d2a26da958d50fae87c6e174355
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d66ecc63e133a75148f06b59b8f1ccf61fe2658d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349877"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714081"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
-Содержит сведения о состоянии точки останова, которая готова для привязки к расположение кода.
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
+Содержит информацию о состоянии точки разрыва, которая готова привязаться к местоположению кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ public struct PENDING_BP_STATE_INFO { 
 
 ## <a name="members"></a>Участники
  `state`\
- Значение из [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) перечисление, указывающее состояние ожидающая точка останова.
+ Значение из [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) перечисления, которое определяет состояние ожидающего разрыва.
 
  `flags`\
- Сочетание флагов из [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) перечисление, указывающее, виртуализируется ли точка останова.
+ Комбинация флагов из [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) перечисления, которая определяет, является ли точка разрыва виртуализированной.
 
 ## <a name="remarks"></a>Примечания
- Эта структура передается [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) метод, где он заполняется.
+ Эта структура передается методу [GetState,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) где она заполняется.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

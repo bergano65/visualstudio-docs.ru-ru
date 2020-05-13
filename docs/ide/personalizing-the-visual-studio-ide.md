@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585747"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
@@ -40,7 +40,7 @@ ms.locfileid: "75585747"
 
 Чтобы изменить цветовую тему на светлую, темную или синюю, введите **среда** в поле поиска и выберите **Среда > Общие**. В диалоговом окне **Параметры** измените значение настройки **Цветовая тема**.
 
-Чтобы изменить параметры раскраски в редакторе, введите **среда** в поле поиска и выберите **Среда > Шрифты и цвета**. См. практическое руководство по [ Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Чтобы изменить параметры раскраски в редакторе, введите **среда** в поле поиска и выберите **Среда > Шрифты и цвета**. См. раздел [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Регистр главного меню
 
@@ -48,7 +48,7 @@ ms.locfileid: "75585747"
 
 ### <a name="customize-menus-and-toolbars"></a>Настройка меню и панелей инструментов
 
-Сведения о добавлении или удалении элементов меню или панели инструментов см. в разделе [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Сведения о добавлении или удалении элементов меню или панели инструментов см. в статье [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
@@ -66,7 +66,7 @@ ms.locfileid: "75585747"
 
 Вы можете настроить меню **Сервис** и запускать внешние средства. Дополнительные сведения см. в разделе [Управление внешними инструментами](../ide/managing-external-tools.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры среды](environment-settings.md)
 - [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments | Microsoft Docs
+title: IDebugGenericFieldInstance::GetTypeАргументы Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetTypeArguments
 - IDebugGenericFieldInstance::GetTypeArguments
 ms.assetid: 6e7e0f95-181a-4805-adb3-c2407de0ab93
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7fbd896e2798ed42c382d9975ec70a7e8aebbd7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351234"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728177"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-Получает аргументы параметра типа для данного экземпляра.
+Извлекает аргументы параметра типа для данного экземпляра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,16 +44,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Параметры
 `cArgs`\
-[in] Число параметров типа.
+(в) Количество параметров типа.
 
 `ppArgs`\
-[out] Возвращает массив параметров типа.
+(ваут) Возвращает массив параметров типа.
 
 `pcArgs`\
-[in, out] Число элементов в `ppArgs` массива.
+(в, вне) Количество участников `ppArgs` в массиве.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

@@ -1,27 +1,27 @@
 ---
-title: GUID_ARRAY | Документация Майкрософт
+title: GUID_ARRAY Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d53413ee56700fe39470d3bbc3229f4b8b668373
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317529"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736643"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
-Описывает массив уникальных идентификаторов для доступных отладчиков.
+# <a name="guid_array"></a>GUID_ARRAY
+Описывает массив уникальных идентификаторов для доступных отладок двигателей.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ public struct GUID_ARRAY
 
 ## <a name="members"></a>Участники
 `dwCount`\
-Число уникальных идентификаторов в массиве.
+Количество уникальных идентификаторов в массиве.
 
 `Members`\
 Массив, содержащий уникальные идентификаторы.
 
 ## <a name="remarks"></a>Примечания
-Эта структура возвращается [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) метод.
+Эта структура возвращается методом [GetEngineFilter.](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
 
 ## <a name="requirements"></a>Требования
 Заголовок: Msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

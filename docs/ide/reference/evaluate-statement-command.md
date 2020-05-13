@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595661"
 ---
 # <a name="evaluate-statement-command"></a>Команда Evaluate Statement
@@ -34,7 +34,7 @@ ms.locfileid: "75595661"
 
 `text`
 
-Обязательный. Вычисляемый оператор.
+Обязательный элемент. Вычисляемый оператор.
 
 ## <a name="example"></a>Пример
 
@@ -42,10 +42,10 @@ ms.locfileid: "75595661"
 >Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команда "Печать"](../../ide/reference/print-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

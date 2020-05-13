@@ -1,29 +1,29 @@
 ---
-title: О расширения имен файлов | Документация Майкрософт
+title: О расширении имен файлов (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313721"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740348"
 ---
-# <a name="about-file-name-extensions"></a>О расширения имен файлов
-При регистрации расширением файла пакета VSPackage, связывается с версией [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Это важно Если более одной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] устанавливается на компьютере.
+# <a name="about-file-name-extensions"></a>О расширении имен файлов
+При регистрации расширения файла VSPackage вы связываете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]его с версией . Это важно, если на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] компьютере установлена несколько версий.
 
- Расширения файлов для пакетов VSPackage, зарегистрированные в разделе **HKEY_CLASSES_ROOT** ключа со значением по умолчанию, который указывает на связанный программный идентификатор (ProgID).
+ Расширения файлов для VSPackages регистрируются под **HKEY_CLASSES_ROOT** ключом со значением по умолчанию, которое указывает на связанный программный идентификатор (ProgID).
 
- В следующем примере показано сведения о регистрации для *.vcproj* расширение файла:
+ В следующем примере показана регистрационная информация для расширения файла *.vcproj:*
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- Файлы, связанные с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должен иметь ProgID с версиями, такие как `VisualStudio.vcproj.8.0`. С версиями ProgID позволяет side-by-side установок продукта, чтобы поддерживать ассоциации расширений файлов для версий продукта. ProgID конкретной версии также можно использовать стандартные действия, например открытым, редактирование и т. д., не заботиться о перезаписи или перезаписи другими приложениями или версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Файлы, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] связанные с должны иметь версию ProgID, такие как `VisualStudio.vcproj.8.0`. Версия ProgID позволяет бок о бок установки продукта для поддержания ассоциаций расширения файлов среди версий продукта. Специфическая версия ProgID также позволяет использовать стандартные глаголы, такие как открытые, отодевные и так далее, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]без заботы о перезаписи или перезаписи другими приложениями или версиями .
 
- В некоторых случаях идентификатор ProgID, связанный с расширением файла не должен изменяться. Например, идентификатор ProgID для *.htm* расширение файла (progid = htmlfile) является жестко в нескольких местах в операционной системе, которая и широко используется в связи с *.htm* и *.html* файлов.
+ В некоторых случаях ProgID, связанный с расширением файла, не должен быть изменен. Например, ProgID для расширения файла *.htm* (progid - htmlfile) жестко кодируется в ряде мест в операционной системе, и широко известен и используется в сотрудничестве с *файлами .htm* и *.html.*
 
 ## <a name="see-also"></a>См. также
-- [Регистрация расширений имен файлов для развертываний side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [Укажите обработчиков файлов для расширений имен файлов](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+- [Регистрация расширений имени файла для бок о бок развертывания](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [Указать обработчики файлов для расширения имен файлов](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

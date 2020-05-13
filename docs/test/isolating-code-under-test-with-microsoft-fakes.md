@@ -11,10 +11,10 @@ dev_langs:
 - VB
 - CSharp
 ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566908"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
@@ -85,7 +85,7 @@ Fakes предлагает два варианта на выбор:
 
     2. Выберите ссылку на сборку, в которой определен интерфейс (например, IStockFeed). В контекстном меню данной ссылки щелкните **Добавить сборку имитаций**.
 
-    3. Выполните повторную сборку решения.
+    3. Повторно создайте решение.
 
 3. В тестах создайте экземпляры заглушки и предоставьте код для ее методов.
 
@@ -244,7 +244,7 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 
 Можно также создать оболочки для отдельных экземпляров, конструкторов и свойств. Дополнительные сведения см. в статье [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 [Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

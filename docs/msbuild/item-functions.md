@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573798"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586883"
 ---
 # <a name="item-functions"></a>Функции элементов
-Начиная с MSBuild 4.0, код в задачах и целевых объектах может вызывать функции элементов для получения сведений об элементах в проекте. Эти функции упрощают получение элементов Distinct() и выполняются быстрее, чем перебор элементов.
+
+Код в задачах и целевых объектах может вызывать функции элементов для получения сведений об элементах в проекте (MSBuild версии 4.0 или более поздних). Эти функции упрощают получение элементов distinct и выполняются быстрее, чем перебор элементов.
 
 ## <a name="string-item-functions"></a>Строковые функции элементов
+
 Строковые методы и свойства в .NET Framework можно использовать для обработки любого значения элемента. Для методов <xref:System.String> укажите имя метода. Для свойств <xref:System.String> укажите имя свойства после "get_".
 
 В элементах, имеющих несколько строк, строковый метод или строковое свойство выполняются для каждой строки.
@@ -49,6 +51,7 @@ ms.locfileid: "75573798"
 ```
 
 ## <a name="intrinsic-item-functions"></a>Встроенные функции элементов
+
 В следующей таблице перечислены доступные для элементов встроенные функции.
 
 |Функция|Пример|Описание|
@@ -99,5 +102,10 @@ ms.locfileid: "75573798"
   -->
 ```
 
+## <a name="msbuild-condition-functions"></a>Функции условий MSBuild
+
+Функции `Exists` и `HasTrailingSlash` не являются функциями элементов. Они доступны для использования с атрибутом `Condition`. См. [Условия MSBuild](msbuild-conditions.md).
+
 ## <a name="see-also"></a>См. также
+
 - [Элементы](../msbuild/msbuild-items.md)

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8bb4b2860d40828a96e25ec6e6c73d947dd60c0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567662"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
@@ -41,29 +41,29 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Обязательный. Полный путь и имя для файла решения.
+  Обязательный элемент. Полный путь и имя для файла решения.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Обязательный. [Создает](build-devenv-exe.md), [очищает](clean-devenv-exe.md), [развертывает](deploy-devenv-exe.md) или [повторно создает](rebuild-devenv-exe.md) проект.
+  Обязательный элемент. [Создает](build-devenv-exe.md), [очищает](clean-devenv-exe.md), [развертывает](deploy-devenv-exe.md) или [повторно создает](rebuild-devenv-exe.md) проект.
 
 - *SolnConfigName*
 
-  Необязательный элемент. Имя конфигурации решения (например, `Debug` или `Release`) для применения в решении, указанном в *SolutionName*. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`). Если этот аргумент не определен или является пустой строкой (`""`), используется действующая конфигурация решения.
+  Необязательный параметр. Имя конфигурации решения (например, `Debug` или `Release`) для применения в решении, указанном в *SolutionName*. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`). Если этот аргумент не определен или является пустой строкой (`""`), используется действующая конфигурация решения.
 
 - `/Project` *ProjName*
 
-  Необязательный элемент. Путь и имя для файла проекта в решении. Можно ввести отображаемое имя проекта или относительный путь из папки *SolutionName* к файлу проекта. Можно также ввести полный путь и имя файла проекта.
+  Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести отображаемое имя проекта или относительный путь из папки *SolutionName* к файлу проекта. Можно также ввести полный путь и имя файла проекта.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Необязательный элемент. Имя конфигурации сборки проекта (например, `Debug` или `Release`) для применения к указанному проекту `/Project`. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`).
+  Необязательный параметр. Имя конфигурации сборки проекта (например, `Debug` или `Release`) для применения к указанному проекту `/Project`. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`).
 
 - `/Out` *OutputFilename*
 
-  Необязательный элемент. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
+  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Параметры `/ProjectConfig` и `/Project` следует использовать вместе в составе команды `/Build`, /`Clean`, `/Deploy` или `/Rebuild`.
 
@@ -79,7 +79,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)

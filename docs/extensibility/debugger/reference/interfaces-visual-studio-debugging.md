@@ -1,42 +1,42 @@
 ---
-title: Интерфейсы (Отладка Visual Studio) | Документация Майкрософт
+title: Интерфейсы (Visual Studio Debugging) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0359ffc4ce634a6bf22759265c92ea7c299cc30
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350230"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715084"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Интерфейсы (отладка Visual Studio)
-Методы в алфавитном порядке отображаются в категории каждого интерфейса в таблице, содержимого и на странице интерфейс в порядке таблицы Vtable.
+Методы перечислены в алфавитном порядке под каждым интерфейсом в таблице содержимого и на странице интерфейса в порядке Vtable.
 
 ## <a name="in-this-section"></a>В этом разделе
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 
- Описываются интерфейсы, используемые в модуль отладки.
+ Описывает интерфейсы, используемые в движке отладки.
 
-- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Интерфейсы вычисления выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 
- Описываются интерфейсы, вычисление выражений в стеке вызовов в режиме приостановки выполнения.
+ Описывает интерфейсы, оценивающие выражения в стеке вызовов во время перерыва.
 
 - [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 
- Описывает интерфейсы, реализуемые поставщика символов для сопоставления типов для идентификаторов.
+ Описывает интерфейсы, которые поставщик символов реализует для ассоциации типов с идентификаторами.
 
 ## <a name="related-sections"></a>Связанные разделы
-- [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+- [Справка по API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
- Содержит документацию по интерфейсам, перечислители и структур [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладки пакета SDK.
+ Содержит документацию для интерфейсов, регистраторов и [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] структур SDK debugging.
 
 ## <a name="see-also"></a>См. также
-- [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+- [Справка по API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

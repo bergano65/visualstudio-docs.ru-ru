@@ -3,15 +3,16 @@ title: Управление подписками Visual Studio, предоста
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Как назначать подписки Visual Studio конечным пользователям для партнеров MPN.
-ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
-ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.openlocfilehash: aecc9892b60951f869c6a6bc721b746d2c013db5
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492907"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232427"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -26,7 +27,7 @@ ms.locfileid: "75492907"
 4. Выберите первое, второе или третье **контактное лицо по техническим вопросам** и **сохраните** данные.
 5. Выберите **Требования**.
 6. Выберите **Привилегии**.
-7. Выберите **Подписки Visual Studio** (Примечание. Ожидается обновление подписки Visual Studio)
+7. Выберите **подписки Visual Studio**. (Примечание. Ожидается обновление подписок Visual Studio).
 8. Выберите нужное **лицо**.
 9. Щелкните **Отправить**.
 10. Выбранное лицо получит сообщение по электронной почте.
@@ -59,7 +60,13 @@ ms.locfileid: "75492907"
   > Роль контактного лица по техническим вопросам является обязательной для подписок Visual Studio.
   - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="see-also"></a>См. также раздел
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Дальнейшие действия
 Подписчики и администраторы программ могут обратиться напрямую в службу поддержки Microsoft Partner Network, чтобы устранить любые проблемы, в том числе с доступом к подпискам. Посетите страницу [поддержки для партнеров](https://partner.microsoft.com/support), чтобы получить помощь. (Для входа нужно ввести учетные данные MPN.)
 
-https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.;_ylu=X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV=2/RE=1577405628/RO=10/RU=https%3a%2f%2fassetsprod.microsoft.com%2fmpn%2fProgram-Administrator-Guide-to-Software-and-Online-Services-Benefits/RK=2/RS=xsA5OL.9t6QqJlvFYZ3OPnZkC_k-
+

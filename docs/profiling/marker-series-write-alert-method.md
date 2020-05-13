@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 635f767f97ea3d237aeff843e99735eccae31efc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62831388"
 ---
-# <a name="markerserieswritealert-method"></a>Метод marker_series::write_alert
+# <a name="marker_serieswrite_alert-method"></a>Метод marker_series::write_alert
 Записывает оповещение в файл трассировки визуализатора параллелизма.
 
 ## <a name="syntax"></a>Синтаксис

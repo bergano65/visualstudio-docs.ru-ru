@@ -33,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75568416"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472821"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Диалоговое окно "Параметры": Текстовый редактор \> Общие
 
@@ -93,6 +93,10 @@ ms.locfileid: "75568416"
 ### <a name="show-structure-guide-lines"></a>Показать направляющие структуры
 
 Если выбрать этот параметр, в редакторе отображаются вертикальные линии в соответствии со структурированными блоками кода. Это позволяет легко определять отдельные блоки кода.
+
+### <a name="show-file-health-indicator"></a>Отображение индикатора работоспособности файлов
+
+Если этот флажок установлен, в левом нижнем углу редактора будут отображаться строки состояния индикатора работоспособности файлов (ошибки, предупреждения) с параметрами очистки кода.
 
 ## <a name="see-also"></a>См. также
 

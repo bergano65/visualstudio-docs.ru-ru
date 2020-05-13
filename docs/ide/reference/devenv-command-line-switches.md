@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595713"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255563"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для Devenv
 
@@ -72,6 +72,7 @@ Devenv позволяет устанавливать различные пара
 |[/LCID или /L](lcid-devenv-exe.md)|Задает язык по умолчанию для среды IDE. Если указанный язык не включен в пакет установки Visual Studio, этот параметр игнорируется.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Запускает Visual Studio и записывает все действия в файл журнала.<br /><br /> `devenv /log mylogfile.xml`|
 |[/NoSplash](nosplash-devenv-exe.md)|Открывает интегрированную среду разработки без отображения экрана-заставки.<br /><br /> `devenv /nosplash File1 File2`|
+|[/ResetSettings](resetsettings-devenv-exe.md)|Восстанавливает параметры Visual Studio по умолчанию. При необходимости выполняет сброс параметров в соответствии с указанным файлом `.vssettings`.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Run или /R](run-devenv-exe.md)|Компилирует и запускает указанное решение.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Компилирует и выполняет указанное решение, свертывая окно IDE при выполнении решения и закрывая IDE после завершения выполнения.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Запускает Visual Studio в безопасном режиме. Этот параметр загружает только среду и службы по умолчанию, а также прилагаемые версии сторонних пакетов.<br /><br /> У этого параметра нет аргументов.|
@@ -89,7 +90,6 @@ Devenv позволяет устанавливать различные пара
 |[/Project](project-devenv-exe.md)|Проект, который требуется собрать, очистить или развернуть. Этот параметр можно использовать, только если был указан параметр `/Build`, `/Rebuild`, `/Clean` или `/Deploy`.<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|Задает конфигурацию проекта, которую требуется собрать или развернуть. Этот параметр можно использовать, только если был указан параметр `/Project`.<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
 |[/Rebuild](rebuild-devenv-exe.md)|Выполняет очистку, а затем сборку указанного решения или проекта согласно конфигурации заданного решения.<br /><br /> `devenv mysln.sln /rebuild`|
-|[/ResetSettings](resetsettings-devenv-exe.md)|Восстанавливает параметры Visual Studio по умолчанию. При необходимости выполняет сброс параметров в соответствии с указанным файлом `.vssettings`.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|Обновляет указанный файл решения и все его файлы проектов либо указанный файл проекта до текущих форматов Visual Studio для этих файлов.<br /><br /> `devenv mysln.sln /upgrade`|
 
 ## <a name="see-also"></a>См. также

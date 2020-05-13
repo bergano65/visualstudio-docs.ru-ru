@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Документация Майкрософт
+title: IDebugDisassemblyStream2::Читать Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c74ed1de1d12cc7384ee8f7d27dad910c7b9c9d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310356"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732092"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Считывает инструкциям, начиная с текущей позиции в потоке Дизассемблированный код.
+Читает инструкции, начиная с текущего положения в потоке разборки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,26 +47,26 @@ int Read( 
 
 ## <a name="parameters"></a>Параметры
 `dwInstructions`\
-[in] Количество инструкций, чтобы дизассемблировать. Этот параметр также имеет максимальную длину `prgDisassembly` массива.
+(в) Количество инструкций по разбору. Это значение также является максимальной длиной массива. `prgDisassembly`
 
 `dwFields`\
-[in] Сочетание флагов из [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) перечисления, которые указывают, какие поля `prgDisassembly` , для заполнения.
+(в) Комбинация флагов из [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) перечисления, которые `prgDisassembly` указывают, какие поля должны быть заполнены.
 
 `pdwInstructionsRead`\
-[out] Возвращает число фактически дисассемблированный инструкции.
+(ваут) Возвращает количество инструкций, фактически разобранных.
 
 `prgDisassembly`\
-[out] Массив [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры, заполняется Дизассемблированный код, одну структуру каждого дизассемблированное инструкции. Длина этого массива определяется `dwInstructions` параметра.
+(ваут) Массив структур [DisassemblyData,](../../../extensibility/debugger/reference/disassemblydata.md) заполненный разобранным кодом, по одной структуре на разобранную инструкцию. Длина этого массива определяется `dwInstructions` параметром.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Максимальное количество инструкций, доступных в текущей области можно получить, вызвав [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) метод.
+ Максимальное количество инструкций, доступных в текущей области, можно получить, позвонив в метод [GetSize.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
 
- Можно изменить текущую позицию, где следующей инструкции считывается из путем вызова [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) метод.
+ Текущее положение, из которой читается следующая инструкция, может быть изменено, позвонив в метод [Seek.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 
- `DSF_OPERANDS_SYMBOLS` Можно добавить флаг `DSF_OPERANDS` флаг в `dwFields` параметр, чтобы указать, что при разборке инструкции следует использовать имена символов.
+ Флаг `DSF_OPERANDS_SYMBOLS` может быть добавлен `DSF_OPERANDS` к `dwFields` флагу в параметре, чтобы указать, что имена символов должны использоваться при демонтаже инструкций.
 
 ## <a name="see-also"></a>См. также
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

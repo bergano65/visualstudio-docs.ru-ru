@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918652"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880316"
 ---
 # <a name="customize-code-coverage-analysis"></a>Настройка анализа объема протестированного кода
 
@@ -51,7 +51,7 @@ ms.locfileid: "75918652"
 
 ::: moniker range="vs-2017"
 
-Чтобы включить или отключить пользовательские параметры, выберите файл или отмените его выбор в меню **Тест**  **>Параметры тестирования**.
+Чтобы включить или отключить пользовательские параметры, выберите файл или отмените его выбор в меню **Тест** > **Параметры тестирования**.
 
 ![Меню параметров тестирования с пользовательским файлом параметров в Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -86,7 +86,7 @@ ms.locfileid: "75918652"
 ```xml
 <ModulePaths>
   <Exclude>
-   <ModulePath>Fabrikam.Math.UnitTest.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.UnitTest.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Exclude>
 </ModulePaths>
@@ -97,7 +97,7 @@ ms.locfileid: "75918652"
 ```xml
 <ModulePaths>
   <Include>
-   <ModulePath>Fabrikam.Math.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Include>
 </ModulePaths>
@@ -105,22 +105,22 @@ ms.locfileid: "75918652"
 
 В приведенной ниже таблице показаны различные способы сопоставления сборок и членов для включения в анализ объема протестированного кода или исключения из него.
 
-| Элемент XML | Соответствие |
+| XML-элемент | Соответствие |
 | - | - |
 | ModulePath | Сопоставление со сборками, указанными по имени или пути к файлу. |
 | CompanyName | Сопоставление сборок по атрибуту **Company**. |
 | PublicKeyToken | Сопоставление подписанных сборок по токену открытого ключа. |
-| Source | Сопоставление элементов по имени пути к файлу исходного кода, в котором они определены. |
-| Атрибут | Сопоставление элементов, у которых имеется указанный атрибут. Укажите полное имя атрибута, например `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Если исключить атрибут <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, код, использующий языковые функции, такие как `async`, `await`, `yield return`, и автоматические реализуемые свойства, исключается из анализа объема протестированного кода. Чтобы исключить созданный код, исключите только атрибут <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
-| Функция | Сопоставление процедур, функций или методов по полному имени, включая список параметров. Возможно также сопоставление с частью имени с помощью [регулярного выражения](#regular-expressions).<br/><br/>Примеры<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
+| Источник | Сопоставление элементов по имени пути к файлу исходного кода, в котором они определены. |
+| attribute | Сопоставление элементов, у которых имеется указанный атрибут. Укажите полное имя атрибута, например `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Если исключить атрибут <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, код, использующий языковые функции, такие как `async`, `await`, `yield return`, и автоматические реализуемые свойства, исключается из анализа объема протестированного кода. Чтобы исключить созданный код, исключите только атрибут <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
+| Компонент | Сопоставление процедур, функций или методов по полному имени, включая список параметров. Возможно также сопоставление с частью имени с помощью [регулярного выражения](#regular-expressions).<br/><br/>Примеры:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>Регулярные выражения
 
-Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Все соответствия не учитывают регистр. Ниже приведено несколько примеров.
+Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Все соответствия не учитывают регистр. Некоторые примеры.
 
 - **.\*** соответствует строке любых символов
 
-- **\\.** соответствует точке (".")
+- **\\.** ; соответствует точке (".")
 
 - **\\(   \\)** соответствует круглым скобкам "( )"
 
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка модульных тестов с помощью файла параметров запуска](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

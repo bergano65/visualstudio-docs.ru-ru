@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5348bb82d54f2914a5b8ee26ada0f924f592aab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595739"
 ---
-# <a name="convert-dialog-box"></a>Диалоговое окно "Преобразование"
+# <a name="convert-dialog-box"></a>Преобразование - диалоговое окно
 
 Диалоговое окно **Преобразование** использовалось в предыдущих версиях Visual Studio диалоговое окно и сейчас считается нерекомендуемым.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перенос, миграция и обновление проектов Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

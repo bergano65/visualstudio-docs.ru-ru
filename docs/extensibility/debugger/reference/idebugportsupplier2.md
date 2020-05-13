@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2 | Документация Майкрософт
+title: IDebugPortSupplier2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947a311cb1e83eaa131730725aeb7938e5615f0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340053"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724471"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
-Этот интерфейс предоставляет порты, чтобы диспетчер отладки сеансов (SDM).
+Этот интерфейс поставляет порты менеджеру отладки сеанса (SDM).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,11 +28,11 @@ ms.locfileid: "66340053"
 IDebugPortSupplier2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
-Пользовательский порт поставщик реализует этот интерфейс для представления поставщика порта.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+Поставщик пользовательских портов реализует этот интерфейс, чтобы представлять поставщика порта.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
-Вызов `CoCreateInstance` с поставщика порта `GUID` возвращает этот интерфейс (это типичный способ получения этого интерфейса). Пример:
+## <a name="notes-for-callers"></a>Заметки для абонентов
+Звонок `CoCreateInstance` с поставщиком порта `GUID` возвращает этот интерфейс (это типичный способ получить этот интерфейс). Пример:
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -49,34 +49,34 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }
 ```
 
-Вызов [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) возвращает этот интерфейс, представляющий текущий поставщик порта, используемый [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+Звонок [в GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) возвращает этот интерфейс, представляющий текущего поставщика порта, используемого [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
-- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) возвращает этот интерфейс, представляющий поставщика порта, который создан порт.
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) возвращает этот интерфейс, представляя поставщика порта, который создал порт.
 
-- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) представляет список `IDebugPortSupplier` интерфейсы ( `IEnumDebugPortSuppliers` интерфейс получается из [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), представляющий всех поставщиков порт зарегистрировано [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) представляет собой `IDebugPortSupplier` список `IEnumDebugPortSuppliers` интерфейсов (интерфейс получен от [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), представляющих [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]всех портовых поставщиков, зарегистрированных в).
 
-Модуль отладки обычно не взаимодействует с поставщика порта.
+Двигатель отладки обычно не взаимодействует с поставщиком порта.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
 В следующей таблице показаны методы `IDebugPortSupplier2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Получает имя поставщика порта.|
-|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Возвращает идентификатор поставщика порта.|
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Возвращает порт из поставщика порта.|
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Перечисляет порты, которые уже существуют.|
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Получает название поставщика порта.|
+|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Получает идентификатор поставщика порта.|
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Получает порт от поставщика порта.|
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Перечисляет уже существующие порты.|
 |[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Проверяет, что поставщик порта поддерживает добавление новых портов.|
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Добавляет порт.|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Удаляет порт.|
 
 ## <a name="remarks"></a>Примечания
-Поставщика порта можно идентифицировать себя имя и идентификатор, добавить и удалить порты и перечислить все порты, которые предоставляет поставщик порта.
+Поставщик порта может идентифицировать себя по имени и идентификатору, добавлять и удалять порты и перечислять все порты, которые предоставляет поставщик порта.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

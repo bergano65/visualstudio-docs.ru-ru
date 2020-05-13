@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Документация Майкрософт
+title: IDebugSymbolProvider::GetNextАдрес Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347531"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719194"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Возвращает адрес отладки, следующий за адресом заданной отладочной в методе.
+Получает адрес отладки, который следует за заданным адресом отладки в методе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-[in] Указанного адреса отладки.
+(в) Учитывая адрес отладки.
 
 `fStatementOnly`\
-[in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
+(в) Если true, ограничивает адреса отладки одним утверждением.
 
 `ppAddress`\
-[out] Возвращает следующий адрес отладки.
+(ваут) Возвращает следующий адрес отладки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает допустимый `HRESULT`, обычно S_OK.
+ Возвращает действительный, `HRESULT`как правило, S_OK.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Документация Майкрософт
+title: EXCEPTION_STATE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337692"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736958"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
-Указывает состояние исключения.
+# <a name="exception_state"></a>EXCEPTION_STATE
+Определяет состояние исключения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -78,61 +78,61 @@ public enum enum_EXCEPTION_STATE {
 
 ## <a name="fields"></a>Поля
 `EXCEPTION_NONE`\
-Не останавливайте на исключении.
+Не останавливайтесь на исключении.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Останавливается на первой обработки исключения. При описании события исключения, этот флаг указывает, что исключение это событие исключения первого шанса.
+Остановите при первом запуске исключения. При описании события исключения этот флаг указывает, что событие исключения является событием исключения первого шанса.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-На второй срабатывание исключения останавливается. При описании события исключения, указывает, что события исключения является событие второй возможности захвата исключений.
+Остановка на второй стрельбе исключения. При описании события исключения указывается, что событие исключения является событием исключения второй случайности.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Останавливается на первой обработки исключения режима пользователя. При описании события исключения, указывает, что события исключения является событием исключения первого шанса пользователя.
+Остановите при первом запуске исключения пользовательского режима. При описании события исключения указывается, что событие исключения является событием исключения пользователя первого шанса.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Остановитесь, когда не перехватывается исключение режима пользователя. При описании события исключения, указывает, что события исключения является событие исключения режима пользователя неперехваченных.
+Остановка, когда исключение пользовательского режима не поймано. При описании события исключения указывается, что событие исключения является непойманным событием исключения пользовательского режима.
 
 `EXCEPTION_STOP_ALL`\
-Остановите по любому исключению. Не используется при описании события исключения.
+Остановитесь на любом исключении. Не используется при описании события исключения.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-При описании события исключения, указывает, что исключение не может быть продолжено из.
+При описании события исключения указывается, что исключение не может быть продолжено.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Указывает, что исключение имеет код, который поддерживает его. Используемые при отображении исключения
+Означает, что в исключении есть код, поддерживающий его. Используется при отображении исключения
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Указывает, что код исключения должно отображаться в шестнадцатеричном формате. Для отображения исключение.
+Означает, что код исключения должен отображаться в гексадецимальном. Используется при отображении исключения.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Указывает, что код исключения поддерживает JustMyCode. Для отображения исключение.
+Указывается, что код исключения поддерживает JustMyCode. Используется при отображении исключения.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Указывает, что отладчик управляемого кода должен обрабатывать исключения. В противном случае набор, по умолчанию отладчик обрабатывает исключения. Эти данные передаются [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метода и не используется в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры.
+Указано, что управляемый отладчик кода должен обрабатывать исключения. Если не установить, отладчик по умолчанию обрабатывает исключения. Это передается методу [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) и не используется в [структуре EXCEPTION_INFO.](../../../extensibility/debugger/reference/exception-info.md)
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗОВАТЬ.
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗОВАТЬ.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗОВАТЬ.
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗОВАТЬ.
 
 ## <a name="remarks"></a>Примечания
-Используется в качестве `dwState` членом [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, в которых указывается состояние исключения и что можно сделать о нем.
+Используется в `dwState` качестве члена [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры для указания состояния исключения и что можно с делать с ним.
 
-Эти значения также передаются [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метод для задания состояния всех исключений.
+Эти значения также передаются методу [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) для настройки состояния всех исключений.
 
-Эти флаги могут быть объединены с помощью побитового логического Сложения.
+Эти флаги могут быть объединены с bitwise OR.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

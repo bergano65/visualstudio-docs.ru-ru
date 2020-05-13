@@ -1,44 +1,44 @@
 ---
-title: Регистрация программы | Документация Майкрософт
+title: Регистрация Программы Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60bc94efb9d3b2026de31c6018b466d432bf98f8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315960"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713170"
 ---
 # <a name="register-the-program"></a>Регистрация программы
-После модуля отладки приобрела порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, следующим шагом Включение программы для отладки — для его регистрации в порт. После регистрации, эта программа доступна для отладки, одно из следующих способов:
+После того, как отладка двигателя приобрела порт, представленный интерфейсом [IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) следующим шагом в обеспечении отладки программы является регистрация его в порту. После регистрации программа доступна для отладки одним из следующих средств:
 
-- Процесс присоединения, который позволяет отладчику получить полное управление отладки запущенного приложения.
+- Процесс присоединения, который позволяет отладчику получить полный контроль отладки работающего приложения.
 
-- Just-in-time (JIT) отладки, позволяющий after фактов отладки программы, которая выполняется независимо от отладчика. При архитектура среды выполнения перехватывает ошибку, отладчик уведомляется перед операционной системы или среды выполнения освобождает память и ресурсы программу виновный.
+- Отладка точного времени (JIT), которая позволяет после фактической отладки программы, которая работает независимо от отладчика. Когда архитектура времени выполнения устраняет неисправность, отладчик уведомляется перед операционной системой или средой времени выполнения, высвобождает память и ресурсы программы сбоя.
 
 ## <a name="registering-procedure"></a>Процедура регистрации
 
-### <a name="to-register-your-program"></a>Для регистрации программы
+### <a name="to-register-your-program"></a>Зарегистрировать программу
 
-1. Вызовите [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) метод, реализованный порт.
+1. Вызовите метод [AddProgramNode,](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) реализованный портом.
 
-     `IDebugPortNotify2::AddProgramNode` требуется указатель на [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс.
+     `IDebugPortNotify2::AddProgramNode`требуется указатель на интерфейс [IDebugProgramNode2.](../../extensibility/debugger/reference/idebugprogramnode2.md)
 
-     Как правило при загрузке программы операционной системы или среды выполнения создает узел программы. Если подсистема отладки (DE) будет предложено загрузить программу, DE создает и регистрирует узел программы.
+     Обычно, когда операционная система или среда времени выполнения загружает программу, она создает узла программы. Если отладка двигателя (DE) предлагается загрузить программу, DE создает и регистрирует узла программы.
 
-     Пример обработчика отладки, запуска программы и зарегистрировав его с портом.
+     Ниже приводится отладка двигателя запуска программы и регистрации его в порту.
 
     > [!NOTE]
-    > Этот пример кода является не единственным способом для запуска и возобновления процесса; Этот код является главным образом пример регистрации программы с портом.
+    > Этот пример кода не единственный способ запуска и возобновления процесса; этот код является главным примером регистрации программы в порту.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -106,4 +106,4 @@ ms.locfileid: "66315960"
 
 ## <a name="see-also"></a>См. также
 - [Получение порта](../../extensibility/debugger/getting-a-port.md)
-- [Включение программы для отладки](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Включение отладки программы](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

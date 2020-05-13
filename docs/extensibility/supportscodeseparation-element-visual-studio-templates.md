@@ -1,5 +1,5 @@
 ---
-title: Элемент Суппортскодесепаратион (шаблоны Visual Studio) | Документация Майкрософт
+title: ПоддерживаетЭлемент разделения кода (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e68516a798bcd4d1437ab504c09b4cc529eb889
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719428"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699499"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Элемент SupportsCodeSeparation (шаблоны проектов Visual Studio)
-Указывает, включен ли флажок « **размещать код в отдельном файле** » в диалоговом окне « **Добавление нового элемента** ».
+Уточняется, включен код **Place в отдельном** файлообменном поле в диалоговом поле **Add New Item.**
 
- \<VSTemplate > \<TemplateData > \<SupportsCodeSeparation >
+ \<VSTemplate \<> TemplateData> \<поддерживает>разделения кода
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,31 +36,31 @@ ms.locfileid: "72719428"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона и определение его отображения в диалоговом окне **Новый проект** или **новый элемент** .|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Категоризирует шаблон и определяет, как он отображается в **new Project** или в диалоговом окне **New Item.**|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Текст должен быть либо `true`, либо `false`, указывающий, включен ли флажок " **размещать код в отдельном файле** " в диалоговом окне " **Добавление нового элемента** ".
+ Текст должен быть `true` `false`либо, либо , указывая, включен код **Place в отдельном файле** флажок в диалоговом поле **Добавить новый элемент.**
 
-## <a name="remarks"></a>Заметки
- `SupportsCodeSeparation` — это необязательный элемент. Значение по умолчанию — `false`.
+## <a name="remarks"></a>Примечания
+ Параметр `SupportsCodeSeparation` является необязательным элементом. Значение по умолчанию — `false`.
 
- Элемент `SupportsCodeSeparation` доступен только для шаблонов веб-элементов.
+ Элемент `SupportsCodeSeparation` доступен только для шаблонов web-элементов.
 
- Разделение кода или модель страницы кода программной части позволяет размещать разметку в одном файле и программном коде в другом файле. Эта модель используется [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и другими языками .NET.
+ Разделение кода, или модель страницы с кодом, позволяет сохранить разметку в одном файле и код программирования в другом файле. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]и другие языки .NET используют эту модель.
 
 ## <a name="example"></a>Пример
- В следующем примере указывается, чтобы отобразить **код места в отдельном файле** .
+ Ниже приводится следующий пример для отображения **кода Place в отдельном варианте файла.**
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

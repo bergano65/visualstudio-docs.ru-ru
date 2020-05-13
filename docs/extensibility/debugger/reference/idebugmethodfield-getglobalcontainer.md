@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetGlobalContainer | Документация Майкрософт
+title: IDebugMethodField::GetGlobalContainer Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77f3d82beab43b227dd3beb772dd41353d89b6fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37e3b26a265fe651216e46fa299bdd827416b8ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727134"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
-Возвращает контейнер глобального метода.
+Получает глобальный контейнер метода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetGlobalContainer(
 
 ## <a name="parameters"></a>Параметры
 `ppClass`\
-[out] Возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) представляющий модуль, в котором определен этот метод.
+(ваут) Возвращает [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) представляющий модуль, в котором определяется этот метод.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Возвращенный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект представляет весь модуль и является объектом искусственного, то есть сам модуль не имеют фактический класс, но она может быть представлена `IDebugClassField` объектам, различных элементы модуля перечисления и обнаружения.
+ Возвращаемый объект [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) представляет весь модуль и является искусственным объектом, то есть сам модуль `IDebugClassField` не имеет фактического класса, но может быть представлен объектом, что позволяет перечислять и обнаруживать различные элементы модуля.
 
 ## <a name="see-also"></a>См. также
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

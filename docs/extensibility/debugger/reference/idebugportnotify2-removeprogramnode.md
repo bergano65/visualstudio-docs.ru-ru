@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode | Документация Майкрософт
+title: IDebugPortNotify2::RemoveProgramNode Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::RemoveProgramNode
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05565005838fb47c3ad798464ee9382ae1168905
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c59b80a2c9748dccccd7b1fa1d5217b8e9f4979f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724958"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
-Отменяет регистрацию программы, можно отлаживать из порт, к которому он работает под управлением.
+Отрегистрирует программу, которая может быть отлажена из запущенного в нее порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int RemoveProgramNode( 
 
 ## <a name="parameters"></a>Параметры
 `pProgramNode`\
-[in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objecy, представляющий программу для отмены регистрации.
+(в) [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objecy, который представляет программу, которая будет незарегистрированной.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод удаляет узел программы, который был добавлен с помощью вызова [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) метод.
+ Этот метод удаляет узла программы, который был добавлен с вызовом к методу [AddProgramNode.](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128306"
 ---
 # <a name="perftips"></a>PerfTips
@@ -30,7 +30,7 @@ ms.locfileid: "71128306"
 
  На рисунке ниже показано окно **Средства диагностики** в Visual Studio 2015 с обновлением 1.
 
- ![DiagnosticTools: обновление 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+ ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
 - На временной шкале **События прерывания** отмечаются точки останова, достигнутые за сеанс отладки. Щелкните событие, чтобы выбрать его в списке сведений **отладчика** .
 

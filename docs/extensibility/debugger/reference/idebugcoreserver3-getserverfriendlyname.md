@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Документация Майкрософт
+title: IDebugCoreServer3::GetServerFriendlyName Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba0675038a495a91755794d7e43ad57cfc7d438a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326956"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732884"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
-Возвращает понятное имя для сервера.
+Получает дружественное имя для сервера.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,18 +41,18 @@ int GetServerFriendlyName(
 
 ## <a name="parameters"></a>Параметры
 `pbstrName`\
-[out] Возвращает понятное имя для сервера.
+(ваут) Возвращает дружественное имя сервера.
 
 > [!NOTE]
-> Вызывающий объект несет ответственность за освобождение строки.
+> Звонящий отвечает за освобождение строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Для серверов запущен пользователем имя, возвращаемый этим методом является полное имя сервера. Для автоматического запуска серверов называется машины сервер работает.
+ Для серверов, запущенных пользователем, имя, возвращенное этим методом, является полным именем сервера. Для автоматически запущенных серверов название — это имя машины, на которую работает сервер.
 
- Для компьютера ориентированное имя, вызовите [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) метод.
+ Для машинно-ориентированного имени позвоните в метод [GetServerName.](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

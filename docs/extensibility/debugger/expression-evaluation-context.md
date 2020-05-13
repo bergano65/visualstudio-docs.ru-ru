@@ -1,33 +1,33 @@
 ---
-title: Контекст вычисления выражений | Документация Майкрософт
+title: Контекст оценки выражения (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efaa678b5cbee763fabc9ccaf82c9322176b9102
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e939a4fa5f4673e2f701206c96599c54bc0c3b51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315239"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738736"
 ---
-# <a name="expression-evaluation-context"></a>Контекст вычисления выражений
-В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки, **контекст вычисления выражений**:
+# <a name="expression-evaluation-context"></a>Контекст оценки выражения
+При [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладке **контекст оценки выражения:**
 
-- Представляет контекст для вычисления выражения. Как правило контекст вычисления соответствует лексическую область, в которой должно вычисляться переменные, параметры, функции и методы. Например контекст вычисления выражения, связанный с кадром стека будет обеспечить контекст для оценки локальных переменных, параметров методов и членов класса (если применимо).
+- Представляет контекст для оценки выражения. Как правило, контекст оценки соответствует лексической области, в рамках которой для оценки переменных, параметров, функций и методов. Например, контекст оценки выражения, связанный с кадром стека, будет предоставлять контекст для оценки локальных переменных, параметров метода и членов класса (если это применимо).
 
-- Возникает, когда программа остановлена в точке останова. Само выражение — это структура данных, представляющий проанализированное выражение, которое будет готов для привязки и оценке в рамках заданного контекста.
+- Существует, когда программа остановилась в точке разрыва. Само выражение представляет собой структуру данных, представляющую разогнанные выражения, готовые к связыванию и оценке в данном контексте.
 
-     В частности, выражения создаются с помощью [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) метод. При вычислении выражения, он создает печатные строка, содержащая имя и тип переменной или аргумента и его значение. Эта строка отображается в окне контрольных значений или в окне "Локальные" интегрированной среды разработки.
+     Более подробно выражения создаются с помощью метода [ParseText.](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) При оценке выражения создается строка, содержащая имя и тип переменной или аргумента и ее значение. Эта строка отображается в окне Смотреть или в окне Местных жителей IDE.
 
-     Учитывая `BSTR` и [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс, можно создать модуля отладки (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) интерфейс путем синтаксического анализа выражения. Учитывая `IDebugExpression2` интерфейс, DE можно получить значение, полученное через синхронным или асинхронным выражениям. Это значение, а также имя и тип переменной или аргумента, отправляется в интегрированную среду разработки для отображения.
+     `BSTR` Учитывая интерфейс [IDebugExpressionContext2,](../../extensibility/debugger/reference/idebugexpressioncontext2.md) отладка двигателя (DE) может создать интерфейс [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) путем разбора выражения. Учитывая `IDebugExpression2` интерфейс, DE может получить значение через синхронную или асинхронную оценку выражения. Это значение, наряду с именем и типом переменной или аргументом, отправляется в IDE для отображения.
 
 ## <a name="see-also"></a>См. также
-- [Интерфейсы оценки выражения](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
-- [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md)
+- [Интерфейсы оценки экспрессии](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Контексты debugger](../../extensibility/debugger/debugger-contexts.md)

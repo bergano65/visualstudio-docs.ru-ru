@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593867"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -39,11 +39,11 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  Необязательный элемент. Полный путь и имя файла параметров, применяемого к Visual Studio.
+  Необязательный параметр. Полный путь и имя файла параметров, применяемого к Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
-  Необязательный элемент. Описатель, представляющий коллекцию параметров для восстановления по умолчанию. Выберите один из перечисленных в таблице описателей коллекции по умолчанию.
+  Необязательный параметр. Описатель, представляющий коллекцию параметров для восстановления по умолчанию. Выберите один из перечисленных в таблице описателей коллекции по умолчанию.
 
   | Имя коллекции по умолчанию | Описатель коллекции |
   | --- | --- |
@@ -55,7 +55,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Веб-разработка** | `Web` |
   | **Веб-разработка (только код)** | `WebCode` |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если файл *SettingsFile* не указан, интегрированная среда разработки открывается с использованием существующих параметров.
 
@@ -71,7 +71,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры среды](../environment-settings.md)
 - [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

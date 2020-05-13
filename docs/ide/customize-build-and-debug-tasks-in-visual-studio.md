@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76542689"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Настройка задач сборки и отладки для режима разработки "Открытая папка"
@@ -309,7 +309,7 @@ Visual Studio считывает часть параметров из файла
 
 Параметры из файла *.gitignore* применяются к родительскому каталогу файла и всем его подкаталогам.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Разработка кода без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++)

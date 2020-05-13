@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fcd289f5258fde7ae8f17a9e19a25427fe6885
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278355"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632762"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference - задача
+
 Определяет все сборки, которые зависят от указанных сборок, включая зависимости второго и `n`-го порядка.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `ResolveAssemblyReference` .
 
 |Параметр|Описание|
@@ -78,6 +80,7 @@ ms.locfileid: "77278355"
 |`TargetProcessorArchitecture`|Необязательный параметр `String`.<br /><br /> Предпочитаемая архитектура целевого процессора. Используется для разрешения ссылок на глобальный кэш сборок (GAC).<br /><br /> Этот параметр может иметь значение `x86`, `IA64` или `AMD64`.<br /><br /> Если этот параметр отсутствует, задача сначала учитывает сборки, соответствующие архитектуре выполняющегося процесса. Если не удалось найти сборку, задача учитывает сборки в глобальном кэше сборок, имеющие значение `ProcessorArchitecture` , равное `MSIL` , или не имеющие значение `ProcessorArchitecture` .|
 
 ## <a name="warnings"></a>Предупреждения
+
  Регистрируются следующие предупреждения:
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -101,8 +104,10 @@ ms.locfileid: "77278355"
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>Примечания
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

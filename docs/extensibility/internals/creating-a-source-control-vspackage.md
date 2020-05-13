@@ -1,50 +1,50 @@
 ---
-title: Создание пакета VSPackage управления версиями | Документация Майкрософт
+title: Создание управления источником VSPackage (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259273eee51c74eb7cb5ca4534db9bc575fd1758
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345492"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709194"
 ---
-# <a name="create-a-source-control-vspackage"></a>Создать пакет VSPackage системы управления версиями
-Эта документация содержит ссылки на обзор архитектуры пакета системы управления версиями интегрируется с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], API, который определяется интерфейс для выполнения и служб для использования и пример, иллюстрирующий простой источника пакет реализацию элементов управления.
+# <a name="create-a-source-control-vspackage"></a>Создание управления исходным элементом VSPackage
+Эта документация содержит ссылки на обзор архитектуры [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]пакета управления исходным управлением, интегрированного с API, который определяется интерфейсами, которые будут реализованы, и служб, которые будут использоваться, и выборку, иллюстрирующую простую реализацию пакета управления исходным управлением.
 
- С помощью системы управления версиями VSPackage, можно создать путь глубокая интеграция системы управления версиями для интеграции с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Он позволяет обойти системы управления версиями по умолчанию пользовательского интерфейса, поддерживаемого пакета [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], отвечать на запросы системы управления версиями в системе проектов и взаимодействовать с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компоненты, такие как **обозревателе решений**. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Расширяет возможности [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сотрудничает с механизм для создания VSPackage, который можно интегрировать с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] с помощью модели службы.
+ С помощью управления исходным элементом VSPackage можно создать [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]глубокий путь интеграции для интеграции исходного элемента с . Это позволяет пакету обойти uI управления исходным управлением [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]по умолчанию, размещенный, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отвечать на запросы управления исходными данными из проектной системы и взаимодействовать с такими компонентами, как **Solution Explorer.** Дает [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] партнерам возможность создать VSPackage, который может [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрироваться с помощью модели обслуживания.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Начало работы](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
- Обсуждаются пакет системы управления версиями, который является альтернативой более сложные системы управления версиями, подключаемый модуль для реализации функций системы управления версиями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Обсуждаетпакет управления исходным ресурсом, который является более продвинутой альтернативой плагину управления исходным элементом для реализации функций управления исходным источником в. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
-- [Архитектура](../../extensibility/internals/source-control-vspackage-architecture.md)
+- [Architecture](../../extensibility/internals/source-control-vspackage-architecture.md)
 
- Представляет схему и приводится информация о компонентах пакета системы управления версиями.
+ Представляет диаграмму и объясняет компоненты пакета управления исходным источником.
 
-- [Функции](../../extensibility/internals/source-control-vspackage-features.md)
+- [Компоненты](../../extensibility/internals/source-control-vspackage-features.md)
 
- Описание различных возможностей пакета системы управления версиями.
+ Описывает различные особенности пакета управления исходным источником.
 
-- [Элементы проектирования](../../extensibility/internals/source-control-vspackage-design-elements.md)
+- [Элементы дизайна](../../extensibility/internals/source-control-vspackage-design-elements.md)
 
- Описывает структуру пакета VSPackage, который должен быть реализован пакет системы управления версиями для глубокой интеграции.
+ Описывает структуру VSPackage, который пакет управления исходным источником должен реализовать для глубокой интеграции.
 
-## <a name="related-sections"></a>Связанные разделы
-- [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md)
+## <a name="related-sections"></a>См. также
+- [Создание плагина управления исходным элементом](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- Создание системы управления версиями подключаемого модуля, предоставляющий функции системы управления версиями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интерфейс пользователя системы управления версиями (UI).
+ Обсуждается, как создать плагин управления исходным элементом, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] который обеспечивает функциональность управления исходным управлением в пользовательском интерфейсе управления исходным управлением (UI).
 
-- [Системы управления версиями](../../extensibility/internals/source-control.md)
+- [Управление исходом](../../extensibility/internals/source-control.md)
 
- Обсуждаются параметры для реализации системы управления версиями в виде интегрированной функцией [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Обсуждается варианты реализации управления исходным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]источником в качестве интегрированной функции .

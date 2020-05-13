@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS | Документация Майкрософт
+title: CONTEXT_INFO_FIELDS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ed50d43061ee714f8f892e03bb164f16e2e33d9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346386"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737594"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Указывает, какую информацию нужно извлечь о контексте памяти.
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
+Определяет, какую информацию получить о контексте памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,34 +54,34 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 ## <a name="fields"></a>Поля
 `CIF_MODULEURL`\
-Инициализация и использование `bstrModuleUrl` поле [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуры.
+Инициализация/использование `bstrModuleUrl` поля [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуры.
 
 `CIF_FUNCTION`\
-Инициализация и использование `bstrFunction` поле `CONTEXT_INFO` структуры.
+Инициализация/использование `bstrFunction` `CONTEXT_INFO` поля структуры.
 
 `CIF_FUNCTIONOFFSET`\
-Инициализация и использование `posFunctionOffset` поле `CONTEXT_INFO` структуры.
+Инициализация/использование `posFunctionOffset` `CONTEXT_INFO` поля структуры.
 
 `CIF_ADDRESS`\
-Инициализация и использование `bstrAddress` поле `CONTEXT_INFO` структуры.
+Инициализация/использование `bstrAddress` `CONTEXT_INFO` поля структуры.
 
 `CIF_ADDRESSOFFSET`\
-Инициализация и использование `bstrAddressOffset` поле `CONTEXT_INFO` структуры.
+Инициализация/использование `bstrAddressOffset` `CONTEXT_INFO` поля структуры.
 
 `CIF_ALLFIELDS`\
-Инициализировать или использовать все поля `CONTEXT_INFO` структуры.
+Инициализация/использование `CONTEXT_INFO` всех полей структуры.
 
 ## <a name="remarks"></a>Примечания
-Эти значения передаются параметра [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) метод, чтобы указать, какие поля [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуры должны быть инициализированы.
+Эти значения передаются параметру методу [GetInfo,](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) чтобы указать, какие поля [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуры должны быть инициализированы.
 
-Эти флаги также используются для указания поля `CONTEXT_INFO` структуры не используются и допустимым при возвращении структуры.
+Эти флаги также используются для `CONTEXT_INFO` указания того, какие поля структуры используются и действительны при возврате структуры.
 
-Эти значения могут объединяться с помощью побитового логического Сложения.
+Эти значения могут быть объединены с bitwise OR.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

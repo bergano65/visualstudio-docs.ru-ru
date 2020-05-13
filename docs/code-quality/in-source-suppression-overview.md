@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167628"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408718"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Подавлять предупреждения анализа кода
 
@@ -92,6 +92,8 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **Target** — идентификатор, который используется для указания целевого объекта, в котором предупреждение подавляется. Он должен содержать полное имя элемента.
 
+При появлении предупреждений в Visual Studio можно просмотреть примеры `SuppressMessage`, [добавив подавление в файл глобального подавления](../code-quality/use-roslyn-analyzers.md#suppress-violations). Атрибут подавления и его обязательные свойства отображаются в окне предварительного просмотра.
+
 ## <a name="suppressmessage-usage"></a>Использование SuppressMessage
 
 Предупреждения анализа кода подавляются на уровне, к которому применяется атрибут <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Например, атрибут можно применить на уровне сборки, модуля, типа, члена или параметра. Целью этого является тесное связывание информации о подавлении с кодом, в котором происходит нарушение.
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>Созданный код
-
-Компиляторы управляемого кода и некоторые сторонние средства создают код для упрощения разработки кода. Созданный компилятором код, который отображается в исходных файлах, обычно отмечается атрибутом `GeneratedCodeAttribute`.
-
-Можно выбрать, следует ли подавлять предупреждения и ошибки анализа кода для созданного кода. Сведения о подавлении таких предупреждений и ошибок см. [в разделе как отключить предупреждения для созданного кода](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
-
-> [!NOTE]
-> Анализ кода игнорирует `GeneratedCodeAttribute`, когда он применяется к целой сборке или одному параметру.
-
 ## <a name="global-level-suppressions"></a>Подавления на глобальном уровне
 
 Средство анализа управляемого кода проверяет `SuppressMessage` атрибуты, которые применяются на уровне сборки, модуля, типа, члена или параметра. Он также вызывает нарушения для ресурсов и пространств имен. Эти нарушения должны применяться на глобальном уровне, а их область и Целевая. Например, следующее сообщение подавляет нарушение пространства имен:
@@ -185,6 +178,22 @@ public class Animal
 Например, следующий атрибут в файле проекта _глобалсуппрессионс_ будет подавлять нарушение ConfigureAwait для проекта ASP.NET Core:
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>Созданный код
+
+Компиляторы управляемого кода и некоторые сторонние средства создают код для упрощения разработки кода. Созданный компилятором код, который отображается в исходных файлах, обычно отмечается атрибутом `GeneratedCodeAttribute`.
+
+Для анализа исходного кода (FxCop Analyzer) можно подавлять сообщения в созданном коде с помощью файла [. editorconfig](../code-quality/configure-fxcop-analyzers.md) в корне проекта или решения. Используйте шаблон файла для сопоставления с созданным кодом. Например, чтобы исключить предупреждения CS1591 в файлах * *. Designer.CS* , используйте его в файле конфигурации.
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+Для традиционного анализа кода можно выбрать, следует ли подавлять предупреждения и ошибки анализа кода для созданного кода. Сведения о подавлении таких предупреждений и ошибок см. [в разделе как отключить предупреждения для созданного кода](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+
+> [!NOTE]
+> Анализ кода игнорирует `GeneratedCodeAttribute`, когда он применяется к целой сборке или одному параметру.
 
 ## <a name="see-also"></a>См. также:
 

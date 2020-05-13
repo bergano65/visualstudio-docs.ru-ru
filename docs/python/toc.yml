@@ -16,7 +16,7 @@
       href: installing-python-interpreters.md
 - name: Краткие руководства
   items:
-    - name: Создание веб-приложения на Flask
+    - name: Создание веб-приложения с помощью Flask
       href: ../ide/quickstart-python.md
       maintainContext: true
     - name: Создание проекта из шаблона
@@ -85,7 +85,7 @@
           href: python-django-web-application-project-template.md
         - name: Шаблон облачной службы Azure
           href: python-azure-cloud-service-project-template.md
-    - name: Пакет Azure SDK для Python
+    - name: SDK Azure для Python
       href: /python/azure/?view=azure-python
 - name: Практические руководства
   items:
@@ -137,13 +137,13 @@
           href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
         - name: Символы для отладки в смешанном режиме
           href: debugging-symbols-for-mixed-mode-c-cpp-python.md
-    - name: Профилирование
+    - name: Профилирование.
       href: profiling-python-code-in-visual-studio.md
     - name: Модульное тестирование
       href: unit-testing-python-in-visual-studio.md
     - name: Использование расширения Cookiecutter
       href: using-python-cookiecutter-templates.md
-- name: Ссылка
+- name: Справочник
   items:
     - name: Шаблоны элементов
       href: python-item-templates.md

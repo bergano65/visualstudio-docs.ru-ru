@@ -7,10 +7,10 @@ ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027258"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Как Visual Studio создает контейнерные приложения
@@ -185,11 +185,11 @@ Visual Studio использует подходящую точку входа к
 
 Точку входа контейнера можно изменить только в проектах docker-compose. В проектах с одним контейнером сделать это нельзя.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте, как произвести дальнейшую настройку сборок путем задания дополнительных свойств MSBuild в файлах проекта. См. статью [Свойства MSBuild для проектов контейнеров](container-msbuild-properties.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [MSBuild](../msbuild/msbuild.md)
 [Dockerfile в Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

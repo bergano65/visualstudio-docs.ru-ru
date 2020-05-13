@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetUnderlyingSymbol | Документация Майкрософт
+title: IDebugEnumfield:GetunderlyingSymbol Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetUnderlyingSymbol method
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 353b6d6f2a448cb7ac1bfdc98cc489688db9ee74
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cac9d3f761e95b821179137f2efc23ef61b91b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345036"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730271"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
-Этот метод возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , представляющее имя перечисления.
+Этот метод возвращает [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) который представляет название перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetUnderlyingSymbol(
 
 ## <a name="parameters"></a>Параметры
 `ppField`\
-[out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий имя этого перечисления.
+(ваут) Возвращает [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий название этого перечисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Имя перечисления также содержит тип перечисления, который привязан к ячейке памяти с помощью [привязать](../../../extensibility/debugger/reference/idebugbinder-bind.md).
+ Название перечисления также содержит тип перечисления, который связан с местом памяти с помощью [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
 ## <a name="see-also"></a>См. также
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

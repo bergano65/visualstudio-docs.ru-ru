@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Документация Майкрософт
+title: IDebugProperty3::GetStringChars Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348829"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721083"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Извлекает строку, связанную с этим свойством и сохраняет его в буфер, предоставленный пользователем.
+Извлекает строку, связанную с этим свойством, и хранит ее в буфере, поставляемом пользователем.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Параметры
 `buflen`\
-[in] Максимальное количество символов, которые может содержать буфер предоставленное пользователем.
+(в) Максимальное количество символов, которые может содержать буфер, поставляемый пользователем.
 
 `rgString`\
-[out] Возвращает строку.
+(ваут) Возвращает строку.
 
- [C++ только], `rgString` — это указатель на буфер, получающий строки символы Юникода. Этот буфер должен быть по крайней мере `buflen` символов (не байтов) в размер.
+ Только указатель на `rgString` буфер, который получает символы Unicode строки. Этот буфер должен `buflen` быть по крайней мере символы (не байты) в размере.
 
 `pceltFetched`\
-[out] Где возвращается число символов, фактически хранятся в буфере. (Может быть `NULL` в C++.)
+(ваут) В тех случаях, когда число символов, фактически хранящихся в буфере, возвращается. (Может `NULL` быть в СЗ.)
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-В C++, следует принять меры, чтобы гарантировать, что буфер не ниже `buflen` символов Юникода. Обратите внимание, что символ Юникода 2 байт.
+В СЗ необходимо позаботиться о том, чтобы `buflen` буфер, по крайней мере, долго символов Unicode. Обратите внимание, что символ Unicode длиной 2 байта.
 
 > [!NOTE]
-> В C++ возвращаемая строка не включает завершающий нуль-символ. Если он задан, `pceltFetched` будет указать число символов в строке.
+> В C q, возвращенная строка не включает термин null. Если дано, `pceltFetched` укажите количество символов в строке.
 
 ## <a name="example"></a>Пример
 

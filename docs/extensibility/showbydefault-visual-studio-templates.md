@@ -1,5 +1,5 @@
 ---
-title: Элемент Шовбидефаулт (шаблоны Visual Studio)
+title: Элемент ShowByDefault (Шаблоны визуальной студии)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720099"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700100"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>Элемент Шовбидефаулт (шаблоны Visual Studio)
-Если `false`, указывает, что шаблон будет отображаться только под указанным [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
+# <a name="showbydefault-element-visual-studio-templates"></a>Элемент ShowByDefault (Шаблоны визуальной студии)
+Если `false`указано, что шаблон будет отображаться только в указанном [TemplateGroupID.](../extensibility/templategroupid-element-visual-studio-templates.md)
 
- \<VSTemplate > \<TemplateData > \<ShowByDefault >
+ \<VSTemplate \<> TemplateData> \<ShowbyDefault>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,10 +36,10 @@ ms.locfileid: "72720099"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -52,8 +52,8 @@ ms.locfileid: "72720099"
 
  Этот текст должен быть либо `true`, либо `false`. Значение true указывает, что шаблон будет отображаться для всех типов проектов. Значение false указывает, что шаблон будет отображаться только под указанным элементом `TemplateGroupID`.
 
-## <a name="remarks"></a>Заметки
- `ShowByDefault` — это необязательный элемент. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Примечания
+ Параметр `ShowByDefault` является необязательным элементом. Значение по умолчанию — `true`.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].

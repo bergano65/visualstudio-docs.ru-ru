@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 89a08808387067b934bfd826feb2dcfbcf949aab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778288"
 ---
-# <a name="shutdown"></a>Завершить работу
+# <a name="shutdown"></a>Shutdown
 Параметр **Shutdown** обеспечивает выключение профилировщика и закрытие файла данных профилирования спустя определенное время ожидания после завершения или отключения профилируемого в данный момент процесса. Параметр **Shutdown** должен быть последней командой в сеансе профилирования.
 
  Если параметр времени ожидания не задан, параметр **Shutdown** приводит к бесконечному ожиданию. Если параметр времени ожидания задан, он возвращается спустя заданное число секунд без выключения профилировщика или закрытия файла данных.
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 `Timeout`
 - Если этот параметр задан, он возвращается спустя указанное число секунд без выключения профилировщика или закрытия файла данных профилирования (необязательно).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService | Документация Майкрософт
+title: IEEVisualizerService Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService interface
 ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c9cff6b4de172e9331057bb56a39a87e8b6ab0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40d21dcc9b1da0e1e2250adcfad59b3ef46a2113
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310119"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717943"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии CLR, пожалуйста, ознакомьтесь с [clR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образцом управляемого оценщика экспрессии.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
- Этот интерфейс реализует основные методы, которые предоставляют функциональные возможности для [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) и [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) интерфейсов.
+ Этот интерфейс реализует ключевые методы, которые поставляют функциональность интерфейсов [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) и [IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,37 +31,37 @@ ms.locfileid: "66310119"
 IEEVisualizerService : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Visual Studio реализует этот интерфейс, позволяющий вычислитель выражений (EE) для поддержки визуализаторами типов.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Visual Studio реализует этот интерфейс, чтобы позволить оценщику выражения (EE) поддерживать визуализаторы типа.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовы EE [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) для получения визуализаторов типов этот интерфейс как часть его поддержки.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ EE призывает [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) получить этот интерфейс в рамках своей поддержки визуализаторов типов.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Возвращает число пользовательских средств просмотра, о которых знает данная служба.|
-|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Извлекает список пользовательских средств просмотра.|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Возвращает объект прокси для свойства.|
-|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Возвращает номер строки значение указанного свойства или поля.|
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Получает количество пользовательских зрителей, о которых эта служба знает.|
+|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Получает список пользовательских зрителей.|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Возвращает прокси-объект для свойства.|
+|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Извлекает количество строк значения для отображения для указанного свойства или поля.|
 
 ## <a name="remarks"></a>Примечания
- Интегрированная среда разработки использует [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс, чтобы определить, есть ли любые пользовательские средства просмотра или введите визуализаторы для свойства. Создав службу визуализатор (с [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), EE может предоставить возможность `IDebugProperty3` и [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (который поддерживает просмотр и изменение значение свойства), интерфейсы и тем самым поддерживают визуализаторами типов.
+ IDE использует интерфейс [IDebugProperty3,](../../../extensibility/debugger/reference/idebugproperty3.md) чтобы определить, есть ли пользовательские зрители или визуализаторы для свойства. Создавая сервис визуализаторов (с [CreateVisualizerService),](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)EE `IDebugProperty3` может предоставить функциональность интерфейсам и [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (которая поддерживает просмотр и изменение стоимости свойства) интерфейсов и тем самым поддерживать визуализаторы типа.
 
- Если EE пользовательских средств просмотра, в свою очередь реализует, можно добавить EE `CLSID`s из этих пользовательских средств просмотра, в конец списка, возвращаемые [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Это позволяет EE для поддержки визуализаторов типов и свои собственные пользовательские средства просмотра. Просто убедитесь, что [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) получающаяся при добавлении любые пользовательские средства просмотра.
+ Если EE имеет пользовательские зрителей, которые сам реализует, EE может прибывать `CLSID`с тех пользовательских зрителей в конце списка, возвращенного [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Это позволяет EE поддерживать как визуализаторы типа, так и собственных пользовательских зрителей. Просто убедитесь, что [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) отражает добавление любых пользовательских зрителей.
 
- См. в разделе [визуализатор типов и пользовательские средства просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) обсуждение разницу между визуализаторы, а также средства просмотра.
+ Смотрите [Type Visualizer и пользовательский зритель](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) для обсуждения разницы между визуализаторами и зрителями.
 
 ## <a name="requirements"></a>Требования
  Заголовок: ee.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Интерфейсы вычисления выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585301"
 ---
 # <a name="miscellaneous-files"></a>Прочие файлы
@@ -48,7 +48,7 @@ ms.locfileid: "75585301"
 
 Для папки **Прочие файлы** можно задать параметры отображения таким образом, чтобы она отображалась даже в том случае, если прочие файлы не открыты. Файл решения не контролирует список прочих файлов постоянно. Он использует дополнительную функцию, которая позволяет ему запоминать список последних использованных файлов для каждого пользователя.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Разработка кода в Visual Studio без использования проектов и решений](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)

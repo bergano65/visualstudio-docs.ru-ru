@@ -1,5 +1,5 @@
 ---
-title: DA0002. Отсутствует файл VSPerfCorProf.dll | Документация Майкрософт
+title: 'DA0002: отсутствует файл VSPerfCorProf.dll | Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,13 +15,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f768a35e7c50ec55867ae49901718063ca39bd0b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777755"
 ---
-# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002. Отсутствует файл VSPerfCorProf.dll
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: отсутствует файл VSPerfCorProf.dll
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "74777755"
 |Сообщение|По-видимому, сбор данных для файла был выполнен без должной настройки переменных среды с помощью *VSPerfCLREnv.cmd*. Разрешение символов для управляемых двоичных данных может быть невозможно.|
 |Тип правила|Сведения|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Профилировщику не удалось найти библиотеку *VSPerfCorProf.dll* во время сеанса профилирования. Это предупреждение выводится, если программы командной строки для сбора данных профилирования используются без применения программы *VSPerfCLREnv.cmd* для инициализации необходимых переменных среды. Это предупреждение также может выдаваться, если при запуске Средств профилирования выполняется другой профилировщик.
 
 ## <a name="rule-description"></a>Описание правила

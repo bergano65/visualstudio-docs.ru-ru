@@ -1,46 +1,46 @@
 ---
-title: Установка за пределами папки расширений с помощью VSIX v3 | Документация Майкрософт
+title: Установка вне папки расширений с VSIX v3 Документы Майкрософт
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: aa2c7d97dda9bba139ec613b367eedbc6307848a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852206"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700184"
 ---
 # <a name="install-outside-the-extensions-folder"></a>Установка за пределами папки расширений
 
-Начиная с Visual Studio 2017 и VSIX v3 средств расширения (версия 3), можно установить за пределами папки расширений. В настоящее время как расположения правильность установки (где сопоставленного [INSTALLDIR] каталог установки экземпляра Visual Studio) включены следующие расположения:
+Начиная с Visual Studio 2017 и VSIX v3 (версия 3), активы расширения могут быть установлены за пределами папки расширений. В настоящее время следующие местоположения включены в качестве действительных местоположений установки (где «INSTALLDIR» отображается в каталоге установки примера Visual Studio):
 
-* \MSBuild [INSTALLDIR]
-* [INSTALLDIR] \Xml\Schemas
-* \Common7\IDE\PublicAssemblies [INSTALLDIR]
-* \Licenses [INSTALLDIR]
-* \Common7\IDE\ReferenceAssemblies [INSTALLDIR]
-* \Common7\IDE\RemoteDebugger [INSTALLDIR]
-* [INSTALLDIR] \Common7\IDE\VC\VCTargets (только поддерживается для Visual Studio 2017; устаревшие компоненты для Visual Studio 2019 г. и более поздние версии)
+* «INSTALLDIR»-MSBuild
+* «СТАНТДИР»
+* «INSTALLDIR»(Общие7-IDE-PublicAssemblies
+* Лицензии «INSTALLDIR»
+* «INSTALLDIR»(Общие7-IDE-ReferenceAssemblies
+* «INSTALLDIR»(Общие7-IDE-RemoteDebugger
+* «INSTALLDIR»(Общие7-IDE-VC-VCTargets (поддерживается только для Visual Studio 2017; обезврежено для Visual Studio 2019 и более поздних)
 
 > [!NOTE]
-> Формат VSIX не позволяет установить вне структуры папки установки Visual Studio. 
+> Формат VSIX не позволяет устанавливать за пределами структуры папок Visual Studio. 
 
-Для поддерживают установку на эти каталоги, VSIX необходимо установить «для каждого экземпляра на уровне компьютера». Эту функцию можно включить, установив флажок «все пользователи» в конструкторе extension.vsixmanifest:
+Для того, чтобы поддержать установку в эти каталоги, VSIX должны быть установлены "на экземпляр на машину". Это может быть включено путем проверки "всех пользователей" флажок в extension.vsixmanifest дизайнера:
 
-![Проверьте все пользователи](media/check-all-users.png)
+![проверить всех пользователей](media/check-all-users.png)
 
-## <a name="how-to-set-the-installroot"></a>Как задать InstallRoot
+## <a name="how-to-set-the-installroot"></a>Как установить InstallRoot
 
-Чтобы установить нужные каталоги установки, можно использовать **свойства** окно в Visual Studio. Например, можно задать `InstallRoot` свойства ссылок на один из вышеуказанных местах:
+Чтобы установить каталоги установки, можно использовать окно **Properties** в Visual Studio. Например, можно установить свойство `InstallRoot` ссылки проекта на одно из вышеперечисленных мест:
 
-![установить свойства корневого ресурса](media/install-root-properties.png)
+![установить корневые свойства](media/install-root-properties.png)
 
-Это добавит некоторые метаданные в соответствующий `ProjectReference` свойства внутри проекта VSIX CSPROJ-файл:
+Это добавит некоторые метаданные `ProjectReference` в соответствующее свойство внутри файла .csproj проекта VSIX:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -51,15 +51,15 @@ ms.locfileid: "67852206"
 ```
 
 > [!NOTE]
-> Можно изменить CSPROJ-файл напрямую, если вы предпочитаете.
+> Вы можете отодвигать файл .csproj напрямую, если вы предпочитаете.
 
-## <a name="how-to-set-a-subpath-under-the-installroot"></a>Как задать вложенный путь в разделе InstallRoot
+## <a name="how-to-set-a-subpath-under-the-installroot"></a>Как установить подперенок под InstallRoot
 
-Если вы хотите установить субконтуру под `InstallRoot`, это можно сделать, задав `VsixSubPath` свойства так же, как `InstallRoot` свойство. Например, предположим, мы хотим, чтобы выходные данные нашей ссылку на проект для установки "[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0". Мы это можно легко сделать с помощью свойства конструктора:
+Если вы хотите установить на подперенок `InstallRoot`под, вы можете `VsixSubPath` сделать `InstallRoot` это, установив свойство так же, как свойство. Например, предположим, что мы хотим, чтобы выход нашей справки по проекту был установлен на «INSTALLDIR»MSBuild»MyCompany»MySDK 1.0. Мы можем сделать это легко с дизайнером недвижимости:
 
-![вложенный путь набора](media/set-subpath.png)
+![набор подпат](media/set-subpath.png)
 
-Соответствующие изменения CSPROJ-файл будет выглядеть следующим образом:
+Соответствующие изменения .csproj будут выглядеть следующим образом:
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -70,6 +70,6 @@ ms.locfileid: "67852206"
 </ProjectReference>
 ```
 
-## <a name="extra-information"></a>Дополнительные сведения
+## <a name="extra-information"></a>Дополнительная информация
 
-Применить изменения свойств конструктора больше, чем просто перекрестные ссылки между проектами; можно задать `InstallRoot` метаданные элементов в проекте, а также (используя те же методы, описанные выше).
+Изменения в проекте свойств применяются не только к ссылкам на проекты; метаданные `InstallRoot` можно также установить для элементов внутри проекта (используя те же методы, описанные выше).

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId | Документация Майкрософт
+title: IDebugПрограмма2::GetProgramId Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProgramId
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aba5ac3e17cb86219c065b5ed2372e127ad03dd2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8bb172f48b63ef2ec182f1a83d599a91eff1e2ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320771"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722773"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
-Возвращает идентификатор GUID для этой программы.
+Получает GUID для этой программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetProgramId( 
 
 ## <a name="parameters"></a>Параметры
 `pguidProgramId`\
-[out] Возвращает `GUID` для этой программы.
+(ваут) Возвращает `GUID` для этой программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Отладчик (DE) должен возвращать идентификатор программы, которая изначально была передана [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) или [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) методы. Благодаря этому код программы в отладчике компонентов.
+ Двигатель отладки (DE) должен вернуть идентификатор программы, первоначально передаваемый методам [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) или [Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md) Это позволяет идентифицировать программу по компонентам отладчика.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

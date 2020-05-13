@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Документация Майкрософт
+title: IDebugClassField::EnumBaseClasses Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumBaseClasses method
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5735ac6f0ecdf9d3f2a0e3bb868be092b8fdb7e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 12317c549050be31ac9e19bc7b3d8a6683f743d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349653"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734470"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
-Создает перечислитель для базовых классов данного класса.
+Создает регистратор для базовых классов этого класса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,13 +42,13 @@ int EnumBaseClasses(
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
 
-[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список базовых классов. Возвращает значение null, если нет базовых классов.
+(ваут) Возвращает объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список базовых классов. Возвращает нулевую стоимость, если нет базовых классов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK, возвращает S_SH_NO_BASE_CLASSES, если отсутствие базовых классов (и `ppEnum` установлено в значение null); в противном случае возвращает код ошибки.
+ В случае успеха, возвращает S_OK, возвращает S_SH_NO_BASE_CLASSES, `ppEnum` если нет базовых классов (и параметр установлен на нулевую стоимость); в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Базовые классы в объект перечислителя для построения указываются в порядке наиболее очевидное (или производный) базового класса для наиболее удаленных базового класса. Например если классы C++:
+ Базовые классы объекта, перечисляемого, указаны в порядке самого непосредственного (или наиболее производного) базового класса для самого удаленного базового класса. Например, с учетом классов СЗ:
 
 ```
 class Root { }
@@ -57,7 +57,7 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }
 ```
 
- Перечисление возвратит полные базовые классы в порядке `Level2`, `Level1`, `Root`.
+ Перечисление вернет базовые классы `Level2`в `Level1` `Root`порядке, .
 
 ## <a name="see-also"></a>См. также
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

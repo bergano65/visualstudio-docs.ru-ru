@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589647"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Исправление необнаруживаемых динамических параметров в веб-тесте производительности
@@ -237,7 +237,7 @@ ms.locfileid: "75589647"
 
      ![Замена текста параметром](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Параметр QueryString в запросе *JScriptQuery.aspx* обновляется новым параметром контекста:  CustomQueryString=jScriptQueryString___{{Param0}}.
+     Параметр QueryString в запросе *JScriptQuery.aspx* обновляется новым параметром контекста: CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Параметр, примененный к QueryString](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,7 +249,7 @@ ms.locfileid: "75589647"
 
 ## <a name="qa"></a>Вопросы и ответы
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Вопрос: Можно ли повторно обнаружить динамический параметр, если веб-приложение изменится?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Вопрос. Можно ли повторно обнаружить динамический параметр, если веб-приложение изменится?
 
 **Ответ.** Да, используйте следующую процедуру:
 
@@ -263,6 +263,6 @@ ms.locfileid: "75589647"
 
 2. Установите или снимите флажок рядом с динамическим параметром, для которого требуется выполнить автоматическую корреляцию. По умолчанию установлены флажки для всех динамических параметров.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Вопрос: Необходимо ли настраивать Visual Studio для обнаружения динамических параметров?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Вопрос. Необходимо ли настраивать Visual Studio для обнаружения динамических параметров?
 
 **Ответ.** Конфигурация Visual Studio по умолчанию предполагает обнаружение динамических параметров при записи веб-теста производительности. Однако если в параметрах Visual Studio отключено обнаружение динамических параметров или если тестируемое веб-приложение было изменено с добавлением дополнительных динамических параметров, можно запустить обнаружение динамических параметров из редактора веб-тестов производительности.

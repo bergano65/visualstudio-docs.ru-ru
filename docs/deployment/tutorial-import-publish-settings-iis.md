@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65680141"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS посредством импорта параметров публикации в Visual Studio
@@ -23,7 +23,7 @@ ms.locfileid: "65680141"
 
 Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio.
 
-В этом руководстве рассмотрены следующие задачи:
+Изучив данный учебник, вы научитесь:
 
 > [!div class="checklist"]
 > * Настройка IIS таким образом, чтобы вы могли создать файл параметров публикации.
@@ -36,7 +36,7 @@ ms.locfileid: "65680141"
 > [!NOTE]
 > Если вам нужно только скопировать профиль публикации Visual Studio (файл \*.pubxml) из одной установки Visual Studio в другую, можно найти профиль публикации *\<имя_профиля\>.pubxml* в папке *\\<имя_проекта\>\Properties\PublishProfiles* для управляемых типов проектов. Для веб-сайтов см. в папке *\App_Data*. Профили публикации являются XML-файлами MSBuild.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 ::: moniker range=">=vs-2019"
 
@@ -86,7 +86,7 @@ ms.locfileid: "65680141"
 
 После успешного развертывания приложение должно запускаться автоматически. Если оно не запускается из Visual Studio, запустите его в IIS. Для ASP.NET Core необходимо убедиться, что в поле "Пул приложений" для **DefaultAppPool** задано значение **Без управляемого кода**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом руководстве вы создали файл параметров публикации, импортировали его в Visual Studio и развернули приложение ASP.NET в IIS. Рекомендуем вам ознакомиться с общими сведениями о других параметрах публикации в Visual Studio.
 

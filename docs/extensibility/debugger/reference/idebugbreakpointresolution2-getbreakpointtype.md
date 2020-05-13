@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType | Документация Майкрософт
+title: IDebugBreakpointResolution2:GetBreakpointType Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8e8d7c77b9020df577e611f8a27116fa7a7b6db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352883"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734809"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-Получает тип точки останова, представленный данным разрешением.
+Получает тип точки разрыва, представленной в этой резолюции.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>Параметры
 `pBPType`\
-[out] Возвращает значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, указывающее тип данной точки останова.
+(ваут) Возвращает значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, которое определяет тип этой точки разрыва.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает значение E_FAIL, если `bpResLocation` в соответствующем поле [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структура не является допустимой.
+В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки. Возвраты E_FAIL, если `bpResLocation` поле в связанной структуре [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) недействительно.
 
 ## <a name="remarks"></a>Примечания
-Точка останова может быть код или точки останова по данным, например.
+Точкой разрыва может быть, например, код или точка разрыва данных.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для простого `CDebugBreakpointResolution` объекта, который предоставляет [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс.
+В следующем примере показано, как `CDebugBreakpointResolution` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

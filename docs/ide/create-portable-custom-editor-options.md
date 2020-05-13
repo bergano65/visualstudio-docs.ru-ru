@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589790"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648527"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -66,7 +66,7 @@ ms.locfileid: "75589790"
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- корневой
+- root
 
 Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md), в том числе соглашения о [языке](../ide/editorconfig-language-conventions.md), [форматировании](../ide/editorconfig-formatting-conventions.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
 
@@ -82,7 +82,7 @@ ms.locfileid: "75589790"
 
 1. В строке меню выберите **Проект** > **Добавить новый элемент** либо нажмите сочетание клавиш **CTRL**+**SHIFT**+**A**.
 
-   Откроется диалоговое окно **Добавление нового элемента**.
+   Откроется диалоговое окно **Добавление нового элемента** .
 
 1. В поле поиска введите строку **editorconfig**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "75589790"
 
 - [Функция определения кода](/visualstudio/intellicode/code-style-inference) IntelliCode для Visual Studio позволяет настроить стили кода по существующему коду. Она создает непустой файл EditorConfig с определенными параметрами для вашего стиля кода.
 
-- Начиная с Visual Studio 2019 вы можете [создать файл EditorConfig для настроенных параметров стиля кода](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) через пункт меню **Средства** > **Параметры**.
+- Начиная с Visual Studio 2019 вы можете [создать файл EditorConfig для настроенных параметров стиля кода](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) через пункт меню **Средства** > **Параметры**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Иерархия и приоритет файлов
 
@@ -178,7 +178,7 @@ dir .editorconfig /s
 
 Управлять областью действия соглашений EditorConfig можно с помощью свойства ```root=true``` в файле *EDITORCONFIG*, который находится в корне репозитория или в каталоге, где размещается проект. В Visual Studio поиск файла *EDITORCONFIG* выполняется в каталоге, где находится открытый файл, и во всех его родительских каталогах. Поиск завершается по достижении корня пути к файлу или при нахождении файла *EDITORCONFIG* с ```root=true```.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)

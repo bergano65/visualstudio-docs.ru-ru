@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricFile | Документация Майкрософт
+title: IDebugSettingsCallback2:GetEEMetricFile (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricFile
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 824b947af25ef825d4f02983e17ecad3105028f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322144"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720045"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Извлекает метрики файла вычислителя выражений, заданной имя или метрики.
+Извлекает файл метрики оценщика выражения с учетом имени или метрики.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ private int GetEEMetricFile(
 
 ## <a name="parameters"></a>Параметры
 `guidLang`\
-[in] Уникальный идентификатор языка программирования.
+(в) Уникальный идентификатор языка программирования.
 
 `guidVendor`\
-[in] Уникальный идентификатор поставщика.
+(в) Уникальный идентификатор поставщика.
 
 `pszMetric`\
-[in] Имя метрики.
+(в) Название метрики.
 
 `pbstrValue`\
-[out] Возвращает содержимое файла метрик в виде строки.
+(ваут) Возвращает содержимое метрического файла в виде строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

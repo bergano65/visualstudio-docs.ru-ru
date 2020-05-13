@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::CanSetObjectForVisualizer | Документация Майкрософт
+title: IEEVisualizerDataProvider::CanSetObjectForVisualizer Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::CanSetObjectForVisualizer method
 ms.assetid: 70fd3c6f-2f82-43a3-993b-c1dc8aa080bf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71fe6ed16bd1e80a13cfe97fe5ebcf84bc140da4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c4d3c190195360d37c15be12cef2790610928a95
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335614"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718128"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
-Этот метод определяет, имеют объект данных, который он представляет обновлен ли визуализатор.
+Этот метод определяет, может ли визуализатор обновлять объект данных, который он представляет.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int CanSetObjectForVisualizer(
 
 ## <a name="parameters"></a>Параметры
 `b`\
-[out] Ненулевое значение (`TRUE`), если можно обновить объект в визуализаторе, ноль (`FALSE`) Если это невозможно.
+(ваут) Nonzero`TRUE`( ), если объект на визуализаторе может быть обновлен, ноль (`FALSE`), если он не может.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Объект не может быть изменяемыми, если они связаны в память только для чтения, например.
+ Объект может быть неизменяемым, если он связан, например, с памятью только для чтения.
 
 ## <a name="see-also"></a>См. также
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

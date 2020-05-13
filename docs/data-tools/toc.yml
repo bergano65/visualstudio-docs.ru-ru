@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Средства Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Наборы данных
+    - name: DataSets
       items:
         - name: Средства набора данных
           href: dataset-tools-in-visual-studio.md
@@ -38,7 +38,7 @@
   items:
     - name: Создание базы данных
       href: create-a-sql-database-by-using-a-designer.md
-    - name: Подключения
+    - name: Соединения
       items:
         - name: Добавление подключений
           href: add-new-connections.md
@@ -116,7 +116,7 @@
               href: hierarchical-update.md
             - name: Обработка исключения параллелизма
               href: handle-a-concurrency-exception.md
-            - name: Транзакции
+            - name: Transactions
               items:
                 - name: Сохранение данных с помощью транзакции
                   href: save-data-by-using-a-transaction.md
@@ -142,7 +142,7 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: Разделение наборов данных и адаптеров таблиц TableAdapter по проектам
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Элементы управления
+    - name: Управление
       items:
         - name: Привязка элементов управления к источникам данных
           href: bind-controls-to-data-in-visual-studio.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Устранение ошибок доступа к данным
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Ссылка
+- name: Справочник
   items:
     - name: Реляционный конструктор объектов (Linq to SQL)
       items:
@@ -234,7 +234,7 @@
               href: the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md
             - name: Невозможно создать связь <association name> — типы свойств не соответствуют
               href: cannot-create-an-association-association-name-property-types-do-not-match.md
-            - name: 'Предупреждение. В диалоговом окне «Настройка режима» внесены изменения, которые еще не применены'
+            - name: 'Внимание! В диалоговом окне «Настройка режима» внесены изменения, которые еще не применены'
               href: warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md
             - name: Выбран объект базы данных из неподдерживаемого поставщика базы данных
               href: you-have-selected-a-database-object-from-an-unsupported-database-provider.md

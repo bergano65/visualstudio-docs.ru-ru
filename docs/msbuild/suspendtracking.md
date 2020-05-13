@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d48c29b9dcca477c5a5470c443be08d5060b413d
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 950c6a07a46f7f4b970912e576257a577021367e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578116"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632020"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
+
 Приостанавливает отслеживание в текущем контексте.
 
 ## <a name="syntax"></a>Синтаксис
@@ -32,10 +33,13 @@ HRESULT WINAPI SuspendTracking(void);
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
+
  **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было приостановлено.
 
 ## <a name="requirements"></a>Требования
+
  **Заголовок.** *FileTracker.h*
 
 ## <a name="see-also"></a>См. также
+
 - [ResumeTracking](../msbuild/resumetracking.md)

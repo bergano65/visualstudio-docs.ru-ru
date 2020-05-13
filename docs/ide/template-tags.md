@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189543"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153031"
 ---
 # <a name="add-tags-to-project-templates"></a>Добавление тегов к шаблонам проектов
 
@@ -56,7 +56,7 @@ ms.locfileid: "73189543"
 
 Можно использовать следующие необязательные атрибуты в сложных пользовательских сценариях.
 
-|Атрибут|ОПИСАНИЕ|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`Package`|Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
 |`ID`|Определяет идентификатор ресурса Visual Studio.|
@@ -77,7 +77,7 @@ ms.locfileid: "73189543"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|ОПИСАНИЕ|
+|Элемент|Описание|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Обязательный.) Определяет категорию шаблона и то, как он отображается в диалоговом окне **Новый проект** или **Добавление нового элемента**.|
 
@@ -93,7 +93,7 @@ ms.locfileid: "73189543"
 
 Ниже перечислены встроенные теги, доступные в Visual Studio. Соответствующие значения приводятся в скобках.
 
-| Язык | Платформа | Тип проекта |
+| Тег языка | Тег платформы | Тег типа проекта |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Облако (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Консоль (`console`) |

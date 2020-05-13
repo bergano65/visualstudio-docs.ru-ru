@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957321"
 ---
-# <a name="step-4-use-the-full-flask-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Flask
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Flask
 
-**Предыдущий шаг. [Обработка статических файлов, добавление страниц и использование наследования шаблонов](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Предыдущий шаг: [Обработка статических файлов, добавление страниц и использование наследования шаблонов](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Теперь, когда вы ознакомились с основами Flask, создав в Visual Studio приложение на основе шаблона для пустого проекта приложения Flask, вам будет легче создать более полное приложение с помощью шаблона "Веб-проект Flask".
 
@@ -33,7 +33,7 @@ ms.locfileid: "62957321"
 
 Эта статья также относится к шаблону "Веб-проект Flask/Jade", который создает приложение, идентичное приложению "Веб-проект Flask", с помощью модуля шаблонов Jade вместо Jinja. Дополнительные сведения представлены в конце этой статьи.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Шаг 4-1. Создание проекта на основе шаблона
+## <a name="step-4-1-create-a-project-from-the-template"></a>Шаг 4.1. Создание проекта на основе шаблона
 
 1. В Visual Studio перейдите к **обозревателю решений**, щелкните правой кнопкой мыши решение **LearningFlask**, созданное ранее в рамках этого руководства, и выберите **Добавить** > **Новый проект**. (Если же вы хотите использовать новое решение, вместо этого выберите **Файл** > **Создать** > **Проект**.)
 
@@ -84,7 +84,7 @@ ms.locfileid: "62957321"
 1. В **обозревателе решений** щелкните правой кнопкой мыши узел **Окружения Python** и выберите **Добавить существующее виртуальное окружение**.
 1. Перейдите к папке виртуального окружения и выберите ее. Затем нажмите кнопку **ОК**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Шаг 4-2. Сведения о представлениях и шаблонах страниц, созданных с использованием шаблона проекта
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Шаг 4.2. Сведения о представлениях и шаблонах страниц, созданных с использованием шаблона проекта
 
 При запуске проекта вы увидите, что приложение содержит три представления: домашняя страница, а также страницы со сведениями и контактными данными. Код этих представлений хранится в папке *FlaskWeb/views.py*. Каждая функция представления просто вызывает `flask.render_template` с путем к шаблону и переменный список аргументов для значений, присваиваемых шаблону. Например, страница "О программе" обрабатывается функцией `about` (декоратор которой обеспечивает маршрутизацию URL-адресов):
 
@@ -227,7 +227,7 @@ block content
 
 Вы можете поэкспериментировать с синтаксисами Jinja и Jade, чтобы понять, какой из них вам лучше подходит.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Шаблон веб-проекта опроса Flask](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
@@ -236,4 +236,4 @@ block content
 
 - [Написание первого приложения Flask. Часть 4 — формы и универсальные представления](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade на сайте GitHib (документация)](https://github.com/liuliqiang/pyjade) (github.com)
-- Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Исходный код, используемый в руководстве, на сайте GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

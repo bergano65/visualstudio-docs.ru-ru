@@ -1,17 +1,17 @@
 ---
-title: IntelliSense
+title: технология IntelliSense
 description: Сведения об использовании IntelliSense в Visual Studio для Mac
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405805"
 ---
-# <a name="intellisense"></a>IntelliSense
+# <a name="intellisense"></a>технология IntelliSense
 
 Технология IntelliSense предоставляет несколько функций, помогающих повысить удобство написания и редактирования кода. Например, в дополнение к завершению кода механизм IntelliSense также предоставляет списки членов, сведения о параметрах и краткие сведения.
 
@@ -23,21 +23,21 @@ ms.locfileid: "75405805"
 
 В окне завершения также предусмотрена поддержка фильтрации включаемых завершений по типу. Например, можно ограничить члены списка только такими типами, как классы или делегаты. Этот процесс фильтрации можно включить, щелкнув конкретный значок, представляющий тип, который будет фильтроваться, или с помощью сочетаний клавиш, соответствующих данному типу. Ниже перечислены значки, расположенные в нижней части окна завершения:
 
-| Значок                         | name          | Ключевое слово    | Сочетание клавиш |
+| Значок                         | Имя          | Ключевое слово    | Сочетание клавиш |
 | -----------------------------|---------------| -----------|--------|
 | ![Значок классов](media/classes-icon.png)  | class         | `class`    |  ⌥C
-| ![Значок константы](media/constant-icon.png) | константа      | `const`    |  ⌥O
+| ![Значок константы](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Значок делегата](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
 | ![Значок перечисления](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![Значок события](media/event-icon.png)    | event         |            |  ⌥V
 | ![Значок поля](media/fields-icon.png)   | поле         |            |  ⌥F
-| ![Значок интерфейса](media/interface-icon.png)| interface     | `interface`|  ⌥I
-| ![Значок ключевого слова](media/keyword-icon.png)  | ключевое-слово       |            |  ⌥K
+| ![Значок интерфейса](media/interface-icon.png)| интерфейс     | `interface`|  ⌥I
+| ![Значок ключевого слова](media/keyword-icon.png)  | ключевое слово       |            |  ⌥K
 | ![Значок метода](media/method-icon.png)   | method        |            |  ⌥M
-| ![Значок пространства имен](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
-| ![Значок свойств](media/props-icon.png)    | свойство;      |            |  ⌥P
-| ![Значок фрагмента кода](media/snippet-icon.png)  | Фрагмент кода       | `class`    |  ⌥S
-| ![Значок структуры](media/struct-icon.png)   | структура     | `struct`   |  ⌥S
+| ![Значок пространства имен](media/namespace-icon.png)| пространство имен     | `namespace`|  ⌥N
+| ![Значок свойств](media/props-icon.png)    | свойство      |            |  ⌥P
+| ![Значок фрагмента кода](media/snippet-icon.png)  | фрагмент кода       | `class`    |  ⌥S
+| ![Значок структуры](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
 
 Если щелкнуть любой из значков или нажать соответствующие сочетания клавиш, список завершения будет ограничен только типами, определенными набором фильтров.  
 
@@ -58,7 +58,7 @@ ms.locfileid: "75405805"
 
 Можно также вручную запустить окно параметров, введя `control-shift-space`. Когда курсор находится в позиции, где можно открыть список параметров, рядом с позицией курсора будет отображаться список параметров.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Быстрые действия (Visual Studio в Windows)](/visualstudio/ide/quick-actions)
 - [Рефакторинг кода (Visual Studio в Windows)](/visualstudio/ide/refactoring-in-visual-studio)

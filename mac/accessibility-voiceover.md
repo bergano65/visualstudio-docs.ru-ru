@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
 ms.openlocfilehash: 8f5cfc4c05ed3911370782185475b23112207c62
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985065"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>Использование VoiceOver с Visual Studio для Mac
@@ -26,7 +26,7 @@ ms.locfileid: "74985065"
 
 Ниже приведен список некоторых распространенных команд VoiceOver для Visual Studio для Mac.
 
-|Функция|ОПИСАНИЕ|Сочетание клавиш|
+|Функция|Описание|Сочетание клавиш|
 |-------|-----------|--------|
 |Перейти.|Навигация по всем элементам пользовательского интерфейса|**VO→**, **VO←**|
 |Перейти.|Шаг с заходом в элементы пользовательского интерфейса или выходом из них|**VO⇧↓**, **VO⇧↑**|

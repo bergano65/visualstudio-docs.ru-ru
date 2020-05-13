@@ -10,19 +10,19 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04656351b538aa71811bc32d6b45d735f5441441
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773209"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Сбор данных по использованию памяти, полученных из .NET Framework, с помощью командной строки профилировщика
 
 В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для клиентского (автономного) приложения .NET с использованием метода выборки в командной строке.
 
-## <a name="common-tasks"></a>Типичные задачи
+## <a name="common-tasks"></a>Стандартные задачи
 
-|Задача|Связанная информация|
+|Задача|См. также|
 |----------|---------------------|
 |**Запуск приложения и профилирование памяти .NET**|-   [Практическое руководство. Запуск приложения .NET Framework с профилировщиком для сбора данных об использовании памяти](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**Присоединение профилировщика к приложению ASP.NET**|-   [Практическое руководство. Присоединение профилировщика к приложению .NET Framework для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
@@ -32,7 +32,7 @@ ms.locfileid: "74773209"
 
 ### <a name="profile-stand-alone-applications"></a>Профилирование автономных приложений
 
-|Задача|Связанная информация|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование с помощью метода выборки**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**Профилирование с помощью метода инструментирования**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
@@ -41,7 +41,7 @@ ms.locfileid: "74773209"
 
 ### <a name="profile-net-memory-data"></a>Профилирование данных об использовании памяти .NET
 
-|Задача|Связанная информация|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование приложений ASP.NET**|-   [Сбор данных об использовании памяти](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
 |**Профилирование служб**|-   [Сбор данных об использовании памяти .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
@@ -49,5 +49,5 @@ ms.locfileid: "74773209"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Анализ представлений и отчетов данных об использовании памяти .NET
 - [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 - [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetDocumentContext | Документация Майкрософт
+title: IDebugCodeContext2::GetDocumentКонтекст Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetDocumentContext
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342401"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734341"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-Получает контекст документа, который соответствует этот контекст кода. Контекст документа представляет позицию в исходном файле, соответствующий исходный код, созданный этой инструкции.
+Получает контекст документа, соответствующий данному контексту кода. Контекст документа представляет собой позицию в исходном файле, которая соответствует исходному коду, который генерировал эту инструкцию.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>Параметры
 `ppSrcCxt`\
-[out] Возвращает [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объект, соответствующий контекст кода. Если `S_OK` возвращается, за должно быть отличным от`null`.
+(ваут) Возвращает объект [IDebugDocumentContext2,](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) соответствующий контексту кода. Если `S_OK` возвращается, ths должны`null`быть не- .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Модуль отладки должен вернуть код ошибки, такие как `E_FAIL` при `out` параметр `null` например когда контекст кода не имеет соответствующей исходной позиции.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Отладочный движок должен вернуть `E_FAIL` код `out` отказа, например, когда параметр например, `null` когда контекст кода не имеет связанного исходного положения.
 
 ## <a name="remarks"></a>Примечания
- Как правило контекст документа может рассматриваться как позиция в исходном файле хотя контекст кода — это положение инструкции кода в поток выполнения.
+ Как правило, контекст документа можно рассматривать как позицию в исходном файле, в то время как контекст кода — это позиция инструкции кода в потоке выполнения.
 
 ## <a name="see-also"></a>См. также
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

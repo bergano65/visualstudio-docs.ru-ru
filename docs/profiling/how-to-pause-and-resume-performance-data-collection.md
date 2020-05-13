@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Приостановка и возобновление сбора данных о производительности | Документация Майкрософт
+title: Практическое руководство. Приостановка и возобновление сбора данных о производительности | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778795"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Практическое руководство. Приостановка и возобновление сбора данных о производительности
@@ -38,6 +38,6 @@ ms.locfileid: "74778795"
 
   - Выберите **Остановить профилирование** для завершения сеанса профилирования и создания отчетов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Управление сбором данных](../profiling/controlling-data-collection.md)
-- [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)

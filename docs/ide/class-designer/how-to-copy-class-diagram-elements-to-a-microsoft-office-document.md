@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Копирование элементов диаграммы классов в документ Microsoft Office (конструктор классов)
+title: Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592247"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Практическое руководство. Копирование элементов диаграммы классов в документ Microsoft Office
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office
 
 Можно копировать фигуры из схемы классов .NET (файл *.cd*) в другие документы. В зависимости от типа документа, в который выполняется вставка, при вставке будет получена либо копия фигуры, либо ее базовый код. Сведения о копировании фигур из схем классов UML в проекте моделирования см. в статье [Экспорт схем в виде изображений](../../modeling/export-diagrams-as-images.md).
 
@@ -40,7 +40,7 @@ ms.locfileid: "75592247"
 
 Можно также выбрать команду **Копировать** вместо **Копировать изображение**. Команда **Копировать** копирует изображение как обычный точечный рисунок. Команда **Копировать изображение** копирует изображение как векторное изображение, что лучше подходит для большинства приложений Office.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Печать схем классов](how-to-print-class-diagrams.md)
-- [Практическое руководство. Экспорт диаграмм классов в виде изображений](how-to-export-class-diagrams-as-images.md)
+- [Практическое руководство. Печать диаграмм классов](how-to-print-class-diagrams.md)
+- [Практическое руководство. Экспорт диаграмм классов как изображений](how-to-export-class-diagrams-as-images.md)

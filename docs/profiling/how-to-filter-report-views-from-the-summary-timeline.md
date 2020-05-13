@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 191e54189677abc7d89d5f50064ceda6f2669f03
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778951"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале

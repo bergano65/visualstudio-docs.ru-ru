@@ -3,15 +3,16 @@ title: Вход в подписки Visual Studio с учетной запись
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Узнайте, как войти в вашу подписку Visual Studio с помощью учетной записи GitHub.
-ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944197"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233231"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Вход в подписки Visual Studio с учетной записью GitHub 
 
@@ -62,6 +63,12 @@ ms.locfileid: "75944197"
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Вопрос:  Я пытаюсь выполнить вход с помощью учетной записи GitHub, но получаю сообщение об имеющемся удостоверении Майкрософт, которое следует использовать вместо нее.  В чем причина?
 Ответ.  Если вы привязали адрес электронной почты Azure Active Directory к учетной записи GitHub, это значит, что у вас уже есть удостоверение Майкрософт для доступа к конвейерам непрерывной интеграции Azure и их запуска с помощью кода GitHub. Эта учетная запись гарантирует, что ресурсы и конвейеры сборки Azure остаются внутри вашей организации. Но если вы выполняете личные задачи, к учетной записи GitHub рекомендуется привязать личный адрес электронной почты, чтобы вы всегда могли обращаться к рабочим данным. После этого попробуйте войти еще раз и при появлении запроса на вход с использованием рабочей или учебной учетной записи выберите **Использовать другой адрес эл. почты**. В этом случае вы сможете создать учетную запись Майкрософт, используя личный адрес электронной почты.
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 После успешного входа на портал подписок мы рекомендуем ознакомиться со страницей преимуществ по адресу https://my.visualstudio.com/benefits и изучить превосходные инструменты, службы и предложения, доступные вам.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Документация Майкрософт
+title: IDebugBinder::Bind Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00d7e63b8a521ee25d2c7d378aeb82d064358ec9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344496"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736020"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Этот метод получает контекст в памяти или объект, содержащий текущее значение символа.
+Этот метод получает контекст памяти или объект, содержащий текущее значение символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,16 +45,16 @@ int Bind(
 
 ## <a name="parameters"></a>Параметры
 `pContainer`\
-[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , содержащая дочерние ссылается `pField`.
+(в) [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) содержащий ребенка, `pField`на которого ссылается .
 
 `pField`\
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , представляющий символ.
+(в) [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) представляющий символ.
 
 `ppObject`\
-[out] Возвращает `IDebugObject` , представляющий экземпляр символа.
+(ваут) Возвращает `IDebugObject` экземпляр символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

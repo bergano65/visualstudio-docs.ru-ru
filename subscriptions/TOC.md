@@ -2,7 +2,7 @@
 # [Новые возможности](whats-new-in-subscriptions.md)
 # Подписки
 ## Приобретение подписок
-### [Розничная версия](https://visualstudio.microsoft.com/vs/pricing)
+### [Розничная версия](buy-activate-retail.md)
 ### Облако 
 #### [Обзор](vscloud-overview.md)
 #### [Часто задаваемые вопросы о выставлении счетов](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Управление подписками для MPN](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## Войти 
-### [Активация розничных подписок](activate-store-subscriptions.md)
 ### [Вход с помощью учетных записей Майкрософт](sign-in-msa.md)
 ### [Вход с помощью рабочих или учебных учетных записей](sign-in-work.md)
 ### [Вход с использованием учетных данных GitHub](sign-in-github.md)
@@ -40,6 +39,7 @@
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Учетная запись разработчика Windows](vs-windows-dev.md)
+#### [Виртуальный рабочий стол Windows](vs-windows-virtual-desktop.md)
 ### Профессиональное развитие
 #### [Журнал CODE](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
@@ -74,10 +74,10 @@
 ### [Суперадминистраторы и администраторы](admin-roles.md)
 ### [Настройка параметров соглашения](admin-prefs.md)
 ### [Обзор](using-admin-portal.md)
-### [Видеоучебник. Использование портала администрирования](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Назначение подписок
 #### [Добавление отдельных пользователей](assign-license.md)
 #### [Добавление нескольких пользователей](assign-license-bulk.md)
+#### [Назначение конкретных подписок](assign-guid.md)
 ### [Изменение подписок](edit-license.md)
 ### [Удаление подписок](delete-license.md)
 ### [Поиск подписки](search-license.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590843"
 ---
 # <a name="set-language-specific-editor-options"></a>Настройка языковых параметров редактора
@@ -45,7 +45,7 @@ Visual Studio предлагает различные параметры тек�
 ["Параметры", "Текстовый редактор", XAML, "Форматирование"](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Описание параметров размещения элементов и атрибутов в документах XAML.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка редактора](../how-to-change-text-case-in-the-editor.md)
 - [Создание переносимых настраиваемых параметров редактора с EditorConfig](../../ide/create-portable-custom-editor-options.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetType | Документация Майкрософт
+title: IDebugField::GetType Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetType method
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c052f4b4c45080d8292dd8787c44777818bae585
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e052155524c962894af021bf5afdec50d182d68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333161"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728791"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
-Этот метод возвращает тип поля.
+Этот метод получает тип поля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetType(
 
 ## <a name="parameters"></a>Параметры
 `ppType`\
-[out] Возвращает тип поля, что и другой [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
+(ваут) Возвращает тип поля в качестве другого объекта [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

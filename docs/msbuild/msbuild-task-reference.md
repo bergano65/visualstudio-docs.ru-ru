@@ -15,37 +15,37 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593880"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865327"
 ---
 # <a name="msbuild-task-reference"></a>Справочник по задачам MSBuild
 
-Задачи содержат код, который выполняется в процессе сборки. Задачи в следующем списке входят в состав [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. После установки [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] станут доступны дополнительные задачи, используемые для создания проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Дополнительные сведения см. в разделе [Задачи C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Задачи содержат код, который выполняется в процессе сборки. Задачи в следующем списке входят в состав MSBuild. После установки рабочей нагрузки C++ станут доступны дополнительные задачи, используемые для создания проектов C++. Дополнительные сведения см. в разделе [Задачи C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Помимо параметров, перечисленных в подразделах этого раздела, у каждой задачи существуют следующие параметры:
 
 | Параметр | Описание |
 |-------------------| - |
-| `Condition` | Необязательный параметр `String`.<br /><br /> Выражение `Boolean`, на основании которого механизм [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] определяет, будет ли выполняться эта задача. Сведения о поддерживаемых в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] условиях см. в статье [об условиях MSBuild](../msbuild/msbuild-conditions.md). |
+| `Condition` | Необязательный параметр `String`.<br /><br /> Выражение `Boolean`, на основании которого механизм MSBuild определяет, будет ли выполняться эта задача. Сведения о поддерживаемых в MSBuild условиях см. в статье об [условиях](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Необязательный параметр. Может содержать одно из следующих значений:<br /><br /> -   **WarnAndContinue** или **true**. При сбое задачи последующие задачи в элементе [Target](../msbuild/target-element-msbuild.md) и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как предупреждения.<br />-   **ErrorAndContinue**. При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.<br />-   **ErrorAndStop** или **false** (значение по умолчанию). При сбое задачи остальные задачи в элементе `Target` и сборке не выполняются, и считается, что возник сбой всего элемента `Target` и всей сборки.<br /><br /> Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.<br /><br /> Дополнительные сведения см. в разделе [Практическое руководство. Игнорирование ошибок в задачах](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Содержание раздела
 
 - [Базовый класс Task](../msbuild/task-base-class.md)
 
- Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Utilities.Task>.
+ Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Utilities.Task>. Не предназначен для непосредственного использования.
 
 - [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md)
 
- Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.TaskExtension>.
+ Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.TaskExtension>. Не предназначен для непосредственного использования.
 
 - [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)
 
- Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>.
+ Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Не предназначен для непосредственного использования.
 
 - [Задача AL (компоновщик сборок)](../msbuild/al-assembly-linker-task.md)
 
@@ -85,7 +85,7 @@ ms.locfileid: "75593880"
 
 - [Задача CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Создает имя манифеста в стиле [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] на основе заданного имени *RESX*-файла или другого ресурса.
+ Создает имя манифеста в стиле C# на основе заданного имени *RESX*-файла или другого ресурса.
 
 - [Задача CreateItem](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ ms.locfileid: "75593880"
 
 - [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Создает имя манифеста в стиле [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] на основе заданного имени *RESX*-файла или другого ресурса.
+ Создает имя манифеста в стиле Visual Basic на основе заданного имени *RESX*-файла или другого ресурса.
 
 - [Задача Csc](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ ms.locfileid: "75593880"
 
 - [Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)
 
- Создает манифест приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] или собственный манифест.
+ Создает манифест приложения ClickOnce или собственный манифест.
 
 - [Задача GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ ms.locfileid: "75593880"
 
 - [Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 
- Создает манифест развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ Создает манифест развертывания ClickOnce.
 
 - [Задача GenerateResource](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ ms.locfileid: "75593880"
 
 - [Задача GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 
- Извлекает путь к [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
+ Извлекает путь к пакету средств разработки программного обеспечения (SDK) Windows.
 
 - [Задача GetReferenceAssemblyPaths](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -197,7 +197,7 @@ ms.locfileid: "75593880"
 
 - [Задача MSBuild](../msbuild/msbuild-task.md)
 
- Выполняет сборку проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] на основе другого проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Выполняет сборку проектов MSBuild из другого проекта MSBuild.
 
 - [Задача ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)
 

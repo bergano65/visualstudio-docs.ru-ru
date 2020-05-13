@@ -1,33 +1,33 @@
 ---
-title: Сохранение свойства элемента проекта | Документация Майкрософт
+title: Сохранение свойства элемента проекта (ru) Документы Майкрософт
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02055e4e9f25f98193e8b27d42326589aef47762
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15c280f15436a5e27bcc0dcc4d2fb9e9bdd82933
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336120"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702212"
 ---
-# <a name="persist-the-property-of-a-project-item"></a>Сохранить свойство элемента проекта
-Вы можете сохранить свойства, добавляемого элемента проекта, такие как автор исходного файла. Это можно сделать путем сохранения свойства в файле проекта.
+# <a name="persist-the-property-of-a-project-item"></a>Сохранение свойства элемента проекта
+Может потребоваться сохранить свойство, добавленное к элементу проекта, например, автор утеса исходного файла. Это можно сделать, хранив свойство в файле проекта.
 
- Первым шагом для сохранения свойства в файл проекта является для получения иерархии проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс. Этот интерфейс можно получить с помощью службы автоматизации или с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. После получения интерфейс, его можно использовать для определения, какой элемент проекта выбран в данный момент. Получив идентификатор элемента проекта, можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> для добавления свойства.
+ Первым шагом к сохранению свойства в файле проекта является получение <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> иерархии проекта в качестве интерфейса. Вы можете получить этот интерфейс либо <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>с помощью автоматизации или с помощью . Как только вы получите интерфейс, вы можете использовать его, чтобы определить, какой элемент проекта в настоящее время выбран. После того, как у вас <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> есть идентификатор элемента проекта, вы можете использовать для добавления свойства.
 
- В следующих процедурах сохранения *VsPkg.cs* свойство `Author` со значением `Tom` в файле проекта.
+ В следующих процедурах *VsPkg.cs* сохраняется `Author` VsPkg.cs `Tom` свойства со значением в файле проекта.
 
-## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Для получения иерархии проекта с помощью объекта DTE
+## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Получение иерархии проекта с объектом DTE
 
-1. Добавьте следующий код к VSPackage:
+1. Добавьте следующий код в ваш VSPackage:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -39,9 +39,9 @@ ms.locfileid: "66336120"
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Сохранить свойство элемента проекта с помощью объекта DTE
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Сохранение свойства элемента проекта с объектом DTE
 
-1. Добавьте приведенный ниже код в метод в предыдущей процедуре:
+1. Добавьте следующий код к коду, приведенному в методе предыдущей процедуры:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -56,9 +56,9 @@ ms.locfileid: "66336120"
     }
     ```
 
-## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Для получения иерархии проекта, с помощью IVsMonitorSelection
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Для получения иерархии проекта с помощью IVsMonitorSelection
 
-1. Добавьте следующий код к VSPackage:
+1. Добавьте следующий код в ваш VSPackage:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -100,9 +100,9 @@ ms.locfileid: "66336120"
     }
     ```
 
-## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Для сохранения выбранного проекта свойство item, учитывая иерархии проекта.
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Сохранение выбранного свойства элемента проекта, учитывая иерархию проекта
 
-1. Добавьте приведенный ниже код в метод в предыдущей процедуре:
+1. Добавьте следующий код к коду, приведенному в методе предыдущей процедуры:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -113,18 +113,18 @@ ms.locfileid: "66336120"
     }
     ```
 
-## <a name="to-verify-that-the-property-is-persisted"></a>Чтобы убедиться, что свойство сохраняется
+## <a name="to-verify-that-the-property-is-persisted"></a>Проверить, сохраняется ли свойство
 
-1. Запустить [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и затем откройте или создайте решение.
+1. Начните, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] а затем откройте или создайте решение.
 
-2. Выберите проект элемент VsPkg.cs в **обозревателе решений**.
+2. Выберите элемент проекта VsPkg.cs в **Solution Explorer.**
 
-3. Использовать точки останова или в противном случае определить загрузку пакета VSPackage и что SetItemAttribute выполняется.
+3. Используйте точку разрыва или иным образом определить, что ваш VSPackage загружается и что SetItemAttribute работает.
 
    > [!NOTE]
-   > Вы можете автозагрузки VSPackage в контексте UI <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Дополнительные сведения см. в разделе [пакетов VSPackage нагрузки](../extensibility/loading-vspackages.md).
+   > Вы можете автоматизать VSPackage <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>в контексте uI. Для получения дополнительной [информации см.](../extensibility/loading-vspackages.md)
 
-4. Закрыть [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и затем откройте файл проекта в блокноте. Вы должны увидеть \<Author > тег со значением Tom, следующим образом:
+4. Закройте, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] а затем откройте файл проекта в блокноте. Вы должны \<увидеть автор> тег со значением Том, следующим образом:
 
    ```xml
    <Compile Include="VsPkg.cs">

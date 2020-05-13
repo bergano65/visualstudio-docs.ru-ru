@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73715876"
 ---
 # <a name="create-razor-web-apps"></a>Создание веб-приложений Razor
@@ -74,6 +74,6 @@ Visual Studio для Mac поддерживает редактирование R
 
 Этот файл содержит код, который настраивает поведение приложения, например требуется ли согласие для файлов cookie. Подробные сведения см. в статье [Запуск приложения в ASP.NET Core](/aspnet/core/fundamentals/startup).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 Подробное руководство по созданию веб-приложений Razor см. в статье [Введение в Razor Pages в ASP.NET Core](/aspnet/core/razor-pages/index).

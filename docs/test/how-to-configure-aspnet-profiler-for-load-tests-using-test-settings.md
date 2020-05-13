@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77c501f6c7915c7eff1ebd8a4f9308c89bd46e8d
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091708"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880238"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка профилировщика ASP.NET для нагрузочного тестирования с помощью параметров тестирования в Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "77091708"
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Этот адаптер диагностических данных нельзя применять к тестам, выполняемым с помощью Microsoft Test Manager. Диагностический адаптер профилировщика ASP.NET можно применять только с нагрузочными тестами, использующими веб-сайты, для которых требуется Visual Studio Enterprise.
+> Этот адаптер диагностических данных недопустимо использовать для выполнения тестов в Microsoft Test Manager (не рекомендуется в Visual Studio 2017). Диагностический адаптер профилировщика ASP.NET можно применять только с нагрузочными тестами, использующими веб-сайты, для которых требуется Visual Studio Enterprise.
 
 Адаптер диагностических данных профилировщика ASP.NET позволяет собирать данные профилировщика ASP.NET с уровня приложения во время выполнения нагрузочного теста. Профилировщик нельзя использовать для продолжительных нагрузочных тестов (например, для нагрузочных тестов, которые выполняются больше часа). Это объясняется тем, что размер файла профилировщика может стать слишком большим и достичь нескольких сотен мегабайт. Вместо этого с профилировщиком ASP.NET следует запускать более короткие нагрузочные тесты; при этом можно по-прежнему пользоваться преимуществами более глубокой диагностики проблем производительности.
 

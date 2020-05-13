@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | Документация Майкрософт
+title: DEBUG_ADDRESS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc25fb53db918486029e931a06a9e2de37f81c5a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe778ba3ed80930a4cd7b4fa1170f286b3ccf6ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346309"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737520"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
+# <a name="debug_address"></a>DEBUG_ADDRESS
 Эта структура представляет адрес.
 
 ## <a name="syntax"></a>Синтаксис
@@ -50,23 +50,23 @@ public struct DEBUG_ADDRESS {
 Идентификатор процесса.
 
 `guidModule`\
-Идентификатор GUID модуля, содержащего этот адрес.
+GUID модуля, содержащего этот адрес.
 
 `tokClass`\
-Токен, идентифицирующий класс или тип этого адреса.
+Токен, определяющий класс или тип этого адреса.
 
 > [!NOTE]
-> Это значение относится к поставщика символов и поэтому не имеет общие значения отличное от как идентификатор для типа класса.
+> Это значение характерно для поставщика символов и поэтому не имеет общего значения, кроме как идентификатор для типа класса.
 
 `addr`\
-Объект [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуру, которая содержит объединение структур, которые описывают типы отдельных адресов. Значение `addr`.`dwKind` поступает из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления, который объясняет, как интерпретировать объединение.
+Структура [DEBUG_ADDRESS_UNION,](../../../extensibility/debugger/reference/debug-address-union.md) которая содержит объединение структур, описывающие индивидуальные типы адресов. Значение `addr`.`dwKind` происходит от [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления, в котором объясняется, как интерпретировать союз.
 
 ## <a name="remarks"></a>Примечания
-Эта структура передается [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) метод для заполнения.
+Эта структура передается методу [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) для заполнения.
 
-**Предупреждение [C++ только]**
+**Предупреждение только с КИ**
 
-Если `addr.dwKind` — `ADDRESS_KIND_METADATA_LOCAL` и если `addr.addr.addrLocal.pLocal` не имеет значение null, то нужно вызвать `Release` маркеров указателя:
+Если `addr.dwKind` `ADDRESS_KIND_METADATA_LOCAL` это `addr.addr.addrLocal.pLocal` и если это не нулевое значение, то вы должны вызвать `Release` указатель токенов:
 
 ```
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -78,7 +78,7 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 ## <a name="requirements"></a>Требования
 Заголовок: sh.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

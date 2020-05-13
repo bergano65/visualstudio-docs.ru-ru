@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2 | Документация Майкрософт
+title: IDebugProgramNode2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2 interface
 ms.assetid: 80e511d8-9b40-4a85-aa5d-952fa5ee6ae7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6a48f660302d39c9cfa75503ac7ca4a8c526a7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e6eac7c97b9d375f32e36a372d6f31175c79098
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351084"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721913"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
-Этот интерфейс представляет собой программу, которые можно отлаживать.
+Этот интерфейс представляет собой программу, которую можно отладить.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,32 +28,32 @@ ms.locfileid: "66351084"
 IDebugProgramNode2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Отладчик (DE) или пользовательский порт поставщик реализует этот интерфейс для представления программы, которые можно отлаживать. Этот интерфейс обычно реализуется на тот же объект, реализующий [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс. Этот интерфейс зарегистрирован [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] путем вызова [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Отладка двигателя (DE) или пользовательский поставщик порта реализует этот интерфейс для представления программы, которая может быть отлажена. Этот интерфейс обычно реализуется на том же объекте, который реализует интерфейс [IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Этот интерфейс зарегистрирован [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] по телефону [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовите [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) для возвращения этого интерфейса. Пользовательский порт поставщика получает этот интерфейс, посредством вызова [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). DE получает этот интерфейс, посредством вызова [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Позвоните [GetProviderProgramNode,](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) чтобы вернуть этот интерфейс. Поставщик пользовательских портов получает этот интерфейс через звонок [в AddProgramNode.](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) DE получает этот интерфейс через вызов [для присоединения.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugProgramNode2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|Возвращает имя программы.|
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|Получает имя процесса, размещающего программы.|
-|[GetHostPid](../../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)|Получает системный идентификатор процесса для процесса, размещающего программы.|
-|[GetHostMachineName_V7](../../../extensibility/debugger/reference/idebugprogramnode2-gethostmachinename-v7.md)|РЕКОМЕНДУЕТСЯ К ИСПОЛЬЗОВАНИЮ. НЕ ИСПОЛЬЗУЙТЕ.|
-|[Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)|РЕКОМЕНДУЕТСЯ К ИСПОЛЬЗОВАНИЮ. НЕ ИСПОЛЬЗУЙТЕ. См. в разделе [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) интерфейс альтернативный подход.|
-|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)|Возвращает имя и идентификатор DE, выполнение программы.|
-|[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|РЕКОМЕНДУЕТСЯ К ИСПОЛЬЗОВАНИЮ. НЕ ИСПОЛЬЗУЙТЕ.|
+|[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|Получает название программы.|
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|Получает название процесса размещения программы.|
+|[GetHostPid](../../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)|Получает идентификатор системного процесса для процесса размещения программы.|
+|[GetHostMachineName_V7](../../../extensibility/debugger/reference/idebugprogramnode2-gethostmachinename-v7.md)|Устаревшие. НЕ ИСПОЛЬЗУЙТЕ.|
+|[Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)|Устаревшие. НЕ ИСПОЛЬЗУЙТЕ. Ознакомиться с интерфейсом [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) можно поальтернативным.|
+|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)|Получает имя и идентификатор DE, запуская эту программу.|
+|[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|Устаревшие. НЕ ИСПОЛЬЗУЙТЕ.|
 
 ## <a name="remarks"></a>Примечания
- Диспетчер отладки сеансов (SDM) обычно вызывает [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) для получения этого интерфейса.
+ Менеджер отладки сеанса (SDM) обычно вызывает [GetProviderProgramNode,](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) чтобы получить этот интерфейс.
 
 ## <a name="requirements"></a>Требования
  Заголовок: Msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Документация Майкрософт
+title: IDebugProcessEx2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c27a03a09a6073ebab8d7a2dd5f60218066d474
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723337"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Этот интерфейс позволяет сеанс отладки manager (SDM) рассылать уведомления процесса, присоединение или отсоединение от процесса.
+Этот интерфейс позволяет диспетчеру отладки сеанса (SDM) уведомлять процесс, к который он прикрепляется или отделяется от процесса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,27 +28,27 @@ ms.locfileid: "66311602"
 IDebugProcessEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Пользовательский порт поставщик реализует этот интерфейс на один и тот же объект как [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) интерфейс, в следующем порядке:
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик пользовательских портов реализует этот интерфейс на том же объекте, что и интерфейс [IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md) чтобы:
 
-- Отслеживание поддержки сеансы, подключенные к процессу
+- Отслеживание сеансов поддержки, подключенных к процессу
 
-- Поддержка автоматического присоединения через несколько отладчиков
+- Поддержка автоматического присоединения через несколько двигателей отладки
 
-  Если он выбирает поставщика пользовательского порта можно реализовать этот интерфейс.
+  Поставщик пользовательских портов может реализовать этот интерфейс, если он выбирает.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
+## <a name="notes-for-callers"></a>Заметки для абонентов
 
-- Вызовы SDM [QueryInterface](/cpp/atl/queryinterface) на `IDebugProcess2` интерфейс для получения этого интерфейса.
+- SDM вызывает [queryInterface](/cpp/atl/queryinterface) `IDebugProcess2` на интерфейсе для того чтобы получить этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugProcessEx2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Информирует процесса о том, что сеанс теперь является отладка процесса.|
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Информирует процесса о том, что сеанс больше не является отладка процесса.|
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Добавляет узлы программы список обработчиков отладки.|
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Информирует процесс о том, что сеанс теперь отлажет процесс.|
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Информирует процесс о том, что сеанс больше не отлаживает процесс.|
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Добавляет узлы программы для списка отладоть двигатели.|
 
 ## <a name="remarks"></a>Примечания
  Этот интерфейс является закрытым между SDM и процессом.
@@ -56,7 +56,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="requirements"></a>Требования
  Заголовок: Portpriv.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

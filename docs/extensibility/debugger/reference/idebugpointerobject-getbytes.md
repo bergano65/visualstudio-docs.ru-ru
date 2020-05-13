@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Документация Майкрософт
+title: IDebugPointerObject::GetBytes Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308868"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725513"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Получает значение, на которую указывает как ряд последовательных байтах.
+Получает значение, указано в виде серии последовательных байтов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,22 +47,22 @@ int GetBytes(
 
 ## <a name="parameters"></a>Параметры
 `dwStart`\
-[in] Указывает смещение в байтах от начала объекта.
+(в) Смещение, в байтах, с самого начала объекта указал.
 
 `dwCount`\
-[in] Число байтов для получения.
+(в) Количество байтов для извлечения.
 
 `pBytes`\
-[in, out] Массив, который заполняется значение как ряд последовательных байтах, начиная с заданного смещения из объекта, на которые указывают.
+(в, вне) Массив, заполняемый значением в виде серии последовательных байтов, начиная с заданного смещения от объекта, на который указывается.
 
 `pdwBytes`\
-[out] Возвращает число фактически извлеченных байтов.
+(ваут) Возвращает количество байтов, фактически извлеченных.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод используется в том случае, если указатель, представленного этим объектом [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) указывает на тип-примитив или простого массива типов-примитивов (то есть массив, могут быть представлены простые последовательности байтов).
+ Этот метод используется, если указатель, представленный этим [IDebugPointerObject,](../../../extensibility/debugger/reference/idebugpointerobject.md) указывает на примитивный тип или простой массив примитивных типов (т.е. массив, который может быть представлен простой последовательностью байтов).
 
 ## <a name="see-also"></a>См. также
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

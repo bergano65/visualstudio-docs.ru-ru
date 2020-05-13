@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Attach | Документация Майкрософт
+title: IDebugProgram2::Прикрепите Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Attach
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca0d696067cecc042a0fa6eb071a92f18ac229fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7d0b182ba7a873816e3a7aa32d39beb2c63cc5ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311411"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723133"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
-Присоединение к программе.
+Прикрепляется к программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,19 +41,19 @@ int Attach( 
 
 ## <a name="parameters"></a>Параметры
 `pCallback`\
-[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для уведомления о событии отладки.
+(в) Объект [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) который будет использоваться для уведомления о событиях.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны некоторые возможные коды ошибок.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. В следующей таблице показаны некоторые возможные коды ошибок.
 
 |Значение|Описание|
 |-----------|-----------------|
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Указанная программа уже присоединен к отладчику.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Произошло нарушение безопасности во время процедуры подключения.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Отладчику не удается присоединить классическую программу.|
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Указанная программа уже прикреплена к отладчику.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Нарушение безопасности произошло во время процедуры присоединения.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|К отладчику не может быть прикреплена настольная программа.|
 
 ## <a name="remarks"></a>Примечания
- Отладчик (DE) никогда не вызывает этот метод, чтобы присоединиться к программе. Если DE выполняется в адресном пространстве программы, [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) вызывается метод. Если выполняется DE в диспетчер отладки сеансов (SDM) адресное пространство, [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) вызывается метод.
+ Отладочная движок (DE) никогда не вызывает этот метод для присоединения к программе. Если DE работает в адресном пространстве программы, называется метод [OnAttach.](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Если DE выполняется в пространстве адреса диспетчера сеанса (SDM), вызывается метод [Присоединения.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

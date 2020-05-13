@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7443ba29a743f4936ae104d9d0bb556fae3c4e2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595388"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167427"
 ---
 # <a name="csc-task"></a>Csc - задача
+
 Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).
 
 ## <a name="parameters"></a>Параметры
+
 В следующей таблице приводятся параметры задачи `Csc` .
 
 | Параметр | Описание |
@@ -65,13 +67,13 @@ ms.locfileid: "75595388"
 | `OutputRefAssembly` | Необязательный параметр `String`.<br /><br /> Задает имя выходного файла базовой сборки. Дополнительные сведения см. в разделе [-refout (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option). |
 | `PdbFile` | Необязательный параметр `String`.<br /><br /> Задает имя файла отладочной информации. По умолчанию используется имя файла выходных данных с расширением *.pdb*. |
 | `Platform` | Необязательный параметр `String`.<br /><br /> Указывает целевую платформу процессора для выходного файла. Этот параметр может иметь значение `x86`, `x64` или `anycpu`. Значение по умолчанию — `anycpu`. Дополнительные сведения см. в разделе [-platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option). |
-| `References` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Вызывает импорт задачей информации об открытых типах из заданных элементов в текущий проект. Дополнительные сведения см. в разделе [-reference (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Вы можете задать псевдоним ссылки [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] в файле [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], добавив метаданные `Aliases` к исходному элементу Reference. Например, требуется установить псевдоним LS1 в следующей командной строке CSC.<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Для этого используется следующий код.<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
+| `References` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Вызывает импорт задачей информации об открытых типах из заданных элементов в текущий проект. Дополнительные сведения см. в разделе [-reference (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Вы можете задать псевдоним ссылки C# в файле MSBuild, добавив метаданные `Aliases` к исходному элементу "Reference". Например, требуется установить псевдоним LS1 в следующей командной строке CSC.<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Для этого используется следующий код.<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
 | `Resources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Внедряет ресурс .NET Framework в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/resource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-resource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
 | `ResponseFiles` | Необязательный параметр `String`.<br /><br /> Задает файл ответов, содержащий команды для этой задачи. Дополнительные сведения см. в документации синтаксиса [@ (указание файла ответа)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option). |
-| `Sources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает один или несколько файлов исходного кода [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
+| `Sources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает один или несколько исходных файлов C#. |
 | `TargetType` | Необязательный параметр `String`.<br /><br /> Задает формат выходного файла. Этот параметр может принимать одно из следующих значений: `library` (создается библиотека кода), `exe` (создается консольное приложение), `module` (создается модуль) или `winexe` (создается программа Windows). Значение по умолчанию — `library`. Дополнительные сведения см. в разделе [-target (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option). |
 | `TreatWarningsAsErrors` | Необязательный параметр `Boolean`.<br /><br /> Если этот параметр равен `true`, все предупреждения обрабатываются как ошибки. Дополнительные сведения см. в разделе [-warnaserror (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option). |
-| `UseHostCompilerIfAvailable` | Необязательный параметр `Boolean`.<br /><br /> Предписывает задаче использовать внутрипроцессный объект компилятора, если он доступен. Используется только в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
+| `UseHostCompilerIfAvailable` | Необязательный параметр `Boolean`.<br /><br /> Предписывает задаче использовать внутрипроцессный объект компилятора, если он доступен. Используется только в Visual Studio. |
 | `Utf8Output` | Необязательный параметр `Boolean`.<br /><br /> Регистрирует выходные данные компилятора в кодировке UTF-8. Дополнительные сведения см. в разделе [-utf8output (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/utf8output-compiler-option). |
 | `WarningLevel` | Необязательный параметр `Int32`.<br /><br /> Задает уровень предупреждений, которые должны отображаться компилятором. Дополнительные сведения см. в разделе [-warn (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option). |
 | `WarningsAsErrors` | Необязательный параметр `String`.<br /><br /> Задает список предупреждений, которые следует обрабатывать как ошибки. Дополнительные сведения см. в разделе [-warnaserror (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Этот параметр переопределяет параметр `TreatWarningsAsErrors`. |
@@ -80,10 +82,10 @@ ms.locfileid: "75595388"
 | `Win32Manifest` | Необязательный параметр `String`.<br /><br /> Задает манифест Win32, который требуется включить. |
 | `Win32Resource` | Необязательный параметр `String`.<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Примечания
-Помимо перечисленных выше параметров, эта задача наследует параметры от класса `Microsoft.Build.Tasks.ManagedCompiler`, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Пример
+
 В следующем примере задача `Csc` используется для компиляции исполняемого файла из исходных файлов в коллекции элементов `Compile`.
 
 ```xml
@@ -94,5 +96,6 @@ ms.locfileid: "75595388"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

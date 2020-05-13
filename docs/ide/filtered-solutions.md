@@ -11,17 +11,17 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72650839"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Фильтрация решений в Visual Studio
 
 Крупные группы разработчиков часто совместно работают в рамках одного большого решения с множеством проектов. При этом отдельные разработчики обычно работают с небольшим подмножеством таких проектов. Для повышения производительности при открытии больших решений в Visual Studio 2019 добавлена возможность *фильтрации решений*. Фильтры решений позволяют открыть решение с выборочной загрузкой проектов. Загрузка подмножества проектов в решении уменьшает время загрузки, сборки и тестирования решения и позволяет проводить более сфокусированную проверку.
 
-Доступны следующие возможности.
+Список доступных возможностей:
 
 - Вы можете быстрее перейти к коду, открыв решение без загрузки проектов. Открыв решение, вы можете выбрать, какие проекты следует загрузить.
 
@@ -102,7 +102,7 @@ devenv /donotloadprojects MySln.sln
 
 !["Открыть" > "Последние" в Visual Studio](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка вложения файлов в обозревателе решений](file-nesting-solution-explorer.md)
 - [Оптимизация производительности Visual Studio](optimize-visual-studio-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION | Документация Майкрософт
+title: BP_LOCATION_RESOLUTION Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_RESOLUTION structure
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: d728c0aae749caa661ae4cb8f29e13f9cd1827fb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353065"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737954"
 ---
-# <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
-Описывает разрешение точку останова в определенном месте.
+# <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
+Описывает разрешение точки разрыва в определенном месте.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,15 +34,15 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 ## <a name="members"></a>Участники
 `pResolution`\
-[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) объект, который определяет тип точки останова и сведения о разрешении.
+Объект [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) определяет тип точки разрыва и информацию о ее разрешении.
 
 ## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.
+Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуры в составе профсоюза.
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

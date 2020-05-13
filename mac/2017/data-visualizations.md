@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984755"
 ---
 # <a name="data-visualizations"></a>Визуализации данных
@@ -43,12 +43,12 @@ Rectangle/RectangleF или CGRect в iOS и Mac отображает разме
 
 [Визуализация координат](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Цвет
+## <a name="color"></a>Color
 Отображает свойства UIColor, CGColor и Color, представляющие предварительный просмотр цветов, компоненты модели RGBA, значения оттенка, насыщенности и освещенности, а также шестнадцатеричное значение цвета:
 
 ![Визуализация цветов](media/data-visualizations-image14.png)
 
-## <a name="images"></a>Образы
+## <a name="images"></a>Изображения
 
 Носитель отрисовывается в масштабе вплоть до максимального размера 250 пикселей, после чего масштабируется для сохранения размера:
 
@@ -60,7 +60,7 @@ Rectangle/RectangleF или CGRect в iOS и Mac отображает разме
 
 ![Визуализация кривых Безье](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Строка
+## <a name="string"></a>String
 
 Строка из менее чем 100 символов отображается полностью без предварительного просмотра. Более длинные строки отображаются полностью в режиме предварительного просмотра. Строки можно редактировать, а в визуализаторе имеется кнопка "Изменить", позволяющая изменить строковое значение в области предварительного просмотра или в редакторе строковых значений, как показано ниже:
 
@@ -96,12 +96,12 @@ IEnumerable перечисляет все значения, каждое из к
   * Отображается в формате (,).
 * **Null**
   * Отображает значение "null".
-* **URL**
+* **URL-адрес**
   * Отображает активную гиперссылку.
 * **IntPtr**
   * Отображает шестнадцатеричное представление IntPtr.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Проверка переменных в окнах "Видимые" и "Локальные" (Visual Studio в Windows)](/visualstudio/debugger/autos-and-locals-windows)
 - [Просмотр строк в средстве визуализации (Visual Studio в Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

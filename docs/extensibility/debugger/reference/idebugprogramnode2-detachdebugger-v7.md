@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Документация Майкрософт
+title: IDebugProgramNode2::DetachDebugger-V7 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger
 - IDebugProgramNode2::DetachDebugger_V7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 241db5db55897932120b3253ff5185cb852ea77b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351208"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722106"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> РЕКОМЕНДУЕТСЯ К ИСПОЛЬЗОВАНИЮ. НЕ ИСПОЛЬЗУЙТЕ.
+> Устаревшие. НЕ ИСПОЛЬЗУЙТЕ.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Реализация всегда должны возвращать `E_NOTIMPL`.
+Реализация должна всегда `E_NOTIMPL`возвращаться.
 
 ## <a name="remarks"></a>Примечания
 
 > [!WARNING]
-> Начиная с Visual Studio 2005, этот метод больше не используется и всегда должны возвращать `E_NOTIMPL`.
+> По состоянию на Visual Studio 2005, этот `E_NOTIMPL`метод больше не используется и всегда должен вернуться .
 
-Этот метод вызывается, когда отладчик неожиданно завершает работу. При вызове этого метода, DE следует возобновить программы, как если бы, если пользователь отсоединены от него. Следует отправлять дальнейшие события отладки. Программа должна находиться в состоянии там, где это присоединяемого элемента из другой экземпляр отладчика.
+Этот метод вызывается при неожиданном выходе отладчика. Когда этот метод вызывается, DE должен возобновить программу, как будто пользователь оторван от нее. Больше не следует отправлять события отладки. Программа должна находиться в состоянии, когда она может быть прикреплена из другого экземпляра отладчика.
 
 ## <a name="see-also"></a>См. также
 

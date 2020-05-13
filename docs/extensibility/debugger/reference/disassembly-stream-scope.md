@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE | Документация Майкрософт
+title: DISASSEMBLY_STREAM_SCOPE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 724e32f83cfec31c2bacdab661407983af87efe6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318246"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737269"
 ---
-# <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
-Задает область потока Дизассемблированный код.
+# <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
+Определяет область потока разборки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,26 +48,26 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 ## <a name="fields"></a>Поля
 `DSS_HUGE`\
-Указывает, что Дизассемблирование контекст кода будет создавать дополнительные выходные данные, чем клиент обычно необходимо получить в одном вызове.
+Указывается, что разборка контекста кода создаст больше выходных данных, чем обычно требуется клиенту в одном вызове.
 
 `DSS_FUNCTION`\
-Указывает, что функции, содержащиеся в контексте кода должны быть дизассемблирован. Указывает, что поток Дизассемблированный код представляет функцию, при возврате [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) метод.
+Уточняется, что функция, содержащаяся в контексте кода, должна быть разобрана. Уточняется, что поток разборки представляет собой функцию, когда возвращается методом [GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
 
 `DSS_MODULE`\
-При возврате `IDebugDisassemblyStream2::GetScope` методом, указывает, что поток Дизассемблированный код представляет модуль.
+При возвращении `IDebugDisassemblyStream2::GetScope` методом указывается, что поток разборки представляет собой модуль.
 
 `DSS_ALL`\
-Указывает Дизассемблированный код для во всем адресном пространстве.
+Определяет разборку для всего адресного пространства.
 
 ## <a name="remarks"></a>Примечания
-Передается в качестве аргумента для [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) метод и возвращенный [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) метод.
+Прошел в качестве аргумента методу [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) и возвращен методом [GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
 
-Эти значения могут объединяться с побитовым объектом `OR`.
+Эти значения могут быть объединены `OR`с bitwise .
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

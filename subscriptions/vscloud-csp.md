@@ -1,17 +1,18 @@
 ---
 title: Приобретение облачной подписки Visual Studio для поставщиков облачных решений
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Сведения для поставщиков облачных решений о приобретении облачных подписок Visual Studio для клиентов и управлении ими.
-ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851405"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273872"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Покупайте облачные подписки Visual Studio для ваших клиентов и управляйте ими
 Партнеры программы [Поставщик облачных решений (CSP)](https://partner.microsoft.com/cloud-solution-provider) могут приобретать облачные подписки на Visual Studio Enterprise и Visual Studio Professional для своих клиентов.
@@ -105,3 +106,11 @@ ms.locfileid: "75851405"
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Вопрос: Существуют ли специальные цены на средства Azure для разработки и тестирования для поставщиков облачных решений?
 Ответ. Пока что нет. Ваши клиенты могут воспользоваться [расценками на средства для разработки и тестирования Azure](https://azure.microsoft.com/pricing/dev-test/), но мы не предлагаем специальные условия для поставщиков облачных решений.
 
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Следующие шаги
+Ответы на распространенные вопросы о выставлении счетов см. в статье [Вопросы и ответы о выставлении счетов за облачные подписки](vscloud-billing-faq.md).  

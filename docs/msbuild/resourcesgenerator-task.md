@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579606"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632515"
 ---
 # <a name="resourcesgenerator-task"></a>Задача ResourcesGenerator
-Задача <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> внедряет один или несколько ресурсов (*JPG*, *ICO*, *BMP* и [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичном формате, а также другие типы расширений) в файл *RESOURCES*.
+
+Задача <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> внедряет один или несколько ресурсов (*JPG*, *ICO*, *BMP* и XAML в двоичном формате, а также другие типы расширений) в файл *RESOURCES*.
 
 ## <a name="task-parameters"></a>Параметры задачи
 
@@ -36,6 +37,7 @@ ms.locfileid: "77579606"
 |`ResourcesFiles`|Обязательный параметр **ITaskItem[]** .<br /><br /> Определяет один или несколько ресурсов для внедрения в созданный файл *RESOURCES*.|
 
 ## <a name="example"></a>Пример
+
  Следующий пример создает файл *RESOURCES* с одним ресурсом *BMP*. Ресурс *BMP* создается в каталоге, который расположен относительно корневого каталога проекта.
 
 ```xml
@@ -53,6 +55,7 @@ ms.locfileid: "77579606"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

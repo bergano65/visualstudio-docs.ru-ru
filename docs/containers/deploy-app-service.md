@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027289"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Развертывание контейнера ASP.NET Core в Службе приложений Azure с помощью Visual Studio
@@ -21,9 +21,9 @@ ms.locfileid: "77027289"
 
 Если у вас еще нет подписки Azure, [создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs), прежде чем начинать работу.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
-Для работы с этим руководством вам понадобится следующее:
+Для работы с этим руководством:
 
 ::: moniker range="vs-2017"
 - Установите последнюю версию [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) с рабочей нагрузкой "ASP.NET и разработка веб-приложений"
@@ -40,7 +40,7 @@ ms.locfileid: "77027289"
 ::: moniker range="vs-2017"
 1. В меню Visual Studio выберите **Файл > Создать > Проект**.
 2. В разделе **Шаблоны** диалогового окна **Новый проект** выберите **Visual C# > Веб-проект**.
-3. Выберите **Новое веб-приложение ASP.NET Core**.
+3. Выберите **Веб-приложение ASP.NET Core**.
 4. Присвойте новому приложению имя (или оставьте имя по умолчанию) и нажмите кнопку **ОК**.
 5. Выберите **Веб-приложение**.
 6. Поставьте флажок **Включить поддержку Docker**.
@@ -98,10 +98,10 @@ ms.locfileid: "77027289"
 
 На портале Azure выберите **Группы ресурсов**, а затем выберите группу ресурсов, чтобы открыть страницу сведений о ней. Проверьте, та ли это группа ресурсов, а затем выберите **Удалить группу ресурсов**, введите имя и щелкните **Удалить**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [Службе приложений Azure в Linux](/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Развертывание в Реестр контейнеров Azure](hosting-web-apps-in-docker.md)

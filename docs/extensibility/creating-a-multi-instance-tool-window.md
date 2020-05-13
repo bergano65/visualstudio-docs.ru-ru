@@ -1,38 +1,38 @@
 ---
-title: Создание многоэкземплярного окна инструментов | Документация Майкрософт
+title: Создание окна инструмента Multi-Instance (фото) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c31f1c439db69b3795d789758b0604a539ef81
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33585f623f846e16200d430ad2c886fe0874b537
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341631"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739622"
 ---
-# <a name="create-a-multi-instance-tool-window"></a>Создание многоэкземплярного окна инструментов
-Окно инструментов можно программировать таким образом, чтобы несколько экземпляров могут быть открыты одновременно. По умолчанию окна инструментов может иметь только один экземпляр открыть.
+# <a name="create-a-multi-instance-tool-window"></a>Создание окна инструмента с несколькими экземплярами
+Вы можете запрограммировать окно инструмента так, чтобы несколько экземпляров его можно было открыть одновременно. По умолчанию окна инструмента могут иметь только один экземпляр открытым.
 
-При использовании многоэкземплярного окна инструментов, можно отобразить несколько связанных источников информации, в то же время. Например, можно поместить несколько строк <xref:System.Windows.Forms.TextBox> контролировать многоэкземплярного окна инструментов, таким образом, чтобы несколько фрагментов кода одновременно доступны во время программирования сеанса. Кроме того, к примеру, можно поместить <xref:System.Windows.Forms.DataGrid> управления и стрелку раскрывающегося списка в поле многоэкземплярного окна инструментов, чтобы одновременно может отслеживаться несколько источников данных в реальном времени.
+При использовании окна инструмента мультиinstancea можно отобразить одновременно несколько связанных источников информации. Например, можно поместить многолинейный <xref:System.Windows.Forms.TextBox> элемент управления в окно инструмента нескольких экземпляров, чтобы несколько фрагментов кода были одновременно доступны во время сеанса программирования. Кроме того, например, <xref:System.Windows.Forms.DataGrid> можно поместить окно списка управления и выпадения в окно инструмента с несколькими экземплярами, чтобы одновременно отслеживать несколько источников данных в режиме реального времени.
 
-## <a name="create-a-basic-single-instance-tool-window"></a>Создание базового (единственной) окна инструментов
+## <a name="create-a-basic-single-instance-tool-window"></a>Создание базового (одноэкземплярного) окна инструмента
 
-1. Создайте проект с именем **MultiInstanceToolWindow** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **MIToolWindow**.
+1. Создайте проект под названием **MultiInstanceToolWindow** с помощью шаблона VSIX и добавьте шаблон пользовательского окна инструмента под названием **MIToolWindow.**
 
     > [!NOTE]
-    > Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Для получения дополнительной информации о создании расширения с окном инструмента [см. Создать расширение с окном инструмента.](../extensibility/creating-an-extension-with-a-tool-window.md)
 
-## <a name="make-a-tool-window-multi-instance"></a>Сделать экземпляр несколькими окна инструментов
+## <a name="make-a-tool-window-multi-instance"></a>Сделать окно инструмента мультиэкземпляром
 
-1. Откройте *MIToolWindowPackage.cs* файл и найдите `ProvideToolWindow` атрибута. и `MultiInstances=true` параметра, как показано в следующем примере:
+1. Откройте *файл MIToolWindowPackage.cs* `ProvideToolWindow` и найдите атрибут. и `MultiInstances=true` параметр, как показано в следующем примере:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -44,15 +44,15 @@ ms.locfileid: "66341631"
     {. . .}
     ```
 
-2. В *MIToolWindowCommand.cs* найдите `ShowToolWindos()` метод. В этом методе, вызывать <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод и набор его `create` флаг `false` таким образом, чтобы он будет использовать перебор существующих экземпляров окна инструментов до является доступным `id` найден.
+2. В *MIToolWindowCommand.cs* файле `ShowToolWindos()` найдите метод. В этом методе <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> вызовите `create` метод `false` и установите его флаг таким образом, чтобы `id` он итерироваться через существующие экземпляры окна инструмента до тех пор, пока не будет найден доступный.
 
-3. Чтобы создать экземпляр окна инструментов, вызовите <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод и задайте его `id` доступное значение и его `create` флаг `true`.
+3. Чтобы создать экземпляр окна инструмента, <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> позвоните `id` в метод и `create` установите его на доступное значение, а его флаг — на `true`.
 
-    По умолчанию значение `id` параметр <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод `0`. Это значение делает окно инструментов с единственным экземпляром. Для более чем один экземпляр для размещения, каждый экземпляр должен иметь свой собственный уникальный `id`.
+    По умолчанию значение `id` параметра <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метода. `0` Это значение создает окно инструмента одного экземпляра. Для более чем одного экземпляра, который будет `id`размещен, каждый экземпляр должен иметь свой собственный уникальный .
 
-4. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект, возвращаемый <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> свойства экземпляра окна инструментов.
+4. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> на объект, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> который возвращается свойством экземпляра окна инструмента.
 
-5. По умолчанию `ShowToolWindow` метод, который создается с помощью шаблона элемента окна инструментов создает окно инструментов с единственным экземпляром. В следующем примере показано, как изменить `ShowToolWindow` метод для создания нескольких экземпляров.
+5. По умолчанию `ShowToolWindow` метод, создаваемый шаблоном элемента «окно инструмента», создает окно инструмента одного экземпляра. В следующем примере показано, как изменить `ShowToolWindow` метод для создания нескольких экземпляров.
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

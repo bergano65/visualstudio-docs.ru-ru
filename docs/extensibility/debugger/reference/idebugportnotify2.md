@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2 | Документация Майкрософт
+title: IDebugPortNotify2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2 interface
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1b1934a73e096200eba1370320cc0b55eb46ac5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 49d3d1161d488ed4a9e12b7af6b70bf336c9f286
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724919"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
-Этот интерфейс регистрирует или отменяет регистрацию программы, которые можно отлаживать с портом, в котором он выполняется на.
+Этот интерфейс регистрирует или отменяет программу, которая может быть отлажена с портом, на который она работает.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,27 +28,27 @@ ms.locfileid: "66308892"
 IDebugPortNotify2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Поставщик настраиваемого порта реализует этот интерфейс для поддержки добавления и удаления программ из порта. Обычно он реализован в тот же объект, реализующий [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик пользовательских портов реализует этот интерфейс для поддержки добавления и удаления программ из порта. Обычно он реализуется на том же объекте, который реализует интерфейс [IDebugPort2.](../../../extensibility/debugger/reference/idebugport2.md)
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызов [QueryInterface](/cpp/atl/queryinterface) на `IDebugPort2` интерфейс возвращает этот интерфейс. Кроме того, вызов [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) возвращает этот интерфейс. Модуль отладки можно увидеть этот интерфейс в качестве параметра [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Звонок [в QueryInterface](/cpp/atl/queryinterface) `IDebugPort2` на интерфейсе возвращает этот интерфейс. Кроме того, вызов [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) возвращает этот интерфейс. Отладка двигателя может видеть этот интерфейс в качестве параметра [для WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugPortNotify2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Регистрирует порт, на котором он выполняется на программы, которые можно отлаживать.|
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Отменяет регистрацию программы, можно отлаживать из порт, к которому он работает под управлением.|
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Регистрирует программу, которая может быть отлажена с портом, на который она работает.|
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Отрегистрирует программу, которая может быть отлажена из запущенного в нее порта.|
 
 ## <a name="remarks"></a>Примечания
- Не узнать, при загрузке или выгрузке программ отладки, пользовательский порт поставщик должен реализовывать этот интерфейс. Все программы, которые загружаются для отладки через определенный порт, отслеживаются с помощью этого интерфейса.
+ Если у порта отладки есть способ узнать, когда программы загружаются или разгружаются, поставщик пользовательских портов должен реализовать этот интерфейс. Все программы, загруженные для отладки через определенный порт, отслеживаются с помощью этого интерфейса.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

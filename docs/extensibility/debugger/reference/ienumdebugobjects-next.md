@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::Next | Документация Майкрософт
+title: IEnumDebugОбъекты::Следующий Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Next method
 ms.assetid: e54c3055-6030-4dc9-9f7a-5e3ce75f252f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b0f96246b6442cf852a01d0080f54565939b8e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 99b2bc35b63a4e97f888365f1d11231ae620b69c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339532"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716334"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 Этот метод возвращает следующий набор элементов из перечисления.
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Параметры
 `celt`\
-[in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
+[in] Количество получаемых элементов. Также указывается максимальный размер `rgelt` массива.
 
 `rgelt`\
-[in, out] Массив [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) элементов для заполнения.
+(в, вне) Массив элементов [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) которые должны быть заполнены.
 
 `pceltFetched`\
-[out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
+(ваут) Возвращает количество элементов, `rgelt`фактически возвращенных в .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает, `S_FALSE` если меньше, чем просили количество элементов может быть возвращено; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

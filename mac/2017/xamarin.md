@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.openlocfilehash: bba9d3490c12e661277b82dd08d6d7862ec3a8aa
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983453"
 ---
 # <a name="xamarin-mobile-app-development"></a>Разработка мобильных приложений Xamarin
@@ -45,7 +45,7 @@ Xamarin включает собственные привязки к API для
 > [!Note]
 > Эти продукты можно использовать только с подпиской Visual Studio Enterprise.
 
-### <a name="profiler"></a>профилировщик
+### <a name="profiler"></a>Profiler
 
 В Xamarin Profiler доступно три инструмента для профилирования. В руководстве [Introduction to the Xamarin Profiler](/xamarin/tools/profiler/index?tabs=macos) (Знакомство с Xamarin Profiler) рассказывается, что измеряют эти инструменты и как они анализируют приложение, а также поясняется значение данных, представленных на каждом экране.
 

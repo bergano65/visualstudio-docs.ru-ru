@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d34d8edca64987f9b6c4648bef1f239aca4d5ba
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594946"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631657"
 ---
 # <a name="touch-task"></a>Touch - задача
+
 Задает время доступа и изменения файлов.
 
 ## <a name="parameters"></a>Параметры
- В следующей таблице приводятся параметры задачи `Touch` .
 
-|Параметр|Описание|
+ В следующей таблице приводятся параметры задачи `Touch`.
+
+|Параметр|Description|
 |---------------|-----------------|
 |`AlwaysCreate`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, создаются файлы, которые еще не существуют.|
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет коллекцию файлов для изменения.|
@@ -39,10 +41,12 @@ ms.locfileid: "75594946"
 |`Time`|Необязательный параметр `String`.<br /><br /> Задает время, отличное от текущего. Формат должен быть допустимым для метода <xref:System.DateTime.Parse%2A>.|
 |`TouchedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию успешно измененных элементов.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
  В следующем примере используется задача `Touch` для изменения времени доступа и изменения файлов, указанных в элементе `Files` коллекции с последующим размещением списка успешно измененных файлов в коллекцию элементов `FilesTouched`.
 
 ```xml
@@ -63,6 +67,7 @@ ms.locfileid: "75594946"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сериализация сведений о символах | Документация Майкрософт
+title: Практическое руководство. Сериализация сведений о символах | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 202c30b1786e7e3ddb27583ddaeda9180d680b53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774891"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Практическое руководство. Сериализация сведений о символах
@@ -26,7 +26,7 @@ ms.locfileid: "74774891"
 
 ### <a name="to-automatically-serialize-symbol-information"></a>Автоматическая сериализация сведений о символах
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите команду **Параметры**.
 
      Откроется диалоговое окно **Параметры**.
 
@@ -34,7 +34,7 @@ ms.locfileid: "74774891"
 
 3. В разделе **Общие параметры** выберите **Автоматическая сериализация символьной информации**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 - [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [Практическое руководство. Сохранение файлов проанализированного отчета](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

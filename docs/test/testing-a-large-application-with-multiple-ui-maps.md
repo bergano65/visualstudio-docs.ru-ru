@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590297"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Тестирование крупного приложения с несколькими картами пользовательского интерфейса
@@ -56,7 +56,7 @@ ms.locfileid: "75590297"
 
 2. Щелкните правой кнопкой мыши папку `UIMaps`, выберите **Добавить**, а затем выберите **Создать элемент**.
 
-    Откроется диалоговое окно **Добавление нового элемента**.
+    Откроется диалоговое окно **Добавление нового элемента** .
 
    > [!NOTE]
    > Чтобы добавить новую карту закодированного теста ИП, необходимо быть в проекте закодированного теста ИП.
@@ -139,7 +139,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

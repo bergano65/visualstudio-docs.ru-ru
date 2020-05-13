@@ -3,15 +3,16 @@ title: Управление подписками Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706972"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444883"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -51,7 +52,6 @@ ms.locfileid: "74706972"
 **Подписки, предлагаемые по программам:**  если вы получили подписку по программе, она связана с вашим участием в программе. За дополнительными сведениями обратитесь к контактным лицам программы.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -105,10 +105,24 @@ ms.locfileid: "74706972"
 |    Сервисный центр корпоративного лицензирования (VLSC)              |    180          |
 |    Соглашение Microsoft Products and Services Agreement (MPSA)    |    180          |
 |    Облачные подписки Visual Studio                   |    180          |
-|    Программа (например, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Программа (например, MCT, MPN, Imagine)          |    180          |
 |    Не для продажи (например, MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
 > [!NOTE]
 > - Если вы решили закрыть учетную запись Майкрософт или Azure AD, ваши личные данные будут немедленно преобразованы в анонимные.
 > - Мы не удаляем личные данные полностью при наличии активных подписок.
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Следующие шаги
+Вы управляете подписками для организации?  Узнайте больше об управлении подписками Visual Studio:
+- [Назначение отдельных подписок](assign-license.md)
+- [Назначение нескольких подписок](assign-license-bulk.md)
+- [Изменение подписок](edit-license.md)
+- [Удаление подписок](delete-license.md)
+- [Определение максимального использования](maximum-usage.md)

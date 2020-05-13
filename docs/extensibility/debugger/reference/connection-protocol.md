@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Документация Майкрософт
+title: CONNECTION_PROTOCOL Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346527"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737648"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Указывает протокол, используемый для обмена данными между сервером отладки и отладки пакета (DE).
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
+Указывает протокол, используемый для связи между сервером отладки и пакетом отладки (DE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,33 +53,33 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Поля
 `CONNECTION_NONE`\
-Нет подключение к серверу.
+Подключение к серверу не установлено.
 
 `CONNECTION_UNKNOWN`\
-Подключение установлено, но это неизвестного типа.
+Соединение было сделано, но оно неизвестного типа.
 
 `CONNECTION_LOCAL`\
-Соединение предназначено для локального сервера.
+Подключение к локальному серверу.
 
 `CONNECTION_PIPE`\
-Подключение осуществляется через именованный канал.
+Соединение происходит через именованные трубы.
 
 `CONNECTION_TCPIP`\
-Соединение использует протокол TCP/IP.
+Соединение использует TCP/IP.
 
 `CONNECTION_HTTP`\
-Соединение использует протокол HTTP (с помощью веб-сервера).
+Соединение использует HTTP (через веб-сервер).
 
 `CONNECTION_OTHER`\
-Было установлено какое-либо иное подключения (это значение не используется в настоящее время).
+Установлен другой тип соединения (это значение в настоящее время не используется).
 
 ## <a name="remarks"></a>Примечания
-Эти значения возвращаются из [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) метод.
+Эти значения возвращаются из метода [GetConnectionProtocol.](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

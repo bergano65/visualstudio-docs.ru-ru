@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Compare | Документация Майкрософт
+title: IDebugДокументКонтекст2:Сравнение Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::Compare
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f21b338511890879d805ce49377554719070604
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b0e46f765c8e4c0e12c3bb9447e0713919fae7b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344394"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731891"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-Сравнивает этот контекст документа, в указанный массив контекстов документа.
+Сравнивает контекст этого документа с данным массивом контекстов документов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,22 +47,22 @@ int Compare( 
 
 ## <a name="parameters"></a>Параметры
 `compare`\
-[in] Значение из [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) перечисление, указывающее тип выполняемого сравнения.
+(в) Значение из [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) перечисления, которое определяет тип сравнения.
 
 `rgpDocContextSet`\
-[in] Массив [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, представляющие контекстов документа, с которым производится сравнение.
+(в) Массив объектов [IDebugDocumentContext2,](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) представляющих контексты документов.
 
 `dwDocContextSetLen`\
-[in] Длина массива контекстов документа для сравнения.
+(в) Длина массива контекстов документов для сравнения.
 
 `pdwDocContext`\
-[out] Возвращает индекс в `rgpDocContextSet` массив первый контекст документа, который удовлетворяет условию сравнения.
+(ваут) Возвращает индекс в `rgpDocContextSet` массив контекста первого документа, удовлетворяя сравнение.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает `S_OK` Если найдено соответствие. Возвращает `S_FALSE` Если совпадений не найдено. В противном случае возвращается код ошибки.
+ Возвращается, `S_OK` если совпадение найдено. Возвращает, `S_FALSE` если не найдено совпадений. В противном случае возвращается код ошибки.
 
 ## <a name="remarks"></a>Примечания
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, передаваемые в массиве должны реализовываться тот же механизм отладки, который реализует `IDebugDocumentContext2` вызванный объект; в противном случае сравнение будет недопустимым.
+ [Объекты IDebugDocumentContext2,](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) которые передаются в массиве, должны быть реализованы тем же движком отладки, который реализует вызов `IDebugDocumentContext2` объекта; в противном случае сравнение неявляется.
 
 ## <a name="see-also"></a>См. также
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

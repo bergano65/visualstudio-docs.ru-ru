@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2 | Документация Майкрософт
+title: IDebugObject2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2 interface
 ms.assetid: ef640967-8adb-4793-994d-ae1736510891
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f027fd08c38433d5f1357e56d90df96e223854
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e468b5a282ffb5466d57a3c9b1a37aa3ae8643ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317253"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726073"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии CLR, пожалуйста, ознакомьтесь с [clR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образцом управляемого оценщика экспрессии.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
- Этот интерфейс предоставляет дополнительные сведения об объекте.
+ Этот интерфейс предоставляет дополнительную информацию об объекте.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,37 +31,37 @@ ms.locfileid: "66317253"
 IDebugObject2 : IDebugObject
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Средство оценки выражений реализует этот интерфейс для предоставления поддержки для псевдонимов и доступ к информации об объекте.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Оценщик выражения реализует этот интерфейс, чтобы предложить поддержку псевдонимов и доступ к информации об объекте.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) интерфейса можно получить этот интерфейс, используя [QueryInterface](/cpp/atl/queryinterface). Кроме того [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) возвращает этот интерфейс.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Интерфейс [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) может получить этот интерфейс с помощью [queryInterface.](/cpp/atl/queryinterface) Кроме того, [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) возвращает этот интерфейс.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) интерфейс, `IDebugObject2` интерфейс реализует следующее:
+## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
+ В дополнение к методам на интерфейсе [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) `IDebugObject2` интерфейс реализует следующие:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|Получает поле или переменная (если таковые имеются), может резервного свойства, представленного этим объектом.|
-|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugobject2-geticordebugvalue.md)|Получает объект управляемого кода, представляющий значение этого объекта.|
-|[CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)|Создает уникальный идентификатор для данного объекта или возвращает существующий псевдоним.|
-|[GetAlias](../../../extensibility/debugger/reference/idebugobject2-getalias.md)|Возвращает псевдоним, связанный с данным объектом, если таковые имеются.|
-|[GetField](../../../extensibility/debugger/reference/idebugobject2-getfield.md)|Возвращает тип этого объекта.|
-|[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|Определяет, представляет ли этот объект сведений о пользователях.|
-|[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Определяет ли изменить и продолжить состояние больше не является допустимым.<br /><br /> Вычислитель пользовательское выражение не реализует этот метод (всегда должны возвращать `E_NOTIMPL`).|
+|[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|Получает поле или переменную (если таковая имеется), которая может поддерживать свойство, представленное этим объектом.|
+|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugobject2-geticordebugvalue.md)|Получает управляемый объект кода, представляющий значение этого объекта.|
+|[CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)|Создает уникальный идентификатор для этого объекта или возвращает существующий псевдоним.|
+|[GetAlias](../../../extensibility/debugger/reference/idebugobject2-getalias.md)|Получает псевдоним, связанный с этим объектом, если таковые имеется.|
+|[GetField](../../../extensibility/debugger/reference/idebugobject2-getfield.md)|Получает тип этого объекта.|
+|[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|Определяет, представляет ли этот объект данные пользователей.|
+|[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Определяет, является ли состояние Edit and Continue недействительным.<br /><br /> Пользовательский оценщик выражения не реализует этот `E_NOTIMPL`метод (он должен всегда возвращаться).|
 
 ## <a name="remarks"></a>Примечания
- См. в разделе [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) обсуждение псевдонимы.
+ Смотрите [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) для обсуждения псевдонимов.
 
 ## <a name="requirements"></a>Требования
  Заголовок: ee.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
-- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Интерфейсы вычисления выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
-- [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)
+- [Getobject](../../../extensibility/debugger/reference/idebugalias-getobject.md)

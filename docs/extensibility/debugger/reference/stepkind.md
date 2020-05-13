@@ -1,5 +1,5 @@
 ---
-title: STEPKIND | Документация Майкрософт
+title: СТЕПКИНД Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ed2877c880d3cd2674f62b4f900a6e923bb29d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329161"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713559"
 ---
 # <a name="stepkind"></a>STEPKIND
-Задает тип шага для пошагового выполнения.
+Определяет вид шага для шага.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,27 +48,27 @@ public enum enum_STEPKIND { 
 
 ## <a name="fields"></a>Поля
  `STEP_INTO`\
- Шаг с заходом в функцию.
+ Шаги в функцию.
 
  `STEP_OVER`\
- Шаги с обходом функции.
+ Шаги над функцией.
 
  `STEP_OUT`\
- Выходит из функции.
+ Выйти из функции.
 
  `STEP_BACKWARDS`\
- Переход обратно в функцию.
+ Шаги назад в функцию.
 
 ## <a name="remarks"></a>Примечания
- Передается в качестве аргумента для [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод.
+ Прошел в качестве аргумента методу [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
+title: IDebugBinder3::GetTypeArgumentCount Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArgumentCount method
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9dff83d4d9c09ebc2572fa3897ae528d2adce4b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db43ed4dc178cf5080822e2dc387b5faa4bc5cd1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330763"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735708"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
-Этот метод возвращает число типов аргументов, связанный с данным объектом.
+Этот метод возвращает количество типов аргументов, связанных с этим объектом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetTypeArgumentCount(
 
 ## <a name="parameters"></a>Параметры
 `uCount`\
-[out] Количество типов аргументов, связанный с данным объектом.
+(ваут) Количество типов аргументов, связанных с этим объектом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Значение, возвращаемое этим методом позволяют выделить память для массива для использования с [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) метод.
+ Значение, возвращенное этим методом, может быть использовано для выделения массива для использования с помощью метода [GetTypeArguments.](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

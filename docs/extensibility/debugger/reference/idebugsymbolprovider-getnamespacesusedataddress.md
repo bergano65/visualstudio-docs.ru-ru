@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Документация Майкрософт
+title: IDebugSymbolProvider::GetNamespacesUsedAtAddress Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: adf78f67d9da92c0024b34ec53fc10f772b66ca1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347547"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719207"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Этот метод создает перечислитель для пространств имен, связанных с адресом отладки.
+Этот метод создает регистратор для областей имен, связанных с адресом отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetNamespacesUsedAtAddress(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-[in] Адрес отладки.
+(в) Адрес отладки.
 
 `ppEnum`\
-[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) перечислитель для пространств имен.
+(ваут) Возвращает регистратор [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) для пространства имен.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Может существовать несколько пространств имен, связанных с заданной отладочной адрес, например, вложенные пространства имен или нескольких `using` инструкций.
+ Может быть несколько областей имен, связанных с данным адресом `using` отладки, например, вложенные пространства имен или несколько инструкций.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

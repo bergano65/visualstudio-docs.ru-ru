@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2 | Документация Майкрософт
+title: IDebugExpression2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2 interface
 ms.assetid: f5e4b124-1e30-47c8-a511-80084a02dba5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 694db3cc5292f11f1718a51e31deec4a8e456b54
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2e23ad4f673e4e150ea677d993c5b36a4e386c2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325978"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729690"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
-Этот интерфейс представляет проанализированное выражение готовой для привязки и оценки.
+Этот интерфейс представляет собой разогнанные выражения, готовые к связыванию и оценке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,32 +28,32 @@ ms.locfileid: "66325978"
 IDebugExpression2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс, представляющий проанализированное выражение, готовое к вычислению.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс, чтобы представить разогнанные выражения, готовые к оценке.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызов [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) возвращает этот интерфейс. [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) возвращает [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс. Эти интерфейсы доступны только в том случае, когда был приостановлен отлаживаемой программы и доступен кадр стека.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Звонок в [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) возвращает этот интерфейс. [GetExpressionExpression возвращает](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) интерфейс [IDebugExpressionExpression2.](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) Эти интерфейсы доступны только тогда, когда отладка программы приостановлена и доступна рамка стека.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugExpression2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Асинхронно вычисляет это выражение.|
-|[Abort](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|Завершает асинхронное выражение вычисления.|
-|[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Вычисляет это выражение синхронно.|
+|[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Оценивает это выражение асинхронно.|
+|[Прервать](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|Окончание асинхронной оценки выражения.|
+|[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Оценивает это выражение синхронно.|
 
 ## <a name="remarks"></a>Примечания
- Когда программа остановлена, диспетчер отладки сеансов (SDM) получает кадр стека от DE вызовом [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Затем вызывает SDM [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) для получения [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс. Затем следует вызов [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для создания `IDebugExpression2` интерфейс, который представляет проанализированное выражение, готовое к вычислению.
+ Когда программа остановлена, диспетчер отладки сеанса (SDM) получает кадр стека из DE с вызовом на [EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) Затем SDM вызывает [GetExpressionContext,](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) чтобы получить интерфейс [IDebugExpressionContext2.](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) За этим следует призыв к [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) создать `IDebugExpression2` интерфейс, который представляет собой разображенные выражения готовы к оценке.
 
- Голосовой звонок SDM [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для фактически вычислит значение выражения и получения значения.
+ SDM вызывает или [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) фактически оценить выражение и произвести значение.
 
- В реализации `IDebugExpressionContext2::ParseText`, DE использует COM `CoCreateInstance` функции для создания экземпляра вычислитель выражений и получить [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) интерфейса (см. пример в `IDebugExpressionEvaluator` интерфейс). Затем вызывает DE [проанализировать](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для получения [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) интерфейс. Этот интерфейс используется в реализации `IDebugExpression2::EvaluateSync` и `IDebugExpression2::EvaluateAsync` для выполнения оценки.
+ `IDebugExpressionContext2::ParseText`В реализации, DE использует `CoCreateInstance` функцию COM, чтобы мгновенно оценить выражение и получить интерфейс [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) (см. пример в интерфейсе). `IDebugExpressionEvaluator` DE затем вызывает [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для того чтобы получить интерфейс [IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md) Этот интерфейс используется в `IDebugExpression2::EvaluateSync` реализации и `IDebugExpression2::EvaluateAsync` для выполнения оценки.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -13,29 +13,29 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779666"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Сбор данных параллелизма для веб-приложений ASP.NET с помощью командной строки профилировщика
 Метод параллелизма средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет собирать данные о конфликтах ресурсов.
 
-## <a name="common-tasks"></a>Типичные задачи
+## <a name="common-tasks"></a>Стандартные задачи
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |Присоединение профилировщика к выполняющемуся приложению ASP.NET|-   [Практическое руководство. Присоединение профилировщика к приложению ASP.NET для сбора данных параллелизма](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 - [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="related-tasks"></a>Связанные задачи
 
 ### <a name="profile-aspnet-applications"></a>Профилирование приложений ASP.NET
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование с помощью метода выборки**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Профилирование с помощью метода инструментирования**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
@@ -43,7 +43,7 @@ ms.locfileid: "74779666"
 
 ### <a name="profile-concurrency-issues"></a>Профилирование проблем параллелизма
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование автономных (клиентских) приложений**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Профилирование служб**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
@@ -53,5 +53,5 @@ ms.locfileid: "74779666"
 
 - [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 - [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)

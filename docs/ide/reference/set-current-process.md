@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a3440c66d79fef3eac3744681870c9ce1ed0e97b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593555"
 ---
 # <a name="set-current-process"></a>Команда Set Current Process
@@ -30,9 +30,9 @@ Debug.SetCurrentProcess index
 ## <a name="arguments"></a>Аргументы
 `index`
 
-Обязательный. Индекс процесса.
+Обязательный элемент. Индекс процесса.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 Во время отладки можно подключиться к нескольким процессам, но в любой момент времени только один из них будет активным в отладчике. Чтобы задать активный процесс, можно использовать команду `SetCurrentProcess`.
 
 ## <a name="example"></a>Пример
@@ -41,8 +41,8 @@ Debug.SetCurrentProcess index
 >Debug.SetCurrentProcess 1
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Окно команд](../../ide/reference/command-window.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

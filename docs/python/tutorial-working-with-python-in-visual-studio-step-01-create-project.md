@@ -12,29 +12,29 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430748"
 ---
-# <a name="tutorial-work-with-python-in-visual-studio"></a>Учебник. Работа с Python в Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Руководство. Работа с Python в Visual Studio
 
 Python — это популярный язык программирования, который отличается надежностью, гибкостью и простотой освоения. Его можно бесплатно использовать на любых операционных системах, и он поддерживается широким сообществом разработчиков. Кроме того, для него доступно множество бесплатных библиотек. Python поддерживает все способы разработки, включая веб-приложения, веб-службы, классические приложения, скрипты и научные вычисления. Его используют многие университеты, ученые, профессиональные и непрофессиональные разработчики.
 
 Visual Studio обеспечивает первоклассную поддержку языка Python. В этом учебнике рассматриваются перечисленные ниже действия.
 
-- [Шаг 0: установка](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Шаг 1. Создание проекта Python (эта статья)](#step-1-create-a-new-python-project)
-- [Шаг 2. Написание и выполнение кода для ознакомления с функцией IntelliSense в Visual Studio на практике](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Шаг 3. Создание дополнительного кода в интерактивном окне REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Шаг 0. Установка](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [Шаг 1. Создание проекта Python (эта статья)](#step-1-create-a-new-python-project).
+- [Шаг 2. Написание и выполнение кода для ознакомления с функцией IntelliSense в Visual Studio на практике](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md).
+- [Шаг 3. Создание дополнительного кода в интерактивном окне REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 - [Шаг 4. Выполнение готовой программы в отладчике Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Шаг 5. Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [Шаг 6. Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [Шаг 5. Установка пакетов и управление средами Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md).
+- [Шаг 6. Работа с Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
-## <a name="step-1-create-a-new-python-project"></a>Шаг 1. Создание нового проекта Python
+## <a name="step-1-create-a-new-python-project"></a>Шаг 1. Создание проекта Python
 
 С помощью *проекта* в Visual Studio производится управление всеми файлами, составляющими приложение, включая исходный код, ресурсы, конфигурации и другие данные. Проект формализует и обеспечивает взаимосвязь между всеми файлами проекта, а также между ними и внешними ресурсами, которые используются несколькими проектами. Таким образом, благодаря проектам расширять и развивать приложение становится гораздо проще, чем когда вы контролируете взаимосвязи в произвольных папках, скриптах, текстовых файлах или даже у себя в голове.
 
@@ -68,7 +68,7 @@ Visual Studio обеспечивает первоклассную поддерж
 
     Щелкните правой кнопкой мыши любой узел или элемент в **обозревателе решений**, чтобы открыть меню с применимыми командами. Например, с помощью команды **Переименовать** можно изменить имя любого узла или элемента, включая проект и решение.
 
-## <a name="next-step"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Написание и запуск кода](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

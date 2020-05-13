@@ -1,5 +1,5 @@
 ---
-title: 'Образец XSD-файла: Отношения'
+title: 'Образец XSD-файла: связи'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75592559"
 ---
-# <a name="sample-xsd-file-relationships"></a>Образец XSD-файла: Отношения
+# <a name="sample-xsd-file-relationships"></a>Образец XSD-файла: связи
 
 Следующий файл XSD используется в различных примерах документации конструктора схем XSD. Данный файл является схемой типичного заказа на покупку, включающей заметки и документацию.
 

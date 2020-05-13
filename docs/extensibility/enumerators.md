@@ -1,41 +1,41 @@
 ---
-title: Перечислители | Документация Майкрософт
+title: Цифры Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d3a0876dfd3a9d7b9cc86b18f6e9a6ba3b780d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334499"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711858"
 ---
-# <a name="enumerators"></a>Перечислители.
-В этом разделе перечислены типы данных перечислителя в API подключаемого модуля управления источник, подключаемый модуль системы управления версиями необходимо знать.
+# <a name="enumerators"></a>Enumerators
+В этом разделе перечислены типы данных регистратора в API-разъеме управления исходным управлением, о которым должен знать плагин управления исходным элементом.
 
-## <a name="in-this-section"></a>Содержание раздела
-- [Команда кода](../extensibility/command-code-enumerator.md) перечисляет параметры для [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md) функции.
+## <a name="in-this-section"></a>В этом разделе
+- [Командный код](../extensibility/command-code-enumerator.md) Перечисляет варианты для функций [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList.](../extensibility/sccpopulatelist-function.md)
 
-- [Сообщение](../extensibility/message-enumerator.md) перечисляет флаги, используемые для печати обратного вызова, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
+- [Сообщение](../extensibility/message-enumerator.md) Перечисляет флаги, используемые для обратного вызова печати, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
-- [Файл состояния код](../extensibility/file-status-code-enumerator.md) Contains, именованных констант, определяющих состояние файла в системе управления версиями.
+- [Код статуса файла](../extensibility/file-status-code-enumerator.md) Содержит именованные постоянные значения, которые определяют состояние файла под контролем источника.
 
-- [Код состояния Directory](../extensibility/directory-status-code-enumerator.md) Contains, с именем константы, определяющие состояние каталога в системе управления версиями.
+- [Код состояния каталога](../extensibility/directory-status-code-enumerator.md) Содержит именованные постоянные значения, которые определяют состояние каталога под контролем источника.
 
-## <a name="related-sections"></a>Связанные разделы
-- [Создание подключаемого модуля системы управления версиями](../extensibility/internals/creating-a-source-control-plug-in.md) SDK подключаемого модуля управления источника определяет и описывает включаемые ресурсы.
+## <a name="related-sections"></a>См. также
+- [Создание плагина управления исходным элементом](../extensibility/internals/creating-a-source-control-plug-in.md) Определяет подключаемый SDK управления исходным элементом и описывает включенные ресурсы.
 
-- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) запрашивает у пользователя Дополнительные параметры для данной команды.
+- [SccgetCommandOptions](../extensibility/sccgetcommandoptions-function.md) Подталкивает пользователя к расширенным опциям для данной команды.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) проверяет список файлов для их текущее состояние. Кроме того, использует `pfnPopulate` функция уведомляет вызывающего объекта, если файл не соответствует критериям для `nCommand`.
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Изучит список файлов для их текущего состояния. Кроме того, `pfnPopulate` использует функцию для уведомления вызываемого, когда `nCommand`файл не соответствует критериям для .
 
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) описывает функцию обратного вызова, используемый [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений из системы управления версиями, подключаемый модуль через среду IDE.
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Описывает функцию обратного вызова, которая используется [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений от плагина управления исходным кодом через IDE.
 
-- [Подключаемые модули управления источника](../extensibility/source-control-plug-ins.md) полный список всех элементов в API подключаемых модулей управления источника.
+- [Плагины управления исходным элементом](../extensibility/source-control-plug-ins.md) Предоставляет полный список всех элементов в API для управления исходным управлением.

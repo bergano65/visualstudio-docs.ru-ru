@@ -8,17 +8,17 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589894"
 ---
 # <a name="windows-forms-designer-overview"></a>Обзор конструктора Windows Forms
 
 Конструктор Windows Forms в Visual Studio — это решение для быстрого создания приложений на основе Windows Forms. Конструктор Windows Forms позволяет легко добавлять элементы управления в форму, упорядочивать их и писать код для их событий. Дополнительные сведения о Windows Forms см. в [обзорной статье об этом решении](/dotnet/framework/winforms/windows-forms-overview).
 
-## <a name="functionality"></a>Функция
+## <a name="functionality"></a>Функциональность
 
 Конструктор позволяет выполнять такие задачи:
 
@@ -35,7 +35,7 @@ ms.locfileid: "75589894"
 > [!NOTE]
 > Для внесения изменений в файл ресурсов формы (*RESX*) используйте конструктор Windows Forms, а не редактор ресурсов. При редактировании файла RESX, связанного с формой, отображается предупреждение о том, что изменения, внесенные в редакторе ресурсов, могут быть потеряны. Это происходит потому, что конструктор Windows Forms создает файл RESX.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Windows Forms overview](/dotnet/framework/winforms/windows-forms-overview) (Общие сведения о Windows Forms)
 - [Элементы управления Windows Forms](/dotnet/framework/winforms/controls/)

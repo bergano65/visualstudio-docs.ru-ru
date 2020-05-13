@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63002346"
 ---
 # <a name="report-based-on-visible-time-range"></a>Отчет на основе видимого временного диапазона
@@ -24,7 +24,7 @@ ms.locfileid: "63002346"
 
  Здесь можно найти дополнительные сведения о данных в таблицах.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Нет активности потоков для отображения](../profiling/no-thread-activity-to-show-threads-view.md)
 - [Отчет "Профиль выполнения"](../profiling/execution-profile-report.md)
 - [Время синхронизации](../profiling/synchronization-time.md)
@@ -35,4 +35,4 @@ ms.locfileid: "63002346"
 - [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)
 - [Отчет операций диска](../profiling/disk-operations-report-threads-view.md)
 - [Сводный отчет по каждому потоку](../profiling/per-thread-summary-report.md)
-- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

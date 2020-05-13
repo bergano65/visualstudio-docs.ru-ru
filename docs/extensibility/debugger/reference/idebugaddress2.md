@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress2 | Документация Майкрософт
+title: IDebugАдрес2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress2 interface
 ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66fd149bc3eed7633586c156f6493c8febcbeaac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 402d8c8bcb50c570ff680b8fe1cf8d26f037ba17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330352"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736568"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
-Этот интерфейс обеспечивает доступ к Идентификатору процесса, который является владельцем объекта, адрес которого представлен этим интерфейсом.
+Этот интерфейс обеспечивает доступ к идентификатору процесса, которому принадлежит объект, адрес которого представлен этим интерфейсом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,23 +28,23 @@ ms.locfileid: "66330352"
 IDebugAddress2 : IDebugAddress
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс. Этот интерфейс обеспечивает доступ к Идентификатору процесса, который является владельцем объекта, который связан с этого адреса.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик символов реализует этот интерфейс на том же объекте, который реализует интерфейс [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Этот интерфейс обеспечивает доступ к идентификатору процесса, которому принадлежит объект, связанный с этим адресом.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Используйте [queryInterface,](/cpp/atl/queryinterface) чтобы получить этот интерфейс из интерфейса [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы vtable
- Помимо методов, наследуемых от [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс, этот интерфейс реализует следующий метод:
+## <a name="methods-in-vtable-order"></a>Методы в vtable заказе
+ В дополнение к методам, унаследованных от интерфейса [IDebugAddress,](../../../extensibility/debugger/reference/idebugaddress.md) этот интерфейс реализует следующий метод:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Извлекает идентификатор процесса, которому принадлежит объект, представленный этим интерфейсом.|
+|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Извлекает идентификатор процесса, который владеет объектом, представленным этим интерфейсом.|
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

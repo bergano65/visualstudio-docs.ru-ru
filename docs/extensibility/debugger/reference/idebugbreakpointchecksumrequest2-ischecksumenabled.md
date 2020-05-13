@@ -1,27 +1,27 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
+title: IDebugBreakpointChecksumRequest2:IsChecksumEnabled Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 ms.assetid: 8b1853b5-745c-4cd6-88a9-ce0673971bb0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da23bed282a84deb41dac2464e53c3463ab458f9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5c30dbdbc3c75f22331c61f42dbe9aa829020725
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338090"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735105"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
-Определяет, включен ли контрольная сумма для этого документа.
+Определяет, включена ли проверка для этого документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,10 +39,10 @@ public int IsChecksumEnabled(
 
 ## <a name="parameters"></a>Параметры
 `pfChecksumEnabled`\
-[out] Возвращает значение TRUE, если включена контрольная сумма; в противном случае возвращает значение FALSE.
+(ваут) Возвращает TRUE, если включена проверка; в противном случае, возвращает FALSE.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

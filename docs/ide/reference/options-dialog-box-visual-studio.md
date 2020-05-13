@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591506"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Диалоговое окно "Параметры" (Visual Studio)
@@ -43,6 +43,6 @@ ms.locfileid: "75591506"
 
 При включении или отключении параметра **Показать все параметры** применяются все изменения в диалоговом окне **Параметры** даже в том случае, если кнопка **ОК** еще не была нажата.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка редактора](../how-to-change-text-case-in-the-editor.md)

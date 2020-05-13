@@ -1,5 +1,5 @@
 ---
-title: Функция SccEndBatch | Документация Майкрософт
+title: Функция SccEndBatch (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e915a2e0c508e62a8d34d8d8a5b4fdcd734bbf8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51fe7e0bc0d417ffa182fbc68fd2779ed0b625d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353694"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700926"
 ---
 # <a name="sccendbatch-function"></a>Функция SccEndBatch
-Эта функция завершается пакет операций системы управления версиями. Эти пакеты не могут быть вложенными.
+Эта функция завершает серию операций управления исходным кодом. Эти партии не могут быть вложены.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,19 +29,19 @@ SCCRTN SccEndBatch(void);
 ```
 
 ## <a name="parameters"></a>Параметры
- Отсутствует.
+ Нет.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
+ Ожидается, что внедрение этой функции элемента управления исходным элементом вернет одно из следующих значений:
 
 |Значение|Описание|
 |-----------|-----------------|
-|SCC_OK|Пакет успешно завершения операции.|
-|SCC_E_UNKNOWNERROR|Обнаружена неспецифическая ошибка.|
+|SCC_OK|Пакет операций успешно завершен.|
+|SCC_E_UNKNOWNERROR|Неспецифический сбой.|
 
 ## <a name="remarks"></a>Примечания
- Пакеты управления источника используются выполнения же операций системы управления версиями для нескольких проектов или в нескольких контекстах. Пакеты можно использовать во избежание избыточных диалоговым окнам от работы во время пакетной операции. [SccBeginBatch](../extensibility/sccbeginbatch-function.md) и `SccEndBatch` функции используются как пара для указания начала и окончания операции. Они не могут быть вложенными.
+ Пакеты управления исходными кодами используются для выполнения одних и тех же операций управления исходными кодами в нескольких проектах или нескольких контекстах. Пакеты могут использоваться для устранения избыточных диалогов ы от пользовательского опыта во время пакетной операции. [SccBeginBatch](../extensibility/sccbeginbatch-function.md) и `SccEndBatch` функция используются в качестве пары для обозначения начала и конца операции. Они не могут быть вложены.
 
 ## <a name="see-also"></a>См. также
-- [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)
+- [Функции API управления исходным элементом](../extensibility/source-control-plug-in-api-functions.md)
 - [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

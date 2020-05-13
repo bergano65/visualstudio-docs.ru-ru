@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593334"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Практическое руководство. Добавление или удаление импортированных пространств имен (Visual Basic)
@@ -76,6 +76,6 @@ ms.locfileid: "75593334"
 
 5. Нажмите кнопку **Обновить пользовательский импорт**, чтобы обновить пространство имен в списке **Импортированные пространства имен**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)

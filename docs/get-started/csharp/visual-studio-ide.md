@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594868"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306845"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Введение в интегрированную среду разработки Visual Studio | C\#
 
@@ -38,7 +38,7 @@ ms.locfileid: "75594868"
 
 Дополнительные сведения о других способах персонализации интегрированной среды разработки см. в разделе [Персонализация Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о Visual Studio, прочитав одну из следующих вводных статей:
 
@@ -48,7 +48,7 @@ ms.locfileid: "75594868"
 > [!div class="nextstepaction"]
 > [Сведения о проектах и решениях](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Откройте для себя [другие возможности Visual Studio](../../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

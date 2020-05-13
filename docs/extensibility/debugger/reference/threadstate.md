@@ -1,5 +1,5 @@
 ---
-title: С + + Документация Майкрософт
+title: НИТИ-ГОСУДАРСТВО Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727500"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713338"
 ---
 # <a name="threadstate"></a>THREADSTATE
-Указывает состояние потока.
+Определяет состояние потока.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,29 +50,29 @@ public enum enum_THREADSTATE { 
 
 ## <a name="fields"></a>Поля
  `THREADSTATE_RUNNING`\
- Указывает, что поток работает.
+ Означает, что поток работает.
 
  `THREADSTATE_STOPPED`\
- Указывает, что поток остановлен из-за точки останова.
+ Означает, что поток остановлен из-за точки разрыва.
 
  `THREADSTATE_FRESH`\
- Указывает, что поток был создан, но еще не выполняет код.
+ Означает, что поток создан, но еще не запущен код.
 
  `THREADSTATE_DEAD`\
- Указывает, что поток не существует.
+ Означает, что поток мертв.
 
  `THREADSTATE_FROZEN`\
- Указывает, что поток заморожен (выполнение не может быть выполнено).
+ Означает, что поток заморожен (выполнение не может быть выполнено).
 
-## <a name="remarks"></a>Заметки
- Используется для поля `dwThreadState` структуры [среадпропертиес](../../../extensibility/debugger/reference/threadproperties.md) .
+## <a name="remarks"></a>Примечания
+ Используется для `dwThreadState` поля структуры [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
 
 ## <a name="requirements"></a>Требования
- Заголовок: мсдбг. h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft. VisualStudio. Debugger. Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
- Сборка: Microsoft. VisualStudio. Debugger. Interop. dll
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

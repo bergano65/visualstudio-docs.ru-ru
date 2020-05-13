@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987266"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306707"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Применение инструментов Visual Studio для Mac для Unity
 
@@ -26,7 +26,7 @@ ms.locfileid: "62987266"
 
 ## <a name="unity-documentation-access"></a>Доступ к документации по Unity
 
-Инструменты Visual Studio для Mac для Unity включают в себя ярлык для доступа к документации по API Unity. Чтобы обратиться к документации по API Unity из Visual Studio для Mac, наведите курсор на соответствующий API Unity и нажмите **⌘ COMMAND+‘**.
+Инструменты Visual Studio для Mac для Unity включают в себя ярлык для доступа к документации по API Unity. Чтобы обратиться к документации по API Unity из Visual Studio для Mac, наведите курсор на соответствующий API Unity и нажмите **⌘ COMMAND+‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense для сообщений Unity
 Подсистема Unity осуществляет широковещательную передачу сообщений в скрипты MonoBehaviour, позволяя разработчикам писать код, который реагирует на сообщения, такие как OnMouseDown, OnTriggerEnter и т. д. Так как это не виртуальные методы в базовом классе MonoBehaviour, в некоторых IDE, например MonoDevelop, не хватает функций завершения кода для сообщений Unity.

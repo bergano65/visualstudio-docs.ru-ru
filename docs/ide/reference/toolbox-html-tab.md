@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596441"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
@@ -192,7 +192,7 @@ ms.locfileid: "75596441"
 <img alt="" src="">
 ```
 
-**Выбрать**
+**Select**
 
 ![Раскрывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif)
 
@@ -230,6 +230,6 @@ ms.locfileid: "75596441"
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Панель элементов](../../ide/reference/toolbox.md)

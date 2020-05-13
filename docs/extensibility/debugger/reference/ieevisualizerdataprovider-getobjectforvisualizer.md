@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer | Документация Майкрософт
+title: IEEVisualizerDataProvider::GetObjectForVisualizer Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer method
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a10630ee8c74af333958e7115c660872ac26f78f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2aa1e20dd8639ce089ebe851116a15bf61e35ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350224"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718118"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-Этот метод возвращает объект, представляющий этот визуализатор.
+Этот метод получает объект, который представляет этот визуализатор.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetObjectForVisualizer(
 
 ## <a name="parameters"></a>Параметры
 `ppObject`\
-[out] Объекта, представленного этот визуализатор
+(ваут) Объект, представленный этим визуализатором
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- `GetObjectForVisualizer` может возвращать кэшированная версия объекта. Если вызывающий объект хочет убедиться, что объект находится в актуальном состоянии, а затем он вызывает [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
+ `GetObjectForVisualizer`разрешается возвращать кэшированную версию объекта. Если абонент хочет убедиться, что объект в актуальном состоянии, то он будет [называтьgetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
 ## <a name="see-also"></a>См. также
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

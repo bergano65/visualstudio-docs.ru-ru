@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552963"
 ---
 # <a name="custom-native-etw-heap-events"></a>События пользовательской собственной кучи трассировки событий Windows
@@ -61,7 +61,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Добавьте декоратор `__declspec(allocator)` к любой функции в диспетчере пользовательской кучи, которая вернет указатель на только что выделенную память кучи.  Это декоратора позволяет средству правильно определять возвращаемый тип памяти.  Например:
+1. Добавьте декоратор `__declspec(allocator)` к любой функции в диспетчере пользовательской кучи, которая вернет указатель на только что выделенную память кучи.  Это декоратора позволяет средству правильно определять возвращаемый тип памяти.  Пример:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -90,7 +90,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   или
+   или диспетчер конфигурации служб
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -105,7 +105,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   или
+   или:
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
@@ -117,7 +117,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   или
+   или:
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
@@ -129,7 +129,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    delete pHeapTracker;
    ```
 
-   или
+   или:
 
    ```C
    CloseHeapTracker(hHeapTracker);
@@ -155,6 +155,6 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > [!TIP]
 > Visual Studio также содержит средство **Использование памяти** в наборе инструментов **Профилирование производительности**, который доступен при выборе пунктов **Отладка** > **Профилировщик производительности** или при нажатии сочетания клавиш **Alt**+**F2**.  Эта функция не поддерживает отслеживание кучи и не отображает пользовательскую кучу, как описано здесь.  Эта возможность доступна только в диалоговом окне **Средства диагностики**, которое можно открыть, последовательно выбрав **Отладка** > **Окна** > **Показать средства диагностики** либо нажав сочетание клавиш **Ctrl**+**Alt**+**F2**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
 [Потребление памяти](../profiling/memory-usage.md)

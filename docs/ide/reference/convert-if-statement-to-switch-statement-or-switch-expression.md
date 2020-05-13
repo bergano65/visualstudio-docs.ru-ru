@@ -1,6 +1,6 @@
 ---
 title: Преобразование оператора if в оператор switch или в выражение switch
-ms.date: 02/12/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb0c06fe0493f973ea9cf0a566ffda45a49eeeff
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77283463"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094163"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Преобразование оператора if в оператор switch или в выражение switch
 
@@ -31,10 +31,16 @@ ms.locfileid: "77283463"
 ## <a name="how-to"></a>Практические советы
 
 1. Поместите курсор в ключевое слово `if`.
-2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
-3. Выберите **Преобразовать в оператор switch**.
+2. Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+3. Выберите один из следующих двух параметров: 
 
-   ![Преобразование оператора if в оператор switch или в выражение switch](media/convert-if-statement-to-switch-statement-or-switch-expression.png) 
+    Выберите **Преобразовать в оператор switch**.
+
+   ![Преобразование оператора if в оператор switch](media/convert-if-to-switch-statement.png) 
+
+    Выберите **Преобразовать в выражение "switch"**. 
+
+    ![Преобразование оператора if в выражение switch](media/convert-if-to-switch-expression.png) 
 
 ## <a name="see-also"></a>См. также
 

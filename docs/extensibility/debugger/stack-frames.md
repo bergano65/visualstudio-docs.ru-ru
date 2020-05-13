@@ -1,5 +1,5 @@
 ---
-title: Кадры стека | Документация Майкрософт
+title: Стек кадры Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de3a0267d366f926fa5705c7455b237cafe4820a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348506"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712844"
 ---
-# <a name="stack-frames"></a>Кадры стека
-В архитектуре отладчик *кадр стека*:
+# <a name="stack-frames"></a>Стек кадры
+В архитектуре отладчика *кадр стеков:*
 
-- — Это абстрактное представление стека, предоставляет контекст выполнения потока. Поток всегда выполняет внутри функции. Кадр стека содержит локальные переменные, функции и аргументы, к нему. Чтобы отладить с помощью Visual Studio, языка или среды, для которого выполняется отладка должна поддерживать кадры стека.
+- Является абстракцией стека, обеспечивающей контекст выполнения потока. Поток всегда выполняется в функции. Рамка стека содержит локальные переменные функции и аргументы к ней. Для отладки с помощью Visual Studio отладка языка или среды должна поддерживать кадры стека.
 
-- Можно выявлять и описать сам себя и может возвращать соответствующего потока. Кадр стека может также возвращать контекст кода, который представляет текущего указателя инструкций и связанную документацию и контекстов вычисления выражения.
+- Может как идентифицировать, так и описать себя, и может вернуть связанный поток. Кадр стека может также возвращать контекст кода, представляющий текущий указатель инструкции, и связанные с ней контексты оценки документации и выражения.
 
-- Имеет свойства, описывающие имя, тип и значение локальных переменных и аргументов, и которые отображаются в окнах отладки интегрированной среды разработки.
+- Обладает свойствами, описывающие имя, тип и значение локальных переменных и аргументов, и которые отображаются в различных окнах отладки IDE.
 
-- Представленный [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс, обычно создается с помощью модуля отладки (DE) или виртуальной машины, в результате выполнение потока.
+- Представлен интерфейсом [IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) обычно созданным движком отладки (DE) или виртуальной машиной в результате выполнения потока.
 
 ## <a name="see-also"></a>См. также
-- [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md)
-- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)
-- [Отладка ядра](../../extensibility/debugger/debug-engine.md)
+- [Контексты debugger](../../extensibility/debugger/debugger-contexts.md)
+- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md)
+- [Двигатель debug](../../extensibility/debugger/debug-engine.md)
 - [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Документация Майкрософт
+title: IDebugProcessEx2:AddImplicitProgramNodes Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b75ef50107b44de8de6f65c5c4c9c6827e13426e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309489"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723392"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-Этот метод добавляет узел программы для каждого ядра отладки (DE) указан.
+Этот метод добавляет узлы программы для каждого указанного движка отладки (DE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>Параметры
 `guidLaunchingEngine`\
-[in] `GUID` Из Развернутой, будет использоваться для запуска программ (и предполагается, что добавлять свои собственные узлы программы).
+(в) DE, `GUID` который будет использоваться для запуска программ (и предполагается добавить свои собственные узлы программы).
 
 `rgguidSpecificEngines`\
-[in] Массив `GUID`s из DEs, какие программы будут добавлены узлы.
+(в) Массив `GUID`s DEs, для которых будут добавлены узлы программы.
 
 `celtSpecificEngines`\
-[in] Число `GUID`s в `rgguidSpecificEngines` массива.
+(в) Количество `GUID`s в `rgguidSpecificEngines` массиве.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-- [Программы узлы](../../../extensibility/debugger/program-nodes.md) добавляется для каждого DE, перечисленных в `rgguidSpecificEngines`— за исключением запуска ядра (как в `guidLaunchingEngine`), который предполагается добавить собственный узел программы при запуске программы.
+- [Узлы программы](../../../extensibility/debugger/program-nodes.md) будут добавлены для `rgguidSpecificEngines`каждого DE, перечисленных `guidLaunchingEngine`в - за исключением запускающего двигателя (как указано в ), который предполагается добавить свой собственный узлы программы, когда он запускает программу.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

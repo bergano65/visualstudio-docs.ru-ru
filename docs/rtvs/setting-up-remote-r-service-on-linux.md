@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809561"
 ---
 # <a name="remote-r-service-for-linux"></a>Удаленная служба R для Linux
@@ -87,7 +87,7 @@ ms.locfileid: "62809561"
 
 #### <a name="create-a-vm"></a>Создание виртуальной машины
 
-1. Войдите на [портал Azure](https://portal.azure.com).
+1. Войдите на [портал Azure](https://portal.azure.com).
 1. Перейдите к виртуальным машинам и выберите **Добавить**.
 1. В списке доступных образов виртуальных машин найдите и выберите один из следующих вариантов:
     - Ubuntu Server: `Ubuntu Server 16.04 LTS`
@@ -99,7 +99,7 @@ ms.locfileid: "62809561"
 
 #### <a name="configure-the-vm"></a>Настройка виртуальной машины
 
-1. В разделе виртуальной машины **Сеть** добавьте 5444 как разрешенный входящий порт. Чтобы использовать другой порт, измените параметр в файле конфигурации управляющей программы RTVS (*/etc/rtvs/rtvsd.config.json*).
+1. В разделе виртуальной машины **Сеть** добавьте 5444 как разрешенный входящий порт. Чтобы использовать другой порт, измените параметр в файле конфигурации управляющей программы RTVS ( */etc/rtvs/rtvsd.config.json*).
 1. Задайте DNS-имя; вы можете также использовать IP-адрес (необязательно).
 1. Подключитесь к виртуальной машине с помощью клиента SSH, например PuTTY для Windows.
 1. Следуйте инструкциям для [физического компьютера с Ubuntu](#physical-ubuntu-computer), приведенным выше.

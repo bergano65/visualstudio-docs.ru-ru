@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Перемещение инструментированных двоичных файлов | Документация Майкрософт
+title: Практическое руководство. Перемещение инструментированных двоичных файлов | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774904"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Практическое руководство. Перемещение инструментированных двоичных файлов
@@ -36,7 +36,7 @@ ms.locfileid: "74774904"
 
 4. Укажите расположение для инструментированного двоичного файла.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 [VSInstr](../profiling/vsinstr.md)

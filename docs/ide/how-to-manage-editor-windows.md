@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4af752c99c87bf470922db03bf5d4746151fa8f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591025"
 ---
 # <a name="how-to-manage-editor-windows"></a>Практическое руководство. Управление окнами редактора
@@ -54,7 +54,7 @@ ms.locfileid: "75591025"
 
    Добавляется новый экземпляр редактора с вкладками.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md)

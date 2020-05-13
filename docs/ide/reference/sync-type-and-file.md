@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594400"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Рефакторинг для синхронизации типа с именем файла или имени файла с типом
@@ -34,7 +34,7 @@ ms.locfileid: "75594400"
 > [!NOTE]
 > Этот рефакторинг пока недоступен для проектов .NET Standard и .NET Core.
 
-## <a name="how-to"></a>Практические советы
+## <a name="how-to"></a>Практическое руководство
 
 1. Выделите имя типа, который требуется синхронизировать, или поместите в него текстовый курсор.
 
@@ -46,7 +46,7 @@ ms.locfileid: "75594400"
 
        ![Выделенный код — Visual Basic](media/synctype-highlight-vb.png)
 
-2. Затем выполните одно из следующих действий:
+2. Затем выполните одно из следующих действий.
 
    - **Клавиатура**
       - Нажмите клавиши **CTRL**+ **.** чтобы активировать меню **Быстрые действия и рефакторинг**. Затем во всплывающем окне предварительного просмотра выберите пункт **Переименовать файл в *имя_типа*.cs**, где *имя_типа* — это имя выбранного вами типа.
@@ -57,14 +57,14 @@ ms.locfileid: "75594400"
 
    Тип или файл переименован.
 
-   - C#: В примере ниже файл **MyClass.cs** переименован в **MyNewClass.cs**, чтобы его имя совпадало с именем типа.
+   - C#: в примере ниже файл **MyClass.cs** переименован в **MyNewClass.cs**, чтобы его имя совпадало с именем типа.
 
        ![Встроенный результат — C#](media/synctype-result-cs.png)
 
-   - Visual Basic: В примере ниже файл **Employee.cs** был переименован в **Person.cs**, чтобы его имя совпадало с именем типа.
+   - Visual Basic: в примере ниже файл **Employee.cs** был переименован в **Person.cs**, чтобы его имя совпадало с именем типа.
 
        ![Встроенный результат — Visual Basic](media/synctype-result-vb.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)

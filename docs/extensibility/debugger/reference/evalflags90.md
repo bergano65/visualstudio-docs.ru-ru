@@ -1,27 +1,27 @@
 ---
-title: EVALFLAGS90 | Документация Майкрософт
+title: ЭВАЛЕСЕС90 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24afc4456570ff0c3e5dc1eb56789984bf18ac58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337832"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737102"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Перечисляет допустимые значения для флагов, которые управляют вычисления выражения. Это перечисление расширяет [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления.
+Перечисляет допустимые значения для флагов, контролирующих оценку выражения. Этот пересчет расширяет перечисление [EVALFLAGS.](../../../extensibility/debugger/reference/evalflags.md)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -66,39 +66,39 @@ public enum enum_EVALFLAGS90
 
 ## <a name="fields"></a>Поля
 `EVAL90_RETURNVALUE`\
-Указывает, что возвращаемое значение, если таковое имеется, вычисляется.
+Упомяните, что значение возврата, если таковое, будет оценено.
 
 `EVAL90_NOSIDEEFFECTS`\
-Указывает, что побочные эффекты не разрешается.
+Упомянет, что побочные эффекты не допускаются.
 
 `EVAL90_ALLOWBPS`\
-Указывает остановки точек останова.
+Определяет остановку на брейк-пойнтах.
 
 `EVAL90_ALLOWERRORREPORT`\
-Указывает отчетов к узлу разрешен, об ошибках. В основном используется для вычисления выражений в скрипте в Internet Explorer.
+Упоньте, что сообщение об ошибке к усту будет разрешено. В первую очередь используется для оценки выражения в скрипте в Internet Explorer.
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-Функции силы для оценки в качестве адреса, вместо вызова функции.
+Функции сил должны оцениваться как адреса, а не ссылаться на функцию.
 
 `EVAL90_NOFUNCEVAL`\
-Запрещает вычисляется функция. Например, рассмотрим `int` маркера в выражении `myExpression(int) + 10`. Эта функция может вычисляться правильно, как адрес, а не как значение.
+Предотвращает оценку функции. Например, рассмотрим `int` маркер в `myExpression(int) + 10`выражении . Эту функцию можно правильно оценить как адрес, но не как значение.
 
 `EVAL90_NOEVENTS`\
-Флаг, указывающий, что события, происходящие во время вычисления выражения не следует отправлять в диспетчер отладки сеансов (SDM) или в интегрированную среду разработки.
+Пометить, чтобы указать, что события, возникающие во время оценки выражения, не должны отправляться менеджеру отладки сеанса (SDM) или IDE.
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
-Позволяет вычисление выражений во время разработки.
+Позволяет проводить оценку экспрессии времени проектирования.
 
 `EVAL90_ALLOW_IMPLICIT_VARS`\
-Позволяет неявного создания переменной.
+Позволяет неявное создание переменной.
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-Оценка Принудительное немедленное. Это полезно при обслуживании запроса, например запрос пользователя.
+Оценка сил произойдет немедленно. Это полезно при обслуживании запроса, например, запроса пользователя.
 
 ## <a name="requirements"></a>Требования
 Заголовок: Msdbg90.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

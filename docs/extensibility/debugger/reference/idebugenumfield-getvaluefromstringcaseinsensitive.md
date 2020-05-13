@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromStringCaseInsensitive | Документация Майкрософт
+title: IdebugEnumfield:GetvalueFromStringCaseНечувствительные (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromStringCaseInsensitive method
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72e6f79616c8c8099b938a29bc1d1809adb152a3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350070"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730253"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
-Этот метод использует поиск с учетом регистра для возврата значения, связанного с именем константы перечисления.
+Этот метод использует нечувствительный к случаям поиск для возврата значения, связанного с именем константы перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetValueFromStringCaseInsensitive(
 
 ## <a name="parameters"></a>Параметры
 `pszValue`\
-[in] Строка, указывающая имя, для которого следует получить значение. Обратите внимание на то, что для C++, это строку расширенных символов.
+(в) Строка, определяющая имя, для которого можно получить значение. Обратите внимание, что для СЗ это широкая строка символов.
 
 `pValue`\
-[out] Возвращает соответствующее числовое значение.
+(ваут) Возвращает связанное числовое значение.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE`, если имя не является частью перечисление, или код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращается, `S_FALSE`если имя не является частью перечисления или кодом ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод не учитывает регистр. Если регистр при поиске необходимо (например, в языке, как C++, где в именах учитывается регистр), используйте [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
+ Этот метод нечувствителен. Если необходим поиск, чувствительный к случаям (например, на таком языке, как СЗ, где имена чувствительны к случаям), используйте [GetValueFromString.](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

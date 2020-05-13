@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException | Документация Майкрософт
+title: IDebugEngine2::SetException Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2234c0c0b571e763d3b143b5606fe61c43f25cde
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7398db3c15c58821e05eff839a1022276401d569
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352534"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730938"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Указывает, как модуль отладки (DE) должен обрабатывать данного исключения.
+Определяет, как отладка двигателя (DE) должны обрабатывать данное исключение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int SetException( 
 
 ## <a name="parameters"></a>Параметры
 `pException`\
-[in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структура, описывающая исключение и как выполнить его отладку.
+(в) [Структура EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) описывающая исключение и способотать отладить его.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Чтобы остановить программу, генерации исключения в первый шанс обработки, второй вероятность того, можно было передать инструкцию DE или вообще не.
+ DE может быть проинструктирован, чтобы остановить программу генерации исключения при первом случае, второй шанс, или не на всех.
 
 ## <a name="see-also"></a>См. также
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

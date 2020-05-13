@@ -1,7 +1,7 @@
 ---
 title: Журнал изменений (инструменты Visual Studio для Unity, Windows) | Документы Майкрософт
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 3/23/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,66 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 0b1d735cd05f79eaabd00a575a6c050b37ce2d16
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706785"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232826"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Журнал изменений (Инструменты Visual Studio для Unity, Windows)
 
 Журнал изменений в наборе средств Visual Studio для Unity
+
+## <a name="4510"></a>4.5.1.0
+
+Выпущено 16 марта 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Интеграция:**
+
+  - Добавлен подавитель для [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md). Частные методы, используемые с методами Invoke, InvokeRepeating, StartCoroutine или StartCoroutine, не должны помечаться как неиспользуемые.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Внесены изменения в документацию по методам OnDrawGizmos и OnDrawGizmosSelected.
+
+- **Вычисления:**
+
+  - Исправлена проверка аргументов лямбда-выражений.
+
+## <a name="4501"></a>4.5.0.1
+
+Выпущено 19 февраля 2020 г.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Исправлена диагностическая проверка [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) на правильность подписи сообщения. При проверке типов с несколькими уровнями наследования эта диагностика может завершиться ошибкой с выводом следующего сообщения: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+
+## <a name="4500"></a>4.5.0.0
+
+Выпущено 22 января 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Интеграция:**
+
+  - Добавлена поддержка HLSL-файлов.
+  
+  - Добавлен подавитель для [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md). Частные поля с атрибутом `SerializeField` не должны помечаться как неиспользуемые.
+  
+  - Добавлен подавитель для [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md). Поля с атрибутом `SerializeField` не должны помечаться как неназначенные.  
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - Исправлен процесс создания проекта (поиск целевого объекта `GenerateTargetFrameworkMonikerAttribute` не всегда выполнялся правильно).
 
 ## <a name="4420"></a>4.4.2.0
 
@@ -49,7 +99,7 @@ ms.locfileid: "74706785"
 
 - **Интеграция:**
 
-  - Исправлен анализатор сравнения тегов `UNT0002` с расширенными выражениями двоичного кода и вызова.
+  - Исправлен анализатор сравнения тегов [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md) с расширенными выражениями двоичного кода и вызова.
 
 ### <a name="deprecated-features"></a>Устаревшие компоненты
 
@@ -65,7 +115,7 @@ ms.locfileid: "74706785"
 
 - **Интеграция:**
 
-  - Добавлен подавитель для `IDE0060` (неиспользуемый параметр) для всех сообщений Unity.
+  - Добавлен подавитель для [`IDE0060`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) (неиспользуемый параметр) для всех сообщений Unity.
   
   - Добавлена быстрая подсказка для полей с тегами `TooltipAttribute`. (Это также будет работать для простого метода доступа GET с использованием этого поля).
 
@@ -88,21 +138,21 @@ ms.locfileid: "74706785"
 - **Интеграция:**
 
   - Мы улучшили поддержку проектов Unity в Visual Studio, добавив новые функции диагностики, предназначенные специально для Unity. Мы также повысили интеллектуальные возможности интегрированной среды разработки: общая диагностика C#, которая не относится к проектам Unity, теперь не применяется. Например, в интегрированной среде разработки не предлагается изменить переменную инспектора на `readonly`, что не позволило бы изменять эту переменную в редакторе Unity.
-    - `UNT0001`. Сообщения Unity вызываются средой выполнения, даже если они пусты; не объявляйте их, чтобы избежать лишней обработки средой выполнения Unity.
-    - `UNT0002`. Сравнение тегов с использованием равенства строк выполняется медленнее, чем с помощью встроенного метода CompareTag.
-    - `UNT0003`. Использование универсальной формы GetComponent является предпочтительным для обеспечения безопасности типов.
-    - `UNT0004`. Сообщение Update зависит от частоты кадров и должно использовать Time.deltaTime вместо Time.fixedDeltaTime.
-    - `UNT0005`. Сообщение FixedUpdate не зависит от частоты кадров и должно использовать Time.fixedDeltaTime вместо Time.deltaTime.
-    - `UNT0006`. Для этого сообщения Unity обнаружена неверная сигнатура метода.
-    - `UNT0007`. В Unity переопределяется оператор сравнения со значением NULL для объектов Unity, которые несовместимы с объединением со значением NULL.
-    - `UNT0008`. В Unity переопределяется оператор сравнения со значением NULL для объектов Unity, которые несовместимы с распространением значения NULL.
-    - `UNT0009`. При применении атрибута InitializeOnLoad к классу необходимо предоставить статический конструктор. Атрибут InitializeOnLoad обеспечивает его вызов при запуске редактора.
-    - `UNT0010`. Объекты MonoBehaviour следует создавать только с помощью метода AddComponent(). MonoBehaviour — это компонент, и его необходимо присоединить к GameObject.
-    - `UNT0011`. Объект ScriptableObject следует создавать только с помощью метода CreateInstance(). Объект ScriptableObject должен быть создан подсистемой Unity для обработки методов сообщений Unity.
-    - `USP0001` для `IDE0029`: Объекты Unity не должны использовать объединение со значением NULL.
-    - `USP0002` для `IDE0031`: Объекты Unity не должны использовать распространение значения NULL.
-    - `USP0003` для `IDE0051`: Сообщения Unity вызываются средой выполнения Unity.
-    - `USP0004` для `IDE0044`: Поля с атрибутом SerializeField нельзя делать доступными только для чтения.
+    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md): Сообщения Unity вызываются средой выполнения, даже если они пусты; не объявляйте их, чтобы избежать лишней обработки средой выполнения Unity.
+    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md): Сравнение тегов с использованием равенства строк выполняется медленнее, чем с помощью встроенного метода CompareTag.
+    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0003.md): Использование универсальной формы GetComponent является предпочтительным для обеспечения безопасности типов.
+    - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0004.md): Сообщение Update зависит от частоты кадров и должно использовать Time.deltaTime вместо Time.fixedDeltaTime.
+    - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0005.md): Сообщение FixedUpdate не зависит от частоты кадров и должно использовать Time.fixedDeltaTime вместо Time.deltaTime.
+    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md): Для этого сообщения Unity обнаружена неверная сигнатура метода.
+    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0007.md): В Unity переопределяется оператор сравнения со значением NULL для объектов Unity, которые несовместимы с объединением со значением NULL.
+    - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0008.md): В Unity переопределяется оператор сравнения со значением NULL для объектов Unity, которые несовместимы с распространением значения NULL.
+    - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0009.md): При применении атрибута InitializeOnLoad к классу необходимо предоставить статический конструктор. Атрибут InitializeOnLoad обеспечивает его вызов при запуске редактора.
+    - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0010.md): Объекты MonoBehaviour следует создавать только с помощью метода AddComponent(). MonoBehaviour — это компонент, и его необходимо присоединить к GameObject.
+    - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0011.md): Объект ScriptableObject следует создавать только с помощью метода CreateInstance(). Объект ScriptableObject должен быть создан подсистемой Unity для обработки методов сообщений Unity.
+    - [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0001.md) для `IDE0029`: Объекты Unity не должны использовать объединение со значением NULL.
+    - [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0002.md) для `IDE0031`: Объекты Unity не должны использовать распространение значения NULL.
+    - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0003.md) для `IDE0051`: Сообщения Unity вызываются средой выполнения Unity.
+    - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md) для `IDE0044`: Поля с атрибутом SerializeField нельзя делать доступными только для чтения.
 
 ## <a name="4310"></a>4.3.1.0
 

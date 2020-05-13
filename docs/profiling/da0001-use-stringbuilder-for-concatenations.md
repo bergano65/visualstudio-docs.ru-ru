@@ -1,5 +1,5 @@
 ---
-title: DA0001. Использование StringBuilder для объединений | Документация Майкрософт
+title: DA0001. Использование StringBuilder для объединений | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779510"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001. Использование StringBuilder для объединений
@@ -27,11 +27,11 @@ ms.locfileid: "74779510"
 |-|-|
 |Идентификатор правила|DA0001|
 |Категория|Использование .NET Framework|
-|Методы профилирования|Дискретизация<br /><br /> Инструментирование|
+|Методы профилирования|Выборка<br /><br /> Инструментирование|
 |Сообщение|Рекомендуется использовать класс StringBuilder для объединения строк.|
-|Тип сообщения|Предупреждение|
+|тип сообщений;|Предупреждение|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Вызовы метода System.String.Concat составляют значительную часть данных профилирования. Для построения строк из нескольких сегментов рекомендуется использовать класс <xref:System.Text.StringBuilder>.
 
 ## <a name="rule-description"></a>Описание правила

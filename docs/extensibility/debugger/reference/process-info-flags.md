@@ -1,29 +1,29 @@
 ---
-title: PROCESS_INFO_FLAGS | Документация Майкрософт
+title: PROCESS_INFO_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0694d83409a492a1d950a17ac5e2298ba9b8578
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309386"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713963"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 
-Описывающие или определяющие свойств процесса.
+Описывает или определяет свойства процесса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,28 +49,28 @@ enum enum_PROCESS_INFO_FLAGS { 
 ## <a name="fields"></a>Поля
 
 `PIFLAG_SYSTEM_PROCESS`\
-Указывает, что процесс — это системный процесс.
+Означает, что процесс является системным процессом.
 
 `PIFLAG_DEBUGGER_ATTACHED`\
-Указывает, что отладка процесса с помощью отладчика. Возможно, она [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчика, или он может быть некоторые другие отладчика, например, WinDbg.
+Означает, что процесс отлажен отладчиком. Это может [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] быть отладчик, или это может быть какой-то другой отладчик, например, WinDbg.
 
 `PIFLAG_PROCESS_STOPPED`\
-Указывает, что процесс будет остановлен. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
+Означает, что процесс остановлен. Действительно только `PIFLAG_DEBUGGER_ATTACHED` в том случае, если также указано. Доступно в Visual Studio 2005 и позже.
 
 `PIFLAG_PROCESS_RUNNING`\
-Указывает, что процесс выполняется. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В Visual Studio 2005 и более поздних версий.
+Означает, что процесс запущен. Действительно только `PIFLAG_DEBUGGER_ATTACHED` в том случае, если также указано. Доступно в Visual Studio 2005 и позже.
 
 ## <a name="remarks"></a>Примечания
 
-Используется для `Flags` членом [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.
+Используется для `Flags` члена [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.
 
-Эти флаги могут быть объединены с побитовым объектом `OR`.
+Эти флаги могут быть `OR`объединены с bitwise .
 
 ## <a name="requirements"></a>Требования
 
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

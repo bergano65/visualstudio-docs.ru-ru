@@ -1,46 +1,46 @@
 ---
-title: Расширение окна вывода | Документация Майкрософт
+title: Расширение окна вывода (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd02ce74f2fee8255d92c47149a46f1003b02011
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311029"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711646"
 ---
-# <a name="extend-the-output-window"></a>Расширения в окне вывода
-**Вывода** окно — это набор панелей текста для чтения и записи. Visual Studio есть этих встроенных панелей: **Построение**, в какие проекты обмена сообщениями о сборках, и **Общие**, в котором [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает сообщения о интегрированной среды разработки. Проекты получить ссылку на **построения** области автоматически посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методов интерфейса, а также Visual Studio предлагает прямой доступ к **Общие** области через <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Служба. Помимо встроенных панелей можно создать и управлять собственных настраиваемых панелей.
+# <a name="extend-the-output-window"></a>Расширить окно вывода
+**Окно вывода** представляет собой набор текстовых стекол для чтения/записи. Visual Studio имеет эти встроенные стекла: **Build**, в котором проекты передают [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сообщения о сборках, и **General**, в котором передает сообщения о IDE. Проекты автоматически получают ссылку на <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> панель **сборки** с помощью методов интерфейса, <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> а Visual Studio предлагает прямой доступ к **общему** стеку через службу. В дополнение к встроенным стеклам, вы можете создавать и управлять своими собственными пользовательскими стеклами.
 
- Вы можете управлять **вывода** непосредственно через окно <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Интерфейс, который предлагается в <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> службы, определяет методы для создания, извлечения и уничтожение **вывода** области окна. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Интерфейс определяет методы для отображение панелей, скрытие области и управление им текста. Альтернативный способ управления **вывода** – окно <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объекты в объектной модели автоматизации Visual Studio. Эти объекты инкапсулировать почти все функциональные возможности <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов. Кроме того <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объекты добавляют некоторые задачу обеспечения высокоуровневой функциональности, чтобы упростить для перечисления **вывода** области окна и извлечение текста из области.
+ Вы можете **Output** управлять окном <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> вывода <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> непосредственно через интерфейсы и интерфейсы. Интерфейс, <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> предлагаемый службой, <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> определяет методы создания, извлечения и уничтожения оконных стекол. **Output** Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> определяет методы отображения стекол, сокрытия стекол и манипулирования их текстом. Альтернативный способ управления окном **вывода** <xref:EnvDTE.OutputWindow> — <xref:EnvDTE.OutputWindowPane> это объекты в модели объектов Visual Studio Automation. Эти объекты инкапсулируют почти всю <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> функциональность <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов и интерфейсов. Кроме того, <xref:EnvDTE.OutputWindow> <xref:EnvDTE.OutputWindowPane> объекты добавляют некоторые функциональные возможности более высокого уровня, чтобы облегчить перечисление оконных стекол **выходного** окна и извлечение текста из стекол.
 
-## <a name="create-an-extension-that-uses-the-output-pane"></a>Создайте расширение, которое использует область вывода
- Можно создать расширение, которое выполняет различные аспекты области вывода.
+## <a name="create-an-extension-that-uses-the-output-pane"></a>Создайте расширение, используюв оглашку выходного стекла
+ Вы можете сделать расширение, которое осуществляет различные аспекты панели вывода.
 
-1. Создайте проект VSIX с именем `TestOutput` с помощью команды меню с именем **TestOutput**. Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Создайте проект VSIX с `TestOutput` командой меню под названием **TestOutput.** Для получения дополнительной информации [см. Создать расширение с командой меню](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Добавьте следующие ссылки:
+2. Добавьте следующие ссылки.
 
     1. EnvDTE
 
     2. EnvDTE80
 
-3. В *TestOutput.cs*, добавьте следующий оператор using:
+3. В *TestOutput.cs*добавьте следующее заявление с помощью:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. В *TestOutput.cs*, удалить `ShowMessageBox` метод. Добавьте следующие заглушку метода:
+4. В *TestOutput.cs,* `ShowMessageBox` удалите метод. Добавьте следующий метод заглушки:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ ms.locfileid: "66311029"
     }
     ```
 
-5. В конструкторе TestOutput измените обработчик команд для OutputCommandHandler. Вот часть, которая добавляет команды:
+5. В конструкторе TestOutput измените обработчик команды на OutputCommandHandler. Вот часть, которая добавляет команды:
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ ms.locfileid: "66311029"
     }
     ```
 
-6. В следующих разделах существуют различные методы, которые демонстрируют различные способы работы с области вывода. Можно вызвать эти методы в теле `OutputCommandHandler()` метод. Например, следующий код добавляет `CreatePane()` метода, получая в следующем разделе.
+6. В приведенных ниже разделах имеются различные методы, отображающие различные способы работы с панелью выходного слоя. Эти методы можно назвать телом `OutputCommandHandler()` метода. Например, следующий код `CreatePane()` добавляет метод, приведенный в следующем разделе.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -70,8 +70,8 @@ ms.locfileid: "66311029"
     }
     ```
 
-## <a name="create-an-output-window-with-ivsoutputwindow"></a>Создать окно вывода с IVsOutputWindow
- В этом примере показано, как создать новую **вывода** область окна с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> интерфейс.
+## <a name="create-an-output-window-with-ivsoutputwindow"></a>Создание окна вывода с помощью IVsOutputWindow
+ В этом примере показано, как создать новое <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> стекло окна **output** с помощью интерфейса.
 
 ```csharp
 void CreatePane(Guid paneGuid, string title,
@@ -95,10 +95,10 @@ void CreatePane(Guid paneGuid, string title,
 }
 ```
 
- Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды вы должны увидеть **выходные данные** окно с заголовком, — говорит **Показать выходные данные От: CreatedPane** и слова **это в области создания** в самой области.
+ Если вы добавите этот метод к расширению, приведенном в предыдущем разделе, при нажатии на команду **Invoke TestOutput** вы должны увидеть окно **вывода** с заголовком, который говорит **Показать выход из: CreatedPane** и слова **Это созданный pane** в самом панели.
 
-## <a name="create-an-output-window-with-outputwindow"></a>Создать окно вывода с OutputWindow
- В этом примере показано, как создать **вывода** область окна с помощью <xref:EnvDTE.OutputWindow> объекта.
+## <a name="create-an-output-window-with-outputwindow"></a>Создание окна вывода с помощью OutputWindow
+ В этом примере **Output** показано, как создать <xref:EnvDTE.OutputWindow> оконное стекло вывода с помощью объекта.
 
 ```csharp
 void CreatePane(string title)
@@ -120,12 +120,12 @@ void CreatePane(string title)
 }
 ```
 
- Несмотря на то что <xref:EnvDTE.OutputWindowPanes> коллекции позволяет извлекать **вывода** области окна по его названию, названия панели не гарантируется уникальность. Когда вы сомневаюсь, уникальность заголовок, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> метод для извлечения области правильный по его идентификатору GUID.
+ Несмотря <xref:EnvDTE.OutputWindowPanes> на то, что коллекция позволяет получить оконное стекло **Output** по названию, названия стекол не гарантированно уникальны. Если вы сомневаетесь в уникальности <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> названия, используйте метод, чтобы получить правильное стекло его GUID.
 
- Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите окно вывода с заголовком, — говорит **Показать выходные данные из: DTEPane** и слова **добавлены области DTE** в самой области.
+ Если вы добавите этот метод к расширению, приведенном в предыдущем разделе, при нажатии на команду **Invoke TestOutput** вы должны увидеть окно вывода с заголовком, который говорит **Показать выход из: DTEPane** и слова **Добавленный DTE Pane** в самом стекле.
 
-## <a name="delete-an-output-window"></a>Удалить окно вывода
- В этом примере показан способ удаления **вывода** область окна.
+## <a name="delete-an-output-window"></a>Удаление окна вывода
+ В этом примере показано, как удалить стекло окна **вывода.**
 
 ```csharp
 void DeletePane(Guid paneGuid)
@@ -147,10 +147,10 @@ void DeletePane(Guid paneGuid)
 }
 ```
 
- Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите окно вывода с заголовком, — говорит **Показать выходные данные из: Новая область** и слова **добавлены созданные панели** в самой области. Если щелкнуть **вызова TestOutput** команду еще раз, область удаляется.
+ Если вы добавите этот метод к расширению, приведенном в предыдущем разделе, при нажатии на команду **Invoke TestOutput** вы должны увидеть окно вывода с заголовком, который говорит **Показать выход из: New Pane** и слова **Добавленные Созданные pane** в самом панели. Если вы нажмете на команду **Invoke TestOutput** снова, панель удаляется.
 
-## <a name="get-the-general-pane-of-the-output-window"></a>Получение области "Общие" окна вывода
- В этом примере показано, как получить встроенную **Общие** области **вывода** окна.
+## <a name="get-the-general-pane-of-the-output-window"></a>Получить общее стекло окна вывода
+ В этом примере показано, как получить встроенное **общее** стекло окна **вывода.**
 
 ```csharp
 IVsOutputWindowPane GetGeneralPane()
@@ -160,10 +160,10 @@ IVsOutputWindowPane GetGeneralPane()
 }
 ```
 
- Если добавить этот метод расширения, заданного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите, что **выходные данные** окне отображаются слова **найти общие панель** в области.
+ Если вы добавите этот метод к расширению, приведенным в предыдущем разделе, при нажатии на команду **Invoke TestOutput** вы должны увидеть, что в окне **вывода** отображается слова **Найдено Общее стекло** в панели.
 
-## <a name="get-the-build-pane-of-the-output-window"></a>Получение области построения окна вывода
- В этом примере показано, как найти **построения** области и записи в него. Так как **построения** области не активирована по умолчанию, он активируется также.
+## <a name="get-the-build-pane-of-the-output-window"></a>Получить развернуть стекло вывода
+ В этом примере показано, как найти панель **сборки** и написать на него. Так как панель **сборки** не активирована по умолчанию, она активирует его также.
 
 ```csharp
 void OutputTaskItemStringExExample(string buildMessage)

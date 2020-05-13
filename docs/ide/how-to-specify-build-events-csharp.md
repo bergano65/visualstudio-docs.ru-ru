@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115134"
 ---
 # <a name="how-to-specify-build-events-c"></a>Практическое руководство. Указание событий сборки (C#)
@@ -32,7 +32,7 @@ ms.locfileid: "76115134"
 
 1. В **обозревателе решений** выберите проект, для которого необходимо задать событие сборки.
 
-2. В меню **Проект** выберите пункт **Свойства**.
+2. В меню **Проект** выберите **Свойства**.
 
 3. Откройте вкладку **События построения**.
 
@@ -132,7 +132,7 @@ ms.locfileid: "76115134"
 
    Команда принимает два аргумента: путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно *Projectname.publish*) и новую версию операционной системы.
 
-4. Выполните построение проекта.
+4. Создайте проект.
 
 5. Скопируйте файл *EXE* в каталог, например *C:\TEMP\ChangeOSVersionVB.exe*.
 
@@ -174,9 +174,9 @@ ms.locfileid: "76115134"
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Сведения о [странице "События сборки" в конструкторе проектов (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - Сведения о [диалоговых окнах "Командная строка события перед сборкой" и "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- Сведения об [указании событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

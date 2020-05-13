@@ -94,10 +94,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593620"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
@@ -121,7 +121,7 @@ ms.locfileid: "75593620"
 
 Если у вас остались вопросы после ознакомления с другими ресурсами, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](https://support.microsoft.com/en-us). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Параметры обратной связи Visual Studio](../../ide/feedback-options.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Устранение неполадок сети или ошибок прокси-сервера](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Устранение неполадок (Visual Studio для Mac)](/visualstudio/mac/troubleshooting)

@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Документация Майкрософт
+title: IDebugExpressionОценка2::SetCallback (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325488"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729345"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Включает средство оценки выражений (EE) для указания интерфейс обратного вызова, отладчик ядра (DE) будет использовать для чтения настроек метрик.
+Позволяет оценщику выражения (EE) указать интерфейс обратного вызова, который будет использовать движок отладчика (DE) для чтения параметров метрики.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>Параметры
 `pCallback`\
-[in] Интерфейс для использования для параметров обратного вызова.
+(в) Интерфейс для использования для настроек обратного вызова.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-Этот метод предоставляет интерфейс диспетчеру сеанса отладки, вычислитель выражений можно использовать для чтения настроек метрик. Это полезно в удаленной отладки считывать метрики на [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] компьютера.
+Этот метод предоставляет интерфейс менеджеру отладки сеанса, который оценщик выражения может использовать для чтения параметров метрики. Это полезно при удаленной отладке [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] для чтения метрик на компьютере.
 
 ## <a name="example"></a>Пример
-Ниже показано, как реализовать этот метод для **CEE** объекта, который предоставляет [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) интерфейс.
+Ниже приведены следующие примеры, как реализовать этот метод для объекта **ЦВЕ,** который предоставляет интерфейс [IDebugSettingsCallback2.](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

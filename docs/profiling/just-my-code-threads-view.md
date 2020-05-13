@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62995343"
 ---
 # <a name="just-my-code-threads-view"></a>Только мой код (представление "Потоки")
@@ -26,6 +26,6 @@ ms.locfileid: "62995343"
 
  В некоторых случаях выбор этого параметра может отфильтровать блокирующий вызов. Если вам нужны полные данные стека вызовов, чтобы выполнить определение, отмените выбор этого параметра.
 
-## <a name="see-also"></a>См. также
-- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
 - [Процент снижения шума](../profiling/noise-reduction-percentage.md)

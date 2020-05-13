@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553231"
 ---
 # <a name="copy-selection"></a>Копирование выбранного
 Чтобы скопировать весь стек вызовов на вкладке отчета, щелкните **Копировать**. Затем стек вызовов можно вставить в любую программу, поддерживающую это действие.
 
-## <a name="see-also"></a>См. также
-- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

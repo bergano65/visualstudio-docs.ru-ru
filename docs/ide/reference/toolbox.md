@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596454"
 ---
-# <a name="toolbox"></a>Панель элементов
+# <a name="toolbox"></a>Область элементов
 
 Окно **панели элементов** отображает элементы управления, которые вы можете добавлять в проекты Visual Studio. Чтобы открыть панель элементов, в меню **Вид** выберите пункт **Панель элементов**.
 
@@ -71,6 +71,6 @@ ms.locfileid: "75596454"
 - [Панель элементов, вкладка "Компоненты"](../../ide/reference/toolbox-components-tab.md)
 - [Вкладка "HTML", панель элементов](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Выбор элементов панели элементов — компоненты WPF](choose-toolbox-items-wpf-components.md)

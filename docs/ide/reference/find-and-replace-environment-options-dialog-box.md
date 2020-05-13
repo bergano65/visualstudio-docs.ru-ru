@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569573"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>"Поиск и замена", "Среда", диалоговое окно "Параметры"
@@ -53,6 +53,6 @@ ms.locfileid: "75569573"
 
 Выберите этот параметр, чтобы вставлять текст с любой стороны от текущей точки вставки редактора в поле **Образец** при выборе любого представления окна **Поиск и замена** в меню **Правка**. Снимите этот флажок, чтобы использовать последний шаблон поиска из предыдущего поиска в качестве строки **Образец**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поиск и замена текста](../../ide/finding-and-replacing-text.md)

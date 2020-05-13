@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Документация Майкрософт
+title: DISASSEMBLY_STREAM_FIELDS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318264"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737364"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-Указывает, какую информацию нужно извлечь по полю Дизассемблированный код.
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
+Определяет, какую информацию получить о поле разборки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -66,60 +66,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Поля
 `DSF_ADDRESS`\
-Инициализация и использование `bstrAddress` поля.
+Инициализация/использование `bstrAddress` поля.
 
 `DSF_ADDRESSOFFSET`\
-Инициализация и использование `bstrAddressOffset` поля.
+Инициализация/использование `bstrAddressOffset` поля.
 
 `DSF_CODEBYTES`\
-Инициализация и использование `bstrCodeBytes` поля.
+Инициализация/использование `bstrCodeBytes` поля.
 
 `DSF_OPCODE`\
-Инициализация и использование `bstrOpCode` поля.
+Инициализация/использование `bstrOpCode` поля.
 
 `DSF_OPERANDS`\
-Инициализация и использование `bstrOperands` поля.
+Инициализация/использование `bstrOperands` поля.
 
 `DSF_SYMBOL`\
-Инициализация и использование `bstrSymbol` поля.
+Инициализация/использование `bstrSymbol` поля.
 
 `DSF_CODELOCATIONID`\
-Инициализация и использование `uCodeLocationId` поля.
+Инициализация/использование `uCodeLocationId` поля.
 
 `DSF_POSITION`\
-Инициализация и использование `posBeg` и `posEnd` поля.
+Инициализация/использование `posBeg` и `posEnd` поля.
 
 `DSF_DOCUMENTURL`\
-Инициализация и использование `bstrDocumentUrl` поля.
+Инициализация/использование `bstrDocumentUrl` поля.
 
 `DSF_BYTEOFFSET`\
-Инициализация и использование `dwByteOffset` поля.
+Инициализация/использование `dwByteOffset` поля.
 
 `DSF_FLAGS`\
-Инициализация и использование `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) поля.
+Инициализация/использование `dwFlags` поля[(DISASSEMBLY_FLAGS)](../../../extensibility/debugger/reference/disassembly-flags.md).
 
 `DSF_OPERANDS_SYMBOLS`\
-Включить имена символов в `bstrOperands` поля.
+Включите имена `bstrOperands` символов в поле.
 
 `DSF_ALL`\
-Указывает все поля для потока Дизассемблированный код.
+Определяет все поля для разборки потока.
 
 ## <a name="remarks"></a>Примечания
-Переданный в качестве параметра для [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод, чтобы указать, какие поля [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры должны быть инициализированы.
+Прошел в качестве параметра для метода [чтения,](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) чтобы указать, какие поля структуры [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) должны быть инициализированы.
 
-Используется для `dwFields` членом `DisassemblyData` структура указывает, какие поля используются и допустимым при возвращении структуры.
+Используется для `dwFields` члена `DisassemblyData` структуры для указания того, какие поля используются и действительны при возврате структуры.
 
-Эти значения могут объединяться с побитовым объектом `OR`.
+Эти значения могут быть объединены `OR`с bitwise .
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [Прочитать](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

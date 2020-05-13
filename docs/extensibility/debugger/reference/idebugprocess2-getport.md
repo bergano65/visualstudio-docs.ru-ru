@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPort | Документация Майкрософт
+title: IDebugПроцесс2::GetPort Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetPort
 ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e2e425cdb1663b2636769037de12001bb0d4594
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ea4d888c1e83e90882e2f42d8ef54ba8f6e34ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331574"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723916"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
-Получает порт, на которой выполняется процесс.
+Получает порт, в который идет процесс.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetPort( 
 
 ## <a name="parameters"></a>Параметры
 `ppPort`\
-[out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, который представляет порт, на котором был запущен процесс.
+(ваут) Возвращает объект [IDebugPort2,](../../../extensibility/debugger/reference/idebugport2.md) представляющий порт, на котором был запущен процесс.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Документация Майкрософт
+title: IDebugCustomAttribute::GetAttributeBytes Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551261414db9fab97f3e8c2a8fdbe518143d79c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315186"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732795"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Возвращает сведения об атрибутах как большой двоичный объект байтов.
+Получает информацию о атрибутах в виде капли байтов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Параметры
 `ppBlob`\
-[in, out] Массив, который заполняется байты атрибута.
+(в, вне) Массив, заполненный байтами атрибута.
 
 `pdwLen`\
-[in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.
+(в, вне) Определяет максимальное количество байтов, чтобы `ppBlob` вернуться в массив, и возвращает количество байтов, фактически написанных в массив.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Задайте `ppBlob` параметр в значение null для возврата количества атрибутов доступных байтов. Затем выделить память для массива и передать этот массив в для `ppBlob` параметра.
+ Установите `ppBlob` параметр на нулевое значение, чтобы вернуть количество доступных байтов атрибутов. Затем выделите массив и передайте этот массив для `ppBlob` параметра.
 
- Атрибут байты представляют необработанные данные настраиваемого атрибута.
+ Байты атрибутов представляют необработанные данные пользовательского атрибута.
 
 ## <a name="see-also"></a>См. также
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

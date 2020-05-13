@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568832"
 ---
 # <a name="import-and-export-settings-command"></a>Импорт и экспорт параметров - команда
@@ -30,21 +30,21 @@ ms.locfileid: "75568832"
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
 
 /export:`filename`
 
-Необязательный элемент. Экспортирует текущие параметры в указанный файл
+Необязательный параметр. Экспортирует текущие параметры в указанный файл
 
 /import:`filename`
 
-Необязательный элемент. Импортирует текущие параметры в указанный файл
+Необязательный параметр. Импортирует текущие параметры в указанный файл
 
 /reset
 
-Необязательный элемент. Сбрасывает текущие параметры
+Необязательный параметр. Сбрасывает текущие параметры
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Выполнение этой команды без параметров командной строки открывает мастер **Импорт и экспорт параметров**. Дополнительные сведения см. в статьях о [синхронизации параметров](../synchronized-settings-in-visual-studio.md) и [параметрах среды](../environment-settings.md).
 
@@ -56,7 +56,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры среды](../../ide/environment-settings.md)
 - [Синхронизация параметров](../../ide/synchronized-settings-in-visual-studio.md)

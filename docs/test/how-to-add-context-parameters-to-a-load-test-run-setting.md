@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584482"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Практическое руководство. Добавление контекстных параметров к параметрам запуска нагрузочного теста
@@ -36,9 +36,9 @@ ms.locfileid: "75584482"
 
 Кроме того, назначая параметру контекста разные значения с использованием одинакового имени в различных наборах параметров запуска нагрузочного теста, можно выполнять нагрузочный тест в разных средах:
 
-- Параметры запуска корпоративного промежуточного веб-сервера: параметр контекста с именем `WebServer1=http://CorporateStagingWebServer`
+- Набор параметров запуска корпоративного промежуточного веб-сервера: параметр контекста `WebServer1=http://CorporateStagingWebServer`
 
-- Параметр запуска корпоративного рабочего веб-сервера: параметр контекста с именем `WebServer1=http://CorporateProductionWebServer`
+- Набор параметров запуска корпоративного рабочего веб-сервера: параметр контекста `WebServer1=http://CorporateProductionWebServer`
 
   **Изменение набора параметров запуска из командной строки**
 
@@ -70,6 +70,6 @@ ms.locfileid: "75584482"
 
 6. Выберите параметры выполнения, которые хотите активировать. Откройте контекстное меню для параметров запуска и выберите пункт **Установить как активный**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)

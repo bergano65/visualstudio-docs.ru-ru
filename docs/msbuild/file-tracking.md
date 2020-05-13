@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee4620e845205a936bbdf48a9872c4dec3305ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9335ca6608d36edbd17e47a441e13aecaa41c890
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596038"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634205"
 ---
 # <a name="file-tracking"></a>Отслеживание файлов
+
 Журналы отслеживания файлов отправляют в файловую систему Windows вызов процесса и его дочерних процессов. Вызывая указанные ниже функции, программы управляют включением и отключением ведения журнала, а также задают нужный файл журнала.
 
 - [EndTrackingContext](../msbuild/endtrackingcontext.md) останавливает отслеживание в текущем контексте.

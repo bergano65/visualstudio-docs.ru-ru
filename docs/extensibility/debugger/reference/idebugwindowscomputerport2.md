@@ -1,24 +1,24 @@
 ---
-title: IDebugWindowsComputerPort2 | Документация Майкрософт
+title: IDebugWindowsComputerPort2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a60572c652080f2655ab7fe33954a661fbe07e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ef4162469651e4b69502d3a9639d1e86c62e0b7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319743"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718227"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-Позволяет запрашивать сведения о конечном компьютере.
+Позволяет запросить информацию о целевом компьютере.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,19 +26,19 @@ ms.locfileid: "66319743"
 IDebugWindowsComputerPort2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Этот интерфейс реализуется объектами порта диспетчера сеанса отладки.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Этот интерфейс реализован портовыми объектами диспетчера отладки сеанса.
 
 ## <a name="methods"></a>Методы
  В следующей таблице показаны методы `IDebugWindowsComputerPort2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Извлекает сведения о компьютере, на котором выполняется отладчик.|
+|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Получает информацию о компьютере, на котором работает отладчик.|
 
 ## <a name="requirements"></a>Требования
  Заголовок: Msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

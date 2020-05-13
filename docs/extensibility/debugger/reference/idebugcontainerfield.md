@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField | Документация Майкрософт
+title: IDebugContainerField (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField interface
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d633b7e42f8c7f64a818539694837b954ea31e72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332517"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733219"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
-Этот интерфейс представляет символ или тип, который является контейнером для других символов или типов.
+Этот интерфейс представляет собой символ или тип, который является контейнером для других символов или типов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,26 +28,26 @@ ms.locfileid: "66332517"
 IDebugContainerField : IDebugField
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс. Этот интерфейс также является базовым классом для всех интерфейсов, представляющих контейнеры.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик символов реализует этот интерфейс на том же объекте, который реализует интерфейс [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Этот интерфейс также является базовым классом для всех интерфейсов, представляющих контейнеры.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Многие методы на многих интерфейсов возвращают этот интерфейс. Так как это базовый класс для всех контейнеров, из этого интерфейса можно получить более специализированных интерфейсов, с помощью [QueryInterface](/cpp/atl/queryinterface). Такие интерфейсы включают [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Многие методы на многих интерфейсах возвращают этот интерфейс. Поскольку это базовый класс для всех контейнеров, более специализированные интерфейсы могут быть получены из этого интерфейса с помощью [queryInterface.](/cpp/atl/queryinterface) Такие интерфейсы включают [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, этот интерфейс реализует следующий метод:
+ В дополнение к методам на интерфейсе [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) этот интерфейс реализует следующий метод:
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Создает перечислитель для полей контейнера.|
+|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Создает регистратор для полей контейнера.|
 
 ## <a name="remarks"></a>Примечания
- Массивы (контейнеры для переменных), классы (содержащих методы и переменные) и методы (содержащих параметры и локальные переменные) являются примерами контейнеров.
+ Массивы (контейнеры для переменных), классы (контейнеры для методов и переменных) и методы (контейнеры для параметров и локальных переменных) являются примерами контейнеров.
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

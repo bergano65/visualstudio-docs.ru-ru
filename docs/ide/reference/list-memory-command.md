@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568715"
 ---
 # <a name="list-memory-command"></a>Команда List Memory
@@ -34,26 +34,26 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Аргументы
 `expression`
 
-Необязательный элемент. Адрес памяти, с которого начинается отображение памяти.
+Необязательный параметр. Адрес памяти, с которого начинается отображение памяти.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
 /ANSI&#124;Unicode
 
-Необязательный элемент. Отображает память в виде символов, соответствующих байтам памяти, в формате ANSI или Юникод.
+Необязательный параметр. Отображает память в виде символов, соответствующих байтам памяти, в формате ANSI или Юникод.
 
 /Count:`number`
 
-Необязательный элемент. Определяет, сколько байт памяти нужно отобразить, начиная с `expression`.
+Необязательный параметр. Определяет, сколько байт памяти нужно отобразить, начиная с `expression`.
 
 /Format:`formattype`
 
-Необязательный элемент. Тип формата для просмотра данных памяти в окне **Память**, может иметь значение OneByte, TwoBytes, FourBytes, EightBytes, Float (32-разрядный) или Double (64-разрядный). При использовании OneByte параметр `/Unicode` недоступен.
+Необязательный параметр. Тип формата для просмотра данных памяти в окне **Память**, может иметь значение OneByte, TwoBytes, FourBytes, EightBytes, Float (32-разрядный) или Double (64-разрядный). При использовании OneByte параметр `/Unicode` недоступен.
 
 /Hex&#124;Signed&#124;Unsigned
 
-Необязательный элемент. Указывает формат для просмотра чисел: со знаком, без знака или в шестнадцатеричном формате.
+Необязательный параметр. Указывает формат для просмотра чисел: со знаком, без знака или в шестнадцатеричном формате.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 Вместо записи полной команды **Debug.ListMemory** со всеми параметрами можно вызвать ее, используя стандартные псевдонимы, в которых отдельные параметры уже имеют определенные значения. Например, вместо ввода:
 
 ```cmd
@@ -68,13 +68,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 Ниже приведен список доступных псевдонимов для команды **Debug.ListMemory**:
 
-|Alias|Команда и параметры|
+|Псевдоним|Команда и параметры|
 |-----------| - |
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
 |**db**|Debug.ListMemory /Format:OneByte|
 |**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**dd**|Debug.ListMemory /Format:FourBytes|
+|**дд**|Debug.ListMemory /Format:FourBytes|
 |**df**|Debug.ListMemory /Format:Float|
 |**dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
@@ -85,11 +85,11 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)
 - [Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

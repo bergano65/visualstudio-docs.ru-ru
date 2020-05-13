@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3 | Документация Майкрософт
+title: IDebugBreakpointЗапрос3 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest3
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9101f1c2faeedf8b08b3b11044eaa22f6c6d512a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 505b0c0b05fa0f14578d770abec6c43ed6b80b01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352878"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734830"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
-Этот интерфейс представляет сведения, необходимые для создания и привязки любого типа точки останова. Он является расширением [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
+Этот интерфейс представляет информацию, необходимую для создания и связывания любого типа точки разрыва. Это расширение [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,26 +28,26 @@ ms.locfileid: "66352878"
 IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Диспетчер отладки сеансов (SDM) обычно реализует этот интерфейс.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Менеджер отладки сеанса (SDM) обычно реализует этот интерфейс.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Модуль отладки (DE) обращается к этот интерфейс путем вызова [QueryInterface](/cpp/atl/queryinterface) об интерфейсе IDebugBreakpointRequest2, полученных при вызове [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Отладка двигателя (DE) получает доступ к этому интерфейсу, вызывая [queryInterface](/cpp/atl/queryinterface) на интерфейсе IDebugBreakpointRequest2, полученном в [вызове createPendingBreakpoint.](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- Помимо методов, наследуемых от [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), `IDebugBreakpointRequest3` интерфейс предоставляет следующий метод.
+ В дополнение к методам, унаследованных от [IDebugBreakpointRequest2,](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) `IDebugBreakpointRequest3` интерфейс предоставляет следующий метод.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Получает сведения о запросе точки останова, описывающее этот запрос точки останова.|
+|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Получает информацию о запросе точки разрыва, описывающая этот запрос точки разрыва.|
 
 ## <a name="remarks"></a>Примечания
- Этот интерфейс используется для предоставления дополнительных сведений для DE через [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры. Эта дополнительная информация включает в себя идентификатор поставщика DE (в виде идентификатора GUID), имя точки трассировки и имя ограничения точки останова.
+ Этот интерфейс используется для предоставления дополнительной информации DE через [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуру. Эта дополнительная информация включает идентификатор поставщика DE (в виде GUID), имя точки трассировки и имя ограничения точки разрыва.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

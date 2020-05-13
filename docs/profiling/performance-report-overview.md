@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772236"
 ---
 # <a name="performance-report-overview"></a>Обзор отчета о производительности
@@ -94,6 +94,6 @@ ms.locfileid: "74772236"
 
 - **Экспорт** — сохранение текущего отчета в файле формата CVS или XML с возможностью сохранения различных представлений.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
 - [Представления отчетов о производительности](../profiling/performance-report-views.md)

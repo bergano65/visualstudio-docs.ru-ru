@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 12/12/2019
 ms.assetid: 2a561af4-f1fe-493e-9a53-aa6d77d15498
 ms.openlocfilehash: 3d1372ab5bd08ce164352293ec9d341ca567e3d5
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75439046"
 ---
 # <a name="projects-with-multiple-target-frameworks"></a>Проекты с несколькими целевыми платформами
@@ -75,7 +75,7 @@ public class MyClass
 
 ![Отображаемое в IntelliSense предупреждение об отсутствии поддержки API для указанной целевой платформы. Пример текста: пространство имен System.Buffers, SharedUtils (netstandard2.0) — недоступно. Для переключения контекста можно использовать панель навигации.](media/project-multitargeting-intellisense-warnings.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о настройке целевой платформы](/visualstudio/ide/visual-studio-multi-targeting-overview)
 - [Как указать целевые платформы](/dotnet/standard/frameworks#how-to-specify-target-frameworks)

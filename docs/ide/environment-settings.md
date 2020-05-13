@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588581"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306851"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Параметры среды для Visual Studio
 
@@ -20,7 +20,7 @@ ms.locfileid: "75588581"
 
 Доступны следующие коллекции параметров.
 
-- Общее
+- Общие сведения
 - JavaScript
 - Visual Basic
 - Visual C#
@@ -46,7 +46,7 @@ ms.locfileid: "75588581"
 
 1. На странице **Сброс завершен** нажмите **Закрыть**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Синхронизация параметров Visual Studio на нескольких компьютерах](synchronized-settings-in-visual-studio.md)
 - [Персонализация интегрированной среды разработки Visual Studio](personalizing-the-visual-studio-ide.md)

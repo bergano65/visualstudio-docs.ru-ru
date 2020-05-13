@@ -1,72 +1,72 @@
 ---
-title: Настраиваемые цветные элементы | Документация Майкрософт
+title: Пользовательские цветные предметы Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd1d18a6fe142a3b405742dd9e74c1376e713687
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312917"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708998"
 ---
-# <a name="custom-colorable-items"></a>Настраиваемые цветные элементы
-Список типов можно переопределить для выделения цветом, такие как ключевые слова и комментарии, путем реализации пользовательских цветных элементов как часть службы вашего языка.
+# <a name="custom-colorable-items"></a>Пользовательские цветные элементы
+Список типов для раскраскивания можно переопределить, например ключевые слова и комментарии, реализовав пользовательские цветные элементы как часть языковой службы.
 
-## <a name="user-settings-of-colorable-items"></a>Параметры пользователя цветных элементов
- Можно отобразить **шрифты и цвета** диалоговое окно, выбрав **параметры** на **средства** меню, а затем выбрав **шрифты и цвета** в разделе **среды**. При выборе отображения, такие как **текстовый редактор** или **командное окно**, **отображаемые элементы** отображается цветных элементов для этой отображения. Можно просмотреть и изменить шрифт, размер, цвет и цвет фона для каждого цветного элемента. Выбранные параметры хранятся в кэше в реестре и доступен по имени цветного элемента.
+## <a name="user-settings-of-colorable-items"></a>Пользовательские настройки цветных элементов
+ Вы можете отобразить диалоговую коробку **шрифтов и цветов,** выбрав **параметры** в меню **«Инструменты»,** а затем выбрав **шрифты и цвета** в **среде.** При выборе дисплея, **например, text Editor** или **Командное окно,** в поле списка **элементов дисплея** отображаются все цветные элементы для этого дисплея. Вы можете просматривать и изменять шрифт, размер, цвет переднего плана и цвет фона для каждого цветного элемента. Ваш выбор хранится в кэше в реестре и доступен под именем товара.
 
-## <a name="presentation-of-colorable-items"></a>Презентации цветных элементов
- Так как среда IDE обрабатывает переопределений пользователя цветных элементов в **шрифты и цвета** диалоговое окно, необходимо только указать каждого настраиваемого цветного элемента с именем. Это имя отображается в **отображаемые элементы** списка. Цветные элементы отображаются в алфавитном порядке. Чтобы сгруппировать службы вашего языка пользовательских цветных элементов, можно начать каждое имя именем своего языка, например **NewLanguage - комментарий** и **NewLanguage - ключевое слово**.
+## <a name="presentation-of-colorable-items"></a>Презентация цветных элементов
+ Поскольку IDE обрабатывает пользователем переопределения цветных элементов в диалоговом поле **шрифтов и цветов,** вам нужно только предоставить каждый пользовательский цветной элемент с именем. Это имя — это то, что отображается в списке **элементов Display.** Цветные элементы отображаются в алфавитном порядке. Чтобы сгруппировать пользовательские цветные элементы вашего языкового сервиса, вы можете начать каждое имя с вашего имени языка, например **NewLanguage - Комментарий** и **NewLanguage - Ключевое слово.**
 
 > [!CAUTION]
-> Имя языка следует включить в имя цветного элемента, чтобы избежать конфликтов с существующими именами цветного элемента. Если изменить имя одного из цветных элементов во время разработки, необходимо сбросить кэш, который был создан в первый раз обращается к вашей цветных элементов. Вы можете Сбросить экспериментальный кэш **CreateExpInstance** средство, которое устанавливается вместе с Visual Studio SDK, обычно в каталоге:
+> Чтобы избежать столкновений с существующими цветными именами элементов, необходимо включить имя языка в имя товара, чтобы избежать столкновений с существующими цветными именами элементов. Если во время разработки вы измените имя одного из ваших colorable элементов, необходимо сбросить кэш, созданный при первом доступе к красятным элементам. Экспериментальный кэш можно сбросить с помощью инструмента **CreateExpInstance,** который устанавливается с помощью Visual Studio SDK, как правило, в каталоге:
 >
-> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:-Программные файлы (x86)»Microsoft Visual Studio 14.0'VSSDK-VisualStudioIntegration*
 >
-> Чтобы сбросить кэш, введите **/Reset CreateExpInstance**. Дополнительные сведения о **CreateExpInstance**, см. в разделе [служебная программа CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
+> Чтобы сбросить кэш, введите **CreateExpInstance /Reset.** Для получения дополнительной информации о **CreateExpInstance**, [см.](../../extensibility/internals/createexpinstance-utility.md)
 
- Первый элемент в список цветных элементов никогда не указывается. Первый элемент соответствует индекс цветного элемента, равный 0, и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] всегда предоставляет цвета текста по умолчанию и атрибуты этого элемента. Для предоставления заполнитель цветного элемента в списке как первый элемент является самый простой способ работы с этим элементом, на которые нет ссылок.
+ Первый элемент в списке цветных элементов никогда не упоминается. Первый элемент соответствует цветообразу индексу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 0 и всегда поставляет цвета текста по умолчанию и атрибуты для этого элемента. Самый простой способ борьбы с этим неупомянутым пунктом является поставка заполнителя colorable пункта в вашем списке в качестве первого пункта.
 
 ## <a name="implement-custom-colorable-items"></a>Реализация пользовательских цветных элементов
 
-1. Определите, что необходимо цветом на вашем языке, например ключевое слово, оператор и идентификатор.
+1. Определите, что должно быть раскрашиваться на вашем языке, например, ключевое слово, оператор и идентификатор.
 
-2. Создайте перечисление эти цветных элементов.
+2. Создайте перечисление этих цветных элементов.
 
-3. Свяжите типы маркеров, возвращен из синтаксического анализатора или сканера с помощью перечисляемые значения.
+3. Ассоциированные типы токенов, возвращенные из парсера или сканера с перечисленными значениями.
 
-    Например значения, представляющие типы маркеров может быть те же значения в перечислении пользовательских цветных элементов.
+    Например, значения, представляющие типы маркеров, могут быть одинаковыми значениями в пользовательских цветовых элементах, перечисленных в перечислении.
 
-4. В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод в вашей <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> объекта, заполнить список атрибутов со значениями из соответствующих типов маркеров, возвращен из синтаксического анализатора или сканера пользовательских цветных элементов перечисления.
+4. При реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метода <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> в объекте заполните список атрибутов значениями из пользовательских цветовых элементов, соответствующих типам токенов, возвращенным из парсера или сканера.
 
-5. В том же классе, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса, реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> интерфейс и его два метода <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.
+5. В том же классе, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> интерфейс, реализуем интерфейс и два его метода, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.
 
-6. Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.
+6. Реализуйте интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.
 
-7. Если вы хотите поддерживать значения цвета 24-разрядный или высокого уровня, также реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейс.
+7. Если вы хотите поддерживать 24-битные или высокие <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> значения цвета, также реализовать интерфейс.
 
-8. В объект службы языка, создайте список, содержащий ваш <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> , по одному для каждого цветного элемента, можно определить синтаксического анализатора или сканера.
+8. В объекте языковой службы создайте список, содержащий объекты, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> по одному для каждого цветного элемента, который может идентифицировать ваш парорер или сканер.
 
-    Каждый элемент в списке доступны посредством соответствующее значение из перечисления пользовательских цветных элементов. Используйте значения перечисления в качестве индекса в списке. Первый элемент в списке никогда не осуществляется, так как он соответствует текст по умолчанию стиль [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] всегда обрабатывает сам. Вы можете компенсировать это, вставив цветного элемента заполнителя в начале списка.
+    Вы можете получить доступ к каждому элементу в списке, используя соответствующее значение из пользовательских цветовых элементов перечисления. Используйте значения перечисления в качестве индекса в списке. Первый элемент в списке никогда не доступен, потому [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] что он соответствует стилю текста по умолчанию, который всегда обрабатывает себя. Вы можете компенсировать это, вставив заполнитель цветной элемент в начале списка.
 
-9. В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> метода, возвращает количество элементов в список пользовательских цветных элементов.
+9. В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> метода верните количество элементов в списке пользовательских цветных элементов.
 
-10. В реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> метода возврата запрошенного цветного элемента из списка.
+10. При реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> метода верните запрошенный цветной элемент из списка.
 
-    Пример реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейсов, см. в разделе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.
+    Например, как реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> интерфейсы и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>интерфейсы, см.
 
 ## <a name="see-also"></a>См. также
-- [Модель языковой службы прежних версий](../../extensibility/internals/model-of-a-legacy-language-service.md)
-- [Цветовая маркировка синтаксиса в специализированных редакторах](../../extensibility/syntax-coloring-in-custom-editors.md)
-- [Цветовая маркировка синтаксиса в языковой службы прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-- [Реализуйте Цветовая подсветка синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)
-- [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Модель устаревшего языкового сервиса](../../extensibility/internals/model-of-a-legacy-language-service.md)
+- [Синтаксис раскраски в пользовательских редакторов](../../extensibility/syntax-coloring-in-custom-editors.md)
+- [Раскраска Syntax в устаревшей языковой службе](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+- [Реализация окраски синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)
+- [Как: Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

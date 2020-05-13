@@ -1,25 +1,25 @@
 ---
-title: Регистрация окна инструментов | Документация Майкрософт
+title: Регистрация окна инструмента (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering managed
 - tool windows, registering
 ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2e7971de5ae5301d99147bbfc374dda6b039662a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186265"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701602"
 ---
-# <a name="register-a-tool-window"></a>Регистрация окна инструментов
-Вы можете зарегистрировать окна инструментов с помощью <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> и <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
+# <a name="register-a-tool-window"></a>Регистрация окна инструмента
+Вы можете зарегистрировать окна <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>инструмента, используя и .
 
 ## <a name="example"></a>Пример
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- В приведенном выше коде <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> регистрирует окна инструментов `PersistedWindowPane` и `DynamicWindowPane` в Visual Studio. Окно сохраненного инструмента закреплено с **Обозреватель решений**, а динамическому окну дается начальное положение и размер по умолчанию. Динамическое окно становится временным, что означает, что он не создается при запуске. При этом записывается значение `DontForceCreate` в разделе `ToolWindows` в системном реестре. Дополнительные сведения см. в разделе [Настройка экрана окна инструментов](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).
+ В приведенном выше <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> коде `PersistedWindowPane` `DynamicWindowPane` регистрируется окна инструментов с Visual Studio. Упорный окне инструмента пристыкован и вкладка с **Solution Explorer**, и динамическое окно дается исходное положение по умолчанию и размер. Динамическое окно сделано переходным, что указывает на то, что оно не создается при запуске. Это записывает `DontForceCreate` значение `ToolWindows` в ключе в реестре системы. Для получения дополнительной [Tool window display configuration](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015)информации см.

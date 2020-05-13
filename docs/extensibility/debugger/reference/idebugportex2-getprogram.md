@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::GetProgram | Документация Майкрософт
+title: IDebugPortEx2::GetProgram Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 505823a6399cc605d8784a4dba88f2fa27ad6d72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f1f9dea8706b8075b460b813d2dc58a916198d37
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311202"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725088"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
-Возвращает программу, связанный с узлом программы.
+Получает программу, связанную с узлами программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,12 +42,12 @@ int GetProgram( 
 ```
 
 ## <a name="parameters"></a>Параметры
-`pProgramNode` [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, представляющий узел программы.
+`pProgramNode`(в) Объект [IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) представляющий узла программы.
 
-`ppProgram` [out] Возвращает [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, связанный с узлом программы.
+`ppProgram`(ваут) Возвращает объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий программу, связанную с узлами программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 | Документация Майкрософт
+title: BP_REQUEST_INFO2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO2 structure
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f9c601cf1620d002bd86b8bc110d28bdb533e61
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352944"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737879"
 ---
-# <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
-Содержит сведения, необходимые для реализации точки останова, включая идентификатор GUID поставщика, ограничения и трассировки.
+# <a name="bp_request_info2"></a>BP_REQUEST_INFO2
+Содержит информацию, необходимую для реализации точки разрыва, включая GUID поставщика, ограничение и точку трассировки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -65,51 +65,51 @@ public struct BP_REQUEST_INFO2 {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, указывающее, какие поля заполнены.
+Комбинация флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, которая определяет, какие поля заполнены.
 
 `guidLanguage`\
 GUID языка.
 
 `bpLocation`\
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру, которая указывает тип точки останова.
+Структура [BP_LOCATION,](../../../extensibility/debugger/reference/bp-location.md) которая определяет тип местоположения точки разрыва.
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором происходит точки останова.
+Объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий приложение, в котором происходит точка разрыва.
 
 `bstrProgramName`\
-Имя приложения, в котором происходит точки останова.
+Название приложения, в котором происходит точка разрыва.
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точки останова.
+Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий поток, в котором происходит точка разрыва.
 
 `bstrThreadName`\
-Имя потока, в котором происходит точки останова.
+Название потока, в котором происходит точка разрыва.
 
 `bpCondition`\
-[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.
+Структура [BP_CONDITION,](../../../extensibility/debugger/reference/bp-condition.md) описывающая условия, при которых будет гореть точка разрыва.
 
 `bpPassCount`\
-[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете pass точки останова.
+Структура [BP_PASSCOUNT,](../../../extensibility/debugger/reference/bp-passcount.md) содержащая информацию о подсчете пропусков точки разрыва.
 
 `dwFlags`\
-Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, указывающее флаги для запрошенного точки останова.
+Комбинация флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, которая определяет флаги для запрошенной точки разрыва.
 
 `guidVendor`\
-Идентификатор GUID поставщика. Может иметь значение null.
+GUID поставщика. Может быть нулевая стоимость.
 
 `bstrConstraint`\
-Имя ограничения точки останова. Может иметь значение null.
+Наименование ограничения точки разрыва. Может быть нулевая стоимость.
 
 `bstrTracepoint`\
-Имя точки трассировки. Может иметь значение null.
+Название точки трассировки. Может быть нулевая стоимость.
 
 ## <a name="remarks"></a>Примечания
-Эта структура возвращается [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) метод.
+Эта структура возвращается методом [GetRequestInfo2.](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

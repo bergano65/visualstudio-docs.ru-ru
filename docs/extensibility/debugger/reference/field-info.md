@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO | Документация Майкрософт
+title: FIELD_INFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337703"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736894"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
-Локальная переменная, параметр или другому полю, описанном структурой.
+# <a name="field_info"></a>FIELD_INFO
+Эта структура описывает локальную переменную, параметр или другое поле.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,27 +49,27 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Сочетание флагов из [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) перечисление, указывающее, какие члены будут заполнены.
+Комбинация флагов из [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) перечисления, которая определяет, какие члены заполнены.
 
 `bstrFullName`\
-Полное имя поля.
+Полное название поля.
 
 `bstrName`\
-Короткое имя поля.
+Краткое название поля.
 
 `bstrType`\
 Тип поля.
 
 `dwModifiers`\
-Сочетание флагов из [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) перечисление, описывающее поле.
+Комбинация флагов из [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) перечисления, описывающая поле.
 
 ## <a name="remarks"></a>Примечания
-Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод, где он заполняется.
+Эта структура передается методу [GetInfo,](../../../extensibility/debugger/reference/idebugfield-getinfo.md) где она заполняется.
 
 ## <a name="requirements"></a>Требования
 Заголовок: sh.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

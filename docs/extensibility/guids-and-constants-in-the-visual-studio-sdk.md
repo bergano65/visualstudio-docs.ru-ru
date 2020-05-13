@@ -1,32 +1,32 @@
 ---
-title: Идентификаторы GUID и константы в пакете SDK для Visual Studio | Документация Майкрософт
+title: GUIDs и константы в визуальной студии SDK (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77674faa43ce687fcd3df4412437ecb5cda10dd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ecb443f3b5d6dd7b45d8dd77a8739b12b8891832
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342244"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711134"
 ---
-# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Идентификаторы GUID и константы в Visual Studio SDK
-<xref:Microsoft.VisualStudio.VSConstants> Класс предоставляет доступ к целому ряду среды идентификаторы GUID и константы.
+# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUIDs и константы в визуальной студии SDK
+Класс <xref:Microsoft.VisualStudio.VSConstants> обеспечивает доступ к выбору графических интерфейсов и констант среды.
 
-## <a name="in-this-section"></a>Содержание раздела
-- [Идентификаторы GUID среды IDE](../extensibility/ide-guids.md) список идентификаторов GUID, предоставляемые <xref:Microsoft.VisualStudio.VSConstants>.
+## <a name="in-this-section"></a>В этом разделе
+- [ГИДЫ IDE](../extensibility/ide-guids.md) Списки GUID, <xref:Microsoft.VisualStudio.VSConstants>предоставляемые .
 
-- [Константы среды IDE](../extensibility/ide-constants.md) SDK перечислены константы, предоставляемые <xref:Microsoft.VisualStudio.VSConstants>.
+- [Константы IDE](../extensibility/ide-constants.md) Списки констант <xref:Microsoft.VisualStudio.VSConstants>SDK, предоставляемые .
 
-## <a name="related-sections"></a>Связанные разделы
-- [Константы COM в управляемом коде](../extensibility/com-constants-in-managed-code.md) констант списки стандартами COM, доступных для управляемого кода из Managed Package Framework (MPF).
+## <a name="related-sections"></a>См. также
+- [Константы COM в управляемом коде](../extensibility/com-constants-in-managed-code.md) Перечисляет стандартные константы COM, доступные для управляемого кода из Рамочной программы управляемого пакета (MPF).
 
-- [Команды, определенные в интегрированной среде разработки, для расширения систем проектов](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) перечислены различные типы элементов команды, используемые для расширения систем проектов.
+- [Определяющие IDE команды для расширения проектных систем](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Перечисляет различные типы командных элементов, используемых для расширения проектных систем.

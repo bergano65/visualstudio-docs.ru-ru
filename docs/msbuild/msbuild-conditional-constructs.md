@@ -22,22 +22,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26891fa67616b1796499722e03a764da2a8fd7d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589270"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633386"
 ---
 # <a name="msbuild-conditional-constructs"></a>Условные конструкции MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет механизм для обработки условий "либо-либо" с помощью элементов [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) и [Otherwise](../msbuild/otherwise-element-msbuild.md).
+
+MSBuild предоставляет механизм для обработки условий "либо — либо" с помощью элементов [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) и [Otherwise](../msbuild/otherwise-element-msbuild.md).
 
 ## <a name="use-the-choose-element"></a>Использование элемента Choose
+
  Элемент `Choose` содержит ряд элементов `When` с атрибутами `Condition`, которые проверяются в порядке сверху вниз, пока один из них не даст значение `true`. Если значение `true` дают несколько элементов `When`, используется только первый из них. Если ни одно из условий элемента `When` не дает значение `true`, вычисляется элемент `Otherwise` (при его наличии).
 
  Элементы `Choose` можно использовать в качестве дочерних для элементов `Project`, `When` и `Otherwise`. Элементы `When` и `Otherwise` могут иметь дочерние элементы `ItemGroup`, `PropertyGroup` или `Choose`.
 
 ## <a name="example"></a>Пример
+
  Следующий пример использует элементы `Choose` и `When` для обработки условий "либо-либо". Свойства и элементы для проекта задаются в зависимости от значения свойства `Configuration`.
 
 ```xml
@@ -77,6 +80,7 @@ ms.locfileid: "75589270"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [Элемент When (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Элемент Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)

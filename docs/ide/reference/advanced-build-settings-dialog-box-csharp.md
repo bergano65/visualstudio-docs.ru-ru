@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595856"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры сборки" (C#)
 
 Диалоговое окно **Дополнительные параметры сборки** в **конструкторе проектов** позволяет задать дополнительные свойства конфигурации сборки. Это окно применяется только к проектам C#.
 
-## <a name="general"></a>Общее
+## <a name="general"></a>Общие сведения
 
 Описанные ниже параметры позволяют производить общую расширенную настройку.
 
@@ -56,7 +56,7 @@ ms.locfileid: "75595856"
 
 Указывает, будет ли библиотека mscorlib.dll импортирована в программу, целиком определяя пространство имен <xref:System>. Используйте этот параметр, если хотите определить или создать собственное пространство имен <xref:System> и соответствующие объекты. Дополнительные сведения см. в разделе [/nostdlib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
-## <a name="output"></a>Вывод
+## <a name="output"></a>Выходные данные
 
 Описанные ниже параметры позволяют производить расширенную настройку вывода.
 
@@ -64,7 +64,7 @@ ms.locfileid: "75595856"
 
 Определяет тип отладочной информации, создаваемой компилятором. Сведения о настройке производительности отладки для приложения см. в разделе [Упрощение отладки образов](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Включает следующие значения:
 
-- **none**
+- **Нет**
 
    Указывает, что отладочная информация создаваться не будет.
 
@@ -94,7 +94,7 @@ ms.locfileid: "75595856"
 
 Указывает предпочтительный базовый адрес для загрузки DLL. Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR платформы .NET Framework. Дополнительные сведения см. в разделе [/baseaddress (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index)
 - Сведения о [странице сборки в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -10,15 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633711"
 ---
 # <a name="item-definitions"></a>Определения элементов
-В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 поддерживается статическое объявление элементов в файлах проекта с использованием элемента [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Однако метаданные можно добавлять только на уровне элемента, даже если метаданные для всех элементов идентичны. Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 элемент проекта с именем [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) позволяет обойти это ограничение. *ItemDefinitionGroup* позволяет определить набор определений элементов, который добавляет значения метаданных по умолчанию для всех элементов в именованном типе элементов.
+
+MSBuild 2.0 поддерживает статическое объявление элементов в файлах проекта с использованием элемента [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Однако метаданные можно добавлять только на уровне элемента, даже если метаданные для всех элементов идентичны. Начиная с версии MSBuild 3.5 элемент проекта с именем [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) позволяет обойти это ограничение. *ItemDefinitionGroup* позволяет определить набор определений элементов, который добавляет значения метаданных по умолчанию для всех элементов в именованном типе элементов.
 
 Элемент *ItemDefinitionGroup* располагается непосредственно за элементом [Project](../msbuild/project-element-msbuild.md) в файле проекта. Определения элементов предоставляют следующие функциональные возможности:
 
@@ -33,6 +34,7 @@ ms.locfileid: "75573785"
 - Для управления включением метаданных можно использовать условия.
 
 ## <a name="item-metadata-default-values"></a>Значения метаданных элементов по умолчанию
+
 Метаданные элементов, определяемые в ItemDefinitionGroup, являются объявлением метаданных по умолчанию. Метаданные не применяются, если не определен элемент, использующий ItemGroup для хранения значений метаданных.
 
 > [!NOTE]
@@ -61,6 +63,7 @@ ms.locfileid: "75573785"
 > В именах элементов и параметров XML учитывается регистр. В именах метаданных элементов и \/свойств элемента регистр не учитывается. Поэтому имена элементов ItemDefinitionGroup, отличающиеся только регистром, следует рассматривать как одинаковые элементы ItemGroup.
 
 ## <a name="value-sources"></a>Источники значений
+
 Значения для метаданных, определенных в ItemDefinitionGroup, могут поступать из множества различных источников:
 
 - свойство PropertyGroup;
@@ -83,6 +86,7 @@ ms.locfileid: "75573785"
 > Метаданные элементов из ItemGroup не используются при объявлении метаданных ItemDefinitionGroup, так как элементы ItemDefinitionGroup обрабатываются раньше элементов ItemGroup.
 
 ## <a name="additive-and-multiple-definitions"></a>Аддитивные и множественные определения
+
 При добавлении определений или использовании нескольких элементов ItemDefinitionGroups учитывайте следующее:
 
 - Дополнительные спецификации метаданных добавляются к типу.
@@ -143,6 +147,7 @@ ms.locfileid: "75573785"
 ```
 
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Использование условий в ItemDefinitionGroup
+
 Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Пример:
 
 ```xml
@@ -189,7 +194,8 @@ ms.locfileid: "75573785"
 В приведенном выше примере m может быть присвоено значение m1, так как Condition содержит ссылку на значение метаданных элемента i для элемента yes.
 
 ## <a name="override-and-delete-metadata"></a>Переопределение и удаление метаданных
-Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Пример:
+
+Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им другое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Пример:
 
 ```xml
 <ItemDefinitionGroup>
@@ -207,6 +213,7 @@ ms.locfileid: "75573785"
 Элемент i все равно содержит метаданные m, но его значение теперь пустое.
 
 ## <a name="scope-of-metadata"></a>Область действия метаданных
+
 Элементы ItemDefinitionGroups имеют глобальную область действия на заданные и глобальные свойства, независимо от того, где они определены. Определения метаданных по умолчанию в ItemDefinitionGroup могут ссылаться сами на себя. Например, в следующем примере используется простая ссылка на метаданные:
 
 ```xml
@@ -240,7 +247,7 @@ ms.locfileid: "75573785"
 </ItemDefinitionGroup>
 ```
 
-Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 ItemGroups также могут ссылаться сами на себя. Пример:
+Начиная с версии MSBuild 3.5, ItemGroups также могут ссылаться сами на себя. Пример:
 
 ```xml
 <ItemGroup>
@@ -252,4 +259,5 @@ ms.locfileid: "75573785"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)

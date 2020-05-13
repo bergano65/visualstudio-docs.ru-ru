@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.openlocfilehash: 664f2431de7702219ced2ae2af4bd908e814a689
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985188"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
@@ -44,7 +44,7 @@ Visual Studio для Mac поддерживает добавление неск�
 
 Чтобы добавить их, выполните действия, описанные в разделе [Вход в Visual Studio для Mac](#how-to-sign-in-to-visual-studio-for-mac).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Вход в Visual Studio (в Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Работа с несколькими учетными записями пользователей (Visual Studio в Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

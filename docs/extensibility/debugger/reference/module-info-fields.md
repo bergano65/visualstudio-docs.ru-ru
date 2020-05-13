@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Документация Майкрософт
+title: MODULE_INFO_FIELDS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311378"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714319"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Задает флаги для отладки модуля.
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
+Осваируем флаги для информации о модуле отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -66,55 +66,55 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Поля
  `MIF_NONE`\
- Инициализировать или использовать ни одно из полей в структуре.
+ Инициализация/использование ни одного из полей в структуре.
 
  `MIF_NAME`\
- Инициализация и использование `m_bstrName` в [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.
+ Инициализация/использование `m_bstrName` поля в [структуре MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
 
  `MIF_URL`\
- Инициализация и использование `m_bstrUrl` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_bstrUrl` `MODULE_INFO` поля в структуре.
 
  `MIF_VERSION`\
- Инициализация и использование `m_bstrVersion` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_bstrVersion` `MODULE_INFO` поля в структуре.
 
  `MIF_DEBUGMESSAGE`\
- Инициализация и использование `m_bstrDebugMessage` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_bstrDebugMessage` `MODULE_INFO` поля в структуре.
 
  `MIF_LOADADDRESS`\
- Инициализация и использование `m_addrLoadAddress` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_addrLoadAddress` `MODULE_INFO` поля в структуре.
 
  `MIF_PREFFEREDADDRESS`\
- Инициализация и использование `m_addrPreferredLoadAddress` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_addrPreferredLoadAddress` `MODULE_INFO` поля в структуре.
 
  `MIF_SIZE`\
- Инициализация и использование `m_dwSize` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_dwSize` `MODULE_INFO` поля в структуре.
 
  `MIF_LOADORDER`\
- Инициализация и использование `m_dwLoadOrder` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_dwLoadOrder` `MODULE_INFO` поля в структуре.
 
  `MIF_TIMESTAMP`\
- Инициализация и использование `m_TimeStamp` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_TimeStamp` `MODULE_INFO` поля в структуре.
 
  `MIF_URLSYMBOLLOCATION`\
- Инициализация и использование `m_bstrUrlSymbolLocation` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_bstrUrlSymbolLocation` `MODULE_INFO` поля в структуре.
 
  `MIF_FLAGS`\
- Инициализация и использование `m_dwModuleFlags` в `MODULE_INFO` структуры.
+ Инициализация/использование `m_dwModuleFlags` `MODULE_INFO` поля в структуре.
 
  `MIF_ALLFIELDS`\
- Инициализация и использование всех полей в `MODULE_INFO` структуры.
+ Инициализация/использование всех `MODULE_INFO` полей в структуре.
 
 ## <a name="remarks"></a>Примечания
- Эти значения передаются в качестве аргумента [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, чтобы указать, какие поля [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры должны быть инициализированы.
+ Эти значения передаются в качестве аргумента методу [GetInfo,](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) чтобы указать, какие поля [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры должны быть инициализированы.
 
- Эти значения также используются в `MODULE_INFO` структура указывает, какие поля используются и допустимым.
+ Эти значения также используются `MODULE_INFO` в структуре для указания того, какие поля используются и действительны.
 
- Эти флаги могут быть объединены с побитовым объектом `OR`.
+ Эти флаги могут быть `OR`объединены с bitwise .
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

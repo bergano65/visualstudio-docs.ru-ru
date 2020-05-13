@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS | Документация Майкрософт
+title: MACHINE_INFO_FIELDS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79bd733d987511a624235c06b5dbe83206e0c5bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89a2552bb6a8bea88f54a897b829ab89b30ff413
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339348"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714495"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-Указывает, какого рода информацию необходимо вернуть для конкретного компьютера.
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
+Определяет, какую информацию получить для конкретной машины.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,25 +46,25 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Поля
  `MCIF_NAME`\
- Инициализация и использование `bstrName` в структуре.
+ Инициализация/использование `bstrName` поля в структуре.
 
  `MCIF_FLAGS`\
- Инициализация и использование `Flags` в структуре.
+ Инициализация/использование `Flags` поля в структуре.
 
  `MIF_ALL`\
- Инициализировать или использовать все поля в структуре.
+ Инициализация/использование всех полей в структуре.
 
 ## <a name="remarks"></a>Примечания
- Эти значения передаются [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) метод, чтобы указать, какие элементы [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуры должны быть инициализированы.
+ Эти значения передаются методу [GetMachineInfo,](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) чтобы указать, какие члены [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуры должны быть инициализированы.
 
- Также используется в `Fields` членом `MACHINE_INFO` структура указывает, какие поля используются и допустимым.
+ Также используется `Fields` в составе `MACHINE_INFO` структуры для обозначения того, какие поля используются и действительны.
 
- Эти флаги могут быть объединены с побитовым объектом `OR`.
+ Эти флаги могут быть `OR`объединены с bitwise .
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

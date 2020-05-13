@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568871"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Рефакторинг для замены временной переменной
@@ -25,13 +25,13 @@ ms.locfileid: "75568871"
 
 - Visual Basic
 
-**Что?** Удаление временной переменной и ее замена значением.
+**Что.** Удаление временной переменной и ее замена значением.
 
 **Когда?** Использование временной переменной затрудняет понимание кода.
 
 **Зачем?** Удаление временной переменной может сделать код более удобным для чтения.
 
-## <a name="how-to"></a>Практические советы
+## <a name="how-to"></a>Практическое руководство
 
 1. Выделите временную переменную или наведите на нее курсор для замены:
 
@@ -43,7 +43,7 @@ ms.locfileid: "75568871"
 
        ![Выделенный код — Visual Basic](media/inline-highlight-vb.png)
 
-2. Затем выполните одно из следующих действий:
+2. Затем выполните одно из следующих действий.
 
    - **Клавиатура**
       - Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
@@ -62,6 +62,6 @@ ms.locfileid: "75568871"
 
       ![Встроенный результат — Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)

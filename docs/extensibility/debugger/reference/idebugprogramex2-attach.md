@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach | Документация Майкрософт
+title: IDebugProgramEx2::Прикрепите Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db27f29b37480081d29e452d74a6da0c5cea59a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325187"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722387"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-Присоединиться к программе сеанса.
+Прикрепите сеанс к программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,22 +45,22 @@ int Attach( 
 
 ## <a name="parameters"></a>Параметры
 `pCallback`\
-[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, который представляет вложенные отладчик отправляет события в функцию обратного вызова.
+(в) Объект [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) представляющий функцию обратного вызова, на который прилагаемый отладивший двигатель отправляет события.
 
 `dwReason`\
-[in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисление, описывающее причину для операции присоединения.
+(в) Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисления, описывающий причину операции присоединения.
 
 `pSession`\
-[in] Значение, уникально идентифицирующий сеанс, который присоединяется к программе.
+(в) Значение, которое однозначно определяет сеанс, прилагаемый к программе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Этот метод должен возвращать `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` Если программа уже подключен.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки. Этот метод `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` должен вернуться, если программа уже подключена.
 
 ## <a name="remarks"></a>Примечания
- Порт, в которой находится программа может использовать значение в `pSession` для определения, какой сеанс пытается присоединить к программе. Например если порт допускает только один отладку для присоединения к процессу одновременно, порт можно определить сеанс уже назначена ли другие программы, в процессе.
+ Порт, содержащий программу, может `pSession` использовать значение, чтобы определить, какой сеанс пытается прикрепить к программе. Например, если порт позволяет прикреплять к процессу только один сеанс отладки, порт может определить, подключен ли тот же сеанс к другим программам в процессе.
 
 > [!NOTE]
-> Переданный интерфейс `pSession` следует рассматривать только как файл cookie, значение, однозначно определяющий диспетчер отладки сеансов, присоединить к этой программе; ни один из методов предоставленного интерфейса являются рабочими.
+> Интерфейс, пройденый, `pSession` должен рассматриваться только как файлcookieое, значение, которое однозначно определяет менеджер отладки сеанса, прикрепляющий сякшет к этой программе; ни один из методов на поставляемом интерфейсе не является функциональным.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

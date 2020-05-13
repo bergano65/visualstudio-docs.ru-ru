@@ -24,6 +24,8 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Практические руководства
   items:
+    - name: Использование PerfTips
+      href: perftips.md
     - name: Использование ЦП
       href: cpu-usage.md
     - name: Использование памяти
@@ -32,18 +34,16 @@
           href: analyze-memory-usage.md
         - name: Анализ использования памяти для объектов .NET
           href: dotnet-alloc-tool.md
-        - name: События пользовательской собственной кучи трассировки событий Windows
-          href: custom-native-etw-heap-events.md
         - name: Использование памяти без отладчика
           href: memory-usage-without-debugging2.md
+        - name: События пользовательской собственной кучи трассировки событий Windows
+          href: custom-native-etw-heap-events.md
     - name: Измерение производительности из командной строки
       href: profile-apps-from-command-line.md
     - name: Анализ использования графического процессора
       href: gpu-usage.md
     - name: Анализ использования ресурсов
       href: application-timeline.md
-    - name: Использование PerfTips
-      href: perftips.md
     - name: Анализ использования сети
       href: network-usage.md
     - name: Анализ памяти JavaScript

@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430072"
 ---
-# <a name="step-2-write-and-run-code"></a>Шаг 2. Написание и запуск кода
+# <a name="step-2-write-and-run-code"></a>Шаг 2. Написание и запуск кода
 
-**Предыдущий шаг. [Создание проекта Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Предыдущий шаг: [создание проекта Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Хотя управление файлами проекта осуществляется в **обозревателе решений**, с *содержимым* файлов, например файлов исходного кода, вы обычно работаете в окне *редактора*. Редактор определяет тип редактируемого файла, включая язык программирования (на основе расширения файла), и обеспечивает характерные для этого языка возможности, например раскраску синтаксических конструкций и автоматическое завершение с помощью IntelliSense.
 
@@ -86,7 +86,7 @@ ms.locfileid: "62430072"
 
 1. Снова запустите программу, нажав клавиши **CTRL**+**F5** или выбрав пункт меню **Отладка** > **Запуск без отладки**. По завершении закройте окно вывода.
 
-## <a name="next-step"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Использование интерактивного окна REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)

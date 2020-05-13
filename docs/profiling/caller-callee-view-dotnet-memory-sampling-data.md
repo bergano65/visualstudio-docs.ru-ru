@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773313"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
@@ -29,7 +29,7 @@ ms.locfileid: "74773313"
 
  Дважды щелкните строку вызывающей или вызываемой функции, чтобы обозначить эту строку как текущую функцию.
 
-|Столбец|ОПИСАНИЕ|
+|Столбец|Описание|
 |------------|-----------------|
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|
 |**Имя процесса**|Имя процесса.|

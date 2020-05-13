@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113421"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Практическое руководство. управление наборами счетчиков с помощью редактора тестовой нагрузки
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Практическое руководство. Управление наборами счетчиков с помощью редактора тестовой нагрузки
 
 Начальный набор счетчиков добавляется при создании нагрузочного теста с помощью **мастера тестовой нагрузки**. Таким образом создаются предварительно определенные наборы счетчиков для нагрузочного теста.
 
@@ -60,7 +60,7 @@ ms.locfileid: "76113421"
 
 6. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

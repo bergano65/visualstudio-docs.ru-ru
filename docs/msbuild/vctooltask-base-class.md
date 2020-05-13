@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591675"
 ---
 # <a name="vctooltask-base-class"></a>Базовый класс VCToolTask
@@ -26,7 +26,7 @@ ms.locfileid: "75591675"
 
 В следующей таблице описываются параметры базового класса **VCToolTask**.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |**ActiveToolSwitchesValues**|Необязательный параметр типа **Dictionary\<string, ToolSwitch>** .|
 |**AdditionalOptions**|Необязательный параметр типа **string**.|
@@ -34,10 +34,10 @@ ms.locfileid: "75591675"
 |**EnableErrorListRegex**|Необязательный параметр типа **bool**.<br/><br/>Значение по умолчанию — `true`.|
 |**ErrorListRegex**|Необязательный параметр **ITaskItem[]** .|
 |**ErrorListListExclusion**|Необязательный параметр **ITaskItem[]** .|
-|**GenerateCommandLine**|Необязательный параметр типа **string**.<br/><br/>Использует значения *format* **CommandLineFormat** [по умолчанию = CommandLineFormat.ForBuildLog] и *EscapeFormat* **escapeFormat** [по умолчанию = EscapeFormat.Default].|
-|**GenerateCommandLineExceptSwitches**|Необязательный параметр типа **string**.<br/><br/>Использует значения *switchesToRemove* **string[]** , *format* **CommandLineFormat** [по умолчанию = CommandLineFormat.ForBuildLog] и *EscapeFormat* **escapeFormat** [по умолчанию = EscapeFormat.Default].|
+|**GenerateCommandLine**|Необязательный параметр типа **string**.<br/><br/>Использует значения **format** *CommandLineFormat* [по умолчанию = CommandLineFormat.ForBuildLog] и **EscapeFormat** *escapeFormat* [по умолчанию = EscapeFormat.Default].|
+|**GenerateCommandLineExceptSwitches**|Необязательный параметр типа **string**.<br/><br/>Использует значения **switchesToRemove** *string[]* , **format** *CommandLineFormat* [по умолчанию = CommandLineFormat.ForBuildLog] и **EscapeFormat** *escapeFormat* [по умолчанию = EscapeFormat.Default].|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)<br/>
 [Задачи](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS | Документация Майкрософт
+title: DISASSEMBLY_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318389"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737370"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Задает флаги для Дизассемблированный код.
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
+Определяет флаги для разборки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,32 +52,32 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>Поля
 `DF_DOCUMENTCHANGE`\
-Указывает, что эта инструкция находится в другой документ, отличный от предыдущего.
+Указывается, что эта инструкция содержится в другом документе, чем предыдущая.
 
 `DF_DISABLED`\
-Указывает, что эта инструкция будет выполнена.
+Означает, что эта инструкция не будет выполнена.
 
 `DF_INSTRUCTION_ACTIVE`\
-Указывает, что эта инструкция является одним из далее инструкциям для выполнения (может быть несколько).
+Указывает, что эта инструкция является одним из следующих инструкций, которые должны быть выполнены (может быть более одного).
 
 `DF_DATA`\
-Указывает, что эта инструкция действительно данных (не в коде).
+Означает, что эта инструкция на самом деле данные (не код).
 
 `DF_HASSOURCE`\
-Указывает, что эта инструкция имеет источник. Некоторые инструкции, такие как коллекции кода профилирования или сборки мусора, имеют нет соответствующего источника.
+Означает, что эта инструкция имеет источник. Некоторые инструкции, такие как код профилирования или сбора мусора, не имеют соответствующего источника.
 
 `DF_DOCUMENT_CHECKSUM`\
-Указывает, что `bstrDocumentUrl` поле содержит данные контрольной суммы после URL-адрес документа. См. в разделе "Примечания" [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуру как хранятся данные контрольной суммы.
+Указывает, `bstrDocumentUrl` что поле содержит данные проверки после URL документа. О том, как хранятся данные checksum, можно ознакомиться в разделе «Замечания» для структуры [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
 ## <a name="remarks"></a>Примечания
-Используется в качестве `dwFlags` членом [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры.
+Используется в `dwFlags` качестве члена структуры [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
-Эти флаги могут быть объединены с побитовым объектом `OR`.
+Эти флаги могут быть `OR`объединены с bitwise .
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

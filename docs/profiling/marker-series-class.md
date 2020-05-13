@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 155d47f6764e754a1093cbcf884368c80d709a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62575921"
 ---
-# <a name="markerseries-class"></a>Класс marker_series
+# <a name="marker_series-class"></a>Класс marker_series
 Представляет последовательный канал событий, созданных одним поставщиком.
 
 ## <a name="syntax"></a>Синтаксис

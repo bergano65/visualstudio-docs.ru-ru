@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849804"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586731"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "75849804"
 
  Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[серия практических руководств MSDN: средства и расширяемость UML](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a> Требования
+## <a name="requirements"></a><a name="Requirements"></a> Требования
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+- [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
 - [Пакет SDK моделирования для Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -85,7 +85,7 @@ ms.locfileid: "75849804"
 
  Дополнительные сведения см. [в разделе Интеграция моделей UML с другими моделями и инструментами](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Создание
+## <a name="generation"></a>Generation
  На основе модели можно создавать программный код, скрипты, конфигурации, документы, новые модели или другие артефакты.
 
  В разрабатываемых Fabrikam системах обработки багажа значительная часть кода остается неизменной от проекта к проекту. Главным переменным фактором является план потока багажа в аэропорту. После того как команда разработчиков накопила опыт в течение нескольких первых проектов, разработчики инструментов создают шаблон, который создает на базе модели потока багажа большую часть переменного программного кода и другие файлы, например документы пользователя. Это значительно сокращает время разработки и количество ошибок для всех новых проектов.
@@ -106,17 +106,17 @@ ms.locfileid: "75849804"
 
  Дополнительные сведения см. [в разделе Чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="domain-specific-languages"></a>Доменные языки
+## <a name="domain-specific-languages"></a>Предметно-ориентированные языки
  В случаях, когда часто используется определенный тип модели, может оказаться полезным создать предметно-ориентированный язык. Он позволяет более точно удовлетворить потребности вашего бизнеса по сравнению с моделью UML, но требует больше усилий на сборку и поддержку. Дополнительные сведения см. в статье [моделирование пакета SDK для Visual Studio — языки, относящиеся к домену](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
-|**Категория**|**Links**|
+|**Категория**|**Ссылки**|
 |------------------|---------------|
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") - [канал 9: UML с помощью Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Видео**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [серия "практические руководства" MSDN: средства и расширяемость UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") - [канал 9: UML с помощью Visual Studio](https://channel9.msdn.com/posts/clinted/)|
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Создание моделей для](../modeling/create-models-for-your-app.md) [справочника по API приложений для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

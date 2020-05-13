@@ -20,9 +20,9 @@
           items:
             - name: Лексическая иерархия символьных типов
               href: lexical-hierarchy-of-symbol-types.md
-            - name: Комментарий
+            - name: Заметка
               href: annotation.md
-            - name: Block
+            - name: Блок
               href: block.md
             - name: Compiland
               href: compiland.md
@@ -78,7 +78,7 @@
               href: pointertype.md
             - name: Typedef (SDK для доступа к интерфейсу отладки)
               href: typedef-debug-interface-access-sdk.md
-            - name: UDT
+            - name: (UDT)
               href: udt.md
             - name: VTable
               href: vtable.md

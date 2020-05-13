@@ -18,52 +18,55 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578190"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77630851"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Справочные сведения о задачах WPF для MSBuild
+
 Процесс сборки Windows Presentation Foundation (WPF) расширяет Microsoft Build Engine с помощью дополнительного набора задач сборки, включая задачи компиляции разметки и обработки ресурсов.
 
 ## <a name="in-this-section"></a>Содержание раздела
+
 - [FileClassifier](../msbuild/fileclassifier-task.md)
 
  Классифицирует набор исходных ресурсов как ресурсов, которые будут внедрены в сборку. Если ресурс является нелокализуемым, он внедряется в основную сборку приложения, в противном случае — во вспомогательную сборку.
 
 - [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
 
- Создает сборку, если хотя бы одна страница [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] в проекте ссылается на тип, объявленный в этом проекте локально. Созданная сборка удаляется после успешного или неудачного завершения процесса сборки.
+ Создает сборку, если хотя бы одна страница XAML в проекте ссылается на тип, объявленный в этом проекте локально. Созданная сборка удаляется после успешного или неудачного завершения процесса сборки.
 
 - [GetWinFXPath](../msbuild/getwinfxpath-task.md)
 
- Возвращает каталог текущей среды выполнения [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)].
+ Возвращает каталог текущей среды выполнения .NET Framework.
 
 - [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
 
- Преобразует нелокализуемые файлы проекта [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] в скомпилированный двоичный формат.
+ Преобразует нелокализуемые файлы проекта XAML в скомпилированный двоичный формат.
 
 - [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
 
- Выполняет второй проход компиляции разметки на файлах [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)], которые ссылаются на типы в том же проекте.
+ Выполняет второй проход компиляции разметки на файлах XAML, которые ссылаются на типы в том же проекте.
 
 - [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
 
- Выполняет слияние атрибутов локализации и примечаний одного или нескольких файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в один файл для всей сборки.
+ Выполняет слияние атрибутов локализации и комментариев одного или нескольких файлов в двоичном формате XAML в один файл для всей сборки.
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Внедряет один или несколько ресурсов (файлов *JPG*, *ICO*, *BMP*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичном формате и других) в *RESOURCES-файл*.
+ Внедряет один или несколько ресурсов (файлов *JPG*, *ICO*, *BMP*, XAML в двоичном формате и других) в *RESOURCES-файл*.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
- Проверяет, обновляет или удаляет уникальные идентификаторы (UID) для локализации всех элементов [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)], включенных в исходные файлы [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].
+ Проверяет, обновляет или удаляет уникальные идентификаторы (UID) для локализации всех элементов MSBuild, включенных в исходные файлы MSBuild.
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Добавляет элемент **\<hostInBrowser />** в манифест приложения ( *\<имя_проекта>.exe.manifest*) при сборке проекта [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
+ Добавляет элемент **\<hostInBrowser />** в манифест приложения ( *\<имя_проекта>.exe.manifest*) при сборке проекта Приложение обозревателя XAML (XBAP).
 
 ## <a name="see-also"></a>См. также
+
 - [MSBuild](../msbuild/msbuild.md)

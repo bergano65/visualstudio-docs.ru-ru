@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetManagedDebugObject | Документация Майкрософт
+title: IDebugObject::УправляемыйDebugObject (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98bf0054f02ff85f67f21cd817309bb569dfe678
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323762"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726693"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
-Создает копию управляемого объекта в адресном пространстве для обработчика отладки.
+Создает копию управляемого объекта в адресном пространстве движка отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetManagedDebugObject(
 
 ## <a name="parameters"></a>Параметры
 `ppObject`\
-[out] Возвращает [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) объект, представляющий только что созданный управляемый объект.
+(ваут) Возвращает объект [IDebugManagedObject,](../../../extensibility/debugger/reference/idebugmanagedobject.md) представляющий вновь созданный управляемый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки. Возвращает значение E_FAIL, если данный [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) не представляет экземпляр класса управляемого значения.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки. Возвращает E_FAIL, если этот [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) не представляет экземпляр управляемого класса значений.
 
 ## <a name="remarks"></a>Примечания
- Это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект должен представлять экземпляр класса управляемого значения, такие как `System.Decimal` экземпляра. Благодаря наличию локальную копию, затраты на вызов [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) исключается.
+ Этот объект [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) должен представлять экземпляр управляемого `System.Decimal` класса значений, например экземпляр. Имея локальную копию, накладные расходы на вызов [Оценка](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) устраняется.
 
 ## <a name="see-also"></a>См. также
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

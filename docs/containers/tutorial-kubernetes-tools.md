@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916951"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444691"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы со Средствами Visual Studio для Kubernetes
 
@@ -21,7 +21,7 @@ ms.locfileid: "75916951"
 
 В этом руководстве рассматривается использование Visual Studio для добавления поддержки Kubernetes в проект и публикации в AKS. Если вы заинтересованы в первую очередь в использовании [Azure Dev Spaces](/azure/dev-spaces/) для отладки и тестирования проекта, работающего в AKS, то можете перейти к [руководству по Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 Чтобы использовать эту новую функциональность, вам потребуется:
 
@@ -40,7 +40,7 @@ ms.locfileid: "75916951"
 
     1. Кластер Службы Azure Kubernetes. Дополнительные сведения см. в статье [Создание кластера AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). [Подключитесь к кластеру](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) с рабочей станции разработки.
 
-    1. Установленный интерфейс командной строки Helm на рабочей станции разработки. Дополнительные сведения об установке Helm см. в [этой статье](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Установленный интерфейс командной строки Helm на рабочей станции разработки. Дополнительные сведения об установке Helm см. в [этой статье](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md).
 
     1. Средство Helm, настроенное для кластера AKS с помощью команды `helm init`. Дополнительные сведения о настройке Helm см. в [этой статье](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
@@ -145,7 +145,7 @@ ms.locfileid: "75916951"
 
    ![Снимок экрана: пункт меню "Опубликовать в Azure AKS"](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. Выберите подписку и кластер AKS, а также только что созданный профиль публикации ACR. Затем нажмите кнопку **ОК**.
+4. Выберите подписку и кластер AKS, а также только что созданный профиль публикации ACR. Нажмите кнопку **ОК**.
 
    ![Снимок экрана: окно публикации в AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
@@ -167,7 +167,7 @@ ms.locfileid: "75916951"
 
 Поздравляем! Теперь вы можете использовать все возможности Visual Studio для разработки приложений Kubernetes.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о разработке для Kubernetes в Azure в [документации по AKS](/azure/aks).
 

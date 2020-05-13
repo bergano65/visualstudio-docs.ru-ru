@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreatePrimitiveObject | Документация Майкрософт
+title: IDebugFunctionObject::CreatePrimitiveObject Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d47f3edfffadc74791d6d6b2267a37319a053d7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320825"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728536"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
-Создает объект примитив, например простым целым числом.
+Создает примитивный объект данных, такой как простой целый ряд.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int CreatePrimitiveObject(
 
 ## <a name="parameters"></a>Параметры
 `ot`\
-[in] Значение из [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) перечисление, представляющее тип примитива для создания.
+(в) Значение из [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) перечисления, представляющего тип примитивного для создания.
 
 `ppObject`\
-[out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющий только что созданный объект.
+(ваут) Возвращает [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий вновь созданный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Вызовите этот метод, чтобы создать объект, который представляет объект-примитив, который является параметром функции, которая представлена [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс. Например если строка выражения «myString(5)», этот метод будет использоваться для создания объект, представляющий целочисленное значение 5.
+ Вызовите этот метод для создания объекта, представляющего примитивный объект, который является параметром для функции, представленной интерфейсом [IDebugFunction.](../../../extensibility/debugger/reference/idebugfunctionobject.md) Например, если строка выражения является "myString(5)", этот метод будет использоваться для создания объекта, представляющего ряд 5.
 
 ## <a name="see-also"></a>См. также
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::SetLocale | Документация Майкрософт
+title: IDebugProgramProvider2::SetLocale Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 716ac7155c7e9885088a7197ac78f0834758dafe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721772"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-Устанавливает языковой стандарт для использования для любых ресурсов, зависящих от языкового стандарта.
+Устанавливает локал, который будет использоваться для любых ресурсов, специфичен для локализации.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int SetLocale(
 
 ## <a name="parameters"></a>Параметры
 `wLangID`\
-[in] Идентификатор языка для установки. Например 1033 для английского языка.
+(в) Идентификатор языка для установления. Например, 1033 для английского языка.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

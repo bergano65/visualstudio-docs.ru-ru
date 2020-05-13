@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumParameters | Документация Майкрософт
+title: IDebugMethodField::EnumParameters Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumParameters method
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d455d380f66689cd2245070a7ef0bf9290a2455
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13df02cf5870e630c4aecb34e9295d218ba7a0eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324223"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727196"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
-Создает перечислитель для параметров метода.
+Создает регистратор параметров метода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,17 +41,17 @@ int EnumParameters(
 
 ## <a name="parameters"></a>Параметры
 `ppParams`\
-[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список параметров метода; в противном случае возвращает значение null, если параметров нет.
+(ваут) Возвращает в метод объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список параметров; в противном случае возвращает нулевую стоимость, если нет параметров.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если параметров нет. В противном случае возвращается код ошибки.
+ В случае успеха, возвращает S_OK или возвращает S_FALSE, если нет параметров. В противном случае возвращается код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий различные типы параметров. Вызовите [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод для каждого объекта, чтобы определить точно какого рода параметр представляет объект.
+ Каждый элемент представляет собой объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) представляющий различные типы параметров. Вызов метод [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) на каждом объекте, чтобы точно определить, какой параметр представляет объект.
 
- Параметр включает в себя, как его имя переменной, так и его тип. Первый параметр метода класса обычно является указатель «this».
+ Параметр включает в себя как его переменное имя, так и его тип. Первым параметром метода класса обычно является указатель "этот".
 
- Если только типы параметров требуется, вызовите [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) метод.
+ Если необходимы только типы параметров, позвоните в метод [EnumArguments.](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

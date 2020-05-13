@@ -2,20 +2,21 @@
 title: Запуск модели TensorFlow в облаке
 description: запуск модели tensorflow в виртуальной машине azure для глубинного обучения
 keywords: ии, visual studio, виртуальная машина для глубинного обучения
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915831"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638753"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Обучение модели TensorFlow в облаке
 
@@ -23,7 +24,7 @@ ms.locfileid: "75915831"
 
 База данных MNIST содержит обучающий набор из 60 000 примеров и тестовый набор из 10 000 примеров рукописных цифр.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 Прежде чем начать, убедитесь в том, что установлены и настроены следующие компоненты:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Настройка виртуальной машины Azure для глубинного обучения
@@ -39,7 +40,7 @@ ms.locfileid: "75915831"
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Скачивание образца кода
+### <a name="download-sample-code"></a>Скачивание примера кода
 
 Скачайте [репозиторий GitHub](https://github.com/Microsoft/samples-for-ai), содержащий образцы для начала работы с глубинным обучением на основе TensorFlow, CNTK, Theano и других библиотек.
 
@@ -70,7 +71,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 - Введите **имя задания**.
 
-- Нажмите кнопку **Отправить**.
+- Щелкните **Отправить**.
 
 ## <a name="check-status-of-job"></a>Проверка состояния задания
 Для просмотра состояния задания и сведений о нем разверните узел виртуальной машины, куда было отправлено задание, в **обозревателе сервера**. Дважды щелкните элемент **Задания**.

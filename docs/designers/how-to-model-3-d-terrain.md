@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589426"
 ---
 # <a name="how-to-model-3d-terrain"></a>Практическое руководство. Моделирование трехмерного ландшафта
@@ -55,6 +55,6 @@ ms.locfileid: "75589426"
 
 Эту модель ландшафта можно использовать для демонстрации эффекта шейдера градиента, описанного в разделе [Практическое руководство. Создание основанного на геометрии шейдера градиента](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Редактор моделей](../designers/model-editor.md)

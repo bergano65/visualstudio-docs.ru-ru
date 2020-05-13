@@ -1,105 +1,105 @@
 ---
-title: Инициализация конструктора и конфигурация метаданных | Документация Майкрософт
+title: Инициализация конструктора и конфигурация метаданных (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3084561be779eba73aa21ba7f23f7f5265bfd5b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348129"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712215"
 ---
-# <a name="designer-initialization-and-metadata-configuration"></a>Инициализация и метаданные конфигурации для конструктора
+# <a name="designer-initialization-and-metadata-configuration"></a>Инициализация конструктора и конфигурация метаданных
 
-Манипуляции метаданных и фильтрация атрибутов, связанных с конструктором или конструктор компонентов предоставляет механизм для приложений определить, какие средства используются в определенный конструктором для обработки разных <xref:System.Type> объектов (таких как структуры данных классы или графический сущностей), когда доступен конструктор, и как интегрированной среде разработки Visual Studio настроена для поддержки конструктора (для экземпляра, который **элементов** вкладки или категории доступна).
+Манипуляция атрибутами метаданных и фильтров, связанных с компонентом конструктора или конструктора, обеспечивает <xref:System.Type> механизм для приложений для определения того, какие инструменты используются конкретным дизайнером для обработки различных объектов (таких как структуры данных, классы или графические объекты), когда дизайнер доступен, и как настраивается IDE Visual Studio для поддержки дизайнера (например, какая категория **Toolbox** или вкладка доступна).
 
-[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Предоставляет несколько механизмов для упрощения управления инициализации конструктора или конструктор компонентов и манипуляции метаданных пакетом VSPackage.
+Предоставляет [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] несколько механизмов для облегчения контроля инициализации компонента дизайнера или дизайнера и манипулирования его метаданными VSPackage.
 
-## <a name="initialize-metadata-and-configuration-information"></a>Инициализировать метаданные и данные конфигурации
- Так как они загружаются по запросу, пакеты VSPackage могут не были загружены в среде Visual Studio до создания экземпляра конструктора. Таким образом, пакеты VSPackage нельзя использовать стандартный механизм для настройки конструктором или конструктор компонентов при создании, который должен обрабатывать <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> событий. Вместо этого VSPackage реализует экземпляр <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> интерфейс и регистрируется для предоставления настроек, называется расширения поверхности проектирования.
+## <a name="initialize-metadata-and-configuration-information"></a>Инициализация метаданных и информации о конфигурации
+ Поскольку они загружаются по требованию, VSPackages, возможно, не были загружены средой Visual Studio до момента мгновенного дизайнера. Таким образом, VSPackages не может использовать стандартный механизм настройки компонента конструктора или конструктора на создание, которое заключается в обработке <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> события. Вместо этого VSPackage реализует экземпляр <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> интерфейса и регистрирует сяочку, чтобы обеспечить настройки, называемые расширениями поверхности дизайна.
 
 ### <a name="customize-initialization"></a>Настройка инициализации
 
-Настройка конструктора, компонента или область конструктора, включает в себя:
+Настройка дизайнера, компонента или поверхности конструктора включает в себя:
 
-1. Изменение метаданных конструктора и возможности настройки как определенного <xref:System.Type> доступ или преобразованы.
+1. Изменение метаданных конструктора и эффективное <xref:System.Type> изменение того, как определенный доступ или преобразован.
 
-    Обычно это делается через <xref:System.Drawing.Design.UITypeEditor> или <xref:System.ComponentModel.TypeConverter> механизмы.
+    Это обычно делается <xref:System.Drawing.Design.UITypeEditor> <xref:System.ComponentModel.TypeConverter> через или механизмы.
 
-    Например, если <xref:System.Windows.Forms>-инициализируются на основе конструкторы, среда Visual Studio изменяет <xref:System.Drawing.Design.UITypeEditor> для <xref:System.Web.UI.WebControls.Image> объекты, используемые с конструктором, для использования resource manager для получения точечные рисунки, а не в файловой системе.
+    Например, <xref:System.Windows.Forms>когда дизайнеры на основе визуальных средств <xref:System.Drawing.Design.UITypeEditor> инициализируются, среда Visual Studio изменяет <xref:System.Web.UI.WebControls.Image> объекты, используемые с конструктором, для использования менеджера ресурсов для получения бит-карт, а не файловой системы.
 
-2. Интеграция со средой, например, подписка на события или получения информации о конфигурации проекта. Вы можете получить сведения о конфигурации проекта и подписаться на события путем получения <xref:System.ComponentModel.Design.ITypeResolutionService> интерфейс.
+2. Интеграция с окружающей средой, например, путем подписки на события или получения информации о конфигурации проекта. Вы можете получить информацию о конфигурации <xref:System.ComponentModel.Design.ITypeResolutionService> проекта и подписаться на события, получив интерфейс.
 
-3. Изменения среды пользователем, активировав соответствующие **элементов** категорий или ограничивая применимость конструктора, применяя экземпляр <xref:System.ComponentModel.ToolboxItemFilterAttribute> класс в конструктор.
+3. Изменение среды пользователя путем активации соответствующих категорий **Toolbox** или ограничения применимости дизайнера, применяя экземпляр <xref:System.ComponentModel.ToolboxItemFilterAttribute> класса к дизайнеру.
 
-### <a name="designer-initialization-by-a-vspackage"></a>Инициализация конструктора пакетом VSPackage
+### <a name="designer-initialization-by-a-vspackage"></a>Дизайнерская инициализация VSPackage
 
-Пакет VSPackage должен обрабатывать инициализация конструктора с:
+VSPackage должен обрабатывать дизайнерскую инициализацию:
 
-1. Создание объекта, реализующего <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> класса.
+1. Создание объекта, реализующего <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> класс.
 
    > [!NOTE]
-   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Класс никогда не должны размещаться на один и тот же объект как <xref:Microsoft.VisualStudio.Shell.Package> класса.
+   > Класс <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> никогда не должен реализовываться на том же объекте, что и <xref:Microsoft.VisualStudio.Shell.Package> класс.
 
-2. Регистрация класса, реализующего <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> как предоставление поддержки для расширения конструктора в пакете VSPackage. Зарегистрируйте класс, применяя экземпляров <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>, и <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> классу, который предоставляет реализацию VSPackage <xref:Microsoft.VisualStudio.Shell.Package>.
+2. Регистрация класса, который <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> реализуется как обеспечивающий поддержку расширения конструктора VSPackage. <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>Зарегистрируйте класс, применяя <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>экземпляры, и <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> в класс, который <xref:Microsoft.VisualStudio.Shell.Package>обеспечивает реализацию VSPackage.
 
-Каждый раз, когда конструктор или компонента конструктора создается, среда Visual Studio:
+Всякий раз, когда создается компонент дизайнера или дизайнера, среда Visual Studio:
 
-- Обращается к расширение поверхности каждого зарегистрированного проектирования поставщика.
+- Доступ к каждому зарегистрированной поставщику расширения поверхности дизайна.
 
-- Создает и инициализирует экземпляр каждого поставщика расширение поверхности конструктора <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> объекта.
+- Мгновеннои и инициализирует экземпляр <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> объекта каждого объекта расширения поверхности каждого проекта.
 
-- Вызывает каждый поставщик расширение поверхности конструктора <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> метод или <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> метод (при необходимости).
+- Вызывает <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> метод или <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> метод каждого поставщика расширения поверхности конструкции (по мере необходимости).
 
-При реализации <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> объект членом VSPackage, важно понимать, что:
+При реализации <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> объекта в качестве участника VSPackage важно понимать, что:
 
-- Среда Visual Studio не поддерживает контролировать метаданные или другие параметры конфигурации, определенный `DesignSurfaceExtension` изменяет поставщика. Это возможно для двух или более `DesignSurfaceExtension` изменение ту же функцию конструктора конфликтующие способами с помощью окончательного изменения, выполняется определенный поставщиков. Он не определен, какие изменения последнее применение.
+- Среда Visual Studio не обеспечивает никакого контроля над тем, какие `DesignSurfaceExtension` метаданные или другие настройки конфигурации изменяется конкретным поставщиком. Это возможно для двух `DesignSurfaceExtension` или более провайдеров изменения той же функции дизайнера в противоречивых способов, с окончательной модификации является окончательным. Это неопределенный, какая модификация в последнюю инстанцию применяется.
 
-- Можно явным образом ограничить реализацию <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> объекта для определенных конструкторов, применяя экземпляров <xref:System.ComponentModel.ToolboxItemFilterAttribute> для такой реализации. Дополнительные сведения о **элементов** товара фильтрации, см. в разделе <xref:System.ComponentModel.ToolboxItemFilterAttribute> и <xref:System.ComponentModel.ToolboxItemFilterType>.
+- Можно прямо ограничить реализацию <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> объекта конкретными конструкторами, применяя экземпляры <xref:System.ComponentModel.ToolboxItemFilterAttribute> этой реализации. Для получения дополнительной информации о <xref:System.ComponentModel.ToolboxItemFilterAttribute> фильтрации <xref:System.ComponentModel.ToolboxItemFilterType>элементов **Toolbox** см.
 
-## <a name="additional-metadata-provisioning"></a>Дополнительные метаданные подготовки
+## <a name="additional-metadata-provisioning"></a>Дополнительное предоставление метаданных
 
-Пакет VSPackage можно изменить конфигурацию конструктором или конструктор компонентов, отличных от во время разработки.
+VSPackage может изменить конфигурацию компонента конструктора или конструктора, кроме времени проектирования.
 
-<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> Класс можно использовать программно или применить к VSPackage, предоставляющий конструктору.
+Класс <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> может быть использован программно или применен к VSPackage, который предоставляет дизайнера.
 
-Экземпляр <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> класс используется для изменения метаданных компонентов, созданных на поверхности разработки. Например, один может заменить обозревателя свойств по умолчанию, используемые <xref:System.Windows.Forms.CommonDialog> объектов с пользовательский обозреватель свойств.
+Экземпляр <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> класса используется для изменения метаданных компонентов, созданных на поверхности конструкции. Например, можно заменить браузер свойств <xref:System.Windows.Forms.CommonDialog> по умолчанию, используемый объектами, с помощью пользовательского браузера свойств.
 
-Изменения, предоставляемые экземпляр <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> применяется к реализации VSPackage <xref:Microsoft.VisualStudio.Shell.Package> может иметь одно из двух областей:
+Изменения, предоставляемые <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> экземпляром, применяемым <xref:Microsoft.VisualStudio.Shell.Package> к реализации VSPackage, могут иметь одну из двух областей:
 
-- Global--для всех новых экземпляров данного компонента
+- Глобальный - для всех новых экземпляров данного компонента
 
-- Локальный--относится только к экземпляру компонента, созданного на поверхности разработки, предоставленной текущим VSPackage.
+- Локально - относящийся только к экземпляру компонента, созданного на поверхности конструкции, предоставленной текущим VSPackage.
 
-`IsGlobal` Свойство <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> экземпляра применяется к реализации VSPackage <xref:Microsoft.VisualStudio.Shell.Package> определяет этой области.
+Свойство `IsGlobal` <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> экземпляра, применяемого к <xref:Microsoft.VisualStudio.Shell.Package> реализации VSPackage определяет эту область.
 
-Применение атрибута к реализации <xref:Microsoft.VisualStudio.Shell.Package> с <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> свойство <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> присвоено `true`, как показано ниже, изменяет браузера для всей среды Visual Studio:
+<xref:Microsoft.VisualStudio.Shell.Package> Применение атрибута к реализации <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> с свойством <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> объекта, установленного, `true`как показано ниже, изменяет браузер для всей среды Visual Studio:
 
 `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`
 
 `internal class MyPackage : Package {}`
 
-Если задан глобальный флаг `false`, изменение метаданных является локальной для текущего конструктора поддерживается текущим VSPackage:
+Если глобальный флаг `false`был установлен на , то изменение метаданных является локальным для текущего дизайнера, поддерживаемого текущим VSPackage:
 
 `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`
 
 `internal class MyPackage : Package {}`
 
 > [!NOTE]
-> В область конструктора поддерживает только создание компонентов, и поэтому только компоненты могут иметь локальные метаданные. В приведенном выше примере мы предпринималась попытка изменения свойства, такие как `Color` свойства объекта. Если `false` было передано в качестве глобального флага `CustomBrowser` никогда не будет отображаться, так как конструктор никогда не создает экземпляр `Color`. Установка для глобального флага `false` полезен для компонентов, таких как элементы управления, таймеры и диалоговые окна.
+> Поверхность конструкции поддерживает только создание компонентов, и поэтому только компоненты могут иметь локальные метаданные. В приведенном выше примере мы пытались изменить `Color` свойство, например свойство объекта. Если `false` был принят в для `CustomBrowser` глобального флага, `Color`никогда не появится, потому что дизайнер никогда не создает экземпляр . Установка глобального `false` флага для компонентов, таких как элементы управления, таймеры и диалоговые коробки.
 
 ## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [Расширения поддержки времени разработки](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [Расширить поддержку времени проектирования](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

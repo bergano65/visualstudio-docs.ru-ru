@@ -1,5 +1,5 @@
 ---
-title: Справочник по схеме шаблонов Visual Studio | Документация Майкрософт
+title: Визуальная студия шаблон схема Ссылка (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,39 +8,39 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0a11e2e75b8a9be44dacb58eeac2505613e86d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 49e41431938eed0078f6cbb241d3d62812899942
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323039"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697965"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Справочник по схеме для Visual Studio шаблон
-Этот раздел содержит сведения о XML-элементы в *.vstemplate* файлы, которые представляют собой файлы, в которых хранятся метаданные для шаблонов проектов, шаблонов элементов и начальных наборов.
+# <a name="visual-studio-template-schema-reference"></a>Ссылка на схему шаблона Visual Studio
+Этот раздел содержит информацию о элементах XML в файлах *.vstemplate,* которые являются файлами, которые хранят метаданные для шаблонов проектов, шаблонов элементов и стартовых наборов.
 
- Можно использовать *файл vstemplate.xsd* для проверки пользовательских *.vstemplate* файлов. Этот файл находится в *... \\ \<Папка установки visual Studio > \Xml\Schemas\1033\vstemplate.xsd*.
+ Вы можете использовать *vstemplate.xsd* для проверки пользовательских файлов *.vstemplate.* Этот файл доступен по адресу *.. \\установки Visual Studio> Xml-Schemas-1033'vstemplate.xsd \<*.
 
 |Элемент|Дочерние элементы|Атрибуты|
 |-------------|--------------------|----------------|
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Нет|Нет|
-|[ASSEMBLY (шаблон)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
-|[ASSEMBLY (расширение мастера)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
+|[ПрименяетДля](../extensibility/appliesto-element-visual-studio-templates.md)|Отсутствуют|Отсутствуют|
+|[Assembly (шаблон)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
+|[Assembly (расширение мастера)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
 |[CustomDataSignature](../extensibility/customdatasignature-element-visual-studio-templates.md)|--|--|
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|name<br /><br /> Значение|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
-|[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
+|[По умолчаниюИмя](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
 |[Описание](../extensibility/description-element-visual-studio-templates.md)|--|Пакет<br /><br /> ID|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
-|[Папка](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Папка|name|
+|[Папку](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Папка|name|
 ||[не рекомендуется]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
 |[Скрытые](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
@@ -48,24 +48,24 @@ ms.locfileid: "66323039"
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
-|[Name](../extensibility/name-element-visual-studio-templates.md)|--|Пакет<br /><br /> ID|
-|[Элемент NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
+|[имя](../extensibility/name-element-visual-studio-templates.md);|--|Пакет<br /><br /> ID|
+|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Project](../extensibility/project-element-visual-studio-templates.md)|Папка<br /><br /> ProjectItem|Файл<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|
 |[ProjectItem (шаблоны элементов)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Подтип<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
 |[ProjectItem (шаблоны проектов)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|--|--|
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|ИмяПроекта|
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|ProjectName|
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
-|[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
-|[Ссылки](../extensibility/references-element-visual-studio-templates.md)|Ссылка|--|
+|[Справочник](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
+|[Ссылки](../extensibility/references-element-visual-studio-templates.md)|Справочник|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
-|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Версия|
+|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Version|
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Пакет|
-|[Элемент ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
+|[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|name|
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|
 |[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|--|--|
@@ -73,10 +73,10 @@ ms.locfileid: "66323039"
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Проект<br /><br /> Ссылки<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|name<br /><br /> Описание<br /><br /> Значок<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Hidden<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|name<br /><br /> Описание<br /><br /> Значок<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Скрытый<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|
-|[Идентификатор шаблона](../extensibility/templateid-element-visual-studio-templates.md)|--|--|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|Тип<br /><br /> Версия|
+|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|Type<br /><br /> Version|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|name|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Assembly<br /><br /> FullClassName|--|
 

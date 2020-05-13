@@ -7,10 +7,10 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714513"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Поддерживает ли Visual Studio для Mac систему управления версиями Team Foundation?
@@ -32,11 +32,11 @@ Git поддерживается в Visual Studio для Mac и является
 * Вариант 1. [ Использование Visual Studio Code и расширения Azure Repos для графического пользовательского интерфейса.](#use-visual-studio-code-and-the-azure-repos-extension)
 * Вариант 2. [Подключение к репозиторию с помощью клиента командной строки Team Explorer Everywhere (TEE-CLC).](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### Вариант 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Использование Visual Studio Code и расширения Azure Repos
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Вариант 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Использование Visual Studio Code и расширения Azure Repos
 
 Если вы предпочитаете работать с графическим интерфейсом для управления файлами в системе управления версиями, в таком случае корпорация Майкрософт предоставляет поддерживаемое решение для расширения Azure Repos для Visual Studio Code. Чтобы приступить к работе, загрузите [Visual Studio Code](https://code.visualstudio.com) и узнайте, как [настроить расширение Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-### Вариант 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Подключение с помощью клиента командной строки Team Explorer Everywhere
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Вариант 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Подключение с помощью клиента командной строки Team Explorer Everywhere
 
 > [!IMPORTANT]
 > Согласно файлу сведений Team Explorer Everywhere, этот проект [больше не поддерживается](https://github.com/microsoft/team-explorer-everywhere).
@@ -106,6 +106,6 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 `tf help`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Разработка и совместное использование кода в TFVC с использованием Visual Studio (в Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

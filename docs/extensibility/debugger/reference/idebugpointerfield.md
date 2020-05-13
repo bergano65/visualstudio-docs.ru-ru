@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField | Документация Майкрософт
+title: IDebugPointerField (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6939296fa2bfa59aad1824529f8b708a4cd5cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308861"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725595"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Этот интерфейс представляет тип указателя.
@@ -28,26 +28,26 @@ ms.locfileid: "66308861"
 IDebugPointerField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Поставщик символов реализует этот интерфейс для представления указателя.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик символов реализует этот интерфейс, чтобы представлять указатель.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_POINTER`.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Используйте [queryInterface,](/cpp/atl/queryinterface) чтобы получить этот интерфейс из интерфейса [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращается. `FIELD_TYPE_POINTER`
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на `IDebugField` и `IDebugContainerField` интерфейсы, этот интерфейс реализует следующий метод:
+## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
+ В дополнение к методам `IDebugField` и `IDebugContainerField` интерфейсам, этот интерфейс реализует следующий метод:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описанием цели указателя.|
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Возвращает [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий цель указателя.|
 
 ## <a name="remarks"></a>Примечания
- В C/C++ указатель может являться контейнером, если он используется с помощью нотации массива. Например, если `char *pString`, `pString` с типом указателя на `char`. `pString[3]` имеет тип контейнера, который представляет собой указатель на `char` , ссылающийся на четвертый элемент контейнера.
+ В C/C, указатель может быть контейнером, если он используется с обозначением массива. Например, `char *pString`данный, `pString` имеет тип `char`указателя на . `pString[3]`имеет тип контейнера, который является `char` указателем на то, что ссылки на четвертый элемент этого контейнера.
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

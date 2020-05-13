@@ -1,5 +1,5 @@
 ---
-title: Поддержка скрытого текста в языковой службы прежних версий
+title: Предоставление скрытой поддержки текста в устаревшем языковом сервисе
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,41 +7,41 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], hidden text
 - language services, implementing hidden text regions
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d1088399256a4d5b16fa269ce022800ed645b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351032"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707930"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Практическое руководство. Поддержка скрытого текста в языковой службы прежних версий
-Можно создавать области скрытого текста в дополнение к структурные области. Области скрытого текста может быть, управляемое клиентом или редактором и используются для полностью скрыть область текста. Редактор отображает скрытой области в виде горизонтальных линий. Примером этого является **только скрипт** представление в редакторе HTML.
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Как: Предоставить скрытую поддержку текста в устаревшей языковой службе
+Можно создавать скрытые текстовые области в дополнение к набросным регионам. Скрытые текстовые области могут контролироваться клиентом или редактором и использоваться для полного сокрытия области текста. Редактор отображает скрытую область в виде горизонтальных линий. Примером этого является только представление **скрипта** в редакторе HTML.
 
-## <a name="to-implement-a-hidden-text-region"></a>Для реализации области скрытого текста
+## <a name="to-implement-a-hidden-text-region"></a>Реализация скрытого региона текста
 
-1. Вызовите `QueryService` для <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>.
+1. `QueryService` Звоните <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>для .
 
-     Возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.
+     Это возвращает указатель <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>на .
 
-2. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, передавая указатель для данного текстового буфера. Это определяет, существует ли уже сеанс скрытого текста для буфера.
+2. Вызов, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>проходя в указатель для данного буфера текста. Это определяет, существует ли уже скрытый сеанс текста для буфера.
 
-3. Если он уже существует, то необходимо создать один и указатель на существующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> возвращается объект. Используйте этот указатель для перечисления и создания области скрытого текста. В противном случае вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> для создания сеанса скрытого текста для буфера.
+3. Если он уже существует, то не нужно создавать один и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> указатель на существующий объект возвращается. Используйте этот указатель для перечисления и создания скрытых областей текста. В противном случае вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> для создания скрытого сеанса текста для буфера.
 
-     Указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> объект возвращается.
+     Возвращается указатель <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> на объект.
 
     > [!NOTE]
-    > При вызове `CreateHiddenTextSession`, можно указать клиент скрытого текста (т. е <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). Клиент скрытого текста уведомления при скрытого текста или структурирование развернута или свернута пользователем.
+    > При звонке `CreateHiddenTextSession`можно указать скрытый текстовый клиент (то есть, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). Скрытый клиент текста уведомляет вас, когда скрытый текст или изложение расширяется или разрушается пользователем.
 
-4. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> для добавления одного или более новые структуры областей одновременно, указав следующие сведения в `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) параметра:
+4. Звоните, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> чтобы добавить один или несколько новых областей `reHidReg` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>контура одновременно, указав следующую информацию в параметре ( )
 
-    1. Укажите значение `hrtConcealed` в `iType` членом <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры, чтобы указать, что вы создаете скрытой области, а не область структуры.
+    1. Укажите значение `hrtConcealed` в `iType` составе <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры, чтобы указать, что вы создаете скрытый регион, а не область контура.
 
         > [!NOTE]
-        > Если скрытые области скрыты, редактор автоматически отображает линии вокруг скрытых областей для обозначения их наличия.
+        > Когда скрытые области скрыты, редактор автоматически отображает строки вокруг скрытых регионов, чтобы указать их присутствие.
 
-    2. Укажите, является ли область, управляемая клиентом или редактором в `dwBehavior` членами <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Смарт-реализация структуры могут содержать как редактор и управляемая клиентом структуры и области скрытого текста.
+    2. Укажите, контролируется ли регион клиентами `dwBehavior` или контролируется редактором в структурах. <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Ваша интеллектуальная реализация может содержать сочетание наброски редакторов и клиентов и скрытых текстовых регионов.

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetExpressionContext | Документация Майкрософт
+title: IDebugStackFrame2::GetExpressionКонтекст Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetExpressionContext
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f859fcb3b930adb46f7e06ddf3bf9c5e9eafcdd8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb1a075d04ed53fdbe2181975a56eddfcbc3b683
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314195"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719749"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
-Получает контекст вычисления для оценки выражения в контексте текущего кадра стека и потока.
+Получает контекст оценки для оценки выражения в текущем контексте кадра стека и потока.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetExpressionContext ( 
 
 ## <a name="parameters"></a>Параметры
 `ppExprCxt`\
-[out] Возвращает [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) объект, представляющий контекст для вычисления выражений.
+(ваут) Возвращает объект [IDebugExpressionContext2,](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) представляющий контекст для оценки выражения.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Как правило контекст вычисления выражения могут рассматриваться как область для выполнения вычисления выражений. Вызовите [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) метода для синтаксического разбора выражения, а затем вызвать итоговый [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) методы для оценки проанализированное выражение.
+ Как правило, контекст оценки выражения можно рассматривать как область для выполнения оценки выражения. Вызов метода [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для разбора выражения, а затем вызовите полученные методы [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для оценки разобрана выражения.
 
 ## <a name="see-also"></a>См. также
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

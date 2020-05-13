@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114198"
 ---
 # <a name="c-enumerations-in-class-designer"></a>Перечисления C++ в конструкторе классов
 
-**Конструктор классов** поддерживает типы C++ `enum` и типы `enum class` с областью видимости. Ниже представлен пример.
+**Конструктор классов** поддерживает типы C++ `enum` и типы `enum class` с областью видимости. Ниже приведен пример:
 
 ```cpp
 enum CardSuit {
@@ -42,7 +42,7 @@ enum class CardSuit {
 
 Дополнительные сведения об использовании типа `enum` см. в статье [Enumerations](/cpp/cpp/enumerations-cpp) (Перечисления).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Работа с кодом C++](working-with-visual-cpp-code.md)
 - [Перечисления](/cpp/cpp/enumerations-cpp)

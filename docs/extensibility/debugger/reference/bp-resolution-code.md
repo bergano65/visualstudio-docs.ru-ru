@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_CODE | Документация Майкрософт
+title: BP_RESOLUTION_CODE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_CODE structure
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ffa96e6114ad741e3d3cfd3c19e69af7785af60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbfd16025d338b54bec8e2e4276de62c8d00477e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350628"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737857"
 ---
-# <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-Описывает расположение точки останова в коде.
+# <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
+Описывает расположение точки разрыва кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ public struct BP_RESOLUTION_CODE {
 
 ## <a name="members"></a>Участники
 `pCodeContext`\
-[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий положение точки останова в коде.
+Объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) определяет положение точки разрыва в коде.
 
 ## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) структуры, который находится в свою очередь является членом [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структура, возвращенная [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)метод.
+Эта структура является членом [структуры BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) которая, в свою очередь, является членом [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры, возвращенной методом [GetResolutionInfo.](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

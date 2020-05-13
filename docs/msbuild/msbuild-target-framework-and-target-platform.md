@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596779"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633204"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild: целевая рабочая среда и целевая платформа
+
 Проект может быть создан для выполнения в *требуемой версии .NET Framework*, которая является конкретной версией платформы .NET Framework, и на *целевой платформе*, которая является конкретной программной архитектурой.  Например, можно настроить приложение для выполнения в .NET Framework 2.0 на 32-разрядной платформе, которая совместима с семейством процессоров 802x86 ("x86"). Сочетание требуемой версии .NET Framework и целевой платформы называется *целевым контекстом*.
 
 > [!IMPORTANT]
 > В этой статье показан старый способ указания целевой платформы. Проекты в стиле пакетов SDK позволяют использовать разные TargetFrameworks, такие как netstandard. Дополнительные сведения см. в разделе [Требуемые версии .NET Framework](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Целевая платформа и профиль
+
  Целевая платформа — это конкретная версия .NET Framework, для выполнения на которой создан проект. Спецификация целевой платформы является необходимым условием, поскольку она позволяет использовать возможности компилятора и ссылки на сборки, предназначенные исключительно для этой версии платформы.
 
  В настоящее время доступны следующие версии платформы .NET Framework.
 
 - .NET Framework 2.0 (входит в состав Visual Studio 2005)
 
-- .NET Framework 3.0 (входит в состав [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (входит в состав Windows Vista)
 
-- .NET Framework 3.5 (входит в состав [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (входит в состав Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (входит в состав [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (входит в состав Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -69,6 +71,7 @@ ms.locfileid: "75596779"
 ```
 
 ## <a name="target-platform"></a>Целевая платформа
+
  *Платформа* — это сочетание оборудования и программного обеспечения, которое определяет конкретную среду выполнения. Например, примененная к объекту директива
 
 - `x86` обозначает 32-разрядную операционную систему Windows, работающую с процессором Intel 80x86 или эквивалентным.
@@ -97,4 +100,5 @@ ms.locfileid: "75596779"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)

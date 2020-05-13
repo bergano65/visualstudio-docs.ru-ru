@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e09526930bf98141ae4f9d4d204b20383763c208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552880"
 ---
 # <a name="cpu-utilization-graph"></a>Граф использования ЦП
@@ -32,6 +32,6 @@ ms.locfileid: "62552880"
 
 - Белый цвет обозначает доступность неиспользуемых логических ядер в системе. Эти ядра доступны для данного процесса, если можно найти дополнительные возможности для параллелизма.
 
-## <a name="see-also"></a>См. также
-- [Представление "Использование"](../profiling/utilization-view.md)
+## <a name="see-also"></a>См. также раздел
+- [Представление использования](../profiling/utilization-view.md)
 - [Среднее использование ЦП](../profiling/average-cpu-utilization.md)

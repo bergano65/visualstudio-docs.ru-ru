@@ -1,5 +1,5 @@
 ---
-title: DA0013. Интенсивное использование String.Split или String.Substring | Документация Майкрософт
+title: DA0013. Интенсивное использование String.Split или String.Substring | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,23 +18,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779413"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013. Интенсивное использование String.Split или String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: интенсивное использование String.Split или String.Substring
 
 |||
 |-|-|
 |Идентификатор правила|DA0013|
 |Категория|Руководство по использованию .NET Framework|
-|Методы профилирования|Дискретизация|
+|Методы профилирования|Выборка|
 |Сообщение|Рекомендуется снизить использование функций String.Split и String.Substring.|
 |Тип правила|Предупреждение|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Вызовы методов System.String.Split и System.String.Substring составляют значительную часть данных профилирования. Рекомендуется использовать метод System.String.IndexOf или System.String.IndexOfAny при проверке существования подстроки в строке.
 
 ## <a name="rule-description"></a>Описание правила

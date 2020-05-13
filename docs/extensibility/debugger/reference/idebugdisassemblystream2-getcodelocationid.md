@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Документация Майкрософт
+title: IDebugDisassemblyStream2::GetCodeLocationId (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e3b12ecbc75b7d07d60ac399412dc5b0deb73b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351686"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732253"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Возвращает идентификатор расположения кода для контекста кода.
+Возвращает идентификатор местоположения кода для определенного контекста кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,17 +43,17 @@ int GetCodeLocationId( 
 
 ## <a name="parameters"></a>Параметры
 `pCodeContext`\
-[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) объект для преобразования в идентификатор.
+(в) Объект [IDebugCodeContext2,](../../../extensibility/debugger/reference/idebugcodecontext2.md) который будет преобразован в идентификатор.
 
-`puCodeLocationId` [out] Возвращает идентификатор расположение кода. См. заметки.
+`puCodeLocationId`(ваут) Возвращает идентификатор местоположения кода. См. заметки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_CODE_CONTEXT_OUT_OF_SCOPE` Если контекст кода является допустимым, но за пределами области действия.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает, `E_CODE_CONTEXT_OUT_OF_SCOPE` если контекст кода действителен, но находится за пределами сферы действия.
 
 ## <a name="remarks"></a>Примечания
- Идентификатор расположения кода относится только к модуль отладки (DE), поддерживающий дизассемблированного кода. Этот идентификатор расположения является внутренним классом DE для отслеживания позиции в коде и обычно является адрес или смещение некоторого типа. Единственным требованием является контекст кода из одного места меньше, чем контекст кода из другого места, то соответствующий идентификатор расположения кода первого контекста кода также должен быть меньше, чем идентификатора расположения кода второй контекста кода.
+ Идентификатор местоположения кода специфичен для движка отладки (DE), поддерживающего демонтаж. Этот идентификатор местоположения используется DE внутри компании для отслеживания позиций в коде и, как правило, является адресом или смещением какого-либо вида. Единственным требованием является то, что если контекст кода одного местоположения меньше, чем контекст кода другого местоположения, то соответствующий идентификатор местоположения кода первого контекста кода также должен быть меньше, чем идентификатор местоположения кода второго контекста кода.
 
- Чтобы получить контекст кода идентификатора в расположение кода, вызовите [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) метод.
+ Чтобы получить кодовый контекст идентификатора местоположения кода, позвоните в метод [GetCodeContext.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b26b913a42a563e0226ff2697b947684dfec53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553062"
 ---
 # <a name="cores-view"></a>Представление "Ядра"
@@ -26,7 +26,7 @@ ms.locfileid: "62553062"
 
  Область легенды содержит запись для каждого цвета в графе. Каждая запись показывает цвет потока и имя, количество переключений контекста между ядрами, общее количество переключений контекста и процент переключений контекста между ядрами. Легенда сортируется по количеству переключений контекста между ядрами в порядке убывания. В ней указаны только потоки, которые выполнялись в течение указанного диапазона.  Список обновляется при масштабировании или панорамировании.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)
-- [Представление "Использование"](../profiling/utilization-view.md)
-- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+- [Представление использования](../profiling/utilization-view.md)
+- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

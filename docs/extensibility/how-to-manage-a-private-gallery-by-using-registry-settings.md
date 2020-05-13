@@ -1,28 +1,28 @@
 ---
-title: Практическое руководство. Управление закрытой галереей с помощью параметров реестра | Документация Майкрософт
+title: 'Как: Управление частной галереей с помощью настроек реестра (ru) Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b4f33f7ecf974fe527f814b9febdc861101f1ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a2630fc71bea40a4d05e616ae336759ba62431a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318496"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710932"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Практическое руководство. Управление частной галереей с помощью параметров реестра
-Если вы являетесь администратором или разработчиком расширение изолированной оболочки, вы можете управлять доступом к элементам управления, шаблонов и средств в коллекции Visual Studio, коллекции примеров или закрытые коллекции. Чтобы сделать коллекции доступен или недоступен, создать *.pkgdef* файл, описывающий ключи реестра и их значения.
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Как: Управление частной галереей с помощью настроек реестра
+Если вы являетесь администратором или разработчиком изолированного расширения Shell, вы можете управлять доступом к элементам управления, шаблонам и инструментам в галерее Visual Studio, галерее образцов или частных галереях. Чтобы сделать галерею доступной или недоступной, создайте файл *.pkgdef,* описывающий измененные ключи реестра и их значения.
 
-## <a name="manage-private-galleries"></a>Управление закрытые коллекции
- Можно создать *.pkgdef* для управления доступом к коллекциям на нескольких компьютерах. Этот файл должен иметь следующий формат.
+## <a name="manage-private-galleries"></a>Управление частными галереями
+ Можно создать файл *.pkgdef* для управления доступом к галереям на нескольких компьютерах. Этот файл должен иметь следующий формат.
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -36,22 +36,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- `Repositories` Ключ ссылается на коллекции, чтобы включить или отключить. В коллекции Visual Studio и галереи примеров используют следующий репозиторий идентификаторы GUID:
+ Ключ `Repositories` относится к галерее, которая будет включена или отключена. Галерея Visual Studio и Галерея образцов используют следующие GUID-хранилища:
 
-- Коллекции Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9
+- Визуальная студия Галерея : 0F45E408-7995-4375-9485-86B8DB553DC9
 
-- Коллекция примеров: AEB9CB40-D8E6-4615-B52C-27E307F8506C
+- Образцы Галерея : AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
-  `Disabled` Значение является необязательным. По умолчанию включен коллекции.
+  Значение `Disabled` не является обязательным. По умолчанию включена галерея.
 
-  `Priority` Значение определяет порядок, в котором перечислены галереях в **параметры** диалоговое окно. Коллекции Visual Studio имеет приоритет 10 и в коллекции примеров имеет приоритет 20. Закрытые коллекции начинаются с приоритетом 100. Если несколько коллекций имеют одинаковое значение приоритета, порядок, в котором они появляются определяется по значениям их локализованные `DisplayName` атрибуты.
+  Значение `Priority` определяет порядок, в котором галереи перечислены в диалоговом окне **Опционов.** Visual Studio Gallery имеет приоритет 10, а Галерея образцов имеет приоритет 20. Частные галереи начинаются с приоритета 100. Если несколько галерей имеют одинаковое значение приоритета, порядок, в `DisplayName` котором они отображаются, определяется значениями их локализованных атрибутов.
 
-  `Protocol` Значение является обязательным для коллекции на основе SharePoint или веб-каналов Atom.
+  Значение `Protocol` требуется для галерей на основе Atom или SharePoint.
 
-  Либо `DisplayName`, или оба `DisplayNameResourceID` и `DisplayNamePackageGuid`, должен быть указан. Если все заданы, то `DisplayNameResourceID` и `DisplayNamePackageGuid` используется пара.
+  Либо `DisplayName`, `DisplayNameResourceID` или `DisplayNamePackageGuid`оба и , должны быть указаны. Если все указано, `DisplayNameResourceID` `DisplayNamePackageGuid` то используется пара и пара.
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Отключение коллекции Visual Studio, с помощью файла .pkgdef
- Вы можете отключить коллекции в *.pkgdef* файл. Следующая запись будет отключено в коллекции Visual Studio.
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Отключить галерею Visual Studio с помощью файла .pkgdef
+ Вы можете отключить галерею в файле *.pkgdef.* Следующая запись отсутсвий Visual Studio Галерея:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -59,7 +59,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- Следующая запись будет отключено в коллекции примеров.
+ Следующая запись отравлишает образцов Галерея:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
@@ -68,4 +68,4 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ```
 
 ## <a name="see-also"></a>См. также
-- [Закрытые коллекции](../extensibility/private-galleries.md)
+- [Частные галереи](../extensibility/private-galleries.md)

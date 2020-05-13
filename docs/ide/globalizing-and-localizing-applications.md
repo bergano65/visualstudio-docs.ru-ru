@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9c6934c816574796d59f978c3d2f37f590cf578
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565127"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Разработка глобализованных и локализованных приложений
@@ -48,7 +48,7 @@ Visual Studio можно использовать для создания при
 > [!NOTE]
 > Консольные приложения не поддерживают текст на языках с двунаправленным письмом. Это вызвано тем, как Windows работает с консольными приложениями.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поддержка языков с двунаправленным письмом в Visual Studio](use-bidirectional-languages.md)
 - [Глобализация и локализация приложений .NET](/dotnet/standard/globalization-localization/)

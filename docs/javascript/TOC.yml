@@ -24,7 +24,7 @@
       href: tutorial-aspnet-with-typescript.md
     - name: Публикация приложения Node.js в службе приложений Linux
       href: publish-nodejs-app-azure.md
-- name: Практические руководства
+- name: Руководства
   items:
     - name: Создание и редактирование кода
       href: write-and-edit-code.md

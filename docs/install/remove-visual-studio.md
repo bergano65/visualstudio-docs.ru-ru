@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113708"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649197"
 ---
 # <a name="remove-visual-studio"></a>Удаление Visual Studio
 
@@ -47,14 +47,14 @@ ms.locfileid: "76113708"
 
 Ниже описано, как запустить средство `InstallCleanup.exe`.
 
-1. Закройте установщик Visual Studio.
+1. Закройте Visual Studio Installer.
 1. Откройте командную строку от имени учетной записи администратора. Чтобы открыть командную строку с правами администратора, выполните указанные ниже действия.
    * Введите **cmd** в поле "Введите текст для поиска".
    * Щелкните правой кнопкой мыши пункт **Командная строка** и выберите команду **Запуск от имени администратора**.
-1. Введите полный путь к средству `InstallCleanup.exe` и добавьте предпочитаемый параметр командной строки. По умолчанию путь средства выглядит следующим образом:
+1. Введите полный путь к средству `InstallCleanup.exe` и добавьте предпочитаемый параметр командной строки. По умолчанию путь средства выглядит следующим образом. В двойные кавычки заключаются команды, содержащие пробелы:
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]

@@ -1,229 +1,34 @@
 ---
-layout: LandingPage
 title: Создание приложений JavaScript в Visual Studio | Документация Майкрософт
-description: Узнайте, как использовать Visual Studio 2017 для создания приложений.
-ms.topic: landing-page
+description: Узнайте, как использовать Visual Studio для создания приложений JavaScript.
+ms.topic: conceptual
 ms.prod: visual-studio-windows
-ms.technology: vs-ide-nodejs
+ms.technology: vs-javascript
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: baf650ba27d20424669bbdf47fffdac575f542b4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 2bf1d84db39efcd826331e87a8a525571755f6d4
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225639"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274054"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
 
-Visual Studio предоставляет несколько различных средств для создания приложений с помощью JavaScript или TypeScript.
+Visual Studio предоставляет различные средства и функции для создания приложений с помощью JavaScript или TypeScript.
 
-<!-- markdownlint-disable MD033 -->
+- [Инструменты Node.js для Visual Studio](/visualstudio/ide/quickstart-nodejs)
+- [Поддержка TypeScript в Visual Studio](/visualstudio/javascript/javascript-in-vs-2019)
 
-<h2>Узнайте, как использовать JavaScript в Visual Studio, с помощью 5-минутных руководств</h2>
+## <a name="reference"></a>Справочник
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_nodejs.svg" alt="Create a basic Node.js app">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание базового приложения Node.js</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/javascript/quickstart-vuejs-with-nodejs">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_nodejs.svg" alt="Create a Vue.js app">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание приложения Vue.js</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
-        <a href="https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_windows.svg" alt="Create a UWP app">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание приложения на универсальной платформе Windows (UWP)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Справочник по языку JavaScript (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [TypeScript](http://www.typescriptlang.org/docs/tutorial.html)
+- [Размещение среды выполнения JavaScript](/microsoft-edge/hosting/javascript-runtime-hosting)
+- [Интерфейсы скриптов Windows (архив)](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/fdee6589(v%3dvs.94))
+- [JScript и VBScript (архив)](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c(v%3dvs.84))
 
-<h2>Учебники для подробного ознакомления</h2>
+## <a name="see-also"></a>См. также
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="https://docs.microsoft.com/aspnet/core/client-side/spa/">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_net.svg" alt="Create an app with ASP.NET and a JavaScript framework">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание приложения с помощью ASP.NET и AngularJS</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/javascript/tutorial-nodejs">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_nodejs.svg" alt="Create a Node.js app with Express">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание приложения Node.js с помощью Express</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_nodejs.svg" alt="Create a Node.js app with React">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание приложения Node.js с помощью React</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_cordova.svg" alt="Create an app with Apache Cordova">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Создание приложения c помощью Apache Cordova</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
-
-<hr>
-<h2>Ссылка</h2>
-
-<p><ul class="panelContent cardsW">
-    <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Справочник по языку JavaScript</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="http://www.typescriptlang.org/docs/tutorial.html">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>TypeScript</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/microsoft-edge/hosting/javascript-runtime-hosting">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Размещение среды выполнения JavaScript</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/fdee6589(v%3dvs.94)">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Интерфейсы скриптов Windows (архив)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c(v%3dvs.84)">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>JScript и VBScript (архив)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul><p>
+[JavaScript и TypeScript в Visual Studio](/visualstudio/javascript/)

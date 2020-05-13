@@ -1,28 +1,28 @@
 ---
-title: Определение требований к системе | Документация Майкрософт
+title: Обнаружение системных требований Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ab254df5d53f379704128d8860b8d7fe5655bae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351632"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708736"
 ---
-# <a name="detect-system-requirements"></a>Определить требования к системе
-Пакет VSPackage не может работать, если не установлена среда Visual Studio. При использовании установщика Windows для управления установкой вашего VSPackage, можно настроить программу установки, чтобы обнаруживать наличие установленного Visual Studio. Кроме того, можно также настроить для проверки системы другие требования, например, на конкретную версию Windows или определенный объем ОЗУ.
+# <a name="detect-system-requirements"></a>Обнаружение требований к системам
+VSPackage не может функционировать, если Visual Studio не установлена. При использовании Microsoft Windows Installer для управления установкой VSPackage можно настроить установку, чтобы определить, установлена ли Visual Studio. Можно также настроить его для проверки системы на наличие других требований, например, конкретной версии Windows или определенного количества оперативной памяти.
 
-## <a name="detect-visual-studio-editions"></a>Обнаружить выпуски Visual Studio
- Чтобы определить, установлен ли выпуск Visual Studio, убедитесь, что значение **установить** реестра *(REG_DWORD) 1* в соответствующую папку, перечисленных в следующей таблице. Обратите внимание, что иерархия выпуски Visual Studio:
+## <a name="detect-visual-studio-editions"></a>Обнаружение визуальных версий studio
+ Чтобы определить, установлено ли издание Visual Studio, убедитесь, что значение ключа реестра **Install** *(REG_DWORD) 1* в соответствующей папке, как указано в следующей таблице. Обратите внимание, что существует иерархия визуальных версий Studio:
 
 1. Предприятие
 
@@ -30,20 +30,20 @@ ms.locfileid: "66351632"
 
 3. Сообщество
 
-При установке более нового выпуска, разделы реестра для этого выпуска также добавляются как и для более ранних версий. То есть, если установлен выпуск Enterprise, **установить** ключ имеет значение *1* для предприятия, а также в выпусках Professional и Community. Таким образом необходимо проверить только для самой последней версии, что нужно.
+При установке нового издания добавляются ключи реестра для этого издания, а также для более ранних изданий. То есть, если издание Enterprise установлено, ключ **Установки** установлен на *1* для предприятия, а также для профессиональных и общинных изданий. Поэтому вам нужно проверить только для самого последнего издания вам нужно.
 
 > [!NOTE]
-> 32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . Visual Studio приведены в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
+> В 64-битной версии редактора реестра 32-битные клавиши отображаются под **HKEY_LOCAL_MACHINE»SOFTWARE-Wow6432Node\\**. Визуальная студия ключи находятся под **HKEY_LOCAL_MACHINE»SOFTWARE-Wow6432Node»Microsoft-DevDiv'vs.'Servicing\\**.
 
-|Продукт|Ключ|
+|Продукт|Клавиши|
 |-------------|---------|
-|Visual Studio Enterprise|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
-|Оболочка Visual Studio 2015 (интегрированная и изолированная)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
+|Visual Studio Enterprise|HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-DevDiv-vs-Servicing-14.0 "предприятие|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE»-SOFTWARE-Microsoft-DevDiv-vs-Servicing-14.0'professional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-DevDiv-vs-Servicing-14.0"community|
+|Visual Studio 2015 Shell (интегрированная и изолированная)|HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-DevDiv-vs-Servicing-14.0|
 
-## <a name="detect-when-visual-studio-is-running"></a>Обнаружить, когда выполняется Visual Studio
- Не удается зарегистрировать VSPackage правильно, если Visual Studio выполняется в том случае, когда объект VSPackage установлен. Установщик должен определять, когда выполняется Visual Studio и отклонять для установки программы. Установщик Windows не позволяет использовать записи таблицы для включения такого обнаружения. Вместо этого необходимо создать настраиваемое действие, следующим образом: Используйте `EnumProcesses` функции для обнаружения *devenv.exe* обработки, а затем либо установите свойство установщика, который используется в условии запуска или условию отображать диалоговое окно, которое предлагает пользователю закрыть Visual Studio.
+## <a name="detect-when-visual-studio-is-running"></a>Обнаружение, когда Visual Studio работает
+ Ваш VSPackage не может быть зарегистрирован правильно, если Visual Studio работает при установке VSPackage. Установщик должен определить, когда Visual Studio работает, а затем отказаться от установки программы. Установка Windows не позволяет использовать записи таблицы для обеспечения такого обнаружения. Вместо этого необходимо создать пользовательское действие следующим `EnumProcesses` образом: используйте функцию для обнаружения процесса *devenv.exe,* а затем либо установите свойство установки, используемое в состоянии запуска, либо условно отобразите диалоговую коробку, которая побуждает пользователя закрыть Visual Studio.
 
 ## <a name="see-also"></a>См. также
-- [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Установка VSPackages с установкой Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

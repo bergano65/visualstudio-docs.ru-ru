@@ -1,50 +1,50 @@
 ---
-title: Присоединение после запуска | Документация Майкрософт
+title: Прикрепление после запуска (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1ff749d340110707296c9d4958d13a3faa952
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350923"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739287"
 ---
-# <a name="attach-after-a-launch"></a>Присоединение после запуска
-После запуска программы сеанса отладки готов для присоединения модуля отладки (DE) для указанной программы.
+# <a name="attach-after-a-launch"></a>Прикрепить после запуска
+После запуска программы сеанс отладки готов прикрепить движок отладки (DE) к указанной программе.
 
 ## <a name="design-decisions"></a>Проектные решения
- Поскольку взаимодействие происходит проще в общих адресных пространств, необходимо выбрать два подхода к проектированию: установить связь между сеанса отладки и DE. Либо задайте обмен данными между DE и программы. Выберите один из следующих:
+ Поскольку общение проще в общем пространстве адреса, необходимо выбрать между двумя подходами к проектированию: набор связи между сеансом отладки и DE. Или установите связь между DE и программой. Выберите между следующими:
 
-- Если более разумно настройке связи между сеанса отладки и DE, сеанс отладки совместно создает DE и запрашивает DE для присоединения к программе. Такой подход оставляет сеанса отладки и DE вместе в одно адресное пространство и среды выполнения и программы в другой.
+- Если имеет смысл настроить связь между сеансом отладки и DE, сеанс отладки является со-создаем DE и просит DE прикрепить ее к программе. Эта конструкция оставляет сеанс отладки и DE вместе в одном адресном пространстве, а среда и программа выполнения — вместе в другом.
 
-- Если смысл установить связь между DE и программы, среде выполнения совместно создает DE. Такая схема оставляет SDM в одно адресное пространство и DE, среды выполнения и программы в другой. Такой подход является типичным для DE, который реализуется с помощью интерпретатора для запуска сценария языков.
+- Если имеет смысл настроить связь между DE и программой, среда времени выполнения совместно создает DE. Эта конструкция оставляет SDM в одном адресном пространстве и DE, среду времени выполнения и программировать вместе в другом. Эта конструкция типична для DE, который реализуется с помощью переводчика для запуска языков со сценарием.
 
     > [!NOTE]
-    > Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.
+    > То, как DE прикрепляется к программе, зависит от реализации. Связь между DE и программой также зависит от реализации.
 
 ## <a name="implementation"></a>Реализация
- Программным образом, когда диспетчер отладки сеансов (SDM) сначала получает [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу для запуска, он вызывает [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) метод, передав ему [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) объект, который затем используется для передачи событий отладки SDM. `IDebugProgram2::Attach` Затем вызывает метод [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод. Дополнительные сведения о том, как получает SDM `IDebugProgram2` интерфейсом, см. в разделе [уведомление порта](../../extensibility/debugger/notifying-the-port.md).
+ Программно, когда менеджер отладки сеанса (SDM) сначала получает объект [IDebugProgram2,](../../extensibility/debugger/reference/idebugprogram2.md) представляющий запущенную программу, он вызывает метод [присоединения,](../../extensibility/debugger/reference/idebugprogram2-attach.md) передав его [объектi IDebugEventCallback2,](../../extensibility/debugger/reference/idebugeventcallback2.md) который позже используется для передачи событий отладки обратно в SDM. Затем `IDebugProgram2::Attach` метод вызывает метод [OnAttach.](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Для получения дополнительной информации о `IDebugProgram2` том, как SDM получает интерфейс, см. [Notifying the port](../../extensibility/debugger/notifying-the-port.md)
 
- Если ваш DE должна работать в то же адресное пространство, программа отладке: так как DE обычно является частью интерпретатор, на котором выполняется сценарий, `IDebugProgramNodeAttach2::OnAttach` возвращает метод `S_FALSE`. `S_FALSE` Возврата указывает, что он завершен процесс присоединения.
+ Если DE необходимо работать в том же адресном пространстве, что и программа, которую вы отлажаете: `IDebugProgramNodeAttach2::OnAttach` поскольку DE обычно является частью устного переводчика, работающего с скриптом, метод возвращается. `S_FALSE` Возврат `S_FALSE` указывает на то, что он завершил процесс присоединения.
 
- Если, однако DE выполняется в адресном пространстве SDM: `IDebugProgramNodeAttach2::OnAttach` возвращает `S_OK`, или [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) на вообще не реализовать интерфейс [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) объект, связанный с программой отлаживаемым. В этом случае [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) метод в итоге вызывается для завершения операции присоединения.
+ Однако, если DE работает в адресном пространстве `IDebugProgramNodeAttach2::OnAttach` SDM: метод возвращается `S_OK`или интерфейс [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) вообще не реализован на объекте [IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) связанном с отладкой программы. В этом случае метод [присоединения](../../extensibility/debugger/reference/idebugengine2-attach.md) в конечном итоге вызывается для завершения операции присоединения.
 
- В последнем случае необходимо вызвать [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) метод `IDebugProgram2` объект, который был передан `IDebugEngine2::Attach` метод, магазин `GUID` в локальной программе и не возвращать это `GUID` при `IDebugProgram2::GetProgramId` последующем вызове метода для этого объекта. `GUID` Используется для уникальной идентификации программа различным компонентам отладки.
+ В последнем случае необходимо вызвать метод [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) на `IDebugProgram2` объекте, который был передан `IDebugEngine2::Attach` методу, хранить `GUID` объект локальной программы и вернуть его, `GUID` когда `IDebugProgram2::GetProgramId` метод впоследствии вызывается на этот объект. Используется `GUID` для идентификации программы однозначно через различные компоненты отладки.
 
- В случае использования `IDebugProgramNodeAttach2::OnAttach` метода возвращает `S_FALSE`, `GUID` для программы передается этому методу, и это `IDebugProgramNodeAttach2::OnAttach` метод, который задает `GUID` в объекте локального программы.
+ В случае возврата `IDebugProgramNodeAttach2::OnAttach` `S_FALSE` `GUID` метода, использование программы передается этому методу, и `IDebugProgramNodeAttach2::OnAttach` это метод, который устанавливает `GUID` на локальном объекте программы.
 
- DE теперь подключен к программе и готов отправить все события запуска.
+ DE теперь прилагается к программе и готов отправить любые события запуска.
 
 ## <a name="see-also"></a>См. также
-- [Подключение к программе](../../extensibility/debugger/attaching-directly-to-a-program.md)
+- [Присоединение непосредственно к программе](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [Уведомление порта](../../extensibility/debugger/notifying-the-port.md)
 - [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)
 - [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)

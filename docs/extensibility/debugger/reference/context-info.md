@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Документация Майкрософт
+title: CONTEXT_INFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346467"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737565"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
+# <a name="context_info"></a>CONTEXT_INFO
 Эта структура описывает контекст памяти или контекст кода.
 
 ## <a name="syntax"></a>Синтаксис
@@ -53,35 +53,35 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Сочетание флагов из он [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисление, указывающее, какие поля заполняются<strong>.</strong>
+Сочетание флагов от него [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисления, которая определяет, какие поля заполнены<strong>.</strong>
 
 `bstrModuleUrl`\
-Имя модуля, где находится контекст.
+Название модуля, в котором находится контекст.
 
 `bstrFunction`\
-Имя функции, где находится контекст.
+Имя функции, в котором находится контекст.
 
 `posFunctionOffset`\
-Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая определяет смещение строки и столбца функции, связанные с контекст кода.
+Структура [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) которая определяет линию и столбец, смещение функции, связанной с контекстом кода.
 
 `bstrAddress`\
 Адрес в коде, где находится данный контекст.
 
 `bstrAddressOffset`\
-Смещение по адресу в коде, где находится данный контекст.
+Смещение адреса в коде, в котором находится данный контекст.
 
 `bstrAddressAbsolute`\
 Абсолютный адрес в памяти, где находится данный контекст.
 
 ## <a name="remarks"></a>Примечания
-Эта структура возвращается из вызова [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) метод.
+Эта структура возвращается из вызова в метод [GetInfo.](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 
-Обычно эта структура используется поддержки **памяти** окно отладки.
+Типичное использование этой структуры в поддержку окна отладки **памяти.**
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

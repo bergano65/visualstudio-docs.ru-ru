@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 9f3920b7b746e4329cf94760e983d43e3579e8d3
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: 17349302fcbe411d10ff29a91d0c4b3f38e4fc4d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76159625"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437704"
 ---
 ## <a name="azure-development-build-tools"></a>Средства сборки и разработки Azure
 
@@ -35,7 +35,7 @@ Microsoft.VisualStudio.Component.Azure.ClientLibs | Библиотеки Azure �
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Средства сборки облачных служб Azure | 16.3.29207.166 | Обязательное значение
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 16.0.28625.61 | Обязательное значение
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
-Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.8 | Пакет SDK для TypeScript 3.8 | 16.0.29813.82 | Обязательное значение
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Обязательное значение
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательное значение
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | Рекомендованное
@@ -57,8 +57,9 @@ Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Средства разра�
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Средства разработки для .NET Framework 4.7.1 | 16.3.29207.166 | Необязательный
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Средства разработки для .NET Framework 4.7 | 16.3.29207.166 | Необязательный
 Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разработки для .NET Framework 4.8 | 16.4.29318.151 | Необязательный
-Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.4.29519.181 | Необязательный
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Необязательный
+Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.5.29905.7 | Необязательный
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения для .NET Core 3.1 LTS | 16.5.29905.7 | Необязательный
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core | 16.5.29905.7 | Необязательный
 
 ## <a name="data-storage-and-processing-build-tools"></a>Средства сборки для хранения и обработки данных
 
@@ -77,7 +78,7 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 16.0.28516.191 | Рекомендованное
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Рекомендованное
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 16.4.29429.68 | Рекомендованное
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# и Visual Basic | 16.5.29515.121 | Рекомендованное
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools — средства сборки | 16.0.28315.86 | Рекомендованное
 
 ## <a name="net-desktop-build-tools"></a>Средства сборки классических приложений .NET
@@ -90,7 +91,7 @@ Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools — с
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Обязательное значение
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательное значение
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
@@ -102,8 +103,9 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 16.0.28516.191 | Рекомендованное
-Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.4.29519.181 | Рекомендованное
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Рекомендованное
+Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.5.29905.7 | Рекомендованное
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения для .NET Core 3.1 LTS | 16.5.29905.7 | Рекомендованное
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core | 16.5.29905.7 | Рекомендованное
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 16.4.29409.204 | Рекомендованное
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Средства сборки Windows Communication Foundation | 16.0.28516.191 | Рекомендованное
 Microsoft.Net.Component.3.5.DeveloperTools | Средства разработки для .NET Framework 3.5 | 16.0.28517.75 | Необязательный
@@ -128,7 +130,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# - компилятор | 16
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Обязательное значение
 Microsoft.VisualStudio.Component.CoreBuildTools | Ядро Visual Studio Build Tools | 16.0.28315.86 | Обязательное значение
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
 
@@ -143,9 +145,10 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
 Microsoft.NetCore.BuildTools.ComponentGroup | Средства сборки .NET Core | 16.3.29102.218 | Обязательное значение
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения для .NET Core 3.1 LTS | 16.5.29905.7 | Обязательное значение
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core | 16.5.29905.7 | Обязательное значение
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
-Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.4.29519.181 | Рекомендованное
+Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.5.29905.7 | Рекомендованное
 
 ## <a name="nodejs-build-tools"></a>Средства сборки Node.js
 
@@ -158,7 +161,7 @@ Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .N
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Поддержка MSBuild в Node.js | 16.0.28517.75 | Обязательное значение
-Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.8 | Пакет SDK для TypeScript 3.8 | 16.0.29813.82 | Обязательное значение
 
 ## <a name="officesharepoint-build-tools"></a>Средства сборки Office и SharePoint
 
@@ -171,7 +174,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScri
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce.MSBuild | Средства сборки ClickOnce | 16.0.28625.61 | Обязательное значение
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Обязательное значение
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | Обязательное значение
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 16.0.28517.75 | Обязательное значение
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательное значение
@@ -208,10 +211,11 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разраб�
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
-Microsoft.Component.NetFX.Native | .NET Native | 16.4.29429.68 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Обязательное значение
+Microsoft.Component.NetFX.Native | .NET Native | 16.5.29515.121 | Обязательное значение
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Обязательное значение
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения для .NET Core 3.1 LTS | 16.5.29905.7 | Обязательное значение
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core | 16.5.29905.7 | Обязательное значение
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Компиляторы Roslyn для C# и Visual Basic | 16.0.28714.129 | Обязательное значение
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Необходимые компоненты для создания приложений универсальной платформы Windows | 16.3.29207.166 | Обязательное значение
@@ -220,10 +224,10 @@ Microsoft.Net.Component.4.7.2.SDK | Пакет SDK для .NET Framework 4.7.2 |
 Microsoft.VisualStudio.Component.TextTemplating | Преобразование текстовых шаблонов | 16.0.28625.61 | Необязательный
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Поддержка универсальной платформы Windows C++ для средств сборки версии 142 (ARM64) | 16.3.29207.166 | Необязательный
 Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты C++ | 16.0.28625.61 | Необязательный
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.4.29429.68 | Необязательный
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.24) | 16.4.29409.204 | Необязательный
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.24) | 16.4.29409.204 | Необязательный
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.5.29515.121 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.25) | 16.5.29721.120 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.25) | 16.5.29721.120 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 32-разрядных систем (версия 14.25) | 16.5.29721.120 | Необязательный
 Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC версии 141 — средства сборки C++ для VS 2017 для ARM (версия 14.16) | 16.2.29003.222 | Необязательный
 Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC версии 141 — средства сборки C++ для VS 2017 для ARM64 (версия 14.16) | 16.1.28829.92 | Необязательный
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC версии 141 — средства сборки C++ для VS 2017 для 64- или 32-разрядных систем (версия 14.16) | 16.1.28829.92 | Необязательный
@@ -245,14 +249,14 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | Средства 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Основные компоненты средств сборки C++ | 16.0.28625.61 | Обязательное значение
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.4.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Обновление для распространяемого компонента C++ 2019 | 16.5.29515.121 | Обязательное значение
 Microsoft.VisualStudio.Component.Windows10SDK | Универсальная среда выполнения C для Windows | 16.4.29409.204 | Обязательное значение
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 16.4.29409.204 | Рекомендованное
-Microsoft.VisualStudio.Component.VC.ASAN | C++ AddressSanitizer (экспериментальная функция) | 16.4.29429.68 | Рекомендованное
+Microsoft.VisualStudio.Component.VC.ASAN | C++ AddressSanitizer (экспериментальная функция) | 16.5.29515.121 | Рекомендованное
 Microsoft.VisualStudio.Component.VC.CMake.Project | Средства CMake C++ для Windows | 16.3.29103.31 | Рекомендованное
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Рекомендованное
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 32-разрядных систем (версия 14.25) | 16.5.29721.120 | Рекомендованное
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Пакет SDK для Windows 10 (10.0.18362.0) | 16.1.28829.92 | Рекомендованное
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Необязательный
+Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Необязательный
 Microsoft.Component.VC.Runtime.UCRTSDK | Пакет SDK для Windows Universal CRT | 16.0.28625.61 | Необязательный
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Необязательный
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Необязательный
@@ -261,9 +265,9 @@ Microsoft.VisualStudio.Component.TextTemplating | Преобразование �
 Microsoft.VisualStudio.Component.VC.140 | MSVC версии 140 — средства сборки C++ VS 2015 (версия 14.00) | 16.0.28625.61 | Необязательный
 Microsoft.VisualStudio.Component.VC.ATL | ATL C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
-Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.24) | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.25) | 16.5.29721.120 | Необязательный
 Microsoft.VisualStudio.Component.VC.CoreIde | Основные компоненты C++ | 16.0.28625.61 | Необязательный
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Компилятор Clang C++ для Windows (9.0.0) | 16.4.29511.114 | Необязательный
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Компилятор Clang C++ для Windows (9.0.0) | 16.5.29515.121 | Необязательный
 Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | C++ Clang-cl для средств сборки версии 142 (x64/x86) | 16.3.29207.166 | Необязательный
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Модули C++ для средств сборки версии 142 (x64 или x86 — экспериментальная) | 16.0.28625.61 | Необязательный
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC версии 141 — средства сборки C++ для VS 2017 для 64- или 32-разрядных систем (версия 14.16) | 16.1.28829.92 | Необязательный
@@ -271,7 +275,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299 | Пакет SDK для Wind
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Пакет SDK для Windows 10 (10.0.17134.0) | 16.0.28517.75 | Необязательный
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Пакет SDK для Windows 10 (10.0.17763.0) | 16.0.28517.75 | Необязательный
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Основные возможности C++ для классических приложений | 16.2.29012.281 | Необязательный
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Средства C++ Clang для Windows (9.0.0 — 64-разрядная и 86-разрядная система) | 16.4.29511.114 | Необязательный
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Средства C++ Clang для Windows (9.0.0 — 64-разрядная и 86-разрядная система) | 16.5.29514.35 | Необязательный
 
 ## <a name="visual-studio-extension-development"></a>Разработка расширений Visual Studio
 
@@ -283,7 +287,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Средств�
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Обязательное значение
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | Обязательное значение
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | Обязательное значение
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
@@ -296,7 +300,7 @@ Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 16.0.28528.71 |
 Microsoft.Component.VC.Runtime.OSSupport | Среда выполнения универсальной платформы Windows C++ для средств сборки версии 142 | 16.4.29409.204 | Необязательный
 Microsoft.VisualStudio.Component.VC.ATL | ATL C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC C++ для средств сборки последней версии 142 (x86 и x64) | 16.4.29313.120 | Необязательный
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.4.29409.204 | Необязательный
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 32-разрядных систем (версия 14.25) | 16.5.29721.120 | Необязательный
 
 ## <a name="web-development-build-tools"></a>Средства сборки для веб-разработчиков
 
@@ -312,7 +316,7 @@ Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pac
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Средства разработки для .NET Framework 4.7.2 | 16.3.29207.166 | Обязательное значение
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
-Microsoft.VisualStudio.Component.TypeScript.3.7 | Пакет SDK для TypeScript 3.7 | 16.0.29429.68 | Обязательное значение
+Microsoft.VisualStudio.Component.TypeScript.3.8 | Пакет SDK для TypeScript 3.8 | 16.0.29813.82 | Обязательное значение
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Средства сборки для веб-разработчиков | 16.0.28516.191 | Обязательное значение
 Microsoft.Component.ClickOnce.MSBuild | Средства сборки ClickOnce | 16.0.28625.61 | Рекомендованное
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | Рекомендованное
@@ -321,8 +325,9 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | Рекомендованное
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Средства разработки для .NET Framework 4–4.6 | 16.0.28516.191 | Рекомендованное
-Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.4.29519.181 | Рекомендованное
-Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core 3.1 | 16.4.29519.181 | Рекомендованное
+Microsoft.Net.Core.Component.SDK.2.1 | Среда выполнения для .NET Core 2.1 LTS | 16.5.29905.7 | Рекомендованное
+Microsoft.NetCore.Component.Runtime.3.1 | Среда выполнения для .NET Core 3.1 LTS | 16.5.29905.7 | Рекомендованное
+Microsoft.NetCore.Component.SDK | Пакет SDK для .NET Core | 16.5.29905.7 | Рекомендованное
 Microsoft.VisualStudio.Component.AspNet45 | Дополнительные возможности ASP.NET | 16.0.28315.86 | Рекомендованное
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Средства разработки для контейнеров — средства сборки | 16.0.28625.61 | Рекомендованное
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Основные компоненты инструментов тестирования — средства сборки | 16.4.29409.204 | Рекомендованное
@@ -350,7 +355,7 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Средства разраб�
 
 Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Обязательное значение
+Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Обязательное значение
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Обязательное значение
 Microsoft.Net.Component.4.8.SDK | Пакет SDK для .NET Framework 4.8 | 16.4.29313.120 | Обязательное значение
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Цели и задачи построения NuGet | 16.1.28829.92 | Обязательное значение
@@ -364,103 +369,122 @@ Component.OpenJDK | OpenJDK (дистрибутив от Майкрософт) |
 
 Идентификатор компонента | name | Version
 --- | --- | ---
-Microsoft.Net.Core.Component.SDK.2.2 | Среда выполнения .NET Core 2.2 | 16.4.29519.181
-Microsoft.Net.Core.Component.SDK.3.0 | Среда выполнения для .NET Core 3.0 | 16.4.29519.181
-Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.20) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.20) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.20) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.20) | 16.4.29511.114
+Microsoft.Net.Core.Component.SDK.2.2 | Среда выполнения .NET Core 2.2 (поддержка прекращена) | 16.5.29813.82
+Microsoft.Net.Core.Component.SDK.3.0 | Среда выполнения для .NET Core 3.0 (поддержка прекращена) | 16.5.29905.7
+Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.20) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.20) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.20) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.20) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.ATL | ATL C++ версии 14.20 для средств сборки версии 142 (для 32- и 64-разрядных систем) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM | ATL C++ версии 14.20 для средств сборки версии 142 (ARM) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM.Spectre | ATL C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64 | ATL C++ версии 14.20 для средств сборки версии 142 (ARM64) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64.Spectre | ATL C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.ATL.Spectre | ATL C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (для 32- и 64-разрядных систем) | 16.4.29511.114
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM | ATL C++ версии 14.20 для средств сборки версии 142 (ARM) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM.Spectre | ATL C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64 | ATL C++ версии 14.20 для средств сборки версии 142 (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64.Spectre | ATL C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.ATL.Spectre | ATL C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (для 32- и 64-разрядных систем) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.20) | 16.4.29409.204
 Microsoft.VisualStudio.Component.VC.14.20.MFC | MFC C++ версии 14.20 для средств сборки версии 142 (для 32- и 64-разрядных систем) | 16.2.29003.222
-Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM | MFC C++ версии 14.20 для средств сборки версии 142 (ARM) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | MFC C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | MFC C++ версии 14.20 для средств сборки версии 142 (ARM64) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | MFC C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | MFC C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (для 32- и 64-разрядных систем) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 32- и 64-разрядных систем (версия 14.20) | 16.4.29511.114
-Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для 32- и 64-разрядных систем с устранением рисков Spectre (версия 14.20) | 16.4.29511.114
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM | MFC C++ версии 14.20 для средств сборки версии 142 (ARM) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | MFC C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | MFC C++ версии 14.20 для средств сборки версии 142 (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | MFC C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | MFC C++ версии 14.20 для средств сборки версии 142 с устранением рисков Spectre (для 32- и 64-разрядных систем) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 32- и 64-разрядных систем (версия 14.20) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для 32- и 64-разрядных систем с устранением рисков Spectre (версия 14.20) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.21) | 16.3.29207.166
-Microsoft.VisualStudio.Component.VC.14.21.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.21) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.21.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.21) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.21) | 16.3.29207.166
-Microsoft.VisualStudio.Component.VC.14.21.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.21) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.21.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.21) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.ATL | ATL C++ версии 14.21 для средств сборки версии 142 (x86 и x64) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM | ATL C++ версии 14.21 для средств сборки версии 142 (ARM) | 16.2.29019.55
-Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM.Spectre | ATL C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM.Spectre | ATL C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM64 | ATL C++ версии 14.21 для средств сборки версии 142 (ARM64) | 16.2.29019.55
-Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM64.Spectre | ATL C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.21.ATL.Spectre | ATL C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM64.Spectre | ATL C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.21.ATL.Spectre | ATL C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.21) | 16.3.29207.166
 Microsoft.VisualStudio.Component.VC.14.21.MFC | MFC C++ версии 14.21 для средств сборки версии 142 (x86 и x64) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM | MFC C++ версии 14.21 для средств сборки версии 142 (ARM) | 16.2.29019.55
-Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM.Spectre | MFC C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM.Spectre | MFC C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64 | MFC C++ версии 14.21 для средств сборки версии 142 (ARM64) | 16.2.29019.55
-Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64.Spectre | MFC C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.21.MFC.Spectre | MFC C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64.Spectre | MFC C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.21.MFC.Spectre | MFC C++ версии 14.21 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 32-разрядных систем (версия 14.21) | 16.3.29207.166
-Microsoft.VisualStudio.Component.VC.14.21.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.21) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.21.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.21) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.22) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.14.22.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.22) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.22.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.22) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.22) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.14.22.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.22) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.22.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.22) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.ATL | ATL C++ версии 14.22 для средств сборки версии 142 (x86 и x64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM | ATL C++ версии 14.22 для средств сборки версии 142 (ARM) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM.Spectre | ATL C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM.Spectre | ATL C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM64 | ATL C++ версии 14.22 для средств сборки версии 142 (ARM64) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM64.Spectre | ATL C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.22.ATL.Spectre | ATL C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM64.Spectre | ATL C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.22.ATL.Spectre | ATL C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.22) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC | MFC C++ версии 14.22 для средств сборки версии 142 (x86 и x64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM | MFC C++ версии 14.22 для средств сборки версии 142 (ARM) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM.Spectre | MFC C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM.Spectre | MFC C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM64 | MFC C++ версии 14.22 для средств сборки версии 142 (ARM64) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM64.Spectre | MFC C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.22.MFC.Spectre | MFC C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM64.Spectre | MFC C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.22.MFC.Spectre | MFC C++ версии 14.22 для средств сборки версии 142 с устранением рисков Spectre (x86 и x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для x64/x86 (версия 14.22) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.14.22.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.22) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.23) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.23) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.23) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.23) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ATL | Библиотека ATL C++ версии 14.23 для средств сборки версии 142 (86- и 64-разрядная система) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM | ATL C++ версии 14.23 для средств сборки версии 142 (ARM) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM.Spectre | ATL C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64 | ATL C++ версии 14.23 для средств сборки версии 142 (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64.Spectre | ATL C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.ATL.Spectre | ATL C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (86- и 64-разрядная система) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.22.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.22) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.23) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.23) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.23) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.23) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ATL | Библиотека ATL C++ версии 14.23 для средств сборки версии 142 (86- и 64-разрядная система) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM | ATL C++ версии 14.23 для средств сборки версии 142 (ARM) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM.Spectre | ATL C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64 | ATL C++ версии 14.23 для средств сборки версии 142 (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64.Spectre | ATL C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.ATL.Spectre | ATL C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (86- и 64-разрядная система) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.23) | 16.4.29409.204
-Microsoft.VisualStudio.Component.VC.14.23.MFC | MFC C++ версии 14.23 для средств сборки версии 142 (86- и 64-разрядная система) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM | MFC C++ версии 14.23 для средств сборки версии 142 (ARM) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM.Spectre | MFC C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64 | MFC C++ версии 14.23 для средств сборки версии 142 (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64.Spectre | MFC C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.MFC.Spectre | MFC C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (86- и 64-разрядная система) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для x64/x86 (версия 14.23) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.14.23.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.23) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.14.23.MFC | MFC C++ версии 14.23 для средств сборки версии 142 (86- и 64-разрядная система) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM | MFC C++ версии 14.23 для средств сборки версии 142 (ARM) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM.Spectre | MFC C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64 | MFC C++ версии 14.23 для средств сборки версии 142 (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64.Spectre | MFC C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.MFC.Spectre | MFC C++ версии 14.23 для средств сборки версии 142 с устранением рисков Spectre (86- и 64-разрядная система) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для x64/x86 (версия 14.23) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.23.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.23) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.14.24.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.24) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.24) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.24) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.24) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ATL | Библиотека ATL C++ версии 14.24 для средств сборки версии 142 (32- и 64-разрядная система) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM | Библиотека ATL C++ версии 14.24 для средств сборки версии 142 (ARM) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM.Spectre | Библиотека ATL C++ версии 14.24 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM64 | Библиотека ATL C++ версии 14.24 для средств сборки версии 142 (ARM64) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM64.Spectre | Библиотека ATL C++ версии 14.24 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.ATL.Spectre | Библиотека ATL C++ версии 14.24 для средств сборки версии 142 с устранением рисков Spectre (32- и 64-разрядная система) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.24) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.MFC | MFC C++ версии 14.24 для средств сборки версии 142 (32- и 64-разрядная система) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM | MFC C++ версии 14.24 для средств сборки версии 142 (ARM) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM.Spectre | MFC C++ версии 14.24 для средств сборки версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM64 | MFC C++ версии 14.24 для средств сборки версии 142 (ARM64) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM64.Spectre | MFC C++ версии 14.24 для средств сборки версии 142 с устранением рисков Spectre (ARM64) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.MFC.Spectre | MFC C++ версии 14.24 для средств сборки версии 142 с устранением рисков Spectre (32- и 64-разрядная система) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.x86.x64 | MSVC версии 142 — средства сборки C++ для VS 2019 для 64- или 86-разрядных систем (версия 14.24) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.14.24.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.24) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.ATL.ARM | ATL C++ для средств сборки последней версии 142 (ARM) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | ATL C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | ATL C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | ATL C++ для средств сборки последней версии 142 (ARM64) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre | ATL C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.ATL.Spectre | ATL C++ для средств сборки последней версии 142 с устранением рисков Spectre (x86 и x64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre | MFC C++ для средств сборки последней версии 142 с устранением рисков Spectre (x86 и x64) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre | ATL C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.ATL.Spectre | ATL C++ для средств сборки последней версии 142 с устранением рисков Spectre (x86 и x64) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre | MFC C++ для средств сборки последней версии 142 с устранением рисков Spectre (x86 и x64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.MFC.ARM | MFC C++ для средств сборки последней версии 142 (ARM) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | MFC C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | MFC C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | MFC C++ для средств сборки последней версии 142 (ARM64) | 16.4.29313.120
-Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | MFC C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM64) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.Redist.MSM | Распространяемые пакеты MSM C++ 2019 | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.24) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.24) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.24)  | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC версии 141 — библиотеки C++ для VS 2017 для ARM с устранением рисков Spectre (версия 14.16) | 16.4.29429.68
-Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC версии 141 — библиотеки C++ для VS 2017 для ARM64 с устранением рисков Spectre (версия 14.16) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | MFC C++ для средств сборки последней версии 142 с устранением рисков Spectre (ARM64) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.Redist.MSM | Распространяемые пакеты MSM C++ 2019 | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.25) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.25) | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для x64 или x86 с устранением рисков Spectre (версия 14.25)  | 16.5.29721.120
+Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC версии 141 — библиотеки C++ для VS 2017 для ARM с устранением рисков Spectre (версия 14.16) | 16.5.29515.121
+Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC версии 141 — библиотеки C++ для VS 2017 для ARM64 с устранением рисков Spectre (версия 14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.v141.ATL | ATL C++ для средств сборки версии 141 (x86 и x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM | ATL C++ для средств сборки версии 141 (ARM) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | ATL C++ для средств сборки версии 141 с устранением рисков Spectre (ARM) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | ATL C++ для средств сборки версии 141 с устранением рисков Spectre (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64 | ATL C++ для средств сборки версии 141 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | ATL C++ для средств сборки версии 141 с устранением рисков Spectre (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | ATL C++ для средств сборки версии 141 с устранением рисков Spectre (x86 и x64) | 16.0.28625.61
@@ -471,5 +495,5 @@ Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | MFC C++ для сре
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | MFC C++ для средств сборки версии 141 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | MFC C++ для средств сборки версии 141 с устранением рисков Spectre (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | MFC C++ для средств сборки версии 141 с устранением рисков Spectre (x86 и x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC версии 141 — библиотеки C++ для VS 2017 для x64 или x86 с устранением рисков Spectre (версия 14.16) | 16.4.29429.68
+Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC версии 141 — библиотеки C++ для VS 2017 для x64 или x86 с устранением рисков Spectre (версия 14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.WinXP | Поддержка Windows XP на C++ для инструментов VS 2017 (версия 141) [не рекомендуется] | 16.1.28811.260

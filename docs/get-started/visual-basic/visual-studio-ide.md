@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596051"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306935"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Введение в интегрированную среду разработки Visual Studio (Visual Basic)
 
-*Интегрированная среда разработки* Visual Studio — это оригинальная среда запуска, которая позволяет редактировать, отлаживать и создавать код, а затем публиковать приложения. Интегрированная среда разработки (IDE) — это многофункциональная программа, которую можно использовать для различных аспектов разработки программного обеспечения. Помимо стандартного редактора и отладчика, которые существуют в большинстве сред IDE, Visual Studio включает в себя компиляторы, средства выполнения кода, графические конструкторы и многие другие функции для упрощения процесса разработки программного обеспечения.
+*Интегрированная среда разработки* Visual Studio — это стартовая площадка для написания, отладки и сборки кода, а также последующей публикации приложений. Интегрированная среда разработки (IDE) — это многофункциональная программа, которую можно использовать для различных аспектов разработки программного обеспечения. Помимо стандартного редактора и отладчика, которые существуют в большинстве сред IDE, Visual Studio включает в себя компиляторы, средства выполнения кода, графические конструкторы и многие другие функции для упрощения процесса разработки программного обеспечения.
 
 ::: moniker range="vs-2017"
 
@@ -46,9 +46,9 @@ ms.locfileid: "75596051"
 
 ## <a name="editions"></a>Выпуски
 
-Среда Visual Studio доступна для Windows и Mac. Функции [Visual Studio для Mac](/visualstudio/mac/) аналогичны возможностям Visual Studio 2017 и оптимизированы для разработки кроссплатформенных и мобильных приложений. Эта статья посвящена версии Visual Studio 2017 для Windows.
+Служба Visual Studio доступна для Windows и Mac. Функции [Visual Studio для Mac](/visualstudio/mac/) аналогичны возможностям Visual Studio 2017 и оптимизированы для разработки кроссплатформенных и мобильных приложений. Эта статья посвящена версии Visual Studio 2017 для Windows.
 
-Есть три выпуска Visual Studio 2017: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
+Доступно три выпуска среды Visual Studio 2017: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. в статье [Сравнение интегрированных сред разработки Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="popular-productivity-features"></a>Популярные средства повышения производительности
 
@@ -86,7 +86,7 @@ ms.locfileid: "75596051"
 
    ::: moniker-end
 
-- [IntelliSense](../../ide/using-intellisense.md)
+- [технология IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense — это набор функций, отображающих сведения о коде непосредственно в редакторе и в некоторых случаях автоматически создающих небольшие отрывки кода. По сути, это базовая документация, встроенная в редактор, с которой вам не приходится искать информацию где-то еще. Функции IntelliSense зависят от языка. Дополнительные сведения см. в руководствах по [IntelliSense для C# ](../../ide/visual-csharp-intellisense.md), [IntelliSense для Visual C++](../../ide/visual-cpp-intellisense.md), [IntelliSense для JavaScript](../../ide/javascript-intellisense.md) и [IntelliSense для Visual Basic](../../ide/visual-basic-specific-intellisense.md). На следующем рисунке показано, как IntelliSense отображает список членов типа:
 
@@ -351,7 +351,7 @@ ms.locfileid: "75596051"
 
 1. Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.
 
-   ![Создание нового проекта в Visual Studio](media/vs-2019/create-new-project.png)
+   ![Создание проекта в Visual Studio](media/vs-2019/create-new-project.png)
 
 1. В окне **Настроить новый проект** введите **HelloWorld** в поле **Имя проекта**, при необходимости измените расположение каталога для вашего проекта и нажмите кнопку **Создать**.
 
@@ -499,7 +499,7 @@ ms.locfileid: "75596051"
 
 Дополнительные сведения о выполнении отладки в Visual Studio см. в статье [Обзор возможностей отладчика Visual Studio](../../debugger/debugger-feature-tour.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о Visual Studio, прочитав одну из следующих вводных статей:
 
@@ -509,7 +509,7 @@ ms.locfileid: "75596051"
 > [!div class="nextstepaction"]
 > [Сведения о проектах и решениях](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Откройте для себя [другие возможности Visual Studio](../../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

@@ -1,24 +1,24 @@
 ---
-title: IDebugExtendedField | Документация Майкрософт
+title: IDebugExtendedField Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExtendedField interface
 ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a9e8f8e8414b6066bb8a407449a4b588d948bc4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad10050aa157b4481fa2041ec5f322451983149f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333219"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729038"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
-Расширяет типы полей, которые доступны для поддержки универсальных типов в управляемом коде.
+Расширяет типы полей, доступных для поддержки универсальных элементов управляемого кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,16 +27,16 @@ IDebugExtendedField : IDebugField
 ```
 
 ## <a name="methods"></a>Методы
- В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, этот интерфейс реализует следующие методы:
+ В дополнение к методам на интерфейсе [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Возвращает значение указанного поля расширенного типа.|
-|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Определяет, представляет ли поле закрытым типом.|
+|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Извлекает указанный вид расширенного поля.|
+|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Определяет, представляет ли поле закрытый тип.|
 
 ## <a name="requirements"></a>Требования
  Заголовок: Sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

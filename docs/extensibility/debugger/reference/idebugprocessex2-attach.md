@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Документация Майкрософт
+title: IDebugProcessEx2::Прикрепите Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5932535810f28e6f5da96ab69457f7364563d622
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d70da2530a1677367a22968436a17eba809fd24a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325334"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723379"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Этот метод сообщает процесс, что сеанс теперь является отладка процесса.
+Этот метод информирует процесс, что сеанс теперь отлажет процесс.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int Attach(
 
 ## <a name="parameters"></a>Параметры
 `pSession`\
-[in] Значение, уникально идентифицирующий сеанс, присоединение к этому процессу.
+(в) Значение, которое однозначно определяет сеанс, прилагаемый к этому процессу.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Переданный интерфейс `pSession` следует рассматривать только как файл cookie, значение, однозначно определяющий диспетчер отладки сеансов, присоединение к этому процессу; ни один из методов предоставленного интерфейса являются рабочими.
+ Интерфейс, пройденый, `pSession` должен рассматриваться только как файлcookieое, значение, которое однозначно определяет менеджер отладки сеанса, прилагающий к этому процессу; ни один из методов на поставляемом интерфейсе не является функциональным.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

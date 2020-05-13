@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb4663013a73d88ed7c2118816007705834162c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578446"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632502"
 ---
 # <a name="resumetracking"></a>ResumeTracking
+
 Возобновляет отслеживание в текущем контексте.
 
 ## <a name="syntax"></a>Синтаксис
@@ -32,10 +33,13 @@ HRESULT WINAPI ResumeTracking();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
+
  **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было возобновлено. Если отслеживание нельзя возобновить, так как контекст был недоступен, возвращается **E_FAIL**.
 
 ## <a name="requirements"></a>Требования
+
  **Заголовок.** *FileTracker.h*
 
 ## <a name="see-also"></a>См. также
+
 - [SuspendTracking](../msbuild/suspendtracking.md)

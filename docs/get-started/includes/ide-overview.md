@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79081978"
 ---
 *Интегрированная среда разработки* Visual Studio — это стартовая площадка для написания, отладки и сборки кода, а также последующей публикации приложений. Интегрированная среда разработки (IDE) представляет собой многофункциональную программу, которую можно использовать для различных аспектов разработки программного обеспечения. Помимо стандартного редактора и отладчика, которые существуют в большинстве сред IDE, Visual Studio включает в себя компиляторы, средства автозавершения кода, графические конструкторы и многие другие функции для упрощения процесса разработки.
 
@@ -48,7 +48,7 @@ ms.locfileid: "77590823"
 
 Среда Visual Studio доступна для Windows и Mac. Функции [Visual Studio для Mac](/visualstudio/mac/) аналогичны возможностям Visual Studio 2017 и оптимизированы для разработки кроссплатформенных и мобильных приложений. Эта статья посвящена версии Visual Studio 2017 для Windows.
 
-Существуют три выпуска Visual Studio 2017: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. на странице [Сравнение выпусков Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
+Существует три выпуска Visual Studio: Community, Professional и Enterprise. Сведения о функциях, поддерживаемых в каждом выпуске, см. на странице [Сравнение выпусков Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
 ::: moniker-end
 
@@ -175,7 +175,7 @@ ms.locfileid: "77590823"
 
    В диалоговом окне **Создать проект** отображается несколько *шаблонов проекта*. Шаблон содержит основные файлы и параметры, необходимые для данного типа проекта.
 
-1. В разделе **Visual C#** выберите категорию шаблонов **.NET Core** и щелкните шаблон **Консольное приложение (.NET Core)** . В текстовом поле **Имя** введите **HelloWorld**, а затем нажмите кнопку **ОК**.
+1. В разделе **Visual C#** выберите категорию шаблонов **.NET Core** и щелкните шаблон **Консольное приложение (.NET Core)**. В текстовом поле **Имя** введите **HelloWorld**, а затем нажмите кнопку **ОК**.
 
    ![Шаблон приложения .NET Core](../media/overview-new-project-dialog.png)
 
@@ -198,7 +198,7 @@ ms.locfileid: "77590823"
 
    ![Параметры меню "Отладка" -> "Запустить без отладки"](../media/overview-start-without-debugging.png)
 
-   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!** . Теперь у вас есть выполняемое приложение.
+   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!**. Теперь у вас есть выполняемое приложение.
 
    ![Окно консоли](../media/overview-console-window.png)
 
@@ -267,7 +267,7 @@ ms.locfileid: "77590823"
 
    ![Параметры меню "Отладка" -> "Запустить без отладки"](../media/overview-start-without-debugging.png)
 
-   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!** . Теперь у вас есть выполняемое приложение.
+   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!**. Теперь у вас есть выполняемое приложение.
 
    ![Окно консоли](../media/vs-2019/overview-console-window.png)
 

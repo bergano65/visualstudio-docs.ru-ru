@@ -10,39 +10,38 @@
         - name: Обзор
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
-        - name: Установка
+        - name: Установка анализаторов исходного кода
           href: install-roslyn-analyzers.md
-        - name: Параметр Configuration
+        - name: Настройка анализаторов исходного кода
           href: use-roslyn-analyzers.md
+        - name: Область динамического анализа кода
+          href: configure-live-code-analysis-scope-managed-code.md
+        - name: Запуск анализа кода вручную
+          href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Отключить анализ кода
           href: disable-code-analysis.md
-        - name: Включить полный анализ решения
-          href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: часто задаваемые вопросы
           href: analyzers-faq.md
         - name: Анализаторы FXCop
           items:
-            - name: Обзор
-              displayName: fxcop analyzers
-              href: fxcop-analyzers.yml
-            - name: Установка
+            - name: "Установка анализаторов\_FxCop"
               href: install-fxcop-analyzers.md
-            - name: Параметр Configuration
+            - name: "Миграция на анализаторы\_FxCop"
               items:
-                - name: Обзор
+                - name: Миграция с анализа прежних версий на анализаторы FxCop
+                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
+                - name: часто задаваемые вопросы
+                  href: fxcop-analyzers-faq.md
+                - name: Перенесенные правила
+                  href: fxcop-rule-port-status.md
+            - name: Настройка анализаторов FxCop
+              items:
+                - name: Настройка правил и проектов
                   href: configure-fxcop-analyzers.md
                 - name: 'Область: параметры'
                   href: fxcop-analyzer-options.md
                 - name: Включение категории правил
                   href: analyzer-rule-sets.md
-            - name: часто задаваемые вопросы
-              href: fxcop-analyzers-faq.md
-        - name: Миграция с анализа прежних версий на анализаторы FxCop
-          items:
-            - name: Обзор
-              href: fxcop-analyzers.yml
-            - name: Перенесенные правила
-              href: fxcop-rule-port-status.md
     - name: Анализ прежних версий
       items:
         - name: Обзор
@@ -50,10 +49,10 @@
           href: static-code-analysis-for-managed-code-overview.md
         - name: Пошаговое руководство по анализу прежних версий
           href: walkthrough-analyzing-managed-code-for-code-defects.md
-        - name: Миграция
-          href: fxcop-analyzers.yml
+        - name: "Миграция на анализаторы\_FxCop"
+          href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Запуск анализа прежних версий вручную
-          href: how-to-run-code-analysis-manually-for-managed-code.md
+          href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
         - name: Параметр Configuration
           items:
             - name: Настройка анализа прежних версий
@@ -333,6 +332,10 @@
                   href: ca1064.md
                 - name: CA1065. Не вызывайте исключения в непредвиденных местах
                   href: ca1065.md
+                - name: 'CA1066: реализация IEquatable при переопределении Equals'
+                  href: ca1066.md
+                - name: 'CA1067: переопределение Equals при реализации IEquatable'
+                  href: ca1067.md
                 - name: 'CA1068: Параметры CancellationToken должны быть последними'
                   href: ca1068.md
                 - name: CA2210. Сборки должны иметь допустимые строгие имена
@@ -427,6 +430,10 @@
                   href: ca1506.md
                 - name: 'CA1507: Используйте nameof вместо строки'
                   href: ca1507.md
+                - name: 'CA1508: Избегайте появления неиспользуемого условного кода'
+                  href: ca1508.md
+                - name: 'CA1509: недопустимая запись в файле конфигурации метрик кода'
+                  href: ca1509.md
             - name: 'Предупреждения, связанные с мобильностью'
               items:
                 - name: Обзор
@@ -532,6 +539,14 @@
                   href: ca1824.md
                 - name: 'CA1825: Избегайте выделения массивов нулевой длины'
                   href: ca1825.md
+                - name: "CA1826: Используйте свойство вместо метода Enumerable в\_LINQ"
+                  href: ca1826.md
+                - name: "CA1827: Не используйте Count/LongCount, если можно использовать\_Any"
+                  href: ca1827.md
+                - name: "CA1828: Не используйте CountAsync/LongCountAsync, если можно использовать\_AnyAsync"
+                  href: ca1828.md
+                - name: "CA1829: Используйте свойство Length/Count вместо метода\_Enumerable.Count"
+                  href: ca1829.md
             - name: 'Предупреждения, связанные с переносимостью'
               items:
                 - name: Обзор
@@ -562,6 +577,8 @@
                   href: ca2006.md
                 - name: CA2007. Не следует напрямую ожидать Task
                   href: ca2007.md
+                - name: 'CA2009: Не вызывайте ToImmutableCollection для значения ImmutableCollection'
+                  href: ca2009.md
             - name: 'Предупреждения, связанные с безопасностью'
               items:
                 - name: Обзор

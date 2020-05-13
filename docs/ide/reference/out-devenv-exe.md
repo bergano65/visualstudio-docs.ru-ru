@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568015"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -39,9 +39,9 @@ devenv /Out FileName
 
 - *FileName*
 
-  Обязательный. Путь и имя файла для приема выходных данных при сборке исполняемого файла.
+  Обязательный элемент. Путь и имя файла для приема выходных данных при сборке исполняемого файла.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если указано имя несуществующего файла, такой файл создается автоматически. Если файл уже существует, результаты добавляются к имеющемуся в нем содержимому.
 
@@ -55,7 +55,7 @@ devenv /Out FileName
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

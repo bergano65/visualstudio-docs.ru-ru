@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4bf72509610e9d397e4b208294112fcc0975b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588334"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094574"
 ---
 # <a name="zipdirectory-task"></a>Задача ZipDirectory
+
 Создает *ZIP-архив* из содержимого каталога.
 
 >[!NOTE]
 >Задача `ZipDirectory` доступна только в MSBuild 15.8 и более поздних версий.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `ZipDirectory` .
 
 |Параметр|Описание|
@@ -45,10 +47,12 @@ ms.locfileid: "75588334"
 |`SourceDirectory`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает каталог, из которого создается *ZIP-архив*.|
 
 ## <a name="remarks"></a>Примечания
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
- В следующем примере создается *ZIP-архив* из каталога выходных данных после сборки проекта.
+
+ В приведенном ниже примере (используемом в качестве импортируемого файла *.targets*) создается *ZIP-архив* из каталога выходных данных после сборки проекта. Обычно свойство `$(OutputPath)` определяется в файле проекта MSBuild, поэтому для файла проекта, импортирующего следующий файл, создается ZIP-архив `output.zip`:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -63,5 +67,6 @@ ms.locfileid: "75588334"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

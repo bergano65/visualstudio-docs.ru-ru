@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals | Документация Майкрософт
+title: IDebugMethodfield::EnumStaticLocals Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 006f1975c18aa7464531654d9b71fd857953afc9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324246"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727153"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
-Создает перечислитель для Статические локальные переменные метода.
+Создает регистратор для статических локальных переменных метода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int EnumStaticLocals(
 
 ## <a name="parameters"></a>Параметры
 `ppLocals`\
-[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список статических локальных переменных. Возвращает значение null, если нет статических локальных переменных.
+(ваут) Возвращает объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список статических местных жителей. Возвращает нулевую стоимость, если нет статических местных жителей.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет статических локальных переменных. В противном случае возвращается код ошибки.
+ В случае успеха, возвращается S_OK или возвращается S_FALSE, если Нет статических местных жителей. В противном случае возвращается код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объектов, представляющих различные типы статических локальных переменных. Вызовите [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) для каждого объекта, чтобы определить точно статическая локальная объекте вида метод.
+ Каждый элемент представляет собой объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) представляющий различные типы статических местных жителей. Вызов метод [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) на каждом объекте, чтобы точно определить, какой статическое локальное объект представляет.
 
 ## <a name="see-also"></a>См. также
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

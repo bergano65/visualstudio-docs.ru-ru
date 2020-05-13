@@ -1,31 +1,31 @@
 ---
-title: 'AsyncTaskMethodBuilder внутренние элементы: структура | Документация Майкрософт'
+title: AsyncTaskMethodBuilder Структура - Внутренние члены (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, AsyncTaskMethodBuilder structure [.NET Framework]
 - AsyncTaskMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: f32f5857-7ef8-45fd-8b5a-7f644eb98b11
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f080e7a0fef7a03b878c253f09661338b5704df
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c918890551515ab9fadbf329d4c3ee96621c7aae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317633"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739371"
 ---
-# <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder внутренние элементы: структура
-В этом разделе описывается внутренним членам объектов <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> класс. Общие сведения об этом классе см. в разделе <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> справочника.
+# <a name="asynctaskmethodbuilder-structure---internal-members"></a>Структура AsyncTaskMethodBuilder - внутренние члены
+Эта тема описывает внутренних <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> членов класса. Для получения общей информации <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> об этом классе, см.
 
- **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Пространство имен:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Сборка:** mscorlib (в mscorlib.dll)
 
- Так как при отсутствии доступа к этим внутренним членам платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+ Поскольку вы не можете получить доступ к этим внутренним членам из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,13 +35,13 @@ ms.locfileid: "66317633"
        implements System.Runtime.CompilerServices.IAsyncMethodBuilder
 ```
 
-## <a name="internal-members"></a>Внутренние элементы
+## <a name="internal-members"></a>Внутренние члены
 
 |name|Описание|
 |----------|-----------------|
-|[Свойство ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|Возвращает объект, который может использоваться для уникальной идентификации этого построителя к отладчику.|
-|[поле m_builder](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|Представляет обычный построитель объект, к которому делегирует этот экземпляр не являющегося универсальным.|
+|[Свойство ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|Получает объект, который может быть использован для однозначной идентификации этого строителя для отладчика.|
+|[m_builder поле](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|Представляет общий объект строителя, на который делегирует этот необщий экземпляр.|
 
 ## <a name="see-also"></a>См. также
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Параллельные внутренние расширения для рамочной программы .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

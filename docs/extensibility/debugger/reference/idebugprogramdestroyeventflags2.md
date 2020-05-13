@@ -1,24 +1,24 @@
 ---
-title: IDebugProgramDestroyEventFlags2 | Документация Майкрософт
+title: IDebugПрограммаУничтожениеСобытий2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1b131679a287fb555fcf2a78a803c77457d47ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343514"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722501"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-Включает модуль отладки переопределить поведение по умолчанию [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса при завершении сеанса отладки.
+Позволяет отладить движок, чтобы переопределить [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] поведение ui по умолчанию при конце сеанса отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,22 +26,22 @@ ms.locfileid: "66343514"
 IDebugProgramDestroyEventFlags2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Этот интерфейс реализуется отладчиков. Это полезно для узлов, которые могут создавать и уничтожать нескольких программ в течение времени существования процесса.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Этот интерфейс реализован с помощью отладки двигателей. Это полезно для хостов, которые могут создавать и уничтожать несколько программ в течение всего срока действия процесса.
 
 ## <a name="methods"></a>Методы
  В следующей таблице показаны методы `IDebugProgramDestroyEventFlags2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Извлекает программа уничтожить флаги.|
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Получает программу уничтожить флаги.|
 
 ## <a name="remarks"></a>Примечания
- По умолчанию [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса — чтобы вернуться в режим конструктора после отправки программы все программы события уничтожения. Этот интерфейс позволяет модуля отладки изменить это поведение.
+ Поведение [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uI по умолчанию заключается в том, чтобы вернуться в режим проектирования после того, как все программы отправили событие уничтожения программы. Этот интерфейс позволяет движку отладки изменить это поведение.
 
 ## <a name="requirements"></a>Требования
  Заголовок: Msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,19 +1,19 @@
 ---
 title: Написание модульных тестов для C/C++
 description: Вы можете писать модульные тесты для C++ в Visual Studio с помощью различных платформ тестирования, включая CTest, Boost.Test и Google Test.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755585"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649604"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "75755585"
 
 - Компонент **Boost.Test** включен по умолчанию в рабочую нагрузку **Разработка классических приложений на C++** . Он интегрирован с **обозревателем тестов**, но в настоящее время не имеет шаблона проекта. Его необходимо настроить вручную. Дополнительные сведения см. в разделе [Практическое руководство. Использование Boost.Test для C++ в Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- Поддержка **CTest** включена в компонент **Средства CMake C++** , который входит в рабочую нагрузку **Разработка классических приложений на C++** . Однако CTest пока не полностью интегрирован с **обозревателем тестов**. Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest для C++ в Visual Studio 2017 и более поздних версиях](how-to-use-ctest-for-cpp.md).
+- Поддержка **CTest** включена в компонент **Средства CMake C++** , который входит в рабочую нагрузку **Разработка классических приложений на C++** . Дополнительные сведения см. в разделе [Практическое руководство. Использование CTest для C++ в Visual Studio 2017 и более поздних версиях](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 и более ранние версии**
 
@@ -79,7 +79,7 @@ ms.locfileid: "75755585"
 
 ### <a name="link-to-object-or-library-files"></a>Ссылка на объектный файл или файл библиотеки
 
-Если тестовый код не экспортирует функции, которые необходимо проверить, можно добавить выходной OBJ- или LIB-файл в зависимости тестового проекта. Дополнительные сведения см. в разделе [Связывание тестов с объектным файлом или файлом библиотеки](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files).
+Если тестовый код не экспортирует функции, которые необходимо проверить, можно добавить выходной OBJ- или LIB-файл в зависимости тестового проекта. Дополнительные сведения см. в разделе [Связывание тестов с объектным файлом или файлом библиотеки](how-to-use-microsoft-test-framework-for-cpp.md#object_files).
 
 ### <a name="add-include-directives-for-header-files"></a>Добавление директив #include для файлов заголовков
 

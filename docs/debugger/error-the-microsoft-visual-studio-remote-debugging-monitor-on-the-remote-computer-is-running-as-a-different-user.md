@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: монитор удаленной отладки Visual Studio на удаленном компьютере запущен от имени другого пользователя'
+title: 'Ошибка: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -23,17 +23,17 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b5ff383b279bbdac85ce85de6e65b857cec6a8e7
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737490"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Ошибка: монитор удаленной отладки Visual Studio на удаленном компьютере запущен от имени другого пользователя
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Ошибка: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
 При выполнении удаленной отладки может появиться следующее сообщение об ошибке:
 
  На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя.
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Это сообщение появляется, если отладка выполняется в режиме "без аутентификации" и пользователь, запустивший msvsmon, не является пользователем, запустившим Visual Studio.
 
 ## <a name="solution"></a>Решение

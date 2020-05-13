@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6460d26ea7b7240cf54dfe3379ec75634bc5465d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847062"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445055"
 ---
 # <a name="additional-msbuild-resources"></a>Дополнительные ресурсы MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -612,7 +612,7 @@ ms.locfileid: "75847062"
 Если вы пытаетесь решить проблему, и вам не удалось найти нужные сведения в документации, можете обратиться к другим ресурсам, таким как статьи базы знаний, сообщество разработчиков или служба технической поддержки.  
   
 ## <a name="knowledge-base-articles"></a>Статьи базы знаний  
- Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Эти статьи доступны на веб-сайте [базы знаний (результаты поиска MSBuild)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0).  
+ Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Вы можете получить доступ к статьям КБ на веб-сайте [базы знаний.](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)  
   
 ## <a name="community-forums"></a>Форумы сообщества  
  Форумы позволяют взаимодействовать с другими разработчиками, а также с сотрудниками корпорации Майкрософт. Если вы столкнулись с ошибкой и не можете найти решение, можно задать вопрос о ней на форуме. Можно также выполнить поиск по группам новостей, чтобы узнать, не публиковал ли кто-то другой материалы о подобной проблеме. Форум Visual Studio MSBuild доступен на веб сайте [форумов MSDN](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/).  
@@ -622,5 +622,5 @@ ms.locfileid: "75847062"
 ## <a name="product-support"></a>Поддержка продуктов  
  Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [справки и поддержки Майкрософт](https://support.microsoft.com/). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../ide/talk-to-us.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

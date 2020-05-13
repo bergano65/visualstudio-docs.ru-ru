@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement | Документация Майкрософт
+title: IDebugThread2::CanSetNextStatement Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 111ace07edf163fa978a3c54628878af51cb7d02
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320299"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718856"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Определяет, можно ли установить текущего указателя инструкций в указанном кадре стека.
+Определяет, можно ли установить указатель текущей инструкции на заданную рамку стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>Параметры
 `pStackFrame`\
-Зарезервировано для будущего использования; присвоено значение null. Если это значение null, используется текущий кадр стека.
+Зарезервировано для использования в будущем; установлен на нулевую стоимость. Если это нулевое значение, используйте текущую рамку стека.
 
 `pCodeContext`\
-[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , описывающий расположение кода должна быть выполнена и его контекста.
+(в) Объект [IDebugCodeContext2,](../../../extensibility/debugger/reference/idebugcodecontext2.md) описывающий местоположение кода, которое должно быть выполнено, и его контекст.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Если этот метод возвращает `S_OK`, затем вызвать [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) метод фактически задать следующий оператор.
+ Если этот `S_OK`метод возвращается, затем позвоните в метод [SetNextStatement,](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) чтобы фактически установить следующее утверждение.
 
 ## <a name="see-also"></a>См. также
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

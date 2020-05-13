@@ -18,10 +18,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918405"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Возможности Dotfuscator
@@ -58,7 +58,7 @@ Dotfuscator Community может внедрить [код проверки пр�
 
 Многие из этих методов также подходят для обеспечения нужных [сроков действия][shelflife] для ознакомительных или пробных версий программного обеспечения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Этот раздел в полном руководстве пользователя Dotfuscator Community][full]
 

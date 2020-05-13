@@ -1,33 +1,33 @@
 ---
-title: Завершение программы | Документация Майкрософт
+title: Прекращение программы (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
 - debugging [Debugging SDK], terminating a program
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f82a8238b542ce9aa9f5489df38553410e1326d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331362"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712511"
 ---
-# <a name="terminating-a-program"></a>Завершение программы
-В следующем разделе описаны завершение одной программы с одним потоком.
+# <a name="terminating-a-program"></a>Прекращение программы
+В следующем разделе описывается прекращение действия одной программы одним потоком.
 
-## <a name="termination-process"></a>Завершение процесса
+## <a name="termination-process"></a>Процесс прекращения
 
-1. Отправляет DE [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) допустимое [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).
+1. DE отправляет [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) с действительным [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).
 
-2. Отправляет DE [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) допустимое [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).
+2. DE отправляет [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) с действительным [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).
 
-   Интегрированная среда разработки переходит в режим конструктора. Модуль отладки или среда выполнения вызывает метод [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) удаление программы из порта.
+   IDE переходит в режим проектирования. Отладка двигателя или время выполнения среды вызывает [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) для удаления программы из порта.
 
 ## <a name="see-also"></a>См. также
 - [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

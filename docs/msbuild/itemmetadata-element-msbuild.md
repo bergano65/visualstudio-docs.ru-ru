@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589374"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633620"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Элемент ItemMetadata (MSBuild)
+
 Содержит определяемый пользователем ключ метаданных элемента, содержащий значение метаданных элемента. Элемент может иметь любое число пар метаданных "ключ — значение".
 
  \<Project> \<ItemGroup> \<Item>
@@ -35,29 +36,33 @@ ms.locfileid: "75589374"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|
+|attribute|Description|
 |---------------|-----------------|
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание|
+|Элемент|Description|
 |-------------|-----------------|
 |[Элемент](../msbuild/item-element-msbuild.md)|Определяемый пользователем элемент, задающий входные данные для процесса сборки.|
 
 ## <a name="text-value"></a>Текстовое значение
+
  Текстовое значение является необязательным.
 
  Этот текст задает для элемента значение метаданных, которое может быть текстом или XML-документом.
 
 ## <a name="example"></a>Пример
+
  Следующий пример кода демонстрирует добавление метаданных `Culture` со значением `fr` к элементу `CSFile`.
 
 ```xml
@@ -68,6 +73,7 @@ ms.locfileid: "75589374"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
+
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 - [Элементы](../msbuild/msbuild-items.md)

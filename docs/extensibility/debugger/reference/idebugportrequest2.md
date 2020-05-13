@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2 | Документация Майкрософт
+title: IDebugPortRequest2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2 interface
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83f70a9fe027f004ef3829827ba8af40f7fb72e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340312"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724786"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
-Этот интерфейс описывает порт. Это описание используется, чтобы добавить порт поставщика порта.
+Этот интерфейс описывает порт. Это описание используется для добавления порта к поставщику порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,26 +28,26 @@ ms.locfileid: "66340312"
 IDebugPortRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Visual Studio обычно реализует этот интерфейс находится в процессе получения из поставщика порта отладки.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Visual Studio обычно реализует этот интерфейс в процессе получения порта отладки от поставщика порта.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Этот интерфейс, передается в [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) создать порт отладки. Вызов [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) возвращает этот интерфейс, представляющий запрос, используемый для создания порта в первую очередь.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Этот интерфейс передается в [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) для создания порта отладки. Звонок [в GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) возвращает этот интерфейс, представляющий запрос, используемый для создания порта в первую очередь.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugPortRequest2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Получает имя порта для создания.|
+|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Получает название порта для создания.|
 
 ## <a name="remarks"></a>Примечания
- Модуль отладки обычно не взаимодействует с поставщика порта и не понадобится для данного интерфейса.
+ Двигатель отладки обычно не взаимодействует с поставщиком порта и не будет использовать этот интерфейс.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
